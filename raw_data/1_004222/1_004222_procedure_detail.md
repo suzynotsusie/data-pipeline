@@ -1,0 +1,132 @@
+# Đăng ký thường trú
+
+## Thông tin chung
+
+* **Mã thủ tục:** 1.004222
+* **Số quyết định:** 1523/QĐ-BCA-C06
+* **Cấp thực hiện:** Cấp xã
+* **Loại thủ tục:** TTHC được luật giao quy định chi tiết
+* **Lĩnh vực:** Đăng ký, quản lý cư trú
+* **Đối tượng thực hiện:** Người Việt Nam định cư ở nước ngoài, Công dân Việt Nam
+* **Cơ quan có thẩm quyền:** Công an cấp Xã
+* **Địa chỉ tiếp nhận HS:** Không có thông tin
+* **Cơ quan được ủy quyền:** Không có thông tin
+* **Cơ quan phối hợp:** Không có thông tin
+
+## Thủ tục hành chính liên quan
+
+Không có thông tin
+
+## Trình tự thực hiện
+
+1. Bước 1: Cá nhân, tổ chức chuẩn bị hồ sơ theo quy định của pháp luật.
+    Bước 2: Cá nhân, tổ chức nộp hồ sơ đến Công an cấp xã.
+    Bước 3: Khi tiếp nhận hồ sơ đăng ký thường trú, cán bộ đăng ký kiểm tra hồ sơ, đối chiếu các thông tin mà công dân đã khai báo với thông tin trong Cơ sở dữ liệu quốc gia về dân cư, Cơ sở dữ liệu về cư trú, cơ sở dữ liệu khác có liên quan, hệ thống thông tin, Kho quản lý dữ liệu điện tử của tổ chức, cá nhân để kiểm tra tính chính xác các thông tin. Đối chiếu với các quy định của pháp luật về cư trú và thực hiện như sau:
+   - Trường hợp hồ sơ đủ điều kiện theo quy định tại Điều 20 Luật Cư trú thì cán bộ đăng ký tiếp nhận và cấp Phiếu tiếp nhận hồ sơ và hẹn trả kết quả (Mẫu CT04 ban hành kèm theo Thông tư số 66/2023/TT- BCA) cho người đăng ký.
+   - Trường hợp hồ sơ không đủ điều kiện theo quy định của Luật Cư trú thì từ chối và cấp Phiếu từ chối tiếp nhận, giải quyết hồ sơ (Mẫu CT06 ban hành kèm theo Thông tư số 66/2023/TT- BCA) cho người đăng ký.	
+   	Bước 4: Cá nhân, tổ chức nộp lệ phí đăng ký thường trú theo quy định.
+   Bước 5: Căn cứ theo ngày hẹn trên Phiếu tiếp nhận hồ sơ và hẹn trả kết quả để nhận thông báo kết quả giải quyết thủ tục đăng ký cư trú (nếu có).
+
+## Cách thức thực hiện
+
+| Hình thức nộp | Thời gian giải quyết | Phí, lệ phí | Mô tả |
+| --- | --- | --- | --- |
+| Trực tuyến | 7 ngày làm việc | Không có thông tin | Không có thông tin |
+| Trực tiếp | 7 ngày làm việc | Không có thông tin | Không có thông tin |
+
+## Thành phần hồ sơ
+
+### Đăng ký thường trú vào chỗ ở hợp pháp thuộc quyền sở hữu của mình
+
+| Tên giấy tờ | Bản chính | Bản sao | Tệp đính kèm |
+| --- | --- | --- | --- |
+| Văn bản xác nhận của Ủy ban nhân dân cấp xã về địa điểm phương tiện đăng ký đậu, đỗ thường xuyên trong trường hợp phương tiện không phải đăng ký hoặc nơi đăng ký phương tiện không trùng với nơi thường xuyên đậu, đỗ (nội dung xác nhận tại mục 1 của Ủy ban nhân dân cấp xã tại Tờ khai đề nghị xác nhận nơi thường xuyên đậu, đỗ; sử dụng phương tiện vào mục đích để ở theo Mẫu số 01 ban hành kèm theo Nghị định số 154/2024/NĐ-CP). | 1 | 0 | Không có |
+| Giấy chứng nhận đăng ký phương tiện và giấy chứng nhận an toàn kỹ thuật và bảo vệ môi trường của phương tiện hoặc văn bản xác nhận của Ủy ban nhân dân cấp xã về việc sử dụng phương tiện đó vào mục đích để ở đối với phương tiện không thuộc đối tượng phải đăng ký, đăng kiểm (nội dung xác nhận tại mục 2 của Ủy ban nhân dân cấp xã tại Tờ khai đề nghị xác nhận nơi thường xuyên đậu, đỗ; sử dụng phương tiện vào mục đích để ở theo Mẫu số 01 ban hành kèm theo Nghị định số 154/2024/NĐ-CP). | 1 | 0 | Không có |
+
+### Người được chăm sóc, nuôi dưỡng, trợ giúp được đăng ký thường trú tại cơ sở trợ giúp xã hội hoặc được đăng ký thường trú vào hộ gia đình nhận chăm sóc, nuôi dưỡng, trợ giúp
+
+| Tên giấy tờ | Bản chính | Bản sao | Tệp đính kèm |
+| --- | --- | --- | --- |
+| Giấy tờ, tài liệu xác nhận về việc chăm sóc, nuôi dưỡng, trợ giúp. | 1 | 0 | Không có |
+| Văn bản đề nghị của người đứng đầu cơ sở trợ giúp xã hội đối với người được cơ sở trợ giúp xã hội nhận chăm sóc, nuôi dưỡng, trợ giúp. | 1 | 0 | Không có |
+
+### Đăng ký thường trú tại chỗ ở hợp pháp không thuộc quyền sở hữu của mình đối với những trường hợp quy định tại khoản 2 Điều 20 Luật Cư trú
+
+| Tên giấy tờ | Bản chính | Bản sao | Tệp đính kèm |
+| --- | --- | --- | --- |
+| Thông tin chứng minh quan hệ nhân thân với chủ hộ, thành viên hộ gia đình được khai thác trong căn cước điện tử, tài khoản định danh điện tử trên hệ thống định danh và xác thực điện tử qua Ứng dụng định danh quốc gia hoặc trong Cơ sở dữ liệu quốc gia về dân cư, Cơ sở dữ liệu về cư trú, Kho quản lý dữ liệu điện tử tổ chức, cá nhân trên Cổng dịch vụ công quốc gia, Hệ thống thông tin giải quyết thủ tục hành chính cấp bộ, cấp tỉnh hoặc cơ sở dữ liệu quốc gia, cơ sở dữ liệu chuyên ngành khác. Trường hợp không khai thác được thông tin thì công dân xuất trình giấy tờ, tài liệu chứng minh quan hệ nhân thân với chủ hộ, thành viên hộ gia đình theo quy định tại khoản 2, khoản 3 Điều 6 Nghị định 154/2024/NĐ-CP ngày 26/11/2024 của Chính phủ. Ví dụ: Trường hợp giấy tờ, tài liệu chứng minh quan hệ nhân thân với chủ hộ, thành viên hộ gia đình là giấy chứng nhận kết hôn, giấy xác nhận tình trạng hôn nhân, giấy khai sinh được khai thác trong Cơ sở dữ liệu hộ tịch điện tử thì không phải xuất trình giấy tờ, tài liệu chứng minh quan hệ nhân thân. | 1 | 0 | Không có |
+
+### Đăng ký thường trú tại cơ sở tín ngưỡng, cơ sở tôn giáo có công trình phụ trợ là nhà ở
+
+| Tên giấy tờ | Bản chính | Bản sao | Tệp đính kèm |
+| --- | --- | --- | --- |
+| Văn bản xác nhận của Ủy ban nhân dân cấp xã về việc trong cơ sở tín ngưỡng, cơ sở tôn giáo có công trình phụ trợ là nhà ở. | 1 | 0 | Không có |
+| Trường hợp quy định tại điểm a, b, c khoản 4 Điều 20 Luật Cư trú đăng ký thường trú tại cơ sở tín ngưỡng, cơ sở tôn giáo có công trình phụ trợ giúp là nhà ở, hồ sơ gồm: | 0 | 0 | Không có |
+| Trường hợp quy định tại điểm d khoản 4 Điều 20 Luật Cư trú đăng ký thường trú tại cơ sở tín ngưỡng, cơ sở tôn giáo có công trình phụ trợ giúp là nhà ở, hồ sơ gồm: | 0 | 0 | Không có |
+| Văn bản xác nhận của Ủy ban nhân dân cấp xã về việc người đăng ký thường trú thuộc đối tượng quy định tại khoản 2 Điều 17 Luật Cư trú và việc trong cơ sở tín ngưỡng, cơ sở tôn giáo có công trình phụ trợ là nhà ở. | 1 | 0 | Không có |
+| Giấy tờ, tài liệu chứng minh là nhà tu hành, chức sắc, chức việc hoặc người khác hoạt động tôn giáo và được hoạt động tại cơ sở tôn giáo đó theo quy định của pháp luật về tín ngưỡng, tôn giáo đối với người quy định tại điểm a khoản 4 Điều 20 Luật Cư trú; giấy tờ, tài liệu chứng minh là người đại diện cơ sở tín ngưỡng đối với người quy định tại điểm b khoản 4 Điều 20 Luật Cư trú. | 1 | 0 | Không có |
+
+### Đăng ký thường trú tại nơi đơn vị đóng quân trong Công an nhân dân, Quân đội nhân nhân nhân (đơn vị đóng quân, nhà ở công vụ)
+
+| Tên giấy tờ | Bản chính | Bản sao | Tệp đính kèm |
+| --- | --- | --- | --- |
+| Đối với Quân đội nhân dân: Giấy giới thiệu đăng ký thường trú của  cơ quan, đơn vị cấp trung đoàn và tương đương trở lên (ký tên, đóng dấu). | 1 | 0 | Không có |
+| Tờ khai thay đổi thông tin cư trú (mẫu CT01 ban hành kèm theo  Thông tư số 53/2025/TT-BCA). | 1 | 0 | Không có |
+| Đối với Công an nhân dân: Giấy giới thiệu của Thủ trưởng đơn  vị quản lý trực tiếp ghi rõ nội dung để làm thủ tục đăng ký thường trú và đơn vị có chỗ ở cho cán bộ chiến sĩ (ký tên, đóng dấu). | 1 | 0 | Không có |
+
+### Đăng ký thường trú vào chỗ ở hợp pháp do thuê, mượn, ở nhờ
+
+| Tên giấy tờ | Bản chính | Bản sao | Tệp đính kèm |
+| --- | --- | --- | --- |
+| Hợp đồng, văn bản về việc cho thuê, cho mượn, cho ở nhờ được công chứng hoặc chứng thực theo quy định của pháp luật. | 1 | 0 | Không có |
+| Thông tin chứng minh đủ diện tích nhà ở để đăng ký thường trú tại chỗ ở hợp pháp do thuê, mượn, ở nhờ được khai thác trong căn cước điện tử, tài khoản định danh điện tử trên hệ thống định danh và xác thực điện tử qua Ứng dụng định danh quốc gia hoặc trong Cơ sở dữ liệu quốc gia về dân cư, Cơ sở dữ liệu về cư trú, Kho quản lý dữ liệu điện tử tổ chức, cá nhân trên Cổng dịch vụ công quốc gia, Hệ thống thông tin giải quyết thủ tục hành chính cấp bộ, cấp tỉnh hoặc cơ sở dữ liệu quốc gia, cơ sở dữ liệu chuyên ngành khác. Trường hợp không khai thác được thông tin thì công dân xuất trình giấy tờ, tài liệu quy định tại khoản 2 Điều 5 Nghị định số 154/2024/NĐ-CP, trong đó có thể hiện diện tích nhà ở hoặc xác nhận của Ủy ban nhân dân cấp xã về điều kiện diện tích bình quân bảo đảm theo quy định của Hội đồng nhân dân tỉnh, thành phố trực thuộc trung ương theo Mẫu số 02 ban hành kèm theo Nghị định số 154/2024/NĐ-CP. Ví dụ: Trường hợp giấy tờ, tài liệu chứng minh đủ diện tích nhà ở để đăng ký thường trú theo quy định là giấy tờ, tài liệu chứng nhận về quyền sử dụng đất, quyền sở hữu tài sản gắn liền với đất do cơ quan có thẩm quyền cấp qua các thời kỳ theo quy định của pháp luật về đất đai và nhà ở được khai thác trong Cơ sở dữ liệu quốc gia về đất đai thì không phải xuất trình giấy tờ, tài liệu chứng minh đủ diện tích nhà ở. | 1 | 0 | Không có |
+
+### Đăng ký thường trú vào chỗ ở hợp pháp thuộc quyền sở hữu của mình
+
+| Tên giấy tờ | Bản chính | Bản sao | Tệp đính kèm |
+| --- | --- | --- | --- |
+| Thông tin chứng minh về chỗ ở hợp pháp được khai thác trong căn cước điện tử, tài khoản định danh điện tử trên hệ thống định danh và xác thực điện tử qua Ứng dụng định danh quốc gia hoặc trong Cơ sở dữ liệu quốc gia về dân cư, Cơ sở dữ liệu về cư trú, Kho quản lý dữ liệu điện tử tổ chức, cá nhân trên Cổng dịch vụ công quốc gia, Hệ thống thông tin giải quyết thủ tục hành chính cấp bộ, cấp tỉnh hoặc cơ sở dữ liệu quốc gia, cơ sở dữ liệu chuyên ngành khác. Trường hợp không khai thác được thông tin thì công dân xuất trình giấy tờ, tài liệu chứng minh chỗ ở hợp pháp theo quy định tại khoản 2 Điều 5 Nghị định 154/2024/NĐ-CP ngày 26/11/2024 của Chính phủ. Ví dụ: Trường hợp giấy tờ, tài liệu chứng minh chỗ ở hợp pháp là giấy tờ, tài liệu chứng nhận về quyền sử dụng đất, quyền sở hữu tài sản gắn liền với đất do cơ quan có thẩm quyền cấp qua các thời kỳ theo quy định của pháp luật về đất đai và nhà ở được khai thác trong Cơ sở dữ liệu quốc gia về đất đai thì không phải xuất trình giấy tờ, tài liệu chứng minh chỗ ở hợp pháp. | 1 | 0 | Không có |
+| Tờ khai thay đổi thông tin cư trú (mẫu CT01 ban hành kèm theo Thông tư số 53/2025/TT-BCA) hoặc Tờ khai thay đổi thông tin về cư trú dùng cho công dân Việt Nam định cư ở nước ngoài không có hộ chiếu Việt Nam còn giá trị sử dụng (mẫu CT02 ban hành kèm theo Thông tư số 53/2025/TT-BCA). | 1 | 0 | Không có |
+
+| Tên giấy tờ | Bản chính | Bản sao | Tệp đính kèm |
+| --- | --- | --- | --- |
+| *Lưu ý: - Không yêu cầu xuất trình Giấy khai sinh đối với trường hợp trẻ em mới sinh đăng ký thường trú lần đầu.  - Trong thời hạn tối đa 60 ngày kể từ ngày người chưa thành niên được đăng ký khai sinh thì phải thực hiện thủ tục đăng ký cư trú. - Trường hợp người cao tuổi, người chưa thành niên đã có thông tin về ngày, tháng, năm sinh trong Cơ sở dữ liệu quốc gia về dân cư thì không yêu cầu xuất trình giấy tờ chứng minh. - Trường hợp công dân đăng ký thường trú vào chỗ ở hợp pháp thuộc quyền sở hữu của mình mà chỗ ở hợp pháp đó có nhiều hơn một chủ sở hữu thì không cần có ý kiến đồng ý của những người đồng sở hữu. - Trường hợp đăng ký thường trú theo quy định tại điểm a khoản 2 Điều 20 Luật Cư trú mà chỗ ở hợp pháp có nhiều hơn một chủ sở hữu thì chỉ cần ý kiến đồng ý của ít nhất một chủ sở hữu. - Trường hợp đăng ký thường trú vào chỗ ở hợp pháp của chủ sở hữu là người bị mất năng lực hành vi dân sự, người có khó khăn trong nhận thức, làm chủ hành vi theo quy định của Bộ luật Dân sự, người dưới 18 tuổi, người bị tuyên bố mất tích, người đã chết thì chỉ cần lấy ý kiến đồng ý của một trong những người đại diện hợp pháp, người thừa kế của chủ sở hữu theo quy định của pháp luật. - Người có mối quan hệ với chủ sở hữu chỗ ở hợp pháp theo quy định tại điểm a khoản 2 Điều 20 Luật Cư trú mà đăng ký thường trú vào chỗ ở chưa có hộ gia đình đăng ký thường trú và không thuộc trường hợp quy định tại Điều 23 Luật Cư trú hoặc người đăng ký thường trú có mối quan hệ với chủ hộ, thành viên hộ gia đình theo quy định tại điểm a khoản 2 Điều 20 Luật Cư trú mà nơi thường trú của chủ hộ, thành viên hộ gia đình đó là chỗ ở hợp pháp do thuê, mượn, ở nhờ thì hồ sơ đăng ký thường trú thực hiện theo khoản 2 Điều 21 Luật Cư trú. - Người đăng ký thường trú theo điều kiện quy định tại điểm a khoản 2 Điều 20 Luật Cư trú mà chỗ ở đăng ký thường trú là địa điểm quy định tại Điều 23 Luật Cư trú thì hồ sơ đăng ký thường trú không cần phải có ý kiến đồng ý của chủ sở hữu chỗ ở hợp pháp đó trong trường hợp không xác định được chủ sở hữu. - Trường hợp người đăng ký thường trú là người Việt Nam định cư ở nước ngoài còn quốc tịch Việt Nam thì trong hồ sơ đăng ký thường trú phải có hộ chiếu Việt Nam còn giá trị sử dụng; trường hợp không có hộ chiếu Việt Nam còn giá trị sử dụng thì phải có giấy tờ, tài liệu chứng minh có quốc tịch Việt Nam theo quy định của pháp luật Việt Nam về quốc tịch và văn bản đồng ý cho giải quyết thường trú của cơ quan quản lý xuất nhập cảnh của Bộ Công an. - Trường hợp người nước ngoài được nhập quốc tịch Việt Nam khi đăng ký thường trú lần đầu phải có Quyết định của Chủ tịch nước về việc cho nhập quốc tịch Việt Nam. Người gốc Việt Nam được trở lại quốc tịch Việt Nam khi đăng ký thường trú lần đầu sau khi được cho trở lại quốc tịch Việt Nam phải có Quyết định của Chủ tịch nước về việc cho trở lại quốc tịch Việt Nam trừ trường hợp đã khai thác được thông tin trong Cơ sở dữ liệu quốc tịch. - Sĩ quan nghiệp vụ, hạ sĩ quan nghiệp vụ, sĩ quan chuyên môn kỹ thuật, hạ sĩ quan chuyên môn kĩ thuật, công nhân công an đã đăng ký thường trú tại đơn vị đóng quân mà chuyển đến chỗ ở hợp pháp mới ngoài đơn vị đóng quân và đủ điều kiện đăng ký thường trú, đề nghị đăng ký thường trú tại chỗ ở mới thì hồ sơ đăng ký thường trú phải kèm Giấy giới thiệu của Thủ trưởng đơn vị quản lý trực tiếp (ký tên và đóng dấu). - Sĩ quan, quân nhân chuyên nghiệp, công nhân, viên chức quốc phòng đã đăng ký thường trú vào nhà ở công vụ, đơn vị đóng quân khi chuyển đăng ký thường trú ra chỗ ở hợp pháp ngoài nơi nhà ở công vụ, nơi đơn vị đóng quân thì hồ sơ đăng ký thường trú tại chỗ ở mới phải kèm theo Giấy giới thiệu đăng ký thường trú của đơn vị đang công tác (ký tên và đóng dấu). | 0 | 0 | Không có |
+
+## Căn cứ pháp lý
+
+| Tên văn bản pháp lý | Mã văn bản |
+| --- | --- |
+| Thông tư số 53/2025/TT-BCAngày 01/7/2025 của Bộ Công an sửa đổi, bổ sung một số điều của Thông tư số 55/2021/TT-BCA ngày 15 tháng 5 năm 2021 của Bộ trưởng Bộ Công an quy định chi tiết một số điều và biện pháp thi hành Luật Cư trú được sửa đổi, bổ sung bởi Thông tư số 66/2023/TT-BCA ngày 17 tháng 11 năm 2023; Thông tư số 56/2021/TT-BCA ngày 15 tháng 5 năm 2021 của Bộ trưởng Bộ Công an quy định về biểu mẫu trong đăng ký, quản lý cư trú được sửa đổi, bổ sung bởi Thông tư số 66/2023/TT-BCA ngày 17 tháng 11 năm 2023; Thông tư số 17/2024/TT-BCA ngày 15 tháng 5 năm 2024 của Bộ trưởng Bộ Công an quy định chi tiết một số điều và biện pháp thi hành Luật Căn cước. | 53/2025/TT-BCA |
+| Thông tư số 66/2023/TT-BCA Sửa đổi, bổ sung một số điều của Thông tư số 55/2021/TT-BCA ngày 15/5/2021 quy định chi tiết một số điều và biện pháp thi hành Luật Cư trú; Thông tư số 56/2021/TT-BCA ngày 15/5/2021 của Bộ trưởng Bộ Công an quy định về biểu mẫu trong đăng ký, quản lý cư trú; Thông tư số 57/2021/TT-BCA ngày 15/5/2021 của Bộ trưởng Bộ Công an quy định về quy trình đăng ký cư trú. | 66/2023/TT-BCA |
+| Luật Cư trú 2020 | 68/2020/QH14 |
+| Thông tư 57/2021/TT-BCA | 57/2021/TT-BCA |
+| Thông tư 56/2021/TT-BCA | 56/2021/TT-BCA |
+| Nghị định quy định chi tiết một số điều và biện pháp thi hành Luật Cư trú | 154/2024/NĐ-CP |
+| Thông tư 55/2021/TT-BCA | 55/2021/TT-BCA |
+| Thông tư số 54/2025/TT-BCA ngày 01/7/2025 của Bộ trưởng Bộ Công an quy định về quy trình đăng ký cư trú. | 54/2025/TT-BCA |
+| Thông tư số 75/2022/TT-BTC của Bộ Tài chính: Quy định mức thu, chế độ thu, nộp và quản lý lệ phí đăng ký cư trú | 75/2022/TT-BTC |
+| Nghị quyết số 66.7/2025/NQ-CP của Chính phủ: Quy định cắt giảm, đơn giản hóa thủ tục hành chính dựa trên dữ liệu | 66.7/2025/NQ-CP |
+| SỬA ĐỔI, BỔ SUNG MỘT SỐ ĐIỀU CỦA CÁC NGHỊ ĐỊNH LIÊN QUAN ĐẾN QUY ĐỊNH ĐIỀU KIỆN VỀ AN NINH, TRẬT TỰ ĐỐI VỚI MỘT SỐ NGÀNH, NGHỀ ĐẦU TƯ KINH DOANH CÓ ĐIỀU KIỆN; QUẢN LÝ VÀ SỬ DỤNG CON DẤU; QUẢN LÝ, SỬ DỤNG PHÁO; QUY ĐỊNH CHI TIẾT MỘT SỐ ĐIỀU VÀ BIỆN PHÁP THI HÀNH LUẬT CƯ TRÚ, LUẬT CĂN CƯỚC | 58/2026/NĐ-CP |
+
+## Cơ quan thực hiện
+
+Công an cấp Xã
+
+## Yêu cầu, điều kiện thực hiện
+
+Người thực hiện thủ tục đã được thu thập, cập nhật thông tin công dân vào Cơ sở dữ liệu quốc gia về dân cư, Cơ sở dữ liệu về cư trú
+
+## Kết quả xử lý
+
+* Thông báo kết quả giải quyết thủ tục về cư trú, hủy bỏ thủ tục về cư trú (Mã: `KQ.G01.000065`)
+* Cập nhật thông tin trong Cơ sở dữ liệu về cư trú (Mã: `KQ.G01.000066`)
+* Cập nhật thông tin trong Cơ sở dữ liệu quốc gia về dân cư (Mã: `KQ.G01.000064`)
+* Phiếu từ chối tiếp nhận, giải quyết hồ sơ (lĩnh vực cư trú) (Mã: `KQ.G01.000067`)
+
+## Từ khóa
+
+Không có thông tin
+
+## Mô tả
+
+Người thực hiện thủ tục đã được thu thập, cập nhật thông tin công dân vào Cơ sở dữ liệu quốc gia về dân cư, Cơ sở dữ liệu về cư trú
