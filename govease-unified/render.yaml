@@ -1,0 +1,31 @@
+services:
+  - type: web
+    name: govease-ai-api
+    runtime: python
+    plan: starter
+    buildCommand: uv sync --frozen --no-dev
+    startCommand: uv run --frozen --no-dev python -m backend.start
+    healthCheckPath: /api/v1/health
+    envVars:
+      - key: PYTHON_VERSION
+        value: 3.12.11
+      - key: UV_VERSION
+        value: 0.11.18
+      - key: GOVEASE_ENV
+        value: production
+      - key: OPENAI_API_KEY
+        sync: false
+      - key: GOVEASE_EMBEDDING_MODEL
+        value: text-embedding-3-small
+      - key: GOVEASE_LLM_MODEL
+        value: gpt-5-mini
+      - key: CHROMA_PATH
+        value: /var/data/chroma_v1
+      - key: GOVEASE_AUTO_INITIALIZE_INDEX
+        value: "true"
+      - key: CORS_ORIGINS
+        value: https://gov-ease-ai.vercel.app,http://localhost:3000
+    disk:
+      name: chroma-data
+      mountPath: /var/data
+      sizeGB: 1

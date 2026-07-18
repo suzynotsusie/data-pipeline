@@ -1,0 +1,133 @@
+# Chuyển hình thức giao đất, cho thuê đất
+
+## Thông tin chung
+
+* **Mã thủ tục:** 1.115358
+* **Số quyết định:** 2758/QĐ-UBND
+* **Cấp thực hiện:** Cấp xã, Cấp tỉnh
+* **Loại thủ tục:** TTHC được luật giao quy định chi tiết
+* **Lĩnh vực:** Đất đai
+* **Đối tượng thực hiện:** Doanh nghiệp Việt Nam, Doanh nghiệp có vốn đầu tư nước ngoài, Tổ chức (không bao gồm doanh nghiệp, HTX), Người Việt Nam định cư ở nước ngoài, Công dân Việt Nam, Doanh nghiệp, Tổ chức nước ngoài, Hợp tác xã
+* **Cơ quan có thẩm quyền:** Chủ tịch UBND cấp xã
+* **Địa chỉ tiếp nhận HS:** Không có thông tin
+* **Cơ quan được ủy quyền:** Chủ tịch UBND cấp xã
+* **Cơ quan phối hợp:** Không có thông tin
+
+## Thủ tục hành chính liên quan
+
+Không có thông tin
+
+## Trình tự thực hiện
+
+1. **Chuyển hình thức giao đất, cho thuê đất**
+
+   Bước 1: Người đề nghị nộp hồ sơ đến Trung tâm Phục vụ hành chính công.
+   Khi nộp hồ sơ, người nộp hồ sơ được lựa chọn nộp bản sao giấy tờ và xuất trình bản chính để cán bộ tiếp nhận hồ sơ kiểm tra, đối chiếu hoặc nộp bản chính giấy tờ hoặc nộp bản sao giấy tờ đã có công chứng hoặc chứng thực theo quy định của pháp luật về công chứng, chứng thực. Trường hợp nộp hồ sơ theo hình thức trực tuyến thì hồ sơ nộp phải được số hóa từ bản chính hoặc bản sao giấy tờ đã được công chứng, chứng thực.
+   Trường hợp Trung tâm Phục vụ hành chính công tiếp nhận hồ sơ thì chuyển hồ sơ đến Cơ quan chuyên môn về nông nghiệp và môi trường.
+   Bước 2: Cơ quan chuyên môn về nông nghiệp và môi trường thực hiện:
+   - Đề nghị Văn phòng đăng ký đất đai hoặc Chi nhánh Văn phòng đăng ký  cung cấp thông tin về cơ sở dữ liệu đất đai, lập trích lục bản đồ địa chính thửa đất đối với trường hợp hồ sơ đầy đủ và hợp lệ.
+   Hướng dẫn người nộp hồ sơ bổ sung trích đo địa chính thửa đất đối với thửa đất tại nơi chưa có bản đồ địa chính theo quy định hoặc làm lại hồ sơ hoặc bổ sung hồ sơ và nộp lại cho Cơ quan chuyên môn về nông nghiệp và môi trường đối với trường hợp hồ sơ không đầy đủ, không hợp lệ.
+   - Rà soát, kiểm tra hồ sơ; kiểm tra thực địa.
+   - Chủ trì, phối hợp các cơ quan có liên quan xác định trường hợp được miễn tiền sử dụng đất, tiền thuê đất (nếu có).
+   - Hoàn thiện hồ sơ trình Ủy ban nhân dân tỉnh/Chủ tịch Ủy ban nhân dân cấp xã, hồ sơ gồm:
+   + Dự thảo Tờ trình theo Mẫu số 25 ban hành kèm theo Quyết định số 104/2026/QĐ-UBND ngày 29/6/2026.
+   + Dự thảo Quyết định chuyển hình thức giao đất, cho thuê đất theo Mẫu số 07 ban hành kèm theo Quyết định số 104/2026/QĐ-UBND ngày 29/6/2026 (có nội dung về giá đất để tính tiền sử dụng đất, tiền thuê đất phải nộp và trách nhiệm của cơ quan thuế trong việc hướng dẫn người sử dụng đất nộp tiền sử dụng đất, tiền thuê đất theo quy định của pháp luật về tiền sử dụng đất, tiền thuê đất đối với trường hợp người sử dụng đất phải nộp tiền sử dụng đất, tiền thuê đất tính theo giá đất trong bảng giá đất).
+   + Trích lục bản đồ địa chính thửa đất hoặc trích đo địa chính thửa đất.
+   + Đơn đề nghị chuyển hình thức giao đất, cho thuê đất và các văn bản người sử dụng đất nộp theo mục 3 thủ tục này.
+   	- Trình Ủy ban nhân dân tỉnh/Chủ tịch Ủy ban nhân dân cấp xã ban hành quyết định.
+   Bước 3: Ủy ban nhân dân tỉnh/Chủ tịch Ủy ban nhân dân cấp xã xem xét ban hành quyết định chuyển hình thức giao đất, cho thuê đất.
+   Bước 4: (áp dụng đối với trường hợp người sử dụng đất phải nộp tiền sử dụng đất, tiền thuê đất):
+   a) Trường hợp người sử dụng đất phải nộp tiền sử dụng đất, tiền thuê đất tính theo bảng giá đất:
+   - Cơ quan chuyên môn về nông nghiệp và môi trường chuyển Phiếu chuyển thông tin để xác định nghĩa vụ tài chính về đất đai theo Mẫu số 19 ban hành kèm theo Quyết định số 104/2026/QĐ-UBND ngày 29/6/2026 cho cơ quan thuế.
+   - Cơ quan thuế:
+   + Xác định tiền sử dụng đất, tiền thuê đất phải nộp theo quy định; xác định tiền thuê đất phải nộp một số năm đối với trường hợp được miễn tiền thuê đất một số năm sau thời gian được miễn tiền thuê đất của thời gian xây dựng cơ bản.
+   + Ban hành thông báo nộp tiền sử dụng đất, tiền thuê đất gửi cho người sử dụng đất.
+   - Người sử dụng đất nộp tiền sử dụng đất, tiền thuê đất theo quy định của pháp luật về tiền sử dụng đất, tiền thuê đất.
+   - Cơ quan thuế xác nhận hoàn thành việc nộp tiền sử dụng đất, tiền thuê đất và gửi thông báo kết quả cho Cơ quan chuyên môn về nông nghiệp và môi trường.
+   b) Trường hợp người sử dụng đất phải nộp tiền sử dụng đất, tiền thuê đất tính theo giá đất cụ thể:
+   - Cơ quan chuyên môn về nông nghiệp và môi trường:
+   + Tổ chức việc xác định giá đất cụ thể.
+   + Trình Chủ tịch Ủy ban nhân dân tỉnh/Chủ tịch Ủy ban nhân dân cấp xã ban hành quyết định phê duyệt giá đất cụ thể có nội dung về trách nhiệm của cơ quan thuế trong việc hướng dẫn người sử dụng đất nộp tiền sử dụng đất, tiền thuê đất.
+   - Chủ tịch Ủy ban nhân dân tỉnh/Chủ tịch Ủy ban nhân dân cấp xã xem xét, ban hành quyết định phê duyệt giá đất cụ thể.
+   - Cơ quan chuyên môn về nông nghiệp và môi trường chuyển Phiếu chuyển thông tin để xác định nghĩa vụ tài chính về đất đai theo Mẫu số 19 ban hành kèm theo Quyết định số 104/2026/QĐ-UBND ngày 29/6/2026 cho cơ quan thuế.
+   -	Cơ quan thuế:
+   + Xác định tiền sử dụng đất, tiền thuê đất phải nộp theo quy định; xác định tiền thuê đất phải nộp một số năm đối với trường hợp được miễn tiền thuê đất một số năm sau thời gian được miễn tiền thuê đất của thời gian xây dựng cơ bản.
+   + Ban hành thông báo nộp tiền sử dụng đất, tiền thuê đất gửi cho người sử dụng đất.
+   - Người sử dụng đất nộp tiền sử dụng đất, tiền thuê đất theo quy định của pháp luật về tiền sử dụng đất, tiền thuê đất.
+   - Cơ quan thuế xác nhận hoàn thành việc nộp tiền sử dụng đất, tiền thuê đất và gửi thông báo kết quả cho Cơ quan chuyên môn về nông nghiệp và môi trường.
+   Bước 5: Cơ quan có chức năng quản lý đất đai cấp tỉnh ký cấp Giấy chứng nhận quyền sử dụng đất, quyền sở hữu tài sản gắn liền với đất hoặc xác nhận thay đổi trên giấy chứng nhận đã cấp đối với trường hợp thuộc thẩm quyền chuyển hình thức giao đất, cho thuê đất của Ủy ban nhân dân tỉnh; trường hợp ký hợp đồng thuê đất thì thực hiện theo Mẫu số 28 ban hành kèm theo Quyết định số 104/2026/QĐ-UBND ngày 29/6/2026 và chuyển Giấy chứng nhận cho cơ quan tiếp nhận hồ sơ để trả.
+   Chủ tịch Ủy ban nhân cấp xã ký cấp Giấy chứng nhận quyền sử dụng đất, quyền sở hữu tài sản gắn liền với đất hoặc xác nhận thay đổi trên giấy chứng nhận đã cấp đối với trường hợp thuộc thẩm quyền chuyển hình thức giao đất, cho thuê đất của Chủ tịch Ủy ban nhân dân cấp xã; trường hợp điều chỉnh hợp đồng thuê đất thì Cơ quan chuyên môn về nông nghiệp và môi trường ký điều chỉnh hợp đồng theo Mẫu số 29 ban hành kèm theo Quyết định số 104/2026/QĐ-UBND ngày 29/6/2026 và chuyển Giấy chứng nhận cho cơ quan tiếp nhận hồ sơ để trả.
+   - Chuyển hồ sơ đến Văn phòng đăng ký đất đai hoặc chi nhánh Văn phòng đăng ký đất đai; 
+   Việc bàn giao đất hoặc bàn giao đất và bàn giao rừng trên thực địa thực hiện theo Mẫu số 24 ban hành kèm theo Quyết định số 104/2026/QĐ-UBND ngày 29/6/2026.
+   Bước 6: Văn phòng đăng ký đất đai:
+   Cập nhật, chỉnh lý cơ sở dữ liệu đất đai, hồ sơ địa chính.
+
+## Cách thức thực hiện
+
+| Hình thức nộp | Thời gian giải quyết | Phí, lệ phí | Mô tả |
+| --- | --- | --- | --- |
+| Trực tiếp | 17.5 ngày làm việc | Không có thông tin | - Không quá 7,5 ngày làm việc kể từ ngày nhận đủ hồ sơ hợp lệ.<br>Đối với các xã miền núi, hải đảo, vùng sâu, vùng xa, vùng có điều kiện kinh tế - xã hội khó khăn, vùng có điều kiện kinh tế - xã hội đặc biệt khó khăn thì thời gian được tăng thêm 10 ngày làm việc.<br>- Thời gian thực hiện thủ tục hành chính này được tính kể từ ngày nhận được hồ sơ hợp lệ, không bao gồm thời gian giải quyết của các cơ quan sau đây: <br>a) Thời gian giải quyết của cơ quan có chức năng quản lý đất đai về xác định giá đất cụ thể theo quy định; <br>b) Thời gian giải quyết của cơ quan có thẩm quyền về khoản được trừ vào tiền sử dụng đất, tiền thuê đất theo quy định; <br>c) Thời gian giải quyết của cơ quan thuế về xác định đơn giá thuê đất, số tiền sử dụng đất, tiền thuê đất phải nộp, miễn, giảm, ghi nợ tiền sử dụng đất, tiền thuê đất, phí, lệ phí theo quy định; <br>d) Thời gian thực hiện nghĩa vụ tài chính của người sử dụng đất; <br>đ) Thời gian người sử dụng đất thỏa thuận để thực hiện tích tụ đất nông nghiệp, góp quyền sử dụng đất, điều chỉnh lại đất đai; e) Thời gian trích đo địa chính thửa đất; <br>g) Thời gian xem xét xử lý đối với trường hợp sử dụng đất có vi phạm pháp luật, thời gian trưng cầu giám định, thời gian niêm yết công khai, đăng tin trên phương tiện thông tin đại chúng, thời gian thực hiện thủ tục chia thừa kế quyền sử dụng đất, tài sản gắn liền với đất đối với trường hợp thực hiện thủ tục cấp Giấy chứng nhận quyền sử dụng đất, quyền sở hữu tài sản gắn liền với đất mà người sử dụng đất, chủ sở hữu tài sản gắn liền với đất chết trước khi trao Giấy chứng nhận. <br>h) Thời gian cơ quan có chức năng quản lý về xây dựng xác định chi phí xây dựng hạ tầng theo quy định pháp luật về xây dựng. |
+| Trực tuyến | 17.5 ngày làm việc | Không có thông tin | - Không quá 7,5 ngày làm việc kể từ ngày nhận đủ hồ sơ hợp lệ.<br>Đối với các xã miền núi, hải đảo, vùng sâu, vùng xa, vùng có điều kiện kinh tế - xã hội khó khăn, vùng có điều kiện kinh tế - xã hội đặc biệt khó khăn thì thời gian được tăng thêm 10 ngày làm việc.<br>- Thời gian thực hiện thủ tục hành chính này được tính kể từ ngày nhận được hồ sơ hợp lệ, không bao gồm thời gian giải quyết của các cơ quan sau đây: <br>a) Thời gian giải quyết của cơ quan có chức năng quản lý đất đai về xác định giá đất cụ thể theo quy định; <br>b) Thời gian giải quyết của cơ quan có thẩm quyền về khoản được trừ vào tiền sử dụng đất, tiền thuê đất theo quy định; <br>c) Thời gian giải quyết của cơ quan thuế về xác định đơn giá thuê đất, số tiền sử dụng đất, tiền thuê đất phải nộp, miễn, giảm, ghi nợ tiền sử dụng đất, tiền thuê đất, phí, lệ phí theo quy định; <br>d) Thời gian thực hiện nghĩa vụ tài chính của người sử dụng đất; <br>đ) Thời gian người sử dụng đất thỏa thuận để thực hiện tích tụ đất nông nghiệp, góp quyền sử dụng đất, điều chỉnh lại đất đai; e) Thời gian trích đo địa chính thửa đất; <br>g) Thời gian xem xét xử lý đối với trường hợp sử dụng đất có vi phạm pháp luật, thời gian trưng cầu giám định, thời gian niêm yết công khai, đăng tin trên phương tiện thông tin đại chúng, thời gian thực hiện thủ tục chia thừa kế quyền sử dụng đất, tài sản gắn liền với đất đối với trường hợp thực hiện thủ tục cấp Giấy chứng nhận quyền sử dụng đất, quyền sở hữu tài sản gắn liền với đất mà người sử dụng đất, chủ sở hữu tài sản gắn liền với đất chết trước khi trao Giấy chứng nhận. <br>h) Thời gian cơ quan có chức năng quản lý về xây dựng xác định chi phí xây dựng hạ tầng theo quy định pháp luật về xây dựng. |
+| Dịch vụ bưu chính | 17.5 ngày làm việc | Không có thông tin | - Không quá 7,5 ngày làm việc kể từ ngày nhận đủ hồ sơ hợp lệ.<br>Đối với các xã miền núi, hải đảo, vùng sâu, vùng xa, vùng có điều kiện kinh tế - xã hội khó khăn, vùng có điều kiện kinh tế - xã hội đặc biệt khó khăn thì thời gian được tăng thêm 10 ngày làm việc.<br>- Thời gian thực hiện thủ tục hành chính này được tính kể từ ngày nhận được hồ sơ hợp lệ, không bao gồm thời gian giải quyết của các cơ quan sau đây: <br>a) Thời gian giải quyết của cơ quan có chức năng quản lý đất đai về xác định giá đất cụ thể theo quy định; <br>b) Thời gian giải quyết của cơ quan có thẩm quyền về khoản được trừ vào tiền sử dụng đất, tiền thuê đất theo quy định; <br>c) Thời gian giải quyết của cơ quan thuế về xác định đơn giá thuê đất, số tiền sử dụng đất, tiền thuê đất phải nộp, miễn, giảm, ghi nợ tiền sử dụng đất, tiền thuê đất, phí, lệ phí theo quy định; <br>d) Thời gian thực hiện nghĩa vụ tài chính của người sử dụng đất; <br>đ) Thời gian người sử dụng đất thỏa thuận để thực hiện tích tụ đất nông nghiệp, góp quyền sử dụng đất, điều chỉnh lại đất đai; e) Thời gian trích đo địa chính thửa đất; <br>g) Thời gian xem xét xử lý đối với trường hợp sử dụng đất có vi phạm pháp luật, thời gian trưng cầu giám định, thời gian niêm yết công khai, đăng tin trên phương tiện thông tin đại chúng, thời gian thực hiện thủ tục chia thừa kế quyền sử dụng đất, tài sản gắn liền với đất đối với trường hợp thực hiện thủ tục cấp Giấy chứng nhận quyền sử dụng đất, quyền sở hữu tài sản gắn liền với đất mà người sử dụng đất, chủ sở hữu tài sản gắn liền với đất chết trước khi trao Giấy chứng nhận. <br>h) Thời gian cơ quan có chức năng quản lý về xây dựng xác định chi phí xây dựng hạ tầng theo quy định pháp luật về xây dựng. |
+
+## Thành phần hồ sơ
+
+| Tên giấy tờ | Bản chính | Bản sao | Tệp đính kèm |
+| --- | --- | --- | --- |
+| Một trong các giấy chứng nhận quy định tại khoản 21 Điều 3, khoản 3 Điều 256 Luật số 31/2024/QH15 hoặc một trong các loại giấy tờ quy định tại Điều 137 Luật số 31/2024/QH15 hoặc quyết định giao đất, quyết định cho thuê đất, quyết định cho phép chuyển mục đích sử dụng đất của cơ quan nhà nước có thẩm quyền theo quy định của pháp luật về đất đai qua các thời kỳ | 1 | 0 | Không có |
+| Mẫu số 02 tại Phụ lục ban hành kèm theo Quyết định số 104/2026/QĐ-UBND ngày 29/6/2026 | 1 | 0 | [Mẫu số 02.docx](file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/1_115358/Ma%CC%82%CC%83u%20so%CC%82%CC%81%2002.docx) |
+
+## Căn cứ pháp lý
+
+| Tên văn bản pháp lý | Mã văn bản |
+| --- | --- |
+| Quy định chi tiết một số điều của Nghị quyết số 254/2025/QH15 ngày 11 tháng 12 năm 2025 của Quốc hội quy định một số cơ chế, chính sách tháo gỡ khó khăn, vướng mắc trong tổ chức thi hành Luật Đất đai về tiền sử dụng đất, tiền thuê đất | Nghị định số 50/2026/NĐ-CP |
+| Nghị định 102/2024/NĐ-CP ngày 30/7/2024 của Chính phủ quy định chi tiết thi hành một số điều của Luật Đất đai. | 102/2024/NĐ-CP |
+| Quy định về phân định thẩm quyền của chính quyền địa phương 02 cấp, phân quyền, phân cấp trong lĩnh vực đất đai | 151/2025/NĐ-CP |
+| Quy định trình tự, thủ tục hành chính về đất đai  trên địa bàn tỉnh Gia Lai | 104/2026/QĐ-UBND |
+| Luật Đất đai ngày 18/01/2024; | 31/2024/QH15 |
+| quy định chi tiết và hướng dẫn một số điều của Nghị quyết số 254/2025/QH15 của Quốc hội quy định một số cơ chế, chính sách tháo gỡ khó khăn vướng mắc trong tổ chức thi hành Luật Đất đai | 49/2026/NĐ-CP |
+| Sửa đổi, bổ sung một số điều của các nghị định  quy định chi tiết thi hành Luật Đất đai | 226/2025/NĐ-CP |
+| về việc điều chỉnh, bổ sung Quyết định số 816/QĐ-UBND ngày 05 tháng 3 năm 2026 của Ủy ban nhân dân tỉnh về việc ủy quyền cho Chủ tịch Ủy ban nhân dân cấp xã thực hiện một số nhiệm vụ trong lĩnh vực đất đai trên địa bàn tỉnh Gia Lai. | 2385/QĐ-UBND |
+| Về việc ủy quyền cho Trưởng ban Ban Quản lý Khu kinh tế tỉnh Gia Lai thực hiện một số nhiệm vụ trong lĩnh vực đất đai trong khu kinh tế trên địa bàn tỉnh Gia Lai | 2097/QĐ-UBND |
+| về việc ủy quyền cho Chủ tịch Ủy ban nhân dân cấp xã thực hiện một số nhiệm vụ trong lĩnh vực đất đai trên địa bàn tỉnh Gia Lai | 816/QĐ-UBND |
+| Nghị quyết 09/2025/NQ-HĐND của Hội đồng nhân dân tỉnh Gia Lai quy định các loại phí và lệ phí trên địa bàn tỉnh Gia Lai thuộc thẩm quyền quyết định của Hội đồng nhân dân tỉnh | 09./2025/NQ-HĐND |
+
+## Cơ quan thực hiện
+
+Không có thông tin
+
+## Yêu cầu, điều kiện thực hiện
+
+- Tổ chức kinh tế, đơn vị sự nghiệp công lập, tổ chức kinh tế có vốn đầu tư nước ngoài đang được Nhà nước cho thuê đất thu tiền thuê đất hằng năm nhưng thuộc trường hợp được Nhà nước cho thuê đất thu tiền thuê đất một lần cho cả thời gian thuê theo quy định của Luật Đất đai thì được lựa chọn chuyển sang thuê đất trả tiền thuê đất một lần cho thời gian thuê đất còn lại.
+- Tổ chức kinh tế, tổ chức kinh tế có vốn đầu tư nước ngoài đang được Nhà nước cho thuê đất thu tiền thuê đất một lần cho cả thời gian thuê được lựa chọn chuyển sang thuê đất thu tiền thuê đất hằng năm.
+- Đơn vị sự nghiệp công lập được Nhà nước giao đất không thu tiền sử dụng đất mà có nhu cầu sử dụng một phần hoặc toàn bộ diện tích được giao để sản xuất, kinh doanh, cung cấp dịch vụ thì được lựa chọn chuyển sang hình thức Nhà nước cho thuê đất thu tiền thuê đất hằng năm đối với phần diện tích đó.
+- Đơn vị sự nghiệp công lập được Nhà nước giao đất không thu tiền sử dụng đất hoặc cho thuê đất trước ngày Luật Đất đai có hiệu lực mà có nhu cầu chuyển sang hình thức giao đất, cho thuê đất theo quy định.
+- Trường hợp khu công nghiệp được đầu tư bằng ngân sách nhà nước mà cơ quan nhà nước có thẩm quyền đã giao cho tổ chức, đơn vị sự nghiệp công lập quản lý trước ngày 01 tháng 8 năm 2024 mà Ủy ban nhân dân cấp có thẩm quyền cho các tổ chức, cá nhân thuê đất gắn với kết cấu hạ tầng đã được đầu tư.
+- Nhà nước cho thuê đất đối với các trường hợp không thuộc trường hợp quy định tại Điều 118 và Điều 119 của Luật Đất đai. Người sử dụng đất được quyền lựa chọn hình thức Nhà nước cho thuê đất trả tiền thuê đất một lần cho cả thời gian thuê hoặc cho thuê đất trả tiền thuê đất hằng năm, trừ trường hợp quy định tại khoản 3 Điều 30 của Luật Đất đai.
+Đối với dự án đầu tư sử dụng quỹ đất do cơ quan, tổ chức của Nhà nước được giao quản lý thì Nhà nước cho thuê đất thông qua đấu giá quyền sử dụng đất hoặc đấu thầu lựa chọn nhà đầu tư thực hiện dự án có sử dụng đất, trừ trường hợp quy định tại Điều 124 của Luật Đất đai; đối với trường hợp cho thuê đất thông qua đấu giá quyền sử dụng đất thì người sử dụng đất phải trả tiền thuê đất một lần cho cả thời gian thuê.
+Đối với dự án đầu tư đang sử dụng đất thuộc trường hợp Nhà nước cho thuê đất theo hình thức trả tiền thuê đất hằng năm từ quỹ đất do cơ quan, tổ chức của Nhà nước được giao quản lý thì không được chuyển sang hình thức thuê đất trả tiền thuê đất một lần cho cả thời gian thuê.
+- Cá nhân đang được Nhà nước cho thuê đất thu tiền thuê đất hằng năm nhưng thuộc trường hợp được Nhà nước cho thuê đất thu tiền thuê đất một lần cho cả thời gian thuê theo quy định của Luật Đất đai thì được lựa chọn chuyển sang thuê đất trả tiền thuê đất một lần cho thời gian thuê đất còn lại.
+- Cá nhân đang được Nhà nước cho thuê đất thu tiền thuê đất một lần cho cả thời gian thuê thì được lựa chọn chuyển sang thuê đất thu tiền thuê đất hằng năm.
+
+## Kết quả xử lý
+
+* Quyết định chuyển hình thức giao đất, cho thuê đất (Mã: `KQ.G10.000870`)
+* Giấy chứng nhận quyền sử dụng đất, quyền sở hữu tài sản gắn liền với đất. (Mã: `H37.003`)
+
+## Từ khóa
+
+Không có thông tin
+
+## Mô tả
+
+- Tổ chức kinh tế, đơn vị sự nghiệp công lập, tổ chức kinh tế có vốn đầu tư nước ngoài đang được Nhà nước cho thuê đất thu tiền thuê đất hằng năm nhưng thuộc trường hợp được Nhà nước cho thuê đất thu tiền thuê đất một lần cho cả thời gian thuê theo quy định của Luật Đất đai thì được lựa chọn chuyển sang thuê đất trả tiền thuê đất một lần cho thời gian thuê đất còn lại.
+- Tổ chức kinh tế, tổ chức kinh tế có vốn đầu tư nước ngoài đang được Nhà nước cho thuê đất thu tiền thuê đất một lần cho cả thời gian thuê được lựa chọn chuyển sang thuê đất thu tiền thuê đất hằng năm.
+- Đơn vị sự nghiệp công lập được Nhà nước giao đất không thu tiền sử dụng đất mà có nhu cầu sử dụng một phần hoặc toàn bộ diện tích được giao để sản xuất, kinh doanh, cung cấp dịch vụ thì được lựa chọn chuyển sang hình thức Nhà nước cho thuê đất thu tiền thuê đất hằng năm đối với phần diện tích đó.
+- Đơn vị sự nghiệp công lập được Nhà nước giao đất không thu tiền sử dụng đất hoặc cho thuê đất trước ngày Luật Đất đai có hiệu lực mà có nhu cầu chuyển sang hình thức giao đất, cho thuê đất theo quy định.
+- Trường hợp khu công nghiệp được đầu tư bằng ngân sách nhà nước mà cơ quan nhà nước có thẩm quyền đã giao cho tổ chức, đơn vị sự nghiệp công lập quản lý trước ngày 01 tháng 8 năm 2024 mà Ủy ban nhân dân cấp có thẩm quyền cho các tổ chức, cá nhân thuê đất gắn với kết cấu hạ tầng đã được đầu tư.
+- Nhà nước cho thuê đất đối với các trường hợp không thuộc trường hợp quy định tại Điều 118 và Điều 119 của Luật Đất đai. Người sử dụng đất được quyền lựa chọn hình thức Nhà nước cho thuê đất trả tiền thuê đất một lần cho cả thời gian thuê hoặc cho thuê đất trả tiền thuê đất hằng năm, trừ trường hợp quy định tại khoản 3 Điều 30 của Luật Đất đai.
+Đối với dự án đầu tư sử dụng quỹ đất do cơ quan, tổ chức của Nhà nước được giao quản lý thì Nhà nước cho thuê đất thông qua đấu giá quyền sử dụng đất hoặc đấu thầu lựa chọn nhà đầu tư thực hiện dự án có sử dụng đất, trừ trường hợp quy định tại Điều 124 của Luật Đất đai; đối với trường hợp cho thuê đất thông qua đấu giá quyền sử dụng đất thì người sử dụng đất phải trả tiền thuê đất một lần cho cả thời gian thuê.
+Đối với dự án đầu tư đang sử dụng đất thuộc trường hợp Nhà nước cho thuê đất theo hình thức trả tiền thuê đất hằng năm từ quỹ đất do cơ quan, tổ chức của Nhà nước được giao quản lý thì không được chuyển sang hình thức thuê đất trả tiền thuê đất một lần cho cả thời gian thuê.
+- Cá nhân đang được Nhà nước cho thuê đất thu tiền thuê đất hằng năm nhưng thuộc trường hợp được Nhà nước cho thuê đất thu tiền thuê đất một lần cho cả thời gian thuê theo quy định của Luật Đất đai thì được lựa chọn chuyển sang thuê đất trả tiền thuê đất một lần cho thời gian thuê đất còn lại.
+- Cá nhân đang được Nhà nước cho thuê đất thu tiền thuê đất một lần cho cả thời gian thuê thì được lựa chọn chuyển sang thuê đất thu tiền thuê đất hằng năm.

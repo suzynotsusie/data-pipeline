@@ -1,0 +1,243 @@
+.assistant-modal {
+  position: fixed;
+  right: 18px;
+  bottom: 72px;
+  z-index: 50;
+}
+.assistant-modal-panel {
+  width: min(390px, calc(100vw - 20px));
+  height: min(590px, calc(100vh - 92px));
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  border: 1px solid #ddd5cf;
+  border-radius: 14px 14px 8px 8px;
+  background: #fff;
+  box-shadow: 0 12px 44px rgba(26, 15, 11, 0.28);
+}
+.assistant-popup-header {
+  height: 52px;
+  flex: 0 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 8px 0 12px;
+  background: #fff;
+  color: var(--ink);
+  border-bottom: 1px solid #ece7e3;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+}
+.assistant-popup-header > div,
+.assistant-popup-header nav,
+.assistant-popup-header nav a {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.assistant-popup-header > div > span {
+  width: 34px;
+  height: 34px;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  background: var(--red);
+  color: #fff;
+}
+.assistant-popup-header > div > .assistant-popup-logo {
+  background: #fff7f1;
+  box-shadow: inset 0 0 0 1px rgba(201, 120, 75, 0.18);
+}
+.assistant-popup-logo-image {
+  width: 28px;
+  height: 28px;
+  object-fit: contain;
+}
+.assistant-popup-header > div > span svg {
+  width: 17px;
+}
+.assistant-popup-header > div > div {
+  display: flex;
+  flex-direction: column;
+}
+.assistant-popup-header strong {
+  font-size: 12px;
+}
+.assistant-popup-header small {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  color: #6d8b78;
+  font-size: 8px;
+}
+.assistant-popup-header small i {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: #31a24c;
+}
+.assistant-popup-header nav {
+  gap: 2px;
+}
+.assistant-popup-header nav button {
+  width: 32px;
+  height: 32px;
+  display: grid;
+  place-items: center;
+  border: 0;
+  border-radius: 50%;
+  background: transparent;
+  color: var(--red);
+  cursor: pointer;
+}
+.assistant-popup-header nav button:hover {
+  background: #f3efec;
+}
+.assistant-popup-header nav button svg {
+  width: 17px;
+}
+.assistant-popup-header nav .expand-chat {
+  width: auto;
+  height: 30px;
+  padding: 0 8px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  border: 0;
+  border-radius: 6px;
+  background: #f3efec;
+  color: var(--red);
+  font-size: 8px;
+  font-weight: 700;
+  cursor: pointer;
+}
+.assistant-popup-header nav .expand-chat svg {
+  width: 12px;
+}
+.assistant-popup-body {
+  min-height: 0;
+  flex: 1;
+  overflow: auto;
+  padding: 0;
+  background: #fff;
+}
+.assistant-popup-body .assistant-shell {
+  min-height: 100%;
+  border: 0;
+  border-radius: 0;
+  box-shadow: none;
+}
+.assistant-popup-body .assistant-bar {
+  display: none;
+}
+.assistant-popup-body .intake-panel {
+  min-height: 100%;
+  padding: 16px 13px 12px;
+  background: #fff;
+}
+.assistant-popup-body .assistant-intro {
+  gap: 10px;
+}
+.assistant-popup-body .assistant-intro .ai-orb {
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+}
+.assistant-popup-body .assistant-intro h1 {
+  font-size: 16px;
+}
+.assistant-popup-body .assistant-intro p {
+  font-size: 10px;
+}
+.assistant-popup-body .conversation {
+  max-height: 285px;
+  margin: 14px 0;
+}
+.assistant-popup-body .bubble {
+  max-width: 96%;
+}
+.assistant-popup-body .bubble > span {
+  display: none;
+}
+.assistant-popup-body .need-composer {
+  position: sticky;
+  bottom: 0;
+  z-index: 2;
+  margin-top: 12px;
+  background: #fff;
+  border-radius: 18px;
+  box-shadow: 0 -8px 18px rgba(255, 255, 255, 0.95);
+}
+.assistant-popup-body .need-composer textarea {
+  min-height: 52px;
+  max-height: 90px;
+  padding: 8px 10px;
+}
+.assistant-popup-body .need-composer button {
+  height: 34px;
+  border-radius: 17px;
+}
+.assistant-popup-body .examples,
+.assistant-popup-body .trust-row {
+  display: none;
+}
+.demo-scope-note { padding: 14px 16px; border-bottom: 1px solid #eee8e2; background: #fff8e9; color: #765b31; font-size: 9px; line-height: 1.5; }
+.demo-notice-page { min-height: 100vh; display: grid; place-items: center; padding: 24px; background: linear-gradient(135deg,#731119,#a9252c); color: #fff; }
+.demo-notice-page section { width: min(650px,100%); padding: 48px; background: #fff; color: var(--ink); border-top: 5px solid var(--gold); box-shadow: 0 25px 70px #2d050833; }
+.demo-notice-page span { font-size: 10px; font-weight: 700; letter-spacing: .14em; color: var(--red); }
+.demo-notice-page h1 { font-family: "Libre Franklin",sans-serif; font-size: 32px; }
+.demo-notice-page p { color: var(--muted); line-height: 1.75; }
+.demo-notice-page a { display: inline-flex; margin-top: 12px; padding: 12px 18px; background: var(--red); color: #fff; font-weight: 700; }
+.verified-source { margin-left: 7px; padding: 2px 6px; border-radius: 10px; background: #e8f4ed; color: var(--green); font-size: 8px; font-weight: 700; }
+.field-help-button { margin-left: 8px; border: 0; background: transparent; color: var(--red); font-size: 8px; font-weight: 700; text-decoration: underline; cursor: pointer; }
+.field-help { display: flex; gap: 8px; align-items: flex-start; padding: 10px 12px; border-left: 3px solid var(--gold); background: #fff8e9; color: #6c5550; font-size: 9px; line-height: 1.5; }
+.field-help svg { width: 15px; flex: 0 0 auto; color: var(--red); }
+.administrative-address { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px; }
+.administrative-address input,
+.administrative-address select { width: 100%; }
+.administrative-address.has-error input,
+.administrative-address.has-error select { border-color: #b52229; background: #fff9f8; }
+.floating-logo-button {
+  min-width: 64px;
+  height: 64px;
+  padding: 0 16px 0 10px;
+  gap: 10px;
+  background: #fff;
+  color: var(--red);
+  border: 1px solid #d9cdc4;
+  box-shadow: 0 12px 30px rgba(78, 12, 17, 0.16);
+}
+.floating-logo-button:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 16px 34px rgba(78, 12, 17, 0.2);
+}
+.floating-logo-mark {
+  width: 42px;
+  height: 42px;
+  flex: 0 0 auto;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  overflow: hidden;
+  background: #fff8f4;
+}
+.floating-logo-image {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+@media (max-width: 640px) {
+  .administrative-address { grid-template-columns: 1fr; }
+  .assistant-modal {
+    right: 6px;
+    bottom: 64px;
+  }
+  .assistant-modal-panel {
+    width: calc(100vw - 12px);
+    height: calc(100vh - 76px);
+  }
+  .assistant-popup-header nav .expand-chat span {
+    display: none;
+  }
+  .demo-notice-page section { padding: 28px 22px; }
+}

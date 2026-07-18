@@ -1,0 +1,128 @@
+[
+  {
+    "id": "submission-birth-identity-and-certificate-mismatch",
+    "procedure_code": "1.001193",
+    "submission": {
+      "child": {
+        "full_name": "Nguyen Van B",
+        "birth_date": "2026-07-01",
+        "gender": "male"
+      },
+      "father": {
+        "full_name": "Nguyễn Văn A",
+        "identity_number": "12345678901"
+      },
+      "mother": {
+        "full_name": "Trần Thị C",
+        "identity_number": "012345678901"
+      },
+      "birth_certificate": {
+        "available": true,
+        "birth_date": "2026-07-02",
+        "father_full_name": "Nguyễn Văn Anh",
+        "mother_full_name": "Trần Thị C"
+      },
+      "signature_present": false
+    },
+    "expected_rule_ids": [
+      "identity-number-format",
+      "birth-date-certificate-mismatch",
+      "father-name-certificate-mismatch",
+      "missing-signature"
+    ]
+  },
+  {
+    "id": "submission-birth-missing-certificate-replacement",
+    "procedure_code": "1.001193",
+    "submission": {
+      "child": {
+        "full_name": "Nguyễn Văn B",
+        "birth_date": "2026-07-01",
+        "gender": "male"
+      },
+      "father": {
+        "full_name": "Nguyễn Văn A",
+        "identity_number": "012345678901"
+      },
+      "mother": {
+        "full_name": "Trần Thị C",
+        "identity_number": "012345678902"
+      },
+      "birth_certificate": {
+        "available": false
+      },
+      "signature_present": true
+    },
+    "expected_rule_ids": ["missing-birth-certificate-replacement"]
+  },
+  {
+    "id": "submission-birth-future-date",
+    "procedure_code": "1.001193",
+    "submission": {
+      "child": {
+        "full_name": "Nguyễn Văn B",
+        "birth_date": "2999-01-01",
+        "gender": "male"
+      },
+      "father": {
+        "full_name": "Nguyễn Văn A",
+        "identity_number": "012345678901"
+      },
+      "mother": {
+        "full_name": "Trần Thị C",
+        "identity_number": "012345678902"
+      },
+      "birth_certificate": {
+        "available": true,
+        "birth_date": "2999-01-01",
+        "father_full_name": "Nguyễn Văn A",
+        "mother_full_name": "Trần Thị C"
+      },
+      "signature_present": true
+    },
+    "expected_rule_ids": ["birth-date-future"]
+  },
+  {
+    "id": "submission-residence-bad-period-and-address",
+    "procedure_code": "1.004194",
+    "submission": {
+      "applicant": {
+        "full_name": "Lê Văn D",
+        "identity_number": "abc",
+        "is_minor": false
+      },
+      "temporary_address": "12 Nguyễn Trãi, Phường A",
+      "permanent_address": "12 Nguyễn Trãi, Phường A",
+      "stay_start_date": "2026-07-10",
+      "stay_end_date": "2026-07-09",
+      "accommodation_proof": "",
+      "signature_present": false
+    },
+    "expected_rule_ids": [
+      "identity-number-format",
+      "temporary-address-equals-permanent",
+      "stay-end-before-start",
+      "missing-accommodation-proof",
+      "missing-signature"
+    ]
+  },
+  {
+    "id": "submission-residence-minor-missing-consent",
+    "procedure_code": "1.004194",
+    "submission": {
+      "applicant": {
+        "full_name": "Lê Văn E",
+        "identity_number": "012345678903",
+        "is_minor": true
+      },
+      "temporary_address": "45 Lê Lợi, Phường B",
+      "permanent_address": "89 Hai Bà Trưng, Phường C",
+      "stay_start_date": "2026-07-10",
+      "stay_end_date": "2026-10-10",
+      "accommodation_proof": "Hợp đồng thuê nhà",
+      "guardian_consent": "",
+      "signature_present": true
+    },
+    "expected_rule_ids": ["minor-missing-guardian-consent"]
+  }
+]

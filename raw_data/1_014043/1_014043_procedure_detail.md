@@ -1,0 +1,245 @@
+# Thay đổi, bổ sung giấy đăng ký lưu hành thuốc cổ truyền
+
+## Thông tin chung
+
+* **Mã thủ tục:** 1.014043
+* **Số quyết định:** 2238/QĐ-BYT
+* **Cấp thực hiện:** Cấp bộ/ngành
+* **Loại thủ tục:** TTHC được luật giao quy định chi tiết
+* **Lĩnh vực:** Y Dược cổ truyền
+* **Đối tượng thực hiện:** Doanh nghiệp, Tổ chức nước ngoài, Hợp tác xã, Tổ chức (không bao gồm doanh nghiệp, HTX), Doanh nghiệp có vốn đầu tư nước ngoài, Doanh nghiệp Việt Nam
+* **Cơ quan có thẩm quyền:** Không có thông tin
+* **Địa chỉ tiếp nhận HS:** Không có thông tin
+* **Cơ quan được ủy quyền:** Không có thông tin
+* **Cơ quan phối hợp:** Không có thông tin
+
+## Thủ tục hành chính liên quan
+
+Không có thông tin
+
+## Trình tự thực hiện
+
+1. Bước 1. Nộp hồ sơ: 
+   Cơ sở đề nghị thay đổi, bổ sung giấy đăng ký lưu hành thuốc cổ truyền nộp 01 bộ hồ sơ đề nghị thay đổi, bổ sung giấy đăng ký lưu hành thuốc cổ truyền theo quy định tại Điều 20 Thông tư số 29/2025/TT-BYT đến Cục Quản lý Y, Dược cổ truyền theo hình thức quy định tại khoản 3 Điều 3 Thông tư số 29/2025/TT-BYT.
+   Bước 2. Tiếp nhận hồ sơ:
+   Khi nhận được hồ sơ đăng ký đủ thành phần, đạt yêu cầu về hình thức, nộp phí theo quy định, Cục Quản lý Y, Dược cổ truyền cấp cho cơ sở đăng ký Giấy tiếp nhận hồ sơ theo quy định.
+   Bước 3. Trình tự thực hiện:
+   1. Đối với hồ sơ đăng ký lưu hành thuốc cổ truyền có thay đổi nhỏ theo quy định tại Mục II.2 Phụ lục II ban hành kèm theo Thông tư số 29/2025/TT-BYT, cơ sở được thực hiện các nội dung thay đổi, bổ sung ngay sau ngày cơ quan tiếp nhận hồ sơ cấp cho cơ sở đăng ký Giấy tiếp nhận. 
+   Trong thời hạn 01 tháng kể từ ngày tiếp nhận đủ hồ sơ, Cục Quản lý Y, Dược cổ truyền thực hiện phân loại và công bố nội dung thay đổi nhỏ chỉ yêu cầu thông báo trên Trang Thông tin điện tử của Cục Quản lý Y, Dược cổ truyền. Trường hợp nội dung thay đổi, bổ sung không phù hợp với phân loại, Cục Quản lý Y, Dược cổ truyền có văn bản thông báo.
+   2. Đối với các trường hợp thay đổi lớn mà có thay đổi, bổ sung chỉ định, liều dùng theo quy định tại Mục I Phụ lục II ban hành kèm theo Thông tư số 29/2025/TT-BYT, trong thời hạn 01 tháng kể từ ngày nhận đủ hồ sơ, cơ quan tiếp nhận hồ sơ có văn bản đồng ý hoặc không đồng ý với nội dung thay đổi, bổ sung giấy đăng ký lưu hành thuốc cổ truyền, cụ thể như sau:
+   2.1. Trong thời hạn 01 ngày làm việc kể từ ngày nhận đủ hồ sơ, Cục Quản lý Y, Dược cổ truyền tiến hành rà soát, phân loại và gửi hồ sơ đến các chuyên gia thẩm định hoặc các đơn vị thẩm định để tổ chức xem xét, cho ý kiến;
+   2.2. Trong thời hạn 10 ngày kể từ ngày nhận được hồ sơ từ Cục Quản lý Y, Dược cổ truyền, các chuyên gia thẩm định hoặc các đơn vị thẩm định phải hoàn thành biên bản thẩm định và gửi Cục Quản lý Y, Dược cổ truyền tổng hợp, kết luận biên bản thẩm định;
+   2.3. Sau khi nhận được biên bản thẩm định:
+   - Trong thời hạn 02 ngày làm việc, Cục Quản lý Y, Dược cổ truyền có văn bản đối với trường hợp hồ sơ cần sửa đổi bổ sung hoặc không đạt và nêu rõ lý do;
+    - Trong thời hạn 05 ngày làm việc, Cục Quản lý Y, Dược cổ truyền chuyển Văn phòng Hội đồng để tổ chức họp Hội đồng đối với hồ sơ thẩm định đạt hoặc hồ sơ cần xin ý kiến;
+   2.4. Trong thời hạn 05 ngày làm việc kể từ ngày nhận được tài liệu từ Cục Quản lý Y, Dược cổ truyền, Văn phòng Hội đồng tổ chức họp Hội đồng;
+   2.5. Trong thời hạn 03 ngày làm việc kể từ ngày họp Hội đồng, Văn phòng Hội đồng hoàn thiện và gửi biên bản về Cục Quản lý Y, Dược cổ truyền;
+   2.6. Trong thời hạn 02 ngày làm việc kể từ ngày nhận được biên bản họp Hội đồng, Cục Quản lý Y, Dược cổ truyền phê duyệt nội dung thay đổi, bổ sung giấy đăng ký lưu hành đối với hồ sơ đạt yêu cầu; có văn bản trả lời đối với hồ sơ thẩm định chưa đạt, không đạt và nêu rõ lý do.
+   3. Đối với các trường hợp thay đổi lớn hoặc thay đổi nhỏ không thuộc trường hợp tại khoản 3 và khoản 4 Điều 23 Thông tư số 29/2025/TT-BYT, trong thời hạn 01 tháng kể từ ngày nhận đủ hồ sơ, cơ quan tiếp nhận hồ sơ có văn bản đồng ý hoặc không đồng ý với nội dung thay đổi, bổ sung giấy đăng ký lưu hành thuốc cổ truyền, cụ thể như sau:
+   3.1. Trong thời hạn 01 ngày làm việc kể từ ngày nhận đủ hồ sơ, Cục Quản lý Y, Dược cổ truyền tiến hành rà soát, phân loại và gửi hồ sơ đến các chuyên gia thẩm định hoặc các đơn vị thẩm định để tổ chức xem xét, cho ý kiến;
+   3.2. Trong thời hạn 15 ngày kể từ ngày nhận được hồ sơ từ Cục Quản lý Y, Dược cổ truyền, các chuyên gia thẩm định hoặc các đơn vị thẩm định phải hoàn thành biên bản thẩm định và gửi Cục Quản lý Y, Dược cổ truyền tổng hợp, kết luận biên bản thẩm định;
+   3.3. Trong thời hạn 02 ngày làm việc kể từ ngày nhận được biên bản thẩm định, Cục Quản lý Y, Dược cổ truyền phê duyệt nội dung thay đổi, bổ sung giấy đăng ký lưu hành đối với hồ sơ đạt yêu cầu; có văn bản trả lời đối với hồ sơ thẩm định chưa đạt, không đạt và nêu rõ lý do.
+
+## Cách thức thực hiện
+
+| Hình thức nộp | Thời gian giải quyết | Phí, lệ phí | Mô tả |
+| --- | --- | --- | --- |
+| Trực tuyến | 1 ngày | Không có thông tin | Không quá 01 tháng |
+| Dịch vụ bưu chính | 1 ngày | Không có thông tin | Không quá 01 tháng |
+| Trực tiếp | 1 ngày | Không có thông tin | Không quá 01 tháng |
+
+## Thành phần hồ sơ
+
+| Tên giấy tờ | Bản chính | Bản sao | Tệp đính kèm |
+| --- | --- | --- | --- |
+| Mục 1. Thành phần hồ sơ bao gồm: | 1 | 1 | Không có |
+| 1. Đơn đề nghị thay đổi, bổ sung giấy đăng ký lưu hành thuốc cổ truyền theo quy định tại Mẫu số 04A Phụ lục I ban hành kèm theo Thông tư số 29/2025/TT-BYT. | 1 | 1 | [Mu.docx](file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/1_014043/Mu.docx) |
+| Mục II. Số lượng hồ sơ: 01 bộ đầy đủ. | 1 | 1 | Không có |
+| 2. Hồ sơ kỹ thuật đối với nội dung thay đổi, bổ sung giấy đăng ký lưu hành thuốc cổ truyền: Các tài liệu có liên quan theo quy định tại Phụ lục II ban hành kèm theo Thông tư số 29/2025/TT-BYT. | 1 | 1 | Không có |
+
+## Căn cứ pháp lý
+
+| Tên văn bản pháp lý | Mã văn bản |
+| --- | --- |
+| Luật 105/2016/QH13 Dược | 105/2016/QH13 |
+| Luật số 44/2024/QH15 | 44/2024/QH15 |
+| Thông tư của Bộ trưởng Bộ Y tế quy định về việc đăng ký lưu hành thuốc cổ truyền, vị thuốc cổ truyền, dược liệu | 29/2025/TT-BYT |
+| 41/2023/TT-BTC | 41/2023/TT-BTC |
+
+## Cơ quan thực hiện
+
+Cục Quản lý Y, Dược cổ truyền - Bộ Y tế
+
+## Yêu cầu, điều kiện thực hiện
+
+1. Khoản 3 Điều 55 Luật Dược: 
+Thay đổi, bổ sung giấy đăng ký lưu hành thuốc đã được cấp tại Việt Nam có các thay đổi trong thời hạn hiệu lực, trừ trường hợp quy định tại điểm b và điểm c khoản 2 Điều 55 Luật Dược, cụ thể: Thuốc đã được cấp giấy đăng ký lưu hành nhưng có thay đổi, bổ sung về dược chất, dược liệu; hàm lượng, nồng độ, khối lượng dược chất hoặc dược liệu trong một đơn vị liều; dạng bào chế; cơ sở sản xuất, trừ trường hợp thay đổi, bổ sung cơ sở đóng gói, cơ sở xuất xưởng, địa điểm xuất xưởng.
+2. Quy định về xác minh tính xác thực của tài liệu pháp lý trong hồ sơ đề nghị thay đổi, bổ sung giấy đăng ký lưu hành:
+2.1. Xác minh tính xác thực của CPP trong hồ sơ đề nghị thay đổi, bổ sung giấy đăng ký lưu hành thuốc cổ truyền đối với các trường hợp sau:
+a) CPP có nội dung bị tẩy xóa, sửa chữa thông tin;
+b) Cơ sở sản xuất, cơ sở đăng ký đã bị cơ quan có thẩm quyền của Việt Nam xử phạt hành chính do vi phạm điểm q khoản 2 Điều 42 Luật Dược. Thời hạn áp dụng việc xác minh tính xác thực CPP là 03 năm kể từ ngày có quyết định xử phạt hành chính hoặc từ ngày kết thúc thời hạn tạm ngừng nhận hồ sơ cấp, gia hạn giấy đăng ký lưu hành nếu có áp dụng biện pháp tạm ngừng nhận hồ sơ cấp, gia hạn giấy đăng ký lưu hành;
+c) Cơ sở sản xuất lần đầu tiên có thuốc đăng ký lưu hành tại Việt Nam, bao gồm cả trường hợp cơ sở chỉ tham gia một hoặc một số công đoạn của quá trình sản xuất; 
+d) CPP là bản điện tử của cơ quan có thẩm quyền các nước nhưng khi thẩm định hồ sơ không tra cứu được từ Trang Thông tin điện tử hoặc cơ sở dữ liệu mà cơ sở đăng ký cung cấp;
+đ) Các trường hợp do Hội đồng yêu cầu thực hiện việc xác thực.
+2.2. Xác minh tính xác thực của tài liệu pháp lý tại hồ sơ đăng ký lưu hành thuốc cổ truyền đối với các trường hợp sau:
+a) Đối với cơ sở đăng ký nước ngoài lần đầu có thuốc cổ truyền đăng ký lưu hành tại Việt Nam, Cục Quản lý Y, Dược cổ truyền thực hiện xác minh tính xác thực giấy phép sản xuất, kinh doanh thuốc tại nước sở tại;
+b) Tài liệu pháp lý do cơ quan có thẩm quyền nước ngoài cấp chưa có đầy đủ chữ ký, tên người ký, ngày cấp và dấu của cơ quan có thẩm quyền cấp, trừ trường hợp giấy tờ pháp lý không có đủ các thông tin này theo quy định của nước cấp là hợp lệ.
+2.3. Đối với thuốc cổ truyền đã được cấp giấy đăng ký lưu hành, Cục Quản lý Y, Dược cổ truyền thực hiện xác minh tính xác thực của các tài liệu pháp lý khi tiếp nhận thông tin phản ánh liên quan đến tình trạng cấp phép, lưu hành thuốc cổ truyền ở nước sở tại cần xác minh, làm rõ hoặc thông tin về việc không đáp ứng điều kiện hoạt động của cơ sở sản xuất thuốc, cơ sở đăng ký nước ngoài từ các nguồn thông tin sau:
+a) Văn bản gửi đến Cục Quản lý Y, Dược cổ truyền bao gồm đầy đủ tên, địa chỉ của cơ quan, tổ chức, cá nhân gửi; kèm theo tài liệu liên quan đến thông tin phản ánh;
+b) Thông tin từ phương tiện thông tin đại chúng.
+2.4. Hình thức thực hiện xác minh tính xác thực của CPP và tài liệu pháp lý nộp trong hồ sơ đăng ký thuốc cổ truyền:
+a) Xác minh tính xác thực tài liệu pháp lý liên quan đến hợp pháp hóa lãnh sự: Cục Quản lý Y, Dược cổ truyền phối hợp với Cục Lãnh sự - Bộ Ngoại giao hoặc các cơ quan ngoại giao có chức năng hợp pháp hoá lãnh sự của Việt Nam tại nước ngoài để xác minh thẩm quyền, thông tin liên quan đến hợp pháp hóa lãnh sự tài liệu pháp lý nước ngoài sử dụng tại Việt Nam đối với các trường hợp quy định tại điểm c khoản 1 và điểm a khoản 2 Điều 6 Thông tư số 29/2025/TT-BYT;
+b) Xác minh tính xác thực của nội dung tài liệu pháp lý: Cục Quản lý Y, Dược cổ truyền phối hợp với cơ quan cấp, ban hành các tài liệu pháp lý để xác minh các thông tin đã nêu trong các tài liệu nêu trên đối với các trường hợp quy định tại điểm a, b, d và đ khoản 1 và điểm b khoản 2 Điều 6 Thông tư số 29/2025/TT-BYT;
+c) Việc xác minh tính xác thực tài liệu pháp lý được thực hiện đồng thời với thủ tục thẩm định hồ sơ đăng ký thuốc cổ truyền hoặc khi tiếp nhận thông tin theo quy định tại khoản 3 Điều 6 Thông tư số 29/2025/TT-BYT;
+d) Văn bản đề nghị xác minh tính xác thực tài liệu pháp lý được gửi đồng thời cho cơ sở đăng ký thuốc cổ truyền.
+2.5. Đối với hồ sơ đề nghị cấp giấy đăng ký lưu hành thuốc cổ truyền có tài liệu pháp lý phải xác minh tính xác thực theo quy định tại khoản 1 và khoản 2 Điều 6 Thông tư số 29/2025/TT-BYT, thuốc cổ truyền chỉ được cấp giấy đăng ký lưu hành khi có kết quả xác minh tính xác thực đạt yêu cầu của cơ quan có thẩm quyền quy định tại khoản 4 Điều 6 Thông tư số 29/2025/TT-BYT.
+2.6. Đối với hồ sơ đề nghị thay đổi, bổ sung giấy đăng ký lưu hành thuốc cổ truyền có tài liệu pháp lý phải xác minh tính xác thực theo quy định tại khoản 1 và khoản 2 Điều 6 Thông tư số 29/2025/TT-BYT, không bắt buộc phải có kết quả xác minh tính xác thực trước thời điểm gia hạn hoặc thay đổi, bổ sung giấy đăng ký lưu hành thuốc cổ truyền.
+3. Quy định chung về hồ sơ đăng ký lưu hành thuốc cổ truyền:
+3.1. Các tài liệu pháp lý của cơ sở trong nước và nước ngoài theo quy định tại các khoản 2, 3, 7, 8 Điều 17 và khoản 2, 3 Điều 26 Thông tư số 29/2025/TT-BYT trong hồ sơ phải đáp ứng các quy định sau:
+a) Tài liệu pháp lý nộp trong hồ sơ đăng ký thuốc cổ truyền là bản chính hoặc bản sao theo quy định tại Nghị định số 23/2015/NĐ-CP ngày 16 tháng 02 năm 2015 của Chính phủ về cấp bản sao từ sổ gốc, chứng thực bản sao từ bản chính, chứng thực chữ ký và chứng thực hợp đồng, giao dịch. Tài liệu pháp lý do cơ quan có thẩm quyền nước ngoài cấp phải được hợp pháp hóa lãnh sự theo quy định của pháp luật về hợp pháp hóa lãnh sự, trừ các trường hợp được miễn theo quy định của pháp luật;
+b) Tài liệu pháp lý có đầy đủ chữ ký, tên người ký, ngày cấp và dấu của cơ quan có thẩm quyền của nước cấp, trừ trường hợp tài liệu pháp lý không có đủ các thông tin này theo quy định của nước cấp là hợp lệ;
+c) Trường hợp tài liệu pháp lý được cấp là bản điện tử (chấp nhận bản không có chữ ký, tên người ký hoặc dấu của cơ quan có thẩm quyền cấp tài liệu pháp lý), cơ sở đăng ký phải nộp một trong các giấy tờ sau:
+- Tài liệu pháp lý in từ Trang Thông tin điện tử hoặc cơ sở dữ liệu của cơ quan có thẩm quyền cấp tài liệu pháp lý hoặc trên Trang Thông tin điện tử do cơ quan có thẩm quyền nước sở tại hoặc cơ quan cấp khu vực vận hành;
+- Kết quả tự tra cứu tài liệu pháp lý từ Trang Thông tin điện tử hoặc cơ sở dữ liệu tiếng Anh của cơ quan có thẩm quyền cấp giấy tờ pháp lý hoặc trên Trang Thông tin điện tử do cơ quan có thẩm quyền nước sở tại hoặc cơ quan cấp khu vực vận hành. Kết quả tự tra cứu phải có đóng dấu xác nhận của cơ sở đăng ký kèm theo văn bản cung cấp thông tin về đường dẫn tra cứu;
+d) Tài liệu pháp lý phải còn hiệu lực tại thời điểm tiếp nhận ghi trên Giấy tiếp nhận hồ sơ đối với giấy tờ pháp lý có ghi thời hạn hiệu lực. Trường hợp CPP không ghi thời hạn hiệu lực thì thời hạn hiệu lực được tính là 24 tháng kể từ ngày cấp.
+3.2. Quy định đối với CPP:
+a) CPP phải có đủ nội dung theo mẫu của WHO được công bố trên Trang Thông tin điện tử của WHO (https://www.who.int);
+b) CPP phải được cấp bởi cơ quan có thẩm quyền của nước sản xuất và lưu hành thực tế tại nước đó;
+c) Trường hợp để đáp ứng nhu cầu phòng, điều trị bệnh truyền nhiễm thuộc nhóm A đã được công bố dịch theo quy định của pháp luật về phòng, chống bệnh truyền nhiễm, CPP có thể được thay thế bằng tài liệu khác do cơ quan có thẩm quyền cấp, trong đó xác nhận thuốc được phép lưu hành, sử dụng tại nước sở tại và thể hiện đầy đủ thông tin về tên, địa chỉ cơ sở sản xuất và điều kiện cấp phép;
+d) Trường hợp CPP chưa đáp ứng quy định tại điểm a, b Khoản này, Bộ trưởng Bộ Y tế xem xét quyết định trên cơ sở ý kiến tư vấn của Hội đồng khi thuốc được cấp phép lưu hành bởi cơ quan có thẩm quyền của ít nhất một nước trên thế giới và thuộc một trong các trường hợp sau đây:
+- Thuốc cổ truyền để đáp ứng nhu cầu cho quốc phòng, an ninh; phòng, chống dịch, bệnh, khắc phục hậu quả thiên tai, thảm họa, thuốc phục vụ cho chương trình y tế của nhà nước;
+- Các trường hợp đặc biệt khác có văn bản thỏa thuận, công nhận lẫn nhau giữa các cơ quan có thẩm quyền về điều kiện sản xuất, lưu hành thuốc cổ truyền;
+đ) Các thông tin thể hiện trên CPP phải thống nhất với các thông tin có liên quan trong hồ sơ đăng ký thuốc cổ truyền. Trường hợp thông tin thể hiện trên CPP chưa thống nhất với tài liệu hành chính trong hồ sơ đăng ký thuốc cổ truyền, cơ sở đăng ký có văn bản giải trình kèm theo tài liệu chứng minh.
+3.3. Quy định đối với đơn đăng ký và hồ sơ, tài liệu hành chính khác:
+a) Đơn đăng ký và hồ sơ, tài liệu khác trong phần hồ sơ hành chính có liên quan phải được ký và đóng dấu (chấp nhận cả chữ ký số), không sử dụng chữ ký dấu;
+b) Các tài liệu trên phải được ký bởi người đại diện pháp luật có một trong các chức danh sau:
+- Chủ tịch Hội đồng thành viên, hội đồng quản trị; tổng giám đốc; giám đốc điều hành; giám đốc cơ sở đăng ký, sản xuất;
+- Người được phân công theo quy định tại điều lệ công ty, văn bản phân công công việc hoặc tài liệu khác chứng minh về thẩm quyền ký của người ký;
+- Người được những người quy định tại tiết 1 hoặc tiết 2 điểm này ủy quyền trực tiếp.
+3.4. Quy định đối với thư ủy quyền:
+a) Thư ủy quyền đứng tên cơ sở đăng ký phải là bản chính có đầy đủ các nội dung sau: 
+- Tên và địa chỉ chủ sở hữu giấy phép lưu hành hoặc cơ sở sản xuất ủy quyền; 
+- Tên và địa chỉ cơ sở đăng ký được ủy quyền; 
+- Tên sản phẩm, thành phần, hàm lượng, dạng bào chế;
+- Nội dung ủy quyền;
+b) Thư ủy quyền ký tên trên hồ sơ đăng ký phải là bản chính có đầy đủ các nội dung sau: 
+- Tên và địa chỉ cơ sở đăng ký; 
+- Tên và chức danh người ủy quyền và người được ủy quyền; 
+- Tên sản phẩm, thành phần, hàm lượng, dạng bào chế; 
+- Nội dung ủy quyền;
+- Hiệu lực của thư ủy quyền;
+c) Trong trường hợp ủy quyền nhiều sản phẩm, thư ủy quyền phải kèm theo danh mục sản phẩm có đầy đủ thông tin về tên sản phẩm, thành phần, hàm lượng, dạng bào chế;
+d) Số lượng thư ủy quyền trong hồ sơ đăng ký:
+- Trường hợp cơ sở đăng ký khác cơ sở sản xuất hoặc chủ sở hữu giấy phép lưu hành, mỗi hồ sơ phải nộp kèm một thư ủy quyền đứng tên cơ sở đăng ký;
+- Trường hợp chức danh của người ký tên trên hồ sơ không thuộc một trong các chức danh quy định tại điểm b khoản 3 Điều 5 Thông tư số 29/2025/TT-BYT, mỗi hồ sơ phải nộp kèm một thư ủy quyền ký tên trên hồ sơ đăng ký.
+3.5. Mẫu nhãn thuốc cổ truyền và tờ hướng dẫn sử dụng thuốc cổ truyền dự kiến lưu hành tại Việt Nam thực hiện theo quy định tại Thông tư số 01/2018/TT-BYT ngày 18 tháng 01 năm 2018 của Bộ trưởng Bộ Y tế quy định ghi nhãn thuốc, nguyên liệu làm thuốc và tờ hướng dẫn sử dụng thuốc được sửa đổi, bổ sung tại Thông tư số 23/2023/TT-BYT ngày 30 tháng 11 năm 2023 của Bộ Y tế sửa đổi, bổ sung một số điều tại Thông tư số 01/2018/TT-BYT ngày 18 tháng 01 năm 2018 của Bộ trưởng Bộ Y tế quy định ghi nhãn thuốc, nguyên liệu làm thuốc và tờ hướng dẫn sử dụng thuốc và các quy định sau đây:
+a) Mẫu nhãn, tờ hướng dẫn sử dụng dự kiến lưu hành phải có dấu xác nhận của Văn phòng đại diện tại Việt Nam hoặc cơ sở đăng ký hoặc cơ sở sản xuất;
+b) Nhãn bao bì ngoài của thuốc cổ truyền phải được in mã vạch (Barcode), mã QR, mã DataMatrix hoặc các hình thức in mã khác theo quy định của pháp luật có liên quan trên bao bì ngoài của thuốc cổ truyền của các cơ sở sản xuất nhằm quản lý, nhận diện, truy xuất nguồn gốc thuốc cổ truyền lưu hành trên thị trường theo lộ trình thực hiện theo quy định của Bộ trưởng Bộ Y tế;
+c) Đối với các dạng bào chế hoặc đóng gói phải thực hiện nghiên cứu độ ổn định sau khi mở nắp theo hướng dẫn của hồ sơ kỹ thuật chung ASEAN (ACTD), hướng dẫn sử dụng phải có thông tin về thời hạn sử dụng và điều kiện bảo quản sau khi mở nắp;
+d) Nội dung về tác dụng, chỉ định, cách dùng, liều dùng phù hợp với thể bệnh y học cổ truyền;
+đ) Số lượng nhãn, tờ hướng dẫn sử dụng: Hồ sơ đăng ký lưu hành thuốc cổ truyền phải có 01 (một) bộ mẫu nhãn, tờ hướng dẫn sử dụng; đối với thuốc cổ truyền nhập khẩu phải có thêm 01 (một) bộ mẫu nhãn, tờ hướng dẫn sử dụng thực tế lưu hành tại nước xuất khẩu.
+3.6. Tài liệu pháp lý của cơ sở sản xuất tá dược, vỏ nang để sản xuất thuốc cổ truyền là một trong các tài liệu sau:
+a) Giấy chứng nhận GMP;
+b) Giấy phép sản xuất có xác nhận nội dung cơ sở sản xuất đáp ứng GMP;
+c) Chứng nhận phù hợp chuyên luận Dược điển Châu Âu (CEP);
+d) Các tài liệu pháp lý khác được cấp bởi cơ quan có thẩm quyền có đầy đủ các nội dung sau: Tên và địa chỉ nhà sản xuất, xác nhận cơ sở sản xuất đáp ứng GMP và tên của tá dược, vỏ nang;
+đ) Đối với tá dược trong hồ sơ đăng ký thuốc cổ truyền: Trường hợp không cung cấp được giấy tờ quy định tại một trong các điểm a, b, c, d Khoản này, cơ sở sản xuất thực hiện tự đánh giá việc đáp ứng thực hành tốt sản xuất của cơ sở sản xuất tá dược theo quy định tại điểm đ khoản 1 Điều 3, điểm b khoản 3 Điều 3 và điểm đ khoản 5 Điều 20 Thông tư số 35/2018/TT-BYT ngày 22 tháng 11 năm 2018 của Bộ trưởng Bộ Y tế quy định về thực hành tốt sản xuất thuốc, nguyên liệu làm thuốc (được sửa đổi, bổ sung tại điểm a, b và đ khoản 6 Điều 1 Thông tư số 29/2020/TT-BYT ngày 31 tháng 12 năm 2020 của Bộ trưởng Bộ Y tế sửa đổi, bổ sung và bãi bỏ một số văn bản quy phạm pháp luật do Bộ trưởng Bộ Y tế ban hành, liên tịch ban hành) và tự công bố trong hồ sơ đăng ký thuốc, nguyên liệu làm thuốc về nguyên tắc, tiêu chuẩn thực hành tốt sản xuất mà cơ sở sản xuất tá dược đáp ứng và cam kết chịu trách nhiệm trước pháp luật về công bố này theo quy định tại Mẫu số 06 Phụ lục I ban hành kèm theo Thông tư số 29/2025/TT-BYT.
+3.7. Tài liệu pháp lý của cơ sở cung cấp vị thuốc cổ truyền, dược liệu, nguyên liệu sản xuất thuốc cổ truyền từ dược liệu là một trong các tài liệu sau:
+a) Giấy chứng nhận cơ sở đủ điều kiện kinh doanh dược có một trong các phạm vi bán buôn, xuất khẩu, nhập khẩu, sản xuất vị thuốc cổ truyền, dược liệu, nguyên liệu sản xuất thuốc cổ truyền từ dược liệu;
+b) Giấy chứng nhận GMP;
+c) Giấy phép sản xuất có xác nhận nội dung cơ sở sản xuất đáp ứng GMP;
+d) Giấy chứng nhận đáp ứng thực hành tốt nuôi trồng, thu hái dược liệu (GACP);
+đ) Các tài liệu pháp lý khác được cấp bởi cơ quan có thẩm quyền có đầy đủ các nội dung sau: Tên và địa chỉ nhà sản xuất, xác nhận cơ sở sản xuất đáp ứng GMP và tên của dược liệu.
+4. Đáp ứng điều kiện quy định tại Phụ lục II Thông tư số 29/2025/TT-BYT
+
+## Kết quả xử lý
+
+* Văn bản phê duyệt nội dung thay đổi, bổ sung giấy đăng ký lưu hành (Mã: `KQ.G18.000215`)
+* Bản tự công bố chất lượng vị thuốc cổ truyền, dược liệu theo Mẫu số 02 Phụ lục I ban hành kèm theo Thông tư số 32/2025/TT-BYT ngày 01/7/2025 được công bố trên Trang Thông tin điện tử của Cục Quản lý Y, Dược cổ truyền (Mã: `KQ.G18.000249`)
+* Văn bản thông báo cho cơ sở đăng ký thuốc cổ truyền theo kết luận của chuyên gia, Hội đồng đối với hồ sơ chưa đạt, không đạt (Mã: `KQ.G18.000254`)
+
+## Từ khóa
+
+Không có thông tin
+
+## Mô tả
+
+1. Khoản 3 Điều 55 Luật Dược: 
+Thay đổi, bổ sung giấy đăng ký lưu hành thuốc đã được cấp tại Việt Nam có các thay đổi trong thời hạn hiệu lực, trừ trường hợp quy định tại điểm b và điểm c khoản 2 Điều 55 Luật Dược, cụ thể: Thuốc đã được cấp giấy đăng ký lưu hành nhưng có thay đổi, bổ sung về dược chất, dược liệu; hàm lượng, nồng độ, khối lượng dược chất hoặc dược liệu trong một đơn vị liều; dạng bào chế; cơ sở sản xuất, trừ trường hợp thay đổi, bổ sung cơ sở đóng gói, cơ sở xuất xưởng, địa điểm xuất xưởng.
+2. Quy định về xác minh tính xác thực của tài liệu pháp lý trong hồ sơ đề nghị thay đổi, bổ sung giấy đăng ký lưu hành:
+2.1. Xác minh tính xác thực của CPP trong hồ sơ đề nghị thay đổi, bổ sung giấy đăng ký lưu hành thuốc cổ truyền đối với các trường hợp sau:
+a) CPP có nội dung bị tẩy xóa, sửa chữa thông tin;
+b) Cơ sở sản xuất, cơ sở đăng ký đã bị cơ quan có thẩm quyền của Việt Nam xử phạt hành chính do vi phạm điểm q khoản 2 Điều 42 Luật Dược. Thời hạn áp dụng việc xác minh tính xác thực CPP là 03 năm kể từ ngày có quyết định xử phạt hành chính hoặc từ ngày kết thúc thời hạn tạm ngừng nhận hồ sơ cấp, gia hạn giấy đăng ký lưu hành nếu có áp dụng biện pháp tạm ngừng nhận hồ sơ cấp, gia hạn giấy đăng ký lưu hành;
+c) Cơ sở sản xuất lần đầu tiên có thuốc đăng ký lưu hành tại Việt Nam, bao gồm cả trường hợp cơ sở chỉ tham gia một hoặc một số công đoạn của quá trình sản xuất; 
+d) CPP là bản điện tử của cơ quan có thẩm quyền các nước nhưng khi thẩm định hồ sơ không tra cứu được từ Trang Thông tin điện tử hoặc cơ sở dữ liệu mà cơ sở đăng ký cung cấp;
+đ) Các trường hợp do Hội đồng yêu cầu thực hiện việc xác thực.
+2.2. Xác minh tính xác thực của tài liệu pháp lý tại hồ sơ đăng ký lưu hành thuốc cổ truyền đối với các trường hợp sau:
+a) Đối với cơ sở đăng ký nước ngoài lần đầu có thuốc cổ truyền đăng ký lưu hành tại Việt Nam, Cục Quản lý Y, Dược cổ truyền thực hiện xác minh tính xác thực giấy phép sản xuất, kinh doanh thuốc tại nước sở tại;
+b) Tài liệu pháp lý do cơ quan có thẩm quyền nước ngoài cấp chưa có đầy đủ chữ ký, tên người ký, ngày cấp và dấu của cơ quan có thẩm quyền cấp, trừ trường hợp giấy tờ pháp lý không có đủ các thông tin này theo quy định của nước cấp là hợp lệ.
+2.3. Đối với thuốc cổ truyền đã được cấp giấy đăng ký lưu hành, Cục Quản lý Y, Dược cổ truyền thực hiện xác minh tính xác thực của các tài liệu pháp lý khi tiếp nhận thông tin phản ánh liên quan đến tình trạng cấp phép, lưu hành thuốc cổ truyền ở nước sở tại cần xác minh, làm rõ hoặc thông tin về việc không đáp ứng điều kiện hoạt động của cơ sở sản xuất thuốc, cơ sở đăng ký nước ngoài từ các nguồn thông tin sau:
+a) Văn bản gửi đến Cục Quản lý Y, Dược cổ truyền bao gồm đầy đủ tên, địa chỉ của cơ quan, tổ chức, cá nhân gửi; kèm theo tài liệu liên quan đến thông tin phản ánh;
+b) Thông tin từ phương tiện thông tin đại chúng.
+2.4. Hình thức thực hiện xác minh tính xác thực của CPP và tài liệu pháp lý nộp trong hồ sơ đăng ký thuốc cổ truyền:
+a) Xác minh tính xác thực tài liệu pháp lý liên quan đến hợp pháp hóa lãnh sự: Cục Quản lý Y, Dược cổ truyền phối hợp với Cục Lãnh sự - Bộ Ngoại giao hoặc các cơ quan ngoại giao có chức năng hợp pháp hoá lãnh sự của Việt Nam tại nước ngoài để xác minh thẩm quyền, thông tin liên quan đến hợp pháp hóa lãnh sự tài liệu pháp lý nước ngoài sử dụng tại Việt Nam đối với các trường hợp quy định tại điểm c khoản 1 và điểm a khoản 2 Điều 6 Thông tư số 29/2025/TT-BYT;
+b) Xác minh tính xác thực của nội dung tài liệu pháp lý: Cục Quản lý Y, Dược cổ truyền phối hợp với cơ quan cấp, ban hành các tài liệu pháp lý để xác minh các thông tin đã nêu trong các tài liệu nêu trên đối với các trường hợp quy định tại điểm a, b, d và đ khoản 1 và điểm b khoản 2 Điều 6 Thông tư số 29/2025/TT-BYT;
+c) Việc xác minh tính xác thực tài liệu pháp lý được thực hiện đồng thời với thủ tục thẩm định hồ sơ đăng ký thuốc cổ truyền hoặc khi tiếp nhận thông tin theo quy định tại khoản 3 Điều 6 Thông tư số 29/2025/TT-BYT;
+d) Văn bản đề nghị xác minh tính xác thực tài liệu pháp lý được gửi đồng thời cho cơ sở đăng ký thuốc cổ truyền.
+2.5. Đối với hồ sơ đề nghị cấp giấy đăng ký lưu hành thuốc cổ truyền có tài liệu pháp lý phải xác minh tính xác thực theo quy định tại khoản 1 và khoản 2 Điều 6 Thông tư số 29/2025/TT-BYT, thuốc cổ truyền chỉ được cấp giấy đăng ký lưu hành khi có kết quả xác minh tính xác thực đạt yêu cầu của cơ quan có thẩm quyền quy định tại khoản 4 Điều 6 Thông tư số 29/2025/TT-BYT.
+2.6. Đối với hồ sơ đề nghị thay đổi, bổ sung giấy đăng ký lưu hành thuốc cổ truyền có tài liệu pháp lý phải xác minh tính xác thực theo quy định tại khoản 1 và khoản 2 Điều 6 Thông tư số 29/2025/TT-BYT, không bắt buộc phải có kết quả xác minh tính xác thực trước thời điểm gia hạn hoặc thay đổi, bổ sung giấy đăng ký lưu hành thuốc cổ truyền.
+3. Quy định chung về hồ sơ đăng ký lưu hành thuốc cổ truyền:
+3.1. Các tài liệu pháp lý của cơ sở trong nước và nước ngoài theo quy định tại các khoản 2, 3, 7, 8 Điều 17 và khoản 2, 3 Điều 26 Thông tư số 29/2025/TT-BYT trong hồ sơ phải đáp ứng các quy định sau:
+a) Tài liệu pháp lý nộp trong hồ sơ đăng ký thuốc cổ truyền là bản chính hoặc bản sao theo quy định tại Nghị định số 23/2015/NĐ-CP ngày 16 tháng 02 năm 2015 của Chính phủ về cấp bản sao từ sổ gốc, chứng thực bản sao từ bản chính, chứng thực chữ ký và chứng thực hợp đồng, giao dịch. Tài liệu pháp lý do cơ quan có thẩm quyền nước ngoài cấp phải được hợp pháp hóa lãnh sự theo quy định của pháp luật về hợp pháp hóa lãnh sự, trừ các trường hợp được miễn theo quy định của pháp luật;
+b) Tài liệu pháp lý có đầy đủ chữ ký, tên người ký, ngày cấp và dấu của cơ quan có thẩm quyền của nước cấp, trừ trường hợp tài liệu pháp lý không có đủ các thông tin này theo quy định của nước cấp là hợp lệ;
+c) Trường hợp tài liệu pháp lý được cấp là bản điện tử (chấp nhận bản không có chữ ký, tên người ký hoặc dấu của cơ quan có thẩm quyền cấp tài liệu pháp lý), cơ sở đăng ký phải nộp một trong các giấy tờ sau:
+- Tài liệu pháp lý in từ Trang Thông tin điện tử hoặc cơ sở dữ liệu của cơ quan có thẩm quyền cấp tài liệu pháp lý hoặc trên Trang Thông tin điện tử do cơ quan có thẩm quyền nước sở tại hoặc cơ quan cấp khu vực vận hành;
+- Kết quả tự tra cứu tài liệu pháp lý từ Trang Thông tin điện tử hoặc cơ sở dữ liệu tiếng Anh của cơ quan có thẩm quyền cấp giấy tờ pháp lý hoặc trên Trang Thông tin điện tử do cơ quan có thẩm quyền nước sở tại hoặc cơ quan cấp khu vực vận hành. Kết quả tự tra cứu phải có đóng dấu xác nhận của cơ sở đăng ký kèm theo văn bản cung cấp thông tin về đường dẫn tra cứu;
+d) Tài liệu pháp lý phải còn hiệu lực tại thời điểm tiếp nhận ghi trên Giấy tiếp nhận hồ sơ đối với giấy tờ pháp lý có ghi thời hạn hiệu lực. Trường hợp CPP không ghi thời hạn hiệu lực thì thời hạn hiệu lực được tính là 24 tháng kể từ ngày cấp.
+3.2. Quy định đối với CPP:
+a) CPP phải có đủ nội dung theo mẫu của WHO được công bố trên Trang Thông tin điện tử của WHO (https://www.who.int);
+b) CPP phải được cấp bởi cơ quan có thẩm quyền của nước sản xuất và lưu hành thực tế tại nước đó;
+c) Trường hợp để đáp ứng nhu cầu phòng, điều trị bệnh truyền nhiễm thuộc nhóm A đã được công bố dịch theo quy định của pháp luật về phòng, chống bệnh truyền nhiễm, CPP có thể được thay thế bằng tài liệu khác do cơ quan có thẩm quyền cấp, trong đó xác nhận thuốc được phép lưu hành, sử dụng tại nước sở tại và thể hiện đầy đủ thông tin về tên, địa chỉ cơ sở sản xuất và điều kiện cấp phép;
+d) Trường hợp CPP chưa đáp ứng quy định tại điểm a, b Khoản này, Bộ trưởng Bộ Y tế xem xét quyết định trên cơ sở ý kiến tư vấn của Hội đồng khi thuốc được cấp phép lưu hành bởi cơ quan có thẩm quyền của ít nhất một nước trên thế giới và thuộc một trong các trường hợp sau đây:
+- Thuốc cổ truyền để đáp ứng nhu cầu cho quốc phòng, an ninh; phòng, chống dịch, bệnh, khắc phục hậu quả thiên tai, thảm họa, thuốc phục vụ cho chương trình y tế của nhà nước;
+- Các trường hợp đặc biệt khác có văn bản thỏa thuận, công nhận lẫn nhau giữa các cơ quan có thẩm quyền về điều kiện sản xuất, lưu hành thuốc cổ truyền;
+đ) Các thông tin thể hiện trên CPP phải thống nhất với các thông tin có liên quan trong hồ sơ đăng ký thuốc cổ truyền. Trường hợp thông tin thể hiện trên CPP chưa thống nhất với tài liệu hành chính trong hồ sơ đăng ký thuốc cổ truyền, cơ sở đăng ký có văn bản giải trình kèm theo tài liệu chứng minh.
+3.3. Quy định đối với đơn đăng ký và hồ sơ, tài liệu hành chính khác:
+a) Đơn đăng ký và hồ sơ, tài liệu khác trong phần hồ sơ hành chính có liên quan phải được ký và đóng dấu (chấp nhận cả chữ ký số), không sử dụng chữ ký dấu;
+b) Các tài liệu trên phải được ký bởi người đại diện pháp luật có một trong các chức danh sau:
+- Chủ tịch Hội đồng thành viên, hội đồng quản trị; tổng giám đốc; giám đốc điều hành; giám đốc cơ sở đăng ký, sản xuất;
+- Người được phân công theo quy định tại điều lệ công ty, văn bản phân công công việc hoặc tài liệu khác chứng minh về thẩm quyền ký của người ký;
+- Người được những người quy định tại tiết 1 hoặc tiết 2 điểm này ủy quyền trực tiếp.
+3.4. Quy định đối với thư ủy quyền:
+a) Thư ủy quyền đứng tên cơ sở đăng ký phải là bản chính có đầy đủ các nội dung sau: 
+- Tên và địa chỉ chủ sở hữu giấy phép lưu hành hoặc cơ sở sản xuất ủy quyền; 
+- Tên và địa chỉ cơ sở đăng ký được ủy quyền; 
+- Tên sản phẩm, thành phần, hàm lượng, dạng bào chế;
+- Nội dung ủy quyền;
+b) Thư ủy quyền ký tên trên hồ sơ đăng ký phải là bản chính có đầy đủ các nội dung sau: 
+- Tên và địa chỉ cơ sở đăng ký; 
+- Tên và chức danh người ủy quyền và người được ủy quyền; 
+- Tên sản phẩm, thành phần, hàm lượng, dạng bào chế; 
+- Nội dung ủy quyền;
+- Hiệu lực của thư ủy quyền;
+c) Trong trường hợp ủy quyền nhiều sản phẩm, thư ủy quyền phải kèm theo danh mục sản phẩm có đầy đủ thông tin về tên sản phẩm, thành phần, hàm lượng, dạng bào chế;
+d) Số lượng thư ủy quyền trong hồ sơ đăng ký:
+- Trường hợp cơ sở đăng ký khác cơ sở sản xuất hoặc chủ sở hữu giấy phép lưu hành, mỗi hồ sơ phải nộp kèm một thư ủy quyền đứng tên cơ sở đăng ký;
+- Trường hợp chức danh của người ký tên trên hồ sơ không thuộc một trong các chức danh quy định tại điểm b khoản 3 Điều 5 Thông tư số 29/2025/TT-BYT, mỗi hồ sơ phải nộp kèm một thư ủy quyền ký tên trên hồ sơ đăng ký.
+3.5. Mẫu nhãn thuốc cổ truyền và tờ hướng dẫn sử dụng thuốc cổ truyền dự kiến lưu hành tại Việt Nam thực hiện theo quy định tại Thông tư số 01/2018/TT-BYT ngày 18 tháng 01 năm 2018 của Bộ trưởng Bộ Y tế quy định ghi nhãn thuốc, nguyên liệu làm thuốc và tờ hướng dẫn sử dụng thuốc được sửa đổi, bổ sung tại Thông tư số 23/2023/TT-BYT ngày 30 tháng 11 năm 2023 của Bộ Y tế sửa đổi, bổ sung một số điều tại Thông tư số 01/2018/TT-BYT ngày 18 tháng 01 năm 2018 của Bộ trưởng Bộ Y tế quy định ghi nhãn thuốc, nguyên liệu làm thuốc và tờ hướng dẫn sử dụng thuốc và các quy định sau đây:
+a) Mẫu nhãn, tờ hướng dẫn sử dụng dự kiến lưu hành phải có dấu xác nhận của Văn phòng đại diện tại Việt Nam hoặc cơ sở đăng ký hoặc cơ sở sản xuất;
+b) Nhãn bao bì ngoài của thuốc cổ truyền phải được in mã vạch (Barcode), mã QR, mã DataMatrix hoặc các hình thức in mã khác theo quy định của pháp luật có liên quan trên bao bì ngoài của thuốc cổ truyền của các cơ sở sản xuất nhằm quản lý, nhận diện, truy xuất nguồn gốc thuốc cổ truyền lưu hành trên thị trường theo lộ trình thực hiện theo quy định của Bộ trưởng Bộ Y tế;
+c) Đối với các dạng bào chế hoặc đóng gói phải thực hiện nghiên cứu độ ổn định sau khi mở nắp theo hướng dẫn của hồ sơ kỹ thuật chung ASEAN (ACTD), hướng dẫn sử dụng phải có thông tin về thời hạn sử dụng và điều kiện bảo quản sau khi mở nắp;
+d) Nội dung về tác dụng, chỉ định, cách dùng, liều dùng phù hợp với thể bệnh y học cổ truyền;
+đ) Số lượng nhãn, tờ hướng dẫn sử dụng: Hồ sơ đăng ký lưu hành thuốc cổ truyền phải có 01 (một) bộ mẫu nhãn, tờ hướng dẫn sử dụng; đối với thuốc cổ truyền nhập khẩu phải có thêm 01 (một) bộ mẫu nhãn, tờ hướng dẫn sử dụng thực tế lưu hành tại nước xuất khẩu.
+3.6. Tài liệu pháp lý của cơ sở sản xuất tá dược, vỏ nang để sản xuất thuốc cổ truyền là một trong các tài liệu sau:
+a) Giấy chứng nhận GMP;
+b) Giấy phép sản xuất có xác nhận nội dung cơ sở sản xuất đáp ứng GMP;
+c) Chứng nhận phù hợp chuyên luận Dược điển Châu Âu (CEP);
+d) Các tài liệu pháp lý khác được cấp bởi cơ quan có thẩm quyền có đầy đủ các nội dung sau: Tên và địa chỉ nhà sản xuất, xác nhận cơ sở sản xuất đáp ứng GMP và tên của tá dược, vỏ nang;
+đ) Đối với tá dược trong hồ sơ đăng ký thuốc cổ truyền: Trường hợp không cung cấp được giấy tờ quy định tại một trong các điểm a, b, c, d Khoản này, cơ sở sản xuất thực hiện tự đánh giá việc đáp ứng thực hành tốt sản xuất của cơ sở sản xuất tá dược theo quy định tại điểm đ khoản 1 Điều 3, điểm b khoản 3 Điều 3 và điểm đ khoản 5 Điều 20 Thông tư số 35/2018/TT-BYT ngày 22 tháng 11 năm 2018 của Bộ trưởng Bộ Y tế quy định về thực hành tốt sản xuất thuốc, nguyên liệu làm thuốc (được sửa đổi, bổ sung tại điểm a, b và đ khoản 6 Điều 1 Thông tư số 29/2020/TT-BYT ngày 31 tháng 12 năm 2020 của Bộ trưởng Bộ Y tế sửa đổi, bổ sung và bãi bỏ một số văn bản quy phạm pháp luật do Bộ trưởng Bộ Y tế ban hành, liên tịch ban hành) và tự công bố trong hồ sơ đăng ký thuốc, nguyên liệu làm thuốc về nguyên tắc, tiêu chuẩn thực hành tốt sản xuất mà cơ sở sản xuất tá dược đáp ứng và cam kết chịu trách nhiệm trước pháp luật về công bố này theo quy định tại Mẫu số 06 Phụ lục I ban hành kèm theo Thông tư số 29/2025/TT-BYT.
+3.7. Tài liệu pháp lý của cơ sở cung cấp vị thuốc cổ truyền, dược liệu, nguyên liệu sản xuất thuốc cổ truyền từ dược liệu là một trong các tài liệu sau:
+a) Giấy chứng nhận cơ sở đủ điều kiện kinh doanh dược có một trong các phạm vi bán buôn, xuất khẩu, nhập khẩu, sản xuất vị thuốc cổ truyền, dược liệu, nguyên liệu sản xuất thuốc cổ truyền từ dược liệu;
+b) Giấy chứng nhận GMP;
+c) Giấy phép sản xuất có xác nhận nội dung cơ sở sản xuất đáp ứng GMP;
+d) Giấy chứng nhận đáp ứng thực hành tốt nuôi trồng, thu hái dược liệu (GACP);
+đ) Các tài liệu pháp lý khác được cấp bởi cơ quan có thẩm quyền có đầy đủ các nội dung sau: Tên và địa chỉ nhà sản xuất, xác nhận cơ sở sản xuất đáp ứng GMP và tên của dược liệu.
+4. Đáp ứng điều kiện quy định tại Phụ lục II Thông tư số 29/2025/TT-BYT

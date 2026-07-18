@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GovEase AI Workflow Chatbot</title>
+    <link rel="stylesheet" href="/static/styles.css" />
+  </head>
+  <body>
+    <div class="shell">
+      <aside class="sidebar">
+        <div class="brand">
+          <div class="brand-mark">G</div>
+          <div>
+            <p class="eyebrow">GovEase AI</p>
+            <h1>Trợ lý workflow</h1>
+          </div>
+        </div>
+
+        <section class="panel">
+          <h2>Trạng thái</h2>
+          <dl class="status-list">
+            <div><dt>Session</dt><dd id="sessionId">Chưa tạo</dd></div>
+            <div><dt>Lĩnh vực</dt><dd id="domainLabel">Chưa chọn</dd></div>
+            <div><dt>Chế độ hỗ trợ</dt><dd id="assistMode">Chưa xác định</dd></div>
+            <div><dt>Persona</dt><dd id="personaLabel">Chưa xác định</dd></div>
+            <div><dt>Node hiện tại</dt><dd id="nodeId">Chưa có</dd></div>
+            <div><dt>Trạng thái</dt><dd id="completed">Đang hỏi đáp</dd></div>
+          </dl>
+        </section>
+
+        <section class="panel">
+          <h2>Slots đã map</h2>
+          <pre id="slotState" class="code-box">{}</pre>
+        </section>
+
+        <section class="panel">
+          <h2>Kết quả route</h2>
+          <div id="resultCard" class="result-empty">Chưa chốt được thủ tục.</div>
+        </section>
+      </aside>
+
+      <main class="main">
+        <section class="hero">
+          <p class="eyebrow">GPT-5 mini + workflow engine</p>
+          <h2>Chat tự nhiên, backend vẫn đi theo decision tree</h2>
+          <p>
+            Ví dụ: “Tôi mới sinh con, muốn làm khai sinh cho bé” hoặc “Tôi muốn đăng ký tạm trú”.
+          </p>
+          <div class="mode-switcher">
+            <button type="button" class="mode-chip" data-mode="guided">Dẫn từng bước</button>
+            <button type="button" class="mode-chip" data-mode="fast_track">Đi nhanh</button>
+          </div>
+        </section>
+
+        <section id="chatLog" class="chat-log"></section>
+
+        <section class="quick-panel">
+          <div class="quick-panel-head">
+            <span>Lựa chọn nhanh</span>
+            <small>Bạn có thể bấm nút hoặc trả lời tự nhiên.</small>
+          </div>
+          <div id="quickReplies" class="quick-replies"></div>
+        </section>
+
+        <form id="chatForm" class="composer">
+          <textarea
+            id="messageInput"
+            rows="3"
+            placeholder="Nhập nhu cầu của bạn bằng ngôn ngữ tự nhiên..."
+          ></textarea>
+          <div class="composer-row">
+            <button type="submit">Gửi</button>
+          </div>
+        </form>
+      </main>
+    </div>
+
+    <script src="/static/app.js"></script>
+  </body>
+</html>

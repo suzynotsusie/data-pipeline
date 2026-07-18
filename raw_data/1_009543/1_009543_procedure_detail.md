@@ -1,0 +1,171 @@
+# Cấp, cấp lại chứng chỉ hành nghề chứng khoán
+
+## Thông tin chung
+
+* **Mã thủ tục:** 1.009543
+* **Số quyết định:** 936/QĐ-BTC
+* **Cấp thực hiện:** Cấp bộ/ngành
+* **Loại thủ tục:** TTHC được luật giao quy định chi tiết
+* **Lĩnh vực:** Chứng khoán
+* **Đối tượng thực hiện:** Công dân Việt Nam
+* **Cơ quan có thẩm quyền:** Ủy ban Chứng khoán Nhà nước - Bộ tài chính
+* **Địa chỉ tiếp nhận HS:** Không có thông tin
+* **Cơ quan được ủy quyền:** Không có thông tin
+* **Cơ quan phối hợp:** Không có thông tin
+
+## Thủ tục hành chính liên quan
+
+Không có thông tin
+
+## Trình tự thực hiện
+
+1. **Trường hợp đề nghị cấp chứng chỉ hành nghề chứng khoán hoặc đề nghị cấp lại chứng chỉ hành nghề chứng khoán sau khi bị thu hồi theo quy định tại điểm a, c khoản 3 Điều 97 Luật Chứng khoán (của các đợt thi thực hiện hồ sơ thi cũng đồng thời là hồ sơ cấp theo Nghị định số 245/2025/NĐ-CP của Chính phủ ngày 11/9/2025 về việc sửa đổi, bổ sung một số điều của Nghị định số 155/2020/NĐ-CP ngày 31/12/2020 của Chính phủ):**
+
+   Bước 1: Cá nhân gửi hồ sơ đề nghị cấp/cấp lại chứng chỉ hành nghề chứng khoán đồng thời là hồ sơ đăng ký dự thi sát hạch cấp chứng chỉ hành nghề chứng khoán đến Ủy ban Chứng khoán Nhà nước. 
+   Bước 2: Ủy ban Chứng khoán Nhà nước (Bộ phận Một cửa) tiếp nhận và kiểm tra danh mục hồ sơ. Trường hợp danh mục chưa đầy đủ, Ủy ban Chứng khoán Nhà nước (Bộ phận Một cửa) hướng dẫn bổ sung hồ sơ theo quy định.
+   Bước 3: Ủy ban Chứng khoán Nhà nước tổ chức thi sát hạch cấp chứng chỉ hành nghề chứng khoán đối với các cá nhân đủ điều kiện dự thi và thông báo kết quả thi sát hạch cấp chứng chỉ hành nghề chứng khoán trên trang thông tin điện tử của Ủy ban Chứng khoán Nhà nước.
+
+2. **+ Trường hợp có kết quả thi sát hạch cấp chứng chỉ hành nghề chứng khoán đạt:**
+
+   Bước 4: Trong thời hạn 30 ngày kể từ ngày kết quả thi sát hạch cấp chứng chỉ hành nghề chứng khoán được thông báo trên trang thông tin điện tử của Ủy ban Chứng khoán Nhà nước, Ủy ban Chứng khoán Nhà nước ra quyết định cấp, cấp lại chứng chỉ hành nghề chứng khoán và thông báo nộp lệ phí cho người đề nghị. Trường hợp từ chối hoặc Phiếu lý lịch tư pháp cần sửa đổi, bổ sung, Ủy ban Chứng khoán Nhà nước phải trả lời bằng văn bản và nêu rõ lý do.
+   Đối với trường hợp cần sửa đổi, bổ sung Phiếu lý lịch tư pháp theo quy định, thí sinh phải hoàn thiện Phiếu lý lịch tư pháp theo yêu cầu của Ủy ban Chứng khoán Nhà nước trong thời hạn 60 ngày kể từ ngày trên văn bản đề nghị bổ sung. Ủy ban Chứng khoán Nhà nước ra quyết định cấp, cấp lại chứng chỉ hành nghề chứng khoán và thông báo nộp lệ phí cho người đề nghị trong thời hạn 10 ngày kể từ ngày hết thời hạn hoàn thiện hồ sơ; trường hợp từ chối, Ủy ban Chứng khoán Nhà nước phải trả lời bằng văn bản và nêu rõ lý do.
+
+3. **Trường hợp có kết quả thi sát hạch cấp chứng chỉ hành nghề chứng khoán chưa đạt một phần:**
+
+   Bước 4: Cá nhân nộp hồ sơ đăng ký dự thi lại sát hạch cấp chứng chỉ hành nghề chứng khoán và đề nghị cấp/cấp lại chứng chỉ hành nghề chứng khoán.
+
+4. *** Trường hợp đề nghị cấp chứng chỉ hành nghề chứng khoán hoặc đề nghị cấp lại chứng chỉ hành nghề chứng khoán sau khi bị thu hồi theo quy định tại điểm a, c khoản 3 Điều 97 Luật Chứng khoán (của các đợt thi đã tổ chức thi hoặc có ngày bắt đầu nhận hồ sơ thi trước ngày có hiệu lực của Nghị định số 245/2025/NĐ-CP thực hiện theo Khoản 6 Điều 3 Nghị định số 245/2025/NĐ-CP)**
+
+   Bước 1: Cá nhân gửi hồ sơ đề nghị cấp/cấp lại chứng chỉ hành nghề chứng khoán sau khi đã có kết quả Đạt của các đợt thi cấp chứng chỉ hành nghề chứng khoán tổ chức trước ngày có hiệu lực của Nghị định số 245/2025/NĐ-CP hoặc của các đợt thi sát hạch cấp chứng chỉ hành nghề chứng khoán có ngày bắt đầu nhận hồ sơ trước ngày Nghị định số  245/2025/NĐ-CP có hiệu lực.
+   Bước 2: Ủy ban Chứng khoán Nhà nước (Bộ phận Một cửa) tiếp nhận và kiểm tra danh mục hồ sơ. Trường hợp danh mục chưa đầy đủ, Ủy ban Chứng khoán Nhà nước (Bộ phận Một cửa) hướng dẫn bổ sung hồ sơ theo quy định.
+   Bước 3: Trong thời hạn 07 ngày làm việc kể từ ngày nhận được hồ sơ, Ủy ban Chứng khoán Nhà nước ra quyết định xem xét tính đầy đủ, hợp lệ của hồ sơ. Trường hợp hồ sơ cần sửa đổi, bổ sung, Ủy ban Chứng khoán Nhà nước có văn bản gửi cá nhân nêu rõ nội dung yêu cầu sửa đổi, bổ sung.
+   Bước 4: Trong thời hạn 60 ngày kể từ ngày Ủy ban Chứng khoán Nhà nước có văn bản yêu cầu sửa đổi, bổ sung hồ sơ, cá nhân hoàn thiện hồ sơ và gửi đến Ủy ban Chứng khoán Nhà nước.
+   Bước 5: Trong thời hạn 07 ngày làm việc kể từ ngày nhận được hồ sơ đầy đủ, hợp lệ, Ủy ban Chứng khoán Nhà nước ra quyết định cấp, cấp lại chứng chỉ hành nghề chứng khoán và thông báo nộp lệ phí cho người đề nghị. Trường hợp từ chối, Ủy ban Chứng khoán Nhà nước phải trả lời bằng văn bản và nêu rõ lý do.
+
+5. *** Trường hợp đề nghị cấp lại chứng chỉ hành nghề chứng khoán do bị mất, hỏng chứng chỉ hành nghề chứng khoán hoặc thay đổi thông tin xác nhận nhân thân trong chứng chỉ hành nghề chứng khoán:**
+
+   Bước 1: Cá nhân gửi hồ sơ đề nghị cấp lại chứng chỉ hành nghề chứng khoán đến Ủy ban Chứng khoán Nhà nước.
+   Bước 2: Ủy ban Chứng khoán Nhà nước (Bộ phận Một cửa) tiếp nhận và kiểm tra danh mục hồ sơ. Trường hợp danh mục chưa đầy đủ, Ủy ban Chứng khoán Nhà nước (Bộ phận Một cửa) hướng dẫn bổ sung hồ sơ theo quy định.
+   Bước 3: Trong thời hạn 07 ngày làm việc kể từ ngày nhận được hồ sơ, Ủy ban Chứng khoán Nhà nước ra quyết định xem xét tính đầy đủ, hợp lệ của hồ sơ. Trường hợp hồ sơ cần sửa đổi, bổ sung, Ủy ban Chứng khoán Nhà nước có văn bản gửi cá nhân nêu rõ nội dung yêu cầu sửa đổi, bổ sung.
+   Bước 4: Trong thời hạn 60 ngày kể từ ngày Ủy ban Chứng khoán Nhà nước có văn bản yêu cầu sửa đổi, bổ sung hồ sơ, cá nhân hoàn thiện hồ sơ và gửi đến Ủy ban Chứng khoán Nhà nước.
+   Bước 5: Trong thời hạn 07 ngày làm việc kể từ ngày nhận được hồ sơ đầy đủ, hợp lệ, Ủy ban Chứng khoán Nhà nước ra quyết định cấp lại chứng chỉ hành nghề chứng khoán và thông báo nộp lệ phí cho người đề nghị. Trường hợp từ chối, Ủy ban Chứng khoán Nhà nước phải trả lời bằng văn bản và nêu rõ lý do.
+
+## Cách thức thực hiện
+
+| Hình thức nộp | Thời gian giải quyết | Phí, lệ phí | Mô tả |
+| --- | --- | --- | --- |
+| Dịch vụ bưu chính | 7 ngày làm việc | Không có thông tin | + Thời hạn ra quyết định cấp hoặc quyết định cấp lại chứng chỉ hành nghề chứng khoán sau khi bị thu hồi theo quy định tại điểm a, c khoản 3 Điều 97 Luật Chứng khoán và thông báo nộp lệ phí hoặc văn bản từ chối (của các đợt thi thực hiện hồ sơ thi cũng đồng thời là hồ sơ cấp theo Nghị định số 245/2025/NĐ-CP của Chính phủ ngày 11/9/2025 về việc sửa đổi, bổ sung một số Điều của Nghị định số 155/2020/NĐ-CP ngày 31/12/2020 của Chính phủ): Trong thời hạn 30 ngày kể từ ngày kết quả thi sát hạch cấp chứng chỉ hành nghề chứng khoán được thông báo trên trang thông tin điện tử của Ủy ban Chứng khoán Nhà nước. <br>Đối với trường hợp cần sửa đổi, bổ sung Phiếu lý lịch tư pháp: Thời hạn ra quyết định cấp hoặc cấp lại chứng chỉ hành nghề chứng khoán sau khi bị thu hồi theo quy định tại điểm a, c khoản 3 Điều 97 Luật Chứng khoán và thông báo nộp lệ phí hoặc văn bản từ chối: Trong thời hạn 10 ngày kể từ ngày hết thời hạn hoàn thiện hồ sơ. <br>+ Thời hạn ra quyết định cấp hoặc quyết định cấp lại chứng chỉ hành nghề chứng khoán sau khi bị thu hồi theo quy định tại điểm a, c khoản 3 Điều 97 Luật Chứng khoán (của các đợt thi đã tổ chức thi hoặc thời gian bắt đầu nhận hồ sơ thi trước ngày có hiệu lực của Nghị định số 245/2025/NĐ-CP thực hiện theo Khoản 6 Điều 3 Nghị định số 245/2025/NĐ-CP): 07 ngày làm việc kể từ ngày nhận được hồ sơ đầy đủ và hợp lệ.<br>+ Thời hạn ra quyết định cấp lại chứng chỉ hành nghề chứng khoán do bị mất, hỏng chứng chỉ hành nghề chứng khoán hoặc thay đổi thông tin xác nhận nhân thân trong chứng chỉ hành nghề chứng khoán: 07 ngày làm việc kể từ ngày nhận được hồ sơ đầy đủ và hợp lệ. |
+| Trực tiếp | 7 ngày làm việc | Không có thông tin | + Thời hạn ra quyết định cấp hoặc quyết định cấp lại chứng chỉ hành nghề chứng khoán sau khi bị thu hồi theo quy định tại điểm a, c khoản 3 Điều 97 Luật Chứng khoán và thông báo nộp lệ phí hoặc văn bản từ chối (của các đợt thi thực hiện hồ sơ thi cũng đồng thời là hồ sơ cấp theo Nghị định số 245/2025/NĐ-CP của Chính phủ ngày 11/9/2025 về việc sửa đổi, bổ sung một số Điều của Nghị định số 155/2020/NĐ-CP ngày 31/12/2020 của Chính phủ): Trong thời hạn 30 ngày kể từ ngày kết quả thi sát hạch cấp chứng chỉ hành nghề chứng khoán được thông báo trên trang thông tin điện tử của Ủy ban Chứng khoán Nhà nước. <br>Đối với trường hợp cần sửa đổi, bổ sung Phiếu lý lịch tư pháp: Thời hạn ra quyết định cấp hoặc cấp lại chứng chỉ hành nghề chứng khoán sau khi bị thu hồi theo quy định tại điểm a, c khoản 3 Điều 97 Luật Chứng khoán và thông báo nộp lệ phí hoặc văn bản từ chối: Trong thời hạn 10 ngày kể từ ngày hết thời hạn hoàn thiện hồ sơ. <br>+ Thời hạn ra quyết định cấp hoặc quyết định cấp lại chứng chỉ hành nghề chứng khoán sau khi bị thu hồi theo quy định tại điểm a, c khoản 3 Điều 97 Luật Chứng khoán (của các đợt thi đã tổ chức thi hoặc thời gian bắt đầu nhận hồ sơ thi trước ngày có hiệu lực của Nghị định số 245/2025/NĐ-CP thực hiện theo Khoản 6 Điều 3 Nghị định số 245/2025/NĐ-CP): 07 ngày làm việc kể từ ngày nhận được hồ sơ đầy đủ và hợp lệ.<br>+ Thời hạn ra quyết định cấp lại chứng chỉ hành nghề chứng khoán do bị mất, hỏng chứng chỉ hành nghề chứng khoán hoặc thay đổi thông tin xác nhận nhân thân trong chứng chỉ hành nghề chứng khoán: 07 ngày làm việc kể từ ngày nhận được hồ sơ đầy đủ và hợp lệ. |
+| Trực tuyến | 7 ngày làm việc | Không có thông tin | + Thời hạn ra quyết định cấp hoặc quyết định cấp lại chứng chỉ hành nghề chứng khoán sau khi bị thu hồi theo quy định tại điểm a, c khoản 3 Điều 97 Luật Chứng khoán và thông báo nộp lệ phí hoặc văn bản từ chối (của các đợt thi thực hiện hồ sơ thi cũng đồng thời là hồ sơ cấp theo Nghị định số 245/2025/NĐ-CP của Chính phủ ngày 11/9/2025 về việc sửa đổi, bổ sung một số Điều của Nghị định số 155/2020/NĐ-CP ngày 31/12/2020 của Chính phủ): Trong thời hạn 30 ngày kể từ ngày kết quả thi sát hạch cấp chứng chỉ hành nghề chứng khoán được thông báo trên trang thông tin điện tử của Ủy ban Chứng khoán Nhà nước. <br>Đối với trường hợp cần sửa đổi, bổ sung Phiếu lý lịch tư pháp: Thời hạn ra quyết định cấp hoặc cấp lại chứng chỉ hành nghề chứng khoán sau khi bị thu hồi theo quy định tại điểm a, c khoản 3 Điều 97 Luật Chứng khoán và thông báo nộp lệ phí hoặc văn bản từ chối: Trong thời hạn 10 ngày kể từ ngày hết thời hạn hoàn thiện hồ sơ. <br>+ Thời hạn ra quyết định cấp hoặc quyết định cấp lại chứng chỉ hành nghề chứng khoán sau khi bị thu hồi theo quy định tại điểm a, c khoản 3 Điều 97 Luật Chứng khoán (của các đợt thi đã tổ chức thi hoặc thời gian bắt đầu nhận hồ sơ thi trước ngày có hiệu lực của Nghị định số 245/2025/NĐ-CP thực hiện theo Khoản 6 Điều 3 Nghị định số 245/2025/NĐ-CP): 07 ngày làm việc kể từ ngày nhận được hồ sơ đầy đủ và hợp lệ.<br>+ Thời hạn ra quyết định cấp lại chứng chỉ hành nghề chứng khoán do bị mất, hỏng chứng chỉ hành nghề chứng khoán hoặc thay đổi thông tin xác nhận nhân thân trong chứng chỉ hành nghề chứng khoán: 07 ngày làm việc kể từ ngày nhận được hồ sơ đầy đủ và hợp lệ. |
+
+## Thành phần hồ sơ
+
+### * Trường hợp đề nghị cấp chứng chỉ hành nghề chứng khoán hoặc đề nghị cấp lại chứng chỉ hành nghề chứng khoán sau khi bị thu hồi theo quy định tại điểm a, c khoản 3 Điều 97 Luật Chứng khoán (của các đợt thi thực hiện hồ sơ thi cũng đồng thời là hồ sơ cấp theo Nghị định số 245/2025/NĐ-CP của Chính phủ ngày 11/9/2025 về việc sửa đổi, bổ sung một số Điều của Nghị định số 155/2020/NĐ-CP ngày 31/12/2020 của Chính phủ):
+
+| Tên giấy tờ | Bản chính | Bản sao | Tệp đính kèm |
+| --- | --- | --- | --- |
+| + Giấy đăng ký dự thi/thi lại sát hạch và đề nghị cấp/cấp lại chứng chỉ hành nghề -chứng khoán theo mẫu số 85 Phụ lục ban hành kèm theo Nghị định số 245/2025/NĐ-CP ngày 11/9/2025 của Chính phủ; | 1 | 0 | [Mẫu số 85 - giấy đăng ký dự thi NĐ 245.docx](file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/1_009543/M%E1%BA%ABu%20s%E1%BB%91%2085%20-%20gi%E1%BA%A5y%20%C4%91%C4%83ng%20k%C3%BD%20d%E1%BB%B1%20thi%20N%C4%90%20245.docx) |
+| + Bản thông tin cá nhân của người đề nghị cấp chứng chỉ hành nghề chứng khoán theo Mẫu số 01 kèm theo Phụ lục I.3 ban hành kèm Nghị quyết số 24/2026/NQ-CP ngày 29/4/2026 của Chính phủ trong vòng 06 tháng tính đến ngày Ủy ban Chứng khoán Nhà nước nhận được hồ sơ; | 1 | 0 | [bản thông tin cá nhân - Mẫu 01.docx](file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/1_009543/b%E1%BA%A3n%20th%C3%B4ng%20tin%20c%C3%A1%20nh%C3%A2n%20-%20M%E1%BA%ABu%2001.docx) |
+| Phiếu lý lịch tư pháp số 1 được cơ quan có thẩm quyền cấp trong thời hạn 06 tháng tính đến ngày Ủy ban Chứng khoán Nhà nước nhận được hồ sơ; Lưu ý: Phiếu lý lịch tư pháp có thể được nộp về Ủy ban Chứng khoán Nhà nước trong thời hạn 20 ngày kể từ ngày kết quả thi sát hạch cấp chứng chỉ hành nghề chứng khoán được thông báo trên trang thông tin điện tử của Ủy ban Chứng khoán Nhà nước. | 1 | 0 | Không có |
+| + Bằng tốt nghiệp đại học hoặc bằng thạc sỹ, tiến sỹ; - Đối với người Việt Nam có bằng đại học trở lên do cơ sở đào tạo nước ngoài cấp phải được gửi kèm bản dịch chứng thực sang tiếng Việt bởi cơ quan có thẩm quyền và bản sao chứng thực của giấy công nhận văn bằng theo quy định của Bộ Giáo dục và Đào tạo; Trường hợp văn bằng được miễn thực hiện thủ tục công nhận văn bằng theo quy định, thí sinh phải nộp các tài liệu chứng minh văn bằng được miễn thực hiện thủ tục công nhận văn bằng theo quy định.  - Đối với người nước ngoài có bằng Đại học trở lên do cơ sở đào tạo nước ngoài cấp phải được gửi kèm bản dịch chứng thực sang tiếng Việt bởi cơ quan có thẩm quyền và phải được hợp pháp hóa lãnh sự. | 1 | 0 | Không có |
+| Chứng chỉ hành nghề chứng khoán hợp pháp ở nước ngoài hoặc tài liệu tương đương chứng minh cá nhân đó đang được phép hành nghề chứng khoán hợp pháp ở nước ngoài; hoặc các chứng chỉ tương đương các chứng chỉ chuyên môn về chứng khoán; | 1 | 0 | Không có |
+| Hai (02) ảnh 4cm x 6cm chụp trong vòng 06 tháng tính đến ngày Ủy ban Chứng khoán Nhà nước nhận được hồ sơ; | 1 | 0 | Không có |
+| Đối với trường hợp đề nghị cấp chứng chỉ hành nghề quản lý quỹ, hồ sơ kèm theo văn bản xác nhận số năm làm việc, vị trí công tác của người đề nghị cấp chứng chỉ hành nghề chứng khoán do các tổ chức nơi người đề nghị cấp chứng chỉ hành nghề chứng khoán đã từng làm việc hoặc đang làm việc cung cấp. Các thành phần hồ sơ trên phải đáp ứng quy định chung về việc nộp hồ sơ, tài liệu báo cáo theo quy định tại Điều 6 Nghị định số 155/2020/NĐ-CP ngày 31/12/2020 của Chính phủ quy định chi tiết một số điều của Luật Chứng khoán được sửa đổi, bổ sung bởi Khoản 3 Điều 1 Nghị định số 245/2025/NĐ-CP. | 1 | 0 | Không có |
+| Thành phần hồ sơ trong thủ tục hành chính này được thay thế hoặc cắt giảm trong trường hợp cơ quan tiếp nhận, giải quyết thủ tục hành chính khai thác được thông tin từ các cơ sở dữ liệu quốc gia, cơ sở dữ liệu chuyên ngành. Trường hợp không khai thác được thông tin hoặc thông tin khai thác được không đầy đủ, không chính xác thì cơ quan, người có thẩm quyền tiếp nhận, giải quyết thủ tục hành chính yêu cầu cá nhân, tổ chức bổ sung thành phần hồ sơ để giải quyết thủ tục hành chính; đồng thời đề nghị cá nhân, tổ chức thực hiện cập nhật, điều chỉnh thông tin trong các cơ sở dữ liệu theo quy định của pháp luật. | 0 | 0 | Không có |
+
+### Trường hợp đề nghị cấp chứng chỉ hành nghề chứng khoán hoặc đề nghị cấp lại chứng chỉ hành nghề chứng khoán sau khi bị thu hồi theo quy định tại điểm a, c khoản 3 Điều 97 Luật Chứng khoán (của các đợt thi đã tổ chức thi hoặc có ngày bắt đầu nhận hồ sơ thi trước ngày có hiệu lực của Nghị định số 245/2025/NĐ-CP thực hiện theo Khoản 6 Điều 3 Nghị định số 245/2025/NĐ-CP)
+
+| Tên giấy tờ | Bản chính | Bản sao | Tệp đính kèm |
+| --- | --- | --- | --- |
+| + Giấy đăng ký dự thi/thi lại sát hạch và đề nghị cấp/cấp lại chứng chỉ hành nghề -chứng khoán theo mẫu số 85 Phụ lục ban hành kèm theo Nghị định số 155/2020/NĐ-CP ngày 31/12/2020 của Chính phủ; | 1 | 0 | [giấy đề nghị cấp lại -Mẫu 85 ban hành kèm theo NĐ 155.docx](file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/1_009543/gi%E1%BA%A5y%20%C4%91%E1%BB%81%20ngh%E1%BB%8B%20c%E1%BA%A5p%20l%E1%BA%A1i%20-M%E1%BA%ABu%2085%20ban%20h%C3%A0nh%20k%C3%A8m%20theo%20N%C4%90%20155.docx) |
+| + Bản thông tin cá nhân của người đề nghị cấp chứng chỉ hành nghề chứng khoán theo Mẫu số 67 Phụ lục ban hành kèm Nghị định số 155/2020/NĐ-CP ngày 31/12/2020 của Chính phủ trong vòng 06 tháng tính đến ngày Ủy ban Chứng khoán Nhà nước nhận được hồ sơ; | 1 | 0 | [Bản thông tin cá nhân - mẫu 67 ban hành kèm theo NĐ 155.docx](file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/1_009543/B%E1%BA%A3n%20th%C3%B4ng%20tin%20c%C3%A1%20nh%C3%A2n%20-%20m%E1%BA%ABu%2067%20ban%20h%C3%A0nh%20k%C3%A8m%20theo%20N%C4%90%20155.docx) |
+| + Phiếu lý lịch tư pháp được cơ quan có thẩm quyền cấp trong thời hạn 06 tháng tính đến ngày Ủy ban Chứng khoán Nhà nước nhận được hồ sơ | 1 | 0 | Không có |
+| Bản sao hợp lệ bằng tốt nghiệp đại học hoặc bằng thạc sỹ, tiến sỹ; | 1 | 0 | Không có |
+| + Chứng chỉ hành nghề chứng khoán hợp pháp ở nước ngoài hoặc tài liệu tương đương chứng minh cá nhân đó đang được phép hành nghề chứng khoán hợp pháp ở nước ngoài; hoặc các chứng chỉ chuyên môn về chứng khoán hoặc các chứng chỉ tương đương; | 1 | 0 | Không có |
+| + 02 ảnh 4cm x 6cm chụp trong vòng 06 tháng tính đến ngày Ủy ban Chứng khoán Nhà nước nhận được hồ sơ; | 1 | 0 | Không có |
+| + Đối với trường hợp đề nghị cấp chứng chỉ hành nghề quản lý quỹ, hồ sơ kèm theo văn bản xác nhận số năm làm việc, vị trí công tác của người đề nghị cấp chứng chỉ hành nghề chứng khoán do các tổ chức nơi người đề nghị cấp chứng chỉ hành nghề chứng khoán đã từng làm việc hoặc đang làm việc cung cấp. Các thành phần hồ sơ trên đáp ứng quy định chung về việc nộp hồ sơ, tài liệu báo cáo theo quy định tại Điều 6 Nghị định số 155/2020/NĐ-CP ngày 31/12/2020 của Chính phủ quy định chi tiết một số điều của Luật Chứng khoán. | 1 | 0 | Không có |
+
+### * Trường hợp cá nhân đăng ký dự thi lại sát hạch cấp chứng chỉ hành nghề chứng khoán (đối với phần chưa đạt) và đề nghị cấp/cấp lại chứng chỉ hành nghề chứng khoán:
+
+| Tên giấy tờ | Bản chính | Bản sao | Tệp đính kèm |
+| --- | --- | --- | --- |
+| Trường hợp cá nhân đăng ký dự thi lại sát hạch cấp chứng chỉ hành nghề chứng khoán (đối với phần chưa đạt) và đề nghị cấp, cấp lại chứng chỉ hành nghề chứng khoán của các đợt thi chưa áp dụng quy định hồ sơ thi đồng thời là hồ sơ cấp tại Nghị định số 245/2025/NĐ-CP: Thực hiện nộp đầy đủ thành phần hồ sơ như tại đối với trường hợp đề nghị cấp chứng chỉ hành nghề chứng khoán hoặc đề nghị cấp lại chứng chỉ hành nghề chứng khoán sau khi bị thu hồi theo quy định tại điểm a, c khoản 3 Điều 97 Luật Chứng khoán (của các đợt thi thực hiện hồ sơ thi cũng đồng thời là hồ sơ cấp theo Nghị định số 245/2025/NĐ-CP của Chính phủ ngày 11/9/2025 về việc sửa đổi, bổ sung một số Điều của Nghị định số 155/2020/NĐ-CP ngày 31/12/2020 của Chính phủ). | 1 | 0 | Không có |
+| Trường hợp cá nhân đăng ký dự thi lại sát hạch cấp chứng chỉ hành nghề chứng khoán (đối với phần chưa đạt) và đề nghị cấp chứng chỉ hành nghề chứng khoán của các đợt thi đã áp dụng quy định hồ sơ thi đồng thời là hồ sơ cấp tại Nghị định số 245/2025/NĐ-CP: | 0 | 0 | Không có |
+| + Giấy đăng ký dự thi/thi lại sát hạch và đề nghị cấp/cấp lại chứng chỉ hành nghề -chứng khoán theo mẫu số 85 Phụ lục ban hành kèm theo Nghị định số  245/2025/NĐ-CP ngày 11/9/2025 của Chính phủ; | 1 | 0 | [Mẫu số 85 - giấy đăng ký dự thi NĐ 245.docx](file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/1_009543/M%E1%BA%ABu%20s%E1%BB%91%2085%20-%20gi%E1%BA%A5y%20%C4%91%C4%83ng%20k%C3%BD%20d%E1%BB%B1%20thi%20N%C4%90%20245.docx) |
+| + Bản thông tin cá nhân của người đề nghị cấp chứng chỉ hành nghề chứng khoán theo Mẫu số 01 Phụ lục ban hành kèm theo Phụ lục I.3 Nghị quyết số 24/2026/NQ-CP ngày 29/4/2026 của Chính phủ trong vòng 06 tháng tính đến ngày Ủy ban Chứng khoán Nhà nước nhận được hồ sơ; | 1 | 0 | [bản thông tin cá nhân - Mẫu 01.docx](file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/1_009543/b%E1%BA%A3n%20th%C3%B4ng%20tin%20c%C3%A1%20nh%C3%A2n%20-%20M%E1%BA%ABu%2001.docx) |
+| + Phiếu lý lịch tư pháp số 1 được cơ quan có thẩm quyền cấp trong thời hạn 06 tháng tính đến ngày Ủy ban Chứng khoán Nhà nước nhận được hồ sơ; Lưu ý: Phiếu lý lịch tư pháp có thể được nộp về Ủy ban Chứng khoán Nhà nước trong thời hạn 20 ngày kể từ ngày kết quả thi sát hạch cấp chứng chỉ hành nghề chứng khoán được thông báo trên trang thông tin điện tử của Ủy ban Chứng khoán Nhà nước | 1 | 0 | Không có |
+| + Hai (02) ảnh 4cm x 6cm chụp trong vòng 06 tháng tính đến ngày Ủy ban Chứng khoán Nhà nước nhận được hồ sơ. | 1 | 0 | Không có |
+| Các thành phần hồ sơ trên phải đáp ứng quy định chung về việc nộp hồ sơ, tài liệu báo cáo theo quy định tại Điều 6 Nghị định số 155/2020/NĐ-CP ngày 31/12/2020 của Chính phủ quy định chi tiết một số điều của Luật Chứng khoán được sửa đổi, bổ sung bởi Khoản 3 Điều 1 Nghị định số 245/2025/NĐ-CP.  Thành phần hồ sơ trong thủ tục hành chính này được thay thế hoặc cắt giảm trong trường hợp cơ quan tiếp nhận, giải quyết thủ tục hành chính khai thác được thông tin từ các cơ sở dữ liệu quốc gia, cơ sở dữ liệu chuyên ngành. Trường hợp không khai thác được thông tin hoặc thông tin khai thác được không đầy đủ, không chính xác thì cơ quan, người có thẩm quyền tiếp nhận, giải quyết thủ tục hành chính yêu cầu cá nhân, tổ chức bổ sung thành phần hồ sơ để giải quyết thủ tục hành chính; đồng thời đề nghị cá nhân, tổ chức thực hiện cập nhật, điều chỉnh thông tin trong các cơ sở dữ liệu theo quy định của pháp luật. | 0 | 0 | Không có |
+
+### * Trường hợp đề nghị cấp lại chứng chỉ hành nghề chứng khoán do bị mất, hỏng chứng chỉ hành nghề chứng khoán hoặc thay đổi thông tin xác nhận nhân thân trong chứng chỉ hành nghề chứng khoán:
+
+| Tên giấy tờ | Bản chính | Bản sao | Tệp đính kèm |
+| --- | --- | --- | --- |
+| + Giấy đề nghị cấp lại chứng chỉ hành nghề chứng khoán theo mẫu số 85 Phụ lục ban hành kèm theo Nghị định số 245/2025/NĐ-CP ngày 11/09/2025 của Chính phủ; | 1 | 0 | [giấy đề nghị cấp lại -Mẫu 85 ban hành kèm theo NĐ 155.docx](file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/1_009543/gi%E1%BA%A5y%20%C4%91%E1%BB%81%20ngh%E1%BB%8B%20c%E1%BA%A5p%20l%E1%BA%A1i%20-M%E1%BA%ABu%2085%20ban%20h%C3%A0nh%20k%C3%A8m%20theo%20N%C4%90%20155.docx) |
+| + Thẻ căn cước công dân, thẻ căn cước hoặc Hộ chiếu còn giá trị sử dụng; | 1 | 0 | Không có |
+| + 02 ảnh 4cm x 6cm chụp trong vòng 06 tháng tính đến ngày Ủy ban Chứng khoán Nhà nước nhận được hồ sơ; | 1 | 0 | Không có |
+| + Chứng chỉ hành nghề chứng khoán đã được Ủy ban Chứng khoán Nhà nước cấp, trừ trường hợp đề nghị cấp lại do bị mất chứng chỉ. | 1 | 0 | Không có |
+| Các thành phần hồ sơ trên phải đáp ứng quy định chung về việc nộp hồ sơ, tài liệu báo cáo theo quy định tại Điều 6 Nghị định số 155/2020/NĐ-CP ngày 31/12/2020 của Chính phủ quy định chi tiết một số điều của Luật Chứng khoán được sửa đổi, bổ sung bởi Khoản 3 Điều 1 Nghị định số 245/2025/NĐ-CP.  Thành phần hồ sơ trong thủ tục hành chính này được thay thế hoặc cắt giảm trong trường hợp cơ quan tiếp nhận, giải quyết thủ tục hành chính khai thác được thông tin từ các cơ sở dữ liệu quốc gia, cơ sở dữ liệu chuyên ngành. Trường hợp không khai thác được thông tin hoặc thông tin khai thác được không đầy đủ, không chính xác thì cơ quan, người có thẩm quyền tiếp nhận, giải quyết thủ tục hành chính yêu cầu cá nhân, tổ chức bổ sung thành phần hồ sơ để giải quyết thủ tục hành chính; đồng thời đề nghị cá nhân, tổ chức thực hiện cập nhật, điều chỉnh thông tin trong các cơ sở dữ liệu theo quy định của pháp luật. | 0 | 0 | Không có |
+
+### Số lượng hồ sơ
+
+| Tên giấy tờ | Bản chính | Bản sao | Tệp đính kèm |
+| --- | --- | --- | --- |
+| 01 bộ gốc | 1 | 0 | Không có |
+
+## Căn cứ pháp lý
+
+| Tên văn bản pháp lý | Mã văn bản |
+| --- | --- |
+| Thông tư số 25/2022/TT-BTC ngày 28/4/2022 | 25 |
+| Nghị quyết số 66.7/2025/NQ-CP của Chính phủ: Quy định cắt giảm, đơn giản hóa thủ tục hành chính dựa trên dữ liệu | 66.7/2025/NQ-CP |
+| Nghị định 155/2020/NĐ-CP | 155/2020/NĐ-CP |
+| Luật 54/2019/QH14 | 54/2019/QH14 |
+| Thông tư quy định về phân cấp thực hiện một số nhiệm vụ, quyền hạn trong lĩnh vực  quản lý nhà nước của Bộ Tài chính | 31/2026/TT-BTC |
+
+## Cơ quan thực hiện
+
+Ủy ban Chứng khoán Nhà nước - Bộ tài chính
+
+## Yêu cầu, điều kiện thực hiện
+
+(1) Chứng chỉ hành nghề môi giới chứng khoán được cấp cho cá nhân đáp ứng các điều kiện sau đây:
++ Có năng lực hành vi dân sự đầy đủ; không thuộc trường hợp đang bị truy cứu trách nhiệm hình sự hoặc đang bị cấm hành nghề chứng khoán theo quy định của pháp luật;
++ Có trình độ từ đại học trở lên;
++ Có trình độ chuyên môn về chứng khoán, bao gồm: Có chứng chỉ những vấn đề cơ bản về chứng khoán và thị trường chứng khoán, chứng chỉ pháp luật về chứng khoán và thị trường chứng khoán, chứng chỉ phân tích và đầu tư chứng khoán, chứng chỉ môi giới chứng khoán và tư vấn đầu tư chứng khoán hoặc chứng chỉ tương đương.
++ Đạt yêu cầu trong kỳ thi sát hạch cấp chứng chỉ hành nghề chứng khoán phù hợp với loại chứng chỉ hành nghề chứng khoán đề nghị cấp. Người nước ngoài có chứng chỉ chuyên môn về chứng khoán hoặc những người đã hành nghề chứng khoán hợp pháp ở nước ngoài phải đạt yêu cầu trong kỳ thi sát hạch pháp luật về chứng khoán và thị trường chứng khoán của Việt Nam.
++ (2) Chứng chỉ hành nghề phân tích tài chính được cấp cho cá nhân đáp ứng các điều kiện sau đây:
++ Điều kiện tại điểm (1) nêu trên;
++ Có các chứng chỉ chuyên môn bao gồm: Chứng chỉ tư vấn tài chính và bảo lãnh phát hành chứng khoán, chứng chỉ Phân tích báo cáo tài chính doanh nghiệp hoặc chứng chỉ tương đương.
+(3) Chứng chỉ hành nghề quản lý quỹ được cấp cho cá nhân đáp ứng các điều kiện sau đây:
++ Điều kiện tại điểm (2) nêu trên;
++ Có chứng chỉ chuyên môn Quản lý quỹ và tài sản hoặc các chứng chỉ tương đương;
++ Có tối thiểu 03 năm kinh nghiệm tại các bộ phận nghiệp vụ kinh doanh, đầu tư, tài chính, kế toán trong các doanh nghiệp, tổ chức hoạt động trong các lĩnh vực tài chính, ngân hàng, bảo hiểm, chứng khoán, kiểm toán hoặc có chứng chỉ hành nghề chứng khoán hợp pháp tại nước ngoài.
+(4) Trường hợp cá nhân đăng ký dự thi lại sát hạch cấp chứng chỉ hành nghề chứng khoán (đối với phần chưa đạt):
+ Thí sinh được thi lại phần chưa đạt trong vòng 01 năm kể từ ngày Ủy ban Chứng khoán Nhà nước thông báo kết quả thi lần đầu hoặc kì thi sát hạch cấp chứng chỉ hành nghề chứng khoán gần nhất liền sau kì thi sát hạch cấp chứng chỉ hành nghề chứng khoán thí sinh tham dự.
+
+## Kết quả xử lý
+
+* văn bản yêu cầu bổ sung hồ sơ hoặc văn bản từ chối. (Mã: `KQ0.00.00.G12-0321`)
+* Chứng chỉ hành nghề chứng khoán được cấp, cấp lại (Mã: `KQ0.00.00.G12-002223`)
+
+## Từ khóa
+
+Không có thông tin
+
+## Mô tả
+
+(1) Chứng chỉ hành nghề môi giới chứng khoán được cấp cho cá nhân đáp ứng các điều kiện sau đây:
++ Có năng lực hành vi dân sự đầy đủ; không thuộc trường hợp đang bị truy cứu trách nhiệm hình sự hoặc đang bị cấm hành nghề chứng khoán theo quy định của pháp luật;
++ Có trình độ từ đại học trở lên;
++ Có trình độ chuyên môn về chứng khoán, bao gồm: Có chứng chỉ những vấn đề cơ bản về chứng khoán và thị trường chứng khoán, chứng chỉ pháp luật về chứng khoán và thị trường chứng khoán, chứng chỉ phân tích và đầu tư chứng khoán, chứng chỉ môi giới chứng khoán và tư vấn đầu tư chứng khoán hoặc chứng chỉ tương đương.
++ Đạt yêu cầu trong kỳ thi sát hạch cấp chứng chỉ hành nghề chứng khoán phù hợp với loại chứng chỉ hành nghề chứng khoán đề nghị cấp. Người nước ngoài có chứng chỉ chuyên môn về chứng khoán hoặc những người đã hành nghề chứng khoán hợp pháp ở nước ngoài phải đạt yêu cầu trong kỳ thi sát hạch pháp luật về chứng khoán và thị trường chứng khoán của Việt Nam.
++ (2) Chứng chỉ hành nghề phân tích tài chính được cấp cho cá nhân đáp ứng các điều kiện sau đây:
++ Điều kiện tại điểm (1) nêu trên;
++ Có các chứng chỉ chuyên môn bao gồm: Chứng chỉ tư vấn tài chính và bảo lãnh phát hành chứng khoán, chứng chỉ Phân tích báo cáo tài chính doanh nghiệp hoặc chứng chỉ tương đương.
+(3) Chứng chỉ hành nghề quản lý quỹ được cấp cho cá nhân đáp ứng các điều kiện sau đây:
++ Điều kiện tại điểm (2) nêu trên;
++ Có chứng chỉ chuyên môn Quản lý quỹ và tài sản hoặc các chứng chỉ tương đương;
++ Có tối thiểu 03 năm kinh nghiệm tại các bộ phận nghiệp vụ kinh doanh, đầu tư, tài chính, kế toán trong các doanh nghiệp, tổ chức hoạt động trong các lĩnh vực tài chính, ngân hàng, bảo hiểm, chứng khoán, kiểm toán hoặc có chứng chỉ hành nghề chứng khoán hợp pháp tại nước ngoài.
+(4) Trường hợp cá nhân đăng ký dự thi lại sát hạch cấp chứng chỉ hành nghề chứng khoán (đối với phần chưa đạt):
+ Thí sinh được thi lại phần chưa đạt trong vòng 01 năm kể từ ngày Ủy ban Chứng khoán Nhà nước thông báo kết quả thi lần đầu hoặc kì thi sát hạch cấp chứng chỉ hành nghề chứng khoán gần nhất liền sau kì thi sát hạch cấp chứng chỉ hành nghề chứng khoán thí sinh tham dự.

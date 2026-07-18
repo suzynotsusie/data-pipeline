@@ -1,0 +1,421 @@
+{
+  "schema_version": "1.0",
+  "domain": "birth_registration",
+  "updated_at": "2026-07-17",
+  "source_files": [
+    "C:\\Users\\ku060\\Downloads\\VAIC source\\data-pipeline\\main\\full-data.csv",
+    "C:\\Users\\ku060\\Downloads\\VAIC source\\data-pipeline\\data\\birth_procedure\\birth_procedures_summary.csv",
+    "C:\\Users\\ku060\\Downloads\\VAIC source\\data-pipeline\\data\\birth_procedure\\birth_procedures_normalized.json",
+    "C:\\Users\\ku060\\Downloads\\VAIC source\\data-pipeline\\raw_data"
+  ],
+  "coverage": {
+    "expected_codes": [
+      "2.001023",
+      "2.000986",
+      "2.000635",
+      "2.000522",
+      "2.000528",
+      "2.000547",
+      "1.004884",
+      "1.004772",
+      "1.003583",
+      "1.001695",
+      "1.001193",
+      "1.000893",
+      "1.000689",
+      "1.000110",
+      "2.000712",
+      "1.001020"
+    ],
+    "covered_codes": [
+      "2.001023",
+      "2.000986",
+      "2.000635",
+      "2.000522",
+      "2.000528",
+      "2.000547",
+      "1.004884",
+      "1.004772",
+      "1.003583",
+      "1.001695",
+      "1.001193",
+      "1.000893",
+      "1.000689",
+      "1.000110",
+      "2.000712",
+      "1.001020"
+    ],
+    "missing_codes": []
+  },
+  "llm_contract": {
+    "role": "parse_user_answer_and_rephrase_question_only",
+    "required_output_schema": {
+      "intent": "birth_registration",
+      "current_node": "string",
+      "slot_updates": {
+        "request_type": "new_registration | re_registration | copy_extract | foreign_record_note | existing_personal_documents | mobile_service | unknown",
+        "request_type_detail": "birth_only | multi_civil_status | yes | no | unknown",
+        "birth_location": "domestic | abroad | unknown",
+        "has_foreign_element": "yes | no | unknown",
+        "combined_parent_recognition": "yes | no | unknown",
+        "wants_linked_bhyt": "yes | no | unknown",
+        "wants_linked_residence": "yes | no | unknown",
+        "wants_linked_bundle": "none | bhyt_only | bhyt_and_residence | unknown",
+        "service_channel": "standard | mobile | consular | border_area | unknown"
+      },
+      "confidence": "0_to_1",
+      "needs_human_review": "boolean"
+    }
+  },
+  "entry_prompts": [
+    "Bạn cần làm khai sinh mới, xin bản sao/trích lục, đăng ký lại hay ghi nhận giấy tờ đã làm ở nước ngoài?",
+    "Trẻ sinh trong nước hay ở nước ngoài?",
+    "Hồ sơ này có yếu tố nước ngoài hoặc người nước ngoài tham gia không?",
+    "Bạn có cần làm cùng thủ tục nhận cha, mẹ, con không?",
+    "Bạn có muốn làm liên thông thêm bảo hiểm y tế hoặc đăng ký thường trú cho trẻ không?"
+  ],
+  "slots": [
+    {
+      "name": "request_type",
+      "required": true,
+      "description": "Xác định user đang ở nhóm nhu cầu nào trong family thủ tục khai sinh."
+    },
+    {
+      "name": "birth_location",
+      "required": false,
+      "description": "Dùng cho khai sinh mới hoặc trường hợp đã đăng ký ở nước ngoài."
+    },
+    {
+      "name": "request_type_detail",
+      "required": false,
+      "description": "Dùng cho các nhánh phụ như ghi sổ hộ tịch việc khai sinh ở nước ngoài hay nhóm hộ tịch khác."
+    },
+    {
+      "name": "has_foreign_element",
+      "required": false,
+      "description": "Có cha, mẹ, con hoặc hồ sơ gắn với yếu tố nước ngoài."
+    },
+    {
+      "name": "combined_parent_recognition",
+      "required": false,
+      "description": "Có xử lý nhận cha, mẹ, con cùng lúc hay không."
+    },
+    {
+      "name": "wants_linked_bhyt",
+      "required": false,
+      "description": "Có cần cấp BHYT liên thông cho trẻ dưới 6 tuổi."
+    },
+    {
+      "name": "wants_linked_residence",
+      "required": false,
+      "description": "Có cần đăng ký thường trú liên thông cho trẻ."
+    },
+    {
+      "name": "wants_linked_bundle",
+      "required": false,
+      "description": "Biến tóm tắt để UI hoặc LLM diễn giải nhóm nhu cầu liên thông trước khi backend tách ra BHYT và thường trú."
+    },
+    {
+      "name": "service_channel",
+      "required": false,
+      "description": "Kênh xử lý đặc biệt như lưu động, cơ quan đại diện, khu vực biên giới."
+    }
+  ],
+  "decision_tree": {
+    "start_node": "birth_request_type",
+    "nodes": [
+      {
+        "id": "birth_request_type",
+        "type": "question",
+        "slot": "request_type",
+        "question": "Bạn đang muốn làm khai sinh mới, đăng ký lại, xin bản sao/trích lục hay ghi vào sổ hộ tịch việc đã làm ở nước ngoài?",
+        "options": [
+          "new_registration",
+          "re_registration",
+          "copy_extract",
+          "foreign_record_note",
+          "existing_personal_documents",
+          "mobile_service"
+        ]
+      },
+      {
+        "id": "birth_location",
+        "type": "question",
+        "slot": "birth_location",
+        "question": "Người được đăng ký sinh trong nước hay ở nước ngoài?",
+        "options": [
+          "domestic",
+          "abroad"
+        ]
+      },
+      {
+        "id": "birth_foreign_element",
+        "type": "question",
+        "slot": "has_foreign_element",
+        "question": "Trường hợp này có yếu tố nước ngoài không, ví dụ cha/mẹ là người nước ngoài hoặc giấy tờ nước ngoài?",
+        "options": [
+          "yes",
+          "no"
+        ]
+      },
+      {
+        "id": "birth_parent_recognition",
+        "type": "question",
+        "slot": "combined_parent_recognition",
+        "question": "Bạn có cần làm thủ tục nhận cha, mẹ, con cùng lúc với khai sinh không?",
+        "options": [
+          "yes",
+          "no"
+        ]
+      },
+      {
+        "id": "birth_linked_services",
+        "type": "question",
+        "slot": "wants_linked_bundle",
+        "question": "Bạn có muốn làm liên thông thêm bảo hiểm y tế hoặc đăng ký thường trú cho trẻ không?",
+        "options": [
+          "none",
+          "bhyt_only",
+          "bhyt_and_residence"
+        ]
+      },
+      {
+        "id": "birth_special_channel",
+        "type": "question",
+        "slot": "service_channel",
+        "question": "Hồ sơ này được giải quyết theo diện thông thường, lưu động, khu vực biên giới hay cơ quan đại diện ở nước ngoài?",
+        "options": [
+          "standard",
+          "mobile",
+          "border_area",
+          "consular"
+        ]
+      },
+      {
+        "id": "birth_existing_documents_context",
+        "type": "question",
+        "slot": "request_type_detail",
+        "question": "Người cần đăng ký đã có hồ sơ, giấy tờ cá nhân từ trước nhưng chưa có khai sinh hợp lệ đúng không?",
+        "options": [
+          "yes",
+          "no"
+        ]
+      }
+    ],
+    "routes": [
+      {
+        "route_id": "birth_standard_domestic",
+        "conditions": {
+          "request_type": "new_registration",
+          "birth_location": "domestic",
+          "has_foreign_element": "no",
+          "combined_parent_recognition": "no",
+          "service_channel": "standard",
+          "wants_linked_bhyt": "no",
+          "wants_linked_residence": "no"
+        },
+        "procedure_code": "1.001193",
+        "procedure_name": "Thủ tục đăng ký khai sinh",
+        "why_this_route": "Route mặc định cho khai sinh mới trong nước, không kèm nhận cha mẹ con, không liên thông."
+      },
+      {
+        "route_id": "birth_standard_domestic_mobile",
+        "conditions": {
+          "request_type": "mobile_service",
+          "service_channel": "mobile"
+        },
+        "procedure_code": "1.003583",
+        "procedure_name": "Thủ tục đăng ký khai sinh lưu động",
+        "why_this_route": "Dành cho kênh cung cấp dịch vụ lưu động."
+      },
+      {
+        "route_id": "birth_domestic_with_parent_recognition",
+        "conditions": {
+          "request_type": "new_registration",
+          "birth_location": "domestic",
+          "combined_parent_recognition": "yes",
+          "has_foreign_element": "no"
+        },
+        "procedure_code": "1.000689",
+        "procedure_name": "Thủ tục đăng ký khai sinh kết hợp đăng ký nhận cha, mẹ, con",
+        "why_this_route": "Có nhu cầu làm khai sinh và nhận cha, mẹ, con cùng lúc trong nước."
+      },
+      {
+        "route_id": "birth_foreign_element_standard",
+        "conditions": {
+          "request_type": "new_registration",
+          "birth_location": "domestic",
+          "has_foreign_element": "yes",
+          "combined_parent_recognition": "no",
+          "service_channel": "standard"
+        },
+        "procedure_code": "2.000528",
+        "procedure_name": "Thủ tục đăng ký khai sinh có yếu tố nước ngoài",
+        "why_this_route": "Khai sinh mới có yếu tố nước ngoài nhưng không kết hợp nhận cha mẹ con."
+      },
+      {
+        "route_id": "birth_foreign_element_border",
+        "conditions": {
+          "request_type": "new_registration",
+          "birth_location": "domestic",
+          "has_foreign_element": "yes",
+          "combined_parent_recognition": "no",
+          "service_channel": "border_area"
+        },
+        "procedure_code": "1.000110",
+        "procedure_name": "Thủ tục đăng ký khai sinh có yếu tố nước ngoài tại khu vực biên giới",
+        "why_this_route": "Biến thể đặc thù cho khu vực biên giới."
+      },
+      {
+        "route_id": "birth_foreign_element_with_parent_recognition",
+        "conditions": {
+          "request_type": "new_registration",
+          "birth_location": "domestic",
+          "has_foreign_element": "yes",
+          "combined_parent_recognition": "yes"
+        },
+        "procedure_code": "1.001695",
+        "procedure_name": "Thủ tục đăng ký khai sinh kết hợp đăng ký nhận cha, mẹ, con có yếu tố nước ngoài",
+        "why_this_route": "Khai sinh và nhận cha mẹ con cùng lúc, có yếu tố nước ngoài."
+      },
+      {
+        "route_id": "birth_abroad_vietnamese_child",
+        "conditions": {
+          "request_type": "new_registration",
+          "birth_location": "abroad",
+          "service_channel": "consular"
+        },
+        "procedure_code": "1.001020",
+        "procedure_name": "Thủ tục đăng ký khai sinh cho trẻ em sinh ra ở nước ngoài và có quốc tịch Việt Nam",
+        "why_this_route": "Trẻ sinh ở nước ngoài và thực hiện theo kênh cơ quan đại diện."
+      },
+      {
+        "route_id": "birth_re_registration_domestic",
+        "conditions": {
+          "request_type": "re_registration",
+          "has_foreign_element": "no"
+        },
+        "procedure_code": "1.004884",
+        "procedure_name": "Thủ tục đăng ký lại khai sinh",
+        "why_this_route": "Dùng khi bản chính bị mất và trường hợp không có yếu tố nước ngoài."
+      },
+      {
+        "route_id": "birth_re_registration_foreign",
+        "conditions": {
+          "request_type": "re_registration",
+          "has_foreign_element": "yes"
+        },
+        "procedure_code": "2.000522",
+        "procedure_name": "Thủ tục đăng ký lại khai sinh có yếu tố nước ngoài",
+        "why_this_route": "Đăng ký lại nhưng hồ sơ gắn với yếu tố nước ngoài."
+      },
+      {
+        "route_id": "birth_existing_personal_docs_domestic",
+        "conditions": {
+          "request_type": "existing_personal_documents",
+          "has_foreign_element": "no"
+        },
+        "procedure_code": "1.004772",
+        "procedure_name": "Thủ tục đăng ký khai sinh cho người đã có hồ sơ, giấy tờ cá nhân",
+        "why_this_route": "Người đã có hồ sơ cá nhân nhưng chưa có khai sinh đúng chuẩn."
+      },
+      {
+        "route_id": "birth_existing_personal_docs_foreign",
+        "conditions": {
+          "request_type": "existing_personal_documents",
+          "has_foreign_element": "yes"
+        },
+        "procedure_code": "1.000893",
+        "procedure_name": "Thủ tục đăng ký khai sinh có yếu tố nước ngoài cho người đã có hồ sơ, giấy tờ cá nhân",
+        "why_this_route": "Biến thể có yếu tố nước ngoài của nhóm người đã có hồ sơ cá nhân."
+      },
+      {
+        "route_id": "birth_copy_extract",
+        "conditions": {
+          "request_type": "copy_extract"
+        },
+        "procedure_code": "2.000635",
+        "procedure_name": "Cấp bản sao Trích lục hộ tịch, bản sao Giấy khai sinh",
+        "why_this_route": "Nhóm nhu cầu xin bản sao hoặc trích lục."
+      },
+      {
+        "route_id": "birth_note_foreign_record_specific",
+        "conditions": {
+          "request_type": "foreign_record_note",
+          "request_type_detail": "birth_only"
+        },
+        "procedure_code": "2.000712",
+        "procedure_name": "Thủ tục ghi vào sổ hộ tịch việc khai sinh đã đăng ký tại cơ quan có thẩm quyền của nước ngoài",
+        "why_this_route": "Chỉ áp dụng cho trường hợp ghi nhận riêng việc khai sinh đã đăng ký ở nước ngoài."
+      },
+      {
+        "route_id": "birth_note_foreign_record_other_civil_status",
+        "conditions": {
+          "request_type": "foreign_record_note",
+          "request_type_detail": "multi_civil_status"
+        },
+        "procedure_code": "2.000547",
+        "procedure_name": "Thủ tục ghi vào Sổ hộ tịch việc hộ tịch khác của công dân Việt Nam đã được giải quyết tại cơ quan có thẩm quyền của nước ngoài",
+        "why_this_route": "Nhóm ghi nhận việc hộ tịch khác, trong đó có thể chứa khai sinh cùng các việc hộ tịch liên quan."
+      },
+      {
+        "route_id": "birth_linked_bhyt",
+        "conditions": {
+          "request_type": "new_registration",
+          "birth_location": "domestic",
+          "has_foreign_element": "no",
+          "combined_parent_recognition": "no",
+          "wants_linked_bhyt": "yes",
+          "wants_linked_residence": "no"
+        },
+        "procedure_code": "2.001023",
+        "procedure_name": "Liên thông các thủ tục hành chính về đăng ký khai sinh, cấp Thẻ bảo hiểm y tế cho trẻ em dưới 6 tuổi",
+        "why_this_route": "Dành cho người dùng muốn làm khai sinh và cấp BHYT cho trẻ dưới 6 tuổi."
+      },
+      {
+        "route_id": "birth_linked_bhyt_residence",
+        "conditions": {
+          "request_type": "new_registration",
+          "birth_location": "domestic",
+          "has_foreign_element": "no",
+          "combined_parent_recognition": "no",
+          "wants_linked_bhyt": "yes",
+          "wants_linked_residence": "yes"
+        },
+        "procedure_code": "2.000986",
+        "procedure_name": "Liên thông thủ tục hành chính về đăng ký khai sinh, đăng ký thường trú, cấp thẻ bảo hiểm y tế cho trẻ em dưới 6 tuổi",
+        "why_this_route": "Bundle quan trọng nhất cho hành trình sau sinh khi muốn làm một lần cả khai sinh, thường trú và BHYT."
+      }
+    ]
+  },
+  "pre_submission_checks": [
+    {
+      "field_group": "child_identity",
+      "checks": [
+        "Họ tên trẻ không được viết tắt và phải thống nhất giữa tờ khai, giấy chứng sinh, hồ sơ liên thông.",
+        "Ngày sinh, nơi sinh, giới tính phải cùng một giá trị trên mọi giấy tờ đính kèm."
+      ]
+    },
+    {
+      "field_group": "parent_identity",
+      "checks": [
+        "Số CCCD hoặc hộ chiếu của cha, mẹ phải đúng định dạng và còn dùng được.",
+        "Thông tin cha mẹ trong tờ khai khai sinh và tờ khai nhận cha, mẹ, con phải khớp nếu làm thủ tục kết hợp."
+      ]
+    },
+    {
+      "field_group": "foreign_documents",
+      "checks": [
+        "Giấy tờ nước ngoài cần đúng ngôn ngữ, dịch thuật, hợp pháp hóa theo yêu cầu của trường hợp cụ thể.",
+        "Quốc tịch, nơi sinh, thông tin phiên âm phải thống nhất giữa bản gốc và bản dịch."
+      ]
+    },
+    {
+      "field_group": "linked_service_bundle",
+      "checks": [
+        "Nếu liên thông BHYT hoặc thường trú, dữ liệu trẻ và cha mẹ phải khớp với dữ liệu dùng cho bảo hiểm, cư trú.",
+        "Địa chỉ thường trú dự kiến cho trẻ phải đủ rõ để tránh bị trả hồ sơ liên thông."
+      ]
+    }
+  ]
+}

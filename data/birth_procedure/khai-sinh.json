@@ -1,0 +1,433 @@
+{
+  "schema_version": "2.0",
+  "record_type": "public_service_procedure_knowledge",
+  "id": "khai-sinh-1.001193",
+  "procedure_code": "1.001193",
+  "title": "Thủ tục đăng ký khai sinh",
+  "language": "vi",
+  "status": "grounded",
+  "source": {
+    "publisher": "Cổng Dịch vụ công Quốc gia",
+    "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bfd-3fe0-70ac-b9d6-5e9e20d6eef7",
+    "search_url": "https://dichvucong.gov.vn/dvc-ket-qua-thu-tuc?keyword=khai+sinh",
+    "extracted_at": "2026-07-17T07:41:59.1342499Z",
+    "source_record_id": "019d2bfd-3fe0-70ac-b9d6-5e9e20d6eef7",
+    "source_state": "UPDATED"
+  },
+  "governance": {
+    "review_status": "pending_human_review",
+    "reviewed_at": null,
+    "reviewer": null,
+    "freshness_days": 30
+  },
+  "scope": {
+    "included": "Đăng ký khai sinh thông thường theo thủ tục mã 1.001193.",
+    "not_included": [
+      "Đăng ký khai sinh có yếu tố nước ngoài",
+      "Đăng ký lại khai sinh",
+      "Khai sinh kết hợp nhận cha, mẹ, con",
+      "Khai sinh lưu động",
+      "Liên thông khai sinh, thường trú và cấp thẻ bảo hiểm y tế"
+    ],
+    "routing_note": "Nếu người dùng thuộc một trường hợp không nằm trong phạm vi, trợ lý phải chuyển sang đúng thủ tục tương ứng trong birth_procedures_normalized.json."
+  },
+  "target_users": [
+    "Cha hoặc mẹ của trẻ",
+    "Ông, bà hoặc người thân thích khác khi cha, mẹ không thể đăng ký",
+    "Cá nhân hoặc tổ chức đang nuôi dưỡng trẻ",
+    "Người được ủy quyền hợp lệ"
+  ],
+  "deadline_note": "Trong thời hạn 60 ngày kể từ ngày sinh, cha hoặc mẹ có trách nhiệm đăng ký khai sinh cho con. Nếu cha, mẹ không thể thực hiện thì ông, bà, người thân thích khác hoặc cá nhân, tổ chức đang nuôi dưỡng trẻ có trách nhiệm thực hiện.",
+  "agency": {
+    "executing_agency": "Ủy ban nhân dân cấp xã",
+    "submission_place": "Trung tâm Phục vụ hành chính công hoặc Bộ phận một cửa tiếp nhận hồ sơ của UBND cấp xã có thẩm quyền.",
+    "online_channels": [
+      "Cổng Dịch vụ công Quốc gia",
+      "Ứng dụng định danh quốc gia khi dịch vụ được cung cấp"
+    ],
+    "jurisdiction_note": "Cá nhân có quyền lựa chọn thực hiện thủ tục hộ tịch tại cơ quan đăng ký hộ tịch nơi cư trú. Nếu tiếp nhận không đúng nơi có thẩm quyền, UBND cấp xã nơi tiếp nhận có trách nhiệm hỗ trợ người dân nộp hồ sơ trực tuyến đến đúng cơ quan."
+  },
+  "submission_methods": [
+    {
+      "code": "ONLINE",
+      "label": "Trực tuyến",
+      "source_processing_time": 1,
+      "source_processing_time_unit": "OTHER",
+      "source_fee_value": 0
+    },
+    {
+      "code": "DIRECT",
+      "label": "Trực tiếp",
+      "source_processing_time": 1,
+      "source_processing_time_unit": "OTHER",
+      "source_fee_value": 0
+    },
+    {
+      "code": "POSTAL",
+      "label": "Qua bưu chính",
+      "source_processing_time": 1,
+      "source_processing_time_unit": "OTHER",
+      "source_fee_value": 0
+    }
+  ],
+  "processing_note": "Nếu hồ sơ đầy đủ, hợp lệ và được tiếp nhận sau 15 giờ thì cơ quan tiếp nhận có thể hẹn trả kết quả vào ngày làm việc tiếp theo. Trường hợp cần kiểm tra, xác minh thì thời gian có thể kéo dài và cơ quan xử lý phải thông báo, hẹn lại.",
+  "documents": {
+    "forms": [
+      {
+        "id": "form-birth-registration-paper",
+        "name": "Tờ khai đăng ký khai sinh theo mẫu",
+        "applies_when": "Nộp trực tiếp hoặc qua hệ thống bưu chính",
+        "quantity": "01 bản chính",
+        "source_component_code": "000.00.00.G15-KQ003204",
+        "attachment_status": "Nguồn hiện không gắn tệp tải xuống"
+      },
+      {
+        "id": "form-birth-registration-online",
+        "name": "Mẫu hộ tịch điện tử tương tác đăng ký khai sinh",
+        "applies_when": "Nộp trực tuyến",
+        "quantity": "01 biểu mẫu điện tử",
+        "source_component_code": "000.00.00.G15-KQ003967",
+        "attachment_status": "Điền trực tiếp theo hướng dẫn trên Cổng dịch vụ công"
+      }
+    ],
+    "normally_required": [
+      {
+        "id": "doc-birth-certificate",
+        "name": "Giấy chứng sinh",
+        "quantity": "01 bản chính nếu chưa có dữ liệu điện tử có ký số",
+        "alternatives": [
+          "Văn bản của người làm chứng xác nhận việc sinh nếu không có Giấy chứng sinh",
+          "Giấy cam đoan về việc sinh nếu không có người làm chứng"
+        ],
+        "source_component_code": "000.00.00.G15-KQ004389"
+      }
+    ],
+    "conditional": [
+      {
+        "condition": "Trẻ em bị bỏ rơi",
+        "document": "Biên bản về việc trẻ bị bỏ rơi do cơ quan có thẩm quyền lập",
+        "quantity": "01 bản chính",
+        "source_component_code": "000.00.00.G15-KQ003208"
+      },
+      {
+        "condition": "Trẻ sinh ra do mang thai hộ",
+        "document": "Văn bản xác nhận của cơ sở y tế đã thực hiện kỹ thuật hỗ trợ sinh sản cho việc mang thai hộ",
+        "quantity": "01 bản chính",
+        "source_component_code": "000.00.00.G15-KQ003303"
+      },
+      {
+        "condition": "Người khác được ủy quyền thực hiện",
+        "document": "Văn bản ủy quyền theo quy định",
+        "quantity": "01 bản chính",
+        "note": "Văn bản ủy quyền phải được chứng thực, trừ trường hợp người được ủy quyền là ông, bà, cha, mẹ, con, vợ, chồng, anh, chị hoặc em ruột của người ủy quyền.",
+        "source_component_code": "000.00.00.G15-KQ003159"
+      }
+    ],
+    "present_if_data_cannot_be_retrieved": [
+      {
+        "name": "Hộ chiếu, Thẻ căn cước công dân, Thẻ căn cước, Căn cước điện tử, Giấy chứng nhận căn cước hoặc giấy tờ có ảnh còn giá trị để chứng minh nhân thân",
+        "source_component_code": "000.00.00.G15-KQ004946"
+      },
+      {
+        "name": "Giấy tờ chứng minh thông tin về cư trú nếu cơ quan đăng ký không khai thác được dữ liệu cư trú",
+        "source_component_code": "000.00.00.G15-KQ003785"
+      }
+    ],
+    "digital_document_rules": [
+      "Không phải nộp bản giấy Giấy chứng sinh nếu đã có bản điện tử có ký số hoặc cơ quan đăng ký đã khai thác được dữ liệu điện tử.",
+      "Bản chụp tải lên phải rõ nét, đầy đủ, toàn vẹn và được chụp/quét từ giấy tờ hợp lệ còn giá trị.",
+      "Có thể sử dụng bản sao điện tử, giấy tờ hộ tịch điện tử hoặc giấy tờ tích hợp trên VNeID khi được chấp nhận.",
+      "Nếu gửi hồ sơ qua bưu chính, phải gửi bản sao có chứng thực đối với giấy tờ thuộc nhóm phải xuất trình."
+    ]
+  },
+  "clarifying_questions": [
+    {
+      "id": "q-case-type",
+      "question": "Đây là đăng ký khai sinh lần đầu, đăng ký lại hay khai sinh có yếu tố nước ngoài?",
+      "purpose": "Chọn đúng thủ tục"
+    },
+    {
+      "id": "q-child-location",
+      "question": "Trẻ sinh tại Việt Nam hay ở nước ngoài? Cha hoặc mẹ có quốc tịch nước ngoài không?",
+      "purpose": "Phát hiện yếu tố nước ngoài"
+    },
+    {
+      "id": "q-birth-proof",
+      "question": "Bạn có Giấy chứng sinh hoặc dữ liệu Giấy chứng sinh điện tử không?",
+      "purpose": "Xác định giấy tờ chính hoặc tài liệu thay thế"
+    },
+    {
+      "id": "q-special-case",
+      "question": "Trẻ có thuộc trường hợp bị bỏ rơi hoặc sinh ra do mang thai hộ không?",
+      "purpose": "Bổ sung hồ sơ theo trường hợp"
+    },
+    {
+      "id": "q-submitter",
+      "question": "Người thực hiện là cha/mẹ, người thân, người đang nuôi dưỡng hay người được ủy quyền?",
+      "purpose": "Kiểm tra quyền thực hiện và giấy ủy quyền"
+    },
+    {
+      "id": "q-channel",
+      "question": "Bạn muốn nộp trực tuyến, trực tiếp hay qua bưu chính?",
+      "purpose": "Chọn đúng biểu mẫu và dạng tài liệu"
+    }
+  ],
+  "steps": [
+    {
+      "order": 1,
+      "title": "Xác định đúng trường hợp",
+      "description": "Trả lời các câu hỏi phân loại để bảo đảm đây là khai sinh lần đầu theo thủ tục 1.001193, không phải thủ tục có yếu tố nước ngoài, đăng ký lại hoặc kết hợp nhận cha, mẹ, con.",
+      "example": "Trẻ sinh tại Việt Nam, đăng ký lần đầu, cha và mẹ là công dân Việt Nam."
+    },
+    {
+      "order": 2,
+      "title": "Chọn hình thức nộp",
+      "description": "Chọn trực tuyến, trực tiếp hoặc bưu chính. Hệ thống hiển thị đúng tờ khai và yêu cầu bản giấy/bản điện tử tương ứng.",
+      "example": "Chọn trực tuyến thì điền Mẫu hộ tịch điện tử tương tác và tải giấy tờ cần thiết."
+    },
+    {
+      "order": 3,
+      "title": "Chuẩn bị hồ sơ",
+      "description": "Chuẩn bị tờ khai, Giấy chứng sinh hoặc tài liệu thay thế và các giấy tờ phát sinh theo trường hợp đặc biệt/ủy quyền.",
+      "example": "Có Giấy chứng sinh điện tử ký số thì không cần nộp lại bản giấy."
+    },
+    {
+      "order": 4,
+      "title": "Tiền kiểm thông tin",
+      "description": "Đối chiếu họ tên, ngày sinh, giới tính, nơi sinh, thông tin cha mẹ và người yêu cầu giữa tờ khai với các giấy tờ.",
+      "example": "Ngày sinh trên tờ khai phải trùng ngày sinh trên Giấy chứng sinh."
+    },
+    {
+      "order": 5,
+      "title": "Nộp hồ sơ",
+      "description": "Gửi hồ sơ đến Trung tâm Phục vụ hành chính công/Bộ phận một cửa hoặc trên kênh trực tuyến phù hợp.",
+      "example": "Nộp trực tuyến trên Cổng Dịch vụ công Quốc gia và nhận Phiếu hẹn qua email/SMS."
+    },
+    {
+      "order": 6,
+      "title": "Kiểm tra dự thảo khai sinh điện tử",
+      "description": "Nếu nộp trực tuyến, người yêu cầu kiểm tra và xác nhận biểu mẫu Giấy khai sinh điện tử do cơ quan xử lý gửi lại, tối đa trong một ngày.",
+      "example": "Kiểm tra kỹ dấu tiếng Việt trong họ tên trẻ trước khi bấm xác nhận."
+    },
+    {
+      "order": 7,
+      "title": "Nhận kết quả",
+      "description": "Sau khi thông tin được ghi vào Sổ đăng ký khai sinh và lấy Số định danh cá nhân, cơ quan có thẩm quyền ký và trả Giấy khai sinh theo hình thức đã đăng ký.",
+      "example": "Mang giấy tờ tùy thân và nộp bản giấy còn phải đối chiếu trước khi nhận kết quả trực tiếp."
+    }
+  ],
+  "input_fields": [
+    {
+      "field": "child.full_name",
+      "label": "Họ, chữ đệm, tên trẻ",
+      "type": "string",
+      "required": true
+    },
+    {
+      "field": "child.birth_date",
+      "label": "Ngày sinh",
+      "type": "date",
+      "format": "YYYY-MM-DD",
+      "required": true
+    },
+    {
+      "field": "child.gender",
+      "label": "Giới tính",
+      "type": "enum",
+      "required": true
+    },
+    {
+      "field": "child.birth_place",
+      "label": "Nơi sinh",
+      "type": "address_or_facility",
+      "required": true
+    },
+    {
+      "field": "child.native_place",
+      "label": "Quê quán",
+      "type": "administrative_address",
+      "required": true
+    },
+    {
+      "field": "father.identity_number",
+      "label": "Số định danh/CCCD/hộ chiếu của cha",
+      "type": "identity_number",
+      "required": false
+    },
+    {
+      "field": "mother.identity_number",
+      "label": "Số định danh/CCCD/hộ chiếu của mẹ",
+      "type": "identity_number",
+      "required": true
+    },
+    {
+      "field": "requester.identity_number",
+      "label": "Số định danh/CCCD/hộ chiếu của người yêu cầu",
+      "type": "identity_number",
+      "required": true
+    },
+    {
+      "field": "requester.relationship_to_child",
+      "label": "Quan hệ với trẻ",
+      "type": "enum",
+      "required": true
+    },
+    {
+      "field": "submission.signature_or_confirmation",
+      "label": "Chữ ký hoặc xác nhận điện tử",
+      "type": "confirmation",
+      "required": true
+    }
+  ],
+  "validation_rules": [
+    {
+      "id": "val-child-name",
+      "severity": "error",
+      "field": "child.full_name",
+      "rule": "Không được bỏ trống; loại bỏ khoảng trắng thừa; phải khớp thông tin dùng làm căn cứ.",
+      "message": "Họ tên trẻ đang trống hoặc không khớp giấy tờ."
+    },
+    {
+      "id": "val-birth-date",
+      "severity": "error",
+      "field": "child.birth_date",
+      "rule": "Phải là ngày hợp lệ, không lớn hơn ngày hiện tại và phải khớp Giấy chứng sinh/tài liệu thay thế.",
+      "message": "Ngày sinh không hợp lệ hoặc không khớp tài liệu chứng minh việc sinh."
+    },
+    {
+      "id": "val-identity-number",
+      "severity": "error",
+      "field": "*.identity_number",
+      "rule": "Nếu loại giấy tờ là CCCD thì phải gồm đúng 12 chữ số; nếu là hộ chiếu thì kiểm tra theo loại giấy tờ và thời hạn sử dụng.",
+      "message": "Số giấy tờ tùy thân sai định dạng hoặc không còn giá trị."
+    },
+    {
+      "id": "val-cross-document-child",
+      "severity": "error",
+      "field": "child.*",
+      "rule": "Họ tên, ngày sinh, giới tính và nơi sinh phải nhất quán giữa tờ khai và Giấy chứng sinh/tài liệu thay thế.",
+      "message": "Thông tin trẻ không thống nhất giữa các tài liệu."
+    },
+    {
+      "id": "val-parent-data",
+      "severity": "warning",
+      "field": "father.*|mother.*",
+      "rule": "Họ tên, ngày sinh và số giấy tờ của cha mẹ phải khớp giấy tờ tùy thân/CSDL dân cư khi có dữ liệu.",
+      "message": "Thông tin cha hoặc mẹ có điểm không khớp cần kiểm tra."
+    },
+    {
+      "id": "val-birth-proof",
+      "severity": "error",
+      "field": "documents.birth_proof",
+      "rule": "Phải có Giấy chứng sinh, văn bản người làm chứng hoặc giấy cam đoan theo đúng nhánh hồ sơ.",
+      "message": "Thiếu giấy tờ chứng minh việc sinh hoặc tài liệu thay thế phù hợp."
+    },
+    {
+      "id": "val-special-case",
+      "severity": "error",
+      "field": "documents.conditional",
+      "rule": "Nếu trẻ bị bỏ rơi hoặc sinh do mang thai hộ thì phải có đúng tài liệu bổ sung tương ứng.",
+      "message": "Thiếu tài liệu bắt buộc cho trường hợp đặc biệt."
+    },
+    {
+      "id": "val-authorization",
+      "severity": "error",
+      "field": "requester.authorization",
+      "rule": "Nếu người nộp là người được ủy quyền thì kiểm tra văn bản ủy quyền và trường hợp được miễn chứng thực.",
+      "message": "Thiếu hoặc chưa đúng yêu cầu về văn bản ủy quyền."
+    },
+    {
+      "id": "val-upload-quality",
+      "severity": "error",
+      "field": "attachments.*",
+      "rule": "Tệp phải đọc được, đủ mặt/trang, không cắt mất nội dung và là bản chụp từ giấy tờ còn giá trị.",
+      "message": "Tệp đính kèm mờ, thiếu trang hoặc không toàn vẹn."
+    },
+    {
+      "id": "val-confirmation",
+      "severity": "error",
+      "field": "submission.signature_or_confirmation",
+      "rule": "Không cho gửi nếu thiếu chữ ký/xác nhận điện tử hoặc cam đoan bắt buộc.",
+      "message": "Bạn chưa hoàn tất chữ ký hoặc xác nhận bắt buộc."
+    }
+  ],
+  "common_errors": [
+    {
+      "field": "Họ, chữ đệm, tên trẻ",
+      "issue": "Bỏ trống, viết tắt, thừa khoảng trắng hoặc khác với giấy tờ làm căn cứ.",
+      "fix": "Chuẩn hóa khoảng trắng và đối chiếu nguyên văn trước khi nộp."
+    },
+    {
+      "field": "Ngày sinh",
+      "issue": "Sai ngày/tháng, dùng ngày không tồn tại hoặc không khớp Giấy chứng sinh.",
+      "fix": "Kiểm tra ngày hợp lệ và so khớp tự động với tài liệu chứng minh việc sinh."
+    },
+    {
+      "field": "Giới tính",
+      "issue": "Không chọn hoặc mâu thuẫn với Giấy chứng sinh.",
+      "fix": "Đối chiếu tài liệu trước khi xác nhận."
+    },
+    {
+      "field": "Nơi sinh và quê quán",
+      "issue": "Nhầm nơi sinh với nơi cư trú hoặc thiếu cấp hành chính.",
+      "fix": "Tách riêng cơ sở/địa điểm sinh, xã và tỉnh; chọn từ danh mục hành chính."
+    },
+    {
+      "field": "Thông tin cha, mẹ",
+      "issue": "Họ tên, ngày sinh hoặc số CCCD/hộ chiếu không khớp giấy tờ/CSDL dân cư.",
+      "fix": "Hiển thị từng trường xung đột để người dùng sửa hoặc xác nhận."
+    },
+    {
+      "field": "Giấy tờ chứng minh việc sinh",
+      "issue": "Không có Giấy chứng sinh nhưng cũng thiếu văn bản người làm chứng hoặc giấy cam đoan.",
+      "fix": "Hỏi phân nhánh và cung cấp đúng danh sách tài liệu thay thế."
+    },
+    {
+      "field": "Người thực hiện",
+      "issue": "Chọn sai quan hệ với trẻ hoặc thiếu văn bản ủy quyền khi cần.",
+      "fix": "Kiểm tra vai trò người nộp và trường hợp miễn chứng thực."
+    },
+    {
+      "field": "Chữ ký/xác nhận",
+      "issue": "Thiếu chữ ký, xác nhận điện tử hoặc chưa xác nhận dự thảo Giấy khai sinh điện tử.",
+      "fix": "Chặn gửi/hoàn tất cho đến khi đủ xác nhận."
+    }
+  ],
+  "example_dialogues": [
+    {
+      "user": "Tôi muốn làm giấy khai sinh cho con mới sinh ở bệnh viện, cả hai vợ chồng là người Việt Nam.",
+      "assistant_should": [
+        "Xác nhận đây là đăng ký lần đầu và hỏi người dùng có Giấy chứng sinh điện tử hay bản giấy.",
+        "Hỏi người thực hiện là cha/mẹ hay người khác và hình thức muốn nộp.",
+        "Cung cấp danh sách hồ sơ đúng nhánh, nơi nộp và các bước.",
+        "Nhắc kiểm tra họ tên, ngày sinh, nơi sinh và thông tin cha mẹ trước khi gửi."
+      ]
+    },
+    {
+      "user": "Con tôi không có giấy chứng sinh thì có đăng ký được không?",
+      "assistant_should": [
+        "Giải thích có thể dùng văn bản của người làm chứng xác nhận việc sinh.",
+        "Nếu không có người làm chứng thì cần giấy cam đoan về việc sinh.",
+        "Không tự khẳng định hồ sơ chắc chắn được chấp nhận; hướng dẫn người dùng kiểm tra lại với cơ quan tiếp nhận theo link nguồn."
+      ]
+    }
+  ],
+  "legal_bases": [
+    "60/2014/QH13 - Luật Hộ tịch",
+    "123/2015/NĐ-CP",
+    "87/2020/NĐ-CP",
+    "104/2022/NĐ-CP",
+    "04/2020/TT-BTP",
+    "01/2022/TT-BTP",
+    "07/2025/NĐ-CP",
+    "08/2025/TT-BTP",
+    "120/2025/NĐ-CP",
+    "18/2026/NĐ-CP"
+  ],
+  "provenance": {
+    "official_facts": "Các thông tin về thủ tục, hồ sơ, cơ quan, thời hạn và căn cứ pháp lý được biên tập từ bản ghi DVCQG mã 1.001193 tại source_url.",
+    "ai_derived_content": "clarifying_questions, validation_rules, common_errors và example_dialogues là nội dung thiết kế cho tiền kiểm AI, không phải thống kê lỗi chính thức.",
+    "freshness_rule": "Phải kiểm tra lại source_url khi triển khai hoặc khi extracted_at đã quá thời hạn cập nhật do đội dự án quy định.",
+    "answer_policy": "Mọi câu trả lời cho công dân phải kèm link nguồn và nêu rõ khi nội dung phụ thuộc trường hợp hoặc địa phương."
+  }
+}

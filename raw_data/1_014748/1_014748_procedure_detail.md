@@ -1,0 +1,112 @@
+# Hưởng trợ cấp thất nghiệp (Cấp tỉnh)
+
+## Thông tin chung
+
+* **Mã thủ tục:** 1.014748
+* **Số quyết định:** 107/QĐ-BNV
+* **Cấp thực hiện:** Cấp tỉnh
+* **Loại thủ tục:** TTHC được luật giao quy định chi tiết
+* **Lĩnh vực:** Việc làm
+* **Đối tượng thực hiện:** Công dân Việt Nam
+* **Cơ quan có thẩm quyền:** Không có thông tin
+* **Địa chỉ tiếp nhận HS:** Không có thông tin
+* **Cơ quan được ủy quyền:** Không có thông tin
+* **Cơ quan phối hợp:** Không có thông tin
+
+## Thủ tục hành chính liên quan
+
+Không có thông tin
+
+## Trình tự thực hiện
+
+1. Bước 1: Nộp hồ sơ hưởng trợ cấp thất nghiệp
+   (1) Trong thời hạn 03 tháng kể từ ngày chấm dứt hợp đồng lao động hoặc hợp đồng làm việc hoặc chấm dứt làm việc hoặc kể từ ngày có xác nhận của cơ quan có thẩm quyền đối với người sử dụng lao động không có khả năng đóng bảo hiểm thất nghiệp theo quy định tại khoản 6 Điều 3 Nghị định số 374/2025/NĐ-CP, người lao động chưa có việc làm mà có nhu cầu hưởng trợ cấp thất nghiệp nộp 01 bộ hồ sơ đề nghị hưởng trợ cấp thất nghiệp cho tổ chức dịch vụ việc làm công tại địa phương nơi người lao động có nhu cầu nhận trợ cấp thất nghiệp.
+   Người lao động được ủy quyền cho người khác nộp hồ sơ hoặc gửi hồ sơ qua dịch vụ bưu chính nếu thuộc một trong các trường hợp sau: ốm đau, thai sản có xác nhận của cơ sở y tế có thẩm quyền; bị tai nạn có xác nhận của cảnh sát giao thông hoặc cơ sở y tế có thẩm quyền; hỏa hoạn, lũ lụt, động đất, sóng thần, địch họa, dịch bệnh có xác nhận của Chủ tịch Ủy ban nhân dân cấp xã. Ngày nộp hồ sơ là ngày người được ủy quyền trực tiếp nộp hồ sơ hoặc ngày đi ghi trên dấu bưu chính đối với trường hợp gửi qua dịch vụ bưu chính. 
+   (2) Trong thời hạn 10 ngày làm việc kể từ ngày nộp hồ sơ đề nghị hưởng trợ cấp thất nghiệp, nếu người lao động không có nhu cầu hưởng trợ cấp thất nghiệp thì người lao động phải nộp đề nghị không hưởng trợ cấp thất nghiệp theo Mẫu số 11 tại Phụ lục ban hành kèm theo Nghị định số 374/2025/NĐ-CP cho  tổ chức dịch vụ việc làm công nơi người lao động đã nộp hồ sơ đề nghị hưởng trợ cấp thất nghiệp. Trường hợp người lao động trực tiếp nộp hồ sơ, tổ chức dịch vụ việc làm công có trách nhiệm gửi lại hồ sơ đề nghị hưởng trợ cấp thất nghiệp cho người lao động vào ngày trả kết quả theo phiếu hẹn trả kết quả. 
+   (3) Tổ chức dịch vụ việc làm công có trách nhiệm tiếp nhận, kiểm tra hồ sơ, ghi phiếu hẹn trả kết quả theo Mẫu số 04 tại Phụ lục ban hành kèm theo Nghị định số 374/2025/NĐ-CP và trao phiếu cho người nộp hồ sơ trực tiếp hoặc gửi qua dịch vụ bưu chính đối với trường hợp nộp hồ sơ qua dịch vụ bưu chính, trường hợp người lao động nộp hồ sơ trực tuyến thì gửi thông báo về việc hẹn trả kết quả trong 03 ngày làm việc cho người lao động.
+   Bước 2: Trong thời hạn 15 ngày làm việc kể từ ngày nhận đủ hồ sơ theo quy định, tổ chức dịch vụ việc làm công có trách nhiệm xem xét, trình Giám đốc Sở Nội vụ quyết định về việc hưởng trợ cấp thất nghiệp của người lao động, trường hợp hồ sơ đề nghị hưởng trợ cấp thất nghiệp gửi qua dịch vụ bưu chính thì ngày nhận hồ sơ được tính là ngày chuyển đến ghi trên dấu bưu chính. Trường hợp hồ sơ chưa đủ các thông tin để làm cơ sở giải quyết thì tổ chức dịch vụ việc làm công yêu cầu người lao động bổ sung, hoàn thiện hồ sơ, phiếu yêu cầu theo Mẫu số 03 tại Phụ lục ban hành kèm theo Nghị định số 374/2025/NĐ-CP.
+   Quyết định về việc hưởng trợ cấp thất nghiệp thực hiện theo Mẫu số 12 tại Phụ lục ban hành kèm theo Nghị định số 374/2025/NĐ-CP.
+   Quyết định về việc hưởng trợ cấp thất nghiệp được tổ chức dịch vụ việc làm công gửi: 01 bản đến Bảo hiểm xã hội cấp tỉnh nơi người lao động đang hưởng trợ cấp thất nghiệp để thực hiện chi trả trợ cấp thất nghiệp và cấp thẻ bảo hiểm y tế cho người lao động; 01 bản đến người lao động được hưởng trợ cấp thất nghiệp.
+   Trường hợp người lao động không được hưởng trợ cấp thất nghiệp thì tổ chức dịch vụ việc làm công phải thông báo bằng văn bản và nêu rõ lý do.
+   Bước 3: Chi trả trợ cấp thất nghiệp
+   Trong thời hạn 05 ngày làm việc kể từ ngày người lao động hết thời hạn nhận quyết định về việc hưởng trợ cấp thất nghiệp hoặc hết thời hạn thông báo về việc tìm kiếm việc làm hằng tháng, cơ quan bảo hiểm xã hội thực hiện chi trả trợ cấp thất nghiệp cho người lao động.
+   Bước 4: Đối với trường hợp người lao động nộp hồ sơ trực tiếp, sau thời hạn 03 ngày làm việc kể từ ngày ghi trong phiếu hẹn trả kết quả, nếu người lao động không đến nhận quyết định vể việc hưởng trợ cấp thất nghiệp thì được coi là không có nhu cầu hưởng trợ cấp thất nghiệp.
+   Trong thời hạn 02 ngày làm việc kể từ ngày hết thời hạn nhận quyết định về việc hưởng trợ cấp thất nghiệp, tổ chức dịch vụ việc làm công phải thông tin cho cơ quan bảo hiểm xã hội các trường hợp không đến nhận quyết định về việc hưởng trợ cấp thất nghiệp để dừng chi trả theo quy định.
+   Trong thời hạn 07 ngày làm việc kể từ ngày người lao động không đến nhận quyết định về việc hưởng trợ cấp thất nghiệp theo quy định, tổ chức dịch vụ việc làm công trình Giám đốc Sở Nội vụ quyết định về việc hủy quyết định hưởng trợ cấp thất nghiệp của người lao động. 
+   Quyết định về việc hủy quyết định hưởng trợ cấp thất nghiệp được tổ chức dịch vụ việc làm công gửi: 01 bản đến Bảo hiểm xã hội cấp tỉnh để không chi trả trợ cấp thất nghiệp cho người lao động; 01 bản đến người lao động. Quyết định về việc hủy quyết định hưởng trợ cấp thất nghiệp thực hiện theo Mẫu số 08 tại Phụ lục ban hành kèm theo Nghị định số 374/2025/NĐ-CP.
+   Bước 5: Sau thời hạn 03 tháng kể từ ngày người lao động hết thời hạn hưởng trợ cấp thất nghiệp theo quyết định hưởng trợ cấp thất nghiệp nhưng người lao động không đến nhận tiền trợ cấp thất nghiệp và không thông báo bằng văn bản cơ quan bảo hiểm xã hội nơi đang hưởng trợ cấp thất nghiệp thì người lao động đó được xác định là không có nhu cầu hưởng trợ cấp thất nghiệp. 
+   Trong thời hạn 07 ngày làm việc sau thời hạn nêu trên, cơ quan bảo hiểm xã hội phải thông báo cho tổ chức dịch vụ việc làm công nơi người lao động đang hưởng trợ cấp thất nghiệp về việc người lao động không đến nhận tiền trợ cấp thất nghiệp. Thông báo về việc người lao động không đến nhận tiền trợ cấp thất nghiệp thực hiện theo Mẫu số 13 tại Phụ lục ban hành kèm theo Nghị định số 374/2025/NĐ-CP.
+   Trong thời hạn 10 ngày làm việc kể từ ngày nhận được thông báo của cơ quan bảo hiểm xã hội, tổ chức dịch vụ việc làm công có trách nhiệm xem xét, trình Giám đốc Sở Nội vụ quyết định về việc bảo lưu thời gian đóng bảo hiểm thất nghiệp cho người lao động. 
+   Quyết định về việc bảo lưu thời gian đóng bảo hiểm thất nghiệp được tổ chức dịch vụ việc làm công gửi: 01 bản đến Bảo hiểm xã hội cấp tỉnh để thực hiện bảo lưu thời gian đóng bảo hiểm thất nghiệp cho người lao động; 01 bản đến người lao động. Trường hợp người lao động nộp hồ sơ trực tuyến thì Quyết định về việc bảo lưu thời gian đóng bảo hiểm thất nghiệp gửi 01 bản đến Bảo hiểm xã hội cấp tỉnh, 01 bản đến người lao động bằng hình thức trực tuyến.
+   Quyết định bảo lưu thời gian đóng bảo hiểm thất nghiệp thực hiện theo Mẫu số 14 tại Phụ lục ban hành kèm theo Nghị định số 374/2025/NĐ-CP.
+
+## Cách thức thực hiện
+
+| Hình thức nộp | Thời gian giải quyết | Phí, lệ phí | Mô tả |
+| --- | --- | --- | --- |
+| Trực tuyến | 15 ngày làm việc | Không có thông tin | Thời hạn 15 ngày làm việc, kể từ ngày nhận đủ hồ sơ theo quy định. Trường hợp hồ sơ đề nghị hưởng trợ cấp thất nghiệp gửi qua dịch vụ bưu chính thì ngày nhận hồ sơ được tính là ngày chuyển đến ghi trên dấu bưu chính. |
+| Dịch vụ bưu chính | 15 ngày làm việc | Không có thông tin | Thời hạn 15 ngày làm việc, kể từ ngày nhận đủ hồ sơ theo quy định. Trường hợp hồ sơ đề nghị hưởng trợ cấp thất nghiệp gửi qua dịch vụ bưu chính thì ngày nhận hồ sơ được tính là ngày chuyển đến ghi trên dấu bưu chính. |
+| Trực tiếp | 15 ngày làm việc | Không có thông tin | Thời hạn 15 ngày làm việc, kể từ ngày nhận đủ hồ sơ theo quy định. Trường hợp hồ sơ đề nghị hưởng trợ cấp thất nghiệp gửi qua dịch vụ bưu chính thì ngày nhận hồ sơ được tính là ngày chuyển đến ghi trên dấu bưu chính. |
+
+## Thành phần hồ sơ
+
+| Tên giấy tờ | Bản chính | Bản sao | Tệp đính kèm |
+| --- | --- | --- | --- |
+| 1.	Sổ bảo hiểm xã hội. | 1 | 0 | Không có |
+| Bản chính hoặc bản sao có chứng thực hoặc bản chính kèm theo bản sao để đối chiếu hoặc bản điện tử của một trong các giấy tờ sau đây xác nhận về việc chấm dứt hợp đồng lao động/hợp đồng làm việc hoặc chấm dứt làm việc: hợp đồng lao động hoặc hợp đồng làm việc đã hết hạn hoặc đã hoàn thành công việc theo hợp đồng lao động; quyết định thôi việc; quyết định sa thải; quyết định kỷ luật buộc thôi việc; thông báo hoặc thỏa thuận chấm dứt hợp đồng lao động hoặc hợp đồng làm việc; xác nhận của người sử dụng lao động trong đó có nội dung cụ thể về thông tin của người lao động; loại hợp đồng lao động đã ký; lý do, thời điểm chấm dứt hợp đồng lao động đối với người lao động; xác nhận của cơ quan nhà nước có thẩm quyền về việc doanh nghiệp hoặc hợp tác xã giải thể, phá sản hoặc quyết định bãi nhiệm, miễn nhiệm, cách chức đối với các chức danh được bổ nhiệm trong trường hợp người lao động là người quản lý doanh nghiệp, quản lý hợp tác xã; trường hợp người lao động không có các giấy tờ xác nhận về việc chấm dứt hợp đồng lao động do đơn vị sử dụng lao động không có người đại diện theo pháp luật và người được người đại diện theo pháp luật ủy quyền thì thực hiện theo quy trình quy trình sau: Người lao động tại đơn vị sử dụng lao động không có người đại diện theo pháp luật và người được người đại diện theo pháp luật ủy quyền có nhu cầu chấm dứt hợp đồng lao động để hưởng các chế độ bảo hiểm thất nghiệp thì người lao động đề nghị Sở Nội vụ thực hiện các thủ tục để xác nhận việc chấm dứt hợp đồng lao động hoặc hợp đồng làm việc. Sở Nội vụ gửi văn bản yêu cầu Sở Tài chính xác nhận đơn vị sử dụng lao động không có người đại diện theo pháp luật hoặc không có người được người đại diện theo pháp luật ủy quyền trong thời hạn 03 ngày làm việc kể từ ngày nhận được văn bản đề nghị của người lao động. Sở Tài chính có trách nhiệm phối hợp với cơ quan thuế, cơ quan công an, chính quyền địa phương nơi đơn vị sử dụng lao động đặt trụ sở chính thực hiện xác minh nội dung đơn vị sử dụng lao động không có người đại diện theo pháp luật hoặc không có người được người đại diện theo pháp luật ủy quyền. Sở Tài chính gửi văn bản trả lời cho Sở Nội vụ về nội dung đơn vị sử dụng lao động không có người đại diện theo pháp luật hoặc không có người được người đại diện theo pháp luật ủy quyền trong thời hạn 10 ngày làm việc kể từ ngày nhận được văn bản yêu cầu xác nhận của Sở Nội vụ. Trường hợp người lao động làm việc theo hợp đồng lao động có thời hạn từ đủ 01 tháng đến dưới 12 tháng thì giấy tờ xác nhận về việc chấm dứt hợp đồng lao động là bản chính hoặc bản sao có chứng thực của hợp đồng đó. | 1 | 0 | Không có |
+| Đề nghị hưởng trợ cấp thất nghiệp theo Mẫu số 10 tại Phụ lục ban hành kèm theo Nghị định số 374/2025/NĐ-CP. Trường hợp người lao động không có nhu cầu hưởng trợ cấp thất nghiệp thì nộp đề nghị không hưởng trợ cấp thất nghiệp theo Mẫu số 11 tại Phụ lục ban hành kèm theo Nghị định số 374/2025/NĐ-CP. | 1 | 0 | [Mus10tiPhlcbanhnhkmtheo_VL.docx](file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/1_014748/Mus10tiPhlcbanhnhkmtheo_VL.docx)<br>[Mus11tiPhlcbanhnhkmtheo_VL.docx](file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/1_014748/Mus11tiPhlcbanhnhkmtheo_VL.docx) |
+
+## Căn cứ pháp lý
+
+| Tên văn bản pháp lý | Mã văn bản |
+| --- | --- |
+| Luật Việc làm | 74/2025/QH15 |
+| Quy định chi tiết một số điều của Luật Việc làm về bảo hiểm thất nghiệp | Nghị định số 374/2025/NĐ-CP |
+
+## Cơ quan thực hiện
+
+Ủy ban nhân dân tỉnh và thành phố trực thuộc Trung ương
+
+## Yêu cầu, điều kiện thực hiện
+
+Người lao động đang đóng bảo hiểm thất nghiệp được hưởng trợ cấp thất nghiệp khi có đủ các điều kiện sau đây:
+1. Chấm dứt hợp đồng lao động, hợp đồng làm việc hoặc chấm dứt làm việc theo quy định của pháp luật và không thuộc một trong các trường hợp sau đây:
+- Người lao động đơn phương chấm dứt hợp đồng lao động trái pháp luật theo quy định của Bộ luật Lao động;
+- Người lao động nghỉ việc khi đủ điều kiện hưởng lương hưu.
+2. Đã đóng bảo hiểm thất nghiệp từ đủ 12 tháng trở lên trong thời gian 24 tháng trước khi chấm dứt hợp đồng lao động, hợp đồng làm việc hoặc chấm dứt làm việc theo quy định của pháp luật. Trường hợp người lao động làm việc theo hợp đồng lao động có thời hạn từ đủ 01 tháng đến dưới 12 tháng thì phải đóng đủ 12 tháng trở lên trong thời gian 36 tháng trước khi chấm dứt hợp đồng lao động.
+3. Đã nộp đủ hồ sơ hưởng trợ cấp thất nghiệp trong thời hạn 03 tháng kể từ ngày chấm dứt hợp đồng lao động, hợp đồng làm việc hoặc chấm dứt làm việc
+4. Trong thời hạn 10 ngày làm việc kể từ ngày nộp đủ hồ sơ hưởng trợ cấp thất nghiệp, người lao động không thuộc một trong các trường hợp sau đây:
+- Có việc làm và thuộc đối tượng tham gia bảo hiểm xã hội bắt buộc theo quy định tại Luật Bảo hiểm xã hội;
+- Thực hiện nghĩa vụ quân sự, nghĩa vụ tham gia Công an nhân dân, dân quân thường trực;
+- Đi học tập có thời hạn trên 12 tháng;
+- Chấp hành quyết định áp dụng biện pháp đưa vào cơ sở giáo dục bắt buộc, cơ sở cai nghiện bắt buộc;
+- Bị tạm giam, chấp hành hình phạt tù;
+- Ra nước ngoài định cư;
+- Chết.
+
+## Kết quả xử lý
+
+* Quyết định về việc hưởng trợ cấp thất nghiệp. (Mã: `KQ.G07.000298`)
+* Quyết định về việc hủy quyết định hưởng trợ cấp thất nghiệp (Mã: `KQ.G09.000524`)
+* Quyết định về việc bảo lưu thời gian đóng bảo hiểm thất nghiệp (Mã: `KQ.G09.000525`)
+
+## Từ khóa
+
+Không có thông tin
+
+## Mô tả
+
+Người lao động đang đóng bảo hiểm thất nghiệp được hưởng trợ cấp thất nghiệp khi có đủ các điều kiện sau đây:
+1. Chấm dứt hợp đồng lao động, hợp đồng làm việc hoặc chấm dứt làm việc theo quy định của pháp luật và không thuộc một trong các trường hợp sau đây:
+- Người lao động đơn phương chấm dứt hợp đồng lao động trái pháp luật theo quy định của Bộ luật Lao động;
+- Người lao động nghỉ việc khi đủ điều kiện hưởng lương hưu.
+2. Đã đóng bảo hiểm thất nghiệp từ đủ 12 tháng trở lên trong thời gian 24 tháng trước khi chấm dứt hợp đồng lao động, hợp đồng làm việc hoặc chấm dứt làm việc theo quy định của pháp luật. Trường hợp người lao động làm việc theo hợp đồng lao động có thời hạn từ đủ 01 tháng đến dưới 12 tháng thì phải đóng đủ 12 tháng trở lên trong thời gian 36 tháng trước khi chấm dứt hợp đồng lao động.
+3. Đã nộp đủ hồ sơ hưởng trợ cấp thất nghiệp trong thời hạn 03 tháng kể từ ngày chấm dứt hợp đồng lao động, hợp đồng làm việc hoặc chấm dứt làm việc
+4. Trong thời hạn 10 ngày làm việc kể từ ngày nộp đủ hồ sơ hưởng trợ cấp thất nghiệp, người lao động không thuộc một trong các trường hợp sau đây:
+- Có việc làm và thuộc đối tượng tham gia bảo hiểm xã hội bắt buộc theo quy định tại Luật Bảo hiểm xã hội;
+- Thực hiện nghĩa vụ quân sự, nghĩa vụ tham gia Công an nhân dân, dân quân thường trực;
+- Đi học tập có thời hạn trên 12 tháng;
+- Chấp hành quyết định áp dụng biện pháp đưa vào cơ sở giáo dục bắt buộc, cơ sở cai nghiện bắt buộc;
+- Bị tạm giam, chấp hành hình phạt tù;
+- Ra nước ngoài định cư;
+- Chết.

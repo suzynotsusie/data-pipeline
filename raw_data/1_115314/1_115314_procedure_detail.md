@@ -1,0 +1,113 @@
+# Giao đất, cho thuê đất, giao khu vực biển để thực hiện hoạt động lấn biển
+
+## Thông tin chung
+
+* **Mã thủ tục:** 1.115314
+* **Số quyết định:** 2175/QĐ-UBND
+* **Cấp thực hiện:** Cấp tỉnh
+* **Loại thủ tục:** TTHC được luật giao quy định chi tiết
+* **Lĩnh vực:** Đất đai
+* **Đối tượng thực hiện:** Doanh nghiệp Việt Nam, Doanh nghiệp có vốn đầu tư nước ngoài, Công dân Việt Nam, Doanh nghiệp, Tổ chức nước ngoài, Tổ chức (không bao gồm doanh nghiệp, HTX), Người Việt Nam định cư ở nước ngoài, Hợp tác xã
+* **Cơ quan có thẩm quyền:** Không có thông tin
+* **Địa chỉ tiếp nhận HS:** Không có thông tin
+* **Cơ quan được ủy quyền:** Không có thông tin
+* **Cơ quan phối hợp:** Không có thông tin
+
+## Thủ tục hành chính liên quan
+
+Không có thông tin
+
+## Trình tự thực hiện
+
+1. Bước 1: Người đề nghị nộp hồ sơ đến Bộ phận một cửa. 
+   Khi nộp hồ sơ, người yêu cầu đăng ký được lựa chọn nộp bản sao giấy tờ và xuất trình bản chính để công chức, viên chức, nhân viên tiếp nhận hồ sơ kiểm tra đối chiếu hoặc nộp bản chính giấy tờ hoặc nộp bản sao giấy tờ đã có công chứng hoặc chứng thực; trường hợp nộp hồ sơ theo hình thức trực tuyến thì hồ sơ nộp phải được số hóa từ bản chính hoặc bản sao giấy tờ đã được công chứng, chứng thực hoặc khai thác từ kho quản lý dữ liệu điện tử trên Cổng dịch vụ công Quốc gia.
+   Trường hợp nộp bản sao hoặc bản số hóa các loại giấy tờ thì khi nhận kết quả giải quyết thủ tục hành chính người yêu cầu đăng ký phải nộp bản chính các giấy tờ thuộc thành phần hồ sơ theo quy định; trừ các giấy tờ là giấy phép xây dựng, quyết định phê duyệt dự án đầu tư, quyết định đầu tư, giấy phép đầu tư, giấy chứng nhận đầu tư, quyết định phê duyệt hoặc quyết định phê duyệt điều chỉnh xây dựng quy hoạch chi tiết, bản đồ điều chỉnh quy hoạch xây dựng chi tiết.
+   Bước 2: Cơ quan tiếp nhận hồ sơ thực hiện:
+   - Kiểm tra, xem xét tính đầy đủ của thành phần hồ sơ, tính thống nhất về nội dung thông tin giữa các giấy tờ, tính đầy đủ của nội dung kê khai và cấp Giấy tiếp nhận hồ sơ và hẹn trả kết quả.
+   Trường hợp chưa đầy đủ thành phần hồ sơ, chưa chính xác theo quy định thì phải hướng dẫn người yêu cầu đăng ký bổ sung, hoàn thiện hồ sơ cụ thể, đầy đủ, chính xác một lần và nêu rõ lý do theo mẫu Phiếu yêu cầu bổ sung, hoàn thiện hồ sơ để người yêu cầu đăng ký hoàn thiện, bổ sung theo quy định.
+   - Trường hợp Bộ phận Một cửa tiếp nhận hồ sơ thì chuyển hồ sơ đến cơ quan có chức năng quản lý đất đai tỉnh.
+   Bước 3: Cơ quan có chức năng quản lý đất đai tỉnh thực hiện: 
+   - Giao Văn phòng đăng ký đất đai cung cấp thông tin về cơ sở dữ liệu đất đai, lập trích lục bản đồ địa chính thửa đất đối với trường hợp hồ sơ đầy đủ và hợp lệ.
+   - Hướng dẫn người nộp hồ sơ bổ sung trích đo địa chính thửa đất đối với thửa đất tại nơi chưa có bản đồ địa chính theo quy định hoặc làm lại hồ sơ hoặc bổ sung hồ sơ và nộp lại cho cơ quan có chức năng quản lý đất đai tỉnh đối với trường hợp hồ sơ không đầy đủ, không hợp lệ.
+   - Rà soát, kiểm tra hồ sơ; kiểm tra thực địa (nếu cần thiết) hoặc lấy ý kiến bằng văn bản. 
+   - Chủ trì, phối hợp các cơ quan có liên quan xác định trường hợp được miễn tiền sử dụng đất, tiền thuê đất (nếu có).
+   - Hoàn thiện hồ sơ trình Chủ tịch Ủy ban nhân dân tỉnh, hồ sơ gồm: 
+   + Dự thảo Tờ trình theo Mẫu số 25 ban hành kèm theo Quyết định số 57/2026/QĐ-UBND. 
+   + Dự thảo Quyết định giao đất, cho thuê đất, giao khu vực biển để lấn biển theo Mẫu số 06 ban hành kèm theo Quyết định số 57/2026/QĐ-UBND. 
+   + Trích lục bản đồ địa chính thửa đất hoặc trích đo địa chính thửa đất. 
+   + Đơn đề nghị giao đất, cho thuê đất, giao khu vực biển để lấn biển và các văn bản người sử dụng đất nộp theo mục 3 thủ tục này. 
+   - Trình Chủ tịch Ủy ban nhân dân tỉnh ban hành quyết định. 
+   Bước 4: Chủ tịch Ủy ban nhân dân tỉnh xem xét ban hành Quyết định giao đất, cho thuê đất, giao khu vực biển để lấn biển. 
+   Bước 5: (áp dụng đối với trường hợp người sử dụng đất phải nộp tiền sử dụng đất, tiền thuê đất): 
+   a) Trường hợp người sử dụng đất phải nộp tiền sử dụng đất, tiền thuê đất tính theo bảng giá đất: 
+   - Cơ quan có chức năng quản lý đất đai tỉnh chuyển Phiếu chuyển thông tin để xác định nghĩa vụ tài chính về đất đai theo Mẫu số 19 ban hành kèm theo Quyết định số 57/2026/QĐ-UBND cho cơ quan thuế. 
+   - Cơ quan thuế:
+    + Xác định tiền sử dụng đất, tiền thuê đất phải nộp theo quy định; xác định tiền thuê đất phải nộp một số năm đối với trường hợp được miễn tiền thuê đất một số năm sau thời gian được miễn tiền thuê đất của thời gian xây dựng cơ bản. 
+   + Ban hành thông báo nộp tiền sử dụng đất, tiền thuê đất gửi cho người sử dụng đất. 
+   - Người sử dụng đất nộp tiền sử dụng đất, tiền thuê đất theo quy định của pháp luật về tiền sử dụng đất, tiền thuê đất. 
+   - Cơ quan thuế xác nhận hoàn thành việc nộp tiền sử dụng đất, tiền thuê đất, và gửi thông báo kết quả cho cơ quan có chức năng quản lý đất đai tỉnh. 
+   b) Trường hợp người sử dụng đất phải nộp tiền sử dụng đất, tiền thuê đất tính theo giá đất cụ thể:
+   - Cơ quan có chức năng quản lý đất đai tỉnh: 
+   + Tổ chức việc xác định giá đất cụ thể. 
+   + Trình Chủ tịch Ủy ban nhân dân tỉnh ban hành quyết định phê duyệt giá đất cụ thể có nội dung về trách nhiệm của cơ quan thuế trong việc hướng dẫn người sử dụng đất nộp tiền sử dụng đất, tiền thuê đất. 
+   - Chủ tịch Ủy ban nhân dân tỉnh xem xét, ban hành quyết định phê duyệt giá đất cụ thể. 
+   - Cơ quan có chức năng quản lý đất đai tỉnh chuyển Phiếu chuyển thông tin để xác định nghĩa vụ tài chính về đất đai theo Mẫu số 19 ban hành kèm theo Quyết định số 57/2026/QĐ-UBND cho cơ quan thuế
+   - Cơ quan thuế: 
+   + Xác định tiền sử dụng đất, tiền thuê đất phải nộp theo quy định; xác định tiền thuê đất phải nộp một số năm đối với trường hợp được miễn tiền thuê đất một số năm sau thời gian được miễn tiền thuê đất của thời gian xây dựng cơ bản. 
+   + Ban hành thông báo nộp tiền sử dụng đất, tiền thuê đất gửi cho người sử dụng đất. 
+   - Người sử dụng đất nộp tiền sử dụng đất, tiền thuê đất theo quy định của pháp luật về tiền sử dụng đất, tiền thuê đất. 
+   - Cơ quan thuế xác nhận hoàn thành việc nộp tiền sử dụng đất, tiền thuê đất và gửi thông báo kết quả cho cơ quan có chức năng quản lý đất đai tỉnh. 
+   Bước 6: Cơ quan có chức năng quản lý đất đai tỉnh: ký hoặc chuyển cấp có thẩm quyền ký Giấy chứng nhận theo quy định của pháp luật đất đai; trường hợp ký hợp đồng thuê đất nếu người sử dụng đất có nhu cầu thì thực hiện theo Mẫu số 28 ban hành kèm theo Quyết định số 57/2026/QĐ-UBND; chuyển hồ sơ đến Văn phòng đăng ký đất đai. 
+   Bước 7: Văn phòng đăng ký đất đai: cập nhật, chỉnh lý cơ sở dữ liệu đất đai, hồ sơ địa chính.
+   Bước 8: Cơ quan có chức năng quản lý đất đai tỉnh bàn giao đất, bàn giao rừng trên thực địa thực hiện theo Mẫu số 24 ban hành kèm theo Quyết định số 57/2026/QĐ-UBND và trao Giấy chứng nhận quyền sử dụng đất, quyền sở hữu tài sản gắn liền với đất cho người sử dụng đất.
+   Thời điểm xác định người sử dụng đất phải đưa đất vào sử dụng tính từ ngày có thông báo chấp thuận kết quả nghiệm thu đối với toàn bộ hoặc từng phần diện tích đã hoàn thành hoạt động lấn biển theo tiến độ của dự án đầu tư lấn biển hoặc hạng mục lấn biển trong dự án đầu tư.
+
+## Cách thức thực hiện
+
+| Hình thức nộp | Thời gian giải quyết | Phí, lệ phí | Mô tả |
+| --- | --- | --- | --- |
+| Trực tiếp | 15 ngày làm việc | Không có thông tin | Không quá 15 ngày kể từ ngày nhận đủ hồ sơ hợp lệ. <br>Đối với các xã miền núi, biên giới; đảo; vùng có điều kiện kinh tế - xã hội khó khăn; vùng có điều kiện kinh tế - xã hội đặc biệt khó khăn thì thời gian thực hiện không quá 25 ngày. |
+| Trực tuyến | 15 ngày làm việc | Không có thông tin | Không quá 15 ngày kể từ ngày nhận đủ hồ sơ hợp lệ. <br>Đối với các xã miền núi, biên giới; đảo; vùng có điều kiện kinh tế - xã hội khó khăn; vùng có điều kiện kinh tế - xã hội đặc biệt khó khăn thì thời gian thực hiện không quá 25 ngày. |
+| Dịch vụ bưu chính | 15 ngày làm việc | Không có thông tin | Không quá 15 ngày kể từ ngày nhận đủ hồ sơ hợp lệ. <br>Đối với các xã miền núi, biên giới; đảo; vùng có điều kiện kinh tế - xã hội khó khăn; vùng có điều kiện kinh tế - xã hội đặc biệt khó khăn thì thời gian thực hiện không quá 25 ngày. |
+
+## Thành phần hồ sơ
+
+| Tên giấy tờ | Bản chính | Bản sao | Tệp đính kèm |
+| --- | --- | --- | --- |
+| Đơn đề nghị giao đất, cho thuê đất, giao khu vực biển để lấn biển (theo Mẫu số 05) | 1 | 0 | [Mau don so 05. Don de nghi giao dat, cho thue dat, giao khu vuc bien de lan bien.docx](file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/1_115314/Mau%20don%20so%2005.%20Don%20de%20nghi%20giao%20dat%2C%20cho%20thue%20dat%2C%20giao%20khu%20vuc%20bien%20de%20lan%20bien.docx) |
+| Văn bản Dự án đầu tư lấn biển hoặc hạng mục lấn biển của dự án đầu tư đã được cơ quan có thẩm quyền phê duyệt | 0 | 1 | Không có |
+| Văn bản về việc đại diện theo quy định của pháp luật về dân sự đối với trường hợp thực hiện thủ tục đăng ký đất đai, tài sản gắn liền với đất thông qua người đại diện | 1 | 0 | Không có |
+| Giấy chứng nhận quyền sử dụng đất, quyền sở hữu tài sản gắn liền với đất | 1 | 0 | Không có |
+
+## Căn cứ pháp lý
+
+| Tên văn bản pháp lý | Mã văn bản |
+| --- | --- |
+| Nghị định 102/2024/NĐ-CP ngày 30/7/2024 của Chính phủ quy định chi tiết thi hành một số điều của Luật Đất đai. | 102/2024/NĐ-CP |
+| Quy định về phân định thẩm quyền của chính quyền địa phương 02 cấp, phân quyền, phân cấp trong lĩnh vực đất đai | 151/2025/NĐ-CP |
+| Sửa đổi, bổ sung một số điều của các nghị định  quy định chi tiết thi hành Luật Đất đai | 226/2025/NĐ-CP |
+| Luật Đất đai số 31/2024/QH15 ngày 18/01/2024 được sửa đổi bổ sung  một số điều bởi Luật số 43/2024/QH15, Luật số 47/2024/QH15 và Luật số 58/2024/QH15 của Quốc hội. | 31/2024/QH15 |
+| quy định chi tiết và hướng dẫn một số điều của Nghị quyết số 254/2025/QH15 của Quốc hội quy định một số cơ chế, chính sách tháo gỡ khó khăn vướng mắc trong tổ chức thi hành Luật Đất đai | 49/2026/NĐ-CP |
+| Quy định trình tự, thủ tục hành chính trong lĩnh vực đất đai trên địa bàn tỉnh Đắk Lắk. | 57/2026/QĐ-UBND |
+| sửa đổi, bổ<br>sung một số điều của Nghị định 118/2025/NĐ-CP thực hiện thủ tục hành chính<br>theo cơ chế một cửa, một cửa liên thông tại Bộ phận Một cửa và Cổng Dịch vụ<br>công quốc gia | 367/2025/NĐ-CP |
+
+## Cơ quan thực hiện
+
+Sở Nông nghiệp và Môi trường - Tỉnh Đắk Lắk
+
+## Yêu cầu, điều kiện thực hiện
+
+Không có thông tin
+
+## Kết quả xử lý
+
+* Giấy chứng nhận quyền sử dụng đất, quyền sở hữu tài sản gắn liền với đất (Mã: `H15-KQ000200`)
+* Quyết định giao đất, cho thuê đất, giao khu vực biển để lấn biển (Mã: `H15-KQ000307`)
+
+## Từ khóa
+
+Không có thông tin
+
+## Mô tả
+
+Không có thông tin

@@ -1,0 +1,505 @@
+# Công nhận trường mầm non đạt chuẩn Quốc gia
+
+## Thông tin chung
+
+* **Mã thủ tục:** 1.000288
+* **Số quyết định:** 1672/QĐ-BGDĐT
+* **Cấp thực hiện:** Cấp xã, Cấp tỉnh
+* **Loại thủ tục:** TTHC được luật giao quy định chi tiết
+* **Lĩnh vực:** Giáo dục và Đào tạo thuộc hệ thống giáo dục quốc dân
+* **Đối tượng thực hiện:** Tổ chức (không bao gồm doanh nghiệp, HTX)
+* **Cơ quan có thẩm quyền:** Giám đốc Sở Giáo dục và Đào tạo
+* **Địa chỉ tiếp nhận HS:** Ủy ban nhân dân cấp xã; Sở giáo dục và đào tạo
+* **Cơ quan được ủy quyền:** Không có thông tin
+* **Cơ quan phối hợp:** Không có thông tin
+
+## Thủ tục hành chính liên quan
+
+Không có thông tin
+
+## Trình tự thực hiện
+
+1. Trường mầm non gửi hồ sơ đến Ủy ban nhân dân cấp xã.
+   Ủy ban nhân dân cấp xã có trách nhiệm:
+   - Tiếp nhận, kiểm tra hồ sơ đăng ký đánh giá ngoài của trường mầm non trên địa bàn thuộc phạm vi quản lý, thông tin cho trường mầm non biết hồ sơ được chấp nhận hoặc yêu cầu tiếp tục hoàn thiện;
+   - Gửi hồ sơ đăng ký đánh giá ngoài của trường mầm non đã được chấp nhận về sở giáo dục và đào tạo.
+   Sở giáo dục và đào tạo có trách nhiệm:         
+   - Tiếp nhận, kiểm tra hồ sơ đăng ký đánh giá ngoài từ các Ủy ban nhân dân cấp xã; thông tin cho Ủy ban nhân dân cấp xã biết hồ sơ được chấp nhận để đánh giá ngoài hoặc yêu cầu tiếp tục hoàn thiện;
+   - Tiếp nhận, kiểm tra hồ sơ đăng ký đánh giá ngoài từ các trường mầm non trên địa bàn thuộc phạm vi quản lý, thông tin cho trường mầm non biết hồ sơ đã được chấp nhận để đánh giá ngoài hoặc yêu cầu tiếp tục hoàn thiện;
+   - Thực hiện việc thành lập đoàn đánh giá ngoài theo quy định tại Điều 29, Điều 30 và triển khai các bước trong quy trình đánh giá ngoài theo quy định tại Điều 28 của Quy định này trong thời hạn 02 tháng kể từ ngày thông tin cho Ủy ban nhân dân cấp xã hoặc trường mầm non hồ sơ đã được chấp nhận để đánh giá ngoài.
+   Quy trình đánh giá ngoài gồm các bước sau:
+   - Nghiên cứu hồ sơ đánh giá.
+   - Khảo sát sơ bộ tại trường mầm non.
+   - Khảo sát chính thức tại trường mầm non.
+   - Dự thảo báo cáo đánh giá ngoài.
+   - Lấy ý kiến phản hồi của trường mầm non về dự thảo báo cáo đánh giá ngoài.
+   - Hoàn thiện báo cáo đánh giá ngoài.
+   Sau khi thống nhất trong đoàn đánh giá ngoài, đoàn đánh giá ngoài gửi dự thảo báo cáo đánh giá ngoài cho trường mầm non để lấy ý kiến phản hồi.
+   Trong thời hạn 10 ngày làm việc, kể từ ngày nhận được dự thảo báo cáo đánh giá ngoài, trường mầm non có trách nhiệm gửi công văn cho đoàn đánh giá ngoài nêu rõ ý kiến nhất trí hoặc không nhất trí với bản dự thảo báo cáo đánh giá ngoài, trường hợp không nhất trí với dự thảo báo cáo đánh giá ngoài phải nêu rõ lý do.
+   Trong thời hạn 10 ngày làm việc, kể từ ngày nhận được ý kiến phản hồi của trường mầm non, đoàn đánh giá ngoài phải thông báo bằng văn bản cho trường mầm non biết những ý kiến tiếp thu hoặc bảo lưu, trường hợp bảo lưu ý kiến phải nêu rõ lý do. Trong thời hạn 10 ngày làm việc tiếp theo, kể từ ngày có văn bản thông báo cho trường mầm non biết những ý kiến tiếp thu hoặc bảo lưu, đoàn đánh giá ngoài hoàn thiện báo cáo đánh giá ngoài, gửi đến sở giáo dục và đào tạo và trường mầm non.
+   Trường hợp quá thời hạn 10 ngày làm việc, kể từ ngày nhận được dự thảo báo cáo đánh giá ngoài, trường mầm non không có ý kiến phản hồi thì xem như đã đồng ý với dự thảo báo cáo đánh giá ngoài. Trong thời hạn 10 ngày làm việc tiếp theo, đoàn đánh giá ngoài hoàn thiện báo cáo đánh giá ngoài, gửi đến sở giáo dục và đào tạo và trường mầm non.
+   Trong thời hạn 15 ngày làm việc kể từ ngày nhận được báo cáo của đoàn đánh giá ngoài, Giám đốc Sở Giáo dục và Đào tạo ra quyết định cấp Bằng công nhận trường đạt chuẩn quốc gia cho trường mầm non.
+
+## Cách thức thực hiện
+
+| Hình thức nộp | Thời gian giải quyết | Phí, lệ phí | Mô tả |
+| --- | --- | --- | --- |
+| Dịch vụ bưu chính | N/A | Không có thông tin | 02 tháng và 15 ngày làm việc, trong đó:<br>a) Trong thời hạn 02 tháng kể từ ngày thông tin cho Ủy ban nhân dân cấp xã hoặc trường mầm non biết hồ sơ đã được chấp nhận để đánh giá ngoài: Thực hiện các bước trong quy trình đánh giá ngoài được quy định tại các khoản 1, 2, 3, 4 và 5 Điều 28 của Quy định về kiểm định chất lượng giáo dục và công nhận đạt chuẩn quốc gia đối với trường mầm non ban hành kèm theo Thông tư số 19/2018/TT-BGDĐT và Thông tư số 22/2024/TT-BGDĐT;<br>b) Trong thời hạn 15 ngày làm việc kể từ ngày nhận được báo cáo của đoàn đánh giá ngoài, Giám đốc Sở Giáo dục và Đào tạo ra quyết định cấp Bằng công nhận trường đạt chuẩn quốc gia cho trường mầm non. |
+| Trực tiếp | N/A | Không có thông tin | 02 tháng và 15 ngày làm việc, trong đó:<br>a) Trong thời hạn 02 tháng kể từ ngày thông tin cho Ủy ban nhân dân cấp xã hoặc trường mầm non biết hồ sơ đã được chấp nhận để đánh giá ngoài: Thực hiện các bước trong quy trình đánh giá ngoài được quy định tại các khoản 1, 2, 3, 4 và 5 Điều 28 của Quy định về kiểm định chất lượng giáo dục và công nhận đạt chuẩn quốc gia đối với trường mầm non ban hành kèm theo Thông tư số 19/2018/TT-BGDĐT và Thông tư số 22/2024/TT-BGDĐT;<br>b) Trong thời hạn 15 ngày làm việc kể từ ngày nhận được báo cáo của đoàn đánh giá ngoài, Giám đốc Sở Giáo dục và Đào tạo ra quyết định cấp Bằng công nhận trường đạt chuẩn quốc gia cho trường mầm non. |
+
+## Thành phần hồ sơ
+
+| Tên giấy tờ | Bản chính | Bản sao | Tệp đính kèm |
+| --- | --- | --- | --- |
+| Báo cáo tự đánh giá | 2 | 0 | Không có |
+| Công văn đăng ký đánh giá ngoài, trong đó có nêu rõ nguyện vọng đánh giá ngoài trường mầm non để được công nhận đạt kiểm định chất lượng giáo dục hoặc công nhận đạt chuẩn quốc gia hoặc đồng thời công nhận đạt kiểm định chất lượng giáo dục và công nhận đạt chuẩn quốc gia | 1 | 0 | Không có |
+
+## Căn cứ pháp lý
+
+| Tên văn bản pháp lý | Mã văn bản |
+| --- | --- |
+| Thông tư số 22/2024/TT-BGDĐT ngày 10/12/2024 sửa đổi, bổ sung một số điều của Quy định ban hành kèm theo Thông tư số 17/2018/TT-BGDĐT, Thông tư số 18/2018/TT-BGDĐT và Thông tư số 19/2018/TT-BGDĐT ngày 22/8/2018 của Bộ trưởng Bộ Giáo dục và Đào tạo | 22/2024/TT-BGDĐT |
+| Thông tư số 13/2025/TT-BGDĐT ngày 12/6/2025 của Bộ trưởng Bộ Giáo dục và Đào tạo quy định về phân quyền, phân cấp và phân định thẩm quyền thực hiện nhiệm vụ quản lý nhà nước của chính quyền địa phương hai cấp trong lĩnh vực giáo dục | 13/2025/TT-BGDĐT |
+| ban hành Quy định về kiểm định chất lượng giáo dục và công nhận đạt chuẩn quốc gia đối với trường mầm non | 19/2018/TT-BGDĐT |
+
+## Cơ quan thực hiện
+
+Không có thông tin
+
+## Yêu cầu, điều kiện thực hiện
+
+Điều kiện công nhận trường đạt chuẩn quốc gia Mức độ 1
+- Đối với trường thành lập mới phải có ít nhất 05 năm hoạt động; đối với trường được thành lập do sáp nhập, chia tách phải sau ít nhất 02 năm hoạt động.
+- Trường được đánh giá đạt Mức 2.
+Điều kiện công nhận trường đạt chuẩn quốc gia Mức độ 2
+- Đối với trường thành lập mới phải có ít nhất 05 năm hoạt động; đối với trường được thành lập do sáp nhập, chia tách phải sau ít nhất 02 năm hoạt động.
+- Trường được đánh giá đạt Mức 3 trở lên.
+Tiêu chuẩn đánh giá trường mầm non các Mức 1, 2, 3 và 4 cụ thể như sau: 
+TIÊU CHUẨN ĐÁNH GIÁ TRƯỜNG MẦM NON MỨC 1
+2.10.1. Tiêu chuẩn 1: Tổ chức và quản lý nhà trường 
+2.10.1.1. Tiêu chí 1.1: Phương hướng, chiến lược xây dựng và phát triển nhà trường
+a) Phù hợp với mục tiêu giáo dục mầm non được quy định tại Luật giáo dục, định hướng phát triển kinh tế - xã hội của địa phương theo từng giai đoạn và các nguồn lực của nhà trường; 
+b) Được xác định bằng văn bản và cấp có thẩm quyền phê duyệt;
+c) Được công bố công khai bằng hình thức niêm yết tại nhà trường hoặc đăng tải trên trang thông tin điện tử của nhà trường (nếu có) hoặc đăng tải trên các phương tiện thông tin đại chúng của địa phương, trang thông tin điện tử của Ủy ban nhân dân cấp xã.
+2.10.1.2. Tiêu chí 1.2: Hội đồng trường và các hội đồng khác
+a) Được thành lập theo quy định;
+b) Thực hiện chức năng, nhiệm vụ và quyền hạn theo quy định;
+c) Các hoạt động được định kỳ rà soát, đánh giá.
+2.10.1.3. Tiêu chí 1.3: Tổ chức Đảng Cộng sản Việt Nam, các đoàn thể và tổ chức khác trong nhà trường
+a) Các đoàn thể và tổ chức khác trong nhà trường có cơ cấu tổ chức theo quy định;
+b) Hoạt động theo quy định; 	
+c) Hằng năm, các hoạt động được rà soát, đánh giá.
+2.10.1.4. Tiêu chí 1.4: Hiệu trưởng, phó hiệu trưởng, tổ chuyên môn và tổ văn phòng
+a) Có hiệu trưởng, số lượng phó hiệu trưởng theo quy định; 
+b) Tổ chuyên môn và tổ văn phòng có cơ cấu tổ chức theo quy định;
+c) Tổ chuyên môn, tổ văn phòng có kế hoạch hoạt động và thực hiện các nhiệm vụ theo quy định.
+2.10.1.5. Tiêu chí 1.5: Tuyển sinh, tổ chức nhóm trẻ và lớp mẫu giáo
+a) Thực hiện tuyển sinh theo yêu cầu phổ cập giáo dục mầm non cho trẻ em 5 tuổi theo quy định;
+b) Các nhóm trẻ, lớp mẫu giáo được phân chia theo độ tuổi; trong trường hợp số lượng trẻ trong mỗi nhóm, lớp không đủ 50% so với số trẻ tối đa quy định tại Điều lệ trường mầm non thì được tổ chức thành nhóm trẻ ghép hoặc lớp mẫu giáo ghép; số lượng trẻ khuyết tật học hòa nhập trên mỗi nhóm trẻ, lớp mẫu giáo đảm bảo theo quy định;
+c) Các nhóm trẻ, lớp mẫu giáo được tổ chức học 02 buổi trên ngày.
+2.10.1.6. Tiêu chí 1.6: Quản lý hành chính, tài chính và tài sản
+a) Hệ thống hồ sơ của nhà trường được lưu trữ theo quy định; 
+b) Lập dự toán, thực hiện thu chi, quyết toán, thống kê, báo cáo tài chính và tài sản; công khai và định kỳ tự kiểm tra tài chính, tài sản theo quy định; quy chế chi tiêu nội bộ được bổ sung, cập nhật phù hợp với điều kiện thực tế và các quy định hiện hành;
+c) Quản lý, sử dụng tài chính, tài sản đúng mục đích và có hiệu quả để phục vụ các hoạt động giáo dục.
+2.10.1.7. Tiêu chí 1.7: Quản lý cán bộ, giáo viên và nhân viên
+a) Có kế hoạch bồi dưỡng chuyên môn, nghiệp vụ cho đội ngũ cán bộ quản lý, giáo viên và nhân viên;
+b) Phân công, sử dụng cán bộ quản lý, giáo viên, nhân viên rõ ràng, hợp lý, đảm bảo hiệu quả hoạt động của nhà trường;
+c) Cán bộ quản lý, giáo viên, nhân viên được đảm bảo các quyền theo quy định.
+2.10.1.8. Tiêu chí 1.8: Quản lý các hoạt động giáo dục
+a) Kế hoạch giáo dục phù hợp với quy định hiện hành, điều kiện thực tế địa phương và điều kiện của nhà trường;
+b) Kế hoạch giáo dục được thực hiện đầy đủ;
+c) Kế hoạch giáo dục được rà soát, đánh giá, điều chỉnh kịp thời.
+2.10.1.9. Tiêu chí 1.9: Thực hiện quy chế dân chủ cơ sở
+a) Cán bộ quản lý, giáo viên, nhân viên được tham gia thảo luận, đóng góp ý kiến khi xây dựng kế hoạch, nội quy, quy định, quy chế liên quan đến các hoạt động của nhà trường; 
+b) Các khiếu nại, tố cáo, kiến nghị, phản ánh (nếu có) thuộc thẩm quyền xử lý của nhà trường được giải quyết đúng pháp luật;
+c) Hằng năm, có báo cáo thực hiện quy chế dân chủ cơ sở.
+2.10.1.10. Tiêu chí 1.10: Đảm bảo an ninh trật tự, an toàn trường học
+a) Đảm bảo theo quy định về an ninh trật tự; an toàn vệ sinh thực phẩm; an toàn phòng, chống cháy, nổ; an toàn phòng, chống thảm họa, thiên tai; phòng, chống dịch bệnh; phòng, chống các tệ nạn xã hội và phòng, chống bạo lực trong nhà trường; an toàn phòng, chống tai nạn, thương tích;
+b) Có hộp thư góp ý, đường dây nóng và các hình thức khác để tiếp nhận, xử lý các thông tin phản ánh của người dân; đảm bảo an toàn cho cán bộ quản lý, giáo viên, nhân viên và trẻ trong nhà trường;
+c) Không có hiện tượng kỳ thị, hành vi bạo lực, vi phạm pháp luật về bình đẳng giới trong nhà trường.
+2.10.2. Tiêu chuẩn 2: Cán bộ quản lý, giáo viên, nhân viên
+2.10.2.1. Tiêu chí 2.1: Đối với hiệu trưởng, phó hiệu trưởng
+a) Đạt tiêu chuẩn theo quy định;
+b) Được đánh giá đạt chuẩn hiệu trưởng trở lên;
+  c) Được bồi dưỡng, tập huấn về chuyên môn, nghiệp vụ theo quy định.
+2.10.2.2. Tiêu chí 2.2: Đối với giáo viên
+a) Có đội ngũ giáo viên đủ về số lượng, hợp lý về cơ cấu đảm bảo thực hiện Chương trình giáo dục mầm non theo quy định; 
+b) Tỷ lệ giáo viên đạt chuẩn trình độ đào tạo đảm bảo quy định của Chính phủ và lộ trình nâng chuẩn trình độ đào tạo giáo viên theo kế hoạch của tỉnh, thành phố trực thuộc trung ương;
+c) Có ít nhất 95% giáo viên đạt chuẩn nghề nghiệp giáo viên ở mức đạt trở lên. 
+2.10.2.3. Tiêu chí 2.3: Đối với nhân viên
+a) Có nhân viên hoặc giáo viên kiêm nhiệm để đảm nhiệm các nhiệm vụ do hiệu trưởng phân công;
+b) Được phân công công việc phù hợp, hợp lý theo năng lực;
+c) Hoàn thành các nhiệm vụ được giao.
+2.10.3. Tiêu chuẩn 3: Cơ sở vật chất và thiết bị dạy học
+  2.10.3.1. Tiêu chí 3.1: Địa điểm, quy mô, diện tích đảm bảo theo quy định của Bộ Giáo dục và Đào tạo, bao gồm:
+  a) Vị trí đặt trường, điểm trường;
+  b) Quy mô;
+  c) Diện tích khu đất xây dựng trường, điểm trường, diện tích sàn xây dựng các hạng mục công trình.
+2.10.3.2. Tiêu chí 3.2: Các hạng mục công trình đảm bảo tiêu chuẩn cơ sở vật chất tối thiểu đối với trường mầm non theo quy định của Bộ Giáo dục và Đào tạo, bao gồm:
+  a) Khối phòng hành chính quản trị;
+  b) Khối phòng nuôi dưỡng, chăm sóc và giáo dục trẻ em;
+  c) Khối phòng tổ chức ăn (áp dụng cho các trường có tổ chức nấu ăn), khối phụ trợ.
+2.10.3.3. Tiêu chí 3.3: Hạ tầng kỹ thuật, các hạng mục công trình kiên cố và thiết bị dạy học đảm bảo tiêu chuẩn cơ sở vật chất tối thiểu đối với trường mầm non theo quy định của Bộ Giáo dục và Đào tạo, bao gồm:
+  a) Hệ thống cấp nước sạch; hệ thống cấp điện; hệ thống phòng cháy, chữa cháy; hạ tầng công nghệ thông tin, liên lạc và khu thu gom rác thải;
+  b) Tỷ lệ các hạng mục công trình kiên cố;
+  c) Thiết bị dạy học, đồ dùng, đồ chơi.
+2.10.4. Tiêu chuẩn 4: Quan hệ giữa nhà trường, gia đình và xã hội
+2.10.4.1. Tiêu chí 4.1: Ban đại diện cha mẹ trẻ
+a) Được thành lập và hoạt động theo quy định tại Điều lệ Ban đại diện cha mẹ học sinh;
+b) Có kế hoạch hoạt động theo năm học; 
+c) Tổ chức thực hiện kế hoạch hoạt động đúng tiến độ.
+2.10.4.2. Tiêu chí 4.2: Công tác tham mưu cấp ủy đảng, chính quyền và phối hợp với các tổ chức, cá nhân của nhà trường;
+a) Tham mưu cấp ủy đảng, chính quyền địa phương để thực hiện kế hoạch giáo dục của nhà trường;
+b) Tuyên truyền nâng cao nhận thức và trách nhiệm của cộng đồng về chủ trương, chính sách của Đảng, Nhà nước, ngành giáo dục, về mục tiêu, nội dung và kế hoạch giáo dục của nhà trường;
+c) Huy động và sử dụng các nguồn lực hợp pháp của các tổ chức, cá nhân đúng quy định. 
+2.10.5. Tiêu chuẩn 5: Hoạt động và kết quả nuôi dưỡng, chăm sóc, giáo dục trẻ
+2.10.5.1. Tiêu chí 5.1: Thực hiện Chương trình giáo dục mầm non 
+a) Tổ chức thực hiện Chương trình giáo dục mầm non theo kế hoạch;
+b) Nhà trường phát triển Chương trình giáo dục mầm non do Bộ Giáo dục và Đào tạo ban hành đáp ứng với mục tiêu, yêu cầu của Chương trình giáo dục mầm non, phù hợp điều kiện của địa phương và nhà trường;
+c) Định kỳ rà soát, đánh giá việc thực hiện Chương trình giáo dục mầm non và có điều chỉnh kịp thời, phù hợp.
+2.10.5.2. Tiêu chí 5.2: Tổ chức hoạt động nuôi dưỡng, chăm sóc và giáo dục trẻ 
+a) Thực hiện linh hoạt các phương pháp, đảm bảo phù hợp với mục tiêu, nội dung giáo dục, phù hợp với trẻ mầm non và điều kiện nhà trường;
+b) Tổ chức môi trường giáo dục theo hướng mở, an toàn; tạo điều kiện cho trẻ được vui chơi, trải nghiệm;
+c) Tổ chức các hoạt động giáo dục bằng nhiều hình thức đa dạng phù hợp với độ tuổi của trẻ và điều kiện thực tế.
+2.10.5.3. Tiêu chí 5.3: Kết quả nuôi dưỡng và chăm sóc sức khoẻ 
+a) Nhà trường phối hợp với cơ sở y tế địa phương tổ chức các hoạt động chăm sóc sức khỏe cho trẻ;
+b) 100% trẻ được kiểm tra sức khỏe, đo chiều cao, cân nặng, đánh giá tình trạng dinh dưỡng bằng biểu đồ tăng trưởng theo quy định;
+c) Ít nhất 80% trẻ suy dinh dưỡng, thừa cân, béo phì được can thiệp bằng những biện pháp phù hợp, tình trạng dinh dưỡng của trẻ cải thiện so với đầu năm học.
+2.10.5.4. Tiêu chí 5.4: Kết quả giáo dục
+a) Tỷ lệ chuyên cần đạt ít nhất 90% đối với trẻ 5 tuổi, 85% đối với trẻ dưới 5 tuổi; trường thuộc vùng khó khăn đạt ít nhất 85% đối với trẻ 5 tuổi, 80% đối với trẻ dưới 5 tuổi;
+b) Tỷ lệ trẻ 5 tuổi hoàn thành Chương trình giáo dục mầm non đạt ít nhất 85%; trường thuộc vùng khó khăn đạt ít nhất 80%;
+c) Trẻ khuyết tật học hòa nhập được theo dõi thông qua kế hoạch giáo dục cá nhân. Trẻ khuyết tật học hòa nhập, trẻ có hoàn cảnh khó khăn được nhà trường quan tâm và thực hiện đầy đủ các chế độ, chính sách theo quy định.
+TIÊU CHUẨN ĐÁNH GIÁ TRƯỜNG MẦM NON MỨC 2
+Trường mầm non đạt Mức 2 khi đảm bảo Tiêu chuẩn đánh giá trường mầm non Mức 1 và các tiêu chuẩn sau:
+2.10.6. Tiêu chuẩn 1: Tổ chức và quản lý nhà trường
+2.10.6.1. Tiêu chí 1.1: Phương hướng, chiến lược xây dựng và phát triển nhà trường
+Nhà trường có các giải pháp giám sát việc thực hiện phương hướng, chiến lược xây dựng và phát triển.
+2.10.6.2. Tiêu chí 1.2: Hội đồng trường và các hội đồng khác
+Hoạt động có hiệu quả, góp phần nâng cao chất lượng nuôi dưỡng, chăm sóc và giáo dục trẻ của nhà trường. 
+2.10.6.3. Tiêu chí 1.3: Tổ chức Đảng Cộng sản Việt Nam, các đoàn thể và tổ chức khác trong nhà trường
+a) Tổ chức Đảng Cộng sản Việt Nam có cơ cấu tổ chức và hoạt động theo quy định; trong 05 năm liên tiếp tính đến thời điểm đánh giá, có ít nhất 01 năm hoàn thành tốt nhiệm vụ, các năm còn lại hoàn thành nhiệm vụ trở lên;
+b) Các đoàn thể, tổ chức khác có đóng góp tích cực cho các hoạt động của nhà trường. 
+2.10.6.4. Tiêu chí 1.4: Hiệu trưởng, phó hiệu trưởng, tổ chuyên môn và tổ văn phòng
+a) Hằng năm, tổ chuyên môn đề xuất và thực hiện được ít nhất 01 (một) chuyên đề chuyên môn có tác dụng nâng cao chất lượng và hiệu quả giáo dục;
+b) Hoạt động của tổ chuyên môn và tổ văn phòng được định kỳ rà soát, đánh giá, điều chỉnh.
+2.10.6.5. Tiêu chí 1.5: Tổ chức nhóm trẻ và lớp mẫu giáo
+Số trẻ trong các nhóm trẻ và lớp mẫu giáo không vượt quá quy định và được phân chia theo độ tuổi.
+2.10.6.6. Tiêu chí 1.6: Quản lý hành chính, tài chính và tài sản
+a) Ứng dụng công nghệ thông tin hiệu quả trong công tác quản lý hành chính, tài chính và tài sản của nhà trường;
+b) Trong 05 năm liên tiếp tính đến thời điểm đánh giá, không có vi phạm liên quan đến việc quản lý hành chính, tài chính và tài sản theo kết luận của thanh tra, kiểm toán. 
+2.10.6.7. Tiêu chí 1.7: Quản lý cán bộ, giáo viên và nhân viên
+ Có biện pháp để phát huy được năng lực của cán bộ quản lý, giáo viên, nhân viên trong việc xây dựng, phát triển và nâng cao chất lượng giáo dục nhà trường.
+2.10.6.8. Tiêu chí 1.8: Quản lý các hoạt động giáo dục
+Các biện pháp chỉ đạo, kiểm tra, đánh giá của nhà trường đối với các hoạt động nuôi dưỡng, chăm sóc và giáo dục trẻ, được cơ quan quản lý đánh giá đạt hiệu quả.
+2.10.6.9. Tiêu chí 1.9. Thực hiện quy chế dân chủ cơ sở
+Các biện pháp và cơ chế giám sát việc thực hiện quy chế dân chủ trong nhà trường đảm bảo công khai, minh bạch, hiệu quả. 
+2.10.6.10. Tiêu chí 1.10: Đảm bảo an ninh trật tự, an toàn trường học
+a) Cán bộ quản lý, giáo viên, nhân viên và trẻ được phổ biến, hướng dẫn, thực hiện phương án đảm bảo an ninh trật tự; vệ sinh an toàn thực phẩm; an toàn phòng chống tai nạn, thương tích; an toàn phòng, chống cháy nổ; an toàn phòng, chống thảm họa thiên tai; phòng, chống dịch bệnh; phòng, chống các tệ nạn xã hội và phòng, chống bạo lực trong nhà trường;
+b) Nhà trường thường xuyên kiểm tra, thu thập, đánh giá, xử lý các thông tin, biểu hiện liên quan đến bạo lực học đường, an ninh trật tự và có biện pháp ngăn chặn kịp thời, hiệu quả.
+2.10.7. Tiêu chuẩn 2: Cán bộ quản lý, giáo viên, nhân viên
+2.10.7.1. Tiêu chí 2.1: Đối với hiệu trưởng, phó hiệu trưởng
+a) Trong 05 năm liên tiếp tính đến thời điểm đánh giá, có ít nhất 02 năm được đánh giá đạt chuẩn hiệu trưởng ở mức khá trở lên;
+b) Được bồi dưỡng, tập huấn về lý luận chính trị theo quy định; được giáo viên, nhân viên trong trường tín nhiệm.
+2.10.7.2. Tiêu chí 2.2: Đối với giáo viên
+b) Trong 05 năm liên tiếp tính đến thời điểm đánh giá, có 100% giáo viên đạt chuẩn nghề nghiệp giáo viên ở mức đạt trở lên, trong đó có ít nhất 60% đạt chuẩn nghề nghiệp giáo viên ở mức khá trở lên và ít nhất 50% ở mức khá trở lên đối với trường thuộc vùng khó khăn; 
+c) Trong 05 năm liên tiếp tính đến thời điểm đánh giá, không có giáo viên bị kỷ luật từ hình thức cảnh cáo trở lên.
+2.10.7.3. Tiêu chí 2.3: Đối với nhân viên
+a) Số lượng và cơ cấu nhân viên đảm bảo theo quy định; 
+b) Trong 05 năm liên tiếp tính đến thời điểm đánh giá, không có nhân viên bị kỷ luật từ hình thức cảnh cáo trở lên. 
+2.10.8. Tiêu chuẩn 3: Cơ sở vật chất và thiết bị dạy học
+  2.10.8.1. Tiêu chí 3.2: Các hạng mục công trình đảm bảo tiêu chuẩn cơ sở vật chất mức độ 1 đối với trường mầm non theo quy định của Bộ Giáo dục và Đào tạo, bao gồm: 
+  a) Khối phòng hành chính quản trị;
+ b) Khối phòng nuôi dưỡng, chăm sóc và giáo dục trẻ em;
+  c) Khối phụ trợ.
+2.10.8.2. Tiêu chí 3.3: Tỷ lệ các hạng mục công trình kiên cố, mật độ sử dụng đất đảm bảo tiêu chuẩn cơ sở vật chất mức độ 1 đối với trường mầm non theo quy định của Bộ Giáo dục và Đào tạo.
+2.10.9. Tiêu chuẩn 4: Quan hệ giữa nhà trường, gia đình và xã hội
+2.10.9.1. Tiêu chí 4.1: Ban đại diện cha mẹ trẻ
+Phối hợp có hiệu quả với nhà trường trong việc tổ chức thực hiện nhiệm vụ năm học và các hoạt động giáo dục; hướng dẫn, tuyên truyền, phổ biến pháp luật, chủ trương chính sách về giáo dục đối với cha mẹ trẻ.
+2.10.9.2. Tiêu chí 4.2: Công tác tham mưu cấp ủy đảng, chính quyền và phối hợp với các tổ chức, cá nhân của nhà trường
+a) Tham mưu cấp ủy đảng, chính quyền để tạo điều kiện cho nhà trường thực hiện phương hướng, chiến lược xây dựng và phát triển;
+b) Phối hợp với các tổ chức, đoàn thể, cá nhân để tổ chức các hoạt động lễ hội, sự kiện theo kế hoạch, phù hợp với truyền thống của địa phương.
+2.10.10. Tiêu chuẩn 5: Hoạt động và kết quả nuôi dưỡng, chăm sóc, giáo dục trẻ
+2.10.10.1. Tiêu chí 5.1: Thực hiện Chương trình giáo dục mầm non 
+  a) Tổ chức thực hiện Chương trình giáo dục mầm non đảm bảo linh hoạt, hiệu quả, phù hợp với điều kiện cụ thể của địa phương và trường mầm non;
+  b) Nhà trường phát triển Chương trình giáo dục mầm non do Bộ Giáo dục và Đào tạo ban hành phù hợp với văn hóa, điều kiện của địa phương, trường mầm non và khả năng, nhu cầu của trẻ.
+2.10.10.2. Tiêu chí 5.2: Tổ chức hoạt động nuôi dưỡng, chăm sóc và giáo dục trẻ 
+  Tổ chức các hoạt động nuôi dưỡng, chăm sóc và giáo dục trẻ, đảm bảo thực hiện mục tiêu giáo dục, nội dung giáo dục, phương pháp giáo dục mầm non, phù hợp với sự phát triển của trẻ và điều kiện thực tế.
+2.10.10.3. Tiêu chí 5.3: Kết quả nuôi dưỡng và chăm sóc sức khoẻ 
+a) Nhà trường tổ chức tư vấn cho cha mẹ trẻ hoặc người giám hộ về các vấn đề liên quan đến sức khỏe, phát triển thể chất và tinh thần của trẻ;
+b) Chế độ dinh dưỡng của trẻ tại trường được đảm bảo cân đối, đáp ứng nhu cầu dinh dưỡng, đảm bảo theo quy định;
+ c) 100% trẻ suy dinh dưỡng, thừa cân, béo phì được can thiệp bằng những biện pháp phù hợp, tình trạng dinh dưỡng của trẻ cải thiện so với đầu năm học.
+2.10.10.4. Tiêu chí 5.4: Kết quả giáo dục
+a) Tỷ lệ chuyên cần đạt ít nhất 95% đối với trẻ 5 tuổi, 90% đối với trẻ dưới 5 tuổi; trường thuộc vùng khó khăn đạt ít nhất 90% đối với trẻ 5 tuổi, 85% đối với trẻ dưới 5 tuổi;
+b) Tỷ lệ trẻ 5 tuổi hoàn thành Chương trình giáo dục mầm non đạt ít nhất 95%; trường thuộc vùng khó khăn đạt ít nhất 90%;
+c) Trẻ khuyết tật học hòa nhập (nếu có) được đánh giá có tiến bộ đạt ít nhất 80%.
+TIÊU CHUẨN ĐÁNH GIÁ TRƯỜNG MẦM NON MỨC 3
+Trường mầm non đạt Mức 3 khi đảm bảo Tiêu chuẩn đánh giá trường mầm non Mức 2 và các tiêu chuẩn sau:
+2.10.11. Tiêu chuẩn 1: Tổ chức và quản lý nhà trường
+2.10.11.1. Tiêu chí 1.1: Phương hướng, chiến lược xây dựng và phát triển nhà trường
+Định kỳ rà soát, bổ sung, điều chỉnh phương hướng, chiến lược xây dựng và phát triển. Tổ chức xây dựng phương hướng, chiến lược xây dựng và phát triển có sự tham gia của các thành viên trong Hội đồng trường (Hội đồng quản trị đối với trường tư thục), cán bộ quản lý, giáo viên, nhân viên, cha mẹ trẻ và cộng đồng.
+2.10.11.2. Tiêu chí 1.3: Tổ chức Đảng Cộng sản Việt Nam, các đoàn thể và tổ chức khác trong nhà trường
+a) Trong 05 năm liên tiếp tính đến thời điểm đánh giá, tổ chức Đảng Cộng sản Việt Nam có ít nhất 02 năm hoàn thành tốt nhiệm vụ, các năm còn lại hoàn thành nhiệm vụ trở lên;
+b) Các đoàn thể, tổ chức khác đóng góp hiệu quả cho các hoạt động của nhà trường và cộng đồng.
+2.10.11.3. Tiêu chí 1.4: Hiệu trưởng, phó hiệu trưởng, tổ chuyên môn và tổ văn phòng
+a) Hoạt động của tổ chuyên môn và tổ văn phòng có đóng góp hiệu quả trong việc nâng cao chất lượng các hoạt động của nhà trường;
+b) Tổ chuyên môn thực hiện hiệu quả các chuyên đề chuyên môn góp phần nâng cao chất lượng nuôi dưỡng, chăm sóc và giáo dục trẻ.
+2.10.11.4. Tiêu chí 1.6: Quản lý hành chính, tài chính và tài sản
+Có kế hoạch ngắn hạn, trung hạn, dài hạn để tạo ra các nguồn tài chính hợp pháp phù hợp với điều kiện nhà trường, thực tế địa phương.
+2.10.12. Tiêu chuẩn 2: Cán bộ quản lý, giáo viên, nhân viên
+2.10.12.1. Tiêu chí 2.1: Đối với hiệu trưởng, phó hiệu trưởng
+Trong 05 năm liên tiếp tính đến thời điểm đánh giá, đạt chuẩn hiệu trưởng ở mức khá trở lên, trong đó có ít nhất 01 năm đạt chuẩn hiệu trưởng ở mức tốt.
+2.10.12.2. Tiêu chí 2.2: Đối với giáo viên
+	b) Trong 05 năm liên tiếp tính đến thời điểm đánh giá, có ít nhất 80% giáo viên đạt chuẩn nghề nghiệp giáo viên ở mức khá trở lên, trong đó có ít nhất 30% đạt chuẩn nghề nghiệp giáo viên ở mức tốt; đối với trường thuộc vùng khó khăn có ít nhất 70% đạt chuẩn nghề nghiệp giáo viên ở mức khá trở lên, trong đó có ít nhất 20% đạt chuẩn nghề nghiệp giáo viên ở mức tốt.
+2.10.12.3. Tiêu chí 2.3: Đối với nhân viên
+a) Có trình độ đào tạo đáp ứng được vị trí việc làm;
+b) Hằng năm, được tham gia đầy đủ các lớp tập huấn, bồi dưỡng chuyên môn, nghiệp vụ theo vị trí việc làm.
+2.10.13. Tiêu chuẩn 3: Cơ sở vật chất và thiết bị dạy học
+2.10.13.1. Tiêu chí 3.2: Khối phòng nuôi dưỡng, chăm sóc và giáo dục trẻ đảm bảo quy định tiêu chuẩn cơ sở vật chất mức độ 2 đối với trường mầm non theo quy định của Bộ Giáo dục và Đào tạo.
+2.10.13.2. Tiêu chí 3.3: Tỷ lệ các hạng mục công trình kiên cố đảm bảo quy định tiêu chuẩn cơ sở vật chất mức độ 2 đối với trường mầm non theo quy định của Bộ Giáo dục và Đào tạo.
+2.10.14. Tiêu chuẩn 4. Quan hệ giữa nhà trường, gia đình và xã hội
+2.10.14.1. Tiêu chí 4.1: Ban đại diện cha mẹ trẻ
+Phối hợp có hiệu quả với nhà trường, xã hội trong việc thực hiện các nhiệm vụ theo quy định của Điều lệ Ban đại diện cha mẹ học sinh.
+2.10.14.2. Tiêu chí 4.2: Công tác tham mưu cấp ủy đảng, chính quyền và phối hợp với các tổ chức, cá nhân của nhà trường
+Tham mưu cấp ủy Đảng, chính quyền và phối hợp có hiệu quả với các tổ chức, cá nhân xây dựng nhà trường trở thành trung tâm văn hóa, giáo dục của địa phương.
+2.10.15. Tiêu chuẩn 5: Hoạt động và kết quả nuôi dưỡng, chăm sóc, giáo dục trẻ
+2.10.15.1. Tiêu chí 5.1: Thực hiện Chương trình giáo dục mầm non 
+a) Nhà trường phát triển Chương trình giáo dục mầm non do Bộ Giáo dục và Đào tạo ban hành trên cơ sở tham khảo chương trình giáo dục của các nước trong khu vực và thế giới đúng quy định, hiệu quả, phù hợp với thực tiễn của trường, địa phương; 
+b) Hằng năm, tổng kết, đánh giá việc thực hiện chương trình giáo dục của nhà trường, từ đó điều chỉnh, cải tiến nội dung, phương pháp giáo dục để nâng cao chất lượng nuôi dưỡng, chăm sóc và giáo dục trẻ.
+2.10.15.2. Tiêu chí 5.2: Tổ chức hoạt động nuôi dưỡng, chăm sóc và giáo dục trẻ 
+Tổ chức môi trường giáo dục trong và ngoài lớp học phù hợp với nhu cầu, khả năng của trẻ, kích thích hứng thú, tạo cơ hội cho trẻ tham gia hoạt động vui chơi, trải nghiệm theo phương châm “chơi mà học, học bằng chơi”. 
+2.10.15.3. Tiêu chí 5.3: Kết quả nuôi dưỡng và chăm sóc sức khoẻ 
+Có ít nhất 95% trẻ khỏe mạnh, chiều cao, cân nặng phát triển bình thường.
+2.10.15.4. Tiêu chí 5.4: Kết quả giáo dục
+a) Tỷ lệ trẻ 5 tuổi hoàn thành Chương trình giáo dục mầm non đạt ít nhất 97%; trường thuộc vùng khó khăn đạt ít nhất 95%;
+b) Trẻ khuyết tật học hòa nhập (nếu có) được đánh giá có tiến bộ đạt ít nhất 85%.
+TIÊU CHUẨN ĐÁNH GIÁ TRƯỜNG MẦM NON MỨC 4
+Trường mầm non đạt Mức 4 khi đảm bảo Tiêu chuẩn đánh giá trường mầm non Mức 3 và các quy định sau:
+- Nhà trường phát triển Chương trình giáo dục mầm non của Bộ Giáo dục và Đào tạo trên cơ sở tham khảo, áp dụng hiệu quả mô hình, phương pháp giáo dục tiên tiến của các nước trong khu vực và thế giới; chương trình giáo dục thúc đẩy được sự phát triển toàn diện của trẻ, phù hợp với độ tuổi và điều kiện của nhà trường, văn hóa địa phương.
+- Ít nhất 90% giáo viên đạt chuẩn nghề nghiệp giáo viên ở mức khá, trong đó ít nhất 40% giáo viên đạt chuẩn nghề nghiệp giáo viên ở mức tốt; đối với trường thuộc vùng khó khăn có ít nhất 80% đạt chuẩn nghề nghiệp giáo viên ở mức khá trở lên, trong đó có ít nhất 30% đạt chuẩn nghề nghiệp giáo viên ở mức tốt. Chất lượng đội ngũ giáo viên đáp ứng được phương hướng, chiến lược xây dựng và phát triển nhà trường. 
+- Sân vườn và khu vực cho trẻ chơi có diện tích đạt chuẩn hoặc trên chuẩn theo quy định tại Tiêu chuẩn Việt Nam về yêu cầu thiết kế trường mầm non; có các góc chơi, khu vực hoạt động trong và ngoài nhóm lớp tạo cơ hội cho trẻ được khám phá, trải nghiệm, giúp trẻ phát triển toàn diện.
+- 100% các công trình của nhà trường được xây dựng kiên cố. Có phòng tư vấn tâm lý. Có đầy đủ các trang thiết bị hiện đại phục vụ hoạt động nuôi dưỡng, chăm sóc và giáo dục trẻ. Có khu vực dành riêng để phát triển vận động cho trẻ, trong đó tổ chức được 02 (hai) môn thể thao phù hợp với trẻ lứa tuổi mầm non.
+- Trong 05 năm liên tiếp tính đến thời điểm đánh giá, nhà trường hoàn thành tất cả các mục tiêu theo phương hướng, chiến lược phát triển nhà trường.
+- Trong 05 năm liên tiếp tính đến thời điểm đánh giá, nhà trường có 02 năm đạt kết quả giáo dục và các hoạt động khác vượt trội so với các trường có điều kiện kinh tế - xã hội tương đồng, được các cấp có thẩm quyền và cộng đồng ghi nhận.
+
+## Kết quả xử lý
+
+* Bằng công nhận đạt chuẩn quốc gia (Mã: `KQ.G03.000340`)
+
+## Từ khóa
+
+Không có thông tin
+
+## Mô tả
+
+Điều kiện công nhận trường đạt chuẩn quốc gia Mức độ 1
+- Đối với trường thành lập mới phải có ít nhất 05 năm hoạt động; đối với trường được thành lập do sáp nhập, chia tách phải sau ít nhất 02 năm hoạt động.
+- Trường được đánh giá đạt Mức 2.
+Điều kiện công nhận trường đạt chuẩn quốc gia Mức độ 2
+- Đối với trường thành lập mới phải có ít nhất 05 năm hoạt động; đối với trường được thành lập do sáp nhập, chia tách phải sau ít nhất 02 năm hoạt động.
+- Trường được đánh giá đạt Mức 3 trở lên.
+Tiêu chuẩn đánh giá trường mầm non các Mức 1, 2, 3 và 4 cụ thể như sau: 
+TIÊU CHUẨN ĐÁNH GIÁ TRƯỜNG MẦM NON MỨC 1
+2.10.1. Tiêu chuẩn 1: Tổ chức và quản lý nhà trường 
+2.10.1.1. Tiêu chí 1.1: Phương hướng, chiến lược xây dựng và phát triển nhà trường
+a) Phù hợp với mục tiêu giáo dục mầm non được quy định tại Luật giáo dục, định hướng phát triển kinh tế - xã hội của địa phương theo từng giai đoạn và các nguồn lực của nhà trường; 
+b) Được xác định bằng văn bản và cấp có thẩm quyền phê duyệt;
+c) Được công bố công khai bằng hình thức niêm yết tại nhà trường hoặc đăng tải trên trang thông tin điện tử của nhà trường (nếu có) hoặc đăng tải trên các phương tiện thông tin đại chúng của địa phương, trang thông tin điện tử của Ủy ban nhân dân cấp xã.
+2.10.1.2. Tiêu chí 1.2: Hội đồng trường và các hội đồng khác
+a) Được thành lập theo quy định;
+b) Thực hiện chức năng, nhiệm vụ và quyền hạn theo quy định;
+c) Các hoạt động được định kỳ rà soát, đánh giá.
+2.10.1.3. Tiêu chí 1.3: Tổ chức Đảng Cộng sản Việt Nam, các đoàn thể và tổ chức khác trong nhà trường
+a) Các đoàn thể và tổ chức khác trong nhà trường có cơ cấu tổ chức theo quy định;
+b) Hoạt động theo quy định; 	
+c) Hằng năm, các hoạt động được rà soát, đánh giá.
+2.10.1.4. Tiêu chí 1.4: Hiệu trưởng, phó hiệu trưởng, tổ chuyên môn và tổ văn phòng
+a) Có hiệu trưởng, số lượng phó hiệu trưởng theo quy định; 
+b) Tổ chuyên môn và tổ văn phòng có cơ cấu tổ chức theo quy định;
+c) Tổ chuyên môn, tổ văn phòng có kế hoạch hoạt động và thực hiện các nhiệm vụ theo quy định.
+2.10.1.5. Tiêu chí 1.5: Tuyển sinh, tổ chức nhóm trẻ và lớp mẫu giáo
+a) Thực hiện tuyển sinh theo yêu cầu phổ cập giáo dục mầm non cho trẻ em 5 tuổi theo quy định;
+b) Các nhóm trẻ, lớp mẫu giáo được phân chia theo độ tuổi; trong trường hợp số lượng trẻ trong mỗi nhóm, lớp không đủ 50% so với số trẻ tối đa quy định tại Điều lệ trường mầm non thì được tổ chức thành nhóm trẻ ghép hoặc lớp mẫu giáo ghép; số lượng trẻ khuyết tật học hòa nhập trên mỗi nhóm trẻ, lớp mẫu giáo đảm bảo theo quy định;
+c) Các nhóm trẻ, lớp mẫu giáo được tổ chức học 02 buổi trên ngày.
+2.10.1.6. Tiêu chí 1.6: Quản lý hành chính, tài chính và tài sản
+a) Hệ thống hồ sơ của nhà trường được lưu trữ theo quy định; 
+b) Lập dự toán, thực hiện thu chi, quyết toán, thống kê, báo cáo tài chính và tài sản; công khai và định kỳ tự kiểm tra tài chính, tài sản theo quy định; quy chế chi tiêu nội bộ được bổ sung, cập nhật phù hợp với điều kiện thực tế và các quy định hiện hành;
+c) Quản lý, sử dụng tài chính, tài sản đúng mục đích và có hiệu quả để phục vụ các hoạt động giáo dục.
+2.10.1.7. Tiêu chí 1.7: Quản lý cán bộ, giáo viên và nhân viên
+a) Có kế hoạch bồi dưỡng chuyên môn, nghiệp vụ cho đội ngũ cán bộ quản lý, giáo viên và nhân viên;
+b) Phân công, sử dụng cán bộ quản lý, giáo viên, nhân viên rõ ràng, hợp lý, đảm bảo hiệu quả hoạt động của nhà trường;
+c) Cán bộ quản lý, giáo viên, nhân viên được đảm bảo các quyền theo quy định.
+2.10.1.8. Tiêu chí 1.8: Quản lý các hoạt động giáo dục
+a) Kế hoạch giáo dục phù hợp với quy định hiện hành, điều kiện thực tế địa phương và điều kiện của nhà trường;
+b) Kế hoạch giáo dục được thực hiện đầy đủ;
+c) Kế hoạch giáo dục được rà soát, đánh giá, điều chỉnh kịp thời.
+2.10.1.9. Tiêu chí 1.9: Thực hiện quy chế dân chủ cơ sở
+a) Cán bộ quản lý, giáo viên, nhân viên được tham gia thảo luận, đóng góp ý kiến khi xây dựng kế hoạch, nội quy, quy định, quy chế liên quan đến các hoạt động của nhà trường; 
+b) Các khiếu nại, tố cáo, kiến nghị, phản ánh (nếu có) thuộc thẩm quyền xử lý của nhà trường được giải quyết đúng pháp luật;
+c) Hằng năm, có báo cáo thực hiện quy chế dân chủ cơ sở.
+2.10.1.10. Tiêu chí 1.10: Đảm bảo an ninh trật tự, an toàn trường học
+a) Đảm bảo theo quy định về an ninh trật tự; an toàn vệ sinh thực phẩm; an toàn phòng, chống cháy, nổ; an toàn phòng, chống thảm họa, thiên tai; phòng, chống dịch bệnh; phòng, chống các tệ nạn xã hội và phòng, chống bạo lực trong nhà trường; an toàn phòng, chống tai nạn, thương tích;
+b) Có hộp thư góp ý, đường dây nóng và các hình thức khác để tiếp nhận, xử lý các thông tin phản ánh của người dân; đảm bảo an toàn cho cán bộ quản lý, giáo viên, nhân viên và trẻ trong nhà trường;
+c) Không có hiện tượng kỳ thị, hành vi bạo lực, vi phạm pháp luật về bình đẳng giới trong nhà trường.
+2.10.2. Tiêu chuẩn 2: Cán bộ quản lý, giáo viên, nhân viên
+2.10.2.1. Tiêu chí 2.1: Đối với hiệu trưởng, phó hiệu trưởng
+a) Đạt tiêu chuẩn theo quy định;
+b) Được đánh giá đạt chuẩn hiệu trưởng trở lên;
+  c) Được bồi dưỡng, tập huấn về chuyên môn, nghiệp vụ theo quy định.
+2.10.2.2. Tiêu chí 2.2: Đối với giáo viên
+a) Có đội ngũ giáo viên đủ về số lượng, hợp lý về cơ cấu đảm bảo thực hiện Chương trình giáo dục mầm non theo quy định; 
+b) Tỷ lệ giáo viên đạt chuẩn trình độ đào tạo đảm bảo quy định của Chính phủ và lộ trình nâng chuẩn trình độ đào tạo giáo viên theo kế hoạch của tỉnh, thành phố trực thuộc trung ương;
+c) Có ít nhất 95% giáo viên đạt chuẩn nghề nghiệp giáo viên ở mức đạt trở lên. 
+2.10.2.3. Tiêu chí 2.3: Đối với nhân viên
+a) Có nhân viên hoặc giáo viên kiêm nhiệm để đảm nhiệm các nhiệm vụ do hiệu trưởng phân công;
+b) Được phân công công việc phù hợp, hợp lý theo năng lực;
+c) Hoàn thành các nhiệm vụ được giao.
+2.10.3. Tiêu chuẩn 3: Cơ sở vật chất và thiết bị dạy học
+  2.10.3.1. Tiêu chí 3.1: Địa điểm, quy mô, diện tích đảm bảo theo quy định của Bộ Giáo dục và Đào tạo, bao gồm:
+  a) Vị trí đặt trường, điểm trường;
+  b) Quy mô;
+  c) Diện tích khu đất xây dựng trường, điểm trường, diện tích sàn xây dựng các hạng mục công trình.
+2.10.3.2. Tiêu chí 3.2: Các hạng mục công trình đảm bảo tiêu chuẩn cơ sở vật chất tối thiểu đối với trường mầm non theo quy định của Bộ Giáo dục và Đào tạo, bao gồm:
+  a) Khối phòng hành chính quản trị;
+  b) Khối phòng nuôi dưỡng, chăm sóc và giáo dục trẻ em;
+  c) Khối phòng tổ chức ăn (áp dụng cho các trường có tổ chức nấu ăn), khối phụ trợ.
+2.10.3.3. Tiêu chí 3.3: Hạ tầng kỹ thuật, các hạng mục công trình kiên cố và thiết bị dạy học đảm bảo tiêu chuẩn cơ sở vật chất tối thiểu đối với trường mầm non theo quy định của Bộ Giáo dục và Đào tạo, bao gồm:
+  a) Hệ thống cấp nước sạch; hệ thống cấp điện; hệ thống phòng cháy, chữa cháy; hạ tầng công nghệ thông tin, liên lạc và khu thu gom rác thải;
+  b) Tỷ lệ các hạng mục công trình kiên cố;
+  c) Thiết bị dạy học, đồ dùng, đồ chơi.
+2.10.4. Tiêu chuẩn 4: Quan hệ giữa nhà trường, gia đình và xã hội
+2.10.4.1. Tiêu chí 4.1: Ban đại diện cha mẹ trẻ
+a) Được thành lập và hoạt động theo quy định tại Điều lệ Ban đại diện cha mẹ học sinh;
+b) Có kế hoạch hoạt động theo năm học; 
+c) Tổ chức thực hiện kế hoạch hoạt động đúng tiến độ.
+2.10.4.2. Tiêu chí 4.2: Công tác tham mưu cấp ủy đảng, chính quyền và phối hợp với các tổ chức, cá nhân của nhà trường;
+a) Tham mưu cấp ủy đảng, chính quyền địa phương để thực hiện kế hoạch giáo dục của nhà trường;
+b) Tuyên truyền nâng cao nhận thức và trách nhiệm của cộng đồng về chủ trương, chính sách của Đảng, Nhà nước, ngành giáo dục, về mục tiêu, nội dung và kế hoạch giáo dục của nhà trường;
+c) Huy động và sử dụng các nguồn lực hợp pháp của các tổ chức, cá nhân đúng quy định. 
+2.10.5. Tiêu chuẩn 5: Hoạt động và kết quả nuôi dưỡng, chăm sóc, giáo dục trẻ
+2.10.5.1. Tiêu chí 5.1: Thực hiện Chương trình giáo dục mầm non 
+a) Tổ chức thực hiện Chương trình giáo dục mầm non theo kế hoạch;
+b) Nhà trường phát triển Chương trình giáo dục mầm non do Bộ Giáo dục và Đào tạo ban hành đáp ứng với mục tiêu, yêu cầu của Chương trình giáo dục mầm non, phù hợp điều kiện của địa phương và nhà trường;
+c) Định kỳ rà soát, đánh giá việc thực hiện Chương trình giáo dục mầm non và có điều chỉnh kịp thời, phù hợp.
+2.10.5.2. Tiêu chí 5.2: Tổ chức hoạt động nuôi dưỡng, chăm sóc và giáo dục trẻ 
+a) Thực hiện linh hoạt các phương pháp, đảm bảo phù hợp với mục tiêu, nội dung giáo dục, phù hợp với trẻ mầm non và điều kiện nhà trường;
+b) Tổ chức môi trường giáo dục theo hướng mở, an toàn; tạo điều kiện cho trẻ được vui chơi, trải nghiệm;
+c) Tổ chức các hoạt động giáo dục bằng nhiều hình thức đa dạng phù hợp với độ tuổi của trẻ và điều kiện thực tế.
+2.10.5.3. Tiêu chí 5.3: Kết quả nuôi dưỡng và chăm sóc sức khoẻ 
+a) Nhà trường phối hợp với cơ sở y tế địa phương tổ chức các hoạt động chăm sóc sức khỏe cho trẻ;
+b) 100% trẻ được kiểm tra sức khỏe, đo chiều cao, cân nặng, đánh giá tình trạng dinh dưỡng bằng biểu đồ tăng trưởng theo quy định;
+c) Ít nhất 80% trẻ suy dinh dưỡng, thừa cân, béo phì được can thiệp bằng những biện pháp phù hợp, tình trạng dinh dưỡng của trẻ cải thiện so với đầu năm học.
+2.10.5.4. Tiêu chí 5.4: Kết quả giáo dục
+a) Tỷ lệ chuyên cần đạt ít nhất 90% đối với trẻ 5 tuổi, 85% đối với trẻ dưới 5 tuổi; trường thuộc vùng khó khăn đạt ít nhất 85% đối với trẻ 5 tuổi, 80% đối với trẻ dưới 5 tuổi;
+b) Tỷ lệ trẻ 5 tuổi hoàn thành Chương trình giáo dục mầm non đạt ít nhất 85%; trường thuộc vùng khó khăn đạt ít nhất 80%;
+c) Trẻ khuyết tật học hòa nhập được theo dõi thông qua kế hoạch giáo dục cá nhân. Trẻ khuyết tật học hòa nhập, trẻ có hoàn cảnh khó khăn được nhà trường quan tâm và thực hiện đầy đủ các chế độ, chính sách theo quy định.
+TIÊU CHUẨN ĐÁNH GIÁ TRƯỜNG MẦM NON MỨC 2
+Trường mầm non đạt Mức 2 khi đảm bảo Tiêu chuẩn đánh giá trường mầm non Mức 1 và các tiêu chuẩn sau:
+2.10.6. Tiêu chuẩn 1: Tổ chức và quản lý nhà trường
+2.10.6.1. Tiêu chí 1.1: Phương hướng, chiến lược xây dựng và phát triển nhà trường
+Nhà trường có các giải pháp giám sát việc thực hiện phương hướng, chiến lược xây dựng và phát triển.
+2.10.6.2. Tiêu chí 1.2: Hội đồng trường và các hội đồng khác
+Hoạt động có hiệu quả, góp phần nâng cao chất lượng nuôi dưỡng, chăm sóc và giáo dục trẻ của nhà trường. 
+2.10.6.3. Tiêu chí 1.3: Tổ chức Đảng Cộng sản Việt Nam, các đoàn thể và tổ chức khác trong nhà trường
+a) Tổ chức Đảng Cộng sản Việt Nam có cơ cấu tổ chức và hoạt động theo quy định; trong 05 năm liên tiếp tính đến thời điểm đánh giá, có ít nhất 01 năm hoàn thành tốt nhiệm vụ, các năm còn lại hoàn thành nhiệm vụ trở lên;
+b) Các đoàn thể, tổ chức khác có đóng góp tích cực cho các hoạt động của nhà trường. 
+2.10.6.4. Tiêu chí 1.4: Hiệu trưởng, phó hiệu trưởng, tổ chuyên môn và tổ văn phòng
+a) Hằng năm, tổ chuyên môn đề xuất và thực hiện được ít nhất 01 (một) chuyên đề chuyên môn có tác dụng nâng cao chất lượng và hiệu quả giáo dục;
+b) Hoạt động của tổ chuyên môn và tổ văn phòng được định kỳ rà soát, đánh giá, điều chỉnh.
+2.10.6.5. Tiêu chí 1.5: Tổ chức nhóm trẻ và lớp mẫu giáo
+Số trẻ trong các nhóm trẻ và lớp mẫu giáo không vượt quá quy định và được phân chia theo độ tuổi.
+2.10.6.6. Tiêu chí 1.6: Quản lý hành chính, tài chính và tài sản
+a) Ứng dụng công nghệ thông tin hiệu quả trong công tác quản lý hành chính, tài chính và tài sản của nhà trường;
+b) Trong 05 năm liên tiếp tính đến thời điểm đánh giá, không có vi phạm liên quan đến việc quản lý hành chính, tài chính và tài sản theo kết luận của thanh tra, kiểm toán. 
+2.10.6.7. Tiêu chí 1.7: Quản lý cán bộ, giáo viên và nhân viên
+ Có biện pháp để phát huy được năng lực của cán bộ quản lý, giáo viên, nhân viên trong việc xây dựng, phát triển và nâng cao chất lượng giáo dục nhà trường.
+2.10.6.8. Tiêu chí 1.8: Quản lý các hoạt động giáo dục
+Các biện pháp chỉ đạo, kiểm tra, đánh giá của nhà trường đối với các hoạt động nuôi dưỡng, chăm sóc và giáo dục trẻ, được cơ quan quản lý đánh giá đạt hiệu quả.
+2.10.6.9. Tiêu chí 1.9. Thực hiện quy chế dân chủ cơ sở
+Các biện pháp và cơ chế giám sát việc thực hiện quy chế dân chủ trong nhà trường đảm bảo công khai, minh bạch, hiệu quả. 
+2.10.6.10. Tiêu chí 1.10: Đảm bảo an ninh trật tự, an toàn trường học
+a) Cán bộ quản lý, giáo viên, nhân viên và trẻ được phổ biến, hướng dẫn, thực hiện phương án đảm bảo an ninh trật tự; vệ sinh an toàn thực phẩm; an toàn phòng chống tai nạn, thương tích; an toàn phòng, chống cháy nổ; an toàn phòng, chống thảm họa thiên tai; phòng, chống dịch bệnh; phòng, chống các tệ nạn xã hội và phòng, chống bạo lực trong nhà trường;
+b) Nhà trường thường xuyên kiểm tra, thu thập, đánh giá, xử lý các thông tin, biểu hiện liên quan đến bạo lực học đường, an ninh trật tự và có biện pháp ngăn chặn kịp thời, hiệu quả.
+2.10.7. Tiêu chuẩn 2: Cán bộ quản lý, giáo viên, nhân viên
+2.10.7.1. Tiêu chí 2.1: Đối với hiệu trưởng, phó hiệu trưởng
+a) Trong 05 năm liên tiếp tính đến thời điểm đánh giá, có ít nhất 02 năm được đánh giá đạt chuẩn hiệu trưởng ở mức khá trở lên;
+b) Được bồi dưỡng, tập huấn về lý luận chính trị theo quy định; được giáo viên, nhân viên trong trường tín nhiệm.
+2.10.7.2. Tiêu chí 2.2: Đối với giáo viên
+b) Trong 05 năm liên tiếp tính đến thời điểm đánh giá, có 100% giáo viên đạt chuẩn nghề nghiệp giáo viên ở mức đạt trở lên, trong đó có ít nhất 60% đạt chuẩn nghề nghiệp giáo viên ở mức khá trở lên và ít nhất 50% ở mức khá trở lên đối với trường thuộc vùng khó khăn; 
+c) Trong 05 năm liên tiếp tính đến thời điểm đánh giá, không có giáo viên bị kỷ luật từ hình thức cảnh cáo trở lên.
+2.10.7.3. Tiêu chí 2.3: Đối với nhân viên
+a) Số lượng và cơ cấu nhân viên đảm bảo theo quy định; 
+b) Trong 05 năm liên tiếp tính đến thời điểm đánh giá, không có nhân viên bị kỷ luật từ hình thức cảnh cáo trở lên. 
+2.10.8. Tiêu chuẩn 3: Cơ sở vật chất và thiết bị dạy học
+  2.10.8.1. Tiêu chí 3.2: Các hạng mục công trình đảm bảo tiêu chuẩn cơ sở vật chất mức độ 1 đối với trường mầm non theo quy định của Bộ Giáo dục và Đào tạo, bao gồm: 
+  a) Khối phòng hành chính quản trị;
+ b) Khối phòng nuôi dưỡng, chăm sóc và giáo dục trẻ em;
+  c) Khối phụ trợ.
+2.10.8.2. Tiêu chí 3.3: Tỷ lệ các hạng mục công trình kiên cố, mật độ sử dụng đất đảm bảo tiêu chuẩn cơ sở vật chất mức độ 1 đối với trường mầm non theo quy định của Bộ Giáo dục và Đào tạo.
+2.10.9. Tiêu chuẩn 4: Quan hệ giữa nhà trường, gia đình và xã hội
+2.10.9.1. Tiêu chí 4.1: Ban đại diện cha mẹ trẻ
+Phối hợp có hiệu quả với nhà trường trong việc tổ chức thực hiện nhiệm vụ năm học và các hoạt động giáo dục; hướng dẫn, tuyên truyền, phổ biến pháp luật, chủ trương chính sách về giáo dục đối với cha mẹ trẻ.
+2.10.9.2. Tiêu chí 4.2: Công tác tham mưu cấp ủy đảng, chính quyền và phối hợp với các tổ chức, cá nhân của nhà trường
+a) Tham mưu cấp ủy đảng, chính quyền để tạo điều kiện cho nhà trường thực hiện phương hướng, chiến lược xây dựng và phát triển;
+b) Phối hợp với các tổ chức, đoàn thể, cá nhân để tổ chức các hoạt động lễ hội, sự kiện theo kế hoạch, phù hợp với truyền thống của địa phương.
+2.10.10. Tiêu chuẩn 5: Hoạt động và kết quả nuôi dưỡng, chăm sóc, giáo dục trẻ
+2.10.10.1. Tiêu chí 5.1: Thực hiện Chương trình giáo dục mầm non 
+  a) Tổ chức thực hiện Chương trình giáo dục mầm non đảm bảo linh hoạt, hiệu quả, phù hợp với điều kiện cụ thể của địa phương và trường mầm non;
+  b) Nhà trường phát triển Chương trình giáo dục mầm non do Bộ Giáo dục và Đào tạo ban hành phù hợp với văn hóa, điều kiện của địa phương, trường mầm non và khả năng, nhu cầu của trẻ.
+2.10.10.2. Tiêu chí 5.2: Tổ chức hoạt động nuôi dưỡng, chăm sóc và giáo dục trẻ 
+  Tổ chức các hoạt động nuôi dưỡng, chăm sóc và giáo dục trẻ, đảm bảo thực hiện mục tiêu giáo dục, nội dung giáo dục, phương pháp giáo dục mầm non, phù hợp với sự phát triển của trẻ và điều kiện thực tế.
+2.10.10.3. Tiêu chí 5.3: Kết quả nuôi dưỡng và chăm sóc sức khoẻ 
+a) Nhà trường tổ chức tư vấn cho cha mẹ trẻ hoặc người giám hộ về các vấn đề liên quan đến sức khỏe, phát triển thể chất và tinh thần của trẻ;
+b) Chế độ dinh dưỡng của trẻ tại trường được đảm bảo cân đối, đáp ứng nhu cầu dinh dưỡng, đảm bảo theo quy định;
+ c) 100% trẻ suy dinh dưỡng, thừa cân, béo phì được can thiệp bằng những biện pháp phù hợp, tình trạng dinh dưỡng của trẻ cải thiện so với đầu năm học.
+2.10.10.4. Tiêu chí 5.4: Kết quả giáo dục
+a) Tỷ lệ chuyên cần đạt ít nhất 95% đối với trẻ 5 tuổi, 90% đối với trẻ dưới 5 tuổi; trường thuộc vùng khó khăn đạt ít nhất 90% đối với trẻ 5 tuổi, 85% đối với trẻ dưới 5 tuổi;
+b) Tỷ lệ trẻ 5 tuổi hoàn thành Chương trình giáo dục mầm non đạt ít nhất 95%; trường thuộc vùng khó khăn đạt ít nhất 90%;
+c) Trẻ khuyết tật học hòa nhập (nếu có) được đánh giá có tiến bộ đạt ít nhất 80%.
+TIÊU CHUẨN ĐÁNH GIÁ TRƯỜNG MẦM NON MỨC 3
+Trường mầm non đạt Mức 3 khi đảm bảo Tiêu chuẩn đánh giá trường mầm non Mức 2 và các tiêu chuẩn sau:
+2.10.11. Tiêu chuẩn 1: Tổ chức và quản lý nhà trường
+2.10.11.1. Tiêu chí 1.1: Phương hướng, chiến lược xây dựng và phát triển nhà trường
+Định kỳ rà soát, bổ sung, điều chỉnh phương hướng, chiến lược xây dựng và phát triển. Tổ chức xây dựng phương hướng, chiến lược xây dựng và phát triển có sự tham gia của các thành viên trong Hội đồng trường (Hội đồng quản trị đối với trường tư thục), cán bộ quản lý, giáo viên, nhân viên, cha mẹ trẻ và cộng đồng.
+2.10.11.2. Tiêu chí 1.3: Tổ chức Đảng Cộng sản Việt Nam, các đoàn thể và tổ chức khác trong nhà trường
+a) Trong 05 năm liên tiếp tính đến thời điểm đánh giá, tổ chức Đảng Cộng sản Việt Nam có ít nhất 02 năm hoàn thành tốt nhiệm vụ, các năm còn lại hoàn thành nhiệm vụ trở lên;
+b) Các đoàn thể, tổ chức khác đóng góp hiệu quả cho các hoạt động của nhà trường và cộng đồng.
+2.10.11.3. Tiêu chí 1.4: Hiệu trưởng, phó hiệu trưởng, tổ chuyên môn và tổ văn phòng
+a) Hoạt động của tổ chuyên môn và tổ văn phòng có đóng góp hiệu quả trong việc nâng cao chất lượng các hoạt động của nhà trường;
+b) Tổ chuyên môn thực hiện hiệu quả các chuyên đề chuyên môn góp phần nâng cao chất lượng nuôi dưỡng, chăm sóc và giáo dục trẻ.
+2.10.11.4. Tiêu chí 1.6: Quản lý hành chính, tài chính và tài sản
+Có kế hoạch ngắn hạn, trung hạn, dài hạn để tạo ra các nguồn tài chính hợp pháp phù hợp với điều kiện nhà trường, thực tế địa phương.
+2.10.12. Tiêu chuẩn 2: Cán bộ quản lý, giáo viên, nhân viên
+2.10.12.1. Tiêu chí 2.1: Đối với hiệu trưởng, phó hiệu trưởng
+Trong 05 năm liên tiếp tính đến thời điểm đánh giá, đạt chuẩn hiệu trưởng ở mức khá trở lên, trong đó có ít nhất 01 năm đạt chuẩn hiệu trưởng ở mức tốt.
+2.10.12.2. Tiêu chí 2.2: Đối với giáo viên
+	b) Trong 05 năm liên tiếp tính đến thời điểm đánh giá, có ít nhất 80% giáo viên đạt chuẩn nghề nghiệp giáo viên ở mức khá trở lên, trong đó có ít nhất 30% đạt chuẩn nghề nghiệp giáo viên ở mức tốt; đối với trường thuộc vùng khó khăn có ít nhất 70% đạt chuẩn nghề nghiệp giáo viên ở mức khá trở lên, trong đó có ít nhất 20% đạt chuẩn nghề nghiệp giáo viên ở mức tốt.
+2.10.12.3. Tiêu chí 2.3: Đối với nhân viên
+a) Có trình độ đào tạo đáp ứng được vị trí việc làm;
+b) Hằng năm, được tham gia đầy đủ các lớp tập huấn, bồi dưỡng chuyên môn, nghiệp vụ theo vị trí việc làm.
+2.10.13. Tiêu chuẩn 3: Cơ sở vật chất và thiết bị dạy học
+2.10.13.1. Tiêu chí 3.2: Khối phòng nuôi dưỡng, chăm sóc và giáo dục trẻ đảm bảo quy định tiêu chuẩn cơ sở vật chất mức độ 2 đối với trường mầm non theo quy định của Bộ Giáo dục và Đào tạo.
+2.10.13.2. Tiêu chí 3.3: Tỷ lệ các hạng mục công trình kiên cố đảm bảo quy định tiêu chuẩn cơ sở vật chất mức độ 2 đối với trường mầm non theo quy định của Bộ Giáo dục và Đào tạo.
+2.10.14. Tiêu chuẩn 4. Quan hệ giữa nhà trường, gia đình và xã hội
+2.10.14.1. Tiêu chí 4.1: Ban đại diện cha mẹ trẻ
+Phối hợp có hiệu quả với nhà trường, xã hội trong việc thực hiện các nhiệm vụ theo quy định của Điều lệ Ban đại diện cha mẹ học sinh.
+2.10.14.2. Tiêu chí 4.2: Công tác tham mưu cấp ủy đảng, chính quyền và phối hợp với các tổ chức, cá nhân của nhà trường
+Tham mưu cấp ủy Đảng, chính quyền và phối hợp có hiệu quả với các tổ chức, cá nhân xây dựng nhà trường trở thành trung tâm văn hóa, giáo dục của địa phương.
+2.10.15. Tiêu chuẩn 5: Hoạt động và kết quả nuôi dưỡng, chăm sóc, giáo dục trẻ
+2.10.15.1. Tiêu chí 5.1: Thực hiện Chương trình giáo dục mầm non 
+a) Nhà trường phát triển Chương trình giáo dục mầm non do Bộ Giáo dục và Đào tạo ban hành trên cơ sở tham khảo chương trình giáo dục của các nước trong khu vực và thế giới đúng quy định, hiệu quả, phù hợp với thực tiễn của trường, địa phương; 
+b) Hằng năm, tổng kết, đánh giá việc thực hiện chương trình giáo dục của nhà trường, từ đó điều chỉnh, cải tiến nội dung, phương pháp giáo dục để nâng cao chất lượng nuôi dưỡng, chăm sóc và giáo dục trẻ.
+2.10.15.2. Tiêu chí 5.2: Tổ chức hoạt động nuôi dưỡng, chăm sóc và giáo dục trẻ 
+Tổ chức môi trường giáo dục trong và ngoài lớp học phù hợp với nhu cầu, khả năng của trẻ, kích thích hứng thú, tạo cơ hội cho trẻ tham gia hoạt động vui chơi, trải nghiệm theo phương châm “chơi mà học, học bằng chơi”. 
+2.10.15.3. Tiêu chí 5.3: Kết quả nuôi dưỡng và chăm sóc sức khoẻ 
+Có ít nhất 95% trẻ khỏe mạnh, chiều cao, cân nặng phát triển bình thường.
+2.10.15.4. Tiêu chí 5.4: Kết quả giáo dục
+a) Tỷ lệ trẻ 5 tuổi hoàn thành Chương trình giáo dục mầm non đạt ít nhất 97%; trường thuộc vùng khó khăn đạt ít nhất 95%;
+b) Trẻ khuyết tật học hòa nhập (nếu có) được đánh giá có tiến bộ đạt ít nhất 85%.
+TIÊU CHUẨN ĐÁNH GIÁ TRƯỜNG MẦM NON MỨC 4
+Trường mầm non đạt Mức 4 khi đảm bảo Tiêu chuẩn đánh giá trường mầm non Mức 3 và các quy định sau:
+- Nhà trường phát triển Chương trình giáo dục mầm non của Bộ Giáo dục và Đào tạo trên cơ sở tham khảo, áp dụng hiệu quả mô hình, phương pháp giáo dục tiên tiến của các nước trong khu vực và thế giới; chương trình giáo dục thúc đẩy được sự phát triển toàn diện của trẻ, phù hợp với độ tuổi và điều kiện của nhà trường, văn hóa địa phương.
+- Ít nhất 90% giáo viên đạt chuẩn nghề nghiệp giáo viên ở mức khá, trong đó ít nhất 40% giáo viên đạt chuẩn nghề nghiệp giáo viên ở mức tốt; đối với trường thuộc vùng khó khăn có ít nhất 80% đạt chuẩn nghề nghiệp giáo viên ở mức khá trở lên, trong đó có ít nhất 30% đạt chuẩn nghề nghiệp giáo viên ở mức tốt. Chất lượng đội ngũ giáo viên đáp ứng được phương hướng, chiến lược xây dựng và phát triển nhà trường. 
+- Sân vườn và khu vực cho trẻ chơi có diện tích đạt chuẩn hoặc trên chuẩn theo quy định tại Tiêu chuẩn Việt Nam về yêu cầu thiết kế trường mầm non; có các góc chơi, khu vực hoạt động trong và ngoài nhóm lớp tạo cơ hội cho trẻ được khám phá, trải nghiệm, giúp trẻ phát triển toàn diện.
+- 100% các công trình của nhà trường được xây dựng kiên cố. Có phòng tư vấn tâm lý. Có đầy đủ các trang thiết bị hiện đại phục vụ hoạt động nuôi dưỡng, chăm sóc và giáo dục trẻ. Có khu vực dành riêng để phát triển vận động cho trẻ, trong đó tổ chức được 02 (hai) môn thể thao phù hợp với trẻ lứa tuổi mầm non.
+- Trong 05 năm liên tiếp tính đến thời điểm đánh giá, nhà trường hoàn thành tất cả các mục tiêu theo phương hướng, chiến lược phát triển nhà trường.
+- Trong 05 năm liên tiếp tính đến thời điểm đánh giá, nhà trường có 02 năm đạt kết quả giáo dục và các hoạt động khác vượt trội so với các trường có điều kiện kinh tế - xã hội tương đồng, được các cấp có thẩm quyền và cộng đồng ghi nhận.

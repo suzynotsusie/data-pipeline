@@ -1,0 +1,113 @@
+# Thủ tục sửa đổi văn bằng bảo hộ
+
+## Thông tin chung
+
+* **Mã thủ tục:** 1.015010
+* **Số quyết định:** 2735/QĐ-BKHCN
+* **Cấp thực hiện:** Cấp bộ/ngành
+* **Loại thủ tục:** TTHC được luật giao quy định chi tiết
+* **Lĩnh vực:** Sở hữu trí tuệ
+* **Đối tượng thực hiện:** Đảng viên, Tổ chức (không bao gồm doanh nghiệp, HTX), Người Việt Nam định cư ở nước ngoài, Doanh nghiệp Việt Nam, Doanh nghiệp có vốn đầu tư nước ngoài, Công dân Việt Nam, Doanh nghiệp, Người nước ngoài, Tổ chức Đảng, Tổ chức nước ngoài, Hợp tác xã, Cán bộ, công chức, viên chức
+* **Cơ quan có thẩm quyền:** Bộ Khoa học và Công nghệ
+* **Địa chỉ tiếp nhận HS:** Không có thông tin
+* **Cơ quan được ủy quyền:** Không có thông tin
+* **Cơ quan phối hợp:** Không có thông tin
+
+## Thủ tục hành chính liên quan
+
+Không có thông tin
+
+## Trình tự thực hiện
+
+1. - Bước 1: Tiếp nhận hồ sơ 
+   Tổ chức, cá nhân nộp 01 bộ hồ sơ yêu cầu sửa đổi thông tin trên văn bằng bảo hộ, thay đổi thông tin trong Sổ đăng ký quốc gia về sở hữu công nghiệp đến Bộ phận Một cửa của Bộ Khoa học và Công nghệ.
+   - Bước 2: Xử lý hồ sơ 
+   + Trường hợp hồ sơ hợp lệ, trong thời hạn 02 tháng kể từ ngày nhận hồ sơ hoặc kể từ ngày kết thúc thời hạn thẩm định lại quy định tại điểm d khoản 5 Điều 12 Thông tư số 20/2026/TT-BKHCN, Cục Sở hữu trí tuệ ra quyết định sửa đổi văn bằng bảo hộ,  hoặc ra quyết định ghi nhận thay đổi tổ chức dịch vụ đại diện sở hữu công nghiệp trong Sổ đăng ký quốc gia về sở hữu công nghiệp, ghi nhận vào văn bằng bảo hộ, đăng bạ và công bố trên Công báo sở hữu công nghiệp trong thời hạn 30 ngày kể từ ngày ra quyết định. Trường hợp sửa đổi văn bằng bảo hộ do chuyển nhượng một phần danh mục hàng hóa, dịch vụ mang nhãn hiệu được bảo hộ thì cấp Giấy chứng nhận đăng ký nhãn hiệu cho bên được chuyển nhượng và xác định giới hạn danh mục hàng hóa, dịch vụ trong văn bằng bảo hộ gốc đối với phần chuyển nhượng đó
+   + Trường hợp hồ sơ yêu cầu không hợp lệ, Cục Sở hữu trí tuệ ra thông báo dự định từ chối yêu cầu sửa đổi, nêu rõ lý do và ấn định thời hạn 02 tháng kể từ ngày ra thông báo để người nộp đơn sửa chữa thiếu sót hoặc có ý kiến phản đối. 
+   + Nếu kết thúc thời hạn đã ấn định nêu trên mà người yêu cầu không sửa chữa thiếu sót hoặc sửa chữa không đạt yêu cầu, không có ý kiến phản đối hoặc ý kiến phản đối không xác đáng, trong thời hạn 01 tháng kể từ ngày kết thúc thời hạn nêu trên, Cục Sở hữu trí tuệ ra quyết định từ chối yêu cầu sửa đổi văn bằng bảo hộ, quyết định từ chối ghi nhận thay đổi tổ chức dịch vụ đại diện sở hữu công nghiệp.
+   + Đối với các yêu cầu sửa đổi quy định tại điểm c khoản 1, khoản 2 Điều 12 Thông tư số 20/2026/TT-BKHCN, thủ tục thẩm định lại đơn tương ứng được tiến hành theo quy định tại Điều 114 của Luật Sở hữu trí tuệ.
+   + Trường hợp tại thời điểm nộp hồ sơ mà văn bằng bảo hộ đã bị chấm dứt hoặc hết hiệu lực bảo hộ theo quy định, Cục Sở hữu trí tuệ ra quyết định từ chối yêu cầu sửa đổi văn bằng bảo hộ trừ trường hợp nội dung yêu cầu sửa đổi nhằm ghi nhận thông tin chính xác trước thời điểm văn bằng bảo hộ bị chấm dứt hiệu lực. Trường hợp tại thời điểm nộp hồ sơ hoặc trong quá trình xử lý hồ sơ mà văn bằng bảo hộ đã bị hủy bỏ hiệu lực, Cục Sở hữu trí tuệ ra quyết định từ chối yêu cầu sửa đổi văn bằng bảo hộ.
+   + Cục Sở hữu trí tuệ tạm dừng xử lý yêu cầu sửa đổi văn bằng bảo hộ trong trường hợp nhận được văn bản của cơ quan có thẩm quyền đề nghị tạm dừng xử lý để thực hiện các quyết định, thủ tục liên quan theo quy định pháp luật hoặc văn bản về việc đối tượng quyền sở hữu công nghiệp theo văn bằng bảo hộ đang được sử dụng làm tài sản bảo đảm hoặc bản sao thông báo thụ lý vụ án của Tòa án hoặc bản sao thông báo của Trung tâm trọng tài (hoặc văn bản tương đương) về tranh chấp liên quan đến hợp đồng chuyển nhượng quyền sở hữu công nghiệp. Trong thời hạn 15 ngày làm việc kể từ ngày nhận được văn bản quy định tại điểm này, Cục Sở hữu trí tuệ ra thông báo về tạm dừng xử lý yêu cầu sửa đổi văn bằng bảo hộ và gửi cho các bên liên quan. Yêu cầu sửa đổi sẽ được tiếp tục xử lý khi Cục Sở hữu trí tuệ nhận được các tài liệu chứng minh quyết định, thủ tục liên quan đã chấm dứt.
+   + Trường hợp người nộp đơn có văn bản yêu cầu rút hồ sơ sửa đổi văn bằng bảo hộ, trong thời hạn 01 tháng kể từ ngày nhận được văn bản, Cục Sở hữu trí tuệ xử lý yêu cầu rút hồ sơ như sau:
+   Trường hợp yêu cầu rút hồ sơ sửa đổi hợp lệ, Cục Sở hữu trí tuệ ra thông báo chấp nhận rút yêu cầu và chấm dứt việc xử lý yêu cầu sửa đổi văn bằng bảo hộ. Yêu cầu sửa đổi văn bằng bảo hộ đã rút không thể được khôi phục.
+   Trường hợp yêu cầu rút hồ sơ sửa đổi không hợp lệ, Cục Sở hữu trí tuệ ra thông báo dự định từ chối rút yêu cầu và ấn định thời hạn 15 ngày làm việc kể từ ngày ra thông báo để người nộp đơn khắc phục thiếu sót. Nếu kết thúc thời hạn đã ấn định mà người nộp đơn không khắc phục thiếu sót hoặc khắc phục thiếu sót nhưng không đạt yêu cầu, Cục Sở hữu trí tuệ thông báo từ chối rút yêu cầu.
+   Trường hợp một trong các bên ký kết hợp đồng chuyển nhượng quyền sở hữu công nghiệp muốn rút hồ sơ sửa đổi văn bằng bảo hộ, yêu cầu rút hồ sơ sửa đổi theo quy định tại khoản này chỉ được Cục Sở hữu trí tuệ xử lý nếu có ý kiến đồng thuận của bên còn lại về việc rút hồ sơ, trừ trường hợp rút hồ sơ do không thể khắc phục được các thiếu sót theo yêu cầu của Cục Sở hữu trí tuệ
+   + Trường hợp phát hiện có thiếu sót trong văn bằng bảo hộ, Cục Sở hữu trí tuệ tự mình hoặc theo yêu cầu của người phát hiện ra thiếu sót thực hiện việc sửa đổi thông tin thiếu sót và phát hành lại văn bằng bảo hộ hoặc ghi nhận nội dung sửa đổi vào văn bằng bảo hộ gốc. 
+   Đối với văn bằng bảo hộ dạng giấy, chủ văn bằng bảo hộ cần nộp bản gốc văn bằng bảo hộ có thiếu sót cho Cục Sở hữu trí tuệ để thu hồi và phát hành lại văn bằng bảo hộ với thông tin đã được sửa đổi hoặc ghi nhận nội dung sửa đổi vào văn bằng bảo hộ gốc. Trong thời hạn 02 tháng kể từ ngày Cục Sở hữu trí tuệ nhận được văn bằng bảo hộ gốc, Cục Sở hữu trí tuệ thực hiện sửa đổi thông tin thiếu sót và gửi kết quả cho chủ văn bằng bảo hộ. Chủ văn bằng bảo hộ phải nộp phí thẩm định yêu cầu sửa đổi văn bằng bảo hộ theo quy định tại khoản 1 Điều 97 của Luật Sở hữu trí tuệ, phí đăng bạ và phí công bố thông tin sửa đổi nếu thiếu sót do lỗi của chủ văn bằng bảo hộ, trừ trường hợp thiếu sót đó do lỗi của Cục Sở hữu trí tuệ.
+
+## Cách thức thực hiện
+
+| Hình thức nộp | Thời gian giải quyết | Phí, lệ phí | Mô tả |
+| --- | --- | --- | --- |
+| Trực tiếp | 2 ngày | Không có thông tin | 02 tháng kể từ ngày tiếp nhận hồ sơ, không bao gồm thời gian dành cho người nộp hồ sơ sửa chữa thiếu sót và thời gian tiến hành thẩm định lại đối với các trường hợp sửa đổi bản mô tả tính chất, đặc thù của sản phẩm mang chỉ dẫn địa lý, khu vực địa lý, quy chế sử dụng nhãn hiệu tập thể, nhãn hiệu chứng nhận; thu hẹp phạm vi bảo hộ, chuyển nhượng nhãn hiệu tập thể, nhãn hiệu chứng nhận; |
+| Trực tuyến | 2 ngày | Không có thông tin | 02 tháng kể từ ngày tiếp nhận hồ sơ, không bao gồm thời gian dành cho người nộp hồ sơ sửa chữa thiếu sót và thời gian tiến hành thẩm định lại đối với các trường hợp sửa đổi bản mô tả tính chất, đặc thù của sản phẩm mang chỉ dẫn địa lý, khu vực địa lý, quy chế sử dụng nhãn hiệu tập thể, nhãn hiệu chứng nhận; thu hẹp phạm vi bảo hộ, chuyển nhượng nhãn hiệu tập thể, nhãn hiệu chứng nhận; |
+| Dịch vụ bưu chính | 2 ngày | Không có thông tin | 02 tháng kể từ ngày tiếp nhận hồ sơ, không bao gồm thời gian dành cho người nộp hồ sơ sửa chữa thiếu sót và thời gian tiến hành thẩm định lại đối với các trường hợp sửa đổi bản mô tả tính chất, đặc thù của sản phẩm mang chỉ dẫn địa lý, khu vực địa lý, quy chế sử dụng nhãn hiệu tập thể, nhãn hiệu chứng nhận; thu hẹp phạm vi bảo hộ, chuyển nhượng nhãn hiệu tập thể, nhãn hiệu chứng nhận; |
+
+## Thành phần hồ sơ
+
+| Tên giấy tờ | Bản chính | Bản sao | Tệp đính kèm |
+| --- | --- | --- | --- |
+| Tờ khai sửa đổi văn bằng bảo hộ | 1 | 0 | [Mẫu số 02.docx](file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/1_015010/M%E1%BA%ABu%20s%E1%BB%91%2002.docx) |
+| Bản gốc Văn bằng bảo hộ trong trường hợp văn bằng bảo hộ  được cấp dưới dạng giấy; | 1 | 0 | Không có |
+| Tài liệu xác nhận việc thay đổi tên, địa chỉ (bản gốc hoặc bản sao có chứng thực); quyết định đổi tên, địa chỉ; giấy chứng nhận đăng ký doanh nghiệp có ghi nhận việc thay đổi tên, địa chỉ; các tài liệu pháp lý khác chứng minh việc thay đổi tên, địa chỉ (bản gốc hoặc bản sao có chứng thực) nếu nội dung yêu cầu sửa đổi là tên, địa chỉ trừ trường hợp Cục Sở hữu trí tuệ có thể chủ động khai thác, sử dụng thông tin đã có trong các cơ sở dữ liệu được cơ quan chủ quản cơ sở dữ liệu công bố. Trường hợp không thể khai thác được thông tin hoặc thông tin khai thác được không đầy đủ, chính xác thì Cục Sở hữu trí tuệ gửi văn bản yêu cầu cá nhân, tổ chức bổ sung hồ sơ, trong đó nêu rõ lý do và ấn định thời hạn 02 tháng để cá nhân, tổ chức bổ sung hồ sơ. Thời gian yêu cầu và bổ sung hồ sơ không tính vào thời hạn giải quyết thủ tục hành chính; | 1 | 0 | Không có |
+| Bộ ảnh chụp hoặc bản vẽ kiểu dáng công nghiệp đã sửa đổi nếu yêu cầu sửa đổi văn bằng bảo hộ kiểu dáng công nghiệp (nộp 05 bộ nếu nộp hồ sơ dưới dạng giấy); bản mô tả chỉ dẫn địa lý, bản đồ khu vực địa lý tương ứng với chỉ dẫn địa lý đã sửa đổi nếu yêu cầu sửa đổi văn bằng bảo hộ chỉ dẫn địa lý (nộp 02 bản nếu nộp hồ sơ dưới dạng giấy); bản quy chế sử dụng nhãn hiệu tập thể, bản quy chế sử dụng nhãn hiệu chứng nhận đã sửa đổi, nếu yêu cầu sửa đổi văn bằng bảo hộ nhãn hiệu tập thể, nhãn hiệu chứng nhận (nộp 02 bản nếu nộp hồ sơ dưới dạng giấy); mẫu nhãn hiệu, nếu yêu cầu sửa đổi mẫu nhãn hiệu theo quy định tại điểm c khoản 2 Điều 12 Thông tư số 20/2026/TT-BKHCN (nộp 05 mẫu nếu nộp hồ sơ dưới dạng giấy) | 1 | 0 | Không có |
+| Tài liệu thuyết minh chi tiết nội dung sửa đổi; | 1 | 0 | Không có |
+| Tài liệu chứng minh việc chuyển dịch quyền sở hữu theo quy định tại điểm b khoản 1 Điều 12 Thông tư số 20/2026/TT-BKHCN (bản gốc hoặc bản sao có chứng thực), nếu yêu cầu thay đổi chủ văn bằng bảo hộ | 1 | 0 | Không có |
+| Hợp đồng chuyển nhượng quyền sở hữu công nghiệp (bản gốc hoặc bản sao có chứng thực) và các tài liệu kèm theo, bao gồm: + Bản dịch hợp đồng ra tiếng Việt (nếu hợp đồng được làm bằng ngôn ngữ khác tiếng Việt); + Văn bản đồng ý của các đồng chủ sở hữu về việc chuyển nhượng quyền sở hữu công nghiệp, nếu quyền sở hữu công nghiệp tương ứng thuộc sở hữu chung; hoặc bên nhận thế chấp đối với trường hợp quyền sở hữu công nghiệp đang được sử dụng làm tài sản thế chấp; + Quy chế sử dụng nhãn hiệu tập thể hoặc quy chế sử dụng nhãn hiệu chứng nhận của bên nhận chuyển nhượng theo quy định tại khoản 5, khoản 6 Điều 69 của Thông tư số 20/2026/TT-BKHCN (trường hợp chuyển nhượng nhãn hiệu tập thể hoặc nhãn hiệu chứng nhận); + Tài liệu chứng minh quyền nộp đơn của bên nhận chuyển nhượng đối với nhãn hiệu chứng nhận hoặc nhãn hiệu tập thể theo quy định tại khoản 3 và khoản 4 Điều 87 của Luật Sở hữu trí tuệ (trường hợp chuyển nhượng nhãn hiệu tập thể hoặc nhãn hiệu chứng nhận); | 1 | 0 | Không có |
+| Văn bản ủy quyền (trường hợp yêu cầu được nộp thông qua đại diện). Đối với trường hợp sửa đổi văn bằng bảo hộ theo quy định tại khoản 2 Điều này, phải có thông tin về việc ủy quyền yêu cầu thu hẹp phạm vi bảo hộ | 1 | 0 | Không có |
+
+## Căn cứ pháp lý
+
+| Tên văn bản pháp lý | Mã văn bản |
+| --- | --- |
+| 07/2022/QH15 - Luật sửa đổi, bổ sung một số điều của Luật Sở hữu trí tuệ | 07/2022/QH15 |
+| Thông tư số 263/2016/TT-BTC ngày 14/11/2016 quy định mức thu, chế độ thu, nộp, quản lý và sử dụng phí, lệ phí sở hữu công nghiệp, được sửa đổi, bổ sung theo Thông tư số 31/2020/TT-BTC ngày 04/5/2020 | Thông tư số 263/2016/TT-BTC |
+| sửa đổi, bổ sung một số điều của Luật Sở hữu trí tuệ | 131/2025/QH15 |
+| Luật số 93/2025/QH15 của Quốc hội: Luật Khoa học, công nghệ và đổi mới sáng tạo | 93/2025/QH15 |
+| Quy định chi tiết một số điều và biện pháp thi hành Luật Sở hữu trí tuệ, Nghị định số 65/2023/NĐ-CP ngày 23 tháng 8 năm 2023 của Chính phủ quy định chi tiết một số điều và biện pháp thi hành Luật Sở hữu trí tuệ về sở hữu công nghiệp, bảo vệ quyền sở hữu công nghiệp, quyền đối với giống cây trồng và quản lý nhà nước về sở hữu trí tuệ được sửa đổi, bổ sung bởi Nghị định số 15/2026/NĐ-CP ngày 14 tháng 01 năm 2026, Nghị định số 33/2026/NĐ-CP ngày 21 tháng 01 năm 2026 và Nghị định số 100/2026/NĐ-CP ngày 31 tháng 3 năm 2026 | 10/2026/TT-BKHCN |
+
+## Cơ quan thực hiện
+
+Cục Sở hữu trí tuệ
+
+## Yêu cầu, điều kiện thực hiện
+
+- Yêu cầu thu hẹp phạm vi bảo hộ chỉ được giới hạn ở những nội dung sau:
++ Yêu cầu giảm bớt một hoặc một số điểm độc lập hoặc phụ thuộc thuộc yêu cầu bảo hộ ghi trong Bằng độc quyền sáng chế, Bằng độc quyền giải pháp hữu ích;
++ Yêu cầu loại bỏ một hoặc một số phương án kiểu dáng công nghiệp, một hoặc một số sản phẩm trong bộ sản phẩm trong Bằng độc quyền kiểu dáng công nghiệp.
++ Yêu cầu giảm bớt một hoặc một số hàng hóa, dịch vụ hoặc nhóm hàng hóa, dịch vụ thuộc danh mục hàng hóa, dịch vụ ghi trong Giấy chứng nhận đăng ký nhãn hiệu hoặc loại bỏ các chi tiết nhỏ là yếu tố bị loại trừ (không bảo hộ riêng) nhưng không làm thay đổi khả năng phân biệt của nhãn hiệu ghi trong Giấy chứng nhận đăng ký nhãn hiệu.
+- Người yêu cầu sửa đổi thông tin trên văn bằng bảo hộ phải là chủ văn bằng bảo hộ, tổ chức, cá nhân được nhà nước cho phép thực hiện quyền đăng ký chỉ dẫn địa lý.
+- Yêu cầu sửa đổi văn bằng bảo hộ do chuyển nhượng:
++ Chủ sở hữu quyền sở hữu công nghiệp chỉ được chuyển nhượng quyền của mình trong phạm vi được bảo hộ.
++ Quyền đối với chỉ dẫn địa lý không được chuyển nhượng.
++ Quyền đối với tên thương mại chỉ được chuyển nhượng cùng với việc chuyển nhượng toàn bộ cơ sở kinh doanh và hoạt động kinh doanh dưới tên thương mại đó.
++ Việc chuyển nhượng quyền đối với nhãn hiệu không được gây ra sự nhầm lẫn về đặc tính, nguồn gốc của hàng hóa, dịch vụ mang nhãn hiệu.
++ Quyền đối với nhãn hiệu chỉ được chuyển nhượng cho tổ chức, cá nhân đáp ứng các điều kiện đối với người có quyền đăng ký nhãn hiệu đó.
++ Quyền đối với sáng chế, kiểu dáng công nghiệp, thiết kế bố trí là kết quả của nhiệm vụ khoa học và công nghệ sử dụng ngân sách nhà nước chỉ được chuyển nhượng cho tổ chức được thành lập theo pháp luật Việt Nam, cá nhân là công dân Việt Nam và thường trú tại Việt Nam. Tổ chức, cá nhân nhận chuyển nhượng quyền sở hữu phải thực hiện các nghĩa vụ tương ứng của tổ chức chủ trì theo quy định.
+- Người nộp đơn nộp đủ các khoản phí, lệ phí theo quy định.
+
+## Kết quả xử lý
+
+* Quyết định sửa đổi văn bằng bảo hộ (Mã: `KQ-G06.19-015010.1`)
+* Giấy chứng nhận đăng ký nhãn hiệu (đối với trường hợp sửa đổi văn bằng bảo hộ do chuyển nhượng một phần danh mục hàng hóa, dịch vụ mang nhãn hiệu) (Mã: `KQ-G06.19-015010.3`)
+* Quyết định ghi nhận thay đổi tổ chức dịch vụ đại diện sở hữu  công nghiệp trong Sổ đăng ký quốc gia về sở hữu công nghiệp (Mã: `KQ-G06.19-015010.2`)
+
+## Từ khóa
+
+Không có thông tin
+
+## Mô tả
+
+- Yêu cầu thu hẹp phạm vi bảo hộ chỉ được giới hạn ở những nội dung sau:
++ Yêu cầu giảm bớt một hoặc một số điểm độc lập hoặc phụ thuộc thuộc yêu cầu bảo hộ ghi trong Bằng độc quyền sáng chế, Bằng độc quyền giải pháp hữu ích;
++ Yêu cầu loại bỏ một hoặc một số phương án kiểu dáng công nghiệp, một hoặc một số sản phẩm trong bộ sản phẩm trong Bằng độc quyền kiểu dáng công nghiệp.
++ Yêu cầu giảm bớt một hoặc một số hàng hóa, dịch vụ hoặc nhóm hàng hóa, dịch vụ thuộc danh mục hàng hóa, dịch vụ ghi trong Giấy chứng nhận đăng ký nhãn hiệu hoặc loại bỏ các chi tiết nhỏ là yếu tố bị loại trừ (không bảo hộ riêng) nhưng không làm thay đổi khả năng phân biệt của nhãn hiệu ghi trong Giấy chứng nhận đăng ký nhãn hiệu.
+- Người yêu cầu sửa đổi thông tin trên văn bằng bảo hộ phải là chủ văn bằng bảo hộ, tổ chức, cá nhân được nhà nước cho phép thực hiện quyền đăng ký chỉ dẫn địa lý.
+- Yêu cầu sửa đổi văn bằng bảo hộ do chuyển nhượng:
++ Chủ sở hữu quyền sở hữu công nghiệp chỉ được chuyển nhượng quyền của mình trong phạm vi được bảo hộ.
++ Quyền đối với chỉ dẫn địa lý không được chuyển nhượng.
++ Quyền đối với tên thương mại chỉ được chuyển nhượng cùng với việc chuyển nhượng toàn bộ cơ sở kinh doanh và hoạt động kinh doanh dưới tên thương mại đó.
++ Việc chuyển nhượng quyền đối với nhãn hiệu không được gây ra sự nhầm lẫn về đặc tính, nguồn gốc của hàng hóa, dịch vụ mang nhãn hiệu.
++ Quyền đối với nhãn hiệu chỉ được chuyển nhượng cho tổ chức, cá nhân đáp ứng các điều kiện đối với người có quyền đăng ký nhãn hiệu đó.
++ Quyền đối với sáng chế, kiểu dáng công nghiệp, thiết kế bố trí là kết quả của nhiệm vụ khoa học và công nghệ sử dụng ngân sách nhà nước chỉ được chuyển nhượng cho tổ chức được thành lập theo pháp luật Việt Nam, cá nhân là công dân Việt Nam và thường trú tại Việt Nam. Tổ chức, cá nhân nhận chuyển nhượng quyền sở hữu phải thực hiện các nghĩa vụ tương ứng của tổ chức chủ trì theo quy định.
+- Người nộp đơn nộp đủ các khoản phí, lệ phí theo quy định.

@@ -1,0 +1,80 @@
+# Cấp giấy phép di dời đối với công trình cấp III, cấp IV (Công trình không theo tuyến/Theo tuyến trong đô thị/Tín ngưỡng, tôn giáo/Tượng đài, tranh hoành tráng/Theo giai đoạn cho công trình không theo tuyến/Theo giai đoạn cho công trình theo tuyến trong đô thị/Dự án) và nhà ở riêng lẻ
+
+## Thông tin chung
+
+* **Mã thủ tục:** 1.013232
+* **Số quyết định:** 1077/QĐ-BXD
+* **Cấp thực hiện:** Cấp xã
+* **Loại thủ tục:** TTHC được luật giao quy định chi tiết
+* **Lĩnh vực:** Hoạt động xây dựng
+* **Đối tượng thực hiện:** Tổ chức (không bao gồm doanh nghiệp, HTX), Công dân Việt Nam
+* **Cơ quan có thẩm quyền:** Không có thông tin
+* **Địa chỉ tiếp nhận HS:** Không có thông tin
+* **Cơ quan được ủy quyền:** Không có thông tin
+* **Cơ quan phối hợp:** Không có thông tin
+
+## Thủ tục hành chính liên quan
+
+Không có thông tin
+
+## Trình tự thực hiện
+
+1. - Chủ đầu tư nộp hồ sơ đề nghị cấp giấy phép di dời công trình cho Trung tâm phục vụ hành chính công cấp xã.
+   - Trong thời hạn 07 ngày làm việc kể từ ngày tiếp nhận hồ sơ, cơ quan có thẩm quyền cấp giấy phép di dời công trình xây dựng phải tổ chức thẩm định hồ sơ, kiểm tra thực địa, thông báo 1 lần bằng văn bản cho chủ đầu tư bổ sung, hoàn thiện hồ sơ nếu tài liệu còn thiếu, tài liệu không đúng quy định hoặc không đúng thực tế. Cơ quan cấp giấy phép xây dựng có trách nhiệm kiểm tra các điều kiện cấp giấy phép xây dựng theo quy định tại tại Điều 50 Nghị định số 175/2024/NĐ-CP ngày 30/12/2024 của Chính phủ. Việc kiểm tra được thực hiện như sau:
+   + Đối chiếu sự phù hợp của bản vẽ thiết kế xây dựng tại hồ sơ đề nghị cấp phép xây dựng với thiết kế cơ sở được cơ quan chuyên môn về xây dựng thẩm định và đóng dấu xác nhận đối với các công trình thuộc dự án có yêu cầu thẩm định báo cáo nghiên cứu khả thi tại cơ quan chuyên môn về xây dựng;
+   + Kiểm tra sự phù hợp của bản vẽ thiết kế xây dựng tại hồ sơ đề nghị cấp phép xây dựng với bản vẽ thiết kế xây dựng được thẩm duyệt về phòng cháy chữa cháy của cơ quan có thẩm quyền đối với các công trình xây dựng thuộc đối tượng có yêu cầu thẩm duyệt về phòng cháy, chữa cháy;
+   + Kiểm tra tính đầy đủ, hợp lệ của báo cáo kết quả thẩm tra (nếu có) đối với công trình có yêu cầu phải thẩm tra thiết kế theo quy định tại Nghị định số 175/2024/NĐ-CP được sửa đổi bổ sung tại Nghị định số 105/2025/NĐ-CP và Nghị định số 144/2025/NĐ-CP.
+   - Trong thời hạn 05 ngày làm việc kể từ ngày nhận bổ sung hồ sơ nhưng chưa đáp ứng được yêu cầu theo văn bản thông báo, cơ quan có thẩm quyền cấp giấy phép xây dựng có trách nhiệm thông báo bằng văn bản hướng dẫn cho chủ đầu tư tiếp tục hoàn thiện hồ sơ. Trường hợp việc bổ sung hồ sơ vẫn không đáp ứng được các nội dung theo thông báo thì trong thời hạn 03 ngày làm việc kể từ ngày nhận hồ sơ bổ sung, cơ quan có thẩm quyền cấp giấy phép xây dựng có trách nhiệm thông báo đến chủ đầu tư về lý do không cấp giấy phép di dời công trình xây dựng.
+   - Cơ quan có thẩm quyền cấp giấy phép xây dựng đối chiếu các điều kiện theo quy định của Luật Xây dựng để gửi văn bản lấy ý kiến của cơ quan quản lý nhà nước liên quan. Trong thời gian 12 ngày kể từ ngày nhận được hồ sơ, các cơ quan quản lý nhà nước được hỏi ý kiến có trách nhiệm trả lời bằng văn bản về những nội dung thuộc chức năng quản lý của mình. Sau thời hạn trên, nếu các cơ quan này không có ý kiến thì được coi là đã đồng ý và phải chịu trách nhiệm về những nội dung thuộc chức năng quản lý của mình; cơ quan cấp giấy phép xây dựng căn cứ các quy định hiện hành để quyết định việc cấp giấy phép di dời công trình xây dựng.
+   - Trong thời hạn 10 ngày làm việc (hoặc 7 ngày làm việc đối với nhà ở riêng lẻ)  kể từ ngày nhận đủ hồ sơ hợp lệ, cơ quan có thẩm quyền có trách nhiệm xem xét cấp giấy phép di dời công trình xây dựng.
+
+## Cách thức thực hiện
+
+| Hình thức nộp | Thời gian giải quyết | Phí, lệ phí | Mô tả |
+| --- | --- | --- | --- |
+| Trực tuyến | 10 ngày | Không có thông tin | - Trong thời hạn 10 ngày làm việc (hoặc 7 ngày làm việc đối với nhà ở riêng lẻ) . |
+| Dịch vụ bưu chính | 10 ngày | Không có thông tin | - Trong thời hạn 10 ngày làm việc (hoặc 7 ngày làm việc đối với nhà ở riêng lẻ) . |
+| Trực tiếp | 10 ngày | Không có thông tin | - Trong thời hạn 10 ngày làm việc (hoặc 7 ngày làm việc đối với nhà ở riêng lẻ) . |
+
+## Thành phần hồ sơ
+
+| Tên giấy tờ | Bản chính | Bản sao | Tệp đính kèm |
+| --- | --- | --- | --- |
+| Giấy chứng nhận quyền sử dụng đất, quyền sở hữu tài sản gắn liền với đất được cấp theo quy định của pháp luật về đất đai qua các thời kỳ. Trường hợp Giấy chứng nhận quyền sử dụng đất đã có trong Cơ sở dữ liệu quốc gia về đất đai thì các thông tin này được thay thế bằng dữ liệu khi Cơ sở dữ liệu quốc gia về đất đai được vận hành. | 1 | 1 | Không có |
+| Giấy chứng nhận quyền sở hữu nhà ở và quyền sử dụng đất ở được cấp theo quy định của pháp luật về đất đai, pháp luật về nhà ở qua các thời kỳ. Trường hợp Giấy chứng nhận quyền sử dụng đất đã có trong Cơ sở dữ liệu quốc gia về đất đai thì các thông tin này được thay thế bằng dữ liệu khi Cơ sở dữ liệu quốc gia về đất đai được vận hành. | 1 | 1 | Không có |
+| Giấy chứng nhận quyền sử dụng đất được cấp theo quy định của Luật Đất đai qua các thời kỳ. Trường hợp Giấy chứng nhận quyền sử dụng đất đã có trong Cơ sở dữ liệu quốc gia về đất đai thì các thông tin này được thay thế bằng dữ liệu khi Cơ sở dữ liệu quốc gia về đất đai được vận hành. | 1 | 1 | Không có |
+| - Các tài liệu quy định tại Khoản 2, Khoản 3, Khoản 4 và Khoản 5 Điều 97 Luật Xây dựng năm 2014 bao gồm:  + Bản sao giấy tờ chứng minh quyền sử dụng đất nơi công trình sẽ di dời đến và giấy tờ hợp pháp về sở hữu công trình theo quy định của pháp luật. + Bản vẽ hoàn công công trình (nếu có) hoặc bản vẽ thiết kế mô tả thực trạng công trình được di dời, gồm mặt bằng, mặt cắt móng và bản vẽ kết cấu chịu lực chính; bản vẽ tổng mặt bằng địa điểm công trình sẽ được di dời tới; bản vẽ mặt bằng, mặt cắt móng tại địa điểm công trình sẽ di dời đến. + Báo cáo kết quả khảo sát đánh giá chất lượng hiện trạng của công trình do tổ chức, cá nhân có đủ điều kiện năng lực thực hiện.  + Phương án di dời do tổ chức, cá nhân có đủ điều kiện năng lực thực hiện gồm:  Phần thuyết minh về hiện trạng công trình và khu vực công trình sẽ được di dời đến; giải pháp di dời, phương án bố trí sử dụng phương tiện, thiết bị, nhân lực; giải pháp bảo đảm an toàn cho công trình, người, máy móc, thiết bị và công trình lân cận; bảo đảm vệ sinh môi trường; tiến độ di dời; tổ chức, cá nhân thực hiện di dời công trình; phần bản vẽ biện pháp thi công di dời công trình. | 2 | 2 | Không có |
+| - Đơn đề nghị cấp giấy phép di dời công trình theo Mẫu số 1 Phụ lục số II Nghị định số 175/2024/NĐ-CP ngày 30/12/2024 của Chính phủ. | 2 | 0 | Không có |
+
+## Căn cứ pháp lý
+
+| Tên văn bản pháp lý | Mã văn bản |
+| --- | --- |
+| Quy định về phân định thẩm quyền của chính quyền địa phương 02 cấp trong lĩnh vực quản lý nhà nước của Bộ Xây dựng | 140/2025/NĐ-CP |
+| quy định về phân quyền, phân cấp trong lĩnh vực quản lý nhà nước của Bộ Xây dựng | 144/2025/NĐ-CP |
+| Luật Xây dựng | 50/2014/QH13 |
+| sửa đổi, bổ sung một số điều của các Nghị định để cắt giảm, đơn giản hóa thủ tục hành chính liên quan đến hoạt động sản xuất, kinh doanh thuộc phạm vi quản lý của Bộ Xây dựng | 14/2026/NĐ-CP |
+| Nghị định số 175/2024/NĐ-CP của Chính phủ quy định chi tiết một số điều và biện pháp thi hành Luật Xây dựng về quản lý hoạt động xây dựng | 175/2024/NĐ-CP |
+| quy định chi tiết một số điều và biện pháp thi hành luật phòng cháy, chữa cháy và cứu nạn, cứu hộ | 105/2025/NĐ-CP |
+| Luật số 62/2020/QH14 của Quốc hội: Luật sửa đổi, bổ sung một số điều của Luật Xây dựng | 62/2020/QH14 |
+| Nghị quyết số 66.18/2026/NQ-CP ngày 18 tháng 5 năm 2026 của Chính phủ về việc phân quyền, cắt giảm, đơn giản hóa thủ tục hành chính, điều kiện kinh doanh | 66.18/2026/NQ-CP |
+
+## Cơ quan thực hiện
+
+Không có thông tin
+
+## Yêu cầu, điều kiện thực hiện
+
+Không có thông tin
+
+## Kết quả xử lý
+
+* - Giấy phép di dời công trình kèm theo hồ sơ thiết kế trình xin cấp giấy phép xây dựng có đóng dấu của cơ quan có thẩm quyền cấp giấy phép xây dựng. (Mã: `KQ.G17.000313`)
+
+## Từ khóa
+
+Không có thông tin
+
+## Mô tả
+
+Không có thông tin

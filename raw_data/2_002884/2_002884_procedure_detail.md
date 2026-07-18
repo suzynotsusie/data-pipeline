@@ -1,0 +1,111 @@
+# Cho phép thành lập trường trung cấp, trung tâm giáo dục nghề nghiệp, cơ sở giáo dục nghề nghiệp cho người khuyết tật
+
+## Thông tin chung
+
+* **Mã thủ tục:** 2.002884
+* **Số quyết định:** 1181/QĐ-BGDĐT
+* **Cấp thực hiện:** Cấp tỉnh
+* **Loại thủ tục:** NOT_ASSIGNED_REGULATION
+* **Lĩnh vực:** Giáo dục nghề nghiệp
+* **Đối tượng thực hiện:** Doanh nghiệp Việt Nam, Doanh nghiệp có vốn đầu tư nước ngoài, Doanh nghiệp
+* **Cơ quan có thẩm quyền:** Không có thông tin
+* **Địa chỉ tiếp nhận HS:** Không có thông tin
+* **Cơ quan được ủy quyền:** Không có thông tin
+* **Cơ quan phối hợp:** Không có thông tin
+
+## Thủ tục hành chính liên quan
+
+Không có thông tin
+
+## Trình tự thực hiện
+
+1. Trình tự, thủ tục hành chính thực hiện cho phép thành lập trung tâm giáo dục nghề nghiệp, trường trung cấp tư thục trên địa bàn (bao gồm cả trường trung cấp, trung tâm giáo dục nghề nghiệp có vốn đầu tư nước ngoài; trường trung cấp, trung tâm giáo dục nghề nghiệp có vốn đầu tư nước ngoài hoạt động không vì lợi nhuận)
+   a) Tiếp nhận, kiểm tra hồ sơ đề nghị cho phép thành lập
+   Tổ chức, cá nhân đề nghị thành lập hoặc cho phép thành lập cơ sở giáo dục nghề nghiệp gửi hồ sơ theo quy định tại Điều 56 Phụ lục I kèm theo Nghị định 142/2025/NĐ-CP qua Cổng Dịch vụ công quốc gia hoặc bưu chính hoặc trực tiếp đến Sở Giáo dục và Đào tạo tiếp nhận hồ sơ đề nghị cho phép thành lập trung tâm giáo dục nghề nghiệp, trường trung cấp tư thục trên địa bàn;
+   Trong thời hạn 03 ngày làm việc kể từ ngày tiếp nhận hồ sơ Sở Giáo dục và Đào tạo kiểm tra sơ bộ hồ sơ đề nghị thành lập, cho phép thành lập cơ sở giáo dục nghề nghiệp. Trường hợp hồ sơ hợp lệ, gửi Hội đồng thẩm định hồ sơ đề nghị thành lập, cho phép thành lập cơ sở giáo dục nghề nghiệp (sau đây gọi là Hội đồng thẩm định) để tổ chức thẩm định. Trường hợp hồ sơ không hợp lệ, có văn bản trả lời và nêu rõ lý do.
+   b) Thẩm định hồ sơ thành lập, cho phép thành lập 
+   Hội đồng thẩm định tổ chức thẩm định hồ sơ thành lập, cho phép thành lập cơ sở giáo dục nghề nghiệp.
+   Chủ tịch Ủy ban nhân dân cấp tỉnh quyết định thành lập Hội đồng thẩm định và ban hành quy chế tổ chức, hoạt động của Hội đồng thẩm định.
+   Hội đồng thẩm định hồ sơ cho phép thành lập trung tâm giáo dục nghề nghiệp, trường trung cấp tư thục trên địa bàn tỉnh do Lãnh đạo Ủy ban nhân dân cấp tỉnh hoặc người được ủy quyền làm Chủ tịch, các thành viên là đại diện một số cơ quan chuyên môn thuộc Ủy ban nhân dân cấp tỉnh có liên quan.
+   Trong thời hạn 05 ngày làm việc kể từ ngày nhận được hồ sơ thành lập, cho phép thành lập cơ sở giáo dục nghề nghiệp, Hội đồng thẩm định tổ chức thẩm định hồ sơ thành lập, cho phép thành lập cơ sở giáo dục nghề nghiệp tư thục.
+   Căn cứ kết luận của Hội đồng thẩm định (công khai tại cuộc họp thẩm định), trong thời hạn 03 ngày làm việc kể từ ngày tổ chức thẩm định, Sở Giáo dục và Đào tạo có văn bản thông báo kết quả thẩm định cho tổ chức, cá nhân đề nghị cho phép thành lập cơ sở giáo dục nghề nghiệp. 
+   c) Quyết định thành lập, cho phép thành lập 
+   Trường hợp hồ sơ cho phép thành lập cơ sở giáo dục nghề nghiệp tư thục đủ điều kiện theo kết luận của Hội đồng thẩm định, trong thời hạn 05 ngày làm việc kể từ ngày có kết luận thẩm định, Sở Giáo dục và Đào tạo trình Chủ tịch Ủy ban nhân dân tỉnh quyết định cho phép thành lập cơ sở giáo dục nghề nghiệp tư thục theo Mẫu số 04 Phụ lục III kèm theo Nghị định 142/2025/NĐ-CP. Trường hợp không quyết định thành lập, không cho phép thành lập thì có văn bản trả lời và nêu rõ lý do;
+   Trường hợp hồ sơ cho phép thành lập cơ sở giáo dục nghề nghiệp đủ điều kiện nhưng phải hoàn thiện theo kết luận của Hội đồng thẩm định, trong thời hạn 05 ngày làm việc kể từ ngày nhận được hồ sơ đã hoàn thiện, Sở Giáo dục và Đào tạo trình Chủ tịch Ủy ban nhân dân tỉnh quyết định cho phép thành lập cơ sở giáo dục nghề nghiệp tư thục theo Mẫu số 04 Phụ lục III kèm theo Nghị định 142/2025/NĐ-CP. Trường hợp không quyết định thành lập, không cho phép thành lập thì có văn bản trả lời và nêu rõ lý do.
+
+## Cách thức thực hiện
+
+| Hình thức nộp | Thời gian giải quyết | Phí, lệ phí | Mô tả |
+| --- | --- | --- | --- |
+| Trực tiếp | 16 ngày làm việc | Không có thông tin | Không có thông tin |
+| Trực tuyến | 16 ngày làm việc | Không có thông tin | Không có thông tin |
+| Dịch vụ bưu chính | 16 ngày làm việc | Không có thông tin | Không có thông tin |
+
+## Thành phần hồ sơ
+
+| Tên giấy tờ | Bản chính | Bản sao | Tệp đính kèm |
+| --- | --- | --- | --- |
+| Văn bản đề nghị cho phép thành lập của tổ chức xã hội, tổ chức xã hội - nghề nghiệp; tổ chức kinh tế, cá nhân đối với cơ sở giáo dục nghề nghiệp tư thục; nhà đầu tư nước ngoài đối với trường trung cấp, trung tâm giáo dục nghề nghiệp có vốn đầu tư nước ngoài theo Mẫu số 01 Phụ lục III kèm theo Nghị định 142/2025/NĐ-CP; | 1 | 0 | Không có |
+| Đề án thành lập cơ sở giáo dục nghề nghiệp theo Mẫu số 02 Phụ lục III kèm theo Nghị định 142/2025/NĐ-CP; | 1 | 0 | Không có |
+| Đề án thành lập phân hiệu của cơ sở giáo dục nghề nghiệp, trong đó nêu rõ các thông tin về sự cần thiết; mục tiêu đào tạo, cơ cấu tổ chức và các điều kiện bảo đảm hoạt động của phân hiệu; kế hoạch, tiến độ thực hiện đề án; hiệu quả kinh tế - xã hội theo Mẫu số 02 Phụ lục I ban hành kèm theo Nghị định số 95/2026/NĐ-CP. | 1 | 0 | [Mẫu số 2-Pl1.doc](file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/2_002884/M%E1%BA%ABu%20s%E1%BB%91%202-Pl1.doc) |
+| Bản sao giấy chứng nhận quyền sử dụng đất hoặc quyết định giao đất, cho thuê đất để xây dựng cơ sở giáo dục nghề nghiệp của Ủy ban nhân dân cấp tỉnh kèm theo bản sao biên lai (nộp tiền sử dụng đất hoặc tiền thuê đất) hoặc minh chứng đã hoàn thành nghĩa vụ tài chính về đất đai theo quy định.  Cơ quan giải quyết thủ tục hành chính khai thác, sử dụng thông tin đã có trong Cơ sở dữ liệu quốc gia về đất đai để thay thế thành phần hồ sơ giấy chứng nhận quyền sử dụng đất. Trường hợp cơ quan giải quyết thủ tục hành chính không khai thác được hoặc khai thác không đầy đủ dữ liệu về giấy chứng nhận quyền sử dụng đất trên Cơ sở dữ liệu quốc gia về đất đai, cơ quan giải quyết thủ tục hành chính yêu cầu tổ chức nộp bổ sung giấy tờ này theo quy định tại Điều 8 Nghị quyết số 66.7/2025/NQ-CP ngày 15/11/2025 của Chính phủ quy định cắt giảm, đơn giản hóa thủ tục hành chính dựa trên dữ liệu. | 1 | 0 | Không có |
+| Bản sao hợp đồng thuê cơ sở vật chất gắn liền với đất còn thời hạn ít nhất là 05 năm kể từ ngày gửi hồ sơ đối với trường hợp thuê cơ sở vật chất gắn liền với đất. | 1 | 0 | Không có |
+| Bản sao văn bản phê duyệt chủ trương đầu tư, quyết định đầu tư hoặc văn bản phê duyệt, giao kế hoạch đầu tư công hoặc văn bản phê duyệt quyết toán dự án hoàn thành đầu tư xây dựng cơ sở giáo dục nghề nghiệp công lập của cơ quan có thẩm quyền; | 1 | 0 | Không có |
+| Văn bản xác nhận khả năng tài chính để đầu tư xây dựng cơ sở giáo dục nghề nghiệp tư thục của cơ quan, tổ chức có thẩm quyền; | 1 | 0 | Không có |
+| Bản sao giấy tờ chứng minh quyền sở hữu về tài sản kèm theo văn bản thẩm định giá tài sản góp vốn nếu góp vốn bằng tài sản. Cơ quan, tổ chức, cá nhân không phải nộp bản sao giấy chứng nhận quyền sử dụng đất, quyền sở hữu tài sản gắn liền với đất trong trường hợp có thể khai thác, sử dụng thông tin trong cơ sở dữ liệu quốc gia về đất đai. | 1 | 0 | Không có |
+| Đối với cơ sở giáo dục nghề nghiệp tư thục có từ 02 thành viên góp vốn trở lên, ngoài hồ sơ theo quy định tại điểm a, b, c, d, đ, e, g khoản 3 Điều 54 Phụ lục I kèm theo Nghị định 142/2025/NĐ-CP, hồ sơ cần bổ sung: Biên bản cử người đại diện đứng tên thành lập cơ sở giáo dục nghề nghiệp của các thành viên góp vốn; Danh sách trích ngang các thành viên Ban sáng lập; Danh sách, hình thức và biên bản góp vốn của các thành viên cam kết góp vốn thành lập; Dự kiến Hội đồng quản trị và Chủ tịch Hội đồng quản trị của trường trung cấp. | 1 | 0 | Không có |
+| Trường hợp có từ 02 tổ chức, cá nhân nước ngoài góp vốn trở lên hoặc liên doanh giữa nhà đầu tư trong nước và nhà đầu tư nước ngoài, hồ sơ cần bổ sung thêm: Bản sao giấy tờ chứng minh quyền sở hữu về tài sản kèm theo văn bản thẩm định giá về tài sản là vốn góp của tổ chức, cá nhân nước ngoài hoặc các bên liên doanh đề nghị thành lập trường trung cấp, trung tâm giáo dục nghề nghiệp có vốn đầu tư nước ngoài; Biên bản cử người đại diện đứng tên thành lập trường trung cấp, trung tâm giáo dục nghề nghiệp có vốn đầu tư nước ngoài của tổ chức, cá nhân nước ngoài hoặc các bên liên doanh; Danh sách, hình thức và biên bản góp vốn của các thành viên liên doanh cam kết góp vốn thành lập. | 1 | 0 | Không có |
+| * Hồ sơ đề nghị cho phép thành lập cơ sở giáo dục nghề nghiệp có vốn đầu tư nước ngoài hoạt động không vì lợi nhuận gồm: Văn bản cam kết của các tổ chức, cá nhân là chủ sở hữu nguồn vốn đầu tư cam kết việc sử dụng phần tài chính chênh lệch giữa thu và chi của cơ sở giáo dục nghề nghiệp tư thục, cơ sở giáo dục nghề nghiệp có vốn đầu tư nước ngoài theo quy định;  Biên bản họp của tổ chức, cá nhân sở hữu hoặc những người góp vốn thành lập thông qua việc cơ sở giáo dục nghề nghiệp tư thục, cơ sở giáo dục nghề nghiệp có vốn đầu tư nước ngoài hoạt động không vì lợi nhuận. Biên bản này phải được sự đồng ý của đại diện tối thiểu 75% tổng số vốn góp của các thành viên góp vốn;  Dự thảo Quy chế tổ chức và hoạt động của cơ sở giáo dục nghề nghiệp tư thục, cơ sở giáo dục nghề nghiệp có vốn đầu tư nước ngoài hoạt động không vì lợi nhuận;  Dự thảo Quy chế tài chính nội bộ của cơ sở giáo dục nghề nghiệp tư thục, cơ sở giáo dục nghề nghiệp có vốn đầu tư nước ngoài hoạt động không vì lợi nhuận. | 1 | 0 | Không có |
+
+## Căn cứ pháp lý
+
+| Tên văn bản pháp lý | Mã văn bản |
+| --- | --- |
+| Nghị định 143/2016/NĐ-CP | 143/2016/NĐ-CP |
+| Nghị quyết số 23/2026/NQ-CP của Chính phủ: Về cắt giảm, phân cấp, đơn giản hóa thủ tục hành chính và cắt giảm điều kiện kinh doanh thuộc phạm vi quản lý của Bộ Giáo dục và Đào tạo | 23/2026/NQ-CP |
+| SỬA ĐỔI, BỔ SUNG CÁC NGHỊ ĐỊNH QUY ĐỊNH VỀ ĐIỀU KIỆN ĐẦU TƯ VÀ HOẠT ĐỘNG TRONG LĨNH VỰC GIÁO DỤC NGHỀ NGHIỆP | 24/2022/NĐ-CP |
+| Nghị định 140/2018/NĐ-CP sửa đổi, bổ sung các Nghị định liên quan đến điều kiện đầu tư kinh doanh và thủ tục hành chính thuộc phạm vi quản lý nhà nước của Bộ Lao động - Thương binh và Xã hội | 140/2018/NĐ-CP |
+| Nghị định số 142/2025/NĐ-CP của Chính phủ: Quy định về phân định thẩm quyền của chính quyền địa phương hai cấp trong lĩnh vực quản lý nhà nước của Bộ Giáo dục và Đào tạo | Nghị định số 142/2025/NĐ-CP |
+
+## Cơ quan thực hiện
+
+Không có thông tin
+
+## Yêu cầu, điều kiện thực hiện
+
+1.10.1. Điều kiện thành lập hoặc cho phép thành lập cơ sở giáo dục nghề nghiệp
+a) Phù hợp với quy hoạch mạng lưới cơ sở giáo dục nghề nghiệp Việt Nam. Đối với cơ sở giáo dục nghề nghiệp công lập khi thành lập phải hoạt động theo cơ chế tự chủ của đơn vị sự nghiệp công lập do Chính phủ quy định.
+b) Có địa điểm xây dựng cơ sở vật chất bảo đảm diện tích đất sử dụng tối thiểu đối với trung tâm giáo dục nghề nghiệp là 1.000 m2; trường trung cấp là 10.000 m2 đối với khu vực đô thị hoặc 20.000 m2 đối với khu vực ngoài đô thị; trường cao đẳng là 20.000 m2 đối với khu vực đô thị hoặc 40.000 m2 đối với khu vực ngoài đô thị.
+Trường hợp địa điểm xây dựng cơ sở vật chất của trường trung cấp, trường cao đẳng vừa có diện tích đất sử dụng tại khu vực đô thị vừa có diện tích đất sử dụng tại khu vực ngoài đô thị thì thực hiện quy đổi diện tích đất theo tỷ lệ tương ứng giữa đất khu vực đô thị với đất khu vực ngoài đô thị là 1:2.
+c) Vốn đầu tư thành lập cơ sở giáo dục nghề nghiệp được đầu tư bằng nguồn vốn hợp pháp, không bao gồm giá trị về đất đai, cụ thể như sau: Đối với trung tâm giáo dục nghề nghiệp tối thiểu là 05 (năm) tỷ đồng; Đối với trường trung cấp tối thiểu là 50 (năm mươi) tỷ đồng.
+1.10.2. Điều kiện thành lập, cho phép thành lập cơ sở giáo dục nghề nghiệp cho người khuyết tật 
+Cơ sở giáo dục nghề nghiệp cho người khuyết tật phải bảo đảm các điều kiện theo quy định tại khoản 1 Điều 56 Phụ lục I kèm theo Nghị định 142/2025/NĐ-CP và các điều kiện theo quy định tại điểm a và điểm b khoản 3 Điều 18 của Luật Giáo dục nghề nghiệp.
+Trường hợp thành lập cơ sở giáo dục nghề nghiệp có vốn đầu tư nước ngoài cho người khuyết tật phải bảo đảm các điều kiện theo quy định tại khoản 1 Điều 64 Phụ lục I kèm theo Nghị định 142/2025/NĐ-CP và các điều kiện theo quy định tại khoản 3 Điều 18 của Luật Giáo dục nghề nghiệp.
+1.10.3. Chương trình đào tạo thực hiện tại trường trung cấp, trung tâm giáo dục nghề nghiệp có vốn đầu tư nước ngoài; trường trung cấp, trung tâm giáo dục nghề nghiệp có vốn đầu tư nước ngoài hoạt động không vì lợi nhuận phải đáp ứng các yêu cầu:
+a) Chương trình đào tạo dự kiến phải đáp ứng các yêu cầu theo quy định tại Luật giáo dục nghề nghiệp; không có nội dung gây phương hại đến quốc phòng, an ninh quốc gia, lợi ích cộng đồng; không truyền bá tôn giáo, xuyên tạc lịch sử; không ảnh hưởng xấu đến văn hóa, đạo đức, thuần phong mỹ tục Việt Nam.
+b) Cơ sở giáo dục nghề nghiệp có vốn đầu tư nước ngoài được tổ chức giảng dạy chương trình đào tạo của Việt Nam; chương trình đào tạo của nước ngoài trong khuôn khổ các chương trình liên kết đào tạo với nước ngoài theo quy định.
+c) Các môn học bắt buộc đối với người học là công dân Việt Nam theo học các chương trình đào tạo của nước ngoài trong các trường trung cấp, trường cao đẳng có vốn đầu tư nước ngoài thực hiện theo quy định của Bộ trưởng Bộ Giáo dục và Đào tạo.
+
+## Kết quả xử lý
+
+* Quyết định của Chủ tịch Ủy ban nhân dân cấp tỉnh cho phép thành lập trung tâm giáo dục nghề nghiệp, trường trung cấp. (Mã: `KQ-G03.0000016`)
+* Quyết định cho phép thành lập trung tâm giáo dục nghề nghiệp, trường trung cấp được công khai trên trang thông tin điện tử của Ủy ban nhân dân cấp tỉnh. (Mã: `KQ-G03.0000017`)
+
+## Từ khóa
+
+Không có thông tin
+
+## Mô tả
+
+1.10.1. Điều kiện thành lập hoặc cho phép thành lập cơ sở giáo dục nghề nghiệp
+a) Phù hợp với quy hoạch mạng lưới cơ sở giáo dục nghề nghiệp Việt Nam. Đối với cơ sở giáo dục nghề nghiệp công lập khi thành lập phải hoạt động theo cơ chế tự chủ của đơn vị sự nghiệp công lập do Chính phủ quy định.
+b) Có địa điểm xây dựng cơ sở vật chất bảo đảm diện tích đất sử dụng tối thiểu đối với trung tâm giáo dục nghề nghiệp là 1.000 m2; trường trung cấp là 10.000 m2 đối với khu vực đô thị hoặc 20.000 m2 đối với khu vực ngoài đô thị; trường cao đẳng là 20.000 m2 đối với khu vực đô thị hoặc 40.000 m2 đối với khu vực ngoài đô thị.
+Trường hợp địa điểm xây dựng cơ sở vật chất của trường trung cấp, trường cao đẳng vừa có diện tích đất sử dụng tại khu vực đô thị vừa có diện tích đất sử dụng tại khu vực ngoài đô thị thì thực hiện quy đổi diện tích đất theo tỷ lệ tương ứng giữa đất khu vực đô thị với đất khu vực ngoài đô thị là 1:2.
+c) Vốn đầu tư thành lập cơ sở giáo dục nghề nghiệp được đầu tư bằng nguồn vốn hợp pháp, không bao gồm giá trị về đất đai, cụ thể như sau: Đối với trung tâm giáo dục nghề nghiệp tối thiểu là 05 (năm) tỷ đồng; Đối với trường trung cấp tối thiểu là 50 (năm mươi) tỷ đồng.
+1.10.2. Điều kiện thành lập, cho phép thành lập cơ sở giáo dục nghề nghiệp cho người khuyết tật 
+Cơ sở giáo dục nghề nghiệp cho người khuyết tật phải bảo đảm các điều kiện theo quy định tại khoản 1 Điều 56 Phụ lục I kèm theo Nghị định 142/2025/NĐ-CP và các điều kiện theo quy định tại điểm a và điểm b khoản 3 Điều 18 của Luật Giáo dục nghề nghiệp.
+Trường hợp thành lập cơ sở giáo dục nghề nghiệp có vốn đầu tư nước ngoài cho người khuyết tật phải bảo đảm các điều kiện theo quy định tại khoản 1 Điều 64 Phụ lục I kèm theo Nghị định 142/2025/NĐ-CP và các điều kiện theo quy định tại khoản 3 Điều 18 của Luật Giáo dục nghề nghiệp.
+1.10.3. Chương trình đào tạo thực hiện tại trường trung cấp, trung tâm giáo dục nghề nghiệp có vốn đầu tư nước ngoài; trường trung cấp, trung tâm giáo dục nghề nghiệp có vốn đầu tư nước ngoài hoạt động không vì lợi nhuận phải đáp ứng các yêu cầu:
+a) Chương trình đào tạo dự kiến phải đáp ứng các yêu cầu theo quy định tại Luật giáo dục nghề nghiệp; không có nội dung gây phương hại đến quốc phòng, an ninh quốc gia, lợi ích cộng đồng; không truyền bá tôn giáo, xuyên tạc lịch sử; không ảnh hưởng xấu đến văn hóa, đạo đức, thuần phong mỹ tục Việt Nam.
+b) Cơ sở giáo dục nghề nghiệp có vốn đầu tư nước ngoài được tổ chức giảng dạy chương trình đào tạo của Việt Nam; chương trình đào tạo của nước ngoài trong khuôn khổ các chương trình liên kết đào tạo với nước ngoài theo quy định.
+c) Các môn học bắt buộc đối với người học là công dân Việt Nam theo học các chương trình đào tạo của nước ngoài trong các trường trung cấp, trường cao đẳng có vốn đầu tư nước ngoài thực hiện theo quy định của Bộ trưởng Bộ Giáo dục và Đào tạo.

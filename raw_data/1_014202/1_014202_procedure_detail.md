@@ -1,0 +1,271 @@
+# Thẩm định điều kiện về cơ sở vật chất, kỹ thuật, nhân sự và đánh giá đáp ứng thực hành tốt đối với cơ sở có	hoạt	động	bảo	quản	thuốc, nguyên liệu làm thuốc không vì mục đích thương mại (trường hợp cơ sở có đề nghị); Đánh giá định kỳ; Kiểm soát thay đổi về điều kiện cơ sở vật chất, kỹ thuật, nhân sự đối với cơ sở xuất nhập khẩu thuốc, nguyên liệu làm thuốc, kinh doanh dịch vụ bảo quản thuốc, nguyên liệu làm thuốc, cơ sở tổ chức chuỗi nhà thuốc.
+
+## Thông tin chung
+
+* **Mã thủ tục:** 1.014202
+* **Số quyết định:** 2546/QĐ-BYT
+* **Cấp thực hiện:** Cấp bộ/ngành
+* **Loại thủ tục:** TTHC được luật giao quy định chi tiết
+* **Lĩnh vực:** Dược phẩm
+* **Đối tượng thực hiện:** Doanh nghiệp có vốn đầu tư nước ngoài, Tổ chức (không bao gồm doanh nghiệp, HTX), Hợp tác xã, Doanh nghiệp, Tổ chức nước ngoài
+* **Cơ quan có thẩm quyền:** Không có thông tin
+* **Địa chỉ tiếp nhận HS:** Không có thông tin
+* **Cơ quan được ủy quyền:** Không có thông tin
+* **Cơ quan phối hợp:** Không có thông tin
+
+## Thủ tục hành chính liên quan
+
+Không có thông tin
+
+## Trình tự thực hiện
+
+1. **A. Đối với cơ sở bảo quản thuốc, nguyên liệu làm thuốc**
+
+   Trường hợp A1: Đánh giá lần đầu cơ sở bảo quản thuốc không vì mục đích thương mại
+   Bước 1: Thành lập đoàn đánh giá và đánh giá thực tế tại cơ sở:
+   Sau khi tiếp nhận đề nghị, Cơ quan tiếp nhận hồ sơ thực hiện:
+   -	Trong thời hạn 05 ngày, kể từ ngày nhận được hồ sơ hợp lệ, Cơ quan tiếp nhận thành lập Đoàn đánh giá và gửi cho cơ sở bảo quản quyết định thành lập Đoàn đánh giá, trong đó có dự kiến thời gian đánh giá thực tế tại cơ sở bảo quản.
+   -	Trong thời hạn 15 ngày, kể từ ngày có quyết định thành lập, Đoàn đánh giá tiến hành đánh giá thực tế tại cơ sở bảo quản theo các nội dung tại phụ lục Thông tư số 36/2018/TT-BYT; lập biên bản đánh giá theo Mẫu số 03 quy định tại Phụ lục VII ban hành kèm theo Thông tư 36/2018/TT-BYT
+   Đoàn đánh giá có trách nhiệm lập báo cáo đánh giá GSP theo Mẫu số 04 quy định tại Phụ lục VII ban hành kèm theo Thông tư số 36/2018/TT- BYT.
+   Bước 2: Xử lý kết quả đánh giá thực tế:
+   a)	Trường hợp cơ sở tuân thủ GSP ở mức độ 1:
+   Trong thời hạn 10 ngày kể từ ngày ký biên bản đánh giá: Cơ quan tiếp nhận hồ sơ có văn bản thông báo việc đáp ứng GSP của cơ sở, cấp Giấy chứng nhận đáp ứng GSP theo Mẫu số 05 quy định tại Phụ lục VII ban hành kèm theo Thông tư số 36/2028/TT-BYT (nếu cơ sở có đề nghị cấp giấy chứng nhận).
+   b)	Trường hợp cơ sở tuân thủ GSP ở mức độ 2:
+   -	Trong thời hạn 05 ngày, kể từ ngày ký biên bản đánh giá, Cơ quan tiếp nhận gửi báo cáo đánh giá GSP cho cơ sở bảo quản để thông báo các nội dung cần khắc phục, sửa chữa.
+   -	Sau khi hoàn thành việc khắc phục, sửa chữa, cơ sở bảo quản phải có văn bản báo cáo khắc phục (kèm hồ sơ tài liệu, hình ảnh, video hoặc các tài liệu chứng minh khác);
+   - Trong thời hạn 20 ngày, kể từ ngày nhận được văn bản báo cáo khắc phục, Cơ quan tiếp nhận thực hiện đánh giá kết quả khắc phục và kết luận về tình trạng đáp ứng GSP của cơ sở:
+   + Trường hợp việc khắc phục của cơ sở bảo quản đã đáp ứng yêu cầu:
+   Cơ quan tiếp nhận hồ sơ có văn bản thông báo việc đáp ứng GSP của cơ sở, cấp Giấy chứng nhận đáp ứng GSP (nếu cơ sở có đề nghị cấp giấy chứng nhận).
+   + Trường hợp việc khắc phục của cơ sở bảo quản chưa đáp ứng yêu cầu: Cơ quan tiếp nhận có văn bản thông báo cho cơ sở và nêu rõ lý do.
+   Trong thời hạn 06 tháng kể từ ngày cơ quan tiếp nhận hồ sơ có văn bản thông báo sửa đổi, bổ sung hoặc văn bản thông báo các nội dung cần khắc phục, sửa chữa, cơ sở đề nghị phải nộp hồ sơ sửa đổi, bổ sung theo yêu cầu hoặc báo cáo về việc đã hoàn thành việc khắc phục, sửa chữa kèm theo tài liệu chứng minh. Sau thời hạn trên, cơ sở không nộp hồ sơ sửa đổi, bổ sung thì hồ sơ đã nộp không còn giá trị.
+   c)	Trường hợp cơ sở tuân thủ GSP ở mức độ 3:
+   Trong thời hạn 05 ngày, kể từ ngày ký biên bản đánh giá, Cơ quan tiếp nhận ban hành văn bản thông báo về việc không đáp ứng GSP kèm theo báo cáo đánh giá GSP cho cơ sở bảo quản.
+   Bước 3: Công bố thông tin:
+   Cơ quan tiếp nhận cập nhật trên Trang thông tin điện tử của cơ quan tiếp nhận tình trạng đáp ứng GSP của cơ sở.
+   Trường hợp A2: Đánh giá định kỳ
+   Trình tự đánh giá: Thực hiện theo quy trình tương tự đánh giá lần đầu.
+   Bước 1: Thành lập đoàn đánh giá và đánh giá thực tế tại cơ sở: Thực hiện các bước theo quy trình tương tự Bước 1 Trường hợp A1.
+   Bước 2: Xử lý kết quả đánh giá:
+   Xử lý kết quả đánh giá: Tùy thuộc vào kết luận mức độ tuân thủ (Mức độ 1, 2 hoặc 3), Cơ quan tiếp nhận sẽ:
+   a)	Trường hợp cơ sở tuân thủ GSP ở mức độ 1:
+   Trong thời hạn 10 ngày kể từ ngày ký biên bản đánh giá: Cơ quan tiếp nhận hồ sơ có văn bản thông báo việc đáp ứng GSP của cơ sở, cấp Giấy chứng nhận đáp ứng GSP (nếu cơ sở có đề nghị cấp giấy chứng nhận).
+   b)	Trường hợp cơ sở tuân thủ GSP ở mức độ 2:
+   - Trong thời hạn 05 ngày, kể từ ngày ký biên bản đánh giá, cơ quan tiếp nhận gửi báo cáo đánh giá GSP cho cơ sở để cơ sở tiến hành khắc
+   phục, sửa chữa tồn tại, gửi báo cáo khắc phục về cơ quan tiếp nhận;
+    -	Cơ sở có văn bản báo cáo kèm theo bằng chứng (hồ sơ, tài liệu, hình ảnh, video...) chứng minh đã hoàn thành việc khắc phục;
+   -	Trong thời hạn 20 ngày, kể từ ngày nhận được báo cáo khắc phục, Cơ quan tiếp nhận đánh giá kết quả khắc phục của cơ sở và kết luận về tình trạng đáp ứng GSP của cơ sở:
+   + Trường hợp việc khắc phục của cơ sở đã đáp ứng yêu cầu: Cơ quan tiếp nhận có văn bản thông báo việc duy trì đáp ứng GSP của cơ sở hoặc cấp Giấy chứng nhận đáp ứng GSP (nếu cơ sở có đề nghị cấp giấy chứng nhận);
+   -	Trường hợp việc khắc phục của cơ sở chưa đáp ứng yêu cầu: Cơ quan tiếp nhận có văn bản yêu cầu nội dung cần tiếp tục khắc phục, sửa chữa và nộp báo cáo bổ sung trong vòng 45 ngày.
+   Trong thời hạn 90 ngày, kể từ ngày kết thúc việc đánh giá thực tế mà cơ sở không có báo cáo khắc phục hoặc sau khi khắc phục vẫn tiếp tục không đạt yêu cầu, cơ quan tiếp nhận ban hành văn bản thông báo về việc không đáp ứng GSP và tùy theo tính chất, mức độ vi phạm, cơ quan tiếp nhận thực hiện một hoặc các biện pháp:
+   (i)	Xử phạt vi phạm hành chính theo quy định của pháp luật về xử lý vi phạm hành chính;
+   (ii)	Trình Bộ trưởng Bộ Y tế thu hồi Giấy chứng nhận đủ điều kiện kinh doanh dược đã cấp theo quy định tại Điều 40 của Luật dược và thực hiện thu hồi Giấy chứng nhận GSP đã cấp (nếu có).
+   c)	Trường hợp cơ sở tuân thủ GSP ở mức độ 3:
+   Trong thời hạn 05 ngày, kể từ ngày ký biên bản đánh giá, Cơ quan tiếp nhận ban hành văn bản thông báo về việc không đáp ứng GSP kèm theo báo cáo đánh giá GSP. Tùy theo tính chất, mức độ vi phạm, cơ quan tiếp nhận thực hiện một hoặc các biện pháp:
+   (i)	Xử phạt vi phạm hành chính theo quy định của pháp luật về xử lý vi phạm hành chính;
+   (ii)	Thu hồi Giấy chứng nhận đủ điều kiện kinh doanh dược đã cấp và Giấy chứng nhận GP (nếu có) theo quy định tại Điều 40 của Luật Dược.
+   Bước 3: Công bố thông tin:
+   Cơ quan tiếp nhận cập nhật trên Trang thông tin điện tử của cơ quan tiếp nhận tình trạng đáp ứng GSP của cơ sở.
+   Trường hợp A3: Kiểm soát thay đổi:
+   a) Trường hợp cơ sở có báo cáo thay đổi đối với việc thay đổi vị trí kho bảo quản tại cùng địa điểm kinh doanh hoặc bổ sung kho ở vị trí mới tại cùng địa điểm kinh doanh (điểm b, c Điều 11 Thông tư 36/2018/TT-
+   BYT):
+   -	Cơ sở phải nộp báo cáo thay đổi kèm tài liệu kỹ thuật tương ứng.
+   -	Cơ quan tiếp nhận thực hiện đánh giá thực tế tại cơ sở.
+   -	Trình tự đánh giá thực hiện theo quy định như Trường hợp A1;
+   -	Xử lý kết quả đánh giá:
+   + Với thay đổi là thay đổi vị trí kho bảo quản tại cùng địa điểm kinh doanh: Xử lý như đối với việc xử lý kết quả tại Trường hợp A2. Kết quả là văn bản trả lời của cơ quan tiếp nhận.
+   + Với thay đổi là bổ sung kho ở vị trí mới tại cùng địa điểm kinh doanh: Xử lý như đối với việc xử lý kết quả tại Trường hợp A1. Kết quả là văn bản trả lời của cơ quan tiếp nhận.
+   b)	Cơ sở có thay đổi đối với việc Mở rộng kho bảo quản trên cơ sở cấu trúc kho đã có hoặc Sửa chữa, thay đổi lớn về cấu trúc, bố trí kho bảo quản hoặc Thay đổi hệ thống phụ trợ hoặc thay đổi nguyên lý thiết kế, vận hành hệ thống tiện ích mà có ảnh hưởng tới yêu cầu, điều kiện bảo quản (theo quy định tại điểm d, đ hoặc e khoản 1 Điều 11 Thông tư số 36/2018/TT-BYT):
+   -	Trong thời hạn 10 ngày, kể từ ngày nhận được văn bản thông báo, Cơ quan tiếp nhận hồ sơ ban hành văn bản thông báo về việc đồng ý với nội dung thay đổi trong trường hợp việc thay đổi đáp ứng yêu cầu hoặc thông báo về nội dung cần khắc phục, sửa chữa trong trường hợp chưa đáp ứng yêu cầu;
+   -	Trong thời hạn 45 ngày, kể từ ngày Cơ quan tiếp nhận có văn bản thông báo, cơ sở bảo quản phải hoàn thành việc khắc phục, sửa chữa và có văn bản thông báo kèm theo bằng chứng chứng minh (hồ sơ tài liệu, hình ảnh, video, giấy chứng nhận và các tài liệu khác) đã hoàn thành việc khắc phục, sửa chữa tồn tại được nêu trong văn bản thông báo;
+   -	Trong thời hạn 10 ngày, kể từ ngày nhận được báo cáo khắc phục của cơ sở bảo quản kèm theo bằng chứng chứng minh (hồ sơ tài liệu, hình ảnh, video, giấy chứng nhận và các tài liệu khác), Cơ quan tiếp nhận đánh giá kết quả khắc phục của cơ sở bảo quản và kết luận về tình trạng đáp ứng GSP của cơ sở bảo quản:
+   + Trường hợp việc khắc phục đã đáp ứng yêu cầu: Cơ quan tiếp nhận hồ sơ ban hành văn bản thông báo về việc đồng ý với nội dung thay đổi;
+   + Trường hợp việc khắc phục chưa đáp ứng yêu cầu: Cơ quan tiếp nhận thực hiện việc đánh giá đột xuất, xử lý kết quả đánh giá như Trường hợp A2.
+   B. Đối với cơ sở tổ chức chuỗi nhà thuốc Trường hợp B1: Đánh giá định kỳ:
+   Bước 1: Thành lập đoàn đánh giá và đánh giá thực tế tại cơ sở:
+    Sau khi tiếp nhận đề nghị, Cơ quan tiếp nhận hồ sơ thực hiện:
+   -	Trong thời hạn 05 ngày, kể từ ngày nhận được hồ sơ hợp lệ, Cơ quan tiếp nhận thành lập Đoàn đánh giá, thông báo cho cơ sở về Đoàn đánh giá và dự kiến thời gian đánh giá thực tế tại cơ sở.
+   -	Trong thời hạn 15 ngày, kể từ ngày có quyết định thành lập, Đoàn đánh giá tiến hành đánh giá thực tế tại cơ sở theo các nội dung tại phụ lục Thông tư số 03/2018/TT-BYT; lập biên bản đánh giá theo Mẫu số 03 quy định tại Phụ lục IV ban hành kèm theo Thông tư 03/2018/TT-BYT.
+   Bước 2: Xử lý kết quả đánh giá:
+   Xử lý kết quả đánh giá: Tùy thuộc vào kết luận mức độ tuân thủ (Mức độ 1, 2 hoặc 3), Cơ quan tiếp nhận sẽ:
+   a)	Trường hợp cơ sở tuân thủ GDP ở mức độ 1:
+   Trong thời hạn 10 ngày kể từ ngày ký biên bản đánh giá: Cơ quan tiếp nhận hồ sơ có văn bản thông báo việc duy trì đáp ứng GDP của cơ sở, cấp Giấy chứng nhận đáp ứng GDP theo Mẫu số 07 quy định tại Phụ lục IV ban hành kèm theo Thông tư số 03/2018/TT-BYT bổ sung bởi điểm a khoản 10 Điều 2 Thông tư số 11/2025/TT-BYT (nếu cơ sở có đề nghị cấp giấy chứng nhận).
+   b)	Trường hợp cơ sở tuân thủ GDP ở mức độ 2:
+   -	Trong thời hạn 05 ngày, kể từ ngày ký biên bản đánh giá, cơ quan tiếp nhận có văn bản yêu cầu cơ sở tiến hành khắc phục, sửa chữa tồn tại, gửi báo cáo khắc phục về cơ quan tiếp nhận;
+   -	Trong thời hạn 45 ngày, kể từ ngày cơ quan tiếp nhận có văn bản yêu cầu, cơ sở có văn bản báo cáo kèm theo bằng chứng (hồ sơ, tài liệu, hình ảnh, video, ...) chứng minh đã hoàn thành việc khắc phục;
+   -	Trong thời hạn 20 ngày, kể từ ngày nhận được báo cáo khắc phục, Cơ quan tiếp nhận đánh giá kết quả khắc phục của cơ sở và kết luận về tình trạng đáp ứng GDP của cơ sở:
+   + Trường hợp việc khắc phục của cơ sở đã đáp ứng yêu cầu: Cơ quan tiếp nhận có văn bản thông báo việc duy trì đáp ứng GDP của cơ sở hoặc cấp Giấy chứng nhận đáp ứng GDP (nếu cơ sở có đề nghị cấp giấy chứng nhận);
+   -	Trường hợp việc khắc phục của cơ sở chưa đáp ứng yêu cầu: Cơ quan tiếp nhận có văn bản yêu cầu nội dung cần tiếp tục khắc phục, sửa chữa và nộp báo cáo bổ sung trong vòng 45 ngày.
+   Trong thời hạn 90 ngày, kể từ ngày kết thúc việc đánh giá thực tế mà cơ sở không có báo cáo khắc phục hoặc sau khi khắc phục vẫn tiếp tục không đạt yêu cầu, cơ quan tiếp nhận ban hành văn bản thông báo về việc không đáp ứng GDP và tùy theo tính chất, mức độ vi phạm, cơ quan tiếp nhận thực hiện một hoặc các biện pháp:
+   (i) Xử phạt vi phạm hành chính theo quy định của pháp luật về xử lý vi phạm hành chính;
+   (ii) Thu hồi Giấy chứng nhận đủ điều kiện kinh doanh dược đã cấp và Giấy chứng nhận GDP (nếu có) theo quy định tại Điều 40 của Luật dược.
+   c)	Trường hợp cơ sở tuân thủ GDP ở mức độ 3:
+   Trong thời hạn 05 ngày, kể từ ngày ký biên bản đánh giá, Cơ quan tiếp nhận ban hành văn bản thông báo về việc không đáp ứng GDP. Tùy theo tính chất, mức độ vi phạm, cơ quan tiếp nhận thực hiện một hoặc các biện pháp:
+   (i)	Xử phạt vi phạm hành chính theo quy định của pháp luật về xử lý vi phạm hành chính;
+   (ii)	Thu hồi Giấy chứng nhận đủ điều kiện kinh doanh dược đã cấp và Giấy chứng nhận GDP (nếu có) theo quy định tại Điều 40 của Luật dược.
+   Bước 3: Công bố thông tin:
+   Cơ quan tiếp nhận cập nhật trên Trang thông tin điện tử của cơ quan tiếp nhận tình trạng đáp ứng GDP của cơ sở.
+   Trường hợp B2: Kiểm soát thay đổi
+   a)	Trường hợp cơ sở có báo cáo thay đổi đối với việc thay đổi vị trí kho bảo quản tại cùng địa điểm kinh doanh hoặc bổ sung kho ở vị trí mới tại cùng địa điểm kinh doanh (điểm b, c khoản 1 điều 11 Thông tư 03/2018/TT-BYT):
+   -	Cơ sở phải nộp báo cáo thay đổi kèm tài liệu kỹ thuật tương ứng.
+   -	Cơ quan tiếp nhận thực hiện đánh giá thực tế tại cơ sở.
+   -	Trình tự đánh giá: Thực hiện theo quy định như Trường hợp B1.
+   -	Xử lý kết quả:
+   + Với trường hợp thay đổi đối với việc thay đổi vị trí kho bảo quản tại cùng địa điểm kinh doanh (điểm b khoản 1 điều 11 Thông tư 03/2018/TT-BYT): Thực hiện theo quy định như Trường hợp B1. Kết quả là văn bản trả lời của cơ quan tiếp nhận.
+   + Với trường hợp thay đổi đối với việc bổ sung kho ở vị trí mới tại cùng địa điểm kinh doanh (điểm c khoản 1 điều 11 Thông tư 03/2018/TT-BYT): Thực hiện theo quy định như Trường hợp C. Kết quả là văn bản trả lời của cơ quan tiếp nhận.
+   b) Trường hợp cơ sở có thay đổi đối với việc mở rộng kho bảo quản trên cơ sở cấu trúc kho đã có hoặc sửa chữa, thay đổi lớn về cấu trúc, bố trí kho bảo quản hoặc thay đổi hệ thống phụ trợ hoặc thay đổi nguyên lý thiết kế, vận hành hệ thống tiện ích mà có ảnh hưởng tới yêu cầu, điều kiện bảo quản (theo quy định tại điểm d, đ hoặc e khoản 1 Điều 11 Thông tư số 03/2018/TT-BYT):
+   - Trong thời hạn 10 ngày, kể từ ngày nhận được văn bản thông báo, Cơ quan tiếp nhận hồ sơ ban hành văn bản thông báo về việc đồng ý với nội dung thay đổi trong trường hợp việc thay đổi đáp ứng yêu cầu hoặc thông báo về nội dung cần khắc phục, sửa chữa trong trường hợp chưa đáp ứng yêu cầu;
+   -	Trong thời hạn 45 ngày, kể từ ngày Cơ quan tiếp nhận có văn bản thông báo, cơ sở phải hoàn thành việc khắc phục, sửa chữa và có văn bản thông báo kèm theo bằng chứng chứng minh (hồ sơ tài liệu, hình ảnh, video, giấy chứng nhận và các tài liệu khác) đã hoàn thành việc khắc phục, sửa chữa tồn tại được nêu trong văn bản thông báo;
+   -	Trong thời hạn 10 ngày, kể từ ngày nhận được báo cáo khắc phục của cơ sở kèm theo bằng chứng chứng minh (hồ sơ tài liệu, hình ảnh, video, giấy chứng nhận và các tài liệu khác), Cơ quan tiếp nhận đánh giá kết quả khắc phục của cơ sở và kết luận về tình trạng đáp ứng GDP của cơ sở:
+   + Trường hợp việc khắc phục đã đáp ứng yêu cầu: Cơ quan tiếp nhận hồ sơ ban hành văn bản thông báo về việc đồng ý với nội dung thay đổi;
+   + Trường hợp việc khắc phục chưa đáp ứng yêu cầu: Cơ quan tiếp nhận thực hiện việc đánh giá đột xuất, xử lý kết quả đánh giá theo quy định.
+
+## Cách thức thực hiện
+
+| Hình thức nộp | Thời gian giải quyết | Phí, lệ phí | Mô tả |
+| --- | --- | --- | --- |
+| Trực tiếp | 30 ngày | Không có thông tin | Trường hợp A1: Đối với đánh giá lần đầu với cơ sở bảo quản thuốc, nguyên liệu làm thuốc Trường hợp A2: Đánh giá định kỳ với cơ sở bảo quản thuốc, nguyên liệu làm thuốc: Gửi báo cáo về Cơ quan tiếp nhận Trường hợp A3: Kiểm soát thay đổi với cơ sở bảo quản thuốc, nguyên liệu làm thuốc: Báo cáo thay đổi kèm hồ sơ liên quan về Cơ quan tiếp nhận hoặc văn bản đề nghị công bố tùy thuộc vào loại thay đổi: Nộp hồ sơ trực tiếp hoặc qua dịch vụ bưu chính hoặc trực tuyến. Trường hợp B1: Đánh giá định kỳ với cơ sở tổ chức chuỗi nhà thuốc: Gửi báo cáo về Cơ quan tiếp nhận Trường hợp B2: Kiểm soát thay đổi với cơ sở tổ chức chuỗi nhà thuốc: Báo cáo thay đổi kèm hồ sơ liên quan về Cơ quan tiếp nhận hoặc văn bản đề nghị công bố tùy thuộc vào loại thay đổi Trường hợp A1: Thời hạn giải quyết tùy thuộc mức độ đáp ứng của cơ sở: - Nếu đáp ứng mức độ 1: 10 ngày; - Nếu đáp ứng mức độ 2: + 05 ngày cho cơ quan tiếp nhận ban hành văn bản yêu cầu khắc phục; + Cơ sở khắc phục và gửi báo cáo khắc phục: Trong thời hạn 06 tháng, kể từ ngày Cơ quan tiếp nhận gửi Báo cáo đánh giá có nội dung yêu cầu sửa đổi, bổ sung, cơ sở bảo quản phải nộp hồ sơ sửa đổi, bổ sung. Sau thời hạn trên, cơ sở bảo quản không sửa đổi, bổ sung hoặc sau 12 tháng, kể từ ngày nộp hồ sơ đề nghị lần đầu mà hồ sơ sửa đổi, bổ sung không đáp ứng yêu cầu thì hồ sơ đề nghị đã nộp không còn giá trị + 20 ngày cho cơ quan tiếp nhận đánh giá báo cáo khắc phục, ban hành văn bản xử lý kết quả. - Nếu đáp ứng mức độ 3: 05 ngày ra văn bản thông báo. Trường hợp A2, B1: Thời hạn giải quyết tùy thuộc mức độ đáp ứng của cơ sở: - Nếu đáp ứng mức độ 1: 10 ngày; - Nếu đáp ứng mức độ 2: + 05 ngày cho cơ quan tiếp nhận ban hành văn bản yêu cầu khắc phục; + 45 ngày cho cơ sở khắc phục; + 20 ngày cho cơ quan tiếp nhận đánh giá báo cáo khắc phục. Trường hợp việc khắc phục chưa đạt, gia hạn thêm 45 ngày cho cơ sở tiếp tục khắc phục. - Nếu đáp ứng mức độ 3: 05 ngày ban hành ban hành văn bản thông báo về việc không đáp ứng GSP/GDP. Trường hợp A3, Trường hợp B2: Thời hạn giải quyết tùy thuộc mức độ đáp ứng của cơ sở: - Nếu cơ sở không phải khắc phục: 10 ngày; - Nếu cơ sở phải khắc phục: + 10 ngày cho cơ quan tiếp nhận ban hành văn bản yêu cầu khắc phục; + 45 ngày cho cơ sở khắc phục; + 10 ngày cho cơ quan tiếp nhận đánh giá báo cáo khắc phục và ban hành văn bản về xử lý kết quả. |
+| Trực tuyến | 30 ngày | Không có thông tin | Trường hợp A1: Đối với đánh giá lần đầu với cơ sở bảo quản thuốc, nguyên liệu làm thuốc Trường hợp A2: Đánh giá định kỳ với cơ sở bảo quản thuốc, nguyên liệu làm thuốc: Gửi báo cáo về Cơ quan tiếp nhận Trường hợp A3: Kiểm soát thay đổi với cơ sở bảo quản thuốc, nguyên liệu làm thuốc: Báo cáo thay đổi kèm hồ sơ liên quan về Cơ quan tiếp nhận hoặc văn bản đề nghị công bố tùy thuộc vào loại thay đổi: Nộp hồ sơ trực tiếp hoặc qua dịch vụ bưu chính hoặc trực tuyến. Trường hợp B1: Đánh giá định kỳ với cơ sở tổ chức chuỗi nhà thuốc: Gửi báo cáo về Cơ quan tiếp nhận Trường hợp B2: Kiểm soát thay đổi với cơ sở tổ chức chuỗi nhà thuốc: Báo cáo thay đổi kèm hồ sơ liên quan về Cơ quan tiếp nhận hoặc văn bản đề nghị công bố tùy thuộc vào loại thay đổi Trường hợp A1: Thời hạn giải quyết tùy thuộc mức độ đáp ứng của cơ sở: - Nếu đáp ứng mức độ 1: 10 ngày; - Nếu đáp ứng mức độ 2: + 05 ngày cho cơ quan tiếp nhận ban hành văn bản yêu cầu khắc phục; + Cơ sở khắc phục và gửi báo cáo khắc phục: Trong thời hạn 06 tháng, kể từ ngày Cơ quan tiếp nhận gửi Báo cáo đánh giá có nội dung yêu cầu sửa đổi, bổ sung, cơ sở bảo quản phải nộp hồ sơ sửa đổi, bổ sung. Sau thời hạn trên, cơ sở bảo quản không sửa đổi, bổ sung hoặc sau 12 tháng, kể từ ngày nộp hồ sơ đề nghị lần đầu mà hồ sơ sửa đổi, bổ sung không đáp ứng yêu cầu thì hồ sơ đề nghị đã nộp không còn giá trị + 20 ngày cho cơ quan tiếp nhận đánh giá báo cáo khắc phục, ban hành văn bản xử lý kết quả. - Nếu đáp ứng mức độ 3: 05 ngày ra văn bản thông báo. Trường hợp A2, B1: Thời hạn giải quyết tùy thuộc mức độ đáp ứng của cơ sở: - Nếu đáp ứng mức độ 1: 10 ngày; - Nếu đáp ứng mức độ 2: + 05 ngày cho cơ quan tiếp nhận ban hành văn bản yêu cầu khắc phục; + 45 ngày cho cơ sở khắc phục; + 20 ngày cho cơ quan tiếp nhận đánh giá báo cáo khắc phục. Trường hợp việc khắc phục chưa đạt, gia hạn thêm 45 ngày cho cơ sở tiếp tục khắc phục. - Nếu đáp ứng mức độ 3: 05 ngày ban hành ban hành văn bản thông báo về việc không đáp ứng GSP/GDP. Trường hợp A3, Trường hợp B2: Thời hạn giải quyết tùy thuộc mức độ đáp ứng của cơ sở: - Nếu cơ sở không phải khắc phục: 10 ngày; - Nếu cơ sở phải khắc phục: + 10 ngày cho cơ quan tiếp nhận ban hành văn bản yêu cầu khắc phục; + 45 ngày cho cơ sở khắc phục; + 10 ngày cho cơ quan tiếp nhận đánh giá báo cáo khắc phục và ban hành văn bản về xử lý kết quả. |
+| Dịch vụ bưu chính | 30 ngày | Không có thông tin | Trường hợp A1: Đối với đánh giá lần đầu với cơ sở bảo quản thuốc, nguyên liệu làm thuốc Trường hợp A2: Đánh giá định kỳ với cơ sở bảo quản thuốc, nguyên liệu làm thuốc: Gửi báo cáo về Cơ quan tiếp nhận Trường hợp A3: Kiểm soát thay đổi với cơ sở bảo quản thuốc, nguyên liệu làm thuốc: Báo cáo thay đổi kèm hồ sơ liên quan về Cơ quan tiếp nhận hoặc văn bản đề nghị công bố tùy thuộc vào loại thay đổi: Nộp hồ sơ trực tiếp hoặc qua dịch vụ bưu chính hoặc trực tuyến. Trường hợp B1: Đánh giá định kỳ với cơ sở tổ chức chuỗi nhà thuốc: Gửi báo cáo về Cơ quan tiếp nhận Trường hợp B2: Kiểm soát thay đổi với cơ sở tổ chức chuỗi nhà thuốc: Báo cáo thay đổi kèm hồ sơ liên quan về Cơ quan tiếp nhận hoặc văn bản đề nghị công bố tùy thuộc vào loại thay đổi Trường hợp A1: Thời hạn giải quyết tùy thuộc mức độ đáp ứng của cơ sở: - Nếu đáp ứng mức độ 1: 10 ngày; - Nếu đáp ứng mức độ 2: + 05 ngày cho cơ quan tiếp nhận ban hành văn bản yêu cầu khắc phục; + Cơ sở khắc phục và gửi báo cáo khắc phục: Trong thời hạn 06 tháng, kể từ ngày Cơ quan tiếp nhận gửi Báo cáo đánh giá có nội dung yêu cầu sửa đổi, bổ sung, cơ sở bảo quản phải nộp hồ sơ sửa đổi, bổ sung. Sau thời hạn trên, cơ sở bảo quản không sửa đổi, bổ sung hoặc sau 12 tháng, kể từ ngày nộp hồ sơ đề nghị lần đầu mà hồ sơ sửa đổi, bổ sung không đáp ứng yêu cầu thì hồ sơ đề nghị đã nộp không còn giá trị + 20 ngày cho cơ quan tiếp nhận đánh giá báo cáo khắc phục, ban hành văn bản xử lý kết quả. - Nếu đáp ứng mức độ 3: 05 ngày ra văn bản thông báo. Trường hợp A2, B1: Thời hạn giải quyết tùy thuộc mức độ đáp ứng của cơ sở: - Nếu đáp ứng mức độ 1: 10 ngày; - Nếu đáp ứng mức độ 2: + 05 ngày cho cơ quan tiếp nhận ban hành văn bản yêu cầu khắc phục; + 45 ngày cho cơ sở khắc phục; + 20 ngày cho cơ quan tiếp nhận đánh giá báo cáo khắc phục. Trường hợp việc khắc phục chưa đạt, gia hạn thêm 45 ngày cho cơ sở tiếp tục khắc phục. - Nếu đáp ứng mức độ 3: 05 ngày ban hành ban hành văn bản thông báo về việc không đáp ứng GSP/GDP. Trường hợp A3, Trường hợp B2: Thời hạn giải quyết tùy thuộc mức độ đáp ứng của cơ sở: - Nếu cơ sở không phải khắc phục: 10 ngày; - Nếu cơ sở phải khắc phục: + 10 ngày cho cơ quan tiếp nhận ban hành văn bản yêu cầu khắc phục; + 45 ngày cho cơ sở khắc phục; + 10 ngày cho cơ quan tiếp nhận đánh giá báo cáo khắc phục và ban hành văn bản về xử lý kết quả. |
+
+## Thành phần hồ sơ
+
+### Trường hợp A1: Đối với Cơ sở có hoạt động dược nhưng không vì mục đích thương mại, hồ sơ bao gồm 01 bộ:
+
+| Tên giấy tờ | Bản chính | Bản sao | Tệp đính kèm |
+| --- | --- | --- | --- |
+| Tài liệu kỹ thuật theo hướng dẫn về hồ sơ tổng thể của cơ sở bảo quản | 1 | 1 | Không có |
+| Văn bản đề nghị cấp Giấy chứng nhận GSP (trường hợp có đề nghị). | 1 | 0 | [Mu.docx](file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/1_014202/Mu.docx) |
+
+### Trường hợp A2: Đánh giá định kỳ với cơ sở bảo quản thuốc, nguyên liệu làm thuốc 01 bộ:
+
+| Tên giấy tờ | Bản chính | Bản sao | Tệp đính kèm |
+| --- | --- | --- | --- |
+| Tài liệu kỹ thuật cập nhật về điều kiện cơ sở vật chất, kỹ thuật và nhân sự của cơ sở bảo quản thuốc, nguyên liệu làm thuốc (nếu có thay đổi). | 1 | 0 | Không có |
+| Báo cáo về hoạt động kinh doanh xuất khẩu, nhập khẩu hoặc dịch vụ bảo quản thuốc, nguyên liệu làm thuốc và việc duy trì đáp ứng tiêu chuẩn GSP của cơ sở. | 1 | 0 | [Mu.docx](file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/1_014202/Mu.docx) |
+
+### Trường hợp A3: Kiểm soát thay đổi với cơ sở bảo quản thuốc, nguyên liệu làm thuốc, gồm 01 bộ:
+
+| Tên giấy tờ | Bản chính | Bản sao | Tệp đính kèm |
+| --- | --- | --- | --- |
+| Tài liệu kỹ thuật tương ứng với sự thay đổi | 1 | 1 | Không có |
+| Báo cáo thay đổi | 1 | 1 | [Mu (1).docx](file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/1_014202/Mu%20%281%29.docx) |
+
+### Trường hợp B1: Đánh giá định kỳ với cơ sở tổ chức chuỗi nhà thuốc, gồm 01 bộ:
+
+| Tên giấy tờ | Bản chính | Bản sao | Tệp đính kèm |
+| --- | --- | --- | --- |
+| Báo cáo về hoạt động kinh doanh và việc duy trì đáp ứng tiêu chuẩn GDP của cơ sở | 1 | 1 | Không có |
+| Tài liệu kỹ thuật cập nhật về điều kiện cơ sở vật chất, kỹ thuật và nhân sự của cơ sở | 1 | 1 | Không có |
+| Văn bản đề nghị cấp GDP (trong trường hợp cơ sở có yêu cầu) | 1 | 1 | Không có |
+
+## Căn cứ pháp lý
+
+| Tên văn bản pháp lý | Mã văn bản |
+| --- | --- |
+| Nghị định của Chính phủ quy định chi tiết một số điều và biện pháp thi hành Luật dược | 163/2025/NĐ-CP |
+| 41/2023/TT-BTC | 41/2023/TT-BTC |
+| Luật số 44/2024/QH15 | 44/2024/QH15 |
+| Luật 105/2016/QH13 Dược | 105/2016/QH13 |
+| Thông tư 03/2018/TT-BYT Quy định về Thực hành tốt phân phối thuốc, nguyên liệu làm thuốc | 03/2018/TT-BYT |
+| Thông tư số 11/2025/TT-BYT ngày 16/5/2025 của Bộ trưởng Bộ Y tế. | 11/2025/TT-BYT |
+| Thông tư số 36/2018/TT-BYT ngày 22/01/2018 của Bộ Y tế | 36/2018/TT-BYT |
+
+## Cơ quan thực hiện
+
+Bộ Y tế
+
+## Yêu cầu, điều kiện thực hiện
+
+1. Điểm b, c, h khoản 1 Điều 33 của Luật Dược ngày 06/4/2016 và khoản 13 Điều 1 của Luật sửa đổi, bổ sung một số điều của Luật Dược ngày 21/11/2024
+b)	Cơ sở nhập khẩu thuốc, nguyên liệu làm thuốc, cơ sở xuất khẩu thuốc, nguyên liệu làm thuốc, cơ sở kinh doanh dịch vụ bảo quản thuốc, nguyên liệu làm thuốc phải có địa điểm, kho bảo quản thuốc, trang thiết bị bảo quản, phương tiện vận chuyển, hệ thống quản lý chất lượng, tài liệu chuyên môn kỹ thuật và nhân sự đáp ứng Thực hành tốt bảo quản thuốc, nguyên liệu làm thuốc;
+c)	Cơ sở bán buôn thuốc, nguyên liệu làm thuốc phải có địa điểm, kho bảo quản thuốc, trang thiết bị bảo quản, phương tiện vận chuyển, hệ thống quản lý chất lượng, tài liệu chuyên môn kỹ thuật và nhân sự đáp ứng Thực hành tốt phân phối thuốc, nguyên liệu làm thuốc;
+h) Cơ sở tổ chức chuỗi nhà thuốc phải đáp ứng điều kiện quy định tại điểm c khoản này, có từ 02 nhà thuốc trực thuộc trở lên đã được cấp Giấy chứng nhận đủ điều kiện kinh doanh dược và có hệ thống quản lý chất lượng thống nhất để áp dụng đối với các nhà thuốc trong chuỗi.
+2. Khoản 2 Điều 33 Luật Dược ngày 06/4/2016:
+2. Người chịu trách nhiệm chuyên môn về dược và vị trí công việc quy định tại Điều 11 của Luật Dược phải có Chứng chỉ hành nghề dược phù hợp với cơ sở kinh doanh dược quy định tại khoản 2 Điều 32 của Luật Dược.
+3. Điểm b và c khoản 1 Điều 34 Luật Dược ngày 06/4/2016
+b)	Có các biện pháp về an ninh, bảo đảm không thất thoát thuốc, nguyên liệu làm thuốc phải kiểm soát đặc biệt;
+c)	Trường hợp kinh doanh thuốc phóng xạ phải đáp ứng các điều kiện theo quy định của Luật Năng lượng nguyên tử và các văn bản quy phạm pháp luật khác có liên quan.
+4. Điểm a khoản 1 và điểm a khoản 2 Điều 35 Luật Dược ngày 06/4/2016
+1. Cơ sở có hoạt động dược không thuộc diện cấp Giấy chứng nhận đủ điều kiện kinh doanh dược bao gồm:
+a) Cơ sở có hoạt động dược nhưng không vì mục đích thương mại;
+2. Điều kiện hoạt động của các cơ sở tại khoản 1 Điều này được quy định như sau:
+a) Cơ sở quy định tại điểm a khoản 1 Điều này phải tuân thủ điều kiện kinh doanh quy định tại khoản 1 Ðiều 33 của Luật này.
+5.	Khoản 4 Điều 20 Nghị định số 163/2025/NĐ-CP
+Số lượng hồ sơ quy định tại Điều này là 01 bộ. Các tài liệu nộp trong hồ sơ đề nghị cấp, cấp lại, điều chỉnh Giấy chứng nhận đủ điều kiện kinh doanh dược quy định tại điểm c, d khoản 1, điểm c, d khoản 2, điểm b, c khoản 4 Điều 38 Luật Dược là bản chính hoặc bản sao có chứng thực hoặc bản sao kèm xuất trình bản chính để đối chiếu.
+6.	Khoản 1 và 2 Điều 30 Nghị định số 163/2025/NĐ-CP
+1.	Cơ sở kinh doanh thuốc phải kiểm soát đặc biệt phải thực hiện các quy định tại các Điều 31, 32, 33, 34, 35 và 36 của Nghị định số 163/2025/NĐ-CP.
+2.	Trường hợp kinh doanh thuốc phóng xạ, ngoài đáp ứng quy định tại khoản 1 Điều này, cơ sở còn phải đáp ứng các quy định của Luật Năng lượng nguyên tử và các văn bản quy phạm pháp luật khác có liên quan.
+7. Khoản 4, 5, 6 Điều 31 Nghị định số 163/2025/NĐ-CP quy định về cơ sở vật chất của cơ sở kinh doanh thuốc phải kiểm soát đặc biệt
+4.	Đối với cơ sở xuất khẩu, nhập khẩu, cơ sở kinh doanh dịch vụ bảo quản thuốc gây nghiện, thuốc hướng thần, thuốc tiền chất, nguyên liệu làm thuốc là dược chất gây nghiện, dược chất hướng thần, tiền chất dùng làm thuốc:
+a)	Có kho riêng hoặc khu vực riêng đáp ứng nguyên tắc Thực hành tốt bảo quản thuốc, nguyên liệu làm thuốc để bảo quản thuốc gây nghiện, thuốc hướng thần, thuốc tiền chất, nguyên liệu làm thuốc là dược chất gây nghiện, dược chất hướng thần, tiền chất dùng làm thuốc. Kho hoặc khu vực này phải có cửa, có khóa chắc chắn;
+b)	Có hệ thống camera trong kho bảo quản thuốc và nguyên liệu làm thuốc;
+c)	Có hệ thống quản lý, theo dõi bằng hồ sơ sổ sách theo quy định của Bộ trưởng Bộ Y tế.
+5. Đối với cơ sở xuất khẩu, nhập khẩu, cơ sở bán buôn, cơ sở kinh doanh dịch vụ bảo quản thuốc dạng phối hợp có chứa dược chất gây nghiện, thuốc dạng phối hợp có chứa dược chất hướng thần, thuốc dạng phối hợp có chứa tiền chất:
+Có kho riêng hoặc khu vực riêng đáp ứng nguyên tắc Thực hành tốt bảo quản thuốc, nguyên liệu làm thuốc để bảo quản thuốc dạng phối hợp có chứa dược chất gây nghiện, thuốc dạng phối hợp có chứa dược chất hướng thần, thuốc dạng phối hợp có chứa tiền chất. Kho phải có cửa, có khoá chắc chắn; có hệ thống quản lý, theo dõi bằng hồ sơ sổ sách theo quy định của Bộ trưởng Bộ Y tế.
+6. Đối với cơ sở xuất khẩu, nhập khẩu, bán buôn thuốc phóng xạ, nguyên liệu làm thuốc là chất phóng xạ: phải có hệ thống quản lý, theo dõi bằng hồ sơ sổ sách theo quy định của Bộ trưởng Bộ Y tế.
+8. Khoản 4,5, 8 Điều 32 Nghị định số 163/2025/NĐ-CP quy định về nhân sự của cơ sở kinh doanh thuốc phải kiểm soát đặc biệt
+4.	Đối với cơ sở xuất khẩu, nhập khẩu thuốc gây nghiện, thuốc hướng thần, thuốc tiền chất, nguyên liệu làm thuốc là dược chất gây nghiện, dược chất hướng thần, tiền chất dùng làm thuốc: Thủ kho bảo quản thuốc gây nghiện, thuốc hướng thần, thuốc tiền chất, nguyên liệu làm thuốc là dược chất gây nghiện, dược chất hướng thần, tiền chất dùng làm thuốc phải là người có bằng tốt nghiệp đại học ngành dược trở lên, có thời gian thực hành chuyên môn ít nhất 12 tháng tại cơ sở kinh doanh dược.
+5.	Đối với cơ sở bán buôn thuốc gây nghiện, thuốc hướng thần, thuốc tiền chất:
+a)	Thủ kho bảo quản thuốc gây nghiện phải là người có bằng tốt nghiệp đại học ngành dược trở lên, có thời gian thực hành chuyên môn ít nhất 12 tháng tại cơ sở kinh doanh dược;
+b)	Thủ kho bảo quản thuốc hướng thần, thuốc tiền chất phải là người có bằng tốt nghiệp trung cấp ngành dược trở lên, có thời gian thực hành chuyên môn ít nhất 12 tháng tại cơ sở kinh doanh dược.
+8.	Đối với cơ sở kinh doanh dịch vụ bảo quản thuốc gây nghiện, thuốc hướng thần, thuốc tiền chất, nguyên liệu làm thuốc là dược chất gây nghiện, dược chất hướng thần, tiền chất dùng làm thuốc: Thủ kho bảo quản thuốc gây nghiện, thuốc hướng thần, thuốc tiền chất, nguyên liệu làm thuốc là dược chất gây nghiện, dược chất hướng thần, tiền chất dùng làm thuốc phải là người có bằng tốt nghiệp đại học ngành dược trở lên, có thời gian thực hành chuyên môn ít nhất 12 tháng tại cơ sở kinh doanh dược.
+9.	Khoản 2, 3, 4 Điều 19 Nghị định số 163/2025/NĐ-CP quy định điều kiện kinh doanh thuốc cổ truyền
+2.	Cơ sở xuất khẩu, nhập khẩu thuốc cổ truyền phải có cơ sở vật chất, tài liệu chuyên môn kỹ thuật và nhân sự đáp ứng Thực hành tốt bảo quản thuốc. Người chịu trách nhiệm chuyên môn về dược của cơ sở xuất khẩu, nhập khẩu thuốc cổ truyền theo quy định tại khoản 3 Điều 17 của Luật Dược.
+3.	Cơ sở kinh doanh dịch vụ bảo quản thuốc cổ truyền phải có cơ sở vật chất, tài liệu chuyên môn kỹ thuật và nhân sự đáp ứng Thực hành tốt bảo quản thuốc. Người chịu trách nhiệm chuyên môn về dược của cơ sở
+kinh doanh dịch vụ bảo quản thuốc cổ truyền theo quy định tại khoản 1
+ Điều 22 của Luật Dược.
+4. Cơ sở bán buôn thuốc cổ truyền phải có cơ sở vật chất, tài liệu chuyên môn kỹ thuật và nhân sự đáp ứng Thực hành tốt phân phối thuốc. Người chịu trách nhiệm chuyên môn về dược của cơ sở bán buôn thuốc cổ truyền theo quy định tại khoản 3 Điều 16 của Luật Dược.
+
+## Kết quả xử lý
+
+* Trường hợp A1: Đánh giá lần đầu với cơ sở bảo quản thuốc, nguyên liệu làm thuốc: Nếu đáp ứng: Văn bản thông báo việc đáp ứng GSP của cơ sở, Giấy chứng nhận đáp ứng GSP (nếu cơ sở đề nghị); Cập nhật thông tin về việc đáp ứng GSP trên cổng thông tin. Nếu không đáp ứng: Văn bản thông báo về việc không đáp ứng GSP nêu rõ lý do. (Mã: `KQ.G18.000299`)
+* Trường hợp A3: Kiểm soát thay đổi Văn bản trả lời cơ sở hoặc công bố trên Cổng thông tin điện tử theo quy định. (Mã: `KQ.G18.000301`)
+* Trường hợp A2: Đánh giá định kỳ cơ sở bảo quản thuốc, nguyên liệu làm thuốc: Nếu đáp ứng: Văn bản thông báo việc định kỳ đáp ứng GSP của cơ sở, Giấy chứng nhận đáp ứng GSP (nếu cơ sở đề nghị); Cập nhật thông tin về việc duy trì đáp ứng GSP trên cổng thông tin. Nếu không đáp ứng: Văn bản thông báo không đáp ứng GSP nêu rõ lý do và tùy theo mức độ, áp dụng các biện pháp: tạm ngừng hoạt động, xử phạt vi phạm hành chính, thu hồi Giấy chứng nhận. (Mã: `KQ.G18.000300`)
+* Trường hợp B1: Đánh giá định kỳ cơ sở tổ chức chuỗi nhà thuốc: Nếu đáp ứng: Văn bản thông báo việc duy trì đáp ứng GDP của cơ sở, Giấy chứng nhận đáp ứng GDP (nếu cơ sở đề nghị); Cập nhật thông tin về việc duy trì đáp ứng GDP trên cổng thông tin. Nếu không đáp ứng: Văn bản thông báo không đáp ứng GDP và tùy theo mức độ, áp dụng các biện pháp: tạm ngừng hoạt động, xử phạt vi phạm hành chính, thu hồi Giấy chứng nhận. (Mã: `KQ.G18.000302`)
+* Trường hợp B2: Kiểm soát thay đổi Văn bản trả lời cơ sở. (Mã: `KQ.G18.000303`)
+
+## Từ khóa
+
+Không có thông tin
+
+## Mô tả
+
+1. Điểm b, c, h khoản 1 Điều 33 của Luật Dược ngày 06/4/2016 và khoản 13 Điều 1 của Luật sửa đổi, bổ sung một số điều của Luật Dược ngày 21/11/2024
+b)	Cơ sở nhập khẩu thuốc, nguyên liệu làm thuốc, cơ sở xuất khẩu thuốc, nguyên liệu làm thuốc, cơ sở kinh doanh dịch vụ bảo quản thuốc, nguyên liệu làm thuốc phải có địa điểm, kho bảo quản thuốc, trang thiết bị bảo quản, phương tiện vận chuyển, hệ thống quản lý chất lượng, tài liệu chuyên môn kỹ thuật và nhân sự đáp ứng Thực hành tốt bảo quản thuốc, nguyên liệu làm thuốc;
+c)	Cơ sở bán buôn thuốc, nguyên liệu làm thuốc phải có địa điểm, kho bảo quản thuốc, trang thiết bị bảo quản, phương tiện vận chuyển, hệ thống quản lý chất lượng, tài liệu chuyên môn kỹ thuật và nhân sự đáp ứng Thực hành tốt phân phối thuốc, nguyên liệu làm thuốc;
+h) Cơ sở tổ chức chuỗi nhà thuốc phải đáp ứng điều kiện quy định tại điểm c khoản này, có từ 02 nhà thuốc trực thuộc trở lên đã được cấp Giấy chứng nhận đủ điều kiện kinh doanh dược và có hệ thống quản lý chất lượng thống nhất để áp dụng đối với các nhà thuốc trong chuỗi.
+2. Khoản 2 Điều 33 Luật Dược ngày 06/4/2016:
+2. Người chịu trách nhiệm chuyên môn về dược và vị trí công việc quy định tại Điều 11 của Luật Dược phải có Chứng chỉ hành nghề dược phù hợp với cơ sở kinh doanh dược quy định tại khoản 2 Điều 32 của Luật Dược.
+3. Điểm b và c khoản 1 Điều 34 Luật Dược ngày 06/4/2016
+b)	Có các biện pháp về an ninh, bảo đảm không thất thoát thuốc, nguyên liệu làm thuốc phải kiểm soát đặc biệt;
+c)	Trường hợp kinh doanh thuốc phóng xạ phải đáp ứng các điều kiện theo quy định của Luật Năng lượng nguyên tử và các văn bản quy phạm pháp luật khác có liên quan.
+4. Điểm a khoản 1 và điểm a khoản 2 Điều 35 Luật Dược ngày 06/4/2016
+1. Cơ sở có hoạt động dược không thuộc diện cấp Giấy chứng nhận đủ điều kiện kinh doanh dược bao gồm:
+a) Cơ sở có hoạt động dược nhưng không vì mục đích thương mại;
+2. Điều kiện hoạt động của các cơ sở tại khoản 1 Điều này được quy định như sau:
+a) Cơ sở quy định tại điểm a khoản 1 Điều này phải tuân thủ điều kiện kinh doanh quy định tại khoản 1 Ðiều 33 của Luật này.
+5.	Khoản 4 Điều 20 Nghị định số 163/2025/NĐ-CP
+Số lượng hồ sơ quy định tại Điều này là 01 bộ. Các tài liệu nộp trong hồ sơ đề nghị cấp, cấp lại, điều chỉnh Giấy chứng nhận đủ điều kiện kinh doanh dược quy định tại điểm c, d khoản 1, điểm c, d khoản 2, điểm b, c khoản 4 Điều 38 Luật Dược là bản chính hoặc bản sao có chứng thực hoặc bản sao kèm xuất trình bản chính để đối chiếu.
+6.	Khoản 1 và 2 Điều 30 Nghị định số 163/2025/NĐ-CP
+1.	Cơ sở kinh doanh thuốc phải kiểm soát đặc biệt phải thực hiện các quy định tại các Điều 31, 32, 33, 34, 35 và 36 của Nghị định số 163/2025/NĐ-CP.
+2.	Trường hợp kinh doanh thuốc phóng xạ, ngoài đáp ứng quy định tại khoản 1 Điều này, cơ sở còn phải đáp ứng các quy định của Luật Năng lượng nguyên tử và các văn bản quy phạm pháp luật khác có liên quan.
+7. Khoản 4, 5, 6 Điều 31 Nghị định số 163/2025/NĐ-CP quy định về cơ sở vật chất của cơ sở kinh doanh thuốc phải kiểm soát đặc biệt
+4.	Đối với cơ sở xuất khẩu, nhập khẩu, cơ sở kinh doanh dịch vụ bảo quản thuốc gây nghiện, thuốc hướng thần, thuốc tiền chất, nguyên liệu làm thuốc là dược chất gây nghiện, dược chất hướng thần, tiền chất dùng làm thuốc:
+a)	Có kho riêng hoặc khu vực riêng đáp ứng nguyên tắc Thực hành tốt bảo quản thuốc, nguyên liệu làm thuốc để bảo quản thuốc gây nghiện, thuốc hướng thần, thuốc tiền chất, nguyên liệu làm thuốc là dược chất gây nghiện, dược chất hướng thần, tiền chất dùng làm thuốc. Kho hoặc khu vực này phải có cửa, có khóa chắc chắn;
+b)	Có hệ thống camera trong kho bảo quản thuốc và nguyên liệu làm thuốc;
+c)	Có hệ thống quản lý, theo dõi bằng hồ sơ sổ sách theo quy định của Bộ trưởng Bộ Y tế.
+5. Đối với cơ sở xuất khẩu, nhập khẩu, cơ sở bán buôn, cơ sở kinh doanh dịch vụ bảo quản thuốc dạng phối hợp có chứa dược chất gây nghiện, thuốc dạng phối hợp có chứa dược chất hướng thần, thuốc dạng phối hợp có chứa tiền chất:
+Có kho riêng hoặc khu vực riêng đáp ứng nguyên tắc Thực hành tốt bảo quản thuốc, nguyên liệu làm thuốc để bảo quản thuốc dạng phối hợp có chứa dược chất gây nghiện, thuốc dạng phối hợp có chứa dược chất hướng thần, thuốc dạng phối hợp có chứa tiền chất. Kho phải có cửa, có khoá chắc chắn; có hệ thống quản lý, theo dõi bằng hồ sơ sổ sách theo quy định của Bộ trưởng Bộ Y tế.
+6. Đối với cơ sở xuất khẩu, nhập khẩu, bán buôn thuốc phóng xạ, nguyên liệu làm thuốc là chất phóng xạ: phải có hệ thống quản lý, theo dõi bằng hồ sơ sổ sách theo quy định của Bộ trưởng Bộ Y tế.
+8. Khoản 4,5, 8 Điều 32 Nghị định số 163/2025/NĐ-CP quy định về nhân sự của cơ sở kinh doanh thuốc phải kiểm soát đặc biệt
+4.	Đối với cơ sở xuất khẩu, nhập khẩu thuốc gây nghiện, thuốc hướng thần, thuốc tiền chất, nguyên liệu làm thuốc là dược chất gây nghiện, dược chất hướng thần, tiền chất dùng làm thuốc: Thủ kho bảo quản thuốc gây nghiện, thuốc hướng thần, thuốc tiền chất, nguyên liệu làm thuốc là dược chất gây nghiện, dược chất hướng thần, tiền chất dùng làm thuốc phải là người có bằng tốt nghiệp đại học ngành dược trở lên, có thời gian thực hành chuyên môn ít nhất 12 tháng tại cơ sở kinh doanh dược.
+5.	Đối với cơ sở bán buôn thuốc gây nghiện, thuốc hướng thần, thuốc tiền chất:
+a)	Thủ kho bảo quản thuốc gây nghiện phải là người có bằng tốt nghiệp đại học ngành dược trở lên, có thời gian thực hành chuyên môn ít nhất 12 tháng tại cơ sở kinh doanh dược;
+b)	Thủ kho bảo quản thuốc hướng thần, thuốc tiền chất phải là người có bằng tốt nghiệp trung cấp ngành dược trở lên, có thời gian thực hành chuyên môn ít nhất 12 tháng tại cơ sở kinh doanh dược.
+8.	Đối với cơ sở kinh doanh dịch vụ bảo quản thuốc gây nghiện, thuốc hướng thần, thuốc tiền chất, nguyên liệu làm thuốc là dược chất gây nghiện, dược chất hướng thần, tiền chất dùng làm thuốc: Thủ kho bảo quản thuốc gây nghiện, thuốc hướng thần, thuốc tiền chất, nguyên liệu làm thuốc là dược chất gây nghiện, dược chất hướng thần, tiền chất dùng làm thuốc phải là người có bằng tốt nghiệp đại học ngành dược trở lên, có thời gian thực hành chuyên môn ít nhất 12 tháng tại cơ sở kinh doanh dược.
+9.	Khoản 2, 3, 4 Điều 19 Nghị định số 163/2025/NĐ-CP quy định điều kiện kinh doanh thuốc cổ truyền
+2.	Cơ sở xuất khẩu, nhập khẩu thuốc cổ truyền phải có cơ sở vật chất, tài liệu chuyên môn kỹ thuật và nhân sự đáp ứng Thực hành tốt bảo quản thuốc. Người chịu trách nhiệm chuyên môn về dược của cơ sở xuất khẩu, nhập khẩu thuốc cổ truyền theo quy định tại khoản 3 Điều 17 của Luật Dược.
+3.	Cơ sở kinh doanh dịch vụ bảo quản thuốc cổ truyền phải có cơ sở vật chất, tài liệu chuyên môn kỹ thuật và nhân sự đáp ứng Thực hành tốt bảo quản thuốc. Người chịu trách nhiệm chuyên môn về dược của cơ sở
+kinh doanh dịch vụ bảo quản thuốc cổ truyền theo quy định tại khoản 1
+ Điều 22 của Luật Dược.
+4. Cơ sở bán buôn thuốc cổ truyền phải có cơ sở vật chất, tài liệu chuyên môn kỹ thuật và nhân sự đáp ứng Thực hành tốt phân phối thuốc. Người chịu trách nhiệm chuyên môn về dược của cơ sở bán buôn thuốc cổ truyền theo quy định tại khoản 3 Điều 16 của Luật Dược.

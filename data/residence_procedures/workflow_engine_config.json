@@ -1,0 +1,290 @@
+{
+  "schema_version": "1.0",
+  "domain": "residence_management",
+  "updated_at": "2026-07-17",
+  "source_files": [
+    "C:\\Users\\ku060\\Downloads\\VAIC source\\data-pipeline\\main\\full-data.csv",
+    "C:\\Users\\ku060\\Downloads\\VAIC source\\data-pipeline\\data\\residence_procedures\\residence_procedures_summary.csv",
+    "C:\\Users\\ku060\\Downloads\\VAIC source\\data-pipeline\\data\\residence_procedures\\residence_procedures_normalized.json",
+    "C:\\Users\\ku060\\Downloads\\VAIC source\\data-pipeline\\raw_data"
+  ],
+  "coverage": {
+    "expected_codes": [
+      "1.004194",
+      "1.004222",
+      "1.002755",
+      "1.010028",
+      "1.003677",
+      "1.010040",
+      "1.010041",
+      "1.003197",
+      "1.010038",
+      "1.010039",
+      "2.001159",
+      "1.013314",
+      "1.013313"
+    ],
+    "covered_codes": [
+      "1.004194",
+      "1.004222",
+      "1.002755",
+      "1.010028",
+      "1.003677",
+      "1.010040",
+      "1.010041",
+      "1.003197",
+      "1.010038",
+      "1.010039",
+      "2.001159",
+      "1.013314",
+      "1.013313"
+    ],
+    "missing_codes": []
+  },
+  "llm_contract": {
+    "role": "parse_user_answer_and_rephrase_question_only",
+    "required_output_schema": {
+      "intent": "residence_management",
+      "current_node": "string",
+      "slot_updates": {
+        "residence_goal": "register_permanent | register_temporary | extend_temporary | delete_temporary | delete_permanent | split_household | adjust_data | absence_notice | lodging_notice | residence_confirmation | eligibility_confirmation | fallback_info_declaration | unknown",
+        "residence_place_type": "owned_home | rented_borrowed_stayed | vehicle_dwelling | unknown",
+        "need_precondition_confirmation": "need_confirmation | ready_for_main_registration | unknown",
+        "registration_status": "new | already_registered | not_eligible | unknown"
+      },
+      "confidence": "0_to_1",
+      "needs_human_review": "boolean"
+    }
+  },
+  "entry_prompts": [
+    "Bạn muốn đăng ký mới, gia hạn, xóa, xác nhận hay điều chỉnh thông tin cư trú?",
+    "Bạn đang xử lý thường trú, tạm trú, tạm vắng hay lưu trú?",
+    "Chỗ ở đó là nhà của bạn, nhà thuê/mượn/ở nhờ hay phương tiện dùng để ở?",
+    "Bạn cần xác nhận điều kiện trước khi đăng ký hay đã sẵn sàng nộp hồ sơ đăng ký chính?"
+  ],
+  "slots": [
+    {
+      "name": "residence_goal",
+      "required": true,
+      "description": "Mục đích cư trú chính mà người dân đang muốn thực hiện."
+    },
+    {
+      "name": "residence_place_type",
+      "required": false,
+      "description": "Phân loại chỗ ở để xác định có cần thủ tục xác nhận điều kiện trước hay không."
+    },
+    {
+      "name": "need_precondition_confirmation",
+      "required": false,
+      "description": "Phân biệt user đang xin xác nhận điều kiện trước hay đã đủ điều kiện để vào thủ tục cư trú chính."
+    },
+    {
+      "name": "registration_status",
+      "required": false,
+      "description": "Dùng để tách nhánh đăng ký mới, đã có đăng ký, hoặc không đủ điều kiện đăng ký."
+    }
+  ],
+  "decision_tree": {
+    "start_node": "residence_goal",
+    "nodes": [
+      {
+        "id": "residence_goal",
+        "type": "question",
+        "slot": "residence_goal",
+        "question": "Bạn muốn làm việc gì về cư trú: đăng ký thường trú, đăng ký tạm trú, gia hạn tạm trú, khai báo tạm vắng, thông báo lưu trú, xác nhận thông tin, hay điều chỉnh dữ liệu?",
+        "options": [
+          "register_permanent",
+          "register_temporary",
+          "extend_temporary",
+          "delete_temporary",
+          "delete_permanent",
+          "split_household",
+          "adjust_data",
+          "absence_notice",
+          "lodging_notice",
+          "residence_confirmation",
+          "eligibility_confirmation",
+          "fallback_info_declaration"
+        ]
+      },
+      {
+        "id": "residence_place_type",
+        "type": "question",
+        "slot": "residence_place_type",
+        "question": "Chỗ ở bạn dùng để đăng ký là nhà thuộc sở hữu của mình, chỗ ở do thuê/mượn/ở nhờ, hay phương tiện dùng để ở?",
+        "options": [
+          "owned_home",
+          "rented_borrowed_stayed",
+          "vehicle_dwelling"
+        ]
+      },
+      {
+        "id": "residence_need_precondition",
+        "type": "question",
+        "slot": "need_precondition_confirmation",
+        "question": "Bạn đang cần xin giấy xác nhận điều kiện trước, hay đã có đủ điều kiện để nộp hồ sơ cư trú chính?",
+        "options": [
+          "need_confirmation",
+          "ready_for_main_registration"
+        ]
+      },
+      {
+        "id": "residence_registration_status",
+        "type": "question",
+        "slot": "registration_status",
+        "question": "Hiện tại bạn đã có đăng ký cư trú ở địa chỉ này chưa, hay đây là đăng ký mới?",
+        "options": [
+          "new",
+          "already_registered",
+          "not_eligible"
+        ]
+      }
+    ],
+    "routes": [
+      {
+        "route_id": "residence_register_temporary",
+        "conditions": {
+          "residence_goal": "register_temporary"
+        },
+        "procedure_code": "1.004194",
+        "procedure_name": "Đăng ký tạm trú",
+        "why_this_route": "Route chính cho người ở tại chỗ ở ngoài nơi thường trú và cần đăng ký tạm trú."
+      },
+      {
+        "route_id": "residence_register_permanent",
+        "conditions": {
+          "residence_goal": "register_permanent",
+          "need_precondition_confirmation": "ready_for_main_registration"
+        },
+        "procedure_code": "1.004222",
+        "procedure_name": "Đăng ký thường trú",
+        "why_this_route": "Route chính cho nhu cầu đăng ký thường trú."
+      },
+      {
+        "route_id": "residence_extend_temporary",
+        "conditions": {
+          "residence_goal": "extend_temporary"
+        },
+        "procedure_code": "1.002755",
+        "procedure_name": "Gia hạn tạm trú",
+        "why_this_route": "Dùng khi thông tin tạm trú còn hiệu lực nhưng sắp hết hạn và người dân muốn kéo dài thời gian."
+      },
+      {
+        "route_id": "residence_delete_temporary",
+        "conditions": {
+          "residence_goal": "delete_temporary"
+        },
+        "procedure_code": "1.010028",
+        "procedure_name": "Xóa đăng ký tạm trú",
+        "why_this_route": "Khi người dân không còn cư trú thực tế tại nơi đã đăng ký tạm trú."
+      },
+      {
+        "route_id": "residence_absence_notice",
+        "conditions": {
+          "residence_goal": "absence_notice"
+        },
+        "procedure_code": "1.003677",
+        "procedure_name": "Khai báo tạm vắng",
+        "why_this_route": "Khi công dân rời nơi cư trú trong thời gian thuộc diện cần khai báo."
+      },
+      {
+        "route_id": "residence_fallback_info_declaration",
+        "conditions": {
+          "residence_goal": "fallback_info_declaration",
+          "registration_status": "not_eligible"
+        },
+        "procedure_code": "1.010040",
+        "procedure_name": "Khai báo thông tin về cư trú đối với người chưa đủ điều kiện đăng ký thường trú, đăng ký tạm trú",
+        "why_this_route": "Nhánh fallback rất quan trọng khi user chưa đủ điều kiện để đăng ký thường trú hoặc tạm trú."
+      },
+      {
+        "route_id": "residence_information_confirmation",
+        "conditions": {
+          "residence_goal": "residence_confirmation"
+        },
+        "procedure_code": "1.010041",
+        "procedure_name": "Xác nhận thông tin về cư trú",
+        "why_this_route": "Dùng khi user cần chứng minh hoặc lấy xác nhận dữ liệu cư trú hiện có."
+      },
+      {
+        "route_id": "residence_delete_permanent",
+        "conditions": {
+          "residence_goal": "delete_permanent"
+        },
+        "procedure_code": "1.003197",
+        "procedure_name": "Xóa đăng ký thường trú",
+        "why_this_route": "Khi cần xóa thông tin thường trú cũ theo tình trạng cư trú thực tế hoặc quyết định quản lý."
+      },
+      {
+        "route_id": "residence_split_household",
+        "conditions": {
+          "residence_goal": "split_household"
+        },
+        "procedure_code": "1.010038",
+        "procedure_name": "Tách hộ",
+        "why_this_route": "Dùng khi thay đổi cấu trúc hộ cư trú nhưng không phải đăng ký địa chỉ mới."
+      },
+      {
+        "route_id": "residence_adjust_data",
+        "conditions": {
+          "residence_goal": "adjust_data"
+        },
+        "procedure_code": "1.010039",
+        "procedure_name": "Điều chỉnh thông tin về cư trú trong Cơ sở dữ liệu về cư trú",
+        "why_this_route": "Dùng khi dữ liệu cư trú đã có nhưng bị sai hoặc cần cập nhật."
+      },
+      {
+        "route_id": "residence_lodging_notice",
+        "conditions": {
+          "residence_goal": "lodging_notice"
+        },
+        "procedure_code": "2.001159",
+        "procedure_name": "Thông báo lưu trú",
+        "why_this_route": "Áp dụng cho lưu trú ngắn hạn, khác bản chất với đăng ký tạm trú."
+      },
+      {
+        "route_id": "residence_condition_confirmation_rent_borrow_stay",
+        "conditions": {
+          "residence_goal": "eligibility_confirmation",
+          "residence_place_type": "rented_borrowed_stayed"
+        },
+        "procedure_code": "1.013314",
+        "procedure_name": "Xác nhận về điều kiện diện tích bình quân nhà ở để đăng ký thường trú vào chỗ ở do thuê, mượn, ở nhờ; nhà ở, đất ở không có tranh chấp quyền sở hữu nhà ở, quyền sử dụng đất ở, không thuộc địa điểm không được đăng ký thường trú mới",
+        "why_this_route": "Nhánh tiền điều kiện cho đăng ký thường trú vào chỗ ở thuê, mượn hoặc ở nhờ."
+      },
+      {
+        "route_id": "residence_condition_confirmation_vehicle",
+        "conditions": {
+          "residence_goal": "eligibility_confirmation",
+          "residence_place_type": "vehicle_dwelling"
+        },
+        "procedure_code": "1.013313",
+        "procedure_name": "Xác nhận nơi thường xuyên đậu, đỗ; sử dụng phương tiện vào mục đích để ở",
+        "why_this_route": "Nhánh tiền điều kiện cho đăng ký cư trú vào phương tiện được dùng làm chỗ ở."
+      }
+    ]
+  },
+  "pre_submission_checks": [
+    {
+      "field_group": "address_and_place",
+      "checks": [
+        "Địa chỉ chỗ ở phải đủ cấp hành chính và thống nhất giữa tờ khai, giấy tờ chỗ ở, và dữ liệu cư trú hiện có.",
+        "Phải phân biệt đúng giữa lưu trú ngắn hạn, tạm trú và thường trú để tránh chọn sai thủ tục."
+      ]
+    },
+    {
+      "field_group": "eligibility",
+      "checks": [
+        "Nếu đăng ký vào chỗ ở thuê, mượn, ở nhờ thì cần làm rõ điều kiện diện tích và tính pháp lý của chỗ ở.",
+        "Nếu dùng phương tiện để ở thì cần xác nhận nơi đậu, đỗ thường xuyên trước khi đi tiếp."
+      ]
+    },
+    {
+      "field_group": "identity_and_members",
+      "checks": [
+        "Thông tin CCCD của người đăng ký và các thành viên liên quan phải khớp dữ liệu dân cư.",
+        "Các thay đổi như tách hộ, xóa cư trú, điều chỉnh dữ liệu phải bám đúng tình trạng cư trú hiện thời."
+      ]
+    }
+  ]
+}

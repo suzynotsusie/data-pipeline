@@ -1,0 +1,148 @@
+# Chứng nhận chất lượng an toàn kỹ thuật và bảo vệ môi trường phụ tùng xe cơ giới
+
+## Thông tin chung
+
+* **Mã thủ tục:** 1.013328
+* **Số quyết định:** 2478/QĐ-BXD
+* **Cấp thực hiện:** Cấp bộ/ngành
+* **Loại thủ tục:** TTHC được luật giao quy định chi tiết
+* **Lĩnh vực:** Đăng kiểm
+* **Đối tượng thực hiện:** Doanh nghiệp có vốn đầu tư nước ngoài, Tổ chức (không bao gồm doanh nghiệp, HTX), Công dân Việt Nam, Doanh nghiệp, Người nước ngoài, Tổ chức nước ngoài, Hợp tác xã
+* **Cơ quan có thẩm quyền:** Không có thông tin
+* **Địa chỉ tiếp nhận HS:** Không có thông tin
+* **Cơ quan được ủy quyền:** Không có thông tin
+* **Cơ quan phối hợp:** Không có thông tin
+
+## Thủ tục hành chính liên quan
+
+Không có thông tin
+
+## Trình tự thực hiện
+
+1. a) Nộp hồ sơ TTHC: 
+   Người nhập khẩu lập hồ sơ đăng ký kiểm tra gửi đến Cục Đăng kiểm Việt Nam qua 
+   Cổng thông tin một cửa quốc gia (nộp hồ sơ điện tử). 
+   Trường hợp bất khả kháng, người nhập khẩu có thể nộp hồ sơ giấy cho Cục Đăng 
+   kiểm Việt Nam theo các địa chỉ công bố trên Trang thông tin điện tử của Cục Đăng kiểm 
+   Việt Nam. 
+   b) Giải quyết TTHC: - Tiếp nhận hồ sơ đăng ký kiểm tra 
+   + Cục Đăng kiểm Việt Nam tiếp nhận, kiểm tra thành phần hồ sơ đăng ký kiểm tra và 
+   trả kết quả trong thời gian tối đa 01 ngày làm việc kể từ ngày người nhập khẩu nộp hồ sơ 
+   đăng ký kiểm tra, cụ thể như sau: trường hợp hồ sơ đăng ký kiểm tra đầy đủ theo quy định, 
+   Cục Đăng kiểm Việt Nam ký xác nhận vào bản đăng ký kiểm tra chất lượng an toàn kỹ 
+   thuật và bảo vệ môi trường phụ tùng xe cơ giới nhập khẩu, hệ thống tự động cấp số đăng ký 
+   kiểm tra và gửi lên Cổng thông tin một cửa quốc gia (đối với hồ sơ điện tử) hoặc Cục Đăng 
+   kiểm Việt Nam cấp số đăng ký kiểm tra, ký xác nhận vào bản đăng ký kiểm tra chất lượng 
+   an toàn kỹ thuật và bảo vệ môi trường phụ tùng xe cơ giới nhập khẩu, trả lại người nhập 
+   khẩu (đối với hồ sơ giấy) để người nhập khẩu làm thủ tục nhập khẩu với cơ quan hải quan 
+   cửa khẩu; trường hợp hồ sơ đăng ký kiểm tra chưa đủ theo quy định, Cục Đăng kiểm Việt 
+   Nam thông báo trên Cổng thông tin một cửa quốc gia (đối với hồ sơ điện tử) hoặc thông báo 
+   (đối với hồ sơ giấy) để người nhập khẩu bổ sung, sửa đổi. 
+   + Cục Đăng kiểm Việt Nam có quyền từ chối tiếp nhận hoặc trả lại hồ sơ đăng ký 
+   kiểm tra và thông báo cho người nhập khẩu trên Cổng thông tin một cửa quốc gia (đối với 
+   hồ sơ điện tử) hoặc thông báo (đối với hồ sơ giấy) đối với một trong các trường hợp sau: 
+   (1) Phụ tùng không thuộc danh mục sản phẩm, hàng hóa có khả năng gây mất an toàn 
+   thuộc trách nhiệm quản lý nhà nước của Bộ Xây dựng; 
+   (2) Tài liệu trong hồ sơ đăng ký kiểm tra thể hiện phụ tùng thuộc danh mục hàng hóa 
+   cấm nhập khẩu quy định tại Nghị định số 69/2018/NĐ-CP; 
+   (3) Tài liệu trong hồ sơ đăng ký kiểm tra có hình ảnh, nội dung thể hiện không đúng 
+   chủ quyền quốc gia hoặc có nội dung khác gây ảnh hưởng đến an ninh, chính trị, kinh tế, xã 
+   hội, quan hệ ngoại giao của Việt Nam; 
+   (4) Quá 45 ngày kể từ ngày mở hồ sơ đăng ký kiểm tra, người nhập khẩu không bổ 
+   sung đủ tài liệu quy định đối với hồ sơ đăng ký kiểm tra trước đó (trừ: trường hợp bất khả 
+   kháng, trường hợp đang thực hiện việc thử nghiệm mẫu hoặc đang đánh giá đảm bảo chất 
+   lượng đối với nhà máy sản xuất); 
+   (5) Người nhập khẩu không thực hiện việc báo cáo theo quy định tại điểm a, khoản 5, 
+   Điều 9 Thông tư số 54/2024/TT-BGTVT; 
+   (6) Người nhập khẩu đang trong thời gian bị đình chỉ hoạt động theo quy định của 
+   pháp luật.
+    - Kiểm tra hồ sơ 
+   Sau khi người nhập khẩu bổ sung đầy đủ Bản thông tin về phụ tùng, Tờ khai hàng hóa 
+   nhập khẩu, Báo cáo thử nghiệm phụ tùng (đối với hồ sơ đề nghị cấp giấy chứng nhận theo 
+   từng lô hàng phụ tùng) hoặc Bản thông tin về phụ tùng, Thông báo kết quả đánh giá COP 
+   đạt yêu cầu, Tờ khai hàng hóa nhập khẩu, Báo cáo thử nghiệm phụ tùng (đối với hồ sơ đề 
+   nghị cấp giấy chứng nhận theo kiểu loại phụ tùng), Cục Đăng kiểm Việt Nam thực hiện 
+   kiểm tra nội dung hồ sơ trong vòng 07 ngày làm việc kể từ ngày nhận đủ tài liệu theo quy 
+   định, nếu hồ sơ không hợp lệ, Cục Đăng kiểm Việt Nam thông báo trên Cổng thông tin một 
+   cửa quốc gia (đối với hồ sơ điện tử) hoặc thông báo (đối với hồ sơ giấy) để người nhập khẩu 
+   bổ sung, sửa đổi. 
+   - Cấp Chứng chỉ chất lượng: 
+   Trong vòng 03 ngày làm việc kể từ ngày hồ sơ được đánh giá đầy đủ, hợp lệ theo quy 
+   định, Cục Đăng kiểm Việt Nam cấp Chứng chỉ chất lượng trên Cổng thông tin một cửa quốc 
+   gia (đối với hồ sơ điện tử) hoặc bản giấy (đối với hồ sơ giấy hoặc trường hợp bất khả kháng 
+   không thể cấp trên Cổng thông tin một cửa quốc gia) cho mỗi kiểu loại phụ tùng trong hồ sơ 
+   đăng ký kiểm tra, cụ thể như sau: 
+   + Cấp giấy chứng nhận cho kiểu loại phụ tùng nhập khẩu đối với trường hợp có đầy đủ 
+   các tài liệu quy định và Báo cáo thử nghiệm phụ tùng đạt yêu cầu; 
+   + Cấp giấy chứng nhận cho lô hàng phụ tùng nhập khẩu đối với trường hợp hồ sơ đăng 
+   ký kiểm tra có các tài liệu quy định (trừ Thông báo kết quả đánh giá COP đạt yêu cầu cấp 
+   cho nhà sản xuất phụ tùng) và Báo cáo thử nghiệm phụ tùng đạt yêu cầu; 
+   + Cấp thông báo không đạt đối với các trường hợp sau: Báo cáo thử nghiệm phụ tùng 
+   không đạt yêu cầu; không bổ sung đầy đủ hồ sơ sau 45 ngày kể từ ngày được thông quan 
+   hàng hóa hoặc tạm giải phóng để đưa hàng hóa về bảo quản (trừ: trường hợp bất khả kháng, 
+   trường hợp đang thực hiện việc thử nghiệm mẫu hoặc đánh giá đảm bảo chất lượng đối với 
+   nhà máy sản xuất); 
+   + Cấp thông báo vi phạm đối với phụ tùng nhập khẩu thuộc một trong các trường hợp 
+   sau: phụ tùng nhập khẩu thuộc danh mục hàng hóa cấm nhập khẩu quy định tại Nghị định số 
+   69/2018/NĐ-CP; tài liệu trong hồ sơ đăng ký kiểm tra hoặc phụ tùng nhập khẩu có hình 
+   ảnh, nội dung thể hiện không đúng chủ quyền quốc gia hoặc có nội dung khác gây ảnh 
+   hưởng đến an ninh, chính trị, kinh tế, xã hội, quan hệ ngoại giao của Việt Nam; các trường 
+   hợp khác thuộc đối tượng bị xử lý hành chính là tịch thu hàng hóa theo quy định của pháp 
+   luật đối với hàng hóa nhập khẩu.
+
+## Cách thức thực hiện
+
+| Hình thức nộp | Thời gian giải quyết | Phí, lệ phí | Mô tả |
+| --- | --- | --- | --- |
+| Trực tuyến | 7 ngày làm việc | Không có thông tin | Không có thông tin |
+| Trực tiếp | 3 ngày làm việc | Không có thông tin | Không có thông tin |
+
+## Thành phần hồ sơ
+
+### 2.3.1.1. Hồ sơ đăng ký kiểm tra phụ tùng nhập khẩu gồm có các tài liệu sau
+
+| Tên giấy tờ | Bản chính | Bản sao | Tệp đính kèm |
+| --- | --- | --- | --- |
+| d) Hóa đơn thương mại kèm danh mục hàng hóa | 0 | 1 | Không có |
+| a) Bản đăng ký kiểm tra chất lượng an toàn kỹ thuật và bảo vệ môi trường phụ tùng nhập khẩu theo mẫu | 1 | 1 | Không có |
+| b) Bản thông tin về phụ tùng theo mẫu; ảnh chụp sản phẩm linh kiện của mỗi kiểu loại (ảnh chụp tổng thể sản phẩm ở 2 mặt đối diện và các tem nhãn, các ký hiệu trên sản phẩm) | 1 | 1 | Không có |
+| e) Báo cáo thử nghiệm phụ tùng cấp cho chính người nhập khẩu | 0 | 1 | Không có |
+| c) Thông báo kết quả đánh giá COP đạt yêu cầu cấp cho nhà sản xuất phụ tùng | 0 | 1 | Không có |
+| đ) Tờ khai hàng hóa nhập khẩu đối với hồ sơ giấy; số, ngày, tháng, năm của tờ khai hàng hóa nhập khẩu đối với hồ sơ điện tử | 0 | 1 | Không có |
+
+### 2.3.1.2. Quy định về miễn, giảm tài liệu; loại tài liệu; thời điểm nộp tài liệu
+
+| Tên giấy tờ | Bản chính | Bản sao | Tệp đính kèm |
+| --- | --- | --- | --- |
+| b) Tài liệu quy định tại điểm b, đ Mục 2.3.1.1 phải được nộp trong thời hạn 15 ngày làm việc kể từ ngày thông quan hàng hóa hoặc hàng hóa được phép đưa về bảo quản | 0 | 0 | Không có |
+| c) Tài liệu quy định tại điểm c Mục 2.3.1.1 chỉ áp dụng đối với trường hợp cấp giấy chứng nhận đối với kiểu loại phụ tùng nhập khẩu và phải nộp trước khi làm thủ tục cấp giấy chứng nhận. Trường hợp đang trong thời gian chờ cấp thông báo kết quả đánh giá COP thì người nhập khẩu có thể cung cấp báo cáo kết quả đánh giá COP và trong vòng 90 ngày phải bổ sung thông báo kết quả đánh giá COP | 0 | 0 | Không có |
+| a) Các tài liệu quy định tại các điểm c, d, đ, e của Mục 2.3.1.1 là bản sao có xác nhận của người nhập khẩu | 0 | 0 | Không có |
+| đ) Miễn tài liệu quy định tại điểm e Mục 2.3.1.1 đối với các trường hợp nhập khẩu phụ tùng để phục vụ hoạt động triệu hồi, sửa chữa, thay thế, bảo hành xe cơ giới hoặc trường hợp số lượng nhập khẩu dưới 15 chiếc nếu thỏa mãn một trong ba điều kiện sau: cùng kiểu loại với phụ tùng đã được cấp Báo cáo thử nghiệm hoặc giấy chứng nhận; cùng kiểu loại với phụ tùng lắp trên xe cơ giới đã được chứng nhận; cùng kiểu loại với phụ tùng có báo cáo thử nghiệm hoặc giấy chứng nhận được cấp bởi cơ sở thử nghiệm nước ngoài | 0 | 0 | Không có |
+| d) Tài liệu quy định tại điểm e Mục 2.3.1.1 phải nộp trước khi làm thủ tục cấp giấy chứng nhận | 0 | 0 | Không có |
+
+## Căn cứ pháp lý
+
+| Tên văn bản pháp lý | Mã văn bản |
+| --- | --- |
+| Thông tư 36/2022/TT-BTC | 36/2022/TT-BTC |
+| Quy định về trình tự, thủ tục chứng nhận chất lượng an toàn kỹ thuật và bảo vệ môi trường xe cơ giới, xe máy chuyên dùng, phụ tùng xe cơ giới trong nhập khẩu | 54/2024/TT-BGTVT |
+
+## Cơ quan thực hiện
+
+Cục Đăng kiểm Việt Nam
+
+## Yêu cầu, điều kiện thực hiện
+
+Không có thông tin
+
+## Kết quả xử lý
+
+* Chứng chỉ chất lượng (phụ tùng xe cơ giới nhập khẩu) (Mã: `KQ.G04.000519`)
+
+## Từ khóa
+
+Không có thông tin
+
+## Mô tả
+
+Không có thông tin

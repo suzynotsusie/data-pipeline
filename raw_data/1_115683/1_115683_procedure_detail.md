@@ -1,0 +1,135 @@
+# Gia hạn phương án sử dụng đất kết hợp đa mục đích
+
+## Thông tin chung
+
+* **Mã thủ tục:** 1.115683
+* **Số quyết định:** 2296/QĐ-UBND
+* **Cấp thực hiện:** Cấp xã
+* **Loại thủ tục:** TTHC được luật giao quy định chi tiết
+* **Lĩnh vực:** Đất đai
+* **Đối tượng thực hiện:** Công dân Việt Nam
+* **Cơ quan có thẩm quyền:** Không có thông tin
+* **Địa chỉ tiếp nhận HS:** - Trung tâm Phục vụ hành chính công cấp xã.
+- Cổng dịch vụ công (dịch vụ công trực tuyến).
+* **Cơ quan được ủy quyền:** Không có thông tin
+* **Cơ quan phối hợp:** Không có thông tin
+
+## Thủ tục hành chính liên quan
+
+Không có thông tin
+
+## Trình tự thực hiện
+
+1. **Bước 1:**
+
+   Người sử dụng đất có nhu cầu gia hạn phương án sử dụng đất kết hợp nộp 01 bộ hồ sơ trực tiếp tại Trung tâm Phục vụ hành chính công cấp xã (hoặc cấp tỉnh) hoặc qua dịch vụ bưu chính hoặc trực tuyến trên Cổng dịch vụ công.
+   Cơ quan tiếp nhận kiểm tra ngay tính đầy đủ, hợp lệ của hồ sơ, chuyển hồ sơ đến cơ quan có chức năng quản lý đất đai cấp xã.
+
+2. **Bước 2:**
+
+   Cơ quan có chức năng quản lý đất đai cấp xã chủ trì, phối hợp với các sở, ngành có liên quan thẩm định gia hạn phương án sử dụng đất kết hợp trình Chủ tịch Ủy ban nhân dân cấp xã theo thẩm quyền, thời gian thực hiện không quá 04 ngày làm việc.
+
+3. **Bước 3:**
+
+   Chủ tịch Ủy ban nhân dân cấp xã xem xét, chấp thuận hoặc không chấp thuận gia hạn phương án sử dụng đất kết hợp, thời gian thực hiện không quá 03 ngày làm việc; gửi cơ quan tiếp nhận hồ sơ để trả cho người có yêu cầu; trường hợp không chấp thuận thì có văn bản trả lời và nêu rõ lý do.
+
+## Cách thức thực hiện
+
+| Hình thức nộp | Thời gian giải quyết | Phí, lệ phí | Mô tả |
+| --- | --- | --- | --- |
+| Trực tuyến | 7 ngày làm việc | Không có thông tin | Nộp trực tiếp tại Trung tâm Phục vụ hành chính công hoặc qua dịch vụ bưu chính hoặc trực tuyến trên Cổng dịch vụ công.<br>Không quá 07 ngày làm việc. Đối với các xã miền núi, biên giới; vùng có điều kiện kinh tế - xã hội khó khăn; vùng có điều kiện kinh tế - xã hội đặc biệt khó khăn thì thời gian thực hiện được tăng thêm 10 ngày. |
+| Trực tiếp | 7 ngày làm việc | Không có thông tin | Nộp trực tiếp tại Trung tâm Phục vụ hành chính công hoặc qua dịch vụ bưu chính hoặc trực tuyến trên Cổng dịch vụ công.<br>Không quá 07 ngày làm việc. Đối với các xã miền núi, biên giới; vùng có điều kiện kinh tế - xã hội khó khăn; vùng có điều kiện kinh tế - xã hội đặc biệt khó khăn thì thời gian thực hiện được tăng thêm 10 ngày. |
+| Dịch vụ bưu chính | 7 ngày làm việc | Không có thông tin | Nộp trực tiếp tại Trung tâm Phục vụ hành chính công hoặc qua dịch vụ bưu chính hoặc trực tuyến trên Cổng dịch vụ công.<br>Không quá 07 ngày làm việc. Đối với các xã miền núi, biên giới; vùng có điều kiện kinh tế - xã hội khó khăn; vùng có điều kiện kinh tế - xã hội đặc biệt khó khăn thì thời gian thực hiện được tăng thêm 10 ngày. |
+
+## Thành phần hồ sơ
+
+| Tên giấy tờ | Bản chính | Bản sao | Tệp đính kèm |
+| --- | --- | --- | --- |
+| Văn bản đề nghị gia hạn phương án sử dụng đất đa mục đích theo Mẫu số 30 ban hành kèm theo Quyết định số 47/2026/QĐ-UBND | 1 | 0 | [mẫu số 30 cấp xã.docx](file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/1_115683/m%E1%BA%ABu%20s%E1%BB%91%2030%20c%E1%BA%A5p%20x%C3%A3.docx) |
+| Phương án sử dụng đất kết hợp | 1 | 0 | Không có |
+| Giấy chứng nhận đã cấp hoặc một trong các loại giấy tờ về quyền sử dụng đất theo quy định của pháp luật (nếu có) | 1 | 0 | Không có |
+
+## Căn cứ pháp lý
+
+| Tên văn bản pháp lý | Mã văn bản |
+| --- | --- |
+| Luật Đất đai ngày 18/01/2024; | 31/2024/QH15 |
+| quy định chi tiết và hướng dẫn một số điều của Nghị quyết số 254/2025/QH15 của Quốc hội quy định một số cơ chế, chính sách tháo gỡ khó khăn vướng mắc trong tổ chức thi hành Luật Đất đai | 49/2026/NĐ-CP |
+| Nghị định 102/2024/NĐ-CP ngày 30/7/2024 của Chính phủ quy định chi tiết thi hành một số điều của Luật Đất đai. | 102/2024/NĐ-CP |
+| Quy định chi tiết một số điều của Nghị quyết số 254/2025/QH15 ngày 11 tháng 12 năm 2025 của Quốc hội quy định một số cơ chế, chính sách tháo gỡ khó khăn, vướng mắc trong tổ chức thi hành Luật Đất đai về tiền sử dụng đất, tiền thuê đất | Nghị định số 50/2026/NĐ-CP |
+| Quy định một số cơ chế, chính sách tháo gỡ khó khăn vướng mắc trong tổ chức thi hành Luật Đất đai | 254/2025/QH15 |
+| Quyết định số 47/2026/QĐ-UBND ngày 28/6/2026 của Ủy ban nhân dân tỉnh Lào Cai về ban hành Quy định trình tự, thủ tục hành chính về đất đai trên địa bàn tỉnh Lào Cai | 47/2026/QĐ-UBND |
+| QUYẾT ĐỊNH PHÂN CẤP THẨM QUYỀN THỰC HIỆN MỘT SỐ NHIỆM VỤ TRONG LĨNH VỰC ĐẤT ĐAI TRÊN ĐỊA BÀN TỈNH LÀO CAI | 40/2026/QĐ-UBND |
+
+## Cơ quan thực hiện
+
+Không có thông tin
+
+## Yêu cầu, điều kiện thực hiện
+
+a) Điều kiện về các loại đất được sử dụng kết hợp đa mục đích:
+- Đất nông nghiệp được sử dụng kết hợp với mục đích thương mại, dịch vụ, chăn nuôi, trồng cây dược liệu.
+- Đất sử dụng vào mục đích công cộng được kết hợp với mục đích thương mại, dịch vụ.
+- Đất xây dựng công trình sự nghiệp được sử dụng kết hợp với mục đích thương mại, dịch vụ.
+- Đất ở được sử dụng kết hợp với mục đích nông nghiệp, thương mại, dịch vụ, công trình sự nghiệp có mục đích kinh doanh.
+- Đất có mặt nước là ao, hồ, đầm; đất có mặt nước ven biển; đất có mặt nước chuyên dùng và đất sông ngòi, kênh, rạch, suối được sử dụng kết hợp đa mục đích.
+- Đất tôn giáo, đất tín ngưỡng được sử dụng kết hợp với mục đích thương mại, dịch vụ.
+- Đất thuộc nhóm đất nông nghiệp, đất thuộc nhóm đất phi nông nghiệp  được sử dụng kết hợp mục đích nông nghiệp, xây dựng công trình hạ tầng bưu chính, viễn thông, công nghệ, thông tin, quảng cáo ngoài trời, điện mặt trời.
+- Loại đất quy định tại khoản 2 và khoản 3 Điều 9 của Luật Đất đai được sử dụng kết hợp với mục đích năng lượng tái tạo, điện năng lượng mới; nghiên cứu, phát triển, ứng dụng công nghệ cao, công nghệ số;
+- Đất xây dựng công trình sự nghiệp được sử dụng kết hợp với mục đích sự nghiệp khác, trừ trường hợp quy định tại khoản 3 Điều 30 của Luật Đất đai;
+- Đất xây dựng công trình sự nghiệp được sử dụng kết hợp với mục đích công cộng có mục đích kinh doanh, trừ trường hợp quy định tại khoản 3 Điều 30 của Luật Đất đai
+b) Yêu cầu về việc sử dụng đất kết hợp đa mục đích:
+- Không làm thay đổi loại đất theo phân loại đất quy định và đã được xác định loại đất tại giấy tờ về quyền sử dụng đất theo quy định.
+- Không làm mất đi điều kiện cần thiết để trở lại sử dụng đất vào mục đích chính;
+- Không ảnh hưởng đến quốc phòng, an ninh.
+- Hạn chế ảnh hưởng đến bảo tồn hệ sinh thái tự nhiên, đa dạng sinh học, cảnh quan môi trường.
+- Không làm ảnh hưởng đến việc sử dụng đất của các thửa đất liền kề.
+- Thực hiện đầy đủ nghĩa vụ tài chính theo quy định.
+- Tuân thủ pháp luật có liên quan.
+c) Yêu cầu về phạm vi sử dụng đất kết hợp đa mục đích:
+- Sử dụng đất vào mục đích kết hợp không thuộc trường hợp chuyển mục đích sử dụng đất.
+- Diện tích đất sử dụng vào mục đích kết hợp không quá 50% diện tích đất sử dụng vào mục đích chính, trừ diện tích đất ở sử dụng kết hợp đa mục đích.
+- Công trình xây dựng trên đất nông nghiệp để sử dụng đất kết hợp đa mục đích phải có quy mô, tính chất phù hợp, dễ dàng tháo dỡ. Diện tích đất xây dựng công trình để sử dụng vào mục đích kết hợp trên đất trồng lúa, đất lâm nghiệp thực hiện theo quy định của Nghị định quy định chi tiết về đất trồng lúa và pháp luật về lâm nghiệp. Đất có mặt nước không được san lấp làm thay đổi dòng chảy, diện tích bề mặt nước, chiều sâu tầng nước.
+- Việc xây dựng, cải tạo công trình để sử dụng vào mục đích kết hợp phải phù hợp với quy định của pháp luật về xây dựng và pháp luật khác có liên quan;
+- Thời gian sử dụng đất vào mục đích kết hợp không vượt quá thời hạn sử dụng đất còn lại của mục đích chính.
+d) Điều kiện đối với trường hợp đơn vị sự nghiệp công lập sử dụng đất xây dựng công trình sự nghiệp kết hợp với thương mại, dịch vụ thì phải chuyển sang thuê đất trả tiền thuê đất hằng năm đối với phần diện tích kết hợp đó.
+đ) Đối với trường hợp đã có nội dung sử dụng đất lâm nghiệp kết hợp để xây dựng công trình phục vụ du lịch sinh thái, nghỉ dưỡng, giải trí theo quy định của pháp luật về lâm nghiệp tổ chức sử dụng đất lâm nghiệp có trách nhiệm thực hiện theo quy định của pháp luật về đất đai và pháp luật về lâm nghiệp.
+
+## Kết quả xử lý
+
+* Phương án sử dụng đất kết hợp được gia hạn (Mã: `H38-KQ000311`)
+* Văn bản trả lời đối với trường hợp không chấp thuận gia hạn phương án sử dụng đất kết hợp (Mã: `H38-KQ000312`)
+
+## Từ khóa
+
+Không có thông tin
+
+## Mô tả
+
+a) Điều kiện về các loại đất được sử dụng kết hợp đa mục đích:
+- Đất nông nghiệp được sử dụng kết hợp với mục đích thương mại, dịch vụ, chăn nuôi, trồng cây dược liệu.
+- Đất sử dụng vào mục đích công cộng được kết hợp với mục đích thương mại, dịch vụ.
+- Đất xây dựng công trình sự nghiệp được sử dụng kết hợp với mục đích thương mại, dịch vụ.
+- Đất ở được sử dụng kết hợp với mục đích nông nghiệp, thương mại, dịch vụ, công trình sự nghiệp có mục đích kinh doanh.
+- Đất có mặt nước là ao, hồ, đầm; đất có mặt nước ven biển; đất có mặt nước chuyên dùng và đất sông ngòi, kênh, rạch, suối được sử dụng kết hợp đa mục đích.
+- Đất tôn giáo, đất tín ngưỡng được sử dụng kết hợp với mục đích thương mại, dịch vụ.
+- Đất thuộc nhóm đất nông nghiệp, đất thuộc nhóm đất phi nông nghiệp  được sử dụng kết hợp mục đích nông nghiệp, xây dựng công trình hạ tầng bưu chính, viễn thông, công nghệ, thông tin, quảng cáo ngoài trời, điện mặt trời.
+- Loại đất quy định tại khoản 2 và khoản 3 Điều 9 của Luật Đất đai được sử dụng kết hợp với mục đích năng lượng tái tạo, điện năng lượng mới; nghiên cứu, phát triển, ứng dụng công nghệ cao, công nghệ số;
+- Đất xây dựng công trình sự nghiệp được sử dụng kết hợp với mục đích sự nghiệp khác, trừ trường hợp quy định tại khoản 3 Điều 30 của Luật Đất đai;
+- Đất xây dựng công trình sự nghiệp được sử dụng kết hợp với mục đích công cộng có mục đích kinh doanh, trừ trường hợp quy định tại khoản 3 Điều 30 của Luật Đất đai
+b) Yêu cầu về việc sử dụng đất kết hợp đa mục đích:
+- Không làm thay đổi loại đất theo phân loại đất quy định và đã được xác định loại đất tại giấy tờ về quyền sử dụng đất theo quy định.
+- Không làm mất đi điều kiện cần thiết để trở lại sử dụng đất vào mục đích chính;
+- Không ảnh hưởng đến quốc phòng, an ninh.
+- Hạn chế ảnh hưởng đến bảo tồn hệ sinh thái tự nhiên, đa dạng sinh học, cảnh quan môi trường.
+- Không làm ảnh hưởng đến việc sử dụng đất của các thửa đất liền kề.
+- Thực hiện đầy đủ nghĩa vụ tài chính theo quy định.
+- Tuân thủ pháp luật có liên quan.
+c) Yêu cầu về phạm vi sử dụng đất kết hợp đa mục đích:
+- Sử dụng đất vào mục đích kết hợp không thuộc trường hợp chuyển mục đích sử dụng đất.
+- Diện tích đất sử dụng vào mục đích kết hợp không quá 50% diện tích đất sử dụng vào mục đích chính, trừ diện tích đất ở sử dụng kết hợp đa mục đích.
+- Công trình xây dựng trên đất nông nghiệp để sử dụng đất kết hợp đa mục đích phải có quy mô, tính chất phù hợp, dễ dàng tháo dỡ. Diện tích đất xây dựng công trình để sử dụng vào mục đích kết hợp trên đất trồng lúa, đất lâm nghiệp thực hiện theo quy định của Nghị định quy định chi tiết về đất trồng lúa và pháp luật về lâm nghiệp. Đất có mặt nước không được san lấp làm thay đổi dòng chảy, diện tích bề mặt nước, chiều sâu tầng nước.
+- Việc xây dựng, cải tạo công trình để sử dụng vào mục đích kết hợp phải phù hợp với quy định của pháp luật về xây dựng và pháp luật khác có liên quan;
+- Thời gian sử dụng đất vào mục đích kết hợp không vượt quá thời hạn sử dụng đất còn lại của mục đích chính.
+d) Điều kiện đối với trường hợp đơn vị sự nghiệp công lập sử dụng đất xây dựng công trình sự nghiệp kết hợp với thương mại, dịch vụ thì phải chuyển sang thuê đất trả tiền thuê đất hằng năm đối với phần diện tích kết hợp đó.
+đ) Đối với trường hợp đã có nội dung sử dụng đất lâm nghiệp kết hợp để xây dựng công trình phục vụ du lịch sinh thái, nghỉ dưỡng, giải trí theo quy định của pháp luật về lâm nghiệp tổ chức sử dụng đất lâm nghiệp có trách nhiệm thực hiện theo quy định của pháp luật về đất đai và pháp luật về lâm nghiệp.

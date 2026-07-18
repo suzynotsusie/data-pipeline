@@ -1,0 +1,90 @@
+# Giao đất, cho thuê đất đối với trường hợp giao đất, cho thuê đất không đấu giá quyền sử dụng đất, không đấu thầu lựa chọn nhà đầu tư thực hiện dự án có sử dụng đất và trường hợp giao đất, cho thuê đất thông qua đấu thầu lựa chọn nhà đầu tư thực hiện dự án có sử dụng đất; giao đất và giao rừng; cho thuê đất và cho thuê rừng
+
+## Thông tin chung
+
+* **Mã thủ tục:** 1.115192
+* **Số quyết định:** 205/TTr-SNNMT
+* **Cấp thực hiện:** Cấp tỉnh
+* **Loại thủ tục:** TTHC được luật giao quy định chi tiết
+* **Lĩnh vực:** Đất đai
+* **Đối tượng thực hiện:** Công dân Việt Nam, Tổ chức nước ngoài, Tổ chức (không bao gồm doanh nghiệp, HTX)
+* **Cơ quan có thẩm quyền:** UBND Thành phố Đồng Nai
+* **Địa chỉ tiếp nhận HS:** Trung tâm Phục vụ hành chính công
+* **Cơ quan được ủy quyền:** Không có thông tin
+* **Cơ quan phối hợp:** Văn phòng Đăng ký Đất đai Thành phố Đồng Nai
+
+## Thủ tục hành chính liên quan
+
+Không có thông tin
+
+## Trình tự thực hiện
+
+1. Bước 1: Nộp, tiếp nhận và kiểm tra hồ sơ
+   Người đề nghị nộp hồ sơ đến Trung tâm Phục vụ hành chính công.
+   Khi nộp hồ sơ, người nộp hồ sơ được lựa chọn nộp bản sao giấy tờ và xuất trình bản chính để cán bộ tiếp nhận hồ sơ kiểm tra, đối chiếu hoặc nộp bản chính giấy tờ hoặc nộp bản sao giấy tờ đã có công chứng hoặc chứng thực theo quy định của pháp luật về công chứng, chứng thực. Trường hợp nộp hồ sơ theo hình thức trực tuyến thì hồ sơ nộp phải được số hóa từ bản chính hoặc bản sao giấy tờ đã được công chứng, chứng thực. 
+   Trường hợp Trung tâm Phục vụ hành chính công tiếp nhận hồ sơ thì chuyển hồ sơ đến Sở Nông nghiệp và Môi trường.
+   Bước 2: Sở Nông nghiệp và Môi trường thực hiện:
+   - Rà soát, kiểm tra hồ sơ; hướng dẫn người nộp hồ sơ làm lại hồ sơ hoặc bổ sung hồ sơ đối với trường hợp hồ sơ không đầy đủ, không hợp lệ;
+   - Kiểm tra thực địa; trường hợp giao đất và giao rừng, cho thuê đất và cho thuê rừng thì cơ quan lâm nghiệp kiểm tra thực địa hiện trạng khu rừng giữa hồ sơ và thực địa dự kiến giao;
+   - Chuyển thông tin đến các cơ quan chuyên môn có liên quan để thực hiện thủ tục xác định trường hợp được miễn, giảm tiền sử dụng đất, tiền thuê đất theo quy định của pháp luật về tiền sử dụng đất, tiền thuê đất (nếu có);
+   - Hoàn thiện hồ sơ trình Ủy ban nhân dân thành phố ban hành quyết định giao đất, cho thuê đất, giao rừng, cho thuê rừng.
+   Bước 3: Ủy ban nhân dân thành phố xem xét ban hành quyết định giao đất, cho thuê đất, giao rừng, cho thuê rừng.
+   Bước 4: Các cơ quan chuyên môn thực hiện như sau:
+   - Sở Nông nghiệp và Môi trường chuyển thông tin đến Sở Tài chính đối với trường hợp phải nộp tiền để Nhà nước bổ sung diện tích đất chuyên trồng lúa bị mất hoặc tăng hiệu quả sử dụng đất trồng lúa. Sở Tài chính xác định và ban hành Thông báo số tiền phải nộp theo quy định. 
+   - Cơ quan có chức năng quản lý về xây dựng xác định chi phí xây dựng hạ tầng theo quy định của pháp luật về xây dựng và chuyển thông tin đến cơ quan thuế đối với trường hợp phải xác định chi phí xây dựng hạ tầng.
+   - Sở Nông nghiệp và Môi trường tổ chức việc xác định giá đất theo quy định đối với trường hợp phải nộp tiền sử dụng đất, tiền thuê đất và chuyển thông tin theo Mẫu số 10 ban hành kèm theo Quyết định 18/2026/QĐ-UBND ngày 19 tháng 6 năm 2026 của Ủy ban nhân dân thành phố đến cơ quan thuế.
+   - Cơ quan thuế thực hiện thủ tục xác định tiền sử dụng đất, tiền thuê đất theo quy định của pháp luật về tiền sử dụng đất, tiền thuê đất; các nghĩa vụ tài chính khác phải nộp theo quy định; ban hành thông báo nộp tiền gửi cho người sử dụng đất. 
+   - Người sử dụng đất nộp các nghĩa vụ tài chính theo thông báo của cơ quan thuế và thông báo của Sở Tài chính (nếu có). 
+   - Cơ quan thuế và Sở Tài chính (nếu có) xác nhận hoàn thành nghĩa vụ tài chính và gửi thông báo kết quả cho Sở Nông nghiệp và Môi trường.
+   Bước 5: Sở Nông nghiệp và Môi trường:
+   - Ký hợp đồng thuê đất đối với trường hợp Nhà nước cho thuê đất; cấp Giấy chứng nhận quyền sử dụng đất, quyền sở hữu tài sản gắn liền với đất.
+   - Chuyển hồ sơ đến Văn phòng đăng ký đất đai để cập nhật, chỉnh lý cơ sở dữ liệu đất đai, hồ sơ địa chính và cơ quan chuyên môn về lâm nghiệp để cập nhật, lưu trữ hồ sơ theo pháp luật về lâm nghiệp; 
+   - Bàn giao đất, bàn giao rừng trên thực địa và trao Giấy chứng nhận cho người sử dụng đất.
+
+## Cách thức thực hiện
+
+| Hình thức nộp | Thời gian giải quyết | Phí, lệ phí | Mô tả |
+| --- | --- | --- | --- |
+| Trực tuyến | 15 ngày làm việc | Không có thông tin | Không quá 15 ngày làm việc kể từ ngày nhận đủ hồ sơ hợp lệ. Đối với các xã miền núi, biên giới; vùng có điều kiện kinh tế - xã hội khó khăn; vùng có điều kiện kinh tế - xã hội đặc biệt khó khăn thì thời gian thực hiện được tăng thêm không quá 10 ngày làm việc so với tổng thời gian thực hiện thủ tục này.<br>Các cơ quan liên quan đến quá trình thực hiện trình tự, thủ tục không được quy định thêm thủ tục và không được thực hiện thêm bất kỳ thủ tục nào khác ngoài thủ tục quy định nêu trên. |
+| Trực tiếp | 15 ngày làm việc | Không có thông tin | Không quá 15 ngày làm việc kể từ ngày nhận đủ hồ sơ hợp lệ. Đối với các xã miền núi, biên giới; vùng có điều kiện kinh tế - xã hội khó khăn; vùng có điều kiện kinh tế - xã hội đặc biệt khó khăn thì thời gian thực hiện được tăng thêm không quá 10 ngày làm việc so với tổng thời gian thực hiện thủ tục này.<br>Các cơ quan liên quan đến quá trình thực hiện trình tự, thủ tục không được quy định thêm thủ tục và không được thực hiện thêm bất kỳ thủ tục nào khác ngoài thủ tục quy định nêu trên. |
+| Dịch vụ bưu chính | 15 ngày làm việc | Không có thông tin | Không quá 15 ngày làm việc kể từ ngày nhận đủ hồ sơ hợp lệ. Đối với các xã miền núi, biên giới; vùng có điều kiện kinh tế - xã hội khó khăn; vùng có điều kiện kinh tế - xã hội đặc biệt khó khăn thì thời gian thực hiện được tăng thêm không quá 10 ngày làm việc so với tổng thời gian thực hiện thủ tục này.<br>Các cơ quan liên quan đến quá trình thực hiện trình tự, thủ tục không được quy định thêm thủ tục và không được thực hiện thêm bất kỳ thủ tục nào khác ngoài thủ tục quy định nêu trên. |
+
+## Thành phần hồ sơ
+
+### Trường hợp: Giao đất, cho thuê đất đối với trường hợp giao đất, cho thuê đất không đấu giá quyền sử dụng đất, không đấu thầu lựa chọn nhà đầu tư thực hiện dự án có sử dụng đất
+
+| Tên giấy tờ | Bản chính | Bản sao | Tệp đính kèm |
+| --- | --- | --- | --- |
+| Mẫu số 01 ban hành kèm theo Quyết định 18/2026/QĐ-UBND ngày 19 tháng 6 năm 2026 của Ủy ban nhân dân thành phố | 1 | 0 | [Mẫu số 01.docx](file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/1_115192/M%E1%BA%ABu%20s%E1%BB%91%2001.docx) |
+
+## Căn cứ pháp lý
+
+| Tên văn bản pháp lý | Mã văn bản |
+| --- | --- |
+| Nghị định 156/2018/NĐ-CP | 156/2018/NĐ-CP |
+| Luật Đất đai số 31/2024/QH15 ngày 18/01/2024 được sửa đổi bổ sung  một số điều bởi Luật số 43/2024/QH15, Luật số 47/2024/QH15 và Luật số 58/2024/QH15 của Quốc hội. | 31/2024/QH15 |
+| quy định chi tiết và hướng dẫn một số điều của Nghị quyết số 254/2025/QH15 của Quốc hội quy định một số cơ chế, chính sách tháo gỡ khó khăn vướng mắc trong tổ chức thi hành Luật Đất đai | 49/2026/NĐ-CP |
+| Luật Lâm nghiệp | 116/2017/QH14 |
+| Quy định một số cơ chế, chính sách tháo gỡ khó khăn vướng mắc trong tổ chức thi hành Luật Đất đai | 254/2025/QH15 |
+| Luật Giá 16/2023/QH15 | 16/2023/QH15 |
+
+## Cơ quan thực hiện
+
+Sở Nông nghiệp và Môi trường Thành phố Đồng Nai
+
+## Yêu cầu, điều kiện thực hiện
+
+Không có thông tin
+
+## Kết quả xử lý
+
+* Giấy chứng nhận (Mã: `H19.151-KQ.DD.003`)
+* Quyết định giao đất, cho thuê đất, giao đất và giao rừng, cho thuê đất và cho thuê rừng (Mã: `H19.151-KQ.DD.001`)
+
+## Từ khóa
+
+Không có thông tin
+
+## Mô tả
+
+Không có thông tin
