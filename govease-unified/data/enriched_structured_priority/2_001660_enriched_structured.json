@@ -1,0 +1,115 @@
+{
+  "schema_version": "1.0",
+  "enricher_version": "0.2.0",
+  "source": {
+    "procedure_code": "2.001660",
+    "title": "Đăng ký thay đổi, bổ sung phạm vi chỉ định cơ sở kiểm nghiệm thực phẩm phục vụ quản lý nhà nước",
+    "group_key": "suc_khoe_y_te",
+    "workflow_family": null,
+    "subflow": null
+  },
+  "experience": {
+    "entry_label": "Hỗ trợ y tế và bảo hiểm",
+    "overview_summary": "Thủ tục này thuộc nhóm y tế, thường cần đối chiếu thông tin người bệnh, đơn vị tiếp nhận hoặc quyền lợi chuyên ngành. Kết quả thường nhận được là Quyết định thay đổi, bổ sung phạm vi chỉ định cơ sở kiểm nghiệm thực phẩm phục vụ quản lý nhà nước. Thời gian xử lý tham khảo: 30 ngày làm việc.",
+    "next_step_summary": "Nên xác định rõ đối tượng tham gia, quyền lợi hoặc nhu cầu điều chỉnh hồ sơ y tế trước khi nộp. Có thể chọn kênh nộp phù hợp: Trực tiếp, Trực tuyến, Dịch vụ bưu chính. Hiện có khoảng 12 mục giấy tờ cần theo dõi trong checklist.",
+    "tone": "supportive_public_service"
+  },
+  "guidance": {
+    "highlight_documents": [
+      {
+        "bucket": "required",
+        "name": "Danh sách, hồ sơ kiểm nghiệm viên tương ứng với lĩnh vực đăng ký chỉ định kèm theo bản sao có chứng thực các chứng chỉ chuyên môn;",
+        "conditions": [],
+        "attachment_path": null
+      },
+      {
+        "bucket": "required",
+        "name": "Quyết định thành lập hoặc Giấy chứng nhận đăng ký kinh doanh (bản sao có chứng thực);",
+        "conditions": [],
+        "attachment_path": null
+      },
+      {
+        "bucket": "required",
+        "name": "Đơn đăng ký chỉ định cơ sở kiểm nghiệm theo mẫu quy định tại Phụ lục 1 - TTLT số 20/2013/TTLT-BYT-BCT-BNNPTNT;",
+        "conditions": [],
+        "attachment_path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/2_001660/DKchidinhgiahanchidinh.docx"
+      },
+      {
+        "bucket": "required",
+        "name": "Báo cáo năng lực cơ sở kiểm nghiệm theo mẫu quy định tại Phụ lục 2 - TTLT số 20/2013/TTLT-BYT-BCT-BNNPTNT;",
+        "conditions": [],
+        "attachment_path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/2_001660/BCNLCSkiemnghiem.docx"
+      },
+      {
+        "bucket": "required",
+        "name": "Danh sách, hồ sơ trang thiết bị chính, cơ sở hạ tầng (phù hợp nội dung báo cáo năng lực hoạt động cơ sở kiểm nghiệm theo mẫu quy định tại Phụ lục 2 - TTLT số 20/2013/TTLT-BYT-BCT-BNNPTNT);",
+        "conditions": [],
+        "attachment_path": null
+      },
+      {
+        "bucket": "required",
+        "name": "Tài liệu, hồ sơ kỹ thuật và các quy trình liên quan đến chỉ tiêu/phép thử đăng ký chỉ định.",
+        "conditions": [],
+        "attachment_path": null
+      }
+    ],
+    "special_cases": [
+      "Có yếu tố nước ngoài",
+      "Có kiểm tra dữ liệu cư trú/định danh",
+      "Có thể cần đối chiếu thông tin thửa đất hoặc giấy chứng nhận"
+    ],
+    "common_errors": [
+      "Thiếu giấy tờ hợp pháp hóa hoặc giấy tờ nhân thân của phía nước ngoài.",
+      "Điền sai mẫu tờ khai hoặc chọn sai biểu mẫu đi kèm.",
+      "Thông tin thửa đất, tài sản hoặc giấy chứng nhận chưa khớp với hồ sơ hiện có."
+    ],
+    "validation_hints": [
+      "Nên xác định trước kênh nộp hồ sơ để biết có cần bản giấy, bản điện tử hay xuất trình trực tiếp.",
+      "Có mẫu biểu đính kèm, nên kiểm tra đúng biểu mẫu trước khi nộp.",
+      "Nên xác định đúng nhóm đối tượng, mã số bảo hiểm và quyền lợi áp dụng trước khi nộp."
+    ]
+  },
+  "intake": {
+    "candidate_input_fields": [
+      {
+        "field_id": "request_subject",
+        "label": "Đối tượng làm thủ tục",
+        "field_type": "text",
+        "required": true
+      },
+      {
+        "field_id": "insurance_or_medical_need",
+        "label": "Nhu cầu bảo hiểm hoặc y tế",
+        "field_type": "text",
+        "required": true
+      },
+      {
+        "field_id": "submission_channel_preference",
+        "label": "Kênh nộp dự kiến",
+        "field_type": "enum",
+        "required": false
+      },
+      {
+        "field_id": "has_insurance_number",
+        "label": "Đã có mã BHXH/BHYT",
+        "field_type": "boolean",
+        "required": false
+      }
+    ],
+    "suggested_clarifying_questions": [
+      "Bạn đang muốn đăng ký, điều chỉnh hay xác nhận quyền lợi y tế hoặc bảo hiểm nào?",
+      "Bạn đã có mã BHXH/BHYT hoặc thông tin đơn vị tiếp nhận liên quan chưa?"
+    ]
+  },
+  "ui_hints": {
+    "primary_channel": "online",
+    "result_label": "Quyết định thay đổi, bổ sung phạm vi chỉ định cơ sở kiểm nghiệm thực phẩm phục vụ quản lý nhà nước",
+    "time_badge": "30 ngày làm việc",
+    "document_count_badge": 12
+  },
+  "provenance": {
+    "generator": "workflow_domain_enricher",
+    "derivation_mode": "rule_based_semantic_enrichment",
+    "supported_group": true
+  }
+}

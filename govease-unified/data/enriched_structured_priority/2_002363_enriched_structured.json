@@ -1,0 +1,131 @@
+{
+  "schema_version": "1.0",
+  "enricher_version": "0.2.0",
+  "source": {
+    "procedure_code": "2.002363",
+    "title": "Ghi vào Sổ đăng ký nuôi con nuôi việc nuôi con nuôi đã được giải quyết tại cơ quan có thẩm quyền của nước ngoài",
+    "group_key": "hon_nhan_gia_dinh",
+    "workflow_family": "marriage_family_workflow",
+    "subflow": "nhan_con_nuoi"
+  },
+  "experience": {
+    "entry_label": "Hỗ trợ hộ tịch và gia đình",
+    "overview_summary": "Thủ tục này thuộc nhóm hộ tịch gia đình, thường yêu cầu đối chiếu thông tin nhân thân và tình trạng hôn nhân của các bên. Kết quả thường nhận được là Trích lục Ghi vào Sổ việc nuôi con nuôi đã được giải quyết tại cơ quan có thẩm quyền của nước ngoài; Trích lục Ghi vào Sổ việc nuôi con nuôi đã được giải quyết tại cơ quan có thẩm quyền của nước ngoài (bản sao). Thời gian xử lý tham khảo: 1 ngày.",
+    "next_step_summary": "Nên rà trước giấy tờ nhân thân của hai bên và các điều kiện đặc biệt nếu có yếu tố nước ngoài hoặc ủy quyền. Hiện có khoảng 8 mục giấy tờ cần theo dõi trong checklist.",
+    "tone": "supportive_public_service"
+  },
+  "guidance": {
+    "highlight_documents": [
+      {
+        "bucket": "required",
+        "name": "Bản sao có chứng thực giấy tờ chứng minh việc nuôi con nuôi đã được giải quyết tại cơ quan có thẩm quyền của nước ngoài.",
+        "conditions": [],
+        "attachment_path": null
+      },
+      {
+        "bucket": "required",
+        "name": "Tờ khai ghi vào Sổ hộ tịch việc nuôi con nuôi theo mẫu;",
+        "conditions": [],
+        "attachment_path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/2_002363/9..TKghivosccvichtchkhc.doc"
+      },
+      {
+        "bucket": "conditional",
+        "name": "Văn bản chứng nhận việc nuôi con nuôi đã được thực hiện phù hợp với điều ước quốc tế của cơ quan có thẩm quyền của nước ngoài (trong trường hợp việc nuôi con nuôi đã được giải quyết theo quy định của điều ước quốc tế mà Việt Nam và nước nơi giải quyết việc nuôi con nuôi cùng là thành viên).",
+        "conditions": [
+          "Văn bản chứng nhận việc nuôi con nuôi đã được thực hiện phù hợp với điều ước quốc tế của cơ quan có thẩm quyền của nước ngoài (trong trường hợp việc nuôi con nuôi đã được giải quyết theo quy định của điều ước quốc tế mà Việt Nam và nước nơi giải quyết việc nuôi con nuôi cùng là thành viên)."
+        ],
+        "attachment_path": null
+      },
+      {
+        "bucket": "conditional",
+        "name": "Văn bản ủy quyền (được chứng thực) theo quy định của pháp luật trong trường hợp ủy quyền việc ghi chú. Trường hợp người được ủy quyền là ông, bà, cha, mẹ, con, vợ, chồng, anh, chị, em ruột của người ủy quyền thì văn bản ủy quyền không phải chứng thực.",
+        "conditions": [
+          "Văn bản ủy quyền (được chứng thực) theo quy định của pháp luật trong trường hợp ủy quyền việc ghi chú. Trường hợp người được ủy quyền là ông, bà, cha, mẹ, con, vợ, chồng, anh, chị, em ruột của người ủy quyền thì văn bản ủy quyền không phải chứng thực."
+        ],
+        "attachment_path": null
+      },
+      {
+        "bucket": "conditional",
+        "name": "Biểu mẫu điện tử tương tác ghi vào Sổ hộ tịch việc nuôi con nuôi (do người yêu cầu cung cấp thông tin theo hướng dẫn trên Cổng dịch vụ công nếu người có yêu cầu lựa chọn nộp hồ sơ theo hình thức trực tuyến);",
+        "conditions": [
+          "Biểu mẫu điện tử tương tác ghi vào Sổ hộ tịch việc nuôi con nuôi (do người yêu cầu cung cấp thông tin theo hướng dẫn trên Cổng dịch vụ công nếu người có yêu cầu lựa chọn nộp hồ sơ theo hình thức trực tuyến);"
+        ],
+        "attachment_path": null
+      },
+      {
+        "bucket": "presented",
+        "name": "Hộ chiếu/Thẻ căn cước công dân/Thẻ căn cước/Căn cước điện tử/Giấy chứng nhận căn cước hoặc các giấy tờ khác có dán ảnh và thông tin cá nhân do cơ quan có thẩm quyền cấp, còn giá trị sử dụng (sau đây gọi tắt là giấy tờ tùy thân) để chứng minh về nhân thân khi làm thủ tục trực tiếp tại cơ quan đăng ký hộ tịch.",
+        "conditions": [],
+        "attachment_path": null
+      }
+    ],
+    "special_cases": [
+      "Có yếu tố nước ngoài",
+      "Có thể cần giấy tờ ủy quyền",
+      "Có trường hợp hồ sơ điện tử thay thế bản giấy",
+      "Có kiểm tra dữ liệu cư trú/định danh",
+      "Có thể cần đối chiếu thông tin thửa đất hoặc giấy chứng nhận"
+    ],
+    "common_errors": [
+      "Thông tin định danh hoặc cư trú không khớp với dữ liệu dân cư.",
+      "Thiếu giấy tờ hoặc nội dung ủy quyền phù hợp.",
+      "Thiếu giấy tờ hợp pháp hóa hoặc giấy tờ nhân thân của phía nước ngoài.",
+      "Điền sai mẫu tờ khai hoặc chọn sai biểu mẫu đi kèm.",
+      "Thông tin thửa đất, tài sản hoặc giấy chứng nhận chưa khớp với hồ sơ hiện có."
+    ],
+    "validation_hints": [
+      "Nên xác định trước kênh nộp hồ sơ để biết có cần bản giấy, bản điện tử hay xuất trình trực tiếp.",
+      "Có mẫu biểu đính kèm, nên kiểm tra đúng biểu mẫu trước khi nộp.",
+      "Thông tin hộ tịch giữa các giấy tờ phải thống nhất về họ tên, ngày sinh và quan hệ liên quan."
+    ]
+  },
+  "intake": {
+    "candidate_input_fields": [
+      {
+        "field_id": "party_one_full_name",
+        "label": "Người thứ nhất",
+        "field_type": "text",
+        "required": true
+      },
+      {
+        "field_id": "party_two_full_name",
+        "label": "Người thứ hai",
+        "field_type": "text",
+        "required": true
+      },
+      {
+        "field_id": "has_foreign_element",
+        "label": "Có yếu tố nước ngoài",
+        "field_type": "boolean",
+        "required": true
+      },
+      {
+        "field_id": "current_marital_status_docs",
+        "label": "Có giấy tờ chứng minh tình trạng hôn nhân",
+        "field_type": "boolean",
+        "required": true
+      },
+      {
+        "field_id": "submission_at_border_area",
+        "label": "Nộp tại khu vực biên giới",
+        "field_type": "boolean",
+        "required": false
+      }
+    ],
+    "suggested_clarifying_questions": [
+      "Hai bên đã có đủ giấy tờ nhân thân và tình trạng hôn nhân chưa?",
+      "Hồ sơ có yếu tố nước ngoài, khu vực biên giới hoặc ủy quyền không?"
+    ]
+  },
+  "ui_hints": {
+    "primary_channel": "online",
+    "result_label": "Trích lục Ghi vào Sổ việc nuôi con nuôi đã được giải quyết tại cơ quan có thẩm quyền của nước ngoài; Trích lục Ghi vào Sổ việc nuôi con nuôi đã được giải quyết tại cơ quan có thẩm quyền của nước ngoài (bản sao)",
+    "time_badge": "1 ngày",
+    "document_count_badge": 8
+  },
+  "provenance": {
+    "generator": "workflow_domain_enricher",
+    "derivation_mode": "rule_based_semantic_enrichment",
+    "supported_group": true
+  }
+}

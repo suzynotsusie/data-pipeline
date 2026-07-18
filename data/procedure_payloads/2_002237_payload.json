@@ -1,0 +1,348 @@
+{
+  "schema_version": "3.0",
+  "record_type": "public_service_procedure_payload",
+  "id": "procedure-2.002237",
+  "procedure_code": "2.002237",
+  "code": "2.002237",
+  "title": "Khai thuế thu nhập cá nhân tháng/quý đối với cá nhân có thu nhập từ tiền lương, tiền công (bao gồm cả cá nhân nhận thưởng bằng cổ phiếu từ đơn vị sử dụng lao động) thuộc diện khai thuế thu nhập cá nhân trực tiếp với cơ quan thuế",
+  "language": "vi",
+  "status": "generated_from_pipeline",
+  "field": "Thuế",
+  "group_key": "suc_khoe_y_te",
+  "workflow_family": null,
+  "subflow": null,
+  "source": {
+    "source_url": "file:///C:/Users/ku060/Downloads/VAIC%20source/data-pipeline/raw_data/2_002237/2_002237_procedure_detail.md",
+    "source_markdown_path": "C:\\Users\\ku060\\Downloads\\VAIC source\\data-pipeline\\raw_data\\2_002237\\2_002237_procedure_detail.md",
+    "normalized_payload_path": "C:\\Users\\ku060\\Downloads\\VAIC source\\data-pipeline\\govease-unified\\data\\normalized_structured\\2_002237_normalized_structured.json",
+    "enriched_payload_path": "C:\\Users\\ku060\\Downloads\\VAIC source\\data-pipeline\\govease-unified\\data\\enriched_structured_priority\\2_002237_enriched_structured.json"
+  },
+  "scope": {
+    "included": "Thủ tục này thuộc nhóm y tế, thường cần đối chiếu thông tin người bệnh, đơn vị tiếp nhận hoặc quyền lợi chuyên ngành. Kết quả thường nhận được là Hồ sơ gửi đến cơ quan thuế không có kết quả giải quyết. Thời gian xử lý tham khảo: Không phải trả kết quả cho người nộp thuế ngày.",
+    "not_included": []
+  },
+  "agency": {
+    "executing_agency": "Thuế tỉnh, thành phố, Thuế cơ sở",
+    "submission_place": null,
+    "receiving_places": []
+  },
+  "target_users": [
+    "Công dân Việt Nam",
+    "Cán bộ",
+    "công chức",
+    "viên chức",
+    "Người Việt Nam định cư ở nước ngoài"
+  ],
+  "submission_methods": [
+    {
+      "code": "ONLINE",
+      "label": "Trực tuyến",
+      "processing_time": "Không phải trả kết quả cho người nộp thuế ngày",
+      "fee": null,
+      "description": "Qua Cổng dịch vụ công quốc gia"
+    },
+    {
+      "code": "POSTAL",
+      "label": "Dịch vụ bưu chính",
+      "processing_time": "Không phải trả kết quả cho người nộp thuế ngày",
+      "fee": null,
+      "description": "Thông qua dịch vụ bưu chính công ích theo quy định của Thủ tướng Chính phủ, qua thuê dịch vụ của doanh nghiệp, cá nhân hoặc qua ủy quyền theo quy định của pháp luật"
+    },
+    {
+      "code": "IN_PERSON",
+      "label": "Trực tiếp",
+      "processing_time": "Không phải trả kết quả cho người nộp thuế ngày",
+      "fee": null,
+      "description": "Tại TTPVHCC cấp tỉnh, xã"
+    }
+  ],
+  "processing_note": "Thời gian xử lý tham chiếu: Không phải trả kết quả cho người nộp thuế ngày. Nên xác định rõ đối tượng tham gia, quyền lợi hoặc nhu cầu điều chỉnh hồ sơ y tế trước khi nộp. Có thể chọn kênh nộp phù hợp: Trực tiếp, Trực tuyến, Dịch vụ bưu chính. Hiện có 1 mục giấy tờ cần theo dõi trong checklist.",
+  "documents": {
+    "normally_required": [
+      {
+        "name": "Tờ khai thuế thu nhập cá nhân (áp dụng đối với cá nhân cư trú và cá nhân không cư trú có thu nhập từ tiền lương, tiền công khai thuế trực tiếp với cơ quan thuế) mẫu số 02/KK-TNCN theo Phụ lục II - Mẫu biểu hồ sơ khai thuế ban hành kèm theo Thông tư số 80/2021/TT-BTC ngày 29/9/2021/TT-BTC của Bộ trưởng Bộ Tài chính hướng dẫn thi hành một số điều của Luật Quản lý thuế (đã được sửa đổi tại Thông tư số 40/2025/TT-BTC và Thông tư số 94/2025/TT-BTC) và Nghị định số 126/2020/NĐ-CP ngày 19/10/2020 của Chính phủ quy định chi tiết một số điều của Luật Quản lý thuế và Phụ lục I - Danh mục hồ sơ khai thuế ban hành kèm theo Nghị định số 126/2020/NĐ-CP ngày 19/10/2020 của Chính phủ quy định chi tiết một số điều của Luật Quản lý thuế",
+        "quantity": "1 bản chính, 0 bản sao",
+        "notes": [],
+        "group": "default",
+        "attachment_path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/2_002237/M%E1%BA%ABu%2002%20KK%20TNCN.docx"
+      }
+    ],
+    "conditional": [],
+    "forms": [
+      {
+        "name": "Tờ khai thuế thu nhập cá nhân (áp dụng đối với cá nhân cư trú và cá nhân không cư trú có thu nhập từ tiền lương, tiền công khai thuế trực tiếp với cơ quan thuế) mẫu số 02/KK-TNCN theo Phụ lục II - Mẫu biểu hồ sơ khai thuế ban hành kèm theo Thông tư số 80/2021/TT-BTC ngày 29/9/2021/TT-BTC của Bộ trưởng Bộ Tài chính hướng dẫn thi hành một số điều của Luật Quản lý thuế (đã được sửa đổi tại Thông tư số 40/2025/TT-BTC và Thông tư số 94/2025/TT-BTC) và Nghị định số 126/2020/NĐ-CP ngày 19/10/2020 của Chính phủ quy định chi tiết một số điều của Luật Quản lý thuế và Phụ lục I - Danh mục hồ sơ khai thuế ban hành kèm theo Nghị định số 126/2020/NĐ-CP ngày 19/10/2020 của Chính phủ quy định chi tiết một số điều của Luật Quản lý thuế",
+        "attachment_label": "Mẫu 02 KK TNCN.docx",
+        "attachment_path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/2_002237/M%E1%BA%ABu%2002%20KK%20TNCN.docx"
+      }
+    ],
+    "presented": [],
+    "notes": [],
+    "summary": [
+      {
+        "group": "default",
+        "name": "Tờ khai thuế thu nhập cá nhân (áp dụng đối với cá nhân cư trú và cá nhân không cư trú có thu nhập từ tiền lương, tiền công khai thuế trực tiếp với cơ quan thuế) mẫu số 02/KK-TNCN theo Phụ lục II - Mẫu biểu hồ sơ khai thuế ban hành kèm theo Thông tư số 80/2021/TT-BTC ngày 29/9/2021/TT-BTC của Bộ trưởng Bộ Tài chính hướng dẫn thi hành một số điều của Luật Quản lý thuế (đã được sửa đổi tại Thông tư số 40/2025/TT-BTC và Thông tư số 94/2025/TT-BTC) và Nghị định số 126/2020/NĐ-CP ngày 19/10/2020 của Chính phủ quy định chi tiết một số điều của Luật Quản lý thuế và Phụ lục I - Danh mục hồ sơ khai thuế ban hành kèm theo Nghị định số 126/2020/NĐ-CP ngày 19/10/2020 của Chính phủ quy định chi tiết một số điều của Luật Quản lý thuế",
+        "quantity": "1 bản chính, 0 bản sao",
+        "notes": [],
+        "attachment_path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/2_002237/M%E1%BA%ABu%2002%20KK%20TNCN.docx"
+      },
+      {
+        "group": null,
+        "name": "Tờ khai thuế thu nhập cá nhân (áp dụng đối với cá nhân cư trú và cá nhân không cư trú có thu nhập từ tiền lương, tiền công khai thuế trực tiếp với cơ quan thuế) mẫu số 02/KK-TNCN theo Phụ lục II - Mẫu biểu hồ sơ khai thuế ban hành kèm theo Thông tư số 80/2021/TT-BTC ngày 29/9/2021/TT-BTC của Bộ trưởng Bộ Tài chính hướng dẫn thi hành một số điều của Luật Quản lý thuế (đã được sửa đổi tại Thông tư số 40/2025/TT-BTC và Thông tư số 94/2025/TT-BTC) và Nghị định số 126/2020/NĐ-CP ngày 19/10/2020 của Chính phủ quy định chi tiết một số điều của Luật Quản lý thuế và Phụ lục I - Danh mục hồ sơ khai thuế ban hành kèm theo Nghị định số 126/2020/NĐ-CP ngày 19/10/2020 của Chính phủ quy định chi tiết một số điều của Luật Quản lý thuế",
+        "quantity": null,
+        "notes": null,
+        "attachment_path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/2_002237/M%E1%BA%ABu%2002%20KK%20TNCN.docx"
+      }
+    ]
+  },
+  "steps": [
+    {
+      "order": 1,
+      "title": "Bước 1",
+      "description": "1. +",
+      "example": null
+    },
+    {
+      "order": 2,
+      "title": "Bước 1.",
+      "description": "Bước 1. ++ Trường hợp 1: Cá nhân có thu nhập từ tiền lương, tiền công thuộc diện khai thuế thu nhập cá nhân trực tiếp với cơ quan thuế: +++ Cá nhân có thu nhập từ tiền lương, tiền công do các tổ chức Quốc tế, Đại sứ quán, Lãnh sự quán tại Việt Nam trả nhưng chưa khấu trừ thuế; +++ Cá nhân cư trú có thu nhập từ tiền lương, tiền công trả từ nước ngoài; +++ Cá nhân không cư trú có thu nhập từ tiền lương, tiền công phát sinh tại Việt Nam nhưng được trả từ nước ngoài; +++ Cá nhân chuẩn bị hồ sơ khai thuế và gửi đến cơ quan thuế chậm nhất là ngày thứ 20 (hai mươi) của tháng tiếp theo tháng phát sinh nghĩa vụ thuế nếu cá nhân khai thuế theo tháng hoặc ngày cuối cùng của tháng đầu tiên của quý tiếp theo quý phát sinh nghĩa vụ thuế nếu cá nhân khai thuế theo quý. ++ Trường hợp 2: Cá nhân nhận thưởng bằng cổ phiếu từ đơn vị sử dụng lao động khai thuế thu nhập cá nhân trực tiếp với cơ quan thuế: +++ Cá nhân khi nhận thưởng bằng cổ phiếu từ đơn vị sử dụng lao động chưa phải nộp thuế đối với thu nhập từ tiền lương, tiền công; +++ Khi cá nhân chuyển nhượng cổ phiếu cùng loại thì khai thuế đối với thu nhập từ chuyển nhượng cổ phiếu và thu nhập từ tiền lương, tiền công do được thưởng bằng cổ phiếu; +++ Cá nhân chuẩn bị hồ sơ khai thuế và gửi đến cơ quan thuế quản lý chậm nhất là ngày thứ 10 kể từ ngày chuyển nhượng cổ phiếu cùng loại. +",
+      "example": "trực tiếp"
+    },
+    {
+      "order": 3,
+      "title": "Bước 2.",
+      "description": "Bước 2. Cơ quan thuế thực hiện tiếp nhận: ++ Trường hợp hồ sơ được nộp trực tiếp tại cơ quan thuế hoặc hồ sơ được gửi qua đường bưu chính: cơ quan thuế thực hiện tiếp nhận, giải quyết hồ sơ theo quy định. ++ Trường hợp hồ sơ được nộp thông qua giao dịch điện tử, việc tiếp nhận, kiểm tra, chấp nhận, giải quyết hồ sơ (và trả kết quả nếu có kết quả) thông qua hệ thống xử lý dữ liệu điện tử của cơ quan thuế.",
+      "example": "dịch vụ bưu chính"
+    }
+  ],
+  "input_fields": [
+    {
+      "field": "request_subject",
+      "label": "Đối tượng làm thủ tục",
+      "type": "string",
+      "required": true
+    },
+    {
+      "field": "insurance_or_medical_need",
+      "label": "Nhu cầu bảo hiểm hoặc y tế",
+      "type": "string",
+      "required": true
+    },
+    {
+      "field": "submission_channel_preference",
+      "label": "Kênh nộp dự kiến",
+      "type": "enum",
+      "required": false,
+      "options": [
+        "Trực tiếp",
+        "Trực tuyến",
+        "Dịch vụ bưu chính"
+      ]
+    },
+    {
+      "field": "has_insurance_number",
+      "label": "Đã có mã BHXH/BHYT",
+      "type": "boolean",
+      "required": false
+    }
+  ],
+  "validation_rules": [
+    {
+      "id": "required-1",
+      "severity": "error",
+      "field": "request_subject",
+      "rule": "Trường bắt buộc phải có dữ liệu hợp lệ trước khi nộp.",
+      "message": "Thiếu trường bắt buộc: Đối tượng làm thủ tục."
+    },
+    {
+      "id": "required-2",
+      "severity": "error",
+      "field": "insurance_or_medical_need",
+      "rule": "Trường bắt buộc phải có dữ liệu hợp lệ trước khi nộp.",
+      "message": "Thiếu trường bắt buộc: Nhu cầu bảo hiểm hoặc y tế."
+    },
+    {
+      "id": "hint-1",
+      "severity": "warning",
+      "field": "general",
+      "rule": "Nên xác định trước kênh nộp hồ sơ để biết có cần bản giấy, bản điện tử hay xuất trình trực tiếp.",
+      "message": "Nên xác định trước kênh nộp hồ sơ để biết có cần bản giấy, bản điện tử hay xuất trình trực tiếp."
+    },
+    {
+      "id": "hint-2",
+      "severity": "warning",
+      "field": "general",
+      "rule": "Có mẫu biểu đính kèm, nên kiểm tra đúng biểu mẫu trước khi nộp.",
+      "message": "Có mẫu biểu đính kèm, nên kiểm tra đúng biểu mẫu trước khi nộp."
+    },
+    {
+      "id": "hint-3",
+      "severity": "warning",
+      "field": "general",
+      "rule": "Nên xác định đúng nhóm đối tượng, mã số bảo hiểm và quyền lợi áp dụng trước khi nộp.",
+      "message": "Nên xác định đúng nhóm đối tượng, mã số bảo hiểm và quyền lợi áp dụng trước khi nộp."
+    }
+  ],
+  "common_errors": [
+    {
+      "field": "general",
+      "issue": "Điền sai mẫu tờ khai hoặc chọn sai biểu mẫu đi kèm.",
+      "fix": "Nên xác định trước kênh nộp hồ sơ để biết có cần bản giấy, bản điện tử hay xuất trình trực tiếp."
+    }
+  ],
+  "clarifying_questions": [
+    {
+      "id": "clarify_1",
+      "question": "Bạn đang muốn đăng ký, điều chỉnh hay xác nhận quyền lợi y tế hoặc bảo hiểm nào?",
+      "purpose": "workflow_intake"
+    },
+    {
+      "id": "clarify_2",
+      "question": "Bạn đã có mã BHXH/BHYT hoặc thông tin đơn vị tiếp nhận liên quan chưa?",
+      "purpose": "workflow_intake"
+    }
+  ],
+  "legal_basis": [
+    {
+      "title": "Thông tư số 40/2025/TT-BTC Sửa đổi, bổ sung một số điều của các Thông tư thuộc lĩnh vực quản lý thuế để phân định thẩm quyền của chính quyền địa phương theo mô hình tổ chức chính quyền địa phương 02 cấp",
+      "code": "40/2025/TT-BTC"
+    },
+    {
+      "title": "sửa đổi một số điều của Thông tư 19/2021/TT-BTC ngày 18/3/2021 của Bộ trưởng Bộ Tài chính hướng dẫn giao dịch điện tử trong lĩnh vực thuế",
+      "code": "46/2024/TT-BTC"
+    },
+    {
+      "title": "Nghị định số 91/2022/NĐ-CP sửa đổi bổ sung một số điều của Nghị định số 126/2020/NĐ-CP ngày 19/10/2020 của Chính phủ quy định chi tiết một số điều của Luật Quản lý thuế",
+      "code": "91/2022/NĐ-CP"
+    },
+    {
+      "title": "Nghị quyết số 66.16/2026/NQ-CP của Chính phủ ngày 07/04/2026 về việc Cắt giảm, đơn giản hóa thủ tục hành chính,quy định liên quan đến hoạt động sản xuất, kinh doanh",
+      "code": "66.16/2026/NQ-CP"
+    },
+    {
+      "title": "Nghị định số 118/2025/NĐ-CP của Chính phủ: Về thực hiện thủ tục hành chính theo cơ chế một cửa, một cửa liên thông tại Bộ phận Một cửa và Cổng Dịch vụ công quốc gia",
+      "code": "118/2025/NĐ-CP"
+    },
+    {
+      "title": "Luật số 56/2024/QH15 của Quốc hội: Luật sửa đổi, bổ sung một số điều của Luật Chứng khoán, Luật Kế toán, Luật Kiểm toán độc lập, Luật Ngân sách nhà nước, Luật Quản lý, sử dụng tài sản công, Luật Quản lý thuế, Luật Thuế thu nhập cá nhân, Luật Dự trữ quốc gia, Luật Xử lý vi phạm hành chính",
+      "code": "56/2024/QH15"
+    },
+    {
+      "title": "Thông tư 80/2021/TT-BTC",
+      "code": "80/2021/TT-BTC"
+    },
+    {
+      "title": "Luật Quản lý thuế",
+      "code": "38/2019/QH14"
+    },
+    {
+      "title": "Nghị định 126/2020/NĐ-CP",
+      "code": "126/2020/NĐ-CP"
+    },
+    {
+      "title": "Thông tư số 19/2021/TT-BTC ngày 18/3/2021 của Bộ Tài chính hướng dẫn Giao dịch điện tử trong lĩnh vực thuế",
+      "code": "19/2021/TT-BTC"
+    },
+    {
+      "title": "Thông tư sửa đổi, bổ sung một số điều của Thông tư số 80/2021/TT-BTC ngày 29 tháng 9 năm 2021 của Bộ Tài chính hướng dẫn thi hành một số điều của Luật Quản lý thuế và Nghị định số 126/2020/NĐ-CP ngày 19 tháng 10 năm 2020 của Chính phủ quy định chi tiết một số điều của Luật Quản lý thuế và sửa đổi, bổ sung một số mẫu biểu của Thông tư số 40/2021/TT-BTC ngày 01 tháng 6 năm 2021 của Bộ Tài chính hướng dẫn thuế giá trị gia tăng, thuế thu nhập cá nhân và quản lý thuế đối với hộ kinh doanh, cá nhân kinh doanh",
+      "code": "94/2025/TT-BTC"
+    }
+  ],
+  "legal_bases": [
+    {
+      "title": "Thông tư số 40/2025/TT-BTC Sửa đổi, bổ sung một số điều của các Thông tư thuộc lĩnh vực quản lý thuế để phân định thẩm quyền của chính quyền địa phương theo mô hình tổ chức chính quyền địa phương 02 cấp",
+      "code": "40/2025/TT-BTC"
+    },
+    {
+      "title": "sửa đổi một số điều của Thông tư 19/2021/TT-BTC ngày 18/3/2021 của Bộ trưởng Bộ Tài chính hướng dẫn giao dịch điện tử trong lĩnh vực thuế",
+      "code": "46/2024/TT-BTC"
+    },
+    {
+      "title": "Nghị định số 91/2022/NĐ-CP sửa đổi bổ sung một số điều của Nghị định số 126/2020/NĐ-CP ngày 19/10/2020 của Chính phủ quy định chi tiết một số điều của Luật Quản lý thuế",
+      "code": "91/2022/NĐ-CP"
+    },
+    {
+      "title": "Nghị quyết số 66.16/2026/NQ-CP của Chính phủ ngày 07/04/2026 về việc Cắt giảm, đơn giản hóa thủ tục hành chính,quy định liên quan đến hoạt động sản xuất, kinh doanh",
+      "code": "66.16/2026/NQ-CP"
+    },
+    {
+      "title": "Nghị định số 118/2025/NĐ-CP của Chính phủ: Về thực hiện thủ tục hành chính theo cơ chế một cửa, một cửa liên thông tại Bộ phận Một cửa và Cổng Dịch vụ công quốc gia",
+      "code": "118/2025/NĐ-CP"
+    },
+    {
+      "title": "Luật số 56/2024/QH15 của Quốc hội: Luật sửa đổi, bổ sung một số điều của Luật Chứng khoán, Luật Kế toán, Luật Kiểm toán độc lập, Luật Ngân sách nhà nước, Luật Quản lý, sử dụng tài sản công, Luật Quản lý thuế, Luật Thuế thu nhập cá nhân, Luật Dự trữ quốc gia, Luật Xử lý vi phạm hành chính",
+      "code": "56/2024/QH15"
+    },
+    {
+      "title": "Thông tư 80/2021/TT-BTC",
+      "code": "80/2021/TT-BTC"
+    },
+    {
+      "title": "Luật Quản lý thuế",
+      "code": "38/2019/QH14"
+    },
+    {
+      "title": "Nghị định 126/2020/NĐ-CP",
+      "code": "126/2020/NĐ-CP"
+    },
+    {
+      "title": "Thông tư số 19/2021/TT-BTC ngày 18/3/2021 của Bộ Tài chính hướng dẫn Giao dịch điện tử trong lĩnh vực thuế",
+      "code": "19/2021/TT-BTC"
+    },
+    {
+      "title": "Thông tư sửa đổi, bổ sung một số điều của Thông tư số 80/2021/TT-BTC ngày 29 tháng 9 năm 2021 của Bộ Tài chính hướng dẫn thi hành một số điều của Luật Quản lý thuế và Nghị định số 126/2020/NĐ-CP ngày 19 tháng 10 năm 2020 của Chính phủ quy định chi tiết một số điều của Luật Quản lý thuế và sửa đổi, bổ sung một số mẫu biểu của Thông tư số 40/2021/TT-BTC ngày 01 tháng 6 năm 2021 của Bộ Tài chính hướng dẫn thuế giá trị gia tăng, thuế thu nhập cá nhân và quản lý thuế đối với hộ kinh doanh, cá nhân kinh doanh",
+      "code": "94/2025/TT-BTC"
+    }
+  ],
+  "faq": [
+    {
+      "question": "Có thể nộp qua kênh nào?",
+      "answer": "Các kênh hiện có: Trực tiếp, Trực tuyến, Dịch vụ bưu chính."
+    },
+    {
+      "question": "Thời gian xử lý tham chiếu là bao lâu?",
+      "answer": "Thời gian xử lý tham chiếu hiện có là Không phải trả kết quả cho người nộp thuế ngày."
+    },
+    {
+      "question": "Kết quả chính của thủ tục là gì?",
+      "answer": "Kết quả chính được trích xuất là Hồ sơ gửi đến cơ quan thuế không có kết quả giải quyết."
+    }
+  ],
+  "guidance": {
+    "highlight_documents": [
+      {
+        "bucket": "required",
+        "name": "Tờ khai thuế thu nhập cá nhân (áp dụng đối với cá nhân cư trú và cá nhân không cư trú có thu nhập từ tiền lương, tiền công khai thuế trực tiếp với cơ quan thuế) mẫu số 02/KK-TNCN theo Phụ lục II - Mẫu biểu hồ sơ khai thuế ban hành kèm theo Thông tư số 80/2021/TT-BTC ngày 29/9/2021/TT-BTC của Bộ trưởng Bộ Tài chính hướng dẫn thi hành một số điều của Luật Quản lý thuế (đã được sửa đổi tại Thông tư số 40/2025/TT-BTC và Thông tư số 94/2025/TT-BTC) và Nghị định số 126/2020/NĐ-CP ngày 19/10/2020 của Chính phủ quy định chi tiết một số điều của Luật Quản lý thuế và Phụ lục I - Danh mục hồ sơ khai thuế ban hành kèm theo Nghị định số 126/2020/NĐ-CP ngày 19/10/2020 của Chính phủ quy định chi tiết một số điều của Luật Quản lý thuế",
+        "conditions": [],
+        "attachment_path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/2_002237/M%E1%BA%ABu%2002%20KK%20TNCN.docx"
+      }
+    ],
+    "special_cases": [],
+    "common_errors": [
+      "Điền sai mẫu tờ khai hoặc chọn sai biểu mẫu đi kèm."
+    ],
+    "validation_hints": [
+      "Nên xác định trước kênh nộp hồ sơ để biết có cần bản giấy, bản điện tử hay xuất trình trực tiếp.",
+      "Có mẫu biểu đính kèm, nên kiểm tra đúng biểu mẫu trước khi nộp.",
+      "Nên xác định đúng nhóm đối tượng, mã số bảo hiểm và quyền lợi áp dụng trước khi nộp."
+    ]
+  },
+  "next_steps": {
+    "summary": "Nên xác định rõ đối tượng tham gia, quyền lợi hoặc nhu cầu điều chỉnh hồ sơ y tế trước khi nộp. Có thể chọn kênh nộp phù hợp: Trực tiếp, Trực tuyến, Dịch vụ bưu chính. Hiện có 1 mục giấy tờ cần theo dõi trong checklist.",
+    "time_badge": "Không phải trả kết quả cho người nộp thuế ngày",
+    "result_label": "Hồ sơ gửi đến cơ quan thuế không có kết quả giải quyết",
+    "primary_channel": "online",
+    "channels": [
+      "in_person",
+      "online",
+      "postal"
+    ]
+  },
+  "notes": [],
+  "provenance": {
+    "pipeline": "raw->structured->normalized->enriched->ui_api_payload",
+    "normalizer_version": "0.2.0",
+    "enricher_version": "0.2.0",
+    "mapping_notes": "workflow_generated:viec_lam/thue_thu_nhap_ca_nhan",
+    "supported_group": true
+  }
+}

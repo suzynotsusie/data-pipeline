@@ -1,0 +1,108 @@
+{
+  "schema_version": "1.0",
+  "enricher_version": "0.2.0",
+  "source": {
+    "procedure_code": "2.001322",
+    "title": "Thẩm định, phê duyệt quy trình vận hành hồ chứa thủy điện thuộc thẩm quyền phê duyệt của Ủy ban nhân dân cấp tỉnh",
+    "group_key": "suc_khoe_y_te",
+    "workflow_family": null,
+    "subflow": null
+  },
+  "experience": {
+    "entry_label": "Hỗ trợ y tế và bảo hiểm",
+    "overview_summary": "Thủ tục này thuộc nhóm y tế, thường cần đối chiếu thông tin người bệnh, đơn vị tiếp nhận hoặc quyền lợi chuyên ngành. Kết quả thường nhận được là Quyết định phê duyệt QTVH hồ chứa thủy điện thuộc thẩm quyền của UBND tỉnh. Thời gian xử lý tham khảo: 30 ngày làm việc.",
+    "next_step_summary": "Nên xác định rõ đối tượng tham gia, quyền lợi hoặc nhu cầu điều chỉnh hồ sơ y tế trước khi nộp. Có thể chọn kênh nộp phù hợp: Trực tiếp, Trực tuyến, Dịch vụ bưu chính. Hiện có khoảng 6 mục giấy tờ cần theo dõi trong checklist.",
+    "tone": "supportive_public_service"
+  },
+  "guidance": {
+    "highlight_documents": [
+      {
+        "bucket": "required",
+        "name": "Tờ trình đề nghị phê duyệt;",
+        "conditions": [],
+        "attachment_path": null
+      },
+      {
+        "bucket": "required",
+        "name": "Văn bản góp ý kiến của các cơ quan, đơn vị liên quan;",
+        "conditions": [],
+        "attachment_path": null
+      },
+      {
+        "bucket": "required",
+        "name": "Mặt bằng tổng thể công trình thủy điện và các bản vẽ mặt bằng, mặt cắt chính thể hiện công trình, hạng mục công trình (đập, hồ chứa thủy điện, nhà máy, tuyến năng lượng)",
+        "conditions": [],
+        "attachment_path": null
+      },
+      {
+        "bucket": "required",
+        "name": "Báo cáo thuyết minh kết quả tính toán kỹ thuật;",
+        "conditions": [],
+        "attachment_path": null
+      },
+      {
+        "bucket": "required",
+        "name": "Dự thảo quy trình;",
+        "conditions": [],
+        "attachment_path": null
+      },
+      {
+        "bucket": "conditional",
+        "name": "Các tài liệu liên quan khác kèm theo (nếu có).",
+        "conditions": [
+          "Các tài liệu liên quan khác kèm theo (nếu có)."
+        ],
+        "attachment_path": null
+      }
+    ],
+    "special_cases": [],
+    "common_errors": [],
+    "validation_hints": [
+      "Nên xác định trước kênh nộp hồ sơ để biết có cần bản giấy, bản điện tử hay xuất trình trực tiếp.",
+      "Nên xác định đúng nhóm đối tượng, mã số bảo hiểm và quyền lợi áp dụng trước khi nộp."
+    ]
+  },
+  "intake": {
+    "candidate_input_fields": [
+      {
+        "field_id": "request_subject",
+        "label": "Đối tượng làm thủ tục",
+        "field_type": "text",
+        "required": true
+      },
+      {
+        "field_id": "insurance_or_medical_need",
+        "label": "Nhu cầu bảo hiểm hoặc y tế",
+        "field_type": "text",
+        "required": true
+      },
+      {
+        "field_id": "submission_channel_preference",
+        "label": "Kênh nộp dự kiến",
+        "field_type": "enum",
+        "required": false
+      },
+      {
+        "field_id": "has_insurance_number",
+        "label": "Đã có mã BHXH/BHYT",
+        "field_type": "boolean",
+        "required": false
+      }
+    ],
+    "suggested_clarifying_questions": [
+      "Bạn đang muốn đăng ký, điều chỉnh hay xác nhận quyền lợi y tế hoặc bảo hiểm nào?",
+      "Bạn đã có mã BHXH/BHYT hoặc thông tin đơn vị tiếp nhận liên quan chưa?"
+    ]
+  },
+  "ui_hints": {
+    "primary_channel": "online",
+    "result_label": "Quyết định phê duyệt QTVH hồ chứa thủy điện thuộc thẩm quyền của UBND tỉnh",
+    "time_badge": "30 ngày làm việc",
+    "document_count_badge": 6
+  },
+  "provenance": {
+    "generator": "workflow_domain_enricher",
+    "derivation_mode": "rule_based_semantic_enrichment",
+    "supported_group": true
+  }
+}

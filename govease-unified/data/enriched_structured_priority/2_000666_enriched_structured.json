@@ -1,0 +1,99 @@
+{
+  "schema_version": "1.0",
+  "enricher_version": "0.2.0",
+  "source": {
+    "procedure_code": "2.000666",
+    "title": "Cấp sửa đổi, bổ sung Giấy xác nhận đủ điều kiện làm tổng đại lý kinh doanh xăng dầu thuộc thẩm quyền cấp của Sở Công Thương",
+    "group_key": "suc_khoe_y_te",
+    "workflow_family": null,
+    "subflow": null
+  },
+  "experience": {
+    "entry_label": "Hỗ trợ y tế và bảo hiểm",
+    "overview_summary": "Thủ tục này thuộc nhóm y tế, thường cần đối chiếu thông tin người bệnh, đơn vị tiếp nhận hoặc quyền lợi chuyên ngành. Kết quả thường nhận được là Giấy xác nhận đủ điều kiện làm tổng đại lý kinh doanh xăng dầu. Thời gian xử lý tham khảo: 30 ngày làm việc.",
+    "next_step_summary": "Nên xác định rõ đối tượng tham gia, quyền lợi hoặc nhu cầu điều chỉnh hồ sơ y tế trước khi nộp. Có thể chọn kênh nộp phù hợp: Trực tiếp, Trực tuyến, Dịch vụ bưu chính. Hiện có khoảng 4 mục giấy tờ cần theo dõi trong checklist.",
+    "tone": "supportive_public_service"
+  },
+  "guidance": {
+    "highlight_documents": [
+      {
+        "bucket": "required",
+        "name": "Các tài liệu chứng minh yêu cầu bổ sung, sửa đổi.",
+        "conditions": [],
+        "attachment_path": null
+      },
+      {
+        "bucket": "required",
+        "name": "Bản gốc Giấy xác nhận đủ điều kiện làm tổng đại lý kinh doanh xăng dầu đã được cấp;",
+        "conditions": [],
+        "attachment_path": null
+      },
+      {
+        "bucket": "required",
+        "name": "Đơn đề nghị cấp bổ sung, sửa đổi Giấy xác nhận đủ điều kiện làm tổng đại lý kinh doanh xăng dầu theo Mẫu số 7 tại Phụ lục kèm theo Nghị định số 83/2014/NĐ-CP;",
+        "conditions": [],
+        "attachment_path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/2_000666/Mus7.docx"
+      },
+      {
+        "bucket": "conditional",
+        "name": "Trường hợp có thay đổi các nội dung của Giấy xác nhận đủ điều kiện làm tổng đại lý kinh doanh xăng dầu, thương nhân phải lập hồ sơ gửi về cơ quan có thẩm quyền đề nghị bổ sung, sửa đổi Giấy xác nhận. Hồ sơ gồm:",
+        "conditions": [
+          "Trường hợp có thay đổi các nội dung của Giấy xác nhận đủ điều kiện làm tổng đại lý kinh doanh xăng dầu, thương nhân phải lập hồ sơ gửi về cơ quan có thẩm quyền đề nghị bổ sung, sửa đổi Giấy xác nhận. Hồ sơ gồm:"
+        ],
+        "attachment_path": null
+      }
+    ],
+    "special_cases": [],
+    "common_errors": [
+      "Điền sai mẫu tờ khai hoặc chọn sai biểu mẫu đi kèm."
+    ],
+    "validation_hints": [
+      "Nên xác định trước kênh nộp hồ sơ để biết có cần bản giấy, bản điện tử hay xuất trình trực tiếp.",
+      "Có mẫu biểu đính kèm, nên kiểm tra đúng biểu mẫu trước khi nộp.",
+      "Nên xác định đúng nhóm đối tượng, mã số bảo hiểm và quyền lợi áp dụng trước khi nộp."
+    ]
+  },
+  "intake": {
+    "candidate_input_fields": [
+      {
+        "field_id": "request_subject",
+        "label": "Đối tượng làm thủ tục",
+        "field_type": "text",
+        "required": true
+      },
+      {
+        "field_id": "insurance_or_medical_need",
+        "label": "Nhu cầu bảo hiểm hoặc y tế",
+        "field_type": "text",
+        "required": true
+      },
+      {
+        "field_id": "submission_channel_preference",
+        "label": "Kênh nộp dự kiến",
+        "field_type": "enum",
+        "required": false
+      },
+      {
+        "field_id": "has_insurance_number",
+        "label": "Đã có mã BHXH/BHYT",
+        "field_type": "boolean",
+        "required": false
+      }
+    ],
+    "suggested_clarifying_questions": [
+      "Bạn đang muốn đăng ký, điều chỉnh hay xác nhận quyền lợi y tế hoặc bảo hiểm nào?",
+      "Bạn đã có mã BHXH/BHYT hoặc thông tin đơn vị tiếp nhận liên quan chưa?"
+    ]
+  },
+  "ui_hints": {
+    "primary_channel": "online",
+    "result_label": "Giấy xác nhận đủ điều kiện làm tổng đại lý kinh doanh xăng dầu",
+    "time_badge": "30 ngày làm việc",
+    "document_count_badge": 4
+  },
+  "provenance": {
+    "generator": "workflow_domain_enricher",
+    "derivation_mode": "rule_based_semantic_enrichment",
+    "supported_group": true
+  }
+}

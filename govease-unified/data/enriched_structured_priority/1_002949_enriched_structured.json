@@ -1,0 +1,115 @@
+{
+  "schema_version": "1.0",
+  "enricher_version": "0.2.0",
+  "source": {
+    "procedure_code": "1.002949",
+    "title": "Cấp mới số lưu hành đối với trang thiết bị y tế loại C, D là phương tiện đo phải phê duyệt mẫu theo quy định của pháp luật về đo lường",
+    "group_key": "suc_khoe_y_te",
+    "workflow_family": null,
+    "subflow": null
+  },
+  "experience": {
+    "entry_label": "Hỗ trợ y tế và bảo hiểm",
+    "overview_summary": "Thủ tục này thuộc nhóm y tế, thường cần đối chiếu thông tin người bệnh, đơn vị tiếp nhận hoặc quyền lợi chuyên ngành. Kết quả thường nhận được là Số đăng ký lưu hành trang thiết bị y tế. Thời gian xử lý tham khảo: 10 ngày làm việc.",
+    "next_step_summary": "Nên xác định rõ đối tượng tham gia, quyền lợi hoặc nhu cầu điều chỉnh hồ sơ y tế trước khi nộp. Có thể chọn kênh nộp phù hợp: Trực tiếp, Trực tuyến, Dịch vụ bưu chính. Hiện có khoảng 11 mục giấy tờ cần theo dõi trong checklist.",
+    "tone": "supportive_public_service"
+  },
+  "guidance": {
+    "highlight_documents": [
+      {
+        "bucket": "required",
+        "name": "Quyết định phê duyệt mẫu",
+        "conditions": [],
+        "attachment_path": null
+      },
+      {
+        "bucket": "required",
+        "name": "Giấy chứng nhận đạt tiêu chuẩn quản lý chất lượng ISO 13845 còn hiệu lực tại thời điểm nộp hồ sơ.",
+        "conditions": [],
+        "attachment_path": null
+      },
+      {
+        "bucket": "required",
+        "name": "Giấy lưu hành còn hiệu lực tại thời điểm nộp hồ sơ đối với trang thiết bị y tế nhập khẩu.",
+        "conditions": [],
+        "attachment_path": null
+      },
+      {
+        "bucket": "required",
+        "name": "Hồ sơ kỹ thuật chung về trang thiết bị y tế theo quy định của ASEAN (hồ sơ CSDT) đối với hồ sơ nộp từ ngày 01/01/2024",
+        "conditions": [],
+        "attachment_path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/1_002949/Ph%E1%BB%A5%20l%E1%BB%A5c%20IV%202962Q%C4%90BYT%20%282%29.docx"
+      },
+      {
+        "bucket": "required",
+        "name": "Đối với hồ sơ nộp trước ngày 01/01/2024. - Tài liệu mô tả tóm tắt kỹ thuật trang thiết bị y tế bằng tiếng Việt, kèm theo tài liệu kỹ thuật mô tả chức năng, thông số kỹ thuật của trang thiết bị y tế do chủ sở hữu trang thiết bị y tế ban hành. Riêng đối với thuốc thử, chất hiệu chuẩn, vật liệu kiểm soát in vitro: tài liệu kỹ thuật bằng tiếng Việt kèm theo tài liệu về nguyên vật liệu, về an toàn của sản phẩm, quy trình sản xuất và kiểm soát chất lượng sản phẩm, các báo cáo nghiên cứu lâm sàng và tiền lâm sàng bao gồm báo cáo độ ổn định. - Tài liệu hướng dẫn sử dụng của trang thiết bị y tế. - Mẫu nhãn sẽ sử dụng khi lưu hành tại Việt Nam của trang thiết bị y tế.",
+        "conditions": [],
+        "attachment_path": null
+      },
+      {
+        "bucket": "required",
+        "name": "Văn bản đề nghị cấp mới số lưu hành trang thiết bị y tế loại C, D là phương tiện đo phải phê duyệt mẫu theo quy định của pháp luật về đo lường theo mẫu số 03.02 quy định tại Phụ lục I ban hành kèm theo Thông tư 19/2021/TT-BYT.",
+        "conditions": [],
+        "attachment_path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/1_002949/Ph%E1%BB%A5%20l%E1%BB%A5c%20I%203.2.docx"
+      }
+    ],
+    "special_cases": [
+      "Có thể cần giấy tờ ủy quyền",
+      "Có thể cần đối chiếu thông tin thửa đất hoặc giấy chứng nhận",
+      "Có thể cần hồ sơ kỹ thuật phương tiện hoặc giấy phép lái xe"
+    ],
+    "common_errors": [
+      "Thiếu giấy tờ hoặc nội dung ủy quyền phù hợp.",
+      "Điền sai mẫu tờ khai hoặc chọn sai biểu mẫu đi kèm.",
+      "Thông tin thửa đất, tài sản hoặc giấy chứng nhận chưa khớp với hồ sơ hiện có."
+    ],
+    "validation_hints": [
+      "Nên xác định trước kênh nộp hồ sơ để biết có cần bản giấy, bản điện tử hay xuất trình trực tiếp.",
+      "Có mẫu biểu đính kèm, nên kiểm tra đúng biểu mẫu trước khi nộp.",
+      "Nên xác định đúng nhóm đối tượng, mã số bảo hiểm và quyền lợi áp dụng trước khi nộp."
+    ]
+  },
+  "intake": {
+    "candidate_input_fields": [
+      {
+        "field_id": "request_subject",
+        "label": "Đối tượng làm thủ tục",
+        "field_type": "text",
+        "required": true
+      },
+      {
+        "field_id": "insurance_or_medical_need",
+        "label": "Nhu cầu bảo hiểm hoặc y tế",
+        "field_type": "text",
+        "required": true
+      },
+      {
+        "field_id": "submission_channel_preference",
+        "label": "Kênh nộp dự kiến",
+        "field_type": "enum",
+        "required": false
+      },
+      {
+        "field_id": "has_insurance_number",
+        "label": "Đã có mã BHXH/BHYT",
+        "field_type": "boolean",
+        "required": false
+      }
+    ],
+    "suggested_clarifying_questions": [
+      "Bạn đang muốn đăng ký, điều chỉnh hay xác nhận quyền lợi y tế hoặc bảo hiểm nào?",
+      "Bạn đã có mã BHXH/BHYT hoặc thông tin đơn vị tiếp nhận liên quan chưa?"
+    ]
+  },
+  "ui_hints": {
+    "primary_channel": "online",
+    "result_label": "Số đăng ký lưu hành trang thiết bị y tế",
+    "time_badge": "10 ngày làm việc",
+    "document_count_badge": 11
+  },
+  "provenance": {
+    "generator": "workflow_domain_enricher",
+    "derivation_mode": "rule_based_semantic_enrichment",
+    "supported_group": true
+  }
+}

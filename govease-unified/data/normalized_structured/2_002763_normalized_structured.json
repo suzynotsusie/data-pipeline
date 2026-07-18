@@ -1,0 +1,191 @@
+{
+  "schema_version": "1.0",
+  "normalizer_version": "0.2.0",
+  "source": {
+    "procedure_code": "2.002763",
+    "title": "Thủ tục giải quyết chế độ trợ cấp chết do tai nạn hoặc chết do ốm đau, tai nạn rủi ro đối với quân nhân dự bị; học viên đào tạo sĩ quan dự bị từ 03 tháng trở lên chưa tham gia bảo hiểm xã hội, bảo hiểm y tế",
+    "raw_structured_parser_version": "0.1.0",
+    "field": "Chính sách BQP"
+  },
+  "procedure": {
+    "level": "Cấp bộ/ngành",
+    "procedure_type": "NOT_ASSIGNED_REGULATION",
+    "target_users": [
+      "Công dân Việt Nam"
+    ],
+    "authorities": [
+      "Cấp đại đội, tiểu đoàn hoặc tương đương"
+    ],
+    "receiving_places": []
+  },
+  "submission": {
+    "channels": [
+      "in_person",
+      "online",
+      "postal"
+    ],
+    "methods": [
+      {
+        "method_id": "method_1",
+        "channel": "online",
+        "processing_time_text": "10 ngày làm việc",
+        "fee_text": null,
+        "description": null,
+        "is_online": true,
+        "is_postal": false,
+        "is_in_person": false
+      },
+      {
+        "method_id": "method_2",
+        "channel": "postal",
+        "processing_time_text": "10 ngày làm việc",
+        "fee_text": null,
+        "description": null,
+        "is_online": false,
+        "is_postal": true,
+        "is_in_person": false
+      },
+      {
+        "method_id": "method_3",
+        "channel": "in_person",
+        "processing_time_text": "10 ngày làm việc",
+        "fee_text": null,
+        "description": null,
+        "is_online": false,
+        "is_postal": false,
+        "is_in_person": true
+      }
+    ],
+    "timing_summary": {
+      "unique_processing_times": [
+        "10 ngày làm việc"
+      ],
+      "method_count": 3
+    }
+  },
+  "documents": {
+    "required": [
+      {
+        "document_id": "l_nh_g_i_t_p_trung_hu_n_luy_n_ho_c_quy_t_nh_g_i_o_t_o_s_quan_d_b_c_a_c_p_c_th_m_quy_n_01_b_n_sao",
+        "name": "Lệnh gọi tập trung huấn luyện hoặc quyết định gọi đào tạo sĩ quan dự bị của cấp có thẩm quyền (01 bản sao)",
+        "group_name": "default",
+        "group_type": "unknown",
+        "original_count": "0",
+        "copy_count": "1",
+        "conditions": [],
+        "attachment_label": null,
+        "attachment_path": null
+      }
+    ],
+    "conditional": [
+      {
+        "document_id": "gi_y_b_o_t_ho_c_gi_y_ch_ng_t_01_b_n_sao_c_a_i_t_ng_ho_c_tr_ch_l_c_khai_t_ho_c_b_n_sao_quy_t_nh_tuy_n_b_l_ch_t_c_a_t_a_n_c_hi_u_l_c_ph_p_lu_t_i_v_i_tr_ng_h_p_m_t_t_ch",
+        "name": "Giấy báo tử hoặc giấy chứng tử (01 bản sao) của đối tượng hoặc trích lục khai tử hoặc bản sao quyết định tuyên bố là đã chết của tòa án đã có hiệu lực pháp luật (đối với trường hợp mất tích)",
+        "group_name": "default",
+        "group_type": "unknown",
+        "original_count": "0",
+        "copy_count": "1",
+        "conditions": [
+          "Giấy báo tử hoặc giấy chứng tử (01 bản sao) của đối tượng hoặc trích lục khai tử hoặc bản sao quyết định tuyên bố là đã chết của tòa án đã có hiệu lực pháp luật (đối với trường hợp mất tích)"
+        ],
+        "attachment_label": null,
+        "attachment_path": null
+      }
+    ],
+    "presented": [],
+    "notes": [],
+    "forms": [],
+    "empty_groups": [],
+    "document_count": 2
+  },
+  "process": {
+    "steps": [
+      {
+        "step_id": "step_1",
+        "title": null,
+        "content": "1.",
+        "actor": "user",
+        "channel_hint": null,
+        "time_hint": null
+      },
+      {
+        "step_id": "step_2",
+        "title": "Bước 1.",
+        "content": "Bước 1. Thân nhân của đối tượng trực tiếp hoặc gửi trên môi trường điện tử hoặc qua dịch vụ bưu chính công ích nộp giấy báo tử hoặc giấy chứng tử của đối tượng (01 bản sao) hoặc trích lục khai tử hoặc bản sao quyết định tuyên bố là đã chết của tòa án đã có hiệu lực pháp luật (đối với trường hợp mất tích) cho đơn vị trực tiếp huấn luyện.",
+        "actor": "user",
+        "channel_hint": "dịch vụ bưu chính",
+        "time_hint": null
+      },
+      {
+        "step_id": "step_3",
+        "title": "Bước 2.",
+        "content": "Bước 2. Trong thời hạn 10 ngày làm việc, đơn vị trực tiếp huấn luyện tiếp nhận hồ sơ; thẩm định, hoàn thiện hồ sơ, quyết định việc hưởng trợ cấp theo quy định theo quy định tại điểm c khoản 1 Điều 8 Nghị định số 79/2020/NĐ-CP.",
+        "actor": "user",
+        "channel_hint": "trực tiếp",
+        "time_hint": "10 ngày làm việc"
+      },
+      {
+        "step_id": "step_4",
+        "title": "Bước 3.",
+        "content": "Bước 3. Đơn vị trực tiếp huấn luyện thông báo cho gia đình đối tượng đến trực tiếp nhận trợ cấp hoặc chuyển khoản.",
+        "actor": "user",
+        "channel_hint": "trực tiếp",
+        "time_hint": null
+      }
+    ],
+    "step_count": 4,
+    "notes": []
+  },
+  "eligibility": {
+    "conditions": [],
+    "has_conditions": false
+  },
+  "results": {
+    "items": [
+      {
+        "name": "Quyết định trợ cấp của đơn vị trực tiếp huấn luyện",
+        "result_code": "2.002763-KQ0001",
+        "raw_text": "Quyết định trợ cấp của đơn vị trực tiếp huấn luyện"
+      }
+    ],
+    "primary_result": {
+      "name": "Quyết định trợ cấp của đơn vị trực tiếp huấn luyện",
+      "result_code": "2.002763-KQ0001",
+      "raw_text": "Quyết định trợ cấp của đơn vị trực tiếp huấn luyện"
+    }
+  },
+  "legal_basis": {
+    "items": [
+      {
+        "title": "01/2013/TT-BVHTTDL",
+        "code": "01/2013/TT-BVHTTDL"
+      },
+      {
+        "title": "Nghị định số 209/2025/NĐ-CP của Chính phủ: Sửa đổi, bổ sung một số điều của 11 Nghị định của Chính phủ thuộc lĩnh vực quản lý nhà nước của Bộ Quốc phòng",
+        "code": "209/2025/NĐ-CP"
+      },
+      {
+        "title": "Luật 53/2019/QH14",
+        "code": "53/2019/QH14"
+      },
+      {
+        "title": "Luật 84/2015/QH13",
+        "code": "84/2015/QH13"
+      },
+      {
+        "title": "Nghị định 79/2020/NĐ-CP",
+        "code": "79/2020/NĐ-CP"
+      }
+    ],
+    "count": 5
+  },
+  "attachments": [],
+  "signals": {
+    "raw_parse_warnings": [],
+    "missing_documents": false,
+    "documents_section_present": true,
+    "documents_declared_empty": false,
+    "documents_only_in_notes": false,
+    "missing_results": false
+  }
+}

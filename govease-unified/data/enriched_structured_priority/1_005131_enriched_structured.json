@@ -1,0 +1,76 @@
+{
+  "schema_version": "1.0",
+  "enricher_version": "0.2.0",
+  "source": {
+    "procedure_code": "1.005131",
+    "title": "Điều chỉnh thông tin Giấy phép; cấp lại Giấy phép hoạt động dịch vụ đưa người lao động đi làm việc ở nước ngoài",
+    "group_key": "viec_lam",
+    "workflow_family": null,
+    "subflow": null
+  },
+  "experience": {
+    "entry_label": "Hỗ trợ việc làm và lao động",
+    "overview_summary": "Thủ tục này thuộc nhóm việc làm và lao động, thường cần kiểm tra hồ sơ nghề nghiệp, đơn vị sử dụng lao động hoặc điều kiện hưởng chế độ liên quan. Kết quả thường nhận được là Giấy phép hoạt động dịch vụ đưa người lao động Việt Nam đi làm việc ở nước ngoài theo hợp đồng (được điều chỉnh thông tin hoặc được cấp lại). Thời gian xử lý tham khảo: 5 ngày làm việc.",
+    "next_step_summary": "Nên xác định rõ nhu cầu lao động, hồ sơ nghề nghiệp hoặc chế độ cần giải quyết trước khi nộp. Có thể chọn kênh nộp phù hợp: Trực tiếp, Trực tuyến, Dịch vụ bưu chính. Hiện có 1 mục giấy tờ cần theo dõi trong checklist.",
+    "tone": "supportive_public_service"
+  },
+  "guidance": {
+    "highlight_documents": [
+      {
+        "bucket": "required",
+        "name": "Văn bản của doanh nghiệp đề nghị điều chỉnh thông tin trên Giấy phép hoặc cấp lại Giấy phép",
+        "conditions": [],
+        "attachment_path": null
+      }
+    ],
+    "special_cases": [],
+    "common_errors": [],
+    "validation_hints": [
+      "Nên xác định trước kênh nộp hồ sơ để biết có cần bản giấy, bản điện tử hay xuất trình trực tiếp.",
+      "Nên xác định đúng nhóm thủ tục lao động, đơn vị liên quan và hồ sơ nghề nghiệp cần xuất trình."
+    ]
+  },
+  "intake": {
+    "candidate_input_fields": [
+      {
+        "field_id": "employment_need",
+        "label": "Nhu cầu việc làm hoặc lao động",
+        "field_type": "text",
+        "required": true
+      },
+      {
+        "field_id": "worker_or_employer_info",
+        "label": "Thông tin người lao động hoặc đơn vị sử dụng lao động",
+        "field_type": "text",
+        "required": true
+      },
+      {
+        "field_id": "submission_channel_preference",
+        "label": "Kênh nộp dự kiến",
+        "field_type": "enum",
+        "required": false
+      },
+      {
+        "field_id": "has_supporting_employment_documents",
+        "label": "Đã có hồ sơ lao động liên quan",
+        "field_type": "boolean",
+        "required": false
+      }
+    ],
+    "suggested_clarifying_questions": [
+      "Bạn đang cần giải quyết thủ tục lao động nào cho người lao động hoặc doanh nghiệp?",
+      "Hồ sơ nghề nghiệp, đơn vị sử dụng lao động hoặc yếu tố lao động nước ngoài đã rõ chưa?"
+    ]
+  },
+  "ui_hints": {
+    "primary_channel": "online",
+    "result_label": "Giấy phép hoạt động dịch vụ đưa người lao động Việt Nam đi làm việc ở nước ngoài theo hợp đồng (được điều chỉnh thông tin hoặc được cấp lại)",
+    "time_badge": "5 ngày làm việc",
+    "document_count_badge": 1
+  },
+  "provenance": {
+    "generator": "workflow_domain_enricher",
+    "derivation_mode": "rule_based_semantic_enrichment",
+    "supported_group": true
+  }
+}

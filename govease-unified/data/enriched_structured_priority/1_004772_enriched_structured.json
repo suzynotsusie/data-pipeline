@@ -1,0 +1,137 @@
+{
+  "schema_version": "1.0",
+  "enricher_version": "0.2.0",
+  "source": {
+    "procedure_code": "1.004772",
+    "title": "Thủ tục đăng ký khai sinh cho người đã có hồ sơ, giấy tờ cá nhân",
+    "group_key": "co_con_nho",
+    "workflow_family": "child_early_life_workflow",
+    "subflow": "khai_sinh"
+  },
+  "experience": {
+    "entry_label": "Hỗ trợ thủ tục cho trẻ em",
+    "overview_summary": "Thủ tục này thuộc nhóm giấy tờ cho trẻ nhỏ, thường dùng để đăng ký hoặc cập nhật thông tin khai sinh. Kết quả thường nhận được là Giấy khai sinh. Thời gian xử lý tham khảo: 5 ngày.",
+    "next_step_summary": "Chuẩn bị trước các giấy tờ cốt lõi của trẻ và người đi làm thủ tục, sau đó chọn kênh nộp phù hợp: Trực tiếp, Trực tuyến, Dịch vụ bưu chính. Hiện có khoảng 9 mục giấy tờ cần theo dõi trong checklist.",
+    "tone": "supportive_public_service"
+  },
+  "guidance": {
+    "highlight_documents": [
+      {
+        "bucket": "conditional",
+        "name": "Người yêu cầu đăng ký khai sinh có trách nhiệm nộp đầy đủ bản sao các giấy tờ nêu trên (nếu có) và phải cam đoan đã nộp đủ các giấy tờ mình có; chịu trách nhiệm, hệ quả của việc cam đoan không đúng sự thật.",
+        "conditions": [
+          "Người yêu cầu đăng ký khai sinh có trách nhiệm nộp đầy đủ bản sao các giấy tờ nêu trên (nếu có) và phải cam đoan đã nộp đủ các giấy tờ mình có; chịu trách nhiệm, hệ quả của việc cam đoan không đúng sự thật."
+        ],
+        "attachment_path": null
+      },
+      {
+        "bucket": "conditional",
+        "name": "Văn bản ủy quyền theo quy định của pháp luật trong trường hợp ủy quyền thực hiện việc đăng ký khai sinh. Trường hợp người được ủy quyền là ông, bà, cha, mẹ, con, vợ, chồng, anh, chị, em ruột của người ủy quyền thì văn bản ủy quyền không phải chứng thực.",
+        "conditions": [
+          "Văn bản ủy quyền theo quy định của pháp luật trong trường hợp ủy quyền thực hiện việc đăng ký khai sinh. Trường hợp người được ủy quyền là ông, bà, cha, mẹ, con, vợ, chồng, anh, chị, em ruột của người ủy quyền thì văn bản ủy quyền không phải chứng thực."
+        ],
+        "attachment_path": null
+      },
+      {
+        "bucket": "conditional",
+        "name": "Trường hợp người yêu cầu đăng ký khai sinh là cán bộ, công chức, viên chức, người đang công tác trong lực lượng vũ trang thì phải có văn bản xác nhận của Thủ trưởng cơ quan, đơn vị về việc những nội dung khai sinh của người đó gồm họ, chữ đệm, tên; giới tính; ngày, tháng, năm sinh; dân tộc; quốc tịch; quê quán; quan hệ cha - con, mẹ - con phù hợp với hồ sơ do cơ quan, đơn vị đang quản lý.",
+        "conditions": [
+          "Trường hợp người yêu cầu đăng ký khai sinh là cán bộ, công chức, viên chức, người đang công tác trong lực lượng vũ trang thì phải có văn bản xác nhận của Thủ trưởng cơ quan, đơn vị về việc những nội dung khai sinh của người đó gồm họ, chữ đệm, tên; giới tính; ngày, tháng, năm sinh; dân tộc; quốc tịch; quê quán; quan hệ cha - con, mẹ - con phù hợp với hồ sơ do cơ quan, đơn vị đang quản lý."
+        ],
+        "attachment_path": null
+      },
+      {
+        "bucket": "presented",
+        "name": "Trường hợp các thông tin cá nhân trong các giấy tờ này đã có trong Cơ sở dữ liệu quốc gia về dân cư, Cơ sở dữ liệu hộ tịch điện tử, được hệ thống điền tự động thì không phải tải lên (theo hình thức trực tuyến)",
+        "conditions": [
+          "Trường hợp các thông tin cá nhân trong các giấy tờ này đã có trong Cơ sở dữ liệu quốc gia về dân cư, Cơ sở dữ liệu hộ tịch điện tử, được hệ thống điền tự động thì không phải tải lên (theo hình thức trực tuyến)"
+        ],
+        "attachment_path": null
+      },
+      {
+        "bucket": "presented",
+        "name": "Trường hợp không khai thác được thông tin hoặc thông tin khai thác được không đầy đủ, không chính xác thì cơ quan đăng ký hộ tịch yêu cầu người đi đăng ký hộ tịch xuất trình bản chính giấy tờ để chứng minh, đồng thời đề nghị người đi đăng ký hộ tịch cập nhật, điều chỉnh thông tin trong các cơ sở dữ liệu theo quy định của pháp luật.",
+        "conditions": [
+          "Trường hợp không khai thác được thông tin hoặc thông tin khai thác được không đầy đủ, không chính xác thì cơ quan đăng ký hộ tịch yêu cầu người đi đăng ký hộ tịch xuất trình bản chính giấy tờ để chứng minh, đồng thời đề nghị người đi đăng ký hộ tịch cập nhật, điều chỉnh thông tin trong các cơ sở dữ liệu theo quy định của pháp luật."
+        ],
+        "attachment_path": null
+      },
+      {
+        "bucket": "presented",
+        "name": "Trường hợp gửi hồ sơ qua hệ thống bưu chính thì phải gửi kèm theo bản sao có chứng thực các giấy tờ phải xuất trình nêu trên.",
+        "conditions": [
+          "Trường hợp gửi hồ sơ qua hệ thống bưu chính thì phải gửi kèm theo bản sao có chứng thực các giấy tờ phải xuất trình nêu trên."
+        ],
+        "attachment_path": null
+      }
+    ],
+    "special_cases": [
+      "Có yếu tố nước ngoài",
+      "Có thể cần giấy tờ ủy quyền",
+      "Có trường hợp hồ sơ điện tử thay thế bản giấy",
+      "Có thể cần chứng cứ quan hệ cha, mẹ, con",
+      "Có kiểm tra dữ liệu cư trú/định danh",
+      "Có thể cần đối chiếu thông tin thửa đất hoặc giấy chứng nhận"
+    ],
+    "common_errors": [
+      "Thông tin định danh hoặc cư trú không khớp với dữ liệu dân cư.",
+      "Thiếu giấy tờ hoặc nội dung ủy quyền phù hợp.",
+      "Thiếu giấy tờ hợp pháp hóa hoặc giấy tờ nhân thân của phía nước ngoài.",
+      "Điền sai mẫu tờ khai hoặc chọn sai biểu mẫu đi kèm.",
+      "Thông tin thửa đất, tài sản hoặc giấy chứng nhận chưa khớp với hồ sơ hiện có."
+    ],
+    "validation_hints": [
+      "Nên xác định trước kênh nộp hồ sơ để biết có cần bản giấy, bản điện tử hay xuất trình trực tiếp.",
+      "Thông tin hộ tịch giữa các giấy tờ phải thống nhất về họ tên, ngày sinh và quan hệ liên quan."
+    ]
+  },
+  "intake": {
+    "candidate_input_fields": [
+      {
+        "field_id": "child_full_name",
+        "label": "Tên trẻ",
+        "field_type": "text",
+        "required": false
+      },
+      {
+        "field_id": "child_birth_date",
+        "label": "Ngày sinh của trẻ",
+        "field_type": "date",
+        "required": false
+      },
+      {
+        "field_id": "child_birth_place",
+        "label": "Nơi sinh",
+        "field_type": "text",
+        "required": false
+      },
+      {
+        "field_id": "requester_relationship",
+        "label": "Quan hệ với trẻ",
+        "field_type": "enum",
+        "required": true
+      },
+      {
+        "field_id": "has_foreign_element",
+        "label": "Có yếu tố nước ngoài",
+        "field_type": "boolean",
+        "required": true
+      }
+    ],
+    "suggested_clarifying_questions": [
+      "Bé đã có giấy chứng sinh hoặc giấy tờ thay thế chưa?",
+      "Thủ tục này có liên quan đến yếu tố nước ngoài, mang thai hộ hoặc trẻ bị bỏ rơi không?"
+    ]
+  },
+  "ui_hints": {
+    "primary_channel": "online",
+    "result_label": "Giấy khai sinh",
+    "time_badge": "5 ngày",
+    "document_count_badge": 9
+  },
+  "provenance": {
+    "generator": "workflow_domain_enricher",
+    "derivation_mode": "rule_based_semantic_enrichment",
+    "supported_group": true
+  }
+}

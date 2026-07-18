@@ -1,0 +1,368 @@
+{
+  "schema_version": "3.0",
+  "record_type": "public_service_procedure_payload",
+  "id": "procedure-1.001656",
+  "procedure_code": "1.001656",
+  "code": "1.001656",
+  "title": "Thanh toán trực tiếp chi phí khám, chữa bệnh BHYT/Cấp giấy chứng nhận không cùng chi trả trong năm",
+  "language": "vi",
+  "status": "generated_from_pipeline",
+  "field": "Thực hiện chính sách BHYT",
+  "group_key": "suc_khoe_y_te",
+  "workflow_family": "healthcare_medical_policy_workflow",
+  "subflow": "kham_chua_benh",
+  "source": {
+    "source_url": "file:///C:/Users/ku060/Downloads/VAIC%20source/data-pipeline/raw_data/1_001656/1_001656_procedure_detail.md",
+    "source_markdown_path": "C:\\Users\\ku060\\Downloads\\VAIC source\\data-pipeline\\raw_data\\1_001656\\1_001656_procedure_detail.md",
+    "normalized_payload_path": "C:\\Users\\ku060\\Downloads\\VAIC source\\data-pipeline\\govease-unified\\data\\normalized_structured\\1_001656_normalized_structured.json",
+    "enriched_payload_path": "C:\\Users\\ku060\\Downloads\\VAIC source\\data-pipeline\\govease-unified\\data\\enriched_structured_priority\\1_001656_enriched_structured.json"
+  },
+  "scope": {
+    "included": "Thủ tục này thuộc nhóm y tế và bảo hiểm, thường dùng để đăng ký, điều chỉnh hoặc xác nhận quyền lợi bảo hiểm y tế. Kết quả thường nhận được là Nhận tiền thanh toán chi phí KCB theo phương thức đăng ký (chuyển khoản hoặc nhận tiền mặt tại Phòng/bộ phận Tài chính - Kế toán của cơ quan BHXH). Thời gian xử lý tham khảo: 40 ngày.",
+    "not_included": []
+  },
+  "agency": {
+    "executing_agency": "Bảo hiểm xã hội cấp huyện, Bảo hiểm xã hội tỉnh",
+    "submission_place": null,
+    "receiving_places": []
+  },
+  "target_users": [
+    "Công dân Việt Nam",
+    "Người nước ngoài",
+    "Cán bộ",
+    "công chức",
+    "viên chức",
+    "Người Việt Nam định cư ở nước ngoài"
+  ],
+  "submission_methods": [
+    {
+      "code": "ONLINE",
+      "label": "Trực tuyến",
+      "processing_time": "40 ngày",
+      "fee": null,
+      "description": null
+    },
+    {
+      "code": "POSTAL",
+      "label": "Dịch vụ bưu chính",
+      "processing_time": "40 ngày",
+      "fee": null,
+      "description": null
+    },
+    {
+      "code": "IN_PERSON",
+      "label": "Trực tiếp",
+      "processing_time": "40 ngày",
+      "fee": null,
+      "description": null
+    }
+  ],
+  "processing_note": "Thời gian xử lý tham chiếu: 40 ngày. Nên xác định rõ đối tượng tham gia, quyền lợi hoặc nhu cầu điều chỉnh hồ sơ y tế trước khi nộp. Có thể chọn kênh nộp phù hợp: Trực tiếp, Trực tuyến, Dịch vụ bưu chính. Hiện có khoảng 3 mục giấy tờ cần theo dõi trong checklist.",
+  "documents": {
+    "normally_required": [
+      {
+        "name": "Hồ sơ tương tự như khoản 1 của mục 3.3 (Thành phần hồ sơ).",
+        "quantity": "1 bản chính, 1 bản sao",
+        "notes": [],
+        "group": "2. Trường hợp đề nghị cấp giấy chứng nhận không cùng chi trả trong năm (có hoặc không kèm theo việc thanh toán trực tiếp chi phí KCB BHYT)",
+        "attachment_path": null
+      }
+    ],
+    "conditional": [
+      {
+        "condition": "a) Bản chụp các giấy tờ sau (kèm bản chính để đối chiếu trong trường hợp nộp trực tiếp): + Thẻ BHYT và một trong các giấy tờ chứng minh về nhân thân có ảnh hợp lệ trong trường hợp thẻ BHYT chưa có ảnh (thẻ căn cước công dân/thẻ căn cước hoặc Chứng minh nhân dân còn giá trị sử dụng, Hộ chiếu, Thẻ Đảng viên, Thẻ Công an nhân dân, Thẻ quân nhân, Thẻ đoàn viên công đoàn, Thẻ học sinh, Thẻ sinh viên, Thẻ cựu chiến binh, Giấy phép lái xe hoặc một loại giấy tờ có ảnh hợp lệ khác); Giấy khai sinh, Giấy chứng sinh trong trường hợp trẻ em dưới 6 tuổi chưa có thẻ BHYT; + Giấy ra viện, phiếu khám bệnh hoặc sổ khám bệnh của lần KCB đề nghị thanh toán.",
+        "document": "a) Bản chụp các giấy tờ sau (kèm bản chính để đối chiếu trong trường hợp nộp trực tiếp): + Thẻ BHYT và một trong các giấy tờ chứng minh về nhân thân có ảnh hợp lệ trong trường hợp thẻ BHYT chưa có ảnh (thẻ căn cước công dân/thẻ căn cước hoặc Chứng minh nhân dân còn giá trị sử dụng, Hộ chiếu, Thẻ Đảng viên, Thẻ Công an nhân dân, Thẻ quân nhân, Thẻ đoàn viên công đoàn, Thẻ học sinh, Thẻ sinh viên, Thẻ cựu chiến binh, Giấy phép lái xe hoặc một loại giấy tờ có ảnh hợp lệ khác); Giấy khai sinh, Giấy chứng sinh trong trường hợp trẻ em dưới 6 tuổi chưa có thẻ BHYT; + Giấy ra viện, phiếu khám bệnh hoặc sổ khám bệnh của lần KCB đề nghị thanh toán.",
+        "quantity": "1 bản chính, 1 bản sao",
+        "notes": [],
+        "attachment_path": null
+      },
+      {
+        "condition": "b) Bản chính: các hóa đơn, biên lai thu viện phí và các chứng từ liên quan khác. - Trong trường hợp người tham gia BHYT có nhu cầu sử dụng Hóa đơn, Biên lai bản chính vào mục đích khác, bộ phận một cửa của cơ quan BHXH chụp Hóa đơn, Biên lai và ký xác nhận trên bản chụp, trả bản chính cho người tham gia BHYT; - Trường hợp người tham gia BHYT làm thất lạc Hóa đơn, Biên lai bản chính thì nộp bản chụp Hóa đơn, Biên lai hoặc bản chụp Hóa đơn, Biên lai có xác nhận của cơ sở khám bệnh, chữa bệnh nơi người có thẻ BHYT khám bệnh, chữa bệnh hoặc Bảng kê chi phí khám bệnh, chữa bệnh (theo Mẫu số 01/KBCB ban hành kèm theo Quyết định số 6556/QĐ-BYT ngày 30/10/2018 của Bộ Y tế); - Trong trường hồ sơ nộp qua dịch vụ bưu chính công ích hoặc qua hình thức trực tuyến là bản sao thì khi nhận kết quả phải xuất trình bản chính hoặc bản chụp có xác nhận của cơ sở KCB để đối chiếu.",
+        "document": "b) Bản chính: các hóa đơn, biên lai thu viện phí và các chứng từ liên quan khác. - Trong trường hợp người tham gia BHYT có nhu cầu sử dụng Hóa đơn, Biên lai bản chính vào mục đích khác, bộ phận một cửa của cơ quan BHXH chụp Hóa đơn, Biên lai và ký xác nhận trên bản chụp, trả bản chính cho người tham gia BHYT; - Trường hợp người tham gia BHYT làm thất lạc Hóa đơn, Biên lai bản chính thì nộp bản chụp Hóa đơn, Biên lai hoặc bản chụp Hóa đơn, Biên lai có xác nhận của cơ sở khám bệnh, chữa bệnh nơi người có thẻ BHYT khám bệnh, chữa bệnh hoặc Bảng kê chi phí khám bệnh, chữa bệnh (theo Mẫu số 01/KBCB ban hành kèm theo Quyết định số 6556/QĐ-BYT ngày 30/10/2018 của Bộ Y tế); - Trong trường hồ sơ nộp qua dịch vụ bưu chính công ích hoặc qua hình thức trực tuyến là bản sao thì khi nhận kết quả phải xuất trình bản chính hoặc bản chụp có xác nhận của cơ sở KCB để đối chiếu.",
+        "quantity": "1 bản chính, 1 bản sao",
+        "notes": [],
+        "attachment_path": null
+      }
+    ],
+    "forms": [],
+    "presented": [],
+    "notes": [],
+    "summary": [
+      {
+        "group": "2. Trường hợp đề nghị cấp giấy chứng nhận không cùng chi trả trong năm (có hoặc không kèm theo việc thanh toán trực tiếp chi phí KCB BHYT)",
+        "name": "Hồ sơ tương tự như khoản 1 của mục 3.3 (Thành phần hồ sơ).",
+        "quantity": "1 bản chính, 1 bản sao",
+        "notes": [],
+        "attachment_path": null
+      },
+      {
+        "group": null,
+        "name": null,
+        "quantity": "1 bản chính, 1 bản sao",
+        "notes": [],
+        "attachment_path": null
+      },
+      {
+        "group": null,
+        "name": null,
+        "quantity": "1 bản chính, 1 bản sao",
+        "notes": [],
+        "attachment_path": null
+      }
+    ]
+  },
+  "steps": [
+    {
+      "order": 1,
+      "title": "Bước 1",
+      "description": "1. **Bước 1. Lập và nộp hồ sơ**",
+      "example": null
+    },
+    {
+      "order": 2,
+      "title": "Bước 2",
+      "description": "Người bệnh hoặc thân nhân hoặc người đại diện hợp pháp theo quy định của pháp luật của người bệnh lập hồ sơ đề nghị thanh toán theo quy định tại mục 3.3 (Thành phần hồ sơ); nộp hồ sơ cho cơ quan BHXH.",
+      "example": null
+    },
+    {
+      "order": 3,
+      "title": "Bước 3",
+      "description": "2. **Bước 2.**",
+      "example": null
+    },
+    {
+      "order": 4,
+      "title": "Bước 4",
+      "description": "Cơ quan BHXH tiếp nhận và thụ lý hồ sơ",
+      "example": null
+    },
+    {
+      "order": 5,
+      "title": "Bước 5",
+      "description": "3. **Bước 3. Nhận kết quả giải quyết**",
+      "example": null
+    },
+    {
+      "order": 6,
+      "title": "Bước 6",
+      "description": "- Đối với trường hợp đề nghị thanh toán: nhận tiền theo phương thức đã đăng ký khi nộp hồ sơ. Trường hợp không được thanh toán: Văn bản nêu lý do không thanh toán của cơ quan BHXH.",
+      "example": null
+    },
+    {
+      "order": 7,
+      "title": "Bước 7",
+      "description": "- Đối với trường hợp đề nghị cấp Giấy chứng nhận không cùng chi trả trong năm: nhận Giấy chứng nhận. Trường hợp không được cấp giấy chứng nhận, cơ quan BHXH có văn bản trả lời nêu rõ lý do.",
+      "example": null
+    }
+  ],
+  "input_fields": [
+    {
+      "field": "request_subject",
+      "label": "Đối tượng làm thủ tục",
+      "type": "string",
+      "required": true
+    },
+    {
+      "field": "insurance_or_medical_need",
+      "label": "Nhu cầu bảo hiểm hoặc y tế",
+      "type": "string",
+      "required": true
+    },
+    {
+      "field": "submission_channel_preference",
+      "label": "Kênh nộp dự kiến",
+      "type": "enum",
+      "required": false,
+      "options": [
+        "Trực tiếp",
+        "Trực tuyến",
+        "Dịch vụ bưu chính"
+      ]
+    },
+    {
+      "field": "has_insurance_number",
+      "label": "Đã có mã BHXH/BHYT",
+      "type": "boolean",
+      "required": false
+    },
+    {
+      "field": "insurance_participation_group",
+      "label": "Nhóm tham gia BHYT",
+      "type": "enum",
+      "required": true
+    }
+  ],
+  "validation_rules": [
+    {
+      "id": "required-1",
+      "severity": "error",
+      "field": "request_subject",
+      "rule": "Trường bắt buộc phải có dữ liệu hợp lệ trước khi nộp.",
+      "message": "Thiếu trường bắt buộc: Đối tượng làm thủ tục."
+    },
+    {
+      "id": "required-2",
+      "severity": "error",
+      "field": "insurance_or_medical_need",
+      "rule": "Trường bắt buộc phải có dữ liệu hợp lệ trước khi nộp.",
+      "message": "Thiếu trường bắt buộc: Nhu cầu bảo hiểm hoặc y tế."
+    },
+    {
+      "id": "required-5",
+      "severity": "error",
+      "field": "insurance_participation_group",
+      "rule": "Trường bắt buộc phải có dữ liệu hợp lệ trước khi nộp.",
+      "message": "Thiếu trường bắt buộc: Nhóm tham gia BHYT."
+    },
+    {
+      "id": "hint-1",
+      "severity": "warning",
+      "field": "general",
+      "rule": "Nên xác định trước kênh nộp hồ sơ để biết có cần bản giấy, bản điện tử hay xuất trình trực tiếp.",
+      "message": "Nên xác định trước kênh nộp hồ sơ để biết có cần bản giấy, bản điện tử hay xuất trình trực tiếp."
+    },
+    {
+      "id": "hint-2",
+      "severity": "warning",
+      "field": "general",
+      "rule": "Nên xác định đúng nhóm đối tượng, mã số bảo hiểm và quyền lợi áp dụng trước khi nộp.",
+      "message": "Nên xác định đúng nhóm đối tượng, mã số bảo hiểm và quyền lợi áp dụng trước khi nộp."
+    }
+  ],
+  "common_errors": [
+    {
+      "field": "general",
+      "issue": "Thiếu giấy chứng sinh hoặc giấy thay thế hợp lệ.",
+      "fix": "Nên xác định trước kênh nộp hồ sơ để biết có cần bản giấy, bản điện tử hay xuất trình trực tiếp."
+    },
+    {
+      "field": "general",
+      "issue": "Điền sai mẫu tờ khai hoặc chọn sai biểu mẫu đi kèm.",
+      "fix": "Nên xác định trước kênh nộp hồ sơ để biết có cần bản giấy, bản điện tử hay xuất trình trực tiếp."
+    },
+    {
+      "field": "general",
+      "issue": "Sai nhóm đối tượng tham gia hoặc thông tin quyền lợi bảo hiểm y tế.",
+      "fix": "Nên xác định trước kênh nộp hồ sơ để biết có cần bản giấy, bản điện tử hay xuất trình trực tiếp."
+    },
+    {
+      "field": "general",
+      "issue": "Thiếu hồ sơ kỹ thuật phương tiện hoặc thông tin giấy phép lái xe cần đối chiếu.",
+      "fix": "Nên xác định trước kênh nộp hồ sơ để biết có cần bản giấy, bản điện tử hay xuất trình trực tiếp."
+    }
+  ],
+  "clarifying_questions": [
+    {
+      "id": "clarify_1",
+      "question": "Bạn đang muốn đăng ký, điều chỉnh hay xác nhận quyền lợi y tế hoặc bảo hiểm nào?",
+      "purpose": "workflow_intake"
+    },
+    {
+      "id": "clarify_2",
+      "question": "Bạn đã có mã BHXH/BHYT hoặc thông tin đơn vị tiếp nhận liên quan chưa?",
+      "purpose": "workflow_intake"
+    }
+  ],
+  "legal_basis": [
+    {
+      "title": "46/2014/QH13 Sửa đổi, bổ sung một số điều của Luật Bảo hiểm y tế",
+      "code": "Luật 46/2014/QH13"
+    },
+    {
+      "title": "Quy định chi tiết và hướng dẫn biện pháp thi hành một số điều của Luật bảo hiểm y tế",
+      "code": "146/2018/NĐ-CP"
+    },
+    {
+      "title": "Luật 25/2008/QH12 - Bảo hiểm y tế",
+      "code": "25/2008/QH12"
+    }
+  ],
+  "legal_bases": [
+    {
+      "title": "46/2014/QH13 Sửa đổi, bổ sung một số điều của Luật Bảo hiểm y tế",
+      "code": "Luật 46/2014/QH13"
+    },
+    {
+      "title": "Quy định chi tiết và hướng dẫn biện pháp thi hành một số điều của Luật bảo hiểm y tế",
+      "code": "146/2018/NĐ-CP"
+    },
+    {
+      "title": "Luật 25/2008/QH12 - Bảo hiểm y tế",
+      "code": "25/2008/QH12"
+    }
+  ],
+  "faq": [
+    {
+      "question": "Có thể nộp qua kênh nào?",
+      "answer": "Các kênh hiện có: Trực tiếp, Trực tuyến, Dịch vụ bưu chính."
+    },
+    {
+      "question": "Thời gian xử lý tham chiếu là bao lâu?",
+      "answer": "Thời gian xử lý tham chiếu hiện có là 40 ngày."
+    },
+    {
+      "question": "Kết quả chính của thủ tục là gì?",
+      "answer": "Kết quả chính được trích xuất là Nhận tiền thanh toán chi phí KCB theo phương thức đăng ký (chuyển khoản hoặc nhận tiền mặt tại Phòng/bộ phận Tài chính - Kế toán của cơ quan BHXH)."
+    }
+  ],
+  "guidance": {
+    "highlight_documents": [
+      {
+        "bucket": "required",
+        "name": "Hồ sơ tương tự như khoản 1 của mục 3.3 (Thành phần hồ sơ).",
+        "conditions": [],
+        "attachment_path": null
+      },
+      {
+        "bucket": "conditional",
+        "name": "a) Bản chụp các giấy tờ sau (kèm bản chính để đối chiếu trong trường hợp nộp trực tiếp): + Thẻ BHYT và một trong các giấy tờ chứng minh về nhân thân có ảnh hợp lệ trong trường hợp thẻ BHYT chưa có ảnh (thẻ căn cước công dân/thẻ căn cước hoặc Chứng minh nhân dân còn giá trị sử dụng, Hộ chiếu, Thẻ Đảng viên, Thẻ Công an nhân dân, Thẻ quân nhân, Thẻ đoàn viên công đoàn, Thẻ học sinh, Thẻ sinh viên, Thẻ cựu chiến binh, Giấy phép lái xe hoặc một loại giấy tờ có ảnh hợp lệ khác); Giấy khai sinh, Giấy chứng sinh trong trường hợp trẻ em dưới 6 tuổi chưa có thẻ BHYT; + Giấy ra viện, phiếu khám bệnh hoặc sổ khám bệnh của lần KCB đề nghị thanh toán.",
+        "conditions": [
+          "a) Bản chụp các giấy tờ sau (kèm bản chính để đối chiếu trong trường hợp nộp trực tiếp): + Thẻ BHYT và một trong các giấy tờ chứng minh về nhân thân có ảnh hợp lệ trong trường hợp thẻ BHYT chưa có ảnh (thẻ căn cước công dân/thẻ căn cước hoặc Chứng minh nhân dân còn giá trị sử dụng, Hộ chiếu, Thẻ Đảng viên, Thẻ Công an nhân dân, Thẻ quân nhân, Thẻ đoàn viên công đoàn, Thẻ học sinh, Thẻ sinh viên, Thẻ cựu chiến binh, Giấy phép lái xe hoặc một loại giấy tờ có ảnh hợp lệ khác); Giấy khai sinh, Giấy chứng sinh trong trường hợp trẻ em dưới 6 tuổi chưa có thẻ BHYT; + Giấy ra viện, phiếu khám bệnh hoặc sổ khám bệnh của lần KCB đề nghị thanh toán."
+        ],
+        "attachment_path": null
+      },
+      {
+        "bucket": "conditional",
+        "name": "b) Bản chính: các hóa đơn, biên lai thu viện phí và các chứng từ liên quan khác. - Trong trường hợp người tham gia BHYT có nhu cầu sử dụng Hóa đơn, Biên lai bản chính vào mục đích khác, bộ phận một cửa của cơ quan BHXH chụp Hóa đơn, Biên lai và ký xác nhận trên bản chụp, trả bản chính cho người tham gia BHYT; - Trường hợp người tham gia BHYT làm thất lạc Hóa đơn, Biên lai bản chính thì nộp bản chụp Hóa đơn, Biên lai hoặc bản chụp Hóa đơn, Biên lai có xác nhận của cơ sở khám bệnh, chữa bệnh nơi người có thẻ BHYT khám bệnh, chữa bệnh hoặc Bảng kê chi phí khám bệnh, chữa bệnh (theo Mẫu số 01/KBCB ban hành kèm theo Quyết định số 6556/QĐ-BYT ngày 30/10/2018 của Bộ Y tế); - Trong trường hồ sơ nộp qua dịch vụ bưu chính công ích hoặc qua hình thức trực tuyến là bản sao thì khi nhận kết quả phải xuất trình bản chính hoặc bản chụp có xác nhận của cơ sở KCB để đối chiếu.",
+        "conditions": [
+          "b) Bản chính: các hóa đơn, biên lai thu viện phí và các chứng từ liên quan khác. - Trong trường hợp người tham gia BHYT có nhu cầu sử dụng Hóa đơn, Biên lai bản chính vào mục đích khác, bộ phận một cửa của cơ quan BHXH chụp Hóa đơn, Biên lai và ký xác nhận trên bản chụp, trả bản chính cho người tham gia BHYT; - Trường hợp người tham gia BHYT làm thất lạc Hóa đơn, Biên lai bản chính thì nộp bản chụp Hóa đơn, Biên lai hoặc bản chụp Hóa đơn, Biên lai có xác nhận của cơ sở khám bệnh, chữa bệnh nơi người có thẻ BHYT khám bệnh, chữa bệnh hoặc Bảng kê chi phí khám bệnh, chữa bệnh (theo Mẫu số 01/KBCB ban hành kèm theo Quyết định số 6556/QĐ-BYT ngày 30/10/2018 của Bộ Y tế); - Trong trường hồ sơ nộp qua dịch vụ bưu chính công ích hoặc qua hình thức trực tuyến là bản sao thì khi nhận kết quả phải xuất trình bản chính hoặc bản chụp có xác nhận của cơ sở KCB để đối chiếu."
+        ],
+        "attachment_path": null
+      }
+    ],
+    "special_cases": [
+      "Có trường hợp hồ sơ điện tử thay thế bản giấy",
+      "Có thể cần đối chiếu quyền lợi bảo hiểm hoặc tuyến chuyên môn",
+      "Có thể cần hồ sơ kỹ thuật phương tiện hoặc giấy phép lái xe"
+    ],
+    "common_errors": [
+      "Thiếu giấy chứng sinh hoặc giấy thay thế hợp lệ.",
+      "Điền sai mẫu tờ khai hoặc chọn sai biểu mẫu đi kèm.",
+      "Sai nhóm đối tượng tham gia hoặc thông tin quyền lợi bảo hiểm y tế.",
+      "Thiếu hồ sơ kỹ thuật phương tiện hoặc thông tin giấy phép lái xe cần đối chiếu."
+    ],
+    "validation_hints": [
+      "Nên xác định trước kênh nộp hồ sơ để biết có cần bản giấy, bản điện tử hay xuất trình trực tiếp.",
+      "Nên xác định đúng nhóm đối tượng, mã số bảo hiểm và quyền lợi áp dụng trước khi nộp."
+    ]
+  },
+  "next_steps": {
+    "summary": "Nên xác định rõ đối tượng tham gia, quyền lợi hoặc nhu cầu điều chỉnh hồ sơ y tế trước khi nộp. Có thể chọn kênh nộp phù hợp: Trực tiếp, Trực tuyến, Dịch vụ bưu chính. Hiện có khoảng 3 mục giấy tờ cần theo dõi trong checklist.",
+    "time_badge": "40 ngày",
+    "result_label": "Nhận tiền thanh toán chi phí KCB theo phương thức đăng ký (chuyển khoản hoặc nhận tiền mặt tại Phòng/bộ phận Tài chính - Kế toán của cơ quan BHXH)",
+    "primary_channel": "online",
+    "channels": [
+      "in_person",
+      "online",
+      "postal"
+    ]
+  },
+  "notes": [],
+  "provenance": {
+    "pipeline": "raw->structured->normalized->enriched->ui_api_payload",
+    "normalizer_version": "0.2.0",
+    "enricher_version": "0.2.0",
+    "mapping_notes": "workflow_generated:suc_khoe_y_te/kham_chua_benh",
+    "supported_group": true
+  }
+}

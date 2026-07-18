@@ -1,0 +1,99 @@
+{
+  "schema_version": "1.0",
+  "enricher_version": "0.2.0",
+  "source": {
+    "procedure_code": "2.001282",
+    "title": "Thủ tục cấp Giấy phép xuất khẩu, nhập khẩu hàng hóa đã có quyết định tạm ngừng xuất khẩu, tạm ngừng nhập khẩu nhằm phục vụ mục đích đặc dụng, bảo hành, phân tích, kiểm nghiệm, nghiên cứu khoa học, y tế, sản xuất dược phẩm, bảo vệ quốc phòng, an ninh",
+    "group_key": "suc_khoe_y_te",
+    "workflow_family": null,
+    "subflow": null
+  },
+  "experience": {
+    "entry_label": "Hỗ trợ y tế và bảo hiểm",
+    "overview_summary": "Thủ tục này thuộc nhóm y tế, thường cần đối chiếu thông tin người bệnh, đơn vị tiếp nhận hoặc quyền lợi chuyên ngành. Kết quả thường nhận được là Giấy phép của cơ quan có thẩm quyền. Thời gian xử lý tham khảo: 5 ngày làm việc.",
+    "next_step_summary": "Nên xác định rõ đối tượng tham gia, quyền lợi hoặc nhu cầu điều chỉnh hồ sơ y tế trước khi nộp. Có thể chọn kênh nộp phù hợp: Trực tiếp, Trực tuyến, Dịch vụ bưu chính. Hiện có khoảng 4 mục giấy tờ cần theo dõi trong checklist.",
+    "tone": "supportive_public_service"
+  },
+  "guidance": {
+    "highlight_documents": [
+      {
+        "bucket": "required",
+        "name": "Đơn đề nghị xuất khẩu, nhập khẩu hàng hóa tạm ngừng xuất khẩu, tạm ngừng nhập khẩu theo Mẫu số 03 Mục 4 Phụ lục I.2 ban hành kèm theo Nghị quyết 66.18/NQ-CP: 01 bản chính.",
+        "conditions": [],
+        "attachment_path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/2_001282/xnk-TAMNGUNG.docx"
+      },
+      {
+        "bucket": "required",
+        "name": "Tài liệu thuyết minh về kế hoạch sử dụng, quy trình quản lý hàng hóa xuất khẩu, nhập khẩu trong quá trình sử dụng.",
+        "conditions": [],
+        "attachment_path": null
+      },
+      {
+        "bucket": "required",
+        "name": "Phương án xử lý hàng hóa xuất khẩu, nhập khẩu sau khi sử dụng: 01 bản chính.",
+        "conditions": [],
+        "attachment_path": null
+      },
+      {
+        "bucket": "conditional",
+        "name": "Báo cáo tình hình thực hiện các giấy phép đã được cấp trước đó (nếu có): 01 bản chính.",
+        "conditions": [
+          "Báo cáo tình hình thực hiện các giấy phép đã được cấp trước đó (nếu có): 01 bản chính."
+        ],
+        "attachment_path": null
+      }
+    ],
+    "special_cases": [],
+    "common_errors": [
+      "Điền sai mẫu tờ khai hoặc chọn sai biểu mẫu đi kèm."
+    ],
+    "validation_hints": [
+      "Nên xác định trước kênh nộp hồ sơ để biết có cần bản giấy, bản điện tử hay xuất trình trực tiếp.",
+      "Có mẫu biểu đính kèm, nên kiểm tra đúng biểu mẫu trước khi nộp.",
+      "Nên xác định đúng nhóm đối tượng, mã số bảo hiểm và quyền lợi áp dụng trước khi nộp."
+    ]
+  },
+  "intake": {
+    "candidate_input_fields": [
+      {
+        "field_id": "request_subject",
+        "label": "Đối tượng làm thủ tục",
+        "field_type": "text",
+        "required": true
+      },
+      {
+        "field_id": "insurance_or_medical_need",
+        "label": "Nhu cầu bảo hiểm hoặc y tế",
+        "field_type": "text",
+        "required": true
+      },
+      {
+        "field_id": "submission_channel_preference",
+        "label": "Kênh nộp dự kiến",
+        "field_type": "enum",
+        "required": false
+      },
+      {
+        "field_id": "has_insurance_number",
+        "label": "Đã có mã BHXH/BHYT",
+        "field_type": "boolean",
+        "required": false
+      }
+    ],
+    "suggested_clarifying_questions": [
+      "Bạn đang muốn đăng ký, điều chỉnh hay xác nhận quyền lợi y tế hoặc bảo hiểm nào?",
+      "Bạn đã có mã BHXH/BHYT hoặc thông tin đơn vị tiếp nhận liên quan chưa?"
+    ]
+  },
+  "ui_hints": {
+    "primary_channel": "online",
+    "result_label": "Giấy phép của cơ quan có thẩm quyền",
+    "time_badge": "5 ngày làm việc",
+    "document_count_badge": 4
+  },
+  "provenance": {
+    "generator": "workflow_domain_enricher",
+    "derivation_mode": "rule_based_semantic_enrichment",
+    "supported_group": true
+  }
+}

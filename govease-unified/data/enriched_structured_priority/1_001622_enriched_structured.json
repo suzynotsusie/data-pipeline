@@ -1,0 +1,118 @@
+{
+  "schema_version": "1.0",
+  "enricher_version": "0.2.0",
+  "source": {
+    "procedure_code": "1.001622",
+    "title": "Hỗ trợ ăn trưa đối với trẻ em mẫu giáo",
+    "group_key": "hoc_tap",
+    "workflow_family": "education_study_workflow",
+    "subflow": "hoc_bong_va_ho_tro"
+  },
+  "experience": {
+    "entry_label": "Hỗ trợ giáo dục và học tập",
+    "overview_summary": "Thủ tục này thuộc nhóm giáo dục và học tập, thường liên quan đến hồ sơ đào tạo, văn bằng hoặc điều kiện học tập của người học. Kết quả thường nhận được là Danh sách trẻ em mẫu giáo được hỗ trợ ăn trưa do UBND cấp xã phê duyệt. Thời gian xử lý tham khảo: 24 ngày làm việc.",
+    "next_step_summary": "Nên rà trước thông tin người học, cơ sở đào tạo và loại kết quả cần xin xác nhận hoặc cấp lại. Có thể chọn kênh nộp phù hợp: Trực tiếp, Trực tuyến, Dịch vụ bưu chính. Hiện có khoảng 8 mục giấy tờ cần theo dõi trong checklist.",
+    "tone": "supportive_public_service"
+  },
+  "guidance": {
+    "highlight_documents": [
+      {
+        "bucket": "required",
+        "name": "Bản sao kèm bản chính để đối chiếu hoặc bản sao có chứng thực Quyết định về việc trợ cấp xã hội của Chủ tịch Ủy ban nhân dân cấp huyện",
+        "conditions": [],
+        "attachment_path": null
+      },
+      {
+        "bucket": "required",
+        "name": "Bản sao và mang bản chính để đối chiếu hoặc bản sao có chứng thực Giấy chứng nhận hoặc Giấy xác nhận hộ nghèo, hộ cận nghèo do Ủy ban nhân dân cấp xã cấp",
+        "conditions": [],
+        "attachment_path": null
+      },
+      {
+        "bucket": "required",
+        "name": "Cung cấp thông tin về số định danh cá nhân của trẻ em hoặc của cha hoặc mẹ hoặc người chăm sóc, nuôi dưỡng trẻ em",
+        "conditions": [],
+        "attachment_path": null
+      },
+      {
+        "bucket": "conditional",
+        "name": "Bản sao kèm theo bản chính để đối chiếu hoặc bản sao có chứng thực Giấy chứng nhận nuôi con nuôi đối với trẻ mồ côi, bị bỏ rơi hoặc trẻ em thuộc các trường hợp khác quy định khoản 1 Điều 5 Nghị định số 136/2013/NĐ-CP ngày 21 tháng 10 năm 2013 của Chính phủ quy định chính sách trợ giúp xã hội đối với đối tượng bảo trợ xã hội",
+        "conditions": [
+          "Bản sao kèm theo bản chính để đối chiếu hoặc bản sao có chứng thực Giấy chứng nhận nuôi con nuôi đối với trẻ mồ côi, bị bỏ rơi hoặc trẻ em thuộc các trường hợp khác quy định khoản 1 Điều 5 Nghị định số 136/2013/NĐ-CP ngày 21 tháng 10 năm 2013 của Chính phủ quy định chính sách trợ giúp xã hội đối với đối tượng bảo trợ xã hội"
+        ],
+        "attachment_path": null
+      },
+      {
+        "bucket": "conditional",
+        "name": "Bản sao kèm bản chính để đối chiếu hoặc bản sao có chứng thực Văn bản xác nhận của Ủy ban nhân dân cấp xã hoặc cơ sở bảo trợ xã hội về tình trạng trẻ mồ côi, bị bỏ rơi hoặc trẻ thuộc các trường hợp khác quy định tại khoản 1 Điều 5 Nghị định số 136/2013/NĐ-CP ngày 21 tháng 10 năm 2013 của Chính phủ quy định chính sách trợ giúp xã hội đối với đối tượng bảo trợ xã hội",
+        "conditions": [
+          "Bản sao kèm bản chính để đối chiếu hoặc bản sao có chứng thực Văn bản xác nhận của Ủy ban nhân dân cấp xã hoặc cơ sở bảo trợ xã hội về tình trạng trẻ mồ côi, bị bỏ rơi hoặc trẻ thuộc các trường hợp khác quy định tại khoản 1 Điều 5 Nghị định số 136/2013/NĐ-CP ngày 21 tháng 10 năm 2013 của Chính phủ quy định chính sách trợ giúp xã hội đối với đối tượng bảo trợ xã hội"
+        ],
+        "attachment_path": null
+      },
+      {
+        "bucket": "conditional",
+        "name": "Bản sao kèm theo bản chính để đối chiếu hoặc bản sao có chứng thực Giấy xác nhận của cơ quan quản lý đối tượng người có công và Giấy khai sinh của trẻ em. (Cơ quan giải quyết TTHC khai thác, sử dụng thông tin đã có trong Cơ sở dữ liệu quốc gia về dân cư, Cơ sở dữ liệu về hộ tịch để thay thế thành phần hồ sơ Bản sao Quyết định về việc trợ cấp xã hội, Bản sao xác nhận về tình trạng trẻ mồ côi, bị bỏ rơi hoặc trẻ thuộc các trường hợp khác quy định, Giấy chứng nhận nuôi con nuôi. Trường hợp Cơ quan giải quyết TTHC không khai thác được hoặc khai thác không đầy đủ dữ liệu công dân trên Cơ sở dữ liệu quốc gia về về dân cư, Cơ sở dữ liệu về hộ tịch, Cơ quan giải quyết TTHC yêu cầu công dân bổ sung Bản sao Quyết định về việc trợ cấp xã hội, Bản sao xác nhận về tình trạng trẻ mồ côi, bị bỏ rơi hoặc trẻ thuộc các trường hợp khác quy định, Giấy chứng nhận nuôi con nuôi theo quy định tại Điều 8 Nghị quyết 66.7/2025/NQ-CP ngày 15/11/2025 của Chính phủ quy định cắt giảm, đơn giản hóa thủ tục hành chính dựa trên dữ liệu)",
+        "conditions": [
+          "Bản sao kèm theo bản chính để đối chiếu hoặc bản sao có chứng thực Giấy xác nhận của cơ quan quản lý đối tượng người có công và Giấy khai sinh của trẻ em. (Cơ quan giải quyết TTHC khai thác, sử dụng thông tin đã có trong Cơ sở dữ liệu quốc gia về dân cư, Cơ sở dữ liệu về hộ tịch để thay thế thành phần hồ sơ Bản sao Quyết định về việc trợ cấp xã hội, Bản sao xác nhận về tình trạng trẻ mồ côi, bị bỏ rơi hoặc trẻ thuộc các trường hợp khác quy định, Giấy chứng nhận nuôi con nuôi. Trường hợp Cơ quan giải quyết TTHC không khai thác được hoặc khai thác không đầy đủ dữ liệu công dân trên Cơ sở dữ liệu quốc gia về về dân cư, Cơ sở dữ liệu về hộ tịch, Cơ quan giải quyết TTHC yêu cầu công dân bổ sung Bản sao Quyết định về việc trợ cấp xã hội, Bản sao xác nhận về tình trạng trẻ mồ côi, bị bỏ rơi hoặc trẻ thuộc các trường hợp khác quy định, Giấy chứng nhận nuôi con nuôi theo quy định tại Điều 8 Nghị quyết 66.7/2025/NQ-CP ngày 15/11/2025 của Chính phủ quy định cắt giảm, đơn giản hóa thủ tục hành chính dựa trên dữ liệu)"
+        ],
+        "attachment_path": null
+      }
+    ],
+    "special_cases": [
+      "Có tình huống trẻ bị bỏ rơi hoặc thiếu giấy chứng sinh",
+      "Có kiểm tra dữ liệu cư trú/định danh",
+      "Có thể cần đối chiếu thông tin thửa đất hoặc giấy chứng nhận"
+    ],
+    "common_errors": [
+      "Thông tin thửa đất, tài sản hoặc giấy chứng nhận chưa khớp với hồ sơ hiện có."
+    ],
+    "validation_hints": [
+      "Nên xác định trước kênh nộp hồ sơ để biết có cần bản giấy, bản điện tử hay xuất trình trực tiếp.",
+      "Nên rà lại thông tin người học, cơ sở đào tạo và loại xác nhận hoặc văn bằng cần xin."
+    ]
+  },
+  "intake": {
+    "candidate_input_fields": [
+      {
+        "field_id": "learner_full_name",
+        "label": "Tên người học",
+        "field_type": "text",
+        "required": true
+      },
+      {
+        "field_id": "education_record_type",
+        "label": "Loại hồ sơ học tập cần xử lý",
+        "field_type": "text",
+        "required": true
+      },
+      {
+        "field_id": "education_institution",
+        "label": "Cơ sở đào tạo liên quan",
+        "field_type": "text",
+        "required": false
+      },
+      {
+        "field_id": "submission_channel_preference",
+        "label": "Kênh nộp dự kiến",
+        "field_type": "enum",
+        "required": false
+      }
+    ],
+    "suggested_clarifying_questions": [
+      "Bạn đang cần xử lý hồ sơ học tập, văn bằng hay xác nhận nào?",
+      "Người học và cơ sở đào tạo liên quan đã xác định rõ chưa?"
+    ]
+  },
+  "ui_hints": {
+    "primary_channel": "online",
+    "result_label": "Danh sách trẻ em mẫu giáo được hỗ trợ ăn trưa do UBND cấp xã phê duyệt",
+    "time_badge": "24 ngày làm việc",
+    "document_count_badge": 8
+  },
+  "provenance": {
+    "generator": "workflow_domain_enricher",
+    "derivation_mode": "rule_based_semantic_enrichment",
+    "supported_group": true
+  }
+}

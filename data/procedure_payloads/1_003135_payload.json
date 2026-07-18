@@ -1,0 +1,394 @@
+{
+  "schema_version": "3.0",
+  "record_type": "public_service_procedure_payload",
+  "id": "procedure-1.003135",
+  "procedure_code": "1.003135",
+  "code": "1.003135",
+  "title": "Cấp, cấp lại, chuyển đổi giấy chứng nhận khả năng chuyên môn, chứng chỉ chuyên môn",
+  "language": "vi",
+  "status": "generated_from_pipeline",
+  "field": "Hàng hải và đường thủy nội địa",
+  "group_key": "hoc_tap",
+  "workflow_family": null,
+  "subflow": null,
+  "source": {
+    "source_url": "file:///C:/Users/ku060/Downloads/VAIC%20source/data-pipeline/raw_data/1_003135/1_003135_procedure_detail.md",
+    "source_markdown_path": "C:\\Users\\ku060\\Downloads\\VAIC source\\data-pipeline\\raw_data\\1_003135\\1_003135_procedure_detail.md",
+    "normalized_payload_path": "C:\\Users\\ku060\\Downloads\\VAIC source\\data-pipeline\\govease-unified\\data\\normalized_structured\\1_003135_normalized_structured.json",
+    "enriched_payload_path": "C:\\Users\\ku060\\Downloads\\VAIC source\\data-pipeline\\govease-unified\\data\\enriched_structured_priority\\1_003135_enriched_structured.json"
+  },
+  "scope": {
+    "included": "Thủ tục này thuộc nhóm giáo dục và học tập, thường liên quan đến hồ sơ đào tạo, văn bằng hoặc điều kiện học tập của người học. Kết quả thường nhận được là Giấy chứng nhận khả năng chuyên môn, chứng chỉ chuyên môn. Thời gian xử lý tham khảo: 5 ngày làm việc.",
+    "not_included": []
+  },
+  "agency": {
+    "executing_agency": "Sở Xây dựng, Cơ sở đào tạo đủ điều kiện được công nhận",
+    "submission_place": null,
+    "receiving_places": []
+  },
+  "target_users": [
+    "Người Việt Nam định cư ở nước ngoài",
+    "Công dân Việt Nam",
+    "Người nước ngoài"
+  ],
+  "submission_methods": [
+    {
+      "code": "ONLINE",
+      "label": "Trực tuyến",
+      "processing_time": "5 ngày làm việc",
+      "fee": null,
+      "description": "- 05 ngày làm việc kể từ ngày nhận đủ hồ sơ<br>- Lệ phí : 20.000 Đồng (Lệ phí Cấp mới, cấp lại chứng chỉ chuyên môn: 20.000 đồng/giấy.); <br>- Lệ phí : 50.000 Đồng (Lệ phí Cấp mới, cấp lại chứng nhận khả năng chuyên môn thuyền trưởng, máy trưởng: 50.000 đồng/giấy;)"
+    },
+    {
+      "code": "POSTAL",
+      "label": "Dịch vụ bưu chính",
+      "processing_time": "5 ngày làm việc",
+      "fee": null,
+      "description": "- 05 ngày làm việc kể từ ngày nhận đủ hồ sơ<br>- Lệ phí : 20.000 Đồng (Lệ phí Cấp mới, cấp lại chứng chỉ chuyên môn: 20.000 đồng/giấy.); <br>- Lệ phí : 50.000 Đồng (Lệ phí Cấp mới, cấp lại chứng nhận khả năng chuyên môn thuyền trưởng, máy trưởng: 50.000 đồng/giấy;)"
+    },
+    {
+      "code": "IN_PERSON",
+      "label": "Trực tiếp",
+      "processing_time": "5 ngày làm việc",
+      "fee": null,
+      "description": "- 05 ngày làm việc kể từ ngày nhận đủ hồ sơ<br>- Lệ phí : 20.000 Đồng (Lệ phí Cấp mới, cấp lại chứng chỉ chuyên môn: 20.000 đồng/giấy.); <br>- Lệ phí : 50.000 Đồng (Lệ phí Cấp mới, cấp lại chứng nhận khả năng chuyên môn thuyền trưởng, máy trưởng: 50.000 đồng/giấy;)"
+    }
+  ],
+  "processing_note": "Thời gian xử lý tham chiếu: 5 ngày làm việc. Nên rà trước thông tin người học, cơ sở đào tạo và loại kết quả cần xin xác nhận hoặc cấp lại. Có thể chọn kênh nộp phù hợp: Trực tiếp, Trực tuyến, Dịch vụ bưu chính. Hiện có khoảng 4 mục giấy tờ cần theo dõi trong checklist.",
+  "documents": {
+    "normally_required": [
+      {
+        "name": "Bản chính hoặc bản điện tử hoặc bản sao điện tử Giấy chứng nhận sức khỏe do cơ sở y tế có thẩm quyền cấp",
+        "quantity": "1 bản chính, 1 bản sao",
+        "notes": [],
+        "group": "default",
+        "attachment_path": null
+      },
+      {
+        "name": "02 (hai) ảnh màu hoặc bản điện tử ảnh màu cỡ 2x3 cm, nền trắng, ảnh chụp không quá 06 tháng",
+        "quantity": "2 bản chính, 0 bản sao",
+        "notes": [],
+        "group": "default",
+        "attachment_path": null
+      },
+      {
+        "name": "Bản chính hoặc biểu mẫu điện tử Đơn đề nghị theo quy định",
+        "quantity": "1 bản chính, 0 bản sao",
+        "notes": [],
+        "group": "default",
+        "attachment_path": null
+      }
+    ],
+    "conditional": [
+      {
+        "condition": "Xuất trình bản chính để kiểm tra (trong trường hợp gửi trực tiếp) hoặc bản điện tử hoặc bản sao điện tử hoặc bản sao có chứng thực (trong trường hợp gửi qua đường bưu chính hoặc qua hệ thống dịch vụ công trực tuyến hoặc theo hình thức phù hợp khác) của các loại giấy tờ chứng nhận về thuyền trưởng hoặc máy trưởng hoặc chứng chỉ chuyên môn hoặc bản dịch công chứng sang tiếng Việt (đối với các loại giấy tờ chứng nhận về thuyền trưởng hoặc máy trưởng hoặc chứng chỉ chuyên môn do các cơ quan có thẩm quyền của nước ngoài cấp) để chứng minh đủ điều kiện xét cấp, cấp lại, chuyển đổi tương ứng với loại GCNKNCM, CCCM theo quy định",
+        "document": "Xuất trình bản chính để kiểm tra (trong trường hợp gửi trực tiếp) hoặc bản điện tử hoặc bản sao điện tử hoặc bản sao có chứng thực (trong trường hợp gửi qua đường bưu chính hoặc qua hệ thống dịch vụ công trực tuyến hoặc theo hình thức phù hợp khác) của các loại giấy tờ chứng nhận về thuyền trưởng hoặc máy trưởng hoặc chứng chỉ chuyên môn hoặc bản dịch công chứng sang tiếng Việt (đối với các loại giấy tờ chứng nhận về thuyền trưởng hoặc máy trưởng hoặc chứng chỉ chuyên môn do các cơ quan có thẩm quyền của nước ngoài cấp) để chứng minh đủ điều kiện xét cấp, cấp lại, chuyển đổi tương ứng với loại GCNKNCM, CCCM theo quy định",
+        "quantity": "1 bản chính, 1 bản sao",
+        "notes": [],
+        "attachment_path": null
+      }
+    ],
+    "forms": [],
+    "presented": [],
+    "notes": [],
+    "summary": [
+      {
+        "group": "default",
+        "name": "Bản chính hoặc bản điện tử hoặc bản sao điện tử Giấy chứng nhận sức khỏe do cơ sở y tế có thẩm quyền cấp",
+        "quantity": "1 bản chính, 1 bản sao",
+        "notes": [],
+        "attachment_path": null
+      },
+      {
+        "group": "default",
+        "name": "02 (hai) ảnh màu hoặc bản điện tử ảnh màu cỡ 2x3 cm, nền trắng, ảnh chụp không quá 06 tháng",
+        "quantity": "2 bản chính, 0 bản sao",
+        "notes": [],
+        "attachment_path": null
+      },
+      {
+        "group": "default",
+        "name": "Bản chính hoặc biểu mẫu điện tử Đơn đề nghị theo quy định",
+        "quantity": "1 bản chính, 0 bản sao",
+        "notes": [],
+        "attachment_path": null
+      },
+      {
+        "group": null,
+        "name": null,
+        "quantity": "1 bản chính, 1 bản sao",
+        "notes": [],
+        "attachment_path": null
+      }
+    ]
+  },
+  "steps": [
+    {
+      "order": 1,
+      "title": "Bước 1",
+      "description": "1. **a) Nộp hồ sơ TTHC:**",
+      "example": null
+    },
+    {
+      "order": 2,
+      "title": "Bước 2",
+      "description": "Cá nhân có nhu cầu cấp, cấp lại, chuyển đổi giấy chứng nhận khả năng chuyên môn, chứng chỉ chuyên môn nộp 01 (một) bộ hồ sơ trực tiếp hoặc gửi qua hệ thống bưu chính hoặc qua hệ thống dịch vụ công trực tuyến hoặc hình thức phù hợp khác đến cơ quan có thẩm quyền:",
+      "example": "trực tuyến"
+    },
+    {
+      "order": 3,
+      "title": "Bước 3",
+      "description": "- Sở Xây dựng:",
+      "example": null
+    },
+    {
+      "order": 4,
+      "title": "Bước 4",
+      "description": "+ Đối với giấy chứng nhận khả năng chuyên môn thuyền trưởng từ hạng tư trở lên, giấy chứng nhận khả năng chuyên môn máy trưởng từ hạng ba trở lên đối với học viên học tại các cơ sở đào tạo trên địa bàn quản lý;",
+      "example": null
+    },
+    {
+      "order": 5,
+      "title": "Bước 5",
+      "description": "+ Đối với chứng chỉ chuyên môn đặc biệt đối với học viên học tại các cơ sở đào tạo trên địa bàn quản lý.",
+      "example": null
+    },
+    {
+      "order": 6,
+      "title": "Bước 6",
+      "description": "- Cơ sở đào tạo đủ điều kiện theo quy định:",
+      "example": null
+    },
+    {
+      "order": 7,
+      "title": "Bước 7",
+      "description": "+ Đối với chứng chỉ nghiệp vụ và chứng chỉ huấn luyện an toàn cơ bản;",
+      "example": null
+    },
+    {
+      "order": 8,
+      "title": "Bước 8",
+      "description": "2. **b) Giải quyết TTHC:**",
+      "example": null
+    },
+    {
+      "order": 9,
+      "title": "Bước 9",
+      "description": "Sở Xây dựng hoặc cơ sở đào tạo tiếp nhận, kiểm tra hồ sơ và xử lý như sau:",
+      "example": null
+    },
+    {
+      "order": 10,
+      "title": "Bước 10",
+      "description": "- Trường hợp hồ sơ nộp trực tiếp, nếu hồ sơ đầy đủ thì lập Giấy tiếp nhận hồ sơ và hẹn ngày trả kết quả theo thời hạn quy định; nếu hồ sơ không đầy đủ theo quy định thì trả lại ngay và hướng dẫn tổ chức, cá nhân hoàn thiện lại hồ sơ;",
+      "example": "trực tiếp"
+    },
+    {
+      "order": 11,
+      "title": "Bước 11",
+      "description": "- Trường hợp nhận hồ sơ qua hệ thống bưu chính hoặc qua hệ thống dịch vụ công trực tuyến, nếu hồ sơ không đầy đủ theo quy định, trong thời gian chậm nhất 02 (hai) ngày làm việc kể từ ngày nhận được hồ sơ, Sở Xây dựng hoặc cơ sở đào tạo hướng dẫn tổ chức, cá nhân hoàn thiện lại hồ sơ (gửi bằng văn bản hoặc thông qua tài khoản của tổ chức, cá nhân trên hệ thống dịch vụ công);",
+      "example": "trực tuyến"
+    },
+    {
+      "order": 12,
+      "title": "Bước 12",
+      "description": "- Trong thời hạn 05 (năm) ngày làm việc, kể từ ngày nhận được hồ sơ hợp lệ và người đề nghị xét cấp, cấp lại, chuyển đổi giấy chứng nhận khả năng chuyên môn, chứng chỉ chuyên môn đã nộp phí, lệ phí theo quy định, Sở Xây dựng hoặc cơ sở đào tạo thực hiện xét cấp, cấp lại, chuyển đổi giấy chứng nhận khả năng chuyên môn, chứng chỉ chuyên môn theo quy định.",
+      "example": null
+    }
+  ],
+  "input_fields": [
+    {
+      "field": "learner_full_name",
+      "label": "Tên người học",
+      "type": "string",
+      "required": true
+    },
+    {
+      "field": "education_record_type",
+      "label": "Loại hồ sơ học tập cần xử lý",
+      "type": "string",
+      "required": true
+    },
+    {
+      "field": "education_institution",
+      "label": "Cơ sở đào tạo liên quan",
+      "type": "string",
+      "required": false
+    },
+    {
+      "field": "submission_channel_preference",
+      "label": "Kênh nộp dự kiến",
+      "type": "enum",
+      "required": false,
+      "options": [
+        "Trực tiếp",
+        "Trực tuyến",
+        "Dịch vụ bưu chính"
+      ]
+    }
+  ],
+  "validation_rules": [
+    {
+      "id": "required-1",
+      "severity": "error",
+      "field": "learner_full_name",
+      "rule": "Trường bắt buộc phải có dữ liệu hợp lệ trước khi nộp.",
+      "message": "Thiếu trường bắt buộc: Tên người học."
+    },
+    {
+      "id": "required-2",
+      "severity": "error",
+      "field": "education_record_type",
+      "rule": "Trường bắt buộc phải có dữ liệu hợp lệ trước khi nộp.",
+      "message": "Thiếu trường bắt buộc: Loại hồ sơ học tập cần xử lý."
+    },
+    {
+      "id": "hint-1",
+      "severity": "warning",
+      "field": "general",
+      "rule": "Nên xác định trước kênh nộp hồ sơ để biết có cần bản giấy, bản điện tử hay xuất trình trực tiếp.",
+      "message": "Nên xác định trước kênh nộp hồ sơ để biết có cần bản giấy, bản điện tử hay xuất trình trực tiếp."
+    },
+    {
+      "id": "hint-2",
+      "severity": "warning",
+      "field": "general",
+      "rule": "Nên rà lại thông tin người học, cơ sở đào tạo và loại xác nhận hoặc văn bằng cần xin.",
+      "message": "Nên rà lại thông tin người học, cơ sở đào tạo và loại xác nhận hoặc văn bằng cần xin."
+    }
+  ],
+  "common_errors": [
+    {
+      "field": "general",
+      "issue": "Thiếu giấy tờ hợp pháp hóa hoặc giấy tờ nhân thân của phía nước ngoài.",
+      "fix": "Nên xác định trước kênh nộp hồ sơ để biết có cần bản giấy, bản điện tử hay xuất trình trực tiếp."
+    },
+    {
+      "field": "general",
+      "issue": "Điền sai mẫu tờ khai hoặc chọn sai biểu mẫu đi kèm.",
+      "fix": "Nên xác định trước kênh nộp hồ sơ để biết có cần bản giấy, bản điện tử hay xuất trình trực tiếp."
+    },
+    {
+      "field": "general",
+      "issue": "Thông tin thửa đất, tài sản hoặc giấy chứng nhận chưa khớp với hồ sơ hiện có.",
+      "fix": "Nên xác định trước kênh nộp hồ sơ để biết có cần bản giấy, bản điện tử hay xuất trình trực tiếp."
+    }
+  ],
+  "clarifying_questions": [
+    {
+      "id": "clarify_1",
+      "question": "Bạn đang cần xử lý hồ sơ học tập, văn bằng hay xác nhận nào?",
+      "purpose": "workflow_intake"
+    },
+    {
+      "id": "clarify_2",
+      "question": "Người học và cơ sở đào tạo liên quan đã xác định rõ chưa?",
+      "purpose": "workflow_intake"
+    }
+  ],
+  "legal_basis": [
+    {
+      "title": "Thông tư sửa đổi, bổ sung một số điều của các Thông tư thuộc lĩnh vực quản lý nhà nước của Bộ Xây dựng liên quan đến sắp xếp tổ chức bộ máy, thực hiện chính quyền địa phương hai cấp và phân cấp cho chính quyền địa phương.",
+      "code": "09/2025/TT-BXD"
+    },
+    {
+      "title": "Sửa đổi, bổ sung một số điều của Thông tư số 40/2019/TT-BGTVT ngày 15/10/2019 của Bộ trưởng Bộ Giao thông vận tải quy định về thi, kiểm tra, cấp, cấp lại, chuyển đổi giấy chứng nhận khả năng chuyên môn, chứng chỉ chuyên môn thuyền viên, người lái phương tiện thủy nội địa",
+      "code": "38/2023/TT-BGTVT"
+    },
+    {
+      "title": "Sửa đổi, bổ sung một số điều của các Thông tư quy định về đăng ký phương tiện thủy nội địa và quy định thi, kiểm tra, cấp, cấp lại, chuyển đổi giấy chứng nhận khả năng chuyên môn, chứng chỉ chuyên môn thuyền viên, người lái phương tiện thủy nội địa",
+      "code": "60/2024/TT-BGTVT"
+    }
+  ],
+  "legal_bases": [
+    {
+      "title": "Thông tư sửa đổi, bổ sung một số điều của các Thông tư thuộc lĩnh vực quản lý nhà nước của Bộ Xây dựng liên quan đến sắp xếp tổ chức bộ máy, thực hiện chính quyền địa phương hai cấp và phân cấp cho chính quyền địa phương.",
+      "code": "09/2025/TT-BXD"
+    },
+    {
+      "title": "Sửa đổi, bổ sung một số điều của Thông tư số 40/2019/TT-BGTVT ngày 15/10/2019 của Bộ trưởng Bộ Giao thông vận tải quy định về thi, kiểm tra, cấp, cấp lại, chuyển đổi giấy chứng nhận khả năng chuyên môn, chứng chỉ chuyên môn thuyền viên, người lái phương tiện thủy nội địa",
+      "code": "38/2023/TT-BGTVT"
+    },
+    {
+      "title": "Sửa đổi, bổ sung một số điều của các Thông tư quy định về đăng ký phương tiện thủy nội địa và quy định thi, kiểm tra, cấp, cấp lại, chuyển đổi giấy chứng nhận khả năng chuyên môn, chứng chỉ chuyên môn thuyền viên, người lái phương tiện thủy nội địa",
+      "code": "60/2024/TT-BGTVT"
+    }
+  ],
+  "faq": [
+    {
+      "question": "Có thể nộp qua kênh nào?",
+      "answer": "Các kênh hiện có: Trực tiếp, Trực tuyến, Dịch vụ bưu chính."
+    },
+    {
+      "question": "Thời gian xử lý tham chiếu là bao lâu?",
+      "answer": "Thời gian xử lý tham chiếu hiện có là 5 ngày làm việc."
+    },
+    {
+      "question": "Kết quả chính của thủ tục là gì?",
+      "answer": "Kết quả chính được trích xuất là Giấy chứng nhận khả năng chuyên môn, chứng chỉ chuyên môn."
+    }
+  ],
+  "guidance": {
+    "highlight_documents": [
+      {
+        "bucket": "required",
+        "name": "Bản chính hoặc bản điện tử hoặc bản sao điện tử Giấy chứng nhận sức khỏe do cơ sở y tế có thẩm quyền cấp",
+        "conditions": [],
+        "attachment_path": null
+      },
+      {
+        "bucket": "required",
+        "name": "02 (hai) ảnh màu hoặc bản điện tử ảnh màu cỡ 2x3 cm, nền trắng, ảnh chụp không quá 06 tháng",
+        "conditions": [],
+        "attachment_path": null
+      },
+      {
+        "bucket": "required",
+        "name": "Bản chính hoặc biểu mẫu điện tử Đơn đề nghị theo quy định",
+        "conditions": [],
+        "attachment_path": null
+      },
+      {
+        "bucket": "conditional",
+        "name": "Xuất trình bản chính để kiểm tra (trong trường hợp gửi trực tiếp) hoặc bản điện tử hoặc bản sao điện tử hoặc bản sao có chứng thực (trong trường hợp gửi qua đường bưu chính hoặc qua hệ thống dịch vụ công trực tuyến hoặc theo hình thức phù hợp khác) của các loại giấy tờ chứng nhận về thuyền trưởng hoặc máy trưởng hoặc chứng chỉ chuyên môn hoặc bản dịch công chứng sang tiếng Việt (đối với các loại giấy tờ chứng nhận về thuyền trưởng hoặc máy trưởng hoặc chứng chỉ chuyên môn do các cơ quan có thẩm quyền của nước ngoài cấp) để chứng minh đủ điều kiện xét cấp, cấp lại, chuyển đổi tương ứng với loại GCNKNCM, CCCM theo quy định",
+        "conditions": [
+          "Xuất trình bản chính để kiểm tra (trong trường hợp gửi trực tiếp) hoặc bản điện tử hoặc bản sao điện tử hoặc bản sao có chứng thực (trong trường hợp gửi qua đường bưu chính hoặc qua hệ thống dịch vụ công trực tuyến hoặc theo hình thức phù hợp khác) của các loại giấy tờ chứng nhận về thuyền trưởng hoặc máy trưởng hoặc chứng chỉ chuyên môn hoặc bản dịch công chứng sang tiếng Việt (đối với các loại giấy tờ chứng nhận về thuyền trưởng hoặc máy trưởng hoặc chứng chỉ chuyên môn do các cơ quan có thẩm quyền của nước ngoài cấp) để chứng minh đủ điều kiện xét cấp, cấp lại, chuyển đổi tương ứng với loại GCNKNCM, CCCM theo quy định"
+        ],
+        "attachment_path": null
+      }
+    ],
+    "special_cases": [
+      "Có yếu tố nước ngoài",
+      "Có trường hợp hồ sơ điện tử thay thế bản giấy",
+      "Có thể cần đối chiếu thông tin thửa đất hoặc giấy chứng nhận"
+    ],
+    "common_errors": [
+      "Thiếu giấy tờ hợp pháp hóa hoặc giấy tờ nhân thân của phía nước ngoài.",
+      "Điền sai mẫu tờ khai hoặc chọn sai biểu mẫu đi kèm.",
+      "Thông tin thửa đất, tài sản hoặc giấy chứng nhận chưa khớp với hồ sơ hiện có."
+    ],
+    "validation_hints": [
+      "Nên xác định trước kênh nộp hồ sơ để biết có cần bản giấy, bản điện tử hay xuất trình trực tiếp.",
+      "Nên rà lại thông tin người học, cơ sở đào tạo và loại xác nhận hoặc văn bằng cần xin."
+    ]
+  },
+  "next_steps": {
+    "summary": "Nên rà trước thông tin người học, cơ sở đào tạo và loại kết quả cần xin xác nhận hoặc cấp lại. Có thể chọn kênh nộp phù hợp: Trực tiếp, Trực tuyến, Dịch vụ bưu chính. Hiện có khoảng 4 mục giấy tờ cần theo dõi trong checklist.",
+    "time_badge": "5 ngày làm việc",
+    "result_label": "Giấy chứng nhận khả năng chuyên môn, chứng chỉ chuyên môn",
+    "primary_channel": "online",
+    "channels": [
+      "in_person",
+      "online",
+      "postal"
+    ]
+  },
+  "notes": [],
+  "provenance": {
+    "pipeline": "raw->structured->normalized->enriched->ui_api_payload",
+    "normalizer_version": "0.2.0",
+    "enricher_version": "0.2.0",
+    "mapping_notes": "excluded_from_clean_workflow_dataset",
+    "supported_group": true
+  }
+}

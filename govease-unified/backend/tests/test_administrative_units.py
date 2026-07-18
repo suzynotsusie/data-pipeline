@@ -4,7 +4,7 @@ from unittest.mock import patch
 
 from fastapi.testclient import TestClient
 
-os.environ["CORS_ORIGINS"] = "http://localhost:3000,https://gov-ease-ai.vercel.app"
+os.environ["CORS_ORIGINS"] = "http://localhost:3010,https://gov-ease-ai.vercel.app"
 
 from backend.app.main import app
 from backend.app.services.administrative_units import (

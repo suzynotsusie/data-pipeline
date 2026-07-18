@@ -10,7 +10,7 @@ npm install
 npm run dev
 ```
 
-Set `NEXT_PUBLIC_API_URL` to the FastAPI origin. The full portal demo is at `/`; the iframe-compatible assistant is at `/widget`.
+Set `API_URL` to the FastAPI origin. `NEXT_PUBLIC_API_URL` is optional and only needed when you intentionally want browser-side requests to bypass the built-in Next proxy. The full portal demo is at `/`; the iframe-compatible assistant is at `/widget`.
 
 ## Embed
 

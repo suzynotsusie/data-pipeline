@@ -1,0 +1,539 @@
+{
+  "schema_version": "1.0",
+  "domain": "phuong_tien_nguoi_lai",
+  "updated_at": "2026-07-18",
+  "source_files": [
+    "C:\\Users\\ku060\\Downloads\\VAIC source\\data-pipeline\\main\\full-data.csv",
+    "C:\\Users\\ku060\\Downloads\\VAIC source\\data-pipeline\\raw_data"
+  ],
+  "subdomains": [
+    {
+      "subdomain_key": "dang_ky_phuong_tien",
+      "subdomain_label": "Đăng ký phương tiện",
+      "event_id": 316,
+      "field_name": "Đăng ký, quản lý phương tiện giao thông cơ giới, xe máy chuyên dùng",
+      "summary": "Nhóm thủ tục liên quan đến đăng ký, cấp đổi, cấp lại, sang tên, thu hồi đăng ký và biển số phương tiện giao thông cơ giới, xe máy chuyên dùng.",
+      "entry_prompts": [
+        "Bạn muốn đăng ký xe lần đầu, sang tên, đổi/cấp lại đăng ký hay thu hồi biển số?",
+        "Bạn làm trực tuyến toàn trình hay nộp trực tiếp/một phần?"
+      ],
+      "procedure_count": 14,
+      "procedures": [
+        {
+          "procedure_code": "1.012575",
+          "procedure_title": "Đăng ký xe lần đầu trực tuyến toàn trình đối với xe sản xuất lắp ráp trong nước thực hiện tại cấp tỉnh, cấp xã",
+          "field": "Đăng ký, quản lý phương tiện giao thông cơ giới, xe máy chuyên dùng",
+          "subdomain_key": "dang_ky_phuong_tien",
+          "subdomain_label": "Đăng ký phương tiện",
+          "event_id": 316,
+          "operation_group": "dang_ky_lan_dau",
+          "operation_key": "dang_ky_xe_lan_dau_truc_tuyen_toan_trinh_doi_voi_xe_san_xuat_lap_rap_trong_nuoc_thuc_hien_tai_cap_tinh_cap_xa",
+          "agency": "Công an cấp Xã",
+          "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bf7-8ec4-71e9-98c9-719f7565b157",
+          "raw_data_file": "C:\\Users\\ku060\\Downloads\\VAIC source\\data-pipeline\\raw_data\\1_012575\\1_012575_procedure_detail.md",
+          "raw_data_available": true,
+          "overview": "1. Bước 1: Chủ xe đăng nhập bằng tài khoản định danh mức độ 2 trên cổng dịch vụ công hoặc Ứng dụng định danh quốc gia và kê khai chính xác, đầy đủ, trung thực các nội dung trong mẫu giấy khai đăng ký xe điện tử và thực hiện theo hướng dẫn (chủ xe không cần ký). Bước 2: Chủ xe thực hiện lựa chọn biển số: biển định danh (thực hiện chọn biển định danh); xác nhận biển đấu giá; hoặc bấm biển số mới (nếu chưa có biển số định danh) trên cổng dịch vụ công hoặc Ứng dụng định danh quốc gia. Bước 3: Cổng dịch vụ công, Ứng dụng định danh quốc gia thông báo mã dịch vụ công và biển số xe được cấp cho chủ xe; hướng dẫn nộp tiền lệ phí đăng ký xe qua tin nhắn điện thoại hoặc địa chỉ thư điện tử hoặc thông báo trên Ứng dụng định danh quốc gia để chủ xe nộp tiền lệ phí qua tiện ích thanh toán được tích hợp trên cổng dịch vụ công, Ứng dụng định danh quốc gia. Bước 4: Sau khi thanh toán thành công lệ phí đăng ký xe, cổng dịch vụ công, Ứng dụng định danh quốc gia thông báo cho chủ xe việc hoàn thành nộp lệ phí; Bước 5: Cán bộ đăng ký xe thực hiện tiếp nhận, kiểm tra, hiệu chỉnh dữ liệu đăng ký xe lần đầu trực tuyến toàn trình từ cổng dịch vụ công, Ứng dụng định danh quốc gia chuyển về hệ thống đăng ký, quản lý xe; in giấy khai đăng ký xe, chứng nhận đăng ký xe; trình lãnh đạo cấp có thẩm quyền duyệt, ký hồ sơ xe, chứng nhận đăng ký xe, sổ đăng ký xe và các giấy tờ liên quan; đóng dấu hồ sơ xe. Trả chứng nhận đăng ký xe, biển số xe (dán tem nhận diện vào biển số xe trúng đấu giá hoặc biển số xe sử dụng năng lượng sạch, năng lượng xanh, thân thiện môi trường) cho chủ xe qua dịch vụ bưu chính hoặc trực tiếp tại cơ quan đăng ký xe; Bước 6: Chủ xe nhận thông báo về việc trả kết quả đăng ký xe từ cổng dịch vụ công, Ứng dụng định danh quốc gia. Nhận chứng nhận đăng ký xe, biển số xe qua dịch vụ bưu chính hoặc trực tiếp tại cơ quan đăng ký xe và nộp lại Phiếu kiểm tra chất lượng xuất xưởng (có dán bản chà số máy, số khung có đóng dấu giáp lai của cơ sở sản xuất). Trường hợp chủ xe không nộp hoặc thông tin bản chà số máy, số khung cung cấp không đúng với thông tin đã kê khai thì chủ xe phải mang xe đến cơ quan đăng ký xe để kiểm tra và nhận kết quả đăng ký xe; Trường hợp không có bản giấy thì nộp bản in từ hệ thống cơ sở dữ liệu điện tử phiếu kiểm tra chất lượng xuất xưởng có dán bản chà số máy, số khung xe đóng dấu giáp lai của cơ sở sản xuất xe. Bước 7: Cán bộ đăng ký xe nhận Phiếu kiểm tra chất lượng xuất xưởng để kiểm tra, đối chiếu với dữ liệu trên hệ thống đăng ký, quản lý xe, ký xác nhận đã kiểm tra, đối chiếu lên bản chà số máy, số khung của xe để lưu vào hồ sơ đăng ký xe; quét bản chà số máy, số khung của xe và tải lên hệ thống đăng ký, quản lý xe.",
+          "procedure_flow": "1. Bước 1: Chủ xe đăng nhập bằng tài khoản định danh mức độ 2 trên cổng dịch vụ công hoặc Ứng dụng định danh quốc gia và kê khai chính xác, đầy đủ, trung thực các nội dung trong mẫu giấy khai đăng ký xe điện tử và thực hiện theo hướng dẫn (chủ xe không cần ký). Bước 2: Chủ xe thực hiện lựa chọn biển số: biển định danh (thực hiện chọn biển định danh); xác nhận biển đấu giá; hoặc bấm biển số mới (nếu chưa có biển số định danh) trên cổng dịch vụ công hoặc Ứng dụng định danh quốc gia. Bước 3: Cổng dịch vụ công, Ứng dụng định danh quốc gia thông báo mã dịch vụ công và biển số xe được cấp cho chủ xe; hướng dẫn nộp tiền lệ phí đăng ký xe qua tin nhắn điện thoại hoặc địa chỉ thư điện tử hoặc thông báo trên Ứng dụng định danh quốc gia để chủ xe nộp tiền lệ phí qua tiện ích thanh toán được tích hợp trên cổng dịch vụ công, Ứng dụng định danh quốc gia. Bước 4: Sau khi thanh toán thành công lệ phí đăng ký xe, cổng dịch vụ công, Ứng dụng định danh quốc gia thông báo cho chủ xe việc hoàn thành nộp lệ phí; Bước 5: Cán bộ đăng ký xe thực hiện tiếp nhận, kiểm tra, hiệu chỉnh dữ liệu đăng ký xe lần đầu trực tuyến toàn trình từ cổng dịch vụ công, Ứng dụng định danh quốc gia chuyển về hệ thống đăng ký, quản lý xe; in giấy khai đăng ký xe, chứng nhận đăng ký xe; trình lãnh đạo cấp có thẩm quyền duyệt, ký hồ sơ xe, chứng nhận đăng ký xe, sổ đăng ký xe và các giấy tờ liên quan; đóng dấu hồ sơ xe. Trả chứng nhận đăng ký xe, biển số xe (dán tem nhận diện vào biển số xe trúng đấu giá hoặc biển số xe sử dụng năng lượng sạch, năng lượng xanh, thân thiện môi trường) cho chủ xe qua dịch vụ bưu chính hoặc trực tiếp tại cơ quan đăng ký xe; Bước 6: Chủ xe nhận thông báo về việc trả kết quả đăng ký xe từ cổng dịch vụ công, Ứng dụng định danh quốc gia. Nhận chứng nhận đăng ký xe, biển số xe qua dịch vụ bưu chính hoặc trực tiếp tại cơ quan đăng ký xe và nộp lại Phiếu kiểm tra chất lượng xuất xưởng (có dán bản chà số máy, số khung có đóng dấu giáp lai của cơ sở sản xuất). Trường hợp chủ xe không nộp hoặc thông tin bản chà số máy, số khung cung cấp không đúng với thông tin đã kê khai thì chủ xe phải mang xe đến cơ quan đăng ký xe để kiểm tra và nhận kết quả đăng ký xe; Trường hợp không có bản giấy thì nộp bản in từ hệ thống cơ sở dữ liệu điện tử phiếu kiểm tra chất lượng xuất xưởng có dán bản chà số máy, số khung xe đóng dấu giáp lai của cơ sở sản xuất xe. Bước 7: Cán bộ đăng ký xe nhận Phiếu kiểm tra chất lượng xuất xưởng để kiểm tra, đối chiếu với dữ liệu trên hệ thống đăng ký, quản lý xe, ký xác nhận đã kiểm tra, đối chiếu lên bản chà số máy, số khung của xe để lưu vào hồ sơ đăng ký xe; quét bản chà số máy, số khung của xe và tải lên hệ thống đăng ký, quản lý xe.",
+          "requirements": "Chủ xe là công dân Việt Nam có tài khoản định danh mức độ 2; Phiếu kiểm tra chất lượng xuất xưởng có dán bản chà số máy, số khung có đóng dấu giáp lai của cơ sở sản xuất.",
+          "submission_methods": [
+            "Trực tuyến"
+          ],
+          "processing_time_values": [
+            "2 ngày"
+          ],
+          "document_groups": [],
+          "result_items": [
+            "Biển số xe (Mã: `KQ.G01.000015`)",
+            "Giấy chứng nhận đăng ký xe (Mã: `KQ.G01.000014`)"
+          ],
+          "legal_bases": []
+        },
+        {
+          "procedure_code": "1.013065",
+          "procedure_title": "Thu hồi chứng nhận đăng ký xe, biển số xe thực hiện bằng dịch vụ công toàn trình",
+          "field": "Đăng ký, quản lý phương tiện giao thông cơ giới, xe máy chuyên dùng",
+          "subdomain_key": "dang_ky_phuong_tien",
+          "subdomain_label": "Đăng ký phương tiện",
+          "event_id": 316,
+          "operation_group": "thu_hoi_dang_ky_xe",
+          "operation_key": "thu_hoi_chung_nhan_dang_ky_xe_bien_so_xe_thuc_hien_bang_dich_vu_cong_toan_trinh",
+          "agency": "Công an cấp Xã",
+          "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bf7-8ecd-75f0-808d-63f5146ec72c",
+          "raw_data_file": "C:\\Users\\ku060\\Downloads\\VAIC source\\data-pipeline\\raw_data\\1_013065\\1_013065_procedure_detail.md",
+          "raw_data_available": true,
+          "overview": "1. Bước 1: Chủ xe đăng nhập bằng tài khoản định danh mức độ 2 và kê khai giấy khai thu hồi chứng nhận đăng ký xe, biển số xe điện tử trên cổng dịch vụ công và nộp chứng nhận đăng ký xe, biển số xe cho cơ quan đăng ký xe thông qua dịch vụ bưu chính; trường hợp mất chứng nhận đăng ký xe hoặc mất biển số xe thì phải ghi rõ lý do trong giấy khai thu hồi chứng nhận đăng ký xe, biển số xe. Bước 2: Sau khi tiếp nhận, kiểm tra hồ sơ bảo đảm hợp lệ, cơ quan đăng ký xe cấp chứng nhận thu hồi chứng nhận đăng ký xe, biển số xe, ký số và trả kết quả cho chủ xe trên cổng dịch vụ công.",
+          "procedure_flow": "1. Bước 1: Chủ xe đăng nhập bằng tài khoản định danh mức độ 2 và kê khai giấy khai thu hồi chứng nhận đăng ký xe, biển số xe điện tử trên cổng dịch vụ công và nộp chứng nhận đăng ký xe, biển số xe cho cơ quan đăng ký xe thông qua dịch vụ bưu chính; trường hợp mất chứng nhận đăng ký xe hoặc mất biển số xe thì phải ghi rõ lý do trong giấy khai thu hồi chứng nhận đăng ký xe, biển số xe. Bước 2: Sau khi tiếp nhận, kiểm tra hồ sơ bảo đảm hợp lệ, cơ quan đăng ký xe cấp chứng nhận thu hồi chứng nhận đăng ký xe, biển số xe, ký số và trả kết quả cho chủ xe trên cổng dịch vụ công.",
+          "requirements": "Trong thời hạn 07 ngày làm việc, kể từ ngày xe hết niên hạn sử dụng, xe hư hỏng không sử dụng được, xe bị thải bỏ, chủ xe phải khai báo trên cổng dịch vụ công hoặc kê khai trực tiếp tại cơ quan đăng ký xe và nộp chứng nhận đăng ký xe, biển số xe cho cơ quan đăng ký xe hoặc Công an cấp xã (không phụ thuộc trụ sở, nơi cư trú của chủ xe) để làm thủ tục thu hồi.",
+          "submission_methods": [
+            "Trực tuyến"
+          ],
+          "processing_time_values": [
+            "8 ngày"
+          ],
+          "document_groups": [],
+          "result_items": [
+            "Giấy chứng nhận thu hồi đăng ký, biển số xe (Mã: `KQ.G01.000008`)"
+          ],
+          "legal_bases": []
+        },
+        {
+          "procedure_code": "1.013066",
+          "procedure_title": "Đăng ký xe lần đầu trực tuyến toàn trình đối với xe nhập khẩu thực hiện tại cấp tỉnh, cấp xã",
+          "field": "Đăng ký, quản lý phương tiện giao thông cơ giới, xe máy chuyên dùng",
+          "subdomain_key": "dang_ky_phuong_tien",
+          "subdomain_label": "Đăng ký phương tiện",
+          "event_id": 316,
+          "operation_group": "dang_ky_lan_dau",
+          "operation_key": "dang_ky_xe_lan_dau_truc_tuyen_toan_trinh_doi_voi_xe_nhap_khau_thuc_hien_tai_cap_tinh_cap_xa",
+          "agency": "Công an cấp Xã",
+          "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bf7-8edd-763c-9b6c-c896b0afab8e",
+          "raw_data_file": "C:\\Users\\ku060\\Downloads\\VAIC source\\data-pipeline\\raw_data\\1_013066\\1_013066_procedure_detail.md",
+          "raw_data_available": true,
+          "overview": "1. Bước 1: Chủ xe đăng nhập bằng tài khoản định danh mức độ 2 trên cổng dịch vụ công hoặc Ứng dụng định danh quốc gia và kê khai chính xác, đầy đủ, trung thực các nội dung trong mẫu giấy khai đăng ký xe điện tử và thực hiện theo hướng dẫn (chủ xe không cần ký). Bước 2: Chủ xe thực hiện lựa chọn biển số: biển định danh (thực hiện chọn biển định danh); xác nhận biển đấu giá; hoặc bấm biển số mới (nếu chưa có biển số định danh) trên cổng dịch vụ công hoặc Ứng dụng định danh quốc gia. Bước 3: Cổng dịch vụ công, Ứng dụng định danh quốc gia thông báo mã dịch vụ công và biển số xe được cấp cho chủ xe; hướng dẫn nộp tiền lệ phí đăng ký xe qua tin nhắn điện thoại hoặc địa chỉ thư điện tử hoặc thông báo trên Ứng dụng định danh quốc gia để chủ xe nộp tiền lệ phí qua tiện ích thanh toán được tích hợp trên cổng dịch vụ công, Ứng dụng định danh quốc gia. Bước 4: Sau khi thanh toán thành công lệ phí đăng ký xe, cổng dịch vụ công, Ứng dụng định danh quốc gia thông báo cho chủ xe việc hoàn thành nộp lệ phí; Bước 5: Cán bộ đăng ký xe thực hiện tiếp nhận, kiểm tra, hiệu chỉnh dữ liệu đăng ký xe lần đầu trực tuyến toàn trình từ cổng dịch vụ công, Ứng dụng định danh quốc gia chuyển về hệ thống đăng ký, quản lý xe; in giấy khai đăng ký xe, chứng nhận đăng ký xe; trình lãnh đạo cấp có thẩm quyền duyệt, ký hồ sơ xe, chứng nhận đăng ký xe, sổ đăng ký xe và các giấy tờ liên quan; đóng dấu hồ sơ xe. Trả chứng nhận đăng ký xe, biển số xe (dán tem nhận diện vào biển số xe trúng đấu giá hoặc biển số xe sử dụng năng lượng sạch, năng lượng xanh, thân thiện môi trường) cho chủ xe qua dịch vụ bưu chính hoặc trực tiếp tại cơ quan đăng ký xe; Bước 6: Chủ xe nhận thông báo về việc trả kết quả đăng ký xe từ cổng dịch vụ công, Ứng dụng định danh quốc gia. Nhận chứng nhận đăng ký xe, biển số xe qua dịch vụ bưu chính hoặc trực tiếp tại cơ quan đăng ký xe và nộp lại Giấy chứng nhận chất lượng an toàn kỹ thuật và bảo vệ môi trường xe nhập khẩu hoặc thông báo miễn kiểm tra chất lượng an toàn kỹ thuật và bảo vệ môi trường xe nhập khẩu (có dán bản chà số máy, số khung có đóng dấu giáp lai của đơn vị nhập khẩu xe). Trường hợp chủ xe không nộp hoặc thông tin bản chà số máy, số khung cung cấp không đúng với thông tin đã kê khai thì chủ xe phải mang xe đến cơ quan đăng ký xe để kiểm tra và nhận kết quả đăng ký xe; Trường hợp không có bản giấy thì nộp bản in từ hệ thống cơ sở dữ liệu điện tử chứng nhận chất lượng an toàn kỹ thuật và bảo vệ môi trường đối với xe nhập khẩu hoặc thông báo miễn kiểm tra chất lượng an toàn kỹ thuật và bảo vệ môi trường đối với xe nhập khẩu có dán bản chà số máy, số khung xe đóng dấu giáp lai của đơn vị nhập khẩu xe. Bước 7: Cán bộ đăng ký xe nhận Giấy chứng nhận chất lượng an toàn kỹ thuật và bảo vệ môi trường xe nhập khẩu hoặc thông báo miễn kiểm tra chất lượng an toàn kỹ thuật và bảo vệ môi trường xe nhập khẩu để kiểm tra, đối chiếu với dữ liệu trên hệ thống đăng ký, quản lý xe, ký xác nhận đã kiểm tra, đối chiếu lên bản chà số máy, số khung của xe để lưu vào hồ sơ đăng ký xe; quét bản chà số máy, số khung của xe và tải lên hệ thống đăng ký, quản lý xe.",
+          "procedure_flow": "1. Bước 1: Chủ xe đăng nhập bằng tài khoản định danh mức độ 2 trên cổng dịch vụ công hoặc Ứng dụng định danh quốc gia và kê khai chính xác, đầy đủ, trung thực các nội dung trong mẫu giấy khai đăng ký xe điện tử và thực hiện theo hướng dẫn (chủ xe không cần ký). Bước 2: Chủ xe thực hiện lựa chọn biển số: biển định danh (thực hiện chọn biển định danh); xác nhận biển đấu giá; hoặc bấm biển số mới (nếu chưa có biển số định danh) trên cổng dịch vụ công hoặc Ứng dụng định danh quốc gia. Bước 3: Cổng dịch vụ công, Ứng dụng định danh quốc gia thông báo mã dịch vụ công và biển số xe được cấp cho chủ xe; hướng dẫn nộp tiền lệ phí đăng ký xe qua tin nhắn điện thoại hoặc địa chỉ thư điện tử hoặc thông báo trên Ứng dụng định danh quốc gia để chủ xe nộp tiền lệ phí qua tiện ích thanh toán được tích hợp trên cổng dịch vụ công, Ứng dụng định danh quốc gia. Bước 4: Sau khi thanh toán thành công lệ phí đăng ký xe, cổng dịch vụ công, Ứng dụng định danh quốc gia thông báo cho chủ xe việc hoàn thành nộp lệ phí; Bước 5: Cán bộ đăng ký xe thực hiện tiếp nhận, kiểm tra, hiệu chỉnh dữ liệu đăng ký xe lần đầu trực tuyến toàn trình từ cổng dịch vụ công, Ứng dụng định danh quốc gia chuyển về hệ thống đăng ký, quản lý xe; in giấy khai đăng ký xe, chứng nhận đăng ký xe; trình lãnh đạo cấp có thẩm quyền duyệt, ký hồ sơ xe, chứng nhận đăng ký xe, sổ đăng ký xe và các giấy tờ liên quan; đóng dấu hồ sơ xe. Trả chứng nhận đăng ký xe, biển số xe (dán tem nhận diện vào biển số xe trúng đấu giá hoặc biển số xe sử dụng năng lượng sạch, năng lượng xanh, thân thiện môi trường) cho chủ xe qua dịch vụ bưu chính hoặc trực tiếp tại cơ quan đăng ký xe; Bước 6: Chủ xe nhận thông báo về việc trả kết quả đăng ký xe từ cổng dịch vụ công, Ứng dụng định danh quốc gia. Nhận chứng nhận đăng ký xe, biển số xe qua dịch vụ bưu chính hoặc trực tiếp tại cơ quan đăng ký xe và nộp lại Giấy chứng nhận chất lượng an toàn kỹ thuật và bảo vệ môi trường xe nhập khẩu hoặc thông báo miễn kiểm tra chất lượng an toàn kỹ thuật và bảo vệ môi trường xe nhập khẩu (có dán bản chà số máy, số khung có đóng dấu giáp lai của đơn vị nhập khẩu xe). Trường hợp chủ xe không nộp hoặc thông tin bản chà số máy, số khung cung cấp không đúng với thông tin đã kê khai thì chủ xe phải mang xe đến cơ quan đăng ký xe để kiểm tra và nhận kết quả đăng ký xe; Trường hợp không có bản giấy thì nộp bản in từ hệ thống cơ sở dữ liệu điện tử chứng nhận chất lượng an toàn kỹ thuật và bảo vệ môi trường đối với xe nhập khẩu hoặc thông báo miễn kiểm tra chất lượng an toàn kỹ thuật và bảo vệ môi trường đối với xe nhập khẩu có dán bản chà số máy, số khung xe đóng dấu giáp lai của đơn vị nhập khẩu xe. Bước 7: Cán bộ đăng ký xe nhận Giấy chứng nhận chất lượng an toàn kỹ thuật và bảo vệ môi trường xe nhập khẩu hoặc thông báo miễn kiểm tra chất lượng an toàn kỹ thuật và bảo vệ môi trường xe nhập khẩu để kiểm tra, đối chiếu với dữ liệu trên hệ thống đăng ký, quản lý xe, ký xác nhận đã kiểm tra, đối chiếu lên bản chà số máy, số khung của xe để lưu vào hồ sơ đăng ký xe; quét bản chà số máy, số khung của xe và tải lên hệ thống đăng ký, quản lý xe.",
+          "requirements": "Chủ xe là công dân Việt Nam có tài khoản định danh mức độ 2; Giấy chứng nhận chất lượng an toàn kỹ thuật và bảo vệ môi trường xe máy chuyên dùng nhập khẩu hoặc thông báo miễn kiểm tra chất lượng an toàn kỹ thuật và bảo vệ môi trường xe máy chuyên dùng nhập khẩu có dán bản chà số máy, số khung có đóng dấu giáp lai của đơn vị nhập khẩu.",
+          "submission_methods": [
+            "Trực tuyến",
+            "Trực tuyến"
+          ],
+          "processing_time_values": [
+            "7 ngày làm việc",
+            "2 ngày làm việc"
+          ],
+          "document_groups": [],
+          "result_items": [
+            "Biển số xe (Mã: `KQ.G01.000015`)",
+            "Giấy chứng nhận đăng ký xe (Mã: `KQ.G01.000014`)"
+          ],
+          "legal_bases": []
+        },
+        {
+          "procedure_code": "1.013067",
+          "procedure_title": "Đăng ký, cấp biển số xe lần đầu thực hiện bằng dịch vụ công một phần hoặc trực tiếp thực hiện tại cấp trung ương, cấp tỉnh, cấp xã",
+          "field": "Đăng ký, quản lý phương tiện giao thông cơ giới, xe máy chuyên dùng",
+          "subdomain_key": "dang_ky_phuong_tien",
+          "subdomain_label": "Đăng ký phương tiện",
+          "event_id": 316,
+          "operation_group": "dang_ky_khac",
+          "operation_key": "dang_ky_cap_bien_so_xe_lan_dau_thuc_hien_bang_dich_vu_cong_mot_phan_hoac_truc_tiep_thuc_hien_tai_cap_trung_uong_cap_tinh_cap_xa",
+          "agency": "Công an cấp Xã",
+          "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bf7-8ebf-754a-8107-e996c9e1c18a",
+          "raw_data_file": "C:\\Users\\ku060\\Downloads\\VAIC source\\data-pipeline\\raw_data\\1_013067\\1_013067_procedure_detail.md",
+          "raw_data_available": true,
+          "overview": "1. Bước 1: Chủ xe đăng nhập trên cổng dịch vụ công và kê khai chính xác, đầy đủ, trung thực các nội dung quy định trong giấy khai đăng ký xe, ký số. Trường hợp không có ký số thì chủ xe in giấy khai đăng ký xe từ cổng dịch vụ công, ký, ghi rõ họ, tên và đóng dấu (nếu là cơ quan, tổ chức). Trường hợp không thực hiện được trên cổng dịch vụ công thì chủ xe kê khai giấy khai đăng ký xe trực tiếp tại cơ quan đăng ký xe. Bước 2: Sau khi kê khai thành công, chủ xe nhận mã hồ sơ đăng ký xe trực tuyến, lịch hẹn giải quyết hồ sơ do cổng dịch vụ công thông báo qua tin nhắn điện thoại hoặc qua địa chỉ thư điện tử để làm thủ tục đăng ký xe; Bước 3: Chủ xe đưa xe đến cơ quan đăng ký xe để kiểm tra xe; đưa xe đến cơ quan đăng ký xe để kiểm tra, cung cấp mã hồ sơ đăng ký xe và nộp các giấy tờ quy định cho cơ quan đăng ký xe; đăng ký sử dụng dịch vụ bưu chính (nếu có nhu cầu) để nhận chứng nhận đăng ký xe, biển số xe; Bước 3: Cán bộ đăng ký xe kiểm tra giấy tờ của chủ xe; giấy tờ của xe, đối chiếu với thông tin dữ liệu của chủ xe trên hệ thống đăng ký, quản lý xe và tiến hành kiểm tra thực tế xe theo quy định. Bước 4: Sau khi cán bộ đăng ký xe kiểm tra hồ sơ xe, thực tế xe bảo đảm hợp lệ thì được cấp biển số theo quy định sau: Cấp biển số mới đối với trường hợp chủ xe chưa được cấp biển số định danh hoặc đã có biển số định danh nhưng đang đăng ký cho xe khác; Cấp biển số định danh đối với trường hợp chủ xe có biển số định danh đã được thu hồi từ ngày 15/8/2023. Trường hợp hồ sơ xe, xe không bảo đảm đúng quy định thì bổ sung, hoàn thiện hồ sơ theo hướng dẫn của cán bộ đăng ký xe tại phiếu hướng dẫn hồ sơ; Bước 5: Chủ xe nhận giấy hẹn trả kết quả, nộp lệ phí đăng ký xe và nhận biển số xe (trường hợp được cấp biển số định danh mới hoặc trường hợp chủ xe đề nghị sử dụng lại biển số định danh cũ đã thu hồi, nếu cơ quan đăng ký xe chưa tiêu hủy biển số đó theo quy định). Bước 7: Chủ xe lựa chọn việc nhận kết quả tại cơ quan đăng ký xe hoặc qua dịch vụ bưu chính.",
+          "procedure_flow": "1. Bước 1: Chủ xe đăng nhập trên cổng dịch vụ công và kê khai chính xác, đầy đủ, trung thực các nội dung quy định trong giấy khai đăng ký xe, ký số. Trường hợp không có ký số thì chủ xe in giấy khai đăng ký xe từ cổng dịch vụ công, ký, ghi rõ họ, tên và đóng dấu (nếu là cơ quan, tổ chức). Trường hợp không thực hiện được trên cổng dịch vụ công thì chủ xe kê khai giấy khai đăng ký xe trực tiếp tại cơ quan đăng ký xe. Bước 2: Sau khi kê khai thành công, chủ xe nhận mã hồ sơ đăng ký xe trực tuyến, lịch hẹn giải quyết hồ sơ do cổng dịch vụ công thông báo qua tin nhắn điện thoại hoặc qua địa chỉ thư điện tử để làm thủ tục đăng ký xe; Bước 3: Chủ xe đưa xe đến cơ quan đăng ký xe để kiểm tra xe; đưa xe đến cơ quan đăng ký xe để kiểm tra, cung cấp mã hồ sơ đăng ký xe và nộp các giấy tờ quy định cho cơ quan đăng ký xe; đăng ký sử dụng dịch vụ bưu chính (nếu có nhu cầu) để nhận chứng nhận đăng ký xe, biển số xe; Bước 3: Cán bộ đăng ký xe kiểm tra giấy tờ của chủ xe; giấy tờ của xe, đối chiếu với thông tin dữ liệu của chủ xe trên hệ thống đăng ký, quản lý xe và tiến hành kiểm tra thực tế xe theo quy định. Bước 4: Sau khi cán bộ đăng ký xe kiểm tra hồ sơ xe, thực tế xe bảo đảm hợp lệ thì được cấp biển số theo quy định sau: Cấp biển số mới đối với trường hợp chủ xe chưa được cấp biển số định danh hoặc đã có biển số định danh nhưng đang đăng ký cho xe khác; Cấp biển số định danh đối với trường hợp chủ xe có biển số định danh đã được thu hồi từ ngày 15/8/2023. Trường hợp hồ sơ xe, xe không bảo đảm đúng quy định thì bổ sung, hoàn thiện hồ sơ theo hướng dẫn của cán bộ đăng ký xe tại phiếu hướng dẫn hồ sơ; Bước 5: Chủ xe nhận giấy hẹn trả kết quả, nộp lệ phí đăng ký xe và nhận biển số xe (trường hợp được cấp biển số định danh mới hoặc trường hợp chủ xe đề nghị sử dụng lại biển số định danh cũ đã thu hồi, nếu cơ quan đăng ký xe chưa tiêu hủy biển số đó theo quy định). Bước 7: Chủ xe lựa chọn việc nhận kết quả tại cơ quan đăng ký xe hoặc qua dịch vụ bưu chính.",
+          "requirements": "Không",
+          "submission_methods": [
+            "Trực tiếp",
+            "Trực tiếp",
+            "Trực tiếp"
+          ],
+          "processing_time_values": [
+            "7 ngày làm việc",
+            "1 ngày",
+            "2 ngày làm việc"
+          ],
+          "document_groups": [],
+          "result_items": [
+            "Biển số xe (Mã: `KQ.G01.000015`)",
+            "Giấy chứng nhận đăng ký xe (Mã: `KQ.G01.000014`)"
+          ],
+          "legal_bases": []
+        },
+        {
+          "procedure_code": "1.013076",
+          "procedure_title": "Cấp chứng nhận đăng ký xe, biển số xe trong trường hợp thay đổi chủ xe (đăng ký sang tên xe) bằng dịch vụ công trực tuyến một phần hoặc trực tiếp thực hiện tại cấp trung ương, cấp tỉnh, cấp xã",
+          "field": "Đăng ký, quản lý phương tiện giao thông cơ giới, xe máy chuyên dùng",
+          "subdomain_key": "dang_ky_phuong_tien",
+          "subdomain_label": "Đăng ký phương tiện",
+          "event_id": 316,
+          "operation_group": "sang_ten_xe",
+          "operation_key": "cap_chung_nhan_dang_ky_xe_bien_so_xe_trong_truong_hop_thay_doi_chu_xe_dang_ky_sang_ten_xe_bang_dich_vu_cong_truc_tuyen_mot_phan_hoac_truc_tiep_thuc_hien_tai_cap_trung_uong_cap_tinh_cap_xa",
+          "agency": "Công an cấp Xã",
+          "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bf7-963f-702b-a0a4-aa582fbc3473",
+          "raw_data_file": "C:\\Users\\ku060\\Downloads\\VAIC source\\data-pipeline\\raw_data\\1_013076\\1_013076_procedure_detail.md",
+          "raw_data_available": true,
+          "overview": "1. Đăng ký sang tên xe thực hiện bằng dịch vụ công trực tuyến một phần hoặc trực tiếp tại cơ quan đăng ký xe. Khi chuyển quyền sở hữu xe, chủ xe phải làm thủ tục thu hồi tại cơ quan đăng ký xe nơi chủ xe có trụ sở, cư trú theo quy định. Tổ chức, cá nhân nhận chuyển quyền sở hữu xe làm thủ tục đăng ký sang tên xe tại cơ quan đăng ký xe theo quy định. 1. Thủ tục thu hồi Bước 1: Chủ xe kê khai giấy khai thu hồi chứng nhận đăng ký xe, biển số xe trên cổng dịch vụ công, cung cấp mã hồ sơ đăng ký xe trực tuyến hoặc kê khai giấy khai thu hồi chứng nhận đăng ký xe, biển số xe tại cơ quan đăng ký xe; nộp hồ sơ thu hồi quy định tại khoản 1 Điều 16 Thông tư số 79/2024/TT-BCA và nhận giấy hẹn trả kết quả chứng nhận thu hồi chứng nhận đăng ký xe, biển số xe theo quy định; Bước 2: Sau khi kiểm tra hồ sơ xe hợp lệ, cơ quan đăng ký xe cấp 02 bản chứng nhận thu hồi chứng nhận đăng ký xe, biển số xe theo quy định có dán bản chà số máy, số khung và đóng dấu giáp lai của cơ quan đăng ký xe trên bản chà số máy, số khung xe (01 bản trả cho chủ xe, 01 bản lưu hồ sơ xe). Đối với xe tạm nhập, tái xuất của các đối tượng được hưởng quyền ưu đãi miễn trừ ngoại giao cấp 03 bản chứng nhận thu hồi chứng nhận đăng ký xe, biển số xe (02 bản trả cho chủ xe để nộp cho cơ quan hải quan và cơ quan đăng ký xe, 01 bản lưu hồ sơ xe). Trường hợp chủ xe có nhu cầu thì được cấp chứng nhận đăng ký xe tạm thời cùng với chứng nhận thu hồi chứng nhận đăng ký xe, biển số xe, không phải có hồ sơ đăng ký xe tạm thời. 2. Thủ tục đăng ký Bước 3: Chủ xe đăng nhập trên cổng dịch vụ công và kê khai chính xác, đầy đủ, trung thực các nội dung quy định trong mẫu giấy khai đăng ký xe, ký số. Trường hợp không có ký số thì chủ xe in giấy khai đăng ký xe từ cổng dịch vụ công, ký, ghi rõ họ, tên và đóng dấu (nếu là cơ quan, tổ chức); Trường hợp thực hiện đăng ký xe trực tiếp tại cơ quan đăng ký xe: Chủ xe kê khai chính xác, đầy đủ, trung thực các nội dung quy định trong mẫu giấy khai đăng ký xe. Đưa xe đến để kiểm tra và nộp hồ sơ theo quy định: Giấy khai đăng ký xe; Giấy tờ của chủ xe; Chứng từ chuyển quyền sở hữu xe; Chứng từ lệ phí trước bạ xe; Chứng nhận thu hồi chứng nhận đăng ký xe, biển số xe. Bước 4: Sau khi kiểm tra hồ sơ xe, thực tế xe đảm bảo hợp lệ thì được cơ quan đăng ký xe cấp chứng nhận đăng ký xe, biển số xe theo quy định sau: Cấp biển số mới đối với trường hợp chủ xe chưa được cấp biển số định danh hoặc đã có biển số định danh nhưng đang đăng ký cho xe khác. Cấp biển số định danh đối với trường hợp chủ xe có biển số định danh đã được thu hồi từ ngày 15/8/2023. Trường hợp hồ sơ xe, xe không bảo đảm đúng quy định thì bổ sung, hoàn thiện hồ sơ theo hướng dẫn của cán bộ đăng ký xe tại phiếu hướng dẫn hồ sơ; Bước 5: Nhận giấy hẹn trả kết quả, nộp lệ phí đăng ký xe và nhận biển số xe (trường hợp được cấp lại số biển số định danh); trường hợp chủ xe có nhu cầu nhận trả kết quả đăng ký xe qua dịch vụ bưu chính thì đăng ký với đơn vị dịch vụ bưu chính; Bước 6: Nhận chứng nhận đăng ký xe tại cơ quan đăng ký xe hoặc từ đơn vị dịch vụ bưu chính. Trường hợp biển số xe đã được cấp là biển 3 số hoặc biển 4 số thì đổi sang biển số định danh theo quy định tại Thông tư số 79/2024/TT-BCA ngày 15/11/2024 của Bộ trưởng Bộ Công an.",
+          "procedure_flow": "1. Đăng ký sang tên xe thực hiện bằng dịch vụ công trực tuyến một phần hoặc trực tiếp tại cơ quan đăng ký xe. Khi chuyển quyền sở hữu xe, chủ xe phải làm thủ tục thu hồi tại cơ quan đăng ký xe nơi chủ xe có trụ sở, cư trú theo quy định. Tổ chức, cá nhân nhận chuyển quyền sở hữu xe làm thủ tục đăng ký sang tên xe tại cơ quan đăng ký xe theo quy định. 1. Thủ tục thu hồi Bước 1: Chủ xe kê khai giấy khai thu hồi chứng nhận đăng ký xe, biển số xe trên cổng dịch vụ công, cung cấp mã hồ sơ đăng ký xe trực tuyến hoặc kê khai giấy khai thu hồi chứng nhận đăng ký xe, biển số xe tại cơ quan đăng ký xe; nộp hồ sơ thu hồi quy định tại khoản 1 Điều 16 Thông tư số 79/2024/TT-BCA và nhận giấy hẹn trả kết quả chứng nhận thu hồi chứng nhận đăng ký xe, biển số xe theo quy định; Bước 2: Sau khi kiểm tra hồ sơ xe hợp lệ, cơ quan đăng ký xe cấp 02 bản chứng nhận thu hồi chứng nhận đăng ký xe, biển số xe theo quy định có dán bản chà số máy, số khung và đóng dấu giáp lai của cơ quan đăng ký xe trên bản chà số máy, số khung xe (01 bản trả cho chủ xe, 01 bản lưu hồ sơ xe). Đối với xe tạm nhập, tái xuất của các đối tượng được hưởng quyền ưu đãi miễn trừ ngoại giao cấp 03 bản chứng nhận thu hồi chứng nhận đăng ký xe, biển số xe (02 bản trả cho chủ xe để nộp cho cơ quan hải quan và cơ quan đăng ký xe, 01 bản lưu hồ sơ xe). Trường hợp chủ xe có nhu cầu thì được cấp chứng nhận đăng ký xe tạm thời cùng với chứng nhận thu hồi chứng nhận đăng ký xe, biển số xe, không phải có hồ sơ đăng ký xe tạm thời. 2. Thủ tục đăng ký Bước 3: Chủ xe đăng nhập trên cổng dịch vụ công và kê khai chính xác, đầy đủ, trung thực các nội dung quy định trong mẫu giấy khai đăng ký xe, ký số. Trường hợp không có ký số thì chủ xe in giấy khai đăng ký xe từ cổng dịch vụ công, ký, ghi rõ họ, tên và đóng dấu (nếu là cơ quan, tổ chức); Trường hợp thực hiện đăng ký xe trực tiếp tại cơ quan đăng ký xe: Chủ xe kê khai chính xác, đầy đủ, trung thực các nội dung quy định trong mẫu giấy khai đăng ký xe. Đưa xe đến để kiểm tra và nộp hồ sơ theo quy định: Giấy khai đăng ký xe; Giấy tờ của chủ xe; Chứng từ chuyển quyền sở hữu xe; Chứng từ lệ phí trước bạ xe; Chứng nhận thu hồi chứng nhận đăng ký xe, biển số xe. Bước 4: Sau khi kiểm tra hồ sơ xe, thực tế xe đảm bảo hợp lệ thì được cơ quan đăng ký xe cấp chứng nhận đăng ký xe, biển số xe theo quy định sau: Cấp biển số mới đối với trường hợp chủ xe chưa được cấp biển số định danh hoặc đã có biển số định danh nhưng đang đăng ký cho xe khác. Cấp biển số định danh đối với trường hợp chủ xe có biển số định danh đã được thu hồi từ ngày 15/8/2023. Trường hợp hồ sơ xe, xe không bảo đảm đúng quy định thì bổ sung, hoàn thiện hồ sơ theo hướng dẫn của cán bộ đăng ký xe tại phiếu hướng dẫn hồ sơ; Bước 5: Nhận giấy hẹn trả kết quả, nộp lệ phí đăng ký xe và nhận biển số xe (trường hợp được cấp lại số biển số định danh); trường hợp chủ xe có nhu cầu nhận trả kết quả đăng ký xe qua dịch vụ bưu chính thì đăng ký với đơn vị dịch vụ bưu chính; Bước 6: Nhận chứng nhận đăng ký xe tại cơ quan đăng ký xe hoặc từ đơn vị dịch vụ bưu chính. Trường hợp biển số xe đã được cấp là biển 3 số hoặc biển 4 số thì đổi sang biển số định danh theo quy định tại Thông tư số 79/2024/TT-BCA ngày 15/11/2024 của Bộ trưởng Bộ Công an.",
+          "requirements": "+ Chủ xe phải giữ lại chứng nhận đăng ký xe, biển số xe (không giao cho tổ chức, cá nhân nhận chuyển quyền sở hữu xe) và nộp cho cơ quan đăng ký xe khi làm thủ tục thu hồi; trường hợp chuyển quyền sở hữu xe kèm theo biển số xe trúng đấu giá thì chủ xe nộp chứng nhận đăng ký xe cho cơ quan đăng ký xe khi làm thủ tục thu hồi; + Trong thời hạn 30 ngày, kể từ ngày làm giấy tờ chuyển quyền sở hữu xe, chủ xe đứng tên trong chứng nhận đăng ký xe phải làm thủ tục thu hồi; trường hợp quá thời hạn trên mà chủ xe không làm thủ tục thu hồi hoặc giao chứng nhận đăng ký xe, biển số xe cho tổ chức, cá nhân nhận chuyển quyền sở hữu xe làm thủ tục thu hồi thì trước khi giải quyết người có thẩm quyền thực hiện thủ tục xử phạt vi phạm hành chính theo quy định; trường hợp chủ xe không đến làm thủ tục thu hồi thì người có thẩm quyền lập biên bản vi phạm hành chính đối với chủ xe và tiến hành xử phạt theo quy định của pháp luật, tổ chức, cá nhân nhận chuyển quyền sở hữu được ký vào biên bản vi phạm hành chính với tư cách là người chứng kiến và ký vào các giấy tờ có liên quan đến thủ tục thu hồi; + Sau khi cơ quan đăng ký xe làm thủ tục thu hồi, tổ chức, cá nhân nhận chuyển quyền sở hữu làm thủ tục cấp chứng nhận đăng ký xe, biển số xe theo quy định. + Tổ chức, cá nhân đứng tên trong giấy chứng nhận đăng ký xe tiếp tục chịu trách nhiệm của chủ xe khi chưa thực hiện thu hồi chứng nhận đăng ký xe, biển số xe đối với trường hợp phải thu hồi theo quy định.",
+          "submission_methods": [
+            "Trực tuyến",
+            "Trực tiếp",
+            "Trực tiếp",
+            "Trực tiếp",
+            "Trực tuyến",
+            "Trực tuyến"
+          ],
+          "processing_time_values": [
+            "2 ngày làm việc",
+            "2 ngày làm việc",
+            "7 ngày làm việc",
+            "1 ngày",
+            "7 ngày làm việc",
+            "1 ngày"
+          ],
+          "document_groups": [
+            {
+              "group_name": "1. Hồ sơ thu hồi",
+              "documents": [
+                {
+                  "Tên giấy tờ": "Bản sao   chứng từ chuyển quyền sở hữu xe",
+                  "Bản chính": "1",
+                  "Bản sao": "0",
+                  "Tệp đính kèm": "Không có"
+                },
+                {
+                  "Tên giấy tờ": "Chứng nhận đăng ký xe,  biển số xe; trường hợp mất chứng nhận đăng ký xe hoặc mất biển số xe thì phải ghi rõ lý do trong giấy khai thu hồi chứng nhận đăng ký xe, biển số xe. Trong thời gian chờ nhận kết quả thu hồi, chủ xe được giữ lại biển số xe để sử dụng và phải nộp lại khi nhận chứng nhận thu hồi; trường hợp chủ xe không nộp lại biển số xe thì cơ quan đăng ký xe hủy kết quả và yêu cầu chủ xe làm lại thủ tục thu hồi trong trường hợp mất biển số xe theo quy định.",
+                  "Bản chính": "1",
+                  "Bản sao": "0",
+                  "Tệp đính kèm": "Không có"
+                },
+                {
+                  "Tên giấy tờ": "02 bản   chà số máy, số khung của xe",
+                  "Bản chính": "1",
+                  "Bản sao": "0",
+                  "Tệp đính kèm": "Không có"
+                },
+                {
+                  "Tên giấy tờ": "Giấy khai thu hồi chứng nhận đăng ký xe, biển số xe (theo mẫu ĐKX11/79 ban hành kèm theo Thông tư số  13/2025/TT-BCA ngày 28/02/2025 của Bộ trưởng Bộ Công an).",
+                  "Bản chính": "1",
+                  "Bản sao": "0",
+                  "Tệp đính kèm": "[MauKX11.docx](file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/1_013076/MauKX11.docx)"
+                },
+                {
+                  "Tên giấy tờ": "Giấy tờ   của chủ xe",
+                  "Bản chính": "1",
+                  "Bản sao": "0",
+                  "Tệp đính kèm": "Không có"
+                }
+              ]
+            },
+            {
+              "group_name": "2. Hồ sơ đăng ký",
+              "documents": [
+                {
+                  "Tên giấy tờ": "Chứng từ  chuyển  quyền sở hữu xe",
+                  "Bản chính": "1",
+                  "Bản sao": "0",
+                  "Tệp đính kèm": "Không có"
+                },
+                {
+                  "Tên giấy tờ": "Giấy khai  đăng  ký  xe",
+                  "Bản chính": "1",
+                  "Bản sao": "0",
+                  "Tệp đính kèm": "Không có"
+                },
+                {
+                  "Tên giấy tờ": "Giấy tờ  của  chủ  xe",
+                  "Bản chính": "1",
+                  "Bản sao": "0",
+                  "Tệp đính kèm": "Không có"
+                },
+                {
+                  "Tên giấy tờ": "Chứng  từ lệ  phí trước  bạ xe",
+                  "Bản chính": "1",
+                  "Bản sao": "0",
+                  "Tệp đính kèm": "Không có"
+                },
+                {
+                  "Tên giấy tờ": "Chứng nhận  thu hồi chứng nhận đăng ký xe, biển số xe",
+                  "Bản chính": "1",
+                  "Bản sao": "0",
+                  "Tệp đính kèm": "Không có"
+                }
+              ]
+            }
+          ],
+          "result_items": [
+            "Giấy chứng nhận thu hồi đăng ký, biển số xe (Mã: `KQ.G01.000008`)",
+            "Giấy chứng nhận đăng ký xe (Mã: `KQ.G01.000014`)"
+          ],
+          "legal_bases": []
+        },
+        {
+          "procedure_code": "1.013079",
+          "procedure_title": "Đổi chứng nhận đăng ký xe, biển số xe bằng dịch vụ công trực tuyến một phần hoặc trực tiếp thực hiện tại cấp trung ương, cấp tỉnh, cấp xã",
+          "field": "Đăng ký, quản lý phương tiện giao thông cơ giới, xe máy chuyên dùng",
+          "subdomain_key": "dang_ky_phuong_tien",
+          "subdomain_label": "Đăng ký phương tiện",
+          "event_id": 316,
+          "operation_group": "doi_dang_ky_xe",
+          "operation_key": "doi_chung_nhan_dang_ky_xe_bien_so_xe_bang_dich_vu_cong_truc_tuyen_mot_phan_hoac_truc_tiep_thuc_hien_tai_cap_trung_uong_cap_tinh_cap_xa",
+          "agency": "Công an cấp Xã",
+          "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bf7-963b-73f7-a52b-d50180c06bb5",
+          "raw_data_file": "C:\\Users\\ku060\\Downloads\\VAIC source\\data-pipeline\\raw_data\\1_013079\\1_013079_procedure_detail.md",
+          "raw_data_available": true,
+          "overview": "1. Thực hiện đổi chứng nhận đăng ký xe, biển số xe bằng dịch vụ công trực tuyến một phần trực tiếp tại cơ quan đăng ký xe. Bước 1: Chủ xe đăng nhập trên cổng dịch vụ công và kê khai chính xác, đầy đủ, trung thực các nội dung quy định trong mẫu giấy khai đăng ký xe, ký số. Trường hợp không có ký số thì chủ xe in giấy khai đăng ký xe từ cổng dịch vụ công, ký, ghi rõ họ, tên và đóng dấu (nếu là cơ quan, tổ chức). Sau khi kê khai thành công, chủ xe nhận mã hồ sơ đăng ký xe trực tuyến, lịch hẹn giải quyết hồ sơ do cổng dịch vụ công thông báo qua tin nhắn điện thoại hoặc qua địa chỉ thư điện tử để làm thủ tục đăng ký xe; cung cấp mã hồ sơ đăng ký xe cho cơ quan đăng ký xe để làm thủ tục đăng ký xe theo quy định; trường hợp không thực hiện được trên cổng dịch vụ công thì chủ xe kê khai giấy khai đăng ký xe trực tiếp tại cơ quan đăng ký xe. Bước 2: Nộp hồ sơ đổi chứng nhận đăng ký xe, biển số xe theo quy định và nộp lệ phí theo quy định. Trường hợp xe cải tạo, thay đổi màu sơn, chủ xe phải mang xe đến để kiểm tra. Bước 3: Sau khi kiểm tra hồ sơ xe đảm bảo hợp lệ, cơ quan đăng ký xe thực hiện đổi chứng nhận đăng ký xe, biển số xe theo quy định; Trường hợp đổi chứng nhận đăng ký xe, biển số xe giữ nguyên biển số định danh; đối với xe đã đăng ký biển 3 số hoặc biển 4 số thì cấp sang biển số định danh theo quy định (thu lại chứng nhận đăng ký xe, biển 3 số hoặc biển 4 số đó); Trường hợp đổi biển số xe từ nền màu trắng, chữ và số màu đen sang biển số xe nền màu vàng, chữ và số màu đen hoặc từ nền màu vàng, chữ và số màu đen sang biển số xe nền màu trắng, chữ và số màu đen thì cấp biển số định danh mới (trường hợp chưa có biển số xe định danh) hoặc cấp lại biển số định danh (trường hợp đã có biển số xe định danh). Đối với trường hợp đổi chứng nhận đăng ký xe khi chủ xe thay đổi trụ sở, nơi cư trú đến địa chỉ mới ngoài phạm vi của cơ quan đăng ký xe đã cấp chứng nhận đăng ký xe đó: a) Chủ xe nộp chứng nhận đăng ký xe và đơn đề nghị xác nhận hồ sơ xe theo mẫu cho cơ quan đăng ký xe quản lý hồ sơ xe đó để được cấp giấy xác nhận hồ sơ xe; b) Chủ xe kê khai giấy khai đăng ký xe và nộp giấy xác nhận hồ sơ xe cho cơ quan đăng ký xe tại địa chỉ mới theo quy định để đổi chứng nhận đăng ký xe. Bước 4: Chủ xe nhận kết quả đăng ký xe tại cơ quan đăng ký xe hoặc từ dịch vụ bưu chính",
+          "procedure_flow": "1. Thực hiện đổi chứng nhận đăng ký xe, biển số xe bằng dịch vụ công trực tuyến một phần trực tiếp tại cơ quan đăng ký xe. Bước 1: Chủ xe đăng nhập trên cổng dịch vụ công và kê khai chính xác, đầy đủ, trung thực các nội dung quy định trong mẫu giấy khai đăng ký xe, ký số. Trường hợp không có ký số thì chủ xe in giấy khai đăng ký xe từ cổng dịch vụ công, ký, ghi rõ họ, tên và đóng dấu (nếu là cơ quan, tổ chức). Sau khi kê khai thành công, chủ xe nhận mã hồ sơ đăng ký xe trực tuyến, lịch hẹn giải quyết hồ sơ do cổng dịch vụ công thông báo qua tin nhắn điện thoại hoặc qua địa chỉ thư điện tử để làm thủ tục đăng ký xe; cung cấp mã hồ sơ đăng ký xe cho cơ quan đăng ký xe để làm thủ tục đăng ký xe theo quy định; trường hợp không thực hiện được trên cổng dịch vụ công thì chủ xe kê khai giấy khai đăng ký xe trực tiếp tại cơ quan đăng ký xe. Bước 2: Nộp hồ sơ đổi chứng nhận đăng ký xe, biển số xe theo quy định và nộp lệ phí theo quy định. Trường hợp xe cải tạo, thay đổi màu sơn, chủ xe phải mang xe đến để kiểm tra. Bước 3: Sau khi kiểm tra hồ sơ xe đảm bảo hợp lệ, cơ quan đăng ký xe thực hiện đổi chứng nhận đăng ký xe, biển số xe theo quy định; Trường hợp đổi chứng nhận đăng ký xe, biển số xe giữ nguyên biển số định danh; đối với xe đã đăng ký biển 3 số hoặc biển 4 số thì cấp sang biển số định danh theo quy định (thu lại chứng nhận đăng ký xe, biển 3 số hoặc biển 4 số đó); Trường hợp đổi biển số xe từ nền màu trắng, chữ và số màu đen sang biển số xe nền màu vàng, chữ và số màu đen hoặc từ nền màu vàng, chữ và số màu đen sang biển số xe nền màu trắng, chữ và số màu đen thì cấp biển số định danh mới (trường hợp chưa có biển số xe định danh) hoặc cấp lại biển số định danh (trường hợp đã có biển số xe định danh). Đối với trường hợp đổi chứng nhận đăng ký xe khi chủ xe thay đổi trụ sở, nơi cư trú đến địa chỉ mới ngoài phạm vi của cơ quan đăng ký xe đã cấp chứng nhận đăng ký xe đó: a) Chủ xe nộp chứng nhận đăng ký xe và đơn đề nghị xác nhận hồ sơ xe theo mẫu cho cơ quan đăng ký xe quản lý hồ sơ xe đó để được cấp giấy xác nhận hồ sơ xe; b) Chủ xe kê khai giấy khai đăng ký xe và nộp giấy xác nhận hồ sơ xe cho cơ quan đăng ký xe tại địa chỉ mới theo quy định để đổi chứng nhận đăng ký xe. Bước 4: Chủ xe nhận kết quả đăng ký xe tại cơ quan đăng ký xe hoặc từ dịch vụ bưu chính",
+          "requirements": "Chứng nhận đăng ký xe, biển số xe bị mờ, hỏng; Xe cải tạo; xe thay đổi màu sơn; Xe đã đăng ký, cấp biển số xe nền màu trắng, chữ và số màu đen đổi sang biển số xe nền màu vàng, chữ và số màu đen (xe hoạt động kinh doanh vận tải bằng ô tô) và ngược lại; Thay đổi các thông tin của chủ xe (tên chủ xe, số định danh) hoặc chủ xe có nhu cầu đổi chứng nhận đăng ký xe theo địa chỉ mới; Chứng nhận đăng ký xe hết thời hạn sử dụng; Đổi chứng nhận đăng ký xe cũ, biển số xe cũ sang chứng nhận đăng ký xe, biển số xe theo quy định tại Thông tư 79/2024/TT-BCA ngày 15/11/2024 của Bộ trưởng Bộ Công an; chủ xe có nhu cầu đổi biển ngắn sang biển dài hoặc ngược lại.",
+          "submission_methods": [
+            "Trực tuyến",
+            "Trực tiếp",
+            "Trực tiếp",
+            "Trực tuyến"
+          ],
+          "processing_time_values": [
+            "7 ngày làm việc",
+            "7 ngày làm việc",
+            "2 ngày làm việc",
+            "2 ngày làm việc"
+          ],
+          "document_groups": [],
+          "result_items": [
+            "Biển số xe (Mã: `KQ.G01.000015`)",
+            "Giấy chứng nhận đăng ký xe (Mã: `KQ.G01.000014`)"
+          ],
+          "legal_bases": []
+        },
+        {
+          "procedure_code": "1.013080",
+          "procedure_title": "Cấp lại chứng nhận đăng ký xe, biển số xe thực hiện bằng dịch vụ công trực tuyến toàn trình",
+          "field": "Đăng ký, quản lý phương tiện giao thông cơ giới, xe máy chuyên dùng",
+          "subdomain_key": "dang_ky_phuong_tien",
+          "subdomain_label": "Đăng ký phương tiện",
+          "event_id": 316,
+          "operation_group": "cap_lai_dang_ky_xe",
+          "operation_key": "cap_lai_chung_nhan_dang_ky_xe_bien_so_xe_thuc_hien_bang_dich_vu_cong_truc_tuyen_toan_trinh",
+          "agency": "Công an cấp Xã",
+          "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bf7-9639-77ee-9eeb-986f541471c4",
+          "raw_data_file": "C:\\Users\\ku060\\Downloads\\VAIC source\\data-pipeline\\raw_data\\1_013080\\1_013080_procedure_detail.md",
+          "raw_data_available": true,
+          "overview": "1. Bước 1: Chủ xe sử dụng tài khoản định danh điện tử mức độ 2 để đăng nhập vào cổng dịch vụ công và kê khai chính xác, đầy đủ, trung thực các nội dung quy định trong mẫu giấy khai đăng ký xe điện tử. Nộp bản chà số máy, số khung của xe qua dịch vụ bưu chính cho cơ quan đăng ký xe; Bước 2: Sau khi kê khai thành công, chủ xe nhận mã hồ sơ dịch vụ công, lịch hẹn giải quyết hồ sơ do cổng dịch vụ công thông báo qua tin nhắn điện thoại hoặc qua địa chỉ thư điện tử; Bước 3: Sau khi kiểm tra hồ sơ xe đảm bảo hợp lệ, cơ quan đăng ký xe gửi thông báo cho chủ xe để nộp lệ phí đăng ký xe qua tiện ích thanh toán được tích hợp trên cổng dịch vụ công, phí dịch vụ bưu chính trên cổng dịch vụ công để trả kết quả đăng ký xe theo quy định; Bước 4: Chủ xe nhận chứng nhận đăng ký xe hoặc biển số xe theo quy định từ dịch vụ bưu chính.",
+          "procedure_flow": "1. Bước 1: Chủ xe sử dụng tài khoản định danh điện tử mức độ 2 để đăng nhập vào cổng dịch vụ công và kê khai chính xác, đầy đủ, trung thực các nội dung quy định trong mẫu giấy khai đăng ký xe điện tử. Nộp bản chà số máy, số khung của xe qua dịch vụ bưu chính cho cơ quan đăng ký xe; Bước 2: Sau khi kê khai thành công, chủ xe nhận mã hồ sơ dịch vụ công, lịch hẹn giải quyết hồ sơ do cổng dịch vụ công thông báo qua tin nhắn điện thoại hoặc qua địa chỉ thư điện tử; Bước 3: Sau khi kiểm tra hồ sơ xe đảm bảo hợp lệ, cơ quan đăng ký xe gửi thông báo cho chủ xe để nộp lệ phí đăng ký xe qua tiện ích thanh toán được tích hợp trên cổng dịch vụ công, phí dịch vụ bưu chính trên cổng dịch vụ công để trả kết quả đăng ký xe theo quy định; Bước 4: Chủ xe nhận chứng nhận đăng ký xe hoặc biển số xe theo quy định từ dịch vụ bưu chính.",
+          "requirements": "Chủ xe thực hiện dịch vụ công trực tuyến toàn trình đối với trường hợp cấp lại chứng nhận đăng ký xe, cấp lại biển số xe (trừ trường hợp xe đã đăng ký biển 3 số hoặc biển 4 số).",
+          "submission_methods": [
+            "Trực tuyến"
+          ],
+          "processing_time_values": [
+            "2 ngày làm việc"
+          ],
+          "document_groups": [],
+          "result_items": [
+            "Biển số xe (Mã: `KQ.G01.000015`)",
+            "Giấy chứng nhận đăng ký xe (Mã: `KQ.G01.000014`)"
+          ],
+          "legal_bases": []
+        },
+        {
+          "procedure_code": "1.013082",
+          "procedure_title": "Cấp lại chứng nhận đăng ký xe, biển số xe thực hiện bằng dịch vụ công trực tuyến một phần hoặc trực tiếp thực hiện tại cấp trung ương, cấp tỉnh, cấp xã",
+          "field": "Đăng ký, quản lý phương tiện giao thông cơ giới, xe máy chuyên dùng",
+          "subdomain_key": "dang_ky_phuong_tien",
+          "subdomain_label": "Đăng ký phương tiện",
+          "event_id": 316,
+          "operation_group": "cap_lai_dang_ky_xe",
+          "operation_key": "cap_lai_chung_nhan_dang_ky_xe_bien_so_xe_thuc_hien_bang_dich_vu_cong_truc_tuyen_mot_phan_hoac_truc_tiep_thuc_hien_tai_cap_trung_uong_cap_tinh_cap_xa",
+          "agency": "Công an cấp Xã",
+          "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bf7-9642-75f8-abd2-facca0a4f6c0",
+          "raw_data_file": "C:\\Users\\ku060\\Downloads\\VAIC source\\data-pipeline\\raw_data\\1_013082\\1_013082_procedure_detail.md",
+          "raw_data_available": true,
+          "overview": "1. Bước 1. Chủ xe kê khai giấy khai đăng ký xe theo quy định tại Điều 9 Thông tư số 79/2024/TT-BCA, nộp hồ sơ theo quy định tại khoản 1 và khoản 2 Điều 19 Thông tư số 79/2024/TT-BCA và nộp lệ phí theo quy định; Bước 2. Sau khi kiểm tra hồ sơ xe đảm bảo hợp lệ, cơ quan đăng ký xe thực hiện cấp lại chứng nhận đăng ký xe, biển số xe theo quy định; chủ xe nhận kết quả đăng ký xe tại cơ quan đăng ký xe hoặc từ dịch vụ bưu chính. Trường hợp cấp lại chứng nhận đăng ký xe, biển số xe giữ nguyên biển số định danh; đối với xe đã đăng ký biển 3 số hoặc biển 4 số thì cấp sang biển số định danh theo quy định (thu lại chứng nhận đăng ký xe, biển 3 số hoặc biển 4 số đó).",
+          "procedure_flow": "1. Bước 1. Chủ xe kê khai giấy khai đăng ký xe theo quy định tại Điều 9 Thông tư số 79/2024/TT-BCA, nộp hồ sơ theo quy định tại khoản 1 và khoản 2 Điều 19 Thông tư số 79/2024/TT-BCA và nộp lệ phí theo quy định; Bước 2. Sau khi kiểm tra hồ sơ xe đảm bảo hợp lệ, cơ quan đăng ký xe thực hiện cấp lại chứng nhận đăng ký xe, biển số xe theo quy định; chủ xe nhận kết quả đăng ký xe tại cơ quan đăng ký xe hoặc từ dịch vụ bưu chính. Trường hợp cấp lại chứng nhận đăng ký xe, biển số xe giữ nguyên biển số định danh; đối với xe đã đăng ký biển 3 số hoặc biển 4 số thì cấp sang biển số định danh theo quy định (thu lại chứng nhận đăng ký xe, biển 3 số hoặc biển 4 số đó).",
+          "requirements": "Chủ xe thực hiện cấp lại chứng nhận đăng ký xe, biển số xe.",
+          "submission_methods": [
+            "Trực tuyến",
+            "Trực tiếp",
+            "Trực tuyến",
+            "Trực tiếp"
+          ],
+          "processing_time_values": [
+            "2 ngày làm việc",
+            "2 ngày làm việc",
+            "7 ngày làm việc",
+            "7 ngày làm việc"
+          ],
+          "document_groups": [],
+          "result_items": [
+            "Giấy chứng nhận đăng ký xe (Mã: `KQ.G01.000014`)",
+            "Biển số xe (Mã: `KQ.G01.000015`)"
+          ],
+          "legal_bases": []
+        },
+        {
+          "procedure_code": "1.013083",
+          "procedure_title": "Đăng ký xe tạm thời thực hiện bằng dịch vụ công trực tuyến toàn trình",
+          "field": "Đăng ký, quản lý phương tiện giao thông cơ giới, xe máy chuyên dùng",
+          "subdomain_key": "dang_ky_phuong_tien",
+          "subdomain_label": "Đăng ký phương tiện",
+          "event_id": 316,
+          "operation_group": "dang_ky_tam_thoi",
+          "operation_key": "dang_ky_xe_tam_thoi_thuc_hien_bang_dich_vu_cong_truc_tuyen_toan_trinh",
+          "agency": "Công an cấp Xã",
+          "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bf7-963b-73f7-a52b-d2dc1409f36a",
+          "raw_data_file": "C:\\Users\\ku060\\Downloads\\VAIC source\\data-pipeline\\raw_data\\1_013083\\1_013083_procedure_detail.md",
+          "raw_data_available": true,
+          "overview": "1. Bước 1: Chủ xe đăng nhập bằng tài khoản định danh mức độ 2 trên cổng dịch vụ công và kê khai chính xác, đầy đủ, trung thực các nội dung quy định trong mẫu giấy khai đăng ký xe điện tử. Bước 2: Sau khi kê khai thành công, chủ xe nhận mã hồ sơ đăng ký xe trực tuyến do cổng dịch vụ công thông báo qua tin nhắn điện thoại hoặc qua địa chỉ thư điện tử; Bước 3: Sau khi kiểm tra hồ sơ hợp lệ, cơ quan đăng ký xe gửi dữ liệu cho cổng dịch vụ công để thông báo cho chủ xe nộp lệ phí theo quy định; Bước 4: Chủ xe nhận kết quả xác thực và in chứng nhận đăng ký xe tạm thời trên cổng dịch vụ công.",
+          "procedure_flow": "1. Bước 1: Chủ xe đăng nhập bằng tài khoản định danh mức độ 2 trên cổng dịch vụ công và kê khai chính xác, đầy đủ, trung thực các nội dung quy định trong mẫu giấy khai đăng ký xe điện tử. Bước 2: Sau khi kê khai thành công, chủ xe nhận mã hồ sơ đăng ký xe trực tuyến do cổng dịch vụ công thông báo qua tin nhắn điện thoại hoặc qua địa chỉ thư điện tử; Bước 3: Sau khi kiểm tra hồ sơ hợp lệ, cơ quan đăng ký xe gửi dữ liệu cho cổng dịch vụ công để thông báo cho chủ xe nộp lệ phí theo quy định; Bước 4: Chủ xe nhận kết quả xác thực và in chứng nhận đăng ký xe tạm thời trên cổng dịch vụ công.",
+          "requirements": "Chủ xe thực hiện đăng ký xe tạm thời bằng dịch vụ công trực tuyến toàn trình đối với trường hợp xe cơ giới, xe máy chuyên dùng để di chuyển từ nhà máy đến kho, cảng hoặc từ kho, cảng, nhà máy, đại lý bán xe đến nơi đăng ký xe hoặc về các đại lý, kho lưu trữ khác (đã có dữ liệu điện tử phiếu kiểm tra chất lượng xuất xưởng hoặc dữ liệu điện tử chứng nhận an toàn kỹ thuật bảo vệ môi trường xe nhập khẩu trên cổng dịch vụ công). Xe đăng ký tạm thời được phép tham gia giao thông theo thời hạn, tuyến đường và phạm vi hoạt động ghi trong chứng nhận đăng ký xe tạm thời.",
+          "submission_methods": [
+            "Trực tuyến"
+          ],
+          "processing_time_values": [
+            "8 ngày"
+          ],
+          "document_groups": [],
+          "result_items": [
+            "Giấy chứng nhận đăng ký xe tạm thời (Mã: `KQ.G01.000011`)",
+            "Biển số xe tạm thời (Mã: `KQ.G01.000013`)"
+          ],
+          "legal_bases": []
+        },
+        {
+          "procedure_code": "1.013086",
+          "procedure_title": "Đăng ký xe tạm thời thực hiện bằng dịch vụ công trực tuyến một phần hoặc trực tiếp thực hiện tại cấp trung ương, cấp tỉnh, cấp xã",
+          "field": "Đăng ký, quản lý phương tiện giao thông cơ giới, xe máy chuyên dùng",
+          "subdomain_key": "dang_ky_phuong_tien",
+          "subdomain_label": "Đăng ký phương tiện",
+          "event_id": 316,
+          "operation_group": "dang_ky_tam_thoi",
+          "operation_key": "dang_ky_xe_tam_thoi_thuc_hien_bang_dich_vu_cong_truc_tuyen_mot_phan_hoac_truc_tiep_thuc_hien_tai_cap_trung_uong_cap_tinh_cap_xa",
+          "agency": "Công an cấp Xã",
+          "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bf7-9642-716f-9a83-842d15addcb8",
+          "raw_data_file": "C:\\Users\\ku060\\Downloads\\VAIC source\\data-pipeline\\raw_data\\1_013086\\1_013086_procedure_detail.md",
+          "raw_data_available": true,
+          "overview": "1. Thực hiện đăng ký xe tạm thời bằng dịch vụ công trực tuyến một phần hoặc làm thủ tục trực tiếp tại cơ quan đăng ký xe. Bước 1: Chủ xe đăng nhập trên cổng dịch vụ công và kê khai chính xác, đầy đủ, trung thực các nội dung quy định trong giấy khai đăng ký xe, ký số. Trường hợp không có ký số thì chủ xe in giấy khai đăng ký xe từ cổng dịch vụ công, ký, ghi rõ họ, tên và đóng dấu (nếu là cơ quan, tổ chức). Trường hợp thực hiện đăng ký xe trực tiếp tại cơ quan đăng ký xe: Chủ xe kê khai chính xác, đầy đủ, trung thực các nội dung quy định trong mẫu giấy khai đăng ký xe. Bước 2: Sau khi tiếp nhận, kiểm tra hồ sơ hợp lệ, cơ quan đăng ký xe thu lệ phí và cấp chứng nhận đăng ký xe tạm thời, biển số xe tạm thời cho chủ xe theo quy định.",
+          "procedure_flow": "1. Thực hiện đăng ký xe tạm thời bằng dịch vụ công trực tuyến một phần hoặc làm thủ tục trực tiếp tại cơ quan đăng ký xe. Bước 1: Chủ xe đăng nhập trên cổng dịch vụ công và kê khai chính xác, đầy đủ, trung thực các nội dung quy định trong giấy khai đăng ký xe, ký số. Trường hợp không có ký số thì chủ xe in giấy khai đăng ký xe từ cổng dịch vụ công, ký, ghi rõ họ, tên và đóng dấu (nếu là cơ quan, tổ chức). Trường hợp thực hiện đăng ký xe trực tiếp tại cơ quan đăng ký xe: Chủ xe kê khai chính xác, đầy đủ, trung thực các nội dung quy định trong mẫu giấy khai đăng ký xe. Bước 2: Sau khi tiếp nhận, kiểm tra hồ sơ hợp lệ, cơ quan đăng ký xe thu lệ phí và cấp chứng nhận đăng ký xe tạm thời, biển số xe tạm thời cho chủ xe theo quy định.",
+          "requirements": "+ Trường hợp xe làm thủ tục thu hồi để tái xuất hoặc chuyển quyền sở hữu và xe đã có chứng nhận chất lượng an toàn kỹ thuật và bảo vệ môi trường, phiếu kiểm tra chất lượng xuất xưởng xe cơ giới, xe máy chuyên dùng để di chuyển từ nhà máy đến kho, cảng hoặc từ kho, cảng, nhà máy, đại lý bán xe đến nơi đăng ký xe hoặc về các đại lý, kho lưu trữ khác: Chứng nhận đăng ký xe tạm thời có giá trị sử dụng 15 ngày; được gia hạn một lần tối đa không quá 15 ngày. + Trường hợp xe phục vụ các sự kiện do Đảng, Nhà nước tổ chức; xe đăng ký ở nước ngoài được cơ quan thẩm quyền cho phép bao gồm cả xe có tay lái bên phải (tay lái nghịch) vào Việt Nam quá cảnh, tạm nhập, tái xuất có thời hạn để tham dự hội nghị, hội chợ, triển lãm, thể dục, thể thao, du lịch: Chứng nhận đăng ký xe tạm thời được ghi theo thời hạn mà cơ quan thẩm quyền cho phép để phục vụ các hoạt động đó. + Trường hợp xe chạy thử nghiệm thuộc đối tượng nghiên cứu phát triển có nhu cầu tham gia giao thông đường bộ: Chứng nhận đăng ký xe tạm thời được ghi theo thời hạn đề nghị của cơ quan, tổ chức có xe chạy thử nghiệm, nhưng không quá 6 tháng, trường hợp cần thiết được gia hạn mỗi lần không quá 6 tháng. + Khi thực hiện gia hạn, chủ xe kê khai giấy khai đăng ký xe tạm thời trên cổng dịch vụ công hoặc trực tiếp tại cơ quan đăng ký xe. + Xe đăng ký tạm thời được phép tham gia giao thông theo thời hạn, tuyến đường và phạm vi hoạt động ghi trong chứng nhận đăng ký xe tạm thời.",
+          "submission_methods": [
+            "Trực tuyến",
+            "Trực tiếp"
+          ],
+          "processing_time_values": [
+            "1 ngày làm việc",
+            "1 ngày làm việc"
+          ],
+          "document_groups": [],
+          "result_items": [
+            "Giấy chứng nhận đăng ký xe tạm thời (Mã: `KQ.G01.000011`)",
+            "Biển số xe tạm thời (Mã: `KQ.G01.000013`)"
+          ],
+          "legal_bases": []
+        },
+        {
+          "procedure_code": "1.013123",
+          "procedure_title": "Thu hồi giấy chứng nhận đăng ký, biển số xe thực hiện bằng dịch vụ công trực tuyến một phần hoặc trực tiếp thực hiện tại cấp trung ương, cấp tỉnh, cấp xã",
+          "field": "Đăng ký, quản lý phương tiện giao thông cơ giới, xe máy chuyên dùng",
+          "subdomain_key": "dang_ky_phuong_tien",
+          "subdomain_label": "Đăng ký phương tiện",
+          "event_id": 316,
+          "operation_group": "thu_hoi_dang_ky_xe",
+          "operation_key": "thu_hoi_giay_chung_nhan_dang_ky_bien_so_xe_thuc_hien_bang_dich_vu_cong_truc_tuyen_mot_phan_hoac_truc_tiep_thuc_hien_tai_cap_trung_uong_cap_tinh_cap_xa",
+          "agency": "Công an cấp Xã",
+          "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bf7-963c-758d-a83d-8a710bdb175d",
+          "raw_data_file": "C:\\Users\\ku060\\Downloads\\VAIC source\\data-pipeline\\raw_data\\1_013123\\1_013123_procedure_detail.md",
+          "raw_data_available": true,
+          "overview": "1. Bước 1: Chủ xe kê khai giấy khai thu hồi chứng nhận đăng ký xe, biển số xe trên cổng dịch vụ công hoặc kê khai trực tiếp tại cơ quan đăng ký xe, nộp hồ sơ thu hồi theo quy định và nhận giấy hẹn trả kết quả theo quy định; Bước 2: Sau khi tiếp nhận hồ sơ kê khai thu hồi, cổng dịch vụ công sinh mã hồ sơ dịch vụ công và gửi thông báo cho chủ xe qua tin nhắn hoặc thư điện tử. Bước 3: Cổng dịch vụ công gửi dữ liệu về Hệ thống đăng ký, quản lý xe. Sau khi tiếp nhận, kiểm tra hồ sơ bảo đảm hợp lệ, cơ quan đăng ký xe cấp 02 bản chứng nhận thu hồi chứng nhận đăng ký xe, biển số xe theo quy định (01 bản trả cho chủ xe; 01 bản lưu hồ sơ xe). Đối với xe tạm nhập, tái xuất của các đối tượng được hưởng quyền ưu đãi miễn trừ ngoại giao cấp 03 bản chứng nhận thu hồi chứng nhận đăng ký xe, biển số xe (02 bản trả cho chủ xe để nộp cho cơ quan hải quan và cơ quan đăng ký xe, 01 bản lưu hồ sơ xe). Trường hợp thu hồi theo quy định tại điểm a, điểm b khoản 5 Điều 39 Luật Trật tự, an toàn giao thông đường bộ thì chứng nhận thu hồi chứng nhận đăng ký xe, biển số xe có dán bản chà số máy, số khung và đóng dấu giáp lai của cơ quan đăng ký xe trên bản chà số máy, số khung xe.",
+          "procedure_flow": "1. Bước 1: Chủ xe kê khai giấy khai thu hồi chứng nhận đăng ký xe, biển số xe trên cổng dịch vụ công hoặc kê khai trực tiếp tại cơ quan đăng ký xe, nộp hồ sơ thu hồi theo quy định và nhận giấy hẹn trả kết quả theo quy định; Bước 2: Sau khi tiếp nhận hồ sơ kê khai thu hồi, cổng dịch vụ công sinh mã hồ sơ dịch vụ công và gửi thông báo cho chủ xe qua tin nhắn hoặc thư điện tử. Bước 3: Cổng dịch vụ công gửi dữ liệu về Hệ thống đăng ký, quản lý xe. Sau khi tiếp nhận, kiểm tra hồ sơ bảo đảm hợp lệ, cơ quan đăng ký xe cấp 02 bản chứng nhận thu hồi chứng nhận đăng ký xe, biển số xe theo quy định (01 bản trả cho chủ xe; 01 bản lưu hồ sơ xe). Đối với xe tạm nhập, tái xuất của các đối tượng được hưởng quyền ưu đãi miễn trừ ngoại giao cấp 03 bản chứng nhận thu hồi chứng nhận đăng ký xe, biển số xe (02 bản trả cho chủ xe để nộp cho cơ quan hải quan và cơ quan đăng ký xe, 01 bản lưu hồ sơ xe). Trường hợp thu hồi theo quy định tại điểm a, điểm b khoản 5 Điều 39 Luật Trật tự, an toàn giao thông đường bộ thì chứng nhận thu hồi chứng nhận đăng ký xe, biển số xe có dán bản chà số máy, số khung và đóng dấu giáp lai của cơ quan đăng ký xe trên bản chà số máy, số khung xe.",
+          "requirements": "Thực hiện thu hồi chứng nhận đăng ký xe, biển số xe đối với xe cơ giới hết niên hạn sử dụng, hư hỏng không sử dụng được; xe bị thải bỏ, bị mất không tìm được và đề nghị thu hồi chứng nhận đăng ký xe, biển số xe theo yêu cầu.",
+          "submission_methods": [
+            "Trực tuyến",
+            "Trực tiếp"
+          ],
+          "processing_time_values": [
+            "2 ngày làm việc",
+            "2 ngày làm việc"
+          ],
+          "document_groups": [],
+          "result_items": [
+            "Giấy chứng nhận thu hồi đăng ký, biển số xe (Mã: `KQ.G01.000008`)"
+          ],
+          "legal_bases": []
+        },
+        {
+          "procedure_code": "3.000381",
+          "procedure_title": "Thu hồi Giấy phép hoạt động đối với phương tiện giao thông thông minh tại Cục cảnh sát giao thông",
+          "field": "Đăng ký, quản lý phương tiện giao thông cơ giới, xe máy chuyên dùng",
+          "subdomain_key": "dang_ky_phuong_tien",
+          "subdomain_label": "Đăng ký phương tiện",
+          "event_id": 316,
+          "operation_group": "phuong_tien_thong_minh",
+          "operation_key": "thu_hoi_giay_phep_hoat_dong_doi_voi_phuong_tien_giao_thong_thong_minh_tai_cuc_canh_sat_giao_thong",
+          "agency": "",
+          "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bf7-c571-77eb-aedb-22b4e41920e8",
+          "raw_data_file": "C:\\Users\\ku060\\Downloads\\VAIC source\\data-pipeline\\raw_data\\3_000381\\3_000381_procedure_detail.md",
+          "raw_data_available": true,
+          "overview": "1. Chủ sở hữu phương tiện hoặc người được ủy quyền theo quy định của pháp luật có trách nhiệm giao nộp giấy phép hoạt động phương tiện giao thông thông minh thuộc trường hợp bị thu hồi theo quy định tại khoản 5 Điều 25 Nghị định 151/2024/NĐ-CP ngày 15/11/2024 của Chính phủ quy định chi tiết một số điều và biện pháp thi hành Luật trật tự, an toàn giao thông đường bộ cho cơ quan có thẩm quyền đã cấp trước đó để thu hồi. Phương tiện giao thông thông minh bị thu hồi giấy phép hoạt động thuộc một trong các trường hợp sau: a) Hết niên hạn sử dụng hoặc không được phép lưu hành; b) Hỏng không sử dụng được; c) Bị thải bỏ, bị mất không tìm được; d) Đã cấp giấy phép hoạt động nhưng phát hiện hồ sơ bị làm giả để được cấp giấy phép; giấy phép cấp không đúng thẩm quyền.",
+          "procedure_flow": "1. Chủ sở hữu phương tiện hoặc người được ủy quyền theo quy định của pháp luật có trách nhiệm giao nộp giấy phép hoạt động phương tiện giao thông thông minh thuộc trường hợp bị thu hồi theo quy định tại khoản 5 Điều 25 Nghị định 151/2024/NĐ-CP ngày 15/11/2024 của Chính phủ quy định chi tiết một số điều và biện pháp thi hành Luật trật tự, an toàn giao thông đường bộ cho cơ quan có thẩm quyền đã cấp trước đó để thu hồi. Phương tiện giao thông thông minh bị thu hồi giấy phép hoạt động thuộc một trong các trường hợp sau: a) Hết niên hạn sử dụng hoặc không được phép lưu hành; b) Hỏng không sử dụng được; c) Bị thải bỏ, bị mất không tìm được; d) Đã cấp giấy phép hoạt động nhưng phát hiện hồ sơ bị làm giả để được cấp giấy phép; giấy phép cấp không đúng thẩm quyền.",
+          "requirements": "Chủ xe là công dân Việt Nam có tài khoản định danh mức độ 2; Phiếu kiểm tra chất lượng xuất xưởng có dán bản chà số máy, số khung có đóng dấu giáp lai của cơ sở sản xuất.",
+          "submission_methods": [
+            "Trực tiếp"
+          ],
+          "processing_time_values": [
+            "1 ngày làm việc"
+          ],
+          "document_groups": [],
+          "result_items": [
+            "Thu hồi Giấy phép hoạt động phương tiện giao thông thông minh (Mã: `KQ.G01.000203`)"
+          ],
+          "legal_bases": []
+        },
+        {
+          "procedure_code": "3.000382",
+          "procedure_title": "Cấp lại Giấy phép hoạt động đối với phương tiện giao thông thông minh tại Cục Cảnh sát giao thông",
+          "field": "Đăng ký, quản lý phương tiện giao thông cơ giới, xe máy chuyên dùng",
+          "subdomain_key": "dang_ky_phuong_tien",
+          "subdomain_label": "Đăng ký phương tiện",
+          "event_id": 316,
+          "operation_group": "phuong_tien_thong_minh",
+          "operation_key": "cap_lai_giay_phep_hoat_dong_doi_voi_phuong_tien_giao_thong_thong_minh_tai_cuc_canh_sat_giao_thong",
+          "agency": "",
+          "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bf7-c574-725f-9bab-f556df83548d",
+          "raw_data_file": "C:\\Users\\ku060\\Downloads\\VAIC source\\data-pipeline\\raw_data\\3_000382\\3_000382_procedure_detail.md",
+          "raw_data_available": true,
+          "overview": "1. Bước 1: Cơ quan, tổ chức, cá nhân là chủ sở hữu phương tiện hoặc người được ủy quyền theo quy định của pháp luật có đơn đề nghị đổi, cấp lại giấy phép hoạt động theo Mẫu số 03 a Phụ lục III kèm theo Nghị định 151/2024/NĐ-CP ngày 15/11/2024 của Chính phủ quy định chi tiết một số điều và biện pháp thi hành Luật trật tự, an toàn giao thông đường bộ gửi cơ quan có thẩm quyền đã cấp giấy phép trước đó khi đề nghị cấp lại Giấy phép hoạt động phương tiện giao thông thông minh thông qua một trong các hình thức sau: nộp trực tuyến tại Cổng dịch vụ công; qua dịch vụ bưu chính; nộp trực tiếp; Bước 2: Sau khi tiếp nhận hồ sơ kê khai đổi, cấp lại Giấy phép hoạt động phương tiện giao thông thông minh, trong thời gian 02 ngày làm việc kể từ ngày nhận được đơn đề nghị, cơ quan có thẩm quyền xem xét đổi, cấp lại giấy phép hoạt động; trường hợp không đủ điều kiện đổi, cấp lại thì có văn bản trả lời, nêu rõ lý do.",
+          "procedure_flow": "1. Bước 1: Cơ quan, tổ chức, cá nhân là chủ sở hữu phương tiện hoặc người được ủy quyền theo quy định của pháp luật có đơn đề nghị đổi, cấp lại giấy phép hoạt động theo Mẫu số 03 a Phụ lục III kèm theo Nghị định 151/2024/NĐ-CP ngày 15/11/2024 của Chính phủ quy định chi tiết một số điều và biện pháp thi hành Luật trật tự, an toàn giao thông đường bộ gửi cơ quan có thẩm quyền đã cấp giấy phép trước đó khi đề nghị cấp lại Giấy phép hoạt động phương tiện giao thông thông minh thông qua một trong các hình thức sau: nộp trực tuyến tại Cổng dịch vụ công; qua dịch vụ bưu chính; nộp trực tiếp; Bước 2: Sau khi tiếp nhận hồ sơ kê khai đổi, cấp lại Giấy phép hoạt động phương tiện giao thông thông minh, trong thời gian 02 ngày làm việc kể từ ngày nhận được đơn đề nghị, cơ quan có thẩm quyền xem xét đổi, cấp lại giấy phép hoạt động; trường hợp không đủ điều kiện đổi, cấp lại thì có văn bản trả lời, nêu rõ lý do.",
+          "requirements": "Cấp lại Giấy phép hoạt động phương tiện giao thông thông minh bị hư hỏng, bị mất",
+          "submission_methods": [
+            "Trực tuyến",
+            "Dịch vụ bưu chính",
+            "Trực tiếp"
+          ],
+          "processing_time_values": [
+            "2 ngày làm việc",
+            "2 ngày làm việc",
+            "2 ngày làm việc"
+          ],
+          "document_groups": [],
+          "result_items": [
+            "Giấy phép hoạt động phương tiện giao thông thông minh (Mã: `KQ.G01.000202`)"
+          ],
+          "legal_bases": []
+        },
+        {
+          "procedure_code": "3.000383",
+          "procedure_title": "Cấp phép hoạt động đối với phương tiện giao thông thông minh tại Cục Cảnh sát giao thông",
+          "field": "Đăng ký, quản lý phương tiện giao thông cơ giới, xe máy chuyên dùng",
+          "subdomain_key": "dang_ky_phuong_tien",
+          "subdomain_label": "Đăng ký phương tiện",
+          "event_id": 316,
+          "operation_group": "phuong_tien_thong_minh",
+          "operation_key": "cap_phep_hoat_dong_doi_voi_phuong_tien_giao_thong_thong_minh_tai_cuc_canh_sat_giao_thong",
+          "agency": "",
+          "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bf7-c55c-75df-856a-e215e76cdf65",
+          "raw_data_file": "C:\\Users\\ku060\\Downloads\\VAIC source\\data-pipeline\\raw_data\\3_000383\\3_000383_procedure_detail.md",
+          "raw_data_available": true,
+          "overview": "1. Bước 1: Cơ quan, tổ chức, cá nhân là chủ sở hữu phương tiện chuẩn bị 01 bộ hồ sơ quy định tại khoản 2 Điều 25, Nghị định 151/2024/NĐ-CP ngày 15/11/2024 của Chính phủ quy định chi tiết một số điều và biện pháp thi hành Luật trật tự, an toàn giao thông đường bộ và nộp cho cơ quan có thẩm quyền cấp phép hoạt động thông qua một trong các hình thức sau: nộp trực tuyến tại Cổng dịch vụ công; qua dịch vụ bưu chính; nộp trực tiếp; Bước 2: Cơ quan cấp phép hoạt động có trách nhiệm tiếp nhận, kiểm tra hồ sơ. Trong thời hạn 07 ngày làm việc kể từ ngày tiếp nhận hồ sơ, cơ quan có thẩm quyền tiến hành tra cứu dữ liệu đăng ký xe trên hệ thống đăng ký, quản lý xe và đối chiếu với thông tin trong đơn đề nghị của chủ sở hữu; trường hợp hồ sơ hợp lệ thì cấp giấy phép hoạt động theo Mẫu số 03b Phụ lục III kèm theo Nghị định 151/2024/NĐ-CP. Trường hợp hồ sơ không đủ điều kiện thì có văn bản trả lời, nêu rõ lý do;",
+          "procedure_flow": "1. Bước 1: Cơ quan, tổ chức, cá nhân là chủ sở hữu phương tiện chuẩn bị 01 bộ hồ sơ quy định tại khoản 2 Điều 25, Nghị định 151/2024/NĐ-CP ngày 15/11/2024 của Chính phủ quy định chi tiết một số điều và biện pháp thi hành Luật trật tự, an toàn giao thông đường bộ và nộp cho cơ quan có thẩm quyền cấp phép hoạt động thông qua một trong các hình thức sau: nộp trực tuyến tại Cổng dịch vụ công; qua dịch vụ bưu chính; nộp trực tiếp; Bước 2: Cơ quan cấp phép hoạt động có trách nhiệm tiếp nhận, kiểm tra hồ sơ. Trong thời hạn 07 ngày làm việc kể từ ngày tiếp nhận hồ sơ, cơ quan có thẩm quyền tiến hành tra cứu dữ liệu đăng ký xe trên hệ thống đăng ký, quản lý xe và đối chiếu với thông tin trong đơn đề nghị của chủ sở hữu; trường hợp hồ sơ hợp lệ thì cấp giấy phép hoạt động theo Mẫu số 03b Phụ lục III kèm theo Nghị định 151/2024/NĐ-CP. Trường hợp hồ sơ không đủ điều kiện thì có văn bản trả lời, nêu rõ lý do;",
+          "requirements": "Phương tiện giao thông thông minh là xe cơ giới cho phép tự động hóa một phần hoặc toàn bộ hoạt động điều khiển phương tiện, xác định lộ trình và xử lý tình huống khi tham gia giao thông đường bộ.",
+          "submission_methods": [
+            "Trực tuyến",
+            "Dịch vụ bưu chính",
+            "Trực tiếp"
+          ],
+          "processing_time_values": [
+            "7 ngày làm việc",
+            "7 ngày làm việc",
+            "7 ngày làm việc"
+          ],
+          "document_groups": [],
+          "result_items": [
+            "Giấy phép hoạt động phương tiện giao thông thông minh (Mã: `KQ.G01.000202`)"
+          ],
+          "legal_bases": []
+        }
+      ]
+    }
+  ],
+  "subdomain_key": "dang_ky_phuong_tien",
+  "subdomain_label": "Đăng ký phương tiện"
+}

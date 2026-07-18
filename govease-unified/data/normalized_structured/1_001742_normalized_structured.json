@@ -1,0 +1,214 @@
+{
+  "schema_version": "1.0",
+  "normalizer_version": "0.2.0",
+  "source": {
+    "procedure_code": "1.001742",
+    "title": "Giải quyết chuyển hưởng sang địa bàn khác đối với người đang hưởng lương hưu, trợ cấp BHXH hàng tháng và người chờ hưởng lương hưu, trợ cấp hàng tháng",
+    "raw_structured_parser_version": "0.1.0",
+    "field": "Thực hiện chính sách BHXH"
+  },
+  "procedure": {
+    "level": "Cấp xã, Cấp tỉnh",
+    "procedure_type": "TTHC được luật giao quy định chi tiết",
+    "target_users": [
+      "Công dân Việt Nam"
+    ],
+    "authorities": [
+      "Bảo hiểm xã hội cấp huyện, Bảo hiểm xã hội cấp Tỉnh"
+    ],
+    "receiving_places": []
+  },
+  "submission": {
+    "channels": [
+      "in_person",
+      "online",
+      "postal"
+    ],
+    "methods": [
+      {
+        "method_id": "method_1",
+        "channel": "online",
+        "processing_time_text": "1 ngày",
+        "fee_text": null,
+        "description": null,
+        "is_online": true,
+        "is_postal": false,
+        "is_in_person": false
+      },
+      {
+        "method_id": "method_2",
+        "channel": "postal",
+        "processing_time_text": "1 ngày",
+        "fee_text": null,
+        "description": null,
+        "is_online": false,
+        "is_postal": true,
+        "is_in_person": false
+      },
+      {
+        "method_id": "method_3",
+        "channel": "in_person",
+        "processing_time_text": "1 ngày",
+        "fee_text": null,
+        "description": null,
+        "is_online": false,
+        "is_postal": false,
+        "is_in_person": true
+      }
+    ],
+    "timing_summary": {
+      "unique_processing_times": [
+        "1 ngày"
+      ],
+      "method_count": 3
+    }
+  },
+  "documents": {
+    "required": [
+      {
+        "document_id": "b_n_ch_nh_n_ngh",
+        "name": "Bản chính Đơn đề nghị",
+        "group_name": "default",
+        "group_type": "unknown",
+        "original_count": "1",
+        "copy_count": "0",
+        "conditions": [],
+        "attachment_label": null,
+        "attachment_path": null
+      }
+    ],
+    "conditional": [],
+    "presented": [],
+    "notes": [],
+    "forms": [],
+    "empty_groups": [],
+    "document_count": 1
+  },
+  "process": {
+    "steps": [
+      {
+        "step_id": "step_1",
+        "title": null,
+        "content": "1. **Bước 1. Lập, nộp hồ sơ**",
+        "actor": "user",
+        "channel_hint": null,
+        "time_hint": null
+      },
+      {
+        "step_id": "step_2",
+        "title": null,
+        "content": "1. Người đang hưởng lương hưu, trợ cấp BHXH hàng tháng: lập hồ sơ theo quy định tại mục 13.3 (Thành phần hồ sơ) và nộp cho cơ quan BHXH nơi đang chi trả lương hưu, trợ cấp hàng tháng.",
+        "actor": "authority",
+        "channel_hint": null,
+        "time_hint": null
+      },
+      {
+        "step_id": "step_3",
+        "title": null,
+        "content": "2. Người đang chờ hưởng lương hưu, trợ cấp BHXH hàng tháng: lập hồ sơ theo quy định tại mục 13.3 (Thành phần hồ sơ) và nộp cho cơ quan BHXH nơi đang quản lý hồ sơ chờ.",
+        "actor": "authority",
+        "channel_hint": null,
+        "time_hint": null
+      },
+      {
+        "step_id": "step_4",
+        "title": null,
+        "content": "2. **Bước 2.**",
+        "actor": "user",
+        "channel_hint": null,
+        "time_hint": null
+      },
+      {
+        "step_id": "step_5",
+        "title": null,
+        "content": "Cơ quan BHXH tiếp nhận hồ sơ và giải quyết theo quy định.",
+        "actor": "authority",
+        "channel_hint": null,
+        "time_hint": null
+      },
+      {
+        "step_id": "step_6",
+        "title": null,
+        "content": "3. **Bước 3. Nhận kết quả giải quyết**",
+        "actor": "user",
+        "channel_hint": null,
+        "time_hint": null
+      },
+      {
+        "step_id": "step_7",
+        "title": null,
+        "content": "Người hưởng nhận Thông báo về việc chi trả lương hưu, trợ cấp BHXH hoặc nhận Thông báo về việc tiếp nhận hồ sơ chờ hưởng lương hưu/trợ cấp hàng tháng (đối với người đang chờ hưởng).",
+        "actor": "user",
+        "channel_hint": null,
+        "time_hint": null
+      }
+    ],
+    "step_count": 7,
+    "notes": []
+  },
+  "eligibility": {
+    "conditions": [],
+    "has_conditions": false
+  },
+  "results": {
+    "items": [
+      {
+        "name": "Thông báo về việc tiếp nhận hồ sơ chờ hưởng lương hưu/trợ cấp hàng tháng",
+        "result_code": "KQ.G24.000025",
+        "raw_text": "Thông báo về việc tiếp nhận hồ sơ chờ hưởng lương hưu/trợ cấp hàng tháng"
+      },
+      {
+        "name": "Thông báo về việc chi trả lương hưu, trợ cấp BHXH",
+        "result_code": "KQ.G24.000024",
+        "raw_text": "Thông báo về việc chi trả lương hưu, trợ cấp BHXH"
+      }
+    ],
+    "primary_result": {
+      "name": "Thông báo về việc tiếp nhận hồ sơ chờ hưởng lương hưu/trợ cấp hàng tháng",
+      "result_code": "KQ.G24.000025",
+      "raw_text": "Thông báo về việc tiếp nhận hồ sơ chờ hưởng lương hưu/trợ cấp hàng tháng"
+    }
+  },
+  "legal_basis": {
+    "items": [
+      {
+        "title": "Nghị định 134/2015/NĐ-CP",
+        "code": "134/2015/NĐ-CP"
+      },
+      {
+        "title": "LUẬT Bảo hiểm xã hội",
+        "code": "58/2014/QH13"
+      },
+      {
+        "title": "Nghị định 115/2015/NĐ-CP",
+        "code": "115/2015/NĐ-CP"
+      },
+      {
+        "title": "Thông tư 01/2016/TT-BLĐTBXH",
+        "code": "01/2016/TT-BLĐTBXH"
+      },
+      {
+        "title": "BAN HÀNH QUY TRÌNH GIẢI QUYẾT HƯỞNG CÁC CHẾ ĐỘ BẢO HIỂM XÃ HỘI, CHI TRẢ CÁC CHẾ ĐỘ BẢO HIỂM XÃ HỘI, BẢO HIỂM THẤT NGHIỆP",
+        "code": "2222/QĐ-BHXH"
+      },
+      {
+        "title": "Thông tư liên tịch 105/2016/TTLT-BQP-BCA-BLĐTBXH",
+        "code": "105/2016/TTLT-BQP-BCA-BLĐTBXH"
+      },
+      {
+        "title": "Nghị định 166/2016/NĐ-CP-Quy định về giao dịch điện tử trong lĩnh vực bảo hiểm xã hội, bảo hiểm y tế và bảo hiểm thất nghiệp",
+        "code": "166/2016/NĐ-CP"
+      }
+    ],
+    "count": 7
+  },
+  "attachments": [],
+  "signals": {
+    "raw_parse_warnings": [],
+    "missing_documents": false,
+    "documents_section_present": true,
+    "documents_declared_empty": false,
+    "documents_only_in_notes": false,
+    "missing_results": false
+  }
+}

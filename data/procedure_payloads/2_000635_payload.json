@@ -1,0 +1,578 @@
+{
+  "schema_version": "3.0",
+  "record_type": "public_service_procedure_payload",
+  "id": "procedure-2.000635",
+  "procedure_code": "2.000635",
+  "code": "2.000635",
+  "title": "Cấp bản sao Trích lục hộ tịch, bản sao Giấy khai sinh",
+  "language": "vi",
+  "status": "generated_from_pipeline",
+  "field": "Hộ tịch",
+  "group_key": "co_con_nho",
+  "workflow_family": "child_early_life_workflow",
+  "subflow": "khai_sinh",
+  "source": {
+    "source_url": "file:///C:/Users/ku060/Downloads/VAIC%20source/data-pipeline/raw_data/2_000635/2_000635_procedure_detail.md",
+    "source_markdown_path": "C:\\Users\\ku060\\Downloads\\VAIC source\\data-pipeline\\raw_data\\2_000635\\2_000635_procedure_detail.md",
+    "normalized_payload_path": "C:\\Users\\ku060\\Downloads\\VAIC source\\data-pipeline\\govease-unified\\data\\normalized_structured\\2_000635_normalized_structured.json",
+    "enriched_payload_path": "C:\\Users\\ku060\\Downloads\\VAIC source\\data-pipeline\\govease-unified\\data\\enriched_structured_priority\\2_000635_enriched_structured.json"
+  },
+  "scope": {
+    "included": "Thủ tục này thuộc nhóm giấy tờ cho trẻ nhỏ, thường dùng để đăng ký hoặc cập nhật thông tin khai sinh. Kết quả thường nhận được là Bản sao Trích lục hộ tịch, bản sao giấy khai sinh. Thời gian xử lý tham khảo: theo thời hạn của cơ quan xử lý.",
+    "not_included": []
+  },
+  "agency": {
+    "executing_agency": "Cơ quan quản lý cơ sở dữ liệu hộ tịch điện tử",
+    "submission_place": null,
+    "receiving_places": []
+  },
+  "target_users": [
+    "Tổ chức (không bao gồm doanh nghiệp",
+    "HTX)",
+    "Công dân Việt Nam"
+  ],
+  "submission_methods": [
+    {
+      "code": "ONLINE",
+      "label": "Trực tuyến",
+      "processing_time": null,
+      "fee": null,
+      "description": null
+    },
+    {
+      "code": "POSTAL",
+      "label": "Dịch vụ bưu chính",
+      "processing_time": null,
+      "fee": null,
+      "description": null
+    },
+    {
+      "code": "IN_PERSON",
+      "label": "Trực tiếp",
+      "processing_time": null,
+      "fee": null,
+      "description": null
+    }
+  ],
+  "processing_note": "Chuẩn bị trước các giấy tờ cốt lõi của trẻ và người đi làm thủ tục, sau đó chọn kênh nộp phù hợp: Trực tiếp, Trực tuyến, Dịch vụ bưu chính. Hiện có khoảng 8 mục giấy tờ cần theo dõi trong checklist.",
+  "documents": {
+    "normally_required": [],
+    "conditional": [
+      {
+        "condition": "Trường hợp gửi hồ sơ qua hệ thống bưu chính thì phải gửi kèm theo bản sao có chứng thực các giấy tờ phải xuất trình nêu trên.",
+        "document": "Trường hợp gửi hồ sơ qua hệ thống bưu chính thì phải gửi kèm theo bản sao có chứng thực các giấy tờ phải xuất trình nêu trên.",
+        "quantity": "0 bản chính, 0 bản sao",
+        "notes": [],
+        "attachment_path": null
+      },
+      {
+        "condition": "Văn bản ủy quyền theo quy định của pháp luật trong trường hợp ủy quyền thực hiện yêu cầu cấp bản sao Trích lục hộ tịch. Trường hợp người được ủy quyền là ông, bà, cha, mẹ, con, vợ, chồng, anh, chị, em ruột của người ủy quyền thì văn bản ủy quyền không phải chứng thực.",
+        "document": "Văn bản ủy quyền theo quy định của pháp luật trong trường hợp ủy quyền thực hiện yêu cầu cấp bản sao Trích lục hộ tịch. Trường hợp người được ủy quyền là ông, bà, cha, mẹ, con, vợ, chồng, anh, chị, em ruột của người ủy quyền thì văn bản ủy quyền không phải chứng thực.",
+        "quantity": "1 bản chính, 0 bản sao",
+        "notes": [],
+        "attachment_path": null
+      }
+    ],
+    "forms": [],
+    "presented": [
+      {
+        "name": "Trường hợp giấy tờ tùy thân sử dụng là: Hộ chiếu, Thẻ căn cước, Căn cước công dân, Giấy chứng nhận căn cước thì người có yêu cầu đăng ký hộ tịch chỉ cần cung cấp thông tin số định danh cá nhân hoặc thông tin về giấy tờ (số, ngày/tháng/năm cấp), cơ quan đăng ký hộ tịch có trách nhiệm tra cứu thông tin thông qua kết nối với Cơ sở dữ liệu hộ tịch điện tử, Cơ sở dữ liệu quốc gia về dân cư hoặc cơ sở dữ liệu khác có liên quan để đối chiếu, khai thác dữ liệu.",
+        "quantity": "0 bản chính, 0 bản sao",
+        "notes": [],
+        "group": "* Giấy tờ phải xuất trình:",
+        "attachment_path": null
+      },
+      {
+        "name": "Hộ chiếu/Thẻ căn cước công dân/Thẻ căn cước/Căn cước điện tử/Giấy chứng nhận căn cước hoặc các giấy tờ khác có dán ảnh và thông tin cá nhân do cơ quan có thẩm quyền cấp, còn giá trị sử dụng (sau đây gọi tắt là giấy tờ tùy thân) để chứng minh về nhân thân khi làm thủ tục trực tiếp tại cơ quan đăng ký hộ tịch.",
+        "quantity": "1 bản chính, 0 bản sao",
+        "notes": [],
+        "group": "* Giấy tờ phải xuất trình:",
+        "attachment_path": null
+      },
+      {
+        "name": "Giấy tờ có giá trị chứng minh thông tin về cư trú trong trường hợp cơ quan đăng ký hộ tịch không thể khai thác được thông tin về nơi cư trú của công dân theo các phương thức quy định tại khoản 2 Điều 14 Nghị định số 104/2022/NĐ-CP ngày 21/12/2022 của Chính phủ. Trường hợp các thông tin về giấy tờ chứng minh nơi cư trú đã được khai thác từ Cơ sở dữ liệu quốc gia về dân cư bằng các phương thức này thì người có yêu cầu không phải xuất trình (theo hình thức trực tiếp) hoặc tải lên (theo hình thức trực tuyến).",
+        "quantity": "1 bản chính, 0 bản sao",
+        "notes": [
+          "Giấy tờ có giá trị chứng minh thông tin về cư trú trong trường hợp cơ quan đăng ký hộ tịch không thể khai thác được thông tin về nơi cư trú của công dân theo các phương thức quy định tại khoản 2 Điều 14 Nghị định số 104/2022/NĐ-CP ngày 21/12/2022 của Chính phủ. Trường hợp các thông tin về giấy tờ chứng minh nơi cư trú đã được khai thác từ Cơ sở dữ liệu quốc gia về dân cư bằng các phương thức này thì người có yêu cầu không phải xuất trình (theo hình thức trực tiếp) hoặc tải lên (theo hình thức trực tuyến)."
+        ],
+        "group": "* Giấy tờ phải xuất trình:",
+        "attachment_path": null
+      },
+      {
+        "name": "Trường hợp các thông tin cá nhân trong các giấy tờ này đã có trong Cơ sở dữ liệu quốc gia về dân cư, Cơ sở dữ liệu hộ tịch điện tử, được hệ thống điền tự động thì không phải tải lên (theo hình thức trực tuyến)",
+        "quantity": "0 bản chính, 0 bản sao",
+        "notes": [
+          "Trường hợp các thông tin cá nhân trong các giấy tờ này đã có trong Cơ sở dữ liệu quốc gia về dân cư, Cơ sở dữ liệu hộ tịch điện tử, được hệ thống điền tự động thì không phải tải lên (theo hình thức trực tuyến)"
+        ],
+        "group": "* Giấy tờ phải xuất trình:",
+        "attachment_path": null
+      },
+      {
+        "name": "Trường hợp gửi hồ sơ qua hệ thống bưu chính thì phải gửi kèm theo bản sao có chứng thực các giấy tờ phải xuất trình nêu trên.",
+        "quantity": "0 bản chính, 0 bản sao",
+        "notes": [
+          "Trường hợp gửi hồ sơ qua hệ thống bưu chính thì phải gửi kèm theo bản sao có chứng thực các giấy tờ phải xuất trình nêu trên."
+        ],
+        "group": "* Giấy tờ phải xuất trình:",
+        "attachment_path": null
+      },
+      {
+        "name": "Trường hợp không khai thác được thông tin hoặc thông tin khai thác được không đầy đủ, không chính xác thì cơ quan đăng ký hộ tịch yêu cầu người đi đăng ký hộ tịch xuất trình bản chính giấy tờ để chứng minh, đồng thời đề nghị người đi đăng ký hộ tịch cập nhật, điều chỉnh thông tin trong các cơ sở dữ liệu theo quy định của pháp luật.",
+        "quantity": "0 bản chính, 0 bản sao",
+        "notes": [
+          "Trường hợp không khai thác được thông tin hoặc thông tin khai thác được không đầy đủ, không chính xác thì cơ quan đăng ký hộ tịch yêu cầu người đi đăng ký hộ tịch xuất trình bản chính giấy tờ để chứng minh, đồng thời đề nghị người đi đăng ký hộ tịch cập nhật, điều chỉnh thông tin trong các cơ sở dữ liệu theo quy định của pháp luật."
+        ],
+        "group": "* Giấy tờ phải xuất trình:",
+        "attachment_path": null
+      }
+    ],
+    "notes": [
+      "Người yêu cầu đăng ký hộ tịch có thể nộp bản sao được chứng thực từ bản chính hoặc bản sao được cấp từ sổ gốc (sau đây gọi là bản sao) hoặc bản chụp kèm theo bản chính, bản điện tử các giấy tờ này, bao gồm cả giấy tờ được tích hợp, hiển thị trên Ứng dụng định danh điện tử (VneID).",
+      "Trường hợp người yêu cầu đăng k‎ý hộ tịch lựa chọn nhận kết quả tại Trung tâm Phục vụ hành chính công thì người yêu cầu đăng ký hộ tịch phải xuất trình giấy tờ tuỳ thân, nộp các giấy tờ là thành phần hồ sơ theo quy định.",
+      "Đối với giấy tờ gửi kèm theo nếu người yêu cầu nộp hồ sơ theo hình thức trực tuyến:",
+      "Đối với giấy tờ xuất trình khi đăng ký hộ tịch, người tiếp nhận có trách nhiệm kiểm tra, đối chiếu với thông tin trong tờ khai, chụp lại hoặc ghi lại thông tin để lưu trong hồ sơ và trả lại cho người xuất trình, không được yêu cầu nộp bản sao hoặc bản chụp giấy tờ đó.",
+      "Bản chụp các giấy tờ gửi kèm theo hồ sơ cấp bản sao Trích lục hộ tịch, bản sao Giấy khai sinh trực tuyến phải bảo đảm rõ nét, đầy đủ, toàn vẹn về nội dung, là bản chụp bằng máy ảnh, điện thoại hoặc được chụp, được quét bằng thiết bị điện tử, từ giấy tờ được cấp hợp lệ, còn giá trị sử dụng.",
+      "Người tiếp nhận có trách nhiệm tiếp nhận đúng, đủ hồ sơ đăng ký hộ tịch theo quy định của pháp luật hộ tịch, không được yêu cầu người đăng ký hộ tịch nộp thêm giấy tờ mà pháp luật hộ tịch không quy định phải nộp .",
+      "Trường hợp người yêu cầu nộp bản chụp kèm theo bản chính giấy tờ thì người tiếp nhận có trách nhiệm kiểm tra, đối chiếu bản chụp với bản chính và ký xác nhận, không được yêu cầu nộp bản sao giấy tờ đó.",
+      "Cá nhân có quyền lựa chọn thực hiện thủ tục hành chính về hộ tịch tại cơ quan đăng ký hộ tịch nơi cư trú; nơi cư trú của cá nhân được xác định theo quy định của pháp luật về cư trú. Trường hợp cá nhân lựa chọn thực hiện thủ tục hành chính về hộ tịch không phải tại Ủy ban nhân dân cấp xã nơi thường trú hoặc nơi tạm trú thì Ủy ban nhân dân cấp xã nơi tiếp nhận yêu cầu có trách nhiệm hỗ trợ người dân nộp hồ sơ đăng ký hộ tịch trực tuyến đến đúng cơ quan có thẩm quyền theo quy định.",
+      "Trường hợp giấy tờ, tài liệu phải gửi kèm trong hồ sơ cấp bản sao Trích lục hộ tịch, bản sao Giấy khai sinh trực tuyến đã có bản sao điện tử hoặc bản điện tử giấy tờ hộ tịch thì người yêu cầu được sử dụng bản điện tử này.",
+      "Trường hợp người yêu cầu cấp bản sao Trích lục hộ tịch, bản sao Giấy khai sinh không cung cấp đầy đủ hoặc cung cấp các thông tin không chính xác, không thể tra cứu được thông tin thì cơ quan đăng ký hộ tịch từ chối giải quyết.",
+      "Đối với giấy tờ nộp, xuất trình nếu người yêu cầu nộp hồ sơ theo hình thức trực tiếp:",
+      "Người tiếp nhận hồ sơ thực hiện khai thác thông tin trong CSDLQGVDC theo quy định pháp luật nếu người yêu cầu đăng ký hộ tịch đã cung cấp họ, chữ đệm, tên; ngày, tháng, năm sinh; số định danh cá nhân/thẻ căn cước công dân/thẻ căn cước/căn cước điện tử. Trường hợp các thông tin cần khai thác không có trong CSDLQGVDC thì đề nghị người yêu cầu kê khai đầy đủ.",
+      "Giấy tờ do cơ quan có thẩm quyền của nước ngoài cấp, công chứng hoặc xác nhận để sử dụng cho việc đăng ký hộ tịch tại Việt Nam phải được hợp pháp hóa lãnh sự theo quy định của pháp luật, trừ trường hợp được miễn theo điều ước quốc tế mà Việt Nam là thành viên.",
+      "Trường hợp người yêu cầu đăng ký hộ tịch không lựa chọn nhận kết quả tại Trung tâm Phục vụ hành chính công thì người yêu cầu đăng ký hộ tịch nộp các giấy tờ là thành phần hồ sơ theo quy định trước khi nhận kết quả.",
+      "Tờ khai đề nghị bản sao Trích lục hộ tịch theo mẫu trong trường hợp người yêu cầu là cá nhân hoặc Văn bản yêu cầu cấp bản sao Trích lục hộ tịch nêu rõ lý do trong trường hợp người yêu cầu là cơ quan, tổ chức (nếu người có yêu cầu lựa chọn nộp hồ sơ theo hình thức trực tiếp);",
+      "Mẫu điện tử tương tác yêu cầu cấp bản sao Giấy khai sinh, bản sao Trích lục hộ tịch (do người yêu cầu cung cấp thông tin theo hướng dẫn trên Cổng dịch vụ công, nếu người có yêu cầu lựa chọn nộp hồ sơ theo hình thức trực tuyến)",
+      "Người có yêu cầu cấp bản sao Trích lục hộ tịch thực hiện việc nộp/xuất trình (theo hình thức trực tiếp) hoặc tải lên (theo hình thức trực tuyến) các giấy tờ sau:"
+    ],
+    "summary": [
+      {
+        "group": null,
+        "name": null,
+        "quantity": "0 bản chính, 0 bản sao",
+        "notes": [],
+        "attachment_path": null
+      },
+      {
+        "group": null,
+        "name": null,
+        "quantity": "1 bản chính, 0 bản sao",
+        "notes": [],
+        "attachment_path": null
+      }
+    ]
+  },
+  "steps": [
+    {
+      "order": 1,
+      "title": "Bước 1",
+      "description": "1. - Nếu lựa chọn hình thức nộp hồ sơ trực tiếp, người yêu cầu cấp bản sao Trích lục hộ tịch, bản sao Giấy khai sinh nộp hồ sơ đề nghị cấp bản sao Trích lục hộ tịch, bản sao Giấy khai sinh tại Trung tâm Phục vụ hành chính công có thẩm quyền; nộp phí theo quy định pháp luật.",
+      "example": "trực tiếp"
+    },
+    {
+      "order": 2,
+      "title": "Bước 2",
+      "description": "Trường hợp cơ quan, tổ chức có thẩm quyền đề nghị cấp bản sao Trích lục hộ tịch, bản sao Giấy khai sinh của cá nhân thì gửi văn bản yêu cầu nêu rõ lý do cho Cơ quan quản lý Cơ sở dữ liệu hộ tịch điện tử.",
+      "example": null
+    },
+    {
+      "order": 3,
+      "title": "Bước 3",
+      "description": "- Nếu lựa chọn hình thức nộp hồ sơ trực tuyến, người yêu cầu cấp bản sao Trích lục hộ tịch, bản sao Giấy khai sinh truy cập Cổng dịch vụ công quốc gia hoặc Ứng dụng định danh quốc gia.",
+      "example": "trực tuyến"
+    },
+    {
+      "order": 4,
+      "title": "Bước 4",
+      "description": "Người yêu cầu cấp bản sao Trích lục hộ tịch, bản sao Giấy khai sinh trực tuyến cung cấp thông tin theo mẫu điện tử tương tác yêu cầu bản sao Trích lục hộ tịch, cấp bản sao Giấy khai sinh, đính kèm bản chụp hoặc bản sao điện tử các giấy tờ, tài liệu liên quan đến nội dung đề nghị cấp bản sao Trích lục hộ tịch, bản sao Giấy khai sinh; nộp phí thông qua chức năng thanh toán trực tuyến hoặc bằng cách thức khác theo quy định pháp luật, hoàn tất việc nộp hồ sơ.",
+      "example": "trực tuyến"
+    },
+    {
+      "order": 5,
+      "title": "Bước 5",
+      "description": "- Cán bộ tiếp nhận hồ sơ tại Trung tâm Phục vụ hành chính công có trách nhiệm kiểm tra tính chính xác, đầy đủ, thống nhất, hợp lệ của hồ sơ.",
+      "example": null
+    },
+    {
+      "order": 6,
+      "title": "Bước 6",
+      "description": "(i) Trường hợp hồ sơ đầy đủ, hợp lệ thì tiếp nhận hồ sơ; nếu tiếp nhận hồ sơ sau 15 giờ thì có Phiếu hẹn, trả kết quả cho người yêu cầu trong ngày làm việc tiếp theo (nếu người yêu cầu nộp hồ sơ trực tiếp) hoặc gửi ngay Phiếu hẹn, trả kết quả qua thư điện tử hoặc gửi tin nhắn hẹn trả kết quả qua điện thoại di động cho người yêu cầu (nếu người yêu cầu nộp hồ sơ trực tuyến); chuyển hồ sơ để công chức tư pháp - hộ tịch xử lý; trường hợp tiếp nhận hồ sơ tại Trung tâm Phục vụ hành chính công cấp tỉnh, cán bộ tiếp nhận hồ sơ chuyển hồ sơ đến Sở Tư pháp/Ủy ban nhân dân cấp xã có thẩm quyền xử lý.",
+      "example": "trực tuyến"
+    },
+    {
+      "order": 7,
+      "title": "Bước 7",
+      "description": "(ii) Trường hợp hồ sơ chưa đầy đủ, hợp lệ thì cán bộ tiếp nhận hồ sơ thông báo cho người yêu cầu bổ sung, hoàn thiện hồ sơ, nêu rõ loại giấy tờ, nội dung cần bổ sung để người yêu cầu bổ sung, hoàn thiện. Sau khi hồ sơ được bổ sung, thực hiện lại bước (i);",
+      "example": null
+    },
+    {
+      "order": 8,
+      "title": "Bước 8",
+      "description": "(iii) Trường hợp người yêu cầu cấp bản sao Trích lục hộ tịch, bản sao Giấy khai sinh không bổ sung, hoàn thiện được hồ sơ thì cán bộ tiếp nhận hồ sơ báo cáo Lãnh đạo Trung tâm Phục vụ hành chính công có thông báo từ chối giải quyết yêu cầu cấp bản sao Trích lục hộ tịch, bản sao giấy khai sinh.",
+      "example": null
+    },
+    {
+      "order": 9,
+      "title": "Bước 9",
+      "description": "- Công chức tư pháp - hộ tịch/công chức làm công tác hộ tịch thẩm tra hồ sơ (thẩm tra tính thống nhất, hợp lệ của các thông tin trong hồ sơ, giấy tờ, tài liệu do người yêu cầu nộp, xuất trình hoặc đính kèm).",
+      "example": null
+    },
+    {
+      "order": 10,
+      "title": "Bước 10",
+      "description": "+ Trường hợp hồ sơ cần bổ sung, hoàn thiện hoặc không đủ điều kiện giải quyết, phải từ chối thì công chức tư pháp - hộ tịch/công chức làm công tác hộ tịch gửi thông báo về tình trạng hồ sơ tới Trung tâm Phục vụ hành chính công để thông báo cho người nộp hồ sơ – thực hiện lại bước (ii) hoặc (iii);",
+      "example": null
+    },
+    {
+      "order": 11,
+      "title": "Bước 11",
+      "description": "+ Trường hợp cần phải kiểm tra, xác minh làm rõ hoặc do nguyên nhân khác mà không thể trả kết quả đúng thời gian đã hẹn thì công chức tư pháp - hộ tịch/công chức làm công tác hộ tịch lập Phiếu xin lỗi và hẹn lại ngày trả kết quả, trong đó nêu rõ lý do chậm trả kết quả và thời gian hẹn trả kết quả, chuyển Trung tâm Phục vụ hành chính công để trả cho người yêu cầu (nếu người yêu cầu nộp hồ sơ trực tiếp), hoặc gửi Phiếu xin lỗi và hẹn lại ngày trả kết quả qua thư điện tử hoặc gửi tin nhắn qua điện thoại di động cho người yêu cầu (nếu người yêu cầu nộp hồ sơ trực tuyến).",
+      "example": "trực tuyến"
+    },
+    {
+      "order": 12,
+      "title": "Bước 12",
+      "description": "+ Nếu thấy hồ sơ đầy đủ, hợp lệ, đúng quy định, trường hợp tiếp nhận hồ sơ cấp bản sao Trích lục hộ tịch, bản sao Giấy khai sinh theo hình thức trực tiếp, thì công chức tư pháp - hộ tịch/công chức làm công tác hộ tịch in bản sao Trích lục hộ tịch trình Thủ trưởng Cơ quan quản lý Cơ sở dữ liệu hộ tịch điện tử ký, chuyển tới Trung tâm Phục vụ hành chính công để trả kết quả cho người yêu cầu.",
+      "example": "trực tiếp"
+    },
+    {
+      "order": 13,
+      "title": "Bước 13",
+      "description": "Trường hợp tiếp nhận hồ sơ xin cấp bản sao Trích lục hộ tịch, bản sao Giấy khai sinh theo hình thức trực tuyến, công chức tư pháp - hộ tịch/công chức làm công tác hộ tịch gửi lại nội dung biểu mẫu Trích lục hộ tịch điện tử tương ứng với thông tin đầy đủ cho người yêu cầu qua thư điện tử hoặc thiết bị số.",
+      "example": "trực tuyến"
+    },
+    {
+      "order": 14,
+      "title": "Bước 14",
+      "description": "Người yêu cầu có trách nhiệm kiểm tra tính chính xác, đầy đủ của các thông tin trên biểu mẫu Trích lục hộ tịch điện tử và xác nhận (tối đa một ngày).",
+      "example": null
+    },
+    {
+      "order": 15,
+      "title": "Bước 15",
+      "description": "Nếu người có yêu cấp bản sao Trích lục hộ tịch, bản sao Giấy khai sinh đã thống nhất, đầy đủ hoặc không có phản hồi sau thời hạn một ngày thì công chức tư pháp - hộ tịch/công chức làm công tác hộ tịch in bản sao Trích lục hộ tịch, trình Thủ trưởng Cơ quan quản lý Cơ sở dữ liệu hộ tịch điện tử ký, chuyển tới Trung tâm Phục vụ hành chính công để trả kết quả cho người yêu cầu.",
+      "example": null
+    }
+  ],
+  "input_fields": [
+    {
+      "field": "child_full_name",
+      "label": "Tên trẻ",
+      "type": "string",
+      "required": false
+    },
+    {
+      "field": "child_birth_date",
+      "label": "Ngày sinh của trẻ",
+      "type": "date",
+      "required": false,
+      "format": "YYYY-MM-DD"
+    },
+    {
+      "field": "child_birth_place",
+      "label": "Nơi sinh",
+      "type": "string",
+      "required": false
+    },
+    {
+      "field": "requester_relationship",
+      "label": "Quan hệ với trẻ",
+      "type": "enum",
+      "required": true
+    },
+    {
+      "field": "has_foreign_element",
+      "label": "Có yếu tố nước ngoài",
+      "type": "boolean",
+      "required": true
+    }
+  ],
+  "validation_rules": [
+    {
+      "id": "required-4",
+      "severity": "error",
+      "field": "requester_relationship",
+      "rule": "Trường bắt buộc phải có dữ liệu hợp lệ trước khi nộp.",
+      "message": "Thiếu trường bắt buộc: Quan hệ với trẻ."
+    },
+    {
+      "id": "required-5",
+      "severity": "error",
+      "field": "has_foreign_element",
+      "rule": "Trường bắt buộc phải có dữ liệu hợp lệ trước khi nộp.",
+      "message": "Thiếu trường bắt buộc: Có yếu tố nước ngoài."
+    },
+    {
+      "id": "hint-1",
+      "severity": "warning",
+      "field": "general",
+      "rule": "Nên xác định trước kênh nộp hồ sơ để biết có cần bản giấy, bản điện tử hay xuất trình trực tiếp.",
+      "message": "Nên xác định trước kênh nộp hồ sơ để biết có cần bản giấy, bản điện tử hay xuất trình trực tiếp."
+    },
+    {
+      "id": "hint-2",
+      "severity": "warning",
+      "field": "general",
+      "rule": "Thông tin hộ tịch giữa các giấy tờ phải thống nhất về họ tên, ngày sinh và quan hệ liên quan.",
+      "message": "Thông tin hộ tịch giữa các giấy tờ phải thống nhất về họ tên, ngày sinh và quan hệ liên quan."
+    }
+  ],
+  "common_errors": [
+    {
+      "field": "general",
+      "issue": "Thông tin định danh hoặc cư trú không khớp với dữ liệu dân cư.",
+      "fix": "Nên xác định trước kênh nộp hồ sơ để biết có cần bản giấy, bản điện tử hay xuất trình trực tiếp."
+    },
+    {
+      "field": "general",
+      "issue": "Thiếu giấy tờ hoặc nội dung ủy quyền phù hợp.",
+      "fix": "Nên xác định trước kênh nộp hồ sơ để biết có cần bản giấy, bản điện tử hay xuất trình trực tiếp."
+    },
+    {
+      "field": "general",
+      "issue": "Thiếu giấy tờ hợp pháp hóa hoặc giấy tờ nhân thân của phía nước ngoài.",
+      "fix": "Nên xác định trước kênh nộp hồ sơ để biết có cần bản giấy, bản điện tử hay xuất trình trực tiếp."
+    },
+    {
+      "field": "general",
+      "issue": "Điền sai mẫu tờ khai hoặc chọn sai biểu mẫu đi kèm.",
+      "fix": "Nên xác định trước kênh nộp hồ sơ để biết có cần bản giấy, bản điện tử hay xuất trình trực tiếp."
+    },
+    {
+      "field": "general",
+      "issue": "Thông tin thửa đất, tài sản hoặc giấy chứng nhận chưa khớp với hồ sơ hiện có.",
+      "fix": "Nên xác định trước kênh nộp hồ sơ để biết có cần bản giấy, bản điện tử hay xuất trình trực tiếp."
+    }
+  ],
+  "clarifying_questions": [
+    {
+      "id": "clarify_1",
+      "question": "Bé đã có giấy chứng sinh hoặc giấy tờ thay thế chưa?",
+      "purpose": "workflow_intake"
+    },
+    {
+      "id": "clarify_2",
+      "question": "Thủ tục này có liên quan đến yếu tố nước ngoài, mang thai hộ hoặc trẻ bị bỏ rơi không?",
+      "purpose": "workflow_intake"
+    }
+  ],
+  "legal_basis": [
+    {
+      "title": "Hướng dẫn Luật hộ tịch và Nghị định 123/2015/NĐ-CP hướng dẫn Luật hộ tịch do Bộ trưởng Bộ Tư pháp ban hành",
+      "code": "04/2020/TT-BTP"
+    },
+    {
+      "title": "Nghị định sửa đổi, bổ sung một số điều của các Nghị định trong lĩnh vực hộ tịch, quốc tịch, chứng thực.",
+      "code": "07/2025/NĐ-CP"
+    },
+    {
+      "title": "Nghị định số 120/2025/NĐ-CP ngày 11/6/2025 của Chính phủ quy định về phân định thẩm quyền của chính quyền địa phương 02 cấp trong lĩnh vực quản lý nhà nước của Bộ Tư pháp.",
+      "code": "120/2025/NĐ-CP"
+    },
+    {
+      "title": "Nghị quyết số 66.7/2025/NQ-CP của Chính phủ: Quy định cắt giảm, đơn giản hóa thủ tục hành chính dựa trên dữ liệu",
+      "code": "66.7/2025/NQ-CP"
+    },
+    {
+      "title": "Luật 60/2014/QH13",
+      "code": "60/2014/QH13"
+    },
+    {
+      "title": "Thông tư quy định chi tiết một số điều và biện pháp thi hành Nghị định số 87/2020/NĐ-CP ngày 28 tháng 7 năm 2020 của Chính phủ quy định về Cơ sở dữ liệu hộ tịch điện tử, đăng ký hộ tịch trực tuyến",
+      "code": "01/2022/TT-BTP"
+    },
+    {
+      "title": "Thông tư 281/2016/TT-BTC",
+      "code": "281/2016/TT-BTC"
+    },
+    {
+      "title": "Sửa đổi, bổ sung một số điều của Thông tư số 02/2020/TT-BTP ngày 08/4/2020 của Bộ trưởng Bộ Tư pháp ban hành, hướng dẫn sử dụng, quản lý mẫu sổ quốc tịch và mẫu giấy tờ về quốc tịch và Thông tư số 04/2020/TT-BTP ngày 28/5/2020 của Bộ trưởng Bộ Tư pháp quy định chi tiết thi hành một số điều của Luật Hộ tịch và Nghị định số 123/2015/NĐ-CP ngày 15/11/2015 của Chính phủ quy định chi tiết một số điều và biện pháp thi hành Luật Hộ tịch",
+      "code": "04/2024/TT-BTP"
+    },
+    {
+      "title": "Thông tư số 03/2023/TT-BTP ngày 02/8/2023 của Bộ trưởng Bộ Tư pháp",
+      "code": "Thông tư số 03/2023/TT-BTP"
+    },
+    {
+      "title": "Thông tư sửa đổi, bổ sung một số điều của Thông tư số 85/2019/TT-BTC ngày 29/11/2019 của Bộ Tài chính hướng dẫn về phí và lệ phí thuộc thẩm quyền quyết định của Hội đồng nhân dân tỉnh, thành phố trực thuộc Trung ương.",
+      "code": "106/2021/TT-BTC"
+    },
+    {
+      "title": "Thông tư Hướng dẫn về phí và lệ phí thuộc thẩm quyền quyết định của Hội đồng nhân dân tỉnh, thành phố trực thuộc Trung ương",
+      "code": "85/2019/TT-BTC"
+    },
+    {
+      "title": "Nghị định số 123/2015/NĐ-CP ngày 15/11/2015 của Chính phủ quy định chi tiết một số điều và biện pháp thi hành Luật Hộ tịch",
+      "code": "123/2015/NĐ-CP"
+    },
+    {
+      "title": "Thông tư số 08/2025/TT-BTP ngày 12/6/2025 của Bộ trưởng Bộ Tư pháp quy định về phân định thẩm quyền của chính quyền địa phương 02 cấp và phân cấp trong lĩnh vực quản lý nhà nước của Bộ Tư pháp",
+      "code": "08/2025/TT-BTP"
+    },
+    {
+      "title": "Nghị định sửa đổi, bổ sung một số nghị định để cắt giảm, đơn giản hóa thủ tục hành chính, điều kiện kinh doanh thuộc phạm vi quản lý của Bộ Tư pháp",
+      "code": "18/2026/NĐ-CP"
+    },
+    {
+      "title": "Nghị định quy định về Cơ sở dữ liệu hộ tịch điện tử, đăng ký hộ tịch trực tuyến",
+      "code": "87/2020/NĐ-CP"
+    }
+  ],
+  "legal_bases": [
+    {
+      "title": "Hướng dẫn Luật hộ tịch và Nghị định 123/2015/NĐ-CP hướng dẫn Luật hộ tịch do Bộ trưởng Bộ Tư pháp ban hành",
+      "code": "04/2020/TT-BTP"
+    },
+    {
+      "title": "Nghị định sửa đổi, bổ sung một số điều của các Nghị định trong lĩnh vực hộ tịch, quốc tịch, chứng thực.",
+      "code": "07/2025/NĐ-CP"
+    },
+    {
+      "title": "Nghị định số 120/2025/NĐ-CP ngày 11/6/2025 của Chính phủ quy định về phân định thẩm quyền của chính quyền địa phương 02 cấp trong lĩnh vực quản lý nhà nước của Bộ Tư pháp.",
+      "code": "120/2025/NĐ-CP"
+    },
+    {
+      "title": "Nghị quyết số 66.7/2025/NQ-CP của Chính phủ: Quy định cắt giảm, đơn giản hóa thủ tục hành chính dựa trên dữ liệu",
+      "code": "66.7/2025/NQ-CP"
+    },
+    {
+      "title": "Luật 60/2014/QH13",
+      "code": "60/2014/QH13"
+    },
+    {
+      "title": "Thông tư quy định chi tiết một số điều và biện pháp thi hành Nghị định số 87/2020/NĐ-CP ngày 28 tháng 7 năm 2020 của Chính phủ quy định về Cơ sở dữ liệu hộ tịch điện tử, đăng ký hộ tịch trực tuyến",
+      "code": "01/2022/TT-BTP"
+    },
+    {
+      "title": "Thông tư 281/2016/TT-BTC",
+      "code": "281/2016/TT-BTC"
+    },
+    {
+      "title": "Sửa đổi, bổ sung một số điều của Thông tư số 02/2020/TT-BTP ngày 08/4/2020 của Bộ trưởng Bộ Tư pháp ban hành, hướng dẫn sử dụng, quản lý mẫu sổ quốc tịch và mẫu giấy tờ về quốc tịch và Thông tư số 04/2020/TT-BTP ngày 28/5/2020 của Bộ trưởng Bộ Tư pháp quy định chi tiết thi hành một số điều của Luật Hộ tịch và Nghị định số 123/2015/NĐ-CP ngày 15/11/2015 của Chính phủ quy định chi tiết một số điều và biện pháp thi hành Luật Hộ tịch",
+      "code": "04/2024/TT-BTP"
+    },
+    {
+      "title": "Thông tư số 03/2023/TT-BTP ngày 02/8/2023 của Bộ trưởng Bộ Tư pháp",
+      "code": "Thông tư số 03/2023/TT-BTP"
+    },
+    {
+      "title": "Thông tư sửa đổi, bổ sung một số điều của Thông tư số 85/2019/TT-BTC ngày 29/11/2019 của Bộ Tài chính hướng dẫn về phí và lệ phí thuộc thẩm quyền quyết định của Hội đồng nhân dân tỉnh, thành phố trực thuộc Trung ương.",
+      "code": "106/2021/TT-BTC"
+    },
+    {
+      "title": "Thông tư Hướng dẫn về phí và lệ phí thuộc thẩm quyền quyết định của Hội đồng nhân dân tỉnh, thành phố trực thuộc Trung ương",
+      "code": "85/2019/TT-BTC"
+    },
+    {
+      "title": "Nghị định số 123/2015/NĐ-CP ngày 15/11/2015 của Chính phủ quy định chi tiết một số điều và biện pháp thi hành Luật Hộ tịch",
+      "code": "123/2015/NĐ-CP"
+    },
+    {
+      "title": "Thông tư số 08/2025/TT-BTP ngày 12/6/2025 của Bộ trưởng Bộ Tư pháp quy định về phân định thẩm quyền của chính quyền địa phương 02 cấp và phân cấp trong lĩnh vực quản lý nhà nước của Bộ Tư pháp",
+      "code": "08/2025/TT-BTP"
+    },
+    {
+      "title": "Nghị định sửa đổi, bổ sung một số nghị định để cắt giảm, đơn giản hóa thủ tục hành chính, điều kiện kinh doanh thuộc phạm vi quản lý của Bộ Tư pháp",
+      "code": "18/2026/NĐ-CP"
+    },
+    {
+      "title": "Nghị định quy định về Cơ sở dữ liệu hộ tịch điện tử, đăng ký hộ tịch trực tuyến",
+      "code": "87/2020/NĐ-CP"
+    }
+  ],
+  "faq": [
+    {
+      "question": "Có thể nộp qua kênh nào?",
+      "answer": "Các kênh hiện có: Trực tiếp, Trực tuyến, Dịch vụ bưu chính."
+    },
+    {
+      "question": "Kết quả chính của thủ tục là gì?",
+      "answer": "Kết quả chính được trích xuất là Bản sao Trích lục hộ tịch, bản sao giấy khai sinh."
+    }
+  ],
+  "guidance": {
+    "highlight_documents": [
+      {
+        "bucket": "conditional",
+        "name": "Trường hợp gửi hồ sơ qua hệ thống bưu chính thì phải gửi kèm theo bản sao có chứng thực các giấy tờ phải xuất trình nêu trên.",
+        "conditions": [
+          "Trường hợp gửi hồ sơ qua hệ thống bưu chính thì phải gửi kèm theo bản sao có chứng thực các giấy tờ phải xuất trình nêu trên."
+        ],
+        "attachment_path": null
+      },
+      {
+        "bucket": "conditional",
+        "name": "Văn bản ủy quyền theo quy định của pháp luật trong trường hợp ủy quyền thực hiện yêu cầu cấp bản sao Trích lục hộ tịch. Trường hợp người được ủy quyền là ông, bà, cha, mẹ, con, vợ, chồng, anh, chị, em ruột của người ủy quyền thì văn bản ủy quyền không phải chứng thực.",
+        "conditions": [
+          "Văn bản ủy quyền theo quy định của pháp luật trong trường hợp ủy quyền thực hiện yêu cầu cấp bản sao Trích lục hộ tịch. Trường hợp người được ủy quyền là ông, bà, cha, mẹ, con, vợ, chồng, anh, chị, em ruột của người ủy quyền thì văn bản ủy quyền không phải chứng thực."
+        ],
+        "attachment_path": null
+      },
+      {
+        "bucket": "presented",
+        "name": "Trường hợp giấy tờ tùy thân sử dụng là: Hộ chiếu, Thẻ căn cước, Căn cước công dân, Giấy chứng nhận căn cước thì người có yêu cầu đăng ký hộ tịch chỉ cần cung cấp thông tin số định danh cá nhân hoặc thông tin về giấy tờ (số, ngày/tháng/năm cấp), cơ quan đăng ký hộ tịch có trách nhiệm tra cứu thông tin thông qua kết nối với Cơ sở dữ liệu hộ tịch điện tử, Cơ sở dữ liệu quốc gia về dân cư hoặc cơ sở dữ liệu khác có liên quan để đối chiếu, khai thác dữ liệu.",
+        "conditions": [],
+        "attachment_path": null
+      },
+      {
+        "bucket": "presented",
+        "name": "Hộ chiếu/Thẻ căn cước công dân/Thẻ căn cước/Căn cước điện tử/Giấy chứng nhận căn cước hoặc các giấy tờ khác có dán ảnh và thông tin cá nhân do cơ quan có thẩm quyền cấp, còn giá trị sử dụng (sau đây gọi tắt là giấy tờ tùy thân) để chứng minh về nhân thân khi làm thủ tục trực tiếp tại cơ quan đăng ký hộ tịch.",
+        "conditions": [],
+        "attachment_path": null
+      },
+      {
+        "bucket": "presented",
+        "name": "Giấy tờ có giá trị chứng minh thông tin về cư trú trong trường hợp cơ quan đăng ký hộ tịch không thể khai thác được thông tin về nơi cư trú của công dân theo các phương thức quy định tại khoản 2 Điều 14 Nghị định số 104/2022/NĐ-CP ngày 21/12/2022 của Chính phủ. Trường hợp các thông tin về giấy tờ chứng minh nơi cư trú đã được khai thác từ Cơ sở dữ liệu quốc gia về dân cư bằng các phương thức này thì người có yêu cầu không phải xuất trình (theo hình thức trực tiếp) hoặc tải lên (theo hình thức trực tuyến).",
+        "conditions": [
+          "Giấy tờ có giá trị chứng minh thông tin về cư trú trong trường hợp cơ quan đăng ký hộ tịch không thể khai thác được thông tin về nơi cư trú của công dân theo các phương thức quy định tại khoản 2 Điều 14 Nghị định số 104/2022/NĐ-CP ngày 21/12/2022 của Chính phủ. Trường hợp các thông tin về giấy tờ chứng minh nơi cư trú đã được khai thác từ Cơ sở dữ liệu quốc gia về dân cư bằng các phương thức này thì người có yêu cầu không phải xuất trình (theo hình thức trực tiếp) hoặc tải lên (theo hình thức trực tuyến)."
+        ],
+        "attachment_path": null
+      },
+      {
+        "bucket": "presented",
+        "name": "Trường hợp các thông tin cá nhân trong các giấy tờ này đã có trong Cơ sở dữ liệu quốc gia về dân cư, Cơ sở dữ liệu hộ tịch điện tử, được hệ thống điền tự động thì không phải tải lên (theo hình thức trực tuyến)",
+        "conditions": [
+          "Trường hợp các thông tin cá nhân trong các giấy tờ này đã có trong Cơ sở dữ liệu quốc gia về dân cư, Cơ sở dữ liệu hộ tịch điện tử, được hệ thống điền tự động thì không phải tải lên (theo hình thức trực tuyến)"
+        ],
+        "attachment_path": null
+      }
+    ],
+    "special_cases": [
+      "Có yếu tố nước ngoài",
+      "Có thể cần giấy tờ ủy quyền",
+      "Có trường hợp hồ sơ điện tử thay thế bản giấy",
+      "Có kiểm tra dữ liệu cư trú/định danh",
+      "Có thể cần đối chiếu thông tin thửa đất hoặc giấy chứng nhận"
+    ],
+    "common_errors": [
+      "Thông tin định danh hoặc cư trú không khớp với dữ liệu dân cư.",
+      "Thiếu giấy tờ hoặc nội dung ủy quyền phù hợp.",
+      "Thiếu giấy tờ hợp pháp hóa hoặc giấy tờ nhân thân của phía nước ngoài.",
+      "Điền sai mẫu tờ khai hoặc chọn sai biểu mẫu đi kèm.",
+      "Thông tin thửa đất, tài sản hoặc giấy chứng nhận chưa khớp với hồ sơ hiện có."
+    ],
+    "validation_hints": [
+      "Nên xác định trước kênh nộp hồ sơ để biết có cần bản giấy, bản điện tử hay xuất trình trực tiếp.",
+      "Thông tin hộ tịch giữa các giấy tờ phải thống nhất về họ tên, ngày sinh và quan hệ liên quan."
+    ]
+  },
+  "next_steps": {
+    "summary": "Chuẩn bị trước các giấy tờ cốt lõi của trẻ và người đi làm thủ tục, sau đó chọn kênh nộp phù hợp: Trực tiếp, Trực tuyến, Dịch vụ bưu chính. Hiện có khoảng 8 mục giấy tờ cần theo dõi trong checklist.",
+    "time_badge": null,
+    "result_label": "Bản sao Trích lục hộ tịch, bản sao giấy khai sinh",
+    "primary_channel": "online",
+    "channels": [
+      "in_person",
+      "online",
+      "postal"
+    ]
+  },
+  "notes": [],
+  "provenance": {
+    "pipeline": "raw->structured->normalized->enriched->ui_api_payload",
+    "normalizer_version": "0.2.0",
+    "enricher_version": "0.2.0",
+    "mapping_notes": "workflow_generated:co_con_nho/khai_sinh",
+    "supported_group": true
+  }
+}

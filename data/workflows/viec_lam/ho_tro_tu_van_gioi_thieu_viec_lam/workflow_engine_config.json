@@ -1,0 +1,190 @@
+{
+  "schema_version": "1.0",
+  "domain": "viec_lam",
+  "updated_at": "2026-07-18",
+  "source_files": [
+    "C:\\Users\\ku060\\Downloads\\VAIC source\\data-pipeline\\main\\full-data.csv",
+    "C:\\Users\\ku060\\Downloads\\VAIC source\\data-pipeline\\data\\workflows\\viec_lam\\summary.csv",
+    "C:\\Users\\ku060\\Downloads\\VAIC source\\data-pipeline\\data\\workflows\\viec_lam\\normalized.json",
+    "C:\\Users\\ku060\\Downloads\\VAIC source\\data-pipeline\\raw_data"
+  ],
+  "coverage": {
+    "expected_codes": [
+      "1.012474",
+      "1.014746",
+      "2.002681",
+      "2.002682"
+    ],
+    "covered_codes": [
+      "1.012474",
+      "1.014746",
+      "2.002681",
+      "2.002682"
+    ],
+    "missing_codes": []
+  },
+  "llm_contract": {
+    "role": "parse_user_answer_and_rephrase_question_only",
+    "required_output_schema": {
+      "intent": "viec_lam",
+      "current_node": "string",
+      "slot_updates": {
+        "subdomain_key": "ho_tro_tu_van_gioi_thieu_viec_lam | tuyen_dung | bao_hiem_xa_hoi_that_nghiep_tro_cap | chung_chi_hanh_nghe | nang_ngach | thue_thu_nhap_ca_nhan | cap_phep_lao_dong_nguoi_nuoc_ngoai | unknown",
+        "operation_key": "string",
+        "operation_group": "string"
+      },
+      "confidence": "0_to_1",
+      "needs_human_review": "boolean"
+    }
+  },
+  "entry_prompts": [
+    "Bạn đang cần tìm việc, nhận trợ cấp thất nghiệp, học nâng cao kỹ năng, khai thuế thu nhập hay làm giấy phép lao động?",
+    "Bạn muốn đăng ký mới, điều chỉnh thông tin, xin hỗ trợ, xin cấp chứng chỉ hay xin giấy phép làm việc?"
+  ],
+  "slots": [
+    {
+      "name": "subdomain_key",
+      "required": true,
+      "description": "Nhánh chính của nhóm Việc làm."
+    },
+    {
+      "name": "operation_key",
+      "required": true,
+      "description": "Thao tác cụ thể ánh xạ trực tiếp tới thủ tục cuối cùng."
+    },
+    {
+      "name": "operation_group",
+      "required": false,
+      "description": "Nhóm thao tác để gom các thủ tục gần nhau cho UI và parser."
+    }
+  ],
+  "subdomain_catalog": [
+    {
+      "subdomain_key": "ho_tro_tu_van_gioi_thieu_viec_lam",
+      "subdomain_label": "Hỗ trợ, tư vấn giới thiệu việc làm",
+      "event_id": 260,
+      "summary": "Nhóm thủ tục hỗ trợ tư vấn, giới thiệu việc làm và hỗ trợ đi làm trong, ngoài tỉnh hoặc đi làm việc ở nước ngoài."
+    }
+  ],
+  "decision_tree": {
+    "start_node": "employment_subdomain",
+    "nodes": [
+      {
+        "id": "employment_subdomain",
+        "type": "question",
+        "slot": "subdomain_key",
+        "question": "Bạn đang hỏi về hỗ trợ việc làm, tuyển dụng, trợ cấp thất nghiệp, chứng chỉ nghề, nâng cao kỹ năng, thuế thu nhập cá nhân hay giấy phép lao động cho người nước ngoài?",
+        "options": [
+          "ho_tro_tu_van_gioi_thieu_viec_lam"
+        ],
+        "prefilled_value": "ho_tro_tu_van_gioi_thieu_viec_lam"
+      },
+      {
+        "id": "employment_operation",
+        "type": "question",
+        "slot": "operation_key",
+        "question": "Bạn cần làm thao tác nào cụ thể trong nhánh đã chọn?",
+        "options_by_subdomain": {
+          "ho_tro_tu_van_gioi_thieu_viec_lam": [
+            {
+              "operation_key": "ho_tro_tien_ve_xe_cho_nguoi_lao_dong",
+              "operation_group": "ho_tro_chi_phi_di_lai",
+              "procedure_code": "1.012474",
+              "procedure_title": "Hỗ trợ tiền vé xe cho người lao động"
+            },
+            {
+              "operation_key": "ho_tro_tu_van_gioi_thieu_viec_lam_cap_tinh",
+              "operation_group": "tu_van_gioi_thieu_viec_lam",
+              "procedure_code": "1.014746",
+              "procedure_title": "Hỗ trợ tư vấn, giới thiệu việc làm (Cấp tỉnh)"
+            },
+            {
+              "operation_key": "ho_tro_nguoi_lao_dong_di_lam_viec_ngoai_tinh_cap_xa",
+              "operation_group": "ho_tro_di_lam_viec_ngoai_tinh",
+              "procedure_code": "2.002681",
+              "procedure_title": "Hỗ trợ người lao động đi làm việc ngoài tỉnh (cấp xã)"
+            },
+            {
+              "operation_key": "ho_tro_nguoi_lao_dong_di_lam_viec_o_nuoc_ngoai_tai_trung_quoc_va_han_quoc_theo_thoa_thuan_dia_phuong",
+              "operation_group": "ho_tro_di_lam_viec_o_nuoc_ngoai",
+              "procedure_code": "2.002682",
+              "procedure_title": "Hỗ trợ người lao động đi làm việc ở nước ngoài (tại Trung Quốc và Hàn Quốc theo Thỏa thuận địa phương)"
+            }
+          ]
+        },
+        "options": [
+          "ho_tro_tien_ve_xe_cho_nguoi_lao_dong",
+          "ho_tro_tu_van_gioi_thieu_viec_lam_cap_tinh",
+          "ho_tro_nguoi_lao_dong_di_lam_viec_ngoai_tinh_cap_xa",
+          "ho_tro_nguoi_lao_dong_di_lam_viec_o_nuoc_ngoai_tai_trung_quoc_va_han_quoc_theo_thoa_thuan_dia_phuong"
+        ]
+      }
+    ],
+    "routes": [
+      {
+        "route_id": "ho_tro_tu_van_gioi_thieu_viec_lam-1_012474",
+        "conditions": {
+          "subdomain_key": "ho_tro_tu_van_gioi_thieu_viec_lam",
+          "operation_key": "ho_tro_tien_ve_xe_cho_nguoi_lao_dong"
+        },
+        "procedure_code": "1.012474",
+        "procedure_name": "Hỗ trợ tiền vé xe cho người lao động",
+        "why_this_route": "Route trực tiếp cho nhu cầu 'Hỗ trợ tiền vé xe cho người lao động' trong nhánh 'Hỗ trợ, tư vấn giới thiệu việc làm'."
+      },
+      {
+        "route_id": "ho_tro_tu_van_gioi_thieu_viec_lam-1_014746",
+        "conditions": {
+          "subdomain_key": "ho_tro_tu_van_gioi_thieu_viec_lam",
+          "operation_key": "ho_tro_tu_van_gioi_thieu_viec_lam_cap_tinh"
+        },
+        "procedure_code": "1.014746",
+        "procedure_name": "Hỗ trợ tư vấn, giới thiệu việc làm (Cấp tỉnh)",
+        "why_this_route": "Route trực tiếp cho nhu cầu 'Hỗ trợ tư vấn, giới thiệu việc làm (Cấp tỉnh)' trong nhánh 'Hỗ trợ, tư vấn giới thiệu việc làm'."
+      },
+      {
+        "route_id": "ho_tro_tu_van_gioi_thieu_viec_lam-2_002681",
+        "conditions": {
+          "subdomain_key": "ho_tro_tu_van_gioi_thieu_viec_lam",
+          "operation_key": "ho_tro_nguoi_lao_dong_di_lam_viec_ngoai_tinh_cap_xa"
+        },
+        "procedure_code": "2.002681",
+        "procedure_name": "Hỗ trợ người lao động đi làm việc ngoài tỉnh (cấp xã)",
+        "why_this_route": "Route trực tiếp cho nhu cầu 'Hỗ trợ người lao động đi làm việc ngoài tỉnh (cấp xã)' trong nhánh 'Hỗ trợ, tư vấn giới thiệu việc làm'."
+      },
+      {
+        "route_id": "ho_tro_tu_van_gioi_thieu_viec_lam-2_002682",
+        "conditions": {
+          "subdomain_key": "ho_tro_tu_van_gioi_thieu_viec_lam",
+          "operation_key": "ho_tro_nguoi_lao_dong_di_lam_viec_o_nuoc_ngoai_tai_trung_quoc_va_han_quoc_theo_thoa_thuan_dia_phuong"
+        },
+        "procedure_code": "2.002682",
+        "procedure_name": "Hỗ trợ người lao động đi làm việc ở nước ngoài (tại Trung Quốc và Hàn Quốc theo Thỏa thuận địa phương)",
+        "why_this_route": "Route trực tiếp cho nhu cầu 'Hỗ trợ người lao động đi làm việc ở nước ngoài (tại Trung Quốc và Hàn Quốc theo Thỏa thuận địa phương)' trong nhánh 'Hỗ trợ, tư vấn giới thiệu việc làm'."
+      }
+    ]
+  },
+  "pre_submission_checks": [
+    {
+      "field_group": "employment_support",
+      "checks": [
+        "Nhóm hỗ trợ việc làm và tuyển dụng phải làm rõ người dùng đang tìm việc, cập nhật tình trạng lao động hay xin hỗ trợ chi phí/liên kết việc làm.",
+        "Nếu là đăng ký hoặc điều chỉnh lao động, cần xác định rõ trạng thái hiện tại: có việc làm, thất nghiệp hay không tham gia hoạt động kinh tế."
+      ]
+    },
+    {
+      "field_group": "unemployment_and_skills",
+      "checks": [
+        "Nhóm thất nghiệp phải phân biệt rõ nộp hồ sơ hưởng mới, thông báo tìm việc hằng tháng, tiếp tục hưởng, tạm dừng, chấm dứt hay chuyển nơi hưởng.",
+        "Nhóm chứng chỉ và nâng cao kỹ năng phải làm rõ đây là cấp chứng chỉ, cấp lại hay xin hỗ trợ đào tạo/nâng cao kỹ năng nghề."
+      ]
+    },
+    {
+      "field_group": "tax_and_foreign_work",
+      "checks": [
+        "Nhóm thuế chỉ áp dụng cho khai thuế thu nhập cá nhân trực tiếp từ tiền lương, tiền công trong bộ workflow sạch này.",
+        "Nhóm giấy phép lao động cho người nước ngoài phải làm rõ là cấp mới, cấp lại, gia hạn hay xác nhận miễn giấy phép lao động."
+      ]
+    }
+  ],
+  "subdomain_key": "ho_tro_tu_van_gioi_thieu_viec_lam"
+}

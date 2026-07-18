@@ -1,0 +1,238 @@
+{
+  "schema_version": "1.0",
+  "normalizer_version": "0.2.0",
+  "source": {
+    "procedure_code": "2.000200",
+    "title": "Cấp thẻ căn cước cho người từ đủ 14 tuổi trở lên (thực hiện tại cấp tỉnh)",
+    "raw_structured_parser_version": "0.1.0",
+    "field": "Cấp, quản lý căn cước"
+  },
+  "procedure": {
+    "level": null,
+    "procedure_type": null,
+    "target_users": [],
+    "authorities": [
+      "Phòng cảnh sát quản lý hành chính về trật tự xã hội"
+    ],
+    "receiving_places": []
+  },
+  "submission": {
+    "channels": [
+      "in_person",
+      "online"
+    ],
+    "methods": [
+      {
+        "method_id": "method_1",
+        "channel": "in_person",
+        "processing_time_text": "07 Ngày làm việc",
+        "fee_text": null,
+        "description": "Lệ phí: ĐồngXem chi tiết - Trực tiếp tại địa điểm tiếp dân cơ quan quản lý căn cước của Công an cấp tỉnh (Phòng Cảnh sát Quản lý hành chính về trật tự xã hội, Công an các tỉnh, thành phố trực thuộc Trung ương) hoặc Trung tâm phục vụ hành chính công tỉnh, thành phố trực thuộc Trung ương (nếu đã triển khai) đề nghị cấp thẻ căn cước. - Thời gian tiếp nhận hồ sơ: Giờ hành chính các ngày làm việc từ thứ 2 đến thứ 6 hàng tuần (trừ các ngày nghỉ lễ, tết theo quy định của pháp luật)",
+        "is_online": false,
+        "is_postal": false,
+        "is_in_person": true
+      },
+      {
+        "method_id": "method_2",
+        "channel": "online",
+        "processing_time_text": "07 Ngày làm việc",
+        "fee_text": null,
+        "description": "Lệ phí: ĐồngXem chi tiết - Thông qua Cổng dịch vụ công quốc gia, Cổng dịch vụ công Bộ Công an, Ứng dụng định danh quốc gia để đăng ký thời gian, địa điểm làm thủ tục đề nghị cấp thẻ căn cước. - Thời gian tiếp nhận hồ sơ: Giờ hành chính các ngày làm việc từ thứ 2 đến thứ 6 hàng tuần (trừ các ngày nghỉ lễ, tết theo quy định của pháp luật)",
+        "is_online": true,
+        "is_postal": false,
+        "is_in_person": false
+      }
+    ],
+    "timing_summary": {
+      "unique_processing_times": [
+        "07 Ngày làm việc"
+      ],
+      "method_count": 2
+    }
+  },
+  "documents": {
+    "required": [
+      {
+        "document_id": "phi_u_c_t_o_l_p_khi_tr_ch_xu_t_th_ng_tin_c_a_c_ng_d_n_trong_c_s_t_n_gi_y_t_m_u_n",
+        "name": "Phiếu được tạo lập khi trích xuất thông tin của công dân trong Cơ sở... Tên giấy tờ Mẫu đơn,",
+        "group_name": "default",
+        "group_type": "required",
+        "original_count": "1",
+        "copy_count": "0",
+        "conditions": [],
+        "attachment_label": "TT-BCA của Bộ Công an) Mẫu CC01 Phiếu thu nhận thông tin căn cước.doc",
+        "attachment_path": "tờ khai Số lượng Phiếu thu nhận thông tin căn cước (Mẫu CC01 ban hành kèm theo Thông tư số 17/2024/TT-BCA của Bộ Công an) Mẫu CC01 Phiếu thu nhận thông tin căn cước.doc"
+      },
+      {
+        "document_id": "gi_y_t_ph_p_l_ch_a_th_ng_tin_c_ng_d_n",
+        "name": "Giấy tờ pháp lý chứa thông tin công dân",
+        "group_name": "default",
+        "group_type": "required",
+        "original_count": "1",
+        "copy_count": "0",
+        "conditions": [],
+        "attachment_label": null,
+        "attachment_path": null
+      },
+      {
+        "document_id": "phi_u_ngh_gi_i_quy_t_th_t_c_v_c_n_c_c_m_u_dc02_ban_h_nh_k_m_t_n_gi_y_t_m_u_n",
+        "name": "Phiếu đề nghị giải quyết thủ tục về căn cước (Mẫu DC02 ban hành kèm... Tên giấy tờ Mẫu đơn,",
+        "group_name": "default",
+        "group_type": "required",
+        "original_count": "1",
+        "copy_count": "0",
+        "conditions": [],
+        "attachment_label": "TT-BCA của Bộ Công an) Mẫu DC02 Phiếu đề nghị giải quyết thủ tục về căn cước.doc",
+        "attachment_path": "tờ khai Số lượng Phiếu đề nghị giải quyết thủ tục về căn cước (Mẫu DC02 ban hành kèm theo Thông tư số 17/2024/TT-BCA của Bộ Công an) Mẫu DC02 Phiếu đề nghị giải quyết thủ tục về căn cước.doc"
+      }
+    ],
+    "conditional": [
+      {
+        "document_id": "tr_ng_h_p_c_ng_d_n_ch_a_c_th_ng_tin_trong_c_s_d_li_u_qu_c_gia_v_t_n_gi_y_t_m_u_n",
+        "name": "Trường hợp công dân chưa có thông tin trong cơ sở dữ liệu quốc gia về... Tên giấy tờ Mẫu đơn,",
+        "group_name": "default",
+        "group_type": "required",
+        "original_count": "1",
+        "copy_count": "0",
+        "conditions": [
+          "Trường hợp công dân chưa có thông tin trong cơ sở dữ liệu quốc gia về... Tên giấy tờ Mẫu đơn,"
+        ],
+        "attachment_label": "2024 của Bộ Công an) Mẫu DC01 Phiếu thu thập thông tin dân cư.docx",
+        "attachment_path": "tờ khai Số lượng Phiếu thu thập thông tin dân cư (mẫu DC01 ban hành kèm theo Thông tư số 17/2024/TT-BCA ngày 15/5/2024 của Bộ Công an) Mẫu DC01 Phiếu thu thập thông tin dân cư.docx"
+      }
+    ],
+    "presented": [],
+    "notes": [],
+    "forms": [
+      {
+        "name": "Phiếu được tạo lập khi trích xuất thông tin của công dân trong Cơ sở... Tên giấy tờ Mẫu đơn,",
+        "attachment_label": "TT-BCA của Bộ Công an) Mẫu CC01 Phiếu thu nhận thông tin căn cước.doc",
+        "attachment_path": "tờ khai Số lượng Phiếu thu nhận thông tin căn cước (Mẫu CC01 ban hành kèm theo Thông tư số 17/2024/TT-BCA của Bộ Công an) Mẫu CC01 Phiếu thu nhận thông tin căn cước.doc"
+      },
+      {
+        "name": "Trường hợp công dân chưa có thông tin trong cơ sở dữ liệu quốc gia về... Tên giấy tờ Mẫu đơn,",
+        "attachment_label": "2024 của Bộ Công an) Mẫu DC01 Phiếu thu thập thông tin dân cư.docx",
+        "attachment_path": "tờ khai Số lượng Phiếu thu thập thông tin dân cư (mẫu DC01 ban hành kèm theo Thông tư số 17/2024/TT-BCA ngày 15/5/2024 của Bộ Công an) Mẫu DC01 Phiếu thu thập thông tin dân cư.docx"
+      },
+      {
+        "name": "Phiếu đề nghị giải quyết thủ tục về căn cước (Mẫu DC02 ban hành kèm... Tên giấy tờ Mẫu đơn,",
+        "attachment_label": "TT-BCA của Bộ Công an) Mẫu DC02 Phiếu đề nghị giải quyết thủ tục về căn cước.doc",
+        "attachment_path": "tờ khai Số lượng Phiếu đề nghị giải quyết thủ tục về căn cước (Mẫu DC02 ban hành kèm theo Thông tư số 17/2024/TT-BCA của Bộ Công an) Mẫu DC02 Phiếu đề nghị giải quyết thủ tục về căn cước.doc"
+      }
+    ],
+    "empty_groups": [],
+    "document_count": 4
+  },
+  "process": {
+    "steps": [
+      {
+        "step_id": "step_1",
+        "title": null,
+        "content": "-",
+        "actor": "user",
+        "channel_hint": null,
+        "time_hint": null
+      },
+      {
+        "step_id": "step_2",
+        "title": "Bước 1:",
+        "content": "Bước 1: + Công dân đến địa điểm làm thủ tục cấp thẻ căn cước tại cơ quan quản lý căn cước của Công an cấp tỉnh (Phòng Cảnh sát Quản lý hành chính về trật tự xã hội, Công an các tỉnh, thành phố trực thuộc Trung ương) hoặc Trung tâm phục vụ hành chính công tỉnh, thành phố trực thuộc Trung ương (nếu đã triển khai) đề nghị cấp thẻ căn cước. + Công dân thông qua Cổng dịch vụ công quốc gia, Cổng dịch vụ công Bộ Công an, ứng dụng định danh quốc gia lựa chọn thủ tục cấp thẻ căn cước, kiểm tra thông tin của mình được khai thác trong Cơ sở dữ liệu quốc gia về dân cư. Trường hợp thông tin chính xác thì đăng ký thời gian, địa điểm thực hiện thủ tục tại cơ quản quản lý căn cước của Công an cấp tỉnh. Hệ thống sẽ xác nhận và tự động chuyển đề nghị của công dân đến cơ quan quản lý căn cước nơi công dân đề nghị cấp thẻ căn cước; -",
+        "actor": "authority",
+        "channel_hint": null,
+        "time_hint": null
+      },
+      {
+        "step_id": "step_3",
+        "title": "Bước 2:",
+        "content": "Bước 2: Công dân cung cấp thông tin gồm họ, chữ đệm và tên khai sinh, số định danh cá nhân, nơi cư trú để người tiếp nhận kiểm tra đối chiếu thông tin trong Cơ sở dữ liệu quốc gia về dân cư; -",
+        "actor": "user",
+        "channel_hint": null,
+        "time_hint": null
+      },
+      {
+        "step_id": "step_4",
+        "title": "Bước 3:",
+        "content": "Bước 3: Cán bộ thu nhận thông tin công dân tìm kiếm thông tin trong Cơ sở dữ liệu quốc gia về dân cư để lập hồ sơ cấp thẻ căn cước.. + Trường hợp thông tin công dân chưa có trong Cơ sở dữ liệu quốc gia về dân cư Cán bộ thu nhận đề nghị công dân xuất trình một trong các loại giấy tờ pháp lý chứng minh nội dung thông tin nhân thân và hướng dẫn thu thập, cập nhật thông tin vào Cơ sở dữ liệu quốc gia về dân cư trước khi thực hiện thủ tục cấp thẻ căn cước. + Trường hợp thông tin công dân có sự thay đổi, điều chỉnh thì Cán bộ thu nhận hướng dẫn công dân thực hiện thủ tục điều chỉnh thông tin trong Cơ sở dữ liệu quốc gia về dân cư trước khi thực hiện thủ tục cấp thẻ căn cước. + Trường hợp thông tin công dân đầy đủ, chính xác thì sử dụng thông tin của công dân trong cơ sở dữ liệu quốc gia về dân cư để lập hồ sơ cấp thẻ căn cước. + Trường hợp công dân không đủ điều kiện cấp thẻ căn cước thì từ chối tiếp nhận và nêu rõ lý do, thông báo về việc từ chối giải quyết thủ tục về căn cước (Mẫu CC03 ban hành kèm theo Thông tư số 17/2024/TT-BCA của Bộ Công an). -",
+        "actor": "authority",
+        "channel_hint": null,
+        "time_hint": null
+      },
+      {
+        "step_id": "step_5",
+        "title": "Bước 4:",
+        "content": "Bước 4: Tiến hành thu nhận vân tay, chụp ảnh khuôn mặt và thu nhận ảnh mống mắt của công dân. -",
+        "actor": "user",
+        "channel_hint": null,
+        "time_hint": null
+      },
+      {
+        "step_id": "step_6",
+        "title": "Bước 5:",
+        "content": "Bước 5: In Phiếu thu nhận thông tin căn cước, Phiếu thu thập thông tin dân cư (nếu có) chuyển cho công dân kiểm tra, ký xác nhận. -",
+        "actor": "user",
+        "channel_hint": null,
+        "time_hint": null
+      },
+      {
+        "step_id": "step_7",
+        "title": "Bước 6:",
+        "content": "Bước 6: Thu thẻ Căn cước công dân (nếu có), thu lệ phí (nếu có) và cấp giấy hẹn Trả kết quả giải quyết thủ tục về căn cước (mẫu CC02 ban hành kèm theo Thông tư số 17/2024/TT-BCA ngày 15/5/2024 của Bộ trưởng Bộ Công an).",
+        "actor": "user",
+        "channel_hint": null,
+        "time_hint": null
+      },
+      {
+        "step_id": "step_8",
+        "title": "Bước 7:",
+        "content": "Bước 7: Nhận kết quả trực tiếp tại cơ quan quản lý căn cước Công an cấp tỉnh hoặc trả qua dịch vụ bưu chính đến địa chỉ theo yêu cầu.",
+        "actor": "authority",
+        "channel_hint": "dịch vụ bưu chính",
+        "time_hint": null
+      }
+    ],
+    "step_count": 8,
+    "notes": []
+  },
+  "eligibility": {
+    "conditions": [
+      "Không"
+    ],
+    "has_conditions": true
+  },
+  "results": {
+    "items": [],
+    "primary_result": null
+  },
+  "legal_basis": {
+    "items": [],
+    "count": 0
+  },
+  "attachments": [
+    {
+      "label": "TT-BCA của Bộ Công an) Mẫu CC01 Phiếu thu nhận thông tin căn cước.doc",
+      "path": "tờ khai Số lượng Phiếu thu nhận thông tin căn cước (Mẫu CC01 ban hành kèm theo Thông tư số 17/2024/TT-BCA của Bộ Công an) Mẫu CC01 Phiếu thu nhận thông tin căn cước.doc",
+      "source_section": "Thành phần hồ sơ",
+      "document_name": "Phiếu được tạo lập khi trích xuất thông tin của công dân trong Cơ sở... Tên giấy tờ Mẫu đơn,"
+    },
+    {
+      "label": "2024 của Bộ Công an) Mẫu DC01 Phiếu thu thập thông tin dân cư.docx",
+      "path": "tờ khai Số lượng Phiếu thu thập thông tin dân cư (mẫu DC01 ban hành kèm theo Thông tư số 17/2024/TT-BCA ngày 15/5/2024 của Bộ Công an) Mẫu DC01 Phiếu thu thập thông tin dân cư.docx",
+      "source_section": "Thành phần hồ sơ",
+      "document_name": "Trường hợp công dân chưa có thông tin trong cơ sở dữ liệu quốc gia về... Tên giấy tờ Mẫu đơn,"
+    },
+    {
+      "label": "TT-BCA của Bộ Công an) Mẫu DC02 Phiếu đề nghị giải quyết thủ tục về căn cước.doc",
+      "path": "tờ khai Số lượng Phiếu đề nghị giải quyết thủ tục về căn cước (Mẫu DC02 ban hành kèm theo Thông tư số 17/2024/TT-BCA của Bộ Công an) Mẫu DC02 Phiếu đề nghị giải quyết thủ tục về căn cước.doc",
+      "source_section": "Thành phần hồ sơ",
+      "document_name": "Phiếu đề nghị giải quyết thủ tục về căn cước (Mẫu DC02 ban hành kèm... Tên giấy tờ Mẫu đơn,"
+    }
+  ],
+  "signals": {
+    "raw_parse_warnings": [],
+    "missing_documents": false,
+    "documents_section_present": true,
+    "documents_declared_empty": false,
+    "documents_only_in_notes": false,
+    "missing_results": true
+  }
+}

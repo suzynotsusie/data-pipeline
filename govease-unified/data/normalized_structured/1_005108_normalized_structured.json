@@ -1,0 +1,120 @@
+{
+  "schema_version": "1.0",
+  "normalizer_version": "0.2.0",
+  "source": {
+    "procedure_code": "1.005108",
+    "title": "Thuyên chuyển đối tượng học bổ túc trung học cơ sở",
+    "raw_structured_parser_version": "0.1.0",
+    "field": null
+  },
+  "procedure": {
+    "level": null,
+    "procedure_type": null,
+    "target_users": [],
+    "authorities": [
+      "Trung tâm Giáo dục thường xuyên"
+    ],
+    "receiving_places": []
+  },
+  "submission": {
+    "channels": [
+      "in_person",
+      "postal"
+    ],
+    "methods": [
+      {
+        "method_id": "method_1",
+        "channel": "in_person",
+        "processing_time_text": null,
+        "fee_text": null,
+        "description": "không quy định Không quy định",
+        "is_online": false,
+        "is_postal": false,
+        "is_in_person": true
+      },
+      {
+        "method_id": "method_2",
+        "channel": "postal",
+        "processing_time_text": null,
+        "fee_text": null,
+        "description": "không quy định Không quy định",
+        "is_online": false,
+        "is_postal": true,
+        "is_in_person": false
+      }
+    ],
+    "timing_summary": {
+      "unique_processing_times": [],
+      "method_count": 2
+    }
+  },
+  "documents": {
+    "required": [
+      {
+        "document_id": "n_xin_chuy_n_tr_ng",
+        "name": "Đơn xin chuyển trường.",
+        "group_name": "default",
+        "group_type": "required",
+        "original_count": "1",
+        "copy_count": "0",
+        "conditions": [],
+        "attachment_label": null,
+        "attachment_path": null
+      },
+      {
+        "document_id": "v_n_b_n_ng_c_a_tr_ng_n_i_xin_chuy_n_n",
+        "name": "Văn bản đồng ý của trường nơi xin chuyển đến.",
+        "group_name": "default",
+        "group_type": "required",
+        "original_count": "1",
+        "copy_count": "0",
+        "conditions": [],
+        "attachment_label": null,
+        "attachment_path": null
+      }
+    ],
+    "conditional": [],
+    "presented": [],
+    "notes": [],
+    "forms": [],
+    "empty_groups": [],
+    "document_count": 2
+  },
+  "process": {
+    "steps": [
+      {
+        "step_id": "step_1",
+        "title": null,
+        "content": "- Đối tượng học bổ túc THCS muốn chuyển trường cần có đơn xin chuyển trường. - Được phép chuyển trường khi nơi xin chuyển đến đồng ý tiếp nhận.",
+        "actor": "user",
+        "channel_hint": null,
+        "time_hint": null
+      }
+    ],
+    "step_count": 1,
+    "notes": []
+  },
+  "eligibility": {
+    "conditions": [
+      "Không yêu cầu"
+    ],
+    "has_conditions": true
+  },
+  "results": {
+    "items": [],
+    "primary_result": null
+  },
+  "legal_basis": {
+    "items": [],
+    "count": 0
+  },
+  "attachments": [],
+  "signals": {
+    "raw_parse_warnings": [],
+    "missing_documents": false,
+    "documents_section_present": true,
+    "documents_declared_empty": false,
+    "documents_only_in_notes": false,
+    "missing_results": true
+  }
+}

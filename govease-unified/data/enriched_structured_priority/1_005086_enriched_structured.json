@@ -1,0 +1,127 @@
+{
+  "schema_version": "1.0",
+  "enricher_version": "0.2.0",
+  "source": {
+    "procedure_code": "1.005086",
+    "title": "Tuyển sinh công dân Việt Nam ra nước ngoài học tập bằng học bổng ngân sách nhà nước",
+    "group_key": "hoc_tap",
+    "workflow_family": "education_study_workflow",
+    "subflow": "hoc_tap_o_nuoc_ngoai_bang_ngan_sach"
+  },
+  "experience": {
+    "entry_label": "Hỗ trợ giáo dục và học tập",
+    "overview_summary": "Thủ tục này thuộc nhóm giáo dục và học tập, thường liên quan đến hồ sơ đào tạo, văn bằng hoặc điều kiện học tập của người học. Kết quả thường nhận được là kết quả giải quyết theo thủ tục này. Thời gian xử lý tham khảo: 60 Ngày làm việc.",
+    "next_step_summary": "Nên rà trước thông tin người học, cơ sở đào tạo và loại kết quả cần xin xác nhận hoặc cấp lại. Có thể chọn kênh nộp phù hợp: Trực tiếp, Trực tuyến, Dịch vụ bưu chính. Hiện có khoảng 6 mục giấy tờ cần theo dõi trong checklist.",
+    "tone": "supportive_public_service"
+  },
+  "guidance": {
+    "highlight_documents": [
+      {
+        "bucket": "required",
+        "name": "Bản sao có chứng thực văn bằng, chứng chỉ chuyên môn, ngoại ngữ đáp ứng quy định của chương trình học bổng",
+        "conditions": [],
+        "attachment_path": null
+      },
+      {
+        "bucket": "required",
+        "name": "Giấy khám sức khỏe của cơ sở y tế cấp tỉnh, thành phố trực thuộc trung ương xác nhận đủ điều kiện đi học nước ngoài",
+        "conditions": [],
+        "attachment_path": null
+      },
+      {
+        "bucket": "conditional",
+        "name": "Công văn của cơ quan quản lý trực tiếp cử dự tuyển (đối với trường hợp có cơ quan công tác)",
+        "conditions": [
+          "Công văn của cơ quan quản lý trực tiếp cử dự tuyển (đối với trường hợp có cơ quan công tác)"
+        ],
+        "attachment_path": null
+      },
+      {
+        "bucket": "conditional",
+        "name": "Cam kết thực hiện trách nhiệm của người được cử đi dự tuyển theo yêu cầu của cơ quan quản lý trực tiếp (đối với trường hợp có cơ quan công tác)",
+        "conditions": [
+          "Cam kết thực hiện trách nhiệm của người được cử đi dự tuyển theo yêu cầu của cơ quan quản lý trực tiếp (đối với trường hợp có cơ quan công tác)"
+        ],
+        "attachment_path": null
+      },
+      {
+        "bucket": "conditional",
+        "name": "Sơ yếu lý lịch có dán ảnh và xác nhận của cơ quan quản lý trực tiếp (đối với trường hợp có cơ quan công tác) hoặc xác nhận của chính quyền địa phương nơi cư trú (đối với trường hợp không có cơ quan công tác)",
+        "conditions": [
+          "Sơ yếu lý lịch có dán ảnh và xác nhận của cơ quan quản lý trực tiếp (đối với trường hợp có cơ quan công tác) hoặc xác nhận của chính quyền địa phương nơi cư trú (đối với trường hợp không có cơ quan công tác)"
+        ],
+        "attachment_path": null
+      },
+      {
+        "bucket": "conditional",
+        "name": "Các giấy tờ khác (nếu có) theo yêu cầu của chương trình học bổng và Bộ Giáo dục và Đào tạo",
+        "conditions": [
+          "Các giấy tờ khác (nếu có) theo yêu cầu của chương trình học bổng và Bộ Giáo dục và Đào tạo"
+        ],
+        "attachment_path": null
+      }
+    ],
+    "special_cases": [
+      "Có yếu tố nước ngoài",
+      "Có kiểm tra dữ liệu cư trú/định danh",
+      "Có thể cần xác minh hồ sơ học tập hoặc văn bằng"
+    ],
+    "common_errors": [
+      "Thiếu giấy tờ hợp pháp hóa hoặc giấy tờ nhân thân của phía nước ngoài.",
+      "Thiếu minh chứng học tập, văn bằng hoặc xác nhận từ cơ sở đào tạo."
+    ],
+    "validation_hints": [
+      "Nên xác định trước kênh nộp hồ sơ để biết có cần bản giấy, bản điện tử hay xuất trình trực tiếp.",
+      "Nên rà lại thông tin người học, cơ sở đào tạo và loại xác nhận hoặc văn bằng cần xin."
+    ]
+  },
+  "intake": {
+    "candidate_input_fields": [
+      {
+        "field_id": "learner_full_name",
+        "label": "Tên người học",
+        "field_type": "text",
+        "required": true
+      },
+      {
+        "field_id": "education_record_type",
+        "label": "Loại hồ sơ học tập cần xử lý",
+        "field_type": "text",
+        "required": true
+      },
+      {
+        "field_id": "education_institution",
+        "label": "Cơ sở đào tạo liên quan",
+        "field_type": "text",
+        "required": false
+      },
+      {
+        "field_id": "submission_channel_preference",
+        "label": "Kênh nộp dự kiến",
+        "field_type": "enum",
+        "required": false
+      },
+      {
+        "field_id": "certificate_or_degree_type",
+        "label": "Loại văn bằng/chứng chỉ",
+        "field_type": "text",
+        "required": false
+      }
+    ],
+    "suggested_clarifying_questions": [
+      "Bạn đang cần xử lý hồ sơ học tập, văn bằng hay xác nhận nào?",
+      "Người học và cơ sở đào tạo liên quan đã xác định rõ chưa?"
+    ]
+  },
+  "ui_hints": {
+    "primary_channel": "in_person",
+    "result_label": null,
+    "time_badge": "60 Ngày làm việc",
+    "document_count_badge": 6
+  },
+  "provenance": {
+    "generator": "workflow_domain_enricher",
+    "derivation_mode": "rule_based_semantic_enrichment",
+    "supported_group": true
+  }
+}

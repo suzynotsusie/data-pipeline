@@ -1,0 +1,110 @@
+{
+  "schema_version": "1.0",
+  "enricher_version": "0.2.0",
+  "source": {
+    "procedure_code": "2.000424",
+    "title": "Thủ tục thực hiện hỗ trợ khi hòa giải viên gặp tai nạn hoặc rủi ro ảnh hưởng đến sức khỏe, tính mạng trong khi thực hiện hoạt động hòa giải",
+    "group_key": "suc_khoe_y_te",
+    "workflow_family": null,
+    "subflow": null
+  },
+  "experience": {
+    "entry_label": "Hỗ trợ y tế và bảo hiểm",
+    "overview_summary": "Thủ tục này thuộc nhóm y tế, thường cần đối chiếu thông tin người bệnh, đơn vị tiếp nhận hoặc quyền lợi chuyên ngành. Kết quả thường nhận được là Quyết định hỗ trợ hòa giải viên gặp tai nạn hoặc rủi ro ảnh hưởng đến sức khỏe, tính mạng trong khi thực hiện hoạt động hòa giải. Thời gian xử lý tham khảo: 7 ngày làm việc.",
+    "next_step_summary": "Nên xác định rõ đối tượng tham gia, quyền lợi hoặc nhu cầu điều chỉnh hồ sơ y tế trước khi nộp. Có thể chọn kênh nộp phù hợp: Trực tiếp, Trực tuyến, Dịch vụ bưu chính. Hiện có khoảng 5 mục giấy tờ cần theo dõi trong checklist.",
+    "tone": "supportive_public_service"
+  },
+  "guidance": {
+    "highlight_documents": [
+      {
+        "bucket": "required",
+        "name": "Bản chính hoặc bản sao có chứng thực hoặc bản sao kèm theo bản chính để đối chiếu hoặc bản sao điện tử Biên bản xác nhận tình trạng của hòa giải viên bị tai nạn có xác nhận của Ủy ban nhân dân cấp xã nơi xảy ra tai nạn hoặc cơ quan công an nơi xảy ra tai nạn",
+        "conditions": [],
+        "attachment_path": null
+      },
+      {
+        "bucket": "required",
+        "name": "Bản chính hoặc bản sao có chứng thực hoặc bản sao kèm theo bản chính để đối chiếu hoặc bản sao điện tử Giấy ra viện, hóa đơn thanh toán chi phí khám bệnh, chữa bệnh",
+        "conditions": [],
+        "attachment_path": null
+      },
+      {
+        "bucket": "conditional",
+        "name": "Bản chính hoặc bản sao có chứng thực hoặc bản sao kèm theo bản chính để đối chiếu hoặc bản sao điện tử Giấy chứng tử trong trường hợp hòa giải viên bị thiệt hại về tính mạng (Việc nộp bản chính hoặc bản sao có chứng thực hoặc bản sao điện tử Giấy chứng tử chỉ thực hiện trong trường hợp cơ quan tiếp nhận không thể khai thác được thông tin trong Cơ sở dữ liệu hộ tịch điện tử hoặc thông tin khai thác được không đầy đủ, không chính xác)",
+        "conditions": [
+          "Bản chính hoặc bản sao có chứng thực hoặc bản sao kèm theo bản chính để đối chiếu hoặc bản sao điện tử Giấy chứng tử trong trường hợp hòa giải viên bị thiệt hại về tính mạng (Việc nộp bản chính hoặc bản sao có chứng thực hoặc bản sao điện tử Giấy chứng tử chỉ thực hiện trong trường hợp cơ quan tiếp nhận không thể khai thác được thông tin trong Cơ sở dữ liệu hộ tịch điện tử hoặc thông tin khai thác được không đầy đủ, không chính xác)"
+        ],
+        "attachment_path": null
+      },
+      {
+        "bucket": "conditional",
+        "name": "Bản chính hoặc bản sao có chứng thực hoặc bản sao kèm theo bản chính để đối chiếu hoặc bản sao điện tử văn bản, giấy tờ hợp lệ về thu nhập thực tế theo tiền lương, tiền công hằng tháng của người bị tai nạn có xác nhận của tổ chức hoặc cá nhân sử dụng lao động để cơ quan nhà nước có thẩm quyền xác định thu nhập thực tế bị mất hoặc giảm sút, bao gồm: Hợp đồng lao động, quyết định nâng lương của tổ chức hoặc cá nhân sử dụng lao động hoặc bản kê có thu nhập thực tế của hòa giải viên bị tai nạn và các giấy tờ chứng minh thu nhập thực tế hợp pháp khác (nếu có)",
+        "conditions": [
+          "Bản chính hoặc bản sao có chứng thực hoặc bản sao kèm theo bản chính để đối chiếu hoặc bản sao điện tử văn bản, giấy tờ hợp lệ về thu nhập thực tế theo tiền lương, tiền công hằng tháng của người bị tai nạn có xác nhận của tổ chức hoặc cá nhân sử dụng lao động để cơ quan nhà nước có thẩm quyền xác định thu nhập thực tế bị mất hoặc giảm sút, bao gồm: Hợp đồng lao động, quyết định nâng lương của tổ chức hoặc cá nhân sử dụng lao động hoặc bản kê có thu nhập thực tế của hòa giải viên bị tai nạn và các giấy tờ chứng minh thu nhập thực tế hợp pháp khác (nếu có)"
+        ],
+        "attachment_path": null
+      },
+      {
+        "bucket": "conditional",
+        "name": "Giấy đề nghị hỗ trợ của hòa giải viên hoặc gia đình hòa giải viên trong trường hợp hòa giải viên bị thiệt hại về tính mạng có xác nhận của tổ trưởng tổ hòa giải hoặc Trưởng ban công tác Mặt trận trong trường hợp hòa giải viên bị thiệt hại là tổ trưởng tổ hòa giải. Giấy đề nghị hỗ trợ phải ghi rõ họ tên, địa chỉ của người yêu cầu hỗ trợ; lý do yêu cầu hỗ trợ",
+        "conditions": [
+          "Giấy đề nghị hỗ trợ của hòa giải viên hoặc gia đình hòa giải viên trong trường hợp hòa giải viên bị thiệt hại về tính mạng có xác nhận của tổ trưởng tổ hòa giải hoặc Trưởng ban công tác Mặt trận trong trường hợp hòa giải viên bị thiệt hại là tổ trưởng tổ hòa giải. Giấy đề nghị hỗ trợ phải ghi rõ họ tên, địa chỉ của người yêu cầu hỗ trợ; lý do yêu cầu hỗ trợ"
+        ],
+        "attachment_path": null
+      }
+    ],
+    "special_cases": [
+      "Có thể cần xác minh quan hệ lao động hoặc giấy phép làm việc"
+    ],
+    "common_errors": [
+      "Thiếu hồ sơ về vị trí việc làm, đơn vị sử dụng lao động hoặc điều kiện làm việc áp dụng."
+    ],
+    "validation_hints": [
+      "Nên xác định trước kênh nộp hồ sơ để biết có cần bản giấy, bản điện tử hay xuất trình trực tiếp.",
+      "Nên xác định đúng nhóm đối tượng, mã số bảo hiểm và quyền lợi áp dụng trước khi nộp."
+    ]
+  },
+  "intake": {
+    "candidate_input_fields": [
+      {
+        "field_id": "request_subject",
+        "label": "Đối tượng làm thủ tục",
+        "field_type": "text",
+        "required": true
+      },
+      {
+        "field_id": "insurance_or_medical_need",
+        "label": "Nhu cầu bảo hiểm hoặc y tế",
+        "field_type": "text",
+        "required": true
+      },
+      {
+        "field_id": "submission_channel_preference",
+        "label": "Kênh nộp dự kiến",
+        "field_type": "enum",
+        "required": false
+      },
+      {
+        "field_id": "has_insurance_number",
+        "label": "Đã có mã BHXH/BHYT",
+        "field_type": "boolean",
+        "required": false
+      }
+    ],
+    "suggested_clarifying_questions": [
+      "Bạn đang muốn đăng ký, điều chỉnh hay xác nhận quyền lợi y tế hoặc bảo hiểm nào?",
+      "Bạn đã có mã BHXH/BHYT hoặc thông tin đơn vị tiếp nhận liên quan chưa?"
+    ]
+  },
+  "ui_hints": {
+    "primary_channel": "online",
+    "result_label": "Quyết định hỗ trợ hòa giải viên gặp tai nạn hoặc rủi ro ảnh hưởng đến sức khỏe, tính mạng trong khi thực hiện hoạt động hòa giải",
+    "time_badge": "7 ngày làm việc",
+    "document_count_badge": 5
+  },
+  "provenance": {
+    "generator": "workflow_domain_enricher",
+    "derivation_mode": "rule_based_semantic_enrichment",
+    "supported_group": true
+  }
+}

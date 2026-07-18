@@ -1,0 +1,422 @@
+{
+  "schema_version": "3.0",
+  "record_type": "public_service_procedure_payload",
+  "id": "procedure-1.003587",
+  "procedure_code": "1.003587",
+  "code": "1.003587",
+  "title": "Cấp lại Giấy chứng nhận lưu hành thuốc thú y (trong trường hợp bị sai sót; thay đổi về: tên sản phẩm; tên, địa điểm cơ sở đăng ký; tên, địa điểm cơ sở sản xuất; quy cách đóng gói của sản phẩm; hình thức nhãn thuốc; hạn sử dụng; thời gian ngừng sử dụng thuốc; chống chỉ định điều trị; liệu trình điều trị; những thay đổi nhưng không ảnh hưởng đến chất lượng, hiệu quả, độ an toàn của thuốc thú y)",
+  "language": "vi",
+  "status": "generated_from_pipeline",
+  "field": "Thú y",
+  "group_key": "suc_khoe_y_te",
+  "workflow_family": null,
+  "subflow": null,
+  "source": {
+    "source_url": "file:///C:/Users/ku060/Downloads/VAIC%20source/data-pipeline/raw_data/1_003587/1_003587_procedure_detail.md",
+    "source_markdown_path": "C:\\Users\\ku060\\Downloads\\VAIC source\\data-pipeline\\raw_data\\1_003587\\1_003587_procedure_detail.md",
+    "normalized_payload_path": "C:\\Users\\ku060\\Downloads\\VAIC source\\data-pipeline\\govease-unified\\data\\normalized_structured\\1_003587_normalized_structured.json",
+    "enriched_payload_path": "C:\\Users\\ku060\\Downloads\\VAIC source\\data-pipeline\\govease-unified\\data\\enriched_structured_priority\\1_003587_enriched_structured.json"
+  },
+  "scope": {
+    "included": "Thủ tục này thuộc nhóm y tế, thường cần đối chiếu thông tin người bệnh, đơn vị tiếp nhận hoặc quyền lợi chuyên ngành. Kết quả thường nhận được là Giấy chứng nhận lưu hành thuốc thú y sản xuất gia công, san chia. Thời gian xử lý tham khảo: 5 ngày.",
+    "not_included": []
+  },
+  "agency": {
+    "executing_agency": "Cục Chăn nuôi và Thú y - Bộ NN và MT",
+    "submission_place": null,
+    "receiving_places": []
+  },
+  "target_users": [
+    "Công dân Việt Nam",
+    "Người nước ngoài",
+    "Cán bộ",
+    "công chức",
+    "viên chức",
+    "Tổ chức (không bao gồm doanh nghiệp",
+    "HTX)",
+    "Người Việt Nam định cư ở nước ngoài"
+  ],
+  "submission_methods": [
+    {
+      "code": "ONLINE",
+      "label": "Trực tuyến",
+      "processing_time": "5 ngày",
+      "fee": null,
+      "description": "05 ngày kể từ ngày nhận được hồ sơ hợp lệ"
+    },
+    {
+      "code": "POSTAL",
+      "label": "Dịch vụ bưu chính",
+      "processing_time": "5 ngày",
+      "fee": null,
+      "description": "05 ngày kể từ ngày nhận được hồ sơ hợp lệ"
+    },
+    {
+      "code": "IN_PERSON",
+      "label": "Trực tiếp",
+      "processing_time": "5 ngày",
+      "fee": null,
+      "description": "05 ngày kể từ ngày nhận được hồ sơ hợp lệ"
+    }
+  ],
+  "processing_note": "Thời gian xử lý tham chiếu: 5 ngày. Nên xác định rõ đối tượng tham gia, quyền lợi hoặc nhu cầu điều chỉnh hồ sơ y tế trước khi nộp. Có thể chọn kênh nộp phù hợp: Trực tiếp, Trực tuyến, Dịch vụ bưu chính. Hiện có khoảng 5 mục giấy tờ cần theo dõi trong checklist.",
+  "documents": {
+    "normally_required": [
+      {
+        "name": "Mẫu nhãn cũ, mới",
+        "quantity": "1 bản chính, 0 bản sao",
+        "notes": [],
+        "group": "default",
+        "attachment_path": null
+      },
+      {
+        "name": "Đơn đề nghị cấp lại Giấy chứng nhận lưu hành thuốc thú y theo mẫu quy định tại Phụ lục IV ban hành kèm theo Thông tư số 15/2026/TT-BNNMT",
+        "quantity": "1 bản chính, 0 bản sao",
+        "notes": [],
+        "group": "default",
+        "attachment_path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/1_003587/PHU%CC%A3%20LU%CC%A3C%20IV.M%E1%BA%AAU%20%C4%90%C6%A0N%20%C4%90%E1%BB%80%20NGH%E1%BB%8A%20C%E1%BA%A4P%20L%E1%BA%A0I%20GI%E1%BA%A4Y%20CH%E1%BB%A8NG%20NH%E1%BA%ACN%20L%C6%AFU%20H%C3%80NH.docx"
+      },
+      {
+        "name": "Tài liệu chứng minh nội dung thay đổi",
+        "quantity": "1 bản chính, 0 bản sao",
+        "notes": [],
+        "group": "default",
+        "attachment_path": null
+      }
+    ],
+    "conditional": [
+      {
+        "condition": "Bản cam kết không vi phạm các qui định của luật sở hữu trí tuệ theo mẫu quy định tại Phụ lục VII ban hành kèm theo Thông tư Thông tư số 13/2016/TT-BNNPTNT đối với trường hợp thay đổi tên sản phẩm",
+        "document": "Bản cam kết không vi phạm các qui định của luật sở hữu trí tuệ theo mẫu quy định tại Phụ lục VII ban hành kèm theo Thông tư Thông tư số 13/2016/TT-BNNPTNT đối với trường hợp thay đổi tên sản phẩm",
+        "quantity": "1 bản chính, 1 bản sao",
+        "notes": [],
+        "attachment_path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/1_003587/PH%E1%BB%A4%20L%E1%BB%A4C%20VII.M%E1%BA%AAU%20GI%E1%BA%A4Y%20CAM%20K%E1%BA%BET%20%C4%90%C4%82NG%20K%C3%9D%20L%C6%AFU%20H%C3%80NH.docx"
+      },
+      {
+        "condition": "Lưu ý: - Hồ sơ đăng ký thuốc thú y sản xuất ở nước ngoài phải được viết bằng tiếng Việt hoặc tiếng Anh. Trường hợp hồ sơ viết bằng tiếng Anh, các thông tin trong tờ hướng dẫn sử dụng thuốc, tóm tắt đặc tính sản phẩm bắt buộc phải viết bằng tiếng Việt. - Hồ sơ đăng ký thuốc thú y đối với hình thức nộp hồ sơ qua dịch vụ bưu chính hoặc trực tiếp phải được soạn thảo trên khổ giấy A4, đóng chắc chắn. Hồ sơ phải có trang bìa và Mục lục, được sắp xếp theo đúng trình tự của Mục lục, có phân cách giữa các phần. Các phần phân cách phải được đánh số thứ tự để dễ tham khảo; mỗi thuốc thú y phải có hồ sơ đăng ký riêng.",
+        "document": "Lưu ý: - Hồ sơ đăng ký thuốc thú y sản xuất ở nước ngoài phải được viết bằng tiếng Việt hoặc tiếng Anh. Trường hợp hồ sơ viết bằng tiếng Anh, các thông tin trong tờ hướng dẫn sử dụng thuốc, tóm tắt đặc tính sản phẩm bắt buộc phải viết bằng tiếng Việt. - Hồ sơ đăng ký thuốc thú y đối với hình thức nộp hồ sơ qua dịch vụ bưu chính hoặc trực tiếp phải được soạn thảo trên khổ giấy A4, đóng chắc chắn. Hồ sơ phải có trang bìa và Mục lục, được sắp xếp theo đúng trình tự của Mục lục, có phân cách giữa các phần. Các phần phân cách phải được đánh số thứ tự để dễ tham khảo; mỗi thuốc thú y phải có hồ sơ đăng ký riêng.",
+        "quantity": "1 bản chính, 1 bản sao",
+        "notes": [],
+        "attachment_path": null
+      }
+    ],
+    "forms": [
+      {
+        "name": "Bản cam kết không vi phạm các qui định của luật sở hữu trí tuệ theo mẫu quy định tại Phụ lục VII ban hành kèm theo Thông tư Thông tư số 13/2016/TT-BNNPTNT đối với trường hợp thay đổi tên sản phẩm",
+        "attachment_label": "PHỤ LỤC VII.MẪU GIẤY CAM KẾT ĐĂNG KÝ LƯU HÀNH.docx",
+        "attachment_path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/1_003587/PH%E1%BB%A4%20L%E1%BB%A4C%20VII.M%E1%BA%AAU%20GI%E1%BA%A4Y%20CAM%20K%E1%BA%BET%20%C4%90%C4%82NG%20K%C3%9D%20L%C6%AFU%20H%C3%80NH.docx"
+      },
+      {
+        "name": "Đơn đề nghị cấp lại Giấy chứng nhận lưu hành thuốc thú y theo mẫu quy định tại Phụ lục IV ban hành kèm theo Thông tư số 15/2026/TT-BNNMT",
+        "attachment_label": "PHỤ LỤC IV.MẪU ĐƠN ĐỀ NGHỊ CẤP LẠI GIẤY CHỨNG NHẬN LƯU HÀNH.docx",
+        "attachment_path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/1_003587/PHU%CC%A3%20LU%CC%A3C%20IV.M%E1%BA%AAU%20%C4%90%C6%A0N%20%C4%90%E1%BB%80%20NGH%E1%BB%8A%20C%E1%BA%A4P%20L%E1%BA%A0I%20GI%E1%BA%A4Y%20CH%E1%BB%A8NG%20NH%E1%BA%ACN%20L%C6%AFU%20H%C3%80NH.docx"
+      }
+    ],
+    "presented": [],
+    "notes": [],
+    "summary": [
+      {
+        "group": "default",
+        "name": "Mẫu nhãn cũ, mới",
+        "quantity": "1 bản chính, 0 bản sao",
+        "notes": [],
+        "attachment_path": null
+      },
+      {
+        "group": "default",
+        "name": "Đơn đề nghị cấp lại Giấy chứng nhận lưu hành thuốc thú y theo mẫu quy định tại Phụ lục IV ban hành kèm theo Thông tư số 15/2026/TT-BNNMT",
+        "quantity": "1 bản chính, 0 bản sao",
+        "notes": [],
+        "attachment_path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/1_003587/PHU%CC%A3%20LU%CC%A3C%20IV.M%E1%BA%AAU%20%C4%90%C6%A0N%20%C4%90%E1%BB%80%20NGH%E1%BB%8A%20C%E1%BA%A4P%20L%E1%BA%A0I%20GI%E1%BA%A4Y%20CH%E1%BB%A8NG%20NH%E1%BA%ACN%20L%C6%AFU%20H%C3%80NH.docx"
+      },
+      {
+        "group": "default",
+        "name": "Tài liệu chứng minh nội dung thay đổi",
+        "quantity": "1 bản chính, 0 bản sao",
+        "notes": [],
+        "attachment_path": null
+      },
+      {
+        "group": null,
+        "name": null,
+        "quantity": "1 bản chính, 1 bản sao",
+        "notes": [],
+        "attachment_path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/1_003587/PH%E1%BB%A4%20L%E1%BB%A4C%20VII.M%E1%BA%AAU%20GI%E1%BA%A4Y%20CAM%20K%E1%BA%BET%20%C4%90%C4%82NG%20K%C3%9D%20L%C6%AFU%20H%C3%80NH.docx"
+      },
+      {
+        "group": null,
+        "name": null,
+        "quantity": "1 bản chính, 1 bản sao",
+        "notes": [],
+        "attachment_path": null
+      },
+      {
+        "group": null,
+        "name": "Bản cam kết không vi phạm các qui định của luật sở hữu trí tuệ theo mẫu quy định tại Phụ lục VII ban hành kèm theo Thông tư Thông tư số 13/2016/TT-BNNPTNT đối với trường hợp thay đổi tên sản phẩm",
+        "quantity": null,
+        "notes": null,
+        "attachment_path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/1_003587/PH%E1%BB%A4%20L%E1%BB%A4C%20VII.M%E1%BA%AAU%20GI%E1%BA%A4Y%20CAM%20K%E1%BA%BET%20%C4%90%C4%82NG%20K%C3%9D%20L%C6%AFU%20H%C3%80NH.docx"
+      },
+      {
+        "group": null,
+        "name": "Đơn đề nghị cấp lại Giấy chứng nhận lưu hành thuốc thú y theo mẫu quy định tại Phụ lục IV ban hành kèm theo Thông tư số 15/2026/TT-BNNMT",
+        "quantity": null,
+        "notes": null,
+        "attachment_path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/1_003587/PHU%CC%A3%20LU%CC%A3C%20IV.M%E1%BA%AAU%20%C4%90%C6%A0N%20%C4%90%E1%BB%80%20NGH%E1%BB%8A%20C%E1%BA%A4P%20L%E1%BA%A0I%20GI%E1%BA%A4Y%20CH%E1%BB%A8NG%20NH%E1%BA%ACN%20L%C6%AFU%20H%C3%80NH.docx"
+      }
+    ]
+  },
+  "steps": [
+    {
+      "order": 1,
+      "title": "Bước 1",
+      "description": "1.",
+      "example": null
+    },
+    {
+      "order": 2,
+      "title": "Bước 1:",
+      "description": "Bước 1: Gửi hồ sơ: Tổ chức, cá nhân có nhu cầu đề nghị cấp lại Giấy chứng nhận lưu hành thuốc thú y (trong trường hợp bị sai sót; thay đổi về: tên sản phẩm; tên, địa điểm cơ sở đăng ký; tên, địa điểm cơ sở sản xuất; quy cách đóng gói của sản phẩm; hình thức nhãn thuốc; hạn sử dụng; thời gian ngừng sử dụng thuốc; chống chỉ định điều trị; liệu trình điều trị; những thay đổi nhưng không ảnh hưởng đến chất lượng, hiệu quả, độ an toàn của thuốc thú",
+      "example": null
+    },
+    {
+      "order": 3,
+      "title": "y)",
+      "description": "y) chuẩn bị hồ sơ và nộp đến Cục Chăn nuôi và Thú y. Cục Chăn nuôi và Thú y tiếp nhận và kiểm tra thành phần, tính hợp lệ của hồ sơ theo quy định.",
+      "example": null
+    },
+    {
+      "order": 4,
+      "title": "Bước 2:",
+      "description": "Bước 2: Thẩm định hồ sơ, cấp Giấy lại chứng nhận lưu hành thuốc thú y Trong thời hạn 05 (năm) ngày, kể từ ngày nhận được hồ sơ hợp lệ, Cục Chăn nuôi và Thú y thẩm định hồ sơ và cấp lại Giấy chứng nhận lưu hành thuốc thú y nếu hồ sơ đạt yêu cầu; trường hợp không cấp, trả lời bằng văn bản và nêu rõ lý do.",
+      "example": null
+    }
+  ],
+  "input_fields": [
+    {
+      "field": "request_subject",
+      "label": "Đối tượng làm thủ tục",
+      "type": "string",
+      "required": true
+    },
+    {
+      "field": "insurance_or_medical_need",
+      "label": "Nhu cầu bảo hiểm hoặc y tế",
+      "type": "string",
+      "required": true
+    },
+    {
+      "field": "submission_channel_preference",
+      "label": "Kênh nộp dự kiến",
+      "type": "enum",
+      "required": false,
+      "options": [
+        "Trực tiếp",
+        "Trực tuyến",
+        "Dịch vụ bưu chính"
+      ]
+    },
+    {
+      "field": "has_insurance_number",
+      "label": "Đã có mã BHXH/BHYT",
+      "type": "boolean",
+      "required": false
+    }
+  ],
+  "validation_rules": [
+    {
+      "id": "required-1",
+      "severity": "error",
+      "field": "request_subject",
+      "rule": "Trường bắt buộc phải có dữ liệu hợp lệ trước khi nộp.",
+      "message": "Thiếu trường bắt buộc: Đối tượng làm thủ tục."
+    },
+    {
+      "id": "required-2",
+      "severity": "error",
+      "field": "insurance_or_medical_need",
+      "rule": "Trường bắt buộc phải có dữ liệu hợp lệ trước khi nộp.",
+      "message": "Thiếu trường bắt buộc: Nhu cầu bảo hiểm hoặc y tế."
+    },
+    {
+      "id": "hint-1",
+      "severity": "warning",
+      "field": "general",
+      "rule": "Nên xác định trước kênh nộp hồ sơ để biết có cần bản giấy, bản điện tử hay xuất trình trực tiếp.",
+      "message": "Nên xác định trước kênh nộp hồ sơ để biết có cần bản giấy, bản điện tử hay xuất trình trực tiếp."
+    },
+    {
+      "id": "hint-2",
+      "severity": "warning",
+      "field": "general",
+      "rule": "Có mẫu biểu đính kèm, nên kiểm tra đúng biểu mẫu trước khi nộp.",
+      "message": "Có mẫu biểu đính kèm, nên kiểm tra đúng biểu mẫu trước khi nộp."
+    },
+    {
+      "id": "hint-3",
+      "severity": "warning",
+      "field": "general",
+      "rule": "Nên xác định đúng nhóm đối tượng, mã số bảo hiểm và quyền lợi áp dụng trước khi nộp.",
+      "message": "Nên xác định đúng nhóm đối tượng, mã số bảo hiểm và quyền lợi áp dụng trước khi nộp."
+    }
+  ],
+  "common_errors": [
+    {
+      "field": "general",
+      "issue": "Thiếu giấy tờ hợp pháp hóa hoặc giấy tờ nhân thân của phía nước ngoài.",
+      "fix": "Nên xác định trước kênh nộp hồ sơ để biết có cần bản giấy, bản điện tử hay xuất trình trực tiếp."
+    },
+    {
+      "field": "general",
+      "issue": "Điền sai mẫu tờ khai hoặc chọn sai biểu mẫu đi kèm.",
+      "fix": "Nên xác định trước kênh nộp hồ sơ để biết có cần bản giấy, bản điện tử hay xuất trình trực tiếp."
+    }
+  ],
+  "clarifying_questions": [
+    {
+      "id": "clarify_1",
+      "question": "Bạn đang muốn đăng ký, điều chỉnh hay xác nhận quyền lợi y tế hoặc bảo hiểm nào?",
+      "purpose": "workflow_intake"
+    },
+    {
+      "id": "clarify_2",
+      "question": "Bạn đã có mã BHXH/BHYT hoặc thông tin đơn vị tiếp nhận liên quan chưa?",
+      "purpose": "workflow_intake"
+    }
+  ],
+  "legal_basis": [
+    {
+      "title": "Luật Thú y",
+      "code": "Luật 79/2015/QH13"
+    },
+    {
+      "title": "sửa đổi bổ sung một số điều của 15 Luật trong lĩnh vực Nông nghiệp và Môi trường",
+      "code": "Luật số 146/2025/QH15"
+    },
+    {
+      "title": "Thông tư 13/2022/TT-BNNPTNT",
+      "code": "13/2022/TT-BNNPTNT"
+    },
+    {
+      "title": "Thông tư số 22/2026/TT-BNNMT ngày 19 tháng 5 năm 2026 của Bộ trưởng Bộ Nông nghiệp và Môi trường sửa đổi, bổ sung một số thông tư liên quan phân cấp, cắt giảm, đơn giản hóa thủ tục hành chính thuộc phạm vi quản lý của bộ nông nghiệp và môi trường.",
+      "code": "22/2026/TT-BNNMT"
+    },
+    {
+      "title": "quản lý thuốc thú y",
+      "code": "Thông tư số 13/2016/TT-BNNPTNT"
+    },
+    {
+      "title": "sửa đổi, bổ sung, bãi bỏ một số điều của Thông tư số 13/2016/TT-BNNPTNT ngày 02/6/2016 của Bộ Nông nghiệp và Phát triển nông thôn về quản lý thuốc thú y",
+      "code": "Thông tư số 18/2018/TT-BNNPTNT"
+    }
+  ],
+  "legal_bases": [
+    {
+      "title": "Luật Thú y",
+      "code": "Luật 79/2015/QH13"
+    },
+    {
+      "title": "sửa đổi bổ sung một số điều của 15 Luật trong lĩnh vực Nông nghiệp và Môi trường",
+      "code": "Luật số 146/2025/QH15"
+    },
+    {
+      "title": "Thông tư 13/2022/TT-BNNPTNT",
+      "code": "13/2022/TT-BNNPTNT"
+    },
+    {
+      "title": "Thông tư số 22/2026/TT-BNNMT ngày 19 tháng 5 năm 2026 của Bộ trưởng Bộ Nông nghiệp và Môi trường sửa đổi, bổ sung một số thông tư liên quan phân cấp, cắt giảm, đơn giản hóa thủ tục hành chính thuộc phạm vi quản lý của bộ nông nghiệp và môi trường.",
+      "code": "22/2026/TT-BNNMT"
+    },
+    {
+      "title": "quản lý thuốc thú y",
+      "code": "Thông tư số 13/2016/TT-BNNPTNT"
+    },
+    {
+      "title": "sửa đổi, bổ sung, bãi bỏ một số điều của Thông tư số 13/2016/TT-BNNPTNT ngày 02/6/2016 của Bộ Nông nghiệp và Phát triển nông thôn về quản lý thuốc thú y",
+      "code": "Thông tư số 18/2018/TT-BNNPTNT"
+    }
+  ],
+  "faq": [
+    {
+      "question": "Có thể nộp qua kênh nào?",
+      "answer": "Các kênh hiện có: Trực tiếp, Trực tuyến, Dịch vụ bưu chính."
+    },
+    {
+      "question": "Thời gian xử lý tham chiếu là bao lâu?",
+      "answer": "Thời gian xử lý tham chiếu hiện có là 5 ngày."
+    },
+    {
+      "question": "Kết quả chính của thủ tục là gì?",
+      "answer": "Kết quả chính được trích xuất là Giấy chứng nhận lưu hành thuốc thú y sản xuất gia công, san chia."
+    }
+  ],
+  "guidance": {
+    "highlight_documents": [
+      {
+        "bucket": "required",
+        "name": "Mẫu nhãn cũ, mới",
+        "conditions": [],
+        "attachment_path": null
+      },
+      {
+        "bucket": "required",
+        "name": "Đơn đề nghị cấp lại Giấy chứng nhận lưu hành thuốc thú y theo mẫu quy định tại Phụ lục IV ban hành kèm theo Thông tư số 15/2026/TT-BNNMT",
+        "conditions": [],
+        "attachment_path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/1_003587/PHU%CC%A3%20LU%CC%A3C%20IV.M%E1%BA%AAU%20%C4%90%C6%A0N%20%C4%90%E1%BB%80%20NGH%E1%BB%8A%20C%E1%BA%A4P%20L%E1%BA%A0I%20GI%E1%BA%A4Y%20CH%E1%BB%A8NG%20NH%E1%BA%ACN%20L%C6%AFU%20H%C3%80NH.docx"
+      },
+      {
+        "bucket": "required",
+        "name": "Tài liệu chứng minh nội dung thay đổi",
+        "conditions": [],
+        "attachment_path": null
+      },
+      {
+        "bucket": "conditional",
+        "name": "Bản cam kết không vi phạm các qui định của luật sở hữu trí tuệ theo mẫu quy định tại Phụ lục VII ban hành kèm theo Thông tư Thông tư số 13/2016/TT-BNNPTNT đối với trường hợp thay đổi tên sản phẩm",
+        "conditions": [
+          "Bản cam kết không vi phạm các qui định của luật sở hữu trí tuệ theo mẫu quy định tại Phụ lục VII ban hành kèm theo Thông tư Thông tư số 13/2016/TT-BNNPTNT đối với trường hợp thay đổi tên sản phẩm"
+        ],
+        "attachment_path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/1_003587/PH%E1%BB%A4%20L%E1%BB%A4C%20VII.M%E1%BA%AAU%20GI%E1%BA%A4Y%20CAM%20K%E1%BA%BET%20%C4%90%C4%82NG%20K%C3%9D%20L%C6%AFU%20H%C3%80NH.docx"
+      },
+      {
+        "bucket": "conditional",
+        "name": "Lưu ý: - Hồ sơ đăng ký thuốc thú y sản xuất ở nước ngoài phải được viết bằng tiếng Việt hoặc tiếng Anh. Trường hợp hồ sơ viết bằng tiếng Anh, các thông tin trong tờ hướng dẫn sử dụng thuốc, tóm tắt đặc tính sản phẩm bắt buộc phải viết bằng tiếng Việt. - Hồ sơ đăng ký thuốc thú y đối với hình thức nộp hồ sơ qua dịch vụ bưu chính hoặc trực tiếp phải được soạn thảo trên khổ giấy A4, đóng chắc chắn. Hồ sơ phải có trang bìa và Mục lục, được sắp xếp theo đúng trình tự của Mục lục, có phân cách giữa các phần. Các phần phân cách phải được đánh số thứ tự để dễ tham khảo; mỗi thuốc thú y phải có hồ sơ đăng ký riêng.",
+        "conditions": [
+          "Lưu ý: - Hồ sơ đăng ký thuốc thú y sản xuất ở nước ngoài phải được viết bằng tiếng Việt hoặc tiếng Anh. Trường hợp hồ sơ viết bằng tiếng Anh, các thông tin trong tờ hướng dẫn sử dụng thuốc, tóm tắt đặc tính sản phẩm bắt buộc phải viết bằng tiếng Việt. - Hồ sơ đăng ký thuốc thú y đối với hình thức nộp hồ sơ qua dịch vụ bưu chính hoặc trực tiếp phải được soạn thảo trên khổ giấy A4, đóng chắc chắn. Hồ sơ phải có trang bìa và Mục lục, được sắp xếp theo đúng trình tự của Mục lục, có phân cách giữa các phần. Các phần phân cách phải được đánh số thứ tự để dễ tham khảo; mỗi thuốc thú y phải có hồ sơ đăng ký riêng."
+        ],
+        "attachment_path": null
+      }
+    ],
+    "special_cases": [
+      "Có yếu tố nước ngoài"
+    ],
+    "common_errors": [
+      "Thiếu giấy tờ hợp pháp hóa hoặc giấy tờ nhân thân của phía nước ngoài.",
+      "Điền sai mẫu tờ khai hoặc chọn sai biểu mẫu đi kèm."
+    ],
+    "validation_hints": [
+      "Nên xác định trước kênh nộp hồ sơ để biết có cần bản giấy, bản điện tử hay xuất trình trực tiếp.",
+      "Có mẫu biểu đính kèm, nên kiểm tra đúng biểu mẫu trước khi nộp.",
+      "Nên xác định đúng nhóm đối tượng, mã số bảo hiểm và quyền lợi áp dụng trước khi nộp."
+    ]
+  },
+  "next_steps": {
+    "summary": "Nên xác định rõ đối tượng tham gia, quyền lợi hoặc nhu cầu điều chỉnh hồ sơ y tế trước khi nộp. Có thể chọn kênh nộp phù hợp: Trực tiếp, Trực tuyến, Dịch vụ bưu chính. Hiện có khoảng 5 mục giấy tờ cần theo dõi trong checklist.",
+    "time_badge": "5 ngày",
+    "result_label": "Giấy chứng nhận lưu hành thuốc thú y sản xuất gia công, san chia",
+    "primary_channel": "online",
+    "channels": [
+      "in_person",
+      "online",
+      "postal"
+    ]
+  },
+  "notes": [],
+  "provenance": {
+    "pipeline": "raw->structured->normalized->enriched->ui_api_payload",
+    "normalizer_version": "0.2.0",
+    "enricher_version": "0.2.0",
+    "mapping_notes": "excluded_from_clean_workflow_dataset",
+    "supported_group": true
+  }
+}

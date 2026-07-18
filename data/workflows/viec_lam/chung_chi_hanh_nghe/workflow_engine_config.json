@@ -1,0 +1,190 @@
+{
+  "schema_version": "1.0",
+  "domain": "viec_lam",
+  "updated_at": "2026-07-18",
+  "source_files": [
+    "C:\\Users\\ku060\\Downloads\\VAIC source\\data-pipeline\\main\\full-data.csv",
+    "C:\\Users\\ku060\\Downloads\\VAIC source\\data-pipeline\\data\\workflows\\viec_lam\\summary.csv",
+    "C:\\Users\\ku060\\Downloads\\VAIC source\\data-pipeline\\data\\workflows\\viec_lam\\normalized.json",
+    "C:\\Users\\ku060\\Downloads\\VAIC source\\data-pipeline\\raw_data"
+  ],
+  "coverage": {
+    "expected_codes": [
+      "1.115477",
+      "1.115480",
+      "1.115481",
+      "1.115482"
+    ],
+    "covered_codes": [
+      "1.115477",
+      "1.115480",
+      "1.115481",
+      "1.115482"
+    ],
+    "missing_codes": []
+  },
+  "llm_contract": {
+    "role": "parse_user_answer_and_rephrase_question_only",
+    "required_output_schema": {
+      "intent": "viec_lam",
+      "current_node": "string",
+      "slot_updates": {
+        "subdomain_key": "ho_tro_tu_van_gioi_thieu_viec_lam | tuyen_dung | bao_hiem_xa_hoi_that_nghiep_tro_cap | chung_chi_hanh_nghe | nang_ngach | thue_thu_nhap_ca_nhan | cap_phep_lao_dong_nguoi_nuoc_ngoai | unknown",
+        "operation_key": "string",
+        "operation_group": "string"
+      },
+      "confidence": "0_to_1",
+      "needs_human_review": "boolean"
+    }
+  },
+  "entry_prompts": [
+    "Bạn đang cần tìm việc, nhận trợ cấp thất nghiệp, học nâng cao kỹ năng, khai thuế thu nhập hay làm giấy phép lao động?",
+    "Bạn muốn đăng ký mới, điều chỉnh thông tin, xin hỗ trợ, xin cấp chứng chỉ hay xin giấy phép làm việc?"
+  ],
+  "slots": [
+    {
+      "name": "subdomain_key",
+      "required": true,
+      "description": "Nhánh chính của nhóm Việc làm."
+    },
+    {
+      "name": "operation_key",
+      "required": true,
+      "description": "Thao tác cụ thể ánh xạ trực tiếp tới thủ tục cuối cùng."
+    },
+    {
+      "name": "operation_group",
+      "required": false,
+      "description": "Nhóm thao tác để gom các thủ tục gần nhau cho UI và parser."
+    }
+  ],
+  "subdomain_catalog": [
+    {
+      "subdomain_key": "chung_chi_hanh_nghe",
+      "subdomain_label": "Chứng chỉ hành nghề",
+      "event_id": 264,
+      "summary": "Nhóm thủ tục đánh giá, cấp và cấp lại chứng chỉ kỹ năng nghề quốc gia cho người lao động."
+    }
+  ],
+  "decision_tree": {
+    "start_node": "employment_subdomain",
+    "nodes": [
+      {
+        "id": "employment_subdomain",
+        "type": "question",
+        "slot": "subdomain_key",
+        "question": "Bạn đang hỏi về hỗ trợ việc làm, tuyển dụng, trợ cấp thất nghiệp, chứng chỉ nghề, nâng cao kỹ năng, thuế thu nhập cá nhân hay giấy phép lao động cho người nước ngoài?",
+        "options": [
+          "chung_chi_hanh_nghe"
+        ],
+        "prefilled_value": "chung_chi_hanh_nghe"
+      },
+      {
+        "id": "employment_operation",
+        "type": "question",
+        "slot": "operation_key",
+        "question": "Bạn cần làm thao tác nào cụ thể trong nhánh đã chọn?",
+        "options_by_subdomain": {
+          "chung_chi_hanh_nghe": [
+            {
+              "operation_key": "cong_nhan_thua_nhan_lan_nhau_ve_chung_chi_ky_nang_nghe_quoc_gia_giua_viet_nam_voi_cac_quoc_gia_khac_cap_trung_uong",
+              "operation_group": "cong_nhan_chung_chi_ky_nang",
+              "procedure_code": "1.115477",
+              "procedure_title": "Công nhận, thừa nhận lẫn nhau về chứng chỉ kỹ năng nghề quốc gia giữa Việt Nam với các quốc gia khác (Cấp Trung ương)"
+            },
+            {
+              "operation_key": "cap_chung_chi_ky_nang_nghe_quoc_gia_cap_tinh",
+              "operation_group": "cap_chung_chi_ky_nang",
+              "procedure_code": "1.115480",
+              "procedure_title": "Cấp chứng chỉ kỹ năng nghề quốc gia (Cấp tỉnh)"
+            },
+            {
+              "operation_key": "cap_lai_chung_chi_ky_nang_nghe_quoc_gia_cap_tinh",
+              "operation_group": "cap_lai_chung_chi_ky_nang",
+              "procedure_code": "1.115481",
+              "procedure_title": "Cấp lại chứng chỉ kỹ năng nghề quốc gia (Cấp tỉnh)"
+            },
+            {
+              "operation_key": "de_nghi_ho_tro_tham_gia_danh_gia_cap_chung_chi_ky_nang_nghe_quoc_gia_cap_tinh",
+              "operation_group": "ho_tro_danh_gia_ky_nang",
+              "procedure_code": "1.115482",
+              "procedure_title": "Đề nghị hỗ trợ tham gia đánh giá, cấp chứng chỉ kỹ năng nghề quốc gia (Cấp tỉnh)"
+            }
+          ]
+        },
+        "options": [
+          "cong_nhan_thua_nhan_lan_nhau_ve_chung_chi_ky_nang_nghe_quoc_gia_giua_viet_nam_voi_cac_quoc_gia_khac_cap_trung_uong",
+          "cap_chung_chi_ky_nang_nghe_quoc_gia_cap_tinh",
+          "cap_lai_chung_chi_ky_nang_nghe_quoc_gia_cap_tinh",
+          "de_nghi_ho_tro_tham_gia_danh_gia_cap_chung_chi_ky_nang_nghe_quoc_gia_cap_tinh"
+        ]
+      }
+    ],
+    "routes": [
+      {
+        "route_id": "chung_chi_hanh_nghe-1_115477",
+        "conditions": {
+          "subdomain_key": "chung_chi_hanh_nghe",
+          "operation_key": "cong_nhan_thua_nhan_lan_nhau_ve_chung_chi_ky_nang_nghe_quoc_gia_giua_viet_nam_voi_cac_quoc_gia_khac_cap_trung_uong"
+        },
+        "procedure_code": "1.115477",
+        "procedure_name": "Công nhận, thừa nhận lẫn nhau về chứng chỉ kỹ năng nghề quốc gia giữa Việt Nam với các quốc gia khác (Cấp Trung ương)",
+        "why_this_route": "Route trực tiếp cho nhu cầu 'Công nhận, thừa nhận lẫn nhau về chứng chỉ kỹ năng nghề quốc gia giữa Việt Nam với các quốc gia khác (Cấp Trung ương)' trong nhánh 'Chứng chỉ hành nghề'."
+      },
+      {
+        "route_id": "chung_chi_hanh_nghe-1_115480",
+        "conditions": {
+          "subdomain_key": "chung_chi_hanh_nghe",
+          "operation_key": "cap_chung_chi_ky_nang_nghe_quoc_gia_cap_tinh"
+        },
+        "procedure_code": "1.115480",
+        "procedure_name": "Cấp chứng chỉ kỹ năng nghề quốc gia (Cấp tỉnh)",
+        "why_this_route": "Route trực tiếp cho nhu cầu 'Cấp chứng chỉ kỹ năng nghề quốc gia (Cấp tỉnh)' trong nhánh 'Chứng chỉ hành nghề'."
+      },
+      {
+        "route_id": "chung_chi_hanh_nghe-1_115481",
+        "conditions": {
+          "subdomain_key": "chung_chi_hanh_nghe",
+          "operation_key": "cap_lai_chung_chi_ky_nang_nghe_quoc_gia_cap_tinh"
+        },
+        "procedure_code": "1.115481",
+        "procedure_name": "Cấp lại chứng chỉ kỹ năng nghề quốc gia (Cấp tỉnh)",
+        "why_this_route": "Route trực tiếp cho nhu cầu 'Cấp lại chứng chỉ kỹ năng nghề quốc gia (Cấp tỉnh)' trong nhánh 'Chứng chỉ hành nghề'."
+      },
+      {
+        "route_id": "chung_chi_hanh_nghe-1_115482",
+        "conditions": {
+          "subdomain_key": "chung_chi_hanh_nghe",
+          "operation_key": "de_nghi_ho_tro_tham_gia_danh_gia_cap_chung_chi_ky_nang_nghe_quoc_gia_cap_tinh"
+        },
+        "procedure_code": "1.115482",
+        "procedure_name": "Đề nghị hỗ trợ tham gia đánh giá, cấp chứng chỉ kỹ năng nghề quốc gia (Cấp tỉnh)",
+        "why_this_route": "Route trực tiếp cho nhu cầu 'Đề nghị hỗ trợ tham gia đánh giá, cấp chứng chỉ kỹ năng nghề quốc gia (Cấp tỉnh)' trong nhánh 'Chứng chỉ hành nghề'."
+      }
+    ]
+  },
+  "pre_submission_checks": [
+    {
+      "field_group": "employment_support",
+      "checks": [
+        "Nhóm hỗ trợ việc làm và tuyển dụng phải làm rõ người dùng đang tìm việc, cập nhật tình trạng lao động hay xin hỗ trợ chi phí/liên kết việc làm.",
+        "Nếu là đăng ký hoặc điều chỉnh lao động, cần xác định rõ trạng thái hiện tại: có việc làm, thất nghiệp hay không tham gia hoạt động kinh tế."
+      ]
+    },
+    {
+      "field_group": "unemployment_and_skills",
+      "checks": [
+        "Nhóm thất nghiệp phải phân biệt rõ nộp hồ sơ hưởng mới, thông báo tìm việc hằng tháng, tiếp tục hưởng, tạm dừng, chấm dứt hay chuyển nơi hưởng.",
+        "Nhóm chứng chỉ và nâng cao kỹ năng phải làm rõ đây là cấp chứng chỉ, cấp lại hay xin hỗ trợ đào tạo/nâng cao kỹ năng nghề."
+      ]
+    },
+    {
+      "field_group": "tax_and_foreign_work",
+      "checks": [
+        "Nhóm thuế chỉ áp dụng cho khai thuế thu nhập cá nhân trực tiếp từ tiền lương, tiền công trong bộ workflow sạch này.",
+        "Nhóm giấy phép lao động cho người nước ngoài phải làm rõ là cấp mới, cấp lại, gia hạn hay xác nhận miễn giấy phép lao động."
+      ]
+    }
+  ],
+  "subdomain_key": "chung_chi_hanh_nghe"
+}

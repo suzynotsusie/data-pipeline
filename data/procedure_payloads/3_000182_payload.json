@@ -1,0 +1,243 @@
+{
+  "schema_version": "3.0",
+  "record_type": "public_service_procedure_payload",
+  "id": "procedure-3.000182",
+  "procedure_code": "3.000182",
+  "code": "3.000182",
+  "title": "Tuyển sinh trung học cơ sở",
+  "language": "vi",
+  "status": "generated_from_pipeline",
+  "field": "Giáo dục trung học",
+  "group_key": "hoc_tap",
+  "workflow_family": "education_study_workflow",
+  "subflow": "tuyen_sinh",
+  "source": {
+    "source_url": "file:///C:/Users/ku060/Downloads/VAIC%20source/data-pipeline/raw_data/3_000182/3_000182_procedure_detail.md",
+    "source_markdown_path": "C:\\Users\\ku060\\Downloads\\VAIC source\\data-pipeline\\raw_data\\3_000182\\3_000182_procedure_detail.md",
+    "normalized_payload_path": "C:\\Users\\ku060\\Downloads\\VAIC source\\data-pipeline\\govease-unified\\data\\normalized_structured\\3_000182_normalized_structured.json",
+    "enriched_payload_path": "C:\\Users\\ku060\\Downloads\\VAIC source\\data-pipeline\\govease-unified\\data\\enriched_structured_priority\\3_000182_enriched_structured.json"
+  },
+  "scope": {
+    "included": "Thủ tục này thuộc nhóm giáo dục và học tập, thường liên quan đến hồ sơ đào tạo, văn bằng hoặc điều kiện học tập của người học. Kết quả thường nhận được là Học sinh được tuyển vào học lớp 6. Thời gian xử lý tham khảo: 1 ngày.",
+    "not_included": []
+  },
+  "agency": {
+    "executing_agency": "Sở Giáo dục và Đào tạo",
+    "submission_place": "Trực tuyến. Trường hợp địa phương chưa đủ điều kiện thực hiện đăng ký tuyển sinh bằng hình thức trực tuyến thì thực hiện bằng hình thức trực tiếp hoặc qua đường bưu điện theo Kế hoạch và Thông báo tuyển sinh hằng năm",
+    "receiving_places": [
+      "Trực tuyến. Trường hợp địa phương chưa đủ điều kiện thực hiện đăng ký tuyển sinh bằng hình thức trực tuyến thì thực hiện bằng hình thức trực tiếp hoặc qua đường bưu điện theo Kế hoạch và Thông báo tuyển sinh hằng năm"
+    ]
+  },
+  "target_users": [
+    "Công dân Việt Nam"
+  ],
+  "submission_methods": [
+    {
+      "code": "ONLINE",
+      "label": "Trực tuyến",
+      "processing_time": "1 ngày",
+      "fee": null,
+      "description": null
+    },
+    {
+      "code": "POSTAL",
+      "label": "Dịch vụ bưu chính",
+      "processing_time": "1 ngày",
+      "fee": null,
+      "description": null
+    },
+    {
+      "code": "IN_PERSON",
+      "label": "Trực tiếp",
+      "processing_time": "1 ngày",
+      "fee": null,
+      "description": null
+    }
+  ],
+  "processing_note": "Thời gian xử lý tham chiếu: 1 ngày. Nên rà trước thông tin người học, cơ sở đào tạo và loại kết quả cần xin xác nhận hoặc cấp lại. Có thể chọn kênh nộp phù hợp: Trực tiếp, Trực tuyến, Dịch vụ bưu chính. Hiện có 1 mục giấy tờ cần theo dõi trong checklist.",
+  "documents": {
+    "normally_required": [
+      {
+        "name": "Chưa có quy định cụ thể.",
+        "quantity": "0 bản chính, 0 bản sao",
+        "notes": [],
+        "group": "default",
+        "attachment_path": null
+      }
+    ],
+    "conditional": [],
+    "forms": [],
+    "presented": [],
+    "notes": [],
+    "summary": [
+      {
+        "group": "default",
+        "name": "Chưa có quy định cụ thể.",
+        "quantity": "0 bản chính, 0 bản sao",
+        "notes": [],
+        "attachment_path": null
+      }
+    ]
+  },
+  "steps": [
+    {
+      "order": 1,
+      "title": "Bước 1",
+      "description": "1. 1.1.1. Hằng năm tổ chức 01 (một) lần tuyển sinh trung học cơ sở. 1.1.2. Tuyển sinh trung học cơ sở được thực hiện theo phương thức xét tuyển. 1.1.3. Tiêu chí xét tuyển do Sở Giáo dục và Đào tạo hướng dẫn cụ thể, bảo đảm thực hiện việc xét tuyển công bằng, khách quan, minh bạch, phù hợp với tình hình thực tế tại địa phương. Đối với trường trung học cơ sở, trường phổ thông có nhiều cấp học trong đó có cấp trung học cơ sở (sau đây gọi chung là trường trung học cơ sở) thuộc đại học, trường đại học, viện nghiên cứu, tiêu chí xét tuyển do đại học, trường đại học, viện nghiên cứu trực tiếp quản lý hướng dẫn hoặc thực hiện theo hướng dẫn của Sở Giáo dục và Đào tạo nơi trường đặt trụ sở. 1.1.4 Quy trình tuyển sinh trung học cơ sở",
+      "example": "trực tiếp"
+    },
+    {
+      "order": 2,
+      "title": "a)",
+      "description": "a) Chủ tịch Ủy ban nhân dân xã phê duyệt kế hoạch tuyển sinh trung học cơ sở. Kế hoạch tuyển sinh trung học cơ sở bao gồm các nội dung cơ bản sau: đối tượng tuyển sinh; chỉ tiêu và địa bàn tuyển sinh; tiêu chí xét tuyển; thời gian xét tuyển và công bố kết quả tuyển sinh. Kế hoạch tuyển sinh trung học cơ sở được công bố trước ngày 31 tháng 3 hằng năm. Đối với các trường trung học cơ sở thuộc đại học, trường đại học, viện nghiên cứu, kế hoạch tuyển sinh trung học cơ sở do Giám đốc đại học, Hiệu trưởng trường đại học, Viện trưởng viện nghiên cứu trực tiếp quản lý quyết định sau khi thống nhất với Ủy ban nhân xã nơi trường đặt trụ sở.",
+      "example": "31 tháng"
+    },
+    {
+      "order": 3,
+      "title": "b)",
+      "description": "b) Căn cứ kế hoạch tuyển sinh trung học cơ sở đã được phê duyệt, Hội đồng tuyển sinh trung học cơ sở xây dựng và thông báo công khai kế hoạch tuyển sinh của nhà trường; tổ chức việc đăng ký tuyển sinh, tiếp nhận và chuẩn bị nội dung đăng ký tuyển sinh.",
+      "example": null
+    },
+    {
+      "order": 4,
+      "title": "c)",
+      "description": "c) Hội đồng tuyển sinh trung học cơ sở tổ chức việc xét tuyển theo kế hoạch tuyển sinh đã được phê duyệt; đề xuất danh sách học sinh trúng tuyển với Hiệu trưởng nhà trường để trình Chủ tịch Ủy ban nhân xã phê duyệt. Đối với các trường trung học cơ sở thuộc đại học, trường đại học, viện nghiên cứu, danh sách học sinh trúng tuyển do Giám đốc đại học, Hiệu trưởng trường đại học, Viện trưởng viện nghiên cứu trực tiếp quản lý phê duyệt.",
+      "example": "trực tiếp"
+    }
+  ],
+  "input_fields": [
+    {
+      "field": "learner_full_name",
+      "label": "Tên người học",
+      "type": "string",
+      "required": true
+    },
+    {
+      "field": "education_record_type",
+      "label": "Loại hồ sơ học tập cần xử lý",
+      "type": "string",
+      "required": true
+    },
+    {
+      "field": "education_institution",
+      "label": "Cơ sở đào tạo liên quan",
+      "type": "string",
+      "required": false
+    },
+    {
+      "field": "submission_channel_preference",
+      "label": "Kênh nộp dự kiến",
+      "type": "enum",
+      "required": false,
+      "options": [
+        "Trực tiếp",
+        "Trực tuyến",
+        "Dịch vụ bưu chính"
+      ]
+    }
+  ],
+  "validation_rules": [
+    {
+      "id": "required-1",
+      "severity": "error",
+      "field": "learner_full_name",
+      "rule": "Trường bắt buộc phải có dữ liệu hợp lệ trước khi nộp.",
+      "message": "Thiếu trường bắt buộc: Tên người học."
+    },
+    {
+      "id": "required-2",
+      "severity": "error",
+      "field": "education_record_type",
+      "rule": "Trường bắt buộc phải có dữ liệu hợp lệ trước khi nộp.",
+      "message": "Thiếu trường bắt buộc: Loại hồ sơ học tập cần xử lý."
+    },
+    {
+      "id": "hint-1",
+      "severity": "warning",
+      "field": "general",
+      "rule": "Nên xác định trước kênh nộp hồ sơ để biết có cần bản giấy, bản điện tử hay xuất trình trực tiếp.",
+      "message": "Nên xác định trước kênh nộp hồ sơ để biết có cần bản giấy, bản điện tử hay xuất trình trực tiếp."
+    },
+    {
+      "id": "hint-2",
+      "severity": "warning",
+      "field": "general",
+      "rule": "Nên rà lại thông tin người học, cơ sở đào tạo và loại xác nhận hoặc văn bằng cần xin.",
+      "message": "Nên rà lại thông tin người học, cơ sở đào tạo và loại xác nhận hoặc văn bằng cần xin."
+    }
+  ],
+  "common_errors": [],
+  "clarifying_questions": [
+    {
+      "id": "clarify_1",
+      "question": "Bạn đang cần xử lý hồ sơ học tập, văn bằng hay xác nhận nào?",
+      "purpose": "workflow_intake"
+    },
+    {
+      "id": "clarify_2",
+      "question": "Người học và cơ sở đào tạo liên quan đã xác định rõ chưa?",
+      "purpose": "workflow_intake"
+    }
+  ],
+  "legal_basis": [
+    {
+      "title": "Quy chế tuyển sinh trung học cơ sở và tuyển sinh trung học phổ thông",
+      "code": "30/2024/TT-BGDĐT"
+    }
+  ],
+  "legal_bases": [
+    {
+      "title": "Quy chế tuyển sinh trung học cơ sở và tuyển sinh trung học phổ thông",
+      "code": "30/2024/TT-BGDĐT"
+    }
+  ],
+  "faq": [
+    {
+      "question": "Có thể nộp qua kênh nào?",
+      "answer": "Các kênh hiện có: Trực tiếp, Trực tuyến, Dịch vụ bưu chính."
+    },
+    {
+      "question": "Thời gian xử lý tham chiếu là bao lâu?",
+      "answer": "Thời gian xử lý tham chiếu hiện có là 1 ngày."
+    },
+    {
+      "question": "Kết quả chính của thủ tục là gì?",
+      "answer": "Kết quả chính được trích xuất là Học sinh được tuyển vào học lớp 6."
+    }
+  ],
+  "guidance": {
+    "highlight_documents": [
+      {
+        "bucket": "required",
+        "name": "Chưa có quy định cụ thể.",
+        "conditions": [],
+        "attachment_path": null
+      }
+    ],
+    "special_cases": [],
+    "common_errors": [],
+    "validation_hints": [
+      "Nên xác định trước kênh nộp hồ sơ để biết có cần bản giấy, bản điện tử hay xuất trình trực tiếp.",
+      "Nên rà lại thông tin người học, cơ sở đào tạo và loại xác nhận hoặc văn bằng cần xin."
+    ]
+  },
+  "next_steps": {
+    "summary": "Nên rà trước thông tin người học, cơ sở đào tạo và loại kết quả cần xin xác nhận hoặc cấp lại. Có thể chọn kênh nộp phù hợp: Trực tiếp, Trực tuyến, Dịch vụ bưu chính. Hiện có 1 mục giấy tờ cần theo dõi trong checklist.",
+    "time_badge": "1 ngày",
+    "result_label": "Học sinh được tuyển vào học lớp 6",
+    "primary_channel": "online",
+    "channels": [
+      "in_person",
+      "online",
+      "postal"
+    ]
+  },
+  "notes": [],
+  "provenance": {
+    "pipeline": "raw->structured->normalized->enriched->ui_api_payload",
+    "normalizer_version": "0.2.0",
+    "enricher_version": "0.2.0",
+    "mapping_notes": "workflow_generated:hoc_tap/tuyen_sinh",
+    "supported_group": true
+  }
+}

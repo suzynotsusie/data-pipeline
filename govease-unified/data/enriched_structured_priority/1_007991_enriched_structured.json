@@ -1,0 +1,90 @@
+{
+  "schema_version": "1.0",
+  "enricher_version": "0.2.0",
+  "source": {
+    "procedure_code": "1.007991",
+    "title": "Thực hiện chính sách khen thưởng đối với tập thể, cá nhân đạt thành tích cao trong các cuộc thi quốc gia, khu vực và thế giới thuộc lĩnh vực Giáo dục và Đào tạo, Thể dục - Thể thao; giải thưởng về Khoa học và Công nghệ, Văn học - Nghệ thuật, Báo chí trên địa bàn tỉnh Thanh Hóa.",
+    "group_key": "suc_khoe_y_te",
+    "workflow_family": null,
+    "subflow": null
+  },
+  "experience": {
+    "entry_label": "Hỗ trợ y tế và bảo hiểm",
+    "overview_summary": "Thủ tục này thuộc nhóm y tế, thường cần đối chiếu thông tin người bệnh, đơn vị tiếp nhận hoặc quyền lợi chuyên ngành. Kết quả thường nhận được là Xác nhận việc trình kháng nghị hàng hải. Thời gian xử lý tham khảo: 20 ngày.",
+    "next_step_summary": "Nên xác định rõ đối tượng tham gia, quyền lợi hoặc nhu cầu điều chỉnh hồ sơ y tế trước khi nộp. Có thể chọn kênh nộp phù hợp: Trực tiếp, Trực tuyến, Dịch vụ bưu chính. Hiện có khoảng 3 mục giấy tờ cần theo dõi trong checklist.",
+    "tone": "supportive_public_service"
+  },
+  "guidance": {
+    "highlight_documents": [
+      {
+        "bucket": "required",
+        "name": "Tờ trình đề nghị khen thưởng của các cơ quan, đơn vị có cá nhân, tập thể đạt giải (bản chính).",
+        "conditions": [],
+        "attachment_path": null
+      },
+      {
+        "bucket": "required",
+        "name": "Danh sách trích ngang các cá nhân, tập thể đạt giải (có đóng dấu giáp lai) của cơ quan, đơn vị trình khen thưởng (bản chính), bao gồm những nội dung: + Số thứ tự. + Họ và tên. + Cơ quan, đơn vị, nơi cư trú của tập thể, cá nhân đề nghị khen thưởng. + Lĩnh vực khen thưởng. + Thành tích đạt giải. + Tiền thưởng (đv tính đồng).",
+        "conditions": [],
+        "attachment_path": null
+      },
+      {
+        "bucket": "required",
+        "name": "Các căn cứ pháp lý xác nhận các cá nhân, tập thể đạt giải kèm theo (bản sao).",
+        "conditions": [],
+        "attachment_path": null
+      }
+    ],
+    "special_cases": [
+      "Có kiểm tra dữ liệu cư trú/định danh"
+    ],
+    "common_errors": [],
+    "validation_hints": [
+      "Nên xác định trước kênh nộp hồ sơ để biết có cần bản giấy, bản điện tử hay xuất trình trực tiếp.",
+      "Nên xác định đúng nhóm đối tượng, mã số bảo hiểm và quyền lợi áp dụng trước khi nộp."
+    ]
+  },
+  "intake": {
+    "candidate_input_fields": [
+      {
+        "field_id": "request_subject",
+        "label": "Đối tượng làm thủ tục",
+        "field_type": "text",
+        "required": true
+      },
+      {
+        "field_id": "insurance_or_medical_need",
+        "label": "Nhu cầu bảo hiểm hoặc y tế",
+        "field_type": "text",
+        "required": true
+      },
+      {
+        "field_id": "submission_channel_preference",
+        "label": "Kênh nộp dự kiến",
+        "field_type": "enum",
+        "required": false
+      },
+      {
+        "field_id": "has_insurance_number",
+        "label": "Đã có mã BHXH/BHYT",
+        "field_type": "boolean",
+        "required": false
+      }
+    ],
+    "suggested_clarifying_questions": [
+      "Bạn đang muốn đăng ký, điều chỉnh hay xác nhận quyền lợi y tế hoặc bảo hiểm nào?",
+      "Bạn đã có mã BHXH/BHYT hoặc thông tin đơn vị tiếp nhận liên quan chưa?"
+    ]
+  },
+  "ui_hints": {
+    "primary_channel": "in_person",
+    "result_label": "Xác nhận việc trình kháng nghị hàng hải",
+    "time_badge": "20 ngày",
+    "document_count_badge": 3
+  },
+  "provenance": {
+    "generator": "workflow_domain_enricher",
+    "derivation_mode": "rule_based_semantic_enrichment",
+    "supported_group": true
+  }
+}

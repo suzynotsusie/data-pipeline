@@ -1,0 +1,123 @@
+{
+  "schema_version": "1.0",
+  "enricher_version": "0.2.0",
+  "source": {
+    "procedure_code": "1.004222",
+    "title": "Đăng ký thường trú",
+    "group_key": "co_con_nho",
+    "workflow_family": "child_early_life_workflow",
+    "subflow": "cu_tru"
+  },
+  "experience": {
+    "entry_label": "Hỗ trợ thủ tục cho trẻ em",
+    "overview_summary": "Thủ tục này thuộc nhóm giấy tờ cho trẻ nhỏ, thường dùng để đăng ký hoặc cập nhật thông tin khai sinh. Kết quả thường nhận được là Thông báo kết quả giải quyết thủ tục về cư trú, hủy bỏ thủ tục về cư trú. Thời gian xử lý tham khảo: 7 ngày làm việc.",
+    "next_step_summary": "Chuẩn bị trước các giấy tờ cốt lõi của trẻ và người đi làm thủ tục, sau đó chọn kênh nộp phù hợp: Trực tiếp, Trực tuyến. Hiện có khoảng 18 mục giấy tờ cần theo dõi trong checklist.",
+    "tone": "supportive_public_service"
+  },
+  "guidance": {
+    "highlight_documents": [
+      {
+        "bucket": "required",
+        "name": "Giấy chứng nhận đăng ký phương tiện và giấy chứng nhận an toàn kỹ thuật và bảo vệ môi trường của phương tiện hoặc văn bản xác nhận của Ủy ban nhân dân cấp xã về việc sử dụng phương tiện đó vào mục đích để ở đối với phương tiện không thuộc đối tượng phải đăng ký, đăng kiểm (nội dung xác nhận tại mục 2 của Ủy ban nhân dân cấp xã tại Tờ khai đề nghị xác nhận nơi thường xuyên đậu, đỗ; sử dụng phương tiện vào mục đích để ở theo Mẫu số 01 ban hành kèm theo Nghị định số 154/2024/NĐ-CP).",
+        "conditions": [],
+        "attachment_path": null
+      },
+      {
+        "bucket": "required",
+        "name": "Giấy tờ, tài liệu xác nhận về việc chăm sóc, nuôi dưỡng, trợ giúp.",
+        "conditions": [],
+        "attachment_path": null
+      },
+      {
+        "bucket": "required",
+        "name": "Văn bản đề nghị của người đứng đầu cơ sở trợ giúp xã hội đối với người được cơ sở trợ giúp xã hội nhận chăm sóc, nuôi dưỡng, trợ giúp.",
+        "conditions": [],
+        "attachment_path": null
+      },
+      {
+        "bucket": "required",
+        "name": "Văn bản xác nhận của Ủy ban nhân dân cấp xã về việc trong cơ sở tín ngưỡng, cơ sở tôn giáo có công trình phụ trợ là nhà ở.",
+        "conditions": [],
+        "attachment_path": null
+      },
+      {
+        "bucket": "required",
+        "name": "Văn bản xác nhận của Ủy ban nhân dân cấp xã về việc người đăng ký thường trú thuộc đối tượng quy định tại khoản 2 Điều 17 Luật Cư trú và việc trong cơ sở tín ngưỡng, cơ sở tôn giáo có công trình phụ trợ là nhà ở.",
+        "conditions": [],
+        "attachment_path": null
+      },
+      {
+        "bucket": "required",
+        "name": "Giấy tờ, tài liệu chứng minh là nhà tu hành, chức sắc, chức việc hoặc người khác hoạt động tôn giáo và được hoạt động tại cơ sở tôn giáo đó theo quy định của pháp luật về tín ngưỡng, tôn giáo đối với người quy định tại điểm a khoản 4 Điều 20 Luật Cư trú; giấy tờ, tài liệu chứng minh là người đại diện cơ sở tín ngưỡng đối với người quy định tại điểm b khoản 4 Điều 20 Luật Cư trú.",
+        "conditions": [],
+        "attachment_path": null
+      }
+    ],
+    "special_cases": [
+      "Có yếu tố nước ngoài",
+      "Có kiểm tra dữ liệu cư trú/định danh",
+      "Có thể cần đối chiếu thông tin thửa đất hoặc giấy chứng nhận",
+      "Có thể cần hồ sơ kỹ thuật phương tiện hoặc giấy phép lái xe"
+    ],
+    "common_errors": [
+      "Thông tin định danh hoặc cư trú không khớp với dữ liệu dân cư.",
+      "Thiếu giấy tờ hợp pháp hóa hoặc giấy tờ nhân thân của phía nước ngoài.",
+      "Điền sai mẫu tờ khai hoặc chọn sai biểu mẫu đi kèm.",
+      "Thông tin thửa đất, tài sản hoặc giấy chứng nhận chưa khớp với hồ sơ hiện có.",
+      "Thiếu hồ sơ kỹ thuật phương tiện hoặc thông tin giấy phép lái xe cần đối chiếu."
+    ],
+    "validation_hints": [
+      "Nên xác định trước kênh nộp hồ sơ để biết có cần bản giấy, bản điện tử hay xuất trình trực tiếp.",
+      "Thông tin hộ tịch giữa các giấy tờ phải thống nhất về họ tên, ngày sinh và quan hệ liên quan."
+    ]
+  },
+  "intake": {
+    "candidate_input_fields": [
+      {
+        "field_id": "child_full_name",
+        "label": "Tên trẻ",
+        "field_type": "text",
+        "required": false
+      },
+      {
+        "field_id": "child_birth_date",
+        "label": "Ngày sinh của trẻ",
+        "field_type": "date",
+        "required": false
+      },
+      {
+        "field_id": "child_birth_place",
+        "label": "Nơi sinh",
+        "field_type": "text",
+        "required": false
+      },
+      {
+        "field_id": "requester_relationship",
+        "label": "Quan hệ với trẻ",
+        "field_type": "enum",
+        "required": true
+      },
+      {
+        "field_id": "has_foreign_element",
+        "label": "Có yếu tố nước ngoài",
+        "field_type": "boolean",
+        "required": true
+      }
+    ],
+    "suggested_clarifying_questions": [
+      "Bé đã có giấy chứng sinh hoặc giấy tờ thay thế chưa?",
+      "Thủ tục này có liên quan đến yếu tố nước ngoài, mang thai hộ hoặc trẻ bị bỏ rơi không?"
+    ]
+  },
+  "ui_hints": {
+    "primary_channel": "online",
+    "result_label": "Thông báo kết quả giải quyết thủ tục về cư trú, hủy bỏ thủ tục về cư trú",
+    "time_badge": "7 ngày làm việc",
+    "document_count_badge": 18
+  },
+  "provenance": {
+    "generator": "workflow_domain_enricher",
+    "derivation_mode": "rule_based_semantic_enrichment",
+    "supported_group": true
+  }
+}

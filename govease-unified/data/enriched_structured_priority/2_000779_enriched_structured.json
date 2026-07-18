@@ -1,0 +1,132 @@
+{
+  "schema_version": "1.0",
+  "enricher_version": "0.2.0",
+  "source": {
+    "procedure_code": "2.000779",
+    "title": "Thủ tục đăng ký nhận cha, mẹ, con có yếu tố nước ngoài",
+    "group_key": "hon_nhan_gia_dinh",
+    "workflow_family": "marriage_family_workflow",
+    "subflow": "nhan_cha_me_con"
+  },
+  "experience": {
+    "entry_label": "Hỗ trợ hộ tịch và gia đình",
+    "overview_summary": "Thủ tục này thuộc nhóm hộ tịch gia đình, thường yêu cầu đối chiếu thông tin nhân thân và tình trạng hôn nhân của các bên. Kết quả thường nhận được là Trích lục đăng ký nhận cha, mẹ, con. Thời gian xử lý tham khảo: 10 ngày.",
+    "next_step_summary": "Nên rà trước giấy tờ nhân thân của hai bên và các điều kiện đặc biệt nếu có yếu tố nước ngoài hoặc ủy quyền. Hiện có khoảng 10 mục giấy tờ cần theo dõi trong checklist.",
+    "tone": "supportive_public_service"
+  },
+  "guidance": {
+    "highlight_documents": [
+      {
+        "bucket": "required",
+        "name": "Văn bản của cơ quan y tế, cơ quan giám định hoặc cơ quan, tổ chức khác có thẩm quyền ở trong nước hoặc nước ngoài xác nhận quan hệ cha con, quan hệ mẹ con.",
+        "conditions": [],
+        "attachment_path": null
+      },
+      {
+        "bucket": "required",
+        "name": "Chứng cứ chứng minh quan hệ cha, con hoặc quan hệ mẹ, con gồm một trong các giấy tờ, tài liệu sau đây:",
+        "conditions": [],
+        "attachment_path": null
+      },
+      {
+        "bucket": "conditional",
+        "name": "Trường hợp đăng ký nhận cha, mẹ, con giữa công dân Việt Nam với người nước ngoài hoặc giữa người nước ngoài với nhau thì người nước ngoài phải nộp bản sao hộ chiếu hoặc giấy tờ có giá trị thay hộ chiếu để chứng minh về nhân thân.",
+        "conditions": [
+          "Trường hợp đăng ký nhận cha, mẹ, con giữa công dân Việt Nam với người nước ngoài hoặc giữa người nước ngoài với nhau thì người nước ngoài phải nộp bản sao hộ chiếu hoặc giấy tờ có giá trị thay hộ chiếu để chứng minh về nhân thân."
+        ],
+        "attachment_path": null
+      },
+      {
+        "bucket": "conditional",
+        "name": "Trường hợp không có chứng cứ chứng minh quan hệ cha, mẹ, con nêu trên thì phải có văn bản cam đoan của các bên nhận cha, mẹ, con, có ít nhất hai người làm chứng về mối quan hệ cha, mẹ, con.",
+        "conditions": [
+          "Trường hợp không có chứng cứ chứng minh quan hệ cha, mẹ, con nêu trên thì phải có văn bản cam đoan của các bên nhận cha, mẹ, con, có ít nhất hai người làm chứng về mối quan hệ cha, mẹ, con."
+        ],
+        "attachment_path": null
+      },
+      {
+        "bucket": "presented",
+        "name": "Trường hợp các thông tin cá nhân trong các giấy tờ này đã có trong Cơ sở dữ liệu quốc gia về dân cư, Cơ sở dữ liệu hộ tịch điện tử, được hệ thống điền tự động thì không phải tải lên (theo hình thức trực tuyến)",
+        "conditions": [
+          "Trường hợp các thông tin cá nhân trong các giấy tờ này đã có trong Cơ sở dữ liệu quốc gia về dân cư, Cơ sở dữ liệu hộ tịch điện tử, được hệ thống điền tự động thì không phải tải lên (theo hình thức trực tuyến)"
+        ],
+        "attachment_path": null
+      },
+      {
+        "bucket": "presented",
+        "name": "Giấy tờ có giá trị chứng minh thông tin về cư trú trong trường hợp cơ quan đăng ký hộ tịch không thể khai thác được thông tin về nơi cư trú của công dân theo các phương thức quy định tại khoản 2 Điều 14 Nghị định số 104/2022/NĐ-CP ngày 21/12/2022 của Chính phủ. Trường hợp các thông tin về giấy tờ chứng minh nơi cư trú đã được khai thác từ Cơ sở dữ liệu quốc gia về dân cư bằng các phương thức này thì người có yêu cầu không phải xuất trình (theo hình thức trực tiếp) hoặc tải lên (theo hình thức trực tuyến).",
+        "conditions": [
+          "Giấy tờ có giá trị chứng minh thông tin về cư trú trong trường hợp cơ quan đăng ký hộ tịch không thể khai thác được thông tin về nơi cư trú của công dân theo các phương thức quy định tại khoản 2 Điều 14 Nghị định số 104/2022/NĐ-CP ngày 21/12/2022 của Chính phủ. Trường hợp các thông tin về giấy tờ chứng minh nơi cư trú đã được khai thác từ Cơ sở dữ liệu quốc gia về dân cư bằng các phương thức này thì người có yêu cầu không phải xuất trình (theo hình thức trực tiếp) hoặc tải lên (theo hình thức trực tuyến)."
+        ],
+        "attachment_path": null
+      }
+    ],
+    "special_cases": [
+      "Có yếu tố nước ngoài",
+      "Có trường hợp hồ sơ điện tử thay thế bản giấy",
+      "Có thể cần chứng cứ quan hệ cha, mẹ, con",
+      "Có kiểm tra dữ liệu cư trú/định danh",
+      "Có thể cần đối chiếu thông tin thửa đất hoặc giấy chứng nhận"
+    ],
+    "common_errors": [
+      "Thông tin định danh hoặc cư trú không khớp với dữ liệu dân cư.",
+      "Thiếu giấy tờ hợp pháp hóa hoặc giấy tờ nhân thân của phía nước ngoài.",
+      "Điền sai mẫu tờ khai hoặc chọn sai biểu mẫu đi kèm.",
+      "Thông tin thửa đất, tài sản hoặc giấy chứng nhận chưa khớp với hồ sơ hiện có."
+    ],
+    "validation_hints": [
+      "Nên xác định trước kênh nộp hồ sơ để biết có cần bản giấy, bản điện tử hay xuất trình trực tiếp.",
+      "Thông tin hộ tịch giữa các giấy tờ phải thống nhất về họ tên, ngày sinh và quan hệ liên quan.",
+      "Nếu có giấy tờ nước ngoài, cần kiểm tra yêu cầu hợp pháp hóa hoặc xác nhận tương đương."
+    ]
+  },
+  "intake": {
+    "candidate_input_fields": [
+      {
+        "field_id": "party_one_full_name",
+        "label": "Người thứ nhất",
+        "field_type": "text",
+        "required": true
+      },
+      {
+        "field_id": "party_two_full_name",
+        "label": "Người thứ hai",
+        "field_type": "text",
+        "required": true
+      },
+      {
+        "field_id": "has_foreign_element",
+        "label": "Có yếu tố nước ngoài",
+        "field_type": "boolean",
+        "required": true
+      },
+      {
+        "field_id": "current_marital_status_docs",
+        "label": "Có giấy tờ chứng minh tình trạng hôn nhân",
+        "field_type": "boolean",
+        "required": true
+      },
+      {
+        "field_id": "submission_at_border_area",
+        "label": "Nộp tại khu vực biên giới",
+        "field_type": "boolean",
+        "required": false
+      }
+    ],
+    "suggested_clarifying_questions": [
+      "Hai bên đã có đủ giấy tờ nhân thân và tình trạng hôn nhân chưa?",
+      "Hồ sơ có yếu tố nước ngoài, khu vực biên giới hoặc ủy quyền không?"
+    ]
+  },
+  "ui_hints": {
+    "primary_channel": "online",
+    "result_label": "Trích lục đăng ký nhận cha, mẹ, con",
+    "time_badge": "10 ngày",
+    "document_count_badge": 10
+  },
+  "provenance": {
+    "generator": "workflow_domain_enricher",
+    "derivation_mode": "rule_based_semantic_enrichment",
+    "supported_group": true
+  }
+}

@@ -1,0 +1,384 @@
+{
+  "schema_version": "3.0",
+  "record_type": "public_service_procedure_payload",
+  "id": "procedure-1.012291",
+  "procedure_code": "1.012291",
+  "code": "1.012291",
+  "title": "Gia hạn giấy phép hành nghề trong giai đoạn chuyển tiếp đối với hồ sơ nộp từ ngày 01 tháng 01 năm 2024 đến thời điểm kiểm tra đánh giá năng lực hành nghề đối với các chức danh bác sỹ, y sỹ, điều dưỡng, hộ sinh, kỹ thuật y, dinh dưỡng lâm sàng, cấp cứu viên ngoại viện, tâm lý lâm sàng",
+  "language": "vi",
+  "status": "generated_from_pipeline",
+  "field": "Khám bệnh, chữa bệnh",
+  "group_key": "suc_khoe_y_te",
+  "workflow_family": null,
+  "subflow": null,
+  "source": {
+    "source_url": "file:///C:/Users/ku060/Downloads/VAIC%20source/data-pipeline/raw_data/1_012291/1_012291_procedure_detail.md",
+    "source_markdown_path": "C:\\Users\\ku060\\Downloads\\VAIC source\\data-pipeline\\raw_data\\1_012291\\1_012291_procedure_detail.md",
+    "normalized_payload_path": "C:\\Users\\ku060\\Downloads\\VAIC source\\data-pipeline\\govease-unified\\data\\normalized_structured\\1_012291_normalized_structured.json",
+    "enriched_payload_path": "C:\\Users\\ku060\\Downloads\\VAIC source\\data-pipeline\\govease-unified\\data\\enriched_structured_priority\\1_012291_enriched_structured.json"
+  },
+  "scope": {
+    "included": "Thủ tục này thuộc nhóm y tế, thường cần đối chiếu thông tin người bệnh, đơn vị tiếp nhận hoặc quyền lợi chuyên ngành. Kết quả thường nhận được là Giấy phép hành nghề. Thời gian xử lý tham khảo: 40 ngày.",
+    "not_included": []
+  },
+  "agency": {
+    "executing_agency": null,
+    "submission_place": null,
+    "receiving_places": []
+  },
+  "target_users": [
+    "Công dân Việt Nam",
+    "Người nước ngoài cư trú tại Việt Nam",
+    "Người nước ngoài",
+    "Cán bộ",
+    "công chức",
+    "viên chức",
+    "Người Việt Nam định cư ở nước ngoài"
+  ],
+  "submission_methods": [
+    {
+      "code": "IN_PERSON",
+      "label": "Trực tiếp",
+      "processing_time": "40 ngày",
+      "fee": null,
+      "description": "Kể từ khi nhận đủ hồ sơ đến ngày hết hạn ghi trên giấy phép hành nghề"
+    },
+    {
+      "code": "ONLINE",
+      "label": "Trực tuyến",
+      "processing_time": "40 ngày",
+      "fee": null,
+      "description": "Kể từ khi nhận đủ hồ sơ đến ngày hết hạn ghi trên giấy phép hành nghề"
+    },
+    {
+      "code": "POSTAL",
+      "label": "Dịch vụ bưu chính",
+      "processing_time": "40 ngày",
+      "fee": null,
+      "description": "Kể từ khi nhận đủ hồ sơ đến ngày hết hạn ghi trên giấy phép hành nghề"
+    }
+  ],
+  "processing_note": "Thời gian xử lý tham chiếu: 40 ngày. Nên xác định rõ đối tượng tham gia, quyền lợi hoặc nhu cầu điều chỉnh hồ sơ y tế trước khi nộp. Có thể chọn kênh nộp phù hợp: Trực tiếp, Trực tuyến, Dịch vụ bưu chính. Hiện có khoảng 4 mục giấy tờ cần theo dõi trong checklist.",
+  "documents": {
+    "normally_required": [
+      {
+        "name": "a) Đơn theo Mẫu 08 Phụ lục I ban hành kèm theo Nghị định số 96/2023/NĐ-CP.",
+        "quantity": "1 bản chính, 1 bản sao",
+        "notes": [],
+        "group": "default",
+        "attachment_path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/1_012291/M%E1%BA%ABu%2008%20PL%20I%20ND%2096.docx"
+      }
+    ],
+    "conditional": [
+      {
+        "condition": "Giấy khám sức khỏe do cơ sở khám bệnh, chữa bệnh có đủ điều kiện cấp (không áp dụng đối với trường hợp kết quả đánh giá năng lực đã được kết nối, chia sẻ trên Hệ thống thông tin về quản lý hoạt động khám bệnh, chữa bệnh hoặc cơ sở dữ liệu quốc gia về y tế) hoặc bản sao giấy phép lao động đối với trường hợp phải có giấy phép lao động theo quy định của Bộ luật Lao động.",
+        "document": "Giấy khám sức khỏe do cơ sở khám bệnh, chữa bệnh có đủ điều kiện cấp (không áp dụng đối với trường hợp kết quả đánh giá năng lực đã được kết nối, chia sẻ trên Hệ thống thông tin về quản lý hoạt động khám bệnh, chữa bệnh hoặc cơ sở dữ liệu quốc gia về y tế) hoặc bản sao giấy phép lao động đối với trường hợp phải có giấy phép lao động theo quy định của Bộ luật Lao động.",
+        "quantity": "1 bản chính, 1 bản sao",
+        "notes": [],
+        "attachment_path": null
+      },
+      {
+        "condition": "Bản sao hợp lệ giấy phép hành nghề đã được cấp (không áp dụng đối với trường hợp giấy phép hành nghề đã được kết nối, chia sẻ trên Hệ thống thông tin về quản lý hoạt động khám bệnh, chữa bệnh hoặc cơ sở dữ liệu quốc gia về y tế)",
+        "document": "Bản sao hợp lệ giấy phép hành nghề đã được cấp (không áp dụng đối với trường hợp giấy phép hành nghề đã được kết nối, chia sẻ trên Hệ thống thông tin về quản lý hoạt động khám bệnh, chữa bệnh hoặc cơ sở dữ liệu quốc gia về y tế)",
+        "quantity": "1 bản chính, 1 bản sao",
+        "notes": [],
+        "attachment_path": null
+      },
+      {
+        "condition": "Tài liệu chứng minh đã cập nhật đủ kiến thức y khoa liên tục trong khám bệnh, chữa bệnh theo quy định của Bộ trưởng Bộ Y tế (không áp dụng đối với trường hợp kết quả cập nhật kiến thức y khoa liên tục đã được kết nối, chia sẻ trên Hệ thống thông tin về quản lý hoạt động khám bệnh, chữa bệnh hoặc cơ sở dữ liệu quốc gia về y tế)",
+        "document": "Tài liệu chứng minh đã cập nhật đủ kiến thức y khoa liên tục trong khám bệnh, chữa bệnh theo quy định của Bộ trưởng Bộ Y tế (không áp dụng đối với trường hợp kết quả cập nhật kiến thức y khoa liên tục đã được kết nối, chia sẻ trên Hệ thống thông tin về quản lý hoạt động khám bệnh, chữa bệnh hoặc cơ sở dữ liệu quốc gia về y tế)",
+        "quantity": "1 bản chính, 1 bản sao",
+        "notes": [],
+        "attachment_path": null
+      }
+    ],
+    "forms": [
+      {
+        "name": "a) Đơn theo Mẫu 08 Phụ lục I ban hành kèm theo Nghị định số 96/2023/NĐ-CP.",
+        "attachment_label": "Mẫu 08 PL I ND 96.docx",
+        "attachment_path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/1_012291/M%E1%BA%ABu%2008%20PL%20I%20ND%2096.docx"
+      }
+    ],
+    "presented": [],
+    "notes": [],
+    "summary": [
+      {
+        "group": "default",
+        "name": "a) Đơn theo Mẫu 08 Phụ lục I ban hành kèm theo Nghị định số 96/2023/NĐ-CP.",
+        "quantity": "1 bản chính, 1 bản sao",
+        "notes": [],
+        "attachment_path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/1_012291/M%E1%BA%ABu%2008%20PL%20I%20ND%2096.docx"
+      },
+      {
+        "group": null,
+        "name": null,
+        "quantity": "1 bản chính, 1 bản sao",
+        "notes": [],
+        "attachment_path": null
+      },
+      {
+        "group": null,
+        "name": null,
+        "quantity": "1 bản chính, 1 bản sao",
+        "notes": [],
+        "attachment_path": null
+      },
+      {
+        "group": null,
+        "name": null,
+        "quantity": "1 bản chính, 1 bản sao",
+        "notes": [],
+        "attachment_path": null
+      },
+      {
+        "group": null,
+        "name": "a) Đơn theo Mẫu 08 Phụ lục I ban hành kèm theo Nghị định số 96/2023/NĐ-CP.",
+        "quantity": null,
+        "notes": null,
+        "attachment_path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/1_012291/M%E1%BA%ABu%2008%20PL%20I%20ND%2096.docx"
+      }
+    ]
+  },
+  "steps": [
+    {
+      "order": 1,
+      "title": "Bước 1",
+      "description": "1. **Bước 1:** Người đề nghị gia hạn giấy phép hành nghề nộp 01 bộ hồ sơ theo quy định tại khoản 1 Điều 18 Nghị định số 96/2023/NĐ-CP và nộp phí theo quy định của pháp luật về phí, lệ phí cho Cơ quan tiếp nhận hồ sơ tối thiểu 40 ngày làm việc trước ngày giấy phép hành nghề hết hạn. Trường hợp bị ốm đau, tai nạn hoặc trường hợp bất khả kháng tại thời điểm nộp hồ sơ gia hạn thì phải có văn bản thông báo cho Cơ quan tiếp nhận hồ sơ để lùi thời gian nộp hồ sơ gia hạn giấy phép hành nghề. Người hành nghề được đề nghị lùi thời điểm gia hạn nhiều lần nhưng tổng thời gian lùi thời điểm thực hiện gia hạn không quá 22 tháng kể từ ngày giấy phép hành nghề hết hạn. Cơ quan tiếp nhận hồ sơ: Ủy ban nhân dân cấp Tỉnh:",
+      "example": "40 ngày làm việc"
+    },
+    {
+      "order": 2,
+      "title": "a)",
+      "description": "a) Đối với người làm việc tại cơ sở khám bệnh, chữa bệnh trên địa bàn quản lý của Cơ quan chuyên môn về Y tế thuộc Ủy ban nhân dân cấp Tỉnh (bao gồm cả các cơ sở khám bệnh, chữa bệnh trực thuộc Bộ Y tế, thuộc Bộ, ngành) trừ cơ sở khám bệnh, chữa bệnh trực thuộc Bộ Quốc phòng, Bộ Công an;",
+      "example": null
+    },
+    {
+      "order": 3,
+      "title": "b)",
+      "description": "b) Đối với người làm việc tại cơ sở khám bệnh, chữa bệnh tư nhân (bao gồm cả bệnh viện tư nhân);",
+      "example": null
+    },
+    {
+      "order": 4,
+      "title": "c)",
+      "description": "c) Đối với người đang không làm việc tại cơ sở khám bệnh, chữa bệnh. 2. **Bước 2:** Trong thời gian kể từ khi nhận đủ hồ sơ đến ngày hết hạn ghi trên giấy phép hành nghề, Cơ quan tiếp nhận hồ sơ có trách nhiệm thực hiện việc gia hạn hoặc phải trả lời bằng văn bản và nêu rõ lý do nếu không thực hiện việc gia hạn; trường hợp đến ngày hết hạn ghi trên giấy phép hành nghề mà không có văn bản trả lời thì giấy phép hành nghề tiếp tục có hiệu lực theo quy định; Trường hợp cần xác minh việc cập nhật kiến thức y khoa liên tục của người hành nghề do cơ quan, tổ chức nước ngoài thực hiện thì thời hạn thực hiện thủ tục gia hạn là 10 ngày làm việc kể từ ngày có kết quả xác minh.",
+      "example": "10 ngày làm việc"
+    }
+  ],
+  "input_fields": [
+    {
+      "field": "request_subject",
+      "label": "Đối tượng làm thủ tục",
+      "type": "string",
+      "required": true
+    },
+    {
+      "field": "insurance_or_medical_need",
+      "label": "Nhu cầu bảo hiểm hoặc y tế",
+      "type": "string",
+      "required": true
+    },
+    {
+      "field": "submission_channel_preference",
+      "label": "Kênh nộp dự kiến",
+      "type": "enum",
+      "required": false,
+      "options": [
+        "Trực tiếp",
+        "Trực tuyến",
+        "Dịch vụ bưu chính"
+      ]
+    },
+    {
+      "field": "has_insurance_number",
+      "label": "Đã có mã BHXH/BHYT",
+      "type": "boolean",
+      "required": false
+    }
+  ],
+  "validation_rules": [
+    {
+      "id": "required-1",
+      "severity": "error",
+      "field": "request_subject",
+      "rule": "Trường bắt buộc phải có dữ liệu hợp lệ trước khi nộp.",
+      "message": "Thiếu trường bắt buộc: Đối tượng làm thủ tục."
+    },
+    {
+      "id": "required-2",
+      "severity": "error",
+      "field": "insurance_or_medical_need",
+      "rule": "Trường bắt buộc phải có dữ liệu hợp lệ trước khi nộp.",
+      "message": "Thiếu trường bắt buộc: Nhu cầu bảo hiểm hoặc y tế."
+    },
+    {
+      "id": "hint-1",
+      "severity": "warning",
+      "field": "general",
+      "rule": "Nên xác định trước kênh nộp hồ sơ để biết có cần bản giấy, bản điện tử hay xuất trình trực tiếp.",
+      "message": "Nên xác định trước kênh nộp hồ sơ để biết có cần bản giấy, bản điện tử hay xuất trình trực tiếp."
+    },
+    {
+      "id": "hint-2",
+      "severity": "warning",
+      "field": "general",
+      "rule": "Có mẫu biểu đính kèm, nên kiểm tra đúng biểu mẫu trước khi nộp.",
+      "message": "Có mẫu biểu đính kèm, nên kiểm tra đúng biểu mẫu trước khi nộp."
+    },
+    {
+      "id": "hint-3",
+      "severity": "warning",
+      "field": "general",
+      "rule": "Nên xác định đúng nhóm đối tượng, mã số bảo hiểm và quyền lợi áp dụng trước khi nộp.",
+      "message": "Nên xác định đúng nhóm đối tượng, mã số bảo hiểm và quyền lợi áp dụng trước khi nộp."
+    }
+  ],
+  "common_errors": [
+    {
+      "field": "general",
+      "issue": "Điền sai mẫu tờ khai hoặc chọn sai biểu mẫu đi kèm.",
+      "fix": "Nên xác định trước kênh nộp hồ sơ để biết có cần bản giấy, bản điện tử hay xuất trình trực tiếp."
+    },
+    {
+      "field": "general",
+      "issue": "Thiếu hồ sơ về vị trí việc làm, đơn vị sử dụng lao động hoặc điều kiện làm việc áp dụng.",
+      "fix": "Nên xác định trước kênh nộp hồ sơ để biết có cần bản giấy, bản điện tử hay xuất trình trực tiếp."
+    }
+  ],
+  "clarifying_questions": [
+    {
+      "id": "clarify_1",
+      "question": "Bạn đang muốn đăng ký, điều chỉnh hay xác nhận quyền lợi y tế hoặc bảo hiểm nào?",
+      "purpose": "workflow_intake"
+    },
+    {
+      "id": "clarify_2",
+      "question": "Bạn đã có mã BHXH/BHYT hoặc thông tin đơn vị tiếp nhận liên quan chưa?",
+      "purpose": "workflow_intake"
+    }
+  ],
+  "legal_basis": [
+    {
+      "title": "Thông tư số 57/2024/TT-BYT ngày 31/12/2024 của Bộ Y tế quy định việc phân cấp, giải quyết thủ tục hành chính trong lĩnh vực khám bệnh, chữa bệnh thuộc thẩm quyền quản lý của Bộ Y tế",
+      "code": "57/2024/TT-BYT"
+    },
+    {
+      "title": "Luật Khám, chữa bệnh 15/2023/QH15 (09/1/2023)",
+      "code": "15/2023/QH15"
+    },
+    {
+      "title": "Nghị định số 96/2023/NĐ-CP ngày 30 tháng 12 năm 2023 của Chính phủ quy định chi tiết một số điều của Luật Khám bệnh, chữa bệnh.",
+      "code": "96/2023/NĐ-CP"
+    },
+    {
+      "title": "Quy định về phân cấp trong lĩnh vực y, dược cổ truyền",
+      "code": "21/2026/TT-BYT"
+    },
+    {
+      "title": "NGHỊ ĐỊNH QUY ĐỊNH VỀ PHÂN QUYỀN, PHÂN CẤP TRONG LĨNH VỰC Y TẾ",
+      "code": "148/2025/NĐ-CP"
+    }
+  ],
+  "legal_bases": [
+    {
+      "title": "Thông tư số 57/2024/TT-BYT ngày 31/12/2024 của Bộ Y tế quy định việc phân cấp, giải quyết thủ tục hành chính trong lĩnh vực khám bệnh, chữa bệnh thuộc thẩm quyền quản lý của Bộ Y tế",
+      "code": "57/2024/TT-BYT"
+    },
+    {
+      "title": "Luật Khám, chữa bệnh 15/2023/QH15 (09/1/2023)",
+      "code": "15/2023/QH15"
+    },
+    {
+      "title": "Nghị định số 96/2023/NĐ-CP ngày 30 tháng 12 năm 2023 của Chính phủ quy định chi tiết một số điều của Luật Khám bệnh, chữa bệnh.",
+      "code": "96/2023/NĐ-CP"
+    },
+    {
+      "title": "Quy định về phân cấp trong lĩnh vực y, dược cổ truyền",
+      "code": "21/2026/TT-BYT"
+    },
+    {
+      "title": "NGHỊ ĐỊNH QUY ĐỊNH VỀ PHÂN QUYỀN, PHÂN CẤP TRONG LĨNH VỰC Y TẾ",
+      "code": "148/2025/NĐ-CP"
+    }
+  ],
+  "faq": [
+    {
+      "question": "Có thể nộp qua kênh nào?",
+      "answer": "Các kênh hiện có: Trực tiếp, Trực tuyến, Dịch vụ bưu chính."
+    },
+    {
+      "question": "Thời gian xử lý tham chiếu là bao lâu?",
+      "answer": "Thời gian xử lý tham chiếu hiện có là 40 ngày."
+    },
+    {
+      "question": "Kết quả chính của thủ tục là gì?",
+      "answer": "Kết quả chính được trích xuất là Giấy phép hành nghề."
+    }
+  ],
+  "guidance": {
+    "highlight_documents": [
+      {
+        "bucket": "required",
+        "name": "a) Đơn theo Mẫu 08 Phụ lục I ban hành kèm theo Nghị định số 96/2023/NĐ-CP.",
+        "conditions": [],
+        "attachment_path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/1_012291/M%E1%BA%ABu%2008%20PL%20I%20ND%2096.docx"
+      },
+      {
+        "bucket": "conditional",
+        "name": "Giấy khám sức khỏe do cơ sở khám bệnh, chữa bệnh có đủ điều kiện cấp (không áp dụng đối với trường hợp kết quả đánh giá năng lực đã được kết nối, chia sẻ trên Hệ thống thông tin về quản lý hoạt động khám bệnh, chữa bệnh hoặc cơ sở dữ liệu quốc gia về y tế) hoặc bản sao giấy phép lao động đối với trường hợp phải có giấy phép lao động theo quy định của Bộ luật Lao động.",
+        "conditions": [
+          "Giấy khám sức khỏe do cơ sở khám bệnh, chữa bệnh có đủ điều kiện cấp (không áp dụng đối với trường hợp kết quả đánh giá năng lực đã được kết nối, chia sẻ trên Hệ thống thông tin về quản lý hoạt động khám bệnh, chữa bệnh hoặc cơ sở dữ liệu quốc gia về y tế) hoặc bản sao giấy phép lao động đối với trường hợp phải có giấy phép lao động theo quy định của Bộ luật Lao động."
+        ],
+        "attachment_path": null
+      },
+      {
+        "bucket": "conditional",
+        "name": "Bản sao hợp lệ giấy phép hành nghề đã được cấp (không áp dụng đối với trường hợp giấy phép hành nghề đã được kết nối, chia sẻ trên Hệ thống thông tin về quản lý hoạt động khám bệnh, chữa bệnh hoặc cơ sở dữ liệu quốc gia về y tế)",
+        "conditions": [
+          "Bản sao hợp lệ giấy phép hành nghề đã được cấp (không áp dụng đối với trường hợp giấy phép hành nghề đã được kết nối, chia sẻ trên Hệ thống thông tin về quản lý hoạt động khám bệnh, chữa bệnh hoặc cơ sở dữ liệu quốc gia về y tế)"
+        ],
+        "attachment_path": null
+      },
+      {
+        "bucket": "conditional",
+        "name": "Tài liệu chứng minh đã cập nhật đủ kiến thức y khoa liên tục trong khám bệnh, chữa bệnh theo quy định của Bộ trưởng Bộ Y tế (không áp dụng đối với trường hợp kết quả cập nhật kiến thức y khoa liên tục đã được kết nối, chia sẻ trên Hệ thống thông tin về quản lý hoạt động khám bệnh, chữa bệnh hoặc cơ sở dữ liệu quốc gia về y tế)",
+        "conditions": [
+          "Tài liệu chứng minh đã cập nhật đủ kiến thức y khoa liên tục trong khám bệnh, chữa bệnh theo quy định của Bộ trưởng Bộ Y tế (không áp dụng đối với trường hợp kết quả cập nhật kiến thức y khoa liên tục đã được kết nối, chia sẻ trên Hệ thống thông tin về quản lý hoạt động khám bệnh, chữa bệnh hoặc cơ sở dữ liệu quốc gia về y tế)"
+        ],
+        "attachment_path": null
+      }
+    ],
+    "special_cases": [
+      "Có kiểm tra dữ liệu cư trú/định danh",
+      "Có thể cần xác minh quan hệ lao động hoặc giấy phép làm việc"
+    ],
+    "common_errors": [
+      "Điền sai mẫu tờ khai hoặc chọn sai biểu mẫu đi kèm.",
+      "Thiếu hồ sơ về vị trí việc làm, đơn vị sử dụng lao động hoặc điều kiện làm việc áp dụng."
+    ],
+    "validation_hints": [
+      "Nên xác định trước kênh nộp hồ sơ để biết có cần bản giấy, bản điện tử hay xuất trình trực tiếp.",
+      "Có mẫu biểu đính kèm, nên kiểm tra đúng biểu mẫu trước khi nộp.",
+      "Nên xác định đúng nhóm đối tượng, mã số bảo hiểm và quyền lợi áp dụng trước khi nộp."
+    ]
+  },
+  "next_steps": {
+    "summary": "Nên xác định rõ đối tượng tham gia, quyền lợi hoặc nhu cầu điều chỉnh hồ sơ y tế trước khi nộp. Có thể chọn kênh nộp phù hợp: Trực tiếp, Trực tuyến, Dịch vụ bưu chính. Hiện có khoảng 4 mục giấy tờ cần theo dõi trong checklist.",
+    "time_badge": "40 ngày",
+    "result_label": "Giấy phép hành nghề",
+    "primary_channel": "in_person",
+    "channels": [
+      "in_person",
+      "online",
+      "postal"
+    ]
+  },
+  "notes": [],
+  "provenance": {
+    "pipeline": "raw->structured->normalized->enriched->ui_api_payload",
+    "normalizer_version": "0.2.0",
+    "enricher_version": "0.2.0",
+    "mapping_notes": "excluded_from_clean_workflow_dataset",
+    "supported_group": true
+  }
+}

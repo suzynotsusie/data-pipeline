@@ -1,0 +1,92 @@
+{
+  "schema_version": "1.0",
+  "enricher_version": "0.2.0",
+  "source": {
+    "procedure_code": "2.001730",
+    "title": "Cấp Giấy chứng nhận lưu hành tự do (CFS) đối với hàng hóa xuất khẩu thuộc phạm vi quản lý của Bộ Nông nghiệp và Môi trường",
+    "group_key": "suc_khoe_y_te",
+    "workflow_family": null,
+    "subflow": null
+  },
+  "experience": {
+    "entry_label": "Hỗ trợ y tế và bảo hiểm",
+    "overview_summary": "Thủ tục này thuộc nhóm y tế, thường cần đối chiếu thông tin người bệnh, đơn vị tiếp nhận hoặc quyền lợi chuyên ngành. Kết quả thường nhận được là - Giấy chứng nhận lưu hành tự do (CFS). Thời gian xử lý tham khảo: 3 ngày làm việc.",
+    "next_step_summary": "Nên xác định rõ đối tượng tham gia, quyền lợi hoặc nhu cầu điều chỉnh hồ sơ y tế trước khi nộp. Có thể chọn kênh nộp phù hợp: Trực tiếp, Trực tuyến, Dịch vụ bưu chính. Hiện có khoảng 3 mục giấy tờ cần theo dõi trong checklist.",
+    "tone": "supportive_public_service"
+  },
+  "guidance": {
+    "highlight_documents": [
+      {
+        "bucket": "required",
+        "name": "Bản tiêu chuẩn công bố áp dụng đối với sản phẩm, hàng hóa kèm theo cách thể hiện (trên nhãn hàng hóa hoặc trên bao bì hàng hóa hoặc tài liệu kèm theo sản phẩm, hàng hóa): 01 (một) bản sao có đóng dấu của tổ chức, cá nhân.",
+        "conditions": [],
+        "attachment_path": null
+      },
+      {
+        "bucket": "conditional",
+        "name": "Danh mục các cơ sở sản xuất (nếu có), bao gồm tên, địa chỉ của cơ sở, các mặt hàng sản xuất để xuất khẩu: 01 (một) bản chính",
+        "conditions": [
+          "Danh mục các cơ sở sản xuất (nếu có), bao gồm tên, địa chỉ của cơ sở, các mặt hàng sản xuất để xuất khẩu: 01 (một) bản chính"
+        ],
+        "attachment_path": null
+      },
+      {
+        "bucket": "conditional",
+        "name": "Văn bản đề nghị cấp CFS nêu rõ tên hàng, mã HS của hàng hóa, số chứng nhận tiêu chuẩn sản phẩm hoặc số đăng ký, số hiệu tiêu chuẩn (nếu có), thành phần hàm lượng hợp chất (nếu có), nước nhập khẩu hàng hóa: 01 (một) bản chính, thể hiện bằng tiếng Việt và tiếng Anh",
+        "conditions": [
+          "Văn bản đề nghị cấp CFS nêu rõ tên hàng, mã HS của hàng hóa, số chứng nhận tiêu chuẩn sản phẩm hoặc số đăng ký, số hiệu tiêu chuẩn (nếu có), thành phần hàm lượng hợp chất (nếu có), nước nhập khẩu hàng hóa: 01 (một) bản chính, thể hiện bằng tiếng Việt và tiếng Anh"
+        ],
+        "attachment_path": null
+      }
+    ],
+    "special_cases": [],
+    "common_errors": [],
+    "validation_hints": [
+      "Nên xác định trước kênh nộp hồ sơ để biết có cần bản giấy, bản điện tử hay xuất trình trực tiếp.",
+      "Nên xác định đúng nhóm đối tượng, mã số bảo hiểm và quyền lợi áp dụng trước khi nộp."
+    ]
+  },
+  "intake": {
+    "candidate_input_fields": [
+      {
+        "field_id": "request_subject",
+        "label": "Đối tượng làm thủ tục",
+        "field_type": "text",
+        "required": true
+      },
+      {
+        "field_id": "insurance_or_medical_need",
+        "label": "Nhu cầu bảo hiểm hoặc y tế",
+        "field_type": "text",
+        "required": true
+      },
+      {
+        "field_id": "submission_channel_preference",
+        "label": "Kênh nộp dự kiến",
+        "field_type": "enum",
+        "required": false
+      },
+      {
+        "field_id": "has_insurance_number",
+        "label": "Đã có mã BHXH/BHYT",
+        "field_type": "boolean",
+        "required": false
+      }
+    ],
+    "suggested_clarifying_questions": [
+      "Bạn đang muốn đăng ký, điều chỉnh hay xác nhận quyền lợi y tế hoặc bảo hiểm nào?",
+      "Bạn đã có mã BHXH/BHYT hoặc thông tin đơn vị tiếp nhận liên quan chưa?"
+    ]
+  },
+  "ui_hints": {
+    "primary_channel": "online",
+    "result_label": "- Giấy chứng nhận lưu hành tự do (CFS)",
+    "time_badge": "3 ngày làm việc",
+    "document_count_badge": 3
+  },
+  "provenance": {
+    "generator": "workflow_domain_enricher",
+    "derivation_mode": "rule_based_semantic_enrichment",
+    "supported_group": true
+  }
+}

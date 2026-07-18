@@ -1,0 +1,115 @@
+{
+  "schema_version": "1.0",
+  "enricher_version": "0.2.0",
+  "source": {
+    "procedure_code": "2.002821",
+    "title": "Hỗ trợ đào tạo nghề cho người lao động ở khu vực nông thôn, người lao động là thanh niên",
+    "group_key": "viec_lam",
+    "workflow_family": "employment_workflow",
+    "subflow": "nang_ngach"
+  },
+  "experience": {
+    "entry_label": "Hỗ trợ việc làm và lao động",
+    "overview_summary": "Thủ tục này thuộc nhóm việc làm và lao động, thường cần kiểm tra hồ sơ nghề nghiệp, đơn vị sử dụng lao động hoặc điều kiện hưởng chế độ liên quan. Kết quả thường nhận được là Quyết định việc hỗ trợ và thanh toán tiền hỗ trợ cho người lao động. Thời gian xử lý tham khảo: 7 ngày làm việc.",
+    "next_step_summary": "Nên xác định rõ nhu cầu lao động, hồ sơ nghề nghiệp hoặc chế độ cần giải quyết trước khi nộp. Có thể chọn kênh nộp phù hợp: Trực tiếp, Trực tuyến, Dịch vụ bưu chính. Hiện có khoảng 6 mục giấy tờ cần theo dõi trong checklist.",
+    "tone": "supportive_public_service"
+  },
+  "guidance": {
+    "highlight_documents": [
+      {
+        "bucket": "required",
+        "name": "Giấy đề nghị hỗ trợ theo Mẫu số 01 Phụ lục I kèm theo Nghị định số 338/2025/NĐ-CP;",
+        "conditions": [],
+        "attachment_path": null
+      },
+      {
+        "bucket": "required",
+        "name": "Bản sao từ sổ gốc hoặc bản sao kèm bản chính để đối chiếu hoặc bản sao có chứng thực điện tử hoặc bản sao điện tử từ sổ gốc của một trong các giấy tờ sau: quyết định xuất ngũ đối với thanh niên hoàn thành nghĩa vụ quân sự hoặc nghĩa vụ tham gia Công an nhân dân; quyết định hoàn thành nghĩa vụ quân sự tại ngũ trong thời bình đối với dân quân thường trực;",
+        "conditions": [],
+        "attachment_path": null
+      },
+      {
+        "bucket": "required",
+        "name": "Giấy chứng nhận tham gia hoạt động tình nguyện (Bản sao từ sổ gốc hoặc bản sao kèm bản chính để đối chiếu hoặc bản sao có chứng thực điện tử hoặc bản sao điện tử từ sổ gốc)",
+        "conditions": [],
+        "attachment_path": null
+      },
+      {
+        "bucket": "required",
+        "name": "Giấy chứng nhận trí thức trẻ tình nguyện hoàn thành nhiệm vụ công tác tại khu kinh tế - quốc phòng (Bản sao từ sổ gốc hoặc bản sao kèm bản chính để đối chiếu hoặc bản sao có chứng thực điện tử hoặc bản sao điện tử từ sổ gốc)",
+        "conditions": [],
+        "attachment_path": null
+      },
+      {
+        "bucket": "conditional",
+        "name": "Bản sao từ sổ gốc hoặc bản sao kèm bản chính để đối chiếu hoặc bản sao có chứng thực điện tử hoặc bản sao điện tử từ sổ gốc của chứng chỉ sơ cấp hoặc chứng nhận hoàn thành khoá học, trừ trường hợp đặt hàng đào tạo theo quy định tại khoản 3 Điều 28 Nghị định số 338/2025/NĐ-CP;",
+        "conditions": [
+          "Bản sao từ sổ gốc hoặc bản sao kèm bản chính để đối chiếu hoặc bản sao có chứng thực điện tử hoặc bản sao điện tử từ sổ gốc của chứng chỉ sơ cấp hoặc chứng nhận hoàn thành khoá học, trừ trường hợp đặt hàng đào tạo theo quy định tại khoản 3 Điều 28 Nghị định số 338/2025/NĐ-CP;"
+        ],
+        "attachment_path": null
+      },
+      {
+        "bucket": "conditional",
+        "name": "Hóa đơn hoặc biên lai thu tiền đào tạo trình độ sơ cấp, đào tạo dưới 03 tháng, trừ trường hợp đặt hàng đào tạo theo quy định tại khoản 3 Điều 28 Nghị định số 338/2025/NĐ-CP.",
+        "conditions": [
+          "Hóa đơn hoặc biên lai thu tiền đào tạo trình độ sơ cấp, đào tạo dưới 03 tháng, trừ trường hợp đặt hàng đào tạo theo quy định tại khoản 3 Điều 28 Nghị định số 338/2025/NĐ-CP."
+        ],
+        "attachment_path": null
+      }
+    ],
+    "special_cases": [
+      "Có thể cần đối chiếu thông tin thửa đất hoặc giấy chứng nhận"
+    ],
+    "common_errors": [
+      "Điền sai mẫu tờ khai hoặc chọn sai biểu mẫu đi kèm.",
+      "Thông tin thửa đất, tài sản hoặc giấy chứng nhận chưa khớp với hồ sơ hiện có."
+    ],
+    "validation_hints": [
+      "Nên xác định trước kênh nộp hồ sơ để biết có cần bản giấy, bản điện tử hay xuất trình trực tiếp.",
+      "Nên xác định đúng nhóm thủ tục lao động, đơn vị liên quan và hồ sơ nghề nghiệp cần xuất trình."
+    ]
+  },
+  "intake": {
+    "candidate_input_fields": [
+      {
+        "field_id": "employment_need",
+        "label": "Nhu cầu việc làm hoặc lao động",
+        "field_type": "text",
+        "required": true
+      },
+      {
+        "field_id": "worker_or_employer_info",
+        "label": "Thông tin người lao động hoặc đơn vị sử dụng lao động",
+        "field_type": "text",
+        "required": true
+      },
+      {
+        "field_id": "submission_channel_preference",
+        "label": "Kênh nộp dự kiến",
+        "field_type": "enum",
+        "required": false
+      },
+      {
+        "field_id": "has_supporting_employment_documents",
+        "label": "Đã có hồ sơ lao động liên quan",
+        "field_type": "boolean",
+        "required": false
+      }
+    ],
+    "suggested_clarifying_questions": [
+      "Bạn đang cần giải quyết thủ tục lao động nào cho người lao động hoặc doanh nghiệp?",
+      "Hồ sơ nghề nghiệp, đơn vị sử dụng lao động hoặc yếu tố lao động nước ngoài đã rõ chưa?"
+    ]
+  },
+  "ui_hints": {
+    "primary_channel": "online",
+    "result_label": "Quyết định việc hỗ trợ và thanh toán tiền hỗ trợ cho người lao động",
+    "time_badge": "7 ngày làm việc",
+    "document_count_badge": 6
+  },
+  "provenance": {
+    "generator": "workflow_domain_enricher",
+    "derivation_mode": "rule_based_semantic_enrichment",
+    "supported_group": true
+  }
+}

@@ -1,0 +1,95 @@
+{
+  "schema_version": "1.0",
+  "enricher_version": "0.2.0",
+  "source": {
+    "procedure_code": "1.011995",
+    "title": "Lựa chọn, phê duyệt dự án, phương án hỗ trợ phát triển sản xuất, dịch vụ của cộng đồng thuộc các chương trình mục tiêu quốc gia giai đoạn 2021-2025 trên địa bàn tỉnh Lâm Đồng",
+    "group_key": "suc_khoe_y_te",
+    "workflow_family": null,
+    "subflow": null
+  },
+  "experience": {
+    "entry_label": "Hỗ trợ y tế và bảo hiểm",
+    "overview_summary": "Thủ tục này thuộc nhóm y tế, thường cần đối chiếu thông tin người bệnh, đơn vị tiếp nhận hoặc quyền lợi chuyên ngành. Kết quả thường nhận được là Quyết định phê duyệt dự án, phương án hỗ trợ phát triển sản xuất cộng đồng thuộc các chương trình mục tiêu quốc gia giai đoạn 2021-2025 trên địa bàn tỉnh Lâm Đồng. Thời gian xử lý tham khảo: 7 ngày làm việc.",
+    "next_step_summary": "Nên xác định rõ đối tượng tham gia, quyền lợi hoặc nhu cầu điều chỉnh hồ sơ y tế trước khi nộp. Có thể chọn kênh nộp phù hợp: Trực tiếp, Trực tuyến, Dịch vụ bưu chính. Hiện có khoảng 4 mục giấy tờ cần theo dõi trong checklist.",
+    "tone": "supportive_public_service"
+  },
+  "guidance": {
+    "highlight_documents": [
+      {
+        "bucket": "required",
+        "name": "Biên bản họp của cộng đồng dân cư",
+        "conditions": [],
+        "attachment_path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/1_011995/Mau%20so%2001_Bi%C3%AAn%20b%E1%BA%A3n%20h%E1%BB%8Dp%20c%E1%BB%99ng%20%C4%91%E1%BB%93ng%20d%C3%A2n%20c%C6%B0.docx.pdf"
+      },
+      {
+        "bucket": "required",
+        "name": "Danh sách thành viên nhóm cộng đồng",
+        "conditions": [],
+        "attachment_path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/1_011995/M%E1%BA%ABu%20s%E1%BB%91%2002_DANH%20S%C3%81CH%20TH%C3%80NH%20VI%C3%8AN%20NH%C3%93M%20C%E1%BB%98NG%20%C4%90%E1%BB%92NG.pdf"
+      },
+      {
+        "bucket": "required",
+        "name": "Đơn đề nghị hỗ trợ phát triển sản xuất cộng đồng",
+        "conditions": [],
+        "attachment_path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/1_011995/M%E1%BA%ABu%20s%E1%BB%91%2003_%C4%90%C6%A1n%20%C4%91%E1%BB%81%20ngh%E1%BB%8B%20h%E1%BB%97%20tr%E1%BB%A3%20ph%C3%A1t%20tri%E1%BB%83n%20s%E1%BA%A3n%20xu%E1%BA%A5t%20c%E1%BB%99ng%20%C4%91%E1%BB%93ng.pdf"
+      },
+      {
+        "bucket": "required",
+        "name": "Phương án, dự án phát triển sản xuất cộng đồng",
+        "conditions": [],
+        "attachment_path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/1_011995/M%E1%BA%ABu%20s%E1%BB%91%2004_D%E1%BB%B0%20%C3%81N-PH%C6%AF%C6%A0NG%20%C3%81N%20PH%C3%81T%20TRI%E1%BB%82N%20S%E1%BA%A2N%20XU%E1%BA%A4T%20C%E1%BB%98NG%20%C4%90%E1%BB%92NG.pdf"
+      }
+    ],
+    "special_cases": [],
+    "common_errors": [],
+    "validation_hints": [
+      "Nên xác định trước kênh nộp hồ sơ để biết có cần bản giấy, bản điện tử hay xuất trình trực tiếp.",
+      "Có mẫu biểu đính kèm, nên kiểm tra đúng biểu mẫu trước khi nộp.",
+      "Nên xác định đúng nhóm đối tượng, mã số bảo hiểm và quyền lợi áp dụng trước khi nộp."
+    ]
+  },
+  "intake": {
+    "candidate_input_fields": [
+      {
+        "field_id": "request_subject",
+        "label": "Đối tượng làm thủ tục",
+        "field_type": "text",
+        "required": true
+      },
+      {
+        "field_id": "insurance_or_medical_need",
+        "label": "Nhu cầu bảo hiểm hoặc y tế",
+        "field_type": "text",
+        "required": true
+      },
+      {
+        "field_id": "submission_channel_preference",
+        "label": "Kênh nộp dự kiến",
+        "field_type": "enum",
+        "required": false
+      },
+      {
+        "field_id": "has_insurance_number",
+        "label": "Đã có mã BHXH/BHYT",
+        "field_type": "boolean",
+        "required": false
+      }
+    ],
+    "suggested_clarifying_questions": [
+      "Bạn đang muốn đăng ký, điều chỉnh hay xác nhận quyền lợi y tế hoặc bảo hiểm nào?",
+      "Bạn đã có mã BHXH/BHYT hoặc thông tin đơn vị tiếp nhận liên quan chưa?"
+    ]
+  },
+  "ui_hints": {
+    "primary_channel": "in_person",
+    "result_label": "Quyết định phê duyệt dự án, phương án hỗ trợ phát triển sản xuất cộng đồng thuộc các chương trình mục tiêu quốc gia giai đoạn 2021-2025 trên địa bàn tỉnh Lâm Đồng",
+    "time_badge": "7 ngày làm việc",
+    "document_count_badge": 4
+  },
+  "provenance": {
+    "generator": "workflow_domain_enricher",
+    "derivation_mode": "rule_based_semantic_enrichment",
+    "supported_group": true
+  }
+}

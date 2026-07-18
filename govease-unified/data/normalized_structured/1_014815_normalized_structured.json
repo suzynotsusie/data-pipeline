@@ -1,0 +1,180 @@
+{
+  "schema_version": "1.0",
+  "normalizer_version": "0.2.0",
+  "source": {
+    "procedure_code": "1.014815",
+    "title": "Cấp lại Giấy xác nhận ưu đãi thuộc thẩm quyền cấp của Bộ Công Thương",
+    "raw_structured_parser_version": "0.1.0",
+    "field": "Công nghiệp hỗ trợ"
+  },
+  "procedure": {
+    "level": "Cấp bộ/ngành",
+    "procedure_type": "TTHC được luật giao quy định chi tiết",
+    "target_users": [
+      "Doanh nghiệp",
+      "Tổ chức (không bao gồm doanh nghiệp",
+      "HTX)"
+    ],
+    "authorities": [
+      "Bộ Công thương"
+    ],
+    "receiving_places": []
+  },
+  "submission": {
+    "channels": [
+      "in_person",
+      "online",
+      "postal"
+    ],
+    "methods": [
+      {
+        "method_id": "method_1",
+        "channel": "online",
+        "processing_time_text": "5 ngày làm việc",
+        "fee_text": null,
+        "description": null,
+        "is_online": true,
+        "is_postal": false,
+        "is_in_person": false
+      },
+      {
+        "method_id": "method_2",
+        "channel": "postal",
+        "processing_time_text": "5 ngày làm việc",
+        "fee_text": null,
+        "description": null,
+        "is_online": false,
+        "is_postal": true,
+        "is_in_person": false
+      },
+      {
+        "method_id": "method_3",
+        "channel": "in_person",
+        "processing_time_text": "5 ngày làm việc",
+        "fee_text": null,
+        "description": null,
+        "is_online": false,
+        "is_postal": false,
+        "is_in_person": true
+      }
+    ],
+    "timing_summary": {
+      "unique_processing_times": [
+        "5 ngày làm việc"
+      ],
+      "method_count": 3
+    }
+  },
+  "documents": {
+    "required": [
+      {
+        "document_id": "v_n_b_n_ngh_c_p_l_i_gi_y_x_c_nh_n_u_i_theo_m_u_s_06_ph_l_c_iii_ban_h_nh_k_m_theo_ngh_nh_s_205_2025_n_cp_ng_y_14_th_ng_7_n_m_2025_c_a_ch_nh_ph",
+        "name": "Văn bản đề nghị cấp lại Giấy xác nhận ưu đãi (theo Mẫu số 06 Phụ lục III ban hành kèm theo Nghị định số 205/2025/NĐ-CP ngày 14 tháng 7 năm 2025 của Chính phủ);",
+        "group_name": "default",
+        "group_type": "unknown",
+        "original_count": "1",
+        "copy_count": "0",
+        "conditions": [],
+        "attachment_label": "CNHT06.docx",
+        "attachment_path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/1_014815/CNHT06.docx"
+      }
+    ],
+    "conditional": [],
+    "presented": [],
+    "notes": [],
+    "forms": [
+      {
+        "name": "Văn bản đề nghị cấp lại Giấy xác nhận ưu đãi (theo Mẫu số 06 Phụ lục III ban hành kèm theo Nghị định số 205/2025/NĐ-CP ngày 14 tháng 7 năm 2025 của Chính phủ);",
+        "attachment_label": "CNHT06.docx",
+        "attachment_path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/1_014815/CNHT06.docx"
+      }
+    ],
+    "empty_groups": [],
+    "document_count": 1
+  },
+  "process": {
+    "steps": [
+      {
+        "step_id": "step_1",
+        "title": null,
+        "content": "1.",
+        "actor": "user",
+        "channel_hint": null,
+        "time_hint": null
+      },
+      {
+        "step_id": "step_2",
+        "title": "a)",
+        "content": "a) Trong trường hợp Giấy xác nhận ưu đãi bị mất hoặc bị hỏng, doanh nghiệp nộp 01 bộ hồ sơ theo quy định tại định tại khoản 10 Điều 1 (khoản 1 Điều 11d sửa đổi, bổ sung) Nghị định số 205/2025/NĐ-CP ngày 14 tháng 7 năm 2025 của Chính phủ trực tiếp hoặc qua hệ thống bưu chính hoặc hình thức phù hợp khác tới cơ quan có thẩm quyền đã cấp Giấy xác nhận ưu đãi;",
+        "actor": "authority",
+        "channel_hint": "dịch vụ bưu chính",
+        "time_hint": "14 tháng"
+      },
+      {
+        "step_id": "step_3",
+        "title": "b)",
+        "content": "b) Trường hợp hồ sơ chưa đầy đủ, chưa đúng quy định, trong thời hạn 05 ngày làm việc kể từ ngày nhận được hồ sơ, cơ quan có thẩm quyền có văn bản yêu cầu bổ sung, hoàn thiện theo đúng quy định;",
+        "actor": "authority",
+        "channel_hint": null,
+        "time_hint": "05 ngày làm việc"
+      },
+      {
+        "step_id": "step_4",
+        "title": "c)",
+        "content": "c) Trong thời hạn 05 ngày làm việc kể từ ngày nhận được hồ sơ đầy đủ và hợp lệ, cơ quan có thẩm quyền xem xét cấp lại Giấy xác nhận ưu đãi. Trường hợp không cấp lại Giấy xác nhận ưu đãi, cơ quan có thẩm quyền trả lời bằng văn bản và nêu rõ lý do.",
+        "actor": "authority",
+        "channel_hint": null,
+        "time_hint": "05 ngày làm việc"
+      }
+    ],
+    "step_count": 4,
+    "notes": []
+  },
+  "eligibility": {
+    "conditions": [],
+    "has_conditions": false
+  },
+  "results": {
+    "items": [
+      {
+        "name": "Văn bản điều chỉnh Giấy xác nhận ưu đãi dự án sản xuất sản phẩm công nghiệp hỗ trợ thuộc Danh mục sản phẩm công nghiệp hỗ trợ ưu tiên phát triển thuộc thẩm quyền của Bộ Công Thương",
+        "result_code": "KQ.G02.000517",
+        "raw_text": "Văn bản điều chỉnh Giấy xác nhận ưu đãi dự án sản xuất sản phẩm công nghiệp hỗ trợ thuộc Danh mục sản phẩm công nghiệp hỗ trợ ưu tiên phát triển thuộc thẩm quyền của Bộ Công Thương"
+      }
+    ],
+    "primary_result": {
+      "name": "Văn bản điều chỉnh Giấy xác nhận ưu đãi dự án sản xuất sản phẩm công nghiệp hỗ trợ thuộc Danh mục sản phẩm công nghiệp hỗ trợ ưu tiên phát triển thuộc thẩm quyền của Bộ Công Thương",
+      "result_code": "KQ.G02.000517",
+      "raw_text": "Văn bản điều chỉnh Giấy xác nhận ưu đãi dự án sản xuất sản phẩm công nghiệp hỗ trợ thuộc Danh mục sản phẩm công nghiệp hỗ trợ ưu tiên phát triển thuộc thẩm quyền của Bộ Công Thương"
+    }
+  },
+  "legal_basis": {
+    "items": [
+      {
+        "title": "Nghị định số 205/2025/NĐ-CP ngày 14 tháng 7 năm 2025 của Chính phủ sửa đổi, bổ sung một số điều của Nghị định số 111/2015/NĐ-CP ngày 03 tháng 11 năm 2015 của Chính phủ về phát triển công nghiệp hỗ trợ",
+        "code": "205/2025/NĐ-CP"
+      },
+      {
+        "title": "Thông tư số 65/2025/TT-BCT ngày 31 tháng 12 năm 2025 của Bộ trưởng Bộ Công Thương quy định chi tiết thi hành một số điều của Nghị định số 205/2025/NĐ-CP ngày 14 tháng 7 năm 2025 của Chính phủ sửa đổi, bổ sung một số điều của Nghị định số số 111/2015/NĐ-CP về phát triển công nghiệp hỗ trợ.",
+        "code": "65/2025/TT-BCT"
+      }
+    ],
+    "count": 2
+  },
+  "attachments": [
+    {
+      "label": "CNHT06.docx",
+      "path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/1_014815/CNHT06.docx",
+      "source_section": "Thành phần hồ sơ",
+      "document_name": "Văn bản đề nghị cấp lại Giấy xác nhận ưu đãi (theo Mẫu số 06 Phụ lục III ban hành kèm theo Nghị định số 205/2025/NĐ-CP ngày 14 tháng 7 năm 2025 của Chính phủ);"
+    }
+  ],
+  "signals": {
+    "raw_parse_warnings": [],
+    "missing_documents": false,
+    "documents_section_present": true,
+    "documents_declared_empty": false,
+    "documents_only_in_notes": false,
+    "missing_results": false
+  }
+}

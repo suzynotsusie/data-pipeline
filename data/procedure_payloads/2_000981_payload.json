@@ -1,0 +1,340 @@
+{
+  "schema_version": "3.0",
+  "record_type": "public_service_procedure_payload",
+  "id": "procedure-2.000981",
+  "procedure_code": "2.000981",
+  "code": "2.000981",
+  "title": "Kiểm dịch y tế đối với hàng hóa",
+  "language": "vi",
+  "status": "generated_from_pipeline",
+  "field": "Phòng bệnh",
+  "group_key": "suc_khoe_y_te",
+  "workflow_family": null,
+  "subflow": null,
+  "source": {
+    "source_url": "file:///C:/Users/ku060/Downloads/VAIC%20source/data-pipeline/raw_data/2_000981/2_000981_procedure_detail.md",
+    "source_markdown_path": "C:\\Users\\ku060\\Downloads\\VAIC source\\data-pipeline\\raw_data\\2_000981\\2_000981_procedure_detail.md",
+    "normalized_payload_path": "C:\\Users\\ku060\\Downloads\\VAIC source\\data-pipeline\\govease-unified\\data\\normalized_structured\\2_000981_normalized_structured.json",
+    "enriched_payload_path": "C:\\Users\\ku060\\Downloads\\VAIC source\\data-pipeline\\govease-unified\\data\\enriched_structured_priority\\2_000981_enriched_structured.json"
+  },
+  "scope": {
+    "included": "Thủ tục này thuộc nhóm y tế, thường cần đối chiếu thông tin người bệnh, đơn vị tiếp nhận hoặc quyền lợi chuyên ngành. Kết quả thường nhận được là Giấy chứng nhận kiểm tra/xử lý. Thời gian xử lý tham khảo: 6 ngày.",
+    "not_included": []
+  },
+  "agency": {
+    "executing_agency": "Trung tâm kiểm dịch Y tế Quốc tế, Trung tâm Kiểm soát bệnh tật",
+    "submission_place": null,
+    "receiving_places": []
+  },
+  "target_users": [
+    "Doanh nghiệp có vốn đầu tư nước ngoài",
+    "Công dân Việt Nam",
+    "Doanh nghiệp",
+    "Người nước ngoài",
+    "Cán bộ",
+    "công chức",
+    "viên chức",
+    "Tổ chức (không bao gồm doanh nghiệp",
+    "HTX)",
+    "Người Việt Nam định cư ở nước ngoài"
+  ],
+  "submission_methods": [
+    {
+      "code": "IN_PERSON",
+      "label": "Trực tiếp",
+      "processing_time": "6 ngày",
+      "fee": null,
+      "description": "- Thời gian hoàn thành việc quan sát y tế đối với hàng hóa không quá 01 giờ đối với lô hàng hóa dưới 10 tấn, không quá 03 giờ đối với lô hàng hóa từ 10 tấn trở lên.<br>- Thời gian hoàn thành việc kiểm tra giấy tờ một lô hàng hóa không quá 20 phút kể từ khi nhận đủ giấy tờ hoặc thông tin.<br>- Thời gian hoàn thành việc kiểm tra thực tế phải không quá 01 giờ đối với lô hàng hóa dưới 10 tấn, không quá 03 giờ đối với lô hàng hóa từ 10 tấn trở lên.<br>- Thời gian hoàn thành các biện pháp xử lý y tế không quá 02 giờ đối với lô hàng hóa dưới 10 tấn, không quá 06 giờ đối với lô hàng hóa từ 10 tấn trở lên. Trước khi hết thời gian quy định 15 phút mà vẫn chưa hoàn thành việc xử lý y tế, tổ chức kiểm dịch y tế phải thông báo việc gia hạn thời gian xử lý y tế và nêu rõ lý do cho người khai báo y tế. Thời gian gia hạn không quá 02 giờ kể từ thời điểm có thông báo gia hạn.<br>Phí: Theo quy định của Ủy ban nhân dân cấp tỉnh"
+    }
+  ],
+  "processing_note": "Thời gian xử lý tham chiếu: 6 ngày. Nên xác định rõ đối tượng tham gia, quyền lợi hoặc nhu cầu điều chỉnh hồ sơ y tế trước khi nộp. Có thể chọn kênh nộp phù hợp: Trực tiếp. Hiện có khoảng 3 mục giấy tờ cần theo dõi trong checklist.",
+  "documents": {
+    "normally_required": [
+      {
+        "name": "1. Giấy khai báo y tế hàng hóa, phương tiện vận tải đường bộ, đường sắt, đường hàng không",
+        "quantity": "1 bản chính, 0 bản sao",
+        "notes": [],
+        "group": "default",
+        "attachment_path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/2_000981/M%E1%BA%ABu.docx"
+      },
+      {
+        "name": "2. Giấy chứng nhận kiểm tra/xử lý y tế hàng hóa, phương tiện vận tải đường bộ, đường sắt, đường hàng không;",
+        "quantity": "1 bản chính, 0 bản sao",
+        "notes": [],
+        "group": "default",
+        "attachment_path": null
+      },
+      {
+        "name": "3. Giấy chứng nhận kiểm tra y tế hàng hóa (trên tàu thuyền), tàu thuyền;",
+        "quantity": "1 bản chính, 0 bản sao",
+        "notes": [],
+        "group": "default",
+        "attachment_path": null
+      }
+    ],
+    "conditional": [],
+    "forms": [
+      {
+        "name": "1. Giấy khai báo y tế hàng hóa, phương tiện vận tải đường bộ, đường sắt, đường hàng không",
+        "attachment_label": "Mẫu.docx",
+        "attachment_path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/2_000981/M%E1%BA%ABu.docx"
+      }
+    ],
+    "presented": [],
+    "notes": [],
+    "summary": [
+      {
+        "group": "default",
+        "name": "1. Giấy khai báo y tế hàng hóa, phương tiện vận tải đường bộ, đường sắt, đường hàng không",
+        "quantity": "1 bản chính, 0 bản sao",
+        "notes": [],
+        "attachment_path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/2_000981/M%E1%BA%ABu.docx"
+      },
+      {
+        "group": "default",
+        "name": "2. Giấy chứng nhận kiểm tra/xử lý y tế hàng hóa, phương tiện vận tải đường bộ, đường sắt, đường hàng không;",
+        "quantity": "1 bản chính, 0 bản sao",
+        "notes": [],
+        "attachment_path": null
+      },
+      {
+        "group": "default",
+        "name": "3. Giấy chứng nhận kiểm tra y tế hàng hóa (trên tàu thuyền), tàu thuyền;",
+        "quantity": "1 bản chính, 0 bản sao",
+        "notes": [],
+        "attachment_path": null
+      },
+      {
+        "group": null,
+        "name": "1. Giấy khai báo y tế hàng hóa, phương tiện vận tải đường bộ, đường sắt, đường hàng không",
+        "quantity": null,
+        "notes": null,
+        "attachment_path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/2_000981/M%E1%BA%ABu.docx"
+      }
+    ]
+  },
+  "steps": [
+    {
+      "order": 1,
+      "title": "Bước 1",
+      "description": "1. **Bước 1.** Thu thập thông tin và khai báo y tế đối với hàng hóa",
+      "example": null
+    },
+    {
+      "order": 2,
+      "title": "a)",
+      "description": "a) Đối với hàng hóa vận chuyển bằng đường bộ, đường sắt, đường hàng không: khai báo, nộp thông tin khai báo y tế hàng hóa theo Mẫu số 04 Phụ lục V ban hành kèm theo Nghị định số 165/2026/NĐ-CP, Giấy chứng nhận kiểm tra/xử lý y tế (nếu có) theo Mẫu số 09 Phụ lục V ban hành kèm theo Nghị định số 165/2026/NĐ-CP cho tổ chức kiểm dịch y tế trước khi hàng hóa nhập khẩu, xuất khẩu, quá cảnh;",
+      "example": null
+    },
+    {
+      "order": 3,
+      "title": "b)",
+      "description": "b) Đối với hàng hóa vận chuyển bằng đường thủy: khai báo, nộp bản sao bản khai hàng hóa theo Mẫu số 43 ban hành kèm theo Nghị định số 34/2025/NĐ-CP ngày 25 tháng 02 năm 2025 của Chính phủ sửa đổi các Nghị định trong lĩnh vực hàng hải và Giấy chứng nhận kiểm tra y tế hàng hóa (trên tàu thuyền), tàu thuyền (nếu có) theo Mẫu số 10 Phụ lục V ban hành kèm theo Nghị định số 165/2026/NĐ-CP cho tổ chức kiểm dịch y tế trước 12 giờ kể từ khi hàng hóa dự kiến nhập khẩu, xuất khẩu, quá cảnh. 2. **Bước 2.** Quan sát y tế đối với hàng hóa Kiểm dịch viên y tế thực hiện quan sát trực tiếp hoặc gián tiếp, tìm các dấu hiệu mang tác nhân gây bệnh truyền nhiễm, dấu hiệu của trung gian truyền bệnh trên hàng hóa, đánh giá tình trạng bên ngoài của hàng hóa, điều kiện bảo quản trong quá trình vận chuyển, lưu giữ. 3. **Bước 3.** Kiểm tra y tế đối với hàng hóa 3.1. Kiểm tra giấy tờ Kiểm tra nội dung thu thập thông tin và khai báo y tế. 3.2. Kiểm tra thực tế Kiểm dịch viên y tế yêu cầu đưa hàng hóa vào khu vực được chỉ định để kiểm tra, xác định việc mang hoặc có dấu hiệu mang tác nhân gây bệnh truyền nhiễm, trung gian truyền bệnh truyền nhiễm thuộc nhóm A hoặc một số bệnh truyền nhiễm thuộc nhóm B phải được cách ly y tế, xác định hàng hóa không bảo đảm điều kiện vệ sinh, điều kiện bảo quản; đánh giá hiệu quả các biện pháp xử lý y tế đã áp dụng. 4. **Bước 4.** Xử lý y tế Căn cứ kết quả kiểm tra thực tế, kiểm dịch viên y tế:",
+      "example": "25 tháng"
+    },
+    {
+      "order": 4,
+      "title": "a)",
+      "description": "a) Thực hiện hoặc phối hợp thực hiện các biện pháp xử lý y tế: Khử khuẩn, diệt tác nhân gây bệnh, trung gian truyền bệnh truyền nhiễm; Phối hợp với các cơ quan liên quan trong việc xử lý vệ sinh; Buộc tiêu hủy hoặc tái xuất đối với hàng hóa không thể thực hiện được biện pháp quy định tại điểm a khoản này; Lấy mẫu xét nghiệm (nếu cần);",
+      "example": null
+    },
+    {
+      "order": 5,
+      "title": "b)",
+      "description": "b) Kiểm tra và cấp Giấy chứng nhận xử lý y tế đối với hàng hóa theo Mẫu số 09 hoặc Mẫu số 10 Phụ lục V ban hành kèm theo Nghị định số 165/2026/NĐ-CP.",
+      "example": null
+    },
+    {
+      "order": 6,
+      "title": "c)",
+      "description": "c) Trường hợp tổ chức kiểm dịch y tế được yêu cầu kiểm tra, xử lý y tế hàng hóa để cấp giấy chứng nhận kiểm tra/xử lý y tế hàng hóa, phương tiện vận chuyển đường bộ, đường sắt, đường hàng không, đường thủy người khai báo y tế làm văn bản đề nghị theo Mẫu số 15 Phụ lục V ban hành kèm theo Nghị định số 165/2026/NĐ-CP",
+      "example": null
+    }
+  ],
+  "input_fields": [
+    {
+      "field": "request_subject",
+      "label": "Đối tượng làm thủ tục",
+      "type": "string",
+      "required": true
+    },
+    {
+      "field": "insurance_or_medical_need",
+      "label": "Nhu cầu bảo hiểm hoặc y tế",
+      "type": "string",
+      "required": true
+    },
+    {
+      "field": "submission_channel_preference",
+      "label": "Kênh nộp dự kiến",
+      "type": "enum",
+      "required": false,
+      "options": [
+        "Trực tiếp"
+      ]
+    },
+    {
+      "field": "has_insurance_number",
+      "label": "Đã có mã BHXH/BHYT",
+      "type": "boolean",
+      "required": false
+    }
+  ],
+  "validation_rules": [
+    {
+      "id": "required-1",
+      "severity": "error",
+      "field": "request_subject",
+      "rule": "Trường bắt buộc phải có dữ liệu hợp lệ trước khi nộp.",
+      "message": "Thiếu trường bắt buộc: Đối tượng làm thủ tục."
+    },
+    {
+      "id": "required-2",
+      "severity": "error",
+      "field": "insurance_or_medical_need",
+      "rule": "Trường bắt buộc phải có dữ liệu hợp lệ trước khi nộp.",
+      "message": "Thiếu trường bắt buộc: Nhu cầu bảo hiểm hoặc y tế."
+    },
+    {
+      "id": "hint-1",
+      "severity": "warning",
+      "field": "general",
+      "rule": "Nên xác định trước kênh nộp hồ sơ để biết có cần bản giấy, bản điện tử hay xuất trình trực tiếp.",
+      "message": "Nên xác định trước kênh nộp hồ sơ để biết có cần bản giấy, bản điện tử hay xuất trình trực tiếp."
+    },
+    {
+      "id": "hint-2",
+      "severity": "warning",
+      "field": "general",
+      "rule": "Có mẫu biểu đính kèm, nên kiểm tra đúng biểu mẫu trước khi nộp.",
+      "message": "Có mẫu biểu đính kèm, nên kiểm tra đúng biểu mẫu trước khi nộp."
+    },
+    {
+      "id": "hint-3",
+      "severity": "warning",
+      "field": "general",
+      "rule": "Nên xác định đúng nhóm đối tượng, mã số bảo hiểm và quyền lợi áp dụng trước khi nộp.",
+      "message": "Nên xác định đúng nhóm đối tượng, mã số bảo hiểm và quyền lợi áp dụng trước khi nộp."
+    }
+  ],
+  "common_errors": [
+    {
+      "field": "general",
+      "issue": "Thông tin thửa đất, tài sản hoặc giấy chứng nhận chưa khớp với hồ sơ hiện có.",
+      "fix": "Nên xác định trước kênh nộp hồ sơ để biết có cần bản giấy, bản điện tử hay xuất trình trực tiếp."
+    }
+  ],
+  "clarifying_questions": [
+    {
+      "id": "clarify_1",
+      "question": "Bạn đang muốn đăng ký, điều chỉnh hay xác nhận quyền lợi y tế hoặc bảo hiểm nào?",
+      "purpose": "workflow_intake"
+    },
+    {
+      "id": "clarify_2",
+      "question": "Bạn đã có mã BHXH/BHYT hoặc thông tin đơn vị tiếp nhận liên quan chưa?",
+      "purpose": "workflow_intake"
+    }
+  ],
+  "legal_basis": [
+    {
+      "title": "Thông tư",
+      "code": "03/2025/TT-VPCP"
+    },
+    {
+      "title": "Phòng bệnh",
+      "code": "114/2025/QH15"
+    },
+    {
+      "title": "Nghị định quy định chi tiết và hướng dẫn thi hành một số điều của Luật Phòng bệnh.",
+      "code": "165/2026/NĐ-CP"
+    },
+    {
+      "title": "Nghị định sửa đổi, bổ sung một số điều của các Nghị định trong lĩnh vực hàng hải",
+      "code": "34/2025/NĐ-CP"
+    }
+  ],
+  "legal_bases": [
+    {
+      "title": "Thông tư",
+      "code": "03/2025/TT-VPCP"
+    },
+    {
+      "title": "Phòng bệnh",
+      "code": "114/2025/QH15"
+    },
+    {
+      "title": "Nghị định quy định chi tiết và hướng dẫn thi hành một số điều của Luật Phòng bệnh.",
+      "code": "165/2026/NĐ-CP"
+    },
+    {
+      "title": "Nghị định sửa đổi, bổ sung một số điều của các Nghị định trong lĩnh vực hàng hải",
+      "code": "34/2025/NĐ-CP"
+    }
+  ],
+  "faq": [
+    {
+      "question": "Có thể nộp qua kênh nào?",
+      "answer": "Các kênh hiện có: Trực tiếp."
+    },
+    {
+      "question": "Thời gian xử lý tham chiếu là bao lâu?",
+      "answer": "Thời gian xử lý tham chiếu hiện có là 6 ngày."
+    },
+    {
+      "question": "Kết quả chính của thủ tục là gì?",
+      "answer": "Kết quả chính được trích xuất là Giấy chứng nhận kiểm tra/xử lý."
+    }
+  ],
+  "guidance": {
+    "highlight_documents": [
+      {
+        "bucket": "required",
+        "name": "1. Giấy khai báo y tế hàng hóa, phương tiện vận tải đường bộ, đường sắt, đường hàng không",
+        "conditions": [],
+        "attachment_path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/2_000981/M%E1%BA%ABu.docx"
+      },
+      {
+        "bucket": "required",
+        "name": "2. Giấy chứng nhận kiểm tra/xử lý y tế hàng hóa, phương tiện vận tải đường bộ, đường sắt, đường hàng không;",
+        "conditions": [],
+        "attachment_path": null
+      },
+      {
+        "bucket": "required",
+        "name": "3. Giấy chứng nhận kiểm tra y tế hàng hóa (trên tàu thuyền), tàu thuyền;",
+        "conditions": [],
+        "attachment_path": null
+      }
+    ],
+    "special_cases": [
+      "Có thể cần đối chiếu thông tin thửa đất hoặc giấy chứng nhận",
+      "Có thể cần hồ sơ kỹ thuật phương tiện hoặc giấy phép lái xe"
+    ],
+    "common_errors": [
+      "Thông tin thửa đất, tài sản hoặc giấy chứng nhận chưa khớp với hồ sơ hiện có."
+    ],
+    "validation_hints": [
+      "Nên xác định trước kênh nộp hồ sơ để biết có cần bản giấy, bản điện tử hay xuất trình trực tiếp.",
+      "Có mẫu biểu đính kèm, nên kiểm tra đúng biểu mẫu trước khi nộp.",
+      "Nên xác định đúng nhóm đối tượng, mã số bảo hiểm và quyền lợi áp dụng trước khi nộp."
+    ]
+  },
+  "next_steps": {
+    "summary": "Nên xác định rõ đối tượng tham gia, quyền lợi hoặc nhu cầu điều chỉnh hồ sơ y tế trước khi nộp. Có thể chọn kênh nộp phù hợp: Trực tiếp. Hiện có khoảng 3 mục giấy tờ cần theo dõi trong checklist.",
+    "time_badge": "6 ngày",
+    "result_label": "Giấy chứng nhận kiểm tra/xử lý",
+    "primary_channel": "in_person",
+    "channels": [
+      "in_person"
+    ]
+  },
+  "notes": [],
+  "provenance": {
+    "pipeline": "raw->structured->normalized->enriched->ui_api_payload",
+    "normalizer_version": "0.2.0",
+    "enricher_version": "0.2.0",
+    "mapping_notes": "excluded_from_clean_workflow_dataset",
+    "supported_group": true
+  }
+}

@@ -1,0 +1,253 @@
+{
+  "schema_version": "3.0",
+  "record_type": "public_service_procedure_payload",
+  "id": "procedure-1.013482",
+  "procedure_code": "1.013482",
+  "code": "1.013482",
+  "title": "Báo cáo hoàn thành hủy tem điện tử thuốc lá nhập khẩu, hoặc tem điện tử rượu nhập khẩu.",
+  "language": "vi",
+  "status": "generated_from_pipeline",
+  "field": "Hải quan",
+  "group_key": "suc_khoe_y_te",
+  "workflow_family": null,
+  "subflow": null,
+  "source": {
+    "source_url": "file:///C:/Users/ku060/Downloads/VAIC%20source/data-pipeline/raw_data/1_013482/1_013482_procedure_detail.md",
+    "source_markdown_path": "C:\\Users\\ku060\\Downloads\\VAIC source\\data-pipeline\\raw_data\\1_013482\\1_013482_procedure_detail.md",
+    "normalized_payload_path": "C:\\Users\\ku060\\Downloads\\VAIC source\\data-pipeline\\govease-unified\\data\\normalized_structured\\1_013482_normalized_structured.json",
+    "enriched_payload_path": "C:\\Users\\ku060\\Downloads\\VAIC source\\data-pipeline\\govease-unified\\data\\enriched_structured_priority\\1_013482_enriched_structured.json"
+  },
+  "scope": {
+    "included": "Thủ tục này thuộc nhóm y tế, thường cần đối chiếu thông tin người bệnh, đơn vị tiếp nhận hoặc quyền lợi chuyên ngành. Kết quả thường nhận được là Xác nhận tem được hủy. Thời gian xử lý tham khảo: 1 ngày làm việc.",
+    "not_included": []
+  },
+  "agency": {
+    "executing_agency": "Cục Hải quan - Bộ tài chính, Cục Hải quan tỉnh, thành phố, Chi cục Hải quan khu vực",
+    "submission_place": null,
+    "receiving_places": []
+  },
+  "target_users": [
+    "Doanh nghiệp"
+  ],
+  "submission_methods": [
+    {
+      "code": "ONLINE",
+      "label": "Trực tuyến",
+      "processing_time": "1 ngày làm việc",
+      "fee": null,
+      "description": null
+    }
+  ],
+  "processing_note": "Thời gian xử lý tham chiếu: 1 ngày làm việc. Nên xác định rõ đối tượng tham gia, quyền lợi hoặc nhu cầu điều chỉnh hồ sơ y tế trước khi nộp. Có thể chọn kênh nộp phù hợp: Trực tuyến. Hiện có khoảng 3 mục giấy tờ cần theo dõi trong checklist.",
+  "documents": {
+    "normally_required": [
+      {
+        "name": "Biên bản hủy tem điện tử thuốc lá nhập khẩu hoặc tem điện tử rượu nhập khẩu",
+        "quantity": "1 bản chính, 0 bản sao",
+        "notes": [],
+        "group": "default",
+        "attachment_path": null
+      },
+      {
+        "name": "Lập hội đồng huỷ tem",
+        "quantity": "1 bản chính, 0 bản sao",
+        "notes": [],
+        "group": "default",
+        "attachment_path": null
+      },
+      {
+        "name": "Bảng kiểm kê tem điện tử thuốc lá nhập khẩu hoặc tem điện tử rượu nhập khẩu cần hủy",
+        "quantity": "1 bản chính, 0 bản sao",
+        "notes": [],
+        "group": "default",
+        "attachment_path": null
+      }
+    ],
+    "conditional": [],
+    "forms": [],
+    "presented": [],
+    "notes": [],
+    "summary": [
+      {
+        "group": "default",
+        "name": "Biên bản hủy tem điện tử thuốc lá nhập khẩu hoặc tem điện tử rượu nhập khẩu",
+        "quantity": "1 bản chính, 0 bản sao",
+        "notes": [],
+        "attachment_path": null
+      },
+      {
+        "group": "default",
+        "name": "Lập hội đồng huỷ tem",
+        "quantity": "1 bản chính, 0 bản sao",
+        "notes": [],
+        "attachment_path": null
+      },
+      {
+        "group": "default",
+        "name": "Bảng kiểm kê tem điện tử thuốc lá nhập khẩu hoặc tem điện tử rượu nhập khẩu cần hủy",
+        "quantity": "1 bản chính, 0 bản sao",
+        "notes": [],
+        "attachment_path": null
+      }
+    ]
+  },
+  "steps": [
+    {
+      "order": 1,
+      "title": "Bước 1",
+      "description": "1.",
+      "example": null
+    },
+    {
+      "order": 2,
+      "title": "Bước 1:",
+      "description": "Bước 1: Doanh nghiệp, tổ chức hủy lập hồ sơ hủy tem điện tử thuốc lá nhập khẩu hoặc tem điện tử rượu nhập khẩu theo quy định.",
+      "example": null
+    },
+    {
+      "order": 3,
+      "title": "Bước 2:",
+      "description": "Bước 2: Doanh nghiệp, tổ chức nhập thông tin về tem được hủy kèm bản chụp hồ sơ hủy tem.",
+      "example": null
+    },
+    {
+      "order": 4,
+      "title": "Bước  3:",
+      "description": "Bước 3: Cơ quan hải quan tiếp nhận, cập nhật thông tin tem được hủy.",
+      "example": null
+    }
+  ],
+  "input_fields": [
+    {
+      "field": "request_subject",
+      "label": "Đối tượng làm thủ tục",
+      "type": "string",
+      "required": true
+    },
+    {
+      "field": "insurance_or_medical_need",
+      "label": "Nhu cầu bảo hiểm hoặc y tế",
+      "type": "string",
+      "required": true
+    },
+    {
+      "field": "submission_channel_preference",
+      "label": "Kênh nộp dự kiến",
+      "type": "enum",
+      "required": false,
+      "options": [
+        "Trực tuyến"
+      ]
+    },
+    {
+      "field": "has_insurance_number",
+      "label": "Đã có mã BHXH/BHYT",
+      "type": "boolean",
+      "required": false
+    }
+  ],
+  "validation_rules": [
+    {
+      "id": "required-1",
+      "severity": "error",
+      "field": "request_subject",
+      "rule": "Trường bắt buộc phải có dữ liệu hợp lệ trước khi nộp.",
+      "message": "Thiếu trường bắt buộc: Đối tượng làm thủ tục."
+    },
+    {
+      "id": "required-2",
+      "severity": "error",
+      "field": "insurance_or_medical_need",
+      "rule": "Trường bắt buộc phải có dữ liệu hợp lệ trước khi nộp.",
+      "message": "Thiếu trường bắt buộc: Nhu cầu bảo hiểm hoặc y tế."
+    },
+    {
+      "id": "hint-1",
+      "severity": "warning",
+      "field": "general",
+      "rule": "Nên xác định trước kênh nộp hồ sơ để biết có cần bản giấy, bản điện tử hay xuất trình trực tiếp.",
+      "message": "Nên xác định trước kênh nộp hồ sơ để biết có cần bản giấy, bản điện tử hay xuất trình trực tiếp."
+    },
+    {
+      "id": "hint-2",
+      "severity": "warning",
+      "field": "general",
+      "rule": "Nên xác định đúng nhóm đối tượng, mã số bảo hiểm và quyền lợi áp dụng trước khi nộp.",
+      "message": "Nên xác định đúng nhóm đối tượng, mã số bảo hiểm và quyền lợi áp dụng trước khi nộp."
+    }
+  ],
+  "common_errors": [],
+  "clarifying_questions": [
+    {
+      "id": "clarify_1",
+      "question": "Bạn đang muốn đăng ký, điều chỉnh hay xác nhận quyền lợi y tế hoặc bảo hiểm nào?",
+      "purpose": "workflow_intake"
+    },
+    {
+      "id": "clarify_2",
+      "question": "Bạn đã có mã BHXH/BHYT hoặc thông tin đơn vị tiếp nhận liên quan chưa?",
+      "purpose": "workflow_intake"
+    }
+  ],
+  "legal_basis": [],
+  "legal_bases": [],
+  "faq": [
+    {
+      "question": "Có thể nộp qua kênh nào?",
+      "answer": "Các kênh hiện có: Trực tuyến."
+    },
+    {
+      "question": "Thời gian xử lý tham chiếu là bao lâu?",
+      "answer": "Thời gian xử lý tham chiếu hiện có là 1 ngày làm việc."
+    },
+    {
+      "question": "Kết quả chính của thủ tục là gì?",
+      "answer": "Kết quả chính được trích xuất là Xác nhận tem được hủy."
+    }
+  ],
+  "guidance": {
+    "highlight_documents": [
+      {
+        "bucket": "required",
+        "name": "Biên bản hủy tem điện tử thuốc lá nhập khẩu hoặc tem điện tử rượu nhập khẩu",
+        "conditions": [],
+        "attachment_path": null
+      },
+      {
+        "bucket": "required",
+        "name": "Lập hội đồng huỷ tem",
+        "conditions": [],
+        "attachment_path": null
+      },
+      {
+        "bucket": "required",
+        "name": "Bảng kiểm kê tem điện tử thuốc lá nhập khẩu hoặc tem điện tử rượu nhập khẩu cần hủy",
+        "conditions": [],
+        "attachment_path": null
+      }
+    ],
+    "special_cases": [],
+    "common_errors": [],
+    "validation_hints": [
+      "Nên xác định trước kênh nộp hồ sơ để biết có cần bản giấy, bản điện tử hay xuất trình trực tiếp.",
+      "Nên xác định đúng nhóm đối tượng, mã số bảo hiểm và quyền lợi áp dụng trước khi nộp."
+    ]
+  },
+  "next_steps": {
+    "summary": "Nên xác định rõ đối tượng tham gia, quyền lợi hoặc nhu cầu điều chỉnh hồ sơ y tế trước khi nộp. Có thể chọn kênh nộp phù hợp: Trực tuyến. Hiện có khoảng 3 mục giấy tờ cần theo dõi trong checklist.",
+    "time_badge": "1 ngày làm việc",
+    "result_label": "Xác nhận tem được hủy",
+    "primary_channel": "online",
+    "channels": [
+      "online"
+    ]
+  },
+  "notes": [],
+  "provenance": {
+    "pipeline": "raw->structured->normalized->enriched->ui_api_payload",
+    "normalizer_version": "0.2.0",
+    "enricher_version": "0.2.0",
+    "mapping_notes": "excluded_from_clean_workflow_dataset",
+    "supported_group": true
+  }
+}

@@ -1,0 +1,208 @@
+{
+  "schema_version": "1.0",
+  "normalizer_version": "0.2.0",
+  "source": {
+    "procedure_code": "2.000972",
+    "title": "Kiểm dịch y tế đối với thi thể, hài cốt, tro cốt",
+    "raw_structured_parser_version": "0.1.0",
+    "field": "Phòng bệnh"
+  },
+  "procedure": {
+    "level": "Cấp tỉnh",
+    "procedure_type": "NOT_ASSIGNED_REGULATION",
+    "target_users": [
+      "Công dân Việt Nam",
+      "Người nước ngoài",
+      "Người nước ngoài đã cư trú tại Việt Nam",
+      "Người Việt Nam định cư ở nước ngoài"
+    ],
+    "authorities": [
+      "Trung tâm Kiểm soát bệnh tật tỉnh, Trung tâm Kiểm dịch Y tế quốc tế"
+    ],
+    "receiving_places": []
+  },
+  "submission": {
+    "channels": [
+      "in_person"
+    ],
+    "methods": [
+      {
+        "method_id": "method_1",
+        "channel": "in_person",
+        "processing_time_text": "3 ngày",
+        "fee_text": null,
+        "description": "- Thời gian hoàn thành quan sát y tế đối với một thi thể hoặc một hài cốt hoặc một tro cốt không quá 15 phút.<br>- Thời gian hoàn thành việc kiểm tra giấy tờ đối với một thi thể hoặc một hài cốt hoặc một tro cốt không quá 15 phút kể từ khi nộp đủ các loại giấy tờ.<br>- Thời gian hoàn thành việc kiểm tra thực tế đối với một thi thể, hài cốt, tro cốt không quá 01 giờ kể từ khi nộp đủ giấy tờ và kiểm dịch viên y tế tiếp cận được với thi thể, hài cốt, tro cốt cần được kiểm tra.<br>- Thời gian hoàn thành việc xử lý y tế đối với một dụng cụ chứa thi thể hoặc hài cốt hoặc tro cốt không quá 03 giờ kể từ khi tổ chức kiểm dịch y tế yêu cầu xử lý y tế. Trước khi hết thời gian quy định 15 phút mà chưa hoàn thành việc xử lý y tế, tổ chức kiểm dịch y tế phải thông báo gia hạn thời gian xử lý y tế bằng văn bản, nêu rõ lý do cho người khai báo y tế. Thời gian gia hạn không quá 01 giờ kể từ thời điểm có thông báo gia hạn.<br>Phí: Theo quy định của UBND cấp tỉnh",
+        "is_online": false,
+        "is_postal": false,
+        "is_in_person": true
+      }
+    ],
+    "timing_summary": {
+      "unique_processing_times": [
+        "3 ngày"
+      ],
+      "method_count": 1
+    }
+  },
+  "documents": {
+    "required": [
+      {
+        "document_id": "gi_y_t_ch_ng_minh_t_vong_i_v_i_thi_th_h_i_c_t",
+        "name": "Giấy tờ chứng minh tử vong (đối với thi thể, hài cốt).",
+        "group_name": "default",
+        "group_type": "unknown",
+        "original_count": "1",
+        "copy_count": "0",
+        "conditions": [],
+        "attachment_label": "Mẫu.docx",
+        "attachment_path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/2_000972/M%E1%BA%ABu.docx"
+      },
+      {
+        "document_id": "gi_y_ph_p_nh_p_c_nh_thi_th_h_i_c_t_v_vi_t_nam",
+        "name": "Giấy phép nhập cảnh thi thể, hài cốt về Việt Nam;",
+        "group_name": "default",
+        "group_type": "unknown",
+        "original_count": "1",
+        "copy_count": "0",
+        "conditions": [],
+        "attachment_label": null,
+        "attachment_path": null
+      },
+      {
+        "document_id": "gi_y_khai_b_o_y_t_thi_th_h_i_c_t_bao_g_m_c_tro_c_t",
+        "name": "Giấy khai báo y tế thi thể, hài cốt (bao gồm cả tro cốt);",
+        "group_name": "default",
+        "group_type": "unknown",
+        "original_count": "1",
+        "copy_count": "0",
+        "conditions": [],
+        "attachment_label": null,
+        "attachment_path": null
+      },
+      {
+        "document_id": "gi_y_x_c_nh_n_qua_x_l_y_t_c_a_n_i_xu_t_ph_t",
+        "name": "Giấy xác nhận đã qua xử lý y tế của nơi xuất phát;",
+        "group_name": "default",
+        "group_type": "unknown",
+        "original_count": "1",
+        "copy_count": "0",
+        "conditions": [],
+        "attachment_label": null,
+        "attachment_path": null
+      }
+    ],
+    "conditional": [],
+    "presented": [],
+    "notes": [],
+    "forms": [
+      {
+        "name": "Giấy tờ chứng minh tử vong (đối với thi thể, hài cốt).",
+        "attachment_label": "Mẫu.docx",
+        "attachment_path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/2_000972/M%E1%BA%ABu.docx"
+      }
+    ],
+    "empty_groups": [],
+    "document_count": 4
+  },
+  "process": {
+    "steps": [
+      {
+        "step_id": "step_1",
+        "title": null,
+        "content": "1. **Bước 1.** Thu thập thông tin và khai báo y tế đối với thi thể, hài cốt, tro cốt Người khai báo y tế thực hiện khai báo, nộp thông tin khai báo y tế thi thể, hài cốt, tro cốt theo Mẫu số 11 Phụ lục V ban hành kèm theo Nghị định số 165/2026/NĐ-CP; nộp bản sao giấy xác nhận đã qua xử lý y tế của quốc gia hoặc vùng lãnh thổ xuất phát (đối với thi thể, hài cốt), Giấy phép nhập cảnh thi thể, hài cốt, tro cốt về Việt Nam theo quy định của Bộ Ngoại giao và Giấy tờ chứng minh tử vong (đối với thi thể, hài cốt) cho tổ chức kiểm dịch y tế. 2. **Bước 2.** Quan sát y tế đối với thi thể, hài cốt, tro cốt Kiểm dịch viên y tế thực hiện quan sát trực tiếp hoặc gián tiếp, đánh giá tình trạng bên ngoài của quan tài, hộp đựng hài cốt, bình đựng tro cốt, bao gói, niêm phong và tình trạng vệ sinh, dấu hiệu rò rỉ chất lỏng, mùi bất thường hoặc các biểu hiện không bảo đảm yêu cầu về vệ sinh, an toàn y tế. 3. **Bước 3.** Kiểm tra y tế đối với thi thể, hài cốt, tro cốt 3.1. Kiểm tra giấy tờ Kiểm dịch viên y tế kiểm tra các nội dung khai báo y tế và các giấy tờ kèm theo. 3.2 Kiểm tra thực tế",
+        "actor": "user",
+        "channel_hint": "trực tiếp",
+        "time_hint": null
+      },
+      {
+        "step_id": "step_2",
+        "title": "a)",
+        "content": "a) Kiểm dịch viên y tế yêu cầu đưa vào khu vực được chỉ định;",
+        "actor": "user",
+        "channel_hint": null,
+        "time_hint": null
+      },
+      {
+        "step_id": "step_3",
+        "title": "b)",
+        "content": "b) Đối chiếu nội dung khai báo y tế với thực tế bảo quản thi thể, hài cốt;",
+        "actor": "user",
+        "channel_hint": null,
+        "time_hint": null
+      },
+      {
+        "step_id": "step_4",
+        "title": "c)",
+        "content": "c) Kiểm tra tình trạng vệ sinh, yêu cầu về vận chuyển theo quy định của Bộ trưởng Bộ Y tế. 4. **Bước 4.** Xử lý y tế Căn cứ kết quả kiểm tra thực tế, kiểm dịch viên y tế:",
+        "actor": "user",
+        "channel_hint": null,
+        "time_hint": null
+      },
+      {
+        "step_id": "step_5",
+        "title": "a)",
+        "content": "a) Xử lý y tế theo quy định của Bộ trưởng Bộ Y tế về vệ sinh trong mai táng, hỏa táng;",
+        "actor": "user",
+        "channel_hint": null,
+        "time_hint": null
+      },
+      {
+        "step_id": "step_6",
+        "title": "b)",
+        "content": "b) Kiểm tra và cấp giấy chứng nhận kiểm dịch y tế đối với thi thể, hài cốt, tro cốt theo Mẫu số 12 Phụ lục V ban hành kèm theo Nghị định số 165/2026/NĐ-CP sau khi hoàn thành việc xử lý y tế.",
+        "actor": "user",
+        "channel_hint": null,
+        "time_hint": null
+      }
+    ],
+    "step_count": 6,
+    "notes": []
+  },
+  "eligibility": {
+    "conditions": [],
+    "has_conditions": false
+  },
+  "results": {
+    "items": [
+      {
+        "name": "Giấy chứng nhận kiểm dịch y tế",
+        "result_code": "KQ.G18.000086",
+        "raw_text": "Giấy chứng nhận kiểm dịch y tế"
+      }
+    ],
+    "primary_result": {
+      "name": "Giấy chứng nhận kiểm dịch y tế",
+      "result_code": "KQ.G18.000086",
+      "raw_text": "Giấy chứng nhận kiểm dịch y tế"
+    }
+  },
+  "legal_basis": {
+    "items": [
+      {
+        "title": "Phòng bệnh",
+        "code": "114/2025/QH15"
+      },
+      {
+        "title": "Nghị định quy định chi tiết và hướng dẫn thi hành một số điều của Luật Phòng bệnh.",
+        "code": "165/2026/NĐ-CP"
+      }
+    ],
+    "count": 2
+  },
+  "attachments": [
+    {
+      "label": "Mẫu.docx",
+      "path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/2_000972/M%E1%BA%ABu.docx",
+      "source_section": "Thành phần hồ sơ",
+      "document_name": "Giấy tờ chứng minh tử vong (đối với thi thể, hài cốt)."
+    }
+  ],
+  "signals": {
+    "raw_parse_warnings": [],
+    "missing_documents": false,
+    "documents_section_present": true,
+    "documents_declared_empty": false,
+    "documents_only_in_notes": false,
+    "missing_results": false
+  }
+}

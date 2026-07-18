@@ -1,0 +1,291 @@
+{
+  "schema_version": "1.0",
+  "domain": "viec_lam",
+  "updated_at": "2026-07-18",
+  "source_files": [
+    "C:\\Users\\ku060\\Downloads\\VAIC source\\data-pipeline\\main\\full-data.csv",
+    "C:\\Users\\ku060\\Downloads\\VAIC source\\data-pipeline\\raw_data"
+  ],
+  "subdomains": [
+    {
+      "subdomain_key": "tuyen_dung",
+      "subdomain_label": "Tuyển dụng",
+      "event_id": 261,
+      "summary": "Nhóm thủ tục đăng ký lao động và điều chỉnh trạng thái lao động, phục vụ nhu cầu tìm việc và quản lý hồ sơ việc làm của người lao động.",
+      "entry_prompts": [
+        "Bạn đang muốn đăng ký thông tin lao động mới hay điều chỉnh trạng thái việc làm hiện tại?",
+        "Hiện bạn đang có việc làm, thất nghiệp hay không tham gia hoạt động kinh tế?"
+      ],
+      "procedure_count": 8,
+      "procedures": [
+        {
+          "procedure_code": "1.115302",
+          "procedure_title": "Thủ tục Kết nối eContract với Nền tảng hợp đồng lao động điện tử",
+          "subdomain_key": "tuyen_dung",
+          "subdomain_label": "Tuyển dụng",
+          "event_id": 261,
+          "field": "Lao động, tiền lương",
+          "agency": "Bộ Nội vụ",
+          "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019efccb-629c-75f1-b62e-ef20d50c1335",
+          "raw_data_file": "C:\\Users\\ku060\\Downloads\\VAIC source\\data-pipeline\\raw_data\\1_115302\\1_115302_procedure_detail.md",
+          "raw_data_available": true,
+          "operation_group": "ket_noi_hop_dong_lao_dong_dien_tu",
+          "operation_key": "thu_tuc_ket_noi_econtract_voi_nen_tang_hop_dong_lao_dong_dien_tu",
+          "overview": "1. Bước 1. Nhà cung cấp eContract gửi 01 bộ hồ sơ theo quy định trực tuyến trên Cổng Dịch vụ công quốc gia hoặc qua dịch vụ bưu chính hoặc trực tiếp đến Bộ Nội vụ.",
+          "procedure_flow": "1. Bước 1. Nhà cung cấp eContract gửi 01 bộ hồ sơ theo quy định trực tuyến trên Cổng Dịch vụ công quốc gia hoặc qua dịch vụ bưu chính hoặc trực tiếp đến Bộ Nội vụ. 2. Bước 2. Trong thời hạn 20 ngày làm việc, kể từ ngày nhận đủ hồ sơ đề nghị kết nối eContract với Nền tảng hợp đồng lao động điện tử của Nhà cung cấp eContract, Bộ Nội vụ kiểm tra tính hợp lệ của hồ sơ, thực hiện kiểm thử kỹ thuật và thông báo cấp tài khoản kết nối cho Nhà cung cấp eContract. Trường hợp hồ sơ chưa hợp lệ hoặc kiểm thử kỹ thuật không đạt, Bộ Nội vụ thông báo cho Nhà cung cấp eContract theo địa chỉ thư điện tử hoặc địa chỉ trụ sở chính ghi trong văn bản đề nghị kết nối và nêu rõ lý do từ chối kết nối Nền tảng hợp đồng lao động điện tử. Trường hợp Nhà cung cấp eContract có sự thay đổi một trong các nội dung trong hồ sơ đề nghị kết nối thì phải thông báo về việc thay đổi thông tin kèm theo bản sao các giấy tờ, tài liệu chứng minh sự thay đổi đó đến Bộ Nội vụ để xác minh, điều chỉnh thông tin.",
+          "requirements": "Nhà cung cấp eContract được đề nghị kết nối eContract với Nền tảng hợp đồng lao động điện tử khi bảo đảm các điều kiện sau đây: - Có eContract đáp ứng điều kiện tại khoản 1 Điều 6 Nghị định số 337/2025/NĐ-CP ngày 24/12/2025 của Chính phủ quy định về hợp đồng lao động điện tử. - Có giải pháp, công nghệ để thu thập, kiểm tra, đối chiếu, bảo đảm sự khớp đúng giữa thông tin nhận biết tổ chức, cá nhân, dữ liệu sinh trắc học người đại diện theo pháp luật của tổ chức, cá nhân (là các yếu tố, đặc điểm sinh học gắn liền với người đại diện theo pháp luật của tổ chức, cá nhân thực hiện định danh, khó làm giả, có tỷ lệ trùng nhau thấp như vân tay, khuôn mặt, mống mắt, giọng nói và các yếu tố sinh trắc học khác) với các thông tin, yếu tố sinh trắc học tương ứng trên giấy tờ tùy thân của người đại diện theo pháp luật của tổ chức, cá nhân quy định tại khoản 2 Điều này và bảo đảm được định danh đúng chủ thể và thực hiện xác thực danh tính theo quy định của pháp luật về định danh và xác thực điện tử. - Có Giấy phép kinh doanh dịch vụ tin cậy có loại dịch vụ được phép kinh doanh là cung cấp dịch vụ chứng thực thông điệp dữ liệu theo pháp luật giao dịch điện tử.",
+          "submission_methods": [
+            "Trực tuyến",
+            "Trực tiếp",
+            "Dịch vụ bưu chính"
+          ],
+          "processing_time_values": [
+            "20 ngày làm việc",
+            "20 ngày làm việc",
+            "20 ngày làm việc"
+          ],
+          "document_groups": [],
+          "result_items": [
+            "Thông báo cấp tài khoản kết nối hoặc thông báo từ chối kết nối cho Nhà cung cấp eContract (Mã: `KQ.G09.001344`)"
+          ]
+        },
+        {
+          "procedure_code": "1.115303",
+          "procedure_title": "Đăng ký lao động đối với người lao động thuộc đối tượng tham gia bảo hiểm xã hội bắt buộc",
+          "subdomain_key": "tuyen_dung",
+          "subdomain_label": "Tuyển dụng",
+          "event_id": 261,
+          "field": "Việc làm",
+          "agency": "Bảo hiểm xã hội Việt Nam",
+          "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019efcd8-2bd1-7150-a6b3-30cdd8ad43b4",
+          "raw_data_file": "C:\\Users\\ku060\\Downloads\\VAIC source\\data-pipeline\\raw_data\\1_115303\\1_115303_procedure_detail.md",
+          "raw_data_available": true,
+          "operation_group": "dang_ky_lao_dong",
+          "operation_key": "dang_ky_lao_dong_doi_voi_nguoi_lao_dong_thuoc_doi_tuong_tham_gia_bao_hiem_xa_hoi_bat_buoc",
+          "overview": "1. Bước 1. Người lao động cung cấp cho người sử dụng lao động những thông tin có liên quan tại Tờ khai đăng ký tham gia bảo hiểm xã hội quy định tại khoản 1 Điều 5 Nghị định số 318/2025/NĐ-CP và chịu trách nhiệm về tính chính xác thông tin.",
+          "procedure_flow": "1. Bước 1. Người lao động cung cấp cho người sử dụng lao động những thông tin có liên quan tại Tờ khai đăng ký tham gia bảo hiểm xã hội quy định tại khoản 1 Điều 5 Nghị định số 318/2025/NĐ-CP và chịu trách nhiệm về tính chính xác thông tin. 2. Bước 2. Người sử dụng lao động đăng ký thông tin đăng ký lao động cho người lao động khi nộp hồ sơ đăng ký, điều chỉnh thông tin tham gia bảo hiểm xã hội theo quy định tại Luật Bảo hiểm xã hội và các văn bản hướng dẫn. 3. Bước 3. Thông tin đăng ký lao động của người lao động sau khi được cơ quan bảo hiểm xã hội tiếp nhận, xử lý được đồng bộ, chia sẻ với cơ sở dữ liệu về người lao động.",
+          "requirements": "- Người lao động thuộc đối tượng tham gia bảo hiểm xã hội bắt buộc đăng ký tham gia bảo hiểm xã hội thì thực hiện đăng ký lao đồng thời với việc đăng ký tham gia bảo hiểm xã hội. - Thời gian thực hiện: Từ ngày 01/7/2026.",
+          "submission_methods": [
+            "Trực tuyến",
+            "Trực tiếp",
+            "Dịch vụ bưu chính"
+          ],
+          "processing_time_values": [
+            "5 ngày làm việc",
+            "5 ngày làm việc",
+            "5 ngày làm việc"
+          ],
+          "document_groups": [],
+          "result_items": [
+            "theo quy định của Luật Bảo hiểm xã hội và các văn bản hướng dẫn. (Mã: `KQ.G09.001345`)"
+          ]
+        },
+        {
+          "procedure_code": "1.115304",
+          "procedure_title": "Điều chỉnh thông tin đăng ký lao động đối với người lao động thuộc đối tượng tham gia bảo hiểm xã hội bắt buộc",
+          "subdomain_key": "tuyen_dung",
+          "subdomain_label": "Tuyển dụng",
+          "event_id": 261,
+          "field": "Việc làm",
+          "agency": "Bảo hiểm xã hội Việt Nam",
+          "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019efcdf-c62a-77fa-b426-f0acd51a2eb5",
+          "raw_data_file": "C:\\Users\\ku060\\Downloads\\VAIC source\\data-pipeline\\raw_data\\1_115304\\1_115304_procedure_detail.md",
+          "raw_data_available": true,
+          "operation_group": "dieu_chinh_dang_ky_lao_dong",
+          "operation_key": "dieu_chinh_thong_tin_dang_ky_lao_dong_doi_voi_nguoi_lao_dong_thuoc_doi_tuong_tham_gia_bao_hiem_xa_hoi_bat_buoc",
+          "overview": "1. Bước 1. Người lao động cung cấp cho người sử dụng lao động những thông tin có liên quan tại Tờ khai đăng ký tham gia bảo hiểm xã hội quy định tại khoản 1 Điều 5 Nghị định số 318/2025/NĐ-CP và chịu trách nhiệm về tính chính xác thông tin.",
+          "procedure_flow": "1. Bước 1. Người lao động cung cấp cho người sử dụng lao động những thông tin có liên quan tại Tờ khai đăng ký tham gia bảo hiểm xã hội quy định tại khoản 1 Điều 5 Nghị định số 318/2025/NĐ-CP và chịu trách nhiệm về tính chính xác thông tin. 2. Bước 2. Người sử dụng lao động điều chỉnh thông tin đăng ký lao động cho người lao động khi nộp hồ sơ điều chỉnh thông tin tham gia bảo hiểm xã hội theo quy định tại Luật Bảo hiểm xã hội và các văn bản hướng dẫn. 3. Bước 3. Thông tin điều chỉnh thông tin đăng ký lao động của người lao động sau khi được cơ quan bảo hiểm xã hội tiếp nhận, xử lý được đồng bộ, chia sẻ với cơ sở dữ liệu về người lao động.",
+          "requirements": "- Người lao động thuộc đối tượng tham gia bảo hiểm xã hội bắt buộc khi thay đổi thông tin đăng ký lao động theo quy định tại điểm a khoản 1 Điều 7 Nghị định số 318/2025/NĐ-CP bao gồm: chức vụ, chức danh nghề, nghề nghiệp, loại hợp đồng, địa điểm làm việc.",
+          "submission_methods": [
+            "Trực tuyến",
+            "Trực tiếp",
+            "Dịch vụ bưu chính"
+          ],
+          "processing_time_values": [
+            "5 ngày làm việc",
+            "5 ngày làm việc",
+            "5 ngày làm việc"
+          ],
+          "document_groups": [],
+          "result_items": [
+            "theo quy định của Luật Bảo hiểm xã hội và các văn bản hướng dẫn. (Mã: `KQ.G09.001345`)"
+          ]
+        },
+        {
+          "procedure_code": "1.115305",
+          "procedure_title": "Đăng ký lao động đối với người lao động đang có việc làm không thuộc đối tượng tham gia bảo hiểm xã hội bắt buộc, người thất nghiệp.",
+          "subdomain_key": "tuyen_dung",
+          "subdomain_label": "Tuyển dụng",
+          "event_id": 261,
+          "field": "Việc làm",
+          "agency": "Bộ Nội vụ",
+          "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019efdad-c1a5-75ec-8410-001992fa132b",
+          "raw_data_file": "C:\\Users\\ku060\\Downloads\\VAIC source\\data-pipeline\\raw_data\\1_115305\\1_115305_procedure_detail.md",
+          "raw_data_available": true,
+          "operation_group": "dang_ky_lao_dong",
+          "operation_key": "dang_ky_lao_dong_doi_voi_nguoi_lao_dong_dang_co_viec_lam_khong_thuoc_doi_tuong_tham_gia_bao_hiem_xa_hoi_bat_buoc_nguoi_that_nghiep",
+          "overview": "1. Bước 1. Người lao động truy cập vào Sàn giao dịch việc làm quốc gia (https://www.vieclam.gov.vn) hoặc trên ứng dụng định danh điện tử VNeID, chọn mục đăng ký, điều chỉnh thông tin đăng ký lao động và điền thông tin vào Tờ khai điện tử quy định tại khoản 1 Điều 6 Nghị định số 318/2025/NĐ-CP.",
+          "procedure_flow": "1. Bước 1. Người lao động truy cập vào Sàn giao dịch việc làm quốc gia (https://www.vieclam.gov.vn) hoặc trên ứng dụng định danh điện tử VNeID, chọn mục đăng ký, điều chỉnh thông tin đăng ký lao động và điền thông tin vào Tờ khai điện tử quy định tại khoản 1 Điều 6 Nghị định số 318/2025/NĐ-CP. 2. Bước 2. Hệ thống đăng ký lao động tiếp nhận, xử lý và trả kết quả đăng ký thành công ngay sau khi người lao động hoàn thành Tờ khai điện tử, nếu đăng ký không thành công hệ thống phản hồi lý do. 3. Bước 3. Thông tin đăng ký lao động của người lao động được cập nhật, đồng bộ vào cơ sở dữ liệu về người lao động.",
+          "requirements": "- Người lao động đang có việc làm không thuộc đối tượng tham gia bảo hiểm xã hội bắt buộc, người thất nghiệp. - Thời gian thực hiện: Từ ngày 01/01/2027.",
+          "submission_methods": [
+            "Trực tuyến",
+            "Trực tiếp",
+            "Dịch vụ bưu chính"
+          ],
+          "processing_time_values": [
+            "1 ngày",
+            "1 ngày",
+            "1 ngày"
+          ],
+          "document_groups": [
+            {
+              "group_name": "Tờ khai điện tử theo mẫu ban hành kèm theo Nghị định số 318/2025/NĐ-CP.",
+              "documents": [
+                {
+                  "Tên giấy tờ": "Tờ khai điện tử theo mẫu ban hành kèm theo Nghị định số 318/2025/NĐ-CP.",
+                  "Bản chính": "1",
+                  "Bản sao": "0",
+                  "Tệp đính kèm": "[Tờ khai kèm theo ND318.doc](file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/1_115305/T%E1%BB%9D%20khai%20k%C3%A8m%20theo%20ND318.doc)"
+                }
+              ]
+            }
+          ],
+          "result_items": [
+            "- Nếu đăng ký không thành công hệ thống phản hồi lý do. (Mã: `KQ.G09.001347`)",
+            "- Hệ thống đăng ký lao động trả kết quả đăng ký thành công ngay sau khi người lao động hoàn thành Tờ khai điện tử. (Mã: `KQ.G09.001346`)"
+          ]
+        },
+        {
+          "procedure_code": "1.115306",
+          "procedure_title": "Điều chỉnh thông tin đăng ký lao động đối với người lao động đang có việc làm và không thuộc đối tượng tham gia bảo hiểm xã hội bắt buộc",
+          "subdomain_key": "tuyen_dung",
+          "subdomain_label": "Tuyển dụng",
+          "event_id": 261,
+          "field": "Việc làm",
+          "agency": "Bộ Nội vụ",
+          "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019f01bf-281e-7186-a8dc-38d81e49d05a",
+          "raw_data_file": "C:\\Users\\ku060\\Downloads\\VAIC source\\data-pipeline\\raw_data\\1_115306\\1_115306_procedure_detail.md",
+          "raw_data_available": true,
+          "operation_group": "dieu_chinh_dang_ky_lao_dong",
+          "operation_key": "dieu_chinh_thong_tin_dang_ky_lao_dong_doi_voi_nguoi_lao_dong_dang_co_viec_lam_va_khong_thuoc_doi_tuong_tham_gia_bao_hiem_xa_hoi_bat_buoc",
+          "overview": "1. Bước 1. Người lao động truy cập vào Sàn giao dịch việc làm quốc gia (https://www.vieclam.gov.vn) hoặc trên ứng dụng định danh điện tử VNeID, chọn mục đăng ký, điều chỉnh thông tin đăng ký lao động và điền thông tin vào Tờ khai điện tử quy định tại khoản 1 Điều 6 Nghị định số 318/2025/NĐ-CP;",
+          "procedure_flow": "1. Bước 1. Người lao động truy cập vào Sàn giao dịch việc làm quốc gia (https://www.vieclam.gov.vn) hoặc trên ứng dụng định danh điện tử VNeID, chọn mục đăng ký, điều chỉnh thông tin đăng ký lao động và điền thông tin vào Tờ khai điện tử quy định tại khoản 1 Điều 6 Nghị định số 318/2025/NĐ-CP; 2. Bước 2. Hệ thống đăng ký lao động tiếp nhận, xử lý và trả kết quả đăng ký thành công ngay sau khi người lao động hoàn thành Tờ khai điện tử, nếu đăng ký không thành công hệ thống phản hồi lý do; 3. Bước 3. Thông tin điều chỉnh thông tin đăng ký lao động của người lao động được cập nhật, đồng bộ vào cơ sở dữ liệu về người lao động.",
+          "requirements": "- Người lao động đang có việc làm và không thuộc đối tượng tham gia bảo hiểm xã hội bắt buộc khi thay đổi các thông tin sau: + Thay đổi thông tin quy định tại điểm a khoản 1 Điều 7 Nghị định 318/2025/NĐ-CP, bao gồm: chức vụ, chức danh nghề, nghề nghiệp, loại hợp đồng, địa điểm làm việc; + Thay đổi thông tin quy định tại điểm b khoản 1 Điều 7 Nghị định 318/2025/NĐ-CP, bao gồm: tên người sử dụng lao động, mã số, loại hình, địa chỉ trụ sở chính, ngành kinh tế. - Thời gian thực hiện: Từ ngày 01/01/2027.",
+          "submission_methods": [
+            "Trực tuyến",
+            "Trực tiếp",
+            "Dịch vụ bưu chính"
+          ],
+          "processing_time_values": [
+            "1 ngày",
+            "1 ngày",
+            "1 ngày"
+          ],
+          "document_groups": [],
+          "result_items": [
+            "- Nếu đăng ký không thành công hệ thống phản hồi lý do. (Mã: `KQ.G09.001347`)",
+            "- Hệ thống đăng ký lao động trả kết quả đăng ký thành công ngay sau khi người lao động hoàn thành Tờ khai điện tử. (Mã: `KQ.G09.001346`)"
+          ]
+        },
+        {
+          "procedure_code": "1.115307",
+          "procedure_title": "Điều chỉnh thông tin đăng ký lao động trong trường hợp thay đổi tình trạng từ người có việc làm sang người thất nghiệp",
+          "subdomain_key": "tuyen_dung",
+          "subdomain_label": "Tuyển dụng",
+          "event_id": 261,
+          "field": "Việc làm",
+          "agency": "Bộ Nội vụ",
+          "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019f01c4-b52d-7772-b731-96d884c8e0c8",
+          "raw_data_file": "C:\\Users\\ku060\\Downloads\\VAIC source\\data-pipeline\\raw_data\\1_115307\\1_115307_procedure_detail.md",
+          "raw_data_available": true,
+          "operation_group": "dieu_chinh_dang_ky_lao_dong",
+          "operation_key": "dieu_chinh_thong_tin_dang_ky_lao_dong_trong_truong_hop_thay_doi_tinh_trang_tu_nguoi_co_viec_lam_sang_nguoi_that_nghiep",
+          "overview": "1. Bước 1. Người lao động truy cập vào Sàn giao dịch việc làm quốc gia (https://www.vieclam.gov.vn) hoặc trên ứng dụng định danh điện tử VNeID, chọn mục đăng ký, điều chỉnh thông tin đăng ký lao động và điền vào Tờ khai điện tử quy định tại khoản 1 Điều 6 Nghị định số 318/2025/NĐ-CP.",
+          "procedure_flow": "1. Bước 1. Người lao động truy cập vào Sàn giao dịch việc làm quốc gia (https://www.vieclam.gov.vn) hoặc trên ứng dụng định danh điện tử VNeID, chọn mục đăng ký, điều chỉnh thông tin đăng ký lao động và điền vào Tờ khai điện tử quy định tại khoản 1 Điều 6 Nghị định số 318/2025/NĐ-CP. 2. Bước 2. Hệ thống đăng ký lao động tiếp nhận, xử lý và trả kết quả đăng ký thành công ngay sau khi người lao động hoàn thành Tờ khai điện tử, nếu đăng ký không thành công hệ thống phản hồi lý do. 3. Bước 3. Thông tin điều chỉnh thông tin đăng ký lao động của người lao động được cập nhật, đồng bộ vào cơ sở dữ liệu về người lao động.",
+          "requirements": "thay đổi tình trạng từ người có việc làm sang người thất nghiệp. - Thời gian thực hiện: Từ ngày 01/01/2027.",
+          "submission_methods": [
+            "Trực tuyến",
+            "Trực tiếp",
+            "Dịch vụ bưu chính"
+          ],
+          "processing_time_values": [
+            "1 ngày",
+            "1 ngày",
+            "1 ngày"
+          ],
+          "document_groups": [],
+          "result_items": [
+            "- Nếu đăng ký không thành công hệ thống phản hồi lý do. (Mã: `KQ.G09.001347`)",
+            "- Hệ thống đăng ký lao động trả kết quả đăng ký thành công ngay sau khi người lao động hoàn thành Tờ khai điện tử. (Mã: `KQ.G09.001346`)"
+          ]
+        },
+        {
+          "procedure_code": "1.115308",
+          "procedure_title": "Điều chỉnh thông tin đăng ký lao động trường hợp thay đổi tình trạng từ người có việc làm hoặc người thất nghiệp sang không tham gia hoạt động kinh tế",
+          "subdomain_key": "tuyen_dung",
+          "subdomain_label": "Tuyển dụng",
+          "event_id": 261,
+          "field": "Việc làm",
+          "agency": "Bộ Nội vụ",
+          "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019f01df-f6fd-716f-80d2-09946cd04626",
+          "raw_data_file": "C:\\Users\\ku060\\Downloads\\VAIC source\\data-pipeline\\raw_data\\1_115308\\1_115308_procedure_detail.md",
+          "raw_data_available": true,
+          "operation_group": "dieu_chinh_dang_ky_lao_dong",
+          "operation_key": "dieu_chinh_thong_tin_dang_ky_lao_dong_truong_hop_thay_doi_tinh_trang_tu_nguoi_co_viec_lam_hoac_nguoi_that_nghiep_sang_khong_tham_gia_hoat_dong_kinh_te",
+          "overview": "1. Bước 1. Người lao động truy cập vào Sàn giao dịch việc làm quốc gia (https://www.vieclam.gov.vn) hoặc trên ứng dụng định danh điện tử VNeID, chọn mục đăng ký, điều chỉnh thông tin đăng ký lao động và thực hiện điều chỉnh từ có việc làm hoặc thất nghiệp sang không hoạt động kinh tế theo nội dung Tờ khai điện tử quy định tại khoản 1 Điều 6 Nghị định số 318/2025/NĐ-CP.",
+          "procedure_flow": "1. Bước 1. Người lao động truy cập vào Sàn giao dịch việc làm quốc gia (https://www.vieclam.gov.vn) hoặc trên ứng dụng định danh điện tử VNeID, chọn mục đăng ký, điều chỉnh thông tin đăng ký lao động và thực hiện điều chỉnh từ có việc làm hoặc thất nghiệp sang không hoạt động kinh tế theo nội dung Tờ khai điện tử quy định tại khoản 1 Điều 6 Nghị định số 318/2025/NĐ-CP. 2. Bước 2. Hệ thống đăng ký lao động tiếp nhận, xử lý và trả kết quả đăng ký thành công ngay sau khi người lao động hoàn thành Tờ khai điện tử, nếu đăng ký không thành công hệ thống phản hồi lý do. 3. Bước 3. Thông tin điều chỉnh thông tin đăng ký lao động của người lao động được cập nhật, đồng bộ vào cơ sở dữ liệu về người lao động.",
+          "requirements": "- Thay đổi thông tin sau: + Thay đổi từ đang có việc làm sang không tham gia hoạt động kinh tế. + Thay đổi từ thất nghiệp sang không tham gia hoạt động kinh tế. - Thời gian thực hiện: Từ 01/01/2027",
+          "submission_methods": [
+            "Trực tuyến",
+            "Trực tiếp",
+            "Dịch vụ bưu chính"
+          ],
+          "processing_time_values": [
+            "1 ngày",
+            "1 ngày",
+            "1 ngày"
+          ],
+          "document_groups": [],
+          "result_items": [
+            "- Nếu đăng ký không thành công hệ thống phản hồi lý do. (Mã: `KQ.G09.001347`)",
+            "- Hệ thống đăng ký lao động trả kết quả đăng ký thành công ngay sau khi người lao động hoàn thành Tờ khai điện tử. (Mã: `KQ.G09.001346`)"
+          ]
+        },
+        {
+          "procedure_code": "1.115309",
+          "procedure_title": "Điều chỉnh thông tin đăng ký lao động đối với người lao động giao kết hợp đồng lao động với nhiều người sử dụng lao động",
+          "subdomain_key": "tuyen_dung",
+          "subdomain_label": "Tuyển dụng",
+          "event_id": 261,
+          "field": "Việc làm",
+          "agency": "Bộ Nội vụ",
+          "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019f01e5-b20f-745a-8249-67ad667eece1",
+          "raw_data_file": "C:\\Users\\ku060\\Downloads\\VAIC source\\data-pipeline\\raw_data\\1_115309\\1_115309_procedure_detail.md",
+          "raw_data_available": true,
+          "operation_group": "dieu_chinh_dang_ky_lao_dong",
+          "operation_key": "dieu_chinh_thong_tin_dang_ky_lao_dong_doi_voi_nguoi_lao_dong_giao_ket_hop_dong_lao_dong_voi_nhieu_nguoi_su_dung_lao_dong",
+          "overview": "1. Bước 1. Người lao động truy cập vào Sàn giao dịch việc làm quốc gia (https://www.vieclam.gov.vn) hoặc trên ứng dụng định danh điện tử VNeID, chọn mục đăng ký, điều chỉnh thông tin đăng ký lao động điền thông tin vào Tờ khai điện tử;",
+          "procedure_flow": "1. Bước 1. Người lao động truy cập vào Sàn giao dịch việc làm quốc gia (https://www.vieclam.gov.vn) hoặc trên ứng dụng định danh điện tử VNeID, chọn mục đăng ký, điều chỉnh thông tin đăng ký lao động điền thông tin vào Tờ khai điện tử; 2. Bước 2. Hệ thống đăng ký lao động tiếp nhận, xử lý và trả kết quả đăng ký thành công ngay sau khi người lao động hoàn thành Tờ khai điện tử, nếu đăng ký không thành công hệ thống phản hồi lý do; 3. Bước 3. Thông tin đăng ký lao động của người lao động được cập nhật, đồng bộ vào cơ sở dữ liệu về người lao động.",
+          "requirements": "- Người lao động giao kết hợp đồng với nhiều người sử dụng lao động có nhu cầu cập nhật bổ sung. - Thời gian thực hiện: từ ngày 01/01/2027.",
+          "submission_methods": [
+            "Trực tuyến",
+            "Trực tiếp",
+            "Dịch vụ bưu chính"
+          ],
+          "processing_time_values": [
+            "1 ngày",
+            "1 ngày",
+            "1 ngày"
+          ],
+          "document_groups": [],
+          "result_items": [
+            "- Nếu đăng ký không thành công hệ thống phản hồi lý do. (Mã: `KQ.G09.001347`)",
+            "- Hệ thống đăng ký lao động trả kết quả đăng ký thành công ngay sau khi người lao động hoàn thành Tờ khai điện tử. (Mã: `KQ.G09.001346`)"
+          ]
+        }
+      ]
+    }
+  ],
+  "subdomain_key": "tuyen_dung",
+  "subdomain_label": "Tuyển dụng"
+}

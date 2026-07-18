@@ -1,0 +1,113 @@
+{
+  "schema_version": "1.0",
+  "enricher_version": "0.2.0",
+  "source": {
+    "procedure_code": "1.013406",
+    "title": "Cấp lại Giấy phép hoạt động điện lực thuộc thẩm quyền cấp của Bộ Công Thương (trừ trường hợp giấy phép bị mất, bị hỏng)",
+    "group_key": "dien_luc_nha_o_dat_dai",
+    "workflow_family": null,
+    "subflow": null
+  },
+  "experience": {
+    "entry_label": "Hỗ trợ nhà ở, đất đai và điện lực",
+    "overview_summary": "Thủ tục này thuộc nhóm nhà ở, đất đai và điện lực, thường cần kiểm tra hiện trạng hồ sơ tài sản hoặc điều kiện hạ tầng liên quan. Kết quả thường nhận được là GIẤY PHÉP HOẠT ĐỘNG ĐIỆN LỰC. Thời gian xử lý tham khảo: 7 ngày làm việc.",
+    "next_step_summary": "Nên chuẩn bị trước thông tin thửa đất, tài sản hoặc địa điểm tiếp nhận, rồi chọn kênh nộp phù hợp: Trực tiếp, Trực tuyến, Dịch vụ bưu chính. Hiện có khoảng 6 mục giấy tờ cần theo dõi trong checklist.",
+    "tone": "supportive_public_service"
+  },
+  "guidance": {
+    "highlight_documents": [
+      {
+        "bucket": "required",
+        "name": "4. Ngoài các hồ sơ quy định tại các khoản 1, 2 và khoản 3 Điều 15 Nghị định số 61/2025/NĐ-CP, hồ sơ cấp lại giấy phép hoạt động điện lực bao gồm các nội dung saи: + Các tài liệu quy định tại điểm A.I.2 và A.I.3 mục 1 Phụ lục I.2 Nghị quyết số 66.16/2026/NQ-CP đối với lĩnh vực phát điện; + Các tài liệu quy định tại điểm A.II.2 và A.II.3 mục 1 Phụ lục I.2 Nghị quyết số 66.16/2026/NQ-CP đối với lĩnh vực truyền tải điện; + Các tài liệu quy định tại điểm A.III.2 và A.III.3 mục 1 Phụ lục I.2 Nghị quyết số 66.16/2026/NQ-CP đối với lĩnh vực phân phối điện; + Các tài liệu quy định tại điểm A.IV.2 và A.IV.3 mục 1 Phụ lục I.2 Nghị quyết số 66.16/2026/NQ-CP đối với lĩnh vực bán buôn điện; + Các tài liệu quy định tại điểm A.V.2 và A.V.3 mục 1 Phụ lục I.2 Nghị quyết số 66.16/2026/NQ-CP đối với lĩnh vực bán lẻ điện.",
+        "conditions": [],
+        "attachment_path": null
+      },
+      {
+        "bucket": "required",
+        "name": "2. Báo cáo duy trì điều kiện hoạt động điện lực tính đến thời điểm đề nghị cấp lại giấy phép đối với lĩnh vực tương ứng theo Mẫu 05a, 05b, 05c quy định tại Phụ lục ban hành kèm theo Nghị định này.",
+        "conditions": [],
+        "attachment_path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/1_013406/DMu5a%20%281%29.docx"
+      },
+      {
+        "bucket": "required",
+        "name": "3. Bản cam kết của tổ chức đề nghị cấp lại giấy phép hoạt động điện lực về việc các nội dung của giấy phép hoạt động điện lực quy định tại các khoản 2, 3 và khoản 4 Điều 34 Luật Điện lực không thay đổi so với giấy phép đã cấp",
+        "conditions": [],
+        "attachment_path": null
+      },
+      {
+        "bucket": "required",
+        "name": "1. Văn bản đề nghị cấp lại giấy phép hoạt động điện lực theo Mẫu 01 quy định tại Phụ lục ban hành kèm theo Nghị định này.",
+        "conditions": [],
+        "attachment_path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/1_013406/Mu01%20%285%29.docx"
+      },
+      {
+        "bucket": "conditional",
+        "name": "5. Trường hợp quy định tại điểm c khoản 3 Điều 32 Luật Điện lực, hồ sơ bao gồm các khoản 1, 2, 3 và khoản 4 Điều này và tài liệu chứng minh việc hoàn thành các trách nhiệm, nghĩa vụ theo quy định của pháp luật.",
+        "conditions": [
+          "5. Trường hợp quy định tại điểm c khoản 3 Điều 32 Luật Điện lực, hồ sơ bao gồm các khoản 1, 2, 3 và khoản 4 Điều này và tài liệu chứng minh việc hoàn thành các trách nhiệm, nghĩa vụ theo quy định của pháp luật."
+        ],
+        "attachment_path": null
+      },
+      {
+        "bucket": "conditional",
+        "name": "6. Trường hợp thời hạn của giấy phép hoạt động điện lực đã cấp theo quy định tại điểm b, điểm c khoản 4 Điều 20 Nghị định này, khi đề nghị cấp lại giấy phép hoạt động điện lực, hồ sơ đối với từng lĩnh vực thực hiện theo quy định tại các Điều 8, 9, 10, 11 và Điều 12 Nghị định này.",
+        "conditions": [
+          "6. Trường hợp thời hạn của giấy phép hoạt động điện lực đã cấp theo quy định tại điểm b, điểm c khoản 4 Điều 20 Nghị định này, khi đề nghị cấp lại giấy phép hoạt động điện lực, hồ sơ đối với từng lĩnh vực thực hiện theo quy định tại các Điều 8, 9, 10, 11 và Điều 12 Nghị định này."
+        ],
+        "attachment_path": null
+      }
+    ],
+    "special_cases": [],
+    "common_errors": [
+      "Điền sai mẫu tờ khai hoặc chọn sai biểu mẫu đi kèm."
+    ],
+    "validation_hints": [
+      "Nên xác định trước kênh nộp hồ sơ để biết có cần bản giấy, bản điện tử hay xuất trình trực tiếp.",
+      "Có mẫu biểu đính kèm, nên kiểm tra đúng biểu mẫu trước khi nộp.",
+      "Nên đối chiếu trước thông tin thửa đất, tài sản hoặc hiện trạng hồ sơ để tránh bị yêu cầu chỉnh sửa."
+    ]
+  },
+  "intake": {
+    "candidate_input_fields": [
+      {
+        "field_id": "property_or_service_need",
+        "label": "Nhu cầu về đất đai, nhà ở hoặc điện lực",
+        "field_type": "text",
+        "required": true
+      },
+      {
+        "field_id": "property_location",
+        "label": "Địa điểm tài sản hoặc nơi sử dụng dịch vụ",
+        "field_type": "text",
+        "required": true
+      },
+      {
+        "field_id": "submission_channel_preference",
+        "label": "Kênh nộp dự kiến",
+        "field_type": "enum",
+        "required": false
+      },
+      {
+        "field_id": "has_current_certificate",
+        "label": "Đã có giấy tờ/tài liệu hiện trạng",
+        "field_type": "boolean",
+        "required": false
+      }
+    ],
+    "suggested_clarifying_questions": [
+      "Bạn đang xử lý nhu cầu nào về đất đai, nhà ở hoặc điện lực?",
+      "Bạn đã có thông tin thửa đất, địa chỉ tài sản hoặc giấy tờ hiện trạng chưa?"
+    ]
+  },
+  "ui_hints": {
+    "primary_channel": "online",
+    "result_label": "GIẤY PHÉP HOẠT ĐỘNG ĐIỆN LỰC",
+    "time_badge": "7 ngày làm việc",
+    "document_count_badge": 6
+  },
+  "provenance": {
+    "generator": "workflow_domain_enricher",
+    "derivation_mode": "rule_based_semantic_enrichment",
+    "supported_group": true
+  }
+}

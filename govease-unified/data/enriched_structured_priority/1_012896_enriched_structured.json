@@ -1,0 +1,111 @@
+{
+  "schema_version": "1.0",
+  "enricher_version": "0.2.0",
+  "source": {
+    "procedure_code": "1.012896",
+    "title": "Cho thuê, cho thuê mua nhà ở xã hội do Nhà nước đầu tư xây dựng bằng vốn đầu tư công",
+    "group_key": "dien_luc_nha_o_dat_dai",
+    "workflow_family": "housing_land_electricity_workflow",
+    "subflow": "xay_dung_cong_trinh_nha_o"
+  },
+  "experience": {
+    "entry_label": "Hỗ trợ nhà ở, đất đai và điện lực",
+    "overview_summary": "Thủ tục này thuộc nhóm nhà ở, đất đai và điện lực, thường cần kiểm tra hiện trạng hồ sơ tài sản hoặc điều kiện hạ tầng liên quan. Kết quả thường nhận được là Hợp đồng thuê, thuê mua nhà ở xã hội do Nhà nước đầu tư xây dựng bằng vốn đầu tư công. Thời gian xử lý tham khảo: 30 ngày.",
+    "next_step_summary": "Nên chuẩn bị trước thông tin thửa đất, tài sản hoặc địa điểm tiếp nhận, rồi chọn kênh nộp phù hợp: Trực tiếp, Trực tuyến, Dịch vụ bưu chính. Hiện có khoảng 8 mục giấy tờ cần theo dõi trong checklist.",
+    "tone": "supportive_public_service"
+  },
+  "guidance": {
+    "highlight_documents": [
+      {
+        "bucket": "required",
+        "name": "Đơn đăng ký thuê nhà ở xã hội theo mẫu;",
+        "conditions": [],
+        "attachment_path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/1_012896/DON%20DANG%20KY%20MUA%20THUE%20MUA%20NOXH%20NOLLVT%20ND%20136.docx"
+      },
+      {
+        "bucket": "required",
+        "name": "Giấy tờ chứng minh đối tượng theo hướng dẫn của Bộ trưởng Bộ Xây dựng, Bộ trưởng Bộ Quốc phòng, Bộ trưởng Bộ Công an.",
+        "conditions": [],
+        "attachment_path": null
+      },
+      {
+        "bucket": "required",
+        "name": "Giấy tờ chứng minh điều kiện được hưởng chính sách hỗ trợ về nhà ở xã hội theo quy định.",
+        "conditions": [],
+        "attachment_path": null
+      },
+      {
+        "bucket": "required",
+        "name": "Đơn đăng ký thuê mua nhà ở xã hội theo mẫu;",
+        "conditions": [],
+        "attachment_path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/1_012896/DON%20DANG%20KY%20MUA%20THUE%20MUA%20NOXH%20NOLLVT%20ND%20136.docx"
+      },
+      {
+        "bucket": "required",
+        "name": "Hồ sơ gồm bản sao và xuất trình bản chính để đối chiếu hoặc bản sao được chứng thực hoặc bản sao điện tử có giá trị pháp lý các giấy tờ sau:",
+        "conditions": [],
+        "attachment_path": null
+      },
+      {
+        "bucket": "conditional",
+        "name": "Trường hợp thuê mua nhà ở xã hội:",
+        "conditions": [
+          "Trường hợp thuê mua nhà ở xã hội:"
+        ],
+        "attachment_path": null
+      }
+    ],
+    "special_cases": [],
+    "common_errors": [
+      "Điền sai mẫu tờ khai hoặc chọn sai biểu mẫu đi kèm."
+    ],
+    "validation_hints": [
+      "Nên xác định trước kênh nộp hồ sơ để biết có cần bản giấy, bản điện tử hay xuất trình trực tiếp.",
+      "Có mẫu biểu đính kèm, nên kiểm tra đúng biểu mẫu trước khi nộp.",
+      "Nên đối chiếu trước thông tin thửa đất, tài sản hoặc hiện trạng hồ sơ để tránh bị yêu cầu chỉnh sửa."
+    ]
+  },
+  "intake": {
+    "candidate_input_fields": [
+      {
+        "field_id": "property_or_service_need",
+        "label": "Nhu cầu về đất đai, nhà ở hoặc điện lực",
+        "field_type": "text",
+        "required": true
+      },
+      {
+        "field_id": "property_location",
+        "label": "Địa điểm tài sản hoặc nơi sử dụng dịch vụ",
+        "field_type": "text",
+        "required": true
+      },
+      {
+        "field_id": "submission_channel_preference",
+        "label": "Kênh nộp dự kiến",
+        "field_type": "enum",
+        "required": false
+      },
+      {
+        "field_id": "has_current_certificate",
+        "label": "Đã có giấy tờ/tài liệu hiện trạng",
+        "field_type": "boolean",
+        "required": false
+      }
+    ],
+    "suggested_clarifying_questions": [
+      "Bạn đang xử lý nhu cầu nào về đất đai, nhà ở hoặc điện lực?",
+      "Bạn đã có thông tin thửa đất, địa chỉ tài sản hoặc giấy tờ hiện trạng chưa?"
+    ]
+  },
+  "ui_hints": {
+    "primary_channel": "online",
+    "result_label": "Hợp đồng thuê, thuê mua nhà ở xã hội do Nhà nước đầu tư xây dựng bằng vốn đầu tư công",
+    "time_badge": "30 ngày",
+    "document_count_badge": 8
+  },
+  "provenance": {
+    "generator": "workflow_domain_enricher",
+    "derivation_mode": "rule_based_semantic_enrichment",
+    "supported_group": true
+  }
+}

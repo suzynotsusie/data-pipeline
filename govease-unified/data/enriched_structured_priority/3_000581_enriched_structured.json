@@ -1,0 +1,101 @@
+{
+  "schema_version": "1.0",
+  "enricher_version": "0.2.0",
+  "source": {
+    "procedure_code": "3.000581",
+    "title": "Hỗ trợ chi phí đào tạo tiếng Hàn cho người lao động tham dự kỳ thi tiếng Hàn để đi làm việc tại Hàn Quốc theo Chương trình cấp phép việc làm cho lao động nước ngoài của Hàn Quốc (gọi tắt là Chương trình EPS)",
+    "group_key": "viec_lam",
+    "workflow_family": null,
+    "subflow": null
+  },
+  "experience": {
+    "entry_label": "Hỗ trợ việc làm và lao động",
+    "overview_summary": "Thủ tục này thuộc nhóm việc làm và lao động, thường cần kiểm tra hồ sơ nghề nghiệp, đơn vị sử dụng lao động hoặc điều kiện hưởng chế độ liên quan. Kết quả thường nhận được là Quyết định Hỗ trợ chi phí đào tạo tiếng Hàn cho người lao động tham dự kỳ thi tiếng Hàn để đi làm việc tại Hàn Quốc theo Chương trình EPS. Thời gian xử lý tham khảo: 5 ngày làm việc.",
+    "next_step_summary": "Nên xác định rõ nhu cầu lao động, hồ sơ nghề nghiệp hoặc chế độ cần giải quyết trước khi nộp. Có thể chọn kênh nộp phù hợp: Trực tiếp, Trực tuyến, Dịch vụ bưu chính. Hiện có khoảng 4 mục giấy tờ cần theo dõi trong checklist.",
+    "tone": "supportive_public_service"
+  },
+  "guidance": {
+    "highlight_documents": [
+      {
+        "bucket": "required",
+        "name": "Giấy đề nghị hỗ trợ (Mẫu số 01).",
+        "conditions": [],
+        "attachment_path": null
+      },
+      {
+        "bucket": "required",
+        "name": "Bản sao chứng chỉ hoàn thành khoá học đào tạo nghề",
+        "conditions": [],
+        "attachment_path": null
+      },
+      {
+        "bucket": "required",
+        "name": "Chứng từ, hóa đơn tài chính hợp pháp...",
+        "conditions": [],
+        "attachment_path": null
+      },
+      {
+        "bucket": "required",
+        "name": "Bản sao Thẻ dự thi tiếng Hàn theo Chương trình cấp phép việc làm cho lao động nước ngoài (EPS-TOPIK)",
+        "conditions": [],
+        "attachment_path": null
+      }
+    ],
+    "special_cases": [
+      "Có yếu tố nước ngoài",
+      "Có thể cần xác minh quan hệ lao động hoặc giấy phép làm việc"
+    ],
+    "common_errors": [
+      "Thiếu giấy tờ hợp pháp hóa hoặc giấy tờ nhân thân của phía nước ngoài.",
+      "Điền sai mẫu tờ khai hoặc chọn sai biểu mẫu đi kèm.",
+      "Thiếu hồ sơ về vị trí việc làm, đơn vị sử dụng lao động hoặc điều kiện làm việc áp dụng."
+    ],
+    "validation_hints": [
+      "Nên xác định trước kênh nộp hồ sơ để biết có cần bản giấy, bản điện tử hay xuất trình trực tiếp.",
+      "Nên xác định đúng nhóm thủ tục lao động, đơn vị liên quan và hồ sơ nghề nghiệp cần xuất trình."
+    ]
+  },
+  "intake": {
+    "candidate_input_fields": [
+      {
+        "field_id": "employment_need",
+        "label": "Nhu cầu việc làm hoặc lao động",
+        "field_type": "text",
+        "required": true
+      },
+      {
+        "field_id": "worker_or_employer_info",
+        "label": "Thông tin người lao động hoặc đơn vị sử dụng lao động",
+        "field_type": "text",
+        "required": true
+      },
+      {
+        "field_id": "submission_channel_preference",
+        "label": "Kênh nộp dự kiến",
+        "field_type": "enum",
+        "required": false
+      },
+      {
+        "field_id": "has_supporting_employment_documents",
+        "label": "Đã có hồ sơ lao động liên quan",
+        "field_type": "boolean",
+        "required": false
+      }
+    ],
+    "suggested_clarifying_questions": [
+      "Bạn đang cần giải quyết thủ tục lao động nào cho người lao động hoặc doanh nghiệp?",
+      "Hồ sơ nghề nghiệp, đơn vị sử dụng lao động hoặc yếu tố lao động nước ngoài đã rõ chưa?"
+    ]
+  },
+  "ui_hints": {
+    "primary_channel": "in_person",
+    "result_label": "Quyết định Hỗ trợ chi phí đào tạo tiếng Hàn cho người lao động tham dự kỳ thi tiếng Hàn để đi làm việc tại Hàn Quốc theo Chương trình EPS",
+    "time_badge": "5 ngày làm việc",
+    "document_count_badge": 4
+  },
+  "provenance": {
+    "generator": "workflow_domain_enricher",
+    "derivation_mode": "rule_based_semantic_enrichment",
+    "supported_group": true
+  }
+}

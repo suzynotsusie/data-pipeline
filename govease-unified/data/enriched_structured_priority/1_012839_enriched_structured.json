@@ -1,0 +1,78 @@
+{
+  "schema_version": "1.0",
+  "enricher_version": "0.2.0",
+  "source": {
+    "procedure_code": "1.012839",
+    "title": "Thủ tục tham vấn trị giá hải qua đối với hàng hóa xuất khẩu, nhập khẩu",
+    "group_key": "nguoi_than_qua_doi",
+    "workflow_family": null,
+    "subflow": null
+  },
+  "experience": {
+    "entry_label": "Hỗ trợ chế độ cho thân nhân",
+    "overview_summary": "Thủ tục này thuộc nhóm hỗ trợ thân nhân người đã mất, thường liên quan đến mai táng phí, tử tuất hoặc chế độ phát sinh sau khi người hưởng qua đời. Kết quả thường nhận được là Biên bản tham vấn. Thời gian xử lý tham khảo: 30 ngày làm việc.",
+    "next_step_summary": "Nên chuẩn bị giấy tờ của người đã mất, thân nhân và căn cứ hưởng chế độ trước khi nộp. Có thể chọn kênh nộp phù hợp: Trực tiếp. Hiện có 1 mục giấy tờ cần theo dõi trong checklist.",
+    "tone": "supportive_public_service"
+  },
+  "guidance": {
+    "highlight_documents": [
+      {
+        "bucket": "conditional",
+        "name": "Thành phần hồ sơ: Hợp đồng mua bán hàng hoá, hoá đơn thương mại; chứng từ thể hiện chi phí vận tải (nếu có); chứng từ bảo hiểm (nếu có); chứng nhận xuất xứ hàng hoá theo quy định của pháp luật đối với hàng hoá nhập khẩu (nếu có); chứng từ thanh toán (nếu có) và các chứng từ, tài liệu theo phương pháp xác định trị giá khai báo quy định tại Điều 8, Điều 9, Điều 10, Điều 11 Thông tư số 39/2015/TT-BTC ngày 25/3/2015; khoản 3, khoản 5, k hoản 7 Điều 1 Thông tư số 60/2019/TT-BTC ngày 30/8/2019; khoản 14 Điều 1 Thông tư số 39/2018/TT-BTC ngày 20/4/2018.",
+        "conditions": [
+          "Thành phần hồ sơ: Hợp đồng mua bán hàng hoá, hoá đơn thương mại; chứng từ thể hiện chi phí vận tải (nếu có); chứng từ bảo hiểm (nếu có); chứng nhận xuất xứ hàng hoá theo quy định của pháp luật đối với hàng hoá nhập khẩu (nếu có); chứng từ thanh toán (nếu có) và các chứng từ, tài liệu theo phương pháp xác định trị giá khai báo quy định tại Điều 8, Điều 9, Điều 10, Điều 11 Thông tư số 39/2015/TT-BTC ngày 25/3/2015; khoản 3, khoản 5, k hoản 7 Điều 1 Thông tư số 60/2019/TT-BTC ngày 30/8/2019; khoản 14 Điều 1 Thông tư số 39/2018/TT-BTC ngày 20/4/2018."
+        ],
+        "attachment_path": null
+      }
+    ],
+    "special_cases": [],
+    "common_errors": [],
+    "validation_hints": [
+      "Nên xác định trước kênh nộp hồ sơ để biết có cần bản giấy, bản điện tử hay xuất trình trực tiếp.",
+      "Nên kiểm tra kỹ giấy tờ của người đã mất, thân nhân và căn cứ phát sinh chế độ."
+    ]
+  },
+  "intake": {
+    "candidate_input_fields": [
+      {
+        "field_id": "deceased_person_name",
+        "label": "Người đã mất",
+        "field_type": "text",
+        "required": true
+      },
+      {
+        "field_id": "claimant_relationship",
+        "label": "Quan hệ của người nộp với người đã mất",
+        "field_type": "enum",
+        "required": true
+      },
+      {
+        "field_id": "support_benefit_type",
+        "label": "Loại chế độ cần giải quyết",
+        "field_type": "text",
+        "required": true
+      },
+      {
+        "field_id": "submission_channel_preference",
+        "label": "Kênh nộp dự kiến",
+        "field_type": "enum",
+        "required": false
+      }
+    ],
+    "suggested_clarifying_questions": [
+      "Bạn đang cần giải quyết mai táng phí, tử tuất hay chế độ nào cho thân nhân?",
+      "Giấy tờ của người đã mất và mối quan hệ của người nộp hồ sơ đã sẵn sàng chưa?"
+    ]
+  },
+  "ui_hints": {
+    "primary_channel": "in_person",
+    "result_label": "Biên bản tham vấn",
+    "time_badge": "30 ngày làm việc",
+    "document_count_badge": 1
+  },
+  "provenance": {
+    "generator": "workflow_domain_enricher",
+    "derivation_mode": "rule_based_semantic_enrichment",
+    "supported_group": true
+  }
+}

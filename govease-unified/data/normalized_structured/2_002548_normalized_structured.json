@@ -1,0 +1,213 @@
+{
+  "schema_version": "1.0",
+  "normalizer_version": "0.2.0",
+  "source": {
+    "procedure_code": "2.002548",
+    "title": "Thủ tục cấp lại Giấy chứng nhận chuyển giao công nghệ khuyến khích chuyển giao (trừ trường hợp thuộc thẩm quyền giải quyết của Bộ Khoa học và Công nghệ)",
+    "raw_structured_parser_version": "0.1.0",
+    "field": "Hoạt động khoa học và công nghệ"
+  },
+  "procedure": {
+    "level": "Cấp tỉnh",
+    "procedure_type": "NOT_ASSIGNED_REGULATION",
+    "target_users": [
+      "Công dân Việt Nam",
+      "Doanh nghiệp",
+      "Doanh nghiệp có vốn đầu tư nước ngoài",
+      "Tổ chức (không bao gồm doanh nghiệp",
+      "HTX)"
+    ],
+    "authorities": [
+      "Cơ quan chuyên môn về khoa học và công nghệ thuộc UBND cấp tỉnh"
+    ],
+    "receiving_places": []
+  },
+  "submission": {
+    "channels": [
+      "in_person",
+      "online",
+      "postal"
+    ],
+    "methods": [
+      {
+        "method_id": "method_1",
+        "channel": "online",
+        "processing_time_text": "5 ngày làm việc",
+        "fee_text": null,
+        "description": "- Nộp trực tuyến tại Cổng dịch vụ công quốc gia (https://dichvucong.gov.vn).",
+        "is_online": true,
+        "is_postal": false,
+        "is_in_person": false
+      },
+      {
+        "method_id": "method_2",
+        "channel": "postal",
+        "processing_time_text": "5 ngày làm việc",
+        "fee_text": null,
+        "description": "- Nộp qua dịch vụ bưu chính tới Trung tâm Phục vụ hành chính công cấp tỉnh (Ủy ban nhân dân cấp tỉnh).",
+        "is_online": false,
+        "is_postal": true,
+        "is_in_person": false
+      },
+      {
+        "method_id": "method_3",
+        "channel": "in_person",
+        "processing_time_text": "5 ngày làm việc",
+        "fee_text": null,
+        "description": "- Nộp trực tiếp tại Trung tâm Phục vụ hành chính công cấp tỉnh (Ủy ban nhân dân cấp tỉnh).",
+        "is_online": false,
+        "is_postal": false,
+        "is_in_person": true
+      }
+    ],
+    "timing_summary": {
+      "unique_processing_times": [
+        "5 ngày làm việc"
+      ],
+      "method_count": 3
+    }
+  },
+  "documents": {
+    "required": [
+      {
+        "document_id": "v_n_b_n_ngh_c_p_l_i_gi_y_ch_ng_nh_n_chuy_n_giao_c_ng_ngh_khuy_n_kh_ch_chuy_n_giao_theo_m_u_s_09_t_i_ph_l_c_ban_h_nh_k_m_theo_quy_t_nh_s_12_2023_q_ttg",
+        "name": "Văn bản đề nghị cấp lại Giấy chứng nhận chuyển giao công nghệ khuyến khích chuyển giao theo Mẫu số 09 tại Phụ lục ban hành kèm theo Quyết định số 12/2023/QĐ-TTg",
+        "group_name": "cấp lại Giấy chứng nhận chuyển giao công nghệ khuyến khích chuyển giao",
+        "group_type": "required",
+        "original_count": "1",
+        "copy_count": "0",
+        "conditions": [],
+        "attachment_label": "Mẫu 09_VB đề nghị cấp lại Giấy CN CGCN KKCG.docx",
+        "attachment_path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/2_002548/M%E1%BA%ABu%2009_VB%20%C4%91%E1%BB%81%20ngh%E1%BB%8B%20c%E1%BA%A5p%20l%E1%BA%A1i%20Gi%E1%BA%A5y%20CN%20CGCN%20KKCG.docx"
+      }
+    ],
+    "conditional": [
+      {
+        "document_id": "b_n_ch_nh_gi_y_ch_ng_nh_n_chuy_n_giao_c_ng_ngh_khuy_n_kh_ch_chuy_n_giao_tr_tr_ng_h_p_gi_y_ch_ng_nh_n_b_m_t",
+        "name": "Bản chính Giấy chứng nhận chuyển giao công nghệ khuyến khích chuyển giao (trừ trường hợp Giấy chứng nhận bị mất)",
+        "group_name": "cấp lại Giấy chứng nhận chuyển giao công nghệ khuyến khích chuyển giao",
+        "group_type": "required",
+        "original_count": "1",
+        "copy_count": "0",
+        "conditions": [
+          "Bản chính Giấy chứng nhận chuyển giao công nghệ khuyến khích chuyển giao (trừ trường hợp Giấy chứng nhận bị mất)"
+        ],
+        "attachment_label": null,
+        "attachment_path": null
+      },
+      {
+        "document_id": "b_n_sao_m_t_trong_c_c_gi_y_t_sau_gi_y_ch_ng_nh_n_ng_k_u_t_gi_y_ch_ng_nh_n_ng_k_doanh_nghi_p_ho_c_c_c_gi_y_t_kh_c_c_gi_tr_ph_p_l_t_ng_ng_c_a_c_c_b_n_tham_gia_chuy_n_giao_c_ng_ngh_n_u_thay_i_t_n_a_ch_c_a_c_c_b_n_tham_gia_chuy_n_giao_c_ng_ngh_c_quan_ti_p_nh_n_gi_i_quy_t_th_t_c_h_nh_ch_nh_khai_th_c_s_d_ng_th_ng_tin_c_trong_c_c_c_s_d_li_u_c_c_quan_ch_qu_n_c_s_d_li_u_c_ng_b_thay_th_th_nh_ph_n_h_s_gi_i_quy_t_th_t_c_h_nh_ch_nh_tr_ng_h_p_kh_ng_khai_th_c_c_th_ng_tin_ho_c_th_ng_tin_khai_th_c_c_kh_ng_y_ch_nh_x_c_th_c_quan_ng_i_c_th_m_quy_n_ti_p_nh_n_gi_i_quy_t_th_t_c_h_nh_ch_nh_y_u_c_u_c_nh_n_t_ch_c_b_sung_th_nh_ph_n_h_s_gi_i_quy_t_th_t_c_h_nh_ch_nh",
+        "name": "Bản sao một trong các giấy tờ sau: Giấy chứng nhận đăng ký đầu tư, Giấy chứng nhận đăng ký doanh nghiệp hoặc các giấy tờ khác có giá trị pháp lý tương đương của các bên tham gia chuyển giao công nghệ (nếu thay đổi tên, địa chỉ của các bên tham gia chuyển giao công nghệ). Cơ quan tiếp nhận, giải quyết thủ tục hành chính khai thác, sử dụng thông tin đã có trong các cơ sở dữ liệu được cơ quan chủ quản cơ sở dữ liệu công bố để thay thế thành phần hồ sơ giải quyết thủ tục hành chính. Trường hợp không khai thác được thông tin hoặc thông tin khai thác được không đầy đủ, chính xác thì cơ quan, người có thẩm quyền tiếp nhận, giải quyết thủ tục hành chính yêu cầu cá nhân, tổ chức bổ sung thành phần hồ sơ để giải quyết thủ tục hành chính.",
+        "group_name": "cấp lại Giấy chứng nhận chuyển giao công nghệ khuyến khích chuyển giao",
+        "group_type": "required",
+        "original_count": "0",
+        "copy_count": "1",
+        "conditions": [
+          "Bản sao một trong các giấy tờ sau: Giấy chứng nhận đăng ký đầu tư, Giấy chứng nhận đăng ký doanh nghiệp hoặc các giấy tờ khác có giá trị pháp lý tương đương của các bên tham gia chuyển giao công nghệ (nếu thay đổi tên, địa chỉ của các bên tham gia chuyển giao công nghệ). Cơ quan tiếp nhận, giải quyết thủ tục hành chính khai thác, sử dụng thông tin đã có trong các cơ sở dữ liệu được cơ quan chủ quản cơ sở dữ liệu công bố để thay thế thành phần hồ sơ giải quyết thủ tục hành chính. Trường hợp không khai thác được thông tin hoặc thông tin khai thác được không đầy đủ, chính xác thì cơ quan, người có thẩm quyền tiếp nhận, giải quyết thủ tục hành chính yêu cầu cá nhân, tổ chức bổ sung thành phần hồ sơ để giải quyết thủ tục hành chính."
+        ],
+        "attachment_label": null,
+        "attachment_path": null
+      }
+    ],
+    "presented": [],
+    "notes": [],
+    "forms": [
+      {
+        "name": "Văn bản đề nghị cấp lại Giấy chứng nhận chuyển giao công nghệ khuyến khích chuyển giao theo Mẫu số 09 tại Phụ lục ban hành kèm theo Quyết định số 12/2023/QĐ-TTg",
+        "attachment_label": "Mẫu 09_VB đề nghị cấp lại Giấy CN CGCN KKCG.docx",
+        "attachment_path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/2_002548/M%E1%BA%ABu%2009_VB%20%C4%91%E1%BB%81%20ngh%E1%BB%8B%20c%E1%BA%A5p%20l%E1%BA%A1i%20Gi%E1%BA%A5y%20CN%20CGCN%20KKCG.docx"
+      }
+    ],
+    "empty_groups": [],
+    "document_count": 3
+  },
+  "process": {
+    "steps": [
+      {
+        "step_id": "step_1",
+        "title": null,
+        "content": "1. **cấp lại Giấy chứng nhận chuyển giao công nghệ khuyến khích chuyển giao**",
+        "actor": "user",
+        "channel_hint": null,
+        "time_hint": null
+      },
+      {
+        "step_id": "step_2",
+        "title": null,
+        "content": "- Bên giao hoặc bên nhận công nghệ thay mặt các bên nộp bộ hồ sơ đề nghị cấp lại Giấy chứng nhận đến Trung tâm Phục vụ hành chính công cấp tỉnh (Cơ quan chuyên môn về khoa học và công nghệ thuộc Ủy ban nhân dân cấp tỉnh);",
+        "actor": "authority",
+        "channel_hint": null,
+        "time_hint": null
+      },
+      {
+        "step_id": "step_3",
+        "title": null,
+        "content": "- Trong thời hạn 03 ngày làm việc kể từ ngày nhận được hồ sơ, cơ quan chuyên môn về khoa học và công nghệ thuộc Ủy ban nhân dân cấp tỉnh xem xét tính đầy đủ, hợp lệ của hồ sơ. Trường hợp hồ sơ chưa đầy đủ, hợp lệ hoặc có nội dung cần phải sửa đổi, bổ sung, cơ quan chuyên môn về khoa học và công nghệ thuộc Ủy ban nhân dân cấp tỉnh có văn bản đề nghị sửa đổi, bổ sung, trong đó nêu rõ nội dung, thời hạn sửa đổi, bổ sung;",
+        "actor": "authority",
+        "channel_hint": null,
+        "time_hint": "03 ngày làm việc"
+      },
+      {
+        "step_id": "step_4",
+        "title": null,
+        "content": "- Trong thời hạn 05 ngày làm việc, kể từ khi nhận được hồ sơ đầy đủ hợp lệ, cơ quan chuyên môn về khoa học và công nghệ thuộc Ủy ban nhân dân cấp tỉnh xem xét, quyết định việc cấp lại Giấy chứng nhận.",
+        "actor": "authority",
+        "channel_hint": null,
+        "time_hint": "05 ngày làm việc"
+      }
+    ],
+    "step_count": 4,
+    "notes": []
+  },
+  "eligibility": {
+    "conditions": [],
+    "has_conditions": false
+  },
+  "results": {
+    "items": [
+      {
+        "name": "Giấy chứng nhận chuyển giao công nghệ khuyến khích chuyển giao (cấp lại) (trừ trường hợp thuộc thẩm quyền giải quyết của Bộ Khoa học và Công nghệ)",
+        "result_code": "KQ.G06.000362",
+        "raw_text": "Giấy chứng nhận chuyển giao công nghệ khuyến khích chuyển giao (cấp lại) (trừ trường hợp thuộc thẩm quyền giải quyết của Bộ Khoa học và Công nghệ)"
+      }
+    ],
+    "primary_result": {
+      "name": "Giấy chứng nhận chuyển giao công nghệ khuyến khích chuyển giao (cấp lại) (trừ trường hợp thuộc thẩm quyền giải quyết của Bộ Khoa học và Công nghệ)",
+      "result_code": "KQ.G06.000362",
+      "raw_text": "Giấy chứng nhận chuyển giao công nghệ khuyến khích chuyển giao (cấp lại) (trừ trường hợp thuộc thẩm quyền giải quyết của Bộ Khoa học và Công nghệ)"
+    }
+  },
+  "legal_basis": {
+    "items": [
+      {
+        "title": "Quyết định về cấp Giấy chứng nhận chuyển giao công nghệ khuyến khích chuyển giao",
+        "code": "12/2023/QĐ-TTg"
+      },
+      {
+        "title": "Nghị định quy định chi tiết và hướng dẫn thi hành một số điều của Luật Đầu tư",
+        "code": "31/2021/NĐ-CP"
+      },
+      {
+        "title": "Luật Đầu tư",
+        "code": "61/2020/QH14"
+      }
+    ],
+    "count": 3
+  },
+  "attachments": [
+    {
+      "label": "Mẫu 09_VB đề nghị cấp lại Giấy CN CGCN KKCG.docx",
+      "path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/2_002548/M%E1%BA%ABu%2009_VB%20%C4%91%E1%BB%81%20ngh%E1%BB%8B%20c%E1%BA%A5p%20l%E1%BA%A1i%20Gi%E1%BA%A5y%20CN%20CGCN%20KKCG.docx",
+      "source_section": "Thành phần hồ sơ",
+      "document_name": "Văn bản đề nghị cấp lại Giấy chứng nhận chuyển giao công nghệ khuyến khích chuyển giao theo Mẫu số 09 tại Phụ lục ban hành kèm theo Quyết định số 12/2023/QĐ-TTg"
+    }
+  ],
+  "signals": {
+    "raw_parse_warnings": [],
+    "missing_documents": false,
+    "documents_section_present": true,
+    "documents_declared_empty": false,
+    "documents_only_in_notes": false,
+    "missing_results": false
+  }
+}

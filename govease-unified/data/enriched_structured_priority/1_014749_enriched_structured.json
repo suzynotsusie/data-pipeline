@@ -1,0 +1,81 @@
+{
+  "schema_version": "1.0",
+  "enricher_version": "0.2.0",
+  "source": {
+    "procedure_code": "1.014749",
+    "title": "Thông báo hằng tháng về việc tìm kiếm việc làm (Cấp tỉnh)",
+    "group_key": "viec_lam",
+    "workflow_family": "employment_workflow",
+    "subflow": "bao_hiem_xa_hoi_that_nghiep_tro_cap"
+  },
+  "experience": {
+    "entry_label": "Hỗ trợ việc làm và lao động",
+    "overview_summary": "Thủ tục này thuộc nhóm việc làm và lao động, thường cần kiểm tra hồ sơ nghề nghiệp, đơn vị sử dụng lao động hoặc điều kiện hưởng chế độ liên quan. Kết quả thường nhận được là Người lao động tiếp tục được hưởng trợ cấp thất nghiệp. Thời gian xử lý tham khảo: theo thời hạn của cơ quan xử lý.",
+    "next_step_summary": "Nên xác định rõ nhu cầu lao động, hồ sơ nghề nghiệp hoặc chế độ cần giải quyết trước khi nộp. Có thể chọn kênh nộp phù hợp: Trực tiếp, Trực tuyến. Hiện có 1 mục giấy tờ cần theo dõi trong checklist.",
+    "tone": "supportive_public_service"
+  },
+  "guidance": {
+    "highlight_documents": [
+      {
+        "bucket": "required",
+        "name": "Thông báo về việc tìm kiếm việc làm theo Mẫu số 24 tại Phụ lục ban hành kèm theo Nghị định số 374/2025/NĐ-CP.",
+        "conditions": [],
+        "attachment_path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/1_014749/Mus24tiPhlcbanhnhkmtheo_VL.docx"
+      }
+    ],
+    "special_cases": [
+      "Có thể cần xác minh quan hệ lao động hoặc giấy phép làm việc"
+    ],
+    "common_errors": [
+      "Điền sai mẫu tờ khai hoặc chọn sai biểu mẫu đi kèm."
+    ],
+    "validation_hints": [
+      "Nên xác định trước kênh nộp hồ sơ để biết có cần bản giấy, bản điện tử hay xuất trình trực tiếp.",
+      "Có mẫu biểu đính kèm, nên kiểm tra đúng biểu mẫu trước khi nộp.",
+      "Nên xác định đúng nhóm thủ tục lao động, đơn vị liên quan và hồ sơ nghề nghiệp cần xuất trình."
+    ]
+  },
+  "intake": {
+    "candidate_input_fields": [
+      {
+        "field_id": "employment_need",
+        "label": "Nhu cầu việc làm hoặc lao động",
+        "field_type": "text",
+        "required": true
+      },
+      {
+        "field_id": "worker_or_employer_info",
+        "label": "Thông tin người lao động hoặc đơn vị sử dụng lao động",
+        "field_type": "text",
+        "required": true
+      },
+      {
+        "field_id": "submission_channel_preference",
+        "label": "Kênh nộp dự kiến",
+        "field_type": "enum",
+        "required": false
+      },
+      {
+        "field_id": "has_supporting_employment_documents",
+        "label": "Đã có hồ sơ lao động liên quan",
+        "field_type": "boolean",
+        "required": false
+      }
+    ],
+    "suggested_clarifying_questions": [
+      "Bạn đang cần giải quyết thủ tục lao động nào cho người lao động hoặc doanh nghiệp?",
+      "Hồ sơ nghề nghiệp, đơn vị sử dụng lao động hoặc yếu tố lao động nước ngoài đã rõ chưa?"
+    ]
+  },
+  "ui_hints": {
+    "primary_channel": "online",
+    "result_label": "Người lao động tiếp tục được hưởng trợ cấp thất nghiệp",
+    "time_badge": null,
+    "document_count_badge": 1
+  },
+  "provenance": {
+    "generator": "workflow_domain_enricher",
+    "derivation_mode": "rule_based_semantic_enrichment",
+    "supported_group": true
+  }
+}

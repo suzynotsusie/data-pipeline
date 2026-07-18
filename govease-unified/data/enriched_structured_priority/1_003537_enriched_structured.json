@@ -1,0 +1,109 @@
+{
+  "schema_version": "1.0",
+  "enricher_version": "0.2.0",
+  "source": {
+    "procedure_code": "1.003537",
+    "title": "Cấp giấy phép khảo nghiệm thuốc thú y",
+    "group_key": "suc_khoe_y_te",
+    "workflow_family": null,
+    "subflow": null
+  },
+  "experience": {
+    "entry_label": "Hỗ trợ y tế và bảo hiểm",
+    "overview_summary": "Thủ tục này thuộc nhóm y tế, thường cần đối chiếu thông tin người bệnh, đơn vị tiếp nhận hoặc quyền lợi chuyên ngành. Kết quả thường nhận được là Giấy phép khảo nghiệm thuốc thú y. Thời gian xử lý tham khảo: 17 ngày.",
+    "next_step_summary": "Nên xác định rõ đối tượng tham gia, quyền lợi hoặc nhu cầu điều chỉnh hồ sơ y tế trước khi nộp. Có thể chọn kênh nộp phù hợp: Trực tiếp, Trực tuyến, Dịch vụ bưu chính. Hiện có khoảng 10 mục giấy tờ cần theo dõi trong checklist.",
+    "tone": "supportive_public_service"
+  },
+  "guidance": {
+    "highlight_documents": [
+      {
+        "bucket": "required",
+        "name": "Tài liệu kỹ thuật của từng loại thuốc khảo nghiệm bao gồm:",
+        "conditions": [],
+        "attachment_path": null
+      },
+      {
+        "bucket": "required",
+        "name": "Phiếu phân tích chất lượng sản phẩm của cơ quan kiểm nghiệm thuốc thú y được chỉ định tại Việt Nam cấp (bản chính hoặc bản chụp có đóng dấu xác nhận của cơ sở đăng ký)",
+        "conditions": [],
+        "attachment_path": null
+      },
+      {
+        "bucket": "required",
+        "name": "Phiếu phân tích chất lượng sản phẩm của nhà sản xuất (bản chính hoặc bản chụp có đóng dấu xác nhận của cơ sở đăng ký)",
+        "conditions": [],
+        "attachment_path": null
+      },
+      {
+        "bucket": "required",
+        "name": "Đơn đăng ký cấp giấy phép khảo nghiệm thuốc thú y theo mẫu quy định tại Phụ lục XV ban hành kèm theo Thông tư 13/2016/TT-BNNPTNT",
+        "conditions": [],
+        "attachment_path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/1_003537/PH%E1%BB%A4%20L%E1%BB%A4C%20XV.M%E1%BA%AAU%20%C4%90%C6%A0N%20%C4%90%C4%82NG%20K%C3%9D%20KH%E1%BA%A2O%20NGHI%E1%BB%86M%20THU%E1%BB%90C%20TH%C3%9A%20Y.docx"
+      },
+      {
+        "bucket": "required",
+        "name": "Thông tin kỹ thuật về độ an toàn và hiệu lực của sản phẩm;",
+        "conditions": [],
+        "attachment_path": null
+      },
+      {
+        "bucket": "required",
+        "name": "Hợp đồng khảo nghiệm giữa cơ sở đăng ký và cơ sở khảo nghiệm (bản chính hoặc bản sao có đóng dấu xác nhận của cơ sở đăng ký)",
+        "conditions": [],
+        "attachment_path": null
+      }
+    ],
+    "special_cases": [],
+    "common_errors": [
+      "Điền sai mẫu tờ khai hoặc chọn sai biểu mẫu đi kèm."
+    ],
+    "validation_hints": [
+      "Nên xác định trước kênh nộp hồ sơ để biết có cần bản giấy, bản điện tử hay xuất trình trực tiếp.",
+      "Có mẫu biểu đính kèm, nên kiểm tra đúng biểu mẫu trước khi nộp.",
+      "Nên xác định đúng nhóm đối tượng, mã số bảo hiểm và quyền lợi áp dụng trước khi nộp."
+    ]
+  },
+  "intake": {
+    "candidate_input_fields": [
+      {
+        "field_id": "request_subject",
+        "label": "Đối tượng làm thủ tục",
+        "field_type": "text",
+        "required": true
+      },
+      {
+        "field_id": "insurance_or_medical_need",
+        "label": "Nhu cầu bảo hiểm hoặc y tế",
+        "field_type": "text",
+        "required": true
+      },
+      {
+        "field_id": "submission_channel_preference",
+        "label": "Kênh nộp dự kiến",
+        "field_type": "enum",
+        "required": false
+      },
+      {
+        "field_id": "has_insurance_number",
+        "label": "Đã có mã BHXH/BHYT",
+        "field_type": "boolean",
+        "required": false
+      }
+    ],
+    "suggested_clarifying_questions": [
+      "Bạn đang muốn đăng ký, điều chỉnh hay xác nhận quyền lợi y tế hoặc bảo hiểm nào?",
+      "Bạn đã có mã BHXH/BHYT hoặc thông tin đơn vị tiếp nhận liên quan chưa?"
+    ]
+  },
+  "ui_hints": {
+    "primary_channel": "in_person",
+    "result_label": "Giấy phép khảo nghiệm thuốc thú y",
+    "time_badge": "17 ngày",
+    "document_count_badge": 10
+  },
+  "provenance": {
+    "generator": "workflow_domain_enricher",
+    "derivation_mode": "rule_based_semantic_enrichment",
+    "supported_group": true
+  }
+}

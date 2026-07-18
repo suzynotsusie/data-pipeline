@@ -1,0 +1,221 @@
+{
+  "schema_version": "1.0",
+  "normalizer_version": "0.2.0",
+  "source": {
+    "procedure_code": "1.008587",
+    "title": "Xác nhận số thuế đã nộp tại Việt Nam đối với đối tượng cư trú của nước ngoài",
+    "raw_structured_parser_version": "0.1.0",
+    "field": "Thuế"
+  },
+  "procedure": {
+    "level": "Cấp tỉnh, Cấp bộ/ngành",
+    "procedure_type": "TTHC được luật giao quy định chi tiết",
+    "target_users": [
+      "Công dân Việt Nam",
+      "Doanh nghiệp",
+      "Tổ chức nước ngoài",
+      "Doanh nghiệp có vốn đầu tư nước ngoài",
+      "Tổ chức (không bao gồm doanh nghiệp",
+      "HTX)"
+    ],
+    "authorities": [
+      "Thuế tỉnh, thành phố"
+    ],
+    "receiving_places": []
+  },
+  "submission": {
+    "channels": [
+      "in_person",
+      "online",
+      "postal"
+    ],
+    "methods": [
+      {
+        "method_id": "method_1",
+        "channel": "online",
+        "processing_time_text": "7 ngày làm việc",
+        "fee_text": null,
+        "description": null,
+        "is_online": true,
+        "is_postal": false,
+        "is_in_person": false
+      },
+      {
+        "method_id": "method_2",
+        "channel": "postal",
+        "processing_time_text": "7 ngày làm việc",
+        "fee_text": null,
+        "description": null,
+        "is_online": false,
+        "is_postal": true,
+        "is_in_person": false
+      },
+      {
+        "method_id": "method_3",
+        "channel": "in_person",
+        "processing_time_text": "10 ngày làm việc",
+        "fee_text": null,
+        "description": null,
+        "is_online": false,
+        "is_postal": false,
+        "is_in_person": true
+      }
+    ],
+    "timing_summary": {
+      "unique_processing_times": [
+        "7 ngày làm việc",
+        "10 ngày làm việc"
+      ],
+      "method_count": 3
+    }
+  },
+  "documents": {
+    "required": [
+      {
+        "document_id": "gi_y_ngh_x_c_nh_n_s_thu_n_p_t_i_vi_t_nam_theo_hi_p_nh_thu_theo_m_u_s_03_htqt_ban_h_nh_k_m_theo_th_ng_t_s_80_2021_tt_btc_ng_y_29_9_2021_c_a_b_t_i_ch_nh_c_s_a_i_t_i_th_ng_t_s_94_2025_tt_btc_trong_cung_c_p_c_c_th_ng_tin_v_giao_d_ch_li_n_quan_n_thu_nh_p_ch_u_thu_s_thu_ph_t_sinh_v_c_c_u_i_thu_i_v_i_giao_d_ch_thu_c_ph_m_vi_i_u_ch_nh_c_a_hi_p_nh_thu",
+        "name": "Giấy đề nghị xác nhận số thuế đã nộp tại Việt Nam theo Hiệp định thuế theo mẫu số 03/HTQT ban hành kèm theo Thông tư số 80/2021/TT-BTC ngày 29/9/2021 của Bộ Tài chính (đã được sửa đổi tại Thông tư số 94/2025/TT-BTC), trong đó cung cấp các thông tin về giao dịch liên quan đến thu nhập chịu thuế, số thuế phát sinh và các ưu đãi thuế đối với giao dịch đó thuộc phạm vi điều chỉnh của Hiệp định thuế",
+        "group_name": "default",
+        "group_type": "unknown",
+        "original_count": "1",
+        "copy_count": "0",
+        "conditions": [],
+        "attachment_label": null,
+        "attachment_path": null
+      },
+      {
+        "document_id": "b_n_g_c_ho_c_b_n_sao_c_ch_ng_th_c_gi_y_ch_ng_nh_n_c_tr_do_c_quan_thu_c_a_n_c_c_tr_c_p_ghi_r_l_i_t_ng_c_tr_trong_k_t_nh_thu_n_o_c_h_p_ph_p_h_a_l_nh_s",
+        "name": "+ Bản gốc (hoặc bản sao đã được chứng thực) Giấy chứng nhận cư trú do cơ quan thuế của nước cư trú cấp (ghi rõ là đối tượng cư trú trong kỳ tính thuế nào) đã được hợp pháp hóa lãnh sự;",
+        "group_name": "default",
+        "group_type": "unknown",
+        "original_count": "1",
+        "copy_count": "0",
+        "conditions": [],
+        "attachment_label": null,
+        "attachment_path": null
+      }
+    ],
+    "conditional": [
+      {
+        "document_id": "gi_y_u_quy_n_trong_tr_ng_h_p_ng_i_n_p_thu_u_quy_n_cho_i_di_n_h_p_ph_p_th_c_hi_n_th_t_c_p_d_ng_hi_p_nh_thu",
+        "name": "Giấy uỷ quyền trong trường hợp người nộp thuế uỷ quyền cho đại diện hợp pháp thực hiện thủ tục áp dụng Hiệp định thuế",
+        "group_name": "default",
+        "group_type": "unknown",
+        "original_count": "1",
+        "copy_count": "0",
+        "conditions": [
+          "Giấy uỷ quyền trong trường hợp người nộp thuế uỷ quyền cho đại diện hợp pháp thực hiện thủ tục áp dụng Hiệp định thuế"
+        ],
+        "attachment_label": null,
+        "attachment_path": null
+      }
+    ],
+    "presented": [],
+    "notes": [],
+    "forms": [],
+    "empty_groups": [],
+    "document_count": 3
+  },
+  "process": {
+    "steps": [
+      {
+        "step_id": "step_1",
+        "title": null,
+        "content": "1. +",
+        "actor": "user",
+        "channel_hint": null,
+        "time_hint": null
+      },
+      {
+        "step_id": "step_2",
+        "title": "Bước 1.",
+        "content": "Bước 1. Các tổ chức, cá nhân là đối tượng cư trú của nước ngoài chuẩn bị hồ sơ đề nghị xác nhận số thuế đã nộp tại Việt Nam gửi đến Thuế tỉnh, thành phố. Trường hợp một đối tượng cư trú của Nước ký kết Hiệp định thuế với Việt Nam phải nộp thuế thu nhập tại Việt Nam theo quy định của Hiệp định thuế và pháp luật thuế Việt Nam muốn xác nhận số thuế đã nộp tại Việt Nam để được khấu trừ vào số thuế phải nộp tại nước cư trú chuẩn bị hồ sơ đề nghị xác nhận số thuế đã nộp tại Việt Nam gửi đến Thuế tỉnh, thành phố nơi đăng ký nộp thuế theo quy định. +",
+        "actor": "user",
+        "channel_hint": null,
+        "time_hint": null
+      },
+      {
+        "step_id": "step_3",
+        "title": "Bước 2.",
+        "content": "Bước 2. Cơ quan thuế tiếp nhận: ++ Trường hợp hồ sơ được nộp trực tiếp tại cơ quan thuế hoặc hồ sơ được gửi qua đường bưu chính: cơ quan thuế thực hiện tiếp nhận và giải quyết hồ sơ và trả kết quả theo quy định. ++ Trường hợp hồ sơ được nộp đến cơ quan thuế thông qua giao dịch điện tử, việc tiếp nhận, kiểm tra, chấp nhận, giải quyết hồ sơ thông qua hệ thống xử lý dữ liệu điện tử của cơ quan thuế.",
+        "actor": "authority",
+        "channel_hint": "dịch vụ bưu chính",
+        "time_hint": null
+      }
+    ],
+    "step_count": 3,
+    "notes": []
+  },
+  "eligibility": {
+    "conditions": [],
+    "has_conditions": false
+  },
+  "results": {
+    "items": [
+      {
+        "name": "Giấy xác nhận thuế thu nhập đã nộp tại Việt Nam (mẫu số 04/HTQT)",
+        "result_code": "KQ.G12.000263",
+        "raw_text": "Giấy xác nhận thuế thu nhập đã nộp tại Việt Nam (mẫu số 04/HTQT)"
+      },
+      {
+        "name": "Xác nhận số thuế phát sinh tại Việt Nam nhưng không phải nộp do được ưu đãi thuế dành cho đối tượng đề nghị (mẫu số 05/HTQT)",
+        "result_code": "KQ.G12.000531",
+        "raw_text": "Xác nhận số thuế phát sinh tại Việt Nam nhưng không phải nộp do được ưu đãi thuế dành cho đối tượng đề nghị (mẫu số 05/HTQT)"
+      }
+    ],
+    "primary_result": {
+      "name": "Giấy xác nhận thuế thu nhập đã nộp tại Việt Nam (mẫu số 04/HTQT)",
+      "result_code": "KQ.G12.000263",
+      "raw_text": "Giấy xác nhận thuế thu nhập đã nộp tại Việt Nam (mẫu số 04/HTQT)"
+    }
+  },
+  "legal_basis": {
+    "items": [
+      {
+        "title": "Thông tư số 40/2025/TT-BTC Sửa đổi, bổ sung một số điều của các Thông tư thuộc lĩnh vực quản lý thuế để phân định thẩm quyền của chính quyền địa phương theo mô hình tổ chức chính quyền địa phương 02 cấp",
+        "code": "40/2025/TT-BTC"
+      },
+      {
+        "title": "Nghị định số 91/2022/NĐ-CP sửa đổi bổ sung một số điều của Nghị định số 126/2020/NĐ-CP ngày 19/10/2020 của Chính phủ quy định chi tiết một số điều của Luật Quản lý thuế",
+        "code": "91/2022/NĐ-CP"
+      },
+      {
+        "title": "sửa đổi một số điều của Thông tư 19/2021/TT-BTC ngày 18/3/2021 của Bộ trưởng Bộ Tài chính hướng dẫn giao dịch điện tử trong lĩnh vực thuế",
+        "code": "46/2024/TT-BTC"
+      },
+      {
+        "title": "Nghị định 126/2020/NĐ-CP",
+        "code": "126/2020/NĐ-CP"
+      },
+      {
+        "title": "Luật Quản lý thuế",
+        "code": "38/2019/QH14"
+      },
+      {
+        "title": "Thông tư sửa đổi, bổ sung một số điều của Thông tư số 80/2021/TT-BTC ngày 29 tháng 9 năm 2021 của Bộ Tài chính hướng dẫn thi hành một số điều của Luật Quản lý thuế và Nghị định số 126/2020/NĐ-CP ngày 19 tháng 10 năm 2020 của Chính phủ quy định chi tiết một số điều của Luật Quản lý thuế và sửa đổi, bổ sung một số mẫu biểu của Thông tư số 40/2021/TT-BTC ngày 01 tháng 6 năm 2021 của Bộ Tài chính hướng dẫn thuế giá trị gia tăng, thuế thu nhập cá nhân và quản lý thuế đối với hộ kinh doanh, cá nhân kinh doanh",
+        "code": "94/2025/TT-BTC"
+      },
+      {
+        "title": "Thông tư số 19/2021/TT-BTC ngày 18/3/2021 của Bộ Tài chính hướng dẫn Giao dịch điện tử trong lĩnh vực thuế",
+        "code": "19/2021/TT-BTC"
+      },
+      {
+        "title": "Thông tư 80/2021/TT-BTC",
+        "code": "80/2021/TT-BTC"
+      },
+      {
+        "title": "Luật số 56/2024/QH15 của Quốc hội: Luật sửa đổi, bổ sung một số điều của Luật Chứng khoán, Luật Kế toán, Luật Kiểm toán độc lập, Luật Ngân sách nhà nước, Luật Quản lý, sử dụng tài sản công, Luật Quản lý thuế, Luật Thuế thu nhập cá nhân, Luật Dự trữ quốc gia, Luật Xử lý vi phạm hành chính",
+        "code": "56/2024/QH15"
+      }
+    ],
+    "count": 9
+  },
+  "attachments": [],
+  "signals": {
+    "raw_parse_warnings": [],
+    "missing_documents": false,
+    "documents_section_present": true,
+    "documents_declared_empty": false,
+    "documents_only_in_notes": false,
+    "missing_results": false
+  }
+}

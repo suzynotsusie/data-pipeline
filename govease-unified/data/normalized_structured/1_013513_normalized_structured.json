@@ -1,0 +1,188 @@
+{
+  "schema_version": "1.0",
+  "normalizer_version": "0.2.0",
+  "source": {
+    "procedure_code": "1.013513",
+    "title": "Thủ tục thanh toán chi phí khám bệnh, chữa bệnh cho Dân quân tự vệ không tham gia bảo hiểm y tế nếu bị ốm đau, bị tai nạn, bị thương",
+    "raw_structured_parser_version": "0.1.0",
+    "field": "Dân quân tự vệ"
+  },
+  "procedure": {
+    "level": "Cấp tỉnh",
+    "procedure_type": "TTHC được luật giao quy định chi tiết",
+    "target_users": [
+      "Công dân Việt Nam"
+    ],
+    "authorities": [
+      "Chủ tịch ủy ban nhân dân cấp tỉnh"
+    ],
+    "receiving_places": []
+  },
+  "submission": {
+    "channels": [
+      "in_person",
+      "postal"
+    ],
+    "methods": [
+      {
+        "method_id": "method_1",
+        "channel": "postal",
+        "processing_time_text": "13 ngày làm việc",
+        "fee_text": null,
+        "description": null,
+        "is_online": false,
+        "is_postal": true,
+        "is_in_person": false
+      },
+      {
+        "method_id": "method_2",
+        "channel": "in_person",
+        "processing_time_text": "13 ngày làm việc",
+        "fee_text": null,
+        "description": null,
+        "is_online": false,
+        "is_postal": false,
+        "is_in_person": true
+      }
+    ],
+    "timing_summary": {
+      "unique_processing_times": [
+        "13 ngày làm việc"
+      ],
+      "method_count": 2
+    }
+  },
+  "documents": {
+    "required": [
+      {
+        "document_id": "phi_u_x_t_nghi_m_n_thu_c_h_a_n_thu_ti_n_gi_y_xu_t_vi_n",
+        "name": "Phiếu xét nghiệm, đơn thuốc, hóa đơn thu tiền, giấy xuất viện",
+        "group_name": "default",
+        "group_type": "unknown",
+        "original_count": "1",
+        "copy_count": "0",
+        "conditions": [],
+        "attachment_label": null,
+        "attachment_path": null
+      },
+      {
+        "document_id": "quy_t_nh_c_ng_d_n_th_c_hi_n_ngh_a_v_tham_gia_d_n_qu_n_t_v_quy_t_nh_i_u_ng_ho_c_huy_ng_ho_c_k_ho_ch_th_c_hi_n_nhi_m_v_c_c_p_c_th_m_quy_n_ph_duy_t",
+        "name": "Quyết định công dân thực hiện nghĩa vụ tham gia Dân quân tự vệ; quyết định điều động hoặc huy động hoặc kế hoạch thực hiện nhiệm vụ được cấp có thẩm quyền phê duyệt",
+        "group_name": "default",
+        "group_type": "unknown",
+        "original_count": "1",
+        "copy_count": "0",
+        "conditions": [],
+        "attachment_label": null,
+        "attachment_path": null
+      },
+      {
+        "document_id": "n_ngh_thanh_to_n_chi_ph_kh_m_b_nh_ch_a_b_nh_c_a_d_n_qu_n_ho_c_ng_i_i_di_n_h_p_ph_p_c_a_d_n_qu_n",
+        "name": "Đơn đề nghị thanh toán chi phí khám bệnh, chữa bệnh của dân quân hoặc người đại diện hợp pháp của dân quân",
+        "group_name": "default",
+        "group_type": "unknown",
+        "original_count": "1",
+        "copy_count": "0",
+        "conditions": [],
+        "attachment_label": null,
+        "attachment_path": null
+      }
+    ],
+    "conditional": [],
+    "presented": [],
+    "notes": [],
+    "forms": [],
+    "empty_groups": [],
+    "document_count": 3
+  },
+  "process": {
+    "steps": [
+      {
+        "step_id": "step_1",
+        "title": null,
+        "content": "1.",
+        "actor": "user",
+        "channel_hint": null,
+        "time_hint": null
+      },
+      {
+        "step_id": "step_2",
+        "title": "Bước 1.",
+        "content": "Bước 1. Dân quân hoặc người đại diện hợp pháp của dân quân gửi trực tiếp hoặc qua bưu chính, môi trường điện tử đơn đề nghị thanh toán tiền khám bệnh, chữa bệnh cho dân quân kèm theo phiếu xét nghiệm, đơn thuốc, hóa đơn thu tiền, giấy ra viện cho cơ quan quân sự địa phương. Dân quân thuộc đơn vị Dân quân tự vệ của cấp nào tổ chức thì gửi đơn cho cơ quan quân sự địa phương cấp đó; trường hợp không hợp lệ, trong thời hạn 03 ngày làm việc kể từ ngày nhận được đơn đề nghị, cơ quan quân sự địa phương phải có văn bản hướng dẫn gửi người nộp đơn để bổ sung, hoàn thiện.",
+        "actor": "authority",
+        "channel_hint": "dịch vụ bưu chính",
+        "time_hint": "03 ngày làm việc"
+      },
+      {
+        "step_id": "step_3",
+        "title": "Bước 2.",
+        "content": "Bước 2. Trong thời hạn 05 ngày làm việc, kể từ ngày nhận đơn đề nghị, cơ quan quân sự địa phương lập 01 bộ hồ sơ. Tư lệnh Bộ Tư lệnh Thủ đô Hà Nội, Tư lệnh Bộ Tư lệnh Thành phố Hồ Chí Minh, Chỉ huy trưởng Bộ chỉ huy quân sự cấp tỉnh trình Chủ tịch Ủy ban nhân dân cùng cấp quyết định; Chỉ huy trưởng Ban chỉ huy quân sự cấp xã báo cáo Chủ tịch Ủy ban nhân dân cấp xã trình Chủ tịch Ủy ban nhân dân cấp xã quyết định.",
+        "actor": "authority",
+        "channel_hint": null,
+        "time_hint": "05 ngày làm việc"
+      },
+      {
+        "step_id": "step_4",
+        "title": "Bước 3.",
+        "content": "Bước 3. Trong thời hạn 03 ngày làm việc, kể từ ngày nhận được hồ sơ trình, Chủ tịch Ủy ban nhân dân cấp xã hoặc Chủ tịch Ủy ban nhân dân cấp tỉnh quyết định kinh phí khám bệnh, chữa bệnh cho dân quân. B",
+        "actor": "user",
+        "channel_hint": null,
+        "time_hint": "03 ngày làm việc"
+      },
+      {
+        "step_id": "step_5",
+        "title": "Bước 4.",
+        "content": "Bước 4. Trong thời hạn 05 ngày làm việc, kể từ ngày ra quyết định, Ủy ban nhân dân cấp xã có trách nhiệm thực hiện chi trả kinh phí khám bệnh, chữa bệnh cho dân quân; việc chi trả bằng hình thức chuyển khoản hoặc qua đường bưu chính hoặc trực tiếp nhận ở cấp xã.",
+        "actor": "user",
+        "channel_hint": "dịch vụ bưu chính",
+        "time_hint": "05 ngày làm việc"
+      }
+    ],
+    "step_count": 5,
+    "notes": []
+  },
+  "eligibility": {
+    "conditions": [],
+    "has_conditions": false
+  },
+  "results": {
+    "items": [
+      {
+        "name": "Quyết định kinh phí khám bệnh, chữa bệnh cho dân quân",
+        "result_code": "KQ.G11.000116",
+        "raw_text": "Quyết định kinh phí khám bệnh, chữa bệnh cho dân quân"
+      }
+    ],
+    "primary_result": {
+      "name": "Quyết định kinh phí khám bệnh, chữa bệnh cho dân quân",
+      "result_code": "KQ.G11.000116",
+      "raw_text": "Quyết định kinh phí khám bệnh, chữa bệnh cho dân quân"
+    }
+  },
+  "legal_basis": {
+    "items": [
+      {
+        "title": "Nghị định số 220/2025/NĐ-CP ngày 07 tháng 8 năm 2025 của Chính phủ sửa đổi, bổ sung một số điều của một số Nghị định trong lĩnh vực quốc phòng, quân sự khi tổ chức chính quyền địa phương hai cấp",
+        "code": "220/2025/NĐ-CP"
+      },
+      {
+        "title": "Nghị định 72/2020/NĐ-CP",
+        "code": "72/2020/NĐ-CP"
+      },
+      {
+        "title": "Luật dân quân tự vệ",
+        "code": "48/2019/QH14"
+      }
+    ],
+    "count": 3
+  },
+  "attachments": [],
+  "signals": {
+    "raw_parse_warnings": [],
+    "missing_documents": false,
+    "documents_section_present": true,
+    "documents_declared_empty": false,
+    "documents_only_in_notes": false,
+    "missing_results": false
+  }
+}

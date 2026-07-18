@@ -1,0 +1,123 @@
+{
+  "schema_version": "1.0",
+  "enricher_version": "0.2.0",
+  "source": {
+    "procedure_code": "1.001895",
+    "title": "Xét cấp bằng tiến sĩ",
+    "group_key": "hoc_tap",
+    "workflow_family": "education_study_workflow",
+    "subflow": "van_bang_chung_chi"
+  },
+  "experience": {
+    "entry_label": "Hỗ trợ giáo dục và học tập",
+    "overview_summary": "Thủ tục này thuộc nhóm giáo dục và học tập, thường liên quan đến hồ sơ đào tạo, văn bằng hoặc điều kiện học tập của người học. Kết quả thường nhận được là kết quả giải quyết theo thủ tục này. Thời gian xử lý tham khảo: theo thời hạn của cơ quan xử lý.",
+    "next_step_summary": "Nên rà trước thông tin người học, cơ sở đào tạo và loại kết quả cần xin xác nhận hoặc cấp lại. Có thể chọn kênh nộp phù hợp: Trực tiếp. Hiện có khoảng 10 mục giấy tờ cần theo dõi trong checklist.",
+    "tone": "supportive_public_service"
+  },
+  "guidance": {
+    "highlight_documents": [
+      {
+        "bucket": "required",
+        "name": "Tờ báo đăng tin hay bản sao chụp bản tin đăng báo ngày bảo vệ (trừ những luận án bảo vệ theo chế độ mật);",
+        "conditions": [],
+        "attachment_path": null
+      },
+      {
+        "bucket": "required",
+        "name": "Biên bản chi tiết diễn biến của buổi bảo vệ luận án, câu hỏi của các thành viên Hội đồng đánh giá luận án và những người tham dự, trả lời của nghiên cứu sinh cho từng câu hỏi;",
+        "conditions": [],
+        "attachment_path": null
+      },
+      {
+        "bucket": "required",
+        "name": "Nghị quyết của Hội đồng;",
+        "conditions": [],
+        "attachment_path": null
+      },
+      {
+        "bucket": "required",
+        "name": "Các bản nhận xét của tất cả các thành viên của Hội đồng, của các cơ quan và các nhà khoa học gửi tới Hội đồng;",
+        "conditions": [],
+        "attachment_path": null
+      },
+      {
+        "bucket": "required",
+        "name": "Biên bản kiểm phiếu và các phiếu đánh giá;",
+        "conditions": [],
+        "attachment_path": null
+      },
+      {
+        "bucket": "required",
+        "name": "Bản nhận xét, đánh giá của tập thể hướng dẫn nghiên cứu sinh;",
+        "conditions": [],
+        "attachment_path": null
+      }
+    ],
+    "special_cases": [
+      "Có thể cần xác minh hồ sơ học tập hoặc văn bằng"
+    ],
+    "common_errors": [
+      "Điền sai mẫu tờ khai hoặc chọn sai biểu mẫu đi kèm.",
+      "Thiếu minh chứng học tập, văn bằng hoặc xác nhận từ cơ sở đào tạo."
+    ],
+    "validation_hints": [
+      "Nên xác định trước kênh nộp hồ sơ để biết có cần bản giấy, bản điện tử hay xuất trình trực tiếp.",
+      "Nên rà lại thông tin người học, cơ sở đào tạo và loại xác nhận hoặc văn bằng cần xin."
+    ]
+  },
+  "intake": {
+    "candidate_input_fields": [
+      {
+        "field_id": "learner_full_name",
+        "label": "Tên người học",
+        "field_type": "text",
+        "required": true
+      },
+      {
+        "field_id": "education_record_type",
+        "label": "Loại hồ sơ học tập cần xử lý",
+        "field_type": "text",
+        "required": true
+      },
+      {
+        "field_id": "education_institution",
+        "label": "Cơ sở đào tạo liên quan",
+        "field_type": "text",
+        "required": false
+      },
+      {
+        "field_id": "submission_channel_preference",
+        "label": "Kênh nộp dự kiến",
+        "field_type": "enum",
+        "required": false
+      },
+      {
+        "field_id": "doctoral_stage",
+        "label": "Giai đoạn đào tạo tiến sĩ",
+        "field_type": "enum",
+        "required": false
+      },
+      {
+        "field_id": "certificate_or_degree_type",
+        "label": "Loại văn bằng/chứng chỉ",
+        "field_type": "text",
+        "required": false
+      }
+    ],
+    "suggested_clarifying_questions": [
+      "Bạn đang cần xử lý hồ sơ học tập, văn bằng hay xác nhận nào?",
+      "Người học và cơ sở đào tạo liên quan đã xác định rõ chưa?"
+    ]
+  },
+  "ui_hints": {
+    "primary_channel": "in_person",
+    "result_label": null,
+    "time_badge": null,
+    "document_count_badge": 10
+  },
+  "provenance": {
+    "generator": "workflow_domain_enricher",
+    "derivation_mode": "rule_based_semantic_enrichment",
+    "supported_group": true
+  }
+}

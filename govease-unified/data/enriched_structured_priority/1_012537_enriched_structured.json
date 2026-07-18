@@ -1,0 +1,93 @@
+{
+  "schema_version": "1.0",
+  "enricher_version": "0.2.0",
+  "source": {
+    "procedure_code": "1.012537",
+    "title": "Giải quyết chế độ, chính sách cho người tham gia lực lượng tham gia bảo vệ an ninh, trật tự ở cơ sở chưa tham gia bảo hiểm y tế mà bị ốm đau, bị tai nạn, bị thương khi thực hiện nhiệm vụ",
+    "group_key": "suc_khoe_y_te",
+    "workflow_family": null,
+    "subflow": null
+  },
+  "experience": {
+    "entry_label": "Hỗ trợ y tế và bảo hiểm",
+    "overview_summary": "Thủ tục này thuộc nhóm y tế và bảo hiểm, thường dùng để đăng ký, điều chỉnh hoặc xác nhận quyền lợi bảo hiểm y tế. Kết quả thường nhận được là Quyết định chi trả kinh phí hỗ trợ khám bệnh, chữa bệnh cho người bị ốm đau, bị tai nạn, bị thương. Thời gian xử lý tham khảo: 2 ngày làm việc.",
+    "next_step_summary": "Nên xác định rõ đối tượng tham gia, quyền lợi hoặc nhu cầu điều chỉnh hồ sơ y tế trước khi nộp. Có thể chọn kênh nộp phù hợp: Trực tiếp, Trực tuyến, Dịch vụ bưu chính. Hiện có khoảng 2 mục giấy tờ cần theo dõi trong checklist.",
+    "tone": "supportive_public_service"
+  },
+  "guidance": {
+    "highlight_documents": [
+      {
+        "bucket": "required",
+        "name": "Đơn đề nghị thanh toán chi phí khám bệnh, chữa bệnh của người được hỗ trợ chế độ bị ốm đau, bị tai nạn, bị thương hoặc người đại diện hợp pháp (Mẫu số 01 ban hành kèm theo Nghị định số 40/2024/NĐ-CP).",
+        "conditions": [],
+        "attachment_path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/1_012537/M%E1%BA%ABu%20s%E1%BB%91%2001%20-%20%C4%90%E1%BB%81%20ngh%E1%BB%8B%20thanh%20to%C3%A1n%20kh%C3%A1m%20ch%E1%BB%AFa%20b%E1%BB%87nh%20%28N%C4%90%2040.2024%29.docx"
+      },
+      {
+        "bucket": "required",
+        "name": "Bản sao hóa đơn thu tiền, giấy ra viện",
+        "conditions": [],
+        "attachment_path": null
+      }
+    ],
+    "special_cases": [
+      "Có trường hợp hồ sơ điện tử thay thế bản giấy"
+    ],
+    "common_errors": [
+      "Điền sai mẫu tờ khai hoặc chọn sai biểu mẫu đi kèm."
+    ],
+    "validation_hints": [
+      "Nên xác định trước kênh nộp hồ sơ để biết có cần bản giấy, bản điện tử hay xuất trình trực tiếp.",
+      "Có mẫu biểu đính kèm, nên kiểm tra đúng biểu mẫu trước khi nộp.",
+      "Nên xác định đúng nhóm đối tượng, mã số bảo hiểm và quyền lợi áp dụng trước khi nộp."
+    ]
+  },
+  "intake": {
+    "candidate_input_fields": [
+      {
+        "field_id": "request_subject",
+        "label": "Đối tượng làm thủ tục",
+        "field_type": "text",
+        "required": true
+      },
+      {
+        "field_id": "insurance_or_medical_need",
+        "label": "Nhu cầu bảo hiểm hoặc y tế",
+        "field_type": "text",
+        "required": true
+      },
+      {
+        "field_id": "submission_channel_preference",
+        "label": "Kênh nộp dự kiến",
+        "field_type": "enum",
+        "required": false
+      },
+      {
+        "field_id": "has_insurance_number",
+        "label": "Đã có mã BHXH/BHYT",
+        "field_type": "boolean",
+        "required": false
+      },
+      {
+        "field_id": "insurance_participation_group",
+        "label": "Nhóm tham gia BHYT",
+        "field_type": "enum",
+        "required": true
+      }
+    ],
+    "suggested_clarifying_questions": [
+      "Bạn đang muốn đăng ký, điều chỉnh hay xác nhận quyền lợi y tế hoặc bảo hiểm nào?",
+      "Bạn đã có mã BHXH/BHYT hoặc thông tin đơn vị tiếp nhận liên quan chưa?"
+    ]
+  },
+  "ui_hints": {
+    "primary_channel": "online",
+    "result_label": "Quyết định chi trả kinh phí hỗ trợ khám bệnh, chữa bệnh cho người bị ốm đau, bị tai nạn, bị thương",
+    "time_badge": "2 ngày làm việc",
+    "document_count_badge": 2
+  },
+  "provenance": {
+    "generator": "workflow_domain_enricher",
+    "derivation_mode": "rule_based_semantic_enrichment",
+    "supported_group": true
+  }
+}

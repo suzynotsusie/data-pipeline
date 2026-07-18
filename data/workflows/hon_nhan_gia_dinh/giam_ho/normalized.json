@@ -1,0 +1,1297 @@
+{
+  "schema_version": "1.0",
+  "domain": "hon_nhan_gia_dinh",
+  "updated_at": "2026-07-18",
+  "source_files": [
+    "C:\\Users\\ku060\\Downloads\\VAIC source\\data-pipeline\\main\\full-data.csv",
+    "C:\\Users\\ku060\\Downloads\\VAIC source\\data-pipeline\\raw_data"
+  ],
+  "subdomains": [
+    {
+      "subdomain_key": "giam_ho",
+      "subdomain_label": "Giám hộ",
+      "event_id": 275,
+      "summary": "Nhóm thủ tục đăng ký giám hộ, chấm dứt hoặc thay đổi giám hộ và giám sát việc giám hộ.",
+      "entry_prompts": [
+        "Bạn đang cần đăng ký giám hộ, chấm dứt giám hộ hay thay đổi thông tin giám hộ?",
+        "Việc giám hộ này là trong nước, có yếu tố nước ngoài hay giữa công dân Việt Nam ở nước ngoài?"
+      ],
+      "procedure_count": 8,
+      "procedures": [
+        {
+          "procedure_code": "1.001669",
+          "procedure_title": "Thủ tục đăng ký giám hộ có yếu tố nước ngoài",
+          "subdomain_key": "giam_ho",
+          "subdomain_label": "Giám hộ",
+          "event_id": 275,
+          "field": "Hộ tịch",
+          "agency": "Phòng Tư Pháp",
+          "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bfd-47a7-74cf-a1de-4c9e077743e9",
+          "raw_data_file": "C:\\Users\\ku060\\Downloads\\VAIC source\\data-pipeline\\raw_data\\1_001669\\1_001669_procedure_detail.md",
+          "raw_data_available": true,
+          "operation_group": "giam_ho_co_yeu_to_nuoc_ngoai",
+          "operation_key": "thu_tuc_dang_ky_giam_ho_co_yeu_to_nuoc_ngoai",
+          "overview": "1. - Nếu lựa chọn hình thức nộp hồ sơ trực tiếp, người yêu cầu đăng ký giám hộ nộp hồ sơ đăng ký giám hộ tại Trung tâm Phục vụ hành chính công có thẩm quyền; nộp lệ phí nếu thuộc trường hợp phải nộp lệ phí đăng ký giám hộ; nộp phí cấp bản sao Trích lục đăng ký giám hộ nếu có yêu cầu cấp bản sao Trích lục đăng ký giám hộ. - Nếu lựa chọn hình thức nộp hồ sơ trực tuyến, người yêu cầu đăng ký giám hộ truy cập Cổng dịch vụ công quốc gia hoặc Ứng dụng định danh quốc gia. Người yêu cầu đăng ký giám hộ trực tuyến cung cấp thông tin theo mẫu hộ tịch điện tử tương tác đăng ký giám hộ, đính kèm bản chụp hoặc bản sao điện tử các giấy tờ, tài liệu theo quy định; nộp phí, lệ phí thông qua chức năng thanh toán trực tuyến hoặc bằng cách thức khác theo quy định pháp luật, hoàn tất việc nộp hồ sơ. - Cán bộ tiếp nhận hồ sơ tại Trung tâm Phục vụ hành chính công có trách nhiệm kiểm tra tính chính xác, đầy đủ, thống nhất, hợp lệ của hồ sơ. (i) Trường hợp hồ sơ đầy đủ, hợp lệ thì tiếp nhận hồ sơ, có Phiếu hẹn, trả kết quả cho người yêu cầu (nếu người yêu cầu nộp hồ sơ trực tiếp) hoặc gửi ngay Phiếu hẹn, trả kết quả qua thư điện tử hoặc gửi tin nhắn hẹn trả kết quả qua điện thoại di động cho người yêu cầu (nếu người yêu cầu nộp hồ sơ trực tuyến); chuyển hồ sơ để công chức tư pháp - hộ tịch xử lý; trường hợp tiếp nhận hồ sơ tại Trung tâm Phục vụ hành chính công cấp tỉnh, cán bộ tiếp nhận hồ sơ chuyển hồ sơ đến Ủy ban nhân dân cấp xã có thẩm quyền xử lý. (ii) Trường hợp hồ sơ chưa đầy đủ, hợp lệ thì cán bộ tiếp nhận hồ sơ thông báo cho người yêu cầu bổ sung, hoàn thiện hồ sơ, nêu rõ loại giấy tờ, nội dung cần bổ sung để người yêu cầu bổ sung, hoàn thiện. Sau khi hồ sơ được bổ sung, thực hiện lại bước (i); (iii) Trường hợp người yêu cầu đăng ký giám hộ không bổ sung, hoàn thiện được hồ sơ thì cán bộ tiếp nhận hồ sơ báo cáo Lãnh đạo Trung tâm Phục vụ hành chính công có thông báo từ chối giải quyết yêu cầu đăng ký giám hộ. - Công chức tư pháp - hộ tịch thẩm tra hồ sơ (thẩm tra tính thống nhất, hợp lệ của các thông tin trong hồ sơ, giấy tờ, tài liệu do người yêu cầu nộp, xuất trình hoặc đính kèm). + Trường hợp hồ sơ cần bổ sung, hoàn thiện hoặc không đủ điều kiện giải quyết, phải từ chối thì công chức tư pháp - hộ tịch gửi thông báo về tình trạng hồ sơ tới Trung tâm Phục vụ hành chính công để thông báo cho người nộp hồ sơ – thực hiện lại bước (ii) hoặc (iii); + Trường hợp cần phải kiểm tra, xác minh làm rõ hoặc do nguyên nhân khác mà không thể trả kết quả đúng thời gian đã hẹn thì công chức tư pháp - hộ tịch lập Phiếu xin lỗi và hẹn lại ngày trả kết quả, trong đó nêu rõ lý do chậm trả kết quả và thời gian hẹn trả kết quả, chuyển Trung tâm Phục vụ hành chính công để trả cho người yêu cầu (nếu người yêu cầu nộp hồ sơ trực tiếp), hoặc gửi Phiếu xin lỗi và hẹn lại ngày trả kết quả qua thư điện tử hoặc gửi tin nhắn qua điện thoại di động cho người yêu cầu (nếu người yêu cầu nộp hồ sơ trực tuyến). + Nếu thấy yêu cầu đăng ký giám hộ đủ điều kiện theo quy định pháp luật, hồ sơ đầy đủ, hợp lệ, đúng quy định, trường hợp tiếp nhận hồ sơ đăng ký giám hộ theo hình thức trực tiếp, thì công chức tư pháp - hộ tịch thực hiện ghi vào Sổ đăng ký giám hộ, cập nhật thông tin đăng ký giám hộ trên Phần mềm đăng ký, quản lý hộ tịch điện tử dùng chung. Trường hợp tiếp nhận hồ sơ đăng ký giám hộ theo hình thức trực tuyến, công chức tư pháp - hộ tịch gửi lại biểu mẫu Trích lục đăng ký giám hộ điện tử với thông tin đầy đủ cho người yêu cầu qua thư điện tử hoặc thiết bị số. Người yêu cầu có trách nhiệm kiểm tra tính chính xác, đầy đủ của các thông tin trên biểu mẫu Trích lục đăng ký giám hộ điện tử và xác nhận (tối đa một ngày). Nếu người yêu cầu xác nhận thông tin đã thống nhất, đầy đủ hoặc không có phản hồi sau thời hạn một ngày thì công chức tư pháp - hộ tịch thực hiện ghi nội dung vào Sổ đăng ký giám hộ, cập nhật thông tin đăng ký giám hộ trên Phần mềm đăng ký, quản lý hộ tịch điện tử dùng chung. - Công chức tư pháp - hộ tịch in Trích lục đăng ký giám hộ, trình Lãnh đạo Ủy ban nhân dân cấp xã ký, chuyển Trung tâm Phục vụ hành chính công trả kết quả cho người yêu cầu.",
+          "procedure_flow": "1. - Nếu lựa chọn hình thức nộp hồ sơ trực tiếp, người yêu cầu đăng ký giám hộ nộp hồ sơ đăng ký giám hộ tại Trung tâm Phục vụ hành chính công có thẩm quyền; nộp lệ phí nếu thuộc trường hợp phải nộp lệ phí đăng ký giám hộ; nộp phí cấp bản sao Trích lục đăng ký giám hộ nếu có yêu cầu cấp bản sao Trích lục đăng ký giám hộ. - Nếu lựa chọn hình thức nộp hồ sơ trực tuyến, người yêu cầu đăng ký giám hộ truy cập Cổng dịch vụ công quốc gia hoặc Ứng dụng định danh quốc gia. Người yêu cầu đăng ký giám hộ trực tuyến cung cấp thông tin theo mẫu hộ tịch điện tử tương tác đăng ký giám hộ, đính kèm bản chụp hoặc bản sao điện tử các giấy tờ, tài liệu theo quy định; nộp phí, lệ phí thông qua chức năng thanh toán trực tuyến hoặc bằng cách thức khác theo quy định pháp luật, hoàn tất việc nộp hồ sơ. - Cán bộ tiếp nhận hồ sơ tại Trung tâm Phục vụ hành chính công có trách nhiệm kiểm tra tính chính xác, đầy đủ, thống nhất, hợp lệ của hồ sơ. (i) Trường hợp hồ sơ đầy đủ, hợp lệ thì tiếp nhận hồ sơ, có Phiếu hẹn, trả kết quả cho người yêu cầu (nếu người yêu cầu nộp hồ sơ trực tiếp) hoặc gửi ngay Phiếu hẹn, trả kết quả qua thư điện tử hoặc gửi tin nhắn hẹn trả kết quả qua điện thoại di động cho người yêu cầu (nếu người yêu cầu nộp hồ sơ trực tuyến); chuyển hồ sơ để công chức tư pháp - hộ tịch xử lý; trường hợp tiếp nhận hồ sơ tại Trung tâm Phục vụ hành chính công cấp tỉnh, cán bộ tiếp nhận hồ sơ chuyển hồ sơ đến Ủy ban nhân dân cấp xã có thẩm quyền xử lý. (ii) Trường hợp hồ sơ chưa đầy đủ, hợp lệ thì cán bộ tiếp nhận hồ sơ thông báo cho người yêu cầu bổ sung, hoàn thiện hồ sơ, nêu rõ loại giấy tờ, nội dung cần bổ sung để người yêu cầu bổ sung, hoàn thiện. Sau khi hồ sơ được bổ sung, thực hiện lại bước (i); (iii) Trường hợp người yêu cầu đăng ký giám hộ không bổ sung, hoàn thiện được hồ sơ thì cán bộ tiếp nhận hồ sơ báo cáo Lãnh đạo Trung tâm Phục vụ hành chính công có thông báo từ chối giải quyết yêu cầu đăng ký giám hộ. - Công chức tư pháp - hộ tịch thẩm tra hồ sơ (thẩm tra tính thống nhất, hợp lệ của các thông tin trong hồ sơ, giấy tờ, tài liệu do người yêu cầu nộp, xuất trình hoặc đính kèm). + Trường hợp hồ sơ cần bổ sung, hoàn thiện hoặc không đủ điều kiện giải quyết, phải từ chối thì công chức tư pháp - hộ tịch gửi thông báo về tình trạng hồ sơ tới Trung tâm Phục vụ hành chính công để thông báo cho người nộp hồ sơ – thực hiện lại bước (ii) hoặc (iii); + Trường hợp cần phải kiểm tra, xác minh làm rõ hoặc do nguyên nhân khác mà không thể trả kết quả đúng thời gian đã hẹn thì công chức tư pháp - hộ tịch lập Phiếu xin lỗi và hẹn lại ngày trả kết quả, trong đó nêu rõ lý do chậm trả kết quả và thời gian hẹn trả kết quả, chuyển Trung tâm Phục vụ hành chính công để trả cho người yêu cầu (nếu người yêu cầu nộp hồ sơ trực tiếp), hoặc gửi Phiếu xin lỗi và hẹn lại ngày trả kết quả qua thư điện tử hoặc gửi tin nhắn qua điện thoại di động cho người yêu cầu (nếu người yêu cầu nộp hồ sơ trực tuyến). + Nếu thấy yêu cầu đăng ký giám hộ đủ điều kiện theo quy định pháp luật, hồ sơ đầy đủ, hợp lệ, đúng quy định, trường hợp tiếp nhận hồ sơ đăng ký giám hộ theo hình thức trực tiếp, thì công chức tư pháp - hộ tịch thực hiện ghi vào Sổ đăng ký giám hộ, cập nhật thông tin đăng ký giám hộ trên Phần mềm đăng ký, quản lý hộ tịch điện tử dùng chung. Trường hợp tiếp nhận hồ sơ đăng ký giám hộ theo hình thức trực tuyến, công chức tư pháp - hộ tịch gửi lại biểu mẫu Trích lục đăng ký giám hộ điện tử với thông tin đầy đủ cho người yêu cầu qua thư điện tử hoặc thiết bị số. Người yêu cầu có trách nhiệm kiểm tra tính chính xác, đầy đủ của các thông tin trên biểu mẫu Trích lục đăng ký giám hộ điện tử và xác nhận (tối đa một ngày). Nếu người yêu cầu xác nhận thông tin đã thống nhất, đầy đủ hoặc không có phản hồi sau thời hạn một ngày thì công chức tư pháp - hộ tịch thực hiện ghi nội dung vào Sổ đăng ký giám hộ, cập nhật thông tin đăng ký giám hộ trên Phần mềm đăng ký, quản lý hộ tịch điện tử dùng chung. - Công chức tư pháp - hộ tịch in Trích lục đăng ký giám hộ, trình Lãnh đạo Ủy ban nhân dân cấp xã ký, chuyển Trung tâm Phục vụ hành chính công trả kết quả cho người yêu cầu.",
+          "requirements": "Không có thông tin",
+          "submission_methods": [
+            "Trực tuyến",
+            "Dịch vụ bưu chính",
+            "Trực tiếp"
+          ],
+          "processing_time_values": [
+            "5 ngày",
+            "5 ngày",
+            "5 ngày"
+          ],
+          "document_groups": [
+            {
+              "group_name": "* Giấy tờ phải nộp:",
+              "documents": [
+                {
+                  "Tên giấy tờ": "- Văn bản ủy quyền (được chứng thực) theo quy định của pháp luật trong trường hợp ủy quyền thực hiện đăng ký giám hộ. Trường hợp người được ủy quyền là ông, bà, cha, mẹ, con, vợ, chồng, anh, chị, em ruột của người ủy quyền thì văn bản ủy quyền không phải chứng thực.",
+                  "Bản chính": "1",
+                  "Bản sao": "0",
+                  "Tệp đính kèm": "Không có"
+                },
+                {
+                  "Tên giấy tờ": "- Văn bản cử người giám hộ theo quy định của Bộ luật Dân sự đối với trường hợp đăng ký giám hộ cử; giấy tờ chứng minh điều kiện giám hộ đương nhiên theo quy định của Bộ luật Dân sự đối với trường hợp đăng ký giám hộ đương nhiên; trường hợp có nhiều người cùng đủ điều kiện làm giám hộ đương nhiên thì nộp thêm văn bản thỏa thuận về việc cử một người làm giám hộ đương nhiên;",
+                  "Bản chính": "1",
+                  "Bản sao": "0",
+                  "Tệp đính kèm": "Không có"
+                }
+              ]
+            },
+            {
+              "group_name": "* Giấy tờ phải xuất trình:",
+              "documents": [
+                {
+                  "Tên giấy tờ": "Trường hợp các thông tin cá nhân trong các giấy tờ này đã có trong Cơ sở dữ liệu quốc gia về dân cư, Cơ sở dữ liệu hộ tịch điện tử, được hệ thống điền tự động thì không phải tải lên (theo hình thức trực tuyến)",
+                  "Bản chính": "0",
+                  "Bản sao": "0",
+                  "Tệp đính kèm": "Không có"
+                },
+                {
+                  "Tên giấy tờ": "Trường hợp giấy tờ tùy thân sử dụng là: Hộ chiếu, Thẻ căn cước, Căn cước công dân, Giấy chứng nhận căn cước thì người có yêu cầu đăng ký hộ tịch chỉ cần cung cấp thông tin số định danh cá nhân hoặc thông tin về giấy tờ (số, ngày/tháng/năm cấp), cơ quan đăng ký hộ tịch có trách nhiệm tra cứu thông tin thông qua kết nối với Cơ sở dữ liệu hộ tịch điện tử, Cơ sở dữ liệu quốc gia về dân cư hoặc cơ sở dữ liệu khác có liên quan để đối chiếu, khai thác dữ liệu.",
+                  "Bản chính": "0",
+                  "Bản sao": "0",
+                  "Tệp đính kèm": "Không có"
+                },
+                {
+                  "Tên giấy tờ": "- Hộ chiếu/Thẻ căn cước công dân/Thẻ căn cước/Căn cước điện tử/Giấy chứng nhận căn cước hoặc các giấy tờ khác có dán ảnh và thông tin cá nhân do cơ quan có thẩm quyền cấp, còn giá trị sử dụng (sau đây gọi tắt là giấy tờ tùy thân) để chứng minh về nhân thân khi làm thủ tục trực tiếp tại cơ quan đăng ký hộ tịch.",
+                  "Bản chính": "1",
+                  "Bản sao": "0",
+                  "Tệp đính kèm": "Không có"
+                },
+                {
+                  "Tên giấy tờ": "- Trường hợp gửi hồ sơ qua hệ thống bưu chính thì phải gửi kèm theo bản sao có chứng thực các giấy tờ phải xuất trình nêu trên.",
+                  "Bản chính": "0",
+                  "Bản sao": "0",
+                  "Tệp đính kèm": "Không có"
+                },
+                {
+                  "Tên giấy tờ": "Trường hợp không khai thác được thông tin hoặc thông tin khai thác được không đầy đủ, không chính xác thì cơ quan đăng ký hộ tịch yêu cầu người đi đăng ký hộ tịch xuất trình bản chính giấy tờ để chứng minh, đồng thời đề nghị người đi đăng ký hộ tịch cập nhật, điều chỉnh thông tin trong các cơ sở dữ liệu theo quy định của pháp luật.",
+                  "Bản chính": "0",
+                  "Bản sao": "0",
+                  "Tệp đính kèm": "Không có"
+                },
+                {
+                  "Tên giấy tờ": "- Giấy tờ có giá trị chứng minh thông tin về cư trú trong trường hợp cơ quan đăng ký hộ tịch không thể khai thác được thông tin về nơi cư trú của công dân theo các phương thức quy định tại khoản 2 Điều 14 Nghị định số 104/2022/NĐ-CP ngày 21/12/2022 của Chính phủ. Trường hợp các thông tin về giấy tờ chứng minh nơi cư trú đã được khai thác từ Cơ sở dữ liệu quốc gia về dân cư bằng các phương thức này thì người có yêu cầu không phải xuất trình (theo hình thức trực tiếp) hoặc tải lên (theo hình thức trực tuyến).",
+                  "Bản chính": "1",
+                  "Bản sao": "0",
+                  "Tệp đính kèm": "Không có"
+                }
+              ]
+            },
+            {
+              "group_name": "* Lưu ý:",
+              "documents": [
+                {
+                  "Tên giấy tờ": "Trường hợp người yêu cầu nộp bản chụp kèm theo bản chính giấy tờ thì người tiếp nhận có trách nhiệm kiểm tra, đối chiếu bản chụp với bản chính và ký xác nhận, không được yêu cầu nộp bản sao giấy tờ đó.",
+                  "Bản chính": "0",
+                  "Bản sao": "0",
+                  "Tệp đính kèm": "Không có"
+                },
+                {
+                  "Tên giấy tờ": "Đối với giấy tờ xuất trình khi đăng ký hộ tịch, người tiếp nhận có trách nhiệm kiểm tra, đối chiếu, ghi lại thông tin hoặc chụp lại, ký xác nhận để lưu trong hồ sơ và trả lại cho người xuất trình, không được yêu cầu nộp bản sao hoặc bản chụp giấy tờ đó.",
+                  "Bản chính": "0",
+                  "Bản sao": "0",
+                  "Tệp đính kèm": "Không có"
+                },
+                {
+                  "Tên giấy tờ": "+ Trường hợp giấy tờ, tài liệu phải gửi kèm trong hồ sơ đăng ký giám hộ trực tuyến đã có bản sao điện tử hoặc đã có bản điện tử giấy tờ hộ tịch thì người yêu cầu được sử dụng bản điện tử này.",
+                  "Bản chính": "0",
+                  "Bản sao": "0",
+                  "Tệp đính kèm": "Không có"
+                },
+                {
+                  "Tên giấy tờ": "+ Người yêu cầu đăng ký hộ tịch có thể nộp bản sao được chứng thực từ bản chính hoặc bản sao được cấp từ sổ gốc (sau đây gọi là bản sao) hoặc bản chụp kèm theo bản chính, bản điện tử các giấy tờ này, bao gồm cả giấy tờ được tích hợp, hiển thị trên Ứng dụng định danh điện tử (VneID).",
+                  "Bản chính": "0",
+                  "Bản sao": "0",
+                  "Tệp đính kèm": "Không có"
+                },
+                {
+                  "Tên giấy tờ": "+ Bản chụp các giấy tờ gửi kèm theo hồ sơ đăng ký giám hộ trực tuyến phải bảo đảm rõ nét, đầy đủ, toàn vẹn về nội dung, là bản chụp bằng máy ảnh, điện thoại hoặc được chụp, được quét bằng thiết bị điện tử, từ giấy tờ được cấp hợp lệ, còn giá trị sử dụng.",
+                  "Bản chính": "0",
+                  "Bản sao": "0",
+                  "Tệp đính kèm": "Không có"
+                },
+                {
+                  "Tên giấy tờ": "+ Người tiếp nhận có trách nhiệm tiếp nhận đúng, đủ hồ sơ đăng ký hộ tịch theo quy định của pháp luật hộ tịch, không được yêu cầu người đăng ký hộ tịch nộp thêm giấy tờ mà pháp luật hộ tịch không quy định phải nộp .",
+                  "Bản chính": "0",
+                  "Bản sao": "0",
+                  "Tệp đính kèm": "Không có"
+                },
+                {
+                  "Tên giấy tờ": "- Trường hợp người yêu cầu đăng k‎ý hộ tịch lựa chọn nhận kết quả tại Trung tâm Phục vụ hành chính công thì người yêu cầu đăng ký hộ tịch phải xuất trình giấy tờ tuỳ thân, nộp các giấy tờ là thành phần hồ sơ theo quy định; Trường hợp người yêu cầu đăng ký hộ tịch không lựa chọn nhận kết quả tại Trung tâm Phục vụ hành chính công thì người yêu cầu đăng ký hộ tịch nộp các giấy tờ là thành phần hồ sơ theo quy định trước khi nhận kết quả.",
+                  "Bản chính": "0",
+                  "Bản sao": "0",
+                  "Tệp đính kèm": "Không có"
+                },
+                {
+                  "Tên giấy tờ": "- Trường hợp người yêu cầu đăng ký hộ tịch không cung cấp được giấy tờ theo quy định hoặc giấy tờ nộp, xuất trình bị tẩy xóa, sửa chữa, làm giả thì cơ quan đăng ký hộ tịch có thẩm quyền hủy bỏ kết quả đăng ký hộ tịch.",
+                  "Bản chính": "0",
+                  "Bản sao": "0",
+                  "Tệp đính kèm": "Không có"
+                },
+                {
+                  "Tên giấy tờ": "- Đối với giấy tờ gửi kèm theo nếu người yêu cầu nộp hồ sơ theo hình thức trực tuyến:",
+                  "Bản chính": "0",
+                  "Bản sao": "0",
+                  "Tệp đính kèm": "Không có"
+                },
+                {
+                  "Tên giấy tờ": "- Đối với giấy tờ nộp, xuất trình nếu người yêu cầu nộp hồ sơ theo hình thức trực tiếp:",
+                  "Bản chính": "0",
+                  "Bản sao": "0",
+                  "Tệp đính kèm": "Không có"
+                },
+                {
+                  "Tên giấy tờ": "- Giấy tờ do cơ quan có thẩm quyền của nước ngoài cấp, công chứng hoặc xác nhận để sử dụng cho việc đăng ký hộ tịch tại Việt Nam phải được hợp pháp hóa lãnh sự theo quy định của pháp luật, trừ trường hợp được miễn theo điều ước quốc tế mà Việt Nam là thành viên.",
+                  "Bản chính": "0",
+                  "Bản sao": "0",
+                  "Tệp đính kèm": "Không có"
+                },
+                {
+                  "Tên giấy tờ": "- Cá nhân có quyền lựa chọn thực hiện thủ tục hành chính về hộ tịch tại cơ quan đăng ký hộ tịch nơi cư trú; nơi cư trú của cá nhân được xác định theo quy định của pháp luật về cư trú. Trường hợp cá nhân lựa chọn thực hiện thủ tục hành chính về hộ tịch không phải tại Ủy ban nhân dân cấp xã nơi thường trú hoặc nơi tạm trú thì Ủy ban nhân dân cấp xã nơi tiếp nhận yêu cầu có trách nhiệm hỗ trợ người dân nộp hồ sơ đăng ký hộ tịch trực tuyến đến đúng cơ quan có thẩm quyền theo quy định.",
+                  "Bản chính": "0",
+                  "Bản sao": "0",
+                  "Tệp đính kèm": "Không có"
+                },
+                {
+                  "Tên giấy tờ": "+ Người tiếp nhận hồ sơ thực hiện khai thác thông tin trong CSDLQGVDC theo quy định pháp luật nếu người yêu cầu đăng ký hộ tịch đã cung cấp họ, chữ đệm, tên; ngày, tháng, năm sinh; số định danh cá nhân/thẻ căn cước công dân/thẻ căn cước/căn cước điện tử. Trường hợp các thông tin cần khai thác không có trong CSDLQGVDC thì đề nghị người yêu cầu kê khai đầy đủ.",
+                  "Bản chính": "0",
+                  "Bản sao": "0",
+                  "Tệp đính kèm": "Không có"
+                }
+              ]
+            },
+            {
+              "group_name": "* Lưu ý:",
+              "documents": [
+                {
+                  "Tên giấy tờ": "-  Người có yêu cầu đăng ký giám hộ thực hiện việc nộp/xuất trình (theo hình thức trực tiếp) hoặc tải lên (theo hình thức trực tuyến) các giấy tờ sau:",
+                  "Bản chính": "0",
+                  "Bản sao": "0",
+                  "Tệp đính kèm": "Không có"
+                },
+                {
+                  "Tên giấy tờ": "-  Mẫu hộ tịch điện tử tương tác đăng ký giám hộ (do người yêu cầu cung cấp thông tin theo hướng dẫn trên Cổng dịch vụ công nếu người có yêu cầu lựa chọn nộp hồ sơ theo hình thức trực tuyến);",
+                  "Bản chính": "1",
+                  "Bản sao": "0",
+                  "Tệp đính kèm": "Không có"
+                },
+                {
+                  "Tên giấy tờ": "-  Tờ khai đăng ký giám hộ theo mẫu (nếu người yêu cầu lựa chọn nộp hồ sơ theo hình thức trực tiếp hoặc gửi hồ sơ qua hệ thống bưu chính);",
+                  "Bản chính": "1",
+                  "Bản sao": "0",
+                  "Tệp đính kèm": "Không có"
+                }
+              ]
+            }
+          ],
+          "result_items": [
+            "Trích lục đăng ký giám hộ (Mã: `KQ.G15.000035`)"
+          ]
+        },
+        {
+          "procedure_code": "1.004837",
+          "procedure_title": "Thủ tục đăng ký giám hộ",
+          "subdomain_key": "giam_ho",
+          "subdomain_label": "Giám hộ",
+          "event_id": 275,
+          "field": "Hộ tịch",
+          "agency": "Ủy ban nhân dân cấp xã",
+          "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bfd-671b-75fa-82fb-8ad05a37f638",
+          "raw_data_file": "C:\\Users\\ku060\\Downloads\\VAIC source\\data-pipeline\\raw_data\\1_004837\\1_004837_procedure_detail.md",
+          "raw_data_available": true,
+          "operation_group": "dang_ky_giam_ho",
+          "operation_key": "thu_tuc_dang_ky_giam_ho",
+          "overview": "1. - Nếu lựa chọn hình thức nộp hồ sơ trực tiếp, người yêu cầu đăng ký giám hộ nộp hồ sơ đăng ký giám hộ tại Trung tâm Phục vụ hành chính công có thẩm quyền; nộp lệ phí nếu thuộc trường hợp phải nộp lệ phí đăng ký giám hộ; nộp phí cấp bản sao Trích lục đăng ký giám hộ nếu có yêu cầu cấp bản sao Trích lục đăng ký giám hộ. - Nếu lựa chọn hình thức nộp hồ sơ trực tuyến, người yêu cầu đăng ký giám hộ truy cập Cổng dịch vụ công quốc gia hoặc Ứng dụng định danh quốc gia. Người yêu cầu đăng ký giám hộ trực tuyến cung cấp thông tin theo mẫu hộ tịch điện tử tương tác đăng ký giám hộ, đính kèm bản chụp hoặc bản sao điện tử các giấy tờ, tài liệu theo quy định; nộp phí, lệ phí thông qua chức năng thanh toán trực tuyến hoặc bằng cách thức khác theo quy định pháp luật, hoàn tất việc nộp hồ sơ. - Cán bộ tiếp nhận hồ sơ tại Trung tâm Phục vụ hành chính công có trách nhiệm kiểm tra tính chính xác, đầy đủ, thống nhất, hợp lệ của hồ sơ. (i) Trường hợp hồ sơ đầy đủ, hợp lệ thì tiếp nhận hồ sơ, có Phiếu hẹn, trả kết quả cho người yêu cầu (nếu người yêu cầu nộp hồ sơ trực tiếp) hoặc gửi ngay Phiếu hẹn, trả kết quả qua thư điện tử hoặc gửi tin nhắn hẹn trả kết quả qua điện thoại di động cho người yêu cầu (nếu người yêu cầu nộp hồ sơ trực tuyến), đồng thời chuyển hồ sơ để công chức tư pháp - hộ tịch xử lý; trường hợp tiếp nhận hồ sơ tại Trung tâm Phục vụ hành chính công cấp tỉnh, cán bộ tiếp nhận hồ sơ chuyển hồ sơ đến Ủy ban nhân dân cấp xã có thẩm quyền xử lý. (ii) Trường hợp hồ sơ chưa đầy đủ, hợp lệ thì cán bộ tiếp nhận hồ sơ thông báo cho người yêu cầu bổ sung, hoàn thiện hồ sơ, nêu rõ loại giấy tờ, nội dung cần bổ sung để người yêu cầu bổ sung, hoàn thiện. Sau khi hồ sơ được bổ sung, thực hiện lại bước (i); (iii) Trường hợp người yêu cầu đăng ký giám hộ không bổ sung, hoàn thiện được hồ sơ thì cán bộ tiếp nhận hồ sơ báo cáo Lãnh đạo Trung tâm Phục vụ hành chính công có thông báo từ chối giải quyết yêu cầu đăng ký giám hộ. - Công chức tư pháp - hộ tịch thẩm tra hồ sơ (thẩm tra tính thống nhất, hợp lệ của các thông tin trong hồ sơ, giấy tờ, tài liệu do người yêu cầu nộp, xuất trình hoặc đính kèm). + Trường hợp hồ sơ cần bổ sung, hoàn thiện hoặc không đủ điều kiện giải quyết, phải từ chối thì công chức tư pháp - hộ tịch gửi thông báo về tình trạng hồ sơ tới Trung tâm Phục vụ hành chính công để thông báo cho người nộp hồ sơ – thực hiện lại bước (ii) hoặc (iii); + Trường hợp cần phải kiểm tra, xác minh làm rõ hoặc do nguyên nhân khác mà không thể trả kết quả đúng thời gian đã hẹn thì công chức tư pháp - hộ tịch lập Phiếu xin lỗi và hẹn lại ngày trả kết quả, trong đó nêu rõ lý do chậm trả kết quả và thời gian hẹn trả kết quả, chuyển Trung tâm Phục vụ hành chính công để trả cho người yêu cầu (nếu người yêu cầu nộp hồ sơ trực tiếp), hoặc gửi Phiếu xin lỗi và hẹn lại ngày trả kết quả qua thư điện tử hoặc gửi tin nhắn qua điện thoại di động cho người yêu cầu (nếu người yêu cầu nộp hồ sơ trực tuyến). + Nếu thấy yêu cầu đăng ký giám hộ đủ điều kiện theo quy định pháp luật, hồ sơ đầy đủ, hợp lệ, đúng quy định, trường hợp tiếp nhận hồ sơ đăng ký giám hộ theo hình thức trực tiếp, thì công chức tư pháp - hộ tịch thực hiện ghi vào Sổ đăng ký giám hộ, cập nhật thông tin đăng ký giám hộ trên Phần mềm đăng ký, quản lý hộ tịch điện tử dùng chung. Trường hợp tiếp nhận hồ sơ đăng ký giám hộ theo hình thức trực tuyến, công chức tư pháp - hộ tịch gửi lại biểu mẫu Trích lục đăng ký giám hộ điện tử với thông tin đầy đủ cho người yêu cầu qua thư điện tử hoặc thiết bị số. Người yêu cầu có trách nhiệm kiểm tra tính chính xác, đầy đủ của các thông tin trên biểu mẫu Trích lục đăng ký giám hộ điện tử và xác nhận (tối đa một ngày). Nếu người yêu cầu xác nhận thông tin đã thống nhất, đầy đủ hoặc không có phản hồi sau thời hạn một ngày thì công chức tư pháp - hộ tịch thực hiện ghi nội dung vào Sổ đăng ký giám hộ, cập nhật thông tin đăng ký giám hộ trên Phần mềm đăng ký, quản lý hộ tịch điện tử dùng chung. - Công chức tư pháp - hộ tịch in Trích lục đăng ký giám hộ, trình Lãnh đạo Ủy ban nhân dân cấp xã ký, chuyển Trung tâm Phục vụ hành chính công trả kết quả cho người yêu cầu.",
+          "procedure_flow": "1. - Nếu lựa chọn hình thức nộp hồ sơ trực tiếp, người yêu cầu đăng ký giám hộ nộp hồ sơ đăng ký giám hộ tại Trung tâm Phục vụ hành chính công có thẩm quyền; nộp lệ phí nếu thuộc trường hợp phải nộp lệ phí đăng ký giám hộ; nộp phí cấp bản sao Trích lục đăng ký giám hộ nếu có yêu cầu cấp bản sao Trích lục đăng ký giám hộ. - Nếu lựa chọn hình thức nộp hồ sơ trực tuyến, người yêu cầu đăng ký giám hộ truy cập Cổng dịch vụ công quốc gia hoặc Ứng dụng định danh quốc gia. Người yêu cầu đăng ký giám hộ trực tuyến cung cấp thông tin theo mẫu hộ tịch điện tử tương tác đăng ký giám hộ, đính kèm bản chụp hoặc bản sao điện tử các giấy tờ, tài liệu theo quy định; nộp phí, lệ phí thông qua chức năng thanh toán trực tuyến hoặc bằng cách thức khác theo quy định pháp luật, hoàn tất việc nộp hồ sơ. - Cán bộ tiếp nhận hồ sơ tại Trung tâm Phục vụ hành chính công có trách nhiệm kiểm tra tính chính xác, đầy đủ, thống nhất, hợp lệ của hồ sơ. (i) Trường hợp hồ sơ đầy đủ, hợp lệ thì tiếp nhận hồ sơ, có Phiếu hẹn, trả kết quả cho người yêu cầu (nếu người yêu cầu nộp hồ sơ trực tiếp) hoặc gửi ngay Phiếu hẹn, trả kết quả qua thư điện tử hoặc gửi tin nhắn hẹn trả kết quả qua điện thoại di động cho người yêu cầu (nếu người yêu cầu nộp hồ sơ trực tuyến), đồng thời chuyển hồ sơ để công chức tư pháp - hộ tịch xử lý; trường hợp tiếp nhận hồ sơ tại Trung tâm Phục vụ hành chính công cấp tỉnh, cán bộ tiếp nhận hồ sơ chuyển hồ sơ đến Ủy ban nhân dân cấp xã có thẩm quyền xử lý. (ii) Trường hợp hồ sơ chưa đầy đủ, hợp lệ thì cán bộ tiếp nhận hồ sơ thông báo cho người yêu cầu bổ sung, hoàn thiện hồ sơ, nêu rõ loại giấy tờ, nội dung cần bổ sung để người yêu cầu bổ sung, hoàn thiện. Sau khi hồ sơ được bổ sung, thực hiện lại bước (i); (iii) Trường hợp người yêu cầu đăng ký giám hộ không bổ sung, hoàn thiện được hồ sơ thì cán bộ tiếp nhận hồ sơ báo cáo Lãnh đạo Trung tâm Phục vụ hành chính công có thông báo từ chối giải quyết yêu cầu đăng ký giám hộ. - Công chức tư pháp - hộ tịch thẩm tra hồ sơ (thẩm tra tính thống nhất, hợp lệ của các thông tin trong hồ sơ, giấy tờ, tài liệu do người yêu cầu nộp, xuất trình hoặc đính kèm). + Trường hợp hồ sơ cần bổ sung, hoàn thiện hoặc không đủ điều kiện giải quyết, phải từ chối thì công chức tư pháp - hộ tịch gửi thông báo về tình trạng hồ sơ tới Trung tâm Phục vụ hành chính công để thông báo cho người nộp hồ sơ – thực hiện lại bước (ii) hoặc (iii); + Trường hợp cần phải kiểm tra, xác minh làm rõ hoặc do nguyên nhân khác mà không thể trả kết quả đúng thời gian đã hẹn thì công chức tư pháp - hộ tịch lập Phiếu xin lỗi và hẹn lại ngày trả kết quả, trong đó nêu rõ lý do chậm trả kết quả và thời gian hẹn trả kết quả, chuyển Trung tâm Phục vụ hành chính công để trả cho người yêu cầu (nếu người yêu cầu nộp hồ sơ trực tiếp), hoặc gửi Phiếu xin lỗi và hẹn lại ngày trả kết quả qua thư điện tử hoặc gửi tin nhắn qua điện thoại di động cho người yêu cầu (nếu người yêu cầu nộp hồ sơ trực tuyến). + Nếu thấy yêu cầu đăng ký giám hộ đủ điều kiện theo quy định pháp luật, hồ sơ đầy đủ, hợp lệ, đúng quy định, trường hợp tiếp nhận hồ sơ đăng ký giám hộ theo hình thức trực tiếp, thì công chức tư pháp - hộ tịch thực hiện ghi vào Sổ đăng ký giám hộ, cập nhật thông tin đăng ký giám hộ trên Phần mềm đăng ký, quản lý hộ tịch điện tử dùng chung. Trường hợp tiếp nhận hồ sơ đăng ký giám hộ theo hình thức trực tuyến, công chức tư pháp - hộ tịch gửi lại biểu mẫu Trích lục đăng ký giám hộ điện tử với thông tin đầy đủ cho người yêu cầu qua thư điện tử hoặc thiết bị số. Người yêu cầu có trách nhiệm kiểm tra tính chính xác, đầy đủ của các thông tin trên biểu mẫu Trích lục đăng ký giám hộ điện tử và xác nhận (tối đa một ngày). Nếu người yêu cầu xác nhận thông tin đã thống nhất, đầy đủ hoặc không có phản hồi sau thời hạn một ngày thì công chức tư pháp - hộ tịch thực hiện ghi nội dung vào Sổ đăng ký giám hộ, cập nhật thông tin đăng ký giám hộ trên Phần mềm đăng ký, quản lý hộ tịch điện tử dùng chung. - Công chức tư pháp - hộ tịch in Trích lục đăng ký giám hộ, trình Lãnh đạo Ủy ban nhân dân cấp xã ký, chuyển Trung tâm Phục vụ hành chính công trả kết quả cho người yêu cầu.",
+          "requirements": "Không có thông tin",
+          "submission_methods": [
+            "Trực tuyến",
+            "Dịch vụ bưu chính",
+            "Trực tiếp"
+          ],
+          "processing_time_values": [
+            "3 ngày làm việc",
+            "3 ngày làm việc",
+            "3 ngày làm việc"
+          ],
+          "document_groups": [
+            {
+              "group_name": "* Giấy tờ phải xuất trình:",
+              "documents": [
+                {
+                  "Tên giấy tờ": "Trường hợp không khai thác được thông tin hoặc thông tin khai thác được không đầy đủ, không chính xác thì cơ quan đăng ký hộ tịch yêu cầu người đi đăng ký hộ tịch xuất trình bản chính giấy tờ để chứng minh, đồng thời đề nghị người đi đăng ký hộ tịch cập nhật, điều chỉnh thông tin trong các cơ sở dữ liệu theo quy định của pháp luật.",
+                  "Bản chính": "0",
+                  "Bản sao": "0",
+                  "Tệp đính kèm": "Không có"
+                },
+                {
+                  "Tên giấy tờ": "- Giấy tờ có giá trị chứng minh thông tin về cư trú trong trường hợp cơ quan đăng ký hộ tịch không thể khai thác được thông tin về nơi cư trú của công dân theo các phương thức quy định tại khoản 2 Điều 14 Nghị định số 104/2022/NĐ-CP ngày 21/12/2022 của Chính phủ. Trường hợp các thông tin về giấy tờ chứng minh nơi cư trú đã được khai thác từ Cơ sở dữ liệu quốc gia về dân cư bằng các phương thức này thì người có yêu cầu không phải xuất trình (theo hình thức trực tiếp) hoặc tải lên (theo hình thức trực tuyến).",
+                  "Bản chính": "1",
+                  "Bản sao": "0",
+                  "Tệp đính kèm": "Không có"
+                },
+                {
+                  "Tên giấy tờ": "- Trường hợp gửi hồ sơ qua hệ thống bưu chính thì phải gửi kèm theo bản sao có chứng thực các giấy tờ phải xuất trình nêu trên.",
+                  "Bản chính": "0",
+                  "Bản sao": "0",
+                  "Tệp đính kèm": "Không có"
+                },
+                {
+                  "Tên giấy tờ": "- Hộ chiếu/Thẻ căn cước công dân/Thẻ căn cước/Căn cước điện tử/Giấy chứng nhận căn cước hoặc các giấy tờ khác có dán ảnh và thông tin cá nhân do cơ quan có thẩm quyền cấp, còn giá trị sử dụng (sau đây gọi tắt là giấy tờ tùy thân) để chứng minh về nhân thân khi làm thủ tục trực tiếp tại cơ quan đăng ký hộ tịch.",
+                  "Bản chính": "1",
+                  "Bản sao": "0",
+                  "Tệp đính kèm": "Không có"
+                },
+                {
+                  "Tên giấy tờ": "Trường hợp các thông tin cá nhân trong các giấy tờ này đã có trong Cơ sở dữ liệu quốc gia về dân cư, Cơ sở dữ liệu hộ tịch điện tử, được hệ thống điền tự động thì không phải tải lên (theo hình thức trực tuyến)",
+                  "Bản chính": "0",
+                  "Bản sao": "0",
+                  "Tệp đính kèm": "Không có"
+                },
+                {
+                  "Tên giấy tờ": "Trường hợp giấy tờ tùy thân sử dụng là: Hộ chiếu, Thẻ căn cước, Căn cước công dân, Giấy chứng nhận căn cước thì người có yêu cầu đăng ký hộ tịch chỉ cần cung cấp thông tin số định danh cá nhân hoặc thông tin về giấy tờ (số, ngày/tháng/năm cấp), cơ quan đăng ký hộ tịch có trách nhiệm tra cứu thông tin thông qua kết nối với Cơ sở dữ liệu hộ tịch điện tử, Cơ sở dữ liệu quốc gia về dân cư hoặc cơ sở dữ liệu khác có liên quan để đối chiếu, khai thác dữ liệu.",
+                  "Bản chính": "0",
+                  "Bản sao": "0",
+                  "Tệp đính kèm": "Không có"
+                }
+              ]
+            },
+            {
+              "group_name": "* Giấy tờ phải nộp:",
+              "documents": [
+                {
+                  "Tên giấy tờ": "- Văn bản ủy quyền theo quy định của pháp luật trong trường hợp ủy quyền thực hiện việc đăng ký giám hộ. Trường hợp người được ủy quyền là ông, bà, cha, mẹ, con, vợ, chồng, anh, chị, em ruột của người ủy quyền thì văn bản ủy quyền không phải chứng thực.",
+                  "Bản chính": "1",
+                  "Bản sao": "0",
+                  "Tệp đính kèm": "Không có"
+                },
+                {
+                  "Tên giấy tờ": "- Giấy tờ chứng minh điều kiện giám hộ đương nhiên theo quy định của Bộ luật Dân sự đối với trường hợp đăng ký giám hộ đương nhiên. Trường hợp có nhiều người cùng đủ điều kiện làm giám hộ đương nhiên thì nộp thêm văn bản thỏa thuận về việc cử một người làm giám hộ đương nhiên.",
+                  "Bản chính": "1",
+                  "Bản sao": "0",
+                  "Tệp đính kèm": "Không có"
+                },
+                {
+                  "Tên giấy tờ": "- Văn bản cử người giám hộ theo quy định của Bộ luật Dân sự đối với trường hợp đăng ký giám hộ cử.",
+                  "Bản chính": "1",
+                  "Bản sao": "0",
+                  "Tệp đính kèm": "Không có"
+                }
+              ]
+            },
+            {
+              "group_name": "* Lưu ý:",
+              "documents": [
+                {
+                  "Tên giấy tờ": "- Giấy tờ do cơ quan có thẩm quyền của nước ngoài cấp, công chứng hoặc xác nhận để sử dụng cho việc đăng ký hộ tịch tại Việt Nam phải được hợp pháp hóa lãnh sự theo quy định của pháp luật, trừ trường hợp được miễn theo điều ước quốc tế mà Việt Nam là thành viên.",
+                  "Bản chính": "0",
+                  "Bản sao": "0",
+                  "Tệp đính kèm": "Không có"
+                },
+                {
+                  "Tên giấy tờ": "Trường hợp người yêu cầu nộp bản chụp kèm theo bản chính giấy tờ thì người tiếp nhận có trách nhiệm kiểm tra, đối chiếu bản chụp với bản chính và ký xác nhận, không được yêu cầu nộp bản sao giấy tờ đó.",
+                  "Bản chính": "0",
+                  "Bản sao": "0",
+                  "Tệp đính kèm": "Không có"
+                },
+                {
+                  "Tên giấy tờ": "- Cá nhân có quyền lựa chọn thực hiện thủ tục hành chính về hộ tịch tại cơ quan đăng ký hộ tịch nơi cư trú; nơi cư trú của cá nhân được xác định theo quy định của pháp luật về cư trú. Trường hợp cá nhân lựa chọn thực hiện thủ tục hành chính về hộ tịch không phải tại Ủy ban nhân dân cấp xã nơi thường trú hoặc nơi tạm trú thì Ủy ban nhân dân cấp xã nơi tiếp nhận yêu cầu có trách nhiệm hỗ trợ người dân nộp hồ sơ đăng ký hộ tịch trực tuyến đến đúng cơ quan có thẩm quyền theo quy định.",
+                  "Bản chính": "0",
+                  "Bản sao": "0",
+                  "Tệp đính kèm": "Không có"
+                },
+                {
+                  "Tên giấy tờ": "+ Người yêu cầu đăng ký hộ tịch có thể nộp bản sao được chứng thực từ bản chính hoặc bản sao được cấp từ sổ gốc (sau đây gọi là bản sao) hoặc bản chụp kèm theo bản chính, bản điện tử các giấy tờ này, bao gồm cả giấy tờ được tích hợp, hiển thị trên Ứng dụng định danh điện tử (VneID).",
+                  "Bản chính": "0",
+                  "Bản sao": "0",
+                  "Tệp đính kèm": "Không có"
+                },
+                {
+                  "Tên giấy tờ": "- Đối với giấy tờ gửi kèm theo nếu người yêu cầu nộp hồ sơ theo hình thức trực tuyến:",
+                  "Bản chính": "0",
+                  "Bản sao": "0",
+                  "Tệp đính kèm": "Không có"
+                },
+                {
+                  "Tên giấy tờ": "- Đối với giấy tờ nộp, xuất trình nếu người yêu cầu nộp hồ sơ theo hình thức trực tiếp:",
+                  "Bản chính": "0",
+                  "Bản sao": "0",
+                  "Tệp đính kèm": "Không có"
+                },
+                {
+                  "Tên giấy tờ": "+ Trường hợp giấy tờ, tài liệu phải gửi kèm trong hồ sơ đăng ký giám hộ trực tuyến đã có bản sao điện tử hoặc đã có bản điện tử giấy tờ hộ tịch thì người yêu cầu được sử dụng bản điện tử này.",
+                  "Bản chính": "0",
+                  "Bản sao": "0",
+                  "Tệp đính kèm": "Không có"
+                },
+                {
+                  "Tên giấy tờ": "+ Khi đến cơ quan đăng ký hộ tịch nhận kết quả (Trích lục đăng ký giám hộ/bản sao Trích lục đăng ký giám hộ), người có yêu cầu đăng ký giám hộ xuất trình giấy tờ tuỳ thân, nộp bản chính các giấy tờ là thành phần hồ sơ đăng ký giám hộ theo quy định pháp luật hộ tịch.",
+                  "Bản chính": "0",
+                  "Bản sao": "0",
+                  "Tệp đính kèm": "Không có"
+                },
+                {
+                  "Tên giấy tờ": "- Trường hợp người yêu cầu đăng ký giám hộ không cung cấp được giấy tờ nêu trên theo quy định hoặc giấy tờ nộp, xuất trình bị tẩy xóa, sửa chữa, làm giả thì cơ quan đăng ký hộ tịch có thẩm quyền hủy bỏ kết quả đăng ký giám hộ.",
+                  "Bản chính": "0",
+                  "Bản sao": "0",
+                  "Tệp đính kèm": "Không có"
+                },
+                {
+                  "Tên giấy tờ": "+ Đối với giấy tờ xuất trình khi đăng ký hộ tịch, người tiếp nhận có trách nhiệm kiểm tra, đối chiếu với thông tin trong tờ khai, chụp lại hoặc ghi lại thông tin để lưu trong hồ sơ và trả lại cho người xuất trình, không được yêu cầu nộp bản sao hoặc bản chụp giấy tờ đó.",
+                  "Bản chính": "0",
+                  "Bản sao": "0",
+                  "Tệp đính kèm": "Không có"
+                },
+                {
+                  "Tên giấy tờ": "+ Người tiếp nhận có trách nhiệm tiếp nhận đúng, đủ hồ sơ đăng ký hộ tịch theo quy định của pháp luật hộ tịch, không được yêu cầu người đăng ký hộ tịch nộp thêm giấy tờ mà pháp luật hộ tịch không quy định phải nộp .",
+                  "Bản chính": "0",
+                  "Bản sao": "0",
+                  "Tệp đính kèm": "Không có"
+                },
+                {
+                  "Tên giấy tờ": "+ Người tiếp nhận hồ sơ thực hiện khai thác thông tin trong CSDLQGVDC theo quy định pháp luật nếu người yêu cầu đăng ký hộ tịch đã cung cấp họ, chữ đệm, tên; ngày, tháng, năm sinh; số định danh cá nhân/thẻ căn cước công dân/thẻ căn cước/căn cước điện tử. Trường hợp các thông tin cần khai thác không có trong CSDLQGVDC thì đề nghị người yêu cầu kê khai đầy đủ.",
+                  "Bản chính": "0",
+                  "Bản sao": "0",
+                  "Tệp đính kèm": "Không có"
+                }
+              ]
+            },
+            {
+              "group_name": "* Lưu ý:",
+              "documents": [
+                {
+                  "Tên giấy tờ": "- Mẫu hộ tịch điện tử tương tác đăng ký giám hộ (do người yêu cầu cung cấp thông tin theo hướng dẫn trên Cổng dịch vụ công, nếu người có yêu cầu lựa chọn nộp hồ sơ theo hình thức trực tuyến)",
+                  "Bản chính": "1",
+                  "Bản sao": "0",
+                  "Tệp đính kèm": "Không có"
+                },
+                {
+                  "Tên giấy tờ": "- Người có yêu cầu đăng ký giám hộ thực hiện việc nộp/xuất trình (theo hình thức trực tiếp) hoặc tải lên (theo hình thức trực tuyến) các giấy tờ sau:",
+                  "Bản chính": "0",
+                  "Bản sao": "0",
+                  "Tệp đính kèm": "Không có"
+                },
+                {
+                  "Tên giấy tờ": "- Tờ khai đăng ký giám hộ theo mẫu (nếu người có yêu cầu lựa chọn nộp hồ sơ theo hình thức trực tiếp);",
+                  "Bản chính": "1",
+                  "Bản sao": "0",
+                  "Tệp đính kèm": "Không có"
+                }
+              ]
+            }
+          ],
+          "result_items": [
+            "Trích lục đăng ký giám hộ (Mã: `KQ.G15.000035`)"
+          ]
+        },
+        {
+          "procedure_code": "1.004845",
+          "procedure_title": "Thủ tục đăng ký chấm dứt giám hộ",
+          "subdomain_key": "giam_ho",
+          "subdomain_label": "Giám hộ",
+          "event_id": 275,
+          "field": "Hộ tịch",
+          "agency": "Ủy ban nhân dân cấp xã",
+          "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bfd-6724-715f-822c-28e986912730",
+          "raw_data_file": "C:\\Users\\ku060\\Downloads\\VAIC source\\data-pipeline\\raw_data\\1_004845\\1_004845_procedure_detail.md",
+          "raw_data_available": true,
+          "operation_group": "cham_dut_hoac_thay_doi_giam_ho",
+          "operation_key": "thu_tuc_dang_ky_cham_dut_giam_ho",
+          "overview": "1. - Nếu lựa chọn hình thức nộp hồ sơ trực tiếp, người yêu cầu đăng ký chấm dứt giám hộ nộp hồ sơ đăng ký chấm dứt giám hộ tại Trung tâm Phục vụ hành chính công có thẩm quyền; nộp lệ phí nếu thuộc trường hợp phải nộp lệ phí đăng ký chấm dứt giám hộ; nộp phí cấp bản sao Trích lục đăng ký chấm dứt giám hộ nếu có yêu cầu cấp bản sao Trích lục đăng ký chấm dứt giám hộ. - Nếu lựa chọn hình thức nộp hồ sơ trực tuyến, người yêu cầu đăng ký chấm dứt giám hộ truy cập Cổng dịch vụ công quốc gia hoặc Ứng dụng định danh quốc gia. Người yêu cầu đăng ký chấm dứt giám hộ trực tuyến cung cấp thông tin theo mẫu hộ tịch điện tử tương tác đăng ký chấm dứt giám hộ, đính kèm bản chụp hoặc bản sao điện tử các giấy tờ, tài liệu theo quy định; nộp phí, lệ phí thông qua chức năng thanh toán trực tuyến hoặc bằng cách thức khác theo quy định pháp luật, hoàn tất việc nộp hồ sơ. - Cán bộ tiếp nhận hồ sơ tại Trung tâm Phục vụ hành chính công có trách nhiệm kiểm tra tính chính xác, đầy đủ, thống nhất, hợp lệ của hồ sơ. (i) Trường hợp hồ sơ đầy đủ, hợp lệ thì tiếp nhận hồ sơ, có Phiếu hẹn, trả kết quả cho người yêu cầu (nếu người yêu cầu nộp hồ sơ trực tiếp) hoặc gửi ngay Phiếu hẹn, trả kết quả qua thư điện tử hoặc gửi tin nhắn hẹn trả kết quả qua điện thoại di động cho người yêu cầu (nếu người yêu cầu nộp hồ sơ trực tuyến), đồng thời chuyển hồ sơ để công chức tư pháp - hộ tịch xử lý; trường hợp tiếp nhận hồ sơ tại Trung tâm Phục vụ hành chính công cấp tỉnh, cán bộ tiếp nhận hồ sơ chuyển hồ sơ đến Ủy ban nhân dân cấp xã có thẩm quyền xử lý. (ii) Trường hợp hồ sơ chưa đầy đủ, hợp lệ thì cán bộ tiếp nhận hồ sơ thông báo cho người yêu cầu bổ sung, hoàn thiện hồ sơ, nêu rõ loại giấy tờ, nội dung cần bổ sung để người yêu cầu bổ sung, hoàn thiện. Sau khi hồ sơ được bổ sung, thực hiện lại bước (i); (iii) Trường hợp người yêu cầu đăng ký chấm dứt giám hộ không bổ sung, hoàn thiện được hồ sơ thì cán bộ tiếp nhận hồ sơ báo cáo Lãnh đạo Trung tâm Phục vụ hành chính công có thông báo từ chối giải quyết yêu cầu đăng ký chấm dứt giám hộ. - Công chức tư pháp - hộ tịch thẩm tra hồ sơ (thẩm tra tính thống nhất, hợp lệ của các thông tin trong hồ sơ, giấy tờ, tài liệu do người yêu cầu nộp, xuất trình hoặc đính kèm). + Trường hợp hồ sơ cần bổ sung, hoàn thiện hoặc không đủ điều kiện giải quyết, phải từ chối thì công chức tư pháp - hộ tịch gửi thông báo về tình trạng hồ sơ tới Trung tâm Phục vụ hành chính công để thông báo cho người nộp hồ sơ – thực hiện lại bước (ii) hoặc (iii); + Trường hợp cần phải kiểm tra, xác minh làm rõ hoặc do nguyên nhân khác mà không thể trả kết quả đúng thời gian đã hẹn thì công chức tư pháp - hộ tịch lập Phiếu xin lỗi và hẹn lại ngày trả kết quả, trong đó nêu rõ lý do chậm trả kết quả và thời gian hẹn trả kết quả, chuyển Trung tâm Phục vụ hành chính công để trả cho người yêu cầu (nếu người yêu cầu nộp hồ sơ trực tiếp), hoặc gửi Phiếu xin lỗi và hẹn lại ngày trả kết quả qua thư điện tử hoặc gửi tin nhắn qua điện thoại di động cho người yêu cầu (nếu người yêu cầu nộp hồ sơ trực tuyến). + Nếu thấy hồ sơ đầy đủ, hợp lệ, đúng quy định, trường hợp tiếp nhận hồ sơ đăng ký chấm dứt giám hộ theo hình thức trực tiếp, thì công chức tư pháp - hộ tịch thực hiện ghi vào Sổ đăng ký chấm dứt giám hộ, cập nhật thông tin đăng ký chấm dứt giám hộ trên Phần mềm đăng ký, quản lý hộ tịch điện tử dùng chung. Trường hợp tiếp nhận hồ sơ đăng ký chấm dứt giám hộ theo hình thức trực tuyến, công chức tư pháp - hộ tịch gửi lại biểu mẫu Trích lục đăng ký chấm dứt giám hộ điện tử với thông tin đầy đủ cho người yêu cầu qua thư điện tử hoặc thiết bị số. Người yêu cầu có trách nhiệm kiểm tra tính chính xác, đầy đủ của các thông tin trên biểu mẫu Trích lục đăng ký chấm dứt giám hộ điện tử và xác nhận (tối đa một ngày). Nếu người yêu cầu xác nhận thông tin đã thống nhất, đầy đủ hoặc không có phản hồi sau thời hạn một ngày thì công chức tư pháp - hộ tịch thực hiện ghi nội dung vào Sổ đăng ký chấm dứt giám hộ, cập nhật thông tin đăng ký chấm dứt giám hộ trên Phần mềm đăng ký, quản lý hộ tịch điện tử dùng chung. - Công chức tư pháp - hộ tịch in Trích lục đăng ký chấm dứt giám hộ, trình Lãnh đạo Ủy ban nhân dân cấp xã ký, chuyển Trung tâm Phục vụ hành chính công trả kết quả cho người yêu cầu.",
+          "procedure_flow": "1. - Nếu lựa chọn hình thức nộp hồ sơ trực tiếp, người yêu cầu đăng ký chấm dứt giám hộ nộp hồ sơ đăng ký chấm dứt giám hộ tại Trung tâm Phục vụ hành chính công có thẩm quyền; nộp lệ phí nếu thuộc trường hợp phải nộp lệ phí đăng ký chấm dứt giám hộ; nộp phí cấp bản sao Trích lục đăng ký chấm dứt giám hộ nếu có yêu cầu cấp bản sao Trích lục đăng ký chấm dứt giám hộ. - Nếu lựa chọn hình thức nộp hồ sơ trực tuyến, người yêu cầu đăng ký chấm dứt giám hộ truy cập Cổng dịch vụ công quốc gia hoặc Ứng dụng định danh quốc gia. Người yêu cầu đăng ký chấm dứt giám hộ trực tuyến cung cấp thông tin theo mẫu hộ tịch điện tử tương tác đăng ký chấm dứt giám hộ, đính kèm bản chụp hoặc bản sao điện tử các giấy tờ, tài liệu theo quy định; nộp phí, lệ phí thông qua chức năng thanh toán trực tuyến hoặc bằng cách thức khác theo quy định pháp luật, hoàn tất việc nộp hồ sơ. - Cán bộ tiếp nhận hồ sơ tại Trung tâm Phục vụ hành chính công có trách nhiệm kiểm tra tính chính xác, đầy đủ, thống nhất, hợp lệ của hồ sơ. (i) Trường hợp hồ sơ đầy đủ, hợp lệ thì tiếp nhận hồ sơ, có Phiếu hẹn, trả kết quả cho người yêu cầu (nếu người yêu cầu nộp hồ sơ trực tiếp) hoặc gửi ngay Phiếu hẹn, trả kết quả qua thư điện tử hoặc gửi tin nhắn hẹn trả kết quả qua điện thoại di động cho người yêu cầu (nếu người yêu cầu nộp hồ sơ trực tuyến), đồng thời chuyển hồ sơ để công chức tư pháp - hộ tịch xử lý; trường hợp tiếp nhận hồ sơ tại Trung tâm Phục vụ hành chính công cấp tỉnh, cán bộ tiếp nhận hồ sơ chuyển hồ sơ đến Ủy ban nhân dân cấp xã có thẩm quyền xử lý. (ii) Trường hợp hồ sơ chưa đầy đủ, hợp lệ thì cán bộ tiếp nhận hồ sơ thông báo cho người yêu cầu bổ sung, hoàn thiện hồ sơ, nêu rõ loại giấy tờ, nội dung cần bổ sung để người yêu cầu bổ sung, hoàn thiện. Sau khi hồ sơ được bổ sung, thực hiện lại bước (i); (iii) Trường hợp người yêu cầu đăng ký chấm dứt giám hộ không bổ sung, hoàn thiện được hồ sơ thì cán bộ tiếp nhận hồ sơ báo cáo Lãnh đạo Trung tâm Phục vụ hành chính công có thông báo từ chối giải quyết yêu cầu đăng ký chấm dứt giám hộ. - Công chức tư pháp - hộ tịch thẩm tra hồ sơ (thẩm tra tính thống nhất, hợp lệ của các thông tin trong hồ sơ, giấy tờ, tài liệu do người yêu cầu nộp, xuất trình hoặc đính kèm). + Trường hợp hồ sơ cần bổ sung, hoàn thiện hoặc không đủ điều kiện giải quyết, phải từ chối thì công chức tư pháp - hộ tịch gửi thông báo về tình trạng hồ sơ tới Trung tâm Phục vụ hành chính công để thông báo cho người nộp hồ sơ – thực hiện lại bước (ii) hoặc (iii); + Trường hợp cần phải kiểm tra, xác minh làm rõ hoặc do nguyên nhân khác mà không thể trả kết quả đúng thời gian đã hẹn thì công chức tư pháp - hộ tịch lập Phiếu xin lỗi và hẹn lại ngày trả kết quả, trong đó nêu rõ lý do chậm trả kết quả và thời gian hẹn trả kết quả, chuyển Trung tâm Phục vụ hành chính công để trả cho người yêu cầu (nếu người yêu cầu nộp hồ sơ trực tiếp), hoặc gửi Phiếu xin lỗi và hẹn lại ngày trả kết quả qua thư điện tử hoặc gửi tin nhắn qua điện thoại di động cho người yêu cầu (nếu người yêu cầu nộp hồ sơ trực tuyến). + Nếu thấy hồ sơ đầy đủ, hợp lệ, đúng quy định, trường hợp tiếp nhận hồ sơ đăng ký chấm dứt giám hộ theo hình thức trực tiếp, thì công chức tư pháp - hộ tịch thực hiện ghi vào Sổ đăng ký chấm dứt giám hộ, cập nhật thông tin đăng ký chấm dứt giám hộ trên Phần mềm đăng ký, quản lý hộ tịch điện tử dùng chung. Trường hợp tiếp nhận hồ sơ đăng ký chấm dứt giám hộ theo hình thức trực tuyến, công chức tư pháp - hộ tịch gửi lại biểu mẫu Trích lục đăng ký chấm dứt giám hộ điện tử với thông tin đầy đủ cho người yêu cầu qua thư điện tử hoặc thiết bị số. Người yêu cầu có trách nhiệm kiểm tra tính chính xác, đầy đủ của các thông tin trên biểu mẫu Trích lục đăng ký chấm dứt giám hộ điện tử và xác nhận (tối đa một ngày). Nếu người yêu cầu xác nhận thông tin đã thống nhất, đầy đủ hoặc không có phản hồi sau thời hạn một ngày thì công chức tư pháp - hộ tịch thực hiện ghi nội dung vào Sổ đăng ký chấm dứt giám hộ, cập nhật thông tin đăng ký chấm dứt giám hộ trên Phần mềm đăng ký, quản lý hộ tịch điện tử dùng chung. - Công chức tư pháp - hộ tịch in Trích lục đăng ký chấm dứt giám hộ, trình Lãnh đạo Ủy ban nhân dân cấp xã ký, chuyển Trung tâm Phục vụ hành chính công trả kết quả cho người yêu cầu.",
+          "requirements": "Không có thông tin",
+          "submission_methods": [
+            "Trực tuyến",
+            "Dịch vụ bưu chính",
+            "Trực tiếp"
+          ],
+          "processing_time_values": [
+            "2 ngày làm việc",
+            "2 ngày làm việc",
+            "2 ngày làm việc"
+          ],
+          "document_groups": [
+            {
+              "group_name": "* Giấy tờ phải xuất trình:",
+              "documents": [
+                {
+                  "Tên giấy tờ": "- Giấy tờ có giá trị chứng minh thông tin về cư trú trong trường hợp cơ quan đăng ký hộ tịch không thể khai thác được thông tin về nơi cư trú của công dân theo các phương thức quy định tại khoản 2 Điều 14 Nghị định số 104/2022/NĐ-CP ngày 21/12/2022 của Chính phủ. Trường hợp các thông tin về giấy tờ chứng minh nơi cư trú đã được khai thác từ Cơ sở dữ liệu quốc gia về dân cư bằng các phương thức này thì người có yêu cầu không phải xuất trình (theo hình thức trực tiếp) hoặc tải lên (theo hình thức trực tuyến).",
+                  "Bản chính": "1",
+                  "Bản sao": "0",
+                  "Tệp đính kèm": "Không có"
+                },
+                {
+                  "Tên giấy tờ": "- Hộ chiếu/Thẻ căn cước công dân/Thẻ căn cước/Căn cước điện tử/Giấy chứng nhận căn cước hoặc các giấy tờ khác có dán ảnh và thông tin cá nhân do cơ quan có thẩm quyền cấp, còn giá trị sử dụng (sau đây gọi tắt là giấy tờ tùy thân) để chứng minh về nhân thân khi làm thủ tục trực tiếp tại cơ quan đăng ký hộ tịch.",
+                  "Bản chính": "1",
+                  "Bản sao": "0",
+                  "Tệp đính kèm": "Không có"
+                },
+                {
+                  "Tên giấy tờ": "Trường hợp giấy tờ tùy thân sử dụng là: Hộ chiếu, Thẻ căn cước, Căn cước công dân, Giấy chứng nhận căn cước thì người có yêu cầu đăng ký hộ tịch chỉ cần cung cấp thông tin số định danh cá nhân hoặc thông tin về giấy tờ (số, ngày/tháng/năm cấp), cơ quan đăng ký hộ tịch có trách nhiệm tra cứu thông tin thông qua kết nối với Cơ sở dữ liệu hộ tịch điện tử, Cơ sở dữ liệu quốc gia về dân cư hoặc cơ sở dữ liệu khác có liên quan để đối chiếu, khai thác dữ liệu.",
+                  "Bản chính": "0",
+                  "Bản sao": "0",
+                  "Tệp đính kèm": "Không có"
+                },
+                {
+                  "Tên giấy tờ": "Trường hợp các thông tin cá nhân trong các giấy tờ này đã có trong Cơ sở dữ liệu quốc gia về dân cư, Cơ sở dữ liệu hộ tịch điện tử, được hệ thống điền tự động thì không phải tải lên (theo hình thức trực tuyến)",
+                  "Bản chính": "0",
+                  "Bản sao": "0",
+                  "Tệp đính kèm": "Không có"
+                },
+                {
+                  "Tên giấy tờ": "Trường hợp không khai thác được thông tin hoặc thông tin khai thác được không đầy đủ, không chính xác thì cơ quan đăng ký hộ tịch yêu cầu người đi đăng ký hộ tịch xuất trình bản chính giấy tờ để chứng minh, đồng thời đề nghị người đi đăng ký hộ tịch cập nhật, điều chỉnh thông tin trong các cơ sở dữ liệu theo quy định của pháp luật.",
+                  "Bản chính": "0",
+                  "Bản sao": "0",
+                  "Tệp đính kèm": "Không có"
+                },
+                {
+                  "Tên giấy tờ": "- Trường hợp gửi hồ sơ qua hệ thống bưu chính thì phải gửi kèm theo bản sao có chứng thực các giấy tờ phải xuất trình nêu trên.",
+                  "Bản chính": "0",
+                  "Bản sao": "0",
+                  "Tệp đính kèm": "Không có"
+                }
+              ]
+            },
+            {
+              "group_name": "* Giấy tờ phải nộp:",
+              "documents": [
+                {
+                  "Tên giấy tờ": "- Văn bản ủy quyền theo quy định của pháp luật trong trường hợp ủy quyền thực hiện việc đăng ký chấm dứt giám hộ. Trường hợp người được ủy quyền là ông, bà, cha, mẹ, con, vợ, chồng, anh, chị, em ruột của người ủy quyền thì văn bản ủy quyền không phải chứng thực.",
+                  "Bản chính": "1",
+                  "Bản sao": "0",
+                  "Tệp đính kèm": "Không có"
+                },
+                {
+                  "Tên giấy tờ": "- Giấy tờ làm căn cứ chấm dứt giám hộ theo quy định của Bộ luật Dân sự.",
+                  "Bản chính": "1",
+                  "Bản sao": "0",
+                  "Tệp đính kèm": "Không có"
+                }
+              ]
+            },
+            {
+              "group_name": "* Lưu ý:",
+              "documents": [
+                {
+                  "Tên giấy tờ": "+ Trường hợp người yêu cầu đăng ký hộ tịch cung cấp thông tin về giấy tờ hộ tịch của cá nhân đã được đăng ký, cơ quan đăng ký hộ tịch có trách nhiệm tra cứu thông tin trên Hệ thống thông tin giải quyết thủ tục hành chính cấp tỉnh thông qua kết nối với Cơ sở dữ liệu hộ tịch điện tử, CSDLQGVDC. Trường hợp không tra cứu được do không có thông tin trong Cơ sở dữ liệu hộ tịch điện tử, CSDLQGVDC thì cơ quan đăng ký hộ tịch yêu cầu người đi đăng ký hộ tịch nộp/xuất trình giấy tờ liên quan để chứng minh.",
+                  "Bản chính": "0",
+                  "Bản sao": "0",
+                  "Tệp đính kèm": "Không có"
+                },
+                {
+                  "Tên giấy tờ": "+ Bản chụp các giấy tờ gửi kèm theo hồ sơ đăng ký chấm dứt giám hộ trực tuyến phải bảo đảm rõ nét, đầy đủ, toàn vẹn về nội dung, là bản chụp bằng máy ảnh, điện thoại hoặc được chụp, được quét bằng thiết bị điện tử, từ giấy tờ được cấp hợp lệ, còn giá trị sử dụng.",
+                  "Bản chính": "0",
+                  "Bản sao": "0",
+                  "Tệp đính kèm": "Không có"
+                },
+                {
+                  "Tên giấy tờ": "- Đối với giấy tờ nộp, xuất trình nếu người yêu cầu nộp hồ sơ theo hình thức trực tiếp:",
+                  "Bản chính": "0",
+                  "Bản sao": "0",
+                  "Tệp đính kèm": "Không có"
+                },
+                {
+                  "Tên giấy tờ": "- Giấy tờ do cơ quan có thẩm quyền của nước ngoài cấp, công chứng hoặc xác nhận để sử dụng cho việc đăng ký hộ tịch tại Việt Nam phải được hợp pháp hóa lãnh sự theo quy định của pháp luật, trừ trường hợp được miễn theo điều ước quốc tế mà Việt Nam là thành viên.",
+                  "Bản chính": "0",
+                  "Bản sao": "0",
+                  "Tệp đính kèm": "Không có"
+                },
+                {
+                  "Tên giấy tờ": "Trường hợp người yêu cầu nộp bản chụp kèm theo bản chính giấy tờ thì người tiếp nhận có trách nhiệm kiểm tra, đối chiếu bản chụp với bản chính và ký xác nhận, không được yêu cầu nộp bản sao giấy tờ đó.",
+                  "Bản chính": "0",
+                  "Bản sao": "0",
+                  "Tệp đính kèm": "Không có"
+                },
+                {
+                  "Tên giấy tờ": "- Trường hợp người yêu cầu đăng ký chấm dứt giám hộ không cung cấp được giấy tờ nêu trên theo quy định hoặc giấy tờ nộp, xuất trình bị tẩy xóa, sửa chữa, làm giả thì cơ quan đăng ký hộ tịch có thẩm quyền hủy bỏ kết quả đăng ký chấm dứt giám hộ.",
+                  "Bản chính": "0",
+                  "Bản sao": "0",
+                  "Tệp đính kèm": "Không có"
+                },
+                {
+                  "Tên giấy tờ": "+ Người tiếp nhận có trách nhiệm tiếp nhận đúng, đủ hồ sơ đăng ký hộ tịch theo quy định của pháp luật hộ tịch, không được yêu cầu người đăng ký hộ tịch nộp thêm giấy tờ mà pháp luật hộ tịch không quy định phải nộp .",
+                  "Bản chính": "0",
+                  "Bản sao": "0",
+                  "Tệp đính kèm": "Không có"
+                },
+                {
+                  "Tên giấy tờ": "- Khi đến cơ quan đăng ký hộ tịch nhận kết quả (Trích lục đăng ký chấm dứt giám hộ/bản sao Trích lục đăng ký chấm dứt giám hộ), người có yêu cầu đăng ký chấm dứt giám hộ xuất trình giấy tờ tuỳ thân, nộp bản chính các giấy tờ là thành phần hồ sơ đăng ký chấm dứt giám hộ theo quy định pháp luật hộ tịch.",
+                  "Bản chính": "0",
+                  "Bản sao": "0",
+                  "Tệp đính kèm": "Không có"
+                },
+                {
+                  "Tên giấy tờ": "+ Người yêu cầu đăng ký hộ tịch có thể nộp bản sao được chứng thực từ bản chính hoặc bản sao được cấp từ sổ gốc (sau đây gọi là bản sao) hoặc bản chụp kèm theo bản chính, bản điện tử các giấy tờ này, bao gồm cả giấy tờ được tích hợp, hiển thị trên Ứng dụng định danh điện tử (VneID).",
+                  "Bản chính": "0",
+                  "Bản sao": "0",
+                  "Tệp đính kèm": "Không có"
+                },
+                {
+                  "Tên giấy tờ": "+ Người tiếp nhận hồ sơ thực hiện khai thác thông tin trong CSDLQGVDC theo quy định pháp luật nếu người yêu cầu đăng ký hộ tịch đã cung cấp họ, chữ đệm, tên; ngày, tháng, năm sinh; số định danh cá nhân/thẻ căn cước công dân/thẻ căn cước/căn cước điện tử. Trường hợp các thông tin cần khai thác không có trong CSDLQGVDC thì đề nghị người yêu cầu kê khai đầy đủ.",
+                  "Bản chính": "0",
+                  "Bản sao": "0",
+                  "Tệp đính kèm": "Không có"
+                },
+                {
+                  "Tên giấy tờ": "- Cá nhân có quyền lựa chọn thực hiện thủ tục hành chính về hộ tịch tại cơ quan đăng ký hộ tịch nơi cư trú; nơi cư trú của cá nhân được xác định theo quy định của pháp luật về cư trú. Trường hợp cá nhân lựa chọn thực hiện thủ tục hành chính về hộ tịch không phải tại Ủy ban nhân dân cấp xã nơi thường trú hoặc nơi tạm trú thì Ủy ban nhân dân cấp xã nơi tiếp nhận yêu cầu có trách nhiệm hỗ trợ người dân nộp hồ sơ đăng ký hộ tịch trực tuyến đến đúng cơ quan có thẩm quyền theo quy định.",
+                  "Bản chính": "0",
+                  "Bản sao": "0",
+                  "Tệp đính kèm": "Không có"
+                },
+                {
+                  "Tên giấy tờ": "+ Trường hợp giấy tờ, tài liệu phải gửi kèm trong hồ sơ đăng ký chấm dứt giám hộ trực tuyến đã có bản sao điện tử hoặc đã có bản điện tử giấy tờ hộ tịch thì người yêu cầu được sử dụng bản điện tử này.",
+                  "Bản chính": "0",
+                  "Bản sao": "0",
+                  "Tệp đính kèm": "Không có"
+                },
+                {
+                  "Tên giấy tờ": "- Đối với giấy tờ gửi kèm theo nếu người yêu cầu nộp hồ sơ theo hình thức trực tuyến:",
+                  "Bản chính": "0",
+                  "Bản sao": "0",
+                  "Tệp đính kèm": "Không có"
+                },
+                {
+                  "Tên giấy tờ": "+ Đối với giấy tờ xuất trình khi đăng ký hộ tịch, người tiếp nhận có trách nhiệm kiểm tra, đối chiếu với thông tin trong tờ khai, chụp lại hoặc ghi lại thông tin để lưu trong hồ sơ và trả lại cho người xuất trình, không được yêu cầu nộp bản sao hoặc bản chụp giấy tờ đó.",
+                  "Bản chính": "0",
+                  "Bản sao": "0",
+                  "Tệp đính kèm": "Không có"
+                }
+              ]
+            },
+            {
+              "group_name": "* Lưu ý:",
+              "documents": [
+                {
+                  "Tên giấy tờ": "- Người có yêu cầu đăng ký chấm dứt giám hộ thực hiện việc nộp/xuất trình (theo hình thức trực tiếp) hoặc tải lên (theo hình thức trực tuyến) các giấy tờ sau:",
+                  "Bản chính": "0",
+                  "Bản sao": "0",
+                  "Tệp đính kèm": "Không có"
+                },
+                {
+                  "Tên giấy tờ": "- Tờ khai đăng ký chấm dứt giám hộ theo mẫu (nếu người có yêu cầu lựa chọn nộp hồ sơ theo hình thức trực tiếp hoặc gửi hồ sơ qua hệ thống bưu chính););",
+                  "Bản chính": "1",
+                  "Bản sao": "0",
+                  "Tệp đính kèm": "Không có"
+                },
+                {
+                  "Tên giấy tờ": "- Mẫu hộ tịch điện tử tương tác đăng ký chấm dứt giám hộ (do người yêu cầu cung cấp thông tin theo hướng dẫn trên Cổng dịch vụ công, nếu người có yêu cầu lựa chọn nộp hồ sơ theo hình thức trực tuyến)",
+                  "Bản chính": "1",
+                  "Bản sao": "0",
+                  "Tệp đính kèm": "Không có"
+                }
+              ]
+            }
+          ],
+          "result_items": [
+            "Trích lục đăng ký chấm dứt giám hộ (Mã: `KQ.G15.000036`)"
+          ]
+        },
+        {
+          "procedure_code": "2.000560",
+          "procedure_title": "Thủ tục đăng ký việc giám hộ giữa công dân Việt Nam cư trú ở nước ngoài với nhau",
+          "subdomain_key": "giam_ho",
+          "subdomain_label": "Giám hộ",
+          "event_id": 275,
+          "field": "Hộ tịch",
+          "agency": "",
+          "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bf9-f1ca-7470-b62b-111daf5c5d11",
+          "raw_data_file": "C:\\Users\\ku060\\Downloads\\VAIC source\\data-pipeline\\raw_data\\2_000560\\2_000560_procedure_detail.md",
+          "raw_data_available": true,
+          "operation_group": "giam_ho_giua_cong_dan_vn_o_nuoc_ngoai",
+          "operation_key": "thu_tuc_dang_ky_viec_giam_ho_giua_cong_dan_viet_nam_cu_tru_o_nuoc_ngoai_voi_nhau",
+          "overview": "1. **Thủ tục đăng ký việc giám hộ giữa công dân Việt Nam cư trú ở nước ngoài với nhau**",
+          "procedure_flow": "1. **Thủ tục đăng ký việc giám hộ giữa công dân Việt Nam cư trú ở nước ngoài với nhau** - Người có yêu cầu chuẩn bị hồ sơ theo quy định và nộp hồ sơ tại Cơ quan đại diện Việt Nam ở nước ngoài phụ trách khu vực lãnh sự nơi người giám hộ hoặc người được giám hộ là công dân Việt Nam cư trú - Cán bộ nhận hồ sơ có trách nhiệm kiểm tra toàn bộ hồ sơ, đối chiếu các thông tin trong hồ sơ: (i) Trường hợp hồ sơ đầy đủ, hợp lệ thì tiếp nhận hồ sơ; (ii) Trường hợp hồ sơ chưa đầy đủ, hợp lệ thì hướng dẫn người nộp hồ sơ bổ sung, hoàn thiện theo quy định. Sau khi hồ sơ được bổ sung, thực hiện lại bước (i); trường hợp không thể bổ sung hồ sơ ngay thì phải có văn bản hướng dẫn, trong đó nêu rõ loại giấy tờ, nội dung cần bổ sung, ký, ghi rõ họ tên của cán bộ lãnh sự. (iii) Trường hợp không bổ sung, hoàn thiện được hồ sơ thì thông báo từ chối giải quyết hồ sơ. - Cán bộ xử lý hồ sơ có trách nhiệm kiểm tra lại toàn bộ hồ sơ, đảm bảo hồ sơ đầy đủ, hợp lệ: + Trường hợp hồ sơ cần bổ sung, hoàn thiện thì gửi thông báo về tình trạng hồ sơ cho người nộp hồ sơ - thực hiện lại bước (ii); hoặc không đủ điều kiện giải quyết, phải từ chối giải quyết thì gửi thông báo cho đương sự. + Trường hợp cần phải kiểm tra, xác minh làm rõ hoặc do nguyên nhân khác mà không thể trả kết quả đúng thời gian đã hẹn thì lập Phiếu xin lỗi và hẹn lại ngày trả kết quả, trong đó nêu rõ lý do chậm trả kết quả và thời gian hẹn trả kết quả, để gửi cho người có yêu cầu. + Nếu thấy hồ sơ đầy đủ, hợp lệ, đúng quy định, thì thực hiện việc ghi vào Sổ đăng ký giám hộ và cấp Trích lục giám hộ. - Người có yêu cầu đăng ký khai tử kiểm tra thông tin trên Trích lục giám hộ, trong Sổ đăng ký giám hộ và ký tên vào Sổ đăng ký giám hộ, nhận Trích lục giám hộ.",
+          "requirements": "* Lưu ý: - Cơ quan đại diện Việt Nam ở nước ngoài tiếp nhận, giải quyết yêu cầu đăng ký hộ tịch trực tuyến phù hợp với mức độ triển khai dịch vụ công trực tuyến và việc sử dụng đồng bộ Phần mềm đăng ký, quản lý hộ tịch điện tử dùng chung tại cơ quan mình. Trường hợp chưa tiếp nhận giải quyết đăng ký hộ tịch trực tuyến thì thông báo trên cổng thông tin điện tử của cơ quan mình hoặc có văn bản thông báo cho người yêu cầu và nêu rõ lý do; văn bản thông báo có thể gửi qua thư điện tử nếu người yêu cầu có địa chỉ thư điện tử. - Giấy tờ do cơ quan có thẩm quyền của nước sở tại cấp sử dụng để đăng ký hộ tịch tại Cơ quan đại diện không phải hợp pháp hóa lãnh sự. Trường hợp có nghi ngờ về tính xác thực của giấy tờ, Cơ quan đại diện Việt Nam ở nước ngoài có thể yêu cầu giấy tờ đó phải được chứng nhận lãnh sự của cơ quan có thẩm quyền. Giấy tờ do cơ quan có thẩm quyền của nước thứ ba cấp sử dụng để đăng ký hộ tịch tại Cơ quan đại diện Việt Nam ở nước ngoài phải được hợp pháp hóa theo quy định. Giấy tờ bằng tiếng nước ngoài trong hồ sơ đăng ký hộ tịch phải được dịch sang tiếng Việt hoặc tiếng Anh theo quy định. - Đối với giấy tờ nộp, xuất trình nếu người yêu cầu nộp hồ sơ theo hình thức trực tiếp: + Trường hợp người yêu cầu nộp giấy tờ là bản sao được cấp từ sổ gốc hoặc bản sao được chứng thực từ bản chính thì cán bộ lãnh sự không được yêu cầu xuất trình bản chính; nếu người yêu cầu chỉ nộp bản chụp và xuất trình bản chính thì cán bộ lãnh sự kiểm tra, đối chiếu bản chụp với bản chính và ký vào bản chụp xác nhận về việc đã đối chiếu nội dung giấy tờ đó, không được yêu cầu người đi đăng ký nộp bản sao có chứng thực. + Trường hợp pháp luật quy định xuất trình giấy tờ khi đăng ký hộ tịch, cán bộ lãnh sự có trách nhiệm kiểm tra giấy tờ xuất trình, đối chiếu với thông tin trong Tờ khai và trả lại cho người xuất trình, không được yêu cầu người đăng ký hộ tịch nộp thêm bản sao giấy tờ đó. Cán bộ lãnh sự chụp 01 bản giấy tờ xuất trình xác nhận đã đối chiếu với bản chính, để lưu hồ sơ. - Đối với giấy tờ gửi kèm theo nếu người yêu cầu nộp hồ sơ theo hình thức trực tuyến: + Bản chụp các giấy tờ gửi kèm theo hồ sơ trực tuyến phải bảo đảm rõ nét, đầy đủ, toàn vẹn về nội dung, là bản chụp bằng máy ảnh, điện thoại hoặc được chụp, được quét bằng thiết bị điện tử, từ giấy tờ được cấp hợp lệ, còn giá trị sử dụng. + Trường hợp giấy tờ, tài liệu phải gửi kèm trong hồ sơ trực tuyến đã có bản sao điện tử hoặc đã có bản điện tử giấy tờ hộ tịch thì người yêu cầu được sử dụng bản điện tử này. + Khi đến cơ quan đăng ký hộ tịch nhận kết quả, người có yêu cầu phải xuất trình giấy tờ tuỳ thân, nộp các giấy tờ là thành phần hồ sơ theo quy định của pháp luật hộ tịch. + Trường hợp người yêu cầu không cung cấp được giấy tờ nêu trên theo quy định hoặc giấy tờ nộp, xuất trình bị tẩy xóa, sửa chữa, làm giả thì cơ quan đại diện hủy bỏ kết quả đăng ký giám hộ. - Cán bộ lãnh sự có trách nhiệm tiếp nhận đúng, đủ hồ sơ đăng ký hộ tịch theo quy định của pháp luật hộ tịch.",
+          "submission_methods": [
+            "Trực tiếp"
+          ],
+          "processing_time_values": [
+            "3 ngày làm việc"
+          ],
+          "document_groups": [],
+          "result_items": [
+            "Trích lục đăng ký giám hộ (Mã: `000.00.00.G08-KQ0026`)"
+          ]
+        },
+        {
+          "procedure_code": "2.000584",
+          "procedure_title": "Thủ tục đăng ký chấm dứt, thay đổi việc giám hộ giữa công dân Việt Nam cư trú ở nước ngoài với nhau",
+          "subdomain_key": "giam_ho",
+          "subdomain_label": "Giám hộ",
+          "event_id": 275,
+          "field": "Hộ tịch",
+          "agency": "",
+          "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bf9-f1d0-717a-a651-7ac1f7473f62",
+          "raw_data_file": "C:\\Users\\ku060\\Downloads\\VAIC source\\data-pipeline\\raw_data\\2_000584\\2_000584_procedure_detail.md",
+          "raw_data_available": true,
+          "operation_group": "cham_dut_hoac_thay_doi_giam_ho",
+          "operation_key": "thu_tuc_dang_ky_cham_dut_thay_doi_viec_giam_ho_giua_cong_dan_viet_nam_cu_tru_o_nuoc_ngoai_voi_nhau",
+          "overview": "1. **Thủ tục đăng ký chấm dứt, thay đổi việc giám hộ giữa công dân Việt Nam cư trú ở nước ngoài với nhau**",
+          "procedure_flow": "1. **Thủ tục đăng ký chấm dứt, thay đổi việc giám hộ giữa công dân Việt Nam cư trú ở nước ngoài với nhau** - Người có yêu cầu đăng ký chấm dứt giám hộ chuẩn bị hồ sơ theo quy định và nộp hồ sơ tại Cơ quan đại diện Việt Nam ở nước ngoài nơi đã đăng ký giám hộ trước đó. - Cán bộ nhận hồ sơ có trách nhiệm kiểm tra toàn bộ hồ sơ, đối chiếu các thông tin trong hồ sơ: (i) Trường hợp hồ sơ đầy đủ, hợp lệ thì tiếp nhận hồ sơ; (ii) Trường hợp hồ sơ chưa đầy đủ, hợp lệ thì hướng dẫn người nộp hồ sơ bổ sung, hoàn thiện theo quy định. Sau khi hồ sơ được bổ sung, thực hiện lại bước (i); trường hợp không thể bổ sung hồ sơ ngay thì phải có văn bản hướng dẫn, trong đó nêu rõ loại giấy tờ, nội dung cần bổ sung, ký, ghi rõ họ tên của cán bộ lãnh sự. (iii) Trường hợp không bổ sung, hoàn thiện được hồ sơ thì thông báo từ chối giải quyết hồ sơ. - Cán bộ xử lý hồ sơ có trách nhiệm kiểm tra lại toàn bộ hồ sơ, đảm bảo hồ sơ đầy đủ, hợp lệ: + Trường hợp hồ sơ cần bổ sung, hoàn thiện thì gửi thông báo về tình trạng hồ sơ cho người nộp hồ sơ - thực hiện lại bước (ii); hoặc không đủ điều kiện giải quyết, phải từ chối giải quyết thì gửi thông báo cho đương sự. + Trường hợp cần phải kiểm tra, xác minh làm rõ hoặc do nguyên nhân khác mà không thể trả kết quả đúng thời gian đã hẹn thì lập Phiếu xin lỗi và hẹn lại ngày trả kết quả, trong đó nêu rõ lý do chậm trả kết quả và thời gian hẹn trả kết quả, để gửi cho người có yêu cầu. + Nếu thấy hồ sơ đầy đủ, hợp lệ, đúng quy định, thì thực hiện việc ghi vào Sổ đăng ký chấm dứt giám hộ và in Trích lục đăng ký chấm dứt giám hộ. - Người có yêu cầu đăng ký chấm dứt giám hộ kiểm tra thông tin trên Trích lục đăng ký chấm dứt giám hộ, trong Sổ đăng ký chấm dứt giám hộ và ký tên vào Sổ đăng ký chấm dứt giám hộ, nhận Trích lục đăng ký chấm dứt giám hộ.",
+          "requirements": "* Lưu ý: - Cơ quan đại diện Việt Nam ở nước ngoài tiếp nhận, giải quyết yêu cầu đăng ký hộ tịch trực tuyến phù hợp với mức độ triển khai dịch vụ công trực tuyến và việc sử dụng đồng bộ Phần mềm đăng ký, quản lý hộ tịch điện tử dùng chung tại cơ quan mình. Trường hợp chưa tiếp nhận giải quyết đăng ký hộ tịch trực tuyến thì thông báo trên cổng thông tin điện tử của cơ quan mình hoặc có văn bản thông báo cho người yêu cầu và nêu rõ lý do; văn bản thông báo có thể gửi qua thư điện tử nếu người yêu cầu có địa chỉ thư điện tử. - Giấy tờ do cơ quan có thẩm quyền của nước sở tại cấp sử dụng để đăng ký hộ tịch tại Cơ quan đại diện Việt Nam ở nước ngoài không phải hợp pháp hóa lãnh sự. Trường hợp có nghi ngờ về tính xác thực của giấy tờ, Cơ quan đại diện Việt nam ở nước ngoài có thể yêu cầu giấy tờ đó phải được chứng nhận lãnh sự của cơ quan có thẩm quyền. Giấy tờ do cơ quan có thẩm quyền của nước thứ ba cấp sử dụng để đăng ký hộ tịch tại Cơ quan đại diện Việt Nam ở nước ngoài phải được hợp pháp hóa theo quy định. Giấy tờ bằng tiếng nước ngoài trong hồ sơ đăng ký hộ tịch phải được dịch sang tiếng Việt hoặc tiếng Anh theo quy định. - Đối với giấy tờ nộp, xuất trình nếu người yêu cầu nộp hồ sơ theo hình thức trực tiếp: + Trường hợp người yêu cầu nộp giấy tờ là bản sao được cấp từ sổ gốc hoặc bản sao được chứng thực từ bản chính thì cán bộ lãnh sự không được yêu cầu xuất trình bản chính; nếu người yêu cầu chỉ nộp bản chụp và xuất trình bản chính thì cán bộ lãnh sự kiểm tra, đối chiếu bản chụp với bản chính và ký vào bản chụp xác nhận về việc đã đối chiếu nội dung giấy tờ đó, không được yêu cầu người đi đăng ký nộp bản sao có chứng thực. + Trường hợp pháp luật quy định xuất trình giấy tờ khi đăng ký hộ tịch, cán bộ lãnh sự có trách nhiệm kiểm tra giấy tờ xuất trình, đối chiếu với thông tin trong Tờ khai và trả lại cho người xuất trình, không được yêu cầu người đăng ký hộ tịch nộp thêm bản sao giấy tờ đó. Cán bộ lãnh sự chụp 01 bản giấy tờ xuất trình xác nhận đã đối chiếu với bản chính, để lưu hồ sơ. - Đối với giấy tờ gửi kèm theo nếu người yêu cầu nộp hồ sơ theo hình thức trực tuyến: + Bản chụp các giấy tờ gửi kèm theo hồ sơ trực tuyến phải bảo đảm rõ nét, đầy đủ, toàn vẹn về nội dung, là bản chụp bằng máy ảnh, điện thoại hoặc được chụp, được quét bằng thiết bị điện tử, từ giấy tờ được cấp hợp lệ, còn giá trị sử dụng. + Trường hợp giấy tờ, tài liệu phải gửi kèm trong hồ sơ trực tuyến đã có bản sao điện tử hoặc đã có bản điện tử giấy tờ hộ tịch thì người yêu cầu được sử dụng bản điện tử này. + Khi đến cơ quan đăng ký hộ tịch nhận kết quả, người có yêu cầu phải xuất trình giấy tờ tuỳ thân, nộp các giấy tờ là thành phần hồ sơ theo quy định của pháp luật hộ tịch. + Trường hợp người yêu cầu không cung cấp được giấy tờ nêu trên theo quy định hoặc giấy tờ nộp, xuất trình bị tẩy xóa, sửa chữa, làm giả thì cơ quan đại diện hủy bỏ kết quả đăng ký chấm dứt giám hộ. - Cán bộ lãnh sự có trách nhiệm tiếp nhận đúng, đủ hồ sơ đăng ký hộ tịch theo quy định của pháp luật hộ tịch.",
+          "submission_methods": [
+            "Trực tiếp"
+          ],
+          "processing_time_values": [
+            "2 ngày làm việc"
+          ],
+          "document_groups": [
+            {
+              "group_name": "Giấy tờ phải nộp",
+              "documents": [
+                {
+                  "Tên giấy tờ": "- Tờ khai đăng ký chấm dứt giám hộ theo mẫu tại Phụ lục Thông tư 04/2020/TT-BTP (nếu người có yêu cầu lựa chọn nộp hồ sơ theo hình thức trực tiếp). - Giấy tờ làm căn cứ chấm dứt giám hộ theo quy định của Bộ luật dân sự. - Văn bản ủy quyền theo quy định của pháp luật trong trường hợp ủy quyền thực hiện đăng ký chấm dứt giám hộ. Trường hợp người được ủy quyền là ông, bà, cha, mẹ, con, vợ, chồng, anh, chị, em ruột của người ủy quyền thì văn bản ủy quyền không phải công chứng, chứng thực, nhưng phải có giấy tờ chứng minh mối quan hệ với người ủy quyền.",
+                  "Bản chính": "1",
+                  "Bản sao": "1",
+                  "Tệp đính kèm": "[TỜ KHAI ĐĂNG KÝ CHẤM DỨT GIÁM HỘ.docx](file:///C:/Users/ku060/Downloads/data/raw_data/2_000584/TO%CC%9B%CC%80%20KHAI%20%C4%90A%CC%86NG%20KY%CC%81%20CHA%CC%82%CC%81M%20DU%CC%9B%CC%81T%20GIA%CC%81M%20HO%CC%A3%CC%82.docx)"
+                }
+              ]
+            },
+            {
+              "group_name": "Giấy tờ phải xuất trình",
+              "documents": [
+                {
+                  "Tên giấy tờ": "- Hộ chiếu hoặc giấy tờ có giá trị thay thế hộ chiếu, chứng minh nhân dân,  thẻ căn cước công dân, thẻ căn cước hoặc các giấy tờ khác có dán ảnh và thông tin cá nhân do cơ quan có thẩm quyền cấp, còn giá trị sử dụng để chứng minh về nhân thân, quốc tịch của người có yêu cầu đăng ký chấm dứt giám hộ.  Trường hợp gửi hồ sơ qua hệ thống bưu chính thì nộp bản sao các giấy tờ nêu trên đã được chứng thực hợp lệ.  Trường hợp người yêu cầu là công dân Việt Nam và đã được cấp thẻ Căn cước công dân hoặc thẻ Căn cước có số định danh cá nhân thì có thể xuất trình bản chính giấy tờ đó (nếu nộp trực tiếp) hoặc nộp bản chụp giấy tờ này (nếu nộp qua đường hệ thống bưu chính hoặc gửi qua hệ thống đăng ký hộ tịch trực tuyến) để chứng minh nhân thân khi cơ sở hạ tầng kỹ thuật cho phép Cơ quan đại diện Việt Nam ở nước ngoài kết nối với CSDLQGVDC.",
+                  "Bản chính": "1",
+                  "Bản sao": "1",
+                  "Tệp đính kèm": "Không có"
+                }
+              ]
+            }
+          ],
+          "result_items": [
+            "Trích lục đăng ký chấm dứt giám hộ (Mã: `000.00.00.G08-KQ0027`)"
+          ]
+        },
+        {
+          "procedure_code": "2.000756",
+          "procedure_title": "Thủ tục đăng ký chấm dứt giám hộ có yếu tố nước ngoài",
+          "subdomain_key": "giam_ho",
+          "subdomain_label": "Giám hộ",
+          "event_id": 275,
+          "field": "Hộ tịch",
+          "agency": "Ủy ban nhân dân cấp xã",
+          "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bfd-8e04-756b-bf4f-2a70964e4c40",
+          "raw_data_file": "C:\\Users\\ku060\\Downloads\\VAIC source\\data-pipeline\\raw_data\\2_000756\\2_000756_procedure_detail.md",
+          "raw_data_available": true,
+          "operation_group": "cham_dut_hoac_thay_doi_giam_ho",
+          "operation_key": "thu_tuc_dang_ky_cham_dut_giam_ho_co_yeu_to_nuoc_ngoai",
+          "overview": "1. - Nếu lựa chọn hình thức nộp hồ sơ trực tiếp, người yêu cầu đăng ký chấm dứt giám hộ nộp hồ sơ đăng ký chấm dứt giám hộ tại Trung tâm Phục vụ hành chính công có thẩm quyền; nộp lệ phí nếu thuộc trường hợp phải nộp lệ phí đăng ký chấm dứt giám hộ; nộp phí cấp bản sao Trích lục đăng ký chấm dứt giám hộ nếu có yêu cầu cấp bản sao Trích lục đăng ký chấm dứt giám hộ. - Nếu lựa chọn hình thức nộp hồ sơ trực tuyến, người yêu cầu đăng ký chấm dứt giám hộ truy cập Cổng dịch vụ công quốc gia hoặc Ứng dụng định danh quốc gia. Người yêu cầu đăng ký chấm dứt giám hộ trực tuyến cung cấp thông tin theo mẫu hộ tịch điện tử tương tác đăng ký chấm dứt giám hộ, đính kèm bản chụp hoặc bản sao điện tử các giấy tờ, tài liệu theo quy định; nộp phí, lệ phí thông qua chức năng thanh toán trực tuyến hoặc bằng cách thức khác theo quy định pháp luật, hoàn tất việc nộp hồ sơ. - Cán bộ tiếp nhận hồ sơ tại Trung tâm Phục vụ hành chính công có trách nhiệm kiểm tra tính chính xác, đầy đủ, thống nhất, hợp lệ của hồ sơ. (i) Trường hợp hồ sơ đầy đủ, hợp lệ thì tiếp nhận hồ sơ, có Phiếu hẹn, trả kết quả cho người yêu cầu (nếu người yêu cầu nộp hồ sơ trực tiếp) hoặc gửi ngay Phiếu hẹn, trả kết quả qua thư điện tử hoặc gửi tin nhắn hẹn trả kết quả qua điện thoại di động cho người yêu cầu (nếu người yêu cầu nộp hồ sơ trực tuyến), chuyển hồ sơ để công chức tư pháp - hộ tịch xử lý; (ii) Trường hợp hồ sơ chưa đầy đủ, hợp lệ thì cán bộ tiếp nhận hồ sơ thông báo cho người yêu cầu bổ sung, hoàn thiện hồ sơ, nêu rõ loại giấy tờ, nội dung cần bổ sung để người yêu cầu bổ sung, hoàn thiện. Sau khi hồ sơ được bổ sung, thực hiện lại bước (i); (iii) Trường hợp người yêu cầu đăng ký chấm dứt giám hộ không bổ sung, hoàn thiện được hồ sơ thì báo cáo Lãnh đạo Trung tâm Phục vụ hành chính công có thông báo từ chối giải quyết yêu cầu đăng ký chấm dứt giám hộ. - Công chức tư pháp - hộ tịch thẩm tra hồ sơ (thẩm tra tính thống nhất, hợp lệ của các thông tin trong hồ sơ, giấy tờ, tài liệu do người yêu cầu nộp, xuất trình hoặc đính kèm). + Trường hợp hồ sơ cần bổ sung, hoàn thiện hoặc không đủ điều kiện giải quyết, phải từ chối thì công chức tư pháp - hộ tịch gửi thông báo về tình trạng hồ sơ tới Trung tâm Phục vụ hành chính công để thông báo cho người nộp hồ sơ – thực hiện lại bước (ii) hoặc (iii); + Trường hợp cần phải kiểm tra, xác minh làm rõ hoặc do nguyên nhân khác mà không thể trả kết quả đúng thời gian đã hẹn thì công chức tư pháp - hộ tịch lập Phiếu xin lỗi và hẹn lại ngày trả kết quả, trong đó nêu rõ lý do chậm trả kết quả và thời gian hẹn trả kết quả, chuyển Trung tâm Phục vụ hành chính công để trả cho người yêu cầu (nếu người yêu cầu nộp hồ sơ trực tiếp), hoặc gửi Phiếu xin lỗi và hẹn lại ngày trả kết quả qua thư điện tử hoặc gửi tin nhắn qua điện thoại di động cho người yêu cầu (nếu người yêu cầu nộp hồ sơ trực tuyến). + Nếu thấy hồ sơ đầy đủ, hợp lệ, đúng quy định, trường hợp tiếp nhận hồ sơ đăng ký chấm dứt giám hộ theo hình thức trực tiếp, thì công chức tư pháp - hộ tịch thực hiện ghi vào Sổ đăng ký chấm dứt giám hộ, cập nhật thông tin đăng ký chấm dứt giám hộ trên Phần mềm đăng ký, quản lý hộ tịch điện tử dùng chung. Trường hợp tiếp nhận hồ sơ đăng ký chấm dứt giám hộ theo hình thức trực tuyến, công chức tư pháp - hộ tịch gửi lại biểu mẫu Trích lục đăng ký chấm dứt giám hộ điện tử với thông tin đầy đủ cho người yêu cầu qua thư điện tử hoặc thiết bị số. Người yêu cầu có trách nhiệm kiểm tra tính chính xác, đầy đủ của các thông tin trên biểu mẫu Trích lục đăng ký chấm dứt giám hộ điện tử và xác nhận (tối đa một ngày). Nếu người yêu cầu xác nhận thông tin đã thống nhất, đầy đủ hoặc không có phản hồi sau thời hạn một ngày thì công chức tư pháp - hộ tịch thực hiện ghi nội dung vào Sổ đăng ký chấm dứt giám hộ, cập nhật thông tin đăng ký chấm dứt giám hộ trên Phần mềm đăng ký, quản lý hộ tịch điện tử dùng chung. - Công chức tư pháp - hộ tịch in Trích lục đăng ký chấm dứt giám hộ, trình Lãnh đạo Ủy ban nhân dân cấp xã ký, chuyển Trung tâm Phục vụ hành chính công trả kết quả cho người yêu cầu.",
+          "procedure_flow": "1. - Nếu lựa chọn hình thức nộp hồ sơ trực tiếp, người yêu cầu đăng ký chấm dứt giám hộ nộp hồ sơ đăng ký chấm dứt giám hộ tại Trung tâm Phục vụ hành chính công có thẩm quyền; nộp lệ phí nếu thuộc trường hợp phải nộp lệ phí đăng ký chấm dứt giám hộ; nộp phí cấp bản sao Trích lục đăng ký chấm dứt giám hộ nếu có yêu cầu cấp bản sao Trích lục đăng ký chấm dứt giám hộ. - Nếu lựa chọn hình thức nộp hồ sơ trực tuyến, người yêu cầu đăng ký chấm dứt giám hộ truy cập Cổng dịch vụ công quốc gia hoặc Ứng dụng định danh quốc gia. Người yêu cầu đăng ký chấm dứt giám hộ trực tuyến cung cấp thông tin theo mẫu hộ tịch điện tử tương tác đăng ký chấm dứt giám hộ, đính kèm bản chụp hoặc bản sao điện tử các giấy tờ, tài liệu theo quy định; nộp phí, lệ phí thông qua chức năng thanh toán trực tuyến hoặc bằng cách thức khác theo quy định pháp luật, hoàn tất việc nộp hồ sơ. - Cán bộ tiếp nhận hồ sơ tại Trung tâm Phục vụ hành chính công có trách nhiệm kiểm tra tính chính xác, đầy đủ, thống nhất, hợp lệ của hồ sơ. (i) Trường hợp hồ sơ đầy đủ, hợp lệ thì tiếp nhận hồ sơ, có Phiếu hẹn, trả kết quả cho người yêu cầu (nếu người yêu cầu nộp hồ sơ trực tiếp) hoặc gửi ngay Phiếu hẹn, trả kết quả qua thư điện tử hoặc gửi tin nhắn hẹn trả kết quả qua điện thoại di động cho người yêu cầu (nếu người yêu cầu nộp hồ sơ trực tuyến), chuyển hồ sơ để công chức tư pháp - hộ tịch xử lý; (ii) Trường hợp hồ sơ chưa đầy đủ, hợp lệ thì cán bộ tiếp nhận hồ sơ thông báo cho người yêu cầu bổ sung, hoàn thiện hồ sơ, nêu rõ loại giấy tờ, nội dung cần bổ sung để người yêu cầu bổ sung, hoàn thiện. Sau khi hồ sơ được bổ sung, thực hiện lại bước (i); (iii) Trường hợp người yêu cầu đăng ký chấm dứt giám hộ không bổ sung, hoàn thiện được hồ sơ thì báo cáo Lãnh đạo Trung tâm Phục vụ hành chính công có thông báo từ chối giải quyết yêu cầu đăng ký chấm dứt giám hộ. - Công chức tư pháp - hộ tịch thẩm tra hồ sơ (thẩm tra tính thống nhất, hợp lệ của các thông tin trong hồ sơ, giấy tờ, tài liệu do người yêu cầu nộp, xuất trình hoặc đính kèm). + Trường hợp hồ sơ cần bổ sung, hoàn thiện hoặc không đủ điều kiện giải quyết, phải từ chối thì công chức tư pháp - hộ tịch gửi thông báo về tình trạng hồ sơ tới Trung tâm Phục vụ hành chính công để thông báo cho người nộp hồ sơ – thực hiện lại bước (ii) hoặc (iii); + Trường hợp cần phải kiểm tra, xác minh làm rõ hoặc do nguyên nhân khác mà không thể trả kết quả đúng thời gian đã hẹn thì công chức tư pháp - hộ tịch lập Phiếu xin lỗi và hẹn lại ngày trả kết quả, trong đó nêu rõ lý do chậm trả kết quả và thời gian hẹn trả kết quả, chuyển Trung tâm Phục vụ hành chính công để trả cho người yêu cầu (nếu người yêu cầu nộp hồ sơ trực tiếp), hoặc gửi Phiếu xin lỗi và hẹn lại ngày trả kết quả qua thư điện tử hoặc gửi tin nhắn qua điện thoại di động cho người yêu cầu (nếu người yêu cầu nộp hồ sơ trực tuyến). + Nếu thấy hồ sơ đầy đủ, hợp lệ, đúng quy định, trường hợp tiếp nhận hồ sơ đăng ký chấm dứt giám hộ theo hình thức trực tiếp, thì công chức tư pháp - hộ tịch thực hiện ghi vào Sổ đăng ký chấm dứt giám hộ, cập nhật thông tin đăng ký chấm dứt giám hộ trên Phần mềm đăng ký, quản lý hộ tịch điện tử dùng chung. Trường hợp tiếp nhận hồ sơ đăng ký chấm dứt giám hộ theo hình thức trực tuyến, công chức tư pháp - hộ tịch gửi lại biểu mẫu Trích lục đăng ký chấm dứt giám hộ điện tử với thông tin đầy đủ cho người yêu cầu qua thư điện tử hoặc thiết bị số. Người yêu cầu có trách nhiệm kiểm tra tính chính xác, đầy đủ của các thông tin trên biểu mẫu Trích lục đăng ký chấm dứt giám hộ điện tử và xác nhận (tối đa một ngày). Nếu người yêu cầu xác nhận thông tin đã thống nhất, đầy đủ hoặc không có phản hồi sau thời hạn một ngày thì công chức tư pháp - hộ tịch thực hiện ghi nội dung vào Sổ đăng ký chấm dứt giám hộ, cập nhật thông tin đăng ký chấm dứt giám hộ trên Phần mềm đăng ký, quản lý hộ tịch điện tử dùng chung. - Công chức tư pháp - hộ tịch in Trích lục đăng ký chấm dứt giám hộ, trình Lãnh đạo Ủy ban nhân dân cấp xã ký, chuyển Trung tâm Phục vụ hành chính công trả kết quả cho người yêu cầu.",
+          "requirements": "Không có thông tin",
+          "submission_methods": [
+            "Trực tuyến",
+            "Dịch vụ bưu chính",
+            "Trực tiếp"
+          ],
+          "processing_time_values": [
+            "2 ngày làm việc",
+            "2 ngày làm việc",
+            "2 ngày làm việc"
+          ],
+          "document_groups": [
+            {
+              "group_name": "* Giấy tờ phải nộp:",
+              "documents": [
+                {
+                  "Tên giấy tờ": "- Giấy tờ làm căn cứ chấm dứt giám hộ theo quy định của Bộ luật Dân sự.",
+                  "Bản chính": "1",
+                  "Bản sao": "0",
+                  "Tệp đính kèm": "Không có"
+                },
+                {
+                  "Tên giấy tờ": "- Văn bản ủy quyền (được chứng thực) theo quy định của pháp luật trong trường hợp ủy quyền thực hiện đăng ký chấm dứt giám hộ. Trường hợp người được ủy quyền là ông, bà, cha, mẹ, con, vợ, chồng, anh, chị, em ruột của người ủy quyền thì văn bản ủy quyền không phải chứng thực.",
+                  "Bản chính": "1",
+                  "Bản sao": "0",
+                  "Tệp đính kèm": "Không có"
+                }
+              ]
+            },
+            {
+              "group_name": "* Giấy tờ phải xuất trình:",
+              "documents": [
+                {
+                  "Tên giấy tờ": "Trường hợp không khai thác được thông tin hoặc thông tin khai thác được không đầy đủ, không chính xác thì cơ quan đăng ký hộ tịch yêu cầu người đi đăng ký hộ tịch xuất trình bản chính giấy tờ để chứng minh, đồng thời đề nghị người đi đăng ký hộ tịch cập nhật, điều chỉnh thông tin trong các cơ sở dữ liệu theo quy định của pháp luật.",
+                  "Bản chính": "0",
+                  "Bản sao": "0",
+                  "Tệp đính kèm": "Không có"
+                },
+                {
+                  "Tên giấy tờ": "Trường hợp các thông tin cá nhân trong các giấy tờ này đã có trong Cơ sở dữ liệu quốc gia về dân cư, Cơ sở dữ liệu hộ tịch điện tử, được hệ thống điền tự động thì không phải tải lên (theo hình thức trực tuyến)",
+                  "Bản chính": "0",
+                  "Bản sao": "0",
+                  "Tệp đính kèm": "Không có"
+                },
+                {
+                  "Tên giấy tờ": "- Hộ chiếu/Thẻ căn cước công dân/Thẻ căn cước/Căn cước điện tử/Giấy chứng nhận căn cước hoặc các giấy tờ khác có dán ảnh và thông tin cá nhân do cơ quan có thẩm quyền cấp, còn giá trị sử dụng (sau đây gọi tắt là giấy tờ tùy thân) để chứng minh về nhân thân khi làm thủ tục trực tiếp tại cơ quan đăng ký hộ tịch.",
+                  "Bản chính": "1",
+                  "Bản sao": "0",
+                  "Tệp đính kèm": "Không có"
+                },
+                {
+                  "Tên giấy tờ": "- Giấy tờ có giá trị chứng minh thông tin về cư trú trong trường hợp cơ quan đăng ký hộ tịch không thể khai thác được thông tin về nơi cư trú của công dân theo các phương thức quy định tại khoản 2 Điều 14 Nghị định số 104/2022/NĐ-CP ngày 21/12/2022 của Chính phủ. Trường hợp các thông tin về giấy tờ chứng minh nơi cư trú đã được khai thác từ Cơ sở dữ liệu quốc gia về dân cư bằng các phương thức này thì người có yêu cầu không phải xuất trình (theo hình thức trực tiếp) hoặc tải lên (theo hình thức trực tuyến).",
+                  "Bản chính": "1",
+                  "Bản sao": "0",
+                  "Tệp đính kèm": "Không có"
+                },
+                {
+                  "Tên giấy tờ": "Trường hợp giấy tờ tùy thân sử dụng là: Hộ chiếu, Thẻ căn cước, Căn cước công dân, Giấy chứng nhận căn cước thì người có yêu cầu đăng ký hộ tịch chỉ cần cung cấp thông tin số định danh cá nhân hoặc thông tin về giấy tờ (số, ngày/tháng/năm cấp), cơ quan đăng ký hộ tịch có trách nhiệm tra cứu thông tin thông qua kết nối với Cơ sở dữ liệu hộ tịch điện tử, Cơ sở dữ liệu quốc gia về dân cư hoặc cơ sở dữ liệu khác có liên quan để đối chiếu, khai thác dữ liệu.",
+                  "Bản chính": "0",
+                  "Bản sao": "0",
+                  "Tệp đính kèm": "Không có"
+                },
+                {
+                  "Tên giấy tờ": "- Trường hợp gửi hồ sơ qua hệ thống bưu chính thì phải gửi kèm theo bản sao có chứng thực các giấy tờ phải xuất trình nêu trên.",
+                  "Bản chính": "0",
+                  "Bản sao": "0",
+                  "Tệp đính kèm": "Không có"
+                }
+              ]
+            },
+            {
+              "group_name": "* Lưu ý:",
+              "documents": [
+                {
+                  "Tên giấy tờ": "Đối với giấy tờ xuất trình khi đăng ký hộ tịch, người tiếp nhận có trách nhiệm kiểm tra, đối chiếu, ghi lại thông tin hoặc chụp lại, ký xác nhận để lưu trong hồ sơ và trả lại cho người xuất trình, không được yêu cầu nộp bản sao hoặc bản chụp giấy tờ đó.",
+                  "Bản chính": "0",
+                  "Bản sao": "0",
+                  "Tệp đính kèm": "Không có"
+                },
+                {
+                  "Tên giấy tờ": "- Trường hợp người yêu cầu đăng ký hộ tịch không cung cấp được giấy tờ theo quy định hoặc giấy tờ nộp, xuất trình bị tẩy xóa, sửa chữa, làm giả thì cơ quan đăng ký hộ tịch có thẩm quyền hủy bỏ kết quả đăng ký hộ tịch.",
+                  "Bản chính": "0",
+                  "Bản sao": "0",
+                  "Tệp đính kèm": "Không có"
+                },
+                {
+                  "Tên giấy tờ": "+ Người tiếp nhận hồ sơ thực hiện khai thác thông tin trong CSDLQGVDC theo quy định pháp luật nếu người yêu cầu đăng ký hộ tịch đã cung cấp họ, chữ đệm, tên; ngày, tháng, năm sinh; số định danh cá nhân/thẻ căn cước công dân/thẻ căn cước/căn cước điện tử. Trường hợp các thông tin cần khai thác không có trong CSDLQGVDC thì đề nghị người yêu cầu kê khai đầy đủ.",
+                  "Bản chính": "0",
+                  "Bản sao": "0",
+                  "Tệp đính kèm": "Không có"
+                },
+                {
+                  "Tên giấy tờ": "- Giấy tờ do cơ quan có thẩm quyền của nước ngoài cấp, công chứng hoặc xác nhận để sử dụng cho việc đăng ký hộ tịch tại Việt Nam phải được hợp pháp hóa lãnh sự theo quy định của pháp luật, trừ trường hợp được miễn theo điều ước quốc tế mà Việt Nam là thành viên.",
+                  "Bản chính": "0",
+                  "Bản sao": "0",
+                  "Tệp đính kèm": "Không có"
+                },
+                {
+                  "Tên giấy tờ": "- Cá nhân có quyền lựa chọn thực hiện thủ tục hành chính về hộ tịch tại cơ quan đăng ký hộ tịch nơi cư trú; nơi cư trú của cá nhân được xác định theo quy định của pháp luật về cư trú. Trường hợp cá nhân lựa chọn thực hiện thủ tục hành chính về hộ tịch không phải tại Ủy ban nhân dân cấp xã nơi thường trú hoặc nơi tạm trú thì Ủy ban nhân dân cấp xã nơi tiếp nhận yêu cầu có trách nhiệm hỗ trợ người dân nộp hồ sơ đăng ký hộ tịch trực tuyến đến đúng cơ quan có thẩm quyền theo quy định.",
+                  "Bản chính": "0",
+                  "Bản sao": "0",
+                  "Tệp đính kèm": "Không có"
+                },
+                {
+                  "Tên giấy tờ": "+ Người yêu cầu đăng ký hộ tịch có thể nộp bản sao được chứng thực từ bản chính hoặc bản sao được cấp từ sổ gốc (sau đây gọi là bản sao) hoặc bản chụp kèm theo bản chính, bản điện tử các giấy tờ này, bao gồm cả giấy tờ được tích hợp, hiển thị trên Ứng dụng định danh điện tử (VneID).",
+                  "Bản chính": "0",
+                  "Bản sao": "0",
+                  "Tệp đính kèm": "Không có"
+                },
+                {
+                  "Tên giấy tờ": "+ Người tiếp nhận có trách nhiệm tiếp nhận đúng, đủ hồ sơ đăng ký hộ tịch theo quy định của pháp luật hộ tịch, không được yêu cầu người đăng ký hộ tịch nộp thêm giấy tờ mà pháp luật hộ tịch không quy định phải nộp .",
+                  "Bản chính": "0",
+                  "Bản sao": "0",
+                  "Tệp đính kèm": "Không có"
+                },
+                {
+                  "Tên giấy tờ": "+ Trường hợp giấy tờ, tài liệu phải gửi kèm trong hồ sơ đăng ký chấm dứt giám hộ trực tuyến đã có bản sao điện tử hoặc đã có bản điện tử giấy tờ hộ tịch thì người yêu cầu được sử dụng bản điện tử này.",
+                  "Bản chính": "0",
+                  "Bản sao": "0",
+                  "Tệp đính kèm": "Không có"
+                },
+                {
+                  "Tên giấy tờ": "- Đối với giấy tờ nộp, xuất trình nếu người yêu cầu nộp hồ sơ theo hình thức trực tiếp:",
+                  "Bản chính": "0",
+                  "Bản sao": "0",
+                  "Tệp đính kèm": "Không có"
+                },
+                {
+                  "Tên giấy tờ": "- Trường hợp người yêu cầu đăng k‎ý hộ tịch lựa chọn nhận kết quả tại Trung tâm Phục vụ hành chính công thì người yêu cầu đăng ký hộ tịch phải xuất trình giấy tờ tuỳ thân, nộp các giấy tờ là thành phần hồ sơ theo quy định; Trường hợp người yêu cầu đăng ký hộ tịch không lựa chọn nhận kết quả tại Trung tâm Phục vụ hành chính công thì người yêu cầu đăng ký hộ tịch nộp các giấy tờ là thành phần hồ sơ theo quy định trước khi nhận kết quả.",
+                  "Bản chính": "0",
+                  "Bản sao": "0",
+                  "Tệp đính kèm": "Không có"
+                },
+                {
+                  "Tên giấy tờ": "+ Trường hợp người yêu cầu đăng ký hộ tịch cung cấp thông tin về giấy tờ hộ tịch của cá nhân đã được đăng ký, cơ quan đăng ký hộ tịch có trách nhiệm tra cứu thông tin trên Hệ thống thông tin giải quyết thủ tục hành chính cấp tỉnh thông qua kết nối với Cơ sở dữ liệu hộ tịch điện tử, CSDLQGVDC. Trường hợp không tra cứu được do không có thông tin trong Cơ sở dữ liệu hộ tịch điện tử, CSDLQGVDC thì cơ quan đăng ký hộ tịch yêu cầu người đi đăng ký hộ tịch nộp/xuất trình giấy tờ liên quan để chứng minh.",
+                  "Bản chính": "0",
+                  "Bản sao": "0",
+                  "Tệp đính kèm": "Không có"
+                },
+                {
+                  "Tên giấy tờ": "+ Bản chụp các giấy tờ gửi kèm theo hồ sơ đăng ký chấm dứt giám hộ trực tuyến phải bảo đảm rõ nét, đầy đủ, toàn vẹn về nội dung, là bản chụp bằng máy ảnh, điện thoại hoặc được chụp, được quét bằng thiết bị điện tử, từ giấy tờ được cấp hợp lệ, còn giá trị sử dụng.",
+                  "Bản chính": "0",
+                  "Bản sao": "0",
+                  "Tệp đính kèm": "Không có"
+                },
+                {
+                  "Tên giấy tờ": "- Đối với giấy tờ gửi kèm theo nếu người yêu cầu nộp hồ sơ theo hình thức trực tuyến:",
+                  "Bản chính": "0",
+                  "Bản sao": "0",
+                  "Tệp đính kèm": "Không có"
+                },
+                {
+                  "Tên giấy tờ": "Trường hợp người yêu cầu nộp bản chụp kèm theo bản chính giấy tờ thì người tiếp nhận có trách nhiệm kiểm tra, đối chiếu bản chụp với bản chính và ký xác nhận, không được yêu cầu nộp bản sao giấy tờ đó.",
+                  "Bản chính": "0",
+                  "Bản sao": "0",
+                  "Tệp đính kèm": "Không có"
+                }
+              ]
+            },
+            {
+              "group_name": "* Lưu ý:",
+              "documents": [
+                {
+                  "Tên giấy tờ": "- Tờ khai đăng ký chấm dứt giám hộ theo mẫu (nếu người có yêu cầu lựa chọn nộp hồ sơ theo hình thức trực tiếp);",
+                  "Bản chính": "1",
+                  "Bản sao": "0",
+                  "Tệp đính kèm": "Không có"
+                },
+                {
+                  "Tên giấy tờ": "- Người có yêu cầu đăng ký chấm dứt giám hộ thực hiện việc nộp/xuất trình (theo hình thức trực tiếp) hoặc tải lên (theo hình thức trực tuyến) các giấy tờ sau:",
+                  "Bản chính": "0",
+                  "Bản sao": "0",
+                  "Tệp đính kèm": "Không có"
+                },
+                {
+                  "Tên giấy tờ": "- Mẫu hộ tịch điện tử tương tác đăng ký chấm dứt giám hộ (do người yêu cầu cung cấp thông tin theo hướng dẫn trên Cổng dịch vụ công, nếu người có yêu cầu lựa chọn nộp hồ sơ theo hình thức trực tuyến)",
+                  "Bản chính": "1",
+                  "Bản sao": "0",
+                  "Tệp đính kèm": "Không có"
+                }
+              ]
+            }
+          ],
+          "result_items": [
+            "Trích lục đăng ký chấm dứt giám hộ (Mã: `KQ.G15.000036`)"
+          ]
+        },
+        {
+          "procedure_code": "3.000322",
+          "procedure_title": "Đăng ký chấm dứt giám sát việc giám hộ",
+          "subdomain_key": "giam_ho",
+          "subdomain_label": "Giám hộ",
+          "event_id": 275,
+          "field": "Hộ tịch",
+          "agency": "Ủy ban nhân dân cấp xã",
+          "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bfd-a586-71fe-8c10-8bfa070f5066",
+          "raw_data_file": "C:\\Users\\ku060\\Downloads\\VAIC source\\data-pipeline\\raw_data\\3_000322\\3_000322_procedure_detail.md",
+          "raw_data_available": true,
+          "operation_group": "giam_sat_giam_ho",
+          "operation_key": "dang_ky_cham_dut_giam_sat_viec_giam_ho",
+          "overview": "1. - Nếu lựa chọn hình thức nộp hồ sơ trực tiếp, người yêu cầu đăng ký chấm dứt giám sát việc giám hộ nộp hồ sơ đăng ký chấm dứt giám sát việc giám hộ tại Trung tâm Phục vụ hành chính công có thẩm quyền đã đăng ký giám sát việc giám hộ; nộp lệ phí nếu thuộc trường hợp phải nộp lệ phí đăng ký chấm dứt giám sát việc giám hộ; nộp phí cấp bản sao Trích lục đăng ký chấm dứt giám sát việc giám hộ nếu có yêu cầu cấp bản sao Trích lục đăng ký chấm dứt giám sát việc giám hộ. - Nếu lựa chọn hình thức nộp hồ sơ trực tuyến, người yêu cầu đăng ký chấm dứt giám sát việc giám hộ truy cập Cổng dịch vụ công quốc gia hoặc Ứng dụng định danh quốc gia. Người yêu cầu đăng ký chấm dứt giám sát việc giám hộ trực tuyến cung cấp thông tin theo mẫu hộ tịch điện tử tương tác đăng ký chấm dứt giám sát việc giám hộ, đính kèm bản chụp hoặc bản sao điện tử các giấy tờ, tài liệu theo quy định; nộp phí, lệ phí thông qua chức năng thanh toán trực tuyến hoặc bằng cách thức khác theo quy định pháp luật, hoàn tất việc nộp hồ sơ. - Cán bộ tiếp nhận hồ sơ tại Trung tâm Phục vụ hành chính công có trách nhiệm kiểm tra tính chính xác, đầy đủ, thống nhất, hợp lệ của hồ sơ. (i) Trường hợp hồ sơ đầy đủ, hợp lệ thì tiếp nhận hồ sơ, có Phiếu hẹn, trả kết quả cho người yêu cầu (nếu người yêu cầu nộp hồ sơ trực tiếp) hoặc gửi ngay Phiếu hẹn, trả kết quả qua thư điện tử hoặc gửi tin nhắn hẹn trả kết quả qua điện thoại di động cho người yêu cầu (nếu người yêu cầu nộp hồ sơ trực tuyến), đồng thời chuyển hồ sơ để công chức tư pháp - hộ tịch xử lý; trường hợp tiếp nhận hồ sơ tại Trung tâm Phục vụ hành chính công cấp tỉnh, cán bộ tiếp nhận hồ sơ chuyển hồ sơ đến Ủy ban nhân dân cấp xã có thẩm quyền xử lý. (ii) Trường hợp hồ sơ chưa đầy đủ, hợp lệ thì cán bộ tiếp nhận hồ sơ thông báo cho người yêu cầu bổ sung, hoàn thiện hồ sơ, nêu rõ loại giấy tờ, nội dung cần bổ sung để người yêu cầu bổ sung, hoàn thiện. Sau khi hồ sơ được bổ sung, thực hiện lại bước (i); (iii) Trường hợp người yêu cầu đăng ký chấm dứt giám sát việc giám hộ không bổ sung, hoàn thiện được hồ sơ thì cán bộ tiếp nhận hồ sơ báo cáo Lãnh đạo Trung tâm Phục vụ hành chính công có thông báo từ chối giải quyết yêu cầu đăng ký chấm dứt giám sát việc giám hộ. - Công chức tư pháp - hộ tịch thẩm tra hồ sơ (thẩm tra tính thống nhất, hợp lệ của các thông tin trong hồ sơ, giấy tờ, tài liệu do người yêu cầu nộp, xuất trình hoặc đính kèm). + Trường hợp hồ sơ cần bổ sung, hoàn thiện hoặc không đủ điều kiện giải quyết, phải từ chối thì công chức tư pháp - hộ tịch gửi thông báo về tình trạng hồ sơ tới Trung tâm Phục vụ hành chính công để thông báo cho người nộp hồ sơ – thực hiện lại bước (ii) hoặc (iii); + Trường hợp cần phải kiểm tra, xác minh làm rõ hoặc do nguyên nhân khác mà không thể trả kết quả đúng thời gian đã hẹn thì công chức tư pháp - hộ tịch lập Phiếu xin lỗi và hẹn lại ngày trả kết quả, trong đó nêu rõ lý do chậm trả kết quả và thời gian hẹn trả kết quả, chuyển Trung tâm Phục vụ hành chính công để trả cho người yêu cầu (nếu người yêu cầu nộp hồ sơ trực tiếp), hoặc gửi Phiếu xin lỗi và hẹn lại ngày trả kết quả qua thư điện tử hoặc gửi tin nhắn qua điện thoại di động cho người yêu cầu (nếu người yêu cầu nộp hồ sơ trực tuyến). + Nếu thấy hồ sơ đầy đủ, hợp lệ, đúng quy định, trường hợp tiếp nhận hồ sơ đăng ký chấm dứt giám sát việc giám hộ theo hình thức trực tiếp, thì công chức tư pháp - hộ tịch thực hiện ghi vào Sổ đăng ký chấm dứt giám sát việc giám hộ, cập nhật thông tin đăng ký chấm dứt giám sát việc giám hộ trên Phần mềm đăng ký, quản lý hộ tịch điện tử dùng chung. Trường hợp tiếp nhận hồ sơ đăng ký chấm dứt giám sát việc giám hộ theo hình thức trực tuyến, công chức tư pháp - hộ tịch gửi lại biểu mẫu Trích lục đăng ký chấm dứt giám sát việc giám hộ điện tử với thông tin đầy đủ cho người yêu cầu qua thư điện tử hoặc thiết bị số. Người yêu cầu có trách nhiệm kiểm tra tính chính xác, đầy đủ của các thông tin trên biểu mẫu Trích lục đăng ký chấm dứt giám sát việc giám hộ điện tử và xác nhận (tối đa một ngày). Nếu người yêu cầu xác nhận thông tin đã thống nhất, đầy đủ hoặc không có phản hồi sau thời hạn một ngày thì công chức tư pháp - hộ tịch thực hiện ghi nội dung vào Sổ đăng ký chấm dứt giám sát việc giám hộ, cập nhật thông tin đăng ký chấm dứt giám sát việc giám hộ trên Phần mềm đăng ký, quản lý hộ tịch điện tử dùng chung. - Công chức tư pháp - hộ tịch in Trích lục đăng ký chấm dứt giám sát việc giám hộ, trình Lãnh đạo Ủy ban nhân dân cấp xã ký, chuyển Trung tâm Phục vụ hành chính công trả kết quả cho người yêu cầu.",
+          "procedure_flow": "1. - Nếu lựa chọn hình thức nộp hồ sơ trực tiếp, người yêu cầu đăng ký chấm dứt giám sát việc giám hộ nộp hồ sơ đăng ký chấm dứt giám sát việc giám hộ tại Trung tâm Phục vụ hành chính công có thẩm quyền đã đăng ký giám sát việc giám hộ; nộp lệ phí nếu thuộc trường hợp phải nộp lệ phí đăng ký chấm dứt giám sát việc giám hộ; nộp phí cấp bản sao Trích lục đăng ký chấm dứt giám sát việc giám hộ nếu có yêu cầu cấp bản sao Trích lục đăng ký chấm dứt giám sát việc giám hộ. - Nếu lựa chọn hình thức nộp hồ sơ trực tuyến, người yêu cầu đăng ký chấm dứt giám sát việc giám hộ truy cập Cổng dịch vụ công quốc gia hoặc Ứng dụng định danh quốc gia. Người yêu cầu đăng ký chấm dứt giám sát việc giám hộ trực tuyến cung cấp thông tin theo mẫu hộ tịch điện tử tương tác đăng ký chấm dứt giám sát việc giám hộ, đính kèm bản chụp hoặc bản sao điện tử các giấy tờ, tài liệu theo quy định; nộp phí, lệ phí thông qua chức năng thanh toán trực tuyến hoặc bằng cách thức khác theo quy định pháp luật, hoàn tất việc nộp hồ sơ. - Cán bộ tiếp nhận hồ sơ tại Trung tâm Phục vụ hành chính công có trách nhiệm kiểm tra tính chính xác, đầy đủ, thống nhất, hợp lệ của hồ sơ. (i) Trường hợp hồ sơ đầy đủ, hợp lệ thì tiếp nhận hồ sơ, có Phiếu hẹn, trả kết quả cho người yêu cầu (nếu người yêu cầu nộp hồ sơ trực tiếp) hoặc gửi ngay Phiếu hẹn, trả kết quả qua thư điện tử hoặc gửi tin nhắn hẹn trả kết quả qua điện thoại di động cho người yêu cầu (nếu người yêu cầu nộp hồ sơ trực tuyến), đồng thời chuyển hồ sơ để công chức tư pháp - hộ tịch xử lý; trường hợp tiếp nhận hồ sơ tại Trung tâm Phục vụ hành chính công cấp tỉnh, cán bộ tiếp nhận hồ sơ chuyển hồ sơ đến Ủy ban nhân dân cấp xã có thẩm quyền xử lý. (ii) Trường hợp hồ sơ chưa đầy đủ, hợp lệ thì cán bộ tiếp nhận hồ sơ thông báo cho người yêu cầu bổ sung, hoàn thiện hồ sơ, nêu rõ loại giấy tờ, nội dung cần bổ sung để người yêu cầu bổ sung, hoàn thiện. Sau khi hồ sơ được bổ sung, thực hiện lại bước (i); (iii) Trường hợp người yêu cầu đăng ký chấm dứt giám sát việc giám hộ không bổ sung, hoàn thiện được hồ sơ thì cán bộ tiếp nhận hồ sơ báo cáo Lãnh đạo Trung tâm Phục vụ hành chính công có thông báo từ chối giải quyết yêu cầu đăng ký chấm dứt giám sát việc giám hộ. - Công chức tư pháp - hộ tịch thẩm tra hồ sơ (thẩm tra tính thống nhất, hợp lệ của các thông tin trong hồ sơ, giấy tờ, tài liệu do người yêu cầu nộp, xuất trình hoặc đính kèm). + Trường hợp hồ sơ cần bổ sung, hoàn thiện hoặc không đủ điều kiện giải quyết, phải từ chối thì công chức tư pháp - hộ tịch gửi thông báo về tình trạng hồ sơ tới Trung tâm Phục vụ hành chính công để thông báo cho người nộp hồ sơ – thực hiện lại bước (ii) hoặc (iii); + Trường hợp cần phải kiểm tra, xác minh làm rõ hoặc do nguyên nhân khác mà không thể trả kết quả đúng thời gian đã hẹn thì công chức tư pháp - hộ tịch lập Phiếu xin lỗi và hẹn lại ngày trả kết quả, trong đó nêu rõ lý do chậm trả kết quả và thời gian hẹn trả kết quả, chuyển Trung tâm Phục vụ hành chính công để trả cho người yêu cầu (nếu người yêu cầu nộp hồ sơ trực tiếp), hoặc gửi Phiếu xin lỗi và hẹn lại ngày trả kết quả qua thư điện tử hoặc gửi tin nhắn qua điện thoại di động cho người yêu cầu (nếu người yêu cầu nộp hồ sơ trực tuyến). + Nếu thấy hồ sơ đầy đủ, hợp lệ, đúng quy định, trường hợp tiếp nhận hồ sơ đăng ký chấm dứt giám sát việc giám hộ theo hình thức trực tiếp, thì công chức tư pháp - hộ tịch thực hiện ghi vào Sổ đăng ký chấm dứt giám sát việc giám hộ, cập nhật thông tin đăng ký chấm dứt giám sát việc giám hộ trên Phần mềm đăng ký, quản lý hộ tịch điện tử dùng chung. Trường hợp tiếp nhận hồ sơ đăng ký chấm dứt giám sát việc giám hộ theo hình thức trực tuyến, công chức tư pháp - hộ tịch gửi lại biểu mẫu Trích lục đăng ký chấm dứt giám sát việc giám hộ điện tử với thông tin đầy đủ cho người yêu cầu qua thư điện tử hoặc thiết bị số. Người yêu cầu có trách nhiệm kiểm tra tính chính xác, đầy đủ của các thông tin trên biểu mẫu Trích lục đăng ký chấm dứt giám sát việc giám hộ điện tử và xác nhận (tối đa một ngày). Nếu người yêu cầu xác nhận thông tin đã thống nhất, đầy đủ hoặc không có phản hồi sau thời hạn một ngày thì công chức tư pháp - hộ tịch thực hiện ghi nội dung vào Sổ đăng ký chấm dứt giám sát việc giám hộ, cập nhật thông tin đăng ký chấm dứt giám sát việc giám hộ trên Phần mềm đăng ký, quản lý hộ tịch điện tử dùng chung. - Công chức tư pháp - hộ tịch in Trích lục đăng ký chấm dứt giám sát việc giám hộ, trình Lãnh đạo Ủy ban nhân dân cấp xã ký, chuyển Trung tâm Phục vụ hành chính công trả kết quả cho người yêu cầu.",
+          "requirements": "Không có thông tin",
+          "submission_methods": [
+            "Trực tuyến",
+            "Dịch vụ bưu chính",
+            "Trực tiếp"
+          ],
+          "processing_time_values": [
+            "3 ngày",
+            "3 ngày",
+            "3 ngày"
+          ],
+          "document_groups": [
+            {
+              "group_name": "Giấy tờ phải nộp:",
+              "documents": [
+                {
+                  "Tên giấy tờ": "- Văn bản ủy quyền theo quy định của pháp luật trong trường hợp ủy quyền thực hiện việc đăng ký chấm dứt giám sát việc giám hộ. Trường hợp người được ủy quyền là ông, bà, cha, mẹ, con, vợ, chồng, anh, chị, em ruột của người ủy quyền thì văn bản ủy quyền không phải chứng thực.",
+                  "Bản chính": "1",
+                  "Bản sao": "0",
+                  "Tệp đính kèm": "Không có"
+                },
+                {
+                  "Tên giấy tờ": "- Giấy tờ làm căn cứ chấm dứt giám sát việc giám hộ theo quy định của Bộ luật Dân sự.",
+                  "Bản chính": "1",
+                  "Bản sao": "0",
+                  "Tệp đính kèm": "Không có"
+                }
+              ]
+            },
+            {
+              "group_name": "Giấy tờ phải xuất trình:",
+              "documents": [
+                {
+                  "Tên giấy tờ": "Trường hợp không khai thác được thông tin hoặc thông tin khai thác được không đầy đủ, không chính xác thì cơ quan đăng ký hộ tịch yêu cầu người đi đăng ký hộ tịch xuất trình bản chính giấy tờ để chứng minh, đồng thời đề nghị người đi đăng ký hộ tịch cập nhật, điều chỉnh thông tin trong các cơ sở dữ liệu theo quy định của pháp luật.",
+                  "Bản chính": "0",
+                  "Bản sao": "0",
+                  "Tệp đính kèm": "Không có"
+                },
+                {
+                  "Tên giấy tờ": "Trường hợp giấy tờ tùy thân sử dụng là: Hộ chiếu, Thẻ căn cước, Căn cước công dân, Giấy chứng nhận căn cước thì người có yêu cầu đăng ký hộ tịch chỉ cần cung cấp thông tin số định danh cá nhân hoặc thông tin về giấy tờ (số, ngày/tháng/năm cấp), cơ quan đăng ký hộ tịch có trách nhiệm tra cứu thông tin thông qua kết nối với Cơ sở dữ liệu hộ tịch điện tử, Cơ sở dữ liệu quốc gia về dân cư hoặc cơ sở dữ liệu khác có liên quan để đối chiếu, khai thác dữ liệu.",
+                  "Bản chính": "0",
+                  "Bản sao": "0",
+                  "Tệp đính kèm": "Không có"
+                },
+                {
+                  "Tên giấy tờ": "- Hộ chiếu/Thẻ căn cước công dân/Thẻ căn cước/Căn cước điện tử/Giấy chứng nhận căn cước hoặc các giấy tờ khác có dán ảnh và thông tin cá nhân do cơ quan có thẩm quyền cấp, còn giá trị sử dụng (sau đây gọi tắt là giấy tờ tùy thân) để chứng minh về nhân thân khi làm thủ tục trực tiếp tại cơ quan đăng ký hộ tịch.",
+                  "Bản chính": "1",
+                  "Bản sao": "0",
+                  "Tệp đính kèm": "Không có"
+                },
+                {
+                  "Tên giấy tờ": "Trường hợp các thông tin cá nhân trong các giấy tờ này đã có trong Cơ sở dữ liệu quốc gia về dân cư, Cơ sở dữ liệu hộ tịch điện tử, được hệ thống điền tự động thì không phải tải lên (theo hình thức trực tuyến)",
+                  "Bản chính": "0",
+                  "Bản sao": "0",
+                  "Tệp đính kèm": "Không có"
+                },
+                {
+                  "Tên giấy tờ": "- Trường hợp gửi hồ sơ qua hệ thống bưu chính thì phải gửi kèm theo bản sao có chứng thực các giấy tờ phải xuất trình nêu trên.",
+                  "Bản chính": "0",
+                  "Bản sao": "0",
+                  "Tệp đính kèm": "Không có"
+                },
+                {
+                  "Tên giấy tờ": "- Giấy tờ có giá trị chứng minh thông tin về cư trú trong trường hợp cơ quan đăng ký hộ tịch không thể khai thác được thông tin về nơi cư trú của công dân theo các phương thức quy định tại khoản 2 Điều 14 Nghị định số 104/2022/NĐ-CP ngày 21/12/2022 của Chính phủ. Trường hợp các thông tin về giấy tờ chứng minh nơi cư trú đã được khai thác từ Cơ sở dữ liệu quốc gia về dân cư bằng các phương thức này thì người có yêu cầu không phải xuất trình (theo hình thức trực tiếp) hoặc tải lên (theo hình thức trực tuyến).",
+                  "Bản chính": "0",
+                  "Bản sao": "0",
+                  "Tệp đính kèm": "Không có"
+                }
+              ]
+            },
+            {
+              "group_name": "Lưu ý:",
+              "documents": [
+                {
+                  "Tên giấy tờ": "- Giấy tờ do cơ quan có thẩm quyền của nước ngoài cấp, công chứng hoặc xác nhận để sử dụng cho việc đăng ký hộ tịch tại Việt Nam phải được hợp pháp hóa lãnh sự theo quy định của pháp luật, trừ trường hợp được miễn theo điều ước quốc tế mà Việt Nam là thành viên.",
+                  "Bản chính": "0",
+                  "Bản sao": "0",
+                  "Tệp đính kèm": "Không có"
+                },
+                {
+                  "Tên giấy tờ": "+ Người tiếp nhận hồ sơ thực hiện khai thác thông tin trong CSDLQGVDC theo quy định pháp luật nếu người yêu cầu đăng ký hộ tịch đã cung cấp họ, chữ đệm, tên; ngày, tháng, năm sinh; số định danh cá nhân/thẻ căn cước công dân/thẻ căn cước/căn cước điện tử. Trường hợp các thông tin cần khai thác không có trong CSDLQGVDC thì đề nghị người yêu cầu kê khai đầy đủ.",
+                  "Bản chính": "0",
+                  "Bản sao": "0",
+                  "Tệp đính kèm": "Không có"
+                },
+                {
+                  "Tên giấy tờ": "+ Bản chụp các giấy tờ gửi kèm theo hồ sơ đăng ký chấm dứt giám sát việc giám hộ trực tuyến phải bảo đảm rõ nét, đầy đủ, toàn vẹn về nội dung, là bản chụp bằng máy ảnh, điện thoại hoặc được chụp, được quét bằng thiết bị điện tử, từ giấy tờ được cấp hợp lệ, còn giá trị sử dụng.",
+                  "Bản chính": "0",
+                  "Bản sao": "0",
+                  "Tệp đính kèm": "Không có"
+                },
+                {
+                  "Tên giấy tờ": "+ Trường hợp người yêu cầu đăng ký hộ tịch cung cấp thông tin về giấy tờ hộ tịch của cá nhân đã được đăng ký, cơ quan đăng ký hộ tịch có trách nhiệm tra cứu thông tin trên Hệ thống thông tin giải quyết thủ tục hành chính cấp tỉnh thông qua kết nối với Cơ sở dữ liệu hộ tịch điện tử, CSDLQGVDC. Trường hợp không tra cứu được do không có thông tin trong Cơ sở dữ liệu hộ tịch điện tử, CSDLQGVDC thì cơ quan đăng ký hộ tịch yêu cầu người đi đăng ký hộ tịch nộp/xuất trình giấy tờ liên quan để chứng minh.",
+                  "Bản chính": "0",
+                  "Bản sao": "0",
+                  "Tệp đính kèm": "Không có"
+                },
+                {
+                  "Tên giấy tờ": "Đối với giấy tờ xuất trình khi đăng ký hộ tịch, người tiếp nhận có trách nhiệm kiểm tra, đối chiếu, ghi lại thông tin hoặc chụp lại, ký xác nhận để lưu trong hồ sơ và trả lại cho người xuất trình, không được yêu cầu nộp bản sao hoặc bản chụp giấy tờ đó.",
+                  "Bản chính": "0",
+                  "Bản sao": "0",
+                  "Tệp đính kèm": "Không có"
+                },
+                {
+                  "Tên giấy tờ": "- Đối với giấy tờ nộp, xuất trình nếu người yêu cầu nộp hồ sơ theo hình thức trực tiếp:",
+                  "Bản chính": "0",
+                  "Bản sao": "0",
+                  "Tệp đính kèm": "Không có"
+                },
+                {
+                  "Tên giấy tờ": "- Đối với giấy tờ gửi kèm theo nếu người yêu cầu nộp hồ sơ theo hình thức trực tuyến:",
+                  "Bản chính": "0",
+                  "Bản sao": "0",
+                  "Tệp đính kèm": "Không có"
+                },
+                {
+                  "Tên giấy tờ": "Trường hợp người yêu cầu nộp bản chụp kèm theo bản chính giấy tờ thì người tiếp nhận có trách nhiệm kiểm tra, đối chiếu bản chụp với bản chính và ký xác nhận, không được yêu cầu nộp bản sao giấy tờ đó.",
+                  "Bản chính": "0",
+                  "Bản sao": "0",
+                  "Tệp đính kèm": "Không có"
+                },
+                {
+                  "Tên giấy tờ": "- Cá nhân có quyền lựa chọn thực hiện thủ tục hành chính về hộ tịch tại cơ quan đăng ký hộ tịch nơi cư trú; nơi cư trú của cá nhân được xác định theo quy định của pháp luật về cư trú. Trường hợp cá nhân lựa chọn thực hiện thủ tục hành chính về hộ tịch không phải tại Ủy ban nhân dân cấp xã nơi thường trú hoặc nơi tạm trú thì Ủy ban nhân dân cấp xã nơi tiếp nhận yêu cầu có trách nhiệm hỗ trợ người dân nộp hồ sơ đăng ký hộ tịch trực tuyến đến đúng cơ quan có thẩm quyền theo quy định.",
+                  "Bản chính": "0",
+                  "Bản sao": "0",
+                  "Tệp đính kèm": "Không có"
+                },
+                {
+                  "Tên giấy tờ": "+ Người tiếp nhận có trách nhiệm tiếp nhận đúng, đủ hồ sơ đăng ký hộ tịch theo quy định của pháp luật hộ tịch, không được yêu cầu người đăng ký hộ tịch nộp thêm giấy tờ mà pháp luật hộ tịch không quy định phải nộp .",
+                  "Bản chính": "0",
+                  "Bản sao": "0",
+                  "Tệp đính kèm": "Không có"
+                },
+                {
+                  "Tên giấy tờ": "- Trường hợp người yêu cầu đăng ký hộ tịch không cung cấp được giấy tờ theo quy định hoặc giấy tờ nộp, xuất trình bị tẩy xóa, sửa chữa, làm giả thì cơ quan đăng ký hộ tịch có thẩm quyền hủy bỏ kết quả đăng ký hộ tịch.",
+                  "Bản chính": "0",
+                  "Bản sao": "0",
+                  "Tệp đính kèm": "Không có"
+                },
+                {
+                  "Tên giấy tờ": "- Trường hợp người yêu cầu đăng k‎ý hộ tịch lựa chọn nhận kết quả tại Trung tâm Phục vụ hành chính công thì người yêu cầu đăng ký hộ tịch phải xuất trình giấy tờ tuỳ thân, nộp các giấy tờ là thành phần hồ sơ theo quy định; Trường hợp người yêu cầu đăng ký hộ tịch không lựa chọn nhận kết quả tại Trung tâm Phục vụ hành chính công thì người yêu cầu đăng ký hộ tịch nộp các giấy tờ là thành phần hồ sơ theo quy định trước khi nhận kết quả.",
+                  "Bản chính": "0",
+                  "Bản sao": "0",
+                  "Tệp đính kèm": "Không có"
+                },
+                {
+                  "Tên giấy tờ": "+ Người yêu cầu đăng ký hộ tịch có thể nộp bản sao được chứng thực từ bản chính hoặc bản sao được cấp từ sổ gốc (sau đây gọi là bản sao) hoặc bản chụp kèm theo bản chính, bản điện tử các giấy tờ này, bao gồm cả giấy tờ được tích hợp, hiển thị trên Ứng dụng định danh điện tử (VneID).",
+                  "Bản chính": "0",
+                  "Bản sao": "0",
+                  "Tệp đính kèm": "Không có"
+                },
+                {
+                  "Tên giấy tờ": "+ Trường hợp giấy tờ, tài liệu phải gửi kèm trong hồ sơ đăng ký chấm dứt giám hộ trực tuyến đã có bản sao điện tử hoặc đã có bản điện tử giấy tờ hộ tịch thì người yêu cầu được sử dụng bản điện tử này.",
+                  "Bản chính": "0",
+                  "Bản sao": "0",
+                  "Tệp đính kèm": "Không có"
+                }
+              ]
+            },
+            {
+              "group_name": "Thành phần hồ sơ:",
+              "documents": [
+                {
+                  "Tên giấy tờ": "- Người có yêu cầu đăng ký chấm dứt giám sát việc giám hộ thực hiện việc nộp/xuất trình (theo hình thức trực tiếp) hoặc tải lên (theo hình thức trực tuyến) các giấy tờ sau:",
+                  "Bản chính": "0",
+                  "Bản sao": "0",
+                  "Tệp đính kèm": "Không có"
+                },
+                {
+                  "Tên giấy tờ": "- Tờ khai đăng ký chấm dứt giám sát việc giám hộ theo mẫu (nếu người có yêu cầu lựa chọn nộp hồ sơ theo hình thức trực tiếp hoặc gửi hồ sơ qua hệ thống bưu chính);",
+                  "Bản chính": "1",
+                  "Bản sao": "0",
+                  "Tệp đính kèm": "Không có"
+                },
+                {
+                  "Tên giấy tờ": "- Mẫu hộ tịch điện tử tương tác đăng ký chấm dứt giám sát việc giám hộ (do người yêu cầu cung cấp thông tin theo hướng dẫn trên Cổng dịch vụ công, nếu người có yêu cầu lựa chọn nộp hồ sơ theo hình thức trực tuyến);",
+                  "Bản chính": "1",
+                  "Bản sao": "0",
+                  "Tệp đính kèm": "Không có"
+                }
+              ]
+            }
+          ],
+          "result_items": [
+            "Trích lục đăng ký chấm dứt giám sát việc giám hộ (Mã: `KQ.G15.000286`)"
+          ]
+        },
+        {
+          "procedure_code": "3.000323",
+          "procedure_title": "Đăng ký giám sát việc giám hộ",
+          "subdomain_key": "giam_ho",
+          "subdomain_label": "Giám hộ",
+          "event_id": 275,
+          "field": "Hộ tịch",
+          "agency": "Ủy ban nhân dân cấp xã",
+          "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bfd-a5b3-74a8-b670-0ffe3cefb7e3",
+          "raw_data_file": "C:\\Users\\ku060\\Downloads\\VAIC source\\data-pipeline\\raw_data\\3_000323\\3_000323_procedure_detail.md",
+          "raw_data_available": true,
+          "operation_group": "giam_sat_giam_ho",
+          "operation_key": "dang_ky_giam_sat_viec_giam_ho",
+          "overview": "1. - Nếu lựa chọn hình thức nộp hồ sơ trực tiếp, người yêu cầu đăng ký giám sát việc giám hộ nộp hồ sơ đăng ký giám sát việc giám hộ tại Trung tâm Phục vụ hành chính công nơi cư trú của người được giám hộ; nộp lệ phí nếu thuộc trường hợp phải nộp lệ phí đăng ký giám sát việc giám hộ; nộp phí cấp bản sao Trích lục đăng ký giám sát việc giám hộ nếu có yêu cầu cấp bản sao Trích lục đăng ký giám sát việc giám hộ. - Nếu lựa chọn hình thức nộp hồ sơ trực tuyến, người yêu cầu đăng ký giám sát việc giám hộ truy cập Cổng dịch vụ công quốc gia hoặc Ứng dụng định danh quốc gia. Người yêu cầu đăng ký giám sát việc giám hộ trực tuyến cung cấp thông tin theo mẫu hộ tịch điện tử tương tác đăng ký giám sát việc giám hộ, đính kèm bản chụp hoặc bản sao điện tử các giấy tờ, tài liệu theo quy định; nộp phí, lệ phí thông qua chức năng thanh toán trực tuyến hoặc bằng cách thức khác theo quy định pháp luật, hoàn tất việc nộp hồ sơ. - Cán bộ tiếp nhận hồ sơ tại Trung tâm Phục vụ hành chính công có trách nhiệm kiểm tra tính chính xác, đầy đủ, thống nhất, hợp lệ của hồ sơ. (i) Trường hợp hồ sơ đầy đủ, hợp lệ thì tiếp nhận hồ sơ, có Phiếu hẹn, trả kết quả cho người yêu cầu (nếu người yêu cầu nộp hồ sơ trực tiếp) hoặc gửi ngay Phiếu hẹn, trả kết quả qua thư điện tử hoặc gửi tin nhắn hẹn trả kết quả qua điện thoại di động cho người yêu cầu (nếu người yêu cầu nộp hồ sơ trực tuyến), đồng thời chuyển hồ sơ để công chức tư pháp - hộ tịch xử lý; trường hợp tiếp nhận hồ sơ tại Trung tâm Phục vụ hành chính công cấp tỉnh, cán bộ tiếp nhận hồ sơ chuyển hồ sơ đến Ủy ban nhân dân cấp xã có thẩm quyền xử lý. (ii) Trường hợp hồ sơ chưa đầy đủ, hợp lệ thì cán bộ tiếp nhận hồ sơ thông báo cho người yêu cầu bổ sung, hoàn thiện hồ sơ, nêu rõ loại giấy tờ, nội dung cần bổ sung để người yêu cầu bổ sung, hoàn thiện. Sau khi hồ sơ được bổ sung, thực hiện lại bước (i); (iii) Trường hợp người yêu cầu đăng ký giám sát việc giám hộ không bổ sung, hoàn thiện được hồ sơ thì cán bộ tiếp nhận hồ sơ báo cáo Lãnh đạo Trung tâm Phục vụ hành chính công có thông báo từ chối giải quyết yêu cầu đăng ký giám sát việc giám hộ. - Công chức tư pháp - hộ tịch thẩm tra hồ sơ (thẩm tra tính thống nhất, hợp lệ của các thông tin trong hồ sơ, giấy tờ, tài liệu do người yêu cầu nộp, xuất trình hoặc đính kèm). + Trường hợp hồ sơ cần bổ sung, hoàn thiện hoặc không đủ điều kiện giải quyết, phải từ chối thì công chức tư pháp - hộ tịch gửi thông báo về tình trạng hồ sơ tới Trung tâm Phục vụ hành chính công để thông báo cho người nộp hồ sơ – thực hiện lại bước (ii) hoặc (iii); + Trường hợp cần phải kiểm tra, xác minh làm rõ hoặc do nguyên nhân khác mà không thể trả kết quả đúng thời gian đã hẹn thì công chức tư pháp - hộ tịch lập Phiếu xin lỗi và hẹn lại ngày trả kết quả, trong đó nêu rõ lý do chậm trả kết quả và thời gian hẹn trả kết quả, chuyển Trung tâm Phục vụ hành chính công để trả cho người yêu cầu (nếu người yêu cầu nộp hồ sơ trực tiếp), hoặc gửi Phiếu xin lỗi và hẹn lại ngày trả kết quả qua thư điện tử hoặc gửi tin nhắn qua điện thoại di động cho người yêu cầu (nếu người yêu cầu nộp hồ sơ trực tuyến). + Nếu thấy yêu cầu đăng ký giám sát việc giám hộ đủ điều kiện theo quy định pháp luật, hồ sơ đầy đủ, hợp lệ, đúng quy định, trường hợp tiếp nhận hồ sơ đăng ký giám hộ theo hình thức trực tiếp, thì công chức tư pháp - hộ tịch thực hiện ghi vào Sổ đăng ký giám sát việc giám hộ, cập nhật thông tin đăng ký giám sát việc giám hộ trên Phần mềm đăng ký, quản lý hộ tịch điện tử dùng chung. Trường hợp tiếp nhận hồ sơ đăng ký giám sát việc giám hộ theo hình thức trực tuyến, công chức tư pháp - hộ tịch gửi lại biểu mẫu Trích lục đăng ký giám sát việc giám hộ điện tử với thông tin đầy đủ cho người yêu cầu qua thư điện tử hoặc thiết bị số. Người yêu cầu có trách nhiệm kiểm tra tính chính xác, đầy đủ của các thông tin trên biểu mẫu Trích lục đăng ký giám sát việc giám hộ điện tử và xác nhận (tối đa một ngày). Nếu người yêu cầu xác nhận thông tin đã thống nhất, đầy đủ hoặc không có phản hồi sau thời hạn một ngày thì công chức tư pháp - hộ tịch thực hiện ghi nội dung vào Sổ đăng ký giám sát việc giám hộ, cập nhật thông tin đăng ký giám sát việc giám hộ trên Phần mềm đăng ký, quản lý hộ tịch điện tử dùng chung. - Công chức tư pháp - hộ tịch in Trích lục đăng ký giám sát việc giám hộ, trình Lãnh đạo Ủy ban nhân dân cấp xã ký, chuyển Trung tâm Phục vụ hành chính công trả kết quả cho người yêu cầu.",
+          "procedure_flow": "1. - Nếu lựa chọn hình thức nộp hồ sơ trực tiếp, người yêu cầu đăng ký giám sát việc giám hộ nộp hồ sơ đăng ký giám sát việc giám hộ tại Trung tâm Phục vụ hành chính công nơi cư trú của người được giám hộ; nộp lệ phí nếu thuộc trường hợp phải nộp lệ phí đăng ký giám sát việc giám hộ; nộp phí cấp bản sao Trích lục đăng ký giám sát việc giám hộ nếu có yêu cầu cấp bản sao Trích lục đăng ký giám sát việc giám hộ. - Nếu lựa chọn hình thức nộp hồ sơ trực tuyến, người yêu cầu đăng ký giám sát việc giám hộ truy cập Cổng dịch vụ công quốc gia hoặc Ứng dụng định danh quốc gia. Người yêu cầu đăng ký giám sát việc giám hộ trực tuyến cung cấp thông tin theo mẫu hộ tịch điện tử tương tác đăng ký giám sát việc giám hộ, đính kèm bản chụp hoặc bản sao điện tử các giấy tờ, tài liệu theo quy định; nộp phí, lệ phí thông qua chức năng thanh toán trực tuyến hoặc bằng cách thức khác theo quy định pháp luật, hoàn tất việc nộp hồ sơ. - Cán bộ tiếp nhận hồ sơ tại Trung tâm Phục vụ hành chính công có trách nhiệm kiểm tra tính chính xác, đầy đủ, thống nhất, hợp lệ của hồ sơ. (i) Trường hợp hồ sơ đầy đủ, hợp lệ thì tiếp nhận hồ sơ, có Phiếu hẹn, trả kết quả cho người yêu cầu (nếu người yêu cầu nộp hồ sơ trực tiếp) hoặc gửi ngay Phiếu hẹn, trả kết quả qua thư điện tử hoặc gửi tin nhắn hẹn trả kết quả qua điện thoại di động cho người yêu cầu (nếu người yêu cầu nộp hồ sơ trực tuyến), đồng thời chuyển hồ sơ để công chức tư pháp - hộ tịch xử lý; trường hợp tiếp nhận hồ sơ tại Trung tâm Phục vụ hành chính công cấp tỉnh, cán bộ tiếp nhận hồ sơ chuyển hồ sơ đến Ủy ban nhân dân cấp xã có thẩm quyền xử lý. (ii) Trường hợp hồ sơ chưa đầy đủ, hợp lệ thì cán bộ tiếp nhận hồ sơ thông báo cho người yêu cầu bổ sung, hoàn thiện hồ sơ, nêu rõ loại giấy tờ, nội dung cần bổ sung để người yêu cầu bổ sung, hoàn thiện. Sau khi hồ sơ được bổ sung, thực hiện lại bước (i); (iii) Trường hợp người yêu cầu đăng ký giám sát việc giám hộ không bổ sung, hoàn thiện được hồ sơ thì cán bộ tiếp nhận hồ sơ báo cáo Lãnh đạo Trung tâm Phục vụ hành chính công có thông báo từ chối giải quyết yêu cầu đăng ký giám sát việc giám hộ. - Công chức tư pháp - hộ tịch thẩm tra hồ sơ (thẩm tra tính thống nhất, hợp lệ của các thông tin trong hồ sơ, giấy tờ, tài liệu do người yêu cầu nộp, xuất trình hoặc đính kèm). + Trường hợp hồ sơ cần bổ sung, hoàn thiện hoặc không đủ điều kiện giải quyết, phải từ chối thì công chức tư pháp - hộ tịch gửi thông báo về tình trạng hồ sơ tới Trung tâm Phục vụ hành chính công để thông báo cho người nộp hồ sơ – thực hiện lại bước (ii) hoặc (iii); + Trường hợp cần phải kiểm tra, xác minh làm rõ hoặc do nguyên nhân khác mà không thể trả kết quả đúng thời gian đã hẹn thì công chức tư pháp - hộ tịch lập Phiếu xin lỗi và hẹn lại ngày trả kết quả, trong đó nêu rõ lý do chậm trả kết quả và thời gian hẹn trả kết quả, chuyển Trung tâm Phục vụ hành chính công để trả cho người yêu cầu (nếu người yêu cầu nộp hồ sơ trực tiếp), hoặc gửi Phiếu xin lỗi và hẹn lại ngày trả kết quả qua thư điện tử hoặc gửi tin nhắn qua điện thoại di động cho người yêu cầu (nếu người yêu cầu nộp hồ sơ trực tuyến). + Nếu thấy yêu cầu đăng ký giám sát việc giám hộ đủ điều kiện theo quy định pháp luật, hồ sơ đầy đủ, hợp lệ, đúng quy định, trường hợp tiếp nhận hồ sơ đăng ký giám hộ theo hình thức trực tiếp, thì công chức tư pháp - hộ tịch thực hiện ghi vào Sổ đăng ký giám sát việc giám hộ, cập nhật thông tin đăng ký giám sát việc giám hộ trên Phần mềm đăng ký, quản lý hộ tịch điện tử dùng chung. Trường hợp tiếp nhận hồ sơ đăng ký giám sát việc giám hộ theo hình thức trực tuyến, công chức tư pháp - hộ tịch gửi lại biểu mẫu Trích lục đăng ký giám sát việc giám hộ điện tử với thông tin đầy đủ cho người yêu cầu qua thư điện tử hoặc thiết bị số. Người yêu cầu có trách nhiệm kiểm tra tính chính xác, đầy đủ của các thông tin trên biểu mẫu Trích lục đăng ký giám sát việc giám hộ điện tử và xác nhận (tối đa một ngày). Nếu người yêu cầu xác nhận thông tin đã thống nhất, đầy đủ hoặc không có phản hồi sau thời hạn một ngày thì công chức tư pháp - hộ tịch thực hiện ghi nội dung vào Sổ đăng ký giám sát việc giám hộ, cập nhật thông tin đăng ký giám sát việc giám hộ trên Phần mềm đăng ký, quản lý hộ tịch điện tử dùng chung. - Công chức tư pháp - hộ tịch in Trích lục đăng ký giám sát việc giám hộ, trình Lãnh đạo Ủy ban nhân dân cấp xã ký, chuyển Trung tâm Phục vụ hành chính công trả kết quả cho người yêu cầu.",
+          "requirements": "Không có thông tin",
+          "submission_methods": [
+            "Trực tuyến",
+            "Dịch vụ bưu chính",
+            "Trực tiếp"
+          ],
+          "processing_time_values": [
+            "3 ngày",
+            "3 ngày",
+            "3 ngày"
+          ],
+          "document_groups": [
+            {
+              "group_name": "Giấy tờ phải nộp:",
+              "documents": [
+                {
+                  "Tên giấy tờ": "- Văn bản ủy quyền theo quy định của pháp luật trong trường hợp ủy quyền thực hiện việc đăng ký giám sát việc giám hộ. Trường hợp người được ủy quyền là ông, bà, cha, mẹ, con, vợ, chồng, anh, chị, em ruột của người ủy quyền thì văn bản ủy quyền không phải chứng thực.",
+                  "Bản chính": "1",
+                  "Bản sao": "0",
+                  "Tệp đính kèm": "Không có"
+                },
+                {
+                  "Tên giấy tờ": "- Văn bản là căn cứ chứng minh việc thoả thuận cử/chọn người giám sát giám hộ theo quy định của Bộ luật Dân sự.",
+                  "Bản chính": "1",
+                  "Bản sao": "0",
+                  "Tệp đính kèm": "Không có"
+                }
+              ]
+            },
+            {
+              "group_name": "Giấy tờ phải xuất trình:",
+              "documents": [
+                {
+                  "Tên giấy tờ": "Trường hợp các thông tin cá nhân trong các giấy tờ này đã có trong Cơ sở dữ liệu quốc gia về dân cư, Cơ sở dữ liệu hộ tịch điện tử, được hệ thống điền tự động thì không phải tải lên (theo hình thức trực tuyến)",
+                  "Bản chính": "0",
+                  "Bản sao": "0",
+                  "Tệp đính kèm": "Không có"
+                },
+                {
+                  "Tên giấy tờ": "- Giấy tờ có giá trị chứng minh thông tin về cư trú trong trường hợp cơ quan đăng ký hộ tịch không thể khai thác được thông tin về nơi cư trú của công dân theo các phương thức quy định tại khoản 2 Điều 14 Nghị định số 104/2022/NĐ-CP ngày 21/12/2022 của Chính phủ. Trường hợp các thông tin về giấy tờ chứng minh nơi cư trú đã được khai thác từ Cơ sở dữ liệu quốc gia về dân cư bằng các phương thức này thì người có yêu cầu không phải xuất trình (theo hình thức trực tiếp) hoặc tải lên (theo hình thức trực tuyến).",
+                  "Bản chính": "1",
+                  "Bản sao": "0",
+                  "Tệp đính kèm": "Không có"
+                },
+                {
+                  "Tên giấy tờ": "- Hộ chiếu/Thẻ căn cước công dân/Thẻ căn cước/Căn cước điện tử/Giấy chứng nhận căn cước hoặc các giấy tờ khác có dán ảnh và thông tin cá nhân do cơ quan có thẩm quyền cấp, còn giá trị sử dụng (sau đây gọi tắt là giấy tờ tùy thân) để chứng minh về nhân thân khi làm thủ tục trực tiếp tại cơ quan đăng ký hộ tịch.",
+                  "Bản chính": "1",
+                  "Bản sao": "0",
+                  "Tệp đính kèm": "Không có"
+                },
+                {
+                  "Tên giấy tờ": "Trường hợp giấy tờ tùy thân sử dụng là: Hộ chiếu, Thẻ căn cước, Căn cước công dân, Giấy chứng nhận căn cước thì người có yêu cầu đăng ký hộ tịch chỉ cần cung cấp thông tin số định danh cá nhân hoặc thông tin về giấy tờ (số, ngày/tháng/năm cấp), cơ quan đăng ký hộ tịch có trách nhiệm tra cứu thông tin thông qua kết nối với Cơ sở dữ liệu hộ tịch điện tử, Cơ sở dữ liệu quốc gia về dân cư hoặc cơ sở dữ liệu khác có liên quan để đối chiếu, khai thác dữ liệu.",
+                  "Bản chính": "0",
+                  "Bản sao": "0",
+                  "Tệp đính kèm": "Không có"
+                },
+                {
+                  "Tên giấy tờ": "- Trường hợp gửi hồ sơ qua hệ thống bưu chính thì phải gửi kèm theo bản sao có chứng thực các giấy tờ phải xuất trình nêu trên.",
+                  "Bản chính": "0",
+                  "Bản sao": "0",
+                  "Tệp đính kèm": "Không có"
+                },
+                {
+                  "Tên giấy tờ": "Trường hợp không khai thác được thông tin hoặc thông tin khai thác được không đầy đủ, không chính xác thì cơ quan đăng ký hộ tịch yêu cầu người đi đăng ký hộ tịch xuất trình bản chính giấy tờ để chứng minh, đồng thời đề nghị người đi đăng ký hộ tịch cập nhật, điều chỉnh thông tin trong các cơ sở dữ liệu theo quy định của pháp luật.",
+                  "Bản chính": "0",
+                  "Bản sao": "0",
+                  "Tệp đính kèm": "Không có"
+                }
+              ]
+            },
+            {
+              "group_name": "Lưu ý:",
+              "documents": [
+                {
+                  "Tên giấy tờ": "+ Người tiếp nhận hồ sơ thực hiện khai thác thông tin trong CSDLQGVDC theo quy định pháp luật nếu người yêu cầu đăng ký hộ tịch đã cung cấp họ, chữ đệm, tên; ngày, tháng, năm sinh; số định danh cá nhân/thẻ căn cước công dân/thẻ căn cước/căn cước điện tử. Trường hợp các thông tin cần khai thác không có trong CSDLQGVDC thì đề nghị người yêu cầu kê khai đầy đủ.",
+                  "Bản chính": "0",
+                  "Bản sao": "0",
+                  "Tệp đính kèm": "Không có"
+                },
+                {
+                  "Tên giấy tờ": "- Giấy tờ do cơ quan có thẩm quyền của nước ngoài cấp, công chứng hoặc xác nhận để sử dụng cho việc đăng ký hộ tịch tại Việt Nam phải được hợp pháp hóa lãnh sự theo quy định của pháp luật, trừ trường hợp được miễn theo điều ước quốc tế mà Việt Nam là thành viên.",
+                  "Bản chính": "0",
+                  "Bản sao": "0",
+                  "Tệp đính kèm": "Không có"
+                },
+                {
+                  "Tên giấy tờ": "- Trường hợp người yêu cầu đăng ký hộ tịch không cung cấp được giấy tờ theo quy định hoặc giấy tờ nộp, xuất trình bị tẩy xóa, sửa chữa, làm giả thì cơ quan đăng ký hộ tịch có thẩm quyền hủy bỏ kết quả đăng ký hộ tịch.",
+                  "Bản chính": "0",
+                  "Bản sao": "0",
+                  "Tệp đính kèm": "Không có"
+                },
+                {
+                  "Tên giấy tờ": "+ Đối với giấy tờ xuất trình khi đăng ký hộ tịch, người tiếp nhận có trách nhiệm kiểm tra, đối chiếu với thông tin trong tờ khai, chụp lại hoặc ghi lại thông tin để lưu trong hồ sơ và trả lại cho người xuất trình, không được yêu cầu nộp bản sao hoặc bản chụp giấy tờ đó.",
+                  "Bản chính": "0",
+                  "Bản sao": "0",
+                  "Tệp đính kèm": "Không có"
+                },
+                {
+                  "Tên giấy tờ": "+ Người tiếp nhận có trách nhiệm tiếp nhận đúng, đủ hồ sơ đăng ký hộ tịch theo quy định của pháp luật hộ tịch, không được yêu cầu người đăng ký hộ tịch nộp thêm giấy tờ mà pháp luật hộ tịch không quy định phải nộp .",
+                  "Bản chính": "0",
+                  "Bản sao": "0",
+                  "Tệp đính kèm": "Không có"
+                },
+                {
+                  "Tên giấy tờ": "Trường hợp người yêu cầu nộp bản chụp kèm theo bản chính giấy tờ thì người tiếp nhận có trách nhiệm kiểm tra, đối chiếu bản chụp với bản chính và ký xác nhận, không được yêu cầu nộp bản sao giấy tờ đó.",
+                  "Bản chính": "0",
+                  "Bản sao": "0",
+                  "Tệp đính kèm": "Không có"
+                },
+                {
+                  "Tên giấy tờ": "+ Bản chụp các giấy tờ gửi kèm theo hồ sơ đăng ký giám sát việc giám hộ trực tuyến phải bảo đảm rõ nét, đầy đủ, toàn vẹn về nội dung, là bản chụp bằng máy ảnh, điện thoại hoặc được chụp, được quét bằng thiết bị điện tử, từ giấy tờ được cấp hợp lệ, còn giá trị sử dụng.",
+                  "Bản chính": "0",
+                  "Bản sao": "0",
+                  "Tệp đính kèm": "Không có"
+                },
+                {
+                  "Tên giấy tờ": "- Đối với giấy tờ nộp, xuất trình nếu người yêu cầu nộp hồ sơ theo hình thức trực tiếp:",
+                  "Bản chính": "0",
+                  "Bản sao": "0",
+                  "Tệp đính kèm": "Không có"
+                },
+                {
+                  "Tên giấy tờ": "+ Người yêu cầu đăng ký hộ tịch có thể nộp bản sao được chứng thực từ bản chính hoặc bản sao được cấp từ sổ gốc (sau đây gọi là bản sao) hoặc bản chụp kèm theo bản chính, bản điện tử các giấy tờ này, bao gồm cả giấy tờ được tích hợp, hiển thị trên Ứng dụng định danh điện tử (VneID).",
+                  "Bản chính": "0",
+                  "Bản sao": "0",
+                  "Tệp đính kèm": "Không có"
+                },
+                {
+                  "Tên giấy tờ": "+ Trường hợp giấy tờ, tài liệu phải gửi kèm trong hồ sơ đăng ký giám sát việc giám hộ trực tuyến đã có bản sao điện tử hoặc đã có bản điện tử giấy tờ hộ tịch thì người yêu cầu được sử dụng bản điện tử này.",
+                  "Bản chính": "0",
+                  "Bản sao": "0",
+                  "Tệp đính kèm": "Không có"
+                },
+                {
+                  "Tên giấy tờ": "- Đối với giấy tờ gửi kèm theo nếu người yêu cầu nộp hồ sơ theo hình thức trực tuyến:",
+                  "Bản chính": "0",
+                  "Bản sao": "0",
+                  "Tệp đính kèm": "Không có"
+                },
+                {
+                  "Tên giấy tờ": "- Cá nhân có quyền lựa chọn thực hiện thủ tục hành chính về hộ tịch tại cơ quan đăng ký hộ tịch nơi cư trú; nơi cư trú của cá nhân được xác định theo quy định của pháp luật về cư trú. Trường hợp cá nhân lựa chọn thực hiện thủ tục hành chính về hộ tịch không phải tại Ủy ban nhân dân cấp xã nơi thường trú hoặc nơi tạm trú thì Ủy ban nhân dân cấp xã nơi tiếp nhận yêu cầu có trách nhiệm hỗ trợ người dân nộp hồ sơ đăng ký hộ tịch trực tuyến đến đúng cơ quan có thẩm quyền theo quy định.",
+                  "Bản chính": "0",
+                  "Bản sao": "0",
+                  "Tệp đính kèm": "Không có"
+                },
+                {
+                  "Tên giấy tờ": "- Trường hợp người yêu cầu đăng k‎ý hộ tịch lựa chọn nhận kết quả tại Trung tâm Phục vụ hành chính công thì người yêu cầu đăng ký hộ tịch phải xuất trình giấy tờ tuỳ thân, nộp các giấy tờ là thành phần hồ sơ theo quy định; Trường hợp người yêu cầu đăng ký hộ tịch không lựa chọn nhận kết quả tại Trung tâm Phục vụ hành chính công thì người yêu cầu đăng ký hộ tịch nộp các giấy tờ là thành phần hồ sơ theo quy định trước khi nhận kết quả.",
+                  "Bản chính": "0",
+                  "Bản sao": "0",
+                  "Tệp đính kèm": "Không có"
+                }
+              ]
+            },
+            {
+              "group_name": "Thành phần hồ sơ:",
+              "documents": [
+                {
+                  "Tên giấy tờ": "- Tờ khai đăng ký giám sát việc giám hộ theo mẫu (nếu người có yêu cầu lựa chọn nộp hồ sơ theo hình thức trực tiếp hoặc gửi hồ sơ qua hệ thống bưu chính);",
+                  "Bản chính": "1",
+                  "Bản sao": "0",
+                  "Tệp đính kèm": "Không có"
+                },
+                {
+                  "Tên giấy tờ": "- Mẫu hộ tịch điện tử tương tác đăng ký giám sát việc giám hộ (do người yêu cầu cung cấp thông tin theo hướng dẫn trên Cổng dịch vụ công, nếu người có yêu cầu lựa chọn nộp hồ sơ theo hình thức trực tuyến);",
+                  "Bản chính": "1",
+                  "Bản sao": "0",
+                  "Tệp đính kèm": "Không có"
+                },
+                {
+                  "Tên giấy tờ": "- Người có yêu cầu đăng ký giám sát việc giám hộ thực hiện việc nộp/xuất trình (theo hình thức trực tiếp) hoặc tải lên (theo hình thức trực tuyến) các giấy tờ sau:",
+                  "Bản chính": "0",
+                  "Bản sao": "0",
+                  "Tệp đính kèm": "Không có"
+                }
+              ]
+            }
+          ],
+          "result_items": [
+            "Trích lục đăng ký đăng ký giám sát việc giám hộ (Mã: `KQ.G15.000289`)"
+          ]
+        }
+      ]
+    }
+  ],
+  "subdomain_key": "giam_ho",
+  "subdomain_label": "Giám hộ"
+}

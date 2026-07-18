@@ -1,0 +1,269 @@
+{
+  "schema_version": "1.0",
+  "normalizer_version": "0.2.0",
+  "source": {
+    "procedure_code": "1.010103",
+    "title": "Thủ tục cấp hộ chiếu phổ thông theo thủ tục rút gọn tại Cơ quan đại diện Việt Nam ở nước ngoài",
+    "raw_structured_parser_version": "0.1.0",
+    "field": "Công tác lãnh sự"
+  },
+  "procedure": {
+    "level": "Cơ quan khác",
+    "procedure_type": "TTHC được luật giao quy định chi tiết",
+    "target_users": [
+      "Công dân Việt Nam"
+    ],
+    "authorities": [],
+    "receiving_places": []
+  },
+  "submission": {
+    "channels": [
+      "in_person"
+    ],
+    "methods": [
+      {
+        "method_id": "method_1",
+        "channel": "in_person",
+        "processing_time_text": "2 ngày làm việc",
+        "fee_text": null,
+        "description": "a. Trường hợp người ra nước ngoài có thời hạn bị mất hộ chiếu, có nguyện vọng về nước ngay:<br>- Trong thời hạn 02 ngày làm việc kể từ ngày nhận đầy đủ hồ sơ hợp lệ đối với trường hợp không phải xác minh và đủ điều kiện giải quyết;<br>- Trong thời hạn 01 ngày làm việc kể từ ngày nhận được văn bản thông báo của Cục QLXNC đối với trường hợp phải xác minh.<br>- Trong thời hạn 01 ngày làm việc kể từ ngày nhận được văn bản thông báo của Cục QLXNC xác nhận nhân thân của công dân Việt Nam ở nước ngoài bị mất hộ chiếu.",
+        "is_online": false,
+        "is_postal": false,
+        "is_in_person": true
+      },
+      {
+        "method_id": "method_2",
+        "channel": "in_person",
+        "processing_time_text": "2 ngày làm việc",
+        "fee_text": null,
+        "description": "b. Trường hợp có quyết định trục xuất bằng văn bản của cơ quan có thẩm quyền nước sở tại nhưng không có hộ chiếu: Trong thời hạn 02 ngày làm việc kể từ ngày nhận được văn bản thông báo của Cục QLXNC.",
+        "is_online": false,
+        "is_postal": false,
+        "is_in_person": true
+      },
+      {
+        "method_id": "method_3",
+        "channel": "in_person",
+        "processing_time_text": "1 ngày làm việc",
+        "fee_text": null,
+        "description": "c. Trường hợp được cấp HCPT vì lý do quốc phòng, an ninh: Sau khi nhận được văn bản thông báo của Cục QLXNC.",
+        "is_online": false,
+        "is_postal": false,
+        "is_in_person": true
+      }
+    ],
+    "timing_summary": {
+      "unique_processing_times": [
+        "2 ngày làm việc",
+        "1 ngày làm việc"
+      ],
+      "method_count": 3
+    }
+  },
+  "documents": {
+    "required": [
+      {
+        "document_id": "quy_t_nh_tr_c_xu_t_c_a_c_quan_c_th_m_quy_n_n_c_s_t_i",
+        "name": "Quyết định trục xuất của cơ quan có thẩm quyền nước sở tại;",
+        "group_name": "* Trường hợp có quyết định trục xuất bằng văn bản của cơ quan có thẩm quyền nước sở tại nhưng không có hộ chiếu:",
+        "group_type": "conditional",
+        "original_count": "1",
+        "copy_count": "1",
+        "conditions": [],
+        "attachment_label": null,
+        "attachment_path": null
+      },
+      {
+        "document_id": "02_nh_ch_n_dung_nh_m_i_ch_p_kh_ng_qu_06_th_ng_c_4cm_x_6cm_m_t_nh_n_th_ng_u_tr_n_r_m_t_r_hai_tai_kh_ng_eo_k_nh_trang_ph_c_l_ch_s_ph_ng_nh_n_n_tr_ng",
+        "name": "02 ảnh chân dung (ảnh mới chụp không quá 06 tháng, cỡ 4cm x 6cm, mặt nhìn thẳng, đầu để trần, rõ mặt, rõ hai tai, không đeo kính, trang phục lịch sự, phông ảnh nền trắng);",
+        "group_name": "* Trường hợp có quyết định trục xuất bằng văn bản của cơ quan có thẩm quyền nước sở tại nhưng không có hộ chiếu:",
+        "group_type": "conditional",
+        "original_count": "2",
+        "copy_count": "0",
+        "conditions": [],
+        "attachment_label": null,
+        "attachment_path": null
+      },
+      {
+        "document_id": "01_t_khai_ngh_c_p_hcpt_n_c_ngo_i_m_u_tk02",
+        "name": "01 Tờ khai đề nghị cấp HCPT ở nước ngoài (mẫu TK02);",
+        "group_name": "* Trường hợp người ra nước ngoài có thời hạn bị mất hộ chiếu, có nguyện vọng về nước ngay:",
+        "group_type": "conditional",
+        "original_count": "1",
+        "copy_count": "0",
+        "conditions": [],
+        "attachment_label": "Mẫu TK02.docx",
+        "attachment_path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/1_010103/Ma%CC%82%CC%83u%20TK02.docx"
+      },
+      {
+        "document_id": "02_nh_ch_n_dung_nh_m_i_ch_p_kh_ng_qu_06_th_ng_c_4cm_x_6cm_m_t_nh_n_th_ng_u_tr_n_r_m_t_r_hai_tai_kh_ng_eo_k_nh_trang_ph_c_l_ch_s_ph_ng_nh_n_n_tr_ng",
+        "name": "02 ảnh chân dung (ảnh mới chụp không quá 06 tháng, cỡ 4cm x 6cm, mặt nhìn thẳng, đầu để trần, rõ mặt, rõ hai tai, không đeo kính, trang phục lịch sự, phông ảnh nền trắng);",
+        "group_name": "* Trường hợp người ra nước ngoài có thời hạn bị mất hộ chiếu, có nguyện vọng về nước ngay:",
+        "group_type": "conditional",
+        "original_count": "2",
+        "copy_count": "0",
+        "conditions": [],
+        "attachment_label": null,
+        "attachment_path": null
+      },
+      {
+        "document_id": "n_tr_nh_b_o_m_t_hcpt_m_u_tk05",
+        "name": "Đơn trình báo mất HCPT (mẫu TK05);",
+        "group_name": "* Trường hợp người ra nước ngoài có thời hạn bị mất hộ chiếu, có nguyện vọng về nước ngay:",
+        "group_type": "conditional",
+        "original_count": "1",
+        "copy_count": "0",
+        "conditions": [],
+        "attachment_label": "Mẫu TK05.docx",
+        "attachment_path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/1_010103/Ma%CC%82%CC%83u%20TK05.docx"
+      },
+      {
+        "document_id": "v_n_b_n_th_ng_b_o_c_a_c_c_qlxnc_theo_quy_t_nh_c_a_b_tr_ng_b_c_ng_an",
+        "name": "Văn bản thông báo của Cục QLXNC (theo quyết định của Bộ trưởng Bộ Công an).",
+        "group_name": "* Trường hợp được cấp HCPT vì lý do quốc phòng, an ninh",
+        "group_type": "conditional",
+        "original_count": "1",
+        "copy_count": "1",
+        "conditions": [],
+        "attachment_label": null,
+        "attachment_path": null
+      }
+    ],
+    "conditional": [
+      {
+        "document_id": "xu_t_tr_nh_gi_y_t_t_y_th_n_do_c_quan_c_th_m_quy_n_c_a_vi_t_nam_c_p_n_u_c",
+        "name": "Xuất trình giấy tờ tùy thân do cơ quan có thẩm quyền của Việt Nam cấp (nếu có).",
+        "group_name": "* Trường hợp người ra nước ngoài có thời hạn bị mất hộ chiếu, có nguyện vọng về nước ngay:",
+        "group_type": "conditional",
+        "original_count": "1",
+        "copy_count": "1",
+        "conditions": [
+          "Xuất trình giấy tờ tùy thân do cơ quan có thẩm quyền của Việt Nam cấp (nếu có)."
+        ],
+        "attachment_label": null,
+        "attachment_path": null
+      }
+    ],
+    "presented": [],
+    "notes": [],
+    "forms": [
+      {
+        "name": "01 Tờ khai đề nghị cấp HCPT ở nước ngoài (mẫu TK02);",
+        "attachment_label": "Mẫu TK02.docx",
+        "attachment_path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/1_010103/Ma%CC%82%CC%83u%20TK02.docx"
+      },
+      {
+        "name": "Đơn trình báo mất HCPT (mẫu TK05);",
+        "attachment_label": "Mẫu TK05.docx",
+        "attachment_path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/1_010103/Ma%CC%82%CC%83u%20TK05.docx"
+      }
+    ],
+    "empty_groups": [],
+    "document_count": 7
+  },
+  "process": {
+    "steps": [
+      {
+        "step_id": "step_1",
+        "title": null,
+        "content": "1. **a. Trường hợp người ra nước ngoài có thời hạn bị mất hộ chiếu, có nguyện vọng về nước ngay:**",
+        "actor": "user",
+        "channel_hint": null,
+        "time_hint": null
+      },
+      {
+        "step_id": "step_2",
+        "title": "Bước 1:",
+        "content": "Bước 1: Người đề nghị cấp HCPT theo thủ tục rút rọn chuẩn bị hồ sơ theo quy định và nộp hồ sơ tại CQĐD.",
+        "actor": "user",
+        "channel_hint": null,
+        "time_hint": null
+      },
+      {
+        "step_id": "step_3",
+        "title": "Bước 2:",
+        "content": "Bước 2: Cán bộ tiếp nhận (tại CQĐD) kiểm tra tính hợp lệ, đầy đủ của hồ sơ. - Trường hợp hồ sơ chưa hợp lệ, chưa đầy đủ, cán bộ tiếp nhận trả lại hồ sơ và hướng dẫn cá nhân bổ sung, hoàn thiện hồ sơ theo quy định. - Trường hợp hồ sơ hợp lệ, đủ điều kiện giải quyết, cán bộ tiếp nhận,cấp Giấy hẹn trả kết quả và chuyển hồ sơ cho bộ phận xử lý hồ sơ để giải quyết theo thẩm quyền.",
+        "actor": "authority",
+        "channel_hint": null,
+        "time_hint": null
+      },
+      {
+        "step_id": "step_4",
+        "title": "Bước 3:",
+        "content": "Bước 3: CQĐD giải quyết và trả kết quả theo quy định: - Trong thời hạn 02 ngày làm việc kể từ ngày nhận đầy đủ hồ sơ hợp lệ, CQĐD cấp HCPT có thời hạn không quá 12 tháng, trả kết quả cho người đề nghị và thông báo bằng văn bản cho Cục QLXNC, Cục Lãnh sự Bộ Ngoại giao trong trường hợp chưa kết nối với Cơ sở dữ liệu quốc gia về xuất cảnh, nhập cảnh của công dân Việt Nam. - Trường hợp chưa đủ căn cứ để cấp hộ chiếu: + Trong thời hạn 02 ngày làm việc kể từ ngày nhận được đề nghị, CQĐD gửi văn bản theo mẫu về Cục QLXNC để xác minh, đồng thời thông báo bằng văn bản cho người đề nghị; + Trong thời hạn 01 ngày làm việc kể từ ngày nhận được trả lời, CQĐD cấp HCPT có thời hạn không quá 12 tháng và trả kết quả cho người đề nghị. Trường hợp chưa cấp thì trả lời bằng văn bản, nêu lý do; - Trường hợp CQĐD nhận được văn bản thông báo của Cục QLXNC xác nhận nhân thân của công dân Việt Nam ở nước ngoài bị mất hộ chiếu, trong thời hạn 01 ngày làm việc kể từ ngày nhận được thông báo, CQĐD thu nhận ảnh của người đề nghị, cấp HCPT có thời hạn không quá 12 tháng và trả kết quả. 2. **b. Trường hợp có quyết định trục xuất bằng văn bản của cơ quan có thẩm quyền nước sở tại nhưng không có hộ chiếu:** - CQĐD tiếp nhận quyết định trục xuất bằng văn bản của cơ quan có thẩm quyền nước sở tại kèm 02 ảnh chân dung của người bị trục xuất. - Trong thời hạn 02 ngày làm việc kể từ ngày nhận được quyết định trục xuất của nước sở tại, CQĐD gửi thông tin của người bị trục xuất theo mẫu về Cục QLXNC; - CQĐD cấp HCPT có thời hạn theo thông báo của Cục QLXNC. 3. **c. Trường hợp vì lý do quốc phòng, an ninh** CQĐD cấp HCPT theo văn bản thông báo của Cục QLXNC.",
+        "actor": "authority",
+        "channel_hint": null,
+        "time_hint": "02 ngày làm việc"
+      }
+    ],
+    "step_count": 4,
+    "notes": []
+  },
+  "eligibility": {
+    "conditions": [
+      "Công dân Việt Nam ở nước ngoài thuộc đối tượng quy định tại khoản 1, 2 và 4, Điều 17 Luật Xuất cảnh, nhập của công dân Việt Nam."
+    ],
+    "has_conditions": true
+  },
+  "results": {
+    "items": [
+      {
+        "name": "Hộ chiếu phổ thông",
+        "result_code": "000.00.00.G01-KQ0106",
+        "raw_text": "Hộ chiếu phổ thông"
+      }
+    ],
+    "primary_result": {
+      "name": "Hộ chiếu phổ thông",
+      "result_code": "000.00.00.G01-KQ0106",
+      "raw_text": "Hộ chiếu phổ thông"
+    }
+  },
+  "legal_basis": {
+    "items": [
+      {
+        "title": "Luật 33/2009/QH12",
+        "code": "33/2009/QH12"
+      },
+      {
+        "title": "Thông tư 02/2020/TT-BNG",
+        "code": "02/2020/TT-BNG"
+      },
+      {
+        "title": "Luật sửa đổi, bổ sung một số điều của Luật Cơ quan đại diện nước Cộng hòa xã hội chủ nghĩa Việt Nam ở nước ngoài.",
+        "code": "19/2017/QH14"
+      },
+      {
+        "title": "Quy định mức thu, chế độ thu, nộp, quản lý và sử dụng phí, lệ phí trong lĩnh vực ngoại giao áp dụng tại các Cơ quan đại diện Việt Nam ở nước ngoài",
+        "code": "264/2016/TT-BTC"
+      },
+      {
+        "title": "Luật 49/2019/QH14",
+        "code": "49/2019/QH14"
+      }
+    ],
+    "count": 5
+  },
+  "attachments": [
+    {
+      "label": "Mẫu TK02.docx",
+      "path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/1_010103/Ma%CC%82%CC%83u%20TK02.docx",
+      "source_section": "Thành phần hồ sơ",
+      "document_name": "01 Tờ khai đề nghị cấp HCPT ở nước ngoài (mẫu TK02);"
+    },
+    {
+      "label": "Mẫu TK05.docx",
+      "path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/1_010103/Ma%CC%82%CC%83u%20TK05.docx",
+      "source_section": "Thành phần hồ sơ",
+      "document_name": "Đơn trình báo mất HCPT (mẫu TK05);"
+    }
+  ],
+  "signals": {
+    "raw_parse_warnings": [],
+    "missing_documents": false,
+    "documents_section_present": true,
+    "documents_declared_empty": false,
+    "documents_only_in_notes": false,
+    "missing_results": false
+  }
+}

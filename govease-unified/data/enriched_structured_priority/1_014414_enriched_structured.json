@@ -1,0 +1,96 @@
+{
+  "schema_version": "1.0",
+  "enricher_version": "0.2.0",
+  "source": {
+    "procedure_code": "1.014414",
+    "title": "Công nhận kết quả thăm dò  khoáng sản thuộc thẩm quyền của UBND tỉnh Hà Tĩnh",
+    "group_key": "suc_khoe_y_te",
+    "workflow_family": null,
+    "subflow": null
+  },
+  "experience": {
+    "entry_label": "Hỗ trợ y tế và bảo hiểm",
+    "overview_summary": "Thủ tục này thuộc nhóm y tế, thường cần đối chiếu thông tin người bệnh, đơn vị tiếp nhận hoặc quyền lợi chuyên ngành. Kết quả thường nhận được là Quyết định công nhận kết quả thăm dò khoáng sản. Thời gian xử lý tham khảo: 42 ngày.",
+    "next_step_summary": "Nên xác định rõ đối tượng tham gia, quyền lợi hoặc nhu cầu điều chỉnh hồ sơ y tế trước khi nộp. Có thể chọn kênh nộp phù hợp: Trực tiếp, Trực tuyến, Dịch vụ bưu chính. Hiện có khoảng 4 mục giấy tờ cần theo dõi trong checklist.",
+    "tone": "supportive_public_service"
+  },
+  "guidance": {
+    "highlight_documents": [
+      {
+        "bucket": "required",
+        "name": "Văn bản đề nghị công nhận kết quả thăm dò khoáng sản, thăm dò bổ sung (Ban hành kèm theo Thông tư số 37/2025/TT-BNNMT ngày 02/7/2025)",
+        "conditions": [],
+        "attachment_path": null
+      },
+      {
+        "bucket": "required",
+        "name": "Báo cáo kết quả thăm dò khoáng sản hoặc báo cáo kết quả thăm dò bổ sung công trình nâng cấp trữ lượng khoáng sản; các phụ lục, bản vẽ và tài liệu nguyên thủy có liên quan; tài liệu luận giải chỉ tiêu tính trữ lượng còn phải được gửi bản số được lưu trữ trên thiết bị lưu trữ (USB)",
+        "conditions": [],
+        "attachment_path": null
+      },
+      {
+        "bucket": "required",
+        "name": "biên bản nghiệm thu khối lượng, chất lượng công trình thăm dò khoáng sản đã thi công của tổ chức, cá nhân;",
+        "conditions": [],
+        "attachment_path": null
+      },
+      {
+        "bucket": "conditional",
+        "name": "Trường hợp tổ chức, cá nhân nộp hồ sơ bằng bản giấy, các tài liệu gồm: Báo cáo kết quả thăm dò khoáng sản hoặc báo cáo kết quả thăm dò bổ sung công trình nâng cấp trữ lượng khoáng sản; Các phụ lục, bản vẽ và tài liệu nguyên thủy có liên quan; tài liệu luận giải chỉ tiêu tính trữ lượng còn phải được gửi bản số được lưu trữ trên thiết bị lưu trữ (USB)",
+        "conditions": [
+          "Trường hợp tổ chức, cá nhân nộp hồ sơ bằng bản giấy, các tài liệu gồm: Báo cáo kết quả thăm dò khoáng sản hoặc báo cáo kết quả thăm dò bổ sung công trình nâng cấp trữ lượng khoáng sản; Các phụ lục, bản vẽ và tài liệu nguyên thủy có liên quan; tài liệu luận giải chỉ tiêu tính trữ lượng còn phải được gửi bản số được lưu trữ trên thiết bị lưu trữ (USB)"
+        ],
+        "attachment_path": null
+      }
+    ],
+    "special_cases": [],
+    "common_errors": [],
+    "validation_hints": [
+      "Nên xác định trước kênh nộp hồ sơ để biết có cần bản giấy, bản điện tử hay xuất trình trực tiếp.",
+      "Nên xác định đúng nhóm đối tượng, mã số bảo hiểm và quyền lợi áp dụng trước khi nộp."
+    ]
+  },
+  "intake": {
+    "candidate_input_fields": [
+      {
+        "field_id": "request_subject",
+        "label": "Đối tượng làm thủ tục",
+        "field_type": "text",
+        "required": true
+      },
+      {
+        "field_id": "insurance_or_medical_need",
+        "label": "Nhu cầu bảo hiểm hoặc y tế",
+        "field_type": "text",
+        "required": true
+      },
+      {
+        "field_id": "submission_channel_preference",
+        "label": "Kênh nộp dự kiến",
+        "field_type": "enum",
+        "required": false
+      },
+      {
+        "field_id": "has_insurance_number",
+        "label": "Đã có mã BHXH/BHYT",
+        "field_type": "boolean",
+        "required": false
+      }
+    ],
+    "suggested_clarifying_questions": [
+      "Bạn đang muốn đăng ký, điều chỉnh hay xác nhận quyền lợi y tế hoặc bảo hiểm nào?",
+      "Bạn đã có mã BHXH/BHYT hoặc thông tin đơn vị tiếp nhận liên quan chưa?"
+    ]
+  },
+  "ui_hints": {
+    "primary_channel": "in_person",
+    "result_label": "Quyết định công nhận kết quả thăm dò khoáng sản",
+    "time_badge": "42 ngày",
+    "document_count_badge": 4
+  },
+  "provenance": {
+    "generator": "workflow_domain_enricher",
+    "derivation_mode": "rule_based_semantic_enrichment",
+    "supported_group": true
+  }
+}

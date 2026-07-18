@@ -1,0 +1,113 @@
+{
+  "schema_version": "1.0",
+  "enricher_version": "0.2.0",
+  "source": {
+    "procedure_code": "3.000251",
+    "title": "Thủ tục xác định xe thuộc trường hợp không chịu phí được trả lại hoặc bù trừ phí đã nộp",
+    "group_key": "suc_khoe_y_te",
+    "workflow_family": null,
+    "subflow": null
+  },
+  "experience": {
+    "entry_label": "Hỗ trợ y tế và bảo hiểm",
+    "overview_summary": "Thủ tục này thuộc nhóm y tế, thường cần đối chiếu thông tin người bệnh, đơn vị tiếp nhận hoặc quyền lợi chuyên ngành. Kết quả thường nhận được là Quyết định về việc trả lại hoặc bù trừ phí sử dụng đường bộ. Thời gian xử lý tham khảo: 3 ngày làm việc.",
+    "next_step_summary": "Nên xác định rõ đối tượng tham gia, quyền lợi hoặc nhu cầu điều chỉnh hồ sơ y tế trước khi nộp. Có thể chọn kênh nộp phù hợp: Trực tiếp, Trực tuyến, Dịch vụ bưu chính. Hiện có khoảng 14 mục giấy tờ cần theo dõi trong checklist.",
+    "tone": "supportive_public_service"
+  },
+  "guidance": {
+    "highlight_documents": [
+      {
+        "bucket": "required",
+        "name": "Bản sao Quyết định hoặc Chứng nhận thu hồi chứng nhận đăng ký xe, biển số xe.",
+        "conditions": [],
+        "attachment_path": null
+      },
+      {
+        "bucket": "required",
+        "name": "Giấy đề nghị trả lại hoặc bù trừ phí sử dụng đường bộ theo Mẫu số 01 tại Phụ lục II ban hành kèm theo Nghị định số 364/2025/NĐ-CP.",
+        "conditions": [],
+        "attachment_path": null
+      },
+      {
+        "bucket": "required",
+        "name": "Giấy đề nghị trả lại hoặc bù trừ phí sử dụng đường bộ theo Mẫu số 01 tại Phụ lục II ban hành kèm theo Nghị định số 364/2025/NĐ-CP.",
+        "conditions": [],
+        "attachment_path": null
+      },
+      {
+        "bucket": "required",
+        "name": "Đơn trình báo về việc mất tài sản có xác nhận của cơ quan công an và Biên bản bàn giao tài sản do cơ quan công an thu hồi giao cho chủ xe.",
+        "conditions": [],
+        "attachment_path": null
+      },
+      {
+        "bucket": "required",
+        "name": "Giấy đề nghị trả lại hoặc bù trừ phí sử dụng đường bộ theo Mẫu số 01 tại Phụ lục II ban hành kèm theo Nghị định số 364/2025/NĐ-CP.",
+        "conditions": [],
+        "attachment_path": null
+      },
+      {
+        "bucket": "required",
+        "name": "Biên bản thu Tem kiểm định và Giấy chứng nhận kiểm định theo Mẫu số 02 tại Phụ lục II ban hành kèm theo Nghị định số 364/2025/NĐ-CP",
+        "conditions": [],
+        "attachment_path": null
+      }
+    ],
+    "special_cases": [
+      "Có trường hợp hồ sơ điện tử thay thế bản giấy",
+      "Có thể cần đối chiếu thông tin thửa đất hoặc giấy chứng nhận",
+      "Có thể cần hồ sơ kỹ thuật phương tiện hoặc giấy phép lái xe"
+    ],
+    "common_errors": [
+      "Điền sai mẫu tờ khai hoặc chọn sai biểu mẫu đi kèm.",
+      "Thông tin thửa đất, tài sản hoặc giấy chứng nhận chưa khớp với hồ sơ hiện có."
+    ],
+    "validation_hints": [
+      "Nên xác định trước kênh nộp hồ sơ để biết có cần bản giấy, bản điện tử hay xuất trình trực tiếp.",
+      "Nên xác định đúng nhóm đối tượng, mã số bảo hiểm và quyền lợi áp dụng trước khi nộp."
+    ]
+  },
+  "intake": {
+    "candidate_input_fields": [
+      {
+        "field_id": "request_subject",
+        "label": "Đối tượng làm thủ tục",
+        "field_type": "text",
+        "required": true
+      },
+      {
+        "field_id": "insurance_or_medical_need",
+        "label": "Nhu cầu bảo hiểm hoặc y tế",
+        "field_type": "text",
+        "required": true
+      },
+      {
+        "field_id": "submission_channel_preference",
+        "label": "Kênh nộp dự kiến",
+        "field_type": "enum",
+        "required": false
+      },
+      {
+        "field_id": "has_insurance_number",
+        "label": "Đã có mã BHXH/BHYT",
+        "field_type": "boolean",
+        "required": false
+      }
+    ],
+    "suggested_clarifying_questions": [
+      "Bạn đang muốn đăng ký, điều chỉnh hay xác nhận quyền lợi y tế hoặc bảo hiểm nào?",
+      "Bạn đã có mã BHXH/BHYT hoặc thông tin đơn vị tiếp nhận liên quan chưa?"
+    ]
+  },
+  "ui_hints": {
+    "primary_channel": "online",
+    "result_label": "Quyết định về việc trả lại hoặc bù trừ phí sử dụng đường bộ",
+    "time_badge": "3 ngày làm việc",
+    "document_count_badge": 14
+  },
+  "provenance": {
+    "generator": "workflow_domain_enricher",
+    "derivation_mode": "rule_based_semantic_enrichment",
+    "supported_group": true
+  }
+}

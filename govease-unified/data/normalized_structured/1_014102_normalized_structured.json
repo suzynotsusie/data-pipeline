@@ -1,0 +1,193 @@
+{
+  "schema_version": "1.0",
+  "normalizer_version": "0.2.0",
+  "source": {
+    "procedure_code": "1.014102",
+    "title": "Thông báo hoạt động bán lẻ thuốc lưu động",
+    "raw_structured_parser_version": "0.1.0",
+    "field": "Dược phẩm"
+  },
+  "procedure": {
+    "level": "Cấp tỉnh",
+    "procedure_type": "TTHC được luật giao quy định chi tiết",
+    "target_users": [
+      "Doanh nghiệp Việt Nam",
+      "Doanh nghiệp có vốn đầu tư nước ngoài",
+      "Tổ chức (không bao gồm doanh nghiệp",
+      "HTX)",
+      "Doanh nghiệp",
+      "Tổ chức nước ngoài",
+      "Hợp tác xã"
+    ],
+    "authorities": [],
+    "receiving_places": []
+  },
+  "submission": {
+    "channels": [
+      "in_person",
+      "online",
+      "postal"
+    ],
+    "methods": [
+      {
+        "method_id": "method_1",
+        "channel": "online",
+        "processing_time_text": "3 ngày làm việc",
+        "fee_text": null,
+        "description": null,
+        "is_online": true,
+        "is_postal": false,
+        "is_in_person": false
+      },
+      {
+        "method_id": "method_2",
+        "channel": "postal",
+        "processing_time_text": "3 ngày làm việc",
+        "fee_text": null,
+        "description": null,
+        "is_online": false,
+        "is_postal": true,
+        "is_in_person": false
+      },
+      {
+        "method_id": "method_3",
+        "channel": "in_person",
+        "processing_time_text": "3 ngày làm việc",
+        "fee_text": null,
+        "description": null,
+        "is_online": false,
+        "is_postal": false,
+        "is_in_person": true
+      }
+    ],
+    "timing_summary": {
+      "unique_processing_times": [
+        "3 ngày làm việc"
+      ],
+      "method_count": 3
+    }
+  },
+  "documents": {
+    "required": [
+      {
+        "document_id": "v_n_b_n_th_ng_b_o",
+        "name": "Văn bản thông báo",
+        "group_name": "default",
+        "group_type": "unknown",
+        "original_count": "1",
+        "copy_count": "0",
+        "conditions": [],
+        "attachment_label": "Mus14.docx",
+        "attachment_path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/1_014102/Mus14.docx"
+      }
+    ],
+    "conditional": [],
+    "presented": [],
+    "notes": [],
+    "forms": [
+      {
+        "name": "Văn bản thông báo",
+        "attachment_label": "Mus14.docx",
+        "attachment_path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/1_014102/Mus14.docx"
+      }
+    ],
+    "empty_groups": [],
+    "document_count": 1
+  },
+  "process": {
+    "steps": [
+      {
+        "step_id": "step_1",
+        "title": null,
+        "content": "1.",
+        "actor": "user",
+        "channel_hint": null,
+        "time_hint": null
+      },
+      {
+        "step_id": "step_2",
+        "title": "Bước 1:",
+        "content": "Bước 1: Cơ sở tổ chức bán lẻ thuốc lưu động có trách nhiệm thông báo bằng văn bản theo Mẫu số 14 tại Phụ lục I ban hành kèm theo Nghị định số 163/2025/NĐ-CP đến Sở Y tế tại địa phương nơi dự kiến có hoạt động bán lẻ thuốc lưu động.",
+        "actor": "user",
+        "channel_hint": null,
+        "time_hint": null
+      },
+      {
+        "step_id": "step_3",
+        "title": "Bước 2:",
+        "content": "Bước 2: Trong thời hạn 03 ngày làm việc kể từ ngày nhận được thông báo của cơ sở tổ chức bán lẻ thuốc lưu động; Sở Y tế có trách nhiệm công bố thông tin cơ sở tổ chức bán lẻ thuốc lưu động trên Trang thông tin điện tử của Sở Y tế và chịu trách nhiệm tổ chức giám sát, kiểm tra.",
+        "actor": "user",
+        "channel_hint": null,
+        "time_hint": "03 ngày làm việc"
+      }
+    ],
+    "step_count": 3,
+    "notes": []
+  },
+  "eligibility": {
+    "conditions": [
+      "Yêu cầu, Điều kiện thực hiện thủ tục hành chính (nếu có):",
+      "1. Cơ sở tổ chức bán lẻ thuốc lưu động bao gồm:",
+      "a) Cơ sở sản xuất thuốc;",
+      "b) Cơ sở bán buôn thuốc;",
+      "c) Cơ sở bán lẻ thuốc;",
+      "d) Cơ sở y tế thuộc lực lượng vũ trang nhân dân, cơ sở khám bệnh, chữa bệnh quân dân y có hoạt động cung ứng thuốc tại vùng đồng bào dân tộc thiểu số, miền núi, hải đảo, vùng có điều kiện kinh tế - xã hội khó khăn, vùng có điều kiện kinh tế - xã hội đặc biệt khó khăn;",
+      "đ) Cơ sở tổ chức chuỗi nhà thuốc.",
+      "2. Người bán lẻ thuốc lưu động phải là nhân viên của cơ sở quy định tại khoản 1 Điều 26 của Nghị định số 163/2025/NĐ-CP và có một trong các văn bằng chuyên môn quy định tại các điểm a, b, c, e, g, h, i và k khoản 1 Điều 13 của Luật Dược.",
+      "3. Thuốc bán lẻ lưu động phải được bảo quản bằng các phương tiện, thiết bị bảo đảm vệ sinh, tránh tiếp xúc với mưa, nắng",
+      "4. Tại nơi bán lẻ thuốc lưu động phải có biển hiệu ghi rõ tên, địa chỉ của cơ sở tổ chức bán lẻ thuốc lưu động, họ tên người bán, địa bàn hoạt động."
+    ],
+    "has_conditions": true
+  },
+  "results": {
+    "items": [
+      {
+        "name": "Công bố thông tin cơ sở tổ chức bán lẻ thuốc lưu động trên Trang thông tin điện tử của Sở Y tế",
+        "result_code": "KQ.G18.000279",
+        "raw_text": "Công bố thông tin cơ sở tổ chức bán lẻ thuốc lưu động trên Trang thông tin điện tử của Sở Y tế"
+      }
+    ],
+    "primary_result": {
+      "name": "Công bố thông tin cơ sở tổ chức bán lẻ thuốc lưu động trên Trang thông tin điện tử của Sở Y tế",
+      "result_code": "KQ.G18.000279",
+      "raw_text": "Công bố thông tin cơ sở tổ chức bán lẻ thuốc lưu động trên Trang thông tin điện tử của Sở Y tế"
+    }
+  },
+  "legal_basis": {
+    "items": [
+      {
+        "title": "Nghị định của Chính phủ quy định chi tiết một số điều và biện pháp thi hành Luật dược",
+        "code": "163/2025/NĐ-CP"
+      },
+      {
+        "title": "Luật số 44/2024/QH15",
+        "code": "44/2024/QH15"
+      },
+      {
+        "title": "105/2016/QH13 Dược",
+        "code": "Luật 105/2016/QH13"
+      },
+      {
+        "title": "Nghị quyết số 66.16/2026/NQ-CP của Chính phủ ngày 07/04/2026 về việc Cắt giảm, đơn giản hóa thủ tục hành chính,quy định liên quan đến hoạt động sản xuất, kinh doanh",
+        "code": "66.16/2026/NQ-CP"
+      }
+    ],
+    "count": 4
+  },
+  "attachments": [
+    {
+      "label": "Mus14.docx",
+      "path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/1_014102/Mus14.docx",
+      "source_section": "Thành phần hồ sơ",
+      "document_name": "Văn bản thông báo"
+    }
+  ],
+  "signals": {
+    "raw_parse_warnings": [],
+    "missing_documents": false,
+    "documents_section_present": true,
+    "documents_declared_empty": false,
+    "documents_only_in_notes": false,
+    "missing_results": false
+  }
+}

@@ -1,0 +1,81 @@
+{
+  "schema_version": "1.0",
+  "enricher_version": "0.2.0",
+  "source": {
+    "procedure_code": "1.014046",
+    "title": "Gia hạn giấy đăng ký lưu hành vị thuốc cổ truyền, dược liệu",
+    "group_key": "suc_khoe_y_te",
+    "workflow_family": null,
+    "subflow": null
+  },
+  "experience": {
+    "entry_label": "Hỗ trợ y tế và bảo hiểm",
+    "overview_summary": "Thủ tục này thuộc nhóm y tế, thường cần đối chiếu thông tin người bệnh, đơn vị tiếp nhận hoặc quyền lợi chuyên ngành. Kết quả thường nhận được là Văn bản thông báo cho cơ sở đăng ký vị thuốc cổ truyền, dược liệu đối với hồ sơ chưa đạt, không đạt và nêu rõ lý do. Thời gian xử lý tham khảo: 3 ngày.",
+    "next_step_summary": "Nên xác định rõ đối tượng tham gia, quyền lợi hoặc nhu cầu điều chỉnh hồ sơ y tế trước khi nộp. Có thể chọn kênh nộp phù hợp: Trực tiếp, Trực tuyến, Dịch vụ bưu chính. Hiện có 1 mục giấy tờ cần theo dõi trong checklist.",
+    "tone": "supportive_public_service"
+  },
+  "guidance": {
+    "highlight_documents": [
+      {
+        "bucket": "conditional",
+        "name": "Đơn đề nghị gia hạn giấy đăng ký lưu hành vị thuốc cổ truyền, dược liệu theo Mẫu số 03B tại Phụ lục I ban hành kèm theo Thông tư số 29/2025/TT-BYT. Trường hợp có thay đổi các thông tin hành chính của vị thuốc cổ truyền, dược liệu đề nghị gia hạn giấy đăng ký lưu hành bao gồm tên, địa chỉ, cơ sở đăng ký; tên, địa chỉ cơ sở sản xuất thì cơ sở đăng ký nộp hồ sơ đề nghị thay đổi, bổ sung theo quy định tại Điều 29 của Thông tư số 29/2025/TT-BYT. Trường hợp thay đổi tên vị thuốc cổ truyền, dược liệu cơ sở được thực hiện trong hồ sơ đề nghị gia hạn và ghi rõ trong Đơn đề nghị gia hạn giấy đăng ký lưu hành vị thuốc cổ truyền, dược liệu.",
+        "conditions": [
+          "Đơn đề nghị gia hạn giấy đăng ký lưu hành vị thuốc cổ truyền, dược liệu theo Mẫu số 03B tại Phụ lục I ban hành kèm theo Thông tư số 29/2025/TT-BYT. Trường hợp có thay đổi các thông tin hành chính của vị thuốc cổ truyền, dược liệu đề nghị gia hạn giấy đăng ký lưu hành bao gồm tên, địa chỉ, cơ sở đăng ký; tên, địa chỉ cơ sở sản xuất thì cơ sở đăng ký nộp hồ sơ đề nghị thay đổi, bổ sung theo quy định tại Điều 29 của Thông tư số 29/2025/TT-BYT. Trường hợp thay đổi tên vị thuốc cổ truyền, dược liệu cơ sở được thực hiện trong hồ sơ đề nghị gia hạn và ghi rõ trong Đơn đề nghị gia hạn giấy đăng ký lưu hành vị thuốc cổ truyền, dược liệu."
+        ],
+        "attachment_path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/1_014046/Mu.docx"
+      }
+    ],
+    "special_cases": [],
+    "common_errors": [
+      "Điền sai mẫu tờ khai hoặc chọn sai biểu mẫu đi kèm."
+    ],
+    "validation_hints": [
+      "Nên xác định trước kênh nộp hồ sơ để biết có cần bản giấy, bản điện tử hay xuất trình trực tiếp.",
+      "Có mẫu biểu đính kèm, nên kiểm tra đúng biểu mẫu trước khi nộp.",
+      "Nên xác định đúng nhóm đối tượng, mã số bảo hiểm và quyền lợi áp dụng trước khi nộp."
+    ]
+  },
+  "intake": {
+    "candidate_input_fields": [
+      {
+        "field_id": "request_subject",
+        "label": "Đối tượng làm thủ tục",
+        "field_type": "text",
+        "required": true
+      },
+      {
+        "field_id": "insurance_or_medical_need",
+        "label": "Nhu cầu bảo hiểm hoặc y tế",
+        "field_type": "text",
+        "required": true
+      },
+      {
+        "field_id": "submission_channel_preference",
+        "label": "Kênh nộp dự kiến",
+        "field_type": "enum",
+        "required": false
+      },
+      {
+        "field_id": "has_insurance_number",
+        "label": "Đã có mã BHXH/BHYT",
+        "field_type": "boolean",
+        "required": false
+      }
+    ],
+    "suggested_clarifying_questions": [
+      "Bạn đang muốn đăng ký, điều chỉnh hay xác nhận quyền lợi y tế hoặc bảo hiểm nào?",
+      "Bạn đã có mã BHXH/BHYT hoặc thông tin đơn vị tiếp nhận liên quan chưa?"
+    ]
+  },
+  "ui_hints": {
+    "primary_channel": "online",
+    "result_label": "Văn bản thông báo cho cơ sở đăng ký vị thuốc cổ truyền, dược liệu đối với hồ sơ chưa đạt, không đạt và nêu rõ lý do",
+    "time_badge": "3 ngày",
+    "document_count_badge": 1
+  },
+  "provenance": {
+    "generator": "workflow_domain_enricher",
+    "derivation_mode": "rule_based_semantic_enrichment",
+    "supported_group": true
+  }
+}

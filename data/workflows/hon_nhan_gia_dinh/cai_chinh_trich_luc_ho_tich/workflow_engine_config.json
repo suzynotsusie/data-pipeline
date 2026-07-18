@@ -1,0 +1,190 @@
+{
+  "schema_version": "1.0",
+  "domain": "hon_nhan_gia_dinh",
+  "updated_at": "2026-07-18",
+  "source_files": [
+    "C:\\Users\\ku060\\Downloads\\VAIC source\\data-pipeline\\main\\full-data.csv",
+    "C:\\Users\\ku060\\Downloads\\VAIC source\\data-pipeline\\data\\workflows\\hon_nhan_gia_dinh\\summary.csv",
+    "C:\\Users\\ku060\\Downloads\\VAIC source\\data-pipeline\\data\\workflows\\hon_nhan_gia_dinh\\normalized.json",
+    "C:\\Users\\ku060\\Downloads\\VAIC source\\data-pipeline\\raw_data"
+  ],
+  "coverage": {
+    "expected_codes": [
+      "1.004859",
+      "2.000547",
+      "2.000702",
+      "2.000748"
+    ],
+    "covered_codes": [
+      "1.004859",
+      "2.000547",
+      "2.000702",
+      "2.000748"
+    ],
+    "missing_codes": []
+  },
+  "llm_contract": {
+    "role": "parse_user_answer_and_rephrase_question_only",
+    "required_output_schema": {
+      "intent": "hon_nhan_gia_dinh",
+      "current_node": "string",
+      "slot_updates": {
+        "subdomain_key": "ket_hon | giam_ho | nhan_cha_me_con | nhan_con_nuoi | cai_chinh_trich_luc_ho_tich | unknown",
+        "operation_key": "string",
+        "operation_group": "string"
+      },
+      "confidence": "0_to_1",
+      "needs_human_review": "boolean"
+    }
+  },
+  "entry_prompts": [
+    "Bạn đang cần làm việc về kết hôn, giám hộ, nhận cha mẹ con, nhận con nuôi hay cải chính hộ tịch?",
+    "Bạn muốn đăng ký mới, đăng ký lại, ghi chú, chấm dứt hay điều chỉnh thông tin hộ tịch?"
+  ],
+  "slots": [
+    {
+      "name": "subdomain_key",
+      "required": true,
+      "description": "Nhánh chính của nhóm Hôn nhân và gia đình."
+    },
+    {
+      "name": "operation_key",
+      "required": true,
+      "description": "Thao tác cụ thể ánh xạ trực tiếp tới thủ tục cuối cùng."
+    },
+    {
+      "name": "operation_group",
+      "required": false,
+      "description": "Nhóm thao tác để gom các thủ tục gần nhau cho UI và parser."
+    }
+  ],
+  "subdomain_catalog": [
+    {
+      "subdomain_key": "cai_chinh_trich_luc_ho_tich",
+      "subdomain_label": "Cải chính, trích lục hộ tịch",
+      "event_id": 286,
+      "summary": "Nhóm thủ tục thay đổi, cải chính, bổ sung thông tin hộ tịch và ghi chú các việc hộ tịch đã giải quyết ở nước ngoài."
+    }
+  ],
+  "decision_tree": {
+    "start_node": "family_subdomain",
+    "nodes": [
+      {
+        "id": "family_subdomain",
+        "type": "question",
+        "slot": "subdomain_key",
+        "question": "Bạn đang hỏi về kết hôn, giám hộ, nhận cha mẹ con, nhận con nuôi hay cải chính hộ tịch?",
+        "options": [
+          "cai_chinh_trich_luc_ho_tich"
+        ],
+        "prefilled_value": "cai_chinh_trich_luc_ho_tich"
+      },
+      {
+        "id": "family_operation",
+        "type": "question",
+        "slot": "operation_key",
+        "question": "Bạn cần làm thao tác nào cụ thể trong nhánh đã chọn?",
+        "options_by_subdomain": {
+          "cai_chinh_trich_luc_ho_tich": [
+            {
+              "operation_key": "thu_tuc_thay_doi_cai_chinh_bo_sung_thong_tin_ho_tich_xac_dinh_lai_dan_toc",
+              "operation_group": "cai_chinh_bo_sung_ho_tich",
+              "procedure_code": "1.004859",
+              "procedure_title": "Thủ tục thay đổi, cải chính, bổ sung thông tin hộ tịch, xác định lại dân tộc"
+            },
+            {
+              "operation_key": "thu_tuc_ghi_vao_so_ho_tich_viec_ho_tich_khac_cua_cong_dan_viet_nam_da_duoc_giai_quyet_tai_co_quan_co_tham_quyen_cua_nuoc_ngoai_khai_sinh_giam_ho_nhan_cha_me_con_xac_dinh_cha_me_con_nuoi_con_nuoi_khai_tu_thay_doi_ho_tich",
+              "operation_group": "ghi_chu_ho_tich_khac",
+              "procedure_code": "2.000547",
+              "procedure_title": "Thủ tục ghi vào Sổ hộ tịch việc hộ tịch khác của công dân Việt Nam đã được giải quyết tại cơ quan có thẩm quyền của nước ngoài (khai sinh; giám hộ; nhận cha, mẹ, con; xác định cha, mẹ, con; nuôi con nuôi; khai tử; thay đổi hộ tịch)"
+            },
+            {
+              "operation_key": "thu_tuc_ghi_vao_so_ho_tich_cac_viec_ho_tich_da_dang_ky_tai_co_quan_co_tham_quyen_cua_nuoc_ngoai_giam_ho_nhan_cha_me_con_xac_dinh_cha_me_con_nuoi_con_nuoi_khai_tu_va_nhung_thay_doi_khac",
+              "operation_group": "ghi_chu_ho_tich_khac",
+              "procedure_code": "2.000702",
+              "procedure_title": "Thủ tục ghi vào sổ hộ tịch các việc hộ tịch đã đăng ký tại cơ quan có thẩm quyền của nước ngoài (giám hộ; nhận cha, mẹ, con; xác định cha, mẹ con; nuôi con nuôi; khai tử; và những thay đổi khác)"
+            },
+            {
+              "operation_key": "thu_tuc_thay_doi_cai_chinh_bo_sung_thong_tin_ho_tich_xac_dinh_lai_dan_toc_co_yeu_to_nuoc_ngoai",
+              "operation_group": "cai_chinh_ho_tich_co_yeu_to_nuoc_ngoai",
+              "procedure_code": "2.000748",
+              "procedure_title": "Thủ tục thay đổi, cải chính, bổ sung thông tin hộ tịch, xác định lại dân tộc có yếu tố nước ngoài"
+            }
+          ]
+        },
+        "options": [
+          "thu_tuc_thay_doi_cai_chinh_bo_sung_thong_tin_ho_tich_xac_dinh_lai_dan_toc",
+          "thu_tuc_ghi_vao_so_ho_tich_viec_ho_tich_khac_cua_cong_dan_viet_nam_da_duoc_giai_quyet_tai_co_quan_co_tham_quyen_cua_nuoc_ngoai_khai_sinh_giam_ho_nhan_cha_me_con_xac_dinh_cha_me_con_nuoi_con_nuoi_khai_tu_thay_doi_ho_tich",
+          "thu_tuc_ghi_vao_so_ho_tich_cac_viec_ho_tich_da_dang_ky_tai_co_quan_co_tham_quyen_cua_nuoc_ngoai_giam_ho_nhan_cha_me_con_xac_dinh_cha_me_con_nuoi_con_nuoi_khai_tu_va_nhung_thay_doi_khac",
+          "thu_tuc_thay_doi_cai_chinh_bo_sung_thong_tin_ho_tich_xac_dinh_lai_dan_toc_co_yeu_to_nuoc_ngoai"
+        ]
+      }
+    ],
+    "routes": [
+      {
+        "route_id": "cai_chinh_trich_luc_ho_tich-1_004859",
+        "conditions": {
+          "subdomain_key": "cai_chinh_trich_luc_ho_tich",
+          "operation_key": "thu_tuc_thay_doi_cai_chinh_bo_sung_thong_tin_ho_tich_xac_dinh_lai_dan_toc"
+        },
+        "procedure_code": "1.004859",
+        "procedure_name": "Thủ tục thay đổi, cải chính, bổ sung thông tin hộ tịch, xác định lại dân tộc",
+        "why_this_route": "Route trực tiếp cho nhu cầu 'Thủ tục thay đổi, cải chính, bổ sung thông tin hộ tịch, xác định lại dân tộc' trong nhánh 'Cải chính, trích lục hộ tịch'."
+      },
+      {
+        "route_id": "cai_chinh_trich_luc_ho_tich-2_000547",
+        "conditions": {
+          "subdomain_key": "cai_chinh_trich_luc_ho_tich",
+          "operation_key": "thu_tuc_ghi_vao_so_ho_tich_viec_ho_tich_khac_cua_cong_dan_viet_nam_da_duoc_giai_quyet_tai_co_quan_co_tham_quyen_cua_nuoc_ngoai_khai_sinh_giam_ho_nhan_cha_me_con_xac_dinh_cha_me_con_nuoi_con_nuoi_khai_tu_thay_doi_ho_tich"
+        },
+        "procedure_code": "2.000547",
+        "procedure_name": "Thủ tục ghi vào Sổ hộ tịch việc hộ tịch khác của công dân Việt Nam đã được giải quyết tại cơ quan có thẩm quyền của nước ngoài (khai sinh; giám hộ; nhận cha, mẹ, con; xác định cha, mẹ, con; nuôi con nuôi; khai tử; thay đổi hộ tịch)",
+        "why_this_route": "Route trực tiếp cho nhu cầu 'Thủ tục ghi vào Sổ hộ tịch việc hộ tịch khác của công dân Việt Nam đã được giải quyết tại cơ quan có thẩm quyền của nước ngoài (khai sinh; giám hộ; nhận cha, mẹ, con; xác định cha, mẹ, con; nuôi con nuôi; khai tử; thay đổi hộ tịch)' trong nhánh 'Cải chính, trích lục hộ tịch'."
+      },
+      {
+        "route_id": "cai_chinh_trich_luc_ho_tich-2_000702",
+        "conditions": {
+          "subdomain_key": "cai_chinh_trich_luc_ho_tich",
+          "operation_key": "thu_tuc_ghi_vao_so_ho_tich_cac_viec_ho_tich_da_dang_ky_tai_co_quan_co_tham_quyen_cua_nuoc_ngoai_giam_ho_nhan_cha_me_con_xac_dinh_cha_me_con_nuoi_con_nuoi_khai_tu_va_nhung_thay_doi_khac"
+        },
+        "procedure_code": "2.000702",
+        "procedure_name": "Thủ tục ghi vào sổ hộ tịch các việc hộ tịch đã đăng ký tại cơ quan có thẩm quyền của nước ngoài (giám hộ; nhận cha, mẹ, con; xác định cha, mẹ con; nuôi con nuôi; khai tử; và những thay đổi khác)",
+        "why_this_route": "Route trực tiếp cho nhu cầu 'Thủ tục ghi vào sổ hộ tịch các việc hộ tịch đã đăng ký tại cơ quan có thẩm quyền của nước ngoài (giám hộ; nhận cha, mẹ, con; xác định cha, mẹ con; nuôi con nuôi; khai tử; và những thay đổi khác)' trong nhánh 'Cải chính, trích lục hộ tịch'."
+      },
+      {
+        "route_id": "cai_chinh_trich_luc_ho_tich-2_000748",
+        "conditions": {
+          "subdomain_key": "cai_chinh_trich_luc_ho_tich",
+          "operation_key": "thu_tuc_thay_doi_cai_chinh_bo_sung_thong_tin_ho_tich_xac_dinh_lai_dan_toc_co_yeu_to_nuoc_ngoai"
+        },
+        "procedure_code": "2.000748",
+        "procedure_name": "Thủ tục thay đổi, cải chính, bổ sung thông tin hộ tịch, xác định lại dân tộc có yếu tố nước ngoài",
+        "why_this_route": "Route trực tiếp cho nhu cầu 'Thủ tục thay đổi, cải chính, bổ sung thông tin hộ tịch, xác định lại dân tộc có yếu tố nước ngoài' trong nhánh 'Cải chính, trích lục hộ tịch'."
+      }
+    ]
+  },
+  "pre_submission_checks": [
+    {
+      "field_group": "marital_status",
+      "checks": [
+        "Thông tin nhân thân của các bên phải thống nhất giữa giấy tờ tùy thân, giấy xác nhận tình trạng hôn nhân và biểu mẫu nộp.",
+        "Các thủ tục có yếu tố nước ngoài phải làm rõ giấy tờ nước ngoài đã được hợp pháp hóa hoặc dịch chứng thực hay chưa."
+      ]
+    },
+    {
+      "field_group": "family_relationship",
+      "checks": [
+        "Nhóm nhận cha mẹ con phải có căn cứ chứng minh quan hệ và xác định rõ trường hợp kết hợp khai sinh hay không.",
+        "Nhóm giám hộ phải làm rõ căn cứ phát sinh, chấm dứt hoặc thay đổi giám hộ trước khi chọn thủ tục."
+      ]
+    },
+    {
+      "field_group": "adoption_civil_status",
+      "checks": [
+        "Nhóm nhận con nuôi phải xác định là trong nước, có yếu tố nước ngoài, đăng ký lại hay ghi chú kết quả từ nước ngoài.",
+        "Nhóm cải chính hộ tịch phải nêu rõ nội dung cần sửa đổi và hồ sơ gốc liên quan đến việc đăng ký hộ tịch ban đầu."
+      ]
+    }
+  ],
+  "subdomain_key": "cai_chinh_trich_luc_ho_tich"
+}

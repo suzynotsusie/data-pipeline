@@ -1,0 +1,473 @@
+{
+  "schema_version": "3.0",
+  "record_type": "public_service_procedure_payload",
+  "id": "procedure-1.001643",
+  "procedure_code": "1.001643",
+  "code": "1.001643",
+  "title": "Giải quyết hưởng chế độ TNLĐ, BNN đối với trường hợp đã bị TNLĐ, BNN nay tiếp tục bị TNLĐ hoặc BNN",
+  "language": "vi",
+  "status": "generated_from_pipeline",
+  "field": "Thực hiện chính sách BHXH",
+  "group_key": "phuong_tien_nguoi_lai",
+  "workflow_family": null,
+  "subflow": null,
+  "source": {
+    "source_url": "file:///C:/Users/ku060/Downloads/VAIC%20source/data-pipeline/raw_data/1_001643/1_001643_procedure_detail.md",
+    "source_markdown_path": "C:\\Users\\ku060\\Downloads\\VAIC source\\data-pipeline\\raw_data\\1_001643\\1_001643_procedure_detail.md",
+    "normalized_payload_path": "C:\\Users\\ku060\\Downloads\\VAIC source\\data-pipeline\\govease-unified\\data\\normalized_structured\\1_001643_normalized_structured.json",
+    "enriched_payload_path": "C:\\Users\\ku060\\Downloads\\VAIC source\\data-pipeline\\govease-unified\\data\\enriched_structured_priority\\1_001643_enriched_structured.json"
+  },
+  "scope": {
+    "included": "Thủ tục này thuộc nhóm phương tiện và đăng kiểm, thường cần đối chiếu hồ sơ kỹ thuật, đăng ký hoặc chứng nhận an toàn của phương tiện. Kết quả thường nhận được là Thẻ BHYT đối với trường hợp nghỉ việc hưởng trợ cấp TNLĐ, BNN hàng tháng. Thời gian xử lý tham khảo: 6 ngày làm việc.",
+    "not_included": []
+  },
+  "agency": {
+    "executing_agency": "Bảo hiểm xã hội cấp Tỉnh, Bảo hiểm xã hội cấp huyện",
+    "submission_place": null,
+    "receiving_places": []
+  },
+  "target_users": [
+    "Doanh nghiệp có vốn đầu tư nước ngoài",
+    "Công dân Việt Nam",
+    "Doanh nghiệp",
+    "Người nước ngoài",
+    "Tổ chức nước ngoài",
+    "Hợp tác xã",
+    "Cán bộ",
+    "công chức",
+    "viên chức",
+    "Tổ chức (không bao gồm doanh nghiệp",
+    "HTX)"
+  ],
+  "submission_methods": [
+    {
+      "code": "ONLINE",
+      "label": "Trực tuyến",
+      "processing_time": "6 ngày làm việc",
+      "fee": null,
+      "description": null
+    },
+    {
+      "code": "POSTAL",
+      "label": "Dịch vụ bưu chính",
+      "processing_time": "6 ngày làm việc",
+      "fee": null,
+      "description": null
+    },
+    {
+      "code": "IN_PERSON",
+      "label": "Trực tiếp",
+      "processing_time": "6 ngày làm việc",
+      "fee": null,
+      "description": null
+    }
+  ],
+  "processing_note": "Thời gian xử lý tham chiếu: 6 ngày làm việc. Nên kiểm tra trước loại phương tiện hoặc loại giấy phép cần xử lý, cùng hồ sơ kỹ thuật hoặc nhân thân liên quan. Có thể chọn kênh nộp phù hợp: Trực tiếp, Trực tuyến, Dịch vụ bưu chính. Hiện có khoảng 7 mục giấy tờ cần theo dõi trong checklist.",
+  "documents": {
+    "normally_required": [
+      {
+        "name": "2. Bản sao Giấy ra viện hoặc trích sao hồ sơ bệnh án sau khi đã điều trị TNLĐ, BNN của lần điều trị nội trú sau cùng.",
+        "quantity": "0 bản chính, 1 bản sao",
+        "notes": [],
+        "group": "Trường hợp không quy định là bản chính thì có thể nộp bản chính hoặc bản sao hợp lệ",
+        "attachment_path": null
+      }
+    ],
+    "conditional": [
+      {
+        "condition": "4. Trường hợp đang hưởng trợ cấp TNLĐ, BNN trước ngày 1/1/2007 đã được trang cấp PTTGSH nay đề nghị trang cấp tiếp: Hóa đơn, chứng từ mua các phương tiện được trang cấp; vé tàu xe đi lại để làm hoặc nhận phương tiện trang cấp (nếu có).",
+        "document": "4. Trường hợp đang hưởng trợ cấp TNLĐ, BNN trước ngày 1/1/2007 đã được trang cấp PTTGSH nay đề nghị trang cấp tiếp: Hóa đơn, chứng từ mua các phương tiện được trang cấp; vé tàu xe đi lại để làm hoặc nhận phương tiện trang cấp (nếu có).",
+        "quantity": "1 bản chính, 0 bản sao",
+        "notes": [],
+        "attachment_path": null
+      },
+      {
+        "condition": "7. Hóa đơn, chứng từ thu phí giám định kèm theo bảng kê các nội dung giám định của cơ sở thực hiện GĐYK (Trường hợp thanh toán phí GĐYK).",
+        "document": "7. Hóa đơn, chứng từ thu phí giám định kèm theo bảng kê các nội dung giám định của cơ sở thực hiện GĐYK (Trường hợp thanh toán phí GĐYK).",
+        "quantity": "1 bản chính, 0 bản sao",
+        "notes": [],
+        "attachment_path": null
+      },
+      {
+        "condition": "3. Trường hợp bị TNLĐ, BNN điều trị xong, ra viện trước ngày 01 tháng 7 năm 2016 mà chưa được giám định mức suy giảm KNLĐ: - Đối với TNLĐ: Biên bản điều tra TNLĐ; nếu bị TNGT được xác định là TNLĐ thì có thêm một trong các giấy tờ sau: Bản sao Biên bản khám nghiệm hiện trường, sơ đồ hiện trường vụ TNGT hoặc bản sao biên bản TNGT của cơ quan công an hoặc cơ quan điều tra hình sự quân đội. - Đối với BNN: Kết quả đo đạc, quan trắc môi trường lao động.",
+        "document": "3. Trường hợp bị TNLĐ, BNN điều trị xong, ra viện trước ngày 01 tháng 7 năm 2016 mà chưa được giám định mức suy giảm KNLĐ: - Đối với TNLĐ: Biên bản điều tra TNLĐ; nếu bị TNGT được xác định là TNLĐ thì có thêm một trong các giấy tờ sau: Bản sao Biên bản khám nghiệm hiện trường, sơ đồ hiện trường vụ TNGT hoặc bản sao biên bản TNGT của cơ quan công an hoặc cơ quan điều tra hình sự quân đội. - Đối với BNN: Kết quả đo đạc, quan trắc môi trường lao động.",
+        "quantity": "1 bản chính, 1 bản sao",
+        "notes": [],
+        "attachment_path": null
+      },
+      {
+        "condition": "1. Bản chính Văn bản đề nghị giải quyết chế độ TNLĐ, BNN (mẫu số 05A-HSB) đối với lần bị TNLĐ, BNN sau cùng; trường hợp lần bị TNLĐ, BNN trước đó tại đơn vị SDLĐ khác nhưng chưa được giải quyết chế độ thì có thêm bản chính văn bản đề nghị giải quyết của đơn vị SDLĐ nơi xảy ra TNLĐ, BNN (mẫu số 05A-HSB).",
+        "document": "1. Bản chính Văn bản đề nghị giải quyết chế độ TNLĐ, BNN (mẫu số 05A-HSB) đối với lần bị TNLĐ, BNN sau cùng; trường hợp lần bị TNLĐ, BNN trước đó tại đơn vị SDLĐ khác nhưng chưa được giải quyết chế độ thì có thêm bản chính văn bản đề nghị giải quyết của đơn vị SDLĐ nơi xảy ra TNLĐ, BNN (mẫu số 05A-HSB).",
+        "quantity": "1 bản chính, 0 bản sao",
+        "notes": [],
+        "attachment_path": null
+      },
+      {
+        "condition": "6. Chỉ định của cơ sở KCB, cơ sở chỉnh hình, phục hồi chức năng theo quy định về việc trang cấp PTTGSH (nếu có).",
+        "document": "6. Chỉ định của cơ sở KCB, cơ sở chỉnh hình, phục hồi chức năng theo quy định về việc trang cấp PTTGSH (nếu có).",
+        "quantity": "1 bản chính, 0 bản sao",
+        "notes": [],
+        "attachment_path": null
+      },
+      {
+        "condition": "5. Biên bản giám định tổng hợp mức suy giảm KNLĐ của Hội đồng GĐYK; trường hợp lần bị TNLĐ, BNN trước đã được giám định mức suy giảm KNLĐ nhưng không đủ điều kiện hưởng trợ cấp thì có thêm Biên bản giám định mức suy giảm KNLĐ của lần giám định đó.",
+        "document": "5. Biên bản giám định tổng hợp mức suy giảm KNLĐ của Hội đồng GĐYK; trường hợp lần bị TNLĐ, BNN trước đã được giám định mức suy giảm KNLĐ nhưng không đủ điều kiện hưởng trợ cấp thì có thêm Biên bản giám định mức suy giảm KNLĐ của lần giám định đó.",
+        "quantity": "1 bản chính, 0 bản sao",
+        "notes": [],
+        "attachment_path": null
+      }
+    ],
+    "forms": [],
+    "presented": [],
+    "notes": [],
+    "summary": [
+      {
+        "group": "Trường hợp không quy định là bản chính thì có thể nộp bản chính hoặc bản sao hợp lệ",
+        "name": "2. Bản sao Giấy ra viện hoặc trích sao hồ sơ bệnh án sau khi đã điều trị TNLĐ, BNN của lần điều trị nội trú sau cùng.",
+        "quantity": "0 bản chính, 1 bản sao",
+        "notes": [],
+        "attachment_path": null
+      },
+      {
+        "group": null,
+        "name": null,
+        "quantity": "1 bản chính, 0 bản sao",
+        "notes": [],
+        "attachment_path": null
+      },
+      {
+        "group": null,
+        "name": null,
+        "quantity": "1 bản chính, 0 bản sao",
+        "notes": [],
+        "attachment_path": null
+      },
+      {
+        "group": null,
+        "name": null,
+        "quantity": "1 bản chính, 1 bản sao",
+        "notes": [],
+        "attachment_path": null
+      },
+      {
+        "group": null,
+        "name": null,
+        "quantity": "1 bản chính, 0 bản sao",
+        "notes": [],
+        "attachment_path": null
+      },
+      {
+        "group": null,
+        "name": null,
+        "quantity": "1 bản chính, 0 bản sao",
+        "notes": [],
+        "attachment_path": null
+      },
+      {
+        "group": null,
+        "name": null,
+        "quantity": "1 bản chính, 0 bản sao",
+        "notes": [],
+        "attachment_path": null
+      }
+    ]
+  },
+  "steps": [
+    {
+      "order": 1,
+      "title": "Bước 1",
+      "description": "1. **Bước 1. Lập, nộp hồ sơ**",
+      "example": null
+    },
+    {
+      "order": 2,
+      "title": "Bước 2",
+      "description": "1. NLĐ lập hồ sơ theo quy định tại mục 6.3 (Thành phần hồ sơ); nộp hồ sơ cho đơn vị SDLĐ.",
+      "example": null
+    },
+    {
+      "order": 3,
+      "title": "Bước 3",
+      "description": "2. Đơn vị SDLĐ tiếp nhận hồ sơ từ NLĐ, lập Văn bản đề nghị giải quyết chế độ TNLĐ hoặc BNN (mẫu số 05A-HSB) và hoàn thiện hồ sơ theo quy định; nộp hồ sơ cho cơ quan BHXH nơi đơn vị SDLĐ đóng BHXH trong thời hạn 30 ngày kể từ ngày nhận đủ hồ sơ từ NLĐ.",
+      "example": "30 ngày"
+    },
+    {
+      "order": 4,
+      "title": "Bước 4",
+      "description": "2. **Bước 2.**",
+      "example": null
+    },
+    {
+      "order": 5,
+      "title": "Bước 5",
+      "description": "Cơ quan BHXH tiếp nhận hồ sơ và giải quyết theo quy định",
+      "example": null
+    },
+    {
+      "order": 6,
+      "title": "Bước 6",
+      "description": "3. **Bước 3. Nhận kết quả giải quyết**",
+      "example": null
+    },
+    {
+      "order": 7,
+      "title": "Bước 7",
+      "description": "1. NLĐ: Nhận tiền trợ cấp",
+      "example": null
+    },
+    {
+      "order": 8,
+      "title": "Bước 8",
+      "description": "2. Đơn vị SDLĐ: Nhận Quyết định về việc hưởng trợ cấp TNLĐ, BNN hàng tháng hoặc một lần do giám định tổng hợp mức suy giảm khả năng lao động và Quyết định cấp tiền mua PTTGSH (nếu có); Bản quá trình đóng BHXH; Thẻ BHYT đối với trường hợp nghỉ việc hưởng trợ cấp TNLĐ, BNN hàng tháng; Thông báo về việc chi trả lương hưu, trợ cấp BHXH đối với trường hợp di chuyển hưởng chế độ BHXH tại huyện/tỉnh khác để trả cho NLĐ.",
+      "example": null
+    }
+  ],
+  "input_fields": [
+    {
+      "field": "vehicle_or_license_need",
+      "label": "Nhu cầu về phương tiện hoặc giấy phép",
+      "type": "string",
+      "required": true
+    },
+    {
+      "field": "vehicle_or_person_identifier",
+      "label": "Thông tin phương tiện hoặc người lái",
+      "type": "string",
+      "required": true
+    },
+    {
+      "field": "submission_channel_preference",
+      "label": "Kênh nộp dự kiến",
+      "type": "enum",
+      "required": false,
+      "options": [
+        "Trực tiếp",
+        "Trực tuyến",
+        "Dịch vụ bưu chính"
+      ]
+    },
+    {
+      "field": "has_technical_or_identity_documents",
+      "label": "Đã có hồ sơ kỹ thuật hoặc giấy tờ nhân thân",
+      "type": "boolean",
+      "required": false
+    }
+  ],
+  "validation_rules": [
+    {
+      "id": "required-1",
+      "severity": "error",
+      "field": "vehicle_or_license_need",
+      "rule": "Trường bắt buộc phải có dữ liệu hợp lệ trước khi nộp.",
+      "message": "Thiếu trường bắt buộc: Nhu cầu về phương tiện hoặc giấy phép."
+    },
+    {
+      "id": "required-2",
+      "severity": "error",
+      "field": "vehicle_or_person_identifier",
+      "rule": "Trường bắt buộc phải có dữ liệu hợp lệ trước khi nộp.",
+      "message": "Thiếu trường bắt buộc: Thông tin phương tiện hoặc người lái."
+    },
+    {
+      "id": "hint-1",
+      "severity": "warning",
+      "field": "general",
+      "rule": "Nên xác định trước kênh nộp hồ sơ để biết có cần bản giấy, bản điện tử hay xuất trình trực tiếp.",
+      "message": "Nên xác định trước kênh nộp hồ sơ để biết có cần bản giấy, bản điện tử hay xuất trình trực tiếp."
+    },
+    {
+      "id": "hint-2",
+      "severity": "warning",
+      "field": "general",
+      "rule": "Nên đối chiếu trước thông tin phương tiện, hồ sơ kỹ thuật hoặc giấy phép lái xe liên quan.",
+      "message": "Nên đối chiếu trước thông tin phương tiện, hồ sơ kỹ thuật hoặc giấy phép lái xe liên quan."
+    }
+  ],
+  "common_errors": [
+    {
+      "field": "general",
+      "issue": "Điền sai mẫu tờ khai hoặc chọn sai biểu mẫu đi kèm.",
+      "fix": "Nên xác định trước kênh nộp hồ sơ để biết có cần bản giấy, bản điện tử hay xuất trình trực tiếp."
+    },
+    {
+      "field": "general",
+      "issue": "Thiếu hồ sơ về vị trí việc làm, đơn vị sử dụng lao động hoặc điều kiện làm việc áp dụng.",
+      "fix": "Nên xác định trước kênh nộp hồ sơ để biết có cần bản giấy, bản điện tử hay xuất trình trực tiếp."
+    }
+  ],
+  "clarifying_questions": [
+    {
+      "id": "clarify_1",
+      "question": "Bạn đang xử lý hồ sơ cho phương tiện hay cho giấy phép lái xe?",
+      "purpose": "workflow_intake"
+    },
+    {
+      "id": "clarify_2",
+      "question": "Bạn đã có thông tin nhận diện phương tiện hoặc giấy tờ của người lái chưa?",
+      "purpose": "workflow_intake"
+    }
+  ],
+  "legal_basis": [
+    {
+      "title": "Thông tư 15/2016/TT-BYT",
+      "code": "15/2016/TT-BYT"
+    },
+    {
+      "title": "Thông tư 56/2017/TT-BYT",
+      "code": "56/2017/TT-BYT"
+    },
+    {
+      "title": "Nghị định 143/2018/NĐ-CP",
+      "code": "143/2018/NĐ-CP"
+    },
+    {
+      "title": "Nghị định 58/2020/NĐ-CP",
+      "code": "58/2020/NĐ-CP"
+    },
+    {
+      "title": "Nghị định số 88/2020/NĐ-CP ngày 28/7/2020 của Chính phủ quy định chi tiết một số điều của Luật An toàn, vệ sinh lao động về bảo hiểm tai nạn lao động, bệnh nghề nghiệp bắt buộc",
+      "code": "88/2020/NĐ-CP"
+    },
+    {
+      "title": "Nghị định 166/2016/NĐ-CP-Quy định về giao dịch điện tử trong lĩnh vực bảo hiểm xã hội, bảo hiểm y tế và bảo hiểm thất nghiệp",
+      "code": "166/2016/NĐ-CP"
+    },
+    {
+      "title": "LUẬT Bảo hiểm xã hội",
+      "code": "58/2014/QH13"
+    },
+    {
+      "title": "Luật 84/2015/QH13",
+      "code": "84/2015/QH13"
+    }
+  ],
+  "legal_bases": [
+    {
+      "title": "Thông tư 15/2016/TT-BYT",
+      "code": "15/2016/TT-BYT"
+    },
+    {
+      "title": "Thông tư 56/2017/TT-BYT",
+      "code": "56/2017/TT-BYT"
+    },
+    {
+      "title": "Nghị định 143/2018/NĐ-CP",
+      "code": "143/2018/NĐ-CP"
+    },
+    {
+      "title": "Nghị định 58/2020/NĐ-CP",
+      "code": "58/2020/NĐ-CP"
+    },
+    {
+      "title": "Nghị định số 88/2020/NĐ-CP ngày 28/7/2020 của Chính phủ quy định chi tiết một số điều của Luật An toàn, vệ sinh lao động về bảo hiểm tai nạn lao động, bệnh nghề nghiệp bắt buộc",
+      "code": "88/2020/NĐ-CP"
+    },
+    {
+      "title": "Nghị định 166/2016/NĐ-CP-Quy định về giao dịch điện tử trong lĩnh vực bảo hiểm xã hội, bảo hiểm y tế và bảo hiểm thất nghiệp",
+      "code": "166/2016/NĐ-CP"
+    },
+    {
+      "title": "LUẬT Bảo hiểm xã hội",
+      "code": "58/2014/QH13"
+    },
+    {
+      "title": "Luật 84/2015/QH13",
+      "code": "84/2015/QH13"
+    }
+  ],
+  "faq": [
+    {
+      "question": "Có thể nộp qua kênh nào?",
+      "answer": "Các kênh hiện có: Trực tiếp, Trực tuyến, Dịch vụ bưu chính."
+    },
+    {
+      "question": "Thời gian xử lý tham chiếu là bao lâu?",
+      "answer": "Thời gian xử lý tham chiếu hiện có là 6 ngày làm việc."
+    },
+    {
+      "question": "Kết quả chính của thủ tục là gì?",
+      "answer": "Kết quả chính được trích xuất là Thẻ BHYT đối với trường hợp nghỉ việc hưởng trợ cấp TNLĐ, BNN hàng tháng."
+    }
+  ],
+  "guidance": {
+    "highlight_documents": [
+      {
+        "bucket": "required",
+        "name": "2. Bản sao Giấy ra viện hoặc trích sao hồ sơ bệnh án sau khi đã điều trị TNLĐ, BNN của lần điều trị nội trú sau cùng.",
+        "conditions": [],
+        "attachment_path": null
+      },
+      {
+        "bucket": "conditional",
+        "name": "4. Trường hợp đang hưởng trợ cấp TNLĐ, BNN trước ngày 1/1/2007 đã được trang cấp PTTGSH nay đề nghị trang cấp tiếp: Hóa đơn, chứng từ mua các phương tiện được trang cấp; vé tàu xe đi lại để làm hoặc nhận phương tiện trang cấp (nếu có).",
+        "conditions": [
+          "4. Trường hợp đang hưởng trợ cấp TNLĐ, BNN trước ngày 1/1/2007 đã được trang cấp PTTGSH nay đề nghị trang cấp tiếp: Hóa đơn, chứng từ mua các phương tiện được trang cấp; vé tàu xe đi lại để làm hoặc nhận phương tiện trang cấp (nếu có)."
+        ],
+        "attachment_path": null
+      },
+      {
+        "bucket": "conditional",
+        "name": "7. Hóa đơn, chứng từ thu phí giám định kèm theo bảng kê các nội dung giám định của cơ sở thực hiện GĐYK (Trường hợp thanh toán phí GĐYK).",
+        "conditions": [
+          "7. Hóa đơn, chứng từ thu phí giám định kèm theo bảng kê các nội dung giám định của cơ sở thực hiện GĐYK (Trường hợp thanh toán phí GĐYK)."
+        ],
+        "attachment_path": null
+      },
+      {
+        "bucket": "conditional",
+        "name": "3. Trường hợp bị TNLĐ, BNN điều trị xong, ra viện trước ngày 01 tháng 7 năm 2016 mà chưa được giám định mức suy giảm KNLĐ: - Đối với TNLĐ: Biên bản điều tra TNLĐ; nếu bị TNGT được xác định là TNLĐ thì có thêm một trong các giấy tờ sau: Bản sao Biên bản khám nghiệm hiện trường, sơ đồ hiện trường vụ TNGT hoặc bản sao biên bản TNGT của cơ quan công an hoặc cơ quan điều tra hình sự quân đội. - Đối với BNN: Kết quả đo đạc, quan trắc môi trường lao động.",
+        "conditions": [
+          "3. Trường hợp bị TNLĐ, BNN điều trị xong, ra viện trước ngày 01 tháng 7 năm 2016 mà chưa được giám định mức suy giảm KNLĐ: - Đối với TNLĐ: Biên bản điều tra TNLĐ; nếu bị TNGT được xác định là TNLĐ thì có thêm một trong các giấy tờ sau: Bản sao Biên bản khám nghiệm hiện trường, sơ đồ hiện trường vụ TNGT hoặc bản sao biên bản TNGT của cơ quan công an hoặc cơ quan điều tra hình sự quân đội. - Đối với BNN: Kết quả đo đạc, quan trắc môi trường lao động."
+        ],
+        "attachment_path": null
+      },
+      {
+        "bucket": "conditional",
+        "name": "1. Bản chính Văn bản đề nghị giải quyết chế độ TNLĐ, BNN (mẫu số 05A-HSB) đối với lần bị TNLĐ, BNN sau cùng; trường hợp lần bị TNLĐ, BNN trước đó tại đơn vị SDLĐ khác nhưng chưa được giải quyết chế độ thì có thêm bản chính văn bản đề nghị giải quyết của đơn vị SDLĐ nơi xảy ra TNLĐ, BNN (mẫu số 05A-HSB).",
+        "conditions": [
+          "1. Bản chính Văn bản đề nghị giải quyết chế độ TNLĐ, BNN (mẫu số 05A-HSB) đối với lần bị TNLĐ, BNN sau cùng; trường hợp lần bị TNLĐ, BNN trước đó tại đơn vị SDLĐ khác nhưng chưa được giải quyết chế độ thì có thêm bản chính văn bản đề nghị giải quyết của đơn vị SDLĐ nơi xảy ra TNLĐ, BNN (mẫu số 05A-HSB)."
+        ],
+        "attachment_path": null
+      },
+      {
+        "bucket": "conditional",
+        "name": "6. Chỉ định của cơ sở KCB, cơ sở chỉnh hình, phục hồi chức năng theo quy định về việc trang cấp PTTGSH (nếu có).",
+        "conditions": [
+          "6. Chỉ định của cơ sở KCB, cơ sở chỉnh hình, phục hồi chức năng theo quy định về việc trang cấp PTTGSH (nếu có)."
+        ],
+        "attachment_path": null
+      }
+    ],
+    "special_cases": [
+      "Có thể cần hồ sơ kỹ thuật phương tiện hoặc giấy phép lái xe",
+      "Có thể cần xác minh quan hệ lao động hoặc giấy phép làm việc"
+    ],
+    "common_errors": [
+      "Điền sai mẫu tờ khai hoặc chọn sai biểu mẫu đi kèm.",
+      "Thiếu hồ sơ về vị trí việc làm, đơn vị sử dụng lao động hoặc điều kiện làm việc áp dụng."
+    ],
+    "validation_hints": [
+      "Nên xác định trước kênh nộp hồ sơ để biết có cần bản giấy, bản điện tử hay xuất trình trực tiếp.",
+      "Nên đối chiếu trước thông tin phương tiện, hồ sơ kỹ thuật hoặc giấy phép lái xe liên quan."
+    ]
+  },
+  "next_steps": {
+    "summary": "Nên kiểm tra trước loại phương tiện hoặc loại giấy phép cần xử lý, cùng hồ sơ kỹ thuật hoặc nhân thân liên quan. Có thể chọn kênh nộp phù hợp: Trực tiếp, Trực tuyến, Dịch vụ bưu chính. Hiện có khoảng 7 mục giấy tờ cần theo dõi trong checklist.",
+    "time_badge": "6 ngày làm việc",
+    "result_label": "Thẻ BHYT đối với trường hợp nghỉ việc hưởng trợ cấp TNLĐ, BNN hàng tháng",
+    "primary_channel": "online",
+    "channels": [
+      "in_person",
+      "online",
+      "postal"
+    ]
+  },
+  "notes": [],
+  "provenance": {
+    "pipeline": "raw->structured->normalized->enriched->ui_api_payload",
+    "normalizer_version": "0.2.0",
+    "enricher_version": "0.2.0",
+    "mapping_notes": "workflow_generated:suc_khoe_y_te/chinh_sach_y_te",
+    "supported_group": true
+  }
+}

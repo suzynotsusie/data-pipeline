@@ -1,0 +1,396 @@
+{
+  "schema_version": "3.0",
+  "record_type": "public_service_procedure_payload",
+  "id": "procedure-1.001798",
+  "procedure_code": "1.001798",
+  "code": "1.001798",
+  "title": "Ký hợp đồng khám, chữa bệnh BHYT",
+  "language": "vi",
+  "status": "generated_from_pipeline",
+  "field": "Thực hiện chính sách BHYT",
+  "group_key": "suc_khoe_y_te",
+  "workflow_family": null,
+  "subflow": null,
+  "source": {
+    "source_url": "file:///C:/Users/ku060/Downloads/VAIC%20source/data-pipeline/raw_data/1_001798/1_001798_procedure_detail.md",
+    "source_markdown_path": "C:\\Users\\ku060\\Downloads\\VAIC source\\data-pipeline\\raw_data\\1_001798\\1_001798_procedure_detail.md",
+    "normalized_payload_path": "C:\\Users\\ku060\\Downloads\\VAIC source\\data-pipeline\\govease-unified\\data\\normalized_structured\\1_001798_normalized_structured.json",
+    "enriched_payload_path": "C:\\Users\\ku060\\Downloads\\VAIC source\\data-pipeline\\govease-unified\\data\\enriched_structured_priority\\1_001798_enriched_structured.json"
+  },
+  "scope": {
+    "included": "Thủ tục này thuộc nhóm y tế và bảo hiểm, thường dùng để đăng ký, điều chỉnh hoặc xác nhận quyền lợi bảo hiểm y tế. Kết quả thường nhận được là Hợp đồng KCB BHYT. Thời gian xử lý tham khảo: 30 ngày.",
+    "not_included": []
+  },
+  "agency": {
+    "executing_agency": "Bảo hiểm xã hội cấp huyện, Bảo hiểm xã hội tỉnh",
+    "submission_place": null,
+    "receiving_places": []
+  },
+  "target_users": [
+    "Tổ chức (không bao gồm doanh nghiệp",
+    "HTX)",
+    "Doanh nghiệp"
+  ],
+  "submission_methods": [
+    {
+      "code": "ONLINE",
+      "label": "Trực tuyến",
+      "processing_time": "30 ngày",
+      "fee": null,
+      "description": null
+    },
+    {
+      "code": "POSTAL",
+      "label": "Dịch vụ bưu chính",
+      "processing_time": "30 ngày",
+      "fee": null,
+      "description": null
+    },
+    {
+      "code": "IN_PERSON",
+      "label": "Trực tiếp",
+      "processing_time": "30 ngày",
+      "fee": null,
+      "description": null
+    }
+  ],
+  "processing_note": "Thời gian xử lý tham chiếu: 30 ngày. Nên xác định rõ đối tượng tham gia, quyền lợi hoặc nhu cầu điều chỉnh hồ sơ y tế trước khi nộp. Có thể chọn kênh nộp phù hợp: Trực tiếp, Trực tuyến, Dịch vụ bưu chính. Hiện có khoảng 6 mục giấy tờ cần theo dõi trong checklist.",
+  "documents": {
+    "normally_required": [
+      {
+        "name": "Công văn đề nghị ký hợp đồng KCB BHYT của cơ sở",
+        "quantity": "1 bản chính, 1 bản sao",
+        "notes": [],
+        "group": "1. Đối với cơ sở KCB lần đầu ký hợp đồng hoặc cơ sở KCB sau khi đã chấm dứt hợp đồng",
+        "attachment_path": null
+      },
+      {
+        "name": "Bản sao giấy phép hoạt động khám bệnh, chữa bệnh do cơ quan nhà nước có thẩm quyền cấp cho cơ sở khám bệnh, chữa bệnh;",
+        "quantity": "0 bản chính, 1 bản sao",
+        "notes": [],
+        "group": "1. Đối với cơ sở KCB lần đầu ký hợp đồng hoặc cơ sở KCB sau khi đã chấm dứt hợp đồng",
+        "attachment_path": null
+      },
+      {
+        "name": "Danh sách nhân lực đăng ký hành nghề tại cơ sở khám bệnh, chữa bệnh có đầy đủ thông tin theo quy định tại Mẫu số 01 Phụ lục II ban hành kèm theo Nghị định số 96/2023/NĐ-CP ngày 30/12/2023 của Chính phủ.",
+        "quantity": "1 bản chính, 1 bản sao",
+        "notes": [],
+        "group": "1. Đối với cơ sở KCB lần đầu ký hợp đồng hoặc cơ sở KCB sau khi đã chấm dứt hợp đồng",
+        "attachment_path": null
+      },
+      {
+        "name": "Danh mục thuốc, hóa chất, vật tư y tế, dịch vụ kỹ thuật y tế được cấp có thẩm quyền phê duyệt (bằng văn bản hoặc bản điện tử);",
+        "quantity": "1 bản chính, 1 bản sao",
+        "notes": [],
+        "group": "1. Đối với cơ sở KCB lần đầu ký hợp đồng hoặc cơ sở KCB sau khi đã chấm dứt hợp đồng",
+        "attachment_path": null
+      }
+    ],
+    "conditional": [
+      {
+        "condition": "Bản chụp có đóng dấu của cơ sở đối với quyết định phân hạng bệnh viện của cấp có thẩm quyền (nếu có) hoặc quyết định về tuyến chuyên môn kỹ thuật của cấp có thẩm quyền đối với cơ sở khám bệnh, chữa bệnh ngoài công lập;",
+        "document": "Bản chụp có đóng dấu của cơ sở đối với quyết định phân hạng bệnh viện của cấp có thẩm quyền (nếu có) hoặc quyết định về tuyến chuyên môn kỹ thuật của cấp có thẩm quyền đối với cơ sở khám bệnh, chữa bệnh ngoài công lập;",
+        "quantity": "0 bản chính, 1 bản sao",
+        "notes": [],
+        "attachment_path": null
+      },
+      {
+        "condition": "Bản chụp có đóng dấu của cơ sở đối với quyết định bổ sung chức năng, nhiệm vụ, phạm vi chuyên môn, phân hạng bệnh viện của cấp có thẩm quyền (nếu có) hoặc quyết định về tuyến chuyên môn kỹ thuật của cấp có thẩm quyền đối với cơ sở khám bệnh, chữa bệnh ngoài công lập.",
+        "document": "Bản chụp có đóng dấu của cơ sở đối với quyết định bổ sung chức năng, nhiệm vụ, phạm vi chuyên môn, phân hạng bệnh viện của cấp có thẩm quyền (nếu có) hoặc quyết định về tuyến chuyên môn kỹ thuật của cấp có thẩm quyền đối với cơ sở khám bệnh, chữa bệnh ngoài công lập.",
+        "quantity": "0 bản chính, 1 bản sao",
+        "notes": [],
+        "attachment_path": null
+      }
+    ],
+    "forms": [],
+    "presented": [],
+    "notes": [],
+    "summary": [
+      {
+        "group": "1. Đối với cơ sở KCB lần đầu ký hợp đồng hoặc cơ sở KCB sau khi đã chấm dứt hợp đồng",
+        "name": "Công văn đề nghị ký hợp đồng KCB BHYT của cơ sở",
+        "quantity": "1 bản chính, 1 bản sao",
+        "notes": [],
+        "attachment_path": null
+      },
+      {
+        "group": "1. Đối với cơ sở KCB lần đầu ký hợp đồng hoặc cơ sở KCB sau khi đã chấm dứt hợp đồng",
+        "name": "Bản sao giấy phép hoạt động khám bệnh, chữa bệnh do cơ quan nhà nước có thẩm quyền cấp cho cơ sở khám bệnh, chữa bệnh;",
+        "quantity": "0 bản chính, 1 bản sao",
+        "notes": [],
+        "attachment_path": null
+      },
+      {
+        "group": "1. Đối với cơ sở KCB lần đầu ký hợp đồng hoặc cơ sở KCB sau khi đã chấm dứt hợp đồng",
+        "name": "Danh sách nhân lực đăng ký hành nghề tại cơ sở khám bệnh, chữa bệnh có đầy đủ thông tin theo quy định tại Mẫu số 01 Phụ lục II ban hành kèm theo Nghị định số 96/2023/NĐ-CP ngày 30/12/2023 của Chính phủ.",
+        "quantity": "1 bản chính, 1 bản sao",
+        "notes": [],
+        "attachment_path": null
+      },
+      {
+        "group": "1. Đối với cơ sở KCB lần đầu ký hợp đồng hoặc cơ sở KCB sau khi đã chấm dứt hợp đồng",
+        "name": "Danh mục thuốc, hóa chất, vật tư y tế, dịch vụ kỹ thuật y tế được cấp có thẩm quyền phê duyệt (bằng văn bản hoặc bản điện tử);",
+        "quantity": "1 bản chính, 1 bản sao",
+        "notes": [],
+        "attachment_path": null
+      },
+      {
+        "group": null,
+        "name": null,
+        "quantity": "0 bản chính, 1 bản sao",
+        "notes": [],
+        "attachment_path": null
+      },
+      {
+        "group": null,
+        "name": null,
+        "quantity": "0 bản chính, 1 bản sao",
+        "notes": [],
+        "attachment_path": null
+      }
+    ]
+  },
+  "steps": [
+    {
+      "order": 1,
+      "title": "Bước 1",
+      "description": "1. **Bước 1. Lập, nộp hồ sơ** Cơ sở KCB lập hồ sơ ký hợp đồng theo quy định tại mục Thành phần hồ sơ và nộp hồ sơ cho cơ quan BHXH. 2. **Bước 2.** Cơ quan BHXH tiếp nhận hồ sơ, thẩm định theo quy định 3. **Bước 3. Ký hợp đồng**",
+      "example": null
+    },
+    {
+      "order": 2,
+      "title": "a)",
+      "description": "a) Trường hợp cơ sở KCB đủ điều kiện thì cơ quan BHXH và cơ sở KCB ký hợp đồng KCB BHYT theo Mẫu số 7 Phụ lục ban hành kèm theo Nghị định 75/2023/NĐ-CP.",
+      "example": null
+    },
+    {
+      "order": 3,
+      "title": "b)",
+      "description": "b) Trường hợp cơ sở KCB không đủ điều kiện, cơ quan BHXH có văn bản trả lời nêu rõ lý do.",
+      "example": null
+    }
+  ],
+  "input_fields": [
+    {
+      "field": "request_subject",
+      "label": "Đối tượng làm thủ tục",
+      "type": "string",
+      "required": true
+    },
+    {
+      "field": "insurance_or_medical_need",
+      "label": "Nhu cầu bảo hiểm hoặc y tế",
+      "type": "string",
+      "required": true
+    },
+    {
+      "field": "submission_channel_preference",
+      "label": "Kênh nộp dự kiến",
+      "type": "enum",
+      "required": false,
+      "options": [
+        "Trực tiếp",
+        "Trực tuyến",
+        "Dịch vụ bưu chính"
+      ]
+    },
+    {
+      "field": "has_insurance_number",
+      "label": "Đã có mã BHXH/BHYT",
+      "type": "boolean",
+      "required": false
+    },
+    {
+      "field": "insurance_participation_group",
+      "label": "Nhóm tham gia BHYT",
+      "type": "enum",
+      "required": true
+    }
+  ],
+  "validation_rules": [
+    {
+      "id": "required-1",
+      "severity": "error",
+      "field": "request_subject",
+      "rule": "Trường bắt buộc phải có dữ liệu hợp lệ trước khi nộp.",
+      "message": "Thiếu trường bắt buộc: Đối tượng làm thủ tục."
+    },
+    {
+      "id": "required-2",
+      "severity": "error",
+      "field": "insurance_or_medical_need",
+      "rule": "Trường bắt buộc phải có dữ liệu hợp lệ trước khi nộp.",
+      "message": "Thiếu trường bắt buộc: Nhu cầu bảo hiểm hoặc y tế."
+    },
+    {
+      "id": "required-5",
+      "severity": "error",
+      "field": "insurance_participation_group",
+      "rule": "Trường bắt buộc phải có dữ liệu hợp lệ trước khi nộp.",
+      "message": "Thiếu trường bắt buộc: Nhóm tham gia BHYT."
+    },
+    {
+      "id": "hint-1",
+      "severity": "warning",
+      "field": "general",
+      "rule": "Nên xác định trước kênh nộp hồ sơ để biết có cần bản giấy, bản điện tử hay xuất trình trực tiếp.",
+      "message": "Nên xác định trước kênh nộp hồ sơ để biết có cần bản giấy, bản điện tử hay xuất trình trực tiếp."
+    },
+    {
+      "id": "hint-2",
+      "severity": "warning",
+      "field": "general",
+      "rule": "Nên xác định đúng nhóm đối tượng, mã số bảo hiểm và quyền lợi áp dụng trước khi nộp.",
+      "message": "Nên xác định đúng nhóm đối tượng, mã số bảo hiểm và quyền lợi áp dụng trước khi nộp."
+    }
+  ],
+  "common_errors": [
+    {
+      "field": "general",
+      "issue": "Điền sai mẫu tờ khai hoặc chọn sai biểu mẫu đi kèm.",
+      "fix": "Nên xác định trước kênh nộp hồ sơ để biết có cần bản giấy, bản điện tử hay xuất trình trực tiếp."
+    },
+    {
+      "field": "general",
+      "issue": "Sai nhóm đối tượng tham gia hoặc thông tin quyền lợi bảo hiểm y tế.",
+      "fix": "Nên xác định trước kênh nộp hồ sơ để biết có cần bản giấy, bản điện tử hay xuất trình trực tiếp."
+    }
+  ],
+  "clarifying_questions": [
+    {
+      "id": "clarify_1",
+      "question": "Bạn đang muốn đăng ký, điều chỉnh hay xác nhận quyền lợi y tế hoặc bảo hiểm nào?",
+      "purpose": "workflow_intake"
+    },
+    {
+      "id": "clarify_2",
+      "question": "Bạn đã có mã BHXH/BHYT hoặc thông tin đơn vị tiếp nhận liên quan chưa?",
+      "purpose": "workflow_intake"
+    }
+  ],
+  "legal_basis": [
+    {
+      "title": "Luật sửa đổi, bổ sung một số điều Luật bảo hiểm y tế",
+      "code": "46/2014/QH13"
+    },
+    {
+      "title": "Quy định chi tiết và hướng dẫn biện pháp thi hành một số điều của Luật bảo hiểm y tế",
+      "code": "146/2018/NĐ-CP"
+    },
+    {
+      "title": "Luật 25/2008/QH12 - Bảo hiểm y tế",
+      "code": "25/2008/QH12"
+    },
+    {
+      "title": "Thông tư 09/2019/TT-BYT",
+      "code": "09/2019/TT-BYT"
+    }
+  ],
+  "legal_bases": [
+    {
+      "title": "Luật sửa đổi, bổ sung một số điều Luật bảo hiểm y tế",
+      "code": "46/2014/QH13"
+    },
+    {
+      "title": "Quy định chi tiết và hướng dẫn biện pháp thi hành một số điều của Luật bảo hiểm y tế",
+      "code": "146/2018/NĐ-CP"
+    },
+    {
+      "title": "Luật 25/2008/QH12 - Bảo hiểm y tế",
+      "code": "25/2008/QH12"
+    },
+    {
+      "title": "Thông tư 09/2019/TT-BYT",
+      "code": "09/2019/TT-BYT"
+    }
+  ],
+  "faq": [
+    {
+      "question": "Có thể nộp qua kênh nào?",
+      "answer": "Các kênh hiện có: Trực tiếp, Trực tuyến, Dịch vụ bưu chính."
+    },
+    {
+      "question": "Thời gian xử lý tham chiếu là bao lâu?",
+      "answer": "Thời gian xử lý tham chiếu hiện có là 30 ngày."
+    },
+    {
+      "question": "Kết quả chính của thủ tục là gì?",
+      "answer": "Kết quả chính được trích xuất là Hợp đồng KCB BHYT."
+    }
+  ],
+  "guidance": {
+    "highlight_documents": [
+      {
+        "bucket": "required",
+        "name": "Công văn đề nghị ký hợp đồng KCB BHYT của cơ sở",
+        "conditions": [],
+        "attachment_path": null
+      },
+      {
+        "bucket": "required",
+        "name": "Bản sao giấy phép hoạt động khám bệnh, chữa bệnh do cơ quan nhà nước có thẩm quyền cấp cho cơ sở khám bệnh, chữa bệnh;",
+        "conditions": [],
+        "attachment_path": null
+      },
+      {
+        "bucket": "required",
+        "name": "Danh sách nhân lực đăng ký hành nghề tại cơ sở khám bệnh, chữa bệnh có đầy đủ thông tin theo quy định tại Mẫu số 01 Phụ lục II ban hành kèm theo Nghị định số 96/2023/NĐ-CP ngày 30/12/2023 của Chính phủ.",
+        "conditions": [],
+        "attachment_path": null
+      },
+      {
+        "bucket": "required",
+        "name": "Danh mục thuốc, hóa chất, vật tư y tế, dịch vụ kỹ thuật y tế được cấp có thẩm quyền phê duyệt (bằng văn bản hoặc bản điện tử);",
+        "conditions": [],
+        "attachment_path": null
+      },
+      {
+        "bucket": "conditional",
+        "name": "Bản chụp có đóng dấu của cơ sở đối với quyết định phân hạng bệnh viện của cấp có thẩm quyền (nếu có) hoặc quyết định về tuyến chuyên môn kỹ thuật của cấp có thẩm quyền đối với cơ sở khám bệnh, chữa bệnh ngoài công lập;",
+        "conditions": [
+          "Bản chụp có đóng dấu của cơ sở đối với quyết định phân hạng bệnh viện của cấp có thẩm quyền (nếu có) hoặc quyết định về tuyến chuyên môn kỹ thuật của cấp có thẩm quyền đối với cơ sở khám bệnh, chữa bệnh ngoài công lập;"
+        ],
+        "attachment_path": null
+      },
+      {
+        "bucket": "conditional",
+        "name": "Bản chụp có đóng dấu của cơ sở đối với quyết định bổ sung chức năng, nhiệm vụ, phạm vi chuyên môn, phân hạng bệnh viện của cấp có thẩm quyền (nếu có) hoặc quyết định về tuyến chuyên môn kỹ thuật của cấp có thẩm quyền đối với cơ sở khám bệnh, chữa bệnh ngoài công lập.",
+        "conditions": [
+          "Bản chụp có đóng dấu của cơ sở đối với quyết định bổ sung chức năng, nhiệm vụ, phạm vi chuyên môn, phân hạng bệnh viện của cấp có thẩm quyền (nếu có) hoặc quyết định về tuyến chuyên môn kỹ thuật của cấp có thẩm quyền đối với cơ sở khám bệnh, chữa bệnh ngoài công lập."
+        ],
+        "attachment_path": null
+      }
+    ],
+    "special_cases": [
+      "Có trường hợp hồ sơ điện tử thay thế bản giấy",
+      "Có thể cần đối chiếu quyền lợi bảo hiểm hoặc tuyến chuyên môn"
+    ],
+    "common_errors": [
+      "Điền sai mẫu tờ khai hoặc chọn sai biểu mẫu đi kèm.",
+      "Sai nhóm đối tượng tham gia hoặc thông tin quyền lợi bảo hiểm y tế."
+    ],
+    "validation_hints": [
+      "Nên xác định trước kênh nộp hồ sơ để biết có cần bản giấy, bản điện tử hay xuất trình trực tiếp.",
+      "Nên xác định đúng nhóm đối tượng, mã số bảo hiểm và quyền lợi áp dụng trước khi nộp."
+    ]
+  },
+  "next_steps": {
+    "summary": "Nên xác định rõ đối tượng tham gia, quyền lợi hoặc nhu cầu điều chỉnh hồ sơ y tế trước khi nộp. Có thể chọn kênh nộp phù hợp: Trực tiếp, Trực tuyến, Dịch vụ bưu chính. Hiện có khoảng 6 mục giấy tờ cần theo dõi trong checklist.",
+    "time_badge": "30 ngày",
+    "result_label": "Hợp đồng KCB BHYT",
+    "primary_channel": "online",
+    "channels": [
+      "in_person",
+      "online",
+      "postal"
+    ]
+  },
+  "notes": [],
+  "provenance": {
+    "pipeline": "raw->structured->normalized->enriched->ui_api_payload",
+    "normalizer_version": "0.2.0",
+    "enricher_version": "0.2.0",
+    "mapping_notes": "excluded_from_clean_workflow_dataset",
+    "supported_group": true
+  }
+}

@@ -1,0 +1,79 @@
+{
+  "schema_version": "1.0",
+  "enricher_version": "0.2.0",
+  "source": {
+    "procedure_code": "1.115752",
+    "title": "Giao đất ở có thu tiền sử dụng đất không thông qua đấu giá,",
+    "group_key": "cu_tru_giay_to",
+    "workflow_family": null,
+    "subflow": null
+  },
+  "experience": {
+    "entry_label": "Hỗ trợ cư trú và giấy tờ",
+    "overview_summary": "Thủ tục này thuộc nhóm cư trú và giấy tờ, thường cần kiểm tra thông tin định danh hoặc hồ sơ giấy tờ chuyên ngành. Kết quả thường nhận được là Quyết định giao đất, cho thuê đất, cho phép chuyển mục đích sử dụng đất, giao đất và giao rừng, cho thuê đất và cho thuê rừng. Thời gian xử lý tham khảo: Không quá 35 ngày kể từ ngày nhận đủ hồ sơ hợp lệ ngày.",
+    "next_step_summary": "Nên kiểm tra trước giấy tờ định danh, nơi nộp và mẫu biểu liên quan, rồi chọn kênh nộp phù hợp: Trực tiếp, Trực tuyến, Dịch vụ bưu chính. Hiện có 1 mục giấy tờ cần theo dõi trong checklist.",
+    "tone": "supportive_public_service"
+  },
+  "guidance": {
+    "highlight_documents": [
+      {
+        "bucket": "required",
+        "name": "Mẫu số 01-Đơn đề nghị giao đất/thuê đất/chuyển mục đích sử dụng đất/giao đất và giao rừng/cho thuê đất và cho thuê rừng",
+        "conditions": [],
+        "attachment_path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/1_115752/M%E1%BA%ABu%20s%E1%BB%91%2001.doc"
+      }
+    ],
+    "special_cases": [],
+    "common_errors": [
+      "Điền sai mẫu tờ khai hoặc chọn sai biểu mẫu đi kèm."
+    ],
+    "validation_hints": [
+      "Nên xác định trước kênh nộp hồ sơ để biết có cần bản giấy, bản điện tử hay xuất trình trực tiếp.",
+      "Có mẫu biểu đính kèm, nên kiểm tra đúng biểu mẫu trước khi nộp.",
+      "Nên đối chiếu trước dữ liệu định danh và nơi cư trú để tránh bị yêu cầu bổ sung."
+    ]
+  },
+  "intake": {
+    "candidate_input_fields": [
+      {
+        "field_id": "document_request_type",
+        "label": "Loại giấy tờ cần xử lý",
+        "field_type": "text",
+        "required": true
+      },
+      {
+        "field_id": "submission_channel_preference",
+        "label": "Kênh nộp dự kiến",
+        "field_type": "enum",
+        "required": false
+      },
+      {
+        "field_id": "identity_document_available",
+        "label": "Có giấy tờ định danh",
+        "field_type": "boolean",
+        "required": true
+      },
+      {
+        "field_id": "residency_or_status_known",
+        "label": "Biết rõ nơi cư trú hoặc tình trạng hiện tại",
+        "field_type": "boolean",
+        "required": false
+      }
+    ],
+    "suggested_clarifying_questions": [
+      "Bạn đang xử lý giấy tờ gì và muốn nộp trực tiếp hay trực tuyến?",
+      "Thông tin định danh và nơi cư trú hiện tại đã sẵn sàng để đối chiếu chưa?"
+    ]
+  },
+  "ui_hints": {
+    "primary_channel": "in_person",
+    "result_label": "Quyết định giao đất, cho thuê đất, cho phép chuyển mục đích sử dụng đất, giao đất và giao rừng, cho thuê đất và cho thuê rừng",
+    "time_badge": "Không quá 35 ngày kể từ ngày nhận đủ hồ sơ hợp lệ ngày",
+    "document_count_badge": 1
+  },
+  "provenance": {
+    "generator": "workflow_domain_enricher",
+    "derivation_mode": "rule_based_semantic_enrichment",
+    "supported_group": true
+  }
+}

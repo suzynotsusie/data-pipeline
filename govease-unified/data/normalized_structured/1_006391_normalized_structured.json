@@ -1,0 +1,253 @@
+{
+  "schema_version": "1.0",
+  "normalizer_version": "0.2.0",
+  "source": {
+    "procedure_code": "1.006391",
+    "title": "Đăng ký lại phương tiện trong trường hợp chủ phương tiện thay đổi trụ sở hoặc nơi đăng ký hộ khẩu thường trú của chủ phương tiện sang đơn vị hành chính cấp tỉnh khác",
+    "raw_structured_parser_version": "0.1.0",
+    "field": "Hàng hải và đường thủy nội địa"
+  },
+  "procedure": {
+    "level": "Cấp xã, Cấp tỉnh",
+    "procedure_type": "TTHC được luật giao quy định chi tiết",
+    "target_users": [
+      "Doanh nghiệp Việt Nam",
+      "Doanh nghiệp có vốn đầu tư nước ngoài",
+      "Hợp tác xã",
+      "Công dân Việt Nam",
+      "Doanh nghiệp",
+      "Người nước ngoài",
+      "Tổ chức (không bao gồm doanh nghiệp",
+      "HTX)"
+    ],
+    "authorities": [
+      "Sở Xây dựng, Uỷ ban Nhân dân cấp xã, phường, thị trấn"
+    ],
+    "receiving_places": []
+  },
+  "submission": {
+    "channels": [
+      "in_person",
+      "online",
+      "postal"
+    ],
+    "methods": [
+      {
+        "method_id": "method_1",
+        "channel": "online",
+        "processing_time_text": "2 ngày làm việc",
+        "fee_text": null,
+        "description": "02 (hai) ngày làm việc, kể từ ngày nhận đủ hồ sơ theo quy định và tổ chức, cá nhân đã hoàn thành nghĩa vụ tài chính (nếu có)",
+        "is_online": true,
+        "is_postal": false,
+        "is_in_person": false
+      },
+      {
+        "method_id": "method_2",
+        "channel": "postal",
+        "processing_time_text": "2 ngày làm việc",
+        "fee_text": null,
+        "description": "02 (hai) ngày làm việc, kể từ ngày nhận đủ hồ sơ theo quy định và tổ chức, cá nhân đã hoàn thành nghĩa vụ tài chính (nếu có)",
+        "is_online": false,
+        "is_postal": true,
+        "is_in_person": false
+      },
+      {
+        "method_id": "method_3",
+        "channel": "in_person",
+        "processing_time_text": "2 ngày làm việc",
+        "fee_text": null,
+        "description": "02 (hai) ngày làm việc, kể từ ngày nhận đủ hồ sơ theo quy định và tổ chức, cá nhân đã hoàn thành nghĩa vụ tài chính (nếu có)",
+        "is_online": false,
+        "is_postal": false,
+        "is_in_person": true
+      }
+    ],
+    "timing_summary": {
+      "unique_processing_times": [
+        "2 ngày làm việc"
+      ],
+      "method_count": 3
+    }
+  },
+  "documents": {
+    "required": [
+      {
+        "document_id": "n_ngh_ng_k_l_i_ph_ng_ti_n_th_y_n_i_a_theo_quy_nh",
+        "name": "Đơn đề nghị đăng ký lại phương tiện thủy nội địa theo quy định",
+        "group_name": "Giấy tờ phải nộp để lưu giữ tại cơ quan đăng ký phương tiện",
+        "group_type": "required",
+        "original_count": "1",
+        "copy_count": "0",
+        "conditions": [],
+        "attachment_label": "Mauon.docx",
+        "attachment_path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/1_006391/Mauon.docx"
+      }
+    ],
+    "conditional": [],
+    "presented": [
+      {
+        "document_id": "gi_y_ch_ng_nh_n_an_to_n_k_thu_t_v_b_o_v_m_i_tr_ng_c_a_ph_ng_ti_n_c_n_hi_u_l_c_i_v_i_ph_ng_ti_n_thu_c_di_n_ng_ki_m_c_quan_ng_k_ph_ng_ti_n_ki_m_tra",
+        "name": "Giấy chứng nhận an toàn kỹ thuật và bảo vệ môi trường của phương tiện còn hiệu lực đối với phương tiện thuộc diện đăng kiểm để cơ quan đăng ký phương tiện kiểm tra",
+        "group_name": "Xuất trình hoặc gửi bản chính hoặc bản sao có chứng thực hoặc bản sao điện tử được chứng thực từ bản chính hoặc bản sao điện tử được cấp từ sổ gốc để cơ quan đăng ký phương tiện kiểm tra",
+        "group_type": "present",
+        "original_count": "1",
+        "copy_count": "1",
+        "conditions": [],
+        "attachment_label": null,
+        "attachment_path": null
+      }
+    ],
+    "notes": [],
+    "forms": [
+      {
+        "name": "Đơn đề nghị đăng ký lại phương tiện thủy nội địa theo quy định",
+        "attachment_label": "Mauon.docx",
+        "attachment_path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/1_006391/Mauon.docx"
+      }
+    ],
+    "empty_groups": [],
+    "document_count": 2
+  },
+  "process": {
+    "steps": [
+      {
+        "step_id": "step_1",
+        "title": null,
+        "content": "1. **a) Nộp hồ sơ TTHC:**",
+        "actor": "user",
+        "channel_hint": null,
+        "time_hint": null
+      },
+      {
+        "step_id": "step_2",
+        "title": null,
+        "content": "Tổ chức, cá nhân nộp hồ sơ đề nghị đến cơ quan đăng ký phương tiện:",
+        "actor": "authority",
+        "channel_hint": null,
+        "time_hint": null
+      },
+      {
+        "step_id": "step_3",
+        "title": null,
+        "content": "- Sở Xây dựng:",
+        "actor": "user",
+        "channel_hint": null,
+        "time_hint": null
+      },
+      {
+        "step_id": "step_4",
+        "title": null,
+        "content": "+ Thực hiện đăng ký phương tiện mang cấp VR-SB, phương tiện không có động cơ trọng tải toàn phần trên 15 tấn, phương tiện có động cơ tổng công suất máy chính trên 15 sức ngựa, phương tiện có sức chở trên 12 người của tổ chức, cá nhân có trụ sở hoặc nơi đăng ký hộ khẩu thường trú tại tỉnh, thành phố trực thuộc Trung ương đó;",
+        "actor": "user",
+        "channel_hint": null,
+        "time_hint": null
+      },
+      {
+        "step_id": "step_5",
+        "title": null,
+        "content": "+ Thực hiện đăng ký phương tiện không có động cơ trọng tải toàn phần từ 01 tấn đến 15 tấn hoặc có sức chở từ 05 người đến 12 người, phương tiện có động cơ tổng công suất máy chính đến 15 sức ngựa hoặc có sức chở đến 12 người của tổ chức, cá nhân có trụ sở hoặc nơi đăng ký hộ khẩu thường trú tại địa bàn quản lý;",
+        "actor": "user",
+        "channel_hint": null,
+        "time_hint": null
+      },
+      {
+        "step_id": "step_6",
+        "title": null,
+        "content": "- Ủy ban nhân dân cấp xã: Thực hiện đăng ký phương tiện không có động cơ trọng tải toàn phần từ 01 tấn đến 15 tấn hoặc có sức chở từ 05 người đến 12 người, phương tiện có động cơ tổng công suất máy chính đến 15 sức ngựa hoặc có sức chở đến 12 người của tổ chức, cá nhân có trụ sở hoặc nơi đăng ký hộ khẩu thường trú tại địa bàn quản lý;",
+        "actor": "user",
+        "channel_hint": null,
+        "time_hint": null
+      },
+      {
+        "step_id": "step_7",
+        "title": null,
+        "content": "2. **b) Giải quyết TTHC:**",
+        "actor": "user",
+        "channel_hint": null,
+        "time_hint": null
+      },
+      {
+        "step_id": "step_8",
+        "title": null,
+        "content": "Cơ quan đăng ký phương tiện tiếp nhận, kiểm tra hồ sơ và xử lý như sau:",
+        "actor": "authority",
+        "channel_hint": null,
+        "time_hint": null
+      },
+      {
+        "step_id": "step_9",
+        "title": null,
+        "content": "- Trường hợp hồ sơ nộp trực tiếp, nếu hồ sơ đầy đủ thì cấp giấy biên nhận hồ sơ và hẹn trả kết quả theo thời hạn quy định; nếu hồ sơ không đầy đủ theo quy định thì trả lại và hướng dẫn tổ chức, cá nhân hoàn thiện lại hồ sơ;",
+        "actor": "user",
+        "channel_hint": "trực tiếp",
+        "time_hint": null
+      },
+      {
+        "step_id": "step_10",
+        "title": null,
+        "content": "- Trường hợp hồ sơ nhận qua hệ thống bưu chính hoặc qua hệ thống dịch vụ công trực tuyến, trong thời hạn 02 (hai) ngày làm việc kể từ ngày nhận được hồ sơ, cơ quan đăng ký phương tiện thực hiện kiểm tra thành phần hồ sơ; nếu hồ sơ đầy đủ theo quy định thì tiếp nhận hồ sơ và thông báo thời hạn trả kết quả, nếu hồ sơ không đầy đủ theo quy định thì có văn bản gửi tổ chức, cá nhân hoàn thiện hồ sơ;",
+        "actor": "authority",
+        "channel_hint": "trực tuyến",
+        "time_hint": null
+      },
+      {
+        "step_id": "step_11",
+        "title": null,
+        "content": "- Trong thời hạn 02 (hai) ngày làm việc, kể từ ngày nhận đủ hồ sơ theo quy định và tổ chức, cá nhân đã hoàn thành nghĩa vụ tài chính (nếu có), cơ quan đăng ký cấp giấy chứng nhận và gửi trực tiếp hoặc qua dịch vụ bưu chính hoặc qua hệ thống dịch vụ công trực tuyến cho chủ phương tiện. Trường hợp không cấp phải có văn bản trả lời và nêu rõ lý do.",
+        "actor": "authority",
+        "channel_hint": "trực tuyến",
+        "time_hint": null
+      }
+    ],
+    "step_count": 11,
+    "notes": []
+  },
+  "eligibility": {
+    "conditions": [],
+    "has_conditions": false
+  },
+  "results": {
+    "items": [
+      {
+        "name": "Giấy chứng nhận đăng ký phương tiện thủy nội địa",
+        "result_code": "KQ.G17.000321",
+        "raw_text": "Giấy chứng nhận đăng ký phương tiện thủy nội địa"
+      }
+    ],
+    "primary_result": {
+      "name": "Giấy chứng nhận đăng ký phương tiện thủy nội địa",
+      "result_code": "KQ.G17.000321",
+      "raw_text": "Giấy chứng nhận đăng ký phương tiện thủy nội địa"
+    }
+  },
+  "legal_basis": {
+    "items": [
+      {
+        "title": "Sửa đổi, bổ sung một số điều của các Thông tư quy định về đăng ký phương tiện thủy nội địa và quy định thi, kiểm tra, cấp, cấp lại, chuyển đổi giấy chứng nhận khả năng chuyên môn, chứng chỉ chuyên môn thuyền viên, người lái phương tiện thủy nội địa",
+        "code": "60/2024/TT-BGTVT"
+      },
+      {
+        "title": "Thông tư sửa đổi, bổ sung một số điều của các Thông tư thuộc lĩnh vực quản lý nhà nước của Bộ Xây dựng liên quan đến sắp xếp tổ chức bộ máy, thực hiện chính quyền địa phương hai cấp và phân cấp cho chính quyền địa phương.",
+        "code": "09/2025/TT-BXD"
+      }
+    ],
+    "count": 2
+  },
+  "attachments": [
+    {
+      "label": "Mauon.docx",
+      "path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/1_006391/Mauon.docx",
+      "source_section": "Thành phần hồ sơ",
+      "document_name": "Đơn đề nghị đăng ký lại phương tiện thủy nội địa theo quy định"
+    }
+  ],
+  "signals": {
+    "raw_parse_warnings": [],
+    "missing_documents": false,
+    "documents_section_present": true,
+    "documents_declared_empty": false,
+    "documents_only_in_notes": false,
+    "missing_results": false
+  }
+}

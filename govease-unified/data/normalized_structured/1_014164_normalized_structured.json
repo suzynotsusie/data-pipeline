@@ -1,0 +1,164 @@
+{
+  "schema_version": "1.0",
+  "normalizer_version": "0.2.0",
+  "source": {
+    "procedure_code": "1.014164",
+    "title": "HƯỞNG TRỢ CẤP DƯỠNG SỨC, PHỤC HỒI SỨC KHOẺ SAU KHI ỐM ĐAU",
+    "raw_structured_parser_version": "0.1.0",
+    "field": "Bảo hiểm xã hội"
+  },
+  "procedure": {
+    "level": "Cấp tỉnh",
+    "procedure_type": "TTHC được luật giao quy định chi tiết",
+    "target_users": [
+      "Doanh nghiệp",
+      "Tổ chức nước ngoài",
+      "Hợp tác xã",
+      "Tổ chức (không bao gồm doanh nghiệp",
+      "HTX)",
+      "Doanh nghiệp có vốn đầu tư nước ngoài"
+    ],
+    "authorities": [
+      "Bảo hiểm xã hội tỉnh"
+    ],
+    "receiving_places": []
+  },
+  "submission": {
+    "channels": [
+      "in_person",
+      "online",
+      "postal"
+    ],
+    "methods": [
+      {
+        "method_id": "method_1",
+        "channel": "online",
+        "processing_time_text": "7 ngày làm việc",
+        "fee_text": null,
+        "description": "Trong thời hạn 07 ngày làm việc kể từ ngày nhận danh sách do người sử dụng lao động lập.<br>Trực tiếp hoặc qua dịch vụ bưu chính hoặc trực tuyến.",
+        "is_online": true,
+        "is_postal": false,
+        "is_in_person": false
+      },
+      {
+        "method_id": "method_2",
+        "channel": "postal",
+        "processing_time_text": "7 ngày làm việc",
+        "fee_text": null,
+        "description": "Trong thời hạn 07 ngày làm việc kể từ ngày nhận danh sách do người sử dụng lao động lập.<br>Trực tiếp hoặc qua dịch vụ bưu chính hoặc trực tuyến.",
+        "is_online": false,
+        "is_postal": true,
+        "is_in_person": false
+      },
+      {
+        "method_id": "method_3",
+        "channel": "in_person",
+        "processing_time_text": "7 ngày làm việc",
+        "fee_text": null,
+        "description": "Trong thời hạn 07 ngày làm việc kể từ ngày nhận danh sách do người sử dụng lao động lập.<br>Trực tiếp hoặc qua dịch vụ bưu chính hoặc trực tuyến.",
+        "is_online": false,
+        "is_postal": false,
+        "is_in_person": true
+      }
+    ],
+    "timing_summary": {
+      "unique_processing_times": [
+        "7 ngày làm việc"
+      ],
+      "method_count": 3
+    }
+  },
+  "documents": {
+    "required": [
+      {
+        "document_id": "danh_s_ch_ng_i_lao_ng_ngh_vi_c_h_ng_tr_c_p_d_ng_s_c_ph_c_h_i_s_c_kh_e_sau_khi_m_au",
+        "name": "Danh sách người lao động nghỉ việc hưởng trợ cấp dưỡng sức, phục hồi sức khỏe sau khi ốm đau",
+        "group_name": "default",
+        "group_type": "unknown",
+        "original_count": "1",
+        "copy_count": "0",
+        "conditions": [],
+        "attachment_label": null,
+        "attachment_path": null
+      }
+    ],
+    "conditional": [],
+    "presented": [],
+    "notes": [],
+    "forms": [],
+    "empty_groups": [],
+    "document_count": 1
+  },
+  "process": {
+    "steps": [
+      {
+        "step_id": "step_1",
+        "title": null,
+        "content": "1.",
+        "actor": "user",
+        "channel_hint": null,
+        "time_hint": null
+      },
+      {
+        "step_id": "step_2",
+        "title": "Bước 1:",
+        "content": "Bước 1: Trong thời hạn 07 ngày làm việc kể từ ngày người lao động nghỉ việc hưởng trợ cấp dưỡng sức, phục hồi sức khỏe sau khi ốm đau, người sử dụng lao động lập danh sách người lao động nghỉ việc hưởng trợ cấp dưỡng sức, phục hồi sức khỏe và nộp cho cơ quan bảo hiểm xã hội.",
+        "actor": "authority",
+        "channel_hint": null,
+        "time_hint": "07 ngày làm việc"
+      },
+      {
+        "step_id": "step_3",
+        "title": "Bước 2:",
+        "content": "Bước 2: Trong thời hạn 07 ngày làm việc kể từ ngày nhận danh sách do người sử dụng lao động lập, cơ quan bảo hiểm xã hội có trách nhiệm giải quyết. Trường hợp không giải quyết thì phải trả lời bằng văn bản và nêu rõ lý do.",
+        "actor": "authority",
+        "channel_hint": null,
+        "time_hint": "07 ngày làm việc"
+      }
+    ],
+    "step_count": 3,
+    "notes": []
+  },
+  "eligibility": {
+    "conditions": [
+      "Người lao động đã nghỉ việc hưởng chế độ ốm đau từ đủ 30 ngày trở lên trong một năm, trong khoảng thời gian 30 ngày kể từ ngày hết thời gian nghỉ việc hưởng chế độ ốm đau mà sức khỏe chưa phục hồi."
+    ],
+    "has_conditions": true
+  },
+  "results": {
+    "items": [
+      {
+        "name": "Danh sách giải quyết hưởng trợ cấp dưỡng sức phục hồi sức khỏe sau khi ốm đau",
+        "result_code": "KQ.G09.000359",
+        "raw_text": "Danh sách giải quyết hưởng trợ cấp dưỡng sức phục hồi sức khỏe sau khi ốm đau"
+      }
+    ],
+    "primary_result": {
+      "name": "Danh sách giải quyết hưởng trợ cấp dưỡng sức phục hồi sức khỏe sau khi ốm đau",
+      "result_code": "KQ.G09.000359",
+      "raw_text": "Danh sách giải quyết hưởng trợ cấp dưỡng sức phục hồi sức khỏe sau khi ốm đau"
+    }
+  },
+  "legal_basis": {
+    "items": [
+      {
+        "title": "Luật Bảo hiểm xã hội",
+        "code": "41/2024/QH15"
+      },
+      {
+        "title": "Quy định chi tiết và hướng dẫn thi hành một số điều của Luật Bảo hiểm xã hội về bảo hiểm xã hội bắt buộc",
+        "code": "158/2025/NĐ-CP"
+      }
+    ],
+    "count": 2
+  },
+  "attachments": [],
+  "signals": {
+    "raw_parse_warnings": [],
+    "missing_documents": false,
+    "documents_section_present": true,
+    "documents_declared_empty": false,
+    "documents_only_in_notes": false,
+    "missing_results": false
+  }
+}

@@ -1,0 +1,323 @@
+{
+  "schema_version": "1.0",
+  "domain": "hon_nhan_gia_dinh",
+  "updated_at": "2026-07-18",
+  "source_files": [
+    "C:\\Users\\ku060\\Downloads\\VAIC source\\data-pipeline\\main\\full-data.csv",
+    "C:\\Users\\ku060\\Downloads\\VAIC source\\data-pipeline\\data\\workflows\\hon_nhan_gia_dinh\\summary.csv",
+    "C:\\Users\\ku060\\Downloads\\VAIC source\\data-pipeline\\data\\workflows\\hon_nhan_gia_dinh\\normalized.json",
+    "C:\\Users\\ku060\\Downloads\\VAIC source\\data-pipeline\\raw_data"
+  ],
+  "coverage": {
+    "expected_codes": [
+      "1.000094",
+      "1.000593",
+      "1.000736",
+      "1.000894",
+      "1.004746",
+      "2.000507",
+      "2.000513",
+      "2.000554",
+      "2.000698",
+      "2.000806",
+      "2.002189"
+    ],
+    "covered_codes": [
+      "1.000094",
+      "1.000593",
+      "1.000736",
+      "1.000894",
+      "1.004746",
+      "2.000507",
+      "2.000513",
+      "2.000554",
+      "2.000698",
+      "2.000806",
+      "2.002189"
+    ],
+    "missing_codes": []
+  },
+  "llm_contract": {
+    "role": "parse_user_answer_and_rephrase_question_only",
+    "required_output_schema": {
+      "intent": "hon_nhan_gia_dinh",
+      "current_node": "string",
+      "slot_updates": {
+        "subdomain_key": "ket_hon | giam_ho | nhan_cha_me_con | nhan_con_nuoi | cai_chinh_trich_luc_ho_tich | unknown",
+        "operation_key": "string",
+        "operation_group": "string"
+      },
+      "confidence": "0_to_1",
+      "needs_human_review": "boolean"
+    }
+  },
+  "entry_prompts": [
+    "Bạn đang cần làm việc về kết hôn, giám hộ, nhận cha mẹ con, nhận con nuôi hay cải chính hộ tịch?",
+    "Bạn muốn đăng ký mới, đăng ký lại, ghi chú, chấm dứt hay điều chỉnh thông tin hộ tịch?"
+  ],
+  "slots": [
+    {
+      "name": "subdomain_key",
+      "required": true,
+      "description": "Nhánh chính của nhóm Hôn nhân và gia đình."
+    },
+    {
+      "name": "operation_key",
+      "required": true,
+      "description": "Thao tác cụ thể ánh xạ trực tiếp tới thủ tục cuối cùng."
+    },
+    {
+      "name": "operation_group",
+      "required": false,
+      "description": "Nhóm thao tác để gom các thủ tục gần nhau cho UI và parser."
+    }
+  ],
+  "subdomain_catalog": [
+    {
+      "subdomain_key": "ket_hon",
+      "subdomain_label": "Kết hôn",
+      "event_id": 274,
+      "summary": "Nhóm thủ tục đăng ký kết hôn, đăng ký lại kết hôn và ghi chú kết hôn hoặc ly hôn đã được giải quyết ở nước ngoài."
+    }
+  ],
+  "decision_tree": {
+    "start_node": "family_subdomain",
+    "nodes": [
+      {
+        "id": "family_subdomain",
+        "type": "question",
+        "slot": "subdomain_key",
+        "question": "Bạn đang hỏi về kết hôn, giám hộ, nhận cha mẹ con, nhận con nuôi hay cải chính hộ tịch?",
+        "options": [
+          "ket_hon"
+        ],
+        "prefilled_value": "ket_hon"
+      },
+      {
+        "id": "family_operation",
+        "type": "question",
+        "slot": "operation_key",
+        "question": "Bạn cần làm thao tác nào cụ thể trong nhánh đã chọn?",
+        "options_by_subdomain": {
+          "ket_hon": [
+            {
+              "operation_key": "thu_tuc_dang_ky_ket_hon_co_yeu_to_nuoc_ngoai_tai_khu_vuc_bien_gioi",
+              "operation_group": "ket_hon_bien_gioi",
+              "procedure_code": "1.000094",
+              "procedure_title": "Thủ tục đăng ký kết hôn có yếu tố nước ngoài tại khu vực biên giới"
+            },
+            {
+              "operation_key": "thu_tuc_dang_ky_ket_hon_luu_dong",
+              "operation_group": "dang_ky_ket_hon_luu_dong",
+              "procedure_code": "1.000593",
+              "procedure_title": "Thủ tục đăng ký kết hôn lưu động"
+            },
+            {
+              "operation_key": "thu_tuc_ghi_vao_so_ho_tich_viec_ket_hon_cua_cong_dan_viet_nam_da_duoc_giai_quyet_tai_co_quan_co_tham_quyen_cua_nuoc_ngoai",
+              "operation_group": "ghi_chu_ket_hon",
+              "procedure_code": "1.000736",
+              "procedure_title": "Thủ tục ghi vào sổ hộ tịch việc kết hôn của công dân Việt Nam đã được giải quyết tại cơ quan có thẩm quyền của nước ngoài"
+            },
+            {
+              "operation_key": "thu_tuc_dang_ky_ket_hon",
+              "operation_group": "dang_ky_ket_hon",
+              "procedure_code": "1.000894",
+              "procedure_title": "Thủ tục đăng ký kết hôn"
+            },
+            {
+              "operation_key": "thu_tuc_dang_ky_lai_ket_hon",
+              "operation_group": "dang_ky_lai_ket_hon",
+              "procedure_code": "1.004746",
+              "procedure_title": "Thủ tục đăng ký lại kết hôn"
+            },
+            {
+              "operation_key": "thu_tuc_dang_ky_lai_ket_hon",
+              "operation_group": "dang_ky_lai_ket_hon",
+              "procedure_code": "2.000507",
+              "procedure_title": "Thủ tục đăng ký lại kết hôn"
+            },
+            {
+              "operation_key": "thu_tuc_dang_ky_lai_ket_hon_co_yeu_to_nuoc_ngoai",
+              "operation_group": "dang_ky_lai_ket_hon",
+              "procedure_code": "2.000513",
+              "procedure_title": "Thủ tục đăng ký lại kết hôn có yếu tố nước ngoài"
+            },
+            {
+              "operation_key": "thu_tuc_ghi_vao_so_ho_tich_viec_ly_hon_huy_viec_ket_hon_cua_cong_dan_viet_nam_da_duoc_giai_quyet_tai_co_quan_co_tham_quyen_cua_nuoc_ngoai",
+              "operation_group": "ghi_chu_ly_hon",
+              "procedure_code": "2.000554",
+              "procedure_title": "Thủ tục ghi vào Sổ hộ tịch việc ly hôn, hủy việc kết hôn của công dân Việt Nam đã được giải quyết tại cơ quan có thẩm quyền của nước ngoài"
+            },
+            {
+              "operation_key": "thu_tuc_ghi_vao_so_ho_tich_viec_ly_hon_huy_viec_ket_hon_cua_cong_dan_viet_nam_da_duoc_giai_quyet_tai_co_quan_co_tham_quyen_cua_nuoc_ngoai",
+              "operation_group": "ghi_chu_ly_hon",
+              "procedure_code": "2.000698",
+              "procedure_title": "Thủ tục ghi vào sổ hộ tịch việc ly hôn, huỷ việc kết hôn của công dân Việt Nam đã được giải quyết tại cơ quan có thẩm quyền của nước ngoài"
+            },
+            {
+              "operation_key": "thu_tuc_dang_ky_ket_hon_co_yeu_to_nuoc_ngoai",
+              "operation_group": "ket_hon_co_yeu_to_nuoc_ngoai",
+              "procedure_code": "2.000806",
+              "procedure_title": "Thủ tục đăng ký kết hôn có yếu tố nước ngoài"
+            },
+            {
+              "operation_key": "thu_tuc_ghi_vao_so_ho_tich_viec_ket_hon_cua_cong_dan_viet_nam_da_duoc_giai_quyet_tai_co_quan_co_tham_quyen_cua_nuoc_ngoai",
+              "operation_group": "ghi_chu_ket_hon",
+              "procedure_code": "2.002189",
+              "procedure_title": "Thủ tục ghi vào Sổ hộ tịch việc kết hôn của công dân Việt Nam đã được giải quyết tại cơ quan có thẩm quyền của nước ngoài"
+            }
+          ]
+        },
+        "options": [
+          "thu_tuc_dang_ky_ket_hon_co_yeu_to_nuoc_ngoai_tai_khu_vuc_bien_gioi",
+          "thu_tuc_dang_ky_ket_hon_luu_dong",
+          "thu_tuc_ghi_vao_so_ho_tich_viec_ket_hon_cua_cong_dan_viet_nam_da_duoc_giai_quyet_tai_co_quan_co_tham_quyen_cua_nuoc_ngoai",
+          "thu_tuc_dang_ky_ket_hon",
+          "thu_tuc_dang_ky_lai_ket_hon",
+          "thu_tuc_dang_ky_lai_ket_hon",
+          "thu_tuc_dang_ky_lai_ket_hon_co_yeu_to_nuoc_ngoai",
+          "thu_tuc_ghi_vao_so_ho_tich_viec_ly_hon_huy_viec_ket_hon_cua_cong_dan_viet_nam_da_duoc_giai_quyet_tai_co_quan_co_tham_quyen_cua_nuoc_ngoai",
+          "thu_tuc_ghi_vao_so_ho_tich_viec_ly_hon_huy_viec_ket_hon_cua_cong_dan_viet_nam_da_duoc_giai_quyet_tai_co_quan_co_tham_quyen_cua_nuoc_ngoai",
+          "thu_tuc_dang_ky_ket_hon_co_yeu_to_nuoc_ngoai",
+          "thu_tuc_ghi_vao_so_ho_tich_viec_ket_hon_cua_cong_dan_viet_nam_da_duoc_giai_quyet_tai_co_quan_co_tham_quyen_cua_nuoc_ngoai"
+        ]
+      }
+    ],
+    "routes": [
+      {
+        "route_id": "ket_hon-1_000094",
+        "conditions": {
+          "subdomain_key": "ket_hon",
+          "operation_key": "thu_tuc_dang_ky_ket_hon_co_yeu_to_nuoc_ngoai_tai_khu_vuc_bien_gioi"
+        },
+        "procedure_code": "1.000094",
+        "procedure_name": "Thủ tục đăng ký kết hôn có yếu tố nước ngoài tại khu vực biên giới",
+        "why_this_route": "Route trực tiếp cho nhu cầu 'Thủ tục đăng ký kết hôn có yếu tố nước ngoài tại khu vực biên giới' trong nhánh 'Kết hôn'."
+      },
+      {
+        "route_id": "ket_hon-1_000593",
+        "conditions": {
+          "subdomain_key": "ket_hon",
+          "operation_key": "thu_tuc_dang_ky_ket_hon_luu_dong"
+        },
+        "procedure_code": "1.000593",
+        "procedure_name": "Thủ tục đăng ký kết hôn lưu động",
+        "why_this_route": "Route trực tiếp cho nhu cầu 'Thủ tục đăng ký kết hôn lưu động' trong nhánh 'Kết hôn'."
+      },
+      {
+        "route_id": "ket_hon-1_000736",
+        "conditions": {
+          "subdomain_key": "ket_hon",
+          "operation_key": "thu_tuc_ghi_vao_so_ho_tich_viec_ket_hon_cua_cong_dan_viet_nam_da_duoc_giai_quyet_tai_co_quan_co_tham_quyen_cua_nuoc_ngoai"
+        },
+        "procedure_code": "1.000736",
+        "procedure_name": "Thủ tục ghi vào sổ hộ tịch việc kết hôn của công dân Việt Nam đã được giải quyết tại cơ quan có thẩm quyền của nước ngoài",
+        "why_this_route": "Route trực tiếp cho nhu cầu 'Thủ tục ghi vào sổ hộ tịch việc kết hôn của công dân Việt Nam đã được giải quyết tại cơ quan có thẩm quyền của nước ngoài' trong nhánh 'Kết hôn'."
+      },
+      {
+        "route_id": "ket_hon-1_000894",
+        "conditions": {
+          "subdomain_key": "ket_hon",
+          "operation_key": "thu_tuc_dang_ky_ket_hon"
+        },
+        "procedure_code": "1.000894",
+        "procedure_name": "Thủ tục đăng ký kết hôn",
+        "why_this_route": "Route trực tiếp cho nhu cầu 'Thủ tục đăng ký kết hôn' trong nhánh 'Kết hôn'."
+      },
+      {
+        "route_id": "ket_hon-1_004746",
+        "conditions": {
+          "subdomain_key": "ket_hon",
+          "operation_key": "thu_tuc_dang_ky_lai_ket_hon"
+        },
+        "procedure_code": "1.004746",
+        "procedure_name": "Thủ tục đăng ký lại kết hôn",
+        "why_this_route": "Route trực tiếp cho nhu cầu 'Thủ tục đăng ký lại kết hôn' trong nhánh 'Kết hôn'."
+      },
+      {
+        "route_id": "ket_hon-2_000507",
+        "conditions": {
+          "subdomain_key": "ket_hon",
+          "operation_key": "thu_tuc_dang_ky_lai_ket_hon"
+        },
+        "procedure_code": "2.000507",
+        "procedure_name": "Thủ tục đăng ký lại kết hôn",
+        "why_this_route": "Route trực tiếp cho nhu cầu 'Thủ tục đăng ký lại kết hôn' trong nhánh 'Kết hôn'."
+      },
+      {
+        "route_id": "ket_hon-2_000513",
+        "conditions": {
+          "subdomain_key": "ket_hon",
+          "operation_key": "thu_tuc_dang_ky_lai_ket_hon_co_yeu_to_nuoc_ngoai"
+        },
+        "procedure_code": "2.000513",
+        "procedure_name": "Thủ tục đăng ký lại kết hôn có yếu tố nước ngoài",
+        "why_this_route": "Route trực tiếp cho nhu cầu 'Thủ tục đăng ký lại kết hôn có yếu tố nước ngoài' trong nhánh 'Kết hôn'."
+      },
+      {
+        "route_id": "ket_hon-2_000554",
+        "conditions": {
+          "subdomain_key": "ket_hon",
+          "operation_key": "thu_tuc_ghi_vao_so_ho_tich_viec_ly_hon_huy_viec_ket_hon_cua_cong_dan_viet_nam_da_duoc_giai_quyet_tai_co_quan_co_tham_quyen_cua_nuoc_ngoai"
+        },
+        "procedure_code": "2.000554",
+        "procedure_name": "Thủ tục ghi vào Sổ hộ tịch việc ly hôn, hủy việc kết hôn của công dân Việt Nam đã được giải quyết tại cơ quan có thẩm quyền của nước ngoài",
+        "why_this_route": "Route trực tiếp cho nhu cầu 'Thủ tục ghi vào Sổ hộ tịch việc ly hôn, hủy việc kết hôn của công dân Việt Nam đã được giải quyết tại cơ quan có thẩm quyền của nước ngoài' trong nhánh 'Kết hôn'."
+      },
+      {
+        "route_id": "ket_hon-2_000698",
+        "conditions": {
+          "subdomain_key": "ket_hon",
+          "operation_key": "thu_tuc_ghi_vao_so_ho_tich_viec_ly_hon_huy_viec_ket_hon_cua_cong_dan_viet_nam_da_duoc_giai_quyet_tai_co_quan_co_tham_quyen_cua_nuoc_ngoai"
+        },
+        "procedure_code": "2.000698",
+        "procedure_name": "Thủ tục ghi vào sổ hộ tịch việc ly hôn, huỷ việc kết hôn của công dân Việt Nam đã được giải quyết tại cơ quan có thẩm quyền của nước ngoài",
+        "why_this_route": "Route trực tiếp cho nhu cầu 'Thủ tục ghi vào sổ hộ tịch việc ly hôn, huỷ việc kết hôn của công dân Việt Nam đã được giải quyết tại cơ quan có thẩm quyền của nước ngoài' trong nhánh 'Kết hôn'."
+      },
+      {
+        "route_id": "ket_hon-2_000806",
+        "conditions": {
+          "subdomain_key": "ket_hon",
+          "operation_key": "thu_tuc_dang_ky_ket_hon_co_yeu_to_nuoc_ngoai"
+        },
+        "procedure_code": "2.000806",
+        "procedure_name": "Thủ tục đăng ký kết hôn có yếu tố nước ngoài",
+        "why_this_route": "Route trực tiếp cho nhu cầu 'Thủ tục đăng ký kết hôn có yếu tố nước ngoài' trong nhánh 'Kết hôn'."
+      },
+      {
+        "route_id": "ket_hon-2_002189",
+        "conditions": {
+          "subdomain_key": "ket_hon",
+          "operation_key": "thu_tuc_ghi_vao_so_ho_tich_viec_ket_hon_cua_cong_dan_viet_nam_da_duoc_giai_quyet_tai_co_quan_co_tham_quyen_cua_nuoc_ngoai"
+        },
+        "procedure_code": "2.002189",
+        "procedure_name": "Thủ tục ghi vào Sổ hộ tịch việc kết hôn của công dân Việt Nam đã được giải quyết tại cơ quan có thẩm quyền của nước ngoài",
+        "why_this_route": "Route trực tiếp cho nhu cầu 'Thủ tục ghi vào Sổ hộ tịch việc kết hôn của công dân Việt Nam đã được giải quyết tại cơ quan có thẩm quyền của nước ngoài' trong nhánh 'Kết hôn'."
+      }
+    ]
+  },
+  "pre_submission_checks": [
+    {
+      "field_group": "marital_status",
+      "checks": [
+        "Thông tin nhân thân của các bên phải thống nhất giữa giấy tờ tùy thân, giấy xác nhận tình trạng hôn nhân và biểu mẫu nộp.",
+        "Các thủ tục có yếu tố nước ngoài phải làm rõ giấy tờ nước ngoài đã được hợp pháp hóa hoặc dịch chứng thực hay chưa."
+      ]
+    },
+    {
+      "field_group": "family_relationship",
+      "checks": [
+        "Nhóm nhận cha mẹ con phải có căn cứ chứng minh quan hệ và xác định rõ trường hợp kết hợp khai sinh hay không.",
+        "Nhóm giám hộ phải làm rõ căn cứ phát sinh, chấm dứt hoặc thay đổi giám hộ trước khi chọn thủ tục."
+      ]
+    },
+    {
+      "field_group": "adoption_civil_status",
+      "checks": [
+        "Nhóm nhận con nuôi phải xác định là trong nước, có yếu tố nước ngoài, đăng ký lại hay ghi chú kết quả từ nước ngoài.",
+        "Nhóm cải chính hộ tịch phải nêu rõ nội dung cần sửa đổi và hồ sơ gốc liên quan đến việc đăng ký hộ tịch ban đầu."
+      ]
+    }
+  ],
+  "subdomain_key": "ket_hon"
+}

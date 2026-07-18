@@ -1,0 +1,247 @@
+{
+  "schema_version": "1.0",
+  "domain": "cu_tru_giay_to",
+  "updated_at": "2026-07-18",
+  "source_files": [
+    "C:\\Users\\ku060\\Downloads\\VAIC source\\data-pipeline\\main\\full-data.csv",
+    "C:\\Users\\ku060\\Downloads\\VAIC source\\data-pipeline\\data\\workflows\\cu_tru_giay_to\\summary.csv",
+    "C:\\Users\\ku060\\Downloads\\VAIC source\\data-pipeline\\data\\workflows\\cu_tru_giay_to\\normalized.json",
+    "C:\\Users\\ku060\\Downloads\\VAIC source\\data-pipeline\\raw_data"
+  ],
+  "coverage": {
+    "expected_codes": [
+      "1.003197",
+      "1.004222",
+      "1.010038",
+      "1.010039",
+      "1.010041",
+      "1.013313",
+      "1.013314"
+    ],
+    "covered_codes": [
+      "1.003197",
+      "1.004222",
+      "1.010038",
+      "1.010039",
+      "1.010041",
+      "1.013313",
+      "1.013314"
+    ],
+    "missing_codes": []
+  },
+  "llm_contract": {
+    "role": "parse_user_answer_and_rephrase_question_only",
+    "required_output_schema": {
+      "intent": "cu_tru_giay_to",
+      "current_node": "string",
+      "slot_updates": {
+        "subdomain_key": "ho_khau | tam_tru | luu_tru | can_cuoc_chung_minh_nhan_dan | ho_chieu | tam_vang | unknown",
+        "operation_key": "string",
+        "operation_group": "string"
+      },
+      "confidence": "0_to_1",
+      "needs_human_review": "boolean"
+    }
+  },
+  "entry_prompts": [
+    "Bạn đang cần làm việc về cư trú, căn cước hay hộ chiếu?",
+    "Bạn muốn đăng ký, gia hạn, xóa, xác nhận thông tin, cấp lại giấy tờ hay xử lý giấy tờ bị mất?"
+  ],
+  "slots": [
+    {
+      "name": "subdomain_key",
+      "required": true,
+      "description": "Nhánh chính của nhóm Cư trú và giấy tờ tùy thân."
+    },
+    {
+      "name": "operation_key",
+      "required": true,
+      "description": "Thao tác cụ thể ánh xạ trực tiếp tới thủ tục cuối cùng."
+    },
+    {
+      "name": "operation_group",
+      "required": false,
+      "description": "Nhóm thao tác để gom các thủ tục gần nhau cho UI và parser."
+    }
+  ],
+  "subdomain_catalog": [
+    {
+      "subdomain_key": "ho_khau",
+      "subdomain_label": "Hộ khẩu",
+      "event_id": 269,
+      "summary": "Nhóm thủ tục thường trú, tách hộ, xác nhận và điều chỉnh thông tin cư trú liên quan đến nơi ở ổn định."
+    }
+  ],
+  "decision_tree": {
+    "start_node": "residence_identity_subdomain",
+    "nodes": [
+      {
+        "id": "residence_identity_subdomain",
+        "type": "question",
+        "slot": "subdomain_key",
+        "question": "Bạn đang hỏi về hộ khẩu, tạm trú, lưu trú, căn cước, hộ chiếu hay tạm vắng?",
+        "options": [
+          "ho_khau"
+        ],
+        "prefilled_value": "ho_khau"
+      },
+      {
+        "id": "residence_identity_operation",
+        "type": "question",
+        "slot": "operation_key",
+        "question": "Bạn cần làm thao tác nào cụ thể trong nhánh đã chọn?",
+        "options_by_subdomain": {
+          "ho_khau": [
+            {
+              "operation_key": "xoa_dang_ky_thuong_tru",
+              "operation_group": "dang_ky_thuong_tru",
+              "procedure_code": "1.003197",
+              "procedure_title": "Xóa đăng ký thường trú"
+            },
+            {
+              "operation_key": "dang_ky_thuong_tru",
+              "operation_group": "dang_ky_thuong_tru",
+              "procedure_code": "1.004222",
+              "procedure_title": "Đăng ký thường trú"
+            },
+            {
+              "operation_key": "tach_ho",
+              "operation_group": "tach_ho",
+              "procedure_code": "1.010038",
+              "procedure_title": "Tách hộ"
+            },
+            {
+              "operation_key": "dieu_chinh_thong_tin_ve_cu_tru_trong_co_so_du_lieu_ve_cu_tru",
+              "operation_group": "dieu_chinh_thong_tin_cu_tru",
+              "procedure_code": "1.010039",
+              "procedure_title": "Điều chỉnh thông tin về cư trú trong Cơ sở dữ liệu về cư trú"
+            },
+            {
+              "operation_key": "xac_nhan_thong_tin_ve_cu_tru",
+              "operation_group": "xac_nhan_thong_tin_cu_tru",
+              "procedure_code": "1.010041",
+              "procedure_title": "Xác nhận thông tin về cư trú"
+            },
+            {
+              "operation_key": "xac_nhan_noi_thuong_xuyen_dau_do_su_dung_phuong_tien_vao_muc_dich_de_o",
+              "operation_group": "xac_nhan_dieu_kien_thuong_tru_phuong_tien",
+              "procedure_code": "1.013313",
+              "procedure_title": "Xác nhận nơi thường xuyên đậu, đỗ; sử dụng phương tiện vào mục đích để ở"
+            },
+            {
+              "operation_key": "xac_nhan_ve_dieu_kien_dien_tich_binh_quan_nha_o_de_dang_ky_thuong_tru_vao_cho_o_do_thue_muon_o_nho_nha_o_dat_o_khong_co_tranh_chap_quyen_so_huu_nha_o_quyen_su_dung_dat_o_khong_thuoc_dia_diem_khong_duoc_dang_ky_thuong_tru_moi",
+              "operation_group": "dang_ky_thuong_tru",
+              "procedure_code": "1.013314",
+              "procedure_title": "Xác nhận về điều kiện diện tích bình quân nhà ở để đăng ký thường trú vào chỗ ở do thuê, mượn, ở nhờ; nhà ở, đất ở không có tranh chấp quyền sở hữu nhà ở, quyền sử dụng đất ở, không thuộc địa điểm không được đăng ký thường trú mới"
+            }
+          ]
+        },
+        "options": [
+          "xoa_dang_ky_thuong_tru",
+          "dang_ky_thuong_tru",
+          "tach_ho",
+          "dieu_chinh_thong_tin_ve_cu_tru_trong_co_so_du_lieu_ve_cu_tru",
+          "xac_nhan_thong_tin_ve_cu_tru",
+          "xac_nhan_noi_thuong_xuyen_dau_do_su_dung_phuong_tien_vao_muc_dich_de_o",
+          "xac_nhan_ve_dieu_kien_dien_tich_binh_quan_nha_o_de_dang_ky_thuong_tru_vao_cho_o_do_thue_muon_o_nho_nha_o_dat_o_khong_co_tranh_chap_quyen_so_huu_nha_o_quyen_su_dung_dat_o_khong_thuoc_dia_diem_khong_duoc_dang_ky_thuong_tru_moi"
+        ]
+      }
+    ],
+    "routes": [
+      {
+        "route_id": "ho_khau-1_003197",
+        "conditions": {
+          "subdomain_key": "ho_khau",
+          "operation_key": "xoa_dang_ky_thuong_tru"
+        },
+        "procedure_code": "1.003197",
+        "procedure_name": "Xóa đăng ký thường trú",
+        "why_this_route": "Route trực tiếp cho nhu cầu 'Xóa đăng ký thường trú' trong nhánh 'Hộ khẩu'."
+      },
+      {
+        "route_id": "ho_khau-1_004222",
+        "conditions": {
+          "subdomain_key": "ho_khau",
+          "operation_key": "dang_ky_thuong_tru"
+        },
+        "procedure_code": "1.004222",
+        "procedure_name": "Đăng ký thường trú",
+        "why_this_route": "Route trực tiếp cho nhu cầu 'Đăng ký thường trú' trong nhánh 'Hộ khẩu'."
+      },
+      {
+        "route_id": "ho_khau-1_010038",
+        "conditions": {
+          "subdomain_key": "ho_khau",
+          "operation_key": "tach_ho"
+        },
+        "procedure_code": "1.010038",
+        "procedure_name": "Tách hộ",
+        "why_this_route": "Route trực tiếp cho nhu cầu 'Tách hộ' trong nhánh 'Hộ khẩu'."
+      },
+      {
+        "route_id": "ho_khau-1_010039",
+        "conditions": {
+          "subdomain_key": "ho_khau",
+          "operation_key": "dieu_chinh_thong_tin_ve_cu_tru_trong_co_so_du_lieu_ve_cu_tru"
+        },
+        "procedure_code": "1.010039",
+        "procedure_name": "Điều chỉnh thông tin về cư trú trong Cơ sở dữ liệu về cư trú",
+        "why_this_route": "Route trực tiếp cho nhu cầu 'Điều chỉnh thông tin về cư trú trong Cơ sở dữ liệu về cư trú' trong nhánh 'Hộ khẩu'."
+      },
+      {
+        "route_id": "ho_khau-1_010041",
+        "conditions": {
+          "subdomain_key": "ho_khau",
+          "operation_key": "xac_nhan_thong_tin_ve_cu_tru"
+        },
+        "procedure_code": "1.010041",
+        "procedure_name": "Xác nhận thông tin về cư trú",
+        "why_this_route": "Route trực tiếp cho nhu cầu 'Xác nhận thông tin về cư trú' trong nhánh 'Hộ khẩu'."
+      },
+      {
+        "route_id": "ho_khau-1_013313",
+        "conditions": {
+          "subdomain_key": "ho_khau",
+          "operation_key": "xac_nhan_noi_thuong_xuyen_dau_do_su_dung_phuong_tien_vao_muc_dich_de_o"
+        },
+        "procedure_code": "1.013313",
+        "procedure_name": "Xác nhận nơi thường xuyên đậu, đỗ; sử dụng phương tiện vào mục đích để ở",
+        "why_this_route": "Route trực tiếp cho nhu cầu 'Xác nhận nơi thường xuyên đậu, đỗ; sử dụng phương tiện vào mục đích để ở' trong nhánh 'Hộ khẩu'."
+      },
+      {
+        "route_id": "ho_khau-1_013314",
+        "conditions": {
+          "subdomain_key": "ho_khau",
+          "operation_key": "xac_nhan_ve_dieu_kien_dien_tich_binh_quan_nha_o_de_dang_ky_thuong_tru_vao_cho_o_do_thue_muon_o_nho_nha_o_dat_o_khong_co_tranh_chap_quyen_so_huu_nha_o_quyen_su_dung_dat_o_khong_thuoc_dia_diem_khong_duoc_dang_ky_thuong_tru_moi"
+        },
+        "procedure_code": "1.013314",
+        "procedure_name": "Xác nhận về điều kiện diện tích bình quân nhà ở để đăng ký thường trú vào chỗ ở do thuê, mượn, ở nhờ; nhà ở, đất ở không có tranh chấp quyền sở hữu nhà ở, quyền sử dụng đất ở, không thuộc địa điểm không được đăng ký thường trú mới",
+        "why_this_route": "Route trực tiếp cho nhu cầu 'Xác nhận về điều kiện diện tích bình quân nhà ở để đăng ký thường trú vào chỗ ở do thuê, mượn, ở nhờ; nhà ở, đất ở không có tranh chấp quyền sở hữu nhà ở, quyền sử dụng đất ở, không thuộc địa điểm không được đăng ký thường trú mới' trong nhánh 'Hộ khẩu'."
+      }
+    ]
+  },
+  "pre_submission_checks": [
+    {
+      "field_group": "residence_information",
+      "checks": [
+        "Nhóm cư trú phải phân biệt rõ thường trú, tạm trú, lưu trú và tạm vắng trước khi chọn thủ tục.",
+        "Địa chỉ cư trú và giấy tờ chứng minh chỗ ở phải thống nhất giữa tờ khai, dữ liệu cư trú và hồ sơ đính kèm."
+      ]
+    },
+    {
+      "field_group": "identity_documents",
+      "checks": [
+        "Nhóm căn cước phải làm rõ là cấp mới, cấp đổi, cấp lại hay điều chỉnh/tích hợp thông tin.",
+        "Nhóm định danh điện tử cần xác định đúng thao tác cấp mức 2, khóa hay mở khóa căn cước điện tử."
+      ]
+    },
+    {
+      "field_group": "passport_context",
+      "checks": [
+        "Nhóm hộ chiếu phải xác định rõ làm trong nước hay tại cơ quan đại diện ở nước ngoài.",
+        "Các trường hợp mất hộ chiếu hoặc khôi phục giá trị sử dụng phải có căn cứ về tình trạng giấy tờ hiện tại."
+      ]
+    }
+  ],
+  "subdomain_key": "ho_khau"
+}

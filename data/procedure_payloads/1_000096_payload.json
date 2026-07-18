@@ -1,0 +1,285 @@
+{
+  "schema_version": "3.0",
+  "record_type": "public_service_procedure_payload",
+  "id": "procedure-1.000096",
+  "procedure_code": "1.000096",
+  "code": "1.000096",
+  "title": "Thủ tục đối với hàng hóa xuất khẩu có giá trị dưới năm triệu đồng Việt Nam và không có thuế xuất khẩu, trừ hàng hóa phải có giấy phép xuất khẩu hoặc thuộc đối tượng phải kiểm tra chuyên ngành gửi qua dịch vụ chuyển phát nhanh quốc tế",
+  "language": "vi",
+  "status": "generated_from_pipeline",
+  "field": "Hải quan",
+  "group_key": "suc_khoe_y_te",
+  "workflow_family": null,
+  "subflow": null,
+  "source": {
+    "source_url": "file:///C:/Users/ku060/Downloads/VAIC%20source/data-pipeline/raw_data/1_000096/1_000096_procedure_detail.md",
+    "source_markdown_path": "C:\\Users\\ku060\\Downloads\\VAIC source\\data-pipeline\\raw_data\\1_000096\\1_000096_procedure_detail.md",
+    "normalized_payload_path": "C:\\Users\\ku060\\Downloads\\VAIC source\\data-pipeline\\govease-unified\\data\\normalized_structured\\1_000096_normalized_structured.json",
+    "enriched_payload_path": "C:\\Users\\ku060\\Downloads\\VAIC source\\data-pipeline\\govease-unified\\data\\enriched_structured_priority\\1_000096_enriched_structured.json"
+  },
+  "scope": {
+    "included": "Thủ tục này thuộc nhóm y tế, thường cần đối chiếu thông tin người bệnh, đơn vị tiếp nhận hoặc quyền lợi chuyên ngành. Kết quả thường nhận được là Thông quan hàng hóa nhập khẩu, xuất khẩu. Thời gian xử lý tham khảo: 1 ngày.",
+    "not_included": []
+  },
+  "agency": {
+    "executing_agency": "Chi cục Hải quan khu vực",
+    "submission_place": null,
+    "receiving_places": []
+  },
+  "target_users": [
+    "Tổ chức (không bao gồm doanh nghiệp",
+    "HTX)"
+  ],
+  "submission_methods": [
+    {
+      "code": "ONLINE",
+      "label": "Trực tuyến",
+      "processing_time": "1 ngày",
+      "fee": null,
+      "description": null
+    },
+    {
+      "code": "IN_PERSON",
+      "label": "Trực tiếp",
+      "processing_time": "1 ngày",
+      "fee": null,
+      "description": null
+    }
+  ],
+  "processing_note": "Thời gian xử lý tham chiếu: 1 ngày. Nên xác định rõ đối tượng tham gia, quyền lợi hoặc nhu cầu điều chỉnh hồ sơ y tế trước khi nộp. Có thể chọn kênh nộp phù hợp: Trực tiếp, Trực tuyến. Hiện có khoảng 2 mục giấy tờ cần theo dõi trong checklist.",
+  "documents": {
+    "normally_required": [
+      {
+        "name": "Tờ khai hàng hóa xuất khẩu trị giá thấp: 01 bản chính",
+        "quantity": "1 bản chính, 0 bản sao",
+        "notes": [],
+        "group": "default",
+        "attachment_path": null
+      },
+      {
+        "name": "Hóa đơn thương mại (nếu có): 01 bản chụp",
+        "quantity": "0 bản chính, 1 bản sao",
+        "notes": [],
+        "group": "default",
+        "attachment_path": null
+      }
+    ],
+    "conditional": [],
+    "forms": [],
+    "presented": [],
+    "notes": [],
+    "summary": [
+      {
+        "group": "default",
+        "name": "Tờ khai hàng hóa xuất khẩu trị giá thấp: 01 bản chính",
+        "quantity": "1 bản chính, 0 bản sao",
+        "notes": [],
+        "attachment_path": null
+      },
+      {
+        "group": "default",
+        "name": "Hóa đơn thương mại (nếu có): 01 bản chụp",
+        "quantity": "0 bản chính, 1 bản sao",
+        "notes": [],
+        "attachment_path": null
+      }
+    ]
+  },
+  "steps": [
+    {
+      "order": 1,
+      "title": "Bước 1",
+      "description": "1.",
+      "example": null
+    },
+    {
+      "order": 2,
+      "title": "Bước 1:",
+      "description": "Bước 1: Doanh nghiệp kinh doanh dịch vụ chuyển phát nhanh quốc tế chuẩn bị hồ sơ dưới dạng Tờ khai tài liệu chứng từ.",
+      "example": null
+    },
+    {
+      "order": 3,
+      "title": "Bước 2:",
+      "description": "Bước 2: Chi cục Hải quan tiếp nhận Tờ khai tài liệu chứng từ theo bản giấy hoặc định dạng điện tử nếu đã nối mạng với cơ quan Hải quan và kiểm tra hồ sơ; đối chiếu các nội dung kê khai.",
+      "example": null
+    },
+    {
+      "order": 4,
+      "title": "Bước 3:",
+      "description": "Bước 3: Xác nhận thông quan và lưu giữ hồ sơ theo quy định.",
+      "example": null
+    }
+  ],
+  "input_fields": [
+    {
+      "field": "request_subject",
+      "label": "Đối tượng làm thủ tục",
+      "type": "string",
+      "required": true
+    },
+    {
+      "field": "insurance_or_medical_need",
+      "label": "Nhu cầu bảo hiểm hoặc y tế",
+      "type": "string",
+      "required": true
+    },
+    {
+      "field": "submission_channel_preference",
+      "label": "Kênh nộp dự kiến",
+      "type": "enum",
+      "required": false,
+      "options": [
+        "Trực tiếp",
+        "Trực tuyến"
+      ]
+    },
+    {
+      "field": "has_insurance_number",
+      "label": "Đã có mã BHXH/BHYT",
+      "type": "boolean",
+      "required": false
+    }
+  ],
+  "validation_rules": [
+    {
+      "id": "required-1",
+      "severity": "error",
+      "field": "request_subject",
+      "rule": "Trường bắt buộc phải có dữ liệu hợp lệ trước khi nộp.",
+      "message": "Thiếu trường bắt buộc: Đối tượng làm thủ tục."
+    },
+    {
+      "id": "required-2",
+      "severity": "error",
+      "field": "insurance_or_medical_need",
+      "rule": "Trường bắt buộc phải có dữ liệu hợp lệ trước khi nộp.",
+      "message": "Thiếu trường bắt buộc: Nhu cầu bảo hiểm hoặc y tế."
+    },
+    {
+      "id": "hint-1",
+      "severity": "warning",
+      "field": "general",
+      "rule": "Nên xác định trước kênh nộp hồ sơ để biết có cần bản giấy, bản điện tử hay xuất trình trực tiếp.",
+      "message": "Nên xác định trước kênh nộp hồ sơ để biết có cần bản giấy, bản điện tử hay xuất trình trực tiếp."
+    },
+    {
+      "id": "hint-2",
+      "severity": "warning",
+      "field": "general",
+      "rule": "Nên xác định đúng nhóm đối tượng, mã số bảo hiểm và quyền lợi áp dụng trước khi nộp.",
+      "message": "Nên xác định đúng nhóm đối tượng, mã số bảo hiểm và quyền lợi áp dụng trước khi nộp."
+    }
+  ],
+  "common_errors": [],
+  "clarifying_questions": [
+    {
+      "id": "clarify_1",
+      "question": "Bạn đang muốn đăng ký, điều chỉnh hay xác nhận quyền lợi y tế hoặc bảo hiểm nào?",
+      "purpose": "workflow_intake"
+    },
+    {
+      "id": "clarify_2",
+      "question": "Bạn đã có mã BHXH/BHYT hoặc thông tin đơn vị tiếp nhận liên quan chưa?",
+      "purpose": "workflow_intake"
+    }
+  ],
+  "legal_basis": [
+    {
+      "title": "Thông tư 191/2015/TT-BTC",
+      "code": "191/2015/TT-BTC"
+    },
+    {
+      "title": "Nghị định 08/2015/NĐ-CP",
+      "code": "08/2015/NĐ-CP"
+    },
+    {
+      "title": "Quy định về thủ tục hải quan; kiểm tra, giám sát hải quan; thuế xuất khẩu thuế nhập khẩu và quản lý thuế đối vớỉ hàng hoá xuất khẩu, nhập khẩu.",
+      "code": "38/2015/TT-BTC"
+    },
+    {
+      "title": "Luật 54/2014/QH13",
+      "code": "54/2014/QH13"
+    },
+    {
+      "title": "Nghị định số 187/2013/NĐ-CP",
+      "code": "187/2013/NĐ-CP"
+    }
+  ],
+  "legal_bases": [
+    {
+      "title": "Thông tư 191/2015/TT-BTC",
+      "code": "191/2015/TT-BTC"
+    },
+    {
+      "title": "Nghị định 08/2015/NĐ-CP",
+      "code": "08/2015/NĐ-CP"
+    },
+    {
+      "title": "Quy định về thủ tục hải quan; kiểm tra, giám sát hải quan; thuế xuất khẩu thuế nhập khẩu và quản lý thuế đối vớỉ hàng hoá xuất khẩu, nhập khẩu.",
+      "code": "38/2015/TT-BTC"
+    },
+    {
+      "title": "Luật 54/2014/QH13",
+      "code": "54/2014/QH13"
+    },
+    {
+      "title": "Nghị định số 187/2013/NĐ-CP",
+      "code": "187/2013/NĐ-CP"
+    }
+  ],
+  "faq": [
+    {
+      "question": "Có thể nộp qua kênh nào?",
+      "answer": "Các kênh hiện có: Trực tiếp, Trực tuyến."
+    },
+    {
+      "question": "Thời gian xử lý tham chiếu là bao lâu?",
+      "answer": "Thời gian xử lý tham chiếu hiện có là 1 ngày."
+    },
+    {
+      "question": "Kết quả chính của thủ tục là gì?",
+      "answer": "Kết quả chính được trích xuất là Thông quan hàng hóa nhập khẩu, xuất khẩu."
+    }
+  ],
+  "guidance": {
+    "highlight_documents": [
+      {
+        "bucket": "required",
+        "name": "Tờ khai hàng hóa xuất khẩu trị giá thấp: 01 bản chính",
+        "conditions": [],
+        "attachment_path": null
+      },
+      {
+        "bucket": "required",
+        "name": "Hóa đơn thương mại (nếu có): 01 bản chụp",
+        "conditions": [],
+        "attachment_path": null
+      }
+    ],
+    "special_cases": [],
+    "common_errors": [],
+    "validation_hints": [
+      "Nên xác định trước kênh nộp hồ sơ để biết có cần bản giấy, bản điện tử hay xuất trình trực tiếp.",
+      "Nên xác định đúng nhóm đối tượng, mã số bảo hiểm và quyền lợi áp dụng trước khi nộp."
+    ]
+  },
+  "next_steps": {
+    "summary": "Nên xác định rõ đối tượng tham gia, quyền lợi hoặc nhu cầu điều chỉnh hồ sơ y tế trước khi nộp. Có thể chọn kênh nộp phù hợp: Trực tiếp, Trực tuyến. Hiện có khoảng 2 mục giấy tờ cần theo dõi trong checklist.",
+    "time_badge": "1 ngày",
+    "result_label": "Thông quan hàng hóa nhập khẩu, xuất khẩu",
+    "primary_channel": "online",
+    "channels": [
+      "in_person",
+      "online"
+    ]
+  },
+  "notes": [],
+  "provenance": {
+    "pipeline": "raw->structured->normalized->enriched->ui_api_payload",
+    "normalizer_version": "0.2.0",
+    "enricher_version": "0.2.0",
+    "mapping_notes": "excluded_from_clean_workflow_dataset",
+    "supported_group": true
+  }
+}

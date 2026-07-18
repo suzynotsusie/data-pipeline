@@ -1,0 +1,111 @@
+{
+  "schema_version": "1.0",
+  "enricher_version": "0.2.0",
+  "source": {
+    "procedure_code": "1.014469",
+    "title": "Thẩm định, phê duyệt dự án, kế hoạch hỗ trợ phát triển sản xuất liên kết theo chuỗi giá trị thuộc các Chương trình mục tiêu quốc gia trên địa bàn tỉnh Hà Tĩnh giai đoạn 2024 - 2025 (Đối với dự án, kế hoạch liên kết thực hiện trên địa bàn 02 xã, phường trở lên hoặc dự án, kế hoạch liên kết do cơ quan cấp tỉnh được bố trí vốn)025 (Đối với dự án, kế hoạch liên kết thực hiện trên địa bàn 02 xã, phường trở lên hoặc dự án, kế hoạch liên kết do cơ quan cấp tỉnh được bố trí vốn)",
+    "group_key": "suc_khoe_y_te",
+    "workflow_family": null,
+    "subflow": null
+  },
+  "experience": {
+    "entry_label": "Hỗ trợ y tế và bảo hiểm",
+    "overview_summary": "Thủ tục này thuộc nhóm y tế, thường cần đối chiếu thông tin người bệnh, đơn vị tiếp nhận hoặc quyền lợi chuyên ngành. Kết quả thường nhận được là Quyết định phê duyệt dự án, kế hoạch hỗ trợ phát triển sản xuất liên kết theo chuỗi giá trị. Thời gian xử lý tham khảo: 13 ngày.",
+    "next_step_summary": "Nên xác định rõ đối tượng tham gia, quyền lợi hoặc nhu cầu điều chỉnh hồ sơ y tế trước khi nộp. Có thể chọn kênh nộp phù hợp: Trực tiếp, Trực tuyến, Dịch vụ bưu chính. Hiện có khoảng 14 mục giấy tờ cần theo dõi trong checklist.",
+    "tone": "supportive_public_service"
+  },
+  "guidance": {
+    "highlight_documents": [
+      {
+        "bucket": "required",
+        "name": "Đơn đề nghị hỗ trợ thực hiện dự án, kế hoạch liên kết (theo mẫu BM.NQ-PTNT.05.06);",
+        "conditions": [],
+        "attachment_path": null
+      },
+      {
+        "bucket": "required",
+        "name": "Dự án, kế hoạch phát triển sản xuất liên kết (theo mẫu BM.NQ-PTNT.05.07);",
+        "conditions": [],
+        "attachment_path": null
+      },
+      {
+        "bucket": "required",
+        "name": "Bản sao Giấy chứng nhận đăng ký doanh nghiệp hoặc Giấy chứng nhận đăng ký hợp tác xã hoặc Quyết định thành lập (được chứng thực hoặc xuất trình bản chính để đối chiếu)",
+        "conditions": [],
+        "attachment_path": null
+      },
+      {
+        "bucket": "required",
+        "name": "Hồ sơ năng lực của đơn vị chủ trì liên kết (theo Mẫu B1.3 tại Phụ lục ban hành kèm theo Thông tư số 10/2022/TT-BYT ngày 22 tháng 9 năm 2022 của Bộ trưởng Bộ Y tế hướng dẫn triển khai nội dung Đầu tư, hỗ trợ phát triển vùng trồng dược liệu quý thuộc Chương trình mục tiêu quốc gia phát triển kinh tế - xã hội vùng đồng bào dân tộc thiểu số và miền núi giai đoạn 2021-2030, giai đoạn I: từ năm 2021 đến năm 2025);",
+        "conditions": [],
+        "attachment_path": null
+      },
+      {
+        "bucket": "required",
+        "name": "Bản sao giấy chứng nhận (được chứng thực hoặc xuất trình bản chính để đối chiếu) hoặc cam kết về tiêu chuẩn chất lượng sản phẩm, hàng hóa, dịch vụ;",
+        "conditions": [],
+        "attachment_path": null
+      },
+      {
+        "bucket": "required",
+        "name": "Hợp đồng liên kết giữa đơn vị chủ trì liên kết và đại diện các đối tượng tham gia liên kết;.",
+        "conditions": [],
+        "attachment_path": null
+      }
+    ],
+    "special_cases": [
+      "Có thể cần đối chiếu thông tin thửa đất hoặc giấy chứng nhận"
+    ],
+    "common_errors": [
+      "Điền sai mẫu tờ khai hoặc chọn sai biểu mẫu đi kèm.",
+      "Thông tin thửa đất, tài sản hoặc giấy chứng nhận chưa khớp với hồ sơ hiện có."
+    ],
+    "validation_hints": [
+      "Nên xác định trước kênh nộp hồ sơ để biết có cần bản giấy, bản điện tử hay xuất trình trực tiếp.",
+      "Nên xác định đúng nhóm đối tượng, mã số bảo hiểm và quyền lợi áp dụng trước khi nộp."
+    ]
+  },
+  "intake": {
+    "candidate_input_fields": [
+      {
+        "field_id": "request_subject",
+        "label": "Đối tượng làm thủ tục",
+        "field_type": "text",
+        "required": true
+      },
+      {
+        "field_id": "insurance_or_medical_need",
+        "label": "Nhu cầu bảo hiểm hoặc y tế",
+        "field_type": "text",
+        "required": true
+      },
+      {
+        "field_id": "submission_channel_preference",
+        "label": "Kênh nộp dự kiến",
+        "field_type": "enum",
+        "required": false
+      },
+      {
+        "field_id": "has_insurance_number",
+        "label": "Đã có mã BHXH/BHYT",
+        "field_type": "boolean",
+        "required": false
+      }
+    ],
+    "suggested_clarifying_questions": [
+      "Bạn đang muốn đăng ký, điều chỉnh hay xác nhận quyền lợi y tế hoặc bảo hiểm nào?",
+      "Bạn đã có mã BHXH/BHYT hoặc thông tin đơn vị tiếp nhận liên quan chưa?"
+    ]
+  },
+  "ui_hints": {
+    "primary_channel": "in_person",
+    "result_label": "Quyết định phê duyệt dự án, kế hoạch hỗ trợ phát triển sản xuất liên kết theo chuỗi giá trị",
+    "time_badge": "13 ngày",
+    "document_count_badge": 14
+  },
+  "provenance": {
+    "generator": "workflow_domain_enricher",
+    "derivation_mode": "rule_based_semantic_enrichment",
+    "supported_group": true
+  }
+}

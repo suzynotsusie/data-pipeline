@@ -1,0 +1,957 @@
+{
+  "schema_version": "3.0",
+  "record_type": "public_service_procedure_payload",
+  "id": "procedure-1.012289",
+  "procedure_code": "1.012289",
+  "code": "1.012289",
+  "title": "Cấp mới giấy phép hành nghề trong giai đoạn chuyển tiếp đối với hồ sơ nộp từ ngày 01 tháng 01 năm 2024 đến thời điểm kiểm tra đánh giá năng lực hành nghề đối với các chức danh bác sỹ, y sỹ, điều dưỡng, hộ sinh, kỹ thuật y, dinh dưỡng lâm sàng, cấp cứu viên ngoại viện, tâm lý lâm sàng",
+  "language": "vi",
+  "status": "generated_from_pipeline",
+  "field": "Khám bệnh, chữa bệnh",
+  "group_key": "suc_khoe_y_te",
+  "workflow_family": null,
+  "subflow": null,
+  "source": {
+    "source_url": "file:///C:/Users/ku060/Downloads/VAIC%20source/data-pipeline/raw_data/1_012289/1_012289_procedure_detail.md",
+    "source_markdown_path": "C:\\Users\\ku060\\Downloads\\VAIC source\\data-pipeline\\raw_data\\1_012289\\1_012289_procedure_detail.md",
+    "normalized_payload_path": "C:\\Users\\ku060\\Downloads\\VAIC source\\data-pipeline\\govease-unified\\data\\normalized_structured\\1_012289_normalized_structured.json",
+    "enriched_payload_path": "C:\\Users\\ku060\\Downloads\\VAIC source\\data-pipeline\\govease-unified\\data\\enriched_structured_priority\\1_012289_enriched_structured.json"
+  },
+  "scope": {
+    "included": "Thủ tục này thuộc nhóm y tế, thường cần đối chiếu thông tin người bệnh, đơn vị tiếp nhận hoặc quyền lợi chuyên ngành. Kết quả thường nhận được là Giấy phép hành nghề. Thời gian xử lý tham khảo: 20 ngày làm việc.",
+    "not_included": []
+  },
+  "agency": {
+    "executing_agency": "Cục Quản lý Khám chữa bệnh - Bộ Y tế, Cục Quản lý Y, Dược cổ truyền - Bộ Y tế",
+    "submission_place": null,
+    "receiving_places": []
+  },
+  "target_users": [
+    "Công dân Việt Nam",
+    "Người nước ngoài cư trú tại Việt Nam",
+    "Người nước ngoài",
+    "Cán bộ",
+    "công chức",
+    "viên chức",
+    "Người Việt Nam định cư ở nước ngoài"
+  ],
+  "submission_methods": [
+    {
+      "code": "IN_PERSON",
+      "label": "Trực tiếp",
+      "processing_time": "20 ngày làm việc",
+      "fee": null,
+      "description": "(Thu mức phí này trong giai đoạn từ 01/7/2025 đến hết ngày 31/12/2026 theo quy định tại Thông tư số 64/2025/TT-BTC)"
+    },
+    {
+      "code": "ONLINE",
+      "label": "Trực tuyến",
+      "processing_time": "20 ngày làm việc",
+      "fee": null,
+      "description": "(Thu mức phí này trong giai đoạn từ 01/7/2025 đến hết ngày 31/12/2026 theo quy định tại Thông tư số 64/2025/TT-BTC)"
+    },
+    {
+      "code": "POSTAL",
+      "label": "Dịch vụ bưu chính",
+      "processing_time": "20 ngày làm việc",
+      "fee": null,
+      "description": "(Thu mức phí này trong giai đoạn từ 01/7/2025 đến hết ngày 31/12/2026 theo quy định tại Thông tư số 64/2025/TT-BTC)"
+    }
+  ],
+  "processing_note": "Thời gian xử lý tham chiếu: 20 ngày làm việc. Nên xác định rõ đối tượng tham gia, quyền lợi hoặc nhu cầu điều chỉnh hồ sơ y tế trước khi nộp. Có thể chọn kênh nộp phù hợp: Trực tiếp, Trực tuyến, Dịch vụ bưu chính. Hiện có khoảng 35 mục giấy tờ cần theo dõi trong checklist.",
+  "documents": {
+    "normally_required": [
+      {
+        "name": "a) Đơn theo Mẫu 08 Phụ lục I ban hành kèm theo Nghị định số 96/2023/NĐ-CP.",
+        "quantity": "1 bản chính, 0 bản sao",
+        "notes": [],
+        "group": "1. Trường hợp 1: Hồ sơ đề nghị cấp mới giấy phép hành nghề đối với trường hợp người lần đầu tiên đề nghị cấp giấy phép hành nghề quy định tại điểm a, điểm b khoản 1 Điều 30 của Luật Khám bệnh:",
+        "attachment_path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/1_012289/M%E1%BA%ABu%2008%20PL%20I%20ND%2096.docx"
+      },
+      {
+        "name": "a) Đơn theo Mẫu 08 Phụ lục I ban hành kèm theo Nghị định số 96/2023/NĐ-CP.",
+        "quantity": "1 bản chính, 0 bản sao",
+        "notes": [],
+        "group": "2. Trường hợp 2: Hồ sơ đề nghị cấp mới giấy phép hành nghề đối với các trường hợp quy định tại điểm d, đ khoản 1 Điều 126 và các trường hợp giấy phép hành nghề bị thu hồi theo quy định tại điểm c khoản 2 Điều 137, điểm c khoản 3 Điều 137, điểm b khoản 4 Điều 137, khoản 7 Điều 137, khoản 8 Điều 137, khoản 9 Điều 137, điểm c khoản 10 Điều 137 Nghị định số 96/2023/NĐ-CP gồm:",
+        "attachment_path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/1_012289/M%E1%BA%ABu%2008%20PL%20I%20ND%2096.docx"
+      },
+      {
+        "name": "a) Đơn theo Mẫu 08 Phụ lục I ban hành kèm theo Nghị định số 96/2023/NĐ-CP.",
+        "quantity": "1 bản chính, 0 bản sao",
+        "notes": [],
+        "group": "3. Trường hợp 3: Hồ sơ đề nghị cấp mới giấy phép hành nghề đối với trường hợp giấy phép hành nghề bị thu hồi theo quy định tại điểm c khoản 6 Điều 137 Nghị định số 96/2023/NĐ-CP do thuộc một trong các trường hợp quy định tại các khoản 1, 2, 3, 4 hoặc 6 Điều 20 của Luật Khám bệnh, chữa bệnh (điểm đ khoản 1 Điều 35 của Luật Khám bệnh, chữa bệnh):",
+        "attachment_path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/1_012289/M%E1%BA%ABu%2008%20PL%20I%20ND%2096.docx"
+      },
+      {
+        "name": "a) Đơn theo Mẫu 08 Phụ lục I ban hành kèm theo Nghị định số 96/2023/NĐ-CP.",
+        "quantity": "1 bản chính, 0 bản sao",
+        "notes": [],
+        "group": "4. Trường hợp 4: Hồ sơ đề nghị cấp mới giấy phép hành nghề theo quy định tại điểm a khoản 7 Điều 125 Nghị định số 96/2023/NĐ-CP:",
+        "attachment_path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/1_012289/M%E1%BA%ABu%2008%20PL%20I%20ND%2096.docx"
+      }
+    ],
+    "conditional": [
+      {
+        "condition": "d) Bản chính hoặc bản sao hợp lệ giấy khám sức khỏe do cơ sở khám bệnh, chữa bệnh có đủ điều kiện cấp (không áp dụng đối với trường hợp kết quả khám sức khỏe đã được kết nối, chia sẻ trên Hệ thống thông tin về quản lý hoạt động khám bệnh, chữa bệnh hoặc cơ sở dữ liệu quốc gia về y tế) hoặc bản sao hợp lệ giấy phép lao động đối với trường hợp phải có giấy phép lao động theo quy định của Bộ luật Lao động.",
+        "document": "d) Bản chính hoặc bản sao hợp lệ giấy khám sức khỏe do cơ sở khám bệnh, chữa bệnh có đủ điều kiện cấp (không áp dụng đối với trường hợp kết quả khám sức khỏe đã được kết nối, chia sẻ trên Hệ thống thông tin về quản lý hoạt động khám bệnh, chữa bệnh hoặc cơ sở dữ liệu quốc gia về y tế) hoặc bản sao hợp lệ giấy phép lao động đối với trường hợp phải có giấy phép lao động theo quy định của Bộ luật Lao động.",
+        "quantity": "1 bản chính, 1 bản sao",
+        "notes": [],
+        "attachment_path": null
+      },
+      {
+        "condition": "b) Bản sao hợp lệ của một trong các giấy tờ sau: - Văn bằng chuyên môn (không áp dụng đối với trường hợp văn bằng chuyên môn đã được kết nối, chia sẻ trên Hệ thống thông tin về quản lý hoạt động khám bệnh, chữa bệnh hoặc cơ sở dữ liệu quốc gia về y tế); - Giấy phép hành nghề đã được thừa nhận theo quy định tại Điều 37 Nghị định số 96/2023/NĐ-CP (không áp dụng đối với trường hợp kết quả thừa nhận giấy phép hành nghề đã được kết nối, chia sẻ trên Hệ thống thông tin về quản lý hoạt động khám bệnh, chữa bệnh hoặc cơ sở dữ liệu quốc gia về y tế).",
+        "document": "b) Bản sao hợp lệ của một trong các giấy tờ sau: - Văn bằng chuyên môn (không áp dụng đối với trường hợp văn bằng chuyên môn đã được kết nối, chia sẻ trên Hệ thống thông tin về quản lý hoạt động khám bệnh, chữa bệnh hoặc cơ sở dữ liệu quốc gia về y tế); - Giấy phép hành nghề đã được thừa nhận theo quy định tại Điều 37 Nghị định số 96/2023/NĐ-CP (không áp dụng đối với trường hợp kết quả thừa nhận giấy phép hành nghề đã được kết nối, chia sẻ trên Hệ thống thông tin về quản lý hoạt động khám bệnh, chữa bệnh hoặc cơ sở dữ liệu quốc gia về y tế).",
+        "quantity": "0 bản chính, 1 bản sao",
+        "notes": [],
+        "attachment_path": null
+      },
+      {
+        "condition": "g) Bản chính hoặc bản sao hợp lệ giấy xác nhận hoàn thành quá trình thực hành theo Mẫu 07 Phụ lục I ban hành kèm theo Nghị định số 96/2023/NĐ-CP đối với trường hợp quy định tại điểm a, c khoản 1, khoản 4 Điều 125 Nghị định số 96/2023/NĐ-CP (không áp dụng đối với trường hợp kết quả thực hành đã được kết nối, chia sẻ trên Hệ thống thông tin về quản lý hoạt động khám bệnh, chữa bệnh hoặc cơ sở dữ liệu quốc gia về y tế).",
+        "document": "g) Bản chính hoặc bản sao hợp lệ giấy xác nhận hoàn thành quá trình thực hành theo Mẫu 07 Phụ lục I ban hành kèm theo Nghị định số 96/2023/NĐ-CP đối với trường hợp quy định tại điểm a, c khoản 1, khoản 4 Điều 125 Nghị định số 96/2023/NĐ-CP (không áp dụng đối với trường hợp kết quả thực hành đã được kết nối, chia sẻ trên Hệ thống thông tin về quản lý hoạt động khám bệnh, chữa bệnh hoặc cơ sở dữ liệu quốc gia về y tế).",
+        "quantity": "1 bản chính, 1 bản sao",
+        "notes": [],
+        "attachment_path": null
+      },
+      {
+        "condition": "đ) Bản sao hợp lệ của một trong các giấy tờ sau đây: - Giấy chứng nhận biết tiếng Việt thành thạo theo quy định tại Điều 138 Nghị định số 96/2023/NĐ-CP (không áp dụng đối với trường hợp giấy chứng nhận đã được kết nối, chia sẻ trên Hệ thống thông tin về quản lý hoạt động khám bệnh, chữa bệnh hoặc cơ sở dữ liệu quốc gia về y tế); - Giấy chứng nhận đủ trình độ phiên dịch của người phiên dịch theo quy định tại Điều 139 Nghị định số 96/2023/NĐ-CP đối với trường hợp người nước ngoài không biết tiếng Việt thành thạo (không áp dụng đối với trường hợp giấy chứng nhận đã được kết nối, chia sẻ trên Hệ thống thông tin về quản lý hoạt động khám bệnh, chữa bệnh hoặc cơ sở dữ liệu quốc gia về y tế), kèm theo hợp đồng lao động của người phiên dịch với cơ sở khám bệnh, chữa bệnh nơi người nước ngoài đó dự kiến làm việc.",
+        "document": "đ) Bản sao hợp lệ của một trong các giấy tờ sau đây: - Giấy chứng nhận biết tiếng Việt thành thạo theo quy định tại Điều 138 Nghị định số 96/2023/NĐ-CP (không áp dụng đối với trường hợp giấy chứng nhận đã được kết nối, chia sẻ trên Hệ thống thông tin về quản lý hoạt động khám bệnh, chữa bệnh hoặc cơ sở dữ liệu quốc gia về y tế); - Giấy chứng nhận đủ trình độ phiên dịch của người phiên dịch theo quy định tại Điều 139 Nghị định số 96/2023/NĐ-CP đối với trường hợp người nước ngoài không biết tiếng Việt thành thạo (không áp dụng đối với trường hợp giấy chứng nhận đã được kết nối, chia sẻ trên Hệ thống thông tin về quản lý hoạt động khám bệnh, chữa bệnh hoặc cơ sở dữ liệu quốc gia về y tế), kèm theo hợp đồng lao động của người phiên dịch với cơ sở khám bệnh, chữa bệnh nơi người nước ngoài đó dự kiến làm việc.",
+        "quantity": "0 bản chính, 1 bản sao",
+        "notes": [],
+        "attachment_path": null
+      },
+      {
+        "condition": "e) Sơ yếu lý lịch tự thuật của người hành nghề theo Mẫu 09 Phụ lục I ban hành kèm theo Nghị định số 96/2023/NĐ-CP (không áp dụng đối với trường hợp lý lịch của người hành nghề đã được kết nối, chia sẻ trên Hệ thống thông tin về quản lý hoạt động khám bệnh, chữa bệnh hoặc cơ sở dữ liệu quốc gia về y tế).",
+        "document": "e) Sơ yếu lý lịch tự thuật của người hành nghề theo Mẫu 09 Phụ lục I ban hành kèm theo Nghị định số 96/2023/NĐ-CP (không áp dụng đối với trường hợp lý lịch của người hành nghề đã được kết nối, chia sẻ trên Hệ thống thông tin về quản lý hoạt động khám bệnh, chữa bệnh hoặc cơ sở dữ liệu quốc gia về y tế).",
+        "quantity": "1 bản chính, 0 bản sao",
+        "notes": [],
+        "attachment_path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/1_012289/M%E1%BA%ABu%2009%20PL1.docx"
+      },
+      {
+        "condition": "h) 02 ảnh chân dung cỡ 04 cm x 06 cm, chụp trên nền trắng trong thời gian không quá 06 tháng tính đến thời điểm nộp hồ sơ đề nghị cấp mới giấy phép hành nghề (không áp dụng đối với trường hợp người nộp hồ sơ đã đăng tải ảnh khi thực hiện thủ tục hành chính trên môi trường điện tử).",
+        "document": "h) 02 ảnh chân dung cỡ 04 cm x 06 cm, chụp trên nền trắng trong thời gian không quá 06 tháng tính đến thời điểm nộp hồ sơ đề nghị cấp mới giấy phép hành nghề (không áp dụng đối với trường hợp người nộp hồ sơ đã đăng tải ảnh khi thực hiện thủ tục hành chính trên môi trường điện tử).",
+        "quantity": "1 bản chính, 0 bản sao",
+        "notes": [],
+        "attachment_path": null
+      },
+      {
+        "condition": "c) Trường hợp đề nghị cấp giấy phép hành nghề với phạm vi hành nghề chuyên khoa ngoài giấy tờ quy định tại điểm b khoản này phải nộp thêm bản sao hợp lệ của một trong các văn bằng đào tạo chuyên khoa theo quy định tại điểm b, c, d, đ hoặc e khoản 1 Điều 127 Nghị định số 96/2023/NĐ-CP (không áp dụng đối với trường hợp văn bằng chuyên khoa đã được kết nối, chia sẻ trên Hệ thống thông tin về quản lý hoạt động khám bệnh, chữa bệnh hoặc cơ sở dữ liệu quốc gia về y tế).",
+        "document": "c) Trường hợp đề nghị cấp giấy phép hành nghề với phạm vi hành nghề chuyên khoa ngoài giấy tờ quy định tại điểm b khoản này phải nộp thêm bản sao hợp lệ của một trong các văn bằng đào tạo chuyên khoa theo quy định tại điểm b, c, d, đ hoặc e khoản 1 Điều 127 Nghị định số 96/2023/NĐ-CP (không áp dụng đối với trường hợp văn bằng chuyên khoa đã được kết nối, chia sẻ trên Hệ thống thông tin về quản lý hoạt động khám bệnh, chữa bệnh hoặc cơ sở dữ liệu quốc gia về y tế).",
+        "quantity": "1 bản chính, 0 bản sao",
+        "notes": [],
+        "attachment_path": null
+      },
+      {
+        "condition": "b) Bản sao hợp lệ của một trong các giấy tờ sau: - Văn bằng chuyên môn (không áp dụng đối với trường hợp văn bằng chuyên môn đã được kết nối, chia sẻ trên Hệ thống thông tin về quản lý hoạt động khám bệnh, chữa bệnh hoặc cơ sở dữ liệu quốc gia về y tế); - Giấy phép hành nghề đã được thừa nhận theo quy định tại Điều 37 Nghị định số 96/2023/NĐ-CP (không áp dụng đối với trường hợp kết quả thừa nhận giấy phép hành nghề đã được kết nối, chia sẻ trên Hệ thống thông tin về quản lý hoạt động khám bệnh, chữa bệnh hoặc cơ sở dữ liệu quốc gia về y tế).",
+        "document": "b) Bản sao hợp lệ của một trong các giấy tờ sau: - Văn bằng chuyên môn (không áp dụng đối với trường hợp văn bằng chuyên môn đã được kết nối, chia sẻ trên Hệ thống thông tin về quản lý hoạt động khám bệnh, chữa bệnh hoặc cơ sở dữ liệu quốc gia về y tế); - Giấy phép hành nghề đã được thừa nhận theo quy định tại Điều 37 Nghị định số 96/2023/NĐ-CP (không áp dụng đối với trường hợp kết quả thừa nhận giấy phép hành nghề đã được kết nối, chia sẻ trên Hệ thống thông tin về quản lý hoạt động khám bệnh, chữa bệnh hoặc cơ sở dữ liệu quốc gia về y tế).",
+        "quantity": "0 bản chính, 1 bản sao",
+        "notes": [],
+        "attachment_path": null
+      },
+      {
+        "condition": "Bản chính hoặc bản sao hợp lệ giấy khám sức khỏe do cơ sở khám bệnh, chữa bệnh có đủ điều kiện cấp (không áp dụng đối với trường hợp kết quả khám sức khỏe đã được kết nối, chia sẻ trên hệ thống thông tin về quản lý hoạt động khám bệnh, chữa bệnh hoặc cơ sở dữ liệu quốc gia về y tế) hoặc bản sao hợp lệ giấy phép lao động đối với trường hợp phải có giấy phép lao động theo quy định của Bộ luật Lao động",
+        "document": "Bản chính hoặc bản sao hợp lệ giấy khám sức khỏe do cơ sở khám bệnh, chữa bệnh có đủ điều kiện cấp (không áp dụng đối với trường hợp kết quả khám sức khỏe đã được kết nối, chia sẻ trên hệ thống thông tin về quản lý hoạt động khám bệnh, chữa bệnh hoặc cơ sở dữ liệu quốc gia về y tế) hoặc bản sao hợp lệ giấy phép lao động đối với trường hợp phải có giấy phép lao động theo quy định của Bộ luật Lao động",
+        "quantity": "1 bản chính, 1 bản sao",
+        "notes": [],
+        "attachment_path": null
+      },
+      {
+        "condition": "Bản chính hoặc bản sao hợp lệ giấy xác nhận hoàn thành quá trình thực hành theo Mẫu 07 Phụ lục I ban hành kèm theo Nghị định số 96/2023/NĐ-CP đối với người hành nghề thuộc trường hợp quy định tại khoản 4 Điều 10 Nghị định số 96/2023/NĐ-CP (không áp dụng đối với trường hợp kết quả thực hành đã được kết nối, chia sẻ trên Hệ thống thông tin về quản lý hoạt động khám bệnh, chữa bệnh hoặc cơ sở dữ liệu quốc gia về y tế).",
+        "document": "Bản chính hoặc bản sao hợp lệ giấy xác nhận hoàn thành quá trình thực hành theo Mẫu 07 Phụ lục I ban hành kèm theo Nghị định số 96/2023/NĐ-CP đối với người hành nghề thuộc trường hợp quy định tại khoản 4 Điều 10 Nghị định số 96/2023/NĐ-CP (không áp dụng đối với trường hợp kết quả thực hành đã được kết nối, chia sẻ trên Hệ thống thông tin về quản lý hoạt động khám bệnh, chữa bệnh hoặc cơ sở dữ liệu quốc gia về y tế).",
+        "quantity": "1 bản chính, 1 bản sao",
+        "notes": [],
+        "attachment_path": null
+      },
+      {
+        "condition": "đ) Bản sao hợp lệ của một trong các giấy tờ sau đây: - Giấy chứng nhận biết tiếng Việt thành thạo theo quy định tại Điều 138 Nghị định số 96/2023/NĐ-CP (không áp dụng đối với trường hợp giấy chứng nhận đã được kết nối, chia sẻ trên Hệ thống thông tin về quản lý hoạt động khám bệnh, chữa bệnh hoặc cơ sở dữ liệu quốc gia về y tế); - Giấy chứng nhận đủ trình độ phiên dịch của người phiên dịch theo quy định tại Điều 139 Nghị định số 96/2023/NĐ-CP đối với trường hợp người nước ngoài không biết tiếng Việt thành thạo (không áp dụng đối với trường hợp giấy chứng nhận đã được kết nối, chia sẻ trên Hệ thống thông tin về quản lý hoạt động khám bệnh, chữa bệnh hoặc cơ sở dữ liệu quốc gia về y tế), kèm theo hợp đồng lao động của người phiên dịch với cơ sở khám bệnh, chữa bệnh nơi người nước ngoài đó dự kiến làm việc.",
+        "document": "đ) Bản sao hợp lệ của một trong các giấy tờ sau đây: - Giấy chứng nhận biết tiếng Việt thành thạo theo quy định tại Điều 138 Nghị định số 96/2023/NĐ-CP (không áp dụng đối với trường hợp giấy chứng nhận đã được kết nối, chia sẻ trên Hệ thống thông tin về quản lý hoạt động khám bệnh, chữa bệnh hoặc cơ sở dữ liệu quốc gia về y tế); - Giấy chứng nhận đủ trình độ phiên dịch của người phiên dịch theo quy định tại Điều 139 Nghị định số 96/2023/NĐ-CP đối với trường hợp người nước ngoài không biết tiếng Việt thành thạo (không áp dụng đối với trường hợp giấy chứng nhận đã được kết nối, chia sẻ trên Hệ thống thông tin về quản lý hoạt động khám bệnh, chữa bệnh hoặc cơ sở dữ liệu quốc gia về y tế), kèm theo hợp đồng lao động của người phiên dịch với cơ sở khám bệnh, chữa bệnh nơi người nước ngoài đó dự kiến làm việc.",
+        "quantity": "1 bản chính, 1 bản sao",
+        "notes": [],
+        "attachment_path": null
+      },
+      {
+        "condition": "Sơ yếu lý lịch tự thuật của người hành nghề theo Mẫu 09 Phụ lục I ban hành kèm theo Nghị định số 96/2023/NĐ-CP (không áp dụng đối với trường hợp lý lịch của người hành nghề đã được kết nối, chia sẻ trên hệ thống thông tin về quản lý hoạt động khám bệnh, chữa bệnh hoặc cơ sở dữ liệu quốc gia về y tế);",
+        "document": "Sơ yếu lý lịch tự thuật của người hành nghề theo Mẫu 09 Phụ lục I ban hành kèm theo Nghị định số 96/2023/NĐ-CP (không áp dụng đối với trường hợp lý lịch của người hành nghề đã được kết nối, chia sẻ trên hệ thống thông tin về quản lý hoạt động khám bệnh, chữa bệnh hoặc cơ sở dữ liệu quốc gia về y tế);",
+        "quantity": "1 bản chính, 0 bản sao",
+        "notes": [],
+        "attachment_path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/1_012289/M%E1%BA%ABu%2009%20PL1.docx"
+      },
+      {
+        "condition": "h) 02 ảnh chân dung cỡ 04 cm x 06 cm, chụp trên nền trắng trong thời gian không quá 06 tháng tính đến thời điểm nộp hồ sơ đề nghị cấp mới giấy phép hành nghề (không áp dụng đối với trường hợp người nộp hồ sơ đã đăng tải ảnh khi thực hiện thủ tục hành chính trên môi trường điện tử).",
+        "document": "h) 02 ảnh chân dung cỡ 04 cm x 06 cm, chụp trên nền trắng trong thời gian không quá 06 tháng tính đến thời điểm nộp hồ sơ đề nghị cấp mới giấy phép hành nghề (không áp dụng đối với trường hợp người nộp hồ sơ đã đăng tải ảnh khi thực hiện thủ tục hành chính trên môi trường điện tử).",
+        "quantity": "1 bản chính, 0 bản sao",
+        "notes": [],
+        "attachment_path": null
+      },
+      {
+        "condition": "c) Trường hợp đề nghị cấp giấy phép hành nghề với phạm vi hành nghề chuyên khoa ngoài giấy tờ quy định tại điểm b khoản này phải nộp thêm bản sao hợp lệ của một trong các văn bằng đào tạo chuyên khoa theo quy định tại điểm b, c, d, đ hoặc e khoản 1 Điều 127 Nghị định số 96/2023/NĐ-CP (không áp dụng đối với trường hợp văn bằng chuyên khoa đã được kết nối, chia sẻ trên Hệ thống thông tin về quản lý hoạt động khám bệnh, chữa bệnh hoặc cơ sở dữ liệu quốc gia về y tế).",
+        "document": "c) Trường hợp đề nghị cấp giấy phép hành nghề với phạm vi hành nghề chuyên khoa ngoài giấy tờ quy định tại điểm b khoản này phải nộp thêm bản sao hợp lệ của một trong các văn bằng đào tạo chuyên khoa theo quy định tại điểm b, c, d, đ hoặc e khoản 1 Điều 127 Nghị định số 96/2023/NĐ-CP (không áp dụng đối với trường hợp văn bằng chuyên khoa đã được kết nối, chia sẻ trên Hệ thống thông tin về quản lý hoạt động khám bệnh, chữa bệnh hoặc cơ sở dữ liệu quốc gia về y tế).",
+        "quantity": "1 bản chính, 0 bản sao",
+        "notes": [],
+        "attachment_path": null
+      },
+      {
+        "condition": "i) Bản chính hoặc bản sao hợp lệ quyết định thu hồi giấy phép hành nghề (không áp dụng đối với trường hợp quyết định thu hồi giấy phép hành nghề đã được kết nối, chia sẻ trên Hệ thống thông tin về quản lý hoạt động khám bệnh, chữa bệnh hoặc cơ sở dữ liệu quốc gia về y tế)..",
+        "document": "i) Bản chính hoặc bản sao hợp lệ quyết định thu hồi giấy phép hành nghề (không áp dụng đối với trường hợp quyết định thu hồi giấy phép hành nghề đã được kết nối, chia sẻ trên Hệ thống thông tin về quản lý hoạt động khám bệnh, chữa bệnh hoặc cơ sở dữ liệu quốc gia về y tế)..",
+        "quantity": "1 bản chính, 1 bản sao",
+        "notes": [],
+        "attachment_path": null
+      },
+      {
+        "condition": "e) Sơ yếu lý lịch tự thuật của người hành nghề theo Mẫu 09 Phụ lục I ban hành kèm theo Nghị định số 96/2023/NĐ-CP (không áp dụng đối với trường hợp lý lịch của người hành nghề đã được kết nối, chia sẻ trên Hệ thống thông tin về quản lý hoạt động khám bệnh, chữa bệnh hoặc cơ sở dữ liệu quốc gia về y tế).",
+        "document": "e) Sơ yếu lý lịch tự thuật của người hành nghề theo Mẫu 09 Phụ lục I ban hành kèm theo Nghị định số 96/2023/NĐ-CP (không áp dụng đối với trường hợp lý lịch của người hành nghề đã được kết nối, chia sẻ trên Hệ thống thông tin về quản lý hoạt động khám bệnh, chữa bệnh hoặc cơ sở dữ liệu quốc gia về y tế).",
+        "quantity": "1 bản chính, 0 bản sao",
+        "notes": [],
+        "attachment_path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/1_012289/M%E1%BA%ABu%2009%20PL1.docx"
+      },
+      {
+        "condition": "b) Bản sao hợp lệ của một trong các giấy tờ sau: - Văn bằng chuyên môn (không áp dụng đối với trường hợp văn bằng chuyên môn đã được kết nối, chia sẻ trên Hệ thống thông tin về quản lý hoạt động khám bệnh, chữa bệnh hoặc cơ sở dữ liệu quốc gia về y tế); - Giấy phép hành nghề đã được thừa nhận theo quy định tại Điều 37 Nghị định số 96/2023/NĐ-CP (không áp dụng đối với trường hợp kết quả thừa nhận giấy phép hành nghề đã được kết nối, chia sẻ trên Hệ thống thông tin về quản lý hoạt động khám bệnh, chữa bệnh hoặc cơ sở dữ liệu quốc gia về y tế).",
+        "document": "b) Bản sao hợp lệ của một trong các giấy tờ sau: - Văn bằng chuyên môn (không áp dụng đối với trường hợp văn bằng chuyên môn đã được kết nối, chia sẻ trên Hệ thống thông tin về quản lý hoạt động khám bệnh, chữa bệnh hoặc cơ sở dữ liệu quốc gia về y tế); - Giấy phép hành nghề đã được thừa nhận theo quy định tại Điều 37 Nghị định số 96/2023/NĐ-CP (không áp dụng đối với trường hợp kết quả thừa nhận giấy phép hành nghề đã được kết nối, chia sẻ trên Hệ thống thông tin về quản lý hoạt động khám bệnh, chữa bệnh hoặc cơ sở dữ liệu quốc gia về y tế).",
+        "quantity": "0 bản chính, 1 bản sao",
+        "notes": [],
+        "attachment_path": null
+      },
+      {
+        "condition": "d) Bản chính hoặc bản sao hợp lệ giấy khám sức khỏe do cơ sở khám bệnh, chữa bệnh có đủ điều kiện cấp (không áp dụng đối với trường hợp kết quả khám sức khỏe đã được kết nối, chia sẻ trên Hệ thống thông tin về quản lý hoạt động khám bệnh, chữa bệnh hoặc cơ sở dữ liệu quốc gia về y tế) hoặc bản sao hợp lệ giấy phép lao động đối với trường hợp phải có giấy phép lao động theo quy định của Bộ luật Lao động.",
+        "document": "d) Bản chính hoặc bản sao hợp lệ giấy khám sức khỏe do cơ sở khám bệnh, chữa bệnh có đủ điều kiện cấp (không áp dụng đối với trường hợp kết quả khám sức khỏe đã được kết nối, chia sẻ trên Hệ thống thông tin về quản lý hoạt động khám bệnh, chữa bệnh hoặc cơ sở dữ liệu quốc gia về y tế) hoặc bản sao hợp lệ giấy phép lao động đối với trường hợp phải có giấy phép lao động theo quy định của Bộ luật Lao động.",
+        "quantity": "1 bản chính, 1 bản sao",
+        "notes": [],
+        "attachment_path": null
+      },
+      {
+        "condition": "g) Bản chính hoặc bản sao hợp lệ giấy xác nhận hoàn thành quá trình thực hành theo Mẫu 07 Phụ lục I ban hành kèm theo Nghị định số 96/2023/NĐ-CP đối với trường hợp quy định tại điểm a, c khoản 1, khoản 4 Điều 125 Nghị định số 96/2023/NĐ-CP (không áp dụng đối với trường hợp kết quả thực hành đã được kết nối, chia sẻ trên Hệ thống thông tin về quản lý hoạt động khám bệnh, chữa bệnh hoặc cơ sở dữ liệu quốc gia về y tế).",
+        "document": "g) Bản chính hoặc bản sao hợp lệ giấy xác nhận hoàn thành quá trình thực hành theo Mẫu 07 Phụ lục I ban hành kèm theo Nghị định số 96/2023/NĐ-CP đối với trường hợp quy định tại điểm a, c khoản 1, khoản 4 Điều 125 Nghị định số 96/2023/NĐ-CP (không áp dụng đối với trường hợp kết quả thực hành đã được kết nối, chia sẻ trên Hệ thống thông tin về quản lý hoạt động khám bệnh, chữa bệnh hoặc cơ sở dữ liệu quốc gia về y tế).",
+        "quantity": "1 bản chính, 1 bản sao",
+        "notes": [],
+        "attachment_path": null
+      },
+      {
+        "condition": "i) Bản chính hoặc bản sao hợp lệ quyết định thu hồi giấy phép hành nghề (không áp dụng đối với trường hợp quyết định thu hồi giấy phép hành nghề đã được kết nối, chia sẻ trên Hệ thống thông tin về quản lý hoạt động khám bệnh, chữa bệnh hoặc cơ sở dữ liệu quốc gia về y tế). k) Một trong các giấy tờ sau đây: - Bản chính hoặc bản sao hợp lệ văn bản của cơ quan có thẩm quyền kết luận người hành nghề không có tội hoặc không thuộc trường hợp bị cấm hành nghề đối với trường hợp bị truy cứu trách nhiệm hình sự nhưng đã có văn bản kết luận không có tội, không thuộc trường hợp bị cấm hành nghề (khoản 1 Điều 20 của Luật Khám bệnh, chữa bệnh); - Bản chính hoặc bản sao hợp lệ giấy chứng nhận chấp hành xong thời gian thử thách hoặc giấy chứng nhận chấp hành xong bản án, quyết định của tòa án (khoản 2, khoản 3, khoản 4 Điều 20 của Luật Khám bệnh, chữa bệnh); - Bản chính hoặc bản sao hợp lệ văn bản của cơ quan có thẩm quyền xác định người hành nghề đã có đủ năng lực hành vi dân sự hoặc không có khó khăn trong nhận thức, làm chủ hành vi hoặc không còn hạn chế năng lực hành vi dân sự (khoản 6 Điều 20 của Luật Khám bệnh, chữa bệnh).",
+        "document": "i) Bản chính hoặc bản sao hợp lệ quyết định thu hồi giấy phép hành nghề (không áp dụng đối với trường hợp quyết định thu hồi giấy phép hành nghề đã được kết nối, chia sẻ trên Hệ thống thông tin về quản lý hoạt động khám bệnh, chữa bệnh hoặc cơ sở dữ liệu quốc gia về y tế). k) Một trong các giấy tờ sau đây: - Bản chính hoặc bản sao hợp lệ văn bản của cơ quan có thẩm quyền kết luận người hành nghề không có tội hoặc không thuộc trường hợp bị cấm hành nghề đối với trường hợp bị truy cứu trách nhiệm hình sự nhưng đã có văn bản kết luận không có tội, không thuộc trường hợp bị cấm hành nghề (khoản 1 Điều 20 của Luật Khám bệnh, chữa bệnh); - Bản chính hoặc bản sao hợp lệ giấy chứng nhận chấp hành xong thời gian thử thách hoặc giấy chứng nhận chấp hành xong bản án, quyết định của tòa án (khoản 2, khoản 3, khoản 4 Điều 20 của Luật Khám bệnh, chữa bệnh); - Bản chính hoặc bản sao hợp lệ văn bản của cơ quan có thẩm quyền xác định người hành nghề đã có đủ năng lực hành vi dân sự hoặc không có khó khăn trong nhận thức, làm chủ hành vi hoặc không còn hạn chế năng lực hành vi dân sự (khoản 6 Điều 20 của Luật Khám bệnh, chữa bệnh).",
+        "quantity": "1 bản chính, 1 bản sao",
+        "notes": [],
+        "attachment_path": null
+      },
+      {
+        "condition": "h) 02 ảnh chân dung cỡ 04 cm x 06 cm, chụp trên nền trắng trong thời gian không quá 06 tháng tính đến thời điểm nộp hồ sơ đề nghị cấp mới giấy phép hành nghề (không áp dụng đối với trường hợp người nộp hồ sơ đã đăng tải ảnh khi thực hiện thủ tục hành chính trên môi trường điện tử).",
+        "document": "h) 02 ảnh chân dung cỡ 04 cm x 06 cm, chụp trên nền trắng trong thời gian không quá 06 tháng tính đến thời điểm nộp hồ sơ đề nghị cấp mới giấy phép hành nghề (không áp dụng đối với trường hợp người nộp hồ sơ đã đăng tải ảnh khi thực hiện thủ tục hành chính trên môi trường điện tử).",
+        "quantity": "1 bản chính, 0 bản sao",
+        "notes": [],
+        "attachment_path": null
+      },
+      {
+        "condition": "đ) Bản sao hợp lệ của một trong các giấy tờ sau đây: - Giấy chứng nhận biết tiếng Việt thành thạo theo quy định tại Điều 138 Nghị định số 96/2023/NĐ-CP (không áp dụng đối với trường hợp giấy chứng nhận đã được kết nối, chia sẻ trên Hệ thống thông tin về quản lý hoạt động khám bệnh, chữa bệnh hoặc cơ sở dữ liệu quốc gia về y tế); - Giấy chứng nhận đủ trình độ phiên dịch của người phiên dịch theo quy định tại Điều 139 Nghị định số 96/2023/NĐ-CP đối với trường hợp người nước ngoài không biết tiếng Việt thành thạo (không áp dụng đối với trường hợp giấy chứng nhận đã được kết nối, chia sẻ trên Hệ thống thông tin về quản lý hoạt động khám bệnh, chữa bệnh hoặc cơ sở dữ liệu quốc gia về y tế), kèm theo hợp đồng lao động của người phiên dịch với cơ sở khám bệnh, chữa bệnh nơi người nước ngoài đó dự kiến làm việc.",
+        "document": "đ) Bản sao hợp lệ của một trong các giấy tờ sau đây: - Giấy chứng nhận biết tiếng Việt thành thạo theo quy định tại Điều 138 Nghị định số 96/2023/NĐ-CP (không áp dụng đối với trường hợp giấy chứng nhận đã được kết nối, chia sẻ trên Hệ thống thông tin về quản lý hoạt động khám bệnh, chữa bệnh hoặc cơ sở dữ liệu quốc gia về y tế); - Giấy chứng nhận đủ trình độ phiên dịch của người phiên dịch theo quy định tại Điều 139 Nghị định số 96/2023/NĐ-CP đối với trường hợp người nước ngoài không biết tiếng Việt thành thạo (không áp dụng đối với trường hợp giấy chứng nhận đã được kết nối, chia sẻ trên Hệ thống thông tin về quản lý hoạt động khám bệnh, chữa bệnh hoặc cơ sở dữ liệu quốc gia về y tế), kèm theo hợp đồng lao động của người phiên dịch với cơ sở khám bệnh, chữa bệnh nơi người nước ngoài đó dự kiến làm việc.",
+        "quantity": "0 bản chính, 1 bản sao",
+        "notes": [],
+        "attachment_path": null
+      },
+      {
+        "condition": "c) Trường hợp đề nghị cấp giấy phép hành nghề với phạm vi hành nghề chuyên khoa ngoài giấy tờ quy định tại điểm b khoản này phải nộp thêm bản sao hợp lệ của một trong các văn bằng đào tạo chuyên khoa theo quy định tại điểm b, c, d, đ hoặc e khoản 1 Điều 127 Nghị định số 96/2023/NĐ-CP (không áp dụng đối với trường hợp văn bằng chuyên khoa đã được kết nối, chia sẻ trên Hệ thống thông tin về quản lý hoạt động khám bệnh, chữa bệnh hoặc cơ sở dữ liệu quốc gia về y tế).",
+        "document": "c) Trường hợp đề nghị cấp giấy phép hành nghề với phạm vi hành nghề chuyên khoa ngoài giấy tờ quy định tại điểm b khoản này phải nộp thêm bản sao hợp lệ của một trong các văn bằng đào tạo chuyên khoa theo quy định tại điểm b, c, d, đ hoặc e khoản 1 Điều 127 Nghị định số 96/2023/NĐ-CP (không áp dụng đối với trường hợp văn bằng chuyên khoa đã được kết nối, chia sẻ trên Hệ thống thông tin về quản lý hoạt động khám bệnh, chữa bệnh hoặc cơ sở dữ liệu quốc gia về y tế).",
+        "quantity": "1 bản chính, 0 bản sao",
+        "notes": [],
+        "attachment_path": null
+      },
+      {
+        "condition": "d) Bản chính hoặc bản sao hợp lệ giấy khám sức khỏe do cơ sở khám bệnh, chữa bệnh có đủ điều kiện cấp (không áp dụng đối với trường hợp kết quả khám sức khỏe đã được kết nối, chia sẻ trên Hệ thống thông tin về quản lý hoạt động khám bệnh, chữa bệnh hoặc cơ sở dữ liệu quốc gia về y tế) hoặc bản sao hợp lệ giấy phép lao động đối với trường hợp phải có giấy phép lao động theo quy định của Bộ luật Lao động.",
+        "document": "d) Bản chính hoặc bản sao hợp lệ giấy khám sức khỏe do cơ sở khám bệnh, chữa bệnh có đủ điều kiện cấp (không áp dụng đối với trường hợp kết quả khám sức khỏe đã được kết nối, chia sẻ trên Hệ thống thông tin về quản lý hoạt động khám bệnh, chữa bệnh hoặc cơ sở dữ liệu quốc gia về y tế) hoặc bản sao hợp lệ giấy phép lao động đối với trường hợp phải có giấy phép lao động theo quy định của Bộ luật Lao động.",
+        "quantity": "1 bản chính, 1 bản sao",
+        "notes": [],
+        "attachment_path": null
+      },
+      {
+        "condition": "e) Sơ yếu lý lịch tự thuật của người hành nghề theo Mẫu 09 Phụ lục I ban hành kèm theo Nghị định số 96/2023/NĐ-CP (không áp dụng đối với trường hợp lý lịch của người hành nghề đã được kết nối, chia sẻ trên Hệ thống thông tin về quản lý hoạt động khám bệnh, chữa bệnh hoặc cơ sở dữ liệu quốc gia về y tế).",
+        "document": "e) Sơ yếu lý lịch tự thuật của người hành nghề theo Mẫu 09 Phụ lục I ban hành kèm theo Nghị định số 96/2023/NĐ-CP (không áp dụng đối với trường hợp lý lịch của người hành nghề đã được kết nối, chia sẻ trên Hệ thống thông tin về quản lý hoạt động khám bệnh, chữa bệnh hoặc cơ sở dữ liệu quốc gia về y tế).",
+        "quantity": "1 bản chính, 0 bản sao",
+        "notes": [],
+        "attachment_path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/1_012289/M%E1%BA%ABu%2009%20PL1.docx"
+      },
+      {
+        "condition": "b) Bản sao hợp lệ của một trong các giấy tờ sau: - Văn bằng chuyên môn (không áp dụng đối với trường hợp văn bằng chuyên môn đã được kết nối, chia sẻ trên Hệ thống thông tin về quản lý hoạt động khám bệnh, chữa bệnh hoặc cơ sở dữ liệu quốc gia về y tế); - Giấy phép hành nghề đã được thừa nhận theo quy định tại Điều 37 Nghị định số 96/2023/NĐ-CP (không áp dụng đối với trường hợp kết quả thừa nhận giấy phép hành nghề đã được kết nối, chia sẻ trên Hệ thống thông tin về quản lý hoạt động khám bệnh, chữa bệnh hoặc cơ sở dữ liệu quốc gia về y tế).",
+        "document": "b) Bản sao hợp lệ của một trong các giấy tờ sau: - Văn bằng chuyên môn (không áp dụng đối với trường hợp văn bằng chuyên môn đã được kết nối, chia sẻ trên Hệ thống thông tin về quản lý hoạt động khám bệnh, chữa bệnh hoặc cơ sở dữ liệu quốc gia về y tế); - Giấy phép hành nghề đã được thừa nhận theo quy định tại Điều 37 Nghị định số 96/2023/NĐ-CP (không áp dụng đối với trường hợp kết quả thừa nhận giấy phép hành nghề đã được kết nối, chia sẻ trên Hệ thống thông tin về quản lý hoạt động khám bệnh, chữa bệnh hoặc cơ sở dữ liệu quốc gia về y tế).",
+        "quantity": "0 bản chính, 1 bản sao",
+        "notes": [],
+        "attachment_path": null
+      },
+      {
+        "condition": "đ) Bản sao hợp lệ của một trong các giấy tờ sau đây: - Giấy chứng nhận biết tiếng Việt thành thạo theo quy định tại Điều 138 Nghị định số 96/2023/NĐ-CP (không áp dụng đối với trường hợp giấy chứng nhận đã được kết nối, chia sẻ trên Hệ thống thông tin về quản lý hoạt động khám bệnh, chữa bệnh hoặc cơ sở dữ liệu quốc gia về y tế); - Giấy chứng nhận đủ trình độ phiên dịch của người phiên dịch theo quy định tại Điều 139 Nghị định số 96/2023/NĐ-CP đối với trường hợp người nước ngoài không biết tiếng Việt thành thạo (không áp dụng đối với trường hợp giấy chứng nhận đã được kết nối, chia sẻ trên Hệ thống thông tin về quản lý hoạt động khám bệnh, chữa bệnh hoặc cơ sở dữ liệu quốc gia về y tế), kèm theo hợp đồng lao động của người phiên dịch với cơ sở khám bệnh, chữa bệnh nơi người nước ngoài đó dự kiến làm việc.",
+        "document": "đ) Bản sao hợp lệ của một trong các giấy tờ sau đây: - Giấy chứng nhận biết tiếng Việt thành thạo theo quy định tại Điều 138 Nghị định số 96/2023/NĐ-CP (không áp dụng đối với trường hợp giấy chứng nhận đã được kết nối, chia sẻ trên Hệ thống thông tin về quản lý hoạt động khám bệnh, chữa bệnh hoặc cơ sở dữ liệu quốc gia về y tế); - Giấy chứng nhận đủ trình độ phiên dịch của người phiên dịch theo quy định tại Điều 139 Nghị định số 96/2023/NĐ-CP đối với trường hợp người nước ngoài không biết tiếng Việt thành thạo (không áp dụng đối với trường hợp giấy chứng nhận đã được kết nối, chia sẻ trên Hệ thống thông tin về quản lý hoạt động khám bệnh, chữa bệnh hoặc cơ sở dữ liệu quốc gia về y tế), kèm theo hợp đồng lao động của người phiên dịch với cơ sở khám bệnh, chữa bệnh nơi người nước ngoài đó dự kiến làm việc.",
+        "quantity": "0 bản chính, 1 bản sao",
+        "notes": [],
+        "attachment_path": null
+      },
+      {
+        "condition": "h) 02 ảnh chân dung cỡ 04 cm x 06 cm, chụp trên nền trắng trong thời gian không quá 06 tháng tính đến thời điểm nộp hồ sơ đề nghị cấp mới giấy phép hành nghề (không áp dụng đối với trường hợp người nộp hồ sơ đã đăng tải ảnh khi thực hiện thủ tục hành chính trên môi trường điện tử).",
+        "document": "h) 02 ảnh chân dung cỡ 04 cm x 06 cm, chụp trên nền trắng trong thời gian không quá 06 tháng tính đến thời điểm nộp hồ sơ đề nghị cấp mới giấy phép hành nghề (không áp dụng đối với trường hợp người nộp hồ sơ đã đăng tải ảnh khi thực hiện thủ tục hành chính trên môi trường điện tử).",
+        "quantity": "1 bản chính, 1 bản sao",
+        "notes": [],
+        "attachment_path": null
+      },
+      {
+        "condition": "g) Bản chính hoặc bản sao hợp lệ giấy xác nhận hoàn thành quá trình thực hành theo Mẫu 07 Phụ lục I ban hành kèm theo Nghị định số 96/2023/NĐ-CP đối với trường hợp quy định tại điểm a, c khoản 1, khoản 4 Điều 125 Nghị định số 96/2023/NĐ-CP (không áp dụng đối với trường hợp kết quả thực hành đã được kết nối, chia sẻ trên Hệ thống thông tin về quản lý hoạt động khám bệnh, chữa bệnh hoặc cơ sở dữ liệu quốc gia về y tế).",
+        "document": "g) Bản chính hoặc bản sao hợp lệ giấy xác nhận hoàn thành quá trình thực hành theo Mẫu 07 Phụ lục I ban hành kèm theo Nghị định số 96/2023/NĐ-CP đối với trường hợp quy định tại điểm a, c khoản 1, khoản 4 Điều 125 Nghị định số 96/2023/NĐ-CP (không áp dụng đối với trường hợp kết quả thực hành đã được kết nối, chia sẻ trên Hệ thống thông tin về quản lý hoạt động khám bệnh, chữa bệnh hoặc cơ sở dữ liệu quốc gia về y tế).",
+        "quantity": "1 bản chính, 1 bản sao",
+        "notes": [],
+        "attachment_path": null
+      },
+      {
+        "condition": "c) Trường hợp đề nghị cấp giấy phép hành nghề với phạm vi hành nghề chuyên khoa ngoài giấy tờ quy định tại điểm b khoản này phải nộp thêm bản sao hợp lệ của một trong các văn bằng đào tạo chuyên khoa theo quy định tại điểm b, c, d, đ hoặc e khoản 1 Điều 127 Nghị định số 96/2023/NĐ-CP (không áp dụng đối với trường hợp văn bằng chuyên khoa đã được kết nối, chia sẻ trên Hệ thống thông tin về quản lý hoạt động khám bệnh, chữa bệnh hoặc cơ sở dữ liệu quốc gia về y tế).",
+        "document": "c) Trường hợp đề nghị cấp giấy phép hành nghề với phạm vi hành nghề chuyên khoa ngoài giấy tờ quy định tại điểm b khoản này phải nộp thêm bản sao hợp lệ của một trong các văn bằng đào tạo chuyên khoa theo quy định tại điểm b, c, d, đ hoặc e khoản 1 Điều 127 Nghị định số 96/2023/NĐ-CP (không áp dụng đối với trường hợp văn bằng chuyên khoa đã được kết nối, chia sẻ trên Hệ thống thông tin về quản lý hoạt động khám bệnh, chữa bệnh hoặc cơ sở dữ liệu quốc gia về y tế).",
+        "quantity": "1 bản chính, 1 bản sao",
+        "notes": [],
+        "attachment_path": null
+      },
+      {
+        "condition": "i) Bản sao hợp lệ của một hoặc nhiều các giấy tờ sau đây (không áp dụng đối với trường hợp các giấy tờ này đã được kết nối, chia sẻ trên Hệ thống thông tin về quản lý hoạt động khám bệnh, chữa bệnh hoặc cơ sở dữ liệu quốc gia về y tế): - Giấy chứng nhận lương y; - Giấy chứng nhận bài thuốc gia truyền; - Giấy chứng nhận phương pháp chữa bệnh gia truyền.",
+        "document": "i) Bản sao hợp lệ của một hoặc nhiều các giấy tờ sau đây (không áp dụng đối với trường hợp các giấy tờ này đã được kết nối, chia sẻ trên Hệ thống thông tin về quản lý hoạt động khám bệnh, chữa bệnh hoặc cơ sở dữ liệu quốc gia về y tế): - Giấy chứng nhận lương y; - Giấy chứng nhận bài thuốc gia truyền; - Giấy chứng nhận phương pháp chữa bệnh gia truyền.",
+        "quantity": "0 bản chính, 1 bản sao",
+        "notes": [],
+        "attachment_path": null
+      }
+    ],
+    "forms": [
+      {
+        "name": "e) Sơ yếu lý lịch tự thuật của người hành nghề theo Mẫu 09 Phụ lục I ban hành kèm theo Nghị định số 96/2023/NĐ-CP (không áp dụng đối với trường hợp lý lịch của người hành nghề đã được kết nối, chia sẻ trên Hệ thống thông tin về quản lý hoạt động khám bệnh, chữa bệnh hoặc cơ sở dữ liệu quốc gia về y tế).",
+        "attachment_label": "Mẫu 09 PL1.docx",
+        "attachment_path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/1_012289/M%E1%BA%ABu%2009%20PL1.docx"
+      },
+      {
+        "name": "a) Đơn theo Mẫu 08 Phụ lục I ban hành kèm theo Nghị định số 96/2023/NĐ-CP.",
+        "attachment_label": "Mẫu 08 PL I ND 96.docx",
+        "attachment_path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/1_012289/M%E1%BA%ABu%2008%20PL%20I%20ND%2096.docx"
+      },
+      {
+        "name": "Sơ yếu lý lịch tự thuật của người hành nghề theo Mẫu 09 Phụ lục I ban hành kèm theo Nghị định số 96/2023/NĐ-CP (không áp dụng đối với trường hợp lý lịch của người hành nghề đã được kết nối, chia sẻ trên hệ thống thông tin về quản lý hoạt động khám bệnh, chữa bệnh hoặc cơ sở dữ liệu quốc gia về y tế);",
+        "attachment_label": "Mẫu 09 PL1.docx",
+        "attachment_path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/1_012289/M%E1%BA%ABu%2009%20PL1.docx"
+      },
+      {
+        "name": "a) Đơn theo Mẫu 08 Phụ lục I ban hành kèm theo Nghị định số 96/2023/NĐ-CP.",
+        "attachment_label": "Mẫu 08 PL I ND 96.docx",
+        "attachment_path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/1_012289/M%E1%BA%ABu%2008%20PL%20I%20ND%2096.docx"
+      },
+      {
+        "name": "e) Sơ yếu lý lịch tự thuật của người hành nghề theo Mẫu 09 Phụ lục I ban hành kèm theo Nghị định số 96/2023/NĐ-CP (không áp dụng đối với trường hợp lý lịch của người hành nghề đã được kết nối, chia sẻ trên Hệ thống thông tin về quản lý hoạt động khám bệnh, chữa bệnh hoặc cơ sở dữ liệu quốc gia về y tế).",
+        "attachment_label": "Mẫu 09 PL1.docx",
+        "attachment_path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/1_012289/M%E1%BA%ABu%2009%20PL1.docx"
+      },
+      {
+        "name": "a) Đơn theo Mẫu 08 Phụ lục I ban hành kèm theo Nghị định số 96/2023/NĐ-CP.",
+        "attachment_label": "Mẫu 08 PL I ND 96.docx",
+        "attachment_path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/1_012289/M%E1%BA%ABu%2008%20PL%20I%20ND%2096.docx"
+      },
+      {
+        "name": "e) Sơ yếu lý lịch tự thuật của người hành nghề theo Mẫu 09 Phụ lục I ban hành kèm theo Nghị định số 96/2023/NĐ-CP (không áp dụng đối với trường hợp lý lịch của người hành nghề đã được kết nối, chia sẻ trên Hệ thống thông tin về quản lý hoạt động khám bệnh, chữa bệnh hoặc cơ sở dữ liệu quốc gia về y tế).",
+        "attachment_label": "Mẫu 09 PL1.docx",
+        "attachment_path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/1_012289/M%E1%BA%ABu%2009%20PL1.docx"
+      },
+      {
+        "name": "a) Đơn theo Mẫu 08 Phụ lục I ban hành kèm theo Nghị định số 96/2023/NĐ-CP.",
+        "attachment_label": "Mẫu 08 PL I ND 96.docx",
+        "attachment_path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/1_012289/M%E1%BA%ABu%2008%20PL%20I%20ND%2096.docx"
+      }
+    ],
+    "presented": [],
+    "notes": [],
+    "summary": [
+      {
+        "group": "1. Trường hợp 1: Hồ sơ đề nghị cấp mới giấy phép hành nghề đối với trường hợp người lần đầu tiên đề nghị cấp giấy phép hành nghề quy định tại điểm a, điểm b khoản 1 Điều 30 của Luật Khám bệnh:",
+        "name": "a) Đơn theo Mẫu 08 Phụ lục I ban hành kèm theo Nghị định số 96/2023/NĐ-CP.",
+        "quantity": "1 bản chính, 0 bản sao",
+        "notes": [],
+        "attachment_path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/1_012289/M%E1%BA%ABu%2008%20PL%20I%20ND%2096.docx"
+      },
+      {
+        "group": "2. Trường hợp 2: Hồ sơ đề nghị cấp mới giấy phép hành nghề đối với các trường hợp quy định tại điểm d, đ khoản 1 Điều 126 và các trường hợp giấy phép hành nghề bị thu hồi theo quy định tại điểm c khoản 2 Điều 137, điểm c khoản 3 Điều 137, điểm b khoản 4 Điều 137, khoản 7 Điều 137, khoản 8 Điều 137, khoản 9 Điều 137, điểm c khoản 10 Điều 137 Nghị định số 96/2023/NĐ-CP gồm:",
+        "name": "a) Đơn theo Mẫu 08 Phụ lục I ban hành kèm theo Nghị định số 96/2023/NĐ-CP.",
+        "quantity": "1 bản chính, 0 bản sao",
+        "notes": [],
+        "attachment_path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/1_012289/M%E1%BA%ABu%2008%20PL%20I%20ND%2096.docx"
+      },
+      {
+        "group": "3. Trường hợp 3: Hồ sơ đề nghị cấp mới giấy phép hành nghề đối với trường hợp giấy phép hành nghề bị thu hồi theo quy định tại điểm c khoản 6 Điều 137 Nghị định số 96/2023/NĐ-CP do thuộc một trong các trường hợp quy định tại các khoản 1, 2, 3, 4 hoặc 6 Điều 20 của Luật Khám bệnh, chữa bệnh (điểm đ khoản 1 Điều 35 của Luật Khám bệnh, chữa bệnh):",
+        "name": "a) Đơn theo Mẫu 08 Phụ lục I ban hành kèm theo Nghị định số 96/2023/NĐ-CP.",
+        "quantity": "1 bản chính, 0 bản sao",
+        "notes": [],
+        "attachment_path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/1_012289/M%E1%BA%ABu%2008%20PL%20I%20ND%2096.docx"
+      },
+      {
+        "group": "4. Trường hợp 4: Hồ sơ đề nghị cấp mới giấy phép hành nghề theo quy định tại điểm a khoản 7 Điều 125 Nghị định số 96/2023/NĐ-CP:",
+        "name": "a) Đơn theo Mẫu 08 Phụ lục I ban hành kèm theo Nghị định số 96/2023/NĐ-CP.",
+        "quantity": "1 bản chính, 0 bản sao",
+        "notes": [],
+        "attachment_path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/1_012289/M%E1%BA%ABu%2008%20PL%20I%20ND%2096.docx"
+      },
+      {
+        "group": null,
+        "name": null,
+        "quantity": "1 bản chính, 1 bản sao",
+        "notes": [],
+        "attachment_path": null
+      },
+      {
+        "group": null,
+        "name": null,
+        "quantity": "0 bản chính, 1 bản sao",
+        "notes": [],
+        "attachment_path": null
+      },
+      {
+        "group": null,
+        "name": null,
+        "quantity": "1 bản chính, 1 bản sao",
+        "notes": [],
+        "attachment_path": null
+      },
+      {
+        "group": null,
+        "name": null,
+        "quantity": "0 bản chính, 1 bản sao",
+        "notes": [],
+        "attachment_path": null
+      },
+      {
+        "group": null,
+        "name": null,
+        "quantity": "1 bản chính, 0 bản sao",
+        "notes": [],
+        "attachment_path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/1_012289/M%E1%BA%ABu%2009%20PL1.docx"
+      },
+      {
+        "group": null,
+        "name": null,
+        "quantity": "1 bản chính, 0 bản sao",
+        "notes": [],
+        "attachment_path": null
+      },
+      {
+        "group": null,
+        "name": null,
+        "quantity": "1 bản chính, 0 bản sao",
+        "notes": [],
+        "attachment_path": null
+      },
+      {
+        "group": null,
+        "name": null,
+        "quantity": "0 bản chính, 1 bản sao",
+        "notes": [],
+        "attachment_path": null
+      },
+      {
+        "group": null,
+        "name": null,
+        "quantity": "1 bản chính, 1 bản sao",
+        "notes": [],
+        "attachment_path": null
+      },
+      {
+        "group": null,
+        "name": null,
+        "quantity": "1 bản chính, 1 bản sao",
+        "notes": [],
+        "attachment_path": null
+      },
+      {
+        "group": null,
+        "name": null,
+        "quantity": "1 bản chính, 1 bản sao",
+        "notes": [],
+        "attachment_path": null
+      },
+      {
+        "group": null,
+        "name": null,
+        "quantity": "1 bản chính, 0 bản sao",
+        "notes": [],
+        "attachment_path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/1_012289/M%E1%BA%ABu%2009%20PL1.docx"
+      },
+      {
+        "group": null,
+        "name": null,
+        "quantity": "1 bản chính, 0 bản sao",
+        "notes": [],
+        "attachment_path": null
+      },
+      {
+        "group": null,
+        "name": null,
+        "quantity": "1 bản chính, 0 bản sao",
+        "notes": [],
+        "attachment_path": null
+      },
+      {
+        "group": null,
+        "name": null,
+        "quantity": "1 bản chính, 1 bản sao",
+        "notes": [],
+        "attachment_path": null
+      },
+      {
+        "group": null,
+        "name": null,
+        "quantity": "1 bản chính, 0 bản sao",
+        "notes": [],
+        "attachment_path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/1_012289/M%E1%BA%ABu%2009%20PL1.docx"
+      },
+      {
+        "group": null,
+        "name": null,
+        "quantity": "0 bản chính, 1 bản sao",
+        "notes": [],
+        "attachment_path": null
+      },
+      {
+        "group": null,
+        "name": null,
+        "quantity": "1 bản chính, 1 bản sao",
+        "notes": [],
+        "attachment_path": null
+      },
+      {
+        "group": null,
+        "name": null,
+        "quantity": "1 bản chính, 1 bản sao",
+        "notes": [],
+        "attachment_path": null
+      },
+      {
+        "group": null,
+        "name": null,
+        "quantity": "1 bản chính, 1 bản sao",
+        "notes": [],
+        "attachment_path": null
+      },
+      {
+        "group": null,
+        "name": null,
+        "quantity": "1 bản chính, 0 bản sao",
+        "notes": [],
+        "attachment_path": null
+      },
+      {
+        "group": null,
+        "name": null,
+        "quantity": "0 bản chính, 1 bản sao",
+        "notes": [],
+        "attachment_path": null
+      },
+      {
+        "group": null,
+        "name": null,
+        "quantity": "1 bản chính, 0 bản sao",
+        "notes": [],
+        "attachment_path": null
+      },
+      {
+        "group": null,
+        "name": null,
+        "quantity": "1 bản chính, 1 bản sao",
+        "notes": [],
+        "attachment_path": null
+      },
+      {
+        "group": null,
+        "name": null,
+        "quantity": "1 bản chính, 0 bản sao",
+        "notes": [],
+        "attachment_path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/1_012289/M%E1%BA%ABu%2009%20PL1.docx"
+      },
+      {
+        "group": null,
+        "name": null,
+        "quantity": "0 bản chính, 1 bản sao",
+        "notes": [],
+        "attachment_path": null
+      },
+      {
+        "group": null,
+        "name": null,
+        "quantity": "0 bản chính, 1 bản sao",
+        "notes": [],
+        "attachment_path": null
+      },
+      {
+        "group": null,
+        "name": null,
+        "quantity": "1 bản chính, 1 bản sao",
+        "notes": [],
+        "attachment_path": null
+      },
+      {
+        "group": null,
+        "name": null,
+        "quantity": "1 bản chính, 1 bản sao",
+        "notes": [],
+        "attachment_path": null
+      },
+      {
+        "group": null,
+        "name": null,
+        "quantity": "1 bản chính, 1 bản sao",
+        "notes": [],
+        "attachment_path": null
+      },
+      {
+        "group": null,
+        "name": null,
+        "quantity": "0 bản chính, 1 bản sao",
+        "notes": [],
+        "attachment_path": null
+      },
+      {
+        "group": null,
+        "name": "e) Sơ yếu lý lịch tự thuật của người hành nghề theo Mẫu 09 Phụ lục I ban hành kèm theo Nghị định số 96/2023/NĐ-CP (không áp dụng đối với trường hợp lý lịch của người hành nghề đã được kết nối, chia sẻ trên Hệ thống thông tin về quản lý hoạt động khám bệnh, chữa bệnh hoặc cơ sở dữ liệu quốc gia về y tế).",
+        "quantity": null,
+        "notes": null,
+        "attachment_path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/1_012289/M%E1%BA%ABu%2009%20PL1.docx"
+      },
+      {
+        "group": null,
+        "name": "a) Đơn theo Mẫu 08 Phụ lục I ban hành kèm theo Nghị định số 96/2023/NĐ-CP.",
+        "quantity": null,
+        "notes": null,
+        "attachment_path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/1_012289/M%E1%BA%ABu%2008%20PL%20I%20ND%2096.docx"
+      },
+      {
+        "group": null,
+        "name": "Sơ yếu lý lịch tự thuật của người hành nghề theo Mẫu 09 Phụ lục I ban hành kèm theo Nghị định số 96/2023/NĐ-CP (không áp dụng đối với trường hợp lý lịch của người hành nghề đã được kết nối, chia sẻ trên hệ thống thông tin về quản lý hoạt động khám bệnh, chữa bệnh hoặc cơ sở dữ liệu quốc gia về y tế);",
+        "quantity": null,
+        "notes": null,
+        "attachment_path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/1_012289/M%E1%BA%ABu%2009%20PL1.docx"
+      },
+      {
+        "group": null,
+        "name": "a) Đơn theo Mẫu 08 Phụ lục I ban hành kèm theo Nghị định số 96/2023/NĐ-CP.",
+        "quantity": null,
+        "notes": null,
+        "attachment_path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/1_012289/M%E1%BA%ABu%2008%20PL%20I%20ND%2096.docx"
+      },
+      {
+        "group": null,
+        "name": "e) Sơ yếu lý lịch tự thuật của người hành nghề theo Mẫu 09 Phụ lục I ban hành kèm theo Nghị định số 96/2023/NĐ-CP (không áp dụng đối với trường hợp lý lịch của người hành nghề đã được kết nối, chia sẻ trên Hệ thống thông tin về quản lý hoạt động khám bệnh, chữa bệnh hoặc cơ sở dữ liệu quốc gia về y tế).",
+        "quantity": null,
+        "notes": null,
+        "attachment_path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/1_012289/M%E1%BA%ABu%2009%20PL1.docx"
+      },
+      {
+        "group": null,
+        "name": "a) Đơn theo Mẫu 08 Phụ lục I ban hành kèm theo Nghị định số 96/2023/NĐ-CP.",
+        "quantity": null,
+        "notes": null,
+        "attachment_path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/1_012289/M%E1%BA%ABu%2008%20PL%20I%20ND%2096.docx"
+      },
+      {
+        "group": null,
+        "name": "e) Sơ yếu lý lịch tự thuật của người hành nghề theo Mẫu 09 Phụ lục I ban hành kèm theo Nghị định số 96/2023/NĐ-CP (không áp dụng đối với trường hợp lý lịch của người hành nghề đã được kết nối, chia sẻ trên Hệ thống thông tin về quản lý hoạt động khám bệnh, chữa bệnh hoặc cơ sở dữ liệu quốc gia về y tế).",
+        "quantity": null,
+        "notes": null,
+        "attachment_path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/1_012289/M%E1%BA%ABu%2009%20PL1.docx"
+      },
+      {
+        "group": null,
+        "name": "a) Đơn theo Mẫu 08 Phụ lục I ban hành kèm theo Nghị định số 96/2023/NĐ-CP.",
+        "quantity": null,
+        "notes": null,
+        "attachment_path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/1_012289/M%E1%BA%ABu%2008%20PL%20I%20ND%2096.docx"
+      }
+    ]
+  },
+  "steps": [
+    {
+      "order": 1,
+      "title": "Bước 1",
+      "description": "1. **Bước 1:** Người đề nghị cấp giấy phép hành nghề gửi 01 bộ hồ sơ tương ứng với từng trường hợp quy định tại khoản 1 đến khoản 5 Điều 14 Nghị định số 96/2023/NĐ-CP và nộp phí theo quy định của pháp luật về phí, lệ phí cho cơ quan tiếp nhận hồ sơ cụ thể như sau: Ủy ban nhân dân cấp Tỉnh:",
+      "example": null
+    },
+    {
+      "order": 2,
+      "title": "a)",
+      "description": "a) Đối với người làm việc tại cơ sở khám bệnh, chữa bệnh trên địa bàn quản lý của Cơ quan chuyên môn về Y tế thuộc Ủy ban nhân dân cấp Tỉnh (bao gồm cả các cơ sở khám bệnh, chữa bệnh trực thuộc Bộ Y tế, thuộc Bộ, ngành) trừ cơ sở khám bệnh, chữa bệnh trực thuộc Bộ Quốc phòng, Bộ Công an;",
+      "example": null
+    },
+    {
+      "order": 3,
+      "title": "b)",
+      "description": "b) Đối với người làm việc tại cơ sở khám bệnh, chữa bệnh tư nhân (bao gồm cả bệnh viện tư nhân);",
+      "example": null
+    },
+    {
+      "order": 4,
+      "title": "c)",
+      "description": "c) Đối với người đang không làm việc tại cơ sở khám bệnh, chữa bệnh. 2. **Bước 2:** Cơ quan tiếp nhận hồ sơ thực hiện việc cấp giấy phép hành nghề trong thời hạn 20 ngày làm việc, kể từ ngày nhận đủ hồ sơ. Trường hợp không cấp giấy phép hành nghề thì phải trả lời bằng văn bản và nêu rõ lý do. Trường hợp cần xác minh tài liệu có yếu tố nước ngoài trong hồ sơ đề nghị cấp giấy phép hành nghề thì thời hạn cấp giấy phép hành nghề là 20 ngày làm việc kể từ ngày có kết quả xác minh.",
+      "example": "20 ngày làm việc"
+    }
+  ],
+  "input_fields": [
+    {
+      "field": "request_subject",
+      "label": "Đối tượng làm thủ tục",
+      "type": "string",
+      "required": true
+    },
+    {
+      "field": "insurance_or_medical_need",
+      "label": "Nhu cầu bảo hiểm hoặc y tế",
+      "type": "string",
+      "required": true
+    },
+    {
+      "field": "submission_channel_preference",
+      "label": "Kênh nộp dự kiến",
+      "type": "enum",
+      "required": false,
+      "options": [
+        "Trực tiếp",
+        "Trực tuyến",
+        "Dịch vụ bưu chính"
+      ]
+    },
+    {
+      "field": "has_insurance_number",
+      "label": "Đã có mã BHXH/BHYT",
+      "type": "boolean",
+      "required": false
+    }
+  ],
+  "validation_rules": [
+    {
+      "id": "required-1",
+      "severity": "error",
+      "field": "request_subject",
+      "rule": "Trường bắt buộc phải có dữ liệu hợp lệ trước khi nộp.",
+      "message": "Thiếu trường bắt buộc: Đối tượng làm thủ tục."
+    },
+    {
+      "id": "required-2",
+      "severity": "error",
+      "field": "insurance_or_medical_need",
+      "rule": "Trường bắt buộc phải có dữ liệu hợp lệ trước khi nộp.",
+      "message": "Thiếu trường bắt buộc: Nhu cầu bảo hiểm hoặc y tế."
+    },
+    {
+      "id": "hint-1",
+      "severity": "warning",
+      "field": "general",
+      "rule": "Nên xác định trước kênh nộp hồ sơ để biết có cần bản giấy, bản điện tử hay xuất trình trực tiếp.",
+      "message": "Nên xác định trước kênh nộp hồ sơ để biết có cần bản giấy, bản điện tử hay xuất trình trực tiếp."
+    },
+    {
+      "id": "hint-2",
+      "severity": "warning",
+      "field": "general",
+      "rule": "Có mẫu biểu đính kèm, nên kiểm tra đúng biểu mẫu trước khi nộp.",
+      "message": "Có mẫu biểu đính kèm, nên kiểm tra đúng biểu mẫu trước khi nộp."
+    },
+    {
+      "id": "hint-3",
+      "severity": "warning",
+      "field": "general",
+      "rule": "Nên xác định đúng nhóm đối tượng, mã số bảo hiểm và quyền lợi áp dụng trước khi nộp.",
+      "message": "Nên xác định đúng nhóm đối tượng, mã số bảo hiểm và quyền lợi áp dụng trước khi nộp."
+    }
+  ],
+  "common_errors": [
+    {
+      "field": "general",
+      "issue": "Thiếu giấy tờ hợp pháp hóa hoặc giấy tờ nhân thân của phía nước ngoài.",
+      "fix": "Nên xác định trước kênh nộp hồ sơ để biết có cần bản giấy, bản điện tử hay xuất trình trực tiếp."
+    },
+    {
+      "field": "general",
+      "issue": "Điền sai mẫu tờ khai hoặc chọn sai biểu mẫu đi kèm.",
+      "fix": "Nên xác định trước kênh nộp hồ sơ để biết có cần bản giấy, bản điện tử hay xuất trình trực tiếp."
+    },
+    {
+      "field": "general",
+      "issue": "Thông tin thửa đất, tài sản hoặc giấy chứng nhận chưa khớp với hồ sơ hiện có.",
+      "fix": "Nên xác định trước kênh nộp hồ sơ để biết có cần bản giấy, bản điện tử hay xuất trình trực tiếp."
+    },
+    {
+      "field": "general",
+      "issue": "Thiếu minh chứng học tập, văn bằng hoặc xác nhận từ cơ sở đào tạo.",
+      "fix": "Nên xác định trước kênh nộp hồ sơ để biết có cần bản giấy, bản điện tử hay xuất trình trực tiếp."
+    },
+    {
+      "field": "general",
+      "issue": "Thiếu hồ sơ về vị trí việc làm, đơn vị sử dụng lao động hoặc điều kiện làm việc áp dụng.",
+      "fix": "Nên xác định trước kênh nộp hồ sơ để biết có cần bản giấy, bản điện tử hay xuất trình trực tiếp."
+    }
+  ],
+  "clarifying_questions": [
+    {
+      "id": "clarify_1",
+      "question": "Bạn đang muốn đăng ký, điều chỉnh hay xác nhận quyền lợi y tế hoặc bảo hiểm nào?",
+      "purpose": "workflow_intake"
+    },
+    {
+      "id": "clarify_2",
+      "question": "Bạn đã có mã BHXH/BHYT hoặc thông tin đơn vị tiếp nhận liên quan chưa?",
+      "purpose": "workflow_intake"
+    }
+  ],
+  "legal_basis": [
+    {
+      "title": "Luật Khám, chữa bệnh 15/2023/QH15 (09/1/2023)",
+      "code": "15/2023/QH15"
+    },
+    {
+      "title": "Nghị định số 96/2023/NĐ-CP ngày 30 tháng 12 năm 2023 của Chính phủ quy định chi tiết một số điều của Luật Khám bệnh, chữa bệnh.",
+      "code": "96/2023/NĐ-CP"
+    },
+    {
+      "title": "Thông tư số 57/2024/TT-BYT ngày 31/12/2024 của Bộ Y tế quy định việc phân cấp, giải quyết thủ tục hành chính trong lĩnh vực khám bệnh, chữa bệnh thuộc thẩm quyền quản lý của Bộ Y tế",
+      "code": "57/2024/TT-BYT"
+    },
+    {
+      "title": "Quy định về phân cấp trong lĩnh vực y, dược cổ truyền",
+      "code": "21/2026/TT-BYT"
+    },
+    {
+      "title": "Thông tư quy định mức thu, miễn một số khoản phí, lệ phí nhằm hỗ trợ cho doanh nghiệp, người dân",
+      "code": "64/2025/TT-BTC"
+    },
+    {
+      "title": "NGHỊ ĐỊNH QUY ĐỊNH VỀ PHÂN QUYỀN, PHÂN CẤP TRONG LĨNH VỰC Y TẾ",
+      "code": "148/2025/NĐ-CP"
+    },
+    {
+      "title": "5. Thông tư 64/2025/TT-BTC ngày 30/6/2025 của Bộ Tài chính về việc quy định mức thu, miễn một số khoản phí, lệ phí nhằm hỗ trợ cho doanh nghiệp, người dân.",
+      "code": "Thông tư 64/2025/TT-BTC"
+    },
+    {
+      "title": "Thông tư",
+      "code": "59/2023/TT-BTC"
+    }
+  ],
+  "legal_bases": [
+    {
+      "title": "Luật Khám, chữa bệnh 15/2023/QH15 (09/1/2023)",
+      "code": "15/2023/QH15"
+    },
+    {
+      "title": "Nghị định số 96/2023/NĐ-CP ngày 30 tháng 12 năm 2023 của Chính phủ quy định chi tiết một số điều của Luật Khám bệnh, chữa bệnh.",
+      "code": "96/2023/NĐ-CP"
+    },
+    {
+      "title": "Thông tư số 57/2024/TT-BYT ngày 31/12/2024 của Bộ Y tế quy định việc phân cấp, giải quyết thủ tục hành chính trong lĩnh vực khám bệnh, chữa bệnh thuộc thẩm quyền quản lý của Bộ Y tế",
+      "code": "57/2024/TT-BYT"
+    },
+    {
+      "title": "Quy định về phân cấp trong lĩnh vực y, dược cổ truyền",
+      "code": "21/2026/TT-BYT"
+    },
+    {
+      "title": "Thông tư quy định mức thu, miễn một số khoản phí, lệ phí nhằm hỗ trợ cho doanh nghiệp, người dân",
+      "code": "64/2025/TT-BTC"
+    },
+    {
+      "title": "NGHỊ ĐỊNH QUY ĐỊNH VỀ PHÂN QUYỀN, PHÂN CẤP TRONG LĨNH VỰC Y TẾ",
+      "code": "148/2025/NĐ-CP"
+    },
+    {
+      "title": "5. Thông tư 64/2025/TT-BTC ngày 30/6/2025 của Bộ Tài chính về việc quy định mức thu, miễn một số khoản phí, lệ phí nhằm hỗ trợ cho doanh nghiệp, người dân.",
+      "code": "Thông tư 64/2025/TT-BTC"
+    },
+    {
+      "title": "Thông tư",
+      "code": "59/2023/TT-BTC"
+    }
+  ],
+  "faq": [
+    {
+      "question": "Có thể nộp qua kênh nào?",
+      "answer": "Các kênh hiện có: Trực tiếp, Trực tuyến, Dịch vụ bưu chính."
+    },
+    {
+      "question": "Thời gian xử lý tham chiếu là bao lâu?",
+      "answer": "Thời gian xử lý tham chiếu hiện có là 20 ngày làm việc."
+    },
+    {
+      "question": "Kết quả chính của thủ tục là gì?",
+      "answer": "Kết quả chính được trích xuất là Giấy phép hành nghề."
+    }
+  ],
+  "guidance": {
+    "highlight_documents": [
+      {
+        "bucket": "required",
+        "name": "a) Đơn theo Mẫu 08 Phụ lục I ban hành kèm theo Nghị định số 96/2023/NĐ-CP.",
+        "conditions": [],
+        "attachment_path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/1_012289/M%E1%BA%ABu%2008%20PL%20I%20ND%2096.docx"
+      },
+      {
+        "bucket": "required",
+        "name": "a) Đơn theo Mẫu 08 Phụ lục I ban hành kèm theo Nghị định số 96/2023/NĐ-CP.",
+        "conditions": [],
+        "attachment_path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/1_012289/M%E1%BA%ABu%2008%20PL%20I%20ND%2096.docx"
+      },
+      {
+        "bucket": "required",
+        "name": "a) Đơn theo Mẫu 08 Phụ lục I ban hành kèm theo Nghị định số 96/2023/NĐ-CP.",
+        "conditions": [],
+        "attachment_path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/1_012289/M%E1%BA%ABu%2008%20PL%20I%20ND%2096.docx"
+      },
+      {
+        "bucket": "required",
+        "name": "a) Đơn theo Mẫu 08 Phụ lục I ban hành kèm theo Nghị định số 96/2023/NĐ-CP.",
+        "conditions": [],
+        "attachment_path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/1_012289/M%E1%BA%ABu%2008%20PL%20I%20ND%2096.docx"
+      },
+      {
+        "bucket": "conditional",
+        "name": "d) Bản chính hoặc bản sao hợp lệ giấy khám sức khỏe do cơ sở khám bệnh, chữa bệnh có đủ điều kiện cấp (không áp dụng đối với trường hợp kết quả khám sức khỏe đã được kết nối, chia sẻ trên Hệ thống thông tin về quản lý hoạt động khám bệnh, chữa bệnh hoặc cơ sở dữ liệu quốc gia về y tế) hoặc bản sao hợp lệ giấy phép lao động đối với trường hợp phải có giấy phép lao động theo quy định của Bộ luật Lao động.",
+        "conditions": [
+          "d) Bản chính hoặc bản sao hợp lệ giấy khám sức khỏe do cơ sở khám bệnh, chữa bệnh có đủ điều kiện cấp (không áp dụng đối với trường hợp kết quả khám sức khỏe đã được kết nối, chia sẻ trên Hệ thống thông tin về quản lý hoạt động khám bệnh, chữa bệnh hoặc cơ sở dữ liệu quốc gia về y tế) hoặc bản sao hợp lệ giấy phép lao động đối với trường hợp phải có giấy phép lao động theo quy định của Bộ luật Lao động."
+        ],
+        "attachment_path": null
+      },
+      {
+        "bucket": "conditional",
+        "name": "b) Bản sao hợp lệ của một trong các giấy tờ sau: - Văn bằng chuyên môn (không áp dụng đối với trường hợp văn bằng chuyên môn đã được kết nối, chia sẻ trên Hệ thống thông tin về quản lý hoạt động khám bệnh, chữa bệnh hoặc cơ sở dữ liệu quốc gia về y tế); - Giấy phép hành nghề đã được thừa nhận theo quy định tại Điều 37 Nghị định số 96/2023/NĐ-CP (không áp dụng đối với trường hợp kết quả thừa nhận giấy phép hành nghề đã được kết nối, chia sẻ trên Hệ thống thông tin về quản lý hoạt động khám bệnh, chữa bệnh hoặc cơ sở dữ liệu quốc gia về y tế).",
+        "conditions": [
+          "b) Bản sao hợp lệ của một trong các giấy tờ sau: - Văn bằng chuyên môn (không áp dụng đối với trường hợp văn bằng chuyên môn đã được kết nối, chia sẻ trên Hệ thống thông tin về quản lý hoạt động khám bệnh, chữa bệnh hoặc cơ sở dữ liệu quốc gia về y tế); - Giấy phép hành nghề đã được thừa nhận theo quy định tại Điều 37 Nghị định số 96/2023/NĐ-CP (không áp dụng đối với trường hợp kết quả thừa nhận giấy phép hành nghề đã được kết nối, chia sẻ trên Hệ thống thông tin về quản lý hoạt động khám bệnh, chữa bệnh hoặc cơ sở dữ liệu quốc gia về y tế)."
+        ],
+        "attachment_path": null
+      }
+    ],
+    "special_cases": [
+      "Có yếu tố nước ngoài",
+      "Có kiểm tra dữ liệu cư trú/định danh",
+      "Có thể cần đối chiếu thông tin thửa đất hoặc giấy chứng nhận",
+      "Có thể cần xác minh hồ sơ học tập hoặc văn bằng",
+      "Có thể cần xác minh quan hệ lao động hoặc giấy phép làm việc"
+    ],
+    "common_errors": [
+      "Thiếu giấy tờ hợp pháp hóa hoặc giấy tờ nhân thân của phía nước ngoài.",
+      "Điền sai mẫu tờ khai hoặc chọn sai biểu mẫu đi kèm.",
+      "Thông tin thửa đất, tài sản hoặc giấy chứng nhận chưa khớp với hồ sơ hiện có.",
+      "Thiếu minh chứng học tập, văn bằng hoặc xác nhận từ cơ sở đào tạo.",
+      "Thiếu hồ sơ về vị trí việc làm, đơn vị sử dụng lao động hoặc điều kiện làm việc áp dụng."
+    ],
+    "validation_hints": [
+      "Nên xác định trước kênh nộp hồ sơ để biết có cần bản giấy, bản điện tử hay xuất trình trực tiếp.",
+      "Có mẫu biểu đính kèm, nên kiểm tra đúng biểu mẫu trước khi nộp.",
+      "Nên xác định đúng nhóm đối tượng, mã số bảo hiểm và quyền lợi áp dụng trước khi nộp."
+    ]
+  },
+  "next_steps": {
+    "summary": "Nên xác định rõ đối tượng tham gia, quyền lợi hoặc nhu cầu điều chỉnh hồ sơ y tế trước khi nộp. Có thể chọn kênh nộp phù hợp: Trực tiếp, Trực tuyến, Dịch vụ bưu chính. Hiện có khoảng 35 mục giấy tờ cần theo dõi trong checklist.",
+    "time_badge": "20 ngày làm việc",
+    "result_label": "Giấy phép hành nghề",
+    "primary_channel": "in_person",
+    "channels": [
+      "in_person",
+      "online",
+      "postal"
+    ]
+  },
+  "notes": [],
+  "provenance": {
+    "pipeline": "raw->structured->normalized->enriched->ui_api_payload",
+    "normalizer_version": "0.2.0",
+    "enricher_version": "0.2.0",
+    "mapping_notes": "excluded_from_clean_workflow_dataset",
+    "supported_group": true
+  }
+}

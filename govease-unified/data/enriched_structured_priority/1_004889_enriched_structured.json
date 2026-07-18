@@ -1,0 +1,123 @@
+{
+  "schema_version": "1.0",
+  "enricher_version": "0.2.0",
+  "source": {
+    "procedure_code": "1.004889",
+    "title": "Công nhận bằng tốt nghiệp trung học cơ sở, bằng tốt nghiệp trung học phổ thông, giấy chứng nhận hoàn thành chương trình giáo dục phổ thông do cơ sở giáo dục nước ngoài cấp để sử dụng tại Việt Nam",
+    "group_key": "hoc_tap",
+    "workflow_family": "education_study_workflow",
+    "subflow": "van_bang_chung_chi"
+  },
+  "experience": {
+    "entry_label": "Hỗ trợ giáo dục và học tập",
+    "overview_summary": "Thủ tục này thuộc nhóm giáo dục và học tập, thường liên quan đến hồ sơ đào tạo, văn bằng hoặc điều kiện học tập của người học. Kết quả thường nhận được là kết quả giải quyết theo thủ tục này. Thời gian xử lý tham khảo: 20 Ngày làm việc.",
+    "next_step_summary": "Nên rà trước thông tin người học, cơ sở đào tạo và loại kết quả cần xin xác nhận hoặc cấp lại. Có thể chọn kênh nộp phù hợp: Trực tiếp, Trực tuyến, Dịch vụ bưu chính. Hiện có khoảng 5 mục giấy tờ cần theo dõi trong checklist.",
+    "tone": "supportive_public_service"
+  },
+  "guidance": {
+    "highlight_documents": [
+      {
+        "bucket": "required",
+        "name": "Bản sao văn bằng hoặc bản sao từ sổ gốc cấp văn bằng đề nghị công nhận kèm theo bản công chứng dịch sang tiếng Việt.",
+        "conditions": [],
+        "attachment_path": null
+      },
+      {
+        "bucket": "required",
+        "name": "Bản sao phụ lục văn bằng hoặc bảng kết quả học tập kèm theo bản công chứng dịch sang tiếng Việt.",
+        "conditions": [],
+        "attachment_path": null
+      },
+      {
+        "bucket": "conditional",
+        "name": "Người đề nghị công nhận văn bằng cung cấp các thông tin về văn bằng Tên giấy tờ Mẫu đơn, tờ khai Số lượng Phiếu đề nghị công nhận văn bằng do cơ sở nước ngoài cấp (theo mẫu tại Phụ lục I ban hành kèm theo Thông tư số 13/2021/TT-BGDĐT). Trường hợp người đề nghị công nhận văn bằng nộp hồ sơ trực tuyến thì cung cấp thông tin trực tiếp trên Mẫu Phiếu khai điện tử trên Cổng Dịch vụ công trực tuyến của Sở Giáo dục và Đào tạo,",
+        "conditions": [
+          "Người đề nghị công nhận văn bằng cung cấp các thông tin về văn bằng Tên giấy tờ Mẫu đơn, tờ khai Số lượng Phiếu đề nghị công nhận văn bằng do cơ sở nước ngoài cấp (theo mẫu tại Phụ lục I ban hành kèm theo Thông tư số 13/2021/TT-BGDĐT). Trường hợp người đề nghị công nhận văn bằng nộp hồ sơ trực tuyến thì cung cấp thông tin trực tiếp trên Mẫu Phiếu khai điện tử trên Cổng Dịch vụ công trực tuyến của Sở Giáo dục và Đào tạo,"
+        ],
+        "attachment_path": "Mẫu phiếu đề nghị công nhận văn bằng do cơ sở nước ngoài cấp.docx"
+      },
+      {
+        "bucket": "conditional",
+        "name": "Bản sao công chứng văn bằng, chứng chỉ có liên quan trực tiếp (nếu có).",
+        "conditions": [
+          "Bản sao công chứng văn bằng, chứng chỉ có liên quan trực tiếp (nếu có)."
+        ],
+        "attachment_path": null
+      },
+      {
+        "bucket": "conditional",
+        "name": "Minh chứng thời gian học ở nước ngoài (nếu có): Quyết định cử đi học và tiếp nhận của đơn vị quản lý lao động; hộ chiếu, các trang thị thực có visa, dấu xuất nhập cảnh phù hợp với thời gian du học hoặc giấy tờ minh chứng khác.",
+        "conditions": [
+          "Minh chứng thời gian học ở nước ngoài (nếu có): Quyết định cử đi học và tiếp nhận của đơn vị quản lý lao động; hộ chiếu, các trang thị thực có visa, dấu xuất nhập cảnh phù hợp với thời gian du học hoặc giấy tờ minh chứng khác."
+        ],
+        "attachment_path": null
+      }
+    ],
+    "special_cases": [
+      "Có yếu tố nước ngoài",
+      "Có trường hợp hồ sơ điện tử thay thế bản giấy",
+      "Có thể cần xác minh hồ sơ học tập hoặc văn bằng",
+      "Có thể cần xác minh quan hệ lao động hoặc giấy phép làm việc"
+    ],
+    "common_errors": [
+      "Thiếu giấy tờ hợp pháp hóa hoặc giấy tờ nhân thân của phía nước ngoài.",
+      "Điền sai mẫu tờ khai hoặc chọn sai biểu mẫu đi kèm.",
+      "Thiếu minh chứng học tập, văn bằng hoặc xác nhận từ cơ sở đào tạo.",
+      "Thiếu hồ sơ về vị trí việc làm, đơn vị sử dụng lao động hoặc điều kiện làm việc áp dụng."
+    ],
+    "validation_hints": [
+      "Nên xác định trước kênh nộp hồ sơ để biết có cần bản giấy, bản điện tử hay xuất trình trực tiếp.",
+      "Có mẫu biểu đính kèm, nên kiểm tra đúng biểu mẫu trước khi nộp.",
+      "Nên rà lại thông tin người học, cơ sở đào tạo và loại xác nhận hoặc văn bằng cần xin."
+    ]
+  },
+  "intake": {
+    "candidate_input_fields": [
+      {
+        "field_id": "learner_full_name",
+        "label": "Tên người học",
+        "field_type": "text",
+        "required": true
+      },
+      {
+        "field_id": "education_record_type",
+        "label": "Loại hồ sơ học tập cần xử lý",
+        "field_type": "text",
+        "required": true
+      },
+      {
+        "field_id": "education_institution",
+        "label": "Cơ sở đào tạo liên quan",
+        "field_type": "text",
+        "required": false
+      },
+      {
+        "field_id": "submission_channel_preference",
+        "label": "Kênh nộp dự kiến",
+        "field_type": "enum",
+        "required": false
+      },
+      {
+        "field_id": "certificate_or_degree_type",
+        "label": "Loại văn bằng/chứng chỉ",
+        "field_type": "text",
+        "required": false
+      }
+    ],
+    "suggested_clarifying_questions": [
+      "Bạn đang cần xử lý hồ sơ học tập, văn bằng hay xác nhận nào?",
+      "Người học và cơ sở đào tạo liên quan đã xác định rõ chưa?"
+    ]
+  },
+  "ui_hints": {
+    "primary_channel": "in_person",
+    "result_label": null,
+    "time_badge": "20 Ngày làm việc",
+    "document_count_badge": 5
+  },
+  "provenance": {
+    "generator": "workflow_domain_enricher",
+    "derivation_mode": "rule_based_semantic_enrichment",
+    "supported_group": true
+  }
+}

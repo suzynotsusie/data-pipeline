@@ -1,0 +1,266 @@
+{
+  "schema_version": "1.0",
+  "domain": "viec_lam",
+  "updated_at": "2026-07-18",
+  "source_files": [
+    "C:\\Users\\ku060\\Downloads\\VAIC source\\data-pipeline\\main\\full-data.csv",
+    "C:\\Users\\ku060\\Downloads\\VAIC source\\data-pipeline\\data\\workflows\\viec_lam\\summary.csv",
+    "C:\\Users\\ku060\\Downloads\\VAIC source\\data-pipeline\\data\\workflows\\viec_lam\\normalized.json",
+    "C:\\Users\\ku060\\Downloads\\VAIC source\\data-pipeline\\raw_data"
+  ],
+  "coverage": {
+    "expected_codes": [
+      "1.001601",
+      "1.014745",
+      "1.014748",
+      "1.014749",
+      "1.014750",
+      "1.014751",
+      "1.014752",
+      "1.014753"
+    ],
+    "covered_codes": [
+      "1.001601",
+      "1.014745",
+      "1.014748",
+      "1.014749",
+      "1.014750",
+      "1.014751",
+      "1.014752",
+      "1.014753"
+    ],
+    "missing_codes": []
+  },
+  "llm_contract": {
+    "role": "parse_user_answer_and_rephrase_question_only",
+    "required_output_schema": {
+      "intent": "viec_lam",
+      "current_node": "string",
+      "slot_updates": {
+        "subdomain_key": "ho_tro_tu_van_gioi_thieu_viec_lam | tuyen_dung | bao_hiem_xa_hoi_that_nghiep_tro_cap | chung_chi_hanh_nghe | nang_ngach | thue_thu_nhap_ca_nhan | cap_phep_lao_dong_nguoi_nuoc_ngoai | unknown",
+        "operation_key": "string",
+        "operation_group": "string"
+      },
+      "confidence": "0_to_1",
+      "needs_human_review": "boolean"
+    }
+  },
+  "entry_prompts": [
+    "Bạn đang cần tìm việc, nhận trợ cấp thất nghiệp, học nâng cao kỹ năng, khai thuế thu nhập hay làm giấy phép lao động?",
+    "Bạn muốn đăng ký mới, điều chỉnh thông tin, xin hỗ trợ, xin cấp chứng chỉ hay xin giấy phép làm việc?"
+  ],
+  "slots": [
+    {
+      "name": "subdomain_key",
+      "required": true,
+      "description": "Nhánh chính của nhóm Việc làm."
+    },
+    {
+      "name": "operation_key",
+      "required": true,
+      "description": "Thao tác cụ thể ánh xạ trực tiếp tới thủ tục cuối cùng."
+    },
+    {
+      "name": "operation_group",
+      "required": false,
+      "description": "Nhóm thao tác để gom các thủ tục gần nhau cho UI và parser."
+    }
+  ],
+  "subdomain_catalog": [
+    {
+      "subdomain_key": "bao_hiem_xa_hoi_that_nghiep_tro_cap",
+      "subdomain_label": "Bảo hiểm xã hội, thất nghiệp, trợ cấp",
+      "event_id": 262,
+      "summary": "Nhóm thủ tục tham gia, hưởng, tiếp tục hưởng, tạm dừng, chấm dứt và chuyển nơi hưởng trợ cấp thất nghiệp."
+    }
+  ],
+  "decision_tree": {
+    "start_node": "employment_subdomain",
+    "nodes": [
+      {
+        "id": "employment_subdomain",
+        "type": "question",
+        "slot": "subdomain_key",
+        "question": "Bạn đang hỏi về hỗ trợ việc làm, tuyển dụng, trợ cấp thất nghiệp, chứng chỉ nghề, nâng cao kỹ năng, thuế thu nhập cá nhân hay giấy phép lao động cho người nước ngoài?",
+        "options": [
+          "bao_hiem_xa_hoi_that_nghiep_tro_cap"
+        ],
+        "prefilled_value": "bao_hiem_xa_hoi_that_nghiep_tro_cap"
+      },
+      {
+        "id": "employment_operation",
+        "type": "question",
+        "slot": "operation_key",
+        "question": "Bạn cần làm thao tác nào cụ thể trong nhánh đã chọn?",
+        "options_by_subdomain": {
+          "bao_hiem_xa_hoi_that_nghiep_tro_cap": [
+            {
+              "operation_key": "uy_quyen_linh_thay_cac_che_do_bao_hiem_xa_hoi_tro_cap_that_nghiep",
+              "operation_group": "uy_quyen_nhan_che_do",
+              "procedure_code": "1.001601",
+              "procedure_title": "Ủy quyền lĩnh thay các chế độ bảo hiểm xã hội, trợ cấp thất nghiệp"
+            },
+            {
+              "operation_key": "tham_gia_bao_hiem_that_nghiep_cap_tinh",
+              "operation_group": "tham_gia_bao_hiem_that_nghiep",
+              "procedure_code": "1.014745",
+              "procedure_title": "Tham gia bảo hiểm thất nghiệp (Cấp tỉnh)"
+            },
+            {
+              "operation_key": "huong_tro_cap_that_nghiep_cap_tinh",
+              "operation_group": "huong_tro_cap_that_nghiep",
+              "procedure_code": "1.014748",
+              "procedure_title": "Hưởng trợ cấp thất nghiệp (Cấp tỉnh)"
+            },
+            {
+              "operation_key": "thong_bao_hang_thang_ve_viec_tim_kiem_viec_lam_cap_tinh",
+              "operation_group": "thong_bao_tim_kiem_viec_lam",
+              "procedure_code": "1.014749",
+              "procedure_title": "Thông báo hằng tháng về việc tìm kiếm việc làm (Cấp tỉnh)"
+            },
+            {
+              "operation_key": "tam_dung_huong_tro_cap_that_nghiep_cap_tinh",
+              "operation_group": "huong_tro_cap_that_nghiep",
+              "procedure_code": "1.014750",
+              "procedure_title": "Tạm dừng hưởng trợ cấp thất nghiệp (Cấp tỉnh)"
+            },
+            {
+              "operation_key": "tiep_tuc_huong_tro_cap_that_nghiep_cap_tinh",
+              "operation_group": "huong_tro_cap_that_nghiep",
+              "procedure_code": "1.014751",
+              "procedure_title": "Tiếp tục hưởng trợ cấp thất nghiệp (Cấp tỉnh)"
+            },
+            {
+              "operation_key": "cham_dut_huong_tro_cap_that_nghiep_cap_tinh",
+              "operation_group": "huong_tro_cap_that_nghiep",
+              "procedure_code": "1.014752",
+              "procedure_title": "Chấm dứt hưởng trợ cấp thất nghiệp (Cấp tỉnh)"
+            },
+            {
+              "operation_key": "chuyen_noi_huong_tro_cap_that_nghiep_cap_tinh",
+              "operation_group": "huong_tro_cap_that_nghiep",
+              "procedure_code": "1.014753",
+              "procedure_title": "Chuyển nơi hưởng trợ cấp thất nghiệp (Cấp tỉnh)"
+            }
+          ]
+        },
+        "options": [
+          "uy_quyen_linh_thay_cac_che_do_bao_hiem_xa_hoi_tro_cap_that_nghiep",
+          "tham_gia_bao_hiem_that_nghiep_cap_tinh",
+          "huong_tro_cap_that_nghiep_cap_tinh",
+          "thong_bao_hang_thang_ve_viec_tim_kiem_viec_lam_cap_tinh",
+          "tam_dung_huong_tro_cap_that_nghiep_cap_tinh",
+          "tiep_tuc_huong_tro_cap_that_nghiep_cap_tinh",
+          "cham_dut_huong_tro_cap_that_nghiep_cap_tinh",
+          "chuyen_noi_huong_tro_cap_that_nghiep_cap_tinh"
+        ]
+      }
+    ],
+    "routes": [
+      {
+        "route_id": "bao_hiem_xa_hoi_that_nghiep_tro_cap-1_001601",
+        "conditions": {
+          "subdomain_key": "bao_hiem_xa_hoi_that_nghiep_tro_cap",
+          "operation_key": "uy_quyen_linh_thay_cac_che_do_bao_hiem_xa_hoi_tro_cap_that_nghiep"
+        },
+        "procedure_code": "1.001601",
+        "procedure_name": "Ủy quyền lĩnh thay các chế độ bảo hiểm xã hội, trợ cấp thất nghiệp",
+        "why_this_route": "Route trực tiếp cho nhu cầu 'Ủy quyền lĩnh thay các chế độ bảo hiểm xã hội, trợ cấp thất nghiệp' trong nhánh 'Bảo hiểm xã hội, thất nghiệp, trợ cấp'."
+      },
+      {
+        "route_id": "bao_hiem_xa_hoi_that_nghiep_tro_cap-1_014745",
+        "conditions": {
+          "subdomain_key": "bao_hiem_xa_hoi_that_nghiep_tro_cap",
+          "operation_key": "tham_gia_bao_hiem_that_nghiep_cap_tinh"
+        },
+        "procedure_code": "1.014745",
+        "procedure_name": "Tham gia bảo hiểm thất nghiệp (Cấp tỉnh)",
+        "why_this_route": "Route trực tiếp cho nhu cầu 'Tham gia bảo hiểm thất nghiệp (Cấp tỉnh)' trong nhánh 'Bảo hiểm xã hội, thất nghiệp, trợ cấp'."
+      },
+      {
+        "route_id": "bao_hiem_xa_hoi_that_nghiep_tro_cap-1_014748",
+        "conditions": {
+          "subdomain_key": "bao_hiem_xa_hoi_that_nghiep_tro_cap",
+          "operation_key": "huong_tro_cap_that_nghiep_cap_tinh"
+        },
+        "procedure_code": "1.014748",
+        "procedure_name": "Hưởng trợ cấp thất nghiệp (Cấp tỉnh)",
+        "why_this_route": "Route trực tiếp cho nhu cầu 'Hưởng trợ cấp thất nghiệp (Cấp tỉnh)' trong nhánh 'Bảo hiểm xã hội, thất nghiệp, trợ cấp'."
+      },
+      {
+        "route_id": "bao_hiem_xa_hoi_that_nghiep_tro_cap-1_014749",
+        "conditions": {
+          "subdomain_key": "bao_hiem_xa_hoi_that_nghiep_tro_cap",
+          "operation_key": "thong_bao_hang_thang_ve_viec_tim_kiem_viec_lam_cap_tinh"
+        },
+        "procedure_code": "1.014749",
+        "procedure_name": "Thông báo hằng tháng về việc tìm kiếm việc làm (Cấp tỉnh)",
+        "why_this_route": "Route trực tiếp cho nhu cầu 'Thông báo hằng tháng về việc tìm kiếm việc làm (Cấp tỉnh)' trong nhánh 'Bảo hiểm xã hội, thất nghiệp, trợ cấp'."
+      },
+      {
+        "route_id": "bao_hiem_xa_hoi_that_nghiep_tro_cap-1_014750",
+        "conditions": {
+          "subdomain_key": "bao_hiem_xa_hoi_that_nghiep_tro_cap",
+          "operation_key": "tam_dung_huong_tro_cap_that_nghiep_cap_tinh"
+        },
+        "procedure_code": "1.014750",
+        "procedure_name": "Tạm dừng hưởng trợ cấp thất nghiệp (Cấp tỉnh)",
+        "why_this_route": "Route trực tiếp cho nhu cầu 'Tạm dừng hưởng trợ cấp thất nghiệp (Cấp tỉnh)' trong nhánh 'Bảo hiểm xã hội, thất nghiệp, trợ cấp'."
+      },
+      {
+        "route_id": "bao_hiem_xa_hoi_that_nghiep_tro_cap-1_014751",
+        "conditions": {
+          "subdomain_key": "bao_hiem_xa_hoi_that_nghiep_tro_cap",
+          "operation_key": "tiep_tuc_huong_tro_cap_that_nghiep_cap_tinh"
+        },
+        "procedure_code": "1.014751",
+        "procedure_name": "Tiếp tục hưởng trợ cấp thất nghiệp (Cấp tỉnh)",
+        "why_this_route": "Route trực tiếp cho nhu cầu 'Tiếp tục hưởng trợ cấp thất nghiệp (Cấp tỉnh)' trong nhánh 'Bảo hiểm xã hội, thất nghiệp, trợ cấp'."
+      },
+      {
+        "route_id": "bao_hiem_xa_hoi_that_nghiep_tro_cap-1_014752",
+        "conditions": {
+          "subdomain_key": "bao_hiem_xa_hoi_that_nghiep_tro_cap",
+          "operation_key": "cham_dut_huong_tro_cap_that_nghiep_cap_tinh"
+        },
+        "procedure_code": "1.014752",
+        "procedure_name": "Chấm dứt hưởng trợ cấp thất nghiệp (Cấp tỉnh)",
+        "why_this_route": "Route trực tiếp cho nhu cầu 'Chấm dứt hưởng trợ cấp thất nghiệp (Cấp tỉnh)' trong nhánh 'Bảo hiểm xã hội, thất nghiệp, trợ cấp'."
+      },
+      {
+        "route_id": "bao_hiem_xa_hoi_that_nghiep_tro_cap-1_014753",
+        "conditions": {
+          "subdomain_key": "bao_hiem_xa_hoi_that_nghiep_tro_cap",
+          "operation_key": "chuyen_noi_huong_tro_cap_that_nghiep_cap_tinh"
+        },
+        "procedure_code": "1.014753",
+        "procedure_name": "Chuyển nơi hưởng trợ cấp thất nghiệp (Cấp tỉnh)",
+        "why_this_route": "Route trực tiếp cho nhu cầu 'Chuyển nơi hưởng trợ cấp thất nghiệp (Cấp tỉnh)' trong nhánh 'Bảo hiểm xã hội, thất nghiệp, trợ cấp'."
+      }
+    ]
+  },
+  "pre_submission_checks": [
+    {
+      "field_group": "employment_support",
+      "checks": [
+        "Nhóm hỗ trợ việc làm và tuyển dụng phải làm rõ người dùng đang tìm việc, cập nhật tình trạng lao động hay xin hỗ trợ chi phí/liên kết việc làm.",
+        "Nếu là đăng ký hoặc điều chỉnh lao động, cần xác định rõ trạng thái hiện tại: có việc làm, thất nghiệp hay không tham gia hoạt động kinh tế."
+      ]
+    },
+    {
+      "field_group": "unemployment_and_skills",
+      "checks": [
+        "Nhóm thất nghiệp phải phân biệt rõ nộp hồ sơ hưởng mới, thông báo tìm việc hằng tháng, tiếp tục hưởng, tạm dừng, chấm dứt hay chuyển nơi hưởng.",
+        "Nhóm chứng chỉ và nâng cao kỹ năng phải làm rõ đây là cấp chứng chỉ, cấp lại hay xin hỗ trợ đào tạo/nâng cao kỹ năng nghề."
+      ]
+    },
+    {
+      "field_group": "tax_and_foreign_work",
+      "checks": [
+        "Nhóm thuế chỉ áp dụng cho khai thuế thu nhập cá nhân trực tiếp từ tiền lương, tiền công trong bộ workflow sạch này.",
+        "Nhóm giấy phép lao động cho người nước ngoài phải làm rõ là cấp mới, cấp lại, gia hạn hay xác nhận miễn giấy phép lao động."
+      ]
+    }
+  ],
+  "subdomain_key": "bao_hiem_xa_hoi_that_nghiep_tro_cap"
+}

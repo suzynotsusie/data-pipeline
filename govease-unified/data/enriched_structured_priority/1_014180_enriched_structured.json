@@ -1,0 +1,114 @@
+{
+  "schema_version": "1.0",
+  "enricher_version": "0.2.0",
+  "source": {
+    "procedure_code": "1.014180",
+    "title": "TẠM DỪNG ĐÓNG VÀO QUỸ HƯU TRÍ VÀ TỬ TUẤT.",
+    "group_key": "nguoi_than_qua_doi",
+    "workflow_family": null,
+    "subflow": null
+  },
+  "experience": {
+    "entry_label": "Hỗ trợ chế độ cho thân nhân",
+    "overview_summary": "Thủ tục này thuộc nhóm hỗ trợ thân nhân người đã mất, thường liên quan đến mai táng phí, tử tuất hoặc chế độ phát sinh sau khi người hưởng qua đời. Kết quả thường nhận được là Quyết định tạm dừng đóng vào quỹ hưu trí và tử tuất. Thời gian xử lý tham khảo: 10 ngày làm việc.",
+    "next_step_summary": "Nên chuẩn bị giấy tờ của người đã mất, thân nhân và căn cứ hưởng chế độ trước khi nộp. Có thể chọn kênh nộp phù hợp: Trực tiếp, Trực tuyến, Dịch vụ bưu chính. Hiện có khoảng 7 mục giấy tờ cần theo dõi trong checklist.",
+    "tone": "supportive_public_service"
+  },
+  "guidance": {
+    "highlight_documents": [
+      {
+        "bucket": "required",
+        "name": "Văn bản xác định số lao động thuộc đối tượng tham gia bảo hiểm xã hội bắt buộc tạm thời nghỉ việc hoặc văn bản xác định giá trị tài sản bị thiệt hại",
+        "conditions": [],
+        "attachment_path": null
+      },
+      {
+        "bucket": "required",
+        "name": "Văn bản đề nghị tạm dừng đóng vào quỹ hưu trí và tử tuất;",
+        "conditions": [],
+        "attachment_path": null
+      },
+      {
+        "bucket": "required",
+        "name": "Biên bản kiểm kê tài sản bị thiệt hại do thiên tai, hoả hoạn, dịch bệnh, mất mùa",
+        "conditions": [],
+        "attachment_path": null
+      },
+      {
+        "bucket": "required",
+        "name": "Báo cáo kiểm kê tài sản gần nhất trước thời điểm bị thiệt hại",
+        "conditions": [],
+        "attachment_path": null
+      },
+      {
+        "bucket": "required",
+        "name": "Danh sách lao động thuộc đối tượng tham gia bảo hiểm xã hội bắt buộc phải tạm thời nghỉ việc",
+        "conditions": [],
+        "attachment_path": null
+      },
+      {
+        "bucket": "required",
+        "name": "Danh sách lao động tại thời điểm trước khi tạm dừng sản xuất, kinh doanh và tại thời điểm đề nghị",
+        "conditions": [],
+        "attachment_path": null
+      }
+    ],
+    "special_cases": [
+      "Có thể cần đối chiếu quá trình đóng bảo hiểm để giải quyết chế độ",
+      "Có thể cần hồ sơ tử tuất hoặc mai táng phí",
+      "Có thể cần xác minh quan hệ lao động hoặc giấy phép làm việc"
+    ],
+    "common_errors": [
+      "Thiếu thông tin về thời gian tham gia bảo hiểm hoặc chưa xác định đúng chế độ hưu trí.",
+      "Thiếu giấy tờ về người đã mất hoặc căn cứ xác định thân nhân hưởng chế độ.",
+      "Thiếu hồ sơ về vị trí việc làm, đơn vị sử dụng lao động hoặc điều kiện làm việc áp dụng."
+    ],
+    "validation_hints": [
+      "Nên xác định trước kênh nộp hồ sơ để biết có cần bản giấy, bản điện tử hay xuất trình trực tiếp.",
+      "Nên kiểm tra kỹ giấy tờ của người đã mất, thân nhân và căn cứ phát sinh chế độ."
+    ]
+  },
+  "intake": {
+    "candidate_input_fields": [
+      {
+        "field_id": "deceased_person_name",
+        "label": "Người đã mất",
+        "field_type": "text",
+        "required": true
+      },
+      {
+        "field_id": "claimant_relationship",
+        "label": "Quan hệ của người nộp với người đã mất",
+        "field_type": "enum",
+        "required": true
+      },
+      {
+        "field_id": "support_benefit_type",
+        "label": "Loại chế độ cần giải quyết",
+        "field_type": "text",
+        "required": true
+      },
+      {
+        "field_id": "submission_channel_preference",
+        "label": "Kênh nộp dự kiến",
+        "field_type": "enum",
+        "required": false
+      }
+    ],
+    "suggested_clarifying_questions": [
+      "Bạn đang cần giải quyết mai táng phí, tử tuất hay chế độ nào cho thân nhân?",
+      "Giấy tờ của người đã mất và mối quan hệ của người nộp hồ sơ đã sẵn sàng chưa?"
+    ]
+  },
+  "ui_hints": {
+    "primary_channel": "online",
+    "result_label": "Quyết định tạm dừng đóng vào quỹ hưu trí và tử tuất",
+    "time_badge": "10 ngày làm việc",
+    "document_count_badge": 7
+  },
+  "provenance": {
+    "generator": "workflow_domain_enricher",
+    "derivation_mode": "rule_based_semantic_enrichment",
+    "supported_group": true
+  }
+}

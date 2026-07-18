@@ -1,0 +1,108 @@
+{
+  "schema_version": "1.0",
+  "enricher_version": "0.2.0",
+  "source": {
+    "procedure_code": "1.014761",
+    "title": "Đánh giá lần đầu việc đáp ứng Thực hành tốt thử thuốc trên lâm sàng",
+    "group_key": "suc_khoe_y_te",
+    "workflow_family": null,
+    "subflow": null
+  },
+  "experience": {
+    "entry_label": "Hỗ trợ y tế và bảo hiểm",
+    "overview_summary": "Thủ tục này thuộc nhóm y tế, thường cần đối chiếu thông tin người bệnh, đơn vị tiếp nhận hoặc quyền lợi chuyên ngành. Kết quả thường nhận được là Giấy chứng nhận đạt GCP theo Mẫu số 05 quy định tại Phụ lục IV Thông tư số 50/2025/TT-BYT đối với cơ sở đã có đề nghị trong đơn đề nghị cấp giấy chứng nhận đủ điều kiện kinh doanh dược. Thời gian xử lý tham khảo: 30 ngày làm việc.",
+    "next_step_summary": "Nên xác định rõ đối tượng tham gia, quyền lợi hoặc nhu cầu điều chỉnh hồ sơ y tế trước khi nộp. Có thể chọn kênh nộp phù hợp: Trực tiếp, Trực tuyến, Dịch vụ bưu chính. Hiện có khoảng 5 mục giấy tờ cần theo dõi trong checklist.",
+    "tone": "supportive_public_service"
+  },
+  "guidance": {
+    "highlight_documents": [
+      {
+        "bucket": "required",
+        "name": "Đơn đề nghị cấp, cấp lại, điều chỉnh Giấy chứng nhận đủ điều kiện kinh doanh dược theo Mẫu số 10, 11 và 12 tại Phụ lục I ban hành kèm theo Nghị định số 163/2025/NĐ-CP ngày 29 tháng 06 năm 2025 của Chính phủ quy định chi tiết một số điều và biện pháp để tổ chức, hướng dẫn thi hành Luật Dược (sau đây gọi là Nghị định số 163/2025/NĐ-CP);",
+        "conditions": [],
+        "attachment_path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/1_014761/Mus10-Pl1.doc"
+      },
+      {
+        "bucket": "required",
+        "name": "Giấy tờ chứng minh đã nộp phí thẩm định theo quy định tại Thông tư số 41/2023/TT-BTC ngày 12 tháng 06 năm 2023 của Bộ trưởng Bộ Tài chính quy định mức thu, chế độ thu, nộp, quản lý và sử dụng phí trong lĩnh vực dược, mỹ phẩm (sau đây gọi là Thông tư số 41/2023/TT-BTC).",
+        "conditions": [],
+        "attachment_path": null
+      },
+      {
+        "bucket": "required",
+        "name": "Giấy tờ chứng minh đã nộp phí thẩm định theo quy định tại Thông tư số 41/2023/TT-BTC.",
+        "conditions": [],
+        "attachment_path": null
+      },
+      {
+        "bucket": "required",
+        "name": "Đơn đề nghị cấp, cấp lại, điều chỉnh Giấy chứng nhận đáp ứng GCP theo Mẫu số 02 quy định tại Phụ lục IV ban hành kèm theo Thông tư;",
+        "conditions": [],
+        "attachment_path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/1_014761/4.%20%2023.3.2026%20DT%20Q%20%20BAN%20HA%20NH%20KH%20XD%20DE%20AN%20V%C3%80%20N%20%20MIEN%20VP%20%282%29.docx"
+      },
+      {
+        "bucket": "conditional",
+        "name": "Tài liệu kỹ thuật quy định tại điểm e hoặc điểm g khoản 2 Điều 20 của Nghị định số 163/2025/NĐ-CP có đóng dấu của cơ sở. Tài liệu này được trình bày theo hướng dẫn về hồ sơ tổng thể quy định tại Phụ lục III ban hành kèm theo Thông tư hoặc hồ sơ tổng thể được cập nhật trong trường hợp bổ sung phạm vi hoạt động;",
+        "conditions": [
+          "Tài liệu kỹ thuật quy định tại điểm e hoặc điểm g khoản 2 Điều 20 của Nghị định số 163/2025/NĐ-CP có đóng dấu của cơ sở. Tài liệu này được trình bày theo hướng dẫn về hồ sơ tổng thể quy định tại Phụ lục III ban hành kèm theo Thông tư hoặc hồ sơ tổng thể được cập nhật trong trường hợp bổ sung phạm vi hoạt động;"
+        ],
+        "attachment_path": null
+      }
+    ],
+    "special_cases": [
+      "Có thể cần đối chiếu thông tin thửa đất hoặc giấy chứng nhận"
+    ],
+    "common_errors": [
+      "Điền sai mẫu tờ khai hoặc chọn sai biểu mẫu đi kèm.",
+      "Thông tin thửa đất, tài sản hoặc giấy chứng nhận chưa khớp với hồ sơ hiện có."
+    ],
+    "validation_hints": [
+      "Nên xác định trước kênh nộp hồ sơ để biết có cần bản giấy, bản điện tử hay xuất trình trực tiếp.",
+      "Có mẫu biểu đính kèm, nên kiểm tra đúng biểu mẫu trước khi nộp.",
+      "Nên xác định đúng nhóm đối tượng, mã số bảo hiểm và quyền lợi áp dụng trước khi nộp."
+    ]
+  },
+  "intake": {
+    "candidate_input_fields": [
+      {
+        "field_id": "request_subject",
+        "label": "Đối tượng làm thủ tục",
+        "field_type": "text",
+        "required": true
+      },
+      {
+        "field_id": "insurance_or_medical_need",
+        "label": "Nhu cầu bảo hiểm hoặc y tế",
+        "field_type": "text",
+        "required": true
+      },
+      {
+        "field_id": "submission_channel_preference",
+        "label": "Kênh nộp dự kiến",
+        "field_type": "enum",
+        "required": false
+      },
+      {
+        "field_id": "has_insurance_number",
+        "label": "Đã có mã BHXH/BHYT",
+        "field_type": "boolean",
+        "required": false
+      }
+    ],
+    "suggested_clarifying_questions": [
+      "Bạn đang muốn đăng ký, điều chỉnh hay xác nhận quyền lợi y tế hoặc bảo hiểm nào?",
+      "Bạn đã có mã BHXH/BHYT hoặc thông tin đơn vị tiếp nhận liên quan chưa?"
+    ]
+  },
+  "ui_hints": {
+    "primary_channel": "online",
+    "result_label": "Giấy chứng nhận đạt GCP theo Mẫu số 05 quy định tại Phụ lục IV Thông tư số 50/2025/TT-BYT đối với cơ sở đã có đề nghị trong đơn đề nghị cấp giấy chứng nhận đủ điều kiện kinh doanh dược",
+    "time_badge": "30 ngày làm việc",
+    "document_count_badge": 5
+  },
+  "provenance": {
+    "generator": "workflow_domain_enricher",
+    "derivation_mode": "rule_based_semantic_enrichment",
+    "supported_group": true
+  }
+}

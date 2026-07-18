@@ -1,0 +1,297 @@
+{
+  "schema_version": "1.0",
+  "domain": "huu_tri",
+  "updated_at": "2026-07-18",
+  "source_files": [
+    "C:\\Users\\ku060\\Downloads\\VAIC source\\data-pipeline\\main\\full-data.csv",
+    "C:\\Users\\ku060\\Downloads\\VAIC source\\data-pipeline\\data\\workflows\\huu_tri\\summary.csv",
+    "C:\\Users\\ku060\\Downloads\\VAIC source\\data-pipeline\\data\\workflows\\huu_tri\\normalized.json",
+    "C:\\Users\\ku060\\Downloads\\VAIC source\\data-pipeline\\raw_data"
+  ],
+  "coverage": {
+    "expected_codes": [
+      "1.002179",
+      "1.013198",
+      "1.014160",
+      "1.014162",
+      "1.014173",
+      "1.014181",
+      "1.014183",
+      "2.002342",
+      "2.002343",
+      "2.002761"
+    ],
+    "covered_codes": [
+      "1.002179",
+      "1.013198",
+      "1.014160",
+      "1.014162",
+      "1.014173",
+      "1.014181",
+      "1.014183",
+      "2.002342",
+      "2.002343",
+      "2.002761"
+    ],
+    "missing_codes": []
+  },
+  "llm_contract": {
+    "role": "parse_user_answer_and_rephrase_question_only",
+    "required_output_schema": {
+      "intent": "huu_tri",
+      "current_node": "string",
+      "slot_updates": {
+        "subdomain_key": "chuan_bi_nghi_huu | che_do_huu_tri | unknown",
+        "operation_key": "string",
+        "operation_group": "string"
+      },
+      "confidence": "0_to_1",
+      "needs_human_review": "boolean"
+    }
+  },
+  "entry_prompts": [
+    "Bạn đang hỏi về chuẩn bị hồ sơ nghỉ hưu hay đang hưởng lương hưu, trợ cấp hưu trí?",
+    "Bạn muốn tham gia BHXH để chuẩn bị nghỉ hưu, xin hưởng lương hưu, chuyển nơi nhận hay điều chỉnh cách nhận chế độ?"
+  ],
+  "slots": [
+    {
+      "name": "subdomain_key",
+      "required": true,
+      "description": "Nhánh chính của nhóm Hưu trí."
+    },
+    {
+      "name": "operation_key",
+      "required": true,
+      "description": "Thao tác cụ thể ánh xạ trực tiếp tới thủ tục cuối cùng."
+    },
+    {
+      "name": "operation_group",
+      "required": false,
+      "description": "Nhóm thao tác để gom các thủ tục gần nhau cho UI và parser."
+    }
+  ],
+  "subdomain_catalog": [
+    {
+      "subdomain_key": "chuan_bi_nghi_huu",
+      "subdomain_label": "Chuẩn bị nghỉ hưu",
+      "event_id": 318,
+      "summary": "Nhóm thủ tục chuẩn bị hồ sơ, quá trình tham gia bảo hiểm xã hội và các điều kiện nền tảng để người dân sẵn sàng bước sang giai đoạn nghỉ hưu hoặc chọn phương án hưởng thay thế."
+    }
+  ],
+  "decision_tree": {
+    "start_node": "retirement_subdomain",
+    "nodes": [
+      {
+        "id": "retirement_subdomain",
+        "type": "question",
+        "slot": "subdomain_key",
+        "question": "Bạn đang chuẩn bị nghỉ hưu hay đang làm thủ tục hưởng, điều chỉnh chế độ hưu trí?",
+        "options": [
+          "chuan_bi_nghi_huu"
+        ],
+        "prefilled_value": "chuan_bi_nghi_huu"
+      },
+      {
+        "id": "retirement_operation",
+        "type": "question",
+        "slot": "operation_key",
+        "question": "Bạn cần thao tác nào cụ thể trong nhánh đã chọn?",
+        "options_by_subdomain": {
+          "chuan_bi_nghi_huu": [
+            {
+              "operation_key": "dang_ky_dang_ky_lai_dieu_chinh_dong_bhxh_tu_nguyen_cap_so_bhxh",
+              "operation_group": "tham_gia_bhxh_tu_nguyen",
+              "procedure_code": "1.002179",
+              "procedure_title": "Đăng ký, đăng ký lại, điều chỉnh đóng BHXH tự nguyện; cấp sổ BHXH"
+            },
+            {
+              "operation_key": "thu_tuc_cong_nhan_tuoi_nghe_co_yeu_doi_voi_nguoi_lam_cong_tac_co_yeu_thoi_lam_viec_trong_to_chuc_co_yeu_nghi_huu_chuyen_nganh_thoi_viec",
+              "operation_group": "cong_nhan_tuoi_nghe_dac_thu",
+              "procedure_code": "1.013198",
+              "procedure_title": "Thủ tục công nhận tuổi nghề cơ yếu đối với người làm công tác cơ yếu thôi làm việc trong tổ chức cơ yếu (nghỉ hưu, chuyển ngành, thôi việc)"
+            },
+            {
+              "operation_key": "dang_ky_tham_gia_bao_hiem_xa_hoi_va_cap_so_bao_hiem_xa_hoi",
+              "operation_group": "dang_ky_tham_gia_bhxh",
+              "procedure_code": "1.014160",
+              "procedure_title": "ĐĂNG KÝ THAM GIA BẢO HIỂM XÃ HỘI VÀ CẤP SỔ BẢO HIỂM XÃ HỘI"
+            },
+            {
+              "operation_key": "dieu_chinh_thong_tin_dang_ky_ke_khai_tham_gia_bao_hiem_xa_hoi",
+              "operation_group": "dieu_chinh_thong_tin_bhxh",
+              "procedure_code": "1.014162",
+              "procedure_title": "ĐIỀU CHỈNH THÔNG TIN ĐĂNG KÝ KÊ KHAI THAM GIA BẢO HIỂM XÃ HỘI"
+            },
+            {
+              "operation_key": "huong_bao_hiem_xa_hoi_mot_lan",
+              "operation_group": "huong_bhxh_mot_lan",
+              "procedure_code": "1.014173",
+              "procedure_title": "HƯỞNG BẢO HIỂM XÃ HỘI MỘT LẦN."
+            },
+            {
+              "operation_key": "tinh_thoi_gian_cong_tac_de_huong_bao_hiem_xa_hoi_doi_voi_nguoi_lao_dong_lam_viec_thuoc_khu_vuc_nha_nuoc_nghi_cho_viec_tu_ngay_01_thang_11_nam_1987_den_truoc_ngay_01_thang_01_nam_1995",
+              "operation_group": "ra_soat_thoi_gian_dong_bhxh",
+              "procedure_code": "1.014181",
+              "procedure_title": "TÍNH THỜI GIAN CÔNG TÁC ĐỂ HƯỞNG BẢO HIỂM XÃ HỘI ĐỐI VỚI NGƯỜI LAO ĐỘNG LÀM VIỆC THUỘC KHU VỰC NHÀ NƯỚC, NGHỈ CHỜ VIỆC TỪ NGÀY 01 THÁNG 11 NĂM 1987 ĐẾN TRƯỚC NGÀY 01 THÁNG 01 NĂM 1995"
+            },
+            {
+              "operation_key": "che_do_doi_voi_nguoi_lao_dong_khong_du_dieu_kien_huong_luong_huu_va_chua_du_tuoi_huong_tro_cap_huu_tri_xa_hoi",
+              "operation_group": "xu_ly_chua_du_dieu_kien_huu",
+              "procedure_code": "1.014183",
+              "procedure_title": "CHẾ ĐỘ ĐỐI VỚI NGƯỜI LAO ĐỘNG KHÔNG ĐỦ ĐIỀU KIỆN HƯỞNG LƯƠNG HƯU VÀ CHƯA ĐỦ TUỔI HƯỞNG TRỢ CẤP HƯU TRÍ XÃ HỘI"
+            },
+            {
+              "operation_key": "giai_quyet_che_do_cho_nguoi_lao_dong_phat_hien_bi_benh_nghe_nghiep_khi_da_nghi_huu_hoac_khong_con_lam_viec_trong_cac_nghe_cong_viec_co_nguy_co_bi_benh_nghe_nghiep_gom_chi_phi_giam_dinh_thuong_tat_benh_tat_tro_cap_mot_lan_hoac_hang_thang_tro_cap_phuc_vu_ho_tro_phuong_tien_tro_giup_sinh_hoat_dung_cu_chinh_hinh_duong_suc_phuc_hoi_suc_khoe_tro_cap_khi_nguoi_lao_dong_chet_do_benh_nghe_nghiep_dong_bao_hiem_y_te_cho_nguoi_nghi_viec_huong_tro_cap_bao_hiem_benh_nghe_nghiep_hang_thang",
+              "operation_group": "ho_so_benh_nghe_nghiep_sau_nghi_huu",
+              "procedure_code": "2.002342",
+              "procedure_title": "Giải quyết chế độ cho người lao động phát hiện bị bệnh nghề nghiệp khi đã nghỉ hưu hoặc không còn làm việc trong các nghề, công việc có nguy cơ bị bệnh nghề nghiệp, gồm: Chi phí giám định thương tật, bệnh tật; trợ cấp một lần hoặc hằng tháng; trợ cấp phục vụ; hỗ trợ phương tiện trợ giúp sinh hoạt, dụng cụ chỉnh hình; dưỡng sức, phục hồi sức khỏe; trợ cấp khi người lao động chết do bệnh nghề nghiệp; đóng bảo hiểm y tế cho người nghỉ việc hưởng trợ cấp bảo hiểm bệnh nghề nghiệp hằng tháng"
+            },
+            {
+              "operation_key": "ho_tro_chi_phi_kham_chua_benh_nghe_nghiep_cho_nguoi_lao_dong_phat_hien_bi_benh_nghe_nghiep_khi_da_nghi_huu_hoac_khong_con_lam_viec_trong_cac_nghe_cong_viec_co_nguy_co_bi_benh_nghe_nghiep",
+              "operation_group": "ho_so_benh_nghe_nghiep_sau_nghi_huu",
+              "procedure_code": "2.002343",
+              "procedure_title": "Hỗ trợ chi phí khám, chữa bệnh nghề nghiệp cho người lao động phát hiện bị bệnh nghề nghiệp khi đã nghỉ hưu hoặc không còn làm việc trong các nghề, công việc có nguy cơ bị bệnh nghề nghiệp"
+            },
+            {
+              "operation_key": "thu_tuc_xac_nhan_can_bo_quan_doi_nghi_huu_mac_benh_hiem_ngheo",
+              "operation_group": "xac_nhan_dieu_kien_nghi_huu",
+              "procedure_code": "2.002761",
+              "procedure_title": "Thủ tục xác nhận cán bộ Quân đội nghỉ hưu mắc bệnh hiểm nghèo"
+            }
+          ]
+        },
+        "options": [
+          "dang_ky_dang_ky_lai_dieu_chinh_dong_bhxh_tu_nguyen_cap_so_bhxh",
+          "thu_tuc_cong_nhan_tuoi_nghe_co_yeu_doi_voi_nguoi_lam_cong_tac_co_yeu_thoi_lam_viec_trong_to_chuc_co_yeu_nghi_huu_chuyen_nganh_thoi_viec",
+          "dang_ky_tham_gia_bao_hiem_xa_hoi_va_cap_so_bao_hiem_xa_hoi",
+          "dieu_chinh_thong_tin_dang_ky_ke_khai_tham_gia_bao_hiem_xa_hoi",
+          "huong_bao_hiem_xa_hoi_mot_lan",
+          "tinh_thoi_gian_cong_tac_de_huong_bao_hiem_xa_hoi_doi_voi_nguoi_lao_dong_lam_viec_thuoc_khu_vuc_nha_nuoc_nghi_cho_viec_tu_ngay_01_thang_11_nam_1987_den_truoc_ngay_01_thang_01_nam_1995",
+          "che_do_doi_voi_nguoi_lao_dong_khong_du_dieu_kien_huong_luong_huu_va_chua_du_tuoi_huong_tro_cap_huu_tri_xa_hoi",
+          "giai_quyet_che_do_cho_nguoi_lao_dong_phat_hien_bi_benh_nghe_nghiep_khi_da_nghi_huu_hoac_khong_con_lam_viec_trong_cac_nghe_cong_viec_co_nguy_co_bi_benh_nghe_nghiep_gom_chi_phi_giam_dinh_thuong_tat_benh_tat_tro_cap_mot_lan_hoac_hang_thang_tro_cap_phuc_vu_ho_tro_phuong_tien_tro_giup_sinh_hoat_dung_cu_chinh_hinh_duong_suc_phuc_hoi_suc_khoe_tro_cap_khi_nguoi_lao_dong_chet_do_benh_nghe_nghiep_dong_bao_hiem_y_te_cho_nguoi_nghi_viec_huong_tro_cap_bao_hiem_benh_nghe_nghiep_hang_thang",
+          "ho_tro_chi_phi_kham_chua_benh_nghe_nghiep_cho_nguoi_lao_dong_phat_hien_bi_benh_nghe_nghiep_khi_da_nghi_huu_hoac_khong_con_lam_viec_trong_cac_nghe_cong_viec_co_nguy_co_bi_benh_nghe_nghiep",
+          "thu_tuc_xac_nhan_can_bo_quan_doi_nghi_huu_mac_benh_hiem_ngheo"
+        ]
+      }
+    ],
+    "routes": [
+      {
+        "route_id": "chuan_bi_nghi_huu-1_002179",
+        "conditions": {
+          "subdomain_key": "chuan_bi_nghi_huu",
+          "operation_key": "dang_ky_dang_ky_lai_dieu_chinh_dong_bhxh_tu_nguyen_cap_so_bhxh"
+        },
+        "procedure_code": "1.002179",
+        "procedure_name": "Đăng ký, đăng ký lại, điều chỉnh đóng BHXH tự nguyện; cấp sổ BHXH",
+        "why_this_route": "Route trực tiếp cho nhu cầu 'Đăng ký, đăng ký lại, điều chỉnh đóng BHXH tự nguyện; cấp sổ BHXH' trong nhánh 'Chuẩn bị nghỉ hưu'."
+      },
+      {
+        "route_id": "chuan_bi_nghi_huu-1_013198",
+        "conditions": {
+          "subdomain_key": "chuan_bi_nghi_huu",
+          "operation_key": "thu_tuc_cong_nhan_tuoi_nghe_co_yeu_doi_voi_nguoi_lam_cong_tac_co_yeu_thoi_lam_viec_trong_to_chuc_co_yeu_nghi_huu_chuyen_nganh_thoi_viec"
+        },
+        "procedure_code": "1.013198",
+        "procedure_name": "Thủ tục công nhận tuổi nghề cơ yếu đối với người làm công tác cơ yếu thôi làm việc trong tổ chức cơ yếu (nghỉ hưu, chuyển ngành, thôi việc)",
+        "why_this_route": "Route trực tiếp cho nhu cầu 'Thủ tục công nhận tuổi nghề cơ yếu đối với người làm công tác cơ yếu thôi làm việc trong tổ chức cơ yếu (nghỉ hưu, chuyển ngành, thôi việc)' trong nhánh 'Chuẩn bị nghỉ hưu'."
+      },
+      {
+        "route_id": "chuan_bi_nghi_huu-1_014160",
+        "conditions": {
+          "subdomain_key": "chuan_bi_nghi_huu",
+          "operation_key": "dang_ky_tham_gia_bao_hiem_xa_hoi_va_cap_so_bao_hiem_xa_hoi"
+        },
+        "procedure_code": "1.014160",
+        "procedure_name": "ĐĂNG KÝ THAM GIA BẢO HIỂM XÃ HỘI VÀ CẤP SỔ BẢO HIỂM XÃ HỘI",
+        "why_this_route": "Route trực tiếp cho nhu cầu 'ĐĂNG KÝ THAM GIA BẢO HIỂM XÃ HỘI VÀ CẤP SỔ BẢO HIỂM XÃ HỘI' trong nhánh 'Chuẩn bị nghỉ hưu'."
+      },
+      {
+        "route_id": "chuan_bi_nghi_huu-1_014162",
+        "conditions": {
+          "subdomain_key": "chuan_bi_nghi_huu",
+          "operation_key": "dieu_chinh_thong_tin_dang_ky_ke_khai_tham_gia_bao_hiem_xa_hoi"
+        },
+        "procedure_code": "1.014162",
+        "procedure_name": "ĐIỀU CHỈNH THÔNG TIN ĐĂNG KÝ KÊ KHAI THAM GIA BẢO HIỂM XÃ HỘI",
+        "why_this_route": "Route trực tiếp cho nhu cầu 'ĐIỀU CHỈNH THÔNG TIN ĐĂNG KÝ KÊ KHAI THAM GIA BẢO HIỂM XÃ HỘI' trong nhánh 'Chuẩn bị nghỉ hưu'."
+      },
+      {
+        "route_id": "chuan_bi_nghi_huu-1_014173",
+        "conditions": {
+          "subdomain_key": "chuan_bi_nghi_huu",
+          "operation_key": "huong_bao_hiem_xa_hoi_mot_lan"
+        },
+        "procedure_code": "1.014173",
+        "procedure_name": "HƯỞNG BẢO HIỂM XÃ HỘI MỘT LẦN.",
+        "why_this_route": "Route trực tiếp cho nhu cầu 'HƯỞNG BẢO HIỂM XÃ HỘI MỘT LẦN.' trong nhánh 'Chuẩn bị nghỉ hưu'."
+      },
+      {
+        "route_id": "chuan_bi_nghi_huu-1_014181",
+        "conditions": {
+          "subdomain_key": "chuan_bi_nghi_huu",
+          "operation_key": "tinh_thoi_gian_cong_tac_de_huong_bao_hiem_xa_hoi_doi_voi_nguoi_lao_dong_lam_viec_thuoc_khu_vuc_nha_nuoc_nghi_cho_viec_tu_ngay_01_thang_11_nam_1987_den_truoc_ngay_01_thang_01_nam_1995"
+        },
+        "procedure_code": "1.014181",
+        "procedure_name": "TÍNH THỜI GIAN CÔNG TÁC ĐỂ HƯỞNG BẢO HIỂM XÃ HỘI ĐỐI VỚI NGƯỜI LAO ĐỘNG LÀM VIỆC THUỘC KHU VỰC NHÀ NƯỚC, NGHỈ CHỜ VIỆC TỪ NGÀY 01 THÁNG 11 NĂM 1987 ĐẾN TRƯỚC NGÀY 01 THÁNG 01 NĂM 1995",
+        "why_this_route": "Route trực tiếp cho nhu cầu 'TÍNH THỜI GIAN CÔNG TÁC ĐỂ HƯỞNG BẢO HIỂM XÃ HỘI ĐỐI VỚI NGƯỜI LAO ĐỘNG LÀM VIỆC THUỘC KHU VỰC NHÀ NƯỚC, NGHỈ CHỜ VIỆC TỪ NGÀY 01 THÁNG 11 NĂM 1987 ĐẾN TRƯỚC NGÀY 01 THÁNG 01 NĂM 1995' trong nhánh 'Chuẩn bị nghỉ hưu'."
+      },
+      {
+        "route_id": "chuan_bi_nghi_huu-1_014183",
+        "conditions": {
+          "subdomain_key": "chuan_bi_nghi_huu",
+          "operation_key": "che_do_doi_voi_nguoi_lao_dong_khong_du_dieu_kien_huong_luong_huu_va_chua_du_tuoi_huong_tro_cap_huu_tri_xa_hoi"
+        },
+        "procedure_code": "1.014183",
+        "procedure_name": "CHẾ ĐỘ ĐỐI VỚI NGƯỜI LAO ĐỘNG KHÔNG ĐỦ ĐIỀU KIỆN HƯỞNG LƯƠNG HƯU VÀ CHƯA ĐỦ TUỔI HƯỞNG TRỢ CẤP HƯU TRÍ XÃ HỘI",
+        "why_this_route": "Route trực tiếp cho nhu cầu 'CHẾ ĐỘ ĐỐI VỚI NGƯỜI LAO ĐỘNG KHÔNG ĐỦ ĐIỀU KIỆN HƯỞNG LƯƠNG HƯU VÀ CHƯA ĐỦ TUỔI HƯỞNG TRỢ CẤP HƯU TRÍ XÃ HỘI' trong nhánh 'Chuẩn bị nghỉ hưu'."
+      },
+      {
+        "route_id": "chuan_bi_nghi_huu-2_002342",
+        "conditions": {
+          "subdomain_key": "chuan_bi_nghi_huu",
+          "operation_key": "giai_quyet_che_do_cho_nguoi_lao_dong_phat_hien_bi_benh_nghe_nghiep_khi_da_nghi_huu_hoac_khong_con_lam_viec_trong_cac_nghe_cong_viec_co_nguy_co_bi_benh_nghe_nghiep_gom_chi_phi_giam_dinh_thuong_tat_benh_tat_tro_cap_mot_lan_hoac_hang_thang_tro_cap_phuc_vu_ho_tro_phuong_tien_tro_giup_sinh_hoat_dung_cu_chinh_hinh_duong_suc_phuc_hoi_suc_khoe_tro_cap_khi_nguoi_lao_dong_chet_do_benh_nghe_nghiep_dong_bao_hiem_y_te_cho_nguoi_nghi_viec_huong_tro_cap_bao_hiem_benh_nghe_nghiep_hang_thang"
+        },
+        "procedure_code": "2.002342",
+        "procedure_name": "Giải quyết chế độ cho người lao động phát hiện bị bệnh nghề nghiệp khi đã nghỉ hưu hoặc không còn làm việc trong các nghề, công việc có nguy cơ bị bệnh nghề nghiệp, gồm: Chi phí giám định thương tật, bệnh tật; trợ cấp một lần hoặc hằng tháng; trợ cấp phục vụ; hỗ trợ phương tiện trợ giúp sinh hoạt, dụng cụ chỉnh hình; dưỡng sức, phục hồi sức khỏe; trợ cấp khi người lao động chết do bệnh nghề nghiệp; đóng bảo hiểm y tế cho người nghỉ việc hưởng trợ cấp bảo hiểm bệnh nghề nghiệp hằng tháng",
+        "why_this_route": "Route trực tiếp cho nhu cầu 'Giải quyết chế độ cho người lao động phát hiện bị bệnh nghề nghiệp khi đã nghỉ hưu hoặc không còn làm việc trong các nghề, công việc có nguy cơ bị bệnh nghề nghiệp, gồm: Chi phí giám định thương tật, bệnh tật; trợ cấp một lần hoặc hằng tháng; trợ cấp phục vụ; hỗ trợ phương tiện trợ giúp sinh hoạt, dụng cụ chỉnh hình; dưỡng sức, phục hồi sức khỏe; trợ cấp khi người lao động chết do bệnh nghề nghiệp; đóng bảo hiểm y tế cho người nghỉ việc hưởng trợ cấp bảo hiểm bệnh nghề nghiệp hằng tháng' trong nhánh 'Chuẩn bị nghỉ hưu'."
+      },
+      {
+        "route_id": "chuan_bi_nghi_huu-2_002343",
+        "conditions": {
+          "subdomain_key": "chuan_bi_nghi_huu",
+          "operation_key": "ho_tro_chi_phi_kham_chua_benh_nghe_nghiep_cho_nguoi_lao_dong_phat_hien_bi_benh_nghe_nghiep_khi_da_nghi_huu_hoac_khong_con_lam_viec_trong_cac_nghe_cong_viec_co_nguy_co_bi_benh_nghe_nghiep"
+        },
+        "procedure_code": "2.002343",
+        "procedure_name": "Hỗ trợ chi phí khám, chữa bệnh nghề nghiệp cho người lao động phát hiện bị bệnh nghề nghiệp khi đã nghỉ hưu hoặc không còn làm việc trong các nghề, công việc có nguy cơ bị bệnh nghề nghiệp",
+        "why_this_route": "Route trực tiếp cho nhu cầu 'Hỗ trợ chi phí khám, chữa bệnh nghề nghiệp cho người lao động phát hiện bị bệnh nghề nghiệp khi đã nghỉ hưu hoặc không còn làm việc trong các nghề, công việc có nguy cơ bị bệnh nghề nghiệp' trong nhánh 'Chuẩn bị nghỉ hưu'."
+      },
+      {
+        "route_id": "chuan_bi_nghi_huu-2_002761",
+        "conditions": {
+          "subdomain_key": "chuan_bi_nghi_huu",
+          "operation_key": "thu_tuc_xac_nhan_can_bo_quan_doi_nghi_huu_mac_benh_hiem_ngheo"
+        },
+        "procedure_code": "2.002761",
+        "procedure_name": "Thủ tục xác nhận cán bộ Quân đội nghỉ hưu mắc bệnh hiểm nghèo",
+        "why_this_route": "Route trực tiếp cho nhu cầu 'Thủ tục xác nhận cán bộ Quân đội nghỉ hưu mắc bệnh hiểm nghèo' trong nhánh 'Chuẩn bị nghỉ hưu'."
+      }
+    ]
+  },
+  "pre_submission_checks": [
+    {
+      "field_group": "retirement_preparation",
+      "checks": [
+        "Nhánh chuẩn bị nghỉ hưu phải làm rõ người dùng đang tham gia BHXH bắt buộc hay tự nguyện, cần bổ sung thời gian đóng hay rà lại điều kiện hưởng.",
+        "Nếu người dùng chưa đủ điều kiện hưởng lương hưu thì cần phân biệt rõ giữa phương án hưởng BHXH một lần và các chế độ chuyển tiếp hoặc hỗ trợ khác."
+      ]
+    },
+    {
+      "field_group": "retirement_benefit",
+      "checks": [
+        "Nhánh chế độ hưu trí phải xác định rõ đây là hưởng mới, tiếp tục hưởng, chuyển nơi nhận, đổi hình thức nhận hay điều chỉnh hồ sơ đang hưởng.",
+        "Các thủ tục trợ cấp hưu trí xã hội cần kiểm tra điều kiện không có lương hưu, độ tuổi và xác nhận về tình trạng hưởng trợ cấp hằng tháng hiện tại."
+      ]
+    }
+  ],
+  "subdomain_key": "chuan_bi_nghi_huu"
+}

@@ -1,0 +1,89 @@
+{
+  "schema_version": "1.0",
+  "enricher_version": "0.2.0",
+  "source": {
+    "procedure_code": "6.006695",
+    "title": "Thủ tục đề nghị đánh giá, công nhận “Cộng đồng học tập \"cấp xã",
+    "group_key": "hoc_tap",
+    "workflow_family": null,
+    "subflow": null
+  },
+  "experience": {
+    "entry_label": "Hỗ trợ giáo dục và học tập",
+    "overview_summary": "Thủ tục này thuộc nhóm giáo dục và học tập, thường liên quan đến hồ sơ đào tạo, văn bằng hoặc điều kiện học tập của người học. Kết quả thường nhận được là Quyết định công nhận “Cộng đồng học tập” cấp xã. Thời gian xử lý tham khảo: 1 ngày.",
+    "next_step_summary": "Nên rà trước thông tin người học, cơ sở đào tạo và loại kết quả cần xin xác nhận hoặc cấp lại. Có thể chọn kênh nộp phù hợp: Trực tiếp, Trực tuyến, Dịch vụ bưu chính. Hiện có khoảng 3 mục giấy tờ cần theo dõi trong checklist.",
+    "tone": "supportive_public_service"
+  },
+  "guidance": {
+    "highlight_documents": [
+      {
+        "bucket": "required",
+        "name": "Tờ trình đề nghị đánh giá, công nhận “Cộng đồng học tập” cấp xã",
+        "conditions": [],
+        "attachment_path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/6_006695/M%E1%BA%ABu%20s%E1%BB%91%2001.doc"
+      },
+      {
+        "bucket": "required",
+        "name": "Bản tổng hợp kết quả tự đánh giá các tiêu chí, chỉ tiêu cấp xã",
+        "conditions": [],
+        "attachment_path": null
+      },
+      {
+        "bucket": "required",
+        "name": "Báo cáo tự đánh giá, công nhận “Cộng đồng học tập” cấp xã",
+        "conditions": [],
+        "attachment_path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/6_006695/M%E1%BA%ABu%20s%E1%BB%91%2002.doc"
+      }
+    ],
+    "special_cases": [],
+    "common_errors": [],
+    "validation_hints": [
+      "Nên xác định trước kênh nộp hồ sơ để biết có cần bản giấy, bản điện tử hay xuất trình trực tiếp.",
+      "Có mẫu biểu đính kèm, nên kiểm tra đúng biểu mẫu trước khi nộp.",
+      "Nên rà lại thông tin người học, cơ sở đào tạo và loại xác nhận hoặc văn bằng cần xin."
+    ]
+  },
+  "intake": {
+    "candidate_input_fields": [
+      {
+        "field_id": "learner_full_name",
+        "label": "Tên người học",
+        "field_type": "text",
+        "required": true
+      },
+      {
+        "field_id": "education_record_type",
+        "label": "Loại hồ sơ học tập cần xử lý",
+        "field_type": "text",
+        "required": true
+      },
+      {
+        "field_id": "education_institution",
+        "label": "Cơ sở đào tạo liên quan",
+        "field_type": "text",
+        "required": false
+      },
+      {
+        "field_id": "submission_channel_preference",
+        "label": "Kênh nộp dự kiến",
+        "field_type": "enum",
+        "required": false
+      }
+    ],
+    "suggested_clarifying_questions": [
+      "Bạn đang cần xử lý hồ sơ học tập, văn bằng hay xác nhận nào?",
+      "Người học và cơ sở đào tạo liên quan đã xác định rõ chưa?"
+    ]
+  },
+  "ui_hints": {
+    "primary_channel": "in_person",
+    "result_label": "Quyết định công nhận “Cộng đồng học tập” cấp xã",
+    "time_badge": "1 ngày",
+    "document_count_badge": 3
+  },
+  "provenance": {
+    "generator": "workflow_domain_enricher",
+    "derivation_mode": "rule_based_semantic_enrichment",
+    "supported_group": true
+  }
+}

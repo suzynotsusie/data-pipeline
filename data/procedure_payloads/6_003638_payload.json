@@ -1,0 +1,415 @@
+{
+  "schema_version": "3.0",
+  "record_type": "public_service_procedure_payload",
+  "id": "procedure-6.003638",
+  "procedure_code": "6.003638",
+  "code": "6.003638",
+  "title": "Cưỡng chế thu hồi nhà ở thuộc tài sản công",
+  "language": "vi",
+  "status": "generated_from_pipeline",
+  "field": "Nhà ở và công sở",
+  "group_key": "dien_luc_nha_o_dat_dai",
+  "workflow_family": null,
+  "subflow": null,
+  "source": {
+    "source_url": "file:///C:/Users/ku060/Downloads/VAIC%20source/data-pipeline/raw_data/6_003638/6_003638_procedure_detail.md",
+    "source_markdown_path": "C:\\Users\\ku060\\Downloads\\VAIC source\\data-pipeline\\raw_data\\6_003638\\6_003638_procedure_detail.md",
+    "normalized_payload_path": "C:\\Users\\ku060\\Downloads\\VAIC source\\data-pipeline\\govease-unified\\data\\normalized_structured\\6_003638_normalized_structured.json",
+    "enriched_payload_path": "C:\\Users\\ku060\\Downloads\\VAIC source\\data-pipeline\\govease-unified\\data\\enriched_structured_priority\\6_003638_enriched_structured.json"
+  },
+  "scope": {
+    "included": "Thủ tục này thuộc nhóm nhà ở, đất đai và điện lực, thường cần kiểm tra hiện trạng hồ sơ tài sản hoặc điều kiện hạ tầng liên quan. Kết quả thường nhận được là Quyết định cưỡng chế thu hồi nhà ở thuộc tài sản công. Thời gian xử lý tham khảo: 20 ngày.",
+    "not_included": []
+  },
+  "agency": {
+    "executing_agency": "Bộ Công an, Ủy ban nhân dân cấp tỉnh, Bộ Quốc phòng",
+    "submission_place": null,
+    "receiving_places": []
+  },
+  "target_users": [
+    "Cán bộ",
+    "công chức",
+    "viên chức"
+  ],
+  "submission_methods": [
+    {
+      "code": "IN_PERSON",
+      "label": "Trực tiếp",
+      "processing_time": "20 ngày",
+      "fee": null,
+      "description": "Thời hạn giải quyết: 20 ngày, kể từ ngày hết hạn bàn giao nhà ở theo quyết định thu hồi nhà ở."
+    },
+    {
+      "code": "ONLINE",
+      "label": "Trực tuyến",
+      "processing_time": "20 ngày",
+      "fee": null,
+      "description": "Thời hạn giải quyết: 20 ngày, kể từ ngày hết hạn bàn giao nhà ở theo quyết định thu hồi nhà ở."
+    },
+    {
+      "code": "POSTAL",
+      "label": "Dịch vụ bưu chính",
+      "processing_time": "20 ngày",
+      "fee": null,
+      "description": "Thời hạn giải quyết: 20 ngày, kể từ ngày hết hạn bàn giao nhà ở theo quyết định thu hồi nhà ở."
+    }
+  ],
+  "processing_note": "Thời gian xử lý tham chiếu: 20 ngày. Nên chuẩn bị trước thông tin thửa đất, tài sản hoặc địa điểm tiếp nhận, rồi chọn kênh nộp phù hợp: Trực tiếp, Trực tuyến, Dịch vụ bưu chính. Hiện có khoảng 2 mục giấy tờ cần theo dõi trong checklist.",
+  "documents": {
+    "normally_required": [
+      {
+        "name": "Văn bản của đơn vị quản lý vận hành nhà ở báo cáo về việc đề nghị thu hồi nhà ở",
+        "quantity": "1 bản chính, 0 bản sao",
+        "notes": [],
+        "group": "default",
+        "attachment_path": null
+      },
+      {
+        "name": "Tờ trình của cơ quan quản lý nhà ở gửi đại diện chủ sở hữu nhà ở xem xét, ban hành quyết định thu hồi nhà ở",
+        "quantity": "1 bản chính, 0 bản sao",
+        "notes": [],
+        "group": "default",
+        "attachment_path": null
+      }
+    ],
+    "conditional": [],
+    "forms": [],
+    "presented": [],
+    "notes": [],
+    "summary": [
+      {
+        "group": "default",
+        "name": "Văn bản của đơn vị quản lý vận hành nhà ở báo cáo về việc đề nghị thu hồi nhà ở",
+        "quantity": "1 bản chính, 0 bản sao",
+        "notes": [],
+        "attachment_path": null
+      },
+      {
+        "group": "default",
+        "name": "Tờ trình của cơ quan quản lý nhà ở gửi đại diện chủ sở hữu nhà ở xem xét, ban hành quyết định thu hồi nhà ở",
+        "quantity": "1 bản chính, 0 bản sao",
+        "notes": [],
+        "attachment_path": null
+      }
+    ]
+  },
+  "steps": [
+    {
+      "order": 1,
+      "title": "Bước 1",
+      "description": "1. + Trong thời hạn 05 ngày kể từ ngày hết thời hạn phải bàn giao nhà ở theo quyết",
+      "example": "05 ngày"
+    },
+    {
+      "order": 2,
+      "title": "Bước 2",
+      "description": "định thu hồi nhà ở mà người đang sử dụng nhà ở không bàn giao nhà ở thì đơn vị",
+      "example": null
+    },
+    {
+      "order": 3,
+      "title": "Bước 3",
+      "description": "quản lý vận hành nhà ở phải có văn bản báo cáo cơ quan quản lý nhà ở đề nghị",
+      "example": null
+    },
+    {
+      "order": 4,
+      "title": "Bước 4",
+      "description": "cưỡng chế thu hồi nhà ở;",
+      "example": null
+    },
+    {
+      "order": 5,
+      "title": "Bước 5",
+      "description": "2. + Trong thời hạn 05 ngày kể từ ngày nhận được báo cáo của đơn vị quản lý vận",
+      "example": "05 ngày"
+    },
+    {
+      "order": 6,
+      "title": "Bước 6",
+      "description": "hành nhà ở, cơ quan quản lý nhà ở phải kiểm tra và có tờ trình kèm theo dự thảo",
+      "example": null
+    },
+    {
+      "order": 7,
+      "title": "Bước 7",
+      "description": "quyết định cưỡng chế thu hồi nhà ở gửi cơ quan đại diện chủ sở hữu nhà ở xem",
+      "example": null
+    },
+    {
+      "order": 8,
+      "title": "Bước 8",
+      "description": "xét, ban hành quyết định cưỡng chế thu hồi nhà ở;",
+      "example": null
+    },
+    {
+      "order": 9,
+      "title": "Bước 9",
+      "description": "3. + Trong thời hạn 10 ngày kể từ ngày nhận được tờ trình của cơ quan quản lý nhà",
+      "example": "10 ngày"
+    },
+    {
+      "order": 10,
+      "title": "Bước 10",
+      "description": "ở, cơ quan đại diện chủ sở hữu nhà ở có trách nhiệm xem xét, ban hành quyết định",
+      "example": null
+    },
+    {
+      "order": 11,
+      "title": "Bước 11",
+      "description": "cưỡng chế thu hồi nhà ở và gửi quyết định này cho cơ quan quản lý nhà ở, đơn vị",
+      "example": null
+    },
+    {
+      "order": 12,
+      "title": "Bước 12",
+      "description": "quản lý vận hành nhà ở và người đang trực tiếp sử dụng nhà ở biết để thực hiện.",
+      "example": "trực tiếp"
+    },
+    {
+      "order": 13,
+      "title": "Bước 13",
+      "description": "4. + Trường hợp cơ quan trung ương ban hành quyết định cưỡng chế thu hồi nhà ở",
+      "example": null
+    },
+    {
+      "order": 14,
+      "title": "Bước 14",
+      "description": "thì cơ quan này phải có văn bản kèm theo quyết định cưỡng chế thu hồi nhà ở đề",
+      "example": null
+    },
+    {
+      "order": 15,
+      "title": "Bước 15",
+      "description": "nghị Ủy ban nhân dân cấp tỉnh nơi có nhà ở phối hợp tổ chức cưỡng chế thu hồi;",
+      "example": null
+    },
+    {
+      "order": 16,
+      "title": "Bước 16",
+      "description": "5. + Trường hợp nhà ở không thuộc diện phải tổ chức cưỡng chế thu hồi thì cơ quan",
+      "example": null
+    },
+    {
+      "order": 17,
+      "title": "Bước 17",
+      "description": "đại diện chủ sở hữu phải có văn bản thông báo cho cơ quan quản lý nhà ở và đơn",
+      "example": null
+    },
+    {
+      "order": 18,
+      "title": "Bước 18",
+      "description": "vị quản lý vận hành nhà ở biết để tiếp tục thực hiện quản lý theo quy định.",
+      "example": null
+    },
+    {
+      "order": 19,
+      "title": "Bước 19",
+      "description": "Đối với nhà ở đang do Bộ Quốc phòng, Bộ Công an quản lý thì cơ quan có chức",
+      "example": null
+    },
+    {
+      "order": 20,
+      "title": "Bước 20",
+      "description": "năng quản lý nhà ở của Bộ Quốc phòng, Bộ Công an được quyền ban hành quyết",
+      "example": null
+    },
+    {
+      "order": 21,
+      "title": "Bước 21",
+      "description": "định cưỡng chế thu hồi nhà ở nếu được giao thực hiện;",
+      "example": null
+    },
+    {
+      "order": 22,
+      "title": "Bước 22",
+      "description": "6. + Trên cơ sở quyết định cưỡng chế thu hồi nhà ở, Ủy ban nhân dân cấp tỉnh nơi",
+      "example": null
+    },
+    {
+      "order": 23,
+      "title": "Bước 23",
+      "description": "có nhà ở trực tiếp hoặc giao cho Ủy ban nhân dân cấp huyện nơi có nhà ở chủ trì,",
+      "example": "trực tiếp"
+    },
+    {
+      "order": 24,
+      "title": "Bước 24",
+      "description": "phối hợp với cơ quan quản lý nhà ở cấp tỉnh, cơ quan công an cấp huyện và Ủy",
+      "example": null
+    },
+    {
+      "order": 25,
+      "title": "Bước 25",
+      "description": "ban nhân dân cấp xã nơi có nhà ở tổ chức cưỡng chế thu hồi và bàn giao lại nhà ở",
+      "example": null
+    },
+    {
+      "order": 26,
+      "title": "Bước 26",
+      "description": "cho đơn vị quản lý vận hành quản lý nhà ở theo quy định. Việc bàn giao nhà ở",
+      "example": null
+    },
+    {
+      "order": 27,
+      "title": "Bước 27",
+      "description": "phải được lập thành biên bản có xác nhận của các cơ quan tham gia cưỡng chế thu",
+      "example": null
+    },
+    {
+      "order": 28,
+      "title": "Bước 28",
+      "description": "hồi.",
+      "example": null
+    }
+  ],
+  "input_fields": [
+    {
+      "field": "property_or_service_need",
+      "label": "Nhu cầu về đất đai, nhà ở hoặc điện lực",
+      "type": "string",
+      "required": true
+    },
+    {
+      "field": "property_location",
+      "label": "Địa điểm tài sản hoặc nơi sử dụng dịch vụ",
+      "type": "string",
+      "required": true
+    },
+    {
+      "field": "submission_channel_preference",
+      "label": "Kênh nộp dự kiến",
+      "type": "enum",
+      "required": false,
+      "options": [
+        "Trực tiếp",
+        "Trực tuyến",
+        "Dịch vụ bưu chính"
+      ]
+    },
+    {
+      "field": "has_current_certificate",
+      "label": "Đã có giấy tờ/tài liệu hiện trạng",
+      "type": "boolean",
+      "required": false
+    }
+  ],
+  "validation_rules": [
+    {
+      "id": "required-1",
+      "severity": "error",
+      "field": "property_or_service_need",
+      "rule": "Trường bắt buộc phải có dữ liệu hợp lệ trước khi nộp.",
+      "message": "Thiếu trường bắt buộc: Nhu cầu về đất đai, nhà ở hoặc điện lực."
+    },
+    {
+      "id": "required-2",
+      "severity": "error",
+      "field": "property_location",
+      "rule": "Trường bắt buộc phải có dữ liệu hợp lệ trước khi nộp.",
+      "message": "Thiếu trường bắt buộc: Địa điểm tài sản hoặc nơi sử dụng dịch vụ."
+    },
+    {
+      "id": "hint-1",
+      "severity": "warning",
+      "field": "general",
+      "rule": "Nên xác định trước kênh nộp hồ sơ để biết có cần bản giấy, bản điện tử hay xuất trình trực tiếp.",
+      "message": "Nên xác định trước kênh nộp hồ sơ để biết có cần bản giấy, bản điện tử hay xuất trình trực tiếp."
+    },
+    {
+      "id": "hint-2",
+      "severity": "warning",
+      "field": "general",
+      "rule": "Nên đối chiếu trước thông tin thửa đất, tài sản hoặc hiện trạng hồ sơ để tránh bị yêu cầu chỉnh sửa.",
+      "message": "Nên đối chiếu trước thông tin thửa đất, tài sản hoặc hiện trạng hồ sơ để tránh bị yêu cầu chỉnh sửa."
+    }
+  ],
+  "common_errors": [],
+  "clarifying_questions": [
+    {
+      "id": "clarify_1",
+      "question": "Bạn đang xử lý nhu cầu nào về đất đai, nhà ở hoặc điện lực?",
+      "purpose": "workflow_intake"
+    },
+    {
+      "id": "clarify_2",
+      "question": "Bạn đã có thông tin thửa đất, địa chỉ tài sản hoặc giấy tờ hiện trạng chưa?",
+      "purpose": "workflow_intake"
+    }
+  ],
+  "legal_basis": [
+    {
+      "title": "Nghị định số 95/2024/NĐ-CP ngày 24 tháng 7 năm 2024 của Chính phủ về quy định chi tiết một số điều của Luật Nhà ở;",
+      "code": "95/2024/NĐ-CP"
+    },
+    {
+      "title": "Luật Nhà ở số 27/2023/QH15",
+      "code": "27/2023/QH15"
+    }
+  ],
+  "legal_bases": [
+    {
+      "title": "Nghị định số 95/2024/NĐ-CP ngày 24 tháng 7 năm 2024 của Chính phủ về quy định chi tiết một số điều của Luật Nhà ở;",
+      "code": "95/2024/NĐ-CP"
+    },
+    {
+      "title": "Luật Nhà ở số 27/2023/QH15",
+      "code": "27/2023/QH15"
+    }
+  ],
+  "faq": [
+    {
+      "question": "Có thể nộp qua kênh nào?",
+      "answer": "Các kênh hiện có: Trực tiếp, Trực tuyến, Dịch vụ bưu chính."
+    },
+    {
+      "question": "Thời gian xử lý tham chiếu là bao lâu?",
+      "answer": "Thời gian xử lý tham chiếu hiện có là 20 ngày."
+    },
+    {
+      "question": "Kết quả chính của thủ tục là gì?",
+      "answer": "Kết quả chính được trích xuất là Quyết định cưỡng chế thu hồi nhà ở thuộc tài sản công."
+    }
+  ],
+  "guidance": {
+    "highlight_documents": [
+      {
+        "bucket": "required",
+        "name": "Văn bản của đơn vị quản lý vận hành nhà ở báo cáo về việc đề nghị thu hồi nhà ở",
+        "conditions": [],
+        "attachment_path": null
+      },
+      {
+        "bucket": "required",
+        "name": "Tờ trình của cơ quan quản lý nhà ở gửi đại diện chủ sở hữu nhà ở xem xét, ban hành quyết định thu hồi nhà ở",
+        "conditions": [],
+        "attachment_path": null
+      }
+    ],
+    "special_cases": [],
+    "common_errors": [],
+    "validation_hints": [
+      "Nên xác định trước kênh nộp hồ sơ để biết có cần bản giấy, bản điện tử hay xuất trình trực tiếp.",
+      "Nên đối chiếu trước thông tin thửa đất, tài sản hoặc hiện trạng hồ sơ để tránh bị yêu cầu chỉnh sửa."
+    ]
+  },
+  "next_steps": {
+    "summary": "Nên chuẩn bị trước thông tin thửa đất, tài sản hoặc địa điểm tiếp nhận, rồi chọn kênh nộp phù hợp: Trực tiếp, Trực tuyến, Dịch vụ bưu chính. Hiện có khoảng 2 mục giấy tờ cần theo dõi trong checklist.",
+    "time_badge": "20 ngày",
+    "result_label": "Quyết định cưỡng chế thu hồi nhà ở thuộc tài sản công",
+    "primary_channel": "in_person",
+    "channels": [
+      "in_person",
+      "online",
+      "postal"
+    ]
+  },
+  "notes": [],
+  "provenance": {
+    "pipeline": "raw->structured->normalized->enriched->ui_api_payload",
+    "normalizer_version": "0.2.0",
+    "enricher_version": "0.2.0",
+    "mapping_notes": "excluded_from_clean_workflow_dataset",
+    "supported_group": true
+  }
+}

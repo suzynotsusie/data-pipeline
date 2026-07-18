@@ -1,0 +1,107 @@
+{
+  "schema_version": "1.0",
+  "enricher_version": "0.2.0",
+  "source": {
+    "procedure_code": "1.014177",
+    "title": "HƯỞNG TRỢ CẤP MAI TÁNG",
+    "group_key": "nguoi_than_qua_doi",
+    "workflow_family": "death_family_support_workflow",
+    "subflow": "che_do_tu_tuat_mai_tang_phi"
+  },
+  "experience": {
+    "entry_label": "Hỗ trợ chế độ cho thân nhân",
+    "overview_summary": "Thủ tục này thuộc nhóm hỗ trợ thân nhân người đã mất, thường liên quan đến mai táng phí, tử tuất hoặc chế độ phát sinh sau khi người hưởng qua đời. Kết quả thường nhận được là Quyết định về việc hưởng trợ cấp mai táng. Thời gian xử lý tham khảo: 10 ngày làm việc.",
+    "next_step_summary": "Nên chuẩn bị giấy tờ của người đã mất, thân nhân và căn cứ hưởng chế độ trước khi nộp. Có thể chọn kênh nộp phù hợp: Trực tiếp, Trực tuyến, Dịch vụ bưu chính. Hiện có khoảng 4 mục giấy tờ cần theo dõi trong checklist.",
+    "tone": "supportive_public_service"
+  },
+  "guidance": {
+    "highlight_documents": [
+      {
+        "bucket": "required",
+        "name": "Tờ khai của thân nhân, cá nhân lo mai táng.",
+        "conditions": [],
+        "attachment_path": null
+      },
+      {
+        "bucket": "required",
+        "name": "Bản sao giấy chứng tử hoặc trích lục khai tử hoặc bản sao giấy báo tử hoặc bản sao quyết định của Tòa án tuyên bố là đã chết;",
+        "conditions": [],
+        "attachment_path": null
+      },
+      {
+        "bucket": "conditional",
+        "name": "Sổ bảo hiểm xã hội, trừ trường hợp người đang hưởng lương hưu, trợ cấp hằng tháng;",
+        "conditions": [
+          "Sổ bảo hiểm xã hội, trừ trường hợp người đang hưởng lương hưu, trợ cấp hằng tháng;"
+        ],
+        "attachment_path": null
+      },
+      {
+        "bucket": "conditional",
+        "name": "⃰ Trường hợp người lao động là công dân nước ngoài làm việc tại Việt Nam chết tại nước ngoài thì bản sao giấy chứng tử hoặc trích lục khai tử hoặc bản sao giấy báo tử hoặc bản sao quyết định của Tòa án tuyên bố là đã chết được thay thế bằng bản dịch tiếng Việt được công chứng hoặc chứng thực theo quy định của pháp luật về công chứng, chứng thực các giấy tờ do cơ quan có thẩm quyền ở nước ngoài cấp thể hiện thông tin về người lao động là công dân nước ngoài chết (họ và tên, thời điểm chết, nơi chết).",
+        "conditions": [
+          "⃰ Trường hợp người lao động là công dân nước ngoài làm việc tại Việt Nam chết tại nước ngoài thì bản sao giấy chứng tử hoặc trích lục khai tử hoặc bản sao giấy báo tử hoặc bản sao quyết định của Tòa án tuyên bố là đã chết được thay thế bằng bản dịch tiếng Việt được công chứng hoặc chứng thực theo quy định của pháp luật về công chứng, chứng thực các giấy tờ do cơ quan có thẩm quyền ở nước ngoài cấp thể hiện thông tin về người lao động là công dân nước ngoài chết (họ và tên, thời điểm chết, nơi chết)."
+        ],
+        "attachment_path": null
+      }
+    ],
+    "special_cases": [
+      "Có yếu tố nước ngoài",
+      "Có thể cần đối chiếu quá trình đóng bảo hiểm để giải quyết chế độ",
+      "Có thể cần hồ sơ tử tuất hoặc mai táng phí",
+      "Có thể cần xác minh quan hệ lao động hoặc giấy phép làm việc"
+    ],
+    "common_errors": [
+      "Thiếu giấy tờ hợp pháp hóa hoặc giấy tờ nhân thân của phía nước ngoài.",
+      "Thiếu thông tin về thời gian tham gia bảo hiểm hoặc chưa xác định đúng chế độ hưu trí.",
+      "Thiếu hồ sơ về vị trí việc làm, đơn vị sử dụng lao động hoặc điều kiện làm việc áp dụng."
+    ],
+    "validation_hints": [
+      "Nên xác định trước kênh nộp hồ sơ để biết có cần bản giấy, bản điện tử hay xuất trình trực tiếp.",
+      "Nên kiểm tra kỹ giấy tờ của người đã mất, thân nhân và căn cứ phát sinh chế độ."
+    ]
+  },
+  "intake": {
+    "candidate_input_fields": [
+      {
+        "field_id": "deceased_person_name",
+        "label": "Người đã mất",
+        "field_type": "text",
+        "required": true
+      },
+      {
+        "field_id": "claimant_relationship",
+        "label": "Quan hệ của người nộp với người đã mất",
+        "field_type": "enum",
+        "required": true
+      },
+      {
+        "field_id": "support_benefit_type",
+        "label": "Loại chế độ cần giải quyết",
+        "field_type": "text",
+        "required": true
+      },
+      {
+        "field_id": "submission_channel_preference",
+        "label": "Kênh nộp dự kiến",
+        "field_type": "enum",
+        "required": false
+      }
+    ],
+    "suggested_clarifying_questions": [
+      "Bạn đang cần giải quyết mai táng phí, tử tuất hay chế độ nào cho thân nhân?",
+      "Giấy tờ của người đã mất và mối quan hệ của người nộp hồ sơ đã sẵn sàng chưa?"
+    ]
+  },
+  "ui_hints": {
+    "primary_channel": "online",
+    "result_label": "Quyết định về việc hưởng trợ cấp mai táng",
+    "time_badge": "10 ngày làm việc",
+    "document_count_badge": 4
+  },
+  "provenance": {
+    "generator": "workflow_domain_enricher",
+    "derivation_mode": "rule_based_semantic_enrichment",
+    "supported_group": true
+  }
+}

@@ -1,0 +1,274 @@
+{
+  "schema_version": "1.0",
+  "domain": "suc_khoe_y_te",
+  "updated_at": "2026-07-18",
+  "source_files": [
+    "C:\\Users\\ku060\\Downloads\\VAIC source\\data-pipeline\\main\\full-data.csv",
+    "C:\\Users\\ku060\\Downloads\\VAIC source\\data-pipeline\\data\\workflows\\suc_khoe_y_te\\summary.csv",
+    "C:\\Users\\ku060\\Downloads\\VAIC source\\data-pipeline\\data\\workflows\\suc_khoe_y_te\\normalized.json",
+    "C:\\Users\\ku060\\Downloads\\VAIC source\\data-pipeline\\raw_data"
+  ],
+  "coverage": {
+    "expected_codes": [
+      "1.001521",
+      "1.001598",
+      "1.001632",
+      "1.001643",
+      "1.001667",
+      "1.001939",
+      "1.002759",
+      "2.000693",
+      "1.001656"
+    ],
+    "covered_codes": [
+      "1.001521",
+      "1.001598",
+      "1.001632",
+      "1.001643",
+      "1.001667",
+      "1.001939",
+      "1.002759",
+      "2.000693",
+      "1.001656"
+    ],
+    "missing_codes": []
+  },
+  "llm_contract": {
+    "role": "parse_user_answer_and_rephrase_question_only",
+    "required_output_schema": {
+      "intent": "suc_khoe_y_te",
+      "current_node": "string",
+      "slot_updates": {
+        "subdomain_key": "kham_chua_benh | chinh_sach_y_te | unknown",
+        "operation_key": "string",
+        "operation_group": "string"
+      },
+      "confidence": "0_to_1",
+      "needs_human_review": "boolean"
+    }
+  },
+  "entry_prompts": [
+    "Bạn đang cần thanh toán chi phí khám chữa bệnh BHYT hay làm thủ tục thẻ BHYT, sổ BHXH và các chế độ sức khỏe?",
+    "Bạn muốn tham gia BHYT, đổi thông tin thẻ, hay nộp hồ sơ hưởng ốm đau, thai sản, tai nạn lao động?"
+  ],
+  "slots": [
+    {
+      "name": "subdomain_key",
+      "required": true,
+      "description": "Nhánh chính của nhóm Sức khỏe và y tế."
+    },
+    {
+      "name": "operation_key",
+      "required": true,
+      "description": "Thao tác cụ thể ánh xạ trực tiếp tới thủ tục cuối cùng."
+    },
+    {
+      "name": "operation_group",
+      "required": false,
+      "description": "Nhóm thao tác để gom các thủ tục gần nhau cho UI và parser."
+    }
+  ],
+  "subdomain_catalog": [
+    {
+      "subdomain_key": "kham_chua_benh",
+      "subdomain_label": "Khám, chữa bệnh",
+      "event_id": 312,
+      "summary": "Nhóm thủ tục chi trả trực tiếp chi phí khám, chữa bệnh bảo hiểm y tế và xác nhận không cùng chi trả trong năm cho người dân đi khám chữa bệnh."
+    },
+    {
+      "subdomain_key": "chinh_sach_y_te",
+      "subdomain_label": "Chính sách y tế",
+      "event_id": 314,
+      "summary": "Nhóm thủ tục liên quan đến tham gia BHYT, điều chỉnh thông tin sổ BHXH/thẻ BHYT và hưởng các chế độ ốm đau, thai sản, tai nạn lao động, bệnh nghề nghiệp, dưỡng sức phục hồi sức khỏe."
+    }
+  ],
+  "decision_tree": {
+    "start_node": "healthcare_subdomain",
+    "nodes": [
+      {
+        "id": "healthcare_subdomain",
+        "type": "question",
+        "slot": "subdomain_key",
+        "question": "Bạn đang cần thanh toán chi phí khám chữa bệnh BHYT hay làm hồ sơ về thẻ BHYT, sổ BHXH và các chế độ y tế?",
+        "options": [
+          "kham_chua_benh",
+          "chinh_sach_y_te"
+        ]
+      },
+      {
+        "id": "healthcare_operation",
+        "type": "question",
+        "slot": "operation_key",
+        "question": "Trong nhánh đã chọn, bạn đang cần xử lý việc gì cụ thể?",
+        "options_by_subdomain": {
+          "chinh_sach_y_te": [
+            {
+              "operation_key": "giai_quyet_huong_che_do_tnld_bnn_do_thuong_tat_benh_tat_tai_phat",
+              "operation_group": "huong_tnld_bnn_tai_phat",
+              "procedure_code": "1.001521",
+              "procedure_title": "Giải quyết hưởng chế độ TNLĐ, BNN do thương tật, bệnh tật tái phát"
+            },
+            {
+              "operation_key": "giai_quyet_huong_tro_cap_nghi_dsphsk_sau_om_dau_thai_san_tnld_bnn",
+              "operation_group": "huong_che_do_thai_san",
+              "procedure_code": "1.001598",
+              "procedure_title": "Giải quyết hưởng trợ cấp nghỉ DSPHSK sau ốm đau, thai sản, TNLĐ, BNN"
+            },
+            {
+              "operation_key": "giai_quyet_huong_che_do_tnld_bnn_doi_voi_truong_hop_bi_tnld_lan_dau",
+              "operation_group": "huong_tnld_bnn_lan_dau",
+              "procedure_code": "1.001632",
+              "procedure_title": "Giải quyết hưởng chế độ TNLĐ, BNN đối với trường hợp bị TNLĐ lần đầu"
+            },
+            {
+              "operation_key": "giai_quyet_huong_che_do_tnld_bnn_doi_voi_truong_hop_da_bi_tnld_bnn_nay_tiep_tuc_bi_tnld_hoac_bnn",
+              "operation_group": "huong_tnld_bnn_tiep_tuc",
+              "procedure_code": "1.001643",
+              "procedure_title": "Giải quyết hưởng chế độ TNLĐ, BNN đối với trường hợp đã bị TNLĐ, BNN nay tiếp tục bị TNLĐ hoặc BNN"
+            },
+            {
+              "operation_key": "giai_quyet_huong_che_do_om_dau",
+              "operation_group": "huong_che_do_om_dau",
+              "procedure_code": "1.001667",
+              "procedure_title": "Giải quyết hưởng chế độ ốm đau"
+            },
+            {
+              "operation_key": "dang_ky_dong_cap_the_bhyt_doi_voi_nguoi_chi_tham_gia_bhyt",
+              "operation_group": "dieu_chinh_so_bhxh_the_bhyt",
+              "procedure_code": "1.001939",
+              "procedure_title": "Đăng ký đóng, cấp thẻ BHYT đối với người chỉ tham gia BHYT"
+            },
+            {
+              "operation_key": "cap_lai_doi_dieu_chinh_thong_tin_tren_so_bhxh_the_bhyt",
+              "operation_group": "dieu_chinh_so_bhxh_the_bhyt",
+              "procedure_code": "1.002759",
+              "procedure_title": "Cấp lại, đổi, điều chỉnh thông tin trên sổ BHXH, thẻ BHYT"
+            },
+            {
+              "operation_key": "giai_quyet_huong_che_do_thai_san",
+              "operation_group": "huong_che_do_thai_san",
+              "procedure_code": "2.000693",
+              "procedure_title": "Giải quyết hưởng chế độ thai sản"
+            }
+          ],
+          "kham_chua_benh": [
+            {
+              "operation_key": "thanh_toan_truc_tiep_chi_phi_kham_chua_benh_bhyt_cap_giay_chung_nhan_khong_cung_chi_tra_trong_nam",
+              "operation_group": "chi_tra_bhyt_kham_chua_benh",
+              "procedure_code": "1.001656",
+              "procedure_title": "Thanh toán trực tiếp chi phí khám, chữa bệnh BHYT/Cấp giấy chứng nhận không cùng chi trả trong năm"
+            }
+          ]
+        }
+      }
+    ],
+    "routes": [
+      {
+        "route_id": "chinh_sach_y_te-1_001521",
+        "conditions": {
+          "subdomain_key": "chinh_sach_y_te",
+          "operation_key": "giai_quyet_huong_che_do_tnld_bnn_do_thuong_tat_benh_tat_tai_phat"
+        },
+        "procedure_code": "1.001521",
+        "procedure_name": "Giải quyết hưởng chế độ TNLĐ, BNN do thương tật, bệnh tật tái phát",
+        "why_this_route": "Route trực tiếp cho nhu cầu 'Giải quyết hưởng chế độ TNLĐ, BNN do thương tật, bệnh tật tái phát' trong nhánh 'Chính sách y tế'."
+      },
+      {
+        "route_id": "chinh_sach_y_te-1_001598",
+        "conditions": {
+          "subdomain_key": "chinh_sach_y_te",
+          "operation_key": "giai_quyet_huong_tro_cap_nghi_dsphsk_sau_om_dau_thai_san_tnld_bnn"
+        },
+        "procedure_code": "1.001598",
+        "procedure_name": "Giải quyết hưởng trợ cấp nghỉ DSPHSK sau ốm đau, thai sản, TNLĐ, BNN",
+        "why_this_route": "Route trực tiếp cho nhu cầu 'Giải quyết hưởng trợ cấp nghỉ DSPHSK sau ốm đau, thai sản, TNLĐ, BNN' trong nhánh 'Chính sách y tế'."
+      },
+      {
+        "route_id": "chinh_sach_y_te-1_001632",
+        "conditions": {
+          "subdomain_key": "chinh_sach_y_te",
+          "operation_key": "giai_quyet_huong_che_do_tnld_bnn_doi_voi_truong_hop_bi_tnld_lan_dau"
+        },
+        "procedure_code": "1.001632",
+        "procedure_name": "Giải quyết hưởng chế độ TNLĐ, BNN đối với trường hợp bị TNLĐ lần đầu",
+        "why_this_route": "Route trực tiếp cho nhu cầu 'Giải quyết hưởng chế độ TNLĐ, BNN đối với trường hợp bị TNLĐ lần đầu' trong nhánh 'Chính sách y tế'."
+      },
+      {
+        "route_id": "chinh_sach_y_te-1_001643",
+        "conditions": {
+          "subdomain_key": "chinh_sach_y_te",
+          "operation_key": "giai_quyet_huong_che_do_tnld_bnn_doi_voi_truong_hop_da_bi_tnld_bnn_nay_tiep_tuc_bi_tnld_hoac_bnn"
+        },
+        "procedure_code": "1.001643",
+        "procedure_name": "Giải quyết hưởng chế độ TNLĐ, BNN đối với trường hợp đã bị TNLĐ, BNN nay tiếp tục bị TNLĐ hoặc BNN",
+        "why_this_route": "Route trực tiếp cho nhu cầu 'Giải quyết hưởng chế độ TNLĐ, BNN đối với trường hợp đã bị TNLĐ, BNN nay tiếp tục bị TNLĐ hoặc BNN' trong nhánh 'Chính sách y tế'."
+      },
+      {
+        "route_id": "chinh_sach_y_te-1_001667",
+        "conditions": {
+          "subdomain_key": "chinh_sach_y_te",
+          "operation_key": "giai_quyet_huong_che_do_om_dau"
+        },
+        "procedure_code": "1.001667",
+        "procedure_name": "Giải quyết hưởng chế độ ốm đau",
+        "why_this_route": "Route trực tiếp cho nhu cầu 'Giải quyết hưởng chế độ ốm đau' trong nhánh 'Chính sách y tế'."
+      },
+      {
+        "route_id": "chinh_sach_y_te-1_001939",
+        "conditions": {
+          "subdomain_key": "chinh_sach_y_te",
+          "operation_key": "dang_ky_dong_cap_the_bhyt_doi_voi_nguoi_chi_tham_gia_bhyt"
+        },
+        "procedure_code": "1.001939",
+        "procedure_name": "Đăng ký đóng, cấp thẻ BHYT đối với người chỉ tham gia BHYT",
+        "why_this_route": "Route trực tiếp cho nhu cầu 'Đăng ký đóng, cấp thẻ BHYT đối với người chỉ tham gia BHYT' trong nhánh 'Chính sách y tế'."
+      },
+      {
+        "route_id": "chinh_sach_y_te-1_002759",
+        "conditions": {
+          "subdomain_key": "chinh_sach_y_te",
+          "operation_key": "cap_lai_doi_dieu_chinh_thong_tin_tren_so_bhxh_the_bhyt"
+        },
+        "procedure_code": "1.002759",
+        "procedure_name": "Cấp lại, đổi, điều chỉnh thông tin trên sổ BHXH, thẻ BHYT",
+        "why_this_route": "Route trực tiếp cho nhu cầu 'Cấp lại, đổi, điều chỉnh thông tin trên sổ BHXH, thẻ BHYT' trong nhánh 'Chính sách y tế'."
+      },
+      {
+        "route_id": "chinh_sach_y_te-2_000693",
+        "conditions": {
+          "subdomain_key": "chinh_sach_y_te",
+          "operation_key": "giai_quyet_huong_che_do_thai_san"
+        },
+        "procedure_code": "2.000693",
+        "procedure_name": "Giải quyết hưởng chế độ thai sản",
+        "why_this_route": "Route trực tiếp cho nhu cầu 'Giải quyết hưởng chế độ thai sản' trong nhánh 'Chính sách y tế'."
+      },
+      {
+        "route_id": "kham_chua_benh-1_001656",
+        "conditions": {
+          "subdomain_key": "kham_chua_benh",
+          "operation_key": "thanh_toan_truc_tiep_chi_phi_kham_chua_benh_bhyt_cap_giay_chung_nhan_khong_cung_chi_tra_trong_nam"
+        },
+        "procedure_code": "1.001656",
+        "procedure_name": "Thanh toán trực tiếp chi phí khám, chữa bệnh BHYT/Cấp giấy chứng nhận không cùng chi trả trong năm",
+        "why_this_route": "Route trực tiếp cho nhu cầu 'Thanh toán trực tiếp chi phí khám, chữa bệnh BHYT/Cấp giấy chứng nhận không cùng chi trả trong năm' trong nhánh 'Khám, chữa bệnh'."
+      }
+    ]
+  },
+  "pre_submission_checks": [
+    {
+      "field_group": "bhyt_medical_payment",
+      "checks": [
+        "Nhóm khám chữa bệnh cần làm rõ người dân đang xin thanh toán trực tiếp chi phí khám chữa bệnh BHYT hay xin giấy chứng nhận không cùng chi trả trong năm.",
+        "Cần kiểm tra đầy đủ chứng từ khám chữa bệnh, hóa đơn, thời điểm điều trị và thông tin thẻ BHYT trước khi nhận hồ sơ."
+      ]
+    },
+    {
+      "field_group": "insurance_and_benefits",
+      "checks": [
+        "Nhóm chính sách y tế phải phân biệt rõ thủ tục tham gia BHYT, điều chỉnh sổ BHXH/thẻ BHYT và các chế độ ốm đau, thai sản, TNLĐ, BNN, dưỡng sức phục hồi sức khỏe.",
+        "Hồ sơ chế độ cần có số BHXH, căn cứ phát sinh quyền lợi và giấy tờ chuyên môn hoặc giấy tờ xác nhận tình trạng tương ứng với từng chế độ."
+      ]
+    }
+  ]
+}

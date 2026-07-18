@@ -1,0 +1,165 @@
+{
+  "schema_version": "1.0",
+  "normalizer_version": "0.2.0",
+  "source": {
+    "procedure_code": "1.001692",
+    "title": "Cấp chứng chỉ thẩm tra viên an toàn giao thông đường bộ",
+    "raw_structured_parser_version": "0.1.0",
+    "field": null
+  },
+  "procedure": {
+    "level": null,
+    "procedure_type": null,
+    "target_users": [],
+    "authorities": [
+      "Ủy ban nhân dân cấp Tỉnh"
+    ],
+    "receiving_places": []
+  },
+  "submission": {
+    "channels": [
+      "in_person",
+      "online",
+      "postal"
+    ],
+    "methods": [
+      {
+        "method_id": "method_1",
+        "channel": "in_person",
+        "processing_time_text": "10 Ngày làm việc",
+        "fee_text": null,
+        "description": "ngày làm việc, kể từ ngày nhận đủ hồ sơ theo quy định",
+        "is_online": false,
+        "is_postal": false,
+        "is_in_person": true
+      },
+      {
+        "method_id": "method_2",
+        "channel": "online",
+        "processing_time_text": "10 Ngày làm việc",
+        "fee_text": null,
+        "description": "ngày làm việc, kể từ ngày nhận đủ hồ sơ theo quy định",
+        "is_online": true,
+        "is_postal": false,
+        "is_in_person": false
+      },
+      {
+        "method_id": "method_3",
+        "channel": "postal",
+        "processing_time_text": "10 Ngày làm việc",
+        "fee_text": null,
+        "description": "ngày làm việc, kể từ ngày nhận đủ hồ sơ theo quy định",
+        "is_online": false,
+        "is_postal": true,
+        "is_in_person": false
+      }
+    ],
+    "timing_summary": {
+      "unique_processing_times": [
+        "10 Ngày làm việc"
+      ],
+      "method_count": 3
+    }
+  },
+  "documents": {
+    "required": [
+      {
+        "document_id": "document",
+        "name": "",
+        "group_name": "default",
+        "group_type": "required",
+        "original_count": "1",
+        "copy_count": "0",
+        "conditions": [],
+        "attachment_label": "Tờ trình cấp chứng chỉ (bản chính) theo quy định Mucb.docx",
+        "attachment_path": "Tờ trình cấp chứng chỉ (bản chính) theo quy định Mucb.docx"
+      },
+      {
+        "document_id": "02_nh_m_u_ho_c_file_nh_i_n_t_nh_d_ng_jpg_c_a_m_i_h_c_vi_n_ngh_c_p_ch_ng_ch_nh_c_4_cm_x_6_cm_ki_u_th_c_n_c_c_ch_p_trong_th_i_gian_kh_ng_qu_06_th_ng",
+        "name": "02 ảnh màu hoặc file ảnh điện tử định dạng JPG của mỗi học viên đề nghị cấp chứng chỉ (ảnh cỡ 4 cm x 6 cm), kiểu thẻ căn cước, chụp trong thời gian không quá 06 tháng)",
+        "group_name": "default",
+        "group_type": "required",
+        "original_count": "1",
+        "copy_count": "0",
+        "conditions": [],
+        "attachment_label": null,
+        "attachment_path": null
+      },
+      {
+        "document_id": "quy_t_nh_c_ng_nh_n_k_t_qu_thi_c_a_h_c_vi_n_tham_gia_kh_a_o_t_o",
+        "name": "Quyết định công nhận kết quả thi của học viên tham gia khóa đào tạo",
+        "group_name": "default",
+        "group_type": "required",
+        "original_count": "1",
+        "copy_count": "0",
+        "conditions": [],
+        "attachment_label": null,
+        "attachment_path": null
+      }
+    ],
+    "conditional": [],
+    "presented": [],
+    "notes": [],
+    "forms": [
+      {
+        "name": "",
+        "attachment_label": "Tờ trình cấp chứng chỉ (bản chính) theo quy định Mucb.docx",
+        "attachment_path": "Tờ trình cấp chứng chỉ (bản chính) theo quy định Mucb.docx"
+      }
+    ],
+    "empty_groups": [],
+    "document_count": 3
+  },
+  "process": {
+    "steps": [
+      {
+        "step_id": "step_1",
+        "title": "a)",
+        "content": "a) Nộp hồ sơ TTHC: - Tổ chức có nhu cầu nộp hồ sơ đến Cơ quan chuyên môn thuộc Ủy ban nhân dân cấp tỉnh.",
+        "actor": "authority",
+        "channel_hint": null,
+        "time_hint": null
+      },
+      {
+        "step_id": "step_2",
+        "title": "b)",
+        "content": "b) Giải quyết TTHC: Cơ quan chuyên môn thuộc Ủy ban nhân dân cấp tỉnh thực hiện tiếp nhận, kiểm tra hồ sơ và xử lý như sau: - Đối với trường hợp nộp trực tiếp, sau khi kiểm tra thành phần hồ sơ, nếu đúng quy định thì tiếp nhận hồ sơ và viết phiếu hẹn trả kết quả; hướng dẫn tổ chức, cá nhân hoàn thiện hồ sơ đối với trường hợp không đủ thành phần hồ sơ; - Đối với trường hợp nộp gián tiếp, trong phạm vi 02 ngày làm việc kể từ ngày nhận được hồ sơ, kiểm tra thành phần hồ sơ, nếu không đủ thành phần hồ sơ có văn bản thông báo đến tổ chức, cá nhân để bổ sung, hoàn thiện; - Trong thời hạn 10 ngày làm việc kể từ khi nhận đủ hồ sơ theo quy định, Cơ quan chuyên môn thuộc Ủy ban nhân dân cấp tỉnh tiến hành thẩm định hồ sơ, nếu đủ điều kiện, cấp chứng chỉ cho từng học viên. Trường hợp không cấp chứng chỉ, phải có văn bản trả lời và nêu rõ lý do.",
+        "actor": "authority",
+        "channel_hint": "trực tiếp",
+        "time_hint": "02 ngày làm việc"
+      }
+    ],
+    "step_count": 2,
+    "notes": []
+  },
+  "eligibility": {
+    "conditions": [
+      "Học viên phải bảo đảm điều kiện quy định tại khoản 2 Điều 38 Nghị định số 165/2024/NĐ-CP ngày 26/12/2024 của Chính phủ quy định chi tiết, hướng dẫn thi hành một số điều của Luật Đường bộ và Điều 77 Luật Trật tự, an toàn giao thông đường bộ"
+    ],
+    "has_conditions": true
+  },
+  "results": {
+    "items": [],
+    "primary_result": null
+  },
+  "legal_basis": {
+    "items": [],
+    "count": 0
+  },
+  "attachments": [
+    {
+      "label": "Tờ trình cấp chứng chỉ (bản chính) theo quy định Mucb.docx",
+      "path": "Tờ trình cấp chứng chỉ (bản chính) theo quy định Mucb.docx",
+      "source_section": "Thành phần hồ sơ",
+      "document_name": ""
+    }
+  ],
+  "signals": {
+    "raw_parse_warnings": [],
+    "missing_documents": false,
+    "documents_section_present": true,
+    "documents_declared_empty": false,
+    "documents_only_in_notes": false,
+    "missing_results": true
+  }
+}

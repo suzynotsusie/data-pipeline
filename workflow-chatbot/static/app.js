@@ -4,6 +4,14 @@ const messageInput = document.getElementById("messageInput");
 const quickRepliesEl = document.getElementById("quickReplies");
 const modeButtons = document.querySelectorAll(".mode-chip");
 
+// New Phase 7 elements
+const groupSelect = document.getElementById("groupSelect");
+const subdomainSelect = document.getElementById("subdomainSelect");
+const refreshChatBtn = document.getElementById("refreshChatBtn");
+const closeOverlayBtn = document.getElementById("closeOverlayBtn");
+const introOverlay = document.getElementById("introOverlay");
+const introContinueBtn = document.getElementById("introContinueBtn");
+
 const sessionIdEl = document.getElementById("sessionId");
 const domainLabelEl = document.getElementById("domainLabel");
 const assistModeEl = document.getElementById("assistMode");
@@ -46,9 +54,42 @@ function renderResult(result) {
 
 function renderQuickReplies(items) {
   quickRepliesEl.innerHTML = "";
+  quickRepliesEl.className = "quick-replies";
 
   if (!items || items.length === 0) {
     quickRepliesEl.innerHTML = `<span class="quick-empty">Chưa có gợi ý nhanh ở bước này.</span>`;
+    return;
+  }
+
+  // Phase 7: Check Yes/No layout
+  const isYesNo = items.length === 2 && items.some(i => i.value === "yes" || i.label === "Có") && items.some(i => i.value === "no" || i.label === "Không");
+  if (isYesNo) {
+    quickRepliesEl.classList.add("yes-no-group");
+  }
+
+  // Phase 7: Multi-select detection (assume payload item structure or just heuristics)
+  const isMultiSelect = items.some(i => i.is_multi_select || i.multi_select);
+  if (isMultiSelect) {
+    const select = document.createElement("select");
+    select.multiple = true;
+    select.className = "multi-select-dropdown";
+    items.forEach(item => {
+      const option = document.createElement("option");
+      option.value = item.value || item.label;
+      option.textContent = item.label;
+      select.appendChild(option);
+    });
+    const btn = document.createElement("button");
+    btn.textContent = "Xác nhận lựa chọn";
+    btn.className = "btn-confirm-multi";
+    btn.onclick = () => {
+      const selected = Array.from(select.selectedOptions).map(opt => opt.value);
+      if (selected.length > 0) {
+        sendMessage(JSON.stringify(selected)); // Or handle formatting as needed
+      }
+    };
+    quickRepliesEl.appendChild(select);
+    quickRepliesEl.appendChild(btn);
     return;
   }
 
@@ -89,6 +130,8 @@ async function sendMessage(message) {
       session_id: sessionId,
       message,
       preferred_mode: preferredMode,
+      group_key: groupSelect ? groupSelect.value : null,
+      subdomain_key: subdomainSelect ? subdomainSelect.value : null,
     }),
   });
 
@@ -129,3 +172,68 @@ renderQuickReplies([
   { value: "birth_registration", label: "Khai sinh" },
   { value: "residence_management", label: "Cư trú" },
 ]);
+
+// Phase 7 UI Handlers
+document.addEventListener("DOMContentLoaded", () => {
+  // Intro Overlay
+  if (!localStorage.getItem("botIntroSeen")) {
+    introOverlay.style.display = "flex";
+  }
+  introContinueBtn.addEventListener("click", () => {
+    localStorage.setItem("botIntroSeen", "true");
+    introOverlay.style.display = "none";
+  });
+
+  // Auto-resize textarea
+  messageInput.addEventListener("input", function() {
+    this.style.height = "auto";
+    this.style.height = (this.scrollHeight) + "px";
+  });
+
+  // Load Catalog
+  let globalCatalog = {};
+  fetch("/api/catalog").then(res => res.json()).then(data => {
+    globalCatalog = data;
+    groupSelect.innerHTML = '<option value="">-- Chọn nhóm --</option>';
+    if(data && Object.keys(data).length > 0) {
+      for (const groupKey in data) {
+        const group = data[groupKey];
+        const opt = document.createElement("option");
+        opt.value = groupKey;
+        opt.textContent = group.label;
+        groupSelect.appendChild(opt);
+      }
+    }
+  }).catch(err => console.error("Error loading catalog:", err));
+
+  groupSelect.addEventListener("change", (e) => {
+    const groupKey = e.target.value;
+    subdomainSelect.innerHTML = '<option value="">-- Chọn subdomain --</option>';
+    if(groupKey && globalCatalog[groupKey] && globalCatalog[groupKey].subdomains) {
+      const subdomains = globalCatalog[groupKey].subdomains;
+      for (const subKey in subdomains) {
+        const sub = subdomains[subKey];
+        const opt = document.createElement("option");
+        opt.value = subKey;
+        opt.textContent = sub.label;
+        subdomainSelect.appendChild(opt);
+      }
+    }
+  });
+
+  // Header Refresh/Close
+  refreshChatBtn.addEventListener("click", () => {
+    chatLog.innerHTML = "";
+    sessionId = null;
+    addBubble("assistant", "Chào bạn, mình đã làm mới luồng. Bạn cần hỗ trợ gì?");
+    renderQuickReplies([
+      { value: "birth_registration", label: "Khai sinh" },
+      { value: "residence_management", label: "Cư trú" },
+    ]);
+  });
+
+  closeOverlayBtn.addEventListener("click", () => {
+    // Basic close logic
+    alert("Chat overlay closed");
+  });
+});

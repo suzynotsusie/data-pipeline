@@ -1,0 +1,284 @@
+{
+  "schema_version": "3.0",
+  "record_type": "public_service_procedure_payload",
+  "id": "procedure-1.014957",
+  "procedure_code": "1.014957",
+  "code": "1.014957",
+  "title": "Tuyển sinh vào trường phổ thông nội trú",
+  "language": "vi",
+  "status": "generated_from_pipeline",
+  "field": "Thi, tuyển sinh",
+  "group_key": "hoc_tap",
+  "workflow_family": "education_study_workflow",
+  "subflow": "tuyen_sinh",
+  "source": {
+    "source_url": "file:///C:/Users/ku060/Downloads/VAIC%20source/data-pipeline/raw_data/1_014957/1_014957_procedure_detail.md",
+    "source_markdown_path": "C:\\Users\\ku060\\Downloads\\VAIC source\\data-pipeline\\raw_data\\1_014957\\1_014957_procedure_detail.md",
+    "normalized_payload_path": "C:\\Users\\ku060\\Downloads\\VAIC source\\data-pipeline\\govease-unified\\data\\normalized_structured\\1_014957_normalized_structured.json",
+    "enriched_payload_path": "C:\\Users\\ku060\\Downloads\\VAIC source\\data-pipeline\\govease-unified\\data\\enriched_structured_priority\\1_014957_enriched_structured.json"
+  },
+  "scope": {
+    "included": "Thủ tục này thuộc nhóm giáo dục và học tập, thường liên quan đến hồ sơ đào tạo, văn bằng hoặc điều kiện học tập của người học. Kết quả thường nhận được là Danh sách thí sinh được tuyển vào học tại trường phổ thông nội trú. Thời gian xử lý tham khảo: theo thời hạn của cơ quan xử lý.",
+    "not_included": []
+  },
+  "agency": {
+    "executing_agency": null,
+    "submission_place": null,
+    "receiving_places": []
+  },
+  "target_users": [
+    "Công dân Việt Nam"
+  ],
+  "submission_methods": [
+    {
+      "code": "IN_PERSON",
+      "label": "Trực tiếp",
+      "processing_time": null,
+      "fee": null,
+      "description": "Theo hướng dẫn của địa phương"
+    },
+    {
+      "code": "ONLINE",
+      "label": "Trực tuyến",
+      "processing_time": null,
+      "fee": null,
+      "description": "Theo hướng dẫn của địa phương"
+    },
+    {
+      "code": "POSTAL",
+      "label": "Dịch vụ bưu chính",
+      "processing_time": null,
+      "fee": null,
+      "description": "Theo hướng dẫn của địa phương"
+    }
+  ],
+  "processing_note": "Nên rà trước thông tin người học, cơ sở đào tạo và loại kết quả cần xin xác nhận hoặc cấp lại. Có thể chọn kênh nộp phù hợp: Trực tiếp, Trực tuyến, Dịch vụ bưu chính. Hiện có khoảng 3 mục giấy tờ cần theo dõi trong checklist.",
+  "documents": {
+    "normally_required": [
+      {
+        "name": "Phiếu đăng ký dự tuyển gồm các thông tin: Họ và tên; ngày, tháng, năm sinh; dân tộc; số định danh cá nhân/số căn cước công dân; địa chỉ thường trú của học sinh; nguyện vọng đăng ký dự tuyển học sinh nội trú/học sinh bán trú buổi trưa; đối tượng ưu tiên;",
+        "quantity": "1 bản chính, 0 bản sao",
+        "notes": [],
+        "group": "default",
+        "attachment_path": null
+      },
+      {
+        "name": "Học bạ cấp tiểu học hoặc hồ sơ khác có giá trị thay thế học bạ đối với tuyển sinh cấp trung học cơ sở; học bạ cấp trung học cơ sở hoặc hồ sơ khác có giá trị thay thế học bạ đối với tuyển sinh cấp trung học phổ thông;",
+        "quantity": "1 bản chính, 0 bản sao",
+        "notes": [],
+        "group": "default",
+        "attachment_path": null
+      }
+    ],
+    "conditional": [
+      {
+        "condition": "Giấy xác nhận chế độ ưu tiên do cơ quan có thẩm quyền cấp (nếu có).",
+        "document": "Giấy xác nhận chế độ ưu tiên do cơ quan có thẩm quyền cấp (nếu có).",
+        "quantity": "1 bản chính, 0 bản sao",
+        "notes": [],
+        "attachment_path": null
+      }
+    ],
+    "forms": [],
+    "presented": [],
+    "notes": [],
+    "summary": [
+      {
+        "group": "default",
+        "name": "Phiếu đăng ký dự tuyển gồm các thông tin: Họ và tên; ngày, tháng, năm sinh; dân tộc; số định danh cá nhân/số căn cước công dân; địa chỉ thường trú của học sinh; nguyện vọng đăng ký dự tuyển học sinh nội trú/học sinh bán trú buổi trưa; đối tượng ưu tiên;",
+        "quantity": "1 bản chính, 0 bản sao",
+        "notes": [],
+        "attachment_path": null
+      },
+      {
+        "group": "default",
+        "name": "Học bạ cấp tiểu học hoặc hồ sơ khác có giá trị thay thế học bạ đối với tuyển sinh cấp trung học cơ sở; học bạ cấp trung học cơ sở hoặc hồ sơ khác có giá trị thay thế học bạ đối với tuyển sinh cấp trung học phổ thông;",
+        "quantity": "1 bản chính, 0 bản sao",
+        "notes": [],
+        "attachment_path": null
+      },
+      {
+        "group": null,
+        "name": null,
+        "quantity": "1 bản chính, 0 bản sao",
+        "notes": [],
+        "attachment_path": null
+      }
+    ]
+  },
+  "steps": [
+    {
+      "order": 1,
+      "title": "Bước 1",
+      "description": "1.",
+      "example": null
+    },
+    {
+      "order": 2,
+      "title": "a)",
+      "description": "a) Kế hoạch tuyển sinh Sở Giáo dục và Đào tạo chủ trì, phối hợp với Ủy ban nhân dân cấp xã lập kế hoạch tuyển sinh đối với trường phổ thông nội trú (sau đây viết tắt là trường PTNT) trên địa bàn tỉnh, trình Ủy ban nhân dân cấp tỉnh phê duyệt và ban hành. Kế hoạch tuyển sinh gồm các nội dung chính sau: đối tượng, chỉ tiêu, địa bàn, phương thức, tiêu chí tuyển sinh, thời gian tuyển sinh và công bố kết quả. Trong kế hoạch tuyển sinh xác định rõ chỉ tiêu học sinh nội trú, học sinh bán trú buổi trưa đối với từng trường PTNT. Đối với cấp tiểu học, việc tuyển sinh học sinh nội trú từ lớp 1 đến lớp 3 do Ủy ban nhân dân cấp tỉnh quyết định căn cứ điều kiện thực tiễn tại địa phương.",
+      "example": null
+    },
+    {
+      "order": 3,
+      "title": "b)",
+      "description": "b) Tổ chức tuyển sinh - Phương thức tuyển sinh, quy trình tuyển sinh trường PTNT thực hiện theo quy định tại Quy chế tuyển sinh do Bộ Giáo dục và Đào tạo ban hành, phù hợp với từng cấp học. - Hội đồng tuyển sinh trường PTNT được thành lập theo quy định tại Quy chế tuyển sinh do Bộ Giáo dục và Đào tạo ban hành, phù hợp với cấp học. Thành phần Hội đồng tuyển sinh trường PTNT có đại diện một số cơ quan liên quan do cấp có thẩm quyền thành lập quyết định. - Sở Giáo dục và Đào tạo hướng dẫn tổ chức tuyển sinh, đăng ký tuyển sinh, tiêu chí tuyển sinh đối với học sinh nội trú, học sinh bán trú buổi trưa, phê duyệt kết quả tuyển sinh học sinh nội trú, học sinh bán trú buổi trưa đảm bảo công bằng, khách quan, minh bạch phù hợp với tình hình thực tế địa phương và quy định tại khoản 4 Điều 8 Quy chế này.",
+      "example": null
+    }
+  ],
+  "input_fields": [
+    {
+      "field": "learner_full_name",
+      "label": "Tên người học",
+      "type": "string",
+      "required": true
+    },
+    {
+      "field": "education_record_type",
+      "label": "Loại hồ sơ học tập cần xử lý",
+      "type": "string",
+      "required": true
+    },
+    {
+      "field": "education_institution",
+      "label": "Cơ sở đào tạo liên quan",
+      "type": "string",
+      "required": false
+    },
+    {
+      "field": "submission_channel_preference",
+      "label": "Kênh nộp dự kiến",
+      "type": "enum",
+      "required": false,
+      "options": [
+        "Trực tiếp",
+        "Trực tuyến",
+        "Dịch vụ bưu chính"
+      ]
+    }
+  ],
+  "validation_rules": [
+    {
+      "id": "required-1",
+      "severity": "error",
+      "field": "learner_full_name",
+      "rule": "Trường bắt buộc phải có dữ liệu hợp lệ trước khi nộp.",
+      "message": "Thiếu trường bắt buộc: Tên người học."
+    },
+    {
+      "id": "required-2",
+      "severity": "error",
+      "field": "education_record_type",
+      "rule": "Trường bắt buộc phải có dữ liệu hợp lệ trước khi nộp.",
+      "message": "Thiếu trường bắt buộc: Loại hồ sơ học tập cần xử lý."
+    },
+    {
+      "id": "hint-1",
+      "severity": "warning",
+      "field": "general",
+      "rule": "Nên xác định trước kênh nộp hồ sơ để biết có cần bản giấy, bản điện tử hay xuất trình trực tiếp.",
+      "message": "Nên xác định trước kênh nộp hồ sơ để biết có cần bản giấy, bản điện tử hay xuất trình trực tiếp."
+    },
+    {
+      "id": "hint-2",
+      "severity": "warning",
+      "field": "general",
+      "rule": "Nên rà lại thông tin người học, cơ sở đào tạo và loại xác nhận hoặc văn bằng cần xin.",
+      "message": "Nên rà lại thông tin người học, cơ sở đào tạo và loại xác nhận hoặc văn bằng cần xin."
+    }
+  ],
+  "common_errors": [
+    {
+      "field": "general",
+      "issue": "Điền sai mẫu tờ khai hoặc chọn sai biểu mẫu đi kèm.",
+      "fix": "Nên xác định trước kênh nộp hồ sơ để biết có cần bản giấy, bản điện tử hay xuất trình trực tiếp."
+    }
+  ],
+  "clarifying_questions": [
+    {
+      "id": "clarify_1",
+      "question": "Bạn đang cần xử lý hồ sơ học tập, văn bằng hay xác nhận nào?",
+      "purpose": "workflow_intake"
+    },
+    {
+      "id": "clarify_2",
+      "question": "Người học và cơ sở đào tạo liên quan đã xác định rõ chưa?",
+      "purpose": "workflow_intake"
+    }
+  ],
+  "legal_basis": [
+    {
+      "title": "Thông tư số 12/2026/TT-BGDĐT ngày 04 tháng 3 năm 2026 của Bộ trưởng Bộ Giáo dục và Đào tạo ban hành Quy chế tổ chức và hoạt động của trường phổ thông nội trú",
+      "code": "12/2026/TT-BGDĐT"
+    }
+  ],
+  "legal_bases": [
+    {
+      "title": "Thông tư số 12/2026/TT-BGDĐT ngày 04 tháng 3 năm 2026 của Bộ trưởng Bộ Giáo dục và Đào tạo ban hành Quy chế tổ chức và hoạt động của trường phổ thông nội trú",
+      "code": "12/2026/TT-BGDĐT"
+    }
+  ],
+  "faq": [
+    {
+      "question": "Có thể nộp qua kênh nào?",
+      "answer": "Các kênh hiện có: Trực tiếp, Trực tuyến, Dịch vụ bưu chính."
+    },
+    {
+      "question": "Kết quả chính của thủ tục là gì?",
+      "answer": "Kết quả chính được trích xuất là Danh sách thí sinh được tuyển vào học tại trường phổ thông nội trú."
+    }
+  ],
+  "guidance": {
+    "highlight_documents": [
+      {
+        "bucket": "required",
+        "name": "Phiếu đăng ký dự tuyển gồm các thông tin: Họ và tên; ngày, tháng, năm sinh; dân tộc; số định danh cá nhân/số căn cước công dân; địa chỉ thường trú của học sinh; nguyện vọng đăng ký dự tuyển học sinh nội trú/học sinh bán trú buổi trưa; đối tượng ưu tiên;",
+        "conditions": [],
+        "attachment_path": null
+      },
+      {
+        "bucket": "required",
+        "name": "Học bạ cấp tiểu học hoặc hồ sơ khác có giá trị thay thế học bạ đối với tuyển sinh cấp trung học cơ sở; học bạ cấp trung học cơ sở hoặc hồ sơ khác có giá trị thay thế học bạ đối với tuyển sinh cấp trung học phổ thông;",
+        "conditions": [],
+        "attachment_path": null
+      },
+      {
+        "bucket": "conditional",
+        "name": "Giấy xác nhận chế độ ưu tiên do cơ quan có thẩm quyền cấp (nếu có).",
+        "conditions": [
+          "Giấy xác nhận chế độ ưu tiên do cơ quan có thẩm quyền cấp (nếu có)."
+        ],
+        "attachment_path": null
+      }
+    ],
+    "special_cases": [
+      "Có kiểm tra dữ liệu cư trú/định danh"
+    ],
+    "common_errors": [
+      "Điền sai mẫu tờ khai hoặc chọn sai biểu mẫu đi kèm."
+    ],
+    "validation_hints": [
+      "Nên xác định trước kênh nộp hồ sơ để biết có cần bản giấy, bản điện tử hay xuất trình trực tiếp.",
+      "Nên rà lại thông tin người học, cơ sở đào tạo và loại xác nhận hoặc văn bằng cần xin."
+    ]
+  },
+  "next_steps": {
+    "summary": "Nên rà trước thông tin người học, cơ sở đào tạo và loại kết quả cần xin xác nhận hoặc cấp lại. Có thể chọn kênh nộp phù hợp: Trực tiếp, Trực tuyến, Dịch vụ bưu chính. Hiện có khoảng 3 mục giấy tờ cần theo dõi trong checklist.",
+    "time_badge": null,
+    "result_label": "Danh sách thí sinh được tuyển vào học tại trường phổ thông nội trú",
+    "primary_channel": "in_person",
+    "channels": [
+      "in_person",
+      "online",
+      "postal"
+    ]
+  },
+  "notes": [],
+  "provenance": {
+    "pipeline": "raw->structured->normalized->enriched->ui_api_payload",
+    "normalizer_version": "0.2.0",
+    "enricher_version": "0.2.0",
+    "mapping_notes": "workflow_generated:hoc_tap/tuyen_sinh",
+    "supported_group": true
+  }
+}

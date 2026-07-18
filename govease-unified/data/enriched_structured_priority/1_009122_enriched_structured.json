@@ -1,0 +1,111 @@
+{
+  "schema_version": "1.0",
+  "enricher_version": "0.2.0",
+  "source": {
+    "procedure_code": "1.009122",
+    "title": "Cấp giấy phép xây dựng có thời hạn đối với công trình, nhà ở riêng lẻ (công trình cấp III, cấp IV)",
+    "group_key": "dien_luc_nha_o_dat_dai",
+    "workflow_family": "housing_land_electricity_workflow",
+    "subflow": "xay_dung_cong_trinh_nha_o"
+  },
+  "experience": {
+    "entry_label": "Hỗ trợ nhà ở, đất đai và điện lực",
+    "overview_summary": "Thủ tục này thuộc nhóm nhà ở, đất đai và điện lực, thường cần kiểm tra hiện trạng hồ sơ tài sản hoặc điều kiện hạ tầng liên quan. Kết quả thường nhận được là Giấy phép. Thời gian xử lý tham khảo: 15 ngày.",
+    "next_step_summary": "Nên chuẩn bị trước thông tin thửa đất, tài sản hoặc địa điểm tiếp nhận, rồi chọn kênh nộp phù hợp: Trực tiếp, Trực tuyến, Dịch vụ bưu chính. Hiện có khoảng 16 mục giấy tờ cần theo dõi trong checklist.",
+    "tone": "supportive_public_service"
+  },
+  "guidance": {
+    "highlight_documents": [
+      {
+        "bucket": "required",
+        "name": "2. Bản sao được công chứng hoặc chứng thực một trong những giấy tờ về quyền sử dụng đất theo quy định của pháp luật về đất đai hoặc giấy tờ về quyền quản lý, sử dụng công trình;",
+        "conditions": [],
+        "attachment_path": null
+      },
+      {
+        "bucket": "required",
+        "name": "Bản vẽ mặt bằng công trình trên lô đất tỷ lệ 1/50 - 1/500, kèm theo sơ đồ vị trí công trình;",
+        "conditions": [],
+        "attachment_path": null
+      },
+      {
+        "bucket": "required",
+        "name": "Bản vẽ mặt bằng các tầng, các mặt đứng và mặt cắt chính của công trình, tỷ lệ 1/50 - 1/200;",
+        "conditions": [],
+        "attachment_path": null
+      },
+      {
+        "bucket": "required",
+        "name": "Bản vẽ mặt bằng móng tỷ lệ 1/50 - 1/200 và mặt cắt móng tỷ lệ 1/50, kèm theo sơ đồ đấu nối hệ thống thoát nước mưa, xử lý nước thải, cấp nước, cấp điện, thông tin tỷ lệ 1/50 - 1/200.",
+        "conditions": [],
+        "attachment_path": null
+      },
+      {
+        "bucket": "required",
+        "name": "Đối với công trình xây dựng có công trình liền kề phải có bản cam kết của chủ đầu tư bảo đảm an toàn đối với công trình liền kề.",
+        "conditions": [],
+        "attachment_path": null
+      },
+      {
+        "bucket": "required",
+        "name": "1. Đơn đề nghị cấp giấy phép xây dựng có thời hạn theo mẫu;",
+        "conditions": [],
+        "attachment_path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/1_009122/MAU%2001-Cap%20phep%20xay%20dung%20co%20thoi%20han%20su%20dung%20cho%20cong%20trinh.doc"
+      }
+    ],
+    "special_cases": [
+      "Có thể cần đối chiếu thông tin thửa đất hoặc giấy chứng nhận"
+    ],
+    "common_errors": [
+      "Điền sai mẫu tờ khai hoặc chọn sai biểu mẫu đi kèm."
+    ],
+    "validation_hints": [
+      "Nên xác định trước kênh nộp hồ sơ để biết có cần bản giấy, bản điện tử hay xuất trình trực tiếp.",
+      "Có mẫu biểu đính kèm, nên kiểm tra đúng biểu mẫu trước khi nộp.",
+      "Nên đối chiếu trước thông tin thửa đất, tài sản hoặc hiện trạng hồ sơ để tránh bị yêu cầu chỉnh sửa."
+    ]
+  },
+  "intake": {
+    "candidate_input_fields": [
+      {
+        "field_id": "property_or_service_need",
+        "label": "Nhu cầu về đất đai, nhà ở hoặc điện lực",
+        "field_type": "text",
+        "required": true
+      },
+      {
+        "field_id": "property_location",
+        "label": "Địa điểm tài sản hoặc nơi sử dụng dịch vụ",
+        "field_type": "text",
+        "required": true
+      },
+      {
+        "field_id": "submission_channel_preference",
+        "label": "Kênh nộp dự kiến",
+        "field_type": "enum",
+        "required": false
+      },
+      {
+        "field_id": "has_current_certificate",
+        "label": "Đã có giấy tờ/tài liệu hiện trạng",
+        "field_type": "boolean",
+        "required": false
+      }
+    ],
+    "suggested_clarifying_questions": [
+      "Bạn đang xử lý nhu cầu nào về đất đai, nhà ở hoặc điện lực?",
+      "Bạn đã có thông tin thửa đất, địa chỉ tài sản hoặc giấy tờ hiện trạng chưa?"
+    ]
+  },
+  "ui_hints": {
+    "primary_channel": "in_person",
+    "result_label": "Giấy phép",
+    "time_badge": "15 ngày",
+    "document_count_badge": 16
+  },
+  "provenance": {
+    "generator": "workflow_domain_enricher",
+    "derivation_mode": "rule_based_semantic_enrichment",
+    "supported_group": true
+  }
+}

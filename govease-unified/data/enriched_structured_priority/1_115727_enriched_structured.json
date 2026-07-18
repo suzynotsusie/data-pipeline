@@ -1,0 +1,110 @@
+{
+  "schema_version": "1.0",
+  "enricher_version": "0.2.0",
+  "source": {
+    "procedure_code": "1.115727",
+    "title": "Tách thửa, hợp thửa đất",
+    "group_key": "dien_luc_nha_o_dat_dai",
+    "workflow_family": null,
+    "subflow": null
+  },
+  "experience": {
+    "entry_label": "Hỗ trợ nhà ở, đất đai và điện lực",
+    "overview_summary": "Thủ tục này thuộc nhóm nhà ở, đất đai và điện lực, thường cần kiểm tra hiện trạng hồ sơ tài sản hoặc điều kiện hạ tầng liên quan. Kết quả thường nhận được là Giấy chứng nhận. Thời gian xử lý tham khảo: Không quá 15 ngày làm việc. Đối với các xã miền núi, vùng sâu, vùng xa, vùng có điều kiện kinh tế - xã hội khó khăn, vùng có điều kiện kinh tế - xã hội đặc biệt khó khăn thì thời gian thực hiện được tăng thêm không quá 10 ngày làm việc so với tổng thời gian thực hiện thủ tục này. ngày.",
+    "next_step_summary": "Nên chuẩn bị trước thông tin thửa đất, tài sản hoặc địa điểm tiếp nhận, rồi chọn kênh nộp phù hợp: Trực tiếp, Trực tuyến, Dịch vụ bưu chính. Hiện có khoảng 4 mục giấy tờ cần theo dõi trong checklist.",
+    "tone": "supportive_public_service"
+  },
+  "guidance": {
+    "highlight_documents": [
+      {
+        "bucket": "required",
+        "name": "Đơn đề nghị tách thửa đất, hợp thửa đất",
+        "conditions": [],
+        "attachment_path": null
+      },
+      {
+        "bucket": "conditional",
+        "name": "Đơn đề nghị tách thửa đất, hợp thửa đất đối với trường hợp chuyển nhượng một phần dự án mà quyền sử dụng đất để thực hiện dự án đã được cấp Giấy chứng nhận",
+        "conditions": [
+          "Đơn đề nghị tách thửa đất, hợp thửa đất đối với trường hợp chuyển nhượng một phần dự án mà quyền sử dụng đất để thực hiện dự án đã được cấp Giấy chứng nhận"
+        ],
+        "attachment_path": null
+      },
+      {
+        "bucket": "conditional",
+        "name": "Giấy chứng nhận đã cấp hoặc một trong các loại giấy tờ về quyền sử dụng đất theo quy định của pháp luật (nếu có).",
+        "conditions": [
+          "Giấy chứng nhận đã cấp hoặc một trong các loại giấy tờ về quyền sử dụng đất theo quy định của pháp luật (nếu có)."
+        ],
+        "attachment_path": null
+      },
+      {
+        "bucket": "conditional",
+        "name": "Các văn bản của cơ quan có thẩm quyền có thể hiện nội dung tách thửa đất, hợp thửa đất (nếu có).",
+        "conditions": [
+          "Các văn bản của cơ quan có thẩm quyền có thể hiện nội dung tách thửa đất, hợp thửa đất (nếu có)."
+        ],
+        "attachment_path": null
+      }
+    ],
+    "special_cases": [
+      "Có thể cần đối chiếu thông tin thửa đất hoặc giấy chứng nhận"
+    ],
+    "common_errors": [
+      "Thông tin thửa đất, tài sản hoặc giấy chứng nhận chưa khớp với hồ sơ hiện có."
+    ],
+    "validation_hints": [
+      "Nên xác định trước kênh nộp hồ sơ để biết có cần bản giấy, bản điện tử hay xuất trình trực tiếp.",
+      "Nên đối chiếu trước thông tin thửa đất, tài sản hoặc hiện trạng hồ sơ để tránh bị yêu cầu chỉnh sửa."
+    ]
+  },
+  "intake": {
+    "candidate_input_fields": [
+      {
+        "field_id": "property_or_service_need",
+        "label": "Nhu cầu về đất đai, nhà ở hoặc điện lực",
+        "field_type": "text",
+        "required": true
+      },
+      {
+        "field_id": "property_location",
+        "label": "Địa điểm tài sản hoặc nơi sử dụng dịch vụ",
+        "field_type": "text",
+        "required": true
+      },
+      {
+        "field_id": "submission_channel_preference",
+        "label": "Kênh nộp dự kiến",
+        "field_type": "enum",
+        "required": false
+      },
+      {
+        "field_id": "has_current_certificate",
+        "label": "Đã có giấy tờ/tài liệu hiện trạng",
+        "field_type": "boolean",
+        "required": false
+      },
+      {
+        "field_id": "land_plot_identifier",
+        "label": "Thông tin thửa đất",
+        "field_type": "text",
+        "required": false
+      }
+    ],
+    "suggested_clarifying_questions": [
+      "Bạn đang xử lý nhu cầu nào về đất đai, nhà ở hoặc điện lực?",
+      "Bạn đã có thông tin thửa đất, địa chỉ tài sản hoặc giấy tờ hiện trạng chưa?"
+    ]
+  },
+  "ui_hints": {
+    "primary_channel": "in_person",
+    "result_label": "Giấy chứng nhận",
+    "time_badge": "Không quá 15 ngày làm việc. Đối với các xã miền núi, vùng sâu, vùng xa, vùng có điều kiện kinh tế - xã hội khó khăn, vùng có điều kiện kinh tế - xã hội đặc biệt khó khăn thì thời gian thực hiện được tăng thêm không quá 10 ngày làm việc so với tổng thời gian thực hiện thủ tục này. ngày",
+    "document_count_badge": 4
+  },
+  "provenance": {
+    "generator": "workflow_domain_enricher",
+    "derivation_mode": "rule_based_semantic_enrichment",
+    "supported_group": true
+  }
+}

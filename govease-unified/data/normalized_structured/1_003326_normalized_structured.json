@@ -1,0 +1,220 @@
+{
+  "schema_version": "1.0",
+  "normalizer_version": "0.2.0",
+  "source": {
+    "procedure_code": "1.003326",
+    "title": "Gia hạn tạm trú cho người nước ngoài tại Việt Nam (thực hiện tại cấp Trung ương)",
+    "raw_structured_parser_version": "0.1.0",
+    "field": "Quản lý xuất nhập cảnh"
+  },
+  "procedure": {
+    "level": "Cấp bộ/ngành",
+    "procedure_type": "TTHC được luật giao quy định chi tiết",
+    "target_users": [
+      "Người nước ngoài",
+      "Tổ chức nước ngoài"
+    ],
+    "authorities": [
+      "Cục quản lý xuất nhập cảnh"
+    ],
+    "receiving_places": []
+  },
+  "submission": {
+    "channels": [
+      "in_person",
+      "online",
+      "postal"
+    ],
+    "methods": [
+      {
+        "method_id": "method_1",
+        "channel": "online",
+        "processing_time_text": "5 ngày làm việc",
+        "fee_text": null,
+        "description": "nộp hồ sơ trực tuyến qua Cổng dịch vụ công quốc gia hoặc Cổng dịch vụ công Bộ Công an. không quá 05 ngày làm việc kể từ khi nhận đủ hồ sơ.",
+        "is_online": true,
+        "is_postal": false,
+        "is_in_person": false
+      },
+      {
+        "method_id": "method_2",
+        "channel": "postal",
+        "processing_time_text": "5 ngày làm việc",
+        "fee_text": null,
+        "description": "nộp bổ sung hồ sơ qua dịch vụ bưu chính công ích theo thông báo của Cục Quản lý xuất nhập cảnh trên Cổng dịch vụ công quốc gia hoặc Cổng dịch vụ công Bộ Công an (nếu có). không quá 05 ngày làm việc kể từ khi nhận đủ hồ sơ.",
+        "is_online": false,
+        "is_postal": true,
+        "is_in_person": false
+      },
+      {
+        "method_id": "method_3",
+        "channel": "in_person",
+        "processing_time_text": "5 ngày làm việc",
+        "fee_text": null,
+        "description": "nộp hồ sơ trực tiếp tại trụ sở Cục Quản lý xuất nhập cảnh. không quá 05 ngày làm việc kể từ khi nhận đủ hồ sơ.",
+        "is_online": false,
+        "is_postal": false,
+        "is_in_person": true
+      }
+    ],
+    "timing_summary": {
+      "unique_processing_times": [
+        "5 ngày làm việc"
+      ],
+      "method_count": 3
+    }
+  },
+  "documents": {
+    "required": [
+      {
+        "document_id": "h_chi_u_ho_c_gi_y_t_c_gi_tr_i_l_i_qu_c_t_c_a_ng_i_n_c_ngo_i",
+        "name": "Hộ chiếu hoặc giấy tờ có giá trị đi lại quốc tế của người nước ngoài.",
+        "group_name": "default",
+        "group_type": "unknown",
+        "original_count": "1",
+        "copy_count": "0",
+        "conditions": [],
+        "attachment_label": null,
+        "attachment_path": null
+      },
+      {
+        "document_id": "t_khai_ngh_c_p_th_th_c_gia_h_n_t_m_tr_m_u_na5_ban_h_nh_k_m_theo_th_ng_t_s_22_2023_tt_bca_ng_y_30_6_2023",
+        "name": "Tờ khai đề nghị cấp thị thực, gia hạn tạm trú (mẫu NA5) ban hành kèm theo Thông tư số 22/2023/TT-BCA ngày 30/6/2023.",
+        "group_name": "default",
+        "group_type": "unknown",
+        "original_count": "1",
+        "copy_count": "0",
+        "conditions": [],
+        "attachment_label": "NA5 (1).doc",
+        "attachment_path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/1_003326/NA5%20%281%29.doc"
+      }
+    ],
+    "conditional": [
+      {
+        "document_id": "tr_ng_h_p_n_p_h_s_tr_c_tuy_n_th_h_chi_u_ho_c_gi_y_t_c_gi_tr_i_l_i_qu_c_t_c_a_ng_i_n_c_ngo_i_ph_i_g_i_qua_d_ch_v_b_u_ch_nh_c_ng_ch_v_c_quan_ti_p_nh_n_th_nh_ph_n_h_s_kh_c_ph_i_c_ch_ng_th_c_i_n_t_theo_quy_nh_tr_ng_h_p_ch_a_c_ch_ng_th_c_i_n_t_th_g_i_h_s_v_c_quan_ti_p_nh_n_th_ng_qua_d_ch_v_b_u_ch_nh_c_ng_ch",
+        "name": "Trường hợp nộp hồ sơ trực tuyến thì hộ chiếu hoặc giấy tờ có giá trị đi lại quốc tế của người nước ngoài phải gửi qua dịch vụ bưu chính công ích về cơ quan tiếp nhận; thành phần hồ sơ khác phải được chứng thực điện tử theo quy định, trường hợp chưa được chứng thực điện tử thì gửi hồ sơ về cơ quan tiếp nhận thông qua dịch vụ bưu chính công ích.",
+        "group_name": "default",
+        "group_type": "unknown",
+        "original_count": "0",
+        "copy_count": "0",
+        "conditions": [
+          "Trường hợp nộp hồ sơ trực tuyến thì hộ chiếu hoặc giấy tờ có giá trị đi lại quốc tế của người nước ngoài phải gửi qua dịch vụ bưu chính công ích về cơ quan tiếp nhận; thành phần hồ sơ khác phải được chứng thực điện tử theo quy định, trường hợp chưa được chứng thực điện tử thì gửi hồ sơ về cơ quan tiếp nhận thông qua dịch vụ bưu chính công ích."
+        ],
+        "attachment_label": null,
+        "attachment_path": null
+      }
+    ],
+    "presented": [],
+    "notes": [],
+    "forms": [
+      {
+        "name": "Tờ khai đề nghị cấp thị thực, gia hạn tạm trú (mẫu NA5) ban hành kèm theo Thông tư số 22/2023/TT-BCA ngày 30/6/2023.",
+        "attachment_label": "NA5 (1).doc",
+        "attachment_path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/1_003326/NA5%20%281%29.doc"
+      }
+    ],
+    "empty_groups": [],
+    "document_count": 3
+  },
+  "process": {
+    "steps": [
+      {
+        "step_id": "step_1",
+        "title": null,
+        "content": "1.",
+        "actor": "user",
+        "channel_hint": null,
+        "time_hint": null
+      },
+      {
+        "step_id": "step_2",
+        "title": "Bước 1:",
+        "content": "Bước 1: Chuẩn bị hồ sơ theo quy định của pháp luật",
+        "actor": "user",
+        "channel_hint": null,
+        "time_hint": null
+      },
+      {
+        "step_id": "step_3",
+        "title": "Bước 2:",
+        "content": "Bước 2: Nộp hồ sơ vào giờ hành chính các ngày làm việc trong tuần tại một trong hai trụ sở của Cục Quản lý xuất nhập cảnh, Bộ Công an: + Số 69 đường Mạc Thái Tổ, phường Yên Hòa, thành phố Hà Nội + Số 333-335-337 đường Nguyễn Trãi, phường Cầu Ông Lãnh, Thành phố Hồ Chí Minh Hoặc nộp hồ sơ trực tuyến qua Cổng dịch vụ công quốc gia hoặc Cổng dịch vụ công Bộ Công an và gửi bổ sung hồ sơ qua dịch vụ bưu chính công ích theo thông báo của Cục Quản lý xuất nhập cảnh trên Cổng dịch vụ công trực tuyến (nếu có) * Cán bộ tiếp nhận hồ sơ kiểm tra tính pháp lý và nội dung hồ sơ: + Nếu hồ sơ đầy đủ, hợp lệ thì tiếp nhận hồ sơ, in và cấp giấy hẹn trả kết quả cho người nộp hồ sơ; yêu cầu nộp phí cho cán bộ thu phí, cán bộ thu phí giao biên lai thu tiền cho người đề nghị gia hạn tạm trú hoặc thông báo trên Cổng dịch vụ công quốc gia hoặc Cổng dịch vụ công Bộ Công an đề người đề nghị gia hạn tạm trú thanh toán trực tuyến và nhận biên lai điện tử + Nếu hồ sơ thiếu hoặc không hợp lệ thì cán bộ tiếp nhận hồ sơ hướng dẫn hoặc thông báo trên Cổng dịch vụ công quốc gia hoặc Cổng dịch vụ công Bộ Công an để người nộp hồ sơ hoàn chỉnh + Trường hợp hồ sơ không đủ điều kiện thì không tiếp nhận hồ sơ, trả lời bằng văn bản hoặc thông báo trên Cổng dịch vụ công quốc gia hoặc Cổng dịch vụ công Bộ Công an và nêu rõ lý do * Trường hợp nộp hồ sơ trực tuyến, người đề nghị gia hạn tạm trú có thể đề nghị nhận kết quả qua dịch vụ bưu chính và phải trả phí dịch vụ chuyển phát * Thời gian tiếp nhận hồ sơ: Từ thứ 2 đến sáng thứ 7 hàng tuần (trừ ngày Tết, ngày lễ)",
+        "actor": "authority",
+        "channel_hint": "trực tuyến",
+        "time_hint": null
+      },
+      {
+        "step_id": "step_4",
+        "title": "Bước 3:",
+        "content": "Bước 3: Nhận kết quả: + Người đề nghị gia hạn tạm trú trực tiếp nhận kết quả tại Cục Quản lý xuất nhập cảnh, Bộ Công an; khi đến nhận kết quả mang theo giấy hẹn trả kết quả, giấy tờ tùy thân, biên lai thu tiền để đối chiếu. Trường hợp đề nghị nhận kết quả qua dịch vụ bưu chính thực hiện theo hướng dẫn của cơ quan cung cấp dịch vụ bưu chính + Trường hợp không đồng ý gia hạn tạm trú thì trả lời bằng văn bản hoặc thông báo trên Cổng dịch vụ công quốc gia hoặc Cổng dịch vụ công Bộ Công an và nêu rõ lý do + Thời gian trả kết quả: Từ thứ 2 đến sáng thứ 7 hàng tuần (trừ ngày Tết, ngày lễ)",
+        "actor": "authority",
+        "channel_hint": "dịch vụ bưu chính",
+        "time_hint": null
+      }
+    ],
+    "step_count": 4,
+    "notes": []
+  },
+  "eligibility": {
+    "conditions": [],
+    "has_conditions": false
+  },
+  "results": {
+    "items": [
+      {
+        "name": "Gia hạn chứng nhận tạm trú",
+        "result_code": "KQ.G01.000077",
+        "raw_text": "Gia hạn chứng nhận tạm trú"
+      }
+    ],
+    "primary_result": {
+      "name": "Gia hạn chứng nhận tạm trú",
+      "result_code": "KQ.G01.000077",
+      "raw_text": "Gia hạn chứng nhận tạm trú"
+    }
+  },
+  "legal_basis": {
+    "items": [
+      {
+        "title": "sửa đổi, bổ<br>sung một số điều của Nghị định 118/2025/NĐ-CP thực hiện thủ tục hành chính<br>theo cơ chế một cửa, một cửa liên thông tại Bộ phận Một cửa và Cổng Dịch vụ<br>công quốc gia",
+        "code": "367/2025/NĐ-CP"
+      },
+      {
+        "title": "Nghị định số 118/2025/NĐ-CP của Chính phủ: Về thực hiện thủ tục hành chính theo cơ chế một cửa, một cửa liên thông tại Bộ phận Một cửa và Cổng Dịch vụ công quốc gia",
+        "code": "118/2025/NĐ-CP"
+      },
+      {
+        "title": "Thông tư số 28/2026/TT-BTC ngày 27/3/2026 của Bộ Tài chính quy định mức thu, chế độ thu, nộp phí, lệ phí trong lĩnh vực xuất cảnh, nhập cảnh, quá cảnh, cư trú tại Việt Nam",
+        "code": "28/2026/TT-BTC"
+      },
+      {
+        "title": "Nhập cảnh, xuất cảnh, quá cảnh, cư trú của người nước ngoài tại Việt Nam",
+        "code": "47/2014/QH13"
+      },
+      {
+        "title": "Luật Xuất cảnh, nhập cảnh của công dân Việt Nam và Luật Nhập cảnh, xuất cảnh, quá cảnh, cư trú của người nước ngoài tại Việt Nam sửa đổi 2023",
+        "code": "23/2023/QH15"
+      },
+      {
+        "title": "Nghị quyết 66.7/2025/NQ-CP",
+        "code": "66.7/2025/NQ-CP"
+      }
+    ],
+    "count": 6
+  },
+  "attachments": [
+    {
+      "label": "NA5 (1).doc",
+      "path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/1_003326/NA5%20%281%29.doc",
+      "source_section": "Thành phần hồ sơ",
+      "document_name": "Tờ khai đề nghị cấp thị thực, gia hạn tạm trú (mẫu NA5) ban hành kèm theo Thông tư số 22/2023/TT-BCA ngày 30/6/2023."
+    }
+  ],
+  "signals": {
+    "raw_parse_warnings": [],
+    "missing_documents": false,
+    "documents_section_present": true,
+    "documents_declared_empty": false,
+    "documents_only_in_notes": false,
+    "missing_results": false
+  }
+}

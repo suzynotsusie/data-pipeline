@@ -1,0 +1,209 @@
+{
+  "schema_version": "1.0",
+  "domain": "viec_lam",
+  "updated_at": "2026-07-18",
+  "source_files": [
+    "C:\\Users\\ku060\\Downloads\\VAIC source\\data-pipeline\\main\\full-data.csv",
+    "C:\\Users\\ku060\\Downloads\\VAIC source\\data-pipeline\\data\\workflows\\viec_lam\\summary.csv",
+    "C:\\Users\\ku060\\Downloads\\VAIC source\\data-pipeline\\data\\workflows\\viec_lam\\normalized.json",
+    "C:\\Users\\ku060\\Downloads\\VAIC source\\data-pipeline\\raw_data"
+  ],
+  "coverage": {
+    "expected_codes": [
+      "1.014578",
+      "1.014747",
+      "1.014754",
+      "1.115483",
+      "2.002821"
+    ],
+    "covered_codes": [
+      "1.014578",
+      "1.014747",
+      "1.014754",
+      "1.115483",
+      "2.002821"
+    ],
+    "missing_codes": []
+  },
+  "llm_contract": {
+    "role": "parse_user_answer_and_rephrase_question_only",
+    "required_output_schema": {
+      "intent": "viec_lam",
+      "current_node": "string",
+      "slot_updates": {
+        "subdomain_key": "ho_tro_tu_van_gioi_thieu_viec_lam | tuyen_dung | bao_hiem_xa_hoi_that_nghiep_tro_cap | chung_chi_hanh_nghe | nang_ngach | thue_thu_nhap_ca_nhan | cap_phep_lao_dong_nguoi_nuoc_ngoai | unknown",
+        "operation_key": "string",
+        "operation_group": "string"
+      },
+      "confidence": "0_to_1",
+      "needs_human_review": "boolean"
+    }
+  },
+  "entry_prompts": [
+    "Bạn đang cần tìm việc, nhận trợ cấp thất nghiệp, học nâng cao kỹ năng, khai thuế thu nhập hay làm giấy phép lao động?",
+    "Bạn muốn đăng ký mới, điều chỉnh thông tin, xin hỗ trợ, xin cấp chứng chỉ hay xin giấy phép làm việc?"
+  ],
+  "slots": [
+    {
+      "name": "subdomain_key",
+      "required": true,
+      "description": "Nhánh chính của nhóm Việc làm."
+    },
+    {
+      "name": "operation_key",
+      "required": true,
+      "description": "Thao tác cụ thể ánh xạ trực tiếp tới thủ tục cuối cùng."
+    },
+    {
+      "name": "operation_group",
+      "required": false,
+      "description": "Nhóm thao tác để gom các thủ tục gần nhau cho UI và parser."
+    }
+  ],
+  "subdomain_catalog": [
+    {
+      "subdomain_key": "nang_ngach",
+      "subdomain_label": "Nâng ngạch",
+      "event_id": 265,
+      "summary": "Nhóm thủ tục hỗ trợ đào tạo, bồi dưỡng và nâng cao trình độ kỹ năng nghề để phát triển nghề nghiệp."
+    }
+  ],
+  "decision_tree": {
+    "start_node": "employment_subdomain",
+    "nodes": [
+      {
+        "id": "employment_subdomain",
+        "type": "question",
+        "slot": "subdomain_key",
+        "question": "Bạn đang hỏi về hỗ trợ việc làm, tuyển dụng, trợ cấp thất nghiệp, chứng chỉ nghề, nâng cao kỹ năng, thuế thu nhập cá nhân hay giấy phép lao động cho người nước ngoài?",
+        "options": [
+          "nang_ngach"
+        ],
+        "prefilled_value": "nang_ngach"
+      },
+      {
+        "id": "employment_operation",
+        "type": "question",
+        "slot": "operation_key",
+        "question": "Bạn cần làm thao tác nào cụ thể trong nhánh đã chọn?",
+        "options_by_subdomain": {
+          "nang_ngach": [
+            {
+              "operation_key": "chinh_sach_ho_tro_dao_tao_dao_tao_lai_dao_tao_nang_cao_cho_nguoi_lao_dong_phuc_vu_cong_nghiep_ban_dan_tri_tue_nhan_tao_cong_nghe_so",
+              "operation_group": "ho_tro_nang_cao_trinh_do_ky_nang",
+              "procedure_code": "1.014578",
+              "procedure_title": "Chính sách hỗ trợ đào tạo, đào tạo lại, đào tạo nâng cao cho người lao động phục vụ công nghiệp bán dẫn, trí tuệ nhân tạo, công nghệ số"
+            },
+            {
+              "operation_key": "ho_tro_nguoi_lao_dong_tham_gia_dao_tao_nang_cao_trinh_do_ky_nang_nghe_cap_tinh",
+              "operation_group": "ho_tro_nang_cao_trinh_do_ky_nang",
+              "procedure_code": "1.014747",
+              "procedure_title": "Hỗ trợ người lao động tham gia đào tạo, nâng cao trình độ kỹ năng nghề (Cấp tỉnh)"
+            },
+            {
+              "operation_key": "ho_tro_nguoi_su_dung_lao_dong_dao_tao_boi_duong_nang_cao_trinh_do_ky_nang_nghe_de_duy_tri_viec_lam_cho_nguoi_lao_dong_cap_tinh",
+              "operation_group": "ho_tro_dao_tao_duy_tri_viec_lam",
+              "procedure_code": "1.014754",
+              "procedure_title": "Hỗ trợ người sử dụng lao động đào tạo, bồi dưỡng, nâng cao trình độ kỹ năng nghề để duy trì việc làm cho người lao động (Cấp tỉnh)"
+            },
+            {
+              "operation_key": "de_nghi_ho_tro_tham_gia_dao_tao_boi_duong_nang_cao_trinh_do_ky_nang_nghe_cap_tinh",
+              "operation_group": "ho_tro_nang_cao_trinh_do_ky_nang",
+              "procedure_code": "1.115483",
+              "procedure_title": "Đề nghị hỗ trợ tham gia đào tạo, bồi dưỡng, nâng cao trình độ kỹ năng nghề (Cấp tỉnh)"
+            },
+            {
+              "operation_key": "ho_tro_dao_tao_nghe_cho_nguoi_lao_dong_o_khu_vuc_nong_thon_nguoi_lao_dong_la_thanh_nien",
+              "operation_group": "ho_tro_dao_tao_nghe",
+              "procedure_code": "2.002821",
+              "procedure_title": "Hỗ trợ đào tạo nghề cho người lao động ở khu vực nông thôn, người lao động là thanh niên"
+            }
+          ]
+        },
+        "options": [
+          "chinh_sach_ho_tro_dao_tao_dao_tao_lai_dao_tao_nang_cao_cho_nguoi_lao_dong_phuc_vu_cong_nghiep_ban_dan_tri_tue_nhan_tao_cong_nghe_so",
+          "ho_tro_nguoi_lao_dong_tham_gia_dao_tao_nang_cao_trinh_do_ky_nang_nghe_cap_tinh",
+          "ho_tro_nguoi_su_dung_lao_dong_dao_tao_boi_duong_nang_cao_trinh_do_ky_nang_nghe_de_duy_tri_viec_lam_cho_nguoi_lao_dong_cap_tinh",
+          "de_nghi_ho_tro_tham_gia_dao_tao_boi_duong_nang_cao_trinh_do_ky_nang_nghe_cap_tinh",
+          "ho_tro_dao_tao_nghe_cho_nguoi_lao_dong_o_khu_vuc_nong_thon_nguoi_lao_dong_la_thanh_nien"
+        ]
+      }
+    ],
+    "routes": [
+      {
+        "route_id": "nang_ngach-1_014578",
+        "conditions": {
+          "subdomain_key": "nang_ngach",
+          "operation_key": "chinh_sach_ho_tro_dao_tao_dao_tao_lai_dao_tao_nang_cao_cho_nguoi_lao_dong_phuc_vu_cong_nghiep_ban_dan_tri_tue_nhan_tao_cong_nghe_so"
+        },
+        "procedure_code": "1.014578",
+        "procedure_name": "Chính sách hỗ trợ đào tạo, đào tạo lại, đào tạo nâng cao cho người lao động phục vụ công nghiệp bán dẫn, trí tuệ nhân tạo, công nghệ số",
+        "why_this_route": "Route trực tiếp cho nhu cầu 'Chính sách hỗ trợ đào tạo, đào tạo lại, đào tạo nâng cao cho người lao động phục vụ công nghiệp bán dẫn, trí tuệ nhân tạo, công nghệ số' trong nhánh 'Nâng ngạch'."
+      },
+      {
+        "route_id": "nang_ngach-1_014747",
+        "conditions": {
+          "subdomain_key": "nang_ngach",
+          "operation_key": "ho_tro_nguoi_lao_dong_tham_gia_dao_tao_nang_cao_trinh_do_ky_nang_nghe_cap_tinh"
+        },
+        "procedure_code": "1.014747",
+        "procedure_name": "Hỗ trợ người lao động tham gia đào tạo, nâng cao trình độ kỹ năng nghề (Cấp tỉnh)",
+        "why_this_route": "Route trực tiếp cho nhu cầu 'Hỗ trợ người lao động tham gia đào tạo, nâng cao trình độ kỹ năng nghề (Cấp tỉnh)' trong nhánh 'Nâng ngạch'."
+      },
+      {
+        "route_id": "nang_ngach-1_014754",
+        "conditions": {
+          "subdomain_key": "nang_ngach",
+          "operation_key": "ho_tro_nguoi_su_dung_lao_dong_dao_tao_boi_duong_nang_cao_trinh_do_ky_nang_nghe_de_duy_tri_viec_lam_cho_nguoi_lao_dong_cap_tinh"
+        },
+        "procedure_code": "1.014754",
+        "procedure_name": "Hỗ trợ người sử dụng lao động đào tạo, bồi dưỡng, nâng cao trình độ kỹ năng nghề để duy trì việc làm cho người lao động (Cấp tỉnh)",
+        "why_this_route": "Route trực tiếp cho nhu cầu 'Hỗ trợ người sử dụng lao động đào tạo, bồi dưỡng, nâng cao trình độ kỹ năng nghề để duy trì việc làm cho người lao động (Cấp tỉnh)' trong nhánh 'Nâng ngạch'."
+      },
+      {
+        "route_id": "nang_ngach-1_115483",
+        "conditions": {
+          "subdomain_key": "nang_ngach",
+          "operation_key": "de_nghi_ho_tro_tham_gia_dao_tao_boi_duong_nang_cao_trinh_do_ky_nang_nghe_cap_tinh"
+        },
+        "procedure_code": "1.115483",
+        "procedure_name": "Đề nghị hỗ trợ tham gia đào tạo, bồi dưỡng, nâng cao trình độ kỹ năng nghề (Cấp tỉnh)",
+        "why_this_route": "Route trực tiếp cho nhu cầu 'Đề nghị hỗ trợ tham gia đào tạo, bồi dưỡng, nâng cao trình độ kỹ năng nghề (Cấp tỉnh)' trong nhánh 'Nâng ngạch'."
+      },
+      {
+        "route_id": "nang_ngach-2_002821",
+        "conditions": {
+          "subdomain_key": "nang_ngach",
+          "operation_key": "ho_tro_dao_tao_nghe_cho_nguoi_lao_dong_o_khu_vuc_nong_thon_nguoi_lao_dong_la_thanh_nien"
+        },
+        "procedure_code": "2.002821",
+        "procedure_name": "Hỗ trợ đào tạo nghề cho người lao động ở khu vực nông thôn, người lao động là thanh niên",
+        "why_this_route": "Route trực tiếp cho nhu cầu 'Hỗ trợ đào tạo nghề cho người lao động ở khu vực nông thôn, người lao động là thanh niên' trong nhánh 'Nâng ngạch'."
+      }
+    ]
+  },
+  "pre_submission_checks": [
+    {
+      "field_group": "employment_support",
+      "checks": [
+        "Nhóm hỗ trợ việc làm và tuyển dụng phải làm rõ người dùng đang tìm việc, cập nhật tình trạng lao động hay xin hỗ trợ chi phí/liên kết việc làm.",
+        "Nếu là đăng ký hoặc điều chỉnh lao động, cần xác định rõ trạng thái hiện tại: có việc làm, thất nghiệp hay không tham gia hoạt động kinh tế."
+      ]
+    },
+    {
+      "field_group": "unemployment_and_skills",
+      "checks": [
+        "Nhóm thất nghiệp phải phân biệt rõ nộp hồ sơ hưởng mới, thông báo tìm việc hằng tháng, tiếp tục hưởng, tạm dừng, chấm dứt hay chuyển nơi hưởng.",
+        "Nhóm chứng chỉ và nâng cao kỹ năng phải làm rõ đây là cấp chứng chỉ, cấp lại hay xin hỗ trợ đào tạo/nâng cao kỹ năng nghề."
+      ]
+    },
+    {
+      "field_group": "tax_and_foreign_work",
+      "checks": [
+        "Nhóm thuế chỉ áp dụng cho khai thuế thu nhập cá nhân trực tiếp từ tiền lương, tiền công trong bộ workflow sạch này.",
+        "Nhóm giấy phép lao động cho người nước ngoài phải làm rõ là cấp mới, cấp lại, gia hạn hay xác nhận miễn giấy phép lao động."
+      ]
+    }
+  ],
+  "subdomain_key": "nang_ngach"
+}

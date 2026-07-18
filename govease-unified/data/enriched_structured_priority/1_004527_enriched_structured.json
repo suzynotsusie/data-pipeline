@@ -1,0 +1,89 @@
+{
+  "schema_version": "1.0",
+  "enricher_version": "0.2.0",
+  "source": {
+    "procedure_code": "1.004527",
+    "title": "Cấp lại Giấy phép làm việc cho công dân Ô-xtơ-rây-li-a tham gia Chương trình Lao động kết hợp kỳ nghỉ tại Việt Nam",
+    "group_key": "viec_lam",
+    "workflow_family": "employment_workflow",
+    "subflow": "cap_phep_lao_dong_nguoi_nuoc_ngoai"
+  },
+  "experience": {
+    "entry_label": "Hỗ trợ việc làm và lao động",
+    "overview_summary": "Thủ tục này thuộc nhóm việc làm và lao động, thường cần kiểm tra hồ sơ nghề nghiệp, đơn vị sử dụng lao động hoặc điều kiện hưởng chế độ liên quan. Kết quả thường nhận được là kết quả giải quyết theo thủ tục này. Thời gian xử lý tham khảo: 03 Ngày làm việc.",
+    "next_step_summary": "Nên xác định rõ nhu cầu lao động, hồ sơ nghề nghiệp hoặc chế độ cần giải quyết trước khi nộp. Có thể chọn kênh nộp phù hợp: Trực tiếp, Trực tuyến, Dịch vụ bưu chính. Hiện có khoảng 2 mục giấy tờ cần theo dõi trong checklist.",
+    "tone": "supportive_public_service"
+  },
+  "guidance": {
+    "highlight_documents": [
+      {
+        "bucket": "required",
+        "name": "",
+        "conditions": [],
+        "attachment_path": "Tờ khai đề nghị cấp lại Giấy phép làm việc kết hợp kỳ nghỉ (theo mẫu số 6 ban hành kèm theo Thông tư liên tịch số 21/2016/TTLT-BLĐTBXH-BCA-BNG ngày 29/6/2016) 7.Mus6BanhnhkmtheoThngtlintchs21_2016.docx"
+      },
+      {
+        "bucket": "conditional",
+        "name": "Giấy phép làm việc đã được cấp: - Trường hợp Giấy phép làm việc bị mất thì phải có xác nhận của cơ quan Công an xã, phường, thị trấn của Việt Nam hoặc cơ quan, tổ chức có thẩm quyền của nước ngoài theo quy định của pháp luật; - Trường hợp thay đổi nội dung ghi trên Giấy phép làm việc thì phải có các giấy tờ chứng minh. Các giấy tờ quy định tại khoản c.2 là 01 bản sao và xuất trình bản chính để đối chiếu hoặc 01 bản sao được chứng thực từ bản chính.",
+        "conditions": [
+          "Giấy phép làm việc đã được cấp: - Trường hợp Giấy phép làm việc bị mất thì phải có xác nhận của cơ quan Công an xã, phường, thị trấn của Việt Nam hoặc cơ quan, tổ chức có thẩm quyền của nước ngoài theo quy định của pháp luật; - Trường hợp thay đổi nội dung ghi trên Giấy phép làm việc thì phải có các giấy tờ chứng minh. Các giấy tờ quy định tại khoản c.2 là 01 bản sao và xuất trình bản chính để đối chiếu hoặc 01 bản sao được chứng thực từ bản chính."
+        ],
+        "attachment_path": null
+      }
+    ],
+    "special_cases": [
+      "Có yếu tố nước ngoài"
+    ],
+    "common_errors": [
+      "Thiếu giấy tờ hợp pháp hóa hoặc giấy tờ nhân thân của phía nước ngoài."
+    ],
+    "validation_hints": [
+      "Nên xác định trước kênh nộp hồ sơ để biết có cần bản giấy, bản điện tử hay xuất trình trực tiếp.",
+      "Có mẫu biểu đính kèm, nên kiểm tra đúng biểu mẫu trước khi nộp.",
+      "Nên xác định đúng nhóm thủ tục lao động, đơn vị liên quan và hồ sơ nghề nghiệp cần xuất trình."
+    ]
+  },
+  "intake": {
+    "candidate_input_fields": [
+      {
+        "field_id": "employment_need",
+        "label": "Nhu cầu việc làm hoặc lao động",
+        "field_type": "text",
+        "required": true
+      },
+      {
+        "field_id": "worker_or_employer_info",
+        "label": "Thông tin người lao động hoặc đơn vị sử dụng lao động",
+        "field_type": "text",
+        "required": true
+      },
+      {
+        "field_id": "submission_channel_preference",
+        "label": "Kênh nộp dự kiến",
+        "field_type": "enum",
+        "required": false
+      },
+      {
+        "field_id": "has_supporting_employment_documents",
+        "label": "Đã có hồ sơ lao động liên quan",
+        "field_type": "boolean",
+        "required": false
+      }
+    ],
+    "suggested_clarifying_questions": [
+      "Bạn đang cần giải quyết thủ tục lao động nào cho người lao động hoặc doanh nghiệp?",
+      "Hồ sơ nghề nghiệp, đơn vị sử dụng lao động hoặc yếu tố lao động nước ngoài đã rõ chưa?"
+    ]
+  },
+  "ui_hints": {
+    "primary_channel": "in_person",
+    "result_label": null,
+    "time_badge": "03 Ngày làm việc",
+    "document_count_badge": 2
+  },
+  "provenance": {
+    "generator": "workflow_domain_enricher",
+    "derivation_mode": "rule_based_semantic_enrichment",
+    "supported_group": true
+  }
+}

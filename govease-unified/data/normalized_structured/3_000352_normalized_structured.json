@@ -1,0 +1,154 @@
+{
+  "schema_version": "1.0",
+  "normalizer_version": "0.2.0",
+  "source": {
+    "procedure_code": "3.000352",
+    "title": "Thu hồi giấy phép lái xe",
+    "raw_structured_parser_version": "0.1.0",
+    "field": "Sát hạch, cấp giấy phép lái xe"
+  },
+  "procedure": {
+    "level": "Cấp bộ/ngành",
+    "procedure_type": "OTHER",
+    "target_users": [
+      "Công dân Việt Nam",
+      "Người nước ngoài"
+    ],
+    "authorities": [
+      "Cục cảnh sát giao thông"
+    ],
+    "receiving_places": []
+  },
+  "submission": {
+    "channels": [
+      "in_person"
+    ],
+    "methods": [
+      {
+        "method_id": "method_1",
+        "channel": "in_person",
+        "processing_time_text": "5 ngày làm việc",
+        "fee_text": null,
+        "description": null,
+        "is_online": false,
+        "is_postal": false,
+        "is_in_person": true
+      }
+    ],
+    "timing_summary": {
+      "unique_processing_times": [
+        "5 ngày làm việc"
+      ],
+      "method_count": 1
+    }
+  },
+  "documents": {
+    "required": [
+      {
+        "document_id": "quy_t_nh_thu_h_i_gi_y_ph_p_l_i_xe",
+        "name": "Quyết định thu hồi Giấy phép lái xe",
+        "group_name": "default",
+        "group_type": "unknown",
+        "original_count": "1",
+        "copy_count": "0",
+        "conditions": [],
+        "attachment_label": null,
+        "attachment_path": null
+      },
+      {
+        "document_id": "gi_y_ph_p_l_i_xe",
+        "name": "Giấy phép lái xe",
+        "group_name": "default",
+        "group_type": "unknown",
+        "original_count": "1",
+        "copy_count": "0",
+        "conditions": [],
+        "attachment_label": null,
+        "attachment_path": null
+      },
+      {
+        "document_id": "v_n_b_n_ngh_c_quan_qu_n_l_gi_y_ph_p_l_i_xe_thu_h_i_gi_y_ph_p_l_i_xe",
+        "name": "Văn bản đề nghị cơ quan quản lý Giấy phép lái xe thu hồi Giấy phép lái xe",
+        "group_name": "default",
+        "group_type": "unknown",
+        "original_count": "1",
+        "copy_count": "0",
+        "conditions": [],
+        "attachment_label": null,
+        "attachment_path": null
+      }
+    ],
+    "conditional": [],
+    "presented": [],
+    "notes": [],
+    "forms": [],
+    "empty_groups": [],
+    "document_count": 3
+  },
+  "process": {
+    "steps": [
+      {
+        "step_id": "step_1",
+        "title": null,
+        "content": "1.",
+        "actor": "user",
+        "channel_hint": null,
+        "time_hint": null
+      },
+      {
+        "step_id": "step_2",
+        "title": "a)",
+        "content": "a) Nộp hồ sơ TTHC: Cá nhân nộp lại giấy phép lái xe theo quyết định thu hồi hủy bỏ giấy phép lái xe.",
+        "actor": "user",
+        "channel_hint": null,
+        "time_hint": null
+      },
+      {
+        "step_id": "step_3",
+        "title": "b)",
+        "content": "b) Giải quyết TTHC: - Trong thời hạn 03 ngày làm việc, kể từ ngày phát hiện người có giấy phép lái xe thuộc một trong các trường hợp quy định tại khoản 5 Điều 62 Luật Trật tự, an toàn giao thông đường bộ, thủ trưởng cơ quan có thẩm quyền cấp giấy phép lái xe ra quyết định thu hồi để hủy bỏ giấy phép lái xe. Nội dung của quyết định nêu rõ lý do thu hồi và hủy bỏ; - Trong thời hạn 05 ngày làm việc kể từ ngày nhận được Quyết định thu hồi giấy phép lái xe, cá nhân phải nộp giấy phép lái xe bị thu hồi đến cơ quan thu hồi giấy phép lái xe và cơ quan có thẩm quyền cấp giấy phép lái xe có trách nhiệm thu hồi giấy phép lái xe đã cấp và hủy bỏ theo quy định.",
+        "actor": "authority",
+        "channel_hint": null,
+        "time_hint": "03 ngày làm việc"
+      }
+    ],
+    "step_count": 3,
+    "notes": []
+  },
+  "eligibility": {
+    "conditions": [],
+    "has_conditions": false
+  },
+  "results": {
+    "items": [
+      {
+        "name": "Giấy phép lái xe",
+        "result_code": "KQ.G01.000185",
+        "raw_text": "Giấy phép lái xe"
+      }
+    ],
+    "primary_result": {
+      "name": "Giấy phép lái xe",
+      "result_code": "KQ.G01.000185",
+      "raw_text": "Giấy phép lái xe"
+    }
+  },
+  "legal_basis": {
+    "items": [
+      {
+        "title": "Thông tư số 12/2025/TT-BCA ngày 28/02/2025 của Bộ trưởng Bộ Công an quy định về sát hạch, cấp giấy phép lái xe; cấp, sử dụng giấy phép lái xe quốc tế",
+        "code": "12/2025/TT-BCA"
+      }
+    ],
+    "count": 1
+  },
+  "attachments": [],
+  "signals": {
+    "raw_parse_warnings": [],
+    "missing_documents": false,
+    "documents_section_present": true,
+    "documents_declared_empty": false,
+    "documents_only_in_notes": false,
+    "missing_results": false
+  }
+}

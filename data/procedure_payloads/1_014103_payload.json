@@ -1,0 +1,249 @@
+{
+  "schema_version": "3.0",
+  "record_type": "public_service_procedure_payload",
+  "id": "procedure-1.014103",
+  "procedure_code": "1.014103",
+  "code": "1.014103",
+  "title": "Xác nhận đối tượng hộ thoát nghèo để miễn, giảm học phí cho học sinh",
+  "language": "vi",
+  "status": "generated_from_pipeline",
+  "field": "Giảm nghèo",
+  "group_key": "hoc_tap",
+  "workflow_family": null,
+  "subflow": null,
+  "source": {
+    "source_url": "file:///C:/Users/ku060/Downloads/VAIC%20source/data-pipeline/raw_data/1_014103/1_014103_procedure_detail.md",
+    "source_markdown_path": "C:\\Users\\ku060\\Downloads\\VAIC source\\data-pipeline\\raw_data\\1_014103\\1_014103_procedure_detail.md",
+    "normalized_payload_path": "C:\\Users\\ku060\\Downloads\\VAIC source\\data-pipeline\\govease-unified\\data\\normalized_structured\\1_014103_normalized_structured.json",
+    "enriched_payload_path": "C:\\Users\\ku060\\Downloads\\VAIC source\\data-pipeline\\govease-unified\\data\\enriched_structured_priority\\1_014103_enriched_structured.json"
+  },
+  "scope": {
+    "included": "Thủ tục này thuộc nhóm giáo dục và học tập, thường liên quan đến hồ sơ đào tạo, văn bằng hoặc điều kiện học tập của người học. Kết quả thường nhận được là Giấy xác nhận hộ thoát nghèo trong vòng 02 năm kể từ thời điểm thoát nghèo theo chuẩn thành phố. Thời gian xử lý tham khảo: 1 ngày làm việc.",
+    "not_included": []
+  },
+  "agency": {
+    "executing_agency": null,
+    "submission_place": "Trung tâm Phục vụ hành chính công cấp xã",
+    "receiving_places": [
+      "Trung tâm Phục vụ hành chính công cấp xã"
+    ]
+  },
+  "target_users": [
+    "Công dân Việt Nam"
+  ],
+  "submission_methods": [
+    {
+      "code": "IN_PERSON",
+      "label": "Trực tiếp",
+      "processing_time": "1 ngày làm việc",
+      "fee": null,
+      "description": "Trong ngày làm việc"
+    }
+  ],
+  "processing_note": "Thời gian xử lý tham chiếu: 1 ngày làm việc. Nên rà trước thông tin người học, cơ sở đào tạo và loại kết quả cần xin xác nhận hoặc cấp lại. Có thể chọn kênh nộp phù hợp: Trực tiếp. Hiện có 1 mục giấy tờ cần theo dõi trong checklist.",
+  "documents": {
+    "normally_required": [
+      {
+        "name": "Đơn đề nghị miễn giảm học phí và Giấy xác nhận hộ thoát nghèo trong vòng 02 năm kể từ thời điểm thoát nghèo theo chuẩn thành phố",
+        "quantity": "1 bản chính, 0 bản sao",
+        "notes": [],
+        "group": "default",
+        "attachment_path": null
+      }
+    ],
+    "conditional": [],
+    "forms": [],
+    "presented": [],
+    "notes": [],
+    "summary": [
+      {
+        "group": "default",
+        "name": "Đơn đề nghị miễn giảm học phí và Giấy xác nhận hộ thoát nghèo trong vòng 02 năm kể từ thời điểm thoát nghèo theo chuẩn thành phố",
+        "quantity": "1 bản chính, 0 bản sao",
+        "notes": [],
+        "attachment_path": null
+      }
+    ]
+  },
+  "steps": [
+    {
+      "order": 1,
+      "title": "Bước 1",
+      "description": "1.",
+      "example": null
+    },
+    {
+      "order": 2,
+      "title": "Bước 1:",
+      "description": "Bước 1: Cá nhân hoàn thiện hồ sơ theo hướng dẫn.",
+      "example": null
+    },
+    {
+      "order": 3,
+      "title": "Bước 2:",
+      "description": "Bước 2: Bộ phận Trung tâm phục vụ hành chính công cấp xã kiểm tra tính hợp lệ đầy đủ của hồ sơ; chuyển cho công chức chuyên môn.",
+      "example": null
+    },
+    {
+      "order": 4,
+      "title": "Bước 3:",
+      "description": "Bước 3: Công chức chuyên môn xử lý hồ sơ, trình lãnh đạo ký xác nhận, chuyển kết quả Trung tâm phục vụ hành chính công cấp xã để trao cho cá nhân.",
+      "example": null
+    }
+  ],
+  "input_fields": [
+    {
+      "field": "learner_full_name",
+      "label": "Tên người học",
+      "type": "string",
+      "required": true
+    },
+    {
+      "field": "education_record_type",
+      "label": "Loại hồ sơ học tập cần xử lý",
+      "type": "string",
+      "required": true
+    },
+    {
+      "field": "education_institution",
+      "label": "Cơ sở đào tạo liên quan",
+      "type": "string",
+      "required": false
+    },
+    {
+      "field": "submission_channel_preference",
+      "label": "Kênh nộp dự kiến",
+      "type": "enum",
+      "required": false,
+      "options": [
+        "Trực tiếp"
+      ]
+    }
+  ],
+  "validation_rules": [
+    {
+      "id": "required-1",
+      "severity": "error",
+      "field": "learner_full_name",
+      "rule": "Trường bắt buộc phải có dữ liệu hợp lệ trước khi nộp.",
+      "message": "Thiếu trường bắt buộc: Tên người học."
+    },
+    {
+      "id": "required-2",
+      "severity": "error",
+      "field": "education_record_type",
+      "rule": "Trường bắt buộc phải có dữ liệu hợp lệ trước khi nộp.",
+      "message": "Thiếu trường bắt buộc: Loại hồ sơ học tập cần xử lý."
+    },
+    {
+      "id": "hint-1",
+      "severity": "warning",
+      "field": "general",
+      "rule": "Nên xác định trước kênh nộp hồ sơ để biết có cần bản giấy, bản điện tử hay xuất trình trực tiếp.",
+      "message": "Nên xác định trước kênh nộp hồ sơ để biết có cần bản giấy, bản điện tử hay xuất trình trực tiếp."
+    },
+    {
+      "id": "hint-2",
+      "severity": "warning",
+      "field": "general",
+      "rule": "Nên rà lại thông tin người học, cơ sở đào tạo và loại xác nhận hoặc văn bằng cần xin.",
+      "message": "Nên rà lại thông tin người học, cơ sở đào tạo và loại xác nhận hoặc văn bằng cần xin."
+    }
+  ],
+  "common_errors": [],
+  "clarifying_questions": [
+    {
+      "id": "clarify_1",
+      "question": "Bạn đang cần xử lý hồ sơ học tập, văn bằng hay xác nhận nào?",
+      "purpose": "workflow_intake"
+    },
+    {
+      "id": "clarify_2",
+      "question": "Người học và cơ sở đào tạo liên quan đã xác định rõ chưa?",
+      "purpose": "workflow_intake"
+    }
+  ],
+  "legal_basis": [
+    {
+      "title": "Thông tư số 13/2025/TT-BNNMT ngày 19/6/2025 của Bộ Nông nghiệp và Môi trường Quy định phân định thẩm quyền quản lý nhà nước trong lĩnh vực kinh tế hợp tác và phát triển nông thôn và lĩnh vực giảm nghèo",
+      "code": "13/2025/TT-BNNMT"
+    },
+    {
+      "title": "75/2021/NQ-HĐND-Quy định về chính sách hỗ trợ hộ nghèo, hộ cận nghèo, hộ thoát nghèo trên địa bàn thành phố Đà Nẵng",
+      "code": "75/2021/NQ-HĐND"
+    },
+    {
+      "title": "Hướng dẫn phương pháp rà soát, phân loại hộ nghèo, hộ cận nghèo; xác định thu nhập của hộ làm nông nghiệp, lâm nghiệp, ngư nghiệp, diêm nghiệp có mức sống trung bình giai đoạn 2022-2025 và mẫu biểu báo cáo",
+      "code": "Thông tư 07/2021/TT-BLĐTBXH"
+    },
+    {
+      "title": "quy định quy trình rà soát hộ nghèo, hộ cận nghèo hằng năm và quy trình xác định hộ làm nông nghiệp, lâm nghiệp, ngư nghiệp và diêm nghiệp có mức sống trung bình giai đoạn 2022-2025",
+      "code": "Quyết định số 24/2021/QĐ-TTg"
+    }
+  ],
+  "legal_bases": [
+    {
+      "title": "Thông tư số 13/2025/TT-BNNMT ngày 19/6/2025 của Bộ Nông nghiệp và Môi trường Quy định phân định thẩm quyền quản lý nhà nước trong lĩnh vực kinh tế hợp tác và phát triển nông thôn và lĩnh vực giảm nghèo",
+      "code": "13/2025/TT-BNNMT"
+    },
+    {
+      "title": "75/2021/NQ-HĐND-Quy định về chính sách hỗ trợ hộ nghèo, hộ cận nghèo, hộ thoát nghèo trên địa bàn thành phố Đà Nẵng",
+      "code": "75/2021/NQ-HĐND"
+    },
+    {
+      "title": "Hướng dẫn phương pháp rà soát, phân loại hộ nghèo, hộ cận nghèo; xác định thu nhập của hộ làm nông nghiệp, lâm nghiệp, ngư nghiệp, diêm nghiệp có mức sống trung bình giai đoạn 2022-2025 và mẫu biểu báo cáo",
+      "code": "Thông tư 07/2021/TT-BLĐTBXH"
+    },
+    {
+      "title": "quy định quy trình rà soát hộ nghèo, hộ cận nghèo hằng năm và quy trình xác định hộ làm nông nghiệp, lâm nghiệp, ngư nghiệp và diêm nghiệp có mức sống trung bình giai đoạn 2022-2025",
+      "code": "Quyết định số 24/2021/QĐ-TTg"
+    }
+  ],
+  "faq": [
+    {
+      "question": "Có thể nộp qua kênh nào?",
+      "answer": "Các kênh hiện có: Trực tiếp."
+    },
+    {
+      "question": "Thời gian xử lý tham chiếu là bao lâu?",
+      "answer": "Thời gian xử lý tham chiếu hiện có là 1 ngày làm việc."
+    },
+    {
+      "question": "Kết quả chính của thủ tục là gì?",
+      "answer": "Kết quả chính được trích xuất là Giấy xác nhận hộ thoát nghèo trong vòng 02 năm kể từ thời điểm thoát nghèo theo chuẩn thành phố."
+    }
+  ],
+  "guidance": {
+    "highlight_documents": [
+      {
+        "bucket": "required",
+        "name": "Đơn đề nghị miễn giảm học phí và Giấy xác nhận hộ thoát nghèo trong vòng 02 năm kể từ thời điểm thoát nghèo theo chuẩn thành phố",
+        "conditions": [],
+        "attachment_path": null
+      }
+    ],
+    "special_cases": [],
+    "common_errors": [],
+    "validation_hints": [
+      "Nên xác định trước kênh nộp hồ sơ để biết có cần bản giấy, bản điện tử hay xuất trình trực tiếp.",
+      "Nên rà lại thông tin người học, cơ sở đào tạo và loại xác nhận hoặc văn bằng cần xin."
+    ]
+  },
+  "next_steps": {
+    "summary": "Nên rà trước thông tin người học, cơ sở đào tạo và loại kết quả cần xin xác nhận hoặc cấp lại. Có thể chọn kênh nộp phù hợp: Trực tiếp. Hiện có 1 mục giấy tờ cần theo dõi trong checklist.",
+    "time_badge": "1 ngày làm việc",
+    "result_label": "Giấy xác nhận hộ thoát nghèo trong vòng 02 năm kể từ thời điểm thoát nghèo theo chuẩn thành phố",
+    "primary_channel": "in_person",
+    "channels": [
+      "in_person"
+    ]
+  },
+  "notes": [],
+  "provenance": {
+    "pipeline": "raw->structured->normalized->enriched->ui_api_payload",
+    "normalizer_version": "0.2.0",
+    "enricher_version": "0.2.0",
+    "mapping_notes": "excluded_from_clean_workflow_dataset",
+    "supported_group": true
+  }
+}

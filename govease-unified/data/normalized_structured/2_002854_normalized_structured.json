@@ -1,0 +1,183 @@
+{
+  "schema_version": "1.0",
+  "normalizer_version": "0.2.0",
+  "source": {
+    "procedure_code": "2.002854",
+    "title": "Chuyển trường và tiếp nhận học sinh",
+    "raw_structured_parser_version": "0.1.0",
+    "field": "Giáo dục và Đào tạo thuộc hệ thống giáo dục quốc dân"
+  },
+  "procedure": {
+    "level": "Cơ quan khác",
+    "procedure_type": "NOT_ASSIGNED_REGULATION",
+    "target_users": [
+      "Công dân Việt Nam",
+      "Người nước ngoài",
+      "Người Việt Nam định cư ở nước ngoài"
+    ],
+    "authorities": [],
+    "receiving_places": []
+  },
+  "submission": {
+    "channels": [
+      "in_person",
+      "online",
+      "postal"
+    ],
+    "methods": [
+      {
+        "method_id": "method_1",
+        "channel": "in_person",
+        "processing_time_text": "8 ngày làm việc",
+        "fee_text": null,
+        "description": "- Chuyển trường trong cùng tỉnh, thành phố: 5 ngày làm việc.<br>- Chuyển trường từ tỉnh, thành phố khác: 8 ngày làm việc.",
+        "is_online": false,
+        "is_postal": false,
+        "is_in_person": true
+      },
+      {
+        "method_id": "method_2",
+        "channel": "online",
+        "processing_time_text": "8 ngày làm việc",
+        "fee_text": null,
+        "description": "- Chuyển trường trong cùng tỉnh, thành phố: 5 ngày làm việc.<br>- Chuyển trường từ tỉnh, thành phố khác: 8 ngày làm việc.",
+        "is_online": true,
+        "is_postal": false,
+        "is_in_person": false
+      },
+      {
+        "method_id": "method_3",
+        "channel": "postal",
+        "processing_time_text": "8 ngày làm việc",
+        "fee_text": null,
+        "description": "- Chuyển trường trong cùng tỉnh, thành phố: 5 ngày làm việc.<br>- Chuyển trường từ tỉnh, thành phố khác: 8 ngày làm việc.",
+        "is_online": false,
+        "is_postal": true,
+        "is_in_person": false
+      }
+    ],
+    "timing_summary": {
+      "unique_processing_times": [
+        "8 ngày làm việc"
+      ],
+      "method_count": 3
+    }
+  },
+  "documents": {
+    "required": [
+      {
+        "document_id": "n_xin_chuy_n_tr_ng_c_a_h_c_sinh_ho_c_cha_m_h_c_sinh_b_n_i_n_t_ho_c_b_n_gi_y_trong_k_khai_c_c_th_ng_tin_c_n_thi_t_li_n_quan_t_i_h_c_sinh",
+        "name": "Đơn xin chuyển trường của học sinh hoặc cha mẹ học sinh (bản điện tử hoặc bản giấy trong đó kê khai các thông tin cần thiết liên quan tới học sinh)",
+        "group_name": "default",
+        "group_type": "unknown",
+        "original_count": "1",
+        "copy_count": "0",
+        "conditions": [],
+        "attachment_label": null,
+        "attachment_path": null
+      },
+      {
+        "document_id": "b_ng_t_ng_h_p_k_t_qu_nh_gi_r_n_luy_n_v_h_c_t_p_c_a_h_c_sinh_theo_quy_nh",
+        "name": "Bảng tổng hợp kết quả đánh giá rèn luyện và học tập của học sinh theo quy định",
+        "group_name": "default",
+        "group_type": "unknown",
+        "original_count": "1",
+        "copy_count": "0",
+        "conditions": [],
+        "attachment_label": null,
+        "attachment_path": null
+      }
+    ],
+    "conditional": [
+      {
+        "document_id": "k_ho_ch_gi_o_d_c_c_nh_n_i_v_i_h_c_sinh_khuy_t_t_t_n_u_c",
+        "name": "Kế hoạch giáo dục cá nhân đối với học sinh khuyết tật (nếu có).",
+        "group_name": "default",
+        "group_type": "unknown",
+        "original_count": "1",
+        "copy_count": "0",
+        "conditions": [
+          "Kế hoạch giáo dục cá nhân đối với học sinh khuyết tật (nếu có)."
+        ],
+        "attachment_label": null,
+        "attachment_path": null
+      }
+    ],
+    "presented": [],
+    "notes": [],
+    "forms": [],
+    "empty_groups": [],
+    "document_count": 3
+  },
+  "process": {
+    "steps": [
+      {
+        "step_id": "step_1",
+        "title": null,
+        "content": "1. - Học sinh hoặc cha mẹ học sinh nộp đơn xin chuyển trường cho nhà trường nơi chuyển đến trên Cổng dịch vụ công. Trường hợp không thực hiện được việc nộp đơn và khai báo thông tin chuyển trường trên Cổng dịch vụ công do sự cố kỹ thuật hoặc điều kiện khách quan khác, học sinh hoặc cha mẹ học sinh nộp đơn xin chuyển trường cho nhà trường nơi chuyển đến bằng hình thức nộp trực tiếp, nộp trực tuyến hoặc nộp qua đường bưu điện;",
+        "actor": "user",
+        "channel_hint": "trực tuyến",
+        "time_hint": null
+      },
+      {
+        "step_id": "step_2",
+        "title": null,
+        "content": "- Nhà trường nơi học sinh chuyển đến tiếp nhận hồ sơ học sinh, kiểm tra đối chiếu các thông tin để xem xét, quyết định theo quy định của Giám đốc Sở Giáo dục và Đào tạo; thông báo cho học sinh kết quả được chấp nhận vào nhập học tại trường hoặc không được chấp nhận. Đối với việc chuyển trường trong cùng tỉnh, thành phố, trong thời gian không quá 05 ngày làm việc kể từ ngày tiếp nhận hồ sơ, hiệu trưởng trường nơi chuyển đến có ý kiến đồng ý về việc tiếp nhận học sinh. Trường hợp không đồng ý phải ghi rõ lý do vào đơn và trả lại đơn cho học sinh hoặc cha mẹ học sinh theo hình thức đã tiếp nhận đơn;",
+        "actor": "user",
+        "channel_hint": null,
+        "time_hint": "05 ngày làm việc"
+      },
+      {
+        "step_id": "step_3",
+        "title": null,
+        "content": "- Hiệu trưởng tổ chức trao đổi, khảo sát, tư vấn và tiếp nhận xếp học sinh vào lớp.",
+        "actor": "user",
+        "channel_hint": null,
+        "time_hint": null
+      }
+    ],
+    "step_count": 3,
+    "notes": []
+  },
+  "eligibility": {
+    "conditions": [
+      "a) Học sinh chuyển nơi cư trú theo cha hoặc mẹ;",
+      "b) Học sinh có hoàn cảnh đặc biệt khó khăn về gia đình hoặc có lý do thực sự chính đáng để phải chuyển trường;",
+      "c) Việc chuyển trường từ trường phổ thông bình thường sang trường phổ thông chuyên biệt (phổ thông dân tộc nội trú; trường trung học phổ thông chuyên; trường phổ thông nội trú; trường phổ thông năng khiếu nghệ thuật, thể dục, thể thao) thực hiện theo quy chế riêng của trường chuyên biệt đó;",
+      "d) Việc chuyển trường từ trường trung học phổ thông tư thục sang trường trung học phổ thông công lập do Giám đốc Sở Giáo dục và Đào tạo quy định cụ thể bảo đảm khách quan, công bằng, minh bạch và thực hiện nhiệm vụ phổ cập giáo dục theo quy định trên địa bàn."
+    ],
+    "has_conditions": true
+  },
+  "results": {
+    "items": [
+      {
+        "name": "Phê duyệt của Hiệu trưởng nơi chuyển đến về việc tiếp nhận học sinh",
+        "result_code": "KQ.G03.000497",
+        "raw_text": "Phê duyệt của Hiệu trưởng nơi chuyển đến về việc tiếp nhận học sinh"
+      }
+    ],
+    "primary_result": {
+      "name": "Phê duyệt của Hiệu trưởng nơi chuyển đến về việc tiếp nhận học sinh",
+      "result_code": "KQ.G03.000497",
+      "raw_text": "Phê duyệt của Hiệu trưởng nơi chuyển đến về việc tiếp nhận học sinh"
+    }
+  },
+  "legal_basis": {
+    "items": [
+      {
+        "title": "Ban hành Điều lệ trường tiểu học, trường trung học cơ sở, trường trung học phổ thông và trường phổ thông có nhiều cấp học",
+        "code": "15/2026/TT-BGDĐT"
+      }
+    ],
+    "count": 1
+  },
+  "attachments": [],
+  "signals": {
+    "raw_parse_warnings": [],
+    "missing_documents": false,
+    "documents_section_present": true,
+    "documents_declared_empty": false,
+    "documents_only_in_notes": false,
+    "missing_results": false
+  }
+}

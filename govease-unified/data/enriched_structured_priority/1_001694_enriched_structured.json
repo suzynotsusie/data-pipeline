@@ -1,0 +1,120 @@
+{
+  "schema_version": "1.0",
+  "enricher_version": "0.2.0",
+  "source": {
+    "procedure_code": "1.001694",
+    "title": "Cử đi học nước ngoài",
+    "group_key": "hoc_tap",
+    "workflow_family": "education_study_workflow",
+    "subflow": "hoc_tap_o_nuoc_ngoai_bang_ngan_sach"
+  },
+  "experience": {
+    "entry_label": "Hỗ trợ giáo dục và học tập",
+    "overview_summary": "Thủ tục này thuộc nhóm giáo dục và học tập, thường liên quan đến hồ sơ đào tạo, văn bằng hoặc điều kiện học tập của người học. Kết quả thường nhận được là Quyết định cử đi học nước ngoài hoặc công văn thông báo kết quả kết quả trúng tuyển học bổng (đối với học bổng khác). Thời gian xử lý tham khảo: 30 ngày làm việc.",
+    "next_step_summary": "Nên rà trước thông tin người học, cơ sở đào tạo và loại kết quả cần xin xác nhận hoặc cấp lại. Có thể chọn kênh nộp phù hợp: Trực tiếp, Trực tuyến, Dịch vụ bưu chính. Hiện có khoảng 6 mục giấy tờ cần theo dõi trong checklist.",
+    "tone": "supportive_public_service"
+  },
+  "guidance": {
+    "highlight_documents": [
+      {
+        "bucket": "required",
+        "name": "Bản sao hợp lệ chứng chỉ ngoại ngữ tiếng Anh, Pháp hoặc ngoại ngữ khác đạt yêu cầu về điểm (hoặc trình độ) theo quy định của Bộ Giáo dục và Đào tạo và của cơ sở giáo dục nước ngoài",
+        "conditions": [],
+        "attachment_path": null
+      },
+      {
+        "bucket": "required",
+        "name": "Bản cam kết thực hiện trách nhiệm của du học sinh (theo mẫu số 01, 02, Phụ lục III ban hành kèm theo Thông tư số 18/2022/TT-BGDĐT ngày 15/12/2022 của Bộ trưởng Bộ Giáo dục và Đào tạo sửa đổi, bổ sung một số điều của Quy chế tuyển sinh đi học nước ngoài ban hành kèm theo Thông tư số 06/2016/TT-BGDĐT ngày 21/3/2016 của Bộ trưởng Bộ Giáo dục và Đào tạo)",
+        "conditions": [],
+        "attachment_path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/1_001694/Mau%20Ban%20Cam%20ket_CB%20kem%20QD922.docx"
+      },
+      {
+        "bucket": "required",
+        "name": "Văn bản của phía nước ngoài đồng ý tiếp nhận đi học diện Hiệp định (đối với ứng viên trúng tuyển học bổng Hiệp định)",
+        "conditions": [],
+        "attachment_path": null
+      },
+      {
+        "bucket": "conditional",
+        "name": "Các giấy tờ khác theo quy định của từng chương trình học bổng (nếu có)",
+        "conditions": [
+          "Các giấy tờ khác theo quy định của từng chương trình học bổng (nếu có)"
+        ],
+        "attachment_path": null
+      },
+      {
+        "bucket": "conditional",
+        "name": "Giấy khám sức khỏe (có thời hạn sử dụng 06 tháng kể từ ngày cấp) của cơ sở y tế có thẩm quyền xác nhận đủ điều kiện về sức khỏe để đi học nước ngoài kèm theo các bản xét nghiệm không nhiễm HIV, viêm gan B, lao hoặc các bệnh truyền nhiễm khác (theo yêu cầu của nước sẽ đến học hoặc nhà tài trợ); kết quả xét nghiệm không có thai (đối với ứng viên nữ)(Cơ quan giải quyết TTHC khai thác, sử dụng thông tin đã có trong Cơ sở dữ liệu nền tảng sổ sức khỏe điện tử để thay thế thành phần hồ sơ Giấy khám sức khỏe của cơ sở y tế cấp tỉnh, thành phố trực thuộc trung ương. Trường hợp Cơ quan giải quyết TTHC không khai thác được hoặc khai thác không đầy đủ dữ liệu về Giấy khám sức khỏe trong Cơ sở dữ liệu nền tảng sổ sức khỏe điện tử, Cơ quan giải quyết TTHC yêu cầu ứng viên nộp bổ sung Giấy khám sức khỏe của cơ sở y tế cấp tỉnh, thành phố trực thuộc trung ương theo quy định tại Điều 8 Nghị quyết 66.7/2025/NQ-CP ngày 15/11/2025 của Chính phủ quy định cắt giảm, đơn giản hóa thủ tục hành chính dựa trên dữ liệu)",
+        "conditions": [
+          "Giấy khám sức khỏe (có thời hạn sử dụng 06 tháng kể từ ngày cấp) của cơ sở y tế có thẩm quyền xác nhận đủ điều kiện về sức khỏe để đi học nước ngoài kèm theo các bản xét nghiệm không nhiễm HIV, viêm gan B, lao hoặc các bệnh truyền nhiễm khác (theo yêu cầu của nước sẽ đến học hoặc nhà tài trợ); kết quả xét nghiệm không có thai (đối với ứng viên nữ)(Cơ quan giải quyết TTHC khai thác, sử dụng thông tin đã có trong Cơ sở dữ liệu nền tảng sổ sức khỏe điện tử để thay thế thành phần hồ sơ Giấy khám sức khỏe của cơ sở y tế cấp tỉnh, thành phố trực thuộc trung ương. Trường hợp Cơ quan giải quyết TTHC không khai thác được hoặc khai thác không đầy đủ dữ liệu về Giấy khám sức khỏe trong Cơ sở dữ liệu nền tảng sổ sức khỏe điện tử, Cơ quan giải quyết TTHC yêu cầu ứng viên nộp bổ sung Giấy khám sức khỏe của cơ sở y tế cấp tỉnh, thành phố trực thuộc trung ương theo quy định tại Điều 8 Nghị quyết 66.7/2025/NQ-CP ngày 15/11/2025 của Chính phủ quy định cắt giảm, đơn giản hóa thủ tục hành chính dựa trên dữ liệu)"
+        ],
+        "attachment_path": null
+      },
+      {
+        "bucket": "conditional",
+        "name": "Bản dịch hợp lệ văn bản thông báo tiếp nhận chính thức của cơ sở giáo dục nước ngoài trong đó có đầy đủ thông tin về bậc học, ngành học, thời gian học, thời điểm nhập học, mức học phí, bảo hiểm y tế và các loại phí bắt buộc khác liên quan đến khóa học; thông báo về học bổng hoặc hỗ trợ tài chính của cơ sở giáo dục hoặc cơ quan/tổ chức/chính phủ nước ngoài đã cấp (nếu có) (đối với ứng viên trúng tuyển học bổng ngân sách Nhà nước)",
+        "conditions": [
+          "Bản dịch hợp lệ văn bản thông báo tiếp nhận chính thức của cơ sở giáo dục nước ngoài trong đó có đầy đủ thông tin về bậc học, ngành học, thời gian học, thời điểm nhập học, mức học phí, bảo hiểm y tế và các loại phí bắt buộc khác liên quan đến khóa học; thông báo về học bổng hoặc hỗ trợ tài chính của cơ sở giáo dục hoặc cơ quan/tổ chức/chính phủ nước ngoài đã cấp (nếu có) (đối với ứng viên trúng tuyển học bổng ngân sách Nhà nước)"
+        ],
+        "attachment_path": null
+      }
+    ],
+    "special_cases": [
+      "Có yếu tố nước ngoài",
+      "Có thể cần đối chiếu quyền lợi bảo hiểm hoặc tuyến chuyên môn"
+    ],
+    "common_errors": [
+      "Thiếu giấy tờ hợp pháp hóa hoặc giấy tờ nhân thân của phía nước ngoài.",
+      "Điền sai mẫu tờ khai hoặc chọn sai biểu mẫu đi kèm.",
+      "Sai nhóm đối tượng tham gia hoặc thông tin quyền lợi bảo hiểm y tế."
+    ],
+    "validation_hints": [
+      "Nên xác định trước kênh nộp hồ sơ để biết có cần bản giấy, bản điện tử hay xuất trình trực tiếp.",
+      "Có mẫu biểu đính kèm, nên kiểm tra đúng biểu mẫu trước khi nộp.",
+      "Nên rà lại thông tin người học, cơ sở đào tạo và loại xác nhận hoặc văn bằng cần xin."
+    ]
+  },
+  "intake": {
+    "candidate_input_fields": [
+      {
+        "field_id": "learner_full_name",
+        "label": "Tên người học",
+        "field_type": "text",
+        "required": true
+      },
+      {
+        "field_id": "education_record_type",
+        "label": "Loại hồ sơ học tập cần xử lý",
+        "field_type": "text",
+        "required": true
+      },
+      {
+        "field_id": "education_institution",
+        "label": "Cơ sở đào tạo liên quan",
+        "field_type": "text",
+        "required": false
+      },
+      {
+        "field_id": "submission_channel_preference",
+        "label": "Kênh nộp dự kiến",
+        "field_type": "enum",
+        "required": false
+      }
+    ],
+    "suggested_clarifying_questions": [
+      "Bạn đang cần xử lý hồ sơ học tập, văn bằng hay xác nhận nào?",
+      "Người học và cơ sở đào tạo liên quan đã xác định rõ chưa?"
+    ]
+  },
+  "ui_hints": {
+    "primary_channel": "online",
+    "result_label": "Quyết định cử đi học nước ngoài hoặc công văn thông báo kết quả kết quả trúng tuyển học bổng (đối với học bổng khác)",
+    "time_badge": "30 ngày làm việc",
+    "document_count_badge": 6
+  },
+  "provenance": {
+    "generator": "workflow_domain_enricher",
+    "derivation_mode": "rule_based_semantic_enrichment",
+    "supported_group": true
+  }
+}

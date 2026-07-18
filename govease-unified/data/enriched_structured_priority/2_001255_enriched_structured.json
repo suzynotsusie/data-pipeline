@@ -1,0 +1,93 @@
+{
+  "schema_version": "1.0",
+  "enricher_version": "0.2.0",
+  "source": {
+    "procedure_code": "2.001255",
+    "title": "Đăng ký lại việc nuôi con nuôi trong nước",
+    "group_key": "hon_nhan_gia_dinh",
+    "workflow_family": "marriage_family_workflow",
+    "subflow": "nhan_con_nuoi"
+  },
+  "experience": {
+    "entry_label": "Hỗ trợ hộ tịch và gia đình",
+    "overview_summary": "Thủ tục này thuộc nhóm hộ tịch gia đình, thường yêu cầu đối chiếu thông tin nhân thân và tình trạng hôn nhân của các bên. Kết quả thường nhận được là kết quả giải quyết theo thủ tục này. Thời gian xử lý tham khảo: 5 Ngày làm việc.",
+    "next_step_summary": "Nên rà trước giấy tờ nhân thân của hai bên và các điều kiện đặc biệt nếu có yếu tố nước ngoài hoặc ủy quyền. Hiện có khoảng 2 mục giấy tờ cần theo dõi trong checklist.",
+    "tone": "supportive_public_service"
+  },
+  "guidance": {
+    "highlight_documents": [
+      {
+        "bucket": "required",
+        "name": "",
+        "conditions": [],
+        "attachment_path": "Tờ khai đăng ký lại việc nuôi con nuôi. Tờ khai phải có cam đoan của người yêu cầu đăng ký lại về tính trung thực của việc đăng ký nuôi con nuôi trước đó và có chữ ký của ít nhất hai người làm chứng. 7.Tkhaingklivicnuiconnui.doc"
+      },
+      {
+        "bucket": "conditional",
+        "name": "Lưu ý: Khi nộp hồ sơ, trường hợp phải chứng minh nơi thường trú của cha mẹ nuôi và con nuôi, cán bộ, công chức, viên chức, cá nhân được giao trách nhiệm tiếp nhận, giải quyết hồ sơ phải khai thác, sử dụng thông tin về cư trú của công dân trong Cơ sở dữ liệu quốc gia về dân cư theo các phương thức nêu tại khoản 2 Điều 14 Nghị định số 104/2022/NĐ-CP ngày 21/12/2022 của Chính phủ. Trường hợp không thể khai thác được thông tin cư trú của công dân theo các phương thức trên thì có thể yêu cầu người nộp hồ sơ nộp bản sao hoặc xuất trình một trong các giấy tờ chứng minh thông tin về cư trú, bao gồm: Thẻ căn cước; Giấy xác nhận thông tin về cư trú, Giấy thông báo số định danh cá nhân và thông tin công dân trong Cơ sở dữ liệu quốc gia về dân cư.",
+        "conditions": [
+          "Lưu ý: Khi nộp hồ sơ, trường hợp phải chứng minh nơi thường trú của cha mẹ nuôi và con nuôi, cán bộ, công chức, viên chức, cá nhân được giao trách nhiệm tiếp nhận, giải quyết hồ sơ phải khai thác, sử dụng thông tin về cư trú của công dân trong Cơ sở dữ liệu quốc gia về dân cư theo các phương thức nêu tại khoản 2 Điều 14 Nghị định số 104/2022/NĐ-CP ngày 21/12/2022 của Chính phủ. Trường hợp không thể khai thác được thông tin cư trú của công dân theo các phương thức trên thì có thể yêu cầu người nộp hồ sơ nộp bản sao hoặc xuất trình một trong các giấy tờ chứng minh thông tin về cư trú, bao gồm: Thẻ căn cước; Giấy xác nhận thông tin về cư trú, Giấy thông báo số định danh cá nhân và thông tin công dân trong Cơ sở dữ liệu quốc gia về dân cư."
+        ],
+        "attachment_path": null
+      }
+    ],
+    "special_cases": [
+      "Có kiểm tra dữ liệu cư trú/định danh"
+    ],
+    "common_errors": [],
+    "validation_hints": [
+      "Nên xác định trước kênh nộp hồ sơ để biết có cần bản giấy, bản điện tử hay xuất trình trực tiếp.",
+      "Có mẫu biểu đính kèm, nên kiểm tra đúng biểu mẫu trước khi nộp.",
+      "Thông tin hộ tịch giữa các giấy tờ phải thống nhất về họ tên, ngày sinh và quan hệ liên quan."
+    ]
+  },
+  "intake": {
+    "candidate_input_fields": [
+      {
+        "field_id": "party_one_full_name",
+        "label": "Người thứ nhất",
+        "field_type": "text",
+        "required": true
+      },
+      {
+        "field_id": "party_two_full_name",
+        "label": "Người thứ hai",
+        "field_type": "text",
+        "required": true
+      },
+      {
+        "field_id": "has_foreign_element",
+        "label": "Có yếu tố nước ngoài",
+        "field_type": "boolean",
+        "required": true
+      },
+      {
+        "field_id": "current_marital_status_docs",
+        "label": "Có giấy tờ chứng minh tình trạng hôn nhân",
+        "field_type": "boolean",
+        "required": true
+      },
+      {
+        "field_id": "submission_at_border_area",
+        "label": "Nộp tại khu vực biên giới",
+        "field_type": "boolean",
+        "required": false
+      }
+    ],
+    "suggested_clarifying_questions": [
+      "Hai bên đã có đủ giấy tờ nhân thân và tình trạng hôn nhân chưa?",
+      "Hồ sơ có yếu tố nước ngoài, khu vực biên giới hoặc ủy quyền không?"
+    ]
+  },
+  "ui_hints": {
+    "primary_channel": "in_person",
+    "result_label": null,
+    "time_badge": "5 Ngày làm việc",
+    "document_count_badge": 2
+  },
+  "provenance": {
+    "generator": "workflow_domain_enricher",
+    "derivation_mode": "rule_based_semantic_enrichment",
+    "supported_group": true
+  }
+}

@@ -1,0 +1,116 @@
+{
+  "schema_version": "1.0",
+  "enricher_version": "0.2.0",
+  "source": {
+    "procedure_code": "1.014039",
+    "title": "Cấp giấy đăng ký lưu hành thuốc cổ truyền",
+    "group_key": "suc_khoe_y_te",
+    "workflow_family": null,
+    "subflow": null
+  },
+  "experience": {
+    "entry_label": "Hỗ trợ y tế và bảo hiểm",
+    "overview_summary": "Thủ tục này thuộc nhóm y tế, thường cần đối chiếu thông tin người bệnh, đơn vị tiếp nhận hoặc quyền lợi chuyên ngành. Kết quả thường nhận được là Giấy đăng ký lưu hành thuốc cổ truyền. Thời gian xử lý tham khảo: 12 ngày.",
+    "next_step_summary": "Nên xác định rõ đối tượng tham gia, quyền lợi hoặc nhu cầu điều chỉnh hồ sơ y tế trước khi nộp. Có thể chọn kênh nộp phù hợp: Trực tiếp, Trực tuyến, Dịch vụ bưu chính. Hiện có khoảng 27 mục giấy tờ cần theo dõi trong checklist.",
+    "tone": "supportive_public_service"
+  },
+  "guidance": {
+    "highlight_documents": [
+      {
+        "bucket": "required",
+        "name": "1. Đơn đề nghị cấp Giấy đăng ký lưu hành thuốc cổ truyền theo quy định tại Mẫu số 02A Phụ lục I ban hành kèm theo Thông tư số 29/2025/TT-BYT.",
+        "conditions": [],
+        "attachment_path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/1_014039/Mu.docx"
+      },
+      {
+        "bucket": "required",
+        "name": "7. Bản sao tài liệu pháp lý của cơ sở sản xuất tá dược, vỏ nang, vị thuốc cổ truyền, dược liệu, nguyên liệu sản xuất thuốc cổ truyền từ dược liệu theo quy định tại khoản 6 và khoản 7 Điều 5 Thông tư số 29/2025/TT-BYT.",
+        "conditions": [],
+        "attachment_path": null
+      },
+      {
+        "bucket": "required",
+        "name": "b) Bản sao Giấy phép sản xuất thuốc do cơ quan nhà nước có thẩm quyền nước ngoài cấp; Giấy phép thành lập văn phòng đại diện tại Việt Nam và CPP đối với cơ sở sản xuất nước ngoài.",
+        "conditions": [],
+        "attachment_path": null
+      },
+      {
+        "bucket": "required",
+        "name": "5. Mẫu nhãn thuốc cổ truyền.",
+        "conditions": [],
+        "attachment_path": null
+      },
+      {
+        "bucket": "required",
+        "name": "6. Tờ hướng dẫn sử dụng thuốc cổ truyền.",
+        "conditions": [],
+        "attachment_path": null
+      },
+      {
+        "bucket": "required",
+        "name": "g) Yêu cầu về nghiên cứu độ ổn định: Cơ sở sản xuất thuốc cổ truyền phải nghiên cứu và có tài liệu chứng minh độ ổn định theo ACTD, bao gồm các nội dung chính sau: Đề cương nghiên cứu độ ổn định; số liệu nghiên cứu độ ổn định; kết luận nghiên cứu độ ổn định và Phiếu kiểm nghiệm thành phẩm của các mẫu theo dõi độ ổn định (03 mẫu thời điểm ban đầu; 03 mẫu ở thời điểm sau hạn dùng trong điều kiện dài hạn và 03 mẫu ở thời điểm sau kết thúc nghiên cứu độ ổn định trong điều kiện lão hoá cấp tốc).",
+        "conditions": [],
+        "attachment_path": null
+      }
+    ],
+    "special_cases": [
+      "Có yếu tố nước ngoài",
+      "Có thể cần giấy tờ ủy quyền",
+      "Có thể cần đối chiếu thông tin thửa đất hoặc giấy chứng nhận"
+    ],
+    "common_errors": [
+      "Thiếu giấy tờ hoặc nội dung ủy quyền phù hợp.",
+      "Thiếu giấy tờ hợp pháp hóa hoặc giấy tờ nhân thân của phía nước ngoài.",
+      "Điền sai mẫu tờ khai hoặc chọn sai biểu mẫu đi kèm.",
+      "Thông tin thửa đất, tài sản hoặc giấy chứng nhận chưa khớp với hồ sơ hiện có."
+    ],
+    "validation_hints": [
+      "Nên xác định trước kênh nộp hồ sơ để biết có cần bản giấy, bản điện tử hay xuất trình trực tiếp.",
+      "Có mẫu biểu đính kèm, nên kiểm tra đúng biểu mẫu trước khi nộp.",
+      "Nên xác định đúng nhóm đối tượng, mã số bảo hiểm và quyền lợi áp dụng trước khi nộp."
+    ]
+  },
+  "intake": {
+    "candidate_input_fields": [
+      {
+        "field_id": "request_subject",
+        "label": "Đối tượng làm thủ tục",
+        "field_type": "text",
+        "required": true
+      },
+      {
+        "field_id": "insurance_or_medical_need",
+        "label": "Nhu cầu bảo hiểm hoặc y tế",
+        "field_type": "text",
+        "required": true
+      },
+      {
+        "field_id": "submission_channel_preference",
+        "label": "Kênh nộp dự kiến",
+        "field_type": "enum",
+        "required": false
+      },
+      {
+        "field_id": "has_insurance_number",
+        "label": "Đã có mã BHXH/BHYT",
+        "field_type": "boolean",
+        "required": false
+      }
+    ],
+    "suggested_clarifying_questions": [
+      "Bạn đang muốn đăng ký, điều chỉnh hay xác nhận quyền lợi y tế hoặc bảo hiểm nào?",
+      "Bạn đã có mã BHXH/BHYT hoặc thông tin đơn vị tiếp nhận liên quan chưa?"
+    ]
+  },
+  "ui_hints": {
+    "primary_channel": "online",
+    "result_label": "Giấy đăng ký lưu hành thuốc cổ truyền",
+    "time_badge": "12 ngày",
+    "document_count_badge": 27
+  },
+  "provenance": {
+    "generator": "workflow_domain_enricher",
+    "derivation_mode": "rule_based_semantic_enrichment",
+    "supported_group": true
+  }
+}

@@ -1,0 +1,94 @@
+{
+  "schema_version": "1.0",
+  "enricher_version": "0.2.0",
+  "source": {
+    "procedure_code": "1.004990",
+    "title": "Cấp Giấy chứng nhận, tem kiểm định chất lượng, an toàn kỹ thuật và bảo vệ môi trường phương tiện giao thông đường sắt",
+    "group_key": "phuong_tien_nguoi_lai",
+    "workflow_family": "vehicle_driver_workflow",
+    "subflow": "dang_kiem_phuong_tien"
+  },
+  "experience": {
+    "entry_label": "Hỗ trợ phương tiện và người lái",
+    "overview_summary": "Thủ tục này thuộc nhóm phương tiện và đăng kiểm, thường cần đối chiếu hồ sơ kỹ thuật, đăng ký hoặc chứng nhận an toàn của phương tiện. Kết quả thường nhận được là Thông báo hoàn thiện hồ sơ. Thời gian xử lý tham khảo: 3 ngày làm việc.",
+    "next_step_summary": "Nên kiểm tra trước loại phương tiện hoặc loại giấy phép cần xử lý, cùng hồ sơ kỹ thuật hoặc nhân thân liên quan. Có thể chọn kênh nộp phù hợp: Trực tiếp, Trực tuyến, Dịch vụ bưu chính. Hiện có khoảng 3 mục giấy tờ cần theo dõi trong checklist.",
+    "tone": "supportive_public_service"
+  },
+  "guidance": {
+    "highlight_documents": [
+      {
+        "bucket": "required",
+        "name": "Bản chính hoặc bản điện tử Đơn đăng ký kiểm tra theo mẫu quy định;",
+        "conditions": [],
+        "attachment_path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/1_004990/%C4%90%C6%A1n%20%C4%91%C4%83ng%20k%C3%BD%20ch%E1%BB%A9ng%20nh%E1%BA%ADn.pdf"
+      },
+      {
+        "bucket": "required",
+        "name": "Bản chính hoặc bản sao có chứng thực hoặc bản điện tử hoặc bản sao điện tử Báo cáo kiểm tra chất lượng an toàn kỹ thuật và bảo vệ môi trường đối với linh kiện, phương tiện của Tổ chức kiểm tra",
+        "conditions": [],
+        "attachment_path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/1_004990/2.%20BCKTAT%20%282.NVICC-%C4%90S.01%29.pdf"
+      },
+      {
+        "bucket": "required",
+        "name": "Ảnh chụp thể hiện rõ số hiệu, hình ảnh tổng thể của linh kiện, phương tiện",
+        "conditions": [],
+        "attachment_path": null
+      }
+    ],
+    "special_cases": [
+      "Có trường hợp hồ sơ điện tử thay thế bản giấy",
+      "Có thể cần hồ sơ kỹ thuật phương tiện hoặc giấy phép lái xe"
+    ],
+    "common_errors": [
+      "Điền sai mẫu tờ khai hoặc chọn sai biểu mẫu đi kèm."
+    ],
+    "validation_hints": [
+      "Nên xác định trước kênh nộp hồ sơ để biết có cần bản giấy, bản điện tử hay xuất trình trực tiếp.",
+      "Có mẫu biểu đính kèm, nên kiểm tra đúng biểu mẫu trước khi nộp.",
+      "Nên đối chiếu trước thông tin phương tiện, hồ sơ kỹ thuật hoặc giấy phép lái xe liên quan."
+    ]
+  },
+  "intake": {
+    "candidate_input_fields": [
+      {
+        "field_id": "vehicle_or_license_need",
+        "label": "Nhu cầu về phương tiện hoặc giấy phép",
+        "field_type": "text",
+        "required": true
+      },
+      {
+        "field_id": "vehicle_or_person_identifier",
+        "label": "Thông tin phương tiện hoặc người lái",
+        "field_type": "text",
+        "required": true
+      },
+      {
+        "field_id": "submission_channel_preference",
+        "label": "Kênh nộp dự kiến",
+        "field_type": "enum",
+        "required": false
+      },
+      {
+        "field_id": "has_technical_or_identity_documents",
+        "label": "Đã có hồ sơ kỹ thuật hoặc giấy tờ nhân thân",
+        "field_type": "boolean",
+        "required": false
+      }
+    ],
+    "suggested_clarifying_questions": [
+      "Bạn đang xử lý hồ sơ cho phương tiện hay cho giấy phép lái xe?",
+      "Bạn đã có thông tin nhận diện phương tiện hoặc giấy tờ của người lái chưa?"
+    ]
+  },
+  "ui_hints": {
+    "primary_channel": "online",
+    "result_label": "Thông báo hoàn thiện hồ sơ",
+    "time_badge": "3 ngày làm việc",
+    "document_count_badge": 3
+  },
+  "provenance": {
+    "generator": "workflow_domain_enricher",
+    "derivation_mode": "rule_based_semantic_enrichment",
+    "supported_group": true
+  }
+}

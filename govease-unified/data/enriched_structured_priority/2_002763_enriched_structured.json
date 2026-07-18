@@ -1,0 +1,90 @@
+{
+  "schema_version": "1.0",
+  "enricher_version": "0.2.0",
+  "source": {
+    "procedure_code": "2.002763",
+    "title": "Thủ tục giải quyết chế độ trợ cấp chết do tai nạn hoặc chết do ốm đau, tai nạn rủi ro đối với quân nhân dự bị; học viên đào tạo sĩ quan dự bị từ 03 tháng trở lên chưa tham gia bảo hiểm xã hội, bảo hiểm y tế",
+    "group_key": "suc_khoe_y_te",
+    "workflow_family": null,
+    "subflow": null
+  },
+  "experience": {
+    "entry_label": "Hỗ trợ y tế và bảo hiểm",
+    "overview_summary": "Thủ tục này thuộc nhóm y tế và bảo hiểm, thường dùng để đăng ký, điều chỉnh hoặc xác nhận quyền lợi bảo hiểm y tế. Kết quả thường nhận được là Quyết định trợ cấp của đơn vị trực tiếp huấn luyện. Thời gian xử lý tham khảo: 10 ngày làm việc.",
+    "next_step_summary": "Nên xác định rõ đối tượng tham gia, quyền lợi hoặc nhu cầu điều chỉnh hồ sơ y tế trước khi nộp. Có thể chọn kênh nộp phù hợp: Trực tiếp, Trực tuyến, Dịch vụ bưu chính. Hiện có khoảng 2 mục giấy tờ cần theo dõi trong checklist.",
+    "tone": "supportive_public_service"
+  },
+  "guidance": {
+    "highlight_documents": [
+      {
+        "bucket": "required",
+        "name": "Lệnh gọi tập trung huấn luyện hoặc quyết định gọi đào tạo sĩ quan dự bị của cấp có thẩm quyền (01 bản sao)",
+        "conditions": [],
+        "attachment_path": null
+      },
+      {
+        "bucket": "conditional",
+        "name": "Giấy báo tử hoặc giấy chứng tử (01 bản sao) của đối tượng hoặc trích lục khai tử hoặc bản sao quyết định tuyên bố là đã chết của tòa án đã có hiệu lực pháp luật (đối với trường hợp mất tích)",
+        "conditions": [
+          "Giấy báo tử hoặc giấy chứng tử (01 bản sao) của đối tượng hoặc trích lục khai tử hoặc bản sao quyết định tuyên bố là đã chết của tòa án đã có hiệu lực pháp luật (đối với trường hợp mất tích)"
+        ],
+        "attachment_path": null
+      }
+    ],
+    "special_cases": [],
+    "common_errors": [],
+    "validation_hints": [
+      "Nên xác định trước kênh nộp hồ sơ để biết có cần bản giấy, bản điện tử hay xuất trình trực tiếp.",
+      "Nên xác định đúng nhóm đối tượng, mã số bảo hiểm và quyền lợi áp dụng trước khi nộp."
+    ]
+  },
+  "intake": {
+    "candidate_input_fields": [
+      {
+        "field_id": "request_subject",
+        "label": "Đối tượng làm thủ tục",
+        "field_type": "text",
+        "required": true
+      },
+      {
+        "field_id": "insurance_or_medical_need",
+        "label": "Nhu cầu bảo hiểm hoặc y tế",
+        "field_type": "text",
+        "required": true
+      },
+      {
+        "field_id": "submission_channel_preference",
+        "label": "Kênh nộp dự kiến",
+        "field_type": "enum",
+        "required": false
+      },
+      {
+        "field_id": "has_insurance_number",
+        "label": "Đã có mã BHXH/BHYT",
+        "field_type": "boolean",
+        "required": false
+      },
+      {
+        "field_id": "insurance_participation_group",
+        "label": "Nhóm tham gia BHYT",
+        "field_type": "enum",
+        "required": true
+      }
+    ],
+    "suggested_clarifying_questions": [
+      "Bạn đang muốn đăng ký, điều chỉnh hay xác nhận quyền lợi y tế hoặc bảo hiểm nào?",
+      "Bạn đã có mã BHXH/BHYT hoặc thông tin đơn vị tiếp nhận liên quan chưa?"
+    ]
+  },
+  "ui_hints": {
+    "primary_channel": "online",
+    "result_label": "Quyết định trợ cấp của đơn vị trực tiếp huấn luyện",
+    "time_badge": "10 ngày làm việc",
+    "document_count_badge": 2
+  },
+  "provenance": {
+    "generator": "workflow_domain_enricher",
+    "derivation_mode": "rule_based_semantic_enrichment",
+    "supported_group": true
+  }
+}

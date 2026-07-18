@@ -1,0 +1,299 @@
+{
+  "schema_version": "3.0",
+  "record_type": "public_service_procedure_payload",
+  "id": "procedure-3.000276",
+  "procedure_code": "3.000276",
+  "code": "3.000276",
+  "title": "Khóa căn cước điện tử (thực hiện tại cấp tỉnh)",
+  "language": "vi",
+  "status": "generated_from_pipeline",
+  "field": "Định danh và xác thực điện tử",
+  "group_key": "cu_tru_giay_to",
+  "workflow_family": "residence_identity_documents_workflow",
+  "subflow": "can_cuoc_chung_minh_nhan_dan",
+  "source": {
+    "source_url": "file:///C:/Users/ku060/Downloads/VAIC%20source/data-pipeline/raw_data/3_000276/3_000276_procedure_detail.md",
+    "source_markdown_path": "C:\\Users\\ku060\\Downloads\\VAIC source\\data-pipeline\\raw_data\\3_000276\\3_000276_procedure_detail.md",
+    "normalized_payload_path": "C:\\Users\\ku060\\Downloads\\VAIC source\\data-pipeline\\govease-unified\\data\\normalized_structured\\3_000276_normalized_structured.json",
+    "enriched_payload_path": "C:\\Users\\ku060\\Downloads\\VAIC source\\data-pipeline\\govease-unified\\data\\enriched_structured_priority\\3_000276_enriched_structured.json"
+  },
+  "scope": {
+    "included": "Thủ tục này thuộc nhóm cư trú và giấy tờ, thường cần kiểm tra thông tin định danh hoặc hồ sơ giấy tờ chuyên ngành. Kết quả thường nhận được là Thông báo kết quả tới cơ quan đề nghị khóa căn cước điện tử và chủ thể bị khóa căn cước điện tử. Trường hợp từ chối khóa căn cước điện tử thì có văn bản trả lời và nêu rõ lý do. Thời gian xử lý tham khảo: 3 ngày làm việc.",
+    "not_included": []
+  },
+  "agency": {
+    "executing_agency": "Cục cảnh sát quản lý hành chính về trật tự, xã hội",
+    "submission_place": null,
+    "receiving_places": []
+  },
+  "target_users": [
+    "Công dân Việt Nam",
+    "Tổ chức (không bao gồm doanh nghiệp",
+    "HTX)"
+  ],
+  "submission_methods": [
+    {
+      "code": "ONLINE",
+      "label": "Trực tuyến",
+      "processing_time": "3 ngày làm việc",
+      "fee": null,
+      "description": "- Thông qua Ứng dụng định danh quốc gia (VNeID) đối với trường hợp công dân đề nghị khóa căn cước điện tử của mình; Thời hạn giải quyết: - Cơ quan quản lý căn cước có trách nhiệm ghi nhận, kiểm tra, xác thực và khóa căn cước điện tử ngay sau khi nhận được yêu cầu khóa căn cước điện tử của công dân trên hệ thống định danh và xác thực điện tử. - Trong thời hạn 03 ngày làm việc đối với trường hợp khóa căn cước điện tử theo đề nghị của cơ quan tiến hành tố tụng, cơ quan khác có thẩm quyền."
+    },
+    {
+      "code": "POSTAL",
+      "label": "Dịch vụ bưu chính",
+      "processing_time": "3 ngày làm việc",
+      "fee": null,
+      "description": "- Qua dịch vụ bưu chính (nếu có). Thời hạn giải quyết: - Cơ quan quản lý căn cước có trách nhiệm ghi nhận, kiểm tra, xác thực và khóa căn cước điện tử ngay sau khi nhận được yêu cầu khóa căn cước điện tử của công dân trên hệ thống định danh và xác thực điện tử. - Trong thời hạn 03 ngày làm việc đối với trường hợp khóa căn cước điện tử theo đề nghị của cơ quan tiến hành tố tụng, cơ quan khác có thẩm quyền."
+    },
+    {
+      "code": "IN_PERSON",
+      "label": "Trực tiếp",
+      "processing_time": "3 ngày làm việc",
+      "fee": null,
+      "description": "- Nộp hồ sơ trực tiếp tại Phòng Cảnh sát quản lý hành chính về trật tự xã hội, Công an tỉnh, thành phố trong cả nước không phụ thuộc vào nơi cư trú Thời hạn giải quyết: - Cơ quan quản lý căn cước có trách nhiệm ghi nhận, kiểm tra, xác thực và khóa căn cước điện tử ngay sau khi nhận được yêu cầu khóa căn cước điện tử của công dân trên hệ thống định danh và xác thực điện tử. - Trong thời hạn 03 ngày làm việc đối với trường hợp khóa căn cước điện tử theo đề nghị của cơ quan tiến hành tố tụng, cơ quan khác có thẩm quyền."
+    }
+  ],
+  "processing_note": "Thời gian xử lý tham chiếu: 3 ngày làm việc. Nên kiểm tra trước giấy tờ định danh, nơi nộp và mẫu biểu liên quan, rồi chọn kênh nộp phù hợp: Trực tiếp, Trực tuyến, Dịch vụ bưu chính. Hiện có 1 mục giấy tờ cần theo dõi trong checklist.",
+  "documents": {
+    "normally_required": [
+      {
+        "name": "Phiếu đề nghị khóa, mở khóa tài khoản định danh điện tử, căn cước điện tử (mẫu TK03 ban hành kèm theo Nghị định số 69/2024/NĐ-CP ngày 25/6/2024 quy định về định danh và xác thực điện tử)",
+        "quantity": "1 bản chính, 0 bản sao",
+        "notes": [],
+        "group": "default",
+        "attachment_path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/3_000276/TK03-Phiunghkhamkhatikhonnhdanhintcnccint.docx"
+      }
+    ],
+    "conditional": [],
+    "forms": [
+      {
+        "name": "Phiếu đề nghị khóa, mở khóa tài khoản định danh điện tử, căn cước điện tử (mẫu TK03 ban hành kèm theo Nghị định số 69/2024/NĐ-CP ngày 25/6/2024 quy định về định danh và xác thực điện tử)",
+        "attachment_label": "TK03-Phiunghkhamkhatikhonnhdanhintcnccint.docx",
+        "attachment_path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/3_000276/TK03-Phiunghkhamkhatikhonnhdanhintcnccint.docx"
+      }
+    ],
+    "presented": [],
+    "notes": [],
+    "summary": [
+      {
+        "group": "default",
+        "name": "Phiếu đề nghị khóa, mở khóa tài khoản định danh điện tử, căn cước điện tử (mẫu TK03 ban hành kèm theo Nghị định số 69/2024/NĐ-CP ngày 25/6/2024 quy định về định danh và xác thực điện tử)",
+        "quantity": "1 bản chính, 0 bản sao",
+        "notes": [],
+        "attachment_path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/3_000276/TK03-Phiunghkhamkhatikhonnhdanhintcnccint.docx"
+      },
+      {
+        "group": null,
+        "name": "Phiếu đề nghị khóa, mở khóa tài khoản định danh điện tử, căn cước điện tử (mẫu TK03 ban hành kèm theo Nghị định số 69/2024/NĐ-CP ngày 25/6/2024 quy định về định danh và xác thực điện tử)",
+        "quantity": null,
+        "notes": null,
+        "attachment_path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/3_000276/TK03-Phiunghkhamkhatikhonnhdanhintcnccint.docx"
+      }
+    ]
+  },
+  "steps": [
+    {
+      "order": 1,
+      "title": "Bước 1",
+      "description": "1.",
+      "example": null
+    },
+    {
+      "order": 2,
+      "title": "a)",
+      "description": "a) Người được cấp căn cước điện tử thực hiện yêu cầu khóa căn cước điện tử trực tiếp tại Phòng Cảnh sát quản lý hành chính về trật tự xã hội, Công an tỉnh, thành phố trong cả nước không phụ thuộc vào nơi cư trú hoặc thông qua Ứng dụng định danh quốc gia theo Phiếu đề nghị khóa, mở khóa tài khoản định danh điện tử, căn cước điện tử (mẫu TK03 ban hành kèm theo Nghị định số 69/2024/NĐ-CP ngày 25/6/2024 quy định về định danh và xác thực điện tử). Cơ quan quản lý căn cước có trách nhiệm ghi nhận, kiểm tra, xác thực và khóa căn cước điện tử ngay sau khi nhận được yêu cầu khóa căn cước điện tử của công dân trên hệ thống định danh và xác thực điện tử. (Lưu ý: Lộ trình thực hiện việc khóa căn cước điện tử tại Phòng Cảnh sát quản lý hành chính về trật tự xã hội, Công an tỉnh, thành phố trong cả nước không phụ thuộc vào nơi cư trú thực hiện theo thông báo của Bộ Công an)",
+      "example": "trực tiếp"
+    },
+    {
+      "order": 3,
+      "title": "b)",
+      "description": "b) Khóa căn cước điện tử theo đề nghị của cơ quan tiến hành tố tụng, cơ quan khác có thẩm quyền",
+      "example": null
+    },
+    {
+      "order": 4,
+      "title": "Bước 1:",
+      "description": "Bước 1: Cơ quan tiến hành tố tụng, cơ quan khác có thẩm quyền gửi văn bản đề nghị khóa căn cước điện tử đến Phòng Cảnh sát quản lý hành chính về trật tự xã hội, Công an tỉnh, thành phố trong cả nước không phụ thuộc vào nơi cư trú để tiếp nhận, xử lý. (Lưu ý: Lộ trình thực hiện việc khóa căn cước điện tử tại Phòng Cảnh sát quản lý hành chính về trật tự xã hội, Công an tỉnh, thành phố trong cả nước không phụ thuộc vào nơi cư trú thực hiện theo thông báo của Bộ Công an)",
+      "example": null
+    },
+    {
+      "order": 5,
+      "title": "Bước 2:",
+      "description": "Bước 2: Trong thời hạn 01 ngày làm việc, kể từ ngày nhận được đề nghị khóa căn cước điện tử của cơ quan tiến hành tố tụng, cơ quan khác có thẩm quyền, Phòng Cảnh sát quản lý hành chính về trật tự xã hội, Công an tỉnh, thành phố nơi tiếp nhận đề nghị phải xem xét, chuyển đề nghị khóa căn cước điện tử đến thủ trưởng cơ quan quản lý căn cước Bộ Công an để xem xét, phê duyệt thông qua hệ thống định danh và xác thực điện tử.",
+      "example": "01 ngày làm việc"
+    },
+    {
+      "order": 6,
+      "title": "Bước 3:",
+      "description": "Bước 3: Trong thời hạn 02 ngày làm việc kể từ ngày nhận được đề xuất của Phòng Cảnh sát quản lý hành chính về trật tự xã hội, Công an tỉnh, thành phố, thủ trưởng cơ quan quản lý căn cước Bộ Công an xem xét, phê duyệt đối với trường hợp yêu cầu khóa căn cước điện tử và thông báo tới cơ quan đề nghị khóa căn cước điện tử và công dân. Trường hợp từ chối khóa căn cước điện tử thì có văn bản trả lời và nêu rõ lý do.",
+      "example": "02 ngày làm việc"
+    }
+  ],
+  "input_fields": [
+    {
+      "field": "document_request_type",
+      "label": "Loại giấy tờ cần xử lý",
+      "type": "string",
+      "required": true
+    },
+    {
+      "field": "submission_channel_preference",
+      "label": "Kênh nộp dự kiến",
+      "type": "enum",
+      "required": false,
+      "options": [
+        "Trực tiếp",
+        "Trực tuyến",
+        "Dịch vụ bưu chính"
+      ]
+    },
+    {
+      "field": "identity_document_available",
+      "label": "Có giấy tờ định danh",
+      "type": "boolean",
+      "required": true
+    },
+    {
+      "field": "residency_or_status_known",
+      "label": "Biết rõ nơi cư trú hoặc tình trạng hiện tại",
+      "type": "boolean",
+      "required": false
+    },
+    {
+      "field": "age_over_14",
+      "label": "Người làm thủ tục từ đủ 14 tuổi",
+      "type": "boolean",
+      "required": true
+    }
+  ],
+  "validation_rules": [
+    {
+      "id": "required-1",
+      "severity": "error",
+      "field": "document_request_type",
+      "rule": "Trường bắt buộc phải có dữ liệu hợp lệ trước khi nộp.",
+      "message": "Thiếu trường bắt buộc: Loại giấy tờ cần xử lý."
+    },
+    {
+      "id": "required-3",
+      "severity": "error",
+      "field": "identity_document_available",
+      "rule": "Trường bắt buộc phải có dữ liệu hợp lệ trước khi nộp.",
+      "message": "Thiếu trường bắt buộc: Có giấy tờ định danh."
+    },
+    {
+      "id": "required-5",
+      "severity": "error",
+      "field": "age_over_14",
+      "rule": "Trường bắt buộc phải có dữ liệu hợp lệ trước khi nộp.",
+      "message": "Thiếu trường bắt buộc: Người làm thủ tục từ đủ 14 tuổi."
+    },
+    {
+      "id": "hint-1",
+      "severity": "warning",
+      "field": "general",
+      "rule": "Nên xác định trước kênh nộp hồ sơ để biết có cần bản giấy, bản điện tử hay xuất trình trực tiếp.",
+      "message": "Nên xác định trước kênh nộp hồ sơ để biết có cần bản giấy, bản điện tử hay xuất trình trực tiếp."
+    },
+    {
+      "id": "hint-2",
+      "severity": "warning",
+      "field": "general",
+      "rule": "Có mẫu biểu đính kèm, nên kiểm tra đúng biểu mẫu trước khi nộp.",
+      "message": "Có mẫu biểu đính kèm, nên kiểm tra đúng biểu mẫu trước khi nộp."
+    },
+    {
+      "id": "hint-3",
+      "severity": "warning",
+      "field": "general",
+      "rule": "Nên đối chiếu trước dữ liệu định danh và nơi cư trú để tránh bị yêu cầu bổ sung.",
+      "message": "Nên đối chiếu trước dữ liệu định danh và nơi cư trú để tránh bị yêu cầu bổ sung."
+    }
+  ],
+  "common_errors": [
+    {
+      "field": "general",
+      "issue": "Điền sai mẫu tờ khai hoặc chọn sai biểu mẫu đi kèm.",
+      "fix": "Nên xác định trước kênh nộp hồ sơ để biết có cần bản giấy, bản điện tử hay xuất trình trực tiếp."
+    }
+  ],
+  "clarifying_questions": [
+    {
+      "id": "clarify_1",
+      "question": "Bạn đang xử lý giấy tờ gì và muốn nộp trực tiếp hay trực tuyến?",
+      "purpose": "workflow_intake"
+    },
+    {
+      "id": "clarify_2",
+      "question": "Thông tin định danh và nơi cư trú hiện tại đã sẵn sàng để đối chiếu chưa?",
+      "purpose": "workflow_intake"
+    }
+  ],
+  "legal_basis": [
+    {
+      "title": "Nghị định số 69/2024/NĐ-CP của Chính phủ: Quy định về định danh và xác thực điện tử",
+      "code": "69/2024/NĐ-CP"
+    }
+  ],
+  "legal_bases": [
+    {
+      "title": "Nghị định số 69/2024/NĐ-CP của Chính phủ: Quy định về định danh và xác thực điện tử",
+      "code": "69/2024/NĐ-CP"
+    }
+  ],
+  "faq": [
+    {
+      "question": "Có thể nộp qua kênh nào?",
+      "answer": "Các kênh hiện có: Trực tiếp, Trực tuyến, Dịch vụ bưu chính."
+    },
+    {
+      "question": "Thời gian xử lý tham chiếu là bao lâu?",
+      "answer": "Thời gian xử lý tham chiếu hiện có là 3 ngày làm việc."
+    },
+    {
+      "question": "Kết quả chính của thủ tục là gì?",
+      "answer": "Kết quả chính được trích xuất là Thông báo kết quả tới cơ quan đề nghị khóa căn cước điện tử và chủ thể bị khóa căn cước điện tử. Trường hợp từ chối khóa căn cước điện tử thì có văn bản trả lời và nêu rõ lý do."
+    }
+  ],
+  "guidance": {
+    "highlight_documents": [
+      {
+        "bucket": "required",
+        "name": "Phiếu đề nghị khóa, mở khóa tài khoản định danh điện tử, căn cước điện tử (mẫu TK03 ban hành kèm theo Nghị định số 69/2024/NĐ-CP ngày 25/6/2024 quy định về định danh và xác thực điện tử)",
+        "conditions": [],
+        "attachment_path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/3_000276/TK03-Phiunghkhamkhatikhonnhdanhintcnccint.docx"
+      }
+    ],
+    "special_cases": [
+      "Có kiểm tra dữ liệu cư trú/định danh"
+    ],
+    "common_errors": [
+      "Điền sai mẫu tờ khai hoặc chọn sai biểu mẫu đi kèm."
+    ],
+    "validation_hints": [
+      "Nên xác định trước kênh nộp hồ sơ để biết có cần bản giấy, bản điện tử hay xuất trình trực tiếp.",
+      "Có mẫu biểu đính kèm, nên kiểm tra đúng biểu mẫu trước khi nộp.",
+      "Nên đối chiếu trước dữ liệu định danh và nơi cư trú để tránh bị yêu cầu bổ sung."
+    ]
+  },
+  "next_steps": {
+    "summary": "Nên kiểm tra trước giấy tờ định danh, nơi nộp và mẫu biểu liên quan, rồi chọn kênh nộp phù hợp: Trực tiếp, Trực tuyến, Dịch vụ bưu chính. Hiện có 1 mục giấy tờ cần theo dõi trong checklist.",
+    "time_badge": "3 ngày làm việc",
+    "result_label": "Thông báo kết quả tới cơ quan đề nghị khóa căn cước điện tử và chủ thể bị khóa căn cước điện tử. Trường hợp từ chối khóa căn cước điện tử thì có văn bản trả lời và nêu rõ lý do",
+    "primary_channel": "online",
+    "channels": [
+      "in_person",
+      "online",
+      "postal"
+    ]
+  },
+  "notes": [],
+  "provenance": {
+    "pipeline": "raw->structured->normalized->enriched->ui_api_payload",
+    "normalizer_version": "0.2.0",
+    "enricher_version": "0.2.0",
+    "mapping_notes": "workflow_generated:cu_tru_giay_to/can_cuoc_chung_minh_nhan_dan",
+    "supported_group": true
+  }
+}

@@ -1,0 +1,516 @@
+{
+  "schema_version": "3.0",
+  "record_type": "public_service_procedure_payload",
+  "id": "procedure-1.009546",
+  "procedure_code": "1.009546",
+  "code": "1.009546",
+  "title": "Cấp Giấy chứng nhận đăng ký hoạt động đại lý phân phối chứng chỉ quỹ đại chúng",
+  "language": "vi",
+  "status": "generated_from_pipeline",
+  "field": "Chứng khoán",
+  "group_key": "hoc_tap",
+  "workflow_family": null,
+  "subflow": null,
+  "source": {
+    "source_url": "file:///C:/Users/ku060/Downloads/VAIC%20source/data-pipeline/raw_data/1_009546/1_009546_procedure_detail.md",
+    "source_markdown_path": "C:\\Users\\ku060\\Downloads\\VAIC source\\data-pipeline\\raw_data\\1_009546\\1_009546_procedure_detail.md",
+    "normalized_payload_path": "C:\\Users\\ku060\\Downloads\\VAIC source\\data-pipeline\\govease-unified\\data\\normalized_structured\\1_009546_normalized_structured.json",
+    "enriched_payload_path": "C:\\Users\\ku060\\Downloads\\VAIC source\\data-pipeline\\govease-unified\\data\\enriched_structured_priority\\1_009546_enriched_structured.json"
+  },
+  "scope": {
+    "included": "Thủ tục này thuộc nhóm giáo dục và học tập, thường liên quan đến hồ sơ đào tạo, văn bằng hoặc điều kiện học tập của người học. Kết quả thường nhận được là Giấy chứng nhận đăng ký hoạt động đại lý phân phối chứng chỉ quỹ. Thời gian xử lý tham khảo: 10 ngày.",
+    "not_included": []
+  },
+  "agency": {
+    "executing_agency": "Ủy ban Chứng khoán Nhà nước - Bộ tài chính",
+    "submission_place": null,
+    "receiving_places": []
+  },
+  "target_users": [
+    "Doanh nghiệp"
+  ],
+  "submission_methods": [
+    {
+      "code": "ONLINE",
+      "label": "Trực tuyến",
+      "processing_time": "10 ngày",
+      "fee": null,
+      "description": "ngày kể từ ngày UBCKNN nhận được hồ sơ đầy đủ, hợp lệ."
+    },
+    {
+      "code": "POSTAL",
+      "label": "Dịch vụ bưu chính",
+      "processing_time": "10 ngày",
+      "fee": null,
+      "description": "10 ngày kể từ ngày UBCKNN nhận được hồ sơ đầy đủ, hợp lệ."
+    },
+    {
+      "code": "IN_PERSON",
+      "label": "Trực tiếp",
+      "processing_time": "10 ngày",
+      "fee": null,
+      "description": "10 ngày kể từ ngày UBCKNN nhận được hồ sơ đầy đủ, hợp lệ."
+    }
+  ],
+  "processing_note": "Thời gian xử lý tham chiếu: 10 ngày. Nên rà trước thông tin người học, cơ sở đào tạo và loại kết quả cần xin xác nhận hoặc cấp lại. Có thể chọn kênh nộp phù hợp: Trực tiếp, Trực tuyến, Dịch vụ bưu chính. Hiện có khoảng 7 mục giấy tờ cần theo dõi trong checklist.",
+  "documents": {
+    "normally_required": [
+      {
+        "name": "Giấy đăng ký hoạt động phân phối chứng chỉ quỹ - Mẫu số 88 Phụ lục ban hành kèm theo Nghị định 155/2020/NĐ-CP ngày 31/12/2020 của Chính phủ;",
+        "quantity": "1 bản chính, 1 bản sao",
+        "notes": [],
+        "group": "default",
+        "attachment_path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/1_009546/M%E1%BA%ABu%20s%E1%BB%91%2088.docx"
+      },
+      {
+        "name": "Quyết định của cấp có thẩm quyền ban hành quy trình nghiệp vụ, bao gồm: quy trình thẩm định thông tin, nhận biết nhà đầu tư, quy trình phân phối chứng chỉ quỹ kèm theo bộ quy định về ngăn ngừa hành vi giao dịch muộn của khách hàng; bộ quy tắc đạo đức nghề nghiệp đối với nhân viên phân phối chứng chỉ quỹ;",
+        "quantity": "1 bản chính, 1 bản sao",
+        "notes": [],
+        "group": "default",
+        "attachment_path": null
+      },
+      {
+        "name": "Giấy ủy quyền cho chi nhánh, phòng giao dịch thực hiện phân phối chứng chỉ quỹ - Mẫu số 89 Phụ lục ban hành kèm theo Nghị định 155/2020/NĐ-CP ngày 31/12/2020 của Chính phủ;",
+        "quantity": "1 bản chính, 1 bản sao",
+        "notes": [],
+        "group": "default",
+        "attachment_path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/1_009546/M%E1%BA%ABu%20s%E1%BB%91%2089.docx"
+      }
+    ],
+    "conditional": [
+      {
+        "condition": "Giấy chứng nhận đăng ký doanh nghiệp, Giấy phép thành lập và hoạt động (nếu có) của tổ chức đăng ký hoạt động phân phối chứng chỉ quỹ và các địa điểm phân phối chứng chỉ quỹ;",
+        "document": "Giấy chứng nhận đăng ký doanh nghiệp, Giấy phép thành lập và hoạt động (nếu có) của tổ chức đăng ký hoạt động phân phối chứng chỉ quỹ và các địa điểm phân phối chứng chỉ quỹ;",
+        "quantity": "1 bản chính, 1 bản sao",
+        "notes": [],
+        "attachment_path": null
+      },
+      {
+        "condition": "Bản thông tin cá nhân - Mẫu số 91 Phụ lục ban hành kèm theo Nghị định 155/2020/NĐ-CP ngày 31/12/2020 của Chính phủ, chứng chỉ hành nghề chứng khoán hợp pháp ở nước ngoài (nếu có) của nhân viên phân phối chứng chỉ quỹ;",
+        "document": "Bản thông tin cá nhân - Mẫu số 91 Phụ lục ban hành kèm theo Nghị định 155/2020/NĐ-CP ngày 31/12/2020 của Chính phủ, chứng chỉ hành nghề chứng khoán hợp pháp ở nước ngoài (nếu có) của nhân viên phân phối chứng chỉ quỹ;",
+        "quantity": "1 bản chính, 1 bản sao",
+        "notes": [],
+        "attachment_path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/1_009546/M%E1%BA%ABu%20s%E1%BB%91%2091.docx"
+      },
+      {
+        "condition": "Văn bản chấp thuận của cơ quan quản lý chuyên ngành cho phép cung cấp dịch vụ đại lý phân phối chứng chỉ quỹ (nếu có).",
+        "document": "Văn bản chấp thuận của cơ quan quản lý chuyên ngành cho phép cung cấp dịch vụ đại lý phân phối chứng chỉ quỹ (nếu có).",
+        "quantity": "1 bản chính, 1 bản sao",
+        "notes": [],
+        "attachment_path": null
+      },
+      {
+        "condition": "Thuyết minh cơ sở vật chất kỹ thuật, nhân sự phục vụ cho hoạt động phân phối chứng chỉ quỹ tại các địa điểm phân phối chứng chỉ quỹ - Mẫu số 90 Phụ lục ban hành kèm theo Nghị định 155/2020/NĐ-CP ngày 31/12/2020 của Chính phủ;; Thành phần hồ sơ trong thủ tục hành chính này được thay thế hoặc cắt giảm trong trường hợp UBCKNN khai thác được thông tin từ các cơ sở dữ liệu quốc gia, cơ sở dữ liệu chuyên ngành. Trường hợp không khai thác được thông tin hoặc thông tin khai thác được không đầy đủ, không chính xác thì cá nhân, tổ chức bổ sung thành phần hồ sơ để giải quyết thủ tục hành chính; đồng thời cá nhân, tổ chức thực hiện cập nhật, điều chỉnh thông tin trong các cơ sở dữ liệu theo quy định của pháp luật.; Thành phần hồ sơ trong thủ tục hành chính này được thay thế hoặc cắt giảm trong trường hợp UBCKNN khai thác được thông tin từ các cơ sở dữ liệu quốc gia, cơ sở dữ liệu chuyên ngành. Trường hợp không khai thác được thông tin hoặc thông tin khai thác được không đầy đủ, không chính xác thì cá nhân, tổ chức bổ sung thành phần hồ sơ để giải quyết thủ tục hành chính; đồng thời cá nhân, tổ chức thực hiện cập nhật, điều chỉnh thông tin trong các cơ sở dữ liệu theo quy định của pháp luật.",
+        "document": "Thuyết minh cơ sở vật chất kỹ thuật, nhân sự phục vụ cho hoạt động phân phối chứng chỉ quỹ tại các địa điểm phân phối chứng chỉ quỹ - Mẫu số 90 Phụ lục ban hành kèm theo Nghị định 155/2020/NĐ-CP ngày 31/12/2020 của Chính phủ;; Thành phần hồ sơ trong thủ tục hành chính này được thay thế hoặc cắt giảm trong trường hợp UBCKNN khai thác được thông tin từ các cơ sở dữ liệu quốc gia, cơ sở dữ liệu chuyên ngành. Trường hợp không khai thác được thông tin hoặc thông tin khai thác được không đầy đủ, không chính xác thì cá nhân, tổ chức bổ sung thành phần hồ sơ để giải quyết thủ tục hành chính; đồng thời cá nhân, tổ chức thực hiện cập nhật, điều chỉnh thông tin trong các cơ sở dữ liệu theo quy định của pháp luật.; Thành phần hồ sơ trong thủ tục hành chính này được thay thế hoặc cắt giảm trong trường hợp UBCKNN khai thác được thông tin từ các cơ sở dữ liệu quốc gia, cơ sở dữ liệu chuyên ngành. Trường hợp không khai thác được thông tin hoặc thông tin khai thác được không đầy đủ, không chính xác thì cá nhân, tổ chức bổ sung thành phần hồ sơ để giải quyết thủ tục hành chính; đồng thời cá nhân, tổ chức thực hiện cập nhật, điều chỉnh thông tin trong các cơ sở dữ liệu theo quy định của pháp luật.",
+        "quantity": "1 bản chính, 1 bản sao",
+        "notes": [],
+        "attachment_path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/1_009546/M%E1%BA%ABu%20s%E1%BB%91%2090.docx"
+      }
+    ],
+    "forms": [
+      {
+        "name": "Giấy đăng ký hoạt động phân phối chứng chỉ quỹ - Mẫu số 88 Phụ lục ban hành kèm theo Nghị định 155/2020/NĐ-CP ngày 31/12/2020 của Chính phủ;",
+        "attachment_label": "Mẫu số 88.docx",
+        "attachment_path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/1_009546/M%E1%BA%ABu%20s%E1%BB%91%2088.docx"
+      },
+      {
+        "name": "Bản thông tin cá nhân - Mẫu số 91 Phụ lục ban hành kèm theo Nghị định 155/2020/NĐ-CP ngày 31/12/2020 của Chính phủ, chứng chỉ hành nghề chứng khoán hợp pháp ở nước ngoài (nếu có) của nhân viên phân phối chứng chỉ quỹ;",
+        "attachment_label": "Mẫu số 91.docx",
+        "attachment_path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/1_009546/M%E1%BA%ABu%20s%E1%BB%91%2091.docx"
+      },
+      {
+        "name": "Giấy ủy quyền cho chi nhánh, phòng giao dịch thực hiện phân phối chứng chỉ quỹ - Mẫu số 89 Phụ lục ban hành kèm theo Nghị định 155/2020/NĐ-CP ngày 31/12/2020 của Chính phủ;",
+        "attachment_label": "Mẫu số 89.docx",
+        "attachment_path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/1_009546/M%E1%BA%ABu%20s%E1%BB%91%2089.docx"
+      },
+      {
+        "name": "Thuyết minh cơ sở vật chất kỹ thuật, nhân sự phục vụ cho hoạt động phân phối chứng chỉ quỹ tại các địa điểm phân phối chứng chỉ quỹ - Mẫu số 90 Phụ lục ban hành kèm theo Nghị định 155/2020/NĐ-CP ngày 31/12/2020 của Chính phủ;; Thành phần hồ sơ trong thủ tục hành chính này được thay thế hoặc cắt giảm trong trường hợp UBCKNN khai thác được thông tin từ các cơ sở dữ liệu quốc gia, cơ sở dữ liệu chuyên ngành. Trường hợp không khai thác được thông tin hoặc thông tin khai thác được không đầy đủ, không chính xác thì cá nhân, tổ chức bổ sung thành phần hồ sơ để giải quyết thủ tục hành chính; đồng thời cá nhân, tổ chức thực hiện cập nhật, điều chỉnh thông tin trong các cơ sở dữ liệu theo quy định của pháp luật.; Thành phần hồ sơ trong thủ tục hành chính này được thay thế hoặc cắt giảm trong trường hợp UBCKNN khai thác được thông tin từ các cơ sở dữ liệu quốc gia, cơ sở dữ liệu chuyên ngành. Trường hợp không khai thác được thông tin hoặc thông tin khai thác được không đầy đủ, không chính xác thì cá nhân, tổ chức bổ sung thành phần hồ sơ để giải quyết thủ tục hành chính; đồng thời cá nhân, tổ chức thực hiện cập nhật, điều chỉnh thông tin trong các cơ sở dữ liệu theo quy định của pháp luật.",
+        "attachment_label": "Mẫu số 90.docx",
+        "attachment_path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/1_009546/M%E1%BA%ABu%20s%E1%BB%91%2090.docx"
+      }
+    ],
+    "presented": [],
+    "notes": [],
+    "summary": [
+      {
+        "group": "default",
+        "name": "Giấy đăng ký hoạt động phân phối chứng chỉ quỹ - Mẫu số 88 Phụ lục ban hành kèm theo Nghị định 155/2020/NĐ-CP ngày 31/12/2020 của Chính phủ;",
+        "quantity": "1 bản chính, 1 bản sao",
+        "notes": [],
+        "attachment_path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/1_009546/M%E1%BA%ABu%20s%E1%BB%91%2088.docx"
+      },
+      {
+        "group": "default",
+        "name": "Quyết định của cấp có thẩm quyền ban hành quy trình nghiệp vụ, bao gồm: quy trình thẩm định thông tin, nhận biết nhà đầu tư, quy trình phân phối chứng chỉ quỹ kèm theo bộ quy định về ngăn ngừa hành vi giao dịch muộn của khách hàng; bộ quy tắc đạo đức nghề nghiệp đối với nhân viên phân phối chứng chỉ quỹ;",
+        "quantity": "1 bản chính, 1 bản sao",
+        "notes": [],
+        "attachment_path": null
+      },
+      {
+        "group": "default",
+        "name": "Giấy ủy quyền cho chi nhánh, phòng giao dịch thực hiện phân phối chứng chỉ quỹ - Mẫu số 89 Phụ lục ban hành kèm theo Nghị định 155/2020/NĐ-CP ngày 31/12/2020 của Chính phủ;",
+        "quantity": "1 bản chính, 1 bản sao",
+        "notes": [],
+        "attachment_path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/1_009546/M%E1%BA%ABu%20s%E1%BB%91%2089.docx"
+      },
+      {
+        "group": null,
+        "name": null,
+        "quantity": "1 bản chính, 1 bản sao",
+        "notes": [],
+        "attachment_path": null
+      },
+      {
+        "group": null,
+        "name": null,
+        "quantity": "1 bản chính, 1 bản sao",
+        "notes": [],
+        "attachment_path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/1_009546/M%E1%BA%ABu%20s%E1%BB%91%2091.docx"
+      },
+      {
+        "group": null,
+        "name": null,
+        "quantity": "1 bản chính, 1 bản sao",
+        "notes": [],
+        "attachment_path": null
+      },
+      {
+        "group": null,
+        "name": null,
+        "quantity": "1 bản chính, 1 bản sao",
+        "notes": [],
+        "attachment_path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/1_009546/M%E1%BA%ABu%20s%E1%BB%91%2090.docx"
+      },
+      {
+        "group": null,
+        "name": "Giấy đăng ký hoạt động phân phối chứng chỉ quỹ - Mẫu số 88 Phụ lục ban hành kèm theo Nghị định 155/2020/NĐ-CP ngày 31/12/2020 của Chính phủ;",
+        "quantity": null,
+        "notes": null,
+        "attachment_path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/1_009546/M%E1%BA%ABu%20s%E1%BB%91%2088.docx"
+      },
+      {
+        "group": null,
+        "name": "Bản thông tin cá nhân - Mẫu số 91 Phụ lục ban hành kèm theo Nghị định 155/2020/NĐ-CP ngày 31/12/2020 của Chính phủ, chứng chỉ hành nghề chứng khoán hợp pháp ở nước ngoài (nếu có) của nhân viên phân phối chứng chỉ quỹ;",
+        "quantity": null,
+        "notes": null,
+        "attachment_path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/1_009546/M%E1%BA%ABu%20s%E1%BB%91%2091.docx"
+      },
+      {
+        "group": null,
+        "name": "Giấy ủy quyền cho chi nhánh, phòng giao dịch thực hiện phân phối chứng chỉ quỹ - Mẫu số 89 Phụ lục ban hành kèm theo Nghị định 155/2020/NĐ-CP ngày 31/12/2020 của Chính phủ;",
+        "quantity": null,
+        "notes": null,
+        "attachment_path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/1_009546/M%E1%BA%ABu%20s%E1%BB%91%2089.docx"
+      },
+      {
+        "group": null,
+        "name": "Thuyết minh cơ sở vật chất kỹ thuật, nhân sự phục vụ cho hoạt động phân phối chứng chỉ quỹ tại các địa điểm phân phối chứng chỉ quỹ - Mẫu số 90 Phụ lục ban hành kèm theo Nghị định 155/2020/NĐ-CP ngày 31/12/2020 của Chính phủ;; Thành phần hồ sơ trong thủ tục hành chính này được thay thế hoặc cắt giảm trong trường hợp UBCKNN khai thác được thông tin từ các cơ sở dữ liệu quốc gia, cơ sở dữ liệu chuyên ngành. Trường hợp không khai thác được thông tin hoặc thông tin khai thác được không đầy đủ, không chính xác thì cá nhân, tổ chức bổ sung thành phần hồ sơ để giải quyết thủ tục hành chính; đồng thời cá nhân, tổ chức thực hiện cập nhật, điều chỉnh thông tin trong các cơ sở dữ liệu theo quy định của pháp luật.; Thành phần hồ sơ trong thủ tục hành chính này được thay thế hoặc cắt giảm trong trường hợp UBCKNN khai thác được thông tin từ các cơ sở dữ liệu quốc gia, cơ sở dữ liệu chuyên ngành. Trường hợp không khai thác được thông tin hoặc thông tin khai thác được không đầy đủ, không chính xác thì cá nhân, tổ chức bổ sung thành phần hồ sơ để giải quyết thủ tục hành chính; đồng thời cá nhân, tổ chức thực hiện cập nhật, điều chỉnh thông tin trong các cơ sở dữ liệu theo quy định của pháp luật.",
+        "quantity": null,
+        "notes": null,
+        "attachment_path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/1_009546/M%E1%BA%ABu%20s%E1%BB%91%2090.docx"
+      }
+    ]
+  },
+  "steps": [
+    {
+      "order": 1,
+      "title": "Bước 1",
+      "description": "1.",
+      "example": null
+    },
+    {
+      "order": 2,
+      "title": "Bước 1:",
+      "description": "Bước 1: Tổ chức đăng ký hoạt động phân phối chứng chỉ quỹ đại chúng nộp hồ sơ đề nghị cấp Giấy chứng nhận đăng ký hoạt động phân phối chứng chỉ quỹ đến UBCKNN.",
+      "example": null
+    },
+    {
+      "order": 3,
+      "title": "Bước 2:",
+      "description": "Bước 2: UBCKNN (Bộ phận một cửa) tiếp nhận và kiểm tra danh mục hồ sơ. Trường hợp danh mục chưa đầy đủ, UBCKNN hướng dẫn bổ sung hồ sơ theo quy định.",
+      "example": null
+    },
+    {
+      "order": 4,
+      "title": "Bước 3:",
+      "description": "Bước 3: UBCKNN thẩm định tính đầy đủ, hợp lệ của nội dung hồ sơ. Trường hợp hồ sơ chưa đầy đủ, chưa hợp lệ, trong thời hạn 07 ngày, UBCKNN trả lời bằng văn bản và nêu rõ nội dung yêu cầu sửa đổi, bổ sung.",
+      "example": "07 ngày"
+    },
+    {
+      "order": 5,
+      "title": "Bước 4:",
+      "description": "Bước 4: Trong thời hạn 60 ngày kể từ ngày UBCKNN có văn bản yêu cầu sửa đổi, bổ sung hồ sơ, tổ chức đăng ký hoạt động phân phối chứng chỉ quỹ đại chúng hoàn thiện hồ sơ và gửi đến UBCKNN",
+      "example": "60 ngày"
+    },
+    {
+      "order": 6,
+      "title": "Bước 5:",
+      "description": "Bước 5: Trong thời hạn 10 ngày kể từ UBCKNN nhận được hồ sơ đầy đủ, hợp lệ, UBCKNN cấp Giấy chứng nhận đăng ký hoạt động phân phối chứng chỉ quỹ cho tổ chức đăng ký. Trường hợp từ chối, UBCKNN trả lời bằng văn bản và nêu rõ lý do.",
+      "example": "10 ngày"
+    }
+  ],
+  "input_fields": [
+    {
+      "field": "learner_full_name",
+      "label": "Tên người học",
+      "type": "string",
+      "required": true
+    },
+    {
+      "field": "education_record_type",
+      "label": "Loại hồ sơ học tập cần xử lý",
+      "type": "string",
+      "required": true
+    },
+    {
+      "field": "education_institution",
+      "label": "Cơ sở đào tạo liên quan",
+      "type": "string",
+      "required": false
+    },
+    {
+      "field": "submission_channel_preference",
+      "label": "Kênh nộp dự kiến",
+      "type": "enum",
+      "required": false,
+      "options": [
+        "Trực tiếp",
+        "Trực tuyến",
+        "Dịch vụ bưu chính"
+      ]
+    }
+  ],
+  "validation_rules": [
+    {
+      "id": "required-1",
+      "severity": "error",
+      "field": "learner_full_name",
+      "rule": "Trường bắt buộc phải có dữ liệu hợp lệ trước khi nộp.",
+      "message": "Thiếu trường bắt buộc: Tên người học."
+    },
+    {
+      "id": "required-2",
+      "severity": "error",
+      "field": "education_record_type",
+      "rule": "Trường bắt buộc phải có dữ liệu hợp lệ trước khi nộp.",
+      "message": "Thiếu trường bắt buộc: Loại hồ sơ học tập cần xử lý."
+    },
+    {
+      "id": "hint-1",
+      "severity": "warning",
+      "field": "general",
+      "rule": "Nên xác định trước kênh nộp hồ sơ để biết có cần bản giấy, bản điện tử hay xuất trình trực tiếp.",
+      "message": "Nên xác định trước kênh nộp hồ sơ để biết có cần bản giấy, bản điện tử hay xuất trình trực tiếp."
+    },
+    {
+      "id": "hint-2",
+      "severity": "warning",
+      "field": "general",
+      "rule": "Có mẫu biểu đính kèm, nên kiểm tra đúng biểu mẫu trước khi nộp.",
+      "message": "Có mẫu biểu đính kèm, nên kiểm tra đúng biểu mẫu trước khi nộp."
+    },
+    {
+      "id": "hint-3",
+      "severity": "warning",
+      "field": "general",
+      "rule": "Nên rà lại thông tin người học, cơ sở đào tạo và loại xác nhận hoặc văn bằng cần xin.",
+      "message": "Nên rà lại thông tin người học, cơ sở đào tạo và loại xác nhận hoặc văn bằng cần xin."
+    }
+  ],
+  "common_errors": [
+    {
+      "field": "general",
+      "issue": "Thông tin định danh hoặc cư trú không khớp với dữ liệu dân cư.",
+      "fix": "Nên xác định trước kênh nộp hồ sơ để biết có cần bản giấy, bản điện tử hay xuất trình trực tiếp."
+    },
+    {
+      "field": "general",
+      "issue": "Thiếu giấy tờ hoặc nội dung ủy quyền phù hợp.",
+      "fix": "Nên xác định trước kênh nộp hồ sơ để biết có cần bản giấy, bản điện tử hay xuất trình trực tiếp."
+    },
+    {
+      "field": "general",
+      "issue": "Thiếu giấy tờ hợp pháp hóa hoặc giấy tờ nhân thân của phía nước ngoài.",
+      "fix": "Nên xác định trước kênh nộp hồ sơ để biết có cần bản giấy, bản điện tử hay xuất trình trực tiếp."
+    },
+    {
+      "field": "general",
+      "issue": "Điền sai mẫu tờ khai hoặc chọn sai biểu mẫu đi kèm.",
+      "fix": "Nên xác định trước kênh nộp hồ sơ để biết có cần bản giấy, bản điện tử hay xuất trình trực tiếp."
+    },
+    {
+      "field": "general",
+      "issue": "Thông tin thửa đất, tài sản hoặc giấy chứng nhận chưa khớp với hồ sơ hiện có.",
+      "fix": "Nên xác định trước kênh nộp hồ sơ để biết có cần bản giấy, bản điện tử hay xuất trình trực tiếp."
+    }
+  ],
+  "clarifying_questions": [
+    {
+      "id": "clarify_1",
+      "question": "Bạn đang cần xử lý hồ sơ học tập, văn bằng hay xác nhận nào?",
+      "purpose": "workflow_intake"
+    },
+    {
+      "id": "clarify_2",
+      "question": "Người học và cơ sở đào tạo liên quan đã xác định rõ chưa?",
+      "purpose": "workflow_intake"
+    }
+  ],
+  "legal_basis": [
+    {
+      "title": "Nghị quyết số 24/2026/NQ-CP ngày 29/4/2026 của Chính phủ cắt giảm, phân cấp, đơn giản hóa thủ tục hành chính, điều kiện kinh doanh lĩnh vực quốc phòng, nội vụ, tài chính, xây dựng, ngoại giao, tư pháp, ngân hàng.",
+      "code": "24/2026/NQ-CP"
+    },
+    {
+      "title": "Thông tư quy định mức thu, miễn một số khoản phí, lệ phí nhằm hỗ trợ cho doanh nghiệp, người dân",
+      "code": "64/2025/TT-BTC"
+    },
+    {
+      "title": "Thông tư số 25/2022/TT-BTC ngày 28/4/2022",
+      "code": "25"
+    },
+    {
+      "title": "Nghị quyết số 66.7/2025/NQ-CP của Chính phủ: Quy định cắt giảm, đơn giản hóa thủ tục hành chính dựa trên dữ liệu",
+      "code": "66.7/2025/NQ-CP"
+    },
+    {
+      "title": "Nghị định 155/2020/NĐ-CP",
+      "code": "155/2020/NĐ-CP"
+    },
+    {
+      "title": "Luật 54/2019/QH14",
+      "code": "54/2019/QH14"
+    },
+    {
+      "title": "Nghị quyết số 66.16/2026/NQ-CP của Chính phủ ngày 07/04/2026 về việc Cắt giảm, đơn giản hóa thủ tục hành chính,quy định liên quan đến hoạt động sản xuất, kinh doanh",
+      "code": "66.16/2026/NQ-CP"
+    }
+  ],
+  "legal_bases": [
+    {
+      "title": "Nghị quyết số 24/2026/NQ-CP ngày 29/4/2026 của Chính phủ cắt giảm, phân cấp, đơn giản hóa thủ tục hành chính, điều kiện kinh doanh lĩnh vực quốc phòng, nội vụ, tài chính, xây dựng, ngoại giao, tư pháp, ngân hàng.",
+      "code": "24/2026/NQ-CP"
+    },
+    {
+      "title": "Thông tư quy định mức thu, miễn một số khoản phí, lệ phí nhằm hỗ trợ cho doanh nghiệp, người dân",
+      "code": "64/2025/TT-BTC"
+    },
+    {
+      "title": "Thông tư số 25/2022/TT-BTC ngày 28/4/2022",
+      "code": "25"
+    },
+    {
+      "title": "Nghị quyết số 66.7/2025/NQ-CP của Chính phủ: Quy định cắt giảm, đơn giản hóa thủ tục hành chính dựa trên dữ liệu",
+      "code": "66.7/2025/NQ-CP"
+    },
+    {
+      "title": "Nghị định 155/2020/NĐ-CP",
+      "code": "155/2020/NĐ-CP"
+    },
+    {
+      "title": "Luật 54/2019/QH14",
+      "code": "54/2019/QH14"
+    },
+    {
+      "title": "Nghị quyết số 66.16/2026/NQ-CP của Chính phủ ngày 07/04/2026 về việc Cắt giảm, đơn giản hóa thủ tục hành chính,quy định liên quan đến hoạt động sản xuất, kinh doanh",
+      "code": "66.16/2026/NQ-CP"
+    }
+  ],
+  "faq": [
+    {
+      "question": "Có thể nộp qua kênh nào?",
+      "answer": "Các kênh hiện có: Trực tiếp, Trực tuyến, Dịch vụ bưu chính."
+    },
+    {
+      "question": "Thời gian xử lý tham chiếu là bao lâu?",
+      "answer": "Thời gian xử lý tham chiếu hiện có là 10 ngày."
+    },
+    {
+      "question": "Kết quả chính của thủ tục là gì?",
+      "answer": "Kết quả chính được trích xuất là Giấy chứng nhận đăng ký hoạt động đại lý phân phối chứng chỉ quỹ."
+    }
+  ],
+  "guidance": {
+    "highlight_documents": [
+      {
+        "bucket": "required",
+        "name": "Giấy đăng ký hoạt động phân phối chứng chỉ quỹ - Mẫu số 88 Phụ lục ban hành kèm theo Nghị định 155/2020/NĐ-CP ngày 31/12/2020 của Chính phủ;",
+        "conditions": [],
+        "attachment_path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/1_009546/M%E1%BA%ABu%20s%E1%BB%91%2088.docx"
+      },
+      {
+        "bucket": "required",
+        "name": "Quyết định của cấp có thẩm quyền ban hành quy trình nghiệp vụ, bao gồm: quy trình thẩm định thông tin, nhận biết nhà đầu tư, quy trình phân phối chứng chỉ quỹ kèm theo bộ quy định về ngăn ngừa hành vi giao dịch muộn của khách hàng; bộ quy tắc đạo đức nghề nghiệp đối với nhân viên phân phối chứng chỉ quỹ;",
+        "conditions": [],
+        "attachment_path": null
+      },
+      {
+        "bucket": "required",
+        "name": "Giấy ủy quyền cho chi nhánh, phòng giao dịch thực hiện phân phối chứng chỉ quỹ - Mẫu số 89 Phụ lục ban hành kèm theo Nghị định 155/2020/NĐ-CP ngày 31/12/2020 của Chính phủ;",
+        "conditions": [],
+        "attachment_path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/1_009546/M%E1%BA%ABu%20s%E1%BB%91%2089.docx"
+      },
+      {
+        "bucket": "conditional",
+        "name": "Giấy chứng nhận đăng ký doanh nghiệp, Giấy phép thành lập và hoạt động (nếu có) của tổ chức đăng ký hoạt động phân phối chứng chỉ quỹ và các địa điểm phân phối chứng chỉ quỹ;",
+        "conditions": [
+          "Giấy chứng nhận đăng ký doanh nghiệp, Giấy phép thành lập và hoạt động (nếu có) của tổ chức đăng ký hoạt động phân phối chứng chỉ quỹ và các địa điểm phân phối chứng chỉ quỹ;"
+        ],
+        "attachment_path": null
+      },
+      {
+        "bucket": "conditional",
+        "name": "Bản thông tin cá nhân - Mẫu số 91 Phụ lục ban hành kèm theo Nghị định 155/2020/NĐ-CP ngày 31/12/2020 của Chính phủ, chứng chỉ hành nghề chứng khoán hợp pháp ở nước ngoài (nếu có) của nhân viên phân phối chứng chỉ quỹ;",
+        "conditions": [
+          "Bản thông tin cá nhân - Mẫu số 91 Phụ lục ban hành kèm theo Nghị định 155/2020/NĐ-CP ngày 31/12/2020 của Chính phủ, chứng chỉ hành nghề chứng khoán hợp pháp ở nước ngoài (nếu có) của nhân viên phân phối chứng chỉ quỹ;"
+        ],
+        "attachment_path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/1_009546/M%E1%BA%ABu%20s%E1%BB%91%2091.docx"
+      },
+      {
+        "bucket": "conditional",
+        "name": "Văn bản chấp thuận của cơ quan quản lý chuyên ngành cho phép cung cấp dịch vụ đại lý phân phối chứng chỉ quỹ (nếu có).",
+        "conditions": [
+          "Văn bản chấp thuận của cơ quan quản lý chuyên ngành cho phép cung cấp dịch vụ đại lý phân phối chứng chỉ quỹ (nếu có)."
+        ],
+        "attachment_path": null
+      }
+    ],
+    "special_cases": [
+      "Có yếu tố nước ngoài",
+      "Có thể cần giấy tờ ủy quyền",
+      "Có kiểm tra dữ liệu cư trú/định danh",
+      "Có thể cần đối chiếu thông tin thửa đất hoặc giấy chứng nhận"
+    ],
+    "common_errors": [
+      "Thông tin định danh hoặc cư trú không khớp với dữ liệu dân cư.",
+      "Thiếu giấy tờ hoặc nội dung ủy quyền phù hợp.",
+      "Thiếu giấy tờ hợp pháp hóa hoặc giấy tờ nhân thân của phía nước ngoài.",
+      "Điền sai mẫu tờ khai hoặc chọn sai biểu mẫu đi kèm.",
+      "Thông tin thửa đất, tài sản hoặc giấy chứng nhận chưa khớp với hồ sơ hiện có."
+    ],
+    "validation_hints": [
+      "Nên xác định trước kênh nộp hồ sơ để biết có cần bản giấy, bản điện tử hay xuất trình trực tiếp.",
+      "Có mẫu biểu đính kèm, nên kiểm tra đúng biểu mẫu trước khi nộp.",
+      "Nên rà lại thông tin người học, cơ sở đào tạo và loại xác nhận hoặc văn bằng cần xin."
+    ]
+  },
+  "next_steps": {
+    "summary": "Nên rà trước thông tin người học, cơ sở đào tạo và loại kết quả cần xin xác nhận hoặc cấp lại. Có thể chọn kênh nộp phù hợp: Trực tiếp, Trực tuyến, Dịch vụ bưu chính. Hiện có khoảng 7 mục giấy tờ cần theo dõi trong checklist.",
+    "time_badge": "10 ngày",
+    "result_label": "Giấy chứng nhận đăng ký hoạt động đại lý phân phối chứng chỉ quỹ",
+    "primary_channel": "online",
+    "channels": [
+      "in_person",
+      "online",
+      "postal"
+    ]
+  },
+  "notes": [],
+  "provenance": {
+    "pipeline": "raw->structured->normalized->enriched->ui_api_payload",
+    "normalizer_version": "0.2.0",
+    "enricher_version": "0.2.0",
+    "mapping_notes": "excluded_from_clean_workflow_dataset",
+    "supported_group": true
+  }
+}

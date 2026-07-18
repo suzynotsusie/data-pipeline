@@ -1,0 +1,517 @@
+{
+  "schema_version": "1.0",
+  "normalizer_version": "0.2.0",
+  "source": {
+    "procedure_code": "1.001695",
+    "title": "Thủ tục đăng ký khai sinh kết hợp đăng ký nhận cha, mẹ, con có yếu tố nước ngoài",
+    "raw_structured_parser_version": "0.1.0",
+    "field": "Hộ tịch"
+  },
+  "procedure": {
+    "level": "Cấp xã",
+    "procedure_type": "TTHC được luật giao quy định chi tiết",
+    "target_users": [
+      "Người Việt Nam định cư ở nước ngoài",
+      "Công dân Việt Nam",
+      "Người nước ngoài"
+    ],
+    "authorities": [],
+    "receiving_places": []
+  },
+  "submission": {
+    "channels": [
+      "in_person",
+      "online",
+      "postal"
+    ],
+    "methods": [
+      {
+        "method_id": "method_1",
+        "channel": "online",
+        "processing_time_text": "10 ngày",
+        "fee_text": null,
+        "description": null,
+        "is_online": true,
+        "is_postal": false,
+        "is_in_person": false
+      },
+      {
+        "method_id": "method_2",
+        "channel": "postal",
+        "processing_time_text": "10 ngày",
+        "fee_text": null,
+        "description": null,
+        "is_online": false,
+        "is_postal": true,
+        "is_in_person": false
+      },
+      {
+        "method_id": "method_3",
+        "channel": "in_person",
+        "processing_time_text": "10 ngày",
+        "fee_text": null,
+        "description": null,
+        "is_online": false,
+        "is_postal": false,
+        "is_in_person": true
+      }
+    ],
+    "timing_summary": {
+      "unique_processing_times": [
+        "10 ngày"
+      ],
+      "method_count": 3
+    }
+  },
+  "documents": {
+    "required": [
+      {
+        "document_id": "t_khai_ng_k_nh_n_cha_m_con_theo_m_u",
+        "name": "Tờ khai đăng ký nhận cha, mẹ, con theo mẫu;",
+        "group_name": "* Giấy tờ phải nộp:",
+        "group_type": "required",
+        "original_count": "1",
+        "copy_count": "0",
+        "conditions": [],
+        "attachment_label": null,
+        "attachment_path": null
+      },
+      {
+        "document_id": "t_khai_ng_k_khai_sinh_theo_m_u",
+        "name": "Tờ khai đăng ký khai sinh theo mẫu;",
+        "group_name": "* Giấy tờ phải nộp:",
+        "group_type": "required",
+        "original_count": "1",
+        "copy_count": "0",
+        "conditions": [],
+        "attachment_label": null,
+        "attachment_path": null
+      },
+      {
+        "document_id": "v_n_b_n_c_a_c_quan_y_t_c_quan_gi_m_nh_ho_c_c_quan_t_ch_c_kh_c_c_th_m_quy_n_trong_n_c_ho_c_n_c_ngo_i_x_c_nh_n_quan_h_cha_con_quan_h_m_con",
+        "name": "Văn bản của cơ quan y tế, cơ quan giám định hoặc cơ quan, tổ chức khác có thẩm quyền ở trong nước hoặc nước ngoài xác nhận quan hệ cha con, quan hệ mẹ con.",
+        "group_name": "* Giấy tờ phải nộp:",
+        "group_type": "required",
+        "original_count": "1",
+        "copy_count": "0",
+        "conditions": [],
+        "attachment_label": null,
+        "attachment_path": null
+      },
+      {
+        "document_id": "gi_y_ch_ng_sinh",
+        "name": "Giấy chứng sinh",
+        "group_name": "* Giấy tờ phải nộp:",
+        "group_type": "required",
+        "original_count": "1",
+        "copy_count": "0",
+        "conditions": [],
+        "attachment_label": null,
+        "attachment_path": null
+      },
+      {
+        "document_id": "ch_ng_c_ch_ng_minh_quan_h_cha_con_ho_c_quan_h_m_con_g_m_m_t_trong_c_c_gi_y_t_t_i_li_u_sau_y",
+        "name": "Chứng cứ chứng minh quan hệ cha, con hoặc quan hệ mẹ, con gồm một trong các giấy tờ, tài liệu sau đây:",
+        "group_name": "* Giấy tờ phải nộp:",
+        "group_type": "required",
+        "original_count": "0",
+        "copy_count": "0",
+        "conditions": [],
+        "attachment_label": null,
+        "attachment_path": null
+      }
+    ],
+    "conditional": [
+      {
+        "document_id": "tr_ng_h_p_cha_ho_c_m_ho_c_c_cha_m_l_ng_i_n_c_ngo_i_th_ph_i_n_p_v_n_b_n_th_a_thu_n_c_a_cha_m_v_vi_c_l_a_ch_n_qu_c_t_ch_cho_con_tr_ng_h_p_cha_m_l_a_ch_n_qu_c_t_ch_n_c_ngo_i_cho_con_th_ngo_i_v_n_b_n_th_a_thu_n_l_a_ch_n_qu_c_t_ch_c_n_ph_i_c_x_c_nh_n_c_a_c_quan_c_th_m_quy_n_n_c_m_tr_c_ch_n_mang_qu_c_t_ch_v_vi_c_tr_c_qu_c_t_ch_ph_h_p_quy_nh_c_a_ph_p_lu_t_n_c",
+        "name": "Trường hợp cha hoặc mẹ hoặc cả cha, mẹ là người nước ngoài thì phải nộp văn bản thỏa thuận của cha, mẹ về việc lựa chọn quốc tịch cho con. Trường hợp cha, mẹ lựa chọn quốc tịch nước ngoài cho con, thì ngoài văn bản thỏa thuận lựa chọn quốc tịch còn phải có xác nhận của cơ quan có thẩm quyền nước mà trẻ được chọn mang quốc tịch về việc trẻ có quốc tịch phù hợp quy định của pháp luật nước đó.",
+        "group_name": "* Giấy tờ phải nộp:",
+        "group_type": "required",
+        "original_count": "1",
+        "copy_count": "0",
+        "conditions": [
+          "Trường hợp cha hoặc mẹ hoặc cả cha, mẹ là người nước ngoài thì phải nộp văn bản thỏa thuận của cha, mẹ về việc lựa chọn quốc tịch cho con. Trường hợp cha, mẹ lựa chọn quốc tịch nước ngoài cho con, thì ngoài văn bản thỏa thuận lựa chọn quốc tịch còn phải có xác nhận của cơ quan có thẩm quyền nước mà trẻ được chọn mang quốc tịch về việc trẻ có quốc tịch phù hợp quy định của pháp luật nước đó."
+        ],
+        "attachment_label": null,
+        "attachment_path": null
+      },
+      {
+        "document_id": "tr_ng_h_p_tr_em_sinh_ra_t_i_n_c_ngo_i_th_n_p_gi_y_ch_ng_sinh_ho_c_gi_y_t_kh_c_do_c_quan_c_th_m_quy_n_n_c_ngo_i_c_p_x_c_nh_n_v_vi_c_tr_em_c_sinh_ra_n_c_ngo_i_v_quan_h_m_con_n_u_c",
+        "name": "Trường hợp trẻ em sinh ra tại nước ngoài thì nộp Giấy chứng sinh hoặc giấy tờ khác do cơ quan có thẩm quyền nước ngoài cấp xác nhận về việc trẻ em được sinh ra ở nước ngoài và quan hệ mẹ - con (nếu có);",
+        "group_name": "* Giấy tờ phải nộp:",
+        "group_type": "required",
+        "original_count": "1",
+        "copy_count": "0",
+        "conditions": [
+          "Trường hợp trẻ em sinh ra tại nước ngoài thì nộp Giấy chứng sinh hoặc giấy tờ khác do cơ quan có thẩm quyền nước ngoài cấp xác nhận về việc trẻ em được sinh ra ở nước ngoài và quan hệ mẹ - con (nếu có);"
+        ],
+        "attachment_label": null,
+        "attachment_path": null
+      },
+      {
+        "document_id": "tr_ng_h_p_kh_ng_c_ch_ng_c_ch_ng_minh_quan_h_cha_m_con_n_u_tr_n_th_ph_i_c_v_n_b_n_cam_oan_c_a_c_c_b_n_nh_n_cha_m_con_c_t_nh_t_hai_ng_i_l_m_ch_ng_v_m_i_quan_h_cha_m_con",
+        "name": "Trường hợp không có chứng cứ chứng minh quan hệ cha, mẹ, con nêu trên thì phải có văn bản cam đoan của các bên nhận cha, mẹ, con, có ít nhất hai người làm chứng về mối quan hệ cha, mẹ, con.",
+        "group_name": "* Giấy tờ phải nộp:",
+        "group_type": "required",
+        "original_count": "0",
+        "copy_count": "0",
+        "conditions": [
+          "Trường hợp không có chứng cứ chứng minh quan hệ cha, mẹ, con nêu trên thì phải có văn bản cam đoan của các bên nhận cha, mẹ, con, có ít nhất hai người làm chứng về mối quan hệ cha, mẹ, con."
+        ],
+        "attachment_label": null,
+        "attachment_path": null
+      },
+      {
+        "document_id": "tr_ng_h_p_ng_k_nh_n_cha_m_con_gi_a_c_ng_d_n_vi_t_nam_v_i_ng_i_n_c_ngo_i_ho_c_gi_a_ng_i_n_c_ngo_i_v_i_nhau_th_ng_i_n_c_ngo_i_ph_i_n_p_b_n_sao_h_chi_u_ho_c_gi_y_t_c_gi_tr_thay_h_chi_u_ch_ng_minh_v_nh_n_th_n",
+        "name": "Trường hợp đăng ký nhận cha, mẹ, con giữa công dân Việt Nam với người nước ngoài hoặc giữa người nước ngoài với nhau thì người nước ngoài phải nộp bản sao hộ chiếu hoặc giấy tờ có giá trị thay hộ chiếu để chứng minh về nhân thân.",
+        "group_name": "* Giấy tờ phải nộp:",
+        "group_type": "required",
+        "original_count": "0",
+        "copy_count": "1",
+        "conditions": [
+          "Trường hợp đăng ký nhận cha, mẹ, con giữa công dân Việt Nam với người nước ngoài hoặc giữa người nước ngoài với nhau thì người nước ngoài phải nộp bản sao hộ chiếu hoặc giấy tờ có giá trị thay hộ chiếu để chứng minh về nhân thân."
+        ],
+        "attachment_label": null,
+        "attachment_path": null
+      },
+      {
+        "document_id": "tr_ng_h_p_ng_i_y_u_c_u_n_p_b_n_i_n_t_gi_y_ch_ng_sinh_ho_c_c_quan_ng_k_h_t_ch_khai_th_c_c_d_li_u_i_n_t_c_k_s_c_a_gi_y_ch_ng_sinh_th_kh_ng_ph_i_n_p_b_n_gi_y",
+        "name": "Trường hợp người yêu cầu đã nộp bản điện tử Giấy chứng sinh hoặc cơ quan đăng ký hộ tịch đã khai thác được dữ liệu điện tử có ký số của Giấy chứng sinh thì không phải nộp bản giấy.",
+        "group_name": "* Giấy tờ phải nộp:",
+        "group_type": "required",
+        "original_count": "0",
+        "copy_count": "0",
+        "conditions": [
+          "Trường hợp người yêu cầu đã nộp bản điện tử Giấy chứng sinh hoặc cơ quan đăng ký hộ tịch đã khai thác được dữ liệu điện tử có ký số của Giấy chứng sinh thì không phải nộp bản giấy."
+        ],
+        "attachment_label": null,
+        "attachment_path": null
+      },
+      {
+        "document_id": "tr_ng_h_p_kh_ng_c_gi_y_ch_ng_sinh_th_n_p_v_n_b_n_c_a_ng_i_l_m_ch_ng_x_c_nh_n_v_vi_c_sinh_n_u_kh_ng_c_v_n_b_n_c_a_ng_i_l_m_ch_ng_th_ph_i_c_gi_y_cam_oan_v_vi_c_sinh",
+        "name": "Trường hợp không có Giấy chứng sinh thì nộp văn bản của người làm chứng xác nhận về việc sinh; nếu không có văn bản của người làm chứng thì phải có giấy cam đoan về việc sinh.",
+        "group_name": "* Giấy tờ phải nộp:",
+        "group_type": "required",
+        "original_count": "1",
+        "copy_count": "0",
+        "conditions": [
+          "Trường hợp không có Giấy chứng sinh thì nộp văn bản của người làm chứng xác nhận về việc sinh; nếu không có văn bản của người làm chứng thì phải có giấy cam đoan về việc sinh."
+        ],
+        "attachment_label": null,
+        "attachment_path": null
+      }
+    ],
+    "presented": [
+      {
+        "document_id": "tr_ng_h_p_kh_ng_khai_th_c_c_th_ng_tin_ho_c_th_ng_tin_khai_th_c_c_kh_ng_y_kh_ng_ch_nh_x_c_th_c_quan_ng_k_h_t_ch_y_u_c_u_ng_i_i_ng_k_h_t_ch_xu_t_tr_nh_b_n_ch_nh_gi_y_t_ch_ng_minh_ng_th_i_ngh_ng_i_i_ng_k_h_t_ch_c_p_nh_t_i_u_ch_nh_th_ng_tin_trong_c_c_c_s_d_li_u_theo_quy_nh_c_a_ph_p_lu_t",
+        "name": "Trường hợp không khai thác được thông tin hoặc thông tin khai thác được không đầy đủ, không chính xác thì cơ quan đăng ký hộ tịch yêu cầu người đi đăng ký hộ tịch xuất trình bản chính giấy tờ để chứng minh, đồng thời đề nghị người đi đăng ký hộ tịch cập nhật, điều chỉnh thông tin trong các cơ sở dữ liệu theo quy định của pháp luật.",
+        "group_name": "* Giấy tờ phải xuất trình:",
+        "group_type": "present",
+        "original_count": "0",
+        "copy_count": "0",
+        "conditions": [
+          "Trường hợp không khai thác được thông tin hoặc thông tin khai thác được không đầy đủ, không chính xác thì cơ quan đăng ký hộ tịch yêu cầu người đi đăng ký hộ tịch xuất trình bản chính giấy tờ để chứng minh, đồng thời đề nghị người đi đăng ký hộ tịch cập nhật, điều chỉnh thông tin trong các cơ sở dữ liệu theo quy định của pháp luật."
+        ],
+        "attachment_label": null,
+        "attachment_path": null
+      },
+      {
+        "document_id": "tr_ng_h_p_gi_y_t_tu_y_th_n_s_du_ng_la_h_chi_u_the_c_n_c_c_c_n_c_c_c_ng_d_n_gi_y_ch_ng_nh_n_c_n_c_c_thi_ng_i_co_y_u_c_u_ng_ky_h_ti_ch_chi_c_n_cung_c_p_th_ng_tin_s_i_nh_danh_ca_nh_n_ho_c_th_ng_tin_v_gi_y_t_s_nga_y_tha_ng_n_m_c_p_c_quan_ng_k_h_t_ch_c_tr_ch_nhi_m_tra_c_u_th_ng_tin_th_ng_qua_k_t_n_i_v_i_c_s_d_li_u_h_t_ch_i_n_t_c_s_d_li_u_qu_c_gia_v_d_n_c_ho_c_c_s_d_li_u_kh_c_c_li_n_quan_i_chi_u_khai_th_c_d_li_u",
+        "name": "Trường hợp giấy tờ tùy thân sử dụng là: Hộ chiếu, Thẻ căn cước, Căn cước công dân, Giấy chứng nhận căn cước thì người có yêu cầu đăng ký hộ tịch chỉ cần cung cấp thông tin số định danh cá nhân hoặc thông tin về giấy tờ (số, ngày/tháng/năm cấp), cơ quan đăng ký hộ tịch có trách nhiệm tra cứu thông tin thông qua kết nối với Cơ sở dữ liệu hộ tịch điện tử, Cơ sở dữ liệu quốc gia về dân cư hoặc cơ sở dữ liệu khác có liên quan để đối chiếu, khai thác dữ liệu.",
+        "group_name": "* Giấy tờ phải xuất trình:",
+        "group_type": "present",
+        "original_count": "0",
+        "copy_count": "0",
+        "conditions": [],
+        "attachment_label": null,
+        "attachment_path": null
+      },
+      {
+        "document_id": "tr_ng_h_p_c_c_th_ng_tin_c_nh_n_trong_c_c_gi_y_t_n_y_c_trong_c_s_d_li_u_qu_c_gia_v_d_n_c_c_s_d_li_u_h_ti_ch_i_n_t_c_h_th_ng_i_n_t_ng_th_kh_ng_ph_i_t_i_l_n_theo_h_nh_th_c_tr_c_tuy_n",
+        "name": "Trường hợp các thông tin cá nhân trong các giấy tờ này đã có trong Cơ sở dữ liệu quốc gia về dân cư, Cơ sở dữ liệu hộ tịch điện tử, được hệ thống điền tự động thì không phải tải lên (theo hình thức trực tuyến)",
+        "group_name": "* Giấy tờ phải xuất trình:",
+        "group_type": "present",
+        "original_count": "0",
+        "copy_count": "0",
+        "conditions": [
+          "Trường hợp các thông tin cá nhân trong các giấy tờ này đã có trong Cơ sở dữ liệu quốc gia về dân cư, Cơ sở dữ liệu hộ tịch điện tử, được hệ thống điền tự động thì không phải tải lên (theo hình thức trực tuyến)"
+        ],
+        "attachment_label": null,
+        "attachment_path": null
+      },
+      {
+        "document_id": "gi_y_t_c_gi_tr_ch_ng_minh_th_ng_tin_v_c_tr_trong_tr_ng_h_p_c_quan_ng_k_h_t_ch_kh_ng_th_khai_th_c_c_th_ng_tin_v_n_i_c_tr_c_a_c_ng_d_n_theo_c_c_ph_ng_th_c_quy_nh_t_i_kho_n_2_i_u_14_ngh_nh_s_104_2022_n_cp_ng_y_21_12_2022_c_a_ch_nh_ph_tr_ng_h_p_c_c_th_ng_tin_v_gi_y_t_ch_ng_minh_n_i_c_tr_c_khai_th_c_t_c_s_d_li_u_qu_c_gia_v_d_n_c_b_ng_c_c_ph_ng_th_c_n_y_th_ng_i_c_y_u_c_u_kh_ng_ph_i_xu_t_tr_nh_theo_h_nh_th_c_tr_c_ti_p_ho_c_t_i_l_n_theo_h_nh_th_c_tr_c_tuy_n",
+        "name": "Giấy tờ có giá trị chứng minh thông tin về cư trú trong trường hợp cơ quan đăng ký hộ tịch không thể khai thác được thông tin về nơi cư trú của công dân theo các phương thức quy định tại khoản 2 Điều 14 Nghị định số 104/2022/NĐ-CP ngày 21/12/2022 của Chính phủ. Trường hợp các thông tin về giấy tờ chứng minh nơi cư trú đã được khai thác từ Cơ sở dữ liệu quốc gia về dân cư bằng các phương thức này thì người có yêu cầu không phải xuất trình (theo hình thức trực tiếp) hoặc tải lên (theo hình thức trực tuyến).",
+        "group_name": "* Giấy tờ phải xuất trình:",
+        "group_type": "present",
+        "original_count": "1",
+        "copy_count": "0",
+        "conditions": [
+          "Giấy tờ có giá trị chứng minh thông tin về cư trú trong trường hợp cơ quan đăng ký hộ tịch không thể khai thác được thông tin về nơi cư trú của công dân theo các phương thức quy định tại khoản 2 Điều 14 Nghị định số 104/2022/NĐ-CP ngày 21/12/2022 của Chính phủ. Trường hợp các thông tin về giấy tờ chứng minh nơi cư trú đã được khai thác từ Cơ sở dữ liệu quốc gia về dân cư bằng các phương thức này thì người có yêu cầu không phải xuất trình (theo hình thức trực tiếp) hoặc tải lên (theo hình thức trực tuyến)."
+        ],
+        "attachment_label": null,
+        "attachment_path": null
+      },
+      {
+        "document_id": "tr_ng_h_p_tr_em_sinh_ra_n_c_ngo_i_c_cha_ho_c_m_l_c_ng_d_n_vi_t_nam_ho_c_cha_v_m_u_l_c_ng_d_n_vi_t_nam_ch_a_c_ng_k_khai_sinh_n_c_ngo_i_v_c_tr_t_i_vi_t_nam_th_xu_t_tr_nh_gi_y_t_ch_ng_minh_vi_c_tr_em_nh_p_c_nh_h_p_ph_p_v_o_vi_t_nam_nh_h_chi_u_gi_y_t_c_gi_tr_i_l_i_qu_c_t_c_d_u_x_c_nh_n_nh_p_c_nh_c_a_c_quan_qu_n_l_xu_t_nh_p_c_nh_v_v_n_b_n_x_c_nh_n_c_a_c_quan_c_ng_an_c_th_m_quy_n_v_vi_c_tr_em_ang_c_tr_t_i_vi_t_nam",
+        "name": "Trường hợp trẻ em sinh ra ở nước ngoài, có cha hoặc mẹ là công dân Việt Nam hoặc cha và mẹ đều là công dân Việt Nam, chưa được đăng ký khai sinh ở nước ngoài, về cư trú tại Việt Nam thì xuất trình giấy tờ chứng minh việc trẻ em đã nhập cảnh hợp pháp vào Việt Nam (như: hộ chiếu, giấy tờ có giá trị đi lại quốc tế có dấu xác nhận nhập cảnh của cơ quan quản lý xuất, nhập cảnh) và văn bản xác nhận của cơ quan công an có thẩm quyền về việc trẻ em đang cư trú tại Việt Nam.",
+        "group_name": "* Giấy tờ phải xuất trình:",
+        "group_type": "present",
+        "original_count": "1",
+        "copy_count": "0",
+        "conditions": [
+          "Trường hợp trẻ em sinh ra ở nước ngoài, có cha hoặc mẹ là công dân Việt Nam hoặc cha và mẹ đều là công dân Việt Nam, chưa được đăng ký khai sinh ở nước ngoài, về cư trú tại Việt Nam thì xuất trình giấy tờ chứng minh việc trẻ em đã nhập cảnh hợp pháp vào Việt Nam (như: hộ chiếu, giấy tờ có giá trị đi lại quốc tế có dấu xác nhận nhập cảnh của cơ quan quản lý xuất, nhập cảnh) và văn bản xác nhận của cơ quan công an có thẩm quyền về việc trẻ em đang cư trú tại Việt Nam."
+        ],
+        "attachment_label": null,
+        "attachment_path": null
+      },
+      {
+        "document_id": "h_chi_u_th_c_n_c_c_c_ng_d_n_th_c_n_c_c_c_n_c_c_i_n_t_gi_y_ch_ng_nh_n_c_n_c_c_ho_c_c_c_gi_y_t_kh_c_c_d_n_nh_v_th_ng_tin_c_nh_n_do_c_quan_c_th_m_quy_n_c_p_c_n_gi_tr_s_d_ng_sau_y_go_i_t_t_la_gi_y_t_tu_y_th_n_ch_ng_minh_v_nh_n_th_n_khi_la_m_thu_tu_c_tr_c_ti_p_ta_i_c_quan_ng_ky_h_ti_ch",
+        "name": "Hộ chiếu/Thẻ căn cước công dân/Thẻ căn cước/Căn cước điện tử/Giấy chứng nhận căn cước hoặc các giấy tờ khác có dán ảnh và thông tin cá nhân do cơ quan có thẩm quyền cấp, còn giá trị sử dụng (sau đây gọi tắt là giấy tờ tùy thân) để chứng minh về nhân thân khi làm thủ tục trực tiếp tại cơ quan đăng ký hộ tịch.",
+        "group_name": "* Giấy tờ phải xuất trình:",
+        "group_type": "present",
+        "original_count": "1",
+        "copy_count": "0",
+        "conditions": [],
+        "attachment_label": null,
+        "attachment_path": null
+      },
+      {
+        "document_id": "tr_ng_h_p_g_i_h_s_qua_h_th_ng_b_u_ch_nh_th_ph_i_g_i_k_m_theo_b_n_sao_c_ch_ng_th_c_c_c_gi_y_t_ph_i_xu_t_tr_nh_n_u_tr_n",
+        "name": "Trường hợp gửi hồ sơ qua hệ thống bưu chính thì phải gửi kèm theo bản sao có chứng thực các giấy tờ phải xuất trình nêu trên.",
+        "group_name": "* Giấy tờ phải xuất trình:",
+        "group_type": "present",
+        "original_count": "0",
+        "copy_count": "0",
+        "conditions": [
+          "Trường hợp gửi hồ sơ qua hệ thống bưu chính thì phải gửi kèm theo bản sao có chứng thực các giấy tờ phải xuất trình nêu trên."
+        ],
+        "attachment_label": null,
+        "attachment_path": null
+      }
+    ],
+    "notes": [
+      "Trường hợp người yêu cầu đăng ký hộ tịch không cung cấp được giấy tờ theo quy định hoặc giấy tờ nộp, xuất trình bị tẩy xóa, sửa chữa, làm giả thì cơ quan đăng ký hộ tịch có thẩm quyền hủy bỏ kết quả đăng ký hộ tịch.",
+      "Trường hợp người yêu cầu nộp bản chụp kèm theo bản chính giấy tờ thì người tiếp nhận có trách nhiệm kiểm tra, đối chiếu bản chụp với bản chính và ký xác nhận, không được yêu cầu nộp bản sao giấy tờ đó.",
+      "Trường hợp cha, mẹ không thỏa thuận được về họ, dân tộc, quê quán của con khi đăng ký khai sinh thì họ, dân tộc, quê quán của con được xác định theo tập quán nhưng phải bảo đảm theo họ, dân tộc, quê quán của cha hoặc mẹ.",
+      "Việc xác định họ, dân tộc, đặt tên cho trẻ em phải phù hợp với pháp luật và yêu cầu giữ gìn bản sắc dân tộc, tập quán, truyền thống văn hóa tốt đẹp của Việt Nam; không đặt tên quá dài, khó sử dụng.",
+      "Giấy tờ do cơ quan có thẩm quyền của nước ngoài cấp, công chứng hoặc xác nhận để sử dụng cho việc đăng ký hộ tịch tại Việt Nam phải được hợp pháp hóa lãnh sự theo quy định của pháp luật, trừ trường hợp được miễn theo điều ước quốc tế mà Việt Nam là thành viên.",
+      "Cơ quan đăng ký hộ tịch từ chối giải quyết hoặc đề nghị cơ quan có thẩm quyền hủy bỏ kết quả đăng ký hộ tịch, nếu có cơ sở xác định nội dung cam đoan không đúng sự thật.",
+      "Trường hợp người yêu cầu đăng k‎ý hộ tịch lựa chọn nhận kết quả tại Trung tâm Phục vụ hành chính công thì người yêu cầu đăng ký hộ tịch phải xuất trình giấy tờ tuỳ thân, nộp các giấy tờ là thành phần hồ sơ theo quy định; Trường hợp người yêu cầu đăng ký hộ tịch không lựa chọn nhận kết quả tại Trung tâm Phục vụ hành chính công thì người yêu cầu đăng ký hộ tịch nộp các giấy tờ là thành phần hồ sơ theo quy định trước khi nhận kết quả.",
+      "Người tiếp nhận có trách nhiệm tiếp nhận đúng, đủ hồ sơ đăng ký hộ tịch theo quy định của pháp luật hộ tịch, không được yêu cầu người đăng ký hộ tịch nộp thêm giấy tờ mà pháp luật hộ tịch không quy định phải nộp .",
+      "Người yêu cầu đăng ký hộ tịch có thể nộp bản sao được chứng thực từ bản chính hoặc bản sao được cấp từ sổ gốc (sau đây gọi là bản sao) hoặc bản chụp kèm theo bản chính, bản điện tử các giấy tờ này, bao gồm cả giấy tờ được tích hợp, hiển thị trên Ứng dụng định danh điện tử (VneID).",
+      "Trường hợp cho phép người yêu cầu đăng ký hộ tịch lập văn bản cam đoan về nội dung yêu cầu đăng ký hộ tịch thì cơ quan đăng ký hộ tịch phải giải thích rõ cho người lập văn bản cam đoan về trách nhiệm, hệ quả pháp lý của việc cam đoan không đúng sự thật.",
+      "Đối với giấy tờ nộp, xuất trình:",
+      "Người tiếp nhận hồ sơ thực hiện khai thác thông tin trong Cơ sở dữ liệu quốc gia về dân cư theo quy định pháp luật nếu người yêu cầu đăng ký hộ tịch đã cung cấp họ, chữ đệm, tên; ngày, tháng, năm sinh; số định danh cá nhân/căn cước công dân/thẻ căn cước/chứng minh nhân dân. Trường hợp các thông tin cần khai thác không có trong Cơ sở dữ liệu quốc gia về dân cư thì đề nghị người yêu cầu kê khai đầy đủ.",
+      "Đối với việc xác định họ, dân tộc, quê quán, đặt tên cho trẻ:",
+      "Cá nhân có quyền lựa chọn thực hiện thủ tục hành chính về hộ tịch tại cơ quan đăng ký hộ tịch nơi cư trú; nơi cư trú của cá nhân được xác định theo quy định của pháp luật về cư trú. Trường hợp cá nhân lựa chọn thực hiện thủ tục hành chính về hộ tịch không phải tại Ủy ban nhân dân cấp xã nơi thường trú hoặc nơi tạm trú thì Ủy ban nhân dân cấp xã nơi tiếp nhận yêu cầu có trách nhiệm hỗ trợ người dân nộp hồ sơ đăng ký hộ tịch trực tuyến đến đúng cơ quan có thẩm quyền theo quy định.",
+      "Đối với giấy tờ xuất trình khi đăng ký hộ tịch, người tiếp nhận có trách nhiệm kiểm tra, đối chiếu, ghi lại thông tin hoặc chụp lại, ký xác nhận để lưu trong hồ sơ và trả lại cho người xuất trình, không được yêu cầu nộp bản sao hoặc bản chụp giấy tờ đó."
+    ],
+    "forms": [],
+    "empty_groups": [],
+    "document_count": 18
+  },
+  "process": {
+    "steps": [
+      {
+        "step_id": "step_1",
+        "title": null,
+        "content": "1. - Nếu lựa chọn hình thức nộp hồ sơ trực tiếp, người yêu cầu đăng ký nhận cha, mẹ, con nộp hồ sơ đăng ký nhận cha, mẹ, con tại Trung tâm phục vụ hành chính công có thẩm quyền; nộp lệ phí nếu thuộc trường hợp phải nộp lệ phí đăng ký nhận cha, mẹ, con; nộp phí cấp bản sao Trích lục đăng ký nhận cha, mẹ, con nếu có yêu cầu cấp bản sao Trích lục đăng ký nhận cha, mẹ, con.",
+        "actor": "user",
+        "channel_hint": "trực tiếp",
+        "time_hint": null
+      },
+      {
+        "step_id": "step_2",
+        "title": null,
+        "content": "- Nếu lựa chọn hình thức nộp hồ sơ trực tuyến, người yêu cầu đăng ký nhận cha, mẹ, con truy cập Cổng dịch vụ công quốc gia hoặc Ứng dụng định danh quốc gia.",
+        "actor": "user",
+        "channel_hint": "trực tuyến",
+        "time_hint": null
+      },
+      {
+        "step_id": "step_3",
+        "title": null,
+        "content": "Người yêu cầu đăng ký nhận cha, mẹ, con trực tuyến cung cấp thông tin theo mẫu hộ tịch điện tử tương tác đăng ký nhận cha, mẹ, con, đính kèm bản chụp hoặc bản sao điện tử các giấy tờ, tài liệu theo quy định; nộp phí, lệ phí thông qua chức năng thanh toán trực tuyến hoặc bằng cách thức khác theo quy định pháp luật, hoàn tất việc nộp hồ sơ.",
+        "actor": "user",
+        "channel_hint": "trực tuyến",
+        "time_hint": null
+      },
+      {
+        "step_id": "step_4",
+        "title": null,
+        "content": "- Cán bộ tiếp nhận hồ sơ tại Trung tâm Phục vụ hành chính công có trách nhiệm kiểm tra tính chính xác, đầy đủ, thống nhất, hợp lệ của hồ sơ.",
+        "actor": "authority",
+        "channel_hint": null,
+        "time_hint": null
+      },
+      {
+        "step_id": "step_5",
+        "title": null,
+        "content": "(i) Trường hợp hồ sơ đầy đủ, hợp lệ thì tiếp nhận hồ sơ, có Phiếu hẹn, trả kết quả cho người yêu cầu, đồng thời chuyển hồ sơ để công chức tư pháp - hộ tịch xử lý; trường hợp tiếp nhận hồ sơ tại Trung tâm Phục vụ hành chính công cấp tỉnh, cán bộ tiếp nhận hồ sơ chuyển hồ sơ đến Ủy ban nhân dân cấp xã có thẩm quyền xử lý.",
+        "actor": "authority",
+        "channel_hint": null,
+        "time_hint": null
+      },
+      {
+        "step_id": "step_6",
+        "title": null,
+        "content": "(ii) Trường hợp hồ sơ chưa đầy đủ, hợp lệ thì cán bộ tiếp nhận hồ sơ thông báo cho người yêu cầu bổ sung, hoàn thiện hồ sơ, nêu rõ loại giấy tờ, nội dung cần bổ sung để người yêu cầu bổ sung, hoàn thiện. Sau khi hồ sơ được bổ sung, thực hiện lại bước (i);",
+        "actor": "authority",
+        "channel_hint": null,
+        "time_hint": null
+      },
+      {
+        "step_id": "step_7",
+        "title": null,
+        "content": "(iii) Trường hợp người yêu cầu đăng ký khai sinh và nhận cha, mẹ, con không bổ sung, hoàn thiện được hồ sơ thì cán bộ tiếp nhận hồ sơ báo cáo Lãnh đạo Trung tâm Phục vụ hành chính công có thông báo từ chối giải quyết yêu cầu đăng ký khai sinh và nhận cha, mẹ, con.",
+        "actor": "authority",
+        "channel_hint": null,
+        "time_hint": null
+      },
+      {
+        "step_id": "step_8",
+        "title": null,
+        "content": "- Công chức tư pháp - hộ tịch thẩm tra hồ sơ (thẩm tra tính thống nhất, hợp lệ của các thông tin trong hồ sơ, giấy tờ, tài liệu do người yêu cầu nộp, xuất trình hoặc đính kèm).",
+        "actor": "authority",
+        "channel_hint": null,
+        "time_hint": null
+      },
+      {
+        "step_id": "step_9",
+        "title": null,
+        "content": "+ Trường hợp hồ sơ cần bổ sung, hoàn thiện hoặc không đủ điều kiện giải quyết, phải từ chối thì công chức tư pháp - hộ tịch gửi thông báo về tình trạng hồ sơ tới Trung tâm Phục vụ hành chính công để thông báo cho người nộp hồ sơ – thực hiện lại bước (ii) hoặc (iii);",
+        "actor": "authority",
+        "channel_hint": null,
+        "time_hint": null
+      },
+      {
+        "step_id": "step_10",
+        "title": null,
+        "content": "+ Trường hợp cần phải kiểm tra, xác minh làm rõ hoặc do nguyên nhân khác mà không thể trả kết quả đúng thời gian đã hẹn thì công chức tư pháp - hộ tịch lập Phiếu xin lỗi và hẹn lại ngày trả kết quả, trong đó nêu rõ lý do chậm trả kết quả và thời gian hẹn trả kết quả, chuyển Trung tâm Phục vụ hành chính công để trả cho người yêu cầu;",
+        "actor": "authority",
+        "channel_hint": null,
+        "time_hint": null
+      },
+      {
+        "step_id": "step_11",
+        "title": null,
+        "content": "+ Công chức tư pháp - hộ tịch xác minh, niêm yết việc nhận cha, mẹ, con tại trụ sở Ủy ban nhân dân cấp xã trong thời gian 05 ngày làm việc, đồng thời gửi văn bản đề nghị Ủy ban nhân dân cấp xã nơi thường trú của người được nhận là cha, mẹ, con niêm yết trong thời gian 05 ngày làm việc tại trụ sở Ủy ban nhân dân cấp xã.",
+        "actor": "authority",
+        "channel_hint": null,
+        "time_hint": "05 ngày làm việc"
+      },
+      {
+        "step_id": "step_12",
+        "title": null,
+        "content": "+ Nếu thấy việc nhận cha, mẹ, con là đúng và không có tranh chấp, thông tin khai sinh đầy đủ và phù hợp, thì công chức tư pháp - hộ tịch thực hiện ghi vào Sổ đăng ký nhận cha, mẹ, con, Sổ đăng ký khai sinh, cập nhật thông tin đăng ký khai sinh, đăng ký nhận cha, mẹ, con trên Phần mềm đăng ký, quản lý hộ tịch điện tử dùng chung. Trường hợp cha, mẹ lựa chọn quốc tịch Việt Nam cho con thì chuyển thông tin đến Cơ sở dữ liệu quốc gia về dân cư để lấy Số định danh cá nhân.",
+        "actor": "authority",
+        "channel_hint": null,
+        "time_hint": null
+      },
+      {
+        "step_id": "step_13",
+        "title": null,
+        "content": "- Sau khi Cơ sở dữ liệu quốc gia về dân cư trả về Số định danh cá nhân, công chức tư pháp - hộ tịch in Giấy khai sinh, Trích lục đăng ký nhận cha, mẹ, con, trình Lãnh đạo Ủy ban nhân dân cấp xã ký, chuyển tới Trung tâm Phục vụ hành chính công trả kết quả cho người yêu cầu.",
+        "actor": "authority",
+        "channel_hint": null,
+        "time_hint": null
+      }
+    ],
+    "step_count": 13,
+    "notes": []
+  },
+  "eligibility": {
+    "conditions": [],
+    "has_conditions": false
+  },
+  "results": {
+    "items": [
+      {
+        "name": "Giấy khai sinh",
+        "result_code": "KQ.G15.000031",
+        "raw_text": "Giấy khai sinh"
+      },
+      {
+        "name": "Trích lục đăng ký nhận cha, mẹ, con",
+        "result_code": "KQ.G15.000033",
+        "raw_text": "Trích lục đăng ký nhận cha, mẹ, con"
+      }
+    ],
+    "primary_result": {
+      "name": "Giấy khai sinh",
+      "result_code": "KQ.G15.000031",
+      "raw_text": "Giấy khai sinh"
+    }
+  },
+  "legal_basis": {
+    "items": [
+      {
+        "title": "Nghị quyết số 66.7/2025/NQ-CP của Chính phủ: Quy định cắt giảm, đơn giản hóa thủ tục hành chính dựa trên dữ liệu",
+        "code": "66.7/2025/NQ-CP"
+      },
+      {
+        "title": "Luật 60/2014/QH13",
+        "code": "60/2014/QH13"
+      },
+      {
+        "title": "Thông tư Hướng dẫn về phí và lệ phí thuộc thẩm quyền quyết định của Hội đồng nhân dân tỉnh, thành phố trực thuộc Trung ương",
+        "code": "85/2019/TT-BTC"
+      },
+      {
+        "title": "Nghị định số 123/2015/NĐ-CP ngày 15/11/2015 của Chính phủ quy định chi tiết một số điều và biện pháp thi hành Luật Hộ tịch",
+        "code": "123/2015/NĐ-CP"
+      },
+      {
+        "title": "Thông tư số 08/2025/TT-BTP ngày 12/6/2025 của Bộ trưởng Bộ Tư pháp quy định về phân định thẩm quyền của chính quyền địa phương 02 cấp và phân cấp trong lĩnh vực quản lý nhà nước của Bộ Tư pháp",
+        "code": "08/2025/TT-BTP"
+      },
+      {
+        "title": "quy định mức thu, chế độ thu, nộp, quản lý và sử dụng phí khai thác, sử dụng thông tin trong cơ sở dữ liệu hộ tịch, phí xác nhận có quốc tịch Việt Nam, phí xác nhận là người gốc Việt Nam, lệ phí quốc tịch",
+        "code": "Thông tư số 281/2016/TT-BTC"
+      },
+      {
+        "title": "Sửa đổi, bổ sung một số điều của Thông tư số 02/2020/TT-BTP ngày 08/4/2020 của Bộ trưởng Bộ Tư pháp ban hành, hướng dẫn sử dụng, quản lý mẫu sổ quốc tịch và mẫu giấy tờ về quốc tịch và Thông tư số 04/2020/TT-BTP ngày 28/5/2020 của Bộ trưởng Bộ Tư pháp quy định chi tiết thi hành một số điều của Luật Hộ tịch và Nghị định số 123/2015/NĐ-CP ngày 15/11/2015 của Chính phủ quy định chi tiết một số điều và biện pháp thi hành Luật Hộ tịch",
+        "code": "04/2024/TT-BTP"
+      },
+      {
+        "title": "Nghị định sửa đổi, bổ sung một số điều của các Nghị định liên quan đến việc nộp xuất trình sổ hộ khẩu, sổ tạm trú giấy khi thực hiện thủ tục hành chính, cung cấp dịch vụ công",
+        "code": "104/2022/NĐ-CP"
+      },
+      {
+        "title": "Hướng dẫn Luật hộ tịch và Nghị định 123/2015/NĐ-CP hướng dẫn Luật hộ tịch do Bộ trưởng Bộ Tư pháp ban hành",
+        "code": "04/2020/TT-BTP"
+      },
+      {
+        "title": "Nghị định sửa đổi, bổ sung một số điều của các Nghị định trong lĩnh vực hộ tịch, quốc tịch, chứng thực.",
+        "code": "07/2025/NĐ-CP"
+      },
+      {
+        "title": "Nghị định số 120/2025/NĐ-CP ngày 11/6/2025 của Chính phủ quy định về phân định thẩm quyền của chính quyền địa phương 02 cấp trong lĩnh vực quản lý nhà nước của Bộ Tư pháp.",
+        "code": "120/2025/NĐ-CP"
+      },
+      {
+        "title": "Luật 52/2014/QH13",
+        "code": "52/2014/QH13"
+      },
+      {
+        "title": "Thông tư sửa đổi, bổ sung một số điều của Thông tư số 85/2019/TT-BTC ngày 29/11/2019 của Bộ Tài chính hướng dẫn về phí và lệ phí thuộc thẩm quyền quyết định của Hội đồng nhân dân tỉnh, thành phố trực thuộc Trung ương.",
+        "code": "106/2021/TT-BTC"
+      },
+      {
+        "title": "Nghị định sửa đổi, bổ sung một số nghị định để cắt giảm, đơn giản hóa thủ tục hành chính, điều kiện kinh doanh thuộc phạm vi quản lý của Bộ Tư pháp",
+        "code": "18/2026/NĐ-CP"
+      }
+    ],
+    "count": 14
+  },
+  "attachments": [],
+  "signals": {
+    "raw_parse_warnings": [],
+    "missing_documents": false,
+    "documents_section_present": true,
+    "documents_declared_empty": false,
+    "documents_only_in_notes": false,
+    "missing_results": false
+  }
+}

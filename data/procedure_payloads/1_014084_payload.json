@@ -1,0 +1,519 @@
+{
+  "schema_version": "3.0",
+  "record_type": "public_service_procedure_payload",
+  "id": "procedure-1.014084",
+  "procedure_code": "1.014084",
+  "code": "1.014084",
+  "title": "Cấp Chứng chỉ hành nghề dược (bao gồm cả trường hợp cấp Chứng chỉ hành nghề dược cho người bị thu hồi Chứng chỉ hành nghề dược theo quy định tại các khoản 1, 2, 4, 5, 6, 7, 8, 9, 10, 11 Điều 28 của Luật Dược) theo hình thức thi",
+  "language": "vi",
+  "status": "generated_from_pipeline",
+  "field": "Dược phẩm",
+  "group_key": "hoc_tap",
+  "workflow_family": null,
+  "subflow": null,
+  "source": {
+    "source_url": "file:///C:/Users/ku060/Downloads/VAIC%20source/data-pipeline/raw_data/1_014084/1_014084_procedure_detail.md",
+    "source_markdown_path": "C:\\Users\\ku060\\Downloads\\VAIC source\\data-pipeline\\raw_data\\1_014084\\1_014084_procedure_detail.md",
+    "normalized_payload_path": "C:\\Users\\ku060\\Downloads\\VAIC source\\data-pipeline\\govease-unified\\data\\normalized_structured\\1_014084_normalized_structured.json",
+    "enriched_payload_path": "C:\\Users\\ku060\\Downloads\\VAIC source\\data-pipeline\\govease-unified\\data\\enriched_structured_priority\\1_014084_enriched_structured.json"
+  },
+  "scope": {
+    "included": "Thủ tục này thuộc nhóm giáo dục và học tập, thường liên quan đến hồ sơ đào tạo, văn bằng hoặc điều kiện học tập của người học. Kết quả thường nhận được là Chứng chỉ hành nghề dược. Thời gian xử lý tham khảo: 20 ngày.",
+    "not_included": []
+  },
+  "agency": {
+    "executing_agency": "Bộ Y tế",
+    "submission_place": null,
+    "receiving_places": []
+  },
+  "target_users": [
+    "Doanh nghiệp có vốn đầu tư nước ngoài",
+    "Doanh nghiệp Việt Nam",
+    "Hợp tác xã",
+    "Doanh nghiệp",
+    "Tổ chức nước ngoài",
+    "Tổ chức (không bao gồm doanh nghiệp",
+    "HTX)"
+  ],
+  "submission_methods": [
+    {
+      "code": "ONLINE",
+      "label": "Trực tuyến",
+      "processing_time": "20 ngày",
+      "fee": null,
+      "description": null
+    },
+    {
+      "code": "POSTAL",
+      "label": "Dịch vụ bưu chính",
+      "processing_time": "20 ngày",
+      "fee": null,
+      "description": null
+    },
+    {
+      "code": "IN_PERSON",
+      "label": "Trực tiếp",
+      "processing_time": "20 ngày",
+      "fee": null,
+      "description": null
+    }
+  ],
+  "processing_note": "Thời gian xử lý tham chiếu: 20 ngày. Nên rà trước thông tin người học, cơ sở đào tạo và loại kết quả cần xin xác nhận hoặc cấp lại. Có thể chọn kênh nộp phù hợp: Trực tiếp, Trực tuyến, Dịch vụ bưu chính. Hiện có khoảng 8 mục giấy tờ cần theo dõi trong checklist.",
+  "documents": {
+    "normally_required": [
+      {
+        "name": "Văn bằng chuyên môn.",
+        "quantity": "1 bản chính, 1 bản sao",
+        "notes": [],
+        "group": "default",
+        "attachment_path": null
+      },
+      {
+        "name": "Giấy tờ do cơ quan có thẩm quyền nước ngoài cấp phải được hợp pháp hóa lãnh sự theo quy định, phải có bản dịch sang tiếng Việt và được chứng thực chữ ký người dịch theo quy định",
+        "quantity": "1 bản chính, 1 bản sao",
+        "notes": [],
+        "group": "default",
+        "attachment_path": null
+      },
+      {
+        "name": "Giấy chứng nhận đủ sức khỏe để hành nghề dược do cơ sở y tế có thẩm quyền cấp",
+        "quantity": "1 bản chính, 1 bản sao",
+        "notes": [],
+        "group": "default",
+        "attachment_path": null
+      },
+      {
+        "name": "Giấy công nhận tương đương của cơ quan có thẩm quyền về công nhận tương đương theo quy định tại khoản 2 Điều 12 của Nghị định số 163/2025/NĐ-CP đối với các văn bằng chuyên môn do cơ sở đào tạo nước ngoài cấp",
+        "quantity": "1 bản chính, 1 bản sao",
+        "notes": [],
+        "group": "default",
+        "attachment_path": null
+      },
+      {
+        "name": "Đơn đề nghị cấp Chứng chỉ hành nghề dược, có ảnh chân dung của người đề nghị được chụp trong thời gian không quá 06 tháng. Mẫu số 02 Phụ lục I của Nghị định số 163/2025/NĐ-CP",
+        "quantity": "1 bản chính, 0 bản sao",
+        "notes": [],
+        "group": "default",
+        "attachment_path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/1_014084/Mu.docx"
+      }
+    ],
+    "conditional": [
+      {
+        "condition": "Phiếu lý lịch tư pháp. Trường hợp là người nước ngoài, người Việt Nam định cư ở nước ngoài phải có lý lịch tư pháp hoặc văn bản xác nhận hiện không phải là người phạm tội hoặc bị truy cứu trách nhiệm hình sự, không thuộc trường hợp bị cấm hành nghề, cấm làm công việc liên quan đến hoạt động dược theo bản án, quyết định của Tòa án do cơ quan có thẩm quyền của nước ngoài cấp. Không yêu cầu nộp Phiếu lý lịch tư pháp kể từ ngày dữ liệu về lý lịch tư pháp được chia sẻ theo quy định tại khoản 5 Điều 127 của Nghị định số 163/2025/NĐ-CP",
+        "document": "Phiếu lý lịch tư pháp. Trường hợp là người nước ngoài, người Việt Nam định cư ở nước ngoài phải có lý lịch tư pháp hoặc văn bản xác nhận hiện không phải là người phạm tội hoặc bị truy cứu trách nhiệm hình sự, không thuộc trường hợp bị cấm hành nghề, cấm làm công việc liên quan đến hoạt động dược theo bản án, quyết định của Tòa án do cơ quan có thẩm quyền của nước ngoài cấp. Không yêu cầu nộp Phiếu lý lịch tư pháp kể từ ngày dữ liệu về lý lịch tư pháp được chia sẻ theo quy định tại khoản 5 Điều 127 của Nghị định số 163/2025/NĐ-CP",
+        "quantity": "1 bản chính, 1 bản sao",
+        "notes": [],
+        "attachment_path": null
+      },
+      {
+        "condition": "Giấy xác nhận thời gian thực hành. Trường hợp thực hành tại nhiều cơ sở, thời gian thực hành được tính là tổng thời gian thực hành tại các cơ sở nhưng phải có Giấy xác nhận thời gian thực hành của từng cơ sở đó; Trường hợp đề nghị cấp Chứng chỉ hành nghề dược với phạm vi hoạt động khác nhau và yêu cầu thời gian thực hành, cơ sở thực hành chuyên môn khác nhau thì hồ sơ phải có Giấy xác nhận thời gian thực hành chuyên môn và nội dung thực hành chuyên môn của một hoặc một số cơ sở đáp ứng yêu cầu của mỗi phạm vi, vị trí hành nghề. Trường hợp các phạm vi hoạt động chuyên môn có cùng yêu cầu về thời gian thực hành và cơ sở thực hành chuyên môn thì không yêu cầu phải có Giấy xác nhận riêng đối với từng phạm vi hoạt động chuyên môn; Mẫu số 03 tại Phụ lục I ban hành kèm theo Nghị định số 163/2025/NĐ-CP",
+        "document": "Giấy xác nhận thời gian thực hành. Trường hợp thực hành tại nhiều cơ sở, thời gian thực hành được tính là tổng thời gian thực hành tại các cơ sở nhưng phải có Giấy xác nhận thời gian thực hành của từng cơ sở đó; Trường hợp đề nghị cấp Chứng chỉ hành nghề dược với phạm vi hoạt động khác nhau và yêu cầu thời gian thực hành, cơ sở thực hành chuyên môn khác nhau thì hồ sơ phải có Giấy xác nhận thời gian thực hành chuyên môn và nội dung thực hành chuyên môn của một hoặc một số cơ sở đáp ứng yêu cầu của mỗi phạm vi, vị trí hành nghề. Trường hợp các phạm vi hoạt động chuyên môn có cùng yêu cầu về thời gian thực hành và cơ sở thực hành chuyên môn thì không yêu cầu phải có Giấy xác nhận riêng đối với từng phạm vi hoạt động chuyên môn; Mẫu số 03 tại Phụ lục I ban hành kèm theo Nghị định số 163/2025/NĐ-CP",
+        "quantity": "1 bản chính, 1 bản sao",
+        "notes": [],
+        "attachment_path": null
+      },
+      {
+        "condition": "Giấy xác nhận hoàn thành chương trình đào tạo, cập nhật kiến thức chuyên môn về dược đối với trường hợp đã bị thu hồi Chứng chỉ hành nghề dược quy định tại khoản 9 Điều 28 của Luật Dược. Mẫu số 08 tại Phụ lục I ban hành kèm theo Nghị định số 163/2025/NĐ-CP",
+        "document": "Giấy xác nhận hoàn thành chương trình đào tạo, cập nhật kiến thức chuyên môn về dược đối với trường hợp đã bị thu hồi Chứng chỉ hành nghề dược quy định tại khoản 9 Điều 28 của Luật Dược. Mẫu số 08 tại Phụ lục I ban hành kèm theo Nghị định số 163/2025/NĐ-CP",
+        "quantity": "1 bản chính, 1 bản sao",
+        "notes": [],
+        "attachment_path": null
+      }
+    ],
+    "forms": [
+      {
+        "name": "Đơn đề nghị cấp Chứng chỉ hành nghề dược, có ảnh chân dung của người đề nghị được chụp trong thời gian không quá 06 tháng. Mẫu số 02 Phụ lục I của Nghị định số 163/2025/NĐ-CP",
+        "attachment_label": "Mu.docx",
+        "attachment_path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/1_014084/Mu.docx"
+      }
+    ],
+    "presented": [],
+    "notes": [],
+    "summary": [
+      {
+        "group": "default",
+        "name": "Văn bằng chuyên môn.",
+        "quantity": "1 bản chính, 1 bản sao",
+        "notes": [],
+        "attachment_path": null
+      },
+      {
+        "group": "default",
+        "name": "Giấy tờ do cơ quan có thẩm quyền nước ngoài cấp phải được hợp pháp hóa lãnh sự theo quy định, phải có bản dịch sang tiếng Việt và được chứng thực chữ ký người dịch theo quy định",
+        "quantity": "1 bản chính, 1 bản sao",
+        "notes": [],
+        "attachment_path": null
+      },
+      {
+        "group": "default",
+        "name": "Giấy chứng nhận đủ sức khỏe để hành nghề dược do cơ sở y tế có thẩm quyền cấp",
+        "quantity": "1 bản chính, 1 bản sao",
+        "notes": [],
+        "attachment_path": null
+      },
+      {
+        "group": "default",
+        "name": "Giấy công nhận tương đương của cơ quan có thẩm quyền về công nhận tương đương theo quy định tại khoản 2 Điều 12 của Nghị định số 163/2025/NĐ-CP đối với các văn bằng chuyên môn do cơ sở đào tạo nước ngoài cấp",
+        "quantity": "1 bản chính, 1 bản sao",
+        "notes": [],
+        "attachment_path": null
+      },
+      {
+        "group": "default",
+        "name": "Đơn đề nghị cấp Chứng chỉ hành nghề dược, có ảnh chân dung của người đề nghị được chụp trong thời gian không quá 06 tháng. Mẫu số 02 Phụ lục I của Nghị định số 163/2025/NĐ-CP",
+        "quantity": "1 bản chính, 0 bản sao",
+        "notes": [],
+        "attachment_path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/1_014084/Mu.docx"
+      },
+      {
+        "group": null,
+        "name": null,
+        "quantity": "1 bản chính, 1 bản sao",
+        "notes": [],
+        "attachment_path": null
+      },
+      {
+        "group": null,
+        "name": null,
+        "quantity": "1 bản chính, 1 bản sao",
+        "notes": [],
+        "attachment_path": null
+      },
+      {
+        "group": null,
+        "name": null,
+        "quantity": "1 bản chính, 1 bản sao",
+        "notes": [],
+        "attachment_path": null
+      },
+      {
+        "group": null,
+        "name": "Đơn đề nghị cấp Chứng chỉ hành nghề dược, có ảnh chân dung của người đề nghị được chụp trong thời gian không quá 06 tháng. Mẫu số 02 Phụ lục I của Nghị định số 163/2025/NĐ-CP",
+        "quantity": null,
+        "notes": null,
+        "attachment_path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/1_014084/Mu.docx"
+      }
+    ]
+  },
+  "steps": [
+    {
+      "order": 1,
+      "title": "Bước 1",
+      "description": "1.",
+      "example": null
+    },
+    {
+      "order": 2,
+      "title": "Bước 1:",
+      "description": "Bước 1: Người đề nghị cấp Chứng chỉ hành nghề dược gửi hồ sơ về Bộ Y tế, cụ thể: - Cục Quản lý Y Dược cổ truyền đối với cá nhân chỉ đề nghị cấp Chứng chỉ hành nghề dược phạm vi kinh doanh dược liệu, thuốc cổ truyền; - Cục Khoa học công nghệ và Đào tạo đối với cá nhân chỉ đề nghị cấp Chứng chỉ hành nghề dược phạm vi kinh doanh dịch vụ thử thuốc trên lâm sàng, thử tương đương sinh học; - Cục Quản lý Dược đối với các trường hợp còn lại quy định tại Điều 11 Luật Dược.",
+      "example": null
+    },
+    {
+      "order": 3,
+      "title": "Bước 2:",
+      "description": "Bước 2: Sau khi nhận hồ sơ đầy đủ, cơ quan tiếp nhận hồ sơ trả cho người đề nghị cấp Chứng chỉ hành nghề dược Phiếu tiếp nhận hồ sơ theo Mẫu số 01 Phụ lục I của Nghị định số 163/2025/NĐ-CP;",
+      "example": null
+    },
+    {
+      "order": 4,
+      "title": "Bước 3:",
+      "description": "Bước 3:",
+      "example": null
+    },
+    {
+      "order": 5,
+      "title": "a)",
+      "description": "a) Trường hợp không yêu cầu sửa đổi, bổ sung hồ sơ: - Bộ Y tế chỉ định cơ sở đáp ứng yêu cầu tại Điều 17 của Nghị định số 163/2025/NĐ-CP ngày 29 tháng 6 năm 2025 và phù hợp với nơi cư trú của người đề nghị cấp CCHN để tổ chức thi xét cấp Chứng chỉ hành nghề dược trong thời hạn 03 ngày làm việc kể từ ngày ghi trên Phiếu tiếp nhận hồ sơ; - Cơ sở tổ chức thi được chỉ định có trách nhiệm tổ chức thi xét cấp Chứng chỉ hành nghề dược trong thời hạn 07 ngày làm việc và gửi kết quả thi về Bộ Y tế trong thời gian 03 ngày làm việc kể từ ngày kết thúc việc tổ chức thi; - Trường hợp kết quả thi đạt yêu cầu, trong thời hạn 07 ngày làm việc kể từ ngày nhận được kết quả thi do cơ sở tổ chức thi gửi, Bộ Y tế cấp và trả cho người đề nghị 01 bản Chứng chỉ hành nghề dược; - Trường hợp kết quả thi không đạt yêu cầu, trong thời hạn 07 ngày làm việc kể từ ngày nhận được kết quả thi do cơ sở tổ chức thi gửi, Bộ Y tế có văn bản thông báo cho người đề nghị theo Mẫu số 16 tại Phụ lục I ban hành kèm theo Nghị định số 163/2025/NĐ-CP về việc không cấp Chứng chỉ hành nghề dược.",
+      "example": "29 tháng"
+    },
+    {
+      "order": 6,
+      "title": "b)",
+      "description": "b) Trường hợp có yêu cầu sửa đổi, bổ sung hồ sơ, Cục Quản lý Dược/Cục Quản lý Y, dược cổ truyền/Cục Khoa học công nghệ và đào tạo có văn bản thông báo nội dung yêu cầu sửa đổi, bổ sung theo Mẫu số 16 tại Phụ lục I ban hành kèm theo Nghị định số 163/2025/NĐ-CP gửi cho người đề nghị trong thời hạn 07 ngày làm việc kể từ ngày ghi trên Phiếu tiếp nhận hồ sơ.",
+      "example": "07 ngày làm việc"
+    },
+    {
+      "order": 7,
+      "title": "Bước 4:",
+      "description": "Bước 4: Sau khi nhận hồ sơ sửa đổi, bổ sung, cơ quan tiếp nhận hồ sơ trả cơ sở Phiếu tiếp nhận hồ sơ sửa đổi, bổ sung theo Mẫu số 01 Phụ lục I của Nghị định số 163/2025/NĐ-CP.",
+      "example": null
+    },
+    {
+      "order": 8,
+      "title": "a)",
+      "description": "a) Trường hợp hồ sơ sửa đổi, bổ sung không đáp ứng yêu cầu, trong thời hạn 07 ngày làm việc kể từ ngày ghi trên Phiếu tiếp nhận hồ sơ sửa đổi, bổ sung, Bộ Y tế có văn bản thông báo cho người đề nghị theo Mẫu số 16 tại Phụ lục I ban hành kèm theo Nghị định số 163/2025/NĐ-CP về việc không cấp Chứng chỉ hành nghề dược;",
+      "example": "07 ngày làm việc"
+    },
+    {
+      "order": 9,
+      "title": "b)",
+      "description": "b) Trường hợp không có yêu cầu sửa đổi, bổ sung đối với hồ sơ sửa đổi, bổ sung, Bộ Y tế và cơ sở tổ chức thi được chỉ định thực hiện theo quy định tại điểm a",
+      "example": null
+    },
+    {
+      "order": 10,
+      "title": "Bước 3.",
+      "description": "Bước 3.",
+      "example": null
+    },
+    {
+      "order": 11,
+      "title": "c)",
+      "description": "c) Trong thời hạn 06 tháng kể từ ngày Cục Quản lý Dược/Cục Quản lý Y, dược cổ truyền/Cục Khoa học công nghệ và đào tạo có văn bản thông báo sửa đổi, bổ sung, người đề nghị cấp Chứng chỉ hành nghề dược phải nộp hồ sơ sửa đổi, bổ sung theo yêu cầu. Sau thời hạn trên, người đề nghị không nộp hồ sơ sửa đổi, bổ sung thì hồ sơ đã nộp không còn giá trị.",
+      "example": "06 tháng"
+    },
+    {
+      "order": 12,
+      "title": "Bước 5:",
+      "description": "Bước 5: Trong thời hạn 03 ngày làm việc kể từ ngày cấp Chứng chỉ hành nghề dược, Bộ Y tế công bố, cập nhật trên Cổng thông tin điện tử của Bộ Y tế các thông tin sau:",
+      "example": "03 ngày làm việc"
+    },
+    {
+      "order": 13,
+      "title": "a)",
+      "description": "a) Họ, tên, ngày tháng năm sinh của người được cấp Chứng chỉ hành nghề dược;",
+      "example": null
+    },
+    {
+      "order": 14,
+      "title": "b)",
+      "description": "b) Số Chứng chỉ hành nghề dược của người được cấp Chứng chỉ hành nghề dược;",
+      "example": null
+    },
+    {
+      "order": 15,
+      "title": "c)",
+      "description": "c) Phạm vi hoạt động chuyên môn được cấp trên Chứng chỉ hành nghề dược.",
+      "example": null
+    }
+  ],
+  "input_fields": [
+    {
+      "field": "learner_full_name",
+      "label": "Tên người học",
+      "type": "string",
+      "required": true
+    },
+    {
+      "field": "education_record_type",
+      "label": "Loại hồ sơ học tập cần xử lý",
+      "type": "string",
+      "required": true
+    },
+    {
+      "field": "education_institution",
+      "label": "Cơ sở đào tạo liên quan",
+      "type": "string",
+      "required": false
+    },
+    {
+      "field": "submission_channel_preference",
+      "label": "Kênh nộp dự kiến",
+      "type": "enum",
+      "required": false,
+      "options": [
+        "Trực tiếp",
+        "Trực tuyến",
+        "Dịch vụ bưu chính"
+      ]
+    }
+  ],
+  "validation_rules": [
+    {
+      "id": "required-1",
+      "severity": "error",
+      "field": "learner_full_name",
+      "rule": "Trường bắt buộc phải có dữ liệu hợp lệ trước khi nộp.",
+      "message": "Thiếu trường bắt buộc: Tên người học."
+    },
+    {
+      "id": "required-2",
+      "severity": "error",
+      "field": "education_record_type",
+      "rule": "Trường bắt buộc phải có dữ liệu hợp lệ trước khi nộp.",
+      "message": "Thiếu trường bắt buộc: Loại hồ sơ học tập cần xử lý."
+    },
+    {
+      "id": "hint-1",
+      "severity": "warning",
+      "field": "general",
+      "rule": "Nên xác định trước kênh nộp hồ sơ để biết có cần bản giấy, bản điện tử hay xuất trình trực tiếp.",
+      "message": "Nên xác định trước kênh nộp hồ sơ để biết có cần bản giấy, bản điện tử hay xuất trình trực tiếp."
+    },
+    {
+      "id": "hint-2",
+      "severity": "warning",
+      "field": "general",
+      "rule": "Có mẫu biểu đính kèm, nên kiểm tra đúng biểu mẫu trước khi nộp.",
+      "message": "Có mẫu biểu đính kèm, nên kiểm tra đúng biểu mẫu trước khi nộp."
+    },
+    {
+      "id": "hint-3",
+      "severity": "warning",
+      "field": "general",
+      "rule": "Nên rà lại thông tin người học, cơ sở đào tạo và loại xác nhận hoặc văn bằng cần xin.",
+      "message": "Nên rà lại thông tin người học, cơ sở đào tạo và loại xác nhận hoặc văn bằng cần xin."
+    }
+  ],
+  "common_errors": [
+    {
+      "field": "general",
+      "issue": "Thiếu giấy tờ hợp pháp hóa hoặc giấy tờ nhân thân của phía nước ngoài.",
+      "fix": "Nên xác định trước kênh nộp hồ sơ để biết có cần bản giấy, bản điện tử hay xuất trình trực tiếp."
+    },
+    {
+      "field": "general",
+      "issue": "Điền sai mẫu tờ khai hoặc chọn sai biểu mẫu đi kèm.",
+      "fix": "Nên xác định trước kênh nộp hồ sơ để biết có cần bản giấy, bản điện tử hay xuất trình trực tiếp."
+    },
+    {
+      "field": "general",
+      "issue": "Thông tin thửa đất, tài sản hoặc giấy chứng nhận chưa khớp với hồ sơ hiện có.",
+      "fix": "Nên xác định trước kênh nộp hồ sơ để biết có cần bản giấy, bản điện tử hay xuất trình trực tiếp."
+    },
+    {
+      "field": "general",
+      "issue": "Thiếu minh chứng học tập, văn bằng hoặc xác nhận từ cơ sở đào tạo.",
+      "fix": "Nên xác định trước kênh nộp hồ sơ để biết có cần bản giấy, bản điện tử hay xuất trình trực tiếp."
+    }
+  ],
+  "clarifying_questions": [
+    {
+      "id": "clarify_1",
+      "question": "Bạn đang cần xử lý hồ sơ học tập, văn bằng hay xác nhận nào?",
+      "purpose": "workflow_intake"
+    },
+    {
+      "id": "clarify_2",
+      "question": "Người học và cơ sở đào tạo liên quan đã xác định rõ chưa?",
+      "purpose": "workflow_intake"
+    }
+  ],
+  "legal_basis": [
+    {
+      "title": "Nghị định của Chính phủ quy định chi tiết một số điều và biện pháp thi hành Luật dược",
+      "code": "163/2025/NĐ-CP"
+    },
+    {
+      "title": "Luật số 44/2024/QH15",
+      "code": "44/2024/QH15"
+    },
+    {
+      "title": "Luật 105/2016/QH13 Dược",
+      "code": "105/2016/QH13"
+    },
+    {
+      "title": "41/2023/TT-BTC",
+      "code": "41/2023/TT-BTC"
+    }
+  ],
+  "legal_bases": [
+    {
+      "title": "Nghị định của Chính phủ quy định chi tiết một số điều và biện pháp thi hành Luật dược",
+      "code": "163/2025/NĐ-CP"
+    },
+    {
+      "title": "Luật số 44/2024/QH15",
+      "code": "44/2024/QH15"
+    },
+    {
+      "title": "Luật 105/2016/QH13 Dược",
+      "code": "105/2016/QH13"
+    },
+    {
+      "title": "41/2023/TT-BTC",
+      "code": "41/2023/TT-BTC"
+    }
+  ],
+  "faq": [
+    {
+      "question": "Có thể nộp qua kênh nào?",
+      "answer": "Các kênh hiện có: Trực tiếp, Trực tuyến, Dịch vụ bưu chính."
+    },
+    {
+      "question": "Thời gian xử lý tham chiếu là bao lâu?",
+      "answer": "Thời gian xử lý tham chiếu hiện có là 20 ngày."
+    },
+    {
+      "question": "Kết quả chính của thủ tục là gì?",
+      "answer": "Kết quả chính được trích xuất là Chứng chỉ hành nghề dược."
+    }
+  ],
+  "guidance": {
+    "highlight_documents": [
+      {
+        "bucket": "required",
+        "name": "Văn bằng chuyên môn.",
+        "conditions": [],
+        "attachment_path": null
+      },
+      {
+        "bucket": "required",
+        "name": "Giấy tờ do cơ quan có thẩm quyền nước ngoài cấp phải được hợp pháp hóa lãnh sự theo quy định, phải có bản dịch sang tiếng Việt và được chứng thực chữ ký người dịch theo quy định",
+        "conditions": [],
+        "attachment_path": null
+      },
+      {
+        "bucket": "required",
+        "name": "Giấy chứng nhận đủ sức khỏe để hành nghề dược do cơ sở y tế có thẩm quyền cấp",
+        "conditions": [],
+        "attachment_path": null
+      },
+      {
+        "bucket": "required",
+        "name": "Giấy công nhận tương đương của cơ quan có thẩm quyền về công nhận tương đương theo quy định tại khoản 2 Điều 12 của Nghị định số 163/2025/NĐ-CP đối với các văn bằng chuyên môn do cơ sở đào tạo nước ngoài cấp",
+        "conditions": [],
+        "attachment_path": null
+      },
+      {
+        "bucket": "required",
+        "name": "Đơn đề nghị cấp Chứng chỉ hành nghề dược, có ảnh chân dung của người đề nghị được chụp trong thời gian không quá 06 tháng. Mẫu số 02 Phụ lục I của Nghị định số 163/2025/NĐ-CP",
+        "conditions": [],
+        "attachment_path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/1_014084/Mu.docx"
+      },
+      {
+        "bucket": "conditional",
+        "name": "Phiếu lý lịch tư pháp. Trường hợp là người nước ngoài, người Việt Nam định cư ở nước ngoài phải có lý lịch tư pháp hoặc văn bản xác nhận hiện không phải là người phạm tội hoặc bị truy cứu trách nhiệm hình sự, không thuộc trường hợp bị cấm hành nghề, cấm làm công việc liên quan đến hoạt động dược theo bản án, quyết định của Tòa án do cơ quan có thẩm quyền của nước ngoài cấp. Không yêu cầu nộp Phiếu lý lịch tư pháp kể từ ngày dữ liệu về lý lịch tư pháp được chia sẻ theo quy định tại khoản 5 Điều 127 của Nghị định số 163/2025/NĐ-CP",
+        "conditions": [
+          "Phiếu lý lịch tư pháp. Trường hợp là người nước ngoài, người Việt Nam định cư ở nước ngoài phải có lý lịch tư pháp hoặc văn bản xác nhận hiện không phải là người phạm tội hoặc bị truy cứu trách nhiệm hình sự, không thuộc trường hợp bị cấm hành nghề, cấm làm công việc liên quan đến hoạt động dược theo bản án, quyết định của Tòa án do cơ quan có thẩm quyền của nước ngoài cấp. Không yêu cầu nộp Phiếu lý lịch tư pháp kể từ ngày dữ liệu về lý lịch tư pháp được chia sẻ theo quy định tại khoản 5 Điều 127 của Nghị định số 163/2025/NĐ-CP"
+        ],
+        "attachment_path": null
+      }
+    ],
+    "special_cases": [
+      "Có yếu tố nước ngoài",
+      "Có thể cần đối chiếu thông tin thửa đất hoặc giấy chứng nhận",
+      "Có thể cần xác minh hồ sơ học tập hoặc văn bằng"
+    ],
+    "common_errors": [
+      "Thiếu giấy tờ hợp pháp hóa hoặc giấy tờ nhân thân của phía nước ngoài.",
+      "Điền sai mẫu tờ khai hoặc chọn sai biểu mẫu đi kèm.",
+      "Thông tin thửa đất, tài sản hoặc giấy chứng nhận chưa khớp với hồ sơ hiện có.",
+      "Thiếu minh chứng học tập, văn bằng hoặc xác nhận từ cơ sở đào tạo."
+    ],
+    "validation_hints": [
+      "Nên xác định trước kênh nộp hồ sơ để biết có cần bản giấy, bản điện tử hay xuất trình trực tiếp.",
+      "Có mẫu biểu đính kèm, nên kiểm tra đúng biểu mẫu trước khi nộp.",
+      "Nên rà lại thông tin người học, cơ sở đào tạo và loại xác nhận hoặc văn bằng cần xin."
+    ]
+  },
+  "next_steps": {
+    "summary": "Nên rà trước thông tin người học, cơ sở đào tạo và loại kết quả cần xin xác nhận hoặc cấp lại. Có thể chọn kênh nộp phù hợp: Trực tiếp, Trực tuyến, Dịch vụ bưu chính. Hiện có khoảng 8 mục giấy tờ cần theo dõi trong checklist.",
+    "time_badge": "20 ngày",
+    "result_label": "Chứng chỉ hành nghề dược",
+    "primary_channel": "online",
+    "channels": [
+      "in_person",
+      "online",
+      "postal"
+    ]
+  },
+  "notes": [],
+  "provenance": {
+    "pipeline": "raw->structured->normalized->enriched->ui_api_payload",
+    "normalizer_version": "0.2.0",
+    "enricher_version": "0.2.0",
+    "mapping_notes": "excluded_from_clean_workflow_dataset",
+    "supported_group": true
+  }
+}

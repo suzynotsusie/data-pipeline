@@ -1,0 +1,122 @@
+{
+  "schema_version": "1.0",
+  "enricher_version": "0.2.0",
+  "source": {
+    "procedure_code": "1.014348",
+    "title": "Hỗ trợ giải quyết tranh chấp phát sinh liên quan đến người lao động trong hoạt động đưa người lao động đi làm việc ở nước ngoài theo hợp đồng (khi tiến hành vụ việc)",
+    "group_key": "giai_quyet_khieu_kien",
+    "workflow_family": "complaint_resolution_workflow",
+    "subflow": "giai_quyet_khieu_kien"
+  },
+  "experience": {
+    "entry_label": "Hỗ trợ khiếu nại và phản ánh",
+    "overview_summary": "Thủ tục này thuộc nhóm khiếu nại và phản ánh, thường cần trình bày rõ nội dung vụ việc, quyết định hoặc hành vi bị khiếu nại và căn cứ kèm theo. Kết quả thường nhận được là Quyết định hỗ trợ. Thời gian xử lý tham khảo: 5 ngày làm việc.",
+    "next_step_summary": "Nên tóm tắt rõ nội dung khiếu nại, quyết định hoặc hành vi liên quan và chuẩn bị tài liệu chứng minh trước khi nộp. Có thể chọn kênh nộp phù hợp: Trực tiếp, Trực tuyến, Dịch vụ bưu chính. Hiện có khoảng 6 mục giấy tờ cần theo dõi trong checklist.",
+    "tone": "supportive_public_service"
+  },
+  "guidance": {
+    "highlight_documents": [
+      {
+        "bucket": "required",
+        "name": "Giấy đề nghị về việc hỗ trợ rủi ro trong thời gian làm việc ở nước ngoài (Mẫu theo Phụ lục I ban hành kèm theo Quyết định số 34/2025/QĐ-TTg) ,",
+        "conditions": [],
+        "attachment_path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/1_014348/Ph%E1%BB%A5%20l%E1%BB%A5c%20I.docx"
+      },
+      {
+        "bucket": "required",
+        "name": "Bản sao hộ chiếu của người lao động ,",
+        "conditions": [],
+        "attachment_path": null
+      },
+      {
+        "bucket": "required",
+        "name": "Bản sao hợp đồng thuê luật sư, tư vấn pháp lý để bảo vệ quyền, lợi ích của người lao động khi phát sinh tranh chấp với người sử dụng lao động",
+        "conditions": [],
+        "attachment_path": null
+      },
+      {
+        "bucket": "required",
+        "name": "Văn bản của cơ quan có thẩm quyền của nước sở tại về việc tiếp nhận hồ sơ khiếu nại của người lao động được hợp pháp hóa bởi cơ quan đại diện Việt Nam ở nước sở tại",
+        "conditions": [],
+        "attachment_path": null
+      },
+      {
+        "bucket": "conditional",
+        "name": "Văn bản ủy quyền (ghi rõ nội dung ủy quyền) hoặc giấy tờ chứng minh quyền đại diện theo pháp luật theo quy định trong trường hợp người được ủy quyền hoặc người đại diện theo pháp luật nộp hồ sơ ,",
+        "conditions": [
+          "Văn bản ủy quyền (ghi rõ nội dung ủy quyền) hoặc giấy tờ chứng minh quyền đại diện theo pháp luật theo quy định trong trường hợp người được ủy quyền hoặc người đại diện theo pháp luật nộp hồ sơ ,"
+        ],
+        "attachment_path": null
+      },
+      {
+        "bucket": "conditional",
+        "name": "Văn bản đề nghị hỗ trợ do doanh nghiệp, tổ chức, cá nhân đưa đi lập đối với trường hợp nộp thông qua doanh nghiệp, tổ chức, cá nhân đưa đi",
+        "conditions": [
+          "Văn bản đề nghị hỗ trợ do doanh nghiệp, tổ chức, cá nhân đưa đi lập đối với trường hợp nộp thông qua doanh nghiệp, tổ chức, cá nhân đưa đi"
+        ],
+        "attachment_path": null
+      }
+    ],
+    "special_cases": [
+      "Có yếu tố nước ngoài",
+      "Có thể cần giấy tờ ủy quyền",
+      "Có thể cần tài liệu chứng minh nội dung khiếu nại",
+      "Có thể cần xác minh quan hệ lao động hoặc giấy phép làm việc"
+    ],
+    "common_errors": [
+      "Thiếu giấy tờ hoặc nội dung ủy quyền phù hợp.",
+      "Thiếu giấy tờ hợp pháp hóa hoặc giấy tờ nhân thân của phía nước ngoài.",
+      "Điền sai mẫu tờ khai hoặc chọn sai biểu mẫu đi kèm.",
+      "Nội dung khiếu nại chưa nêu rõ quyết định, hành vi hoặc tài liệu chứng minh liên quan.",
+      "Thiếu hồ sơ về vị trí việc làm, đơn vị sử dụng lao động hoặc điều kiện làm việc áp dụng."
+    ],
+    "validation_hints": [
+      "Nên xác định trước kênh nộp hồ sơ để biết có cần bản giấy, bản điện tử hay xuất trình trực tiếp.",
+      "Có mẫu biểu đính kèm, nên kiểm tra đúng biểu mẫu trước khi nộp.",
+      "Nên nêu rõ diễn biến vụ việc, quyết định hoặc hành vi bị khiếu nại và chuẩn bị tài liệu chứng minh."
+    ]
+  },
+  "intake": {
+    "candidate_input_fields": [
+      {
+        "field_id": "complaint_subject",
+        "label": "Nội dung khiếu nại chính",
+        "field_type": "text",
+        "required": true
+      },
+      {
+        "field_id": "decision_or_behavior_target",
+        "label": "Quyết định hoặc hành vi bị khiếu nại",
+        "field_type": "text",
+        "required": true
+      },
+      {
+        "field_id": "has_supporting_evidence",
+        "label": "Có tài liệu chứng minh kèm theo",
+        "field_type": "boolean",
+        "required": true
+      },
+      {
+        "field_id": "submission_channel_preference",
+        "label": "Kênh nộp dự kiến",
+        "field_type": "enum",
+        "required": false
+      }
+    ],
+    "suggested_clarifying_questions": [
+      "Bạn đang khiếu nại về quyết định hay hành vi nào, và thuộc cơ quan nào?",
+      "Bạn đã có đơn khiếu nại hoặc tài liệu chứng minh nội dung vụ việc chưa?"
+    ]
+  },
+  "ui_hints": {
+    "primary_channel": "online",
+    "result_label": "Quyết định hỗ trợ",
+    "time_badge": "5 ngày làm việc",
+    "document_count_badge": 6
+  },
+  "provenance": {
+    "generator": "workflow_domain_enricher",
+    "derivation_mode": "rule_based_semantic_enrichment",
+    "supported_group": true
+  }
+}

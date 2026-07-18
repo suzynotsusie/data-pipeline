@@ -1,0 +1,437 @@
+{
+  "schema_version": "1.0",
+  "domain": "hoc_tap",
+  "updated_at": "2026-07-18",
+  "source_files": [
+    "C:\\Users\\ku060\\Downloads\\VAIC source\\data-pipeline\\main\\full-data.csv",
+    "C:\\Users\\ku060\\Downloads\\VAIC source\\data-pipeline\\data\\workflows\\hoc_tap\\summary.csv",
+    "C:\\Users\\ku060\\Downloads\\VAIC source\\data-pipeline\\data\\workflows\\hoc_tap\\normalized.json",
+    "C:\\Users\\ku060\\Downloads\\VAIC source\\data-pipeline\\raw_data"
+  ],
+  "coverage": {
+    "expected_codes": [
+      "1.001622",
+      "1.001714",
+      "1.002982",
+      "1.003702",
+      "1.008950",
+      "1.009002",
+      "1.010497",
+      "1.014334",
+      "1.014335",
+      "1.014336",
+      "1.014337",
+      "1.014997",
+      "2.001959",
+      "2.001960",
+      "2.002770",
+      "2.002771",
+      "2.002851"
+    ],
+    "covered_codes": [
+      "1.001622",
+      "1.001714",
+      "1.002982",
+      "1.003702",
+      "1.008950",
+      "1.009002",
+      "1.010497",
+      "1.014334",
+      "1.014335",
+      "1.014336",
+      "1.014337",
+      "1.014997",
+      "2.001959",
+      "2.001960",
+      "2.002770",
+      "2.002771",
+      "2.002851"
+    ],
+    "missing_codes": []
+  },
+  "llm_contract": {
+    "role": "parse_user_answer_and_rephrase_question_only",
+    "required_output_schema": {
+      "intent": "hoc_tap",
+      "current_node": "string",
+      "slot_updates": {
+        "subdomain_key": "tuyen_sinh | chuyen_truong | hoc_bong_va_ho_tro | van_bang_chung_chi | hoc_tap_o_nuoc_ngoai_bang_ngan_sach | unknown",
+        "operation_key": "string",
+        "operation_group": "string"
+      },
+      "confidence": "0_to_1",
+      "needs_human_review": "boolean"
+    }
+  },
+  "entry_prompts": [
+    "Bạn đang cần làm việc về tuyển sinh, chuyển trường, hỗ trợ học tập, văn bằng chứng chỉ hay du học bằng ngân sách nhà nước?",
+    "Bạn muốn đăng ký mới, điều chỉnh, xin hỗ trợ, xin công nhận hay xin cấp lại giấy tờ học tập?"
+  ],
+  "slots": [
+    {
+      "name": "subdomain_key",
+      "required": true,
+      "description": "Nhánh chính của nhóm Học tập."
+    },
+    {
+      "name": "operation_key",
+      "required": true,
+      "description": "Thao tác cụ thể ánh xạ trực tiếp tới thủ tục cuối cùng."
+    },
+    {
+      "name": "operation_group",
+      "required": false,
+      "description": "Nhóm thao tác để gom các thủ tục gần nhau cho UI và parser."
+    }
+  ],
+  "subdomain_catalog": [
+    {
+      "subdomain_key": "hoc_bong_va_ho_tro",
+      "subdomain_label": "Học bổng và chính sách hỗ trợ",
+      "event_id": 256,
+      "summary": "Nhóm thủ tục học bổng, miễn giảm học phí, hỗ trợ chi phí học tập, hỗ trợ bán trú và các chính sách tài chính cho người học."
+    }
+  ],
+  "decision_tree": {
+    "start_node": "study_subdomain",
+    "nodes": [
+      {
+        "id": "study_subdomain",
+        "type": "question",
+        "slot": "subdomain_key",
+        "question": "Bạn đang hỏi về tuyển sinh, chuyển trường, học bổng hỗ trợ, văn bằng chứng chỉ hay học tập ở nước ngoài bằng ngân sách nhà nước?",
+        "options": [
+          "hoc_bong_va_ho_tro"
+        ],
+        "prefilled_value": "hoc_bong_va_ho_tro"
+      },
+      {
+        "id": "study_operation",
+        "type": "question",
+        "slot": "operation_key",
+        "question": "Bạn cần làm thao tác nào cụ thể trong nhánh đã chọn?",
+        "options_by_subdomain": {
+          "hoc_bong_va_ho_tro": [
+            {
+              "operation_key": "ho_tro_an_trua_doi_voi_tre_em_mau_giao",
+              "operation_group": "tro_cap_hoc_tap",
+              "procedure_code": "1.001622",
+              "procedure_title": "Hỗ trợ ăn trưa đối với trẻ em mẫu giáo"
+            },
+            {
+              "operation_key": "cap_hoc_bong_va_ho_tro_kinh_phi_mua_phuong_tien_do_dung_hoc_tap_dung_rieng_cho_nguoi_khuyet_tat_hoc_tai_cac_co_so_giao_duc",
+              "operation_group": "hoc_bong",
+              "procedure_code": "1.001714",
+              "procedure_title": "Cấp học bổng và hỗ trợ kinh phí mua phương tiện, đồ dùng học tập dùng riêng cho người khuyết tật học tại các cơ sở giáo dục"
+            },
+            {
+              "operation_key": "ho_tro_hoc_tap_doi_voi_hoc_sinh_trung_hoc_pho_thong_cac_dan_toc_thieu_so_rat_it_nguoi",
+              "operation_group": "chinh_sach_ho_tro_khac",
+              "procedure_code": "1.002982",
+              "procedure_title": "Hỗ trợ học tập đối với học sinh trung học phổ thông các dân tộc thiểu số rất ít người"
+            },
+            {
+              "operation_key": "ho_tro_hoc_tap_doi_voi_tre_mau_giao_hoc_sinh_tieu_hoc_hoc_sinh_trung_hoc_co_so_sinh_vien_cac_dan_toc_thieu_so_rat_it_nguoi",
+              "operation_group": "chinh_sach_ho_tro_khac",
+              "procedure_code": "1.003702",
+              "procedure_title": "Hỗ trợ học tập đối với trẻ mẫu giáo, học sinh tiểu học, học sinh trung học cơ sở, sinh viên các dân tộc thiểu số rất ít người"
+            },
+            {
+              "operation_key": "tro_cap_doi_voi_tre_em_mam_non_la_con_cong_nhan_nguoi_lao_dong_lam_viec_tai_khu_cong_nghiep",
+              "operation_group": "tro_cap_hoc_tap",
+              "procedure_code": "1.008950",
+              "procedure_title": "Trợ cấp đối với trẻ em mầm non là con công nhân, người lao động làm việc tại khu công nghiệp"
+            },
+            {
+              "operation_key": "dang_ky_ho_tro_tien_dong_hoc_phi_va_chi_phi_sinh_hoat_doi_voi_sinh_vien_hoc_cac_nganh_dao_tao_giao_vien_tai_cac_dai_hoc_hoc_vien_truong_dai_hoc_truong_cao_dang_duoc_phep_dao_tao_giao_vien",
+              "operation_group": "chinh_sach_ho_tro_khac",
+              "procedure_code": "1.009002",
+              "procedure_title": "Đăng ký hỗ trợ tiền đóng học phí và chi phí sinh hoạt đối với sinh viên học các ngành đào tạo giáo viên tại các đại học, học viện, trường đại học, trường cao đẳng được phép đào tạo giáo viên"
+            },
+            {
+              "operation_key": "de_nghi_mien_giam_hoc_phi_ho_tro_chi_phi_hoc_tap_ho_tro_tien_dong_hoc_phi_doi_voi_nguoi_hoc_tai_cac_co_so_giao_duc_mam_non_giao_duc_pho_thong_giao_duc_thuong_xuyen_giao_duc_nghe_nghiep_va_giao_duc_dai_hoc",
+              "operation_group": "mien_giam_hoc_phi",
+              "procedure_code": "1.010497",
+              "procedure_title": "Đề nghị miễn giảm học phí, hỗ trợ chi phí học tập, hỗ trợ tiền đóng học phí đối với người học tại các cơ sở giáo dục mầm non, giáo dục phổ thông, giáo dục thường xuyên, giáo dục nghề nghiệp và giáo dục đại học"
+            },
+            {
+              "operation_key": "de_nghi_ho_tro_chi_phi_hoc_tap_trong_truong_trung_hoc_pho_thong_tu_thuc_co_so_giao_duc_thuong_xuyen_tu_thuc_truong_trung_hoc_pho_thong_trong_cac_truong_dai_hoc_cao_dang_vien_nghien_cuu",
+              "operation_group": "ho_tro_chi_phi_hoc_tap",
+              "procedure_code": "1.014334",
+              "procedure_title": "Đề nghị hỗ trợ chi phí học tập trong trường trung học phổ thông tư thục, cơ sở giáo dục thường xuyên tư thục, trường trung học phổ thông trong các trường đại học, cao đẳng, viện nghiên cứu"
+            },
+            {
+              "operation_key": "de_nghi_mien_giam_hoc_phi_trong_co_so_giao_duc_nghe_nghiep_co_so_giao_duc_dai_hoc_tu_thuc_va_co_so_giao_duc_nghe_nghiep_co_so_giao_duc_dai_hoc_thuoc_to_chuc_kinh_te_doanh_nghiep_nha_nuoc",
+              "operation_group": "mien_giam_hoc_phi",
+              "procedure_code": "1.014335",
+              "procedure_title": "Đề nghị miễn, giảm học phí trong cơ sở giáo dục nghề nghiệp, cơ sở giáo dục đại học tư thục và cơ sở giáo dục nghề nghiệp, cơ sở giáo dục đại học thuộc tổ chức kinh tế, doanh nghiệp nhà nước"
+            },
+            {
+              "operation_key": "de_nghi_ho_tro_chi_phi_hoc_tap_trong_co_so_giao_duc_mam_non_cong_lap_co_so_giao_duc_pho_thong_cong_lap_co_so_giao_duc_cong_lap_thuc_hien_chuong_trinh_giao_duc_pho_thong",
+              "operation_group": "ho_tro_chi_phi_hoc_tap",
+              "procedure_code": "1.014336",
+              "procedure_title": "Đề nghị hỗ trợ chi phí học tập trong cơ sở giáo dục mầm non công lập, cơ sở giáo dục phổ thông công lập, cơ sở giáo dục công lập thực hiện chương trình giáo dục phổ thông"
+            },
+            {
+              "operation_key": "de_nghi_ho_tro_chi_phi_hoc_tap_trong_co_so_giao_duc_mam_non_dan_lap_tu_thuc_truong_tieu_hoc_tu_thuc_truong_trung_hoc_co_so_tu_thuc_co_so_giao_duc_thuong_xuyen_tu_thuc_co_so_giao_duc_mam_non_truong_tieu_hoc_trung_hoc_co_so_trong_cac_truong_dai_hoc_cao_dang_vien_nghien_cuu",
+              "operation_group": "ho_tro_chi_phi_hoc_tap",
+              "procedure_code": "1.014337",
+              "procedure_title": "Đề nghị hỗ trợ chi phí học tập trong cơ sở giáo dục mầm non dân lập, tư thục; trường tiểu học tư thục, trường trung học cơ sở tư thục, cơ sở giáo dục thường xuyên tư thục; cơ sở giáo dục mầm non, trường tiểu học, trung học cơ sở trong các trường đại học, cao đẳng, viện nghiên cứu"
+            },
+            {
+              "operation_key": "xet_cap_hoc_bong_chinh_sach_doi_voi_hoc_vien_co_so_giao_duc_nghe_nghiep_tu_thuc_danh_cho_thuong_binh_nguoi_khuyet_tat",
+              "operation_group": "hoc_bong",
+              "procedure_code": "1.014997",
+              "procedure_title": "Xét, cấp học bổng chính sách đối với học viên cơ sở giáo dục nghề nghiệp tư thục dành cho thương binh, người khuyết tật"
+            },
+            {
+              "operation_key": "cap_chinh_sach_noi_tru_cho_hoc_sinh_sinh_vien_tham_gia_chuong_trinh_dao_tao_trinh_do_cao_dang_trung_cap_tai_cac_co_so_giao_duc_nghe_nghiep_cong_lap_truc_thuoc_tinh_thanh_pho_truc_thuoc_trung_uong",
+              "operation_group": "chinh_sach_ho_tro_khac",
+              "procedure_code": "2.001959",
+              "procedure_title": "Cấp chính sách nội trú cho học sinh, sinh viên tham gia chương trình đào tạo trình độ cao đẳng, trung cấp tại các cơ sở giáo dục nghề nghiệp công lập trực thuộc tỉnh, thành phố trực thuộc Trung ương"
+            },
+            {
+              "operation_key": "cap_chinh_sach_noi_tru_cho_hoc_sinh_sinh_vien_tham_gia_chuong_trinh_dao_tao_trinh_do_cao_dang_trung_cap_tai_cac_co_so_giao_duc_nghe_nghiep_tu_thuc_hoac_co_so_giao_duc_co_von_dau_tu_nuoc_ngoai",
+              "operation_group": "chinh_sach_ho_tro_khac",
+              "procedure_code": "2.001960",
+              "procedure_title": "Cấp chính sách nội trú cho học sinh, sinh viên tham gia chương trình đào tạo trình độ cao đẳng, trung cấp tại các cơ sở giáo dục nghề nghiệp tư thục hoặc cơ sở giáo dục có vốn đầu tư nước ngoài"
+            },
+            {
+              "operation_key": "xet_duyet_hoc_sinh_ban_tru_hoc_vien_ban_tru_ho_tro_kinh_phi_ho_tro_gao",
+              "operation_group": "ho_tro_ban_tru",
+              "procedure_code": "2.002770",
+              "procedure_title": "Xét duyệt học sinh bán trú, học viên bán trú hỗ trợ kinh phí, hỗ trợ gạo"
+            },
+            {
+              "operation_key": "xet_duyet_tre_em_nha_tre_ban_tru_ho_tro_kinh_phi_ho_tro_gao",
+              "operation_group": "ho_tro_ban_tru",
+              "procedure_code": "2.002771",
+              "procedure_title": "Xét duyệt trẻ em nhà trẻ bán trú hỗ trợ kinh phí, hỗ trợ gạo"
+            },
+            {
+              "operation_key": "xet_cap_hoc_bong_chinh_sach_doi_voi_sinh_vien_hoc_theo_che_do_cu_tuyen",
+              "operation_group": "hoc_bong",
+              "procedure_code": "2.002851",
+              "procedure_title": "Xét, cấp học bổng chính sách đối với sinh viên học theo chế độ cử tuyển"
+            }
+          ]
+        },
+        "options": [
+          "ho_tro_an_trua_doi_voi_tre_em_mau_giao",
+          "cap_hoc_bong_va_ho_tro_kinh_phi_mua_phuong_tien_do_dung_hoc_tap_dung_rieng_cho_nguoi_khuyet_tat_hoc_tai_cac_co_so_giao_duc",
+          "ho_tro_hoc_tap_doi_voi_hoc_sinh_trung_hoc_pho_thong_cac_dan_toc_thieu_so_rat_it_nguoi",
+          "ho_tro_hoc_tap_doi_voi_tre_mau_giao_hoc_sinh_tieu_hoc_hoc_sinh_trung_hoc_co_so_sinh_vien_cac_dan_toc_thieu_so_rat_it_nguoi",
+          "tro_cap_doi_voi_tre_em_mam_non_la_con_cong_nhan_nguoi_lao_dong_lam_viec_tai_khu_cong_nghiep",
+          "dang_ky_ho_tro_tien_dong_hoc_phi_va_chi_phi_sinh_hoat_doi_voi_sinh_vien_hoc_cac_nganh_dao_tao_giao_vien_tai_cac_dai_hoc_hoc_vien_truong_dai_hoc_truong_cao_dang_duoc_phep_dao_tao_giao_vien",
+          "de_nghi_mien_giam_hoc_phi_ho_tro_chi_phi_hoc_tap_ho_tro_tien_dong_hoc_phi_doi_voi_nguoi_hoc_tai_cac_co_so_giao_duc_mam_non_giao_duc_pho_thong_giao_duc_thuong_xuyen_giao_duc_nghe_nghiep_va_giao_duc_dai_hoc",
+          "de_nghi_ho_tro_chi_phi_hoc_tap_trong_truong_trung_hoc_pho_thong_tu_thuc_co_so_giao_duc_thuong_xuyen_tu_thuc_truong_trung_hoc_pho_thong_trong_cac_truong_dai_hoc_cao_dang_vien_nghien_cuu",
+          "de_nghi_mien_giam_hoc_phi_trong_co_so_giao_duc_nghe_nghiep_co_so_giao_duc_dai_hoc_tu_thuc_va_co_so_giao_duc_nghe_nghiep_co_so_giao_duc_dai_hoc_thuoc_to_chuc_kinh_te_doanh_nghiep_nha_nuoc",
+          "de_nghi_ho_tro_chi_phi_hoc_tap_trong_co_so_giao_duc_mam_non_cong_lap_co_so_giao_duc_pho_thong_cong_lap_co_so_giao_duc_cong_lap_thuc_hien_chuong_trinh_giao_duc_pho_thong",
+          "de_nghi_ho_tro_chi_phi_hoc_tap_trong_co_so_giao_duc_mam_non_dan_lap_tu_thuc_truong_tieu_hoc_tu_thuc_truong_trung_hoc_co_so_tu_thuc_co_so_giao_duc_thuong_xuyen_tu_thuc_co_so_giao_duc_mam_non_truong_tieu_hoc_trung_hoc_co_so_trong_cac_truong_dai_hoc_cao_dang_vien_nghien_cuu",
+          "xet_cap_hoc_bong_chinh_sach_doi_voi_hoc_vien_co_so_giao_duc_nghe_nghiep_tu_thuc_danh_cho_thuong_binh_nguoi_khuyet_tat",
+          "cap_chinh_sach_noi_tru_cho_hoc_sinh_sinh_vien_tham_gia_chuong_trinh_dao_tao_trinh_do_cao_dang_trung_cap_tai_cac_co_so_giao_duc_nghe_nghiep_cong_lap_truc_thuoc_tinh_thanh_pho_truc_thuoc_trung_uong",
+          "cap_chinh_sach_noi_tru_cho_hoc_sinh_sinh_vien_tham_gia_chuong_trinh_dao_tao_trinh_do_cao_dang_trung_cap_tai_cac_co_so_giao_duc_nghe_nghiep_tu_thuc_hoac_co_so_giao_duc_co_von_dau_tu_nuoc_ngoai",
+          "xet_duyet_hoc_sinh_ban_tru_hoc_vien_ban_tru_ho_tro_kinh_phi_ho_tro_gao",
+          "xet_duyet_tre_em_nha_tre_ban_tru_ho_tro_kinh_phi_ho_tro_gao",
+          "xet_cap_hoc_bong_chinh_sach_doi_voi_sinh_vien_hoc_theo_che_do_cu_tuyen"
+        ]
+      }
+    ],
+    "routes": [
+      {
+        "route_id": "hoc_bong_va_ho_tro-1_001622",
+        "conditions": {
+          "subdomain_key": "hoc_bong_va_ho_tro",
+          "operation_key": "ho_tro_an_trua_doi_voi_tre_em_mau_giao"
+        },
+        "procedure_code": "1.001622",
+        "procedure_name": "Hỗ trợ ăn trưa đối với trẻ em mẫu giáo",
+        "why_this_route": "Route trực tiếp cho nhu cầu 'Hỗ trợ ăn trưa đối với trẻ em mẫu giáo' trong nhánh 'Học bổng và chính sách hỗ trợ'."
+      },
+      {
+        "route_id": "hoc_bong_va_ho_tro-1_001714",
+        "conditions": {
+          "subdomain_key": "hoc_bong_va_ho_tro",
+          "operation_key": "cap_hoc_bong_va_ho_tro_kinh_phi_mua_phuong_tien_do_dung_hoc_tap_dung_rieng_cho_nguoi_khuyet_tat_hoc_tai_cac_co_so_giao_duc"
+        },
+        "procedure_code": "1.001714",
+        "procedure_name": "Cấp học bổng và hỗ trợ kinh phí mua phương tiện, đồ dùng học tập dùng riêng cho người khuyết tật học tại các cơ sở giáo dục",
+        "why_this_route": "Route trực tiếp cho nhu cầu 'Cấp học bổng và hỗ trợ kinh phí mua phương tiện, đồ dùng học tập dùng riêng cho người khuyết tật học tại các cơ sở giáo dục' trong nhánh 'Học bổng và chính sách hỗ trợ'."
+      },
+      {
+        "route_id": "hoc_bong_va_ho_tro-1_002982",
+        "conditions": {
+          "subdomain_key": "hoc_bong_va_ho_tro",
+          "operation_key": "ho_tro_hoc_tap_doi_voi_hoc_sinh_trung_hoc_pho_thong_cac_dan_toc_thieu_so_rat_it_nguoi"
+        },
+        "procedure_code": "1.002982",
+        "procedure_name": "Hỗ trợ học tập đối với học sinh trung học phổ thông các dân tộc thiểu số rất ít người",
+        "why_this_route": "Route trực tiếp cho nhu cầu 'Hỗ trợ học tập đối với học sinh trung học phổ thông các dân tộc thiểu số rất ít người' trong nhánh 'Học bổng và chính sách hỗ trợ'."
+      },
+      {
+        "route_id": "hoc_bong_va_ho_tro-1_003702",
+        "conditions": {
+          "subdomain_key": "hoc_bong_va_ho_tro",
+          "operation_key": "ho_tro_hoc_tap_doi_voi_tre_mau_giao_hoc_sinh_tieu_hoc_hoc_sinh_trung_hoc_co_so_sinh_vien_cac_dan_toc_thieu_so_rat_it_nguoi"
+        },
+        "procedure_code": "1.003702",
+        "procedure_name": "Hỗ trợ học tập đối với trẻ mẫu giáo, học sinh tiểu học, học sinh trung học cơ sở, sinh viên các dân tộc thiểu số rất ít người",
+        "why_this_route": "Route trực tiếp cho nhu cầu 'Hỗ trợ học tập đối với trẻ mẫu giáo, học sinh tiểu học, học sinh trung học cơ sở, sinh viên các dân tộc thiểu số rất ít người' trong nhánh 'Học bổng và chính sách hỗ trợ'."
+      },
+      {
+        "route_id": "hoc_bong_va_ho_tro-1_008950",
+        "conditions": {
+          "subdomain_key": "hoc_bong_va_ho_tro",
+          "operation_key": "tro_cap_doi_voi_tre_em_mam_non_la_con_cong_nhan_nguoi_lao_dong_lam_viec_tai_khu_cong_nghiep"
+        },
+        "procedure_code": "1.008950",
+        "procedure_name": "Trợ cấp đối với trẻ em mầm non là con công nhân, người lao động làm việc tại khu công nghiệp",
+        "why_this_route": "Route trực tiếp cho nhu cầu 'Trợ cấp đối với trẻ em mầm non là con công nhân, người lao động làm việc tại khu công nghiệp' trong nhánh 'Học bổng và chính sách hỗ trợ'."
+      },
+      {
+        "route_id": "hoc_bong_va_ho_tro-1_009002",
+        "conditions": {
+          "subdomain_key": "hoc_bong_va_ho_tro",
+          "operation_key": "dang_ky_ho_tro_tien_dong_hoc_phi_va_chi_phi_sinh_hoat_doi_voi_sinh_vien_hoc_cac_nganh_dao_tao_giao_vien_tai_cac_dai_hoc_hoc_vien_truong_dai_hoc_truong_cao_dang_duoc_phep_dao_tao_giao_vien"
+        },
+        "procedure_code": "1.009002",
+        "procedure_name": "Đăng ký hỗ trợ tiền đóng học phí và chi phí sinh hoạt đối với sinh viên học các ngành đào tạo giáo viên tại các đại học, học viện, trường đại học, trường cao đẳng được phép đào tạo giáo viên",
+        "why_this_route": "Route trực tiếp cho nhu cầu 'Đăng ký hỗ trợ tiền đóng học phí và chi phí sinh hoạt đối với sinh viên học các ngành đào tạo giáo viên tại các đại học, học viện, trường đại học, trường cao đẳng được phép đào tạo giáo viên' trong nhánh 'Học bổng và chính sách hỗ trợ'."
+      },
+      {
+        "route_id": "hoc_bong_va_ho_tro-1_010497",
+        "conditions": {
+          "subdomain_key": "hoc_bong_va_ho_tro",
+          "operation_key": "de_nghi_mien_giam_hoc_phi_ho_tro_chi_phi_hoc_tap_ho_tro_tien_dong_hoc_phi_doi_voi_nguoi_hoc_tai_cac_co_so_giao_duc_mam_non_giao_duc_pho_thong_giao_duc_thuong_xuyen_giao_duc_nghe_nghiep_va_giao_duc_dai_hoc"
+        },
+        "procedure_code": "1.010497",
+        "procedure_name": "Đề nghị miễn giảm học phí, hỗ trợ chi phí học tập, hỗ trợ tiền đóng học phí đối với người học tại các cơ sở giáo dục mầm non, giáo dục phổ thông, giáo dục thường xuyên, giáo dục nghề nghiệp và giáo dục đại học",
+        "why_this_route": "Route trực tiếp cho nhu cầu 'Đề nghị miễn giảm học phí, hỗ trợ chi phí học tập, hỗ trợ tiền đóng học phí đối với người học tại các cơ sở giáo dục mầm non, giáo dục phổ thông, giáo dục thường xuyên, giáo dục nghề nghiệp và giáo dục đại học' trong nhánh 'Học bổng và chính sách hỗ trợ'."
+      },
+      {
+        "route_id": "hoc_bong_va_ho_tro-1_014334",
+        "conditions": {
+          "subdomain_key": "hoc_bong_va_ho_tro",
+          "operation_key": "de_nghi_ho_tro_chi_phi_hoc_tap_trong_truong_trung_hoc_pho_thong_tu_thuc_co_so_giao_duc_thuong_xuyen_tu_thuc_truong_trung_hoc_pho_thong_trong_cac_truong_dai_hoc_cao_dang_vien_nghien_cuu"
+        },
+        "procedure_code": "1.014334",
+        "procedure_name": "Đề nghị hỗ trợ chi phí học tập trong trường trung học phổ thông tư thục, cơ sở giáo dục thường xuyên tư thục, trường trung học phổ thông trong các trường đại học, cao đẳng, viện nghiên cứu",
+        "why_this_route": "Route trực tiếp cho nhu cầu 'Đề nghị hỗ trợ chi phí học tập trong trường trung học phổ thông tư thục, cơ sở giáo dục thường xuyên tư thục, trường trung học phổ thông trong các trường đại học, cao đẳng, viện nghiên cứu' trong nhánh 'Học bổng và chính sách hỗ trợ'."
+      },
+      {
+        "route_id": "hoc_bong_va_ho_tro-1_014335",
+        "conditions": {
+          "subdomain_key": "hoc_bong_va_ho_tro",
+          "operation_key": "de_nghi_mien_giam_hoc_phi_trong_co_so_giao_duc_nghe_nghiep_co_so_giao_duc_dai_hoc_tu_thuc_va_co_so_giao_duc_nghe_nghiep_co_so_giao_duc_dai_hoc_thuoc_to_chuc_kinh_te_doanh_nghiep_nha_nuoc"
+        },
+        "procedure_code": "1.014335",
+        "procedure_name": "Đề nghị miễn, giảm học phí trong cơ sở giáo dục nghề nghiệp, cơ sở giáo dục đại học tư thục và cơ sở giáo dục nghề nghiệp, cơ sở giáo dục đại học thuộc tổ chức kinh tế, doanh nghiệp nhà nước",
+        "why_this_route": "Route trực tiếp cho nhu cầu 'Đề nghị miễn, giảm học phí trong cơ sở giáo dục nghề nghiệp, cơ sở giáo dục đại học tư thục và cơ sở giáo dục nghề nghiệp, cơ sở giáo dục đại học thuộc tổ chức kinh tế, doanh nghiệp nhà nước' trong nhánh 'Học bổng và chính sách hỗ trợ'."
+      },
+      {
+        "route_id": "hoc_bong_va_ho_tro-1_014336",
+        "conditions": {
+          "subdomain_key": "hoc_bong_va_ho_tro",
+          "operation_key": "de_nghi_ho_tro_chi_phi_hoc_tap_trong_co_so_giao_duc_mam_non_cong_lap_co_so_giao_duc_pho_thong_cong_lap_co_so_giao_duc_cong_lap_thuc_hien_chuong_trinh_giao_duc_pho_thong"
+        },
+        "procedure_code": "1.014336",
+        "procedure_name": "Đề nghị hỗ trợ chi phí học tập trong cơ sở giáo dục mầm non công lập, cơ sở giáo dục phổ thông công lập, cơ sở giáo dục công lập thực hiện chương trình giáo dục phổ thông",
+        "why_this_route": "Route trực tiếp cho nhu cầu 'Đề nghị hỗ trợ chi phí học tập trong cơ sở giáo dục mầm non công lập, cơ sở giáo dục phổ thông công lập, cơ sở giáo dục công lập thực hiện chương trình giáo dục phổ thông' trong nhánh 'Học bổng và chính sách hỗ trợ'."
+      },
+      {
+        "route_id": "hoc_bong_va_ho_tro-1_014337",
+        "conditions": {
+          "subdomain_key": "hoc_bong_va_ho_tro",
+          "operation_key": "de_nghi_ho_tro_chi_phi_hoc_tap_trong_co_so_giao_duc_mam_non_dan_lap_tu_thuc_truong_tieu_hoc_tu_thuc_truong_trung_hoc_co_so_tu_thuc_co_so_giao_duc_thuong_xuyen_tu_thuc_co_so_giao_duc_mam_non_truong_tieu_hoc_trung_hoc_co_so_trong_cac_truong_dai_hoc_cao_dang_vien_nghien_cuu"
+        },
+        "procedure_code": "1.014337",
+        "procedure_name": "Đề nghị hỗ trợ chi phí học tập trong cơ sở giáo dục mầm non dân lập, tư thục; trường tiểu học tư thục, trường trung học cơ sở tư thục, cơ sở giáo dục thường xuyên tư thục; cơ sở giáo dục mầm non, trường tiểu học, trung học cơ sở trong các trường đại học, cao đẳng, viện nghiên cứu",
+        "why_this_route": "Route trực tiếp cho nhu cầu 'Đề nghị hỗ trợ chi phí học tập trong cơ sở giáo dục mầm non dân lập, tư thục; trường tiểu học tư thục, trường trung học cơ sở tư thục, cơ sở giáo dục thường xuyên tư thục; cơ sở giáo dục mầm non, trường tiểu học, trung học cơ sở trong các trường đại học, cao đẳng, viện nghiên cứu' trong nhánh 'Học bổng và chính sách hỗ trợ'."
+      },
+      {
+        "route_id": "hoc_bong_va_ho_tro-1_014997",
+        "conditions": {
+          "subdomain_key": "hoc_bong_va_ho_tro",
+          "operation_key": "xet_cap_hoc_bong_chinh_sach_doi_voi_hoc_vien_co_so_giao_duc_nghe_nghiep_tu_thuc_danh_cho_thuong_binh_nguoi_khuyet_tat"
+        },
+        "procedure_code": "1.014997",
+        "procedure_name": "Xét, cấp học bổng chính sách đối với học viên cơ sở giáo dục nghề nghiệp tư thục dành cho thương binh, người khuyết tật",
+        "why_this_route": "Route trực tiếp cho nhu cầu 'Xét, cấp học bổng chính sách đối với học viên cơ sở giáo dục nghề nghiệp tư thục dành cho thương binh, người khuyết tật' trong nhánh 'Học bổng và chính sách hỗ trợ'."
+      },
+      {
+        "route_id": "hoc_bong_va_ho_tro-2_001959",
+        "conditions": {
+          "subdomain_key": "hoc_bong_va_ho_tro",
+          "operation_key": "cap_chinh_sach_noi_tru_cho_hoc_sinh_sinh_vien_tham_gia_chuong_trinh_dao_tao_trinh_do_cao_dang_trung_cap_tai_cac_co_so_giao_duc_nghe_nghiep_cong_lap_truc_thuoc_tinh_thanh_pho_truc_thuoc_trung_uong"
+        },
+        "procedure_code": "2.001959",
+        "procedure_name": "Cấp chính sách nội trú cho học sinh, sinh viên tham gia chương trình đào tạo trình độ cao đẳng, trung cấp tại các cơ sở giáo dục nghề nghiệp công lập trực thuộc tỉnh, thành phố trực thuộc Trung ương",
+        "why_this_route": "Route trực tiếp cho nhu cầu 'Cấp chính sách nội trú cho học sinh, sinh viên tham gia chương trình đào tạo trình độ cao đẳng, trung cấp tại các cơ sở giáo dục nghề nghiệp công lập trực thuộc tỉnh, thành phố trực thuộc Trung ương' trong nhánh 'Học bổng và chính sách hỗ trợ'."
+      },
+      {
+        "route_id": "hoc_bong_va_ho_tro-2_001960",
+        "conditions": {
+          "subdomain_key": "hoc_bong_va_ho_tro",
+          "operation_key": "cap_chinh_sach_noi_tru_cho_hoc_sinh_sinh_vien_tham_gia_chuong_trinh_dao_tao_trinh_do_cao_dang_trung_cap_tai_cac_co_so_giao_duc_nghe_nghiep_tu_thuc_hoac_co_so_giao_duc_co_von_dau_tu_nuoc_ngoai"
+        },
+        "procedure_code": "2.001960",
+        "procedure_name": "Cấp chính sách nội trú cho học sinh, sinh viên tham gia chương trình đào tạo trình độ cao đẳng, trung cấp tại các cơ sở giáo dục nghề nghiệp tư thục hoặc cơ sở giáo dục có vốn đầu tư nước ngoài",
+        "why_this_route": "Route trực tiếp cho nhu cầu 'Cấp chính sách nội trú cho học sinh, sinh viên tham gia chương trình đào tạo trình độ cao đẳng, trung cấp tại các cơ sở giáo dục nghề nghiệp tư thục hoặc cơ sở giáo dục có vốn đầu tư nước ngoài' trong nhánh 'Học bổng và chính sách hỗ trợ'."
+      },
+      {
+        "route_id": "hoc_bong_va_ho_tro-2_002770",
+        "conditions": {
+          "subdomain_key": "hoc_bong_va_ho_tro",
+          "operation_key": "xet_duyet_hoc_sinh_ban_tru_hoc_vien_ban_tru_ho_tro_kinh_phi_ho_tro_gao"
+        },
+        "procedure_code": "2.002770",
+        "procedure_name": "Xét duyệt học sinh bán trú, học viên bán trú hỗ trợ kinh phí, hỗ trợ gạo",
+        "why_this_route": "Route trực tiếp cho nhu cầu 'Xét duyệt học sinh bán trú, học viên bán trú hỗ trợ kinh phí, hỗ trợ gạo' trong nhánh 'Học bổng và chính sách hỗ trợ'."
+      },
+      {
+        "route_id": "hoc_bong_va_ho_tro-2_002771",
+        "conditions": {
+          "subdomain_key": "hoc_bong_va_ho_tro",
+          "operation_key": "xet_duyet_tre_em_nha_tre_ban_tru_ho_tro_kinh_phi_ho_tro_gao"
+        },
+        "procedure_code": "2.002771",
+        "procedure_name": "Xét duyệt trẻ em nhà trẻ bán trú hỗ trợ kinh phí, hỗ trợ gạo",
+        "why_this_route": "Route trực tiếp cho nhu cầu 'Xét duyệt trẻ em nhà trẻ bán trú hỗ trợ kinh phí, hỗ trợ gạo' trong nhánh 'Học bổng và chính sách hỗ trợ'."
+      },
+      {
+        "route_id": "hoc_bong_va_ho_tro-2_002851",
+        "conditions": {
+          "subdomain_key": "hoc_bong_va_ho_tro",
+          "operation_key": "xet_cap_hoc_bong_chinh_sach_doi_voi_sinh_vien_hoc_theo_che_do_cu_tuyen"
+        },
+        "procedure_code": "2.002851",
+        "procedure_name": "Xét, cấp học bổng chính sách đối với sinh viên học theo chế độ cử tuyển",
+        "why_this_route": "Route trực tiếp cho nhu cầu 'Xét, cấp học bổng chính sách đối với sinh viên học theo chế độ cử tuyển' trong nhánh 'Học bổng và chính sách hỗ trợ'."
+      }
+    ]
+  },
+  "pre_submission_checks": [
+    {
+      "field_group": "education_identity",
+      "checks": [
+        "Thông tin người học phải thống nhất giữa giấy tờ nhân thân, hồ sơ trường học và biểu mẫu nộp.",
+        "Phải xác định đúng cấp học hoặc chương trình đào tạo trước khi chọn thủ tục."
+      ]
+    },
+    {
+      "field_group": "financial_support",
+      "checks": [
+        "Các thủ tục hỗ trợ học tập phải có giấy tờ chứng minh đúng diện hưởng chính sách.",
+        "Nếu xin miễn giảm học phí hoặc học bổng thì phải làm rõ cơ sở giáo dục và bậc học hiện tại."
+      ]
+    },
+    {
+      "field_group": "abroad_study",
+      "checks": [
+        "Nhóm học tập ở nước ngoài phải làm rõ trạng thái đi học, đang học hay đã hoàn thành về nước.",
+        "Các yêu cầu gia hạn hoặc tạm dừng phải có căn cứ phê duyệt của cơ quan cử đi học hoặc cơ quan quản lý."
+      ]
+    }
+  ],
+  "subdomain_key": "hoc_bong_va_ho_tro"
+}

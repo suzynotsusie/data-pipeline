@@ -1,0 +1,271 @@
+{
+  "schema_version": "1.0",
+  "domain": "viec_lam",
+  "updated_at": "2026-07-18",
+  "source_files": [
+    "C:\\Users\\ku060\\Downloads\\VAIC source\\data-pipeline\\main\\full-data.csv",
+    "C:\\Users\\ku060\\Downloads\\VAIC source\\data-pipeline\\raw_data"
+  ],
+  "subdomains": [
+    {
+      "subdomain_key": "bao_hiem_xa_hoi_that_nghiep_tro_cap",
+      "subdomain_label": "Bảo hiểm xã hội, thất nghiệp, trợ cấp",
+      "event_id": 262,
+      "summary": "Nhóm thủ tục tham gia, hưởng, tiếp tục hưởng, tạm dừng, chấm dứt và chuyển nơi hưởng trợ cấp thất nghiệp.",
+      "entry_prompts": [
+        "Bạn đang tham gia hay đang hưởng trợ cấp thất nghiệp, hoặc cần thay đổi trạng thái hưởng?",
+        "Bạn cần nộp hồ sơ mới, thông báo tìm việc hằng tháng, chuyển nơi hưởng hay dừng/chấm dứt hưởng?"
+      ],
+      "procedure_count": 8,
+      "procedures": [
+        {
+          "procedure_code": "1.001601",
+          "procedure_title": "Ủy quyền lĩnh thay các chế độ bảo hiểm xã hội, trợ cấp thất nghiệp",
+          "subdomain_key": "bao_hiem_xa_hoi_that_nghiep_tro_cap",
+          "subdomain_label": "Bảo hiểm xã hội, thất nghiệp, trợ cấp",
+          "event_id": 262,
+          "field": "Chi trả các chế độ BHXH",
+          "agency": "Công đoàn cơ quan BHXH Việt Nam",
+          "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bfb-d765-716d-93f2-6b2193edaeaa",
+          "raw_data_file": "C:\\Users\\ku060\\Downloads\\VAIC source\\data-pipeline\\raw_data\\1_001601\\1_001601_procedure_detail.md",
+          "raw_data_available": true,
+          "operation_group": "uy_quyen_nhan_che_do",
+          "operation_key": "uy_quyen_linh_thay_cac_che_do_bao_hiem_xa_hoi_tro_cap_that_nghiep",
+          "overview": "1. **Bước 1. Lập hồ sơ**",
+          "procedure_flow": "1. **Bước 1. Lập hồ sơ** Người hưởng lập hồ sơ theo quy định tại mục Thành phần hồ sơ. 2. **Bước 2. Nộp hồ sơ** a) Đối với nhận chế độ BHXH hàng tháng, trợ cấp thất nghiệp: Đến kỳ chi trả, người được ủy quyền nộp Giấy uỷ quyền (mẫu số 13-HSB) hoặc Hợp đồng ủy quyền cho cơ quan Bưu điện, xuất trình Chứng minh nhân dân hoặc giấy tờ tùy thân có ảnh và ký nhận tiền trên Danh sách chi trả. Người được ủy quyền có trách nhiệm báo giảm kịp thời khi người hưởng từ trần hoặc bị tạm dừng hưởng các chế độ BHXH hàng tháng theo quy định, nếu thực hiện sai phải chịu trách nhiệm trước pháp luật và hoàn trả về quỹ BHXH. b) Đối với nhận chế độ BHXH một lần: Người được ủy quyền nộp Giấy ủy quyền (mẫu số 13-HSB) hoặc Hợp đồng ủy quyền cho cơ quan BHXH hoặc cơ quan Bưu điện nơi chi trả; xuất trình Chứng minh nhân dân hoặc giấy tờ tùy thân có ảnh; nhận tiền và ký nhận tiền trên Danh sách chi trả hoặc Giấy nhận tiền. c) Đối với nhận chế độ ốm đau, thai sản, DSPHSK: Người được ủy quyền nộp giấy ủy quyền hoặc Hợp đồng ủy quyền cho cơ quan BHXH; xuất trình Chứng minh nhân dân hoặc giấy tờ tùy thân có ảnh; nhận tiền và ký nhận tiền trên phiếu chi. 3. **Bước 3.** Cơ quan BHXH tiếp nhận hồ sơ và giải quyết theo quy định.",
+          "requirements": "Không có thông tin",
+          "submission_methods": [
+            "Dịch vụ bưu chính",
+            "Trực tiếp"
+          ],
+          "processing_time_values": [
+            "1 ngày làm việc",
+            "1 ngày làm việc"
+          ],
+          "document_groups": [],
+          "result_items": [
+            "Người được ủy quyền được nhận tiền chế độ thay cho người hưởng (Mã: `KQ.G24.000042`)"
+          ]
+        },
+        {
+          "procedure_code": "1.014745",
+          "procedure_title": "Tham gia bảo hiểm thất nghiệp (Cấp tỉnh)",
+          "subdomain_key": "bao_hiem_xa_hoi_that_nghiep_tro_cap",
+          "subdomain_label": "Bảo hiểm xã hội, thất nghiệp, trợ cấp",
+          "event_id": 262,
+          "field": "Việc làm",
+          "agency": "Bảo hiểm xã hội Việt Nam",
+          "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bfb-2b1d-7649-8f76-f193272c7e50",
+          "raw_data_file": "C:\\Users\\ku060\\Downloads\\VAIC source\\data-pipeline\\raw_data\\1_014745\\1_014745_procedure_detail.md",
+          "raw_data_available": true,
+          "operation_group": "tham_gia_bao_hiem_that_nghiep",
+          "operation_key": "tham_gia_bao_hiem_that_nghiep_cap_tinh",
+          "overview": "1. Bước 1: Người sử dụng lao động lập và nộp hồ sơ tham gia bảo hiểm thất nghiệp của người lao động cho cơ quan bảo hiểm xã hội. Bước 2: Hằng tháng, người sử dụng lao động đóng bảo hiểm thất nghiệp theo mức bằng 1% quỹ tiền lương tháng của những người lao động đang tham gia bảo hiểm thất nghiệp và trích tiền lương của từng người lao động theo mức bằng 1% tiền lương tháng để đóng cùng một lúc vào quỹ bảo hiểm thất nghiệp. Người sử dụng lao động khi tuyển dụng mới và sử dụng người lao động là người khuyết tật thì được giảm mức đóng bảo hiểm thất nghiệp từ 1% xuống 0% tiền đóng bảo hiểm thất nghiệp thuộc trách nhiệm của người sử dụng lao động phải đóng cho người lao động là người khuyết tật trong thời gian người lao động làm việc nhưng thời gian hỗ trợ không quá 12 tháng đầu kể từ khi tuyển mới người lao động khuyết tật.",
+          "procedure_flow": "1. Bước 1: Người sử dụng lao động lập và nộp hồ sơ tham gia bảo hiểm thất nghiệp của người lao động cho cơ quan bảo hiểm xã hội. Bước 2: Hằng tháng, người sử dụng lao động đóng bảo hiểm thất nghiệp theo mức bằng 1% quỹ tiền lương tháng của những người lao động đang tham gia bảo hiểm thất nghiệp và trích tiền lương của từng người lao động theo mức bằng 1% tiền lương tháng để đóng cùng một lúc vào quỹ bảo hiểm thất nghiệp. Người sử dụng lao động khi tuyển dụng mới và sử dụng người lao động là người khuyết tật thì được giảm mức đóng bảo hiểm thất nghiệp từ 1% xuống 0% tiền đóng bảo hiểm thất nghiệp thuộc trách nhiệm của người sử dụng lao động phải đóng cho người lao động là người khuyết tật trong thời gian người lao động làm việc nhưng thời gian hỗ trợ không quá 12 tháng đầu kể từ khi tuyển mới người lao động khuyết tật.",
+          "requirements": "Không có thông tin",
+          "submission_methods": [
+            "Trực tuyến",
+            "Trực tiếp"
+          ],
+          "processing_time_values": [
+            "1 ngày",
+            "1 ngày"
+          ],
+          "document_groups": [],
+          "result_items": [
+            "Người lao động tham gia đóng bảo hiểm thất nghiệp. (Mã: `KQ.G09.000391`)"
+          ]
+        },
+        {
+          "procedure_code": "1.014748",
+          "procedure_title": "Hưởng trợ cấp thất nghiệp (Cấp tỉnh)",
+          "subdomain_key": "bao_hiem_xa_hoi_that_nghiep_tro_cap",
+          "subdomain_label": "Bảo hiểm xã hội, thất nghiệp, trợ cấp",
+          "event_id": 262,
+          "field": "Việc làm",
+          "agency": "Ủy ban nhân dân tỉnh và thành phố trực thuộc Trung ương; Sở Nội Vụ",
+          "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bfb-2b1d-7649-8f76-f5315475eb46",
+          "raw_data_file": "C:\\Users\\ku060\\Downloads\\VAIC source\\data-pipeline\\raw_data\\1_014748\\1_014748_procedure_detail.md",
+          "raw_data_available": true,
+          "operation_group": "huong_tro_cap_that_nghiep",
+          "operation_key": "huong_tro_cap_that_nghiep_cap_tinh",
+          "overview": "1. Bước 1: Nộp hồ sơ hưởng trợ cấp thất nghiệp (1) Trong thời hạn 03 tháng kể từ ngày chấm dứt hợp đồng lao động hoặc hợp đồng làm việc hoặc chấm dứt làm việc hoặc kể từ ngày có xác nhận của cơ quan có thẩm quyền đối với người sử dụng lao động không có khả năng đóng bảo hiểm thất nghiệp theo quy định tại khoản 6 Điều 3 Nghị định số 374/2025/NĐ-CP, người lao động chưa có việc làm mà có nhu cầu hưởng trợ cấp thất nghiệp nộp 01 bộ hồ sơ đề nghị hưởng trợ cấp thất nghiệp cho tổ chức dịch vụ việc làm công tại địa phương nơi người lao động có nhu cầu nhận trợ cấp thất nghiệp. Người lao động được ủy quyền cho người khác nộp hồ sơ hoặc gửi hồ sơ qua dịch vụ bưu chính nếu thuộc một trong các trường hợp sau: ốm đau, thai sản có xác nhận của cơ sở y tế có thẩm quyền; bị tai nạn có xác nhận của cảnh sát giao thông hoặc cơ sở y tế có thẩm quyền; hỏa hoạn, lũ lụt, động đất, sóng thần, địch họa, dịch bệnh có xác nhận của Chủ tịch Ủy ban nhân dân cấp xã. Ngày nộp hồ sơ là ngày người được ủy quyền trực tiếp nộp hồ sơ hoặc ngày đi ghi trên dấu bưu chính đối với trường hợp gửi qua dịch vụ bưu chính. (2) Trong thời hạn 10 ngày làm việc kể từ ngày nộp hồ sơ đề nghị hưởng trợ cấp thất nghiệp, nếu người lao động không có nhu cầu hưởng trợ cấp thất nghiệp thì người lao động phải nộp đề nghị không hưởng trợ cấp thất nghiệp theo Mẫu số 11 tại Phụ lục ban hành kèm theo Nghị định số 374/2025/NĐ-CP cho tổ chức dịch vụ việc làm công nơi người lao động đã nộp hồ sơ đề nghị hưởng trợ cấp thất nghiệp. Trường hợp người lao động trực tiếp nộp hồ sơ, tổ chức dịch vụ việc làm công có trách nhiệm gửi lại hồ sơ đề nghị hưởng trợ cấp thất nghiệp cho người lao động vào ngày trả kết quả theo phiếu hẹn trả kết quả. (3) Tổ chức dịch vụ việc làm công có trách nhiệm tiếp nhận, kiểm tra hồ sơ, ghi phiếu hẹn trả kết quả theo Mẫu số 04 tại Phụ lục ban hành kèm theo Nghị định số 374/2025/NĐ-CP và trao phiếu cho người nộp hồ sơ trực tiếp hoặc gửi qua dịch vụ bưu chính đối với trường hợp nộp hồ sơ qua dịch vụ bưu chính, trường hợp người lao động nộp hồ sơ trực tuyến thì gửi thông báo về việc hẹn trả kết quả trong 03 ngày làm việc cho người lao động. Bước 2: Trong thời hạn 15 ngày làm việc kể từ ngày nhận đủ hồ sơ theo quy định, tổ chức dịch vụ việc làm công có trách nhiệm xem xét, trình Giám đốc Sở Nội vụ quyết định về việc hưởng trợ cấp thất nghiệp của người lao động, trường hợp hồ sơ đề nghị hưởng trợ cấp thất nghiệp gửi qua dịch vụ bưu chính thì ngày nhận hồ sơ được tính là ngày chuyển đến ghi trên dấu bưu chính. Trường hợp hồ sơ chưa đủ các thông tin để làm cơ sở giải quyết thì tổ chức dịch vụ việc làm công yêu cầu người lao động bổ sung, hoàn thiện hồ sơ, phiếu yêu cầu theo Mẫu số 03 tại Phụ lục ban hành kèm theo Nghị định số 374/2025/NĐ-CP. Quyết định về việc hưởng trợ cấp thất nghiệp thực hiện theo Mẫu số 12 tại Phụ lục ban hành kèm theo Nghị định số 374/2025/NĐ-CP. Quyết định về việc hưởng trợ cấp thất nghiệp được tổ chức dịch vụ việc làm công gửi: 01 bản đến Bảo hiểm xã hội cấp tỉnh nơi người lao động đang hưởng trợ cấp thất nghiệp để thực hiện chi trả trợ cấp thất nghiệp và cấp thẻ bảo hiểm y tế cho người lao động; 01 bản đến người lao động được hưởng trợ cấp thất nghiệp. Trường hợp người lao động không được hưởng trợ cấp thất nghiệp thì tổ chức dịch vụ việc làm công phải thông báo bằng văn bản và nêu rõ lý do. Bước 3: Chi trả trợ cấp thất nghiệp Trong thời hạn 05 ngày làm việc kể từ ngày người lao động hết thời hạn nhận quyết định về việc hưởng trợ cấp thất nghiệp hoặc hết thời hạn thông báo về việc tìm kiếm việc làm hằng tháng, cơ quan bảo hiểm xã hội thực hiện chi trả trợ cấp thất nghiệp cho người lao động. Bước 4: Đối với trường hợp người lao động nộp hồ sơ trực tiếp, sau thời hạn 03 ngày làm việc kể từ ngày ghi trong phiếu hẹn trả kết quả, nếu người lao động không đến nhận quyết định vể việc hưởng trợ cấp thất nghiệp thì được coi là không có nhu cầu hưởng trợ cấp thất nghiệp. Trong thời hạn 02 ngày làm việc kể từ ngày hết thời hạn nhận quyết định về việc hưởng trợ cấp thất nghiệp, tổ chức dịch vụ việc làm công phải thông tin cho cơ quan bảo hiểm xã hội các trường hợp không đến nhận quyết định về việc hưởng trợ cấp thất nghiệp để dừng chi trả theo quy định. Trong thời hạn 07 ngày làm việc kể từ ngày người lao động không đến nhận quyết định về việc hưởng trợ cấp thất nghiệp theo quy định, tổ chức dịch vụ việc làm công trình Giám đốc Sở Nội vụ quyết định về việc hủy quyết định hưởng trợ cấp thất nghiệp của người lao động. Quyết định về việc hủy quyết định hưởng trợ cấp thất nghiệp được tổ chức dịch vụ việc làm công gửi: 01 bản đến Bảo hiểm xã hội cấp tỉnh để không chi trả trợ cấp thất nghiệp cho người lao động; 01 bản đến người lao động. Quyết định về việc hủy quyết định hưởng trợ cấp thất nghiệp thực hiện theo Mẫu số 08 tại Phụ lục ban hành kèm theo Nghị định số 374/2025/NĐ-CP. Bước 5: Sau thời hạn 03 tháng kể từ ngày người lao động hết thời hạn hưởng trợ cấp thất nghiệp theo quyết định hưởng trợ cấp thất nghiệp nhưng người lao động không đến nhận tiền trợ cấp thất nghiệp và không thông báo bằng văn bản cơ quan bảo hiểm xã hội nơi đang hưởng trợ cấp thất nghiệp thì người lao động đó được xác định là không có nhu cầu hưởng trợ cấp thất nghiệp. Trong thời hạn 07 ngày làm việc sau thời hạn nêu trên, cơ quan bảo hiểm xã hội phải thông báo cho tổ chức dịch vụ việc làm công nơi người lao động đang hưởng trợ cấp thất nghiệp về việc người lao động không đến nhận tiền trợ cấp thất nghiệp. Thông báo về việc người lao động không đến nhận tiền trợ cấp thất nghiệp thực hiện theo Mẫu số 13 tại Phụ lục ban hành kèm theo Nghị định số 374/2025/NĐ-CP. Trong thời hạn 10 ngày làm việc kể từ ngày nhận được thông báo của cơ quan bảo hiểm xã hội, tổ chức dịch vụ việc làm công có trách nhiệm xem xét, trình Giám đốc Sở Nội vụ quyết định về việc bảo lưu thời gian đóng bảo hiểm thất nghiệp cho người lao động. Quyết định về việc bảo lưu thời gian đóng bảo hiểm thất nghiệp được tổ chức dịch vụ việc làm công gửi: 01 bản đến Bảo hiểm xã hội cấp tỉnh để thực hiện bảo lưu thời gian đóng bảo hiểm thất nghiệp cho người lao động; 01 bản đến người lao động. Trường hợp người lao động nộp hồ sơ trực tuyến thì Quyết định về việc bảo lưu thời gian đóng bảo hiểm thất nghiệp gửi 01 bản đến Bảo hiểm xã hội cấp tỉnh, 01 bản đến người lao động bằng hình thức trực tuyến. Quyết định bảo lưu thời gian đóng bảo hiểm thất nghiệp thực hiện theo Mẫu số 14 tại Phụ lục ban hành kèm theo Nghị định số 374/2025/NĐ-CP.",
+          "procedure_flow": "1. Bước 1: Nộp hồ sơ hưởng trợ cấp thất nghiệp (1) Trong thời hạn 03 tháng kể từ ngày chấm dứt hợp đồng lao động hoặc hợp đồng làm việc hoặc chấm dứt làm việc hoặc kể từ ngày có xác nhận của cơ quan có thẩm quyền đối với người sử dụng lao động không có khả năng đóng bảo hiểm thất nghiệp theo quy định tại khoản 6 Điều 3 Nghị định số 374/2025/NĐ-CP, người lao động chưa có việc làm mà có nhu cầu hưởng trợ cấp thất nghiệp nộp 01 bộ hồ sơ đề nghị hưởng trợ cấp thất nghiệp cho tổ chức dịch vụ việc làm công tại địa phương nơi người lao động có nhu cầu nhận trợ cấp thất nghiệp. Người lao động được ủy quyền cho người khác nộp hồ sơ hoặc gửi hồ sơ qua dịch vụ bưu chính nếu thuộc một trong các trường hợp sau: ốm đau, thai sản có xác nhận của cơ sở y tế có thẩm quyền; bị tai nạn có xác nhận của cảnh sát giao thông hoặc cơ sở y tế có thẩm quyền; hỏa hoạn, lũ lụt, động đất, sóng thần, địch họa, dịch bệnh có xác nhận của Chủ tịch Ủy ban nhân dân cấp xã. Ngày nộp hồ sơ là ngày người được ủy quyền trực tiếp nộp hồ sơ hoặc ngày đi ghi trên dấu bưu chính đối với trường hợp gửi qua dịch vụ bưu chính. (2) Trong thời hạn 10 ngày làm việc kể từ ngày nộp hồ sơ đề nghị hưởng trợ cấp thất nghiệp, nếu người lao động không có nhu cầu hưởng trợ cấp thất nghiệp thì người lao động phải nộp đề nghị không hưởng trợ cấp thất nghiệp theo Mẫu số 11 tại Phụ lục ban hành kèm theo Nghị định số 374/2025/NĐ-CP cho tổ chức dịch vụ việc làm công nơi người lao động đã nộp hồ sơ đề nghị hưởng trợ cấp thất nghiệp. Trường hợp người lao động trực tiếp nộp hồ sơ, tổ chức dịch vụ việc làm công có trách nhiệm gửi lại hồ sơ đề nghị hưởng trợ cấp thất nghiệp cho người lao động vào ngày trả kết quả theo phiếu hẹn trả kết quả. (3) Tổ chức dịch vụ việc làm công có trách nhiệm tiếp nhận, kiểm tra hồ sơ, ghi phiếu hẹn trả kết quả theo Mẫu số 04 tại Phụ lục ban hành kèm theo Nghị định số 374/2025/NĐ-CP và trao phiếu cho người nộp hồ sơ trực tiếp hoặc gửi qua dịch vụ bưu chính đối với trường hợp nộp hồ sơ qua dịch vụ bưu chính, trường hợp người lao động nộp hồ sơ trực tuyến thì gửi thông báo về việc hẹn trả kết quả trong 03 ngày làm việc cho người lao động. Bước 2: Trong thời hạn 15 ngày làm việc kể từ ngày nhận đủ hồ sơ theo quy định, tổ chức dịch vụ việc làm công có trách nhiệm xem xét, trình Giám đốc Sở Nội vụ quyết định về việc hưởng trợ cấp thất nghiệp của người lao động, trường hợp hồ sơ đề nghị hưởng trợ cấp thất nghiệp gửi qua dịch vụ bưu chính thì ngày nhận hồ sơ được tính là ngày chuyển đến ghi trên dấu bưu chính. Trường hợp hồ sơ chưa đủ các thông tin để làm cơ sở giải quyết thì tổ chức dịch vụ việc làm công yêu cầu người lao động bổ sung, hoàn thiện hồ sơ, phiếu yêu cầu theo Mẫu số 03 tại Phụ lục ban hành kèm theo Nghị định số 374/2025/NĐ-CP. Quyết định về việc hưởng trợ cấp thất nghiệp thực hiện theo Mẫu số 12 tại Phụ lục ban hành kèm theo Nghị định số 374/2025/NĐ-CP. Quyết định về việc hưởng trợ cấp thất nghiệp được tổ chức dịch vụ việc làm công gửi: 01 bản đến Bảo hiểm xã hội cấp tỉnh nơi người lao động đang hưởng trợ cấp thất nghiệp để thực hiện chi trả trợ cấp thất nghiệp và cấp thẻ bảo hiểm y tế cho người lao động; 01 bản đến người lao động được hưởng trợ cấp thất nghiệp. Trường hợp người lao động không được hưởng trợ cấp thất nghiệp thì tổ chức dịch vụ việc làm công phải thông báo bằng văn bản và nêu rõ lý do. Bước 3: Chi trả trợ cấp thất nghiệp Trong thời hạn 05 ngày làm việc kể từ ngày người lao động hết thời hạn nhận quyết định về việc hưởng trợ cấp thất nghiệp hoặc hết thời hạn thông báo về việc tìm kiếm việc làm hằng tháng, cơ quan bảo hiểm xã hội thực hiện chi trả trợ cấp thất nghiệp cho người lao động. Bước 4: Đối với trường hợp người lao động nộp hồ sơ trực tiếp, sau thời hạn 03 ngày làm việc kể từ ngày ghi trong phiếu hẹn trả kết quả, nếu người lao động không đến nhận quyết định vể việc hưởng trợ cấp thất nghiệp thì được coi là không có nhu cầu hưởng trợ cấp thất nghiệp. Trong thời hạn 02 ngày làm việc kể từ ngày hết thời hạn nhận quyết định về việc hưởng trợ cấp thất nghiệp, tổ chức dịch vụ việc làm công phải thông tin cho cơ quan bảo hiểm xã hội các trường hợp không đến nhận quyết định về việc hưởng trợ cấp thất nghiệp để dừng chi trả theo quy định. Trong thời hạn 07 ngày làm việc kể từ ngày người lao động không đến nhận quyết định về việc hưởng trợ cấp thất nghiệp theo quy định, tổ chức dịch vụ việc làm công trình Giám đốc Sở Nội vụ quyết định về việc hủy quyết định hưởng trợ cấp thất nghiệp của người lao động. Quyết định về việc hủy quyết định hưởng trợ cấp thất nghiệp được tổ chức dịch vụ việc làm công gửi: 01 bản đến Bảo hiểm xã hội cấp tỉnh để không chi trả trợ cấp thất nghiệp cho người lao động; 01 bản đến người lao động. Quyết định về việc hủy quyết định hưởng trợ cấp thất nghiệp thực hiện theo Mẫu số 08 tại Phụ lục ban hành kèm theo Nghị định số 374/2025/NĐ-CP. Bước 5: Sau thời hạn 03 tháng kể từ ngày người lao động hết thời hạn hưởng trợ cấp thất nghiệp theo quyết định hưởng trợ cấp thất nghiệp nhưng người lao động không đến nhận tiền trợ cấp thất nghiệp và không thông báo bằng văn bản cơ quan bảo hiểm xã hội nơi đang hưởng trợ cấp thất nghiệp thì người lao động đó được xác định là không có nhu cầu hưởng trợ cấp thất nghiệp. Trong thời hạn 07 ngày làm việc sau thời hạn nêu trên, cơ quan bảo hiểm xã hội phải thông báo cho tổ chức dịch vụ việc làm công nơi người lao động đang hưởng trợ cấp thất nghiệp về việc người lao động không đến nhận tiền trợ cấp thất nghiệp. Thông báo về việc người lao động không đến nhận tiền trợ cấp thất nghiệp thực hiện theo Mẫu số 13 tại Phụ lục ban hành kèm theo Nghị định số 374/2025/NĐ-CP. Trong thời hạn 10 ngày làm việc kể từ ngày nhận được thông báo của cơ quan bảo hiểm xã hội, tổ chức dịch vụ việc làm công có trách nhiệm xem xét, trình Giám đốc Sở Nội vụ quyết định về việc bảo lưu thời gian đóng bảo hiểm thất nghiệp cho người lao động. Quyết định về việc bảo lưu thời gian đóng bảo hiểm thất nghiệp được tổ chức dịch vụ việc làm công gửi: 01 bản đến Bảo hiểm xã hội cấp tỉnh để thực hiện bảo lưu thời gian đóng bảo hiểm thất nghiệp cho người lao động; 01 bản đến người lao động. Trường hợp người lao động nộp hồ sơ trực tuyến thì Quyết định về việc bảo lưu thời gian đóng bảo hiểm thất nghiệp gửi 01 bản đến Bảo hiểm xã hội cấp tỉnh, 01 bản đến người lao động bằng hình thức trực tuyến. Quyết định bảo lưu thời gian đóng bảo hiểm thất nghiệp thực hiện theo Mẫu số 14 tại Phụ lục ban hành kèm theo Nghị định số 374/2025/NĐ-CP.",
+          "requirements": "Người lao động đang đóng bảo hiểm thất nghiệp được hưởng trợ cấp thất nghiệp khi có đủ các điều kiện sau đây: 1. Chấm dứt hợp đồng lao động, hợp đồng làm việc hoặc chấm dứt làm việc theo quy định của pháp luật và không thuộc một trong các trường hợp sau đây: - Người lao động đơn phương chấm dứt hợp đồng lao động trái pháp luật theo quy định của Bộ luật Lao động; - Người lao động nghỉ việc khi đủ điều kiện hưởng lương hưu. 2. Đã đóng bảo hiểm thất nghiệp từ đủ 12 tháng trở lên trong thời gian 24 tháng trước khi chấm dứt hợp đồng lao động, hợp đồng làm việc hoặc chấm dứt làm việc theo quy định của pháp luật. Trường hợp người lao động làm việc theo hợp đồng lao động có thời hạn từ đủ 01 tháng đến dưới 12 tháng thì phải đóng đủ 12 tháng trở lên trong thời gian 36 tháng trước khi chấm dứt hợp đồng lao động. 3. Đã nộp đủ hồ sơ hưởng trợ cấp thất nghiệp trong thời hạn 03 tháng kể từ ngày chấm dứt hợp đồng lao động, hợp đồng làm việc hoặc chấm dứt làm việc 4. Trong thời hạn 10 ngày làm việc kể từ ngày nộp đủ hồ sơ hưởng trợ cấp thất nghiệp, người lao động không thuộc một trong các trường hợp sau đây: - Có việc làm và thuộc đối tượng tham gia bảo hiểm xã hội bắt buộc theo quy định tại Luật Bảo hiểm xã hội; - Thực hiện nghĩa vụ quân sự, nghĩa vụ tham gia Công an nhân dân, dân quân thường trực; - Đi học tập có thời hạn trên 12 tháng; - Chấp hành quyết định áp dụng biện pháp đưa vào cơ sở giáo dục bắt buộc, cơ sở cai nghiện bắt buộc; - Bị tạm giam, chấp hành hình phạt tù; - Ra nước ngoài định cư; - Chết.",
+          "submission_methods": [
+            "Trực tuyến",
+            "Dịch vụ bưu chính",
+            "Trực tiếp"
+          ],
+          "processing_time_values": [
+            "15 ngày làm việc",
+            "15 ngày làm việc",
+            "15 ngày làm việc"
+          ],
+          "document_groups": [],
+          "result_items": [
+            "Quyết định về việc hưởng trợ cấp thất nghiệp. (Mã: `KQ.G07.000298`)",
+            "Quyết định về việc hủy quyết định hưởng trợ cấp thất nghiệp (Mã: `KQ.G09.000524`)",
+            "Quyết định về việc bảo lưu thời gian đóng bảo hiểm thất nghiệp (Mã: `KQ.G09.000525`)"
+          ]
+        },
+        {
+          "procedure_code": "1.014749",
+          "procedure_title": "Thông báo hằng tháng về việc tìm kiếm việc làm (Cấp tỉnh)",
+          "subdomain_key": "bao_hiem_xa_hoi_that_nghiep_tro_cap",
+          "subdomain_label": "Bảo hiểm xã hội, thất nghiệp, trợ cấp",
+          "event_id": 262,
+          "field": "Việc làm",
+          "agency": "Trung tâm Dịch vụ việc làm",
+          "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bfb-2b34-706a-ae42-eb6347b83080",
+          "raw_data_file": "C:\\Users\\ku060\\Downloads\\VAIC source\\data-pipeline\\raw_data\\1_014749\\1_014749_procedure_detail.md",
+          "raw_data_available": true,
+          "operation_group": "thong_bao_tim_kiem_viec_lam",
+          "operation_key": "thong_bao_hang_thang_ve_viec_tim_kiem_viec_lam_cap_tinh",
+          "overview": "1. Trong thời gian hưởng trợ cấp thất nghiệp, hằng tháng, người lao động phải thông báo về việc tìm kiếm việc làm cho tổ chức dịch vụ việc làm công nơi đang hưởng trợ cấp thất nghiệp theo Mẫu số 24 tại Phụ lục ban hành kèm theo Nghị định số 374/2025/NĐ-CP. Ngày người lao động thông báo hằng tháng về việc tìm kiếm việc làm được ghi cụ thể trong phụ lục quyết định hưởng trợ cấp thất nghiệp của người lao động như sau: - Ngày thông báo hằng tháng về việc tìm kiếm việc làm của tháng thứ nhất hưởng trợ cấp thất nghiệp nằm trong thời hạn 03 ngày làm việc mà người lao động được trả kết quả về việc giải quyết hưởng trợ cấp thất nghiệp; - Từ tháng thứ hai hưởng trợ cấp thất nghiệp trở đi, ngày thông báo hằng tháng về việc tìm kiếm việc làm nằm trong thời hạn 03 ngày làm việc kể từ ngày đầu tiên của tháng hưởng trợ cấp thất nghiệp. Trường hợp, thời gian thông báo về việc tìm kiếm việc làm nằm trong khoảng thời gian mà người lao động bị ảnh hưởng bởi hoả hoạn, lũ lụt, động đất, sóng thần, địch họa, dịch bệnh mà không thể thông báo về việc tìm kiếm việc làm thì tổ chức dịch vụ việc làm công xem xét, trình Giám đốc Sở Nội vụ quyết định về việc điều chỉnh ngày thông báo hằng tháng về việc tìm kiếm việc làm để đảm bảo quyền lợi cho người lao động. Trường hợp ngày thông báo về việc tìm kiếm việc làm của người lao động nằm trong thời gian chuyển nơi hưởng trợ cấp thất nghiệp thì người lao động thông báo hằng tháng về việc tìm kiếm việc làm với tổ chức dịch vụ việc làm công nơi chuyển đến. Người lao động đang hưởng trợ cấp thất nghiệp được coi là đã thông báo hằng tháng về việc tìm kiếm việc làm khi đã ghi đúng và đầy đủ các nội dung trong thông báo hằng tháng về việc tìm kiếm việc làm và chịu trách nhiệm về nội dung thông báo.",
+          "procedure_flow": "1. Trong thời gian hưởng trợ cấp thất nghiệp, hằng tháng, người lao động phải thông báo về việc tìm kiếm việc làm cho tổ chức dịch vụ việc làm công nơi đang hưởng trợ cấp thất nghiệp theo Mẫu số 24 tại Phụ lục ban hành kèm theo Nghị định số 374/2025/NĐ-CP. Ngày người lao động thông báo hằng tháng về việc tìm kiếm việc làm được ghi cụ thể trong phụ lục quyết định hưởng trợ cấp thất nghiệp của người lao động như sau: - Ngày thông báo hằng tháng về việc tìm kiếm việc làm của tháng thứ nhất hưởng trợ cấp thất nghiệp nằm trong thời hạn 03 ngày làm việc mà người lao động được trả kết quả về việc giải quyết hưởng trợ cấp thất nghiệp; - Từ tháng thứ hai hưởng trợ cấp thất nghiệp trở đi, ngày thông báo hằng tháng về việc tìm kiếm việc làm nằm trong thời hạn 03 ngày làm việc kể từ ngày đầu tiên của tháng hưởng trợ cấp thất nghiệp. Trường hợp, thời gian thông báo về việc tìm kiếm việc làm nằm trong khoảng thời gian mà người lao động bị ảnh hưởng bởi hoả hoạn, lũ lụt, động đất, sóng thần, địch họa, dịch bệnh mà không thể thông báo về việc tìm kiếm việc làm thì tổ chức dịch vụ việc làm công xem xét, trình Giám đốc Sở Nội vụ quyết định về việc điều chỉnh ngày thông báo hằng tháng về việc tìm kiếm việc làm để đảm bảo quyền lợi cho người lao động. Trường hợp ngày thông báo về việc tìm kiếm việc làm của người lao động nằm trong thời gian chuyển nơi hưởng trợ cấp thất nghiệp thì người lao động thông báo hằng tháng về việc tìm kiếm việc làm với tổ chức dịch vụ việc làm công nơi chuyển đến. Người lao động đang hưởng trợ cấp thất nghiệp được coi là đã thông báo hằng tháng về việc tìm kiếm việc làm khi đã ghi đúng và đầy đủ các nội dung trong thông báo hằng tháng về việc tìm kiếm việc làm và chịu trách nhiệm về nội dung thông báo.",
+          "requirements": "Trong thời gian hưởng trợ cấp thất nghiệp, hằng tháng người lao động phải thông báo về việc tìm kiếm việc làm cho tổ chức dịch vụ việc làm công nơi đang hưởng trợ cấp thất nghiệp.",
+          "submission_methods": [
+            "Trực tuyến",
+            "Trực tiếp"
+          ],
+          "processing_time_values": [
+            "N/A",
+            "N/A"
+          ],
+          "document_groups": [],
+          "result_items": [
+            "Người lao động tiếp tục được hưởng trợ cấp thất nghiệp (Mã: `KQ.G09.000398`)"
+          ]
+        },
+        {
+          "procedure_code": "1.014750",
+          "procedure_title": "Tạm dừng hưởng trợ cấp thất nghiệp (Cấp tỉnh)",
+          "subdomain_key": "bao_hiem_xa_hoi_that_nghiep_tro_cap",
+          "subdomain_label": "Bảo hiểm xã hội, thất nghiệp, trợ cấp",
+          "event_id": 262,
+          "field": "Việc làm",
+          "agency": "Trung tâm Dịch vụ việc làm; Sở Nội Vụ",
+          "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bfb-2b4b-73b8-8b60-f14096c2d16e",
+          "raw_data_file": "C:\\Users\\ku060\\Downloads\\VAIC source\\data-pipeline\\raw_data\\1_014750\\1_014750_procedure_detail.md",
+          "raw_data_available": true,
+          "operation_group": "huong_tro_cap_that_nghiep",
+          "operation_key": "tam_dung_huong_tro_cap_that_nghiep_cap_tinh",
+          "overview": "1. Trong thời hạn 02 ngày làm việc kể từ ngày người lao động không thông báo về việc tìm kiếm việc làm hằng tháng theo quy định, tổ chức dịch vụ việc làm công nơi người lao động đang hưởng trợ cấp thất nghiệp trình Giám đốc Sở Nội vụ quyết định về việc tạm dừng hưởng trợ cấp thất nghiệp của người lao động. Giám đốc Sở Nội vụ ban hành Quyết định về việc tạm dừng hưởng trợ cấp thất nghiệp theo Mẫu số 15 tại Phụ lục ban hành kèm theo Nghị định số 374/2025/NĐ-CP. Quyết định về việc tạm dừng hưởng trợ cấp thất nghiệp được tổ chức dịch vụ việc làm công gửi 01 bản đến Bảo hiểm xã hội cấp tỉnh để thực hiện tạm dừng chi trả trợ cấp thất nghiệp đối với người lao động; 01 bản đến người lao động. Trường hợp người lao động nộp trực tuyến thì Quyết định về việc hưởng tạm dừng hưởng trợ cấp thất nghiệp gửi trực tuyến.",
+          "procedure_flow": "1. Trong thời hạn 02 ngày làm việc kể từ ngày người lao động không thông báo về việc tìm kiếm việc làm hằng tháng theo quy định, tổ chức dịch vụ việc làm công nơi người lao động đang hưởng trợ cấp thất nghiệp trình Giám đốc Sở Nội vụ quyết định về việc tạm dừng hưởng trợ cấp thất nghiệp của người lao động. Giám đốc Sở Nội vụ ban hành Quyết định về việc tạm dừng hưởng trợ cấp thất nghiệp theo Mẫu số 15 tại Phụ lục ban hành kèm theo Nghị định số 374/2025/NĐ-CP. Quyết định về việc tạm dừng hưởng trợ cấp thất nghiệp được tổ chức dịch vụ việc làm công gửi 01 bản đến Bảo hiểm xã hội cấp tỉnh để thực hiện tạm dừng chi trả trợ cấp thất nghiệp đối với người lao động; 01 bản đến người lao động. Trường hợp người lao động nộp trực tuyến thì Quyết định về việc hưởng tạm dừng hưởng trợ cấp thất nghiệp gửi trực tuyến.",
+          "requirements": "Người lao động đang hưởng trợ cấp thất nghiệp không thông báo về việc tìm kiếm việc làm hằng tháng theo quy định.",
+          "submission_methods": [
+            "Trực tuyến",
+            "Dịch vụ bưu chính",
+            "Trực tiếp"
+          ],
+          "processing_time_values": [
+            "2 ngày làm việc",
+            "2 ngày làm việc",
+            "2 ngày làm việc"
+          ],
+          "document_groups": [],
+          "result_items": [
+            "Quyết định về việc tạm dừng hưởng trợ cấp thất nghiệp. (Mã: `KQ.G07.000297`)"
+          ]
+        },
+        {
+          "procedure_code": "1.014751",
+          "procedure_title": "Tiếp tục hưởng trợ cấp thất nghiệp (Cấp tỉnh)",
+          "subdomain_key": "bao_hiem_xa_hoi_that_nghiep_tro_cap",
+          "subdomain_label": "Bảo hiểm xã hội, thất nghiệp, trợ cấp",
+          "event_id": 262,
+          "field": "Việc làm",
+          "agency": "Trung tâm Dịch vụ việc làm; Sở Nội Vụ",
+          "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bfb-2b22-766b-bd97-01c0c3344045",
+          "raw_data_file": "C:\\Users\\ku060\\Downloads\\VAIC source\\data-pipeline\\raw_data\\1_014751\\1_014751_procedure_detail.md",
+          "raw_data_available": true,
+          "operation_group": "huong_tro_cap_that_nghiep",
+          "operation_key": "tiep_tuc_huong_tro_cap_that_nghiep_cap_tinh",
+          "overview": "1. Trong thời hạn 02 ngày làm việc kể từ ngày người lao động tiếp tục thực hiện thông báo về việc tìm kiếm việc làm hằng tháng theo quy định đối với người lao động bị tạm dừng hưởng trợ cấp thất nghiệp nếu vẫn còn thời gian hưởng trợ cấp thất nghiệp theo quyết định của Giám đốc Sở Nội vụ thì tổ chức dịch vụ việc làm công trình Giám đốc Sở Nội vụ quyết định về việc tiếp tục hưởng trợ cấp thất nghiệp cho người lao động. Giám đốc Sở Nội vụ ban hành Quyết định về việc tiếp tục hưởng trợ cấp thất nghiệp. Quyết định về việc tiếp tục hưởng trợ cấp thất nghiệp được tổ chức dịch vụ việc làm công gửi: 01 bản đến Bảo hiểm xã hội cơ sở để thực hiện tiếp tục chi trả trợ cấp thất nghiệp cho người lao động; 01 bản đến người lao động. Trường hợp người lao động nộp trực tuyến thì Quyết định về việc tiếp tục hưởng trợ cấp thất nghiệp gửi trực tuyến.",
+          "procedure_flow": "1. Trong thời hạn 02 ngày làm việc kể từ ngày người lao động tiếp tục thực hiện thông báo về việc tìm kiếm việc làm hằng tháng theo quy định đối với người lao động bị tạm dừng hưởng trợ cấp thất nghiệp nếu vẫn còn thời gian hưởng trợ cấp thất nghiệp theo quyết định của Giám đốc Sở Nội vụ thì tổ chức dịch vụ việc làm công trình Giám đốc Sở Nội vụ quyết định về việc tiếp tục hưởng trợ cấp thất nghiệp cho người lao động. Giám đốc Sở Nội vụ ban hành Quyết định về việc tiếp tục hưởng trợ cấp thất nghiệp. Quyết định về việc tiếp tục hưởng trợ cấp thất nghiệp được tổ chức dịch vụ việc làm công gửi: 01 bản đến Bảo hiểm xã hội cơ sở để thực hiện tiếp tục chi trả trợ cấp thất nghiệp cho người lao động; 01 bản đến người lao động. Trường hợp người lao động nộp trực tuyến thì Quyết định về việc tiếp tục hưởng trợ cấp thất nghiệp gửi trực tuyến.",
+          "requirements": "Người lao động đang hưởng trợ cấp thất nghiệp thông báo về việc tìm kiếm việc làm hằng tháng theo quy định.",
+          "submission_methods": [
+            "Trực tuyến",
+            "Dịch vụ bưu chính",
+            "Trực tiếp"
+          ],
+          "processing_time_values": [
+            "2 ngày làm việc",
+            "2 ngày làm việc",
+            "2 ngày làm việc"
+          ],
+          "document_groups": [],
+          "result_items": [
+            "Quyết định về việc tiếp tục hưởng trợ cấp thất nghiệp. (Mã: `KQ.G07.000296`)"
+          ]
+        },
+        {
+          "procedure_code": "1.014752",
+          "procedure_title": "Chấm dứt hưởng trợ cấp thất nghiệp (Cấp tỉnh)",
+          "subdomain_key": "bao_hiem_xa_hoi_that_nghiep_tro_cap",
+          "subdomain_label": "Bảo hiểm xã hội, thất nghiệp, trợ cấp",
+          "event_id": 262,
+          "field": "Việc làm",
+          "agency": "Trung tâm Dịch vụ việc làm Cao Bằng; Sở Nội Vụ",
+          "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bfb-2b43-76d3-9c89-73ad2f7e73cb",
+          "raw_data_file": "C:\\Users\\ku060\\Downloads\\VAIC source\\data-pipeline\\raw_data\\1_014752\\1_014752_procedure_detail.md",
+          "raw_data_available": true,
+          "operation_group": "huong_tro_cap_that_nghiep",
+          "operation_key": "cham_dut_huong_tro_cap_that_nghiep_cap_tinh",
+          "overview": "1. Bước 1: Người lao động thực hiện thông báo về việc chấm dứt hưởng trợ cấp thất nghiệp theo Mẫu số 17 tại Phụ lục ban hành kèm theo Nghị định số 374/2025/NĐ-CP đến tổ chức dịch vụ việc làm công nơi người lao động đang hưởng trợ cấp thất nghiệp. Bước 2: Tổ chức dịch vụ việc làm công nơi người lao động đang hưởng trợ cấp thất nghiệp trình Giám đốc Sở Nội vụ ban hành Quyết định về việc chấm dứt hưởng trợ cấp thất nghiệp. Quyết định về việc chấm dứt hưởng trợ cấp thất nghiệp được tổ chức dịch vụ việc làm công gửi: 01 bản đến Bảo hiểm xã hội cấp tỉnh để thực hiện việc chấm dứt hưởng trợ cấp thất nghiệp đối với người lao động; 01 bản đến người lao động.",
+          "procedure_flow": "1. Bước 1: Người lao động thực hiện thông báo về việc chấm dứt hưởng trợ cấp thất nghiệp theo Mẫu số 17 tại Phụ lục ban hành kèm theo Nghị định số 374/2025/NĐ-CP đến tổ chức dịch vụ việc làm công nơi người lao động đang hưởng trợ cấp thất nghiệp. Bước 2: Tổ chức dịch vụ việc làm công nơi người lao động đang hưởng trợ cấp thất nghiệp trình Giám đốc Sở Nội vụ ban hành Quyết định về việc chấm dứt hưởng trợ cấp thất nghiệp. Quyết định về việc chấm dứt hưởng trợ cấp thất nghiệp được tổ chức dịch vụ việc làm công gửi: 01 bản đến Bảo hiểm xã hội cấp tỉnh để thực hiện việc chấm dứt hưởng trợ cấp thất nghiệp đối với người lao động; 01 bản đến người lao động.",
+          "requirements": "Người lao động bị chấm dứt hưởng trợ cấp thất nghiệp trong các trường hợp cụ thể sau: (1) Người lao động bị chấm dứt hưởng trợ cấp thất nghiệp trong các trường hợp: Có việc làm và thuộc đối tượng tham gia bảo hiểm xã hội bắt buộc theo Luật BHXH; thực hiện nghĩa vụ quân sự, nghĩa vụ tham gia công an nhân dân và dân quân thường trực; hưởng lương hưu hằng tháng; đi học tập có thời hạn trên 12 tháng trở; chấp hành quyết định áp dụng biện pháp đưa vào trường giáo dưỡng, cơ sở giáo dục bắt buộc, cơ sở cai nghiện; bị toà án tuyên bố mất tích; bị tạm giam, chấp hành hình phạt tù; theo đề nghị của người lao động thì trong thời hạn 03 ngày làm việc kể từ ngày bị chấm dứt hưởng trợ cấp thất nghiệp người lao động phải thông báo với tổ chức dịch vụ việc làm công nơi đang hưởng trợ cấp thất nghiệp theo quy định và kèm theo bản sao giấy tờ có liên quan đến việc chấm dứt hưởng trợ cấp thất nghiệp. Tổ chức dịch vụ việc làm công nơi người lao động đang hưởng trợ cấp thất nghiệp trình Giám đốc Sở Nội vụ quyết định về việc chấm dứt hưởng trợ cấp thất nghiệp của người lao động (trong đó có nội dung bảo lưu số tháng đóng bảo hiểm thất nghiệp). (2) Người lao động bị chấm dứt hưởng trợ cấp thất nghiệp trong các trường hợp: Hưởng lương hưu hằng tháng; sau 2 lần từ chối nhận việc làm do tổ chức dịch vụ việc làm công nơi đang hưởng trợ cấp thất nghiệp giới thiệu mà không có lý do chính đáng; trong thời gian hưởng trợ cấp thất nghiệp, 03 tháng liên tục không thực hiện thông báo hàng tháng về việc tìm kiếm; bị xử phạt vi phạm hành chính về hành vi vi phạm pháp luật bảo hiểm thất nghiệp; chết hoặc các trường hợp tại mục 1.1 nhưng không thông báo với tổ chức dịch vụ việc làm công nơi đang hưởng trợ cấp thất nghiệp theo quy định, tổ chức dịch vụ việc làm công nơi người lao động đang hưởng trợ cấp thất nghiệp trình Giám đốc Sở Nội vụ quyết định về việc chấm dứt hưởng trợ cấp thất nghiệp của người lao động.",
+          "submission_methods": [
+            "Trực tuyến",
+            "Dịch vụ bưu chính",
+            "Trực tiếp"
+          ],
+          "processing_time_values": [
+            "N/A",
+            "N/A",
+            "N/A"
+          ],
+          "document_groups": [],
+          "result_items": [
+            "Quyết định về việc chấm dứt hưởng trợ cấp thất nghiệp. (Mã: `KQ.G07.000315`)"
+          ]
+        },
+        {
+          "procedure_code": "1.014753",
+          "procedure_title": "Chuyển nơi hưởng trợ cấp thất nghiệp (Cấp tỉnh)",
+          "subdomain_key": "bao_hiem_xa_hoi_that_nghiep_tro_cap",
+          "subdomain_label": "Bảo hiểm xã hội, thất nghiệp, trợ cấp",
+          "event_id": 262,
+          "field": "Việc làm",
+          "agency": "Trung tâm Dịch vụ việc làm",
+          "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bfb-2b4f-77da-923b-f2aea995da2a",
+          "raw_data_file": "C:\\Users\\ku060\\Downloads\\VAIC source\\data-pipeline\\raw_data\\1_014753\\1_014753_procedure_detail.md",
+          "raw_data_available": true,
+          "operation_group": "huong_tro_cap_that_nghiep",
+          "operation_key": "chuyen_noi_huong_tro_cap_that_nghiep_cap_tinh",
+          "overview": "1. Bước 1: Người lao động đã hưởng ít nhất 01 tháng trợ cấp thất nghiệp theo quy định mà có nhu cầu chuyển nơi hưởng trợ cấp thất nghiệp đến tỉnh, thành phố trực thuộc trung ương khác thì phải nộp đề nghị chuyển nơi hưởng trợ cấp thất nghiệp theo Mẫu số 19 tại Phụ lục ban hành kèm theo Nghị định số 374/2025/NĐ-CP và gửi tổ chức dịch vụ việc làm công nơi đang hưởng trợ cấp thất nghiệp. Bước 2: Trong thời hạn 03 ngày làm việc, kể từ ngày nhận được đề nghị của người lao động, tổ chức dịch vụ việc làm công có trách nhiệm gửi thông báo về việc chuyển nơi hưởng trợ cấp thất nghiệp cho Bảo hiểm xã hội cấp tỉnh để dừng việc chi trả trợ cấp thất nghiệp, đồng thời gửi giấy giới thiệu và hồ sơ chuyển nơi hưởng trợ cấp thất nghiệp cho tổ chức dịch vụ việc làm công nơi người lao động chuyển đến. Bước 3: Trong thời hạn 03 ngày làm việc, kể từ ngày nhận được hồ sơ chuyển nơi hưởng trợ cấp thất nghiệp do người lao động chuyển đến, tổ chức dịch vụ việc làm công gửi văn bản đề nghị Bảo hiểm xã hội cấp tỉnh nơi chuyển đến để tiếp tục thực hiện việc chi trả trợ cấp thất nghiệp và cấp thẻ bảo hiểm y tế cho người lao động. Trường hợp người lao động đã nhận hồ sơ chuyển nơi hưởng trợ cấp thất nghiệp nhưng chưa nộp cho tổ chức dịch vụ việc làm công nơi chuyển đến và không có nhu cầu chuyển nơi hưởng trợ cấp thất nghiệp nữa thì người lao động phải nộp lại giấy giới thiệu chuyển nơi hưởng trợ cấp thất nghiệp cho tổ chức dịch vụ việc làm công nơi chuyển đi. Trong thời hạn 03 ngày làm việc kể từ ngày nhận lại giấy giới thiệu chuyển nơi hưởng trợ cấp thất nghiệp, tổ chức dịch vụ việc làm công gửi văn bản đề nghị cơ quan bảo hiểm xã hội cấp tỉnh để tiếp tục thực hiện việc chi trả trợ cấp thất nghiệp và cấp thẻ bảo hiểm y tế cho người lao động. Trường hợp người lao động không có nhu cầu chuyển nơi hưởng trợ cấp thất nghiệp nữa thì người lao động gửi đề nghị rút hồ sơ chuyển nơi hưởng trợ cấp thất nghiệp cho tổ chức dịch vụ việc làm công nơi chuyển đi theo Mẫu số 23 tại Phụ lục ban hành kèm theo Nghị định số 374/2025/NĐ-CP. Trong thời hạn 03 ngày làm việc kể từ ngày nhận đề nghị rút hồ sơ chuyển nơi hưởng trợ cấp thất nghiệp của người lao động, tổ chức dịch vụ việc làm công nơi chuyển đến gửi giấy giới thiệu và hồ sơ chuyển nơi hưởng trợ cấp thất nghiệp cho tổ chức dịch vụ việc làm công nơi người lao động chuyển đi. Bước 4: Cơ quan bảo hiểm xã hội nơi người lao động chuyển đến hưởng trợ cấp thất nghiệp thực hiện chi trả trợ cấp thất nghiệp và cấp thẻ bảo hiểm y tế cho người lao động theo quy định của pháp luật.",
+          "procedure_flow": "1. Bước 1: Người lao động đã hưởng ít nhất 01 tháng trợ cấp thất nghiệp theo quy định mà có nhu cầu chuyển nơi hưởng trợ cấp thất nghiệp đến tỉnh, thành phố trực thuộc trung ương khác thì phải nộp đề nghị chuyển nơi hưởng trợ cấp thất nghiệp theo Mẫu số 19 tại Phụ lục ban hành kèm theo Nghị định số 374/2025/NĐ-CP và gửi tổ chức dịch vụ việc làm công nơi đang hưởng trợ cấp thất nghiệp. Bước 2: Trong thời hạn 03 ngày làm việc, kể từ ngày nhận được đề nghị của người lao động, tổ chức dịch vụ việc làm công có trách nhiệm gửi thông báo về việc chuyển nơi hưởng trợ cấp thất nghiệp cho Bảo hiểm xã hội cấp tỉnh để dừng việc chi trả trợ cấp thất nghiệp, đồng thời gửi giấy giới thiệu và hồ sơ chuyển nơi hưởng trợ cấp thất nghiệp cho tổ chức dịch vụ việc làm công nơi người lao động chuyển đến. Bước 3: Trong thời hạn 03 ngày làm việc, kể từ ngày nhận được hồ sơ chuyển nơi hưởng trợ cấp thất nghiệp do người lao động chuyển đến, tổ chức dịch vụ việc làm công gửi văn bản đề nghị Bảo hiểm xã hội cấp tỉnh nơi chuyển đến để tiếp tục thực hiện việc chi trả trợ cấp thất nghiệp và cấp thẻ bảo hiểm y tế cho người lao động. Trường hợp người lao động đã nhận hồ sơ chuyển nơi hưởng trợ cấp thất nghiệp nhưng chưa nộp cho tổ chức dịch vụ việc làm công nơi chuyển đến và không có nhu cầu chuyển nơi hưởng trợ cấp thất nghiệp nữa thì người lao động phải nộp lại giấy giới thiệu chuyển nơi hưởng trợ cấp thất nghiệp cho tổ chức dịch vụ việc làm công nơi chuyển đi. Trong thời hạn 03 ngày làm việc kể từ ngày nhận lại giấy giới thiệu chuyển nơi hưởng trợ cấp thất nghiệp, tổ chức dịch vụ việc làm công gửi văn bản đề nghị cơ quan bảo hiểm xã hội cấp tỉnh để tiếp tục thực hiện việc chi trả trợ cấp thất nghiệp và cấp thẻ bảo hiểm y tế cho người lao động. Trường hợp người lao động không có nhu cầu chuyển nơi hưởng trợ cấp thất nghiệp nữa thì người lao động gửi đề nghị rút hồ sơ chuyển nơi hưởng trợ cấp thất nghiệp cho tổ chức dịch vụ việc làm công nơi chuyển đi theo Mẫu số 23 tại Phụ lục ban hành kèm theo Nghị định số 374/2025/NĐ-CP. Trong thời hạn 03 ngày làm việc kể từ ngày nhận đề nghị rút hồ sơ chuyển nơi hưởng trợ cấp thất nghiệp của người lao động, tổ chức dịch vụ việc làm công nơi chuyển đến gửi giấy giới thiệu và hồ sơ chuyển nơi hưởng trợ cấp thất nghiệp cho tổ chức dịch vụ việc làm công nơi người lao động chuyển đi. Bước 4: Cơ quan bảo hiểm xã hội nơi người lao động chuyển đến hưởng trợ cấp thất nghiệp thực hiện chi trả trợ cấp thất nghiệp và cấp thẻ bảo hiểm y tế cho người lao động theo quy định của pháp luật.",
+          "requirements": "Người lao động đã hưởng ít nhất 01 tháng trợ cấp thất nghiệp theo quy định và có nhu cầu chuyển hưởng trợ cấp nơi hưởng trợ cấp thất nghiệp đến tỉnh, thành phố trực thuộc trung ¬ương khác.",
+          "submission_methods": [
+            "Trực tuyến",
+            "Dịch vụ bưu chính",
+            "Trực tiếp"
+          ],
+          "processing_time_values": [
+            "3 ngày làm việc",
+            "3 ngày làm việc",
+            "3 ngày làm việc"
+          ],
+          "document_groups": [],
+          "result_items": [
+            "Giấy giới thiệu chuyển nơi hưởng trợ cấp thất nghiệp và văn bản thông báo Bảo hiểm xã hội cấp tỉnh về việc dừng (Mã: `KQ.G09.000526`)",
+            "Tiếp tục chi trả trợ cấp thất nghiệp và cấp thẻ BHYT (Mã: `KQ.G09.000527`)"
+          ]
+        }
+      ]
+    }
+  ],
+  "subdomain_key": "bao_hiem_xa_hoi_that_nghiep_tro_cap",
+  "subdomain_label": "Bảo hiểm xã hội, thất nghiệp, trợ cấp"
+}

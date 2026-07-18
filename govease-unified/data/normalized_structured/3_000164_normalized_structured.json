@@ -1,0 +1,142 @@
+{
+  "schema_version": "1.0",
+  "normalizer_version": "0.2.0",
+  "source": {
+    "procedure_code": "3.000164",
+    "title": "Đăng ký nhận các thông báo, văn bản tố tụng bằng phương tiện điện tử",
+    "raw_structured_parser_version": "0.1.0",
+    "field": "Tòa án"
+  },
+  "procedure": {
+    "level": null,
+    "procedure_type": null,
+    "target_users": [],
+    "authorities": [
+      "Tòa án nhân dân tối cao Tòa án nhân dân cấp cao Tòa án nhân dân tỉnh, thành phố trực thuộc trung ương Tòa án nhân dân cấp huyện, quận, thị xã, thành phố thuộc tỉnh và tương đương"
+    ],
+    "receiving_places": []
+  },
+  "submission": {
+    "channels": [
+      "in_person",
+      "online"
+    ],
+    "methods": [
+      {
+        "method_id": "method_1",
+        "channel": "in_person",
+        "processing_time_text": null,
+        "fee_text": null,
+        "description": "Theo quy định của Bộ luật Tố tụng dân sự, Bộ Luật tố tụng hành chính",
+        "is_online": false,
+        "is_postal": false,
+        "is_in_person": true
+      },
+      {
+        "method_id": "method_2",
+        "channel": "online",
+        "processing_time_text": null,
+        "fee_text": null,
+        "description": "Theo quy định của Bộ luật Tố tụng dân sự, Bộ Luật tố tụng hành chính",
+        "is_online": true,
+        "is_postal": false,
+        "is_in_person": false
+      }
+    ],
+    "timing_summary": {
+      "unique_processing_times": [],
+      "method_count": 2
+    }
+  },
+  "documents": {
+    "required": [
+      {
+        "document_id": "gi_y_t_ph_i_n_p_t_n_gi_y_t_m_u_n_t_khai_s_l_ng_ng_k_nh_n_th_ng_b_o_v_n_b_n_t_t_ng_b_ng_ph_ng_ti_n_i_n_t",
+        "name": "Giấy tờ phải nộp Tên giấy tờ Mẫu đơn, tờ khai Số lượng Đăng ký nhận thông báo, văn bản tố tụng bằng phương tiện điện tử",
+        "group_name": "default",
+        "group_type": "required",
+        "original_count": "1",
+        "copy_count": null,
+        "conditions": [],
+        "attachment_label": null,
+        "attachment_path": null
+      },
+      {
+        "document_id": "th_ng_tin_v_vi_c",
+        "name": "Thông tin vụ/việc",
+        "group_name": "default",
+        "group_type": "required",
+        "original_count": null,
+        "copy_count": "0",
+        "conditions": [],
+        "attachment_label": null,
+        "attachment_path": null
+      }
+    ],
+    "conditional": [],
+    "presented": [],
+    "notes": [],
+    "forms": [],
+    "empty_groups": [],
+    "document_count": 2
+  },
+  "process": {
+    "steps": [
+      {
+        "step_id": "step_1",
+        "title": "Bước 1.",
+        "content": "Bước 1. Đăng ký nhận các thông báo, văn bản tố tụng bằng phương tiện điện tử. Trường hợp thực hiện trực tuyến, Cá nhân, tổ chức đăng nhập Cổng Dịch vụ công Quốc gia/Cổng Dịch vụ công của Tòa án nhân dân, lựa chọn và tiến hành đăng ký nhận thông báo, văn bản tố tụng.",
+        "actor": "user",
+        "channel_hint": "trực tuyến",
+        "time_hint": null
+      },
+      {
+        "step_id": "step_2",
+        "title": "Bước 2.",
+        "content": "Bước 2. Cơ quan Tòa án thông báo các văn bản tố tụng bằng phương tiện điện tử. Căn cứ thông báo, nếu là thông báo nộp tiền tạm ứng án phí thì cá nhân, tổ chức đến Cơ quan Thi hành án nộp tiền tạm ứng án phí. Trường hợp thực hiện trực tuyến, căn cứ trên thông báo tống đạt hoặc tin nhắn SMS (nếu có) về việc Tòa án gửi thông báo nộp tiền tạm ứng án phí, cá nhân, tổ chức chọn mục thanh toán trực tuyến án phí và thực hiện thanh toán trực tuyến.",
+        "actor": "authority",
+        "channel_hint": "trực tuyến",
+        "time_hint": null
+      },
+      {
+        "step_id": "step_3",
+        "title": "Bước 3.",
+        "content": "Bước 3. Cá nhân, tổ chức nộp biên lai thu tiền tạm ứng đến Cơ quan Tòa án. Cơ quan Tòa án tiến hành thụ lý vụ án. Trường hợp thực hiện trực tuyến, hệ thống thanh toán trực tuyến sẽ tự động chuyển biên lai thu tạm ứng án phí, lệ phí Tòa án đến Cơ quan Tòa án để thụ lý vụ án và có thông báo đến cá nhân, tổ chức.",
+        "actor": "authority",
+        "channel_hint": "trực tuyến",
+        "time_hint": null
+      },
+      {
+        "step_id": "step_4",
+        "title": "Bước 4.",
+        "content": "Bước 4. Nhận tài liệu, thông báo văn bản tố tụng trực tuyến trên hệ thống hoặc theo địa chỉ đã đăng ký.",
+        "actor": "user",
+        "channel_hint": "trực tuyến",
+        "time_hint": null
+      }
+    ],
+    "step_count": 4,
+    "notes": []
+  },
+  "eligibility": {
+    "conditions": [],
+    "has_conditions": false
+  },
+  "results": {
+    "items": [],
+    "primary_result": null
+  },
+  "legal_basis": {
+    "items": [],
+    "count": 0
+  },
+  "attachments": [],
+  "signals": {
+    "raw_parse_warnings": [],
+    "missing_documents": false,
+    "documents_section_present": true,
+    "documents_declared_empty": false,
+    "documents_only_in_notes": false,
+    "missing_results": true
+  }
+}

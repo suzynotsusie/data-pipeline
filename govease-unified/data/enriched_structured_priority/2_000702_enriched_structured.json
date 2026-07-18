@@ -1,0 +1,116 @@
+{
+  "schema_version": "1.0",
+  "enricher_version": "0.2.0",
+  "source": {
+    "procedure_code": "2.000702",
+    "title": "Thủ tục ghi vào sổ hộ tịch các việc hộ tịch đã đăng ký tại cơ quan có thẩm quyền của nước ngoài (giám hộ; nhận cha, mẹ, con; xác định cha, mẹ con; nuôi con nuôi; khai tử; và những thay đổi khác)",
+    "group_key": "hon_nhan_gia_dinh",
+    "workflow_family": "marriage_family_workflow",
+    "subflow": "cai_chinh_trich_luc_ho_tich"
+  },
+  "experience": {
+    "entry_label": "Hỗ trợ hộ tịch và gia đình",
+    "overview_summary": "Thủ tục này thuộc nhóm hộ tịch gia đình, thường yêu cầu đối chiếu thông tin nhân thân và tình trạng hôn nhân của các bên. Kết quả thường nhận được là Trích lục ghi chú thay đổi hộ tịch. Thời gian xử lý tham khảo: 15 ngày.",
+    "next_step_summary": "Nên rà trước giấy tờ nhân thân của hai bên và các điều kiện đặc biệt nếu có yếu tố nước ngoài hoặc ủy quyền. Hiện có khoảng 4 mục giấy tờ cần theo dõi trong checklist.",
+    "tone": "supportive_public_service"
+  },
+  "guidance": {
+    "highlight_documents": [
+      {
+        "bucket": "conditional",
+        "name": "Tờ khai ghi vào sổ hộ tịch việc khai tử; Tờ khai ghi vào sổ hộ tịch việc giám hộ, nhận cha mẹ con; Tờ khai ghi vào sổ hộ tịch việc nuôi con nuôi; Tờ khai ghi vào sổ hộ tịch các việc hộ tịch khác theo mẫu tại Phụ lục Thông tư 04/2020/TT-BTP (nếu người có yêu cầu lựa chọn nộp hồ sơ theo hình thức trực tiếp).",
+        "conditions": [
+          "Tờ khai ghi vào sổ hộ tịch việc khai tử; Tờ khai ghi vào sổ hộ tịch việc giám hộ, nhận cha mẹ con; Tờ khai ghi vào sổ hộ tịch việc nuôi con nuôi; Tờ khai ghi vào sổ hộ tịch các việc hộ tịch khác theo mẫu tại Phụ lục Thông tư 04/2020/TT-BTP (nếu người có yêu cầu lựa chọn nộp hồ sơ theo hình thức trực tiếp)."
+        ],
+        "attachment_path": "file:///C:/Users/ku060/Downloads/data/raw_data/2_000702/Mot%20so%20mau%20khai.doc"
+      },
+      {
+        "bucket": "conditional",
+        "name": "Bản sao giấy tờ chứng minh việc hộ tịch đã được giải quyết tại cơ quan có thẩm quyền của nước ngoài. - Văn bản ủy quyền theo quy định của pháp luật trong trường hợp ủy quyền thực hiện việc ghi chú. Trường hợp người được ủy quyền là ông, bà, cha, mẹ, con, vợ, chồng, anh, chị, em ruột của người ủy quyền thì văn bản ủy quyền không phải công chứng, chứng thực, nhưng phải có giấy tờ chứng minh mối quan hệ với người ủy quyền.- Văn bản ủy quyền theo quy định của pháp luật trong trường hợp ủy quyền thực hiện việc ghi chú. Trường hợp người được ủy quyền là ông, bà, cha, mẹ, con, vợ, chồng, anh, chị, em ruột của người ủy quyền thì văn bản ủy quyền không phải công chứng, chứng thực, nhưng phải có giấy tờ chứng minh mối quan hệ với người ủy quyền.",
+        "conditions": [
+          "Bản sao giấy tờ chứng minh việc hộ tịch đã được giải quyết tại cơ quan có thẩm quyền của nước ngoài. - Văn bản ủy quyền theo quy định của pháp luật trong trường hợp ủy quyền thực hiện việc ghi chú. Trường hợp người được ủy quyền là ông, bà, cha, mẹ, con, vợ, chồng, anh, chị, em ruột của người ủy quyền thì văn bản ủy quyền không phải công chứng, chứng thực, nhưng phải có giấy tờ chứng minh mối quan hệ với người ủy quyền.- Văn bản ủy quyền theo quy định của pháp luật trong trường hợp ủy quyền thực hiện việc ghi chú. Trường hợp người được ủy quyền là ông, bà, cha, mẹ, con, vợ, chồng, anh, chị, em ruột của người ủy quyền thì văn bản ủy quyền không phải công chứng, chứng thực, nhưng phải có giấy tờ chứng minh mối quan hệ với người ủy quyền."
+        ],
+        "attachment_path": null
+      },
+      {
+        "bucket": "presented",
+        "name": "Giấy tờ chứng minh nơi cư trú để xác định thẩm quyền ghi vào sổ hộ tịch. Trường hợp gửi hồ sơ qua hệ thống bưu chính thì nộp bản sao các giấy tờ nêu trên đã được chứng thực hợp lệ. Trường hợp người yêu cầu là công dân Việt Nam và đã được cấp thẻ Căn cước công dân hoặc thẻ Căn cước có số định danh cá nhân thì có thể xuất trình bản chính giấy tờ đó (nếu nộp trực tiếp) hoặc nộp bản chụp giấy tờ này (nếu nộp qua đường hệ thống bưu chính hoặc gửi qua hệ thống đăng ký hộ tịch trực tuyến) để chứng minh nhân thân khi cơ sở hạ tầng kỹ thuật cho phép Cơ quan đại diện Việt Nam ở nước ngoài kết nối với CSDLQGVDC.",
+        "conditions": [
+          "Giấy tờ chứng minh nơi cư trú để xác định thẩm quyền ghi vào sổ hộ tịch. Trường hợp gửi hồ sơ qua hệ thống bưu chính thì nộp bản sao các giấy tờ nêu trên đã được chứng thực hợp lệ. Trường hợp người yêu cầu là công dân Việt Nam và đã được cấp thẻ Căn cước công dân hoặc thẻ Căn cước có số định danh cá nhân thì có thể xuất trình bản chính giấy tờ đó (nếu nộp trực tiếp) hoặc nộp bản chụp giấy tờ này (nếu nộp qua đường hệ thống bưu chính hoặc gửi qua hệ thống đăng ký hộ tịch trực tuyến) để chứng minh nhân thân khi cơ sở hạ tầng kỹ thuật cho phép Cơ quan đại diện Việt Nam ở nước ngoài kết nối với CSDLQGVDC."
+        ],
+        "attachment_path": null
+      },
+      {
+        "bucket": "presented",
+        "name": "Hộ chiếu hoặc giấy tờ có giá trị thay thế hộ chiếu, chứng minh nhân dân, thẻ căn cước công dân, thẻ căn cước hoặc các giấy tờ khác có dán ảnh và thông tin cá nhân do cơ quan có thẩm quyền cấp, còn giá trị sử dụng để chứng minh về nhân thân, quốc tịch của người có yêu cầu.",
+        "conditions": [],
+        "attachment_path": null
+      }
+    ],
+    "special_cases": [
+      "Có yếu tố nước ngoài",
+      "Có thể cần giấy tờ ủy quyền",
+      "Có trường hợp hồ sơ điện tử thay thế bản giấy",
+      "Có kiểm tra dữ liệu cư trú/định danh"
+    ],
+    "common_errors": [
+      "Thiếu giấy tờ hoặc nội dung ủy quyền phù hợp.",
+      "Thiếu giấy tờ hợp pháp hóa hoặc giấy tờ nhân thân của phía nước ngoài.",
+      "Điền sai mẫu tờ khai hoặc chọn sai biểu mẫu đi kèm."
+    ],
+    "validation_hints": [
+      "Nên xác định trước kênh nộp hồ sơ để biết có cần bản giấy, bản điện tử hay xuất trình trực tiếp.",
+      "Có mẫu biểu đính kèm, nên kiểm tra đúng biểu mẫu trước khi nộp.",
+      "Thông tin hộ tịch giữa các giấy tờ phải thống nhất về họ tên, ngày sinh và quan hệ liên quan."
+    ]
+  },
+  "intake": {
+    "candidate_input_fields": [
+      {
+        "field_id": "party_one_full_name",
+        "label": "Người thứ nhất",
+        "field_type": "text",
+        "required": true
+      },
+      {
+        "field_id": "party_two_full_name",
+        "label": "Người thứ hai",
+        "field_type": "text",
+        "required": true
+      },
+      {
+        "field_id": "has_foreign_element",
+        "label": "Có yếu tố nước ngoài",
+        "field_type": "boolean",
+        "required": true
+      },
+      {
+        "field_id": "current_marital_status_docs",
+        "label": "Có giấy tờ chứng minh tình trạng hôn nhân",
+        "field_type": "boolean",
+        "required": true
+      },
+      {
+        "field_id": "submission_at_border_area",
+        "label": "Nộp tại khu vực biên giới",
+        "field_type": "boolean",
+        "required": false
+      }
+    ],
+    "suggested_clarifying_questions": [
+      "Hai bên đã có đủ giấy tờ nhân thân và tình trạng hôn nhân chưa?",
+      "Hồ sơ có yếu tố nước ngoài, khu vực biên giới hoặc ủy quyền không?"
+    ]
+  },
+  "ui_hints": {
+    "primary_channel": "in_person",
+    "result_label": "Trích lục ghi chú thay đổi hộ tịch",
+    "time_badge": "15 ngày",
+    "document_count_badge": 4
+  },
+  "provenance": {
+    "generator": "workflow_domain_enricher",
+    "derivation_mode": "rule_based_semantic_enrichment",
+    "supported_group": true
+  }
+}

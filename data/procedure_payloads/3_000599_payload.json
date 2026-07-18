@@ -1,0 +1,235 @@
+{
+  "schema_version": "3.0",
+  "record_type": "public_service_procedure_payload",
+  "id": "procedure-3.000599",
+  "procedure_code": "3.000599",
+  "code": "3.000599",
+  "title": "Thủ tục giải quyết kiến nghị, khiếu nại của khách hàng về lĩnh vực cấp nước",
+  "language": "vi",
+  "status": "generated_from_pipeline",
+  "field": "Nước",
+  "group_key": "giai_quyet_khieu_kien",
+  "workflow_family": "complaint_resolution_workflow",
+  "subflow": "giai_quyet_khieu_kien",
+  "source": {
+    "source_url": "file:///C:/Users/ku060/Downloads/VAIC%20source/data-pipeline/raw_data/3_000599/3_000599_procedure_detail.md",
+    "source_markdown_path": "C:\\Users\\ku060\\Downloads\\VAIC source\\data-pipeline\\raw_data\\3_000599\\3_000599_procedure_detail.md",
+    "normalized_payload_path": "C:\\Users\\ku060\\Downloads\\VAIC source\\data-pipeline\\govease-unified\\data\\normalized_structured\\3_000599_normalized_structured.json",
+    "enriched_payload_path": "C:\\Users\\ku060\\Downloads\\VAIC source\\data-pipeline\\govease-unified\\data\\enriched_structured_priority\\3_000599_enriched_structured.json"
+  },
+  "scope": {
+    "included": "Thủ tục này thuộc nhóm khiếu nại và phản ánh, thường cần trình bày rõ nội dung vụ việc, quyết định hoặc hành vi bị khiếu nại và căn cứ kèm theo. Kết quả thường nhận được là Văn bản trả lời kiến nghị, khiếu nại. Thời gian xử lý tham khảo: 7 ngày làm việc.",
+    "not_included": []
+  },
+  "agency": {
+    "executing_agency": "Công ty Cổ phần Nước sạch Lai Châu",
+    "submission_place": "Trực tiếp: Tại Trung tâm Phục vụ hành chính công tỉnh Lai Châu (Địa chỉ: Tầng 1, Toà nhà số 2, Khu hợp khối các đơn vị sự nghiệp tỉnh Lai Châu, phường Tân Phong, tỉnh Lai Châu; Điện thoại: 02133.796.888).",
+    "receiving_places": [
+      "Trực tiếp: Tại Trung tâm Phục vụ hành chính công tỉnh Lai Châu (Địa chỉ: Tầng 1, Toà nhà số 2, Khu hợp khối các đơn vị sự nghiệp tỉnh Lai Châu, phường Tân Phong, tỉnh Lai Châu; Điện thoại: 02133.796.888)."
+    ]
+  },
+  "target_users": [
+    "Tổ chức (không bao gồm doanh nghiệp",
+    "HTX)",
+    "Công dân Việt Nam",
+    "Doanh nghiệp",
+    "Người nước ngoài"
+  ],
+  "submission_methods": [
+    {
+      "code": "IN_PERSON",
+      "label": "Trực tiếp",
+      "processing_time": "7 ngày làm việc",
+      "fee": null,
+      "description": "Tại Trung tâm Phục vụ hành chính công tỉnh Lai Châu (Địa chỉ: Tầng 1, Toà nhà số 2, Khu hợp khối các đơn vị sự nghiệp tỉnh Lai Châu, phường Tân Phong, tỉnh Lai Châu; Điện thoại: 02133.796.888)."
+    },
+    {
+      "code": "ONLINE",
+      "label": "Trực tuyến",
+      "processing_time": "7 ngày làm việc",
+      "fee": null,
+      "description": "Trực tuyến một phần qua Cổng Dịch vụ công quốc gia tại địa chỉ: https://dichvucong.gov.vn."
+    },
+    {
+      "code": "POSTAL",
+      "label": "Dịch vụ bưu chính",
+      "processing_time": "7 ngày làm việc",
+      "fee": null,
+      "description": "Qua dịch vụ bưu chính"
+    }
+  ],
+  "processing_note": "Thời gian xử lý tham chiếu: 7 ngày làm việc. Nên tóm tắt rõ nội dung khiếu nại, quyết định hoặc hành vi liên quan và chuẩn bị tài liệu chứng minh trước khi nộp. Có thể chọn kênh nộp phù hợp: Trực tiếp, Trực tuyến, Dịch vụ bưu chính. Hiện hệ thống chưa trích xuất được checklist giấy tờ rõ ràng, nên bạn cần đối chiếu thêm ở nguồn chính thức.",
+  "documents": {
+    "normally_required": [],
+    "conditional": [],
+    "forms": [],
+    "presented": [],
+    "notes": [],
+    "summary": []
+  },
+  "steps": [
+    {
+      "order": 1,
+      "title": "Bước 1",
+      "description": "1. - Cán bộ tiếp công dân của Công ty tiếp nhận kiến nghị, khiếu nại của khách hàng phân loại, vào sổ theo dõi.",
+      "example": null
+    },
+    {
+      "order": 2,
+      "title": "Bước 2",
+      "description": "- Công ty tiến hành kiểm tra, xác minh nội dung kiến nghị, khiếu nại và có văn bản trả lời khách hàng.",
+      "example": null
+    }
+  ],
+  "input_fields": [
+    {
+      "field": "complaint_subject",
+      "label": "Nội dung khiếu nại chính",
+      "type": "string",
+      "required": true
+    },
+    {
+      "field": "decision_or_behavior_target",
+      "label": "Quyết định hoặc hành vi bị khiếu nại",
+      "type": "string",
+      "required": true
+    },
+    {
+      "field": "has_supporting_evidence",
+      "label": "Có tài liệu chứng minh kèm theo",
+      "type": "boolean",
+      "required": true
+    },
+    {
+      "field": "submission_channel_preference",
+      "label": "Kênh nộp dự kiến",
+      "type": "enum",
+      "required": false,
+      "options": [
+        "Trực tiếp",
+        "Trực tuyến",
+        "Dịch vụ bưu chính"
+      ]
+    }
+  ],
+  "validation_rules": [
+    {
+      "id": "required-1",
+      "severity": "error",
+      "field": "complaint_subject",
+      "rule": "Trường bắt buộc phải có dữ liệu hợp lệ trước khi nộp.",
+      "message": "Thiếu trường bắt buộc: Nội dung khiếu nại chính."
+    },
+    {
+      "id": "required-2",
+      "severity": "error",
+      "field": "decision_or_behavior_target",
+      "rule": "Trường bắt buộc phải có dữ liệu hợp lệ trước khi nộp.",
+      "message": "Thiếu trường bắt buộc: Quyết định hoặc hành vi bị khiếu nại."
+    },
+    {
+      "id": "required-3",
+      "severity": "error",
+      "field": "has_supporting_evidence",
+      "rule": "Trường bắt buộc phải có dữ liệu hợp lệ trước khi nộp.",
+      "message": "Thiếu trường bắt buộc: Có tài liệu chứng minh kèm theo."
+    },
+    {
+      "id": "hint-1",
+      "severity": "warning",
+      "field": "general",
+      "rule": "Nên xác định trước kênh nộp hồ sơ để biết có cần bản giấy, bản điện tử hay xuất trình trực tiếp.",
+      "message": "Nên xác định trước kênh nộp hồ sơ để biết có cần bản giấy, bản điện tử hay xuất trình trực tiếp."
+    },
+    {
+      "id": "hint-2",
+      "severity": "warning",
+      "field": "general",
+      "rule": "Nên nêu rõ diễn biến vụ việc, quyết định hoặc hành vi bị khiếu nại và chuẩn bị tài liệu chứng minh.",
+      "message": "Nên nêu rõ diễn biến vụ việc, quyết định hoặc hành vi bị khiếu nại và chuẩn bị tài liệu chứng minh."
+    }
+  ],
+  "common_errors": [],
+  "clarifying_questions": [
+    {
+      "id": "clarify_1",
+      "question": "Bạn đang khiếu nại về quyết định hay hành vi nào, và thuộc cơ quan nào?",
+      "purpose": "workflow_intake"
+    },
+    {
+      "id": "clarify_2",
+      "question": "Bạn đã có đơn khiếu nại hoặc tài liệu chứng minh nội dung vụ việc chưa?",
+      "purpose": "workflow_intake"
+    }
+  ],
+  "legal_basis": [
+    {
+      "title": "Luật Khiếu nại năm 2011",
+      "code": "02/2011/QH13"
+    },
+    {
+      "title": "Nghị định 124/2011/NĐ-CP",
+      "code": "124/2011/NĐ-CP"
+    },
+    {
+      "title": "Nghị định 117/2007/NĐ-CP",
+      "code": "117/2007/NĐ-CP"
+    }
+  ],
+  "legal_bases": [
+    {
+      "title": "Luật Khiếu nại năm 2011",
+      "code": "02/2011/QH13"
+    },
+    {
+      "title": "Nghị định 124/2011/NĐ-CP",
+      "code": "124/2011/NĐ-CP"
+    },
+    {
+      "title": "Nghị định 117/2007/NĐ-CP",
+      "code": "117/2007/NĐ-CP"
+    }
+  ],
+  "faq": [
+    {
+      "question": "Có thể nộp qua kênh nào?",
+      "answer": "Các kênh hiện có: Trực tiếp, Trực tuyến, Dịch vụ bưu chính."
+    },
+    {
+      "question": "Thời gian xử lý tham chiếu là bao lâu?",
+      "answer": "Thời gian xử lý tham chiếu hiện có là 7 ngày làm việc."
+    },
+    {
+      "question": "Kết quả chính của thủ tục là gì?",
+      "answer": "Kết quả chính được trích xuất là Văn bản trả lời kiến nghị, khiếu nại."
+    }
+  ],
+  "guidance": {
+    "highlight_documents": [],
+    "special_cases": [],
+    "common_errors": [],
+    "validation_hints": [
+      "Nên xác định trước kênh nộp hồ sơ để biết có cần bản giấy, bản điện tử hay xuất trình trực tiếp.",
+      "Nên nêu rõ diễn biến vụ việc, quyết định hoặc hành vi bị khiếu nại và chuẩn bị tài liệu chứng minh."
+    ]
+  },
+  "next_steps": {
+    "summary": "Nên tóm tắt rõ nội dung khiếu nại, quyết định hoặc hành vi liên quan và chuẩn bị tài liệu chứng minh trước khi nộp. Có thể chọn kênh nộp phù hợp: Trực tiếp, Trực tuyến, Dịch vụ bưu chính. Hiện hệ thống chưa trích xuất được checklist giấy tờ rõ ràng, nên bạn cần đối chiếu thêm ở nguồn chính thức.",
+    "time_badge": "7 ngày làm việc",
+    "result_label": "Văn bản trả lời kiến nghị, khiếu nại",
+    "primary_channel": "in_person",
+    "channels": [
+      "in_person",
+      "online",
+      "postal"
+    ]
+  },
+  "notes": [],
+  "provenance": {
+    "pipeline": "raw->structured->normalized->enriched->ui_api_payload",
+    "normalizer_version": "0.2.0",
+    "enricher_version": "0.2.0",
+    "mapping_notes": "workflow_generated:giai_quyet_khieu_kien/giai_quyet_khieu_kien",
+    "supported_group": true
+  }
+}

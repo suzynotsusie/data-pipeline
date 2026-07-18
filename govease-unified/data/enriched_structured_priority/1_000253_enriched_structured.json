@@ -1,0 +1,82 @@
+{
+  "schema_version": "1.0",
+  "enricher_version": "0.2.0",
+  "source": {
+    "procedure_code": "1.000253",
+    "title": "Khai báo tạm trú cho người nước ngoài tại Việt Nam bằng Phiếu khai báo tạm trú",
+    "group_key": "cu_tru_giay_to",
+    "workflow_family": null,
+    "subflow": null
+  },
+  "experience": {
+    "entry_label": "Hỗ trợ cư trú và giấy tờ",
+    "overview_summary": "Thủ tục này thuộc nhóm cư trú và giấy tờ, thường cần kiểm tra thông tin định danh hoặc hồ sơ giấy tờ chuyên ngành. Kết quả thường nhận được là Phiếu khai báo tạm trú được cơ quan Công an xác nhận và các thông tin khai báo tạm trú đã được tiếp nhận ghi vào sổ trực ban của Công an cấp xã. Thời gian xử lý tham khảo: 7 ngày.",
+    "next_step_summary": "Nên kiểm tra trước giấy tờ định danh, nơi nộp và mẫu biểu liên quan, rồi chọn kênh nộp phù hợp: Trực tiếp. Hiện có 1 mục giấy tờ cần theo dõi trong checklist.",
+    "tone": "supportive_public_service"
+  },
+  "guidance": {
+    "highlight_documents": [
+      {
+        "bucket": "required",
+        "name": "Phiếu khai báo tạm trú cho người nước ngoài (mẫu NA17)",
+        "conditions": [],
+        "attachment_path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/1_000253/101-Mau%20A17%20tam%20tru%20cho%20nguoi%20nuoc%20ngoai.doc"
+      }
+    ],
+    "special_cases": [
+      "Có yếu tố nước ngoài"
+    ],
+    "common_errors": [
+      "Thiếu giấy tờ hợp pháp hóa hoặc giấy tờ nhân thân của phía nước ngoài.",
+      "Điền sai mẫu tờ khai hoặc chọn sai biểu mẫu đi kèm."
+    ],
+    "validation_hints": [
+      "Nên xác định trước kênh nộp hồ sơ để biết có cần bản giấy, bản điện tử hay xuất trình trực tiếp.",
+      "Có mẫu biểu đính kèm, nên kiểm tra đúng biểu mẫu trước khi nộp.",
+      "Nên đối chiếu trước dữ liệu định danh và nơi cư trú để tránh bị yêu cầu bổ sung."
+    ]
+  },
+  "intake": {
+    "candidate_input_fields": [
+      {
+        "field_id": "document_request_type",
+        "label": "Loại giấy tờ cần xử lý",
+        "field_type": "text",
+        "required": true
+      },
+      {
+        "field_id": "submission_channel_preference",
+        "label": "Kênh nộp dự kiến",
+        "field_type": "enum",
+        "required": false
+      },
+      {
+        "field_id": "identity_document_available",
+        "label": "Có giấy tờ định danh",
+        "field_type": "boolean",
+        "required": true
+      },
+      {
+        "field_id": "residency_or_status_known",
+        "label": "Biết rõ nơi cư trú hoặc tình trạng hiện tại",
+        "field_type": "boolean",
+        "required": false
+      }
+    ],
+    "suggested_clarifying_questions": [
+      "Bạn đang xử lý giấy tờ gì và muốn nộp trực tiếp hay trực tuyến?",
+      "Thông tin định danh và nơi cư trú hiện tại đã sẵn sàng để đối chiếu chưa?"
+    ]
+  },
+  "ui_hints": {
+    "primary_channel": "in_person",
+    "result_label": "Phiếu khai báo tạm trú được cơ quan Công an xác nhận và các thông tin khai báo tạm trú đã được tiếp nhận ghi vào sổ trực ban của Công an cấp xã",
+    "time_badge": "7 ngày",
+    "document_count_badge": 1
+  },
+  "provenance": {
+    "generator": "workflow_domain_enricher",
+    "derivation_mode": "rule_based_semantic_enrichment",
+    "supported_group": true
+  }
+}

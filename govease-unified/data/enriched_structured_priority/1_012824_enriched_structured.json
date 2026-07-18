@@ -1,0 +1,91 @@
+{
+  "schema_version": "1.0",
+  "enricher_version": "0.2.0",
+  "source": {
+    "procedure_code": "1.012824",
+    "title": "Hỗ trợ chi phí mai táng cho người cao tuổi từ đủ 75 tuổi đến 80 tuổi mà không có lương hưu, trợ cấp bảo hiểm xã hội hàng tháng, trợ cấp xã hội hàng tháng; Người mắc bệnh ung thư, suy thận mãn chạy thận nhân tạo có giấy chứng nhận của cơ quan y tế có thẩm quyền mà không có lương hưu, tiền lương, trợ cấp bảo hiểm xã hội hàng tháng, trợ cấp xã hội hàng tháng; Người khuyết tật nhẹ là thế hệ thứ ba của người hoạt động kháng chiến bị nhiễm chất độc hóa học",
+    "group_key": "nguoi_than_qua_doi",
+    "workflow_family": null,
+    "subflow": null
+  },
+  "experience": {
+    "entry_label": "Hỗ trợ chế độ cho thân nhân",
+    "overview_summary": "Thủ tục này thuộc nhóm hỗ trợ thân nhân người đã mất, thường liên quan đến mai táng phí, tử tuất hoặc chế độ phát sinh sau khi người hưởng qua đời. Kết quả thường nhận được là Quyết định hỗ trợ chi phí mai táng hoặc văn bản trả lời. Thời gian xử lý tham khảo: 3 ngày làm việc.",
+    "next_step_summary": "Nên chuẩn bị giấy tờ của người đã mất, thân nhân và căn cứ hưởng chế độ trước khi nộp. Có thể chọn kênh nộp phù hợp: Trực tiếp, Trực tuyến, Dịch vụ bưu chính. Hiện có khoảng 3 mục giấy tờ cần theo dõi trong checklist.",
+    "tone": "supportive_public_service"
+  },
+  "guidance": {
+    "highlight_documents": [
+      {
+        "bucket": "required",
+        "name": "Tờ khai đề nghị hỗ trợ chi phí mai táng của cơ quan, tổ chức, hộ gia đình hoặc cá nhân đứng ra tổ chức mai táng cho đối tượng theo Mẫu số 04 (ban hành kèm theo Nghị định số 20/2021/NĐ-CP).",
+        "conditions": [],
+        "attachment_path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/1_012824/To%20khai%20de%20nghi%20ho%20tro%20chi%20phi%20mai%20tang.doc"
+      },
+      {
+        "bucket": "required",
+        "name": "Bản sao giấy chứng tử của đối tượng;",
+        "conditions": [],
+        "attachment_path": null
+      },
+      {
+        "bucket": "required",
+        "name": "Bản sao quyết định hoặc danh sách thôi hưởng trợ cấp xã hội hàng tháng của đối tượng.",
+        "conditions": [],
+        "attachment_path": null
+      }
+    ],
+    "special_cases": [],
+    "common_errors": [
+      "Điền sai mẫu tờ khai hoặc chọn sai biểu mẫu đi kèm."
+    ],
+    "validation_hints": [
+      "Nên xác định trước kênh nộp hồ sơ để biết có cần bản giấy, bản điện tử hay xuất trình trực tiếp.",
+      "Có mẫu biểu đính kèm, nên kiểm tra đúng biểu mẫu trước khi nộp.",
+      "Nên kiểm tra kỹ giấy tờ của người đã mất, thân nhân và căn cứ phát sinh chế độ."
+    ]
+  },
+  "intake": {
+    "candidate_input_fields": [
+      {
+        "field_id": "deceased_person_name",
+        "label": "Người đã mất",
+        "field_type": "text",
+        "required": true
+      },
+      {
+        "field_id": "claimant_relationship",
+        "label": "Quan hệ của người nộp với người đã mất",
+        "field_type": "enum",
+        "required": true
+      },
+      {
+        "field_id": "support_benefit_type",
+        "label": "Loại chế độ cần giải quyết",
+        "field_type": "text",
+        "required": true
+      },
+      {
+        "field_id": "submission_channel_preference",
+        "label": "Kênh nộp dự kiến",
+        "field_type": "enum",
+        "required": false
+      }
+    ],
+    "suggested_clarifying_questions": [
+      "Bạn đang cần giải quyết mai táng phí, tử tuất hay chế độ nào cho thân nhân?",
+      "Giấy tờ của người đã mất và mối quan hệ của người nộp hồ sơ đã sẵn sàng chưa?"
+    ]
+  },
+  "ui_hints": {
+    "primary_channel": "in_person",
+    "result_label": "Quyết định hỗ trợ chi phí mai táng hoặc văn bản trả lời",
+    "time_badge": "3 ngày làm việc",
+    "document_count_badge": 3
+  },
+  "provenance": {
+    "generator": "workflow_domain_enricher",
+    "derivation_mode": "rule_based_semantic_enrichment",
+    "supported_group": true
+  }
+}

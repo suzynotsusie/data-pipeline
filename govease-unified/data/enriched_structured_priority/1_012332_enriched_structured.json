@@ -1,0 +1,100 @@
+{
+  "schema_version": "1.0",
+  "enricher_version": "0.2.0",
+  "source": {
+    "procedure_code": "1.012332",
+    "title": "Kiểm soát thay đổi trong thử kỹ thuật mới, phương pháp mới hoặc thử thiết bị y tế trên lâm sàng",
+    "group_key": "suc_khoe_y_te",
+    "workflow_family": null,
+    "subflow": null
+  },
+  "experience": {
+    "entry_label": "Hỗ trợ y tế và bảo hiểm",
+    "overview_summary": "Thủ tục này thuộc nhóm y tế, thường cần đối chiếu thông tin người bệnh, đơn vị tiếp nhận hoặc quyền lợi chuyên ngành. Kết quả thường nhận được là Giấy chứng nhận đáp ứng thực hành tốt thử nghiệm lâm sàng kỹ thuật mới, phương pháp mới hoặc thiết bị y tế (GCP). Thời gian xử lý tham khảo: 35 ngày.",
+    "next_step_summary": "Nên xác định rõ đối tượng tham gia, quyền lợi hoặc nhu cầu điều chỉnh hồ sơ y tế trước khi nộp. Có thể chọn kênh nộp phù hợp: Trực tiếp, Trực tuyến, Dịch vụ bưu chính. Hiện có khoảng 4 mục giấy tờ cần theo dõi trong checklist.",
+    "tone": "supportive_public_service"
+  },
+  "guidance": {
+    "highlight_documents": [
+      {
+        "bucket": "required",
+        "name": "4. Bản sao giấy phép hoạt động đối với cơ sở nhận thử là cơ sở khám bệnh, chữa bệnh; bản sao quyết định thành lập hoặc bản sao giấy chứng nhận đăng ký doanh nghiệp kèm theo bản sao giấy chứng nhận hoạt động khoa học công nghệ đối với cơ sở nhận thử là tổ chức khoa học và công nghệ.",
+        "conditions": [],
+        "attachment_path": null
+      },
+      {
+        "bucket": "required",
+        "name": "1. Đơn đề nghị đánh giá đáp ứng GCP theo Mẫu số 01 quy định tại Phụ lục XXIII ban hành kèm theo Thông tư số 32/2023/TT-BYT.",
+        "conditions": [],
+        "attachment_path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/1_012332/m%E1%BA%ABu%2001%20Ph%E1%BB%A5%20l%E1%BB%A5c%20XXIII.docx"
+      },
+      {
+        "bucket": "required",
+        "name": "2. Báo cáo thay đổi theo mẫu số 05 quy định tại Phụ lục số XXIII ban hành kèm theo Thông tư số 32/2023/TT-BYT.",
+        "conditions": [],
+        "attachment_path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/1_012332/m%E1%BA%ABu%20s%E1%BB%91%2005%20ph%E1%BB%A5%20l%E1%BB%A5c%20XXIII.docx"
+      },
+      {
+        "bucket": "required",
+        "name": "3. Bản kê khai Các thông tin chung về cơ sở nhận thử; cơ sở vật chất, danh mục thiết bị y tế; danh sách nhân sự đáp ứng điều kiện cho đánh giá đáp ứng GCP tương ứng; các quy trình thực hành chuẩn (SOPs), hệ thống quản lý chất lượng phục vụ cho việc thử nghiệm lâm sàng và các giấy tờ chứng minh, xác nhận các kê khai đó. Chi tiết lập hồ sơ theo hướng dẫn tại Phụ lục số XXII ban hành kèm theo Thông tư số 32/2023/TT-BYT.",
+        "conditions": [],
+        "attachment_path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/1_012332/H%E1%BB%93%20s%C6%A1%20theo%20h%C6%B0%E1%BB%9Bng%20d%E1%BA%ABn%20t%E1%BA%A1i%20Ph%E1%BB%A5%20l%E1%BB%A5c%20s%E1%BB%91%20XXII.docx"
+      }
+    ],
+    "special_cases": [
+      "Có thể cần đối chiếu thông tin thửa đất hoặc giấy chứng nhận"
+    ],
+    "common_errors": [
+      "Điền sai mẫu tờ khai hoặc chọn sai biểu mẫu đi kèm.",
+      "Thông tin thửa đất, tài sản hoặc giấy chứng nhận chưa khớp với hồ sơ hiện có."
+    ],
+    "validation_hints": [
+      "Nên xác định trước kênh nộp hồ sơ để biết có cần bản giấy, bản điện tử hay xuất trình trực tiếp.",
+      "Có mẫu biểu đính kèm, nên kiểm tra đúng biểu mẫu trước khi nộp.",
+      "Nên xác định đúng nhóm đối tượng, mã số bảo hiểm và quyền lợi áp dụng trước khi nộp."
+    ]
+  },
+  "intake": {
+    "candidate_input_fields": [
+      {
+        "field_id": "request_subject",
+        "label": "Đối tượng làm thủ tục",
+        "field_type": "text",
+        "required": true
+      },
+      {
+        "field_id": "insurance_or_medical_need",
+        "label": "Nhu cầu bảo hiểm hoặc y tế",
+        "field_type": "text",
+        "required": true
+      },
+      {
+        "field_id": "submission_channel_preference",
+        "label": "Kênh nộp dự kiến",
+        "field_type": "enum",
+        "required": false
+      },
+      {
+        "field_id": "has_insurance_number",
+        "label": "Đã có mã BHXH/BHYT",
+        "field_type": "boolean",
+        "required": false
+      }
+    ],
+    "suggested_clarifying_questions": [
+      "Bạn đang muốn đăng ký, điều chỉnh hay xác nhận quyền lợi y tế hoặc bảo hiểm nào?",
+      "Bạn đã có mã BHXH/BHYT hoặc thông tin đơn vị tiếp nhận liên quan chưa?"
+    ]
+  },
+  "ui_hints": {
+    "primary_channel": "online",
+    "result_label": "Giấy chứng nhận đáp ứng thực hành tốt thử nghiệm lâm sàng kỹ thuật mới, phương pháp mới hoặc thiết bị y tế (GCP)",
+    "time_badge": "35 ngày",
+    "document_count_badge": 4
+  },
+  "provenance": {
+    "generator": "workflow_domain_enricher",
+    "derivation_mode": "rule_based_semantic_enrichment",
+    "supported_group": true
+  }
+}

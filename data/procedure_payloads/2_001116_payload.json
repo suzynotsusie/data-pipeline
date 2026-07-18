@@ -1,0 +1,395 @@
+{
+  "schema_version": "3.0",
+  "record_type": "public_service_procedure_payload",
+  "id": "procedure-2.001116",
+  "procedure_code": "2.001116",
+  "code": "2.001116",
+  "title": "Bổ nhiệm và cấp thẻ giám định viên tư pháp xây dựng ở địa phương",
+  "language": "vi",
+  "status": "generated_from_pipeline",
+  "field": "Giám định tư pháp",
+  "group_key": "dien_luc_nha_o_dat_dai",
+  "workflow_family": null,
+  "subflow": null,
+  "source": {
+    "source_url": "file:///C:/Users/ku060/Downloads/VAIC%20source/data-pipeline/raw_data/2_001116/2_001116_procedure_detail.md",
+    "source_markdown_path": "C:\\Users\\ku060\\Downloads\\VAIC source\\data-pipeline\\raw_data\\2_001116\\2_001116_procedure_detail.md",
+    "normalized_payload_path": "C:\\Users\\ku060\\Downloads\\VAIC source\\data-pipeline\\govease-unified\\data\\normalized_structured\\2_001116_normalized_structured.json",
+    "enriched_payload_path": "C:\\Users\\ku060\\Downloads\\VAIC source\\data-pipeline\\govease-unified\\data\\enriched_structured_priority\\2_001116_enriched_structured.json"
+  },
+  "scope": {
+    "included": "Thủ tục này thuộc nhóm nhà ở, đất đai và điện lực, thường cần kiểm tra hiện trạng hồ sơ tài sản hoặc điều kiện hạ tầng liên quan. Kết quả thường nhận được là Quyết định bổ nhiệm giám định viên tư pháp xây dựng và thẻ giám định viên tư pháp xây dựng tại địa phương. Thời gian xử lý tham khảo: 30 ngày.",
+    "not_included": []
+  },
+  "agency": {
+    "executing_agency": "Ủy ban nhân dân cấp tỉnh",
+    "submission_place": "Bộ phận tiếp nhận và trả kết quả giải quyết thủ tục hành chính của Ủy ban nhân dân cấp tỉnh",
+    "receiving_places": [
+      "Bộ phận tiếp nhận và trả kết quả giải quyết thủ tục hành chính của Ủy ban nhân dân cấp tỉnh"
+    ]
+  },
+  "target_users": [
+    "Công dân Việt Nam",
+    "Cán bộ",
+    "công chức",
+    "viên chức"
+  ],
+  "submission_methods": [
+    {
+      "code": "POSTAL",
+      "label": "Dịch vụ bưu chính",
+      "processing_time": "30 ngày",
+      "fee": null,
+      "description": "Trong thời hạn 30 ngày, kể từ ngày nhận được hồ sơ hợp lệ (bao gồm 20 ngày quyết định bổ nhiệm giám định viên tư pháp và 10 ngày cấp thẻ giám định viên tư pháp)"
+    },
+    {
+      "code": "IN_PERSON",
+      "label": "Trực tiếp",
+      "processing_time": "30 ngày",
+      "fee": null,
+      "description": "Trong thời hạn 30 ngày, kể từ ngày nhận được hồ sơ hợp lệ (bao gồm 20 ngày quyết định bổ nhiệm giám định viên tư pháp và 10 ngày cấp thẻ giám định viên tư pháp)"
+    }
+  ],
+  "processing_note": "Thời gian xử lý tham chiếu: 30 ngày. Nên chuẩn bị trước thông tin thửa đất, tài sản hoặc địa điểm tiếp nhận, rồi chọn kênh nộp phù hợp: Trực tiếp, Dịch vụ bưu chính. Hiện có khoảng 6 mục giấy tờ cần theo dõi trong checklist.",
+  "documents": {
+    "normally_required": [
+      {
+        "name": "Văn bản đề nghị bổ nhiệm, cấp thẻ giám định viên tư pháp xây dựng hoặc đơn đề nghị bổ nhiệm giám định viên tư pháp của cá nhân đã là giám định viên tư pháp nhưng bị miễn nhiệm do nghỉ hưu hoặc thôi việc để thành lập Văn phòng giám định tư pháp (theo mẫu số 02 kèm theo Thông tư số 17/2021/TT-BXD)",
+        "quantity": "1 bản chính, 1 bản sao",
+        "notes": [],
+        "group": "default",
+        "attachment_path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/2_001116/Van%20ban%20de%20nghi%20bo%20nhiem%20v%C3%A0%20cap%20the%20giam%20dinh%20vien%20tu%20phap%20xay%20dung%20%281%29.docx"
+      },
+      {
+        "name": "Bản sao bằng tốt nghiệp đại học trở lên phù hợp với lĩnh vực chuyên môn được đề nghị bổ nhiệm;",
+        "quantity": "1 bản chính, 1 bản sao",
+        "notes": [],
+        "group": "default",
+        "attachment_path": null
+      },
+      {
+        "name": "02 ảnh màu chân dung cỡ 2cm x 3cm (chụp trong vòng 06 tháng gần nhất).",
+        "quantity": "1 bản chính, 1 bản sao",
+        "notes": [],
+        "group": "default",
+        "attachment_path": null
+      },
+      {
+        "name": "Giấy xác nhận về thời gian thực tế hoạt động chuyên môn của cơ quan, tổ chức nơi người được đề nghị bổ nhiệm làm việc;",
+        "quantity": "1 bản chính, 1 bản sao",
+        "notes": [],
+        "group": "default",
+        "attachment_path": null
+      }
+    ],
+    "conditional": [
+      {
+        "condition": "Bản sao Chứng chỉ hành nghề hoạt động xây dựng hoặc bản kê khai điều kiện năng lực phù hợp với tiêu chuẩn giám định viên tư pháp xây dựng quy định (nếu có).",
+        "document": "Bản sao Chứng chỉ hành nghề hoạt động xây dựng hoặc bản kê khai điều kiện năng lực phù hợp với tiêu chuẩn giám định viên tư pháp xây dựng quy định (nếu có).",
+        "quantity": "1 bản chính, 1 bản sao",
+        "notes": [],
+        "attachment_path": null
+      },
+      {
+        "condition": "Sơ yếu lý lịch và Phiếu lý lịch tư pháp. Trường hợp người được đề nghị bổ nhiệm giám định viên tư pháp đang là công chức, viên chức thì không cần có Phiếu lý lịch tư pháp;",
+        "document": "Sơ yếu lý lịch và Phiếu lý lịch tư pháp. Trường hợp người được đề nghị bổ nhiệm giám định viên tư pháp đang là công chức, viên chức thì không cần có Phiếu lý lịch tư pháp;",
+        "quantity": "1 bản chính, 1 bản sao",
+        "notes": [],
+        "attachment_path": null
+      }
+    ],
+    "forms": [
+      {
+        "name": "Văn bản đề nghị bổ nhiệm, cấp thẻ giám định viên tư pháp xây dựng hoặc đơn đề nghị bổ nhiệm giám định viên tư pháp của cá nhân đã là giám định viên tư pháp nhưng bị miễn nhiệm do nghỉ hưu hoặc thôi việc để thành lập Văn phòng giám định tư pháp (theo mẫu số 02 kèm theo Thông tư số 17/2021/TT-BXD)",
+        "attachment_label": "Van ban de nghi bo nhiem và cap the giam dinh vien tu phap xay dung (1).docx",
+        "attachment_path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/2_001116/Van%20ban%20de%20nghi%20bo%20nhiem%20v%C3%A0%20cap%20the%20giam%20dinh%20vien%20tu%20phap%20xay%20dung%20%281%29.docx"
+      }
+    ],
+    "presented": [],
+    "notes": [],
+    "summary": [
+      {
+        "group": "default",
+        "name": "Văn bản đề nghị bổ nhiệm, cấp thẻ giám định viên tư pháp xây dựng hoặc đơn đề nghị bổ nhiệm giám định viên tư pháp của cá nhân đã là giám định viên tư pháp nhưng bị miễn nhiệm do nghỉ hưu hoặc thôi việc để thành lập Văn phòng giám định tư pháp (theo mẫu số 02 kèm theo Thông tư số 17/2021/TT-BXD)",
+        "quantity": "1 bản chính, 1 bản sao",
+        "notes": [],
+        "attachment_path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/2_001116/Van%20ban%20de%20nghi%20bo%20nhiem%20v%C3%A0%20cap%20the%20giam%20dinh%20vien%20tu%20phap%20xay%20dung%20%281%29.docx"
+      },
+      {
+        "group": "default",
+        "name": "Bản sao bằng tốt nghiệp đại học trở lên phù hợp với lĩnh vực chuyên môn được đề nghị bổ nhiệm;",
+        "quantity": "1 bản chính, 1 bản sao",
+        "notes": [],
+        "attachment_path": null
+      },
+      {
+        "group": "default",
+        "name": "02 ảnh màu chân dung cỡ 2cm x 3cm (chụp trong vòng 06 tháng gần nhất).",
+        "quantity": "1 bản chính, 1 bản sao",
+        "notes": [],
+        "attachment_path": null
+      },
+      {
+        "group": "default",
+        "name": "Giấy xác nhận về thời gian thực tế hoạt động chuyên môn của cơ quan, tổ chức nơi người được đề nghị bổ nhiệm làm việc;",
+        "quantity": "1 bản chính, 1 bản sao",
+        "notes": [],
+        "attachment_path": null
+      },
+      {
+        "group": null,
+        "name": null,
+        "quantity": "1 bản chính, 1 bản sao",
+        "notes": [],
+        "attachment_path": null
+      },
+      {
+        "group": null,
+        "name": null,
+        "quantity": "1 bản chính, 1 bản sao",
+        "notes": [],
+        "attachment_path": null
+      },
+      {
+        "group": null,
+        "name": "Văn bản đề nghị bổ nhiệm, cấp thẻ giám định viên tư pháp xây dựng hoặc đơn đề nghị bổ nhiệm giám định viên tư pháp của cá nhân đã là giám định viên tư pháp nhưng bị miễn nhiệm do nghỉ hưu hoặc thôi việc để thành lập Văn phòng giám định tư pháp (theo mẫu số 02 kèm theo Thông tư số 17/2021/TT-BXD)",
+        "quantity": null,
+        "notes": null,
+        "attachment_path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/2_001116/Van%20ban%20de%20nghi%20bo%20nhiem%20v%C3%A0%20cap%20the%20giam%20dinh%20vien%20tu%20phap%20xay%20dung%20%281%29.docx"
+      }
+    ]
+  },
+  "steps": [
+    {
+      "order": 1,
+      "title": "Bước 1",
+      "description": "1. - Cơ quan, tổ chức quản lý giám định viên tư pháp gửi hồ sơ đề nghị bổ nhiệm, cấp thẻ giám định viên tư pháp xây dựng về Bộ phận tiếp nhận và trả kết quả giải quyết thủ tục hành chính của Ủy ban nhân dân cấp tỉnh;",
+      "example": null
+    },
+    {
+      "order": 2,
+      "title": "Bước 2",
+      "description": "- Sở Xây dựng chủ trì, phối hợp với Sở Tư pháp lựa chọn người có đủ tiêu chuẩn, đề nghị Chủ tịch Ủy ban nhân dân cấp tỉnh bổ nhiệm, cấp thẻ giám định viên tư pháp theo quy định;",
+      "example": null
+    },
+    {
+      "order": 3,
+      "title": "Bước 3",
+      "description": "- Trong vòng 20 ngày kể từ khi nhận được hồ sơ hợp lệ theo quy định, Chủ tịch Ủy ban nhân dân cấp tỉnh ra quyết định bổ nhiệm giám định viên tư pháp xây dựng. Trường hợp từ chối phải thông báo cho người đề nghị bằng văn bản và nêu rõ lý do;",
+      "example": "20 ngày"
+    },
+    {
+      "order": 4,
+      "title": "Bước 4",
+      "description": "Trong thời hạn 10 ngày kể từ ngày nhận được quyết định bổ nhiệm và cấp thẻ giám định viên tư pháp kèm theo hồ sơ, Chủ tịch Ủy ban nhân dân cấp tỉnh cấp thẻ giám định viên tư pháp.",
+      "example": "10 ngày"
+    }
+  ],
+  "input_fields": [
+    {
+      "field": "property_or_service_need",
+      "label": "Nhu cầu về đất đai, nhà ở hoặc điện lực",
+      "type": "string",
+      "required": true
+    },
+    {
+      "field": "property_location",
+      "label": "Địa điểm tài sản hoặc nơi sử dụng dịch vụ",
+      "type": "string",
+      "required": true
+    },
+    {
+      "field": "submission_channel_preference",
+      "label": "Kênh nộp dự kiến",
+      "type": "enum",
+      "required": false,
+      "options": [
+        "Trực tiếp",
+        "Dịch vụ bưu chính"
+      ]
+    },
+    {
+      "field": "has_current_certificate",
+      "label": "Đã có giấy tờ/tài liệu hiện trạng",
+      "type": "boolean",
+      "required": false
+    }
+  ],
+  "validation_rules": [
+    {
+      "id": "required-1",
+      "severity": "error",
+      "field": "property_or_service_need",
+      "rule": "Trường bắt buộc phải có dữ liệu hợp lệ trước khi nộp.",
+      "message": "Thiếu trường bắt buộc: Nhu cầu về đất đai, nhà ở hoặc điện lực."
+    },
+    {
+      "id": "required-2",
+      "severity": "error",
+      "field": "property_location",
+      "rule": "Trường bắt buộc phải có dữ liệu hợp lệ trước khi nộp.",
+      "message": "Thiếu trường bắt buộc: Địa điểm tài sản hoặc nơi sử dụng dịch vụ."
+    },
+    {
+      "id": "hint-1",
+      "severity": "warning",
+      "field": "general",
+      "rule": "Nên xác định trước kênh nộp hồ sơ để biết có cần bản giấy, bản điện tử hay xuất trình trực tiếp.",
+      "message": "Nên xác định trước kênh nộp hồ sơ để biết có cần bản giấy, bản điện tử hay xuất trình trực tiếp."
+    },
+    {
+      "id": "hint-2",
+      "severity": "warning",
+      "field": "general",
+      "rule": "Có mẫu biểu đính kèm, nên kiểm tra đúng biểu mẫu trước khi nộp.",
+      "message": "Có mẫu biểu đính kèm, nên kiểm tra đúng biểu mẫu trước khi nộp."
+    },
+    {
+      "id": "hint-3",
+      "severity": "warning",
+      "field": "general",
+      "rule": "Nên đối chiếu trước thông tin thửa đất, tài sản hoặc hiện trạng hồ sơ để tránh bị yêu cầu chỉnh sửa.",
+      "message": "Nên đối chiếu trước thông tin thửa đất, tài sản hoặc hiện trạng hồ sơ để tránh bị yêu cầu chỉnh sửa."
+    }
+  ],
+  "common_errors": [
+    {
+      "field": "general",
+      "issue": "Điền sai mẫu tờ khai hoặc chọn sai biểu mẫu đi kèm.",
+      "fix": "Nên xác định trước kênh nộp hồ sơ để biết có cần bản giấy, bản điện tử hay xuất trình trực tiếp."
+    }
+  ],
+  "clarifying_questions": [
+    {
+      "id": "clarify_1",
+      "question": "Bạn đang xử lý nhu cầu nào về đất đai, nhà ở hoặc điện lực?",
+      "purpose": "workflow_intake"
+    },
+    {
+      "id": "clarify_2",
+      "question": "Bạn đã có thông tin thửa đất, địa chỉ tài sản hoặc giấy tờ hiện trạng chưa?",
+      "purpose": "workflow_intake"
+    }
+  ],
+  "legal_basis": [
+    {
+      "title": "Thông tư số 17/2021/TT-BXD ngày 22/12/2021 của Bộ Xây dựng quy định một số nội dung về hoạt động giám định tư pháp trong lĩnh vực xây dựng",
+      "code": "Thông tư số 17/2021/TT-BXD"
+    },
+    {
+      "title": "Luật Giám định tư pháp năm 2012",
+      "code": "13/2012/QH13"
+    },
+    {
+      "title": "Nghị định sửa đổi, bổ sung một số điều các Nghị định thuộc lĩnh vực quản lý nhà nước của Bộ Xây dựng",
+      "code": "35/2023/NĐ-CP"
+    },
+    {
+      "title": "Thông tư số 11/2020/TT- BTP ngày 31/12/2020 của Bộ trưởng Bộ Tư pháp quy định về mẫu thẻ, trình tự, thủ tục cấp mới, cấp lại thẻ giám định viên tư pháp",
+      "code": "11/2020/TT-BTP"
+    }
+  ],
+  "legal_bases": [
+    {
+      "title": "Thông tư số 17/2021/TT-BXD ngày 22/12/2021 của Bộ Xây dựng quy định một số nội dung về hoạt động giám định tư pháp trong lĩnh vực xây dựng",
+      "code": "Thông tư số 17/2021/TT-BXD"
+    },
+    {
+      "title": "Luật Giám định tư pháp năm 2012",
+      "code": "13/2012/QH13"
+    },
+    {
+      "title": "Nghị định sửa đổi, bổ sung một số điều các Nghị định thuộc lĩnh vực quản lý nhà nước của Bộ Xây dựng",
+      "code": "35/2023/NĐ-CP"
+    },
+    {
+      "title": "Thông tư số 11/2020/TT- BTP ngày 31/12/2020 của Bộ trưởng Bộ Tư pháp quy định về mẫu thẻ, trình tự, thủ tục cấp mới, cấp lại thẻ giám định viên tư pháp",
+      "code": "11/2020/TT-BTP"
+    }
+  ],
+  "faq": [
+    {
+      "question": "Có thể nộp qua kênh nào?",
+      "answer": "Các kênh hiện có: Trực tiếp, Dịch vụ bưu chính."
+    },
+    {
+      "question": "Thời gian xử lý tham chiếu là bao lâu?",
+      "answer": "Thời gian xử lý tham chiếu hiện có là 30 ngày."
+    },
+    {
+      "question": "Kết quả chính của thủ tục là gì?",
+      "answer": "Kết quả chính được trích xuất là Quyết định bổ nhiệm giám định viên tư pháp xây dựng và thẻ giám định viên tư pháp xây dựng tại địa phương."
+    }
+  ],
+  "guidance": {
+    "highlight_documents": [
+      {
+        "bucket": "required",
+        "name": "Văn bản đề nghị bổ nhiệm, cấp thẻ giám định viên tư pháp xây dựng hoặc đơn đề nghị bổ nhiệm giám định viên tư pháp của cá nhân đã là giám định viên tư pháp nhưng bị miễn nhiệm do nghỉ hưu hoặc thôi việc để thành lập Văn phòng giám định tư pháp (theo mẫu số 02 kèm theo Thông tư số 17/2021/TT-BXD)",
+        "conditions": [],
+        "attachment_path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/2_001116/Van%20ban%20de%20nghi%20bo%20nhiem%20v%C3%A0%20cap%20the%20giam%20dinh%20vien%20tu%20phap%20xay%20dung%20%281%29.docx"
+      },
+      {
+        "bucket": "required",
+        "name": "Bản sao bằng tốt nghiệp đại học trở lên phù hợp với lĩnh vực chuyên môn được đề nghị bổ nhiệm;",
+        "conditions": [],
+        "attachment_path": null
+      },
+      {
+        "bucket": "required",
+        "name": "02 ảnh màu chân dung cỡ 2cm x 3cm (chụp trong vòng 06 tháng gần nhất).",
+        "conditions": [],
+        "attachment_path": null
+      },
+      {
+        "bucket": "required",
+        "name": "Giấy xác nhận về thời gian thực tế hoạt động chuyên môn của cơ quan, tổ chức nơi người được đề nghị bổ nhiệm làm việc;",
+        "conditions": [],
+        "attachment_path": null
+      },
+      {
+        "bucket": "conditional",
+        "name": "Bản sao Chứng chỉ hành nghề hoạt động xây dựng hoặc bản kê khai điều kiện năng lực phù hợp với tiêu chuẩn giám định viên tư pháp xây dựng quy định (nếu có).",
+        "conditions": [
+          "Bản sao Chứng chỉ hành nghề hoạt động xây dựng hoặc bản kê khai điều kiện năng lực phù hợp với tiêu chuẩn giám định viên tư pháp xây dựng quy định (nếu có)."
+        ],
+        "attachment_path": null
+      },
+      {
+        "bucket": "conditional",
+        "name": "Sơ yếu lý lịch và Phiếu lý lịch tư pháp. Trường hợp người được đề nghị bổ nhiệm giám định viên tư pháp đang là công chức, viên chức thì không cần có Phiếu lý lịch tư pháp;",
+        "conditions": [
+          "Sơ yếu lý lịch và Phiếu lý lịch tư pháp. Trường hợp người được đề nghị bổ nhiệm giám định viên tư pháp đang là công chức, viên chức thì không cần có Phiếu lý lịch tư pháp;"
+        ],
+        "attachment_path": null
+      }
+    ],
+    "special_cases": [],
+    "common_errors": [
+      "Điền sai mẫu tờ khai hoặc chọn sai biểu mẫu đi kèm."
+    ],
+    "validation_hints": [
+      "Nên xác định trước kênh nộp hồ sơ để biết có cần bản giấy, bản điện tử hay xuất trình trực tiếp.",
+      "Có mẫu biểu đính kèm, nên kiểm tra đúng biểu mẫu trước khi nộp.",
+      "Nên đối chiếu trước thông tin thửa đất, tài sản hoặc hiện trạng hồ sơ để tránh bị yêu cầu chỉnh sửa."
+    ]
+  },
+  "next_steps": {
+    "summary": "Nên chuẩn bị trước thông tin thửa đất, tài sản hoặc địa điểm tiếp nhận, rồi chọn kênh nộp phù hợp: Trực tiếp, Dịch vụ bưu chính. Hiện có khoảng 6 mục giấy tờ cần theo dõi trong checklist.",
+    "time_badge": "30 ngày",
+    "result_label": "Quyết định bổ nhiệm giám định viên tư pháp xây dựng và thẻ giám định viên tư pháp xây dựng tại địa phương",
+    "primary_channel": "postal",
+    "channels": [
+      "in_person",
+      "postal"
+    ]
+  },
+  "notes": [],
+  "provenance": {
+    "pipeline": "raw->structured->normalized->enriched->ui_api_payload",
+    "normalizer_version": "0.2.0",
+    "enricher_version": "0.2.0",
+    "mapping_notes": "excluded_from_clean_workflow_dataset",
+    "supported_group": true
+  }
+}

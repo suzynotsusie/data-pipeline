@@ -1,0 +1,84 @@
+{
+  "schema_version": "1.0",
+  "enricher_version": "0.2.0",
+  "source": {
+    "procedure_code": "1.014078",
+    "title": "Cho phép nhập khẩu thuốc, nguyên liệu làm thuốc có hạn dùng còn lại tại thời điểm thông quan ngắn hơn quy định",
+    "group_key": "suc_khoe_y_te",
+    "workflow_family": null,
+    "subflow": null
+  },
+  "experience": {
+    "entry_label": "Hỗ trợ y tế và bảo hiểm",
+    "overview_summary": "Thủ tục này thuộc nhóm y tế, thường cần đối chiếu thông tin người bệnh, đơn vị tiếp nhận hoặc quyền lợi chuyên ngành. Kết quả thường nhận được là Văn bản chấp thuận/Văn bản yêu cầu sửa đổi, bổ sung hồ sơ/Văn bản trả lời không cho phép nhập khẩu. Thời gian xử lý tham khảo: 15 ngày.",
+    "next_step_summary": "Nên xác định rõ đối tượng tham gia, quyền lợi hoặc nhu cầu điều chỉnh hồ sơ y tế trước khi nộp. Có thể chọn kênh nộp phù hợp: Trực tiếp, Trực tuyến, Dịch vụ bưu chính. Hiện có khoảng 2 mục giấy tờ cần theo dõi trong checklist.",
+    "tone": "supportive_public_service"
+  },
+  "guidance": {
+    "highlight_documents": [
+      {
+        "bucket": "required",
+        "name": "Đơn đề nghị của cơ sở nhập khẩu, bao gồm các thông tin sau: Tên thuốc, nguyên liệu làm thuốc, số lô, số lượng, hạn dùng còn lại tại thời điểm thông quan, lý do thuốc, nguyên liệu làm thuốc có hạn dùng còn lại tại thời điểm thông quan ngắn hơn quy định tại điểm a, b, c khoản 1 hoặc khoản 2 Điều 75 Nghị định số 163/2025/NĐ-CP và tính cần thiết cho việc sản xuất, phòng, và điều trị bệnh.",
+        "conditions": [],
+        "attachment_path": null
+      },
+      {
+        "bucket": "conditional",
+        "name": "Văn bản đề nghị, cam kết của cơ sở khám bệnh, chữa bệnh về sự cần thiết sử dụng thuốc cho nhu cầu phòng và điều trị bệnh đối với trường hợp quy định tại khoản 4 Điều 75 Nghị định số 163/2025/NĐ-CP và tài liệu chứng minh lô thuốc/nguyên liệu làm thuốc có hạn dùng còn lại tại thời điểm thông quan ngắn hơn quy định tại điểm a, b, c khoản 1 hoặc khoản 2 Điều 75 Nghị định số 163/2025/NĐ-CP",
+        "conditions": [
+          "Văn bản đề nghị, cam kết của cơ sở khám bệnh, chữa bệnh về sự cần thiết sử dụng thuốc cho nhu cầu phòng và điều trị bệnh đối với trường hợp quy định tại khoản 4 Điều 75 Nghị định số 163/2025/NĐ-CP và tài liệu chứng minh lô thuốc/nguyên liệu làm thuốc có hạn dùng còn lại tại thời điểm thông quan ngắn hơn quy định tại điểm a, b, c khoản 1 hoặc khoản 2 Điều 75 Nghị định số 163/2025/NĐ-CP"
+        ],
+        "attachment_path": null
+      }
+    ],
+    "special_cases": [],
+    "common_errors": [],
+    "validation_hints": [
+      "Nên xác định trước kênh nộp hồ sơ để biết có cần bản giấy, bản điện tử hay xuất trình trực tiếp.",
+      "Nên xác định đúng nhóm đối tượng, mã số bảo hiểm và quyền lợi áp dụng trước khi nộp."
+    ]
+  },
+  "intake": {
+    "candidate_input_fields": [
+      {
+        "field_id": "request_subject",
+        "label": "Đối tượng làm thủ tục",
+        "field_type": "text",
+        "required": true
+      },
+      {
+        "field_id": "insurance_or_medical_need",
+        "label": "Nhu cầu bảo hiểm hoặc y tế",
+        "field_type": "text",
+        "required": true
+      },
+      {
+        "field_id": "submission_channel_preference",
+        "label": "Kênh nộp dự kiến",
+        "field_type": "enum",
+        "required": false
+      },
+      {
+        "field_id": "has_insurance_number",
+        "label": "Đã có mã BHXH/BHYT",
+        "field_type": "boolean",
+        "required": false
+      }
+    ],
+    "suggested_clarifying_questions": [
+      "Bạn đang muốn đăng ký, điều chỉnh hay xác nhận quyền lợi y tế hoặc bảo hiểm nào?",
+      "Bạn đã có mã BHXH/BHYT hoặc thông tin đơn vị tiếp nhận liên quan chưa?"
+    ]
+  },
+  "ui_hints": {
+    "primary_channel": "online",
+    "result_label": "Văn bản chấp thuận/Văn bản yêu cầu sửa đổi, bổ sung hồ sơ/Văn bản trả lời không cho phép nhập khẩu",
+    "time_badge": "15 ngày",
+    "document_count_badge": 2
+  },
+  "provenance": {
+    "generator": "workflow_domain_enricher",
+    "derivation_mode": "rule_based_semantic_enrichment",
+    "supported_group": true
+  }
+}

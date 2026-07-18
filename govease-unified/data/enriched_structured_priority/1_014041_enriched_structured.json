@@ -1,0 +1,93 @@
+{
+  "schema_version": "1.0",
+  "enricher_version": "0.2.0",
+  "source": {
+    "procedure_code": "1.014041",
+    "title": "Gia hạn giấy đăng ký lưu hành thuốc cổ truyền",
+    "group_key": "suc_khoe_y_te",
+    "workflow_family": null,
+    "subflow": null
+  },
+  "experience": {
+    "entry_label": "Hỗ trợ y tế và bảo hiểm",
+    "overview_summary": "Thủ tục này thuộc nhóm y tế, thường cần đối chiếu thông tin người bệnh, đơn vị tiếp nhận hoặc quyền lợi chuyên ngành. Kết quả thường nhận được là Quyết định cấp gia hạn giấy đăng ký lưu hành thuốc cổ truyền đối với hồ sơ đạt yêu cầu. Thời gian xử lý tham khảo: 1 ngày.",
+    "next_step_summary": "Nên xác định rõ đối tượng tham gia, quyền lợi hoặc nhu cầu điều chỉnh hồ sơ y tế trước khi nộp. Có thể chọn kênh nộp phù hợp: Trực tiếp, Trực tuyến, Dịch vụ bưu chính. Hiện có khoảng 3 mục giấy tờ cần theo dõi trong checklist.",
+    "tone": "supportive_public_service"
+  },
+  "guidance": {
+    "highlight_documents": [
+      {
+        "bucket": "required",
+        "name": "2. Giấy chứng nhận sản phẩm dược phẩm còn thời hạn hiệu lực đối với thuốc cổ truyền nhập khẩu.",
+        "conditions": [],
+        "attachment_path": null
+      },
+      {
+        "bucket": "required",
+        "name": "3. Báo cáo an toàn, hiệu quả của thuốc cổ truyền trong quá trình lưu hành theo quy định tại Mẫu số 05C Phụ lục I ban hành kèm theo Thông tư số 29/2025/TT-BYT.",
+        "conditions": [],
+        "attachment_path": null
+      },
+      {
+        "bucket": "conditional",
+        "name": "1. Đơn đề nghị gia hạn giấy đăng ký lưu hành thuốc cổ truyền theo quy định tại Mẫu số 03A Phụ lục I ban hành kèm theo Thông tư số 29/2025/TT-BYT. Trường hợp có thay đổi các thông tin hành chính của thuốc cổ truyền đề nghị gia hạn giấy đăng ký lưu hành bao gồm tên, địa chỉ, cơ sở đăng ký; tên, địa chỉ cơ sở sản xuất thì cơ sở đăng ký nộp hồ sơ đề nghị thay đổi, bổ sung theo quy định tại Điều 20 của Thông tư số 29/2025/TT-BYT. Trường hợp thay đổi tên thuốc, cơ sở được thực hiện trong hồ sơ đề nghị gia hạn và ghi rõ trong Đơn đề nghị gia hạn giấy đăng ký lưu hành thuốc cổ truyền.",
+        "conditions": [
+          "1. Đơn đề nghị gia hạn giấy đăng ký lưu hành thuốc cổ truyền theo quy định tại Mẫu số 03A Phụ lục I ban hành kèm theo Thông tư số 29/2025/TT-BYT. Trường hợp có thay đổi các thông tin hành chính của thuốc cổ truyền đề nghị gia hạn giấy đăng ký lưu hành bao gồm tên, địa chỉ, cơ sở đăng ký; tên, địa chỉ cơ sở sản xuất thì cơ sở đăng ký nộp hồ sơ đề nghị thay đổi, bổ sung theo quy định tại Điều 20 của Thông tư số 29/2025/TT-BYT. Trường hợp thay đổi tên thuốc, cơ sở được thực hiện trong hồ sơ đề nghị gia hạn và ghi rõ trong Đơn đề nghị gia hạn giấy đăng ký lưu hành thuốc cổ truyền."
+        ],
+        "attachment_path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/1_014041/Mu.docx"
+      }
+    ],
+    "special_cases": [],
+    "common_errors": [
+      "Điền sai mẫu tờ khai hoặc chọn sai biểu mẫu đi kèm."
+    ],
+    "validation_hints": [
+      "Nên xác định trước kênh nộp hồ sơ để biết có cần bản giấy, bản điện tử hay xuất trình trực tiếp.",
+      "Có mẫu biểu đính kèm, nên kiểm tra đúng biểu mẫu trước khi nộp.",
+      "Nên xác định đúng nhóm đối tượng, mã số bảo hiểm và quyền lợi áp dụng trước khi nộp."
+    ]
+  },
+  "intake": {
+    "candidate_input_fields": [
+      {
+        "field_id": "request_subject",
+        "label": "Đối tượng làm thủ tục",
+        "field_type": "text",
+        "required": true
+      },
+      {
+        "field_id": "insurance_or_medical_need",
+        "label": "Nhu cầu bảo hiểm hoặc y tế",
+        "field_type": "text",
+        "required": true
+      },
+      {
+        "field_id": "submission_channel_preference",
+        "label": "Kênh nộp dự kiến",
+        "field_type": "enum",
+        "required": false
+      },
+      {
+        "field_id": "has_insurance_number",
+        "label": "Đã có mã BHXH/BHYT",
+        "field_type": "boolean",
+        "required": false
+      }
+    ],
+    "suggested_clarifying_questions": [
+      "Bạn đang muốn đăng ký, điều chỉnh hay xác nhận quyền lợi y tế hoặc bảo hiểm nào?",
+      "Bạn đã có mã BHXH/BHYT hoặc thông tin đơn vị tiếp nhận liên quan chưa?"
+    ]
+  },
+  "ui_hints": {
+    "primary_channel": "online",
+    "result_label": "Quyết định cấp gia hạn giấy đăng ký lưu hành thuốc cổ truyền đối với hồ sơ đạt yêu cầu",
+    "time_badge": "1 ngày",
+    "document_count_badge": 3
+  },
+  "provenance": {
+    "generator": "workflow_domain_enricher",
+    "derivation_mode": "rule_based_semantic_enrichment",
+    "supported_group": true
+  }
+}

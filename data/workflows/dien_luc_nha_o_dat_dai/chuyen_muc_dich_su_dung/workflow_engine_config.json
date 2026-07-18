@@ -1,0 +1,159 @@
+{
+  "schema_version": "1.0",
+  "domain": "dien_luc_nha_o_dat_dai",
+  "updated_at": "2026-07-18",
+  "source_files": [
+    "C:\\Users\\ku060\\Downloads\\VAIC source\\data-pipeline\\main\\full-data.csv",
+    "C:\\Users\\ku060\\Downloads\\VAIC source\\data-pipeline\\data\\workflows\\dien_luc_nha_o_dat_dai\\summary.csv",
+    "C:\\Users\\ku060\\Downloads\\VAIC source\\data-pipeline\\data\\workflows\\dien_luc_nha_o_dat_dai\\normalized.json",
+    "C:\\Users\\ku060\\Downloads\\VAIC source\\data-pipeline\\raw_data"
+  ],
+  "coverage": {
+    "expected_codes": [
+      "1.013992",
+      "1.115708"
+    ],
+    "covered_codes": [
+      "1.013992",
+      "1.115708"
+    ],
+    "missing_codes": []
+  },
+  "llm_contract": {
+    "role": "parse_user_answer_and_rephrase_question_only",
+    "required_output_schema": {
+      "intent": "dien_luc_nha_o_dat_dai",
+      "current_node": "string",
+      "slot_updates": {
+        "subdomain_key": "dang_ky_quyen_so_huu_quyen_su_dung | chuyen_nhuong_tang_cho_thua_ke | gop_von_the_chap | chuyen_muc_dich_su_dung | xay_dung_cong_trinh_nha_o | cung_cap_dien_nang | unknown",
+        "operation_key": "string",
+        "operation_group": "string"
+      },
+      "confidence": "0_to_1",
+      "needs_human_review": "boolean"
+    }
+  },
+  "entry_prompts": [
+    "Bạn cần làm việc về quyền sử dụng đất, sang tên, thế chấp, chuyển mục đích, xây dựng nhà ở hay điện sinh hoạt?",
+    "Bạn muốn đăng ký mới, chỉnh lý biến động, xin phép xây dựng, đăng ký nhà ở xã hội hay cấp điện mới?"
+  ],
+  "slots": [
+    {
+      "name": "subdomain_key",
+      "required": true,
+      "description": "Nhánh chính của nhóm Điện lực, nhà ở, đất đai."
+    },
+    {
+      "name": "operation_key",
+      "required": true,
+      "description": "Thao tác cụ thể ánh xạ trực tiếp tới thủ tục cuối cùng."
+    },
+    {
+      "name": "operation_group",
+      "required": false,
+      "description": "Nhóm thao tác để gom các thủ tục gần nhau cho UI và parser."
+    }
+  ],
+  "subdomain_catalog": [
+    {
+      "subdomain_key": "chuyen_muc_dich_su_dung",
+      "subdomain_label": "Chuyển mục đích sử dụng",
+      "event_id": 311,
+      "summary": "Nhóm thủ tục chuyển mục đích sử dụng đất, bao gồm cả trường hợp phải xin phép và không phải xin phép cơ quan nhà nước có thẩm quyền."
+    }
+  ],
+  "decision_tree": {
+    "start_node": "housing_land_electricity_subdomain",
+    "nodes": [
+      {
+        "id": "housing_land_electricity_subdomain",
+        "type": "question",
+        "slot": "subdomain_key",
+        "question": "Bạn đang cần làm việc về sổ đất, sang tên, thế chấp, chuyển mục đích sử dụng đất, xây dựng nhà ở hay cấp điện?",
+        "options": [
+          "chuyen_muc_dich_su_dung"
+        ],
+        "prefilled_value": "chuyen_muc_dich_su_dung"
+      },
+      {
+        "id": "housing_land_electricity_operation",
+        "type": "question",
+        "slot": "operation_key",
+        "question": "Trong nhánh đã chọn, bạn đang cần thao tác cụ thể nào?",
+        "options_by_subdomain": {
+          "chuyen_muc_dich_su_dung": [
+            {
+              "operation_key": "dang_ky_bien_dong_chuyen_muc_dich_su_dung_dat_khong_phai_xin_phep_co_quan_nha_nuoc_co_tham_quyen",
+              "operation_group": "dang_ky_bien_dong_khong_xin_phep",
+              "procedure_code": "1.013992",
+              "procedure_title": "Đăng ký biến động chuyển mục đích sử dụng đất không phải xin phép cơ quan nhà nước có thẩm quyền"
+            },
+            {
+              "operation_key": "chuyen_muc_dich_su_dung_dat",
+              "operation_group": "xin_chuyen_muc_dich_su_dung_dat",
+              "procedure_code": "1.115708",
+              "procedure_title": "Chuyển mục đích sử dụng đất"
+            }
+          ]
+        },
+        "options": [
+          "dang_ky_bien_dong_chuyen_muc_dich_su_dung_dat_khong_phai_xin_phep_co_quan_nha_nuoc_co_tham_quyen",
+          "chuyen_muc_dich_su_dung_dat"
+        ]
+      }
+    ],
+    "routes": [
+      {
+        "route_id": "chuyen_muc_dich_su_dung-1_013992",
+        "conditions": {
+          "subdomain_key": "chuyen_muc_dich_su_dung",
+          "operation_key": "dang_ky_bien_dong_chuyen_muc_dich_su_dung_dat_khong_phai_xin_phep_co_quan_nha_nuoc_co_tham_quyen"
+        },
+        "procedure_code": "1.013992",
+        "procedure_name": "Đăng ký biến động chuyển mục đích sử dụng đất không phải xin phép cơ quan nhà nước có thẩm quyền",
+        "why_this_route": "Route trực tiếp cho nhu cầu 'Đăng ký biến động chuyển mục đích sử dụng đất không phải xin phép cơ quan nhà nước có thẩm quyền' trong nhánh 'Chuyển mục đích sử dụng'."
+      },
+      {
+        "route_id": "chuyen_muc_dich_su_dung-1_115708",
+        "conditions": {
+          "subdomain_key": "chuyen_muc_dich_su_dung",
+          "operation_key": "chuyen_muc_dich_su_dung_dat"
+        },
+        "procedure_code": "1.115708",
+        "procedure_name": "Chuyển mục đích sử dụng đất",
+        "why_this_route": "Route trực tiếp cho nhu cầu 'Chuyển mục đích sử dụng đất' trong nhánh 'Chuyển mục đích sử dụng'."
+      }
+    ]
+  },
+  "pre_submission_checks": [
+    {
+      "field_group": "land_registration",
+      "checks": [
+        "Nhóm đất đai phải làm rõ loại biến động: đăng ký lần đầu, cấp đổi, cấp lại, đính chính, tách thửa hay sang tên do chuyển quyền.",
+        "Thông tin thửa đất, số Giấy chứng nhận, chủ sử dụng đất và giấy tờ chứng minh nguồn gốc đất phải thống nhất giữa tờ khai và hồ sơ đính kèm."
+      ]
+    },
+    {
+      "field_group": "secured_transactions",
+      "checks": [
+        "Nhóm góp vốn, thế chấp phải xác định rõ là đăng ký mới, thay đổi, xóa hay thông báo xử lý tài sản bảo đảm.",
+        "Nếu là thế chấp quyền tài sản phát sinh từ hợp đồng mua bán nhà ở, phải có thông tin hợp đồng và tài sản gắn liền với đất đủ để định danh tài sản bảo đảm."
+      ]
+    },
+    {
+      "field_group": "construction_and_housing",
+      "checks": [
+        "Nhóm xây dựng, nhà ở phải phân biệt rõ xây mới, sửa chữa, cải tạo, di dời hay tiếp cận nhà ở xã hội.",
+        "Các trường hợp xin phép xây dựng nhà ở riêng lẻ cần kiểm tra địa chỉ xây dựng, quyền sử dụng đất và bản vẽ thiết kế trước khi nhận hồ sơ."
+      ]
+    },
+    {
+      "field_group": "electricity_services",
+      "checks": [
+        "Nhóm điện năng phải phân biệt giữa cấp điện mới và thông báo phát triển điện mặt trời mái nhà có đấu nối.",
+        "Nếu là cấp điện mới, cần có địa chỉ sử dụng điện, nhu cầu công suất và giấy tờ định danh người yêu cầu."
+      ]
+    }
+  ],
+  "subdomain_key": "chuyen_muc_dich_su_dung"
+}

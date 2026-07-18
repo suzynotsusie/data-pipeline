@@ -1,0 +1,133 @@
+{
+  "schema_version": "1.0",
+  "enricher_version": "0.2.0",
+  "source": {
+    "procedure_code": "1.001669",
+    "title": "Thủ tục đăng ký giám hộ có yếu tố nước ngoài",
+    "group_key": "hon_nhan_gia_dinh",
+    "workflow_family": "marriage_family_workflow",
+    "subflow": "giam_ho"
+  },
+  "experience": {
+    "entry_label": "Hỗ trợ hộ tịch và gia đình",
+    "overview_summary": "Thủ tục này thuộc nhóm hộ tịch gia đình, thường yêu cầu đối chiếu thông tin nhân thân và tình trạng hôn nhân của các bên. Kết quả thường nhận được là Trích lục đăng ký giám hộ. Thời gian xử lý tham khảo: 5 ngày.",
+    "next_step_summary": "Nên rà trước giấy tờ nhân thân của hai bên và các điều kiện đặc biệt nếu có yếu tố nước ngoài hoặc ủy quyền. Hiện có khoảng 8 mục giấy tờ cần theo dõi trong checklist.",
+    "tone": "supportive_public_service"
+  },
+  "guidance": {
+    "highlight_documents": [
+      {
+        "bucket": "conditional",
+        "name": "Văn bản ủy quyền (được chứng thực) theo quy định của pháp luật trong trường hợp ủy quyền thực hiện đăng ký giám hộ. Trường hợp người được ủy quyền là ông, bà, cha, mẹ, con, vợ, chồng, anh, chị, em ruột của người ủy quyền thì văn bản ủy quyền không phải chứng thực.",
+        "conditions": [
+          "Văn bản ủy quyền (được chứng thực) theo quy định của pháp luật trong trường hợp ủy quyền thực hiện đăng ký giám hộ. Trường hợp người được ủy quyền là ông, bà, cha, mẹ, con, vợ, chồng, anh, chị, em ruột của người ủy quyền thì văn bản ủy quyền không phải chứng thực."
+        ],
+        "attachment_path": null
+      },
+      {
+        "bucket": "conditional",
+        "name": "Văn bản cử người giám hộ theo quy định của Bộ luật Dân sự đối với trường hợp đăng ký giám hộ cử; giấy tờ chứng minh điều kiện giám hộ đương nhiên theo quy định của Bộ luật Dân sự đối với trường hợp đăng ký giám hộ đương nhiên; trường hợp có nhiều người cùng đủ điều kiện làm giám hộ đương nhiên thì nộp thêm văn bản thỏa thuận về việc cử một người làm giám hộ đương nhiên;",
+        "conditions": [
+          "Văn bản cử người giám hộ theo quy định của Bộ luật Dân sự đối với trường hợp đăng ký giám hộ cử; giấy tờ chứng minh điều kiện giám hộ đương nhiên theo quy định của Bộ luật Dân sự đối với trường hợp đăng ký giám hộ đương nhiên; trường hợp có nhiều người cùng đủ điều kiện làm giám hộ đương nhiên thì nộp thêm văn bản thỏa thuận về việc cử một người làm giám hộ đương nhiên;"
+        ],
+        "attachment_path": null
+      },
+      {
+        "bucket": "presented",
+        "name": "Trường hợp các thông tin cá nhân trong các giấy tờ này đã có trong Cơ sở dữ liệu quốc gia về dân cư, Cơ sở dữ liệu hộ tịch điện tử, được hệ thống điền tự động thì không phải tải lên (theo hình thức trực tuyến)",
+        "conditions": [
+          "Trường hợp các thông tin cá nhân trong các giấy tờ này đã có trong Cơ sở dữ liệu quốc gia về dân cư, Cơ sở dữ liệu hộ tịch điện tử, được hệ thống điền tự động thì không phải tải lên (theo hình thức trực tuyến)"
+        ],
+        "attachment_path": null
+      },
+      {
+        "bucket": "presented",
+        "name": "Trường hợp giấy tờ tùy thân sử dụng là: Hộ chiếu, Thẻ căn cước, Căn cước công dân, Giấy chứng nhận căn cước thì người có yêu cầu đăng ký hộ tịch chỉ cần cung cấp thông tin số định danh cá nhân hoặc thông tin về giấy tờ (số, ngày/tháng/năm cấp), cơ quan đăng ký hộ tịch có trách nhiệm tra cứu thông tin thông qua kết nối với Cơ sở dữ liệu hộ tịch điện tử, Cơ sở dữ liệu quốc gia về dân cư hoặc cơ sở dữ liệu khác có liên quan để đối chiếu, khai thác dữ liệu.",
+        "conditions": [],
+        "attachment_path": null
+      },
+      {
+        "bucket": "presented",
+        "name": "Hộ chiếu/Thẻ căn cước công dân/Thẻ căn cước/Căn cước điện tử/Giấy chứng nhận căn cước hoặc các giấy tờ khác có dán ảnh và thông tin cá nhân do cơ quan có thẩm quyền cấp, còn giá trị sử dụng (sau đây gọi tắt là giấy tờ tùy thân) để chứng minh về nhân thân khi làm thủ tục trực tiếp tại cơ quan đăng ký hộ tịch.",
+        "conditions": [],
+        "attachment_path": null
+      },
+      {
+        "bucket": "presented",
+        "name": "Trường hợp gửi hồ sơ qua hệ thống bưu chính thì phải gửi kèm theo bản sao có chứng thực các giấy tờ phải xuất trình nêu trên.",
+        "conditions": [
+          "Trường hợp gửi hồ sơ qua hệ thống bưu chính thì phải gửi kèm theo bản sao có chứng thực các giấy tờ phải xuất trình nêu trên."
+        ],
+        "attachment_path": null
+      }
+    ],
+    "special_cases": [
+      "Có yếu tố nước ngoài",
+      "Có thể cần giấy tờ ủy quyền",
+      "Có trường hợp hồ sơ điện tử thay thế bản giấy",
+      "Có kiểm tra dữ liệu cư trú/định danh",
+      "Có thể cần đối chiếu thông tin thửa đất hoặc giấy chứng nhận"
+    ],
+    "common_errors": [
+      "Thông tin định danh hoặc cư trú không khớp với dữ liệu dân cư.",
+      "Thiếu giấy tờ hoặc nội dung ủy quyền phù hợp.",
+      "Thiếu giấy tờ hợp pháp hóa hoặc giấy tờ nhân thân của phía nước ngoài.",
+      "Điền sai mẫu tờ khai hoặc chọn sai biểu mẫu đi kèm.",
+      "Thông tin thửa đất, tài sản hoặc giấy chứng nhận chưa khớp với hồ sơ hiện có."
+    ],
+    "validation_hints": [
+      "Nên xác định trước kênh nộp hồ sơ để biết có cần bản giấy, bản điện tử hay xuất trình trực tiếp.",
+      "Thông tin hộ tịch giữa các giấy tờ phải thống nhất về họ tên, ngày sinh và quan hệ liên quan.",
+      "Nếu có giấy tờ nước ngoài, cần kiểm tra yêu cầu hợp pháp hóa hoặc xác nhận tương đương."
+    ]
+  },
+  "intake": {
+    "candidate_input_fields": [
+      {
+        "field_id": "party_one_full_name",
+        "label": "Người thứ nhất",
+        "field_type": "text",
+        "required": true
+      },
+      {
+        "field_id": "party_two_full_name",
+        "label": "Người thứ hai",
+        "field_type": "text",
+        "required": true
+      },
+      {
+        "field_id": "has_foreign_element",
+        "label": "Có yếu tố nước ngoài",
+        "field_type": "boolean",
+        "required": true
+      },
+      {
+        "field_id": "current_marital_status_docs",
+        "label": "Có giấy tờ chứng minh tình trạng hôn nhân",
+        "field_type": "boolean",
+        "required": true
+      },
+      {
+        "field_id": "submission_at_border_area",
+        "label": "Nộp tại khu vực biên giới",
+        "field_type": "boolean",
+        "required": false
+      }
+    ],
+    "suggested_clarifying_questions": [
+      "Hai bên đã có đủ giấy tờ nhân thân và tình trạng hôn nhân chưa?",
+      "Hồ sơ có yếu tố nước ngoài, khu vực biên giới hoặc ủy quyền không?"
+    ]
+  },
+  "ui_hints": {
+    "primary_channel": "online",
+    "result_label": "Trích lục đăng ký giám hộ",
+    "time_badge": "5 ngày",
+    "document_count_badge": 8
+  },
+  "provenance": {
+    "generator": "workflow_domain_enricher",
+    "derivation_mode": "rule_based_semantic_enrichment",
+    "supported_group": true
+  }
+}

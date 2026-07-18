@@ -1,0 +1,112 @@
+{
+  "schema_version": "1.0",
+  "enricher_version": "0.2.0",
+  "source": {
+    "procedure_code": "3.000499",
+    "title": "Thanh toán chi phí khám bệnh, chữa bệnh giữa cơ quan bảo hiểm xã hội và cơ sở khám bệnh, chữa bệnh",
+    "group_key": "suc_khoe_y_te",
+    "workflow_family": null,
+    "subflow": null
+  },
+  "experience": {
+    "entry_label": "Hỗ trợ y tế và bảo hiểm",
+    "overview_summary": "Thủ tục này thuộc nhóm y tế, thường cần đối chiếu thông tin người bệnh, đơn vị tiếp nhận hoặc quyền lợi chuyên ngành. Kết quả thường nhận được là Cơ sở khám bệnh , chữa bệnh nhận được chi phí khám, chữa bệnh bảo hiểm y tế theo thông báo số quyết toán của cơ quan bảo hiểm xã hội. Thời gian xử lý tham khảo: 30 ngày.",
+    "next_step_summary": "Nên xác định rõ đối tượng tham gia, quyền lợi hoặc nhu cầu điều chỉnh hồ sơ y tế trước khi nộp. Có thể chọn kênh nộp phù hợp: Trực tiếp, Trực tuyến. Hiện có khoảng 11 mục giấy tờ cần theo dõi trong checklist.",
+    "tone": "supportive_public_service"
+  },
+  "guidance": {
+    "highlight_documents": [
+      {
+        "bucket": "required",
+        "name": "Văn bản thông báo về việc nhận chuyển giao kỹ thuật",
+        "conditions": [],
+        "attachment_path": null
+      },
+      {
+        "bucket": "required",
+        "name": "Phiếu chuyển dịch vụ cận lâm sàng theo Mẫu số 9 Phụ lục ban hành kèm theo Nghị định số 188/2025/NĐ-CP",
+        "conditions": [],
+        "attachment_path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/3_000499/Phi%E1%BA%BFu%20chuy%E1%BB%83n%20d%E1%BB%8Bch%20v%E1%BB%A5%20c%E1%BA%ADn%20l%C3%A2m%20s%C3%A0ng%20theo%20M%E1%BA%ABu%209%20Ph%E1%BB%A5%20l%E1%BB%A5c%20theo%20N%C4%90%20188.2025.docx"
+      },
+      {
+        "bucket": "required",
+        "name": "Hợp đồng nguyên tắc giữa cơ sở nơi chuyển người bệnh hoặc mẫu bệnh phẩm với cơ sở thực hiện dịch vụ cận lâm sàng theo quy định tại điểm b khoản 2 Điều 44 của Nghị định số 188/2025/NĐ-CP)",
+        "conditions": [],
+        "attachment_path": null
+      },
+      {
+        "bucket": "required",
+        "name": "Văn bản giao nhận giữa cơ sở điều chuyển và cơ sở nhận thuốc, thiết bị y tế",
+        "conditions": [],
+        "attachment_path": null
+      },
+      {
+        "bucket": "required",
+        "name": "Văn bản thông báo về việc thực hiện hoạt động khám bệnh, chữa bệnh ngoài giờ hành chính hoặc vào ngày nghỉ, ngày lễ",
+        "conditions": [],
+        "attachment_path": null
+      },
+      {
+        "bucket": "required",
+        "name": "Báo cáo Quyết toán chi phí khám bệnh, chữa bệnh bảo hiểm y tế của Quý trước",
+        "conditions": [],
+        "attachment_path": null
+      }
+    ],
+    "special_cases": [
+      "Có thể cần đối chiếu quyền lợi bảo hiểm hoặc tuyến chuyên môn"
+    ],
+    "common_errors": [
+      "Điền sai mẫu tờ khai hoặc chọn sai biểu mẫu đi kèm.",
+      "Sai nhóm đối tượng tham gia hoặc thông tin quyền lợi bảo hiểm y tế."
+    ],
+    "validation_hints": [
+      "Nên xác định trước kênh nộp hồ sơ để biết có cần bản giấy, bản điện tử hay xuất trình trực tiếp.",
+      "Có mẫu biểu đính kèm, nên kiểm tra đúng biểu mẫu trước khi nộp.",
+      "Nên xác định đúng nhóm đối tượng, mã số bảo hiểm và quyền lợi áp dụng trước khi nộp."
+    ]
+  },
+  "intake": {
+    "candidate_input_fields": [
+      {
+        "field_id": "request_subject",
+        "label": "Đối tượng làm thủ tục",
+        "field_type": "text",
+        "required": true
+      },
+      {
+        "field_id": "insurance_or_medical_need",
+        "label": "Nhu cầu bảo hiểm hoặc y tế",
+        "field_type": "text",
+        "required": true
+      },
+      {
+        "field_id": "submission_channel_preference",
+        "label": "Kênh nộp dự kiến",
+        "field_type": "enum",
+        "required": false
+      },
+      {
+        "field_id": "has_insurance_number",
+        "label": "Đã có mã BHXH/BHYT",
+        "field_type": "boolean",
+        "required": false
+      }
+    ],
+    "suggested_clarifying_questions": [
+      "Bạn đang muốn đăng ký, điều chỉnh hay xác nhận quyền lợi y tế hoặc bảo hiểm nào?",
+      "Bạn đã có mã BHXH/BHYT hoặc thông tin đơn vị tiếp nhận liên quan chưa?"
+    ]
+  },
+  "ui_hints": {
+    "primary_channel": "in_person",
+    "result_label": "Cơ sở khám bệnh , chữa bệnh nhận được chi phí khám, chữa bệnh bảo hiểm y tế theo thông báo số quyết toán của cơ quan bảo hiểm xã hội",
+    "time_badge": "30 ngày",
+    "document_count_badge": 11
+  },
+  "provenance": {
+    "generator": "workflow_domain_enricher",
+    "derivation_mode": "rule_based_semantic_enrichment",
+    "supported_group": true
+  }
+}

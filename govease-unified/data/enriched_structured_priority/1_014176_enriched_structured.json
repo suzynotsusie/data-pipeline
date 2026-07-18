@@ -1,0 +1,86 @@
+{
+  "schema_version": "1.0",
+  "enricher_version": "0.2.0",
+  "source": {
+    "procedure_code": "1.014176",
+    "title": "THAY ĐỔI HÌNH THỨC NHẬN, NƠI NHẬN LƯƠNG HƯU, TRỢ CẤP BẢO HIỂM XÃ HỘI HẰNG THÁNG",
+    "group_key": "huu_tri",
+    "workflow_family": "retirement_workflow",
+    "subflow": "che_do_huu_tri"
+  },
+  "experience": {
+    "entry_label": "Hỗ trợ chế độ hưu trí",
+    "overview_summary": "Thủ tục này thuộc nhóm hưu trí, thường dùng để xác định điều kiện nghỉ hưu, trợ cấp hoặc chế độ hưởng theo hồ sơ bảo hiểm xã hội. Kết quả thường nhận được là Thông báo về việc tiếp nhận hồ sơ di chuyển và đăng ký nhận lương hưu hoặc trợ cấp bảo hiểm xã hội hằng tháng. Thời gian xử lý tham khảo: 50 ngày làm việc.",
+    "next_step_summary": "Nên rà trước quá trình đóng bảo hiểm, mốc tuổi và loại chế độ muốn hưởng trước khi nộp. Có thể chọn kênh nộp phù hợp: Trực tiếp, Trực tuyến, Dịch vụ bưu chính. Hiện có 1 mục giấy tờ cần theo dõi trong checklist.",
+    "tone": "supportive_public_service"
+  },
+  "guidance": {
+    "highlight_documents": [
+      {
+        "bucket": "required",
+        "name": "Văn bản đề nghị thay đổi hình thức nhận, nơi nhận lương hưu, trợ cấp bảo hiểm xã hội hằng tháng",
+        "conditions": [],
+        "attachment_path": null
+      }
+    ],
+    "special_cases": [
+      "Có thể cần đối chiếu quá trình đóng bảo hiểm để giải quyết chế độ"
+    ],
+    "common_errors": [
+      "Thiếu thông tin về thời gian tham gia bảo hiểm hoặc chưa xác định đúng chế độ hưu trí."
+    ],
+    "validation_hints": [
+      "Nên xác định trước kênh nộp hồ sơ để biết có cần bản giấy, bản điện tử hay xuất trình trực tiếp.",
+      "Nên rà lại quá trình tham gia bảo hiểm, độ tuổi và loại chế độ muốn hưởng trước khi nộp."
+    ]
+  },
+  "intake": {
+    "candidate_input_fields": [
+      {
+        "field_id": "insured_person_name",
+        "label": "Người hưởng chế độ",
+        "field_type": "text",
+        "required": true
+      },
+      {
+        "field_id": "retirement_or_allowance_need",
+        "label": "Nhu cầu hưởng chế độ hưu trí/trợ cấp",
+        "field_type": "text",
+        "required": true
+      },
+      {
+        "field_id": "social_insurance_participation_known",
+        "label": "Đã rõ quá trình tham gia BHXH",
+        "field_type": "boolean",
+        "required": true
+      },
+      {
+        "field_id": "submission_channel_preference",
+        "label": "Kênh nộp dự kiến",
+        "field_type": "enum",
+        "required": false
+      },
+      {
+        "field_id": "retirement_age_status",
+        "label": "Đã đến mốc tuổi hưởng chế độ",
+        "field_type": "boolean",
+        "required": false
+      }
+    ],
+    "suggested_clarifying_questions": [
+      "Bạn đang muốn chuẩn bị nghỉ hưu hay giải quyết chế độ hưu trí cụ thể nào?",
+      "Quá trình tham gia bảo hiểm và độ tuổi hưởng chế độ đã xác định rõ chưa?"
+    ]
+  },
+  "ui_hints": {
+    "primary_channel": "online",
+    "result_label": "Thông báo về việc tiếp nhận hồ sơ di chuyển và đăng ký nhận lương hưu hoặc trợ cấp bảo hiểm xã hội hằng tháng",
+    "time_badge": "50 ngày làm việc",
+    "document_count_badge": 1
+  },
+  "provenance": {
+    "generator": "workflow_domain_enricher",
+    "derivation_mode": "rule_based_semantic_enrichment",
+    "supported_group": true
+  }
+}

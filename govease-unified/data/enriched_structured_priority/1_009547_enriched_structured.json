@@ -1,0 +1,94 @@
+{
+  "schema_version": "1.0",
+  "enricher_version": "0.2.0",
+  "source": {
+    "procedure_code": "1.009547",
+    "title": "Thu hồi Giấy chứng nhận đăng ký hoạt động phân phối chứng chỉ quỹ đại chúng",
+    "group_key": "hoc_tap",
+    "workflow_family": null,
+    "subflow": null
+  },
+  "experience": {
+    "entry_label": "Hỗ trợ giáo dục và học tập",
+    "overview_summary": "Thủ tục này thuộc nhóm giáo dục và học tập, thường liên quan đến hồ sơ đào tạo, văn bằng hoặc điều kiện học tập của người học. Kết quả thường nhận được là + Văn bản từ chối (nêu rõ lý do). Thời gian xử lý tham khảo: 10 ngày.",
+    "next_step_summary": "Nên rà trước thông tin người học, cơ sở đào tạo và loại kết quả cần xin xác nhận hoặc cấp lại. Có thể chọn kênh nộp phù hợp: Trực tiếp, Trực tuyến, Dịch vụ bưu chính. Hiện có khoảng 3 mục giấy tờ cần theo dõi trong checklist.",
+    "tone": "supportive_public_service"
+  },
+  "guidance": {
+    "highlight_documents": [
+      {
+        "bucket": "required",
+        "name": "Công văn đề nghị chấm dứt hoạt động phân phối chứng chỉ quỹ, nêu rõ lý do;",
+        "conditions": [],
+        "attachment_path": null
+      },
+      {
+        "bucket": "required",
+        "name": "Bản gốc Giấy chứng nhận đăng ký hoạt động phân phối chứng chỉ quỹ;",
+        "conditions": [],
+        "attachment_path": null
+      },
+      {
+        "bucket": "conditional",
+        "name": "Báo cáo về việc chấm dứt toàn bộ hoạt động phân phối chứng chỉ quỹ tại các địa điểm phân phối của đại lý phân phối; Biên bản tất toán hợp đồng mở tài khoản chứng chỉ quỹ với khách hàng của đại lý phân phối, hoặc Biên bản bàn giao quyền và nghĩa vụ của các khách hàng cho đại lý phân phối thay thế (nếu có).",
+        "conditions": [
+          "Báo cáo về việc chấm dứt toàn bộ hoạt động phân phối chứng chỉ quỹ tại các địa điểm phân phối của đại lý phân phối; Biên bản tất toán hợp đồng mở tài khoản chứng chỉ quỹ với khách hàng của đại lý phân phối, hoặc Biên bản bàn giao quyền và nghĩa vụ của các khách hàng cho đại lý phân phối thay thế (nếu có)."
+        ],
+        "attachment_path": null
+      }
+    ],
+    "special_cases": [
+      "Có thể cần đối chiếu thông tin thửa đất hoặc giấy chứng nhận"
+    ],
+    "common_errors": [
+      "Thông tin thửa đất, tài sản hoặc giấy chứng nhận chưa khớp với hồ sơ hiện có."
+    ],
+    "validation_hints": [
+      "Nên xác định trước kênh nộp hồ sơ để biết có cần bản giấy, bản điện tử hay xuất trình trực tiếp.",
+      "Nên rà lại thông tin người học, cơ sở đào tạo và loại xác nhận hoặc văn bằng cần xin."
+    ]
+  },
+  "intake": {
+    "candidate_input_fields": [
+      {
+        "field_id": "learner_full_name",
+        "label": "Tên người học",
+        "field_type": "text",
+        "required": true
+      },
+      {
+        "field_id": "education_record_type",
+        "label": "Loại hồ sơ học tập cần xử lý",
+        "field_type": "text",
+        "required": true
+      },
+      {
+        "field_id": "education_institution",
+        "label": "Cơ sở đào tạo liên quan",
+        "field_type": "text",
+        "required": false
+      },
+      {
+        "field_id": "submission_channel_preference",
+        "label": "Kênh nộp dự kiến",
+        "field_type": "enum",
+        "required": false
+      }
+    ],
+    "suggested_clarifying_questions": [
+      "Bạn đang cần xử lý hồ sơ học tập, văn bằng hay xác nhận nào?",
+      "Người học và cơ sở đào tạo liên quan đã xác định rõ chưa?"
+    ]
+  },
+  "ui_hints": {
+    "primary_channel": "online",
+    "result_label": "+ Văn bản từ chối (nêu rõ lý do)",
+    "time_badge": "10 ngày",
+    "document_count_badge": 3
+  },
+  "provenance": {
+    "generator": "workflow_domain_enricher",
+    "derivation_mode": "rule_based_semantic_enrichment",
+    "supported_group": true
+  }
+}

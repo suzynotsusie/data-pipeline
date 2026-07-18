@@ -1,0 +1,260 @@
+{
+  "schema_version": "3.0",
+  "record_type": "public_service_procedure_payload",
+  "id": "procedure-1.014185",
+  "procedure_code": "1.014185",
+  "code": "1.014185",
+  "title": "XÁC NHẬN THỜI GIAN ĐÓNG BẢO HIỂM XÃ HỘI CỦA NGƯỜI LAO ĐỘNG ĐỂ LÀM CĂN CỨ GIẢI QUYẾT, ĐIỀU CHỈNH CHẾ ĐỘ HƯU TRÍ, TỬ TUẤT",
+  "language": "vi",
+  "status": "generated_from_pipeline",
+  "field": "Bảo hiểm xã hội",
+  "group_key": "nguoi_than_qua_doi",
+  "workflow_family": null,
+  "subflow": null,
+  "source": {
+    "source_url": "file:///C:/Users/ku060/Downloads/VAIC%20source/data-pipeline/raw_data/1_014185/1_014185_procedure_detail.md",
+    "source_markdown_path": "C:\\Users\\ku060\\Downloads\\VAIC source\\data-pipeline\\raw_data\\1_014185\\1_014185_procedure_detail.md",
+    "normalized_payload_path": "C:\\Users\\ku060\\Downloads\\VAIC source\\data-pipeline\\govease-unified\\data\\normalized_structured\\1_014185_normalized_structured.json",
+    "enriched_payload_path": "C:\\Users\\ku060\\Downloads\\VAIC source\\data-pipeline\\govease-unified\\data\\enriched_structured_priority\\1_014185_enriched_structured.json"
+  },
+  "scope": {
+    "included": "Thủ tục này thuộc nhóm hỗ trợ thân nhân người đã mất, thường liên quan đến mai táng phí, tử tuất hoặc chế độ phát sinh sau khi người hưởng qua đời. Kết quả thường nhận được là Xác nhận thời gian đóng bảo hiểm xã hội của người lao động. Thời gian xử lý tham khảo: 15 ngày làm việc.",
+    "not_included": []
+  },
+  "agency": {
+    "executing_agency": "Bảo hiểm xã hội tỉnh",
+    "submission_place": null,
+    "receiving_places": []
+  },
+  "target_users": [
+    "Công dân Việt Nam"
+  ],
+  "submission_methods": [
+    {
+      "code": "ONLINE",
+      "label": "Trực tuyến",
+      "processing_time": "15 ngày làm việc",
+      "fee": null,
+      "description": null
+    },
+    {
+      "code": "POSTAL",
+      "label": "Dịch vụ bưu chính",
+      "processing_time": "15 ngày làm việc",
+      "fee": null,
+      "description": null
+    },
+    {
+      "code": "IN_PERSON",
+      "label": "Trực tiếp",
+      "processing_time": "45 ngày làm việc",
+      "fee": null,
+      "description": null
+    }
+  ],
+  "processing_note": "Thời gian xử lý tham chiếu: 15 ngày làm việc. Nên chuẩn bị giấy tờ của người đã mất, thân nhân và căn cứ hưởng chế độ trước khi nộp. Có thể chọn kênh nộp phù hợp: Trực tiếp, Trực tuyến, Dịch vụ bưu chính. Hiện có 1 mục giấy tờ cần theo dõi trong checklist.",
+  "documents": {
+    "normally_required": [
+      {
+        "name": "Văn bản đề nghị xác nhận thời gian đóng bảo hiểm xã hội theo mẫu do cơ quan bảo hiểm xã hội ban hành",
+        "quantity": "1 bản chính, 0 bản sao",
+        "notes": [],
+        "group": "default",
+        "attachment_path": null
+      }
+    ],
+    "conditional": [],
+    "forms": [],
+    "presented": [],
+    "notes": [],
+    "summary": [
+      {
+        "group": "default",
+        "name": "Văn bản đề nghị xác nhận thời gian đóng bảo hiểm xã hội theo mẫu do cơ quan bảo hiểm xã hội ban hành",
+        "quantity": "1 bản chính, 0 bản sao",
+        "notes": [],
+        "attachment_path": null
+      }
+    ]
+  },
+  "steps": [
+    {
+      "order": 1,
+      "title": "Bước 1",
+      "description": "1.",
+      "example": null
+    },
+    {
+      "order": 2,
+      "title": "Bước 1:",
+      "description": "Bước 1: Người lao động hoặc thân nhân của người lao động trong trường hợp người lao động đã chết có văn bản đề nghị xác nhận thời gian đóng bảo hiểm xã hội theo mẫu do cơ quan bảo hiểm xã hội ban hành gửi cơ quan bảo hiểm xã hội.",
+      "example": null
+    },
+    {
+      "order": 3,
+      "title": "Bước 3",
+      "description": "Bước 2: Trong thời hạn 15 ngày làm việc kể từ ngày nhận được văn bản đề nghị của người lao động hoặc thân nhân của người lao động, cơ quan bảo hiểm xã hội thực hiện xác nhận thời gian đóng bảo hiểm xã hội của người lao động. Trường hợp cần phải xác minh lại quá trình đóng bảo hiểm xã hội thì thời hạn không quá 45 ngày. Trường hợp không xác nhận thì phải trả lời bằng văn bản và nêu rõ lý do.",
+      "example": "15 ngày làm việc"
+    }
+  ],
+  "input_fields": [
+    {
+      "field": "deceased_person_name",
+      "label": "Người đã mất",
+      "type": "string",
+      "required": true
+    },
+    {
+      "field": "claimant_relationship",
+      "label": "Quan hệ của người nộp với người đã mất",
+      "type": "enum",
+      "required": true
+    },
+    {
+      "field": "support_benefit_type",
+      "label": "Loại chế độ cần giải quyết",
+      "type": "string",
+      "required": true
+    },
+    {
+      "field": "submission_channel_preference",
+      "label": "Kênh nộp dự kiến",
+      "type": "enum",
+      "required": false,
+      "options": [
+        "Trực tiếp",
+        "Trực tuyến",
+        "Dịch vụ bưu chính"
+      ]
+    }
+  ],
+  "validation_rules": [
+    {
+      "id": "required-1",
+      "severity": "error",
+      "field": "deceased_person_name",
+      "rule": "Trường bắt buộc phải có dữ liệu hợp lệ trước khi nộp.",
+      "message": "Thiếu trường bắt buộc: Người đã mất."
+    },
+    {
+      "id": "required-2",
+      "severity": "error",
+      "field": "claimant_relationship",
+      "rule": "Trường bắt buộc phải có dữ liệu hợp lệ trước khi nộp.",
+      "message": "Thiếu trường bắt buộc: Quan hệ của người nộp với người đã mất."
+    },
+    {
+      "id": "required-3",
+      "severity": "error",
+      "field": "support_benefit_type",
+      "rule": "Trường bắt buộc phải có dữ liệu hợp lệ trước khi nộp.",
+      "message": "Thiếu trường bắt buộc: Loại chế độ cần giải quyết."
+    },
+    {
+      "id": "hint-1",
+      "severity": "warning",
+      "field": "general",
+      "rule": "Nên xác định trước kênh nộp hồ sơ để biết có cần bản giấy, bản điện tử hay xuất trình trực tiếp.",
+      "message": "Nên xác định trước kênh nộp hồ sơ để biết có cần bản giấy, bản điện tử hay xuất trình trực tiếp."
+    },
+    {
+      "id": "hint-2",
+      "severity": "warning",
+      "field": "general",
+      "rule": "Nên kiểm tra kỹ giấy tờ của người đã mất, thân nhân và căn cứ phát sinh chế độ.",
+      "message": "Nên kiểm tra kỹ giấy tờ của người đã mất, thân nhân và căn cứ phát sinh chế độ."
+    }
+  ],
+  "common_errors": [
+    {
+      "field": "general",
+      "issue": "Điền sai mẫu tờ khai hoặc chọn sai biểu mẫu đi kèm.",
+      "fix": "Nên xác định trước kênh nộp hồ sơ để biết có cần bản giấy, bản điện tử hay xuất trình trực tiếp."
+    }
+  ],
+  "clarifying_questions": [
+    {
+      "id": "clarify_1",
+      "question": "Bạn đang cần giải quyết mai táng phí, tử tuất hay chế độ nào cho thân nhân?",
+      "purpose": "workflow_intake"
+    },
+    {
+      "id": "clarify_2",
+      "question": "Giấy tờ của người đã mất và mối quan hệ của người nộp hồ sơ đã sẵn sàng chưa?",
+      "purpose": "workflow_intake"
+    }
+  ],
+  "legal_basis": [
+    {
+      "title": "Quy định chi tiết và hướng dẫn thi hành một số điều của Luật Bảo hiểm xã hội về bảo hiểm xã hội bắt buộc",
+      "code": "158/2025/NĐ-CP"
+    },
+    {
+      "title": "Luật Bảo hiểm xã hội",
+      "code": "41/2024/QH15"
+    }
+  ],
+  "legal_bases": [
+    {
+      "title": "Quy định chi tiết và hướng dẫn thi hành một số điều của Luật Bảo hiểm xã hội về bảo hiểm xã hội bắt buộc",
+      "code": "158/2025/NĐ-CP"
+    },
+    {
+      "title": "Luật Bảo hiểm xã hội",
+      "code": "41/2024/QH15"
+    }
+  ],
+  "faq": [
+    {
+      "question": "Có thể nộp qua kênh nào?",
+      "answer": "Các kênh hiện có: Trực tiếp, Trực tuyến, Dịch vụ bưu chính."
+    },
+    {
+      "question": "Thời gian xử lý tham chiếu là bao lâu?",
+      "answer": "Thời gian xử lý tham chiếu hiện có là 15 ngày làm việc."
+    },
+    {
+      "question": "Kết quả chính của thủ tục là gì?",
+      "answer": "Kết quả chính được trích xuất là Xác nhận thời gian đóng bảo hiểm xã hội của người lao động."
+    }
+  ],
+  "guidance": {
+    "highlight_documents": [
+      {
+        "bucket": "required",
+        "name": "Văn bản đề nghị xác nhận thời gian đóng bảo hiểm xã hội theo mẫu do cơ quan bảo hiểm xã hội ban hành",
+        "conditions": [],
+        "attachment_path": null
+      }
+    ],
+    "special_cases": [
+      "Có thể cần đối chiếu quá trình đóng bảo hiểm để giải quyết chế độ"
+    ],
+    "common_errors": [
+      "Điền sai mẫu tờ khai hoặc chọn sai biểu mẫu đi kèm."
+    ],
+    "validation_hints": [
+      "Nên xác định trước kênh nộp hồ sơ để biết có cần bản giấy, bản điện tử hay xuất trình trực tiếp.",
+      "Nên kiểm tra kỹ giấy tờ của người đã mất, thân nhân và căn cứ phát sinh chế độ."
+    ]
+  },
+  "next_steps": {
+    "summary": "Nên chuẩn bị giấy tờ của người đã mất, thân nhân và căn cứ hưởng chế độ trước khi nộp. Có thể chọn kênh nộp phù hợp: Trực tiếp, Trực tuyến, Dịch vụ bưu chính. Hiện có 1 mục giấy tờ cần theo dõi trong checklist.",
+    "time_badge": "15 ngày làm việc",
+    "result_label": "Xác nhận thời gian đóng bảo hiểm xã hội của người lao động",
+    "primary_channel": "online",
+    "channels": [
+      "in_person",
+      "online",
+      "postal"
+    ]
+  },
+  "notes": [],
+  "provenance": {
+    "pipeline": "raw->structured->normalized->enriched->ui_api_payload",
+    "normalizer_version": "0.2.0",
+    "enricher_version": "0.2.0",
+    "mapping_notes": "excluded_from_clean_workflow_dataset",
+    "supported_group": true
+  }
+}

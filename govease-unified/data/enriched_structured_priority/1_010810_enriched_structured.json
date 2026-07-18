@@ -1,0 +1,103 @@
+{
+  "schema_version": "1.0",
+  "enricher_version": "0.2.0",
+  "source": {
+    "procedure_code": "1.010810",
+    "title": "Công nhận đối với người bị thương trong chiến tranh không thuộc quân đội, công an",
+    "group_key": "suc_khoe_y_te",
+    "workflow_family": null,
+    "subflow": null
+  },
+  "experience": {
+    "entry_label": "Hỗ trợ y tế và bảo hiểm",
+    "overview_summary": "Thủ tục này thuộc nhóm y tế, thường cần đối chiếu thông tin người bệnh, đơn vị tiếp nhận hoặc quyền lợi chuyên ngành. Kết quả thường nhận được là - Quyết định cấp giấy chứng nhận người hưởng chính sách như thương binh và trợ cấp, phụ cấp ưu đãi hoặc quyết định trợ cấp thương tật một lần. - Giấy chứng nhận người hưởng chính sách như thương binh. Thời gian xử lý tham khảo: 72 ngày làm việc.",
+    "next_step_summary": "Nên xác định rõ đối tượng tham gia, quyền lợi hoặc nhu cầu điều chỉnh hồ sơ y tế trước khi nộp. Có thể chọn kênh nộp phù hợp: Trực tiếp, Trực tuyến, Dịch vụ bưu chính. Hiện có khoảng 4 mục giấy tờ cần theo dõi trong checklist.",
+    "tone": "supportive_public_service"
+  },
+  "guidance": {
+    "highlight_documents": [
+      {
+        "bucket": "required",
+        "name": "Bản khai theo Mẫu số 08 Phụ lục I Nghị định số 131/2021/NĐ-CP,",
+        "conditions": [],
+        "attachment_path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/1_010810/Mauso08_ND131_2021.docx"
+      },
+      {
+        "bucket": "required",
+        "name": "Giấy tờ chứng minh quá trình tham gia cách mạng quy định khoản 1 tại Điều 76 Nghị định số 131/2021/NĐ-CP: + Bản sao được chứng thực từ một trong các giấy tờ sau: lý lịch cán bộ; lý lịch đảng viên; lý lịch quân nhân; quyết định phục viên, xuất ngũ, thôi việc; hồ sơ bảo hiểm xã hội hoặc các giấy tờ, tài liệu do cơ quan có thẩm quyền ban hành lập từ ngày 31 tháng 12 năm 1994 trở về trước (đối với người tham gia cách mạng sau đó tiếp tục tham gia công tác tại các cơ quan nhà nước) + Bản sao được chứng thực từ một trong các giấy tờ sau: hồ sơ khen thưởng tổng kết thành tích kháng chiến hoặc một trong các quyết định của Thủ tướng Chính phủ về chế độ đối với người tham gia kháng chiến chống Pháp; chống Mỹ; tham gia chiến tranh bảo vệ Tổ quốc, làm nhiệm vụ quốc tế ở Campuchia, giúp bạn Lào (đối với người tham gia cách mạng sau đó không tiếp tục tham gia công tác tại các cơ quan nhà nước),.",
+        "conditions": [],
+        "attachment_path": null
+      },
+      {
+        "bucket": "conditional",
+        "name": "Nếu đã phẫu thuật lấy dị vật thì phải kèm theo phiếu phẫu thuật hoặc giấy ra viện hoặc tóm tắt hồ sơ bệnh án ghi nhận nội dung này.",
+        "conditions": [
+          "Nếu đã phẫu thuật lấy dị vật thì phải kèm theo phiếu phẫu thuật hoặc giấy ra viện hoặc tóm tắt hồ sơ bệnh án ghi nhận nội dung này."
+        ],
+        "attachment_path": null
+      },
+      {
+        "bucket": "conditional",
+        "name": "Tùy từng trường hợp kèm theo một trong các giấy tờ sau: + Giấy tờ, tài liệu chứng minh bị thương và bản sao được chứng thực từ một trong các giấy tờ đối với trường hợp quy định tại điểm a khoản 2 Điều 76 Nghị định số 131/2021/NĐ-CP. + Kết quả chụp phim và kết luận của Bệnh viện hoặc Trung tâm Y tế khu vực (bao gồm cả bệnh viện quân đội, công an) đối với vết thương còn mảnh kim khí trong cơ thể với trường hợp quy định tại điểm b khoản 2 Điều 76 Nghị định số 131/2021/NĐ-CP.",
+        "conditions": [
+          "Tùy từng trường hợp kèm theo một trong các giấy tờ sau: + Giấy tờ, tài liệu chứng minh bị thương và bản sao được chứng thực từ một trong các giấy tờ đối với trường hợp quy định tại điểm a khoản 2 Điều 76 Nghị định số 131/2021/NĐ-CP. + Kết quả chụp phim và kết luận của Bệnh viện hoặc Trung tâm Y tế khu vực (bao gồm cả bệnh viện quân đội, công an) đối với vết thương còn mảnh kim khí trong cơ thể với trường hợp quy định tại điểm b khoản 2 Điều 76 Nghị định số 131/2021/NĐ-CP."
+        ],
+        "attachment_path": null
+      }
+    ],
+    "special_cases": [
+      "Có thể cần đối chiếu quá trình đóng bảo hiểm để giải quyết chế độ"
+    ],
+    "common_errors": [
+      "Điền sai mẫu tờ khai hoặc chọn sai biểu mẫu đi kèm."
+    ],
+    "validation_hints": [
+      "Nên xác định trước kênh nộp hồ sơ để biết có cần bản giấy, bản điện tử hay xuất trình trực tiếp.",
+      "Có mẫu biểu đính kèm, nên kiểm tra đúng biểu mẫu trước khi nộp.",
+      "Nên xác định đúng nhóm đối tượng, mã số bảo hiểm và quyền lợi áp dụng trước khi nộp."
+    ]
+  },
+  "intake": {
+    "candidate_input_fields": [
+      {
+        "field_id": "request_subject",
+        "label": "Đối tượng làm thủ tục",
+        "field_type": "text",
+        "required": true
+      },
+      {
+        "field_id": "insurance_or_medical_need",
+        "label": "Nhu cầu bảo hiểm hoặc y tế",
+        "field_type": "text",
+        "required": true
+      },
+      {
+        "field_id": "submission_channel_preference",
+        "label": "Kênh nộp dự kiến",
+        "field_type": "enum",
+        "required": false
+      },
+      {
+        "field_id": "has_insurance_number",
+        "label": "Đã có mã BHXH/BHYT",
+        "field_type": "boolean",
+        "required": false
+      }
+    ],
+    "suggested_clarifying_questions": [
+      "Bạn đang muốn đăng ký, điều chỉnh hay xác nhận quyền lợi y tế hoặc bảo hiểm nào?",
+      "Bạn đã có mã BHXH/BHYT hoặc thông tin đơn vị tiếp nhận liên quan chưa?"
+    ]
+  },
+  "ui_hints": {
+    "primary_channel": "postal",
+    "result_label": "- Quyết định cấp giấy chứng nhận người hưởng chính sách như thương binh và trợ cấp, phụ cấp ưu đãi hoặc quyết định trợ cấp thương tật một lần. - Giấy chứng nhận người hưởng chính sách như thương binh",
+    "time_badge": "72 ngày làm việc",
+    "document_count_badge": 4
+  },
+  "provenance": {
+    "generator": "workflow_domain_enricher",
+    "derivation_mode": "rule_based_semantic_enrichment",
+    "supported_group": true
+  }
+}

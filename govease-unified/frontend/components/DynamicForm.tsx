@@ -1,11 +1,13 @@
 "use client";
 
 import { FormEvent, useMemo, useState } from "react";
+import Image from "next/image";
 import useSWR from "swr";
 import { getFormSchema, validateSubmission } from "../lib/api";
 import { useDistricts, useProvinces, useWards } from "../hooks/useAdministrativeUnits";
 import type { FormField, FormSchema, ValidationIssue, ValidationResult } from "../lib/types";
 import { Icon } from "./Icon";
+import { WorkflowScrollDock } from "./WorkflowScrollDock";
 
 type AdministrativeAddressValue = {
   province_code: string;
@@ -28,6 +30,21 @@ const emptyAddress: AdministrativeAddressValue = {
   ward: "",
   detail: "",
 };
+
+function formatVietnameseDateInput(raw: string) {
+  const digits = raw.replace(/\D/g, "").slice(0, 8);
+  if (digits.length <= 2) return digits;
+  if (digits.length <= 4) return `${digits.slice(0, 2)}/${digits.slice(2)}`;
+  return `${digits.slice(0, 2)}/${digits.slice(2, 4)}/${digits.slice(4)}`;
+}
+
+function normalizeDateDisplay(value: string) {
+  if (/^\d{4}-\d{2}-\d{2}$/.test(value)) {
+    const [year, month, day] = value.split("-");
+    return `${day}/${month}/${year}`;
+  }
+  return formatVietnameseDateInput(value);
+}
 
 function setNested(target: Record<string, unknown>, path: string, value: unknown) {
   const parts = path.split(".");
@@ -145,21 +162,17 @@ function FieldControl({
   }
   if (field.type === "boolean" || field.type === "confirmation") {
     return (
-      <label className={`checkbox-field ${issue ? "has-error" : ""}`}>
-        <input
-          type="checkbox"
-          checked={value === true}
-          onChange={(event) => onChange(event.target.checked)}
-          aria-describedby={describedBy}
-        />
-        <span>
-          <i>
-            <Icon name="check" />
-          </i>
-          {field.label}
-          {field.required && <b>*</b>}
-        </span>
-      </label>
+      <select
+        value={value === true ? "true" : value === false ? "false" : ""}
+        onChange={(event) => onChange(event.target.value === "true")}
+        aria-invalid={!!issue}
+        aria-describedby={describedBy}
+        className={`compact-select ${issue ? "has-error" : ""}`}
+      >
+        <option value="">-- Chọn --</option>
+        <option value="true">Có</option>
+        <option value="false">Không</option>
+      </select>
     );
   }
   if (field.type === "enum" && field.options.length) {
@@ -184,12 +197,16 @@ function FieldControl({
   }
   return (
     <input
-      type={field.type === "date" ? "date" : "text"}
-      value={String(value)}
-      onChange={(event) => onChange(event.target.value)}
-      placeholder={field.example || (field.type === "identity_number" ? "Tự động điền sau khi đăng nhập VNeID" : "Nhập thông tin")}
-      inputMode={field.type === "identity_number" ? "numeric" : undefined}
-      maxLength={field.type === "identity_number" ? 12 : undefined}
+      type="text"
+      value={field.type === "date" ? normalizeDateDisplay(String(value)) : String(value)}
+      onChange={(event) => onChange(field.type === "date" ? formatVietnameseDateInput(event.target.value) : event.target.value)}
+      placeholder={
+        field.type === "date"
+          ? "dd/mm/yyyy"
+          : field.example || (field.type === "identity_number" ? "Tự động điền sau khi đăng nhập VNeID" : "Nhập thông tin")
+      }
+      inputMode={field.type === "identity_number" || field.type === "date" ? "numeric" : undefined}
+      maxLength={field.type === "identity_number" ? 12 : field.type === "date" ? 10 : undefined}
       aria-invalid={!!issue}
       aria-describedby={describedBy}
     />
@@ -218,9 +235,8 @@ export function DynamicForm({
 
   const needsProvinces = schema?.fields.some((field) => field.options_endpoint === "/api/v1/administrative-units/provinces");
   const { provinces, error: provError } = useProvinces();
-  const provinceOptions = needsProvinces && provinces.length > 0
-    ? provinces.map((item) => ({ label: item.name, value: item.name }))
-    : null;
+  const provinceOptions =
+    needsProvinces && provinces.length > 0 ? provinces.map((item) => ({ label: item.name, value: item.name })) : null;
   const provinceError = provError ? "Không tải được danh mục mới nhất; đang dùng danh mục dự phòng." : "";
 
   const issues = useMemo(() => new Map((result?.issues || []).map((issue) => [issue.field, issue])), [result]);
@@ -261,7 +277,7 @@ export function DynamicForm({
   }
 
   return (
-    <div className="form-workspace">
+    <div className="form-workspace" data-workflow-scroll>
       <div className="form-heading">
         <div>
           <small>KIỂM TRA TRƯỚC KHI NỘP</small>
@@ -272,11 +288,16 @@ export function DynamicForm({
         </div>
         <span>Mã: {procedureCode}</span>
       </div>
+
       {result && (
         <div className={`validation-summary ${result.ready_to_submit ? "ready" : "issues"}`}>
           <Icon name={result.ready_to_submit ? "shield" : "warning"} />
           <div>
-            <strong>{result.ready_to_submit ? "Đã đạt kiểm tra sơ bộ" : `Phát hiện ${result.issues.length} nội dung cần kiểm tra`}</strong>
+            <strong>
+              {result.ready_to_submit
+                ? "Đã đạt kiểm tra sơ bộ"
+                : `Phát hiện ${result.issues.length} nội dung cần kiểm tra`}
+            </strong>
             <p>
               {result.ready_to_submit
                 ? "Dữ liệu đúng cấu trúc và chưa phát hiện mâu thuẫn. Kết quả này không thay thế bước kiểm tra của cơ quan nhà nước."
@@ -285,6 +306,7 @@ export function DynamicForm({
           </div>
         </div>
       )}
+
       <form onSubmit={submit}>
         <div className="field-grid">
           {schema.fields.map((field) => {
@@ -301,10 +323,14 @@ export function DynamicForm({
                   : "";
             return (
               <div
-                className={`form-field flex flex-col gap-1 ${field.type === "boolean" || field.type === "confirmation" || field.type === "administrative_address" ? "wide" : ""}`}
+                className={`form-field flex flex-col gap-1 ${
+                  field.type === "boolean" || field.type === "confirmation" || field.type === "administrative_address"
+                    ? "wide"
+                    : ""
+                }`}
                 key={field.path}
               >
-                {field.type !== "boolean" && field.type !== "confirmation" && (
+                {(
                   <label htmlFor={field.path}>
                     {field.label}
                     {field.required && <b>*</b>}
@@ -322,7 +348,7 @@ export function DynamicForm({
                 )}
                 {openHelp === field.path && field.help_text && (
                   <div className="field-help">
-                    <Icon name="bot" />
+                    <Image src="/govlogo.png" alt="GovEase AI" width={20} height={20} />
                     <span>{field.help_text}</span>
                   </div>
                 )}
@@ -343,7 +369,10 @@ export function DynamicForm({
                 )}
                 {!issue && field.validation.format && <small>Định dạng: {field.validation.format}</small>}
                 {field.prefill_source === "vneid" && (
-                  <small>Chưa kết nối VNeID trong bản demo; số nhập tay chỉ được kiểm tra cấu trúc, không được xác nhận là số thật.</small>
+                  <small>
+                    Chưa kết nối VNeID trong bản demo; số nhập tay chỉ được kiểm tra cấu trúc, không được xác nhận là
+                    số thật.
+                  </small>
                 )}
                 {field.options_endpoint && !provinceOptions && !provinceError && <small>Đang tải danh mục tỉnh/thành phố...</small>}
                 {field.options_source_url && field.options_source_url !== field.source_url && (
@@ -357,6 +386,7 @@ export function DynamicForm({
             );
           })}
         </div>
+
         {provinceError && (
           <div className="inline-error">
             <Icon name="warning" />
@@ -369,17 +399,14 @@ export function DynamicForm({
             {error}
           </div>
         )}
+
         <div className="form-actions">
           <button type="button" className="secondary-button" onClick={onBack}>
             ← Xem lại hướng dẫn
           </button>
           <div className="form-actions-group">
             {result && onContinue && (
-              <button
-                type="button"
-                className="secondary-button"
-                onClick={() => onContinue(result)}
-              >
+              <button type="button" className="secondary-button" onClick={() => onContinue(result)}>
                 Xem bước tiếp theo
                 <Icon name="arrow" />
               </button>
@@ -391,10 +418,12 @@ export function DynamicForm({
           </div>
         </div>
       </form>
+
       <div className="privacy-note">
         <Icon name="shield" />
         <span>Thông tin chỉ được gửi đến API để kiểm tra và không được frontend lưu trữ. Kết quả mang tính hướng dẫn.</span>
       </div>
+      <WorkflowScrollDock />
     </div>
   );
 }

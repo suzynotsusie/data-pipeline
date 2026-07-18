@@ -1,0 +1,180 @@
+{
+  "schema_version": "1.0",
+  "normalizer_version": "0.2.0",
+  "source": {
+    "procedure_code": "2.002767",
+    "title": "Thủ tục đăng ký khám bệnh, chữa bệnh đối với sĩ quan phục viên có đủ 15 năm phục vụ trong Quân đội",
+    "raw_structured_parser_version": "0.1.0",
+    "field": "Chính sách BQP"
+  },
+  "procedure": {
+    "level": "Cấp bộ/ngành",
+    "procedure_type": "NOT_ASSIGNED_REGULATION",
+    "target_users": [
+      "Công dân Việt Nam"
+    ],
+    "authorities": [
+      "Bệnh viện Quân đội"
+    ],
+    "receiving_places": []
+  },
+  "submission": {
+    "channels": [
+      "in_person",
+      "online",
+      "postal"
+    ],
+    "methods": [
+      {
+        "method_id": "method_1",
+        "channel": "online",
+        "processing_time_text": "1 ngày",
+        "fee_text": null,
+        "description": null,
+        "is_online": true,
+        "is_postal": false,
+        "is_in_person": false
+      },
+      {
+        "method_id": "method_2",
+        "channel": "postal",
+        "processing_time_text": "1 ngày",
+        "fee_text": null,
+        "description": null,
+        "is_online": false,
+        "is_postal": true,
+        "is_in_person": false
+      },
+      {
+        "method_id": "method_3",
+        "channel": "in_person",
+        "processing_time_text": "1 ngày",
+        "fee_text": null,
+        "description": null,
+        "is_online": false,
+        "is_postal": false,
+        "is_in_person": true
+      }
+    ],
+    "timing_summary": {
+      "unique_processing_times": [
+        "1 ngày"
+      ],
+      "method_count": 3
+    }
+  },
+  "documents": {
+    "required": [
+      {
+        "document_id": "gi_y_gi_i_thi_u_cu_a_b_ch_huy_qu_n_s_c_p_t_nh_n_i_c_tru",
+        "name": "Giấy giới thiệu của Bộ chỉ huy quân sự cấp tỉnh (nơi cư trú)",
+        "group_name": "default",
+        "group_type": "unknown",
+        "original_count": "1",
+        "copy_count": "0",
+        "conditions": [],
+        "attachment_label": null,
+        "attachment_path": null
+      },
+      {
+        "document_id": "quy_t_i_nh_phu_c_vi_n_cu_a_si_quan_ho_c_gi_y_ch_ng_nh_n_co_u_15_n_m_phu_c_vu_trong_qu_n_i",
+        "name": "Quyết định phục viên của sĩ quan (hoặc giấy chứng nhận có đủ 15 năm phục vụ trong Quân đội)",
+        "group_name": "default",
+        "group_type": "unknown",
+        "original_count": "0",
+        "copy_count": "1",
+        "conditions": [],
+        "attachment_label": null,
+        "attachment_path": null
+      }
+    ],
+    "conditional": [],
+    "presented": [],
+    "notes": [],
+    "forms": [],
+    "empty_groups": [],
+    "document_count": 2
+  },
+  "process": {
+    "steps": [
+      {
+        "step_id": "step_1",
+        "title": null,
+        "content": "1. Bước 1. Sĩ quan phục viên về địa phương, làm đơn đề nghị đăng ký khám bệnh, chữa bệnh theo mẫu kèm theo, gửi cùng bản sao Quyết định phục viên hoặc bản sao giấy chứng nhận có đủ 15 năm phục vụ trong Quân đội đến Bộ chỉ huy quân sự tỉnh, thành phố trực thuộc trung ương (sau đây gọi tắt là Bộ chỉ huy quân sự tỉnh) bằng hình thức trực tiếp hoặc qua dịch vụ bưu chính hoặc trên môi trường điện tử. Ngay trong ngày tiếp nhận hồ sơ đăng ký khám bệnh, chữa bệnh, Bộ chỉ huy quân sự tỉnh có trách nhiệm cấp giấy giới thiệu, chuyển kèm hồ sơ đến bệnh viện Quân đội ở gần nơi đối tượng thường trú nhất để làm thủ tục đăng ký khám bệnh, chữa bệnh ban đầu.",
+        "actor": "user",
+        "channel_hint": "dịch vụ bưu chính",
+        "time_hint": "15 năm"
+      },
+      {
+        "step_id": "step_2",
+        "title": null,
+        "content": "Bước 2. Bệnh viện Quân đội căn cứ vào hồ sơ và giấy giới thiệu của Bộ chỉ huy quân sự tỉnh, căn cước công dân hoặc căn cước của sĩ quan phục viên để cấp sổ khám bệnh, chữa bệnh cho sĩ quan phục viên.",
+        "actor": "user",
+        "channel_hint": null,
+        "time_hint": null
+      },
+      {
+        "step_id": "step_3",
+        "title": null,
+        "content": "Bước 3. Trường hợp sĩ quan phục viên thay đổi bệnh viện Quân đội khám bệnh, chữa bệnh do di chuyển nơi thường trú, thủ tục đăng ký khám bệnh, chữa bệnh tại bệnh viện Quân đội mới được thực hiện theo giấy giới thiệu của Bộ chỉ huy quân sự tỉnh (nơi thường trú mới) và sổ khám bệnh của bệnh viện cũ.",
+        "actor": "user",
+        "channel_hint": null,
+        "time_hint": null
+      },
+      {
+        "step_id": "step_4",
+        "title": null,
+        "content": "Bước 4. Sĩ quan phục viên thuộc đối tượng quy định tại khoản 2 Điều 1 Quy định này có nguyện vọng khám bệnh, chữa bệnh tại bệnh viện Quân đội thì đăng ký với cơ quan bảo hiểm xã hội địa phương, được hưởng các quyền lợi khám bệnh, chữa bệnh và có trách nhiệm thực hiện theo quy định của pháp luật về bảo hiểm y tế.",
+        "actor": "authority",
+        "channel_hint": null,
+        "time_hint": null
+      }
+    ],
+    "step_count": 4,
+    "notes": []
+  },
+  "eligibility": {
+    "conditions": [],
+    "has_conditions": false
+  },
+  "results": {
+    "items": [
+      {
+        "name": "Sổ khám bệnh, chữa bệnh của sĩ quan phục viên 15 năm",
+        "result_code": "KQ.G11.000266",
+        "raw_text": "Sổ khám bệnh, chữa bệnh của sĩ quan phục viên 15 năm"
+      }
+    ],
+    "primary_result": {
+      "name": "Sổ khám bệnh, chữa bệnh của sĩ quan phục viên 15 năm",
+      "result_code": "KQ.G11.000266",
+      "raw_text": "Sổ khám bệnh, chữa bệnh của sĩ quan phục viên 15 năm"
+    }
+  },
+  "legal_basis": {
+    "items": [
+      {
+        "title": "Thông tư số 103/2025/TT-BQP ngày 26/9/2025 của Bộ trưởng Bộ Quốc phòng về việc sửa đổi, bổ sung một số điều của các Thông tư liên tịch, Thông tư, Quyết định của Bộ trưởng Bộ Quốc phòng về lĩnh vực chính sách",
+        "code": "103/2025/TT-BQP"
+      },
+      {
+        "title": "Sửa đổi, bổ sung một số điều của Quy định về khám bệnh, chữa bệnh đối với sĩ quan phục viên có đủ 15 năm phục vụ trong quân đội, ban hành kèm theo Quyết định số 33/2003/QĐ-BQP ngày 07 tháng 4 năm 2003 của Bộ trưởng Bộ Quốc phòng",
+        "code": "139/2011/TT-BQP"
+      },
+      {
+        "title": "Ban hành Quy định về khám bệnh, chữa bệnh đối với sĩ quan phục viên có đủ 15 năm phục vụ trong quân đội",
+        "code": "33/2003/QĐ-BQP"
+      }
+    ],
+    "count": 3
+  },
+  "attachments": [],
+  "signals": {
+    "raw_parse_warnings": [],
+    "missing_documents": false,
+    "documents_section_present": true,
+    "documents_declared_empty": false,
+    "documents_only_in_notes": false,
+    "missing_results": false
+  }
+}

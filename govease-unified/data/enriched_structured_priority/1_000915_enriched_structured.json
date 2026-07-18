@@ -1,0 +1,139 @@
+{
+  "schema_version": "1.0",
+  "enricher_version": "0.2.0",
+  "source": {
+    "procedure_code": "1.000915",
+    "title": "Công nhận bằng cử nhân, bằng thạc sĩ, bằng tiến sĩ và văn bằng trình độ tương đương do cơ sở giáo dục nước ngoài cấp để sử dụng tại Việt Nam",
+    "group_key": "hoc_tap",
+    "workflow_family": "education_study_workflow",
+    "subflow": "van_bang_chung_chi"
+  },
+  "experience": {
+    "entry_label": "Hỗ trợ giáo dục và học tập",
+    "overview_summary": "Thủ tục này thuộc nhóm giáo dục và học tập, thường liên quan đến hồ sơ đào tạo, văn bằng hoặc điều kiện học tập của người học. Kết quả thường nhận được là Giấy công nhận văn bằng (đối với bằng bằng cử nhân, bằng thạc sĩ, bằng tiến sĩ và văn bằng trình độ tương đương do cơ sở giáo dục nước ngoài cấp để sử dụng tại Việt Nam). Thời gian xử lý tham khảo: 45 ngày làm việc.",
+    "next_step_summary": "Nên rà trước thông tin người học, cơ sở đào tạo và loại kết quả cần xin xác nhận hoặc cấp lại. Có thể chọn kênh nộp phù hợp: Trực tiếp, Trực tuyến, Dịch vụ bưu chính. Hiện có khoảng 6 mục giấy tờ cần theo dõi trong checklist.",
+    "tone": "supportive_public_service"
+  },
+  "guidance": {
+    "highlight_documents": [
+      {
+        "bucket": "required",
+        "name": "Bản sao phụ lục văn bằng hoặc bảng kết quả học tập kèm bản công chứng dịch sang tiếng Việt;",
+        "conditions": [],
+        "attachment_path": null
+      },
+      {
+        "bucket": "required",
+        "name": "Bản sao văn bằng hoặc bản sao từ sổ gốc cấp văn bằng đề nghị công nhận kèm theo bản công chứng dịch sang tiếng Việt;",
+        "conditions": [],
+        "attachment_path": null
+      },
+      {
+        "bucket": "conditional",
+        "name": "Minh chứng thời gian học ở nước ngoài (nếu có): Quyết định cử đi học và tiếp nhận của đơn vị quản lý lao động; hộ chiếu, các trang thị thực có visa, dấu xuất nhập cảnh phù hợp với thời gian du học hoặc giấy tờ minh chứng khác;",
+        "conditions": [
+          "Minh chứng thời gian học ở nước ngoài (nếu có): Quyết định cử đi học và tiếp nhận của đơn vị quản lý lao động; hộ chiếu, các trang thị thực có visa, dấu xuất nhập cảnh phù hợp với thời gian du học hoặc giấy tờ minh chứng khác;"
+        ],
+        "attachment_path": null
+      },
+      {
+        "bucket": "conditional",
+        "name": "Văn bản ủy quyền xác minh thông tin về văn bằng (nếu đơn vị xác thực yêu cầu);",
+        "conditions": [
+          "Văn bản ủy quyền xác minh thông tin về văn bằng (nếu đơn vị xác thực yêu cầu);"
+        ],
+        "attachment_path": null
+      },
+      {
+        "bucket": "conditional",
+        "name": "Bản sao công chứng văn bằng, chứng chỉ có liên quan trực tiếp (nếu có);",
+        "conditions": [
+          "Bản sao công chứng văn bằng, chứng chỉ có liên quan trực tiếp (nếu có);"
+        ],
+        "attachment_path": null
+      },
+      {
+        "bucket": "conditional",
+        "name": "Phiếu đề nghị công nhận văn bằng do cơ sở nước ngoài cấp (theo mẫu tại Phụ lục I ban hành kèm theo Thông tư số 13/2021/TT-BGDĐT). Trường hợp người đề nghị công nhận văn bằng nộp hồ sơ trực tuyến thì cung cấp thông tin trực tiếp trên Mẫu Phiếu khai điện tử trên Cổng Dịch vụ công trực tuyến của Bộ Giáo dục và Đào tạo;",
+        "conditions": [
+          "Phiếu đề nghị công nhận văn bằng do cơ sở nước ngoài cấp (theo mẫu tại Phụ lục I ban hành kèm theo Thông tư số 13/2021/TT-BGDĐT). Trường hợp người đề nghị công nhận văn bằng nộp hồ sơ trực tuyến thì cung cấp thông tin trực tiếp trên Mẫu Phiếu khai điện tử trên Cổng Dịch vụ công trực tuyến của Bộ Giáo dục và Đào tạo;"
+        ],
+        "attachment_path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/1_000915/M%E1%BA%ABu%20phi%E1%BA%BFu%20%C4%91%E1%BB%81%20ngh%E1%BB%8B%20c%C3%B4ng%20nh%E1%BA%ADn%20v%C4%83n%20b%E1%BA%B1ng%20do%20c%C6%A1%20s%E1%BB%9F%20n%C6%B0%E1%BB%9Bc%20ngo%C3%A0i%20c%E1%BA%A5p.docx"
+      }
+    ],
+    "special_cases": [
+      "Có yếu tố nước ngoài",
+      "Có thể cần giấy tờ ủy quyền",
+      "Có trường hợp hồ sơ điện tử thay thế bản giấy",
+      "Có thể cần xác minh hồ sơ học tập hoặc văn bằng",
+      "Có thể cần xác minh quan hệ lao động hoặc giấy phép làm việc"
+    ],
+    "common_errors": [
+      "Thiếu giấy tờ hoặc nội dung ủy quyền phù hợp.",
+      "Thiếu giấy tờ hợp pháp hóa hoặc giấy tờ nhân thân của phía nước ngoài.",
+      "Điền sai mẫu tờ khai hoặc chọn sai biểu mẫu đi kèm.",
+      "Thiếu minh chứng học tập, văn bằng hoặc xác nhận từ cơ sở đào tạo.",
+      "Thiếu hồ sơ về vị trí việc làm, đơn vị sử dụng lao động hoặc điều kiện làm việc áp dụng."
+    ],
+    "validation_hints": [
+      "Nên xác định trước kênh nộp hồ sơ để biết có cần bản giấy, bản điện tử hay xuất trình trực tiếp.",
+      "Có mẫu biểu đính kèm, nên kiểm tra đúng biểu mẫu trước khi nộp.",
+      "Nên rà lại thông tin người học, cơ sở đào tạo và loại xác nhận hoặc văn bằng cần xin."
+    ]
+  },
+  "intake": {
+    "candidate_input_fields": [
+      {
+        "field_id": "learner_full_name",
+        "label": "Tên người học",
+        "field_type": "text",
+        "required": true
+      },
+      {
+        "field_id": "education_record_type",
+        "label": "Loại hồ sơ học tập cần xử lý",
+        "field_type": "text",
+        "required": true
+      },
+      {
+        "field_id": "education_institution",
+        "label": "Cơ sở đào tạo liên quan",
+        "field_type": "text",
+        "required": false
+      },
+      {
+        "field_id": "submission_channel_preference",
+        "label": "Kênh nộp dự kiến",
+        "field_type": "enum",
+        "required": false
+      },
+      {
+        "field_id": "doctoral_stage",
+        "label": "Giai đoạn đào tạo tiến sĩ",
+        "field_type": "enum",
+        "required": false
+      },
+      {
+        "field_id": "certificate_or_degree_type",
+        "label": "Loại văn bằng/chứng chỉ",
+        "field_type": "text",
+        "required": false
+      }
+    ],
+    "suggested_clarifying_questions": [
+      "Bạn đang cần xử lý hồ sơ học tập, văn bằng hay xác nhận nào?",
+      "Người học và cơ sở đào tạo liên quan đã xác định rõ chưa?"
+    ]
+  },
+  "ui_hints": {
+    "primary_channel": "online",
+    "result_label": "Giấy công nhận văn bằng (đối với bằng bằng cử nhân, bằng thạc sĩ, bằng tiến sĩ và văn bằng trình độ tương đương do cơ sở giáo dục nước ngoài cấp để sử dụng tại Việt Nam)",
+    "time_badge": "45 ngày làm việc",
+    "document_count_badge": 6
+  },
+  "provenance": {
+    "generator": "workflow_domain_enricher",
+    "derivation_mode": "rule_based_semantic_enrichment",
+    "supported_group": true
+  }
+}

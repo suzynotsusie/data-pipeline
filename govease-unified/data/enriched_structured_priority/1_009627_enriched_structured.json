@@ -1,0 +1,117 @@
+{
+  "schema_version": "1.0",
+  "enricher_version": "0.2.0",
+  "source": {
+    "procedure_code": "1.009627",
+    "title": "Thủ tục chấp thuận chủ trương đầu tư thuộc thẩm quyền của Thủ tướng Chính phủ",
+    "group_key": "suc_khoe_y_te",
+    "workflow_family": null,
+    "subflow": null
+  },
+  "experience": {
+    "entry_label": "Hỗ trợ y tế và bảo hiểm",
+    "overview_summary": "Thủ tục này thuộc nhóm y tế, thường cần đối chiếu thông tin người bệnh, đơn vị tiếp nhận hoặc quyền lợi chuyên ngành. Kết quả thường nhận được là Quyết định chấp thuận chủ trương đầu tư theo Mẫu I.2.1 hoặc Quyết định chấp thuận chủ trương đầu tư đồng thời chấp thuận nhà đầu tư theo Mẫu I.2.3 ban hành kèm theo Thông tư số 55/2026/TT-BTC hoặc văn bản từ chối, nêu rõ lý do. Thời gian xử lý tham khảo: 25 ngày làm việc.",
+    "next_step_summary": "Nên xác định rõ đối tượng tham gia, quyền lợi hoặc nhu cầu điều chỉnh hồ sơ y tế trước khi nộp. Có thể chọn kênh nộp phù hợp: Trực tiếp, Trực tuyến, Dịch vụ bưu chính. Hiện có khoảng 17 mục giấy tờ cần theo dõi trong checklist.",
+    "tone": "supportive_public_service"
+  },
+  "guidance": {
+    "highlight_documents": [
+      {
+        "bucket": "required",
+        "name": "Tài liệu về tư cách pháp lý của nhà đầu tư",
+        "conditions": [],
+        "attachment_path": null
+      },
+      {
+        "bucket": "required",
+        "name": "Tài liệu chứng minh năng lực tài chính của nhà đầu tư gồm ít nhất một trong các tài liệu sau: báo cáo tài chính 02 năm gần nhất của nhà đầu tư, cam kết hỗ trợ tài chính của công ty mẹ, cam kết hỗ trợ tài chính của tổ chức tài chính, bảo lãnh về năng lực tài chính của nhà đầu tư hoặc tài liệu khác chứng minh năng lực tài chính của nhà đầu tư",
+        "conditions": [],
+        "attachment_path": null
+      },
+      {
+        "bucket": "required",
+        "name": "Hợp đồng BCC đối với dự án đầu tư theo hình thức hợp đồng BCC",
+        "conditions": [],
+        "attachment_path": null
+      },
+      {
+        "bucket": "required",
+        "name": "Tờ trình chấp thuận chủ trương đầu tư",
+        "conditions": [],
+        "attachment_path": null
+      },
+      {
+        "bucket": "conditional",
+        "name": "Văn bản đề nghị thực hiện dự án đầu tư, gồm cả cam kết chịu mọi chi phí, rủi ro nếu dự án không được chấp thuận",
+        "conditions": [
+          "Văn bản đề nghị thực hiện dự án đầu tư, gồm cả cam kết chịu mọi chi phí, rủi ro nếu dự án không được chấp thuận"
+        ],
+        "attachment_path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/1_009627/M%E1%BA%ABu%20I.1.1.docx"
+      },
+      {
+        "bucket": "conditional",
+        "name": "Đề xuất dự án đầu tư gồm các nội dung chủ yếu sau: nhà đầu tư hoặc hình thức lựa chọn nhà đầu tư, mục tiêu đầu tư, quy mô đầu tư, vốn đầu tư và phương án huy động vốn, địa điểm, thời hạn, tiến độ thực hiện, thông tin về hiện trạng sử dụng đất, sử dụng rừng, sử dụng khu vực biển (nếu có) tại địa điểm thực hiện dự án và đề xuất nhu cầu sử dụng đất (nếu có), sử dụng rừng (nếu có), sử dụng khu vực biển (nếu có), nhu cầu về lao động, đề xuất hưởng ưu đãi đầu tư, tác động, hiệu quả kinh tế - xã hội của dự án, đánh giá sơ bộ tác động môi trường (nếu có) theo quy định của pháp luật về bảo vệ môi trường; cơ chế, chính sách đặc biệt (nếu có). Trường hợp pháp luật về xây dựng và pháp luật khác quy định lập báo cáo nghiên cứu tiền khả thi thì nhà đầu tư được nộp báo cáo nghiên cứu tiền khả thi thay cho đề xuất dự án đầu tư. Đối với dự án đầu tư thuộc thẩm quyền chấp thuận chủ trương đầu tư của Quốc hội, Thủ tướng Chính phủ có đề xuất chuyển mục đích sử dụng rừng sang mục đích khác thì nhà đầu tư nộp bổ sung hồ sơ đề xuất chuyển mục đích sử dụng rừng sang mục đích khác theo quy định của pháp luật về lâm nghiệp;",
+        "conditions": [
+          "Đề xuất dự án đầu tư gồm các nội dung chủ yếu sau: nhà đầu tư hoặc hình thức lựa chọn nhà đầu tư, mục tiêu đầu tư, quy mô đầu tư, vốn đầu tư và phương án huy động vốn, địa điểm, thời hạn, tiến độ thực hiện, thông tin về hiện trạng sử dụng đất, sử dụng rừng, sử dụng khu vực biển (nếu có) tại địa điểm thực hiện dự án và đề xuất nhu cầu sử dụng đất (nếu có), sử dụng rừng (nếu có), sử dụng khu vực biển (nếu có), nhu cầu về lao động, đề xuất hưởng ưu đãi đầu tư, tác động, hiệu quả kinh tế - xã hội của dự án, đánh giá sơ bộ tác động môi trường (nếu có) theo quy định của pháp luật về bảo vệ môi trường; cơ chế, chính sách đặc biệt (nếu có). Trường hợp pháp luật về xây dựng và pháp luật khác quy định lập báo cáo nghiên cứu tiền khả thi thì nhà đầu tư được nộp báo cáo nghiên cứu tiền khả thi thay cho đề xuất dự án đầu tư. Đối với dự án đầu tư thuộc thẩm quyền chấp thuận chủ trương đầu tư của Quốc hội, Thủ tướng Chính phủ có đề xuất chuyển mục đích sử dụng rừng sang mục đích khác thì nhà đầu tư nộp bổ sung hồ sơ đề xuất chuyển mục đích sử dụng rừng sang mục đích khác theo quy định của pháp luật về lâm nghiệp;"
+        ],
+        "attachment_path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/1_009627/M%E1%BA%ABu%20I.1.3.docx"
+      }
+    ],
+    "special_cases": [
+      "Có thể cần đối chiếu thông tin thửa đất hoặc giấy chứng nhận",
+      "Có thể cần xác minh quan hệ lao động hoặc giấy phép làm việc"
+    ],
+    "common_errors": [
+      "Thông tin thửa đất, tài sản hoặc giấy chứng nhận chưa khớp với hồ sơ hiện có.",
+      "Thiếu hồ sơ về vị trí việc làm, đơn vị sử dụng lao động hoặc điều kiện làm việc áp dụng."
+    ],
+    "validation_hints": [
+      "Nên xác định trước kênh nộp hồ sơ để biết có cần bản giấy, bản điện tử hay xuất trình trực tiếp.",
+      "Có mẫu biểu đính kèm, nên kiểm tra đúng biểu mẫu trước khi nộp.",
+      "Nên xác định đúng nhóm đối tượng, mã số bảo hiểm và quyền lợi áp dụng trước khi nộp."
+    ]
+  },
+  "intake": {
+    "candidate_input_fields": [
+      {
+        "field_id": "request_subject",
+        "label": "Đối tượng làm thủ tục",
+        "field_type": "text",
+        "required": true
+      },
+      {
+        "field_id": "insurance_or_medical_need",
+        "label": "Nhu cầu bảo hiểm hoặc y tế",
+        "field_type": "text",
+        "required": true
+      },
+      {
+        "field_id": "submission_channel_preference",
+        "label": "Kênh nộp dự kiến",
+        "field_type": "enum",
+        "required": false
+      },
+      {
+        "field_id": "has_insurance_number",
+        "label": "Đã có mã BHXH/BHYT",
+        "field_type": "boolean",
+        "required": false
+      }
+    ],
+    "suggested_clarifying_questions": [
+      "Bạn đang muốn đăng ký, điều chỉnh hay xác nhận quyền lợi y tế hoặc bảo hiểm nào?",
+      "Bạn đã có mã BHXH/BHYT hoặc thông tin đơn vị tiếp nhận liên quan chưa?"
+    ]
+  },
+  "ui_hints": {
+    "primary_channel": "online",
+    "result_label": "Quyết định chấp thuận chủ trương đầu tư theo Mẫu I.2.1 hoặc Quyết định chấp thuận chủ trương đầu tư đồng thời chấp thuận nhà đầu tư theo Mẫu I.2.3 ban hành kèm theo Thông tư số 55/2026/TT-BTC hoặc văn bản từ chối, nêu rõ lý do",
+    "time_badge": "25 ngày làm việc",
+    "document_count_badge": 17
+  },
+  "provenance": {
+    "generator": "workflow_domain_enricher",
+    "derivation_mode": "rule_based_semantic_enrichment",
+    "supported_group": true
+  }
+}

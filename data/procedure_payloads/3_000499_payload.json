@@ -1,0 +1,550 @@
+{
+  "schema_version": "3.0",
+  "record_type": "public_service_procedure_payload",
+  "id": "procedure-3.000499",
+  "procedure_code": "3.000499",
+  "code": "3.000499",
+  "title": "Thanh toán chi phí khám bệnh, chữa bệnh giữa cơ quan bảo hiểm xã hội và cơ sở khám bệnh, chữa bệnh",
+  "language": "vi",
+  "status": "generated_from_pipeline",
+  "field": "Bảo hiểm y tế",
+  "group_key": "suc_khoe_y_te",
+  "workflow_family": null,
+  "subflow": null,
+  "source": {
+    "source_url": "file:///C:/Users/ku060/Downloads/VAIC%20source/data-pipeline/raw_data/3_000499/3_000499_procedure_detail.md",
+    "source_markdown_path": "C:\\Users\\ku060\\Downloads\\VAIC source\\data-pipeline\\raw_data\\3_000499\\3_000499_procedure_detail.md",
+    "normalized_payload_path": "C:\\Users\\ku060\\Downloads\\VAIC source\\data-pipeline\\govease-unified\\data\\normalized_structured\\3_000499_normalized_structured.json",
+    "enriched_payload_path": "C:\\Users\\ku060\\Downloads\\VAIC source\\data-pipeline\\govease-unified\\data\\enriched_structured_priority\\3_000499_enriched_structured.json"
+  },
+  "scope": {
+    "included": "Thủ tục này thuộc nhóm y tế, thường cần đối chiếu thông tin người bệnh, đơn vị tiếp nhận hoặc quyền lợi chuyên ngành. Kết quả thường nhận được là Cơ sở khám bệnh , chữa bệnh nhận được chi phí khám, chữa bệnh bảo hiểm y tế theo thông báo số quyết toán của cơ quan bảo hiểm xã hội. Thời gian xử lý tham khảo: 30 ngày.",
+    "not_included": []
+  },
+  "agency": {
+    "executing_agency": "Bảo hiểm xã hội tỉnh",
+    "submission_place": null,
+    "receiving_places": []
+  },
+  "target_users": [
+    "Doanh nghiệp",
+    "Tổ chức nước ngoài",
+    "Tổ chức (không bao gồm doanh nghiệp",
+    "HTX)",
+    "Doanh nghiệp có vốn đầu tư nước ngoài"
+  ],
+  "submission_methods": [
+    {
+      "code": "IN_PERSON",
+      "label": "Trực tiếp",
+      "processing_time": "30 ngày",
+      "fee": null,
+      "description": "- Trong thời hạn 30 ngày kể từ ngày nhận được báo cáo quyết toán quý trước của cơ sở khám bệnh, chữa bệnh, cơ quan bảo hiểm xã hội có trách nhiệm thông báo kết quả giám định và số quyết toán chi phí khám bệnh, chữa bệnh bảo hiểm y tế."
+    },
+    {
+      "code": "IN_PERSON",
+      "label": "Trực tiếp",
+      "processing_time": "10 ngày",
+      "fee": null,
+      "description": "- Trong thời hạn 10 ngày kể từ ngày thông báo số quyết toán chi phí khám bệnh, chữa bệnh bảo hiểm y tế, cơ quan bảo hiểm xã hội phải hoàn thành việc thanh toán với cơ sở khám bệnh, chữa bệnh."
+    },
+    {
+      "code": "ONLINE",
+      "label": "Trực tuyến",
+      "processing_time": "30 ngày",
+      "fee": null,
+      "description": "- Trong thời hạn 30 ngày kể từ ngày nhận được báo cáo quyết toán quý trước của cơ sở khám bệnh, chữa bệnh, cơ quan bảo hiểm xã hội có trách nhiệm thông báo kết quả giám định và số quyết toán chi phí khám bệnh, chữa bệnh bảo hiểm y tế."
+    },
+    {
+      "code": "ONLINE",
+      "label": "Trực tuyến",
+      "processing_time": "10 ngày",
+      "fee": null,
+      "description": "- Trong thời hạn 10 ngày kể từ ngày thông báo số quyết toán chi phí khám bệnh, chữa bệnh bảo hiểm y tế, cơ quan bảo hiểm xã hội phải hoàn thành việc thanh toán với cơ sở khám bệnh, chữa bệnh."
+    }
+  ],
+  "processing_note": "Thời gian xử lý tham chiếu: 30 ngày. Nên xác định rõ đối tượng tham gia, quyền lợi hoặc nhu cầu điều chỉnh hồ sơ y tế trước khi nộp. Có thể chọn kênh nộp phù hợp: Trực tiếp, Trực tuyến. Hiện có khoảng 11 mục giấy tờ cần theo dõi trong checklist.",
+  "documents": {
+    "normally_required": [
+      {
+        "name": "Văn bản thông báo về việc nhận chuyển giao kỹ thuật",
+        "quantity": "1 bản chính, 0 bản sao",
+        "notes": [],
+        "group": "Trường hợp chuyển giao kỹ thuật",
+        "attachment_path": null
+      },
+      {
+        "name": "Phiếu chuyển dịch vụ cận lâm sàng theo Mẫu số 9 Phụ lục ban hành kèm theo Nghị định số 188/2025/NĐ-CP",
+        "quantity": "1 bản chính, 0 bản sao",
+        "notes": [],
+        "group": "Trường hợp chuyển người bệnh hoặc mẫu bệnh phẩm đến cơ sở khác đủ điều kiện để thực hiện dịch vụ cận lâm sàng",
+        "attachment_path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/3_000499/Phi%E1%BA%BFu%20chuy%E1%BB%83n%20d%E1%BB%8Bch%20v%E1%BB%A5%20c%E1%BA%ADn%20l%C3%A2m%20s%C3%A0ng%20theo%20M%E1%BA%ABu%209%20Ph%E1%BB%A5%20l%E1%BB%A5c%20theo%20N%C4%90%20188.2025.docx"
+      },
+      {
+        "name": "Hợp đồng nguyên tắc giữa cơ sở nơi chuyển người bệnh hoặc mẫu bệnh phẩm với cơ sở thực hiện dịch vụ cận lâm sàng theo quy định tại điểm b khoản 2 Điều 44 của Nghị định số 188/2025/NĐ-CP)",
+        "quantity": "1 bản chính, 0 bản sao",
+        "notes": [],
+        "group": "Trường hợp chuyển người bệnh hoặc mẫu bệnh phẩm đến cơ sở khác đủ điều kiện để thực hiện dịch vụ cận lâm sàng",
+        "attachment_path": null
+      },
+      {
+        "name": "Văn bản giao nhận giữa cơ sở điều chuyển và cơ sở nhận thuốc, thiết bị y tế",
+        "quantity": "1 bản chính, 0 bản sao",
+        "notes": [],
+        "group": "Trường hợp thanh toán chi phí thuốc, thiết bị y tế được điều chuyển giữa các cơ sở khám bệnh, chữa bệnh bảo hiểm y tế",
+        "attachment_path": null
+      },
+      {
+        "name": "Văn bản thông báo về việc thực hiện hoạt động khám bệnh, chữa bệnh ngoài giờ hành chính hoặc vào ngày nghỉ, ngày lễ",
+        "quantity": "1 bản chính, 0 bản sao",
+        "notes": [],
+        "group": "Trường hợp tổ chức khám bệnh, chữa bệnh bảo hiểm y tế ngoài giờ hành chính hoặc vào ngày nghỉ, ngày lễ",
+        "attachment_path": null
+      },
+      {
+        "name": "Báo cáo Quyết toán chi phí khám bệnh, chữa bệnh bảo hiểm y tế của Quý trước",
+        "quantity": "1 bản chính, 0 bản sao",
+        "notes": [],
+        "group": "Việc thanh toán, quyết toán giữa cơ sở khám bệnh, chữa bệnh và cơ quan bảo hiểm xã hội gồm",
+        "attachment_path": null
+      },
+      {
+        "name": "Bản tổng hợp đề nghị thanh toán chi phí khám bệnh, chữa bệnh bảo hiểm y tế của tháng trước",
+        "quantity": "1 bản chính, 0 bản sao",
+        "notes": [],
+        "group": "Việc thanh toán, quyết toán giữa cơ sở khám bệnh, chữa bệnh và cơ quan bảo hiểm xã hội gồm",
+        "attachment_path": null
+      },
+      {
+        "name": "Báo cáo Quyết toán chi phí khám bệnh, chữa bệnh bảo hiểm y tế của Quý trước.",
+        "quantity": "1 bản chính, 0 bản sao",
+        "notes": [],
+        "group": "Việc tạm ứng kinh phí của cơ quan bảo hiểm xã hội cho cơ sở khám bệnh, chữa bệnh bảo hiểm y tế gồm",
+        "attachment_path": null
+      }
+    ],
+    "conditional": [
+      {
+        "condition": "Danh sách các dịch vụ cận lâm sàng đã thực hiện chuyển đến cơ sở thực hiện dịch vụ cận lâm sàng (Đối với trường hợp dịch vụ cận lâm sàng được cơ quan nhà nước có thẩm quyền phê duyệt theo quy định tại điểm a khoản 2 Điều 44 của Nghị định số 188/2025/NĐ-CP)",
+        "document": "Danh sách các dịch vụ cận lâm sàng đã thực hiện chuyển đến cơ sở thực hiện dịch vụ cận lâm sàng (Đối với trường hợp dịch vụ cận lâm sàng được cơ quan nhà nước có thẩm quyền phê duyệt theo quy định tại điểm a khoản 2 Điều 44 của Nghị định số 188/2025/NĐ-CP)",
+        "quantity": "1 bản chính, 0 bản sao",
+        "notes": [],
+        "attachment_path": null
+      },
+      {
+        "condition": "Văn bản cung ứng thuốc từ nhà cung cấp, phụ lục hợp đồng, biên bản xác nhận nhà thầu không cung cấp thuốc (nếu có).",
+        "document": "Văn bản cung ứng thuốc từ nhà cung cấp, phụ lục hợp đồng, biên bản xác nhận nhà thầu không cung cấp thuốc (nếu có).",
+        "quantity": "1 bản chính, 0 bản sao",
+        "notes": [],
+        "attachment_path": null
+      },
+      {
+        "condition": "Báo cáo chi phí khám bệnh, chữa bệnh của tháng trước (Đối với trường hợp lần đầu ký hợp đồng khám bệnh, chữa bệnh bảo hiểm y tế)",
+        "document": "Báo cáo chi phí khám bệnh, chữa bệnh của tháng trước (Đối với trường hợp lần đầu ký hợp đồng khám bệnh, chữa bệnh bảo hiểm y tế)",
+        "quantity": "1 bản chính, 0 bản sao",
+        "notes": [],
+        "attachment_path": null
+      }
+    ],
+    "forms": [
+      {
+        "name": "Phiếu chuyển dịch vụ cận lâm sàng theo Mẫu số 9 Phụ lục ban hành kèm theo Nghị định số 188/2025/NĐ-CP",
+        "attachment_label": "Phiếu chuyển dịch vụ cận lâm sàng theo Mẫu 9 Phụ lục theo NĐ 188.2025.docx",
+        "attachment_path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/3_000499/Phi%E1%BA%BFu%20chuy%E1%BB%83n%20d%E1%BB%8Bch%20v%E1%BB%A5%20c%E1%BA%ADn%20l%C3%A2m%20s%C3%A0ng%20theo%20M%E1%BA%ABu%209%20Ph%E1%BB%A5%20l%E1%BB%A5c%20theo%20N%C4%90%20188.2025.docx"
+      }
+    ],
+    "presented": [],
+    "notes": [
+      "Bản chụp của đề án, hợp đồng chuyển giao hoặc văn bản phê duyệt của cấp có thẩm quyền đối với các kỹ thuật loại đặc biệt"
+    ],
+    "summary": [
+      {
+        "group": "Trường hợp chuyển giao kỹ thuật",
+        "name": "Văn bản thông báo về việc nhận chuyển giao kỹ thuật",
+        "quantity": "1 bản chính, 0 bản sao",
+        "notes": [],
+        "attachment_path": null
+      },
+      {
+        "group": "Trường hợp chuyển người bệnh hoặc mẫu bệnh phẩm đến cơ sở khác đủ điều kiện để thực hiện dịch vụ cận lâm sàng",
+        "name": "Phiếu chuyển dịch vụ cận lâm sàng theo Mẫu số 9 Phụ lục ban hành kèm theo Nghị định số 188/2025/NĐ-CP",
+        "quantity": "1 bản chính, 0 bản sao",
+        "notes": [],
+        "attachment_path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/3_000499/Phi%E1%BA%BFu%20chuy%E1%BB%83n%20d%E1%BB%8Bch%20v%E1%BB%A5%20c%E1%BA%ADn%20l%C3%A2m%20s%C3%A0ng%20theo%20M%E1%BA%ABu%209%20Ph%E1%BB%A5%20l%E1%BB%A5c%20theo%20N%C4%90%20188.2025.docx"
+      },
+      {
+        "group": "Trường hợp chuyển người bệnh hoặc mẫu bệnh phẩm đến cơ sở khác đủ điều kiện để thực hiện dịch vụ cận lâm sàng",
+        "name": "Hợp đồng nguyên tắc giữa cơ sở nơi chuyển người bệnh hoặc mẫu bệnh phẩm với cơ sở thực hiện dịch vụ cận lâm sàng theo quy định tại điểm b khoản 2 Điều 44 của Nghị định số 188/2025/NĐ-CP)",
+        "quantity": "1 bản chính, 0 bản sao",
+        "notes": [],
+        "attachment_path": null
+      },
+      {
+        "group": "Trường hợp thanh toán chi phí thuốc, thiết bị y tế được điều chuyển giữa các cơ sở khám bệnh, chữa bệnh bảo hiểm y tế",
+        "name": "Văn bản giao nhận giữa cơ sở điều chuyển và cơ sở nhận thuốc, thiết bị y tế",
+        "quantity": "1 bản chính, 0 bản sao",
+        "notes": [],
+        "attachment_path": null
+      },
+      {
+        "group": "Trường hợp tổ chức khám bệnh, chữa bệnh bảo hiểm y tế ngoài giờ hành chính hoặc vào ngày nghỉ, ngày lễ",
+        "name": "Văn bản thông báo về việc thực hiện hoạt động khám bệnh, chữa bệnh ngoài giờ hành chính hoặc vào ngày nghỉ, ngày lễ",
+        "quantity": "1 bản chính, 0 bản sao",
+        "notes": [],
+        "attachment_path": null
+      },
+      {
+        "group": "Việc thanh toán, quyết toán giữa cơ sở khám bệnh, chữa bệnh và cơ quan bảo hiểm xã hội gồm",
+        "name": "Báo cáo Quyết toán chi phí khám bệnh, chữa bệnh bảo hiểm y tế của Quý trước",
+        "quantity": "1 bản chính, 0 bản sao",
+        "notes": [],
+        "attachment_path": null
+      },
+      {
+        "group": "Việc thanh toán, quyết toán giữa cơ sở khám bệnh, chữa bệnh và cơ quan bảo hiểm xã hội gồm",
+        "name": "Bản tổng hợp đề nghị thanh toán chi phí khám bệnh, chữa bệnh bảo hiểm y tế của tháng trước",
+        "quantity": "1 bản chính, 0 bản sao",
+        "notes": [],
+        "attachment_path": null
+      },
+      {
+        "group": "Việc tạm ứng kinh phí của cơ quan bảo hiểm xã hội cho cơ sở khám bệnh, chữa bệnh bảo hiểm y tế gồm",
+        "name": "Báo cáo Quyết toán chi phí khám bệnh, chữa bệnh bảo hiểm y tế của Quý trước.",
+        "quantity": "1 bản chính, 0 bản sao",
+        "notes": [],
+        "attachment_path": null
+      },
+      {
+        "group": null,
+        "name": null,
+        "quantity": "1 bản chính, 0 bản sao",
+        "notes": [],
+        "attachment_path": null
+      },
+      {
+        "group": null,
+        "name": null,
+        "quantity": "1 bản chính, 0 bản sao",
+        "notes": [],
+        "attachment_path": null
+      },
+      {
+        "group": null,
+        "name": null,
+        "quantity": "1 bản chính, 0 bản sao",
+        "notes": [],
+        "attachment_path": null
+      },
+      {
+        "group": null,
+        "name": "Phiếu chuyển dịch vụ cận lâm sàng theo Mẫu số 9 Phụ lục ban hành kèm theo Nghị định số 188/2025/NĐ-CP",
+        "quantity": null,
+        "notes": null,
+        "attachment_path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/3_000499/Phi%E1%BA%BFu%20chuy%E1%BB%83n%20d%E1%BB%8Bch%20v%E1%BB%A5%20c%E1%BA%ADn%20l%C3%A2m%20s%C3%A0ng%20theo%20M%E1%BA%ABu%209%20Ph%E1%BB%A5%20l%E1%BB%A5c%20theo%20N%C4%90%20188.2025.docx"
+      }
+    ]
+  },
+  "steps": [
+    {
+      "order": 1,
+      "title": "Bước 1",
+      "description": "1. **Trình tự tạm ứng kinh phí của cơ quan bảo hiểm xã hội cho cơ sở khám bệnh, chữa bệnh bảo hiểm y tế được thực hiện hằng quý như sau** + Trong thời hạn 05 ngày làm việc kể từ ngày nhận được báo cáo quyết toán quý trước của cơ sở khám bệnh, chữa bệnh, cơ quan bảo hiểm xã hội tạm ứng một lần bằng 90% chi phí khám bệnh, chữa bệnh bảo hiểm y tế theo báo cáo quyết toán quý trước của cơ sở khám bệnh, chữa bệnh; + Đối với cơ sở khám bệnh, chữa bệnh lần đầu ký hợp đồng khám bệnh, chữa bệnh bảo hiểm y tế, căn cứ chi phí khám bệnh, chữa bệnh của tháng trước khi ký hợp đồng khám bệnh, chữa bệnh bảo hiểm y tế, cơ quan bảo hiểm xã hội tạm ứng 90% kinh phí khám bệnh, chữa bệnh bảo hiểm y tế cho tháng đầu tiên thực hiện hợp đồng; sau một tháng thực hiện hợp đồng, cơ quan bảo hiểm xã hội dự kiến và tạm ứng 90% kinh phí khám bệnh, chữa bệnh bảo hiểm y tế trong quý theo quy định tại điểm a khoản 1 Điều 32 của Luật Bảo hiểm y tế. 2. **Trình tự thanh toán, quyết toán giữa cơ sở khám bệnh, chữa bệnh và cơ quan bảo hiểm xã hội được thực hiện như sau**",
+      "example": "05 ngày làm việc"
+    },
+    {
+      "order": 2,
+      "title": "Bước 1:",
+      "description": "Bước 1: Trong thời hạn 15 ngày đầu mỗi tháng, cơ sở khám bệnh, chữa bệnh bảo hiểm y tế có trách nhiệm gửi bản tổng hợp đề nghị thanh toán chi phí khám bệnh, chữa bệnh bảo hiểm y tế của tháng trước cho cơ quan bảo hiểm xã hội; trong thời hạn 15 ngày đầu mỗi quý, cơ sở khám bệnh, chữa bệnh bảo hiểm y tế có trách nhiệm gửi báo cáo quyết toán chi phí khám bệnh, chữa bệnh bảo hiểm y tế của quý trước cho cơ quan bảo hiểm xã hội.",
+      "example": "15 ngày"
+    },
+    {
+      "order": 3,
+      "title": "Bước 2:",
+      "description": "Bước 2: Trong thời hạn 30 ngày kể từ ngày nhận được báo cáo quyết toán quý trước của cơ sở khám bệnh, chữa bệnh, cơ quan bảo hiểm xã hội có trách nhiệm thông báo kết quả giám định và số quyết toán chi phí khám bệnh, chữa bệnh bảo hiểm y tế, bao gồm chi phí khám bệnh, chữa bệnh thực tế trong phạm vi quyền lợi và mức hưởng bảo hiểm y tế với cơ sở khám bệnh, chữa bệnh. Đối với quý 4 trong năm, thời hạn thông báo kết quả giám định và số quyết toán chi phí khám bệnh, chữa bệnh bảo hiểm y tế không quá 60 ngày, kể từ ngày cơ quan bảo hiểm xã hội nhận được báo cáo quyết toán quý 4 của cơ sở khám bệnh, chữa bệnh.",
+      "example": "30 ngày"
+    },
+    {
+      "order": 4,
+      "title": "Bước 3:",
+      "description": "Bước 3: Trong thời hạn 10 ngày kể từ ngày thông báo số quyết toán chi phí khám bệnh, chữa bệnh bảo hiểm y tế, cơ quan bảo hiểm xã hội phải hoàn thành việc thanh toán với cơ sở khám bệnh, chữa bệnh. 3. **Trường hợp thanh toán chi phí thuốc, thiết bị y tế được điều chuyển giữa các cơ sở khám bệnh, chữa bệnh bảo hiểm y tế**",
+      "example": "10 ngày"
+    },
+    {
+      "order": 5,
+      "title": "Bước 1:",
+      "description": "Bước 1: Cơ sở khám bệnh, chữa bệnh có trách nhiệm thông báo về việc điều chuyển thuốc, thiết bị y tế và các khoản chi phí mà người bệnh bảo hiểm y tế phải chi trả trong trường hợp người bệnh phải trả thêm chi phí ngoài chi phí cùng chi trả theo quy định",
+      "example": null
+    },
+    {
+      "order": 6,
+      "title": "Bước 2:",
+      "description": "Bước 2: Cơ sở điều chuyển thuốc, thiết bị y tế và cơ sở nhận thuốc, thiết bị y tế có văn bản giao nhận;",
+      "example": null
+    },
+    {
+      "order": 7,
+      "title": "Bước 3:",
+      "description": "Bước 3: Quỹ bảo hiểm y tế thanh toán chi phí thuốc, thiết bị y tế trong phạm vi quyền lợi và mức hưởng của người tham gia bảo hiểm y tế theo quy định cho cơ sở khám bệnh, chữa bệnh nơi nhận theo giá thanh toán bảo hiểm y tế của cơ sở khám bệnh, chữa bệnh nơi chuyển thuốc, thiết bị y tế. Các chi phí khác do người bệnh thanh toán cho cơ sở khám bệnh, chữa bệnh nơi điều trị;",
+      "example": null
+    },
+    {
+      "order": 8,
+      "title": "Bước 4:",
+      "description": "Bước 4: Cơ sở khám bệnh, chữa bệnh nhận thuốc, thiết bị y tế có trách nhiệm thanh toán chi phí thuốc, thiết bị y tế cho cơ sở khám bệnh, chữa bệnh nơi điều chuyển. Cơ sở khám bệnh, chữa bệnh nơi điều trị cho người bệnh tổng hợp phần chi phí thuốc, thiết bị y tế thuộc phạm vi thanh toán của quỹ bảo hiểm y tế vào chi phí khám bệnh, chữa bệnh của người bệnh để thanh toán với cơ quan bảo hiểm xã hội. 4. **Trường hợp chuyển người bệnh hoặc mẫu bệnh phẩm đến cơ sở khác đủ điều kiện để thực hiện dịch vụ cận lâm sàng**",
+      "example": null
+    },
+    {
+      "order": 9,
+      "title": "Bước 1:",
+      "description": "Bước 1: Cơ sở khám bệnh, chữa bệnh nơi chuyển người bệnh hoặc mẫu bệnh phẩm điền thông tin vào Mẫu số 9 Phụ lục ban hành kèm theo Nghị định số 188/2025/NĐ-CP để gửi kèm trong quá trình chuyển người bệnh hoặc mẫu bệnh phẩm đến cơ sở thực hiện dịch vụ cận lâm sàng.",
+      "example": null
+    },
+    {
+      "order": 10,
+      "title": "Bước 2:",
+      "description": "Bước 2: + Cơ sở khám bệnh, chữa bệnh nơi chuyển người bệnh hoặc mẫu bệnh phẩm gửi danh sách các dịch vụ cận lâm sàng đã thực hiện chuyển đến cơ sở thực hiện dịch vụ cận lâm sàng cho cơ quan bảo hiểm xã hội nơi ký hợp đồng khám bệnh, chữa bệnh bảo hiểm y tế để làm căn cứ thanh toán. (Đối với dịch vụ cận lâm sàng được cơ quan nhà nước có thẩm quyền phê duyệt cho cơ sở khám bệnh, chữa bệnh theo quy định tại điểm a khoản 2 Điều 44 của Nghị định số 188/2025/NĐ-CP) + Cơ sở khám bệnh, chữa bệnh bảo hiểm y tế nơi chuyển người bệnh hoặc mẫu bệnh phẩm gửi danh sách các dịch vụ cận lâm sàng cần chuyển và hợp đồng nguyên tắc đến cơ quan bảo hiểm xã hội nơi ký hợp đồng khám bệnh, chữa bệnh bảo hiểm y tế trước khi thực hiện. (Đối với dịch vụ cận lâm sàng chưa được cơ quan nhà nước có thẩm quyền phê duyệt theo quy định tại điểm b khoản 2 Điều 44 của Nghị định số 188/2025/NĐ-CP)",
+      "example": null
+    },
+    {
+      "order": 11,
+      "title": "Bước 3:",
+      "description": "Bước 3: Cơ sở khám bệnh, chữa bệnh chuyển người bệnh hoặc mẫu bệnh phẩm có trách nhiệm thanh toán chi phí cho cơ sở khám bệnh, chữa bệnh hoặc đơn vị thực hiện dịch vụ, đồng thời tổng hợp chi phí dịch vụ cận lâm sàng vào chi phí khám bệnh, chữa bệnh của người bệnh để thanh toán với cơ quan bảo hiểm xã hội 5. **Trường hợp chuyển giao kỹ thuật**",
+      "example": null
+    },
+    {
+      "order": 12,
+      "title": "Bước 1:",
+      "description": "Bước 1: Cơ sở khám bệnh, chữa bệnh nhận chuyển giao kỹ thuật có trách nhiệm thông báo bằng văn bản cho cơ quan bảo hiểm xã hội ký hợp đồng khám bệnh, chữa bệnh bảo hiểm y tế về các dịch vụ khám bệnh, chữa bệnh được thực hiện theo đề án, hợp đồng chuyển giao, văn bản phê duyệt của cấp có thẩm quyền đối với các kỹ thuật loại đặc biệt.",
+      "example": null
+    },
+    {
+      "order": 13,
+      "title": "Bước 2:",
+      "description": "Bước 2: Quỹ bảo hiểm y tế thanh toán theo số lượng dịch vụ khám bệnh, chữa bệnh trong đề án, hợp đồng; chuyển giao hoặc văn bản phê duyệt của cấp có thẩm quyền đối với các kỹ thuật loại đặc biệt. 6. **Trường hợp tổ chức khám bệnh, chữa bệnh bảo hiểm y tế ngoài giờ hành chính hoặc vào ngày nghỉ, ngày lễ**",
+      "example": null
+    },
+    {
+      "order": 14,
+      "title": "Bước 1:",
+      "description": "Bước 1: Cơ sở khám bệnh, chữa bệnh thông báo bằng văn bản cho cơ quan quản lý nhà nước về y tế trên địa bàn và cơ quan bảo hiểm xã hội nơi ký hợp đồng khám bệnh, chữa bệnh bảo hiểm y tế ít nhất 03 ngày làm việc trước khi thực hiện hoạt động khám bệnh, chữa bệnh ngoài giờ hành chính hoặc vào ngày nghỉ, ngày lễ.",
+      "example": "03 ngày làm việc"
+    },
+    {
+      "order": 15,
+      "title": "Bước 2:",
+      "description": "Bước 2: Quỹ bảo hiểm y tế thanh toán chi phí khám bệnh, chữa bệnh cho cơ sở khám bệnh, chữa bệnh theo quy định",
+      "example": null
+    }
+  ],
+  "input_fields": [
+    {
+      "field": "request_subject",
+      "label": "Đối tượng làm thủ tục",
+      "type": "string",
+      "required": true
+    },
+    {
+      "field": "insurance_or_medical_need",
+      "label": "Nhu cầu bảo hiểm hoặc y tế",
+      "type": "string",
+      "required": true
+    },
+    {
+      "field": "submission_channel_preference",
+      "label": "Kênh nộp dự kiến",
+      "type": "enum",
+      "required": false,
+      "options": [
+        "Trực tiếp",
+        "Trực tuyến"
+      ]
+    },
+    {
+      "field": "has_insurance_number",
+      "label": "Đã có mã BHXH/BHYT",
+      "type": "boolean",
+      "required": false
+    }
+  ],
+  "validation_rules": [
+    {
+      "id": "required-1",
+      "severity": "error",
+      "field": "request_subject",
+      "rule": "Trường bắt buộc phải có dữ liệu hợp lệ trước khi nộp.",
+      "message": "Thiếu trường bắt buộc: Đối tượng làm thủ tục."
+    },
+    {
+      "id": "required-2",
+      "severity": "error",
+      "field": "insurance_or_medical_need",
+      "rule": "Trường bắt buộc phải có dữ liệu hợp lệ trước khi nộp.",
+      "message": "Thiếu trường bắt buộc: Nhu cầu bảo hiểm hoặc y tế."
+    },
+    {
+      "id": "hint-1",
+      "severity": "warning",
+      "field": "general",
+      "rule": "Nên xác định trước kênh nộp hồ sơ để biết có cần bản giấy, bản điện tử hay xuất trình trực tiếp.",
+      "message": "Nên xác định trước kênh nộp hồ sơ để biết có cần bản giấy, bản điện tử hay xuất trình trực tiếp."
+    },
+    {
+      "id": "hint-2",
+      "severity": "warning",
+      "field": "general",
+      "rule": "Có mẫu biểu đính kèm, nên kiểm tra đúng biểu mẫu trước khi nộp.",
+      "message": "Có mẫu biểu đính kèm, nên kiểm tra đúng biểu mẫu trước khi nộp."
+    },
+    {
+      "id": "hint-3",
+      "severity": "warning",
+      "field": "general",
+      "rule": "Nên xác định đúng nhóm đối tượng, mã số bảo hiểm và quyền lợi áp dụng trước khi nộp.",
+      "message": "Nên xác định đúng nhóm đối tượng, mã số bảo hiểm và quyền lợi áp dụng trước khi nộp."
+    }
+  ],
+  "common_errors": [
+    {
+      "field": "general",
+      "issue": "Điền sai mẫu tờ khai hoặc chọn sai biểu mẫu đi kèm.",
+      "fix": "Nên xác định trước kênh nộp hồ sơ để biết có cần bản giấy, bản điện tử hay xuất trình trực tiếp."
+    },
+    {
+      "field": "general",
+      "issue": "Sai nhóm đối tượng tham gia hoặc thông tin quyền lợi bảo hiểm y tế.",
+      "fix": "Nên xác định trước kênh nộp hồ sơ để biết có cần bản giấy, bản điện tử hay xuất trình trực tiếp."
+    }
+  ],
+  "clarifying_questions": [
+    {
+      "id": "clarify_1",
+      "question": "Bạn đang muốn đăng ký, điều chỉnh hay xác nhận quyền lợi y tế hoặc bảo hiểm nào?",
+      "purpose": "workflow_intake"
+    },
+    {
+      "id": "clarify_2",
+      "question": "Bạn đã có mã BHXH/BHYT hoặc thông tin đơn vị tiếp nhận liên quan chưa?",
+      "purpose": "workflow_intake"
+    }
+  ],
+  "legal_basis": [
+    {
+      "title": "Nghị định quy định chi tiết và hướng dẫn thi hành một số điều của Luật Bảo hiểm y tế (188/2025/NĐ-CP ngày 01/7/2025)",
+      "code": "188/2025/NĐ-CP"
+    },
+    {
+      "title": "46/2014/QH13 Sửa đổi, bổ sung một số điều của Luật Bảo hiểm y tế",
+      "code": "Luật 46/2014/QH13"
+    },
+    {
+      "title": "Luật 25/2008/QH12 - Bảo hiểm y tế",
+      "code": "25/2008/QH12"
+    },
+    {
+      "title": "Luật số 51/2024/QH15 ngày 27/11/2024 của Quốc hội sửa đổi, bổ sung một số điều của Luật Bảo hiểm y tế",
+      "code": "51/2024/QH15"
+    }
+  ],
+  "legal_bases": [
+    {
+      "title": "Nghị định quy định chi tiết và hướng dẫn thi hành một số điều của Luật Bảo hiểm y tế (188/2025/NĐ-CP ngày 01/7/2025)",
+      "code": "188/2025/NĐ-CP"
+    },
+    {
+      "title": "46/2014/QH13 Sửa đổi, bổ sung một số điều của Luật Bảo hiểm y tế",
+      "code": "Luật 46/2014/QH13"
+    },
+    {
+      "title": "Luật 25/2008/QH12 - Bảo hiểm y tế",
+      "code": "25/2008/QH12"
+    },
+    {
+      "title": "Luật số 51/2024/QH15 ngày 27/11/2024 của Quốc hội sửa đổi, bổ sung một số điều của Luật Bảo hiểm y tế",
+      "code": "51/2024/QH15"
+    }
+  ],
+  "faq": [
+    {
+      "question": "Có thể nộp qua kênh nào?",
+      "answer": "Các kênh hiện có: Trực tiếp, Trực tuyến."
+    },
+    {
+      "question": "Thời gian xử lý tham chiếu là bao lâu?",
+      "answer": "Thời gian xử lý tham chiếu hiện có là 30 ngày."
+    },
+    {
+      "question": "Kết quả chính của thủ tục là gì?",
+      "answer": "Kết quả chính được trích xuất là Cơ sở khám bệnh , chữa bệnh nhận được chi phí khám, chữa bệnh bảo hiểm y tế theo thông báo số quyết toán của cơ quan bảo hiểm xã hội."
+    }
+  ],
+  "guidance": {
+    "highlight_documents": [
+      {
+        "bucket": "required",
+        "name": "Văn bản thông báo về việc nhận chuyển giao kỹ thuật",
+        "conditions": [],
+        "attachment_path": null
+      },
+      {
+        "bucket": "required",
+        "name": "Phiếu chuyển dịch vụ cận lâm sàng theo Mẫu số 9 Phụ lục ban hành kèm theo Nghị định số 188/2025/NĐ-CP",
+        "conditions": [],
+        "attachment_path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/3_000499/Phi%E1%BA%BFu%20chuy%E1%BB%83n%20d%E1%BB%8Bch%20v%E1%BB%A5%20c%E1%BA%ADn%20l%C3%A2m%20s%C3%A0ng%20theo%20M%E1%BA%ABu%209%20Ph%E1%BB%A5%20l%E1%BB%A5c%20theo%20N%C4%90%20188.2025.docx"
+      },
+      {
+        "bucket": "required",
+        "name": "Hợp đồng nguyên tắc giữa cơ sở nơi chuyển người bệnh hoặc mẫu bệnh phẩm với cơ sở thực hiện dịch vụ cận lâm sàng theo quy định tại điểm b khoản 2 Điều 44 của Nghị định số 188/2025/NĐ-CP)",
+        "conditions": [],
+        "attachment_path": null
+      },
+      {
+        "bucket": "required",
+        "name": "Văn bản giao nhận giữa cơ sở điều chuyển và cơ sở nhận thuốc, thiết bị y tế",
+        "conditions": [],
+        "attachment_path": null
+      },
+      {
+        "bucket": "required",
+        "name": "Văn bản thông báo về việc thực hiện hoạt động khám bệnh, chữa bệnh ngoài giờ hành chính hoặc vào ngày nghỉ, ngày lễ",
+        "conditions": [],
+        "attachment_path": null
+      },
+      {
+        "bucket": "required",
+        "name": "Báo cáo Quyết toán chi phí khám bệnh, chữa bệnh bảo hiểm y tế của Quý trước",
+        "conditions": [],
+        "attachment_path": null
+      }
+    ],
+    "special_cases": [
+      "Có thể cần đối chiếu quyền lợi bảo hiểm hoặc tuyến chuyên môn"
+    ],
+    "common_errors": [
+      "Điền sai mẫu tờ khai hoặc chọn sai biểu mẫu đi kèm.",
+      "Sai nhóm đối tượng tham gia hoặc thông tin quyền lợi bảo hiểm y tế."
+    ],
+    "validation_hints": [
+      "Nên xác định trước kênh nộp hồ sơ để biết có cần bản giấy, bản điện tử hay xuất trình trực tiếp.",
+      "Có mẫu biểu đính kèm, nên kiểm tra đúng biểu mẫu trước khi nộp.",
+      "Nên xác định đúng nhóm đối tượng, mã số bảo hiểm và quyền lợi áp dụng trước khi nộp."
+    ]
+  },
+  "next_steps": {
+    "summary": "Nên xác định rõ đối tượng tham gia, quyền lợi hoặc nhu cầu điều chỉnh hồ sơ y tế trước khi nộp. Có thể chọn kênh nộp phù hợp: Trực tiếp, Trực tuyến. Hiện có khoảng 11 mục giấy tờ cần theo dõi trong checklist.",
+    "time_badge": "30 ngày",
+    "result_label": "Cơ sở khám bệnh , chữa bệnh nhận được chi phí khám, chữa bệnh bảo hiểm y tế theo thông báo số quyết toán của cơ quan bảo hiểm xã hội",
+    "primary_channel": "in_person",
+    "channels": [
+      "in_person",
+      "online"
+    ]
+  },
+  "notes": [],
+  "provenance": {
+    "pipeline": "raw->structured->normalized->enriched->ui_api_payload",
+    "normalizer_version": "0.2.0",
+    "enricher_version": "0.2.0",
+    "mapping_notes": "excluded_from_clean_workflow_dataset",
+    "supported_group": true
+  }
+}

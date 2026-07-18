@@ -1,0 +1,363 @@
+{
+  "schema_version": "3.0",
+  "record_type": "public_service_procedure_payload",
+  "id": "procedure-1.005098",
+  "procedure_code": "1.005098",
+  "code": "1.005098",
+  "title": "Xét đặc cách tốt nghiệp trung học phổ thông",
+  "language": "vi",
+  "status": "generated_from_pipeline",
+  "field": "Thi, tuyển sinh",
+  "group_key": "hoc_tap",
+  "workflow_family": "education_study_workflow",
+  "subflow": "tuyen_sinh",
+  "source": {
+    "source_url": "file:///C:/Users/ku060/Downloads/VAIC%20source/data-pipeline/raw_data/1_005098/1_005098_procedure_detail.md",
+    "source_markdown_path": "C:\\Users\\ku060\\Downloads\\VAIC source\\data-pipeline\\raw_data\\1_005098\\1_005098_procedure_detail.md",
+    "normalized_payload_path": "C:\\Users\\ku060\\Downloads\\VAIC source\\data-pipeline\\govease-unified\\data\\normalized_structured\\1_005098_normalized_structured.json",
+    "enriched_payload_path": "C:\\Users\\ku060\\Downloads\\VAIC source\\data-pipeline\\govease-unified\\data\\enriched_structured_priority\\1_005098_enriched_structured.json"
+  },
+  "scope": {
+    "included": "Thủ tục này thuộc nhóm giáo dục và học tập, thường liên quan đến hồ sơ đào tạo, văn bằng hoặc điều kiện học tập của người học. Kết quả thường nhận được là kết quả giải quyết theo thủ tục này. Thời gian xử lý tham khảo: 30 Ngày.",
+    "not_included": []
+  },
+  "agency": {
+    "executing_agency": "Sở Giáo dục và Đào tạo Cơ sở giáo dục",
+    "submission_place": null,
+    "receiving_places": []
+  },
+  "target_users": [],
+  "submission_methods": [
+    {
+      "code": "IN_PERSON",
+      "label": "Trực tiếp",
+      "processing_time": "30 Ngày",
+      "fee": null,
+      "description": "Trong vòng 30 ngày kể từ khi kết thúc buổi thi cuối cùng của kỳ thi, Hội đồng xét công nhận tốt nghiệp trung học phổ thông xem xét, quyết định đặc cách cho thí sinh"
+    }
+  ],
+  "processing_note": "Thời gian xử lý tham chiếu: 30 Ngày. Nên rà trước thông tin người học, cơ sở đào tạo và loại kết quả cần xin xác nhận hoặc cấp lại. Có thể chọn kênh nộp phù hợp: Trực tiếp. Hiện có khoảng 8 mục giấy tờ cần theo dõi trong checklist.",
+  "documents": {
+    "normally_required": [
+      {
+        "name": "Biên bản đề nghị xét đặc cách tốt nghiệp THPT của trường phổ thông nơi đăng ký dự thi",
+        "quantity": "1 bản chính, 0 bản sao",
+        "notes": [],
+        "group": "default",
+        "attachment_path": null
+      },
+      {
+        "name": "Hồ sơ minh chứng về xếp loại học lực, hạnh kiểm ở lớp 12",
+        "quantity": "0 bản chính, 1 bản sao",
+        "notes": [],
+        "group": "default",
+        "attachment_path": null
+      },
+      {
+        "name": "Đối với người học thuộc các đối tượng quy định tại điểm a, b khoản 1... Tên giấy tờ Mẫu đơn,",
+        "quantity": "1 bản chính, 0 bản sao",
+        "notes": [],
+        "group": "default",
+        "attachment_path": "tờ khai Số lượng Đơn đề nghị xét đặc cách của thí sinh (theo mẫu tại Phụ lục V ban hành kèm theo Thông tư số 24/2024/TT-BGDĐT ngày 24/12/2024 của Bộ trưởng Bộ Giáo dục và Đào tạo ban hành Quy chế thi tốt nghiệp trung học phổ thông) MUNNGHXTCCCHTTNGHIPTHPT.docx"
+      },
+      {
+        "name": "Hồ sơ minh chứng về kết quả rèn luyện và học tập ở lớp 12",
+        "quantity": "0 bản chính, 1 bản sao",
+        "notes": [],
+        "group": "default",
+        "attachment_path": null
+      },
+      {
+        "name": "Đối với người học thuộc các đối tượng quy định tại điểm a, b khoản 1... Tên giấy tờ Mẫu đơn, tờ khai Số lượng Minh chứng về việc đạt thành tích xuất sắc trong các giải thi đấu thể thao quốc gia hoặc quốc tế",
+        "quantity": "0 bản chính, 1 bản sao",
+        "notes": [],
+        "group": "default",
+        "attachment_path": null
+      },
+      {
+        "name": "Minh chứng về việc thời gian tổ chức kỳ thi tốt nghiệp trung học phổ thông trùng với thời gian vận động viên tập huấn ở nước ngoài hoặc tham dự thi đấu tại các giải thể thao quốc tế",
+        "quantity": "0 bản chính, 1 bản sao",
+        "notes": [],
+        "group": "default",
+        "attachment_path": null
+      }
+    ],
+    "conditional": [
+      {
+        "condition": "Đối với người học thuộc các đối tượng quy định tại điểm a, b khoản 1... Tên giấy tờ Mẫu đơn, tờ khai Số lượng Hồ sơ nhập viện, ra viện do bệnh viện từ cấp huyện trở lên cấp (nếu bị tai nạn, bị ốm) hoặc xác nhận của Ủy ban nhân dân cấp xã nơi cư trú (nếu có việc đột xuất đặc biệt);",
+        "document": "Đối với người học thuộc các đối tượng quy định tại điểm a, b khoản 1... Tên giấy tờ Mẫu đơn, tờ khai Số lượng Hồ sơ nhập viện, ra viện do bệnh viện từ cấp huyện trở lên cấp (nếu bị tai nạn, bị ốm) hoặc xác nhận của Ủy ban nhân dân cấp xã nơi cư trú (nếu có việc đột xuất đặc biệt);",
+        "quantity": "0 bản chính, 1 bản sao",
+        "notes": [],
+        "attachment_path": null
+      },
+      {
+        "condition": "Hồ sơ nhập viện, ra viện của bệnh viện từ cấp huyện trở lên (nếu bị tai nạn, bị ốm) hoặc xác nhận của Ủy ban nhân dân cấp xã nơi cư trú (nếu có việc đột xuất đặc biệt)",
+        "document": "Hồ sơ nhập viện, ra viện của bệnh viện từ cấp huyện trở lên (nếu bị tai nạn, bị ốm) hoặc xác nhận của Ủy ban nhân dân cấp xã nơi cư trú (nếu có việc đột xuất đặc biệt)",
+        "quantity": "0 bản chính, 1 bản sao",
+        "notes": [],
+        "attachment_path": null
+      }
+    ],
+    "forms": [
+      {
+        "name": "Đối với người học thuộc các đối tượng quy định tại điểm a, b khoản 1... Tên giấy tờ Mẫu đơn,",
+        "attachment_label": "2024 của Bộ trưởng Bộ Giáo dục và Đào tạo ban hành Quy chế thi tốt nghiệp trung học phổ thông) MUNNGHXTCCCHTTNGHIPTHPT.docx",
+        "attachment_path": "tờ khai Số lượng Đơn đề nghị xét đặc cách của thí sinh (theo mẫu tại Phụ lục V ban hành kèm theo Thông tư số 24/2024/TT-BGDĐT ngày 24/12/2024 của Bộ trưởng Bộ Giáo dục và Đào tạo ban hành Quy chế thi tốt nghiệp trung học phổ thông) MUNNGHXTCCCHTTNGHIPTHPT.docx"
+      }
+    ],
+    "presented": [],
+    "notes": [],
+    "summary": [
+      {
+        "group": "default",
+        "name": "Biên bản đề nghị xét đặc cách tốt nghiệp THPT của trường phổ thông nơi đăng ký dự thi",
+        "quantity": "1 bản chính, 0 bản sao",
+        "notes": [],
+        "attachment_path": null
+      },
+      {
+        "group": "default",
+        "name": "Hồ sơ minh chứng về xếp loại học lực, hạnh kiểm ở lớp 12",
+        "quantity": "0 bản chính, 1 bản sao",
+        "notes": [],
+        "attachment_path": null
+      },
+      {
+        "group": "default",
+        "name": "Đối với người học thuộc các đối tượng quy định tại điểm a, b khoản 1... Tên giấy tờ Mẫu đơn,",
+        "quantity": "1 bản chính, 0 bản sao",
+        "notes": [],
+        "attachment_path": "tờ khai Số lượng Đơn đề nghị xét đặc cách của thí sinh (theo mẫu tại Phụ lục V ban hành kèm theo Thông tư số 24/2024/TT-BGDĐT ngày 24/12/2024 của Bộ trưởng Bộ Giáo dục và Đào tạo ban hành Quy chế thi tốt nghiệp trung học phổ thông) MUNNGHXTCCCHTTNGHIPTHPT.docx"
+      },
+      {
+        "group": "default",
+        "name": "Hồ sơ minh chứng về kết quả rèn luyện và học tập ở lớp 12",
+        "quantity": "0 bản chính, 1 bản sao",
+        "notes": [],
+        "attachment_path": null
+      },
+      {
+        "group": "default",
+        "name": "Đối với người học thuộc các đối tượng quy định tại điểm a, b khoản 1... Tên giấy tờ Mẫu đơn, tờ khai Số lượng Minh chứng về việc đạt thành tích xuất sắc trong các giải thi đấu thể thao quốc gia hoặc quốc tế",
+        "quantity": "0 bản chính, 1 bản sao",
+        "notes": [],
+        "attachment_path": null
+      },
+      {
+        "group": "default",
+        "name": "Minh chứng về việc thời gian tổ chức kỳ thi tốt nghiệp trung học phổ thông trùng với thời gian vận động viên tập huấn ở nước ngoài hoặc tham dự thi đấu tại các giải thể thao quốc tế",
+        "quantity": "0 bản chính, 1 bản sao",
+        "notes": [],
+        "attachment_path": null
+      },
+      {
+        "group": null,
+        "name": null,
+        "quantity": "0 bản chính, 1 bản sao",
+        "notes": [],
+        "attachment_path": null
+      },
+      {
+        "group": null,
+        "name": null,
+        "quantity": "0 bản chính, 1 bản sao",
+        "notes": [],
+        "attachment_path": null
+      },
+      {
+        "group": null,
+        "name": "Đối với người học thuộc các đối tượng quy định tại điểm a, b khoản 1... Tên giấy tờ Mẫu đơn,",
+        "quantity": null,
+        "notes": null,
+        "attachment_path": "tờ khai Số lượng Đơn đề nghị xét đặc cách của thí sinh (theo mẫu tại Phụ lục V ban hành kèm theo Thông tư số 24/2024/TT-BGDĐT ngày 24/12/2024 của Bộ trưởng Bộ Giáo dục và Đào tạo ban hành Quy chế thi tốt nghiệp trung học phổ thông) MUNNGHXTCCCHTTNGHIPTHPT.docx"
+      }
+    ]
+  },
+  "steps": [
+    {
+      "order": 1,
+      "title": "a)",
+      "description": "a) Chậm nhất 07 ngày sau buổi thi cuối cùng của kỳ thi, thí sinh phải nộp hồ sơ đặc cách cho Thủ trưởng đơn vị nơi thí sinh đăng ký dự thi. Thủ trưởng đơn vị nơi thí sinh đăng ký dự thi chịu trách nhiệm thu nhận và chuyển giao hồ sơ đặc cách cho Sở Giáo dục và Đào tạo.",
+      "example": "07 ngày"
+    },
+    {
+      "order": 2,
+      "title": "b)",
+      "description": "b) Trong vòng 30 ngày kể từ khi kết thúc buổi thi cuối cùng của kỳ thi, Hội đồng xét công nhận tốt nghiệp trung học phổ thông xem xét, quyết định đặc cách cho thí sinh căn cứ hồ sơ và các quy định tại khoản 1, 2, 3 Điều 40 Quy chế thi tốt nghiệp trung học phổ thông ban hành kèm theo Thông tư số 24/2024/TT-BGDĐT ngày 24/12/2024 của Bộ trưởng Bộ Giáo dục và Đào tạo (sau đây gọi tắt là Quy chế thi tốt nghiệp trung học phổ thông).",
+      "example": "30 ngày"
+    }
+  ],
+  "input_fields": [
+    {
+      "field": "learner_full_name",
+      "label": "Tên người học",
+      "type": "string",
+      "required": true
+    },
+    {
+      "field": "education_record_type",
+      "label": "Loại hồ sơ học tập cần xử lý",
+      "type": "string",
+      "required": true
+    },
+    {
+      "field": "education_institution",
+      "label": "Cơ sở đào tạo liên quan",
+      "type": "string",
+      "required": false
+    },
+    {
+      "field": "submission_channel_preference",
+      "label": "Kênh nộp dự kiến",
+      "type": "enum",
+      "required": false,
+      "options": [
+        "Trực tiếp"
+      ]
+    }
+  ],
+  "validation_rules": [
+    {
+      "id": "required-1",
+      "severity": "error",
+      "field": "learner_full_name",
+      "rule": "Trường bắt buộc phải có dữ liệu hợp lệ trước khi nộp.",
+      "message": "Thiếu trường bắt buộc: Tên người học."
+    },
+    {
+      "id": "required-2",
+      "severity": "error",
+      "field": "education_record_type",
+      "rule": "Trường bắt buộc phải có dữ liệu hợp lệ trước khi nộp.",
+      "message": "Thiếu trường bắt buộc: Loại hồ sơ học tập cần xử lý."
+    },
+    {
+      "id": "hint-1",
+      "severity": "warning",
+      "field": "general",
+      "rule": "Nên xác định trước kênh nộp hồ sơ để biết có cần bản giấy, bản điện tử hay xuất trình trực tiếp.",
+      "message": "Nên xác định trước kênh nộp hồ sơ để biết có cần bản giấy, bản điện tử hay xuất trình trực tiếp."
+    },
+    {
+      "id": "hint-2",
+      "severity": "warning",
+      "field": "general",
+      "rule": "Có mẫu biểu đính kèm, nên kiểm tra đúng biểu mẫu trước khi nộp.",
+      "message": "Có mẫu biểu đính kèm, nên kiểm tra đúng biểu mẫu trước khi nộp."
+    },
+    {
+      "id": "hint-3",
+      "severity": "warning",
+      "field": "general",
+      "rule": "Nên rà lại thông tin người học, cơ sở đào tạo và loại xác nhận hoặc văn bằng cần xin.",
+      "message": "Nên rà lại thông tin người học, cơ sở đào tạo và loại xác nhận hoặc văn bằng cần xin."
+    }
+  ],
+  "common_errors": [
+    {
+      "field": "general",
+      "issue": "Thiếu giấy tờ hợp pháp hóa hoặc giấy tờ nhân thân của phía nước ngoài.",
+      "fix": "Nên xác định trước kênh nộp hồ sơ để biết có cần bản giấy, bản điện tử hay xuất trình trực tiếp."
+    },
+    {
+      "field": "general",
+      "issue": "Điền sai mẫu tờ khai hoặc chọn sai biểu mẫu đi kèm.",
+      "fix": "Nên xác định trước kênh nộp hồ sơ để biết có cần bản giấy, bản điện tử hay xuất trình trực tiếp."
+    }
+  ],
+  "clarifying_questions": [
+    {
+      "id": "clarify_1",
+      "question": "Bạn đang cần xử lý hồ sơ học tập, văn bằng hay xác nhận nào?",
+      "purpose": "workflow_intake"
+    },
+    {
+      "id": "clarify_2",
+      "question": "Người học và cơ sở đào tạo liên quan đã xác định rõ chưa?",
+      "purpose": "workflow_intake"
+    }
+  ],
+  "legal_basis": [],
+  "legal_bases": [],
+  "faq": [
+    {
+      "question": "Có thể nộp qua kênh nào?",
+      "answer": "Các kênh hiện có: Trực tiếp."
+    },
+    {
+      "question": "Thời gian xử lý tham chiếu là bao lâu?",
+      "answer": "Thời gian xử lý tham chiếu hiện có là 30 Ngày."
+    }
+  ],
+  "guidance": {
+    "highlight_documents": [
+      {
+        "bucket": "required",
+        "name": "Biên bản đề nghị xét đặc cách tốt nghiệp THPT của trường phổ thông nơi đăng ký dự thi",
+        "conditions": [],
+        "attachment_path": null
+      },
+      {
+        "bucket": "required",
+        "name": "Hồ sơ minh chứng về xếp loại học lực, hạnh kiểm ở lớp 12",
+        "conditions": [],
+        "attachment_path": null
+      },
+      {
+        "bucket": "required",
+        "name": "Đối với người học thuộc các đối tượng quy định tại điểm a, b khoản 1... Tên giấy tờ Mẫu đơn,",
+        "conditions": [],
+        "attachment_path": "tờ khai Số lượng Đơn đề nghị xét đặc cách của thí sinh (theo mẫu tại Phụ lục V ban hành kèm theo Thông tư số 24/2024/TT-BGDĐT ngày 24/12/2024 của Bộ trưởng Bộ Giáo dục và Đào tạo ban hành Quy chế thi tốt nghiệp trung học phổ thông) MUNNGHXTCCCHTTNGHIPTHPT.docx"
+      },
+      {
+        "bucket": "required",
+        "name": "Hồ sơ minh chứng về kết quả rèn luyện và học tập ở lớp 12",
+        "conditions": [],
+        "attachment_path": null
+      },
+      {
+        "bucket": "required",
+        "name": "Đối với người học thuộc các đối tượng quy định tại điểm a, b khoản 1... Tên giấy tờ Mẫu đơn, tờ khai Số lượng Minh chứng về việc đạt thành tích xuất sắc trong các giải thi đấu thể thao quốc gia hoặc quốc tế",
+        "conditions": [],
+        "attachment_path": null
+      },
+      {
+        "bucket": "required",
+        "name": "Minh chứng về việc thời gian tổ chức kỳ thi tốt nghiệp trung học phổ thông trùng với thời gian vận động viên tập huấn ở nước ngoài hoặc tham dự thi đấu tại các giải thể thao quốc tế",
+        "conditions": [],
+        "attachment_path": null
+      }
+    ],
+    "special_cases": [
+      "Có yếu tố nước ngoài",
+      "Có kiểm tra dữ liệu cư trú/định danh",
+      "Có thể cần xác minh hồ sơ học tập hoặc văn bằng"
+    ],
+    "common_errors": [
+      "Thiếu giấy tờ hợp pháp hóa hoặc giấy tờ nhân thân của phía nước ngoài.",
+      "Điền sai mẫu tờ khai hoặc chọn sai biểu mẫu đi kèm."
+    ],
+    "validation_hints": [
+      "Nên xác định trước kênh nộp hồ sơ để biết có cần bản giấy, bản điện tử hay xuất trình trực tiếp.",
+      "Có mẫu biểu đính kèm, nên kiểm tra đúng biểu mẫu trước khi nộp.",
+      "Nên rà lại thông tin người học, cơ sở đào tạo và loại xác nhận hoặc văn bằng cần xin."
+    ]
+  },
+  "next_steps": {
+    "summary": "Nên rà trước thông tin người học, cơ sở đào tạo và loại kết quả cần xin xác nhận hoặc cấp lại. Có thể chọn kênh nộp phù hợp: Trực tiếp. Hiện có khoảng 8 mục giấy tờ cần theo dõi trong checklist.",
+    "time_badge": "30 Ngày",
+    "result_label": null,
+    "primary_channel": "in_person",
+    "channels": [
+      "in_person"
+    ]
+  },
+  "notes": [],
+  "provenance": {
+    "pipeline": "raw->structured->normalized->enriched->ui_api_payload",
+    "normalizer_version": "0.2.0",
+    "enricher_version": "0.2.0",
+    "mapping_notes": "workflow_generated:hoc_tap/tuyen_sinh",
+    "supported_group": true
+  }
+}

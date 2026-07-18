@@ -1,0 +1,570 @@
+{
+  "schema_version": "3.0",
+  "record_type": "public_service_procedure_payload",
+  "id": "procedure-1.115201",
+  "procedure_code": "1.115201",
+  "code": "1.115201",
+  "title": "Tách thửa hoặc hợp thửa đất",
+  "language": "vi",
+  "status": "generated_from_pipeline",
+  "field": "Đất đai",
+  "group_key": "dien_luc_nha_o_dat_dai",
+  "workflow_family": null,
+  "subflow": null,
+  "source": {
+    "source_url": "file:///C:/Users/ku060/Downloads/VAIC%20source/data-pipeline/raw_data/1_115201/1_115201_procedure_detail.md",
+    "source_markdown_path": "C:\\Users\\ku060\\Downloads\\VAIC source\\data-pipeline\\raw_data\\1_115201\\1_115201_procedure_detail.md",
+    "normalized_payload_path": "C:\\Users\\ku060\\Downloads\\VAIC source\\data-pipeline\\govease-unified\\data\\normalized_structured\\1_115201_normalized_structured.json",
+    "enriched_payload_path": "C:\\Users\\ku060\\Downloads\\VAIC source\\data-pipeline\\govease-unified\\data\\enriched_structured_priority\\1_115201_enriched_structured.json"
+  },
+  "scope": {
+    "included": "Thủ tục này thuộc nhóm nhà ở, đất đai và điện lực, thường cần kiểm tra hiện trạng hồ sơ tài sản hoặc điều kiện hạ tầng liên quan. Kết quả thường nhận được là Giấy chứng nhận. Thời gian xử lý tham khảo: 12 ngày làm việc.",
+    "not_included": []
+  },
+  "agency": {
+    "executing_agency": "Văn phòng Đăng ký Đất đai Thành phố Đồng Nai",
+    "submission_place": null,
+    "receiving_places": []
+  },
+  "target_users": [
+    "Doanh nghiệp có vốn đầu tư nước ngoài",
+    "Doanh nghiệp Việt Nam",
+    "Tổ chức (không bao gồm doanh nghiệp",
+    "HTX)",
+    "Doanh nghiệp",
+    "Tổ chức nước ngoài"
+  ],
+  "submission_methods": [
+    {
+      "code": "IN_PERSON",
+      "label": "Trực tiếp",
+      "processing_time": "12 ngày làm việc",
+      "fee": null,
+      "description": "Đối với các xã miền núi, hải đảo, vùng sâu, vùng xa, vùng có điều kiện kinh tế - xã hội khó khăn, vùng có điều kiện kinh tế - xã hội đặc biệt khó khăn thì thời gian thực hiện không quá 17 ngày làm việc."
+    },
+    {
+      "code": "ONLINE",
+      "label": "Trực tuyến",
+      "processing_time": "12 ngày làm việc",
+      "fee": null,
+      "description": "Đối với các xã miền núi, hải đảo, vùng sâu, vùng xa, vùng có điều kiện kinh tế - xã hội khó khăn, vùng có điều kiện kinh tế - xã hội đặc biệt khó khăn thì thời gian thực hiện không quá 17 ngày làm việc."
+    },
+    {
+      "code": "POSTAL",
+      "label": "Dịch vụ bưu chính",
+      "processing_time": "12 ngày làm việc",
+      "fee": null,
+      "description": "Đối với các xã miền núi, hải đảo, vùng sâu, vùng xa, vùng có điều kiện kinh tế - xã hội khó khăn, vùng có điều kiện kinh tế - xã hội đặc biệt khó khăn thì thời gian thực hiện không quá 17 ngày làm việc."
+    }
+  ],
+  "processing_note": "Thời gian xử lý tham chiếu: 12 ngày làm việc. Nên chuẩn bị trước thông tin thửa đất, tài sản hoặc địa điểm tiếp nhận, rồi chọn kênh nộp phù hợp: Trực tiếp, Trực tuyến, Dịch vụ bưu chính. Hiện có khoảng 6 mục giấy tờ cần theo dõi trong checklist.",
+  "documents": {
+    "normally_required": [
+      {
+        "name": "Mẫu số 29. Đơn đề nghị tách thửa đất, hợp thửa đất theo quy định.",
+        "quantity": "1 bản chính, 0 bản sao",
+        "notes": [],
+        "group": "default",
+        "attachment_path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/1_115201/M%E1%BA%ABu%20s%E1%BB%91%2029-%20%C4%90%C6%A1n%20%C4%91%E1%BB%81%20ngh%E1%BB%8B%20t%C3%A1ch%2C%20h%E1%BB%A3p%20th%E1%BB%ADa%20%C4%91%E1%BA%A5t.docx"
+      },
+      {
+        "name": "Bản vẽ tách thửa đất, hợp thửa đất lập theo quy định.",
+        "quantity": "1 bản chính, 0 bản sao",
+        "notes": [],
+        "group": "default",
+        "attachment_path": null
+      },
+      {
+        "name": "Giấy chứng nhận đã cấp (bản gốc).",
+        "quantity": "1 bản chính, 0 bản sao",
+        "notes": [],
+        "group": "default",
+        "attachment_path": null
+      }
+    ],
+    "conditional": [
+      {
+        "condition": "Các văn bản của cơ quan có thẩm quyền có thể hiện nội dung tách thửa đất, hợp thửa đất (nếu có).",
+        "document": "Các văn bản của cơ quan có thẩm quyền có thể hiện nội dung tách thửa đất, hợp thửa đất (nếu có).",
+        "quantity": "1 bản chính, 0 bản sao",
+        "notes": [],
+        "attachment_path": null
+      },
+      {
+        "condition": "Văn bản cam kết về việc người sử dụng đất liền kề đồng ý cho đi qua để kết nối với đường giao thông công cộng (nếu có).",
+        "document": "Văn bản cam kết về việc người sử dụng đất liền kề đồng ý cho đi qua để kết nối với đường giao thông công cộng (nếu có).",
+        "quantity": "1 bản chính, 0 bản sao",
+        "notes": [],
+        "attachment_path": null
+      },
+      {
+        "condition": "Văn bản về việc đại diện theo quy định của pháp luật về dân sự đối với trường hợp thực hiện thủ tục đăng ký đất đai, tài sản gắn liền với đất thông qua người đại diện (nếu có).",
+        "document": "Văn bản về việc đại diện theo quy định của pháp luật về dân sự đối với trường hợp thực hiện thủ tục đăng ký đất đai, tài sản gắn liền với đất thông qua người đại diện (nếu có).",
+        "quantity": "1 bản chính, 0 bản sao",
+        "notes": [],
+        "attachment_path": null
+      }
+    ],
+    "forms": [
+      {
+        "name": "Mẫu số 29. Đơn đề nghị tách thửa đất, hợp thửa đất theo quy định.",
+        "attachment_label": "Mẫu số 29- Đơn đề nghị tách, hợp thửa đất.docx",
+        "attachment_path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/1_115201/M%E1%BA%ABu%20s%E1%BB%91%2029-%20%C4%90%C6%A1n%20%C4%91%E1%BB%81%20ngh%E1%BB%8B%20t%C3%A1ch%2C%20h%E1%BB%A3p%20th%E1%BB%ADa%20%C4%91%E1%BA%A5t.docx"
+      }
+    ],
+    "presented": [],
+    "notes": [],
+    "summary": [
+      {
+        "group": "default",
+        "name": "Mẫu số 29. Đơn đề nghị tách thửa đất, hợp thửa đất theo quy định.",
+        "quantity": "1 bản chính, 0 bản sao",
+        "notes": [],
+        "attachment_path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/1_115201/M%E1%BA%ABu%20s%E1%BB%91%2029-%20%C4%90%C6%A1n%20%C4%91%E1%BB%81%20ngh%E1%BB%8B%20t%C3%A1ch%2C%20h%E1%BB%A3p%20th%E1%BB%ADa%20%C4%91%E1%BA%A5t.docx"
+      },
+      {
+        "group": "default",
+        "name": "Bản vẽ tách thửa đất, hợp thửa đất lập theo quy định.",
+        "quantity": "1 bản chính, 0 bản sao",
+        "notes": [],
+        "attachment_path": null
+      },
+      {
+        "group": "default",
+        "name": "Giấy chứng nhận đã cấp (bản gốc).",
+        "quantity": "1 bản chính, 0 bản sao",
+        "notes": [],
+        "attachment_path": null
+      },
+      {
+        "group": null,
+        "name": null,
+        "quantity": "1 bản chính, 0 bản sao",
+        "notes": [],
+        "attachment_path": null
+      },
+      {
+        "group": null,
+        "name": null,
+        "quantity": "1 bản chính, 0 bản sao",
+        "notes": [],
+        "attachment_path": null
+      },
+      {
+        "group": null,
+        "name": null,
+        "quantity": "1 bản chính, 0 bản sao",
+        "notes": [],
+        "attachment_path": null
+      },
+      {
+        "group": null,
+        "name": "Mẫu số 29. Đơn đề nghị tách thửa đất, hợp thửa đất theo quy định.",
+        "quantity": null,
+        "notes": null,
+        "attachment_path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/1_115201/M%E1%BA%ABu%20s%E1%BB%91%2029-%20%C4%90%C6%A1n%20%C4%91%E1%BB%81%20ngh%E1%BB%8B%20t%C3%A1ch%2C%20h%E1%BB%A3p%20th%E1%BB%ADa%20%C4%91%E1%BA%A5t.docx"
+      }
+    ]
+  },
+  "steps": [
+    {
+      "order": 1,
+      "title": "Bước 1",
+      "description": "1. **Bước 1: Người yêu cầu đăng ký nộp hồ sơ đến một trong các cơ quan tiếp nhận hồ sơ sau đây:**",
+      "example": null
+    },
+    {
+      "order": 2,
+      "title": "Bước 2",
+      "description": "- Tổ chức trong nước, tổ chức tôn giáo, tổ chức tôn giáo trực thuộc, người gốc Việt Nam định cư ở nước ngoài, tổ chức kinh tế có vốn đầu tư nước ngoài nộp hồ sơ đến Trung tâm Phục vụ hành chính công thành phố.",
+      "example": null
+    },
+    {
+      "order": 3,
+      "title": "Bước 3",
+      "description": "- Cá nhân, cộng đồng dân cư nộp hồ sơ đến Trung tâm Phục vụ hành chính công xã, phường nơi có đất hoặc Trung tâm Phục vụ hành chính công thành phố (đối với các địa bàn phường Biên Hòa; Trấn Biên; Tam Hiệp; Long Bình; Trảng Dài; Hố Nai; Long Hưng; Phước Tân; Tam Phước).",
+      "example": null
+    },
+    {
+      "order": 4,
+      "title": "Bước 4",
+      "description": "- Khi nộp các giấy tờ quy định, người yêu cầu đăng ký được lựa chọn nộp bản sao giấy tờ và xuất trình bản chính để cán bộ tiếp nhận hồ sơ kiểm tra đối chiếu hoặc nộp bản chính giấy tờ hoặc nộp bản sao giấy tờ đã có công chứng hoặc chứng thực theo quy định của pháp luật về công chứng, chứng thực; trường hợp nộp hồ sơ theo hình thức trực tuyến thì hồ sơ nộp phải được số hóa từ bản chính hoặc bản sao giấy tờ đã được công chứng, chứng thực.",
+      "example": "trực tuyến"
+    },
+    {
+      "order": 5,
+      "title": "Bước 5",
+      "description": "- Trường hợp nộp bản sao hoặc bản số hóa các loại giấy tờ thì khi nhận kết quả giải quyết thủ tục hành chính người yêu cầu đăng ký phải nộp bản chính các giấy tờ thuộc thành phần hồ sơ theo quy định.",
+      "example": null
+    },
+    {
+      "order": 6,
+      "title": "Bước 6",
+      "description": "2. **Bước 2: Cơ quan tiếp nhận hồ sơ thực hiện:**",
+      "example": null
+    },
+    {
+      "order": 7,
+      "title": "Bước 7",
+      "description": "- Kiểm tra tính đầy đủ của thành phần hồ sơ; cấp Giấy tiếp nhận hồ sơ và hẹn trả kết quả.",
+      "example": null
+    },
+    {
+      "order": 8,
+      "title": "Bước 8",
+      "description": "- Trường hợp chưa đầy đủ thành phần hồ sơ thì trả hồ sơ kèm Phiếu yêu cầu bổ sung, hoàn thiện hồ sơ để người yêu cầu đăng ký hoàn thiện, bổ sung theo quy định.",
+      "example": null
+    },
+    {
+      "order": 9,
+      "title": "Bước 9",
+      "description": "*Chuyển hồ sơ đến cơ quan có thẩm quyền giải quyết thủ tục hành chính như sau:",
+      "example": null
+    },
+    {
+      "order": 10,
+      "title": "Bước 10",
+      "description": "- Đối với hồ tổ chức trong nước, tổ chức tôn giáo, tổ chức tôn giáo trực thuộc, người gốc Việt Nam định cư ở nước ngoài, tổ chức kinh tế có vốn đầu tư nước ngoài nộp tại Trung tâm Phục vụ hành chính công thành phố: Chuyển hồ sơ đến Văn phòng đăng ký đất đai.",
+      "example": null
+    },
+    {
+      "order": 11,
+      "title": "Bước 11",
+      "description": "- Đối với hồ sơ của cá nhân, cộng đồng dân cư:",
+      "example": null
+    },
+    {
+      "order": 12,
+      "title": "Bước 12",
+      "description": "+ Trường hợp nộp hồ sơ tại Trung tâm Phục vụ hành chính công xã, phường nơi có đất: Chuyển hồ sơ đến Chi nhánh Văn phòng đăng ký đất đai nơi có đất.",
+      "example": null
+    },
+    {
+      "order": 13,
+      "title": "Bước 13",
+      "description": "+ Trường hợp nộp hồ sơ tại Trung tâm Phục vụ hành chính công thành phố: Chuyển hồ sơ đến Văn phòng đăng ký đất đai.",
+      "example": null
+    },
+    {
+      "order": 14,
+      "title": "Bước 14",
+      "description": "- Giấy tiếp nhận hồ sơ và hẹn trả kết quả và Phiếu yêu cầu bổ sung, hoàn thiện hồ sơ thực hiện theo mẫu quy định về thực hiện cơ chế một cửa, một cửa liên thông trong giải quyết thủ tục hành chính.",
+      "example": null
+    },
+    {
+      "order": 15,
+      "title": "Bước 15",
+      "description": "3. **Bước 3: Văn phòng đăng ký đất đai hoặc Chi nhánh Văn phòng đăng ký đất đai nơi có đất thực hiện:**",
+      "example": null
+    },
+    {
+      "order": 16,
+      "title": "Bước 16",
+      "description": "* Trường hợp tách thửa đất, hợp thửa đất mà không thay đổi người sử dụng đất thì Văn phòng đăng ký đất đai, Chi nhánh Văn phòng đăng ký đất đai thực hiện:",
+      "example": null
+    },
+    {
+      "order": 17,
+      "title": "Bước 17",
+      "description": "Kiểm tra hồ sơ; Kiểm tra thông tin về người sử dụng đất, ranh giới, diện tích, loại đất của các thửa đất trên hồ sơ lưu trữ; đối chiếu quy định tại Điều 220 của Luật Đất đai; khoản 3 Điều 11 Nghị quyết số 254/2025/QH15 ngày 10 tháng 11 năm 2025 và theo quy định điều kiện, diện tích tối thiểu của việc tách thửa đất, hợp thửa đất đối với từng loại đất trên địa bàn thành phố Đồng Nai do UBND tỉnh ban hành. Trường hợp hồ sơ không đủ điều kiện tách thửa đất, hợp thửa đất thì trong thời hạn 03 ngày làm việc kể từ ngày nhận đủ hồ sơ, Văn phòng đăng ký đất đai, Chi nhánh Văn phòng đăng ký đất đai trả hồ sơ cho người sử dụng đất và thông báo rõ lý do không đủ điều kiện.",
+      "example": "15 ngày"
+    },
+    {
+      "order": 18,
+      "title": "Bước 18",
+      "description": "Trường hợp hồ sơ đủ điều kiện tách thửa đất, hợp thửa đất nhưng Giấy chứng nhận đã cấp không có sơ đồ thửa đất hoặc có sơ đồ thửa đất nhưng thiếu kích thước các cạnh hoặc diện tích và kích thước các cạnh không thống nhất thì trong thời hạn 03 ngày làm việc kể từ ngày nhận đủ hồ sơ, trả hồ sơ và thông báo rõ lý do không đủ điều kiện cho người sử dụng đất để thực hiện đăng ký biến động đất đai.",
+      "example": "03 ngày làm việc"
+    },
+    {
+      "order": 19,
+      "title": "Bước 19",
+      "description": "Trường hợp hồ sơ đủ điều kiện tách thửa đất, hợp thửa đất Văn phòng đăng ký đất đai, Chi nhánh Văn phòng đăng ký đất đai xác nhận đủ điều kiện tách thửa đất, hợp thửa đất kèm các thông tin thửa đất vào Đơn đề nghị tách thửa đất, hợp thửa đất, đồng thời xác nhận vào Bản vẽ tách thửa đất, hợp thửa đất để hoàn thiện thủ tục đăng ký, cấp Giấy chứng nhận quyền sử dụng đất, quyền sở hữu tài sản gắn liền với đất đối với các thửa đất sau tách thửa, hợp thửa, trừ trường hợp Bản vẽ tách thửa đất, hợp thửa đất do Văn phòng đăng ký đất đai, Chi nhánh Văn phòng đăng ký đất đai thực hiện.",
+      "example": null
+    },
+    {
+      "order": 20,
+      "title": "Bước 20",
+      "description": "Thông tin chính thức của các thửa đất sau tách thửa, hợp thửa chỉ được xác lập và chỉnh lý vào bản đồ địa chính sau khi người sử dụng đất thực hiện đăng ký biến động và được cấp Giấy chứng nhận quyền sử dụng đất, quyền sở hữu tài sản gắn liền với đất cho thửa đất sau tách thửa, hợp thửa.",
+      "example": null
+    },
+    {
+      "order": 21,
+      "title": "Bước 21",
+      "description": "Việc tách thửa đất, hợp thửa đất quy định tại điểm d khoản 1 Điều 220 của Luật Đất đai phải bảo đảm có lối đi kết nối với đường giao thông công cộng hoặc được người sử dụng đất liền kề đồng ý cho đi qua để kết nối với đường giao thông công cộng. Trường hợp người sử dụng đất dành một phần diện tích của thửa đất ở hoặc thửa đất có đất ở và đất khác trong cùng thửa đất để làm lối đi, khi thực hiện việc tách thửa đất hoặc hợp thửa đất thì không bắt buộc thực hiện chuyển mục đích sử dụng đất đối với phần diện tích đất để làm lối đi đó.",
+      "example": null
+    },
+    {
+      "order": 22,
+      "title": "Bước 22",
+      "description": "Trường hợp chuyển mục đích sử dụng một phần thửa đất thì không bắt buộc thực hiện tách thửa. Việc hợp các thửa đất không bắt buộc cùng mục đích sử dụng đất, cùng hình thức trả tiền sử dụng đất, tiền thuê đất, cùng thời hạn sử dụng đất.",
+      "example": null
+    },
+    {
+      "order": 23,
+      "title": "Bước 23",
+      "description": "Trường hợp phân chia quyền sử dụng đất theo bản án, quyết định của Tòa án mà việc phân chia không bảo đảm các điều kiện, diện tích, kích thước tách thửa theo quy định tại Điều 220 của Luật Đất đai; Nghị quyết số 254/2025/QH15 ngày 10 tháng 11 năm 2025 và theo quy định điều kiện, diện tích tối thiểu của việc tách thửa đất, hợp thửa đất đối với từng loại đất trên địa bàn thành phố Đồng Nai do UBND tỉnh ban hành thì không thực hiện tách thửa, trừ trường hợp bản án, quyết định của tòa án có hiệu lực thi hành trước ngày 01 tháng 8 năm 2024.",
+      "example": "15 ngày"
+    },
+    {
+      "order": 24,
+      "title": "Bước 24",
+      "description": "Chỉnh lý, cập nhật biến động vào hồ sơ địa chính, cơ sở dữ liệu đất đai;",
+      "example": null
+    },
+    {
+      "order": 25,
+      "title": "Bước 25",
+      "description": "Cấp Giấy chứng nhận quyền sử dụng đất, quyền sở hữu tài sản gắn liền với đất cho các thửa đất sau khi tách thửa đất, hợp thửa đất; chuyển Giấy chứng nhận quyền sử dụng đất, quyền sở hữu tài sản gắn liền với đất đến cơ quan tiếp nhận hồ sơ trao cho người được cấp.",
+      "example": null
+    },
+    {
+      "order": 26,
+      "title": "Bước 26",
+      "description": "* Trường hợp tách thửa đất, hợp thửa đất mà có thay đổi người sử dụng đất thì thực hiện thủ tục đăng ký biến động đất đai, tài sản gắn liền với đất theo quy định.",
+      "example": null
+    },
+    {
+      "order": 27,
+      "title": "Bước 27",
+      "description": "Kiểm tra hồ sơ; Kiểm tra thông tin về người sử dụng đất, ranh giới, diện tích, loại đất của các thửa đất trên hồ sơ lưu trữ; đối chiếu quy định tại Điều 220 của Luật Đất đai; khoản 3 Điều 11 Nghị quyết số 254/2025/QH15 ngày 10 tháng 11 năm 2025 và theo quy định điều kiện, diện tích tối thiểu của việc tách thửa đất, hợp thửa đất đối với từng loại đất trên địa bàn thành phố Đồng Nai do UBND tỉnh ban hành. Trường hợp hồ sơ không đủ điều kiện tách thửa đất, hợp thửa đất thì trong thời hạn 03 ngày làm việc kể từ ngày nhận đủ hồ sơ, Văn phòng đăng ký đất đai, Chi nhánh Văn phòng đăng ký đất đai trả hồ sơ cho người sử dụng đất và thông báo rõ lý do không đủ điều kiện.",
+      "example": "15 ngày"
+    },
+    {
+      "order": 28,
+      "title": "Bước 28",
+      "description": "Trường hợp hồ sơ đủ điều kiện tách thửa đất, hợp thửa đất nhưng Giấy chứng nhận đã cấp không có sơ đồ thửa đất hoặc có sơ đồ thửa đất nhưng thiếu kích thước các cạnh hoặc diện tích và kích thước các cạnh không thống nhất thì trong thời hạn 03 ngày làm việc kể từ ngày nhận đủ hồ sơ, Văn phòng đăng ký đất đai, Chi nhánh Văn phòng đăng ký đất đai trả hồ sơ và thông báo rõ lý do không đủ điều kiện cho người sử dụng đất để thực hiện đăng ký biến động đất đai.",
+      "example": "03 ngày làm việc"
+    },
+    {
+      "order": 29,
+      "title": "Bước 29",
+      "description": "Trường hợp hồ sơ đủ điều kiện tách thửa đất, hợp thửa đất Văn phòng đăng ký đất đai, Chi nhánh Văn phòng đăng ký đất đai xác nhận đủ điều kiện tách thửa đất, hợp thửa đất kèm các thông tin thửa đất vào Đơn đề nghị tách thửa đất, hợp thửa đất, đồng thời xác nhận vào Bản vẽ tách thửa đất, hợp thửa đất chuyển hồ sơ đến cơ quan tiếp nhận trao cho người sử dụng đất để người sử dụng đất thực hiện thủ tục đăng ký biến động đất đai, tài sản gắn liền với đất theo quy định.",
+      "example": null
+    }
+  ],
+  "input_fields": [
+    {
+      "field": "property_or_service_need",
+      "label": "Nhu cầu về đất đai, nhà ở hoặc điện lực",
+      "type": "string",
+      "required": true
+    },
+    {
+      "field": "property_location",
+      "label": "Địa điểm tài sản hoặc nơi sử dụng dịch vụ",
+      "type": "string",
+      "required": true
+    },
+    {
+      "field": "submission_channel_preference",
+      "label": "Kênh nộp dự kiến",
+      "type": "enum",
+      "required": false,
+      "options": [
+        "Trực tiếp",
+        "Trực tuyến",
+        "Dịch vụ bưu chính"
+      ]
+    },
+    {
+      "field": "has_current_certificate",
+      "label": "Đã có giấy tờ/tài liệu hiện trạng",
+      "type": "boolean",
+      "required": false
+    },
+    {
+      "field": "land_plot_identifier",
+      "label": "Thông tin thửa đất",
+      "type": "string",
+      "required": false
+    }
+  ],
+  "validation_rules": [
+    {
+      "id": "required-1",
+      "severity": "error",
+      "field": "property_or_service_need",
+      "rule": "Trường bắt buộc phải có dữ liệu hợp lệ trước khi nộp.",
+      "message": "Thiếu trường bắt buộc: Nhu cầu về đất đai, nhà ở hoặc điện lực."
+    },
+    {
+      "id": "required-2",
+      "severity": "error",
+      "field": "property_location",
+      "rule": "Trường bắt buộc phải có dữ liệu hợp lệ trước khi nộp.",
+      "message": "Thiếu trường bắt buộc: Địa điểm tài sản hoặc nơi sử dụng dịch vụ."
+    },
+    {
+      "id": "hint-1",
+      "severity": "warning",
+      "field": "general",
+      "rule": "Nên xác định trước kênh nộp hồ sơ để biết có cần bản giấy, bản điện tử hay xuất trình trực tiếp.",
+      "message": "Nên xác định trước kênh nộp hồ sơ để biết có cần bản giấy, bản điện tử hay xuất trình trực tiếp."
+    },
+    {
+      "id": "hint-2",
+      "severity": "warning",
+      "field": "general",
+      "rule": "Có mẫu biểu đính kèm, nên kiểm tra đúng biểu mẫu trước khi nộp.",
+      "message": "Có mẫu biểu đính kèm, nên kiểm tra đúng biểu mẫu trước khi nộp."
+    },
+    {
+      "id": "hint-3",
+      "severity": "warning",
+      "field": "general",
+      "rule": "Nên đối chiếu trước thông tin thửa đất, tài sản hoặc hiện trạng hồ sơ để tránh bị yêu cầu chỉnh sửa.",
+      "message": "Nên đối chiếu trước thông tin thửa đất, tài sản hoặc hiện trạng hồ sơ để tránh bị yêu cầu chỉnh sửa."
+    }
+  ],
+  "common_errors": [
+    {
+      "field": "general",
+      "issue": "Điền sai mẫu tờ khai hoặc chọn sai biểu mẫu đi kèm.",
+      "fix": "Nên xác định trước kênh nộp hồ sơ để biết có cần bản giấy, bản điện tử hay xuất trình trực tiếp."
+    },
+    {
+      "field": "general",
+      "issue": "Thông tin thửa đất, tài sản hoặc giấy chứng nhận chưa khớp với hồ sơ hiện có.",
+      "fix": "Nên xác định trước kênh nộp hồ sơ để biết có cần bản giấy, bản điện tử hay xuất trình trực tiếp."
+    }
+  ],
+  "clarifying_questions": [
+    {
+      "id": "clarify_1",
+      "question": "Bạn đang xử lý nhu cầu nào về đất đai, nhà ở hoặc điện lực?",
+      "purpose": "workflow_intake"
+    },
+    {
+      "id": "clarify_2",
+      "question": "Bạn đã có thông tin thửa đất, địa chỉ tài sản hoặc giấy tờ hiện trạng chưa?",
+      "purpose": "workflow_intake"
+    }
+  ],
+  "legal_basis": [
+    {
+      "title": "Quy định một số cơ chế, chính sách tháo gỡ khó khăn vướng mắc trong tổ chức thi hành Luật Đất đai",
+      "code": "254/2025/QH15"
+    },
+    {
+      "title": "Quy định trình tự, thủ tục hành chính về đất đai áp dụng trên địa bàn thành phố Đồng Nai",
+      "code": "18/2026/QĐ-UBND"
+    },
+    {
+      "title": "quy định chi tiết và hướng dẫn một số điều của Nghị quyết số 254/2025/QH15 của Quốc hội quy định một số cơ chế, chính sách tháo gỡ khó khăn vướng mắc trong tổ chức thi hành Luật Đất đai",
+      "code": "49/2026/NĐ-CP"
+    },
+    {
+      "title": "Luật Đất đai số 31/2024/QH15 ngày 18/01/2024 được sửa đổi bổ sung một số điều bởi Luật số 43/2024/QH15, Luật số 47/2024/QH15 và Luật số 58/2024/QH15 của Quốc hội.",
+      "code": "31/2024/QH15"
+    }
+  ],
+  "legal_bases": [
+    {
+      "title": "Quy định một số cơ chế, chính sách tháo gỡ khó khăn vướng mắc trong tổ chức thi hành Luật Đất đai",
+      "code": "254/2025/QH15"
+    },
+    {
+      "title": "Quy định trình tự, thủ tục hành chính về đất đai áp dụng trên địa bàn thành phố Đồng Nai",
+      "code": "18/2026/QĐ-UBND"
+    },
+    {
+      "title": "quy định chi tiết và hướng dẫn một số điều của Nghị quyết số 254/2025/QH15 của Quốc hội quy định một số cơ chế, chính sách tháo gỡ khó khăn vướng mắc trong tổ chức thi hành Luật Đất đai",
+      "code": "49/2026/NĐ-CP"
+    },
+    {
+      "title": "Luật Đất đai số 31/2024/QH15 ngày 18/01/2024 được sửa đổi bổ sung một số điều bởi Luật số 43/2024/QH15, Luật số 47/2024/QH15 và Luật số 58/2024/QH15 của Quốc hội.",
+      "code": "31/2024/QH15"
+    }
+  ],
+  "faq": [
+    {
+      "question": "Có thể nộp qua kênh nào?",
+      "answer": "Các kênh hiện có: Trực tiếp, Trực tuyến, Dịch vụ bưu chính."
+    },
+    {
+      "question": "Thời gian xử lý tham chiếu là bao lâu?",
+      "answer": "Thời gian xử lý tham chiếu hiện có là 12 ngày làm việc."
+    },
+    {
+      "question": "Kết quả chính của thủ tục là gì?",
+      "answer": "Kết quả chính được trích xuất là Giấy chứng nhận."
+    }
+  ],
+  "guidance": {
+    "highlight_documents": [
+      {
+        "bucket": "required",
+        "name": "Mẫu số 29. Đơn đề nghị tách thửa đất, hợp thửa đất theo quy định.",
+        "conditions": [],
+        "attachment_path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/1_115201/M%E1%BA%ABu%20s%E1%BB%91%2029-%20%C4%90%C6%A1n%20%C4%91%E1%BB%81%20ngh%E1%BB%8B%20t%C3%A1ch%2C%20h%E1%BB%A3p%20th%E1%BB%ADa%20%C4%91%E1%BA%A5t.docx"
+      },
+      {
+        "bucket": "required",
+        "name": "Bản vẽ tách thửa đất, hợp thửa đất lập theo quy định.",
+        "conditions": [],
+        "attachment_path": null
+      },
+      {
+        "bucket": "required",
+        "name": "Giấy chứng nhận đã cấp (bản gốc).",
+        "conditions": [],
+        "attachment_path": null
+      },
+      {
+        "bucket": "conditional",
+        "name": "Các văn bản của cơ quan có thẩm quyền có thể hiện nội dung tách thửa đất, hợp thửa đất (nếu có).",
+        "conditions": [
+          "Các văn bản của cơ quan có thẩm quyền có thể hiện nội dung tách thửa đất, hợp thửa đất (nếu có)."
+        ],
+        "attachment_path": null
+      },
+      {
+        "bucket": "conditional",
+        "name": "Văn bản cam kết về việc người sử dụng đất liền kề đồng ý cho đi qua để kết nối với đường giao thông công cộng (nếu có).",
+        "conditions": [
+          "Văn bản cam kết về việc người sử dụng đất liền kề đồng ý cho đi qua để kết nối với đường giao thông công cộng (nếu có)."
+        ],
+        "attachment_path": null
+      },
+      {
+        "bucket": "conditional",
+        "name": "Văn bản về việc đại diện theo quy định của pháp luật về dân sự đối với trường hợp thực hiện thủ tục đăng ký đất đai, tài sản gắn liền với đất thông qua người đại diện (nếu có).",
+        "conditions": [
+          "Văn bản về việc đại diện theo quy định của pháp luật về dân sự đối với trường hợp thực hiện thủ tục đăng ký đất đai, tài sản gắn liền với đất thông qua người đại diện (nếu có)."
+        ],
+        "attachment_path": null
+      }
+    ],
+    "special_cases": [
+      "Có thể cần đối chiếu thông tin thửa đất hoặc giấy chứng nhận"
+    ],
+    "common_errors": [
+      "Điền sai mẫu tờ khai hoặc chọn sai biểu mẫu đi kèm.",
+      "Thông tin thửa đất, tài sản hoặc giấy chứng nhận chưa khớp với hồ sơ hiện có."
+    ],
+    "validation_hints": [
+      "Nên xác định trước kênh nộp hồ sơ để biết có cần bản giấy, bản điện tử hay xuất trình trực tiếp.",
+      "Có mẫu biểu đính kèm, nên kiểm tra đúng biểu mẫu trước khi nộp.",
+      "Nên đối chiếu trước thông tin thửa đất, tài sản hoặc hiện trạng hồ sơ để tránh bị yêu cầu chỉnh sửa."
+    ]
+  },
+  "next_steps": {
+    "summary": "Nên chuẩn bị trước thông tin thửa đất, tài sản hoặc địa điểm tiếp nhận, rồi chọn kênh nộp phù hợp: Trực tiếp, Trực tuyến, Dịch vụ bưu chính. Hiện có khoảng 6 mục giấy tờ cần theo dõi trong checklist.",
+    "time_badge": "12 ngày làm việc",
+    "result_label": "Giấy chứng nhận",
+    "primary_channel": "in_person",
+    "channels": [
+      "in_person",
+      "online",
+      "postal"
+    ]
+  },
+  "notes": [],
+  "provenance": {
+    "pipeline": "raw->structured->normalized->enriched->ui_api_payload",
+    "normalizer_version": "0.2.0",
+    "enricher_version": "0.2.0",
+    "mapping_notes": "excluded_from_clean_workflow_dataset",
+    "supported_group": true
+  }
+}

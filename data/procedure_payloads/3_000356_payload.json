@@ -1,0 +1,228 @@
+{
+  "schema_version": "3.0",
+  "record_type": "public_service_procedure_payload",
+  "id": "procedure-3.000356",
+  "procedure_code": "3.000356",
+  "code": "3.000356",
+  "title": "Cấp lại giấy phép sát hạch cho trung tâm sát hạch lái xe loại 1, loại 2",
+  "language": "vi",
+  "status": "generated_from_pipeline",
+  "field": "Sát hạch, cấp giấy phép lái xe",
+  "group_key": "phuong_tien_nguoi_lai",
+  "workflow_family": "vehicle_driver_workflow",
+  "subflow": "giay_phep_lai_xe",
+  "source": {
+    "source_url": "file:///C:/Users/ku060/Downloads/VAIC%20source/data-pipeline/raw_data/3_000356/3_000356_procedure_detail.md",
+    "source_markdown_path": "C:\\Users\\ku060\\Downloads\\VAIC source\\data-pipeline\\raw_data\\3_000356\\3_000356_procedure_detail.md",
+    "normalized_payload_path": "C:\\Users\\ku060\\Downloads\\VAIC source\\data-pipeline\\govease-unified\\data\\normalized_structured\\3_000356_normalized_structured.json",
+    "enriched_payload_path": "C:\\Users\\ku060\\Downloads\\VAIC source\\data-pipeline\\govease-unified\\data\\enriched_structured_priority\\3_000356_enriched_structured.json"
+  },
+  "scope": {
+    "included": "Thủ tục này thuộc nhóm phương tiện và người lái, thường dùng để cấp, đổi hoặc xác nhận hồ sơ liên quan đến giấy phép lái xe. Kết quả thường nhận được là Giấy phép sát hạch. Thời gian xử lý tham khảo: 3 ngày làm việc.",
+    "not_included": []
+  },
+  "agency": {
+    "executing_agency": "Cục cảnh sát giao thông",
+    "submission_place": null,
+    "receiving_places": []
+  },
+  "target_users": [
+    "Tổ chức (không bao gồm doanh nghiệp",
+    "HTX)",
+    "Doanh nghiệp",
+    "Hợp tác xã"
+  ],
+  "submission_methods": [
+    {
+      "code": "IN_PERSON",
+      "label": "Trực tiếp",
+      "processing_time": "3 ngày làm việc",
+      "fee": null,
+      "description": null
+    }
+  ],
+  "processing_note": "Thời gian xử lý tham chiếu: 3 ngày làm việc. Nên kiểm tra trước loại phương tiện hoặc loại giấy phép cần xử lý, cùng hồ sơ kỹ thuật hoặc nhân thân liên quan. Có thể chọn kênh nộp phù hợp: Trực tiếp. Hiện có 1 mục giấy tờ cần theo dõi trong checklist.",
+  "documents": {
+    "normally_required": [
+      {
+        "name": "Văn bản đề nghị cấp lại giấy phép sát hạch (theo mẫu)",
+        "quantity": "1 bản chính, 0 bản sao",
+        "notes": [],
+        "group": "default",
+        "attachment_path": null
+      }
+    ],
+    "conditional": [],
+    "forms": [],
+    "presented": [],
+    "notes": [],
+    "summary": [
+      {
+        "group": "default",
+        "name": "Văn bản đề nghị cấp lại giấy phép sát hạch (theo mẫu)",
+        "quantity": "1 bản chính, 0 bản sao",
+        "notes": [],
+        "attachment_path": null
+      }
+    ]
+  },
+  "steps": [
+    {
+      "order": 1,
+      "title": "Bước 1",
+      "description": "1.",
+      "example": null
+    },
+    {
+      "order": 2,
+      "title": "a)",
+      "description": "a) Nộp hồ sơ TTHC: Trung tâm sát hạch lái xe gửi văn bản đề nghị cấp lại giấy phép sát hạch đến Cục Cảnh sát giao thông.",
+      "example": null
+    },
+    {
+      "order": 3,
+      "title": "b)",
+      "description": "b) Giải quyết TTHC: * Trường hợp cấp lại khi có sự thay đổi về thiết bị sát hạch, chủng loại, số lượng xe cơ giới sử dụng để sát hạch lái xe: - Trong thời gian không quá 05 ngày làm việc kể từ ngày nhận văn bản đề nghị, Cục Cảnh sát giao thông tổ chức kiểm tra, lập biên bản và cấp giấy phép sát hạch. Trường hợp không cấp, phải trả lời bằng văn bản và nêu rõ lý do; - Việc trả kết quả được thực hiện tại trụ sở cơ quan Cục Cảnh sát giao thông hoặc qua dịch vụ bưu chính. * Trường hợp cấp lại khi bị hỏng, mất, thay đổi tên của trung tâm sát hạch lái xe: - Trong thời hạn không quá 01 ngày làm việc kể từ ngày nhận văn bản đề nghị, Cục Cảnh sát giao thông kiểm tra tính đầy đủ của hồ sơ; trường hợp hồ sơ chưa đầy đủ thì hướng dẫn tổ chức, cá nhân hoàn thiện theo quy định; trong thời hạn không quá 03 ngày làm việc kể từ ngày nhận đủ hồ sơ theo quy định, Cục Cảnh sát giao thông cấp lại giấy phép sát hạch cho trung tâm sát hạch lái xe; trường hợp không cấp phải trả lời tổ chức, cá nhân bằng văn bản và nêu rõ lý do; - Việc trả kết quả được thực hiện tại trụ sở cơ quan Cục Cảnh sát giao thông hoặc qua dịch vụ bưu chính.",
+      "example": "05 ngày làm việc"
+    }
+  ],
+  "input_fields": [
+    {
+      "field": "vehicle_or_license_need",
+      "label": "Nhu cầu về phương tiện hoặc giấy phép",
+      "type": "string",
+      "required": true
+    },
+    {
+      "field": "vehicle_or_person_identifier",
+      "label": "Thông tin phương tiện hoặc người lái",
+      "type": "string",
+      "required": true
+    },
+    {
+      "field": "submission_channel_preference",
+      "label": "Kênh nộp dự kiến",
+      "type": "enum",
+      "required": false,
+      "options": [
+        "Trực tiếp"
+      ]
+    },
+    {
+      "field": "has_technical_or_identity_documents",
+      "label": "Đã có hồ sơ kỹ thuật hoặc giấy tờ nhân thân",
+      "type": "boolean",
+      "required": false
+    }
+  ],
+  "validation_rules": [
+    {
+      "id": "required-1",
+      "severity": "error",
+      "field": "vehicle_or_license_need",
+      "rule": "Trường bắt buộc phải có dữ liệu hợp lệ trước khi nộp.",
+      "message": "Thiếu trường bắt buộc: Nhu cầu về phương tiện hoặc giấy phép."
+    },
+    {
+      "id": "required-2",
+      "severity": "error",
+      "field": "vehicle_or_person_identifier",
+      "rule": "Trường bắt buộc phải có dữ liệu hợp lệ trước khi nộp.",
+      "message": "Thiếu trường bắt buộc: Thông tin phương tiện hoặc người lái."
+    },
+    {
+      "id": "hint-1",
+      "severity": "warning",
+      "field": "general",
+      "rule": "Nên xác định trước kênh nộp hồ sơ để biết có cần bản giấy, bản điện tử hay xuất trình trực tiếp.",
+      "message": "Nên xác định trước kênh nộp hồ sơ để biết có cần bản giấy, bản điện tử hay xuất trình trực tiếp."
+    },
+    {
+      "id": "hint-2",
+      "severity": "warning",
+      "field": "general",
+      "rule": "Nên đối chiếu trước thông tin phương tiện, hồ sơ kỹ thuật hoặc giấy phép lái xe liên quan.",
+      "message": "Nên đối chiếu trước thông tin phương tiện, hồ sơ kỹ thuật hoặc giấy phép lái xe liên quan."
+    }
+  ],
+  "common_errors": [
+    {
+      "field": "general",
+      "issue": "Điền sai mẫu tờ khai hoặc chọn sai biểu mẫu đi kèm.",
+      "fix": "Nên xác định trước kênh nộp hồ sơ để biết có cần bản giấy, bản điện tử hay xuất trình trực tiếp."
+    }
+  ],
+  "clarifying_questions": [
+    {
+      "id": "clarify_1",
+      "question": "Bạn đang xử lý hồ sơ cho phương tiện hay cho giấy phép lái xe?",
+      "purpose": "workflow_intake"
+    },
+    {
+      "id": "clarify_2",
+      "question": "Bạn đã có thông tin nhận diện phương tiện hoặc giấy tờ của người lái chưa?",
+      "purpose": "workflow_intake"
+    }
+  ],
+  "legal_basis": [
+    {
+      "title": "Quy định về hoạt động đào tạo và sát hạch lái xe.",
+      "code": "160/2024/NĐ-CP"
+    }
+  ],
+  "legal_bases": [
+    {
+      "title": "Quy định về hoạt động đào tạo và sát hạch lái xe.",
+      "code": "160/2024/NĐ-CP"
+    }
+  ],
+  "faq": [
+    {
+      "question": "Có thể nộp qua kênh nào?",
+      "answer": "Các kênh hiện có: Trực tiếp."
+    },
+    {
+      "question": "Thời gian xử lý tham chiếu là bao lâu?",
+      "answer": "Thời gian xử lý tham chiếu hiện có là 3 ngày làm việc."
+    },
+    {
+      "question": "Kết quả chính của thủ tục là gì?",
+      "answer": "Kết quả chính được trích xuất là Giấy phép sát hạch."
+    }
+  ],
+  "guidance": {
+    "highlight_documents": [
+      {
+        "bucket": "required",
+        "name": "Văn bản đề nghị cấp lại giấy phép sát hạch (theo mẫu)",
+        "conditions": [],
+        "attachment_path": null
+      }
+    ],
+    "special_cases": [],
+    "common_errors": [
+      "Điền sai mẫu tờ khai hoặc chọn sai biểu mẫu đi kèm."
+    ],
+    "validation_hints": [
+      "Nên xác định trước kênh nộp hồ sơ để biết có cần bản giấy, bản điện tử hay xuất trình trực tiếp.",
+      "Nên đối chiếu trước thông tin phương tiện, hồ sơ kỹ thuật hoặc giấy phép lái xe liên quan."
+    ]
+  },
+  "next_steps": {
+    "summary": "Nên kiểm tra trước loại phương tiện hoặc loại giấy phép cần xử lý, cùng hồ sơ kỹ thuật hoặc nhân thân liên quan. Có thể chọn kênh nộp phù hợp: Trực tiếp. Hiện có 1 mục giấy tờ cần theo dõi trong checklist.",
+    "time_badge": "3 ngày làm việc",
+    "result_label": "Giấy phép sát hạch",
+    "primary_channel": "in_person",
+    "channels": [
+      "in_person"
+    ]
+  },
+  "notes": [],
+  "provenance": {
+    "pipeline": "raw->structured->normalized->enriched->ui_api_payload",
+    "normalizer_version": "0.2.0",
+    "enricher_version": "0.2.0",
+    "mapping_notes": "workflow_generated:phuong_tien_nguoi_lai/giay_phep_lai_xe",
+    "supported_group": true
+  }
+}

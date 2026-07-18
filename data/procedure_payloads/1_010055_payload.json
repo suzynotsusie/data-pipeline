@@ -1,0 +1,319 @@
+{
+  "schema_version": "3.0",
+  "record_type": "public_service_procedure_payload",
+  "id": "procedure-1.010055",
+  "procedure_code": "1.010055",
+  "code": "1.010055",
+  "title": "Trình báo mất giấy thông hành (thực hiện tại cấp xã)",
+  "language": "vi",
+  "status": "generated_from_pipeline",
+  "field": "Quản lý xuất nhập cảnh",
+  "group_key": "cu_tru_giay_to",
+  "workflow_family": null,
+  "subflow": null,
+  "source": {
+    "source_url": "file:///C:/Users/ku060/Downloads/VAIC%20source/data-pipeline/raw_data/1_010055/1_010055_procedure_detail.md",
+    "source_markdown_path": "C:\\Users\\ku060\\Downloads\\VAIC source\\data-pipeline\\raw_data\\1_010055\\1_010055_procedure_detail.md",
+    "normalized_payload_path": "C:\\Users\\ku060\\Downloads\\VAIC source\\data-pipeline\\govease-unified\\data\\normalized_structured\\1_010055_normalized_structured.json",
+    "enriched_payload_path": "C:\\Users\\ku060\\Downloads\\VAIC source\\data-pipeline\\govease-unified\\data\\enriched_structured_priority\\1_010055_enriched_structured.json"
+  },
+  "scope": {
+    "included": "Thủ tục này thuộc nhóm cư trú và giấy tờ, thường cần kiểm tra thông tin định danh hoặc hồ sơ giấy tờ chuyên ngành. Kết quả thường nhận được là Thông báo hủy giá trị sử dụng giấy thông hành. Thời gian xử lý tham khảo: 1 ngày làm việc.",
+    "not_included": []
+  },
+  "agency": {
+    "executing_agency": "Công an cấp Xã",
+    "submission_place": null,
+    "receiving_places": []
+  },
+  "target_users": [
+    "Công dân Việt Nam"
+  ],
+  "submission_methods": [
+    {
+      "code": "ONLINE",
+      "label": "Trực tuyến",
+      "processing_time": "1 ngày làm việc",
+      "fee": null,
+      "description": "Nộp hồ sơ trực tuyến qua Cổng dịch vụ công quốc gia hoặc qua Cổng dịch vụ công Bộ Công an.<br>01 ngày làm việc kể từ ngày nhận được đầy đủ hồ sơ theo quy định, giấy thông hành sẽ bị hủy giá trị sử dụng."
+    },
+    {
+      "code": "POSTAL",
+      "label": "Dịch vụ bưu chính",
+      "processing_time": "1 ngày làm việc",
+      "fee": null,
+      "description": "Nộp bổ sung hồ sơ qua dịch vụ bưu chính công ích theo thông báo của cơ quan tiếp nhận hồ sơ trên Cổng dịch vụ công quốc gia hoặc Cổng dịch vụ công Bộ Công an (nếu có).<br>01 ngày làm việc kể từ ngày nhận được đầy đủ hồ sơ theo quy định, giấy thông hành sẽ bị hủy giá trị sử dụng."
+    },
+    {
+      "code": "IN_PERSON",
+      "label": "Trực tiếp",
+      "processing_time": "1 ngày làm việc",
+      "fee": null,
+      "description": "Nộp hồ sơ trực tiếp tại Công an cấp xã biên giới tiếp giáp với Trung Quốc.<br>01 ngày làm việc kể từ ngày nhận được đầy đủ hồ sơ theo quy định, giấy thông hành sẽ bị hủy giá trị sử dụng."
+    }
+  ],
+  "processing_note": "Thời gian xử lý tham chiếu: 1 ngày làm việc. Nên kiểm tra trước giấy tờ định danh, nơi nộp và mẫu biểu liên quan, rồi chọn kênh nộp phù hợp: Trực tiếp, Trực tuyến, Dịch vụ bưu chính. Hiện có khoảng 3 mục giấy tờ cần theo dõi trong checklist.",
+  "documents": {
+    "normally_required": [
+      {
+        "name": "01 đơn trình báo mất giấy thông hành (mẫu M02);",
+        "quantity": "1 bản chính, 0 bản sao",
+        "notes": [],
+        "group": "default",
+        "attachment_path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/1_010055/M%E1%BA%ABu%20M02%20tr%C3%ACnh%20b%C3%A1o%20m%E1%BA%A5t%20gi%E1%BA%A5y%20th%C3%B4ng%20h%C3%A0nh%20-%20BCA.docx"
+      }
+    ],
+    "conditional": [
+      {
+        "condition": "Trường hợp nộp hồ sơ trực tuyến thì thành phần hồ sơ phải được chứng thực điện tử theo quy định, trường hợp hồ sơ chưa được chứng thực điện tử thì gửi hồ sơ về cơ quan tiếp nhận thông qua dịch vụ bưu chính công ích.",
+        "document": "Trường hợp nộp hồ sơ trực tuyến thì thành phần hồ sơ phải được chứng thực điện tử theo quy định, trường hợp hồ sơ chưa được chứng thực điện tử thì gửi hồ sơ về cơ quan tiếp nhận thông qua dịch vụ bưu chính công ích.",
+        "quantity": "1 bản chính, 1 bản sao",
+        "notes": [],
+        "attachment_path": null
+      },
+      {
+        "condition": "Giấy tờ chứng minh là cha, mẹ hoặc người đại diện theo pháp luật đối với trường hợp trình báo mất giấy thông hành cho trẻ em dưới 14 tuổi, người mất năng lực hành vi dân sự, người có khó khăn trong nhận thức, làm chủ hành vi.",
+        "document": "Giấy tờ chứng minh là cha, mẹ hoặc người đại diện theo pháp luật đối với trường hợp trình báo mất giấy thông hành cho trẻ em dưới 14 tuổi, người mất năng lực hành vi dân sự, người có khó khăn trong nhận thức, làm chủ hành vi.",
+        "quantity": "1 bản chính, 0 bản sao",
+        "notes": [],
+        "attachment_path": null
+      }
+    ],
+    "forms": [
+      {
+        "name": "01 đơn trình báo mất giấy thông hành (mẫu M02);",
+        "attachment_label": "Mẫu M02 trình báo mất giấy thông hành - BCA.docx",
+        "attachment_path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/1_010055/M%E1%BA%ABu%20M02%20tr%C3%ACnh%20b%C3%A1o%20m%E1%BA%A5t%20gi%E1%BA%A5y%20th%C3%B4ng%20h%C3%A0nh%20-%20BCA.docx"
+      }
+    ],
+    "presented": [],
+    "notes": [],
+    "summary": [
+      {
+        "group": "default",
+        "name": "01 đơn trình báo mất giấy thông hành (mẫu M02);",
+        "quantity": "1 bản chính, 0 bản sao",
+        "notes": [],
+        "attachment_path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/1_010055/M%E1%BA%ABu%20M02%20tr%C3%ACnh%20b%C3%A1o%20m%E1%BA%A5t%20gi%E1%BA%A5y%20th%C3%B4ng%20h%C3%A0nh%20-%20BCA.docx"
+      },
+      {
+        "group": null,
+        "name": null,
+        "quantity": "1 bản chính, 1 bản sao",
+        "notes": [],
+        "attachment_path": null
+      },
+      {
+        "group": null,
+        "name": null,
+        "quantity": "1 bản chính, 0 bản sao",
+        "notes": [],
+        "attachment_path": null
+      },
+      {
+        "group": null,
+        "name": "01 đơn trình báo mất giấy thông hành (mẫu M02);",
+        "quantity": null,
+        "notes": null,
+        "attachment_path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/1_010055/M%E1%BA%ABu%20M02%20tr%C3%ACnh%20b%C3%A1o%20m%E1%BA%A5t%20gi%E1%BA%A5y%20th%C3%B4ng%20h%C3%A0nh%20-%20BCA.docx"
+      }
+    ]
+  },
+  "steps": [
+    {
+      "order": 1,
+      "title": "Bước 1",
+      "description": "1.",
+      "example": null
+    },
+    {
+      "order": 2,
+      "title": "Bước 1:",
+      "description": "Bước 1: Chuẩn bị hồ sơ theo quy định của pháp luật.",
+      "example": null
+    },
+    {
+      "order": 3,
+      "title": "Bước 2:",
+      "description": "Bước 2: Nộp hồ sơ - Công dân Việt Nam thường trú tại các xã, phường, thị trấn tiếp giáp đường biên giới Việt Nam – Trung Quốc bị mất giấy thông hành xuất, nhập cảnh vùng biên giới ở trong nước thực hiện việc trình báo mất giấy thông hành vào giờ hành chính các ngày làm việc trong tuần tại Công an cấp xã đã cấp giấy thông hành đó hoặc thực hiện qua Cổng dịch vụ công quốc gia hoặc Cổng dịch vụ công Bộ Công an. - Thời gian tiếp nhận hồ sơ: từ thứ 2 đến sáng thứ 7 hàng tuần (trừ ngày Tết, ngày lễ). - Cán bộ tiếp nhận hồ sơ kiểm tra tính pháp lý và nội dung của hồ sơ: + Nếu hồ sơ đầy đủ, hợp lệ thì tiếp nhận; + Nếu hồ sơ chưa hợp lệ thì hướng dẫn hoặc thông báo trên Cổng dịch vụ công quốc gia hoặc Cổng dịch vụ công Bộ Công an để người nộp hồ sơ bổ sung cho đầy đủ.",
+      "example": null
+    }
+  ],
+  "input_fields": [
+    {
+      "field": "document_request_type",
+      "label": "Loại giấy tờ cần xử lý",
+      "type": "string",
+      "required": true
+    },
+    {
+      "field": "submission_channel_preference",
+      "label": "Kênh nộp dự kiến",
+      "type": "enum",
+      "required": false,
+      "options": [
+        "Trực tiếp",
+        "Trực tuyến",
+        "Dịch vụ bưu chính"
+      ]
+    },
+    {
+      "field": "identity_document_available",
+      "label": "Có giấy tờ định danh",
+      "type": "boolean",
+      "required": true
+    },
+    {
+      "field": "residency_or_status_known",
+      "label": "Biết rõ nơi cư trú hoặc tình trạng hiện tại",
+      "type": "boolean",
+      "required": false
+    }
+  ],
+  "validation_rules": [
+    {
+      "id": "required-1",
+      "severity": "error",
+      "field": "document_request_type",
+      "rule": "Trường bắt buộc phải có dữ liệu hợp lệ trước khi nộp.",
+      "message": "Thiếu trường bắt buộc: Loại giấy tờ cần xử lý."
+    },
+    {
+      "id": "required-3",
+      "severity": "error",
+      "field": "identity_document_available",
+      "rule": "Trường bắt buộc phải có dữ liệu hợp lệ trước khi nộp.",
+      "message": "Thiếu trường bắt buộc: Có giấy tờ định danh."
+    },
+    {
+      "id": "hint-1",
+      "severity": "warning",
+      "field": "general",
+      "rule": "Nên xác định trước kênh nộp hồ sơ để biết có cần bản giấy, bản điện tử hay xuất trình trực tiếp.",
+      "message": "Nên xác định trước kênh nộp hồ sơ để biết có cần bản giấy, bản điện tử hay xuất trình trực tiếp."
+    },
+    {
+      "id": "hint-2",
+      "severity": "warning",
+      "field": "general",
+      "rule": "Có mẫu biểu đính kèm, nên kiểm tra đúng biểu mẫu trước khi nộp.",
+      "message": "Có mẫu biểu đính kèm, nên kiểm tra đúng biểu mẫu trước khi nộp."
+    },
+    {
+      "id": "hint-3",
+      "severity": "warning",
+      "field": "general",
+      "rule": "Nên đối chiếu trước dữ liệu định danh và nơi cư trú để tránh bị yêu cầu bổ sung.",
+      "message": "Nên đối chiếu trước dữ liệu định danh và nơi cư trú để tránh bị yêu cầu bổ sung."
+    }
+  ],
+  "common_errors": [
+    {
+      "field": "general",
+      "issue": "Điền sai mẫu tờ khai hoặc chọn sai biểu mẫu đi kèm.",
+      "fix": "Nên xác định trước kênh nộp hồ sơ để biết có cần bản giấy, bản điện tử hay xuất trình trực tiếp."
+    }
+  ],
+  "clarifying_questions": [
+    {
+      "id": "clarify_1",
+      "question": "Bạn đang xử lý giấy tờ gì và muốn nộp trực tiếp hay trực tuyến?",
+      "purpose": "workflow_intake"
+    },
+    {
+      "id": "clarify_2",
+      "question": "Thông tin định danh và nơi cư trú hiện tại đã sẵn sàng để đối chiếu chưa?",
+      "purpose": "workflow_intake"
+    }
+  ],
+  "legal_basis": [
+    {
+      "title": "Nghị định 76/2020/NĐ-CP",
+      "code": "76/2020/NĐ-CP"
+    },
+    {
+      "title": "Luật 49/2019/QH14",
+      "code": "49/2019/QH14"
+    }
+  ],
+  "legal_bases": [
+    {
+      "title": "Nghị định 76/2020/NĐ-CP",
+      "code": "76/2020/NĐ-CP"
+    },
+    {
+      "title": "Luật 49/2019/QH14",
+      "code": "49/2019/QH14"
+    }
+  ],
+  "faq": [
+    {
+      "question": "Có thể nộp qua kênh nào?",
+      "answer": "Các kênh hiện có: Trực tiếp, Trực tuyến, Dịch vụ bưu chính."
+    },
+    {
+      "question": "Thời gian xử lý tham chiếu là bao lâu?",
+      "answer": "Thời gian xử lý tham chiếu hiện có là 1 ngày làm việc."
+    },
+    {
+      "question": "Kết quả chính của thủ tục là gì?",
+      "answer": "Kết quả chính được trích xuất là Thông báo hủy giá trị sử dụng giấy thông hành."
+    }
+  ],
+  "guidance": {
+    "highlight_documents": [
+      {
+        "bucket": "required",
+        "name": "01 đơn trình báo mất giấy thông hành (mẫu M02);",
+        "conditions": [],
+        "attachment_path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/1_010055/M%E1%BA%ABu%20M02%20tr%C3%ACnh%20b%C3%A1o%20m%E1%BA%A5t%20gi%E1%BA%A5y%20th%C3%B4ng%20h%C3%A0nh%20-%20BCA.docx"
+      },
+      {
+        "bucket": "conditional",
+        "name": "Trường hợp nộp hồ sơ trực tuyến thì thành phần hồ sơ phải được chứng thực điện tử theo quy định, trường hợp hồ sơ chưa được chứng thực điện tử thì gửi hồ sơ về cơ quan tiếp nhận thông qua dịch vụ bưu chính công ích.",
+        "conditions": [
+          "Trường hợp nộp hồ sơ trực tuyến thì thành phần hồ sơ phải được chứng thực điện tử theo quy định, trường hợp hồ sơ chưa được chứng thực điện tử thì gửi hồ sơ về cơ quan tiếp nhận thông qua dịch vụ bưu chính công ích."
+        ],
+        "attachment_path": null
+      },
+      {
+        "bucket": "conditional",
+        "name": "Giấy tờ chứng minh là cha, mẹ hoặc người đại diện theo pháp luật đối với trường hợp trình báo mất giấy thông hành cho trẻ em dưới 14 tuổi, người mất năng lực hành vi dân sự, người có khó khăn trong nhận thức, làm chủ hành vi.",
+        "conditions": [
+          "Giấy tờ chứng minh là cha, mẹ hoặc người đại diện theo pháp luật đối với trường hợp trình báo mất giấy thông hành cho trẻ em dưới 14 tuổi, người mất năng lực hành vi dân sự, người có khó khăn trong nhận thức, làm chủ hành vi."
+        ],
+        "attachment_path": null
+      }
+    ],
+    "special_cases": [
+      "Có trường hợp hồ sơ điện tử thay thế bản giấy"
+    ],
+    "common_errors": [
+      "Điền sai mẫu tờ khai hoặc chọn sai biểu mẫu đi kèm."
+    ],
+    "validation_hints": [
+      "Nên xác định trước kênh nộp hồ sơ để biết có cần bản giấy, bản điện tử hay xuất trình trực tiếp.",
+      "Có mẫu biểu đính kèm, nên kiểm tra đúng biểu mẫu trước khi nộp.",
+      "Nên đối chiếu trước dữ liệu định danh và nơi cư trú để tránh bị yêu cầu bổ sung."
+    ]
+  },
+  "next_steps": {
+    "summary": "Nên kiểm tra trước giấy tờ định danh, nơi nộp và mẫu biểu liên quan, rồi chọn kênh nộp phù hợp: Trực tiếp, Trực tuyến, Dịch vụ bưu chính. Hiện có khoảng 3 mục giấy tờ cần theo dõi trong checklist.",
+    "time_badge": "1 ngày làm việc",
+    "result_label": "Thông báo hủy giá trị sử dụng giấy thông hành",
+    "primary_channel": "online",
+    "channels": [
+      "in_person",
+      "online",
+      "postal"
+    ]
+  },
+  "notes": [],
+  "provenance": {
+    "pipeline": "raw->structured->normalized->enriched->ui_api_payload",
+    "normalizer_version": "0.2.0",
+    "enricher_version": "0.2.0",
+    "mapping_notes": "excluded_from_clean_workflow_dataset",
+    "supported_group": true
+  }
+}

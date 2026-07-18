@@ -1,0 +1,120 @@
+{
+  "schema_version": "1.0",
+  "enricher_version": "0.2.0",
+  "source": {
+    "procedure_code": "3.000346",
+    "title": "Cấp giấy phép lái xe",
+    "group_key": "phuong_tien_nguoi_lai",
+    "workflow_family": "vehicle_driver_workflow",
+    "subflow": "giay_phep_lai_xe"
+  },
+  "experience": {
+    "entry_label": "Hỗ trợ phương tiện và người lái",
+    "overview_summary": "Thủ tục này thuộc nhóm phương tiện và người lái, thường dùng để cấp, đổi hoặc xác nhận hồ sơ liên quan đến giấy phép lái xe. Kết quả thường nhận được là Giấy phép lái xe. Thời gian xử lý tham khảo: 7 ngày.",
+    "next_step_summary": "Nên kiểm tra trước loại phương tiện hoặc loại giấy phép cần xử lý, cùng hồ sơ kỹ thuật hoặc nhân thân liên quan. Có thể chọn kênh nộp phù hợp: Trực tiếp, Trực tuyến, Dịch vụ bưu chính. Hiện có khoảng 13 mục giấy tờ cần theo dõi trong checklist.",
+    "tone": "supportive_public_service"
+  },
+  "guidance": {
+    "highlight_documents": [
+      {
+        "bucket": "required",
+        "name": "Bản sao hoặc bản sao điện tử được chứng thực từ bản chính hoặc bản sao điện tử được cấp từ sổ gốc một trong các giấy tờ sau: thẻ tạm trú, thẻ thường trú, chứng minh thư ngoại giao, chứng minh thư công vụ (đối với người nước ngoài).",
+        "conditions": [],
+        "attachment_path": null
+      },
+      {
+        "bucket": "required",
+        "name": "Giấy khám sức khoẻ của người lái xe do cơ sở khám bệnh, chữa bệnh đủ tiêu chuẩn theo quy định của pháp luật về khám bệnh, chữa bệnh cấp còn hiệu lực",
+        "conditions": [],
+        "attachment_path": null
+      },
+      {
+        "bucket": "required",
+        "name": "Đề nghị sát hạch để cấp giấy phép lái xe theo quy định tại Phụ lục I ban hành kèm theo Thông tư số 12/2025/TT-BCA",
+        "conditions": [],
+        "attachment_path": null
+      },
+      {
+        "bucket": "required",
+        "name": "Giấy khám sức khoẻ của người lái xe do cơ sở khám bệnh, chữa bệnh đủ tiêu chuẩn theo quy định của pháp luật về khám bệnh, chữa bệnh cấp còn hiệu lực.",
+        "conditions": [],
+        "attachment_path": null
+      },
+      {
+        "bucket": "required",
+        "name": "Bản sao hoặc bản sao điện tử được chứng thực từ bản chính hoặc bản sao điện tử được cấp từ sổ gốc một trong các giấy tờ sau: thẻ tạm trú, thẻ thường trú, chứng minh thư ngoại giao, chứng minh thư công vụ (đối với người nước ngoài).",
+        "conditions": [],
+        "attachment_path": null
+      },
+      {
+        "bucket": "required",
+        "name": "Đề nghị sát hạch để cấp giấy phép lái xe theo mẫu quy định tại Phụ lục I ban hành kèm theo Thông tư số 12/2025/TT-BCA",
+        "conditions": [],
+        "attachment_path": null
+      }
+    ],
+    "special_cases": [
+      "Có yếu tố nước ngoài",
+      "Có kiểm tra dữ liệu cư trú/định danh",
+      "Có thể cần hồ sơ kỹ thuật phương tiện hoặc giấy phép lái xe"
+    ],
+    "common_errors": [
+      "Thiếu giấy tờ hợp pháp hóa hoặc giấy tờ nhân thân của phía nước ngoài.",
+      "Điền sai mẫu tờ khai hoặc chọn sai biểu mẫu đi kèm.",
+      "Thiếu hồ sơ kỹ thuật phương tiện hoặc thông tin giấy phép lái xe cần đối chiếu."
+    ],
+    "validation_hints": [
+      "Nên xác định trước kênh nộp hồ sơ để biết có cần bản giấy, bản điện tử hay xuất trình trực tiếp.",
+      "Nên đối chiếu trước thông tin phương tiện, hồ sơ kỹ thuật hoặc giấy phép lái xe liên quan."
+    ]
+  },
+  "intake": {
+    "candidate_input_fields": [
+      {
+        "field_id": "vehicle_or_license_need",
+        "label": "Nhu cầu về phương tiện hoặc giấy phép",
+        "field_type": "text",
+        "required": true
+      },
+      {
+        "field_id": "vehicle_or_person_identifier",
+        "label": "Thông tin phương tiện hoặc người lái",
+        "field_type": "text",
+        "required": true
+      },
+      {
+        "field_id": "submission_channel_preference",
+        "label": "Kênh nộp dự kiến",
+        "field_type": "enum",
+        "required": false
+      },
+      {
+        "field_id": "has_technical_or_identity_documents",
+        "label": "Đã có hồ sơ kỹ thuật hoặc giấy tờ nhân thân",
+        "field_type": "boolean",
+        "required": false
+      },
+      {
+        "field_id": "driver_license_status",
+        "label": "Tình trạng giấy phép lái xe hiện tại",
+        "field_type": "enum",
+        "required": false
+      }
+    ],
+    "suggested_clarifying_questions": [
+      "Bạn đang xử lý hồ sơ cho phương tiện hay cho giấy phép lái xe?",
+      "Bạn đã có thông tin nhận diện phương tiện hoặc giấy tờ của người lái chưa?"
+    ]
+  },
+  "ui_hints": {
+    "primary_channel": "online",
+    "result_label": "Giấy phép lái xe",
+    "time_badge": "7 ngày",
+    "document_count_badge": 13
+  },
+  "provenance": {
+    "generator": "workflow_domain_enricher",
+    "derivation_mode": "rule_based_semantic_enrichment",
+    "supported_group": true
+  }
+}

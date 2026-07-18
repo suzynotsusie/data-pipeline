@@ -1,0 +1,177 @@
+{
+  "schema_version": "1.0",
+  "normalizer_version": "0.2.0",
+  "source": {
+    "procedure_code": "1.009794",
+    "title": "Kiểm tra công tác nghiệm thu hoàn thành công trình của cơ quan chuyên môn về xây dựng tại địa phương",
+    "raw_structured_parser_version": "0.1.0",
+    "field": "Quản lý chất lượng công trình xây dựng"
+  },
+  "procedure": {
+    "level": "Cấp tỉnh",
+    "procedure_type": "TTHC được luật giao quy định chi tiết",
+    "target_users": [
+      "Công dân Việt Nam",
+      "Doanh nghiệp",
+      "Doanh nghiệp Việt Nam",
+      "Doanh nghiệp có vốn đầu tư nước ngoài",
+      "Tổ chức (không bao gồm doanh nghiệp",
+      "HTX)"
+    ],
+    "authorities": [
+      "Cơ quan chức năng do Ủy ban nhân dân cấp tỉnh chỉ định"
+    ],
+    "receiving_places": [
+      "Trung tâm Phục vụ hành chính công trên địa bàn tỉnh"
+    ]
+  },
+  "submission": {
+    "channels": [
+      "in_person",
+      "online",
+      "postal"
+    ],
+    "methods": [
+      {
+        "method_id": "method_1",
+        "channel": "online",
+        "processing_time_text": "16 ngày làm việc",
+        "fee_text": null,
+        "description": "16 ngày làm việc đối với công trình cấp I, cấp đặc biệt và 12 ngày làm việc đối với công trình còn lại kể từ ngày tiếp nhận hồ sơ đề nghị kiểm tra công tác nghiệm thu.",
+        "is_online": true,
+        "is_postal": false,
+        "is_in_person": false
+      },
+      {
+        "method_id": "method_2",
+        "channel": "postal",
+        "processing_time_text": "16 ngày làm việc",
+        "fee_text": null,
+        "description": "16 ngày làm việc đối với công trình cấp I, cấp đặc biệt và 12 ngày làm việc đối với công trình còn lại kể từ ngày tiếp nhận hồ sơ đề nghị kiểm tra công tác nghiệm thu.",
+        "is_online": false,
+        "is_postal": true,
+        "is_in_person": false
+      },
+      {
+        "method_id": "method_3",
+        "channel": "in_person",
+        "processing_time_text": "16 ngày làm việc",
+        "fee_text": null,
+        "description": "16 ngày làm việc đối với công trình cấp I, cấp đặc biệt và 12 ngày làm việc đối với công trình còn lại kể từ ngày tiếp nhận hồ sơ đề nghị kiểm tra công tác nghiệm thu.",
+        "is_online": false,
+        "is_postal": false,
+        "is_in_person": true
+      }
+    ],
+    "timing_summary": {
+      "unique_processing_times": [
+        "16 ngày làm việc"
+      ],
+      "method_count": 3
+    }
+  },
+  "documents": {
+    "required": [
+      {
+        "document_id": "b_o_c_o_ho_n_th_nh_thi_c_ng_x_y_d_ng_h_ng_m_c_c_ng_tr_nh_c_ng_tr_nh_x_y_d_ng_theo_ph_l_c_vi_ngh_nh_s_207_2026_n_cp",
+        "name": "Báo cáo hoàn thành thi công xây dựng hạng mục công trình, công trình xây dựng (theo Phụ lục VI Nghị định số 207/2026/NĐ-CP).",
+        "group_name": "default",
+        "group_type": "unknown",
+        "original_count": "1",
+        "copy_count": "0",
+        "conditions": [],
+        "attachment_label": "BC NTHT.docx",
+        "attachment_path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/1_009794/BC%20NTHT.docx"
+      }
+    ],
+    "conditional": [],
+    "presented": [],
+    "notes": [],
+    "forms": [
+      {
+        "name": "Báo cáo hoàn thành thi công xây dựng hạng mục công trình, công trình xây dựng (theo Phụ lục VI Nghị định số 207/2026/NĐ-CP).",
+        "attachment_label": "BC NTHT.docx",
+        "attachment_path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/1_009794/BC%20NTHT.docx"
+      }
+    ],
+    "empty_groups": [],
+    "document_count": 1
+  },
+  "process": {
+    "steps": [
+      {
+        "step_id": "step_1",
+        "title": null,
+        "content": "1. - Chủ đầu tư gửi 01 báo cáo hoàn thành thi công xây dựng hạng mục công trình, công trình xây dựng tới Trung tâm Phục vụ hành chính công trên địa bàn tỉnh.",
+        "actor": "user",
+        "channel_hint": null,
+        "time_hint": null
+      },
+      {
+        "step_id": "step_2",
+        "title": null,
+        "content": "- Cơ quan chuyên môn về xây dựng thuộc UBND cấp tỉnh thực hiện kiểm tra các điều kiện nghiệm thu hoàn thành công trình. Trường hợp công trình không được kiểm tra trong quá trình thi công thì thực hiện kiểm tra sự tuân thủ các quy định về quản lý chất lượng, quản lý an toàn của chủ đầu tư và các nhà thầu tham gia hoạt động xây dựng trong thi công xây dựng, từ khi khởi công xây dựng đến khi nghiệm thu hoàn thành công trình theo quy định của Nghị định số 207/2026/NĐ-CP và kiểm tra các điều kiện nghiệm thu hoàn thành công trình.",
+        "actor": "authority",
+        "channel_hint": null,
+        "time_hint": null
+      },
+      {
+        "step_id": "step_3",
+        "title": null,
+        "content": "- Trong thời hạn 16 ngày làm việc đối với công trình cấp I, cấp đặc biệt và 12 ngày làm việc đối với công trình còn lại kể từ khi nhận được hồ sơ đề nghị kiểm tra công tác nghiệm thu, cơ quan chuyên môn về xây dựng thuộc UBND cấp tỉnh ra thông báo kết quả kiểm tra công tác nghiệm thu hoàn thành hạng mục công trình, công trình xây dựng.",
+        "actor": "authority",
+        "channel_hint": null,
+        "time_hint": "16 ngày làm việc"
+      }
+    ],
+    "step_count": 3,
+    "notes": []
+  },
+  "eligibility": {
+    "conditions": [],
+    "has_conditions": false
+  },
+  "results": {
+    "items": [
+      {
+        "name": "Thông báo kết quả kiểm tra công tác nghiệm thu hoàn thành hạng mục công trình, công trình xây dựng (theo mẫu quy định tại Phụ lục VIII Nghị định số 207/2026/NĐ-CP)",
+        "result_code": "KQ.G17.000297",
+        "raw_text": "Thông báo kết quả kiểm tra công tác nghiệm thu hoàn thành hạng mục công trình, công trình xây dựng (theo mẫu quy định tại Phụ lục VIII Nghị định số 207/2026/NĐ-CP)"
+      }
+    ],
+    "primary_result": {
+      "name": "Thông báo kết quả kiểm tra công tác nghiệm thu hoàn thành hạng mục công trình, công trình xây dựng (theo mẫu quy định tại Phụ lục VIII Nghị định số 207/2026/NĐ-CP)",
+      "result_code": "KQ.G17.000297",
+      "raw_text": "Thông báo kết quả kiểm tra công tác nghiệm thu hoàn thành hạng mục công trình, công trình xây dựng (theo mẫu quy định tại Phụ lục VIII Nghị định số 207/2026/NĐ-CP)"
+    }
+  },
+  "legal_basis": {
+    "items": [
+      {
+        "title": "Luật Xây dựng",
+        "code": "135/2025/QH15"
+      },
+      {
+        "title": "Quy định chi tiết một số điều của Luật Xây dựng về quản lý chất lượng, thi công xây dựng và bảo trì công trình xây dựng",
+        "code": "207/2026/NĐ-CP"
+      }
+    ],
+    "count": 2
+  },
+  "attachments": [
+    {
+      "label": "BC NTHT.docx",
+      "path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/1_009794/BC%20NTHT.docx",
+      "source_section": "Thành phần hồ sơ",
+      "document_name": "Báo cáo hoàn thành thi công xây dựng hạng mục công trình, công trình xây dựng (theo Phụ lục VI Nghị định số 207/2026/NĐ-CP)."
+    }
+  ],
+  "signals": {
+    "raw_parse_warnings": [],
+    "missing_documents": false,
+    "documents_section_present": true,
+    "documents_declared_empty": false,
+    "documents_only_in_notes": false,
+    "missing_results": false
+  }
+}

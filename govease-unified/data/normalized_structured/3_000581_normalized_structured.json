@@ -1,0 +1,198 @@
+{
+  "schema_version": "1.0",
+  "normalizer_version": "0.2.0",
+  "source": {
+    "procedure_code": "3.000581",
+    "title": "Hỗ trợ chi phí đào tạo tiếng Hàn cho người lao động tham dự kỳ thi tiếng Hàn để đi làm việc tại Hàn Quốc theo Chương trình cấp phép việc làm cho lao động nước ngoài của Hàn Quốc (gọi tắt là Chương trình EPS)",
+    "raw_structured_parser_version": "0.1.0",
+    "field": "Quản lý lao động ngoài nước"
+  },
+  "procedure": {
+    "level": "Cấp xã",
+    "procedure_type": "OTHER",
+    "target_users": [
+      "Công dân Việt Nam",
+      "Tổ chức (không bao gồm doanh nghiệp",
+      "HTX)"
+    ],
+    "authorities": [],
+    "receiving_places": [
+      "Trung tâm Phục vụ hành chính công cấp xã hoặc Trung tâm Phục vụ hành chính công thành phố (Số 01 Lê Lai, thành phố Huế) hoặc nộp trực tuyến trên Cổng Dịch vụ công quốc gia."
+    ]
+  },
+  "submission": {
+    "channels": [
+      "in_person",
+      "online",
+      "postal"
+    ],
+    "methods": [
+      {
+        "method_id": "method_1",
+        "channel": "in_person",
+        "processing_time_text": "5 ngày làm việc",
+        "fee_text": null,
+        "description": null,
+        "is_online": false,
+        "is_postal": false,
+        "is_in_person": true
+      },
+      {
+        "method_id": "method_2",
+        "channel": "online",
+        "processing_time_text": "5 ngày làm việc",
+        "fee_text": null,
+        "description": null,
+        "is_online": true,
+        "is_postal": false,
+        "is_in_person": false
+      },
+      {
+        "method_id": "method_3",
+        "channel": "postal",
+        "processing_time_text": "5 ngày làm việc",
+        "fee_text": null,
+        "description": null,
+        "is_online": false,
+        "is_postal": true,
+        "is_in_person": false
+      }
+    ],
+    "timing_summary": {
+      "unique_processing_times": [
+        "5 ngày làm việc"
+      ],
+      "method_count": 3
+    }
+  },
+  "documents": {
+    "required": [
+      {
+        "document_id": "gi_y_ngh_h_tr_m_u_s_01",
+        "name": "Giấy đề nghị hỗ trợ (Mẫu số 01).",
+        "group_name": "default",
+        "group_type": "unknown",
+        "original_count": "1",
+        "copy_count": "0",
+        "conditions": [],
+        "attachment_label": null,
+        "attachment_path": null
+      },
+      {
+        "document_id": "b_n_sao_ch_ng_ch_ho_n_th_nh_kho_h_c_o_t_o_ngh",
+        "name": "Bản sao chứng chỉ hoàn thành khoá học đào tạo nghề",
+        "group_name": "default",
+        "group_type": "unknown",
+        "original_count": "0",
+        "copy_count": "1",
+        "conditions": [],
+        "attachment_label": null,
+        "attachment_path": null
+      },
+      {
+        "document_id": "ch_ng_t_h_a_n_t_i_ch_nh_h_p_ph_p",
+        "name": "Chứng từ, hóa đơn tài chính hợp pháp...",
+        "group_name": "default",
+        "group_type": "unknown",
+        "original_count": "0",
+        "copy_count": "1",
+        "conditions": [],
+        "attachment_label": null,
+        "attachment_path": null
+      },
+      {
+        "document_id": "b_n_sao_th_d_thi_ti_ng_h_n_theo_ch_ng_tr_nh_c_p_ph_p_vi_c_l_m_cho_lao_ng_n_c_ngo_i_eps_topik",
+        "name": "Bản sao Thẻ dự thi tiếng Hàn theo Chương trình cấp phép việc làm cho lao động nước ngoài (EPS-TOPIK)",
+        "group_name": "default",
+        "group_type": "unknown",
+        "original_count": "0",
+        "copy_count": "1",
+        "conditions": [],
+        "attachment_label": null,
+        "attachment_path": null
+      }
+    ],
+    "conditional": [],
+    "presented": [],
+    "notes": [],
+    "forms": [],
+    "empty_groups": [],
+    "document_count": 4
+  },
+  "process": {
+    "steps": [
+      {
+        "step_id": "step_1",
+        "title": null,
+        "content": "1.",
+        "actor": "user",
+        "channel_hint": null,
+        "time_hint": null
+      },
+      {
+        "step_id": "step_2",
+        "title": "a)",
+        "content": "a) Người lao động nộp 01 (một) bộ hồ sơ trực tiếp hoặc qua dịch vụ bưu chính công ích đến Trung tâm Phục vụ hành chính công hoặc trực tuyến tại Cổng Dịch vụ công quốc gia.",
+        "actor": "user",
+        "channel_hint": "trực tuyến",
+        "time_hint": null
+      },
+      {
+        "step_id": "step_3",
+        "title": "b)",
+        "content": "b) Trong thời hạn 05 ngày làm việc, kể từ ngày nhận đủ hồ sơ hợp lệ theo quy định, Ủy ban nhân dân xã, phường có trách nhiệm thẩm định, quyết định hỗ trợ chi phí đào tạo tiếng Hàn cho người lao động tham dự kỳ thi tiếng Hàn để đi làm việc tại Hàn Quốc theo Chương trình EPS (Mẫu số 02 Phụ lục II kèm theo Nghị quyết này). Trường hợp không đủ điều kiện hỗ trợ, trong thời hạn 03 ngày làm việc, Ủy ban nhân dân xã, phường trả lời bằng văn bản cho người lao động và nêu rõ lý do.",
+        "actor": "user",
+        "channel_hint": null,
+        "time_hint": "05 ngày làm việc"
+      },
+      {
+        "step_id": "step_4",
+        "title": "c)",
+        "content": "c) Trong thời hạn 05 ngày làm việc kể từ ngày ban hành quyết định, Ủy ban nhân dân xã, phường chỉ đạo phòng chuyên môn thực hiện chi trả chi phí đào tạo tiếng Hàn cho người lao động tham dự kỳ thi tiếng Hàn để đi làm việc tại Hàn Quốc theo Chương trình EPS qua tài khoản ngân hàng đã đăng ký tại Giấy đề nghị hỗ trợ./.",
+        "actor": "user",
+        "channel_hint": null,
+        "time_hint": "05 ngày làm việc"
+      }
+    ],
+    "step_count": 4,
+    "notes": []
+  },
+  "eligibility": {
+    "conditions": [
+      "Không"
+    ],
+    "has_conditions": true
+  },
+  "results": {
+    "items": [
+      {
+        "name": "Quyết định Hỗ trợ chi phí đào tạo tiếng Hàn cho người lao động tham dự kỳ thi tiếng Hàn để đi làm việc tại Hàn Quốc theo Chương trình EPS",
+        "result_code": "KQ-H57.000002",
+        "raw_text": "Quyết định Hỗ trợ chi phí đào tạo tiếng Hàn cho người lao động tham dự kỳ thi tiếng Hàn để đi làm việc tại Hàn Quốc theo Chương trình EPS"
+      }
+    ],
+    "primary_result": {
+      "name": "Quyết định Hỗ trợ chi phí đào tạo tiếng Hàn cho người lao động tham dự kỳ thi tiếng Hàn để đi làm việc tại Hàn Quốc theo Chương trình EPS",
+      "result_code": "KQ-H57.000002",
+      "raw_text": "Quyết định Hỗ trợ chi phí đào tạo tiếng Hàn cho người lao động tham dự kỳ thi tiếng Hàn để đi làm việc tại Hàn Quốc theo Chương trình EPS"
+    }
+  },
+  "legal_basis": {
+    "items": [
+      {
+        "title": "Quy định chính sách hỗ trợ giải quyết việc làm trong nước và nước ngoài trên địa bàn thành phố Huế giai đoạn 2026 - 2030",
+        "code": "12/2026/NQ-HĐND"
+      }
+    ],
+    "count": 1
+  },
+  "attachments": [],
+  "signals": {
+    "raw_parse_warnings": [],
+    "missing_documents": false,
+    "documents_section_present": true,
+    "documents_declared_empty": false,
+    "documents_only_in_notes": false,
+    "missing_results": false
+  }
+}

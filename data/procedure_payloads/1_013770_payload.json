@@ -1,0 +1,361 @@
+{
+  "schema_version": "3.0",
+  "record_type": "public_service_procedure_payload",
+  "id": "procedure-1.013770",
+  "procedure_code": "1.013770",
+  "code": "1.013770",
+  "title": "Thủ tục cấp giấy phép xuất khẩu, nhập khẩu hàng hóa thuộc Danh mục hàng hóa cấm xuất khẩu, cấm nhập khẩu nhằm phục vụ mục đích đặc dụng, bảo hành, phân tích, kiểm nghiệm, nghiên cứu khoa học, y tế, sản xuất dược phẩm, bảo vệ quốc phòng, an ninh quy định, trừ vũ khí trang bị kỹ thuật có ý nghĩa chiến lược, phương tiện kỹ thuật nghiệp vụ đặc biệt theo pháp luật về công nghiệp quốc phòng, an ninh và động viên công nghiệp.",
+  "language": "vi",
+  "status": "generated_from_pipeline",
+  "field": "Xuất nhập khẩu",
+  "group_key": "suc_khoe_y_te",
+  "workflow_family": null,
+  "subflow": null,
+  "source": {
+    "source_url": "file:///C:/Users/ku060/Downloads/VAIC%20source/data-pipeline/raw_data/1_013770/1_013770_procedure_detail.md",
+    "source_markdown_path": "C:\\Users\\ku060\\Downloads\\VAIC source\\data-pipeline\\raw_data\\1_013770\\1_013770_procedure_detail.md",
+    "normalized_payload_path": "C:\\Users\\ku060\\Downloads\\VAIC source\\data-pipeline\\govease-unified\\data\\normalized_structured\\1_013770_normalized_structured.json",
+    "enriched_payload_path": "C:\\Users\\ku060\\Downloads\\VAIC source\\data-pipeline\\govease-unified\\data\\enriched_structured_priority\\1_013770_enriched_structured.json"
+  },
+  "scope": {
+    "included": "Thủ tục này thuộc nhóm y tế, thường cần đối chiếu thông tin người bệnh, đơn vị tiếp nhận hoặc quyền lợi chuyên ngành. Kết quả thường nhận được là giấy phép xuất khẩu, nhập khẩu hàng hóa thuộc Danh mục hàng hóa cấm xuất khẩu, cấm nhập khẩu nhằm phục vụ mục đích đặc dụng. Thời gian xử lý tham khảo: 5 ngày làm việc.",
+    "not_included": []
+  },
+  "agency": {
+    "executing_agency": "Bộ Công thương",
+    "submission_place": null,
+    "receiving_places": []
+  },
+  "target_users": [
+    "Tổ chức (không bao gồm doanh nghiệp",
+    "HTX)",
+    "Doanh nghiệp"
+  ],
+  "submission_methods": [
+    {
+      "code": "ONLINE",
+      "label": "Trực tuyến",
+      "processing_time": "5 ngày làm việc",
+      "fee": null,
+      "description": "05 ngày làm việc, kể từ ngày nhận đủ hồ sơ hợp lệ, đúng quy định"
+    },
+    {
+      "code": "IN_PERSON",
+      "label": "Trực tiếp",
+      "processing_time": "5 ngày làm việc",
+      "fee": null,
+      "description": "05 ngày làm việc, kể từ ngày nhận đủ hồ sơ hợp lệ, đúng quy định"
+    },
+    {
+      "code": "POSTAL",
+      "label": "Dịch vụ bưu chính",
+      "processing_time": "5 ngày làm việc",
+      "fee": null,
+      "description": "05 ngày làm việc, kể từ ngày nhận đủ hồ sơ hợp lệ, đúng quy định"
+    }
+  ],
+  "processing_note": "Thời gian xử lý tham chiếu: 5 ngày làm việc. Nên xác định rõ đối tượng tham gia, quyền lợi hoặc nhu cầu điều chỉnh hồ sơ y tế trước khi nộp. Có thể chọn kênh nộp phù hợp: Trực tiếp, Trực tuyến, Dịch vụ bưu chính. Hiện có khoảng 4 mục giấy tờ cần theo dõi trong checklist.",
+  "documents": {
+    "normally_required": [
+      {
+        "name": "Tài liệu thuyết minh về kế hoạch sử dụng, quy trình quản lý hàng hóa xuất khẩu, nhập khẩu trong quá trình sử dụng tại Việt Nam; phương án xử lý hàng hóa xuất khẩu, nhập khẩu sau khi sử dụng tại Việt Nam: 01 bản chính;",
+        "quantity": "1 bản chính, 0 bản sao",
+        "notes": [],
+        "group": "default",
+        "attachment_path": null
+      },
+      {
+        "name": "Đơn đề nghị xuất khẩu, nhập khẩu hàng hóa cấm xuất khẩu, cấm nhập khẩu, theo Mẫu số 03 Mục 4 Phụ lục I.2 ban hành kèm theo Nghị quyết 66/18/NQ-CP: 01 bản chính.",
+        "quantity": "1 bản chính, 0 bản sao",
+        "notes": [],
+        "group": "default",
+        "attachment_path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/1_013770/Don%20De%20nghi%20XNK.docx"
+      }
+    ],
+    "conditional": [
+      {
+        "condition": "Báo cáo tình hình thực hiện các giấy phép đã được cấp trước đó (nếu có): 01 bản chính.",
+        "document": "Báo cáo tình hình thực hiện các giấy phép đã được cấp trước đó (nếu có): 01 bản chính.",
+        "quantity": "1 bản chính, 0 bản sao",
+        "notes": [],
+        "attachment_path": null
+      },
+      {
+        "condition": "Các tài liệu, giấy tờ khác do Bộ trưởng, Thủ trưởng cơ quan ngang Bộ có thẩm quyền quản lý quy định (nếu có).",
+        "document": "Các tài liệu, giấy tờ khác do Bộ trưởng, Thủ trưởng cơ quan ngang Bộ có thẩm quyền quản lý quy định (nếu có).",
+        "quantity": "1 bản chính, 0 bản sao",
+        "notes": [],
+        "attachment_path": null
+      }
+    ],
+    "forms": [
+      {
+        "name": "Đơn đề nghị xuất khẩu, nhập khẩu hàng hóa cấm xuất khẩu, cấm nhập khẩu, theo Mẫu số 03 Mục 4 Phụ lục I.2 ban hành kèm theo Nghị quyết 66/18/NQ-CP: 01 bản chính.",
+        "attachment_label": "Don De nghi XNK.docx",
+        "attachment_path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/1_013770/Don%20De%20nghi%20XNK.docx"
+      }
+    ],
+    "presented": [],
+    "notes": [],
+    "summary": [
+      {
+        "group": "default",
+        "name": "Tài liệu thuyết minh về kế hoạch sử dụng, quy trình quản lý hàng hóa xuất khẩu, nhập khẩu trong quá trình sử dụng tại Việt Nam; phương án xử lý hàng hóa xuất khẩu, nhập khẩu sau khi sử dụng tại Việt Nam: 01 bản chính;",
+        "quantity": "1 bản chính, 0 bản sao",
+        "notes": [],
+        "attachment_path": null
+      },
+      {
+        "group": "default",
+        "name": "Đơn đề nghị xuất khẩu, nhập khẩu hàng hóa cấm xuất khẩu, cấm nhập khẩu, theo Mẫu số 03 Mục 4 Phụ lục I.2 ban hành kèm theo Nghị quyết 66/18/NQ-CP: 01 bản chính.",
+        "quantity": "1 bản chính, 0 bản sao",
+        "notes": [],
+        "attachment_path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/1_013770/Don%20De%20nghi%20XNK.docx"
+      },
+      {
+        "group": null,
+        "name": null,
+        "quantity": "1 bản chính, 0 bản sao",
+        "notes": [],
+        "attachment_path": null
+      },
+      {
+        "group": null,
+        "name": null,
+        "quantity": "1 bản chính, 0 bản sao",
+        "notes": [],
+        "attachment_path": null
+      },
+      {
+        "group": null,
+        "name": "Đơn đề nghị xuất khẩu, nhập khẩu hàng hóa cấm xuất khẩu, cấm nhập khẩu, theo Mẫu số 03 Mục 4 Phụ lục I.2 ban hành kèm theo Nghị quyết 66/18/NQ-CP: 01 bản chính.",
+        "quantity": null,
+        "notes": null,
+        "attachment_path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/1_013770/Don%20De%20nghi%20XNK.docx"
+      }
+    ]
+  },
+  "steps": [
+    {
+      "order": 1,
+      "title": "Bước 1",
+      "description": "1.",
+      "example": null
+    },
+    {
+      "order": 2,
+      "title": "a)",
+      "description": "a) Thương nhân gửi hồ sơ đề nghị cho phép xuất khẩu, nhập khẩu hàng hóa cấm xuất khẩu, cấm nhập khẩu theo quy định đến cơ quan cấp phép.",
+      "example": null
+    },
+    {
+      "order": 3,
+      "title": "b)",
+      "description": "b) Trường hợp hồ sơ chưa đầy đủ, đúng quy định, trong thời hạn 03 ngày làm việc, kể từ ngày tiếp nhận hồ sơ, cơ quan cấp phép thông báo để thương nhân hoàn thiện hồ sơ.",
+      "example": "03 ngày làm việc"
+    },
+    {
+      "order": 4,
+      "title": "c)",
+      "description": "c) Trong thời hạn 05 ngày làm việc kể từ ngày nhận được hồ sơ đầy đủ, đúng quy định, cơ quan cấp phép có văn bản trả lời về việc cho phép hay không cho phép thương nhân xuất khẩu, nhập khẩu hàng hóa. Trường hợp không cho phép, phải nêu rõ lý do.",
+      "example": "05 ngày làm việc"
+    }
+  ],
+  "input_fields": [
+    {
+      "field": "request_subject",
+      "label": "Đối tượng làm thủ tục",
+      "type": "string",
+      "required": true
+    },
+    {
+      "field": "insurance_or_medical_need",
+      "label": "Nhu cầu bảo hiểm hoặc y tế",
+      "type": "string",
+      "required": true
+    },
+    {
+      "field": "submission_channel_preference",
+      "label": "Kênh nộp dự kiến",
+      "type": "enum",
+      "required": false,
+      "options": [
+        "Trực tiếp",
+        "Trực tuyến",
+        "Dịch vụ bưu chính"
+      ]
+    },
+    {
+      "field": "has_insurance_number",
+      "label": "Đã có mã BHXH/BHYT",
+      "type": "boolean",
+      "required": false
+    }
+  ],
+  "validation_rules": [
+    {
+      "id": "required-1",
+      "severity": "error",
+      "field": "request_subject",
+      "rule": "Trường bắt buộc phải có dữ liệu hợp lệ trước khi nộp.",
+      "message": "Thiếu trường bắt buộc: Đối tượng làm thủ tục."
+    },
+    {
+      "id": "required-2",
+      "severity": "error",
+      "field": "insurance_or_medical_need",
+      "rule": "Trường bắt buộc phải có dữ liệu hợp lệ trước khi nộp.",
+      "message": "Thiếu trường bắt buộc: Nhu cầu bảo hiểm hoặc y tế."
+    },
+    {
+      "id": "hint-1",
+      "severity": "warning",
+      "field": "general",
+      "rule": "Nên xác định trước kênh nộp hồ sơ để biết có cần bản giấy, bản điện tử hay xuất trình trực tiếp.",
+      "message": "Nên xác định trước kênh nộp hồ sơ để biết có cần bản giấy, bản điện tử hay xuất trình trực tiếp."
+    },
+    {
+      "id": "hint-2",
+      "severity": "warning",
+      "field": "general",
+      "rule": "Có mẫu biểu đính kèm, nên kiểm tra đúng biểu mẫu trước khi nộp.",
+      "message": "Có mẫu biểu đính kèm, nên kiểm tra đúng biểu mẫu trước khi nộp."
+    },
+    {
+      "id": "hint-3",
+      "severity": "warning",
+      "field": "general",
+      "rule": "Nên xác định đúng nhóm đối tượng, mã số bảo hiểm và quyền lợi áp dụng trước khi nộp.",
+      "message": "Nên xác định đúng nhóm đối tượng, mã số bảo hiểm và quyền lợi áp dụng trước khi nộp."
+    }
+  ],
+  "common_errors": [
+    {
+      "field": "general",
+      "issue": "Điền sai mẫu tờ khai hoặc chọn sai biểu mẫu đi kèm.",
+      "fix": "Nên xác định trước kênh nộp hồ sơ để biết có cần bản giấy, bản điện tử hay xuất trình trực tiếp."
+    }
+  ],
+  "clarifying_questions": [
+    {
+      "id": "clarify_1",
+      "question": "Bạn đang muốn đăng ký, điều chỉnh hay xác nhận quyền lợi y tế hoặc bảo hiểm nào?",
+      "purpose": "workflow_intake"
+    },
+    {
+      "id": "clarify_2",
+      "question": "Bạn đã có mã BHXH/BHYT hoặc thông tin đơn vị tiếp nhận liên quan chưa?",
+      "purpose": "workflow_intake"
+    }
+  ],
+  "legal_basis": [
+    {
+      "title": "Nghị định số 146/2025/NĐ-CP",
+      "code": "nghị định 146/2025"
+    },
+    {
+      "title": "Nghị quyết số 66.18/2026/NQ-CP ngày 18 tháng 5 năm 2026 của Chính phủ về việc phân quyền, cắt giảm, đơn giản hóa thủ tục hành chính, điều kiện kinh doanh",
+      "code": "66.18/2026/NQ-CP"
+    },
+    {
+      "title": "Quy định chi tiết một số điều của Luật Quản lý Ngoại thương",
+      "code": "69/2018/NĐ-CP"
+    },
+    {
+      "title": "Luật quản lý ngoại thương",
+      "code": "05/2017/QH14"
+    }
+  ],
+  "legal_bases": [
+    {
+      "title": "Nghị định số 146/2025/NĐ-CP",
+      "code": "nghị định 146/2025"
+    },
+    {
+      "title": "Nghị quyết số 66.18/2026/NQ-CP ngày 18 tháng 5 năm 2026 của Chính phủ về việc phân quyền, cắt giảm, đơn giản hóa thủ tục hành chính, điều kiện kinh doanh",
+      "code": "66.18/2026/NQ-CP"
+    },
+    {
+      "title": "Quy định chi tiết một số điều của Luật Quản lý Ngoại thương",
+      "code": "69/2018/NĐ-CP"
+    },
+    {
+      "title": "Luật quản lý ngoại thương",
+      "code": "05/2017/QH14"
+    }
+  ],
+  "faq": [
+    {
+      "question": "Có thể nộp qua kênh nào?",
+      "answer": "Các kênh hiện có: Trực tiếp, Trực tuyến, Dịch vụ bưu chính."
+    },
+    {
+      "question": "Thời gian xử lý tham chiếu là bao lâu?",
+      "answer": "Thời gian xử lý tham chiếu hiện có là 5 ngày làm việc."
+    },
+    {
+      "question": "Kết quả chính của thủ tục là gì?",
+      "answer": "Kết quả chính được trích xuất là giấy phép xuất khẩu, nhập khẩu hàng hóa thuộc Danh mục hàng hóa cấm xuất khẩu, cấm nhập khẩu nhằm phục vụ mục đích đặc dụng."
+    }
+  ],
+  "guidance": {
+    "highlight_documents": [
+      {
+        "bucket": "required",
+        "name": "Tài liệu thuyết minh về kế hoạch sử dụng, quy trình quản lý hàng hóa xuất khẩu, nhập khẩu trong quá trình sử dụng tại Việt Nam; phương án xử lý hàng hóa xuất khẩu, nhập khẩu sau khi sử dụng tại Việt Nam: 01 bản chính;",
+        "conditions": [],
+        "attachment_path": null
+      },
+      {
+        "bucket": "required",
+        "name": "Đơn đề nghị xuất khẩu, nhập khẩu hàng hóa cấm xuất khẩu, cấm nhập khẩu, theo Mẫu số 03 Mục 4 Phụ lục I.2 ban hành kèm theo Nghị quyết 66/18/NQ-CP: 01 bản chính.",
+        "conditions": [],
+        "attachment_path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/1_013770/Don%20De%20nghi%20XNK.docx"
+      },
+      {
+        "bucket": "conditional",
+        "name": "Báo cáo tình hình thực hiện các giấy phép đã được cấp trước đó (nếu có): 01 bản chính.",
+        "conditions": [
+          "Báo cáo tình hình thực hiện các giấy phép đã được cấp trước đó (nếu có): 01 bản chính."
+        ],
+        "attachment_path": null
+      },
+      {
+        "bucket": "conditional",
+        "name": "Các tài liệu, giấy tờ khác do Bộ trưởng, Thủ trưởng cơ quan ngang Bộ có thẩm quyền quản lý quy định (nếu có).",
+        "conditions": [
+          "Các tài liệu, giấy tờ khác do Bộ trưởng, Thủ trưởng cơ quan ngang Bộ có thẩm quyền quản lý quy định (nếu có)."
+        ],
+        "attachment_path": null
+      }
+    ],
+    "special_cases": [],
+    "common_errors": [
+      "Điền sai mẫu tờ khai hoặc chọn sai biểu mẫu đi kèm."
+    ],
+    "validation_hints": [
+      "Nên xác định trước kênh nộp hồ sơ để biết có cần bản giấy, bản điện tử hay xuất trình trực tiếp.",
+      "Có mẫu biểu đính kèm, nên kiểm tra đúng biểu mẫu trước khi nộp.",
+      "Nên xác định đúng nhóm đối tượng, mã số bảo hiểm và quyền lợi áp dụng trước khi nộp."
+    ]
+  },
+  "next_steps": {
+    "summary": "Nên xác định rõ đối tượng tham gia, quyền lợi hoặc nhu cầu điều chỉnh hồ sơ y tế trước khi nộp. Có thể chọn kênh nộp phù hợp: Trực tiếp, Trực tuyến, Dịch vụ bưu chính. Hiện có khoảng 4 mục giấy tờ cần theo dõi trong checklist.",
+    "time_badge": "5 ngày làm việc",
+    "result_label": "giấy phép xuất khẩu, nhập khẩu hàng hóa thuộc Danh mục hàng hóa cấm xuất khẩu, cấm nhập khẩu nhằm phục vụ mục đích đặc dụng",
+    "primary_channel": "online",
+    "channels": [
+      "in_person",
+      "online",
+      "postal"
+    ]
+  },
+  "notes": [],
+  "provenance": {
+    "pipeline": "raw->structured->normalized->enriched->ui_api_payload",
+    "normalizer_version": "0.2.0",
+    "enricher_version": "0.2.0",
+    "mapping_notes": "excluded_from_clean_workflow_dataset",
+    "supported_group": true
+  }
+}

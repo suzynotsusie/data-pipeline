@@ -1,0 +1,221 @@
+{
+  "schema_version": "1.0",
+  "normalizer_version": "0.2.0",
+  "source": {
+    "procedure_code": "1.001646",
+    "title": "Giải quyết hưởng trợ cấp đối với nhà giáo đã nghỉ hưu chưa được hưởng chế độ phụ cấp thâm niên trong lương hưu theo Nghị định số 14/2020/NĐ-CP",
+    "raw_structured_parser_version": "0.1.0",
+    "field": "Thực hiện chính sách BHXH"
+  },
+  "procedure": {
+    "level": "Cấp xã, Cấp tỉnh",
+    "procedure_type": "TTHC được luật giao quy định chi tiết",
+    "target_users": [
+      "Công dân Việt Nam"
+    ],
+    "authorities": [
+      "Bảo hiểm xã hội cấp Tỉnh, Công đoàn cơ quan BHXH Việt Nam"
+    ],
+    "receiving_places": []
+  },
+  "submission": {
+    "channels": [
+      "in_person",
+      "online",
+      "postal"
+    ],
+    "methods": [
+      {
+        "method_id": "method_1",
+        "channel": "online",
+        "processing_time_text": "12 ngày làm việc",
+        "fee_text": null,
+        "description": null,
+        "is_online": true,
+        "is_postal": false,
+        "is_in_person": false
+      },
+      {
+        "method_id": "method_2",
+        "channel": "postal",
+        "processing_time_text": "12 ngày làm việc",
+        "fee_text": null,
+        "description": null,
+        "is_online": false,
+        "is_postal": true,
+        "is_in_person": false
+      },
+      {
+        "method_id": "method_3",
+        "channel": "in_person",
+        "processing_time_text": "12 ngày làm việc",
+        "fee_text": null,
+        "description": null,
+        "is_online": false,
+        "is_postal": false,
+        "is_in_person": true
+      }
+    ],
+    "timing_summary": {
+      "unique_processing_times": [
+        "12 ngày làm việc"
+      ],
+      "method_count": 3
+    }
+  },
+  "documents": {
+    "required": [
+      {
+        "document_id": "b_n_ch_nh_t_khai_ngh_h_ng_tr_c_p",
+        "name": "Bản chính Tờ khai đề nghị hưởng trợ cấp",
+        "group_name": "1. Đối với nhà giáo đang hưởng lương hưu",
+        "group_type": "required",
+        "original_count": "1",
+        "copy_count": "0",
+        "conditions": [],
+        "attachment_label": null,
+        "attachment_path": null
+      },
+      {
+        "document_id": "a_b_n_ch_nh_t_khai_ngh_h_ng_tr_c_p_c_a_th_n_nh_n",
+        "name": "a) Bản chính Tờ khai đề nghị hưởng trợ cấp của thân nhân",
+        "group_name": "2. Đối với nhà giáo đủ điều kiện hưởng trợ cấp, chưa được giải quyết chế độ mà từ trần từ ngày 01 tháng 01 năm 2012 trở về sau, hồ sơ bao gồm",
+        "group_type": "conditional",
+        "original_count": "1",
+        "copy_count": "0",
+        "conditions": [],
+        "attachment_label": null,
+        "attachment_path": null
+      },
+      {
+        "document_id": "b_b_n_sao_gi_y_ch_ng_t_ho_c_gi_y_b_o_t_ho_c_quy_t_nh_c_a_t_a_n_tuy_n_b_l_ch_t_mang_theo_b_n_ch_nh_i_chi_u",
+        "name": "b) Bản sao Giấy chứng tử hoặc Giấy báo tử hoặc Quyết định của tòa án tuyên bố là đã chết (mang theo bản chính để đối chiếu)",
+        "group_name": "2. Đối với nhà giáo đủ điều kiện hưởng trợ cấp, chưa được giải quyết chế độ mà từ trần từ ngày 01 tháng 01 năm 2012 trở về sau, hồ sơ bao gồm",
+        "group_type": "conditional",
+        "original_count": "0",
+        "copy_count": "1",
+        "conditions": [],
+        "attachment_label": null,
+        "attachment_path": null
+      }
+    ],
+    "conditional": [
+      {
+        "document_id": "c_b_n_ch_nh_v_n_b_n_y_quy_n_m_u_s_03_tr_ng_h_p_ch_c_m_t_th_n_nh_n_th_kh_ng_c_n_v_n_b_n_y_quy_n_n_y",
+        "name": "c) Bản chính Văn bản ủy quyền (mẫu số 03) (trường hợp chỉ có một thân nhân thì không cần văn bản ủy quyền này).",
+        "group_name": "2. Đối với nhà giáo đủ điều kiện hưởng trợ cấp, chưa được giải quyết chế độ mà từ trần từ ngày 01 tháng 01 năm 2012 trở về sau, hồ sơ bao gồm",
+        "group_type": "conditional",
+        "original_count": "1",
+        "copy_count": "0",
+        "conditions": [
+          "c) Bản chính Văn bản ủy quyền (mẫu số 03) (trường hợp chỉ có một thân nhân thì không cần văn bản ủy quyền này)."
+        ],
+        "attachment_label": null,
+        "attachment_path": null
+      }
+    ],
+    "presented": [],
+    "notes": [],
+    "forms": [],
+    "empty_groups": [],
+    "document_count": 4
+  },
+  "process": {
+    "steps": [
+      {
+        "step_id": "step_1",
+        "title": null,
+        "content": "1. **Bước 1. Lập, nộp hồ sơ**",
+        "actor": "user",
+        "channel_hint": null,
+        "time_hint": null
+      },
+      {
+        "step_id": "step_2",
+        "title": null,
+        "content": "Người hưởng hoặc thân nhân người hưởng lập hồ sơ theo quy định tại mục 15.3 (Thành phần hồ sơ); nộp hồ sơ cho cơ quan BHXH đang chi trả lương hưu, trợ cấp BHXH hoặc cơ quan BHXH (trường hợp người hưởng đã chết).",
+        "actor": "authority",
+        "channel_hint": null,
+        "time_hint": null
+      },
+      {
+        "step_id": "step_3",
+        "title": null,
+        "content": "2. **Bước 2.**",
+        "actor": "user",
+        "channel_hint": null,
+        "time_hint": null
+      },
+      {
+        "step_id": "step_4",
+        "title": null,
+        "content": "Cơ quan BHXH tiếp nhận hồ sơ và giải quyết theo quy định.",
+        "actor": "authority",
+        "channel_hint": null,
+        "time_hint": null
+      },
+      {
+        "step_id": "step_5",
+        "title": null,
+        "content": "3. **Bước 3. Nhận kết quả giải quyết**",
+        "actor": "user",
+        "channel_hint": null,
+        "time_hint": null
+      },
+      {
+        "step_id": "step_6",
+        "title": null,
+        "content": "Người hưởng hoặc thân nhân người hưởng nhận Quyết định về việc hưởng trợ cấp theo Nghị định số 14/2020/NĐ-CP ngày 24/01/2020 của Chính phủ (nếu đủ hồ sơ đủ điều kiện giải quyết) và tiền trợ cấp.",
+        "actor": "user",
+        "channel_hint": null,
+        "time_hint": null
+      },
+      {
+        "step_id": "step_7",
+        "title": null,
+        "content": "Văn bản trả lời nêu rõ lý do không giải quyết (nếu không đủ hồ sơ, hồ sơ không đúng).",
+        "actor": "user",
+        "channel_hint": null,
+        "time_hint": null
+      }
+    ],
+    "step_count": 7,
+    "notes": []
+  },
+  "eligibility": {
+    "conditions": [],
+    "has_conditions": false
+  },
+  "results": {
+    "items": [
+      {
+        "name": "Quyết định về việc hưởng trợ cấp theo Nghị định số14/2020/NĐ-CP ngày 24/01/2020 của Chính phủ",
+        "result_code": "KQ.G24.000020",
+        "raw_text": "Quyết định về việc hưởng trợ cấp theo Nghị định số14/2020/NĐ-CP ngày 24/01/2020 của Chính phủ"
+      }
+    ],
+    "primary_result": {
+      "name": "Quyết định về việc hưởng trợ cấp theo Nghị định số14/2020/NĐ-CP ngày 24/01/2020 của Chính phủ",
+      "result_code": "KQ.G24.000020",
+      "raw_text": "Quyết định về việc hưởng trợ cấp theo Nghị định số14/2020/NĐ-CP ngày 24/01/2020 của Chính phủ"
+    }
+  },
+  "legal_basis": {
+    "items": [
+      {
+        "title": "Nghị định 14/2020/NĐ-CP",
+        "code": "14/2020/NĐ-CP"
+      }
+    ],
+    "count": 1
+  },
+  "attachments": [],
+  "signals": {
+    "raw_parse_warnings": [],
+    "missing_documents": false,
+    "documents_section_present": true,
+    "documents_declared_empty": false,
+    "documents_only_in_notes": false,
+    "missing_results": false
+  }
+}

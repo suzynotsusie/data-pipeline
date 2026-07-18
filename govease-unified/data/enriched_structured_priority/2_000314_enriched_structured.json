@@ -1,0 +1,113 @@
+{
+  "schema_version": "1.0",
+  "enricher_version": "0.2.0",
+  "source": {
+    "procedure_code": "2.000314",
+    "title": "Chấm dứt hoạt động của Văn phòng đại diện của thương nhân nước ngoài tại Việt Nam thuộc thẩm quyền cấp của Cơ quan cấp Giấy phép",
+    "group_key": "suc_khoe_y_te",
+    "workflow_family": null,
+    "subflow": null
+  },
+  "experience": {
+    "entry_label": "Hỗ trợ y tế và bảo hiểm",
+    "overview_summary": "Thủ tục này thuộc nhóm y tế, thường cần đối chiếu thông tin người bệnh, đơn vị tiếp nhận hoặc quyền lợi chuyên ngành. Kết quả thường nhận được là Thông báo chấm dứt hoạt động của Văn phòng đại diện. Thời gian xử lý tham khảo: 5 ngày làm việc.",
+    "next_step_summary": "Nên xác định rõ đối tượng tham gia, quyền lợi hoặc nhu cầu điều chỉnh hồ sơ y tế trước khi nộp. Có thể chọn kênh nộp phù hợp: Trực tiếp, Trực tuyến, Dịch vụ bưu chính. Hiện có khoảng 5 mục giấy tờ cần theo dõi trong checklist.",
+    "tone": "supportive_public_service"
+  },
+  "guidance": {
+    "highlight_documents": [
+      {
+        "bucket": "required",
+        "name": "5. Bản chính Giấy phép thành lập Văn phòng đại diện.",
+        "conditions": [],
+        "attachment_path": null
+      },
+      {
+        "bucket": "required",
+        "name": "4. Danh sách người lao động và quyền lợi tương ứng hiện hành của người lao động;",
+        "conditions": [],
+        "attachment_path": null
+      },
+      {
+        "bucket": "required",
+        "name": "3. Danh sách chủ nợ và số nợ chưa thanh toán, gồm cả nợ thuế và nợ tiền đóng bảo hiểm xã hội;",
+        "conditions": [],
+        "attachment_path": null
+      },
+      {
+        "bucket": "conditional",
+        "name": "2. Bản sao văn bản của Cơ quan cấp Giấy phép không gia hạn Giấy phép thành lập Văn phòng đại diện (đối với trường hợp quy định tại Khoản 4 Điều 35 Nghị định 07/2016/NĐ-CP) hoặc bản sao Quyết định thu hồi Giấy phép thành lập Văn phòng đại diện của Cơ quan cấp Giấy phép (đối với trường hợp quy định tại Khoản 5 Điều 35 Nghị định 07/2016/NĐ-CP);",
+        "conditions": [
+          "2. Bản sao văn bản của Cơ quan cấp Giấy phép không gia hạn Giấy phép thành lập Văn phòng đại diện (đối với trường hợp quy định tại Khoản 4 Điều 35 Nghị định 07/2016/NĐ-CP) hoặc bản sao Quyết định thu hồi Giấy phép thành lập Văn phòng đại diện của Cơ quan cấp Giấy phép (đối với trường hợp quy định tại Khoản 5 Điều 35 Nghị định 07/2016/NĐ-CP);"
+        ],
+        "attachment_path": null
+      },
+      {
+        "bucket": "conditional",
+        "name": "1. Thông báo về việc chấm dứt hoạt động Văn phòng đại diện, Chi nhánh theo mẫu của Bộ Công Thương do đại diện có thẩm quyền của thương nhân nước ngoài ký, trừ trường hợp quy định tại Khoản 5 Điều 35 Nghị định 07/2016/NĐ-CP;",
+        "conditions": [
+          "1. Thông báo về việc chấm dứt hoạt động Văn phòng đại diện, Chi nhánh theo mẫu của Bộ Công Thương do đại diện có thẩm quyền của thương nhân nước ngoài ký, trừ trường hợp quy định tại Khoản 5 Điều 35 Nghị định 07/2016/NĐ-CP;"
+        ],
+        "attachment_path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/2_000314/M%E1%BA%ABu%20TB.docx"
+      }
+    ],
+    "special_cases": [
+      "Có yếu tố nước ngoài",
+      "Có thể cần đối chiếu quá trình đóng bảo hiểm để giải quyết chế độ",
+      "Có thể cần xác minh quan hệ lao động hoặc giấy phép làm việc"
+    ],
+    "common_errors": [
+      "Thiếu giấy tờ hợp pháp hóa hoặc giấy tờ nhân thân của phía nước ngoài.",
+      "Điền sai mẫu tờ khai hoặc chọn sai biểu mẫu đi kèm.",
+      "Thiếu hồ sơ về vị trí việc làm, đơn vị sử dụng lao động hoặc điều kiện làm việc áp dụng."
+    ],
+    "validation_hints": [
+      "Nên xác định trước kênh nộp hồ sơ để biết có cần bản giấy, bản điện tử hay xuất trình trực tiếp.",
+      "Có mẫu biểu đính kèm, nên kiểm tra đúng biểu mẫu trước khi nộp.",
+      "Nên xác định đúng nhóm đối tượng, mã số bảo hiểm và quyền lợi áp dụng trước khi nộp."
+    ]
+  },
+  "intake": {
+    "candidate_input_fields": [
+      {
+        "field_id": "request_subject",
+        "label": "Đối tượng làm thủ tục",
+        "field_type": "text",
+        "required": true
+      },
+      {
+        "field_id": "insurance_or_medical_need",
+        "label": "Nhu cầu bảo hiểm hoặc y tế",
+        "field_type": "text",
+        "required": true
+      },
+      {
+        "field_id": "submission_channel_preference",
+        "label": "Kênh nộp dự kiến",
+        "field_type": "enum",
+        "required": false
+      },
+      {
+        "field_id": "has_insurance_number",
+        "label": "Đã có mã BHXH/BHYT",
+        "field_type": "boolean",
+        "required": false
+      }
+    ],
+    "suggested_clarifying_questions": [
+      "Bạn đang muốn đăng ký, điều chỉnh hay xác nhận quyền lợi y tế hoặc bảo hiểm nào?",
+      "Bạn đã có mã BHXH/BHYT hoặc thông tin đơn vị tiếp nhận liên quan chưa?"
+    ]
+  },
+  "ui_hints": {
+    "primary_channel": "online",
+    "result_label": "Thông báo chấm dứt hoạt động của Văn phòng đại diện",
+    "time_badge": "5 ngày làm việc",
+    "document_count_badge": 5
+  },
+  "provenance": {
+    "generator": "workflow_domain_enricher",
+    "derivation_mode": "rule_based_semantic_enrichment",
+    "supported_group": true
+  }
+}

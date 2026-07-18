@@ -1,0 +1,120 @@
+{
+  "schema_version": "1.0",
+  "enricher_version": "0.2.0",
+  "source": {
+    "procedure_code": "1.014138",
+    "title": "Ký hợp đồng khám bệnh, chữa bệnh bảo hiểm y tế",
+    "group_key": "suc_khoe_y_te",
+    "workflow_family": null,
+    "subflow": null
+  },
+  "experience": {
+    "entry_label": "Hỗ trợ y tế và bảo hiểm",
+    "overview_summary": "Thủ tục này thuộc nhóm y tế và bảo hiểm, thường dùng để đăng ký, điều chỉnh hoặc xác nhận quyền lợi bảo hiểm y tế. Kết quả thường nhận được là Hợp đồng khám bệnh, chữa bệnh bảo hiểm y tế được ký kết giữa cơ quan bảo hiểm xã hội và cơ sở khám bệnh, chữa bệnh. Thời gian xử lý tham khảo: theo thời hạn của cơ quan xử lý.",
+    "next_step_summary": "Nên xác định rõ đối tượng tham gia, quyền lợi hoặc nhu cầu điều chỉnh hồ sơ y tế trước khi nộp. Có thể chọn kênh nộp phù hợp: Trực tiếp, Trực tuyến, Dịch vụ bưu chính. Hiện có khoảng 9 mục giấy tờ cần theo dõi trong checklist.",
+    "tone": "supportive_public_service"
+  },
+  "guidance": {
+    "highlight_documents": [
+      {
+        "bucket": "required",
+        "name": "Văn bản thông báo của cơ quan có thẩm quyền về quyết định đình chỉ toàn bộ hoặc một phần hoạt động của cơ sở khám bệnh, chữa bệnh hoặc văn bản thông báo của cơ sở khám bệnh, chữa bệnh về việc chấm dứt hợp đồng.",
+        "conditions": [],
+        "attachment_path": null
+      },
+      {
+        "bucket": "required",
+        "name": "Văn bản đề nghị ký hợp đồng khám bệnh, chữa bệnh bảo hiểm y tế của cơ sở khám bệnh, chữa bệnh theo Mẫu số 7 Phụ lục ban hành kèm theo Nghị định số 188/2025/NĐ-CP",
+        "conditions": [],
+        "attachment_path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/1_014138/Mau%20CV%20de%20nghi.docx"
+      },
+      {
+        "bucket": "required",
+        "name": "Danh mục thuốc, thiết bị y tế sử dụng tại cơ sở khám bệnh, chữa bệnh.",
+        "conditions": [],
+        "attachment_path": null
+      },
+      {
+        "bucket": "required",
+        "name": "Bảng kê danh mục các thiết bị phần mềm, phần cứng bảo đảm việc kết nối liên thông để trích chuyển dữ liệu điện tử trong thanh toán bảo hiểm y tế theo Mẫu số 8 Phụ lục ban hành kèm theo Nghị định số 188/2025/NĐ-CP",
+        "conditions": [],
+        "attachment_path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/1_014138/Mau%20bang%20ke%20dm%20thiet%20bi.docx"
+      },
+      {
+        "bucket": "required",
+        "name": "Bảng kê nhân lực, tổng số giường bệnh của cơ sở khám bệnh, chữa bệnh theo từng khoa, phòng, bộ phận chuyên môn được cấp có thẩm quyền phê duyệt",
+        "conditions": [],
+        "attachment_path": null
+      },
+      {
+        "bucket": "required",
+        "name": "Văn bản đề xuất giá dịch vụ khám bệnh, chữa bệnh bảo hiểm y tế áp dụng để xác định mức thanh toán tại cơ sở (đối với cơ sở khám bệnh, chữa bệnh tư nhân theo quy định tại Điều 47 của Nghị định số 188/2025/NĐ-CP).",
+        "conditions": [],
+        "attachment_path": null
+      }
+    ],
+    "special_cases": [
+      "Có trường hợp hồ sơ điện tử thay thế bản giấy",
+      "Có thể cần đối chiếu quyền lợi bảo hiểm hoặc tuyến chuyên môn",
+      "Có thể cần đối chiếu quá trình đóng bảo hiểm để giải quyết chế độ"
+    ],
+    "common_errors": [
+      "Điền sai mẫu tờ khai hoặc chọn sai biểu mẫu đi kèm.",
+      "Sai nhóm đối tượng tham gia hoặc thông tin quyền lợi bảo hiểm y tế."
+    ],
+    "validation_hints": [
+      "Nên xác định trước kênh nộp hồ sơ để biết có cần bản giấy, bản điện tử hay xuất trình trực tiếp.",
+      "Có mẫu biểu đính kèm, nên kiểm tra đúng biểu mẫu trước khi nộp.",
+      "Nên xác định đúng nhóm đối tượng, mã số bảo hiểm và quyền lợi áp dụng trước khi nộp."
+    ]
+  },
+  "intake": {
+    "candidate_input_fields": [
+      {
+        "field_id": "request_subject",
+        "label": "Đối tượng làm thủ tục",
+        "field_type": "text",
+        "required": true
+      },
+      {
+        "field_id": "insurance_or_medical_need",
+        "label": "Nhu cầu bảo hiểm hoặc y tế",
+        "field_type": "text",
+        "required": true
+      },
+      {
+        "field_id": "submission_channel_preference",
+        "label": "Kênh nộp dự kiến",
+        "field_type": "enum",
+        "required": false
+      },
+      {
+        "field_id": "has_insurance_number",
+        "label": "Đã có mã BHXH/BHYT",
+        "field_type": "boolean",
+        "required": false
+      },
+      {
+        "field_id": "insurance_participation_group",
+        "label": "Nhóm tham gia BHYT",
+        "field_type": "enum",
+        "required": true
+      }
+    ],
+    "suggested_clarifying_questions": [
+      "Bạn đang muốn đăng ký, điều chỉnh hay xác nhận quyền lợi y tế hoặc bảo hiểm nào?",
+      "Bạn đã có mã BHXH/BHYT hoặc thông tin đơn vị tiếp nhận liên quan chưa?"
+    ]
+  },
+  "ui_hints": {
+    "primary_channel": "online",
+    "result_label": "Hợp đồng khám bệnh, chữa bệnh bảo hiểm y tế được ký kết giữa cơ quan bảo hiểm xã hội và cơ sở khám bệnh, chữa bệnh",
+    "time_badge": null,
+    "document_count_badge": 9
+  },
+  "provenance": {
+    "generator": "workflow_domain_enricher",
+    "derivation_mode": "rule_based_semantic_enrichment",
+    "supported_group": true
+  }
+}

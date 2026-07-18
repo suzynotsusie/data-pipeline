@@ -41,8 +41,8 @@ export function PortalHeader() {
           <a className="home-link active" href="#top" aria-label="Trang chủ">
             <Icon name="home" />
           </a>
-          {links.map((link, index) => (
-            <a className={index === 1 ? "active" : ""} href={`/demo?feature=${encodeURIComponent(link)}`} key={link}>
+          {links.map((link) => (
+            <a href={`/demo?feature=${encodeURIComponent(link)}`} key={link}>
               {link}
             </a>
           ))}

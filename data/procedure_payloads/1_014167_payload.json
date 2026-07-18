@@ -1,0 +1,354 @@
+{
+  "schema_version": "3.0",
+  "record_type": "public_service_procedure_payload",
+  "id": "procedure-1.014167",
+  "procedure_code": "1.014167",
+  "code": "1.014167",
+  "title": "HƯỞNG CHẾ ĐỘ THAI SẢN ĐỐI VỚI NGƯỜI LAO ĐỘNG NHẬN NUÔI CON NUÔI DƯỚI 6 THÁNG TUỔI",
+  "language": "vi",
+  "status": "generated_from_pipeline",
+  "field": "Bảo hiểm xã hội",
+  "group_key": "hon_nhan_gia_dinh",
+  "workflow_family": null,
+  "subflow": null,
+  "source": {
+    "source_url": "file:///C:/Users/ku060/Downloads/VAIC%20source/data-pipeline/raw_data/1_014167/1_014167_procedure_detail.md",
+    "source_markdown_path": "C:\\Users\\ku060\\Downloads\\VAIC source\\data-pipeline\\raw_data\\1_014167\\1_014167_procedure_detail.md",
+    "normalized_payload_path": "C:\\Users\\ku060\\Downloads\\VAIC source\\data-pipeline\\govease-unified\\data\\normalized_structured\\1_014167_normalized_structured.json",
+    "enriched_payload_path": "C:\\Users\\ku060\\Downloads\\VAIC source\\data-pipeline\\govease-unified\\data\\enriched_structured_priority\\1_014167_enriched_structured.json"
+  },
+  "scope": {
+    "included": "Thủ tục này thuộc nhóm hộ tịch gia đình, thường yêu cầu đối chiếu thông tin nhân thân và tình trạng hôn nhân của các bên. Kết quả thường nhận được là Danh sách giải quyết hưởng chế độ thai sản cho người lao động. Thời gian xử lý tham khảo: 7 ngày làm việc.",
+    "not_included": []
+  },
+  "agency": {
+    "executing_agency": "Bảo hiểm xã hội tỉnh",
+    "submission_place": null,
+    "receiving_places": []
+  },
+  "target_users": [
+    "Công dân Việt Nam"
+  ],
+  "submission_methods": [
+    {
+      "code": "ONLINE",
+      "label": "Trực tuyến",
+      "processing_time": "7 ngày làm việc",
+      "fee": null,
+      "description": "- Tong thời hạn 07 ngày làm việc kể từ ngày nhận đủ hồ sơ từ người sử dụng lao động<br>Trực tiếp, trực tuyến hoặc qua dịch vụ bưu chính"
+    },
+    {
+      "code": "POSTAL",
+      "label": "Dịch vụ bưu chính",
+      "processing_time": "7 ngày làm việc",
+      "fee": null,
+      "description": "- Tong thời hạn 07 ngày làm việc kể từ ngày nhận đủ hồ sơ từ người sử dụng lao động<br>Trực tiếp, trực tuyến hoặc qua dịch vụ bưu chính"
+    },
+    {
+      "code": "IN_PERSON",
+      "label": "Trực tiếp",
+      "processing_time": "5 ngày làm việc",
+      "fee": null,
+      "description": "- Trong thời hạn 05 ngày làm việc kể từ ngày nhận đủ hồ sơ từ người lao động.<br>Trực tiếp, trực tuyến hoặc qua dịch vụ bưu chính"
+    },
+    {
+      "code": "IN_PERSON",
+      "label": "Trực tiếp",
+      "processing_time": "7 ngày làm việc",
+      "fee": null,
+      "description": "- Tong thời hạn 07 ngày làm việc kể từ ngày nhận đủ hồ sơ từ người sử dụng lao động<br>Trực tiếp, trực tuyến hoặc qua dịch vụ bưu chính"
+    },
+    {
+      "code": "POSTAL",
+      "label": "Dịch vụ bưu chính",
+      "processing_time": "5 ngày làm việc",
+      "fee": null,
+      "description": "- Trong thời hạn 05 ngày làm việc kể từ ngày nhận đủ hồ sơ từ người lao động.<br>Trực tiếp, trực tuyến hoặc qua dịch vụ bưu chính"
+    },
+    {
+      "code": "ONLINE",
+      "label": "Trực tuyến",
+      "processing_time": "5 ngày làm việc",
+      "fee": null,
+      "description": "- Trong thời hạn 05 ngày làm việc kể từ ngày nhận đủ hồ sơ từ người lao động.<br>Trực tiếp, trực tuyến hoặc qua dịch vụ bưu chính"
+    }
+  ],
+  "processing_note": "Thời gian xử lý tham chiếu: 7 ngày làm việc. Nên rà trước giấy tờ nhân thân của hai bên và các điều kiện đặc biệt nếu có yếu tố nước ngoài hoặc ủy quyền. Hiện có khoảng 3 mục giấy tờ cần theo dõi trong checklist.",
+  "documents": {
+    "normally_required": [
+      {
+        "name": "Bản sao giấy chứng nhận nuôi con nuôi và biên bản giao nhận con.",
+        "quantity": "0 bản chính, 1 bản sao",
+        "notes": [],
+        "group": "default",
+        "attachment_path": null
+      }
+    ],
+    "conditional": [
+      {
+        "condition": "Danh sách người lao động nghỉ việc hưởng chế độ thai sản do người sử dụng lao động lập (ngoại trừ trường hợp người lao động thôi việc trước thời điểm nhận nuôi con nuôi hoặc không còn người sử dụng lao động).",
+        "document": "Danh sách người lao động nghỉ việc hưởng chế độ thai sản do người sử dụng lao động lập (ngoại trừ trường hợp người lao động thôi việc trước thời điểm nhận nuôi con nuôi hoặc không còn người sử dụng lao động).",
+        "quantity": "1 bản chính, 0 bản sao",
+        "notes": [],
+        "attachment_path": null
+      },
+      {
+        "condition": "⁕ Trường hợp các giấy tờ nêu trên hoặc các giấy tờ có nội dung tương tự do cơ quan, tổ chức, cá nhân có thẩm quyền của nước ngoài cấp thì phải đáp ứng được các yêu cầu: + Có bản dịch tiếng Việt được công chứng hoặc chứng thực theo quy định của pháp luật về công chứng, chứng thực; + Được hợp pháp hóa lãnh sự, trừ trường hợp điều ước quốc tế mà nước Cộng hòa xã hội chủ nghĩa Việt Nam là thành viên có quy định khác",
+        "document": "⁕ Trường hợp các giấy tờ nêu trên hoặc các giấy tờ có nội dung tương tự do cơ quan, tổ chức, cá nhân có thẩm quyền của nước ngoài cấp thì phải đáp ứng được các yêu cầu: + Có bản dịch tiếng Việt được công chứng hoặc chứng thực theo quy định của pháp luật về công chứng, chứng thực; + Được hợp pháp hóa lãnh sự, trừ trường hợp điều ước quốc tế mà nước Cộng hòa xã hội chủ nghĩa Việt Nam là thành viên có quy định khác",
+        "quantity": "1 bản chính, 1 bản sao",
+        "notes": [],
+        "attachment_path": null
+      }
+    ],
+    "forms": [],
+    "presented": [],
+    "notes": [],
+    "summary": [
+      {
+        "group": "default",
+        "name": "Bản sao giấy chứng nhận nuôi con nuôi và biên bản giao nhận con.",
+        "quantity": "0 bản chính, 1 bản sao",
+        "notes": [],
+        "attachment_path": null
+      },
+      {
+        "group": null,
+        "name": null,
+        "quantity": "1 bản chính, 0 bản sao",
+        "notes": [],
+        "attachment_path": null
+      },
+      {
+        "group": null,
+        "name": null,
+        "quantity": "1 bản chính, 1 bản sao",
+        "notes": [],
+        "attachment_path": null
+      }
+    ]
+  },
+  "steps": [
+    {
+      "order": 1,
+      "title": "Bước 1",
+      "description": "1.",
+      "example": null
+    },
+    {
+      "order": 2,
+      "title": "Bước 1:",
+      "description": "Bước 1: Người lao động có trách nhiệm nộp hồ sơ cho người sử dụng lao động. ⁕ Trường hợp người lao động thôi việc trước thời điểm nhận nuôi con nuôi dưới 06 tháng tuổi hoặc không còn người sử dụng lao động thì người lao động nộp hồ sơ cho cơ quan bảo hiểm xã hội.",
+      "example": "06 tháng"
+    },
+    {
+      "order": 3,
+      "title": "Bước 2:",
+      "description": "Bước 2: Trong thời hạn 07 ngày làm việc kể từ ngày nhận đủ hồ sơ từ người lao động, người sử dụng lao động có trách nhiệm lập danh sách người lao động nghỉ việc hưởng chế độ thai sản kèm theo hồ sơ nộp cho cơ quan bảo hiểm xã hội.",
+      "example": "07 ngày làm việc"
+    },
+    {
+      "order": 4,
+      "title": "Bước 4",
+      "description": "Bước 3: Cơ quan bảo hiểm xã hội có trách nhiệm giải quyết trong thời hạn 07 ngày làm việc kể từ ngày nhận đủ hồ sơ từ người sử dụng lao động, 05 ngày làm việc kể từ ngày nhận đủ hồ sơ từ người lao động. Trường hợp không giải quyết thì phải trả lời bằng văn bản và nêu rõ lý do.",
+      "example": "07 ngày làm việc"
+    }
+  ],
+  "input_fields": [
+    {
+      "field": "party_one_full_name",
+      "label": "Người thứ nhất",
+      "type": "string",
+      "required": true
+    },
+    {
+      "field": "party_two_full_name",
+      "label": "Người thứ hai",
+      "type": "string",
+      "required": true
+    },
+    {
+      "field": "has_foreign_element",
+      "label": "Có yếu tố nước ngoài",
+      "type": "boolean",
+      "required": true
+    },
+    {
+      "field": "current_marital_status_docs",
+      "label": "Có giấy tờ chứng minh tình trạng hôn nhân",
+      "type": "boolean",
+      "required": true
+    },
+    {
+      "field": "submission_at_border_area",
+      "label": "Nộp tại khu vực biên giới",
+      "type": "boolean",
+      "required": false
+    }
+  ],
+  "validation_rules": [
+    {
+      "id": "required-1",
+      "severity": "error",
+      "field": "party_one_full_name",
+      "rule": "Trường bắt buộc phải có dữ liệu hợp lệ trước khi nộp.",
+      "message": "Thiếu trường bắt buộc: Người thứ nhất."
+    },
+    {
+      "id": "required-2",
+      "severity": "error",
+      "field": "party_two_full_name",
+      "rule": "Trường bắt buộc phải có dữ liệu hợp lệ trước khi nộp.",
+      "message": "Thiếu trường bắt buộc: Người thứ hai."
+    },
+    {
+      "id": "required-3",
+      "severity": "error",
+      "field": "has_foreign_element",
+      "rule": "Trường bắt buộc phải có dữ liệu hợp lệ trước khi nộp.",
+      "message": "Thiếu trường bắt buộc: Có yếu tố nước ngoài."
+    },
+    {
+      "id": "required-4",
+      "severity": "error",
+      "field": "current_marital_status_docs",
+      "rule": "Trường bắt buộc phải có dữ liệu hợp lệ trước khi nộp.",
+      "message": "Thiếu trường bắt buộc: Có giấy tờ chứng minh tình trạng hôn nhân."
+    },
+    {
+      "id": "hint-1",
+      "severity": "warning",
+      "field": "general",
+      "rule": "Nên xác định trước kênh nộp hồ sơ để biết có cần bản giấy, bản điện tử hay xuất trình trực tiếp.",
+      "message": "Nên xác định trước kênh nộp hồ sơ để biết có cần bản giấy, bản điện tử hay xuất trình trực tiếp."
+    },
+    {
+      "id": "hint-2",
+      "severity": "warning",
+      "field": "general",
+      "rule": "Thông tin hộ tịch giữa các giấy tờ phải thống nhất về họ tên, ngày sinh và quan hệ liên quan.",
+      "message": "Thông tin hộ tịch giữa các giấy tờ phải thống nhất về họ tên, ngày sinh và quan hệ liên quan."
+    }
+  ],
+  "common_errors": [
+    {
+      "field": "general",
+      "issue": "Thiếu giấy tờ hợp pháp hóa hoặc giấy tờ nhân thân của phía nước ngoài.",
+      "fix": "Nên xác định trước kênh nộp hồ sơ để biết có cần bản giấy, bản điện tử hay xuất trình trực tiếp."
+    },
+    {
+      "field": "general",
+      "issue": "Thông tin thửa đất, tài sản hoặc giấy chứng nhận chưa khớp với hồ sơ hiện có.",
+      "fix": "Nên xác định trước kênh nộp hồ sơ để biết có cần bản giấy, bản điện tử hay xuất trình trực tiếp."
+    },
+    {
+      "field": "general",
+      "issue": "Thiếu hồ sơ về vị trí việc làm, đơn vị sử dụng lao động hoặc điều kiện làm việc áp dụng.",
+      "fix": "Nên xác định trước kênh nộp hồ sơ để biết có cần bản giấy, bản điện tử hay xuất trình trực tiếp."
+    }
+  ],
+  "clarifying_questions": [
+    {
+      "id": "clarify_1",
+      "question": "Hai bên đã có đủ giấy tờ nhân thân và tình trạng hôn nhân chưa?",
+      "purpose": "workflow_intake"
+    },
+    {
+      "id": "clarify_2",
+      "question": "Hồ sơ có yếu tố nước ngoài, khu vực biên giới hoặc ủy quyền không?",
+      "purpose": "workflow_intake"
+    }
+  ],
+  "legal_basis": [
+    {
+      "title": "Luật Bảo hiểm xã hội",
+      "code": "41/2024/QH15"
+    },
+    {
+      "title": "Quy định chi tiết và hướng dẫn thi hành một số điều của Luật Bảo hiểm xã hội về bảo hiểm xã hội bắt buộc",
+      "code": "158/2025/NĐ-CP"
+    }
+  ],
+  "legal_bases": [
+    {
+      "title": "Luật Bảo hiểm xã hội",
+      "code": "41/2024/QH15"
+    },
+    {
+      "title": "Quy định chi tiết và hướng dẫn thi hành một số điều của Luật Bảo hiểm xã hội về bảo hiểm xã hội bắt buộc",
+      "code": "158/2025/NĐ-CP"
+    }
+  ],
+  "faq": [
+    {
+      "question": "Có thể nộp qua kênh nào?",
+      "answer": "Các kênh hiện có: Trực tiếp, Trực tuyến, Dịch vụ bưu chính."
+    },
+    {
+      "question": "Thời gian xử lý tham chiếu là bao lâu?",
+      "answer": "Thời gian xử lý tham chiếu hiện có là 7 ngày làm việc."
+    },
+    {
+      "question": "Kết quả chính của thủ tục là gì?",
+      "answer": "Kết quả chính được trích xuất là Danh sách giải quyết hưởng chế độ thai sản cho người lao động."
+    }
+  ],
+  "guidance": {
+    "highlight_documents": [
+      {
+        "bucket": "required",
+        "name": "Bản sao giấy chứng nhận nuôi con nuôi và biên bản giao nhận con.",
+        "conditions": [],
+        "attachment_path": null
+      },
+      {
+        "bucket": "conditional",
+        "name": "Danh sách người lao động nghỉ việc hưởng chế độ thai sản do người sử dụng lao động lập (ngoại trừ trường hợp người lao động thôi việc trước thời điểm nhận nuôi con nuôi hoặc không còn người sử dụng lao động).",
+        "conditions": [
+          "Danh sách người lao động nghỉ việc hưởng chế độ thai sản do người sử dụng lao động lập (ngoại trừ trường hợp người lao động thôi việc trước thời điểm nhận nuôi con nuôi hoặc không còn người sử dụng lao động)."
+        ],
+        "attachment_path": null
+      },
+      {
+        "bucket": "conditional",
+        "name": "⁕ Trường hợp các giấy tờ nêu trên hoặc các giấy tờ có nội dung tương tự do cơ quan, tổ chức, cá nhân có thẩm quyền của nước ngoài cấp thì phải đáp ứng được các yêu cầu: + Có bản dịch tiếng Việt được công chứng hoặc chứng thực theo quy định của pháp luật về công chứng, chứng thực; + Được hợp pháp hóa lãnh sự, trừ trường hợp điều ước quốc tế mà nước Cộng hòa xã hội chủ nghĩa Việt Nam là thành viên có quy định khác",
+        "conditions": [
+          "⁕ Trường hợp các giấy tờ nêu trên hoặc các giấy tờ có nội dung tương tự do cơ quan, tổ chức, cá nhân có thẩm quyền của nước ngoài cấp thì phải đáp ứng được các yêu cầu: + Có bản dịch tiếng Việt được công chứng hoặc chứng thực theo quy định của pháp luật về công chứng, chứng thực; + Được hợp pháp hóa lãnh sự, trừ trường hợp điều ước quốc tế mà nước Cộng hòa xã hội chủ nghĩa Việt Nam là thành viên có quy định khác"
+        ],
+        "attachment_path": null
+      }
+    ],
+    "special_cases": [
+      "Có yếu tố nước ngoài",
+      "Có thể cần đối chiếu thông tin thửa đất hoặc giấy chứng nhận",
+      "Có thể cần xác minh quan hệ lao động hoặc giấy phép làm việc"
+    ],
+    "common_errors": [
+      "Thiếu giấy tờ hợp pháp hóa hoặc giấy tờ nhân thân của phía nước ngoài.",
+      "Thông tin thửa đất, tài sản hoặc giấy chứng nhận chưa khớp với hồ sơ hiện có.",
+      "Thiếu hồ sơ về vị trí việc làm, đơn vị sử dụng lao động hoặc điều kiện làm việc áp dụng."
+    ],
+    "validation_hints": [
+      "Nên xác định trước kênh nộp hồ sơ để biết có cần bản giấy, bản điện tử hay xuất trình trực tiếp.",
+      "Thông tin hộ tịch giữa các giấy tờ phải thống nhất về họ tên, ngày sinh và quan hệ liên quan."
+    ]
+  },
+  "next_steps": {
+    "summary": "Nên rà trước giấy tờ nhân thân của hai bên và các điều kiện đặc biệt nếu có yếu tố nước ngoài hoặc ủy quyền. Hiện có khoảng 3 mục giấy tờ cần theo dõi trong checklist.",
+    "time_badge": "7 ngày làm việc",
+    "result_label": "Danh sách giải quyết hưởng chế độ thai sản cho người lao động",
+    "primary_channel": "online",
+    "channels": [
+      "in_person",
+      "online",
+      "postal"
+    ]
+  },
+  "notes": [],
+  "provenance": {
+    "pipeline": "raw->structured->normalized->enriched->ui_api_payload",
+    "normalizer_version": "0.2.0",
+    "enricher_version": "0.2.0",
+    "mapping_notes": "excluded_from_clean_workflow_dataset",
+    "supported_group": true
+  }
+}

@@ -1,0 +1,108 @@
+{
+  "schema_version": "1.0",
+  "enricher_version": "0.2.0",
+  "source": {
+    "procedure_code": "1.012253",
+    "title": "Thủ tục hỗ trợ phát triển sản xuất liên kết theo chuỗi giá trị (dự án thuộc lĩnh vực ngành, nghề, lĩnh vực khác không thuộc lĩnh vực sản xuất, tiêu thụ sản phẩm nông nghiệp)",
+    "group_key": "suc_khoe_y_te",
+    "workflow_family": null,
+    "subflow": null
+  },
+  "experience": {
+    "entry_label": "Hỗ trợ y tế và bảo hiểm",
+    "overview_summary": "Thủ tục này thuộc nhóm y tế, thường cần đối chiếu thông tin người bệnh, đơn vị tiếp nhận hoặc quyền lợi chuyên ngành. Kết quả thường nhận được là - Đối với cấp xã: Quyết định phê duyệt Dự án liên kết, Kế hoạch đề nghị hỗ trợ liên kết của Ủy ban nhân dân cấp huyện. Trường hợp không phê duyệt: văn bản thông báo và nêu rõ lý do. Thời gian xử lý tham khảo: 15 ngày làm việc.",
+    "next_step_summary": "Nên xác định rõ đối tượng tham gia, quyền lợi hoặc nhu cầu điều chỉnh hồ sơ y tế trước khi nộp. Có thể chọn kênh nộp phù hợp: Trực tiếp, Trực tuyến, Dịch vụ bưu chính. Hiện có khoảng 6 mục giấy tờ cần theo dõi trong checklist.",
+    "tone": "supportive_public_service"
+  },
+  "guidance": {
+    "highlight_documents": [
+      {
+        "bucket": "required",
+        "name": "Đơn đề nghị hỗ trợ (Mẫu số 01, Phụ lục số I ban hành kèm theo Nghị quyết số 11/2023/NQ-HĐND ngày 15/9/2023 của Hội đồng nhân dân tỉnh).",
+        "conditions": [],
+        "attachment_path": null
+      },
+      {
+        "bucket": "required",
+        "name": "Dự án liên kết hoặc kế hoạch đề nghị hỗ trợ liên kết (Mẫu số 02, Phụ lục số I ban hành kèm theo Nghị quyết số 11/2023/NQ-HĐND ngày 15/9/2023 của Hội đồng nhân dân tỉnh).",
+        "conditions": [],
+        "attachment_path": null
+      },
+      {
+        "bucket": "required",
+        "name": "Dự án liên kết hoặc kế hoạch đề nghị hỗ trợ liên kết (Mẫu số 02, Phụ lục số I ban hành kèm theo Nghị quyết số 11/2023/NQ-HĐND ngày 15/9/2023 của Hội đồng nhân dân tỉnh).",
+        "conditions": [],
+        "attachment_path": null
+      },
+      {
+        "bucket": "required",
+        "name": "Hồ sơ năng lực của đơn vị chủ trì liên kết và các bên liên kết (Mẫu số 03, Phụ lục số I ban hành kèm theo Nghị quyết số 11/2023/NQ-HĐND ngày 15/9/2023 của Hội đồng nhân dân tỉnh).",
+        "conditions": [],
+        "attachment_path": null
+      },
+      {
+        "bucket": "required",
+        "name": "Bản thỏa thuận cử đơn vị chủ trì liên kết (Mẫu số 04, Phụ lục số I ban hành kèm theo Nghị quyết số 11/2023/NQ-HĐND ngày 15/9/2023 của Hội đồng nhân dân tỉnh).",
+        "conditions": [],
+        "attachment_path": null
+      },
+      {
+        "bucket": "required",
+        "name": "Bản cam kết bảo đảm các quy định của pháp luật về tiêu chuẩn chất lượng sản phẩm, an toàn thực phẩm, an toàn dịch bệnh và bảo vệ môi trường (Mẫu số 05 Phụ lục số I ban hành kèm theo Nghị quyết số 11/2023/NQ-HĐND ngày 15/9/2023 của Hội đồng nhân dân tỉnh).",
+        "conditions": [],
+        "attachment_path": null
+      }
+    ],
+    "special_cases": [],
+    "common_errors": [
+      "Điền sai mẫu tờ khai hoặc chọn sai biểu mẫu đi kèm."
+    ],
+    "validation_hints": [
+      "Nên xác định trước kênh nộp hồ sơ để biết có cần bản giấy, bản điện tử hay xuất trình trực tiếp.",
+      "Nên xác định đúng nhóm đối tượng, mã số bảo hiểm và quyền lợi áp dụng trước khi nộp."
+    ]
+  },
+  "intake": {
+    "candidate_input_fields": [
+      {
+        "field_id": "request_subject",
+        "label": "Đối tượng làm thủ tục",
+        "field_type": "text",
+        "required": true
+      },
+      {
+        "field_id": "insurance_or_medical_need",
+        "label": "Nhu cầu bảo hiểm hoặc y tế",
+        "field_type": "text",
+        "required": true
+      },
+      {
+        "field_id": "submission_channel_preference",
+        "label": "Kênh nộp dự kiến",
+        "field_type": "enum",
+        "required": false
+      },
+      {
+        "field_id": "has_insurance_number",
+        "label": "Đã có mã BHXH/BHYT",
+        "field_type": "boolean",
+        "required": false
+      }
+    ],
+    "suggested_clarifying_questions": [
+      "Bạn đang muốn đăng ký, điều chỉnh hay xác nhận quyền lợi y tế hoặc bảo hiểm nào?",
+      "Bạn đã có mã BHXH/BHYT hoặc thông tin đơn vị tiếp nhận liên quan chưa?"
+    ]
+  },
+  "ui_hints": {
+    "primary_channel": "in_person",
+    "result_label": "- Đối với cấp xã: Quyết định phê duyệt Dự án liên kết, Kế hoạch đề nghị hỗ trợ liên kết của Ủy ban nhân dân cấp huyện. Trường hợp không phê duyệt: văn bản thông báo và nêu rõ lý do",
+    "time_badge": "15 ngày làm việc",
+    "document_count_badge": 6
+  },
+  "provenance": {
+    "generator": "workflow_domain_enricher",
+    "derivation_mode": "rule_based_semantic_enrichment",
+    "supported_group": true
+  }
+}

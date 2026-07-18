@@ -1,0 +1,113 @@
+{
+  "schema_version": "1.0",
+  "enricher_version": "0.2.0",
+  "source": {
+    "procedure_code": "1.014115",
+    "title": "Cấp phép nhập khẩu thuốc chưa có giấy đăng ký lưu hành tại Việt Nam dùng cho mục đích thử lâm sàng, thử tương đương sinh học, đánh giá sinh khả dụng, làm mẫu kiểm nghiệm, nghiên cứu khoa học",
+    "group_key": "suc_khoe_y_te",
+    "workflow_family": null,
+    "subflow": null
+  },
+  "experience": {
+    "entry_label": "Hỗ trợ y tế và bảo hiểm",
+    "overview_summary": "Thủ tục này thuộc nhóm y tế, thường cần đối chiếu thông tin người bệnh, đơn vị tiếp nhận hoặc quyền lợi chuyên ngành. Kết quả thường nhận được là Giấy phép nhập khẩu. Thời gian xử lý tham khảo: 15 ngày.",
+    "next_step_summary": "Nên xác định rõ đối tượng tham gia, quyền lợi hoặc nhu cầu điều chỉnh hồ sơ y tế trước khi nộp. Có thể chọn kênh nộp phù hợp: Trực tiếp, Trực tuyến, Dịch vụ bưu chính. Hiện có khoảng 6 mục giấy tờ cần theo dõi trong checklist.",
+    "tone": "supportive_public_service"
+  },
+  "guidance": {
+    "highlight_documents": [
+      {
+        "bucket": "required",
+        "name": "Mẫu số 16 tại Phụ lục III của Nghị định số 163/2025/NĐ-CP đối với thuốc gây nghiện, thuốc hướng thần, thuốc tiền chất, thuốc dạng phối hợp có chứa dược chất gây nghiện, thuốc dạng phối hợp có chứa dược chất hướng thần, thuốc dạng phối hợp có chứa tiền chất;",
+        "conditions": [],
+        "attachment_path": null
+      },
+      {
+        "bucket": "required",
+        "name": "Mẫu số 15 tại Phụ lục III của Nghị định số 163/2025/NĐ-CP đối với vắc xin, sinh phẩm, thuốc hóa dược;",
+        "conditions": [],
+        "attachment_path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/1_014115/Mu10.docx"
+      },
+      {
+        "bucket": "required",
+        "name": "Mẫu số 17 tại Phụ lục III của Nghị định số 163/2025/NĐ-CP đối với thuốc dược liệu, thuốc cổ truyền",
+        "conditions": [],
+        "attachment_path": null
+      },
+      {
+        "bucket": "required",
+        "name": "d) Tài liệu thuyết minh có đóng dấu của cơ sở nhập khẩu về mục đích, số lượng nhập khẩu và cam kết sử dụng đúng mục đích",
+        "conditions": [],
+        "attachment_path": null
+      },
+      {
+        "bucket": "conditional",
+        "name": "c) Văn bản phê duyệt đề cương thử tương đương sinh học theo quy định tại Điều 100 của Luật Dược đối với trường hợp thuốc mới thuộc quy định tại điểm c khoản 1 Điều 58 Nghị định số 163/2025/NĐ-C",
+        "conditions": [
+          "c) Văn bản phê duyệt đề cương thử tương đương sinh học theo quy định tại Điều 100 của Luật Dược đối với trường hợp thuốc mới thuộc quy định tại điểm c khoản 1 Điều 58 Nghị định số 163/2025/NĐ-C"
+        ],
+        "attachment_path": null
+      },
+      {
+        "bucket": "conditional",
+        "name": "b) Văn bản phê duyệt của cơ quan hoặc tổ chức có thẩm quyền tương ứng đối với trường hợp thuốc thuộc điểm a, b và đ khoản 1 Điều 58 Nghị định số 163/2025/NĐ-CP",
+        "conditions": [
+          "b) Văn bản phê duyệt của cơ quan hoặc tổ chức có thẩm quyền tương ứng đối với trường hợp thuốc thuộc điểm a, b và đ khoản 1 Điều 58 Nghị định số 163/2025/NĐ-CP"
+        ],
+        "attachment_path": null
+      }
+    ],
+    "special_cases": [],
+    "common_errors": [
+      "Điền sai mẫu tờ khai hoặc chọn sai biểu mẫu đi kèm."
+    ],
+    "validation_hints": [
+      "Nên xác định trước kênh nộp hồ sơ để biết có cần bản giấy, bản điện tử hay xuất trình trực tiếp.",
+      "Có mẫu biểu đính kèm, nên kiểm tra đúng biểu mẫu trước khi nộp.",
+      "Nên xác định đúng nhóm đối tượng, mã số bảo hiểm và quyền lợi áp dụng trước khi nộp."
+    ]
+  },
+  "intake": {
+    "candidate_input_fields": [
+      {
+        "field_id": "request_subject",
+        "label": "Đối tượng làm thủ tục",
+        "field_type": "text",
+        "required": true
+      },
+      {
+        "field_id": "insurance_or_medical_need",
+        "label": "Nhu cầu bảo hiểm hoặc y tế",
+        "field_type": "text",
+        "required": true
+      },
+      {
+        "field_id": "submission_channel_preference",
+        "label": "Kênh nộp dự kiến",
+        "field_type": "enum",
+        "required": false
+      },
+      {
+        "field_id": "has_insurance_number",
+        "label": "Đã có mã BHXH/BHYT",
+        "field_type": "boolean",
+        "required": false
+      }
+    ],
+    "suggested_clarifying_questions": [
+      "Bạn đang muốn đăng ký, điều chỉnh hay xác nhận quyền lợi y tế hoặc bảo hiểm nào?",
+      "Bạn đã có mã BHXH/BHYT hoặc thông tin đơn vị tiếp nhận liên quan chưa?"
+    ]
+  },
+  "ui_hints": {
+    "primary_channel": "online",
+    "result_label": "Giấy phép nhập khẩu",
+    "time_badge": "15 ngày",
+    "document_count_badge": 6
+  },
+  "provenance": {
+    "generator": "workflow_domain_enricher",
+    "derivation_mode": "rule_based_semantic_enrichment",
+    "supported_group": true
+  }
+}

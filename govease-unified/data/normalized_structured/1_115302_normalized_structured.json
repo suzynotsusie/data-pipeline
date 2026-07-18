@@ -1,0 +1,208 @@
+{
+  "schema_version": "1.0",
+  "normalizer_version": "0.2.0",
+  "source": {
+    "procedure_code": "1.115302",
+    "title": "Thủ tục Kết nối eContract với Nền tảng hợp đồng lao động điện tử",
+    "raw_structured_parser_version": "0.1.0",
+    "field": "Lao động, tiền lương"
+  },
+  "procedure": {
+    "level": "Cấp bộ/ngành",
+    "procedure_type": "TTHC được luật giao quy định chi tiết",
+    "target_users": [
+      "Doanh nghiệp Việt Nam"
+    ],
+    "authorities": [
+      "Bộ Nội vụ"
+    ],
+    "receiving_places": []
+  },
+  "submission": {
+    "channels": [
+      "in_person",
+      "online",
+      "postal"
+    ],
+    "methods": [
+      {
+        "method_id": "method_1",
+        "channel": "online",
+        "processing_time_text": "20 ngày làm việc",
+        "fee_text": null,
+        "description": "Nộp hồ sơ trên Cổng Dịch vụ công quốc gia hoặc qua dịch vụ bưu chính hoặc trực tiếp đến Bộ Nội vụ. 20 ngày làm việc, kể từ ngày nhận được đủ hồ sơ hợp lệ.",
+        "is_online": true,
+        "is_postal": false,
+        "is_in_person": false
+      },
+      {
+        "method_id": "method_2",
+        "channel": "in_person",
+        "processing_time_text": "20 ngày làm việc",
+        "fee_text": null,
+        "description": "Nộp hồ sơ trên Cổng Dịch vụ công quốc gia hoặc qua dịch vụ bưu chính hoặc trực tiếp đến Bộ Nội vụ. 20 ngày làm việc, kể từ ngày nhận được đủ hồ sơ hợp lệ.",
+        "is_online": false,
+        "is_postal": false,
+        "is_in_person": true
+      },
+      {
+        "method_id": "method_3",
+        "channel": "postal",
+        "processing_time_text": "20 ngày làm việc",
+        "fee_text": null,
+        "description": "Nộp hồ sơ trên Cổng Dịch vụ công quốc gia hoặc qua dịch vụ bưu chính hoặc trực tiếp đến Bộ Nội vụ. 20 ngày làm việc, kể từ ngày nhận được đủ hồ sơ hợp lệ.",
+        "is_online": false,
+        "is_postal": true,
+        "is_in_person": false
+      }
+    ],
+    "timing_summary": {
+      "unique_processing_times": [
+        "20 ngày làm việc"
+      ],
+      "method_count": 3
+    }
+  },
+  "documents": {
+    "required": [
+      {
+        "document_id": "v_n_b_n_ngh_k_t_n_i_n_n_t_ng_h_p_ng_lao_ng_i_n_t_theo_m_u",
+        "name": "Văn bản đề nghị kết nối Nền tảng hợp đồng lao động điện tử theo mẫu.",
+        "group_name": "default",
+        "group_type": "unknown",
+        "original_count": "1",
+        "copy_count": "0",
+        "conditions": [],
+        "attachment_label": "Mẫu số 01 ban hành kèm theo Thông tư số 08.docx",
+        "attachment_path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/1_115302/M%E1%BA%ABu%20s%E1%BB%91%2001%20ban%20h%C3%A0nh%20k%C3%A8m%20theo%20Th%C3%B4ng%20t%C6%B0%20s%E1%BB%91%2008.docx"
+      },
+      {
+        "document_id": "ph_ng_n_k_thu_t_k_t_n_i_v_thuy_t_minh_v_kh_n_ng_k_t_n_i",
+        "name": "Phương án kỹ thuật kết nối và thuyết minh về khả năng kết nối.",
+        "group_name": "default",
+        "group_type": "unknown",
+        "original_count": "1",
+        "copy_count": "0",
+        "conditions": [],
+        "attachment_label": null,
+        "attachment_path": null
+      }
+    ],
+    "conditional": [
+      {
+        "document_id": "b_n_sao_c_ch_ng_th_c_c_a_m_t_trong_c_c_gi_y_t_sau_gi_y_ch_ng_nh_n_ng_k_doanh_nghi_p_gi_y_ch_ng_nh_n_ng_k_u_t_i_v_i_nh_u_t_n_c_ngo_i_quy_t_nh_th_nh_l_p_ho_c_gi_y_ch_ng_nh_n_gi_y_ph_p_t_ng_ng_h_p_l_kh_c_theo_quy_nh_c_a_ph_p_lu_t_v_u_t_v_ph_p_lu_t_v_doanh_nghi_p_i_v_i_tr_ng_h_p_c_c_th_ng_tin_n_y_ch_a_c_t_ch_h_p_v_kh_ng_th_ki_m_tra_tr_c_tuy_n_tr_n_c_s_d_li_u_qu_c_gia_v_ng_k_doanh_nghi_p",
+        "name": "Bản sao có chứng thực của một trong các giấy tờ sau: giấy chứng nhận đăng ký doanh nghiệp, giấy chứng nhận đăng ký đầu tư đối với nhà đầu tư nước ngoài, quyết định thành lập hoặc giấy chứng nhận, giấy phép tương đương hợp lệ khác theo quy định của pháp luật về đầu tư và pháp luật về doanh nghiệp (đối với trường hợp các thông tin này chưa được tích hợp và không thể kiểm tra trực tuyến trên Cơ sở dữ liệu quốc gia về đăng ký doanh nghiệp);",
+        "group_name": "default",
+        "group_type": "unknown",
+        "original_count": "0",
+        "copy_count": "1",
+        "conditions": [
+          "Bản sao có chứng thực của một trong các giấy tờ sau: giấy chứng nhận đăng ký doanh nghiệp, giấy chứng nhận đăng ký đầu tư đối với nhà đầu tư nước ngoài, quyết định thành lập hoặc giấy chứng nhận, giấy phép tương đương hợp lệ khác theo quy định của pháp luật về đầu tư và pháp luật về doanh nghiệp (đối với trường hợp các thông tin này chưa được tích hợp và không thể kiểm tra trực tuyến trên Cơ sở dữ liệu quốc gia về đăng ký doanh nghiệp);"
+        ],
+        "attachment_label": null,
+        "attachment_path": null
+      }
+    ],
+    "presented": [],
+    "notes": [],
+    "forms": [
+      {
+        "name": "Văn bản đề nghị kết nối Nền tảng hợp đồng lao động điện tử theo mẫu.",
+        "attachment_label": "Mẫu số 01 ban hành kèm theo Thông tư số 08.docx",
+        "attachment_path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/1_115302/M%E1%BA%ABu%20s%E1%BB%91%2001%20ban%20h%C3%A0nh%20k%C3%A8m%20theo%20Th%C3%B4ng%20t%C6%B0%20s%E1%BB%91%2008.docx"
+      }
+    ],
+    "empty_groups": [],
+    "document_count": 3
+  },
+  "process": {
+    "steps": [
+      {
+        "step_id": "step_1",
+        "title": null,
+        "content": "1.",
+        "actor": "user",
+        "channel_hint": null,
+        "time_hint": null
+      },
+      {
+        "step_id": "step_2",
+        "title": "Bước 1.",
+        "content": "Bước 1. Nhà cung cấp eContract gửi 01 bộ hồ sơ theo quy định trực tuyến trên Cổng Dịch vụ công quốc gia hoặc qua dịch vụ bưu chính hoặc trực tiếp đến Bộ Nội vụ.",
+        "actor": "user",
+        "channel_hint": "trực tuyến",
+        "time_hint": null
+      },
+      {
+        "step_id": "step_3",
+        "title": null,
+        "content": "2.",
+        "actor": "user",
+        "channel_hint": null,
+        "time_hint": null
+      },
+      {
+        "step_id": "step_4",
+        "title": "Bước 2.",
+        "content": "Bước 2. Trong thời hạn 20 ngày làm việc, kể từ ngày nhận đủ hồ sơ đề nghị kết nối eContract với Nền tảng hợp đồng lao động điện tử của Nhà cung cấp eContract, Bộ Nội vụ kiểm tra tính hợp lệ của hồ sơ, thực hiện kiểm thử kỹ thuật và thông báo cấp tài khoản kết nối cho Nhà cung cấp eContract. Trường hợp hồ sơ chưa hợp lệ hoặc kiểm thử kỹ thuật không đạt, Bộ Nội vụ thông báo cho Nhà cung cấp eContract theo địa chỉ thư điện tử hoặc địa chỉ trụ sở chính ghi trong văn bản đề nghị kết nối và nêu rõ lý do từ chối kết nối Nền tảng hợp đồng lao động điện tử. Trường hợp Nhà cung cấp eContract có sự thay đổi một trong các nội dung trong hồ sơ đề nghị kết nối thì phải thông báo về việc thay đổi thông tin kèm theo bản sao các giấy tờ, tài liệu chứng minh sự thay đổi đó đến Bộ Nội vụ để xác minh, điều chỉnh thông tin.",
+        "actor": "user",
+        "channel_hint": null,
+        "time_hint": "20 ngày làm việc"
+      }
+    ],
+    "step_count": 4,
+    "notes": []
+  },
+  "eligibility": {
+    "conditions": [
+      "Nhà cung cấp eContract được đề nghị kết nối eContract với Nền tảng hợp đồng lao động điện tử khi bảo đảm các điều kiện sau đây:",
+      "- Có eContract đáp ứng điều kiện tại khoản 1 Điều 6 Nghị định số 337/2025/NĐ-CP ngày 24/12/2025 của Chính phủ quy định về hợp đồng lao động điện tử.",
+      "- Có giải pháp, công nghệ để thu thập, kiểm tra, đối chiếu, bảo đảm sự khớp đúng giữa thông tin nhận biết tổ chức, cá nhân, dữ liệu sinh trắc học người đại diện theo pháp luật của tổ chức, cá nhân (là các yếu tố, đặc điểm sinh học gắn liền với người đại diện theo pháp luật của tổ chức, cá nhân thực hiện định danh, khó làm giả, có tỷ lệ trùng nhau thấp như vân tay, khuôn mặt, mống mắt, giọng nói và các yếu tố sinh trắc học khác) với các thông tin, yếu tố sinh trắc học tương ứng trên giấy tờ tùy thân của người đại diện theo pháp luật của tổ chức, cá nhân quy định tại khoản 2 Điều này và bảo đảm được định danh đúng chủ thể và thực hiện xác thực danh tính theo quy định của pháp luật về định danh và xác thực điện tử.",
+      "- Có Giấy phép kinh doanh dịch vụ tin cậy có loại dịch vụ được phép kinh doanh là cung cấp dịch vụ chứng thực thông điệp dữ liệu theo pháp luật giao dịch điện tử."
+    ],
+    "has_conditions": true
+  },
+  "results": {
+    "items": [
+      {
+        "name": "Thông báo cấp tài khoản kết nối hoặc thông báo từ chối kết nối cho Nhà cung cấp eContract",
+        "result_code": "KQ.G09.001344",
+        "raw_text": "Thông báo cấp tài khoản kết nối hoặc thông báo từ chối kết nối cho Nhà cung cấp eContract"
+      }
+    ],
+    "primary_result": {
+      "name": "Thông báo cấp tài khoản kết nối hoặc thông báo từ chối kết nối cho Nhà cung cấp eContract",
+      "result_code": "KQ.G09.001344",
+      "raw_text": "Thông báo cấp tài khoản kết nối hoặc thông báo từ chối kết nối cho Nhà cung cấp eContract"
+    }
+  },
+  "legal_basis": {
+    "items": [
+      {
+        "title": "Quy định chi tiết và hướng dẫn thi hành một số điều của Nghị định số 337/2025/NĐ-CP ngày 24 tháng 12 năm 2025 của Chính phủ quy định về hợp đồng lao động điện tử",
+        "code": "08/2026/TT-BNV"
+      },
+      {
+        "title": "Quy định về hợp đồng lao động điện tử",
+        "code": "337/2025/NĐ-CP"
+      }
+    ],
+    "count": 2
+  },
+  "attachments": [
+    {
+      "label": "Mẫu số 01 ban hành kèm theo Thông tư số 08.docx",
+      "path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/1_115302/M%E1%BA%ABu%20s%E1%BB%91%2001%20ban%20h%C3%A0nh%20k%C3%A8m%20theo%20Th%C3%B4ng%20t%C6%B0%20s%E1%BB%91%2008.docx",
+      "source_section": "Thành phần hồ sơ",
+      "document_name": "Văn bản đề nghị kết nối Nền tảng hợp đồng lao động điện tử theo mẫu."
+    }
+  ],
+  "signals": {
+    "raw_parse_warnings": [],
+    "missing_documents": false,
+    "documents_section_present": true,
+    "documents_declared_empty": false,
+    "documents_only_in_notes": false,
+    "missing_results": false
+  }
+}

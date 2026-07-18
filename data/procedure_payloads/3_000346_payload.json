@@ -1,0 +1,488 @@
+{
+  "schema_version": "3.0",
+  "record_type": "public_service_procedure_payload",
+  "id": "procedure-3.000346",
+  "procedure_code": "3.000346",
+  "code": "3.000346",
+  "title": "Cấp giấy phép lái xe",
+  "language": "vi",
+  "status": "generated_from_pipeline",
+  "field": "Sát hạch, cấp giấy phép lái xe",
+  "group_key": "phuong_tien_nguoi_lai",
+  "workflow_family": "vehicle_driver_workflow",
+  "subflow": "giay_phep_lai_xe",
+  "source": {
+    "source_url": "file:///C:/Users/ku060/Downloads/VAIC%20source/data-pipeline/raw_data/3_000346/3_000346_procedure_detail.md",
+    "source_markdown_path": "C:\\Users\\ku060\\Downloads\\VAIC source\\data-pipeline\\raw_data\\3_000346\\3_000346_procedure_detail.md",
+    "normalized_payload_path": "C:\\Users\\ku060\\Downloads\\VAIC source\\data-pipeline\\govease-unified\\data\\normalized_structured\\3_000346_normalized_structured.json",
+    "enriched_payload_path": "C:\\Users\\ku060\\Downloads\\VAIC source\\data-pipeline\\govease-unified\\data\\enriched_structured_priority\\3_000346_enriched_structured.json"
+  },
+  "scope": {
+    "included": "Thủ tục này thuộc nhóm phương tiện và người lái, thường dùng để cấp, đổi hoặc xác nhận hồ sơ liên quan đến giấy phép lái xe. Kết quả thường nhận được là Giấy phép lái xe. Thời gian xử lý tham khảo: 7 ngày.",
+    "not_included": []
+  },
+  "agency": {
+    "executing_agency": "Cục cảnh sát giao thông",
+    "submission_place": null,
+    "receiving_places": []
+  },
+  "target_users": [
+    "Công dân Việt Nam"
+  ],
+  "submission_methods": [
+    {
+      "code": "ONLINE",
+      "label": "Trực tuyến",
+      "processing_time": "7 ngày",
+      "fee": null,
+      "description": null
+    },
+    {
+      "code": "POSTAL",
+      "label": "Dịch vụ bưu chính",
+      "processing_time": "3 ngày",
+      "fee": null,
+      "description": null
+    },
+    {
+      "code": "IN_PERSON",
+      "label": "Trực tiếp",
+      "processing_time": "3 ngày",
+      "fee": null,
+      "description": null
+    }
+  ],
+  "processing_note": "Thời gian xử lý tham chiếu: 7 ngày. Nên kiểm tra trước loại phương tiện hoặc loại giấy phép cần xử lý, cùng hồ sơ kỹ thuật hoặc nhân thân liên quan. Có thể chọn kênh nộp phù hợp: Trực tiếp, Trực tuyến, Dịch vụ bưu chính. Hiện có khoảng 13 mục giấy tờ cần theo dõi trong checklist.",
+  "documents": {
+    "normally_required": [
+      {
+        "name": "Bản sao hoặc bản sao điện tử được chứng thực từ bản chính hoặc bản sao điện tử được cấp từ sổ gốc một trong các giấy tờ sau: thẻ tạm trú, thẻ thường trú, chứng minh thư ngoại giao, chứng minh thư công vụ (đối với người nước ngoài).",
+        "quantity": "0 bản chính, 1 bản sao",
+        "notes": [],
+        "group": "Hồ sơ đề nghị sát hạch cấp giấy phép lái xe do quá thời hạn sử dụng, do giấy phép lái xe mất và quá thời hạn sử dụng",
+        "attachment_path": null
+      },
+      {
+        "name": "Giấy khám sức khoẻ của người lái xe do cơ sở khám bệnh, chữa bệnh đủ tiêu chuẩn theo quy định của pháp luật về khám bệnh, chữa bệnh cấp còn hiệu lực",
+        "quantity": "1 bản chính, 0 bản sao",
+        "notes": [],
+        "group": "Hồ sơ đề nghị sát hạch cấp giấy phép lái xe do quá thời hạn sử dụng, do giấy phép lái xe mất và quá thời hạn sử dụng",
+        "attachment_path": null
+      },
+      {
+        "name": "Đề nghị sát hạch để cấp giấy phép lái xe theo quy định tại Phụ lục I ban hành kèm theo Thông tư số 12/2025/TT-BCA",
+        "quantity": "1 bản chính, 0 bản sao",
+        "notes": [],
+        "group": "Hồ sơ đề nghị sát hạch cấp giấy phép lái xe do quá thời hạn sử dụng, do giấy phép lái xe mất và quá thời hạn sử dụng",
+        "attachment_path": null
+      },
+      {
+        "name": "Giấy khám sức khoẻ của người lái xe do cơ sở khám bệnh, chữa bệnh đủ tiêu chuẩn theo quy định của pháp luật về khám bệnh, chữa bệnh cấp còn hiệu lực.",
+        "quantity": "1 bản chính, 0 bản sao",
+        "notes": [],
+        "group": "Hồ sơ đề nghị sát hạch của cá nhân",
+        "attachment_path": null
+      },
+      {
+        "name": "Bản sao hoặc bản sao điện tử được chứng thực từ bản chính hoặc bản sao điện tử được cấp từ sổ gốc một trong các giấy tờ sau: thẻ tạm trú, thẻ thường trú, chứng minh thư ngoại giao, chứng minh thư công vụ (đối với người nước ngoài).",
+        "quantity": "0 bản chính, 1 bản sao",
+        "notes": [],
+        "group": "Hồ sơ đề nghị sát hạch của cá nhân",
+        "attachment_path": null
+      },
+      {
+        "name": "Đề nghị sát hạch để cấp giấy phép lái xe theo mẫu quy định tại Phụ lục I ban hành kèm theo Thông tư số 12/2025/TT-BCA",
+        "quantity": "1 bản chính, 0 bản sao",
+        "notes": [],
+        "group": "Hồ sơ đề nghị sát hạch của cá nhân",
+        "attachment_path": null
+      },
+      {
+        "name": "Chứng chỉ sơ cấp hoặc chứng chỉ đào tạo hoặc xác nhận hoàn thành khóa đào tạo đối với người dự sát hạch lái xe hạng B1, B, C1, C, D1, D2, D, BE, C1E, CE, D1E, D2E, DE.",
+        "quantity": "1 bản chính, 0 bản sao",
+        "notes": [],
+        "group": "Hồ sơ đề nghị sát hạch của cá nhân",
+        "attachment_path": null
+      },
+      {
+        "name": "Báo cáo đề nghị tổ chức sát hạch theo mẫu 02 Phụ lục VIII kèm theo Thông tư số 12/2025/TT-BCA",
+        "quantity": "1 bản chính, 0 bản sao",
+        "notes": [],
+        "group": "Hồ sơ đề nghị sát hạch của cơ sở đào tạo lái xe gồm",
+        "attachment_path": null
+      },
+      {
+        "name": "Hồ sơ đề nghị sát hạch của cá nhân theo quy định",
+        "quantity": "1 bản chính, 0 bản sao",
+        "notes": [],
+        "group": "Hồ sơ đề nghị sát hạch của cơ sở đào tạo lái xe gồm",
+        "attachment_path": null
+      },
+      {
+        "name": "Danh sách thí sinh đề nghị sát hạch để cấp giấy phép lái xe theo mẫu 03 Phụ lục VIII ban hành kèm theo Thông tư số 12/2025/TT-BCA",
+        "quantity": "1 bản chính, 0 bản sao",
+        "notes": [],
+        "group": "Hồ sơ đề nghị sát hạch của cơ sở đào tạo lái xe gồm",
+        "attachment_path": null
+      }
+    ],
+    "conditional": [
+      {
+        "condition": "Giấy phép lái xe quân sự do Bộ Quốc phòng cấp hoặc xác nhận của cơ quan đã cấp đối với trường hợp mất giấy phép lái xe (đối với giấy phép lái xe quân sự do Bộ Quốc phòng cấp)",
+        "document": "Giấy phép lái xe quân sự do Bộ Quốc phòng cấp hoặc xác nhận của cơ quan đã cấp đối với trường hợp mất giấy phép lái xe (đối với giấy phép lái xe quân sự do Bộ Quốc phòng cấp)",
+        "quantity": "1 bản chính, 0 bản sao",
+        "notes": [],
+        "attachment_path": null
+      },
+      {
+        "condition": "Bản sao giấy phép lái xe quá thời hạn sử dụng, trừ trường hợp người có giấy phép lái xe quá thời hạn sử dụng và bị mất",
+        "document": "Bản sao giấy phép lái xe quá thời hạn sử dụng, trừ trường hợp người có giấy phép lái xe quá thời hạn sử dụng và bị mất",
+        "quantity": "0 bản chính, 1 bản sao",
+        "notes": [],
+        "attachment_path": null
+      },
+      {
+        "condition": "Bản sao giấy tờ chứng minh thôi không còn phục vụ trong lực lượng Quân đội nhân dân, Công an nhân dân (đối với trường hợp giấy phép lái xe trong Công an nhân dân, giấy phép lái xe quân sự do Bộ Quốc phòng cấp)",
+        "document": "Bản sao giấy tờ chứng minh thôi không còn phục vụ trong lực lượng Quân đội nhân dân, Công an nhân dân (đối với trường hợp giấy phép lái xe trong Công an nhân dân, giấy phép lái xe quân sự do Bộ Quốc phòng cấp)",
+        "quantity": "0 bản chính, 1 bản sao",
+        "notes": [],
+        "attachment_path": null
+      }
+    ],
+    "forms": [],
+    "presented": [],
+    "notes": [],
+    "summary": [
+      {
+        "group": "Hồ sơ đề nghị sát hạch cấp giấy phép lái xe do quá thời hạn sử dụng, do giấy phép lái xe mất và quá thời hạn sử dụng",
+        "name": "Bản sao hoặc bản sao điện tử được chứng thực từ bản chính hoặc bản sao điện tử được cấp từ sổ gốc một trong các giấy tờ sau: thẻ tạm trú, thẻ thường trú, chứng minh thư ngoại giao, chứng minh thư công vụ (đối với người nước ngoài).",
+        "quantity": "0 bản chính, 1 bản sao",
+        "notes": [],
+        "attachment_path": null
+      },
+      {
+        "group": "Hồ sơ đề nghị sát hạch cấp giấy phép lái xe do quá thời hạn sử dụng, do giấy phép lái xe mất và quá thời hạn sử dụng",
+        "name": "Giấy khám sức khoẻ của người lái xe do cơ sở khám bệnh, chữa bệnh đủ tiêu chuẩn theo quy định của pháp luật về khám bệnh, chữa bệnh cấp còn hiệu lực",
+        "quantity": "1 bản chính, 0 bản sao",
+        "notes": [],
+        "attachment_path": null
+      },
+      {
+        "group": "Hồ sơ đề nghị sát hạch cấp giấy phép lái xe do quá thời hạn sử dụng, do giấy phép lái xe mất và quá thời hạn sử dụng",
+        "name": "Đề nghị sát hạch để cấp giấy phép lái xe theo quy định tại Phụ lục I ban hành kèm theo Thông tư số 12/2025/TT-BCA",
+        "quantity": "1 bản chính, 0 bản sao",
+        "notes": [],
+        "attachment_path": null
+      },
+      {
+        "group": "Hồ sơ đề nghị sát hạch của cá nhân",
+        "name": "Giấy khám sức khoẻ của người lái xe do cơ sở khám bệnh, chữa bệnh đủ tiêu chuẩn theo quy định của pháp luật về khám bệnh, chữa bệnh cấp còn hiệu lực.",
+        "quantity": "1 bản chính, 0 bản sao",
+        "notes": [],
+        "attachment_path": null
+      },
+      {
+        "group": "Hồ sơ đề nghị sát hạch của cá nhân",
+        "name": "Bản sao hoặc bản sao điện tử được chứng thực từ bản chính hoặc bản sao điện tử được cấp từ sổ gốc một trong các giấy tờ sau: thẻ tạm trú, thẻ thường trú, chứng minh thư ngoại giao, chứng minh thư công vụ (đối với người nước ngoài).",
+        "quantity": "0 bản chính, 1 bản sao",
+        "notes": [],
+        "attachment_path": null
+      },
+      {
+        "group": "Hồ sơ đề nghị sát hạch của cá nhân",
+        "name": "Đề nghị sát hạch để cấp giấy phép lái xe theo mẫu quy định tại Phụ lục I ban hành kèm theo Thông tư số 12/2025/TT-BCA",
+        "quantity": "1 bản chính, 0 bản sao",
+        "notes": [],
+        "attachment_path": null
+      },
+      {
+        "group": "Hồ sơ đề nghị sát hạch của cá nhân",
+        "name": "Chứng chỉ sơ cấp hoặc chứng chỉ đào tạo hoặc xác nhận hoàn thành khóa đào tạo đối với người dự sát hạch lái xe hạng B1, B, C1, C, D1, D2, D, BE, C1E, CE, D1E, D2E, DE.",
+        "quantity": "1 bản chính, 0 bản sao",
+        "notes": [],
+        "attachment_path": null
+      },
+      {
+        "group": "Hồ sơ đề nghị sát hạch của cơ sở đào tạo lái xe gồm",
+        "name": "Báo cáo đề nghị tổ chức sát hạch theo mẫu 02 Phụ lục VIII kèm theo Thông tư số 12/2025/TT-BCA",
+        "quantity": "1 bản chính, 0 bản sao",
+        "notes": [],
+        "attachment_path": null
+      },
+      {
+        "group": "Hồ sơ đề nghị sát hạch của cơ sở đào tạo lái xe gồm",
+        "name": "Hồ sơ đề nghị sát hạch của cá nhân theo quy định",
+        "quantity": "1 bản chính, 0 bản sao",
+        "notes": [],
+        "attachment_path": null
+      },
+      {
+        "group": "Hồ sơ đề nghị sát hạch của cơ sở đào tạo lái xe gồm",
+        "name": "Danh sách thí sinh đề nghị sát hạch để cấp giấy phép lái xe theo mẫu 03 Phụ lục VIII ban hành kèm theo Thông tư số 12/2025/TT-BCA",
+        "quantity": "1 bản chính, 0 bản sao",
+        "notes": [],
+        "attachment_path": null
+      },
+      {
+        "group": null,
+        "name": null,
+        "quantity": "1 bản chính, 0 bản sao",
+        "notes": [],
+        "attachment_path": null
+      },
+      {
+        "group": null,
+        "name": null,
+        "quantity": "0 bản chính, 1 bản sao",
+        "notes": [],
+        "attachment_path": null
+      },
+      {
+        "group": null,
+        "name": null,
+        "quantity": "0 bản chính, 1 bản sao",
+        "notes": [],
+        "attachment_path": null
+      }
+    ]
+  },
+  "steps": [
+    {
+      "order": 1,
+      "title": "Bước 1",
+      "description": "1.",
+      "example": null
+    },
+    {
+      "order": 2,
+      "title": "a)",
+      "description": "a) Nộp hồ sơ TTHC: - Đối với người dự sát hạch nộp qua cơ sở đào tạo lái xe: Cơ sở đào tạo lái xe lập hồ sơ của người dự sát hạch gửi đến Phòng Cảnh sát giao thông trước kỳ sát hạch ít nhất 07 ngày làm việc. - Người dự sát hạch gửi trực tiếp hoặc qua hệ thống dịch vụ công trực tuyến đến Phòng Cảnh sát giao thông trước kỳ sát hạch ít nhất 07 ngày làm việc. - Người dự sát hạch do giấy phép lái xe quá thời hạn sử dụng, do giấy phép lái xe mất và quá thời hạn sử dụng gửi hồ sơ đến Phòng Cảnh sát giao thông trước kỳ sát hạch ít nhất 07 ngày làm việc.",
+      "example": "07 ngày làm việc"
+    },
+    {
+      "order": 3,
+      "title": "b)",
+      "description": "b) Giải quyết TTHC: - Căn cứ kết quả kỳ sát hạch, Cục Cảnh sát giao thông cấp giấy phép lái xe cho người đạt. Ngày cấp giấy phép lái xe ghi tại mặt sau giấy phép lái xe là ngày người dự sát hạch đạt kết quả các kỳ sát hạch; - Thời gian cấp giấy phép lái xe: Giấy phép lái xe điện tử được cấp trong thời hạn 03 ngày kể từ ngày kết thúc kỳ sát hạch; Giấy phép lái xe bằng chất liệu PET được cấp trong thời hạn 07 ngày kể từ ngày kết thúc kỳ sát hạch và người đạt kết quả kỳ sát hạch đã hoàn thành nghĩa vụ nộp lệ phí cấp giấy phép lái xe. - Người đạt kết quả kỳ sát hạch được cấp giấy phép lái xe đúng hạng đã trúng tuyển; đối với trường hợp nâng hạng hoặc cấp do giấy phép lái xe quá thời hạn sử dụng phải xuất trình bản chính giấy phép lái xe khi đến nhận giấy phép lái xe;",
+      "example": "03 ngày"
+    }
+  ],
+  "input_fields": [
+    {
+      "field": "vehicle_or_license_need",
+      "label": "Nhu cầu về phương tiện hoặc giấy phép",
+      "type": "string",
+      "required": true
+    },
+    {
+      "field": "vehicle_or_person_identifier",
+      "label": "Thông tin phương tiện hoặc người lái",
+      "type": "string",
+      "required": true
+    },
+    {
+      "field": "submission_channel_preference",
+      "label": "Kênh nộp dự kiến",
+      "type": "enum",
+      "required": false,
+      "options": [
+        "Trực tiếp",
+        "Trực tuyến",
+        "Dịch vụ bưu chính"
+      ]
+    },
+    {
+      "field": "has_technical_or_identity_documents",
+      "label": "Đã có hồ sơ kỹ thuật hoặc giấy tờ nhân thân",
+      "type": "boolean",
+      "required": false
+    },
+    {
+      "field": "driver_license_status",
+      "label": "Tình trạng giấy phép lái xe hiện tại",
+      "type": "enum",
+      "required": false
+    }
+  ],
+  "validation_rules": [
+    {
+      "id": "required-1",
+      "severity": "error",
+      "field": "vehicle_or_license_need",
+      "rule": "Trường bắt buộc phải có dữ liệu hợp lệ trước khi nộp.",
+      "message": "Thiếu trường bắt buộc: Nhu cầu về phương tiện hoặc giấy phép."
+    },
+    {
+      "id": "required-2",
+      "severity": "error",
+      "field": "vehicle_or_person_identifier",
+      "rule": "Trường bắt buộc phải có dữ liệu hợp lệ trước khi nộp.",
+      "message": "Thiếu trường bắt buộc: Thông tin phương tiện hoặc người lái."
+    },
+    {
+      "id": "hint-1",
+      "severity": "warning",
+      "field": "general",
+      "rule": "Nên xác định trước kênh nộp hồ sơ để biết có cần bản giấy, bản điện tử hay xuất trình trực tiếp.",
+      "message": "Nên xác định trước kênh nộp hồ sơ để biết có cần bản giấy, bản điện tử hay xuất trình trực tiếp."
+    },
+    {
+      "id": "hint-2",
+      "severity": "warning",
+      "field": "general",
+      "rule": "Nên đối chiếu trước thông tin phương tiện, hồ sơ kỹ thuật hoặc giấy phép lái xe liên quan.",
+      "message": "Nên đối chiếu trước thông tin phương tiện, hồ sơ kỹ thuật hoặc giấy phép lái xe liên quan."
+    }
+  ],
+  "common_errors": [
+    {
+      "field": "general",
+      "issue": "Thiếu giấy tờ hợp pháp hóa hoặc giấy tờ nhân thân của phía nước ngoài.",
+      "fix": "Nên xác định trước kênh nộp hồ sơ để biết có cần bản giấy, bản điện tử hay xuất trình trực tiếp."
+    },
+    {
+      "field": "general",
+      "issue": "Điền sai mẫu tờ khai hoặc chọn sai biểu mẫu đi kèm.",
+      "fix": "Nên xác định trước kênh nộp hồ sơ để biết có cần bản giấy, bản điện tử hay xuất trình trực tiếp."
+    },
+    {
+      "field": "general",
+      "issue": "Thiếu hồ sơ kỹ thuật phương tiện hoặc thông tin giấy phép lái xe cần đối chiếu.",
+      "fix": "Nên xác định trước kênh nộp hồ sơ để biết có cần bản giấy, bản điện tử hay xuất trình trực tiếp."
+    }
+  ],
+  "clarifying_questions": [
+    {
+      "id": "clarify_1",
+      "question": "Bạn đang xử lý hồ sơ cho phương tiện hay cho giấy phép lái xe?",
+      "purpose": "workflow_intake"
+    },
+    {
+      "id": "clarify_2",
+      "question": "Bạn đã có thông tin nhận diện phương tiện hoặc giấy tờ của người lái chưa?",
+      "purpose": "workflow_intake"
+    }
+  ],
+  "legal_basis": [
+    {
+      "title": "Thông tư số 12/2025/TT-BCA ngày 28/02/2025 của Bộ trưởng Bộ Công an quy định về sát hạch, cấp giấy phép lái xe; cấp, sử dụng giấy phép lái xe quốc tế",
+      "code": "12/2025/TT-BCA"
+    },
+    {
+      "title": "Thông tư số 63/2023/TT-BTC ngày 16/10/2023 của Bộ trưởng Bộ Tài chính sửa đổi, bổ sung một số điều của một số Thông tư quy định về phí, lệ phí của Bộ trưởng Bộ Tài chính nhằm khuyến khích sử dụng dịch vụ công trực tuyến",
+      "code": "63/2023/TT-BTC"
+    },
+    {
+      "title": "Thông tư số 37/2023/TT-BTC ngày 07/6/2023 của Bộ trưởng Bộ Tài chính quy định mức thu, chế độ thu, nộp, quản lý và sử dụng phí sát hạch lái xe; lệ phí cấp bằng, chứng chỉ được hoạt động trên các loại phương tiện và lệ phí đăng ký, cấp biển xe máy chuyên dùng",
+      "code": "37/2023/TT-BTC"
+    },
+    {
+      "title": "hông tư số 06/2025/TT-BTC của Bộ Tài chính: Sửa đổi, bổ sung một số điều của các Thông tư của Bộ trưởng Bộ Tài chính quy định về phí, lệ phí",
+      "code": "06/2025/TT-BTC"
+    }
+  ],
+  "legal_bases": [
+    {
+      "title": "Thông tư số 12/2025/TT-BCA ngày 28/02/2025 của Bộ trưởng Bộ Công an quy định về sát hạch, cấp giấy phép lái xe; cấp, sử dụng giấy phép lái xe quốc tế",
+      "code": "12/2025/TT-BCA"
+    },
+    {
+      "title": "Thông tư số 63/2023/TT-BTC ngày 16/10/2023 của Bộ trưởng Bộ Tài chính sửa đổi, bổ sung một số điều của một số Thông tư quy định về phí, lệ phí của Bộ trưởng Bộ Tài chính nhằm khuyến khích sử dụng dịch vụ công trực tuyến",
+      "code": "63/2023/TT-BTC"
+    },
+    {
+      "title": "Thông tư số 37/2023/TT-BTC ngày 07/6/2023 của Bộ trưởng Bộ Tài chính quy định mức thu, chế độ thu, nộp, quản lý và sử dụng phí sát hạch lái xe; lệ phí cấp bằng, chứng chỉ được hoạt động trên các loại phương tiện và lệ phí đăng ký, cấp biển xe máy chuyên dùng",
+      "code": "37/2023/TT-BTC"
+    },
+    {
+      "title": "hông tư số 06/2025/TT-BTC của Bộ Tài chính: Sửa đổi, bổ sung một số điều của các Thông tư của Bộ trưởng Bộ Tài chính quy định về phí, lệ phí",
+      "code": "06/2025/TT-BTC"
+    }
+  ],
+  "faq": [
+    {
+      "question": "Có thể nộp qua kênh nào?",
+      "answer": "Các kênh hiện có: Trực tiếp, Trực tuyến, Dịch vụ bưu chính."
+    },
+    {
+      "question": "Thời gian xử lý tham chiếu là bao lâu?",
+      "answer": "Thời gian xử lý tham chiếu hiện có là 7 ngày."
+    },
+    {
+      "question": "Kết quả chính của thủ tục là gì?",
+      "answer": "Kết quả chính được trích xuất là Giấy phép lái xe."
+    }
+  ],
+  "guidance": {
+    "highlight_documents": [
+      {
+        "bucket": "required",
+        "name": "Bản sao hoặc bản sao điện tử được chứng thực từ bản chính hoặc bản sao điện tử được cấp từ sổ gốc một trong các giấy tờ sau: thẻ tạm trú, thẻ thường trú, chứng minh thư ngoại giao, chứng minh thư công vụ (đối với người nước ngoài).",
+        "conditions": [],
+        "attachment_path": null
+      },
+      {
+        "bucket": "required",
+        "name": "Giấy khám sức khoẻ của người lái xe do cơ sở khám bệnh, chữa bệnh đủ tiêu chuẩn theo quy định của pháp luật về khám bệnh, chữa bệnh cấp còn hiệu lực",
+        "conditions": [],
+        "attachment_path": null
+      },
+      {
+        "bucket": "required",
+        "name": "Đề nghị sát hạch để cấp giấy phép lái xe theo quy định tại Phụ lục I ban hành kèm theo Thông tư số 12/2025/TT-BCA",
+        "conditions": [],
+        "attachment_path": null
+      },
+      {
+        "bucket": "required",
+        "name": "Giấy khám sức khoẻ của người lái xe do cơ sở khám bệnh, chữa bệnh đủ tiêu chuẩn theo quy định của pháp luật về khám bệnh, chữa bệnh cấp còn hiệu lực.",
+        "conditions": [],
+        "attachment_path": null
+      },
+      {
+        "bucket": "required",
+        "name": "Bản sao hoặc bản sao điện tử được chứng thực từ bản chính hoặc bản sao điện tử được cấp từ sổ gốc một trong các giấy tờ sau: thẻ tạm trú, thẻ thường trú, chứng minh thư ngoại giao, chứng minh thư công vụ (đối với người nước ngoài).",
+        "conditions": [],
+        "attachment_path": null
+      },
+      {
+        "bucket": "required",
+        "name": "Đề nghị sát hạch để cấp giấy phép lái xe theo mẫu quy định tại Phụ lục I ban hành kèm theo Thông tư số 12/2025/TT-BCA",
+        "conditions": [],
+        "attachment_path": null
+      }
+    ],
+    "special_cases": [
+      "Có yếu tố nước ngoài",
+      "Có kiểm tra dữ liệu cư trú/định danh",
+      "Có thể cần hồ sơ kỹ thuật phương tiện hoặc giấy phép lái xe"
+    ],
+    "common_errors": [
+      "Thiếu giấy tờ hợp pháp hóa hoặc giấy tờ nhân thân của phía nước ngoài.",
+      "Điền sai mẫu tờ khai hoặc chọn sai biểu mẫu đi kèm.",
+      "Thiếu hồ sơ kỹ thuật phương tiện hoặc thông tin giấy phép lái xe cần đối chiếu."
+    ],
+    "validation_hints": [
+      "Nên xác định trước kênh nộp hồ sơ để biết có cần bản giấy, bản điện tử hay xuất trình trực tiếp.",
+      "Nên đối chiếu trước thông tin phương tiện, hồ sơ kỹ thuật hoặc giấy phép lái xe liên quan."
+    ]
+  },
+  "next_steps": {
+    "summary": "Nên kiểm tra trước loại phương tiện hoặc loại giấy phép cần xử lý, cùng hồ sơ kỹ thuật hoặc nhân thân liên quan. Có thể chọn kênh nộp phù hợp: Trực tiếp, Trực tuyến, Dịch vụ bưu chính. Hiện có khoảng 13 mục giấy tờ cần theo dõi trong checklist.",
+    "time_badge": "7 ngày",
+    "result_label": "Giấy phép lái xe",
+    "primary_channel": "online",
+    "channels": [
+      "in_person",
+      "online",
+      "postal"
+    ]
+  },
+  "notes": [],
+  "provenance": {
+    "pipeline": "raw->structured->normalized->enriched->ui_api_payload",
+    "normalizer_version": "0.2.0",
+    "enricher_version": "0.2.0",
+    "mapping_notes": "workflow_generated:phuong_tien_nguoi_lai/giay_phep_lai_xe",
+    "supported_group": true
+  }
+}

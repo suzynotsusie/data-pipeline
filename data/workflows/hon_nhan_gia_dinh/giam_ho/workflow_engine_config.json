@@ -1,0 +1,266 @@
+{
+  "schema_version": "1.0",
+  "domain": "hon_nhan_gia_dinh",
+  "updated_at": "2026-07-18",
+  "source_files": [
+    "C:\\Users\\ku060\\Downloads\\VAIC source\\data-pipeline\\main\\full-data.csv",
+    "C:\\Users\\ku060\\Downloads\\VAIC source\\data-pipeline\\data\\workflows\\hon_nhan_gia_dinh\\summary.csv",
+    "C:\\Users\\ku060\\Downloads\\VAIC source\\data-pipeline\\data\\workflows\\hon_nhan_gia_dinh\\normalized.json",
+    "C:\\Users\\ku060\\Downloads\\VAIC source\\data-pipeline\\raw_data"
+  ],
+  "coverage": {
+    "expected_codes": [
+      "1.001669",
+      "1.004837",
+      "1.004845",
+      "2.000560",
+      "2.000584",
+      "2.000756",
+      "3.000322",
+      "3.000323"
+    ],
+    "covered_codes": [
+      "1.001669",
+      "1.004837",
+      "1.004845",
+      "2.000560",
+      "2.000584",
+      "2.000756",
+      "3.000322",
+      "3.000323"
+    ],
+    "missing_codes": []
+  },
+  "llm_contract": {
+    "role": "parse_user_answer_and_rephrase_question_only",
+    "required_output_schema": {
+      "intent": "hon_nhan_gia_dinh",
+      "current_node": "string",
+      "slot_updates": {
+        "subdomain_key": "ket_hon | giam_ho | nhan_cha_me_con | nhan_con_nuoi | cai_chinh_trich_luc_ho_tich | unknown",
+        "operation_key": "string",
+        "operation_group": "string"
+      },
+      "confidence": "0_to_1",
+      "needs_human_review": "boolean"
+    }
+  },
+  "entry_prompts": [
+    "Bạn đang cần làm việc về kết hôn, giám hộ, nhận cha mẹ con, nhận con nuôi hay cải chính hộ tịch?",
+    "Bạn muốn đăng ký mới, đăng ký lại, ghi chú, chấm dứt hay điều chỉnh thông tin hộ tịch?"
+  ],
+  "slots": [
+    {
+      "name": "subdomain_key",
+      "required": true,
+      "description": "Nhánh chính của nhóm Hôn nhân và gia đình."
+    },
+    {
+      "name": "operation_key",
+      "required": true,
+      "description": "Thao tác cụ thể ánh xạ trực tiếp tới thủ tục cuối cùng."
+    },
+    {
+      "name": "operation_group",
+      "required": false,
+      "description": "Nhóm thao tác để gom các thủ tục gần nhau cho UI và parser."
+    }
+  ],
+  "subdomain_catalog": [
+    {
+      "subdomain_key": "giam_ho",
+      "subdomain_label": "Giám hộ",
+      "event_id": 275,
+      "summary": "Nhóm thủ tục đăng ký giám hộ, chấm dứt hoặc thay đổi giám hộ và giám sát việc giám hộ."
+    }
+  ],
+  "decision_tree": {
+    "start_node": "family_subdomain",
+    "nodes": [
+      {
+        "id": "family_subdomain",
+        "type": "question",
+        "slot": "subdomain_key",
+        "question": "Bạn đang hỏi về kết hôn, giám hộ, nhận cha mẹ con, nhận con nuôi hay cải chính hộ tịch?",
+        "options": [
+          "giam_ho"
+        ],
+        "prefilled_value": "giam_ho"
+      },
+      {
+        "id": "family_operation",
+        "type": "question",
+        "slot": "operation_key",
+        "question": "Bạn cần làm thao tác nào cụ thể trong nhánh đã chọn?",
+        "options_by_subdomain": {
+          "giam_ho": [
+            {
+              "operation_key": "thu_tuc_dang_ky_giam_ho_co_yeu_to_nuoc_ngoai",
+              "operation_group": "giam_ho_co_yeu_to_nuoc_ngoai",
+              "procedure_code": "1.001669",
+              "procedure_title": "Thủ tục đăng ký giám hộ có yếu tố nước ngoài"
+            },
+            {
+              "operation_key": "thu_tuc_dang_ky_giam_ho",
+              "operation_group": "dang_ky_giam_ho",
+              "procedure_code": "1.004837",
+              "procedure_title": "Thủ tục đăng ký giám hộ"
+            },
+            {
+              "operation_key": "thu_tuc_dang_ky_cham_dut_giam_ho",
+              "operation_group": "cham_dut_hoac_thay_doi_giam_ho",
+              "procedure_code": "1.004845",
+              "procedure_title": "Thủ tục đăng ký chấm dứt giám hộ"
+            },
+            {
+              "operation_key": "thu_tuc_dang_ky_viec_giam_ho_giua_cong_dan_viet_nam_cu_tru_o_nuoc_ngoai_voi_nhau",
+              "operation_group": "giam_ho_giua_cong_dan_vn_o_nuoc_ngoai",
+              "procedure_code": "2.000560",
+              "procedure_title": "Thủ tục đăng ký việc giám hộ giữa công dân Việt Nam cư trú ở nước ngoài với nhau"
+            },
+            {
+              "operation_key": "thu_tuc_dang_ky_cham_dut_thay_doi_viec_giam_ho_giua_cong_dan_viet_nam_cu_tru_o_nuoc_ngoai_voi_nhau",
+              "operation_group": "cham_dut_hoac_thay_doi_giam_ho",
+              "procedure_code": "2.000584",
+              "procedure_title": "Thủ tục đăng ký chấm dứt, thay đổi việc giám hộ giữa công dân Việt Nam cư trú ở nước ngoài với nhau"
+            },
+            {
+              "operation_key": "thu_tuc_dang_ky_cham_dut_giam_ho_co_yeu_to_nuoc_ngoai",
+              "operation_group": "cham_dut_hoac_thay_doi_giam_ho",
+              "procedure_code": "2.000756",
+              "procedure_title": "Thủ tục đăng ký chấm dứt giám hộ có yếu tố nước ngoài"
+            },
+            {
+              "operation_key": "dang_ky_cham_dut_giam_sat_viec_giam_ho",
+              "operation_group": "giam_sat_giam_ho",
+              "procedure_code": "3.000322",
+              "procedure_title": "Đăng ký chấm dứt giám sát việc giám hộ"
+            },
+            {
+              "operation_key": "dang_ky_giam_sat_viec_giam_ho",
+              "operation_group": "giam_sat_giam_ho",
+              "procedure_code": "3.000323",
+              "procedure_title": "Đăng ký giám sát việc giám hộ"
+            }
+          ]
+        },
+        "options": [
+          "thu_tuc_dang_ky_giam_ho_co_yeu_to_nuoc_ngoai",
+          "thu_tuc_dang_ky_giam_ho",
+          "thu_tuc_dang_ky_cham_dut_giam_ho",
+          "thu_tuc_dang_ky_viec_giam_ho_giua_cong_dan_viet_nam_cu_tru_o_nuoc_ngoai_voi_nhau",
+          "thu_tuc_dang_ky_cham_dut_thay_doi_viec_giam_ho_giua_cong_dan_viet_nam_cu_tru_o_nuoc_ngoai_voi_nhau",
+          "thu_tuc_dang_ky_cham_dut_giam_ho_co_yeu_to_nuoc_ngoai",
+          "dang_ky_cham_dut_giam_sat_viec_giam_ho",
+          "dang_ky_giam_sat_viec_giam_ho"
+        ]
+      }
+    ],
+    "routes": [
+      {
+        "route_id": "giam_ho-1_001669",
+        "conditions": {
+          "subdomain_key": "giam_ho",
+          "operation_key": "thu_tuc_dang_ky_giam_ho_co_yeu_to_nuoc_ngoai"
+        },
+        "procedure_code": "1.001669",
+        "procedure_name": "Thủ tục đăng ký giám hộ có yếu tố nước ngoài",
+        "why_this_route": "Route trực tiếp cho nhu cầu 'Thủ tục đăng ký giám hộ có yếu tố nước ngoài' trong nhánh 'Giám hộ'."
+      },
+      {
+        "route_id": "giam_ho-1_004837",
+        "conditions": {
+          "subdomain_key": "giam_ho",
+          "operation_key": "thu_tuc_dang_ky_giam_ho"
+        },
+        "procedure_code": "1.004837",
+        "procedure_name": "Thủ tục đăng ký giám hộ",
+        "why_this_route": "Route trực tiếp cho nhu cầu 'Thủ tục đăng ký giám hộ' trong nhánh 'Giám hộ'."
+      },
+      {
+        "route_id": "giam_ho-1_004845",
+        "conditions": {
+          "subdomain_key": "giam_ho",
+          "operation_key": "thu_tuc_dang_ky_cham_dut_giam_ho"
+        },
+        "procedure_code": "1.004845",
+        "procedure_name": "Thủ tục đăng ký chấm dứt giám hộ",
+        "why_this_route": "Route trực tiếp cho nhu cầu 'Thủ tục đăng ký chấm dứt giám hộ' trong nhánh 'Giám hộ'."
+      },
+      {
+        "route_id": "giam_ho-2_000560",
+        "conditions": {
+          "subdomain_key": "giam_ho",
+          "operation_key": "thu_tuc_dang_ky_viec_giam_ho_giua_cong_dan_viet_nam_cu_tru_o_nuoc_ngoai_voi_nhau"
+        },
+        "procedure_code": "2.000560",
+        "procedure_name": "Thủ tục đăng ký việc giám hộ giữa công dân Việt Nam cư trú ở nước ngoài với nhau",
+        "why_this_route": "Route trực tiếp cho nhu cầu 'Thủ tục đăng ký việc giám hộ giữa công dân Việt Nam cư trú ở nước ngoài với nhau' trong nhánh 'Giám hộ'."
+      },
+      {
+        "route_id": "giam_ho-2_000584",
+        "conditions": {
+          "subdomain_key": "giam_ho",
+          "operation_key": "thu_tuc_dang_ky_cham_dut_thay_doi_viec_giam_ho_giua_cong_dan_viet_nam_cu_tru_o_nuoc_ngoai_voi_nhau"
+        },
+        "procedure_code": "2.000584",
+        "procedure_name": "Thủ tục đăng ký chấm dứt, thay đổi việc giám hộ giữa công dân Việt Nam cư trú ở nước ngoài với nhau",
+        "why_this_route": "Route trực tiếp cho nhu cầu 'Thủ tục đăng ký chấm dứt, thay đổi việc giám hộ giữa công dân Việt Nam cư trú ở nước ngoài với nhau' trong nhánh 'Giám hộ'."
+      },
+      {
+        "route_id": "giam_ho-2_000756",
+        "conditions": {
+          "subdomain_key": "giam_ho",
+          "operation_key": "thu_tuc_dang_ky_cham_dut_giam_ho_co_yeu_to_nuoc_ngoai"
+        },
+        "procedure_code": "2.000756",
+        "procedure_name": "Thủ tục đăng ký chấm dứt giám hộ có yếu tố nước ngoài",
+        "why_this_route": "Route trực tiếp cho nhu cầu 'Thủ tục đăng ký chấm dứt giám hộ có yếu tố nước ngoài' trong nhánh 'Giám hộ'."
+      },
+      {
+        "route_id": "giam_ho-3_000322",
+        "conditions": {
+          "subdomain_key": "giam_ho",
+          "operation_key": "dang_ky_cham_dut_giam_sat_viec_giam_ho"
+        },
+        "procedure_code": "3.000322",
+        "procedure_name": "Đăng ký chấm dứt giám sát việc giám hộ",
+        "why_this_route": "Route trực tiếp cho nhu cầu 'Đăng ký chấm dứt giám sát việc giám hộ' trong nhánh 'Giám hộ'."
+      },
+      {
+        "route_id": "giam_ho-3_000323",
+        "conditions": {
+          "subdomain_key": "giam_ho",
+          "operation_key": "dang_ky_giam_sat_viec_giam_ho"
+        },
+        "procedure_code": "3.000323",
+        "procedure_name": "Đăng ký giám sát việc giám hộ",
+        "why_this_route": "Route trực tiếp cho nhu cầu 'Đăng ký giám sát việc giám hộ' trong nhánh 'Giám hộ'."
+      }
+    ]
+  },
+  "pre_submission_checks": [
+    {
+      "field_group": "marital_status",
+      "checks": [
+        "Thông tin nhân thân của các bên phải thống nhất giữa giấy tờ tùy thân, giấy xác nhận tình trạng hôn nhân và biểu mẫu nộp.",
+        "Các thủ tục có yếu tố nước ngoài phải làm rõ giấy tờ nước ngoài đã được hợp pháp hóa hoặc dịch chứng thực hay chưa."
+      ]
+    },
+    {
+      "field_group": "family_relationship",
+      "checks": [
+        "Nhóm nhận cha mẹ con phải có căn cứ chứng minh quan hệ và xác định rõ trường hợp kết hợp khai sinh hay không.",
+        "Nhóm giám hộ phải làm rõ căn cứ phát sinh, chấm dứt hoặc thay đổi giám hộ trước khi chọn thủ tục."
+      ]
+    },
+    {
+      "field_group": "adoption_civil_status",
+      "checks": [
+        "Nhóm nhận con nuôi phải xác định là trong nước, có yếu tố nước ngoài, đăng ký lại hay ghi chú kết quả từ nước ngoài.",
+        "Nhóm cải chính hộ tịch phải nêu rõ nội dung cần sửa đổi và hồ sơ gốc liên quan đến việc đăng ký hộ tịch ban đầu."
+      ]
+    }
+  ],
+  "subdomain_key": "giam_ho"
+}

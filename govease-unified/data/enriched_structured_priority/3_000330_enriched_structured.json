@@ -1,0 +1,123 @@
+{
+  "schema_version": "1.0",
+  "enricher_version": "0.2.0",
+  "source": {
+    "procedure_code": "3.000330",
+    "title": "Cấp Phiếu lý lịch tư pháp cho công dân Việt Nam mà không xác định được nơi thường trú hoặc nơi tạm trú; người nước ngoài đã cư trú tại Việt Nam",
+    "group_key": "cu_tru_giay_to",
+    "workflow_family": null,
+    "subflow": null
+  },
+  "experience": {
+    "entry_label": "Hỗ trợ cư trú và giấy tờ",
+    "overview_summary": "Thủ tục này thuộc nhóm cư trú và giấy tờ, thường cần kiểm tra thông tin định danh hoặc hồ sơ giấy tờ chuyên ngành. Kết quả thường nhận được là Phiếu Lý lịch tư pháp số 1 (Cấp bộ). Thời gian xử lý tham khảo: 15 ngày.",
+    "next_step_summary": "Nên kiểm tra trước giấy tờ định danh, nơi nộp và mẫu biểu liên quan, rồi chọn kênh nộp phù hợp: Trực tiếp, Trực tuyến, Dịch vụ bưu chính. Hiện có khoảng 7 mục giấy tờ cần theo dõi trong checklist.",
+    "tone": "supportive_public_service"
+  },
+  "guidance": {
+    "highlight_documents": [
+      {
+        "bucket": "required",
+        "name": "Tờ khai yêu cầu cấp Phiếu Lý lịch tư pháp điện tử tương tác (Dùng cho cá nhân có yêu cầu cấp Phiếu Lý lịch tư pháp), Mẫu số 04/2025/LLTP;",
+        "conditions": [],
+        "attachment_path": null
+      },
+      {
+        "bucket": "required",
+        "name": "Tờ khai yêu cầu cấp Phiếu Lý lịch tư pháp (Dùng cho cá nhân có yêu cầu cấp Phiếu Lý lịch tư pháp), Mẫu số 01/2025/LLTP",
+        "conditions": [],
+        "attachment_path": null
+      },
+      {
+        "bucket": "conditional",
+        "name": "Các giấy tờ để chứng minh đối tượng miễn, hoặc giảm phí (nếu có).",
+        "conditions": [
+          "Các giấy tờ để chứng minh đối tượng miễn, hoặc giảm phí (nếu có)."
+        ],
+        "attachment_path": null
+      },
+      {
+        "bucket": "conditional",
+        "name": "Tờ khai yêu cầu cấp Phiếu Lý lịch tư pháp ( Dùng cho cá nhân trong trường hợp ủy quyền yêu cầu cấp Phiếu Lý lịch tư pháp số 1 và cá nhân là cha, mẹ của người chưa thành niên yêu cầu cấp Phiếu Lý lịch tư pháp số 1, số 2), Mẫu số 02/2025/LLTP;",
+        "conditions": [
+          "Tờ khai yêu cầu cấp Phiếu Lý lịch tư pháp ( Dùng cho cá nhân trong trường hợp ủy quyền yêu cầu cấp Phiếu Lý lịch tư pháp số 1 và cá nhân là cha, mẹ của người chưa thành niên yêu cầu cấp Phiếu Lý lịch tư pháp số 1, số 2), Mẫu số 02/2025/LLTP;"
+        ],
+        "attachment_path": null
+      },
+      {
+        "bucket": "conditional",
+        "name": "Tờ khai yêu cầu cấp Phiếu Lý lịch tư pháp điện tử tương tác (Dùng cho cá nhân trong trường hợp ủy quyền yêu cầu cấp Phiếu Lý lịch tư pháp số 1 và cá nhân là cha, mẹ của người chưa thành niên yêu cầu cấp Phiếu Lý lịch tư pháp số 1, số 2), Mẫu số 05/2025/LLTP;",
+        "conditions": [
+          "Tờ khai yêu cầu cấp Phiếu Lý lịch tư pháp điện tử tương tác (Dùng cho cá nhân trong trường hợp ủy quyền yêu cầu cấp Phiếu Lý lịch tư pháp số 1 và cá nhân là cha, mẹ của người chưa thành niên yêu cầu cấp Phiếu Lý lịch tư pháp số 1, số 2), Mẫu số 05/2025/LLTP;"
+        ],
+        "attachment_path": null
+      },
+      {
+        "bucket": "conditional",
+        "name": "Văn bản ủy quyền làm thủ tục yêu cầu cấp Phiếu Lý lịch tư pháp số 1 (người được ủy quyền phải xuất trình Thẻ Căn cước hoặc Thẻ Căn cước công dân hoặc Giấy chứng nhận căn cước hoặc Hộ chiếu khi thực hiện thủ tục yêu cầu cấp Phiếu Lý lịch tư pháp. Trường hợp người được ủy quyền là cha, mẹ, vợ, chồng, con của người ủy quyền thì không cần văn bản ủy quyền). Văn bản ủy quyền phải được công chứng, chứng thực theo quy định của pháp luật Việt Nam hoặc pháp luật của nước nơi người đó là công dân hoặc thường trú. Trường hợp ủy quyền theo quy định của pháp luật của nước mà nơi người đó là công dân hoặc thường trú thì văn bản ủy quyền phải được hợp pháp hóa lãnh sự theo quy định của pháp luật Việt Nam và dịch ra tiếng Việt. Cá nhân yêu cầu cấp Phiếu Lý lịch tư pháp số 2 không được ủy quyền cho người khác làm thủ tục yêu cầu cấp Phiếu Lý lịch tư pháp trừ trường hợp cá nhân là người chưa thành niên có thể ủy quyền cho cha, mẹ yêu cầu cấp Phiếu Lý lịch tư pháp số 2.",
+        "conditions": [
+          "Văn bản ủy quyền làm thủ tục yêu cầu cấp Phiếu Lý lịch tư pháp số 1 (người được ủy quyền phải xuất trình Thẻ Căn cước hoặc Thẻ Căn cước công dân hoặc Giấy chứng nhận căn cước hoặc Hộ chiếu khi thực hiện thủ tục yêu cầu cấp Phiếu Lý lịch tư pháp. Trường hợp người được ủy quyền là cha, mẹ, vợ, chồng, con của người ủy quyền thì không cần văn bản ủy quyền). Văn bản ủy quyền phải được công chứng, chứng thực theo quy định của pháp luật Việt Nam hoặc pháp luật của nước nơi người đó là công dân hoặc thường trú. Trường hợp ủy quyền theo quy định của pháp luật của nước mà nơi người đó là công dân hoặc thường trú thì văn bản ủy quyền phải được hợp pháp hóa lãnh sự theo quy định của pháp luật Việt Nam và dịch ra tiếng Việt. Cá nhân yêu cầu cấp Phiếu Lý lịch tư pháp số 2 không được ủy quyền cho người khác làm thủ tục yêu cầu cấp Phiếu Lý lịch tư pháp trừ trường hợp cá nhân là người chưa thành niên có thể ủy quyền cho cha, mẹ yêu cầu cấp Phiếu Lý lịch tư pháp số 2."
+        ],
+        "attachment_path": null
+      }
+    ],
+    "special_cases": [
+      "Có yếu tố nước ngoài",
+      "Có thể cần giấy tờ ủy quyền",
+      "Có thể cần đối chiếu thông tin thửa đất hoặc giấy chứng nhận"
+    ],
+    "common_errors": [
+      "Thiếu giấy tờ hoặc nội dung ủy quyền phù hợp.",
+      "Thiếu giấy tờ hợp pháp hóa hoặc giấy tờ nhân thân của phía nước ngoài.",
+      "Điền sai mẫu tờ khai hoặc chọn sai biểu mẫu đi kèm.",
+      "Thông tin thửa đất, tài sản hoặc giấy chứng nhận chưa khớp với hồ sơ hiện có."
+    ],
+    "validation_hints": [
+      "Nên xác định trước kênh nộp hồ sơ để biết có cần bản giấy, bản điện tử hay xuất trình trực tiếp.",
+      "Nên đối chiếu trước dữ liệu định danh và nơi cư trú để tránh bị yêu cầu bổ sung."
+    ]
+  },
+  "intake": {
+    "candidate_input_fields": [
+      {
+        "field_id": "document_request_type",
+        "label": "Loại giấy tờ cần xử lý",
+        "field_type": "text",
+        "required": true
+      },
+      {
+        "field_id": "submission_channel_preference",
+        "label": "Kênh nộp dự kiến",
+        "field_type": "enum",
+        "required": false
+      },
+      {
+        "field_id": "identity_document_available",
+        "label": "Có giấy tờ định danh",
+        "field_type": "boolean",
+        "required": true
+      },
+      {
+        "field_id": "residency_or_status_known",
+        "label": "Biết rõ nơi cư trú hoặc tình trạng hiện tại",
+        "field_type": "boolean",
+        "required": false
+      }
+    ],
+    "suggested_clarifying_questions": [
+      "Bạn đang xử lý giấy tờ gì và muốn nộp trực tiếp hay trực tuyến?",
+      "Thông tin định danh và nơi cư trú hiện tại đã sẵn sàng để đối chiếu chưa?"
+    ]
+  },
+  "ui_hints": {
+    "primary_channel": "online",
+    "result_label": "Phiếu Lý lịch tư pháp số 1 (Cấp bộ)",
+    "time_badge": "15 ngày",
+    "document_count_badge": 7
+  },
+  "provenance": {
+    "generator": "workflow_domain_enricher",
+    "derivation_mode": "rule_based_semantic_enrichment",
+    "supported_group": true
+  }
+}

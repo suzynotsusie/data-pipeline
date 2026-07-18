@@ -1,0 +1,112 @@
+{
+  "schema_version": "1.0",
+  "enricher_version": "0.2.0",
+  "source": {
+    "procedure_code": "1.012257",
+    "title": "Cho phép tổ chức hoạt động khám bệnh, chữa bệnh nhân đạo theo đợt, khám bệnh, chữa bệnh lưu động thuộc trường hợp quy định tại khoản 1 Điều 79 của Luật Khám bệnh, chữa bệnh hoặc cá nhân khám bệnh, chữa bệnh nhân đạo",
+    "group_key": "suc_khoe_y_te",
+    "workflow_family": null,
+    "subflow": null
+  },
+  "experience": {
+    "entry_label": "Hỗ trợ y tế và bảo hiểm",
+    "overview_summary": "Thủ tục này thuộc nhóm y tế, thường cần đối chiếu thông tin người bệnh, đơn vị tiếp nhận hoặc quyền lợi chuyên ngành. Kết quả thường nhận được là Công văn đồng ý/không đồng ý. Thời gian xử lý tham khảo: 10 ngày.",
+    "next_step_summary": "Nên xác định rõ đối tượng tham gia, quyền lợi hoặc nhu cầu điều chỉnh hồ sơ y tế trước khi nộp. Có thể chọn kênh nộp phù hợp: Trực tiếp, Trực tuyến, Dịch vụ bưu chính. Hiện có khoảng 9 mục giấy tờ cần theo dõi trong checklist.",
+    "tone": "supportive_public_service"
+  },
+  "guidance": {
+    "highlight_documents": [
+      {
+        "bucket": "required",
+        "name": "b) Bản kê khai danh sách các thành viên tham gia khám bệnh, chữa bệnh nhân đạo hoặc khám bệnh, chữa bệnh lưu động theo Mẫu 02 Phụ lục IV Nghị định số 96/2023/NĐ-CP, trong đó phải nêu rõ người chịu trách nhiệm chuyên môn kỹ thuật kèm theo bản sao hợp lệ giấy phép hành nghề của người được phân công là người chịu trách nhiệm chuyên môn kỹ thuật của đoàn khám;",
+        "conditions": [],
+        "attachment_path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/1_012257/M%E1%BA%ABu%2002.docx"
+      },
+      {
+        "bucket": "required",
+        "name": "a) Đơn đề nghị cho phép khám bệnh, chữa bệnh nhân đạo theo đợt hoặc khám bệnh, chữa bệnh lưu động theo Mẫu 01 Phụ lục IV ban hành kèm theo Nghị định số 96/2023/NĐ-CP;",
+        "conditions": [],
+        "attachment_path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/1_012257/M%E1%BA%ABu%2001.docx"
+      },
+      {
+        "bucket": "required",
+        "name": "d) Kế hoạch tổ chức khám bệnh, chữa bệnh nhân đạo hoặc khám bệnh, chữa bệnh lưu động theo Mẫu 03 Phụ lục IV ban hành kèm theo Nghị định số 96/2023/NĐ-CP;",
+        "conditions": [],
+        "attachment_path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/1_012257/M%E1%BA%ABu%2003.docx"
+      },
+      {
+        "bucket": "required",
+        "name": "đ) Văn bản cho phép của cơ sở khám bệnh, chữa bệnh hoặc của người đứng đầu địa điểm nơi dự kiến tổ chức hoạt động khám bệnh, chữa bệnh.",
+        "conditions": [],
+        "attachment_path": null
+      },
+      {
+        "bucket": "required",
+        "name": "c) Kế hoạch tổ chức khám bệnh, chữa bệnh nhân đạo theo Mẫu 03 Phụ lục IV ban hành kèm theo Nghị định số 96/2023/NĐ-CP;",
+        "conditions": [],
+        "attachment_path": null
+      },
+      {
+        "bucket": "required",
+        "name": "a) Đơn đề nghị cho phép tổ chức khám bệnh, chữa bệnh nhân đạo hoặc khám bệnh, chữa bệnh lưu động theo Mẫu 01 Phụ lục IV ban hành kèm theo Nghị định số 96/2023/NĐ-CP;",
+        "conditions": [],
+        "attachment_path": null
+      }
+    ],
+    "special_cases": [
+      "Có thể cần xác minh hồ sơ học tập hoặc văn bằng"
+    ],
+    "common_errors": [
+      "Điền sai mẫu tờ khai hoặc chọn sai biểu mẫu đi kèm.",
+      "Thiếu minh chứng học tập, văn bằng hoặc xác nhận từ cơ sở đào tạo."
+    ],
+    "validation_hints": [
+      "Nên xác định trước kênh nộp hồ sơ để biết có cần bản giấy, bản điện tử hay xuất trình trực tiếp.",
+      "Có mẫu biểu đính kèm, nên kiểm tra đúng biểu mẫu trước khi nộp.",
+      "Nên xác định đúng nhóm đối tượng, mã số bảo hiểm và quyền lợi áp dụng trước khi nộp."
+    ]
+  },
+  "intake": {
+    "candidate_input_fields": [
+      {
+        "field_id": "request_subject",
+        "label": "Đối tượng làm thủ tục",
+        "field_type": "text",
+        "required": true
+      },
+      {
+        "field_id": "insurance_or_medical_need",
+        "label": "Nhu cầu bảo hiểm hoặc y tế",
+        "field_type": "text",
+        "required": true
+      },
+      {
+        "field_id": "submission_channel_preference",
+        "label": "Kênh nộp dự kiến",
+        "field_type": "enum",
+        "required": false
+      },
+      {
+        "field_id": "has_insurance_number",
+        "label": "Đã có mã BHXH/BHYT",
+        "field_type": "boolean",
+        "required": false
+      }
+    ],
+    "suggested_clarifying_questions": [
+      "Bạn đang muốn đăng ký, điều chỉnh hay xác nhận quyền lợi y tế hoặc bảo hiểm nào?",
+      "Bạn đã có mã BHXH/BHYT hoặc thông tin đơn vị tiếp nhận liên quan chưa?"
+    ]
+  },
+  "ui_hints": {
+    "primary_channel": "online",
+    "result_label": "Công văn đồng ý/không đồng ý",
+    "time_badge": "10 ngày",
+    "document_count_badge": 9
+  },
+  "provenance": {
+    "generator": "workflow_domain_enricher",
+    "derivation_mode": "rule_based_semantic_enrichment",
+    "supported_group": true
+  }
+}

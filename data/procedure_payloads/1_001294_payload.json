@@ -1,0 +1,394 @@
+{
+  "schema_version": "3.0",
+  "record_type": "public_service_procedure_payload",
+  "id": "procedure-1.001294",
+  "procedure_code": "1.001294",
+  "code": "1.001294",
+  "title": "Cấp lại thẻ bảo hiểm y tế (thực hiện tại cấp tỉnh)",
+  "language": "vi",
+  "status": "generated_from_pipeline",
+  "field": "Chính sách",
+  "group_key": "suc_khoe_y_te",
+  "workflow_family": null,
+  "subflow": null,
+  "source": {
+    "source_url": "file:///C:/Users/ku060/Downloads/VAIC%20source/data-pipeline/raw_data/1_001294/1_001294_procedure_detail.md",
+    "source_markdown_path": "C:\\Users\\ku060\\Downloads\\VAIC source\\data-pipeline\\raw_data\\1_001294\\1_001294_procedure_detail.md",
+    "normalized_payload_path": "C:\\Users\\ku060\\Downloads\\VAIC source\\data-pipeline\\govease-unified\\data\\normalized_structured\\1_001294_normalized_structured.json",
+    "enriched_payload_path": "C:\\Users\\ku060\\Downloads\\VAIC source\\data-pipeline\\govease-unified\\data\\enriched_structured_priority\\1_001294_enriched_structured.json"
+  },
+  "scope": {
+    "included": "Thủ tục này thuộc nhóm y tế và bảo hiểm, thường dùng để đăng ký, điều chỉnh hoặc xác nhận quyền lợi bảo hiểm y tế. Kết quả thường nhận được là Thẻ bảo hiểm y tế (BHYT). Thời gian xử lý tham khảo: 7 ngày làm việc.",
+    "not_included": []
+  },
+  "agency": {
+    "executing_agency": "Bộ Công an, Bảo hiểm xã hội tỉnh, Công an cấp Tỉnh, Cục Chính sách",
+    "submission_place": "Sĩ quan, hạ sĩ quan, chiến sĩ nghĩa vụ, học viên Công an nhân dân đại diện cho thân nhân; người lao động làm việc theo hợp đồng lao động, công nhân Công an, công dân tạm tuyển trước khi chính thức được tuyển chọn vào Công an nhân dân; học sinh trường văn hóa Công an nhân dân và sinh viên là người nước ngoài, sinh viên hệ dân sự đang học tập tại các trường Công an nhân dân.",
+    "receiving_places": [
+      "Sĩ quan, hạ sĩ quan, chiến sĩ nghĩa vụ, học viên Công an nhân dân đại diện cho thân nhân; người lao động làm việc theo hợp đồng lao động, công nhân Công an, công dân tạm tuyển trước khi chính thức được tuyển chọn vào Công an nhân dân; học sinh trường văn hóa Công an nhân dân và sinh viên là người nước ngoài, sinh viên hệ dân sự đang học tập tại các trường Công an nhân dân."
+    ]
+  },
+  "target_users": [
+    "Công dân Việt Nam",
+    "Cán bộ",
+    "công chức",
+    "viên chức"
+  ],
+  "submission_methods": [
+    {
+      "code": "IN_PERSON",
+      "label": "Trực tiếp",
+      "processing_time": "7 ngày làm việc",
+      "fee": null,
+      "description": null
+    }
+  ],
+  "processing_note": "Thời gian xử lý tham chiếu: 7 ngày làm việc. Nên xác định rõ đối tượng tham gia, quyền lợi hoặc nhu cầu điều chỉnh hồ sơ y tế trước khi nộp. Có thể chọn kênh nộp phù hợp: Trực tiếp. Hiện có khoảng 4 mục giấy tờ cần theo dõi trong checklist.",
+  "documents": {
+    "normally_required": [
+      {
+        "name": "b) Danh sách người lao động, học sinh, sinh viên và thân nhân sĩ quan, hạ sĩ quan, chiến sĩ trong Công an nhân dân tham gia bảo hiểm y tế;",
+        "quantity": "1 bản chính, 0 bản sao",
+        "notes": [],
+        "group": "default",
+        "attachment_path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/1_001294/Mau01-DS%28BHYT%29.doc"
+      },
+      {
+        "name": "d) Văn bản đề nghị cấp lại thẻ bảo hiểm y tế của các đơn vị trường Công an; Công an, Cảnh sát phòng cháy và chữa cháy tỉnh, thành phố trực thuộc Trung ương; doanh nghiệp, đơn vị sự nghiệp công lập thuộc Bộ Công an.",
+        "quantity": "1 bản chính, 0 bản sao",
+        "notes": [],
+        "group": "default",
+        "attachment_path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/1_001294/Mau02-%C4%90N%28BHYT%29%20%281%29.doc"
+      },
+      {
+        "name": "a) Đơn đề nghị cấp lại thẻ bảo hiểm y tế;",
+        "quantity": "1 bản chính, 0 bản sao",
+        "notes": [],
+        "group": "default",
+        "attachment_path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/1_001294/Mau01-%C4%90N%28BHYT%29%20%281%29.doc"
+      }
+    ],
+    "conditional": [
+      {
+        "condition": "c) Danh sách người lao động đang tham gia bảo hiểm xã hội trong Công an nhân dân (nếu có);",
+        "document": "c) Danh sách người lao động đang tham gia bảo hiểm xã hội trong Công an nhân dân (nếu có);",
+        "quantity": "1 bản chính, 0 bản sao",
+        "notes": [],
+        "attachment_path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/1_001294/Mau02-DS%28BHYT%29.doc"
+      }
+    ],
+    "forms": [
+      {
+        "name": "b) Danh sách người lao động, học sinh, sinh viên và thân nhân sĩ quan, hạ sĩ quan, chiến sĩ trong Công an nhân dân tham gia bảo hiểm y tế;",
+        "attachment_label": "Mau01-DS(BHYT).doc",
+        "attachment_path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/1_001294/Mau01-DS%28BHYT%29.doc"
+      },
+      {
+        "name": "d) Văn bản đề nghị cấp lại thẻ bảo hiểm y tế của các đơn vị trường Công an; Công an, Cảnh sát phòng cháy và chữa cháy tỉnh, thành phố trực thuộc Trung ương; doanh nghiệp, đơn vị sự nghiệp công lập thuộc Bộ Công an.",
+        "attachment_label": "Mau02-ĐN(BHYT) (1).doc",
+        "attachment_path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/1_001294/Mau02-%C4%90N%28BHYT%29%20%281%29.doc"
+      },
+      {
+        "name": "c) Danh sách người lao động đang tham gia bảo hiểm xã hội trong Công an nhân dân (nếu có);",
+        "attachment_label": "Mau02-DS(BHYT).doc",
+        "attachment_path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/1_001294/Mau02-DS%28BHYT%29.doc"
+      },
+      {
+        "name": "a) Đơn đề nghị cấp lại thẻ bảo hiểm y tế;",
+        "attachment_label": "Mau01-ĐN(BHYT) (1).doc",
+        "attachment_path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/1_001294/Mau01-%C4%90N%28BHYT%29%20%281%29.doc"
+      }
+    ],
+    "presented": [],
+    "notes": [],
+    "summary": [
+      {
+        "group": "default",
+        "name": "b) Danh sách người lao động, học sinh, sinh viên và thân nhân sĩ quan, hạ sĩ quan, chiến sĩ trong Công an nhân dân tham gia bảo hiểm y tế;",
+        "quantity": "1 bản chính, 0 bản sao",
+        "notes": [],
+        "attachment_path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/1_001294/Mau01-DS%28BHYT%29.doc"
+      },
+      {
+        "group": "default",
+        "name": "d) Văn bản đề nghị cấp lại thẻ bảo hiểm y tế của các đơn vị trường Công an; Công an, Cảnh sát phòng cháy và chữa cháy tỉnh, thành phố trực thuộc Trung ương; doanh nghiệp, đơn vị sự nghiệp công lập thuộc Bộ Công an.",
+        "quantity": "1 bản chính, 0 bản sao",
+        "notes": [],
+        "attachment_path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/1_001294/Mau02-%C4%90N%28BHYT%29%20%281%29.doc"
+      },
+      {
+        "group": "default",
+        "name": "a) Đơn đề nghị cấp lại thẻ bảo hiểm y tế;",
+        "quantity": "1 bản chính, 0 bản sao",
+        "notes": [],
+        "attachment_path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/1_001294/Mau01-%C4%90N%28BHYT%29%20%281%29.doc"
+      },
+      {
+        "group": null,
+        "name": null,
+        "quantity": "1 bản chính, 0 bản sao",
+        "notes": [],
+        "attachment_path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/1_001294/Mau02-DS%28BHYT%29.doc"
+      },
+      {
+        "group": null,
+        "name": "b) Danh sách người lao động, học sinh, sinh viên và thân nhân sĩ quan, hạ sĩ quan, chiến sĩ trong Công an nhân dân tham gia bảo hiểm y tế;",
+        "quantity": null,
+        "notes": null,
+        "attachment_path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/1_001294/Mau01-DS%28BHYT%29.doc"
+      },
+      {
+        "group": null,
+        "name": "d) Văn bản đề nghị cấp lại thẻ bảo hiểm y tế của các đơn vị trường Công an; Công an, Cảnh sát phòng cháy và chữa cháy tỉnh, thành phố trực thuộc Trung ương; doanh nghiệp, đơn vị sự nghiệp công lập thuộc Bộ Công an.",
+        "quantity": null,
+        "notes": null,
+        "attachment_path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/1_001294/Mau02-%C4%90N%28BHYT%29%20%281%29.doc"
+      },
+      {
+        "group": null,
+        "name": "c) Danh sách người lao động đang tham gia bảo hiểm xã hội trong Công an nhân dân (nếu có);",
+        "quantity": null,
+        "notes": null,
+        "attachment_path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/1_001294/Mau02-DS%28BHYT%29.doc"
+      },
+      {
+        "group": null,
+        "name": "a) Đơn đề nghị cấp lại thẻ bảo hiểm y tế;",
+        "quantity": null,
+        "notes": null,
+        "attachment_path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/1_001294/Mau01-%C4%90N%28BHYT%29%20%281%29.doc"
+      }
+    ]
+  },
+  "steps": [
+    {
+      "order": 1,
+      "title": "Bước 1",
+      "description": "1.",
+      "example": null
+    },
+    {
+      "order": 2,
+      "title": "Bước 1:",
+      "description": "Bước 1: Sĩ quan, hạ sĩ quan, chiến sĩ nghĩa vụ, học viên Công an nhân dân đại diện cho thân nhân; người lao động làm việc theo hợp đồng lao động, công nhân Công an, công dân tạm tuyển trước khi chính thức được tuyển chọn vào Công an nhân dân; học sinh trường văn hóa Công an nhân dân và sinh viên là người nước ngoài, sinh viên hệ dân sự đang học tập tại các trường Công an nhân dân phải có đơn đề nghị cấp lại thẻ bảo hiểm y tế có xác nhận của thủ trưởng cơ quan, đơn vị trực tiếp quản lý, nộp cho cơ quan tổ chức cán bộ thuộc các trường Công an; Công an, Cảnh sát phòng cháy và chữa cháy tỉnh, thành phố trực thuộc Trung ương; doanh nghiệp, đơn vị sự nghiệp công lập thuộc Bộ Công an.",
+      "example": "trực tiếp"
+    },
+    {
+      "order": 3,
+      "title": "Bước 2:",
+      "description": "Bước 2: Sau khi tiếp nhận hồ sơ cấp lại thẻ bảo hiểm y tế do đơn vị trực tiếp quản lý chuyển đến, cơ quan tổ chức cán bộ thuộc các trường Công an; Công an, Cảnh sát phòng cháy và chữa cháy tỉnh, thành phố trực thuộc Trung ương; doanh nghiệp, đơn vị sự nghiệp công lập thuộc Bộ Công an có trách nhiệm lập: - Danh sách người lao động, học sinh, sinh viên và thân nhân sĩ quan, hạ sĩ quan, chiến sĩ tham gia bảo hiểm y tế (Mẫu 01-DS); - Danh sách người lao động đang tham gia bảo hiểm xã hội trong Công an nhân dân có xác nhận của Bảo hiểm xã hội Công an nhân dân (Mẫu 02-DS), nếu có.",
+      "example": "trực tiếp"
+    },
+    {
+      "order": 4,
+      "title": "Bước 3:",
+      "description": "Bước 3: Cơ quan tổ chức cán bộ thuộc các trường Công an; Công an, Cảnh sát phòng cháy và chữa cháy tỉnh, thành phố trực thuộc Trung ương; doanh nghiệp, đơn vị sự nghiệp công lập thuộc Bộ Công an có trách nhiệm lập hồ sơ đề nghị Bảo hiểm xã hội tỉnh cấp lại thẻ bảo hiểm y tế.",
+      "example": null
+    },
+    {
+      "order": 5,
+      "title": "Bước 4:",
+      "description": "Bước 4: Bảo hiểm xã hội tỉnh có trách nhiệm cấp và chuyển thẻ bảo hiểm y tế về trường Công an; Công an, Cảnh sát phòng cháy và chữa cháy tỉnh, thành phố trực thuộc Trung ương; doanh nghiệp, đơn vị sự nghiệp công lập thuộc Bộ Công an để chuyển thẻ cho các đối tượng được cấp lại.",
+      "example": null
+    }
+  ],
+  "input_fields": [
+    {
+      "field": "request_subject",
+      "label": "Đối tượng làm thủ tục",
+      "type": "string",
+      "required": true
+    },
+    {
+      "field": "insurance_or_medical_need",
+      "label": "Nhu cầu bảo hiểm hoặc y tế",
+      "type": "string",
+      "required": true
+    },
+    {
+      "field": "submission_channel_preference",
+      "label": "Kênh nộp dự kiến",
+      "type": "enum",
+      "required": false,
+      "options": [
+        "Trực tiếp"
+      ]
+    },
+    {
+      "field": "has_insurance_number",
+      "label": "Đã có mã BHXH/BHYT",
+      "type": "boolean",
+      "required": false
+    },
+    {
+      "field": "insurance_participation_group",
+      "label": "Nhóm tham gia BHYT",
+      "type": "enum",
+      "required": true
+    }
+  ],
+  "validation_rules": [
+    {
+      "id": "required-1",
+      "severity": "error",
+      "field": "request_subject",
+      "rule": "Trường bắt buộc phải có dữ liệu hợp lệ trước khi nộp.",
+      "message": "Thiếu trường bắt buộc: Đối tượng làm thủ tục."
+    },
+    {
+      "id": "required-2",
+      "severity": "error",
+      "field": "insurance_or_medical_need",
+      "rule": "Trường bắt buộc phải có dữ liệu hợp lệ trước khi nộp.",
+      "message": "Thiếu trường bắt buộc: Nhu cầu bảo hiểm hoặc y tế."
+    },
+    {
+      "id": "required-5",
+      "severity": "error",
+      "field": "insurance_participation_group",
+      "rule": "Trường bắt buộc phải có dữ liệu hợp lệ trước khi nộp.",
+      "message": "Thiếu trường bắt buộc: Nhóm tham gia BHYT."
+    },
+    {
+      "id": "hint-1",
+      "severity": "warning",
+      "field": "general",
+      "rule": "Nên xác định trước kênh nộp hồ sơ để biết có cần bản giấy, bản điện tử hay xuất trình trực tiếp.",
+      "message": "Nên xác định trước kênh nộp hồ sơ để biết có cần bản giấy, bản điện tử hay xuất trình trực tiếp."
+    },
+    {
+      "id": "hint-2",
+      "severity": "warning",
+      "field": "general",
+      "rule": "Có mẫu biểu đính kèm, nên kiểm tra đúng biểu mẫu trước khi nộp.",
+      "message": "Có mẫu biểu đính kèm, nên kiểm tra đúng biểu mẫu trước khi nộp."
+    },
+    {
+      "id": "hint-3",
+      "severity": "warning",
+      "field": "general",
+      "rule": "Nên xác định đúng nhóm đối tượng, mã số bảo hiểm và quyền lợi áp dụng trước khi nộp.",
+      "message": "Nên xác định đúng nhóm đối tượng, mã số bảo hiểm và quyền lợi áp dụng trước khi nộp."
+    }
+  ],
+  "common_errors": [
+    {
+      "field": "general",
+      "issue": "Sai nhóm đối tượng tham gia hoặc thông tin quyền lợi bảo hiểm y tế.",
+      "fix": "Nên xác định trước kênh nộp hồ sơ để biết có cần bản giấy, bản điện tử hay xuất trình trực tiếp."
+    },
+    {
+      "field": "general",
+      "issue": "Thiếu hồ sơ về vị trí việc làm, đơn vị sử dụng lao động hoặc điều kiện làm việc áp dụng.",
+      "fix": "Nên xác định trước kênh nộp hồ sơ để biết có cần bản giấy, bản điện tử hay xuất trình trực tiếp."
+    }
+  ],
+  "clarifying_questions": [
+    {
+      "id": "clarify_1",
+      "question": "Bạn đang muốn đăng ký, điều chỉnh hay xác nhận quyền lợi y tế hoặc bảo hiểm nào?",
+      "purpose": "workflow_intake"
+    },
+    {
+      "id": "clarify_2",
+      "question": "Bạn đã có mã BHXH/BHYT hoặc thông tin đơn vị tiếp nhận liên quan chưa?",
+      "purpose": "workflow_intake"
+    }
+  ],
+  "legal_basis": [
+    {
+      "title": "Hướng dẫn thực hiện bảo hiểm y tế đối với người lao động, học sinh, sinh viên và thân nhân sĩ quan, hạ sĩ quan, chiến sĩ trong Công an nhân dân",
+      "code": "09/2015/TTLT-BCA-BYT-BTC"
+    },
+    {
+      "title": "Về việc quy định mức thu, chế độ thu, nộp, quản lý và sử dụng phí cấp lại và đổi thẻ bảo hiểm y tế",
+      "code": "19/2010/TT-BTC"
+    }
+  ],
+  "legal_bases": [
+    {
+      "title": "Hướng dẫn thực hiện bảo hiểm y tế đối với người lao động, học sinh, sinh viên và thân nhân sĩ quan, hạ sĩ quan, chiến sĩ trong Công an nhân dân",
+      "code": "09/2015/TTLT-BCA-BYT-BTC"
+    },
+    {
+      "title": "Về việc quy định mức thu, chế độ thu, nộp, quản lý và sử dụng phí cấp lại và đổi thẻ bảo hiểm y tế",
+      "code": "19/2010/TT-BTC"
+    }
+  ],
+  "faq": [
+    {
+      "question": "Có thể nộp qua kênh nào?",
+      "answer": "Các kênh hiện có: Trực tiếp."
+    },
+    {
+      "question": "Thời gian xử lý tham chiếu là bao lâu?",
+      "answer": "Thời gian xử lý tham chiếu hiện có là 7 ngày làm việc."
+    },
+    {
+      "question": "Kết quả chính của thủ tục là gì?",
+      "answer": "Kết quả chính được trích xuất là Thẻ bảo hiểm y tế (BHYT)."
+    }
+  ],
+  "guidance": {
+    "highlight_documents": [
+      {
+        "bucket": "required",
+        "name": "b) Danh sách người lao động, học sinh, sinh viên và thân nhân sĩ quan, hạ sĩ quan, chiến sĩ trong Công an nhân dân tham gia bảo hiểm y tế;",
+        "conditions": [],
+        "attachment_path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/1_001294/Mau01-DS%28BHYT%29.doc"
+      },
+      {
+        "bucket": "required",
+        "name": "d) Văn bản đề nghị cấp lại thẻ bảo hiểm y tế của các đơn vị trường Công an; Công an, Cảnh sát phòng cháy và chữa cháy tỉnh, thành phố trực thuộc Trung ương; doanh nghiệp, đơn vị sự nghiệp công lập thuộc Bộ Công an.",
+        "conditions": [],
+        "attachment_path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/1_001294/Mau02-%C4%90N%28BHYT%29%20%281%29.doc"
+      },
+      {
+        "bucket": "required",
+        "name": "a) Đơn đề nghị cấp lại thẻ bảo hiểm y tế;",
+        "conditions": [],
+        "attachment_path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/1_001294/Mau01-%C4%90N%28BHYT%29%20%281%29.doc"
+      },
+      {
+        "bucket": "conditional",
+        "name": "c) Danh sách người lao động đang tham gia bảo hiểm xã hội trong Công an nhân dân (nếu có);",
+        "conditions": [
+          "c) Danh sách người lao động đang tham gia bảo hiểm xã hội trong Công an nhân dân (nếu có);"
+        ],
+        "attachment_path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/1_001294/Mau02-DS%28BHYT%29.doc"
+      }
+    ],
+    "special_cases": [
+      "Có thể cần đối chiếu quyền lợi bảo hiểm hoặc tuyến chuyên môn",
+      "Có thể cần đối chiếu quá trình đóng bảo hiểm để giải quyết chế độ",
+      "Có thể cần hồ sơ tử tuất hoặc mai táng phí",
+      "Có thể cần xác minh quan hệ lao động hoặc giấy phép làm việc"
+    ],
+    "common_errors": [
+      "Sai nhóm đối tượng tham gia hoặc thông tin quyền lợi bảo hiểm y tế.",
+      "Thiếu hồ sơ về vị trí việc làm, đơn vị sử dụng lao động hoặc điều kiện làm việc áp dụng."
+    ],
+    "validation_hints": [
+      "Nên xác định trước kênh nộp hồ sơ để biết có cần bản giấy, bản điện tử hay xuất trình trực tiếp.",
+      "Có mẫu biểu đính kèm, nên kiểm tra đúng biểu mẫu trước khi nộp.",
+      "Nên xác định đúng nhóm đối tượng, mã số bảo hiểm và quyền lợi áp dụng trước khi nộp."
+    ]
+  },
+  "next_steps": {
+    "summary": "Nên xác định rõ đối tượng tham gia, quyền lợi hoặc nhu cầu điều chỉnh hồ sơ y tế trước khi nộp. Có thể chọn kênh nộp phù hợp: Trực tiếp. Hiện có khoảng 4 mục giấy tờ cần theo dõi trong checklist.",
+    "time_badge": "7 ngày làm việc",
+    "result_label": "Thẻ bảo hiểm y tế (BHYT)",
+    "primary_channel": "in_person",
+    "channels": [
+      "in_person"
+    ]
+  },
+  "notes": [],
+  "provenance": {
+    "pipeline": "raw->structured->normalized->enriched->ui_api_payload",
+    "normalizer_version": "0.2.0",
+    "enricher_version": "0.2.0",
+    "mapping_notes": "excluded_from_clean_workflow_dataset",
+    "supported_group": true
+  }
+}

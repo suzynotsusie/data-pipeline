@@ -1,0 +1,119 @@
+{
+  "schema_version": "1.0",
+  "enricher_version": "0.2.0",
+  "source": {
+    "procedure_code": "1.009728",
+    "title": "Đăng ký phát hành cổ phiếu theo chương trình lựa chọn cho người lao động trong công ty của công ty đại chúng",
+    "group_key": "viec_lam",
+    "workflow_family": null,
+    "subflow": null
+  },
+  "experience": {
+    "entry_label": "Hỗ trợ việc làm và lao động",
+    "overview_summary": "Thủ tục này thuộc nhóm việc làm và lao động, thường cần kiểm tra hồ sơ nghề nghiệp, đơn vị sử dụng lao động hoặc điều kiện hưởng chế độ liên quan. Kết quả thường nhận được là Văn bản của UBCKNN về việc nhận được đầy đủ tài liệu báo cáo phát hành của tổ chức phát hành hoặc văn bản từ chối của UBCKNN. Thời gian xử lý tham khảo: 7 ngày làm việc.",
+    "next_step_summary": "Nên xác định rõ nhu cầu lao động, hồ sơ nghề nghiệp hoặc chế độ cần giải quyết trước khi nộp. Có thể chọn kênh nộp phù hợp: Trực tiếp, Trực tuyến, Dịch vụ bưu chính. Hiện có khoảng 9 mục giấy tờ cần theo dõi trong checklist.",
+    "tone": "supportive_public_service"
+  },
+  "guidance": {
+    "highlight_documents": [
+      {
+        "bucket": "required",
+        "name": "Văn bản chấp thuận của Ngân hàng Nhà nước Việt Nam về đề nghị tăng vốn điều lệ theo quy định của pháp luật về các tổ chức tín dụng đối với việc phát hành cổ phiếu của tổ chức tín dụng hoặc văn bản chấp thuận của Bộ Tài chính về việc tăng vốn điều lệ theo quy định của pháp luật về kinh doanh bảo hiểm đối với việc phát hành cổ phiếu của tổ chức kinh doanh bảo hiểm;",
+        "conditions": [],
+        "attachment_path": null
+      },
+      {
+        "bucket": "required",
+        "name": "Quyết định của Đại hội đồng cổ đông thông qua phương án phát hành cổ phiếu cho người lao động. Những người có quyền lợi liên quan đến đợt phát hành không được tham gia biểu quyết thông qua nội dung này",
+        "conditions": [],
+        "attachment_path": null
+      },
+      {
+        "bucket": "required",
+        "name": "Báo cáo phát hành cổ phiếu theo Mẫu số 17 Phụ lục ban hành kèm theo Nghị định số 245/2025/NĐ-CP sửa đổi, bổ sung một số điều của Nghị định số 155/2020/NĐ-CP",
+        "conditions": [],
+        "attachment_path": null
+      },
+      {
+        "bucket": "required",
+        "name": "Quyết định của Hội đồng quản trị thông qua việc triển khai phương án phát hành",
+        "conditions": [],
+        "attachment_path": null
+      },
+      {
+        "bucket": "conditional",
+        "name": "Báo cáo tài chính kỳ gần nhất được kiểm toán bởi tổ chức kiểm toán được chấp thuận trong trường hợp phát hành cổ phiếu thưởng cho người lao động",
+        "conditions": [
+          "Báo cáo tài chính kỳ gần nhất được kiểm toán bởi tổ chức kiểm toán được chấp thuận trong trường hợp phát hành cổ phiếu thưởng cho người lao động"
+        ],
+        "attachment_path": null
+      },
+      {
+        "bucket": "conditional",
+        "name": "Văn bản xác nhận của ngân hàng, chi nhánh ngân hàng nước ngoài về việc mở tài khoản phong tỏa nhận tiền mua cổ phiếu trừ trường hợp phát hành cổ phiếu thưởng cho người lao động",
+        "conditions": [
+          "Văn bản xác nhận của ngân hàng, chi nhánh ngân hàng nước ngoài về việc mở tài khoản phong tỏa nhận tiền mua cổ phiếu trừ trường hợp phát hành cổ phiếu thưởng cho người lao động"
+        ],
+        "attachment_path": null
+      }
+    ],
+    "special_cases": [
+      "Có yếu tố nước ngoài",
+      "Có thể cần giấy tờ ủy quyền",
+      "Có thể cần xác minh quan hệ lao động hoặc giấy phép làm việc"
+    ],
+    "common_errors": [
+      "Thiếu giấy tờ hoặc nội dung ủy quyền phù hợp.",
+      "Thiếu giấy tờ hợp pháp hóa hoặc giấy tờ nhân thân của phía nước ngoài.",
+      "Điền sai mẫu tờ khai hoặc chọn sai biểu mẫu đi kèm.",
+      "Thiếu hồ sơ về vị trí việc làm, đơn vị sử dụng lao động hoặc điều kiện làm việc áp dụng."
+    ],
+    "validation_hints": [
+      "Nên xác định trước kênh nộp hồ sơ để biết có cần bản giấy, bản điện tử hay xuất trình trực tiếp.",
+      "Nên xác định đúng nhóm thủ tục lao động, đơn vị liên quan và hồ sơ nghề nghiệp cần xuất trình."
+    ]
+  },
+  "intake": {
+    "candidate_input_fields": [
+      {
+        "field_id": "employment_need",
+        "label": "Nhu cầu việc làm hoặc lao động",
+        "field_type": "text",
+        "required": true
+      },
+      {
+        "field_id": "worker_or_employer_info",
+        "label": "Thông tin người lao động hoặc đơn vị sử dụng lao động",
+        "field_type": "text",
+        "required": true
+      },
+      {
+        "field_id": "submission_channel_preference",
+        "label": "Kênh nộp dự kiến",
+        "field_type": "enum",
+        "required": false
+      },
+      {
+        "field_id": "has_supporting_employment_documents",
+        "label": "Đã có hồ sơ lao động liên quan",
+        "field_type": "boolean",
+        "required": false
+      }
+    ],
+    "suggested_clarifying_questions": [
+      "Bạn đang cần giải quyết thủ tục lao động nào cho người lao động hoặc doanh nghiệp?",
+      "Hồ sơ nghề nghiệp, đơn vị sử dụng lao động hoặc yếu tố lao động nước ngoài đã rõ chưa?"
+    ]
+  },
+  "ui_hints": {
+    "primary_channel": "online",
+    "result_label": "Văn bản của UBCKNN về việc nhận được đầy đủ tài liệu báo cáo phát hành của tổ chức phát hành hoặc văn bản từ chối của UBCKNN",
+    "time_badge": "7 ngày làm việc",
+    "document_count_badge": 9
+  },
+  "provenance": {
+    "generator": "workflow_domain_enricher",
+    "derivation_mode": "rule_based_semantic_enrichment",
+    "supported_group": true
+  }
+}

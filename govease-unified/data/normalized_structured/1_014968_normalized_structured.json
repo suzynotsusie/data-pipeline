@@ -1,0 +1,208 @@
+{
+  "schema_version": "1.0",
+  "normalizer_version": "0.2.0",
+  "source": {
+    "procedure_code": "1.014968",
+    "title": "Thủ tục cấp điều chỉnh Giấy phép vận chuyển hàng hóa nguy hiểm loại 1 (trừ vật liệu nổ công nghiệp, tiền chất thuốc nổ), 2, 3, 4, 9",
+    "raw_structured_parser_version": "0.1.0",
+    "field": "Vận chuyển hàng hóa nguy hiểm"
+  },
+  "procedure": {
+    "level": "Cấp tỉnh",
+    "procedure_type": "TTHC được luật giao quy định chi tiết",
+    "target_users": [
+      "Tổ chức (không bao gồm doanh nghiệp",
+      "HTX)",
+      "Công dân Việt Nam"
+    ],
+    "authorities": [],
+    "receiving_places": []
+  },
+  "submission": {
+    "channels": [
+      "in_person",
+      "online",
+      "postal"
+    ],
+    "methods": [
+      {
+        "method_id": "method_1",
+        "channel": "in_person",
+        "processing_time_text": "3 ngày làm việc",
+        "fee_text": null,
+        "description": null,
+        "is_online": false,
+        "is_postal": false,
+        "is_in_person": true
+      },
+      {
+        "method_id": "method_2",
+        "channel": "online",
+        "processing_time_text": "3 ngày làm việc",
+        "fee_text": null,
+        "description": null,
+        "is_online": true,
+        "is_postal": false,
+        "is_in_person": false
+      },
+      {
+        "method_id": "method_3",
+        "channel": "postal",
+        "processing_time_text": "3 ngày làm việc",
+        "fee_text": null,
+        "description": null,
+        "is_online": false,
+        "is_postal": true,
+        "is_in_person": false
+      }
+    ],
+    "timing_summary": {
+      "unique_processing_times": [
+        "3 ngày làm việc"
+      ],
+      "method_count": 3
+    }
+  },
+  "documents": {
+    "required": [
+      {
+        "document_id": "gi_y_ngh_i_u_ch_nh_th_ng_tin_tr_n_gi_y_ph_p_v_n_chuy_n_h_ng_h_a_nguy_hi_m_theo_m_u_quy_nh_t_i_ph_l_c_iva_k_m_theo_ngh_nh_s_34_2024_n_cp_ho_c_ngh_nh_s_161_2024_n_cp",
+        "name": "Giấy đề nghị điều chỉnh thông tin trên Giấy phép vận chuyển hàng hóa nguy hiểm theo mẫu quy định tại Phụ lục IVa kèm theo Nghị định số 34/2024/NĐ-CP hoặc Nghị định số 161/2024/NĐ-CP",
+        "group_name": "default",
+        "group_type": "unknown",
+        "original_count": "1",
+        "copy_count": "0",
+        "conditions": [],
+        "attachment_label": "giyiuchnh.docx",
+        "attachment_path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/1_014968/giyiuchnh.docx"
+      },
+      {
+        "document_id": "h_s_ch_ng_minh_s_thay_i_v_th_ng_tin_li_n_quan_n_gi_y_ph_p",
+        "name": "Hồ sơ chứng minh sự thay đổi về thông tin liên quan đến giấy phép",
+        "group_name": "default",
+        "group_type": "unknown",
+        "original_count": "1",
+        "copy_count": "0",
+        "conditions": [],
+        "attachment_label": null,
+        "attachment_path": null
+      },
+      {
+        "document_id": "gi_y_ph_p_v_n_chuy_n_h_ng_h_a_nguy_hi_m_c_c_p_c_n_i_u_ch_nh_th_ng_tin",
+        "name": "Giấy phép vận chuyển hàng hóa nguy hiểm đã được cấp cần điều chỉnh thông tin",
+        "group_name": "default",
+        "group_type": "unknown",
+        "original_count": "1",
+        "copy_count": "0",
+        "conditions": [],
+        "attachment_label": null,
+        "attachment_path": null
+      }
+    ],
+    "conditional": [],
+    "presented": [],
+    "notes": [],
+    "forms": [
+      {
+        "name": "Giấy đề nghị điều chỉnh thông tin trên Giấy phép vận chuyển hàng hóa nguy hiểm theo mẫu quy định tại Phụ lục IVa kèm theo Nghị định số 34/2024/NĐ-CP hoặc Nghị định số 161/2024/NĐ-CP",
+        "attachment_label": "giyiuchnh.docx",
+        "attachment_path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/1_014968/giyiuchnh.docx"
+      }
+    ],
+    "empty_groups": [],
+    "document_count": 3
+  },
+  "process": {
+    "steps": [
+      {
+        "step_id": "step_1",
+        "title": null,
+        "content": "1. Người vận tải vận chuyển hàng hóa nguy hiểm nộp 01 bộ hồ sơ đề nghị điều chỉnh thông tin trên Giấy phép vận chuyển hàng hóa nguy hiểm theo quy định tại khoản 4 Điều 15 của Nghị định số 161/2024/NĐ-CP đến cơ quan cấp Giấy phép.",
+        "actor": "authority",
+        "channel_hint": null,
+        "time_hint": null
+      },
+      {
+        "step_id": "step_2",
+        "title": null,
+        "content": "Trường hợp nộp hồ sơ trực tiếp: cơ quan giải quyết thủ tục hành chính kiểm tra thành phần hồ sơ; trường hợp thành phần hồ sơ chưa đầy đủ hoặc có sai lệch thì hướng dẫn hoàn thiện hồ sơ theo quy định.",
+        "actor": "authority",
+        "channel_hint": "trực tiếp",
+        "time_hint": null
+      },
+      {
+        "step_id": "step_3",
+        "title": null,
+        "content": "Trường hợp nộp hồ sơ qua dịch vụ bưu chính hoặc qua hệ thống dịch vụ công trực tuyến: trong thời hạn không quá 01 ngày làm việc kể từ ngày nhận hồ sơ, cơ quan giải quyết thủ tục hành chính xem xét tính đầy đủ, nếu hồ sơ chưa đầy đủ theo quy định, cơ quan giải quyết thủ tục hành chính thông báo bằng văn bản hoặc thông qua hệ thống dịch vụ công trực tuyến cho tổ chức, cá nhân biết để bổ sung, đồng thời hướng dẫn hoàn thiện hồ sơ theo quy định.",
+        "actor": "authority",
+        "channel_hint": "trực tuyến",
+        "time_hint": "01 ngày làm việc"
+      },
+      {
+        "step_id": "step_4",
+        "title": null,
+        "content": "Trong thời hạn 03 ngày làm việc, kể từ ngày nhận đủ hồ sơ đúng theo quy định, cơ quan cấp Giấy phép thẩm định hồ sơ và cấp Giấy phép đã được điều chỉnh thông tin theo đề nghị của người vận tải vận chuyển hàng hóa nguy hiểm theo mẫu tại Phụ lục VII hoặc Phụ lục VIII kèm theo Nghị định 161/2024/NĐ-CP; trường hợp không đồng ý, cơ quan cấp Giấy phép phải trả lời bằng văn bản hoặc thông báo qua hệ thống dịch vụ công trực tuyến và nêu rõ lý do.",
+        "actor": "authority",
+        "channel_hint": "trực tuyến",
+        "time_hint": "03 ngày làm việc"
+      }
+    ],
+    "step_count": 4,
+    "notes": []
+  },
+  "eligibility": {
+    "conditions": [
+      "1. Phương tiện vận chuyển phải đủ điều kiện tham gia giao thông theo quy định của pháp luật. Thiết bị chuyên dùng của phương tiện vận chuyển hàng hóa nguy hiểm phải bảo đảm tiêu chuẩn quốc gia hoặc quy chuẩn kỹ thuật quốc gia hoặc theo quy định của bộ quản lý chuyên ngành.",
+      "2. Phương tiện vận chuyển hàng hóa nguy hiểm phải thực hiện theo quy định tại khoản 3 Điều 51 Luật Trật tự, an toàn giao thông đường bộ. Nếu trên một phương tiện có nhiều loại hàng hóa nguy hiểm khác nhau thì phương tiện phải dán đủ biểu trưng của các loại hàng hóa đó. Vị trí dán biểu trưng ở hai bên, phía trước và phía sau của phương tiện bảo đảm dễ quan sát, nhận biết.",
+      "3. Phương tiện vận chuyển hàng hóa nguy hiểm, sau khi dỡ hết hàng hóa nguy hiểm nếu không tiếp tục vận tải loại hàng hóa đó thì người vận tải, lái xe phải có trách nhiệm làm sạch và bóc hoặc xóa biểu trưng nguy hiểm trên phương tiện đó."
+    ],
+    "has_conditions": true
+  },
+  "results": {
+    "items": [
+      {
+        "name": "Giấy phép vận chuyển hàng hoá nguy hiểm",
+        "result_code": "KQ.G06.000335",
+        "raw_text": "Giấy phép vận chuyển hàng hoá nguy hiểm"
+      }
+    ],
+    "primary_result": {
+      "name": "Giấy phép vận chuyển hàng hoá nguy hiểm",
+      "result_code": "KQ.G06.000335",
+      "raw_text": "Giấy phép vận chuyển hàng hoá nguy hiểm"
+    }
+  },
+  "legal_basis": {
+    "items": [
+      {
+        "title": "Thông tư số 26/2026/TT-BCT ngày 20 tháng 5 năm 2026 của Bộ trưởng Bộ Công Thương sửa đổi bổ sung một số quy định về phân cấp, cắt giảm, đơn giản hóa thủ tục hành chính trong các lĩnh vực thuộc phạm vi quản lý của Bộ Công Thương.",
+        "code": "26/2026/TT-BCT"
+      },
+      {
+        "title": "Thông tư số 15/2026/TT-BCT (ban hành ngày 25/03/2026) sửa đổi, bổ sung Thông tư 38/2025/TT-BCT, đẩy mạnh phân cấp thủ tục hành chính tại Bộ Công Thương",
+        "code": "Thông tư số 15/2026/TT-BCT"
+      },
+      {
+        "title": "Nghị định số 34/2024/NĐ-CP",
+        "code": "Nghị định số 34/2024/NĐ-CP"
+      }
+    ],
+    "count": 3
+  },
+  "attachments": [
+    {
+      "label": "giyiuchnh.docx",
+      "path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/1_014968/giyiuchnh.docx",
+      "source_section": "Thành phần hồ sơ",
+      "document_name": "Giấy đề nghị điều chỉnh thông tin trên Giấy phép vận chuyển hàng hóa nguy hiểm theo mẫu quy định tại Phụ lục IVa kèm theo Nghị định số 34/2024/NĐ-CP hoặc Nghị định số 161/2024/NĐ-CP"
+    }
+  ],
+  "signals": {
+    "raw_parse_warnings": [],
+    "missing_documents": false,
+    "documents_section_present": true,
+    "documents_declared_empty": false,
+    "documents_only_in_notes": false,
+    "missing_results": false
+  }
+}

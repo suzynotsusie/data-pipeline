@@ -1,0 +1,424 @@
+{
+  "schema_version": "3.0",
+  "record_type": "public_service_procedure_payload",
+  "id": "procedure-1.012549",
+  "procedure_code": "1.012549",
+  "code": "1.012549",
+  "title": "Cấp thẻ căn cước cho người dưới 14 tuổi (thực hiện tại cấp tỉnh)",
+  "language": "vi",
+  "status": "generated_from_pipeline",
+  "field": "Cấp, quản lý căn cước",
+  "group_key": "cu_tru_giay_to",
+  "workflow_family": null,
+  "subflow": null,
+  "source": {
+    "source_url": "file:///C:/Users/ku060/Downloads/VAIC%20source/data-pipeline/raw_data/1_012549/1_012549_procedure_detail.md",
+    "source_markdown_path": "C:\\Users\\ku060\\Downloads\\VAIC source\\data-pipeline\\raw_data\\1_012549\\1_012549_procedure_detail.md",
+    "normalized_payload_path": "C:\\Users\\ku060\\Downloads\\VAIC source\\data-pipeline\\govease-unified\\data\\normalized_structured\\1_012549_normalized_structured.json",
+    "enriched_payload_path": "C:\\Users\\ku060\\Downloads\\VAIC source\\data-pipeline\\govease-unified\\data\\enriched_structured_priority\\1_012549_enriched_structured.json"
+  },
+  "scope": {
+    "included": "Thủ tục này thuộc nhóm cư trú và giấy tờ, thường cần kiểm tra thông tin định danh hoặc hồ sơ giấy tờ chuyên ngành. Kết quả thường nhận được là Thẻ căn cước. Thời gian xử lý tham khảo: 7 ngày làm việc.",
+    "not_included": []
+  },
+  "agency": {
+    "executing_agency": "Cục cảnh sát quản lý hành chính về trật tự, xã hội",
+    "submission_place": null,
+    "receiving_places": []
+  },
+  "target_users": [
+    "Công dân Việt Nam"
+  ],
+  "submission_methods": [
+    {
+      "code": "ONLINE",
+      "label": "Trực tuyến",
+      "processing_time": "7 ngày làm việc",
+      "fee": null,
+      "description": "- Thông qua Cổng dịch vụ công quốc gia, Cổng dịch vụ công Bộ Công an, Ứng dụng định danh quốc gia để đăng ký thời gian, địa điểm làm thủ tục đề nghị cấp thẻ căn cước. - Thời gian tiếp nhận hồ sơ: Giờ hành chính các ngày làm việc từ thứ 2 đến thứ 6 và sáng thứ 7 hàng tuần (trừ các ngày nghỉ lễ, tết theo quy định của pháp luật)."
+    },
+    {
+      "code": "IN_PERSON",
+      "label": "Trực tiếp",
+      "processing_time": "7 ngày làm việc",
+      "fee": null,
+      "description": "- Trực tiếp tại địa điểm tiếp dân cơ quan quản lý căn cước của Công an cấp tỉnh (Phòng Cảnh sát Quản lý hành chính về trật tự xã hội, Công an các tỉnh, thành phố) trong cả nước không phụ thuộc vào nơi cư trú. - Thời gian tiếp nhận hồ sơ: Giờ hành chính các ngày làm việc từ thứ 2 đến thứ 6 và sáng thứ 7 hàng tuần (trừ các ngày nghỉ lễ, tết theo quy định của pháp luật)."
+    }
+  ],
+  "processing_note": "Thời gian xử lý tham chiếu: 7 ngày làm việc. Nên kiểm tra trước giấy tờ định danh, nơi nộp và mẫu biểu liên quan, rồi chọn kênh nộp phù hợp: Trực tiếp, Trực tuyến. Hiện có khoảng 4 mục giấy tờ cần theo dõi trong checklist.",
+  "documents": {
+    "normally_required": [
+      {
+        "name": "Phiếu đề nghị giải quyết thủ tục về căn cước (Mẫu DC02 ban hành kèm theo Thông tư số 17/2024/TT-BCA của Bộ Công an)",
+        "quantity": "1 bản chính, 0 bản sao",
+        "notes": [],
+        "group": "Công dân kê khai đối với trường hợp nộp hồ sơ trực tuyến",
+        "attachment_path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/1_012549/M%E1%BA%ABu%20DC02%20Phi%E1%BA%BFu%20%C4%91%E1%BB%81%20ngh%E1%BB%8B%20gi%E1%BA%A3i%20quy%E1%BA%BFt%20th%E1%BB%A7%20t%E1%BB%A5c%20v%E1%BB%81%20c%C4%83n%20c%C6%B0%E1%BB%9Bc.doc"
+      },
+      {
+        "name": "Phiếu thu nhận thông tin căn cước (Mẫu CC01 ban hành kèm theo Thông tư số 17/2024/TT-BCA của Bộ Công an)",
+        "quantity": "1 bản chính, 0 bản sao",
+        "notes": [],
+        "group": "Phiếu được tạo lập khi trích xuất thông tin của công dân trong Cơ sở dữ liệu quốc gia về dân cư và in trong quá trình thu nhận hồ sơ căn cước để công dân kiểm tra và ký xác nhận",
+        "attachment_path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/1_012549/M%E1%BA%ABu%20CC01%20Phi%E1%BA%BFu%20thu%20nh%E1%BA%ADn%20th%C3%B4ng%20tin%20c%C4%83n%20c%C6%B0%E1%BB%9Bc.doc"
+      },
+      {
+        "name": "Phiếu thu thập thông tin dân cư (mẫu DC01 ban hành kèm theo Thông tư số 53/2025/TT-BCA ngày 01/7/2025 của Bộ Công an)",
+        "quantity": "1 bản chính, 0 bản sao",
+        "notes": [],
+        "group": "Trường hợp công dân chưa có thông tin trong cơ sở dữ liệu quốc gia về dân cư thì hồ sơ còn có:",
+        "attachment_path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/1_012549/M%E1%BA%ABu%20DC01%20Phi%E1%BA%BFu%20thu%20th%E1%BA%ADp%20th%C3%B4ng%20tin%20d%C3%A2n%20c%C6%B0.docx"
+      },
+      {
+        "name": "Giấy tờ, tài liệu có giá trị pháp lý chứng minh là người đại diện hợp pháp của người dưới 14 tuổi",
+        "quantity": "1 bản chính, 0 bản sao",
+        "notes": [],
+        "group": "Trường hợp công dân chưa có thông tin trong cơ sở dữ liệu quốc gia về dân cư thì hồ sơ còn có:",
+        "attachment_path": null
+      }
+    ],
+    "conditional": [],
+    "forms": [
+      {
+        "name": "Phiếu đề nghị giải quyết thủ tục về căn cước (Mẫu DC02 ban hành kèm theo Thông tư số 17/2024/TT-BCA của Bộ Công an)",
+        "attachment_label": "Mẫu DC02 Phiếu đề nghị giải quyết thủ tục về căn cước.doc",
+        "attachment_path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/1_012549/M%E1%BA%ABu%20DC02%20Phi%E1%BA%BFu%20%C4%91%E1%BB%81%20ngh%E1%BB%8B%20gi%E1%BA%A3i%20quy%E1%BA%BFt%20th%E1%BB%A7%20t%E1%BB%A5c%20v%E1%BB%81%20c%C4%83n%20c%C6%B0%E1%BB%9Bc.doc"
+      },
+      {
+        "name": "Phiếu thu nhận thông tin căn cước (Mẫu CC01 ban hành kèm theo Thông tư số 17/2024/TT-BCA của Bộ Công an)",
+        "attachment_label": "Mẫu CC01 Phiếu thu nhận thông tin căn cước.doc",
+        "attachment_path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/1_012549/M%E1%BA%ABu%20CC01%20Phi%E1%BA%BFu%20thu%20nh%E1%BA%ADn%20th%C3%B4ng%20tin%20c%C4%83n%20c%C6%B0%E1%BB%9Bc.doc"
+      },
+      {
+        "name": "Phiếu thu thập thông tin dân cư (mẫu DC01 ban hành kèm theo Thông tư số 53/2025/TT-BCA ngày 01/7/2025 của Bộ Công an)",
+        "attachment_label": "Mẫu DC01 Phiếu thu thập thông tin dân cư.docx",
+        "attachment_path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/1_012549/M%E1%BA%ABu%20DC01%20Phi%E1%BA%BFu%20thu%20th%E1%BA%ADp%20th%C3%B4ng%20tin%20d%C3%A2n%20c%C6%B0.docx"
+      }
+    ],
+    "presented": [],
+    "notes": [],
+    "summary": [
+      {
+        "group": "Công dân kê khai đối với trường hợp nộp hồ sơ trực tuyến",
+        "name": "Phiếu đề nghị giải quyết thủ tục về căn cước (Mẫu DC02 ban hành kèm theo Thông tư số 17/2024/TT-BCA của Bộ Công an)",
+        "quantity": "1 bản chính, 0 bản sao",
+        "notes": [],
+        "attachment_path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/1_012549/M%E1%BA%ABu%20DC02%20Phi%E1%BA%BFu%20%C4%91%E1%BB%81%20ngh%E1%BB%8B%20gi%E1%BA%A3i%20quy%E1%BA%BFt%20th%E1%BB%A7%20t%E1%BB%A5c%20v%E1%BB%81%20c%C4%83n%20c%C6%B0%E1%BB%9Bc.doc"
+      },
+      {
+        "group": "Phiếu được tạo lập khi trích xuất thông tin của công dân trong Cơ sở dữ liệu quốc gia về dân cư và in trong quá trình thu nhận hồ sơ căn cước để công dân kiểm tra và ký xác nhận",
+        "name": "Phiếu thu nhận thông tin căn cước (Mẫu CC01 ban hành kèm theo Thông tư số 17/2024/TT-BCA của Bộ Công an)",
+        "quantity": "1 bản chính, 0 bản sao",
+        "notes": [],
+        "attachment_path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/1_012549/M%E1%BA%ABu%20CC01%20Phi%E1%BA%BFu%20thu%20nh%E1%BA%ADn%20th%C3%B4ng%20tin%20c%C4%83n%20c%C6%B0%E1%BB%9Bc.doc"
+      },
+      {
+        "group": "Trường hợp công dân chưa có thông tin trong cơ sở dữ liệu quốc gia về dân cư thì hồ sơ còn có:",
+        "name": "Phiếu thu thập thông tin dân cư (mẫu DC01 ban hành kèm theo Thông tư số 53/2025/TT-BCA ngày 01/7/2025 của Bộ Công an)",
+        "quantity": "1 bản chính, 0 bản sao",
+        "notes": [],
+        "attachment_path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/1_012549/M%E1%BA%ABu%20DC01%20Phi%E1%BA%BFu%20thu%20th%E1%BA%ADp%20th%C3%B4ng%20tin%20d%C3%A2n%20c%C6%B0.docx"
+      },
+      {
+        "group": "Trường hợp công dân chưa có thông tin trong cơ sở dữ liệu quốc gia về dân cư thì hồ sơ còn có:",
+        "name": "Giấy tờ, tài liệu có giá trị pháp lý chứng minh là người đại diện hợp pháp của người dưới 14 tuổi",
+        "quantity": "1 bản chính, 0 bản sao",
+        "notes": [],
+        "attachment_path": null
+      },
+      {
+        "group": null,
+        "name": "Phiếu đề nghị giải quyết thủ tục về căn cước (Mẫu DC02 ban hành kèm theo Thông tư số 17/2024/TT-BCA của Bộ Công an)",
+        "quantity": null,
+        "notes": null,
+        "attachment_path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/1_012549/M%E1%BA%ABu%20DC02%20Phi%E1%BA%BFu%20%C4%91%E1%BB%81%20ngh%E1%BB%8B%20gi%E1%BA%A3i%20quy%E1%BA%BFt%20th%E1%BB%A7%20t%E1%BB%A5c%20v%E1%BB%81%20c%C4%83n%20c%C6%B0%E1%BB%9Bc.doc"
+      },
+      {
+        "group": null,
+        "name": "Phiếu thu nhận thông tin căn cước (Mẫu CC01 ban hành kèm theo Thông tư số 17/2024/TT-BCA của Bộ Công an)",
+        "quantity": null,
+        "notes": null,
+        "attachment_path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/1_012549/M%E1%BA%ABu%20CC01%20Phi%E1%BA%BFu%20thu%20nh%E1%BA%ADn%20th%C3%B4ng%20tin%20c%C4%83n%20c%C6%B0%E1%BB%9Bc.doc"
+      },
+      {
+        "group": null,
+        "name": "Phiếu thu thập thông tin dân cư (mẫu DC01 ban hành kèm theo Thông tư số 53/2025/TT-BCA ngày 01/7/2025 của Bộ Công an)",
+        "quantity": null,
+        "notes": null,
+        "attachment_path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/1_012549/M%E1%BA%ABu%20DC01%20Phi%E1%BA%BFu%20thu%20th%E1%BA%ADp%20th%C3%B4ng%20tin%20d%C3%A2n%20c%C6%B0.docx"
+      }
+    ]
+  },
+  "steps": [
+    {
+      "order": 1,
+      "title": "Bước 1",
+      "description": "1. -",
+      "example": null
+    },
+    {
+      "order": 2,
+      "title": "Bước 1:",
+      "description": "Bước 1: + Trường hợp người đại diện hợp pháp thực hiện thủ tục cấp thẻ căn cước cho người dưới 06 tuổi thông qua cổng dịch vụ công hoặc ứng dụng định danh quốc gia thì lựa chọn thủ tục, kiểm tra thông tin của người dưới 06 tuổi trong Cơ sở dữ liệu quốc gia về dân cư. Trường hợp thông tin chính xác thì người đại diện hợp pháp xác nhận chuyển hồ sơ đề nghị đến cơ quan quản lý căn cước của Công an cấp tỉnh trong cả nước không phụ thuộc vào nơi cư trú xem xét, giải quyết việc cấp thẻ căn cước. + Trường hợp thực hiện trực tiếp tại cơ quan quản lý căn cước của Công an cấp tỉnh, người đại diện hợp pháp đưa người dưới 14 tuổi đến địa điểm làm thủ tục cấp thẻ căn cước. (Lưu ý: Lộ trình cấp thẻ căn cước cho người dưới 14 tuổi trở lên tại cơ quan quản lý căn cước của Công an cấp tỉnh trong cả nước không phụ thuộc vào nơi cư trú thực hiện theo thông báo của Bộ Công an) -",
+      "example": "trực tiếp"
+    },
+    {
+      "order": 3,
+      "title": "Bước 2:",
+      "description": "Bước 2: Cán bộ thu nhận thông tin công dân tìm kiếm thông tin trong Cơ sở dữ liệu quốc gia về dân cư để lập hồ sơ cấp thẻ căn cước. + Trường hợp thông tin công dân chưa có trong Cơ sở dữ liệu quốc gia về dân cư Cán bộ thu nhận đề nghị công dân xuất trình một trong các loại giấy tờ pháp lý chứng minh nội dung thông tin cá nhân và hướng dẫn thu thập, cập nhật thông tin vào Cơ sở dữ liệu quốc gia về dân cư trước khi thực hiện thủ tục cấp thẻ căn cước. + Trường hợp thông tin công dân có sự thay đổi, điều chỉnh thì Cán bộ thu nhận hướng dẫn công dân thực hiện thủ tục điều chỉnh thông tin trong Cơ sở dữ liệu quốc gia về dân cư trước khi thực hiện thủ tục cấp thẻ căn cước. + Trường hợp thông tin công dân đầy đủ, chính xác thì sử dụng thông tin của công dân trong cơ sở dữ liệu quốc gia về dân cư để lập hồ sơ cấp thẻ căn cước. + Trường hợp công dân không đủ điều kiện cấp thẻ căn cước thì từ chối tiếp nhận và nêu rõ lý do, thông báo về việc từ chối giải quyết thủ tục về căn cước (Mẫu CC03 ban hành kèm theo Thông tư số 53/2025/TT-BCA ngày 01/7/2025 của Bộ Công an). -",
+      "example": null
+    },
+    {
+      "order": 4,
+      "title": "Bước 3:",
+      "description": "Bước 3: Tiến hành thu nhận vân tay, chụp ảnh khuôn mặt và thu nhận ảnh mống mắt của người từ đủ 06 tuổi đến dưới 14 tuổi. -",
+      "example": null
+    },
+    {
+      "order": 5,
+      "title": "Bước 4:",
+      "description": "Bước 4: In Phiếu thu nhận thông tin căn cước để người đại diện hợp pháp kiểm tra, ký xác nhận; in Phiếu thu thập thông tin dân cư (nếu có) cho người đại diện hợp pháp của người dưới 14 tuổi kiểm tra, ký xác nhận. -",
+      "example": null
+    },
+    {
+      "order": 6,
+      "title": "Bước 5:",
+      "description": "Bước 5: thu lệ phí (nếu có) và cấp giấy hẹn trả kết quả giải quyết thủ tục về căn cước (mẫu CC02 ban hành kèm theo Thông tư số 17/2024/TT-BCA ngày 15/5/2024 của Bộ trưởng Bộ Công an).",
+      "example": null
+    },
+    {
+      "order": 7,
+      "title": "Bước 6:",
+      "description": "Bước 6: Nhận kết quả trực tiếp tại cơ quan quản lý căn cước của Công an cấp tỉnh hoặc trả qua dịch vụ bưu chính đến địa chỉ theo yêu cầu.",
+      "example": "dịch vụ bưu chính"
+    }
+  ],
+  "input_fields": [
+    {
+      "field": "document_request_type",
+      "label": "Loại giấy tờ cần xử lý",
+      "type": "string",
+      "required": true
+    },
+    {
+      "field": "submission_channel_preference",
+      "label": "Kênh nộp dự kiến",
+      "type": "enum",
+      "required": false,
+      "options": [
+        "Trực tiếp",
+        "Trực tuyến"
+      ]
+    },
+    {
+      "field": "identity_document_available",
+      "label": "Có giấy tờ định danh",
+      "type": "boolean",
+      "required": true
+    },
+    {
+      "field": "residency_or_status_known",
+      "label": "Biết rõ nơi cư trú hoặc tình trạng hiện tại",
+      "type": "boolean",
+      "required": false
+    },
+    {
+      "field": "age_over_14",
+      "label": "Người làm thủ tục từ đủ 14 tuổi",
+      "type": "boolean",
+      "required": true
+    }
+  ],
+  "validation_rules": [
+    {
+      "id": "required-1",
+      "severity": "error",
+      "field": "document_request_type",
+      "rule": "Trường bắt buộc phải có dữ liệu hợp lệ trước khi nộp.",
+      "message": "Thiếu trường bắt buộc: Loại giấy tờ cần xử lý."
+    },
+    {
+      "id": "required-3",
+      "severity": "error",
+      "field": "identity_document_available",
+      "rule": "Trường bắt buộc phải có dữ liệu hợp lệ trước khi nộp.",
+      "message": "Thiếu trường bắt buộc: Có giấy tờ định danh."
+    },
+    {
+      "id": "required-5",
+      "severity": "error",
+      "field": "age_over_14",
+      "rule": "Trường bắt buộc phải có dữ liệu hợp lệ trước khi nộp.",
+      "message": "Thiếu trường bắt buộc: Người làm thủ tục từ đủ 14 tuổi."
+    },
+    {
+      "id": "hint-1",
+      "severity": "warning",
+      "field": "general",
+      "rule": "Nên xác định trước kênh nộp hồ sơ để biết có cần bản giấy, bản điện tử hay xuất trình trực tiếp.",
+      "message": "Nên xác định trước kênh nộp hồ sơ để biết có cần bản giấy, bản điện tử hay xuất trình trực tiếp."
+    },
+    {
+      "id": "hint-2",
+      "severity": "warning",
+      "field": "general",
+      "rule": "Có mẫu biểu đính kèm, nên kiểm tra đúng biểu mẫu trước khi nộp.",
+      "message": "Có mẫu biểu đính kèm, nên kiểm tra đúng biểu mẫu trước khi nộp."
+    },
+    {
+      "id": "hint-3",
+      "severity": "warning",
+      "field": "general",
+      "rule": "Nên đối chiếu trước dữ liệu định danh và nơi cư trú để tránh bị yêu cầu bổ sung.",
+      "message": "Nên đối chiếu trước dữ liệu định danh và nơi cư trú để tránh bị yêu cầu bổ sung."
+    }
+  ],
+  "common_errors": [
+    {
+      "field": "general",
+      "issue": "Điền sai mẫu tờ khai hoặc chọn sai biểu mẫu đi kèm.",
+      "fix": "Nên xác định trước kênh nộp hồ sơ để biết có cần bản giấy, bản điện tử hay xuất trình trực tiếp."
+    }
+  ],
+  "clarifying_questions": [
+    {
+      "id": "clarify_1",
+      "question": "Bạn đang xử lý giấy tờ gì và muốn nộp trực tiếp hay trực tuyến?",
+      "purpose": "workflow_intake"
+    },
+    {
+      "id": "clarify_2",
+      "question": "Thông tin định danh và nơi cư trú hiện tại đã sẵn sàng để đối chiếu chưa?",
+      "purpose": "workflow_intake"
+    }
+  ],
+  "legal_basis": [
+    {
+      "title": "Nghị quyết số 190/2025/QH15 của Quốc hội: Quy định về xử lý một số vấn đề liên quan đến sắp xếp tổ chức bộ máy nhà nước",
+      "code": "190/2025/NQ-QH15"
+    },
+    {
+      "title": "Thông tư quy định chi tiết một số điều và biện pháp thi hành Luật Căn cước",
+      "code": "17/2024/TT-BCA"
+    },
+    {
+      "title": "Thông tư 16/2024/TT-BCA quy định về mẫu thẻ căn cước, mẫu giấy chứng nhận căn cước",
+      "code": "16/2024/TT-BCA"
+    },
+    {
+      "title": "Thông tư số 53/2025/TT-BCAngày 01/7/2025 của Bộ Công an sửa đổi, bổ sung một số điều của Thông tư số 55/2021/TT-BCA ngày 15 tháng 5 năm 2021 của Bộ trưởng Bộ Công an quy định chi tiết một số điều và biện pháp thi hành Luật Cư trú được sửa đổi, bổ sung bởi Thông tư số 66/2023/TT-BCA ngày 17 tháng 11 năm 2023; Thông tư số 56/2021/TT-BCA ngày 15 tháng 5 năm 2021 của Bộ trưởng Bộ Công an quy định về biểu mẫu trong đăng ký, quản lý cư trú được sửa đổi, bổ sung bởi Thông tư số 66/2023/TT-BCA ngày 17 tháng 11 năm 2023; Thông tư số 17/2024/TT-BCA ngày 15 tháng 5 năm 2024 của Bộ trưởng Bộ Công an quy định chi tiết một số điều và biện pháp thi hành Luật Căn cước.",
+      "code": "53/2025/TT-BCA"
+    },
+    {
+      "title": "Nghị định của Chính phủ: Quy định chi tiết một số điều và biện pháp thi hành Luật Căn cước",
+      "code": "70/2024/NĐ-CP"
+    },
+    {
+      "title": "Thông tư quy định quy định về quy trình cấp, cấp đổi, cấp lại thẻ căn cước, giấy chứng nhận căn cước",
+      "code": "18/2024/TT-BCA"
+    },
+    {
+      "title": "Luật Căn cước",
+      "code": "26/2023/QH15"
+    }
+  ],
+  "legal_bases": [
+    {
+      "title": "Nghị quyết số 190/2025/QH15 của Quốc hội: Quy định về xử lý một số vấn đề liên quan đến sắp xếp tổ chức bộ máy nhà nước",
+      "code": "190/2025/NQ-QH15"
+    },
+    {
+      "title": "Thông tư quy định chi tiết một số điều và biện pháp thi hành Luật Căn cước",
+      "code": "17/2024/TT-BCA"
+    },
+    {
+      "title": "Thông tư 16/2024/TT-BCA quy định về mẫu thẻ căn cước, mẫu giấy chứng nhận căn cước",
+      "code": "16/2024/TT-BCA"
+    },
+    {
+      "title": "Thông tư số 53/2025/TT-BCAngày 01/7/2025 của Bộ Công an sửa đổi, bổ sung một số điều của Thông tư số 55/2021/TT-BCA ngày 15 tháng 5 năm 2021 của Bộ trưởng Bộ Công an quy định chi tiết một số điều và biện pháp thi hành Luật Cư trú được sửa đổi, bổ sung bởi Thông tư số 66/2023/TT-BCA ngày 17 tháng 11 năm 2023; Thông tư số 56/2021/TT-BCA ngày 15 tháng 5 năm 2021 của Bộ trưởng Bộ Công an quy định về biểu mẫu trong đăng ký, quản lý cư trú được sửa đổi, bổ sung bởi Thông tư số 66/2023/TT-BCA ngày 17 tháng 11 năm 2023; Thông tư số 17/2024/TT-BCA ngày 15 tháng 5 năm 2024 của Bộ trưởng Bộ Công an quy định chi tiết một số điều và biện pháp thi hành Luật Căn cước.",
+      "code": "53/2025/TT-BCA"
+    },
+    {
+      "title": "Nghị định của Chính phủ: Quy định chi tiết một số điều và biện pháp thi hành Luật Căn cước",
+      "code": "70/2024/NĐ-CP"
+    },
+    {
+      "title": "Thông tư quy định quy định về quy trình cấp, cấp đổi, cấp lại thẻ căn cước, giấy chứng nhận căn cước",
+      "code": "18/2024/TT-BCA"
+    },
+    {
+      "title": "Luật Căn cước",
+      "code": "26/2023/QH15"
+    }
+  ],
+  "faq": [
+    {
+      "question": "Có thể nộp qua kênh nào?",
+      "answer": "Các kênh hiện có: Trực tiếp, Trực tuyến."
+    },
+    {
+      "question": "Thời gian xử lý tham chiếu là bao lâu?",
+      "answer": "Thời gian xử lý tham chiếu hiện có là 7 ngày làm việc."
+    },
+    {
+      "question": "Kết quả chính của thủ tục là gì?",
+      "answer": "Kết quả chính được trích xuất là Thẻ căn cước."
+    }
+  ],
+  "guidance": {
+    "highlight_documents": [
+      {
+        "bucket": "required",
+        "name": "Phiếu đề nghị giải quyết thủ tục về căn cước (Mẫu DC02 ban hành kèm theo Thông tư số 17/2024/TT-BCA của Bộ Công an)",
+        "conditions": [],
+        "attachment_path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/1_012549/M%E1%BA%ABu%20DC02%20Phi%E1%BA%BFu%20%C4%91%E1%BB%81%20ngh%E1%BB%8B%20gi%E1%BA%A3i%20quy%E1%BA%BFt%20th%E1%BB%A7%20t%E1%BB%A5c%20v%E1%BB%81%20c%C4%83n%20c%C6%B0%E1%BB%9Bc.doc"
+      },
+      {
+        "bucket": "required",
+        "name": "Phiếu thu nhận thông tin căn cước (Mẫu CC01 ban hành kèm theo Thông tư số 17/2024/TT-BCA của Bộ Công an)",
+        "conditions": [],
+        "attachment_path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/1_012549/M%E1%BA%ABu%20CC01%20Phi%E1%BA%BFu%20thu%20nh%E1%BA%ADn%20th%C3%B4ng%20tin%20c%C4%83n%20c%C6%B0%E1%BB%9Bc.doc"
+      },
+      {
+        "bucket": "required",
+        "name": "Phiếu thu thập thông tin dân cư (mẫu DC01 ban hành kèm theo Thông tư số 53/2025/TT-BCA ngày 01/7/2025 của Bộ Công an)",
+        "conditions": [],
+        "attachment_path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/1_012549/M%E1%BA%ABu%20DC01%20Phi%E1%BA%BFu%20thu%20th%E1%BA%ADp%20th%C3%B4ng%20tin%20d%C3%A2n%20c%C6%B0.docx"
+      },
+      {
+        "bucket": "required",
+        "name": "Giấy tờ, tài liệu có giá trị pháp lý chứng minh là người đại diện hợp pháp của người dưới 14 tuổi",
+        "conditions": [],
+        "attachment_path": null
+      }
+    ],
+    "special_cases": [],
+    "common_errors": [
+      "Điền sai mẫu tờ khai hoặc chọn sai biểu mẫu đi kèm."
+    ],
+    "validation_hints": [
+      "Nên xác định trước kênh nộp hồ sơ để biết có cần bản giấy, bản điện tử hay xuất trình trực tiếp.",
+      "Có mẫu biểu đính kèm, nên kiểm tra đúng biểu mẫu trước khi nộp.",
+      "Nên đối chiếu trước dữ liệu định danh và nơi cư trú để tránh bị yêu cầu bổ sung."
+    ]
+  },
+  "next_steps": {
+    "summary": "Nên kiểm tra trước giấy tờ định danh, nơi nộp và mẫu biểu liên quan, rồi chọn kênh nộp phù hợp: Trực tiếp, Trực tuyến. Hiện có khoảng 4 mục giấy tờ cần theo dõi trong checklist.",
+    "time_badge": "7 ngày làm việc",
+    "result_label": "Thẻ căn cước",
+    "primary_channel": "online",
+    "channels": [
+      "in_person",
+      "online"
+    ]
+  },
+  "notes": [],
+  "provenance": {
+    "pipeline": "raw->structured->normalized->enriched->ui_api_payload",
+    "normalizer_version": "0.2.0",
+    "enricher_version": "0.2.0",
+    "mapping_notes": "excluded_from_clean_workflow_dataset",
+    "supported_group": true
+  }
+}

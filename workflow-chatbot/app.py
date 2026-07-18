@@ -349,6 +349,8 @@ class ChatRequest(BaseModel):
     session_id: str | None = None
     message: str = Field(min_length=1, max_length=4000)
     preferred_mode: str | None = None
+    group_key: str | None = None
+    subdomain_key: str | None = None
 
 
 class SessionState(BaseModel):
@@ -1134,6 +1136,13 @@ def health() -> dict[str, Any]:
         "model": LLM.model,
         "domains": [{"key": item.key, "label": item.label} for item in DOMAINS.values()],
     }
+
+@app.get("/api/catalog")
+def get_catalog() -> dict[str, Any]:
+    catalog_path = DATA_DIR.parent / "govease-unified" / "data" / "catalog" / "citizen_group_domains.json"
+    if catalog_path.exists():
+        return _read_json(catalog_path)
+    return {}
 
 
 @app.post("/api/chat")

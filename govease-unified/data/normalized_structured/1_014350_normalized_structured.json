@@ -1,0 +1,231 @@
+{
+  "schema_version": "1.0",
+  "normalizer_version": "0.2.0",
+  "source": {
+    "procedure_code": "1.014350",
+    "title": "Hỗ trợ thân nhân của người lao động bị chết, mất tích trong thời gian làm việc ở nước ngoài.",
+    "raw_structured_parser_version": "0.1.0",
+    "field": "Quản lý lao động ngoài nước"
+  },
+  "procedure": {
+    "level": "Cấp bộ/ngành",
+    "procedure_type": "TTHC được luật giao quy định chi tiết",
+    "target_users": [
+      "Công dân Việt Nam",
+      "Doanh nghiệp",
+      "Tổ chức (không bao gồm doanh nghiệp",
+      "HTX)"
+    ],
+    "authorities": [
+      "Quỹ Hỗ trợ việc làm ngoài nước"
+    ],
+    "receiving_places": []
+  },
+  "submission": {
+    "channels": [
+      "in_person",
+      "online",
+      "postal"
+    ],
+    "methods": [
+      {
+        "method_id": "method_1",
+        "channel": "online",
+        "processing_time_text": "8 ngày làm việc",
+        "fee_text": null,
+        "description": "Trực tiếp, trực tuyến hoặc qua dịch vụ bưu chính. 08 ngày làm việc (kể từ ngày nhận được hồ sơ đầy đủ, hợp lệ).",
+        "is_online": true,
+        "is_postal": false,
+        "is_in_person": false
+      },
+      {
+        "method_id": "method_2",
+        "channel": "postal",
+        "processing_time_text": "8 ngày làm việc",
+        "fee_text": null,
+        "description": "Trực tiếp, trực tuyến hoặc qua dịch vụ bưu chính. 08 ngày làm việc (kể từ ngày nhận được hồ sơ đầy đủ, hợp lệ).",
+        "is_online": false,
+        "is_postal": true,
+        "is_in_person": false
+      },
+      {
+        "method_id": "method_3",
+        "channel": "in_person",
+        "processing_time_text": "8 ngày làm việc",
+        "fee_text": null,
+        "description": "Trực tiếp, trực tuyến hoặc qua dịch vụ bưu chính. 08 ngày làm việc (kể từ ngày nhận được hồ sơ đầy đủ, hợp lệ).",
+        "is_online": false,
+        "is_postal": false,
+        "is_in_person": true
+      }
+    ],
+    "timing_summary": {
+      "unique_processing_times": [
+        "8 ngày làm việc"
+      ],
+      "method_count": 3
+    }
+  },
+  "documents": {
+    "required": [
+      {
+        "document_id": "gi_y_t_ch_ng_minh_quan_h_th_n_nh_n_v_i_ng_i_lao_ng",
+        "name": "Giấy tờ chứng minh quan hệ thân nhân với người lao động ;",
+        "group_name": "default",
+        "group_type": "unknown",
+        "original_count": "1",
+        "copy_count": "0",
+        "conditions": [],
+        "attachment_label": null,
+        "attachment_path": null
+      },
+      {
+        "document_id": "gi_y_ngh_v_vi_c_h_tr_r_i_ro_trong_th_i_gian_l_m_vi_c_n_c_ngo_i_m_u_theo_ph_l_c_i_ban_h_nh_k_m_theo_quy_t_nh_s_34_2025_q_ttg",
+        "name": "Giấy đề nghị về việc hỗ trợ rủi ro trong thời gian làm việc ở nước ngoài (Mẫu theo Phụ lục I ban hành kèm theo Quyết định số 34/2025/QĐ-TTg) ;",
+        "group_name": "default",
+        "group_type": "unknown",
+        "original_count": "1",
+        "copy_count": "0",
+        "conditions": [],
+        "attachment_label": "Phụ lục I.docx",
+        "attachment_path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/1_014350/Ph%E1%BB%A5%20l%E1%BB%A5c%20I.docx"
+      },
+      {
+        "document_id": "b_n_sao_gi_y_ch_ng_t_c_a_ng_i_lao_ng_ho_c_v_n_b_n_c_a_c_quan_c_th_m_quy_n_c_a_vi_t_nam_v_vi_c_tuy_n_b_ng_i_lao_ng_ch_t_ho_c_m_t_t_ch_trong_th_i_gian_l_m_vi_c_n_c_ngo_i_theo_h_p_ng",
+        "name": "Bản sao giấy chứng tử của người lao động hoặc văn bản của cơ quan có thẩm quyền của Việt Nam về việc tuyên bố người lao động đã chết hoặc mất tích trong thời gian làm việc ở nước ngoài theo hợp đồng ;",
+        "group_name": "default",
+        "group_type": "unknown",
+        "original_count": "0",
+        "copy_count": "1",
+        "conditions": [],
+        "attachment_label": null,
+        "attachment_path": null
+      }
+    ],
+    "conditional": [
+      {
+        "document_id": "danh_s_ch_ng_i_lao_ng_ngh_h_tr_do_t_ch_c_c_nh_n_a_i_l_p_m_u_theo_ph_l_c_ii_ban_h_nh_k_m_theo_quy_t_nh_s_34_2025_q_ttg_i_v_i_tr_ng_h_p_h_s_n_p_th_ng_qua_doanh_nghi_p_t_ch_c_c_nh_n_a_i",
+        "name": "Danh sách người lao động đề nghị hỗ trợ do tổ chức, cá nhân đưa đi lập (Mẫu theo Phụ lục II ban hành kèm theo Quyết định số 34/2025/QĐ-TTg) đối với trường hợp hồ sơ nộp thông qua doanh nghiệp, tổ chức, cá nhân đưa đi ;",
+        "group_name": "default",
+        "group_type": "unknown",
+        "original_count": "1",
+        "copy_count": "0",
+        "conditions": [
+          "Danh sách người lao động đề nghị hỗ trợ do tổ chức, cá nhân đưa đi lập (Mẫu theo Phụ lục II ban hành kèm theo Quyết định số 34/2025/QĐ-TTg) đối với trường hợp hồ sơ nộp thông qua doanh nghiệp, tổ chức, cá nhân đưa đi ;"
+        ],
+        "attachment_label": "Phụ lục II.docx",
+        "attachment_path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/1_014350/Ph%E1%BB%A5%20l%E1%BB%A5c%20II.docx"
+      },
+      {
+        "document_id": "v_n_b_n_u_quy_n_ghi_r_n_i_dung_y_quy_n_ho_c_gi_y_t_ch_ng_minh_quy_n_i_di_n_theo_ph_p_lu_t_theo_quy_nh_trong_tr_ng_h_p_ng_i_c_th_n_nh_n_c_a_ng_i_lao_ng_u_quy_n_ho_c_ng_i_i_di_n_theo_ph_p_lu_t_c_a_th_n_nh_n_c_a_ng_i_lao_ng_n_p_h_s",
+        "name": "Văn bản uỷ quyền (ghi rõ nội dung ủy quyền) hoặc giấy tờ chứng minh quyền đại diện theo pháp luật theo quy định trong trường hợp người được thân nhân của người lao động uỷ quyền hoặc người đại diện theo pháp luật của thân nhân của người lao động nộp hồ sơ;",
+        "group_name": "default",
+        "group_type": "unknown",
+        "original_count": "1",
+        "copy_count": "0",
+        "conditions": [
+          "Văn bản uỷ quyền (ghi rõ nội dung ủy quyền) hoặc giấy tờ chứng minh quyền đại diện theo pháp luật theo quy định trong trường hợp người được thân nhân của người lao động uỷ quyền hoặc người đại diện theo pháp luật của thân nhân của người lao động nộp hồ sơ;"
+        ],
+        "attachment_label": null,
+        "attachment_path": null
+      }
+    ],
+    "presented": [],
+    "notes": [],
+    "forms": [
+      {
+        "name": "Danh sách người lao động đề nghị hỗ trợ do tổ chức, cá nhân đưa đi lập (Mẫu theo Phụ lục II ban hành kèm theo Quyết định số 34/2025/QĐ-TTg) đối với trường hợp hồ sơ nộp thông qua doanh nghiệp, tổ chức, cá nhân đưa đi ;",
+        "attachment_label": "Phụ lục II.docx",
+        "attachment_path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/1_014350/Ph%E1%BB%A5%20l%E1%BB%A5c%20II.docx"
+      },
+      {
+        "name": "Giấy đề nghị về việc hỗ trợ rủi ro trong thời gian làm việc ở nước ngoài (Mẫu theo Phụ lục I ban hành kèm theo Quyết định số 34/2025/QĐ-TTg) ;",
+        "attachment_label": "Phụ lục I.docx",
+        "attachment_path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/1_014350/Ph%E1%BB%A5%20l%E1%BB%A5c%20I.docx"
+      }
+    ],
+    "empty_groups": [],
+    "document_count": 5
+  },
+  "process": {
+    "steps": [
+      {
+        "step_id": "step_1",
+        "title": null,
+        "content": "1. -",
+        "actor": "user",
+        "channel_hint": null,
+        "time_hint": null
+      },
+      {
+        "step_id": "step_2",
+        "title": "Bước 1.",
+        "content": "Bước 1. Đại diện thân nhân của người lao động (bố, mẹ, vợ, chồng, con, anh/chị/em ruột) hoặc người được thân nhân của người lao động uỷ quyền hoặc người đại diện theo pháp luật của thân nhân của người lao động hoặc doanh nghiệp, tổ chức, cá nhân đưa đi gửi 01 bộ hồ sơ theo một trong các cách thức đến Quỹ Hỗ trợ việc làm ngoài nước. 2. -",
+        "actor": "user",
+        "channel_hint": null,
+        "time_hint": null
+      },
+      {
+        "step_id": "step_3",
+        "title": "Bước 2.",
+        "content": "Bước 2. Trong thời gian 08 ngày làm việc kể từ ngày nhận đủ hồ sơ theo quy định, Quỹ Hỗ trợ việc làm ngoài nước kiểm tra, đối chiếu hồ sơ và thực hiện hỗ trợ cho thân nhân người lao động. Trường hợp không hỗ trợ phải trả lời bằng văn bản và nêu rõ lý do.",
+        "actor": "user",
+        "channel_hint": null,
+        "time_hint": "08 ngày làm việc"
+      }
+    ],
+    "step_count": 3,
+    "notes": []
+  },
+  "eligibility": {
+    "conditions": [
+      "Người lao động bị chết, mất tích trong thời gian làm việc ở nước ngoài."
+    ],
+    "has_conditions": true
+  },
+  "results": {
+    "items": [
+      {
+        "name": "Quyết định hỗ trợ",
+        "result_code": "KQ.G09.000481",
+        "raw_text": "Quyết định hỗ trợ"
+      }
+    ],
+    "primary_result": {
+      "name": "Quyết định hỗ trợ",
+      "result_code": "KQ.G09.000481",
+      "raw_text": "Quyết định hỗ trợ"
+    }
+  },
+  "legal_basis": {
+    "items": [
+      {
+        "title": "VỀ QUỸ HỖ TRỢ VIỆC LÀM NGOÀI NƯỚC",
+        "code": "34/2025/QĐ-TTg"
+      }
+    ],
+    "count": 1
+  },
+  "attachments": [
+    {
+      "label": "Phụ lục II.docx",
+      "path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/1_014350/Ph%E1%BB%A5%20l%E1%BB%A5c%20II.docx",
+      "source_section": "Thành phần hồ sơ",
+      "document_name": "Danh sách người lao động đề nghị hỗ trợ do tổ chức, cá nhân đưa đi lập (Mẫu theo Phụ lục II ban hành kèm theo Quyết định số 34/2025/QĐ-TTg) đối với trường hợp hồ sơ nộp thông qua doanh nghiệp, tổ chức, cá nhân đưa đi ;"
+    },
+    {
+      "label": "Phụ lục I.docx",
+      "path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/1_014350/Ph%E1%BB%A5%20l%E1%BB%A5c%20I.docx",
+      "source_section": "Thành phần hồ sơ",
+      "document_name": "Giấy đề nghị về việc hỗ trợ rủi ro trong thời gian làm việc ở nước ngoài (Mẫu theo Phụ lục I ban hành kèm theo Quyết định số 34/2025/QĐ-TTg) ;"
+    }
+  ],
+  "signals": {
+    "raw_parse_warnings": [],
+    "missing_documents": false,
+    "documents_section_present": true,
+    "documents_declared_empty": false,
+    "documents_only_in_notes": false,
+    "missing_results": false
+  }
+}

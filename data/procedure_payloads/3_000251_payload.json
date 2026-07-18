@@ -1,0 +1,488 @@
+{
+  "schema_version": "3.0",
+  "record_type": "public_service_procedure_payload",
+  "id": "procedure-3.000251",
+  "procedure_code": "3.000251",
+  "code": "3.000251",
+  "title": "Thủ tục xác định xe thuộc trường hợp không chịu phí được trả lại hoặc bù trừ phí đã nộp",
+  "language": "vi",
+  "status": "generated_from_pipeline",
+  "field": "Thuế",
+  "group_key": "suc_khoe_y_te",
+  "workflow_family": null,
+  "subflow": null,
+  "source": {
+    "source_url": "file:///C:/Users/ku060/Downloads/VAIC%20source/data-pipeline/raw_data/3_000251/3_000251_procedure_detail.md",
+    "source_markdown_path": "C:\\Users\\ku060\\Downloads\\VAIC source\\data-pipeline\\raw_data\\3_000251\\3_000251_procedure_detail.md",
+    "normalized_payload_path": "C:\\Users\\ku060\\Downloads\\VAIC source\\data-pipeline\\govease-unified\\data\\normalized_structured\\3_000251_normalized_structured.json",
+    "enriched_payload_path": "C:\\Users\\ku060\\Downloads\\VAIC source\\data-pipeline\\govease-unified\\data\\enriched_structured_priority\\3_000251_enriched_structured.json"
+  },
+  "scope": {
+    "included": "Thủ tục này thuộc nhóm y tế, thường cần đối chiếu thông tin người bệnh, đơn vị tiếp nhận hoặc quyền lợi chuyên ngành. Kết quả thường nhận được là Quyết định về việc trả lại hoặc bù trừ phí sử dụng đường bộ. Thời gian xử lý tham khảo: 3 ngày làm việc.",
+    "not_included": []
+  },
+  "agency": {
+    "executing_agency": "Các đơn vị đăng kiểm",
+    "submission_place": null,
+    "receiving_places": []
+  },
+  "target_users": [
+    "Tổ chức (không bao gồm doanh nghiệp",
+    "HTX)",
+    "Công dân Việt Nam",
+    "Doanh nghiệp",
+    "Hợp tác xã"
+  ],
+  "submission_methods": [
+    {
+      "code": "ONLINE",
+      "label": "Trực tuyến",
+      "processing_time": "3 ngày làm việc",
+      "fee": null,
+      "description": null
+    },
+    {
+      "code": "POSTAL",
+      "label": "Dịch vụ bưu chính",
+      "processing_time": "3 ngày làm việc",
+      "fee": null,
+      "description": null
+    },
+    {
+      "code": "IN_PERSON",
+      "label": "Trực tiếp",
+      "processing_time": "3 ngày làm việc",
+      "fee": null,
+      "description": null
+    }
+  ],
+  "processing_note": "Thời gian xử lý tham chiếu: 3 ngày làm việc. Nên xác định rõ đối tượng tham gia, quyền lợi hoặc nhu cầu điều chỉnh hồ sơ y tế trước khi nộp. Có thể chọn kênh nộp phù hợp: Trực tiếp, Trực tuyến, Dịch vụ bưu chính. Hiện có khoảng 14 mục giấy tờ cần theo dõi trong checklist.",
+  "documents": {
+    "normally_required": [
+      {
+        "name": "Bản sao Quyết định hoặc Chứng nhận thu hồi chứng nhận đăng ký xe, biển số xe.",
+        "quantity": "0 bản chính, 1 bản sao",
+        "notes": [],
+        "group": "Trường hợp xe bị hư hỏng không sử dụng được; xe bị thải bỏ, bị mất không tìm được và chủ xe đề nghị thu hồi chứng nhận đăng ký xe, biển số xe theo quy định pháp luật về trật tự, an toàn giao thông đường bộ",
+        "attachment_path": null
+      },
+      {
+        "name": "Giấy đề nghị trả lại hoặc bù trừ phí sử dụng đường bộ theo Mẫu số 01 tại Phụ lục II ban hành kèm theo Nghị định số 364/2025/NĐ-CP.",
+        "quantity": "1 bản chính, 0 bản sao",
+        "notes": [],
+        "group": "Trường hợp xe bị hư hỏng không sử dụng được; xe bị thải bỏ, bị mất không tìm được và chủ xe đề nghị thu hồi chứng nhận đăng ký xe, biển số xe theo quy định pháp luật về trật tự, an toàn giao thông đường bộ",
+        "attachment_path": null
+      },
+      {
+        "name": "Giấy đề nghị trả lại hoặc bù trừ phí sử dụng đường bộ theo Mẫu số 01 tại Phụ lục II ban hành kèm theo Nghị định số 364/2025/NĐ-CP.",
+        "quantity": "1 bản chính, 0 bản sao",
+        "notes": [],
+        "group": "Trường hợp xe bị mất trộm trong thời gian từ 30 ngày trở lên sau đó tìm được, thu hồi và giao lại cho chủ xe",
+        "attachment_path": null
+      },
+      {
+        "name": "Đơn trình báo về việc mất tài sản có xác nhận của cơ quan công an và Biên bản bàn giao tài sản do cơ quan công an thu hồi giao cho chủ xe.",
+        "quantity": "1 bản chính, 0 bản sao",
+        "notes": [],
+        "group": "Trường hợp xe bị mất trộm trong thời gian từ 30 ngày trở lên sau đó tìm được, thu hồi và giao lại cho chủ xe",
+        "attachment_path": null
+      },
+      {
+        "name": "Giấy đề nghị trả lại hoặc bù trừ phí sử dụng đường bộ theo Mẫu số 01 tại Phụ lục II ban hành kèm theo Nghị định số 364/2025/NĐ-CP.",
+        "quantity": "1 bản chính, 0 bản sao",
+        "notes": [],
+        "group": "Trường hợp xe bị tịch thu; xe bị tạm giữ trong thời gian từ 30 ngày trở lên",
+        "attachment_path": null
+      },
+      {
+        "name": "Biên bản thu Tem kiểm định và Giấy chứng nhận kiểm định theo Mẫu số 02 tại Phụ lục II ban hành kèm theo Nghị định số 364/2025/NĐ-CP",
+        "quantity": "1 bản chính, 1 bản sao",
+        "notes": [],
+        "group": "Trường hợp xe tạm dừng tham gia giao thông liên tục từ 30 ngày trở lên",
+        "attachment_path": null
+      },
+      {
+        "name": "Giấy đề nghị trả lại hoặc bù trừ phí sử dụng đường bộ theo Mẫu số 01 tại Phụ lục II ban hành kèm theo Nghị định số 364/2025/NĐ-CP.",
+        "quantity": "1 bản chính, 0 bản sao",
+        "notes": [],
+        "group": "Trường hợp xe tạm dừng tham gia giao thông liên tục từ 30 ngày trở lên",
+        "attachment_path": null
+      },
+      {
+        "name": "Biên bản thu Tem kiểm định theo Mẫu số 08 tại Phụ lục II banhafnh kèm theo Nghị định số 364/2025/NĐ-CP",
+        "quantity": "1 bản chính, 0 bản sao",
+        "notes": [],
+        "group": "Trường hợp xe đang tham gia giao thông, sử dụng đường dành cho giao thông công cộng chuyển sang không tham gia giao thông, không sử dụng đường dành cho giao thông công cộng",
+        "attachment_path": null
+      },
+      {
+        "name": "Giấy đề nghị trả lại hoặc bù trừ phí sử dụng đường bộ theo Mẫu số 01 tại Phụ lục II ban hành kèm theo Nghị định số 364/2025/NĐ-CP.",
+        "quantity": "1 bản chính, 1 bản sao",
+        "notes": [],
+        "group": "Trường hợp xe đang tham gia giao thông, sử dụng đường dành cho giao thông công cộng chuyển sang không tham gia giao thông, không sử dụng đường dành cho giao thông công cộng",
+        "attachment_path": null
+      },
+      {
+        "name": "Bản sao Giấy phép liên vận hoặc văn bản cho phép của cơ quan có thẩm quyền cấp theo quy định của pháp luật về hoạt động vận tải đường bộ; bản sao Tờ khai phương tiện vận tải đường bộ tạm xuất- tái xuất có xác nhận của hải quan cửa khẩu đã làm thủ tục tạm xuất và tái nhập",
+        "quantity": "0 bản chính, 1 bản sao",
+        "notes": [],
+        "group": "Trường hợp xe đăng ký, đăng kiểm tại Việt Nam nhưng hoạt động tại nước ngoài liên tục từ 30 ngày trở lên",
+        "attachment_path": null
+      },
+      {
+        "name": "Giấy đề nghị trả lại hoặc bù trừ phí sử dụng đường bộ theo Mẫu số 01 tại Phụ lục II ban hành kèm theo Nghị định số 364/2025/NĐ-CP.",
+        "quantity": "1 bản chính, 0 bản sao",
+        "notes": [],
+        "group": "Trường hợp xe đăng ký, đăng kiểm tại Việt Nam nhưng hoạt động tại nước ngoài liên tục từ 30 ngày trở lên",
+        "attachment_path": null
+      }
+    ],
+    "conditional": [
+      {
+        "condition": "Bản sao Quyết định hoặc Biên bản tạm giữ phương tiện và Biên bản bàn giao tài sản sau khi bị tạm giữ đối với trường hợp xe ô tô bị tạm giữ.",
+        "document": "Bản sao Quyết định hoặc Biên bản tạm giữ phương tiện và Biên bản bàn giao tài sản sau khi bị tạm giữ đối với trường hợp xe ô tô bị tạm giữ.",
+        "quantity": "0 bản chính, 1 bản sao",
+        "notes": [],
+        "attachment_path": null
+      },
+      {
+        "condition": "Bản sao Quyết định hoặc Biên bản tịch thu phương tiện đối với trường hợp xe ô tô bị tịch thu.",
+        "document": "Bản sao Quyết định hoặc Biên bản tịch thu phương tiện đối với trường hợp xe ô tô bị tịch thu.",
+        "quantity": "0 bản chính, 1 bản sao",
+        "notes": [],
+        "attachment_path": null
+      },
+      {
+        "condition": "Số lượng hồ sơ: 01 bộ. Khi nộp hồ sơ, đối với các bản sao, chủ xe xuất trình bản chính để đối chiếu hoặc nộp bản sao có chứng thực hoặc bản sao từ sổ gốc. Trường hợp nộp hồ sơ để thực hiện thủ tục hành chính trên môi trường điện tử thì thực hiện theo yêu cầu của hệ thống cung cấp dịch vụ công trực tuyến.",
+        "document": "Số lượng hồ sơ: 01 bộ. Khi nộp hồ sơ, đối với các bản sao, chủ xe xuất trình bản chính để đối chiếu hoặc nộp bản sao có chứng thực hoặc bản sao từ sổ gốc. Trường hợp nộp hồ sơ để thực hiện thủ tục hành chính trên môi trường điện tử thì thực hiện theo yêu cầu của hệ thống cung cấp dịch vụ công trực tuyến.",
+        "quantity": "0 bản chính, 0 bản sao",
+        "notes": [],
+        "attachment_path": null
+      }
+    ],
+    "forms": [],
+    "presented": [],
+    "notes": [],
+    "summary": [
+      {
+        "group": "Trường hợp xe bị hư hỏng không sử dụng được; xe bị thải bỏ, bị mất không tìm được và chủ xe đề nghị thu hồi chứng nhận đăng ký xe, biển số xe theo quy định pháp luật về trật tự, an toàn giao thông đường bộ",
+        "name": "Bản sao Quyết định hoặc Chứng nhận thu hồi chứng nhận đăng ký xe, biển số xe.",
+        "quantity": "0 bản chính, 1 bản sao",
+        "notes": [],
+        "attachment_path": null
+      },
+      {
+        "group": "Trường hợp xe bị hư hỏng không sử dụng được; xe bị thải bỏ, bị mất không tìm được và chủ xe đề nghị thu hồi chứng nhận đăng ký xe, biển số xe theo quy định pháp luật về trật tự, an toàn giao thông đường bộ",
+        "name": "Giấy đề nghị trả lại hoặc bù trừ phí sử dụng đường bộ theo Mẫu số 01 tại Phụ lục II ban hành kèm theo Nghị định số 364/2025/NĐ-CP.",
+        "quantity": "1 bản chính, 0 bản sao",
+        "notes": [],
+        "attachment_path": null
+      },
+      {
+        "group": "Trường hợp xe bị mất trộm trong thời gian từ 30 ngày trở lên sau đó tìm được, thu hồi và giao lại cho chủ xe",
+        "name": "Giấy đề nghị trả lại hoặc bù trừ phí sử dụng đường bộ theo Mẫu số 01 tại Phụ lục II ban hành kèm theo Nghị định số 364/2025/NĐ-CP.",
+        "quantity": "1 bản chính, 0 bản sao",
+        "notes": [],
+        "attachment_path": null
+      },
+      {
+        "group": "Trường hợp xe bị mất trộm trong thời gian từ 30 ngày trở lên sau đó tìm được, thu hồi và giao lại cho chủ xe",
+        "name": "Đơn trình báo về việc mất tài sản có xác nhận của cơ quan công an và Biên bản bàn giao tài sản do cơ quan công an thu hồi giao cho chủ xe.",
+        "quantity": "1 bản chính, 0 bản sao",
+        "notes": [],
+        "attachment_path": null
+      },
+      {
+        "group": "Trường hợp xe bị tịch thu; xe bị tạm giữ trong thời gian từ 30 ngày trở lên",
+        "name": "Giấy đề nghị trả lại hoặc bù trừ phí sử dụng đường bộ theo Mẫu số 01 tại Phụ lục II ban hành kèm theo Nghị định số 364/2025/NĐ-CP.",
+        "quantity": "1 bản chính, 0 bản sao",
+        "notes": [],
+        "attachment_path": null
+      },
+      {
+        "group": "Trường hợp xe tạm dừng tham gia giao thông liên tục từ 30 ngày trở lên",
+        "name": "Biên bản thu Tem kiểm định và Giấy chứng nhận kiểm định theo Mẫu số 02 tại Phụ lục II ban hành kèm theo Nghị định số 364/2025/NĐ-CP",
+        "quantity": "1 bản chính, 1 bản sao",
+        "notes": [],
+        "attachment_path": null
+      },
+      {
+        "group": "Trường hợp xe tạm dừng tham gia giao thông liên tục từ 30 ngày trở lên",
+        "name": "Giấy đề nghị trả lại hoặc bù trừ phí sử dụng đường bộ theo Mẫu số 01 tại Phụ lục II ban hành kèm theo Nghị định số 364/2025/NĐ-CP.",
+        "quantity": "1 bản chính, 0 bản sao",
+        "notes": [],
+        "attachment_path": null
+      },
+      {
+        "group": "Trường hợp xe đang tham gia giao thông, sử dụng đường dành cho giao thông công cộng chuyển sang không tham gia giao thông, không sử dụng đường dành cho giao thông công cộng",
+        "name": "Biên bản thu Tem kiểm định theo Mẫu số 08 tại Phụ lục II banhafnh kèm theo Nghị định số 364/2025/NĐ-CP",
+        "quantity": "1 bản chính, 0 bản sao",
+        "notes": [],
+        "attachment_path": null
+      },
+      {
+        "group": "Trường hợp xe đang tham gia giao thông, sử dụng đường dành cho giao thông công cộng chuyển sang không tham gia giao thông, không sử dụng đường dành cho giao thông công cộng",
+        "name": "Giấy đề nghị trả lại hoặc bù trừ phí sử dụng đường bộ theo Mẫu số 01 tại Phụ lục II ban hành kèm theo Nghị định số 364/2025/NĐ-CP.",
+        "quantity": "1 bản chính, 1 bản sao",
+        "notes": [],
+        "attachment_path": null
+      },
+      {
+        "group": "Trường hợp xe đăng ký, đăng kiểm tại Việt Nam nhưng hoạt động tại nước ngoài liên tục từ 30 ngày trở lên",
+        "name": "Bản sao Giấy phép liên vận hoặc văn bản cho phép của cơ quan có thẩm quyền cấp theo quy định của pháp luật về hoạt động vận tải đường bộ; bản sao Tờ khai phương tiện vận tải đường bộ tạm xuất- tái xuất có xác nhận của hải quan cửa khẩu đã làm thủ tục tạm xuất và tái nhập",
+        "quantity": "0 bản chính, 1 bản sao",
+        "notes": [],
+        "attachment_path": null
+      },
+      {
+        "group": "Trường hợp xe đăng ký, đăng kiểm tại Việt Nam nhưng hoạt động tại nước ngoài liên tục từ 30 ngày trở lên",
+        "name": "Giấy đề nghị trả lại hoặc bù trừ phí sử dụng đường bộ theo Mẫu số 01 tại Phụ lục II ban hành kèm theo Nghị định số 364/2025/NĐ-CP.",
+        "quantity": "1 bản chính, 0 bản sao",
+        "notes": [],
+        "attachment_path": null
+      },
+      {
+        "group": null,
+        "name": null,
+        "quantity": "0 bản chính, 1 bản sao",
+        "notes": [],
+        "attachment_path": null
+      },
+      {
+        "group": null,
+        "name": null,
+        "quantity": "0 bản chính, 1 bản sao",
+        "notes": [],
+        "attachment_path": null
+      },
+      {
+        "group": null,
+        "name": null,
+        "quantity": "0 bản chính, 0 bản sao",
+        "notes": [],
+        "attachment_path": null
+      }
+    ]
+  },
+  "steps": [
+    {
+      "order": 1,
+      "title": "Bước 1",
+      "description": "1. Đối với xe ô tô quy định tại khoản 1 Điều 3 Nghị định số 364/2025/NĐ-CP, chủ xe lập hồ sơ đề nghị trả lại hoặc bù trừ phí sử dụng đường bộ gửi cơ sở đăng kiểm.",
+      "example": null
+    },
+    {
+      "order": 2,
+      "title": "Bước 2",
+      "description": "Cơ sở đăng kiểm kiểm tra và tiếp nhận hồ sơ, đóng dấu tiếp nhận hồ sơ, ghi thời gian nhận hồ sơ, ghi nhận các tài liệu trong hồ sơ, tính và trả lại hoặc bù trừ phí cho chủ xe.",
+      "example": null
+    }
+  ],
+  "input_fields": [
+    {
+      "field": "request_subject",
+      "label": "Đối tượng làm thủ tục",
+      "type": "string",
+      "required": true
+    },
+    {
+      "field": "insurance_or_medical_need",
+      "label": "Nhu cầu bảo hiểm hoặc y tế",
+      "type": "string",
+      "required": true
+    },
+    {
+      "field": "submission_channel_preference",
+      "label": "Kênh nộp dự kiến",
+      "type": "enum",
+      "required": false,
+      "options": [
+        "Trực tiếp",
+        "Trực tuyến",
+        "Dịch vụ bưu chính"
+      ]
+    },
+    {
+      "field": "has_insurance_number",
+      "label": "Đã có mã BHXH/BHYT",
+      "type": "boolean",
+      "required": false
+    }
+  ],
+  "validation_rules": [
+    {
+      "id": "required-1",
+      "severity": "error",
+      "field": "request_subject",
+      "rule": "Trường bắt buộc phải có dữ liệu hợp lệ trước khi nộp.",
+      "message": "Thiếu trường bắt buộc: Đối tượng làm thủ tục."
+    },
+    {
+      "id": "required-2",
+      "severity": "error",
+      "field": "insurance_or_medical_need",
+      "rule": "Trường bắt buộc phải có dữ liệu hợp lệ trước khi nộp.",
+      "message": "Thiếu trường bắt buộc: Nhu cầu bảo hiểm hoặc y tế."
+    },
+    {
+      "id": "hint-1",
+      "severity": "warning",
+      "field": "general",
+      "rule": "Nên xác định trước kênh nộp hồ sơ để biết có cần bản giấy, bản điện tử hay xuất trình trực tiếp.",
+      "message": "Nên xác định trước kênh nộp hồ sơ để biết có cần bản giấy, bản điện tử hay xuất trình trực tiếp."
+    },
+    {
+      "id": "hint-2",
+      "severity": "warning",
+      "field": "general",
+      "rule": "Nên xác định đúng nhóm đối tượng, mã số bảo hiểm và quyền lợi áp dụng trước khi nộp.",
+      "message": "Nên xác định đúng nhóm đối tượng, mã số bảo hiểm và quyền lợi áp dụng trước khi nộp."
+    }
+  ],
+  "common_errors": [
+    {
+      "field": "general",
+      "issue": "Điền sai mẫu tờ khai hoặc chọn sai biểu mẫu đi kèm.",
+      "fix": "Nên xác định trước kênh nộp hồ sơ để biết có cần bản giấy, bản điện tử hay xuất trình trực tiếp."
+    },
+    {
+      "field": "general",
+      "issue": "Thông tin thửa đất, tài sản hoặc giấy chứng nhận chưa khớp với hồ sơ hiện có.",
+      "fix": "Nên xác định trước kênh nộp hồ sơ để biết có cần bản giấy, bản điện tử hay xuất trình trực tiếp."
+    }
+  ],
+  "clarifying_questions": [
+    {
+      "id": "clarify_1",
+      "question": "Bạn đang muốn đăng ký, điều chỉnh hay xác nhận quyền lợi y tế hoặc bảo hiểm nào?",
+      "purpose": "workflow_intake"
+    },
+    {
+      "id": "clarify_2",
+      "question": "Bạn đã có mã BHXH/BHYT hoặc thông tin đơn vị tiếp nhận liên quan chưa?",
+      "purpose": "workflow_intake"
+    }
+  ],
+  "legal_basis": [
+    {
+      "title": "Luật Trật tự, an toàn giao thông đường bộ",
+      "code": "36/2024/QH15"
+    },
+    {
+      "title": "Phí và lệ phí",
+      "code": "97/2015/QH13"
+    },
+    {
+      "title": "Luật số 35/2024/QH15 của Quốc hội: Luật Đường bộ",
+      "code": "35/2024/QH15"
+    },
+    {
+      "title": "Nghị định số 364/2025/NĐ-CP",
+      "code": "364/2025/NĐ-CP"
+    }
+  ],
+  "legal_bases": [
+    {
+      "title": "Luật Trật tự, an toàn giao thông đường bộ",
+      "code": "36/2024/QH15"
+    },
+    {
+      "title": "Phí và lệ phí",
+      "code": "97/2015/QH13"
+    },
+    {
+      "title": "Luật số 35/2024/QH15 của Quốc hội: Luật Đường bộ",
+      "code": "35/2024/QH15"
+    },
+    {
+      "title": "Nghị định số 364/2025/NĐ-CP",
+      "code": "364/2025/NĐ-CP"
+    }
+  ],
+  "faq": [
+    {
+      "question": "Có thể nộp qua kênh nào?",
+      "answer": "Các kênh hiện có: Trực tiếp, Trực tuyến, Dịch vụ bưu chính."
+    },
+    {
+      "question": "Thời gian xử lý tham chiếu là bao lâu?",
+      "answer": "Thời gian xử lý tham chiếu hiện có là 3 ngày làm việc."
+    },
+    {
+      "question": "Kết quả chính của thủ tục là gì?",
+      "answer": "Kết quả chính được trích xuất là Quyết định về việc trả lại hoặc bù trừ phí sử dụng đường bộ."
+    }
+  ],
+  "guidance": {
+    "highlight_documents": [
+      {
+        "bucket": "required",
+        "name": "Bản sao Quyết định hoặc Chứng nhận thu hồi chứng nhận đăng ký xe, biển số xe.",
+        "conditions": [],
+        "attachment_path": null
+      },
+      {
+        "bucket": "required",
+        "name": "Giấy đề nghị trả lại hoặc bù trừ phí sử dụng đường bộ theo Mẫu số 01 tại Phụ lục II ban hành kèm theo Nghị định số 364/2025/NĐ-CP.",
+        "conditions": [],
+        "attachment_path": null
+      },
+      {
+        "bucket": "required",
+        "name": "Giấy đề nghị trả lại hoặc bù trừ phí sử dụng đường bộ theo Mẫu số 01 tại Phụ lục II ban hành kèm theo Nghị định số 364/2025/NĐ-CP.",
+        "conditions": [],
+        "attachment_path": null
+      },
+      {
+        "bucket": "required",
+        "name": "Đơn trình báo về việc mất tài sản có xác nhận của cơ quan công an và Biên bản bàn giao tài sản do cơ quan công an thu hồi giao cho chủ xe.",
+        "conditions": [],
+        "attachment_path": null
+      },
+      {
+        "bucket": "required",
+        "name": "Giấy đề nghị trả lại hoặc bù trừ phí sử dụng đường bộ theo Mẫu số 01 tại Phụ lục II ban hành kèm theo Nghị định số 364/2025/NĐ-CP.",
+        "conditions": [],
+        "attachment_path": null
+      },
+      {
+        "bucket": "required",
+        "name": "Biên bản thu Tem kiểm định và Giấy chứng nhận kiểm định theo Mẫu số 02 tại Phụ lục II ban hành kèm theo Nghị định số 364/2025/NĐ-CP",
+        "conditions": [],
+        "attachment_path": null
+      }
+    ],
+    "special_cases": [
+      "Có trường hợp hồ sơ điện tử thay thế bản giấy",
+      "Có thể cần đối chiếu thông tin thửa đất hoặc giấy chứng nhận",
+      "Có thể cần hồ sơ kỹ thuật phương tiện hoặc giấy phép lái xe"
+    ],
+    "common_errors": [
+      "Điền sai mẫu tờ khai hoặc chọn sai biểu mẫu đi kèm.",
+      "Thông tin thửa đất, tài sản hoặc giấy chứng nhận chưa khớp với hồ sơ hiện có."
+    ],
+    "validation_hints": [
+      "Nên xác định trước kênh nộp hồ sơ để biết có cần bản giấy, bản điện tử hay xuất trình trực tiếp.",
+      "Nên xác định đúng nhóm đối tượng, mã số bảo hiểm và quyền lợi áp dụng trước khi nộp."
+    ]
+  },
+  "next_steps": {
+    "summary": "Nên xác định rõ đối tượng tham gia, quyền lợi hoặc nhu cầu điều chỉnh hồ sơ y tế trước khi nộp. Có thể chọn kênh nộp phù hợp: Trực tiếp, Trực tuyến, Dịch vụ bưu chính. Hiện có khoảng 14 mục giấy tờ cần theo dõi trong checklist.",
+    "time_badge": "3 ngày làm việc",
+    "result_label": "Quyết định về việc trả lại hoặc bù trừ phí sử dụng đường bộ",
+    "primary_channel": "online",
+    "channels": [
+      "in_person",
+      "online",
+      "postal"
+    ]
+  },
+  "notes": [],
+  "provenance": {
+    "pipeline": "raw->structured->normalized->enriched->ui_api_payload",
+    "normalizer_version": "0.2.0",
+    "enricher_version": "0.2.0",
+    "mapping_notes": "excluded_from_clean_workflow_dataset",
+    "supported_group": true
+  }
+}

@@ -1,0 +1,361 @@
+{
+  "schema_version": "3.0",
+  "record_type": "public_service_procedure_payload",
+  "id": "procedure-1.012260",
+  "procedure_code": "1.012260",
+  "code": "1.012260",
+  "title": "Công bố đủ điều kiện thực hiện khám bệnh, chữa bệnh từ xa",
+  "language": "vi",
+  "status": "generated_from_pipeline",
+  "field": "Khám bệnh, chữa bệnh",
+  "group_key": "suc_khoe_y_te",
+  "workflow_family": null,
+  "subflow": null,
+  "source": {
+    "source_url": "file:///C:/Users/ku060/Downloads/VAIC%20source/data-pipeline/raw_data/1_012260/1_012260_procedure_detail.md",
+    "source_markdown_path": "C:\\Users\\ku060\\Downloads\\VAIC source\\data-pipeline\\raw_data\\1_012260\\1_012260_procedure_detail.md",
+    "normalized_payload_path": "C:\\Users\\ku060\\Downloads\\VAIC source\\data-pipeline\\govease-unified\\data\\normalized_structured\\1_012260_normalized_structured.json",
+    "enriched_payload_path": "C:\\Users\\ku060\\Downloads\\VAIC source\\data-pipeline\\govease-unified\\data\\enriched_structured_priority\\1_012260_enriched_structured.json"
+  },
+  "scope": {
+    "included": "Thủ tục này thuộc nhóm y tế, thường cần đối chiếu thông tin người bệnh, đơn vị tiếp nhận hoặc quyền lợi chuyên ngành. Kết quả thường nhận được là Đăng tải thông tin của cơ sở đủ điều kiện thực hiện khám bệnh, chữa bệnh từ xa trên cổng thông tin điện tử hoặc trang thông tin điện tử của cơ quan và trên Hệ thống thông tin về quản lý hoạt động khám bệnh, chữa bệnh. Thời gian xử lý tham khảo: 10 ngày.",
+    "not_included": []
+  },
+  "agency": {
+    "executing_agency": null,
+    "submission_place": null,
+    "receiving_places": []
+  },
+  "target_users": [
+    "Tổ chức (không bao gồm doanh nghiệp",
+    "HTX)",
+    "Doanh nghiệp",
+    "Tổ chức nước ngoài",
+    "Hợp tác xã",
+    "Doanh nghiệp có vốn đầu tư nước ngoài"
+  ],
+  "submission_methods": [
+    {
+      "code": "ONLINE",
+      "label": "Trực tuyến",
+      "processing_time": "10 ngày",
+      "fee": null,
+      "description": null
+    },
+    {
+      "code": "POSTAL",
+      "label": "Dịch vụ bưu chính",
+      "processing_time": "10 ngày",
+      "fee": null,
+      "description": null
+    },
+    {
+      "code": "IN_PERSON",
+      "label": "Trực tiếp",
+      "processing_time": "10 ngày",
+      "fee": null,
+      "description": null
+    }
+  ],
+  "processing_note": "Thời gian xử lý tham chiếu: 10 ngày. Nên xác định rõ đối tượng tham gia, quyền lợi hoặc nhu cầu điều chỉnh hồ sơ y tế trước khi nộp. Có thể chọn kênh nộp phù hợp: Trực tiếp, Trực tuyến, Dịch vụ bưu chính. Hiện có khoảng 5 mục giấy tờ cần theo dõi trong checklist.",
+  "documents": {
+    "normally_required": [
+      {
+        "name": "Danh mục các dịch vụ thực hiện khám bệnh, chữa bệnh từ xa",
+        "quantity": "1 bản chính, 0 bản sao",
+        "notes": [],
+        "group": "default",
+        "attachment_path": null
+      },
+      {
+        "name": "Tài liệu minh chứng đáp ứng đủ điều kiện quy định tại điểm d khoản 1 Điều 87 Nghị định số 96/2023/NĐ-CP",
+        "quantity": "1 bản chính, 0 bản sao",
+        "notes": [],
+        "group": "default",
+        "attachment_path": null
+      },
+      {
+        "name": "Văn bản đề nghị thực hiện khám bệnh, chữa bệnh từ xa trong đó phải nêu rõ thời gian bắt đầu thực hiện khám bệnh, chữa bệnh từ xa",
+        "quantity": "1 bản chính, 0 bản sao",
+        "notes": [],
+        "group": "default",
+        "attachment_path": null
+      }
+    ],
+    "conditional": [
+      {
+        "condition": "Bản sao hợp lệ Giấy phép hoạt động khám bệnh, chữa bệnh của cơ sở (không áp dụng đối với trường hợp giấy phép hoạt động đã được kết nối, chia sẻ trên Hệ thống thông tin về quản lý hoạt động khám bệnh, chữa bệnh hoặc cơ sở dữ liệu quốc gia về y tế)",
+        "document": "Bản sao hợp lệ Giấy phép hoạt động khám bệnh, chữa bệnh của cơ sở (không áp dụng đối với trường hợp giấy phép hoạt động đã được kết nối, chia sẻ trên Hệ thống thông tin về quản lý hoạt động khám bệnh, chữa bệnh hoặc cơ sở dữ liệu quốc gia về y tế)",
+        "quantity": "0 bản chính, 1 bản sao",
+        "notes": [],
+        "attachment_path": null
+      },
+      {
+        "condition": "Danh sách đăng ký hành nghề kèm theo số giấy phép hành nghề của cơ sở đối với trường hợp giấy phép hoạt động đã được kết nối, chia sẻ trên Hệ thống thông tin về quản lý hoạt động khám bệnh, chữa bệnh hoặc cơ sở dữ liệu quốc gia về y tế. Trường hợp giấy phép hoạt động chưa được kết nối, chia sẻ trên Hệ thống thông tin về quản lý hoạt động khám bệnh, chữa bệnh hoặc cơ sở dữ liệu quốc gia về y tế thì phải nộp bản sao hợp lệ giấy phép hành nghề của từng người hành nghề tham gia khám bệnh, chữa bệnh từ xa)",
+        "document": "Danh sách đăng ký hành nghề kèm theo số giấy phép hành nghề của cơ sở đối với trường hợp giấy phép hoạt động đã được kết nối, chia sẻ trên Hệ thống thông tin về quản lý hoạt động khám bệnh, chữa bệnh hoặc cơ sở dữ liệu quốc gia về y tế. Trường hợp giấy phép hoạt động chưa được kết nối, chia sẻ trên Hệ thống thông tin về quản lý hoạt động khám bệnh, chữa bệnh hoặc cơ sở dữ liệu quốc gia về y tế thì phải nộp bản sao hợp lệ giấy phép hành nghề của từng người hành nghề tham gia khám bệnh, chữa bệnh từ xa)",
+        "quantity": "1 bản chính, 0 bản sao",
+        "notes": [],
+        "attachment_path": null
+      }
+    ],
+    "forms": [],
+    "presented": [],
+    "notes": [],
+    "summary": [
+      {
+        "group": "default",
+        "name": "Danh mục các dịch vụ thực hiện khám bệnh, chữa bệnh từ xa",
+        "quantity": "1 bản chính, 0 bản sao",
+        "notes": [],
+        "attachment_path": null
+      },
+      {
+        "group": "default",
+        "name": "Tài liệu minh chứng đáp ứng đủ điều kiện quy định tại điểm d khoản 1 Điều 87 Nghị định số 96/2023/NĐ-CP",
+        "quantity": "1 bản chính, 0 bản sao",
+        "notes": [],
+        "attachment_path": null
+      },
+      {
+        "group": "default",
+        "name": "Văn bản đề nghị thực hiện khám bệnh, chữa bệnh từ xa trong đó phải nêu rõ thời gian bắt đầu thực hiện khám bệnh, chữa bệnh từ xa",
+        "quantity": "1 bản chính, 0 bản sao",
+        "notes": [],
+        "attachment_path": null
+      },
+      {
+        "group": null,
+        "name": null,
+        "quantity": "0 bản chính, 1 bản sao",
+        "notes": [],
+        "attachment_path": null
+      },
+      {
+        "group": null,
+        "name": null,
+        "quantity": "1 bản chính, 0 bản sao",
+        "notes": [],
+        "attachment_path": null
+      }
+    ]
+  },
+  "steps": [
+    {
+      "order": 1,
+      "title": "Bước 1",
+      "description": "1.",
+      "example": null
+    },
+    {
+      "order": 2,
+      "title": "Bước 1:",
+      "description": "Bước 1: Cơ sở khám bệnh, chữa bệnh gửi 01 bộ hồ sơ công bố đủ điều kiện thực hiện khám bệnh, chữa bệnh từ xa theo quy định tại khoản 2 Điều 87 Nghị định số 96/2023/NĐ-CP về: Cơ quan chuyên môn về Y tế thuộc Ủy ban nhân dân cấp Tỉnh:",
+      "example": null
+    },
+    {
+      "order": 3,
+      "title": "a)",
+      "description": "a) Các cơ sở khám bệnh, chữa bệnh trên địa bàn quản lý của Cơ quan chuyên môn về Y tế thuộc Ủy ban nhân dân cấp Tỉnh (bao gồm cả các cơ sở khám bệnh, chữa bệnh trực thuộc Bộ Y tế, thuộc Bộ, ngành), trừ cơ sở khám bệnh, chữa bệnh thuộc thẩm quyền quản lý của Bộ Quốc phòng, Bộ Công an;",
+      "example": null
+    },
+    {
+      "order": 4,
+      "title": "b)",
+      "description": "b) Cơ sở khám bệnh, chữa bệnh tư nhân trên địa bàn quản lý (bao gồm cả bệnh viện tư nhân).",
+      "example": null
+    },
+    {
+      "order": 5,
+      "title": "Bước 2:",
+      "description": "Bước 2: Sau khi nhận được hồ sơ công bố cơ sở khám bệnh, chữa bệnh đủ điều kiện thực hiện khám bệnh, chữa bệnh từ xa, cơ quan tiếp nhận cấp cho cơ sở phiếu tiếp nhận hồ sơ theo Mẫu 02 Phụ lục I ban hành kèm theo Nghị định số 96/2023/NĐ-CP.",
+      "example": null
+    },
+    {
+      "order": 6,
+      "title": "Bước 3:",
+      "description": "Bước 3: Trong thời hạn 10 ngày kể từ ngày ghi trên phiếu tiếp nhận hồ sơ quy định tại khoản 2 Điều 87 Nghị định số 96/2023/NĐ-CP, cơ quan tiếp nhận có trách nhiệm đăng tải thông tin của cơ sở đủ điều kiện thực hiện khám bệnh, chữa bệnh từ xa trên cổng thông tin điện tử hoặc trang thông tin điện tử của cơ quan và trên Hệ thống thông tin về quản lý hoạt động khám bệnh, chữa bệnh. Trường hợp chưa đáp ứng yêu cầu thì cơ quan tiếp nhận phải có văn bản gửi cơ sở khám bệnh, chữa bệnh và nêu rõ lý do. Trường hợp sau thời hạn 10 ngày kể từ ngày ghi trên phiếu tiếp nhận hồ sơ đủ điều kiện thực hiện khám bệnh, chữa bệnh từ xa mà cơ quan tiếp nhận không có văn bản gửi cơ sở khám bệnh, chữa bệnh về việc đủ điều kiện thực hiện khám bệnh, chữa bệnh từ xa hoặc không thực hiện việc đăng tải thông tin theo quy định tại điểm c khoản này, cơ sở khám bệnh, chữa bệnh được bắt đầu thực hiện khám bệnh, chữa bệnh từ xa.",
+      "example": "10 ngày"
+    }
+  ],
+  "input_fields": [
+    {
+      "field": "request_subject",
+      "label": "Đối tượng làm thủ tục",
+      "type": "string",
+      "required": true
+    },
+    {
+      "field": "insurance_or_medical_need",
+      "label": "Nhu cầu bảo hiểm hoặc y tế",
+      "type": "string",
+      "required": true
+    },
+    {
+      "field": "submission_channel_preference",
+      "label": "Kênh nộp dự kiến",
+      "type": "enum",
+      "required": false,
+      "options": [
+        "Trực tiếp",
+        "Trực tuyến",
+        "Dịch vụ bưu chính"
+      ]
+    },
+    {
+      "field": "has_insurance_number",
+      "label": "Đã có mã BHXH/BHYT",
+      "type": "boolean",
+      "required": false
+    }
+  ],
+  "validation_rules": [
+    {
+      "id": "required-1",
+      "severity": "error",
+      "field": "request_subject",
+      "rule": "Trường bắt buộc phải có dữ liệu hợp lệ trước khi nộp.",
+      "message": "Thiếu trường bắt buộc: Đối tượng làm thủ tục."
+    },
+    {
+      "id": "required-2",
+      "severity": "error",
+      "field": "insurance_or_medical_need",
+      "rule": "Trường bắt buộc phải có dữ liệu hợp lệ trước khi nộp.",
+      "message": "Thiếu trường bắt buộc: Nhu cầu bảo hiểm hoặc y tế."
+    },
+    {
+      "id": "hint-1",
+      "severity": "warning",
+      "field": "general",
+      "rule": "Nên xác định trước kênh nộp hồ sơ để biết có cần bản giấy, bản điện tử hay xuất trình trực tiếp.",
+      "message": "Nên xác định trước kênh nộp hồ sơ để biết có cần bản giấy, bản điện tử hay xuất trình trực tiếp."
+    },
+    {
+      "id": "hint-2",
+      "severity": "warning",
+      "field": "general",
+      "rule": "Nên xác định đúng nhóm đối tượng, mã số bảo hiểm và quyền lợi áp dụng trước khi nộp.",
+      "message": "Nên xác định đúng nhóm đối tượng, mã số bảo hiểm và quyền lợi áp dụng trước khi nộp."
+    }
+  ],
+  "common_errors": [],
+  "clarifying_questions": [
+    {
+      "id": "clarify_1",
+      "question": "Bạn đang muốn đăng ký, điều chỉnh hay xác nhận quyền lợi y tế hoặc bảo hiểm nào?",
+      "purpose": "workflow_intake"
+    },
+    {
+      "id": "clarify_2",
+      "question": "Bạn đã có mã BHXH/BHYT hoặc thông tin đơn vị tiếp nhận liên quan chưa?",
+      "purpose": "workflow_intake"
+    }
+  ],
+  "legal_basis": [
+    {
+      "title": "NGHỊ ĐỊNH QUY ĐỊNH VỀ PHÂN QUYỀN, PHÂN CẤP TRONG LĨNH VỰC Y TẾ",
+      "code": "148/2025/NĐ-CP"
+    },
+    {
+      "title": "Luật Khám, chữa bệnh 15/2023/QH15 (09/1/2023)",
+      "code": "15/2023/QH15"
+    },
+    {
+      "title": "Nghị định số 96/2023/NĐ-CP ngày 30 tháng 12 năm 2023 của Chính phủ quy định chi tiết một số điều của Luật Khám bệnh, chữa bệnh.",
+      "code": "96/2023/NĐ-CP"
+    }
+  ],
+  "legal_bases": [
+    {
+      "title": "NGHỊ ĐỊNH QUY ĐỊNH VỀ PHÂN QUYỀN, PHÂN CẤP TRONG LĨNH VỰC Y TẾ",
+      "code": "148/2025/NĐ-CP"
+    },
+    {
+      "title": "Luật Khám, chữa bệnh 15/2023/QH15 (09/1/2023)",
+      "code": "15/2023/QH15"
+    },
+    {
+      "title": "Nghị định số 96/2023/NĐ-CP ngày 30 tháng 12 năm 2023 của Chính phủ quy định chi tiết một số điều của Luật Khám bệnh, chữa bệnh.",
+      "code": "96/2023/NĐ-CP"
+    }
+  ],
+  "faq": [
+    {
+      "question": "Có thể nộp qua kênh nào?",
+      "answer": "Các kênh hiện có: Trực tiếp, Trực tuyến, Dịch vụ bưu chính."
+    },
+    {
+      "question": "Thời gian xử lý tham chiếu là bao lâu?",
+      "answer": "Thời gian xử lý tham chiếu hiện có là 10 ngày."
+    },
+    {
+      "question": "Kết quả chính của thủ tục là gì?",
+      "answer": "Kết quả chính được trích xuất là Đăng tải thông tin của cơ sở đủ điều kiện thực hiện khám bệnh, chữa bệnh từ xa trên cổng thông tin điện tử hoặc trang thông tin điện tử của cơ quan và trên Hệ thống thông tin về quản lý hoạt động khám bệnh, chữa bệnh."
+    }
+  ],
+  "guidance": {
+    "highlight_documents": [
+      {
+        "bucket": "required",
+        "name": "Danh mục các dịch vụ thực hiện khám bệnh, chữa bệnh từ xa",
+        "conditions": [],
+        "attachment_path": null
+      },
+      {
+        "bucket": "required",
+        "name": "Tài liệu minh chứng đáp ứng đủ điều kiện quy định tại điểm d khoản 1 Điều 87 Nghị định số 96/2023/NĐ-CP",
+        "conditions": [],
+        "attachment_path": null
+      },
+      {
+        "bucket": "required",
+        "name": "Văn bản đề nghị thực hiện khám bệnh, chữa bệnh từ xa trong đó phải nêu rõ thời gian bắt đầu thực hiện khám bệnh, chữa bệnh từ xa",
+        "conditions": [],
+        "attachment_path": null
+      },
+      {
+        "bucket": "conditional",
+        "name": "Bản sao hợp lệ Giấy phép hoạt động khám bệnh, chữa bệnh của cơ sở (không áp dụng đối với trường hợp giấy phép hoạt động đã được kết nối, chia sẻ trên Hệ thống thông tin về quản lý hoạt động khám bệnh, chữa bệnh hoặc cơ sở dữ liệu quốc gia về y tế)",
+        "conditions": [
+          "Bản sao hợp lệ Giấy phép hoạt động khám bệnh, chữa bệnh của cơ sở (không áp dụng đối với trường hợp giấy phép hoạt động đã được kết nối, chia sẻ trên Hệ thống thông tin về quản lý hoạt động khám bệnh, chữa bệnh hoặc cơ sở dữ liệu quốc gia về y tế)"
+        ],
+        "attachment_path": null
+      },
+      {
+        "bucket": "conditional",
+        "name": "Danh sách đăng ký hành nghề kèm theo số giấy phép hành nghề của cơ sở đối với trường hợp giấy phép hoạt động đã được kết nối, chia sẻ trên Hệ thống thông tin về quản lý hoạt động khám bệnh, chữa bệnh hoặc cơ sở dữ liệu quốc gia về y tế. Trường hợp giấy phép hoạt động chưa được kết nối, chia sẻ trên Hệ thống thông tin về quản lý hoạt động khám bệnh, chữa bệnh hoặc cơ sở dữ liệu quốc gia về y tế thì phải nộp bản sao hợp lệ giấy phép hành nghề của từng người hành nghề tham gia khám bệnh, chữa bệnh từ xa)",
+        "conditions": [
+          "Danh sách đăng ký hành nghề kèm theo số giấy phép hành nghề của cơ sở đối với trường hợp giấy phép hoạt động đã được kết nối, chia sẻ trên Hệ thống thông tin về quản lý hoạt động khám bệnh, chữa bệnh hoặc cơ sở dữ liệu quốc gia về y tế. Trường hợp giấy phép hoạt động chưa được kết nối, chia sẻ trên Hệ thống thông tin về quản lý hoạt động khám bệnh, chữa bệnh hoặc cơ sở dữ liệu quốc gia về y tế thì phải nộp bản sao hợp lệ giấy phép hành nghề của từng người hành nghề tham gia khám bệnh, chữa bệnh từ xa)"
+        ],
+        "attachment_path": null
+      }
+    ],
+    "special_cases": [
+      "Có kiểm tra dữ liệu cư trú/định danh"
+    ],
+    "common_errors": [],
+    "validation_hints": [
+      "Nên xác định trước kênh nộp hồ sơ để biết có cần bản giấy, bản điện tử hay xuất trình trực tiếp.",
+      "Nên xác định đúng nhóm đối tượng, mã số bảo hiểm và quyền lợi áp dụng trước khi nộp."
+    ]
+  },
+  "next_steps": {
+    "summary": "Nên xác định rõ đối tượng tham gia, quyền lợi hoặc nhu cầu điều chỉnh hồ sơ y tế trước khi nộp. Có thể chọn kênh nộp phù hợp: Trực tiếp, Trực tuyến, Dịch vụ bưu chính. Hiện có khoảng 5 mục giấy tờ cần theo dõi trong checklist.",
+    "time_badge": "10 ngày",
+    "result_label": "Đăng tải thông tin của cơ sở đủ điều kiện thực hiện khám bệnh, chữa bệnh từ xa trên cổng thông tin điện tử hoặc trang thông tin điện tử của cơ quan và trên Hệ thống thông tin về quản lý hoạt động khám bệnh, chữa bệnh",
+    "primary_channel": "online",
+    "channels": [
+      "in_person",
+      "online",
+      "postal"
+    ]
+  },
+  "notes": [],
+  "provenance": {
+    "pipeline": "raw->structured->normalized->enriched->ui_api_payload",
+    "normalizer_version": "0.2.0",
+    "enricher_version": "0.2.0",
+    "mapping_notes": "excluded_from_clean_workflow_dataset",
+    "supported_group": true
+  }
+}

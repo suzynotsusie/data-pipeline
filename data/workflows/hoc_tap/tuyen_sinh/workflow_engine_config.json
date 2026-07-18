@@ -1,0 +1,361 @@
+{
+  "schema_version": "1.0",
+  "domain": "hoc_tap",
+  "updated_at": "2026-07-18",
+  "source_files": [
+    "C:\\Users\\ku060\\Downloads\\VAIC source\\data-pipeline\\main\\full-data.csv",
+    "C:\\Users\\ku060\\Downloads\\VAIC source\\data-pipeline\\data\\workflows\\hoc_tap\\summary.csv",
+    "C:\\Users\\ku060\\Downloads\\VAIC source\\data-pipeline\\data\\workflows\\hoc_tap\\normalized.json",
+    "C:\\Users\\ku060\\Downloads\\VAIC source\\data-pipeline\\raw_data"
+  ],
+  "coverage": {
+    "expected_codes": [
+      "1.001942",
+      "1.003734",
+      "1.005090",
+      "1.005095",
+      "1.005098",
+      "1.005142",
+      "1.009394",
+      "1.010776",
+      "1.010779",
+      "1.013338",
+      "1.014957",
+      "3.000181",
+      "3.000182"
+    ],
+    "covered_codes": [
+      "1.001942",
+      "1.003734",
+      "1.005090",
+      "1.005095",
+      "1.005098",
+      "1.005142",
+      "1.009394",
+      "1.010776",
+      "1.010779",
+      "1.013338",
+      "1.014957",
+      "3.000181",
+      "3.000182"
+    ],
+    "missing_codes": []
+  },
+  "llm_contract": {
+    "role": "parse_user_answer_and_rephrase_question_only",
+    "required_output_schema": {
+      "intent": "hoc_tap",
+      "current_node": "string",
+      "slot_updates": {
+        "subdomain_key": "tuyen_sinh | chuyen_truong | hoc_bong_va_ho_tro | van_bang_chung_chi | hoc_tap_o_nuoc_ngoai_bang_ngan_sach | unknown",
+        "operation_key": "string",
+        "operation_group": "string"
+      },
+      "confidence": "0_to_1",
+      "needs_human_review": "boolean"
+    }
+  },
+  "entry_prompts": [
+    "Bạn đang cần làm việc về tuyển sinh, chuyển trường, hỗ trợ học tập, văn bằng chứng chỉ hay du học bằng ngân sách nhà nước?",
+    "Bạn muốn đăng ký mới, điều chỉnh, xin hỗ trợ, xin công nhận hay xin cấp lại giấy tờ học tập?"
+  ],
+  "slots": [
+    {
+      "name": "subdomain_key",
+      "required": true,
+      "description": "Nhánh chính của nhóm Học tập."
+    },
+    {
+      "name": "operation_key",
+      "required": true,
+      "description": "Thao tác cụ thể ánh xạ trực tiếp tới thủ tục cuối cùng."
+    },
+    {
+      "name": "operation_group",
+      "required": false,
+      "description": "Nhóm thao tác để gom các thủ tục gần nhau cho UI và parser."
+    }
+  ],
+  "subdomain_catalog": [
+    {
+      "subdomain_key": "tuyen_sinh",
+      "subdomain_label": "Tuyển sinh",
+      "event_id": 254,
+      "summary": "Nhóm thủ tục tuyển sinh, đăng ký dự thi, phúc khảo, xét tuyển và công nhận tốt nghiệp cho người học."
+    }
+  ],
+  "decision_tree": {
+    "start_node": "study_subdomain",
+    "nodes": [
+      {
+        "id": "study_subdomain",
+        "type": "question",
+        "slot": "subdomain_key",
+        "question": "Bạn đang hỏi về tuyển sinh, chuyển trường, học bổng hỗ trợ, văn bằng chứng chỉ hay học tập ở nước ngoài bằng ngân sách nhà nước?",
+        "options": [
+          "tuyen_sinh"
+        ],
+        "prefilled_value": "tuyen_sinh"
+      },
+      {
+        "id": "study_operation",
+        "type": "question",
+        "slot": "operation_key",
+        "question": "Bạn cần làm thao tác nào cụ thể trong nhánh đã chọn?",
+        "options_by_subdomain": {
+          "tuyen_sinh": [
+            {
+              "operation_key": "dang_ky_xet_tuyen_trinh_do_dai_hoc_trinh_do_cao_dang_nganh_giao_duc_mam_non",
+              "operation_group": "xet_tuyen",
+              "procedure_code": "1.001942",
+              "procedure_title": "Đăng ký xét tuyển trình độ đại học, trình độ cao đẳng ngành giáo dục mầm non"
+            },
+            {
+              "operation_key": "dang_ky_du_thi_cap_chung_chi_ung_dung_cong_nghe_thong_tin",
+              "operation_group": "dang_ky_du_thi",
+              "procedure_code": "1.003734",
+              "procedure_title": "Đăng ký dự thi cấp chứng chỉ ứng dụng công nghệ thông tin"
+            },
+            {
+              "operation_key": "xet_tuyen_sinh_vao_truong_pho_thong_dan_toc_noi_tru",
+              "operation_group": "xet_tuyen",
+              "procedure_code": "1.005090",
+              "procedure_title": "Xét tuyển sinh vào trường phổ thông dân tộc nội trú"
+            },
+            {
+              "operation_key": "phuc_khao_bai_thi_tot_nghiep_trung_hoc_pho_thong",
+              "operation_group": "phuc_khao",
+              "procedure_code": "1.005095",
+              "procedure_title": "Phúc khảo bài thi tốt nghiệp trung học phổ thông"
+            },
+            {
+              "operation_key": "xet_dac_cach_tot_nghiep_trung_hoc_pho_thong",
+              "operation_group": "tot_nghiep",
+              "procedure_code": "1.005098",
+              "procedure_title": "Xét đặc cách tốt nghiệp trung học phổ thông"
+            },
+            {
+              "operation_key": "dang_ky_du_thi_tot_nghiep_trung_hoc_pho_thong",
+              "operation_group": "tot_nghiep",
+              "procedure_code": "1.005142",
+              "procedure_title": "Đăng ký dự thi tốt nghiệp trung học phổ thông"
+            },
+            {
+              "operation_key": "dang_ky_xet_tuyen_hoc_theo_che_do_cu_tuyen",
+              "operation_group": "xet_tuyen",
+              "procedure_code": "1.009394",
+              "procedure_title": "Đăng ký xét tuyển học theo chế độ cử tuyển"
+            },
+            {
+              "operation_key": "tuyen_sinh_vao_hoc_du_bi_dai_hoc",
+              "operation_group": "xet_tuyen",
+              "procedure_code": "1.010776",
+              "procedure_title": "Tuyển sinh vào học dự bị đại học"
+            },
+            {
+              "operation_key": "xet_chuyen_hoc_sinh_hoan_thanh_du_bi_dai_hoc_vao_hoc_trinh_do_dai_hoc_trinh_do_cao_dang_nganh_giao_duc_mam_non",
+              "operation_group": "tuyen_sinh_khac",
+              "procedure_code": "1.010779",
+              "procedure_title": "Xét chuyển học sinh hoàn thành dự bị đại học vào học trình độ đại học, trình độ cao đẳng ngành Giáo dục Mầm non"
+            },
+            {
+              "operation_key": "xet_cong_nhan_tot_nghiep_trung_hoc_pho_thong",
+              "operation_group": "tot_nghiep",
+              "procedure_code": "1.013338",
+              "procedure_title": "Xét công nhận tốt nghiệp trung học phổ thông"
+            },
+            {
+              "operation_key": "tuyen_sinh_vao_truong_pho_thong_noi_tru",
+              "operation_group": "xet_tuyen",
+              "procedure_code": "1.014957",
+              "procedure_title": "Tuyển sinh vào trường phổ thông nội trú"
+            },
+            {
+              "operation_key": "tuyen_sinh_trung_hoc_pho_thong",
+              "operation_group": "xet_tuyen",
+              "procedure_code": "3.000181",
+              "procedure_title": "Tuyển sinh trung học phổ thông"
+            },
+            {
+              "operation_key": "tuyen_sinh_trung_hoc_co_so",
+              "operation_group": "xet_tuyen",
+              "procedure_code": "3.000182",
+              "procedure_title": "Tuyển sinh trung học cơ sở"
+            }
+          ]
+        },
+        "options": [
+          "dang_ky_xet_tuyen_trinh_do_dai_hoc_trinh_do_cao_dang_nganh_giao_duc_mam_non",
+          "dang_ky_du_thi_cap_chung_chi_ung_dung_cong_nghe_thong_tin",
+          "xet_tuyen_sinh_vao_truong_pho_thong_dan_toc_noi_tru",
+          "phuc_khao_bai_thi_tot_nghiep_trung_hoc_pho_thong",
+          "xet_dac_cach_tot_nghiep_trung_hoc_pho_thong",
+          "dang_ky_du_thi_tot_nghiep_trung_hoc_pho_thong",
+          "dang_ky_xet_tuyen_hoc_theo_che_do_cu_tuyen",
+          "tuyen_sinh_vao_hoc_du_bi_dai_hoc",
+          "xet_chuyen_hoc_sinh_hoan_thanh_du_bi_dai_hoc_vao_hoc_trinh_do_dai_hoc_trinh_do_cao_dang_nganh_giao_duc_mam_non",
+          "xet_cong_nhan_tot_nghiep_trung_hoc_pho_thong",
+          "tuyen_sinh_vao_truong_pho_thong_noi_tru",
+          "tuyen_sinh_trung_hoc_pho_thong",
+          "tuyen_sinh_trung_hoc_co_so"
+        ]
+      }
+    ],
+    "routes": [
+      {
+        "route_id": "tuyen_sinh-1_001942",
+        "conditions": {
+          "subdomain_key": "tuyen_sinh",
+          "operation_key": "dang_ky_xet_tuyen_trinh_do_dai_hoc_trinh_do_cao_dang_nganh_giao_duc_mam_non"
+        },
+        "procedure_code": "1.001942",
+        "procedure_name": "Đăng ký xét tuyển trình độ đại học, trình độ cao đẳng ngành giáo dục mầm non",
+        "why_this_route": "Route trực tiếp cho nhu cầu 'Đăng ký xét tuyển trình độ đại học, trình độ cao đẳng ngành giáo dục mầm non' trong nhánh 'Tuyển sinh'."
+      },
+      {
+        "route_id": "tuyen_sinh-1_003734",
+        "conditions": {
+          "subdomain_key": "tuyen_sinh",
+          "operation_key": "dang_ky_du_thi_cap_chung_chi_ung_dung_cong_nghe_thong_tin"
+        },
+        "procedure_code": "1.003734",
+        "procedure_name": "Đăng ký dự thi cấp chứng chỉ ứng dụng công nghệ thông tin",
+        "why_this_route": "Route trực tiếp cho nhu cầu 'Đăng ký dự thi cấp chứng chỉ ứng dụng công nghệ thông tin' trong nhánh 'Tuyển sinh'."
+      },
+      {
+        "route_id": "tuyen_sinh-1_005090",
+        "conditions": {
+          "subdomain_key": "tuyen_sinh",
+          "operation_key": "xet_tuyen_sinh_vao_truong_pho_thong_dan_toc_noi_tru"
+        },
+        "procedure_code": "1.005090",
+        "procedure_name": "Xét tuyển sinh vào trường phổ thông dân tộc nội trú",
+        "why_this_route": "Route trực tiếp cho nhu cầu 'Xét tuyển sinh vào trường phổ thông dân tộc nội trú' trong nhánh 'Tuyển sinh'."
+      },
+      {
+        "route_id": "tuyen_sinh-1_005095",
+        "conditions": {
+          "subdomain_key": "tuyen_sinh",
+          "operation_key": "phuc_khao_bai_thi_tot_nghiep_trung_hoc_pho_thong"
+        },
+        "procedure_code": "1.005095",
+        "procedure_name": "Phúc khảo bài thi tốt nghiệp trung học phổ thông",
+        "why_this_route": "Route trực tiếp cho nhu cầu 'Phúc khảo bài thi tốt nghiệp trung học phổ thông' trong nhánh 'Tuyển sinh'."
+      },
+      {
+        "route_id": "tuyen_sinh-1_005098",
+        "conditions": {
+          "subdomain_key": "tuyen_sinh",
+          "operation_key": "xet_dac_cach_tot_nghiep_trung_hoc_pho_thong"
+        },
+        "procedure_code": "1.005098",
+        "procedure_name": "Xét đặc cách tốt nghiệp trung học phổ thông",
+        "why_this_route": "Route trực tiếp cho nhu cầu 'Xét đặc cách tốt nghiệp trung học phổ thông' trong nhánh 'Tuyển sinh'."
+      },
+      {
+        "route_id": "tuyen_sinh-1_005142",
+        "conditions": {
+          "subdomain_key": "tuyen_sinh",
+          "operation_key": "dang_ky_du_thi_tot_nghiep_trung_hoc_pho_thong"
+        },
+        "procedure_code": "1.005142",
+        "procedure_name": "Đăng ký dự thi tốt nghiệp trung học phổ thông",
+        "why_this_route": "Route trực tiếp cho nhu cầu 'Đăng ký dự thi tốt nghiệp trung học phổ thông' trong nhánh 'Tuyển sinh'."
+      },
+      {
+        "route_id": "tuyen_sinh-1_009394",
+        "conditions": {
+          "subdomain_key": "tuyen_sinh",
+          "operation_key": "dang_ky_xet_tuyen_hoc_theo_che_do_cu_tuyen"
+        },
+        "procedure_code": "1.009394",
+        "procedure_name": "Đăng ký xét tuyển học theo chế độ cử tuyển",
+        "why_this_route": "Route trực tiếp cho nhu cầu 'Đăng ký xét tuyển học theo chế độ cử tuyển' trong nhánh 'Tuyển sinh'."
+      },
+      {
+        "route_id": "tuyen_sinh-1_010776",
+        "conditions": {
+          "subdomain_key": "tuyen_sinh",
+          "operation_key": "tuyen_sinh_vao_hoc_du_bi_dai_hoc"
+        },
+        "procedure_code": "1.010776",
+        "procedure_name": "Tuyển sinh vào học dự bị đại học",
+        "why_this_route": "Route trực tiếp cho nhu cầu 'Tuyển sinh vào học dự bị đại học' trong nhánh 'Tuyển sinh'."
+      },
+      {
+        "route_id": "tuyen_sinh-1_010779",
+        "conditions": {
+          "subdomain_key": "tuyen_sinh",
+          "operation_key": "xet_chuyen_hoc_sinh_hoan_thanh_du_bi_dai_hoc_vao_hoc_trinh_do_dai_hoc_trinh_do_cao_dang_nganh_giao_duc_mam_non"
+        },
+        "procedure_code": "1.010779",
+        "procedure_name": "Xét chuyển học sinh hoàn thành dự bị đại học vào học trình độ đại học, trình độ cao đẳng ngành Giáo dục Mầm non",
+        "why_this_route": "Route trực tiếp cho nhu cầu 'Xét chuyển học sinh hoàn thành dự bị đại học vào học trình độ đại học, trình độ cao đẳng ngành Giáo dục Mầm non' trong nhánh 'Tuyển sinh'."
+      },
+      {
+        "route_id": "tuyen_sinh-1_013338",
+        "conditions": {
+          "subdomain_key": "tuyen_sinh",
+          "operation_key": "xet_cong_nhan_tot_nghiep_trung_hoc_pho_thong"
+        },
+        "procedure_code": "1.013338",
+        "procedure_name": "Xét công nhận tốt nghiệp trung học phổ thông",
+        "why_this_route": "Route trực tiếp cho nhu cầu 'Xét công nhận tốt nghiệp trung học phổ thông' trong nhánh 'Tuyển sinh'."
+      },
+      {
+        "route_id": "tuyen_sinh-1_014957",
+        "conditions": {
+          "subdomain_key": "tuyen_sinh",
+          "operation_key": "tuyen_sinh_vao_truong_pho_thong_noi_tru"
+        },
+        "procedure_code": "1.014957",
+        "procedure_name": "Tuyển sinh vào trường phổ thông nội trú",
+        "why_this_route": "Route trực tiếp cho nhu cầu 'Tuyển sinh vào trường phổ thông nội trú' trong nhánh 'Tuyển sinh'."
+      },
+      {
+        "route_id": "tuyen_sinh-3_000181",
+        "conditions": {
+          "subdomain_key": "tuyen_sinh",
+          "operation_key": "tuyen_sinh_trung_hoc_pho_thong"
+        },
+        "procedure_code": "3.000181",
+        "procedure_name": "Tuyển sinh trung học phổ thông",
+        "why_this_route": "Route trực tiếp cho nhu cầu 'Tuyển sinh trung học phổ thông' trong nhánh 'Tuyển sinh'."
+      },
+      {
+        "route_id": "tuyen_sinh-3_000182",
+        "conditions": {
+          "subdomain_key": "tuyen_sinh",
+          "operation_key": "tuyen_sinh_trung_hoc_co_so"
+        },
+        "procedure_code": "3.000182",
+        "procedure_name": "Tuyển sinh trung học cơ sở",
+        "why_this_route": "Route trực tiếp cho nhu cầu 'Tuyển sinh trung học cơ sở' trong nhánh 'Tuyển sinh'."
+      }
+    ]
+  },
+  "pre_submission_checks": [
+    {
+      "field_group": "education_identity",
+      "checks": [
+        "Thông tin người học phải thống nhất giữa giấy tờ nhân thân, hồ sơ trường học và biểu mẫu nộp.",
+        "Phải xác định đúng cấp học hoặc chương trình đào tạo trước khi chọn thủ tục."
+      ]
+    },
+    {
+      "field_group": "financial_support",
+      "checks": [
+        "Các thủ tục hỗ trợ học tập phải có giấy tờ chứng minh đúng diện hưởng chính sách.",
+        "Nếu xin miễn giảm học phí hoặc học bổng thì phải làm rõ cơ sở giáo dục và bậc học hiện tại."
+      ]
+    },
+    {
+      "field_group": "abroad_study",
+      "checks": [
+        "Nhóm học tập ở nước ngoài phải làm rõ trạng thái đi học, đang học hay đã hoàn thành về nước.",
+        "Các yêu cầu gia hạn hoặc tạm dừng phải có căn cứ phê duyệt của cơ quan cử đi học hoặc cơ quan quản lý."
+      ]
+    }
+  ],
+  "subdomain_key": "tuyen_sinh"
+}

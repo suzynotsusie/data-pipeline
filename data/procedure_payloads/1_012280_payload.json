@@ -1,0 +1,659 @@
+{
+  "schema_version": "3.0",
+  "record_type": "public_service_procedure_payload",
+  "id": "procedure-1.012280",
+  "procedure_code": "1.012280",
+  "code": "1.012280",
+  "title": "Điều chỉnh giấy phép hoạt động khám bệnh, chữa bệnh",
+  "language": "vi",
+  "status": "generated_from_pipeline",
+  "field": "Khám bệnh, chữa bệnh",
+  "group_key": "suc_khoe_y_te",
+  "workflow_family": null,
+  "subflow": null,
+  "source": {
+    "source_url": "file:///C:/Users/ku060/Downloads/VAIC%20source/data-pipeline/raw_data/1_012280/1_012280_procedure_detail.md",
+    "source_markdown_path": "C:\\Users\\ku060\\Downloads\\VAIC source\\data-pipeline\\raw_data\\1_012280\\1_012280_procedure_detail.md",
+    "normalized_payload_path": "C:\\Users\\ku060\\Downloads\\VAIC source\\data-pipeline\\govease-unified\\data\\normalized_structured\\1_012280_normalized_structured.json",
+    "enriched_payload_path": "C:\\Users\\ku060\\Downloads\\VAIC source\\data-pipeline\\govease-unified\\data\\enriched_structured_priority\\1_012280_enriched_structured.json"
+  },
+  "scope": {
+    "included": "Thủ tục này thuộc nhóm y tế, thường cần đối chiếu thông tin người bệnh, đơn vị tiếp nhận hoặc quyền lợi chuyên ngành. Kết quả thường nhận được là Văn bản cho phép. Thời gian xử lý tham khảo: 20 ngày.",
+    "not_included": []
+  },
+  "agency": {
+    "executing_agency": "Cục Quản lý Khám chữa bệnh - Bộ Y tế, Sở Y tế, Cục Quản lý Y, Dược cổ truyền - Bộ Y tế, Cục Bà mẹ và Trẻ em",
+    "submission_place": null,
+    "receiving_places": []
+  },
+  "target_users": [
+    "Doanh nghiệp có vốn đầu tư nước ngoài",
+    "Doanh nghiệp",
+    "Tổ chức nước ngoài",
+    "Hợp tác xã"
+  ],
+  "submission_methods": [
+    {
+      "code": "IN_PERSON",
+      "label": "Trực tiếp",
+      "processing_time": "20 ngày",
+      "fee": null,
+      "description": "Trường hợp không phải thẩm định thực tế tại cơ sở: 20 ngày kể từ ngày nhận đủ hồ sơ; Trường hợp phải thẩm định thực tế tại cơ sở: 60 ngày kể từ ngày nhận đủ hồ sơ và 10 ngày làm việc kể từ ngày ban hành biên bản thẩm định hoặc nhận được văn bản thông báo và tài liệu chứng minh đã hoàn thành việc khắc phục, sửa chữa. (Mức phí thực hiện theo Quyết định 2945/QĐ-BYT ngày 04/8/2025 của Bộ trưởng Bộ Y tế)"
+    },
+    {
+      "code": "ONLINE",
+      "label": "Trực tuyến",
+      "processing_time": "20 ngày",
+      "fee": null,
+      "description": "Trường hợp không phải thẩm định thực tế tại cơ sở: 20 ngày kể từ ngày nhận đủ hồ sơ; Trường hợp phải thẩm định thực tế tại cơ sở: 60 ngày kể từ ngày nhận đủ hồ sơ và 10 ngày làm việc kể từ ngày ban hành biên bản thẩm định hoặc nhận được văn bản thông báo và tài liệu chứng minh đã hoàn thành việc khắc phục, sửa chữa. (Mức phí thực hiện theo Quyết định 2945/QĐ-BYT ngày 04/8/2025 của Bộ trưởng Bộ Y tế)"
+    },
+    {
+      "code": "POSTAL",
+      "label": "Dịch vụ bưu chính",
+      "processing_time": "20 ngày",
+      "fee": null,
+      "description": "Trường hợp không phải thẩm định thực tế tại cơ sở: 20 ngày kể từ ngày nhận đủ hồ sơ; Trường hợp phải thẩm định thực tế tại cơ sở: 60 ngày kể từ ngày nhận đủ hồ sơ và 10 ngày làm việc kể từ ngày ban hành biên bản thẩm định hoặc nhận được văn bản thông báo và tài liệu chứng minh đã hoàn thành việc khắc phục, sửa chữa. (Mức phí thực hiện theo Quyết định 2945/QĐ-BYT ngày 04/8/2025 của Bộ trưởng Bộ Y tế)"
+    }
+  ],
+  "processing_note": "Thời gian xử lý tham chiếu: 20 ngày. Nên xác định rõ đối tượng tham gia, quyền lợi hoặc nhu cầu điều chỉnh hồ sơ y tế trước khi nộp. Có thể chọn kênh nộp phù hợp: Trực tiếp, Trực tuyến, Dịch vụ bưu chính. Hiện có khoảng 7 mục giấy tờ cần theo dõi trong checklist.",
+  "documents": {
+    "normally_required": [
+      {
+        "name": "Đơn theo Mẫu 02 Phụ lục II ban hành kèm theo Nghị định số 96/2023/NĐ-CP",
+        "quantity": "1 bản chính, 0 bản sao",
+        "notes": [],
+        "group": "Trường hợp 1: Trường hợp thay đổi tên, địa chỉ (không thay đổi địa điểm), thời gian làm việc",
+        "attachment_path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/1_012280/M%E1%BA%ABu%2002.docx"
+      },
+      {
+        "name": "Các giấy tờ quy định tại điểm b khoản 3 Điều 54 Luật khám bệnh, chữa bệnh năm 2023.",
+        "quantity": "1 bản chính, 1 bản sao",
+        "notes": [],
+        "group": "Trường hợp 1: Trường hợp thay đổi tên, địa chỉ (không thay đổi địa điểm), thời gian làm việc",
+        "attachment_path": null
+      },
+      {
+        "name": "Bản kê khai cơ sở vật chất, thiết bị y tế và hồ sơ nhân sự tương ứng với quy mô hoặc phạm vi hoạt động chuyên môn hoặc danh mục kỹ thuật dự kiến thay đổi và các tài liệu minh chứng đáp ứng việc thay đổi",
+        "quantity": "1 bản chính, 0 bản sao",
+        "notes": [],
+        "group": "Trường hợp 2: Trường hợp thay đổi quy mô hoạt động, phạm vi hoạt động chuyên môn hoặc bổ sung, giảm bớt danh mục kỹ thuật",
+        "attachment_path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/1_012280/M%E1%BA%ABu%2008.docx"
+      },
+      {
+        "name": "Đơn theo Mẫu 02 Phụ lục II ban hành kèm theo Nghị định số 96/2023/NĐ-CP",
+        "quantity": "1 bản chính, 0 bản sao",
+        "notes": [],
+        "group": "Trường hợp 2: Trường hợp thay đổi quy mô hoạt động, phạm vi hoạt động chuyên môn hoặc bổ sung, giảm bớt danh mục kỹ thuật",
+        "attachment_path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/1_012280/M%E1%BA%ABu%2002.docx"
+      },
+      {
+        "name": "Bản gốc giấy phép hoạt động",
+        "quantity": "1 bản chính, 0 bản sao",
+        "notes": [],
+        "group": "Trường hợp 2: Trường hợp thay đổi quy mô hoạt động, phạm vi hoạt động chuyên môn hoặc bổ sung, giảm bớt danh mục kỹ thuật",
+        "attachment_path": null
+      },
+      {
+        "name": "Bản kê khai cơ sở vật chất, thiết bị y tế, tổ chức và hồ sơ nhân sự đáp ứng các yêu cầu tại khoản 2, 3, 4, 5 Điều 10 Nghị định số 207/2025/NĐ-CP. - Các văn bằng, chứng nhận đào tạo về kỹ năng lâm sàng thụ tinh trong ống nghiệm và văn bằng hoặc chứng nhận đào tạo về kỹ năng thực hành trong Lab thụ tinh trong ống nghiệm kèm theo xác nhận đã trực tiếp thực hiện ít nhất 20 chu kỳ điều trị vô sinh bằng kỹ thuật thụ tinh trong ống nghiệm do cơ sở khám bệnh, chữa bệnh theo quy định tại khoản 5 Điều 10 Nghị định số 207/2025/NĐ-CP cấp theo mẫu quy định tại Phụ lục I ban hành kèm theo Nghị định số 207/2025/NĐ-CP.",
+        "quantity": "1 bản chính, 0 bản sao",
+        "notes": [],
+        "group": "Trường hợp 2: Trường hợp thay đổi quy mô hoạt động, phạm vi hoạt động chuyên môn hoặc bổ sung, giảm bớt danh mục kỹ thuật",
+        "attachment_path": null
+      },
+      {
+        "name": "Tài liệu minh chứng 02 năm gần nhất tính đến thời điểm nộp hồ sơ phải thực hiện được tối thiểu là 500 chu kỳ thụ tinh trong ống nghiệm mỗi năm; - Hồ sơ người tư vấn về y tế là bác sĩ chuyên khoa phụ sản; - Hồ sơ người tư vấn về tâm lý có trình độ đại học chuyên khoa tâm lý trở lên hoặc bác sĩ có chứng chỉ đào tạo về lĩnh vực tâm lý; - Hồ sơ người tư vấn về pháp lý có trình độ cử nhân luật trở lên. Người tư vấn về tâm lý, tư vấn pháp lý là nhân sự của cơ sở khám bệnh, chữa bệnh hoặc là nhân sự hợp tác theo quy định của pháp luật.",
+        "quantity": "1 bản chính, 0 bản sao",
+        "notes": [],
+        "group": "Trường hợp 2: Trường hợp thay đổi quy mô hoạt động, phạm vi hoạt động chuyên môn hoặc bổ sung, giảm bớt danh mục kỹ thuật",
+        "attachment_path": null
+      }
+    ],
+    "conditional": [],
+    "forms": [
+      {
+        "name": "Đơn theo Mẫu 02 Phụ lục II ban hành kèm theo Nghị định số 96/2023/NĐ-CP",
+        "attachment_label": "Mẫu 02.docx",
+        "attachment_path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/1_012280/M%E1%BA%ABu%2002.docx"
+      },
+      {
+        "name": "Bản kê khai cơ sở vật chất, thiết bị y tế và hồ sơ nhân sự tương ứng với quy mô hoặc phạm vi hoạt động chuyên môn hoặc danh mục kỹ thuật dự kiến thay đổi và các tài liệu minh chứng đáp ứng việc thay đổi",
+        "attachment_label": "Mẫu 08.docx",
+        "attachment_path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/1_012280/M%E1%BA%ABu%2008.docx"
+      },
+      {
+        "name": "Đơn theo Mẫu 02 Phụ lục II ban hành kèm theo Nghị định số 96/2023/NĐ-CP",
+        "attachment_label": "Mẫu 02.docx",
+        "attachment_path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/1_012280/M%E1%BA%ABu%2002.docx"
+      }
+    ],
+    "presented": [],
+    "notes": [],
+    "summary": [
+      {
+        "group": "Trường hợp 1: Trường hợp thay đổi tên, địa chỉ (không thay đổi địa điểm), thời gian làm việc",
+        "name": "Đơn theo Mẫu 02 Phụ lục II ban hành kèm theo Nghị định số 96/2023/NĐ-CP",
+        "quantity": "1 bản chính, 0 bản sao",
+        "notes": [],
+        "attachment_path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/1_012280/M%E1%BA%ABu%2002.docx"
+      },
+      {
+        "group": "Trường hợp 1: Trường hợp thay đổi tên, địa chỉ (không thay đổi địa điểm), thời gian làm việc",
+        "name": "Các giấy tờ quy định tại điểm b khoản 3 Điều 54 Luật khám bệnh, chữa bệnh năm 2023.",
+        "quantity": "1 bản chính, 1 bản sao",
+        "notes": [],
+        "attachment_path": null
+      },
+      {
+        "group": "Trường hợp 2: Trường hợp thay đổi quy mô hoạt động, phạm vi hoạt động chuyên môn hoặc bổ sung, giảm bớt danh mục kỹ thuật",
+        "name": "Bản kê khai cơ sở vật chất, thiết bị y tế và hồ sơ nhân sự tương ứng với quy mô hoặc phạm vi hoạt động chuyên môn hoặc danh mục kỹ thuật dự kiến thay đổi và các tài liệu minh chứng đáp ứng việc thay đổi",
+        "quantity": "1 bản chính, 0 bản sao",
+        "notes": [],
+        "attachment_path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/1_012280/M%E1%BA%ABu%2008.docx"
+      },
+      {
+        "group": "Trường hợp 2: Trường hợp thay đổi quy mô hoạt động, phạm vi hoạt động chuyên môn hoặc bổ sung, giảm bớt danh mục kỹ thuật",
+        "name": "Đơn theo Mẫu 02 Phụ lục II ban hành kèm theo Nghị định số 96/2023/NĐ-CP",
+        "quantity": "1 bản chính, 0 bản sao",
+        "notes": [],
+        "attachment_path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/1_012280/M%E1%BA%ABu%2002.docx"
+      },
+      {
+        "group": "Trường hợp 2: Trường hợp thay đổi quy mô hoạt động, phạm vi hoạt động chuyên môn hoặc bổ sung, giảm bớt danh mục kỹ thuật",
+        "name": "Bản gốc giấy phép hoạt động",
+        "quantity": "1 bản chính, 0 bản sao",
+        "notes": [],
+        "attachment_path": null
+      },
+      {
+        "group": "Trường hợp 2: Trường hợp thay đổi quy mô hoạt động, phạm vi hoạt động chuyên môn hoặc bổ sung, giảm bớt danh mục kỹ thuật",
+        "name": "Bản kê khai cơ sở vật chất, thiết bị y tế, tổ chức và hồ sơ nhân sự đáp ứng các yêu cầu tại khoản 2, 3, 4, 5 Điều 10 Nghị định số 207/2025/NĐ-CP. - Các văn bằng, chứng nhận đào tạo về kỹ năng lâm sàng thụ tinh trong ống nghiệm và văn bằng hoặc chứng nhận đào tạo về kỹ năng thực hành trong Lab thụ tinh trong ống nghiệm kèm theo xác nhận đã trực tiếp thực hiện ít nhất 20 chu kỳ điều trị vô sinh bằng kỹ thuật thụ tinh trong ống nghiệm do cơ sở khám bệnh, chữa bệnh theo quy định tại khoản 5 Điều 10 Nghị định số 207/2025/NĐ-CP cấp theo mẫu quy định tại Phụ lục I ban hành kèm theo Nghị định số 207/2025/NĐ-CP.",
+        "quantity": "1 bản chính, 0 bản sao",
+        "notes": [],
+        "attachment_path": null
+      },
+      {
+        "group": "Trường hợp 2: Trường hợp thay đổi quy mô hoạt động, phạm vi hoạt động chuyên môn hoặc bổ sung, giảm bớt danh mục kỹ thuật",
+        "name": "Tài liệu minh chứng 02 năm gần nhất tính đến thời điểm nộp hồ sơ phải thực hiện được tối thiểu là 500 chu kỳ thụ tinh trong ống nghiệm mỗi năm; - Hồ sơ người tư vấn về y tế là bác sĩ chuyên khoa phụ sản; - Hồ sơ người tư vấn về tâm lý có trình độ đại học chuyên khoa tâm lý trở lên hoặc bác sĩ có chứng chỉ đào tạo về lĩnh vực tâm lý; - Hồ sơ người tư vấn về pháp lý có trình độ cử nhân luật trở lên. Người tư vấn về tâm lý, tư vấn pháp lý là nhân sự của cơ sở khám bệnh, chữa bệnh hoặc là nhân sự hợp tác theo quy định của pháp luật.",
+        "quantity": "1 bản chính, 0 bản sao",
+        "notes": [],
+        "attachment_path": null
+      },
+      {
+        "group": null,
+        "name": "Đơn theo Mẫu 02 Phụ lục II ban hành kèm theo Nghị định số 96/2023/NĐ-CP",
+        "quantity": null,
+        "notes": null,
+        "attachment_path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/1_012280/M%E1%BA%ABu%2002.docx"
+      },
+      {
+        "group": null,
+        "name": "Bản kê khai cơ sở vật chất, thiết bị y tế và hồ sơ nhân sự tương ứng với quy mô hoặc phạm vi hoạt động chuyên môn hoặc danh mục kỹ thuật dự kiến thay đổi và các tài liệu minh chứng đáp ứng việc thay đổi",
+        "quantity": null,
+        "notes": null,
+        "attachment_path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/1_012280/M%E1%BA%ABu%2008.docx"
+      },
+      {
+        "group": null,
+        "name": "Đơn theo Mẫu 02 Phụ lục II ban hành kèm theo Nghị định số 96/2023/NĐ-CP",
+        "quantity": null,
+        "notes": null,
+        "attachment_path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/1_012280/M%E1%BA%ABu%2002.docx"
+      }
+    ]
+  },
+  "steps": [
+    {
+      "order": 1,
+      "title": "Bước 1",
+      "description": "1. **1. Trường hợp 1: Trường hợp thay đổi thời gian làm việc hoặc thay đổi tên, địa chỉ của cơ sở khám bệnh, chữa bệnh nhưng không thay đổi địa điểm (Điều 65 Nghị định số 96/2023/NĐ-CP).**",
+      "example": null
+    },
+    {
+      "order": 2,
+      "title": "Bước 1:",
+      "description": "Bước 1: Nộp 01 bộ hồ sơ đề nghị thay đổi tên, địa chỉ, thời gian làm việc của cơ sở khám bệnh, chữa bệnh theo quy định tại khoản 1 Điều 64 Nghị định số 96/2023/NĐ-CP và nộp phí theo quy định của pháp luật về phí, lệ phí cho cơ quan cấp giấy phép hoạt động cụ thể như sau: 1. Bộ Y tế:",
+      "example": null
+    },
+    {
+      "order": 3,
+      "title": "a)",
+      "description": "a) Cục Quản lý Khám, chữa bệnh: đối với các cơ sở khám bệnh, chữa bệnh Nhà nước trực thuộc Bộ Y tế và bệnh viện tư nhân trừ các trường hợp thuộc điểm b mục này;",
+      "example": null
+    },
+    {
+      "order": 4,
+      "title": "b)",
+      "description": "b) Cục Quản lý Y, Dược cổ truyền: đối với các cơ sở khám bệnh, chữa bệnh y học cổ truyền Nhà nước trực thuộc Bộ Y tế và bệnh viện y học cổ truyền tư nhân. 2. Cơ quan chuyên môn về y tế thuộc Ủy ban nhân dân cấp tỉnh:",
+      "example": null
+    },
+    {
+      "order": 5,
+      "title": "a)",
+      "description": "a) Các cơ sở khám bệnh, chữa bệnh trên địa bàn quản lý của Cơ quan chuyên môn về y tế thuộc Ủy ban nhân dân cấp tỉnh (bao gồm cả các cơ sở khám bệnh, chữa bệnh thuộc Bộ, ngành), trừ cơ sở khám bệnh, chữa bệnh trực thuộc Bộ Y tế và các cơ sở khám bệnh, chữa bệnh thuộc thẩm quyền quản lý của Bộ Quốc phòng, Bộ Công an;",
+      "example": null
+    },
+    {
+      "order": 6,
+      "title": "b)",
+      "description": "b) Cơ sở khám bệnh, chữa bệnh tư nhân trên địa bàn quản lý (trừ bệnh viện tư nhân).",
+      "example": null
+    },
+    {
+      "order": 7,
+      "title": "Bước 2:",
+      "description": "Bước 2: Sau khi nhận hồ sơ, cơ quan cấp giấy phép hoạt động trả cho cơ sở đề nghị phiếu tiếp nhận hồ sơ theo Mẫu 02 Phụ lục I ban hành kèm theo Nghị định số 96/2023/NĐ-CP.",
+      "example": null
+    },
+    {
+      "order": 8,
+      "title": "Bước 3:",
+      "description": "Bước 3: 1. Trường hợp không có yêu cầu sửa đổi, bổ sung hồ sơ, cơ quan cấp giấy phép hoạt động điều chỉnh giấy phép hoạt động trong thời hạn 20 ngày, kể từ ngày ghi trên phiếu tiếp nhận hồ sơ. 2. Trường hợp có yêu cầu sửa đổi, bổ sung hồ sơ: - Trong thời hạn 05 ngày làm việc, kể từ ngày ghi trên phiếu tiếp nhận hồ sơ, cơ quan cấp giấy phép hoạt động có văn bản gửi cơ sở đề nghị, trong đó phải nêu cụ thể các tài liệu, nội dung cần sửa đổi, bổ sung. Trong thời hạn 06 tháng, kể từ ngày cấp giấy phép hoạt động hồ sơ có văn bản thông báo sửa đổi, bổ sung, cơ sở đề nghị phải nộp hồ sơ sửa đổi, bổ sung theo yêu cầu. Sau thời hạn trên, cơ sở đề nghị không sửa đổi, bổ sung thì hồ sơ đã nộp không còn giá trị. - Sau khi nhận hồ sơ sửa đổi, bổ sung, cơ quan cấp giấy phép hoạt động trả cho cơ sở đề nghị phiếu tiếp nhận hồ sơ theo Mẫu 02 Phụ lục I ban hành kèm theo Nghị định số 96/2023/NĐ-CP đối với hồ sơ sửa đổi, bổ sung: + Trường hợp hồ sơ sửa đổi, bổ sung không đáp ứng yêu cầu, thực hiện lại theo trình tự tại mục này. Trong thời hạn 06 tháng, kể từ ngày cơ quan cấp giấy phép hoạt động có văn bản thông báo sửa đổi, bổ sung, cơ sở đề nghị phải nộp hồ sơ sửa đổi, bổ sung theo yêu cầu. Sau thời hạn trên, cơ sở đề nghị không sửa đổi, bổ sung hoặc sau 12 tháng, kể từ ngày nộp hồ sơ lần đầu mà hồ sơ bổ sung không đáp ứng yêu cầu thì hồ sơ đã nộp không còn giá trị. + Trường hợp không có yêu cầu sửa đổi, bổ sung đối với hồ sơ sửa đổi, bổ sung, cơ quan cấp giấy phép hoạt động thực hiện theo trình tự tại mục 1 của bước này.",
+      "example": "20 ngày"
+    },
+    {
+      "order": 9,
+      "title": "Bước 4:",
+      "description": "Bước 4: Trong thời hạn 05 ngày làm việc, kể từ ngày cấp giấy phép hoạt động, Cơ quan tiếp nhận hồ sơ công bố, cập nhật trên cổng thông tin điện tử của mình và trên Hệ thống thông tin về quản lý hoạt động khám bệnh, chữa bệnh các thông tin liên quan đến nội dung điều chỉnh. 2. **2. Trường hợp 2: Trường hợp thay đổi quy mô hoạt động, phạm vi hoạt động chuyên môn hoặc bổ sung, giảm bớt danh mục kỹ thuật của cơ sở khám bệnh, chữa bệnh.**",
+      "example": "05 ngày làm việc"
+    },
+    {
+      "order": 10,
+      "title": "Bước 1:",
+      "description": "Bước 1: Nộp 01 bộ hồ sơ và nộp phí theo quy định của pháp luật về phí, lệ phí về: 1. Bộ Y tế:",
+      "example": null
+    },
+    {
+      "order": 11,
+      "title": "a)",
+      "description": "a) Cục Quản lý Khám, chữa bệnh: đối với các cơ sở khám bệnh, chữa bệnh Nhà nước trực thuộc Bộ Y tế trừ các trường hợp thuộc điểm b, c mục này;",
+      "example": null
+    },
+    {
+      "order": 12,
+      "title": "b)",
+      "description": "b) Cục Quản lý Y, Dược cổ truyền: đối với các cơ sở khám bệnh, chữa bệnh y học cổ truyền Nhà nước trực thuộc Bộ Y tế.",
+      "example": null
+    },
+    {
+      "order": 13,
+      "title": "c)",
+      "description": "c) Cục Bà mẹ và Trẻ em: Đối với cơ sở khám bệnh, chữa bệnh nhà nước trực thuộc Bộ Y tế đề nghị cho phép thực hiện các danh mục kỹ thuật về hỗ trợ sinh sản, mang thai hộ vì mục đích nhân đạo. 2. Cơ quan chuyên môn về y tế thuộc Ủy ban nhân dân cấp tỉnh:",
+      "example": null
+    },
+    {
+      "order": 14,
+      "title": "a)",
+      "description": "a) Các cơ sở khám bệnh, chữa bệnh trên địa bàn quản lý của Cơ quan chuyên môn về y tế thuộc Ủy ban nhân dân cấp tỉnh (bao gồm cả các cơ sở khám bệnh, chữa bệnh thuộc Bộ, ngành), trừ cơ sở khám bệnh, chữa bệnh trực thuộc Bộ Y tế và các cơ sở khám bệnh, chữa bệnh thuộc thẩm quyền quản lý của Bộ Quốc phòng, Bộ Công an;",
+      "example": null
+    },
+    {
+      "order": 15,
+      "title": "b)",
+      "description": "b) Cơ sở khám bệnh, chữa bệnh tư nhân trên địa bàn quản lý (bao gồm cả bệnh viện tư nhân).",
+      "example": null
+    },
+    {
+      "order": 16,
+      "title": "Bước 2:",
+      "description": "Bước 2: Sau khi nhận hồ sơ, Cơ quan tiếp nhận hồ sơ cấp phiếu tiếp nhận hồ sơ cho cơ sở đề nghị.",
+      "example": null
+    },
+    {
+      "order": 17,
+      "title": "Bước 3:",
+      "description": "Bước 3:",
+      "example": null
+    },
+    {
+      "order": 18,
+      "title": "a)",
+      "description": "a) Trường hợp có yêu cầu sửa đổi, bổ sung hồ sơ, trong thời hạn 07 ngày làm việc, kể từ ngày ghi trên phiếu tiếp nhận hồ sơ, Cơ quan tiếp nhận hồ sơ phải có văn bản gửi cơ sở đề nghị, trong đó phải nêu cụ thể các tài liệu, nội dung cần sửa đổi, bổ sung. Trong thời hạn 06 tháng, kể từ ngày Cơ quan tiếp nhận hồ sơ có văn bản thông báo sửa đổi, bổ sung, cơ sở đề nghị phải nộp hồ sơ sửa đổi, bổ sung theo yêu cầu. Sau thời hạn trên, cơ sở đề nghị không sửa đổi, bổ sung thì hồ sơ đã nộp không còn giá trị. Sau khi nhận hồ sơ sửa đổi, bổ sung, Cơ quan tiếp nhận hồ sơ trả cho cơ sở đề nghị phiếu tiếp nhận hồ sơ sửa đổi, bổ sung: Trường hợp hồ sơ sửa đổi, bổ sung không đáp ứng yêu cầu, thực hiện lại theo trình tự tại mục này. Trong thời hạn 06 tháng, kể từ ngày Cơ quan tiếp nhận hồ sơ có văn bản thông báo sửa đổi, bổ sung, cơ sở đề nghị phải nộp hồ sơ sửa đổi, bổ sung theo yêu cầu. Sau thời hạn trên, cơ sở đề nghị không sửa đổi, bổ sung hoặc sau 12 tháng, kể từ ngày nộp hồ sơ lần đầu mà hồ sơ bổ sung không đáp ứng yêu cầu thì hồ sơ đã nộp không còn giá trị.",
+      "example": "07 ngày làm việc"
+    },
+    {
+      "order": 19,
+      "title": "b)",
+      "description": "b) Trường hợp không có yêu cầu sửa đổi, bổ sung hồ sơ hoặc hồ sơ đã được hoàn thiện, Cơ quan tiếp nhận hồ sơ: - Ban hành văn bản cho phép thay đổi quy mô hoạt động, phạm vi hoạt động chuyên môn hoặc bổ sung, giảm bớt danh mục kỹ thuật trong thời hạn 20 ngày, kể từ ngày ghi trên phiếu tiếp nhận hồ sơ nếu thuộc trường hợp không phải tổ chức thẩm định thực tế tại cơ sở. - Cơ quan tiếp nhận hồ sơ tổ chức thẩm định tại cơ sở đề nghị và lập biên bản thẩm định trong thời hạn 60 ngày, kể từ ngày ghi trên phiếu tiếp nhận hồ sơ đối với trường hợp phải tổ chức thẩm định thực tế tại cơ sở, biên bản thẩm định phải nêu rõ yêu cầu sửa đổi, bổ sung (nếu có).",
+      "example": "20 ngày"
+    },
+    {
+      "order": 20,
+      "title": "Bước 4:",
+      "description": "Bước 4: Sau khi thẩm định thực tế tại cơ sở, Cơ quan tiếp nhận hồ sơ có trách nhiệm:",
+      "example": null
+    },
+    {
+      "order": 21,
+      "title": "a)",
+      "description": "a) Ban hành văn bản cho phép thay đổi quy mô hoạt động, phạm vi hoạt động chuyên môn hoặc bổ sung, giảm bớt danh mục kỹ thuật trong thời hạn 10 ngày làm việc, kể từ ngày ban hành biên bản thẩm định đối với trường hợp không có yêu cầu sửa đổi, bổ sung;",
+      "example": "10 ngày làm việc"
+    },
+    {
+      "order": 22,
+      "title": "b)",
+      "description": "b) Ban hành văn bản thông báo về các nội dung cần khắc phục, sửa chữa trong thời hạn 05 ngày làm việc, kể từ ngày ban hành biên bản thẩm định đối với trường hợp có yêu cầu sửa đổi, bổ sung. Trong thời hạn 06 tháng, kể từ ngày Cơ quan tiếp nhận hồ sơ có văn bản thông báo về các nội dung cần sửa đổi, bổ sung mà cơ sở đề nghị không hoàn thành việc sửa đổi, bổ sung thì hồ sơ đã nộp không còn giá trị.",
+      "example": "05 ngày làm việc"
+    },
+    {
+      "order": 23,
+      "title": "Bước 5:",
+      "description": "Bước 5: Trong thời hạn 10 ngày làm việc, kể từ ngày nhận được văn bản thông báo và tài liệu chứng minh đã hoàn thành việc sửa đổi, bổ sung của cơ sở đề nghị, Cơ quan tiếp nhận hồ sơ:",
+      "example": "10 ngày làm việc"
+    },
+    {
+      "order": 24,
+      "title": "a)",
+      "description": "a) Ban hành văn bản cho phép thay đổi quy mô hoạt động, phạm vi hoạt động chuyên môn hoặc bổ sung, giảm bớt danh mục kỹ thuật đối với trường hợp không cần kiểm tra thực tế việc sửa đổi, bổ sung của cơ sở đề nghị;",
+      "example": null
+    },
+    {
+      "order": 25,
+      "title": "b)",
+      "description": "b) Tiến hành kiểm tra thực tế việc sửa đổi, bổ sung của cơ sở đề nghị trong trường hợp phải kiểm tra thực tế: - Ban hành văn bản cho phép thay đổi quy mô hoạt động, phạm vi hoạt động chuyên môn hoặc bổ sung, giảm bớt danh mục kỹ thuật đối với trường hợp cơ sở đề nghị đã hoàn thành việc sửa đổi, bổ sung; - Có văn bản trả lời và nêu rõ lý do không cho phép thay đổi quy mô hoạt động, phạm vi hoạt động chuyên môn hoặc bổ sung, giảm bớt danh mục kỹ thuật nếu cơ sở đề nghị đã hoàn thành việc sửa đổi, bổ sung.",
+      "example": null
+    },
+    {
+      "order": 26,
+      "title": "Bước 6:",
+      "description": "Bước 6: Trong thời hạn 05 ngày làm việc, kể từ ngày cho phép bổ sung danh mục kỹ thuật, Cơ quan tiếp nhận hồ sơ công bố, cập nhật trên cổng thông tin điện tử hoặc trang tin điện tử của mình và trên Hệ thống thông tin về quản lý hoạt động khám bệnh, chữa bệnh các thông tin liên quan đến nội dung điều chỉnh. 3. **3. Trường hợp 3: Trường hợp bổ sung các kỹ thuật thuộc danh mục kỹ thuật loại đặc biệt (Khoản 10 Điều 66 Nghị định số 96/2023/NĐ-CP)**",
+      "example": "05 ngày làm việc"
+    },
+    {
+      "order": 27,
+      "title": "Bước 1:",
+      "description": "Bước 1: Cơ sở khám bệnh, chữa bệnh nộp 01 bộ hồ sơ theo quy định tại khoản 2 Điều 64 Nghị định số 96/2023/NĐ-CP để đề nghị xem xét khả năng thực hiện kỹ thuật thuộc danh mục kỹ thuật loại đặc biệt về: Bộ Y tế:",
+      "example": null
+    },
+    {
+      "order": 28,
+      "title": "a)",
+      "description": "a) Cục Quản lý Khám, chữa bệnh: đối với các cơ sở khám bệnh, chữa bệnh đề nghị bổ sung danh mục kỹ thuật loại đặc biệt trừ các trường hợp thuộc điểm b, c mục này;",
+      "example": null
+    },
+    {
+      "order": 29,
+      "title": "b)",
+      "description": "b) Cục Quản lý Y, Dược cổ truyền: đối với các cơ sở khám bệnh, chữa bệnh y học cổ truyền đề nghị bổ sung danh mục kỹ thuật loại đặc biệt thuộc danh mục kỹ thuật y học cổ truyền.",
+      "example": null
+    },
+    {
+      "order": 30,
+      "title": "c)",
+      "description": "c) Cục Bà mẹ và Trẻ em: Đối với cơ sở khám bệnh, chữa bệnh nhà nước trực thuộc Bộ Y tế đề nghị cho phép thực hiện các danh mục kỹ thuật loại đặc biệt về phụ sản - sơ sinh để thực hiện hỗ trợ sinh sản, mang thai hộ vì mục đích nhân đạo.",
+      "example": null
+    },
+    {
+      "order": 31,
+      "title": "Bước 2:",
+      "description": "Bước 2: Trong thời hạn 05 ngày làm việc, kể từ ngày nhận hồ sơ, Bộ Y tế kiểm tra đánh giá mức độ, khả năng thực hiện các kỹ thuật loại đặc biệt này của cơ sở khám bệnh, chữa bệnh để xác định phải thực hiện thí điểm hay không hoặc cơ sở khám bệnh, chữa bệnh có đủ điều kiện thực hiện thí điểm hay không.",
+      "example": "05 ngày làm việc"
+    },
+    {
+      "order": 32,
+      "title": "Bước 3:",
+      "description": "Bước 3: 1. Trường hợp cần phải thực hiện thí điểm kỹ thuật loại đặc biệt cần thực hiện theo quy trình quy định tại Điều 97 Nghị định số 96/2023/NĐ-CP. Sau khi kết thúc triển khai thí điểm kỹ thuật loại đặc biệt và đã có báo cáo bằng văn bản kết quả thực hiện thí điểm trong đó đề xuất việc triển khai chính thức kỹ thuật loại đặc biệt, cần phải thực hiện các nội dung sau: - Cơ sở khám bệnh, chữa bệnh nộp 01 bộ hồ sơ trong đó có báo cáo kết quả áp dụng thí điểm kỹ thuật loại đặc biệt theo quy định tại điểm c khoản 10 Điều 66 Nghị định số 96/2023/NĐ-CP và quy trình thực hiện kỹ thuật loại đặc biệt do cơ sở khám bệnh, chữa bệnh đề xuất; - Trong thời hạn 15 ngày kể từ ngày nhận đủ hồ sơ, Bộ Y tế tổ chức thẩm định kết quả triển khai thí điểm và quy trình kỹ thuật do cơ sở khám bệnh, chữa bệnh đề xuất; - Trong thời hạn 05 ngày làm việc, kể từ ngày có biên bản thẩm định kết quả triển khai thí điểm và quy trình kỹ thuật, Bộ Y tế quyết định cho phép cơ sở khám bệnh, chữa bệnh được triển khai áp dụng chính thức kỹ thuật loại đặc biệt. Trường hợp không đồng ý phải có văn bản trả lời và nêu rõ lý do; - Cơ sở khám bệnh, chữa bệnh thực hiện trình tự các bước theo trường hợp 2 để thực hiện bổ sung kỹ thuật loại đặc biệt đã được cho phép triển khai áp dụng chính thức vào phạm vi hoạt động chuyên môn. 2. Trường hợp không cần phải thực hiện thí điểm kỹ thuật loại đặc biệt cần thực hiện các thủ tục sau: - Trong thời gian 05 ngày làm việc, Bộ Y tế có quyết định cho phép cơ sở khám bệnh, chữa bệnh được áp dụng chính thức kỹ thuật loại đặc biệt mà không cần phải thực hiện thí điểm. Trường hợp không đồng ý phải có văn bản trả lời và nêu rõ lý do; - Cơ sở khám bệnh, chữa bệnh thực hiện theo thẩm quyền và trình tự các bước như trường hợp 2 để thực hiện bổ sung kỹ thuật loại đặc biệt đã được cho phép triển khai áp dụng chính thức vào phạm vi hoạt động chuyên môn.",
+      "example": "15 ngày"
+    }
+  ],
+  "input_fields": [
+    {
+      "field": "request_subject",
+      "label": "Đối tượng làm thủ tục",
+      "type": "string",
+      "required": true
+    },
+    {
+      "field": "insurance_or_medical_need",
+      "label": "Nhu cầu bảo hiểm hoặc y tế",
+      "type": "string",
+      "required": true
+    },
+    {
+      "field": "submission_channel_preference",
+      "label": "Kênh nộp dự kiến",
+      "type": "enum",
+      "required": false,
+      "options": [
+        "Trực tiếp",
+        "Trực tuyến",
+        "Dịch vụ bưu chính"
+      ]
+    },
+    {
+      "field": "has_insurance_number",
+      "label": "Đã có mã BHXH/BHYT",
+      "type": "boolean",
+      "required": false
+    }
+  ],
+  "validation_rules": [
+    {
+      "id": "required-1",
+      "severity": "error",
+      "field": "request_subject",
+      "rule": "Trường bắt buộc phải có dữ liệu hợp lệ trước khi nộp.",
+      "message": "Thiếu trường bắt buộc: Đối tượng làm thủ tục."
+    },
+    {
+      "id": "required-2",
+      "severity": "error",
+      "field": "insurance_or_medical_need",
+      "rule": "Trường bắt buộc phải có dữ liệu hợp lệ trước khi nộp.",
+      "message": "Thiếu trường bắt buộc: Nhu cầu bảo hiểm hoặc y tế."
+    },
+    {
+      "id": "hint-1",
+      "severity": "warning",
+      "field": "general",
+      "rule": "Nên xác định trước kênh nộp hồ sơ để biết có cần bản giấy, bản điện tử hay xuất trình trực tiếp.",
+      "message": "Nên xác định trước kênh nộp hồ sơ để biết có cần bản giấy, bản điện tử hay xuất trình trực tiếp."
+    },
+    {
+      "id": "hint-2",
+      "severity": "warning",
+      "field": "general",
+      "rule": "Có mẫu biểu đính kèm, nên kiểm tra đúng biểu mẫu trước khi nộp.",
+      "message": "Có mẫu biểu đính kèm, nên kiểm tra đúng biểu mẫu trước khi nộp."
+    },
+    {
+      "id": "hint-3",
+      "severity": "warning",
+      "field": "general",
+      "rule": "Nên xác định đúng nhóm đối tượng, mã số bảo hiểm và quyền lợi áp dụng trước khi nộp.",
+      "message": "Nên xác định đúng nhóm đối tượng, mã số bảo hiểm và quyền lợi áp dụng trước khi nộp."
+    }
+  ],
+  "common_errors": [
+    {
+      "field": "general",
+      "issue": "Điền sai mẫu tờ khai hoặc chọn sai biểu mẫu đi kèm.",
+      "fix": "Nên xác định trước kênh nộp hồ sơ để biết có cần bản giấy, bản điện tử hay xuất trình trực tiếp."
+    },
+    {
+      "field": "general",
+      "issue": "Thiếu minh chứng học tập, văn bằng hoặc xác nhận từ cơ sở đào tạo.",
+      "fix": "Nên xác định trước kênh nộp hồ sơ để biết có cần bản giấy, bản điện tử hay xuất trình trực tiếp."
+    }
+  ],
+  "clarifying_questions": [
+    {
+      "id": "clarify_1",
+      "question": "Bạn đang muốn đăng ký, điều chỉnh hay xác nhận quyền lợi y tế hoặc bảo hiểm nào?",
+      "purpose": "workflow_intake"
+    },
+    {
+      "id": "clarify_2",
+      "question": "Bạn đã có mã BHXH/BHYT hoặc thông tin đơn vị tiếp nhận liên quan chưa?",
+      "purpose": "workflow_intake"
+    }
+  ],
+  "legal_basis": [
+    {
+      "title": "Thông tư số 57/2024/TT-BYT ngày 31/12/2024 của Bộ Y tế quy định việc phân cấp, giải quyết thủ tục hành chính trong lĩnh vực khám bệnh, chữa bệnh thuộc thẩm quyền quản lý của Bộ Y tế",
+      "code": "57/2024/TT-BYT"
+    },
+    {
+      "title": "Nghị định số 42/2025/NĐ-CP của Chính phủ: Quy định chức năng, nhiệm vụ, quyền hạn và cơ cấu tổ chức của Bộ Y tế",
+      "code": "42/2025/NĐ-CP"
+    },
+    {
+      "title": "Luật Khám, chữa bệnh 15/2023/QH15 (09/1/2023)",
+      "code": "15/2023/QH15"
+    },
+    {
+      "title": "Nghị định số 96/2023/NĐ-CP ngày 30 tháng 12 năm 2023 của Chính phủ quy định chi tiết một số điều của Luật Khám bệnh, chữa bệnh.",
+      "code": "96/2023/NĐ-CP"
+    },
+    {
+      "title": "Thông tư số 59/2023/TT- BTC ngày 30/8/2023 của Bộ trưởng Bộ Tài chính về quy định mức thu, chế độ thu, nộp, quản lý và sử dụng phí trong lĩnh vực y tế",
+      "code": "59/2023/TT- BTC"
+    },
+    {
+      "title": "Thông tư quy định mức thu, miễn một số khoản phí, lệ phí nhằm hỗ trợ cho doanh nghiệp, người dân",
+      "code": "64/2025/TT-BTC"
+    },
+    {
+      "title": "NGHỊ ĐỊNH QUY ĐỊNH VỀ PHÂN QUYỀN, PHÂN CẤP TRONG LĨNH VỰC Y TẾ",
+      "code": "148/2025/NĐ-CP"
+    },
+    {
+      "title": "quy định việc phân cấp giải quyết thủ tục hành chính đối với việc bổ sung kỹ thuật thuộc danh mục kỹ thuật loại đặc biệt",
+      "code": "04/2026/TT-BYT"
+    },
+    {
+      "title": "Nghị định số 207/2025/NĐ-CP của Chính phủ: Quy định về sinh con bằng kỹ thuật hỗ trợ sinh sản và điều kiện mang thai hộ vì mục đích nhân đạo",
+      "code": "207/2025/NĐ-CP"
+    },
+    {
+      "title": "sửa đổi, bổ sung, bãi bỏ một số điều của Thông tư 57/2024/TT-BYT quy định việc phân cấp giải quyết thủ tục hành chính trong lĩnh vực khám bệnh, chữa bệnh thuộc thẩm quyền quản lý của Bộ Y tế",
+      "code": "02/2026/TT-BYT"
+    }
+  ],
+  "legal_bases": [
+    {
+      "title": "Thông tư số 57/2024/TT-BYT ngày 31/12/2024 của Bộ Y tế quy định việc phân cấp, giải quyết thủ tục hành chính trong lĩnh vực khám bệnh, chữa bệnh thuộc thẩm quyền quản lý của Bộ Y tế",
+      "code": "57/2024/TT-BYT"
+    },
+    {
+      "title": "Nghị định số 42/2025/NĐ-CP của Chính phủ: Quy định chức năng, nhiệm vụ, quyền hạn và cơ cấu tổ chức của Bộ Y tế",
+      "code": "42/2025/NĐ-CP"
+    },
+    {
+      "title": "Luật Khám, chữa bệnh 15/2023/QH15 (09/1/2023)",
+      "code": "15/2023/QH15"
+    },
+    {
+      "title": "Nghị định số 96/2023/NĐ-CP ngày 30 tháng 12 năm 2023 của Chính phủ quy định chi tiết một số điều của Luật Khám bệnh, chữa bệnh.",
+      "code": "96/2023/NĐ-CP"
+    },
+    {
+      "title": "Thông tư số 59/2023/TT- BTC ngày 30/8/2023 của Bộ trưởng Bộ Tài chính về quy định mức thu, chế độ thu, nộp, quản lý và sử dụng phí trong lĩnh vực y tế",
+      "code": "59/2023/TT- BTC"
+    },
+    {
+      "title": "Thông tư quy định mức thu, miễn một số khoản phí, lệ phí nhằm hỗ trợ cho doanh nghiệp, người dân",
+      "code": "64/2025/TT-BTC"
+    },
+    {
+      "title": "NGHỊ ĐỊNH QUY ĐỊNH VỀ PHÂN QUYỀN, PHÂN CẤP TRONG LĨNH VỰC Y TẾ",
+      "code": "148/2025/NĐ-CP"
+    },
+    {
+      "title": "quy định việc phân cấp giải quyết thủ tục hành chính đối với việc bổ sung kỹ thuật thuộc danh mục kỹ thuật loại đặc biệt",
+      "code": "04/2026/TT-BYT"
+    },
+    {
+      "title": "Nghị định số 207/2025/NĐ-CP của Chính phủ: Quy định về sinh con bằng kỹ thuật hỗ trợ sinh sản và điều kiện mang thai hộ vì mục đích nhân đạo",
+      "code": "207/2025/NĐ-CP"
+    },
+    {
+      "title": "sửa đổi, bổ sung, bãi bỏ một số điều của Thông tư 57/2024/TT-BYT quy định việc phân cấp giải quyết thủ tục hành chính trong lĩnh vực khám bệnh, chữa bệnh thuộc thẩm quyền quản lý của Bộ Y tế",
+      "code": "02/2026/TT-BYT"
+    }
+  ],
+  "faq": [
+    {
+      "question": "Có thể nộp qua kênh nào?",
+      "answer": "Các kênh hiện có: Trực tiếp, Trực tuyến, Dịch vụ bưu chính."
+    },
+    {
+      "question": "Thời gian xử lý tham chiếu là bao lâu?",
+      "answer": "Thời gian xử lý tham chiếu hiện có là 20 ngày."
+    },
+    {
+      "question": "Kết quả chính của thủ tục là gì?",
+      "answer": "Kết quả chính được trích xuất là Văn bản cho phép."
+    }
+  ],
+  "guidance": {
+    "highlight_documents": [
+      {
+        "bucket": "required",
+        "name": "Đơn theo Mẫu 02 Phụ lục II ban hành kèm theo Nghị định số 96/2023/NĐ-CP",
+        "conditions": [],
+        "attachment_path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/1_012280/M%E1%BA%ABu%2002.docx"
+      },
+      {
+        "bucket": "required",
+        "name": "Các giấy tờ quy định tại điểm b khoản 3 Điều 54 Luật khám bệnh, chữa bệnh năm 2023.",
+        "conditions": [],
+        "attachment_path": null
+      },
+      {
+        "bucket": "required",
+        "name": "Bản kê khai cơ sở vật chất, thiết bị y tế và hồ sơ nhân sự tương ứng với quy mô hoặc phạm vi hoạt động chuyên môn hoặc danh mục kỹ thuật dự kiến thay đổi và các tài liệu minh chứng đáp ứng việc thay đổi",
+        "conditions": [],
+        "attachment_path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/1_012280/M%E1%BA%ABu%2008.docx"
+      },
+      {
+        "bucket": "required",
+        "name": "Đơn theo Mẫu 02 Phụ lục II ban hành kèm theo Nghị định số 96/2023/NĐ-CP",
+        "conditions": [],
+        "attachment_path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/1_012280/M%E1%BA%ABu%2002.docx"
+      },
+      {
+        "bucket": "required",
+        "name": "Bản gốc giấy phép hoạt động",
+        "conditions": [],
+        "attachment_path": null
+      },
+      {
+        "bucket": "required",
+        "name": "Bản kê khai cơ sở vật chất, thiết bị y tế, tổ chức và hồ sơ nhân sự đáp ứng các yêu cầu tại khoản 2, 3, 4, 5 Điều 10 Nghị định số 207/2025/NĐ-CP. - Các văn bằng, chứng nhận đào tạo về kỹ năng lâm sàng thụ tinh trong ống nghiệm và văn bằng hoặc chứng nhận đào tạo về kỹ năng thực hành trong Lab thụ tinh trong ống nghiệm kèm theo xác nhận đã trực tiếp thực hiện ít nhất 20 chu kỳ điều trị vô sinh bằng kỹ thuật thụ tinh trong ống nghiệm do cơ sở khám bệnh, chữa bệnh theo quy định tại khoản 5 Điều 10 Nghị định số 207/2025/NĐ-CP cấp theo mẫu quy định tại Phụ lục I ban hành kèm theo Nghị định số 207/2025/NĐ-CP.",
+        "conditions": [],
+        "attachment_path": null
+      }
+    ],
+    "special_cases": [
+      "Có thể cần xác minh hồ sơ học tập hoặc văn bằng"
+    ],
+    "common_errors": [
+      "Điền sai mẫu tờ khai hoặc chọn sai biểu mẫu đi kèm.",
+      "Thiếu minh chứng học tập, văn bằng hoặc xác nhận từ cơ sở đào tạo."
+    ],
+    "validation_hints": [
+      "Nên xác định trước kênh nộp hồ sơ để biết có cần bản giấy, bản điện tử hay xuất trình trực tiếp.",
+      "Có mẫu biểu đính kèm, nên kiểm tra đúng biểu mẫu trước khi nộp.",
+      "Nên xác định đúng nhóm đối tượng, mã số bảo hiểm và quyền lợi áp dụng trước khi nộp."
+    ]
+  },
+  "next_steps": {
+    "summary": "Nên xác định rõ đối tượng tham gia, quyền lợi hoặc nhu cầu điều chỉnh hồ sơ y tế trước khi nộp. Có thể chọn kênh nộp phù hợp: Trực tiếp, Trực tuyến, Dịch vụ bưu chính. Hiện có khoảng 7 mục giấy tờ cần theo dõi trong checklist.",
+    "time_badge": "20 ngày",
+    "result_label": "Văn bản cho phép",
+    "primary_channel": "in_person",
+    "channels": [
+      "in_person",
+      "online",
+      "postal"
+    ]
+  },
+  "notes": [],
+  "provenance": {
+    "pipeline": "raw->structured->normalized->enriched->ui_api_payload",
+    "normalizer_version": "0.2.0",
+    "enricher_version": "0.2.0",
+    "mapping_notes": "excluded_from_clean_workflow_dataset",
+    "supported_group": true
+  }
+}

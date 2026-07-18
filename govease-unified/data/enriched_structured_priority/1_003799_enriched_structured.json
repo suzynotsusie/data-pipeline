@@ -1,0 +1,106 @@
+{
+  "schema_version": "1.0",
+  "enricher_version": "0.2.0",
+  "source": {
+    "procedure_code": "1.003799",
+    "title": "Xét hưởng chế độ trợ cấp một lần đối với sĩ quan, hạ sĩ quan, cán bộ, chiến sĩ, công nhân viên Công an nhân dân trực tiếp tham gia kháng chiến chống Mỹ cứu nước ở chiến trường B, C, K trong khoảng thời gian từ ngày 20-7-1954 đến 30-4-1975, về gia đình từ ngày 31-12-1976 trở về trước, chưa được hưởng một trong các chế độ phục viên, xuất ngũ, thôi việc, bệnh binh, mất sức lao động hàng tháng và chế độ hưu trí hàng tháng, trước khi về gia đình thuộc biên chế Công an nhân dân (thực hiện tại cấp tỉnh)",
+    "group_key": "huu_tri",
+    "workflow_family": null,
+    "subflow": null
+  },
+  "experience": {
+    "entry_label": "Hỗ trợ chế độ hưu trí",
+    "overview_summary": "Thủ tục này thuộc nhóm hưu trí, thường dùng để xác định điều kiện nghỉ hưu, trợ cấp hoặc chế độ hưởng theo hồ sơ bảo hiểm xã hội. Kết quả thường nhận được là Quyết định hưởng chế độ. Thời gian xử lý tham khảo: theo thời hạn của cơ quan xử lý.",
+    "next_step_summary": "Nên rà trước quá trình đóng bảo hiểm, mốc tuổi và loại chế độ muốn hưởng trước khi nộp. Có thể chọn kênh nộp phù hợp: Trực tiếp. Hiện có khoảng 5 mục giấy tờ cần theo dõi trong checklist.",
+    "tone": "supportive_public_service"
+  },
+  "guidance": {
+    "highlight_documents": [
+      {
+        "bucket": "required",
+        "name": "Công văn đề nghị (mẫu 8A) kèm theo danh sách đối tượng chưa được hưởng chế độ chính sách (mẫu 9A)",
+        "conditions": [],
+        "attachment_path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/1_003799/47-Ma%CC%82%CC%83u%208A-Co%CC%82ng%20va%CC%86n%20%C4%91e%CC%82%CC%80%20nghi%CC%A3%20tro%CC%9B%CC%A3%20ca%CC%82%CC%81p%20mo%CC%A3%CC%82t%20la%CC%82%CC%80n.doc"
+      },
+      {
+        "bucket": "required",
+        "name": "Bản khai cá nhân có xác nhận của chính quyền xã (phường) nơi cư trú (mẫu 1 A) hoặc của thân nhân (mẫu 1B)",
+        "conditions": [],
+        "attachment_path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/1_003799/66-Ma%CC%82%CC%83u%2001B-Ba%CC%89n%20khai%20ca%CC%81%20nha%CC%82n%20%28tro%CC%9B%CC%A3%20ca%CC%82%CC%81p%20mo%CC%A3%CC%82t%20la%CC%82%CC%80n%29.doc"
+      },
+      {
+        "bucket": "required",
+        "name": "Bản khai cá nhân KHÔNG CẦN CÓ XÁC NHẬN CỦA CHÍNH QUYỀN XÃ (PHƯỜNG) NƠI CƯ TRÚ (mẫu 1 A) hoặc của thân nhân (mẫu 1B)",
+        "conditions": [],
+        "attachment_path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/1_003799/66-Ma%CC%82%CC%83u%2001B-Ba%CC%89n%20khai%20ca%CC%81%20nha%CC%82n%20%28tro%CC%9B%CC%A3%20ca%CC%82%CC%81p%20mo%CC%A3%CC%82t%20la%CC%82%CC%80n%29.doc"
+      },
+      {
+        "bucket": "required",
+        "name": "Bản sao một trong các giấy tờ gốc hoặc các giấy tờ có liên quan theo quy định tại khoản 1, Mục II Thông tư số 04/TT-BCA(X13), ngày 28/4/2006 của Bộ Công an.",
+        "conditions": [],
+        "attachment_path": null
+      },
+      {
+        "bucket": "required",
+        "name": "Biên bản hội nghị liên tịch (mẫu 05)",
+        "conditions": [],
+        "attachment_path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/1_003799/45-Ma%CC%82%CC%83u%2005-Bie%CC%82n%20ba%CC%89n%20ho%CC%A3%CC%82i%20nghi%CC%A3%20lie%CC%82n%20ti%CC%A3ch.doc"
+      }
+    ],
+    "special_cases": [
+      "Có kiểm tra dữ liệu cư trú/định danh",
+      "Có thể cần hồ sơ tử tuất hoặc mai táng phí"
+    ],
+    "common_errors": [
+      "Điền sai mẫu tờ khai hoặc chọn sai biểu mẫu đi kèm."
+    ],
+    "validation_hints": [
+      "Nên xác định trước kênh nộp hồ sơ để biết có cần bản giấy, bản điện tử hay xuất trình trực tiếp.",
+      "Có mẫu biểu đính kèm, nên kiểm tra đúng biểu mẫu trước khi nộp.",
+      "Nên rà lại quá trình tham gia bảo hiểm, độ tuổi và loại chế độ muốn hưởng trước khi nộp."
+    ]
+  },
+  "intake": {
+    "candidate_input_fields": [
+      {
+        "field_id": "insured_person_name",
+        "label": "Người hưởng chế độ",
+        "field_type": "text",
+        "required": true
+      },
+      {
+        "field_id": "retirement_or_allowance_need",
+        "label": "Nhu cầu hưởng chế độ hưu trí/trợ cấp",
+        "field_type": "text",
+        "required": true
+      },
+      {
+        "field_id": "social_insurance_participation_known",
+        "label": "Đã rõ quá trình tham gia BHXH",
+        "field_type": "boolean",
+        "required": true
+      },
+      {
+        "field_id": "submission_channel_preference",
+        "label": "Kênh nộp dự kiến",
+        "field_type": "enum",
+        "required": false
+      }
+    ],
+    "suggested_clarifying_questions": [
+      "Bạn đang muốn chuẩn bị nghỉ hưu hay giải quyết chế độ hưu trí cụ thể nào?",
+      "Quá trình tham gia bảo hiểm và độ tuổi hưởng chế độ đã xác định rõ chưa?"
+    ]
+  },
+  "ui_hints": {
+    "primary_channel": "in_person",
+    "result_label": "Quyết định hưởng chế độ",
+    "time_badge": null,
+    "document_count_badge": 5
+  },
+  "provenance": {
+    "generator": "workflow_domain_enricher",
+    "derivation_mode": "rule_based_semantic_enrichment",
+    "supported_group": true
+  }
+}

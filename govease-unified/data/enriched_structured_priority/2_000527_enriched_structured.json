@@ -1,0 +1,123 @@
+{
+  "schema_version": "1.0",
+  "enricher_version": "0.2.0",
+  "source": {
+    "procedure_code": "2.000527",
+    "title": "Thủ tục đăng ký khai tử cho công dân Việt Nam ở nước ngoài",
+    "group_key": "nguoi_than_qua_doi",
+    "workflow_family": "death_family_support_workflow",
+    "subflow": "khai_tu"
+  },
+  "experience": {
+    "entry_label": "Hỗ trợ chế độ cho thân nhân",
+    "overview_summary": "Thủ tục này thuộc nhóm hỗ trợ thân nhân người đã mất, thường liên quan đến mai táng phí, tử tuất hoặc chế độ phát sinh sau khi người hưởng qua đời. Kết quả thường nhận được là Trích lục khai tử. Thời gian xử lý tham khảo: 15 ngày.",
+    "next_step_summary": "Nên chuẩn bị giấy tờ của người đã mất, thân nhân và căn cứ hưởng chế độ trước khi nộp. Có thể chọn kênh nộp phù hợp: Trực tiếp. Hiện có khoảng 6 mục giấy tờ cần theo dõi trong checklist.",
+    "tone": "supportive_public_service"
+  },
+  "guidance": {
+    "highlight_documents": [
+      {
+        "bucket": "required",
+        "name": "Giấy báo tử hoặc giấy tờ thay thế Giấy báo tử do cơ quan có thẩm quyền của nước ngoài cấp",
+        "conditions": [],
+        "attachment_path": null
+      },
+      {
+        "bucket": "required",
+        "name": "Tờ khai đăng ký khai tử (mẫu ban hành kèm theo Thông tư số 15/2015/TT-BTP ngày 16/11/2015 của Bộ Tư pháp)",
+        "conditions": [],
+        "attachment_path": "file:///C:/Users/ku060/Downloads/data/raw_data/2_000527/3.%20TK%20dang%20ky%20khai%20tu.doc"
+      },
+      {
+        "bucket": "conditional",
+        "name": "Văn bản ủy quyền theo quy định của pháp luật trong trường hợp ủy quyền thực hiện việc đăng ký khai tử",
+        "conditions": [
+          "Văn bản ủy quyền theo quy định của pháp luật trong trường hợp ủy quyền thực hiện việc đăng ký khai tử"
+        ],
+        "attachment_path": null
+      },
+      {
+        "bucket": "presented",
+        "name": "Giấy tờ chứng minh nơi cư trú cuối cùng của người chết để xác định thẩm quyền; trường hợp không xác định được nơi cư trú cuối cùng của người chết thì xuất trình giấy tờ chứng minh nơi người đó chết hoặc nơi phát hiện thi thể của người chết.",
+        "conditions": [
+          "Giấy tờ chứng minh nơi cư trú cuối cùng của người chết để xác định thẩm quyền; trường hợp không xác định được nơi cư trú cuối cùng của người chết thì xuất trình giấy tờ chứng minh nơi người đó chết hoặc nơi phát hiện thi thể của người chết."
+        ],
+        "attachment_path": null
+      },
+      {
+        "bucket": "presented",
+        "name": "Giấy tờ phải xuất trình: - Hộ chiếu hoặc giấy tờ có giá trị thay thế hộ chiếu, chứng minh nhân dân, thẻ căn cước công dân, thẻ căn cước hoặc các giấy tờ khác có dán ảnh và thông tin cá nhân do cơ quan có thẩm quyền cấp, còn giá trị sử dụng để chứng minh về nhân thân, quốc tịch của người có yêu cầu đăng ký khai tử.",
+        "conditions": [],
+        "attachment_path": null
+      },
+      {
+        "bucket": "presented",
+        "name": "Hộ chiếu hoặc giấy tờ có giá trị thay thế hộ chiếu, chứng minh nhân dân, thẻ căn cước công dân, thẻ căn cước hoặc các giấy tờ khác có dán ảnh và thông tin cá nhân do cơ quan có thẩm quyền cấp, còn giá trị sử dụng để chứng minh về nhân thân, quốc tịch của người chết. Trường hợp gửi hồ sơ qua đường bưu chính thì nộp bản sao các giấy tờ nêu trên đã được chứng thực hợp lệ. Trường hợp người yêu cầu là công dân Việt Nam và đã được cấp thẻ Căn cước công dân hoặc thẻ Căn cước có số định danh cá nhân thì có thể xuất trình bản chính giấy tờ đó (nếu nộp trực tiếp) hoặc nộp bản chụp giấy tờ này (nếu nộp qua đường bưu điện hoặc gửi qua hệ thống đăng ký hộ tịch trực tuyến) để chứng minh nhân thân khi cơ sở hạ tầng kỹ thuật cho phép Cơ quan đại diện Việt Nam ở nước ngoài kết nối với CSDLQGVDC.",
+        "conditions": [
+          "Hộ chiếu hoặc giấy tờ có giá trị thay thế hộ chiếu, chứng minh nhân dân, thẻ căn cước công dân, thẻ căn cước hoặc các giấy tờ khác có dán ảnh và thông tin cá nhân do cơ quan có thẩm quyền cấp, còn giá trị sử dụng để chứng minh về nhân thân, quốc tịch của người chết. Trường hợp gửi hồ sơ qua đường bưu chính thì nộp bản sao các giấy tờ nêu trên đã được chứng thực hợp lệ. Trường hợp người yêu cầu là công dân Việt Nam và đã được cấp thẻ Căn cước công dân hoặc thẻ Căn cước có số định danh cá nhân thì có thể xuất trình bản chính giấy tờ đó (nếu nộp trực tiếp) hoặc nộp bản chụp giấy tờ này (nếu nộp qua đường bưu điện hoặc gửi qua hệ thống đăng ký hộ tịch trực tuyến) để chứng minh nhân thân khi cơ sở hạ tầng kỹ thuật cho phép Cơ quan đại diện Việt Nam ở nước ngoài kết nối với CSDLQGVDC."
+        ],
+        "attachment_path": null
+      }
+    ],
+    "special_cases": [
+      "Có yếu tố nước ngoài",
+      "Có thể cần giấy tờ ủy quyền",
+      "Có trường hợp hồ sơ điện tử thay thế bản giấy",
+      "Có kiểm tra dữ liệu cư trú/định danh",
+      "Có thể cần hồ sơ tử tuất hoặc mai táng phí"
+    ],
+    "common_errors": [
+      "Thiếu giấy tờ hoặc nội dung ủy quyền phù hợp.",
+      "Thiếu giấy tờ hợp pháp hóa hoặc giấy tờ nhân thân của phía nước ngoài.",
+      "Điền sai mẫu tờ khai hoặc chọn sai biểu mẫu đi kèm."
+    ],
+    "validation_hints": [
+      "Nên xác định trước kênh nộp hồ sơ để biết có cần bản giấy, bản điện tử hay xuất trình trực tiếp.",
+      "Có mẫu biểu đính kèm, nên kiểm tra đúng biểu mẫu trước khi nộp.",
+      "Nên kiểm tra kỹ giấy tờ của người đã mất, thân nhân và căn cứ phát sinh chế độ."
+    ]
+  },
+  "intake": {
+    "candidate_input_fields": [
+      {
+        "field_id": "deceased_person_name",
+        "label": "Người đã mất",
+        "field_type": "text",
+        "required": true
+      },
+      {
+        "field_id": "claimant_relationship",
+        "label": "Quan hệ của người nộp với người đã mất",
+        "field_type": "enum",
+        "required": true
+      },
+      {
+        "field_id": "support_benefit_type",
+        "label": "Loại chế độ cần giải quyết",
+        "field_type": "text",
+        "required": true
+      },
+      {
+        "field_id": "submission_channel_preference",
+        "label": "Kênh nộp dự kiến",
+        "field_type": "enum",
+        "required": false
+      }
+    ],
+    "suggested_clarifying_questions": [
+      "Bạn đang cần giải quyết mai táng phí, tử tuất hay chế độ nào cho thân nhân?",
+      "Giấy tờ của người đã mất và mối quan hệ của người nộp hồ sơ đã sẵn sàng chưa?"
+    ]
+  },
+  "ui_hints": {
+    "primary_channel": "in_person",
+    "result_label": "Trích lục khai tử",
+    "time_badge": "15 ngày",
+    "document_count_badge": 6
+  },
+  "provenance": {
+    "generator": "workflow_domain_enricher",
+    "derivation_mode": "rule_based_semantic_enrichment",
+    "supported_group": true
+  }
+}

@@ -1,0 +1,119 @@
+{
+  "schema_version": "1.0",
+  "enricher_version": "0.2.0",
+  "source": {
+    "procedure_code": "2.002023",
+    "title": "Giải thể doanh nghiệp, giải thể trong trường hợp bị thu hồi Giấy chứng nhận đăng ký doanh nghiệp hoặc theo quyết định của Tòa án",
+    "group_key": "giai_quyet_khieu_kien",
+    "workflow_family": null,
+    "subflow": null
+  },
+  "experience": {
+    "entry_label": "Hỗ trợ khiếu nại và phản ánh",
+    "overview_summary": "Thủ tục này thuộc nhóm khiếu nại và phản ánh, thường cần trình bày rõ nội dung vụ việc, quyết định hoặc hành vi bị khiếu nại và căn cứ kèm theo. Kết quả thường nhận được là Văn bản nêu rõ lý do từ chối của Cơ quan đăng ký kinh doanh. Thời gian xử lý tham khảo: 1 ngày.",
+    "next_step_summary": "Nên tóm tắt rõ nội dung khiếu nại, quyết định hoặc hành vi liên quan và chuẩn bị tài liệu chứng minh trước khi nộp. Có thể chọn kênh nộp phù hợp: Trực tiếp, Trực tuyến, Dịch vụ bưu chính. Hiện có khoảng 29 mục giấy tờ cần theo dõi trong checklist.",
+    "tone": "supportive_public_service"
+  },
+  "guidance": {
+    "highlight_documents": [
+      {
+        "bucket": "required",
+        "name": "(i) Bản sao hợp đồng ủy quyền cho tổ chức thực hiện thủ tục liên quan đến đăng ký doanh nghiệp;",
+        "conditions": [],
+        "attachment_path": null
+      },
+      {
+        "bucket": "required",
+        "name": "(ii) Giấy giới thiệu hoặc văn bản phân công nhiệm vụ của tổ chức đó cho cá nhân trực tiếp thực hiện thủ tục liên quan đến đăng ký doanh nghiệp.",
+        "conditions": [],
+        "attachment_path": null
+      },
+      {
+        "bucket": "required",
+        "name": "(ii) Giấy giới thiệu hoặc văn bản phân công nhiệm vụ của tổ chức đó cho cá nhân trực tiếp thực hiện thủ tục liên quan đến đăng ký doanh nghiệp.",
+        "conditions": [],
+        "attachment_path": null
+      },
+      {
+        "bucket": "required",
+        "name": "(i) Bản sao hợp đồng ủy quyền cho tổ chức thực hiện thủ tục liên quan đến đăng ký doanh nghiệp;",
+        "conditions": [],
+        "attachment_path": null
+      },
+      {
+        "bucket": "required",
+        "name": "(i) Thông báo về việc giải thể doanh nghiệp;",
+        "conditions": [],
+        "attachment_path": null
+      },
+      {
+        "bucket": "required",
+        "name": "(i) Thông báo về việc giải thể doanh nghiệp;",
+        "conditions": [],
+        "attachment_path": null
+      }
+    ],
+    "special_cases": [
+      "Có yếu tố nước ngoài",
+      "Có thể cần giấy tờ ủy quyền",
+      "Có thể cần đối chiếu quyền lợi bảo hiểm hoặc tuyến chuyên môn",
+      "Có thể cần đối chiếu thông tin thửa đất hoặc giấy chứng nhận",
+      "Có thể cần đối chiếu quá trình đóng bảo hiểm để giải quyết chế độ",
+      "Có thể cần xác minh quan hệ lao động hoặc giấy phép làm việc"
+    ],
+    "common_errors": [
+      "Thiếu giấy tờ hoặc nội dung ủy quyền phù hợp.",
+      "Thiếu giấy tờ hợp pháp hóa hoặc giấy tờ nhân thân của phía nước ngoài.",
+      "Điền sai mẫu tờ khai hoặc chọn sai biểu mẫu đi kèm.",
+      "Sai nhóm đối tượng tham gia hoặc thông tin quyền lợi bảo hiểm y tế.",
+      "Thông tin thửa đất, tài sản hoặc giấy chứng nhận chưa khớp với hồ sơ hiện có."
+    ],
+    "validation_hints": [
+      "Nên xác định trước kênh nộp hồ sơ để biết có cần bản giấy, bản điện tử hay xuất trình trực tiếp.",
+      "Nên nêu rõ diễn biến vụ việc, quyết định hoặc hành vi bị khiếu nại và chuẩn bị tài liệu chứng minh."
+    ]
+  },
+  "intake": {
+    "candidate_input_fields": [
+      {
+        "field_id": "complaint_subject",
+        "label": "Nội dung khiếu nại chính",
+        "field_type": "text",
+        "required": true
+      },
+      {
+        "field_id": "decision_or_behavior_target",
+        "label": "Quyết định hoặc hành vi bị khiếu nại",
+        "field_type": "text",
+        "required": true
+      },
+      {
+        "field_id": "has_supporting_evidence",
+        "label": "Có tài liệu chứng minh kèm theo",
+        "field_type": "boolean",
+        "required": true
+      },
+      {
+        "field_id": "submission_channel_preference",
+        "label": "Kênh nộp dự kiến",
+        "field_type": "enum",
+        "required": false
+      }
+    ],
+    "suggested_clarifying_questions": [
+      "Bạn đang khiếu nại về quyết định hay hành vi nào, và thuộc cơ quan nào?",
+      "Bạn đã có đơn khiếu nại hoặc tài liệu chứng minh nội dung vụ việc chưa?"
+    ]
+  },
+  "ui_hints": {
+    "primary_channel": "online",
+    "result_label": "Văn bản nêu rõ lý do từ chối của Cơ quan đăng ký kinh doanh",
+    "time_badge": "1 ngày",
+    "document_count_badge": 29
+  },
+  "provenance": {
+    "generator": "workflow_domain_enricher",
+    "derivation_mode": "rule_based_semantic_enrichment",
+    "supported_group": true
+  }
+}

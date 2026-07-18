@@ -1,0 +1,123 @@
+{
+  "schema_version": "1.0",
+  "enricher_version": "0.2.0",
+  "source": {
+    "procedure_code": "3.000466",
+    "title": "Chỉnh sửa nội dung văn bằng, chứng chỉ",
+    "group_key": "hoc_tap",
+    "workflow_family": "education_study_workflow",
+    "subflow": "van_bang_chung_chi"
+  },
+  "experience": {
+    "entry_label": "Hỗ trợ giáo dục và học tập",
+    "overview_summary": "Thủ tục này thuộc nhóm giáo dục và học tập, thường liên quan đến hồ sơ đào tạo, văn bằng hoặc điều kiện học tập của người học. Kết quả thường nhận được là Quyết định chỉnh sửa nội dung văn bằng, chứng chỉ. Thời gian xử lý tham khảo: 3 ngày làm việc.",
+    "next_step_summary": "Nên rà trước thông tin người học, cơ sở đào tạo và loại kết quả cần xin xác nhận hoặc cấp lại. Có thể chọn kênh nộp phù hợp: Trực tiếp, Trực tuyến, Dịch vụ bưu chính. Hiện có khoảng 5 mục giấy tờ cần theo dõi trong checklist.",
+    "tone": "supportive_public_service"
+  },
+  "guidance": {
+    "highlight_documents": [
+      {
+        "bucket": "required",
+        "name": "Phiếu đề nghị chỉnh sửa nội dung văn bằng, chứng chỉ (theo Mẫu tại Phụ lục VI ban hành kèm theo Thông tư số 10/2026/TT-BGDĐT, đính kèm theo Quyết định này);",
+        "conditions": [],
+        "attachment_path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/3_000466/Muphiucpbnsaocplichnhsanidungvnbngchngch%20%282%29.docx"
+      },
+      {
+        "bucket": "required",
+        "name": "Văn bằng, chứng chỉ đề nghị chỉnh sửa;",
+        "conditions": [],
+        "attachment_path": null
+      },
+      {
+        "bucket": "conditional",
+        "name": "Trích lục hoặc quyết định thay đổi hoặc cải chính hộ tịch, xác định lại dân tộc, xác định lại giới tính đối với trường hợp chỉnh sửa văn bằng, chứng chỉ do thay đổi hoặc cải chính hộ tịch, xác định lại dân tộc, xác định lại giới tính;(Cơ quan giải quyết TTHC khai thác, sử dụng thông tin đã có trong Cơ sở dữ liệu quốc gia về CSDL hộ tịch điện tử để thay thế thành phần hồ sơ bản sao có chứng thực hoặc bản sao kèm theo bản gốc để đối chiếu của giấy chứng nhận đăng ký doanh nghiệp đối với cơ sở đào tạo, bồi dưỡng ngắn hạn có vốn đầu tư nước ngoài. Trường hợp Cơ quan giải quyết TTHC không khai thác được hoặc khai thác không đầy đủ dữ liệu về CSDL hộ tịch điện tử trong Cơ sở dữ liệu quốc gia theo quy định tại Điều 8 Nghị quyết 66.7/2025/NQ-CP ngày 15/11/2025 của Chính phủ quy định cắt giảm, đơn giản hóa thủ tục hành chính dựa trên dữ liệu)",
+        "conditions": [
+          "Trích lục hoặc quyết định thay đổi hoặc cải chính hộ tịch, xác định lại dân tộc, xác định lại giới tính đối với trường hợp chỉnh sửa văn bằng, chứng chỉ do thay đổi hoặc cải chính hộ tịch, xác định lại dân tộc, xác định lại giới tính;(Cơ quan giải quyết TTHC khai thác, sử dụng thông tin đã có trong Cơ sở dữ liệu quốc gia về CSDL hộ tịch điện tử để thay thế thành phần hồ sơ bản sao có chứng thực hoặc bản sao kèm theo bản gốc để đối chiếu của giấy chứng nhận đăng ký doanh nghiệp đối với cơ sở đào tạo, bồi dưỡng ngắn hạn có vốn đầu tư nước ngoài. Trường hợp Cơ quan giải quyết TTHC không khai thác được hoặc khai thác không đầy đủ dữ liệu về CSDL hộ tịch điện tử trong Cơ sở dữ liệu quốc gia theo quy định tại Điều 8 Nghị quyết 66.7/2025/NQ-CP ngày 15/11/2025 của Chính phủ quy định cắt giảm, đơn giản hóa thủ tục hành chính dựa trên dữ liệu)"
+        ],
+        "attachment_path": null
+      },
+      {
+        "bucket": "conditional",
+        "name": "Giấy khai sinh đối với trường hợp chỉnh sửa nội dung văn bằng, chứng chỉ do bổ sung hộ tịch, điều chỉnh hộ tịch, đăng ký lại việc sinh, đăng ký khai sinh quá hạn. (Cơ quan giải quyết TTHC khai thác, sử dụng thông tin đã có trong Cơ sở dữ liệu quốc gia về CSDL hộ tịch điện tử để thay thế thành phần hồ sơ bản sao có chứng thực hoặc bản sao kèm theo bản gốc để đối chiếu của giấy chứng nhận đăng ký doanh nghiệp đối với cơ sở đào tạo, bồi dưỡng ngắn hạn có vốn đầu tư nước ngoài. Trường hợp Cơ quan giải quyết TTHC không khai thác được hoặc khai thác không đầy đủ dữ liệu về CSDL hộ tịch điện tử trong Cơ sở dữ liệu quốc gia theo quy định tại Điều 8 Nghị quyết 66.7/2025/NQ-CP ngày 15/11/2025 của Chính phủ quy định cắt giảm, đơn giản hóa thủ tục hành chính dựa trên dữ liệu)",
+        "conditions": [
+          "Giấy khai sinh đối với trường hợp chỉnh sửa nội dung văn bằng, chứng chỉ do bổ sung hộ tịch, điều chỉnh hộ tịch, đăng ký lại việc sinh, đăng ký khai sinh quá hạn. (Cơ quan giải quyết TTHC khai thác, sử dụng thông tin đã có trong Cơ sở dữ liệu quốc gia về CSDL hộ tịch điện tử để thay thế thành phần hồ sơ bản sao có chứng thực hoặc bản sao kèm theo bản gốc để đối chiếu của giấy chứng nhận đăng ký doanh nghiệp đối với cơ sở đào tạo, bồi dưỡng ngắn hạn có vốn đầu tư nước ngoài. Trường hợp Cơ quan giải quyết TTHC không khai thác được hoặc khai thác không đầy đủ dữ liệu về CSDL hộ tịch điện tử trong Cơ sở dữ liệu quốc gia theo quy định tại Điều 8 Nghị quyết 66.7/2025/NQ-CP ngày 15/11/2025 của Chính phủ quy định cắt giảm, đơn giản hóa thủ tục hành chính dựa trên dữ liệu)"
+        ],
+        "attachment_path": null
+      },
+      {
+        "bucket": "conditional",
+        "name": "Các tài liệu trong hồ sơ đề nghị chỉnh sửa nội dung văn bằng, chứng chỉ quy định tại các điểm b, c, d khoản 3 Điều 15 Thông tư số 10/2026/TT-BGDĐT là bản sao từ sổ gốc hoặc bản sao được chứng thực từ bản chính hoặc đường dẫn trích xuất thông tin từ cơ sở dữ liệu của cơ quan có thẩm quyền. Trường hợp các tài liệu là bản sao không có chứng thực thì người đề nghị chỉnh sửa văn bằng, chứng chỉ phải xuất trình bản chính để người tiếp nhận hồ sơ đối chiếu; người tiếp nhận hồ sơ phải ký xác nhận, ghi rõ họ tên vào bản sao và chịu trách nhiệm về tính chính xác của bản sao so với bản chính",
+        "conditions": [
+          "Các tài liệu trong hồ sơ đề nghị chỉnh sửa nội dung văn bằng, chứng chỉ quy định tại các điểm b, c, d khoản 3 Điều 15 Thông tư số 10/2026/TT-BGDĐT là bản sao từ sổ gốc hoặc bản sao được chứng thực từ bản chính hoặc đường dẫn trích xuất thông tin từ cơ sở dữ liệu của cơ quan có thẩm quyền. Trường hợp các tài liệu là bản sao không có chứng thực thì người đề nghị chỉnh sửa văn bằng, chứng chỉ phải xuất trình bản chính để người tiếp nhận hồ sơ đối chiếu; người tiếp nhận hồ sơ phải ký xác nhận, ghi rõ họ tên vào bản sao và chịu trách nhiệm về tính chính xác của bản sao so với bản chính"
+        ],
+        "attachment_path": null
+      }
+    ],
+    "special_cases": [
+      "Có yếu tố nước ngoài",
+      "Có kiểm tra dữ liệu cư trú/định danh",
+      "Có thể cần đối chiếu thông tin thửa đất hoặc giấy chứng nhận",
+      "Có thể cần xác minh hồ sơ học tập hoặc văn bằng"
+    ],
+    "common_errors": [
+      "Thiếu giấy tờ hợp pháp hóa hoặc giấy tờ nhân thân của phía nước ngoài.",
+      "Điền sai mẫu tờ khai hoặc chọn sai biểu mẫu đi kèm.",
+      "Thông tin thửa đất, tài sản hoặc giấy chứng nhận chưa khớp với hồ sơ hiện có.",
+      "Thiếu minh chứng học tập, văn bằng hoặc xác nhận từ cơ sở đào tạo."
+    ],
+    "validation_hints": [
+      "Nên xác định trước kênh nộp hồ sơ để biết có cần bản giấy, bản điện tử hay xuất trình trực tiếp.",
+      "Có mẫu biểu đính kèm, nên kiểm tra đúng biểu mẫu trước khi nộp.",
+      "Nên rà lại thông tin người học, cơ sở đào tạo và loại xác nhận hoặc văn bằng cần xin."
+    ]
+  },
+  "intake": {
+    "candidate_input_fields": [
+      {
+        "field_id": "learner_full_name",
+        "label": "Tên người học",
+        "field_type": "text",
+        "required": true
+      },
+      {
+        "field_id": "education_record_type",
+        "label": "Loại hồ sơ học tập cần xử lý",
+        "field_type": "text",
+        "required": true
+      },
+      {
+        "field_id": "education_institution",
+        "label": "Cơ sở đào tạo liên quan",
+        "field_type": "text",
+        "required": false
+      },
+      {
+        "field_id": "submission_channel_preference",
+        "label": "Kênh nộp dự kiến",
+        "field_type": "enum",
+        "required": false
+      },
+      {
+        "field_id": "certificate_or_degree_type",
+        "label": "Loại văn bằng/chứng chỉ",
+        "field_type": "text",
+        "required": false
+      }
+    ],
+    "suggested_clarifying_questions": [
+      "Bạn đang cần xử lý hồ sơ học tập, văn bằng hay xác nhận nào?",
+      "Người học và cơ sở đào tạo liên quan đã xác định rõ chưa?"
+    ]
+  },
+  "ui_hints": {
+    "primary_channel": "postal",
+    "result_label": "Quyết định chỉnh sửa nội dung văn bằng, chứng chỉ",
+    "time_badge": "3 ngày làm việc",
+    "document_count_badge": 5
+  },
+  "provenance": {
+    "generator": "workflow_domain_enricher",
+    "derivation_mode": "rule_based_semantic_enrichment",
+    "supported_group": true
+  }
+}

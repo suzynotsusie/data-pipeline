@@ -1,0 +1,641 @@
+{
+  "schema_version": "1.0",
+  "domain": "phuong_tien_nguoi_lai",
+  "updated_at": "2026-07-18",
+  "source_files": [
+    "C:\\Users\\ku060\\Downloads\\VAIC source\\data-pipeline\\main\\full-data.csv",
+    "C:\\Users\\ku060\\Downloads\\VAIC source\\data-pipeline\\raw_data"
+  ],
+  "subdomains": [
+    {
+      "subdomain_key": "giay_phep_lai_xe",
+      "subdomain_label": "Giấy phép lái xe",
+      "event_id": 315,
+      "field_name": "Sát hạch, cấp giấy phép lái xe",
+      "summary": "Nhóm thủ tục liên quan đến cấp, đổi, cấp lại, thu hồi giấy phép lái xe và cấp phép/chấp thuận cho hoạt động sát hạch lái xe.",
+      "entry_prompts": [
+        "Bạn muốn cấp mới, đổi, cấp lại hay thu hồi giấy phép lái xe?",
+        "Nếu liên quan đến sát hạch, bạn đang hỏi về cá nhân dự thi hay trung tâm/sân tập sát hạch?"
+      ],
+      "procedure_count": 17,
+      "procedures": [
+        {
+          "procedure_code": "3.000346",
+          "procedure_title": "Cấp giấy phép lái xe",
+          "field": "Sát hạch, cấp giấy phép lái xe",
+          "subdomain_key": "giay_phep_lai_xe",
+          "subdomain_label": "Giấy phép lái xe",
+          "event_id": 315,
+          "operation_group": "cap_moi_gplx",
+          "operation_key": "cap_giay_phep_lai_xe",
+          "agency": "",
+          "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bf7-bdab-71cb-b809-61394dd0cabf",
+          "raw_data_file": "C:\\Users\\ku060\\Downloads\\VAIC source\\data-pipeline\\raw_data\\3_000346\\3_000346_procedure_detail.md",
+          "raw_data_available": true,
+          "overview": "1. a) Nộp hồ sơ TTHC: - Đối với người dự sát hạch nộp qua cơ sở đào tạo lái xe: Cơ sở đào tạo lái xe lập hồ sơ của người dự sát hạch gửi đến Phòng Cảnh sát giao thông trước kỳ sát hạch ít nhất 07 ngày làm việc. - Người dự sát hạch gửi trực tiếp hoặc qua hệ thống dịch vụ công trực tuyến đến Phòng Cảnh sát giao thông trước kỳ sát hạch ít nhất 07 ngày làm việc. - Người dự sát hạch do giấy phép lái xe quá thời hạn sử dụng, do giấy phép lái xe mất và quá thời hạn sử dụng gửi hồ sơ đến Phòng Cảnh sát giao thông trước kỳ sát hạch ít nhất 07 ngày làm việc. b) Giải quyết TTHC: - Căn cứ kết quả kỳ sát hạch, Cục Cảnh sát giao thông cấp giấy phép lái xe cho người đạt. Ngày cấp giấy phép lái xe ghi tại mặt sau giấy phép lái xe là ngày người dự sát hạch đạt kết quả các kỳ sát hạch; - Thời gian cấp giấy phép lái xe: Giấy phép lái xe điện tử được cấp trong thời hạn 03 ngày kể từ ngày kết thúc kỳ sát hạch; Giấy phép lái xe bằng chất liệu PET được cấp trong thời hạn 07 ngày kể từ ngày kết thúc kỳ sát hạch và người đạt kết quả kỳ sát hạch đã hoàn thành nghĩa vụ nộp lệ phí cấp giấy phép lái xe. - Người đạt kết quả kỳ sát hạch được cấp giấy phép lái xe đúng hạng đã trúng tuyển; đối với trường hợp nâng hạng hoặc cấp do giấy phép lái xe quá thời hạn sử dụng phải xuất trình bản chính giấy phép lái xe khi đến nhận giấy phép lái xe;",
+          "procedure_flow": "1. a) Nộp hồ sơ TTHC: - Đối với người dự sát hạch nộp qua cơ sở đào tạo lái xe: Cơ sở đào tạo lái xe lập hồ sơ của người dự sát hạch gửi đến Phòng Cảnh sát giao thông trước kỳ sát hạch ít nhất 07 ngày làm việc. - Người dự sát hạch gửi trực tiếp hoặc qua hệ thống dịch vụ công trực tuyến đến Phòng Cảnh sát giao thông trước kỳ sát hạch ít nhất 07 ngày làm việc. - Người dự sát hạch do giấy phép lái xe quá thời hạn sử dụng, do giấy phép lái xe mất và quá thời hạn sử dụng gửi hồ sơ đến Phòng Cảnh sát giao thông trước kỳ sát hạch ít nhất 07 ngày làm việc. b) Giải quyết TTHC: - Căn cứ kết quả kỳ sát hạch, Cục Cảnh sát giao thông cấp giấy phép lái xe cho người đạt. Ngày cấp giấy phép lái xe ghi tại mặt sau giấy phép lái xe là ngày người dự sát hạch đạt kết quả các kỳ sát hạch; - Thời gian cấp giấy phép lái xe: Giấy phép lái xe điện tử được cấp trong thời hạn 03 ngày kể từ ngày kết thúc kỳ sát hạch; Giấy phép lái xe bằng chất liệu PET được cấp trong thời hạn 07 ngày kể từ ngày kết thúc kỳ sát hạch và người đạt kết quả kỳ sát hạch đã hoàn thành nghĩa vụ nộp lệ phí cấp giấy phép lái xe. - Người đạt kết quả kỳ sát hạch được cấp giấy phép lái xe đúng hạng đã trúng tuyển; đối với trường hợp nâng hạng hoặc cấp do giấy phép lái xe quá thời hạn sử dụng phải xuất trình bản chính giấy phép lái xe khi đến nhận giấy phép lái xe;",
+          "requirements": "Không có thông tin",
+          "submission_methods": [
+            "Trực tuyến",
+            "Dịch vụ bưu chính",
+            "Trực tiếp"
+          ],
+          "processing_time_values": [
+            "7 ngày",
+            "3 ngày",
+            "3 ngày"
+          ],
+          "document_groups": [
+            {
+              "group_name": "Hồ sơ đề nghị sát hạch cấp giấy phép lái xe do quá thời hạn sử dụng, do giấy phép lái xe mất và quá thời hạn sử dụng",
+              "documents": [
+                {
+                  "Tên giấy tờ": "Bản sao hoặc bản sao điện tử được chứng thực từ bản chính hoặc bản sao điện tử được cấp từ sổ gốc một trong các giấy tờ sau: thẻ tạm trú, thẻ thường trú, chứng minh thư ngoại giao, chứng minh thư công vụ (đối với người nước ngoài).",
+                  "Bản chính": "0",
+                  "Bản sao": "1",
+                  "Tệp đính kèm": "Không có"
+                },
+                {
+                  "Tên giấy tờ": "Giấy phép lái xe quân sự do Bộ Quốc phòng cấp hoặc xác nhận của cơ quan đã cấp đối với trường hợp mất giấy phép lái xe (đối với giấy phép lái xe quân sự do Bộ Quốc phòng cấp)",
+                  "Bản chính": "1",
+                  "Bản sao": "0",
+                  "Tệp đính kèm": "Không có"
+                },
+                {
+                  "Tên giấy tờ": "Giấy khám sức khoẻ của người lái xe do cơ sở khám bệnh, chữa bệnh đủ tiêu chuẩn theo quy định của pháp luật về khám bệnh, chữa bệnh cấp còn hiệu lực",
+                  "Bản chính": "1",
+                  "Bản sao": "0",
+                  "Tệp đính kèm": "Không có"
+                },
+                {
+                  "Tên giấy tờ": "Bản sao giấy phép lái xe quá thời hạn sử dụng, trừ trường hợp người có giấy phép lái xe quá thời hạn sử dụng và bị mất",
+                  "Bản chính": "0",
+                  "Bản sao": "1",
+                  "Tệp đính kèm": "Không có"
+                },
+                {
+                  "Tên giấy tờ": "Đề nghị sát hạch để cấp giấy phép lái xe theo quy định tại Phụ lục I ban hành kèm theo Thông tư số 12/2025/TT-BCA",
+                  "Bản chính": "1",
+                  "Bản sao": "0",
+                  "Tệp đính kèm": "Không có"
+                },
+                {
+                  "Tên giấy tờ": "Bản sao giấy tờ chứng minh thôi không còn phục vụ trong lực lượng Quân đội nhân dân, Công an nhân dân (đối với trường hợp giấy phép lái xe trong Công an nhân dân, giấy phép lái xe quân sự do Bộ Quốc phòng cấp)",
+                  "Bản chính": "0",
+                  "Bản sao": "1",
+                  "Tệp đính kèm": "Không có"
+                }
+              ]
+            },
+            {
+              "group_name": "Hồ sơ đề nghị sát hạch của cá nhân",
+              "documents": [
+                {
+                  "Tên giấy tờ": "Giấy khám sức khoẻ của người lái xe do cơ sở khám bệnh, chữa bệnh đủ tiêu chuẩn theo quy định của pháp luật về khám bệnh, chữa bệnh cấp còn hiệu lực.",
+                  "Bản chính": "1",
+                  "Bản sao": "0",
+                  "Tệp đính kèm": "Không có"
+                },
+                {
+                  "Tên giấy tờ": "Bản sao hoặc bản sao điện tử được chứng thực từ bản chính hoặc bản sao điện tử được cấp từ sổ gốc một trong các giấy tờ sau: thẻ tạm trú, thẻ thường trú, chứng minh thư ngoại giao, chứng minh thư công vụ (đối với người nước ngoài).",
+                  "Bản chính": "0",
+                  "Bản sao": "1",
+                  "Tệp đính kèm": "Không có"
+                },
+                {
+                  "Tên giấy tờ": "Đề nghị sát hạch để cấp giấy phép lái xe theo mẫu quy định tại Phụ lục I ban hành kèm theo Thông tư số 12/2025/TT-BCA",
+                  "Bản chính": "1",
+                  "Bản sao": "0",
+                  "Tệp đính kèm": "Không có"
+                },
+                {
+                  "Tên giấy tờ": "Chứng chỉ sơ cấp hoặc chứng chỉ đào tạo hoặc xác nhận hoàn thành khóa đào tạo đối với người dự sát hạch lái xe hạng B1, B, C1, C, D1, D2, D, BE, C1E, CE, D1E, D2E, DE.",
+                  "Bản chính": "1",
+                  "Bản sao": "0",
+                  "Tệp đính kèm": "Không có"
+                }
+              ]
+            },
+            {
+              "group_name": "Hồ sơ đề nghị sát hạch của cơ sở đào tạo lái xe gồm",
+              "documents": [
+                {
+                  "Tên giấy tờ": "Báo cáo đề nghị tổ chức sát hạch theo mẫu 02 Phụ lục VIII kèm theo Thông tư số 12/2025/TT-BCA",
+                  "Bản chính": "1",
+                  "Bản sao": "0",
+                  "Tệp đính kèm": "Không có"
+                },
+                {
+                  "Tên giấy tờ": "Hồ sơ đề nghị sát hạch của cá nhân theo quy định",
+                  "Bản chính": "1",
+                  "Bản sao": "0",
+                  "Tệp đính kèm": "Không có"
+                },
+                {
+                  "Tên giấy tờ": "Danh sách thí sinh đề nghị sát hạch để cấp giấy phép lái xe theo mẫu 03 Phụ lục VIII ban hành kèm theo Thông tư số 12/2025/TT-BCA",
+                  "Bản chính": "1",
+                  "Bản sao": "0",
+                  "Tệp đính kèm": "Không có"
+                }
+              ]
+            }
+          ],
+          "result_items": [
+            "Giấy phép lái xe (Mã: `KQ.G01.000185`)"
+          ],
+          "legal_bases": []
+        },
+        {
+          "procedure_code": "3.000347",
+          "procedure_title": "Đổi giấy phép lái xe",
+          "field": "Sát hạch, cấp giấy phép lái xe",
+          "subdomain_key": "giay_phep_lai_xe",
+          "subdomain_label": "Giấy phép lái xe",
+          "event_id": 315,
+          "operation_group": "doi_gplx",
+          "operation_key": "doi_giay_phep_lai_xe",
+          "agency": "Công an cấp Xã",
+          "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bf7-bda8-740c-9f49-ddaae438530d",
+          "raw_data_file": "C:\\Users\\ku060\\Downloads\\VAIC source\\data-pipeline\\raw_data\\3_000347\\3_000347_procedure_detail.md",
+          "raw_data_available": true,
+          "overview": "1. a) Nộp hồ sơ TTHC: Cá nhân lập hồ sơ gửi trực tiếp tại Công an cấp xã nơi được bố trí điểm tiếp nhận hồ sơ hoặc Phòng Cảnh sát giao thông hoặc gửi qua hệ thống dịch vụ công trực tuyến: - Trường hợp nộp hồ sơ trực tiếp cá nhân phải chụp ảnh trực tiếp tại cơ quan cấp giấy phép lái xe và phải hoàn thành nghĩa vụ nộp lệ phí khi được tiếp nhận hồ sơ. - Trường hợp nộp hồ sơ qua hệ thống dịch vụ công trực tuyến, cá nhân kê khai theo hướng dẫn, phải chịu trách nhiệm về tính chính xác, tính hợp pháp của nội dung đã kê khai và phải hoàn thành nghĩa vụ nộp lệ phí cấp giấy phép lái xe thông qua chức năng thanh toán của hệ thống dịch vụ công trực tuyến theo quy định và nộp phí sử dụng dịch vụ khác theo nhu cầu của cá nhân. b) Giải quyết TTHC: * Phòng Cảnh sát giao thông hoặc Công an cấp xã nơi được bố trí điểm tiếp nhận kiểm tra hồ sơ khi tiếp nhận phải: Tra cứu thông tin về giấy phép lái xe từ hệ thống thông tin giấy phép lái xe, trường hợp chưa có thông tin phải có văn bản đề nghị xác minh giấy phép lái xe đã cấp theo mẫu số 01 Phụ lục XII ban hành kèm theo Thông tư số 12/2025/TT-BCA. Khi chưa có kết quả xác minh giấy phép lái xe thì không giải quyết đề nghị; Tra cứu phần mềm cơ sở dữ liệu về trật tự, an toàn giao thông đường bộ hoặc tra cứu vi phạm của người lái xe thông qua tài khoản định danh điện tử. - Trường hợp giấy phép lái xe không thuộc đối tượng được đổi hoặc hồ sơ không đúng theo quy định, phải thông báo trực tiếp hoặc bằng văn bản hoặc qua hệ thống dịch vụ công trực tuyến những nội dung cần bổ sung hoặc sửa đổi cho cá nhân trong thời hạn 02 ngày làm việc, kể từ ngày nhận hồ sơ. - Phòng Cảnh sát giao thông hoặc Công an cấp xã nơi được bố trí điểm tiếp nhận thực hiện nhập thông tin điện tử; in phiếu hẹn trả kết quả sau 05 ngày làm việc kể từ ngày nhận đủ hồ sơ hợp lệ hoặc gửi thông tin hẹn trả qua hệ thống dịch vụ công; * Trong thời hạn 01 ngày làm việc, kể từ ngày nhận đủ hồ sơ hợp lệ theo quy định (bao gồm xác thực tài khoản định danh điện tử qua hệ thống định danh và xác thực điện tử, có kết quả xác minh giấy phép lái xe đối với trường hợp phải xác minh theo mẫu số 02 Phụ lục XII ban hành kèm theo Thông tư số 12/2025/TT-BCA), Phòng Cảnh sát giao thông chuyển dữ liệu đến Cục Cảnh sát giao thông để quản lý tập trung và cấp giấy phép lái xe. Phòng Cảnh sát giao thông tổ chức in và trả giấy phép lái xe; * Việc trả giấy phép lái xe được thực hiện tại Phòng Cảnh sát giao thông hoặc Công an cấp xã nơi được bố trí điểm tiếp nhận hoặc thông qua dịch vụ bưu chính theo yêu cầu của cá nhân, trường hợp nộp hồ sơ qua hệ thống dịch vụ công trực tuyến, giấy phép lái xe được trả cho đúng cá nhân đổi giấy phép lái xe, khi nhận giấy phép lái xe, người lái xe chịu trách nhiệm gửi giấy phép lái xe cũ đến cơ quan cấp giấy phép lái xe để tiêu hủy theo quy định; * Giấy phép lái xe cũ được tiêu hủy, trừ trường hợp đổi giấy phép lái xe cho người có giấy phép lái xe tích hợp đang trong thời gian bị tước giấy phép lái xe Bản chính hồ sơ đổi giấy phép lái xe (trừ trường hợp đổi giấy phép lái xe qua hệ thống dịch vụ công trực tuyến) được lưu trữ lại Phòng Cảnh sát giao thông trong thời hạn 02 năm kể từ ngày đổi giấy phép lái xe và tiêu hủy giấy phép lái xe cũ. Trường hợp cá nhân nộp hồ sơ trực tiếp tại Công an cấp xã nơi bố trí điểm tiếp nhận, hồ sơ đổi giấy phép lái xe được chuyển đến Phòng Cảnh sát giao thông để lưu trữ sau khi trả giấy phép lái xe và tiêu hủy giấy phép lái xe cũ.",
+          "procedure_flow": "1. a) Nộp hồ sơ TTHC: Cá nhân lập hồ sơ gửi trực tiếp tại Công an cấp xã nơi được bố trí điểm tiếp nhận hồ sơ hoặc Phòng Cảnh sát giao thông hoặc gửi qua hệ thống dịch vụ công trực tuyến: - Trường hợp nộp hồ sơ trực tiếp cá nhân phải chụp ảnh trực tiếp tại cơ quan cấp giấy phép lái xe và phải hoàn thành nghĩa vụ nộp lệ phí khi được tiếp nhận hồ sơ. - Trường hợp nộp hồ sơ qua hệ thống dịch vụ công trực tuyến, cá nhân kê khai theo hướng dẫn, phải chịu trách nhiệm về tính chính xác, tính hợp pháp của nội dung đã kê khai và phải hoàn thành nghĩa vụ nộp lệ phí cấp giấy phép lái xe thông qua chức năng thanh toán của hệ thống dịch vụ công trực tuyến theo quy định và nộp phí sử dụng dịch vụ khác theo nhu cầu của cá nhân. b) Giải quyết TTHC: * Phòng Cảnh sát giao thông hoặc Công an cấp xã nơi được bố trí điểm tiếp nhận kiểm tra hồ sơ khi tiếp nhận phải: Tra cứu thông tin về giấy phép lái xe từ hệ thống thông tin giấy phép lái xe, trường hợp chưa có thông tin phải có văn bản đề nghị xác minh giấy phép lái xe đã cấp theo mẫu số 01 Phụ lục XII ban hành kèm theo Thông tư số 12/2025/TT-BCA. Khi chưa có kết quả xác minh giấy phép lái xe thì không giải quyết đề nghị; Tra cứu phần mềm cơ sở dữ liệu về trật tự, an toàn giao thông đường bộ hoặc tra cứu vi phạm của người lái xe thông qua tài khoản định danh điện tử. - Trường hợp giấy phép lái xe không thuộc đối tượng được đổi hoặc hồ sơ không đúng theo quy định, phải thông báo trực tiếp hoặc bằng văn bản hoặc qua hệ thống dịch vụ công trực tuyến những nội dung cần bổ sung hoặc sửa đổi cho cá nhân trong thời hạn 02 ngày làm việc, kể từ ngày nhận hồ sơ. - Phòng Cảnh sát giao thông hoặc Công an cấp xã nơi được bố trí điểm tiếp nhận thực hiện nhập thông tin điện tử; in phiếu hẹn trả kết quả sau 05 ngày làm việc kể từ ngày nhận đủ hồ sơ hợp lệ hoặc gửi thông tin hẹn trả qua hệ thống dịch vụ công; * Trong thời hạn 01 ngày làm việc, kể từ ngày nhận đủ hồ sơ hợp lệ theo quy định (bao gồm xác thực tài khoản định danh điện tử qua hệ thống định danh và xác thực điện tử, có kết quả xác minh giấy phép lái xe đối với trường hợp phải xác minh theo mẫu số 02 Phụ lục XII ban hành kèm theo Thông tư số 12/2025/TT-BCA), Phòng Cảnh sát giao thông chuyển dữ liệu đến Cục Cảnh sát giao thông để quản lý tập trung và cấp giấy phép lái xe. Phòng Cảnh sát giao thông tổ chức in và trả giấy phép lái xe; * Việc trả giấy phép lái xe được thực hiện tại Phòng Cảnh sát giao thông hoặc Công an cấp xã nơi được bố trí điểm tiếp nhận hoặc thông qua dịch vụ bưu chính theo yêu cầu của cá nhân, trường hợp nộp hồ sơ qua hệ thống dịch vụ công trực tuyến, giấy phép lái xe được trả cho đúng cá nhân đổi giấy phép lái xe, khi nhận giấy phép lái xe, người lái xe chịu trách nhiệm gửi giấy phép lái xe cũ đến cơ quan cấp giấy phép lái xe để tiêu hủy theo quy định; * Giấy phép lái xe cũ được tiêu hủy, trừ trường hợp đổi giấy phép lái xe cho người có giấy phép lái xe tích hợp đang trong thời gian bị tước giấy phép lái xe Bản chính hồ sơ đổi giấy phép lái xe (trừ trường hợp đổi giấy phép lái xe qua hệ thống dịch vụ công trực tuyến) được lưu trữ lại Phòng Cảnh sát giao thông trong thời hạn 02 năm kể từ ngày đổi giấy phép lái xe và tiêu hủy giấy phép lái xe cũ. Trường hợp cá nhân nộp hồ sơ trực tiếp tại Công an cấp xã nơi bố trí điểm tiếp nhận, hồ sơ đổi giấy phép lái xe được chuyển đến Phòng Cảnh sát giao thông để lưu trữ sau khi trả giấy phép lái xe và tiêu hủy giấy phép lái xe cũ.",
+          "requirements": "Không có thông tin",
+          "submission_methods": [
+            "Trực tuyến",
+            "Trực tiếp"
+          ],
+          "processing_time_values": [
+            "5 ngày làm việc",
+            "5 ngày làm việc"
+          ],
+          "document_groups": [],
+          "result_items": [
+            "Giấy phép lái xe (Mã: `KQ.G01.000185`)"
+          ],
+          "legal_bases": []
+        },
+        {
+          "procedure_code": "3.000348",
+          "procedure_title": "Cấp lại giấy phép lái xe",
+          "field": "Sát hạch, cấp giấy phép lái xe",
+          "subdomain_key": "giay_phep_lai_xe",
+          "subdomain_label": "Giấy phép lái xe",
+          "event_id": 315,
+          "operation_group": "cap_lai_gplx",
+          "operation_key": "cap_lai_giay_phep_lai_xe",
+          "agency": "Công an cấp Xã",
+          "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bf7-bdb6-7217-affe-2819858d612c",
+          "raw_data_file": "C:\\Users\\ku060\\Downloads\\VAIC source\\data-pipeline\\raw_data\\3_000348\\3_000348_procedure_detail.md",
+          "raw_data_available": true,
+          "overview": "1. a) Nộp hồ sơ TTHC: - Cá nhân lập hồ sơ gửi trực tiếp tại Công an cấp xã nơi được bố trí điểm tiếp nhận hồ sơ hoặc Phòng Cảnh sát giao thông hoặc gửi qua hệ thống dịch vụ công trực tuyến; - Trường hợp nộp hồ sơ trực tiếp cá nhân phải chụp ảnh trực tiếp tại cơ quan cấp giấy phép lái xe và phải hoàn thành nghĩa vụ nộp lệ phí khi được tiếp nhận hồ sơ. - Trường hợp nộp hồ sơ qua hệ thống dịch vụ công trực tuyến, cá nhân kê khai theo hướng dẫn, phải chịu trách nhiệm về tính chính xác, tính hợp pháp của nội dung đã kê khai và phải hoàn thành nghĩa vụ nộp lệ phí cấp giấy phép lái xe thông qua chức năng thanh toán của hệ thống dịch vụ công trực tuyến theo quy định và nộp phí sử dụng dịch vụ khác theo nhu cầu của cá nhân. b) Giải quyết TTHC: * Phòng Cảnh sát giao thông hoặc Công an cấp xã nơi được bố trí điểm tiếp nhận kiểm tra hồ sơ khi tiếp nhận phải: Tra cứu thông tin về giấy phép lái xe từ hệ thống thông tin giấy phép lái xe, trường hợp chưa có thông tin phải có văn bản đề nghị xác minh giấy phép lái xe đã cấp theo mẫu số 01 Phụ lục XII ban hành kèm theo Thông tư số 12/2025/TT-BCA. Khi chưa có kết quả xác minh giấy phép lái xe thì không giải quyết đề nghị; Tra cứu phần mềm cơ sở dữ liệu về trật tự, an toàn giao thông đường bộ hoặc tra cứu vi phạm của người lái xe thông qua tài khoản định danh điện tử. - Trường hợp giấy phép lái xe không thuộc đối tượng được đổi hoặc hồ sơ không đúng theo quy định, phải thông báo trực tiếp hoặc bằng văn bản hoặc qua hệ thống dịch vụ công trực tuyến những nội dung cần bổ sung hoặc sửa đổi cho cá nhân trong thời hạn 02 ngày làm việc, kể từ ngày nhận hồ sơ. - Phòng Cảnh sát giao thông hoặc Công an cấp xã nơi được bố trí điểm tiếp nhận thực hiện nhập thông tin điện tử; in phiếu hẹn trả kết quả sau 05 ngày làm việc kể từ ngày nhận đủ hồ sơ hợp lệ hoặc gửi thông tin hẹn trả qua hệ thống dịch vụ công; * Trong thời hạn 01 ngày làm việc, kể từ ngày nhận đủ hồ sơ hợp lệ theo quy định (bao gồm xác thực tài khoản định danh điện tử qua hệ thống định danh và xác thực điện tử, có kết quả xác minh giấy phép lái xe đối với trường hợp phải xác minh theo mẫu số 02 Phụ lục XII ban hành kèm theo Thông tư số 12/2025/TT-BCA), Phòng Cảnh sát giao thông chuyển dữ liệu đến Cục Cảnh sát giao thông để quản lý tập trung và cấp giấy phép lái xe. Phòng Cảnh sát giao thông tổ chức in và trả giấy phép lái xe; * Việc trả giấy phép lái xe được thực hiện tại Phòng Cảnh sát giao thông hoặc Công an cấp xã nơi được bố trí điểm tiếp nhận hoặc thông qua dịch vụ bưu chính theo yêu cầu của cá nhân, trường hợp nộp hồ sơ qua hệ thống dịch vụ công trực tuyến, giấy phép lái xe được trả cho đúng cá nhân đổi giấy phép lái xe, khi nhận giấy phép lái xe, người lái xe chịu trách nhiệm gửi giấy phép lái xe cũ đến cơ quan cấp giấy phép lái xe để tiêu hủy theo quy định; * Giấy phép lái xe cũ được tiêu hủy, trừ trường hợp đổi giấy phép lái xe cho người có giấy phép lái xe tích hợp đang trong thời gian bị tước giấy phép lái xe Bản chính hồ sơ đổi giấy phép lái xe (trừ trường hợp đổi giấy phép lái xe qua hệ thống dịch vụ công trực tuyến) được lưu trữ lại Phòng Cảnh sát giao thông trong thời hạn 02 năm kể từ ngày đổi giấy phép lái xe và tiêu hủy giấy phép lái xe cũ. Trường hợp cá nhân nộp hồ sơ trực tiếp tại Công an cấp xã nơi bố trí điểm tiếp nhận, hồ sơ đổi giấy phép lái xe được chuyển đến Phòng Cảnh sát giao thông để lưu trữ sau khi trả giấy phép lái xe và tiêu hủy giấy phép lái xe cũ.",
+          "procedure_flow": "1. a) Nộp hồ sơ TTHC: - Cá nhân lập hồ sơ gửi trực tiếp tại Công an cấp xã nơi được bố trí điểm tiếp nhận hồ sơ hoặc Phòng Cảnh sát giao thông hoặc gửi qua hệ thống dịch vụ công trực tuyến; - Trường hợp nộp hồ sơ trực tiếp cá nhân phải chụp ảnh trực tiếp tại cơ quan cấp giấy phép lái xe và phải hoàn thành nghĩa vụ nộp lệ phí khi được tiếp nhận hồ sơ. - Trường hợp nộp hồ sơ qua hệ thống dịch vụ công trực tuyến, cá nhân kê khai theo hướng dẫn, phải chịu trách nhiệm về tính chính xác, tính hợp pháp của nội dung đã kê khai và phải hoàn thành nghĩa vụ nộp lệ phí cấp giấy phép lái xe thông qua chức năng thanh toán của hệ thống dịch vụ công trực tuyến theo quy định và nộp phí sử dụng dịch vụ khác theo nhu cầu của cá nhân. b) Giải quyết TTHC: * Phòng Cảnh sát giao thông hoặc Công an cấp xã nơi được bố trí điểm tiếp nhận kiểm tra hồ sơ khi tiếp nhận phải: Tra cứu thông tin về giấy phép lái xe từ hệ thống thông tin giấy phép lái xe, trường hợp chưa có thông tin phải có văn bản đề nghị xác minh giấy phép lái xe đã cấp theo mẫu số 01 Phụ lục XII ban hành kèm theo Thông tư số 12/2025/TT-BCA. Khi chưa có kết quả xác minh giấy phép lái xe thì không giải quyết đề nghị; Tra cứu phần mềm cơ sở dữ liệu về trật tự, an toàn giao thông đường bộ hoặc tra cứu vi phạm của người lái xe thông qua tài khoản định danh điện tử. - Trường hợp giấy phép lái xe không thuộc đối tượng được đổi hoặc hồ sơ không đúng theo quy định, phải thông báo trực tiếp hoặc bằng văn bản hoặc qua hệ thống dịch vụ công trực tuyến những nội dung cần bổ sung hoặc sửa đổi cho cá nhân trong thời hạn 02 ngày làm việc, kể từ ngày nhận hồ sơ. - Phòng Cảnh sát giao thông hoặc Công an cấp xã nơi được bố trí điểm tiếp nhận thực hiện nhập thông tin điện tử; in phiếu hẹn trả kết quả sau 05 ngày làm việc kể từ ngày nhận đủ hồ sơ hợp lệ hoặc gửi thông tin hẹn trả qua hệ thống dịch vụ công; * Trong thời hạn 01 ngày làm việc, kể từ ngày nhận đủ hồ sơ hợp lệ theo quy định (bao gồm xác thực tài khoản định danh điện tử qua hệ thống định danh và xác thực điện tử, có kết quả xác minh giấy phép lái xe đối với trường hợp phải xác minh theo mẫu số 02 Phụ lục XII ban hành kèm theo Thông tư số 12/2025/TT-BCA), Phòng Cảnh sát giao thông chuyển dữ liệu đến Cục Cảnh sát giao thông để quản lý tập trung và cấp giấy phép lái xe. Phòng Cảnh sát giao thông tổ chức in và trả giấy phép lái xe; * Việc trả giấy phép lái xe được thực hiện tại Phòng Cảnh sát giao thông hoặc Công an cấp xã nơi được bố trí điểm tiếp nhận hoặc thông qua dịch vụ bưu chính theo yêu cầu của cá nhân, trường hợp nộp hồ sơ qua hệ thống dịch vụ công trực tuyến, giấy phép lái xe được trả cho đúng cá nhân đổi giấy phép lái xe, khi nhận giấy phép lái xe, người lái xe chịu trách nhiệm gửi giấy phép lái xe cũ đến cơ quan cấp giấy phép lái xe để tiêu hủy theo quy định; * Giấy phép lái xe cũ được tiêu hủy, trừ trường hợp đổi giấy phép lái xe cho người có giấy phép lái xe tích hợp đang trong thời gian bị tước giấy phép lái xe Bản chính hồ sơ đổi giấy phép lái xe (trừ trường hợp đổi giấy phép lái xe qua hệ thống dịch vụ công trực tuyến) được lưu trữ lại Phòng Cảnh sát giao thông trong thời hạn 02 năm kể từ ngày đổi giấy phép lái xe và tiêu hủy giấy phép lái xe cũ. Trường hợp cá nhân nộp hồ sơ trực tiếp tại Công an cấp xã nơi bố trí điểm tiếp nhận, hồ sơ đổi giấy phép lái xe được chuyển đến Phòng Cảnh sát giao thông để lưu trữ sau khi trả giấy phép lái xe và tiêu hủy giấy phép lái xe cũ.",
+          "requirements": "Không có thông tin",
+          "submission_methods": [
+            "Trực tuyến",
+            "Trực tiếp"
+          ],
+          "processing_time_values": [
+            "5 ngày làm việc",
+            "5 ngày làm việc"
+          ],
+          "document_groups": [],
+          "result_items": [
+            "Giấy phép lái xe (Mã: `KQ.G01.000185`)"
+          ],
+          "legal_bases": []
+        },
+        {
+          "procedure_code": "3.000349",
+          "procedure_title": "Đổi giấy phép lái xe quân sự do Bộ Quốc phòng cấp",
+          "field": "Sát hạch, cấp giấy phép lái xe",
+          "subdomain_key": "giay_phep_lai_xe",
+          "subdomain_label": "Giấy phép lái xe",
+          "event_id": 315,
+          "operation_group": "doi_gplx_quan_su",
+          "operation_key": "doi_giay_phep_lai_xe_quan_su_do_bo_quoc_phong_cap",
+          "agency": "Công an cấp Xã",
+          "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bf7-bdb6-726d-901c-b37c0d197b8d",
+          "raw_data_file": "C:\\Users\\ku060\\Downloads\\VAIC source\\data-pipeline\\raw_data\\3_000349\\3_000349_procedure_detail.md",
+          "raw_data_available": true,
+          "overview": "1. a) Nộp hồ sơ TTHC: - Cá nhân lập hồ sơ gửi trực tiếp tại Phòng Cảnh sát giao thông hoặc Công an xã, phường, thị trấn nơi được bố trí điểm tiếp nhận hồ sơ; - Cá nhân chụp ảnh trực tiếp tại cơ quan tiếp nhận hồ sơ, xuất trình bản chính giấy tờ chứng minh thôi không còn phục vụ trong lực lượng Quân đội nhân dân để đối chiếu và phải hoàn thành nghĩa vụ nộp lệ phí khi được tiếp nhận hồ sơ. b) Giải quyết TTHC: * Phòng Cảnh sát giao thông hoặc Công an cấp xã nơi bố trí điểm tiếp nhận kiểm tra hồ sơ khi tiếp nhận, trường hợp phát hiện có nghi vấn, Phòng Cảnh sát giao thông có văn bản đề nghị đơn vị chức năng thuộc Bộ Quốc phòng xác minh giấy phép lái xe đã cấp theo mẫu số 01 Phụ lục XII ban hành kèm theo Thông tư này. Khi chưa có kết quả xác minh giấy phép lái xe hoặc có kết quả xác minh giấy phép lái xe không do Bộ Quốc phòng cấp thì không đổi giấy phép lái xe, đồng thời phải tra cứu phần mềm cơ sở dữ liệu về trật tự, an toàn giao thông đường bộ hoặc tra cứu vi phạm của người lái xe thông qua tài khoản định danh điện tử. Trường hợp giấy phép lái xe không thuộc đối tượng được đổi hoặc hồ sơ không đúng theo quy định, phải thông báo trực tiếp hoặc bằng văn bản những nội dung cần bổ sung hoặc sửa đổi cho cá nhân trong thời hạn 02 ngày làm việc, kể từ ngày nhận hồ sơ. Phòng Cảnh sát giao thông hoặc Công an cấp xã nơi bố trí điểm tiếp nhận nhập thông tin điện tử, in phiếu hẹn trả kết quả sau 05 ngày làm việc kể từ ngày nhận đủ hồ sơ hợp lệ; * Trong thời hạn 01 ngày làm việc, kể từ ngày nhận đủ hồ sơ hợp lệ theo quy định (bao gồm xác thực tài khoản định danh điện tử qua hệ thống định danh và xác thực điện tử, có kết quả xác minh giấy phép lái xe đối với trường hợp phát hiện nghi vấn), Phòng Cảnh sát giao thông chuyển dữ liệu đến Cục Cảnh sát giao thông để quản lý tập trung và cấp giấy phép lái xe. Phòng Cảnh sát giao thông tổ chức in và trả giấy phép lái xe; - Việc trả giấy phép lái xe được thực hiện tại cơ quan tiếp nhận hồ sơ hoặc thông qua dịch vụ bưu chính theo yêu cầu của cá nhân. * Phòng Cảnh sát giao thông lưu bản sao hồ sơ đổi giấy phép lái xe quân sự do Bộ Quốc phòng cấp trong thời hạn 02 năm, kể từ ngày cấp giấy phép lái xe và tiêu hủy giấy phép lái xe cũ. Trường hợp cá nhân nộp hồ sơ trực tiếp tại Công an cấp xã nơi được bố trí điểm tiếp nhận, hồ sơ đổi giấy phép lái xe được chuyển đến Phòng Cảnh sát giao thông để lưu trữ sau khi trả giấy phép lái xe và tiêu hủy giấy phép lái xe cũ.",
+          "procedure_flow": "1. a) Nộp hồ sơ TTHC: - Cá nhân lập hồ sơ gửi trực tiếp tại Phòng Cảnh sát giao thông hoặc Công an xã, phường, thị trấn nơi được bố trí điểm tiếp nhận hồ sơ; - Cá nhân chụp ảnh trực tiếp tại cơ quan tiếp nhận hồ sơ, xuất trình bản chính giấy tờ chứng minh thôi không còn phục vụ trong lực lượng Quân đội nhân dân để đối chiếu và phải hoàn thành nghĩa vụ nộp lệ phí khi được tiếp nhận hồ sơ. b) Giải quyết TTHC: * Phòng Cảnh sát giao thông hoặc Công an cấp xã nơi bố trí điểm tiếp nhận kiểm tra hồ sơ khi tiếp nhận, trường hợp phát hiện có nghi vấn, Phòng Cảnh sát giao thông có văn bản đề nghị đơn vị chức năng thuộc Bộ Quốc phòng xác minh giấy phép lái xe đã cấp theo mẫu số 01 Phụ lục XII ban hành kèm theo Thông tư này. Khi chưa có kết quả xác minh giấy phép lái xe hoặc có kết quả xác minh giấy phép lái xe không do Bộ Quốc phòng cấp thì không đổi giấy phép lái xe, đồng thời phải tra cứu phần mềm cơ sở dữ liệu về trật tự, an toàn giao thông đường bộ hoặc tra cứu vi phạm của người lái xe thông qua tài khoản định danh điện tử. Trường hợp giấy phép lái xe không thuộc đối tượng được đổi hoặc hồ sơ không đúng theo quy định, phải thông báo trực tiếp hoặc bằng văn bản những nội dung cần bổ sung hoặc sửa đổi cho cá nhân trong thời hạn 02 ngày làm việc, kể từ ngày nhận hồ sơ. Phòng Cảnh sát giao thông hoặc Công an cấp xã nơi bố trí điểm tiếp nhận nhập thông tin điện tử, in phiếu hẹn trả kết quả sau 05 ngày làm việc kể từ ngày nhận đủ hồ sơ hợp lệ; * Trong thời hạn 01 ngày làm việc, kể từ ngày nhận đủ hồ sơ hợp lệ theo quy định (bao gồm xác thực tài khoản định danh điện tử qua hệ thống định danh và xác thực điện tử, có kết quả xác minh giấy phép lái xe đối với trường hợp phát hiện nghi vấn), Phòng Cảnh sát giao thông chuyển dữ liệu đến Cục Cảnh sát giao thông để quản lý tập trung và cấp giấy phép lái xe. Phòng Cảnh sát giao thông tổ chức in và trả giấy phép lái xe; - Việc trả giấy phép lái xe được thực hiện tại cơ quan tiếp nhận hồ sơ hoặc thông qua dịch vụ bưu chính theo yêu cầu của cá nhân. * Phòng Cảnh sát giao thông lưu bản sao hồ sơ đổi giấy phép lái xe quân sự do Bộ Quốc phòng cấp trong thời hạn 02 năm, kể từ ngày cấp giấy phép lái xe và tiêu hủy giấy phép lái xe cũ. Trường hợp cá nhân nộp hồ sơ trực tiếp tại Công an cấp xã nơi được bố trí điểm tiếp nhận, hồ sơ đổi giấy phép lái xe được chuyển đến Phòng Cảnh sát giao thông để lưu trữ sau khi trả giấy phép lái xe và tiêu hủy giấy phép lái xe cũ.",
+          "requirements": "Không có thông tin",
+          "submission_methods": [
+            "Trực tiếp"
+          ],
+          "processing_time_values": [
+            "5 ngày làm việc"
+          ],
+          "document_groups": [],
+          "result_items": [
+            "Giấy phép lái xe (Mã: `KQ.G01.000185`)"
+          ],
+          "legal_bases": []
+        },
+        {
+          "procedure_code": "3.000350",
+          "procedure_title": "Đổi giấy phép lái xe Công an nhân dân",
+          "field": "Sát hạch, cấp giấy phép lái xe",
+          "subdomain_key": "giay_phep_lai_xe",
+          "subdomain_label": "Giấy phép lái xe",
+          "event_id": 315,
+          "operation_group": "doi_gplx_cong_an",
+          "operation_key": "doi_giay_phep_lai_xe_cong_an_nhan_dan",
+          "agency": "Công an cấp Xã",
+          "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bf7-bda8-740c-9f49-d8c9574b9e8c",
+          "raw_data_file": "C:\\Users\\ku060\\Downloads\\VAIC source\\data-pipeline\\raw_data\\3_000350\\3_000350_procedure_detail.md",
+          "raw_data_available": true,
+          "overview": "1. a) Nộp hồ sơ TTHC: - Cá nhân lập hồ sơ gửi đến Phòng Cảnh sát giao thông hoặc Công an cấp xã nơi được bố trí điểm tiếp nhận hồ sơ; - Cá nhân chụp ảnh trực tiếp tại cơ quan tiếp nhận hồ sơ, xuất trình bản chính giấy tờ chứng minh thôi không còn phục vụ trong lực lượng Công an nhân dân để đối chiếu và phải hoàn thành nghĩa vụ nộp lệ phí khi được tiếp nhận hồ sơ; b) Giải quyết TTHC: * Phòng Cảnh sát giao thông hoặc Công an cấp xã nơi được bố trí điểm tiếp nhận kiểm tra hồ sơ khi tiếp nhận, phải: Tra cứu thông tin về giấy phép lái xe từ hệ thống thông tin giấy phép lái xe, trường hợp chưa có thông tin phải có văn bản đề nghị xác minh giấy phép lái xe đã cấp theo mẫu số 01 Phụ lục XII ban hành kèm theo Thông tư này. Khi chưa có kết quả xác minh giấy phép lái xe thì không đổi giấy phép lái xe; Tra cứu phần mềm cơ sở dữ liệu về trật tự, an toàn giao thông đường bộ hoặc tra cứu vi phạm của người lái xe thông qua tài khoản định danh điện tử; Trường hợp giấy phép lái xe không thuộc đối tượng được đổi hoặc hồ sơ không đúng theo quy định, phải thông báo trực tiếp hoặc bằng văn bản những nội dung cần bổ sung hoặc sửa đổi cho cá nhân trong thời hạn 02 ngày làm việc, kể từ ngày nhận hồ sơ; Phòng Cảnh sát giao thông hoặc Công an cấp xã nơi được bố trí điểm tiếp nhận nhập thông tin điện tử, in phiếu hẹn trả kết quả sau 05 ngày làm việc kể từ ngày nhận đủ hồ sơ hợp lệ; * Trong thời hạn 01 ngày làm việc, kể từ ngày nhận đủ hồ sơ hợp lệ theo quy định (bao gồm xác thực tài khoản định danh điện tử qua hệ thống định danh và xác thực điện tử, có kết quả xác minh giấy phép lái xe đối với trường hợp phải xác minh theo mẫu số 02 Phụ lục XII ban hành kèm theo Thông tư này), Phòng Cảnh sát giao thông chuyển dữ liệu đến Cục Cảnh sát giao thông để quản lý tập trung và cấp giấy phép lái xe. Phòng Cảnh sát giao thông tổ chức in và trả giấy phép lái xe; * Việc trả giấy phép lái xe được thực hiện tại cơ quan tiếp nhận hồ sơ hoặc thông qua dịch vụ bưu chính theo yêu cầu của cá nhân; * Phòng Cảnh sát giao thông lưu bản sao hồ sơ đổi giấy phép lái xe Công an nhân dân trong thời hạn 02 năm kể từ ngày cấp giấy phép lái xe và tiêu hủy giấy phép lái xe cũ; Trường hợp cá nhân nộp hồ sơ trực tiếp tại Công an cấp xã nơi được bố trí điểm tiếp nhận, hồ sơ đổi giấy phép lái xe được chuyển đến Phòng Cảnh sát giao thông để lưu trữ sau khi trả giấy phép lái xe và tiêu hủy giấy phép lái xe cũ;",
+          "procedure_flow": "1. a) Nộp hồ sơ TTHC: - Cá nhân lập hồ sơ gửi đến Phòng Cảnh sát giao thông hoặc Công an cấp xã nơi được bố trí điểm tiếp nhận hồ sơ; - Cá nhân chụp ảnh trực tiếp tại cơ quan tiếp nhận hồ sơ, xuất trình bản chính giấy tờ chứng minh thôi không còn phục vụ trong lực lượng Công an nhân dân để đối chiếu và phải hoàn thành nghĩa vụ nộp lệ phí khi được tiếp nhận hồ sơ; b) Giải quyết TTHC: * Phòng Cảnh sát giao thông hoặc Công an cấp xã nơi được bố trí điểm tiếp nhận kiểm tra hồ sơ khi tiếp nhận, phải: Tra cứu thông tin về giấy phép lái xe từ hệ thống thông tin giấy phép lái xe, trường hợp chưa có thông tin phải có văn bản đề nghị xác minh giấy phép lái xe đã cấp theo mẫu số 01 Phụ lục XII ban hành kèm theo Thông tư này. Khi chưa có kết quả xác minh giấy phép lái xe thì không đổi giấy phép lái xe; Tra cứu phần mềm cơ sở dữ liệu về trật tự, an toàn giao thông đường bộ hoặc tra cứu vi phạm của người lái xe thông qua tài khoản định danh điện tử; Trường hợp giấy phép lái xe không thuộc đối tượng được đổi hoặc hồ sơ không đúng theo quy định, phải thông báo trực tiếp hoặc bằng văn bản những nội dung cần bổ sung hoặc sửa đổi cho cá nhân trong thời hạn 02 ngày làm việc, kể từ ngày nhận hồ sơ; Phòng Cảnh sát giao thông hoặc Công an cấp xã nơi được bố trí điểm tiếp nhận nhập thông tin điện tử, in phiếu hẹn trả kết quả sau 05 ngày làm việc kể từ ngày nhận đủ hồ sơ hợp lệ; * Trong thời hạn 01 ngày làm việc, kể từ ngày nhận đủ hồ sơ hợp lệ theo quy định (bao gồm xác thực tài khoản định danh điện tử qua hệ thống định danh và xác thực điện tử, có kết quả xác minh giấy phép lái xe đối với trường hợp phải xác minh theo mẫu số 02 Phụ lục XII ban hành kèm theo Thông tư này), Phòng Cảnh sát giao thông chuyển dữ liệu đến Cục Cảnh sát giao thông để quản lý tập trung và cấp giấy phép lái xe. Phòng Cảnh sát giao thông tổ chức in và trả giấy phép lái xe; * Việc trả giấy phép lái xe được thực hiện tại cơ quan tiếp nhận hồ sơ hoặc thông qua dịch vụ bưu chính theo yêu cầu của cá nhân; * Phòng Cảnh sát giao thông lưu bản sao hồ sơ đổi giấy phép lái xe Công an nhân dân trong thời hạn 02 năm kể từ ngày cấp giấy phép lái xe và tiêu hủy giấy phép lái xe cũ; Trường hợp cá nhân nộp hồ sơ trực tiếp tại Công an cấp xã nơi được bố trí điểm tiếp nhận, hồ sơ đổi giấy phép lái xe được chuyển đến Phòng Cảnh sát giao thông để lưu trữ sau khi trả giấy phép lái xe và tiêu hủy giấy phép lái xe cũ;",
+          "requirements": "Không có thông tin",
+          "submission_methods": [
+            "Trực tiếp"
+          ],
+          "processing_time_values": [
+            "5 ngày làm việc"
+          ],
+          "document_groups": [],
+          "result_items": [
+            "Giấy phép lái xe (Mã: `KQ.G01.000185`)"
+          ],
+          "legal_bases": []
+        },
+        {
+          "procedure_code": "3.000351",
+          "procedure_title": "Đổi giấy phép lái xe hoặc bằng lái xe của người nước ngoài",
+          "field": "Sát hạch, cấp giấy phép lái xe",
+          "subdomain_key": "giay_phep_lai_xe",
+          "subdomain_label": "Giấy phép lái xe",
+          "event_id": 315,
+          "operation_group": "doi_gplx_nuoc_ngoai",
+          "operation_key": "doi_giay_phep_lai_xe_hoac_bang_lai_xe_cua_nguoi_nuoc_ngoai",
+          "agency": "Công an cấp Xã",
+          "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bf7-bdb8-71ce-b6c1-a3c964a0956f",
+          "raw_data_file": "C:\\Users\\ku060\\Downloads\\VAIC source\\data-pipeline\\raw_data\\3_000351\\3_000351_procedure_detail.md",
+          "raw_data_available": true,
+          "overview": "1. a) Nộp hồ sơ TTHC: - Cá nhân lập hồ sơ gửi đến Phòng Cảnh sát giao thông hoặc Công an cấp xã nơi được bố trí điểm tiếp nhận; - Cá nhân chụp ảnh trực tiếp tại cơ quan tiếp nhận hồ sơ và phải xuất trình bản chính các hồ sơ nêu trên (trừ các bản chính đã gửi) để đối chiếu và phải hoàn thành nghĩa vụ nộp lệ phí khi được tiếp nhận hồ sơ. b) Giải quyết TTHC: - Trường hợp hồ sơ giấy phép lái xe hợp lệ, Phòng Cảnh sát giao thông hoặc Công an cấp xã nơi được bố trí điểm tiếp nhận nhập thông tin điện tử; in phiếu hẹn trả kết quả sau 05 ngày làm việc kể từ ngày tiếp nhận hồ sơ; trường hợp không đổi giấy phép lái xe thì phải trả lời bằng văn bản và nêu rõ lý do; - Trong thời hạn 01 ngày làm việc, kể từ ngày nhận đủ hồ sơ hợp lệ theo quy định (bao gồm xác thực tài khoản định danh điện tử qua hệ thống định danh và xác thực điện tử), Phòng Cảnh sát giao thông chuyển dữ liệu đến Cục Cảnh sát giao thông để quản lý tập trung và cấp giấy phép lái xe. Phòng Cảnh sát giao thông tổ chức in và trả giấy phép lái xe; - Việc trả giấy phép lái xe được thực hiện tại cơ quan tiếp nhận hồ sơ hoặc thông qua dịch vụ bưu chính theo yêu cầu của cá nhân; - Trường hợp phát hiện có nghi vấn về việc nhập cảnh, cư trú của người nước ngoài tại Việt Nam, cơ quan đổi giấy phép lái xe có văn bản đề nghị Bộ Ngoại giao, Cục Quản lý Xuất nhập cảnh, Phòng Quản lý xuất nhập cảnh thuộc Công an cấp tỉnh xác minh.",
+          "procedure_flow": "1. a) Nộp hồ sơ TTHC: - Cá nhân lập hồ sơ gửi đến Phòng Cảnh sát giao thông hoặc Công an cấp xã nơi được bố trí điểm tiếp nhận; - Cá nhân chụp ảnh trực tiếp tại cơ quan tiếp nhận hồ sơ và phải xuất trình bản chính các hồ sơ nêu trên (trừ các bản chính đã gửi) để đối chiếu và phải hoàn thành nghĩa vụ nộp lệ phí khi được tiếp nhận hồ sơ. b) Giải quyết TTHC: - Trường hợp hồ sơ giấy phép lái xe hợp lệ, Phòng Cảnh sát giao thông hoặc Công an cấp xã nơi được bố trí điểm tiếp nhận nhập thông tin điện tử; in phiếu hẹn trả kết quả sau 05 ngày làm việc kể từ ngày tiếp nhận hồ sơ; trường hợp không đổi giấy phép lái xe thì phải trả lời bằng văn bản và nêu rõ lý do; - Trong thời hạn 01 ngày làm việc, kể từ ngày nhận đủ hồ sơ hợp lệ theo quy định (bao gồm xác thực tài khoản định danh điện tử qua hệ thống định danh và xác thực điện tử), Phòng Cảnh sát giao thông chuyển dữ liệu đến Cục Cảnh sát giao thông để quản lý tập trung và cấp giấy phép lái xe. Phòng Cảnh sát giao thông tổ chức in và trả giấy phép lái xe; - Việc trả giấy phép lái xe được thực hiện tại cơ quan tiếp nhận hồ sơ hoặc thông qua dịch vụ bưu chính theo yêu cầu của cá nhân; - Trường hợp phát hiện có nghi vấn về việc nhập cảnh, cư trú của người nước ngoài tại Việt Nam, cơ quan đổi giấy phép lái xe có văn bản đề nghị Bộ Ngoại giao, Cục Quản lý Xuất nhập cảnh, Phòng Quản lý xuất nhập cảnh thuộc Công an cấp tỉnh xác minh.",
+          "requirements": "Không có thông tin",
+          "submission_methods": [
+            "Trực tiếp"
+          ],
+          "processing_time_values": [
+            "5 ngày làm việc"
+          ],
+          "document_groups": [],
+          "result_items": [
+            "Giấy phép lái xe (Mã: `KQ.G01.000185`)"
+          ],
+          "legal_bases": []
+        },
+        {
+          "procedure_code": "3.000352",
+          "procedure_title": "Thu hồi giấy phép lái xe",
+          "field": "Sát hạch, cấp giấy phép lái xe",
+          "subdomain_key": "giay_phep_lai_xe",
+          "subdomain_label": "Giấy phép lái xe",
+          "event_id": 315,
+          "operation_group": "thu_hoi_gplx",
+          "operation_key": "thu_hoi_giay_phep_lai_xe",
+          "agency": "",
+          "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bf7-bdb3-71bd-be57-c83ddb59c21e",
+          "raw_data_file": "C:\\Users\\ku060\\Downloads\\VAIC source\\data-pipeline\\raw_data\\3_000352\\3_000352_procedure_detail.md",
+          "raw_data_available": true,
+          "overview": "1. a) Nộp hồ sơ TTHC: Cá nhân nộp lại giấy phép lái xe theo quyết định thu hồi hủy bỏ giấy phép lái xe. b) Giải quyết TTHC: - Trong thời hạn 03 ngày làm việc, kể từ ngày phát hiện người có giấy phép lái xe thuộc một trong các trường hợp quy định tại khoản 5 Điều 62 Luật Trật tự, an toàn giao thông đường bộ, thủ trưởng cơ quan có thẩm quyền cấp giấy phép lái xe ra quyết định thu hồi để hủy bỏ giấy phép lái xe. Nội dung của quyết định nêu rõ lý do thu hồi và hủy bỏ; - Trong thời hạn 05 ngày làm việc kể từ ngày nhận được Quyết định thu hồi giấy phép lái xe, cá nhân phải nộp giấy phép lái xe bị thu hồi đến cơ quan thu hồi giấy phép lái xe và cơ quan có thẩm quyền cấp giấy phép lái xe có trách nhiệm thu hồi giấy phép lái xe đã cấp và hủy bỏ theo quy định.",
+          "procedure_flow": "1. a) Nộp hồ sơ TTHC: Cá nhân nộp lại giấy phép lái xe theo quyết định thu hồi hủy bỏ giấy phép lái xe. b) Giải quyết TTHC: - Trong thời hạn 03 ngày làm việc, kể từ ngày phát hiện người có giấy phép lái xe thuộc một trong các trường hợp quy định tại khoản 5 Điều 62 Luật Trật tự, an toàn giao thông đường bộ, thủ trưởng cơ quan có thẩm quyền cấp giấy phép lái xe ra quyết định thu hồi để hủy bỏ giấy phép lái xe. Nội dung của quyết định nêu rõ lý do thu hồi và hủy bỏ; - Trong thời hạn 05 ngày làm việc kể từ ngày nhận được Quyết định thu hồi giấy phép lái xe, cá nhân phải nộp giấy phép lái xe bị thu hồi đến cơ quan thu hồi giấy phép lái xe và cơ quan có thẩm quyền cấp giấy phép lái xe có trách nhiệm thu hồi giấy phép lái xe đã cấp và hủy bỏ theo quy định.",
+          "requirements": "Không có thông tin",
+          "submission_methods": [
+            "Trực tiếp"
+          ],
+          "processing_time_values": [
+            "5 ngày làm việc"
+          ],
+          "document_groups": [],
+          "result_items": [
+            "Giấy phép lái xe (Mã: `KQ.G01.000185`)"
+          ],
+          "legal_bases": []
+        },
+        {
+          "procedure_code": "3.000353",
+          "procedure_title": "Cấp giấy phép lái xe quốc tế",
+          "field": "Sát hạch, cấp giấy phép lái xe",
+          "subdomain_key": "giay_phep_lai_xe",
+          "subdomain_label": "Giấy phép lái xe",
+          "event_id": 315,
+          "operation_group": "gplx_quoc_te",
+          "operation_key": "cap_giay_phep_lai_xe_quoc_te",
+          "agency": "",
+          "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bf7-bdae-722c-89a4-d9e6d20a86b1",
+          "raw_data_file": "C:\\Users\\ku060\\Downloads\\VAIC source\\data-pipeline\\raw_data\\3_000353\\3_000353_procedure_detail.md",
+          "raw_data_available": true,
+          "overview": "1. a) Nộp hồ sơ TTHC: Cá nhân gửi đề nghị trực tiếp tại Cục Cảnh sát giao thông hoặc Phòng Cảnh sát giao thông hoặc gửi qua hệ thống dịch vụ công trực tuyến. b) Giải quyết TTHC: * Đối với người Việt Nam, người nước ngoài có thẻ thường trú hoặc thẻ tạm trú tại Việt Nam, có giấy phép lái xe quốc gia do Việt Nam cấp bằng vật liệu PET còn giá trị sử dụng: - Trường hợp đề nghị trực tiếp, phải xuất trình bản chính giấy phép lái xe quốc gia do Việt Nam cấp, hộ chiếu, thẻ thường trú (đối với người nước ngoài) để thực hiện kiểm tra tính chính xác, hợp pháp của việc cấp IDP và phải hoàn thành nghĩa vụ nộp lệ phí khi được tiếp nhận hồ sơ theo quy định; - Trường hợp gửi qua hệ thống dịch vụ công trực tuyến, cá nhân kê khai theo hướng dẫn và phải chịu trách nhiệm về tính chính xác, tính hợp pháp của nội dung đã kê khai, phải hoàn thành nghĩa vụ nộp lệ phí thông qua chức năng thanh toán lệ phí của hệ thống dịch vụ công trực tuyến và nộp phí sử dụng dịch vụ khác theo nhu cầu của cá nhân; - Cơ quan tiếp nhận hồ sơ nhập thông tin điện tử; in phiếu hẹn trả kết quả sau 05 ngày làm việc kể từ ngày tiếp nhận hồ sơ hợp lệ hoặc gửi thông tin hẹn trả qua hệ thống dịch vụ công và có trách nhiệm thông báo trực tiếp hoặc bằng văn bản hoặc qua hệ thống dịch vụ công trực tuyến những nội dung cần bổ sung hoặc sửa đổi cho cá nhân trong thời hạn 02 ngày làm việc, kể từ ngày tiếp nhận hồ sơ; - Trong thời hạn 01 ngày làm việc, kể từ ngày nhận đủ hồ sơ hợp lệ theo quy định (bao gồm xác thực tài khoản định danh điện tử qua hệ thống định danh và xác thực điện tử), Phòng Cảnh sát giao thông chuyển dữ liệu đến Cục Cảnh sát giao thông để quản lý tập trung và cấp giấy phép lái xe; - In và trả giấy phép lái xe được thực hiện tại Cục Cảnh sát giao thông hoặc Phòng Cảnh sát giao thông hoặc thông qua dịch vụ bưu chính theo yêu cầu của cá nhân. * Đối với người Việt Nam, người nước ngoài có thẻ thường trú hoặc thẻ tạm trú tại Việt Nam, có giấy phép lái xe quốc gia do các quốc gia là thành viên của điều ước quốc tế mà nước Cộng hòa xã hội chủ nghĩa Việt Nam là thành viên cấp, còn giá trị sử dụng: - Phải hoàn thành nghĩa vụ nộp lệ phí khi được tiếp nhận hồ sơ theo quy định. - Cơ quan tiếp nhận hồ sơ nhập thông tin điện tử; in phiếu hẹn trả kết quả sau 05 ngày làm việc kể từ ngày tiếp nhận hồ sơ hợp lệ và có trách nhiệm thông báo trực tiếp hoặc bằng văn bản những nội dung cần bổ sung hoặc sửa đổi cho cá nhân trong thời hạn 02 ngày làm việc, kể từ ngày tiếp nhận đề nghị; - IDP được cấp trong thời hạn 05 ngày làm việc kể từ ngày nhận đủ hồ sơ hợp lệ. Dữ liệu được chuyển về Cục Cảnh sát giao thông để quản lý tập trung và cấp IDP; - In và trả giấy phép lái xe được thực hiện tại Cục Cảnh sát giao thông hoặc Phòng Cảnh sát giao thông hoặc thông qua dịch vụ bưu chính theo yêu cầu của cá nhân.",
+          "procedure_flow": "1. a) Nộp hồ sơ TTHC: Cá nhân gửi đề nghị trực tiếp tại Cục Cảnh sát giao thông hoặc Phòng Cảnh sát giao thông hoặc gửi qua hệ thống dịch vụ công trực tuyến. b) Giải quyết TTHC: * Đối với người Việt Nam, người nước ngoài có thẻ thường trú hoặc thẻ tạm trú tại Việt Nam, có giấy phép lái xe quốc gia do Việt Nam cấp bằng vật liệu PET còn giá trị sử dụng: - Trường hợp đề nghị trực tiếp, phải xuất trình bản chính giấy phép lái xe quốc gia do Việt Nam cấp, hộ chiếu, thẻ thường trú (đối với người nước ngoài) để thực hiện kiểm tra tính chính xác, hợp pháp của việc cấp IDP và phải hoàn thành nghĩa vụ nộp lệ phí khi được tiếp nhận hồ sơ theo quy định; - Trường hợp gửi qua hệ thống dịch vụ công trực tuyến, cá nhân kê khai theo hướng dẫn và phải chịu trách nhiệm về tính chính xác, tính hợp pháp của nội dung đã kê khai, phải hoàn thành nghĩa vụ nộp lệ phí thông qua chức năng thanh toán lệ phí của hệ thống dịch vụ công trực tuyến và nộp phí sử dụng dịch vụ khác theo nhu cầu của cá nhân; - Cơ quan tiếp nhận hồ sơ nhập thông tin điện tử; in phiếu hẹn trả kết quả sau 05 ngày làm việc kể từ ngày tiếp nhận hồ sơ hợp lệ hoặc gửi thông tin hẹn trả qua hệ thống dịch vụ công và có trách nhiệm thông báo trực tiếp hoặc bằng văn bản hoặc qua hệ thống dịch vụ công trực tuyến những nội dung cần bổ sung hoặc sửa đổi cho cá nhân trong thời hạn 02 ngày làm việc, kể từ ngày tiếp nhận hồ sơ; - Trong thời hạn 01 ngày làm việc, kể từ ngày nhận đủ hồ sơ hợp lệ theo quy định (bao gồm xác thực tài khoản định danh điện tử qua hệ thống định danh và xác thực điện tử), Phòng Cảnh sát giao thông chuyển dữ liệu đến Cục Cảnh sát giao thông để quản lý tập trung và cấp giấy phép lái xe; - In và trả giấy phép lái xe được thực hiện tại Cục Cảnh sát giao thông hoặc Phòng Cảnh sát giao thông hoặc thông qua dịch vụ bưu chính theo yêu cầu của cá nhân. * Đối với người Việt Nam, người nước ngoài có thẻ thường trú hoặc thẻ tạm trú tại Việt Nam, có giấy phép lái xe quốc gia do các quốc gia là thành viên của điều ước quốc tế mà nước Cộng hòa xã hội chủ nghĩa Việt Nam là thành viên cấp, còn giá trị sử dụng: - Phải hoàn thành nghĩa vụ nộp lệ phí khi được tiếp nhận hồ sơ theo quy định. - Cơ quan tiếp nhận hồ sơ nhập thông tin điện tử; in phiếu hẹn trả kết quả sau 05 ngày làm việc kể từ ngày tiếp nhận hồ sơ hợp lệ và có trách nhiệm thông báo trực tiếp hoặc bằng văn bản những nội dung cần bổ sung hoặc sửa đổi cho cá nhân trong thời hạn 02 ngày làm việc, kể từ ngày tiếp nhận đề nghị; - IDP được cấp trong thời hạn 05 ngày làm việc kể từ ngày nhận đủ hồ sơ hợp lệ. Dữ liệu được chuyển về Cục Cảnh sát giao thông để quản lý tập trung và cấp IDP; - In và trả giấy phép lái xe được thực hiện tại Cục Cảnh sát giao thông hoặc Phòng Cảnh sát giao thông hoặc thông qua dịch vụ bưu chính theo yêu cầu của cá nhân.",
+          "requirements": "Không có thông tin",
+          "submission_methods": [
+            "Trực tuyến",
+            "Trực tiếp"
+          ],
+          "processing_time_values": [
+            "5 ngày làm việc",
+            "5 ngày làm việc"
+          ],
+          "document_groups": [
+            {
+              "group_name": "* Đối với người Việt Nam, người nước ngoài có thẻ thường trú hoặc thẻ tạm trú tại Việt Nam, có giấy phép lái xe quốc gia do Việt Nam cấp bằng vật liệu PET, còn giá trị sử dụng:",
+              "documents": [
+                {
+                  "Tên giấy tờ": "Đề nghị cấp IDP theo mẫu quy định tại Phụ lục XVI ban hành kèm theo Thông tư số 12/2025/TT-BCA và 01 ảnh kích thước 3x4cm",
+                  "Bản chính": "1",
+                  "Bản sao": "0",
+                  "Tệp đính kèm": "Không có"
+                },
+                {
+                  "Tên giấy tờ": "Xuất trình Hộ chiếu, thẻ thường trú (đối với người nước ngoài).",
+                  "Bản chính": "0",
+                  "Bản sao": "0",
+                  "Tệp đính kèm": "Không có"
+                },
+                {
+                  "Tên giấy tờ": "Xuất trình Bản chính giấy phép lái xe quốc gia do Việt Nam cấp",
+                  "Bản chính": "0",
+                  "Bản sao": "0",
+                  "Tệp đính kèm": "Không có"
+                }
+              ]
+            }
+          ],
+          "result_items": [
+            "Giấy phép lái xe quốc tế. (Mã: `KQ.G01.000186`)"
+          ],
+          "legal_bases": []
+        },
+        {
+          "procedure_code": "3.000355",
+          "procedure_title": "Cấp giấy phép sát hạch cho trung tâm sát hạch lái xe loại 1, loại 2",
+          "field": "Sát hạch, cấp giấy phép lái xe",
+          "subdomain_key": "giay_phep_lai_xe",
+          "subdomain_label": "Giấy phép lái xe",
+          "event_id": 315,
+          "operation_group": "co_so_sat_hach",
+          "operation_key": "cap_giay_phep_sat_hach_cho_trung_tam_sat_hach_lai_xe_loai_1_loai_2",
+          "agency": "",
+          "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bf7-bdc5-750e-82fd-552e8d66dc19",
+          "raw_data_file": "C:\\Users\\ku060\\Downloads\\VAIC source\\data-pipeline\\raw_data\\3_000355\\3_000355_procedure_detail.md",
+          "raw_data_available": true,
+          "overview": "1. a) Nộp hồ sơ TTHC: Trên cơ sở bố trí mặt bằng tổng thể hình sát hạch đã được Cục Cảnh sát giao thông chấp thuận, sau khi xây dựng xong trung tâm sát hạch lái xe, tổ chức, cá nhân gửi văn bản đề nghị cấp giấy phép sát hạch đến Cục Cảnh sát giao thông. b) Giải quyết TTHC: - Trong thời gian không quá 05 ngày làm việc kể từ ngày nhận văn bản đề nghị, Cục Cảnh sát giao thông tổ chức kiểm tra, lập biên bản và cấp giấy phép sát hạch cho trung tâm sát hạch lái xe. Trường hợp không cấp, phải trả lời bằng văn bản và nêu rõ lý do. - Việc trả kết quả được thực hiện tại trụ sở Cục Cảnh sát giao thông hoặc qua dịch vụ bưu chính.",
+          "procedure_flow": "1. a) Nộp hồ sơ TTHC: Trên cơ sở bố trí mặt bằng tổng thể hình sát hạch đã được Cục Cảnh sát giao thông chấp thuận, sau khi xây dựng xong trung tâm sát hạch lái xe, tổ chức, cá nhân gửi văn bản đề nghị cấp giấy phép sát hạch đến Cục Cảnh sát giao thông. b) Giải quyết TTHC: - Trong thời gian không quá 05 ngày làm việc kể từ ngày nhận văn bản đề nghị, Cục Cảnh sát giao thông tổ chức kiểm tra, lập biên bản và cấp giấy phép sát hạch cho trung tâm sát hạch lái xe. Trường hợp không cấp, phải trả lời bằng văn bản và nêu rõ lý do. - Việc trả kết quả được thực hiện tại trụ sở Cục Cảnh sát giao thông hoặc qua dịch vụ bưu chính.",
+          "requirements": "Không có thông tin",
+          "submission_methods": [
+            "Dịch vụ bưu chính",
+            "Trực tiếp"
+          ],
+          "processing_time_values": [
+            "5 ngày làm việc",
+            "5 ngày làm việc"
+          ],
+          "document_groups": [],
+          "result_items": [
+            "Giấy phép sát hạch (Mã: `KQ.G01.000187`)"
+          ],
+          "legal_bases": []
+        },
+        {
+          "procedure_code": "3.000356",
+          "procedure_title": "Cấp lại giấy phép sát hạch cho trung tâm sát hạch lái xe loại 1, loại 2",
+          "field": "Sát hạch, cấp giấy phép lái xe",
+          "subdomain_key": "giay_phep_lai_xe",
+          "subdomain_label": "Giấy phép lái xe",
+          "event_id": 315,
+          "operation_group": "co_so_sat_hach",
+          "operation_key": "cap_lai_giay_phep_sat_hach_cho_trung_tam_sat_hach_lai_xe_loai_1_loai_2",
+          "agency": "",
+          "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bf7-bdc4-72f9-b485-27ced4a5eacb",
+          "raw_data_file": "C:\\Users\\ku060\\Downloads\\VAIC source\\data-pipeline\\raw_data\\3_000356\\3_000356_procedure_detail.md",
+          "raw_data_available": true,
+          "overview": "1. a) Nộp hồ sơ TTHC: Trung tâm sát hạch lái xe gửi văn bản đề nghị cấp lại giấy phép sát hạch đến Cục Cảnh sát giao thông. b) Giải quyết TTHC: * Trường hợp cấp lại khi có sự thay đổi về thiết bị sát hạch, chủng loại, số lượng xe cơ giới sử dụng để sát hạch lái xe: - Trong thời gian không quá 05 ngày làm việc kể từ ngày nhận văn bản đề nghị, Cục Cảnh sát giao thông tổ chức kiểm tra, lập biên bản và cấp giấy phép sát hạch. Trường hợp không cấp, phải trả lời bằng văn bản và nêu rõ lý do; - Việc trả kết quả được thực hiện tại trụ sở cơ quan Cục Cảnh sát giao thông hoặc qua dịch vụ bưu chính. * Trường hợp cấp lại khi bị hỏng, mất, thay đổi tên của trung tâm sát hạch lái xe: - Trong thời hạn không quá 01 ngày làm việc kể từ ngày nhận văn bản đề nghị, Cục Cảnh sát giao thông kiểm tra tính đầy đủ của hồ sơ; trường hợp hồ sơ chưa đầy đủ thì hướng dẫn tổ chức, cá nhân hoàn thiện theo quy định; trong thời hạn không quá 03 ngày làm việc kể từ ngày nhận đủ hồ sơ theo quy định, Cục Cảnh sát giao thông cấp lại giấy phép sát hạch cho trung tâm sát hạch lái xe; trường hợp không cấp phải trả lời tổ chức, cá nhân bằng văn bản và nêu rõ lý do; - Việc trả kết quả được thực hiện tại trụ sở cơ quan Cục Cảnh sát giao thông hoặc qua dịch vụ bưu chính.",
+          "procedure_flow": "1. a) Nộp hồ sơ TTHC: Trung tâm sát hạch lái xe gửi văn bản đề nghị cấp lại giấy phép sát hạch đến Cục Cảnh sát giao thông. b) Giải quyết TTHC: * Trường hợp cấp lại khi có sự thay đổi về thiết bị sát hạch, chủng loại, số lượng xe cơ giới sử dụng để sát hạch lái xe: - Trong thời gian không quá 05 ngày làm việc kể từ ngày nhận văn bản đề nghị, Cục Cảnh sát giao thông tổ chức kiểm tra, lập biên bản và cấp giấy phép sát hạch. Trường hợp không cấp, phải trả lời bằng văn bản và nêu rõ lý do; - Việc trả kết quả được thực hiện tại trụ sở cơ quan Cục Cảnh sát giao thông hoặc qua dịch vụ bưu chính. * Trường hợp cấp lại khi bị hỏng, mất, thay đổi tên của trung tâm sát hạch lái xe: - Trong thời hạn không quá 01 ngày làm việc kể từ ngày nhận văn bản đề nghị, Cục Cảnh sát giao thông kiểm tra tính đầy đủ của hồ sơ; trường hợp hồ sơ chưa đầy đủ thì hướng dẫn tổ chức, cá nhân hoàn thiện theo quy định; trong thời hạn không quá 03 ngày làm việc kể từ ngày nhận đủ hồ sơ theo quy định, Cục Cảnh sát giao thông cấp lại giấy phép sát hạch cho trung tâm sát hạch lái xe; trường hợp không cấp phải trả lời tổ chức, cá nhân bằng văn bản và nêu rõ lý do; - Việc trả kết quả được thực hiện tại trụ sở cơ quan Cục Cảnh sát giao thông hoặc qua dịch vụ bưu chính.",
+          "requirements": "Không có thông tin",
+          "submission_methods": [
+            "Trực tiếp"
+          ],
+          "processing_time_values": [
+            "3 ngày làm việc"
+          ],
+          "document_groups": [],
+          "result_items": [
+            "Giấy phép sát hạch (Mã: `KQ.G01.000187`)"
+          ],
+          "legal_bases": []
+        },
+        {
+          "procedure_code": "3.000357",
+          "procedure_title": "Thu hồi giấy phép sát hạch của trung tâm sát hạch lái xe loại 1, loại 2",
+          "field": "Sát hạch, cấp giấy phép lái xe",
+          "subdomain_key": "giay_phep_lai_xe",
+          "subdomain_label": "Giấy phép lái xe",
+          "event_id": 315,
+          "operation_group": "co_so_sat_hach",
+          "operation_key": "thu_hoi_giay_phep_sat_hach_cua_trung_tam_sat_hach_lai_xe_loai_1_loai_2",
+          "agency": "",
+          "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bf7-c532-77be-83cf-55d7d8164a19",
+          "raw_data_file": "C:\\Users\\ku060\\Downloads\\VAIC source\\data-pipeline\\raw_data\\3_000357\\3_000357_procedure_detail.md",
+          "raw_data_available": true,
+          "overview": "1. a) Nộp hồ sơ TTHC: b) Giải quyết TTHC: - Trong thời hạn 05 ngày làm việc kể từ ngày phát hiện hành vi vi phạm quy định hoặc giải thể hoạt động sát hạch, Cục Cảnh sát giao thông ban hành quyết định thu hồi giấy phép sát hạch, thông báo đến các cơ quan liên quan để phối hợp thực hiện và công bố trên Trang thông tin điện tử. - Trung tâm sát hạch lái xe phải nộp lại giấy phép sát hạch cho Cục Cảnh sát giao, đồng thời dừng toàn bộ hoạt động sát hạch lái xe theo giấy phép đã bị thu hồi ngay sau khi quyết định có hiệu lực.",
+          "procedure_flow": "1. a) Nộp hồ sơ TTHC: b) Giải quyết TTHC: - Trong thời hạn 05 ngày làm việc kể từ ngày phát hiện hành vi vi phạm quy định hoặc giải thể hoạt động sát hạch, Cục Cảnh sát giao thông ban hành quyết định thu hồi giấy phép sát hạch, thông báo đến các cơ quan liên quan để phối hợp thực hiện và công bố trên Trang thông tin điện tử. - Trung tâm sát hạch lái xe phải nộp lại giấy phép sát hạch cho Cục Cảnh sát giao, đồng thời dừng toàn bộ hoạt động sát hạch lái xe theo giấy phép đã bị thu hồi ngay sau khi quyết định có hiệu lực.",
+          "requirements": "Không có thông tin",
+          "submission_methods": [
+            "Trực tiếp"
+          ],
+          "processing_time_values": [
+            "5 ngày làm việc"
+          ],
+          "document_groups": [],
+          "result_items": [
+            "Quyết định thu hồi giấy phép sát hạch. (Mã: `KQ.G01.000192`)"
+          ],
+          "legal_bases": []
+        },
+        {
+          "procedure_code": "3.000358",
+          "procedure_title": "Chấp thuận hoạt động của sân tập lái để sát hạch lái xe mô tô",
+          "field": "Sát hạch, cấp giấy phép lái xe",
+          "subdomain_key": "giay_phep_lai_xe",
+          "subdomain_label": "Giấy phép lái xe",
+          "event_id": 315,
+          "operation_group": "co_so_sat_hach",
+          "operation_key": "chap_thuan_hoat_dong_cua_san_tap_lai_de_sat_hach_lai_xe_mo_to",
+          "agency": "",
+          "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bf7-c533-7246-817e-731d04c27bce",
+          "raw_data_file": "C:\\Users\\ku060\\Downloads\\VAIC source\\data-pipeline\\raw_data\\3_000358\\3_000358_procedure_detail.md",
+          "raw_data_available": true,
+          "overview": "1. a) Nộp hồ sơ TTHC: Tổ chức, cá nhân có sân tập lái gửi hồ sơ đến Phòng Cảnh sát giao thông. b) Giải quyết TTHC: - Trong thời gian không quá 03 ngày làm việc, kể từ ngày tiếp nhận hồ sơ, Phòng Cảnh sát giao thông kiểm tra tính đầy đủ của hồ sơ; trường hợp chưa đầy đủ, thì hướng dẫn tổ chức, cá nhân hoàn thiện lại theo quy định; trong thời gian không quá 05 ngày làm việc kể từ ngày nhận đủ hồ sơ theo quy định tổ chức kiểm tra sân tập lái và lập biên bản và ban hành Quyết định chấp thuận hoạt động của sân tập lái để sát hạch lái xe mô tô đủ điều kiện hoạt động. Trường hợp không cấp, phải trả lời bằng văn bản và nêu rõ lý do. - Việc trả kết quả được thực hiện tại trụ sở Phòng Cảnh sát giao thông hoặc qua dịch vụ bưu chính.",
+          "procedure_flow": "1. a) Nộp hồ sơ TTHC: Tổ chức, cá nhân có sân tập lái gửi hồ sơ đến Phòng Cảnh sát giao thông. b) Giải quyết TTHC: - Trong thời gian không quá 03 ngày làm việc, kể từ ngày tiếp nhận hồ sơ, Phòng Cảnh sát giao thông kiểm tra tính đầy đủ của hồ sơ; trường hợp chưa đầy đủ, thì hướng dẫn tổ chức, cá nhân hoàn thiện lại theo quy định; trong thời gian không quá 05 ngày làm việc kể từ ngày nhận đủ hồ sơ theo quy định tổ chức kiểm tra sân tập lái và lập biên bản và ban hành Quyết định chấp thuận hoạt động của sân tập lái để sát hạch lái xe mô tô đủ điều kiện hoạt động. Trường hợp không cấp, phải trả lời bằng văn bản và nêu rõ lý do. - Việc trả kết quả được thực hiện tại trụ sở Phòng Cảnh sát giao thông hoặc qua dịch vụ bưu chính.",
+          "requirements": "Không có thông tin",
+          "submission_methods": [
+            "Dịch vụ bưu chính",
+            "Trực tiếp"
+          ],
+          "processing_time_values": [
+            "5 ngày làm việc",
+            "5 ngày làm việc"
+          ],
+          "document_groups": [],
+          "result_items": [
+            "Quyết định chấp thuận hoạt động của sân tập lái để sát hạch lái xe mô tô đủ điều kiện hoạt động. (Mã: `KQ.G01.000191`)"
+          ],
+          "legal_bases": []
+        },
+        {
+          "procedure_code": "3.000359",
+          "procedure_title": "Chấp thuận lại hoạt động của sân tập lái để sát hạch lái xe mô tô",
+          "field": "Sát hạch, cấp giấy phép lái xe",
+          "subdomain_key": "giay_phep_lai_xe",
+          "subdomain_label": "Giấy phép lái xe",
+          "event_id": 315,
+          "operation_group": "co_so_sat_hach",
+          "operation_key": "chap_thuan_lai_hoat_dong_cua_san_tap_lai_de_sat_hach_lai_xe_mo_to",
+          "agency": "",
+          "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bf7-c534-70f1-b6f1-66e97e0ef437",
+          "raw_data_file": "C:\\Users\\ku060\\Downloads\\VAIC source\\data-pipeline\\raw_data\\3_000359\\3_000359_procedure_detail.md",
+          "raw_data_available": true,
+          "overview": "1. a) Nộp hồ sơ TTHC: Tổ chức, cá nhân có sân tập lái dùng để sát hạch lái xe mô tô gửi văn bản đề nghị cấp lại chấp thuận hoạt động của sân tập lái để sát hạch lái xe mô tô đến Phòng Cảnh sát giao thông. b) Giải quyết TTHC: * Trường hợp cấp lại khi có sự thay đổi về thiết bị sát hạch, chủng loại, số lượng xe mô tô để sát hạch lái xe Trong thời gian không quá 07 ngày làm việc kể từ ngày nhận văn bản đề nghị, Phòng Cảnh sát giao thông tổ chức kiểm tra, lập biên bản và chấp thuận hoạt động của sân tập lái để sát hạch lái xe mô tô. Trường hợp không cấp, phải trả lời bằng văn bản và nêu rõ lý do. * Trường hợp cấp lại khi bị hỏng, mất, thay đổi tên của cơ sở đào tạo có sân tập lái để sát hạch lái xe mô tô Trong thời hạn không quá 01 ngày làm việc kể từ ngày tiếp nhận văn bản đề nghị, Phòng Cảnh sát giao thông kiểm tra tính đầy đủ của hồ sơ; trường hợp hồ sơ chưa đầy đủ thì hướng dẫn tổ chức, cá nhân hoàn thiện lại theo quy định; trong thời hạn không quá 03 ngày làm việc kể từ ngày nhận đủ hồ sơ theo quy định, Phòng Cảnh sát giao thông có văn bản chấp thuận gửi tổ chức, cá nhân; trường hợp không cấp phải trả lời tổ chức, cá nhân bằng văn bản và nêu rõ lý do; Việc trả kết quả được thực hiện tại trụ sở Phòng Cảnh sát giao thông hoặc qua dịch vụ bưu chính.",
+          "procedure_flow": "1. a) Nộp hồ sơ TTHC: Tổ chức, cá nhân có sân tập lái dùng để sát hạch lái xe mô tô gửi văn bản đề nghị cấp lại chấp thuận hoạt động của sân tập lái để sát hạch lái xe mô tô đến Phòng Cảnh sát giao thông. b) Giải quyết TTHC: * Trường hợp cấp lại khi có sự thay đổi về thiết bị sát hạch, chủng loại, số lượng xe mô tô để sát hạch lái xe Trong thời gian không quá 07 ngày làm việc kể từ ngày nhận văn bản đề nghị, Phòng Cảnh sát giao thông tổ chức kiểm tra, lập biên bản và chấp thuận hoạt động của sân tập lái để sát hạch lái xe mô tô. Trường hợp không cấp, phải trả lời bằng văn bản và nêu rõ lý do. * Trường hợp cấp lại khi bị hỏng, mất, thay đổi tên của cơ sở đào tạo có sân tập lái để sát hạch lái xe mô tô Trong thời hạn không quá 01 ngày làm việc kể từ ngày tiếp nhận văn bản đề nghị, Phòng Cảnh sát giao thông kiểm tra tính đầy đủ của hồ sơ; trường hợp hồ sơ chưa đầy đủ thì hướng dẫn tổ chức, cá nhân hoàn thiện lại theo quy định; trong thời hạn không quá 03 ngày làm việc kể từ ngày nhận đủ hồ sơ theo quy định, Phòng Cảnh sát giao thông có văn bản chấp thuận gửi tổ chức, cá nhân; trường hợp không cấp phải trả lời tổ chức, cá nhân bằng văn bản và nêu rõ lý do; Việc trả kết quả được thực hiện tại trụ sở Phòng Cảnh sát giao thông hoặc qua dịch vụ bưu chính.",
+          "requirements": "Không có thông tin",
+          "submission_methods": [
+            "Dịch vụ bưu chính",
+            "Trực tiếp"
+          ],
+          "processing_time_values": [
+            "7 ngày làm việc",
+            "3 ngày làm việc"
+          ],
+          "document_groups": [],
+          "result_items": [
+            "Quyết định chấp thuận hoạt động của sân tập lái để sát hạch lái xe mô tô đủ điều kiện hoạt động. (Mã: `KQ.G01.000191`)"
+          ],
+          "legal_bases": []
+        },
+        {
+          "procedure_code": "3.000360",
+          "procedure_title": "Thu hồi chấp thuận hoạt động của sân tập lái để sát hạch lái xe mô tô",
+          "field": "Sát hạch, cấp giấy phép lái xe",
+          "subdomain_key": "giay_phep_lai_xe",
+          "subdomain_label": "Giấy phép lái xe",
+          "event_id": 315,
+          "operation_group": "co_so_sat_hach",
+          "operation_key": "thu_hoi_chap_thuan_hoat_dong_cua_san_tap_lai_de_sat_hach_lai_xe_mo_to",
+          "agency": "",
+          "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bf7-c53b-72e8-8ff4-8729bc315736",
+          "raw_data_file": "C:\\Users\\ku060\\Downloads\\VAIC source\\data-pipeline\\raw_data\\3_000360\\3_000360_procedure_detail.md",
+          "raw_data_available": true,
+          "overview": "1. a) Nộp hồ sơ TTHC: Không có b) Giải quyết TTHC: - Trong thời hạn 05 ngày làm việc kể từ ngày phát hiện hành vi vi phạm quy định hoặc giải thể hoạt động cơ sở đào tạo lái xe, Phòng Cảnh sát giao thông ban hành quyết định thu hồi chấp thuận hoạt động của sân tập lái để sát hạch lái xe mô tô, thông báo đến các cơ quan liên quan để phối hợp thực hiện và công bố trên Trang thông tin điện tử. - Cơ sở đào tạo lái xe phải nộp lại chấp thuận hoạt động của sân tập lái để sát hạch lái xe mô tô cho Phòng Cảnh sát giao thông, đồng thời dừng toàn bộ hoạt động sát hạch lái xe theo giấy phép đã bị thu hồi ngay sau khi quyết định có hiệu lực.",
+          "procedure_flow": "1. a) Nộp hồ sơ TTHC: Không có b) Giải quyết TTHC: - Trong thời hạn 05 ngày làm việc kể từ ngày phát hiện hành vi vi phạm quy định hoặc giải thể hoạt động cơ sở đào tạo lái xe, Phòng Cảnh sát giao thông ban hành quyết định thu hồi chấp thuận hoạt động của sân tập lái để sát hạch lái xe mô tô, thông báo đến các cơ quan liên quan để phối hợp thực hiện và công bố trên Trang thông tin điện tử. - Cơ sở đào tạo lái xe phải nộp lại chấp thuận hoạt động của sân tập lái để sát hạch lái xe mô tô cho Phòng Cảnh sát giao thông, đồng thời dừng toàn bộ hoạt động sát hạch lái xe theo giấy phép đã bị thu hồi ngay sau khi quyết định có hiệu lực.",
+          "requirements": "Không có thông tin",
+          "submission_methods": [
+            "Trực tiếp"
+          ],
+          "processing_time_values": [
+            "5 ngày làm việc"
+          ],
+          "document_groups": [],
+          "result_items": [
+            "Quyết định thu hồi chấp thuận hoạt động của sân tập lái để sát hạch lái xe mô tô đủ điều kiện hoạt động (Mã: `KQ.G01.000190`)"
+          ],
+          "legal_bases": []
+        },
+        {
+          "procedure_code": "3.000361",
+          "procedure_title": "Cấp giấy phép cho trung tâm sát hạch lái xe loại 3",
+          "field": "Sát hạch, cấp giấy phép lái xe",
+          "subdomain_key": "giay_phep_lai_xe",
+          "subdomain_label": "Giấy phép lái xe",
+          "event_id": 315,
+          "operation_group": "co_so_sat_hach",
+          "operation_key": "cap_giay_phep_cho_trung_tam_sat_hach_lai_xe_loai_3",
+          "agency": "",
+          "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bf7-c537-744a-a063-b9ee434c7bd0",
+          "raw_data_file": "C:\\Users\\ku060\\Downloads\\VAIC source\\data-pipeline\\raw_data\\3_000361\\3_000361_procedure_detail.md",
+          "raw_data_available": true,
+          "overview": "1. a) Nộp hồ sơ TTHC: Sau khi xây dựng xong trung tâm sát hạch lái xe, tổ chức, cá nhân gửi văn bản đề nghị cấp giấy phép sát hạch đến Phòng Cảnh sát giao thông. b) Giải quyết TTHC: - Trong thời gian không quá 03 ngày làm việc, kể từ ngày tiếp nhận hồ sơ, Phòng Cảnh sát giao thông kiểm tra tính đầy đủ của hồ sơ; trường hợp hồ sơ chưa đầy đủ thì Phòng Cảnh sát giao thông có văn bản hướng dẫn tổ chức, cá nhân hoàn thiện lại theo quy định; trong thời gian không quá 05 ngày làm việc kể từ ngày nhận đủ hồ sơ theo quy định, Phòng Cảnh sát giao thông tổ chức kiểm tra, lập biên bản và cấp giấy phép sát hạch. Trường hợp không cấp, phải trả lời bằng văn bản và nêu rõ lý do. - Việc trả kết quả được thực hiện tại trụ sở Phòng Cảnh sát giao thông hoặc qua dịch vụ bưu chính.",
+          "procedure_flow": "1. a) Nộp hồ sơ TTHC: Sau khi xây dựng xong trung tâm sát hạch lái xe, tổ chức, cá nhân gửi văn bản đề nghị cấp giấy phép sát hạch đến Phòng Cảnh sát giao thông. b) Giải quyết TTHC: - Trong thời gian không quá 03 ngày làm việc, kể từ ngày tiếp nhận hồ sơ, Phòng Cảnh sát giao thông kiểm tra tính đầy đủ của hồ sơ; trường hợp hồ sơ chưa đầy đủ thì Phòng Cảnh sát giao thông có văn bản hướng dẫn tổ chức, cá nhân hoàn thiện lại theo quy định; trong thời gian không quá 05 ngày làm việc kể từ ngày nhận đủ hồ sơ theo quy định, Phòng Cảnh sát giao thông tổ chức kiểm tra, lập biên bản và cấp giấy phép sát hạch. Trường hợp không cấp, phải trả lời bằng văn bản và nêu rõ lý do. - Việc trả kết quả được thực hiện tại trụ sở Phòng Cảnh sát giao thông hoặc qua dịch vụ bưu chính.",
+          "requirements": "Không có thông tin",
+          "submission_methods": [
+            "Dịch vụ bưu chính",
+            "Trực tiếp"
+          ],
+          "processing_time_values": [
+            "5 ngày làm việc",
+            "5 ngày làm việc"
+          ],
+          "document_groups": [],
+          "result_items": [
+            "Giấy phép sát hạch (Mã: `KQ.G01.000187`)"
+          ],
+          "legal_bases": []
+        },
+        {
+          "procedure_code": "3.000362",
+          "procedure_title": "Cấp lại giấy phép sát hạch cho trung tâm sát hạch lái xe loại 3",
+          "field": "Sát hạch, cấp giấy phép lái xe",
+          "subdomain_key": "giay_phep_lai_xe",
+          "subdomain_label": "Giấy phép lái xe",
+          "event_id": 315,
+          "operation_group": "co_so_sat_hach",
+          "operation_key": "cap_lai_giay_phep_sat_hach_cho_trung_tam_sat_hach_lai_xe_loai_3",
+          "agency": "",
+          "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bf7-c538-734d-9585-d1370e512bde",
+          "raw_data_file": "C:\\Users\\ku060\\Downloads\\VAIC source\\data-pipeline\\raw_data\\3_000362\\3_000362_procedure_detail.md",
+          "raw_data_available": true,
+          "overview": "1. a) Nộp hồ sơ TTHC: Trung tâm sát hạch lái xe gửi văn bản đề nghị cấp lại giấy phép sát hạch đến Phòng Cảnh sát giao thông. b) Giải quyết TTHC: * Trường hợp cấp lại khi có sự thay đổi về thiết bị sát hạch, chủng loại, số lượng xe cơ giới sử dụng để sát hạch lái xe: - Trong thời gian không quá 05 ngày làm việc kể từ ngày nhận văn bản đề nghị, Phòng Cảnh sát giao thông tổ chức kiểm tra, lập biên bản và cấp giấy phép sát hạch. Trường hợp không cấp, phải trả lời bằng văn bản và nêu rõ lý do; - Việc trả kết quả được thực hiện tại trụ sở Phòng Cảnh sát giao thông hoặc qua dịch vụ bưu chính. * Trường hợp cấp lại khi bị hỏng, mất, thay đổi tên của trung tâm sát hạch lái xe: - Trong thời hạn không quá 01 ngày làm việc kể từ ngày nhận văn bản đề nghị, Phòng Cảnh sát giao thông kiểm tra tính đầy đủ của hồ sơ; trường hợp hồ sơ chưa đầy đủ thì hướng dẫn tổ chức, cá nhân hoàn thiện theo quy định; trong thời hạn không quá 03 ngày làm việc kể từ ngày nhận đủ hồ sơ theo quy định, Phòng Cảnh sát giao thông cấp lại giấy phép sát hạch cho trung tâm sát hạch lái xe; trường hợp không cấp phải trả lời tổ chức, cá nhân bằng văn bản và nêu rõ lý do; - Việc trả kết quả được thực hiện tại trụ sở Phòng Cảnh sát giao thông hoặc qua dịch vụ bưu chính.",
+          "procedure_flow": "1. a) Nộp hồ sơ TTHC: Trung tâm sát hạch lái xe gửi văn bản đề nghị cấp lại giấy phép sát hạch đến Phòng Cảnh sát giao thông. b) Giải quyết TTHC: * Trường hợp cấp lại khi có sự thay đổi về thiết bị sát hạch, chủng loại, số lượng xe cơ giới sử dụng để sát hạch lái xe: - Trong thời gian không quá 05 ngày làm việc kể từ ngày nhận văn bản đề nghị, Phòng Cảnh sát giao thông tổ chức kiểm tra, lập biên bản và cấp giấy phép sát hạch. Trường hợp không cấp, phải trả lời bằng văn bản và nêu rõ lý do; - Việc trả kết quả được thực hiện tại trụ sở Phòng Cảnh sát giao thông hoặc qua dịch vụ bưu chính. * Trường hợp cấp lại khi bị hỏng, mất, thay đổi tên của trung tâm sát hạch lái xe: - Trong thời hạn không quá 01 ngày làm việc kể từ ngày nhận văn bản đề nghị, Phòng Cảnh sát giao thông kiểm tra tính đầy đủ của hồ sơ; trường hợp hồ sơ chưa đầy đủ thì hướng dẫn tổ chức, cá nhân hoàn thiện theo quy định; trong thời hạn không quá 03 ngày làm việc kể từ ngày nhận đủ hồ sơ theo quy định, Phòng Cảnh sát giao thông cấp lại giấy phép sát hạch cho trung tâm sát hạch lái xe; trường hợp không cấp phải trả lời tổ chức, cá nhân bằng văn bản và nêu rõ lý do; - Việc trả kết quả được thực hiện tại trụ sở Phòng Cảnh sát giao thông hoặc qua dịch vụ bưu chính.",
+          "requirements": "Không có thông tin",
+          "submission_methods": [
+            "Dịch vụ bưu chính",
+            "Trực tiếp"
+          ],
+          "processing_time_values": [
+            "5 ngày làm việc",
+            "5 ngày làm việc"
+          ],
+          "document_groups": [],
+          "result_items": [
+            "Giấy phép sát hạch (Mã: `KQ.G01.000187`)"
+          ],
+          "legal_bases": []
+        },
+        {
+          "procedure_code": "3.000363",
+          "procedure_title": "Thu hồi giấy phép sát hạch cho trung tâm sát hạch lái xe loại 3",
+          "field": "Sát hạch, cấp giấy phép lái xe",
+          "subdomain_key": "giay_phep_lai_xe",
+          "subdomain_label": "Giấy phép lái xe",
+          "event_id": 315,
+          "operation_group": "co_so_sat_hach",
+          "operation_key": "thu_hoi_giay_phep_sat_hach_cho_trung_tam_sat_hach_lai_xe_loai_3",
+          "agency": "",
+          "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bf7-c52c-741e-88e6-85a31ee80fe6",
+          "raw_data_file": "C:\\Users\\ku060\\Downloads\\VAIC source\\data-pipeline\\raw_data\\3_000363\\3_000363_procedure_detail.md",
+          "raw_data_available": true,
+          "overview": "1. a) Nộp hồ sơ TTHC: Trung tâm sát hạch nộp lại Giấy phép sát hạch đã được cấp khi giải thể hoặc có thông báo vi phạm hoạt động b) Giải quyết TTHC: Trong thời hạn 05 ngày làm việc kể từ ngày phát hiện hành vi vi phạm quy định hoặc giải thể hoạt động sát hạch, Phòng Cảnh sát giao thông ban hành quyết định thu hồi giấy phép sát hạch, thông báo đến các cơ quan liên quan để phối hợp thực hiện và công bố trên Trang thông tin điện tử. Trung tâm sát hạch lái xe phải nộp lại giấy phép sát hạch cho Phòng Cảnh sát giao, đồng thời dừng toàn bộ hoạt động sát hạch lái xe theo giấy phép đã bị thu hồi ngay sau khi quyết định có hiệu lực.",
+          "procedure_flow": "1. a) Nộp hồ sơ TTHC: Trung tâm sát hạch nộp lại Giấy phép sát hạch đã được cấp khi giải thể hoặc có thông báo vi phạm hoạt động b) Giải quyết TTHC: Trong thời hạn 05 ngày làm việc kể từ ngày phát hiện hành vi vi phạm quy định hoặc giải thể hoạt động sát hạch, Phòng Cảnh sát giao thông ban hành quyết định thu hồi giấy phép sát hạch, thông báo đến các cơ quan liên quan để phối hợp thực hiện và công bố trên Trang thông tin điện tử. Trung tâm sát hạch lái xe phải nộp lại giấy phép sát hạch cho Phòng Cảnh sát giao, đồng thời dừng toàn bộ hoạt động sát hạch lái xe theo giấy phép đã bị thu hồi ngay sau khi quyết định có hiệu lực.",
+          "requirements": "Không có thông tin",
+          "submission_methods": [
+            "Trực tiếp"
+          ],
+          "processing_time_values": [
+            "5 ngày làm việc"
+          ],
+          "document_groups": [],
+          "result_items": [
+            "Quyết định thu hồi giấy phép sát hạch (Mã: `KQ.G01.000189`)"
+          ],
+          "legal_bases": []
+        }
+      ]
+    }
+  ],
+  "subdomain_key": "giay_phep_lai_xe",
+  "subdomain_label": "Giấy phép lái xe"
+}

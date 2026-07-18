@@ -1,0 +1,112 @@
+{
+  "schema_version": "1.0",
+  "enricher_version": "0.2.0",
+  "source": {
+    "procedure_code": "1.000381",
+    "title": "Điều chỉnh Giấy chứng nhận đăng ký đầu tư ra nước ngoài đối với dự án không thuộc diện chấp thuận chủ trương đầu tư ra nước ngoài",
+    "group_key": "suc_khoe_y_te",
+    "workflow_family": null,
+    "subflow": null
+  },
+  "experience": {
+    "entry_label": "Hỗ trợ y tế và bảo hiểm",
+    "overview_summary": "Thủ tục này thuộc nhóm y tế, thường cần đối chiếu thông tin người bệnh, đơn vị tiếp nhận hoặc quyền lợi chuyên ngành. Kết quả thường nhận được là Văn bản thông báo (trong trường hợp không được cấp Giấy chứng nhận đăng ký đầu tư ra nước ngoài). Thời gian xử lý tham khảo: 1 ngày.",
+    "next_step_summary": "Nên xác định rõ đối tượng tham gia, quyền lợi hoặc nhu cầu điều chỉnh hồ sơ y tế trước khi nộp. Có thể chọn kênh nộp phù hợp: Trực tiếp, Trực tuyến, Dịch vụ bưu chính. Hiện có khoảng 9 mục giấy tờ cần theo dõi trong checklist.",
+    "tone": "supportive_public_service"
+  },
+  "guidance": {
+    "highlight_documents": [
+      {
+        "bucket": "required",
+        "name": "5. Bản sao Giấy chứng nhận đăng ký đầu tư ra nước ngoài;",
+        "conditions": [],
+        "attachment_path": null
+      },
+      {
+        "bucket": "required",
+        "name": "4. Quyết định điều chỉnh hoạt động đầu tư ra nước ngoài theo quy định tại Điều 59 của Luật Đầu tư hoặc các văn bản quy định tại điểm e khoản 1 Điều 57 của Luật Đầu tư Đối với các dự án đầu tư ra nước ngoài của doanh nghiệp do nhà nước nắm giữ 100% vốn điều lệ, Quyết định đầu tư ra nước ngoài theo quy định tại điểm e khoản 1 Điều 57 của Luật Đầu tư là các văn bản sau: + Văn bản chấp thuận của cơ quan đại diện chủ sở hữu cho phép nhà đầu tư thực hiện dự án đầu tư ra nước ngoài, bao gồm các nội dung chủ yếu: Nhà đầu tư, mục tiêu, quy mô, hình thức, địa điểm đầu tư, tổng vốn đầu tư, phương án huy động vốn, cơ cấu nguồn vốn, tiến độ thực hiện dự án, các chỉ tiêu về hiệu quả đầu tư cần đạt được; + Báo cáo thẩm định nội bộ về đề xuất dự án đầu tư ra nước ngoài, làm cơ sở cho việc chấp thuận của cơ quan đại diện chủ sở hữu.",
+        "conditions": [],
+        "attachment_path": null
+      },
+      {
+        "bucket": "required",
+        "name": "1. Bản đề nghị điều chỉnh Giấy chứng nhận đăng ký đầu tư ra nước ngoài;",
+        "conditions": [],
+        "attachment_path": null
+      },
+      {
+        "bucket": "required",
+        "name": "3. Báo cáo tình hình hoạt động của dự án đầu tư đến thời điểm nộp hồ sơ điều chỉnh Giấy chứng nhận đăng ký đầu tư ra nước ngoài;",
+        "conditions": [],
+        "attachment_path": null
+      },
+      {
+        "bucket": "required",
+        "name": "2. Tài liệu về tư cach pháp lý của nhà đầu tư;",
+        "conditions": [],
+        "attachment_path": null
+      },
+      {
+        "bucket": "required",
+        "name": "Thực hiện theo các hồ sơ ghi ở phần thực hiện trực tiếp hoặc qua bưu chính",
+        "conditions": [],
+        "attachment_path": null
+      }
+    ],
+    "special_cases": [
+      "Có yếu tố nước ngoài",
+      "Có thể cần đối chiếu thông tin thửa đất hoặc giấy chứng nhận"
+    ],
+    "common_errors": [
+      "Thiếu giấy tờ hợp pháp hóa hoặc giấy tờ nhân thân của phía nước ngoài.",
+      "Thông tin thửa đất, tài sản hoặc giấy chứng nhận chưa khớp với hồ sơ hiện có."
+    ],
+    "validation_hints": [
+      "Nên xác định trước kênh nộp hồ sơ để biết có cần bản giấy, bản điện tử hay xuất trình trực tiếp.",
+      "Nên xác định đúng nhóm đối tượng, mã số bảo hiểm và quyền lợi áp dụng trước khi nộp."
+    ]
+  },
+  "intake": {
+    "candidate_input_fields": [
+      {
+        "field_id": "request_subject",
+        "label": "Đối tượng làm thủ tục",
+        "field_type": "text",
+        "required": true
+      },
+      {
+        "field_id": "insurance_or_medical_need",
+        "label": "Nhu cầu bảo hiểm hoặc y tế",
+        "field_type": "text",
+        "required": true
+      },
+      {
+        "field_id": "submission_channel_preference",
+        "label": "Kênh nộp dự kiến",
+        "field_type": "enum",
+        "required": false
+      },
+      {
+        "field_id": "has_insurance_number",
+        "label": "Đã có mã BHXH/BHYT",
+        "field_type": "boolean",
+        "required": false
+      }
+    ],
+    "suggested_clarifying_questions": [
+      "Bạn đang muốn đăng ký, điều chỉnh hay xác nhận quyền lợi y tế hoặc bảo hiểm nào?",
+      "Bạn đã có mã BHXH/BHYT hoặc thông tin đơn vị tiếp nhận liên quan chưa?"
+    ]
+  },
+  "ui_hints": {
+    "primary_channel": "online",
+    "result_label": "Văn bản thông báo (trong trường hợp không được cấp Giấy chứng nhận đăng ký đầu tư ra nước ngoài)",
+    "time_badge": "1 ngày",
+    "document_count_badge": 9
+  },
+  "provenance": {
+    "generator": "workflow_domain_enricher",
+    "derivation_mode": "rule_based_semantic_enrichment",
+    "supported_group": true
+  }
+}

@@ -1,0 +1,82 @@
+{
+  "schema_version": "1.0",
+  "enricher_version": "0.2.0",
+  "source": {
+    "procedure_code": "2.002842",
+    "title": "Đề nghị hoàn trả số tiền thuê lại đất mà chủ đầu tư đã giảm cho doanh nghiệp công nghệ cao thuộc khu vực kinh tế tư nhân, doanh nghiệp nhỏ và vừa, doanh nghiệp khởi nghiệp sáng tạo thuê đất, thuê lại đất tại khu công nghiệp, cụm công nghiệp, vườn ươm công nghệ",
+    "group_key": "suc_khoe_y_te",
+    "workflow_family": null,
+    "subflow": null
+  },
+  "experience": {
+    "entry_label": "Hỗ trợ y tế và bảo hiểm",
+    "overview_summary": "Thủ tục này thuộc nhóm y tế, thường cần đối chiếu thông tin người bệnh, đơn vị tiếp nhận hoặc quyền lợi chuyên ngành. Kết quả thường nhận được là Thuế tỉnh, thành phố hạch toán, theo dõi số tiền thuê đất mà chủ đầu tư phải nộp theo quy định của pháp luật về quản lý thuế. Thời gian xử lý tham khảo: 12 ngày làm việc.",
+    "next_step_summary": "Nên xác định rõ đối tượng tham gia, quyền lợi hoặc nhu cầu điều chỉnh hồ sơ y tế trước khi nộp. Có thể chọn kênh nộp phù hợp: Trực tiếp, Trực tuyến, Dịch vụ bưu chính. Hiện có khoảng 2 mục giấy tờ cần theo dõi trong checklist.",
+    "tone": "supportive_public_service"
+  },
+  "guidance": {
+    "highlight_documents": [
+      {
+        "bucket": "required",
+        "name": "(ii) Giấy xác nhận thông tin của doanh nghiệp thuê lại đất tại khu công nghiệp, cụm công nghiệp, vườn ươm công nghệ (Phụ lục II, kèm theo Nghị định số 20/2026/NĐ-CP ngày 15 tháng 01 năm 2026 của Chính phủ)",
+        "conditions": [],
+        "attachment_path": null
+      },
+      {
+        "bucket": "required",
+        "name": "(i) Đề nghị hoàn trả khoản hỗ trợ giảm tiền thuê lại đất (Phụ lục I, kèm theo Nghị định số 20/2026/NĐ-CP ngày 15 tháng 01 năm 2026 của Chính phủ).",
+        "conditions": [],
+        "attachment_path": null
+      }
+    ],
+    "special_cases": [],
+    "common_errors": [],
+    "validation_hints": [
+      "Nên xác định trước kênh nộp hồ sơ để biết có cần bản giấy, bản điện tử hay xuất trình trực tiếp.",
+      "Nên xác định đúng nhóm đối tượng, mã số bảo hiểm và quyền lợi áp dụng trước khi nộp."
+    ]
+  },
+  "intake": {
+    "candidate_input_fields": [
+      {
+        "field_id": "request_subject",
+        "label": "Đối tượng làm thủ tục",
+        "field_type": "text",
+        "required": true
+      },
+      {
+        "field_id": "insurance_or_medical_need",
+        "label": "Nhu cầu bảo hiểm hoặc y tế",
+        "field_type": "text",
+        "required": true
+      },
+      {
+        "field_id": "submission_channel_preference",
+        "label": "Kênh nộp dự kiến",
+        "field_type": "enum",
+        "required": false
+      },
+      {
+        "field_id": "has_insurance_number",
+        "label": "Đã có mã BHXH/BHYT",
+        "field_type": "boolean",
+        "required": false
+      }
+    ],
+    "suggested_clarifying_questions": [
+      "Bạn đang muốn đăng ký, điều chỉnh hay xác nhận quyền lợi y tế hoặc bảo hiểm nào?",
+      "Bạn đã có mã BHXH/BHYT hoặc thông tin đơn vị tiếp nhận liên quan chưa?"
+    ]
+  },
+  "ui_hints": {
+    "primary_channel": "online",
+    "result_label": "Thuế tỉnh, thành phố hạch toán, theo dõi số tiền thuê đất mà chủ đầu tư phải nộp theo quy định của pháp luật về quản lý thuế",
+    "time_badge": "12 ngày làm việc",
+    "document_count_badge": 2
+  },
+  "provenance": {
+    "generator": "workflow_domain_enricher",
+    "derivation_mode": "rule_based_semantic_enrichment",
+    "supported_group": true
+  }
+}

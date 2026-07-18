@@ -1,0 +1,99 @@
+{
+  "schema_version": "1.0",
+  "enricher_version": "0.2.0",
+  "source": {
+    "procedure_code": "1.115403",
+    "title": "Cấp thẻ thường trú cho người nước ngoài là nhà đầu tư quan trọng, chuyên gia, nhà khoa học, người có tài năng đặc biệt, nhà quản lý cấp cao làm việc lâu dài tại cơ quan, tổ chức có trụ sở tại Trung tâm tài chính quốc tế",
+    "group_key": "cu_tru_giay_to",
+    "workflow_family": null,
+    "subflow": null
+  },
+  "experience": {
+    "entry_label": "Hỗ trợ cư trú và giấy tờ",
+    "overview_summary": "Thủ tục này thuộc nhóm cư trú và giấy tờ, thường cần kiểm tra thông tin định danh hoặc hồ sơ giấy tờ chuyên ngành. Kết quả thường nhận được là Thẻ thường trú. Thời gian xử lý tham khảo: 2 ngày.",
+    "next_step_summary": "Nên kiểm tra trước giấy tờ định danh, nơi nộp và mẫu biểu liên quan, rồi chọn kênh nộp phù hợp: Trực tiếp. Hiện có khoảng 4 mục giấy tờ cần theo dõi trong checklist.",
+    "tone": "supportive_public_service"
+  },
+  "guidance": {
+    "highlight_documents": [
+      {
+        "bucket": "required",
+        "name": "Đơn xin thường trú của người nước ngoài (mẫu NA12) ban hành kèm theo Thông tư số 04/2015/TT-BCA ngày 05/01/2015 của Bộ Công an (được sửa đổi, bổ sung một số điều tại Thông tư số 57/2020/TT-BCA ngày 10/6/2020 của Bộ trưởng Bộ Công an và Thông tư số 22/2023/TT-BCA ngày 30/6/2023 của Bộ trưởng Bộ Công an)",
+        "conditions": [],
+        "attachment_path": null
+      },
+      {
+        "bucket": "required",
+        "name": "Lý lịch tư pháp do cơ quan có thẩm quyền của nước mà người đó là công dân cấp;",
+        "conditions": [],
+        "attachment_path": null
+      },
+      {
+        "bucket": "required",
+        "name": "Công hàm của cơ quan đại diện của nước mà người đó là công dân đề nghị Việt Nam giải quyết cho người đó thường trú",
+        "conditions": [],
+        "attachment_path": null
+      },
+      {
+        "bucket": "required",
+        "name": "Văn bản đề nghị theo mẫu NT-01 ban hành kèm theo Nghị định số 327/2025/NĐ-CP ngày 18/12/2025 của Chính phủ và giấy tờ chứng minh đủ điều kiện xét cho thường trú quy định tại Điều 5 Nghị định số 327/2025/NĐ-CP ngày 18/12/2025 của Chính phủ.",
+        "conditions": [],
+        "attachment_path": null
+      }
+    ],
+    "special_cases": [
+      "Có yếu tố nước ngoài"
+    ],
+    "common_errors": [
+      "Thiếu giấy tờ hợp pháp hóa hoặc giấy tờ nhân thân của phía nước ngoài.",
+      "Điền sai mẫu tờ khai hoặc chọn sai biểu mẫu đi kèm."
+    ],
+    "validation_hints": [
+      "Nên xác định trước kênh nộp hồ sơ để biết có cần bản giấy, bản điện tử hay xuất trình trực tiếp.",
+      "Nên đối chiếu trước dữ liệu định danh và nơi cư trú để tránh bị yêu cầu bổ sung."
+    ]
+  },
+  "intake": {
+    "candidate_input_fields": [
+      {
+        "field_id": "document_request_type",
+        "label": "Loại giấy tờ cần xử lý",
+        "field_type": "text",
+        "required": true
+      },
+      {
+        "field_id": "submission_channel_preference",
+        "label": "Kênh nộp dự kiến",
+        "field_type": "enum",
+        "required": false
+      },
+      {
+        "field_id": "identity_document_available",
+        "label": "Có giấy tờ định danh",
+        "field_type": "boolean",
+        "required": true
+      },
+      {
+        "field_id": "residency_or_status_known",
+        "label": "Biết rõ nơi cư trú hoặc tình trạng hiện tại",
+        "field_type": "boolean",
+        "required": false
+      }
+    ],
+    "suggested_clarifying_questions": [
+      "Bạn đang xử lý giấy tờ gì và muốn nộp trực tiếp hay trực tuyến?",
+      "Thông tin định danh và nơi cư trú hiện tại đã sẵn sàng để đối chiếu chưa?"
+    ]
+  },
+  "ui_hints": {
+    "primary_channel": "in_person",
+    "result_label": "Thẻ thường trú",
+    "time_badge": "2 ngày",
+    "document_count_badge": 4
+  },
+  "provenance": {
+    "generator": "workflow_domain_enricher",
+    "derivation_mode": "rule_based_semantic_enrichment",
+    "supported_group": true
+  }
+}

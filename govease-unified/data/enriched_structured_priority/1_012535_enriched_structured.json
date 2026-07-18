@@ -1,0 +1,101 @@
+{
+  "schema_version": "1.0",
+  "enricher_version": "0.2.0",
+  "source": {
+    "procedure_code": "1.012535",
+    "title": "Phê duyệt dự án, kế hoạch liên kết thực hiện các hoạt động hỗ trợ",
+    "group_key": "suc_khoe_y_te",
+    "workflow_family": null,
+    "subflow": null
+  },
+  "experience": {
+    "entry_label": "Hỗ trợ y tế và bảo hiểm",
+    "overview_summary": "Thủ tục này thuộc nhóm y tế, thường cần đối chiếu thông tin người bệnh, đơn vị tiếp nhận hoặc quyền lợi chuyên ngành. Kết quả thường nhận được là Quyết định phê duyệt dự án, kế hoạch liên kết cấp xã. Thời gian xử lý tham khảo: 25 ngày làm việc.",
+    "next_step_summary": "Nên xác định rõ đối tượng tham gia, quyền lợi hoặc nhu cầu điều chỉnh hồ sơ y tế trước khi nộp. Có thể chọn kênh nộp phù hợp: Trực tiếp, Trực tuyến, Dịch vụ bưu chính. Hiện có khoảng 4 mục giấy tờ cần theo dõi trong checklist.",
+    "tone": "supportive_public_service"
+  },
+  "guidance": {
+    "highlight_documents": [
+      {
+        "bucket": "required",
+        "name": "Đơn đề nghị hỗ trợ liên kết (theo Mẫu số 01 tại Phụ lục I, Quy định ban hành kèm theo Nghị quyết số 05/2024/NQ-HĐND ngày 18/6/2024 của Hội đồng nhân dân tỉnh Điện Biên, được sửa đổi tại Nghị quyết số 20/2025/NQ-HĐND ngày 14/11/2025 của Hội đồng nhân dân tỉnh Điện Biên)",
+        "conditions": [],
+        "attachment_path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/1_012535/M%E1%BA%ABu%20s%E1%BB%91%2001%20%C4%90%C6%A1n%20%C4%91%E1%BB%81%20ngh%E1%BB%8B%20h%E1%BB%97%20tr%E1%BB%A3%20li%C3%AAn%20k%E1%BA%BFt%20%281%29.docx"
+      },
+      {
+        "bucket": "required",
+        "name": "Dự án, kế hoạch liên kết (theo Mẫu số 02 tại Phụ lục I, Quy định ban hành kèm theo Nghị quyết số 05/2024/NQ-HĐND ngày 18/6/2024 của Hội đồng nhân dân tỉnh Điện Biên)",
+        "conditions": [],
+        "attachment_path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/1_012535/M%E1%BA%ABu%20s%E1%BB%91%2002%20D%E1%BB%B1%20%C3%A1n%20k%E1%BA%BF%20ho%E1%BA%A1ch%20li%C3%AAn%20k%E1%BA%BFt%20%281%29.docx"
+      },
+      {
+        "bucket": "required",
+        "name": "Bản thỏa thuận cử đơn vị chủ trì liên kết (theo Mẫu số 03 tại Phụ lục I, Quy định ban hành kèm theo Nghị quyết số 05/2024/NQ-HĐND ngày 18/6/2024 của Hội đồng nhân dân tỉnh Điện Biên)",
+        "conditions": [],
+        "attachment_path": null
+      },
+      {
+        "bucket": "required",
+        "name": "Bản sao kèm bản chính để đối chiếu hoặc bản sao có chứng thực giấy chứng nhận đăng ký kinh doanh hoặc quyết định thành lập lập (Khai thác hoặc sử dụng thông tin tương ứng từ các cơ sở dữ liệu quốc gia, cơ sở dữ liệu chuyên ngành); tài liệu chứng minh năng lực của đơn vị chủ trì liên kết và các bên liên quan; bản sao kèm bản chính để đối chiếu hoặc bản sao có chứng thực giấy chứng nhận hoặc cam kết về tiêu chuẩn, chất lượng sản phẩm, hàng hóa, dịch vụ; bản sao công chứng hợp đồng hoặc biên bản ký kết giữa đơn vị chủ trì liên kết và đối tượng liên kết.",
+        "conditions": [],
+        "attachment_path": null
+      }
+    ],
+    "special_cases": [
+      "Có kiểm tra dữ liệu cư trú/định danh",
+      "Có thể cần đối chiếu thông tin thửa đất hoặc giấy chứng nhận"
+    ],
+    "common_errors": [
+      "Điền sai mẫu tờ khai hoặc chọn sai biểu mẫu đi kèm.",
+      "Thông tin thửa đất, tài sản hoặc giấy chứng nhận chưa khớp với hồ sơ hiện có."
+    ],
+    "validation_hints": [
+      "Nên xác định trước kênh nộp hồ sơ để biết có cần bản giấy, bản điện tử hay xuất trình trực tiếp.",
+      "Có mẫu biểu đính kèm, nên kiểm tra đúng biểu mẫu trước khi nộp.",
+      "Nên xác định đúng nhóm đối tượng, mã số bảo hiểm và quyền lợi áp dụng trước khi nộp."
+    ]
+  },
+  "intake": {
+    "candidate_input_fields": [
+      {
+        "field_id": "request_subject",
+        "label": "Đối tượng làm thủ tục",
+        "field_type": "text",
+        "required": true
+      },
+      {
+        "field_id": "insurance_or_medical_need",
+        "label": "Nhu cầu bảo hiểm hoặc y tế",
+        "field_type": "text",
+        "required": true
+      },
+      {
+        "field_id": "submission_channel_preference",
+        "label": "Kênh nộp dự kiến",
+        "field_type": "enum",
+        "required": false
+      },
+      {
+        "field_id": "has_insurance_number",
+        "label": "Đã có mã BHXH/BHYT",
+        "field_type": "boolean",
+        "required": false
+      }
+    ],
+    "suggested_clarifying_questions": [
+      "Bạn đang muốn đăng ký, điều chỉnh hay xác nhận quyền lợi y tế hoặc bảo hiểm nào?",
+      "Bạn đã có mã BHXH/BHYT hoặc thông tin đơn vị tiếp nhận liên quan chưa?"
+    ]
+  },
+  "ui_hints": {
+    "primary_channel": "in_person",
+    "result_label": "Quyết định phê duyệt dự án, kế hoạch liên kết cấp xã",
+    "time_badge": "25 ngày làm việc",
+    "document_count_badge": 4
+  },
+  "provenance": {
+    "generator": "workflow_domain_enricher",
+    "derivation_mode": "rule_based_semantic_enrichment",
+    "supported_group": true
+  }
+}

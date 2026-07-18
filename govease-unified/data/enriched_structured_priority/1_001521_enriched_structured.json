@@ -1,0 +1,121 @@
+{
+  "schema_version": "1.0",
+  "enricher_version": "0.2.0",
+  "source": {
+    "procedure_code": "1.001521",
+    "title": "Giải quyết hưởng chế độ TNLĐ, BNN do thương tật, bệnh tật tái phát",
+    "group_key": "suc_khoe_y_te",
+    "workflow_family": "healthcare_medical_policy_workflow",
+    "subflow": "chinh_sach_y_te"
+  },
+  "experience": {
+    "entry_label": "Hỗ trợ y tế và bảo hiểm",
+    "overview_summary": "Thủ tục này thuộc nhóm y tế, thường cần đối chiếu thông tin người bệnh, đơn vị tiếp nhận hoặc quyền lợi chuyên ngành. Kết quả thường nhận được là Tiền trợ cấp. Thời gian xử lý tham khảo: 6 ngày làm việc.",
+    "next_step_summary": "Nên xác định rõ đối tượng tham gia, quyền lợi hoặc nhu cầu điều chỉnh hồ sơ y tế trước khi nộp. Có thể chọn kênh nộp phù hợp: Trực tiếp, Trực tuyến, Dịch vụ bưu chính. Hiện có khoảng 8 mục giấy tờ cần theo dõi trong checklist.",
+    "tone": "supportive_public_service"
+  },
+  "guidance": {
+    "highlight_documents": [
+      {
+        "bucket": "required",
+        "name": "5. Biên bản giám định lại mức suy giảm KNLĐ sau khi điều trị thương tật, bệnh tật tái phát của Hội đồng GĐYK.",
+        "conditions": [],
+        "attachment_path": null
+      },
+      {
+        "bucket": "conditional",
+        "name": "8. Trường hợp đang hưởng trợ cấp TNLĐ, BNN trước ngày 1/1/2007 đã được trang cấp PTTGSH nay đề nghị trang cấp tiếp: Hóa đơn, chứng từ mua các phương tiện được trang cấp, vé tàu xe đi lại để làm hoặc nhận phương tiện trang cấp (nếu có).",
+        "conditions": [
+          "8. Trường hợp đang hưởng trợ cấp TNLĐ, BNN trước ngày 1/1/2007 đã được trang cấp PTTGSH nay đề nghị trang cấp tiếp: Hóa đơn, chứng từ mua các phương tiện được trang cấp, vé tàu xe đi lại để làm hoặc nhận phương tiện trang cấp (nếu có)."
+        ],
+        "attachment_path": null
+      },
+      {
+        "bucket": "conditional",
+        "name": "4. Biên bản giám định mức suy giảm KNLĐ lần trước gần nhất của Hội đồng GĐYK đối với trường hợp đã được giám định nhưng không đủ điều kiện về mức suy giảm KNLĐ để hưởng trợ cấp.",
+        "conditions": [
+          "4. Biên bản giám định mức suy giảm KNLĐ lần trước gần nhất của Hội đồng GĐYK đối với trường hợp đã được giám định nhưng không đủ điều kiện về mức suy giảm KNLĐ để hưởng trợ cấp."
+        ],
+        "attachment_path": null
+      },
+      {
+        "bucket": "conditional",
+        "name": "3. Trường hợp đang hưởng trợ cấp TNLĐ, BNN trước ngày 1/1/2007 đã được trang cấp PTTGSH nay đề nghị trang cấp tiếp: Hóa đơn, chứng từ mua các phương tiện được trang cấp, vé tàu xe đi lại để làm hoặc nhận phương tiện trang cấp (nếu có).",
+        "conditions": [
+          "3. Trường hợp đang hưởng trợ cấp TNLĐ, BNN trước ngày 1/1/2007 đã được trang cấp PTTGSH nay đề nghị trang cấp tiếp: Hóa đơn, chứng từ mua các phương tiện được trang cấp, vé tàu xe đi lại để làm hoặc nhận phương tiện trang cấp (nếu có)."
+        ],
+        "attachment_path": null
+      },
+      {
+        "bucket": "conditional",
+        "name": "6. Chỉ định của cơ sở KCB, cơ sở chỉnh hình, phục hồi chức năng thuộc ngành Lao động - Thương binh và Xã hội hoặc của bệnh viện cấp tỉnh và tương đương trở lên về việc trang cấp PTTGSH (nếu có).",
+        "conditions": [
+          "6. Chỉ định của cơ sở KCB, cơ sở chỉnh hình, phục hồi chức năng thuộc ngành Lao động - Thương binh và Xã hội hoặc của bệnh viện cấp tỉnh và tương đương trở lên về việc trang cấp PTTGSH (nếu có)."
+        ],
+        "attachment_path": null
+      },
+      {
+        "bucket": "conditional",
+        "name": "1. Bản chính Sổ BHXH (trong trường hợp bảo lưu thời gian đóng BHXH mà chưa có dữ liệu trong hệ thống hoặc chưa được cấp mã BHXH đối với trường hợp bị TNLĐ, BNN đã được GĐYK nhưng không đủ điều kiện về mức suy giảm KNLĐ để hưởng trợ cấp)",
+        "conditions": [
+          "1. Bản chính Sổ BHXH (trong trường hợp bảo lưu thời gian đóng BHXH mà chưa có dữ liệu trong hệ thống hoặc chưa được cấp mã BHXH đối với trường hợp bị TNLĐ, BNN đã được GĐYK nhưng không đủ điều kiện về mức suy giảm KNLĐ để hưởng trợ cấp)"
+        ],
+        "attachment_path": null
+      }
+    ],
+    "special_cases": [
+      "Có thể cần hồ sơ kỹ thuật phương tiện hoặc giấy phép lái xe",
+      "Có thể cần xác minh quan hệ lao động hoặc giấy phép làm việc"
+    ],
+    "common_errors": [
+      "Thiếu hồ sơ về vị trí việc làm, đơn vị sử dụng lao động hoặc điều kiện làm việc áp dụng."
+    ],
+    "validation_hints": [
+      "Nên xác định trước kênh nộp hồ sơ để biết có cần bản giấy, bản điện tử hay xuất trình trực tiếp.",
+      "Nên xác định đúng nhóm đối tượng, mã số bảo hiểm và quyền lợi áp dụng trước khi nộp."
+    ]
+  },
+  "intake": {
+    "candidate_input_fields": [
+      {
+        "field_id": "request_subject",
+        "label": "Đối tượng làm thủ tục",
+        "field_type": "text",
+        "required": true
+      },
+      {
+        "field_id": "insurance_or_medical_need",
+        "label": "Nhu cầu bảo hiểm hoặc y tế",
+        "field_type": "text",
+        "required": true
+      },
+      {
+        "field_id": "submission_channel_preference",
+        "label": "Kênh nộp dự kiến",
+        "field_type": "enum",
+        "required": false
+      },
+      {
+        "field_id": "has_insurance_number",
+        "label": "Đã có mã BHXH/BHYT",
+        "field_type": "boolean",
+        "required": false
+      }
+    ],
+    "suggested_clarifying_questions": [
+      "Bạn đang muốn đăng ký, điều chỉnh hay xác nhận quyền lợi y tế hoặc bảo hiểm nào?",
+      "Bạn đã có mã BHXH/BHYT hoặc thông tin đơn vị tiếp nhận liên quan chưa?"
+    ]
+  },
+  "ui_hints": {
+    "primary_channel": "online",
+    "result_label": "Tiền trợ cấp",
+    "time_badge": "6 ngày làm việc",
+    "document_count_badge": 8
+  },
+  "provenance": {
+    "generator": "workflow_domain_enricher",
+    "derivation_mode": "rule_based_semantic_enrichment",
+    "supported_group": true
+  }
+}

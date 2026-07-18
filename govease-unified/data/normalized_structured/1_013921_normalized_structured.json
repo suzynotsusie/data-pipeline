@@ -1,0 +1,261 @@
+{
+  "schema_version": "1.0",
+  "normalizer_version": "0.2.0",
+  "source": {
+    "procedure_code": "1.013921",
+    "title": "Sử dụng tài liệu lưu trữ tại lưu trữ lịch sử của nhà nước",
+    "raw_structured_parser_version": "0.1.0",
+    "field": "Văn thư và Lưu trữ nhà nước"
+  },
+  "procedure": {
+    "level": "Cấp bộ/ngành",
+    "procedure_type": "TTHC được luật giao quy định chi tiết",
+    "target_users": [
+      "Tổ chức (không bao gồm doanh nghiệp",
+      "HTX)",
+      "Công dân Việt Nam"
+    ],
+    "authorities": [],
+    "receiving_places": []
+  },
+  "submission": {
+    "channels": [
+      "in_person",
+      "online"
+    ],
+    "methods": [
+      {
+        "method_id": "method_1",
+        "channel": "online",
+        "processing_time_text": "1 ngày làm việc",
+        "fee_text": null,
+        "description": "Thời hạn cung cấp tài liệu chậm nhất là 01 ngày làm việc kể từ ngày tiếp nhận Phiếu yêu cầu đọc tài liệu lưu trữ",
+        "is_online": true,
+        "is_postal": false,
+        "is_in_person": false
+      },
+      {
+        "method_id": "method_2",
+        "channel": "online",
+        "processing_time_text": "2 ngày làm việc",
+        "fee_text": null,
+        "description": "chậm nhất là 02 ngày làm việc kể từ ngày tiếp nhận Phiếu yêu cầu sao và xác thực tài liệu lưu trữ",
+        "is_online": true,
+        "is_postal": false,
+        "is_in_person": false
+      },
+      {
+        "method_id": "method_3",
+        "channel": "online",
+        "processing_time_text": "7 ngày làm việc",
+        "fee_text": null,
+        "description": "Đối với tài liệu lưu trữ tiếp cận có điều kiện, thời hạn cung cấp tài liệu chậm nhất là 07 ngày làm việc kể từ ngày tiếp nhận Phiếu yêu cầu đọc tài liệu lưu trữ, Phiếu yêu cầu sao và xác thực tài liệu lưu trữ.",
+        "is_online": true,
+        "is_postal": false,
+        "is_in_person": false
+      },
+      {
+        "method_id": "method_4",
+        "channel": "in_person",
+        "processing_time_text": "1 ngày làm việc",
+        "fee_text": null,
+        "description": "Thời hạn cung cấp tài liệu chậm nhất là 01 ngày làm việc kể từ ngày tiếp nhận Phiếu yêu cầu đọc tài liệu lưu trữ",
+        "is_online": false,
+        "is_postal": false,
+        "is_in_person": true
+      },
+      {
+        "method_id": "method_5",
+        "channel": "in_person",
+        "processing_time_text": "2 ngày làm việc",
+        "fee_text": null,
+        "description": "chậm nhất là 02 ngày làm việc kể từ ngày tiếp nhận Phiếu yêu cầu sao và xác thực tài liệu lưu trữ",
+        "is_online": false,
+        "is_postal": false,
+        "is_in_person": true
+      },
+      {
+        "method_id": "method_6",
+        "channel": "in_person",
+        "processing_time_text": "7 ngày làm việc",
+        "fee_text": null,
+        "description": "Đối với tài liệu lưu trữ tiếp cận có điều kiện, thời hạn cung cấp tài liệu chậm nhất là 07 ngày làm việc kể từ ngày tiếp nhận Phiếu yêu cầu đọc tài liệu lưu trữ, Phiếu yêu cầu sao và xác thực tài liệu lưu trữ.",
+        "is_online": false,
+        "is_postal": false,
+        "is_in_person": true
+      }
+    ],
+    "timing_summary": {
+      "unique_processing_times": [
+        "1 ngày làm việc",
+        "2 ngày làm việc",
+        "7 ngày làm việc"
+      ],
+      "method_count": 6
+    }
+  },
+  "documents": {
+    "required": [
+      {
+        "document_id": "phi_u_y_u_c_u_c_t_i_li_u_l_u_tr_ho_c_phi_u_y_u_c_u_sao_v_x_c_th_c_t_i_li_u_l_u_tr",
+        "name": "Phiếu yêu cầu đọc tài liệu lưu trữ hoặc Phiếu yêu cầu sao và xác thực tài liệu lưu trữ",
+        "group_name": "default",
+        "group_type": "unknown",
+        "original_count": "1",
+        "copy_count": "0",
+        "conditions": [],
+        "attachment_label": null,
+        "attachment_path": null
+      },
+      {
+        "document_id": "phi_u_ng_k_s_d_ng_t_i_li_u_l_u_tr",
+        "name": "Phiếu đăng ký sử dụng tài liệu lưu trữ",
+        "group_name": "default",
+        "group_type": "unknown",
+        "original_count": "1",
+        "copy_count": "0",
+        "conditions": [],
+        "attachment_label": null,
+        "attachment_path": null
+      }
+    ],
+    "conditional": [
+      {
+        "document_id": "gi_y_gi_i_thi_u_ho_c_v_n_b_n_ngh_c_a_c_quan_t_ch_c_n_i_c_ng_t_c_tr_ng_h_p_s_d_ng_v_m_c_ch_c_ng_t_c",
+        "name": "Giấy giới thiệu hoặc văn bản đề nghị của cơ quan, tổ chức nơi công tác (trường hợp sử dụng vì mục đích công tác)",
+        "group_name": "default",
+        "group_type": "unknown",
+        "original_count": "1",
+        "copy_count": "0",
+        "conditions": [
+          "Giấy giới thiệu hoặc văn bản đề nghị của cơ quan, tổ chức nơi công tác (trường hợp sử dụng vì mục đích công tác)"
+        ],
+        "attachment_label": null,
+        "attachment_path": null
+      },
+      {
+        "document_id": "v_n_b_n_li_n_quan_v_m_c_ch_s_d_ng_i_t_ng_u_ti_n_n_u_c",
+        "name": "Văn bản liên quan về mục đích sử dụng, đối tượng ưu tiên (nếu có)",
+        "group_name": "default",
+        "group_type": "unknown",
+        "original_count": "1",
+        "copy_count": "0",
+        "conditions": [
+          "Văn bản liên quan về mục đích sử dụng, đối tượng ưu tiên (nếu có)"
+        ],
+        "attachment_label": null,
+        "attachment_path": null
+      }
+    ],
+    "presented": [],
+    "notes": [],
+    "forms": [],
+    "empty_groups": [],
+    "document_count": 4
+  },
+  "process": {
+    "steps": [
+      {
+        "step_id": "step_1",
+        "title": null,
+        "content": "1. -",
+        "actor": "user",
+        "channel_hint": null,
+        "time_hint": null
+      },
+      {
+        "step_id": "step_2",
+        "title": "Bước 1:",
+        "content": "Bước 1: Độc giả có nhu cầu sử dụng tài liệu lưu trữ điền các thông tin vào Phiếu đăng ký sử dụng tài liệu và cung cấp các văn bản liên quan về mục đích sử dụng, đối tượng ưu tiên (nếu có). -",
+        "actor": "user",
+        "channel_hint": null,
+        "time_hint": null
+      },
+      {
+        "step_id": "step_3",
+        "title": "Bước 2:",
+        "content": "Bước 2: Người đứng đầu lưu trữ lịch sử của Nhà nước ở trung ương xem xét, phê duyệt Phiếu đăng ký sử dụng tài liệu lưu trữ của độc giả. -",
+        "actor": "user",
+        "channel_hint": null,
+        "time_hint": null
+      },
+      {
+        "step_id": "step_4",
+        "title": "Bước 3:",
+        "content": "Bước 3: Độc giả điền thông tin vào Phiếu yêu cầu đọc tài liệu lưu trữ hoặc Phiếu yêu cầu sao và xác thực tài liệu lưu trữ. -",
+        "actor": "user",
+        "channel_hint": null,
+        "time_hint": null
+      },
+      {
+        "step_id": "step_5",
+        "title": "Bước 4:",
+        "content": "Bước 4: Người đứng đầu lưu trữ lịch sử của Nhà nước ở trung ương xem xét, phê duyệt Phiếu yêu cầu đọc tài liệu lưu trữ hoặc Phiếu yêu cầu sao và xác thực tài liệu lưu trữ của độc giả. Đối với tài liệu lưu trữ tiếp cận có điều kiện, người đứng đầu lưu trữ lịch sử của Nhà nước ở trung ương quyết định việc sử dụng tài liệu lưu trữ của độc giả sau khi có sự phê duyệt của cơ quan tham mưu quản lý nhà nước về lưu trữ. -",
+        "actor": "authority",
+        "channel_hint": null,
+        "time_hint": null
+      },
+      {
+        "step_id": "step_6",
+        "title": "Bước 5:",
+        "content": "Bước 5: Độc giả nhận tài liệu theo Phiếu yêu cầu đã được phê duyệt.",
+        "actor": "user",
+        "channel_hint": null,
+        "time_hint": null
+      }
+    ],
+    "step_count": 6,
+    "notes": []
+  },
+  "eligibility": {
+    "conditions": [
+      "- Độc giả đến sử dụng tài liệu tại lưu trữ lịch sử của Nhà nước ở trung ương phải xuất trình một trong các giấy tờ sau: thẻ căn cước, thẻ Căn cước công dân, Căn cước điện tử, hộ chiếu hoặc giấy tờ có dán ảnh do cơ quan nhà nước có thẩm quyền cấp; trường hợp sử dụng tài liệu để phục vụ công tác phải có giấy giới thiệu hoặc văn bản đề nghị của cơ quan, tổ chức nơi công tác.",
+      "- Độc giả sử dụng tài liệu lưu trữ trực tuyến phải khai báo thông tin để lưu trữ lịch sử của Nhà nước ở trung ương cấp tài khoản độc giả, thông tin khai báo gồm: họ và tên, số định danh cá nhân/số thẻ Căn cước công dân hoặc số hộ chiếu, thư điện tử, cơ quan công tác, số điện thoại liên hệ, đối tượng ưu tiên (nếu có)."
+    ],
+    "has_conditions": true
+  },
+  "results": {
+    "items": [
+      {
+        "name": "Các hồ sơ, văn bản, tài liệu được cung cấp",
+        "result_code": "KQ.G09.000349",
+        "raw_text": "Các hồ sơ, văn bản, tài liệu được cung cấp"
+      }
+    ],
+    "primary_result": {
+      "name": "Các hồ sơ, văn bản, tài liệu được cung cấp",
+      "result_code": "KQ.G09.000349",
+      "raw_text": "Các hồ sơ, văn bản, tài liệu được cung cấp"
+    }
+  },
+  "legal_basis": {
+    "items": [
+      {
+        "title": "Quy định nghiệp vụ lữu trữ tài liệu lưu trữ số",
+        "code": "05/2025/TT-BNV"
+      },
+      {
+        "title": "Luật Lưu trữ",
+        "code": "33/2024/QH15"
+      },
+      {
+        "title": "Thông tư",
+        "code": "275/2016/TT-BTC"
+      },
+      {
+        "title": "quy định chi tiết một số điều của Luật Lưu trữ",
+        "code": "06/2025/TT-BNV"
+      }
+    ],
+    "count": 4
+  },
+  "attachments": [],
+  "signals": {
+    "raw_parse_warnings": [],
+    "missing_documents": false,
+    "documents_section_present": true,
+    "documents_declared_empty": false,
+    "documents_only_in_notes": false,
+    "missing_results": false
+  }
+}

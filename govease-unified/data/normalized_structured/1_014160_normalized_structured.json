@@ -1,0 +1,198 @@
+{
+  "schema_version": "1.0",
+  "normalizer_version": "0.2.0",
+  "source": {
+    "procedure_code": "1.014160",
+    "title": "ĐĂNG KÝ THAM GIA BẢO HIỂM XÃ HỘI VÀ CẤP SỔ BẢO HIỂM XÃ HỘI",
+    "raw_structured_parser_version": "0.1.0",
+    "field": "Bảo hiểm xã hội"
+  },
+  "procedure": {
+    "level": "Cấp tỉnh",
+    "procedure_type": "TTHC được luật giao quy định chi tiết",
+    "target_users": [
+      "Công dân Việt Nam",
+      "Người nước ngoài",
+      "Cán bộ",
+      "công chức",
+      "viên chức"
+    ],
+    "authorities": [
+      "Bảo hiểm xã hội tỉnh"
+    ],
+    "receiving_places": []
+  },
+  "submission": {
+    "channels": [
+      "in_person",
+      "online",
+      "postal"
+    ],
+    "methods": [
+      {
+        "method_id": "method_1",
+        "channel": "online",
+        "processing_time_text": "5 ngày làm việc",
+        "fee_text": null,
+        "description": null,
+        "is_online": true,
+        "is_postal": false,
+        "is_in_person": false
+      },
+      {
+        "method_id": "method_2",
+        "channel": "postal",
+        "processing_time_text": "5 ngày làm việc",
+        "fee_text": null,
+        "description": null,
+        "is_online": false,
+        "is_postal": true,
+        "is_in_person": false
+      },
+      {
+        "method_id": "method_3",
+        "channel": "in_person",
+        "processing_time_text": "5 ngày làm việc",
+        "fee_text": null,
+        "description": null,
+        "is_online": false,
+        "is_postal": false,
+        "is_in_person": true
+      }
+    ],
+    "timing_summary": {
+      "unique_processing_times": [
+        "5 ngày làm việc"
+      ],
+      "method_count": 3
+    }
+  },
+  "documents": {
+    "required": [
+      {
+        "document_id": "t_khai_ng_k_tham_gia_b_o_hi_m_x_h_i_c_a_ng_i_lao_ng",
+        "name": "Tờ khai đăng ký tham gia bảo hiểm xã hội của người lao động.",
+        "group_name": "(1) Đối với đối tượng tham gia bảo hiểm xã hội bắt buộc (do người sử dụng lao động nộp):",
+        "group_type": "required",
+        "original_count": "1",
+        "copy_count": "0",
+        "conditions": [],
+        "attachment_label": null,
+        "attachment_path": null
+      },
+      {
+        "document_id": "t_khai_ng_k_tham_gia_b_o_hi_m_x_h_i_c_a_ng_i_s_d_ng_lao_ng_k_m_theo_danh_s_ch_ng_i_lao_ng_tham_gia_b_o_hi_m_x_h_i",
+        "name": "Tờ khai đăng ký tham gia bảo hiểm xã hội của người sử dụng lao động kèm theo danh sách người lao động tham gia bảo hiểm xã hội;",
+        "group_name": "(1) Đối với đối tượng tham gia bảo hiểm xã hội bắt buộc (do người sử dụng lao động nộp):",
+        "group_type": "required",
+        "original_count": "1",
+        "copy_count": "0",
+        "conditions": [],
+        "attachment_label": null,
+        "attachment_path": null
+      },
+      {
+        "document_id": "t_khai_ng_k_tham_gia_b_o_hi_m_x_h_i_c_a_ng_i_lao_ng",
+        "name": "Tờ khai đăng ký tham gia bảo hiểm xã hội của người lao động.",
+        "group_name": "(2) Đối tượng: (i) Chủ hộ kinh doanh của hộ kinh doanh có đăng ký kinh doanh nộp thuế theo phương pháp kê khai và (ii) người quản lý doanh nghiệp, kiểm soát viên, người đại diện phần vốn nhà nước, người đại diện phần vốn của doanh nghiệp theo quy định của pháp luật; thành viên Hội đồng quản trị, Tổng giám đốc, Giám đốc, thành viên Ban kiểm soát hoặc kiểm soát viên và các chức danh quản lý khác được bầu của hợp tác xã, liên hiệp hợp tác xã theo quy định của Luật Hợp tác xã không hưởng tiền lương tự nộp:",
+        "group_type": "required",
+        "original_count": "1",
+        "copy_count": "0",
+        "conditions": [],
+        "attachment_label": null,
+        "attachment_path": null
+      },
+      {
+        "document_id": "t_khai_ng_k_tham_gia_b_o_hi_m_x_h_i_c_a_ng_i_tham_gia_b_o_hi_m_x_h_i_t_nguy_n",
+        "name": "Tờ khai đăng ký tham gia bảo hiểm xã hội của người tham gia bảo hiểm xã hội tự nguyện.",
+        "group_name": "(3) Đối với đối tượng tham gia bảo hiểm xã hội tự nguyện:",
+        "group_type": "required",
+        "original_count": "1",
+        "copy_count": "0",
+        "conditions": [],
+        "attachment_label": null,
+        "attachment_path": null
+      }
+    ],
+    "conditional": [],
+    "presented": [],
+    "notes": [],
+    "forms": [],
+    "empty_groups": [],
+    "document_count": 4
+  },
+  "process": {
+    "steps": [
+      {
+        "step_id": "step_1",
+        "title": null,
+        "content": "1.",
+        "actor": "user",
+        "channel_hint": null,
+        "time_hint": null
+      },
+      {
+        "step_id": "step_2",
+        "title": "Bước 1:",
+        "content": "Bước 1: - Người sử dụng lao động có trách nhiệm kê khai và nộp hồ sơ tham gia bảo hiểm xã hội bắt buộc của người lao động cho cơ quan bảo hiểm xã hội trong thời hạn 30 ngày kể từ ngày người lao động thuộc đối tượng tham gia bảo hiểm xã hội bắt buộc. - Đối tượng: (i) chủ hộ kinh doanh có đăng ký kinh doanh nộp thuế theo phương pháp kê khai và (ii) người quản lý doanh nghiệp, kiểm soát viên, người đại diện phần vốn nhà nước, người đại diện phần vốn của doanh nghiệp theo quy định của pháp luật; thành viên Hội đồng quản trị, Tổng giám đốc, Giám đốc, thành viên Ban kiểm soát hoặc kiểm soát viên và các chức danh quản lý khác được bầu của hợp tác xã, liên hiệp hợp tác xã theo quy định của Luật Hợp tác xã không hưởng tiền lương tự nộp hồ sơ cho cơ quan bảo hiểm xã hội trong thời hạn 30 ngày kể từ ngày thuộc đối tượng tham gia bảo hiểm xã hội bắt buộc. - Người tham gia bảo hiểm xã hội tự nguyện nộp hồ sơ cho cơ quan bảo hiểm xã hội.",
+        "actor": "authority",
+        "channel_hint": null,
+        "time_hint": "30 ngày"
+      },
+      {
+        "step_id": "step_3",
+        "title": "Bước 2:",
+        "content": "Bước 2: Trong thời hạn 05 ngày làm việc kể từ ngày nhận đủ hồ sơ theo quy định, cơ quan bảo hiểm xã hội có trách nhiệm cấp sổ bảo hiểm xã hội; Trường hợp không cấp sổ bảo hiểm xã hội thì phải trả lời bằng văn bản và nêu rõ lý do.",
+        "actor": "authority",
+        "channel_hint": null,
+        "time_hint": "05 ngày làm việc"
+      }
+    ],
+    "step_count": 3,
+    "notes": []
+  },
+  "eligibility": {
+    "conditions": [],
+    "has_conditions": false
+  },
+  "results": {
+    "items": [
+      {
+        "name": "Sổ Bảo hiểm xã hội",
+        "result_code": "KQ.G09.000488",
+        "raw_text": "Sổ Bảo hiểm xã hội"
+      }
+    ],
+    "primary_result": {
+      "name": "Sổ Bảo hiểm xã hội",
+      "result_code": "KQ.G09.000488",
+      "raw_text": "Sổ Bảo hiểm xã hội"
+    }
+  },
+  "legal_basis": {
+    "items": [
+      {
+        "title": "Quy định chi tiết và hướng dẫn thi hành một số điều của Luật Bảo hiểm xã hội về bảo hiểm xã hội bắt buộc",
+        "code": "158/2025/NĐ-CP"
+      },
+      {
+        "title": "Luật Bảo hiểm xã hội",
+        "code": "41/2024/QH15"
+      },
+      {
+        "title": "Quy định chi tiết và hướng dẫn thi hành một số điều của Luật Bảo hiểm xã hội về bảo hiểm xã hội tự nguyện",
+        "code": "159/2025/NĐ-CP"
+      }
+    ],
+    "count": 3
+  },
+  "attachments": [],
+  "signals": {
+    "raw_parse_warnings": [],
+    "missing_documents": false,
+    "documents_section_present": true,
+    "documents_declared_empty": false,
+    "documents_only_in_notes": false,
+    "missing_results": false
+  }
+}

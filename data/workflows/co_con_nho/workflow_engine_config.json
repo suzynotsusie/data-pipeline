@@ -1,0 +1,427 @@
+{
+  "schema_version": "1.0",
+  "domain": "co_con_nho",
+  "updated_at": "2026-07-18",
+  "source_files": [
+    "C:\\Users\\ku060\\Downloads\\VAIC source\\data-pipeline\\main\\full-data.csv",
+    "C:\\Users\\ku060\\Downloads\\VAIC source\\data-pipeline\\data\\workflows\\co_con_nho\\summary.csv",
+    "C:\\Users\\ku060\\Downloads\\VAIC source\\data-pipeline\\data\\workflows\\co_con_nho\\normalized.json",
+    "C:\\Users\\ku060\\Downloads\\VAIC source\\data-pipeline\\raw_data"
+  ],
+  "coverage": {
+    "expected_codes": [
+      "1.004222",
+      "1.000110",
+      "1.000689",
+      "1.000893",
+      "1.001020",
+      "1.001193",
+      "1.001695",
+      "1.003583",
+      "1.004772",
+      "1.004884",
+      "2.000522",
+      "2.000528",
+      "2.000547",
+      "2.000635",
+      "2.000712",
+      "2.000986",
+      "2.001023"
+    ],
+    "covered_codes": [
+      "1.004222",
+      "1.000110",
+      "1.000689",
+      "1.000893",
+      "1.001020",
+      "1.001193",
+      "1.001695",
+      "1.003583",
+      "1.004772",
+      "1.004884",
+      "2.000522",
+      "2.000528",
+      "2.000547",
+      "2.000635",
+      "2.000712",
+      "2.000986",
+      "2.001023"
+    ],
+    "missing_codes": []
+  },
+  "llm_contract": {
+    "role": "parse_user_answer_and_rephrase_question_only",
+    "required_output_schema": {
+      "intent": "co_con_nho",
+      "current_node": "string",
+      "slot_updates": {
+        "subdomain_key": "lien_thong_khai_sinh_bao_hiem_cu_tru | khai_sinh | cu_tru | unknown",
+        "operation_key": "string",
+        "operation_group": "string"
+      },
+      "confidence": "0_to_1",
+      "needs_human_review": "boolean"
+    }
+  },
+  "entry_prompts": [
+    "Bạn đang cần làm việc về khai sinh, bảo hiểm y tế hay cư trú cho trẻ nhỏ?",
+    "Bạn muốn làm khai sinh riêng, liên thông thêm bảo hiểm hoặc cư trú, hay xin lại giấy tờ đã có?"
+  ],
+  "slots": [
+    {
+      "name": "subdomain_key",
+      "required": true,
+      "description": "Nhánh chính của nhóm Có con nhỏ."
+    },
+    {
+      "name": "operation_key",
+      "required": true,
+      "description": "Thao tác cụ thể ánh xạ trực tiếp tới thủ tục cuối cùng."
+    },
+    {
+      "name": "operation_group",
+      "required": false,
+      "description": "Nhóm thao tác để gom các thủ tục gần nhau cho UI và parser."
+    }
+  ],
+  "subdomain_catalog": [
+    {
+      "subdomain_key": "lien_thong_khai_sinh_bao_hiem_cu_tru",
+      "subdomain_label": "Liên thông khai sinh, bảo hiểm, cư trú",
+      "event_id": 250,
+      "summary": "Nhóm thủ tục liên thông sau sinh, kết hợp đăng ký khai sinh với cấp thẻ bảo hiểm y tế và đăng ký thường trú cho trẻ."
+    },
+    {
+      "subdomain_key": "khai_sinh",
+      "subdomain_label": "Khai sinh",
+      "event_id": 251,
+      "summary": "Nhóm thủ tục đăng ký khai sinh, đăng ký lại, bản sao, khai sinh có yếu tố nước ngoài và các biến thể kết hợp nhận cha mẹ con."
+    },
+    {
+      "subdomain_key": "cu_tru",
+      "subdomain_label": "Cư trú",
+      "event_id": 253,
+      "summary": "Nhóm thủ tục đăng ký thường trú cho trẻ nhỏ khi gia đình không làm qua gói liên thông đầy đủ."
+    }
+  ],
+  "decision_tree": {
+    "start_node": "child_subdomain",
+    "nodes": [
+      {
+        "id": "child_subdomain",
+        "type": "question",
+        "slot": "subdomain_key",
+        "question": "Bạn đang hỏi về liên thông sau sinh, khai sinh, bảo hiểm y tế hay cư trú cho trẻ?",
+        "options": [
+          "lien_thong_khai_sinh_bao_hiem_cu_tru",
+          "khai_sinh",
+          "cu_tru"
+        ]
+      },
+      {
+        "id": "child_operation",
+        "type": "question",
+        "slot": "operation_key",
+        "question": "Bạn cần làm thao tác nào cụ thể trong nhánh đã chọn?",
+        "options_by_subdomain": {
+          "cu_tru": [
+            {
+              "operation_key": "dang_ky_thuong_tru",
+              "operation_group": "dang_ky_thuong_tru_cho_tre",
+              "procedure_code": "1.004222",
+              "procedure_title": "Đăng ký thường trú"
+            }
+          ],
+          "khai_sinh": [
+            {
+              "operation_key": "thu_tuc_dang_ky_khai_sinh_co_yeu_to_nuoc_ngoai_tai_khu_vuc_bien_gioi",
+              "operation_group": "khai_sinh_co_yeu_to_nuoc_ngoai_bien_gioi",
+              "procedure_code": "1.000110",
+              "procedure_title": "Thủ tục đăng ký khai sinh có yếu tố nước ngoài tại khu vực biên giới"
+            },
+            {
+              "operation_key": "thu_tuc_dang_ky_khai_sinh_ket_hop_dang_ky_nhan_cha_me_con",
+              "operation_group": "khai_sinh_ket_hop_nhan_cha_me_con",
+              "procedure_code": "1.000689",
+              "procedure_title": "Thủ tục đăng ký khai sinh kết hợp đăng ký nhận cha, mẹ, con"
+            },
+            {
+              "operation_key": "thu_tuc_dang_ky_khai_sinh_co_yeu_to_nuoc_ngoai_cho_nguoi_da_co_ho_so_giay_to_ca_nhan",
+              "operation_group": "khai_sinh_cho_nguoi_da_co_ho_so_co_yeu_to_nuoc_ngoai",
+              "procedure_code": "1.000893",
+              "procedure_title": "Thủ tục đăng ký khai sinh có yếu tố nước ngoài cho người đã có hồ sơ, giấy tờ cá nhân"
+            },
+            {
+              "operation_key": "thu_tuc_dang_ky_khai_sinh_cho_tre_em_sinh_ra_o_nuoc_ngoai_va_co_quoc_tich_viet_nam",
+              "operation_group": "khai_sinh_cho_tre_sinh_o_nuoc_ngoai",
+              "procedure_code": "1.001020",
+              "procedure_title": "Thủ tục đăng ký khai sinh cho trẻ em sinh ra ở nước ngoài và có quốc tịch Việt Nam"
+            },
+            {
+              "operation_key": "thu_tuc_dang_ky_khai_sinh",
+              "operation_group": "dang_ky_khai_sinh",
+              "procedure_code": "1.001193",
+              "procedure_title": "Thủ tục đăng ký khai sinh"
+            },
+            {
+              "operation_key": "thu_tuc_dang_ky_khai_sinh_ket_hop_dang_ky_nhan_cha_me_con_co_yeu_to_nuoc_ngoai",
+              "operation_group": "khai_sinh_ket_hop_nhan_cha_me_con_co_yeu_to_nuoc_ngoai",
+              "procedure_code": "1.001695",
+              "procedure_title": "Thủ tục đăng ký khai sinh kết hợp đăng ký nhận cha, mẹ, con có yếu tố nước ngoài"
+            },
+            {
+              "operation_key": "thu_tuc_dang_ky_khai_sinh_luu_dong",
+              "operation_group": "dang_ky_khai_sinh_luu_dong",
+              "procedure_code": "1.003583",
+              "procedure_title": "Thủ tục đăng ký khai sinh lưu động"
+            },
+            {
+              "operation_key": "thu_tuc_dang_ky_khai_sinh_cho_nguoi_da_co_ho_so_giay_to_ca_nhan",
+              "operation_group": "khai_sinh_cho_nguoi_da_co_ho_so",
+              "procedure_code": "1.004772",
+              "procedure_title": "Thủ tục đăng ký khai sinh cho người đã có hồ sơ, giấy tờ cá nhân"
+            },
+            {
+              "operation_key": "thu_tuc_dang_ky_lai_khai_sinh",
+              "operation_group": "dang_ky_lai_khai_sinh",
+              "procedure_code": "1.004884",
+              "procedure_title": "Thủ tục đăng ký lại khai sinh"
+            },
+            {
+              "operation_key": "thu_tuc_dang_ky_lai_khai_sinh_co_yeu_to_nuoc_ngoai",
+              "operation_group": "dang_ky_lai_khai_sinh",
+              "procedure_code": "2.000522",
+              "procedure_title": "Thủ tục đăng ký lại khai sinh có yếu tố nước ngoài"
+            },
+            {
+              "operation_key": "thu_tuc_dang_ky_khai_sinh_co_yeu_to_nuoc_ngoai",
+              "operation_group": "khai_sinh_co_yeu_to_nuoc_ngoai",
+              "procedure_code": "2.000528",
+              "procedure_title": "Thủ tục đăng ký khai sinh có yếu tố nước ngoài"
+            },
+            {
+              "operation_key": "thu_tuc_ghi_vao_so_ho_tich_viec_ho_tich_khac_cua_cong_dan_viet_nam_da_duoc_giai_quyet_tai_co_quan_co_tham_quyen_cua_nuoc_ngoai_khai_sinh_giam_ho_nhan_cha_me_con_xac_dinh_cha_me_con_nuoi_con_nuoi_khai_tu_thay_doi_ho_tich",
+              "operation_group": "ghi_chu_ho_tich_khac_lien_quan_khai_sinh",
+              "procedure_code": "2.000547",
+              "procedure_title": "Thủ tục ghi vào Sổ hộ tịch việc hộ tịch khác của công dân Việt Nam đã được giải quyết tại cơ quan có thẩm quyền của nước ngoài (khai sinh; giám hộ; nhận cha, mẹ, con; xác định cha, mẹ, con; nuôi con nuôi; khai tử; thay đổi hộ tịch)"
+            },
+            {
+              "operation_key": "cap_ban_sao_trich_luc_ho_tich_ban_sao_giay_khai_sinh",
+              "operation_group": "cap_ban_sao_khai_sinh",
+              "procedure_code": "2.000635",
+              "procedure_title": "Cấp bản sao Trích lục hộ tịch, bản sao Giấy khai sinh"
+            },
+            {
+              "operation_key": "thu_tuc_ghi_vao_so_ho_tich_viec_khai_sinh_da_dang_ky_tai_co_quan_co_tham_quyen_cua_nuoc_ngoai",
+              "operation_group": "ghi_chu_khai_sinh_o_nuoc_ngoai",
+              "procedure_code": "2.000712",
+              "procedure_title": "Thủ tục ghi vào sổ hộ tịch việc khai sinh đã đăng ký tại cơ quan có thẩm quyền của nước ngoài"
+            }
+          ],
+          "lien_thong_khai_sinh_bao_hiem_cu_tru": [
+            {
+              "operation_key": "lien_thong_thu_tuc_hanh_chinh_ve_dang_ky_khai_sinh_dang_ky_thuong_tru_cap_the_bao_hiem_y_te_cho_tre_em_duoi_6_tuoi",
+              "operation_group": "lien_thong_khai_sinh_bao_hiem_cu_tru",
+              "procedure_code": "2.000986",
+              "procedure_title": "Liên thông thủ tục hành chính về đăng ký khai sinh, đăng ký thường trú, cấp thẻ bảo hiểm y tế cho trẻ em dưới 6 tuổi"
+            },
+            {
+              "operation_key": "lien_thong_cac_thu_tuc_hanh_chinh_ve_dang_ky_khai_sinh_cap_the_bao_hiem_y_te_cho_tre_em_duoi_6_tuoi",
+              "operation_group": "lien_thong_khai_sinh_bao_hiem_cu_tru",
+              "procedure_code": "2.001023",
+              "procedure_title": "Liên thông các thủ tục hành chính về đăng ký khai sinh, cấp Thẻ bảo hiểm y tế cho trẻ em dưới 6 tuổi"
+            }
+          ]
+        }
+      }
+    ],
+    "routes": [
+      {
+        "route_id": "cu_tru-1_004222",
+        "conditions": {
+          "subdomain_key": "cu_tru",
+          "operation_key": "dang_ky_thuong_tru"
+        },
+        "procedure_code": "1.004222",
+        "procedure_name": "Đăng ký thường trú",
+        "why_this_route": "Route trực tiếp cho nhu cầu 'Đăng ký thường trú' trong nhánh 'Cư trú'."
+      },
+      {
+        "route_id": "khai_sinh-1_000110",
+        "conditions": {
+          "subdomain_key": "khai_sinh",
+          "operation_key": "thu_tuc_dang_ky_khai_sinh_co_yeu_to_nuoc_ngoai_tai_khu_vuc_bien_gioi"
+        },
+        "procedure_code": "1.000110",
+        "procedure_name": "Thủ tục đăng ký khai sinh có yếu tố nước ngoài tại khu vực biên giới",
+        "why_this_route": "Route trực tiếp cho nhu cầu 'Thủ tục đăng ký khai sinh có yếu tố nước ngoài tại khu vực biên giới' trong nhánh 'Khai sinh'."
+      },
+      {
+        "route_id": "khai_sinh-1_000689",
+        "conditions": {
+          "subdomain_key": "khai_sinh",
+          "operation_key": "thu_tuc_dang_ky_khai_sinh_ket_hop_dang_ky_nhan_cha_me_con"
+        },
+        "procedure_code": "1.000689",
+        "procedure_name": "Thủ tục đăng ký khai sinh kết hợp đăng ký nhận cha, mẹ, con",
+        "why_this_route": "Route trực tiếp cho nhu cầu 'Thủ tục đăng ký khai sinh kết hợp đăng ký nhận cha, mẹ, con' trong nhánh 'Khai sinh'."
+      },
+      {
+        "route_id": "khai_sinh-1_000893",
+        "conditions": {
+          "subdomain_key": "khai_sinh",
+          "operation_key": "thu_tuc_dang_ky_khai_sinh_co_yeu_to_nuoc_ngoai_cho_nguoi_da_co_ho_so_giay_to_ca_nhan"
+        },
+        "procedure_code": "1.000893",
+        "procedure_name": "Thủ tục đăng ký khai sinh có yếu tố nước ngoài cho người đã có hồ sơ, giấy tờ cá nhân",
+        "why_this_route": "Route trực tiếp cho nhu cầu 'Thủ tục đăng ký khai sinh có yếu tố nước ngoài cho người đã có hồ sơ, giấy tờ cá nhân' trong nhánh 'Khai sinh'."
+      },
+      {
+        "route_id": "khai_sinh-1_001020",
+        "conditions": {
+          "subdomain_key": "khai_sinh",
+          "operation_key": "thu_tuc_dang_ky_khai_sinh_cho_tre_em_sinh_ra_o_nuoc_ngoai_va_co_quoc_tich_viet_nam"
+        },
+        "procedure_code": "1.001020",
+        "procedure_name": "Thủ tục đăng ký khai sinh cho trẻ em sinh ra ở nước ngoài và có quốc tịch Việt Nam",
+        "why_this_route": "Route trực tiếp cho nhu cầu 'Thủ tục đăng ký khai sinh cho trẻ em sinh ra ở nước ngoài và có quốc tịch Việt Nam' trong nhánh 'Khai sinh'."
+      },
+      {
+        "route_id": "khai_sinh-1_001193",
+        "conditions": {
+          "subdomain_key": "khai_sinh",
+          "operation_key": "thu_tuc_dang_ky_khai_sinh"
+        },
+        "procedure_code": "1.001193",
+        "procedure_name": "Thủ tục đăng ký khai sinh",
+        "why_this_route": "Route trực tiếp cho nhu cầu 'Thủ tục đăng ký khai sinh' trong nhánh 'Khai sinh'."
+      },
+      {
+        "route_id": "khai_sinh-1_001695",
+        "conditions": {
+          "subdomain_key": "khai_sinh",
+          "operation_key": "thu_tuc_dang_ky_khai_sinh_ket_hop_dang_ky_nhan_cha_me_con_co_yeu_to_nuoc_ngoai"
+        },
+        "procedure_code": "1.001695",
+        "procedure_name": "Thủ tục đăng ký khai sinh kết hợp đăng ký nhận cha, mẹ, con có yếu tố nước ngoài",
+        "why_this_route": "Route trực tiếp cho nhu cầu 'Thủ tục đăng ký khai sinh kết hợp đăng ký nhận cha, mẹ, con có yếu tố nước ngoài' trong nhánh 'Khai sinh'."
+      },
+      {
+        "route_id": "khai_sinh-1_003583",
+        "conditions": {
+          "subdomain_key": "khai_sinh",
+          "operation_key": "thu_tuc_dang_ky_khai_sinh_luu_dong"
+        },
+        "procedure_code": "1.003583",
+        "procedure_name": "Thủ tục đăng ký khai sinh lưu động",
+        "why_this_route": "Route trực tiếp cho nhu cầu 'Thủ tục đăng ký khai sinh lưu động' trong nhánh 'Khai sinh'."
+      },
+      {
+        "route_id": "khai_sinh-1_004772",
+        "conditions": {
+          "subdomain_key": "khai_sinh",
+          "operation_key": "thu_tuc_dang_ky_khai_sinh_cho_nguoi_da_co_ho_so_giay_to_ca_nhan"
+        },
+        "procedure_code": "1.004772",
+        "procedure_name": "Thủ tục đăng ký khai sinh cho người đã có hồ sơ, giấy tờ cá nhân",
+        "why_this_route": "Route trực tiếp cho nhu cầu 'Thủ tục đăng ký khai sinh cho người đã có hồ sơ, giấy tờ cá nhân' trong nhánh 'Khai sinh'."
+      },
+      {
+        "route_id": "khai_sinh-1_004884",
+        "conditions": {
+          "subdomain_key": "khai_sinh",
+          "operation_key": "thu_tuc_dang_ky_lai_khai_sinh"
+        },
+        "procedure_code": "1.004884",
+        "procedure_name": "Thủ tục đăng ký lại khai sinh",
+        "why_this_route": "Route trực tiếp cho nhu cầu 'Thủ tục đăng ký lại khai sinh' trong nhánh 'Khai sinh'."
+      },
+      {
+        "route_id": "khai_sinh-2_000522",
+        "conditions": {
+          "subdomain_key": "khai_sinh",
+          "operation_key": "thu_tuc_dang_ky_lai_khai_sinh_co_yeu_to_nuoc_ngoai"
+        },
+        "procedure_code": "2.000522",
+        "procedure_name": "Thủ tục đăng ký lại khai sinh có yếu tố nước ngoài",
+        "why_this_route": "Route trực tiếp cho nhu cầu 'Thủ tục đăng ký lại khai sinh có yếu tố nước ngoài' trong nhánh 'Khai sinh'."
+      },
+      {
+        "route_id": "khai_sinh-2_000528",
+        "conditions": {
+          "subdomain_key": "khai_sinh",
+          "operation_key": "thu_tuc_dang_ky_khai_sinh_co_yeu_to_nuoc_ngoai"
+        },
+        "procedure_code": "2.000528",
+        "procedure_name": "Thủ tục đăng ký khai sinh có yếu tố nước ngoài",
+        "why_this_route": "Route trực tiếp cho nhu cầu 'Thủ tục đăng ký khai sinh có yếu tố nước ngoài' trong nhánh 'Khai sinh'."
+      },
+      {
+        "route_id": "khai_sinh-2_000547",
+        "conditions": {
+          "subdomain_key": "khai_sinh",
+          "operation_key": "thu_tuc_ghi_vao_so_ho_tich_viec_ho_tich_khac_cua_cong_dan_viet_nam_da_duoc_giai_quyet_tai_co_quan_co_tham_quyen_cua_nuoc_ngoai_khai_sinh_giam_ho_nhan_cha_me_con_xac_dinh_cha_me_con_nuoi_con_nuoi_khai_tu_thay_doi_ho_tich"
+        },
+        "procedure_code": "2.000547",
+        "procedure_name": "Thủ tục ghi vào Sổ hộ tịch việc hộ tịch khác của công dân Việt Nam đã được giải quyết tại cơ quan có thẩm quyền của nước ngoài (khai sinh; giám hộ; nhận cha, mẹ, con; xác định cha, mẹ, con; nuôi con nuôi; khai tử; thay đổi hộ tịch)",
+        "why_this_route": "Route trực tiếp cho nhu cầu 'Thủ tục ghi vào Sổ hộ tịch việc hộ tịch khác của công dân Việt Nam đã được giải quyết tại cơ quan có thẩm quyền của nước ngoài (khai sinh; giám hộ; nhận cha, mẹ, con; xác định cha, mẹ, con; nuôi con nuôi; khai tử; thay đổi hộ tịch)' trong nhánh 'Khai sinh'."
+      },
+      {
+        "route_id": "khai_sinh-2_000635",
+        "conditions": {
+          "subdomain_key": "khai_sinh",
+          "operation_key": "cap_ban_sao_trich_luc_ho_tich_ban_sao_giay_khai_sinh"
+        },
+        "procedure_code": "2.000635",
+        "procedure_name": "Cấp bản sao Trích lục hộ tịch, bản sao Giấy khai sinh",
+        "why_this_route": "Route trực tiếp cho nhu cầu 'Cấp bản sao Trích lục hộ tịch, bản sao Giấy khai sinh' trong nhánh 'Khai sinh'."
+      },
+      {
+        "route_id": "khai_sinh-2_000712",
+        "conditions": {
+          "subdomain_key": "khai_sinh",
+          "operation_key": "thu_tuc_ghi_vao_so_ho_tich_viec_khai_sinh_da_dang_ky_tai_co_quan_co_tham_quyen_cua_nuoc_ngoai"
+        },
+        "procedure_code": "2.000712",
+        "procedure_name": "Thủ tục ghi vào sổ hộ tịch việc khai sinh đã đăng ký tại cơ quan có thẩm quyền của nước ngoài",
+        "why_this_route": "Route trực tiếp cho nhu cầu 'Thủ tục ghi vào sổ hộ tịch việc khai sinh đã đăng ký tại cơ quan có thẩm quyền của nước ngoài' trong nhánh 'Khai sinh'."
+      },
+      {
+        "route_id": "lien_thong_khai_sinh_bao_hiem_cu_tru-2_000986",
+        "conditions": {
+          "subdomain_key": "lien_thong_khai_sinh_bao_hiem_cu_tru",
+          "operation_key": "lien_thong_thu_tuc_hanh_chinh_ve_dang_ky_khai_sinh_dang_ky_thuong_tru_cap_the_bao_hiem_y_te_cho_tre_em_duoi_6_tuoi"
+        },
+        "procedure_code": "2.000986",
+        "procedure_name": "Liên thông thủ tục hành chính về đăng ký khai sinh, đăng ký thường trú, cấp thẻ bảo hiểm y tế cho trẻ em dưới 6 tuổi",
+        "why_this_route": "Route trực tiếp cho nhu cầu 'Liên thông thủ tục hành chính về đăng ký khai sinh, đăng ký thường trú, cấp thẻ bảo hiểm y tế cho trẻ em dưới 6 tuổi' trong nhánh 'Liên thông khai sinh, bảo hiểm, cư trú'."
+      },
+      {
+        "route_id": "lien_thong_khai_sinh_bao_hiem_cu_tru-2_001023",
+        "conditions": {
+          "subdomain_key": "lien_thong_khai_sinh_bao_hiem_cu_tru",
+          "operation_key": "lien_thong_cac_thu_tuc_hanh_chinh_ve_dang_ky_khai_sinh_cap_the_bao_hiem_y_te_cho_tre_em_duoi_6_tuoi"
+        },
+        "procedure_code": "2.001023",
+        "procedure_name": "Liên thông các thủ tục hành chính về đăng ký khai sinh, cấp Thẻ bảo hiểm y tế cho trẻ em dưới 6 tuổi",
+        "why_this_route": "Route trực tiếp cho nhu cầu 'Liên thông các thủ tục hành chính về đăng ký khai sinh, cấp Thẻ bảo hiểm y tế cho trẻ em dưới 6 tuổi' trong nhánh 'Liên thông khai sinh, bảo hiểm, cư trú'."
+      }
+    ]
+  },
+  "pre_submission_checks": [
+    {
+      "field_group": "child_birth_information",
+      "checks": [
+        "Thông tin trẻ gồm họ tên, ngày sinh, nơi sinh và giới tính phải thống nhất giữa giấy chứng sinh, tờ khai và hồ sơ liên thông.",
+        "Nhóm khai sinh có yếu tố nước ngoài hoặc kết hợp nhận cha mẹ con cần đối chiếu chặt chẽ giấy tờ nhân thân của cha mẹ."
+      ]
+    },
+    {
+      "field_group": "linked_services",
+      "checks": [
+        "Nếu làm liên thông bảo hiểm y tế hoặc cư trú, dữ liệu của trẻ và cha mẹ phải đồng bộ giữa hồ sơ khai sinh, bảo hiểm và cư trú.",
+        "Đăng ký thường trú cho trẻ cần có địa chỉ cư trú rõ ràng và hồ sơ chứng minh chỗ ở hợp lệ khi không làm qua gói liên thông đầy đủ."
+      ]
+    }
+  ]
+}

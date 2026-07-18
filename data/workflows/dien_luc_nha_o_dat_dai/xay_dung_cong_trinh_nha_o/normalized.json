@@ -1,0 +1,1194 @@
+{
+  "schema_version": "1.0",
+  "domain": "dien_luc_nha_o_dat_dai",
+  "updated_at": "2026-07-18",
+  "source_files": [
+    "C:\\Users\\ku060\\Downloads\\VAIC source\\data-pipeline\\main\\full-data.csv",
+    "C:\\Users\\ku060\\Downloads\\VAIC source\\data-pipeline\\raw_data"
+  ],
+  "subdomains": [
+    {
+      "subdomain_key": "xay_dung_cong_trinh_nha_o",
+      "subdomain_label": "Xây dựng công trình, nhà ở",
+      "event_id": 313,
+      "summary": "Nhóm thủ tục cấp phép xây dựng, sửa chữa, di dời nhà ở riêng lẻ và tiếp cận nhà ở xã hội, thuê mua nhà ở xã hội cho hộ gia đình, cá nhân.",
+      "entry_prompts": [
+        "Bạn đang xin phép xây mới, sửa chữa, di dời nhà ở riêng lẻ hay đăng ký mua, thuê mua, thuê nhà ở xã hội?"
+      ],
+      "procedure_count": 7,
+      "procedures": [
+        {
+          "procedure_code": "1.009122",
+          "procedure_title": "Cấp giấy phép xây dựng có thời hạn đối với công trình, nhà ở riêng lẻ (công trình cấp III, cấp IV)",
+          "subdomain_key": "xay_dung_cong_trinh_nha_o",
+          "subdomain_label": "Xây dựng công trình, nhà ở",
+          "event_id": 313,
+          "field": "Hoạt động xây dựng",
+          "agency": "Ủy ban nhân dân cấp xã",
+          "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019dbd96-088e-74a9-9877-cf19204905ca",
+          "raw_data_file": "C:\\Users\\ku060\\Downloads\\VAIC source\\data-pipeline\\raw_data\\1_009122\\1_009122_procedure_detail.md",
+          "raw_data_available": true,
+          "operation_group": "cap_phep_xay_dung_co_thoi_han",
+          "operation_key": "cap_giay_phep_xay_dung_co_thoi_han_doi_voi_cong_trinh_nha_o_rieng_le_cong_trinh_cap_iii_cap_iv",
+          "overview": "1. Bước 1: Chủ đầu tư nộp hồ sơ tại Trung tâm Phục vụ hành chính công cấp xã Bước 2: Trung tâm Phục vụ hành chính công cấp xã tiếp nhận hồ sơ; kiểm tra hồ sơ; ghi giấy biên nhận đối với trường hợp hồ sơ đáp ứng theo quy định hoặc hướng dẫn để chủ đầu tư hoàn thiện hồ sơ đối với trường hợp hồ sơ không đáp ứng theo quy định. Sau đó chuyển hồ sơ cho Phòng chuyên môn. Bước 3: Phòng chuyên môn tham mưu xử lý hồ sơ và trình UBND cấp xã quyết định việc cấp giấy phép xây dựng có thời hạn công trình, nhà ở riêng lẻ; chuyển kết quả cho Trung tâm Phục vụ hành chính công cấp xã để trả cho chủ đầu tư.",
+          "procedure_flow": "1. Bước 1: Chủ đầu tư nộp hồ sơ tại Trung tâm Phục vụ hành chính công cấp xã Bước 2: Trung tâm Phục vụ hành chính công cấp xã tiếp nhận hồ sơ; kiểm tra hồ sơ; ghi giấy biên nhận đối với trường hợp hồ sơ đáp ứng theo quy định hoặc hướng dẫn để chủ đầu tư hoàn thiện hồ sơ đối với trường hợp hồ sơ không đáp ứng theo quy định. Sau đó chuyển hồ sơ cho Phòng chuyên môn. Bước 3: Phòng chuyên môn tham mưu xử lý hồ sơ và trình UBND cấp xã quyết định việc cấp giấy phép xây dựng có thời hạn công trình, nhà ở riêng lẻ; chuyển kết quả cho Trung tâm Phục vụ hành chính công cấp xã để trả cho chủ đầu tư.",
+          "requirements": "Không có thông tin",
+          "submission_methods": [
+            "Trực tiếp",
+            "Trực tiếp",
+            "Trực tuyến",
+            "Trực tuyến",
+            "Dịch vụ bưu chính",
+            "Dịch vụ bưu chính"
+          ],
+          "processing_time_values": [
+            "15 ngày",
+            "10 ngày",
+            "15 ngày",
+            "10 ngày",
+            "15 ngày",
+            "10 ngày"
+          ],
+          "document_groups": [
+            {
+              "group_name": "Đối với nhà ở riêng lẻ tại đô thị:",
+              "documents": [
+                {
+                  "Tên giấy tờ": "2. Bản sao được công chứng hoặc chứng thực một trong những giấy tờ về quyền sử dụng đất theo quy định của pháp luật về đất đai hoặc giấy tờ về quyền quản lý, sử dụng công trình;",
+                  "Bản chính": "0",
+                  "Bản sao": "1",
+                  "Tệp đính kèm": "Không có"
+                },
+                {
+                  "Tên giấy tờ": "3. Bản sao hoặc tệp tin chứa bản chụp chính hai bộ bản vẽ thiết kế, mỗi bộ gồm:",
+                  "Bản chính": "2",
+                  "Bản sao": "2",
+                  "Tệp đính kèm": "Không có"
+                },
+                {
+                  "Tên giấy tờ": "-  Bản vẽ mặt bằng công trình trên lô đất tỷ lệ 1/50 - 1/500, kèm theo sơ đồ vị trí công trình;",
+                  "Bản chính": "1",
+                  "Bản sao": "1",
+                  "Tệp đính kèm": "Không có"
+                },
+                {
+                  "Tên giấy tờ": "- Bản vẽ mặt bằng các tầng, các mặt đứng và mặt cắt chính của công trình, tỷ lệ 1/50 - 1/200;",
+                  "Bản chính": "1",
+                  "Bản sao": "1",
+                  "Tệp đính kèm": "Không có"
+                },
+                {
+                  "Tên giấy tờ": "- Bản vẽ mặt bằng móng tỷ lệ 1/50 - 1/200 và mặt cắt móng tỷ lệ 1/50, kèm theo sơ đồ đấu nối hệ thống thoát nước mưa, xử lý nước thải, cấp nước, cấp điện, thông tin tỷ lệ 1/50 - 1/200.",
+                  "Bản chính": "1",
+                  "Bản sao": "1",
+                  "Tệp đính kèm": "Không có"
+                },
+                {
+                  "Tên giấy tờ": "- Trường hợp thiết kế xây dựng của công trình đã được cơ quan chuyên môn về xây dựng thẩm định, các bản vẽ thiết kế quy định tại nêu trên là bản sao hoặc tệp tin chứa bản chụp các bản vẽ thiết kế xây dựng đã được cơ quan chuyên môn về xây dựng thẩm định.",
+                  "Bản chính": "1",
+                  "Bản sao": "1",
+                  "Tệp đính kèm": "Không có"
+                },
+                {
+                  "Tên giấy tờ": "- Đối với công trình xây chen có tầng hầm, ngoài các tài liệu quy định tại Khoản 1, 2, 3 Điều 11 Thông tư số 15/2016/TT-BXD, hồ sơ còn phải bổ sung bản sao hoặc tệp tin chứa bản chụp chính văn bản chấp thuận biện pháp thi công móng của chủ đầu tư đảm bảo an toàn cho công trình và công trình lân cận.",
+                  "Bản chính": "1",
+                  "Bản sao": "1",
+                  "Tệp đính kèm": "Không có"
+                },
+                {
+                  "Tên giấy tờ": "- Đối với công trình xây dựng có công trình liền kề phải có bản cam kết của chủ đầu tư bảo đảm an toàn đối với công trình liền kề.",
+                  "Bản chính": "1",
+                  "Bản sao": "1",
+                  "Tệp đính kèm": "Không có"
+                },
+                {
+                  "Tên giấy tờ": "* Tùy từng trường hợp phải bổ sung: Bản sao có chứng thực chứng chỉ hành nghề của chủ nhiệm, chủ trì thiết kế.",
+                  "Bản chính": "0",
+                  "Bản sao": "1",
+                  "Tệp đính kèm": "Không có"
+                },
+                {
+                  "Tên giấy tờ": "1. Đơn đề nghị cấp giấy phép xây dựng có thời hạn theo mẫu;",
+                  "Bản chính": "1",
+                  "Bản sao": "0",
+                  "Tệp đính kèm": "[MAU 01-Cap phep xay dung co thoi han su dung cho cong trinh.doc](file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/1_009122/MAU%2001-Cap%20phep%20xay%20dung%20co%20thoi%20han%20su%20dung%20cho%20cong%20trinh.doc)"
+                }
+              ]
+            },
+            {
+              "group_name": "Đối với công trình",
+              "documents": [
+                {
+                  "Tên giấy tờ": "1. Đơn đề nghị cấp giấy phép xây dựng có thời hạn theo mẫu;",
+                  "Bản chính": "1",
+                  "Bản sao": "0",
+                  "Tệp đính kèm": "[MAU 01-Cap phep xay dung co thoi han su dung cho cong trinh.doc](file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/1_009122/MAU%2001-Cap%20phep%20xay%20dung%20co%20thoi%20han%20su%20dung%20cho%20cong%20trinh.doc)"
+                },
+                {
+                  "Tên giấy tờ": "- Bản sao được công chứng hoặc chứng thực một trong những giấy tờ về quyền sử dụng đất theo quy định của pháp luật vềđất đai hoặc Hợp đồng thuê lại đất.",
+                  "Bản chính": "1",
+                  "Bản sao": "0",
+                  "Tệp đính kèm": "Không có"
+                },
+                {
+                  "Tên giấy tờ": "3. Bản sao hoặc tệp tin chứa bản chụp chính hai bộ bản vẽ thiết kế, mỗi bộ gồm:",
+                  "Bản chính": "2",
+                  "Bản sao": "0",
+                  "Tệp đính kèm": "Không có"
+                },
+                {
+                  "Tên giấy tờ": "- Bản vẽ mặt bằng vị trí công trình trên lô đất tỷ lệ 1/100 - 1/500, kèm theo công trình vị trí công trình;",
+                  "Bản chính": "1",
+                  "Bản sao": "0",
+                  "Tệp đính kèm": "Không có"
+                },
+                {
+                  "Tên giấy tờ": "- Bản vẽ các mặt bằng, các mặt đứng và mặt cắt chủ yếu của công trình, tỷ lệ 1/50 - 1/200;",
+                  "Bản chính": "1",
+                  "Bản sao": "0",
+                  "Tệp đính kèm": "Không có"
+                },
+                {
+                  "Tên giấy tờ": "- Bản vẽ mặt bằng móng tỷ lệ 1/100 - 1/200 và mặt cắt móng tỷ lệ 1/50, kèm theo sơ đồ đấu nối với hệ thống hạ tầng kỹ thuật về giao thông; cấp nước; thoát nước mưa, nước bẩn; xử lý nước thải; cấp điện; thông tin liên lạc; các hệ thống hạ tầng kỹ thuật khác liên quan đến dự án, tỷ lệ 1/50 - 1/200.",
+                  "Bản chính": "1",
+                  "Bản sao": "0",
+                  "Tệp đính kèm": "Không có"
+                },
+                {
+                  "Tên giấy tờ": "* Tùy từng trường hợp phải bổ sung: Bản sao có chứng thực chứng chỉ hành nghề của chủ nhiệm, chủ trì thiết kế.",
+                  "Bản chính": "0",
+                  "Bản sao": "1",
+                  "Tệp đính kèm": "Không có"
+                }
+              ]
+            },
+            {
+              "group_name": "Đối với trường hợp sửa chữa, cải tạo",
+              "documents": [
+                {
+                  "Tên giấy tờ": "1. Đơn đề nghị cấp giấy phép xây dựng có thời hạn theo mẫu;",
+                  "Bản chính": "1",
+                  "Bản sao": "0",
+                  "Tệp đính kèm": "[MAU 01-Cap phep xay dung co thoi han su dung cho cong trinh.doc](file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/1_009122/MAU%2001-Cap%20phep%20xay%20dung%20co%20thoi%20han%20su%20dung%20cho%20cong%20trinh.doc)"
+                },
+                {
+                  "Tên giấy tờ": "2. Bản sao hoặc tệp tin chứa bản chụp chính một trong những giấy tờ chứng minh về quyền sở hữu, quản lý, sử dụng công trình, nhà ở theo quy định của pháp luật hoặc bản sao giấy phép xây dựng đã được cơ quan nhà nước có thẩm quyền cấp;",
+                  "Bản chính": "1",
+                  "Bản sao": "1",
+                  "Tệp đính kèm": "Không có"
+                },
+                {
+                  "Tên giấy tờ": "3. Bản sao hoặc tệp tin chứa bản chụp chính bản vẽ hiện trạng của bộ phận, hạng Mục công trình sửa chữa, cải tạo đã được phê duyệt theo quy định có tỷ lệ tương ứng với tỷ lệ các bản vẽ của hồ sơ đề nghị cấp phép sửa chữa, cải tạo và ảnh chụp (10 x 15 cm) hiện trạng công trình và công trình lân cận trước khi sửa chữa, cải tạo;",
+                  "Bản chính": "1",
+                  "Bản sao": "1",
+                  "Tệp đính kèm": "Không có"
+                },
+                {
+                  "Tên giấy tờ": "4. Đối với các công trình di tích lịch sử, văn hóa và danh lam, thắng cảnh đã được xếp hạng, thì phải có bản sao hoặc tệp tin chứa bản chụp chính văn bản chấp thuận của cơ quan quản lý nhà nước có thẩm quyền theo phân cấp.",
+                  "Bản chính": "1",
+                  "Bản sao": "1",
+                  "Tệp đính kèm": "Không có"
+                },
+                {
+                  "Tên giấy tờ": "* Tùy từng trường hợp phải bổ sung: Bản sao có chứng thực chứng chỉ hành nghề của chủ nhiệm, chủ trì thiết kế.",
+                  "Bản chính": "0",
+                  "Bản sao": "1",
+                  "Tệp đính kèm": "Không có"
+                }
+              ]
+            }
+          ],
+          "result_items": [
+            "Giấy phép. (Mã: `000.00.00.H17-KQ2299`)"
+          ]
+        },
+        {
+          "procedure_code": "1.012896",
+          "procedure_title": "Cho thuê, cho thuê mua nhà ở xã hội do Nhà nước đầu tư xây dựng bằng vốn đầu tư công",
+          "subdomain_key": "xay_dung_cong_trinh_nha_o",
+          "subdomain_label": "Xây dựng công trình, nhà ở",
+          "event_id": 313,
+          "field": "Nhà ở và công sở",
+          "agency": "Đơn vị quản lý vận hành nhà ở",
+          "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bfe-88ac-71f9-b970-b83cf0372841",
+          "raw_data_file": "C:\\Users\\ku060\\Downloads\\VAIC source\\data-pipeline\\raw_data\\1_012896\\1_012896_procedure_detail.md",
+          "raw_data_available": true,
+          "operation_group": "tiep_can_nha_o_xa_hoi",
+          "operation_key": "cho_thue_cho_thue_mua_nha_o_xa_hoi_do_nha_nuoc_dau_tu_xay_dung_bang_von_dau_tu_cong",
+          "overview": "1. - Người có nhu cầu thuê, thuê mua nhà ở xã hội do Nhà nước đầu tư xây dựng bằng vốn đầu tư công nộp 01 bộ hồ sơ đến Trung tâm phục vụ hành chính công của UBND cấp tỉnh hoặc Bộ phận tiếp nhận và trả kết quả giải quyết TTHC - Cơ quan tiếp nhận hồ sơ có trách nhiệm kiểm tra và phân loại hồ sơ; nếu hồ sơ không có đủ các giấy tờ theo quy định thì phải trả lời ngay để người nộp đơn bổ sung giấy tờ. Trường hợp đơn vị quản lý vận hành nhà ở tiếp nhận hồ sơ thì sau khi kiểm tra và phân loại hồ sơ, đơn vị này phải có báo cáo Danh sách người đủ điều kiện thuê nhà ở kèm theo hồ sơ hợp lệ gửi Sở Xây dựng xem xét, kiểm tra; - Trên cơ sở Danh sách người đủ điều kiện thuê nhà ở kèm theo hồ sơ hợp lệ, thì Sở Xây dựng tổ chức lập Danh sách người được thuê nhà ở xã hội và có tờ trình kèm theo Danh sách báo cáo cơ quan đại diện chủ sở hữu quyết định. Trường hợp tổng số hồ sơ đăng ký thuê (hợp lệ) bằng hoặc ít hơn tổng số căn nhà ở xã hội để cho thuê thì Danh sách người được thuê là Danh sách người đủ điều kiện thuê đã đăng ký. Trường hợp tổng số hồ sơ đăng ký thuê (hợp lệ) nhiều hơn tổng số căn nhà ở xã hội để cho thuê thì việc xét duyệt, lựa chọn đối tượng được thuê thực hiện theo hình thức bốc thăm (trực tiếp hoặc trực tuyến) do Sở Xây dựng hoặc đơn vị quản lý vận hành nhà ở theo phân cấp của địa phương tổ chức việc bốc thăm, trường hợp đơn vị quản lý vận hành nhà ở thực hiện thì Sở Xây dựng giám sát bốc thăm. Việc bốc thăm phải có biên bản kết quả bốc thăm. Trường hợp dự án có đối tượng ưu tiên theo quy định tại điểm đ khoản 1 Điều 79 của Luật Nhà ở thì được thuê nhà ở xã hội mà không phải bốc thăm với tỷ lệ nhất định. Số lượng căn nhà ở xã hội để cho thuê dành cho các đối tượng ưu tiên này (không thông qua bốc thăm) được xác định bằng tỷ lệ giữa tổng số hồ sơ của 05 nhóm đối tượng ưu tiên này trên tổng số hồ sơ đăng ký nhân với tổng số căn nhà ở xã hội để cho thuê. Danh sách của nhóm đối tượng ưu tiên được sắp xếp theo thứ tự theo thời điểm nộp hồ sơ. Các căn nhà ở xã hội để cho thuê dành cho các đối tượng ưu tiên được bố trí theo thứ tự của Danh sách ưu tiên cho đến khi hết, các đối tượng còn lại được tiếp tục tham gia bốc thăm - Trên cơ sở báo cáo của Sở Xây dựng, cơ quan đại diện chủ sở hữu nhà ở xem xét, ban hành quyết định phê duyệt Danh sách người được thuê nhà ở và gửi cho đơn vị quản lý vận hành nhà ở để ký Hợp đồng thuê nhà với người được thuê nhà ở; - Thời gian giải quyết việc cho thuê nhà ở xã hội là không quá 30 ngày, kể từ ngày đơn vị tiếp nhận hồ sơ nhận đủ hồ sơ hợp lệ.",
+          "procedure_flow": "1. - Người có nhu cầu thuê, thuê mua nhà ở xã hội do Nhà nước đầu tư xây dựng bằng vốn đầu tư công nộp 01 bộ hồ sơ đến Trung tâm phục vụ hành chính công của UBND cấp tỉnh hoặc Bộ phận tiếp nhận và trả kết quả giải quyết TTHC - Cơ quan tiếp nhận hồ sơ có trách nhiệm kiểm tra và phân loại hồ sơ; nếu hồ sơ không có đủ các giấy tờ theo quy định thì phải trả lời ngay để người nộp đơn bổ sung giấy tờ. Trường hợp đơn vị quản lý vận hành nhà ở tiếp nhận hồ sơ thì sau khi kiểm tra và phân loại hồ sơ, đơn vị này phải có báo cáo Danh sách người đủ điều kiện thuê nhà ở kèm theo hồ sơ hợp lệ gửi Sở Xây dựng xem xét, kiểm tra; - Trên cơ sở Danh sách người đủ điều kiện thuê nhà ở kèm theo hồ sơ hợp lệ, thì Sở Xây dựng tổ chức lập Danh sách người được thuê nhà ở xã hội và có tờ trình kèm theo Danh sách báo cáo cơ quan đại diện chủ sở hữu quyết định. Trường hợp tổng số hồ sơ đăng ký thuê (hợp lệ) bằng hoặc ít hơn tổng số căn nhà ở xã hội để cho thuê thì Danh sách người được thuê là Danh sách người đủ điều kiện thuê đã đăng ký. Trường hợp tổng số hồ sơ đăng ký thuê (hợp lệ) nhiều hơn tổng số căn nhà ở xã hội để cho thuê thì việc xét duyệt, lựa chọn đối tượng được thuê thực hiện theo hình thức bốc thăm (trực tiếp hoặc trực tuyến) do Sở Xây dựng hoặc đơn vị quản lý vận hành nhà ở theo phân cấp của địa phương tổ chức việc bốc thăm, trường hợp đơn vị quản lý vận hành nhà ở thực hiện thì Sở Xây dựng giám sát bốc thăm. Việc bốc thăm phải có biên bản kết quả bốc thăm. Trường hợp dự án có đối tượng ưu tiên theo quy định tại điểm đ khoản 1 Điều 79 của Luật Nhà ở thì được thuê nhà ở xã hội mà không phải bốc thăm với tỷ lệ nhất định. Số lượng căn nhà ở xã hội để cho thuê dành cho các đối tượng ưu tiên này (không thông qua bốc thăm) được xác định bằng tỷ lệ giữa tổng số hồ sơ của 05 nhóm đối tượng ưu tiên này trên tổng số hồ sơ đăng ký nhân với tổng số căn nhà ở xã hội để cho thuê. Danh sách của nhóm đối tượng ưu tiên được sắp xếp theo thứ tự theo thời điểm nộp hồ sơ. Các căn nhà ở xã hội để cho thuê dành cho các đối tượng ưu tiên được bố trí theo thứ tự của Danh sách ưu tiên cho đến khi hết, các đối tượng còn lại được tiếp tục tham gia bốc thăm - Trên cơ sở báo cáo của Sở Xây dựng, cơ quan đại diện chủ sở hữu nhà ở xem xét, ban hành quyết định phê duyệt Danh sách người được thuê nhà ở và gửi cho đơn vị quản lý vận hành nhà ở để ký Hợp đồng thuê nhà với người được thuê nhà ở; - Thời gian giải quyết việc cho thuê nhà ở xã hội là không quá 30 ngày, kể từ ngày đơn vị tiếp nhận hồ sơ nhận đủ hồ sơ hợp lệ.",
+          "requirements": "Không có thông tin",
+          "submission_methods": [
+            "Trực tuyến",
+            "Dịch vụ bưu chính",
+            "Trực tiếp"
+          ],
+          "processing_time_values": [
+            "30 ngày",
+            "35 ngày",
+            "30 ngày"
+          ],
+          "document_groups": [],
+          "result_items": [
+            "Hợp đồng thuê, thuê mua nhà ở xã hội do Nhà nước đầu tư xây dựng bằng vốn đầu tư công. (Mã: `KQ.G17.000200`)"
+          ]
+        },
+        {
+          "procedure_code": "1.013225",
+          "procedure_title": "Cấp giấy phép xây dựng mới đối với công trình cấp III, cấp IV (Công trình không theo tuyến/Theo tuyến trong đô thị/Tín ngưỡng, tôn giáo/Tượng đài, tranh hoành tráng/Theo giai đoạn cho công trình không theo tuyến/Theo giai đoạn cho công trình theo tuyến trong đô thị/Dự án) và nhà ở riêng lẻ",
+          "subdomain_key": "xay_dung_cong_trinh_nha_o",
+          "subdomain_label": "Xây dựng công trình, nhà ở",
+          "event_id": 313,
+          "field": "Hoạt động xây dựng",
+          "agency": "Ủy ban nhân dân cấp xã",
+          "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bfe-9088-744d-aa0a-e846b6dce3d5",
+          "raw_data_file": "C:\\Users\\ku060\\Downloads\\VAIC source\\data-pipeline\\raw_data\\1_013225\\1_013225_procedure_detail.md",
+          "raw_data_available": true,
+          "operation_group": "cap_phep_xay_dung_moi",
+          "operation_key": "cap_giay_phep_xay_dung_moi_doi_voi_cong_trinh_cap_iii_cap_iv_cong_trinh_khong_theo_tuyen_theo_tuyen_trong_do_thi_tin_nguong_ton_giao_tuong_dai_tranh_hoanh_trang_theo_giai_doan_cho_cong_trinh_khong_theo_tuyen_theo_giai_doan_cho_cong_trinh_theo_tuyen_trong_do_thi_du_an_va_nha_o_rieng_le",
+          "overview": "1. - Chủ đầu tư nộp hồ sơ đề nghị cấp giấy phép xây dựng cho Trung tâm phục vụ hành chính công cấp xã. - Trong thời hạn 07 ngày làm việc kể từ ngày tiếp nhận hồ sơ, cơ quan có thẩm quyền cấp giấy phép xây dựng công trình cấp III, cấp IV phải tổ chức thẩm định hồ sơ, kiểm tra thực địa, thông báo 1 lần bằng văn bản cho chủ đầu tư bổ sung, hoàn thiện hồ sơ nếu tài liệu còn thiếu, tài liệu không đúng quy định hoặc không đúng thực tế. Cơ quan cấp giấy phép xây dựng có trách nhiệm kiểm tra các điều kiện cấp giấy phép xây dựng theo quy định tại tại Điều 50 Nghị định số 175/2024/NĐ-CP. Việc kiểm tra được thực hiện như sau: + Đối chiếu sự phù hợp của bản vẽ thiết kế xây dựng tại hồ sơ đề nghị cấp phép xây dựng với thiết kế cơ sở được cơ quan chuyên môn về xây dựng thẩm định và đóng dấu xác nhận đối với các công trình thuộc dự án có yêu cầu thẩm định báo cáo nghiên cứu khả thi tại cơ quan chuyên môn về xây dựng; + Kiểm tra sự phù hợp của bản vẽ thiết kế xây dựng tại hồ sơ đề nghị cấp phép xây dựng với bản vẽ thiết kế xây dựng được thẩm duyệt về phòng cháy chữa cháy của cơ quan có thẩm quyền đối với các công trình xây dựng thuộc đối tượng có yêu cầu thẩm duyệt về phòng cháy, chữa cháy; + Kiểm tra tính đầy đủ, hợp lệ của báo cáo kết quả thẩm tra (nếu có) đối với công trình có yêu cầu phải thẩm tra thiết kế theo quy định tại Nghị định số 175/2024/NĐ-CP được sửa đổi bổ sung tại Nghị định số 105/2025/NĐ-CP và Nghị định số 144/2025/NĐ-CP. - Trong thời hạn 05 ngày làm việc kể từ ngày nhận bổ sung hồ sơ nhưng chưa đáp ứng được yêu cầu theo văn bản thông báo, cơ quan có thẩm quyền cấp giấy phép xây dựng có trách nhiệm thông báo bằng văn bản hướng dẫn cho chủ đầu tư tiếp tục hoàn thiện hồ sơ. Trường hợp việc bổ sung hồ sơ vẫn không đáp ứng được các nội dung theo thông báo thì trong thời hạn 03 ngày làm việc kể từ ngày nhận hồ sơ bổ sung, cơ quan có thẩm quyền cấp giấy phép xây dựng có trách nhiệm thông báo đến chủ đầu tư về lý do không cấp giấy phép xây dựng công trình cấp III, cấp IV. - Cơ quan có thẩm quyền cấp giấy phép xây dựng đối chiếu các điều kiện theo quy định của Luật Xây dựng để gửi văn bản lấy ý kiến của cơ quan quản lý nhà nước liên quan. Trong thời gian 12 ngày kể từ ngày nhận được hồ sơ, các cơ quan quản lý nhà nước được hỏi ý kiến có trách nhiệm trả lời bằng văn bản về những nội dung thuộc chức năng quản lý của mình. Sau thời hạn trên, nếu các cơ quan này không có ý kiến thì được coi là đã đồng ý và phải chịu trách nhiệm về những nội dung thuộc chức năng quản lý của mình; cơ quan cấp giấy phép xây dựng căn cứ các quy định hiện hành để quyết định việc cấp giấy phép xây dựng công trình cấp III, cấp IV. - Trong thời hạn 10 ngày làm việc (hoặc 7 ngày làm việc đối với nhà ở riêng lẻ) kể từ ngày nhận đủ hồ sơ hợp lệ, cơ quan có thẩm quyền có trách nhiệm xem xét cấp giấy phép xây dựng công trình cấp III, cấp IV.",
+          "procedure_flow": "1. - Chủ đầu tư nộp hồ sơ đề nghị cấp giấy phép xây dựng cho Trung tâm phục vụ hành chính công cấp xã. - Trong thời hạn 07 ngày làm việc kể từ ngày tiếp nhận hồ sơ, cơ quan có thẩm quyền cấp giấy phép xây dựng công trình cấp III, cấp IV phải tổ chức thẩm định hồ sơ, kiểm tra thực địa, thông báo 1 lần bằng văn bản cho chủ đầu tư bổ sung, hoàn thiện hồ sơ nếu tài liệu còn thiếu, tài liệu không đúng quy định hoặc không đúng thực tế. Cơ quan cấp giấy phép xây dựng có trách nhiệm kiểm tra các điều kiện cấp giấy phép xây dựng theo quy định tại tại Điều 50 Nghị định số 175/2024/NĐ-CP. Việc kiểm tra được thực hiện như sau: + Đối chiếu sự phù hợp của bản vẽ thiết kế xây dựng tại hồ sơ đề nghị cấp phép xây dựng với thiết kế cơ sở được cơ quan chuyên môn về xây dựng thẩm định và đóng dấu xác nhận đối với các công trình thuộc dự án có yêu cầu thẩm định báo cáo nghiên cứu khả thi tại cơ quan chuyên môn về xây dựng; + Kiểm tra sự phù hợp của bản vẽ thiết kế xây dựng tại hồ sơ đề nghị cấp phép xây dựng với bản vẽ thiết kế xây dựng được thẩm duyệt về phòng cháy chữa cháy của cơ quan có thẩm quyền đối với các công trình xây dựng thuộc đối tượng có yêu cầu thẩm duyệt về phòng cháy, chữa cháy; + Kiểm tra tính đầy đủ, hợp lệ của báo cáo kết quả thẩm tra (nếu có) đối với công trình có yêu cầu phải thẩm tra thiết kế theo quy định tại Nghị định số 175/2024/NĐ-CP được sửa đổi bổ sung tại Nghị định số 105/2025/NĐ-CP và Nghị định số 144/2025/NĐ-CP. - Trong thời hạn 05 ngày làm việc kể từ ngày nhận bổ sung hồ sơ nhưng chưa đáp ứng được yêu cầu theo văn bản thông báo, cơ quan có thẩm quyền cấp giấy phép xây dựng có trách nhiệm thông báo bằng văn bản hướng dẫn cho chủ đầu tư tiếp tục hoàn thiện hồ sơ. Trường hợp việc bổ sung hồ sơ vẫn không đáp ứng được các nội dung theo thông báo thì trong thời hạn 03 ngày làm việc kể từ ngày nhận hồ sơ bổ sung, cơ quan có thẩm quyền cấp giấy phép xây dựng có trách nhiệm thông báo đến chủ đầu tư về lý do không cấp giấy phép xây dựng công trình cấp III, cấp IV. - Cơ quan có thẩm quyền cấp giấy phép xây dựng đối chiếu các điều kiện theo quy định của Luật Xây dựng để gửi văn bản lấy ý kiến của cơ quan quản lý nhà nước liên quan. Trong thời gian 12 ngày kể từ ngày nhận được hồ sơ, các cơ quan quản lý nhà nước được hỏi ý kiến có trách nhiệm trả lời bằng văn bản về những nội dung thuộc chức năng quản lý của mình. Sau thời hạn trên, nếu các cơ quan này không có ý kiến thì được coi là đã đồng ý và phải chịu trách nhiệm về những nội dung thuộc chức năng quản lý của mình; cơ quan cấp giấy phép xây dựng căn cứ các quy định hiện hành để quyết định việc cấp giấy phép xây dựng công trình cấp III, cấp IV. - Trong thời hạn 10 ngày làm việc (hoặc 7 ngày làm việc đối với nhà ở riêng lẻ) kể từ ngày nhận đủ hồ sơ hợp lệ, cơ quan có thẩm quyền có trách nhiệm xem xét cấp giấy phép xây dựng công trình cấp III, cấp IV.",
+          "requirements": "Không có thông tin",
+          "submission_methods": [
+            "Trực tuyến",
+            "Dịch vụ bưu chính",
+            "Trực tiếp"
+          ],
+          "processing_time_values": [
+            "10 ngày làm việc",
+            "10 ngày làm việc",
+            "10 ngày làm việc"
+          ],
+          "document_groups": [
+            {
+              "group_name": "(1.1) Đối với công trình không theo tuyến:",
+              "documents": [
+                {
+                  "Tên giấy tờ": "Giấy chứng nhận quyền sử dụng đất, quyền sở hữu tài sản gắn liền với đất được cấp theo quy định của pháp luật về đất đai qua các thời kỳ. Trường hợp Giấy chứng nhận quyền sử dụng đất đã có trong Cơ sở dữ liệu quốc gia về đất đai thì các thông tin này được thay thế bằng dữ liệu khi Cơ sở dữ liệu quốc gia về đất đai được vận hành.",
+                  "Bản chính": "1",
+                  "Bản sao": "1",
+                  "Tệp đính kèm": "Không có"
+                },
+                {
+                  "Tên giấy tờ": "Giấy chứng nhận quyền sở hữu nhà ở và quyền sử dụng đất ở được cấp theo quy định của pháp luật về đất đai, pháp luật về nhà ở qua các thời kỳ. Trường hợp Giấy chứng nhận quyền sử dụng đất đã có trong Cơ sở dữ liệu quốc gia về đất đai thì các thông tin này được thay thế bằng dữ liệu khi Cơ sở dữ liệu quốc gia về đất đai được vận hành.",
+                  "Bản chính": "1",
+                  "Bản sao": "1",
+                  "Tệp đính kèm": "Không có"
+                },
+                {
+                  "Tên giấy tờ": "- Quyết định phê duyệt dự án; văn bản thông báo kết quả thẩm định của cơ quan chuyên môn về xây dựng và hồ sơ bản vẽ thiết kế cơ sở được đóng dấu xác nhận kèm theo (nếu có); báo cáo kết quả thẩm tra thiết kế xây dựng (nếu có) theo quy định tại khoản 5 Điều 43 Nghị định số 175/2024/NĐ-CP, Nghị định số 105/2025/NĐ-CP và Nghị định số 144/2025/NĐ-CP; kết quả thủ tục hành chính theo quy định của pháp luật về phòng cháy và chữa cháy đối với hồ sơ thiết kế đề nghị cấp giấy phép xây dựng; kết quả thực hiện thủ tục về bảo vệ môi trường theo quy định của pháp luật về bảo vệ môi trường (đối với trường hợp không thẩm định báo cáo nghiên cứu khả thi đầu tư xây dựng tại cơ quan chuyên môn về xây dựng).",
+                  "Bản chính": "1",
+                  "Bản sao": "1",
+                  "Tệp đính kèm": "Không có"
+                },
+                {
+                  "Tên giấy tờ": "Giấy chứng nhận quyền sử dụng đất được cấp theo quy định của Luật Đất đai qua các thời kỳ. Trường hợp Giấy chứng nhận quyền sử dụng đất đã có trong Cơ sở dữ liệu quốc gia về đất đai thì các thông tin này được thay thế bằng dữ liệu khi Cơ sở dữ liệu quốc gia về đất đai được vận hành.",
+                  "Bản chính": "1",
+                  "Bản sao": "1",
+                  "Tệp đính kèm": "Không có"
+                },
+                {
+                  "Tên giấy tờ": "- Đơn đề nghị cấp giấy phép xây dựng theo Mẫu số 1 Phụ lục số II Nghị định số 175/2024/NĐ-CP ngày 30/12/2024 của Chính phủ.",
+                  "Bản chính": "1",
+                  "Bản sao": "1",
+                  "Tệp đính kèm": "Không có"
+                },
+                {
+                  "Tên giấy tờ": "- Một trong những giấy tờ hợp pháp về đất đai chứng minh sự phù hợp mục đích sử dụng đất và sở hữu công trình để cấp phép xây dựng theo quy định tại Điều 53 của Nghị định số 175/2024/NĐ-CP bao gồm:  +  Giấy chứng nhận quyền sử dụng đất được cấp theo quy định của Luật Đất đai qua các thời kỳ. + Giấy chứng nhận quyền sử dụng đất, quyền sở hữu tài sản gắn liền với đất được cấp theo quy định của pháp luật về đất đai qua các thời kỳ.  + Giấy chứng nhận quyền sở hữu nhà ở và quyền sử dụng đất ở được cấp theo quy định của pháp luật về đất đai, pháp luật về nhà ở qua các thời kỳ. + Giấy chứng nhận quyền sở hữu nhà ở; giấy chứng nhận quyền sở hữu công trình xây dựng đã được cấp theo quy định của pháp luật về đất đai, pháp luật về nhà ở, pháp luật về xây dựng qua các thời kỳ. + Các loại giấy tờ đủ điều kiện để cấp giấy chứng nhận quyền sử dụng đất, quyền sở hữu nhà ở và tài sản khác gắn liền với đất nhưng chưa được cấp giấy chứng nhận gồm: Các loại giấy tờ quy định tại Điều 137 của Luật đất đai năm 2024; hoặc giấy xác nhận của Ủy ban nhân dân cấp xã và được tổ chức đăng ký đất đai xác nhận đủ điều kiện để cấp giấy chứng nhận quyền sử dụng đất, quyền sở hữu nhà ở và tài sản khác gắn liền với đất theo quy định của pháp luật về đất đai. + Giấy tờ về đất đai đối với trường hợp được Nhà nước giao đất, cho thuê đất, chuyển mục đích sử dụng đất từ sau ngày 01 tháng 7 năm 2004 nhưng không có giấy chứng nhận quyền sử dụng đất, quyền sở hữu nhà ở và tài sản khác gắn liền với đất theo quy định của pháp luật về đất đai, gồm: Quyết định giao đất của cơ quan nhà nước có thẩm quyền hoặc Quyết định cho thuê đất của cơ quan nhà nước có thẩm quyền và hợp đồng thuê đất kèm theo (nếu có) hoặc giấy tờ về trúng đấu giá quyền sử dụng đất, đấu thầu dự án có sử dụng đất. + Báo cáo hiện trạng sử dụng đất đối với trường hợp tổ chức, cơ sở tôn giáo đang sử dụng mà chưa được cấp giấy chứng nhận quyền sử dụng đất, quyền sở hữu nhà ở và tài sản khác gắn liền với đất được Ủy ban nhân dân cấp tỉnh nơi có đất kiểm tra thực tế sử dụng và xử lý theo quy định tại Điều 142, Điều 145 Luật Đất đai năm 2024. + Giấy tờ về việc xếp hạng di tích lịch sử - văn hóa, danh lam thắng cảnh hoặc danh mục kiểm kê di tích theo quy định của pháp luật về di sản văn hoá của Uỷ ban nhân dân cấp tỉnh đối với trường hợp cấp giấy phép xây dựng để thực hiện xây dựng mới, sửa chữa, cải tạo hoặc di dời các công trình di tích lịch sử - văn hóa, danh lam thắng cảnh nhưng chưa được cấp giấy chứng nhận quyền sử dụng đất, quyền sở hữu nhà ở và tài sản khác gắn liền với đất theo quy định.  + Văn bản chấp thuận về địa điểm xây dựng của Ủy ban nhân dân cấp xã đối với công trình xây dựng biển quảng cáo, trạm viễn thông, cột ăng-ten và các công trình tương tự khác theo quy định của pháp luật có liên quan tại khu vực không thuộc nhóm đất có mục đích sử dụng để xây dựng đối với loại công trình này và không được chuyển đổi mục đích sử dụng đất.  + Giấy tờ hợp pháp về đất đai của chủ rừng và hợp đồng cho thuê môi trường rừng giữa chủ rừng và tổ chức, cá nhân thực hiện dự án du lịch sinh thái, nghỉ dưỡng, giải trí theo quy định của pháp luật về lâm nghiệp. + Giấy chứng nhận quyền sử dụng đất hoặc quyết định giao đất hoặc quyết định cho thuê đất của cơ quan nhà nước có thẩm quyền có mục đích sử dụng đất chính đối với trường hợp xây dựng công trình trên đất được sử dụng kết hợp đa mục đích theo quy định tại Điều 218 của Luật Đất đai năm 2024. + Hợp đồng thuê đất được giữa chủ đầu tư xây dựng công trình và người quản lý, sử dụng công trình giao thông hoặc văn bản chấp thuận của cơ quan quản lý nhà nước có thẩm quyền về giao thông đối với công trình được phép xây dựng trong phạm vi đất dành cho giao thông theo quy định của pháp luật. + Văn bản của cơ quan nhà nước có thẩm quyền đã cấp giấy chứng nhận quyền sử dụng đất (theo đề nghị của cơ quan cấp giấy phép xây dựng) xác định diện tích các loại đất đối với trường hợp người sử dụng đất có một trong các loại giấy tờ hợp pháp về đất đai theo quy định tại các khoản 1, 2, 3, 4 và 5 Điều 53 Nghị định số 175/2024/NĐ-CP nhưng trên các giấy tờ đó không ghi rõ diện tích các loại đất để làm cơ sở cấp giấy phép xây dựng. + Trường hợp chủ đầu tư thuê đất hoặc thuê công trình, bộ phận công trình của chủ sử dụng đất, chủ sở hữu công trình để đầu tư xây dựng thì ngoài một trong các giấy tờ nêu trên, người đề nghị cấp giấy phép xây dựng bổ sung hợp đồng hợp pháp về việc thuê đất hoặc thuê công trình, bộ phận công trình tương ứng. + Các giấy tờ hợp pháp khác theo quy định của pháp luật về đất đai.",
+                  "Bản chính": "1",
+                  "Bản sao": "1",
+                  "Tệp đính kèm": "Không có"
+                }
+              ]
+            },
+            {
+              "group_name": "(1.2) Đối với công trình theo tuyến:",
+              "documents": [
+                {
+                  "Tên giấy tờ": "- Đơn đề nghị cấp giấy phép sửa chữa, cải tạo công trình theo Mẫu số 1 Phụ lục số II Nghị định số 175/2024/NĐ-CP ngày 30/12/2024 của Chính phủ.",
+                  "Bản chính": "1",
+                  "Bản sao": "1",
+                  "Tệp đính kèm": "Không có"
+                },
+                {
+                  "Tên giấy tờ": "- Quyết định phê duyệt dự án; văn bản thông báo kết quả thẩm định của cơ quan chuyên môn về xây dựng và hồ sơ bản vẽ thiết kế cơ sở được đóng dấu xác nhận kèm theo (nếu có); báo cáo kết quả thẩm tra thiết kế xây dựng (nếu có) theo quy định tại khoản 5 Điều 43 Nghị định số 175/2024/NĐ-CP, Nghị định số 105/2025/NĐ-CP và Nghị định số 144/2025/NĐ-CP; kết quả thực hiện thủ tục hành chính theo quy định của pháp luật về phòng cháy, chữa cháy đối với hồ sơ thiết kế đề nghị cấp giấy phép xây dựng; kết quả thực hiện thủ tục hành chính về bảo vệ môi trường theo quy định của pháp luật về bảo vệ môi trường (đối với trường hợp không thẩm định báo cáo nghiên cứu khả thi đầu tư xây dựng tại cơ quan chuyên môn về xây dựng).",
+                  "Bản chính": "1",
+                  "Bản sao": "1",
+                  "Tệp đính kèm": "Không có"
+                },
+                {
+                  "Tên giấy tờ": "Giấy chứng nhận quyền sử dụng đất, quyền sở hữu tài sản gắn liền với đất được cấp theo quy định của pháp luật về đất đai qua các thời kỳ. Trường hợp Giấy chứng nhận quyền sử dụng đất đã có trong Cơ sở dữ liệu quốc gia về đất đai thì các thông tin này được thay thế bằng dữ liệu khi Cơ sở dữ liệu quốc gia về đất đai được vận hành.",
+                  "Bản chính": "1",
+                  "Bản sao": "1",
+                  "Tệp đính kèm": "Không có"
+                },
+                {
+                  "Tên giấy tờ": "Giấy chứng nhận quyền sử dụng đất được cấp theo quy định của Luật Đất đai qua các thời kỳ. Trường hợp Giấy chứng nhận quyền sử dụng đất đã có trong Cơ sở dữ liệu quốc gia về đất đai thì các thông tin này được thay thế bằng dữ liệu khi Cơ sở dữ liệu quốc gia về đất đai được vận hành.",
+                  "Bản chính": "1",
+                  "Bản sao": "1",
+                  "Tệp đính kèm": "Không có"
+                },
+                {
+                  "Tên giấy tờ": "- 02 bộ bản vẽ thiết kế xây dựng trong hồ sơ thiết kế xây dựng triển khai sau thiết kế cơ sở (thiết kế bản vẽ thi công đối với dự án chỉ yêu cầu lập Báo cáo kinh tế - kỹ thuật) được phê duyệt theo quy định của pháp luật về xây dựng, gồm: sơ đồ vị trí tuyến công trình; bản vẽ mặt bằng tổng thể hoặc bản vẽ bình đồ công trình; bản vẽ các mặt cắt dọc và mặt cắt ngang chủ yếu của tuyến công trình; bản vẽ mặt bằng, mặt cắt móng; các bản vẽ thể hiện giải pháp kết cấu chính của công trình; bản vẽ mặt bằng đấu nối với hệ thống hạ tầng kỹ thuật bên ngoài công trình, dự án",
+                  "Bản chính": "2",
+                  "Bản sao": "0",
+                  "Tệp đính kèm": "Không có"
+                },
+                {
+                  "Tên giấy tờ": "- Một trong những giấy tờ hợp pháp về đất đai chứng minh sự phù hợp mục đích sử dụng đất và sở hữu công trình để cấp phép xây dựng theo quy định tại Điều 53 của Nghị định số 175/2024/NĐ-CP bao gồm:  +  Giấy chứng nhận quyền sử dụng đất được cấp theo quy định của Luật Đất đai qua các thời kỳ. + Giấy chứng nhận quyền sử dụng đất, quyền sở hữu tài sản gắn liền với đất được cấp theo quy định của pháp luật về đất đai qua các thời kỳ.  + Giấy chứng nhận quyền sở hữu nhà ở và quyền sử dụng đất ở được cấp theo quy định của pháp luật về đất đai, pháp luật về nhà ở qua các thời kỳ. + Giấy chứng nhận quyền sở hữu nhà ở; giấy chứng nhận quyền sở hữu công trình xây dựng đã được cấp theo quy định của pháp luật về đất đai, pháp luật về nhà ở, pháp luật về xây dựng qua các thời kỳ. + Các loại giấy tờ đủ điều kiện để cấp giấy chứng nhận quyền sử dụng đất, quyền sở hữu nhà ở và tài sản khác gắn liền với đất nhưng chưa được cấp giấy chứng nhận gồm: Các loại giấy tờ quy định tại Điều 137 của Luật đất đai năm 2024; hoặc giấy xác nhận của Ủy ban nhân dân cấp xã và được tổ chức đăng ký đất đai xác nhận đủ điều kiện để cấp giấy chứng nhận quyền sử dụng đất, quyền sở hữu nhà ở và tài sản khác gắn liền với đất theo quy định của pháp luật về đất đai. + Giấy tờ về đất đai đối với trường hợp được Nhà nước giao đất, cho thuê đất, chuyển mục đích sử dụng đất từ sau ngày 01 tháng 7 năm 2004 nhưng không có giấy chứng nhận quyền sử dụng đất, quyền sở hữu nhà ở và tài sản khác gắn liền với đất theo quy định của pháp luật về đất đai, gồm: Quyết định giao đất của cơ quan nhà nước có thẩm quyền hoặc Quyết định cho thuê đất của cơ quan nhà nước có thẩm quyền và hợp đồng thuê đất kèm theo (nếu có) hoặc giấy tờ về trúng đấu giá quyền sử dụng đất, đấu thầu dự án có sử dụng đất. + Báo cáo hiện trạng sử dụng đất đối với trường hợp tổ chức, cơ sở tôn giáo đang sử dụng mà chưa được cấp giấy chứng nhận quyền sử dụng đất, quyền sở hữu nhà ở và tài sản khác gắn liền với đất được Ủy ban nhân dân cấp tỉnh nơi có đất kiểm tra thực tế sử dụng và xử lý theo quy định tại Điều 142, Điều 145 Luật Đất đai năm 2024. + Giấy tờ về việc xếp hạng di tích lịch sử - văn hóa, danh lam thắng cảnh hoặc danh mục kiểm kê di tích theo quy định của pháp luật về di sản văn hoá của Uỷ ban nhân dân cấp tỉnh đối với trường hợp cấp giấy phép xây dựng để thực hiện xây dựng mới, sửa chữa, cải tạo hoặc di dời các công trình di tích lịch sử - văn hóa, danh lam thắng cảnh nhưng chưa được cấp giấy chứng nhận quyền sử dụng đất, quyền sở hữu nhà ở và tài sản khác gắn liền với đất theo quy định.  + Văn bản chấp thuận về địa điểm xây dựng của Ủy ban nhân dân cấp xã đối với công trình xây dựng biển quảng cáo, trạm viễn thông, cột ăng-ten và các công trình tương tự khác theo quy định của pháp luật có liên quan tại khu vực không thuộc nhóm đất có mục đích sử dụng để xây dựng đối với loại công trình này và không được chuyển đổi mục đích sử dụng đất.  + Giấy tờ hợp pháp về đất đai của chủ rừng và hợp đồng cho thuê môi trường rừng giữa chủ rừng và tổ chức, cá nhân thực hiện dự án du lịch sinh thái, nghỉ dưỡng, giải trí theo quy định của pháp luật về lâm nghiệp. + Giấy chứng nhận quyền sử dụng đất hoặc quyết định giao đất hoặc quyết định cho thuê đất của cơ quan nhà nước có thẩm quyền có mục đích sử dụng đất chính đối với trường hợp xây dựng công trình trên đất được sử dụng kết hợp đa mục đích theo quy định tại Điều 218 của Luật Đất đai năm 2024. + Hợp đồng thuê đất được giữa chủ đầu tư xây dựng công trình và người quản lý, sử dụng công trình giao thông hoặc văn bản chấp thuận của cơ quan quản lý nhà nước có thẩm quyền về giao thông đối với công trình được phép xây dựng trong phạm vi đất dành cho giao thông theo quy định của pháp luật. + Văn bản của cơ quan nhà nước có thẩm quyền đã cấp giấy chứng nhận quyền sử dụng đất (theo đề nghị của cơ quan cấp giấy phép xây dựng) xác định diện tích các loại đất đối với trường hợp người sử dụng đất có một trong các loại giấy tờ hợp pháp về đất đai theo quy định tại các khoản 1, 2, 3, 4 và 5 Điều 53 Nghị định số 175/2024/NĐ-CP nhưng trên các giấy tờ đó không ghi rõ diện tích các loại đất để làm cơ sở cấp giấy phép xây dựng. + Trường hợp chủ đầu tư thuê đất hoặc thuê công trình, bộ phận công trình của chủ sử dụng đất, chủ sở hữu công trình để đầu tư xây dựng thì ngoài một trong các giấy tờ nêu trên, người đề nghị cấp giấy phép xây dựng bổ sung hợp đồng hợp pháp về việc thuê đất hoặc thuê công trình, bộ phận công trình tương ứng. + Các giấy tờ hợp pháp khác theo quy định của pháp luật về đất đai.  + Văn bản chấp thuận của cơ quan nhà nước có thẩm quyền về vị trí và phương án tuyến hoặc Quyết định thu hồi đất của cơ quan nhà nước có thẩm quyền theo quy định của pháp luật về đất đai.",
+                  "Bản chính": "1",
+                  "Bản sao": "1",
+                  "Tệp đính kèm": "Không có"
+                },
+                {
+                  "Tên giấy tờ": "Giấy chứng nhận quyền sở hữu nhà ở và quyền sử dụng đất ở được cấp theo quy định của pháp luật về đất đai, pháp luật về nhà ở qua các thời kỳ. Trường hợp Giấy chứng nhận quyền sử dụng đất đã có trong Cơ sở dữ liệu quốc gia về đất đai thì các thông tin này được thay thế bằng dữ liệu khi Cơ sở dữ liệu quốc gia về đất đai được vận hành.",
+                  "Bản chính": "1",
+                  "Bản sao": "1",
+                  "Tệp đính kèm": "Không có"
+                }
+              ]
+            },
+            {
+              "group_name": "(1.3) Đối với công trình tôn giáo:",
+              "documents": [
+                {
+                  "Tên giấy tờ": "- Quyết định phê duyệt dự án; văn bản thông báo kết quả thẩm định của cơ quan chuyên môn về xây dựng và hồ sơ bản vẽ thiết kế cơ sở được đóng dấu xác nhận kèm theo (nếu có); báo cáo kết quả thẩm tra thiết kế xây dựng (nếu có) theo quy định tại khoản 5 Điều 43 Nghị định số 175/2024/NĐ-CP, Nghị định số 105/2025/NĐ-CP và Nghị định số 144/2025/NĐ-CP; kết quả thủ tục hành chính theo quy định của pháp luật về phòng cháy và chữa cháy đối với hồ sơ thiết kế đề nghị cấp giấy phép xây dựng; kết quả thực hiện thủ tục về bảo vệ môi trường theo quy định của pháp luật về bảo vệ môi trường (đối với trường hợp không thẩm định báo cáo nghiên cứu khả thi đầu tư xây dựng tại cơ quan chuyên môn về xây dựng)",
+                  "Bản chính": "1",
+                  "Bản sao": "1",
+                  "Tệp đính kèm": "Không có"
+                },
+                {
+                  "Tên giấy tờ": "- Một trong những giấy tờ hợp pháp về đất đai chứng minh sự phù hợp mục đích sử dụng đất và sở hữu công trình để cấp phép xây dựng theo quy định tại Điều 53 của Nghị định số 175/2024/NĐ-CP bao gồm:  +  Giấy chứng nhận quyền sử dụng đất được cấp theo quy định của Luật Đất đai qua các thời kỳ. + Giấy chứng nhận quyền sử dụng đất, quyền sở hữu tài sản gắn liền với đất được cấp theo quy định của pháp luật về đất đai qua các thời kỳ.  + Giấy chứng nhận quyền sở hữu nhà ở và quyền sử dụng đất ở được cấp theo quy định của pháp luật về đất đai, pháp luật về nhà ở qua các thời kỳ. + Giấy chứng nhận quyền sở hữu nhà ở; giấy chứng nhận quyền sở hữu công trình xây dựng đã được cấp theo quy định của pháp luật về đất đai, pháp luật về nhà ở, pháp luật về xây dựng qua các thời kỳ. + Các loại giấy tờ đủ điều kiện để cấp giấy chứng nhận quyền sử dụng đất, quyền sở hữu nhà ở và tài sản khác gắn liền với đất nhưng chưa được cấp giấy chứng nhận gồm: Các loại giấy tờ quy định tại Điều 137 của Luật đất đai năm 2024; hoặc giấy xác nhận của Ủy ban nhân dân cấp xã và được tổ chức đăng ký đất đai xác nhận đủ điều kiện để cấp giấy chứng nhận quyền sử dụng đất, quyền sở hữu nhà ở và tài sản khác gắn liền với đất theo quy định của pháp luật về đất đai. + Giấy tờ về đất đai đối với trường hợp được Nhà nước giao đất, cho thuê đất, chuyển mục đích sử dụng đất từ sau ngày 01 tháng 7 năm 2004 nhưng không có giấy chứng nhận quyền sử dụng đất, quyền sở hữu nhà ở và tài sản khác gắn liền với đất theo quy định của pháp luật về đất đai, gồm: Quyết định giao đất của cơ quan nhà nước có thẩm quyền hoặc Quyết định cho thuê đất của cơ quan nhà nước có thẩm quyền và hợp đồng thuê đất kèm theo (nếu có) hoặc giấy tờ về trúng đấu giá quyền sử dụng đất, đấu thầu dự án có sử dụng đất. + Báo cáo hiện trạng sử dụng đất đối với trường hợp tổ chức, cơ sở tôn giáo đang sử dụng mà chưa được cấp giấy chứng nhận quyền sử dụng đất, quyền sở hữu nhà ở và tài sản khác gắn liền với đất được Ủy ban nhân dân cấp tỉnh nơi có đất kiểm tra thực tế sử dụng và xử lý theo quy định tại Điều 142, Điều 145 Luật Đất đai năm 2024. + Giấy tờ về việc xếp hạng di tích lịch sử - văn hóa, danh lam thắng cảnh hoặc danh mục kiểm kê di tích theo quy định của pháp luật về di sản văn hoá của Uỷ ban nhân dân cấp tỉnh đối với trường hợp cấp giấy phép xây dựng để thực hiện xây dựng mới, sửa chữa, cải tạo hoặc di dời các công trình di tích lịch sử - văn hóa, danh lam thắng cảnh nhưng chưa được cấp giấy chứng nhận quyền sử dụng đất, quyền sở hữu nhà ở và tài sản khác gắn liền với đất theo quy định.  + Văn bản chấp thuận về địa điểm xây dựng của Ủy ban nhân dân cấp xã đối với công trình xây dựng biển quảng cáo, trạm viễn thông, cột ăng-ten và các công trình tương tự khác theo quy định của pháp luật có liên quan tại khu vực không thuộc nhóm đất có mục đích sử dụng để xây dựng đối với loại công trình này và không được chuyển đổi mục đích sử dụng đất.  + Giấy tờ hợp pháp về đất đai của chủ rừng và hợp đồng cho thuê môi trường rừng giữa chủ rừng và tổ chức, cá nhân thực hiện dự án du lịch sinh thái, nghỉ dưỡng, giải trí theo quy định của pháp luật về lâm nghiệp. + Giấy chứng nhận quyền sử dụng đất hoặc quyết định giao đất hoặc quyết định cho thuê đất của cơ quan nhà nước có thẩm quyền có mục đích sử dụng đất chính đối với trường hợp xây dựng công trình trên đất được sử dụng kết hợp đa mục đích theo quy định tại Điều 218 của Luật Đất đai năm 2024. + Hợp đồng thuê đất được giữa chủ đầu tư xây dựng công trình và người quản lý, sử dụng công trình giao thông hoặc văn bản chấp thuận của cơ quan quản lý nhà nước có thẩm quyền về giao thông đối với công trình được phép xây dựng trong phạm vi đất dành cho giao thông theo quy định của pháp luật. + Văn bản của cơ quan nhà nước có thẩm quyền đã cấp giấy chứng nhận quyền sử dụng đất (theo đề nghị của cơ quan cấp giấy phép xây dựng) xác định diện tích các loại đất đối với trường hợp người sử dụng đất có một trong các loại giấy tờ hợp pháp về đất đai theo quy định tại các khoản 1, 2, 3, 4 và 5 Điều 53 Nghị định số 175/2024/NĐ-CP nhưng trên các giấy tờ đó không ghi rõ diện tích các loại đất để làm cơ sở cấp giấy phép xây dựng. + Trường hợp chủ đầu tư thuê đất hoặc thuê công trình, bộ phận công trình của chủ sử dụng đất, chủ sở hữu công trình để đầu tư xây dựng thì ngoài một trong các giấy tờ nêu trên, người đề nghị cấp giấy phép xây dựng bổ sung hợp đồng hợp pháp về việc thuê đất hoặc thuê công trình, bộ phận công trình tương ứng. + Các giấy tờ hợp pháp khác theo quy định của pháp luật về đất đai",
+                  "Bản chính": "1",
+                  "Bản sao": "1",
+                  "Tệp đính kèm": "Không có"
+                },
+                {
+                  "Tên giấy tờ": "Giấy chứng nhận quyền sở hữu nhà ở và quyền sử dụng đất ở được cấp theo quy định của pháp luật về đất đai, pháp luật về nhà ở qua các thời kỳ. Trường hợp Giấy chứng nhận quyền sử dụng đất đã có trong Cơ sở dữ liệu quốc gia về đất đai thì các thông tin này được thay thế bằng dữ liệu khi Cơ sở dữ liệu quốc gia về đất đai được vận hành.",
+                  "Bản chính": "1",
+                  "Bản sao": "1",
+                  "Tệp đính kèm": "Không có"
+                },
+                {
+                  "Tên giấy tờ": "Giấy chứng nhận quyền sử dụng đất, quyền sở hữu tài sản gắn liền với đất được cấp theo quy định của pháp luật về đất đai qua các thời kỳ. Trường hợp Giấy chứng nhận quyền sử dụng đất đã có trong Cơ sở dữ liệu quốc gia về đất đai thì các thông tin này được thay thế bằng dữ liệu khi Cơ sở dữ liệu quốc gia về đất đai được vận hành.",
+                  "Bản chính": "1",
+                  "Bản sao": "1",
+                  "Tệp đính kèm": "Không có"
+                },
+                {
+                  "Tên giấy tờ": "Giấy chứng nhận quyền sử dụng đất được cấp theo quy định của Luật Đất đai qua các thời kỳ. Trường hợp Giấy chứng nhận quyền sử dụng đất đã có trong Cơ sở dữ liệu quốc gia về đất đai thì các thông tin này được thay thế bằng dữ liệu khi Cơ sở dữ liệu quốc gia về đất đai được vận hành.",
+                  "Bản chính": "1",
+                  "Bản sao": "1",
+                  "Tệp đính kèm": "Không có"
+                },
+                {
+                  "Tên giấy tờ": "- 02 bộ bản vẽ thiết kế xây dựng trong hồ sơ thiết kế xây dựng triển khai sau thiết kế cơ sở (thiết kế bản vẽ thi công đối với dự án chỉ yêu cầu lập Báo cáo kinh tế - kỹ thuật) được phê duyệt hoặc đóng dấu xác nhận theo quy định của pháp luật về xây dựng, gồm: bản vẽ tổng mặt bằng toàn dự án, mặt bằng định vị công trình trên lô đất; bản vẽ kiến trúc các mặt bằng, các mặt đứng và mặt cắt chủ yếu của công trình; bản vẽ mặt bằng, mặt cắt móng; các bản vẽ thể hiện giải pháp kết cấu chính của công trình; bản vẽ mặt bằng đấu nối với hệ thống hạ tầng kỹ thuật bên ngoài công trình, dự án",
+                  "Bản chính": "2",
+                  "Bản sao": "0",
+                  "Tệp đính kèm": "Không có"
+                },
+                {
+                  "Tên giấy tờ": "Trường hợp Giấy chứng nhận quyền sử dụng đất đã có trong Cơ sở dữ liệu quốc gia về đất đai thì các thông tin này được thay thế bằng dữ liệu khi Cơ sở dữ liệu quốc gia về đất đai được vận hành.",
+                  "Bản chính": "1",
+                  "Bản sao": "1",
+                  "Tệp đính kèm": "Không có"
+                },
+                {
+                  "Tên giấy tờ": "- Công trình tôn giáo thuộc dự án bảo quản, tu bổ, phục hồi di tích lịch sử - văn hóa, danh lam thắng cảnh, phải bổ sung văn bản về sự cần thiết xây dựng và quy mô công trình của cơ quan quản lý nhà nước về văn hóa theo quy định của pháp luật về di sản văn hóa",
+                  "Bản chính": "1",
+                  "Bản sao": "1",
+                  "Tệp đính kèm": "Không có"
+                },
+                {
+                  "Tên giấy tờ": "- Đơn đề nghị cấp giấy phép sửa chữa, cải tạo công trình theo Mẫu số 1 Phụ lục số II Nghị định số 175/2024/NĐ-CP ngày 30/12/2024 của Chính phủ",
+                  "Bản chính": "1",
+                  "Bản sao": "1",
+                  "Tệp đính kèm": "Không có"
+                },
+                {
+                  "Tên giấy tờ": "- Văn bản chấp thuận về sự cần thiết xây dựng và quy mô công trình của cơ quan chuyên môn về tôn giáo thuộc Ủy ban nhân dân cấp tỉnh",
+                  "Bản chính": "1",
+                  "Bản sao": "1",
+                  "Tệp đính kèm": "Không có"
+                }
+              ]
+            },
+            {
+              "group_name": "(1.4) Đối với công trình tín ngưỡng:",
+              "documents": [
+                {
+                  "Tên giấy tờ": "- Đối với hồ sơ đề nghị cấp giấy phép xây dựng công trình tín ngưỡng, tôn giáo thuộc dự án bảo quản, tu bổ, phục hồi di tích lịch sử - văn hóa, danh lam thắng cảnh, ngoài các tài liệu quy định tại điểm a, điểm b khoản 3 Điều 55 Nghị định số 175/2024/NĐ-CP, phải bổ sung văn bản về sự cần thiết xây dựng và quy mô công trình của cơ quan quản lý nhà nước về văn hóa theo quy định của pháp luật về di sản văn hóa.",
+                  "Bản chính": "1",
+                  "Bản sao": "1",
+                  "Tệp đính kèm": "Không có"
+                },
+                {
+                  "Tên giấy tờ": "-   Đơn đề nghị cấp giấy phép sửa chữa, cải tạo công trình theo Mẫu số 1 Phụ lục số II Nghị định số 175/2024/NĐ-CP ngày 30/12/2024 của Chính phủ.",
+                  "Bản chính": "1",
+                  "Bản sao": "1",
+                  "Tệp đính kèm": "Không có"
+                },
+                {
+                  "Tên giấy tờ": "- Một trong những giấy tờ hợp pháp về đất đai chứng minh sự phù hợp mục đích sử dụng đất và sở hữu công trình để cấp phép xây dựng theo quy định tại Điều 53 của Nghị định số 175/2024/NĐ-CP bao gồm:  +  Giấy chứng nhận quyền sử dụng đất được cấp theo quy định của Luật Đất đai qua các thời kỳ. + Giấy chứng nhận quyền sử dụng đất, quyền sở hữu tài sản gắn liền với đất được cấp theo quy định của pháp luật về đất đai qua các thời kỳ.  + Giấy chứng nhận quyền sở hữu nhà ở và quyền sử dụng đất ở được cấp theo quy định của pháp luật về đất đai, pháp luật về nhà ở qua các thời kỳ. + Giấy chứng nhận quyền sở hữu nhà ở; giấy chứng nhận quyền sở hữu công trình xây dựng đã được cấp theo quy định của pháp luật về đất đai, pháp luật về nhà ở, pháp luật về xây dựng qua các thời kỳ. + Các loại giấy tờ đủ điều kiện để cấp giấy chứng nhận quyền sử dụng đất, quyền sở hữu nhà ở và tài sản khác gắn liền với đất nhưng chưa được cấp giấy chứng nhận gồm: Các loại giấy tờ quy định tại Điều 137 của Luật đất đai năm 2024; hoặc giấy xác nhận của Ủy ban nhân dân cấp xã và được tổ chức đăng ký đất đai xác nhận đủ điều kiện để cấp giấy chứng nhận quyền sử dụng đất, quyền sở hữu nhà ở và tài sản khác gắn liền với đất theo quy định của pháp luật về đất đai. + Giấy tờ về đất đai đối với trường hợp được Nhà nước giao đất, cho thuê đất, chuyển mục đích sử dụng đất từ sau ngày 01 tháng 7 năm 2004 nhưng không có giấy chứng nhận quyền sử dụng đất, quyền sở hữu nhà ở và tài sản khác gắn liền với đất theo quy định của pháp luật về đất đai, gồm: Quyết định giao đất của cơ quan nhà nước có thẩm quyền hoặc Quyết định cho thuê đất của cơ quan nhà nước có thẩm quyền và hợp đồng thuê đất kèm theo (nếu có) hoặc giấy tờ về trúng đấu giá quyền sử dụng đất, đấu thầu dự án có sử dụng đất. + Báo cáo hiện trạng sử dụng đất đối với trường hợp tổ chức, cơ sở tôn giáo đang sử dụng mà chưa được cấp giấy chứng nhận quyền sử dụng đất, quyền sở hữu nhà ở và tài sản khác gắn liền với đất được Ủy ban nhân dân cấp tỉnh nơi có đất kiểm tra thực tế sử dụng và xử lý theo quy định tại Điều 142, Điều 145 Luật Đất đai năm 2024. + Giấy tờ về việc xếp hạng di tích lịch sử - văn hóa, danh lam thắng cảnh hoặc danh mục kiểm kê di tích theo quy định của pháp luật về di sản văn hoá của Uỷ ban nhân dân cấp tỉnh đối với trường hợp cấp giấy phép xây dựng để thực hiện xây dựng mới, sửa chữa, cải tạo hoặc di dời các công trình di tích lịch sử - văn hóa, danh lam thắng cảnh nhưng chưa được cấp giấy chứng nhận quyền sử dụng đất, quyền sở hữu nhà ở và tài sản khác gắn liền với đất theo quy định.  + Văn bản chấp thuận về địa điểm xây dựng của Ủy ban nhân dân cấp xã đối với công trình xây dựng biển quảng cáo, trạm viễn thông, cột ăng-ten và các công trình tương tự khác theo quy định của pháp luật có liên quan tại khu vực không thuộc nhóm đất có mục đích sử dụng để xây dựng đối với loại công trình này và không được chuyển đổi mục đích sử dụng đất.  + Giấy tờ hợp pháp về đất đai của chủ rừng và hợp đồng cho thuê môi trường rừng giữa chủ rừng và tổ chức, cá nhân thực hiện dự án du lịch sinh thái, nghỉ dưỡng, giải trí theo quy định của pháp luật về lâm nghiệp. + Giấy chứng nhận quyền sử dụng đất hoặc quyết định giao đất hoặc quyết định cho thuê đất của cơ quan nhà nước có thẩm quyền có mục đích sử dụng đất chính đối với trường hợp xây dựng công trình trên đất được sử dụng kết hợp đa mục đích theo quy định tại Điều 218 của Luật Đất đai năm 2024. + Hợp đồng thuê đất được giữa chủ đầu tư xây dựng công trình và người quản lý, sử dụng công trình giao thông hoặc văn bản chấp thuận của cơ quan quản lý nhà nước có thẩm quyền về giao thông đối với công trình được phép xây dựng trong phạm vi đất dành cho giao thông theo quy định của pháp luật. + Văn bản của cơ quan nhà nước có thẩm quyền đã cấp giấy chứng nhận quyền sử dụng đất (theo đề nghị của cơ quan cấp giấy phép xây dựng) xác định diện tích các loại đất đối với trường hợp người sử dụng đất có một trong các loại giấy tờ hợp pháp về đất đai theo quy định tại các khoản 1, 2, 3, 4 và 5 Điều 53 Nghị định số 175/2024/NĐ-CP nhưng trên các giấy tờ đó không ghi rõ diện tích các loại đất để làm cơ sở cấp giấy phép xây dựng. + Trường hợp chủ đầu tư thuê đất hoặc thuê công trình, bộ phận công trình của chủ sử dụng đất, chủ sở hữu công trình để đầu tư xây dựng thì ngoài một trong các giấy tờ nêu trên, người đề nghị cấp giấy phép xây dựng bổ sung hợp đồng hợp pháp về việc thuê đất hoặc thuê công trình, bộ phận công trình tương ứng. + Các giấy tờ hợp pháp khác theo quy định của pháp luật về đất đai",
+                  "Bản chính": "1",
+                  "Bản sao": "1",
+                  "Tệp đính kèm": "Không có"
+                },
+                {
+                  "Tên giấy tờ": "Giấy chứng nhận quyền sử dụng đất được cấp theo quy định của Luật Đất đai qua các thời kỳ. Trường hợp Giấy chứng nhận quyền sử dụng đất đã có trong Cơ sở dữ liệu quốc gia về đất đai thì các thông tin này được thay thế bằng dữ liệu khi Cơ sở dữ liệu quốc gia về đất đai được vận hành.",
+                  "Bản chính": "1",
+                  "Bản sao": "1",
+                  "Tệp đính kèm": "Không có"
+                },
+                {
+                  "Tên giấy tờ": "Giấy chứng nhận quyền sở hữu nhà ở và quyền sử dụng đất ở được cấp theo quy định của pháp luật về đất đai, pháp luật về nhà ở qua các thời kỳ. Trường hợp Giấy chứng nhận quyền sử dụng đất đã có trong Cơ sở dữ liệu quốc gia về đất đai thì các thông tin này được thay thế bằng dữ liệu khi Cơ sở dữ liệu quốc gia về đất đai được vận hành.",
+                  "Bản chính": "1",
+                  "Bản sao": "1",
+                  "Tệp đính kèm": "Không có"
+                },
+                {
+                  "Tên giấy tờ": "- Ý kiến của cơ quan chuyên môn về tín ngưỡng, tôn giáo thuộc Ủy ban nhân dân cấp tỉnh (trường hợp pháp luật về tín ngưỡng, tôn giáo có quy định); báo cáo kết quả thẩm tra thiết kế xây dựng đối với các công trình tín ngưỡng ảnh hưởng lớn đến an toàn, lợi ích cộng đồng;",
+                  "Bản chính": "1",
+                  "Bản sao": "1",
+                  "Tệp đính kèm": "Không có"
+                },
+                {
+                  "Tên giấy tờ": "- 02 bộ bản vẽ thiết kế xây dựng kèm theo; kết quả thực hiện thủ tục hành chính theo quy định của pháp luật về phòng cháy, chữa cháy; báo cáo kết quả thẩm tra thiết kế xây dựng trong trường hợp pháp luật về xây dựng có yêu cầu, gồm: Bản vẽ mặt bằng công trình trên lô đất kèm theo sơ đồ vị trí công trình; Bản vẽ mặt bằng các tầng, các mặt đứng và mặt cắt chính của công trình; Bản vẽ mặt bằng móng và mặt cắt móng kèm theo sơ đồ đấu nối hệ thống hạ tầng kỹ thuật bên ngoài công trình gồm cấp nước, thoát nước, cấp điện; Đối với công trình xây dựng có công trình liền kề phải có bản cam kết bảo đảm an toàn đối với công trình liền kề (đối với công trình xây dựng có công trình liền kề).",
+                  "Bản chính": "2",
+                  "Bản sao": "0",
+                  "Tệp đính kèm": "Không có"
+                },
+                {
+                  "Tên giấy tờ": "Giấy chứng nhận quyền sử dụng đất, quyền sở hữu tài sản gắn liền với đất được cấp theo quy định của pháp luật về đất đai qua các thời kỳ. Trường hợp Giấy chứng nhận quyền sử dụng đất đã có trong Cơ sở dữ liệu quốc gia về đất đai thì các thông tin này được thay thế bằng dữ liệu khi Cơ sở dữ liệu quốc gia về đất đai được vận hành.",
+                  "Bản chính": "1",
+                  "Bản sao": "1",
+                  "Tệp đính kèm": "Không có"
+                }
+              ]
+            },
+            {
+              "group_name": "(1.5) Đối với công trình tượng đài, tranh hoành tráng:",
+              "documents": [
+                {
+                  "Tên giấy tờ": "- .02 bộ bản vẽ thiết kế xây dựng trong hồ sơ thiết kế xây dựng triển khai sau thiết kế cơ sở được phê duyệt theo quy định của pháp luật về xây dựng, gồm; bản vẽ tổng mặt bằng toàn dự án, mặt bằng định vị công trình trên lô đất; bản vẽ kiến trúc các mặt bằng, các mặt đứng và mặt cắt chủ yếu của công trình; bản vẽ mặt bằng, mặt cắt móng; các bản vẽ thể hiện giải pháp kết cấu chính của công trình; bản vẽ mặt bằng đấu nối với hệ thống hạ tầng kỹ thuật bên ngoài công trình, dự án.",
+                  "Bản chính": "2",
+                  "Bản sao": "1",
+                  "Tệp đính kèm": "Không có"
+                },
+                {
+                  "Tên giấy tờ": "-  Đơn đề nghị cấp giấy phép sửa chữa, cải tạo công trình theo Mẫu số 1 Phụ lục số II Nghị định số 175/2024/NĐ-CP ngày 30/12/2024 của Chính phủ.",
+                  "Bản chính": "1",
+                  "Bản sao": "1",
+                  "Tệp đính kèm": "Không có"
+                },
+                {
+                  "Tên giấy tờ": "Giấy chứng nhận quyền sử dụng đất, quyền sở hữu tài sản gắn liền với đất được cấp theo quy định của pháp luật về đất đai qua các thời kỳ. Trường hợp Giấy chứng nhận quyền sử dụng đất đã có trong Cơ sở dữ liệu quốc gia về đất đai thì các thông tin này được thay thế bằng dữ liệu khi Cơ sở dữ liệu quốc gia về đất đai được vận hành.",
+                  "Bản chính": "1",
+                  "Bản sao": "1",
+                  "Tệp đính kèm": "Không có"
+                },
+                {
+                  "Tên giấy tờ": "- Văn bản chấp thuận về sự cần thiết xây dựng và quy mô công trình của cơ quan quản lý nhà nước về văn hóa.",
+                  "Bản chính": "1",
+                  "Bản sao": "1",
+                  "Tệp đính kèm": "Không có"
+                },
+                {
+                  "Tên giấy tờ": "Giấy chứng nhận quyền sử dụng đất được cấp theo quy định của Luật Đất đai qua các thời kỳ. Trường hợp Giấy chứng nhận quyền sử dụng đất đã có trong Cơ sở dữ liệu quốc gia về đất đai thì các thông tin này được thay thế bằng dữ liệu khi Cơ sở dữ liệu quốc gia về đất đai được vận hành.",
+                  "Bản chính": "1",
+                  "Bản sao": "1",
+                  "Tệp đính kèm": "Không có"
+                },
+                {
+                  "Tên giấy tờ": "- Một trong những giấy tờ hợp pháp về đất đai chứng minh sự phù hợp mục đích sử dụng đất và sở hữu công trình để cấp phép xây dựng theo quy định tại Điều 53 của Nghị định số 175/2024/NĐ-CP bao gồm:  +  Giấy chứng nhận quyền sử dụng đất được cấp theo quy định của Luật Đất đai qua các thời kỳ. + Giấy chứng nhận quyền sử dụng đất, quyền sở hữu tài sản gắn liền với đất được cấp theo quy định của pháp luật về đất đai qua các thời kỳ.  + Giấy chứng nhận quyền sở hữu nhà ở và quyền sử dụng đất ở được cấp theo quy định của pháp luật về đất đai, pháp luật về nhà ở qua các thời kỳ. + Giấy chứng nhận quyền sở hữu nhà ở; giấy chứng nhận quyền sở hữu công trình xây dựng đã được cấp theo quy định của pháp luật về đất đai, pháp luật về nhà ở, pháp luật về xây dựng qua các thời kỳ. + Các loại giấy tờ đủ điều kiện để cấp giấy chứng nhận quyền sử dụng đất, quyền sở hữu nhà ở và tài sản khác gắn liền với đất nhưng chưa được cấp giấy chứng nhận gồm: Các loại giấy tờ quy định tại Điều 137 của Luật đất đai năm 2024; hoặc giấy xác nhận của Ủy ban nhân dân cấp xã và được tổ chức đăng ký đất đai xác nhận đủ điều kiện để cấp giấy chứng nhận quyền sử dụng đất, quyền sở hữu nhà ở và tài sản khác gắn liền với đất theo quy định của pháp luật về đất đai. + Giấy tờ về đất đai đối với trường hợp được Nhà nước giao đất, cho thuê đất, chuyển mục đích sử dụng đất từ sau ngày 01 tháng 7 năm 2004 nhưng không có giấy chứng nhận quyền sử dụng đất, quyền sở hữu nhà ở và tài sản khác gắn liền với đất theo quy định của pháp luật về đất đai, gồm: Quyết định giao đất của cơ quan nhà nước có thẩm quyền hoặc Quyết định cho thuê đất của cơ quan nhà nước có thẩm quyền và hợp đồng thuê đất kèm theo (nếu có) hoặc giấy tờ về trúng đấu giá quyền sử dụng đất, đấu thầu dự án có sử dụng đất. + Báo cáo hiện trạng sử dụng đất đối với trường hợp tổ chức, cơ sở tôn giáo đang sử dụng mà chưa được cấp giấy chứng nhận quyền sử dụng đất, quyền sở hữu nhà ở và tài sản khác gắn liền với đất được Ủy ban nhân dân cấp tỉnh nơi có đất kiểm tra thực tế sử dụng và xử lý theo quy định tại Điều 142, Điều 145 Luật Đất đai năm 2024. + Giấy tờ về việc xếp hạng di tích lịch sử - văn hóa, danh lam thắng cảnh hoặc danh mục kiểm kê di tích theo quy định của pháp luật về di sản văn hoá của Uỷ ban nhân dân cấp tỉnh đối với trường hợp cấp giấy phép xây dựng để thực hiện xây dựng mới, sửa chữa, cải tạo hoặc di dời các công trình di tích lịch sử - văn hóa, danh lam thắng cảnh nhưng chưa được cấp giấy chứng nhận quyền sử dụng đất, quyền sở hữu nhà ở và tài sản khác gắn liền với đất theo quy định.  + Văn bản chấp thuận về địa điểm xây dựng của Ủy ban nhân dân cấp xã đối với công trình xây dựng biển quảng cáo, trạm viễn thông, cột ăng-ten và các công trình tương tự khác theo quy định của pháp luật có liên quan tại khu vực không thuộc nhóm đất có mục đích sử dụng để xây dựng đối với loại công trình này và không được chuyển đổi mục đích sử dụng đất.  + Giấy tờ hợp pháp về đất đai của chủ rừng và hợp đồng cho thuê môi trường rừng giữa chủ rừng và tổ chức, cá nhân thực hiện dự án du lịch sinh thái, nghỉ dưỡng, giải trí theo quy định của pháp luật về lâm nghiệp. + Giấy chứng nhận quyền sử dụng đất hoặc quyết định giao đất hoặc quyết định cho thuê đất của cơ quan nhà nước có thẩm quyền có mục đích sử dụng đất chính đối với trường hợp xây dựng công trình trên đất được sử dụng kết hợp đa mục đích theo quy định tại Điều 218 của Luật Đất đai năm 2024. + Hợp đồng thuê đất được giữa chủ đầu tư xây dựng công trình và người quản lý, sử dụng công trình giao thông hoặc văn bản chấp thuận của cơ quan quản lý nhà nước có thẩm quyền về giao thông đối với công trình được phép xây dựng trong phạm vi đất dành cho giao thông theo quy định của pháp luật. + Văn bản của cơ quan nhà nước có thẩm quyền đã cấp giấy chứng nhận quyền sử dụng đất (theo đề nghị của cơ quan cấp giấy phép xây dựng) xác định diện tích các loại đất đối với trường hợp người sử dụng đất có một trong các loại giấy tờ hợp pháp về đất đai theo quy định tại các khoản 1, 2, 3, 4 và 5 Điều 53 Nghị định số 175/2024/NĐ-CP nhưng trên các giấy tờ đó không ghi rõ diện tích các loại đất để làm cơ sở cấp giấy phép xây dựng. + Trường hợp chủ đầu tư thuê đất hoặc thuê công trình, bộ phận công trình của chủ sử dụng đất, chủ sở hữu công trình để đầu tư xây dựng thì ngoài một trong các giấy tờ nêu trên, người đề nghị cấp giấy phép xây dựng bổ sung hợp đồng hợp pháp về việc thuê đất hoặc thuê công trình, bộ phận công trình tương ứng. + Các giấy tờ hợp pháp khác theo quy định của pháp luật về đất đai.  + Văn bản chấp thuận của cơ quan nhà nước có thẩm quyền về vị trí và phương án tuyến hoặc Quyết định thu hồi đất của cơ quan nhà nước có thẩm quyền theo quy định của pháp luật về đất đai.",
+                  "Bản chính": "1",
+                  "Bản sao": "1",
+                  "Tệp đính kèm": "Không có"
+                },
+                {
+                  "Tên giấy tờ": "- Quyết định phê duyệt dự án; văn bản thông báo kết quả thẩm định của cơ quan chuyên môn về xây dựng và hồ sơ bản vẽ thiết kế cơ sở được đóng dấu xác nhận kèm theo (nếu có); báo cáo kết quả thẩm tra thiết kế xây dựng (nếu có) theo quy định tại khoản 5 Điều 43 Nghị định số 175/2024/NĐ-CP, Nghị định số 105/2025/NĐ-CP và Nghị định số 144/2025/NĐ-CP; kết quả thủ tục hành chính theo quy định của pháp luật về phòng cháy và chữa cháy đối với hồ sơ thiết kế đề nghị cấp giấy phép xây dựng; kết quả thực hiện thủ tục về bảo vệ môi trường theo quy định của pháp luật về bảo vệ môi trường (đối với trường hợp không thẩm định báo cáo nghiên cứu khả thi đầu tư xây dựng tại cơ quan chuyên môn về xây dựng)",
+                  "Bản chính": "1",
+                  "Bản sao": "1",
+                  "Tệp đính kèm": "Không có"
+                },
+                {
+                  "Tên giấy tờ": "Giấy chứng nhận quyền sở hữu nhà ở và quyền sử dụng đất ở được cấp theo quy định của pháp luật về đất đai, pháp luật về nhà ở qua các thời kỳ. Trường hợp Giấy chứng nhận quyền sử dụng đất đã có trong Cơ sở dữ liệu quốc gia về đất đai thì các thông tin này được thay thế bằng dữ liệu khi Cơ sở dữ liệu quốc gia về đất đai được vận hành.",
+                  "Bản chính": "1",
+                  "Bản sao": "1",
+                  "Tệp đính kèm": "Không có"
+                }
+              ]
+            },
+            {
+              "group_name": "(1.6) Đối với công trình của các cơ quan ngoại giao và tổ chức quốc tế:",
+              "documents": [
+                {
+                  "Tên giấy tờ": "- Một trong những giấy tờ hợp pháp về đất đai chứng minh sự phù hợp mục đích sử dụng đất và sở hữu công trình để cấp phép xây dựng theo quy định tại Điều 53 của Nghị định số 175/2024/NĐ-CP bao gồm:  +  Giấy chứng nhận quyền sử dụng đất được cấp theo quy định của Luật Đất đai qua các thời kỳ. + Giấy chứng nhận quyền sử dụng đất, quyền sở hữu tài sản gắn liền với đất được cấp theo quy định của pháp luật về đất đai qua các thời kỳ.  + Giấy chứng nhận quyền sở hữu nhà ở và quyền sử dụng đất ở được cấp theo quy định của pháp luật về đất đai, pháp luật về nhà ở qua các thời kỳ. + Giấy chứng nhận quyền sở hữu nhà ở; giấy chứng nhận quyền sở hữu công trình xây dựng đã được cấp theo quy định của pháp luật về đất đai, pháp luật về nhà ở, pháp luật về xây dựng qua các thời kỳ. + Các loại giấy tờ đủ điều kiện để cấp giấy chứng nhận quyền sử dụng đất, quyền sở hữu nhà ở và tài sản khác gắn liền với đất nhưng chưa được cấp giấy chứng nhận gồm: Các loại giấy tờ quy định tại Điều 137 của Luật đất đai năm 2024; hoặc giấy xác nhận của Ủy ban nhân dân cấp xã và được tổ chức đăng ký đất đai xác nhận đủ điều kiện để cấp giấy chứng nhận quyền sử dụng đất, quyền sở hữu nhà ở và tài sản khác gắn liền với đất theo quy định của pháp luật về đất đai. + Giấy tờ về đất đai đối với trường hợp được Nhà nước giao đất, cho thuê đất, chuyển mục đích sử dụng đất từ sau ngày 01 tháng 7 năm 2004 nhưng không có giấy chứng nhận quyền sử dụng đất, quyền sở hữu nhà ở và tài sản khác gắn liền với đất theo quy định của pháp luật về đất đai, gồm: Quyết định giao đất của cơ quan nhà nước có thẩm quyền hoặc Quyết định cho thuê đất của cơ quan nhà nước có thẩm quyền và hợp đồng thuê đất kèm theo (nếu có) hoặc giấy tờ về trúng đấu giá quyền sử dụng đất, đấu thầu dự án có sử dụng đất. + Báo cáo hiện trạng sử dụng đất đối với trường hợp tổ chức, cơ sở tôn giáo đang sử dụng mà chưa được cấp giấy chứng nhận quyền sử dụng đất, quyền sở hữu nhà ở và tài sản khác gắn liền với đất được Ủy ban nhân dân cấp tỉnh nơi có đất kiểm tra thực tế sử dụng và xử lý theo quy định tại Điều 142, Điều 145 Luật Đất đai năm 2024. + Giấy tờ về việc xếp hạng di tích lịch sử - văn hóa, danh lam thắng cảnh hoặc danh mục kiểm kê di tích theo quy định của pháp luật về di sản văn hoá của Uỷ ban nhân dân cấp tỉnh đối với trường hợp cấp giấy phép xây dựng để thực hiện xây dựng mới, sửa chữa, cải tạo hoặc di dời các công trình di tích lịch sử - văn hóa, danh lam thắng cảnh nhưng chưa được cấp giấy chứng nhận quyền sử dụng đất, quyền sở hữu nhà ở và tài sản khác gắn liền với đất theo quy định.  + Văn bản chấp thuận về địa điểm xây dựng của Ủy ban nhân dân cấp xã đối với công trình xây dựng biển quảng cáo, trạm viễn thông, cột ăng-ten và các công trình tương tự khác theo quy định của pháp luật có liên quan tại khu vực không thuộc nhóm đất có mục đích sử dụng để xây dựng đối với loại công trình này và không được chuyển đổi mục đích sử dụng đất.  + Giấy tờ hợp pháp về đất đai của chủ rừng và hợp đồng cho thuê môi trường rừng giữa chủ rừng và tổ chức, cá nhân thực hiện dự án du lịch sinh thái, nghỉ dưỡng, giải trí theo quy định của pháp luật về lâm nghiệp. + Giấy chứng nhận quyền sử dụng đất hoặc quyết định giao đất hoặc quyết định cho thuê đất của cơ quan nhà nước có thẩm quyền có mục đích sử dụng đất chính đối với trường hợp xây dựng công trình trên đất được sử dụng kết hợp đa mục đích theo quy định tại Điều 218 của Luật Đất đai năm 2024. + Hợp đồng thuê đất được giữa chủ đầu tư xây dựng công trình và người quản lý, sử dụng công trình giao thông hoặc văn bản chấp thuận của cơ quan quản lý nhà nước có thẩm quyền về giao thông đối với công trình được phép xây dựng trong phạm vi đất dành cho giao thông theo quy định của pháp luật. + Văn bản của cơ quan nhà nước có thẩm quyền đã cấp giấy chứng nhận quyền sử dụng đất (theo đề nghị của cơ quan cấp giấy phép xây dựng) xác định diện tích các loại đất đối với trường hợp người sử dụng đất có một trong các loại giấy tờ hợp pháp về đất đai theo quy định tại các khoản 1, 2, 3, 4 và 5 Điều 53 Nghị định số 175/2024/NĐ-CP nhưng trên các giấy tờ đó không ghi rõ diện tích các loại đất để làm cơ sở cấp giấy phép xây dựng. + Trường hợp chủ đầu tư thuê đất hoặc thuê công trình, bộ phận công trình của chủ sử dụng đất, chủ sở hữu công trình để đầu tư xây dựng thì ngoài một trong các giấy tờ nêu trên, người đề nghị cấp giấy phép xây dựng bổ sung hợp đồng hợp pháp về việc thuê đất hoặc thuê công trình, bộ phận công trình tương ứng. + Các giấy tờ hợp pháp khác theo quy định của pháp luật về đất đai.",
+                  "Bản chính": "1",
+                  "Bản sao": "1",
+                  "Tệp đính kèm": "Không có"
+                },
+                {
+                  "Tên giấy tờ": "- Đơn đề nghị cấp giấy phép sửa chữa, cải tạo công trình theo   Mẫu số 1 Phụ lục số II Nghị định số 175/2024/NĐ-CP ngày 30/12/2024 của Chính phủ.",
+                  "Bản chính": "1",
+                  "Bản sao": "1",
+                  "Tệp đính kèm": "Không có"
+                },
+                {
+                  "Tên giấy tờ": "- .02 bộ bản vẽ thiết kế xây dựng trong hồ sơ thiết kế xây dựng triển khai sau thiết kế cơ sở được phê duyệt theo quy định của pháp luật về xây dựng, gồm; bản vẽ tổng mặt bằng toàn dự án, mặt bằng định vị công trình trên lô đất; bản vẽ kiến trúc các mặt bằng, các mặt đứng và mặt cắt chủ yếu của công trình; bản vẽ mặt bằng, mặt cắt móng; các bản vẽ thể hiện giải pháp kết cấu chính của công trình; bản vẽ mặt bằng đấu nối với hệ thống hạ tầng kỹ thuật bên ngoài công trình, dự án.",
+                  "Bản chính": "2",
+                  "Bản sao": "0",
+                  "Tệp đính kèm": "Không có"
+                },
+                {
+                  "Tên giấy tờ": "- Các điều khoản quy định của Hiệp định hoặc thỏa thuận đã được ký kết với Chính phủ Việt Nam.",
+                  "Bản chính": "1",
+                  "Bản sao": "1",
+                  "Tệp đính kèm": "Không có"
+                },
+                {
+                  "Tên giấy tờ": "Giấy chứng nhận quyền sử dụng đất, quyền sở hữu tài sản gắn liền với đất được cấp theo quy định của pháp luật về đất đai qua các thời kỳ. Trường hợp Giấy chứng nhận quyền sử dụng đất đã có trong Cơ sở dữ liệu quốc gia về đất đai thì các thông tin này được thay thế bằng dữ liệu khi Cơ sở dữ liệu quốc gia về đất đai được vận hành.",
+                  "Bản chính": "1",
+                  "Bản sao": "1",
+                  "Tệp đính kèm": "Không có"
+                },
+                {
+                  "Tên giấy tờ": "- Quyết định phê duyệt dự án; văn bản thông báo kết quả thẩm định của cơ quan chuyên môn về xây dựng và hồ sơ bản vẽ thiết kế cơ sở được đóng dấu xác nhận kèm theo (nếu có); báo cáo kết quả thẩm tra thiết kế xây dựng (nếu có) theo quy định tại khoản 5 Điều 43 Nghị định số 175/2024/NĐ-CP, Nghị định số 105/2025/NĐ-CP và Nghị định số 144/2025/NĐ-CP; kết quả thủ tục hành chính theo quy định của pháp luật về phòng cháy và chữa cháy đối với hồ sơ thiết kế đề nghị cấp giấy phép xây dựng; kết quả thực hiện thủ tục về bảo vệ môi trường theo quy định của pháp luật về bảo vệ môi trường (đối với trường hợp không thẩm định báo cáo nghiên cứu khả thi đầu tư xây dựng tại cơ quan chuyên môn về xây dựng).",
+                  "Bản chính": "1",
+                  "Bản sao": "1",
+                  "Tệp đính kèm": "Không có"
+                },
+                {
+                  "Tên giấy tờ": "Giấy chứng nhận quyền sở hữu nhà ở và quyền sử dụng đất ở được cấp theo quy định của pháp luật về đất đai, pháp luật về nhà ở qua các thời kỳ. Trường hợp Giấy chứng nhận quyền sử dụng đất đã có trong Cơ sở dữ liệu quốc gia về đất đai thì các thông tin này được thay thế bằng dữ liệu khi Cơ sở dữ liệu quốc gia về đất đai được vận hành.",
+                  "Bản chính": "1",
+                  "Bản sao": "1",
+                  "Tệp đính kèm": "Không có"
+                },
+                {
+                  "Tên giấy tờ": "Giấy chứng nhận quyền sử dụng đất được cấp theo quy định của Luật Đất đai qua các thời kỳ. Trường hợp Giấy chứng nhận quyền sử dụng đất đã có trong Cơ sở dữ liệu quốc gia về đất đai thì các thông tin này được thay thế bằng dữ liệu khi Cơ sở dữ liệu quốc gia về đất đai được vận hành.",
+                  "Bản chính": "1",
+                  "Bản sao": "1",
+                  "Tệp đính kèm": "Không có"
+                }
+              ]
+            },
+            {
+              "group_name": "(1.7) Đối với công trình nhà ở riêng lẻ:",
+              "documents": [
+                {
+                  "Tên giấy tờ": "- Một trong những giấy tờ hợp pháp về đất đai chứng minh sự phù hợp mục đích sử dụng đất và sở hữu công trình để cấp phép xây dựng theo quy định tại Điều 53 của Nghị định số 175/2024/NĐ-CP bao gồm:  +  Giấy chứng nhận quyền sử dụng đất được cấp theo quy định của Luật Đất đai qua các thời kỳ. + Giấy chứng nhận quyền sử dụng đất, quyền sở hữu tài sản gắn liền với đất được cấp theo quy định của pháp luật về đất đai qua các thời kỳ.  + Giấy chứng nhận quyền sở hữu nhà ở và quyền sử dụng đất ở được cấp theo quy định của pháp luật về đất đai, pháp luật về nhà ở qua các thời kỳ. + Giấy chứng nhận quyền sở hữu nhà ở; giấy chứng nhận quyền sở hữu công trình xây dựng đã được cấp theo quy định của pháp luật về đất đai, pháp luật về nhà ở, pháp luật về xây dựng qua các thời kỳ. + Các loại giấy tờ đủ điều kiện để cấp giấy chứng nhận quyền sử dụng đất, quyền sở hữu nhà ở và tài sản khác gắn liền với đất nhưng chưa được cấp giấy chứng nhận gồm: Các loại giấy tờ quy định tại Điều 137 của Luật đất đai năm 2024; hoặc giấy xác nhận của Ủy ban nhân dân cấp xã và được tổ chức đăng ký đất đai xác nhận đủ điều kiện để cấp giấy chứng nhận quyền sử dụng đất, quyền sở hữu nhà ở và tài sản khác gắn liền với đất theo quy định của pháp luật về đất đai. + Giấy tờ về đất đai đối với trường hợp được Nhà nước giao đất, cho thuê đất, chuyển mục đích sử dụng đất từ sau ngày 01 tháng 7 năm 2004 nhưng không có giấy chứng nhận quyền sử dụng đất, quyền sở hữu nhà ở và tài sản khác gắn liền với đất theo quy định của pháp luật về đất đai, gồm: Quyết định giao đất của cơ quan nhà nước có thẩm quyền hoặc Quyết định cho thuê đất của cơ quan nhà nước có thẩm quyền và hợp đồng thuê đất kèm theo (nếu có) hoặc giấy tờ về trúng đấu giá quyền sử dụng đất, đấu thầu dự án có sử dụng đất. + Báo cáo hiện trạng sử dụng đất đối với trường hợp tổ chức, cơ sở tôn giáo đang sử dụng mà chưa được cấp giấy chứng nhận quyền sử dụng đất, quyền sở hữu nhà ở và tài sản khác gắn liền với đất được Ủy ban nhân dân cấp tỉnh nơi có đất kiểm tra thực tế sử dụng và xử lý theo quy định tại Điều 142, Điều 145 Luật Đất đai năm 2024. + Giấy tờ về việc xếp hạng di tích lịch sử - văn hóa, danh lam thắng cảnh hoặc danh mục kiểm kê di tích theo quy định của pháp luật về di sản văn hoá của Uỷ ban nhân dân cấp tỉnh đối với trường hợp cấp giấy phép xây dựng để thực hiện xây dựng mới, sửa chữa, cải tạo hoặc di dời các công trình di tích lịch sử - văn hóa, danh lam thắng cảnh nhưng chưa được cấp giấy chứng nhận quyền sử dụng đất, quyền sở hữu nhà ở và tài sản khác gắn liền với đất theo quy định.  + Văn bản chấp thuận về địa điểm xây dựng của Ủy ban nhân dân cấp xã đối với công trình xây dựng biển quảng cáo, trạm viễn thông, cột ăng-ten và các công trình tương tự khác theo quy định của pháp luật có liên quan tại khu vực không thuộc nhóm đất có mục đích sử dụng để xây dựng đối với loại công trình này và không được chuyển đổi mục đích sử dụng đất.  + Giấy tờ hợp pháp về đất đai của chủ rừng và hợp đồng cho thuê môi trường rừng giữa chủ rừng và tổ chức, cá nhân thực hiện dự án du lịch sinh thái, nghỉ dưỡng, giải trí theo quy định của pháp luật về lâm nghiệp. + Giấy chứng nhận quyền sử dụng đất hoặc quyết định giao đất hoặc quyết định cho thuê đất của cơ quan nhà nước có thẩm quyền có mục đích sử dụng đất chính đối với trường hợp xây dựng công trình trên đất được sử dụng kết hợp đa mục đích theo quy định tại Điều 218 của Luật Đất đai năm 2024. + Hợp đồng thuê đất được giữa chủ đầu tư xây dựng công trình và người quản lý, sử dụng công trình giao thông hoặc văn bản chấp thuận của cơ quan quản lý nhà nước có thẩm quyền về giao thông đối với công trình được phép xây dựng trong phạm vi đất dành cho giao thông theo quy định của pháp luật. + Văn bản của cơ quan nhà nước có thẩm quyền đã cấp giấy chứng nhận quyền sử dụng đất (theo đề nghị của cơ quan cấp giấy phép xây dựng) xác định diện tích các loại đất đối với trường hợp người sử dụng đất có một trong các loại giấy tờ hợp pháp về đất đai theo quy định tại các khoản 1, 2, 3, 4 và 5 Điều 53 Nghị định số 175/2024/NĐ-CP nhưng trên các giấy tờ đó không ghi rõ diện tích các loại đất để làm cơ sở cấp giấy phép xây dựng. + Trường hợp chủ đầu tư thuê đất hoặc thuê công trình, bộ phận công trình của chủ sử dụng đất, chủ sở hữu công trình để đầu tư xây dựng thì ngoài một trong các giấy tờ nêu trên, người đề nghị cấp giấy phép xây dựng bổ sung hợp đồng hợp pháp về việc thuê đất hoặc thuê công trình, bộ phận công trình tương ứng. + Các giấy tờ hợp pháp khác theo quy định của pháp luật về đất đai.",
+                  "Bản chính": "1",
+                  "Bản sao": "1",
+                  "Tệp đính kèm": "Không có"
+                },
+                {
+                  "Tên giấy tờ": "Giấy chứng nhận quyền sử dụng đất được cấp theo quy định của Luật Đất đai qua các thời kỳ. Trường hợp Giấy chứng nhận quyền sử dụng đất đã có trong Cơ sở dữ liệu quốc gia về đất đai thì các thông tin này được thay thế bằng dữ liệu khi Cơ sở dữ liệu quốc gia về đất đai được vận hành.",
+                  "Bản chính": "1",
+                  "Bản sao": "1",
+                  "Tệp đính kèm": "Không có"
+                },
+                {
+                  "Tên giấy tờ": "- Đơn đề nghị cấp giấy phép sửa chữa, cải tạo công trình theo Mẫu số 1 Phụ lục số II Nghị định số 175/2024/NĐ-CP ngày 30/12/2024 của Chính phủ.",
+                  "Bản chính": "1",
+                  "Bản sao": "1",
+                  "Tệp đính kèm": "Không có"
+                },
+                {
+                  "Tên giấy tờ": "Giấy chứng nhận quyền sở hữu nhà ở và quyền sử dụng đất ở được cấp theo quy định của pháp luật về đất đai, pháp luật về nhà ở qua các thời kỳ. Trường hợp Giấy chứng nhận quyền sử dụng đất đã có trong Cơ sở dữ liệu quốc gia về đất đai thì các thông tin này được thay thế bằng dữ liệu khi Cơ sở dữ liệu quốc gia về đất đai được vận hành.",
+                  "Bản chính": "1",
+                  "Bản sao": "1",
+                  "Tệp đính kèm": "Không có"
+                },
+                {
+                  "Tên giấy tờ": "Giấy chứng nhận quyền sử dụng đất, quyền sở hữu tài sản gắn liền với đất được cấp theo quy định của pháp luật về đất đai qua các thời kỳ. Trường hợp Giấy chứng nhận quyền sử dụng đất đã có trong Cơ sở dữ liệu quốc gia về đất đai thì các thông tin này được thay thế bằng dữ liệu khi Cơ sở dữ liệu quốc gia về đất đai được vận hành.",
+                  "Bản chính": "1",
+                  "Bản sao": "1",
+                  "Tệp đính kèm": "Không có"
+                },
+                {
+                  "Tên giấy tờ": "- Hồ sơ thiết kế xây dựng:  + Đối với nhà ở riêng lẻ của hộ gia đình, cá nhân: 02 bộ bản vẽ thiết kế xây dựng kèm theo; kết quả thực hiện thủ tục hành chính theo quy định của pháp luật về phòng cháy, chữa cháy; báo cáo kết quả thẩm tra thiết kế xây dựng trong trường hợp pháp luật về xây dựng có yêu cầu, gồm: bản vẽ mặt bằng công trình trên lô đất kèm theo sơ đồ vị trí công trình; bản vẽ mặt bằng các tầng, các mặt đứng và mặt cắt chính của công trình; bản vẽ mặt bằng móng và mặt cắt móng kèm theo sơ đồ đấu nối hệ thống hạ tầng kỹ thuật bên ngoài công trình gồm cấp nước, thoát nước, cấp điện; bản cam kết bảo đảm an toàn đối với công trình liền kề (đối với công trình xây dựng có công trình liền kề); +  Đối với nhà ở riêng lẻ của tổ chức: 02 bộ bản vẽ thiết kế xây dựng trong hồ sơ thiết kế xây dựng triển khai sau thiết kế cơ sở (thiết kế bản vẽ thi công đối với dự án chỉ yêu cầu lập Báo cáo kinh tế - kỹ thuật) được phê duyệt theo quy định của pháp luật về xây dựng kèm theo kết quả thực hiện thủ tục hành chính theo quy định của pháp luật về phòng cháy, chữa cháy; báo cáo kết quả thẩm tra thiết kế xây dựng trong trường hợp pháp luật về xây dựng có yêu cầu, gồm: bản vẽ mặt bằng công trình trên lô đất kèm theo sơ đồ vị trí công trình; bản vẽ mặt bằng các tầng, các mặt đứng và mặt cắt chính của công trình; bản vẽ mặt bằng móng và mặt cắt móng kèm theo sơ đồ đấu nối hệ thống hạ tầng kỹ thuật bên ngoài công trình gồm cấp nước, thoát nước, cấp điện; bản cam kết bảo đảm an toàn đối với công trình liền kề (đối với công trình xây dựng có công trình liền kề).",
+                  "Bản chính": "2",
+                  "Bản sao": "2",
+                  "Tệp đính kèm": "Không có"
+                }
+              ]
+            }
+          ],
+          "result_items": [
+            "Giấy phép xây dựng kèm theo hồ sơ thiết kế trình xin cấp giấy phép xây dựng có đóng dấu của cơ quan có thẩm quyền cấp giấy phép xây dựng.. (Mã: `KQ.G17.000311`)"
+          ]
+        },
+        {
+          "procedure_code": "1.013229",
+          "procedure_title": "Cấp giấy phép xây dựng sửa chữa, cải tạo đối với công trình cấp III, cấp IV (công trình Không theo tuyến/Theo tuyến trong đô thị/Tín ngưỡng, tôn giáo/Tượng đài, tranh hoành tráng/Theo giai đoạn cho công trình không theo tuyến/Theo giai đoạn cho công trình theo tuyến trong đô thị/Dự án) và nhà ở riêng lẻ:",
+          "subdomain_key": "xay_dung_cong_trinh_nha_o",
+          "subdomain_label": "Xây dựng công trình, nhà ở",
+          "event_id": 313,
+          "field": "Hoạt động xây dựng",
+          "agency": "Ủy ban nhân dân cấp xã",
+          "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bfe-909c-759d-9dc9-416500074f0f",
+          "raw_data_file": "C:\\Users\\ku060\\Downloads\\VAIC source\\data-pipeline\\raw_data\\1_013229\\1_013229_procedure_detail.md",
+          "raw_data_available": true,
+          "operation_group": "cap_phep_sua_chua_cai_tao",
+          "operation_key": "cap_giay_phep_xay_dung_sua_chua_cai_tao_doi_voi_cong_trinh_cap_iii_cap_iv_cong_trinh_khong_theo_tuyen_theo_tuyen_trong_do_thi_tin_nguong_ton_giao_tuong_dai_tranh_hoanh_trang_theo_giai_doan_cho_cong_trinh_khong_theo_tuyen_theo_giai_doan_cho_cong_trinh_theo_tuyen_trong_do_thi_du_an_va_nha_o_rieng_le",
+          "overview": "1. - Chủ đầu tư nộp bộ hồ sơ đề nghị cấp giấy phép sửa chữa, cải tạo công trình cho Trung tâm phục vụ hành chính công cấp xã. - Trong thời hạn 07 ngày làm việc kể từ ngày tiếp nhận hồ sơ, cơ quan có thẩm quyền cấp giấy phép xây dựng sửa chữa, cải tạo công trình phải tổ chức thẩm định hồ sơ, kiểm tra thực địa, thông báo 1 lần bằng văn bản cho chủ đầu tư bổ sung, hoàn thiện hồ sơ nếu tài liệu còn thiếu, tài liệu không đúng quy định hoặc không đúng thực tế. - Trong thời hạn 05 ngày làm việc kể từ ngày nhận bổ sung hồ sơ nhưng chưa đáp ứng được yêu cầu theo văn bản thông báo, cơ quan có thẩm quyền cấp giấy phép xây dựng sửa chữa, cải tạo công trình có trách nhiệm thông báo bằng văn bản hướng dẫn cho chủ đầu tư tiếp tục hoàn thiện hồ sơ. Trường hợp việc bổ sung hồ sơ vẫn không đáp ứng được các nội dung theo thông báo thì trong thời hạn 03 ngày làm việc kể từ ngày nhận hồ sơ bổ sung, cơ quan có thẩm quyền cấp giấy phép xây dựng có trách nhiệm thông báo đến chủ đầu tư về lý do không cấp giấy phép xây dựng. - Cơ quan có thẩm quyền cấp giấy phép sửa chữa, cải tạo công trình xây dựng đối chiếu các điều kiện theo quy định của Luật Xây dựng để gửi văn bản lấy ý kiến của cơ quan quản lý nhà nước liên quan. Trong thời gian 12 ngày kể từ ngày nhận được hồ sơ, các cơ quan quản lý nhà nước được hỏi ý kiến có trách nhiệm trả lời bằng văn bản về những nội dung thuộc chức năng quản lý của mình. Sau thời hạn trên, nếu các cơ quan này không có ý kiến thì được coi là đã đồng ý và phải chịu trách nhiệm về những nội dung thuộc chức năng quản lý của mình; cơ quan cấp giấy phép xây dựng căn cứ các quy định hiện hành để quyết định việc cấp giấy phép sửa chữa, cải tạo công trình xây dựng. - Trong thời hạn 10 ngày (hoặc 7 ngày đối với nhà ở riêng lẻ) kể từ ngày nhận đủ hồ sơ hợp lệ, cơ quan có thẩm quyền có trách nhiệm xem xét cấp giấy phép sửa chữa, cải tạo công trình xây dựng.",
+          "procedure_flow": "1. - Chủ đầu tư nộp bộ hồ sơ đề nghị cấp giấy phép sửa chữa, cải tạo công trình cho Trung tâm phục vụ hành chính công cấp xã. - Trong thời hạn 07 ngày làm việc kể từ ngày tiếp nhận hồ sơ, cơ quan có thẩm quyền cấp giấy phép xây dựng sửa chữa, cải tạo công trình phải tổ chức thẩm định hồ sơ, kiểm tra thực địa, thông báo 1 lần bằng văn bản cho chủ đầu tư bổ sung, hoàn thiện hồ sơ nếu tài liệu còn thiếu, tài liệu không đúng quy định hoặc không đúng thực tế. - Trong thời hạn 05 ngày làm việc kể từ ngày nhận bổ sung hồ sơ nhưng chưa đáp ứng được yêu cầu theo văn bản thông báo, cơ quan có thẩm quyền cấp giấy phép xây dựng sửa chữa, cải tạo công trình có trách nhiệm thông báo bằng văn bản hướng dẫn cho chủ đầu tư tiếp tục hoàn thiện hồ sơ. Trường hợp việc bổ sung hồ sơ vẫn không đáp ứng được các nội dung theo thông báo thì trong thời hạn 03 ngày làm việc kể từ ngày nhận hồ sơ bổ sung, cơ quan có thẩm quyền cấp giấy phép xây dựng có trách nhiệm thông báo đến chủ đầu tư về lý do không cấp giấy phép xây dựng. - Cơ quan có thẩm quyền cấp giấy phép sửa chữa, cải tạo công trình xây dựng đối chiếu các điều kiện theo quy định của Luật Xây dựng để gửi văn bản lấy ý kiến của cơ quan quản lý nhà nước liên quan. Trong thời gian 12 ngày kể từ ngày nhận được hồ sơ, các cơ quan quản lý nhà nước được hỏi ý kiến có trách nhiệm trả lời bằng văn bản về những nội dung thuộc chức năng quản lý của mình. Sau thời hạn trên, nếu các cơ quan này không có ý kiến thì được coi là đã đồng ý và phải chịu trách nhiệm về những nội dung thuộc chức năng quản lý của mình; cơ quan cấp giấy phép xây dựng căn cứ các quy định hiện hành để quyết định việc cấp giấy phép sửa chữa, cải tạo công trình xây dựng. - Trong thời hạn 10 ngày (hoặc 7 ngày đối với nhà ở riêng lẻ) kể từ ngày nhận đủ hồ sơ hợp lệ, cơ quan có thẩm quyền có trách nhiệm xem xét cấp giấy phép sửa chữa, cải tạo công trình xây dựng.",
+          "requirements": "Không có thông tin",
+          "submission_methods": [
+            "Trực tuyến",
+            "Dịch vụ bưu chính",
+            "Trực tiếp"
+          ],
+          "processing_time_values": [
+            "10 ngày làm việc",
+            "10 ngày làm việc",
+            "10 ngày làm việc"
+          ],
+          "document_groups": [
+            {
+              "group_name": "(1.1) Đối với công trình không theo tuyến:",
+              "documents": [
+                {
+                  "Tên giấy tờ": "- Bản vẽ hiện trạng của các bộ phận công trình dự kiến sửa chữa, cải tạo đã được phê duyệt theo quy định có tỷ lệ tương ứng với tỷ lệ các bản vẽ của hồ sơ đề nghị cấp phép sửa chữa, cải tạo và ảnh chụp (kích thước tối thiểu 10 x 15 cm) hiện trạng công trình và công trình lân cận trước khi sửa chữa, cải tạo.",
+                  "Bản chính": "1",
+                  "Bản sao": "1",
+                  "Tệp đính kèm": "Không có"
+                },
+                {
+                  "Tên giấy tờ": "- Một trong những loại giấy tờ hợp pháp về đất đai để cấp phép xây dựng theo quy định tại Điều 53 Nghị số 175/2024/NĐ-CP bao gồm: +  Giấy chứng nhận quyền sử dụng đất được cấp theo quy định của Luật Đất đai qua các thời kỳ. + Giấy chứng nhận quyền sử dụng đất, quyền sở hữu tài sản gắn liền với đất được cấp theo quy định của pháp luật về đất đai qua các thời kỳ.  + Giấy chứng nhận quyền sở hữu nhà ở và quyền sử dụng đất ở được cấp theo quy định của pháp luật về đất đai, pháp luật về nhà ở qua các thời kỳ. + Giấy chứng nhận quyền sở hữu nhà ở; giấy chứng nhận quyền sở hữu công trình xây dựng đã được cấp theo quy định của pháp luật về đất đai, pháp luật về nhà ở, pháp luật về xây dựng qua các thời kỳ. + Các loại giấy tờ đủ điều kiện để cấp giấy chứng nhận quyền sử dụng đất, quyền sở hữu nhà ở và tài sản khác gắn liền với đất nhưng chưa được cấp giấy chứng nhận gồm: Các loại giấy tờ quy định tại Điều 137 của Luật đất đai năm 2024; hoặc giấy xác nhận của Ủy ban nhân dân cấp xã và được tổ chức đăng ký đất đai xác nhận đủ điều kiện để cấp giấy chứng nhận quyền sử dụng đất, quyền sở hữu nhà ở và tài sản khác gắn liền với đất theo quy định của pháp luật về đất đai. + Giấy tờ về đất đai đối với trường hợp được Nhà nước giao đất, cho thuê đất, chuyển mục đích sử dụng đất từ sau ngày 01 tháng 7 năm 2004 nhưng không có giấy chứng nhận quyền sử dụng đất, quyền sở hữu nhà ở và tài sản khác gắn liền với đất theo quy định của pháp luật về đất đai, gồm: Quyết định giao đất của cơ quan nhà nước có thẩm quyền hoặc Quyết định cho thuê đất của cơ quan nhà nước có thẩm quyền và hợp đồng thuê đất kèm theo (nếu có) hoặc giấy tờ về trúng đấu giá quyền sử dụng đất, đấu thầu dự án có sử dụng đất. + Báo cáo hiện trạng sử dụng đất đối với trường hợp tổ chức, cơ sở tôn giáo đang sử dụng mà chưa được cấp giấy chứng nhận quyền sử dụng đất, quyền sở hữu nhà ở và tài sản khác gắn liền với đất được Ủy ban nhân dân cấp tỉnh nơi có đất kiểm tra thực tế sử dụng và xử lý theo quy định tại Điều 142, Điều 145 Luật Đất đai năm 2024. + Giấy tờ về việc xếp hạng di tích lịch sử - văn hóa, danh lam thắng cảnh hoặc danh mục kiểm kê di tích theo quy định của pháp luật về di sản văn hoá của Uỷ ban nhân dân cấp tỉnh đối với trường hợp cấp giấy phép xây dựng để thực hiện xây dựng mới, sửa chữa, cải tạo hoặc di dời các công trình di tích lịch sử - văn hóa, danh lam thắng cảnh nhưng chưa được cấp giấy chứng nhận quyền sử dụng đất, quyền sở hữu nhà ở và tài sản khác gắn liền với đất theo quy định.  + Văn bản chấp thuận về địa điểm xây dựng của Ủy ban nhân dân cấp xã đối với công trình xây dựng biển quảng cáo, trạm viễn thông, cột ăng-ten và các công trình tương tự khác theo quy định của pháp luật có liên quan tại khu vực không thuộc nhóm đất có mục đích sử dụng để xây dựng đối với loại công trình này và không được chuyển đổi mục đích sử dụng đất.  + Giấy tờ hợp pháp về đất đai của chủ rừng và hợp đồng cho thuê môi trường rừng giữa chủ rừng và tổ chức, cá nhân thực hiện dự án du lịch sinh thái, nghỉ dưỡng, giải trí theo quy định của pháp luật về lâm nghiệp. + Giấy chứng nhận quyền sử dụng đất hoặc quyết định giao đất hoặc quyết định cho thuê đất của cơ quan nhà nước có thẩm quyền có mục đích sử dụng đất chính đối với trường hợp xây dựng công trình trên đất được sử dụng kết hợp đa mục đích theo quy định tại Điều 218 của Luật Đất đai năm 2024. + Hợp đồng thuê đất được giữa chủ đầu tư xây dựng công trình và người quản lý, sử dụng công trình giao thông hoặc văn bản chấp thuận của cơ quan quản lý nhà nước có thẩm quyền về giao thông đối với công trình được phép xây dựng trong phạm vi đất dành cho giao thông theo quy định của pháp luật. + Văn bản của cơ quan nhà nước có thẩm quyền đã cấp giấy chứng nhận quyền sử dụng đất (theo đề nghị của cơ quan cấp giấy phép xây dựng) xác định diện tích các loại đất đối với trường hợp người sử dụng đất có một trong các loại giấy tờ hợp pháp về đất đai theo quy định tại các khoản 1, 2, 3, 4 và 5 Điều 53 Nghị định số 175/2024/NĐ-CP nhưng trên các giấy tờ đó không ghi rõ diện tích các loại đất để làm cơ sở cấp giấy phép xây dựng. + Trường hợp chủ đầu tư thuê đất hoặc thuê công trình, bộ phận công trình của chủ sử dụng đất, chủ sở hữu công trình để đầu tư xây dựng thì ngoài một trong các giấy tờ nêu trên, người đề nghị cấp giấy phép xây dựng bổ sung hợp đồng hợp pháp về việc thuê đất hoặc thuê công trình, bộ phận công trình tương ứng. + Các giấy tờ hợp pháp khác theo quy định của pháp luật về đất đai.",
+                  "Bản chính": "1",
+                  "Bản sao": "1",
+                  "Tệp đính kèm": "Không có"
+                },
+                {
+                  "Tên giấy tờ": "Giấy chứng nhận quyền sử dụng đất, quyền sở hữu tài sản gắn liền với đất được cấp theo quy định của pháp luật về đất đai qua các thời kỳ. Trường hợp Giấy chứng nhận quyền sử dụng đất đã có trong Cơ sở dữ liệu quốc gia về đất đai thì các thông tin này được thay thế bằng dữ liệu khi Cơ sở dữ liệu quốc gia về đất đai được vận hành.",
+                  "Bản chính": "1",
+                  "Bản sao": "1",
+                  "Tệp đính kèm": "Không có"
+                },
+                {
+                  "Tên giấy tờ": "-   Đơn đề nghị cấp giấy phép sửa chữa, cải tạo công trình theo Mẫu số 1 Phụ lục số II Nghị định số 175/2024/NĐ-CP ngày 30/12/2024 của Chính phủ.",
+                  "Bản chính": "1",
+                  "Bản sao": "1",
+                  "Tệp đính kèm": "Không có"
+                },
+                {
+                  "Tên giấy tờ": "Giấy chứng nhận quyền sở hữu nhà ở và quyền sử dụng đất ở được cấp theo quy định của pháp luật về đất đai, pháp luật về nhà ở qua các thời kỳ. Trường hợp Giấy chứng nhận quyền sử dụng đất đã có trong Cơ sở dữ liệu quốc gia về đất đai thì các thông tin này được thay thế bằng dữ liệu khi Cơ sở dữ liệu quốc gia về đất đai được vận hành.",
+                  "Bản chính": "1",
+                  "Bản sao": "1",
+                  "Tệp đính kèm": "Không có"
+                },
+                {
+                  "Tên giấy tờ": "-  02  bộ bản  vẽ thiết kế xây  dựng trong hồ sơ thiết kế xây dựng triển khai sau thiết kế cơ sở (thiết kế bản vẽ thi công đối với dự án chỉ yêu cầu lập Báo cáo kinh tế - kỹ thuật) được phê duyệt hoặc đóng dấu xác nhận theo quy định của pháp luật về xây dựng, gồm: bản vẽ tổng mặt bằng toàn dự án, mặt bằng định vị công trình trên lô đất; bản vẽ kiến trúc các mặt bằng, các mặt đứng và mặt cắt chủ yếu của công trình; bản vẽ mặt bằng, mặt cắt móng; các bản vẽ thể hiện giải pháp kết cấu chính của công trình; bản vẽ mặt bằng đấu nối với hệ thống hạ tầng kỹ thuật bên ngoài công trình, dự án.",
+                  "Bản chính": "1",
+                  "Bản sao": "1",
+                  "Tệp đính kèm": "Không có"
+                },
+                {
+                  "Tên giấy tờ": "Giấy chứng nhận quyền sử dụng đất được cấp theo quy định của Luật Đất đai qua các thời kỳ. Trường hợp Giấy chứng nhận quyền sử dụng đất đã có trong Cơ sở dữ liệu quốc gia về đất đai thì các thông tin này được thay thế bằng dữ liệu khi Cơ sở dữ liệu quốc gia về đất đai được vận hành.",
+                  "Bản chính": "1",
+                  "Bản sao": "1",
+                  "Tệp đính kèm": "Không có"
+                },
+                {
+                  "Tên giấy tờ": "- Quyết định phê duyệt dự án; văn bản thông báo kết quả thẩm định của cơ quan chuyên môn về xây dựng và hồ sơ bản vẽ thiết kế cơ sở được đóng dấu xác nhận kèm theo (nếu có); báo cáo kết quả thẩm tra thiết kế xây dựng (nếu có) theo quy định tại khoản 5 Điều 43 Nghị định số 175/2024/NĐ-CP, Nghị định số 105/2025/NĐ-CP và Nghị định số 144/2025/NĐ-CP; kết quả thủ tục hành chính theo quy định của pháp luật về phòng cháy và chữa cháy đối với hồ sơ thiết kế đề nghị cấp giấy phép xây dựng; kết quả thực hiện thủ tục về bảo vệ môi trường theo quy định của pháp luật về bảo vệ môi trường (đối với trường hợp không thẩm định báo cáo nghiên cứu khả thi đầu tư xây dựng tại cơ quan chuyên môn về xây dựng).",
+                  "Bản chính": "1",
+                  "Bản sao": "1",
+                  "Tệp đính kèm": "Không có"
+                }
+              ]
+            },
+            {
+              "group_name": "(1.2) Đối với công trình theo tuyến:",
+              "documents": [
+                {
+                  "Tên giấy tờ": "- Một trong những giấy tờ hợp pháp về đất đai chứng minh sự phù hợp mục đích sử dụng đất và sở hữu công trình để cấp phép xây dựng theo quy định tại Điều 53 của Nghị định số 175/2024/NĐ-CP bao gồm:  +  Giấy chứng nhận quyền sử dụng đất được cấp theo quy định của Luật Đất đai qua các thời kỳ. + Giấy chứng nhận quyền sử dụng đất, quyền sở hữu tài sản gắn liền với đất được cấp theo quy định của pháp luật về đất đai qua các thời kỳ.  + Giấy chứng nhận quyền sở hữu nhà ở và quyền sử dụng đất ở được cấp theo quy định của pháp luật về đất đai, pháp luật về nhà ở qua các thời kỳ. + Giấy chứng nhận quyền sở hữu nhà ở; giấy chứng nhận quyền sở hữu công trình xây dựng đã được cấp theo quy định của pháp luật về đất đai, pháp luật về nhà ở, pháp luật về xây dựng qua các thời kỳ. + Các loại giấy tờ đủ điều kiện để cấp giấy chứng nhận quyền sử dụng đất, quyền sở hữu nhà ở và tài sản khác gắn liền với đất nhưng chưa được cấp giấy chứng nhận gồm: Các loại giấy tờ quy định tại Điều 137 của Luật đất đai năm 2024; hoặc giấy xác nhận của Ủy ban nhân dân cấp xã và được tổ chức đăng ký đất đai xác nhận đủ điều kiện để cấp giấy chứng nhận quyền sử dụng đất, quyền sở hữu nhà ở và tài sản khác gắn liền với đất theo quy định của pháp luật về đất đai. + Giấy tờ về đất đai đối với trường hợp được Nhà nước giao đất, cho thuê đất, chuyển mục đích sử dụng đất từ sau ngày 01 tháng 7 năm 2004 nhưng không có giấy chứng nhận quyền sử dụng đất, quyền sở hữu nhà ở và tài sản khác gắn liền với đất theo quy định của pháp luật về đất đai, gồm: Quyết định giao đất của cơ quan nhà nước có thẩm quyền hoặc Quyết định cho thuê đất của cơ quan nhà nước có thẩm quyền và hợp đồng thuê đất kèm theo (nếu có) hoặc giấy tờ về trúng đấu giá quyền sử dụng đất, đấu thầu dự án có sử dụng đất. + Báo cáo hiện trạng sử dụng đất đối với trường hợp tổ chức, cơ sở tôn giáo đang sử dụng mà chưa được cấp giấy chứng nhận quyền sử dụng đất, quyền sở hữu nhà ở và tài sản khác gắn liền với đất được Ủy ban nhân dân cấp tỉnh nơi có đất kiểm tra thực tế sử dụng và xử lý theo quy định tại Điều 142, Điều 145 Luật Đất đai năm 2024. + Giấy tờ về việc xếp hạng di tích lịch sử - văn hóa, danh lam thắng cảnh hoặc danh mục kiểm kê di tích theo quy định của pháp luật về di sản văn hoá của Uỷ ban nhân dân cấp tỉnh đối với trường hợp cấp giấy phép xây dựng để thực hiện xây dựng mới, sửa chữa, cải tạo hoặc di dời các công trình di tích lịch sử - văn hóa, danh lam thắng cảnh nhưng chưa được cấp giấy chứng nhận quyền sử dụng đất, quyền sở hữu nhà ở và tài sản khác gắn liền với đất theo quy định.  + Văn bản chấp thuận về địa điểm xây dựng của Ủy ban nhân dân cấp xã đối với công trình xây dựng biển quảng cáo, trạm viễn thông, cột ăng-ten và các công trình tương tự khác theo quy định của pháp luật có liên quan tại khu vực không thuộc nhóm đất có mục đích sử dụng để xây dựng đối với loại công trình này và không được chuyển đổi mục đích sử dụng đất.  + Giấy tờ hợp pháp về đất đai của chủ rừng và hợp đồng cho thuê môi trường rừng giữa chủ rừng và tổ chức, cá nhân thực hiện dự án du lịch sinh thái, nghỉ dưỡng, giải trí theo quy định của pháp luật về lâm nghiệp. + Giấy chứng nhận quyền sử dụng đất hoặc quyết định giao đất hoặc quyết định cho thuê đất của cơ quan nhà nước có thẩm quyền có mục đích sử dụng đất chính đối với trường hợp xây dựng công trình trên đất được sử dụng kết hợp đa mục đích theo quy định tại Điều 218 của Luật Đất đai năm 2024. + Hợp đồng thuê đất được giữa chủ đầu tư xây dựng công trình và người quản lý, sử dụng công trình giao thông hoặc văn bản chấp thuận của cơ quan quản lý nhà nước có thẩm quyền về giao thông đối với công trình được phép xây dựng trong phạm vi đất dành cho giao thông theo quy định của pháp luật. + Văn bản của cơ quan nhà nước có thẩm quyền đã cấp giấy chứng nhận quyền sử dụng đất (theo đề nghị của cơ quan cấp giấy phép xây dựng) xác định diện tích các loại đất đối với trường hợp người sử dụng đất có một trong các loại giấy tờ hợp pháp về đất đai theo quy định tại các khoản 1, 2, 3, 4 và 5 Điều 53 Nghị định số 175/2024/NĐ-CP nhưng trên các giấy tờ đó không ghi rõ diện tích các loại đất để làm cơ sở cấp giấy phép xây dựng. + Trường hợp chủ đầu tư thuê đất hoặc thuê công trình, bộ phận công trình của chủ sử dụng đất, chủ sở hữu công trình để đầu tư xây dựng thì ngoài một trong các giấy tờ nêu trên, người đề nghị cấp giấy phép xây dựng bổ sung hợp đồng hợp pháp về việc thuê đất hoặc thuê công trình, bộ phận công trình tương ứng. + Các giấy tờ hợp pháp khác theo quy định của pháp luật về đất đai.",
+                  "Bản chính": "1",
+                  "Bản sao": "1",
+                  "Tệp đính kèm": "Không có"
+                },
+                {
+                  "Tên giấy tờ": "Giấy chứng nhận quyền sử dụng đất, quyền sở hữu tài sản gắn liền với đất được cấp theo quy định của pháp luật về đất đai qua các thời kỳ. Trường hợp Giấy chứng nhận quyền sử dụng đất đã có trong Cơ sở dữ liệu quốc gia về đất đai thì các thông tin này được thay thế bằng dữ liệu khi Cơ sở dữ liệu quốc gia về đất đai được vận hành.",
+                  "Bản chính": "1",
+                  "Bản sao": "1",
+                  "Tệp đính kèm": "Không có"
+                },
+                {
+                  "Tên giấy tờ": "- Quyết định phê duyệt dự án; văn bản thông báo kết quả thẩm định của cơ quan chuyên môn về xây dựng và hồ sơ bản vẽ thiết kế cơ sở được đóng dấu xác nhận kèm theo (nếu có); báo cáo kết quả thẩm tra thiết kế xây dựng (nếu có) theo quy định tại khoản 5 Điều 43 Nghị định số 175/2024/NĐ-CP, Nghị định số 105/2025/NĐ-CP và Nghị định số 144/2025/NĐ-CP; kết quả thực hiện thủ tục hành chính theo quy định của pháp luật về phòng cháy, chữa cháy đối với hồ sơ thiết kế đề nghị cấp giấy phép xây dựng; kết quả thực hiện thủ tục hành chính về bảo vệ môi trường theo quy định của pháp luật về bảo vệ môi trường (đối với trường hợp không thẩm định báo cáo nghiên cứu khả thi đầu tư xây dựng tại cơ quan chuyên môn về xây dựng).",
+                  "Bản chính": "1",
+                  "Bản sao": "1",
+                  "Tệp đính kèm": "Không có"
+                },
+                {
+                  "Tên giấy tờ": "Giấy chứng nhận quyền sử dụng đất được cấp theo quy định của Luật Đất đai qua các thời kỳ. Trường hợp Giấy chứng nhận quyền sử dụng đất đã có trong Cơ sở dữ liệu quốc gia về đất đai thì các thông tin này được thay thế bằng dữ liệu khi Cơ sở dữ liệu quốc gia về đất đai được vận hành.",
+                  "Bản chính": "1",
+                  "Bản sao": "1",
+                  "Tệp đính kèm": "Không có"
+                },
+                {
+                  "Tên giấy tờ": "- Văn bản chấp thuận của cơ quan nhà nước có thẩm quyền về vị trí và phương án tuyến hoặc Quyết định thu hồi đất của cơ quan nhà nước có thẩm quyền theo quy định của pháp luật về đất đai.",
+                  "Bản chính": "1",
+                  "Bản sao": "1",
+                  "Tệp đính kèm": "Không có"
+                },
+                {
+                  "Tên giấy tờ": "Giấy chứng nhận quyền sở hữu nhà ở và quyền sử dụng đất ở được cấp theo quy định của pháp luật về đất đai, pháp luật về nhà ở qua các thời kỳ. Trường hợp Giấy chứng nhận quyền sử dụng đất đã có trong Cơ sở dữ liệu quốc gia về đất đai thì các thông tin này được thay thế bằng dữ liệu khi Cơ sở dữ liệu quốc gia về đất đai được vận hành.",
+                  "Bản chính": "1",
+                  "Bản sao": "1",
+                  "Tệp đính kèm": "Không có"
+                },
+                {
+                  "Tên giấy tờ": "- 02 bộ bản vẽ thiết kế xây dựng trong hồ sơ thiết kế xây dựng triển khai sau thiết kế cơ sở (thiết kế bản vẽ thi công đối với dự án chỉ yêu cầu lập Báo cáo kinh tế - kỹ thuật) được phê duyệt hoặc đóng dấu xác nhận theo quy định của pháp luật về xây dựng, gồm: bản vẽ tổng mặt bằng toàn dự án, mặt bằng định vị công trình trên lô đất; bản vẽ kiến trúc các mặt bằng, các mặt đứng và mặt cắt chủ yếu của công trình; bản vẽ mặt bằng, mặt cắt móng; các bản vẽ thể hiện giải pháp kết cấu chính của công trình; bản vẽ mặt bằng đấu nối với hệ thống hạ tầng kỹ thuật bên ngoài công trình, dự án.",
+                  "Bản chính": "1",
+                  "Bản sao": "1",
+                  "Tệp đính kèm": "Không có"
+                },
+                {
+                  "Tên giấy tờ": "- Đơn đề nghị cấp giấy phép sửa chữa, cải tạo công trình theo   Mẫu số 1 Phụ lục số II Nghị định số 175/2024/NĐ-CP ngày 30/12/2024 của Chính phủ.",
+                  "Bản chính": "1",
+                  "Bản sao": "1",
+                  "Tệp đính kèm": "Không có"
+                }
+              ]
+            },
+            {
+              "group_name": "(1.3) Đối với công trình tôn giáo:",
+              "documents": [
+                {
+                  "Tên giấy tờ": "- 02 bộ bản vẽ thiết kế xây dựng trong hồ sơ thiết kế xây dựng triển khai sau thiết kế cơ sở (thiết kế bản vẽ thi công đối với dự án chỉ yêu cầu lập Báo cáo kinh tế - kỹ thuật) được phê duyệt hoặc đóng dấu xác nhận theo quy định của pháp luật về xây dựng, gồm: bản vẽ tổng mặt bằng toàn dự án, mặt bằng định vị công trình trên lô đất; bản vẽ kiến trúc các mặt bằng, các mặt đứng và mặt cắt chủ yếu của công trình; bản vẽ mặt bằng, mặt cắt móng; các bản vẽ thể hiện giải pháp kết cấu chính của công trình; bản vẽ mặt bằng đấu nối với hệ thống hạ tầng kỹ thuật bên ngoài công trình, dự án.",
+                  "Bản chính": "1",
+                  "Bản sao": "1",
+                  "Tệp đính kèm": "Không có"
+                },
+                {
+                  "Tên giấy tờ": "- Một trong những giấy tờ hợp pháp về đất đai chứng minh sự phù hợp mục đích sử dụng đất và sở hữu công trình để cấp phép xây dựng theo quy định tại Điều 53 của Nghị định số 175/2024/NĐ-CP bao gồm:  +  Giấy chứng nhận quyền sử dụng đất được cấp theo quy định của Luật Đất đai qua các thời kỳ. + Giấy chứng nhận quyền sử dụng đất, quyền sở hữu tài sản gắn liền với đất được cấp theo quy định của pháp luật về đất đai qua các thời kỳ.  + Giấy chứng nhận quyền sở hữu nhà ở và quyền sử dụng đất ở được cấp theo quy định của pháp luật về đất đai, pháp luật về nhà ở qua các thời kỳ. + Giấy chứng nhận quyền sở hữu nhà ở; giấy chứng nhận quyền sở hữu công trình xây dựng đã được cấp theo quy định của pháp luật về đất đai, pháp luật về nhà ở, pháp luật về xây dựng qua các thời kỳ. + Các loại giấy tờ đủ điều kiện để cấp giấy chứng nhận quyền sử dụng đất, quyền sở hữu nhà ở và tài sản khác gắn liền với đất nhưng chưa được cấp giấy chứng nhận gồm: Các loại giấy tờ quy định tại Điều 137 của Luật đất đai năm 2024; hoặc giấy xác nhận của Ủy ban nhân dân cấp xã và được tổ chức đăng ký đất đai xác nhận đủ điều kiện để cấp giấy chứng nhận quyền sử dụng đất, quyền sở hữu nhà ở và tài sản khác gắn liền với đất theo quy định của pháp luật về đất đai. + Giấy tờ về đất đai đối với trường hợp được Nhà nước giao đất, cho thuê đất, chuyển mục đích sử dụng đất từ sau ngày 01 tháng 7 năm 2004 nhưng không có giấy chứng nhận quyền sử dụng đất, quyền sở hữu nhà ở và tài sản khác gắn liền với đất theo quy định của pháp luật về đất đai, gồm: Quyết định giao đất của cơ quan nhà nước có thẩm quyền hoặc Quyết định cho thuê đất của cơ quan nhà nước có thẩm quyền và hợp đồng thuê đất kèm theo (nếu có) hoặc giấy tờ về trúng đấu giá quyền sử dụng đất, đấu thầu dự án có sử dụng đất. + Báo cáo hiện trạng sử dụng đất đối với trường hợp tổ chức, cơ sở tôn giáo đang sử dụng mà chưa được cấp giấy chứng nhận quyền sử dụng đất, quyền sở hữu nhà ở và tài sản khác gắn liền với đất được Ủy ban nhân dân cấp tỉnh nơi có đất kiểm tra thực tế sử dụng và xử lý theo quy định tại Điều 142, Điều 145 Luật Đất đai năm 2024. + Giấy tờ về việc xếp hạng di tích lịch sử - văn hóa, danh lam thắng cảnh hoặc danh mục kiểm kê di tích theo quy định của pháp luật về di sản văn hoá của Uỷ ban nhân dân cấp tỉnh đối với trường hợp cấp giấy phép xây dựng để thực hiện xây dựng mới, sửa chữa, cải tạo hoặc di dời các công trình di tích lịch sử - văn hóa, danh lam thắng cảnh nhưng chưa được cấp giấy chứng nhận quyền sử dụng đất, quyền sở hữu nhà ở và tài sản khác gắn liền với đất theo quy định.  + Văn bản chấp thuận về địa điểm xây dựng của Ủy ban nhân dân cấp xã đối với công trình xây dựng biển quảng cáo, trạm viễn thông, cột ăng-ten và các công trình tương tự khác theo quy định của pháp luật có liên quan tại khu vực không thuộc nhóm đất có mục đích sử dụng để xây dựng đối với loại công trình này và không được chuyển đổi mục đích sử dụng đất.  + Giấy tờ hợp pháp về đất đai của chủ rừng và hợp đồng cho thuê môi trường rừng giữa chủ rừng và tổ chức, cá nhân thực hiện dự án du lịch sinh thái, nghỉ dưỡng, giải trí theo quy định của pháp luật về lâm nghiệp. + Giấy chứng nhận quyền sử dụng đất hoặc quyết định giao đất hoặc quyết định cho thuê đất của cơ quan nhà nước có thẩm quyền có mục đích sử dụng đất chính đối với trường hợp xây dựng công trình trên đất được sử dụng kết hợp đa mục đích theo quy định tại Điều 218 của Luật Đất đai năm 2024. + Hợp đồng thuê đất được giữa chủ đầu tư xây dựng công trình và người quản lý, sử dụng công trình giao thông hoặc văn bản chấp thuận của cơ quan quản lý nhà nước có thẩm quyền về giao thông đối với công trình được phép xây dựng trong phạm vi đất dành cho giao thông theo quy định của pháp luật. + Văn bản của cơ quan nhà nước có thẩm quyền đã cấp giấy chứng nhận quyền sử dụng đất (theo đề nghị của cơ quan cấp giấy phép xây dựng) xác định diện tích các loại đất đối với trường hợp người sử dụng đất có một trong các loại giấy tờ hợp pháp về đất đai theo quy định tại các khoản 1, 2, 3, 4 và 5 Điều 53 Nghị định số 175/2024/NĐ-CP nhưng trên các giấy tờ đó không ghi rõ diện tích các loại đất để làm cơ sở cấp giấy phép xây dựng. + Trường hợp chủ đầu tư thuê đất hoặc thuê công trình, bộ phận công trình của chủ sử dụng đất, chủ sở hữu công trình để đầu tư xây dựng thì ngoài một trong các giấy tờ nêu trên, người đề nghị cấp giấy phép xây dựng bổ sung hợp đồng hợp pháp về việc thuê đất hoặc thuê công trình, bộ phận công trình tương ứng. + Các giấy tờ hợp pháp khác theo quy định của pháp luật về đất đai.",
+                  "Bản chính": "1",
+                  "Bản sao": "1",
+                  "Tệp đính kèm": "Không có"
+                },
+                {
+                  "Tên giấy tờ": "Giấy chứng nhận quyền sử dụng đất, quyền sở hữu tài sản gắn liền với đất được cấp theo quy định của pháp luật về đất đai qua các thời kỳ. Trường hợp Giấy chứng nhận quyền sử dụng đất đã có trong Cơ sở dữ liệu quốc gia về đất đai thì các thông tin này được thay thế bằng dữ liệu khi Cơ sở dữ liệu quốc gia về đất đai được vận hành.",
+                  "Bản chính": "1",
+                  "Bản sao": "1",
+                  "Tệp đính kèm": "Không có"
+                },
+                {
+                  "Tên giấy tờ": "- Quyết định phê duyệt dự án; văn bản thông báo kết quả thẩm định của cơ quan chuyên môn về xây dựng và hồ sơ bản vẽ thiết kế cơ sở được đóng dấu xác nhận kèm theo (nếu có); báo cáo kết quả thẩm tra thiết kế xây dựng (nếu có) theo quy định tại khoản 5 Điều 43 Nghị định số 175/2024/NĐ-CP, Nghị định số 105/2025/NĐ-CP và Nghị định số 144/2025/NĐ-CP; kết quả thực hiện thủ tục hành chính theo quy định của pháp luật về phòng cháy, chữa cháy đối với hồ sơ thiết kế đề nghị cấp giấy phép xây dựng; kết quả thực hiện thủ tục hành chính về bảo vệ môi trường theo quy định của pháp luật về bảo vệ môi trường (đối với trường hợp không thẩm định báo cáo nghiên cứu khả thi đầu tư xây dựng tại cơ quan chuyên môn về xây dựng).",
+                  "Bản chính": "1",
+                  "Bản sao": "1",
+                  "Tệp đính kèm": "Không có"
+                },
+                {
+                  "Tên giấy tờ": "- Công trình tôn giáo thuộc dự án bảo quản, tu bổ, phục hồi di tích lịch sử - văn hóa, danh lam thắng cảnh, phải bổ sung văn bản về sự cần thiết xây dựng và quy mô công trình của cơ quan quản lý nhà nước về văn hóa theo quy định của pháp luật về di sản văn hóa.",
+                  "Bản chính": "1",
+                  "Bản sao": "1",
+                  "Tệp đính kèm": "Không có"
+                },
+                {
+                  "Tên giấy tờ": "Giấy chứng nhận quyền sở hữu nhà ở và quyền sử dụng đất ở được cấp theo quy định của pháp luật về đất đai, pháp luật về nhà ở qua các thời kỳ. Trường hợp Giấy chứng nhận quyền sử dụng đất đã có trong Cơ sở dữ liệu quốc gia về đất đai thì các thông tin này được thay thế bằng dữ liệu khi Cơ sở dữ liệu quốc gia về đất đai được vận hành.",
+                  "Bản chính": "1",
+                  "Bản sao": "1",
+                  "Tệp đính kèm": "Không có"
+                },
+                {
+                  "Tên giấy tờ": "- Văn bản chấp thuận về sự cần thiết xây dựng và quy mô công trình của cơ quan chuyên môn về tôn giáo thuộc Ủy ban nhân dân cấp tỉnh.",
+                  "Bản chính": "1",
+                  "Bản sao": "1",
+                  "Tệp đính kèm": "Không có"
+                },
+                {
+                  "Tên giấy tờ": "Giấy chứng nhận quyền sử dụng đất được cấp theo quy định của Luật Đất đai qua các thời kỳ. Trường hợp Giấy chứng nhận quyền sử dụng đất đã có trong Cơ sở dữ liệu quốc gia về đất đai thì các thông tin này được thay thế bằng dữ liệu khi Cơ sở dữ liệu quốc gia về đất đai được vận hành.",
+                  "Bản chính": "1",
+                  "Bản sao": "1",
+                  "Tệp đính kèm": "Không có"
+                },
+                {
+                  "Tên giấy tờ": "- Đơn đề nghị cấp giấy phép sửa chữa, cải tạo  công  trình theo Mẫu số 1 Phụ lục số II Nghị định số 175/2024/NĐ-CP ngày 30/12/2024 của Chính phủ.",
+                  "Bản chính": "1",
+                  "Bản sao": "1",
+                  "Tệp đính kèm": "Không có"
+                }
+              ]
+            },
+            {
+              "group_name": "(1.4) Đối với công trình tín ngưỡng:",
+              "documents": [
+                {
+                  "Tên giấy tờ": "- Ý kiến của cơ quan chuyên môn về tín ngưỡng, tôn giáo thuộc Ủy ban nhân dân cấp tỉnh (trường hợp pháp luật về tín ngưỡng, tôn giáo có quy định); báo cáo kết quả thẩm tra thiết kế xây dựng đối với các công trình tín ngưỡng ảnh hưởng lớn đến an toàn, lợi ích cộng đồng;",
+                  "Bản chính": "1",
+                  "Bản sao": "1",
+                  "Tệp đính kèm": "Không có"
+                },
+                {
+                  "Tên giấy tờ": "- 02 bộ bản vẽ thiết kế xây dựng kèm theo; kết quả thực hiện thủ tục hành chính theo quy định của pháp luật về phòng cháy, chữa cháy; báo cáo kết quả thẩm tra thiết kế xây dựng trong trường hợp pháp luật về xây dựng có yêu cầu, gồm: Bản vẽ mặt bằng công trình trên lô đất kèm theo sơ đồ vị trí công trình; Bản vẽ mặt bằng các tầng, các mặt đứng và mặt cắt chính của công trình; Bản vẽ mặt bằng móng và mặt cắt móng kèm theo sơ đồ đấu nối hệ thống hạ tầng kỹ thuật bên ngoài công trình gồm cấp nước, thoát nước, cấp điện; Đối với công trình xây dựng có công trình liền kề phải có bản cam kết bảo đảm an toàn đối với công trình liền kề (đối với công trình xây dựng có công trình liền kề).",
+                  "Bản chính": "1",
+                  "Bản sao": "1",
+                  "Tệp đính kèm": "Không có"
+                },
+                {
+                  "Tên giấy tờ": "Giấy chứng nhận quyền sở hữu nhà ở và quyền sử dụng đất ở được cấp theo quy định của pháp luật về đất đai, pháp luật về nhà ở qua các thời kỳ. Trường hợp Giấy chứng nhận quyền sử dụng đất đã có trong Cơ sở dữ liệu quốc gia về đất đai thì các thông tin này được thay thế bằng dữ liệu khi Cơ sở dữ liệu quốc gia về đất đai được vận hành.",
+                  "Bản chính": "1",
+                  "Bản sao": "1",
+                  "Tệp đính kèm": "Không có"
+                },
+                {
+                  "Tên giấy tờ": "- Đơn đề nghị cấp giấy  phép sửa chữa, cải tạo  công trình theo Mẫu số 1 Phụ lục số II Nghị định số 175/2024/NĐ-CP ngày 30/12/2024 của Chính phủ.",
+                  "Bản chính": "1",
+                  "Bản sao": "1",
+                  "Tệp đính kèm": "Không có"
+                },
+                {
+                  "Tên giấy tờ": "- Một trong những giấy tờ hợp pháp về đất đai chứng minh sự phù hợp mục đích sử dụng đất và sở hữu công trình để cấp phép xây dựng theo quy định tại Điều 53 của Nghị định số 175/2024/NĐ-CP bao gồm:  +  Giấy chứng nhận quyền sử dụng đất được cấp theo quy định của Luật Đất đai qua các thời kỳ. + Giấy chứng nhận quyền sử dụng đất, quyền sở hữu tài sản gắn liền với đất được cấp theo quy định của pháp luật về đất đai qua các thời kỳ.  + Giấy chứng nhận quyền sở hữu nhà ở và quyền sử dụng đất ở được cấp theo quy định của pháp luật về đất đai, pháp luật về nhà ở qua các thời kỳ. + Giấy chứng nhận quyền sở hữu nhà ở; giấy chứng nhận quyền sở hữu công trình xây dựng đã được cấp theo quy định của pháp luật về đất đai, pháp luật về nhà ở, pháp luật về xây dựng qua các thời kỳ. + Các loại giấy tờ đủ điều kiện để cấp giấy chứng nhận quyền sử dụng đất, quyền sở hữu nhà ở và tài sản khác gắn liền với đất nhưng chưa được cấp giấy chứng nhận gồm: Các loại giấy tờ quy định tại Điều 137 của Luật đất đai năm 2024; hoặc giấy xác nhận của Ủy ban nhân dân cấp xã và được tổ chức đăng ký đất đai xác nhận đủ điều kiện để cấp giấy chứng nhận quyền sử dụng đất, quyền sở hữu nhà ở và tài sản khác gắn liền với đất theo quy định của pháp luật về đất đai. + Giấy tờ về đất đai đối với trường hợp được Nhà nước giao đất, cho thuê đất, chuyển mục đích sử dụng đất từ sau ngày 01 tháng 7 năm 2004 nhưng không có giấy chứng nhận quyền sử dụng đất, quyền sở hữu nhà ở và tài sản khác gắn liền với đất theo quy định của pháp luật về đất đai, gồm: Quyết định giao đất của cơ quan nhà nước có thẩm quyền hoặc Quyết định cho thuê đất của cơ quan nhà nước có thẩm quyền và hợp đồng thuê đất kèm theo (nếu có) hoặc giấy tờ về trúng đấu giá quyền sử dụng đất, đấu thầu dự án có sử dụng đất. + Báo cáo hiện trạng sử dụng đất đối với trường hợp tổ chức, cơ sở tôn giáo đang sử dụng mà chưa được cấp giấy chứng nhận quyền sử dụng đất, quyền sở hữu nhà ở và tài sản khác gắn liền với đất được Ủy ban nhân dân cấp tỉnh nơi có đất kiểm tra thực tế sử dụng và xử lý theo quy định tại Điều 142, Điều 145 Luật Đất đai năm 2024. + Giấy tờ về việc xếp hạng di tích lịch sử - văn hóa, danh lam thắng cảnh hoặc danh mục kiểm kê di tích theo quy định của pháp luật về di sản văn hoá của Uỷ ban nhân dân cấp tỉnh đối với trường hợp cấp giấy phép xây dựng để thực hiện xây dựng mới, sửa chữa, cải tạo hoặc di dời các công trình di tích lịch sử - văn hóa, danh lam thắng cảnh nhưng chưa được cấp giấy chứng nhận quyền sử dụng đất, quyền sở hữu nhà ở và tài sản khác gắn liền với đất theo quy định.  + Văn bản chấp thuận về địa điểm xây dựng của Ủy ban nhân dân cấp xã đối với công trình xây dựng biển quảng cáo, trạm viễn thông, cột ăng-ten và các công trình tương tự khác theo quy định của pháp luật có liên quan tại khu vực không thuộc nhóm đất có mục đích sử dụng để xây dựng đối với loại công trình này và không được chuyển đổi mục đích sử dụng đất.  + Giấy tờ hợp pháp về đất đai của chủ rừng và hợp đồng cho thuê môi trường rừng giữa chủ rừng và tổ chức, cá nhân thực hiện dự án du lịch sinh thái, nghỉ dưỡng, giải trí theo quy định của pháp luật về lâm nghiệp. + Giấy chứng nhận quyền sử dụng đất hoặc quyết định giao đất hoặc quyết định cho thuê đất của cơ quan nhà nước có thẩm quyền có mục đích sử dụng đất chính đối với trường hợp xây dựng công trình trên đất được sử dụng kết hợp đa mục đích theo quy định tại Điều 218 của Luật Đất đai năm 2024. + Hợp đồng thuê đất được giữa chủ đầu tư xây dựng công trình và người quản lý, sử dụng công trình giao thông hoặc văn bản chấp thuận của cơ quan quản lý nhà nước có thẩm quyền về giao thông đối với công trình được phép xây dựng trong phạm vi đất dành cho giao thông theo quy định của pháp luật. + Văn bản của cơ quan nhà nước có thẩm quyền đã cấp giấy chứng nhận quyền sử dụng đất (theo đề nghị của cơ quan cấp giấy phép xây dựng) xác định diện tích các loại đất đối với trường hợp người sử dụng đất có một trong các loại giấy tờ hợp pháp về đất đai theo quy định tại các khoản 1, 2, 3, 4 và 5 Điều 53 Nghị định số 175/2024/NĐ-CP nhưng trên các giấy tờ đó không ghi rõ diện tích các loại đất để làm cơ sở cấp giấy phép xây dựng. + Trường hợp chủ đầu tư thuê đất hoặc thuê công trình, bộ phận công trình của chủ sử dụng đất, chủ sở hữu công trình để đầu tư xây dựng thì ngoài một trong các giấy tờ nêu trên, người đề nghị cấp giấy phép xây dựng bổ sung hợp đồng hợp pháp về việc thuê đất hoặc thuê công trình, bộ phận công trình tương ứng. + Các giấy tờ hợp pháp khác theo quy định của pháp luật về đất đai.",
+                  "Bản chính": "1",
+                  "Bản sao": "1",
+                  "Tệp đính kèm": "Không có"
+                },
+                {
+                  "Tên giấy tờ": "Giấy chứng nhận quyền sử dụng đất, quyền sở hữu tài sản gắn liền với đất được cấp theo quy định của pháp luật về đất đai qua các thời kỳ. Trường hợp Giấy chứng nhận quyền sử dụng đất đã có trong Cơ sở dữ liệu quốc gia về đất đai thì các thông tin này được thay thế bằng dữ liệu khi Cơ sở dữ liệu quốc gia về đất đai được vận hành.",
+                  "Bản chính": "1",
+                  "Bản sao": "1",
+                  "Tệp đính kèm": "Không có"
+                },
+                {
+                  "Tên giấy tờ": "Giấy chứng nhận quyền sử dụng đất được cấp theo quy định của Luật Đất đai qua các thời kỳ. Trường hợp Giấy chứng nhận quyền sử dụng đất đã có trong Cơ sở dữ liệu quốc gia về đất đai thì các thông tin này được thay thế bằng dữ liệu khi Cơ sở dữ liệu quốc gia về đất đai được vận hành.",
+                  "Bản chính": "1",
+                  "Bản sao": "1",
+                  "Tệp đính kèm": "Không có"
+                },
+                {
+                  "Tên giấy tờ": "- Đối với hồ sơ đề nghị cấp giấy phép xây dựng công trình tín ngưỡng, tôn giáo thuộc dự án bảo quản, tu bổ, phục hồi di tích lịch sử - văn hóa, danh lam thắng cảnh, ngoài các tài liệu quy định tại điểm a, điểm b khoản 3 Điều 55 Nghị định số 175/2024/NĐ-CP, phải bổ sung văn bản về sự cần thiết xây dựng và quy mô công trình của cơ quan quản lý nhà nước về văn hóa theo quy định của pháp luật về di sản văn hóa.",
+                  "Bản chính": "1",
+                  "Bản sao": "1",
+                  "Tệp đính kèm": "Không có"
+                }
+              ]
+            },
+            {
+              "group_name": "(1.5) Đối với công trình tượng đài, tranh hoành tráng:",
+              "documents": [
+                {
+                  "Tên giấy tờ": "- 02 bộ bản vẽ thiết kế xây dựng trong hồ sơ thiết kế xây dựng triển khai sau thiết kế cơ sở (thiết kế bản vẽ thi công đối với dự án chỉ yêu cầu lập Báo cáo kinh tế - kỹ thuật) được phê duyệt hoặc đóng dấu xác nhận theo quy định của pháp luật về xây dựng, gồm: bản vẽ tổng mặt bằng toàn dự án, mặt bằng định vị công trình trên lô đất; bản vẽ kiến trúc các mặt bằng, các mặt đứng và mặt cắt chủ yếu của công trình; bản vẽ mặt bằng, mặt cắt móng; các bản vẽ thể hiện giải pháp kết cấu chính của công trình; bản vẽ mặt bằng đấu nối với hệ thống hạ tầng kỹ thuật bên ngoài công trình, dự án.",
+                  "Bản chính": "1",
+                  "Bản sao": "1",
+                  "Tệp đính kèm": "Không có"
+                },
+                {
+                  "Tên giấy tờ": "- Văn bản chấp thuận về sự cần thiết xây dựng và quy mô công trình của cơ quan quản lý nhà nước về văn hóa.",
+                  "Bản chính": "1",
+                  "Bản sao": "1",
+                  "Tệp đính kèm": "Không có"
+                },
+                {
+                  "Tên giấy tờ": "- Quyết định phê duyệt dự án; văn bản thông báo kết quả thẩm định của cơ quan chuyên môn về xây dựng và hồ sơ bản vẽ thiết kế cơ sở được đóng dấu xác nhận kèm theo (nếu có); báo cáo kết quả thẩm tra thiết kế xây dựng (nếu có) theo quy định tại khoản 5 Điều 43 Nghị định số 175/2024/NĐ-CP, Nghị định số 105/2025/NĐ-CP và Nghị định số 144/2025/NĐ-CP; kết quả thủ tục hành chính theo quy định của pháp luật về phòng cháy và chữa cháy đối với hồ sơ thiết kế đề nghị cấp giấy phép xây dựng; kết quả thực hiện thủ tục về bảo vệ môi trường theo quy định của pháp luật về bảo vệ môi trường (đối với trường hợp không thẩm định báo cáo nghiên cứu khả thi đầu tư xây dựng tại cơ quan chuyên môn về xây dựng).",
+                  "Bản chính": "1",
+                  "Bản sao": "1",
+                  "Tệp đính kèm": "Không có"
+                },
+                {
+                  "Tên giấy tờ": "- Một trong những giấy tờ hợp pháp về đất đai chứng minh sự phù hợp mục đích sử dụng đất và sở hữu công trình để cấp phép xây dựng theo quy định tại Điều 53 của Nghị định số 175/2024/NĐ-CP bao gồm:  +  Giấy chứng nhận quyền sử dụng đất được cấp theo quy định của Luật Đất đai qua các thời kỳ. + Giấy chứng nhận quyền sử dụng đất, quyền sở hữu tài sản gắn liền với đất được cấp theo quy định của pháp luật về đất đai qua các thời kỳ.  + Giấy chứng nhận quyền sở hữu nhà ở và quyền sử dụng đất ở được cấp theo quy định của pháp luật về đất đai, pháp luật về nhà ở qua các thời kỳ. + Giấy chứng nhận quyền sở hữu nhà ở; giấy chứng nhận quyền sở hữu công trình xây dựng đã được cấp theo quy định của pháp luật về đất đai, pháp luật về nhà ở, pháp luật về xây dựng qua các thời kỳ. + Các loại giấy tờ đủ điều kiện để cấp giấy chứng nhận quyền sử dụng đất, quyền sở hữu nhà ở và tài sản khác gắn liền với đất nhưng chưa được cấp giấy chứng nhận gồm: Các loại giấy tờ quy định tại Điều 137 của Luật đất đai năm 2024; hoặc giấy xác nhận của Ủy ban nhân dân cấp xã và được tổ chức đăng ký đất đai xác nhận đủ điều kiện để cấp giấy chứng nhận quyền sử dụng đất, quyền sở hữu nhà ở và tài sản khác gắn liền với đất theo quy định của pháp luật về đất đai. + Giấy tờ về đất đai đối với trường hợp được Nhà nước giao đất, cho thuê đất, chuyển mục đích sử dụng đất từ sau ngày 01 tháng 7 năm 2004 nhưng không có giấy chứng nhận quyền sử dụng đất, quyền sở hữu nhà ở và tài sản khác gắn liền với đất theo quy định của pháp luật về đất đai, gồm: Quyết định giao đất của cơ quan nhà nước có thẩm quyền hoặc Quyết định cho thuê đất của cơ quan nhà nước có thẩm quyền và hợp đồng thuê đất kèm theo (nếu có) hoặc giấy tờ về trúng đấu giá quyền sử dụng đất, đấu thầu dự án có sử dụng đất. + Báo cáo hiện trạng sử dụng đất đối với trường hợp tổ chức, cơ sở tôn giáo đang sử dụng mà chưa được cấp giấy chứng nhận quyền sử dụng đất, quyền sở hữu nhà ở và tài sản khác gắn liền với đất được Ủy ban nhân dân cấp tỉnh nơi có đất kiểm tra thực tế sử dụng và xử lý theo quy định tại Điều 142, Điều 145 Luật Đất đai năm 2024. + Giấy tờ về việc xếp hạng di tích lịch sử - văn hóa, danh lam thắng cảnh hoặc danh mục kiểm kê di tích theo quy định của pháp luật về di sản văn hoá của Uỷ ban nhân dân cấp tỉnh đối với trường hợp cấp giấy phép xây dựng để thực hiện xây dựng mới, sửa chữa, cải tạo hoặc di dời các công trình di tích lịch sử - văn hóa, danh lam thắng cảnh nhưng chưa được cấp giấy chứng nhận quyền sử dụng đất, quyền sở hữu nhà ở và tài sản khác gắn liền với đất theo quy định.  + Văn bản chấp thuận về địa điểm xây dựng của Ủy ban nhân dân cấp xã đối với công trình xây dựng biển quảng cáo, trạm viễn thông, cột ăng-ten và các công trình tương tự khác theo quy định của pháp luật có liên quan tại khu vực không thuộc nhóm đất có mục đích sử dụng để xây dựng đối với loại công trình này và không được chuyển đổi mục đích sử dụng đất.  + Giấy tờ hợp pháp về đất đai của chủ rừng và hợp đồng cho thuê môi trường rừng giữa chủ rừng và tổ chức, cá nhân thực hiện dự án du lịch sinh thái, nghỉ dưỡng, giải trí theo quy định của pháp luật về lâm nghiệp. + Giấy chứng nhận quyền sử dụng đất hoặc quyết định giao đất hoặc quyết định cho thuê đất của cơ quan nhà nước có thẩm quyền có mục đích sử dụng đất chính đối với trường hợp xây dựng công trình trên đất được sử dụng kết hợp đa mục đích theo quy định tại Điều 218 của Luật Đất đai năm 2024. + Hợp đồng thuê đất được giữa chủ đầu tư xây dựng công trình và người quản lý, sử dụng công trình giao thông hoặc văn bản chấp thuận của cơ quan quản lý nhà nước có thẩm quyền về giao thông đối với công trình được phép xây dựng trong phạm vi đất dành cho giao thông theo quy định của pháp luật. + Văn bản của cơ quan nhà nước có thẩm quyền đã cấp giấy chứng nhận quyền sử dụng đất (theo đề nghị của cơ quan cấp giấy phép xây dựng) xác định diện tích các loại đất đối với trường hợp người sử dụng đất có một trong các loại giấy tờ hợp pháp về đất đai theo quy định tại các khoản 1, 2, 3, 4 và 5 Điều 53 Nghị định số 175/2024/NĐ-CP nhưng trên các giấy tờ đó không ghi rõ diện tích các loại đất để làm cơ sở cấp giấy phép xây dựng. + Trường hợp chủ đầu tư thuê đất hoặc thuê công trình, bộ phận công trình của chủ sử dụng đất, chủ sở hữu công trình để đầu tư xây dựng thì ngoài một trong các giấy tờ nêu trên, người đề nghị cấp giấy phép xây dựng bổ sung hợp đồng hợp pháp về việc thuê đất hoặc thuê công trình, bộ phận công trình tương ứng. + Các giấy tờ hợp pháp khác theo quy định của pháp luật về đất đai.",
+                  "Bản chính": "1",
+                  "Bản sao": "1",
+                  "Tệp đính kèm": "Không có"
+                },
+                {
+                  "Tên giấy tờ": "Giấy chứng nhận quyền sử dụng đất, quyền sở hữu tài sản gắn liền với đất được cấp theo quy định của pháp luật về đất đai qua các thời kỳ. Trường hợp Giấy chứng nhận quyền sử dụng đất đã có trong Cơ sở dữ liệu quốc gia về đất đai thì các thông tin này được thay thế bằng dữ liệu khi Cơ sở dữ liệu quốc gia về đất đai được vận hành.",
+                  "Bản chính": "1",
+                  "Bản sao": "1",
+                  "Tệp đính kèm": "Không có"
+                },
+                {
+                  "Tên giấy tờ": "- Đơn đề nghị  cấp giấy phép sửa chữa, cải tạo  công trình theo Mẫu số 1 Phụ lục số II Nghị định số 175/2024/NĐ-CP ngày 30/12/2024 của Chính phủ.",
+                  "Bản chính": "1",
+                  "Bản sao": "1",
+                  "Tệp đính kèm": "Không có"
+                },
+                {
+                  "Tên giấy tờ": "Giấy chứng nhận quyền sở hữu nhà ở và quyền sử dụng đất ở được cấp theo quy định của pháp luật về đất đai, pháp luật về nhà ở qua các thời kỳ. Trường hợp Giấy chứng nhận quyền sử dụng đất đã có trong Cơ sở dữ liệu quốc gia về đất đai thì các thông tin này được thay thế bằng dữ liệu khi Cơ sở dữ liệu quốc gia về đất đai được vận hành.",
+                  "Bản chính": "1",
+                  "Bản sao": "1",
+                  "Tệp đính kèm": "Không có"
+                },
+                {
+                  "Tên giấy tờ": "Giấy chứng nhận quyền sử dụng đất được cấp theo quy định của Luật Đất đai qua các thời kỳ. Trường hợp Giấy chứng nhận quyền sử dụng đất đã có trong Cơ sở dữ liệu quốc gia về đất đai thì các thông tin này được thay thế bằng dữ liệu khi Cơ sở dữ liệu quốc gia về đất đai được vận hành.",
+                  "Bản chính": "1",
+                  "Bản sao": "1",
+                  "Tệp đính kèm": "Không có"
+                }
+              ]
+            },
+            {
+              "group_name": "(1.6) Đối với công trình của các cơ quan ngoại giao và tổ chức quốc tế:",
+              "documents": [
+                {
+                  "Tên giấy tờ": "Giấy chứng nhận quyền sở hữu nhà ở và quyền sử dụng đất ở được cấp theo quy định của pháp luật về đất đai, pháp luật về nhà ở qua các thời kỳ. Trường hợp Giấy chứng nhận quyền sử dụng đất đã có trong Cơ sở dữ liệu quốc gia về đất đai thì các thông tin này được thay thế bằng dữ liệu khi Cơ sở dữ liệu quốc gia về đất đai được vận hành.",
+                  "Bản chính": "1",
+                  "Bản sao": "1",
+                  "Tệp đính kèm": "Không có"
+                },
+                {
+                  "Tên giấy tờ": "- .02 bộ bản vẽ thiết kế xây dựng trong hồ sơ thiết kế xây dựng triển khai sau thiết kế cơ sở được phê duyệt theo quy định của pháp luật về xây dựng, gồm; bản vẽ tổng mặt bằng toàn dự án, mặt bằng định vị công trình trên lô đất; bản vẽ kiến trúc các mặt bằng, các mặt đứng và mặt cắt chủ yếu của công trình; bản vẽ mặt bằng, mặt cắt móng; các bản vẽ thể hiện giải pháp kết cấu chính của công trình; bản vẽ mặt bằng đấu nối với hệ thống hạ tầng kỹ thuật bên ngoài công trình, dự án.",
+                  "Bản chính": "1",
+                  "Bản sao": "1",
+                  "Tệp đính kèm": "Không có"
+                },
+                {
+                  "Tên giấy tờ": "Giấy chứng nhận quyền sử dụng đất, quyền sở hữu tài sản gắn liền với đất được cấp theo quy định của pháp luật về đất đai qua các thời kỳ. Trường hợp Giấy chứng nhận quyền sử dụng đất đã có trong Cơ sở dữ liệu quốc gia về đất đai thì các thông tin này được thay thế bằng dữ liệu khi Cơ sở dữ liệu quốc gia về đất đai được vận hành.",
+                  "Bản chính": "1",
+                  "Bản sao": "1",
+                  "Tệp đính kèm": "Không có"
+                },
+                {
+                  "Tên giấy tờ": "- Một trong những giấy tờ hợp pháp về đất đai chứng minh sự phù hợp mục đích sử dụng đất và sở hữu công trình để cấp phép xây dựng theo quy định tại Điều 53 của Nghị định số 175/2024/NĐ-CP bao gồm:  +  Giấy chứng nhận quyền sử dụng đất được cấp theo quy định của Luật Đất đai qua các thời kỳ. + Giấy chứng nhận quyền sử dụng đất, quyền sở hữu tài sản gắn liền với đất được cấp theo quy định của pháp luật về đất đai qua các thời kỳ.  + Giấy chứng nhận quyền sở hữu nhà ở và quyền sử dụng đất ở được cấp theo quy định của pháp luật về đất đai, pháp luật về nhà ở qua các thời kỳ. + Giấy chứng nhận quyền sở hữu nhà ở; giấy chứng nhận quyền sở hữu công trình xây dựng đã được cấp theo quy định của pháp luật về đất đai, pháp luật về nhà ở, pháp luật về xây dựng qua các thời kỳ. + Các loại giấy tờ đủ điều kiện để cấp giấy chứng nhận quyền sử dụng đất, quyền sở hữu nhà ở và tài sản khác gắn liền với đất nhưng chưa được cấp giấy chứng nhận gồm: Các loại giấy tờ quy định tại Điều 137 của Luật đất đai năm 2024; hoặc giấy xác nhận của Ủy ban nhân dân cấp xã và được tổ chức đăng ký đất đai xác nhận đủ điều kiện để cấp giấy chứng nhận quyền sử dụng đất, quyền sở hữu nhà ở và tài sản khác gắn liền với đất theo quy định của pháp luật về đất đai. + Giấy tờ về đất đai đối với trường hợp được Nhà nước giao đất, cho thuê đất, chuyển mục đích sử dụng đất từ sau ngày 01 tháng 7 năm 2004 nhưng không có giấy chứng nhận quyền sử dụng đất, quyền sở hữu nhà ở và tài sản khác gắn liền với đất theo quy định của pháp luật về đất đai, gồm: Quyết định giao đất của cơ quan nhà nước có thẩm quyền hoặc Quyết định cho thuê đất của cơ quan nhà nước có thẩm quyền và hợp đồng thuê đất kèm theo (nếu có) hoặc giấy tờ về trúng đấu giá quyền sử dụng đất, đấu thầu dự án có sử dụng đất. + Báo cáo hiện trạng sử dụng đất đối với trường hợp tổ chức, cơ sở tôn giáo đang sử dụng mà chưa được cấp giấy chứng nhận quyền sử dụng đất, quyền sở hữu nhà ở và tài sản khác gắn liền với đất được Ủy ban nhân dân cấp tỉnh nơi có đất kiểm tra thực tế sử dụng và xử lý theo quy định tại Điều 142, Điều 145 Luật Đất đai năm 2024. + Giấy tờ về việc xếp hạng di tích lịch sử - văn hóa, danh lam thắng cảnh hoặc danh mục kiểm kê di tích theo quy định của pháp luật về di sản văn hoá của Uỷ ban nhân dân cấp tỉnh đối với trường hợp cấp giấy phép xây dựng để thực hiện xây dựng mới, sửa chữa, cải tạo hoặc di dời các công trình di tích lịch sử - văn hóa, danh lam thắng cảnh nhưng chưa được cấp giấy chứng nhận quyền sử dụng đất, quyền sở hữu nhà ở và tài sản khác gắn liền với đất theo quy định.  + Văn bản chấp thuận về địa điểm xây dựng của Ủy ban nhân dân cấp xã đối với công trình xây dựng biển quảng cáo, trạm viễn thông, cột ăng-ten và các công trình tương tự khác theo quy định của pháp luật có liên quan tại khu vực không thuộc nhóm đất có mục đích sử dụng để xây dựng đối với loại công trình này và không được chuyển đổi mục đích sử dụng đất.  + Giấy tờ hợp pháp về đất đai của chủ rừng và hợp đồng cho thuê môi trường rừng giữa chủ rừng và tổ chức, cá nhân thực hiện dự án du lịch sinh thái, nghỉ dưỡng, giải trí theo quy định của pháp luật về lâm nghiệp. + Giấy chứng nhận quyền sử dụng đất hoặc quyết định giao đất hoặc quyết định cho thuê đất của cơ quan nhà nước có thẩm quyền có mục đích sử dụng đất chính đối với trường hợp xây dựng công trình trên đất được sử dụng kết hợp đa mục đích theo quy định tại Điều 218 của Luật Đất đai năm 2024. + Hợp đồng thuê đất được giữa chủ đầu tư xây dựng công trình và người quản lý, sử dụng công trình giao thông hoặc văn bản chấp thuận của cơ quan quản lý nhà nước có thẩm quyền về giao thông đối với công trình được phép xây dựng trong phạm vi đất dành cho giao thông theo quy định của pháp luật. + Văn bản của cơ quan nhà nước có thẩm quyền đã cấp giấy chứng nhận quyền sử dụng đất (theo đề nghị của cơ quan cấp giấy phép xây dựng) xác định diện tích các loại đất đối với trường hợp người sử dụng đất có một trong các loại giấy tờ hợp pháp về đất đai theo quy định tại các khoản 1, 2, 3, 4 và 5 Điều 53 Nghị định số 175/2024/NĐ-CP nhưng trên các giấy tờ đó không ghi rõ diện tích các loại đất để làm cơ sở cấp giấy phép xây dựng. + Trường hợp chủ đầu tư thuê đất hoặc thuê công trình, bộ phận công trình của chủ sử dụng đất, chủ sở hữu công trình để đầu tư xây dựng thì ngoài một trong các giấy tờ nêu trên, người đề nghị cấp giấy phép xây dựng bổ sung hợp đồng hợp pháp về việc thuê đất hoặc thuê công trình, bộ phận công trình tương ứng. + Các giấy tờ hợp pháp khác theo quy định của pháp luật về đất đai.",
+                  "Bản chính": "1",
+                  "Bản sao": "1",
+                  "Tệp đính kèm": "Không có"
+                },
+                {
+                  "Tên giấy tờ": "- Quyết định phê duyệt dự án; văn bản thông báo kết quả thẩm định của cơ quan chuyên môn về xây dựng và hồ sơ bản vẽ thiết kế cơ sở được đóng dấu xác nhận kèm theo (nếu có); báo cáo kết quả thẩm tra thiết kế xây dựng (nếu có) theo quy định tại khoản 5 Điều 43 Nghị định số 175/2024/NĐ-CP, Nghị định số 105/2025/NĐ-CP và Nghị định số 144/2025/NĐ-CP; kết quả thủ tục hành chính theo quy định của pháp luật về phòng cháy và chữa cháy đối với hồ sơ thiết kế đề nghị cấp giấy phép xây dựng; kết quả thực hiện thủ tục về bảo vệ môi trường theo quy định của pháp luật về bảo vệ môi trường (đối với trường hợp không thẩm định báo cáo nghiên cứu khả thi đầu tư xây dựng tại cơ quan chuyên môn về xây dựng).",
+                  "Bản chính": "1",
+                  "Bản sao": "1",
+                  "Tệp đính kèm": "Không có"
+                },
+                {
+                  "Tên giấy tờ": "Giấy chứng nhận quyền sử dụng đất được cấp theo quy định của Luật Đất đai qua các thời kỳ. Trường hợp Giấy chứng nhận quyền sử dụng đất đã có trong Cơ sở dữ liệu quốc gia về đất đai thì các thông tin này được thay thế bằng dữ liệu khi Cơ sở dữ liệu quốc gia về đất đai được vận hành.",
+                  "Bản chính": "1",
+                  "Bản sao": "1",
+                  "Tệp đính kèm": "Không có"
+                },
+                {
+                  "Tên giấy tờ": "- Các điều khoản quy định của Hiệp định hoặc thỏa thuận đã được ký kết với Chính phủ Việt Nam.",
+                  "Bản chính": "1",
+                  "Bản sao": "1",
+                  "Tệp đính kèm": "Không có"
+                },
+                {
+                  "Tên giấy tờ": "- Đơn đề nghị cấp  giấy phép sửa chữa, cải tạo công  trình theo Mẫu số 1 Phụ lục số II Nghị định số 175/2024/NĐ-CP ngày 30/12/2024 của Chính phủ.",
+                  "Bản chính": "1",
+                  "Bản sao": "1",
+                  "Tệp đính kèm": "Không có"
+                }
+              ]
+            },
+            {
+              "group_name": "(1.7) Đối với công trình nhà ở riêng lẻ:",
+              "documents": [
+                {
+                  "Tên giấy tờ": "Giấy chứng nhận quyền sử dụng đất, quyền sở hữu tài sản gắn liền với đất được cấp theo quy định của pháp luật về đất đai qua các thời kỳ. Trường hợp Giấy chứng nhận quyền sử dụng đất đã có trong Cơ sở dữ liệu quốc gia về đất đai thì các thông tin này được thay thế bằng dữ liệu khi Cơ sở dữ liệu quốc gia về đất đai được vận hành.",
+                  "Bản chính": "1",
+                  "Bản sao": "1",
+                  "Tệp đính kèm": "Không có"
+                },
+                {
+                  "Tên giấy tờ": "- Hồ sơ thiết kế xây dựng:  + Đối với nhà ở riêng lẻ của hộ gia đình, cá nhân: 02 bộ bản vẽ thiết kế xây dựng kèm theo; kết quả thực hiện thủ tục hành chính theo quy định của pháp luật về phòng cháy, chữa cháy; báo cáo kết quả thẩm tra thiết kế xây dựng trong trường hợp pháp luật về xây dựng có yêu cầu, gồm: bản vẽ mặt bằng công trình trên lô đất kèm theo sơ đồ vị trí công trình; bản vẽ mặt bằng các tầng, các mặt đứng và mặt cắt chính của công trình; bản vẽ mặt bằng móng và mặt cắt móng kèm theo sơ đồ đấu nối hệ thống hạ tầng kỹ thuật bên ngoài công trình gồm cấp nước, thoát nước, cấp điện; bản cam kết bảo đảm an toàn đối với công trình liền kề (đối với công trình xây dựng có công trình liền kề); +  Đối với nhà ở riêng lẻ của tổ chức: 02 bộ bản vẽ thiết kế xây dựng trong hồ sơ thiết kế xây dựng triển khai sau thiết kế cơ sở (thiết kế bản vẽ thi công đối với dự án chỉ yêu cầu lập Báo cáo kinh tế - kỹ thuật) được phê duyệt theo quy định của pháp luật về xây dựng kèm theo kết quả thực hiện thủ tục hành chính theo quy định của pháp luật về phòng cháy, chữa cháy; báo cáo kết quả thẩm tra thiết kế xây dựng trong trường hợp pháp luật về xây dựng có yêu cầu, gồm: bản vẽ mặt bằng công trình trên lô đất kèm theo sơ đồ vị trí công trình; bản vẽ mặt bằng các tầng, các mặt đứng và mặt cắt chính của công trình; bản vẽ mặt bằng móng và mặt cắt móng kèm theo sơ đồ đấu nối hệ thống hạ tầng kỹ thuật bên ngoài công trình gồm cấp nước, thoát nước, cấp điện; bản cam kết bảo đảm an toàn đối với công trình liền kề (đối với công trình xây dựng có công trình liền kề).",
+                  "Bản chính": "1",
+                  "Bản sao": "1",
+                  "Tệp đính kèm": "Không có"
+                },
+                {
+                  "Tên giấy tờ": "Giấy chứng nhận quyền sở hữu nhà ở và quyền sử dụng đất ở được cấp theo quy định của pháp luật về đất đai, pháp luật về nhà ở qua các thời kỳ. Trường hợp Giấy chứng nhận quyền sử dụng đất đã có trong Cơ sở dữ liệu quốc gia về đất đai thì các thông tin này được thay thế bằng dữ liệu khi Cơ sở dữ liệu quốc gia về đất đai được vận hành.",
+                  "Bản chính": "1",
+                  "Bản sao": "1",
+                  "Tệp đính kèm": "Không có"
+                },
+                {
+                  "Tên giấy tờ": "- Đơn đề nghị cấp  giấy phép sửa chữa, cải tạo  công trình theo Mẫu số 1 Phụ lục số II Nghị định số 175/2024/NĐ-CP ngày 30/12/2024 của Chính phủ.",
+                  "Bản chính": "1",
+                  "Bản sao": "1",
+                  "Tệp đính kèm": "Không có"
+                },
+                {
+                  "Tên giấy tờ": "Giấy chứng nhận quyền sử dụng đất được cấp theo quy định của Luật Đất đai qua các thời kỳ. Trường hợp Giấy chứng nhận quyền sử dụng đất đã có trong Cơ sở dữ liệu quốc gia về đất đai thì các thông tin này được thay thế bằng dữ liệu khi Cơ sở dữ liệu quốc gia về đất đai được vận hành.",
+                  "Bản chính": "1",
+                  "Bản sao": "1",
+                  "Tệp đính kèm": "Không có"
+                },
+                {
+                  "Tên giấy tờ": "- Một trong những giấy tờ hợp pháp về đất đai chứng minh sự phù hợp mục đích sử dụng đất và sở hữu công trình để cấp phép xây dựng theo quy định tại Điều 53 của Nghị định số 175/2024/NĐ-CP bao gồm:  +  Giấy chứng nhận quyền sử dụng đất được cấp theo quy định của Luật Đất đai qua các thời kỳ. + Giấy chứng nhận quyền sử dụng đất, quyền sở hữu tài sản gắn liền với đất được cấp theo quy định của pháp luật về đất đai qua các thời kỳ.  + Giấy chứng nhận quyền sở hữu nhà ở và quyền sử dụng đất ở được cấp theo quy định của pháp luật về đất đai, pháp luật về nhà ở qua các thời kỳ. + Giấy chứng nhận quyền sở hữu nhà ở; giấy chứng nhận quyền sở hữu công trình xây dựng đã được cấp theo quy định của pháp luật về đất đai, pháp luật về nhà ở, pháp luật về xây dựng qua các thời kỳ. + Các loại giấy tờ đủ điều kiện để cấp giấy chứng nhận quyền sử dụng đất, quyền sở hữu nhà ở và tài sản khác gắn liền với đất nhưng chưa được cấp giấy chứng nhận gồm: Các loại giấy tờ quy định tại Điều 137 của Luật đất đai năm 2024; hoặc giấy xác nhận của Ủy ban nhân dân cấp xã và được tổ chức đăng ký đất đai xác nhận đủ điều kiện để cấp giấy chứng nhận quyền sử dụng đất, quyền sở hữu nhà ở và tài sản khác gắn liền với đất theo quy định của pháp luật về đất đai. + Giấy tờ về đất đai đối với trường hợp được Nhà nước giao đất, cho thuê đất, chuyển mục đích sử dụng đất từ sau ngày 01 tháng 7 năm 2004 nhưng không có giấy chứng nhận quyền sử dụng đất, quyền sở hữu nhà ở và tài sản khác gắn liền với đất theo quy định của pháp luật về đất đai, gồm: Quyết định giao đất của cơ quan nhà nước có thẩm quyền hoặc Quyết định cho thuê đất của cơ quan nhà nước có thẩm quyền và hợp đồng thuê đất kèm theo (nếu có) hoặc giấy tờ về trúng đấu giá quyền sử dụng đất, đấu thầu dự án có sử dụng đất. + Báo cáo hiện trạng sử dụng đất đối với trường hợp tổ chức, cơ sở tôn giáo đang sử dụng mà chưa được cấp giấy chứng nhận quyền sử dụng đất, quyền sở hữu nhà ở và tài sản khác gắn liền với đất được Ủy ban nhân dân cấp tỉnh nơi có đất kiểm tra thực tế sử dụng và xử lý theo quy định tại Điều 142, Điều 145 Luật Đất đai năm 2024. + Giấy tờ về việc xếp hạng di tích lịch sử - văn hóa, danh lam thắng cảnh hoặc danh mục kiểm kê di tích theo quy định của pháp luật về di sản văn hoá của Uỷ ban nhân dân cấp tỉnh đối với trường hợp cấp giấy phép xây dựng để thực hiện xây dựng mới, sửa chữa, cải tạo hoặc di dời các công trình di tích lịch sử - văn hóa, danh lam thắng cảnh nhưng chưa được cấp giấy chứng nhận quyền sử dụng đất, quyền sở hữu nhà ở và tài sản khác gắn liền với đất theo quy định.  + Văn bản chấp thuận về địa điểm xây dựng của Ủy ban nhân dân cấp xã đối với công trình xây dựng biển quảng cáo, trạm viễn thông, cột ăng-ten và các công trình tương tự khác theo quy định của pháp luật có liên quan tại khu vực không thuộc nhóm đất có mục đích sử dụng để xây dựng đối với loại công trình này và không được chuyển đổi mục đích sử dụng đất.  + Giấy tờ hợp pháp về đất đai của chủ rừng và hợp đồng cho thuê môi trường rừng giữa chủ rừng và tổ chức, cá nhân thực hiện dự án du lịch sinh thái, nghỉ dưỡng, giải trí theo quy định của pháp luật về lâm nghiệp. + Giấy chứng nhận quyền sử dụng đất hoặc quyết định giao đất hoặc quyết định cho thuê đất của cơ quan nhà nước có thẩm quyền có mục đích sử dụng đất chính đối với trường hợp xây dựng công trình trên đất được sử dụng kết hợp đa mục đích theo quy định tại Điều 218 của Luật Đất đai năm 2024. + Hợp đồng thuê đất được giữa chủ đầu tư xây dựng công trình và người quản lý, sử dụng công trình giao thông hoặc văn bản chấp thuận của cơ quan quản lý nhà nước có thẩm quyền về giao thông đối với công trình được phép xây dựng trong phạm vi đất dành cho giao thông theo quy định của pháp luật. + Văn bản của cơ quan nhà nước có thẩm quyền đã cấp giấy chứng nhận quyền sử dụng đất (theo đề nghị của cơ quan cấp giấy phép xây dựng) xác định diện tích các loại đất đối với trường hợp người sử dụng đất có một trong các loại giấy tờ hợp pháp về đất đai theo quy định tại các khoản 1, 2, 3, 4 và 5 Điều 53 Nghị định số 175/2024/NĐ-CP nhưng trên các giấy tờ đó không ghi rõ diện tích các loại đất để làm cơ sở cấp giấy phép xây dựng. + Trường hợp chủ đầu tư thuê đất hoặc thuê công trình, bộ phận công trình của chủ sử dụng đất, chủ sở hữu công trình để đầu tư xây dựng thì ngoài một trong các giấy tờ nêu trên, người đề nghị cấp giấy phép xây dựng bổ sung hợp đồng hợp pháp về việc thuê đất hoặc thuê công trình, bộ phận công trình tương ứng. + Các giấy tờ hợp pháp khác theo quy định của pháp luật về đất đai.",
+                  "Bản chính": "1",
+                  "Bản sao": "1",
+                  "Tệp đính kèm": "Không có"
+                }
+              ]
+            }
+          ],
+          "result_items": [
+            "- Giấy phép xây dựng kèm theo hồ sơ thiết kế trình xin cấp giấy phép xây dựng có đóng dấu của cơ quan có thẩm quyền cấp giấy phép xây dựng. (Mã: `KQ.G17.000312`)"
+          ]
+        },
+        {
+          "procedure_code": "1.013232",
+          "procedure_title": "Cấp giấy phép di dời đối với công trình cấp III, cấp IV (Công trình không theo tuyến/Theo tuyến trong đô thị/Tín ngưỡng, tôn giáo/Tượng đài, tranh hoành tráng/Theo giai đoạn cho công trình không theo tuyến/Theo giai đoạn cho công trình theo tuyến trong đô thị/Dự án) và nhà ở riêng lẻ",
+          "subdomain_key": "xay_dung_cong_trinh_nha_o",
+          "subdomain_label": "Xây dựng công trình, nhà ở",
+          "event_id": 313,
+          "field": "Hoạt động xây dựng",
+          "agency": "Ủy ban nhân dân cấp xã",
+          "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bfe-908d-726f-a05f-7026ac241c2d",
+          "raw_data_file": "C:\\Users\\ku060\\Downloads\\VAIC source\\data-pipeline\\raw_data\\1_013232\\1_013232_procedure_detail.md",
+          "raw_data_available": true,
+          "operation_group": "cap_phep_di_doi_cong_trinh_nha_o",
+          "operation_key": "cap_giay_phep_di_doi_doi_voi_cong_trinh_cap_iii_cap_iv_cong_trinh_khong_theo_tuyen_theo_tuyen_trong_do_thi_tin_nguong_ton_giao_tuong_dai_tranh_hoanh_trang_theo_giai_doan_cho_cong_trinh_khong_theo_tuyen_theo_giai_doan_cho_cong_trinh_theo_tuyen_trong_do_thi_du_an_va_nha_o_rieng_le",
+          "overview": "1. - Chủ đầu tư nộp hồ sơ đề nghị cấp giấy phép di dời công trình cho Trung tâm phục vụ hành chính công cấp xã. - Trong thời hạn 07 ngày làm việc kể từ ngày tiếp nhận hồ sơ, cơ quan có thẩm quyền cấp giấy phép di dời công trình xây dựng phải tổ chức thẩm định hồ sơ, kiểm tra thực địa, thông báo 1 lần bằng văn bản cho chủ đầu tư bổ sung, hoàn thiện hồ sơ nếu tài liệu còn thiếu, tài liệu không đúng quy định hoặc không đúng thực tế. Cơ quan cấp giấy phép xây dựng có trách nhiệm kiểm tra các điều kiện cấp giấy phép xây dựng theo quy định tại tại Điều 50 Nghị định số 175/2024/NĐ-CP ngày 30/12/2024 của Chính phủ. Việc kiểm tra được thực hiện như sau: + Đối chiếu sự phù hợp của bản vẽ thiết kế xây dựng tại hồ sơ đề nghị cấp phép xây dựng với thiết kế cơ sở được cơ quan chuyên môn về xây dựng thẩm định và đóng dấu xác nhận đối với các công trình thuộc dự án có yêu cầu thẩm định báo cáo nghiên cứu khả thi tại cơ quan chuyên môn về xây dựng; + Kiểm tra sự phù hợp của bản vẽ thiết kế xây dựng tại hồ sơ đề nghị cấp phép xây dựng với bản vẽ thiết kế xây dựng được thẩm duyệt về phòng cháy chữa cháy của cơ quan có thẩm quyền đối với các công trình xây dựng thuộc đối tượng có yêu cầu thẩm duyệt về phòng cháy, chữa cháy; + Kiểm tra tính đầy đủ, hợp lệ của báo cáo kết quả thẩm tra (nếu có) đối với công trình có yêu cầu phải thẩm tra thiết kế theo quy định tại Nghị định số 175/2024/NĐ-CP được sửa đổi bổ sung tại Nghị định số 105/2025/NĐ-CP và Nghị định số 144/2025/NĐ-CP. - Trong thời hạn 05 ngày làm việc kể từ ngày nhận bổ sung hồ sơ nhưng chưa đáp ứng được yêu cầu theo văn bản thông báo, cơ quan có thẩm quyền cấp giấy phép xây dựng có trách nhiệm thông báo bằng văn bản hướng dẫn cho chủ đầu tư tiếp tục hoàn thiện hồ sơ. Trường hợp việc bổ sung hồ sơ vẫn không đáp ứng được các nội dung theo thông báo thì trong thời hạn 03 ngày làm việc kể từ ngày nhận hồ sơ bổ sung, cơ quan có thẩm quyền cấp giấy phép xây dựng có trách nhiệm thông báo đến chủ đầu tư về lý do không cấp giấy phép di dời công trình xây dựng. - Cơ quan có thẩm quyền cấp giấy phép xây dựng đối chiếu các điều kiện theo quy định của Luật Xây dựng để gửi văn bản lấy ý kiến của cơ quan quản lý nhà nước liên quan. Trong thời gian 12 ngày kể từ ngày nhận được hồ sơ, các cơ quan quản lý nhà nước được hỏi ý kiến có trách nhiệm trả lời bằng văn bản về những nội dung thuộc chức năng quản lý của mình. Sau thời hạn trên, nếu các cơ quan này không có ý kiến thì được coi là đã đồng ý và phải chịu trách nhiệm về những nội dung thuộc chức năng quản lý của mình; cơ quan cấp giấy phép xây dựng căn cứ các quy định hiện hành để quyết định việc cấp giấy phép di dời công trình xây dựng. - Trong thời hạn 10 ngày làm việc (hoặc 7 ngày làm việc đối với nhà ở riêng lẻ) kể từ ngày nhận đủ hồ sơ hợp lệ, cơ quan có thẩm quyền có trách nhiệm xem xét cấp giấy phép di dời công trình xây dựng.",
+          "procedure_flow": "1. - Chủ đầu tư nộp hồ sơ đề nghị cấp giấy phép di dời công trình cho Trung tâm phục vụ hành chính công cấp xã. - Trong thời hạn 07 ngày làm việc kể từ ngày tiếp nhận hồ sơ, cơ quan có thẩm quyền cấp giấy phép di dời công trình xây dựng phải tổ chức thẩm định hồ sơ, kiểm tra thực địa, thông báo 1 lần bằng văn bản cho chủ đầu tư bổ sung, hoàn thiện hồ sơ nếu tài liệu còn thiếu, tài liệu không đúng quy định hoặc không đúng thực tế. Cơ quan cấp giấy phép xây dựng có trách nhiệm kiểm tra các điều kiện cấp giấy phép xây dựng theo quy định tại tại Điều 50 Nghị định số 175/2024/NĐ-CP ngày 30/12/2024 của Chính phủ. Việc kiểm tra được thực hiện như sau: + Đối chiếu sự phù hợp của bản vẽ thiết kế xây dựng tại hồ sơ đề nghị cấp phép xây dựng với thiết kế cơ sở được cơ quan chuyên môn về xây dựng thẩm định và đóng dấu xác nhận đối với các công trình thuộc dự án có yêu cầu thẩm định báo cáo nghiên cứu khả thi tại cơ quan chuyên môn về xây dựng; + Kiểm tra sự phù hợp của bản vẽ thiết kế xây dựng tại hồ sơ đề nghị cấp phép xây dựng với bản vẽ thiết kế xây dựng được thẩm duyệt về phòng cháy chữa cháy của cơ quan có thẩm quyền đối với các công trình xây dựng thuộc đối tượng có yêu cầu thẩm duyệt về phòng cháy, chữa cháy; + Kiểm tra tính đầy đủ, hợp lệ của báo cáo kết quả thẩm tra (nếu có) đối với công trình có yêu cầu phải thẩm tra thiết kế theo quy định tại Nghị định số 175/2024/NĐ-CP được sửa đổi bổ sung tại Nghị định số 105/2025/NĐ-CP và Nghị định số 144/2025/NĐ-CP. - Trong thời hạn 05 ngày làm việc kể từ ngày nhận bổ sung hồ sơ nhưng chưa đáp ứng được yêu cầu theo văn bản thông báo, cơ quan có thẩm quyền cấp giấy phép xây dựng có trách nhiệm thông báo bằng văn bản hướng dẫn cho chủ đầu tư tiếp tục hoàn thiện hồ sơ. Trường hợp việc bổ sung hồ sơ vẫn không đáp ứng được các nội dung theo thông báo thì trong thời hạn 03 ngày làm việc kể từ ngày nhận hồ sơ bổ sung, cơ quan có thẩm quyền cấp giấy phép xây dựng có trách nhiệm thông báo đến chủ đầu tư về lý do không cấp giấy phép di dời công trình xây dựng. - Cơ quan có thẩm quyền cấp giấy phép xây dựng đối chiếu các điều kiện theo quy định của Luật Xây dựng để gửi văn bản lấy ý kiến của cơ quan quản lý nhà nước liên quan. Trong thời gian 12 ngày kể từ ngày nhận được hồ sơ, các cơ quan quản lý nhà nước được hỏi ý kiến có trách nhiệm trả lời bằng văn bản về những nội dung thuộc chức năng quản lý của mình. Sau thời hạn trên, nếu các cơ quan này không có ý kiến thì được coi là đã đồng ý và phải chịu trách nhiệm về những nội dung thuộc chức năng quản lý của mình; cơ quan cấp giấy phép xây dựng căn cứ các quy định hiện hành để quyết định việc cấp giấy phép di dời công trình xây dựng. - Trong thời hạn 10 ngày làm việc (hoặc 7 ngày làm việc đối với nhà ở riêng lẻ) kể từ ngày nhận đủ hồ sơ hợp lệ, cơ quan có thẩm quyền có trách nhiệm xem xét cấp giấy phép di dời công trình xây dựng.",
+          "requirements": "Không có thông tin",
+          "submission_methods": [
+            "Trực tuyến",
+            "Dịch vụ bưu chính",
+            "Trực tiếp"
+          ],
+          "processing_time_values": [
+            "10 ngày",
+            "10 ngày",
+            "10 ngày"
+          ],
+          "document_groups": [],
+          "result_items": [
+            "- Giấy phép di dời công trình kèm theo hồ sơ thiết kế trình xin cấp giấy phép xây dựng có đóng dấu của cơ quan có thẩm quyền cấp giấy phép xây dựng. (Mã: `KQ.G17.000313`)"
+          ]
+        },
+        {
+          "procedure_code": "1.014632",
+          "procedure_title": "Đăng ký mua, thuê mua, thuê nhà ở xã hội, vay vốn để hộ gia đình, cá nhân tự xây dựng hoặc cải tạo, sửa chữa nhà ở",
+          "subdomain_key": "xay_dung_cong_trinh_nha_o",
+          "subdomain_label": "Xây dựng công trình, nhà ở",
+          "event_id": 313,
+          "field": "Nhà ở và công sở",
+          "agency": "Công an cấp Xã; Ủy ban nhân dân cấp xã; Cơ quan bảo hiểm xã hội; Cơ quan có thẩm quyền cấp Giấy chứng nhận quyền sử dụng đất, quyền sở hữu tài sản gắn liền với đất theo quy định của pháp luật về đất đai tại tỉnh, thành phố trực thuộc trung ương nơi có dự án nhà ở xã hội",
+          "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bfe-985c-732b-822b-460f2199467e",
+          "raw_data_file": "C:\\Users\\ku060\\Downloads\\VAIC source\\data-pipeline\\raw_data\\1_014632\\1_014632_procedure_detail.md",
+          "raw_data_available": true,
+          "operation_group": "tiep_can_nha_o_xa_hoi",
+          "operation_key": "dang_ky_mua_thue_mua_thue_nha_o_xa_hoi_vay_von_de_ho_gia_dinh_ca_nhan_tu_xay_dung_hoac_cai_tao_sua_chua_nha_o",
+          "overview": "1. **Trường hợp 1: Xác nhận điều kiện về nhà ở để được mua, thuê mua nhà ở xã hội/nhà ở cho lực lượng vũ trang nhân dân (trường hợp chưa có nhà ở thuộc sở hữu của mình)**",
+          "procedure_flow": "1. **Trường hợp 1: Xác nhận điều kiện về nhà ở để được mua, thuê mua nhà ở xã hội/nhà ở cho lực lượng vũ trang nhân dân (trường hợp chưa có nhà ở thuộc sở hữu của mình)** a) Người kê khai gửi giấy xác nhận điều kiện về nhà ở gửi đến cơ quan có thẩm quyền cấp Giấy chứng nhận quyền sử dụng đất, quyền sở hữu tài sản gắn liền với đất theo quy định của pháp luật về đất đai tại tỉnh, thành phố trực thuộc trung ương nơi có dự án nhà ở xã hội b) Trong thời hạn 07 ngày, kể từ ngày nhận được giấy đề nghị xác nhận về điều kiện nhà ở, cơ quan có thẩm quyền cấp Giấy chứng nhận quyền sử dụng đất, quyền sở hữu tài sản gắn liền với đất theo quy định của pháp luật về đất đai tại tỉnh, thành phố trực thuộc trung ương nơi có dự án nhà ở xã hội thực hiện xác nhận. 2. **Trường hợp 2: Xác nhận điều kiện về nhà ở để được mua, thuê mua nhà ở xã hội/nhà ở cho lực lượng vũ trang nhân dân (trường hợp có nhà ở nhưng diện tích nhà ở bình quân đầu người thấp hơn 15m2 sàn/người).** a) Người kê khai gửi giấy xác nhận điều kiện về nhà ở gửi đến Ủy ban nhân dân cấp xã nơi người kê khai đang cư trú theo hình thức đăng ký thường trú. b) Trong thời hạn 07 ngày, kể từ ngày nhận được đơn đề nghị xác nhận, Ủy ban nhân dân cấp xã thực hiện xác nhận. 3. **Trường hợp 3: Xác nhận điều kiện vay vốn ưu đãi của Nhà nước thông qua Ngân hàng Chính sách xã hội để hộ gia đình, cá nhân tự xây dựng hoặc cải tạo, sửa chữa nhà ở.** a) Người kê khai gửi giấy tờ chứng minh điều kiện vay vốn ưu đãi của Nhà nước thông qua Ngân hàng Chính sách xã hội để hộ gia đình, cá nhân tự xây dựng hoặc cải tạo, sửa chữa nhà ở gửi đến Ủy ban nhân dân cấp xã nơi người kê khai đăng ký thường trú. b) Ủy ban nhân dân cấp xã nơi người kê khai đăng ký thường trú đối chiếu điều kiện để được vay vốn ưu đãi, thực hiện việc xác nhận. 4. **Trường hợp 4: Xác nhận điều kiện vay vốn ưu đãi của Nhà nước tại tổ chức tín dụng do Nhà nước chỉ định để hộ gia đình, cá nhân tự xây dựng hoặc cải tạo, sửa chữa nhà ở** a) Người kê khai gửi giấy tờ chứng minh điều kiện vay vốn ưu đãi của Nhà nước tại tổ chức tín dụng do Nhà nước chỉ định để hộ gia đình, cá nhân tự xây dựng hoặc cải tạo, sửa chữa nhà ở gửi đến Ủy ban nhân dân cấp xã nơi người kê khai đăng ký thường trú. b) Ủy ban nhân dân cấp xã nơi người kê khai đăng ký thường trú đối chiếu điều kiện để được vay vốn ưu đãi, thực hiện việc xác nhận. 5. **Trường hợp 5: Xác nhận đối tượng được hưởng chính sách hỗ trợ về nhà ở xã hội (áp dụng cho các đối tượng quy định tại các khoản 9, 10, 11 Điều 76 của Luật Nhà ở và đối tượng quy định tại khoản 5 Điều 76 của Luật Nhà ở không có hợp đồng lao động, không được hưởng lương hưu do cơ quan Bảo hiểm xã hội chi trả)** a) Người kê khai gửi giấy tờ chứng minh đối tượng gửi đến Ủy ban nhân dân cấp xã nơi người kê khai đăng ký thường trú hoặc tạm trú hoặc nơi ở hiện tại trong trường hợp: đối tượng quy định tại khoản 10 Điều 76 của Luật Nhà ở. b) Ủy ban nhân dân cấp xã nơi người kê khai đăng ký thường trú hoặc tạm trú hoặc nơi ở hiện tại thực hiện việc xác nhận. 6. **Trường hợp 6: Xác nhận đối tượng, thu nhập để được hưởng chính sách hỗ trợ về nhà ở xã hội (áp dụng cho các đối tượng quy định tại các khoản 5, 6, 8 Điều 76 của Luật Nhà ở, trừ đối tượng quy định tại khoản 5 Điều 76 của Luật Nhà ở không có hợp đồng lao động, không được hưởng lương hưu do cơ quan Bảo hiểm xã hội chi trả).** a) Người kê khai gửi giấy tờ chứng minh đối tượng, thu nhập gửi đến cơ quan Bảo hiểm xã hội hoặc Ủy ban nhân dân cấp xã nơi người kê khai đăng ký thường trú hoặc tạm trú hoặc nơi ở hiện tại. b) Cơ quan Bảo hiểm xã hội hoặc Ủy ban nhân dân cấp xã nơi người kê khai đăng ký thường trú hoặc tạm trú hoặc nơi ở hiện tại thực hiện việc xác nhận. 7. **Trường hợp 7: Xác nhận điều kiện về thu nhập để được mua, thuê mua nhà ở xã hội (áp dụng cho đối tượng quy định tại khoản 5 Điều 76 của Luật Nhà ở không có hợp đồng lao động, không được hưởng lương hưu do cơ quan Bảo hiểm xã hội chi trả).** a) Người kê khai gửi giấy tờ chứng minh điều kiện về thu nhập để được mua, thuê mua nhà ở xã hội gửi đến Cơ quan Công an cấp xã nơi thường trú hoặc tạm trú hoặc nơi ở hiện tại. b) Trong thời hạn 07 ngày, kể từ ngày nhận được đơn đề nghị xác nhận Cơ quan Công an cấp xã nơi thường trú hoặc tạm trú hoặc nơi ở hiện tại thực hiện việc xác nhận.",
+          "requirements": "Không có thông tin",
+          "submission_methods": [
+            "Trực tuyến",
+            "Dịch vụ bưu chính",
+            "Trực tiếp"
+          ],
+          "processing_time_values": [
+            "7 ngày",
+            "7 ngày",
+            "7 ngày"
+          ],
+          "document_groups": [
+            {
+              "group_name": "Trường hợp 1: Xác nhận điều kiện về nhà ở để được mua, thuê mua  nhà ở xã hội/nhà ở cho lực lượng vũ trang nhân dân (trường hợp chưa có  nhà ở thuộc sở hữu của mình).",
+              "documents": [
+                {
+                  "Tên giấy tờ": "Giấy tờ chứng minh điều kiện về nhà ở để được mua, thuê mua  nhà ở xã hội/nhà ở cho lực lượng vũ trang nhân dân",
+                  "Bản chính": "1",
+                  "Bản sao": "1",
+                  "Tệp đính kèm": "[Mau 2 CHUNGMINH DIEU KIEN NOXH LLVT chua co SHNO.docx](file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/1_014632/Mau%202%20CHUNGMINH%20DIEU%20KIEN%20NOXH%20LLVT%20chua%20co%20SHNO.docx)"
+                }
+              ]
+            },
+            {
+              "group_name": "Trường hợp 2: Xác nhận điều kiện về nhà ở để được mua, thuê mua nhà ở xã hội/nhà ở cho lực lượng vũ trang nhân dân (trường hợp có nhà ở nhưng diện tích nhà ở bình quân đầu người thấp hơn 15m2 sàn/người).",
+              "documents": [
+                {
+                  "Tên giấy tờ": "Giấy tờ chứng minh điều kiện về nhà ở để được mua, thuê mua nhà ở xã hội/nhà ở cho lực lượng vũ trang nhân dân (trường hợp có nhà ở nhưng diện tích nhà ở bình quân đầu người thấp hơn 15m2 sàn/người).",
+                  "Bản chính": "1",
+                  "Bản sao": "1",
+                  "Tệp đính kèm": "[PhulucTT 05 2024 BXD mau so 03 XACNHAN DIEUKIEN NHA O dientich duoi 15m2.docx](file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/1_014632/PhulucTT%2005%202024%20BXD%20mau%20so%2003%20XACNHAN%20DIEUKIEN%20NHA%20O%20dientich%20duoi%2015m2.docx)"
+                }
+              ]
+            },
+            {
+              "group_name": "Trường hợp 3: Xác nhận điều kiện vay vốn ưu đãi của Nhà nước thông qua Ngân hàng Chính sách xã hội để hộ gia đình, cá nhân tự xây dựng hoặc cải tạo, sửa chữa nhà ở.",
+              "documents": [
+                {
+                  "Tên giấy tờ": "Giấy tờ chứng minh điều kiện vay vốn ưu đãi của Nhà nước thông qua Ngân hàng Chính sách xã hội để hộ gia đình, cá nhân tự xây dựng hoặc cải tạo, sửa chữa nhà ở.",
+                  "Bản chính": "1",
+                  "Bản sao": "1",
+                  "Tệp đính kèm": "[phuluc TT05 BXD 31 7 2024 Mauso06 GIAYTOCHUNGMINH DIEUKIEN VAYVON UUDAI NHCSXH.docx](file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/1_014632/phuluc%20TT05%20BXD%2031%207%202024%20Mauso06%20GIAYTOCHUNGMINH%20DIEUKIEN%20VAYVON%20UUDAI%20NHCSXH.docx)"
+                }
+              ]
+            },
+            {
+              "group_name": "Trường hợp 4: Xác nhận điều kiện vay vốn ưu đãi của Nhà nước tại tổ chức tín dụng do Nhà nước chỉ định để hộ gia đình, cá nhân tự xây dựng hoặc cải tạo, sửa chữa nhà ở",
+              "documents": [
+                {
+                  "Tên giấy tờ": "Giấy tờ chứng minh điều kiện vay vốn ưu đãi của Nhà nước tại tổ chức tín dụng do Nhà nước chỉ định để hộ gia đình, cá nhân tự xây dựng hoặc cải tạo, sửa chữa nhà ở.",
+                  "Bản chính": "1",
+                  "Bản sao": "1",
+                  "Tệp đính kèm": "[TT05 Mauso07 GIAYTOCHUNGMINH DIEUKIEN VAYVON UUDAI TOCHUC TINDUNG.docx](file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/1_014632/TT05%20Mauso07%20GIAYTOCHUNGMINH%20DIEUKIEN%20VAYVON%20UUDAI%20TOCHUC%20TINDUNG.docx)"
+                }
+              ]
+            },
+            {
+              "group_name": "Trường hợp 5: Xác nhận đối tượng được hưởng chính sách hỗ trợ về nhà ở xã hội (áp dụng cho các đối tượng quy định tại các khoản 9, 10, 11 Điều 76 của Luật Nhà ở và đối tượng quy định tại khoản 5 Điều 76 của Luật Nhà ở không có hợp đồng lao động, không được hưởng lương hưu do cơ quan Bảo hiểm xã hội chi trả)",
+              "documents": [
+                {
+                  "Tên giấy tờ": "Giấy tờ chứng minh đối tượng được hưởng chính sách hỗ trợ về nhà ở xã hội (áp dụng cho các đối tượng quy định tại các khoản 9, 10, 11 Điều 76 của Luật Nhà ở và đối tượng quy định tại khoản 5 Điều 76 của Luật Nhà ở không có hợp đồng lao động, không được hưởng lương hưu do cơ quan Bảo hiểm xã hội chi trả).",
+                  "Bản chính": "1",
+                  "Bản sao": "1",
+                  "Tệp đính kèm": "[Mau so 01 XACNHAN DOITUONG k9 10 11 D76 LNO.docx](file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/1_014632/Mau%20so%2001%20XACNHAN%20DOITUONG%20k9%2010%2011%20D76%20LNO.docx)"
+                }
+              ]
+            },
+            {
+              "group_name": "Trường hợp 6: Xác nhận đối tượng, thu nhập để được hưởng chính sách hỗ trợ về nhà ở xã hội (áp dụng cho các đối tượng quy định tại các khoản 5, 6, 8 Điều 76 của Luật Nhà ở, trừ đối tượng quy định tại khoản 5 Điều 76 của Luật Nhà ở không có hợp đồng lao động, không được hưởng lương hưu do cơ quan Bảo hiểm xã hội chi trả).",
+              "documents": [
+                {
+                  "Tên giấy tờ": "Giấy tờ chứng minh đối tượng, thu nhập để được hưởng chính sách hỗ trợ về nhà ở xã hội (áp dụng cho các đối tượng quy định tại các khoản 5, 6, 8 Điều 76 của Luật Nhà ở, trừ đối tượng quy định tại khoản 5 Điều 76 của Luật Nhà ở không có hợp đồng lao động, không được hưởng lương hưu do cơ quan Bảo hiểm xã hội chi trả).",
+                  "Bản chính": "1",
+                  "Bản sao": "1",
+                  "Tệp đính kèm": "[Mau 01a  XACNHAN DOITUONG THUNHAP k5 6 8 D76.docx](file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/1_014632/Mau%2001a%20%20XACNHAN%20DOITUONG%20THUNHAP%20k5%206%208%20D76.docx)"
+                }
+              ]
+            },
+            {
+              "group_name": "Trường hợp 7: Xác nhận điều kiện về thu nhập để được mua, thuê mua nhà ở xã hội (áp dụng cho đối tượng quy định tại khoản 5 Điều 76 của Luật Nhà ở không có hợp đồng lao động, không được hưởng lương hưu do cơ quan Bảo hiểm xã hội chi trả).",
+              "documents": [
+                {
+                  "Tên giấy tờ": "Giấy tờ chứng minh điều kiện về thu nhập để được mua, thuê mua nhà ở xã hội (áp dụng cho đối tượng quy định tại khoản 5 Điều 76 của Luật Nhà ở không có hợp đồng lao động, không được hưởng lương hưu do cơ quan Bảo hiểm xã hội chi trả).",
+                  "Bản chính": "1",
+                  "Bản sao": "1",
+                  "Tệp đính kèm": "[Mau 5 DOI TUONG THU NHAP khoan 5 D76 khong HD khong luong BHXH.docx](file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/1_014632/Mau%205%20DOI%20TUONG%20THU%20NHAP%20khoan%205%20D76%20khong%20HD%20khong%20luong%20BHXH.docx)"
+                }
+              ]
+            }
+          ],
+          "result_items": [
+            "Giấy xác nhận (Mã: `KQ.G04.000061`)"
+          ]
+        },
+        {
+          "procedure_code": "1.115150",
+          "procedure_title": "Thủ tục bán, cho thuê mua, cho thuê nhà ở xã hội được đầu tư xây dựng theo dự án và không sử dụng vốn đầu tư công, nguồn tài chính công đoàn",
+          "subdomain_key": "xay_dung_cong_trinh_nha_o",
+          "subdomain_label": "Xây dựng công trình, nhà ở",
+          "event_id": 313,
+          "field": "Nhà ở và công sở",
+          "agency": "Chủ đầu tư dự án đầu tư xây dựng nhà ở xã hội",
+          "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019e4500-3adb-735c-a722-b7359babf7e4",
+          "raw_data_file": "C:\\Users\\ku060\\Downloads\\VAIC source\\data-pipeline\\raw_data\\1_115150\\1_115150_procedure_detail.md",
+          "raw_data_available": true,
+          "operation_group": "tiep_can_nha_o_xa_hoi",
+          "operation_key": "thu_tuc_ban_cho_thue_mua_cho_thue_nha_o_xa_hoi_duoc_dau_tu_xay_dung_theo_du_an_va_khong_su_dung_von_dau_tu_cong_nguon_tai_chinh_cong_doan",
+          "overview": "1. Trên cơ sở các thông tin về dự án nhà ở xã hội đã được công khai, hộ gia đình, cá nhân có nhu cầu nộp hồ sơ mua nhà ở xã hội cho chủ đầu tư dự án. Mỗi hộ gia đình, cá nhân có nhu cầu mua nhà ở xã hội không được đồng thời đăng ký mua nhà ở xã hội tại nhiều dự án trong cùng một thời điểm.",
+          "procedure_flow": "1. Trên cơ sở các thông tin về dự án nhà ở xã hội đã được công khai, hộ gia đình, cá nhân có nhu cầu nộp hồ sơ mua nhà ở xã hội cho chủ đầu tư dự án. Mỗi hộ gia đình, cá nhân có nhu cầu mua nhà ở xã hội không được đồng thời đăng ký mua nhà ở xã hội tại nhiều dự án trong cùng một thời điểm. 2. Trong thời hạn 10 ngày, kể từ ngày hết hạn nộp hồ sơ, chủ đầu tư có trách nhiệm tổng hợp Danh sách đăng ký mua nhà ở xã hội, trong đó thể hiện thông tin cá nhân của người đăng ký và các thành viên trong hộ gia đình được khai tại Đơn đăng ký mua nhà ở xã hội gửi Sở Xây dựng địa phương nơi có dự án để kiểm tra người đăng ký mua nhà ở xã hội đã được hưởng hoặc chưa được hưởng chính sách hỗ trợ về nhà ở theo quy định của pháp luật về nhà ở. Sở Xây dựng có trách nhiệm trả lời bằng văn bản trong thời hạn 10 ngày kể từ ngày nhận được Danh sách đăng ký. Chủ đầu tư có trách nhiệm rà soát, đánh giá, tổng hợp ý kiến của Sở Xây dựng và đối chiếu với các quy định của pháp luật về nhà ở để xác định hồ sơ đáp ứng điều kiện được hưởng chính sách hỗ trợ về nhà ở xã hội. 3. Trong thời hạn 30 ngày kể từ ngày hết hạn nộp hồ sơ, chủ đầu tư có trách nhiệm công khai Danh sách các hồ sơ đáp ứng đủ điều kiện mua nhà ở xã hội. Đối với hồ sơ không đáp ứng đủ điều kiện thì gửi trả lại và nêu rõ lý do trong thời hạn 15 ngày kể từ ngày công khai Danh sách 4. Sau khi nhà ở đủ điều kiện được bán theo quy định của pháp luật về kinh doanh bất động sản, chủ đầu tư thực hiện ký kết Hợp đồng mua bán nhà ở xã hội với khách hàng; đồng thời cập nhật thông tin về giao dịch, đối tượng đã mua nhà ở xã hội theo quy định của pháp luật về nhà ở, pháp luật về xây dựng và quản lý hệ thống thông tin, cơ sở dữ liệu về nhà ở và thị trường bất động sản. 5. Chủ đầu tư dự án có trách nhiệm công bố công khai Danh sách các khách hàng đã ký hợp đồng mua bán nhà ở xã hội (bao gồm cả các thành viên trong hộ gia đình) tại trụ sở làm việc của chủ đầu tư, tại địa điểm thực hiện dự án và tại Sàn giao dịch bất động sản (nếu có) hoặc trang thông tin điện tử về nhà ở xã hội của chủ đầu tư (nếu có)",
+          "requirements": "1/ Điều kiện về nhà ở:- Chưa có nhà ở thuộc sở hữu của mình; - Có nhà ở thuộc sở hữu của mình nhưng diện tích nhà ở bình quân đầu người thấp hơn 15 m2 sàn/người. 2/ Điều kiện về thu nhập- Trường hợp người đứng đơn là người chưa kết hôn hoặc được xác nhận là độc thân thì có thu nhập bình quân hàng tháng thực nhận không quá 20 triệu đồng tính theo Bảng tiền công, tiền lương do cơ quan, đơn vị, doanh nghiệp nơi đối tượng làm việc xác nhận. - Trường hợp người đứng đơn là người chưa kết hôn hoặc được xác nhận là độc thân đang nuôi con dưới tuổi thành niên thì thu nhập bình quân hàng tháng thực nhận không quá 30 triệu đồng tính theo Bảng tiền công, tiền lương do cơ quan, đơn vị, doanh nghiệp nơi đối tượng làm việc xác nhận. - Trường hợp người đứng đơn đã kết hôn theo quy định của pháp luật thì người đứng đơn và vợ (chồng) của người đó có tổng thu nhập bình quân hàng tháng thực nhận không quá 40 triệu đồng tính theo Bảng tiền công, tiền lương do cơ quan, đơn vị, doanh nghiệp nơi đối tượng làm việc xác nhận",
+          "submission_methods": [
+            "Trực tiếp",
+            "Trực tuyến",
+            "Dịch vụ bưu chính"
+          ],
+          "processing_time_values": [
+            "30 ngày",
+            "30 ngày",
+            "30 ngày"
+          ],
+          "document_groups": [],
+          "result_items": [
+            "Hợp đồng mua bán nhà ở xã hội (Mã: `KQ-G17.000004`)"
+          ]
+        }
+      ]
+    }
+  ],
+  "subdomain_key": "xay_dung_cong_trinh_nha_o",
+  "subdomain_label": "Xây dựng công trình, nhà ở"
+}

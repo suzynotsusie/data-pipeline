@@ -1,0 +1,452 @@
+{
+  "schema_version": "3.0",
+  "record_type": "public_service_procedure_payload",
+  "id": "procedure-1.013887",
+  "procedure_code": "1.013887",
+  "code": "1.013887",
+  "title": "Đăng ký lưu hành bổ sung do thay đổi quyền sở hữu số đăng ký lưu hành chế phẩm diệt côn trùng, diệt khuẩn dùng trong lĩnh vực gia dụng và y tế .",
+  "language": "vi",
+  "status": "generated_from_pipeline",
+  "field": "Phòng bệnh",
+  "group_key": "suc_khoe_y_te",
+  "workflow_family": null,
+  "subflow": null,
+  "source": {
+    "source_url": "file:///C:/Users/ku060/Downloads/VAIC%20source/data-pipeline/raw_data/1_013887/1_013887_procedure_detail.md",
+    "source_markdown_path": "C:\\Users\\ku060\\Downloads\\VAIC source\\data-pipeline\\raw_data\\1_013887\\1_013887_procedure_detail.md",
+    "normalized_payload_path": "C:\\Users\\ku060\\Downloads\\VAIC source\\data-pipeline\\govease-unified\\data\\normalized_structured\\1_013887_normalized_structured.json",
+    "enriched_payload_path": "C:\\Users\\ku060\\Downloads\\VAIC source\\data-pipeline\\govease-unified\\data\\enriched_structured_priority\\1_013887_enriched_structured.json"
+  },
+  "scope": {
+    "included": "Thủ tục này thuộc nhóm y tế, thường cần đối chiếu thông tin người bệnh, đơn vị tiếp nhận hoặc quyền lợi chuyên ngành. Kết quả thường nhận được là Văn bản đồng ý hoặc không đồng ý. Thời gian xử lý tham khảo: 15 ngày làm việc.",
+    "not_included": []
+  },
+  "agency": {
+    "executing_agency": "Cơ quan chuyên môn về y tế thuộc Uỷ ban nhân dân cấp tỉnh",
+    "submission_place": null,
+    "receiving_places": []
+  },
+  "target_users": [
+    "Doanh nghiệp",
+    "Tổ chức nước ngoài",
+    "Hợp tác xã",
+    "Tổ chức (không bao gồm doanh nghiệp",
+    "HTX)",
+    "Doanh nghiệp có vốn đầu tư nước ngoài"
+  ],
+  "submission_methods": [
+    {
+      "code": "IN_PERSON",
+      "label": "Trực tiếp",
+      "processing_time": "15 ngày làm việc",
+      "fee": null,
+      "description": "Kể từ ngày nhận được đủ hồ sơ hợp lệ"
+    },
+    {
+      "code": "ONLINE",
+      "label": "Trực tuyến",
+      "processing_time": "15 ngày làm việc",
+      "fee": null,
+      "description": "Kể từ ngày nhận được đủ hồ sơ hợp lệ"
+    },
+    {
+      "code": "POSTAL",
+      "label": "Dịch vụ bưu chính",
+      "processing_time": "15 ngày làm việc",
+      "fee": null,
+      "description": "Kể từ ngày nhận được đủ hồ sơ hợp lệ"
+    }
+  ],
+  "processing_note": "Thời gian xử lý tham chiếu: 15 ngày làm việc. Nên xác định rõ đối tượng tham gia, quyền lợi hoặc nhu cầu điều chỉnh hồ sơ y tế trước khi nộp. Có thể chọn kênh nộp phù hợp: Trực tiếp, Trực tuyến, Dịch vụ bưu chính. Hiện có khoảng 5 mục giấy tờ cần theo dõi trong checklist.",
+  "documents": {
+    "normally_required": [
+      {
+        "name": "3. Văn bản chuyển quyền sở hữu số đăng ký lưu hành của chủ sở hữu số đăng ký lưu hành (Bản gốc văn bản).",
+        "quantity": "1 bản chính, 0 bản sao",
+        "notes": [],
+        "group": "default",
+        "attachment_path": null
+      },
+      {
+        "name": "5. Giấy tờ về tư cách pháp nhân của cơ sở đăng ký, cơ sở sản xuất (Bản sao hợp lệ giấy tờ về tư cách pháp nhân của cơ sở đăng ký, cơ sở sản xuất hoặc bản sao giấy tờ về tư cách pháp nhân của cơ sở đăng ký, cơ sở sản xuất có đóng dấu của đơn vị được cấp theo quy định tại Nghị định số 129/2024/NĐ-CP).",
+        "quantity": "0 bản chính, 1 bản sao",
+        "notes": [],
+        "group": "default",
+        "attachment_path": null
+      },
+      {
+        "name": "4. Văn bản tiếp nhận quyền sở hữu số đăng ký lưu hành và cam kết sau khi tiếp nhận số đăng ký lưu hành sẽ tiếp tục đảm bảo việc kinh doanh chế phẩm đúng với hồ sơ đã được Cơ quan chuyên môn về y tế thuộc Ủy ban nhân dân cấp tỉnh phê duyệt (Bản gốc văn bản).",
+        "quantity": "1 bản chính, 0 bản sao",
+        "notes": [],
+        "group": "default",
+        "attachment_path": null
+      }
+    ],
+    "conditional": [
+      {
+        "condition": "2. Giấy ủy quyền thực hiện việc đăng ký lưu hành trừ trường hợp quy định tại điểm a khoản 1 Điều 20 Nghị định số 91/2016/NĐ-CP (Bản gốc Giấy ủy quyền thực hiện việc đăng ký lưu hành. Giấy ủy quyền phải đáp ứng yêu cầu tại Phụ lục VII ban hành kèm theo Nghị định số 129/2024/NĐ-CP).",
+        "document": "2. Giấy ủy quyền thực hiện việc đăng ký lưu hành trừ trường hợp quy định tại điểm a khoản 1 Điều 20 Nghị định số 91/2016/NĐ-CP (Bản gốc Giấy ủy quyền thực hiện việc đăng ký lưu hành. Giấy ủy quyền phải đáp ứng yêu cầu tại Phụ lục VII ban hành kèm theo Nghị định số 129/2024/NĐ-CP).",
+        "quantity": "1 bản chính, 0 bản sao",
+        "notes": [],
+        "attachment_path": null
+      },
+      {
+        "condition": "6. Mẫu nhãn mới của chế phẩm (Mẫu nhãn của tất cả các quy cách đóng gói theo kích thước thực có xác nhận của cơ sở đăng ký. Trường hợp nhiều quy cách đóng gói có nhãn thiết kế giống nhau, cơ sở đăng ký nộp nhãn của quy cách đóng gói nhỏ nhất. Trường hợp mẫu nhãn chế phẩm nhập khẩu ghi bằng tiếng nước ngoài thì phải kèm theo nội dung nhãn phụ bằng tiếng Việt. Mẫu nhãn, nội dung nhãn phụ của chế phẩm phải đáp ứng các yêu cầu tại Phụ lục IX ban hành kèm theo Nghị định số 129/2024/NĐ-CP).",
+        "document": "6. Mẫu nhãn mới của chế phẩm (Mẫu nhãn của tất cả các quy cách đóng gói theo kích thước thực có xác nhận của cơ sở đăng ký. Trường hợp nhiều quy cách đóng gói có nhãn thiết kế giống nhau, cơ sở đăng ký nộp nhãn của quy cách đóng gói nhỏ nhất. Trường hợp mẫu nhãn chế phẩm nhập khẩu ghi bằng tiếng nước ngoài thì phải kèm theo nội dung nhãn phụ bằng tiếng Việt. Mẫu nhãn, nội dung nhãn phụ của chế phẩm phải đáp ứng các yêu cầu tại Phụ lục IX ban hành kèm theo Nghị định số 129/2024/NĐ-CP).",
+        "quantity": "0 bản chính, 1 bản sao",
+        "notes": [],
+        "attachment_path": null
+      }
+    ],
+    "forms": [],
+    "presented": [],
+    "notes": [],
+    "summary": [
+      {
+        "group": "default",
+        "name": "3. Văn bản chuyển quyền sở hữu số đăng ký lưu hành của chủ sở hữu số đăng ký lưu hành (Bản gốc văn bản).",
+        "quantity": "1 bản chính, 0 bản sao",
+        "notes": [],
+        "attachment_path": null
+      },
+      {
+        "group": "default",
+        "name": "5. Giấy tờ về tư cách pháp nhân của cơ sở đăng ký, cơ sở sản xuất (Bản sao hợp lệ giấy tờ về tư cách pháp nhân của cơ sở đăng ký, cơ sở sản xuất hoặc bản sao giấy tờ về tư cách pháp nhân của cơ sở đăng ký, cơ sở sản xuất có đóng dấu của đơn vị được cấp theo quy định tại Nghị định số 129/2024/NĐ-CP).",
+        "quantity": "0 bản chính, 1 bản sao",
+        "notes": [],
+        "attachment_path": null
+      },
+      {
+        "group": "default",
+        "name": "4. Văn bản tiếp nhận quyền sở hữu số đăng ký lưu hành và cam kết sau khi tiếp nhận số đăng ký lưu hành sẽ tiếp tục đảm bảo việc kinh doanh chế phẩm đúng với hồ sơ đã được Cơ quan chuyên môn về y tế thuộc Ủy ban nhân dân cấp tỉnh phê duyệt (Bản gốc văn bản).",
+        "quantity": "1 bản chính, 0 bản sao",
+        "notes": [],
+        "attachment_path": null
+      },
+      {
+        "group": null,
+        "name": null,
+        "quantity": "1 bản chính, 0 bản sao",
+        "notes": [],
+        "attachment_path": null
+      },
+      {
+        "group": null,
+        "name": null,
+        "quantity": "0 bản chính, 1 bản sao",
+        "notes": [],
+        "attachment_path": null
+      }
+    ]
+  },
+  "steps": [
+    {
+      "order": 1,
+      "title": "Bước 1",
+      "description": "1. **Bước 1:**",
+      "example": null
+    },
+    {
+      "order": 2,
+      "title": "Bước 2",
+      "description": "Cơ sở đăng ký lưu hành bổ sung nộp hồ sơ đến Cơ quan chuyên môn về y tế thuộc Ủy ban nhân dân cấp tỉnh.",
+      "example": null
+    },
+    {
+      "order": 3,
+      "title": "Bước 3",
+      "description": "2. **Bước 2:**",
+      "example": null
+    },
+    {
+      "order": 4,
+      "title": "Bước 4",
+      "description": "Sau khi nhận được hồ sơ đăng ký lưu hành bổ sung đầy đủ và phí thẩm định hồ sơ, Cơ quan chuyên môn về y tế thuộc Ủy ban nhân dân cấp tỉnh gửi cho cơ sở đăng ký Phiếu tiếp nhận hồ sơ theo Mẫu số 05 tại Phụ lục III ban hành kèm theo Nghị định số 91/2016/NĐ-CP.",
+      "example": null
+    },
+    {
+      "order": 5,
+      "title": "Bước 5",
+      "description": "3. **Bước 3:**",
+      "example": null
+    },
+    {
+      "order": 6,
+      "title": "Bước 6",
+      "description": "Trong thời hạn 15 ngày làm việc, kể từ ngày ghi trên Phiếu tiếp nhận hồ sơ, Cơ quan chuyên môn về y tế thuộc Ủy ban nhân dân cấp tỉnh có trách nhiệm thông báo bằng văn bản cho cơ sở đăng ký lưu hành bổ sung về việc bổ sung, sửa đổi hồ sơ; đồng ý hoặc không đồng ý với nội dung đăng ký lưu hành bổ sung và nêu rõ lý do.",
+      "example": "15 ngày làm việc"
+    },
+    {
+      "order": 7,
+      "title": "Bước 7",
+      "description": "4. **Bước 4:**",
+      "example": null
+    },
+    {
+      "order": 8,
+      "title": "Bước 8",
+      "description": "Trường hợp Cơ quan chuyên môn về y tế thuộc Ủy ban nhân dân cấp tỉnh có văn bản yêu cầu sửa đổi, bổ sung hồ sơ, trong thời hạn 90 ngày kể từ ngày ghi trên văn bản, cơ sở đăng ký lưu hành bổ sung phải hoàn chỉnh hồ sơ, giải trình bằng văn bản và gửi đến Cơ quan chuyên môn về y tế thuộc Ủy ban nhân dân cấp tỉnh. Ngày tiếp nhận hồ sơ bổ sung, sửa đổi được ghi trên Phiếu tiếp nhận hồ sơ. Quá thời hạn trên, hồ sơ đăng ký lưu hành bổ sung sẽ bị hủy bỏ.",
+      "example": "90 ngày"
+    },
+    {
+      "order": 9,
+      "title": "Bước 9",
+      "description": "Trường hợp cơ sở đăng ký không nộp hồ sơ đúng hạn vì lý do bất khả kháng như: thiên tai, thảm họa, dịch bệnh, hỏa hoạn,… thì được nộp hồ sơ muộn hơn theo quy định nhưng không quá 12 tháng kể từ ngày hết hạn bổ sung hồ sơ kèm theo văn bản giải trình.",
+      "example": "12 tháng"
+    },
+    {
+      "order": 10,
+      "title": "Bước 10",
+      "description": "5. **Bước 5:**",
+      "example": null
+    },
+    {
+      "order": 11,
+      "title": "Bước 11",
+      "description": "Nếu không còn yêu cầu sửa đổi, bổ sung, Cơ quan chuyên môn về y tế thuộc Ủy ban nhân dân cấp tỉnh phải thực hiện việc bổ sung Giấy chứng nhận đăng ký lưu hành.",
+      "example": null
+    }
+  ],
+  "input_fields": [
+    {
+      "field": "request_subject",
+      "label": "Đối tượng làm thủ tục",
+      "type": "string",
+      "required": true
+    },
+    {
+      "field": "insurance_or_medical_need",
+      "label": "Nhu cầu bảo hiểm hoặc y tế",
+      "type": "string",
+      "required": true
+    },
+    {
+      "field": "submission_channel_preference",
+      "label": "Kênh nộp dự kiến",
+      "type": "enum",
+      "required": false,
+      "options": [
+        "Trực tiếp",
+        "Trực tuyến",
+        "Dịch vụ bưu chính"
+      ]
+    },
+    {
+      "field": "has_insurance_number",
+      "label": "Đã có mã BHXH/BHYT",
+      "type": "boolean",
+      "required": false
+    }
+  ],
+  "validation_rules": [
+    {
+      "id": "required-1",
+      "severity": "error",
+      "field": "request_subject",
+      "rule": "Trường bắt buộc phải có dữ liệu hợp lệ trước khi nộp.",
+      "message": "Thiếu trường bắt buộc: Đối tượng làm thủ tục."
+    },
+    {
+      "id": "required-2",
+      "severity": "error",
+      "field": "insurance_or_medical_need",
+      "rule": "Trường bắt buộc phải có dữ liệu hợp lệ trước khi nộp.",
+      "message": "Thiếu trường bắt buộc: Nhu cầu bảo hiểm hoặc y tế."
+    },
+    {
+      "id": "hint-1",
+      "severity": "warning",
+      "field": "general",
+      "rule": "Nên xác định trước kênh nộp hồ sơ để biết có cần bản giấy, bản điện tử hay xuất trình trực tiếp.",
+      "message": "Nên xác định trước kênh nộp hồ sơ để biết có cần bản giấy, bản điện tử hay xuất trình trực tiếp."
+    },
+    {
+      "id": "hint-2",
+      "severity": "warning",
+      "field": "general",
+      "rule": "Nên xác định đúng nhóm đối tượng, mã số bảo hiểm và quyền lợi áp dụng trước khi nộp.",
+      "message": "Nên xác định đúng nhóm đối tượng, mã số bảo hiểm và quyền lợi áp dụng trước khi nộp."
+    }
+  ],
+  "common_errors": [
+    {
+      "field": "general",
+      "issue": "Thiếu giấy tờ hoặc nội dung ủy quyền phù hợp.",
+      "fix": "Nên xác định trước kênh nộp hồ sơ để biết có cần bản giấy, bản điện tử hay xuất trình trực tiếp."
+    },
+    {
+      "field": "general",
+      "issue": "Thiếu giấy tờ hợp pháp hóa hoặc giấy tờ nhân thân của phía nước ngoài.",
+      "fix": "Nên xác định trước kênh nộp hồ sơ để biết có cần bản giấy, bản điện tử hay xuất trình trực tiếp."
+    },
+    {
+      "field": "general",
+      "issue": "Điền sai mẫu tờ khai hoặc chọn sai biểu mẫu đi kèm.",
+      "fix": "Nên xác định trước kênh nộp hồ sơ để biết có cần bản giấy, bản điện tử hay xuất trình trực tiếp."
+    }
+  ],
+  "clarifying_questions": [
+    {
+      "id": "clarify_1",
+      "question": "Bạn đang muốn đăng ký, điều chỉnh hay xác nhận quyền lợi y tế hoặc bảo hiểm nào?",
+      "purpose": "workflow_intake"
+    },
+    {
+      "id": "clarify_2",
+      "question": "Bạn đã có mã BHXH/BHYT hoặc thông tin đơn vị tiếp nhận liên quan chưa?",
+      "purpose": "workflow_intake"
+    }
+  ],
+  "legal_basis": [
+    {
+      "title": "Thông tư quy định mức thu, miễn một số khoản phí, lệ phí nhằm hỗ trợ cho doanh nghiệp, người dân",
+      "code": "64/2025/TT-BTC"
+    },
+    {
+      "title": "Nghị định sửa đổi, bổ sung một số Điều của Nghị định số 91/2016/NĐ-CP ngày 01 tháng 7 năm 2016 của Chính phủ về quản lý hóa chất, chế phẩm diệt côn trùng, diệt khuẩn dùng trong lĩnh vực gia dụng và y tế; Nghị định số 155/2018/NĐ-CP ngày 12 tháng 11 năm 2018 của Chính phủ sửa đổi, bổ sung một số quy định liên quan đến điều kiện đầu tư kinh doanh thuộc phạm vi quản lý nhà nước của Bộ Y tế",
+      "code": "129/2024/NĐ-CP"
+    },
+    {
+      "title": "NGHỊ ĐỊNH QUY ĐỊNH VỀ PHÂN QUYỀN, PHÂN CẤP TRONG LĨNH VỰC Y TẾ",
+      "code": "148/2025/NĐ-CP"
+    },
+    {
+      "title": "NGHỊ ĐỊNH 155/2018/NĐ-CP SỬA ĐỔI QUY ĐỊNH LIÊN QUAN ĐẾN ĐIỀU KIỆN KINH DOANH THUỘC BỘ Y TẾ",
+      "code": "155/2018/NĐ-CP"
+    },
+    {
+      "title": "Nghị định 91/2016/NĐ-CP-Về quản lý hóa chất, chế phẩm diệt côn trùng, diệt khuẩn dùng trong lĩnh vực gia dụng và y tế",
+      "code": "91/2016/NĐ-CP"
+    },
+    {
+      "title": "Thông tư",
+      "code": "59/2023/TT-BTC"
+    },
+    {
+      "title": "Nghị định số 42/2025/NĐ-CP của Chính phủ: Quy định chức năng, nhiệm vụ, quyền hạn và cơ cấu tổ chức của Bộ Y tế",
+      "code": "42/2025/NĐ-CP"
+    },
+    {
+      "title": "Nghị quyết số 66.18/2026/NQ-CP ngày 18 tháng 5 năm 2026 của Chính phủ về việc phân quyền, cắt giảm, đơn giản hóa thủ tục hành chính, điều kiện kinh doanh",
+      "code": "66.18/2026/NQ-CP"
+    }
+  ],
+  "legal_bases": [
+    {
+      "title": "Thông tư quy định mức thu, miễn một số khoản phí, lệ phí nhằm hỗ trợ cho doanh nghiệp, người dân",
+      "code": "64/2025/TT-BTC"
+    },
+    {
+      "title": "Nghị định sửa đổi, bổ sung một số Điều của Nghị định số 91/2016/NĐ-CP ngày 01 tháng 7 năm 2016 của Chính phủ về quản lý hóa chất, chế phẩm diệt côn trùng, diệt khuẩn dùng trong lĩnh vực gia dụng và y tế; Nghị định số 155/2018/NĐ-CP ngày 12 tháng 11 năm 2018 của Chính phủ sửa đổi, bổ sung một số quy định liên quan đến điều kiện đầu tư kinh doanh thuộc phạm vi quản lý nhà nước của Bộ Y tế",
+      "code": "129/2024/NĐ-CP"
+    },
+    {
+      "title": "NGHỊ ĐỊNH QUY ĐỊNH VỀ PHÂN QUYỀN, PHÂN CẤP TRONG LĨNH VỰC Y TẾ",
+      "code": "148/2025/NĐ-CP"
+    },
+    {
+      "title": "NGHỊ ĐỊNH 155/2018/NĐ-CP SỬA ĐỔI QUY ĐỊNH LIÊN QUAN ĐẾN ĐIỀU KIỆN KINH DOANH THUỘC BỘ Y TẾ",
+      "code": "155/2018/NĐ-CP"
+    },
+    {
+      "title": "Nghị định 91/2016/NĐ-CP-Về quản lý hóa chất, chế phẩm diệt côn trùng, diệt khuẩn dùng trong lĩnh vực gia dụng và y tế",
+      "code": "91/2016/NĐ-CP"
+    },
+    {
+      "title": "Thông tư",
+      "code": "59/2023/TT-BTC"
+    },
+    {
+      "title": "Nghị định số 42/2025/NĐ-CP của Chính phủ: Quy định chức năng, nhiệm vụ, quyền hạn và cơ cấu tổ chức của Bộ Y tế",
+      "code": "42/2025/NĐ-CP"
+    },
+    {
+      "title": "Nghị quyết số 66.18/2026/NQ-CP ngày 18 tháng 5 năm 2026 của Chính phủ về việc phân quyền, cắt giảm, đơn giản hóa thủ tục hành chính, điều kiện kinh doanh",
+      "code": "66.18/2026/NQ-CP"
+    }
+  ],
+  "faq": [
+    {
+      "question": "Có thể nộp qua kênh nào?",
+      "answer": "Các kênh hiện có: Trực tiếp, Trực tuyến, Dịch vụ bưu chính."
+    },
+    {
+      "question": "Thời gian xử lý tham chiếu là bao lâu?",
+      "answer": "Thời gian xử lý tham chiếu hiện có là 15 ngày làm việc."
+    },
+    {
+      "question": "Kết quả chính của thủ tục là gì?",
+      "answer": "Kết quả chính được trích xuất là Văn bản đồng ý hoặc không đồng ý."
+    }
+  ],
+  "guidance": {
+    "highlight_documents": [
+      {
+        "bucket": "required",
+        "name": "3. Văn bản chuyển quyền sở hữu số đăng ký lưu hành của chủ sở hữu số đăng ký lưu hành (Bản gốc văn bản).",
+        "conditions": [],
+        "attachment_path": null
+      },
+      {
+        "bucket": "required",
+        "name": "5. Giấy tờ về tư cách pháp nhân của cơ sở đăng ký, cơ sở sản xuất (Bản sao hợp lệ giấy tờ về tư cách pháp nhân của cơ sở đăng ký, cơ sở sản xuất hoặc bản sao giấy tờ về tư cách pháp nhân của cơ sở đăng ký, cơ sở sản xuất có đóng dấu của đơn vị được cấp theo quy định tại Nghị định số 129/2024/NĐ-CP).",
+        "conditions": [],
+        "attachment_path": null
+      },
+      {
+        "bucket": "required",
+        "name": "4. Văn bản tiếp nhận quyền sở hữu số đăng ký lưu hành và cam kết sau khi tiếp nhận số đăng ký lưu hành sẽ tiếp tục đảm bảo việc kinh doanh chế phẩm đúng với hồ sơ đã được Cơ quan chuyên môn về y tế thuộc Ủy ban nhân dân cấp tỉnh phê duyệt (Bản gốc văn bản).",
+        "conditions": [],
+        "attachment_path": null
+      },
+      {
+        "bucket": "conditional",
+        "name": "2. Giấy ủy quyền thực hiện việc đăng ký lưu hành trừ trường hợp quy định tại điểm a khoản 1 Điều 20 Nghị định số 91/2016/NĐ-CP (Bản gốc Giấy ủy quyền thực hiện việc đăng ký lưu hành. Giấy ủy quyền phải đáp ứng yêu cầu tại Phụ lục VII ban hành kèm theo Nghị định số 129/2024/NĐ-CP).",
+        "conditions": [
+          "2. Giấy ủy quyền thực hiện việc đăng ký lưu hành trừ trường hợp quy định tại điểm a khoản 1 Điều 20 Nghị định số 91/2016/NĐ-CP (Bản gốc Giấy ủy quyền thực hiện việc đăng ký lưu hành. Giấy ủy quyền phải đáp ứng yêu cầu tại Phụ lục VII ban hành kèm theo Nghị định số 129/2024/NĐ-CP)."
+        ],
+        "attachment_path": null
+      },
+      {
+        "bucket": "conditional",
+        "name": "6. Mẫu nhãn mới của chế phẩm (Mẫu nhãn của tất cả các quy cách đóng gói theo kích thước thực có xác nhận của cơ sở đăng ký. Trường hợp nhiều quy cách đóng gói có nhãn thiết kế giống nhau, cơ sở đăng ký nộp nhãn của quy cách đóng gói nhỏ nhất. Trường hợp mẫu nhãn chế phẩm nhập khẩu ghi bằng tiếng nước ngoài thì phải kèm theo nội dung nhãn phụ bằng tiếng Việt. Mẫu nhãn, nội dung nhãn phụ của chế phẩm phải đáp ứng các yêu cầu tại Phụ lục IX ban hành kèm theo Nghị định số 129/2024/NĐ-CP).",
+        "conditions": [
+          "6. Mẫu nhãn mới của chế phẩm (Mẫu nhãn của tất cả các quy cách đóng gói theo kích thước thực có xác nhận của cơ sở đăng ký. Trường hợp nhiều quy cách đóng gói có nhãn thiết kế giống nhau, cơ sở đăng ký nộp nhãn của quy cách đóng gói nhỏ nhất. Trường hợp mẫu nhãn chế phẩm nhập khẩu ghi bằng tiếng nước ngoài thì phải kèm theo nội dung nhãn phụ bằng tiếng Việt. Mẫu nhãn, nội dung nhãn phụ của chế phẩm phải đáp ứng các yêu cầu tại Phụ lục IX ban hành kèm theo Nghị định số 129/2024/NĐ-CP)."
+        ],
+        "attachment_path": null
+      }
+    ],
+    "special_cases": [
+      "Có yếu tố nước ngoài",
+      "Có thể cần giấy tờ ủy quyền"
+    ],
+    "common_errors": [
+      "Thiếu giấy tờ hoặc nội dung ủy quyền phù hợp.",
+      "Thiếu giấy tờ hợp pháp hóa hoặc giấy tờ nhân thân của phía nước ngoài.",
+      "Điền sai mẫu tờ khai hoặc chọn sai biểu mẫu đi kèm."
+    ],
+    "validation_hints": [
+      "Nên xác định trước kênh nộp hồ sơ để biết có cần bản giấy, bản điện tử hay xuất trình trực tiếp.",
+      "Nên xác định đúng nhóm đối tượng, mã số bảo hiểm và quyền lợi áp dụng trước khi nộp."
+    ]
+  },
+  "next_steps": {
+    "summary": "Nên xác định rõ đối tượng tham gia, quyền lợi hoặc nhu cầu điều chỉnh hồ sơ y tế trước khi nộp. Có thể chọn kênh nộp phù hợp: Trực tiếp, Trực tuyến, Dịch vụ bưu chính. Hiện có khoảng 5 mục giấy tờ cần theo dõi trong checklist.",
+    "time_badge": "15 ngày làm việc",
+    "result_label": "Văn bản đồng ý hoặc không đồng ý",
+    "primary_channel": "in_person",
+    "channels": [
+      "in_person",
+      "online",
+      "postal"
+    ]
+  },
+  "notes": [],
+  "provenance": {
+    "pipeline": "raw->structured->normalized->enriched->ui_api_payload",
+    "normalizer_version": "0.2.0",
+    "enricher_version": "0.2.0",
+    "mapping_notes": "excluded_from_clean_workflow_dataset",
+    "supported_group": true
+  }
+}

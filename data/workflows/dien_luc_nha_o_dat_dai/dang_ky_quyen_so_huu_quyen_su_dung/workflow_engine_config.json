@@ -1,0 +1,216 @@
+{
+  "schema_version": "1.0",
+  "domain": "dien_luc_nha_o_dat_dai",
+  "updated_at": "2026-07-18",
+  "source_files": [
+    "C:\\Users\\ku060\\Downloads\\VAIC source\\data-pipeline\\main\\full-data.csv",
+    "C:\\Users\\ku060\\Downloads\\VAIC source\\data-pipeline\\data\\workflows\\dien_luc_nha_o_dat_dai\\summary.csv",
+    "C:\\Users\\ku060\\Downloads\\VAIC source\\data-pipeline\\data\\workflows\\dien_luc_nha_o_dat_dai\\normalized.json",
+    "C:\\Users\\ku060\\Downloads\\VAIC source\\data-pipeline\\raw_data"
+  ],
+  "coverage": {
+    "expected_codes": [
+      "1.012783",
+      "1.012784",
+      "1.012786",
+      "1.012790",
+      "1.013978"
+    ],
+    "covered_codes": [
+      "1.012783",
+      "1.012784",
+      "1.012786",
+      "1.012790",
+      "1.013978"
+    ],
+    "missing_codes": []
+  },
+  "llm_contract": {
+    "role": "parse_user_answer_and_rephrase_question_only",
+    "required_output_schema": {
+      "intent": "dien_luc_nha_o_dat_dai",
+      "current_node": "string",
+      "slot_updates": {
+        "subdomain_key": "dang_ky_quyen_so_huu_quyen_su_dung | chuyen_nhuong_tang_cho_thua_ke | gop_von_the_chap | chuyen_muc_dich_su_dung | xay_dung_cong_trinh_nha_o | cung_cap_dien_nang | unknown",
+        "operation_key": "string",
+        "operation_group": "string"
+      },
+      "confidence": "0_to_1",
+      "needs_human_review": "boolean"
+    }
+  },
+  "entry_prompts": [
+    "Bạn cần làm việc về quyền sử dụng đất, sang tên, thế chấp, chuyển mục đích, xây dựng nhà ở hay điện sinh hoạt?",
+    "Bạn muốn đăng ký mới, chỉnh lý biến động, xin phép xây dựng, đăng ký nhà ở xã hội hay cấp điện mới?"
+  ],
+  "slots": [
+    {
+      "name": "subdomain_key",
+      "required": true,
+      "description": "Nhánh chính của nhóm Điện lực, nhà ở, đất đai."
+    },
+    {
+      "name": "operation_key",
+      "required": true,
+      "description": "Thao tác cụ thể ánh xạ trực tiếp tới thủ tục cuối cùng."
+    },
+    {
+      "name": "operation_group",
+      "required": false,
+      "description": "Nhóm thao tác để gom các thủ tục gần nhau cho UI và parser."
+    }
+  ],
+  "subdomain_catalog": [
+    {
+      "subdomain_key": "dang_ky_quyen_so_huu_quyen_su_dung",
+      "subdomain_label": "Đăng ký quyền sở hữu, quyền sử dụng",
+      "event_id": 287,
+      "summary": "Nhóm thủ tục đăng ký lần đầu, cấp đổi, cấp lại, đính chính và tách thửa liên quan đến quyền sử dụng đất, quyền sở hữu tài sản gắn liền với đất."
+    }
+  ],
+  "decision_tree": {
+    "start_node": "housing_land_electricity_subdomain",
+    "nodes": [
+      {
+        "id": "housing_land_electricity_subdomain",
+        "type": "question",
+        "slot": "subdomain_key",
+        "question": "Bạn đang cần làm việc về sổ đất, sang tên, thế chấp, chuyển mục đích sử dụng đất, xây dựng nhà ở hay cấp điện?",
+        "options": [
+          "dang_ky_quyen_so_huu_quyen_su_dung"
+        ],
+        "prefilled_value": "dang_ky_quyen_so_huu_quyen_su_dung"
+      },
+      {
+        "id": "housing_land_electricity_operation",
+        "type": "question",
+        "slot": "operation_key",
+        "question": "Trong nhánh đã chọn, bạn đang cần thao tác cụ thể nào?",
+        "options_by_subdomain": {
+          "dang_ky_quyen_so_huu_quyen_su_dung": [
+            {
+              "operation_key": "cap_doi_giay_chung_nhan_quyen_su_dung_dat_quyen_so_huu_tai_san_gan_lien_voi_dat",
+              "operation_group": "cap_doi_giay_chung_nhan",
+              "procedure_code": "1.012783",
+              "procedure_title": "Cấp đổi Giấy chứng nhận quyền sử dụng đất, quyền sở hữu tài sản gắn liền với đất"
+            },
+            {
+              "operation_key": "tach_thua_hoac_hop_thua_dat",
+              "operation_group": "tach_hop_thua",
+              "procedure_code": "1.012784",
+              "procedure_title": "Tách thửa hoặc hợp thửa đất."
+            },
+            {
+              "operation_key": "cap_lai_giay_chung_nhan_do_bi_mat",
+              "operation_group": "cap_lai_giay_chung_nhan",
+              "procedure_code": "1.012786",
+              "procedure_title": "Cấp lại Giấy chứng nhận do bị mất"
+            },
+            {
+              "operation_key": "dinh_chinh_giay_chung_nhan_da_cap",
+              "operation_group": "dinh_chinh_giay_chung_nhan",
+              "procedure_code": "1.012790",
+              "procedure_title": "Đính chính Giấy chứng nhận đã cấp."
+            },
+            {
+              "operation_key": "dang_ky_dat_dai_tai_san_gan_lien_voi_dat_cap_giay_chung_nhan_quyen_su_dung_dat_quyen_so_huu_tai_san_gan_lien_voi_dat_lan_dau_doi_voi_ho_gia_dinh_ca_nhan_cong_dong_dan_cu_nguoi_goc_viet_nam_dinh_cu_o_nuoc_ngoai",
+              "operation_group": "dang_ky_lan_dau",
+              "procedure_code": "1.013978",
+              "procedure_title": "Đăng ký đất đai, tài sản gắn liền với đất, cấp Giấy chứng nhận quyền sử dụng đất, quyền sở hữu tài sản gắn liền với đất lần đầu đối với hộ gia đình, cá nhân, cộng đồng dân cư, người gốc Việt Nam định cư ở nước ngoài"
+            }
+          ]
+        },
+        "options": [
+          "cap_doi_giay_chung_nhan_quyen_su_dung_dat_quyen_so_huu_tai_san_gan_lien_voi_dat",
+          "tach_thua_hoac_hop_thua_dat",
+          "cap_lai_giay_chung_nhan_do_bi_mat",
+          "dinh_chinh_giay_chung_nhan_da_cap",
+          "dang_ky_dat_dai_tai_san_gan_lien_voi_dat_cap_giay_chung_nhan_quyen_su_dung_dat_quyen_so_huu_tai_san_gan_lien_voi_dat_lan_dau_doi_voi_ho_gia_dinh_ca_nhan_cong_dong_dan_cu_nguoi_goc_viet_nam_dinh_cu_o_nuoc_ngoai"
+        ]
+      }
+    ],
+    "routes": [
+      {
+        "route_id": "dang_ky_quyen_so_huu_quyen_su_dung-1_012783",
+        "conditions": {
+          "subdomain_key": "dang_ky_quyen_so_huu_quyen_su_dung",
+          "operation_key": "cap_doi_giay_chung_nhan_quyen_su_dung_dat_quyen_so_huu_tai_san_gan_lien_voi_dat"
+        },
+        "procedure_code": "1.012783",
+        "procedure_name": "Cấp đổi Giấy chứng nhận quyền sử dụng đất, quyền sở hữu tài sản gắn liền với đất",
+        "why_this_route": "Route trực tiếp cho nhu cầu 'Cấp đổi Giấy chứng nhận quyền sử dụng đất, quyền sở hữu tài sản gắn liền với đất' trong nhánh 'Đăng ký quyền sở hữu, quyền sử dụng'."
+      },
+      {
+        "route_id": "dang_ky_quyen_so_huu_quyen_su_dung-1_012784",
+        "conditions": {
+          "subdomain_key": "dang_ky_quyen_so_huu_quyen_su_dung",
+          "operation_key": "tach_thua_hoac_hop_thua_dat"
+        },
+        "procedure_code": "1.012784",
+        "procedure_name": "Tách thửa hoặc hợp thửa đất.",
+        "why_this_route": "Route trực tiếp cho nhu cầu 'Tách thửa hoặc hợp thửa đất.' trong nhánh 'Đăng ký quyền sở hữu, quyền sử dụng'."
+      },
+      {
+        "route_id": "dang_ky_quyen_so_huu_quyen_su_dung-1_012786",
+        "conditions": {
+          "subdomain_key": "dang_ky_quyen_so_huu_quyen_su_dung",
+          "operation_key": "cap_lai_giay_chung_nhan_do_bi_mat"
+        },
+        "procedure_code": "1.012786",
+        "procedure_name": "Cấp lại Giấy chứng nhận do bị mất",
+        "why_this_route": "Route trực tiếp cho nhu cầu 'Cấp lại Giấy chứng nhận do bị mất' trong nhánh 'Đăng ký quyền sở hữu, quyền sử dụng'."
+      },
+      {
+        "route_id": "dang_ky_quyen_so_huu_quyen_su_dung-1_012790",
+        "conditions": {
+          "subdomain_key": "dang_ky_quyen_so_huu_quyen_su_dung",
+          "operation_key": "dinh_chinh_giay_chung_nhan_da_cap"
+        },
+        "procedure_code": "1.012790",
+        "procedure_name": "Đính chính Giấy chứng nhận đã cấp.",
+        "why_this_route": "Route trực tiếp cho nhu cầu 'Đính chính Giấy chứng nhận đã cấp.' trong nhánh 'Đăng ký quyền sở hữu, quyền sử dụng'."
+      },
+      {
+        "route_id": "dang_ky_quyen_so_huu_quyen_su_dung-1_013978",
+        "conditions": {
+          "subdomain_key": "dang_ky_quyen_so_huu_quyen_su_dung",
+          "operation_key": "dang_ky_dat_dai_tai_san_gan_lien_voi_dat_cap_giay_chung_nhan_quyen_su_dung_dat_quyen_so_huu_tai_san_gan_lien_voi_dat_lan_dau_doi_voi_ho_gia_dinh_ca_nhan_cong_dong_dan_cu_nguoi_goc_viet_nam_dinh_cu_o_nuoc_ngoai"
+        },
+        "procedure_code": "1.013978",
+        "procedure_name": "Đăng ký đất đai, tài sản gắn liền với đất, cấp Giấy chứng nhận quyền sử dụng đất, quyền sở hữu tài sản gắn liền với đất lần đầu đối với hộ gia đình, cá nhân, cộng đồng dân cư, người gốc Việt Nam định cư ở nước ngoài",
+        "why_this_route": "Route trực tiếp cho nhu cầu 'Đăng ký đất đai, tài sản gắn liền với đất, cấp Giấy chứng nhận quyền sử dụng đất, quyền sở hữu tài sản gắn liền với đất lần đầu đối với hộ gia đình, cá nhân, cộng đồng dân cư, người gốc Việt Nam định cư ở nước ngoài' trong nhánh 'Đăng ký quyền sở hữu, quyền sử dụng'."
+      }
+    ]
+  },
+  "pre_submission_checks": [
+    {
+      "field_group": "land_registration",
+      "checks": [
+        "Nhóm đất đai phải làm rõ loại biến động: đăng ký lần đầu, cấp đổi, cấp lại, đính chính, tách thửa hay sang tên do chuyển quyền.",
+        "Thông tin thửa đất, số Giấy chứng nhận, chủ sử dụng đất và giấy tờ chứng minh nguồn gốc đất phải thống nhất giữa tờ khai và hồ sơ đính kèm."
+      ]
+    },
+    {
+      "field_group": "secured_transactions",
+      "checks": [
+        "Nhóm góp vốn, thế chấp phải xác định rõ là đăng ký mới, thay đổi, xóa hay thông báo xử lý tài sản bảo đảm.",
+        "Nếu là thế chấp quyền tài sản phát sinh từ hợp đồng mua bán nhà ở, phải có thông tin hợp đồng và tài sản gắn liền với đất đủ để định danh tài sản bảo đảm."
+      ]
+    },
+    {
+      "field_group": "construction_and_housing",
+      "checks": [
+        "Nhóm xây dựng, nhà ở phải phân biệt rõ xây mới, sửa chữa, cải tạo, di dời hay tiếp cận nhà ở xã hội.",
+        "Các trường hợp xin phép xây dựng nhà ở riêng lẻ cần kiểm tra địa chỉ xây dựng, quyền sử dụng đất và bản vẽ thiết kế trước khi nhận hồ sơ."
+      ]
+    },
+    {
+      "field_group": "electricity_services",
+      "checks": [
+        "Nhóm điện năng phải phân biệt giữa cấp điện mới và thông báo phát triển điện mặt trời mái nhà có đấu nối.",
+        "Nếu là cấp điện mới, cần có địa chỉ sử dụng điện, nhu cầu công suất và giấy tờ định danh người yêu cầu."
+      ]
+    }
+  ],
+  "subdomain_key": "dang_ky_quyen_so_huu_quyen_su_dung"
+}

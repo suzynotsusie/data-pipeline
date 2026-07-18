@@ -3,7 +3,7 @@ import unittest
 
 from fastapi.testclient import TestClient
 
-os.environ["CORS_ORIGINS"] = "http://localhost:3000,https://gov-ease-ai.vercel.app"
+os.environ["CORS_ORIGINS"] = "http://localhost:3010,https://gov-ease-ai.vercel.app"
 
 from backend.app.main import app
 
@@ -168,10 +168,95 @@ class ApiTests(unittest.TestCase):
     def test_v1_catalog_and_form_schema(self) -> None:
         catalog = self.client.get("/api/v1/procedures")
         self.assertEqual(200, catalog.status_code)
-        self.assertEqual(2, catalog.json()["total"])
+        self.assertGreaterEqual(catalog.json()["total"], 2)
         schema = self.client.get("/api/v1/procedures/1.004194/form-schema")
         self.assertEqual(200, schema.status_code)
         self.assertTrue(schema.json()["fields"])
+
+    def test_v1_intake_accepts_group_and_subdomain_context(self) -> None:
+        response = self.client.post(
+            "/api/v1/intake",
+            json={
+                "message": "Toi muon xin trich luc khai sinh",
+                "group_key": "co_con_nho",
+                "subdomain_key": "khai_sinh",
+            },
+        )
+        self.assertEqual(200, response.status_code)
+        payload = response.json()
+        self.assertEqual("completed", payload["status"])
+        self.assertEqual("co_con_nho", payload["domain_key"])
+        self.assertEqual("2.000635", payload["procedure"]["code"])
+
+    def test_v1_intake_can_infer_child_insurance_subdomain_inside_group(self) -> None:
+        response = self.client.post(
+            "/api/v1/intake",
+            json={
+                "message": "lam bhyt cho con",
+                "group_key": "co_con_nho",
+            },
+        )
+        self.assertEqual(200, response.status_code)
+        payload = response.json()
+        self.assertEqual("needs_clarification", payload["status"])
+        self.assertEqual("co_con_nho", payload["domain_key"])
+        self.assertEqual("child_operation", payload["current_node_id"])
+        self.assertEqual("bao_hiem_y_te", payload["answers"]["subdomain_key"])
+
+    def test_v1_intake_prioritizes_complaint_domain_for_khieu_nai_queries(self) -> None:
+        response = self.client.post(
+            "/api/v1/intake",
+            json={"message": "khieu nai dat dai"},
+        )
+        self.assertEqual(200, response.status_code)
+        payload = response.json()
+        self.assertEqual("giai_quyet_khieu_kien", payload["domain_key"])
+
+    def test_v1_intake_can_infer_newborn_context_without_manual_group_pick(self) -> None:
+        response = self.client.post(
+            "/api/v1/intake",
+            json={"message": "Toi moi sinh con"},
+        )
+        self.assertEqual(200, response.status_code)
+        payload = response.json()
+        self.assertEqual("co_con_nho", payload["domain_key"])
+        self.assertEqual("khai_sinh", payload["answers"]["subdomain_key"])
+
+    def test_v1_intake_trich_luc_khai_sinh_maps_to_child_domain(self) -> None:
+        response = self.client.post(
+            "/api/v1/intake",
+            json={"message": "Xin trich luc khai sinh"},
+        )
+        self.assertEqual(200, response.status_code)
+        payload = response.json()
+        self.assertEqual("completed", payload["status"])
+        self.assertEqual("co_con_nho", payload["domain_key"])
+        self.assertEqual("khai_sinh", payload["answers"]["subdomain_key"])
+        self.assertEqual("2.000635", payload["procedure"]["code"])
+
+    def test_v1_intake_regression_sweep_all_11_domains(self) -> None:
+        cases = [
+            ("Xin trich luc khai sinh", "co_con_nho"),
+            ("Toi muon dang ky tam tru", "cu_tru_giay_to"),
+            ("lam so do", "dien_luc_nha_o_dat_dai"),
+            ("khieu nai dat dai", "giai_quyet_khieu_kien"),
+            ("xin hoc bong", "hoc_tap"),
+            ("dang ky ket hon", "hon_nhan_gia_dinh"),
+            ("nghi huu", "huu_tri"),
+            ("khai tu cho nguoi than", "nguoi_than_qua_doi"),
+            ("lam bang lai", "phuong_tien_nguoi_lai"),
+            ("kham chua benh", "suc_khoe_y_te"),
+            ("tim viec lam", "viec_lam"),
+        ]
+        for message, expected_domain in cases:
+            with self.subTest(message=message):
+                response = self.client.post("/api/v1/intake", json={"message": message})
+                self.assertEqual(200, response.status_code)
+                payload = response.json()
+                self.assertEqual(expected_domain, payload["domain_key"])
+                if payload["status"] == "completed":
+                    self.assertIsNotNone(payload.get("procedure"), message)
+                    self.assertTrue(payload["procedure"].get("code"), message)
 
     def test_v1_errors_have_request_id(self) -> None:
         response = self.client.get("/api/v1/procedures/not-found")

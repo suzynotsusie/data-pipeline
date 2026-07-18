@@ -1,0 +1,400 @@
+{
+  "schema_version": "3.0",
+  "record_type": "public_service_procedure_payload",
+  "id": "procedure-1.000736",
+  "procedure_code": "1.000736",
+  "code": "1.000736",
+  "title": "Thủ tục ghi vào sổ hộ tịch việc kết hôn của công dân Việt Nam đã được giải quyết tại cơ quan có thẩm quyền của nước ngoài",
+  "language": "vi",
+  "status": "generated_from_pipeline",
+  "field": "Hộ tịch",
+  "group_key": "hon_nhan_gia_dinh",
+  "workflow_family": "marriage_family_workflow",
+  "subflow": "ket_hon",
+  "source": {
+    "source_url": "file:///C:/Users/ku060/Downloads/VAIC%20source/data-pipeline/raw_data/1_000736/1_000736_procedure_detail.md",
+    "source_markdown_path": "C:\\Users\\ku060\\Downloads\\VAIC source\\data-pipeline\\raw_data\\1_000736\\1_000736_procedure_detail.md",
+    "normalized_payload_path": "C:\\Users\\ku060\\Downloads\\VAIC source\\data-pipeline\\govease-unified\\data\\normalized_structured\\1_000736_normalized_structured.json",
+    "enriched_payload_path": "C:\\Users\\ku060\\Downloads\\VAIC source\\data-pipeline\\govease-unified\\data\\enriched_structured_priority\\1_000736_enriched_structured.json"
+  },
+  "scope": {
+    "included": "Thủ tục này thuộc nhóm hộ tịch gia đình, thường yêu cầu đối chiếu thông tin nhân thân và tình trạng hôn nhân của các bên. Kết quả thường nhận được là Trích lục ghi chú kết hôn. Thời gian xử lý tham khảo: 5 ngày làm việc.",
+    "not_included": []
+  },
+  "agency": {
+    "executing_agency": "Cơ quan đại diện ngoại giao",
+    "submission_place": null,
+    "receiving_places": []
+  },
+  "target_users": [
+    "Công dân Việt Nam",
+    "Người Việt Nam định cư ở nước ngoài"
+  ],
+  "submission_methods": [
+    {
+      "code": "IN_PERSON",
+      "label": "Trực tiếp",
+      "processing_time": "5 ngày làm việc",
+      "fee": null,
+      "description": "- Người có yêu cầu trực tiếp thực hiện hoặc ủy quyền cho người khác thực hiện nộp hồ sơ trực tiếp hoặc gửi hồ sơ qua hệ thống bưu chính tới Cơ quan đại diện Việt Nam ở nước ngoài phụ trách khu vực lãnh sự nơi công dân Việt Nam kết hôn cư trú.<br> - Ngoài các cách thực hiện nêu trên, nếu Cơ quan đại diện Việt Nam ở nước ngoài sử dụng Phần mềm đăng ký, quản lý hộ tịch điện tử dùng chung và kết nối với CSDLQGVDC, trong điều kiện cơ sở hạ tầng kỹ thuật cho phép, hồ sơ có thể nộp trực tuyến qua môi trường điện tử.<br>05 ngày làm việc kể từ ngày nhận đủ hồ sơ, trường hợp phải xác minh thì thời hạn không quá 10 ngày làm việc."
+    }
+  ],
+  "processing_note": "Thời gian xử lý tham chiếu: 5 ngày làm việc. Nên rà trước giấy tờ nhân thân của hai bên và các điều kiện đặc biệt nếu có yếu tố nước ngoài hoặc ủy quyền. Hiện có khoảng 3 mục giấy tờ cần theo dõi trong checklist.",
+  "documents": {
+    "normally_required": [],
+    "conditional": [
+      {
+        "condition": "Nếu công dân Việt Nam đã ly hôn hoặc hủy việc kết hôn tại cơ quan có thẩm quyền nước ngoài thì phải nộp trích lục về việc đã ghi vào Sổ hộ tịch việc ly hôn hoặc hủy việc kết hôn (Trích lục ghi chú ly hôn). - Văn bản ủy quyền theo quy định của pháp luật trong trường hợp ủy quyền thực hiện việc ghi chú kết hôn. Trường hợp người được ủy quyền là ông, bà, cha, mẹ, con, vợ, chồng, anh, chị, em ruột của người ủy quyền thì văn bản ủy quyền không phải công chứng, chứng thực, nhưng phải có giấy tờ chứng minh mối quan hệ với người ủy quyền.",
+        "document": "Nếu công dân Việt Nam đã ly hôn hoặc hủy việc kết hôn tại cơ quan có thẩm quyền nước ngoài thì phải nộp trích lục về việc đã ghi vào Sổ hộ tịch việc ly hôn hoặc hủy việc kết hôn (Trích lục ghi chú ly hôn). - Văn bản ủy quyền theo quy định của pháp luật trong trường hợp ủy quyền thực hiện việc ghi chú kết hôn. Trường hợp người được ủy quyền là ông, bà, cha, mẹ, con, vợ, chồng, anh, chị, em ruột của người ủy quyền thì văn bản ủy quyền không phải công chứng, chứng thực, nhưng phải có giấy tờ chứng minh mối quan hệ với người ủy quyền.",
+        "quantity": "1 bản chính, 1 bản sao",
+        "notes": [],
+        "attachment_path": null
+      },
+      {
+        "condition": "Tờ khai ghi chú kết hôn theo mẫu tại Phụ lục Thông tư 04/2020/TT-BTP (nếu người có yêu cầu lựa chọn nộp hồ sơ theo hình thức trực tiếp). - Bản sao giấy tờ chứng nhận việc kết hôn do cơ quan có thẩm quyền của nước ngoài cấp.",
+        "document": "Tờ khai ghi chú kết hôn theo mẫu tại Phụ lục Thông tư 04/2020/TT-BTP (nếu người có yêu cầu lựa chọn nộp hồ sơ theo hình thức trực tiếp). - Bản sao giấy tờ chứng nhận việc kết hôn do cơ quan có thẩm quyền của nước ngoài cấp.",
+        "quantity": "1 bản chính, 1 bản sao",
+        "notes": [],
+        "attachment_path": null
+      }
+    ],
+    "forms": [],
+    "presented": [
+      {
+        "name": "Hộ chiếu hoặc giấy tờ có giá trị thay thế hộ chiếu, chứng minh nhân dân, thẻ căn cước công dân, thẻ căn cước hoặc các giấy tờ khác có dán ảnh và thông tin cá nhân do cơ quan có thẩm quyền cấp, còn giá trị sử dụng để chứng minh về nhân thân, quốc tịch của người có yêu cầu ghi chú kết hôn. - Giấy tờ chứng minh nhân thân và quốc tịch của người kết hôn với người có yêu cầu ghi chú kết hôn do cơ quan có thẩm quyền cấp, còn giá trị. - Giấy tờ chứng minh nơi cư trú của 1 bên nam/nữ là công dân Việt Nam để xác định thẩm quyền ghi chú của Cơ quan đại diện Việt Nam. Trường hợp gửi hồ sơ qua đường hệ thống bưu chính thì nộp bản sao các giấy tờ nêu trên đã được chứng thực hợp lệ. Trường hợp người yêu cầu là công dân Việt Nam và đã được cấp thẻ Căn cước công dân hoặc thẻ Căn cước có số định danh cá nhân thì có thể xuất trình bản chính giấy tờ đó (nếu nộp trực tiếp) hoặc nộp bản chụp giấy tờ này (nếu nộp qua đường hệ thống bưu chính hoặc gửi qua hệ thống đăng ký hộ tịch trực tuyến) để chứng minh nhân thân khi cơ sở hạ tầng kỹ thuật cho phép Cơ quan đại diện Việt Nam ở nước ngoài kết nối với CSDLQGVDC.",
+        "quantity": "1 bản chính, 1 bản sao",
+        "notes": [
+          "Hộ chiếu hoặc giấy tờ có giá trị thay thế hộ chiếu, chứng minh nhân dân, thẻ căn cước công dân, thẻ căn cước hoặc các giấy tờ khác có dán ảnh và thông tin cá nhân do cơ quan có thẩm quyền cấp, còn giá trị sử dụng để chứng minh về nhân thân, quốc tịch của người có yêu cầu ghi chú kết hôn. - Giấy tờ chứng minh nhân thân và quốc tịch của người kết hôn với người có yêu cầu ghi chú kết hôn do cơ quan có thẩm quyền cấp, còn giá trị. - Giấy tờ chứng minh nơi cư trú của 1 bên nam/nữ là công dân Việt Nam để xác định thẩm quyền ghi chú của Cơ quan đại diện Việt Nam. Trường hợp gửi hồ sơ qua đường hệ thống bưu chính thì nộp bản sao các giấy tờ nêu trên đã được chứng thực hợp lệ. Trường hợp người yêu cầu là công dân Việt Nam và đã được cấp thẻ Căn cước công dân hoặc thẻ Căn cước có số định danh cá nhân thì có thể xuất trình bản chính giấy tờ đó (nếu nộp trực tiếp) hoặc nộp bản chụp giấy tờ này (nếu nộp qua đường hệ thống bưu chính hoặc gửi qua hệ thống đăng ký hộ tịch trực tuyến) để chứng minh nhân thân khi cơ sở hạ tầng kỹ thuật cho phép Cơ quan đại diện Việt Nam ở nước ngoài kết nối với CSDLQGVDC."
+        ],
+        "group": "Giấy tờ phải xuất trình",
+        "attachment_path": null
+      }
+    ],
+    "notes": [],
+    "summary": [
+      {
+        "group": null,
+        "name": null,
+        "quantity": "1 bản chính, 1 bản sao",
+        "notes": [],
+        "attachment_path": null
+      },
+      {
+        "group": null,
+        "name": null,
+        "quantity": "1 bản chính, 1 bản sao",
+        "notes": [],
+        "attachment_path": null
+      }
+    ]
+  },
+  "steps": [
+    {
+      "order": 1,
+      "title": "Bước 1",
+      "description": "1. **Thủ tục ghi vào sổ hộ tịch việc kết hôn của công dân Việt Nam đã được giải quyết tại cơ quan có thẩm quyền của nước ngoài**",
+      "example": null
+    },
+    {
+      "order": 2,
+      "title": "Bước 2",
+      "description": "- Người có yêu cầu ghi vào Sổ hộ tịch việc kết hôn đã được giải quyết tại cơ quan có thẩm quyền của nước ngoài (sau đây gọi là ghi chú kết hôn) chuẩn bị hồ sơ theo quy định và nộp hồ sơ tại Cơ quan đại diện Việt Nam ở nước ngoài phụ trách khu vực lãnh sự nơi công dân Việt Nam kết hôn cư trú.",
+      "example": null
+    },
+    {
+      "order": 3,
+      "title": "Bước 3",
+      "description": "- Cán bộ nhận hồ sơ có trách nhiệm kiểm tra toàn bộ hồ sơ, đối chiếu các thông tin trong hồ sơ:",
+      "example": null
+    },
+    {
+      "order": 4,
+      "title": "Bước 4",
+      "description": "(i) Trường hợp hồ sơ đầy đủ, hợp lệ thì tiếp nhận hồ sơ;",
+      "example": null
+    },
+    {
+      "order": 5,
+      "title": "Bước 5",
+      "description": "(ii) Trường hợp hồ sơ chưa đầy đủ, hợp lệ thì hướng dẫn người nộp hồ sơ bổ sung, hoàn thiện theo quy định. Sau khi hồ sơ được bổ sung, thực hiện lại bước (i); trường hợp không thể bổ sung hồ sơ ngay thì phải có văn bản hướng dẫn, trong đó nêu rõ loại giấy tờ, nội dung cần bổ sung, ký, ghi rõ họ tên của cán bộ lãnh sự.",
+      "example": null
+    },
+    {
+      "order": 6,
+      "title": "Bước 6",
+      "description": "(iii) Trường hợp không bổ sung, hoàn thiện được hồ sơ thì thông báo từ chối giải quyết hồ sơ.",
+      "example": null
+    },
+    {
+      "order": 7,
+      "title": "Bước 7",
+      "description": "- Cán bộ xử lý hồ sơ có trách nhiệm kiểm tra lại toàn bộ hồ sơ, đảm bảo hồ sơ đầy đủ, hợp lệ:",
+      "example": null
+    },
+    {
+      "order": 8,
+      "title": "Bước 8",
+      "description": "+ Trường hợp hồ sơ cần bổ sung, hoàn thiện thì gửi thông báo về tình trạng hồ sơ cho người nộp hồ sơ - thực hiện lại bước (ii); hoặc không đủ điều kiện giải quyết, phải từ chối giải quyết thì gửi thông báo cho đương sự.",
+      "example": null
+    },
+    {
+      "order": 9,
+      "title": "Bước 9",
+      "description": "+ Trường hợp cần phải kiểm tra, xác minh làm rõ hoặc do nguyên nhân khác mà không thể trả kết quả đúng thời gian đã hẹn thì lập Phiếu xin lỗi và hẹn lại ngày trả kết quả, trong đó nêu rõ lý do chậm trả kết quả và thời gian hẹn trả kết quả, để gửi cho người có yêu cầu.",
+      "example": null
+    },
+    {
+      "order": 10,
+      "title": "Bước 10",
+      "description": "+ Nếu thấy yêu cầu ghi chú kết hôn đủ điều kiện, không thuộc trường hợp từ chối ghi vào sổ việc kết hôn theo quy định, thì thực hiện việc ghi vào Sổ đăng ký kết hôn và báo cáo Thủ trưởng Cơ quan đại diện Việt Nam ở nước ngoài xem xét ký Trích lục ghi chú kết hôn cấp cho người có yêu cầu.",
+      "example": null
+    }
+  ],
+  "input_fields": [
+    {
+      "field": "party_one_full_name",
+      "label": "Người thứ nhất",
+      "type": "string",
+      "required": true
+    },
+    {
+      "field": "party_two_full_name",
+      "label": "Người thứ hai",
+      "type": "string",
+      "required": true
+    },
+    {
+      "field": "has_foreign_element",
+      "label": "Có yếu tố nước ngoài",
+      "type": "boolean",
+      "required": true
+    },
+    {
+      "field": "current_marital_status_docs",
+      "label": "Có giấy tờ chứng minh tình trạng hôn nhân",
+      "type": "boolean",
+      "required": true
+    },
+    {
+      "field": "submission_at_border_area",
+      "label": "Nộp tại khu vực biên giới",
+      "type": "boolean",
+      "required": false
+    }
+  ],
+  "validation_rules": [
+    {
+      "id": "required-1",
+      "severity": "error",
+      "field": "party_one_full_name",
+      "rule": "Trường bắt buộc phải có dữ liệu hợp lệ trước khi nộp.",
+      "message": "Thiếu trường bắt buộc: Người thứ nhất."
+    },
+    {
+      "id": "required-2",
+      "severity": "error",
+      "field": "party_two_full_name",
+      "rule": "Trường bắt buộc phải có dữ liệu hợp lệ trước khi nộp.",
+      "message": "Thiếu trường bắt buộc: Người thứ hai."
+    },
+    {
+      "id": "required-3",
+      "severity": "error",
+      "field": "has_foreign_element",
+      "rule": "Trường bắt buộc phải có dữ liệu hợp lệ trước khi nộp.",
+      "message": "Thiếu trường bắt buộc: Có yếu tố nước ngoài."
+    },
+    {
+      "id": "required-4",
+      "severity": "error",
+      "field": "current_marital_status_docs",
+      "rule": "Trường bắt buộc phải có dữ liệu hợp lệ trước khi nộp.",
+      "message": "Thiếu trường bắt buộc: Có giấy tờ chứng minh tình trạng hôn nhân."
+    },
+    {
+      "id": "hint-1",
+      "severity": "warning",
+      "field": "general",
+      "rule": "Nên xác định trước kênh nộp hồ sơ để biết có cần bản giấy, bản điện tử hay xuất trình trực tiếp.",
+      "message": "Nên xác định trước kênh nộp hồ sơ để biết có cần bản giấy, bản điện tử hay xuất trình trực tiếp."
+    },
+    {
+      "id": "hint-2",
+      "severity": "warning",
+      "field": "general",
+      "rule": "Thông tin hộ tịch giữa các giấy tờ phải thống nhất về họ tên, ngày sinh và quan hệ liên quan.",
+      "message": "Thông tin hộ tịch giữa các giấy tờ phải thống nhất về họ tên, ngày sinh và quan hệ liên quan."
+    }
+  ],
+  "common_errors": [
+    {
+      "field": "general",
+      "issue": "Thiếu giấy tờ hoặc nội dung ủy quyền phù hợp.",
+      "fix": "Nên xác định trước kênh nộp hồ sơ để biết có cần bản giấy, bản điện tử hay xuất trình trực tiếp."
+    },
+    {
+      "field": "general",
+      "issue": "Thiếu giấy tờ hợp pháp hóa hoặc giấy tờ nhân thân của phía nước ngoài.",
+      "fix": "Nên xác định trước kênh nộp hồ sơ để biết có cần bản giấy, bản điện tử hay xuất trình trực tiếp."
+    },
+    {
+      "field": "general",
+      "issue": "Điền sai mẫu tờ khai hoặc chọn sai biểu mẫu đi kèm.",
+      "fix": "Nên xác định trước kênh nộp hồ sơ để biết có cần bản giấy, bản điện tử hay xuất trình trực tiếp."
+    }
+  ],
+  "clarifying_questions": [
+    {
+      "id": "clarify_1",
+      "question": "Hai bên đã có đủ giấy tờ nhân thân và tình trạng hôn nhân chưa?",
+      "purpose": "workflow_intake"
+    },
+    {
+      "id": "clarify_2",
+      "question": "Hồ sơ có yếu tố nước ngoài, khu vực biên giới hoặc ủy quyền không?",
+      "purpose": "workflow_intake"
+    }
+  ],
+  "legal_basis": [
+    {
+      "title": "Thông tư số 07/2023/TT-BNG của Bộ Ngoại giao: Hướng dẫn việc đăng ký và quản lý hộ tịch tại Cơ quan đại diện ngoại giao, Cơ quan đại diện lãnh sự của Việt Nam ở nước ngoài",
+      "code": "Thông tư số 07/2023/TT-BNG"
+    },
+    {
+      "title": "Luật 60/2014/QH13",
+      "code": "60/2014/QH13"
+    },
+    {
+      "title": "Luật 52/2014/QH13",
+      "code": "52/2014/QH13"
+    },
+    {
+      "title": "Nghị định số 123/2015/NĐ-CP ngày 15/11/2015 của Chính phủ quy định chi tiết một số điều và biện pháp thi hành Luật Hộ tịch",
+      "code": "123/2015/NĐ-CP"
+    },
+    {
+      "title": "Quy định mức thu, chế độ thu, nộp, quản lý và sử dụng phí, lệ phí trong lĩnh vực ngoại giao áp dụng tại các Cơ quan đại diện Việt Nam ở nước ngoài",
+      "code": "264/2016/TT-BTC"
+    },
+    {
+      "title": "Luật 33/2009/QH12",
+      "code": "33/2009/QH12"
+    },
+    {
+      "title": "Thông tư quy định chi tiết một số điều và biện pháp thi hành Nghị định số 87/2020/NĐ-CP ngày 28 tháng 7 năm 2020 của Chính phủ quy định về Cơ sở dữ liệu hộ tịch điện tử, đăng ký hộ tịch trực tuyến",
+      "code": "01/2022/TT-BTP"
+    },
+    {
+      "title": "Thông tư số 03/2023/TT-BNG hướng dẫn việc tổ chức giải quyết công tác lãnh sự.",
+      "code": "Thông tư số 03/2023/TT-BNG"
+    }
+  ],
+  "legal_bases": [
+    {
+      "title": "Thông tư số 07/2023/TT-BNG của Bộ Ngoại giao: Hướng dẫn việc đăng ký và quản lý hộ tịch tại Cơ quan đại diện ngoại giao, Cơ quan đại diện lãnh sự của Việt Nam ở nước ngoài",
+      "code": "Thông tư số 07/2023/TT-BNG"
+    },
+    {
+      "title": "Luật 60/2014/QH13",
+      "code": "60/2014/QH13"
+    },
+    {
+      "title": "Luật 52/2014/QH13",
+      "code": "52/2014/QH13"
+    },
+    {
+      "title": "Nghị định số 123/2015/NĐ-CP ngày 15/11/2015 của Chính phủ quy định chi tiết một số điều và biện pháp thi hành Luật Hộ tịch",
+      "code": "123/2015/NĐ-CP"
+    },
+    {
+      "title": "Quy định mức thu, chế độ thu, nộp, quản lý và sử dụng phí, lệ phí trong lĩnh vực ngoại giao áp dụng tại các Cơ quan đại diện Việt Nam ở nước ngoài",
+      "code": "264/2016/TT-BTC"
+    },
+    {
+      "title": "Luật 33/2009/QH12",
+      "code": "33/2009/QH12"
+    },
+    {
+      "title": "Thông tư quy định chi tiết một số điều và biện pháp thi hành Nghị định số 87/2020/NĐ-CP ngày 28 tháng 7 năm 2020 của Chính phủ quy định về Cơ sở dữ liệu hộ tịch điện tử, đăng ký hộ tịch trực tuyến",
+      "code": "01/2022/TT-BTP"
+    },
+    {
+      "title": "Thông tư số 03/2023/TT-BNG hướng dẫn việc tổ chức giải quyết công tác lãnh sự.",
+      "code": "Thông tư số 03/2023/TT-BNG"
+    }
+  ],
+  "faq": [
+    {
+      "question": "Có thể nộp qua kênh nào?",
+      "answer": "Các kênh hiện có: Trực tiếp."
+    },
+    {
+      "question": "Thời gian xử lý tham chiếu là bao lâu?",
+      "answer": "Thời gian xử lý tham chiếu hiện có là 5 ngày làm việc."
+    },
+    {
+      "question": "Kết quả chính của thủ tục là gì?",
+      "answer": "Kết quả chính được trích xuất là Trích lục ghi chú kết hôn."
+    }
+  ],
+  "guidance": {
+    "highlight_documents": [
+      {
+        "bucket": "conditional",
+        "name": "Nếu công dân Việt Nam đã ly hôn hoặc hủy việc kết hôn tại cơ quan có thẩm quyền nước ngoài thì phải nộp trích lục về việc đã ghi vào Sổ hộ tịch việc ly hôn hoặc hủy việc kết hôn (Trích lục ghi chú ly hôn). - Văn bản ủy quyền theo quy định của pháp luật trong trường hợp ủy quyền thực hiện việc ghi chú kết hôn. Trường hợp người được ủy quyền là ông, bà, cha, mẹ, con, vợ, chồng, anh, chị, em ruột của người ủy quyền thì văn bản ủy quyền không phải công chứng, chứng thực, nhưng phải có giấy tờ chứng minh mối quan hệ với người ủy quyền.",
+        "conditions": [
+          "Nếu công dân Việt Nam đã ly hôn hoặc hủy việc kết hôn tại cơ quan có thẩm quyền nước ngoài thì phải nộp trích lục về việc đã ghi vào Sổ hộ tịch việc ly hôn hoặc hủy việc kết hôn (Trích lục ghi chú ly hôn). - Văn bản ủy quyền theo quy định của pháp luật trong trường hợp ủy quyền thực hiện việc ghi chú kết hôn. Trường hợp người được ủy quyền là ông, bà, cha, mẹ, con, vợ, chồng, anh, chị, em ruột của người ủy quyền thì văn bản ủy quyền không phải công chứng, chứng thực, nhưng phải có giấy tờ chứng minh mối quan hệ với người ủy quyền."
+        ],
+        "attachment_path": null
+      },
+      {
+        "bucket": "conditional",
+        "name": "Tờ khai ghi chú kết hôn theo mẫu tại Phụ lục Thông tư 04/2020/TT-BTP (nếu người có yêu cầu lựa chọn nộp hồ sơ theo hình thức trực tiếp). - Bản sao giấy tờ chứng nhận việc kết hôn do cơ quan có thẩm quyền của nước ngoài cấp.",
+        "conditions": [
+          "Tờ khai ghi chú kết hôn theo mẫu tại Phụ lục Thông tư 04/2020/TT-BTP (nếu người có yêu cầu lựa chọn nộp hồ sơ theo hình thức trực tiếp). - Bản sao giấy tờ chứng nhận việc kết hôn do cơ quan có thẩm quyền của nước ngoài cấp."
+        ],
+        "attachment_path": null
+      },
+      {
+        "bucket": "presented",
+        "name": "Hộ chiếu hoặc giấy tờ có giá trị thay thế hộ chiếu, chứng minh nhân dân, thẻ căn cước công dân, thẻ căn cước hoặc các giấy tờ khác có dán ảnh và thông tin cá nhân do cơ quan có thẩm quyền cấp, còn giá trị sử dụng để chứng minh về nhân thân, quốc tịch của người có yêu cầu ghi chú kết hôn. - Giấy tờ chứng minh nhân thân và quốc tịch của người kết hôn với người có yêu cầu ghi chú kết hôn do cơ quan có thẩm quyền cấp, còn giá trị. - Giấy tờ chứng minh nơi cư trú của 1 bên nam/nữ là công dân Việt Nam để xác định thẩm quyền ghi chú của Cơ quan đại diện Việt Nam. Trường hợp gửi hồ sơ qua đường hệ thống bưu chính thì nộp bản sao các giấy tờ nêu trên đã được chứng thực hợp lệ. Trường hợp người yêu cầu là công dân Việt Nam và đã được cấp thẻ Căn cước công dân hoặc thẻ Căn cước có số định danh cá nhân thì có thể xuất trình bản chính giấy tờ đó (nếu nộp trực tiếp) hoặc nộp bản chụp giấy tờ này (nếu nộp qua đường hệ thống bưu chính hoặc gửi qua hệ thống đăng ký hộ tịch trực tuyến) để chứng minh nhân thân khi cơ sở hạ tầng kỹ thuật cho phép Cơ quan đại diện Việt Nam ở nước ngoài kết nối với CSDLQGVDC.",
+        "conditions": [
+          "Hộ chiếu hoặc giấy tờ có giá trị thay thế hộ chiếu, chứng minh nhân dân, thẻ căn cước công dân, thẻ căn cước hoặc các giấy tờ khác có dán ảnh và thông tin cá nhân do cơ quan có thẩm quyền cấp, còn giá trị sử dụng để chứng minh về nhân thân, quốc tịch của người có yêu cầu ghi chú kết hôn. - Giấy tờ chứng minh nhân thân và quốc tịch của người kết hôn với người có yêu cầu ghi chú kết hôn do cơ quan có thẩm quyền cấp, còn giá trị. - Giấy tờ chứng minh nơi cư trú của 1 bên nam/nữ là công dân Việt Nam để xác định thẩm quyền ghi chú của Cơ quan đại diện Việt Nam. Trường hợp gửi hồ sơ qua đường hệ thống bưu chính thì nộp bản sao các giấy tờ nêu trên đã được chứng thực hợp lệ. Trường hợp người yêu cầu là công dân Việt Nam và đã được cấp thẻ Căn cước công dân hoặc thẻ Căn cước có số định danh cá nhân thì có thể xuất trình bản chính giấy tờ đó (nếu nộp trực tiếp) hoặc nộp bản chụp giấy tờ này (nếu nộp qua đường hệ thống bưu chính hoặc gửi qua hệ thống đăng ký hộ tịch trực tuyến) để chứng minh nhân thân khi cơ sở hạ tầng kỹ thuật cho phép Cơ quan đại diện Việt Nam ở nước ngoài kết nối với CSDLQGVDC."
+        ],
+        "attachment_path": null
+      }
+    ],
+    "special_cases": [
+      "Có yếu tố nước ngoài",
+      "Có thể cần giấy tờ ủy quyền",
+      "Có trường hợp hồ sơ điện tử thay thế bản giấy",
+      "Có kiểm tra dữ liệu cư trú/định danh"
+    ],
+    "common_errors": [
+      "Thiếu giấy tờ hoặc nội dung ủy quyền phù hợp.",
+      "Thiếu giấy tờ hợp pháp hóa hoặc giấy tờ nhân thân của phía nước ngoài.",
+      "Điền sai mẫu tờ khai hoặc chọn sai biểu mẫu đi kèm."
+    ],
+    "validation_hints": [
+      "Nên xác định trước kênh nộp hồ sơ để biết có cần bản giấy, bản điện tử hay xuất trình trực tiếp.",
+      "Thông tin hộ tịch giữa các giấy tờ phải thống nhất về họ tên, ngày sinh và quan hệ liên quan."
+    ]
+  },
+  "next_steps": {
+    "summary": "Nên rà trước giấy tờ nhân thân của hai bên và các điều kiện đặc biệt nếu có yếu tố nước ngoài hoặc ủy quyền. Hiện có khoảng 3 mục giấy tờ cần theo dõi trong checklist.",
+    "time_badge": "5 ngày làm việc",
+    "result_label": "Trích lục ghi chú kết hôn",
+    "primary_channel": "in_person",
+    "channels": [
+      "in_person"
+    ]
+  },
+  "notes": [],
+  "provenance": {
+    "pipeline": "raw->structured->normalized->enriched->ui_api_payload",
+    "normalizer_version": "0.2.0",
+    "enricher_version": "0.2.0",
+    "mapping_notes": "workflow_generated:hon_nhan_gia_dinh/ket_hon",
+    "supported_group": true
+  }
+}

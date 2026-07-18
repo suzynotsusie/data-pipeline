@@ -1,0 +1,105 @@
+{
+  "schema_version": "1.0",
+  "enricher_version": "0.2.0",
+  "source": {
+    "procedure_code": "1.013079",
+    "title": "Đổi chứng nhận đăng ký xe, biển số xe bằng dịch vụ công trực tuyến một phần hoặc trực tiếp thực hiện tại cấp trung ương, cấp tỉnh, cấp xã",
+    "group_key": "phuong_tien_nguoi_lai",
+    "workflow_family": "vehicle_driver_workflow",
+    "subflow": "dang_ky_phuong_tien"
+  },
+  "experience": {
+    "entry_label": "Hỗ trợ phương tiện và người lái",
+    "overview_summary": "Thủ tục này thuộc nhóm phương tiện và đăng kiểm, thường cần đối chiếu hồ sơ kỹ thuật, đăng ký hoặc chứng nhận an toàn của phương tiện. Kết quả thường nhận được là Biển số xe. Thời gian xử lý tham khảo: 7 ngày làm việc.",
+    "next_step_summary": "Nên kiểm tra trước loại phương tiện hoặc loại giấy phép cần xử lý, cùng hồ sơ kỹ thuật hoặc nhân thân liên quan. Có thể chọn kênh nộp phù hợp: Trực tiếp, Trực tuyến. Hiện có khoảng 4 mục giấy tờ cần theo dõi trong checklist.",
+    "tone": "supportive_public_service"
+  },
+  "guidance": {
+    "highlight_documents": [
+      {
+        "bucket": "required",
+        "name": "Giấy khai đăng ký xe (theo mẫu ĐKX10/79 ban hành kèm theo Thông tư số 13/2025/TT-BCA ngày 28/02/2025 của Bộ trưởng Bộ Công an).",
+        "conditions": [],
+        "attachment_path": null
+      },
+      {
+        "bucket": "required",
+        "name": "Giấy tờ của chủ xe theo quy định.",
+        "conditions": [],
+        "attachment_path": null
+      },
+      {
+        "bucket": "conditional",
+        "name": "Một số giấy tờ khác: a) Xe cải tạo thay đổi tổng thành máy, tổng thành khung thì phải có thêm chứng nhận nguồn gốc, chứng từ nộp lệ phí trước bạ, chứng từ chuyển quyền sở hữu của tổng thành máy hoặc tổng thành khung đó theo quy định. Trường hợp tổng thành máy, tổng thành khung không cùng kiểu loại thì phải có thêm giấy chứng nhận an toàn kỹ thuật và bảo vệ môi trường xe cơ giới, xe máy chuyên dùng cải tạo theo quy định; b) Xe cải tạo thay tổng thành máy của xe đã đăng ký thì phải có chứng nhận thu hồi chứng nhận đăng ký xe, biển số của xe có tổng thành đó; c) Xe cải tạo thay đổi kiểu loại xe thì phải có thêm giấy chứng nhận an toàn kỹ thuật và bảo vệ môi trường xe cơ giới, xe máy chuyên dùng cải tạo theo quy định; d) Trường hợp đổi biển số xe nền màu vàng, chữ và số màu đen sang biển số xe nền màu trắng, chữ và số màu đen, phải có thêm văn bản thu hồi giấy phép kinh doanh vận tải hoặc văn bản thu hồi phù hiệu, biển hiệu; đ) Đối với trường hợp chủ xe có như cầu đổi chứng nhận đăng ký xe khi thay đổi trụ sở, nơi cư trú đến địa chỉ mới ngoài phạm vi đăng ký của cơ quan đổi chứng nhận đăng ký xe, biển số xe, phải có thêm giấy xác nhận hồ sơ xe (theo mẫu ĐKX14/79 ban hành kèm theo Thông tư số 13/2025/TT-BCA ngày 28/02/2025 của Bộ trưởng Bộ Công an)",
+        "conditions": [
+          "Một số giấy tờ khác: a) Xe cải tạo thay đổi tổng thành máy, tổng thành khung thì phải có thêm chứng nhận nguồn gốc, chứng từ nộp lệ phí trước bạ, chứng từ chuyển quyền sở hữu của tổng thành máy hoặc tổng thành khung đó theo quy định. Trường hợp tổng thành máy, tổng thành khung không cùng kiểu loại thì phải có thêm giấy chứng nhận an toàn kỹ thuật và bảo vệ môi trường xe cơ giới, xe máy chuyên dùng cải tạo theo quy định; b) Xe cải tạo thay tổng thành máy của xe đã đăng ký thì phải có chứng nhận thu hồi chứng nhận đăng ký xe, biển số của xe có tổng thành đó; c) Xe cải tạo thay đổi kiểu loại xe thì phải có thêm giấy chứng nhận an toàn kỹ thuật và bảo vệ môi trường xe cơ giới, xe máy chuyên dùng cải tạo theo quy định; d) Trường hợp đổi biển số xe nền màu vàng, chữ và số màu đen sang biển số xe nền màu trắng, chữ và số màu đen, phải có thêm văn bản thu hồi giấy phép kinh doanh vận tải hoặc văn bản thu hồi phù hiệu, biển hiệu; đ) Đối với trường hợp chủ xe có như cầu đổi chứng nhận đăng ký xe khi thay đổi trụ sở, nơi cư trú đến địa chỉ mới ngoài phạm vi đăng ký của cơ quan đổi chứng nhận đăng ký xe, biển số xe, phải có thêm giấy xác nhận hồ sơ xe (theo mẫu ĐKX14/79 ban hành kèm theo Thông tư số 13/2025/TT-BCA ngày 28/02/2025 của Bộ trưởng Bộ Công an)"
+        ],
+        "attachment_path": null
+      },
+      {
+        "bucket": "conditional",
+        "name": "Chứng nhận đăng ký xe (trường hợp đổi chứng nhận đăng ký xe) hoặc biển số xe (trường hợp đổi biển số xe).",
+        "conditions": [
+          "Chứng nhận đăng ký xe (trường hợp đổi chứng nhận đăng ký xe) hoặc biển số xe (trường hợp đổi biển số xe)."
+        ],
+        "attachment_path": null
+      }
+    ],
+    "special_cases": [
+      "Có kiểm tra dữ liệu cư trú/định danh",
+      "Có thể cần đối chiếu thông tin thửa đất hoặc giấy chứng nhận",
+      "Có thể cần hồ sơ kỹ thuật phương tiện hoặc giấy phép lái xe"
+    ],
+    "common_errors": [
+      "Điền sai mẫu tờ khai hoặc chọn sai biểu mẫu đi kèm.",
+      "Thông tin thửa đất, tài sản hoặc giấy chứng nhận chưa khớp với hồ sơ hiện có."
+    ],
+    "validation_hints": [
+      "Nên xác định trước kênh nộp hồ sơ để biết có cần bản giấy, bản điện tử hay xuất trình trực tiếp.",
+      "Nên đối chiếu trước thông tin phương tiện, hồ sơ kỹ thuật hoặc giấy phép lái xe liên quan."
+    ]
+  },
+  "intake": {
+    "candidate_input_fields": [
+      {
+        "field_id": "vehicle_or_license_need",
+        "label": "Nhu cầu về phương tiện hoặc giấy phép",
+        "field_type": "text",
+        "required": true
+      },
+      {
+        "field_id": "vehicle_or_person_identifier",
+        "label": "Thông tin phương tiện hoặc người lái",
+        "field_type": "text",
+        "required": true
+      },
+      {
+        "field_id": "submission_channel_preference",
+        "label": "Kênh nộp dự kiến",
+        "field_type": "enum",
+        "required": false
+      },
+      {
+        "field_id": "has_technical_or_identity_documents",
+        "label": "Đã có hồ sơ kỹ thuật hoặc giấy tờ nhân thân",
+        "field_type": "boolean",
+        "required": false
+      }
+    ],
+    "suggested_clarifying_questions": [
+      "Bạn đang xử lý hồ sơ cho phương tiện hay cho giấy phép lái xe?",
+      "Bạn đã có thông tin nhận diện phương tiện hoặc giấy tờ của người lái chưa?"
+    ]
+  },
+  "ui_hints": {
+    "primary_channel": "online",
+    "result_label": "Biển số xe",
+    "time_badge": "7 ngày làm việc",
+    "document_count_badge": 4
+  },
+  "provenance": {
+    "generator": "workflow_domain_enricher",
+    "derivation_mode": "rule_based_semantic_enrichment",
+    "supported_group": true
+  }
+}

@@ -1,0 +1,390 @@
+{
+  "schema_version": "3.0",
+  "record_type": "public_service_procedure_payload",
+  "id": "procedure-1.010040",
+  "procedure_code": "1.010040",
+  "code": "1.010040",
+  "title": "Khai báo thông tin về cư trú đối với người chưa đủ điều kiện đăng ký thường trú, đăng ký tạm trú",
+  "language": "vi",
+  "status": "generated_from_pipeline",
+  "field": "Đăng ký, quản lý cư trú",
+  "group_key": "cu_tru_giay_to",
+  "workflow_family": "residence_identity_documents_workflow",
+  "subflow": "tam_tru",
+  "source": {
+    "source_url": "file:///C:/Users/ku060/Downloads/VAIC%20source/data-pipeline/raw_data/1_010040/1_010040_procedure_detail.md",
+    "source_markdown_path": "C:\\Users\\ku060\\Downloads\\VAIC source\\data-pipeline\\raw_data\\1_010040\\1_010040_procedure_detail.md",
+    "normalized_payload_path": "C:\\Users\\ku060\\Downloads\\VAIC source\\data-pipeline\\govease-unified\\data\\normalized_structured\\1_010040_normalized_structured.json",
+    "enriched_payload_path": "C:\\Users\\ku060\\Downloads\\VAIC source\\data-pipeline\\govease-unified\\data\\enriched_structured_priority\\1_010040_enriched_structured.json"
+  },
+  "scope": {
+    "included": "Thủ tục này thuộc nhóm cư trú và giấy tờ, thường cần kiểm tra thông tin định danh hoặc hồ sơ giấy tờ chuyên ngành. Kết quả thường nhận được là Xác nhận thông tin về cư trú (CT07). Thời gian xử lý tham khảo: 5 ngày làm việc.",
+    "not_included": []
+  },
+  "agency": {
+    "executing_agency": "Công an cấp Xã",
+    "submission_place": null,
+    "receiving_places": []
+  },
+  "target_users": [
+    "Công dân Việt Nam"
+  ],
+  "submission_methods": [
+    {
+      "code": "ONLINE",
+      "label": "Trực tuyến",
+      "processing_time": "5 ngày làm việc",
+      "fee": null,
+      "description": "Nộp hồ sơ trực tuyến qua các cổng cung cấp dịch vụ công trực tuyến như: Trực tuyến qua Cổng dịch vụ công quốc gia, Cổng dịch vụ công Bộ Công an, ứng dụng VNeID hoặc dịch vụ công trực tuyến khác theo quy định của pháp luật. Thời gian tiếp nhận hồ sơ: Giờ hành chính các ngày làm việc từ thứ 2 đến thứ 6 và sáng thứ 7 hàng tuần (trừ các ngày nghỉ lễ, tết theo quy định của pháp luật)."
+    },
+    {
+      "code": "IN_PERSON",
+      "label": "Trực tiếp",
+      "processing_time": "5 ngày làm việc",
+      "fee": null,
+      "description": "Nộp hồ sơ trực tiếp tại Công an cấp xã. - Đối với trường hợp công dân đã có thông tin trong Cơ sở dữ liệu quốc gia về dân cư thì trong thời hạn 05 ngày làm việc kể từ ngày tiếp nhận thông tin khai báo cơ quan đăng ký cư trú phải tiến hành xác minh thông tin."
+    },
+    {
+      "code": "ONLINE",
+      "label": "Trực tuyến",
+      "processing_time": "30 ngày làm việc",
+      "fee": null,
+      "description": "- Đối với trường hợp công dân chưa có thông tin trong Cơ sở dữ liệu quốc gia về dân cư thì trong thời hạn 30 ngày kể từ ngày tiếp nhận thông tin cơ quan đăng ký cư trú phải tiến hành xác minh thông tin, phức tạp có thể kéo dài nhưng không quá 60 ngày. Sau khi kiểm tra, xác minh, cơ quan đăng ký cư trú cập nhật thông tin của công dân về nơi ở hiện tại và các thông tin khác vào Cơ sở dữ liệu quốc gia về dân cư, Cơ sở dữ liệu về cư trú và thông báo cho người đã khai báo về việc đã cập nhật thông tin, cấp xác nhận thông tin về cư trú cho công dân."
+    },
+    {
+      "code": "IN_PERSON",
+      "label": "Trực tiếp",
+      "processing_time": "30 ngày làm việc",
+      "fee": null,
+      "description": "Đối với trường hợp công dân chưa có thông tin trong Cơ sở dữ liệu quốc gia về dân cư thì trong thời hạn 30 ngày kể từ ngày tiếp nhận thông tin cơ quan đăng ký cư trú phải tiến hành xác minh thông tin, phức tạp có thể kéo dài nhưng không quá 60 ngày. Sau khi kiểm tra, xác minh, cơ quan đăng ký cư trú cập nhật thông tin của công dân về nơi ở hiện tại và các thông tin khác vào Cơ sở dữ liệu quốc gia về dân cư, Cơ sở dữ liệu về cư trú và thông báo cho người đã khai báo về việc đã cập nhật thông tin, cấp xác nhận thông tin về cư trú cho công dân."
+    }
+  ],
+  "processing_note": "Thời gian xử lý tham chiếu: 5 ngày làm việc. Nên kiểm tra trước giấy tờ định danh, nơi nộp và mẫu biểu liên quan, rồi chọn kênh nộp phù hợp: Trực tiếp, Trực tuyến. Hiện có khoảng 3 mục giấy tờ cần theo dõi trong checklist.",
+  "documents": {
+    "normally_required": [
+      {
+        "name": "Tờ khai thay đổi thông tin cư trú (Mẫu CT01 ban hành kèm theo Thông tư số 53/2025/TT-BCA).",
+        "quantity": "1 bản chính, 0 bản sao",
+        "notes": [],
+        "group": "default",
+        "attachment_path": "file:///C:/Users/ku060/Downloads/data/raw_data/1_010040/1.MuCT01banhnhkmtheoThngts53%20%281%29.doc"
+      }
+    ],
+    "conditional": [
+      {
+        "condition": "Lưu ý: - Người nước ngoài được nhập quốc tịch Việt Nam khi khai báo thông tin về cư trú lần đầu phải có Quyết định của Chủ tịch nước về việc cho nhập quốc tịch Việt Nam. Người gốc Việt Nam được trở lại quốc tịch Việt Nam khi khai báo thông tin về cư trú lần đầu sau khi được cho trở lại quốc tịch Việt Nam phải có Quyết định của Chủ tịch nước về việc cho trở lại quốc tịch Việt Nam trừ trường hợp đã khai thác được thông tin trong Cơ sở dữ liệu quốc tịch.",
+        "document": "Lưu ý: - Người nước ngoài được nhập quốc tịch Việt Nam khi khai báo thông tin về cư trú lần đầu phải có Quyết định của Chủ tịch nước về việc cho nhập quốc tịch Việt Nam. Người gốc Việt Nam được trở lại quốc tịch Việt Nam khi khai báo thông tin về cư trú lần đầu sau khi được cho trở lại quốc tịch Việt Nam phải có Quyết định của Chủ tịch nước về việc cho trở lại quốc tịch Việt Nam trừ trường hợp đã khai thác được thông tin trong Cơ sở dữ liệu quốc tịch.",
+        "quantity": "0 bản chính, 0 bản sao",
+        "notes": [],
+        "attachment_path": null
+      },
+      {
+        "condition": "Giấy tờ, tài liệu khác (nếu có).",
+        "document": "Giấy tờ, tài liệu khác (nếu có).",
+        "quantity": "1 bản chính, 0 bản sao",
+        "notes": [],
+        "attachment_path": null
+      }
+    ],
+    "forms": [
+      {
+        "name": "Tờ khai thay đổi thông tin cư trú (Mẫu CT01 ban hành kèm theo Thông tư số 53/2025/TT-BCA).",
+        "attachment_label": "1.MuCT01banhnhkmtheoThngts53 (1).doc",
+        "attachment_path": "file:///C:/Users/ku060/Downloads/data/raw_data/1_010040/1.MuCT01banhnhkmtheoThngts53%20%281%29.doc"
+      }
+    ],
+    "presented": [],
+    "notes": [],
+    "summary": [
+      {
+        "group": "default",
+        "name": "Tờ khai thay đổi thông tin cư trú (Mẫu CT01 ban hành kèm theo Thông tư số 53/2025/TT-BCA).",
+        "quantity": "1 bản chính, 0 bản sao",
+        "notes": [],
+        "attachment_path": "file:///C:/Users/ku060/Downloads/data/raw_data/1_010040/1.MuCT01banhnhkmtheoThngts53%20%281%29.doc"
+      },
+      {
+        "group": null,
+        "name": null,
+        "quantity": "0 bản chính, 0 bản sao",
+        "notes": [],
+        "attachment_path": null
+      },
+      {
+        "group": null,
+        "name": null,
+        "quantity": "1 bản chính, 0 bản sao",
+        "notes": [],
+        "attachment_path": null
+      },
+      {
+        "group": null,
+        "name": "Tờ khai thay đổi thông tin cư trú (Mẫu CT01 ban hành kèm theo Thông tư số 53/2025/TT-BCA).",
+        "quantity": null,
+        "notes": null,
+        "attachment_path": "file:///C:/Users/ku060/Downloads/data/raw_data/1_010040/1.MuCT01banhnhkmtheoThngts53%20%281%29.doc"
+      }
+    ]
+  },
+  "steps": [
+    {
+      "order": 1,
+      "title": "Bước 1",
+      "description": "1.",
+      "example": null
+    },
+    {
+      "order": 2,
+      "title": "Bước 1:",
+      "description": "Bước 1: Cá nhân, tổ chức chuẩn bị hồ sơ theo quy định của pháp luật.",
+      "example": null
+    },
+    {
+      "order": 3,
+      "title": "Bước 2:",
+      "description": "Bước 2: Cá nhân, tổ chức nộp hồ sơ đến Công an cấp xã",
+      "example": null
+    },
+    {
+      "order": 4,
+      "title": "Bước 3:",
+      "description": "Bước 3: Khi tiếp nhận hồ sơ khai báo thông tin về cư trú đối với người chưa đủ điều kiện đăng ký thường trú, đăng ký tạm trú, cơ quan đăng ký cư trú kiểm tra tính pháp lý và nội dung hồ sơ: - Trường hợp hồ sơ đã đầy đủ, hợp lệ thì tiếp nhận hồ sơ và cấp Phiếu tiếp nhận hồ sơ và hẹn trả kết quả (mẫu CT04 ban hành kèm theo Thông tư số 66/2023/TT-BCA) cho người đăng ký; - Trường hợp hồ sơ không đủ điều kiện thì từ chối và cấp Phiếu từ chối tiếp nhận, giải quyết hồ sơ (mẫu CT06 ban hành kèm theo Thông tư số 66/2023/TT-BCA) cho người đăng ký.",
+      "example": null
+    },
+    {
+      "order": 5,
+      "title": "Bước 4:",
+      "description": "Bước 4: Căn cứ theo ngày hẹn trên Phiếu tiếp nhận hồ sơ và hẹn trả kết quả để nhận thông báo kết quả giải quyết thủ tục đăng ký cư trú (nếu có).",
+      "example": null
+    }
+  ],
+  "input_fields": [
+    {
+      "field": "document_request_type",
+      "label": "Loại giấy tờ cần xử lý",
+      "type": "string",
+      "required": true
+    },
+    {
+      "field": "submission_channel_preference",
+      "label": "Kênh nộp dự kiến",
+      "type": "enum",
+      "required": false,
+      "options": [
+        "Trực tiếp",
+        "Trực tuyến"
+      ]
+    },
+    {
+      "field": "identity_document_available",
+      "label": "Có giấy tờ định danh",
+      "type": "boolean",
+      "required": true
+    },
+    {
+      "field": "residency_or_status_known",
+      "label": "Biết rõ nơi cư trú hoặc tình trạng hiện tại",
+      "type": "boolean",
+      "required": false
+    }
+  ],
+  "validation_rules": [
+    {
+      "id": "required-1",
+      "severity": "error",
+      "field": "document_request_type",
+      "rule": "Trường bắt buộc phải có dữ liệu hợp lệ trước khi nộp.",
+      "message": "Thiếu trường bắt buộc: Loại giấy tờ cần xử lý."
+    },
+    {
+      "id": "required-3",
+      "severity": "error",
+      "field": "identity_document_available",
+      "rule": "Trường bắt buộc phải có dữ liệu hợp lệ trước khi nộp.",
+      "message": "Thiếu trường bắt buộc: Có giấy tờ định danh."
+    },
+    {
+      "id": "hint-1",
+      "severity": "warning",
+      "field": "general",
+      "rule": "Nên xác định trước kênh nộp hồ sơ để biết có cần bản giấy, bản điện tử hay xuất trình trực tiếp.",
+      "message": "Nên xác định trước kênh nộp hồ sơ để biết có cần bản giấy, bản điện tử hay xuất trình trực tiếp."
+    },
+    {
+      "id": "hint-2",
+      "severity": "warning",
+      "field": "general",
+      "rule": "Có mẫu biểu đính kèm, nên kiểm tra đúng biểu mẫu trước khi nộp.",
+      "message": "Có mẫu biểu đính kèm, nên kiểm tra đúng biểu mẫu trước khi nộp."
+    },
+    {
+      "id": "hint-3",
+      "severity": "warning",
+      "field": "general",
+      "rule": "Nên đối chiếu trước dữ liệu định danh và nơi cư trú để tránh bị yêu cầu bổ sung.",
+      "message": "Nên đối chiếu trước dữ liệu định danh và nơi cư trú để tránh bị yêu cầu bổ sung."
+    }
+  ],
+  "common_errors": [
+    {
+      "field": "general",
+      "issue": "Thiếu giấy tờ hợp pháp hóa hoặc giấy tờ nhân thân của phía nước ngoài.",
+      "fix": "Nên xác định trước kênh nộp hồ sơ để biết có cần bản giấy, bản điện tử hay xuất trình trực tiếp."
+    },
+    {
+      "field": "general",
+      "issue": "Điền sai mẫu tờ khai hoặc chọn sai biểu mẫu đi kèm.",
+      "fix": "Nên xác định trước kênh nộp hồ sơ để biết có cần bản giấy, bản điện tử hay xuất trình trực tiếp."
+    }
+  ],
+  "clarifying_questions": [
+    {
+      "id": "clarify_1",
+      "question": "Bạn đang xử lý giấy tờ gì và muốn nộp trực tiếp hay trực tuyến?",
+      "purpose": "workflow_intake"
+    },
+    {
+      "id": "clarify_2",
+      "question": "Thông tin định danh và nơi cư trú hiện tại đã sẵn sàng để đối chiếu chưa?",
+      "purpose": "workflow_intake"
+    }
+  ],
+  "legal_basis": [
+    {
+      "title": "Thông tư số 53/2025/TT-BCAngày 01/7/2025 của Bộ Công an sửa đổi, bổ sung một số điều của Thông tư số 55/2021/TT-BCA ngày 15 tháng 5 năm 2021 của Bộ trưởng Bộ Công an quy định chi tiết một số điều và biện pháp thi hành Luật Cư trú được sửa đổi, bổ sung bởi Thông tư số 66/2023/TT-BCA ngày 17 tháng 11 năm 2023; Thông tư số 56/2021/TT-BCA ngày 15 tháng 5 năm 2021 của Bộ trưởng Bộ Công an quy định về biểu mẫu trong đăng ký, quản lý cư trú được sửa đổi, bổ sung bởi Thông tư số 66/2023/TT-BCA ngày 17 tháng 11 năm 2023; Thông tư số 17/2024/TT-BCA ngày 15 tháng 5 năm 2024 của Bộ trưởng Bộ Công an quy định chi tiết một số điều và biện pháp thi hành Luật Căn cước.",
+      "code": "53/2025/TT-BCA"
+    },
+    {
+      "title": "Luật Cư trú 2020",
+      "code": "68/2020/QH14"
+    },
+    {
+      "title": "Thông tư số 54/2025/TT-BCA ngày 01/7/2025 của Bộ trưởng Bộ Công an quy định về quy trình đăng ký cư trú.",
+      "code": "54/2025/TT-BCA"
+    },
+    {
+      "title": "Nghị định quy định chi tiết một số điều và biện pháp thi hành Luật Cư trú",
+      "code": "154/2024/NĐ-CP"
+    },
+    {
+      "title": "Thông tư số 66/2023/TT-BCA Sửa đổi, bổ sung một số điều của Thông tư số 55/2021/TT-BCA ngày 15/5/2021 quy định chi tiết một số điều và biện pháp thi hành Luật Cư trú; Thông tư số 56/2021/TT-BCA ngày 15/5/2021 của Bộ trưởng Bộ Công an quy định về biểu mẫu trong đăng ký, quản lý cư trú; Thông tư số 57/2021/TT-BCA ngày 15/5/2021 của Bộ trưởng Bộ Công an quy định về quy trình đăng ký cư trú.",
+      "code": "66/2023/TT-BCA"
+    },
+    {
+      "title": "Thông tư 57/2021/TT-BCA",
+      "code": "57/2021/TT-BCA"
+    },
+    {
+      "title": "Thông tư 55/2021/TT-BCA",
+      "code": "55/2021/TT-BCA"
+    },
+    {
+      "title": "Thông tư 56/2021/TT-BCA",
+      "code": "56/2021/TT-BCA"
+    }
+  ],
+  "legal_bases": [
+    {
+      "title": "Thông tư số 53/2025/TT-BCAngày 01/7/2025 của Bộ Công an sửa đổi, bổ sung một số điều của Thông tư số 55/2021/TT-BCA ngày 15 tháng 5 năm 2021 của Bộ trưởng Bộ Công an quy định chi tiết một số điều và biện pháp thi hành Luật Cư trú được sửa đổi, bổ sung bởi Thông tư số 66/2023/TT-BCA ngày 17 tháng 11 năm 2023; Thông tư số 56/2021/TT-BCA ngày 15 tháng 5 năm 2021 của Bộ trưởng Bộ Công an quy định về biểu mẫu trong đăng ký, quản lý cư trú được sửa đổi, bổ sung bởi Thông tư số 66/2023/TT-BCA ngày 17 tháng 11 năm 2023; Thông tư số 17/2024/TT-BCA ngày 15 tháng 5 năm 2024 của Bộ trưởng Bộ Công an quy định chi tiết một số điều và biện pháp thi hành Luật Căn cước.",
+      "code": "53/2025/TT-BCA"
+    },
+    {
+      "title": "Luật Cư trú 2020",
+      "code": "68/2020/QH14"
+    },
+    {
+      "title": "Thông tư số 54/2025/TT-BCA ngày 01/7/2025 của Bộ trưởng Bộ Công an quy định về quy trình đăng ký cư trú.",
+      "code": "54/2025/TT-BCA"
+    },
+    {
+      "title": "Nghị định quy định chi tiết một số điều và biện pháp thi hành Luật Cư trú",
+      "code": "154/2024/NĐ-CP"
+    },
+    {
+      "title": "Thông tư số 66/2023/TT-BCA Sửa đổi, bổ sung một số điều của Thông tư số 55/2021/TT-BCA ngày 15/5/2021 quy định chi tiết một số điều và biện pháp thi hành Luật Cư trú; Thông tư số 56/2021/TT-BCA ngày 15/5/2021 của Bộ trưởng Bộ Công an quy định về biểu mẫu trong đăng ký, quản lý cư trú; Thông tư số 57/2021/TT-BCA ngày 15/5/2021 của Bộ trưởng Bộ Công an quy định về quy trình đăng ký cư trú.",
+      "code": "66/2023/TT-BCA"
+    },
+    {
+      "title": "Thông tư 57/2021/TT-BCA",
+      "code": "57/2021/TT-BCA"
+    },
+    {
+      "title": "Thông tư 55/2021/TT-BCA",
+      "code": "55/2021/TT-BCA"
+    },
+    {
+      "title": "Thông tư 56/2021/TT-BCA",
+      "code": "56/2021/TT-BCA"
+    }
+  ],
+  "faq": [
+    {
+      "question": "Có thể nộp qua kênh nào?",
+      "answer": "Các kênh hiện có: Trực tiếp, Trực tuyến."
+    },
+    {
+      "question": "Thời gian xử lý tham chiếu là bao lâu?",
+      "answer": "Thời gian xử lý tham chiếu hiện có là 5 ngày làm việc."
+    },
+    {
+      "question": "Kết quả chính của thủ tục là gì?",
+      "answer": "Kết quả chính được trích xuất là Xác nhận thông tin về cư trú (CT07)."
+    }
+  ],
+  "guidance": {
+    "highlight_documents": [
+      {
+        "bucket": "required",
+        "name": "Tờ khai thay đổi thông tin cư trú (Mẫu CT01 ban hành kèm theo Thông tư số 53/2025/TT-BCA).",
+        "conditions": [],
+        "attachment_path": "file:///C:/Users/ku060/Downloads/data/raw_data/1_010040/1.MuCT01banhnhkmtheoThngts53%20%281%29.doc"
+      },
+      {
+        "bucket": "conditional",
+        "name": "Lưu ý: - Người nước ngoài được nhập quốc tịch Việt Nam khi khai báo thông tin về cư trú lần đầu phải có Quyết định của Chủ tịch nước về việc cho nhập quốc tịch Việt Nam. Người gốc Việt Nam được trở lại quốc tịch Việt Nam khi khai báo thông tin về cư trú lần đầu sau khi được cho trở lại quốc tịch Việt Nam phải có Quyết định của Chủ tịch nước về việc cho trở lại quốc tịch Việt Nam trừ trường hợp đã khai thác được thông tin trong Cơ sở dữ liệu quốc tịch.",
+        "conditions": [
+          "Lưu ý: - Người nước ngoài được nhập quốc tịch Việt Nam khi khai báo thông tin về cư trú lần đầu phải có Quyết định của Chủ tịch nước về việc cho nhập quốc tịch Việt Nam. Người gốc Việt Nam được trở lại quốc tịch Việt Nam khi khai báo thông tin về cư trú lần đầu sau khi được cho trở lại quốc tịch Việt Nam phải có Quyết định của Chủ tịch nước về việc cho trở lại quốc tịch Việt Nam trừ trường hợp đã khai thác được thông tin trong Cơ sở dữ liệu quốc tịch."
+        ],
+        "attachment_path": null
+      },
+      {
+        "bucket": "conditional",
+        "name": "Giấy tờ, tài liệu khác (nếu có).",
+        "conditions": [
+          "Giấy tờ, tài liệu khác (nếu có)."
+        ],
+        "attachment_path": null
+      }
+    ],
+    "special_cases": [
+      "Có yếu tố nước ngoài"
+    ],
+    "common_errors": [
+      "Thiếu giấy tờ hợp pháp hóa hoặc giấy tờ nhân thân của phía nước ngoài.",
+      "Điền sai mẫu tờ khai hoặc chọn sai biểu mẫu đi kèm."
+    ],
+    "validation_hints": [
+      "Nên xác định trước kênh nộp hồ sơ để biết có cần bản giấy, bản điện tử hay xuất trình trực tiếp.",
+      "Có mẫu biểu đính kèm, nên kiểm tra đúng biểu mẫu trước khi nộp.",
+      "Nên đối chiếu trước dữ liệu định danh và nơi cư trú để tránh bị yêu cầu bổ sung."
+    ]
+  },
+  "next_steps": {
+    "summary": "Nên kiểm tra trước giấy tờ định danh, nơi nộp và mẫu biểu liên quan, rồi chọn kênh nộp phù hợp: Trực tiếp, Trực tuyến. Hiện có khoảng 3 mục giấy tờ cần theo dõi trong checklist.",
+    "time_badge": "5 ngày làm việc",
+    "result_label": "Xác nhận thông tin về cư trú (CT07)",
+    "primary_channel": "online",
+    "channels": [
+      "in_person",
+      "online"
+    ]
+  },
+  "notes": [],
+  "provenance": {
+    "pipeline": "raw->structured->normalized->enriched->ui_api_payload",
+    "normalizer_version": "0.2.0",
+    "enricher_version": "0.2.0",
+    "mapping_notes": "workflow_generated:cu_tru_giay_to/tam_tru",
+    "supported_group": true
+  }
+}

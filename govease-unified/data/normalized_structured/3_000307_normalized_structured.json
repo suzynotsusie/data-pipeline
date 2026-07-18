@@ -1,0 +1,212 @@
+{
+  "schema_version": "1.0",
+  "normalizer_version": "0.2.0",
+  "source": {
+    "procedure_code": "3.000307",
+    "title": "Sáp nhập, chia, tách trung tâm học tập cộng đồng",
+    "raw_structured_parser_version": "0.1.0",
+    "field": "Giáo dục thường xuyên"
+  },
+  "procedure": {
+    "level": "Cấp xã",
+    "procedure_type": "OTHER",
+    "target_users": [
+      "Công dân Việt Nam",
+      "Tổ chức (không bao gồm doanh nghiệp",
+      "HTX)"
+    ],
+    "authorities": [
+      "Chủ tịch UBND cấp xã"
+    ],
+    "receiving_places": []
+  },
+  "submission": {
+    "channels": [
+      "in_person",
+      "online",
+      "postal"
+    ],
+    "methods": [
+      {
+        "method_id": "method_1",
+        "channel": "online",
+        "processing_time_text": "10 ngày làm việc",
+        "fee_text": null,
+        "description": "10 ngày làm việc, kể từ ngày nhận đủ hồ sơ hợp lệ.",
+        "is_online": true,
+        "is_postal": false,
+        "is_in_person": false
+      },
+      {
+        "method_id": "method_2",
+        "channel": "postal",
+        "processing_time_text": "10 ngày làm việc",
+        "fee_text": null,
+        "description": "10 ngày làm việc, kể từ ngày nhận đủ hồ sơ hợp lệ.",
+        "is_online": false,
+        "is_postal": true,
+        "is_in_person": false
+      },
+      {
+        "method_id": "method_3",
+        "channel": "in_person",
+        "processing_time_text": "10 ngày làm việc",
+        "fee_text": null,
+        "description": "10 ngày làm việc, kể từ ngày nhận đủ hồ sơ hợp lệ.",
+        "is_online": false,
+        "is_postal": false,
+        "is_in_person": true
+      }
+    ],
+    "timing_summary": {
+      "unique_processing_times": [
+        "10 ngày làm việc"
+      ],
+      "method_count": 3
+    }
+  },
+  "documents": {
+    "required": [
+      {
+        "document_id": "ki_n_ng_thu_n_c_a_nh_u_t_i_di_n_t_nh_t_75_t_ng_s_v_n_g_p_i_v_i_vi_c_s_p_nh_p_chia_t_ch_trung_t_m_t_th_c",
+        "name": "Ý kiến đồng thuận của nhà đầu tư đại diện ít nhất 75% tổng số vốn góp đối với việc sáp nhập, chia, tách trung tâm tư thục",
+        "group_name": "default",
+        "group_type": "unknown",
+        "original_count": "0",
+        "copy_count": "1",
+        "conditions": [],
+        "attachment_label": null,
+        "attachment_path": null
+      },
+      {
+        "document_id": "t_tr_nh_ngh_s_p_nh_p_chia_t_ch_trung_t_m_theo_m_u_s_04_ph_l_c_ii_k_m_theo_ngh_nh_s_142_2025_n_cp",
+        "name": "Tờ trình đề nghị sáp nhập, chia, tách trung tâm (theo Mẫu số 04 Phụ lục II kèm theo Nghị định số 142/2025/NĐ-CP).",
+        "group_name": "default",
+        "group_type": "unknown",
+        "original_count": "1",
+        "copy_count": "0",
+        "conditions": [],
+        "attachment_label": "Mus04_PL2.docx",
+        "attachment_path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/3_000307/Mus04_PL2.docx"
+      },
+      {
+        "document_id": "n_s_p_nh_p_chia_t_ch_trung_t_m_theo_m_u_s_05_ph_l_c_i_k_m_theo_ngh_nh_s_142_2025_n_cp",
+        "name": "Đề án sáp nhập, chia, tách trung tâm (theo Mẫu số 05 Phụ lục I kèm theo Nghị định số 142/2025/NĐ-CP).",
+        "group_name": "default",
+        "group_type": "unknown",
+        "original_count": "1",
+        "copy_count": "0",
+        "conditions": [],
+        "attachment_label": null,
+        "attachment_path": null
+      }
+    ],
+    "conditional": [],
+    "presented": [],
+    "notes": [],
+    "forms": [
+      {
+        "name": "Tờ trình đề nghị sáp nhập, chia, tách trung tâm (theo Mẫu số 04 Phụ lục II kèm theo Nghị định số 142/2025/NĐ-CP).",
+        "attachment_label": "Mus04_PL2.docx",
+        "attachment_path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/3_000307/Mus04_PL2.docx"
+      }
+    ],
+    "empty_groups": [],
+    "document_count": 3
+  },
+  "process": {
+    "steps": [
+      {
+        "step_id": "step_1",
+        "title": null,
+        "content": "1.",
+        "actor": "user",
+        "channel_hint": null,
+        "time_hint": null
+      },
+      {
+        "step_id": "step_2",
+        "title": "a)",
+        "content": "a) Tổ chức, cá nhân gửi 01 bộ hồ sơ quy định tại khoản 2 Điều 30 Phụ lục I ban hành kèm theo Nghị định số 142/2025/NĐ-CP trực tuyến trên Cổng Dịch vụ công quốc gia hoặc qua dịch vụ bưu chính hoặc trực tiếp đến Trung tâm Phục vụ hành chính công.",
+        "actor": "user",
+        "channel_hint": "trực tuyến",
+        "time_hint": null
+      },
+      {
+        "step_id": "step_3",
+        "title": "b)",
+        "content": "b) Trong thời hạn 02 ngày làm việc, kể từ ngày nhận đủ hồ sơ, nếu hồ sơ không hợp lệ thì Ủy ban nhân dân cấp xã thông báo bằng văn bản gửi trực tiếp hoặc qua dịch vụ bưu chính hoặc thư điện tử những nội dung cần chỉnh sửa, bổ sung cho cơ quan, tổ chức, cá nhân đề nghị sáp nhập, chia, tách.",
+        "actor": "authority",
+        "channel_hint": "dịch vụ bưu chính",
+        "time_hint": "02 ngày làm việc"
+      },
+      {
+        "step_id": "step_4",
+        "title": "c)",
+        "content": "c) Trong thời hạn 10 ngày làm việc, kể từ ngày nhận đủ hồ sơ hợp lệ, Ủy ban nhân dân cấp xã tổ thẩm định hồ sơ và thẩm định thực tế (nếu cần thiết) các điều kiện sáp nhập, chia, tách trung tâm; nếu đủ điều kiện thì Chủ tịch Ủy ban nhân dân cấp xã quyết định sáp nhập, chia, tách trung tâm học tập cộng đồng; nếu chưa đủ điều kiện thì thông báo bằng văn bản gửi trực tiếp hoặc qua dịch vụ bưu chính hoặc thư điện tử cho cơ quan, tổ chức, cá nhân đề nghị sáp nhập, chia, tách và nêu rõ lý do. Quyết định sáp nhập, chia, tách trung tâm học tập cộng đồng (theo Mẫu số 10 Phụ lục II ban hành kèm theo Nghị định số 142/2025/NĐ-CP) được công bố công khai trên các phương tiện thông tin đại chúng.",
+        "actor": "authority",
+        "channel_hint": "dịch vụ bưu chính",
+        "time_hint": "10 ngày làm việc"
+      }
+    ],
+    "step_count": 4,
+    "notes": []
+  },
+  "eligibility": {
+    "conditions": [
+      "Trung tâm được sáp nhập, chia, tách khi bảo đảm các yêu cầu sau đây:",
+      "a) Bảo đảm quyền, lợi ích của nhà giáo và người học.",
+      "b) Góp phần nâng cao chất lượng và hiệu quả giáo dục.",
+      "c) Trung tâm mới được hình thành sau quá trình sáp nhập, chia, tách phải đáp ứng các điều kiện quy định tại Điều 37 Nghị định số 125/2024/NĐ-CP:",
+      "Trung tâm được sáp nhập, chia, tách khi bảo đảm yêu cầu Trung tâm mới được hình thành sau quá trình sáp nhập, chia, tách phải đáp ứng các điều kiện quy định tại Điều 37 Nghị định số 125/2024/NĐ-CP."
+    ],
+    "has_conditions": true
+  },
+  "results": {
+    "items": [
+      {
+        "name": "Quyết định sáp nhập, chia, tách trung tâm học tập cộng đồng công lập của Chủ tịch Ủy ban nhân dân cấp xã",
+        "result_code": "KQ.G03.000402",
+        "raw_text": "Quyết định sáp nhập, chia, tách trung tâm học tập cộng đồng công lập của Chủ tịch Ủy ban nhân dân cấp xã"
+      }
+    ],
+    "primary_result": {
+      "name": "Quyết định sáp nhập, chia, tách trung tâm học tập cộng đồng công lập của Chủ tịch Ủy ban nhân dân cấp xã",
+      "result_code": "KQ.G03.000402",
+      "raw_text": "Quyết định sáp nhập, chia, tách trung tâm học tập cộng đồng công lập của Chủ tịch Ủy ban nhân dân cấp xã"
+    }
+  },
+  "legal_basis": {
+    "items": [
+      {
+        "title": "Nghị định quy định điều kiện đầu tư và hoạt động trong lĩnh vực giáo dục",
+        "code": "125/2024/NĐ-CP"
+      },
+      {
+        "title": "Nghị quyết số 66.16/2026/NQ-CP của Chính phủ ngày 07/04/2026 về việc Cắt giảm, đơn giản hóa thủ tục hành chính,quy định liên quan đến hoạt động sản xuất, kinh doanh",
+        "code": "66.16/2026/NQ-CP"
+      },
+      {
+        "title": "Nghị định số 142/2025/NĐ-CP của Chính phủ: Quy định về phân định thẩm quyền của chính quyền địa phương hai cấp trong lĩnh vực quản lý nhà nước của Bộ Giáo dục và Đào tạo",
+        "code": "Nghị định số 142/2025/NĐ-CP"
+      }
+    ],
+    "count": 3
+  },
+  "attachments": [
+    {
+      "label": "Mus04_PL2.docx",
+      "path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/3_000307/Mus04_PL2.docx",
+      "source_section": "Thành phần hồ sơ",
+      "document_name": "Tờ trình đề nghị sáp nhập, chia, tách trung tâm (theo Mẫu số 04 Phụ lục II kèm theo Nghị định số 142/2025/NĐ-CP)."
+    }
+  ],
+  "signals": {
+    "raw_parse_warnings": [],
+    "missing_documents": false,
+    "documents_section_present": true,
+    "documents_declared_empty": false,
+    "documents_only_in_notes": false,
+    "missing_results": false
+  }
+}

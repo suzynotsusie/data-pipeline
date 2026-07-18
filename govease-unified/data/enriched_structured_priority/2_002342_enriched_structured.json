@@ -1,0 +1,91 @@
+{
+  "schema_version": "1.0",
+  "enricher_version": "0.2.0",
+  "source": {
+    "procedure_code": "2.002342",
+    "title": "Giải quyết chế độ cho người lao động phát hiện bị bệnh nghề nghiệp khi đã nghỉ hưu hoặc không còn làm việc trong các nghề, công việc có nguy cơ bị bệnh nghề nghiệp, gồm: Chi phí giám định thương tật, bệnh tật; trợ cấp một lần hoặc hằng tháng; trợ cấp phục vụ; hỗ trợ phương tiện trợ giúp sinh hoạt, dụng cụ chỉnh hình; dưỡng sức, phục hồi sức khỏe; trợ cấp khi người lao động chết do bệnh nghề nghiệp; đóng bảo hiểm y tế cho người nghỉ việc hưởng trợ cấp bảo hiểm bệnh nghề nghiệp hằng tháng",
+    "group_key": "huu_tri",
+    "workflow_family": "retirement_workflow",
+    "subflow": "chuan_bi_nghi_huu"
+  },
+  "experience": {
+    "entry_label": "Hỗ trợ chế độ hưu trí",
+    "overview_summary": "Thủ tục này thuộc nhóm hưu trí, thường dùng để xác định điều kiện nghỉ hưu, trợ cấp hoặc chế độ hưởng theo hồ sơ bảo hiểm xã hội. Kết quả thường nhận được là Có trách nhiệm giải quyết hưởng chế độ, nếu không giải quyết phải trả lời bằng văn bản và nêu rõ lý do. Thời gian xử lý tham khảo: 10 ngày.",
+    "next_step_summary": "Nên rà trước quá trình đóng bảo hiểm, mốc tuổi và loại chế độ muốn hưởng trước khi nộp. Có thể chọn kênh nộp phù hợp: Trực tiếp, Dịch vụ bưu chính. Hiện có khoảng 2 mục giấy tờ cần theo dõi trong checklist.",
+    "tone": "supportive_public_service"
+  },
+  "guidance": {
+    "highlight_documents": [
+      {
+        "bucket": "required",
+        "name": "Biên bản giám định mức suy giảm khả năng lao động của Hội đồng giám định y khoa.",
+        "conditions": [],
+        "attachment_path": null
+      },
+      {
+        "bucket": "conditional",
+        "name": "Đơn đề nghị hưởng chế độ bệnh nghề nghiệp của người lao động theo Mẫu số 01 tại Phụ lục của Nghị định số 88/2020/NĐ-CP ngày 28/7/2020 đối với người lao động đã nghỉ hưu hoặc thôi việc; hoặc văn bản của người sử dụng lao động nơi người lao động đang làm việc đề nghị giải quyết chế độ bệnh nghề nghiệp theo mẫu do Bảo hiểm xã hội Việt Nam ban hành, đối với trường hợp người lao động chuyển đến làm việc cho người sử dụng lao động khác.",
+        "conditions": [
+          "Đơn đề nghị hưởng chế độ bệnh nghề nghiệp của người lao động theo Mẫu số 01 tại Phụ lục của Nghị định số 88/2020/NĐ-CP ngày 28/7/2020 đối với người lao động đã nghỉ hưu hoặc thôi việc; hoặc văn bản của người sử dụng lao động nơi người lao động đang làm việc đề nghị giải quyết chế độ bệnh nghề nghiệp theo mẫu do Bảo hiểm xã hội Việt Nam ban hành, đối với trường hợp người lao động chuyển đến làm việc cho người sử dụng lao động khác."
+        ],
+        "attachment_path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/2_002342/7.Mus01tiPhlccaNghnhs882020.docx"
+      }
+    ],
+    "special_cases": [
+      "Có thể cần đối chiếu quá trình đóng bảo hiểm để giải quyết chế độ",
+      "Có thể cần xác minh quan hệ lao động hoặc giấy phép làm việc"
+    ],
+    "common_errors": [
+      "Điền sai mẫu tờ khai hoặc chọn sai biểu mẫu đi kèm.",
+      "Thiếu hồ sơ về vị trí việc làm, đơn vị sử dụng lao động hoặc điều kiện làm việc áp dụng."
+    ],
+    "validation_hints": [
+      "Nên xác định trước kênh nộp hồ sơ để biết có cần bản giấy, bản điện tử hay xuất trình trực tiếp.",
+      "Có mẫu biểu đính kèm, nên kiểm tra đúng biểu mẫu trước khi nộp.",
+      "Nên rà lại quá trình tham gia bảo hiểm, độ tuổi và loại chế độ muốn hưởng trước khi nộp."
+    ]
+  },
+  "intake": {
+    "candidate_input_fields": [
+      {
+        "field_id": "insured_person_name",
+        "label": "Người hưởng chế độ",
+        "field_type": "text",
+        "required": true
+      },
+      {
+        "field_id": "retirement_or_allowance_need",
+        "label": "Nhu cầu hưởng chế độ hưu trí/trợ cấp",
+        "field_type": "text",
+        "required": true
+      },
+      {
+        "field_id": "social_insurance_participation_known",
+        "label": "Đã rõ quá trình tham gia BHXH",
+        "field_type": "boolean",
+        "required": true
+      },
+      {
+        "field_id": "submission_channel_preference",
+        "label": "Kênh nộp dự kiến",
+        "field_type": "enum",
+        "required": false
+      }
+    ],
+    "suggested_clarifying_questions": [
+      "Bạn đang muốn chuẩn bị nghỉ hưu hay giải quyết chế độ hưu trí cụ thể nào?",
+      "Quá trình tham gia bảo hiểm và độ tuổi hưởng chế độ đã xác định rõ chưa?"
+    ]
+  },
+  "ui_hints": {
+    "primary_channel": "postal",
+    "result_label": "Có trách nhiệm giải quyết hưởng chế độ, nếu không giải quyết phải trả lời bằng văn bản và nêu rõ lý do",
+    "time_badge": "10 ngày",
+    "document_count_badge": 2
+  },
+  "provenance": {
+    "generator": "workflow_domain_enricher",
+    "derivation_mode": "rule_based_semantic_enrichment",
+    "supported_group": true
+  }
+}

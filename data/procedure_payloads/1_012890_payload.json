@@ -1,0 +1,348 @@
+{
+  "schema_version": "3.0",
+  "record_type": "public_service_procedure_payload",
+  "id": "procedure-1.012890",
+  "procedure_code": "1.012890",
+  "code": "1.012890",
+  "title": "Gia hạn thời hạn sở hữu nhà ở tại Việt Nam của tổ chức, cá nhân nước ngoài",
+  "language": "vi",
+  "status": "generated_from_pipeline",
+  "field": "Nhà ở và công sở",
+  "group_key": "dien_luc_nha_o_dat_dai",
+  "workflow_family": null,
+  "subflow": null,
+  "source": {
+    "source_url": "file:///C:/Users/ku060/Downloads/VAIC%20source/data-pipeline/raw_data/1_012890/1_012890_procedure_detail.md",
+    "source_markdown_path": "C:\\Users\\ku060\\Downloads\\VAIC source\\data-pipeline\\raw_data\\1_012890\\1_012890_procedure_detail.md",
+    "normalized_payload_path": "C:\\Users\\ku060\\Downloads\\VAIC source\\data-pipeline\\govease-unified\\data\\normalized_structured\\1_012890_normalized_structured.json",
+    "enriched_payload_path": "C:\\Users\\ku060\\Downloads\\VAIC source\\data-pipeline\\govease-unified\\data\\enriched_structured_priority\\1_012890_enriched_structured.json"
+  },
+  "scope": {
+    "included": "Thủ tục này thuộc nhóm nhà ở, đất đai và điện lực, thường cần kiểm tra hiện trạng hồ sơ tài sản hoặc điều kiện hạ tầng liên quan. Kết quả thường nhận được là Văn bản chấp thuận gia hạn thời hạn sở hữu nhà ở. Thời gian xử lý tham khảo: 30 ngày.",
+    "not_included": []
+  },
+  "agency": {
+    "executing_agency": "Ủy ban nhân dân cấp tỉnh",
+    "submission_place": null,
+    "receiving_places": []
+  },
+  "target_users": [
+    "Người nước ngoài",
+    "Tổ chức nước ngoài",
+    "Người Việt Nam định cư ở nước ngoài"
+  ],
+  "submission_methods": [
+    {
+      "code": "IN_PERSON",
+      "label": "Trực tiếp",
+      "processing_time": "30 ngày",
+      "fee": null,
+      "description": "Tối đa 30 ngày, kể từ ngày nhận đủ hồ sơ hợp lệ."
+    },
+    {
+      "code": "ONLINE",
+      "label": "Trực tuyến",
+      "processing_time": "30 ngày",
+      "fee": null,
+      "description": "Tối đa 30 ngày, kể từ ngày nhận đủ hồ sơ hợp lệ."
+    },
+    {
+      "code": "POSTAL",
+      "label": "Dịch vụ bưu chính",
+      "processing_time": "30 ngày",
+      "fee": null,
+      "description": "Tối đa 30 ngày, kể từ ngày nhận đủ hồ sơ hợp lệ."
+    }
+  ],
+  "processing_note": "Thời gian xử lý tham chiếu: 30 ngày. Nên chuẩn bị trước thông tin thửa đất, tài sản hoặc địa điểm tiếp nhận, rồi chọn kênh nộp phù hợp: Trực tiếp, Trực tuyến, Dịch vụ bưu chính. Hiện có khoảng 4 mục giấy tờ cần theo dõi trong checklist.",
+  "documents": {
+    "normally_required": [
+      {
+        "name": "Đơn đề nghị gia hạn thời hạn sở hữu nhà ở theo mẫu số 01 của Phụ lục I ban hành kèm theo Nghị định số 95/2024/NĐ-CP ngày 24/7/2024 của Chính phủ quy định chi tiết một số điều của Luật Nhà ở ; (Mẫu đơn có quy định về các thông tin đã có trong cơ sở dữ liệu quốc gia về dân cư hoặc cơ sở dữ liệu chuyên ngành thì các thông tin này được thay thế bằng mã số định danh cá nhân hoặc mã số chuyên ngành thể hiện trong mẫu đơn, tờ khai khi cơ sở dữ liệu quốc gia về dân cư hoặc cơ sở dữ liệu chuyên ngành được vận hành).",
+        "quantity": "1 bản chính, 1 bản sao",
+        "notes": [],
+        "group": "default",
+        "attachment_path": null
+      },
+      {
+        "name": "Bản sao có chứng thực hoặc bản sao kèm theo bản chính để đối chiếu Giấy chứng nhận quyền sử dụng đất, quyền sở hữu nhà ở và tài sản gắn liền với đất hoặc giấy chứng nhận về quyền sở hữu đối với nhà ở được cấp theo quy định của Luật Đất đai năm 2024 ; (thành phần hồ sơ tại mục này có quy định về các thông tin đã có trong cơ sở dữ liệu quốc gia về dân cư hoặc cơ sở dữ liệu chuyên ngành thì các thông tin này được thay thế bằng mã số định danh cá nhân hoặc mã số chuyên ngành thể hiện trong mẫu đơn, tờ khai khi cơ sở dữ liệu quốc gia về dân cư hoặc cơ sở dữ liệu chuyên ngành được vận hành).",
+        "quantity": "1 bản chính, 1 bản sao",
+        "notes": [],
+        "group": "default",
+        "attachment_path": null
+      }
+    ],
+    "conditional": [
+      {
+        "condition": "Bản sao hộ chiếu còn giá trị của chủ sở hữu nhà ở có đóng dấu nhập cảnh vào Việt Nam của cơ quan có thẩm quyền hoặc giấy tờ pháp lý tương đương nhập cảnh vào Việt Nam tại thời điểm đề nghị gia hạn (áp dụng đối với trường hợp chủ sở hữu nhà ở là cá nhân nước ngoài);",
+        "document": "Bản sao hộ chiếu còn giá trị của chủ sở hữu nhà ở có đóng dấu nhập cảnh vào Việt Nam của cơ quan có thẩm quyền hoặc giấy tờ pháp lý tương đương nhập cảnh vào Việt Nam tại thời điểm đề nghị gia hạn (áp dụng đối với trường hợp chủ sở hữu nhà ở là cá nhân nước ngoài);",
+        "quantity": "1 bản chính, 1 bản sao",
+        "notes": [],
+        "attachment_path": null
+      },
+      {
+        "condition": "Bản sao có chứng thực hoặc bản sao kèm theo bản chính để đối chiếu Giấy chứng nhận đăng ký đầu tư đã được cơ quan có thẩm quyền của Việt Nam gia hạn thời gian hoạt động tại thời điểm đề nghị gia hạn (áp dụng đối với trường hợp chủ sở hữu nhà ở là tổ chức nước ngoài).",
+        "document": "Bản sao có chứng thực hoặc bản sao kèm theo bản chính để đối chiếu Giấy chứng nhận đăng ký đầu tư đã được cơ quan có thẩm quyền của Việt Nam gia hạn thời gian hoạt động tại thời điểm đề nghị gia hạn (áp dụng đối với trường hợp chủ sở hữu nhà ở là tổ chức nước ngoài).",
+        "quantity": "1 bản chính, 1 bản sao",
+        "notes": [],
+        "attachment_path": null
+      }
+    ],
+    "forms": [],
+    "presented": [],
+    "notes": [],
+    "summary": [
+      {
+        "group": "default",
+        "name": "Đơn đề nghị gia hạn thời hạn sở hữu nhà ở theo mẫu số 01 của Phụ lục I ban hành kèm theo Nghị định số 95/2024/NĐ-CP ngày 24/7/2024 của Chính phủ quy định chi tiết một số điều của Luật Nhà ở ; (Mẫu đơn có quy định về các thông tin đã có trong cơ sở dữ liệu quốc gia về dân cư hoặc cơ sở dữ liệu chuyên ngành thì các thông tin này được thay thế bằng mã số định danh cá nhân hoặc mã số chuyên ngành thể hiện trong mẫu đơn, tờ khai khi cơ sở dữ liệu quốc gia về dân cư hoặc cơ sở dữ liệu chuyên ngành được vận hành).",
+        "quantity": "1 bản chính, 1 bản sao",
+        "notes": [],
+        "attachment_path": null
+      },
+      {
+        "group": "default",
+        "name": "Bản sao có chứng thực hoặc bản sao kèm theo bản chính để đối chiếu Giấy chứng nhận quyền sử dụng đất, quyền sở hữu nhà ở và tài sản gắn liền với đất hoặc giấy chứng nhận về quyền sở hữu đối với nhà ở được cấp theo quy định của Luật Đất đai năm 2024 ; (thành phần hồ sơ tại mục này có quy định về các thông tin đã có trong cơ sở dữ liệu quốc gia về dân cư hoặc cơ sở dữ liệu chuyên ngành thì các thông tin này được thay thế bằng mã số định danh cá nhân hoặc mã số chuyên ngành thể hiện trong mẫu đơn, tờ khai khi cơ sở dữ liệu quốc gia về dân cư hoặc cơ sở dữ liệu chuyên ngành được vận hành).",
+        "quantity": "1 bản chính, 1 bản sao",
+        "notes": [],
+        "attachment_path": null
+      },
+      {
+        "group": null,
+        "name": null,
+        "quantity": "1 bản chính, 1 bản sao",
+        "notes": [],
+        "attachment_path": null
+      },
+      {
+        "group": null,
+        "name": null,
+        "quantity": "1 bản chính, 1 bản sao",
+        "notes": [],
+        "attachment_path": null
+      }
+    ]
+  },
+  "steps": [
+    {
+      "order": 1,
+      "title": "Bước 1",
+      "description": "1. Trước khi hết hạn sở hữu nhà ở tối thiểu 03 tháng, tổ chức, cá nhân nước ngoài có nhu cầu gia hạn thêm thời hạn sở hữu nhà ở gửi 01 bộ hồ sơ đến Ủy ban nhân dân cấp tỉnh nơi có nhà ở để được xem xét, giải quyết;",
+      "example": "03 tháng"
+    },
+    {
+      "order": 2,
+      "title": "Bước 2",
+      "description": "2. Trong thời hạn tối đa 30 ngày, kể từ ngày nhận được hồ sơ hợp lệ của tổ chức, cá nhân nước ngoài, Ủy ban nhân dân cấp tỉnh có trách nhiệm kiểm tra hồ sơ, nếu vẫn đáp ứng đúng đối tượng và điều kiện theo quy định của Luật Nhà ở thì có văn bản chấp thuận gia hạn một lần thời hạn sở hữu nhà ở theo đề nghị của chủ sở hữu nhưng tối đa là 50 năm, kể từ khi hết hạn sở hữu nhà ở lần đầu ghi trên Giấy chứng nhận; đối với trường hợp chủ sở hữu nhà ở là tổ chức thì gia hạn thời hạn sở hữu tối đa bằng thời hạn ghi trên Giấy chứng nhận đăng ký đầu tư đã được cơ quan có thẩm quyền của Việt Nam gia hạn hoạt động; trường hợp không đáp ứng quy định thì Ủy nhân dân cấp tỉnh phải có văn bản thông báo rõ lý do trả lời tổ chức, cá nhân nộp hồ sơ.",
+      "example": "30 ngày"
+    },
+    {
+      "order": 3,
+      "title": "Bước 3",
+      "description": "3. Trường hợp chấp thuận việc gia hạn thì Ủy ban nhân dân cấp tỉnh phải gửi văn bản chấp thuận này cho tổ chức, cá nhân nộp hồ sơ và gửi cho cơ quan có thẩm quyền cấp Giấy chứng nhận;",
+      "example": null
+    },
+    {
+      "order": 4,
+      "title": "Bước 4",
+      "description": "4. Trong thời hạn tối đa 15 ngày, kể từ ngày nhận được văn bản chấp thuận, chủ sở hữu nhà ở phải nộp văn bản chấp thuận gia hạn của Ủy ban nhân dân cấp tỉnh kèm theo hồ sơ đề nghị đăng ký biến động thay đổi về thời hạn sở hữu nhà ở trên Giấy chứng nhận đã cấp theo quy định của pháp luật về đất đai.",
+      "example": "15 ngày"
+    }
+  ],
+  "input_fields": [
+    {
+      "field": "property_or_service_need",
+      "label": "Nhu cầu về đất đai, nhà ở hoặc điện lực",
+      "type": "string",
+      "required": true
+    },
+    {
+      "field": "property_location",
+      "label": "Địa điểm tài sản hoặc nơi sử dụng dịch vụ",
+      "type": "string",
+      "required": true
+    },
+    {
+      "field": "submission_channel_preference",
+      "label": "Kênh nộp dự kiến",
+      "type": "enum",
+      "required": false,
+      "options": [
+        "Trực tiếp",
+        "Trực tuyến",
+        "Dịch vụ bưu chính"
+      ]
+    },
+    {
+      "field": "has_current_certificate",
+      "label": "Đã có giấy tờ/tài liệu hiện trạng",
+      "type": "boolean",
+      "required": false
+    }
+  ],
+  "validation_rules": [
+    {
+      "id": "required-1",
+      "severity": "error",
+      "field": "property_or_service_need",
+      "rule": "Trường bắt buộc phải có dữ liệu hợp lệ trước khi nộp.",
+      "message": "Thiếu trường bắt buộc: Nhu cầu về đất đai, nhà ở hoặc điện lực."
+    },
+    {
+      "id": "required-2",
+      "severity": "error",
+      "field": "property_location",
+      "rule": "Trường bắt buộc phải có dữ liệu hợp lệ trước khi nộp.",
+      "message": "Thiếu trường bắt buộc: Địa điểm tài sản hoặc nơi sử dụng dịch vụ."
+    },
+    {
+      "id": "hint-1",
+      "severity": "warning",
+      "field": "general",
+      "rule": "Nên xác định trước kênh nộp hồ sơ để biết có cần bản giấy, bản điện tử hay xuất trình trực tiếp.",
+      "message": "Nên xác định trước kênh nộp hồ sơ để biết có cần bản giấy, bản điện tử hay xuất trình trực tiếp."
+    },
+    {
+      "id": "hint-2",
+      "severity": "warning",
+      "field": "general",
+      "rule": "Nên đối chiếu trước thông tin thửa đất, tài sản hoặc hiện trạng hồ sơ để tránh bị yêu cầu chỉnh sửa.",
+      "message": "Nên đối chiếu trước thông tin thửa đất, tài sản hoặc hiện trạng hồ sơ để tránh bị yêu cầu chỉnh sửa."
+    }
+  ],
+  "common_errors": [
+    {
+      "field": "general",
+      "issue": "Thiếu giấy tờ hợp pháp hóa hoặc giấy tờ nhân thân của phía nước ngoài.",
+      "fix": "Nên xác định trước kênh nộp hồ sơ để biết có cần bản giấy, bản điện tử hay xuất trình trực tiếp."
+    },
+    {
+      "field": "general",
+      "issue": "Điền sai mẫu tờ khai hoặc chọn sai biểu mẫu đi kèm.",
+      "fix": "Nên xác định trước kênh nộp hồ sơ để biết có cần bản giấy, bản điện tử hay xuất trình trực tiếp."
+    },
+    {
+      "field": "general",
+      "issue": "Thông tin thửa đất, tài sản hoặc giấy chứng nhận chưa khớp với hồ sơ hiện có.",
+      "fix": "Nên xác định trước kênh nộp hồ sơ để biết có cần bản giấy, bản điện tử hay xuất trình trực tiếp."
+    }
+  ],
+  "clarifying_questions": [
+    {
+      "id": "clarify_1",
+      "question": "Bạn đang xử lý nhu cầu nào về đất đai, nhà ở hoặc điện lực?",
+      "purpose": "workflow_intake"
+    },
+    {
+      "id": "clarify_2",
+      "question": "Bạn đã có thông tin thửa đất, địa chỉ tài sản hoặc giấy tờ hiện trạng chưa?",
+      "purpose": "workflow_intake"
+    }
+  ],
+  "legal_basis": [
+    {
+      "title": "Luật Nhà ở số 27/2023/QH15",
+      "code": "27/2023/QH15"
+    },
+    {
+      "title": "Nghị định số 95/2024/NĐ-CP ngày 24 tháng 7 năm 2024 của Chính phủ về quy định chi tiết một số điều của Luật Nhà ở;",
+      "code": "95/2024/NĐ-CP"
+    },
+    {
+      "title": "NGHỊ ĐỊNH Sửa đổi, bổ sung một số điều của các Nghị định trong lĩnh vực nhà ở, kinh đoanh bất động sản",
+      "code": "54/2026/NĐ-CP"
+    }
+  ],
+  "legal_bases": [
+    {
+      "title": "Luật Nhà ở số 27/2023/QH15",
+      "code": "27/2023/QH15"
+    },
+    {
+      "title": "Nghị định số 95/2024/NĐ-CP ngày 24 tháng 7 năm 2024 của Chính phủ về quy định chi tiết một số điều của Luật Nhà ở;",
+      "code": "95/2024/NĐ-CP"
+    },
+    {
+      "title": "NGHỊ ĐỊNH Sửa đổi, bổ sung một số điều của các Nghị định trong lĩnh vực nhà ở, kinh đoanh bất động sản",
+      "code": "54/2026/NĐ-CP"
+    }
+  ],
+  "faq": [
+    {
+      "question": "Có thể nộp qua kênh nào?",
+      "answer": "Các kênh hiện có: Trực tiếp, Trực tuyến, Dịch vụ bưu chính."
+    },
+    {
+      "question": "Thời gian xử lý tham chiếu là bao lâu?",
+      "answer": "Thời gian xử lý tham chiếu hiện có là 30 ngày."
+    },
+    {
+      "question": "Kết quả chính của thủ tục là gì?",
+      "answer": "Kết quả chính được trích xuất là Văn bản chấp thuận gia hạn thời hạn sở hữu nhà ở."
+    }
+  ],
+  "guidance": {
+    "highlight_documents": [
+      {
+        "bucket": "required",
+        "name": "Đơn đề nghị gia hạn thời hạn sở hữu nhà ở theo mẫu số 01 của Phụ lục I ban hành kèm theo Nghị định số 95/2024/NĐ-CP ngày 24/7/2024 của Chính phủ quy định chi tiết một số điều của Luật Nhà ở ; (Mẫu đơn có quy định về các thông tin đã có trong cơ sở dữ liệu quốc gia về dân cư hoặc cơ sở dữ liệu chuyên ngành thì các thông tin này được thay thế bằng mã số định danh cá nhân hoặc mã số chuyên ngành thể hiện trong mẫu đơn, tờ khai khi cơ sở dữ liệu quốc gia về dân cư hoặc cơ sở dữ liệu chuyên ngành được vận hành).",
+        "conditions": [],
+        "attachment_path": null
+      },
+      {
+        "bucket": "required",
+        "name": "Bản sao có chứng thực hoặc bản sao kèm theo bản chính để đối chiếu Giấy chứng nhận quyền sử dụng đất, quyền sở hữu nhà ở và tài sản gắn liền với đất hoặc giấy chứng nhận về quyền sở hữu đối với nhà ở được cấp theo quy định của Luật Đất đai năm 2024 ; (thành phần hồ sơ tại mục này có quy định về các thông tin đã có trong cơ sở dữ liệu quốc gia về dân cư hoặc cơ sở dữ liệu chuyên ngành thì các thông tin này được thay thế bằng mã số định danh cá nhân hoặc mã số chuyên ngành thể hiện trong mẫu đơn, tờ khai khi cơ sở dữ liệu quốc gia về dân cư hoặc cơ sở dữ liệu chuyên ngành được vận hành).",
+        "conditions": [],
+        "attachment_path": null
+      },
+      {
+        "bucket": "conditional",
+        "name": "Bản sao hộ chiếu còn giá trị của chủ sở hữu nhà ở có đóng dấu nhập cảnh vào Việt Nam của cơ quan có thẩm quyền hoặc giấy tờ pháp lý tương đương nhập cảnh vào Việt Nam tại thời điểm đề nghị gia hạn (áp dụng đối với trường hợp chủ sở hữu nhà ở là cá nhân nước ngoài);",
+        "conditions": [
+          "Bản sao hộ chiếu còn giá trị của chủ sở hữu nhà ở có đóng dấu nhập cảnh vào Việt Nam của cơ quan có thẩm quyền hoặc giấy tờ pháp lý tương đương nhập cảnh vào Việt Nam tại thời điểm đề nghị gia hạn (áp dụng đối với trường hợp chủ sở hữu nhà ở là cá nhân nước ngoài);"
+        ],
+        "attachment_path": null
+      },
+      {
+        "bucket": "conditional",
+        "name": "Bản sao có chứng thực hoặc bản sao kèm theo bản chính để đối chiếu Giấy chứng nhận đăng ký đầu tư đã được cơ quan có thẩm quyền của Việt Nam gia hạn thời gian hoạt động tại thời điểm đề nghị gia hạn (áp dụng đối với trường hợp chủ sở hữu nhà ở là tổ chức nước ngoài).",
+        "conditions": [
+          "Bản sao có chứng thực hoặc bản sao kèm theo bản chính để đối chiếu Giấy chứng nhận đăng ký đầu tư đã được cơ quan có thẩm quyền của Việt Nam gia hạn thời gian hoạt động tại thời điểm đề nghị gia hạn (áp dụng đối với trường hợp chủ sở hữu nhà ở là tổ chức nước ngoài)."
+        ],
+        "attachment_path": null
+      }
+    ],
+    "special_cases": [
+      "Có yếu tố nước ngoài",
+      "Có kiểm tra dữ liệu cư trú/định danh",
+      "Có thể cần đối chiếu thông tin thửa đất hoặc giấy chứng nhận"
+    ],
+    "common_errors": [
+      "Thiếu giấy tờ hợp pháp hóa hoặc giấy tờ nhân thân của phía nước ngoài.",
+      "Điền sai mẫu tờ khai hoặc chọn sai biểu mẫu đi kèm.",
+      "Thông tin thửa đất, tài sản hoặc giấy chứng nhận chưa khớp với hồ sơ hiện có."
+    ],
+    "validation_hints": [
+      "Nên xác định trước kênh nộp hồ sơ để biết có cần bản giấy, bản điện tử hay xuất trình trực tiếp.",
+      "Nên đối chiếu trước thông tin thửa đất, tài sản hoặc hiện trạng hồ sơ để tránh bị yêu cầu chỉnh sửa."
+    ]
+  },
+  "next_steps": {
+    "summary": "Nên chuẩn bị trước thông tin thửa đất, tài sản hoặc địa điểm tiếp nhận, rồi chọn kênh nộp phù hợp: Trực tiếp, Trực tuyến, Dịch vụ bưu chính. Hiện có khoảng 4 mục giấy tờ cần theo dõi trong checklist.",
+    "time_badge": "30 ngày",
+    "result_label": "Văn bản chấp thuận gia hạn thời hạn sở hữu nhà ở",
+    "primary_channel": "in_person",
+    "channels": [
+      "in_person",
+      "online",
+      "postal"
+    ]
+  },
+  "notes": [],
+  "provenance": {
+    "pipeline": "raw->structured->normalized->enriched->ui_api_payload",
+    "normalizer_version": "0.2.0",
+    "enricher_version": "0.2.0",
+    "mapping_notes": "excluded_from_clean_workflow_dataset",
+    "supported_group": true
+  }
+}

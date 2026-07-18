@@ -1,0 +1,90 @@
+{
+  "schema_version": "1.0",
+  "enricher_version": "0.2.0",
+  "source": {
+    "procedure_code": "1.014090",
+    "title": "Cấp phép nhập khẩu thuốc thuộc hành lý cá nhân của tổ chức, cá nhân nhập cảnh gửi theo vận tải đơn, hàng hóa mang theo người của tổ chức, cá nhân nhập cảnh để điều trị bệnh cho bản thân người nhập cảnh",
+    "group_key": "suc_khoe_y_te",
+    "workflow_family": null,
+    "subflow": null
+  },
+  "experience": {
+    "entry_label": "Hỗ trợ y tế và bảo hiểm",
+    "overview_summary": "Thủ tục này thuộc nhóm y tế, thường cần đối chiếu thông tin người bệnh, đơn vị tiếp nhận hoặc quyền lợi chuyên ngành. Kết quả thường nhận được là Giấy phép nhập khẩu/ Văn bản yêu cầu sửa đổi, bổ sung hồ sơ/ Văn bản thông báo cho cơ sở về việc không cấp phép nhập. Thời gian xử lý tham khảo: 7 ngày làm việc.",
+    "next_step_summary": "Nên xác định rõ đối tượng tham gia, quyền lợi hoặc nhu cầu điều chỉnh hồ sơ y tế trước khi nộp. Có thể chọn kênh nộp phù hợp: Trực tiếp, Trực tuyến, Dịch vụ bưu chính. Hiện có khoảng 2 mục giấy tờ cần theo dõi trong checklist.",
+    "tone": "supportive_public_service"
+  },
+  "guidance": {
+    "highlight_documents": [
+      {
+        "bucket": "required",
+        "name": "Đơn đề nghị nhập khẩu thuốc theo Mẫu số 27 tại Phụ lục III ban hành kèm theo Nghị định số 163/2025/NĐ-CP;",
+        "conditions": [],
+        "attachment_path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/1_014090/Mus27.docx"
+      },
+      {
+        "bucket": "conditional",
+        "name": "Bản sao có chứng thực hoặc bản sao có chữ ký của người đề nghị cấp phép nhập khẩu đối với đơn thuốc, sổ y bạ theo dõi điều trị ngoại trú. Các giấy tờ này phải có đầy đủ các nội dung sau: Tên, tuổi người bệnh; tên thuốc, hàm lượng hoặc nồng độ và dung tích; số lượng thuốc (hoặc số ngày dùng thuốc); liều dùng; họ tên, chữ ký của thầy thuốc; địa chỉ của bệnh viện, phòng khám nơi thầy thuốc hành nghề; Trường hợp nộp bản sao có chữ ký của người đề nghị cấp phép nhập khẩu hoặc bản sao có đóng dấu của tổ chức đề nghị cấp phép nhập khẩu thì phải xuất trình bản chính để đối chiếu khi nộp hồ sơ. Trường hợp thuốc không phải là thuốc gây nghiện, thuốc hướng thần, thuốc tiền chất và thuộc hàng hóa nhập cảnh của cơ quan đại diện ngoại giao, cơ quan lãnh sự và cơ quan đại diện của tổ chức quốc tế tại Việt Nam hoặc cơ quan đại diện ngoại giao của Việt Nam tại nước ngoài, những người làm việc tại các cơ quan, tổ chức này hoặc các tổ chức được cơ quan đại diện ngoại giao của Việt Nam, cơ quan đại diện ngoại giao của Việt Nam tại nước ngoài giới thiệu thì không phải nộp tài liệu quy định",
+        "conditions": [
+          "Bản sao có chứng thực hoặc bản sao có chữ ký của người đề nghị cấp phép nhập khẩu đối với đơn thuốc, sổ y bạ theo dõi điều trị ngoại trú. Các giấy tờ này phải có đầy đủ các nội dung sau: Tên, tuổi người bệnh; tên thuốc, hàm lượng hoặc nồng độ và dung tích; số lượng thuốc (hoặc số ngày dùng thuốc); liều dùng; họ tên, chữ ký của thầy thuốc; địa chỉ của bệnh viện, phòng khám nơi thầy thuốc hành nghề; Trường hợp nộp bản sao có chữ ký của người đề nghị cấp phép nhập khẩu hoặc bản sao có đóng dấu của tổ chức đề nghị cấp phép nhập khẩu thì phải xuất trình bản chính để đối chiếu khi nộp hồ sơ. Trường hợp thuốc không phải là thuốc gây nghiện, thuốc hướng thần, thuốc tiền chất và thuộc hàng hóa nhập cảnh của cơ quan đại diện ngoại giao, cơ quan lãnh sự và cơ quan đại diện của tổ chức quốc tế tại Việt Nam hoặc cơ quan đại diện ngoại giao của Việt Nam tại nước ngoài, những người làm việc tại các cơ quan, tổ chức này hoặc các tổ chức được cơ quan đại diện ngoại giao của Việt Nam, cơ quan đại diện ngoại giao của Việt Nam tại nước ngoài giới thiệu thì không phải nộp tài liệu quy định"
+        ],
+        "attachment_path": null
+      }
+    ],
+    "special_cases": [
+      "Có yếu tố nước ngoài"
+    ],
+    "common_errors": [
+      "Thiếu giấy tờ hợp pháp hóa hoặc giấy tờ nhân thân của phía nước ngoài.",
+      "Điền sai mẫu tờ khai hoặc chọn sai biểu mẫu đi kèm."
+    ],
+    "validation_hints": [
+      "Nên xác định trước kênh nộp hồ sơ để biết có cần bản giấy, bản điện tử hay xuất trình trực tiếp.",
+      "Có mẫu biểu đính kèm, nên kiểm tra đúng biểu mẫu trước khi nộp.",
+      "Nên xác định đúng nhóm đối tượng, mã số bảo hiểm và quyền lợi áp dụng trước khi nộp."
+    ]
+  },
+  "intake": {
+    "candidate_input_fields": [
+      {
+        "field_id": "request_subject",
+        "label": "Đối tượng làm thủ tục",
+        "field_type": "text",
+        "required": true
+      },
+      {
+        "field_id": "insurance_or_medical_need",
+        "label": "Nhu cầu bảo hiểm hoặc y tế",
+        "field_type": "text",
+        "required": true
+      },
+      {
+        "field_id": "submission_channel_preference",
+        "label": "Kênh nộp dự kiến",
+        "field_type": "enum",
+        "required": false
+      },
+      {
+        "field_id": "has_insurance_number",
+        "label": "Đã có mã BHXH/BHYT",
+        "field_type": "boolean",
+        "required": false
+      }
+    ],
+    "suggested_clarifying_questions": [
+      "Bạn đang muốn đăng ký, điều chỉnh hay xác nhận quyền lợi y tế hoặc bảo hiểm nào?",
+      "Bạn đã có mã BHXH/BHYT hoặc thông tin đơn vị tiếp nhận liên quan chưa?"
+    ]
+  },
+  "ui_hints": {
+    "primary_channel": "online",
+    "result_label": "Giấy phép nhập khẩu/ Văn bản yêu cầu sửa đổi, bổ sung hồ sơ/ Văn bản thông báo cho cơ sở về việc không cấp phép nhập",
+    "time_badge": "7 ngày làm việc",
+    "document_count_badge": 2
+  },
+  "provenance": {
+    "generator": "workflow_domain_enricher",
+    "derivation_mode": "rule_based_semantic_enrichment",
+    "supported_group": true
+  }
+}

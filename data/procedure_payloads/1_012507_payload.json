@@ -1,0 +1,289 @@
+{
+  "schema_version": "3.0",
+  "record_type": "public_service_procedure_payload",
+  "id": "procedure-1.012507",
+  "procedure_code": "1.012507",
+  "code": "1.012507",
+  "title": "Cấp chứng chỉ nghiệp vụ chuyên môn về đấu thầu",
+  "language": "vi",
+  "status": "generated_from_pipeline",
+  "field": "Đấu thầu",
+  "group_key": "hoc_tap",
+  "workflow_family": null,
+  "subflow": null,
+  "source": {
+    "source_url": "file:///C:/Users/ku060/Downloads/VAIC%20source/data-pipeline/raw_data/1_012507/1_012507_procedure_detail.md",
+    "source_markdown_path": "C:\\Users\\ku060\\Downloads\\VAIC source\\data-pipeline\\raw_data\\1_012507\\1_012507_procedure_detail.md",
+    "normalized_payload_path": "C:\\Users\\ku060\\Downloads\\VAIC source\\data-pipeline\\govease-unified\\data\\normalized_structured\\1_012507_normalized_structured.json",
+    "enriched_payload_path": "C:\\Users\\ku060\\Downloads\\VAIC source\\data-pipeline\\govease-unified\\data\\enriched_structured_priority\\1_012507_enriched_structured.json"
+  },
+  "scope": {
+    "included": "Thủ tục này thuộc nhóm giáo dục và học tập, thường liên quan đến hồ sơ đào tạo, văn bằng hoặc điều kiện học tập của người học. Kết quả thường nhận được là Chứng chỉ nghiệp vụ chuyên môn về đấu thầu. Thời gian xử lý tham khảo: 15 ngày làm việc.",
+    "not_included": []
+  },
+  "agency": {
+    "executing_agency": "Cục Quản lý đấu thầu - Bộ Tài chính, Sở Tài chính các tỉnh, thành phố",
+    "submission_place": null,
+    "receiving_places": []
+  },
+  "target_users": [
+    "Công dân Việt Nam"
+  ],
+  "submission_methods": [
+    {
+      "code": "ONLINE",
+      "label": "Trực tuyến",
+      "processing_time": "15 ngày làm việc",
+      "fee": null,
+      "description": null
+    }
+  ],
+  "processing_note": "Thời gian xử lý tham chiếu: 15 ngày làm việc. Nên rà trước thông tin người học, cơ sở đào tạo và loại kết quả cần xin xác nhận hoặc cấp lại. Có thể chọn kênh nộp phù hợp: Trực tuyến. Hiện có 1 mục giấy tờ cần theo dõi trong checklist.",
+  "documents": {
+    "normally_required": [
+      {
+        "name": "Đơn đăng ký được số hóa dưới dạng webform",
+        "quantity": "1 bản chính, 0 bản sao",
+        "notes": [],
+        "group": "default",
+        "attachment_path": null
+      }
+    ],
+    "conditional": [],
+    "forms": [],
+    "presented": [],
+    "notes": [],
+    "summary": [
+      {
+        "group": "default",
+        "name": "Đơn đăng ký được số hóa dưới dạng webform",
+        "quantity": "1 bản chính, 0 bản sao",
+        "notes": [],
+        "attachment_path": null
+      }
+    ]
+  },
+  "steps": [
+    {
+      "order": 1,
+      "title": "Bước 1",
+      "description": "1.",
+      "example": null
+    },
+    {
+      "order": 2,
+      "title": "Bước 1:",
+      "description": "Bước 1: Cá nhân có nhu cầu cấp chứng chỉ nghiệp vụ chuyên môn về đấu thầu thực hiện nộp hồ sơ trên Cổng Dịch vụ công quốc gia và hồ sơ được số hóa dưới dạng webform trên Hệ thống quản lý cấp chứng chỉ nghiệp vụ chuyên môn về đấu thầu tại địa chỉ https://chungchidauthau.mof.gov.vn (sau đây gọi tắt là Hệ thống)",
+      "example": null
+    },
+    {
+      "order": 3,
+      "title": "Bước 2:",
+      "description": "Bước 2: Chứng chỉ điện tử được gửi về tài khoản cá nhân đăng ký trên Hệ thống.",
+      "example": null
+    }
+  ],
+  "input_fields": [
+    {
+      "field": "learner_full_name",
+      "label": "Tên người học",
+      "type": "string",
+      "required": true
+    },
+    {
+      "field": "education_record_type",
+      "label": "Loại hồ sơ học tập cần xử lý",
+      "type": "string",
+      "required": true
+    },
+    {
+      "field": "education_institution",
+      "label": "Cơ sở đào tạo liên quan",
+      "type": "string",
+      "required": false
+    },
+    {
+      "field": "submission_channel_preference",
+      "label": "Kênh nộp dự kiến",
+      "type": "enum",
+      "required": false,
+      "options": [
+        "Trực tuyến"
+      ]
+    }
+  ],
+  "validation_rules": [
+    {
+      "id": "required-1",
+      "severity": "error",
+      "field": "learner_full_name",
+      "rule": "Trường bắt buộc phải có dữ liệu hợp lệ trước khi nộp.",
+      "message": "Thiếu trường bắt buộc: Tên người học."
+    },
+    {
+      "id": "required-2",
+      "severity": "error",
+      "field": "education_record_type",
+      "rule": "Trường bắt buộc phải có dữ liệu hợp lệ trước khi nộp.",
+      "message": "Thiếu trường bắt buộc: Loại hồ sơ học tập cần xử lý."
+    },
+    {
+      "id": "hint-1",
+      "severity": "warning",
+      "field": "general",
+      "rule": "Nên xác định trước kênh nộp hồ sơ để biết có cần bản giấy, bản điện tử hay xuất trình trực tiếp.",
+      "message": "Nên xác định trước kênh nộp hồ sơ để biết có cần bản giấy, bản điện tử hay xuất trình trực tiếp."
+    },
+    {
+      "id": "hint-2",
+      "severity": "warning",
+      "field": "general",
+      "rule": "Nên rà lại thông tin người học, cơ sở đào tạo và loại xác nhận hoặc văn bằng cần xin.",
+      "message": "Nên rà lại thông tin người học, cơ sở đào tạo và loại xác nhận hoặc văn bằng cần xin."
+    }
+  ],
+  "common_errors": [],
+  "clarifying_questions": [
+    {
+      "id": "clarify_1",
+      "question": "Bạn đang cần xử lý hồ sơ học tập, văn bằng hay xác nhận nào?",
+      "purpose": "workflow_intake"
+    },
+    {
+      "id": "clarify_2",
+      "question": "Người học và cơ sở đào tạo liên quan đã xác định rõ chưa?",
+      "purpose": "workflow_intake"
+    }
+  ],
+  "legal_basis": [
+    {
+      "title": "Luật Đấu thầu",
+      "code": "22/2023/QH15"
+    },
+    {
+      "title": "Nghị định số 214/2025/NĐ-CP của Chính phủ: Quy định chi tiết một số điều và biện pháp thi hành Luật Đấu thầu về lựa chọn nhà thầu",
+      "code": "214/2025/NĐ-CP"
+    },
+    {
+      "title": "Nghị định số 115/2024/NĐ-CP của Chính phủ: Quy định chi tiết một số điều và biện pháp thi hành Luật Đấu thầu về lựa chọn nhà đầu tư thực hiện dự án đầu tư có sử dụng đất",
+      "code": "115/2024/NĐ-CP"
+    },
+    {
+      "title": "Nghị định số 243/2025/NĐ-CP của Chính phủ: Quy định chi tiết một số điều của Luật Đầu tư theo phương thức đối tác công tư",
+      "code": "243/2025/NĐ-CP"
+    },
+    {
+      "title": "Nghị định số 23/2024/NĐ-CP của Chính phủ: Quy định chi tiết một số điều và biện pháp thi hành Luật Đấu thầu về lựa chọn nhà đầu tư thực hiện dự án thuộc trường hợp phải tổ chức đấu thầu theo quy định của pháp luật quản lý ngành, lĩnh vực",
+      "code": "23/2024/NĐ-CP"
+    },
+    {
+      "title": "Luật số 57/2024/QH15 ngày 29/11/2024",
+      "code": "57/2024/QH15"
+    },
+    {
+      "title": "Luật Đầu tư theo phương thức đối tác công tư",
+      "code": "64/2020/QH14"
+    },
+    {
+      "title": "Luật số 03/2022/QH15 của Quốc hội: Luật sửa đổi, bổ sung một số điều của Luật đầu tư công, Luật đầu tư theo phương thức đối tác công tư, Luật Đầu tư, Luật nhà ở, Luật đấu thầu, Luật điện lực, Luật doanh nghiệp, Luật thuế tiêu thụ đặc biệt và Luật thi hành án dân sự",
+      "code": "03/2022/QH15"
+    },
+    {
+      "title": "Trang chủ Luật số 90/2025/QH15 của Quốc hội: Luật sửa đổi, bổ sung một số điều của Luật Đấu thầu, Luật Đầu tư theo phương thức đối tác công tư, Luật Hải quan, Luật Thuế giá trị gia tăng, Luật Thuế xuất khẩu, thuế nhập khẩu, Luật Đầu tư, Luật Đầu tư công, Luật Quản lý, sử dụng tài sản công",
+      "code": "90/2025/QH15"
+    },
+    {
+      "title": "Thông tư số 02/2024/TT-BKHĐT của Bộ Kế hoạch và Đầu tư: Quy định hoạt động đào tạo, bồi dưỡng kiến thức và thi, cấp, thu hồi chứng chỉ nghiệp vụ chuyên môn về đấu thầu",
+      "code": "02/2024/TT-BKHĐT"
+    }
+  ],
+  "legal_bases": [
+    {
+      "title": "Luật Đấu thầu",
+      "code": "22/2023/QH15"
+    },
+    {
+      "title": "Nghị định số 214/2025/NĐ-CP của Chính phủ: Quy định chi tiết một số điều và biện pháp thi hành Luật Đấu thầu về lựa chọn nhà thầu",
+      "code": "214/2025/NĐ-CP"
+    },
+    {
+      "title": "Nghị định số 115/2024/NĐ-CP của Chính phủ: Quy định chi tiết một số điều và biện pháp thi hành Luật Đấu thầu về lựa chọn nhà đầu tư thực hiện dự án đầu tư có sử dụng đất",
+      "code": "115/2024/NĐ-CP"
+    },
+    {
+      "title": "Nghị định số 243/2025/NĐ-CP của Chính phủ: Quy định chi tiết một số điều của Luật Đầu tư theo phương thức đối tác công tư",
+      "code": "243/2025/NĐ-CP"
+    },
+    {
+      "title": "Nghị định số 23/2024/NĐ-CP của Chính phủ: Quy định chi tiết một số điều và biện pháp thi hành Luật Đấu thầu về lựa chọn nhà đầu tư thực hiện dự án thuộc trường hợp phải tổ chức đấu thầu theo quy định của pháp luật quản lý ngành, lĩnh vực",
+      "code": "23/2024/NĐ-CP"
+    },
+    {
+      "title": "Luật số 57/2024/QH15 ngày 29/11/2024",
+      "code": "57/2024/QH15"
+    },
+    {
+      "title": "Luật Đầu tư theo phương thức đối tác công tư",
+      "code": "64/2020/QH14"
+    },
+    {
+      "title": "Luật số 03/2022/QH15 của Quốc hội: Luật sửa đổi, bổ sung một số điều của Luật đầu tư công, Luật đầu tư theo phương thức đối tác công tư, Luật Đầu tư, Luật nhà ở, Luật đấu thầu, Luật điện lực, Luật doanh nghiệp, Luật thuế tiêu thụ đặc biệt và Luật thi hành án dân sự",
+      "code": "03/2022/QH15"
+    },
+    {
+      "title": "Trang chủ Luật số 90/2025/QH15 của Quốc hội: Luật sửa đổi, bổ sung một số điều của Luật Đấu thầu, Luật Đầu tư theo phương thức đối tác công tư, Luật Hải quan, Luật Thuế giá trị gia tăng, Luật Thuế xuất khẩu, thuế nhập khẩu, Luật Đầu tư, Luật Đầu tư công, Luật Quản lý, sử dụng tài sản công",
+      "code": "90/2025/QH15"
+    },
+    {
+      "title": "Thông tư số 02/2024/TT-BKHĐT của Bộ Kế hoạch và Đầu tư: Quy định hoạt động đào tạo, bồi dưỡng kiến thức và thi, cấp, thu hồi chứng chỉ nghiệp vụ chuyên môn về đấu thầu",
+      "code": "02/2024/TT-BKHĐT"
+    }
+  ],
+  "faq": [
+    {
+      "question": "Có thể nộp qua kênh nào?",
+      "answer": "Các kênh hiện có: Trực tuyến."
+    },
+    {
+      "question": "Thời gian xử lý tham chiếu là bao lâu?",
+      "answer": "Thời gian xử lý tham chiếu hiện có là 15 ngày làm việc."
+    },
+    {
+      "question": "Kết quả chính của thủ tục là gì?",
+      "answer": "Kết quả chính được trích xuất là Chứng chỉ nghiệp vụ chuyên môn về đấu thầu."
+    }
+  ],
+  "guidance": {
+    "highlight_documents": [
+      {
+        "bucket": "required",
+        "name": "Đơn đăng ký được số hóa dưới dạng webform",
+        "conditions": [],
+        "attachment_path": null
+      }
+    ],
+    "special_cases": [],
+    "common_errors": [],
+    "validation_hints": [
+      "Nên xác định trước kênh nộp hồ sơ để biết có cần bản giấy, bản điện tử hay xuất trình trực tiếp.",
+      "Nên rà lại thông tin người học, cơ sở đào tạo và loại xác nhận hoặc văn bằng cần xin."
+    ]
+  },
+  "next_steps": {
+    "summary": "Nên rà trước thông tin người học, cơ sở đào tạo và loại kết quả cần xin xác nhận hoặc cấp lại. Có thể chọn kênh nộp phù hợp: Trực tuyến. Hiện có 1 mục giấy tờ cần theo dõi trong checklist.",
+    "time_badge": "15 ngày làm việc",
+    "result_label": "Chứng chỉ nghiệp vụ chuyên môn về đấu thầu",
+    "primary_channel": "online",
+    "channels": [
+      "online"
+    ]
+  },
+  "notes": [],
+  "provenance": {
+    "pipeline": "raw->structured->normalized->enriched->ui_api_payload",
+    "normalizer_version": "0.2.0",
+    "enricher_version": "0.2.0",
+    "mapping_notes": "excluded_from_clean_workflow_dataset",
+    "supported_group": true
+  }
+}

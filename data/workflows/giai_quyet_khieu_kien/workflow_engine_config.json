@@ -1,0 +1,829 @@
+{
+  "schema_version": "1.0",
+  "domain": "giai_quyet_khieu_kien",
+  "updated_at": "2026-07-18",
+  "source_files": [
+    "C:\\Users\\ku060\\Downloads\\VAIC source\\data-pipeline\\main\\full-data.csv",
+    "C:\\Users\\ku060\\Downloads\\VAIC source\\data-pipeline\\data\\workflows\\giai_quyet_khieu_kien\\summary.csv",
+    "C:\\Users\\ku060\\Downloads\\VAIC source\\data-pipeline\\data\\workflows\\giai_quyet_khieu_kien\\normalized.json",
+    "C:\\Users\\ku060\\Downloads\\VAIC source\\data-pipeline\\raw_data"
+  ],
+  "coverage": {
+    "expected_codes": [
+      "1.012751",
+      "1.012805",
+      "1.013967",
+      "1.115452",
+      "1.014348",
+      "1.014349",
+      "1.012812",
+      "1.115453",
+      "1.000178",
+      "1.003504",
+      "1.004335",
+      "3.000599",
+      "1.013524",
+      "1.013526",
+      "1.013527",
+      "1.013529",
+      "1.013531",
+      "1.013532",
+      "1.013536",
+      "1.013537",
+      "1.013534",
+      "1.013554",
+      "1.015007",
+      "1.015016",
+      "2.000592",
+      "3.000164",
+      "3.000163",
+      "1.013520",
+      "1.013521",
+      "1.013549",
+      "1.013551",
+      "1.013553",
+      "1.003482",
+      "1.003523",
+      "1.004327",
+      "1.013519",
+      "1.013547",
+      "3.000165"
+    ],
+    "covered_codes": [
+      "1.012751",
+      "1.012805",
+      "1.013967",
+      "1.115452",
+      "1.014348",
+      "1.014349",
+      "1.012812",
+      "1.115453",
+      "1.000178",
+      "1.003504",
+      "1.004335",
+      "3.000599",
+      "1.013524",
+      "1.013526",
+      "1.013527",
+      "1.013529",
+      "1.013531",
+      "1.013532",
+      "1.013536",
+      "1.013537",
+      "1.013534",
+      "1.013554",
+      "1.015007",
+      "1.015016",
+      "2.000592",
+      "3.000164",
+      "3.000163",
+      "1.013520",
+      "1.013521",
+      "1.013549",
+      "1.013551",
+      "1.013553",
+      "1.003482",
+      "1.003523",
+      "1.004327",
+      "1.013519",
+      "1.013547",
+      "3.000165"
+    ],
+    "missing_codes": []
+  },
+  "llm_contract": {
+    "role": "parse_user_answer_and_rephrase_question_only",
+    "required_output_schema": {
+      "intent": "giai_quyet_khieu_kien",
+      "current_node": "string",
+      "slot_updates": {
+        "subdomain_key": "giai_quyet_khieu_kien | unknown",
+        "operation_group": "khieu_nai_cong_an | to_cao_cong_an | khieu_nai_so_huu_cong_nghiep | khieu_nai_quoc_phong | to_cao_quoc_phong | khieu_nai_tro_giup_phap_ly | khieu_nai_dich_vu_cap_nuoc | giai_quyet_tranh_chap_dat_dai | hoa_giai_tranh_chap_dat_dai | ho_tro_tranh_chap_lao_dong_ngoai_nuoc | nop_don_khoi_kien | nhan_thong_bao_to_tung_dien_tu | xin_cap_sao_ban_an_tai_lieu | unknown",
+        "operation_key": "string"
+      },
+      "confidence": "0_to_1",
+      "needs_human_review": "boolean"
+    }
+  },
+  "entry_prompts": [
+    "Bạn đang muốn khiếu nại, tố cáo, hòa giải tranh chấp đất đai hay thao tác với hồ sơ tại Tòa án?",
+    "Vụ việc của bạn thuộc nhóm cơ quan công an, quốc phòng, đất đai, lao động ngoài nước, sở hữu công nghiệp hay tố tụng tại Tòa án?"
+  ],
+  "slots": [
+    {
+      "name": "subdomain_key",
+      "required": true,
+      "description": "Nhánh chính của nhóm Giải quyết khiếu kiện."
+    },
+    {
+      "name": "operation_group",
+      "required": true,
+      "description": "Loại nhu cầu tranh chấp/khiếu nại/tố tụng cấp cao cho bước phân nhánh đầu tiên."
+    },
+    {
+      "name": "operation_key",
+      "required": true,
+      "description": "Thao tác cụ thể ánh xạ trực tiếp tới thủ tục cuối cùng."
+    }
+  ],
+  "subdomain_catalog": [
+    {
+      "subdomain_key": "giai_quyet_khieu_kien",
+      "subdomain_label": "Giải quyết khiếu kiện",
+      "event_id": 343,
+      "summary": "Nhóm thủ tục tiếp nhận và giải quyết khiếu nại, tố cáo, tranh chấp, hỗ trợ tố tụng và tương tác với cơ quan giải quyết tranh chấp cho công dân."
+    }
+  ],
+  "decision_tree": {
+    "start_node": "complaint_need_type",
+    "nodes": [
+      {
+        "id": "complaint_need_type",
+        "type": "question",
+        "slot": "operation_group",
+        "question": "Bạn đang cần khiếu nại, tố cáo, giải quyết tranh chấp hay thao tác tố tụng/tòa án?",
+        "options": [
+          "giai_quyet_tranh_chap_dat_dai",
+          "ho_tro_tranh_chap_lao_dong_ngoai_nuoc",
+          "hoa_giai_tranh_chap_dat_dai",
+          "khieu_nai_cong_an",
+          "khieu_nai_dich_vu_cap_nuoc",
+          "khieu_nai_hanh_chinh",
+          "khieu_nai_quoc_phong",
+          "khieu_nai_so_huu_cong_nghiep",
+          "khieu_nai_tro_giup_phap_ly",
+          "nhan_thong_bao_to_tung_dien_tu",
+          "nop_don_khoi_kien",
+          "to_cao",
+          "to_cao_cong_an",
+          "to_cao_quoc_phong",
+          "xin_cap_sao_ban_an_tai_lieu"
+        ]
+      },
+      {
+        "id": "complaint_operation",
+        "type": "question",
+        "slot": "operation_key",
+        "question": "Bạn cần thủ tục cụ thể nào trong nhóm đã chọn?",
+        "options_by_group": {
+          "giai_quyet_tranh_chap_dat_dai": [
+            {
+              "operation_key": "giai_quyet_tranh_chap_dat_dai_thuoc_tham_quyen_cua_bo_truong_bo_nong_nghiep_va_moi_truong",
+              "procedure_code": "1.012751",
+              "procedure_title": "Giải quyết tranh chấp đất đai thuộc thẩm quyền của Bộ trưởng Bộ Nông nghiệp và Môi trường",
+              "field": "Đất đai"
+            },
+            {
+              "operation_key": "giai_quyet_tranh_chap_dat_dai_thuoc_tham_quyen_cua_chu_tich_uy_ban_nhan_cap_tinh",
+              "procedure_code": "1.012805",
+              "procedure_title": "Giải quyết tranh chấp đất đai thuộc thẩm quyền của Chủ tịch Ủy ban nhân cấp tỉnh",
+              "field": "Đất đai"
+            },
+            {
+              "operation_key": "giai_quyet_tranh_chap_dat_dai_thuoc_tham_quyen_cua_chu_tich_uy_ban_nhan_dan_cap_xa",
+              "procedure_code": "1.013967",
+              "procedure_title": "Giải quyết tranh chấp đất đai thuộc thẩm quyền của Chủ tịch Ủy ban nhân dân cấp xã",
+              "field": "Đất đai"
+            },
+            {
+              "operation_key": "giai_quyet_tranh_chap_dat_dai_thuoc_tham_quyen_cua_chu_tich_uy_ban_nhan_dan_cap_xa",
+              "procedure_code": "1.115452",
+              "procedure_title": "Giải quyết tranh chấp đất đai thuộc thẩm quyền của Chủ tịch Ủy ban nhân dân cấp xã",
+              "field": "Đất đai"
+            }
+          ],
+          "ho_tro_tranh_chap_lao_dong_ngoai_nuoc": [
+            {
+              "operation_key": "ho_tro_giai_quyet_tranh_chap_phat_sinh_lien_quan_den_nguoi_lao_dong_trong_hoat_dong_dua_nguoi_lao_dong_di_lam_viec_o_nuoc_ngoai_theo_hop_dong_khi_tien_hanh_vu_viec",
+              "procedure_code": "1.014348",
+              "procedure_title": "Hỗ trợ giải quyết tranh chấp phát sinh liên quan đến người lao động trong hoạt động đưa người lao động đi làm việc ở nước ngoài theo hợp đồng (khi tiến hành vụ việc)",
+              "field": "Quản lý lao động ngoài nước"
+            },
+            {
+              "operation_key": "ho_tro_giai_quyet_tranh_chap_phat_sinh_lien_quan_den_nguoi_lao_dong_trong_hoat_dong_dua_nguoi_lao_dong_di_lam_viec_o_nuoc_ngoai_theo_hop_dong_khi_ket_thuc_vu_viec",
+              "procedure_code": "1.014349",
+              "procedure_title": "Hỗ trợ giải quyết tranh chấp phát sinh liên quan đến người lao động trong hoạt động đưa người lao động đi làm việc ở nước ngoài theo hợp đồng (khi kết thúc vụ việc)",
+              "field": "Quản lý lao động ngoài nước"
+            }
+          ],
+          "hoa_giai_tranh_chap_dat_dai": [
+            {
+              "operation_key": "hoa_giai_tranh_chap_dat_dai",
+              "procedure_code": "1.012812",
+              "procedure_title": "Hòa giải tranh chấp đất đai",
+              "field": "Đất đai"
+            },
+            {
+              "operation_key": "hoa_giai_tranh_chap_dat_dai_thuoc_tham_quyen_cap_xa_1_trinh_tu_thuc_hien",
+              "procedure_code": "1.115453",
+              "procedure_title": "Hòa giải tranh chấp đất đai thuộc thẩm quyền cấp xã (1) Trình tự thực hiện:",
+              "field": "Đất đai"
+            }
+          ],
+          "khieu_nai_cong_an": [
+            {
+              "operation_key": "giai_quyet_khieu_nai_ve_quyet_dinh_hanh_chinh_hanh_vi_hanh_chinh_cua_cong_dan_doi_voi_luc_luong_cong_an_nhan_dan_thuc_hien_tai_cap_trung_uong",
+              "procedure_code": "1.000178",
+              "procedure_title": "Giải quyết khiếu nại về quyết định hành chính, hành vi hành chính của công dân đối với lực lượng Công an nhân dân (thực hiện tại cấp Trung ương)",
+              "field": "Khiếu nại, tố cáo"
+            },
+            {
+              "operation_key": "giai_quyet_khieu_nai_ve_quyet_dinh_hanh_chinh_hanh_vi_hanh_chinh_cua_cong_dan_doi_voi_luc_luong_cong_an_nhan_dan_thuc_hien_tai_cap_tinh",
+              "procedure_code": "1.003504",
+              "procedure_title": "Giải quyết khiếu nại về quyết định hành chính, hành vi hành chính của công dân đối với lực lượng Công an nhân dân (thực hiện tại cấp tỉnh)",
+              "field": "Khiếu nại, tố cáo"
+            },
+            {
+              "operation_key": "giai_quyet_khieu_nai_ve_quyet_dinh_hanh_chinh_hanh_vi_hanh_chinh_cua_cong_dan_doi_voi_luc_luong_cong_an_nhan_dan_thuc_hien_tai_cap_xa_phai_la_can_bo_thuoc_bien_che_cua_luc_luong_cong_an",
+              "procedure_code": "1.004335",
+              "procedure_title": "Giải quyết khiếu nại về quyết định hành chính, hành vi hành chính của công dân đối với lực lượng Công an nhân dân thực hiện tại cấp xã (phải là cán bộ thuộc biên chế của lực lượng Công an)",
+              "field": "Khiếu nại, tố cáo"
+            }
+          ],
+          "khieu_nai_dich_vu_cap_nuoc": [
+            {
+              "operation_key": "thu_tuc_giai_quyet_kien_nghi_khieu_nai_cua_khach_hang_ve_linh_vuc_cap_nuoc",
+              "procedure_code": "3.000599",
+              "procedure_title": "Thủ tục giải quyết kiến nghị, khiếu nại của khách hàng về lĩnh vực cấp nước",
+              "field": "Nước"
+            }
+          ],
+          "khieu_nai_hanh_chinh": [
+            {
+              "operation_key": "thu_tuc_giai_quyet_khieu_nai_lan_dau_cap_cuc_su_doan_hoc_vien_quan_y_bo_chi_huy_quan_su_cap_tinh_bo_tu_lenh_thanh_pho_ho_chi_minh_va_cap_tuong_duong",
+              "procedure_code": "1.013524",
+              "procedure_title": "Thủ tục giải quyết khiếu nại lần đầu cấp Cục, Sư đoàn, Học viện Quân y, Bộ chỉ huy quân sự cấp tỉnh, Bộ Tư lệnh thành phố Hồ Chí Minh, và cấp tương đương",
+              "field": "Khiếu nại BQP"
+            },
+            {
+              "operation_key": "thu_tuc_giai_quyet_khieu_nai_lan_hai_cap_cuc_su_doan_hoc_vien_quan_y_bo_chi_huy_quan_su_cap_tinh_bo_tu_lenh_thanh_pho_ho_chi_minh_va_cap_tuong_duong",
+              "procedure_code": "1.013526",
+              "procedure_title": "Thủ tục giải quyết khiếu nại lần hai cấp Cục, Sư đoàn, Học viện Quân y, Bộ chỉ huy quân sự cấp tỉnh, Bộ Tư lệnh thành phố Hồ Chí Minh và cấp tương đương",
+              "field": "Khiếu nại BQP"
+            },
+            {
+              "operation_key": "thu_tuc_giai_quyet_khieu_nai_lan_dau_cap_trung_doan_lu_doan_don_bien_phong_va_cap_tuong_duong",
+              "procedure_code": "1.013527",
+              "procedure_title": "Thủ tục giải quyết khiếu nại lần đầu cấp Trung đoàn, Lữ đoàn, Đồn biên phòng và cấp tương đương",
+              "field": "Khiếu nại BQP"
+            },
+            {
+              "operation_key": "thu_tuc_giai_quyet_khieu_nai_lan_dau_cap_bo_tong_tham_muu_tong_cuc_chinh_tri_cac_tong_cuc_quan_khu_quan_chung_bo_doi_bien_phong_va_cap_tuong_duong",
+              "procedure_code": "1.013529",
+              "procedure_title": "Thủ tục giải quyết khiếu nại lần đầu cấp Bộ Tổng Tham mưu, Tổng cục Chính trị, các Tổng cục; Quân khu, Quân chủng, Bộ đội Biên phòng và cấp tương đương",
+              "field": "Khiếu nại BQP"
+            },
+            {
+              "operation_key": "thu_tuc_giai_quyet_khieu_nai_lan_dau_cap_quan_doan_binh_doan_binh_chung_canh_sat_bien_bo_tu_lenh_thu_do_ha_noi_bo_tu_lenh_bao_ve_lang_chu_tich_ho_chi_minh_tap_doan_vien_thong_quan_doi_va_cap_tuong_duong",
+              "procedure_code": "1.013531",
+              "procedure_title": "Thủ tục giải quyết khiếu nại lần đầu cấp Quân đoàn, Binh đoàn, Binh chủng, Cảnh sát biển, Bộ Tư lệnh Thủ đô Hà Nội, Bộ Tư lệnh Bảo vệ Lăng Chủ tịch Hồ Chí Minh, Tập đoàn viễn thông Quân đội và cấp tương đương",
+              "field": "Khiếu nại BQP"
+            },
+            {
+              "operation_key": "thu_tuc_giai_quyet_khieu_nai_lan_dau_cap_hoc_vien_tru_hoc_vien_quan_y_nha_truong_vien_nghien_cuu_benh_vien_tong_cong_ty_va_cap_tuong_duong",
+              "procedure_code": "1.013532",
+              "procedure_title": "Thủ tục giải quyết khiếu nại lần đầu cấp Học viện (trừ Học viện Quân y), Nhà trường, Viện nghiên cứu, Bệnh viện, Tổng công ty và cấp tương đương",
+              "field": "Khiếu nại BQP"
+            },
+            {
+              "operation_key": "thu_tuc_giai_quyet_khieu_nai_lan_hai_cap_bo_tong_tham_muu_tong_cuc_chinh_tri_cac_tong_cuc_quan_khu_quan_chung_bo_tu_lenh_bo_doi_bien_phong_va_cap_tuong_duong",
+              "procedure_code": "1.013536",
+              "procedure_title": "Thủ tục giải quyết khiếu nại lần hai cấp Bộ Tổng Tham mưu, Tổng cục Chính trị, các Tổng cục, Quân khu, Quân chủng, Bộ Tư lệnh Bộ đội Biên phòng và cấp tương đương",
+              "field": "Khiếu nại BQP"
+            },
+            {
+              "operation_key": "thu_tuc_giai_quyet_khieu_nai_lan_hai_cap_quan_doan_binh_doan_binh_chung_canh_sat_bien_viet_nam_bo_tu_lenh_thu_do_ha_noi_bo_tu_lenh_lang_chu_tich_ho_chi_minh_tap_doan_cong_nghiep_vien_thong_quan_doi_va_cap_tuong_duong",
+              "procedure_code": "1.013537",
+              "procedure_title": "Thủ tục giải quyết khiếu nại lần hai cấp Quân đoàn, Binh đoàn, Binh chủng, Cảnh sát biển Việt Nam, Bộ Tư lệnh Thủ đô Hà Nội, Bộ Tư lệnh Lăng Chủ tịch Hồ Chí Minh, Tập đoàn Công nghiệp viễn thông Quân đội và cấp tương đương",
+              "field": "Khiếu nại BQP"
+            }
+          ],
+          "khieu_nai_quoc_phong": [
+            {
+              "operation_key": "thu_tuc_giai_quyet_khieu_nai_lan_hai_cap_bo_quoc_phong",
+              "procedure_code": "1.013534",
+              "procedure_title": "Thủ tục giải quyết khiếu nại lần hai cấp Bộ Quốc phòng",
+              "field": "Khiếu nại BQP"
+            },
+            {
+              "operation_key": "thu_tuc_giai_quyet_don_khieu_nai_lan_dau_cap_bo_quoc_phong",
+              "procedure_code": "1.013554",
+              "procedure_title": "Thủ tục giải quyết đơn khiếu nại lần đầu cấp Bộ Quốc phòng",
+              "field": "Khiếu nại BQP"
+            }
+          ],
+          "khieu_nai_so_huu_cong_nghiep": [
+            {
+              "operation_key": "thu_tuc_giai_quyet_khieu_nai_lien_quan_den_so_huu_cong_nghiep",
+              "procedure_code": "1.015007",
+              "procedure_title": "Thủ tục giải quyết khiếu nại liên quan đến sở hữu công nghiệp",
+              "field": "Sở hữu trí tuệ"
+            },
+            {
+              "operation_key": "thu_tuc_giai_quyet_khieu_nai_lien_quan_den_so_huu_cong_nghiep_cap_tinh",
+              "procedure_code": "1.015016",
+              "procedure_title": "Thủ tục giải quyết khiếu nại liên quan đến sở hữu công nghiệp (cấp tỉnh)",
+              "field": "Sở hữu trí tuệ"
+            }
+          ],
+          "khieu_nai_tro_giup_phap_ly": [
+            {
+              "operation_key": "thu_tuc_giai_quyet_khieu_nai_ve_tro_giup_phap_ly",
+              "procedure_code": "2.000592",
+              "procedure_title": "Thủ tục giải quyết khiếu nại về trợ giúp pháp lý",
+              "field": "Trợ giúp pháp lý"
+            }
+          ],
+          "nhan_thong_bao_to_tung_dien_tu": [
+            {
+              "operation_key": "dang_ky_nhan_cac_thong_bao_van_ban_to_tung_bang_phuong_tien_dien_tu",
+              "procedure_code": "3.000164",
+              "procedure_title": "Đăng ký nhận các thông báo, văn bản tố tụng bằng phương tiện điện tử",
+              "field": "Tòa án"
+            }
+          ],
+          "nop_don_khoi_kien": [
+            {
+              "operation_key": "dich_vu_cong_truc_tuyen_gui_nhan_don_khoi_kien_tai_lieu_chung_cu_va_cap_tong_dat_thong_bao_van_ban_to_tung",
+              "procedure_code": "3.000163",
+              "procedure_title": "Dịch vụ công trực tuyến gửi, nhận đơn khởi kiện, tài liệu, chứng cứ và cấp, tống đạt, thông báo văn bản tố tụng",
+              "field": "Tòa án"
+            }
+          ],
+          "to_cao": [
+            {
+              "operation_key": "thu_tuc_giai_quyet_to_cao_cap_cuc_su_doan_bo_chi_huy_quan_su_tinh_bo_chi_huy_bo_doi_bien_phong_tinh_va_cap_tuong_duong",
+              "procedure_code": "1.013520",
+              "procedure_title": "Thủ tục giải quyết tố cáo cấp Cục, Sư đoàn, Bộ Chỉ huy quân sự tỉnh, Bộ Chỉ huy Bộ đội Biên phòng tỉnh và cấp tương đương",
+              "field": "Giải quyết tố cáo BQP"
+            },
+            {
+              "operation_key": "thu_tuc_giai_quyet_to_cao_cap_trung_doan_lu_doan_don_bien_phong_va_cap_tuong_duong",
+              "procedure_code": "1.013521",
+              "procedure_title": "Thủ tục giải quyết tố cáo cấp Trung đoàn, Lữ đoàn, Đồn Biên phòng và cấp tương đương",
+              "field": "Giải quyết tố cáo BQP"
+            },
+            {
+              "operation_key": "thu_tuc_giai_quyet_to_cao_cap_quan_khu_quan_chung_bo_doi_bien_phong_bo_tu_lenh_thu_do_ha_noi_bo_tu_lenh_canh_sat_bien_bo_tu_lenh_86_va_cap_tuong_duong_ban_co_yeu_chinh_phu",
+              "procedure_code": "1.013549",
+              "procedure_title": "Thủ tục giải quyết tố cáo cấp Quân khu, Quân chủng, Bộ đội Biên phòng, Bộ Tư lệnh Thủ đô Hà Nội, Bộ Tư lệnh Cảnh sát biển, Bộ Tư lệnh 86 và cấp tương đương, Ban Cơ yếu Chính phủ",
+              "field": "Giải quyết tố cáo BQP"
+            },
+            {
+              "operation_key": "thu_tuc_giai_quyet_to_cao_cap_quan_doan_binh_chung_binh_doan_vung_hai_quan_vung_canh_sat_bien_va_cap_tuong_duong",
+              "procedure_code": "1.013551",
+              "procedure_title": "Thủ tục giải quyết tố cáo cấp Quân đoàn, Binh chủng, Binh đoàn, Vùng Hải quân, Vùng Cảnh sát biển và cấp tương đương",
+              "field": "Giải quyết tố cáo BQP"
+            },
+            {
+              "operation_key": "thu_tuc_giai_quyet_to_cao_cap_hoc_vien_nha_truong_vien_nghien_cuu_benh_vien_va_cap_tuong_duong",
+              "procedure_code": "1.013553",
+              "procedure_title": "Thủ tục giải quyết tố cáo cấp Học viện, Nhà trường, Viện nghiên cứu, Bệnh viện và cấp tương đương",
+              "field": "Giải quyết tố cáo BQP"
+            }
+          ],
+          "to_cao_cong_an": [
+            {
+              "operation_key": "giai_quyet_to_cao_khong_thuoc_linh_vuc_to_tung_hinh_su_cua_cong_dan_doi_voi_luc_luong_cong_an_nhan_dan_thuc_hien_tai_cap_tinh",
+              "procedure_code": "1.003482",
+              "procedure_title": "Giải quyết tố cáo không thuộc lĩnh vực tố tụng hình sự của công dân đối với lực lượng Công an nhân dân (thực hiện tại cấp tỉnh)",
+              "field": "Khiếu nại, tố cáo"
+            },
+            {
+              "operation_key": "giai_quyet_to_cao_khong_thuoc_linh_vuc_to_tung_hinh_su_cua_cong_dan_doi_voi_luc_luong_cong_an_nhan_dan_thuc_hien_tai_cap_trung_uong",
+              "procedure_code": "1.003523",
+              "procedure_title": "Giải quyết tố cáo không thuộc lĩnh vực tố tụng hình sự của công dân đối với lực lượng Công an nhân dân (thực hiện tại cấp Trung ương)",
+              "field": "Khiếu nại, tố cáo"
+            },
+            {
+              "operation_key": "giai_quyet_to_cao_khong_thuoc_linh_vuc_to_tung_hinh_su_cua_cong_dan_doi_voi_luc_luong_cong_an_nhan_dan_thuc_hien_tai_cap_xa_phai_la_can_bo_thuoc_bien_che_cua_luc_luong_cong_an",
+              "procedure_code": "1.004327",
+              "procedure_title": "Giải quyết tố cáo không thuộc lĩnh vực tố tụng hình sự của công dân đối với lực lượng Công an nhân dân thực hiện tại cấp xã (phải là cán bộ thuộc biên chế của lực lượng Công an)",
+              "field": "Khiếu nại, tố cáo"
+            }
+          ],
+          "to_cao_quoc_phong": [
+            {
+              "operation_key": "thu_tuc_giai_quyet_to_cao_cap_bo_quoc_phong",
+              "procedure_code": "1.013519",
+              "procedure_title": "Thủ tục giải quyết tố cáo cấp Bộ Quốc phòng",
+              "field": "Giải quyết tố cáo BQP"
+            },
+            {
+              "operation_key": "thu_tuc_giai_quyet_to_cao_cap_bo_tong_tham_muu_tong_cuc_chinh_tri_cac_tong_cuc_cuc_va_tuong_duong_thuoc_bo_quoc_phong",
+              "procedure_code": "1.013547",
+              "procedure_title": "Thủ tục giải quyết tố cáo cấp Bộ Tổng Tham mưu, Tổng cục Chính trị, các Tổng cục, Cục và tương đương thuộc Bộ Quốc phòng",
+              "field": "Giải quyết tố cáo BQP"
+            }
+          ],
+          "xin_cap_sao_ban_an_tai_lieu": [
+            {
+              "operation_key": "dang_ky_cap_sao_ban_an_tai_lieu_trong_ho_so_vu_an",
+              "procedure_code": "3.000165",
+              "procedure_title": "Đăng ký cấp sao bản án, tài liệu trong hồ sơ vụ án",
+              "field": "Tòa án"
+            }
+          ]
+        }
+      }
+    ],
+    "routes": [
+      {
+        "route_id": "giai_quyet_tranh_chap_dat_dai-1_012751",
+        "conditions": {
+          "subdomain_key": "giai_quyet_khieu_kien",
+          "operation_key": "giai_quyet_tranh_chap_dat_dai_thuoc_tham_quyen_cua_bo_truong_bo_nong_nghiep_va_moi_truong"
+        },
+        "procedure_code": "1.012751",
+        "procedure_name": "Giải quyết tranh chấp đất đai thuộc thẩm quyền của Bộ trưởng Bộ Nông nghiệp và Môi trường",
+        "why_this_route": "Route trực tiếp cho nhu cầu 'Giải quyết tranh chấp đất đai thuộc thẩm quyền của Bộ trưởng Bộ Nông nghiệp và Môi trường' trong nhóm 'giai_quyet_tranh_chap_dat_dai'."
+      },
+      {
+        "route_id": "giai_quyet_tranh_chap_dat_dai-1_012805",
+        "conditions": {
+          "subdomain_key": "giai_quyet_khieu_kien",
+          "operation_key": "giai_quyet_tranh_chap_dat_dai_thuoc_tham_quyen_cua_chu_tich_uy_ban_nhan_cap_tinh"
+        },
+        "procedure_code": "1.012805",
+        "procedure_name": "Giải quyết tranh chấp đất đai thuộc thẩm quyền của Chủ tịch Ủy ban nhân cấp tỉnh",
+        "why_this_route": "Route trực tiếp cho nhu cầu 'Giải quyết tranh chấp đất đai thuộc thẩm quyền của Chủ tịch Ủy ban nhân cấp tỉnh' trong nhóm 'giai_quyet_tranh_chap_dat_dai'."
+      },
+      {
+        "route_id": "giai_quyet_tranh_chap_dat_dai-1_013967",
+        "conditions": {
+          "subdomain_key": "giai_quyet_khieu_kien",
+          "operation_key": "giai_quyet_tranh_chap_dat_dai_thuoc_tham_quyen_cua_chu_tich_uy_ban_nhan_dan_cap_xa"
+        },
+        "procedure_code": "1.013967",
+        "procedure_name": "Giải quyết tranh chấp đất đai thuộc thẩm quyền của Chủ tịch Ủy ban nhân dân cấp xã",
+        "why_this_route": "Route trực tiếp cho nhu cầu 'Giải quyết tranh chấp đất đai thuộc thẩm quyền của Chủ tịch Ủy ban nhân dân cấp xã' trong nhóm 'giai_quyet_tranh_chap_dat_dai'."
+      },
+      {
+        "route_id": "giai_quyet_tranh_chap_dat_dai-1_115452",
+        "conditions": {
+          "subdomain_key": "giai_quyet_khieu_kien",
+          "operation_key": "giai_quyet_tranh_chap_dat_dai_thuoc_tham_quyen_cua_chu_tich_uy_ban_nhan_dan_cap_xa"
+        },
+        "procedure_code": "1.115452",
+        "procedure_name": "Giải quyết tranh chấp đất đai thuộc thẩm quyền của Chủ tịch Ủy ban nhân dân cấp xã",
+        "why_this_route": "Route trực tiếp cho nhu cầu 'Giải quyết tranh chấp đất đai thuộc thẩm quyền của Chủ tịch Ủy ban nhân dân cấp xã' trong nhóm 'giai_quyet_tranh_chap_dat_dai'."
+      },
+      {
+        "route_id": "ho_tro_tranh_chap_lao_dong_ngoai_nuoc-1_014348",
+        "conditions": {
+          "subdomain_key": "giai_quyet_khieu_kien",
+          "operation_key": "ho_tro_giai_quyet_tranh_chap_phat_sinh_lien_quan_den_nguoi_lao_dong_trong_hoat_dong_dua_nguoi_lao_dong_di_lam_viec_o_nuoc_ngoai_theo_hop_dong_khi_tien_hanh_vu_viec"
+        },
+        "procedure_code": "1.014348",
+        "procedure_name": "Hỗ trợ giải quyết tranh chấp phát sinh liên quan đến người lao động trong hoạt động đưa người lao động đi làm việc ở nước ngoài theo hợp đồng (khi tiến hành vụ việc)",
+        "why_this_route": "Route trực tiếp cho nhu cầu 'Hỗ trợ giải quyết tranh chấp phát sinh liên quan đến người lao động trong hoạt động đưa người lao động đi làm việc ở nước ngoài theo hợp đồng (khi tiến hành vụ việc)' trong nhóm 'ho_tro_tranh_chap_lao_dong_ngoai_nuoc'."
+      },
+      {
+        "route_id": "ho_tro_tranh_chap_lao_dong_ngoai_nuoc-1_014349",
+        "conditions": {
+          "subdomain_key": "giai_quyet_khieu_kien",
+          "operation_key": "ho_tro_giai_quyet_tranh_chap_phat_sinh_lien_quan_den_nguoi_lao_dong_trong_hoat_dong_dua_nguoi_lao_dong_di_lam_viec_o_nuoc_ngoai_theo_hop_dong_khi_ket_thuc_vu_viec"
+        },
+        "procedure_code": "1.014349",
+        "procedure_name": "Hỗ trợ giải quyết tranh chấp phát sinh liên quan đến người lao động trong hoạt động đưa người lao động đi làm việc ở nước ngoài theo hợp đồng (khi kết thúc vụ việc)",
+        "why_this_route": "Route trực tiếp cho nhu cầu 'Hỗ trợ giải quyết tranh chấp phát sinh liên quan đến người lao động trong hoạt động đưa người lao động đi làm việc ở nước ngoài theo hợp đồng (khi kết thúc vụ việc)' trong nhóm 'ho_tro_tranh_chap_lao_dong_ngoai_nuoc'."
+      },
+      {
+        "route_id": "hoa_giai_tranh_chap_dat_dai-1_012812",
+        "conditions": {
+          "subdomain_key": "giai_quyet_khieu_kien",
+          "operation_key": "hoa_giai_tranh_chap_dat_dai"
+        },
+        "procedure_code": "1.012812",
+        "procedure_name": "Hòa giải tranh chấp đất đai",
+        "why_this_route": "Route trực tiếp cho nhu cầu 'Hòa giải tranh chấp đất đai' trong nhóm 'hoa_giai_tranh_chap_dat_dai'."
+      },
+      {
+        "route_id": "hoa_giai_tranh_chap_dat_dai-1_115453",
+        "conditions": {
+          "subdomain_key": "giai_quyet_khieu_kien",
+          "operation_key": "hoa_giai_tranh_chap_dat_dai_thuoc_tham_quyen_cap_xa_1_trinh_tu_thuc_hien"
+        },
+        "procedure_code": "1.115453",
+        "procedure_name": "Hòa giải tranh chấp đất đai thuộc thẩm quyền cấp xã (1) Trình tự thực hiện:",
+        "why_this_route": "Route trực tiếp cho nhu cầu 'Hòa giải tranh chấp đất đai thuộc thẩm quyền cấp xã (1) Trình tự thực hiện:' trong nhóm 'hoa_giai_tranh_chap_dat_dai'."
+      },
+      {
+        "route_id": "khieu_nai_cong_an-1_000178",
+        "conditions": {
+          "subdomain_key": "giai_quyet_khieu_kien",
+          "operation_key": "giai_quyet_khieu_nai_ve_quyet_dinh_hanh_chinh_hanh_vi_hanh_chinh_cua_cong_dan_doi_voi_luc_luong_cong_an_nhan_dan_thuc_hien_tai_cap_trung_uong"
+        },
+        "procedure_code": "1.000178",
+        "procedure_name": "Giải quyết khiếu nại về quyết định hành chính, hành vi hành chính của công dân đối với lực lượng Công an nhân dân (thực hiện tại cấp Trung ương)",
+        "why_this_route": "Route trực tiếp cho nhu cầu 'Giải quyết khiếu nại về quyết định hành chính, hành vi hành chính của công dân đối với lực lượng Công an nhân dân (thực hiện tại cấp Trung ương)' trong nhóm 'khieu_nai_cong_an'."
+      },
+      {
+        "route_id": "khieu_nai_cong_an-1_003504",
+        "conditions": {
+          "subdomain_key": "giai_quyet_khieu_kien",
+          "operation_key": "giai_quyet_khieu_nai_ve_quyet_dinh_hanh_chinh_hanh_vi_hanh_chinh_cua_cong_dan_doi_voi_luc_luong_cong_an_nhan_dan_thuc_hien_tai_cap_tinh"
+        },
+        "procedure_code": "1.003504",
+        "procedure_name": "Giải quyết khiếu nại về quyết định hành chính, hành vi hành chính của công dân đối với lực lượng Công an nhân dân (thực hiện tại cấp tỉnh)",
+        "why_this_route": "Route trực tiếp cho nhu cầu 'Giải quyết khiếu nại về quyết định hành chính, hành vi hành chính của công dân đối với lực lượng Công an nhân dân (thực hiện tại cấp tỉnh)' trong nhóm 'khieu_nai_cong_an'."
+      },
+      {
+        "route_id": "khieu_nai_cong_an-1_004335",
+        "conditions": {
+          "subdomain_key": "giai_quyet_khieu_kien",
+          "operation_key": "giai_quyet_khieu_nai_ve_quyet_dinh_hanh_chinh_hanh_vi_hanh_chinh_cua_cong_dan_doi_voi_luc_luong_cong_an_nhan_dan_thuc_hien_tai_cap_xa_phai_la_can_bo_thuoc_bien_che_cua_luc_luong_cong_an"
+        },
+        "procedure_code": "1.004335",
+        "procedure_name": "Giải quyết khiếu nại về quyết định hành chính, hành vi hành chính của công dân đối với lực lượng Công an nhân dân thực hiện tại cấp xã (phải là cán bộ thuộc biên chế của lực lượng Công an)",
+        "why_this_route": "Route trực tiếp cho nhu cầu 'Giải quyết khiếu nại về quyết định hành chính, hành vi hành chính của công dân đối với lực lượng Công an nhân dân thực hiện tại cấp xã (phải là cán bộ thuộc biên chế của lực lượng Công an)' trong nhóm 'khieu_nai_cong_an'."
+      },
+      {
+        "route_id": "khieu_nai_dich_vu_cap_nuoc-3_000599",
+        "conditions": {
+          "subdomain_key": "giai_quyet_khieu_kien",
+          "operation_key": "thu_tuc_giai_quyet_kien_nghi_khieu_nai_cua_khach_hang_ve_linh_vuc_cap_nuoc"
+        },
+        "procedure_code": "3.000599",
+        "procedure_name": "Thủ tục giải quyết kiến nghị, khiếu nại của khách hàng về lĩnh vực cấp nước",
+        "why_this_route": "Route trực tiếp cho nhu cầu 'Thủ tục giải quyết kiến nghị, khiếu nại của khách hàng về lĩnh vực cấp nước' trong nhóm 'khieu_nai_dich_vu_cap_nuoc'."
+      },
+      {
+        "route_id": "khieu_nai_hanh_chinh-1_013524",
+        "conditions": {
+          "subdomain_key": "giai_quyet_khieu_kien",
+          "operation_key": "thu_tuc_giai_quyet_khieu_nai_lan_dau_cap_cuc_su_doan_hoc_vien_quan_y_bo_chi_huy_quan_su_cap_tinh_bo_tu_lenh_thanh_pho_ho_chi_minh_va_cap_tuong_duong"
+        },
+        "procedure_code": "1.013524",
+        "procedure_name": "Thủ tục giải quyết khiếu nại lần đầu cấp Cục, Sư đoàn, Học viện Quân y, Bộ chỉ huy quân sự cấp tỉnh, Bộ Tư lệnh thành phố Hồ Chí Minh, và cấp tương đương",
+        "why_this_route": "Route trực tiếp cho nhu cầu 'Thủ tục giải quyết khiếu nại lần đầu cấp Cục, Sư đoàn, Học viện Quân y, Bộ chỉ huy quân sự cấp tỉnh, Bộ Tư lệnh thành phố Hồ Chí Minh, và cấp tương đương' trong nhóm 'khieu_nai_hanh_chinh'."
+      },
+      {
+        "route_id": "khieu_nai_hanh_chinh-1_013526",
+        "conditions": {
+          "subdomain_key": "giai_quyet_khieu_kien",
+          "operation_key": "thu_tuc_giai_quyet_khieu_nai_lan_hai_cap_cuc_su_doan_hoc_vien_quan_y_bo_chi_huy_quan_su_cap_tinh_bo_tu_lenh_thanh_pho_ho_chi_minh_va_cap_tuong_duong"
+        },
+        "procedure_code": "1.013526",
+        "procedure_name": "Thủ tục giải quyết khiếu nại lần hai cấp Cục, Sư đoàn, Học viện Quân y, Bộ chỉ huy quân sự cấp tỉnh, Bộ Tư lệnh thành phố Hồ Chí Minh và cấp tương đương",
+        "why_this_route": "Route trực tiếp cho nhu cầu 'Thủ tục giải quyết khiếu nại lần hai cấp Cục, Sư đoàn, Học viện Quân y, Bộ chỉ huy quân sự cấp tỉnh, Bộ Tư lệnh thành phố Hồ Chí Minh và cấp tương đương' trong nhóm 'khieu_nai_hanh_chinh'."
+      },
+      {
+        "route_id": "khieu_nai_hanh_chinh-1_013527",
+        "conditions": {
+          "subdomain_key": "giai_quyet_khieu_kien",
+          "operation_key": "thu_tuc_giai_quyet_khieu_nai_lan_dau_cap_trung_doan_lu_doan_don_bien_phong_va_cap_tuong_duong"
+        },
+        "procedure_code": "1.013527",
+        "procedure_name": "Thủ tục giải quyết khiếu nại lần đầu cấp Trung đoàn, Lữ đoàn, Đồn biên phòng và cấp tương đương",
+        "why_this_route": "Route trực tiếp cho nhu cầu 'Thủ tục giải quyết khiếu nại lần đầu cấp Trung đoàn, Lữ đoàn, Đồn biên phòng và cấp tương đương' trong nhóm 'khieu_nai_hanh_chinh'."
+      },
+      {
+        "route_id": "khieu_nai_hanh_chinh-1_013529",
+        "conditions": {
+          "subdomain_key": "giai_quyet_khieu_kien",
+          "operation_key": "thu_tuc_giai_quyet_khieu_nai_lan_dau_cap_bo_tong_tham_muu_tong_cuc_chinh_tri_cac_tong_cuc_quan_khu_quan_chung_bo_doi_bien_phong_va_cap_tuong_duong"
+        },
+        "procedure_code": "1.013529",
+        "procedure_name": "Thủ tục giải quyết khiếu nại lần đầu cấp Bộ Tổng Tham mưu, Tổng cục Chính trị, các Tổng cục; Quân khu, Quân chủng, Bộ đội Biên phòng và cấp tương đương",
+        "why_this_route": "Route trực tiếp cho nhu cầu 'Thủ tục giải quyết khiếu nại lần đầu cấp Bộ Tổng Tham mưu, Tổng cục Chính trị, các Tổng cục; Quân khu, Quân chủng, Bộ đội Biên phòng và cấp tương đương' trong nhóm 'khieu_nai_hanh_chinh'."
+      },
+      {
+        "route_id": "khieu_nai_hanh_chinh-1_013531",
+        "conditions": {
+          "subdomain_key": "giai_quyet_khieu_kien",
+          "operation_key": "thu_tuc_giai_quyet_khieu_nai_lan_dau_cap_quan_doan_binh_doan_binh_chung_canh_sat_bien_bo_tu_lenh_thu_do_ha_noi_bo_tu_lenh_bao_ve_lang_chu_tich_ho_chi_minh_tap_doan_vien_thong_quan_doi_va_cap_tuong_duong"
+        },
+        "procedure_code": "1.013531",
+        "procedure_name": "Thủ tục giải quyết khiếu nại lần đầu cấp Quân đoàn, Binh đoàn, Binh chủng, Cảnh sát biển, Bộ Tư lệnh Thủ đô Hà Nội, Bộ Tư lệnh Bảo vệ Lăng Chủ tịch Hồ Chí Minh, Tập đoàn viễn thông Quân đội và cấp tương đương",
+        "why_this_route": "Route trực tiếp cho nhu cầu 'Thủ tục giải quyết khiếu nại lần đầu cấp Quân đoàn, Binh đoàn, Binh chủng, Cảnh sát biển, Bộ Tư lệnh Thủ đô Hà Nội, Bộ Tư lệnh Bảo vệ Lăng Chủ tịch Hồ Chí Minh, Tập đoàn viễn thông Quân đội và cấp tương đương' trong nhóm 'khieu_nai_hanh_chinh'."
+      },
+      {
+        "route_id": "khieu_nai_hanh_chinh-1_013532",
+        "conditions": {
+          "subdomain_key": "giai_quyet_khieu_kien",
+          "operation_key": "thu_tuc_giai_quyet_khieu_nai_lan_dau_cap_hoc_vien_tru_hoc_vien_quan_y_nha_truong_vien_nghien_cuu_benh_vien_tong_cong_ty_va_cap_tuong_duong"
+        },
+        "procedure_code": "1.013532",
+        "procedure_name": "Thủ tục giải quyết khiếu nại lần đầu cấp Học viện (trừ Học viện Quân y), Nhà trường, Viện nghiên cứu, Bệnh viện, Tổng công ty và cấp tương đương",
+        "why_this_route": "Route trực tiếp cho nhu cầu 'Thủ tục giải quyết khiếu nại lần đầu cấp Học viện (trừ Học viện Quân y), Nhà trường, Viện nghiên cứu, Bệnh viện, Tổng công ty và cấp tương đương' trong nhóm 'khieu_nai_hanh_chinh'."
+      },
+      {
+        "route_id": "khieu_nai_hanh_chinh-1_013536",
+        "conditions": {
+          "subdomain_key": "giai_quyet_khieu_kien",
+          "operation_key": "thu_tuc_giai_quyet_khieu_nai_lan_hai_cap_bo_tong_tham_muu_tong_cuc_chinh_tri_cac_tong_cuc_quan_khu_quan_chung_bo_tu_lenh_bo_doi_bien_phong_va_cap_tuong_duong"
+        },
+        "procedure_code": "1.013536",
+        "procedure_name": "Thủ tục giải quyết khiếu nại lần hai cấp Bộ Tổng Tham mưu, Tổng cục Chính trị, các Tổng cục, Quân khu, Quân chủng, Bộ Tư lệnh Bộ đội Biên phòng và cấp tương đương",
+        "why_this_route": "Route trực tiếp cho nhu cầu 'Thủ tục giải quyết khiếu nại lần hai cấp Bộ Tổng Tham mưu, Tổng cục Chính trị, các Tổng cục, Quân khu, Quân chủng, Bộ Tư lệnh Bộ đội Biên phòng và cấp tương đương' trong nhóm 'khieu_nai_hanh_chinh'."
+      },
+      {
+        "route_id": "khieu_nai_hanh_chinh-1_013537",
+        "conditions": {
+          "subdomain_key": "giai_quyet_khieu_kien",
+          "operation_key": "thu_tuc_giai_quyet_khieu_nai_lan_hai_cap_quan_doan_binh_doan_binh_chung_canh_sat_bien_viet_nam_bo_tu_lenh_thu_do_ha_noi_bo_tu_lenh_lang_chu_tich_ho_chi_minh_tap_doan_cong_nghiep_vien_thong_quan_doi_va_cap_tuong_duong"
+        },
+        "procedure_code": "1.013537",
+        "procedure_name": "Thủ tục giải quyết khiếu nại lần hai cấp Quân đoàn, Binh đoàn, Binh chủng, Cảnh sát biển Việt Nam, Bộ Tư lệnh Thủ đô Hà Nội, Bộ Tư lệnh Lăng Chủ tịch Hồ Chí Minh, Tập đoàn Công nghiệp viễn thông Quân đội và cấp tương đương",
+        "why_this_route": "Route trực tiếp cho nhu cầu 'Thủ tục giải quyết khiếu nại lần hai cấp Quân đoàn, Binh đoàn, Binh chủng, Cảnh sát biển Việt Nam, Bộ Tư lệnh Thủ đô Hà Nội, Bộ Tư lệnh Lăng Chủ tịch Hồ Chí Minh, Tập đoàn Công nghiệp viễn thông Quân đội và cấp tương đương' trong nhóm 'khieu_nai_hanh_chinh'."
+      },
+      {
+        "route_id": "khieu_nai_quoc_phong-1_013534",
+        "conditions": {
+          "subdomain_key": "giai_quyet_khieu_kien",
+          "operation_key": "thu_tuc_giai_quyet_khieu_nai_lan_hai_cap_bo_quoc_phong"
+        },
+        "procedure_code": "1.013534",
+        "procedure_name": "Thủ tục giải quyết khiếu nại lần hai cấp Bộ Quốc phòng",
+        "why_this_route": "Route trực tiếp cho nhu cầu 'Thủ tục giải quyết khiếu nại lần hai cấp Bộ Quốc phòng' trong nhóm 'khieu_nai_quoc_phong'."
+      },
+      {
+        "route_id": "khieu_nai_quoc_phong-1_013554",
+        "conditions": {
+          "subdomain_key": "giai_quyet_khieu_kien",
+          "operation_key": "thu_tuc_giai_quyet_don_khieu_nai_lan_dau_cap_bo_quoc_phong"
+        },
+        "procedure_code": "1.013554",
+        "procedure_name": "Thủ tục giải quyết đơn khiếu nại lần đầu cấp Bộ Quốc phòng",
+        "why_this_route": "Route trực tiếp cho nhu cầu 'Thủ tục giải quyết đơn khiếu nại lần đầu cấp Bộ Quốc phòng' trong nhóm 'khieu_nai_quoc_phong'."
+      },
+      {
+        "route_id": "khieu_nai_so_huu_cong_nghiep-1_015007",
+        "conditions": {
+          "subdomain_key": "giai_quyet_khieu_kien",
+          "operation_key": "thu_tuc_giai_quyet_khieu_nai_lien_quan_den_so_huu_cong_nghiep"
+        },
+        "procedure_code": "1.015007",
+        "procedure_name": "Thủ tục giải quyết khiếu nại liên quan đến sở hữu công nghiệp",
+        "why_this_route": "Route trực tiếp cho nhu cầu 'Thủ tục giải quyết khiếu nại liên quan đến sở hữu công nghiệp' trong nhóm 'khieu_nai_so_huu_cong_nghiep'."
+      },
+      {
+        "route_id": "khieu_nai_so_huu_cong_nghiep-1_015016",
+        "conditions": {
+          "subdomain_key": "giai_quyet_khieu_kien",
+          "operation_key": "thu_tuc_giai_quyet_khieu_nai_lien_quan_den_so_huu_cong_nghiep_cap_tinh"
+        },
+        "procedure_code": "1.015016",
+        "procedure_name": "Thủ tục giải quyết khiếu nại liên quan đến sở hữu công nghiệp (cấp tỉnh)",
+        "why_this_route": "Route trực tiếp cho nhu cầu 'Thủ tục giải quyết khiếu nại liên quan đến sở hữu công nghiệp (cấp tỉnh)' trong nhóm 'khieu_nai_so_huu_cong_nghiep'."
+      },
+      {
+        "route_id": "khieu_nai_tro_giup_phap_ly-2_000592",
+        "conditions": {
+          "subdomain_key": "giai_quyet_khieu_kien",
+          "operation_key": "thu_tuc_giai_quyet_khieu_nai_ve_tro_giup_phap_ly"
+        },
+        "procedure_code": "2.000592",
+        "procedure_name": "Thủ tục giải quyết khiếu nại về trợ giúp pháp lý",
+        "why_this_route": "Route trực tiếp cho nhu cầu 'Thủ tục giải quyết khiếu nại về trợ giúp pháp lý' trong nhóm 'khieu_nai_tro_giup_phap_ly'."
+      },
+      {
+        "route_id": "nhan_thong_bao_to_tung_dien_tu-3_000164",
+        "conditions": {
+          "subdomain_key": "giai_quyet_khieu_kien",
+          "operation_key": "dang_ky_nhan_cac_thong_bao_van_ban_to_tung_bang_phuong_tien_dien_tu"
+        },
+        "procedure_code": "3.000164",
+        "procedure_name": "Đăng ký nhận các thông báo, văn bản tố tụng bằng phương tiện điện tử",
+        "why_this_route": "Route trực tiếp cho nhu cầu 'Đăng ký nhận các thông báo, văn bản tố tụng bằng phương tiện điện tử' trong nhóm 'nhan_thong_bao_to_tung_dien_tu'."
+      },
+      {
+        "route_id": "nop_don_khoi_kien-3_000163",
+        "conditions": {
+          "subdomain_key": "giai_quyet_khieu_kien",
+          "operation_key": "dich_vu_cong_truc_tuyen_gui_nhan_don_khoi_kien_tai_lieu_chung_cu_va_cap_tong_dat_thong_bao_van_ban_to_tung"
+        },
+        "procedure_code": "3.000163",
+        "procedure_name": "Dịch vụ công trực tuyến gửi, nhận đơn khởi kiện, tài liệu, chứng cứ và cấp, tống đạt, thông báo văn bản tố tụng",
+        "why_this_route": "Route trực tiếp cho nhu cầu 'Dịch vụ công trực tuyến gửi, nhận đơn khởi kiện, tài liệu, chứng cứ và cấp, tống đạt, thông báo văn bản tố tụng' trong nhóm 'nop_don_khoi_kien'."
+      },
+      {
+        "route_id": "to_cao-1_013520",
+        "conditions": {
+          "subdomain_key": "giai_quyet_khieu_kien",
+          "operation_key": "thu_tuc_giai_quyet_to_cao_cap_cuc_su_doan_bo_chi_huy_quan_su_tinh_bo_chi_huy_bo_doi_bien_phong_tinh_va_cap_tuong_duong"
+        },
+        "procedure_code": "1.013520",
+        "procedure_name": "Thủ tục giải quyết tố cáo cấp Cục, Sư đoàn, Bộ Chỉ huy quân sự tỉnh, Bộ Chỉ huy Bộ đội Biên phòng tỉnh và cấp tương đương",
+        "why_this_route": "Route trực tiếp cho nhu cầu 'Thủ tục giải quyết tố cáo cấp Cục, Sư đoàn, Bộ Chỉ huy quân sự tỉnh, Bộ Chỉ huy Bộ đội Biên phòng tỉnh và cấp tương đương' trong nhóm 'to_cao'."
+      },
+      {
+        "route_id": "to_cao-1_013521",
+        "conditions": {
+          "subdomain_key": "giai_quyet_khieu_kien",
+          "operation_key": "thu_tuc_giai_quyet_to_cao_cap_trung_doan_lu_doan_don_bien_phong_va_cap_tuong_duong"
+        },
+        "procedure_code": "1.013521",
+        "procedure_name": "Thủ tục giải quyết tố cáo cấp Trung đoàn, Lữ đoàn, Đồn Biên phòng và cấp tương đương",
+        "why_this_route": "Route trực tiếp cho nhu cầu 'Thủ tục giải quyết tố cáo cấp Trung đoàn, Lữ đoàn, Đồn Biên phòng và cấp tương đương' trong nhóm 'to_cao'."
+      },
+      {
+        "route_id": "to_cao-1_013549",
+        "conditions": {
+          "subdomain_key": "giai_quyet_khieu_kien",
+          "operation_key": "thu_tuc_giai_quyet_to_cao_cap_quan_khu_quan_chung_bo_doi_bien_phong_bo_tu_lenh_thu_do_ha_noi_bo_tu_lenh_canh_sat_bien_bo_tu_lenh_86_va_cap_tuong_duong_ban_co_yeu_chinh_phu"
+        },
+        "procedure_code": "1.013549",
+        "procedure_name": "Thủ tục giải quyết tố cáo cấp Quân khu, Quân chủng, Bộ đội Biên phòng, Bộ Tư lệnh Thủ đô Hà Nội, Bộ Tư lệnh Cảnh sát biển, Bộ Tư lệnh 86 và cấp tương đương, Ban Cơ yếu Chính phủ",
+        "why_this_route": "Route trực tiếp cho nhu cầu 'Thủ tục giải quyết tố cáo cấp Quân khu, Quân chủng, Bộ đội Biên phòng, Bộ Tư lệnh Thủ đô Hà Nội, Bộ Tư lệnh Cảnh sát biển, Bộ Tư lệnh 86 và cấp tương đương, Ban Cơ yếu Chính phủ' trong nhóm 'to_cao'."
+      },
+      {
+        "route_id": "to_cao-1_013551",
+        "conditions": {
+          "subdomain_key": "giai_quyet_khieu_kien",
+          "operation_key": "thu_tuc_giai_quyet_to_cao_cap_quan_doan_binh_chung_binh_doan_vung_hai_quan_vung_canh_sat_bien_va_cap_tuong_duong"
+        },
+        "procedure_code": "1.013551",
+        "procedure_name": "Thủ tục giải quyết tố cáo cấp Quân đoàn, Binh chủng, Binh đoàn, Vùng Hải quân, Vùng Cảnh sát biển và cấp tương đương",
+        "why_this_route": "Route trực tiếp cho nhu cầu 'Thủ tục giải quyết tố cáo cấp Quân đoàn, Binh chủng, Binh đoàn, Vùng Hải quân, Vùng Cảnh sát biển và cấp tương đương' trong nhóm 'to_cao'."
+      },
+      {
+        "route_id": "to_cao-1_013553",
+        "conditions": {
+          "subdomain_key": "giai_quyet_khieu_kien",
+          "operation_key": "thu_tuc_giai_quyet_to_cao_cap_hoc_vien_nha_truong_vien_nghien_cuu_benh_vien_va_cap_tuong_duong"
+        },
+        "procedure_code": "1.013553",
+        "procedure_name": "Thủ tục giải quyết tố cáo cấp Học viện, Nhà trường, Viện nghiên cứu, Bệnh viện và cấp tương đương",
+        "why_this_route": "Route trực tiếp cho nhu cầu 'Thủ tục giải quyết tố cáo cấp Học viện, Nhà trường, Viện nghiên cứu, Bệnh viện và cấp tương đương' trong nhóm 'to_cao'."
+      },
+      {
+        "route_id": "to_cao_cong_an-1_003482",
+        "conditions": {
+          "subdomain_key": "giai_quyet_khieu_kien",
+          "operation_key": "giai_quyet_to_cao_khong_thuoc_linh_vuc_to_tung_hinh_su_cua_cong_dan_doi_voi_luc_luong_cong_an_nhan_dan_thuc_hien_tai_cap_tinh"
+        },
+        "procedure_code": "1.003482",
+        "procedure_name": "Giải quyết tố cáo không thuộc lĩnh vực tố tụng hình sự của công dân đối với lực lượng Công an nhân dân (thực hiện tại cấp tỉnh)",
+        "why_this_route": "Route trực tiếp cho nhu cầu 'Giải quyết tố cáo không thuộc lĩnh vực tố tụng hình sự của công dân đối với lực lượng Công an nhân dân (thực hiện tại cấp tỉnh)' trong nhóm 'to_cao_cong_an'."
+      },
+      {
+        "route_id": "to_cao_cong_an-1_003523",
+        "conditions": {
+          "subdomain_key": "giai_quyet_khieu_kien",
+          "operation_key": "giai_quyet_to_cao_khong_thuoc_linh_vuc_to_tung_hinh_su_cua_cong_dan_doi_voi_luc_luong_cong_an_nhan_dan_thuc_hien_tai_cap_trung_uong"
+        },
+        "procedure_code": "1.003523",
+        "procedure_name": "Giải quyết tố cáo không thuộc lĩnh vực tố tụng hình sự của công dân đối với lực lượng Công an nhân dân (thực hiện tại cấp Trung ương)",
+        "why_this_route": "Route trực tiếp cho nhu cầu 'Giải quyết tố cáo không thuộc lĩnh vực tố tụng hình sự của công dân đối với lực lượng Công an nhân dân (thực hiện tại cấp Trung ương)' trong nhóm 'to_cao_cong_an'."
+      },
+      {
+        "route_id": "to_cao_cong_an-1_004327",
+        "conditions": {
+          "subdomain_key": "giai_quyet_khieu_kien",
+          "operation_key": "giai_quyet_to_cao_khong_thuoc_linh_vuc_to_tung_hinh_su_cua_cong_dan_doi_voi_luc_luong_cong_an_nhan_dan_thuc_hien_tai_cap_xa_phai_la_can_bo_thuoc_bien_che_cua_luc_luong_cong_an"
+        },
+        "procedure_code": "1.004327",
+        "procedure_name": "Giải quyết tố cáo không thuộc lĩnh vực tố tụng hình sự của công dân đối với lực lượng Công an nhân dân thực hiện tại cấp xã (phải là cán bộ thuộc biên chế của lực lượng Công an)",
+        "why_this_route": "Route trực tiếp cho nhu cầu 'Giải quyết tố cáo không thuộc lĩnh vực tố tụng hình sự của công dân đối với lực lượng Công an nhân dân thực hiện tại cấp xã (phải là cán bộ thuộc biên chế của lực lượng Công an)' trong nhóm 'to_cao_cong_an'."
+      },
+      {
+        "route_id": "to_cao_quoc_phong-1_013519",
+        "conditions": {
+          "subdomain_key": "giai_quyet_khieu_kien",
+          "operation_key": "thu_tuc_giai_quyet_to_cao_cap_bo_quoc_phong"
+        },
+        "procedure_code": "1.013519",
+        "procedure_name": "Thủ tục giải quyết tố cáo cấp Bộ Quốc phòng",
+        "why_this_route": "Route trực tiếp cho nhu cầu 'Thủ tục giải quyết tố cáo cấp Bộ Quốc phòng' trong nhóm 'to_cao_quoc_phong'."
+      },
+      {
+        "route_id": "to_cao_quoc_phong-1_013547",
+        "conditions": {
+          "subdomain_key": "giai_quyet_khieu_kien",
+          "operation_key": "thu_tuc_giai_quyet_to_cao_cap_bo_tong_tham_muu_tong_cuc_chinh_tri_cac_tong_cuc_cuc_va_tuong_duong_thuoc_bo_quoc_phong"
+        },
+        "procedure_code": "1.013547",
+        "procedure_name": "Thủ tục giải quyết tố cáo cấp Bộ Tổng Tham mưu, Tổng cục Chính trị, các Tổng cục, Cục và tương đương thuộc Bộ Quốc phòng",
+        "why_this_route": "Route trực tiếp cho nhu cầu 'Thủ tục giải quyết tố cáo cấp Bộ Tổng Tham mưu, Tổng cục Chính trị, các Tổng cục, Cục và tương đương thuộc Bộ Quốc phòng' trong nhóm 'to_cao_quoc_phong'."
+      },
+      {
+        "route_id": "xin_cap_sao_ban_an_tai_lieu-3_000165",
+        "conditions": {
+          "subdomain_key": "giai_quyet_khieu_kien",
+          "operation_key": "dang_ky_cap_sao_ban_an_tai_lieu_trong_ho_so_vu_an"
+        },
+        "procedure_code": "3.000165",
+        "procedure_name": "Đăng ký cấp sao bản án, tài liệu trong hồ sơ vụ án",
+        "why_this_route": "Route trực tiếp cho nhu cầu 'Đăng ký cấp sao bản án, tài liệu trong hồ sơ vụ án' trong nhóm 'xin_cap_sao_ban_an_tai_lieu'."
+      }
+    ]
+  },
+  "pre_submission_checks": [
+    {
+      "field_group": "complaint_and_denunciation",
+      "checks": [
+        "Nhóm khiếu nại, tố cáo cần làm rõ cơ quan/đơn vị bị khiếu nại, tố cáo và cấp giải quyết phù hợp trước khi chọn thủ tục chi tiết.",
+        "Hồ sơ khiếu nại phải có nội dung vụ việc, quyết định/hành vi bị khiếu nại hoặc mô tả rõ căn cứ phát sinh tranh chấp."
+      ]
+    },
+    {
+      "field_group": "dispute_and_litigation",
+      "checks": [
+        "Nhóm tranh chấp đất đai cần phân biệt hòa giải tại cấp xã với thủ tục giải quyết tranh chấp theo thẩm quyền cấp xã, cấp tỉnh hoặc bộ.",
+        "Nhóm tố tụng/tòa án cần phân biệt nộp đơn khởi kiện, đăng ký nhận thông báo điện tử và xin cấp sao bản án, tài liệu hồ sơ vụ án."
+      ]
+    }
+  ]
+}

@@ -1,0 +1,857 @@
+{
+  "schema_version": "1.0",
+  "domain": "phuong_tien_nguoi_lai",
+  "updated_at": "2026-07-18",
+  "source_files": [
+    "C:\\Users\\ku060\\Downloads\\VAIC source\\data-pipeline\\main\\full-data.csv",
+    "C:\\Users\\ku060\\Downloads\\VAIC source\\data-pipeline\\data\\workflows\\phuong_tien_nguoi_lai\\summary.csv",
+    "C:\\Users\\ku060\\Downloads\\VAIC source\\data-pipeline\\data\\workflows\\phuong_tien_nguoi_lai\\normalized.json",
+    "C:\\Users\\ku060\\Downloads\\VAIC source\\data-pipeline\\raw_data"
+  ],
+  "coverage": {
+    "expected_codes": [
+      "1.000010",
+      "1.000017",
+      "1.000256",
+      "1.000300",
+      "1.001296",
+      "1.001319",
+      "1.001322",
+      "1.004268",
+      "1.004281",
+      "1.004296",
+      "1.004424",
+      "1.004990",
+      "1.005103",
+      "1.011871",
+      "1.011872",
+      "1.011873",
+      "1.011874",
+      "1.013071",
+      "1.013089",
+      "1.013092",
+      "1.013097",
+      "1.013101",
+      "1.013105",
+      "1.013110",
+      "1.013205",
+      "1.013206",
+      "1.013327",
+      "1.013328",
+      "1.013329",
+      "1.013330",
+      "1.013331",
+      "1.013332",
+      "1.013333",
+      "1.013334",
+      "1.013335",
+      "2.000082",
+      "5.003808",
+      "6.005678",
+      "6.006590"
+    ],
+    "covered_codes": [
+      "1.000010",
+      "1.000017",
+      "1.000256",
+      "1.000300",
+      "1.001296",
+      "1.001319",
+      "1.001322",
+      "1.004268",
+      "1.004281",
+      "1.004296",
+      "1.004424",
+      "1.004990",
+      "1.005103",
+      "1.011871",
+      "1.011872",
+      "1.011873",
+      "1.011874",
+      "1.013071",
+      "1.013089",
+      "1.013092",
+      "1.013097",
+      "1.013101",
+      "1.013105",
+      "1.013110",
+      "1.013205",
+      "1.013206",
+      "1.013327",
+      "1.013328",
+      "1.013329",
+      "1.013330",
+      "1.013331",
+      "1.013332",
+      "1.013333",
+      "1.013334",
+      "1.013335",
+      "2.000082",
+      "5.003808",
+      "6.005678",
+      "6.006590"
+    ],
+    "missing_codes": []
+  },
+  "llm_contract": {
+    "role": "parse_user_answer_and_rephrase_question_only",
+    "required_output_schema": {
+      "intent": "phuong_tien_nguoi_lai",
+      "current_node": "string",
+      "slot_updates": {
+        "subdomain_key": "giay_phep_lai_xe | dang_ky_phuong_tien | dang_kiem_phuong_tien | unknown",
+        "operation_key": "string",
+        "operation_group": "string",
+        "needs_human_review": "boolean"
+      },
+      "confidence": "0_to_1",
+      "needs_human_review": "boolean"
+    }
+  },
+  "entry_prompts": [
+    "Bạn đang cần làm việc về bằng lái, đăng ký xe hay đăng kiểm phương tiện?",
+    "Bạn muốn cấp mới, cấp lại, đổi, thu hồi hay xác nhận/chứng nhận cho phương tiện của mình?"
+  ],
+  "slots": [
+    {
+      "name": "subdomain_key",
+      "required": true,
+      "description": "Nhánh chính trong domain phương tiện và người lái."
+    },
+    {
+      "name": "operation_key",
+      "required": true,
+      "description": "Thao tác cụ thể ánh xạ trực tiếp tới thủ tục cuối cùng."
+    },
+    {
+      "name": "operation_group",
+      "required": false,
+      "description": "Nhóm thao tác nghiệp vụ để gom các thủ tục gần nhau cho UI và parser."
+    }
+  ],
+  "subdomain_catalog": [
+    {
+      "subdomain_key": "dang_kiem_phuong_tien",
+      "subdomain_label": "Đăng kiểm phương tiện",
+      "event_id": 317,
+      "field_name": "Đăng kiểm",
+      "summary": "Nhóm thủ tục liên quan đến kiểm định, chứng nhận chất lượng an toàn kỹ thuật, khí thải và điều kiện hoạt động đăng kiểm cho phương tiện."
+    }
+  ],
+  "decision_tree": {
+    "start_node": "vehicle_subdomain",
+    "nodes": [
+      {
+        "id": "vehicle_subdomain",
+        "type": "question",
+        "slot": "subdomain_key",
+        "question": "Bạn đang hỏi về giấy phép lái xe, đăng ký phương tiện hay đăng kiểm phương tiện?",
+        "options": [
+          "dang_kiem_phuong_tien"
+        ],
+        "prefilled_value": "dang_kiem_phuong_tien"
+      },
+      {
+        "id": "vehicle_operation",
+        "type": "question",
+        "slot": "operation_key",
+        "question": "Bạn cần làm thao tác nào cụ thể trong nhánh đã chọn?",
+        "options_by_subdomain": {
+          "dang_kiem_phuong_tien": [
+            {
+              "operation_key": "danh_gia_chung_nhan_nang_luc_co_so_thu_nghiem_cung_cap_dich_vu_kiem_tra_thu_trang_thiet_bi_an_toan_va_co_so_che_tao_lien_quan_den_chat_luong_an_toan_ky_thuat_va_phong_ngua_o_nhiem_moi_truong_tau_bien",
+              "operation_group": "dang_kiem_khac",
+              "procedure_code": "1.000010",
+              "procedure_title": "Đánh giá, chứng nhận năng lực cơ sở thử nghiệm, cung cấp dịch vụ kiểm tra, thử trang thiết bị an toàn và cơ sở chế tạo liên quan đến chất lượng an toàn kỹ thuật và phòng ngừa ô nhiễm môi trường tàu biển"
+            },
+            {
+              "operation_key": "cap_lai_giay_chung_nhan_tem_kiem_dinh_chat_luong_an_toan_ky_thuat_va_bao_ve_moi_truong_phuong_tien_giao_thong_duong_sat",
+              "operation_group": "kiem_dinh_phuong_tien",
+              "procedure_code": "1.000017",
+              "procedure_title": "Cấp lại Giấy chứng nhận, tem kiểm định chất lượng, an toàn kỹ thuật và bảo vệ môi trường phương tiện giao thông đường sắt"
+            },
+            {
+              "operation_key": "phe_duyet_ban_cong_bo_phu_hop_lao_dong_hang_hai_phan_ii_va_cap_giay_chung_nhan_lao_dong_hang_hai",
+              "operation_group": "dang_kiem_hang_hai",
+              "procedure_code": "1.000256",
+              "procedure_title": "Phê duyệt Bản công bố phù hợp Lao động hàng hải phần II và cấp Giấy chứng nhận Lao động hàng hải"
+            },
+            {
+              "operation_key": "cap_giay_chung_nhan_tho_han",
+              "operation_group": "dang_kiem_khac",
+              "procedure_code": "1.000300",
+              "procedure_title": "Cấp Giấy chứng nhận thợ hàn"
+            },
+            {
+              "operation_key": "cap_lai_giay_chung_nhan_du_dieu_kien_hoat_dong_kiem_dinh_xe_co_gioi",
+              "operation_group": "dieu_kien_hoat_dong_dang_kiem",
+              "procedure_code": "1.001296",
+              "procedure_title": "Cấp lại Giấy chứng nhận đủ điều kiện hoạt động kiểm định xe cơ giới"
+            },
+            {
+              "operation_key": "cap_moi_chung_chi_dang_kiem_vien_phuong_tien_giao_thong_duong_bo",
+              "operation_group": "dang_kiem_vien",
+              "procedure_code": "1.001319",
+              "procedure_title": "Cấp mới Chứng chỉ đăng kiểm viên phương tiện giao thông đường bộ"
+            },
+            {
+              "operation_key": "cap_moi_giay_chung_nhan_du_dieu_kien_hoat_dong_kiem_dinh_xe_co_gioi",
+              "operation_group": "dieu_kien_hoat_dong_dang_kiem",
+              "procedure_code": "1.001322",
+              "procedure_title": "Cấp mới Giấy chứng nhận đủ điều kiện hoạt động kiểm định xe cơ giới"
+            },
+            {
+              "operation_key": "cap_giay_chung_nhan_lao_dong_hang_hai_tam_thoi",
+              "operation_group": "dang_kiem_hang_hai",
+              "procedure_code": "1.004268",
+              "procedure_title": "Cấp Giấy chứng nhận Lao động hàng hải tạm thời"
+            },
+            {
+              "operation_key": "phe_duyet_ke_hoach_an_ninh_tau_bien_theo_bo_luat_quoc_te_ve_an_ninh_tau_bien_va_cang_bien_bo_luat_isps",
+              "operation_group": "dang_kiem_hang_hai",
+              "procedure_code": "1.004281",
+              "procedure_title": "Phê duyệt kế hoạch an ninh tàu biển theo Bộ luật Quốc tế về an ninh tàu biển và cảng biển (Bộ Luật ISPS)"
+            },
+            {
+              "operation_key": "cap_giay_chung_nhan_quoc_te_ve_an_ninh_tau_bien_theo_bo_luat_quoc_te_ve_an_ninh_tau_bien_va_cang_bien_bo_luat_isps",
+              "operation_group": "dang_kiem_hang_hai",
+              "procedure_code": "1.004296",
+              "procedure_title": "Cấp Giấy chứng nhận quốc tế về an ninh tàu biển theo Bộ luật Quốc tế về an ninh tàu biển và cảng biển(Bộ luật ISPS)"
+            },
+            {
+              "operation_key": "cong_nhan_dang_kiem_vien_phuong_tien_thuy_noi_dia",
+              "operation_group": "dang_kiem_vien",
+              "procedure_code": "1.004424",
+              "procedure_title": "Công nhận đăng kiểm viên phương tiện thủy nội địa"
+            },
+            {
+              "operation_key": "cap_giay_chung_nhan_tem_kiem_dinh_chat_luong_an_toan_ky_thuat_va_bao_ve_moi_truong_phuong_tien_giao_thong_duong_sat",
+              "operation_group": "kiem_dinh_phuong_tien",
+              "procedure_code": "1.004990",
+              "procedure_title": "Cấp Giấy chứng nhận, tem kiểm định chất lượng, an toàn kỹ thuật và bảo vệ môi trường phương tiện giao thông đường sắt"
+            },
+            {
+              "operation_key": "cap_giay_chung_nhan_kiem_dinh_tem_kiem_dinh_an_toan_ky_thuat_va_bao_ve_moi_truong_cho_xe_co_gioi_tru_xe_mo_to_xe_gan_may",
+              "operation_group": "kiem_dinh_phuong_tien",
+              "procedure_code": "1.005103",
+              "procedure_title": "Cấp Giấy chứng nhận kiểm định, Tem kiểm định an toàn kỹ thuật và bảo vệ môi trường cho xe cơ giới (trừ xe mô tô, xe gắn máy)"
+            },
+            {
+              "operation_key": "cap_giay_chung_nhan_chat_luong_an_toan_ky_thuat_va_bao_ve_moi_truong_xe_co_gioi_nhap_khau_theo_nghi_dinh_so_60_2023_nd_cp",
+              "operation_group": "chung_nhan_chat_luong",
+              "procedure_code": "1.011871",
+              "procedure_title": "Cấp Giấy chứng nhận chất lượng an toàn kỹ thuật và bảo vệ môi trường xe cơ giới nhập khẩu (theo Nghị định số 60/2023/NĐ-CP)"
+            },
+            {
+              "operation_key": "cap_thong_bao_mien_kiem_tra_chat_luong_an_toan_ky_thuat_va_bao_ve_moi_truong_linh_kien_nhap_khau_theo_nghi_dinh_so_60_2023_nd_cp",
+              "operation_group": "dang_kiem_khac",
+              "procedure_code": "1.011872",
+              "procedure_title": "Cấp Thông báo miễn kiểm tra chất lượng an toàn kỹ thuật và bảo vệ môi trường linh kiện nhập khẩu (theo Nghị định số 60/2023/NĐ-CP)"
+            },
+            {
+              "operation_key": "cap_lai_giay_chung_nhan_chat_luong_an_toan_ky_thuat_va_bao_ve_moi_truong_xe_co_gioi_nhap_khau_theo_nghi_dinh_so_60_2023_nd_cp",
+              "operation_group": "chung_nhan_chat_luong",
+              "procedure_code": "1.011873",
+              "procedure_title": "Cấp lại Giấy chứng nhận chất lượng an toàn kỹ thuật và bảo vệ môi trường xe cơ giới nhập khẩu (theo Nghị định số 60/2023/NĐ-CP)"
+            },
+            {
+              "operation_key": "cap_lai_thong_bao_mien_kiem_tra_chat_luong_an_toan_ky_thuat_va_bao_ve_moi_truong_linh_kien_nhap_khau_theo_nghi_dinh_so_60_2023_nd_cp",
+              "operation_group": "dang_kiem_khac",
+              "procedure_code": "1.011874",
+              "procedure_title": "Cấp lại Thông báo miễn kiểm tra chất lượng an toàn kỹ thuật và bảo vệ môi trường linh kiện nhập khẩu (theo Nghị định số 60/2023/NĐ-CP)"
+            },
+            {
+              "operation_key": "cap_lai_chung_chi_dang_kiem_vien_phuong_tien_giao_thong_duong_bo",
+              "operation_group": "dang_kiem_vien",
+              "procedure_code": "1.013071",
+              "procedure_title": "Cấp lại Chứng chỉ đăng kiểm viên phương tiện giao thông đường bộ"
+            },
+            {
+              "operation_key": "cap_giay_chung_nhan_kiem_dinh_tem_kiem_dinh_an_toan_ky_thuat_va_bao_ve_moi_truong_cho_xe_co_gioi_tru_xe_mo_to_xe_gan_may_xe_may_chuyen_dung_trong_truong_hop_mien_kiem_dinh_lan_dau",
+              "operation_group": "kiem_dinh_phuong_tien",
+              "procedure_code": "1.013089",
+              "procedure_title": "Cấp Giấy chứng nhận kiểm định, Tem kiểm định an toàn kỹ thuật và bảo vệ môi trường cho xe cơ giới (trừ xe mô tô, xe gắn máy), xe máy chuyên dùng trong trường hợp miễn kiểm định lần đầu"
+            },
+            {
+              "operation_key": "cap_lai_giay_chung_nhan_kiem_dinh_tem_kiem_dinh_an_toan_ky_thuat_va_bao_ve_moi_truong_cho_xe_co_gioi_tru_xe_mo_to_xe_gan_may_xe_may_chuyen_dung",
+              "operation_group": "kiem_dinh_phuong_tien",
+              "procedure_code": "1.013092",
+              "procedure_title": "Cấp lại Giấy chứng nhận kiểm định, Tem kiểm định an toàn kỹ thuật và bảo vệ môi trường cho xe cơ giới (trừ xe mô tô, xe gắn máy), xe máy chuyên dùng"
+            },
+            {
+              "operation_key": "cap_lai_giay_chung_nhan_cai_tao",
+              "operation_group": "dang_kiem_khac",
+              "procedure_code": "1.013097",
+              "procedure_title": "Cấp lại giấy chứng nhận cải tạo"
+            },
+            {
+              "operation_key": "chung_nhan_kiem_dinh_khi_thai_xe_mo_to_xe_gan_may",
+              "operation_group": "kiem_dinh_khi_thai",
+              "procedure_code": "1.013101",
+              "procedure_title": "Chứng nhận kiểm định khí thải xe mô tô, xe gắn máy"
+            },
+            {
+              "operation_key": "cap_moi_giay_chung_nhan_du_dieu_kien_hoat_dong_kiem_dinh_khi_thai_xe_mo_to_xe_gan_may",
+              "operation_group": "kiem_dinh_khi_thai",
+              "procedure_code": "1.013105",
+              "procedure_title": "Cấp mới Giấy chứng nhận đủ điều kiện hoạt động kiểm định khí thải xe mô tô, xe gắn máy"
+            },
+            {
+              "operation_key": "cap_lai_giay_chung_nhan_du_dieu_kien_hoat_dong_kiem_dinh_khi_thai_xe_mo_to_xe_gan_may",
+              "operation_group": "kiem_dinh_khi_thai",
+              "procedure_code": "1.013110",
+              "procedure_title": "Cấp lại Giấy chứng nhận đủ điều kiện hoạt động kiểm định khí thải xe mô tô, xe gắn máy"
+            },
+            {
+              "operation_key": "cap_giay_chung_nhan_kiem_dinh_tem_kiem_dinh_an_toan_ky_thuat_va_bao_ve_moi_truong_cho_xe_may_chuyen_dung",
+              "operation_group": "kiem_dinh_phuong_tien",
+              "procedure_code": "1.013205",
+              "procedure_title": "Cấp Giấy chứng nhận kiểm định, Tem kiểm định an toàn kỹ thuật và bảo vệ môi trường cho xe máy chuyên dùng"
+            },
+            {
+              "operation_key": "chung_nhan_an_toan_ky_thuat_va_bao_ve_moi_truong_doi_voi_xe_co_gioi_cai_tao_xe_may_chuyen_dung_cai_tao",
+              "operation_group": "dang_kiem_khac",
+              "procedure_code": "1.013206",
+              "procedure_title": "Chứng nhận an toàn kỹ thuật và bảo vệ môi trường đối với xe cơ giới cải tạo, xe máy chuyên dùng cải tạo"
+            },
+            {
+              "operation_key": "chung_nhan_chat_luong_an_toan_ky_thuat_va_bao_ve_moi_truong_xe_co_gioi_xe_may_chuyen_dung",
+              "operation_group": "chung_nhan_chat_luong",
+              "procedure_code": "1.013327",
+              "procedure_title": "Chứng nhận chất lượng an toàn kỹ thuật và bảo vệ môi trường xe cơ giới, xe máy chuyên dùng"
+            },
+            {
+              "operation_key": "chung_nhan_chat_luong_an_toan_ky_thuat_va_bao_ve_moi_truong_phu_tung_xe_co_gioi",
+              "operation_group": "chung_nhan_chat_luong",
+              "procedure_code": "1.013328",
+              "procedure_title": "Chứng nhận chất lượng an toàn kỹ thuật và bảo vệ môi trường phụ tùng xe cơ giới"
+            },
+            {
+              "operation_key": "cap_doi_chung_chi_chat_luong_xe_co_gioi_xe_may_chuyen_dung_phu_tung_xe_co_gioi",
+              "operation_group": "chung_nhan_chat_luong",
+              "procedure_code": "1.013329",
+              "procedure_title": "Cấp đổi Chứng chỉ chất lượng xe cơ giới, xe máy chuyên dùng, phụ tùng xe cơ giới"
+            },
+            {
+              "operation_key": "cap_lai_chung_chi_chat_luong_xe_co_gioi_xe_may_chuyen_dung_phu_tung_xe_co_gioi_trong_truong_hop_bi_mat",
+              "operation_group": "chung_nhan_chat_luong",
+              "procedure_code": "1.013330",
+              "procedure_title": "Cấp lại Chứng chỉ chất lượng xe cơ giới, xe máy chuyên dùng, phụ tùng xe cơ giới trong trường hợp bị mất"
+            },
+            {
+              "operation_key": "cap_lai_chung_chi_chat_luong_phu_tung_xe_co_gioi_trong_truong_hop_chung_chi_chat_luong_het_hieu_luc_hoac_thay_doi_noi_dung_thong_tin_ve_ten_dia_chi_lien_quan_den_nguoi_nhap_khau_tren_chung_chi_chat_luong",
+              "operation_group": "chung_nhan_chat_luong",
+              "procedure_code": "1.013331",
+              "procedure_title": "Cấp lại Chứng chỉ chất lượng phụ tùng xe cơ giới trong trường hợp Chứng chỉ chất lượng hết hiệu lực hoặc thay đổi nội dung thông tin về tên, địa chỉ liên quan đến người nhập khẩu trên chứng chỉ chất lượng"
+            },
+            {
+              "operation_key": "cap_giay_chung_nhan_chat_luong_an_toan_ky_thuat_va_bao_ve_moi_truong_xe_co_gioi_xe_may_chuyen_dung_phu_tung_xe_co_gioi_san_xuat_lap_rap",
+              "operation_group": "chung_nhan_chat_luong",
+              "procedure_code": "1.013332",
+              "procedure_title": "Cấp Giấy chứng nhận chất lượng an toàn kỹ thuật và bảo vệ môi trường xe cơ giới, xe máy chuyên dùng, phụ tùng xe cơ giới sản xuất, lắp ráp"
+            },
+            {
+              "operation_key": "cap_lai_giay_chung_nhan_chat_luong_an_toan_ky_thuat_va_bao_ve_moi_truong_xe_co_gioi_xe_may_chuyen_dung_phu_tung_xe_co_gioi_san_xuat_lap_rap",
+              "operation_group": "chung_nhan_chat_luong",
+              "procedure_code": "1.013333",
+              "procedure_title": "Cấp lại Giấy chứng nhận chất lượng an toàn kỹ thuật và bảo vệ môi trường xe cơ giới, xe máy chuyên dùng, phụ tùng xe cơ giới sản xuất, lắp ráp"
+            },
+            {
+              "operation_key": "cap_mo_rong_giay_chung_nhan_chat_luong_an_toan_ky_thuat_va_bao_ve_moi_truong_xe_co_gioi_xe_may_chuyen_dung_phu_tung_xe_co_gioi_san_xuat_lap_rap",
+              "operation_group": "chung_nhan_chat_luong",
+              "procedure_code": "1.013334",
+              "procedure_title": "Cấp mở rộng Giấy chứng nhận chất lượng an toàn kỹ thuật và bảo vệ môi trường xe cơ giới, xe máy chuyên dùng, phụ tùng xe cơ giới sản xuất, lắp ráp"
+            },
+            {
+              "operation_key": "bo_sung_ho_so_dang_ky_chung_nhan_xe_co_gioi_xe_may_chuyen_dung_phu_tung_xe_co_gioi_san_xuat_lap_rap_da_duoc_cap_giay_chung_nhan_chat_luong_an_toan_ky_thuat_va_bao_ve_moi_truong",
+              "operation_group": "chung_nhan_chat_luong",
+              "procedure_code": "1.013335",
+              "procedure_title": "Bổ sung hồ sơ đăng ký chứng nhận xe cơ giới, xe máy chuyên dùng, phụ tùng xe cơ giới sản xuất, lắp ráp đã được cấp giấy chứng nhận chất lượng an toàn kỹ thuật và bảo vệ môi trường"
+            },
+            {
+              "operation_key": "cap_van_ban_uy_quyen_cho_to_chuc_dang_kiem_nuoc_ngoai_kiem_dinh_phan_cap_va_cap_giay_chung_nhan_an_toan_ky_thuat_ve_an_toan_hang_hai_an_ninh_tau_bien_dieu_kien_bao_dam_lao_dong_hang_hai_va_phong_ngua_o_nhiem_moi_truong_cho_tau_bien_viet_nam",
+              "operation_group": "dang_kiem_hang_hai",
+              "procedure_code": "2.000082",
+              "procedure_title": "Cấp văn bản ủy quyền cho tổ chức đăng kiểm nước ngoài kiểm định, phân cấp và cấp giấy chứng nhận an toàn kỹ thuật về an toàn hàng hải, an ninh tàu biển, điều kiện bảo đảm lao động hàng hải và phòng ngừa ô nhiễm môi trường cho tàu biển Việt Nam"
+            },
+            {
+              "operation_key": "de_nghi_ket_noi_chia_se_su_dung_du_lieu_dang_kiem_phuong_tien",
+              "operation_group": "du_lieu_dang_kiem",
+              "procedure_code": "5.003808",
+              "procedure_title": "Đề nghị kết nối, chia sẻ, sử dụng dữ liệu đăng kiểm phương tiện"
+            },
+            {
+              "operation_key": "cong_nhan_cong_nhan_lai_dang_kiem_vien_duong_sat_dang_kiem_vien_duong_sat_bac_cao_duong_sat_bac_cao",
+              "operation_group": "dang_kiem_vien",
+              "procedure_code": "6.005678",
+              "procedure_title": "Công nhận/công nhận lại đăng kiểm viên đường sắt/đăng kiểm viên đường sắt bậc cao: đường sắt bậc cao"
+            },
+            {
+              "operation_key": "cong_nhan_dang_kiem_vien_duong_sat_va_dang_kiem_vien_duong_sat_bac_cao",
+              "operation_group": "dang_kiem_vien",
+              "procedure_code": "6.006590",
+              "procedure_title": "Công nhận đăng kiểm viên đường sắt và đăng kiểm viên đường sắt bậc cao"
+            }
+          ]
+        },
+        "options": [
+          "danh_gia_chung_nhan_nang_luc_co_so_thu_nghiem_cung_cap_dich_vu_kiem_tra_thu_trang_thiet_bi_an_toan_va_co_so_che_tao_lien_quan_den_chat_luong_an_toan_ky_thuat_va_phong_ngua_o_nhiem_moi_truong_tau_bien",
+          "cap_lai_giay_chung_nhan_tem_kiem_dinh_chat_luong_an_toan_ky_thuat_va_bao_ve_moi_truong_phuong_tien_giao_thong_duong_sat",
+          "phe_duyet_ban_cong_bo_phu_hop_lao_dong_hang_hai_phan_ii_va_cap_giay_chung_nhan_lao_dong_hang_hai",
+          "cap_giay_chung_nhan_tho_han",
+          "cap_lai_giay_chung_nhan_du_dieu_kien_hoat_dong_kiem_dinh_xe_co_gioi",
+          "cap_moi_chung_chi_dang_kiem_vien_phuong_tien_giao_thong_duong_bo",
+          "cap_moi_giay_chung_nhan_du_dieu_kien_hoat_dong_kiem_dinh_xe_co_gioi",
+          "cap_giay_chung_nhan_lao_dong_hang_hai_tam_thoi",
+          "phe_duyet_ke_hoach_an_ninh_tau_bien_theo_bo_luat_quoc_te_ve_an_ninh_tau_bien_va_cang_bien_bo_luat_isps",
+          "cap_giay_chung_nhan_quoc_te_ve_an_ninh_tau_bien_theo_bo_luat_quoc_te_ve_an_ninh_tau_bien_va_cang_bien_bo_luat_isps",
+          "cong_nhan_dang_kiem_vien_phuong_tien_thuy_noi_dia",
+          "cap_giay_chung_nhan_tem_kiem_dinh_chat_luong_an_toan_ky_thuat_va_bao_ve_moi_truong_phuong_tien_giao_thong_duong_sat",
+          "cap_giay_chung_nhan_kiem_dinh_tem_kiem_dinh_an_toan_ky_thuat_va_bao_ve_moi_truong_cho_xe_co_gioi_tru_xe_mo_to_xe_gan_may",
+          "cap_giay_chung_nhan_chat_luong_an_toan_ky_thuat_va_bao_ve_moi_truong_xe_co_gioi_nhap_khau_theo_nghi_dinh_so_60_2023_nd_cp",
+          "cap_thong_bao_mien_kiem_tra_chat_luong_an_toan_ky_thuat_va_bao_ve_moi_truong_linh_kien_nhap_khau_theo_nghi_dinh_so_60_2023_nd_cp",
+          "cap_lai_giay_chung_nhan_chat_luong_an_toan_ky_thuat_va_bao_ve_moi_truong_xe_co_gioi_nhap_khau_theo_nghi_dinh_so_60_2023_nd_cp",
+          "cap_lai_thong_bao_mien_kiem_tra_chat_luong_an_toan_ky_thuat_va_bao_ve_moi_truong_linh_kien_nhap_khau_theo_nghi_dinh_so_60_2023_nd_cp",
+          "cap_lai_chung_chi_dang_kiem_vien_phuong_tien_giao_thong_duong_bo",
+          "cap_giay_chung_nhan_kiem_dinh_tem_kiem_dinh_an_toan_ky_thuat_va_bao_ve_moi_truong_cho_xe_co_gioi_tru_xe_mo_to_xe_gan_may_xe_may_chuyen_dung_trong_truong_hop_mien_kiem_dinh_lan_dau",
+          "cap_lai_giay_chung_nhan_kiem_dinh_tem_kiem_dinh_an_toan_ky_thuat_va_bao_ve_moi_truong_cho_xe_co_gioi_tru_xe_mo_to_xe_gan_may_xe_may_chuyen_dung",
+          "cap_lai_giay_chung_nhan_cai_tao",
+          "chung_nhan_kiem_dinh_khi_thai_xe_mo_to_xe_gan_may",
+          "cap_moi_giay_chung_nhan_du_dieu_kien_hoat_dong_kiem_dinh_khi_thai_xe_mo_to_xe_gan_may",
+          "cap_lai_giay_chung_nhan_du_dieu_kien_hoat_dong_kiem_dinh_khi_thai_xe_mo_to_xe_gan_may",
+          "cap_giay_chung_nhan_kiem_dinh_tem_kiem_dinh_an_toan_ky_thuat_va_bao_ve_moi_truong_cho_xe_may_chuyen_dung",
+          "chung_nhan_an_toan_ky_thuat_va_bao_ve_moi_truong_doi_voi_xe_co_gioi_cai_tao_xe_may_chuyen_dung_cai_tao",
+          "chung_nhan_chat_luong_an_toan_ky_thuat_va_bao_ve_moi_truong_xe_co_gioi_xe_may_chuyen_dung",
+          "chung_nhan_chat_luong_an_toan_ky_thuat_va_bao_ve_moi_truong_phu_tung_xe_co_gioi",
+          "cap_doi_chung_chi_chat_luong_xe_co_gioi_xe_may_chuyen_dung_phu_tung_xe_co_gioi",
+          "cap_lai_chung_chi_chat_luong_xe_co_gioi_xe_may_chuyen_dung_phu_tung_xe_co_gioi_trong_truong_hop_bi_mat",
+          "cap_lai_chung_chi_chat_luong_phu_tung_xe_co_gioi_trong_truong_hop_chung_chi_chat_luong_het_hieu_luc_hoac_thay_doi_noi_dung_thong_tin_ve_ten_dia_chi_lien_quan_den_nguoi_nhap_khau_tren_chung_chi_chat_luong",
+          "cap_giay_chung_nhan_chat_luong_an_toan_ky_thuat_va_bao_ve_moi_truong_xe_co_gioi_xe_may_chuyen_dung_phu_tung_xe_co_gioi_san_xuat_lap_rap",
+          "cap_lai_giay_chung_nhan_chat_luong_an_toan_ky_thuat_va_bao_ve_moi_truong_xe_co_gioi_xe_may_chuyen_dung_phu_tung_xe_co_gioi_san_xuat_lap_rap",
+          "cap_mo_rong_giay_chung_nhan_chat_luong_an_toan_ky_thuat_va_bao_ve_moi_truong_xe_co_gioi_xe_may_chuyen_dung_phu_tung_xe_co_gioi_san_xuat_lap_rap",
+          "bo_sung_ho_so_dang_ky_chung_nhan_xe_co_gioi_xe_may_chuyen_dung_phu_tung_xe_co_gioi_san_xuat_lap_rap_da_duoc_cap_giay_chung_nhan_chat_luong_an_toan_ky_thuat_va_bao_ve_moi_truong",
+          "cap_van_ban_uy_quyen_cho_to_chuc_dang_kiem_nuoc_ngoai_kiem_dinh_phan_cap_va_cap_giay_chung_nhan_an_toan_ky_thuat_ve_an_toan_hang_hai_an_ninh_tau_bien_dieu_kien_bao_dam_lao_dong_hang_hai_va_phong_ngua_o_nhiem_moi_truong_cho_tau_bien_viet_nam",
+          "de_nghi_ket_noi_chia_se_su_dung_du_lieu_dang_kiem_phuong_tien",
+          "cong_nhan_cong_nhan_lai_dang_kiem_vien_duong_sat_dang_kiem_vien_duong_sat_bac_cao_duong_sat_bac_cao",
+          "cong_nhan_dang_kiem_vien_duong_sat_va_dang_kiem_vien_duong_sat_bac_cao"
+        ]
+      }
+    ],
+    "routes": [
+      {
+        "route_id": "dang_kiem_phuong_tien-1_000010",
+        "conditions": {
+          "subdomain_key": "dang_kiem_phuong_tien",
+          "operation_key": "danh_gia_chung_nhan_nang_luc_co_so_thu_nghiem_cung_cap_dich_vu_kiem_tra_thu_trang_thiet_bi_an_toan_va_co_so_che_tao_lien_quan_den_chat_luong_an_toan_ky_thuat_va_phong_ngua_o_nhiem_moi_truong_tau_bien"
+        },
+        "procedure_code": "1.000010",
+        "procedure_name": "Đánh giá, chứng nhận năng lực cơ sở thử nghiệm, cung cấp dịch vụ kiểm tra, thử trang thiết bị an toàn và cơ sở chế tạo liên quan đến chất lượng an toàn kỹ thuật và phòng ngừa ô nhiễm môi trường tàu biển",
+        "why_this_route": "Route trực tiếp cho nhu cầu 'Đánh giá, chứng nhận năng lực cơ sở thử nghiệm, cung cấp dịch vụ kiểm tra, thử trang thiết bị an toàn và cơ sở chế tạo liên quan đến chất lượng an toàn kỹ thuật và phòng ngừa ô nhiễm môi trường tàu biển' trong nhánh 'Đăng kiểm phương tiện'."
+      },
+      {
+        "route_id": "dang_kiem_phuong_tien-1_000017",
+        "conditions": {
+          "subdomain_key": "dang_kiem_phuong_tien",
+          "operation_key": "cap_lai_giay_chung_nhan_tem_kiem_dinh_chat_luong_an_toan_ky_thuat_va_bao_ve_moi_truong_phuong_tien_giao_thong_duong_sat"
+        },
+        "procedure_code": "1.000017",
+        "procedure_name": "Cấp lại Giấy chứng nhận, tem kiểm định chất lượng, an toàn kỹ thuật và bảo vệ môi trường phương tiện giao thông đường sắt",
+        "why_this_route": "Route trực tiếp cho nhu cầu 'Cấp lại Giấy chứng nhận, tem kiểm định chất lượng, an toàn kỹ thuật và bảo vệ môi trường phương tiện giao thông đường sắt' trong nhánh 'Đăng kiểm phương tiện'."
+      },
+      {
+        "route_id": "dang_kiem_phuong_tien-1_000256",
+        "conditions": {
+          "subdomain_key": "dang_kiem_phuong_tien",
+          "operation_key": "phe_duyet_ban_cong_bo_phu_hop_lao_dong_hang_hai_phan_ii_va_cap_giay_chung_nhan_lao_dong_hang_hai"
+        },
+        "procedure_code": "1.000256",
+        "procedure_name": "Phê duyệt Bản công bố phù hợp Lao động hàng hải phần II và cấp Giấy chứng nhận Lao động hàng hải",
+        "why_this_route": "Route trực tiếp cho nhu cầu 'Phê duyệt Bản công bố phù hợp Lao động hàng hải phần II và cấp Giấy chứng nhận Lao động hàng hải' trong nhánh 'Đăng kiểm phương tiện'."
+      },
+      {
+        "route_id": "dang_kiem_phuong_tien-1_000300",
+        "conditions": {
+          "subdomain_key": "dang_kiem_phuong_tien",
+          "operation_key": "cap_giay_chung_nhan_tho_han"
+        },
+        "procedure_code": "1.000300",
+        "procedure_name": "Cấp Giấy chứng nhận thợ hàn",
+        "why_this_route": "Route trực tiếp cho nhu cầu 'Cấp Giấy chứng nhận thợ hàn' trong nhánh 'Đăng kiểm phương tiện'."
+      },
+      {
+        "route_id": "dang_kiem_phuong_tien-1_001296",
+        "conditions": {
+          "subdomain_key": "dang_kiem_phuong_tien",
+          "operation_key": "cap_lai_giay_chung_nhan_du_dieu_kien_hoat_dong_kiem_dinh_xe_co_gioi"
+        },
+        "procedure_code": "1.001296",
+        "procedure_name": "Cấp lại Giấy chứng nhận đủ điều kiện hoạt động kiểm định xe cơ giới",
+        "why_this_route": "Route trực tiếp cho nhu cầu 'Cấp lại Giấy chứng nhận đủ điều kiện hoạt động kiểm định xe cơ giới' trong nhánh 'Đăng kiểm phương tiện'."
+      },
+      {
+        "route_id": "dang_kiem_phuong_tien-1_001319",
+        "conditions": {
+          "subdomain_key": "dang_kiem_phuong_tien",
+          "operation_key": "cap_moi_chung_chi_dang_kiem_vien_phuong_tien_giao_thong_duong_bo"
+        },
+        "procedure_code": "1.001319",
+        "procedure_name": "Cấp mới Chứng chỉ đăng kiểm viên phương tiện giao thông đường bộ",
+        "why_this_route": "Route trực tiếp cho nhu cầu 'Cấp mới Chứng chỉ đăng kiểm viên phương tiện giao thông đường bộ' trong nhánh 'Đăng kiểm phương tiện'."
+      },
+      {
+        "route_id": "dang_kiem_phuong_tien-1_001322",
+        "conditions": {
+          "subdomain_key": "dang_kiem_phuong_tien",
+          "operation_key": "cap_moi_giay_chung_nhan_du_dieu_kien_hoat_dong_kiem_dinh_xe_co_gioi"
+        },
+        "procedure_code": "1.001322",
+        "procedure_name": "Cấp mới Giấy chứng nhận đủ điều kiện hoạt động kiểm định xe cơ giới",
+        "why_this_route": "Route trực tiếp cho nhu cầu 'Cấp mới Giấy chứng nhận đủ điều kiện hoạt động kiểm định xe cơ giới' trong nhánh 'Đăng kiểm phương tiện'."
+      },
+      {
+        "route_id": "dang_kiem_phuong_tien-1_004268",
+        "conditions": {
+          "subdomain_key": "dang_kiem_phuong_tien",
+          "operation_key": "cap_giay_chung_nhan_lao_dong_hang_hai_tam_thoi"
+        },
+        "procedure_code": "1.004268",
+        "procedure_name": "Cấp Giấy chứng nhận Lao động hàng hải tạm thời",
+        "why_this_route": "Route trực tiếp cho nhu cầu 'Cấp Giấy chứng nhận Lao động hàng hải tạm thời' trong nhánh 'Đăng kiểm phương tiện'."
+      },
+      {
+        "route_id": "dang_kiem_phuong_tien-1_004281",
+        "conditions": {
+          "subdomain_key": "dang_kiem_phuong_tien",
+          "operation_key": "phe_duyet_ke_hoach_an_ninh_tau_bien_theo_bo_luat_quoc_te_ve_an_ninh_tau_bien_va_cang_bien_bo_luat_isps"
+        },
+        "procedure_code": "1.004281",
+        "procedure_name": "Phê duyệt kế hoạch an ninh tàu biển theo Bộ luật Quốc tế về an ninh tàu biển và cảng biển (Bộ Luật ISPS)",
+        "why_this_route": "Route trực tiếp cho nhu cầu 'Phê duyệt kế hoạch an ninh tàu biển theo Bộ luật Quốc tế về an ninh tàu biển và cảng biển (Bộ Luật ISPS)' trong nhánh 'Đăng kiểm phương tiện'."
+      },
+      {
+        "route_id": "dang_kiem_phuong_tien-1_004296",
+        "conditions": {
+          "subdomain_key": "dang_kiem_phuong_tien",
+          "operation_key": "cap_giay_chung_nhan_quoc_te_ve_an_ninh_tau_bien_theo_bo_luat_quoc_te_ve_an_ninh_tau_bien_va_cang_bien_bo_luat_isps"
+        },
+        "procedure_code": "1.004296",
+        "procedure_name": "Cấp Giấy chứng nhận quốc tế về an ninh tàu biển theo Bộ luật Quốc tế về an ninh tàu biển và cảng biển(Bộ luật ISPS)",
+        "why_this_route": "Route trực tiếp cho nhu cầu 'Cấp Giấy chứng nhận quốc tế về an ninh tàu biển theo Bộ luật Quốc tế về an ninh tàu biển và cảng biển(Bộ luật ISPS)' trong nhánh 'Đăng kiểm phương tiện'."
+      },
+      {
+        "route_id": "dang_kiem_phuong_tien-1_004424",
+        "conditions": {
+          "subdomain_key": "dang_kiem_phuong_tien",
+          "operation_key": "cong_nhan_dang_kiem_vien_phuong_tien_thuy_noi_dia"
+        },
+        "procedure_code": "1.004424",
+        "procedure_name": "Công nhận đăng kiểm viên phương tiện thủy nội địa",
+        "why_this_route": "Route trực tiếp cho nhu cầu 'Công nhận đăng kiểm viên phương tiện thủy nội địa' trong nhánh 'Đăng kiểm phương tiện'."
+      },
+      {
+        "route_id": "dang_kiem_phuong_tien-1_004990",
+        "conditions": {
+          "subdomain_key": "dang_kiem_phuong_tien",
+          "operation_key": "cap_giay_chung_nhan_tem_kiem_dinh_chat_luong_an_toan_ky_thuat_va_bao_ve_moi_truong_phuong_tien_giao_thong_duong_sat"
+        },
+        "procedure_code": "1.004990",
+        "procedure_name": "Cấp Giấy chứng nhận, tem kiểm định chất lượng, an toàn kỹ thuật và bảo vệ môi trường phương tiện giao thông đường sắt",
+        "why_this_route": "Route trực tiếp cho nhu cầu 'Cấp Giấy chứng nhận, tem kiểm định chất lượng, an toàn kỹ thuật và bảo vệ môi trường phương tiện giao thông đường sắt' trong nhánh 'Đăng kiểm phương tiện'."
+      },
+      {
+        "route_id": "dang_kiem_phuong_tien-1_005103",
+        "conditions": {
+          "subdomain_key": "dang_kiem_phuong_tien",
+          "operation_key": "cap_giay_chung_nhan_kiem_dinh_tem_kiem_dinh_an_toan_ky_thuat_va_bao_ve_moi_truong_cho_xe_co_gioi_tru_xe_mo_to_xe_gan_may"
+        },
+        "procedure_code": "1.005103",
+        "procedure_name": "Cấp Giấy chứng nhận kiểm định, Tem kiểm định an toàn kỹ thuật và bảo vệ môi trường cho xe cơ giới (trừ xe mô tô, xe gắn máy)",
+        "why_this_route": "Route trực tiếp cho nhu cầu 'Cấp Giấy chứng nhận kiểm định, Tem kiểm định an toàn kỹ thuật và bảo vệ môi trường cho xe cơ giới (trừ xe mô tô, xe gắn máy)' trong nhánh 'Đăng kiểm phương tiện'."
+      },
+      {
+        "route_id": "dang_kiem_phuong_tien-1_011871",
+        "conditions": {
+          "subdomain_key": "dang_kiem_phuong_tien",
+          "operation_key": "cap_giay_chung_nhan_chat_luong_an_toan_ky_thuat_va_bao_ve_moi_truong_xe_co_gioi_nhap_khau_theo_nghi_dinh_so_60_2023_nd_cp"
+        },
+        "procedure_code": "1.011871",
+        "procedure_name": "Cấp Giấy chứng nhận chất lượng an toàn kỹ thuật và bảo vệ môi trường xe cơ giới nhập khẩu (theo Nghị định số 60/2023/NĐ-CP)",
+        "why_this_route": "Route trực tiếp cho nhu cầu 'Cấp Giấy chứng nhận chất lượng an toàn kỹ thuật và bảo vệ môi trường xe cơ giới nhập khẩu (theo Nghị định số 60/2023/NĐ-CP)' trong nhánh 'Đăng kiểm phương tiện'."
+      },
+      {
+        "route_id": "dang_kiem_phuong_tien-1_011872",
+        "conditions": {
+          "subdomain_key": "dang_kiem_phuong_tien",
+          "operation_key": "cap_thong_bao_mien_kiem_tra_chat_luong_an_toan_ky_thuat_va_bao_ve_moi_truong_linh_kien_nhap_khau_theo_nghi_dinh_so_60_2023_nd_cp"
+        },
+        "procedure_code": "1.011872",
+        "procedure_name": "Cấp Thông báo miễn kiểm tra chất lượng an toàn kỹ thuật và bảo vệ môi trường linh kiện nhập khẩu (theo Nghị định số 60/2023/NĐ-CP)",
+        "why_this_route": "Route trực tiếp cho nhu cầu 'Cấp Thông báo miễn kiểm tra chất lượng an toàn kỹ thuật và bảo vệ môi trường linh kiện nhập khẩu (theo Nghị định số 60/2023/NĐ-CP)' trong nhánh 'Đăng kiểm phương tiện'."
+      },
+      {
+        "route_id": "dang_kiem_phuong_tien-1_011873",
+        "conditions": {
+          "subdomain_key": "dang_kiem_phuong_tien",
+          "operation_key": "cap_lai_giay_chung_nhan_chat_luong_an_toan_ky_thuat_va_bao_ve_moi_truong_xe_co_gioi_nhap_khau_theo_nghi_dinh_so_60_2023_nd_cp"
+        },
+        "procedure_code": "1.011873",
+        "procedure_name": "Cấp lại Giấy chứng nhận chất lượng an toàn kỹ thuật và bảo vệ môi trường xe cơ giới nhập khẩu (theo Nghị định số 60/2023/NĐ-CP)",
+        "why_this_route": "Route trực tiếp cho nhu cầu 'Cấp lại Giấy chứng nhận chất lượng an toàn kỹ thuật và bảo vệ môi trường xe cơ giới nhập khẩu (theo Nghị định số 60/2023/NĐ-CP)' trong nhánh 'Đăng kiểm phương tiện'."
+      },
+      {
+        "route_id": "dang_kiem_phuong_tien-1_011874",
+        "conditions": {
+          "subdomain_key": "dang_kiem_phuong_tien",
+          "operation_key": "cap_lai_thong_bao_mien_kiem_tra_chat_luong_an_toan_ky_thuat_va_bao_ve_moi_truong_linh_kien_nhap_khau_theo_nghi_dinh_so_60_2023_nd_cp"
+        },
+        "procedure_code": "1.011874",
+        "procedure_name": "Cấp lại Thông báo miễn kiểm tra chất lượng an toàn kỹ thuật và bảo vệ môi trường linh kiện nhập khẩu (theo Nghị định số 60/2023/NĐ-CP)",
+        "why_this_route": "Route trực tiếp cho nhu cầu 'Cấp lại Thông báo miễn kiểm tra chất lượng an toàn kỹ thuật và bảo vệ môi trường linh kiện nhập khẩu (theo Nghị định số 60/2023/NĐ-CP)' trong nhánh 'Đăng kiểm phương tiện'."
+      },
+      {
+        "route_id": "dang_kiem_phuong_tien-1_013071",
+        "conditions": {
+          "subdomain_key": "dang_kiem_phuong_tien",
+          "operation_key": "cap_lai_chung_chi_dang_kiem_vien_phuong_tien_giao_thong_duong_bo"
+        },
+        "procedure_code": "1.013071",
+        "procedure_name": "Cấp lại Chứng chỉ đăng kiểm viên phương tiện giao thông đường bộ",
+        "why_this_route": "Route trực tiếp cho nhu cầu 'Cấp lại Chứng chỉ đăng kiểm viên phương tiện giao thông đường bộ' trong nhánh 'Đăng kiểm phương tiện'."
+      },
+      {
+        "route_id": "dang_kiem_phuong_tien-1_013089",
+        "conditions": {
+          "subdomain_key": "dang_kiem_phuong_tien",
+          "operation_key": "cap_giay_chung_nhan_kiem_dinh_tem_kiem_dinh_an_toan_ky_thuat_va_bao_ve_moi_truong_cho_xe_co_gioi_tru_xe_mo_to_xe_gan_may_xe_may_chuyen_dung_trong_truong_hop_mien_kiem_dinh_lan_dau"
+        },
+        "procedure_code": "1.013089",
+        "procedure_name": "Cấp Giấy chứng nhận kiểm định, Tem kiểm định an toàn kỹ thuật và bảo vệ môi trường cho xe cơ giới (trừ xe mô tô, xe gắn máy), xe máy chuyên dùng trong trường hợp miễn kiểm định lần đầu",
+        "why_this_route": "Route trực tiếp cho nhu cầu 'Cấp Giấy chứng nhận kiểm định, Tem kiểm định an toàn kỹ thuật và bảo vệ môi trường cho xe cơ giới (trừ xe mô tô, xe gắn máy), xe máy chuyên dùng trong trường hợp miễn kiểm định lần đầu' trong nhánh 'Đăng kiểm phương tiện'."
+      },
+      {
+        "route_id": "dang_kiem_phuong_tien-1_013092",
+        "conditions": {
+          "subdomain_key": "dang_kiem_phuong_tien",
+          "operation_key": "cap_lai_giay_chung_nhan_kiem_dinh_tem_kiem_dinh_an_toan_ky_thuat_va_bao_ve_moi_truong_cho_xe_co_gioi_tru_xe_mo_to_xe_gan_may_xe_may_chuyen_dung"
+        },
+        "procedure_code": "1.013092",
+        "procedure_name": "Cấp lại Giấy chứng nhận kiểm định, Tem kiểm định an toàn kỹ thuật và bảo vệ môi trường cho xe cơ giới (trừ xe mô tô, xe gắn máy), xe máy chuyên dùng",
+        "why_this_route": "Route trực tiếp cho nhu cầu 'Cấp lại Giấy chứng nhận kiểm định, Tem kiểm định an toàn kỹ thuật và bảo vệ môi trường cho xe cơ giới (trừ xe mô tô, xe gắn máy), xe máy chuyên dùng' trong nhánh 'Đăng kiểm phương tiện'."
+      },
+      {
+        "route_id": "dang_kiem_phuong_tien-1_013097",
+        "conditions": {
+          "subdomain_key": "dang_kiem_phuong_tien",
+          "operation_key": "cap_lai_giay_chung_nhan_cai_tao"
+        },
+        "procedure_code": "1.013097",
+        "procedure_name": "Cấp lại giấy chứng nhận cải tạo",
+        "why_this_route": "Route trực tiếp cho nhu cầu 'Cấp lại giấy chứng nhận cải tạo' trong nhánh 'Đăng kiểm phương tiện'."
+      },
+      {
+        "route_id": "dang_kiem_phuong_tien-1_013101",
+        "conditions": {
+          "subdomain_key": "dang_kiem_phuong_tien",
+          "operation_key": "chung_nhan_kiem_dinh_khi_thai_xe_mo_to_xe_gan_may"
+        },
+        "procedure_code": "1.013101",
+        "procedure_name": "Chứng nhận kiểm định khí thải xe mô tô, xe gắn máy",
+        "why_this_route": "Route trực tiếp cho nhu cầu 'Chứng nhận kiểm định khí thải xe mô tô, xe gắn máy' trong nhánh 'Đăng kiểm phương tiện'."
+      },
+      {
+        "route_id": "dang_kiem_phuong_tien-1_013105",
+        "conditions": {
+          "subdomain_key": "dang_kiem_phuong_tien",
+          "operation_key": "cap_moi_giay_chung_nhan_du_dieu_kien_hoat_dong_kiem_dinh_khi_thai_xe_mo_to_xe_gan_may"
+        },
+        "procedure_code": "1.013105",
+        "procedure_name": "Cấp mới Giấy chứng nhận đủ điều kiện hoạt động kiểm định khí thải xe mô tô, xe gắn máy",
+        "why_this_route": "Route trực tiếp cho nhu cầu 'Cấp mới Giấy chứng nhận đủ điều kiện hoạt động kiểm định khí thải xe mô tô, xe gắn máy' trong nhánh 'Đăng kiểm phương tiện'."
+      },
+      {
+        "route_id": "dang_kiem_phuong_tien-1_013110",
+        "conditions": {
+          "subdomain_key": "dang_kiem_phuong_tien",
+          "operation_key": "cap_lai_giay_chung_nhan_du_dieu_kien_hoat_dong_kiem_dinh_khi_thai_xe_mo_to_xe_gan_may"
+        },
+        "procedure_code": "1.013110",
+        "procedure_name": "Cấp lại Giấy chứng nhận đủ điều kiện hoạt động kiểm định khí thải xe mô tô, xe gắn máy",
+        "why_this_route": "Route trực tiếp cho nhu cầu 'Cấp lại Giấy chứng nhận đủ điều kiện hoạt động kiểm định khí thải xe mô tô, xe gắn máy' trong nhánh 'Đăng kiểm phương tiện'."
+      },
+      {
+        "route_id": "dang_kiem_phuong_tien-1_013205",
+        "conditions": {
+          "subdomain_key": "dang_kiem_phuong_tien",
+          "operation_key": "cap_giay_chung_nhan_kiem_dinh_tem_kiem_dinh_an_toan_ky_thuat_va_bao_ve_moi_truong_cho_xe_may_chuyen_dung"
+        },
+        "procedure_code": "1.013205",
+        "procedure_name": "Cấp Giấy chứng nhận kiểm định, Tem kiểm định an toàn kỹ thuật và bảo vệ môi trường cho xe máy chuyên dùng",
+        "why_this_route": "Route trực tiếp cho nhu cầu 'Cấp Giấy chứng nhận kiểm định, Tem kiểm định an toàn kỹ thuật và bảo vệ môi trường cho xe máy chuyên dùng' trong nhánh 'Đăng kiểm phương tiện'."
+      },
+      {
+        "route_id": "dang_kiem_phuong_tien-1_013206",
+        "conditions": {
+          "subdomain_key": "dang_kiem_phuong_tien",
+          "operation_key": "chung_nhan_an_toan_ky_thuat_va_bao_ve_moi_truong_doi_voi_xe_co_gioi_cai_tao_xe_may_chuyen_dung_cai_tao"
+        },
+        "procedure_code": "1.013206",
+        "procedure_name": "Chứng nhận an toàn kỹ thuật và bảo vệ môi trường đối với xe cơ giới cải tạo, xe máy chuyên dùng cải tạo",
+        "why_this_route": "Route trực tiếp cho nhu cầu 'Chứng nhận an toàn kỹ thuật và bảo vệ môi trường đối với xe cơ giới cải tạo, xe máy chuyên dùng cải tạo' trong nhánh 'Đăng kiểm phương tiện'."
+      },
+      {
+        "route_id": "dang_kiem_phuong_tien-1_013327",
+        "conditions": {
+          "subdomain_key": "dang_kiem_phuong_tien",
+          "operation_key": "chung_nhan_chat_luong_an_toan_ky_thuat_va_bao_ve_moi_truong_xe_co_gioi_xe_may_chuyen_dung"
+        },
+        "procedure_code": "1.013327",
+        "procedure_name": "Chứng nhận chất lượng an toàn kỹ thuật và bảo vệ môi trường xe cơ giới, xe máy chuyên dùng",
+        "why_this_route": "Route trực tiếp cho nhu cầu 'Chứng nhận chất lượng an toàn kỹ thuật và bảo vệ môi trường xe cơ giới, xe máy chuyên dùng' trong nhánh 'Đăng kiểm phương tiện'."
+      },
+      {
+        "route_id": "dang_kiem_phuong_tien-1_013328",
+        "conditions": {
+          "subdomain_key": "dang_kiem_phuong_tien",
+          "operation_key": "chung_nhan_chat_luong_an_toan_ky_thuat_va_bao_ve_moi_truong_phu_tung_xe_co_gioi"
+        },
+        "procedure_code": "1.013328",
+        "procedure_name": "Chứng nhận chất lượng an toàn kỹ thuật và bảo vệ môi trường phụ tùng xe cơ giới",
+        "why_this_route": "Route trực tiếp cho nhu cầu 'Chứng nhận chất lượng an toàn kỹ thuật và bảo vệ môi trường phụ tùng xe cơ giới' trong nhánh 'Đăng kiểm phương tiện'."
+      },
+      {
+        "route_id": "dang_kiem_phuong_tien-1_013329",
+        "conditions": {
+          "subdomain_key": "dang_kiem_phuong_tien",
+          "operation_key": "cap_doi_chung_chi_chat_luong_xe_co_gioi_xe_may_chuyen_dung_phu_tung_xe_co_gioi"
+        },
+        "procedure_code": "1.013329",
+        "procedure_name": "Cấp đổi Chứng chỉ chất lượng xe cơ giới, xe máy chuyên dùng, phụ tùng xe cơ giới",
+        "why_this_route": "Route trực tiếp cho nhu cầu 'Cấp đổi Chứng chỉ chất lượng xe cơ giới, xe máy chuyên dùng, phụ tùng xe cơ giới' trong nhánh 'Đăng kiểm phương tiện'."
+      },
+      {
+        "route_id": "dang_kiem_phuong_tien-1_013330",
+        "conditions": {
+          "subdomain_key": "dang_kiem_phuong_tien",
+          "operation_key": "cap_lai_chung_chi_chat_luong_xe_co_gioi_xe_may_chuyen_dung_phu_tung_xe_co_gioi_trong_truong_hop_bi_mat"
+        },
+        "procedure_code": "1.013330",
+        "procedure_name": "Cấp lại Chứng chỉ chất lượng xe cơ giới, xe máy chuyên dùng, phụ tùng xe cơ giới trong trường hợp bị mất",
+        "why_this_route": "Route trực tiếp cho nhu cầu 'Cấp lại Chứng chỉ chất lượng xe cơ giới, xe máy chuyên dùng, phụ tùng xe cơ giới trong trường hợp bị mất' trong nhánh 'Đăng kiểm phương tiện'."
+      },
+      {
+        "route_id": "dang_kiem_phuong_tien-1_013331",
+        "conditions": {
+          "subdomain_key": "dang_kiem_phuong_tien",
+          "operation_key": "cap_lai_chung_chi_chat_luong_phu_tung_xe_co_gioi_trong_truong_hop_chung_chi_chat_luong_het_hieu_luc_hoac_thay_doi_noi_dung_thong_tin_ve_ten_dia_chi_lien_quan_den_nguoi_nhap_khau_tren_chung_chi_chat_luong"
+        },
+        "procedure_code": "1.013331",
+        "procedure_name": "Cấp lại Chứng chỉ chất lượng phụ tùng xe cơ giới trong trường hợp Chứng chỉ chất lượng hết hiệu lực hoặc thay đổi nội dung thông tin về tên, địa chỉ liên quan đến người nhập khẩu trên chứng chỉ chất lượng",
+        "why_this_route": "Route trực tiếp cho nhu cầu 'Cấp lại Chứng chỉ chất lượng phụ tùng xe cơ giới trong trường hợp Chứng chỉ chất lượng hết hiệu lực hoặc thay đổi nội dung thông tin về tên, địa chỉ liên quan đến người nhập khẩu trên chứng chỉ chất lượng' trong nhánh 'Đăng kiểm phương tiện'."
+      },
+      {
+        "route_id": "dang_kiem_phuong_tien-1_013332",
+        "conditions": {
+          "subdomain_key": "dang_kiem_phuong_tien",
+          "operation_key": "cap_giay_chung_nhan_chat_luong_an_toan_ky_thuat_va_bao_ve_moi_truong_xe_co_gioi_xe_may_chuyen_dung_phu_tung_xe_co_gioi_san_xuat_lap_rap"
+        },
+        "procedure_code": "1.013332",
+        "procedure_name": "Cấp Giấy chứng nhận chất lượng an toàn kỹ thuật và bảo vệ môi trường xe cơ giới, xe máy chuyên dùng, phụ tùng xe cơ giới sản xuất, lắp ráp",
+        "why_this_route": "Route trực tiếp cho nhu cầu 'Cấp Giấy chứng nhận chất lượng an toàn kỹ thuật và bảo vệ môi trường xe cơ giới, xe máy chuyên dùng, phụ tùng xe cơ giới sản xuất, lắp ráp' trong nhánh 'Đăng kiểm phương tiện'."
+      },
+      {
+        "route_id": "dang_kiem_phuong_tien-1_013333",
+        "conditions": {
+          "subdomain_key": "dang_kiem_phuong_tien",
+          "operation_key": "cap_lai_giay_chung_nhan_chat_luong_an_toan_ky_thuat_va_bao_ve_moi_truong_xe_co_gioi_xe_may_chuyen_dung_phu_tung_xe_co_gioi_san_xuat_lap_rap"
+        },
+        "procedure_code": "1.013333",
+        "procedure_name": "Cấp lại Giấy chứng nhận chất lượng an toàn kỹ thuật và bảo vệ môi trường xe cơ giới, xe máy chuyên dùng, phụ tùng xe cơ giới sản xuất, lắp ráp",
+        "why_this_route": "Route trực tiếp cho nhu cầu 'Cấp lại Giấy chứng nhận chất lượng an toàn kỹ thuật và bảo vệ môi trường xe cơ giới, xe máy chuyên dùng, phụ tùng xe cơ giới sản xuất, lắp ráp' trong nhánh 'Đăng kiểm phương tiện'."
+      },
+      {
+        "route_id": "dang_kiem_phuong_tien-1_013334",
+        "conditions": {
+          "subdomain_key": "dang_kiem_phuong_tien",
+          "operation_key": "cap_mo_rong_giay_chung_nhan_chat_luong_an_toan_ky_thuat_va_bao_ve_moi_truong_xe_co_gioi_xe_may_chuyen_dung_phu_tung_xe_co_gioi_san_xuat_lap_rap"
+        },
+        "procedure_code": "1.013334",
+        "procedure_name": "Cấp mở rộng Giấy chứng nhận chất lượng an toàn kỹ thuật và bảo vệ môi trường xe cơ giới, xe máy chuyên dùng, phụ tùng xe cơ giới sản xuất, lắp ráp",
+        "why_this_route": "Route trực tiếp cho nhu cầu 'Cấp mở rộng Giấy chứng nhận chất lượng an toàn kỹ thuật và bảo vệ môi trường xe cơ giới, xe máy chuyên dùng, phụ tùng xe cơ giới sản xuất, lắp ráp' trong nhánh 'Đăng kiểm phương tiện'."
+      },
+      {
+        "route_id": "dang_kiem_phuong_tien-1_013335",
+        "conditions": {
+          "subdomain_key": "dang_kiem_phuong_tien",
+          "operation_key": "bo_sung_ho_so_dang_ky_chung_nhan_xe_co_gioi_xe_may_chuyen_dung_phu_tung_xe_co_gioi_san_xuat_lap_rap_da_duoc_cap_giay_chung_nhan_chat_luong_an_toan_ky_thuat_va_bao_ve_moi_truong"
+        },
+        "procedure_code": "1.013335",
+        "procedure_name": "Bổ sung hồ sơ đăng ký chứng nhận xe cơ giới, xe máy chuyên dùng, phụ tùng xe cơ giới sản xuất, lắp ráp đã được cấp giấy chứng nhận chất lượng an toàn kỹ thuật và bảo vệ môi trường",
+        "why_this_route": "Route trực tiếp cho nhu cầu 'Bổ sung hồ sơ đăng ký chứng nhận xe cơ giới, xe máy chuyên dùng, phụ tùng xe cơ giới sản xuất, lắp ráp đã được cấp giấy chứng nhận chất lượng an toàn kỹ thuật và bảo vệ môi trường' trong nhánh 'Đăng kiểm phương tiện'."
+      },
+      {
+        "route_id": "dang_kiem_phuong_tien-2_000082",
+        "conditions": {
+          "subdomain_key": "dang_kiem_phuong_tien",
+          "operation_key": "cap_van_ban_uy_quyen_cho_to_chuc_dang_kiem_nuoc_ngoai_kiem_dinh_phan_cap_va_cap_giay_chung_nhan_an_toan_ky_thuat_ve_an_toan_hang_hai_an_ninh_tau_bien_dieu_kien_bao_dam_lao_dong_hang_hai_va_phong_ngua_o_nhiem_moi_truong_cho_tau_bien_viet_nam"
+        },
+        "procedure_code": "2.000082",
+        "procedure_name": "Cấp văn bản ủy quyền cho tổ chức đăng kiểm nước ngoài kiểm định, phân cấp và cấp giấy chứng nhận an toàn kỹ thuật về an toàn hàng hải, an ninh tàu biển, điều kiện bảo đảm lao động hàng hải và phòng ngừa ô nhiễm môi trường cho tàu biển Việt Nam",
+        "why_this_route": "Route trực tiếp cho nhu cầu 'Cấp văn bản ủy quyền cho tổ chức đăng kiểm nước ngoài kiểm định, phân cấp và cấp giấy chứng nhận an toàn kỹ thuật về an toàn hàng hải, an ninh tàu biển, điều kiện bảo đảm lao động hàng hải và phòng ngừa ô nhiễm môi trường cho tàu biển Việt Nam' trong nhánh 'Đăng kiểm phương tiện'."
+      },
+      {
+        "route_id": "dang_kiem_phuong_tien-5_003808",
+        "conditions": {
+          "subdomain_key": "dang_kiem_phuong_tien",
+          "operation_key": "de_nghi_ket_noi_chia_se_su_dung_du_lieu_dang_kiem_phuong_tien"
+        },
+        "procedure_code": "5.003808",
+        "procedure_name": "Đề nghị kết nối, chia sẻ, sử dụng dữ liệu đăng kiểm phương tiện",
+        "why_this_route": "Route trực tiếp cho nhu cầu 'Đề nghị kết nối, chia sẻ, sử dụng dữ liệu đăng kiểm phương tiện' trong nhánh 'Đăng kiểm phương tiện'."
+      },
+      {
+        "route_id": "dang_kiem_phuong_tien-6_005678",
+        "conditions": {
+          "subdomain_key": "dang_kiem_phuong_tien",
+          "operation_key": "cong_nhan_cong_nhan_lai_dang_kiem_vien_duong_sat_dang_kiem_vien_duong_sat_bac_cao_duong_sat_bac_cao"
+        },
+        "procedure_code": "6.005678",
+        "procedure_name": "Công nhận/công nhận lại đăng kiểm viên đường sắt/đăng kiểm viên đường sắt bậc cao: đường sắt bậc cao",
+        "why_this_route": "Route trực tiếp cho nhu cầu 'Công nhận/công nhận lại đăng kiểm viên đường sắt/đăng kiểm viên đường sắt bậc cao: đường sắt bậc cao' trong nhánh 'Đăng kiểm phương tiện'."
+      },
+      {
+        "route_id": "dang_kiem_phuong_tien-6_006590",
+        "conditions": {
+          "subdomain_key": "dang_kiem_phuong_tien",
+          "operation_key": "cong_nhan_dang_kiem_vien_duong_sat_va_dang_kiem_vien_duong_sat_bac_cao"
+        },
+        "procedure_code": "6.006590",
+        "procedure_name": "Công nhận đăng kiểm viên đường sắt và đăng kiểm viên đường sắt bậc cao",
+        "why_this_route": "Route trực tiếp cho nhu cầu 'Công nhận đăng kiểm viên đường sắt và đăng kiểm viên đường sắt bậc cao' trong nhánh 'Đăng kiểm phương tiện'."
+      }
+    ]
+  },
+  "pre_submission_checks": [
+    {
+      "field_group": "driver_identity",
+      "checks": [
+        "Thông tin CCCD/hộ chiếu phải đúng định dạng và còn hiệu lực.",
+        "Nếu đổi hoặc cấp lại bằng lái thì phải đối chiếu đúng thông tin giấy phép cũ với dữ liệu hiện tại."
+      ]
+    },
+    {
+      "field_group": "vehicle_registration",
+      "checks": [
+        "Hồ sơ đăng ký xe phải có chứng từ nguồn gốc xe và chứng từ quyền sở hữu hợp lệ.",
+        "Các thủ tục sang tên hoặc thu hồi cần làm rõ trạng thái đăng ký cũ và biển số hiện tại."
+      ]
+    },
+    {
+      "field_group": "inspection_readiness",
+      "checks": [
+        "Nhóm đăng kiểm phải xác định đúng loại phương tiện trước khi chọn thủ tục kiểm định/chứng nhận.",
+        "Cần đối chiếu thời hạn, giấy tờ kỹ thuật và việc xe có thuộc diện miễn kiểm định lần đầu hay không."
+      ]
+    }
+  ],
+  "subdomain_key": "dang_kiem_phuong_tien"
+}

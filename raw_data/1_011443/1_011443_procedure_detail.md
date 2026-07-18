@@ -1,0 +1,86 @@
+# Xóa đăng ký biện pháp bảo đảm bằng quyền sử dụng đất, tài sản gắn liền với đất
+
+## Thông tin chung
+
+* **Mã thủ tục:** 1.011443
+* **Số quyết định:** 570/QĐ-BTP
+* **Cấp thực hiện:** Cấp tỉnh
+* **Loại thủ tục:** TTHC được luật giao quy định chi tiết
+* **Lĩnh vực:** Đăng ký biện pháp bảo đảm
+* **Đối tượng thực hiện:** Hợp tác xã, Công dân Việt Nam, Doanh nghiệp, Người nước ngoài, Tổ chức nước ngoài, Cán bộ, công chức, viên chức, Doanh nghiệp Việt Nam, Doanh nghiệp có vốn đầu tư nước ngoài, Tổ chức (không bao gồm doanh nghiệp, HTX), Người Việt Nam định cư ở nước ngoài
+* **Cơ quan có thẩm quyền:** Không có thông tin
+* **Địa chỉ tiếp nhận HS:** Không có thông tin
+* **Cơ quan được ủy quyền:** Không có thông tin
+* **Cơ quan phối hợp:** Không có thông tin
+
+## Thủ tục hành chính liên quan
+
+Không có thông tin
+
+## Trình tự thực hiện
+
+1. - Nộp hồ sơ đến Văn phòng đăng ký đất đai trực thuộc Sở Nông nghiệp và Môi trường, Chi nhánh của Văn phòng đăng ký đất đai (sau đây gọi là Văn phòng đăng ký đất đai). 
+   Trường hợp hồ sơ đăng ký đối với quyền sử dụng đất, tài sản gắn liền với đất được nộp thông qua Bộ phận Tiếp nhận và Trả kết quả giải quyết thủ tục hành chính, Trung tâm Phục vụ hành chính công cấp tỉnh, Ủy ban nhân dân xã, phường, đặc khu, Trung tâm Phục vụ hành chính công cấp xã (gọi chung là Bộ phận Một cửa) thì thời hạn giải quyết hồ sơ được tính từ thời điểm Văn phòng đăng ký đất đai nhận được hồ sơ đăng ký hợp lệ. Hồ sơ đăng ký trực tuyến có giá trị pháp lý như hồ sơ đăng ký bằng bản giấy.
+   - Bản gốc Giấy chứng nhận đối với quyền sử dụng đất, tài sản gắn liền với đất là thành phần hồ sơ đăng ký quy định tại Điều 33 Nghị định số 99/2022/NĐ-CP hoặc được quy định tại Điều 36 Nghị định số 99/2022/NĐ-CP được thay thế bằng việc khai thác, sử dụng thông tin tương ứng từ cơ sở dữ liệu đất đai mà không phải nộp trong hồ sơ đăng ký. Sau khi tiếp nhận hồ sơ đăng ký, Văn phòng đăng ký đất đai có trách nhiệm khai thác, sử dụng thông tin về Giấy chứng nhận trong cơ sở dữ liệu đất đai theo nguyên tắc quy định tại khoản 5a Điều 5 Nghị định số 99/2022/NĐ-CP (được sửa đổi, bổ sung bởi Nghị định số 18/2026/NĐ-CP).
+   Trường hợp không có căn cứ từ chối đăng ký quy định tại khoản 1 Điều 15 Nghị định số 99/2022/NĐ-CP thì Văn phòng đăng ký đất đai cập nhật nội dung đăng ký và thời điểm đăng ký (giờ, phút, ngày, tháng, năm) vào Cơ sở dữ liệu hoặc ghi, cập nhật nội dung đăng ký và thời điểm đăng ký (giờ, phút, ngày, tháng, năm) đối với tài sản gắn liền với đất quy định tại điểm b khoản 2 Điều 25 Nghị định số 99/2022/NĐ-CP vào Sổ đăng ký theo đúng thứ tự tiếp nhận hồ sơ; chứng nhận nội dung đăng ký và thời điểm đăng ký (giờ, phút, ngày, tháng, năm) vào Phiếu yêu cầu đăng ký. 
+   Trường hợp không khai thác được thông tin hoặc thông tin khai thác được không đầy đủ, không chính xác để thay thế cho giấy tờ là thành phần hồ sơ đăng ký thì cơ quan đăng ký yêu cầu người yêu cầu đăng ký nộp giấy tờ tương ứng thuộc thành phần hồ sơ đăng ký theo quy định tại Nghị định số 99/2022/NĐ-CP để giải quyết việc đăng ký.
+   Trường hợp có căn cứ từ chối đăng ký thì cơ quan đăng ký thực hiện việc từ chối.
+   - Cơ quan đăng ký trả kết quả. Trường hợp nộp hồ sơ thông qua Bộ phận Một cửa thì Bộ phận Một cửa trả kết quả cho người yêu cầu đăng ký. 
+   Trường hợp kết quả đăng ký được trả bằng bản điện tử thì kết quả bằng bản điện tử có giá trị pháp lý như kết quả bằng bản giấy.
+   Cơ quan đăng ký có trách nhiệm giải quyết hồ sơ đăng ký trong ngày làm việc nhận được hồ sơ hợp lệ; nếu thời điểm nhận hồ sơ sau 15 giờ cùng ngày thì có thể hoàn thành việc đăng ký trong ngày làm việc tiếp theo. Trường hợp cơ quan đăng ký có lý do chính đáng phải kéo dài thời gian giải quyết hồ sơ đăng ký thì thời hạn giải quyết hồ sơ không quá 03 ngày làm việc kể từ ngày nhận được hồ sơ hợp lệ.
+
+## Cách thức thực hiện
+
+| Hình thức nộp | Thời gian giải quyết | Phí, lệ phí | Mô tả |
+| --- | --- | --- | --- |
+| Trực tuyến | 3 ngày làm việc | Không có thông tin | Phí, lệ phí (nếu có): Hội đồng nhân dân cấp tỉnh quyết định đối với hoạt động đăng ký do cơ quan địa phương thực hiện (STT XII.8 Phần A Phụ lục số 01 ban hành kèm theo Luật phí và lệ phí năm 2015).<br>- Cơ quan đăng ký có trách nhiệm giải quyết hồ sơ đăng ký trong ngày làm việc nhận được hồ sơ hợp lệ; nếu thời điểm nhận hồ sơ sau 15 giờ cùng ngày thì có thể hoàn thành việc đăng ký trong ngày làm việc tiếp theo. Trường hợp cơ quan đăng ký có lý do chính đáng phải kéo dài thời gian giải quyết hồ sơ đăng ký thì thời hạn giải quyết hồ sơ không quá 03 ngày làm việc kể từ ngày nhận được hồ sơ hợp lệ (khoản 1 Điều 16 Nghị định số 99/2022/NĐ-CP).<br>- Trường hợp hồ sơ đăng ký đối với quyền sử dụng đất, tài sản gắn liền với đất được nộp thông qua Bộ phận Tiếp nhận và Trả kết quả giải quyết thủ tục hành chính, Trung tâm Phục vụ hành chính công cấp tỉnh, Ủy ban nhân dân xã, phường, đặc khu, Trung tâm Phục vụ hành chính công cấp xã (gọi chung là Bộ phận một cửa) thì thời hạn giải quyết hồ sơ được tính từ thời điểm Văn phòng đăng ký đất đai nhận được hồ sơ đăng ký hợp lệ.<br>- Thời gian không tính vào thời hạn quy định tại khoản 1 Điều 16 Nghị định số 99/2022/NĐ-CP bao gồm: <br>+ Thời gian xảy ra sự kiện thiên tai, dịch bệnh, hỏa hoạn, sự cố hệ thống đăng ký trực tuyến, hỏng mạng lưới điện, mạng internet hoặc xảy ra sự kiện bất khả kháng khác theo văn bản hoặc theo quyết định của cơ quan có thẩm quyền dẫn đến cơ quan đăng ký không thể thực hiện được việc đăng ký theo thủ tục và thời hạn quy định tại Nghị định số 99/2022/NĐ-CP. <br>+ Thời gian cơ quan đăng ký thực hiện thủ tục quy định tại khoản 2 Điều 35 Nghị định số 99/2022/NĐ-CP. |
+| Trực tiếp | 3 ngày làm việc | Không có thông tin | Phí, lệ phí (nếu có): Hội đồng nhân dân cấp tỉnh quyết định đối với hoạt động đăng ký do cơ quan địa phương thực hiện (STT XII.8 Phần A Phụ lục số 01 ban hành kèm theo Luật phí và lệ phí năm 2015).<br>- Cơ quan đăng ký có trách nhiệm giải quyết hồ sơ đăng ký trong ngày làm việc nhận được hồ sơ hợp lệ; nếu thời điểm nhận hồ sơ sau 15 giờ cùng ngày thì có thể hoàn thành việc đăng ký trong ngày làm việc tiếp theo. Trường hợp cơ quan đăng ký có lý do chính đáng phải kéo dài thời gian giải quyết hồ sơ đăng ký thì thời hạn giải quyết hồ sơ không quá 03 ngày làm việc kể từ ngày nhận được hồ sơ hợp lệ (khoản 1 Điều 16 Nghị định số 99/2022/NĐ-CP).<br>- Trường hợp hồ sơ đăng ký đối với quyền sử dụng đất, tài sản gắn liền với đất được nộp thông qua Bộ phận Tiếp nhận và Trả kết quả giải quyết thủ tục hành chính, Trung tâm Phục vụ hành chính công cấp tỉnh, Ủy ban nhân dân xã, phường, đặc khu, Trung tâm Phục vụ hành chính công cấp xã (gọi chung là Bộ phận một cửa) thì thời hạn giải quyết hồ sơ được tính từ thời điểm Văn phòng đăng ký đất đai nhận được hồ sơ đăng ký hợp lệ.<br>- Thời gian không tính vào thời hạn quy định tại khoản 1 Điều 16 Nghị định số 99/2022/NĐ-CP bao gồm: <br>+ Thời gian xảy ra sự kiện thiên tai, dịch bệnh, hỏa hoạn, sự cố hệ thống đăng ký trực tuyến, hỏng mạng lưới điện, mạng internet hoặc xảy ra sự kiện bất khả kháng khác theo văn bản hoặc theo quyết định của cơ quan có thẩm quyền dẫn đến cơ quan đăng ký không thể thực hiện được việc đăng ký theo thủ tục và thời hạn quy định tại Nghị định số 99/2022/NĐ-CP. <br>+ Thời gian cơ quan đăng ký thực hiện thủ tục quy định tại khoản 2 Điều 35 Nghị định số 99/2022/NĐ-CP. |
+| Dịch vụ bưu chính | 3 ngày làm việc | Không có thông tin | Phí, lệ phí (nếu có): Hội đồng nhân dân cấp tỉnh quyết định đối với hoạt động đăng ký do cơ quan địa phương thực hiện (STT XII.8 Phần A Phụ lục số 01 ban hành kèm theo Luật phí và lệ phí năm 2015).<br>- Cơ quan đăng ký có trách nhiệm giải quyết hồ sơ đăng ký trong ngày làm việc nhận được hồ sơ hợp lệ; nếu thời điểm nhận hồ sơ sau 15 giờ cùng ngày thì có thể hoàn thành việc đăng ký trong ngày làm việc tiếp theo. Trường hợp cơ quan đăng ký có lý do chính đáng phải kéo dài thời gian giải quyết hồ sơ đăng ký thì thời hạn giải quyết hồ sơ không quá 03 ngày làm việc kể từ ngày nhận được hồ sơ hợp lệ (khoản 1 Điều 16 Nghị định số 99/2022/NĐ-CP).<br>- Trường hợp hồ sơ đăng ký đối với quyền sử dụng đất, tài sản gắn liền với đất được nộp thông qua Bộ phận Tiếp nhận và Trả kết quả giải quyết thủ tục hành chính, Trung tâm Phục vụ hành chính công cấp tỉnh, Ủy ban nhân dân xã, phường, đặc khu, Trung tâm Phục vụ hành chính công cấp xã (gọi chung là Bộ phận một cửa) thì thời hạn giải quyết hồ sơ được tính từ thời điểm Văn phòng đăng ký đất đai nhận được hồ sơ đăng ký hợp lệ.<br>- Thời gian không tính vào thời hạn quy định tại khoản 1 Điều 16 Nghị định số 99/2022/NĐ-CP bao gồm: <br>+ Thời gian xảy ra sự kiện thiên tai, dịch bệnh, hỏa hoạn, sự cố hệ thống đăng ký trực tuyến, hỏng mạng lưới điện, mạng internet hoặc xảy ra sự kiện bất khả kháng khác theo văn bản hoặc theo quyết định của cơ quan có thẩm quyền dẫn đến cơ quan đăng ký không thể thực hiện được việc đăng ký theo thủ tục và thời hạn quy định tại Nghị định số 99/2022/NĐ-CP. <br>+ Thời gian cơ quan đăng ký thực hiện thủ tục quy định tại khoản 2 Điều 35 Nghị định số 99/2022/NĐ-CP. |
+
+## Thành phần hồ sơ
+
+| Tên giấy tờ | Bản chính | Bản sao | Tệp đính kèm |
+| --- | --- | --- | --- |
+| Văn bản có nội dung thể hiện việc bên nhận bảo đảm đồng ý xóa đăng ký hoặc xác nhận về việc hợp đồng bảo đảm đã chấm dứt, đã được thanh lý hoặc xác nhận về việc giải chấp trong trường hợp người yêu cầu xóa đăng ký là bên bảo đảm (01 bản chính hoặc 01 bản sao có chứng thực) (điểm a khoản 3 Điều 33 Nghị định số 99/2022/NĐ-CP) trường hợp người yêu cầu xóa đăng ký không phải là bên nhận bảo đảm và trên Phiếu yêu cầu không có chữ ký, con dấu (nếu có) của bên nhận bảo đảm. | 1 | 1 | Không có |
+| Giấy chứng nhận (bản gốc) trong trường hợp tài sản bảo đảm có Giấy chứng nhận (khoản 2 Điều 33 Nghị định số 99/2022/NĐ-CP). Bản gốc Giấy chứng nhận đối với quyền sử dụng đất, tài sản gắn liền với đất là thành phần hồ sơ đăng ký quy định tại Điều 33 Nghị định số 99/2022/NĐ-CP hoặc được quy định tại Điều 36 Nghị định số 99/2022/NĐ-CP được thay thế bằng việc khai thác, sử dụng thông tin tương ứng từ cơ sở dữ liệu đất đai mà không phải nộp trong hồ sơ đăng ký. Trường hợp không khai thác được thông tin hoặc thông tin khai thác được không đầy đủ, không chính xác để thay thế cho giấy tờ là thành phần hồ sơ đăng ký thì cơ quan đăng ký yêu cầu người yêu cầu đăng ký nộp giấy tờ tương ứng thuộc thành phần hồ sơ đăng ký theo quy định tại Nghị định số 99/2022/NĐ-CP để giải quyết việc đăng ký. | 1 | 0 | Không có |
+| Phiếu yêu cầu theo Mẫu số 03a tại Phụ lục (01 bản chính) (khoản 1 Điều 33 Nghị định số 99/2022/NĐ-CP). | 1 | 0 | [Mau so 03a_Xoa dang ky.docx](file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/1_011443/Mau%20so%2003a_Xoa%20dang%20ky.docx) |
+| Hợp đồng hoặc văn bản khác đã có hiệu lực pháp luật chứng minh việc chuyển giao hợp pháp tài sản bảo đảm trong trường hợp người yêu cầu xóa đăng ký là người nhận chuyển giao hợp pháp tài sản bảo đảm, trừ trường hợp quy định tại điểm c khoản 3 Điều 33 Nghị định số 99/2022/NĐ-CP (01 bản chính hoặc 01 bản sao có chứng thực) (điểm b khoản 3 Điều 33 Nghị định số 99/2022/NĐ-CP) trường hợp người yêu cầu xóa đăng ký không phải là bên nhận bảo đảm và trên Phiếu yêu cầu không có chữ ký, con dấu (nếu có) của bên nhận bảo đảm. | 1 | 0 | Không có |
+| Hợp đồng mua bán tài sản đấu giá đã có hiệu lực pháp luật hoặc Văn bản xác nhận kết quả thi hành án trong trường hợp người yêu cầu xóa đăng ký là cơ quan thi hành án dân sự, Chấp hành viên hoặc người yêu cầu xóa đăng ký là người mua tài sản bảo đảm trong xử lý tài sản theo quy định của pháp luật về thi hành án dân sự (01 bản chính hoặc 01 bản sao có chứng thực) (điểm c khoản 3 Điều 33 Nghị định số 99/2022/NĐ-CP) trường hợp người yêu cầu xóa đăng ký không phải là bên nhận bảo đảm và trên Phiếu yêu cầu không có chữ ký, con dấu (nếu có) của bên nhận bảo đảm. | 1 | 0 | Không có |
+| Văn bản của cơ quan có thẩm quyền có nội dung về việc bên nhận bảo đảm là tổ chức kinh tế không phải là tổ chức tín dụng trở thành doanh nghiệp có vốn đầu tư nước ngoài, là công dân Việt Nam trở thành công dân nước ngoài trong trường hợp xóa đăng ký quy định tại điểm k khoản 1 Điều 20 Nghị định số 99/2022/NĐ-CP (01 bản chính hoặc 01 bản sao có chứng thực) (điểm d khoản 3 Điều 33 Nghị định số 99/2022/NĐ-CP) trường hợp người yêu cầu xóa đăng ký không phải là bên nhận bảo đảm và trên Phiếu yêu cầu không có chữ ký, con dấu (nếu có) của bên nhận bảo đảm. | 1 | 0 | Không có |
+| Văn bản xác nhận của cơ quan có thẩm quyền về việc giải thể pháp nhân trong trường hợp xóa đăng ký quy định tại điểm l khoản 1 Điều 20 Nghị định số 99/2022/NĐ-CP (01 bản chính hoặc 01 bản sao có chứng thực) (điểm đ khoản 3 Điều 33 Nghị định số 99/2022/NĐ-CP) trường hợp người yêu cầu xóa đăng ký không phải là bên nhận bảo đảm và trên Phiếu yêu cầu không có chữ ký, con dấu (nếu có) của bên nhận bảo đảm. | 1 | 0 | Không có |
+
+| Tên giấy tờ | Bản chính | Bản sao | Tệp đính kèm |
+| --- | --- | --- | --- |
+| Trường hợp thực hiện thông qua người đại diện thì văn bản có nội dung về đại diện là tài liệu phải có trong hồ sơ đăng ký, hồ sơ cung cấp thông tin (01 bản chính hoặc 01 bản sao có chứng thực hoặc 01 bản sao kèm bản chính để đối chiếu), trừ trường hợp thực hiện việc đăng ký qua tài khoản đăng ký trực tuyến của người đại diện quy định tại khoản 2 Điều 24 Nghị định số 99/2022/NĐ-CP (khoản 7 Điều 8 Nghị định số 99/2022/NĐ-CP, khoản 4 Điều 24 Nghị định số 99/2022/NĐ-CP). | 1 | 1 | Không có |
+| Trường hợp bên bảo đảm hoặc bên nhận bảo đảm gồm nhiều người thì phải có đầy đủ chữ ký, con dấu (nếu có) của các chủ thể này, trừ trường hợp có văn bản thể hiện nội dung về việc một, một số bên bảo đảm hoặc bên nhận bảo đảm có quyền đại diện cho những người còn lại (khoản 4 Điều 12 Nghị định số 99/2022/NĐ-CP). | 0 | 1 | Không có |
+| Trường hợp xóa đăng ký liên quan đến nhiều biện pháp bảo đảm đã được đăng ký mà có cùng một bên nhận bảo đảm thì người yêu cầu đăng ký nộp 01 bộ hồ sơ xóa đăng ký kèm theo 01 Danh mục văn bản được kê khai theo Mẫu số 01đ hoặc Mẫu số 02đ tại Phụ lục tương ứng với biện pháp bảo đảm được xóa đăng ký (khoản 5 Điều 20 Nghị định số 99/2022/NĐ-CP). | 0 | 1 | Không có |
+| Trường hợp được miễn nghĩa vụ nộp phí, thanh toán giá dịch vụ, nghĩa vụ thanh toán khác (quy định tại điểm đ khoản 1 Điều 9 Nghị định số 99/2022/NĐ-CP) thì người yêu cầu đăng ký có quyền lựa chọn cung cấp một trong giấy tờ, tài liệu sau đây vào trong hồ sơ đăng ký: Hợp đồng bảo đảm hoặc hợp đồng tín dụng hoặc văn bản khác có thông tin về việc thuộc diện được miễn nghĩa vụ nộp phí đăng ký, thanh toán giá dịch vụ, nghĩa vụ thanh toán khác (01 bản chính hoặc 01 bản sao có chứng thực hoặc 01 bản sao kèm bản chính để đối chiếu). Việc nộp giấy tờ, tài liệu quy định tại khoản 3 Điều 9 Nghị định số 99/2022/NĐ-CP chỉ thực hiện một lần trong đăng ký cùng một biện pháp bảo đảm (khoản 3 Điều 9 Nghị định số 99/2022/NĐ-CP). | 1 | 1 | Không có |
+| Trường hợp chi nhánh của pháp nhân, chi nhánh hoặc phòng giao dịch của pháp nhân là tổ chức tín dụng (sau đây gọi là chi nhánh của pháp nhân) được pháp nhân giao nhiệm vụ thực hiện chức năng của pháp nhân về yêu cầu đăng ký, về yêu cầu cung cấp thông tin thì văn bản có nội dung về việc pháp nhân giao nhiệm vụ cho chi nhánh thực hiện chức năng của pháp nhân trong yêu cầu đăng ký, yêu cầu cung cấp thông tin là tài liệu phải có trong hồ sơ đăng ký, hồ sơ cung cấp thông tin (01 bản chính hoặc 01 bản sao có chứng thực hoặc 01 bản sao kèm bản chính để đối chiếu) (khoản 8 Điều 8 Nghị định số 99/2022/NĐ-CP). Người yêu cầu đăng ký chỉ nộp văn bản này một lần cho cơ quan đăng ký, không phải nộp lại văn bản này trong hồ sơ đăng ký, hồ sơ yêu cầu cung cấp thông tin tiếp theo, trừ trường hợp văn bản này có nội dung giao nhiệm vụ cho chi nhánh theo từng vụ việc. Cơ quan đăng ký có trách nhiệm số hóa, lưu giữ văn bản này theo quy định của pháp luật để tái sử dụng thông tin, dữ liệu trong giải quyết các hồ sơ yêu cầu đăng ký, hồ sơ yêu cầu cung cấp thông tin tiếp theo, trừ trường hợp có văn bản khác thay đổi nội dung hoặc thay thế văn bản đã được số hóa, lưu giữ. | 1 | 1 | Không có |
+| Trường hợp xóa đăng ký quy định tại điểm m khoản 1 Điều 20 Nghị định số 99/2022/NĐ-CP theo yêu cầu của người yêu cầu xóa đăng ký thì bản án, quyết định có hiệu lực của Tòa án là tài liệu phải có trong Hồ sơ đăng ký (01 bản chính hoặc 01 bản sao có chứng thực) (khoản 2 Điều 20 Nghị định số 99/2022/NĐ-CP). | 1 | 1 | Không có |
+
+## Căn cứ pháp lý
+
+| Tên văn bản pháp lý | Mã văn bản |
+| --- | --- |
+| Nghị định sửa đổi, bổ sung một số nghị định để cắt giảm, đơn giản hóa thủ tục hành chính, điều kiện kinh doanh  thuộc phạm vi quản lý của Bộ Tư pháp | 18/2026/NĐ-CP |
+| Về đăng ký biện pháp bảo đảm | 99/2022/NĐ-CP |
+
+## Cơ quan thực hiện
+
+Văn phòng Đăng ký đất đai
+
+## Yêu cầu, điều kiện thực hiện
+
+Không có thông tin
+
+## Kết quả xử lý
+
+* Phiếu yêu cầu xóa đăng ký biện pháp bảo đảm bằng quyền sử dụng đất, tài sản gắn liền với đất (Mã: `KQ.G15.000335`)
+
+## Từ khóa
+
+Không có thông tin
+
+## Mô tả
+
+Không có thông tin

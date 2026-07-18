@@ -1,0 +1,112 @@
+{
+  "schema_version": "1.0",
+  "enricher_version": "0.2.0",
+  "source": {
+    "procedure_code": "1.009502",
+    "title": "Đăng ký chào bán chứng chỉ quỹ đóng, quỹ đầu tư bất động sản, cổ phiếu công ty đầu tư chứng khoán đại chúng ra công chúng để tăng vốn",
+    "group_key": "hoc_tap",
+    "workflow_family": null,
+    "subflow": null
+  },
+  "experience": {
+    "entry_label": "Hỗ trợ giáo dục và học tập",
+    "overview_summary": "Thủ tục này thuộc nhóm giáo dục và học tập, thường liên quan đến hồ sơ đào tạo, văn bằng hoặc điều kiện học tập của người học. Kết quả thường nhận được là + Văn bản từ chối (nêu rõ lý do). Thời gian xử lý tham khảo: 30 ngày.",
+    "next_step_summary": "Nên rà trước thông tin người học, cơ sở đào tạo và loại kết quả cần xin xác nhận hoặc cấp lại. Có thể chọn kênh nộp phù hợp: Trực tiếp, Trực tuyến, Dịch vụ bưu chính. Hiện có khoảng 10 mục giấy tờ cần theo dõi trong checklist.",
+    "tone": "supportive_public_service"
+  },
+  "guidance": {
+    "highlight_documents": [
+      {
+        "bucket": "required",
+        "name": "Phương án chào bán chào bán cổ phiếu để tăng vốn bao gồm các nội dung tối thiểu theo Mẫu số 99 Phụ lục ban hành kèm theo Nghị định 155/2020/NĐ-CP ngày 31/12/2020 của Chính phủ.",
+        "conditions": [],
+        "attachment_path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/1_009502/M%E1%BA%ABu%20s%E1%BB%91%2099.docx"
+      },
+      {
+        "bucket": "required",
+        "name": "2) Dự thảo Điều lệ quỹ/công ty đầu tư chứng khoán theo Mẫu Phụ lục I/ II ban hành kèm theo Thông tư 98/2020/TT-BTC ngày 16/11/2020 của Bộ tài chính;",
+        "conditions": [],
+        "attachment_path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/1_009502/Ph%E1%BB%A5%20l%E1%BB%A5c%20II.II.docx"
+      },
+      {
+        "bucket": "required",
+        "name": "5) Nghị quyết của Đại hội nhà đầu tư quỹ đóng, quỹ đầu tư bất động sản thông qua việc chào bán quyền mua chứng chỉ quỹ để tăng vốn cho quỹ, phương án chào bán chứng chỉ quỹ (đối với quỹ)/Nghị quyết Đại hội đồng cổ đông công ty đầu tư chứng khoán thông qua chào bán cổ phiếu để tăng vốn, phương án phát hành, phương án sử dụng vốn thu được từ đợt chào bán; thông qua việc niêm yết bổ sung trên Sở giao dịch chứng khoán sau khi kết thúc đợt chào bán (đối với công ty đầu tư chứng khoán đại chúng);",
+        "conditions": [],
+        "attachment_path": null
+      },
+      {
+        "bucket": "required",
+        "name": "7) Báo cáo tài chính năm gần nhất của quỹ tính đến thời điểm nộp hồ sơ đăng ký chào bán ra công chúng theo quy định tại Luật Chứng khoán (đối với quỹ)/Báo cáo tài chính năm gần nhất của công ty phải đáp ứng quy định tại Luật Chứng khoán, bảo đảm lợi nhuận của công ty phải là số dương, đồng thời không có lỗ lũy kế tính đến thời điểm đăng ký chào bán (đối với công ty đầu tư chứng khoán đại chúng);",
+        "conditions": [],
+        "attachment_path": null
+      },
+      {
+        "bucket": "required",
+        "name": "3) Bản cáo bạch theo Mẫu Phụ lục III/ IV ban hành kèm theo Thông tư 98/2020/TT-BTC ngày 16/11/2020 của Bộ tài chính;",
+        "conditions": [],
+        "attachment_path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/1_009502/Ph%E1%BB%A5%20l%E1%BB%A5c%20III.%20IV.docx"
+      },
+      {
+        "bucket": "required",
+        "name": "4) Bản cáo bạch tóm tắt theo Mẫu Phụ lục V/ VI ban hành kèm theo Thông tư 98/2020/TT-BTC ngày 16/11/2020 của Bộ tài chính;",
+        "conditions": [],
+        "attachment_path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/1_009502/2Ph%E1%BB%A5%20l%E1%BB%A5c%20V.VI.docx"
+      }
+    ],
+    "special_cases": [
+      "Có kiểm tra dữ liệu cư trú/định danh"
+    ],
+    "common_errors": [
+      "Thông tin định danh hoặc cư trú không khớp với dữ liệu dân cư.",
+      "Điền sai mẫu tờ khai hoặc chọn sai biểu mẫu đi kèm."
+    ],
+    "validation_hints": [
+      "Nên xác định trước kênh nộp hồ sơ để biết có cần bản giấy, bản điện tử hay xuất trình trực tiếp.",
+      "Có mẫu biểu đính kèm, nên kiểm tra đúng biểu mẫu trước khi nộp.",
+      "Nên rà lại thông tin người học, cơ sở đào tạo và loại xác nhận hoặc văn bằng cần xin."
+    ]
+  },
+  "intake": {
+    "candidate_input_fields": [
+      {
+        "field_id": "learner_full_name",
+        "label": "Tên người học",
+        "field_type": "text",
+        "required": true
+      },
+      {
+        "field_id": "education_record_type",
+        "label": "Loại hồ sơ học tập cần xử lý",
+        "field_type": "text",
+        "required": true
+      },
+      {
+        "field_id": "education_institution",
+        "label": "Cơ sở đào tạo liên quan",
+        "field_type": "text",
+        "required": false
+      },
+      {
+        "field_id": "submission_channel_preference",
+        "label": "Kênh nộp dự kiến",
+        "field_type": "enum",
+        "required": false
+      }
+    ],
+    "suggested_clarifying_questions": [
+      "Bạn đang cần xử lý hồ sơ học tập, văn bằng hay xác nhận nào?",
+      "Người học và cơ sở đào tạo liên quan đã xác định rõ chưa?"
+    ]
+  },
+  "ui_hints": {
+    "primary_channel": "online",
+    "result_label": "+ Văn bản từ chối (nêu rõ lý do)",
+    "time_badge": "30 ngày",
+    "document_count_badge": 10
+  },
+  "provenance": {
+    "generator": "workflow_domain_enricher",
+    "derivation_mode": "rule_based_semantic_enrichment",
+    "supported_group": true
+  }
+}

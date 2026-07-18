@@ -1,0 +1,101 @@
+{
+  "schema_version": "1.0",
+  "enricher_version": "0.2.0",
+  "source": {
+    "procedure_code": "1.004424",
+    "title": "Công nhận đăng kiểm viên phương tiện thủy nội địa",
+    "group_key": "phuong_tien_nguoi_lai",
+    "workflow_family": "vehicle_driver_workflow",
+    "subflow": "dang_kiem_phuong_tien"
+  },
+  "experience": {
+    "entry_label": "Hỗ trợ phương tiện và người lái",
+    "overview_summary": "Thủ tục này thuộc nhóm phương tiện và đăng kiểm, thường cần đối chiếu hồ sơ kỹ thuật, đăng ký hoặc chứng nhận an toàn của phương tiện. Kết quả thường nhận được là MẪU GIẤY CHỨNG NHẬN ĐĂNG KIỂM VIÊN PHƯƠNG TIỆN THỦY NỘI ĐỊA. Thời gian xử lý tham khảo: 3 ngày làm việc.",
+    "next_step_summary": "Nên kiểm tra trước loại phương tiện hoặc loại giấy phép cần xử lý, cùng hồ sơ kỹ thuật hoặc nhân thân liên quan. Có thể chọn kênh nộp phù hợp: Trực tiếp, Trực tuyến, Dịch vụ bưu chính. Hiện có khoảng 4 mục giấy tờ cần theo dõi trong checklist.",
+    "tone": "supportive_public_service"
+  },
+  "guidance": {
+    "highlight_documents": [
+      {
+        "bucket": "required",
+        "name": "Bản sao có chứng thực hoặc bản sao được cấp từ sổ gốc hoặc bản sao điện tử được cấp từ sổ gốc hoặc bản sao điện tử được chứng thực từ bản chính các văn bằng chứng chỉ chuyên môn",
+        "conditions": [],
+        "attachment_path": null
+      },
+      {
+        "bucket": "required",
+        "name": "Bản sao có chứng thực hoặc bản sao được cấp từ sổ gốc hoặc bản sao điện tử được cấp từ sổ gốc hoặc bản sao điện tử được chứng thực từ bản chính báo cáo thực tập nghiệp vụ của người được đề nghị công nhận đăng kiểm viên theo mẫu",
+        "conditions": [],
+        "attachment_path": null
+      },
+      {
+        "bucket": "required",
+        "name": "Lý lịch chuyên môn của đăng kiểm viên theo mẫu (bản chính)",
+        "conditions": [],
+        "attachment_path": null
+      },
+      {
+        "bucket": "required",
+        "name": "Giấy đề nghị của đơn vị đăng kiểm theo mẫu (bản chính)",
+        "conditions": [],
+        "attachment_path": null
+      }
+    ],
+    "special_cases": [
+      "Có thể cần xác minh hồ sơ học tập hoặc văn bằng",
+      "Có thể cần hồ sơ kỹ thuật phương tiện hoặc giấy phép lái xe"
+    ],
+    "common_errors": [
+      "Điền sai mẫu tờ khai hoặc chọn sai biểu mẫu đi kèm.",
+      "Thiếu minh chứng học tập, văn bằng hoặc xác nhận từ cơ sở đào tạo.",
+      "Thiếu hồ sơ kỹ thuật phương tiện hoặc thông tin giấy phép lái xe cần đối chiếu."
+    ],
+    "validation_hints": [
+      "Nên xác định trước kênh nộp hồ sơ để biết có cần bản giấy, bản điện tử hay xuất trình trực tiếp.",
+      "Nên đối chiếu trước thông tin phương tiện, hồ sơ kỹ thuật hoặc giấy phép lái xe liên quan."
+    ]
+  },
+  "intake": {
+    "candidate_input_fields": [
+      {
+        "field_id": "vehicle_or_license_need",
+        "label": "Nhu cầu về phương tiện hoặc giấy phép",
+        "field_type": "text",
+        "required": true
+      },
+      {
+        "field_id": "vehicle_or_person_identifier",
+        "label": "Thông tin phương tiện hoặc người lái",
+        "field_type": "text",
+        "required": true
+      },
+      {
+        "field_id": "submission_channel_preference",
+        "label": "Kênh nộp dự kiến",
+        "field_type": "enum",
+        "required": false
+      },
+      {
+        "field_id": "has_technical_or_identity_documents",
+        "label": "Đã có hồ sơ kỹ thuật hoặc giấy tờ nhân thân",
+        "field_type": "boolean",
+        "required": false
+      }
+    ],
+    "suggested_clarifying_questions": [
+      "Bạn đang xử lý hồ sơ cho phương tiện hay cho giấy phép lái xe?",
+      "Bạn đã có thông tin nhận diện phương tiện hoặc giấy tờ của người lái chưa?"
+    ]
+  },
+  "ui_hints": {
+    "primary_channel": "online",
+    "result_label": "MẪU GIẤY CHỨNG NHẬN ĐĂNG KIỂM VIÊN PHƯƠNG TIỆN THỦY NỘI ĐỊA",
+    "time_badge": "3 ngày làm việc",
+    "document_count_badge": 4
+  },
+  "provenance": {
+    "generator": "workflow_domain_enricher",
+    "derivation_mode": "rule_based_semantic_enrichment",
+    "supported_group": true
+  }
+}

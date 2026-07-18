@@ -1,0 +1,258 @@
+{
+  "schema_version": "3.0",
+  "record_type": "public_service_procedure_payload",
+  "id": "procedure-2.000740",
+  "procedure_code": "2.000740",
+  "code": "2.000740",
+  "title": "Người hưởng lĩnh chế độ bảo hiểm xã hội bằng tiền mặt chuyển sang lĩnh bằng tài khoản cá nhân và ngược lại, hoặc thay đổi thông tin cá nhân",
+  "language": "vi",
+  "status": "generated_from_pipeline",
+  "field": "Chi trả các chế độ BHXH",
+  "group_key": "huu_tri",
+  "workflow_family": "retirement_workflow",
+  "subflow": "che_do_huu_tri",
+  "source": {
+    "source_url": "file:///C:/Users/ku060/Downloads/VAIC%20source/data-pipeline/raw_data/2_000740/2_000740_procedure_detail.md",
+    "source_markdown_path": "C:\\Users\\ku060\\Downloads\\VAIC source\\data-pipeline\\raw_data\\2_000740\\2_000740_procedure_detail.md",
+    "normalized_payload_path": "C:\\Users\\ku060\\Downloads\\VAIC source\\data-pipeline\\govease-unified\\data\\normalized_structured\\2_000740_normalized_structured.json",
+    "enriched_payload_path": "C:\\Users\\ku060\\Downloads\\VAIC source\\data-pipeline\\govease-unified\\data\\enriched_structured_priority\\2_000740_enriched_structured.json"
+  },
+  "scope": {
+    "included": "Thủ tục này thuộc nhóm hưu trí, thường dùng để xác định điều kiện nghỉ hưu, trợ cấp hoặc chế độ hưởng theo hồ sơ bảo hiểm xã hội. Kết quả thường nhận được là kết quả giải quyết theo thủ tục này. Thời gian xử lý tham khảo: 1 Ngày làm việc.",
+    "not_included": []
+  },
+  "agency": {
+    "executing_agency": "Bảo hiểm xã hội cấp huyện Bảo hiểm xã hội cấp Tỉnh",
+    "submission_place": null,
+    "receiving_places": []
+  },
+  "target_users": [],
+  "submission_methods": [
+    {
+      "code": "IN_PERSON",
+      "label": "Trực tiếp",
+      "processing_time": "1 Ngày làm việc",
+      "fee": null,
+      "description": "Ngay khi cơ quan BHXH nhận được hồ sơ 1. Nộp hồ sơ: người hưởng nộp hồ sơ tại cơ quan BHXH hoặc các điểm chi trả; 2. Nhận kết quả: người hưởng nhận phí phát hành thẻ ATM tại Bưu điện tỉnh hoặc Bưu điện huyện (nơi nộp chứng từ thu phí phát hành thẻ ATM lần đầu) ngay trong ngày"
+    },
+    {
+      "code": "POSTAL",
+      "label": "Dịch vụ bưu chính",
+      "processing_time": "1 Ngày làm việc",
+      "fee": null,
+      "description": "Ngay khi cơ quan BHXH nhận được hồ sơ 1. Nộp hồ sơ: người hưởng nộp hồ sơ cho cơ quan BHXH thông qua dịch vụ bưu chính công ích. 2. Nhận kết quả: người hưởng nhận phí phát hành thẻ ATM tại Bưu điện tỉnh hoặc Bưu điện huyện (nơi nộp chứng từ thu phí phát hành thẻ ATM lần đầu) ngay trong ngày"
+    }
+  ],
+  "processing_note": "Thời gian xử lý tham chiếu: 1 Ngày làm việc. Nên rà trước quá trình đóng bảo hiểm, mốc tuổi và loại chế độ muốn hưởng trước khi nộp. Có thể chọn kênh nộp phù hợp: Trực tiếp, Dịch vụ bưu chính. Hiện có khoảng 2 mục giấy tờ cần theo dõi trong checklist.",
+  "documents": {
+    "normally_required": [
+      {
+        "name": "",
+        "quantity": "1 bản chính, 0 bản sao",
+        "notes": [],
+        "group": "default",
+        "attachment_path": "Thông báo thay đổi thông tin người hưởng (mẫu số 2-CBH) 02_CBH.docx"
+      },
+      {
+        "name": "Chứng từ thu phí mở tài khoản cá nhân lần đầu của Ngân hàng nơi người hưởng mở tài khoản.",
+        "quantity": "1 bản chính, 0 bản sao",
+        "notes": [],
+        "group": "default",
+        "attachment_path": null
+      }
+    ],
+    "conditional": [],
+    "forms": [
+      {
+        "name": "",
+        "attachment_label": "Thông báo thay đổi thông tin người hưởng (mẫu số 2-CBH) 02_CBH.docx",
+        "attachment_path": "Thông báo thay đổi thông tin người hưởng (mẫu số 2-CBH) 02_CBH.docx"
+      }
+    ],
+    "presented": [],
+    "notes": [],
+    "summary": [
+      {
+        "group": "default",
+        "name": "",
+        "quantity": "1 bản chính, 0 bản sao",
+        "notes": [],
+        "attachment_path": "Thông báo thay đổi thông tin người hưởng (mẫu số 2-CBH) 02_CBH.docx"
+      },
+      {
+        "group": "default",
+        "name": "Chứng từ thu phí mở tài khoản cá nhân lần đầu của Ngân hàng nơi người hưởng mở tài khoản.",
+        "quantity": "1 bản chính, 0 bản sao",
+        "notes": [],
+        "attachment_path": null
+      },
+      {
+        "group": null,
+        "name": "",
+        "quantity": null,
+        "notes": null,
+        "attachment_path": "Thông báo thay đổi thông tin người hưởng (mẫu số 2-CBH) 02_CBH.docx"
+      }
+    ]
+  },
+  "steps": [
+    {
+      "order": 1,
+      "title": "Bước 1.",
+      "description": "Bước 1. Lập, nộp hồ sơ Người hưởng lập theo quy định tại mục Thành phần hồ sơ; nộp hồ sơ cho cơ quan bưu điện hoặc cơ quan BHXH, ghi rõ: Số tài khoản cá nhân (hoặc thẻ ATM), ngân hàng nơi mở tài khoản; hoặc nơi nhận chế độ BHXH hàng tháng mới. Nếu có chi phí phát hành thẻ ATM lần đầu, người hưởng nộp chứng từ cho Bưu điện tỉnh hoặc Bưu điện huyện để thanh toán theo quy định.",
+      "example": null
+    },
+    {
+      "order": 2,
+      "title": "Bước 2.",
+      "description": "Bước 2. Cơ quan BHXH tiếp nhận hồ sơ và giải quyết theo quy định",
+      "example": null
+    },
+    {
+      "order": 3,
+      "title": "Bước 3.",
+      "description": "Bước 3. Nhận kết quả giải quyết Người hưởng lĩnh phí phát hành thẻ ATM (trong trường hợp phát hành thẻ ATM lần đầu).",
+      "example": null
+    }
+  ],
+  "input_fields": [
+    {
+      "field": "insured_person_name",
+      "label": "Người hưởng chế độ",
+      "type": "string",
+      "required": true
+    },
+    {
+      "field": "retirement_or_allowance_need",
+      "label": "Nhu cầu hưởng chế độ hưu trí/trợ cấp",
+      "type": "string",
+      "required": true
+    },
+    {
+      "field": "social_insurance_participation_known",
+      "label": "Đã rõ quá trình tham gia BHXH",
+      "type": "boolean",
+      "required": true
+    },
+    {
+      "field": "submission_channel_preference",
+      "label": "Kênh nộp dự kiến",
+      "type": "enum",
+      "required": false,
+      "options": [
+        "Trực tiếp",
+        "Dịch vụ bưu chính"
+      ]
+    }
+  ],
+  "validation_rules": [
+    {
+      "id": "required-1",
+      "severity": "error",
+      "field": "insured_person_name",
+      "rule": "Trường bắt buộc phải có dữ liệu hợp lệ trước khi nộp.",
+      "message": "Thiếu trường bắt buộc: Người hưởng chế độ."
+    },
+    {
+      "id": "required-2",
+      "severity": "error",
+      "field": "retirement_or_allowance_need",
+      "rule": "Trường bắt buộc phải có dữ liệu hợp lệ trước khi nộp.",
+      "message": "Thiếu trường bắt buộc: Nhu cầu hưởng chế độ hưu trí/trợ cấp."
+    },
+    {
+      "id": "required-3",
+      "severity": "error",
+      "field": "social_insurance_participation_known",
+      "rule": "Trường bắt buộc phải có dữ liệu hợp lệ trước khi nộp.",
+      "message": "Thiếu trường bắt buộc: Đã rõ quá trình tham gia BHXH."
+    },
+    {
+      "id": "hint-1",
+      "severity": "warning",
+      "field": "general",
+      "rule": "Nên xác định trước kênh nộp hồ sơ để biết có cần bản giấy, bản điện tử hay xuất trình trực tiếp.",
+      "message": "Nên xác định trước kênh nộp hồ sơ để biết có cần bản giấy, bản điện tử hay xuất trình trực tiếp."
+    },
+    {
+      "id": "hint-2",
+      "severity": "warning",
+      "field": "general",
+      "rule": "Có mẫu biểu đính kèm, nên kiểm tra đúng biểu mẫu trước khi nộp.",
+      "message": "Có mẫu biểu đính kèm, nên kiểm tra đúng biểu mẫu trước khi nộp."
+    },
+    {
+      "id": "hint-3",
+      "severity": "warning",
+      "field": "general",
+      "rule": "Nên rà lại quá trình tham gia bảo hiểm, độ tuổi và loại chế độ muốn hưởng trước khi nộp.",
+      "message": "Nên rà lại quá trình tham gia bảo hiểm, độ tuổi và loại chế độ muốn hưởng trước khi nộp."
+    }
+  ],
+  "common_errors": [],
+  "clarifying_questions": [
+    {
+      "id": "clarify_1",
+      "question": "Bạn đang muốn chuẩn bị nghỉ hưu hay giải quyết chế độ hưu trí cụ thể nào?",
+      "purpose": "workflow_intake"
+    },
+    {
+      "id": "clarify_2",
+      "question": "Quá trình tham gia bảo hiểm và độ tuổi hưởng chế độ đã xác định rõ chưa?",
+      "purpose": "workflow_intake"
+    }
+  ],
+  "legal_basis": [],
+  "legal_bases": [],
+  "faq": [
+    {
+      "question": "Có thể nộp qua kênh nào?",
+      "answer": "Các kênh hiện có: Trực tiếp, Dịch vụ bưu chính."
+    },
+    {
+      "question": "Thời gian xử lý tham chiếu là bao lâu?",
+      "answer": "Thời gian xử lý tham chiếu hiện có là 1 Ngày làm việc."
+    }
+  ],
+  "guidance": {
+    "highlight_documents": [
+      {
+        "bucket": "required",
+        "name": "",
+        "conditions": [],
+        "attachment_path": "Thông báo thay đổi thông tin người hưởng (mẫu số 2-CBH) 02_CBH.docx"
+      },
+      {
+        "bucket": "required",
+        "name": "Chứng từ thu phí mở tài khoản cá nhân lần đầu của Ngân hàng nơi người hưởng mở tài khoản.",
+        "conditions": [],
+        "attachment_path": null
+      }
+    ],
+    "special_cases": [],
+    "common_errors": [],
+    "validation_hints": [
+      "Nên xác định trước kênh nộp hồ sơ để biết có cần bản giấy, bản điện tử hay xuất trình trực tiếp.",
+      "Có mẫu biểu đính kèm, nên kiểm tra đúng biểu mẫu trước khi nộp.",
+      "Nên rà lại quá trình tham gia bảo hiểm, độ tuổi và loại chế độ muốn hưởng trước khi nộp."
+    ]
+  },
+  "next_steps": {
+    "summary": "Nên rà trước quá trình đóng bảo hiểm, mốc tuổi và loại chế độ muốn hưởng trước khi nộp. Có thể chọn kênh nộp phù hợp: Trực tiếp, Dịch vụ bưu chính. Hiện có khoảng 2 mục giấy tờ cần theo dõi trong checklist.",
+    "time_badge": "1 Ngày làm việc",
+    "result_label": null,
+    "primary_channel": "in_person",
+    "channels": [
+      "in_person",
+      "postal"
+    ]
+  },
+  "notes": [],
+  "provenance": {
+    "pipeline": "raw->structured->normalized->enriched->ui_api_payload",
+    "normalizer_version": "0.2.0",
+    "enricher_version": "0.2.0",
+    "mapping_notes": "workflow_generated:huu_tri/che_do_huu_tri",
+    "supported_group": true
+  }
+}

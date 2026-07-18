@@ -1,0 +1,209 @@
+{
+  "schema_version": "1.0",
+  "domain": "hoc_tap",
+  "updated_at": "2026-07-18",
+  "source_files": [
+    "C:\\Users\\ku060\\Downloads\\VAIC source\\data-pipeline\\main\\full-data.csv",
+    "C:\\Users\\ku060\\Downloads\\VAIC source\\data-pipeline\\data\\workflows\\hoc_tap\\summary.csv",
+    "C:\\Users\\ku060\\Downloads\\VAIC source\\data-pipeline\\data\\workflows\\hoc_tap\\normalized.json",
+    "C:\\Users\\ku060\\Downloads\\VAIC source\\data-pipeline\\raw_data"
+  ],
+  "coverage": {
+    "expected_codes": [
+      "1.001694",
+      "1.002499",
+      "1.002543",
+      "1.005086",
+      "1.010628"
+    ],
+    "covered_codes": [
+      "1.001694",
+      "1.002499",
+      "1.002543",
+      "1.005086",
+      "1.010628"
+    ],
+    "missing_codes": []
+  },
+  "llm_contract": {
+    "role": "parse_user_answer_and_rephrase_question_only",
+    "required_output_schema": {
+      "intent": "hoc_tap",
+      "current_node": "string",
+      "slot_updates": {
+        "subdomain_key": "tuyen_sinh | chuyen_truong | hoc_bong_va_ho_tro | van_bang_chung_chi | hoc_tap_o_nuoc_ngoai_bang_ngan_sach | unknown",
+        "operation_key": "string",
+        "operation_group": "string"
+      },
+      "confidence": "0_to_1",
+      "needs_human_review": "boolean"
+    }
+  },
+  "entry_prompts": [
+    "Bạn đang cần làm việc về tuyển sinh, chuyển trường, hỗ trợ học tập, văn bằng chứng chỉ hay du học bằng ngân sách nhà nước?",
+    "Bạn muốn đăng ký mới, điều chỉnh, xin hỗ trợ, xin công nhận hay xin cấp lại giấy tờ học tập?"
+  ],
+  "slots": [
+    {
+      "name": "subdomain_key",
+      "required": true,
+      "description": "Nhánh chính của nhóm Học tập."
+    },
+    {
+      "name": "operation_key",
+      "required": true,
+      "description": "Thao tác cụ thể ánh xạ trực tiếp tới thủ tục cuối cùng."
+    },
+    {
+      "name": "operation_group",
+      "required": false,
+      "description": "Nhóm thao tác để gom các thủ tục gần nhau cho UI và parser."
+    }
+  ],
+  "subdomain_catalog": [
+    {
+      "subdomain_key": "hoc_tap_o_nuoc_ngoai_bang_ngan_sach",
+      "subdomain_label": "Học tập ở nước ngoài bằng ngân sách nhà nước",
+      "event_id": 259,
+      "summary": "Nhóm thủ tục cử đi học, tuyển chọn đi học, gia hạn, tạm dừng và tiếp nhận du học sinh theo diện học bổng ngân sách nhà nước."
+    }
+  ],
+  "decision_tree": {
+    "start_node": "study_subdomain",
+    "nodes": [
+      {
+        "id": "study_subdomain",
+        "type": "question",
+        "slot": "subdomain_key",
+        "question": "Bạn đang hỏi về tuyển sinh, chuyển trường, học bổng hỗ trợ, văn bằng chứng chỉ hay học tập ở nước ngoài bằng ngân sách nhà nước?",
+        "options": [
+          "hoc_tap_o_nuoc_ngoai_bang_ngan_sach"
+        ],
+        "prefilled_value": "hoc_tap_o_nuoc_ngoai_bang_ngan_sach"
+      },
+      {
+        "id": "study_operation",
+        "type": "question",
+        "slot": "operation_key",
+        "question": "Bạn cần làm thao tác nào cụ thể trong nhánh đã chọn?",
+        "options_by_subdomain": {
+          "hoc_tap_o_nuoc_ngoai_bang_ngan_sach": [
+            {
+              "operation_key": "cu_di_hoc_nuoc_ngoai",
+              "operation_group": "cu_di_hoc_nuoc_ngoai",
+              "procedure_code": "1.001694",
+              "procedure_title": "Cử đi học nước ngoài"
+            },
+            {
+              "operation_key": "tiep_nhan_du_hoc_sinh_hoc_bong_ngan_sach_nha_nuoc_tot_nghiep_ve_nuoc",
+              "operation_group": "tiep_nhan_du_hoc_sinh",
+              "procedure_code": "1.002499",
+              "procedure_title": "Tiếp nhận du học sinh học bổng ngân sách nhà nước tốt nghiệp về nước"
+            },
+            {
+              "operation_key": "gia_han_thoi_gian_hoc_tap_o_nuoc_ngoai",
+              "operation_group": "gia_han_hoc_tap",
+              "procedure_code": "1.002543",
+              "procedure_title": "Gia hạn thời gian học tập ở nước ngoài"
+            },
+            {
+              "operation_key": "tuyen_sinh_cong_dan_viet_nam_ra_nuoc_ngoai_hoc_tap_bang_hoc_bong_ngan_sach_nha_nuoc",
+              "operation_group": "tuyen_chon_di_hoc",
+              "procedure_code": "1.005086",
+              "procedure_title": "Tuyển sinh công dân Việt Nam ra nước ngoài học tập bằng học bổng ngân sách nhà nước"
+            },
+            {
+              "operation_key": "tam_dung_hoc_va_dieu_chinh_thoi_gian_hoc_tap",
+              "operation_group": "tam_dung_hoc_tap",
+              "procedure_code": "1.010628",
+              "procedure_title": "Tạm dừng học và điều chỉnh thời gian học tập"
+            }
+          ]
+        },
+        "options": [
+          "cu_di_hoc_nuoc_ngoai",
+          "tiep_nhan_du_hoc_sinh_hoc_bong_ngan_sach_nha_nuoc_tot_nghiep_ve_nuoc",
+          "gia_han_thoi_gian_hoc_tap_o_nuoc_ngoai",
+          "tuyen_sinh_cong_dan_viet_nam_ra_nuoc_ngoai_hoc_tap_bang_hoc_bong_ngan_sach_nha_nuoc",
+          "tam_dung_hoc_va_dieu_chinh_thoi_gian_hoc_tap"
+        ]
+      }
+    ],
+    "routes": [
+      {
+        "route_id": "hoc_tap_o_nuoc_ngoai_bang_ngan_sach-1_001694",
+        "conditions": {
+          "subdomain_key": "hoc_tap_o_nuoc_ngoai_bang_ngan_sach",
+          "operation_key": "cu_di_hoc_nuoc_ngoai"
+        },
+        "procedure_code": "1.001694",
+        "procedure_name": "Cử đi học nước ngoài",
+        "why_this_route": "Route trực tiếp cho nhu cầu 'Cử đi học nước ngoài' trong nhánh 'Học tập ở nước ngoài bằng ngân sách nhà nước'."
+      },
+      {
+        "route_id": "hoc_tap_o_nuoc_ngoai_bang_ngan_sach-1_002499",
+        "conditions": {
+          "subdomain_key": "hoc_tap_o_nuoc_ngoai_bang_ngan_sach",
+          "operation_key": "tiep_nhan_du_hoc_sinh_hoc_bong_ngan_sach_nha_nuoc_tot_nghiep_ve_nuoc"
+        },
+        "procedure_code": "1.002499",
+        "procedure_name": "Tiếp nhận du học sinh học bổng ngân sách nhà nước tốt nghiệp về nước",
+        "why_this_route": "Route trực tiếp cho nhu cầu 'Tiếp nhận du học sinh học bổng ngân sách nhà nước tốt nghiệp về nước' trong nhánh 'Học tập ở nước ngoài bằng ngân sách nhà nước'."
+      },
+      {
+        "route_id": "hoc_tap_o_nuoc_ngoai_bang_ngan_sach-1_002543",
+        "conditions": {
+          "subdomain_key": "hoc_tap_o_nuoc_ngoai_bang_ngan_sach",
+          "operation_key": "gia_han_thoi_gian_hoc_tap_o_nuoc_ngoai"
+        },
+        "procedure_code": "1.002543",
+        "procedure_name": "Gia hạn thời gian học tập ở nước ngoài",
+        "why_this_route": "Route trực tiếp cho nhu cầu 'Gia hạn thời gian học tập ở nước ngoài' trong nhánh 'Học tập ở nước ngoài bằng ngân sách nhà nước'."
+      },
+      {
+        "route_id": "hoc_tap_o_nuoc_ngoai_bang_ngan_sach-1_005086",
+        "conditions": {
+          "subdomain_key": "hoc_tap_o_nuoc_ngoai_bang_ngan_sach",
+          "operation_key": "tuyen_sinh_cong_dan_viet_nam_ra_nuoc_ngoai_hoc_tap_bang_hoc_bong_ngan_sach_nha_nuoc"
+        },
+        "procedure_code": "1.005086",
+        "procedure_name": "Tuyển sinh công dân Việt Nam ra nước ngoài học tập bằng học bổng ngân sách nhà nước",
+        "why_this_route": "Route trực tiếp cho nhu cầu 'Tuyển sinh công dân Việt Nam ra nước ngoài học tập bằng học bổng ngân sách nhà nước' trong nhánh 'Học tập ở nước ngoài bằng ngân sách nhà nước'."
+      },
+      {
+        "route_id": "hoc_tap_o_nuoc_ngoai_bang_ngan_sach-1_010628",
+        "conditions": {
+          "subdomain_key": "hoc_tap_o_nuoc_ngoai_bang_ngan_sach",
+          "operation_key": "tam_dung_hoc_va_dieu_chinh_thoi_gian_hoc_tap"
+        },
+        "procedure_code": "1.010628",
+        "procedure_name": "Tạm dừng học và điều chỉnh thời gian học tập",
+        "why_this_route": "Route trực tiếp cho nhu cầu 'Tạm dừng học và điều chỉnh thời gian học tập' trong nhánh 'Học tập ở nước ngoài bằng ngân sách nhà nước'."
+      }
+    ]
+  },
+  "pre_submission_checks": [
+    {
+      "field_group": "education_identity",
+      "checks": [
+        "Thông tin người học phải thống nhất giữa giấy tờ nhân thân, hồ sơ trường học và biểu mẫu nộp.",
+        "Phải xác định đúng cấp học hoặc chương trình đào tạo trước khi chọn thủ tục."
+      ]
+    },
+    {
+      "field_group": "financial_support",
+      "checks": [
+        "Các thủ tục hỗ trợ học tập phải có giấy tờ chứng minh đúng diện hưởng chính sách.",
+        "Nếu xin miễn giảm học phí hoặc học bổng thì phải làm rõ cơ sở giáo dục và bậc học hiện tại."
+      ]
+    },
+    {
+      "field_group": "abroad_study",
+      "checks": [
+        "Nhóm học tập ở nước ngoài phải làm rõ trạng thái đi học, đang học hay đã hoàn thành về nước.",
+        "Các yêu cầu gia hạn hoặc tạm dừng phải có căn cứ phê duyệt của cơ quan cử đi học hoặc cơ quan quản lý."
+      ]
+    }
+  ],
+  "subdomain_key": "hoc_tap_o_nuoc_ngoai_bang_ngan_sach"
+}

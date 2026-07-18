@@ -1,0 +1,316 @@
+{
+  "schema_version": "1.0",
+  "normalizer_version": "0.2.0",
+  "source": {
+    "procedure_code": "3.000251",
+    "title": "Thủ tục xác định xe thuộc trường hợp không chịu phí được trả lại hoặc bù trừ phí đã nộp",
+    "raw_structured_parser_version": "0.1.0",
+    "field": "Thuế"
+  },
+  "procedure": {
+    "level": "Cấp tỉnh",
+    "procedure_type": "OTHER",
+    "target_users": [
+      "Tổ chức (không bao gồm doanh nghiệp",
+      "HTX)",
+      "Công dân Việt Nam",
+      "Doanh nghiệp",
+      "Hợp tác xã"
+    ],
+    "authorities": [
+      "Các đơn vị đăng kiểm"
+    ],
+    "receiving_places": []
+  },
+  "submission": {
+    "channels": [
+      "in_person",
+      "online",
+      "postal"
+    ],
+    "methods": [
+      {
+        "method_id": "method_1",
+        "channel": "online",
+        "processing_time_text": "3 ngày làm việc",
+        "fee_text": null,
+        "description": null,
+        "is_online": true,
+        "is_postal": false,
+        "is_in_person": false
+      },
+      {
+        "method_id": "method_2",
+        "channel": "postal",
+        "processing_time_text": "3 ngày làm việc",
+        "fee_text": null,
+        "description": null,
+        "is_online": false,
+        "is_postal": true,
+        "is_in_person": false
+      },
+      {
+        "method_id": "method_3",
+        "channel": "in_person",
+        "processing_time_text": "3 ngày làm việc",
+        "fee_text": null,
+        "description": null,
+        "is_online": false,
+        "is_postal": false,
+        "is_in_person": true
+      }
+    ],
+    "timing_summary": {
+      "unique_processing_times": [
+        "3 ngày làm việc"
+      ],
+      "method_count": 3
+    }
+  },
+  "documents": {
+    "required": [
+      {
+        "document_id": "b_n_sao_quy_t_nh_ho_c_ch_ng_nh_n_thu_h_i_ch_ng_nh_n_ng_k_xe_bi_n_s_xe",
+        "name": "Bản sao Quyết định hoặc Chứng nhận thu hồi chứng nhận đăng ký xe, biển số xe.",
+        "group_name": "Trường hợp xe bị hư hỏng không sử dụng được; xe bị thải bỏ, bị mất không tìm được và chủ xe đề nghị thu hồi chứng nhận đăng ký xe, biển số xe theo quy định pháp luật về trật tự, an toàn giao thông đường bộ",
+        "group_type": "conditional",
+        "original_count": "0",
+        "copy_count": "1",
+        "conditions": [],
+        "attachment_label": null,
+        "attachment_path": null
+      },
+      {
+        "document_id": "gi_y_ngh_tr_l_i_ho_c_b_tr_ph_s_d_ng_ng_b_theo_m_u_s_01_t_i_ph_l_c_ii_ban_h_nh_k_m_theo_ngh_nh_s_364_2025_n_cp",
+        "name": "Giấy đề nghị trả lại hoặc bù trừ phí sử dụng đường bộ theo Mẫu số 01 tại Phụ lục II ban hành kèm theo Nghị định số 364/2025/NĐ-CP.",
+        "group_name": "Trường hợp xe bị hư hỏng không sử dụng được; xe bị thải bỏ, bị mất không tìm được và chủ xe đề nghị thu hồi chứng nhận đăng ký xe, biển số xe theo quy định pháp luật về trật tự, an toàn giao thông đường bộ",
+        "group_type": "conditional",
+        "original_count": "1",
+        "copy_count": "0",
+        "conditions": [],
+        "attachment_label": null,
+        "attachment_path": null
+      },
+      {
+        "document_id": "gi_y_ngh_tr_l_i_ho_c_b_tr_ph_s_d_ng_ng_b_theo_m_u_s_01_t_i_ph_l_c_ii_ban_h_nh_k_m_theo_ngh_nh_s_364_2025_n_cp",
+        "name": "Giấy đề nghị trả lại hoặc bù trừ phí sử dụng đường bộ theo Mẫu số 01 tại Phụ lục II ban hành kèm theo Nghị định số 364/2025/NĐ-CP.",
+        "group_name": "Trường hợp xe bị mất trộm trong thời gian từ 30 ngày trở lên sau đó tìm được, thu hồi và giao lại cho chủ xe",
+        "group_type": "conditional",
+        "original_count": "1",
+        "copy_count": "0",
+        "conditions": [],
+        "attachment_label": null,
+        "attachment_path": null
+      },
+      {
+        "document_id": "n_tr_nh_b_o_v_vi_c_m_t_t_i_s_n_c_x_c_nh_n_c_a_c_quan_c_ng_an_v_bi_n_b_n_b_n_giao_t_i_s_n_do_c_quan_c_ng_an_thu_h_i_giao_cho_ch_xe",
+        "name": "Đơn trình báo về việc mất tài sản có xác nhận của cơ quan công an và Biên bản bàn giao tài sản do cơ quan công an thu hồi giao cho chủ xe.",
+        "group_name": "Trường hợp xe bị mất trộm trong thời gian từ 30 ngày trở lên sau đó tìm được, thu hồi và giao lại cho chủ xe",
+        "group_type": "conditional",
+        "original_count": "1",
+        "copy_count": "0",
+        "conditions": [],
+        "attachment_label": null,
+        "attachment_path": null
+      },
+      {
+        "document_id": "gi_y_ngh_tr_l_i_ho_c_b_tr_ph_s_d_ng_ng_b_theo_m_u_s_01_t_i_ph_l_c_ii_ban_h_nh_k_m_theo_ngh_nh_s_364_2025_n_cp",
+        "name": "Giấy đề nghị trả lại hoặc bù trừ phí sử dụng đường bộ theo Mẫu số 01 tại Phụ lục II ban hành kèm theo Nghị định số 364/2025/NĐ-CP.",
+        "group_name": "Trường hợp xe bị tịch thu; xe bị tạm giữ trong thời gian từ 30 ngày trở lên",
+        "group_type": "conditional",
+        "original_count": "1",
+        "copy_count": "0",
+        "conditions": [],
+        "attachment_label": null,
+        "attachment_path": null
+      },
+      {
+        "document_id": "bi_n_b_n_thu_tem_ki_m_nh_v_gi_y_ch_ng_nh_n_ki_m_nh_theo_m_u_s_02_t_i_ph_l_c_ii_ban_h_nh_k_m_theo_ngh_nh_s_364_2025_n_cp",
+        "name": "Biên bản thu Tem kiểm định và Giấy chứng nhận kiểm định theo Mẫu số 02 tại Phụ lục II ban hành kèm theo Nghị định số 364/2025/NĐ-CP",
+        "group_name": "Trường hợp xe tạm dừng tham gia giao thông liên tục từ 30 ngày trở lên",
+        "group_type": "conditional",
+        "original_count": "1",
+        "copy_count": "1",
+        "conditions": [],
+        "attachment_label": null,
+        "attachment_path": null
+      },
+      {
+        "document_id": "gi_y_ngh_tr_l_i_ho_c_b_tr_ph_s_d_ng_ng_b_theo_m_u_s_01_t_i_ph_l_c_ii_ban_h_nh_k_m_theo_ngh_nh_s_364_2025_n_cp",
+        "name": "Giấy đề nghị trả lại hoặc bù trừ phí sử dụng đường bộ theo Mẫu số 01 tại Phụ lục II ban hành kèm theo Nghị định số 364/2025/NĐ-CP.",
+        "group_name": "Trường hợp xe tạm dừng tham gia giao thông liên tục từ 30 ngày trở lên",
+        "group_type": "conditional",
+        "original_count": "1",
+        "copy_count": "0",
+        "conditions": [],
+        "attachment_label": null,
+        "attachment_path": null
+      },
+      {
+        "document_id": "bi_n_b_n_thu_tem_ki_m_nh_theo_m_u_s_08_t_i_ph_l_c_ii_banhafnh_k_m_theo_ngh_nh_s_364_2025_n_cp",
+        "name": "Biên bản thu Tem kiểm định theo Mẫu số 08 tại Phụ lục II banhafnh kèm theo Nghị định số 364/2025/NĐ-CP",
+        "group_name": "Trường hợp xe đang tham gia giao thông, sử dụng đường dành cho giao thông công cộng chuyển sang không tham gia giao thông, không sử dụng đường dành cho giao thông công cộng",
+        "group_type": "conditional",
+        "original_count": "1",
+        "copy_count": "0",
+        "conditions": [],
+        "attachment_label": null,
+        "attachment_path": null
+      },
+      {
+        "document_id": "gi_y_ngh_tr_l_i_ho_c_b_tr_ph_s_d_ng_ng_b_theo_m_u_s_01_t_i_ph_l_c_ii_ban_h_nh_k_m_theo_ngh_nh_s_364_2025_n_cp",
+        "name": "Giấy đề nghị trả lại hoặc bù trừ phí sử dụng đường bộ theo Mẫu số 01 tại Phụ lục II ban hành kèm theo Nghị định số 364/2025/NĐ-CP.",
+        "group_name": "Trường hợp xe đang tham gia giao thông, sử dụng đường dành cho giao thông công cộng chuyển sang không tham gia giao thông, không sử dụng đường dành cho giao thông công cộng",
+        "group_type": "conditional",
+        "original_count": "1",
+        "copy_count": "1",
+        "conditions": [],
+        "attachment_label": null,
+        "attachment_path": null
+      },
+      {
+        "document_id": "b_n_sao_gi_y_ph_p_li_n_v_n_ho_c_v_n_b_n_cho_ph_p_c_a_c_quan_c_th_m_quy_n_c_p_theo_quy_nh_c_a_ph_p_lu_t_v_ho_t_ng_v_n_t_i_ng_b_b_n_sao_t_khai_ph_ng_ti_n_v_n_t_i_ng_b_t_m_xu_t_t_i_xu_t_c_x_c_nh_n_c_a_h_i_quan_c_a_kh_u_l_m_th_t_c_t_m_xu_t_v_t_i_nh_p",
+        "name": "Bản sao Giấy phép liên vận hoặc văn bản cho phép của cơ quan có thẩm quyền cấp theo quy định của pháp luật về hoạt động vận tải đường bộ; bản sao Tờ khai phương tiện vận tải đường bộ tạm xuất- tái xuất có xác nhận của hải quan cửa khẩu đã làm thủ tục tạm xuất và tái nhập",
+        "group_name": "Trường hợp xe đăng ký, đăng kiểm tại Việt Nam nhưng hoạt động tại nước ngoài liên tục từ 30 ngày trở lên",
+        "group_type": "conditional",
+        "original_count": "0",
+        "copy_count": "1",
+        "conditions": [],
+        "attachment_label": null,
+        "attachment_path": null
+      },
+      {
+        "document_id": "gi_y_ngh_tr_l_i_ho_c_b_tr_ph_s_d_ng_ng_b_theo_m_u_s_01_t_i_ph_l_c_ii_ban_h_nh_k_m_theo_ngh_nh_s_364_2025_n_cp",
+        "name": "Giấy đề nghị trả lại hoặc bù trừ phí sử dụng đường bộ theo Mẫu số 01 tại Phụ lục II ban hành kèm theo Nghị định số 364/2025/NĐ-CP.",
+        "group_name": "Trường hợp xe đăng ký, đăng kiểm tại Việt Nam nhưng hoạt động tại nước ngoài liên tục từ 30 ngày trở lên",
+        "group_type": "conditional",
+        "original_count": "1",
+        "copy_count": "0",
+        "conditions": [],
+        "attachment_label": null,
+        "attachment_path": null
+      }
+    ],
+    "conditional": [
+      {
+        "document_id": "b_n_sao_quy_t_nh_ho_c_bi_n_b_n_t_m_gi_ph_ng_ti_n_v_bi_n_b_n_b_n_giao_t_i_s_n_sau_khi_b_t_m_gi_i_v_i_tr_ng_h_p_xe_t_b_t_m_gi",
+        "name": "Bản sao Quyết định hoặc Biên bản tạm giữ phương tiện và Biên bản bàn giao tài sản sau khi bị tạm giữ đối với trường hợp xe ô tô bị tạm giữ.",
+        "group_name": "Trường hợp xe bị tịch thu; xe bị tạm giữ trong thời gian từ 30 ngày trở lên",
+        "group_type": "conditional",
+        "original_count": "0",
+        "copy_count": "1",
+        "conditions": [
+          "Bản sao Quyết định hoặc Biên bản tạm giữ phương tiện và Biên bản bàn giao tài sản sau khi bị tạm giữ đối với trường hợp xe ô tô bị tạm giữ."
+        ],
+        "attachment_label": null,
+        "attachment_path": null
+      },
+      {
+        "document_id": "b_n_sao_quy_t_nh_ho_c_bi_n_b_n_t_ch_thu_ph_ng_ti_n_i_v_i_tr_ng_h_p_xe_t_b_t_ch_thu",
+        "name": "Bản sao Quyết định hoặc Biên bản tịch thu phương tiện đối với trường hợp xe ô tô bị tịch thu.",
+        "group_name": "Trường hợp xe bị tịch thu; xe bị tạm giữ trong thời gian từ 30 ngày trở lên",
+        "group_type": "conditional",
+        "original_count": "0",
+        "copy_count": "1",
+        "conditions": [
+          "Bản sao Quyết định hoặc Biên bản tịch thu phương tiện đối với trường hợp xe ô tô bị tịch thu."
+        ],
+        "attachment_label": null,
+        "attachment_path": null
+      },
+      {
+        "document_id": "s_l_ng_h_s_01_b_khi_n_p_h_s_i_v_i_c_c_b_n_sao_ch_xe_xu_t_tr_nh_b_n_ch_nh_i_chi_u_ho_c_n_p_b_n_sao_c_ch_ng_th_c_ho_c_b_n_sao_t_s_g_c_tr_ng_h_p_n_p_h_s_th_c_hi_n_th_t_c_h_nh_ch_nh_tr_n_m_i_tr_ng_i_n_t_th_th_c_hi_n_theo_y_u_c_u_c_a_h_th_ng_cung_c_p_d_ch_v_c_ng_tr_c_tuy_n",
+        "name": "Số lượng hồ sơ: 01 bộ. Khi nộp hồ sơ, đối với các bản sao, chủ xe xuất trình bản chính để đối chiếu hoặc nộp bản sao có chứng thực hoặc bản sao từ sổ gốc. Trường hợp nộp hồ sơ để thực hiện thủ tục hành chính trên môi trường điện tử thì thực hiện theo yêu cầu của hệ thống cung cấp dịch vụ công trực tuyến.",
+        "group_name": "Trường hợp xe đăng ký, đăng kiểm tại Việt Nam nhưng hoạt động tại nước ngoài liên tục từ 30 ngày trở lên",
+        "group_type": "conditional",
+        "original_count": "0",
+        "copy_count": "0",
+        "conditions": [
+          "Số lượng hồ sơ: 01 bộ. Khi nộp hồ sơ, đối với các bản sao, chủ xe xuất trình bản chính để đối chiếu hoặc nộp bản sao có chứng thực hoặc bản sao từ sổ gốc. Trường hợp nộp hồ sơ để thực hiện thủ tục hành chính trên môi trường điện tử thì thực hiện theo yêu cầu của hệ thống cung cấp dịch vụ công trực tuyến."
+        ],
+        "attachment_label": null,
+        "attachment_path": null
+      }
+    ],
+    "presented": [],
+    "notes": [],
+    "forms": [],
+    "empty_groups": [],
+    "document_count": 14
+  },
+  "process": {
+    "steps": [
+      {
+        "step_id": "step_1",
+        "title": null,
+        "content": "1. Đối với xe ô tô quy định tại khoản 1 Điều 3 Nghị định số 364/2025/NĐ-CP, chủ xe lập hồ sơ đề nghị trả lại hoặc bù trừ phí sử dụng đường bộ gửi cơ sở đăng kiểm.",
+        "actor": "user",
+        "channel_hint": null,
+        "time_hint": null
+      },
+      {
+        "step_id": "step_2",
+        "title": null,
+        "content": "Cơ sở đăng kiểm kiểm tra và tiếp nhận hồ sơ, đóng dấu tiếp nhận hồ sơ, ghi thời gian nhận hồ sơ, ghi nhận các tài liệu trong hồ sơ, tính và trả lại hoặc bù trừ phí cho chủ xe.",
+        "actor": "user",
+        "channel_hint": null,
+        "time_hint": null
+      }
+    ],
+    "step_count": 2,
+    "notes": []
+  },
+  "eligibility": {
+    "conditions": [],
+    "has_conditions": false
+  },
+  "results": {
+    "items": [
+      {
+        "name": "Quyết định về việc trả lại hoặc bù trừ phí sử dụng đường bộ",
+        "result_code": "KQ.G12.001420",
+        "raw_text": "Quyết định về việc trả lại hoặc bù trừ phí sử dụng đường bộ"
+      },
+      {
+        "name": "Thông báo về việc không được trả lại hoặc bù trừ sử dụng đường bộ",
+        "result_code": "KQ.G12.001421",
+        "raw_text": "Thông báo về việc không được trả lại hoặc bù trừ sử dụng đường bộ"
+      }
+    ],
+    "primary_result": {
+      "name": "Quyết định về việc trả lại hoặc bù trừ phí sử dụng đường bộ",
+      "result_code": "KQ.G12.001420",
+      "raw_text": "Quyết định về việc trả lại hoặc bù trừ phí sử dụng đường bộ"
+    }
+  },
+  "legal_basis": {
+    "items": [
+      {
+        "title": "Luật Trật tự, an toàn giao thông đường bộ",
+        "code": "36/2024/QH15"
+      },
+      {
+        "title": "Phí và lệ phí",
+        "code": "97/2015/QH13"
+      },
+      {
+        "title": "Luật số 35/2024/QH15 của Quốc hội: Luật Đường bộ",
+        "code": "35/2024/QH15"
+      },
+      {
+        "title": "Nghị định số 364/2025/NĐ-CP",
+        "code": "364/2025/NĐ-CP"
+      }
+    ],
+    "count": 4
+  },
+  "attachments": [],
+  "signals": {
+    "raw_parse_warnings": [],
+    "missing_documents": false,
+    "documents_section_present": true,
+    "documents_declared_empty": false,
+    "documents_only_in_notes": false,
+    "missing_results": false
+  }
+}

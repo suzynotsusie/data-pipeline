@@ -1,0 +1,183 @@
+{
+  "schema_version": "1.0",
+  "normalizer_version": "0.2.0",
+  "source": {
+    "procedure_code": "1.005090",
+    "title": "Xét tuyển sinh vào trường phổ thông dân tộc nội trú",
+    "raw_structured_parser_version": "0.1.0",
+    "field": "Thi, tuyển sinh"
+  },
+  "procedure": {
+    "level": null,
+    "procedure_type": null,
+    "target_users": [],
+    "authorities": [
+      "Sở Giáo dục và Đào tạo Ủy ban nhân dân cấp xã"
+    ],
+    "receiving_places": []
+  },
+  "submission": {
+    "channels": [
+      "in_person",
+      "postal"
+    ],
+    "methods": [
+      {
+        "method_id": "method_1",
+        "channel": "in_person",
+        "processing_time_text": null,
+        "fee_text": null,
+        "description": "Tùy theo đợt Theo đợt, trước khi khai giảng năm học.",
+        "is_online": false,
+        "is_postal": false,
+        "is_in_person": true
+      },
+      {
+        "method_id": "method_2",
+        "channel": "postal",
+        "processing_time_text": null,
+        "fee_text": null,
+        "description": "Tùy theo đợt Theo đợt, trước khi khai giảng năm học",
+        "is_online": false,
+        "is_postal": true,
+        "is_in_person": false
+      }
+    ],
+    "timing_summary": {
+      "unique_processing_times": [],
+      "method_count": 2
+    }
+  },
+  "documents": {
+    "required": [
+      {
+        "document_id": "tuy_n_sinh_trung_h_c_c_s_v_ph_th_ng_t_n_gi_y_t_m_u_n_t_khai_s_l_ng_h_c_b_c_p_ti_u_h_c_ho_c_c_c_h_s_kh_c_c_gi_tr_thay_th_h_c_b",
+        "name": "Tuyển sinh trung học cơ sở và phổ thông Tên giấy tờ Mẫu đơn, tờ khai Số lượng Học bạ cấp tiểu học hoặc các hồ sơ khác có giá trị thay thế học bạ",
+        "group_name": "default",
+        "group_type": "required",
+        "original_count": "1",
+        "copy_count": "0",
+        "conditions": [],
+        "attachment_label": null,
+        "attachment_path": null
+      },
+      {
+        "document_id": "h_c_b_c_p_trung_h_c_c_s",
+        "name": "Học bạ cấp trung học cơ sở",
+        "group_name": "default",
+        "group_type": "required",
+        "original_count": "1",
+        "copy_count": "0",
+        "conditions": [],
+        "attachment_label": null,
+        "attachment_path": null
+      }
+    ],
+    "conditional": [
+      {
+        "document_id": "gi_y_x_c_nh_n_ch_u_ti_n_do_c_quan_c_th_m_quy_n_c_p_n_u_c",
+        "name": "Giấy xác nhận chế độ ưu tiên do cơ quan có thẩm quyền cấp (nếu có)",
+        "group_name": "default",
+        "group_type": "required",
+        "original_count": "1",
+        "copy_count": "0",
+        "conditions": [
+          "Giấy xác nhận chế độ ưu tiên do cơ quan có thẩm quyền cấp (nếu có)"
+        ],
+        "attachment_label": null,
+        "attachment_path": null
+      },
+      {
+        "document_id": "gi_y_x_c_nh_n_ch_u_ti_n_do_c_quan_c_th_m_quy_n_c_p_n_u_c",
+        "name": "Giấy xác nhận chế độ ưu tiên do cơ quan có thẩm quyền cấp (nếu có)",
+        "group_name": "default",
+        "group_type": "required",
+        "original_count": "1",
+        "copy_count": "0",
+        "conditions": [
+          "Giấy xác nhận chế độ ưu tiên do cơ quan có thẩm quyền cấp (nếu có)"
+        ],
+        "attachment_label": null,
+        "attachment_path": null
+      }
+    ],
+    "presented": [],
+    "notes": [
+      "Bản sao chứng thực hoặc bản chụp/photo kèm bản chính để đối chiếu bằng tốt nghiệp trung học cơ sở hoặc giấy chứng nhận tốt nghiệp trung học cơ sở tạm thờ"
+    ],
+    "forms": [],
+    "empty_groups": [],
+    "document_count": 4
+  },
+  "process": {
+    "steps": [
+      {
+        "step_id": "step_1",
+        "title": null,
+        "content": "1. Kế hoạch tuyển sinh",
+        "actor": "user",
+        "channel_hint": null,
+        "time_hint": null
+      },
+      {
+        "step_id": "step_2",
+        "title": "a)",
+        "content": "a) Sở Giáo dục và Đào tạo lập kế hoạch tuyển sinh đối với trường PTDTNT trên địa bàn tỉnh, trình Ủy ban nhân dân cấp tỉnh phê duyệt và ban hành. Kế hoạch tuyển sinh gồm các nội dung chính sau: đối tượng, địa bàn, phương thức, chỉ tiêu tuyển sinh; tỷ lệ tuyển sinh ở xã, thôn đặc biệt khó khăn và các địa bàn khác; tổ chức công tác tuyển sinh;",
+        "actor": "user",
+        "channel_hint": null,
+        "time_hint": null
+      },
+      {
+        "step_id": "step_3",
+        "title": "b)",
+        "content": "b) Trường Hữu Nghị 80, Trường Hữu Nghị T78, Trường Phổ thông Vùng cao Việt Bắc lập kế hoạch tuyển sinh, báo cáo cơ quan chủ quản và trình Bộ Giáo dục và Đào tạo phê duyệt. 2. Tổ chức tuyển sinh",
+        "actor": "authority",
+        "channel_hint": null,
+        "time_hint": null
+      },
+      {
+        "step_id": "step_4",
+        "title": "a)",
+        "content": "a) Sở Giáo dục và Đào tạo hướng dẫn tuyển sinh đối với các trường PTDTNT có cấp học cao nhất là trung học phổ thông và hướng dẫn tuyển sinh đối với các Ủy ban nhân nhân xã hướng dẫn tuyển sinh đối với các trường PTDTNT trung học cơ sở đặt trên địa bàn;",
+        "actor": "user",
+        "channel_hint": null,
+        "time_hint": null
+      },
+      {
+        "step_id": "step_5",
+        "title": "b)",
+        "content": "b) Trường Hữu Nghị 80, Trường Hữu Nghị T78 và Trường Phổ thông Vùng cao Việt Bắc tổ chức tuyển sinh theo kế hoạch được phê duyệt. Kế hoạch tuyển sinh gồm các nội dung chính sau: đối tượng; địa bàn; chỉ tiêu; phương thức tuyển sinh; tuyển thẳng và chế độ ưu tiên, khuyến khích; tổ chức công tác tuyển sinh.",
+        "actor": "user",
+        "channel_hint": null,
+        "time_hint": null
+      }
+    ],
+    "step_count": 5,
+    "notes": []
+  },
+  "eligibility": {
+    "conditions": [
+      "a) Thuộc đối tượng tuyển sinh quy định tại Điều 9 của Quy chế tổ chức và hoạt động của trường phổ thông dân tộc nội trú ban hành kèm theo Thông tư số 04/2023/TT-BGDĐT ngày 23 tháng 02 năm 2023 của Bộ trưởng Bộ Giáo dục và Đào tạo;",
+      "b) Đảm bảo các quy định tại Quy chế tuyển sinh trung học cơ sở và tuyển sinh trung học phổ thông do Bộ Giáo dục và Đào tạo ban hành.",
+      "c) Tuyển thẳng vào trường PTDTNT các đối tượng sau: - Học sinh dân tộc thiểu số rất ít người quy định tại Nghị định số 57/2017/NĐ-CP ngày 09 tháng 5 năm 2017 của Chính phủ. ; - Học sinh trung học cơ sở thuộc đối tượng quy định tại Điều 9 của Quy chế này đạt giải cấp quốc gia do Bộ Giáo dục và Đào tạo tổ chức hoặc phối hợp với các Bộ và cơ quan ngang bộ tổ chức trên quy mô toàn quốc đối với các cuộc thi, kì thi, hội thi (sau đây gọi chung là cuộc thi) về văn hóa, văn nghệ, thể thao, cuộc thi nghiên cứu khoa học, kỹ thuật; đạt giải cuộc thi quốc tế do Bộ trưởng Bộ Giáo dục và Đào tạo quyết định chọn cử”;"
+    ],
+    "has_conditions": true
+  },
+  "results": {
+    "items": [],
+    "primary_result": null
+  },
+  "legal_basis": {
+    "items": [],
+    "count": 0
+  },
+  "attachments": [],
+  "signals": {
+    "raw_parse_warnings": [],
+    "missing_documents": false,
+    "documents_section_present": true,
+    "documents_declared_empty": false,
+    "documents_only_in_notes": false,
+    "missing_results": true
+  }
+}

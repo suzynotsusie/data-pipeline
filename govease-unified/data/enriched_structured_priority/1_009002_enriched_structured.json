@@ -1,0 +1,79 @@
+{
+  "schema_version": "1.0",
+  "enricher_version": "0.2.0",
+  "source": {
+    "procedure_code": "1.009002",
+    "title": "Đăng ký hỗ trợ tiền đóng học phí và chi phí sinh hoạt đối với sinh viên học các ngành đào tạo giáo viên tại các đại học, học viện, trường đại học, trường cao đẳng được phép đào tạo giáo viên",
+    "group_key": "hoc_tap",
+    "workflow_family": "education_study_workflow",
+    "subflow": "hoc_bong_va_ho_tro"
+  },
+  "experience": {
+    "entry_label": "Hỗ trợ giáo dục và học tập",
+    "overview_summary": "Thủ tục này thuộc nhóm giáo dục và học tập, thường liên quan đến hồ sơ đào tạo, văn bằng hoặc điều kiện học tập của người học. Kết quả thường nhận được là Danh sách sinh viên sư phạm được hưởng chính sách hỗ trợ tiền đóng học phí, chi phí sinh hoạt và danh sách sinh viên sư phạm thuộc đối tượng giao nhiệm vụ, đặt hàng của địa phương được công khai trên cổng thông tin điện tử của địa phương và trang thông tin điện tử của cơ sở đào tạo giáo viên. Thời gian xử lý tham khảo: 15 ngày.",
+    "next_step_summary": "Nên rà trước thông tin người học, cơ sở đào tạo và loại kết quả cần xin xác nhận hoặc cấp lại. Có thể chọn kênh nộp phù hợp: Trực tiếp, Trực tuyến, Dịch vụ bưu chính. Hiện có 1 mục giấy tờ cần theo dõi trong checklist.",
+    "tone": "supportive_public_service"
+  },
+  "guidance": {
+    "highlight_documents": [
+      {
+        "bucket": "required",
+        "name": "Đơn đề nghị hưởng và cam kết bồi hoàn học phí, chi phí sinh hoạt (theo quy định tại điểm a khoản 12 Điều 1 và theo Mẫu số 01 tại Phụ lục ban hành kèm theo Nghị định số 60/2025/NĐ-CP ngày 03/3/2025 của Chính phủ sửa đổi, bổ sung một số điều của Nghị định số 116/2020/NĐ-CP ngày 25/9/2020 của Chính phủ quy định về chính sách hỗ trợ tiền đóng học phí, chi phí sinh hoạt đối với sinh viên sư phạm).",
+        "conditions": [],
+        "attachment_path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/1_009002/MUNNGH_kemtheoND60.docx"
+      }
+    ],
+    "special_cases": [],
+    "common_errors": [
+      "Điền sai mẫu tờ khai hoặc chọn sai biểu mẫu đi kèm."
+    ],
+    "validation_hints": [
+      "Nên xác định trước kênh nộp hồ sơ để biết có cần bản giấy, bản điện tử hay xuất trình trực tiếp.",
+      "Có mẫu biểu đính kèm, nên kiểm tra đúng biểu mẫu trước khi nộp.",
+      "Nên rà lại thông tin người học, cơ sở đào tạo và loại xác nhận hoặc văn bằng cần xin."
+    ]
+  },
+  "intake": {
+    "candidate_input_fields": [
+      {
+        "field_id": "learner_full_name",
+        "label": "Tên người học",
+        "field_type": "text",
+        "required": true
+      },
+      {
+        "field_id": "education_record_type",
+        "label": "Loại hồ sơ học tập cần xử lý",
+        "field_type": "text",
+        "required": true
+      },
+      {
+        "field_id": "education_institution",
+        "label": "Cơ sở đào tạo liên quan",
+        "field_type": "text",
+        "required": false
+      },
+      {
+        "field_id": "submission_channel_preference",
+        "label": "Kênh nộp dự kiến",
+        "field_type": "enum",
+        "required": false
+      }
+    ],
+    "suggested_clarifying_questions": [
+      "Bạn đang cần xử lý hồ sơ học tập, văn bằng hay xác nhận nào?",
+      "Người học và cơ sở đào tạo liên quan đã xác định rõ chưa?"
+    ]
+  },
+  "ui_hints": {
+    "primary_channel": "online",
+    "result_label": "Danh sách sinh viên sư phạm được hưởng chính sách hỗ trợ tiền đóng học phí, chi phí sinh hoạt và danh sách sinh viên sư phạm thuộc đối tượng giao nhiệm vụ, đặt hàng của địa phương được công khai trên cổng thông tin điện tử của địa phương và trang thông tin điện tử của cơ sở đào tạo giáo viên",
+    "time_badge": "15 ngày",
+    "document_count_badge": 1
+  },
+  "provenance": {
+    "generator": "workflow_domain_enricher",
+    "derivation_mode": "rule_based_semantic_enrichment",
+    "supported_group": true
+  }
+}

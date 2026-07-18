@@ -1,0 +1,89 @@
+{
+  "schema_version": "1.0",
+  "enricher_version": "0.2.0",
+  "source": {
+    "procedure_code": "1.014382",
+    "title": "Thủ tục đặt và tổ chức xét tặng giải thưởng của tổ chức, cá nhân không cư trú, không hoạt động tại Việt Nam",
+    "group_key": "cu_tru_giay_to",
+    "workflow_family": null,
+    "subflow": null
+  },
+  "experience": {
+    "entry_label": "Hỗ trợ cư trú và giấy tờ",
+    "overview_summary": "Thủ tục này thuộc nhóm cư trú và giấy tờ, thường cần kiểm tra thông tin định danh hoặc hồ sơ giấy tờ chuyên ngành. Kết quả thường nhận được là Văn bản chấp thuận việc đặt và tổ chức giải thưởng. Thời gian xử lý tham khảo: 10 ngày làm việc.",
+    "next_step_summary": "Nên kiểm tra trước giấy tờ định danh, nơi nộp và mẫu biểu liên quan, rồi chọn kênh nộp phù hợp: Trực tiếp. Hiện có khoảng 2 mục giấy tờ cần theo dõi trong checklist.",
+    "tone": "supportive_public_service"
+  },
+  "guidance": {
+    "highlight_documents": [
+      {
+        "bucket": "required",
+        "name": "Đơn đăng ký (bản chính) theo Mẫu số 02 tại Phụ lục ban hành kèm theo Nghị định số 263/2025/NĐ-CP;",
+        "conditions": [],
+        "attachment_path": null
+      },
+      {
+        "bucket": "conditional",
+        "name": "Dự thảo Quy chế xét tặng giải thưởng, bao gồm các nội dung: tên giải thưởng, đối tượng được xét tặng, nguyên tắc, điều kiện, tiêu chuẩn, trình tự, thủ tục xét tặng, quyền lợi của tổ chức, cá nhân được tặng giải thưởng, thời gian tổ chức xét tặng; Trường hợp tài liệu trong hồ sơ sử dụng ngôn ngữ nước ngoài thì phải kèm theo bản dịch sang tiếng Việt có công chứng theo quy định của pháp luật.",
+        "conditions": [
+          "Dự thảo Quy chế xét tặng giải thưởng, bao gồm các nội dung: tên giải thưởng, đối tượng được xét tặng, nguyên tắc, điều kiện, tiêu chuẩn, trình tự, thủ tục xét tặng, quyền lợi của tổ chức, cá nhân được tặng giải thưởng, thời gian tổ chức xét tặng; Trường hợp tài liệu trong hồ sơ sử dụng ngôn ngữ nước ngoài thì phải kèm theo bản dịch sang tiếng Việt có công chứng theo quy định của pháp luật."
+        ],
+        "attachment_path": null
+      }
+    ],
+    "special_cases": [
+      "Có yếu tố nước ngoài"
+    ],
+    "common_errors": [
+      "Thiếu giấy tờ hợp pháp hóa hoặc giấy tờ nhân thân của phía nước ngoài.",
+      "Điền sai mẫu tờ khai hoặc chọn sai biểu mẫu đi kèm."
+    ],
+    "validation_hints": [
+      "Nên xác định trước kênh nộp hồ sơ để biết có cần bản giấy, bản điện tử hay xuất trình trực tiếp.",
+      "Nên đối chiếu trước dữ liệu định danh và nơi cư trú để tránh bị yêu cầu bổ sung."
+    ]
+  },
+  "intake": {
+    "candidate_input_fields": [
+      {
+        "field_id": "document_request_type",
+        "label": "Loại giấy tờ cần xử lý",
+        "field_type": "text",
+        "required": true
+      },
+      {
+        "field_id": "submission_channel_preference",
+        "label": "Kênh nộp dự kiến",
+        "field_type": "enum",
+        "required": false
+      },
+      {
+        "field_id": "identity_document_available",
+        "label": "Có giấy tờ định danh",
+        "field_type": "boolean",
+        "required": true
+      },
+      {
+        "field_id": "residency_or_status_known",
+        "label": "Biết rõ nơi cư trú hoặc tình trạng hiện tại",
+        "field_type": "boolean",
+        "required": false
+      }
+    ],
+    "suggested_clarifying_questions": [
+      "Bạn đang xử lý giấy tờ gì và muốn nộp trực tiếp hay trực tuyến?",
+      "Thông tin định danh và nơi cư trú hiện tại đã sẵn sàng để đối chiếu chưa?"
+    ]
+  },
+  "ui_hints": {
+    "primary_channel": "in_person",
+    "result_label": "Văn bản chấp thuận việc đặt và tổ chức giải thưởng",
+    "time_badge": "10 ngày làm việc",
+    "document_count_badge": 2
+  },
+  "provenance": {
+    "generator": "workflow_domain_enricher",
+    "derivation_mode": "rule_based_semantic_enrichment",
+    "supported_group": true
+  }
+}

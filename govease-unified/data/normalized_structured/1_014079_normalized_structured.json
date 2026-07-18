@@ -1,0 +1,245 @@
+{
+  "schema_version": "1.0",
+  "normalizer_version": "0.2.0",
+  "source": {
+    "procedure_code": "1.014079",
+    "title": "Cấp phép nhập khẩu thuốc phải kiểm soát đặc biệt có giấy đăng ký lưu hành thuốc tại Việt Nam",
+    "raw_structured_parser_version": "0.1.0",
+    "field": "Dược phẩm"
+  },
+  "procedure": {
+    "level": "Cấp bộ/ngành",
+    "procedure_type": "TTHC được luật giao quy định chi tiết",
+    "target_users": [
+      "Tổ chức (không bao gồm doanh nghiệp",
+      "HTX)",
+      "Hợp tác xã",
+      "Doanh nghiệp",
+      "Tổ chức nước ngoài",
+      "Doanh nghiệp có vốn đầu tư nước ngoài",
+      "Doanh nghiệp Việt Nam"
+    ],
+    "authorities": [
+      "Cục Quản lý Y, Dược cổ truyền - Bộ Y tế, Cục Quản lý Dược - Bộ Y tế"
+    ],
+    "receiving_places": []
+  },
+  "submission": {
+    "channels": [
+      "in_person",
+      "online",
+      "postal"
+    ],
+    "methods": [
+      {
+        "method_id": "method_1",
+        "channel": "online",
+        "processing_time_text": "15 ngày",
+        "fee_text": null,
+        "description": "15 ngày. Riêng đối với thuốc mới, thuốc hiếm, thuốc công nghệ cao, thuốc đã được thử lâm sàng tại Việt Nam thì thời hạn giải quyết là 10 ngày.",
+        "is_online": true,
+        "is_postal": false,
+        "is_in_person": false
+      },
+      {
+        "method_id": "method_2",
+        "channel": "postal",
+        "processing_time_text": "15 ngày",
+        "fee_text": null,
+        "description": "15 ngày. Riêng đối với thuốc mới, thuốc hiếm, thuốc công nghệ cao, thuốc đã được thử lâm sàng tại Việt Nam thì thời hạn giải quyết là 10 ngày.",
+        "is_online": false,
+        "is_postal": true,
+        "is_in_person": false
+      },
+      {
+        "method_id": "method_3",
+        "channel": "in_person",
+        "processing_time_text": "15 ngày",
+        "fee_text": null,
+        "description": "15 ngày. Riêng đối với thuốc mới, thuốc hiếm, thuốc công nghệ cao, thuốc đã được thử lâm sàng tại Việt Nam thì thời hạn giải quyết là 10 ngày.",
+        "is_online": false,
+        "is_postal": false,
+        "is_in_person": true
+      }
+    ],
+    "timing_summary": {
+      "unique_processing_times": [
+        "15 ngày"
+      ],
+      "method_count": 3
+    }
+  },
+  "documents": {
+    "required": [
+      {
+        "document_id": "a_n_h_ng_nh_p_kh_u",
+        "name": "a) Đơn hàng nhập khẩu",
+        "group_name": "default",
+        "group_type": "unknown",
+        "original_count": "1",
+        "copy_count": "0",
+        "conditions": [],
+        "attachment_label": "mubiudc.docx",
+        "attachment_path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/1_014079/mubiudc.docx"
+      },
+      {
+        "document_id": "b_b_o_c_o_k_t_qu_kinh_doanh_i_v_i_thu_c_nh_p_kh_u_theo_m_u_s_18_t_i_ph_l_c_iii_ban_h_nh_k_m_theo_ngh_nh_s_163_2025_n_cp_tr_thu_c_c",
+        "name": "b) Báo cáo kết quả kinh doanh đối với thuốc nhập khẩu theo Mẫu số 18 tại Phụ lục III ban hành kèm theo Nghị định số 163/2025/NĐ-CP, trừ thuốc độc.",
+        "group_name": "default",
+        "group_type": "unknown",
+        "original_count": "1",
+        "copy_count": "0",
+        "conditions": [],
+        "attachment_label": null,
+        "attachment_path": null
+      }
+    ],
+    "conditional": [
+      {
+        "document_id": "c_i_v_i_thu_c_ph_i_ki_m_so_t_c_bi_t_tr_thu_c_c_tr_ng_h_p_t_ng_s_l_ng_thu_c_ngh_nh_p_kh_u_s_l_ng_thu_c_c_n_t_n_t_i_th_i_i_m_l_p_n_h_ng_v_s_l_ng_thu_c_c_n_c_th_ti_p_t_c_nh_p_kh_u_t_c_c_gi_y_ph_p_nh_p_kh_u_c_c_p_tr_c_v_t_qu_150_so_v_i_t_ng_nhu_c_u_kinh_doanh_th_c_t_trong_k_b_o_c_o_li_n_tr_c_th_ph_i_c_v_n_b_n_gi_i_tr_nh_k_m_t_i_li_u_ch_ng_minh_l_k_t_qu_tr_ng_th_u_c_ph_duy_t_ho_c_h_p_ng_mua_b_n_ho_c_h_p_ng_nguy_n_t_c_k_m_n_t_h_ng_ghi_r_t_n_s_gi_y_ng_k_l_u_h_nh_v_s_l_ng_c_a_thu_c_tr_tr_ng_h_p_nh_p_kh_u_thu_c_l_n_u_th_thay_b_ng_k_ho_ch_kinh_doanh_d_ki_n_c_a_thu_c_ngh_nh_p_kh_u",
+        "name": "c) Đối với thuốc phải kiểm soát đặc biệt trừ thuốc độc, trường hợp tổng số lượng thuốc đề nghị nhập khẩu, số lượng thuốc còn tồn tại thời điểm lập đơn hàng và số lượng thuốc còn có thể tiếp tục nhập khẩu từ các giấy phép nhập khẩu đã được cấp trước đó vượt quá 150% so với tổng nhu cầu kinh doanh thực tế trong kỳ báo cáo liền trước thì phải có văn bản giải trình kèm tài liệu chứng minh là kết quả trúng thầu đã được phê duyệt hoặc hợp đồng mua bán hoặc hợp đồng nguyên tắc kèm đơn đặt hàng ghi rõ tên, số giấy đăng ký lưu hành và số lượng của thuốc, trừ trường hợp nhập khẩu thuốc lần đầu thì thay bằng kế hoạch kinh doanh dự kiến của thuốc đề nghị nhập khẩu.",
+        "group_name": "default",
+        "group_type": "unknown",
+        "original_count": "1",
+        "copy_count": "1",
+        "conditions": [
+          "c) Đối với thuốc phải kiểm soát đặc biệt trừ thuốc độc, trường hợp tổng số lượng thuốc đề nghị nhập khẩu, số lượng thuốc còn tồn tại thời điểm lập đơn hàng và số lượng thuốc còn có thể tiếp tục nhập khẩu từ các giấy phép nhập khẩu đã được cấp trước đó vượt quá 150% so với tổng nhu cầu kinh doanh thực tế trong kỳ báo cáo liền trước thì phải có văn bản giải trình kèm tài liệu chứng minh là kết quả trúng thầu đã được phê duyệt hoặc hợp đồng mua bán hoặc hợp đồng nguyên tắc kèm đơn đặt hàng ghi rõ tên, số giấy đăng ký lưu hành và số lượng của thuốc, trừ trường hợp nhập khẩu thuốc lần đầu thì thay bằng kế hoạch kinh doanh dự kiến của thuốc đề nghị nhập khẩu."
+        ],
+        "attachment_label": null,
+        "attachment_path": null
+      }
+    ],
+    "presented": [],
+    "notes": [],
+    "forms": [
+      {
+        "name": "a) Đơn hàng nhập khẩu",
+        "attachment_label": "mubiudc.docx",
+        "attachment_path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/1_014079/mubiudc.docx"
+      }
+    ],
+    "empty_groups": [],
+    "document_count": 3
+  },
+  "process": {
+    "steps": [
+      {
+        "step_id": "step_1",
+        "title": null,
+        "content": "1.",
+        "actor": "user",
+        "channel_hint": null,
+        "time_hint": null
+      },
+      {
+        "step_id": "step_2",
+        "title": "Bước 1:",
+        "content": "Bước 1: Cơ sở đề nghị cấp phép nhập khẩu nộp hồ sơ trực tiếp hoặc qua dịch vụ bưu chính hoặc trực tuyến về Bộ Y tế, cụ thể: - Cục Quản lý Dược đối với thuốc gây nghiện, thuốc hướng thần, thuốc tiền chất, thuốc dạng phối hợp có chứa dược chất gây nghiện, thuốc dạng phối hợp có chứa dược chất hướng thần, thuốc dạng phối hợp có chứa tiền chất, thuốc phóng xạ; thuốc trong danh mục thuốc, dược chất thuộc danh mục chất bị cấm sử dụng trong một số ngành, lĩnh vực; thuốc độc trừ thuốc cổ truyền độc; - Cục Quản lý Y, Dược cổ truyền đối với thuốc cổ truyền độc;",
+        "actor": "user",
+        "channel_hint": "trực tuyến",
+        "time_hint": null
+      },
+      {
+        "step_id": "step_3",
+        "title": "Bước 2:",
+        "content": "Bước 2: Sau khi nhận được hồ sơ, Cục Quản lý Dược/Cục Quản lý Y, Dược cổ truyền trả cho cơ sở đề nghị Phiếu tiếp nhận hồ sơ theo Mẫu số 01 tại Phụ lục I của Nghị định số 163/2025/NĐ-CP.",
+        "actor": "user",
+        "channel_hint": null,
+        "time_hint": null
+      },
+      {
+        "step_id": "step_4",
+        "title": "Bước 3:",
+        "content": "Bước 3: Trường hợp không có yêu cầu sửa đổi, bổ sung hồ sơ, trong thời hạn 15 ngày kể từ ngày ghi trên Phiếu tiếp nhận hồ sơ, Cục Quản lý Dược/Cục Quản lý Y, Dược cổ truyền cấp phép nhập khẩu. Trường hợp có yêu cầu sửa đổi, bổ sung hồ sơ, trong thời hạn 15 ngày kể từ ngày ghi trên Phiếu tiếp nhận hồ sơ, Cục Quản lý Dược/Cục Quản lý Y, Dược cổ truyền có văn bản trả lời theo Mẫu số 16 tại Phụ lục I của Nghị định số 163/2025/NĐ-CP để yêu cầu sửa đổi, bổ sung hồ sơ.",
+        "actor": "user",
+        "channel_hint": null,
+        "time_hint": "15 ngày"
+      },
+      {
+        "step_id": "step_5",
+        "title": "Bước 4:",
+        "content": "Bước 4: Sau khi nhận hồ sơ sửa đổi, bổ sung, Cục Quản lý Dược/Cục Quản lý Y, Dược cổ truyền trả cơ sở Phiếu tiếp nhận hồ sơ sửa đổi, bổ sung theo Mẫu số 01 tại Phụ lục I của Nghị định số 163/2025/NĐ-CP. Trường hợp hồ sơ sửa đổi, bổ sung không đáp ứng yêu cầu, trong thời hạn 15 ngày kể từ ngày ghi trên Phiếu tiếp nhận hồ sơ, Cục Quản lý Dược/Cục Quản lý Y, Dược cổ truyền có văn bản trả lời và nêu rõ lý do không cấp phép nhập khẩu theo Mẫu số 16 tại Phụ lục I của Nghị định số 163/2025/NĐ-CP. Trường hợp không có yêu cầu sửa đổi, bổ sung đối với hồ sơ sửa đổi, bổ sung, Cục Quản lý Dược/Cục Quản lý Y, Dược cổ truyền cấp phép nhập khẩu theo quy định tại",
+        "actor": "user",
+        "channel_hint": null,
+        "time_hint": "15 ngày"
+      },
+      {
+        "step_id": "step_6",
+        "title": "bước 3.",
+        "content": "bước 3. Trong thời hạn 06 tháng kể từ ngày Cục Quản lý Dược/Cục Quản lý Y, Dược cổ truyền có văn bản thông báo sửa đổi, bổ sung, cơ sở đề nghị cấp phép nhập khẩu phải nộp hồ sơ sửa đổi, bổ sung theo yêu cầu. Sau thời hạn trên, cơ sở không nộp hồ sơ sửa đổi, bổ sung thì hồ sơ đã nộp không còn giá trị. * Thời gian cấp phép nhập khẩu hoặc có văn bản thông báo sửa đổi, bổ sung đối với các hồ sơ đề nghị cấp phép nhập khẩu thuốc mới, thuốc hiếm, thuốc công nghệ cao, thuốc đã được thử lâm sàng tại Việt Nam được ưu tiên rút ngắn 05 ngày so với thời gian cấp phép nhập khẩu hoặc có văn bản thông báo sửa đổi, bổ sung quy định tại bước 3 và 4.",
+        "actor": "user",
+        "channel_hint": null,
+        "time_hint": "06 tháng"
+      }
+    ],
+    "step_count": 6,
+    "notes": []
+  },
+  "eligibility": {
+    "conditions": [
+      "1. Thuốc phải kiểm soát đặc biệt có giấy đăng ký lưu hành còn hiệu lực tại Việt Nam.",
+      "2. Cơ sở nhập khẩu là cơ sở đã được cấp Giấy chứng nhận đủ điều kiện kinh doanh dược, phạm vi: xuất khẩu, nhập khẩu thuốc phù hợp với thuốc đề nghị nhập khẩu."
+    ],
+    "has_conditions": true
+  },
+  "results": {
+    "items": [
+      {
+        "name": "Giấy phép nhập khẩu",
+        "result_code": "KQ.G18.000263",
+        "raw_text": "Giấy phép nhập khẩu"
+      },
+      {
+        "name": "Văn bản chấp thuận/Văn bản yêu cầu sửa đổi, bổ sung hồ sơ/Văn bản trả lời không cho phép nhập khẩu",
+        "result_code": "KQ.G18.000271",
+        "raw_text": "Văn bản chấp thuận/Văn bản yêu cầu sửa đổi, bổ sung hồ sơ/Văn bản trả lời không cho phép nhập khẩu"
+      }
+    ],
+    "primary_result": {
+      "name": "Giấy phép nhập khẩu",
+      "result_code": "KQ.G18.000263",
+      "raw_text": "Giấy phép nhập khẩu"
+    }
+  },
+  "legal_basis": {
+    "items": [
+      {
+        "title": "Luật số 44/2024/QH15",
+        "code": "44/2024/QH15"
+      },
+      {
+        "title": "105/2016/QH13 Dược",
+        "code": "Luật 105/2016/QH13"
+      },
+      {
+        "title": "Nghị định của Chính phủ quy định chi tiết một số điều và biện pháp thi hành Luật dược",
+        "code": "163/2025/NĐ-CP"
+      },
+      {
+        "title": "Sửa đổi, bổ sung một số điều của Thông tư số 20/2017/TT-BYT ngày 10 tháng 5 năm 2017 của Bộ trưởng Bộ Y tế quy định chi tiết một số điều của Luật dược và Nghị định số 54/2017/NĐ-CP ngày 08 tháng 5 năm 2017 của Chính phủ về thuốc và nguyên liệu làm thuốc phải kiểm soát đặc biệt",
+        "code": "27/2024/TT-BYT"
+      },
+      {
+        "title": "Quyết định của Bộ trưởng Bộ Y tế công bố danh mục thuốc, dược chất thuộc danh mục chất bị cấm sử dụng trong một số ngành, lĩnh vực",
+        "code": "3235/QĐ-BYT"
+      }
+    ],
+    "count": 5
+  },
+  "attachments": [
+    {
+      "label": "mubiudc.docx",
+      "path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/1_014079/mubiudc.docx",
+      "source_section": "Thành phần hồ sơ",
+      "document_name": "a) Đơn hàng nhập khẩu"
+    }
+  ],
+  "signals": {
+    "raw_parse_warnings": [],
+    "missing_documents": false,
+    "documents_section_present": true,
+    "documents_declared_empty": false,
+    "documents_only_in_notes": false,
+    "missing_results": false
+  }
+}

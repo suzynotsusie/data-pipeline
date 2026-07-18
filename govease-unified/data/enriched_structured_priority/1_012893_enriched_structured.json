@@ -1,0 +1,124 @@
+{
+  "schema_version": "1.0",
+  "enricher_version": "0.2.0",
+  "source": {
+    "procedure_code": "1.012893",
+    "title": "Bán nhà ở cũ thuộc tài sản công",
+    "group_key": "dien_luc_nha_o_dat_dai",
+    "workflow_family": null,
+    "subflow": null
+  },
+  "experience": {
+    "entry_label": "Hỗ trợ nhà ở, đất đai và điện lực",
+    "overview_summary": "Thủ tục này thuộc nhóm nhà ở, đất đai và điện lực, thường cần kiểm tra hiện trạng hồ sơ tài sản hoặc điều kiện hạ tầng liên quan. Kết quả thường nhận được là Quyết định bán nhà ở cũ thuộc sở hữu nhà nước. Thời gian xử lý tham khảo: 45 ngày.",
+    "next_step_summary": "Nên chuẩn bị trước thông tin thửa đất, tài sản hoặc địa điểm tiếp nhận, rồi chọn kênh nộp phù hợp: Trực tiếp, Trực tuyến, Dịch vụ bưu chính. Hiện có khoảng 6 mục giấy tờ cần theo dõi trong checklist.",
+    "tone": "supportive_public_service"
+  },
+  "guidance": {
+    "highlight_documents": [
+      {
+        "bucket": "required",
+        "name": "Bản chính hợp đồng thuê nhà ở;",
+        "conditions": [],
+        "attachment_path": null
+      },
+      {
+        "bucket": "required",
+        "name": "Đơn đề nghị mua nhà ở được lập theo Mẫu số 03 của Phụ lục V ban hành kèm theo Nghị định số 95/2024/NĐ-CP ngày 24/7/2024 của Chính phủ quy định chi tiết một số điều của Luật Nhà ở ; (Mẫu đơn có quy định về các thông tin đã có trong cơ sở dữ liệu quốc gia về dân cư hoặc cơ sở dữ liệu chuyên ngành thì các thông tin này được thay thế bằng mã số định danh cá nhân hoặc mã số chuyên ngành thể hiện trong mẫu đơn, tờ khai khi cơ sở dữ liệu quốc gia về dân cư hoặc cơ sở dữ liệu chuyên ngành được vận hành).",
+        "conditions": [],
+        "attachment_path": null
+      },
+      {
+        "bucket": "conditional",
+        "name": "Trường hợp người có tên trong hợp đồng thuê nhà ở đã xuất cảnh ra nước ngoài thì phải có văn bản ủy quyền (có xác nhận của cơ quan công chứng hoặc chứng thực theo quy định) cho các thành viên khác đứng tên mua nhà ở; nếu có thành viên có tên trong hợp đồng thuê nhà ở đã chết thì phải có giấy chứng tử kèm theo.",
+        "conditions": [
+          "Trường hợp người có tên trong hợp đồng thuê nhà ở đã xuất cảnh ra nước ngoài thì phải có văn bản ủy quyền (có xác nhận của cơ quan công chứng hoặc chứng thực theo quy định) cho các thành viên khác đứng tên mua nhà ở; nếu có thành viên có tên trong hợp đồng thuê nhà ở đã chết thì phải có giấy chứng tử kèm theo."
+        ],
+        "attachment_path": null
+      },
+      {
+        "bucket": "conditional",
+        "name": "Trường hợp có thành viên thuê nhà ở khước từ quyền mua và đứng tên trong Giấy chứng nhận đối với nhà ở thì phải có văn bản khước từ quyền mua, không đứng tên trong Giấy chứng nhận và cam kết không có tranh chấp, khiếu kiện về việc mua bán nhà ở này;",
+        "conditions": [
+          "Trường hợp có thành viên thuê nhà ở khước từ quyền mua và đứng tên trong Giấy chứng nhận đối với nhà ở thì phải có văn bản khước từ quyền mua, không đứng tên trong Giấy chứng nhận và cam kết không có tranh chấp, khiếu kiện về việc mua bán nhà ở này;"
+        ],
+        "attachment_path": null
+      },
+      {
+        "bucket": "conditional",
+        "name": "Bản sao có chứng thực hoặc bản sao kèm bản chính để đối chiếu giấy tờ chứng minh đã nộp đủ tiền thuê nhà ở và chi phí quản lý vận hành nhà ở đến thời điểm nộp hồ sơ đề nghị mua nhà ở đối với loại nhà ở phải nộp chi phí quản lý vận hành nhà ở; trường hợp là vợ chồng thì phải có bản sao có chứng thực hoặc bản sao kèm bản chính để đối chiếu giấy chứng nhận kết hôn . (Thành phần hồ sơ có quy định về các thông tin đã có trong cơ sở dữ liệu quốc gia về dân cư hoặc cơ sở dữ liệu chuyên ngành thì các thông tin này được thay thế bằng mã số định danh cá nhân hoặc mã số chuyên ngành thể hiện trong mẫu đơn, tờ khai khi cơ sở dữ liệu quốc gia về dân cư hoặc cơ sở dữ liệu chuyên ngành được vận hành). Trường hợp người có tên trong hợp đồng thuê nhà ở đã xuất cảnh ra nước ngoài thì phải có văn bản ủy quyền (có xác nhận của cơ quan công chứng hoặc chứng thực theo quy định) cho các thành viên khác đứng tên mua nhà ở; nếu có thành viên có tên trong hợp đồng thuê nhà ở đã chết thì phải có giấy chứng tử kèm theo. Trường hợp có thành viên thuê nhà ở khước từ quyền mua và đứng tên trong Giấy chứng nhận đối với nhà ở thì phải có văn bản khước từ quyền mua, không đứng tên trong Giấy chứng nhận và cam kết không có tranh chấp, khiếu kiện về việc mua bán nhà ở này;",
+        "conditions": [
+          "Bản sao có chứng thực hoặc bản sao kèm bản chính để đối chiếu giấy tờ chứng minh đã nộp đủ tiền thuê nhà ở và chi phí quản lý vận hành nhà ở đến thời điểm nộp hồ sơ đề nghị mua nhà ở đối với loại nhà ở phải nộp chi phí quản lý vận hành nhà ở; trường hợp là vợ chồng thì phải có bản sao có chứng thực hoặc bản sao kèm bản chính để đối chiếu giấy chứng nhận kết hôn . (Thành phần hồ sơ có quy định về các thông tin đã có trong cơ sở dữ liệu quốc gia về dân cư hoặc cơ sở dữ liệu chuyên ngành thì các thông tin này được thay thế bằng mã số định danh cá nhân hoặc mã số chuyên ngành thể hiện trong mẫu đơn, tờ khai khi cơ sở dữ liệu quốc gia về dân cư hoặc cơ sở dữ liệu chuyên ngành được vận hành). Trường hợp người có tên trong hợp đồng thuê nhà ở đã xuất cảnh ra nước ngoài thì phải có văn bản ủy quyền (có xác nhận của cơ quan công chứng hoặc chứng thực theo quy định) cho các thành viên khác đứng tên mua nhà ở; nếu có thành viên có tên trong hợp đồng thuê nhà ở đã chết thì phải có giấy chứng tử kèm theo. Trường hợp có thành viên thuê nhà ở khước từ quyền mua và đứng tên trong Giấy chứng nhận đối với nhà ở thì phải có văn bản khước từ quyền mua, không đứng tên trong Giấy chứng nhận và cam kết không có tranh chấp, khiếu kiện về việc mua bán nhà ở này;"
+        ],
+        "attachment_path": null
+      },
+      {
+        "bucket": "conditional",
+        "name": "Bản sao có chứng thực hoặc bản sao kèm bản chính để đối chiếu giấy tờ chứng minh thuộc đối tượng được miễn, giảm tiền mua nhà ở (nếu có).",
+        "conditions": [
+          "Bản sao có chứng thực hoặc bản sao kèm bản chính để đối chiếu giấy tờ chứng minh thuộc đối tượng được miễn, giảm tiền mua nhà ở (nếu có)."
+        ],
+        "attachment_path": null
+      }
+    ],
+    "special_cases": [
+      "Có yếu tố nước ngoài",
+      "Có thể cần giấy tờ ủy quyền",
+      "Có kiểm tra dữ liệu cư trú/định danh",
+      "Có thể cần đối chiếu thông tin thửa đất hoặc giấy chứng nhận"
+    ],
+    "common_errors": [
+      "Thiếu giấy tờ hoặc nội dung ủy quyền phù hợp.",
+      "Thiếu giấy tờ hợp pháp hóa hoặc giấy tờ nhân thân của phía nước ngoài.",
+      "Điền sai mẫu tờ khai hoặc chọn sai biểu mẫu đi kèm.",
+      "Thông tin thửa đất, tài sản hoặc giấy chứng nhận chưa khớp với hồ sơ hiện có."
+    ],
+    "validation_hints": [
+      "Nên xác định trước kênh nộp hồ sơ để biết có cần bản giấy, bản điện tử hay xuất trình trực tiếp.",
+      "Nên đối chiếu trước thông tin thửa đất, tài sản hoặc hiện trạng hồ sơ để tránh bị yêu cầu chỉnh sửa."
+    ]
+  },
+  "intake": {
+    "candidate_input_fields": [
+      {
+        "field_id": "property_or_service_need",
+        "label": "Nhu cầu về đất đai, nhà ở hoặc điện lực",
+        "field_type": "text",
+        "required": true
+      },
+      {
+        "field_id": "property_location",
+        "label": "Địa điểm tài sản hoặc nơi sử dụng dịch vụ",
+        "field_type": "text",
+        "required": true
+      },
+      {
+        "field_id": "submission_channel_preference",
+        "label": "Kênh nộp dự kiến",
+        "field_type": "enum",
+        "required": false
+      },
+      {
+        "field_id": "has_current_certificate",
+        "label": "Đã có giấy tờ/tài liệu hiện trạng",
+        "field_type": "boolean",
+        "required": false
+      }
+    ],
+    "suggested_clarifying_questions": [
+      "Bạn đang xử lý nhu cầu nào về đất đai, nhà ở hoặc điện lực?",
+      "Bạn đã có thông tin thửa đất, địa chỉ tài sản hoặc giấy tờ hiện trạng chưa?"
+    ]
+  },
+  "ui_hints": {
+    "primary_channel": "online",
+    "result_label": "Quyết định bán nhà ở cũ thuộc sở hữu nhà nước",
+    "time_badge": "45 ngày",
+    "document_count_badge": 6
+  },
+  "provenance": {
+    "generator": "workflow_domain_enricher",
+    "derivation_mode": "rule_based_semantic_enrichment",
+    "supported_group": true
+  }
+}

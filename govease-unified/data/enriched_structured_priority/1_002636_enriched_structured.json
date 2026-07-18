@@ -1,0 +1,120 @@
+{
+  "schema_version": "1.0",
+  "enricher_version": "0.2.0",
+  "source": {
+    "procedure_code": "1.002636",
+    "title": "Gia hạn Giấy chứng nhận đủ điều kiện hoạt động kiểm định kỹ thuật an toàn lao động cho các tổ chức gia hạn Giấy chứng nhận đủ điều kiện hoạt động kiểm định kỹ thuật an toàn lao động cho các tổ chức thực hiện kiểm định đối với các máy, thiết bị, vật tư có yêu cầu nghiêm ngặt về an toàn lao động sử dụng trong thi công xây dựng",
+    "group_key": "dien_luc_nha_o_dat_dai",
+    "workflow_family": null,
+    "subflow": null
+  },
+  "experience": {
+    "entry_label": "Hỗ trợ nhà ở, đất đai và điện lực",
+    "overview_summary": "Thủ tục này thuộc nhóm đất đai và nhà ở, thường dùng để cấp, đổi hoặc cập nhật giấy chứng nhận và thông tin tài sản gắn liền với đất. Kết quả thường nhận được là Giấy chứng nhận đủ điều kiện hoạt động kiểm định kỹ thuật an toàn lao động được gia hạn. Thời gian xử lý tham khảo: 20 ngày làm việc.",
+    "next_step_summary": "Nên chuẩn bị trước thông tin thửa đất, tài sản hoặc địa điểm tiếp nhận, rồi chọn kênh nộp phù hợp: Trực tiếp, Trực tuyến, Dịch vụ bưu chính. Hiện có khoảng 6 mục giấy tờ cần theo dõi trong checklist.",
+    "tone": "supportive_public_service"
+  },
+  "guidance": {
+    "highlight_documents": [
+      {
+        "bucket": "required",
+        "name": "Giấy chứng nhận đã được cấp;",
+        "conditions": [],
+        "attachment_path": null
+      },
+      {
+        "bucket": "required",
+        "name": "Danh sách kiểm định viên;",
+        "conditions": [],
+        "attachment_path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/1_002636/Mau%20danh%20sach%20kiem%20dinh%20vien.docx"
+      },
+      {
+        "bucket": "required",
+        "name": "Danh mục thiết bị, dụng cụ phục vụ kiểm định;",
+        "conditions": [],
+        "attachment_path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/1_002636/Mau%20danh%20muc%20thiet%20bi.docx"
+      },
+      {
+        "bucket": "required",
+        "name": "Đơn đề nghị gia hạn Giấy chứng nhận;",
+        "conditions": [],
+        "attachment_path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/1_002636/MaudondenghicaplaigiahanGiaychungnhandudieukienHkiemdinhkythuatATL.docx"
+      },
+      {
+        "bucket": "required",
+        "name": "Một trong các tài liệu sau để chứng minh kinh nghiệm của người phụ trách kỹ thuật hoạt động kiểm định (bản sao sổ hoặc tờ rời về tham gia bảo hiểm xã hội; bản sao hợp đồng lao động; bản sao biên bản kiểm định kèm theo giấy chứng nhận kết quả kiểm định).",
+        "conditions": [],
+        "attachment_path": null
+      },
+      {
+        "bucket": "required",
+        "name": "Bản sao quyết định thành lập đối với đơn vị sự nghiệp;",
+        "conditions": [],
+        "attachment_path": null
+      }
+    ],
+    "special_cases": [
+      "Có thể cần đối chiếu thông tin thửa đất hoặc giấy chứng nhận",
+      "Có thể cần đối chiếu quá trình đóng bảo hiểm để giải quyết chế độ",
+      "Có thể cần xác minh quan hệ lao động hoặc giấy phép làm việc"
+    ],
+    "common_errors": [
+      "Thông tin thửa đất, tài sản hoặc giấy chứng nhận chưa khớp với hồ sơ hiện có.",
+      "Thiếu hồ sơ về vị trí việc làm, đơn vị sử dụng lao động hoặc điều kiện làm việc áp dụng."
+    ],
+    "validation_hints": [
+      "Nên xác định trước kênh nộp hồ sơ để biết có cần bản giấy, bản điện tử hay xuất trình trực tiếp.",
+      "Có mẫu biểu đính kèm, nên kiểm tra đúng biểu mẫu trước khi nộp.",
+      "Nên đối chiếu trước thông tin thửa đất, tài sản hoặc hiện trạng hồ sơ để tránh bị yêu cầu chỉnh sửa."
+    ]
+  },
+  "intake": {
+    "candidate_input_fields": [
+      {
+        "field_id": "property_or_service_need",
+        "label": "Nhu cầu về đất đai, nhà ở hoặc điện lực",
+        "field_type": "text",
+        "required": true
+      },
+      {
+        "field_id": "property_location",
+        "label": "Địa điểm tài sản hoặc nơi sử dụng dịch vụ",
+        "field_type": "text",
+        "required": true
+      },
+      {
+        "field_id": "submission_channel_preference",
+        "label": "Kênh nộp dự kiến",
+        "field_type": "enum",
+        "required": false
+      },
+      {
+        "field_id": "has_current_certificate",
+        "label": "Đã có giấy tờ/tài liệu hiện trạng",
+        "field_type": "boolean",
+        "required": false
+      },
+      {
+        "field_id": "certificate_status",
+        "label": "Tình trạng giấy chứng nhận hiện tại",
+        "field_type": "enum",
+        "required": false
+      }
+    ],
+    "suggested_clarifying_questions": [
+      "Bạn đang xử lý nhu cầu nào về đất đai, nhà ở hoặc điện lực?",
+      "Bạn đã có thông tin thửa đất, địa chỉ tài sản hoặc giấy tờ hiện trạng chưa?"
+    ]
+  },
+  "ui_hints": {
+    "primary_channel": "postal",
+    "result_label": "Giấy chứng nhận đủ điều kiện hoạt động kiểm định kỹ thuật an toàn lao động được gia hạn",
+    "time_badge": "20 ngày làm việc",
+    "document_count_badge": 6
+  },
+  "provenance": {
+    "generator": "workflow_domain_enricher",
+    "derivation_mode": "rule_based_semantic_enrichment",
+    "supported_group": true
+  }
+}

@@ -1,0 +1,104 @@
+{
+  "schema_version": "1.0",
+  "enricher_version": "0.2.0",
+  "source": {
+    "procedure_code": "1.115407",
+    "title": "Kiểm tra chất lượng hàng hóa vật liệu xây dựng nhập khẩu có mức độ rủi ro cao",
+    "group_key": "dien_luc_nha_o_dat_dai",
+    "workflow_family": null,
+    "subflow": null
+  },
+  "experience": {
+    "entry_label": "Hỗ trợ nhà ở, đất đai và điện lực",
+    "overview_summary": "Thủ tục này thuộc nhóm nhà ở, đất đai và điện lực, thường cần kiểm tra hiện trạng hồ sơ tài sản hoặc điều kiện hạ tầng liên quan. Kết quả thường nhận được là Thông báo kết quả kiểm tra nhà nước về chất lượng hàng hóa nhập khẩu. Thời gian xử lý tham khảo: 1 ngày.",
+    "next_step_summary": "Nên chuẩn bị trước thông tin thửa đất, tài sản hoặc địa điểm tiếp nhận, rồi chọn kênh nộp phù hợp: Trực tuyến. Hiện có khoảng 4 mục giấy tờ cần theo dõi trong checklist.",
+    "tone": "supportive_public_service"
+  },
+  "guidance": {
+    "highlight_documents": [
+      {
+        "bucket": "required",
+        "name": "Đăng ký kiểm tra nhà nước về chất lượng hàng hóa vật liệu xây dựng nhập khẩu theo Mẫu số 1 Phụ lục VII ban hành kèm theo Nghị định số 37/2026/NĐ-CP ngày 23/01/2026 của Chính phủ",
+        "conditions": [],
+        "attachment_path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/1_115407/M%E1%BA%AAU%20%C4%90%C4%82NG%20K%C3%9D%20KI%E1%BB%82M%20TRA%20M%E1%BA%ABu%20s%E1%BB%91%201.docx"
+      },
+      {
+        "bucket": "required",
+        "name": "Ảnh hoặc bản mô tả đặc tính hàng hóa vật liệu xây dựng kèm theo các nội dung của nhãn chính (đối với hàng hóa phải ghi nhãn)",
+        "conditions": [],
+        "attachment_path": null
+      },
+      {
+        "bucket": "conditional",
+        "name": "Mẫu nhãn phụ (nếu nhãn chính chưa đủ nội dung theo quy định) đối với hàng hóa phải ghi nhãn. Trường hợp sử dụng nhãn điện tử, việc ghi nhãn phải đáp ứng quy định của pháp luật về nhãn hàng hóa. Tổ chức, cá nhân nhập khẩu chịu trách nhiệm về tính hợp lệ của hồ sơ nhập khẩu",
+        "conditions": [
+          "Mẫu nhãn phụ (nếu nhãn chính chưa đủ nội dung theo quy định) đối với hàng hóa phải ghi nhãn. Trường hợp sử dụng nhãn điện tử, việc ghi nhãn phải đáp ứng quy định của pháp luật về nhãn hàng hóa. Tổ chức, cá nhân nhập khẩu chịu trách nhiệm về tính hợp lệ của hồ sơ nhập khẩu"
+        ],
+        "attachment_path": null
+      },
+      {
+        "bucket": "conditional",
+        "name": "Giấy chứng nhận hợp quy do tổ chức đánh giá sự phù hợp được chỉ định cấp, trong đó có các thông tin liên quan đến hàng hóa vật liệu xây dựng nhập khẩu. Trường hợp Giấy chứng nhận hợp quy cấp cho lô hàng, phải có các thông tin liên quan đến lô hàng nhập khẩu (tên hàng hóa; nhãn hiệu, kiểu loại; đặc tính kỹ thuật; xuất xứ, nhà sản xuất; khối lượng/số lượng; tờ khai hàng hóa nhập khẩu; hóa đơn)",
+        "conditions": [
+          "Giấy chứng nhận hợp quy do tổ chức đánh giá sự phù hợp được chỉ định cấp, trong đó có các thông tin liên quan đến hàng hóa vật liệu xây dựng nhập khẩu. Trường hợp Giấy chứng nhận hợp quy cấp cho lô hàng, phải có các thông tin liên quan đến lô hàng nhập khẩu (tên hàng hóa; nhãn hiệu, kiểu loại; đặc tính kỹ thuật; xuất xứ, nhà sản xuất; khối lượng/số lượng; tờ khai hàng hóa nhập khẩu; hóa đơn)"
+        ],
+        "attachment_path": null
+      }
+    ],
+    "special_cases": [
+      "Có thể cần đối chiếu thông tin thửa đất hoặc giấy chứng nhận"
+    ],
+    "common_errors": [
+      "Điền sai mẫu tờ khai hoặc chọn sai biểu mẫu đi kèm.",
+      "Thông tin thửa đất, tài sản hoặc giấy chứng nhận chưa khớp với hồ sơ hiện có."
+    ],
+    "validation_hints": [
+      "Nên xác định trước kênh nộp hồ sơ để biết có cần bản giấy, bản điện tử hay xuất trình trực tiếp.",
+      "Có mẫu biểu đính kèm, nên kiểm tra đúng biểu mẫu trước khi nộp.",
+      "Nên đối chiếu trước thông tin thửa đất, tài sản hoặc hiện trạng hồ sơ để tránh bị yêu cầu chỉnh sửa."
+    ]
+  },
+  "intake": {
+    "candidate_input_fields": [
+      {
+        "field_id": "property_or_service_need",
+        "label": "Nhu cầu về đất đai, nhà ở hoặc điện lực",
+        "field_type": "text",
+        "required": true
+      },
+      {
+        "field_id": "property_location",
+        "label": "Địa điểm tài sản hoặc nơi sử dụng dịch vụ",
+        "field_type": "text",
+        "required": true
+      },
+      {
+        "field_id": "submission_channel_preference",
+        "label": "Kênh nộp dự kiến",
+        "field_type": "enum",
+        "required": false
+      },
+      {
+        "field_id": "has_current_certificate",
+        "label": "Đã có giấy tờ/tài liệu hiện trạng",
+        "field_type": "boolean",
+        "required": false
+      }
+    ],
+    "suggested_clarifying_questions": [
+      "Bạn đang xử lý nhu cầu nào về đất đai, nhà ở hoặc điện lực?",
+      "Bạn đã có thông tin thửa đất, địa chỉ tài sản hoặc giấy tờ hiện trạng chưa?"
+    ]
+  },
+  "ui_hints": {
+    "primary_channel": "online",
+    "result_label": "Thông báo kết quả kiểm tra nhà nước về chất lượng hàng hóa nhập khẩu",
+    "time_badge": "1 ngày",
+    "document_count_badge": 4
+  },
+  "provenance": {
+    "generator": "workflow_domain_enricher",
+    "derivation_mode": "rule_based_semantic_enrichment",
+    "supported_group": true
+  }
+}

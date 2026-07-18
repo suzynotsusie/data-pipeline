@@ -1,0 +1,93 @@
+{
+  "schema_version": "1.0",
+  "enricher_version": "0.2.0",
+  "source": {
+    "procedure_code": "1.003494",
+    "title": "Cấp giấy thông hành nhập, xuất cảnh cho công dân Việt Nam sang du lịch các tỉnh, thành phố biên giới Trung Quốc tiếp giáp với Việt Nam tại Công an cấp tỉnh",
+    "group_key": "cu_tru_giay_to",
+    "workflow_family": null,
+    "subflow": null
+  },
+  "experience": {
+    "entry_label": "Hỗ trợ cư trú và giấy tờ",
+    "overview_summary": "Thủ tục này thuộc nhóm cư trú và giấy tờ, thường cần kiểm tra thông tin định danh hoặc hồ sơ giấy tờ chuyên ngành. Kết quả thường nhận được là Giấy thông hành xuất, nhập cảnh vùng biên giới Việt Nam – Trung Quốc. Thời gian xử lý tham khảo: 3 ngày làm việc.",
+    "next_step_summary": "Nên kiểm tra trước giấy tờ định danh, nơi nộp và mẫu biểu liên quan, rồi chọn kênh nộp phù hợp: Trực tiếp. Hiện có khoảng 3 mục giấy tờ cần theo dõi trong checklist.",
+    "tone": "supportive_public_service"
+  },
+  "guidance": {
+    "highlight_documents": [
+      {
+        "bucket": "required",
+        "name": "Tờ khai đề nghị cấp giấy thông hành biên giới (mẫu TK6 ban hành theo Thông tư số 42/2011/TT-BCA, ngày 29/6/2011 của Bộ Công an), có xác nhận và dấu giáp lai ảnh của cơ quan quản lý trực tiếp",
+        "conditions": [],
+        "attachment_path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/1_003494/18-Ma%CC%82%CC%83u%20TK8.doc"
+      },
+      {
+        "bucket": "required",
+        "name": "Số bộ hồ sơ 01 (một) bộ",
+        "conditions": [],
+        "attachment_path": null
+      },
+      {
+        "bucket": "conditional",
+        "name": "02 ảnh 4cmx6cm, mặt nhìn thẳng, đầu để trần, phông nền trắng. * Trường hợp cấp lại giấy thông hành biên giới xuất, nhập cảnh do bị mất, ngoài thành phần hồ sơ trên, thì nộp kèm đơn trình báo về việc bị mất giấy thông hành xuất, nhập cảnh vùng biên giới (không cần xác nhận của Công an cấp xã nơi bị mất).",
+        "conditions": [
+          "02 ảnh 4cmx6cm, mặt nhìn thẳng, đầu để trần, phông nền trắng. * Trường hợp cấp lại giấy thông hành biên giới xuất, nhập cảnh do bị mất, ngoài thành phần hồ sơ trên, thì nộp kèm đơn trình báo về việc bị mất giấy thông hành xuất, nhập cảnh vùng biên giới (không cần xác nhận của Công an cấp xã nơi bị mất)."
+        ],
+        "attachment_path": null
+      }
+    ],
+    "special_cases": [],
+    "common_errors": [
+      "Điền sai mẫu tờ khai hoặc chọn sai biểu mẫu đi kèm."
+    ],
+    "validation_hints": [
+      "Nên xác định trước kênh nộp hồ sơ để biết có cần bản giấy, bản điện tử hay xuất trình trực tiếp.",
+      "Có mẫu biểu đính kèm, nên kiểm tra đúng biểu mẫu trước khi nộp.",
+      "Nên đối chiếu trước dữ liệu định danh và nơi cư trú để tránh bị yêu cầu bổ sung."
+    ]
+  },
+  "intake": {
+    "candidate_input_fields": [
+      {
+        "field_id": "document_request_type",
+        "label": "Loại giấy tờ cần xử lý",
+        "field_type": "text",
+        "required": true
+      },
+      {
+        "field_id": "submission_channel_preference",
+        "label": "Kênh nộp dự kiến",
+        "field_type": "enum",
+        "required": false
+      },
+      {
+        "field_id": "identity_document_available",
+        "label": "Có giấy tờ định danh",
+        "field_type": "boolean",
+        "required": true
+      },
+      {
+        "field_id": "residency_or_status_known",
+        "label": "Biết rõ nơi cư trú hoặc tình trạng hiện tại",
+        "field_type": "boolean",
+        "required": false
+      }
+    ],
+    "suggested_clarifying_questions": [
+      "Bạn đang xử lý giấy tờ gì và muốn nộp trực tiếp hay trực tuyến?",
+      "Thông tin định danh và nơi cư trú hiện tại đã sẵn sàng để đối chiếu chưa?"
+    ]
+  },
+  "ui_hints": {
+    "primary_channel": "in_person",
+    "result_label": "Giấy thông hành xuất, nhập cảnh vùng biên giới Việt Nam – Trung Quốc",
+    "time_badge": "3 ngày làm việc",
+    "document_count_badge": 3
+  },
+  "provenance": {
+    "generator": "workflow_domain_enricher",
+    "derivation_mode": "rule_based_semantic_enrichment",
+    "supported_group": true
+  }
+}

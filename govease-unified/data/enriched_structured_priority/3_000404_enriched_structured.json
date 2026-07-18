@@ -1,0 +1,83 @@
+{
+  "schema_version": "1.0",
+  "enricher_version": "0.2.0",
+  "source": {
+    "procedure_code": "3.000404",
+    "title": "Chấp thuận doanh nghiệp kinh doanh dịch vụ lữ hành quốc tế của Việt Nam tổ chức cho người nước ngoài đưa xe cơ giới nước ngoài vào Việt Nam du lịch được thay đổi lộ trình, tuyến đường di chuyển, thời gian phương tiện xuất cảnh chậm so với văn bản chấp thuận hoặc quá thời gian lưu trú tối đa tại Việt Nam",
+    "group_key": "cu_tru_giay_to",
+    "workflow_family": null,
+    "subflow": null
+  },
+  "experience": {
+    "entry_label": "Hỗ trợ cư trú và giấy tờ",
+    "overview_summary": "Thủ tục này thuộc nhóm cư trú và giấy tờ, thường cần kiểm tra thông tin định danh hoặc hồ sơ giấy tờ chuyên ngành. Kết quả thường nhận được là Văn bản chấp thuận hoặc văn bản không chấp thuận việc được thay đổi lộ trình, tuyến đường di chuyển, thời gian phương tiện xuất cảnh chậm so với văn bản chấp thuận hoặc quá thời gian lưu trú tối đa tại Việt Nam. Thời gian xử lý tham khảo: 5 ngày làm việc.",
+    "next_step_summary": "Nên kiểm tra trước giấy tờ định danh, nơi nộp và mẫu biểu liên quan, rồi chọn kênh nộp phù hợp: Trực tiếp, Trực tuyến, Dịch vụ bưu chính. Hiện có 1 mục giấy tờ cần theo dõi trong checklist.",
+    "tone": "supportive_public_service"
+  },
+  "guidance": {
+    "highlight_documents": [
+      {
+        "bucket": "conditional",
+        "name": "Văn bản đề nghị được thay đổi lộ trình, tuyến đường di chuyển, thời gian phương tiện xuất cảnh chậm so với văn bản chấp thuận hoặc quá thời gian lưu trú tối đa tại Việt Nam theo Mẫu số 04e Phụ lục IV kèm theo Nghị định 151/2024/NĐ-CP ngày 15/11/2024 của Chính phủ. Lưu ý: Trường hợp xảy ra sự cố ảnh hưởng đến thời gian xuất cảnh chậm hơn so với thời gian đã xác định trong văn bản chấp thuận hoặc quá thời gian lưu trú tối đa tại Việt Nam, doanh nghiệp kinh doanh dịch vụ lữ hành quốc tế của Việt Nam, tổ chức, cá nhân trao đổi ngay với cơ quan có thẩm quyền đã cấp phép trước đó bằng hình thức thông tin phù hợp và liên hệ ngay với cơ quan Công an nơi xảy ra sự cố; sau khi khắc phục sự cố, có văn bản theo Mẫu số 04e Phụ lục IV kèm theo Nghị định151/2024/NĐ-CP ngày 15/11/2024 của Chính phủ gửi cơ quan có thẩm quyền đã cấp phép trước đó.",
+        "conditions": [
+          "Văn bản đề nghị được thay đổi lộ trình, tuyến đường di chuyển, thời gian phương tiện xuất cảnh chậm so với văn bản chấp thuận hoặc quá thời gian lưu trú tối đa tại Việt Nam theo Mẫu số 04e Phụ lục IV kèm theo Nghị định 151/2024/NĐ-CP ngày 15/11/2024 của Chính phủ. Lưu ý: Trường hợp xảy ra sự cố ảnh hưởng đến thời gian xuất cảnh chậm hơn so với thời gian đã xác định trong văn bản chấp thuận hoặc quá thời gian lưu trú tối đa tại Việt Nam, doanh nghiệp kinh doanh dịch vụ lữ hành quốc tế của Việt Nam, tổ chức, cá nhân trao đổi ngay với cơ quan có thẩm quyền đã cấp phép trước đó bằng hình thức thông tin phù hợp và liên hệ ngay với cơ quan Công an nơi xảy ra sự cố; sau khi khắc phục sự cố, có văn bản theo Mẫu số 04e Phụ lục IV kèm theo Nghị định151/2024/NĐ-CP ngày 15/11/2024 của Chính phủ gửi cơ quan có thẩm quyền đã cấp phép trước đó."
+        ],
+        "attachment_path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/3_000404/5.ChpthundoanhnghipkinhdoanhdchvlhnhquctcaVitNamtchcchongincngoiaxecgiincngoivoVitNamcthayiltrnhtuynngdichuyn.docx"
+      }
+    ],
+    "special_cases": [
+      "Có thể cần hồ sơ kỹ thuật phương tiện hoặc giấy phép lái xe"
+    ],
+    "common_errors": [
+      "Điền sai mẫu tờ khai hoặc chọn sai biểu mẫu đi kèm."
+    ],
+    "validation_hints": [
+      "Nên xác định trước kênh nộp hồ sơ để biết có cần bản giấy, bản điện tử hay xuất trình trực tiếp.",
+      "Có mẫu biểu đính kèm, nên kiểm tra đúng biểu mẫu trước khi nộp.",
+      "Nên đối chiếu trước dữ liệu định danh và nơi cư trú để tránh bị yêu cầu bổ sung."
+    ]
+  },
+  "intake": {
+    "candidate_input_fields": [
+      {
+        "field_id": "document_request_type",
+        "label": "Loại giấy tờ cần xử lý",
+        "field_type": "text",
+        "required": true
+      },
+      {
+        "field_id": "submission_channel_preference",
+        "label": "Kênh nộp dự kiến",
+        "field_type": "enum",
+        "required": false
+      },
+      {
+        "field_id": "identity_document_available",
+        "label": "Có giấy tờ định danh",
+        "field_type": "boolean",
+        "required": true
+      },
+      {
+        "field_id": "residency_or_status_known",
+        "label": "Biết rõ nơi cư trú hoặc tình trạng hiện tại",
+        "field_type": "boolean",
+        "required": false
+      }
+    ],
+    "suggested_clarifying_questions": [
+      "Bạn đang xử lý giấy tờ gì và muốn nộp trực tiếp hay trực tuyến?",
+      "Thông tin định danh và nơi cư trú hiện tại đã sẵn sàng để đối chiếu chưa?"
+    ]
+  },
+  "ui_hints": {
+    "primary_channel": "online",
+    "result_label": "Văn bản chấp thuận hoặc văn bản không chấp thuận việc được thay đổi lộ trình, tuyến đường di chuyển, thời gian phương tiện xuất cảnh chậm so với văn bản chấp thuận hoặc quá thời gian lưu trú tối đa tại Việt Nam",
+    "time_badge": "5 ngày làm việc",
+    "document_count_badge": 1
+  },
+  "provenance": {
+    "generator": "workflow_domain_enricher",
+    "derivation_mode": "rule_based_semantic_enrichment",
+    "supported_group": true
+  }
+}

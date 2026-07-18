@@ -1,0 +1,132 @@
+{
+  "schema_version": "1.0",
+  "enricher_version": "0.2.0",
+  "source": {
+    "procedure_code": "1.011443",
+    "title": "Xóa đăng ký biện pháp bảo đảm bằng quyền sử dụng đất, tài sản gắn liền với đất",
+    "group_key": "dien_luc_nha_o_dat_dai",
+    "workflow_family": "housing_land_electricity_workflow",
+    "subflow": "gop_von_the_chap"
+  },
+  "experience": {
+    "entry_label": "Hỗ trợ nhà ở, đất đai và điện lực",
+    "overview_summary": "Thủ tục này thuộc nhóm đất đai và nhà ở, thường dùng để cấp, đổi hoặc cập nhật giấy chứng nhận và thông tin tài sản gắn liền với đất. Kết quả thường nhận được là Phiếu yêu cầu xóa đăng ký biện pháp bảo đảm bằng quyền sử dụng đất, tài sản gắn liền với đất. Thời gian xử lý tham khảo: 3 ngày làm việc.",
+    "next_step_summary": "Nên chuẩn bị trước thông tin thửa đất, tài sản hoặc địa điểm tiếp nhận, rồi chọn kênh nộp phù hợp: Trực tiếp, Trực tuyến, Dịch vụ bưu chính. Hiện có khoảng 13 mục giấy tờ cần theo dõi trong checklist.",
+    "tone": "supportive_public_service"
+  },
+  "guidance": {
+    "highlight_documents": [
+      {
+        "bucket": "required",
+        "name": "Phiếu yêu cầu theo Mẫu số 03a tại Phụ lục (01 bản chính) (khoản 1 Điều 33 Nghị định số 99/2022/NĐ-CP).",
+        "conditions": [],
+        "attachment_path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/1_011443/Mau%20so%2003a_Xoa%20dang%20ky.docx"
+      },
+      {
+        "bucket": "conditional",
+        "name": "Văn bản có nội dung thể hiện việc bên nhận bảo đảm đồng ý xóa đăng ký hoặc xác nhận về việc hợp đồng bảo đảm đã chấm dứt, đã được thanh lý hoặc xác nhận về việc giải chấp trong trường hợp người yêu cầu xóa đăng ký là bên bảo đảm (01 bản chính hoặc 01 bản sao có chứng thực) (điểm a khoản 3 Điều 33 Nghị định số 99/2022/NĐ-CP) trường hợp người yêu cầu xóa đăng ký không phải là bên nhận bảo đảm và trên Phiếu yêu cầu không có chữ ký, con dấu (nếu có) của bên nhận bảo đảm.",
+        "conditions": [
+          "Văn bản có nội dung thể hiện việc bên nhận bảo đảm đồng ý xóa đăng ký hoặc xác nhận về việc hợp đồng bảo đảm đã chấm dứt, đã được thanh lý hoặc xác nhận về việc giải chấp trong trường hợp người yêu cầu xóa đăng ký là bên bảo đảm (01 bản chính hoặc 01 bản sao có chứng thực) (điểm a khoản 3 Điều 33 Nghị định số 99/2022/NĐ-CP) trường hợp người yêu cầu xóa đăng ký không phải là bên nhận bảo đảm và trên Phiếu yêu cầu không có chữ ký, con dấu (nếu có) của bên nhận bảo đảm."
+        ],
+        "attachment_path": null
+      },
+      {
+        "bucket": "conditional",
+        "name": "Giấy chứng nhận (bản gốc) trong trường hợp tài sản bảo đảm có Giấy chứng nhận (khoản 2 Điều 33 Nghị định số 99/2022/NĐ-CP). Bản gốc Giấy chứng nhận đối với quyền sử dụng đất, tài sản gắn liền với đất là thành phần hồ sơ đăng ký quy định tại Điều 33 Nghị định số 99/2022/NĐ-CP hoặc được quy định tại Điều 36 Nghị định số 99/2022/NĐ-CP được thay thế bằng việc khai thác, sử dụng thông tin tương ứng từ cơ sở dữ liệu đất đai mà không phải nộp trong hồ sơ đăng ký. Trường hợp không khai thác được thông tin hoặc thông tin khai thác được không đầy đủ, không chính xác để thay thế cho giấy tờ là thành phần hồ sơ đăng ký thì cơ quan đăng ký yêu cầu người yêu cầu đăng ký nộp giấy tờ tương ứng thuộc thành phần hồ sơ đăng ký theo quy định tại Nghị định số 99/2022/NĐ-CP để giải quyết việc đăng ký.",
+        "conditions": [
+          "Giấy chứng nhận (bản gốc) trong trường hợp tài sản bảo đảm có Giấy chứng nhận (khoản 2 Điều 33 Nghị định số 99/2022/NĐ-CP). Bản gốc Giấy chứng nhận đối với quyền sử dụng đất, tài sản gắn liền với đất là thành phần hồ sơ đăng ký quy định tại Điều 33 Nghị định số 99/2022/NĐ-CP hoặc được quy định tại Điều 36 Nghị định số 99/2022/NĐ-CP được thay thế bằng việc khai thác, sử dụng thông tin tương ứng từ cơ sở dữ liệu đất đai mà không phải nộp trong hồ sơ đăng ký. Trường hợp không khai thác được thông tin hoặc thông tin khai thác được không đầy đủ, không chính xác để thay thế cho giấy tờ là thành phần hồ sơ đăng ký thì cơ quan đăng ký yêu cầu người yêu cầu đăng ký nộp giấy tờ tương ứng thuộc thành phần hồ sơ đăng ký theo quy định tại Nghị định số 99/2022/NĐ-CP để giải quyết việc đăng ký."
+        ],
+        "attachment_path": null
+      },
+      {
+        "bucket": "conditional",
+        "name": "Hợp đồng hoặc văn bản khác đã có hiệu lực pháp luật chứng minh việc chuyển giao hợp pháp tài sản bảo đảm trong trường hợp người yêu cầu xóa đăng ký là người nhận chuyển giao hợp pháp tài sản bảo đảm, trừ trường hợp quy định tại điểm c khoản 3 Điều 33 Nghị định số 99/2022/NĐ-CP (01 bản chính hoặc 01 bản sao có chứng thực) (điểm b khoản 3 Điều 33 Nghị định số 99/2022/NĐ-CP) trường hợp người yêu cầu xóa đăng ký không phải là bên nhận bảo đảm và trên Phiếu yêu cầu không có chữ ký, con dấu (nếu có) của bên nhận bảo đảm.",
+        "conditions": [
+          "Hợp đồng hoặc văn bản khác đã có hiệu lực pháp luật chứng minh việc chuyển giao hợp pháp tài sản bảo đảm trong trường hợp người yêu cầu xóa đăng ký là người nhận chuyển giao hợp pháp tài sản bảo đảm, trừ trường hợp quy định tại điểm c khoản 3 Điều 33 Nghị định số 99/2022/NĐ-CP (01 bản chính hoặc 01 bản sao có chứng thực) (điểm b khoản 3 Điều 33 Nghị định số 99/2022/NĐ-CP) trường hợp người yêu cầu xóa đăng ký không phải là bên nhận bảo đảm và trên Phiếu yêu cầu không có chữ ký, con dấu (nếu có) của bên nhận bảo đảm."
+        ],
+        "attachment_path": null
+      },
+      {
+        "bucket": "conditional",
+        "name": "Hợp đồng mua bán tài sản đấu giá đã có hiệu lực pháp luật hoặc Văn bản xác nhận kết quả thi hành án trong trường hợp người yêu cầu xóa đăng ký là cơ quan thi hành án dân sự, Chấp hành viên hoặc người yêu cầu xóa đăng ký là người mua tài sản bảo đảm trong xử lý tài sản theo quy định của pháp luật về thi hành án dân sự (01 bản chính hoặc 01 bản sao có chứng thực) (điểm c khoản 3 Điều 33 Nghị định số 99/2022/NĐ-CP) trường hợp người yêu cầu xóa đăng ký không phải là bên nhận bảo đảm và trên Phiếu yêu cầu không có chữ ký, con dấu (nếu có) của bên nhận bảo đảm.",
+        "conditions": [
+          "Hợp đồng mua bán tài sản đấu giá đã có hiệu lực pháp luật hoặc Văn bản xác nhận kết quả thi hành án trong trường hợp người yêu cầu xóa đăng ký là cơ quan thi hành án dân sự, Chấp hành viên hoặc người yêu cầu xóa đăng ký là người mua tài sản bảo đảm trong xử lý tài sản theo quy định của pháp luật về thi hành án dân sự (01 bản chính hoặc 01 bản sao có chứng thực) (điểm c khoản 3 Điều 33 Nghị định số 99/2022/NĐ-CP) trường hợp người yêu cầu xóa đăng ký không phải là bên nhận bảo đảm và trên Phiếu yêu cầu không có chữ ký, con dấu (nếu có) của bên nhận bảo đảm."
+        ],
+        "attachment_path": null
+      },
+      {
+        "bucket": "conditional",
+        "name": "Văn bản của cơ quan có thẩm quyền có nội dung về việc bên nhận bảo đảm là tổ chức kinh tế không phải là tổ chức tín dụng trở thành doanh nghiệp có vốn đầu tư nước ngoài, là công dân Việt Nam trở thành công dân nước ngoài trong trường hợp xóa đăng ký quy định tại điểm k khoản 1 Điều 20 Nghị định số 99/2022/NĐ-CP (01 bản chính hoặc 01 bản sao có chứng thực) (điểm d khoản 3 Điều 33 Nghị định số 99/2022/NĐ-CP) trường hợp người yêu cầu xóa đăng ký không phải là bên nhận bảo đảm và trên Phiếu yêu cầu không có chữ ký, con dấu (nếu có) của bên nhận bảo đảm.",
+        "conditions": [
+          "Văn bản của cơ quan có thẩm quyền có nội dung về việc bên nhận bảo đảm là tổ chức kinh tế không phải là tổ chức tín dụng trở thành doanh nghiệp có vốn đầu tư nước ngoài, là công dân Việt Nam trở thành công dân nước ngoài trong trường hợp xóa đăng ký quy định tại điểm k khoản 1 Điều 20 Nghị định số 99/2022/NĐ-CP (01 bản chính hoặc 01 bản sao có chứng thực) (điểm d khoản 3 Điều 33 Nghị định số 99/2022/NĐ-CP) trường hợp người yêu cầu xóa đăng ký không phải là bên nhận bảo đảm và trên Phiếu yêu cầu không có chữ ký, con dấu (nếu có) của bên nhận bảo đảm."
+        ],
+        "attachment_path": null
+      }
+    ],
+    "special_cases": [
+      "Có yếu tố nước ngoài",
+      "Có trường hợp hồ sơ điện tử thay thế bản giấy",
+      "Có thể cần đối chiếu thông tin thửa đất hoặc giấy chứng nhận"
+    ],
+    "common_errors": [
+      "Thông tin định danh hoặc cư trú không khớp với dữ liệu dân cư.",
+      "Thiếu giấy tờ hợp pháp hóa hoặc giấy tờ nhân thân của phía nước ngoài.",
+      "Điền sai mẫu tờ khai hoặc chọn sai biểu mẫu đi kèm.",
+      "Thông tin thửa đất, tài sản hoặc giấy chứng nhận chưa khớp với hồ sơ hiện có."
+    ],
+    "validation_hints": [
+      "Nên xác định trước kênh nộp hồ sơ để biết có cần bản giấy, bản điện tử hay xuất trình trực tiếp.",
+      "Có mẫu biểu đính kèm, nên kiểm tra đúng biểu mẫu trước khi nộp.",
+      "Nên đối chiếu trước thông tin thửa đất, tài sản hoặc hiện trạng hồ sơ để tránh bị yêu cầu chỉnh sửa."
+    ]
+  },
+  "intake": {
+    "candidate_input_fields": [
+      {
+        "field_id": "property_or_service_need",
+        "label": "Nhu cầu về đất đai, nhà ở hoặc điện lực",
+        "field_type": "text",
+        "required": true
+      },
+      {
+        "field_id": "property_location",
+        "label": "Địa điểm tài sản hoặc nơi sử dụng dịch vụ",
+        "field_type": "text",
+        "required": true
+      },
+      {
+        "field_id": "submission_channel_preference",
+        "label": "Kênh nộp dự kiến",
+        "field_type": "enum",
+        "required": false
+      },
+      {
+        "field_id": "has_current_certificate",
+        "label": "Đã có giấy tờ/tài liệu hiện trạng",
+        "field_type": "boolean",
+        "required": false
+      },
+      {
+        "field_id": "land_plot_identifier",
+        "label": "Thông tin thửa đất",
+        "field_type": "text",
+        "required": false
+      }
+    ],
+    "suggested_clarifying_questions": [
+      "Bạn đang xử lý nhu cầu nào về đất đai, nhà ở hoặc điện lực?",
+      "Bạn đã có thông tin thửa đất, địa chỉ tài sản hoặc giấy tờ hiện trạng chưa?"
+    ]
+  },
+  "ui_hints": {
+    "primary_channel": "online",
+    "result_label": "Phiếu yêu cầu xóa đăng ký biện pháp bảo đảm bằng quyền sử dụng đất, tài sản gắn liền với đất",
+    "time_badge": "3 ngày làm việc",
+    "document_count_badge": 13
+  },
+  "provenance": {
+    "generator": "workflow_domain_enricher",
+    "derivation_mode": "rule_based_semantic_enrichment",
+    "supported_group": true
+  }
+}

@@ -1,0 +1,212 @@
+{
+  "schema_version": "1.0",
+  "normalizer_version": "0.2.0",
+  "source": {
+    "procedure_code": "1.003440",
+    "title": "Thẩm định, phê duyệt phương án ứng phó với tình huống khẩn cấp thuộc thẩm quyền của UBND cấp xã",
+    "raw_structured_parser_version": "0.1.0",
+    "field": "Thủy lợi"
+  },
+  "procedure": {
+    "level": "Cấp xã",
+    "procedure_type": "TTHC được luật giao quy định chi tiết",
+    "target_users": [
+      "Tổ chức (không bao gồm doanh nghiệp",
+      "HTX)",
+      "Công dân Việt Nam"
+    ],
+    "authorities": [],
+    "receiving_places": []
+  },
+  "submission": {
+    "channels": [
+      "in_person",
+      "online",
+      "postal"
+    ],
+    "methods": [
+      {
+        "method_id": "method_1",
+        "channel": "postal",
+        "processing_time_text": "20 ngày làm việc",
+        "fee_text": null,
+        "description": "Trong thời hạn 20 ngày làm việc, kể từ ngày nhận đủ hồ sơ theo quy định",
+        "is_online": false,
+        "is_postal": true,
+        "is_in_person": false
+      },
+      {
+        "method_id": "method_2",
+        "channel": "in_person",
+        "processing_time_text": "20 ngày làm việc",
+        "fee_text": null,
+        "description": "Trong thời hạn 20 ngày làm việc, kể từ ngày nhận đủ hồ sơ theo quy định",
+        "is_online": false,
+        "is_postal": false,
+        "is_in_person": true
+      },
+      {
+        "method_id": "method_3",
+        "channel": "online",
+        "processing_time_text": "20 ngày làm việc",
+        "fee_text": null,
+        "description": "Trong thời hạn 20 ngày làm việc, kể từ ngày nhận đủ hồ sơ theo quy định",
+        "is_online": true,
+        "is_postal": false,
+        "is_in_person": false
+      }
+    ],
+    "timing_summary": {
+      "unique_processing_times": [
+        "20 ngày làm việc"
+      ],
+      "method_count": 3
+    }
+  },
+  "documents": {
+    "required": [
+      {
+        "document_id": "t_tr_nh_ngh_ph_duy_t",
+        "name": "Tờ trình đề nghị phê duyệt;",
+        "group_name": "default",
+        "group_type": "unknown",
+        "original_count": "1",
+        "copy_count": "0",
+        "conditions": [],
+        "attachment_label": null,
+        "attachment_path": null
+      },
+      {
+        "document_id": "d_th_o_ph_ng_n_ng_ph_v_i_t_nh_hu_ng_kh_n_c_p",
+        "name": "Dự thảo phương án ứng phó với tình huống khẩn cấp;",
+        "group_name": "default",
+        "group_type": "unknown",
+        "original_count": "1",
+        "copy_count": "0",
+        "conditions": [],
+        "attachment_label": null,
+        "attachment_path": null
+      },
+      {
+        "document_id": "b_o_c_o_k_t_qu_t_nh_to_n_k_thu_t",
+        "name": "Báo cáo kết quả tính toán kỹ thuật;",
+        "group_name": "default",
+        "group_type": "unknown",
+        "original_count": "1",
+        "copy_count": "0",
+        "conditions": [],
+        "attachment_label": null,
+        "attachment_path": null
+      },
+      {
+        "document_id": "v_n_b_n_g_p_ki_n_c_a_c_c_c_quan_n_v_li_n_quan",
+        "name": "Văn bản góp ý kiến của các cơ quan, đơn vị liên quan;",
+        "group_name": "default",
+        "group_type": "unknown",
+        "original_count": "1",
+        "copy_count": "0",
+        "conditions": [],
+        "attachment_label": null,
+        "attachment_path": null
+      }
+    ],
+    "conditional": [
+      {
+        "document_id": "c_c_t_i_li_u_li_n_quan_kh_c_k_m_theo_n_u_c",
+        "name": "Các tài liệu liên quan khác kèm theo (nếu có).",
+        "group_name": "default",
+        "group_type": "unknown",
+        "original_count": "1",
+        "copy_count": "0",
+        "conditions": [
+          "Các tài liệu liên quan khác kèm theo (nếu có)."
+        ],
+        "attachment_label": null,
+        "attachment_path": null
+      }
+    ],
+    "presented": [],
+    "notes": [],
+    "forms": [],
+    "empty_groups": [],
+    "document_count": 5
+  },
+  "process": {
+    "steps": [
+      {
+        "step_id": "step_1",
+        "title": null,
+        "content": "1.",
+        "actor": "user",
+        "channel_hint": null,
+        "time_hint": null
+      },
+      {
+        "step_id": "step_2",
+        "title": "Bước 1:",
+        "content": "Bước 1: Nộp hồ sơ: Tổ chức, cá nhân gửi hồ sơ đến UBND cấp xã.",
+        "actor": "user",
+        "channel_hint": null,
+        "time_hint": null
+      },
+      {
+        "step_id": "step_3",
+        "title": "Bước 2:",
+        "content": "Bước 2: Trong thời hạn 03 ngày làm việc, kể từ ngày nhận hồ sơ, cơ quan tiếp nhận hồ sơ có trách nhiệm xem xét, kiểm tra hồ sơ; trường hợp hồ sơ không hợp lệ, cơ quan tiếp nhận hồ sơ thông báo bằng văn bản cho tổ chức, cá nhân đề nghị phê duyệt phương án để hoàn chỉnh hồ sơ theo quy định.",
+        "actor": "authority",
+        "channel_hint": null,
+        "time_hint": "03 ngày làm việc"
+      },
+      {
+        "step_id": "step_4",
+        "title": "Bước 3:",
+        "content": "Bước 3: Trong thời hạn 20 ngày làm việc, kể từ ngày nhận đủ hồ sơ hợp lệ, cơ quan tiếp nhận hồ sơ có trách nhiệm thẩm định hồ sơ, trường hợp đủ điều kiện, trình cấp có thẩm quyền xem xét phê duyệt; trường hợp không đủ điều kiện phê duyệt, cơ quan tiếp nhận trả lại hồ sơ cho tổ chức, cá nhân đề nghị phê duyệt và thông báo lý do bằng văn bản.",
+        "actor": "authority",
+        "channel_hint": null,
+        "time_hint": "20 ngày làm việc"
+      }
+    ],
+    "step_count": 4,
+    "notes": []
+  },
+  "eligibility": {
+    "conditions": [],
+    "has_conditions": false
+  },
+  "results": {
+    "items": [
+      {
+        "name": "Quyết định phê duyệt phương án ứng phó với tình huống khẩn cấp",
+        "result_code": "KQ.G10.000124",
+        "raw_text": "Quyết định phê duyệt phương án ứng phó với tình huống khẩn cấp"
+      }
+    ],
+    "primary_result": {
+      "name": "Quyết định phê duyệt phương án ứng phó với tình huống khẩn cấp",
+      "result_code": "KQ.G10.000124",
+      "raw_text": "Quyết định phê duyệt phương án ứng phó với tình huống khẩn cấp"
+    }
+  },
+  "legal_basis": {
+    "items": [
+      {
+        "title": "Luật 08/2017/QH14",
+        "code": "08/2017/QH14"
+      },
+      {
+        "title": "Nghị định 114/2018/NĐ-CP",
+        "code": "114/2018/NĐ-CP"
+      }
+    ],
+    "count": 2
+  },
+  "attachments": [],
+  "signals": {
+    "raw_parse_warnings": [],
+    "missing_documents": false,
+    "documents_section_present": true,
+    "documents_declared_empty": false,
+    "documents_only_in_notes": false,
+    "missing_results": false
+  }
+}

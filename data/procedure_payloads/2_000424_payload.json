@@ -1,0 +1,383 @@
+{
+  "schema_version": "3.0",
+  "record_type": "public_service_procedure_payload",
+  "id": "procedure-2.000424",
+  "procedure_code": "2.000424",
+  "code": "2.000424",
+  "title": "Thủ tục thực hiện hỗ trợ khi hòa giải viên gặp tai nạn hoặc rủi ro ảnh hưởng đến sức khỏe, tính mạng trong khi thực hiện hoạt động hòa giải",
+  "language": "vi",
+  "status": "generated_from_pipeline",
+  "field": "Hòa giải ở cơ sở",
+  "group_key": "suc_khoe_y_te",
+  "workflow_family": null,
+  "subflow": null,
+  "source": {
+    "source_url": "file:///C:/Users/ku060/Downloads/VAIC%20source/data-pipeline/raw_data/2_000424/2_000424_procedure_detail.md",
+    "source_markdown_path": "C:\\Users\\ku060\\Downloads\\VAIC source\\data-pipeline\\raw_data\\2_000424\\2_000424_procedure_detail.md",
+    "normalized_payload_path": "C:\\Users\\ku060\\Downloads\\VAIC source\\data-pipeline\\govease-unified\\data\\normalized_structured\\2_000424_normalized_structured.json",
+    "enriched_payload_path": "C:\\Users\\ku060\\Downloads\\VAIC source\\data-pipeline\\govease-unified\\data\\enriched_structured_priority\\2_000424_enriched_structured.json"
+  },
+  "scope": {
+    "included": "Thủ tục này thuộc nhóm y tế, thường cần đối chiếu thông tin người bệnh, đơn vị tiếp nhận hoặc quyền lợi chuyên ngành. Kết quả thường nhận được là Quyết định hỗ trợ hòa giải viên gặp tai nạn hoặc rủi ro ảnh hưởng đến sức khỏe, tính mạng trong khi thực hiện hoạt động hòa giải. Thời gian xử lý tham khảo: 7 ngày làm việc.",
+    "not_included": []
+  },
+  "agency": {
+    "executing_agency": null,
+    "submission_place": null,
+    "receiving_places": []
+  },
+  "target_users": [
+    "Người Việt Nam định cư ở nước ngoài",
+    "Công dân Việt Nam"
+  ],
+  "submission_methods": [
+    {
+      "code": "ONLINE",
+      "label": "Trực tuyến",
+      "processing_time": "7 ngày làm việc",
+      "fee": null,
+      "description": null
+    },
+    {
+      "code": "POSTAL",
+      "label": "Dịch vụ bưu chính",
+      "processing_time": "7 ngày làm việc",
+      "fee": null,
+      "description": null
+    },
+    {
+      "code": "IN_PERSON",
+      "label": "Trực tiếp",
+      "processing_time": "7 ngày làm việc",
+      "fee": null,
+      "description": null
+    }
+  ],
+  "processing_note": "Thời gian xử lý tham chiếu: 7 ngày làm việc. Nên xác định rõ đối tượng tham gia, quyền lợi hoặc nhu cầu điều chỉnh hồ sơ y tế trước khi nộp. Có thể chọn kênh nộp phù hợp: Trực tiếp, Trực tuyến, Dịch vụ bưu chính. Hiện có khoảng 5 mục giấy tờ cần theo dõi trong checklist.",
+  "documents": {
+    "normally_required": [
+      {
+        "name": "Bản chính hoặc bản sao có chứng thực hoặc bản sao kèm theo bản chính để đối chiếu hoặc bản sao điện tử Biên bản xác nhận tình trạng của hòa giải viên bị tai nạn có xác nhận của Ủy ban nhân dân cấp xã nơi xảy ra tai nạn hoặc cơ quan công an nơi xảy ra tai nạn",
+        "quantity": "1 bản chính, 1 bản sao",
+        "notes": [],
+        "group": "default",
+        "attachment_path": null
+      },
+      {
+        "name": "Bản chính hoặc bản sao có chứng thực hoặc bản sao kèm theo bản chính để đối chiếu hoặc bản sao điện tử Giấy ra viện, hóa đơn thanh toán chi phí khám bệnh, chữa bệnh",
+        "quantity": "1 bản chính, 1 bản sao",
+        "notes": [],
+        "group": "default",
+        "attachment_path": null
+      }
+    ],
+    "conditional": [
+      {
+        "condition": "Bản chính hoặc bản sao có chứng thực hoặc bản sao kèm theo bản chính để đối chiếu hoặc bản sao điện tử Giấy chứng tử trong trường hợp hòa giải viên bị thiệt hại về tính mạng (Việc nộp bản chính hoặc bản sao có chứng thực hoặc bản sao điện tử Giấy chứng tử chỉ thực hiện trong trường hợp cơ quan tiếp nhận không thể khai thác được thông tin trong Cơ sở dữ liệu hộ tịch điện tử hoặc thông tin khai thác được không đầy đủ, không chính xác)",
+        "document": "Bản chính hoặc bản sao có chứng thực hoặc bản sao kèm theo bản chính để đối chiếu hoặc bản sao điện tử Giấy chứng tử trong trường hợp hòa giải viên bị thiệt hại về tính mạng (Việc nộp bản chính hoặc bản sao có chứng thực hoặc bản sao điện tử Giấy chứng tử chỉ thực hiện trong trường hợp cơ quan tiếp nhận không thể khai thác được thông tin trong Cơ sở dữ liệu hộ tịch điện tử hoặc thông tin khai thác được không đầy đủ, không chính xác)",
+        "quantity": "0 bản chính, 1 bản sao",
+        "notes": [],
+        "attachment_path": null
+      },
+      {
+        "condition": "Bản chính hoặc bản sao có chứng thực hoặc bản sao kèm theo bản chính để đối chiếu hoặc bản sao điện tử văn bản, giấy tờ hợp lệ về thu nhập thực tế theo tiền lương, tiền công hằng tháng của người bị tai nạn có xác nhận của tổ chức hoặc cá nhân sử dụng lao động để cơ quan nhà nước có thẩm quyền xác định thu nhập thực tế bị mất hoặc giảm sút, bao gồm: Hợp đồng lao động, quyết định nâng lương của tổ chức hoặc cá nhân sử dụng lao động hoặc bản kê có thu nhập thực tế của hòa giải viên bị tai nạn và các giấy tờ chứng minh thu nhập thực tế hợp pháp khác (nếu có)",
+        "document": "Bản chính hoặc bản sao có chứng thực hoặc bản sao kèm theo bản chính để đối chiếu hoặc bản sao điện tử văn bản, giấy tờ hợp lệ về thu nhập thực tế theo tiền lương, tiền công hằng tháng của người bị tai nạn có xác nhận của tổ chức hoặc cá nhân sử dụng lao động để cơ quan nhà nước có thẩm quyền xác định thu nhập thực tế bị mất hoặc giảm sút, bao gồm: Hợp đồng lao động, quyết định nâng lương của tổ chức hoặc cá nhân sử dụng lao động hoặc bản kê có thu nhập thực tế của hòa giải viên bị tai nạn và các giấy tờ chứng minh thu nhập thực tế hợp pháp khác (nếu có)",
+        "quantity": "1 bản chính, 1 bản sao",
+        "notes": [],
+        "attachment_path": null
+      },
+      {
+        "condition": "Giấy đề nghị hỗ trợ của hòa giải viên hoặc gia đình hòa giải viên trong trường hợp hòa giải viên bị thiệt hại về tính mạng có xác nhận của tổ trưởng tổ hòa giải hoặc Trưởng ban công tác Mặt trận trong trường hợp hòa giải viên bị thiệt hại là tổ trưởng tổ hòa giải. Giấy đề nghị hỗ trợ phải ghi rõ họ tên, địa chỉ của người yêu cầu hỗ trợ; lý do yêu cầu hỗ trợ",
+        "document": "Giấy đề nghị hỗ trợ của hòa giải viên hoặc gia đình hòa giải viên trong trường hợp hòa giải viên bị thiệt hại về tính mạng có xác nhận của tổ trưởng tổ hòa giải hoặc Trưởng ban công tác Mặt trận trong trường hợp hòa giải viên bị thiệt hại là tổ trưởng tổ hòa giải. Giấy đề nghị hỗ trợ phải ghi rõ họ tên, địa chỉ của người yêu cầu hỗ trợ; lý do yêu cầu hỗ trợ",
+        "quantity": "1 bản chính, 1 bản sao",
+        "notes": [],
+        "attachment_path": null
+      }
+    ],
+    "forms": [],
+    "presented": [],
+    "notes": [],
+    "summary": [
+      {
+        "group": "default",
+        "name": "Bản chính hoặc bản sao có chứng thực hoặc bản sao kèm theo bản chính để đối chiếu hoặc bản sao điện tử Biên bản xác nhận tình trạng của hòa giải viên bị tai nạn có xác nhận của Ủy ban nhân dân cấp xã nơi xảy ra tai nạn hoặc cơ quan công an nơi xảy ra tai nạn",
+        "quantity": "1 bản chính, 1 bản sao",
+        "notes": [],
+        "attachment_path": null
+      },
+      {
+        "group": "default",
+        "name": "Bản chính hoặc bản sao có chứng thực hoặc bản sao kèm theo bản chính để đối chiếu hoặc bản sao điện tử Giấy ra viện, hóa đơn thanh toán chi phí khám bệnh, chữa bệnh",
+        "quantity": "1 bản chính, 1 bản sao",
+        "notes": [],
+        "attachment_path": null
+      },
+      {
+        "group": null,
+        "name": null,
+        "quantity": "0 bản chính, 1 bản sao",
+        "notes": [],
+        "attachment_path": null
+      },
+      {
+        "group": null,
+        "name": null,
+        "quantity": "1 bản chính, 1 bản sao",
+        "notes": [],
+        "attachment_path": null
+      },
+      {
+        "group": null,
+        "name": null,
+        "quantity": "1 bản chính, 1 bản sao",
+        "notes": [],
+        "attachment_path": null
+      }
+    ]
+  },
+  "steps": [
+    {
+      "order": 1,
+      "title": "Bước 1",
+      "description": "1. - Trong trường hợp hòa giải viên gặp tai nạn hoặc rủi ro ảnh hưởng đến sức khỏe, tính mạng trong khi thực hiện hoạt động hòa giải ở cơ sở, hòa giải viên hoặc đại diện gia đình hòa giải viên (trong trường hợp hòa giải viên bị thiệt hại về tính mạng) nộp hồ sơ đề nghị hỗ trợ trực tiếp hoặc qua dịch vụ bưu chính đến Ủy ban nhân dân cấp xã nơi đã ra quyết định công nhận hòa giải viên hoặc nộp trực tuyến trên Cổng dịch vụ công quốc gia.",
+      "example": "trực tuyến"
+    },
+    {
+      "order": 2,
+      "title": "Bước 2",
+      "description": "- Trong thời hạn 07 ngày làm việc, Ủy ban nhân dân cấp xã nơi đã ra quyết định công nhận hòa giải viên xem xét, ra quyết định hỗ trợ và thực hiện việc chi tiền hỗ trợ cho hòa giải viên gặp tai nạn hoặc rủi ro ảnh hưởng đến tính mạng, sức khỏe trong khi thực hiện hoạt động hòa giải.",
+      "example": "07 ngày làm việc"
+    },
+    {
+      "order": 3,
+      "title": "Bước 3",
+      "description": "- Trong quá trình giải quyết thủ tục hành chính, Ủy ban nhân dân cấp xã/công chức cấp xã phụ trách công tác tư pháp khi xem xét, thẩm định hồ sơ có trách nhiệm khai thác, sử dụng thông tin để thay thế cho giấy chứng tử của hòa giải viên trong trường hợp hòa giải viên bị thiệt hại về tính mạng khi giấy tờ này tra cứu được tại Cơ sở dữ liệu hộ tịch điện tử.",
+      "example": null
+    },
+    {
+      "order": 4,
+      "title": "Bước 4",
+      "description": "- Trường hợp không khai thác được hoặc thông tin khai thác được không đầy đủ, không chính xác thì thực hiện như sau:",
+      "example": null
+    },
+    {
+      "order": 5,
+      "title": "Bước 5",
+      "description": "+) Trường hợp hồ sơ thủ tục hành chính nộp trực tuyến trên Cổng Dịch vụ công quốc gia, người có thẩm quyền tiếp nhận, giải quyết thủ tục hành chính phải có thông báo yêu cầu bổ sung, hoàn thiện hồ sơ cho người nộp hồ sơ không muộn hơn 08 giờ làm việc kể từ khi Hệ thống thông tin giải quyết thủ tục hành chính tiếp nhận hồ sơ. Việc thông báo được thực hiện bằng một hoặc nhiều phương thức: gửi đến tài khoản cá nhân trên Cổng Dịch vụ công quốc gia hoặc trên VNeID; gửi tin nhắn hoặc liên hệ qua số điện thoại; đồng thời hướng dẫn người nộp hồ sơ liên hệ với cơ quan có thẩm quyền cập nhật, điều chỉnh dữ liệu.",
+      "example": "trực tuyến"
+    },
+    {
+      "order": 6,
+      "title": "Bước 6",
+      "description": "+) Trường hợp hồ sơ thủ tục hành chính nộp trực tiếp hoặc qua dịch vụ bưu chính, người có thẩm quyền tiếp nhận, giải quyết thủ tục hành chính gửi Phiếu yêu cầu bổ sung, hoàn thiện hồ sơ cho người nộp hồ sơ trong thời hạn không quá 01 ngày làm việc kể từ khi nhận được hồ sơ; thực hiện việc số hóa phục vụ giải quyết thủ tục hành chính; đồng thời hướng dẫn người nộp hồ sơ liên hệ với cơ quan có thẩm quyền cập nhật, điều chỉnh dữ liệu.",
+      "example": "01 ngày làm việc"
+    }
+  ],
+  "input_fields": [
+    {
+      "field": "request_subject",
+      "label": "Đối tượng làm thủ tục",
+      "type": "string",
+      "required": true
+    },
+    {
+      "field": "insurance_or_medical_need",
+      "label": "Nhu cầu bảo hiểm hoặc y tế",
+      "type": "string",
+      "required": true
+    },
+    {
+      "field": "submission_channel_preference",
+      "label": "Kênh nộp dự kiến",
+      "type": "enum",
+      "required": false,
+      "options": [
+        "Trực tiếp",
+        "Trực tuyến",
+        "Dịch vụ bưu chính"
+      ]
+    },
+    {
+      "field": "has_insurance_number",
+      "label": "Đã có mã BHXH/BHYT",
+      "type": "boolean",
+      "required": false
+    }
+  ],
+  "validation_rules": [
+    {
+      "id": "required-1",
+      "severity": "error",
+      "field": "request_subject",
+      "rule": "Trường bắt buộc phải có dữ liệu hợp lệ trước khi nộp.",
+      "message": "Thiếu trường bắt buộc: Đối tượng làm thủ tục."
+    },
+    {
+      "id": "required-2",
+      "severity": "error",
+      "field": "insurance_or_medical_need",
+      "rule": "Trường bắt buộc phải có dữ liệu hợp lệ trước khi nộp.",
+      "message": "Thiếu trường bắt buộc: Nhu cầu bảo hiểm hoặc y tế."
+    },
+    {
+      "id": "hint-1",
+      "severity": "warning",
+      "field": "general",
+      "rule": "Nên xác định trước kênh nộp hồ sơ để biết có cần bản giấy, bản điện tử hay xuất trình trực tiếp.",
+      "message": "Nên xác định trước kênh nộp hồ sơ để biết có cần bản giấy, bản điện tử hay xuất trình trực tiếp."
+    },
+    {
+      "id": "hint-2",
+      "severity": "warning",
+      "field": "general",
+      "rule": "Nên xác định đúng nhóm đối tượng, mã số bảo hiểm và quyền lợi áp dụng trước khi nộp.",
+      "message": "Nên xác định đúng nhóm đối tượng, mã số bảo hiểm và quyền lợi áp dụng trước khi nộp."
+    }
+  ],
+  "common_errors": [
+    {
+      "field": "general",
+      "issue": "Thiếu hồ sơ về vị trí việc làm, đơn vị sử dụng lao động hoặc điều kiện làm việc áp dụng.",
+      "fix": "Nên xác định trước kênh nộp hồ sơ để biết có cần bản giấy, bản điện tử hay xuất trình trực tiếp."
+    }
+  ],
+  "clarifying_questions": [
+    {
+      "id": "clarify_1",
+      "question": "Bạn đang muốn đăng ký, điều chỉnh hay xác nhận quyền lợi y tế hoặc bảo hiểm nào?",
+      "purpose": "workflow_intake"
+    },
+    {
+      "id": "clarify_2",
+      "question": "Bạn đã có mã BHXH/BHYT hoặc thông tin đơn vị tiếp nhận liên quan chưa?",
+      "purpose": "workflow_intake"
+    }
+  ],
+  "legal_basis": [
+    {
+      "title": "Nghị quyết số 66.7/2025/NQ-CP của Chính phủ: Quy định cắt giảm, đơn giản hóa thủ tục hành chính dựa trên dữ liệu",
+      "code": "66.7/2025/NQ-CP"
+    },
+    {
+      "title": "Thông tư số 09/2025/TT-BTP ngày 16/6/2025 của Bộ trưởng Bộ Tư pháp hướng dẫn chức năng, nhiệm vụ, quyền hạn của Sở Tư pháp thuộc Ủy ban nhân dân tỉnh, thành phố trực thuộc Trung ương và chức năng, nhiệm vụ, quyền hạn của Văn phòng Hội đồng nhân dân và Ủy ban nhân dân thuộc Ủy ban nhân dân xã, phường, đặc khu trong lĩnh vực tư pháp",
+      "code": "09/2025/TT-BTP"
+    },
+    {
+      "title": "Nghị định số 120/2025/NĐ-CP ngày 11/6/2025 của Chính phủ quy định về phân định thẩm quyền của chính quyền địa phương 02 cấp trong lĩnh vực quản lý nhà nước của Bộ Tư pháp.",
+      "code": "120/2025/NĐ-CP"
+    },
+    {
+      "title": "quy định chi tiết một số điều và biện pháp thi hành Luật Hòa giải ở cơ sở",
+      "code": "15/2014/NĐ-CP"
+    },
+    {
+      "title": "Luật Hòa giải ở cơ sở năm 2013",
+      "code": "35/2013/QH13"
+    }
+  ],
+  "legal_bases": [
+    {
+      "title": "Nghị quyết số 66.7/2025/NQ-CP của Chính phủ: Quy định cắt giảm, đơn giản hóa thủ tục hành chính dựa trên dữ liệu",
+      "code": "66.7/2025/NQ-CP"
+    },
+    {
+      "title": "Thông tư số 09/2025/TT-BTP ngày 16/6/2025 của Bộ trưởng Bộ Tư pháp hướng dẫn chức năng, nhiệm vụ, quyền hạn của Sở Tư pháp thuộc Ủy ban nhân dân tỉnh, thành phố trực thuộc Trung ương và chức năng, nhiệm vụ, quyền hạn của Văn phòng Hội đồng nhân dân và Ủy ban nhân dân thuộc Ủy ban nhân dân xã, phường, đặc khu trong lĩnh vực tư pháp",
+      "code": "09/2025/TT-BTP"
+    },
+    {
+      "title": "Nghị định số 120/2025/NĐ-CP ngày 11/6/2025 của Chính phủ quy định về phân định thẩm quyền của chính quyền địa phương 02 cấp trong lĩnh vực quản lý nhà nước của Bộ Tư pháp.",
+      "code": "120/2025/NĐ-CP"
+    },
+    {
+      "title": "quy định chi tiết một số điều và biện pháp thi hành Luật Hòa giải ở cơ sở",
+      "code": "15/2014/NĐ-CP"
+    },
+    {
+      "title": "Luật Hòa giải ở cơ sở năm 2013",
+      "code": "35/2013/QH13"
+    }
+  ],
+  "faq": [
+    {
+      "question": "Có thể nộp qua kênh nào?",
+      "answer": "Các kênh hiện có: Trực tiếp, Trực tuyến, Dịch vụ bưu chính."
+    },
+    {
+      "question": "Thời gian xử lý tham chiếu là bao lâu?",
+      "answer": "Thời gian xử lý tham chiếu hiện có là 7 ngày làm việc."
+    },
+    {
+      "question": "Kết quả chính của thủ tục là gì?",
+      "answer": "Kết quả chính được trích xuất là Quyết định hỗ trợ hòa giải viên gặp tai nạn hoặc rủi ro ảnh hưởng đến sức khỏe, tính mạng trong khi thực hiện hoạt động hòa giải."
+    }
+  ],
+  "guidance": {
+    "highlight_documents": [
+      {
+        "bucket": "required",
+        "name": "Bản chính hoặc bản sao có chứng thực hoặc bản sao kèm theo bản chính để đối chiếu hoặc bản sao điện tử Biên bản xác nhận tình trạng của hòa giải viên bị tai nạn có xác nhận của Ủy ban nhân dân cấp xã nơi xảy ra tai nạn hoặc cơ quan công an nơi xảy ra tai nạn",
+        "conditions": [],
+        "attachment_path": null
+      },
+      {
+        "bucket": "required",
+        "name": "Bản chính hoặc bản sao có chứng thực hoặc bản sao kèm theo bản chính để đối chiếu hoặc bản sao điện tử Giấy ra viện, hóa đơn thanh toán chi phí khám bệnh, chữa bệnh",
+        "conditions": [],
+        "attachment_path": null
+      },
+      {
+        "bucket": "conditional",
+        "name": "Bản chính hoặc bản sao có chứng thực hoặc bản sao kèm theo bản chính để đối chiếu hoặc bản sao điện tử Giấy chứng tử trong trường hợp hòa giải viên bị thiệt hại về tính mạng (Việc nộp bản chính hoặc bản sao có chứng thực hoặc bản sao điện tử Giấy chứng tử chỉ thực hiện trong trường hợp cơ quan tiếp nhận không thể khai thác được thông tin trong Cơ sở dữ liệu hộ tịch điện tử hoặc thông tin khai thác được không đầy đủ, không chính xác)",
+        "conditions": [
+          "Bản chính hoặc bản sao có chứng thực hoặc bản sao kèm theo bản chính để đối chiếu hoặc bản sao điện tử Giấy chứng tử trong trường hợp hòa giải viên bị thiệt hại về tính mạng (Việc nộp bản chính hoặc bản sao có chứng thực hoặc bản sao điện tử Giấy chứng tử chỉ thực hiện trong trường hợp cơ quan tiếp nhận không thể khai thác được thông tin trong Cơ sở dữ liệu hộ tịch điện tử hoặc thông tin khai thác được không đầy đủ, không chính xác)"
+        ],
+        "attachment_path": null
+      },
+      {
+        "bucket": "conditional",
+        "name": "Bản chính hoặc bản sao có chứng thực hoặc bản sao kèm theo bản chính để đối chiếu hoặc bản sao điện tử văn bản, giấy tờ hợp lệ về thu nhập thực tế theo tiền lương, tiền công hằng tháng của người bị tai nạn có xác nhận của tổ chức hoặc cá nhân sử dụng lao động để cơ quan nhà nước có thẩm quyền xác định thu nhập thực tế bị mất hoặc giảm sút, bao gồm: Hợp đồng lao động, quyết định nâng lương của tổ chức hoặc cá nhân sử dụng lao động hoặc bản kê có thu nhập thực tế của hòa giải viên bị tai nạn và các giấy tờ chứng minh thu nhập thực tế hợp pháp khác (nếu có)",
+        "conditions": [
+          "Bản chính hoặc bản sao có chứng thực hoặc bản sao kèm theo bản chính để đối chiếu hoặc bản sao điện tử văn bản, giấy tờ hợp lệ về thu nhập thực tế theo tiền lương, tiền công hằng tháng của người bị tai nạn có xác nhận của tổ chức hoặc cá nhân sử dụng lao động để cơ quan nhà nước có thẩm quyền xác định thu nhập thực tế bị mất hoặc giảm sút, bao gồm: Hợp đồng lao động, quyết định nâng lương của tổ chức hoặc cá nhân sử dụng lao động hoặc bản kê có thu nhập thực tế của hòa giải viên bị tai nạn và các giấy tờ chứng minh thu nhập thực tế hợp pháp khác (nếu có)"
+        ],
+        "attachment_path": null
+      },
+      {
+        "bucket": "conditional",
+        "name": "Giấy đề nghị hỗ trợ của hòa giải viên hoặc gia đình hòa giải viên trong trường hợp hòa giải viên bị thiệt hại về tính mạng có xác nhận của tổ trưởng tổ hòa giải hoặc Trưởng ban công tác Mặt trận trong trường hợp hòa giải viên bị thiệt hại là tổ trưởng tổ hòa giải. Giấy đề nghị hỗ trợ phải ghi rõ họ tên, địa chỉ của người yêu cầu hỗ trợ; lý do yêu cầu hỗ trợ",
+        "conditions": [
+          "Giấy đề nghị hỗ trợ của hòa giải viên hoặc gia đình hòa giải viên trong trường hợp hòa giải viên bị thiệt hại về tính mạng có xác nhận của tổ trưởng tổ hòa giải hoặc Trưởng ban công tác Mặt trận trong trường hợp hòa giải viên bị thiệt hại là tổ trưởng tổ hòa giải. Giấy đề nghị hỗ trợ phải ghi rõ họ tên, địa chỉ của người yêu cầu hỗ trợ; lý do yêu cầu hỗ trợ"
+        ],
+        "attachment_path": null
+      }
+    ],
+    "special_cases": [
+      "Có thể cần xác minh quan hệ lao động hoặc giấy phép làm việc"
+    ],
+    "common_errors": [
+      "Thiếu hồ sơ về vị trí việc làm, đơn vị sử dụng lao động hoặc điều kiện làm việc áp dụng."
+    ],
+    "validation_hints": [
+      "Nên xác định trước kênh nộp hồ sơ để biết có cần bản giấy, bản điện tử hay xuất trình trực tiếp.",
+      "Nên xác định đúng nhóm đối tượng, mã số bảo hiểm và quyền lợi áp dụng trước khi nộp."
+    ]
+  },
+  "next_steps": {
+    "summary": "Nên xác định rõ đối tượng tham gia, quyền lợi hoặc nhu cầu điều chỉnh hồ sơ y tế trước khi nộp. Có thể chọn kênh nộp phù hợp: Trực tiếp, Trực tuyến, Dịch vụ bưu chính. Hiện có khoảng 5 mục giấy tờ cần theo dõi trong checklist.",
+    "time_badge": "7 ngày làm việc",
+    "result_label": "Quyết định hỗ trợ hòa giải viên gặp tai nạn hoặc rủi ro ảnh hưởng đến sức khỏe, tính mạng trong khi thực hiện hoạt động hòa giải",
+    "primary_channel": "online",
+    "channels": [
+      "in_person",
+      "online",
+      "postal"
+    ]
+  },
+  "notes": [],
+  "provenance": {
+    "pipeline": "raw->structured->normalized->enriched->ui_api_payload",
+    "normalizer_version": "0.2.0",
+    "enricher_version": "0.2.0",
+    "mapping_notes": "excluded_from_clean_workflow_dataset",
+    "supported_group": true
+  }
+}

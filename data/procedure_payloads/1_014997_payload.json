@@ -1,0 +1,304 @@
+{
+  "schema_version": "3.0",
+  "record_type": "public_service_procedure_payload",
+  "id": "procedure-1.014997",
+  "procedure_code": "1.014997",
+  "code": "1.014997",
+  "title": "Xét, cấp học bổng chính sách đối với học viên cơ sở giáo dục nghề nghiệp tư thục dành cho thương binh, người khuyết tật",
+  "language": "vi",
+  "status": "generated_from_pipeline",
+  "field": "Giáo dục và Đào tạo thuộc hệ thống giáo dục quốc dân",
+  "group_key": "hoc_tap",
+  "workflow_family": "education_study_workflow",
+  "subflow": "hoc_bong_va_ho_tro",
+  "source": {
+    "source_url": "file:///C:/Users/ku060/Downloads/VAIC%20source/data-pipeline/raw_data/1_014997/1_014997_procedure_detail.md",
+    "source_markdown_path": "C:\\Users\\ku060\\Downloads\\VAIC source\\data-pipeline\\raw_data\\1_014997\\1_014997_procedure_detail.md",
+    "normalized_payload_path": "C:\\Users\\ku060\\Downloads\\VAIC source\\data-pipeline\\govease-unified\\data\\normalized_structured\\1_014997_normalized_structured.json",
+    "enriched_payload_path": "C:\\Users\\ku060\\Downloads\\VAIC source\\data-pipeline\\govease-unified\\data\\enriched_structured_priority\\1_014997_enriched_structured.json"
+  },
+  "scope": {
+    "included": "Thủ tục này thuộc nhóm giáo dục và học tập, thường liên quan đến hồ sơ đào tạo, văn bằng hoặc điều kiện học tập của người học. Kết quả thường nhận được là Quyết định cấp học bổng chính sách (cấp xã). Thời gian xử lý tham khảo: 10 ngày làm việc.",
+    "not_included": []
+  },
+  "agency": {
+    "executing_agency": null,
+    "submission_place": "Nộp hồ sơ trực tuyến trên Cổng Dịch vụ công quốc gia hoặc qua dịch vụ bưu chính hoặc nộp trực tiếp tại Trung tâm Phục vụ hành chính công cấp xã nơi thường trú.",
+    "receiving_places": [
+      "Nộp hồ sơ trực tuyến trên Cổng Dịch vụ công quốc gia hoặc qua dịch vụ bưu chính hoặc nộp trực tiếp tại Trung tâm Phục vụ hành chính công cấp xã nơi thường trú."
+    ]
+  },
+  "target_users": [
+    "Công dân Việt Nam"
+  ],
+  "submission_methods": [
+    {
+      "code": "IN_PERSON",
+      "label": "Trực tiếp",
+      "processing_time": "10 ngày làm việc",
+      "fee": null,
+      "description": "Nộp hồ sơ trực tuyến trên Cổng Dịch vụ công quốc gia hoặc qua dịch vụ bưu chính hoặc nộp trực tiếp tại Trung tâm Phục vụ hành chính công cấp xã nơi thường trú.<br>Thời hạn giải quyết:<br>10 ngày làm việc kể từ ngày nhận đủ hồ sơ hợp lệ."
+    },
+    {
+      "code": "ONLINE",
+      "label": "Trực tuyến",
+      "processing_time": "10 ngày làm việc",
+      "fee": null,
+      "description": "Nộp hồ sơ trực tuyến trên Cổng Dịch vụ công quốc gia hoặc qua dịch vụ bưu chính hoặc nộp trực tiếp tại Trung tâm Phục vụ hành chính công cấp xã nơi thường trú.<br>Thời hạn giải quyết:<br>10 ngày làm việc kể từ ngày nhận đủ hồ sơ hợp lệ."
+    },
+    {
+      "code": "POSTAL",
+      "label": "Dịch vụ bưu chính",
+      "processing_time": "10 ngày làm việc",
+      "fee": null,
+      "description": "Nộp hồ sơ trực tuyến trên Cổng Dịch vụ công quốc gia hoặc qua dịch vụ bưu chính hoặc nộp trực tiếp tại Trung tâm Phục vụ hành chính công cấp xã nơi thường trú.<br>Thời hạn giải quyết:<br>10 ngày làm việc kể từ ngày nhận đủ hồ sơ hợp lệ."
+    }
+  ],
+  "processing_note": "Thời gian xử lý tham chiếu: 10 ngày làm việc. Nên rà trước thông tin người học, cơ sở đào tạo và loại kết quả cần xin xác nhận hoặc cấp lại. Có thể chọn kênh nộp phù hợp: Trực tiếp, Trực tuyến, Dịch vụ bưu chính. Hiện có khoảng 2 mục giấy tờ cần theo dõi trong checklist.",
+  "documents": {
+    "normally_required": [
+      {
+        "name": "Đơn đề nghị có xác nhận của nhà trường nơi người học theo học (theo Mẫu số 04 tại Phụ lục kèm theo Nghị định số 66/2026/NĐ-CP)",
+        "quantity": "1 bản chính, 0 bản sao",
+        "notes": [],
+        "group": "default",
+        "attachment_path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/1_014997/Mau%2004.docx"
+      }
+    ],
+    "conditional": [
+      {
+        "condition": "Giấy chứng nhận hộ nghèo (nếu thuộc đối tượng hộ nghèo). Trường hợp cơ quan có thẩm quyền khai thác được các thông tin trên từ Cơ sở dữ liệu chuyên ngành hoặc từ cơ quan nhà nước về hộ nghèo thì người học không cần phải cung cấp Giấy chứng nhận hộ nghèo và chỉ cần cung cấp thông tin để có cơ sở đối chiếu, khai thác dữ liệu.",
+        "document": "Giấy chứng nhận hộ nghèo (nếu thuộc đối tượng hộ nghèo). Trường hợp cơ quan có thẩm quyền khai thác được các thông tin trên từ Cơ sở dữ liệu chuyên ngành hoặc từ cơ quan nhà nước về hộ nghèo thì người học không cần phải cung cấp Giấy chứng nhận hộ nghèo và chỉ cần cung cấp thông tin để có cơ sở đối chiếu, khai thác dữ liệu.",
+        "quantity": "0 bản chính, 1 bản sao",
+        "notes": [],
+        "attachment_path": null
+      }
+    ],
+    "forms": [
+      {
+        "name": "Đơn đề nghị có xác nhận của nhà trường nơi người học theo học (theo Mẫu số 04 tại Phụ lục kèm theo Nghị định số 66/2026/NĐ-CP)",
+        "attachment_label": "Mau 04.docx",
+        "attachment_path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/1_014997/Mau%2004.docx"
+      }
+    ],
+    "presented": [],
+    "notes": [],
+    "summary": [
+      {
+        "group": "default",
+        "name": "Đơn đề nghị có xác nhận của nhà trường nơi người học theo học (theo Mẫu số 04 tại Phụ lục kèm theo Nghị định số 66/2026/NĐ-CP)",
+        "quantity": "1 bản chính, 0 bản sao",
+        "notes": [],
+        "attachment_path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/1_014997/Mau%2004.docx"
+      },
+      {
+        "group": null,
+        "name": null,
+        "quantity": "0 bản chính, 1 bản sao",
+        "notes": [],
+        "attachment_path": null
+      },
+      {
+        "group": null,
+        "name": "Đơn đề nghị có xác nhận của nhà trường nơi người học theo học (theo Mẫu số 04 tại Phụ lục kèm theo Nghị định số 66/2026/NĐ-CP)",
+        "quantity": null,
+        "notes": null,
+        "attachment_path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/1_014997/Mau%2004.docx"
+      }
+    ]
+  },
+  "steps": [
+    {
+      "order": 1,
+      "title": "Bước 1",
+      "description": "1.",
+      "example": null
+    },
+    {
+      "order": 2,
+      "title": "a)",
+      "description": "a) Trong thời hạn 10 ngày làm việc kể từ ngày nhập học, cơ sở giáo dục nghề nghiệp thông báo cho học viên về chế độ học bổng chính sách, thời gian nộp hồ sơ và hướng dẫn học viên nộp 01 bộ hồ sơ theo quy định. Mỗi học viên chỉ phải nộp một bộ hồ sơ một lần để đề nghị cấp học bổng trong cả thời gian học tại cơ sở giáo dục nghề nghiệp.",
+      "example": "10 ngày làm việc"
+    },
+    {
+      "order": 3,
+      "title": "b)",
+      "description": "b) Học viên cơ sở giáo dục nghề nghiệp tư thục chuẩn bị hồ sơ theo quy định gửi cơ sở giáo dục nghề nghiệp nơi theo học để xác nhận vào đơn trong thời hạn 03 ngày làm việc kể từ ngày nhận được đơn và hướng dẫn học viên gửi hồ sơ về Ủy ban nhân dân cấp xã nơi học viên thường trú theo một trong các hình thức: trực tuyến trên Cổng Dịch vụ công quốc gia hoặc qua dịch vụ bưu chính hoặc nộp trực tiếp tại Trung tâm Phục vụ hành chính công cấp xã.",
+      "example": "03 ngày làm việc"
+    },
+    {
+      "order": 4,
+      "title": "c)",
+      "description": "c) Trong thời hạn 10 ngày làm việc kể từ ngày nhận đủ hồ sơ hợp lệ, Ủy ban nhân dân cấp xã tổ chức thẩm định, phê duyệt danh sách đối tượng được hưởng chính sách và xây dựng dự toán kinh phí thực hiện (Mẫu số 05 tại Phụ lục kèm theo Nghị định số 66/2026/NĐ-CP) gửi cơ quan tài chính có thẩm quyền, trình cấp có thẩm quyền phê duyệt (Mẫu số 06 tại Phụ lục kèm theo Nghị định số 66/2026/NĐ-CP). Trường hợp hồ sơ không bảo đảm đúng quy định, Ủy ban nhân dân cấp xã có trách nhiệm thông báo cho người học trong thời hạn 03 ngày làm việc kể từ ngày nhận được hồ sơ. Học viên nộp đủ hồ sơ theo quy định thì được chi trả học bổng chính sách tính từ ngày Ủy ban nhân dân cấp xã nhận đủ hồ sơ theo quy định.",
+      "example": "10 ngày làm việc"
+    }
+  ],
+  "input_fields": [
+    {
+      "field": "learner_full_name",
+      "label": "Tên người học",
+      "type": "string",
+      "required": true
+    },
+    {
+      "field": "education_record_type",
+      "label": "Loại hồ sơ học tập cần xử lý",
+      "type": "string",
+      "required": true
+    },
+    {
+      "field": "education_institution",
+      "label": "Cơ sở đào tạo liên quan",
+      "type": "string",
+      "required": false
+    },
+    {
+      "field": "submission_channel_preference",
+      "label": "Kênh nộp dự kiến",
+      "type": "enum",
+      "required": false,
+      "options": [
+        "Trực tiếp",
+        "Trực tuyến",
+        "Dịch vụ bưu chính"
+      ]
+    }
+  ],
+  "validation_rules": [
+    {
+      "id": "required-1",
+      "severity": "error",
+      "field": "learner_full_name",
+      "rule": "Trường bắt buộc phải có dữ liệu hợp lệ trước khi nộp.",
+      "message": "Thiếu trường bắt buộc: Tên người học."
+    },
+    {
+      "id": "required-2",
+      "severity": "error",
+      "field": "education_record_type",
+      "rule": "Trường bắt buộc phải có dữ liệu hợp lệ trước khi nộp.",
+      "message": "Thiếu trường bắt buộc: Loại hồ sơ học tập cần xử lý."
+    },
+    {
+      "id": "hint-1",
+      "severity": "warning",
+      "field": "general",
+      "rule": "Nên xác định trước kênh nộp hồ sơ để biết có cần bản giấy, bản điện tử hay xuất trình trực tiếp.",
+      "message": "Nên xác định trước kênh nộp hồ sơ để biết có cần bản giấy, bản điện tử hay xuất trình trực tiếp."
+    },
+    {
+      "id": "hint-2",
+      "severity": "warning",
+      "field": "general",
+      "rule": "Có mẫu biểu đính kèm, nên kiểm tra đúng biểu mẫu trước khi nộp.",
+      "message": "Có mẫu biểu đính kèm, nên kiểm tra đúng biểu mẫu trước khi nộp."
+    },
+    {
+      "id": "hint-3",
+      "severity": "warning",
+      "field": "general",
+      "rule": "Nên rà lại thông tin người học, cơ sở đào tạo và loại xác nhận hoặc văn bằng cần xin.",
+      "message": "Nên rà lại thông tin người học, cơ sở đào tạo và loại xác nhận hoặc văn bằng cần xin."
+    }
+  ],
+  "common_errors": [
+    {
+      "field": "general",
+      "issue": "Điền sai mẫu tờ khai hoặc chọn sai biểu mẫu đi kèm.",
+      "fix": "Nên xác định trước kênh nộp hồ sơ để biết có cần bản giấy, bản điện tử hay xuất trình trực tiếp."
+    },
+    {
+      "field": "general",
+      "issue": "Thông tin thửa đất, tài sản hoặc giấy chứng nhận chưa khớp với hồ sơ hiện có.",
+      "fix": "Nên xác định trước kênh nộp hồ sơ để biết có cần bản giấy, bản điện tử hay xuất trình trực tiếp."
+    }
+  ],
+  "clarifying_questions": [
+    {
+      "id": "clarify_1",
+      "question": "Bạn đang cần xử lý hồ sơ học tập, văn bằng hay xác nhận nào?",
+      "purpose": "workflow_intake"
+    },
+    {
+      "id": "clarify_2",
+      "question": "Người học và cơ sở đào tạo liên quan đã xác định rõ chưa?",
+      "purpose": "workflow_intake"
+    }
+  ],
+  "legal_basis": [
+    {
+      "title": "quy định chi tiết một số điều của Luật Giáo dục",
+      "code": "66/2026/NĐ-CP"
+    }
+  ],
+  "legal_bases": [
+    {
+      "title": "quy định chi tiết một số điều của Luật Giáo dục",
+      "code": "66/2026/NĐ-CP"
+    }
+  ],
+  "faq": [
+    {
+      "question": "Có thể nộp qua kênh nào?",
+      "answer": "Các kênh hiện có: Trực tiếp, Trực tuyến, Dịch vụ bưu chính."
+    },
+    {
+      "question": "Thời gian xử lý tham chiếu là bao lâu?",
+      "answer": "Thời gian xử lý tham chiếu hiện có là 10 ngày làm việc."
+    },
+    {
+      "question": "Kết quả chính của thủ tục là gì?",
+      "answer": "Kết quả chính được trích xuất là Quyết định cấp học bổng chính sách (cấp xã)."
+    }
+  ],
+  "guidance": {
+    "highlight_documents": [
+      {
+        "bucket": "required",
+        "name": "Đơn đề nghị có xác nhận của nhà trường nơi người học theo học (theo Mẫu số 04 tại Phụ lục kèm theo Nghị định số 66/2026/NĐ-CP)",
+        "conditions": [],
+        "attachment_path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/1_014997/Mau%2004.docx"
+      },
+      {
+        "bucket": "conditional",
+        "name": "Giấy chứng nhận hộ nghèo (nếu thuộc đối tượng hộ nghèo). Trường hợp cơ quan có thẩm quyền khai thác được các thông tin trên từ Cơ sở dữ liệu chuyên ngành hoặc từ cơ quan nhà nước về hộ nghèo thì người học không cần phải cung cấp Giấy chứng nhận hộ nghèo và chỉ cần cung cấp thông tin để có cơ sở đối chiếu, khai thác dữ liệu.",
+        "conditions": [
+          "Giấy chứng nhận hộ nghèo (nếu thuộc đối tượng hộ nghèo). Trường hợp cơ quan có thẩm quyền khai thác được các thông tin trên từ Cơ sở dữ liệu chuyên ngành hoặc từ cơ quan nhà nước về hộ nghèo thì người học không cần phải cung cấp Giấy chứng nhận hộ nghèo và chỉ cần cung cấp thông tin để có cơ sở đối chiếu, khai thác dữ liệu."
+        ],
+        "attachment_path": null
+      }
+    ],
+    "special_cases": [
+      "Có thể cần đối chiếu thông tin thửa đất hoặc giấy chứng nhận",
+      "Có thể cần xác minh hồ sơ học tập hoặc văn bằng"
+    ],
+    "common_errors": [
+      "Điền sai mẫu tờ khai hoặc chọn sai biểu mẫu đi kèm.",
+      "Thông tin thửa đất, tài sản hoặc giấy chứng nhận chưa khớp với hồ sơ hiện có."
+    ],
+    "validation_hints": [
+      "Nên xác định trước kênh nộp hồ sơ để biết có cần bản giấy, bản điện tử hay xuất trình trực tiếp.",
+      "Có mẫu biểu đính kèm, nên kiểm tra đúng biểu mẫu trước khi nộp.",
+      "Nên rà lại thông tin người học, cơ sở đào tạo và loại xác nhận hoặc văn bằng cần xin."
+    ]
+  },
+  "next_steps": {
+    "summary": "Nên rà trước thông tin người học, cơ sở đào tạo và loại kết quả cần xin xác nhận hoặc cấp lại. Có thể chọn kênh nộp phù hợp: Trực tiếp, Trực tuyến, Dịch vụ bưu chính. Hiện có khoảng 2 mục giấy tờ cần theo dõi trong checklist.",
+    "time_badge": "10 ngày làm việc",
+    "result_label": "Quyết định cấp học bổng chính sách (cấp xã)",
+    "primary_channel": "in_person",
+    "channels": [
+      "in_person",
+      "online",
+      "postal"
+    ]
+  },
+  "notes": [],
+  "provenance": {
+    "pipeline": "raw->structured->normalized->enriched->ui_api_payload",
+    "normalizer_version": "0.2.0",
+    "enricher_version": "0.2.0",
+    "mapping_notes": "workflow_generated:hoc_tap/hoc_bong_va_ho_tro",
+    "supported_group": true
+  }
+}

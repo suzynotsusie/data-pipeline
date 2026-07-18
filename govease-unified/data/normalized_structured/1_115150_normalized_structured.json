@@ -1,0 +1,251 @@
+{
+  "schema_version": "1.0",
+  "normalizer_version": "0.2.0",
+  "source": {
+    "procedure_code": "1.115150",
+    "title": "Thủ tục bán, cho thuê mua, cho thuê nhà ở xã hội được đầu tư xây dựng theo dự án và không sử dụng vốn đầu tư công, nguồn tài chính công đoàn",
+    "raw_structured_parser_version": "0.1.0",
+    "field": "Nhà ở và công sở"
+  },
+  "procedure": {
+    "level": "Cơ quan khác",
+    "procedure_type": "TTHC được luật giao quy định chi tiết",
+    "target_users": [
+      "Công dân Việt Nam",
+      "Cán bộ",
+      "công chức",
+      "viên chức",
+      "Đảng viên"
+    ],
+    "authorities": [],
+    "receiving_places": []
+  },
+  "submission": {
+    "channels": [
+      "in_person",
+      "online",
+      "postal"
+    ],
+    "methods": [
+      {
+        "method_id": "method_1",
+        "channel": "in_person",
+        "processing_time_text": "30 ngày",
+        "fee_text": null,
+        "description": null,
+        "is_online": false,
+        "is_postal": false,
+        "is_in_person": true
+      },
+      {
+        "method_id": "method_2",
+        "channel": "online",
+        "processing_time_text": "30 ngày",
+        "fee_text": null,
+        "description": null,
+        "is_online": true,
+        "is_postal": false,
+        "is_in_person": false
+      },
+      {
+        "method_id": "method_3",
+        "channel": "postal",
+        "processing_time_text": "30 ngày",
+        "fee_text": null,
+        "description": null,
+        "is_online": false,
+        "is_postal": true,
+        "is_in_person": false
+      }
+    ],
+    "timing_summary": {
+      "unique_processing_times": [
+        "30 ngày"
+      ],
+      "method_count": 3
+    }
+  },
+  "documents": {
+    "required": [
+      {
+        "document_id": "n_ng_k_mua_nh_x_h_i",
+        "name": "Đơn đăng ký mua nhà ở xã hội",
+        "group_name": "default",
+        "group_type": "unknown",
+        "original_count": "1",
+        "copy_count": "0",
+        "conditions": [],
+        "attachment_label": "Mau so 01 ND 261 DON DKY MUA THUE THUE MUA NOXH.docx",
+        "attachment_path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/1_115150/Mau%20so%2001%20ND%20261%20DON%20DKY%20MUA%20THUE%20THUE%20MUA%20NOXH.docx"
+      },
+      {
+        "document_id": "gi_y_t_ch_ng_minh_i_t_ng_i_u_ki_n_c_h_ng_ch_nh_s_ch_h_tr_v_nh_x_h_i",
+        "name": "Giấy tờ chứng minh đối tượng, điều kiện được hưởng chính sách hỗ trợ về nhà ở xã hội.",
+        "group_name": "default",
+        "group_type": "unknown",
+        "original_count": "1",
+        "copy_count": "0",
+        "conditions": [],
+        "attachment_label": "Mau 01a TT 32 BXD 10 11 2025.docx",
+        "attachment_path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/1_115150/Mau%2001a%20TT%2032%20BXD%2010%2011%202025.docx"
+      }
+    ],
+    "conditional": [],
+    "presented": [],
+    "notes": [],
+    "forms": [
+      {
+        "name": "Đơn đăng ký mua nhà ở xã hội",
+        "attachment_label": "Mau so 01 ND 261 DON DKY MUA THUE THUE MUA NOXH.docx",
+        "attachment_path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/1_115150/Mau%20so%2001%20ND%20261%20DON%20DKY%20MUA%20THUE%20THUE%20MUA%20NOXH.docx"
+      },
+      {
+        "name": "Giấy tờ chứng minh đối tượng, điều kiện được hưởng chính sách hỗ trợ về nhà ở xã hội.",
+        "attachment_label": "Mau 01a TT 32 BXD 10 11 2025.docx",
+        "attachment_path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/1_115150/Mau%2001a%20TT%2032%20BXD%2010%2011%202025.docx"
+      }
+    ],
+    "empty_groups": [],
+    "document_count": 2
+  },
+  "process": {
+    "steps": [
+      {
+        "step_id": "step_1",
+        "title": null,
+        "content": "1. Trên cơ sở các thông tin về dự án nhà ở xã hội đã được công khai, hộ gia đình, cá nhân có nhu cầu nộp hồ sơ mua nhà ở xã hội cho chủ đầu tư dự án. Mỗi hộ gia đình, cá nhân có nhu cầu mua nhà ở xã hội không được đồng thời đăng ký mua nhà ở xã hội tại nhiều dự án trong cùng một thời điểm.",
+        "actor": "user",
+        "channel_hint": null,
+        "time_hint": null
+      },
+      {
+        "step_id": "step_2",
+        "title": null,
+        "content": "2. Trong thời hạn 10 ngày, kể từ ngày hết hạn nộp hồ sơ, chủ đầu tư có trách nhiệm tổng hợp Danh sách đăng ký mua nhà ở xã hội, trong đó thể hiện thông tin cá nhân của người đăng ký và các thành viên trong hộ gia đình được khai tại Đơn đăng ký mua nhà ở xã hội gửi Sở Xây dựng địa phương nơi có dự án để kiểm tra người đăng ký mua nhà ở xã hội đã được hưởng hoặc chưa được hưởng chính sách hỗ trợ về nhà ở theo quy định của pháp luật về nhà ở. Sở Xây dựng có trách nhiệm trả lời bằng văn bản trong thời hạn 10 ngày kể từ ngày nhận được Danh sách đăng ký. Chủ đầu tư có trách nhiệm rà soát, đánh giá, tổng hợp ý kiến của Sở Xây dựng và đối chiếu với các quy định của pháp luật về nhà ở để xác định hồ sơ đáp ứng điều kiện được hưởng chính sách hỗ trợ về nhà ở xã hội.",
+        "actor": "user",
+        "channel_hint": null,
+        "time_hint": "10 ngày"
+      },
+      {
+        "step_id": "step_3",
+        "title": null,
+        "content": "3. Trong thời hạn 30 ngày kể từ ngày hết hạn nộp hồ sơ, chủ đầu tư có trách nhiệm công khai Danh sách các hồ sơ đáp ứng đủ điều kiện mua nhà ở xã hội. Đối với hồ sơ không đáp ứng đủ điều kiện thì gửi trả lại và nêu rõ lý do trong thời hạn 15 ngày kể từ ngày công khai Danh sách",
+        "actor": "user",
+        "channel_hint": null,
+        "time_hint": "30 ngày"
+      },
+      {
+        "step_id": "step_4",
+        "title": null,
+        "content": "4. Sau khi nhà ở đủ điều kiện được bán theo quy định của pháp luật về kinh doanh bất động sản, chủ đầu tư thực hiện ký kết Hợp đồng mua bán nhà ở xã hội với khách hàng; đồng thời cập nhật thông tin về giao dịch, đối tượng đã mua nhà ở xã hội theo quy định của pháp luật về nhà ở, pháp luật về xây dựng và quản lý hệ thống thông tin, cơ sở dữ liệu về nhà ở và thị trường bất động sản.",
+        "actor": "user",
+        "channel_hint": null,
+        "time_hint": null
+      },
+      {
+        "step_id": "step_5",
+        "title": null,
+        "content": "5. Chủ đầu tư dự án có trách nhiệm công bố công khai Danh sách các khách hàng đã ký hợp đồng mua bán nhà ở xã hội (bao gồm cả các thành viên trong hộ gia đình) tại trụ sở làm việc của chủ đầu tư, tại địa điểm thực hiện dự án và tại Sàn giao dịch bất động sản (nếu có) hoặc trang thông tin điện tử về nhà ở xã hội của chủ đầu tư (nếu có)",
+        "actor": "user",
+        "channel_hint": null,
+        "time_hint": null
+      }
+    ],
+    "step_count": 5,
+    "notes": []
+  },
+  "eligibility": {
+    "conditions": [
+      "1/ Điều kiện về nhà ở:- Chưa có nhà ở thuộc sở hữu của mình;",
+      "- Có nhà ở thuộc sở hữu của mình nhưng diện tích nhà ở bình quân đầu người thấp hơn 15 m2 sàn/người.",
+      "2/ Điều kiện về thu nhập-",
+      "Trường hợp người đứng đơn là người chưa kết hôn hoặc được xác nhận là độc thân thì có thu nhập bình quân hàng tháng thực nhận không quá 20 triệu đồng tính theo Bảng tiền công, tiền lương do cơ quan, đơn vị, doanh nghiệp nơi đối tượng làm việc xác nhận.",
+      "- Trường hợp người đứng đơn là người chưa kết hôn hoặc được xác nhận là độc thân đang nuôi con dưới tuổi thành niên thì thu nhập bình quân hàng tháng thực nhận không quá 30 triệu đồng tính theo Bảng tiền công, tiền lương do cơ quan, đơn vị, doanh nghiệp nơi đối tượng làm việc xác nhận.",
+      "- Trường hợp người đứng đơn đã kết hôn theo quy định của pháp luật thì người đứng đơn và vợ (chồng) của người đó có tổng thu nhập bình quân hàng tháng thực nhận không quá 40 triệu đồng tính theo Bảng tiền công, tiền lương do cơ quan, đơn vị, doanh nghiệp nơi đối tượng làm việc xác nhận"
+    ],
+    "has_conditions": true
+  },
+  "results": {
+    "items": [
+      {
+        "name": "Hợp đồng mua bán nhà ở xã hội",
+        "result_code": "KQ-G17.000004",
+        "raw_text": "Hợp đồng mua bán nhà ở xã hội"
+      }
+    ],
+    "primary_result": {
+      "name": "Hợp đồng mua bán nhà ở xã hội",
+      "result_code": "KQ-G17.000004",
+      "raw_text": "Hợp đồng mua bán nhà ở xã hội"
+    }
+  },
+  "legal_basis": {
+    "items": [
+      {
+        "title": "NGHỊ ĐỊNH Sửa đổi, bổ sung một số điều của các Nghị định trong lĩnh vực nhà ở, kinh đoanh bất động sản",
+        "code": "54/2026/NĐ-CP"
+      },
+      {
+        "title": "- Nghị định số 261/2025/NĐ-CP ngày 10/10/2025 của Chính phủ về sửa đổi. bổ sung một số điều của Nghị định số 100/2024/NĐ-CP ngày 26/7/2024 của Chính phủ quy định chi tiết một số điều của Luật Nhà ở về phát triển và quản lý nhà ở xã hội và Nghị định số 192/2025/NĐ-CP ngày 01/7/2025 của Chính phủ quy định chi tiết một số điều và biện pháp thi hành Nghị quyết số 201/2025/QH15 ngày 29/5/2025 của Quốc hội thí điểm về một số cơ chế, chính sách đặc thù phát triển nhà ở xã hội;",
+        "code": "261/2025/NĐ-CP"
+      },
+      {
+        "title": "Nghị định số 100/2024/NĐ-CP ngày 26 tháng 7 năm 2024 của Chính phủ quy định chi tiết một số điều của Luật Nhà ở về phát triển và quản lý nhà ở xã hội",
+        "code": "100/2024/NĐ-CP"
+      },
+      {
+        "title": "Luật Nhà ở số 27/2023/QH15",
+        "code": "27/2023/QH15"
+      },
+      {
+        "title": "Thông tư số 32/2025/TT-BXD ngày 10/11/2025 của Bộ trưởng Bộ Xây dựng",
+        "code": "32/2025/TT-BXD"
+      },
+      {
+        "title": "Sửa đổi, bổ sung một số điều của các Thông tư trong lĩnh vực nhà ở",
+        "code": "08/2026/TT-BXD"
+      }
+    ],
+    "count": 6
+  },
+  "attachments": [
+    {
+      "label": "Mau so 01 ND 261 DON DKY MUA THUE THUE MUA NOXH.docx",
+      "path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/1_115150/Mau%20so%2001%20ND%20261%20DON%20DKY%20MUA%20THUE%20THUE%20MUA%20NOXH.docx",
+      "source_section": "Thành phần hồ sơ",
+      "document_name": "Đơn đăng ký mua nhà ở xã hội"
+    },
+    {
+      "label": "Mau 01a TT 32 BXD 10 11 2025.docx",
+      "path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/1_115150/Mau%2001a%20TT%2032%20BXD%2010%2011%202025.docx",
+      "source_section": "Thành phần hồ sơ",
+      "document_name": "Giấy tờ chứng minh đối tượng, điều kiện được hưởng chính sách hỗ trợ về nhà ở xã hội."
+    },
+    {
+      "label": "Mau 02 TT08.docx",
+      "path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/1_115150/Mau%2002%20TT08.docx",
+      "source_section": "Thành phần hồ sơ",
+      "document_name": "Giấy tờ chứng minh đối tượng, điều kiện được hưởng chính sách hỗ trợ về nhà ở xã hội."
+    },
+    {
+      "label": "Mau so 01 TT 08 2026.docx",
+      "path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/1_115150/Mau%20so%2001%20TT%2008%202026.docx",
+      "source_section": "Thành phần hồ sơ",
+      "document_name": "Giấy tờ chứng minh đối tượng, điều kiện được hưởng chính sách hỗ trợ về nhà ở xã hội."
+    },
+    {
+      "label": "Mau so 05 TT 08 2026.docx",
+      "path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/1_115150/Mau%20so%2005%20TT%2008%202026.docx",
+      "source_section": "Thành phần hồ sơ",
+      "document_name": "Giấy tờ chứng minh đối tượng, điều kiện được hưởng chính sách hỗ trợ về nhà ở xã hội."
+    }
+  ],
+  "signals": {
+    "raw_parse_warnings": [],
+    "missing_documents": false,
+    "documents_section_present": true,
+    "documents_declared_empty": false,
+    "documents_only_in_notes": false,
+    "missing_results": false
+  }
+}

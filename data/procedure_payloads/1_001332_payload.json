@@ -1,0 +1,340 @@
+{
+  "schema_version": "3.0",
+  "record_type": "public_service_procedure_payload",
+  "id": "procedure-1.001332",
+  "procedure_code": "1.001332",
+  "code": "1.001332",
+  "title": "Thủ tục đăng ký thay đổi khoản thu hồi nợ bảo lãnh cho người không cư trú của tổ chức kinh tế",
+  "language": "vi",
+  "status": "generated_from_pipeline",
+  "field": "Hoạt động ngoại hối",
+  "group_key": "cu_tru_giay_to",
+  "workflow_family": null,
+  "subflow": null,
+  "source": {
+    "source_url": "file:///C:/Users/ku060/Downloads/VAIC%20source/data-pipeline/raw_data/1_001332/1_001332_procedure_detail.md",
+    "source_markdown_path": "C:\\Users\\ku060\\Downloads\\VAIC source\\data-pipeline\\raw_data\\1_001332\\1_001332_procedure_detail.md",
+    "normalized_payload_path": "C:\\Users\\ku060\\Downloads\\VAIC source\\data-pipeline\\govease-unified\\data\\normalized_structured\\1_001332_normalized_structured.json",
+    "enriched_payload_path": "C:\\Users\\ku060\\Downloads\\VAIC source\\data-pipeline\\govease-unified\\data\\enriched_structured_priority\\1_001332_enriched_structured.json"
+  },
+  "scope": {
+    "included": "Thủ tục này thuộc nhóm cư trú và giấy tờ, thường cần kiểm tra thông tin định danh hoặc hồ sơ giấy tờ chuyên ngành. Kết quả thường nhận được là Văn bản xác nhận/từ chối xác nhận đăng ký thay đổi khoản thu hồi nợ bảo lãnh. Thời gian xử lý tham khảo: 5 ngày làm việc.",
+    "not_included": []
+  },
+  "agency": {
+    "executing_agency": "Ngân hàng Nhà nước Khu vực",
+    "submission_place": "Bộ phận Một cửa Ngân hàng Nhà nước Khu vực",
+    "receiving_places": [
+      "Bộ phận Một cửa Ngân hàng Nhà nước Khu vực"
+    ]
+  },
+  "target_users": [
+    "Tổ chức (không bao gồm doanh nghiệp",
+    "HTX)",
+    "Tổ chức nước ngoài"
+  ],
+  "submission_methods": [
+    {
+      "code": "POSTAL",
+      "label": "Dịch vụ bưu chính",
+      "processing_time": "5 ngày làm việc",
+      "fee": null,
+      "description": null
+    },
+    {
+      "code": "IN_PERSON",
+      "label": "Trực tiếp",
+      "processing_time": "5 ngày làm việc",
+      "fee": null,
+      "description": null
+    }
+  ],
+  "processing_note": "Thời gian xử lý tham chiếu: 5 ngày làm việc. Nên kiểm tra trước giấy tờ định danh, nơi nộp và mẫu biểu liên quan, rồi chọn kênh nộp phù hợp: Trực tiếp, Dịch vụ bưu chính. Hiện có khoảng 4 mục giấy tờ cần theo dõi trong checklist.",
+  "documents": {
+    "normally_required": [
+      {
+        "name": "1. Đơn đăng ký thay đổi khoản thu hồi nợ bảo lãnh (theo Phụ lục số 4 thuộc Phụ lục II kèm theo Thông tư số 17/2026/TT-NHNN).",
+        "quantity": "1 bản chính, 0 bản sao",
+        "notes": [],
+        "group": "default",
+        "attachment_path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/1_001332/PL%204%20%20Thong%20tu%2017.2026.docx"
+      }
+    ],
+    "conditional": [
+      {
+        "condition": "4. Văn bản xác nhận của ngân hàng cung ứng dịch vụ tài khoản về tình hình thực hiện nghĩa vụ bảo lãnh, thu hồi nợ đến thời điểm ngân hàng cung ứng dịch vụ tài khoản có văn bản xác nhận đối với trường hợp đăng ký thay đổi kế hoạch thu hồi nợ (thời điểm thực hiện việc xác nhận là trong vòng 10 ngày làm việc trước thời điểm gửi hồ sơ).",
+        "document": "4. Văn bản xác nhận của ngân hàng cung ứng dịch vụ tài khoản về tình hình thực hiện nghĩa vụ bảo lãnh, thu hồi nợ đến thời điểm ngân hàng cung ứng dịch vụ tài khoản có văn bản xác nhận đối với trường hợp đăng ký thay đổi kế hoạch thu hồi nợ (thời điểm thực hiện việc xác nhận là trong vòng 10 ngày làm việc trước thời điểm gửi hồ sơ).",
+        "quantity": "0 bản chính, 1 bản sao",
+        "notes": [],
+        "attachment_path": null
+      },
+      {
+        "condition": "2. Các thỏa thuận thay đổi cam kết bảo lãnh, thỏa thuận cấp bảo lãnh đã ký trong trường hợp các nội dung thay đổi cần được thỏa thuận giữa các bên.",
+        "document": "2. Các thỏa thuận thay đổi cam kết bảo lãnh, thỏa thuận cấp bảo lãnh đã ký trong trường hợp các nội dung thay đổi cần được thỏa thuận giữa các bên.",
+        "quantity": "0 bản chính, 1 bản sao",
+        "notes": [],
+        "attachment_path": null
+      },
+      {
+        "condition": "3. Văn bản nêu ý kiến chấp thuận của Thủ tướng Chính phủ về nội dung thay đổi liên quan đến việc bảo lãnh cho người không cư trú của tổ chức kinh tế (trường hợp thay đổi tăng số tiền bảo lãnh của tổ chức kinh tế hoặc kéo dài thời hạn bảo lãnh của khoản bảo lãnh hoặc thay đổi bên bảo lãnh). Trường hợp không có thành phần hồ sơ này, Bên bảo lãnh phải có văn bản giải trình nêu rõ lý do, căn cứ xác định việc thay đổi tăng số tiền bảo lãnh hoặc kéo dài thời hạn bảo lãnh của khoản bảo lãnh hoặc thay đổi bên bảo lãnh đã được Thủ tướng Chính phủ chấp thuận.",
+        "document": "3. Văn bản nêu ý kiến chấp thuận của Thủ tướng Chính phủ về nội dung thay đổi liên quan đến việc bảo lãnh cho người không cư trú của tổ chức kinh tế (trường hợp thay đổi tăng số tiền bảo lãnh của tổ chức kinh tế hoặc kéo dài thời hạn bảo lãnh của khoản bảo lãnh hoặc thay đổi bên bảo lãnh). Trường hợp không có thành phần hồ sơ này, Bên bảo lãnh phải có văn bản giải trình nêu rõ lý do, căn cứ xác định việc thay đổi tăng số tiền bảo lãnh hoặc kéo dài thời hạn bảo lãnh của khoản bảo lãnh hoặc thay đổi bên bảo lãnh đã được Thủ tướng Chính phủ chấp thuận.",
+        "quantity": "0 bản chính, 1 bản sao",
+        "notes": [],
+        "attachment_path": null
+      }
+    ],
+    "forms": [
+      {
+        "name": "1. Đơn đăng ký thay đổi khoản thu hồi nợ bảo lãnh (theo Phụ lục số 4 thuộc Phụ lục II kèm theo Thông tư số 17/2026/TT-NHNN).",
+        "attachment_label": "PL 4  Thong tu 17.2026.docx",
+        "attachment_path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/1_001332/PL%204%20%20Thong%20tu%2017.2026.docx"
+      }
+    ],
+    "presented": [],
+    "notes": [],
+    "summary": [
+      {
+        "group": "default",
+        "name": "1. Đơn đăng ký thay đổi khoản thu hồi nợ bảo lãnh (theo Phụ lục số 4 thuộc Phụ lục II kèm theo Thông tư số 17/2026/TT-NHNN).",
+        "quantity": "1 bản chính, 0 bản sao",
+        "notes": [],
+        "attachment_path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/1_001332/PL%204%20%20Thong%20tu%2017.2026.docx"
+      },
+      {
+        "group": null,
+        "name": null,
+        "quantity": "0 bản chính, 1 bản sao",
+        "notes": [],
+        "attachment_path": null
+      },
+      {
+        "group": null,
+        "name": null,
+        "quantity": "0 bản chính, 1 bản sao",
+        "notes": [],
+        "attachment_path": null
+      },
+      {
+        "group": null,
+        "name": null,
+        "quantity": "0 bản chính, 1 bản sao",
+        "notes": [],
+        "attachment_path": null
+      },
+      {
+        "group": null,
+        "name": "1. Đơn đăng ký thay đổi khoản thu hồi nợ bảo lãnh (theo Phụ lục số 4 thuộc Phụ lục II kèm theo Thông tư số 17/2026/TT-NHNN).",
+        "quantity": null,
+        "notes": null,
+        "attachment_path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/1_001332/PL%204%20%20Thong%20tu%2017.2026.docx"
+      }
+    ]
+  },
+  "steps": [
+    {
+      "order": 1,
+      "title": "Bước 1",
+      "description": "1. +",
+      "example": null
+    },
+    {
+      "order": 2,
+      "title": "Bước 1:",
+      "description": "Bước 1: Trong thời hạn ba mươi (30) ngày kể từ ngày ký thỏa thuận thay đổi khoản thu hồi nợ bảo lãnh, bên bảo lãnh nộp hồ sơ đến Ngân hàng Nhà nước. 2. +",
+      "example": null
+    },
+    {
+      "order": 3,
+      "title": "Bước 2:",
+      "description": "Bước 2: Thời hạn kiểm tra tính đầy đủ của hồ sơ là ba (03) ngày làm việc kể từ khi Bộ phận Một cửa của Ngân hàng Nhà nước tiếp nhận hồ sơ theo phương thức trực tiếp hoặc qua dịch vụ bưu chính. 3. +",
+      "example": "dịch vụ bưu chính"
+    },
+    {
+      "order": 4,
+      "title": "Bước 3:",
+      "description": "Bước 3: Trong thời hạn năm (05) ngày làm việc kể từ ngày nhận được hồ sơ đầy đủ, hợp lệ của Bên bảo lãnh, Ngân hàng Nhà nước gửi bên bảo lãnh văn bản xác nhận đăng ký thay đổi khoản thu hồi nợ bảo lãnh. Trường hợp từ chối xác nhận đăng ký thay đổi khoản thu hồi nợ bảo lãnh, Ngân hàng Nhà nước có văn bản nêu rõ lý do. Trường hợp hồ sơ chưa đủ điều kiện giải quyết, trong thời hạn bốn (04) ngày làm việc kể từ ngày tiếp nhận hồ sơ, Ngân hàng Nhà nước có văn bản yêu cầu bên bảo lãnh bổ sung, hoàn thiện hồ sơ. Thời hạn giải quyết được tính lại từ đầu sau khi nhận đủ hồ sơ. Sau sáu mươi (60) ngày kể từ khi thông báo, nếu bên bảo lãnh không hoàn thành việc hoàn thiện hồ sơ, Ngân hàng Nhà nước thực hiện đóng hồ sơ đăng ký thay đổi khoản thu hồi nợ bảo lãnh của tổ chức kinh tế.",
+      "example": null
+    }
+  ],
+  "input_fields": [
+    {
+      "field": "document_request_type",
+      "label": "Loại giấy tờ cần xử lý",
+      "type": "string",
+      "required": true
+    },
+    {
+      "field": "submission_channel_preference",
+      "label": "Kênh nộp dự kiến",
+      "type": "enum",
+      "required": false,
+      "options": [
+        "Trực tiếp",
+        "Dịch vụ bưu chính"
+      ]
+    },
+    {
+      "field": "identity_document_available",
+      "label": "Có giấy tờ định danh",
+      "type": "boolean",
+      "required": true
+    },
+    {
+      "field": "residency_or_status_known",
+      "label": "Biết rõ nơi cư trú hoặc tình trạng hiện tại",
+      "type": "boolean",
+      "required": false
+    }
+  ],
+  "validation_rules": [
+    {
+      "id": "required-1",
+      "severity": "error",
+      "field": "document_request_type",
+      "rule": "Trường bắt buộc phải có dữ liệu hợp lệ trước khi nộp.",
+      "message": "Thiếu trường bắt buộc: Loại giấy tờ cần xử lý."
+    },
+    {
+      "id": "required-3",
+      "severity": "error",
+      "field": "identity_document_available",
+      "rule": "Trường bắt buộc phải có dữ liệu hợp lệ trước khi nộp.",
+      "message": "Thiếu trường bắt buộc: Có giấy tờ định danh."
+    },
+    {
+      "id": "hint-1",
+      "severity": "warning",
+      "field": "general",
+      "rule": "Nên xác định trước kênh nộp hồ sơ để biết có cần bản giấy, bản điện tử hay xuất trình trực tiếp.",
+      "message": "Nên xác định trước kênh nộp hồ sơ để biết có cần bản giấy, bản điện tử hay xuất trình trực tiếp."
+    },
+    {
+      "id": "hint-2",
+      "severity": "warning",
+      "field": "general",
+      "rule": "Có mẫu biểu đính kèm, nên kiểm tra đúng biểu mẫu trước khi nộp.",
+      "message": "Có mẫu biểu đính kèm, nên kiểm tra đúng biểu mẫu trước khi nộp."
+    },
+    {
+      "id": "hint-3",
+      "severity": "warning",
+      "field": "general",
+      "rule": "Nên đối chiếu trước dữ liệu định danh và nơi cư trú để tránh bị yêu cầu bổ sung.",
+      "message": "Nên đối chiếu trước dữ liệu định danh và nơi cư trú để tránh bị yêu cầu bổ sung."
+    }
+  ],
+  "common_errors": [],
+  "clarifying_questions": [
+    {
+      "id": "clarify_1",
+      "question": "Bạn đang xử lý giấy tờ gì và muốn nộp trực tiếp hay trực tuyến?",
+      "purpose": "workflow_intake"
+    },
+    {
+      "id": "clarify_2",
+      "question": "Thông tin định danh và nơi cư trú hiện tại đã sẵn sàng để đối chiếu chưa?",
+      "purpose": "workflow_intake"
+    }
+  ],
+  "legal_basis": [
+    {
+      "title": "Thông tư số 17/2026/TT-NHNN của Thống đốc Ngân hàng Nhà nước sửa đổi, bổ sung một số Thông tư của Thống đốc Ngân hàng Nhà nước Việt Nam trong lĩnh vực quản lý ngoại hối liên quan đến phân cấp, đơn giản hóa thủ tục hành chính",
+      "code": "17/2026/TT-NHNN"
+    },
+    {
+      "title": "Thông tư sửa đổi, bổ sung, bãi bỏ một số quy định tại các văn bản quy phạm pháp luật trong lĩnh vực quản lý ngoại hối đối với các giao dịch vốn để thực thi phương án cắt giảm, đơn giản hóa thủ tục hành chính",
+      "code": "78/2025/TT-NHNN"
+    },
+    {
+      "title": "Thông tư 37/2013/TT-NHNN",
+      "code": "37/2013/TT-NHNN"
+    }
+  ],
+  "legal_bases": [
+    {
+      "title": "Thông tư số 17/2026/TT-NHNN của Thống đốc Ngân hàng Nhà nước sửa đổi, bổ sung một số Thông tư của Thống đốc Ngân hàng Nhà nước Việt Nam trong lĩnh vực quản lý ngoại hối liên quan đến phân cấp, đơn giản hóa thủ tục hành chính",
+      "code": "17/2026/TT-NHNN"
+    },
+    {
+      "title": "Thông tư sửa đổi, bổ sung, bãi bỏ một số quy định tại các văn bản quy phạm pháp luật trong lĩnh vực quản lý ngoại hối đối với các giao dịch vốn để thực thi phương án cắt giảm, đơn giản hóa thủ tục hành chính",
+      "code": "78/2025/TT-NHNN"
+    },
+    {
+      "title": "Thông tư 37/2013/TT-NHNN",
+      "code": "37/2013/TT-NHNN"
+    }
+  ],
+  "faq": [
+    {
+      "question": "Có thể nộp qua kênh nào?",
+      "answer": "Các kênh hiện có: Trực tiếp, Dịch vụ bưu chính."
+    },
+    {
+      "question": "Thời gian xử lý tham chiếu là bao lâu?",
+      "answer": "Thời gian xử lý tham chiếu hiện có là 5 ngày làm việc."
+    },
+    {
+      "question": "Kết quả chính của thủ tục là gì?",
+      "answer": "Kết quả chính được trích xuất là Văn bản xác nhận/từ chối xác nhận đăng ký thay đổi khoản thu hồi nợ bảo lãnh."
+    }
+  ],
+  "guidance": {
+    "highlight_documents": [
+      {
+        "bucket": "required",
+        "name": "1. Đơn đăng ký thay đổi khoản thu hồi nợ bảo lãnh (theo Phụ lục số 4 thuộc Phụ lục II kèm theo Thông tư số 17/2026/TT-NHNN).",
+        "conditions": [],
+        "attachment_path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/1_001332/PL%204%20%20Thong%20tu%2017.2026.docx"
+      },
+      {
+        "bucket": "conditional",
+        "name": "4. Văn bản xác nhận của ngân hàng cung ứng dịch vụ tài khoản về tình hình thực hiện nghĩa vụ bảo lãnh, thu hồi nợ đến thời điểm ngân hàng cung ứng dịch vụ tài khoản có văn bản xác nhận đối với trường hợp đăng ký thay đổi kế hoạch thu hồi nợ (thời điểm thực hiện việc xác nhận là trong vòng 10 ngày làm việc trước thời điểm gửi hồ sơ).",
+        "conditions": [
+          "4. Văn bản xác nhận của ngân hàng cung ứng dịch vụ tài khoản về tình hình thực hiện nghĩa vụ bảo lãnh, thu hồi nợ đến thời điểm ngân hàng cung ứng dịch vụ tài khoản có văn bản xác nhận đối với trường hợp đăng ký thay đổi kế hoạch thu hồi nợ (thời điểm thực hiện việc xác nhận là trong vòng 10 ngày làm việc trước thời điểm gửi hồ sơ)."
+        ],
+        "attachment_path": null
+      },
+      {
+        "bucket": "conditional",
+        "name": "2. Các thỏa thuận thay đổi cam kết bảo lãnh, thỏa thuận cấp bảo lãnh đã ký trong trường hợp các nội dung thay đổi cần được thỏa thuận giữa các bên.",
+        "conditions": [
+          "2. Các thỏa thuận thay đổi cam kết bảo lãnh, thỏa thuận cấp bảo lãnh đã ký trong trường hợp các nội dung thay đổi cần được thỏa thuận giữa các bên."
+        ],
+        "attachment_path": null
+      },
+      {
+        "bucket": "conditional",
+        "name": "3. Văn bản nêu ý kiến chấp thuận của Thủ tướng Chính phủ về nội dung thay đổi liên quan đến việc bảo lãnh cho người không cư trú của tổ chức kinh tế (trường hợp thay đổi tăng số tiền bảo lãnh của tổ chức kinh tế hoặc kéo dài thời hạn bảo lãnh của khoản bảo lãnh hoặc thay đổi bên bảo lãnh). Trường hợp không có thành phần hồ sơ này, Bên bảo lãnh phải có văn bản giải trình nêu rõ lý do, căn cứ xác định việc thay đổi tăng số tiền bảo lãnh hoặc kéo dài thời hạn bảo lãnh của khoản bảo lãnh hoặc thay đổi bên bảo lãnh đã được Thủ tướng Chính phủ chấp thuận.",
+        "conditions": [
+          "3. Văn bản nêu ý kiến chấp thuận của Thủ tướng Chính phủ về nội dung thay đổi liên quan đến việc bảo lãnh cho người không cư trú của tổ chức kinh tế (trường hợp thay đổi tăng số tiền bảo lãnh của tổ chức kinh tế hoặc kéo dài thời hạn bảo lãnh của khoản bảo lãnh hoặc thay đổi bên bảo lãnh). Trường hợp không có thành phần hồ sơ này, Bên bảo lãnh phải có văn bản giải trình nêu rõ lý do, căn cứ xác định việc thay đổi tăng số tiền bảo lãnh hoặc kéo dài thời hạn bảo lãnh của khoản bảo lãnh hoặc thay đổi bên bảo lãnh đã được Thủ tướng Chính phủ chấp thuận."
+        ],
+        "attachment_path": null
+      }
+    ],
+    "special_cases": [],
+    "common_errors": [],
+    "validation_hints": [
+      "Nên xác định trước kênh nộp hồ sơ để biết có cần bản giấy, bản điện tử hay xuất trình trực tiếp.",
+      "Có mẫu biểu đính kèm, nên kiểm tra đúng biểu mẫu trước khi nộp.",
+      "Nên đối chiếu trước dữ liệu định danh và nơi cư trú để tránh bị yêu cầu bổ sung."
+    ]
+  },
+  "next_steps": {
+    "summary": "Nên kiểm tra trước giấy tờ định danh, nơi nộp và mẫu biểu liên quan, rồi chọn kênh nộp phù hợp: Trực tiếp, Dịch vụ bưu chính. Hiện có khoảng 4 mục giấy tờ cần theo dõi trong checklist.",
+    "time_badge": "5 ngày làm việc",
+    "result_label": "Văn bản xác nhận/từ chối xác nhận đăng ký thay đổi khoản thu hồi nợ bảo lãnh",
+    "primary_channel": "postal",
+    "channels": [
+      "in_person",
+      "postal"
+    ]
+  },
+  "notes": [],
+  "provenance": {
+    "pipeline": "raw->structured->normalized->enriched->ui_api_payload",
+    "normalizer_version": "0.2.0",
+    "enricher_version": "0.2.0",
+    "mapping_notes": "excluded_from_clean_workflow_dataset",
+    "supported_group": true
+  }
+}

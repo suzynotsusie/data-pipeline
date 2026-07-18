@@ -1,0 +1,381 @@
+{
+  "schema_version": "3.0",
+  "record_type": "public_service_procedure_payload",
+  "id": "procedure-1.001710",
+  "procedure_code": "1.001710",
+  "code": "1.001710",
+  "title": "Giải quyết điều chỉnh, hủy quyết định, chấm dứt hưởng BHXH",
+  "language": "vi",
+  "status": "generated_from_pipeline",
+  "field": "Thực hiện chính sách BHXH",
+  "group_key": "huu_tri",
+  "workflow_family": "retirement_workflow",
+  "subflow": "che_do_huu_tri",
+  "source": {
+    "source_url": "file:///C:/Users/ku060/Downloads/VAIC%20source/data-pipeline/raw_data/1_001710/1_001710_procedure_detail.md",
+    "source_markdown_path": "C:\\Users\\ku060\\Downloads\\VAIC source\\data-pipeline\\raw_data\\1_001710\\1_001710_procedure_detail.md",
+    "normalized_payload_path": "C:\\Users\\ku060\\Downloads\\VAIC source\\data-pipeline\\govease-unified\\data\\normalized_structured\\1_001710_normalized_structured.json",
+    "enriched_payload_path": "C:\\Users\\ku060\\Downloads\\VAIC source\\data-pipeline\\govease-unified\\data\\enriched_structured_priority\\1_001710_enriched_structured.json"
+  },
+  "scope": {
+    "included": "Thủ tục này thuộc nhóm hưu trí, thường dùng để xác định điều kiện nghỉ hưu, trợ cấp hoặc chế độ hưởng theo hồ sơ bảo hiểm xã hội. Kết quả thường nhận được là Tiền truy lĩnh hoặc tiền phải nộp thu hồi (nếu có). Thời gian xử lý tham khảo: 12 ngày.",
+    "not_included": []
+  },
+  "agency": {
+    "executing_agency": "Bảo hiểm xã hội tỉnh, Công đoàn cơ quan BHXH Việt Nam",
+    "submission_place": null,
+    "receiving_places": []
+  },
+  "target_users": [
+    "Doanh nghiệp có vốn đầu tư nước ngoài",
+    "Tổ chức (không bao gồm doanh nghiệp",
+    "HTX)",
+    "Người Việt Nam định cư ở nước ngoài",
+    "Công dân Việt Nam",
+    "Doanh nghiệp",
+    "Hợp tác xã",
+    "Tổ chức nước ngoài",
+    "Cán bộ",
+    "công chức",
+    "viên chức"
+  ],
+  "submission_methods": [
+    {
+      "code": "ONLINE",
+      "label": "Trực tuyến",
+      "processing_time": "12 ngày",
+      "fee": null,
+      "description": null
+    },
+    {
+      "code": "POSTAL",
+      "label": "Dịch vụ bưu chính",
+      "processing_time": "12 ngày",
+      "fee": null,
+      "description": null
+    },
+    {
+      "code": "IN_PERSON",
+      "label": "Trực tiếp",
+      "processing_time": "12 ngày",
+      "fee": null,
+      "description": null
+    }
+  ],
+  "processing_note": "Thời gian xử lý tham chiếu: 12 ngày. Nên rà trước quá trình đóng bảo hiểm, mốc tuổi và loại chế độ muốn hưởng trước khi nộp. Có thể chọn kênh nộp phù hợp: Trực tiếp, Trực tuyến, Dịch vụ bưu chính. Hiện có khoảng 3 mục giấy tờ cần theo dõi trong checklist.",
+  "documents": {
+    "normally_required": [
+      {
+        "name": "b) Hồ sơ, giấy tờ, văn bản làm căn cứ điều chỉnh, hủy quyết định hưởng hoặc chấm dứt hưởng BHXH.",
+        "quantity": "1 bản chính, 0 bản sao",
+        "notes": [],
+        "group": "(Trường hợp không quy định là bản chính thì có thể nộp bản sao hợp lệ. Trường hợp nộp hồ sơ trực tuyến: thành phần hồ sơ quy định là bản sao nhưng NLĐ có thể nộp bản chính điện tử).",
+        "attachment_path": null
+      }
+    ],
+    "conditional": [
+      {
+        "condition": "c) Bản chính Mẫu 2-CBH ban hành kèm theo Quyết định số 686/QĐ-BHXH trong trường hợp người đang hưởng BHXH hàng tháng hoặc thân nhân người hưởng BHXH hàng tháng chết đề nghị cập nhật thông tin nhân thân theo căn cước công dân",
+        "document": "c) Bản chính Mẫu 2-CBH ban hành kèm theo Quyết định số 686/QĐ-BHXH trong trường hợp người đang hưởng BHXH hàng tháng hoặc thân nhân người hưởng BHXH hàng tháng chết đề nghị cập nhật thông tin nhân thân theo căn cước công dân",
+        "quantity": "1 bản chính, 0 bản sao",
+        "notes": [],
+        "attachment_path": null
+      },
+      {
+        "condition": "a) Bản chính Đơn đề nghị (mẫu số 14-HSB) trong trường hợp NLĐ có yêu cầu điều chỉnh",
+        "document": "a) Bản chính Đơn đề nghị (mẫu số 14-HSB) trong trường hợp NLĐ có yêu cầu điều chỉnh",
+        "quantity": "1 bản chính, 0 bản sao",
+        "notes": [],
+        "attachment_path": null
+      }
+    ],
+    "forms": [],
+    "presented": [],
+    "notes": [],
+    "summary": [
+      {
+        "group": "(Trường hợp không quy định là bản chính thì có thể nộp bản sao hợp lệ. Trường hợp nộp hồ sơ trực tuyến: thành phần hồ sơ quy định là bản sao nhưng NLĐ có thể nộp bản chính điện tử).",
+        "name": "b) Hồ sơ, giấy tờ, văn bản làm căn cứ điều chỉnh, hủy quyết định hưởng hoặc chấm dứt hưởng BHXH.",
+        "quantity": "1 bản chính, 0 bản sao",
+        "notes": [],
+        "attachment_path": null
+      },
+      {
+        "group": null,
+        "name": null,
+        "quantity": "1 bản chính, 0 bản sao",
+        "notes": [],
+        "attachment_path": null
+      },
+      {
+        "group": null,
+        "name": null,
+        "quantity": "1 bản chính, 0 bản sao",
+        "notes": [],
+        "attachment_path": null
+      }
+    ]
+  },
+  "steps": [
+    {
+      "order": 1,
+      "title": "Bước 1",
+      "description": "1. **Bước 1. Lập, nộp hồ sơ**",
+      "example": null
+    },
+    {
+      "order": 2,
+      "title": "Bước 2",
+      "description": "- Đơn vị SDLĐ lập hồ sơ theo quy định tại mục 14.3 (Thành phần hồ sơ) nộp cho cơ quan BHXH nơi đơn vị SDLĐ đóng BHXH.",
+      "example": null
+    },
+    {
+      "order": 3,
+      "title": "Bước 3",
+      "description": "- NLĐ lập hồ sơ theo quy định tại mục 14.3 (Thành phần hồ sơ); nộp cho cơ quan BHXH nơi đang chi trả BHXH hàng tháng hoặc cơ quan BHXH (đối với trường hợp hưởng BHXH một lần).",
+      "example": null
+    },
+    {
+      "order": 4,
+      "title": "Bước 4",
+      "description": "- Người đang hưởng BHXH hàng tháng hoặc thân nhân người hưởng BHXH hàng tháng chết đề nghị cập nhật thông tin nhân thân theo căn cước công dân: Lập hồ sơ theo quy định tại mục 14.3 (thành phần hồ sơ), nộp hồ sơ cho cơ quan BHXH nơi đang chi trả BHXH hàng tháng.",
+      "example": null
+    },
+    {
+      "order": 5,
+      "title": "Bước 5",
+      "description": "2. **Bước 2.**",
+      "example": null
+    },
+    {
+      "order": 6,
+      "title": "Bước 6",
+      "description": "Cơ quan BHXH tiếp nhận hồ sơ và giải quyết theo quy định.",
+      "example": null
+    },
+    {
+      "order": 7,
+      "title": "Bước 7",
+      "description": "3. **Bước 3. Nhận kết quả giải quyết**",
+      "example": null
+    },
+    {
+      "order": 8,
+      "title": "Bước 8",
+      "description": "- Đơn vị SDLĐ: Nhận hồ sơ, giấy tờ liên quan để trả cho NLĐ.",
+      "example": null
+    },
+    {
+      "order": 9,
+      "title": "Bước 9",
+      "description": "- NLĐ: Nhận quyết định điều chỉnh, hủy quyết định hưởng hoặc chấm dứt hưởng; tiền truy lĩnh hoặc nộp tiền phải thu hồi (nếu có).",
+      "example": null
+    },
+    {
+      "order": 10,
+      "title": "Bước 10",
+      "description": "- Người đang hưởng BHXH hàng tháng hoặc thân nhân người hưởng BHXH hàng tháng chết nhận: Xác nhận cập nhật thông tin nhân thân theo căn cước công dân (Mẫu 29-HSB).",
+      "example": null
+    }
+  ],
+  "input_fields": [
+    {
+      "field": "insured_person_name",
+      "label": "Người hưởng chế độ",
+      "type": "string",
+      "required": true
+    },
+    {
+      "field": "retirement_or_allowance_need",
+      "label": "Nhu cầu hưởng chế độ hưu trí/trợ cấp",
+      "type": "string",
+      "required": true
+    },
+    {
+      "field": "social_insurance_participation_known",
+      "label": "Đã rõ quá trình tham gia BHXH",
+      "type": "boolean",
+      "required": true
+    },
+    {
+      "field": "submission_channel_preference",
+      "label": "Kênh nộp dự kiến",
+      "type": "enum",
+      "required": false,
+      "options": [
+        "Trực tiếp",
+        "Trực tuyến",
+        "Dịch vụ bưu chính"
+      ]
+    }
+  ],
+  "validation_rules": [
+    {
+      "id": "required-1",
+      "severity": "error",
+      "field": "insured_person_name",
+      "rule": "Trường bắt buộc phải có dữ liệu hợp lệ trước khi nộp.",
+      "message": "Thiếu trường bắt buộc: Người hưởng chế độ."
+    },
+    {
+      "id": "required-2",
+      "severity": "error",
+      "field": "retirement_or_allowance_need",
+      "rule": "Trường bắt buộc phải có dữ liệu hợp lệ trước khi nộp.",
+      "message": "Thiếu trường bắt buộc: Nhu cầu hưởng chế độ hưu trí/trợ cấp."
+    },
+    {
+      "id": "required-3",
+      "severity": "error",
+      "field": "social_insurance_participation_known",
+      "rule": "Trường bắt buộc phải có dữ liệu hợp lệ trước khi nộp.",
+      "message": "Thiếu trường bắt buộc: Đã rõ quá trình tham gia BHXH."
+    },
+    {
+      "id": "hint-1",
+      "severity": "warning",
+      "field": "general",
+      "rule": "Nên xác định trước kênh nộp hồ sơ để biết có cần bản giấy, bản điện tử hay xuất trình trực tiếp.",
+      "message": "Nên xác định trước kênh nộp hồ sơ để biết có cần bản giấy, bản điện tử hay xuất trình trực tiếp."
+    },
+    {
+      "id": "hint-2",
+      "severity": "warning",
+      "field": "general",
+      "rule": "Nên rà lại quá trình tham gia bảo hiểm, độ tuổi và loại chế độ muốn hưởng trước khi nộp.",
+      "message": "Nên rà lại quá trình tham gia bảo hiểm, độ tuổi và loại chế độ muốn hưởng trước khi nộp."
+    }
+  ],
+  "common_errors": [
+    {
+      "field": "general",
+      "issue": "Điền sai mẫu tờ khai hoặc chọn sai biểu mẫu đi kèm.",
+      "fix": "Nên xác định trước kênh nộp hồ sơ để biết có cần bản giấy, bản điện tử hay xuất trình trực tiếp."
+    }
+  ],
+  "clarifying_questions": [
+    {
+      "id": "clarify_1",
+      "question": "Bạn đang muốn chuẩn bị nghỉ hưu hay giải quyết chế độ hưu trí cụ thể nào?",
+      "purpose": "workflow_intake"
+    },
+    {
+      "id": "clarify_2",
+      "question": "Quá trình tham gia bảo hiểm và độ tuổi hưởng chế độ đã xác định rõ chưa?",
+      "purpose": "workflow_intake"
+    }
+  ],
+  "legal_basis": [
+    {
+      "title": "BAN HÀNH QUY TRÌNH GIẢI QUYẾT HƯỞNG CÁC CHẾ ĐỘ BẢO HIỂM XÃ HỘI, CHI TRẢ CÁC CHẾ ĐỘ BẢO HIỂM XÃ HỘI, BẢO HIỂM THẤT NGHIỆP",
+      "code": "2222/QĐ-BHXH"
+    },
+    {
+      "title": "Nghị định 115/2015/NĐ-CP",
+      "code": "115/2015/NĐ-CP"
+    },
+    {
+      "title": "LUẬT Bảo hiểm xã hội",
+      "code": "58/2014/QH13"
+    },
+    {
+      "title": "Thông tư 01/2016/TT-BLĐTBXH",
+      "code": "01/2016/TT-BLĐTBXH"
+    },
+    {
+      "title": "Nghị định 134/2015/NĐ-CP",
+      "code": "134/2015/NĐ-CP"
+    }
+  ],
+  "legal_bases": [
+    {
+      "title": "BAN HÀNH QUY TRÌNH GIẢI QUYẾT HƯỞNG CÁC CHẾ ĐỘ BẢO HIỂM XÃ HỘI, CHI TRẢ CÁC CHẾ ĐỘ BẢO HIỂM XÃ HỘI, BẢO HIỂM THẤT NGHIỆP",
+      "code": "2222/QĐ-BHXH"
+    },
+    {
+      "title": "Nghị định 115/2015/NĐ-CP",
+      "code": "115/2015/NĐ-CP"
+    },
+    {
+      "title": "LUẬT Bảo hiểm xã hội",
+      "code": "58/2014/QH13"
+    },
+    {
+      "title": "Thông tư 01/2016/TT-BLĐTBXH",
+      "code": "01/2016/TT-BLĐTBXH"
+    },
+    {
+      "title": "Nghị định 134/2015/NĐ-CP",
+      "code": "134/2015/NĐ-CP"
+    }
+  ],
+  "faq": [
+    {
+      "question": "Có thể nộp qua kênh nào?",
+      "answer": "Các kênh hiện có: Trực tiếp, Trực tuyến, Dịch vụ bưu chính."
+    },
+    {
+      "question": "Thời gian xử lý tham chiếu là bao lâu?",
+      "answer": "Thời gian xử lý tham chiếu hiện có là 12 ngày."
+    },
+    {
+      "question": "Kết quả chính của thủ tục là gì?",
+      "answer": "Kết quả chính được trích xuất là Tiền truy lĩnh hoặc tiền phải nộp thu hồi (nếu có)."
+    }
+  ],
+  "guidance": {
+    "highlight_documents": [
+      {
+        "bucket": "required",
+        "name": "b) Hồ sơ, giấy tờ, văn bản làm căn cứ điều chỉnh, hủy quyết định hưởng hoặc chấm dứt hưởng BHXH.",
+        "conditions": [],
+        "attachment_path": null
+      },
+      {
+        "bucket": "conditional",
+        "name": "c) Bản chính Mẫu 2-CBH ban hành kèm theo Quyết định số 686/QĐ-BHXH trong trường hợp người đang hưởng BHXH hàng tháng hoặc thân nhân người hưởng BHXH hàng tháng chết đề nghị cập nhật thông tin nhân thân theo căn cước công dân",
+        "conditions": [
+          "c) Bản chính Mẫu 2-CBH ban hành kèm theo Quyết định số 686/QĐ-BHXH trong trường hợp người đang hưởng BHXH hàng tháng hoặc thân nhân người hưởng BHXH hàng tháng chết đề nghị cập nhật thông tin nhân thân theo căn cước công dân"
+        ],
+        "attachment_path": null
+      },
+      {
+        "bucket": "conditional",
+        "name": "a) Bản chính Đơn đề nghị (mẫu số 14-HSB) trong trường hợp NLĐ có yêu cầu điều chỉnh",
+        "conditions": [
+          "a) Bản chính Đơn đề nghị (mẫu số 14-HSB) trong trường hợp NLĐ có yêu cầu điều chỉnh"
+        ],
+        "attachment_path": null
+      }
+    ],
+    "special_cases": [
+      "Có thể cần hồ sơ tử tuất hoặc mai táng phí"
+    ],
+    "common_errors": [
+      "Điền sai mẫu tờ khai hoặc chọn sai biểu mẫu đi kèm."
+    ],
+    "validation_hints": [
+      "Nên xác định trước kênh nộp hồ sơ để biết có cần bản giấy, bản điện tử hay xuất trình trực tiếp.",
+      "Nên rà lại quá trình tham gia bảo hiểm, độ tuổi và loại chế độ muốn hưởng trước khi nộp."
+    ]
+  },
+  "next_steps": {
+    "summary": "Nên rà trước quá trình đóng bảo hiểm, mốc tuổi và loại chế độ muốn hưởng trước khi nộp. Có thể chọn kênh nộp phù hợp: Trực tiếp, Trực tuyến, Dịch vụ bưu chính. Hiện có khoảng 3 mục giấy tờ cần theo dõi trong checklist.",
+    "time_badge": "12 ngày",
+    "result_label": "Tiền truy lĩnh hoặc tiền phải nộp thu hồi (nếu có)",
+    "primary_channel": "online",
+    "channels": [
+      "in_person",
+      "online",
+      "postal"
+    ]
+  },
+  "notes": [],
+  "provenance": {
+    "pipeline": "raw->structured->normalized->enriched->ui_api_payload",
+    "normalizer_version": "0.2.0",
+    "enricher_version": "0.2.0",
+    "mapping_notes": "workflow_generated:huu_tri/che_do_huu_tri",
+    "supported_group": true
+  }
+}

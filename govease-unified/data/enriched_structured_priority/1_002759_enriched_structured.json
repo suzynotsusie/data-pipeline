@@ -1,0 +1,131 @@
+{
+  "schema_version": "1.0",
+  "enricher_version": "0.2.0",
+  "source": {
+    "procedure_code": "1.002759",
+    "title": "Cấp lại, đổi, điều chỉnh thông tin trên sổ BHXH, thẻ BHYT",
+    "group_key": "suc_khoe_y_te",
+    "workflow_family": "healthcare_medical_policy_workflow",
+    "subflow": "chinh_sach_y_te"
+  },
+  "experience": {
+    "entry_label": "Hỗ trợ y tế và bảo hiểm",
+    "overview_summary": "Thủ tục này thuộc nhóm y tế và bảo hiểm, thường dùng để đăng ký, điều chỉnh hoặc xác nhận quyền lợi bảo hiểm y tế. Kết quả thường nhận được là kết quả giải quyết theo thủ tục này. Thời gian xử lý tham khảo: 45 Ngày.",
+    "next_step_summary": "Nên xác định rõ đối tượng tham gia, quyền lợi hoặc nhu cầu điều chỉnh hồ sơ y tế trước khi nộp. Có thể chọn kênh nộp phù hợp: Trực tiếp, Trực tuyến, Dịch vụ bưu chính. Hiện có khoảng 17 mục giấy tờ cần theo dõi trong checklist.",
+    "tone": "supportive_public_service"
+  },
+  "guidance": {
+    "highlight_documents": [
+      {
+        "bucket": "required",
+        "name": "3.3. Đối với cơ quan BHXH (Phòng/Tổ chế độ BHXH): Lập danh sách và hồ sơ người lao động giải quyết BHXH một lần còn thời gian BHTN chưa hưởng; người tham gia hưởng, dừng hưởng, hủy hưởng trợ cấp thất nghiệp (Mẫu D16-TS) gửi Phòng/Tổ Quản lý Thu - Sổ,",
+        "conditions": [],
+        "attachment_path": "Thẻ để đối chiếu và xác nhận lại dữ liệu tổng thời gian đóng BHTN chưa hưởng trên cơ sở dữ liệu thu toàn quốc. Mẫu D16-TS.docx"
+      },
+      {
+        "bucket": "required",
+        "name": "4.3. Ghi xác nhận thời gian đóng BHXH đối với cán bộ có thời gian làm việc ở xã, phường, thị trấn, bao gồm cả chức danh khác theo quy định tại Khoản 4, Điều 8 Thông tư liên tịch số 03/2010/TTLT-BNV-BTC-BLĐTBXH, hồ sơ kèm theo bao gồm: - Hồ sơ, lý lịch gốc của cá nhân; - Các giấy tờ liên quan chứng minh thời gian làm việc ở xã, phường, thị trấn (danh sách, Quyết định phân công, Quyết định hưởng sinh hoạt phí...).",
+        "conditions": [],
+        "attachment_path": null
+      },
+      {
+        "bucket": "required",
+        "name": "5. Điều chỉnh làm nghề hoặc công việc nặng nhọc, độc hại, nguy hiểm hoặc đặc biệt nặng nhọc, độc hại nguy hiểm a) Tờ khai tham gia, điều chỉnh thông tin BHXH, BHYT (mẫu TK1-TS); b) Hồ sơ kèm theo gồm một trong các loại giấy tờ sau: Quyết định phân công vị trí công việc, hưởng lương; Hợp đồng lao động,",
+        "conditions": [],
+        "attachment_path": "Hợp đồng làm việc và các giấy tờ khác có liên quan tới việc điều chỉnh. Mẫu TK1-TS.docx"
+      },
+      {
+        "bucket": "required",
+        "name": "B - Đối với cấp lại, đổi, điều chỉnh thông tin trên thẻ BHYT: Tên giấy tờ Mẫu đơn, tờ khai Số lượng 1. Người tham gia: - Tờ khai tham gia, điều chỉnh thông tin BHXH, BHYT (Mẫu TK1-TS) Lưu ý:",
+        "conditions": [],
+        "attachment_path": "Người tham gia BHYT được thay đổi cơ sở đăng ký khám chữa bệnh ban đầu vào tháng đầu quý. Mẫu TK1-TS.docx"
+      },
+      {
+        "bucket": "conditional",
+        "name": "A - Đối với cấp lại, đổi, điều chỉnh thông tin trên sổ BHXH Tên giấy tờ Mẫu đơn, tờ khai Số lượng 1. Trường hợp cấp lại sổ BHXH do mất, hỏng: Tờ khai tham gia, điều chỉnh thông tin BHXH,",
+        "conditions": [
+          "A - Đối với cấp lại, đổi, điều chỉnh thông tin trên sổ BHXH Tên giấy tờ Mẫu đơn, tờ khai Số lượng 1. Trường hợp cấp lại sổ BHXH do mất, hỏng: Tờ khai tham gia, điều chỉnh thông tin BHXH,"
+        ],
+        "attachment_path": "BHYT (mẫu TK1-TS). Mẫu TK1-TS.docx"
+      },
+      {
+        "bucket": "conditional",
+        "name": "2. Trường hợp gộp sổ BHXH: - Tờ khai tham gia, điều chỉnh thông tin BHXH, BHYT (mẫu TK1-TS);",
+        "conditions": [
+          "2. Trường hợp gộp sổ BHXH: - Tờ khai tham gia, điều chỉnh thông tin BHXH, BHYT (mẫu TK1-TS);"
+        ],
+        "attachment_path": "- Các sổ BHXH đề nghị gộp (nếu có). Mẫu TK1-TS.docx"
+      }
+    ],
+    "special_cases": [
+      "Có yếu tố nước ngoài",
+      "Có kiểm tra dữ liệu cư trú/định danh",
+      "Có thể cần đối chiếu quyền lợi bảo hiểm hoặc tuyến chuyên môn",
+      "Có thể cần đối chiếu thông tin thửa đất hoặc giấy chứng nhận",
+      "Có thể cần đối chiếu quá trình đóng bảo hiểm để giải quyết chế độ",
+      "Có thể cần hồ sơ tử tuất hoặc mai táng phí",
+      "Có thể cần xác minh quan hệ lao động hoặc giấy phép làm việc"
+    ],
+    "common_errors": [
+      "Thiếu giấy tờ hợp pháp hóa hoặc giấy tờ nhân thân của phía nước ngoài.",
+      "Điền sai mẫu tờ khai hoặc chọn sai biểu mẫu đi kèm.",
+      "Sai nhóm đối tượng tham gia hoặc thông tin quyền lợi bảo hiểm y tế.",
+      "Thông tin thửa đất, tài sản hoặc giấy chứng nhận chưa khớp với hồ sơ hiện có.",
+      "Thiếu thông tin về thời gian tham gia bảo hiểm hoặc chưa xác định đúng chế độ hưu trí."
+    ],
+    "validation_hints": [
+      "Nên xác định trước kênh nộp hồ sơ để biết có cần bản giấy, bản điện tử hay xuất trình trực tiếp.",
+      "Có mẫu biểu đính kèm, nên kiểm tra đúng biểu mẫu trước khi nộp.",
+      "Nên xác định đúng nhóm đối tượng, mã số bảo hiểm và quyền lợi áp dụng trước khi nộp."
+    ]
+  },
+  "intake": {
+    "candidate_input_fields": [
+      {
+        "field_id": "request_subject",
+        "label": "Đối tượng làm thủ tục",
+        "field_type": "text",
+        "required": true
+      },
+      {
+        "field_id": "insurance_or_medical_need",
+        "label": "Nhu cầu bảo hiểm hoặc y tế",
+        "field_type": "text",
+        "required": true
+      },
+      {
+        "field_id": "submission_channel_preference",
+        "label": "Kênh nộp dự kiến",
+        "field_type": "enum",
+        "required": false
+      },
+      {
+        "field_id": "has_insurance_number",
+        "label": "Đã có mã BHXH/BHYT",
+        "field_type": "boolean",
+        "required": false
+      },
+      {
+        "field_id": "insurance_participation_group",
+        "label": "Nhóm tham gia BHYT",
+        "field_type": "enum",
+        "required": true
+      }
+    ],
+    "suggested_clarifying_questions": [
+      "Bạn đang muốn đăng ký, điều chỉnh hay xác nhận quyền lợi y tế hoặc bảo hiểm nào?",
+      "Bạn đã có mã BHXH/BHYT hoặc thông tin đơn vị tiếp nhận liên quan chưa?"
+    ]
+  },
+  "ui_hints": {
+    "primary_channel": "in_person",
+    "result_label": null,
+    "time_badge": "45 Ngày",
+    "document_count_badge": 17
+  },
+  "provenance": {
+    "generator": "workflow_domain_enricher",
+    "derivation_mode": "rule_based_semantic_enrichment",
+    "supported_group": true
+  }
+}

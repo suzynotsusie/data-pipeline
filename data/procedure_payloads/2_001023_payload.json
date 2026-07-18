@@ -1,0 +1,424 @@
+{
+  "schema_version": "3.0",
+  "record_type": "public_service_procedure_payload",
+  "id": "procedure-2.001023",
+  "procedure_code": "2.001023",
+  "code": "2.001023",
+  "title": "Liên thông các thủ tục hành chính về đăng ký khai sinh, cấp Thẻ bảo hiểm y tế cho trẻ em dưới 6 tuổi",
+  "language": "vi",
+  "status": "generated_from_pipeline",
+  "field": "Hộ tịch",
+  "group_key": "co_con_nho",
+  "workflow_family": "child_early_life_workflow",
+  "subflow": "bao_hiem_y_te",
+  "source": {
+    "source_url": "file:///C:/Users/ku060/Downloads/VAIC%20source/data-pipeline/raw_data/2_001023/2_001023_procedure_detail.md",
+    "source_markdown_path": "C:\\Users\\ku060\\Downloads\\VAIC source\\data-pipeline\\raw_data\\2_001023\\2_001023_procedure_detail.md",
+    "normalized_payload_path": "C:\\Users\\ku060\\Downloads\\VAIC source\\data-pipeline\\govease-unified\\data\\normalized_structured\\2_001023_normalized_structured.json",
+    "enriched_payload_path": "C:\\Users\\ku060\\Downloads\\VAIC source\\data-pipeline\\govease-unified\\data\\enriched_structured_priority\\2_001023_enriched_structured.json"
+  },
+  "scope": {
+    "included": "Thủ tục này hỗ trợ hoàn tất khai sinh kèm cấp thẻ bảo hiểm y tế cho trẻ dưới 6 tuổi. Kết quả thường nhận được là Giấy khai sinh. Thời gian xử lý tham khảo: 15 ngày.",
+    "not_included": []
+  },
+  "agency": {
+    "executing_agency": "Công đoàn cơ quan BHXH Việt Nam",
+    "submission_place": null,
+    "receiving_places": []
+  },
+  "target_users": [
+    "Công dân Việt Nam",
+    "Cán bộ",
+    "công chức",
+    "viên chức"
+  ],
+  "submission_methods": [
+    {
+      "code": "IN_PERSON",
+      "label": "Trực tiếp",
+      "processing_time": "15 ngày",
+      "fee": null,
+      "description": "- Thời hạn thực hiện liên thông các thủ tục hành chính đăng ký khai sinh, cấp thẻ bảo hiểm y tế cho trẻ em dưới 6 tuổi tối đa không quá 15 ngày làm việc, kể từ ngày nộp đủ hồ sơ theo quy định. <br>- Trường hợp hồ sơ, thông tin chưa đầy đủ hoặc chưa đúng quy định mà Bộ phận tiếp nhận và trả kết quả của Ủy ban nhân dân cấp xã phải hoàn thiện hồ sơ, bổ sung thông tin theo yêu cầu của cơ quan Bảo hiểm xã hội thì thời hạn giải quyết được kéo dài thêm không quá 02 ngày làm việc.<br>- Đối với các xã cách xa trụ sở cơ quan Bảo hiểm xã hội cấp huyện từ 50 km trở lên, giao thông đi lại khó khăn, chưa được kết nối Internet thì thời hạn trả kết quả được kéo dài thêm nhưng không quá 05 ngày làm việc.<br>- Căn cứ vào tình hình thực tế, các địa phương có thể quy định cụ thể thời hạn thực hiện liên thông các thủ tục hành chính ngắn hơn thời hạn tối đa nêu trên."
+    }
+  ],
+  "processing_note": "Thời gian xử lý tham chiếu: 15 ngày. Chuẩn bị trước các giấy tờ cốt lõi của trẻ và người đi làm thủ tục, sau đó chọn kênh nộp phù hợp: Trực tiếp. Hiện có khoảng 3 mục giấy tờ cần theo dõi trong checklist.",
+  "documents": {
+    "normally_required": [
+      {
+        "name": "Tờ khai tham gia bảo hiểm y tế, Danh sách đề nghị cấp thẻ bảo hiểm y tế cho trẻ em dưới 6 tuổi của Ủy ban nhân dân cấp xã (theo mẫu quy định)",
+        "quantity": "1 bản chính, 0 bản sao",
+        "notes": [],
+        "group": "default",
+        "attachment_path": null
+      },
+      {
+        "name": "Tờ khai đăng ký khai sinh theo mẫu quy định.",
+        "quantity": "1 bản chính, 0 bản sao",
+        "notes": [],
+        "group": "default",
+        "attachment_path": null
+      }
+    ],
+    "conditional": [
+      {
+        "condition": "Giấy chứng sinh do cơ sở y tế nơi trẻ em sinh ra cấp; nếu trẻ em sinh ra ngoài cơ sở y tế thì giấy chứng sinh được thay bằng văn bản xác nhận của người làm chứng; trường hợp không có người làm chứng thì người đi khai sinh phải làm giấy cam đoan về việc sinh là có thực. Đối với trường hợp trẻ em bị bỏ rơi thì nộp biên bản về việc trẻ em bị bỏ rơi thay cho giấy chứng sinh.",
+        "document": "Giấy chứng sinh do cơ sở y tế nơi trẻ em sinh ra cấp; nếu trẻ em sinh ra ngoài cơ sở y tế thì giấy chứng sinh được thay bằng văn bản xác nhận của người làm chứng; trường hợp không có người làm chứng thì người đi khai sinh phải làm giấy cam đoan về việc sinh là có thực. Đối với trường hợp trẻ em bị bỏ rơi thì nộp biên bản về việc trẻ em bị bỏ rơi thay cho giấy chứng sinh.",
+        "quantity": "1 bản chính, 0 bản sao",
+        "notes": [],
+        "attachment_path": null
+      }
+    ],
+    "forms": [],
+    "presented": [],
+    "notes": [],
+    "summary": [
+      {
+        "group": "default",
+        "name": "Tờ khai tham gia bảo hiểm y tế, Danh sách đề nghị cấp thẻ bảo hiểm y tế cho trẻ em dưới 6 tuổi của Ủy ban nhân dân cấp xã (theo mẫu quy định)",
+        "quantity": "1 bản chính, 0 bản sao",
+        "notes": [],
+        "attachment_path": null
+      },
+      {
+        "group": "default",
+        "name": "Tờ khai đăng ký khai sinh theo mẫu quy định.",
+        "quantity": "1 bản chính, 0 bản sao",
+        "notes": [],
+        "attachment_path": null
+      },
+      {
+        "group": null,
+        "name": null,
+        "quantity": "1 bản chính, 0 bản sao",
+        "notes": [],
+        "attachment_path": null
+      }
+    ]
+  },
+  "steps": [
+    {
+      "order": 1,
+      "title": "Bước 1",
+      "description": "1. Người có yêu cầu nộp hồ sơ tại Bộ phận tiếp nhận và trả kết quả theo cơ chế “Một cửa” của Ủy ban nhân dân cấp xã.",
+      "example": null
+    },
+    {
+      "order": 2,
+      "title": "Bước 2",
+      "description": "Cán bộ, công chức tiếp nhận hồ sơ có trách nhiệm kiểm tra giấy tờ trong hồ sơ, nếu hồ sơ đầy đủ, hợp lệ thì tiếp nhận, viết giấy nhận hồ sơ, hẹn trả kết quả từng loại việc cho người đi đăng ký; nếu hồ sơ thiếu hoặc không hợp lệ thì hướng dẫn người có yêu cầu bổ sung hoàn thiện hồ sơ; văn bản hướng dẫn phải ghi đầy đủ, rõ ràng loại giấy tờ cần bổ sung, hoàn thiện; cán bộ tiếp nhận hồ sơ ký, ghi rõ họ tên và giao cho người nộp hồ sơ.",
+      "example": null
+    },
+    {
+      "order": 3,
+      "title": "Bước 3",
+      "description": "Công chức Tư pháp - hộ tịch cấp xã đăng ký khai sinh cho trẻ em ngay trong ngày tiếp nhận hồ sơ",
+      "example": null
+    },
+    {
+      "order": 4,
+      "title": "Bước 4",
+      "description": "Sau khi công chức Tư pháp – hộ tịch cấp xã thực hiện việc đăng ký khai sinh và cấp Giấy khai sinh cho trẻ em, cán bộ, công chức được giao nhiệm vụ lập lập hồ sơ cấp Thẻ bảo hiểm y tế chuyển cho Bảo hiểm xã hội cấp huyện để cấp Thẻ bảo hiểm y tế cho trẻ em.",
+      "example": null
+    },
+    {
+      "order": 5,
+      "title": "Bước 5",
+      "description": "Cơ quan Bảo hiểm xã hội kiểm tra hồ sơ, nếu thấy đầy đủ, hợp lệ thì thực hiện cấp Thẻ bảo hiểm y tế cho trẻ em (trong thời hạn 10 ngày).",
+      "example": "10 ngày"
+    },
+    {
+      "order": 6,
+      "title": "Bước 6",
+      "description": "Trường hợp hồ sơ chưa đầy đủ thì thông báo cho Ủy ban nhân dân cấp xã biết, hoàn thiện.",
+      "example": null
+    },
+    {
+      "order": 7,
+      "title": "Bước 7",
+      "description": "Cơ quan Bảo hiểm xã hội chuyển trả Thẻ bảo hiểm y tế cho trẻ em về Ủy ban nhân dân cấp xã.",
+      "example": null
+    },
+    {
+      "order": 8,
+      "title": "Bước 8",
+      "description": "Bộ phận tiếp nhận và trả kết quả theo cơ chế “Một cửa” tại Ủy ban nhân dân cấp xã trả kết quả cho người có yêu cầu.",
+      "example": null
+    },
+    {
+      "order": 9,
+      "title": "Bước 9",
+      "description": "Khi trả Giấy khai sinh cho người có yêu cầu, công chức Tư pháp – hộ tịch ghi vào Sổ đăng ký khai sinh, yêu cầu người có yêu cầu ký tên vào Sổ đăng ký khai sinh và Giấy khai sinh.",
+      "example": null
+    }
+  ],
+  "input_fields": [
+    {
+      "field": "child_full_name",
+      "label": "Tên trẻ",
+      "type": "string",
+      "required": false
+    },
+    {
+      "field": "child_birth_date",
+      "label": "Ngày sinh của trẻ",
+      "type": "date",
+      "required": false,
+      "format": "YYYY-MM-DD"
+    },
+    {
+      "field": "child_birth_place",
+      "label": "Nơi sinh",
+      "type": "string",
+      "required": false
+    },
+    {
+      "field": "requester_relationship",
+      "label": "Quan hệ với trẻ",
+      "type": "enum",
+      "required": true
+    },
+    {
+      "field": "has_foreign_element",
+      "label": "Có yếu tố nước ngoài",
+      "type": "boolean",
+      "required": true
+    },
+    {
+      "field": "needs_health_insurance",
+      "label": "Cần liên thông bảo hiểm y tế",
+      "type": "boolean",
+      "required": true
+    }
+  ],
+  "validation_rules": [
+    {
+      "id": "required-4",
+      "severity": "error",
+      "field": "requester_relationship",
+      "rule": "Trường bắt buộc phải có dữ liệu hợp lệ trước khi nộp.",
+      "message": "Thiếu trường bắt buộc: Quan hệ với trẻ."
+    },
+    {
+      "id": "required-5",
+      "severity": "error",
+      "field": "has_foreign_element",
+      "rule": "Trường bắt buộc phải có dữ liệu hợp lệ trước khi nộp.",
+      "message": "Thiếu trường bắt buộc: Có yếu tố nước ngoài."
+    },
+    {
+      "id": "required-6",
+      "severity": "error",
+      "field": "needs_health_insurance",
+      "rule": "Trường bắt buộc phải có dữ liệu hợp lệ trước khi nộp.",
+      "message": "Thiếu trường bắt buộc: Cần liên thông bảo hiểm y tế."
+    },
+    {
+      "id": "hint-1",
+      "severity": "warning",
+      "field": "general",
+      "rule": "Nên xác định trước kênh nộp hồ sơ để biết có cần bản giấy, bản điện tử hay xuất trình trực tiếp.",
+      "message": "Nên xác định trước kênh nộp hồ sơ để biết có cần bản giấy, bản điện tử hay xuất trình trực tiếp."
+    },
+    {
+      "id": "hint-2",
+      "severity": "warning",
+      "field": "general",
+      "rule": "Thông tin hộ tịch giữa các giấy tờ phải thống nhất về họ tên, ngày sinh và quan hệ liên quan.",
+      "message": "Thông tin hộ tịch giữa các giấy tờ phải thống nhất về họ tên, ngày sinh và quan hệ liên quan."
+    }
+  ],
+  "common_errors": [
+    {
+      "field": "general",
+      "issue": "Thiếu giấy chứng sinh hoặc giấy thay thế hợp lệ.",
+      "fix": "Nên xác định trước kênh nộp hồ sơ để biết có cần bản giấy, bản điện tử hay xuất trình trực tiếp."
+    },
+    {
+      "field": "general",
+      "issue": "Điền sai mẫu tờ khai hoặc chọn sai biểu mẫu đi kèm.",
+      "fix": "Nên xác định trước kênh nộp hồ sơ để biết có cần bản giấy, bản điện tử hay xuất trình trực tiếp."
+    },
+    {
+      "field": "general",
+      "issue": "Sai nhóm đối tượng tham gia hoặc thông tin quyền lợi bảo hiểm y tế.",
+      "fix": "Nên xác định trước kênh nộp hồ sơ để biết có cần bản giấy, bản điện tử hay xuất trình trực tiếp."
+    }
+  ],
+  "clarifying_questions": [
+    {
+      "id": "clarify_1",
+      "question": "Bé đã có giấy chứng sinh hoặc giấy tờ thay thế chưa?",
+      "purpose": "workflow_intake"
+    },
+    {
+      "id": "clarify_2",
+      "question": "Thủ tục này có liên quan đến yếu tố nước ngoài, mang thai hộ hoặc trẻ bị bỏ rơi không?",
+      "purpose": "workflow_intake"
+    },
+    {
+      "id": "clarify_3",
+      "question": "Bạn muốn xử lý liên thông luôn bảo hiểm hoặc thường trú cho trẻ không?",
+      "purpose": "workflow_intake"
+    }
+  ],
+  "legal_basis": [
+    {
+      "title": "Nghị định số 123/2015/NĐ-CP ngày 15/11/2015 của Chính phủ quy định chi tiết một số điều và biện pháp thi hành Luật Hộ tịch",
+      "code": "123/2015/NĐ-CP"
+    },
+    {
+      "title": "Luật 60/2014/QH13",
+      "code": "60/2014/QH13"
+    },
+    {
+      "title": "Thông tư liên tich 05/2015/TTLT-BTP-BCA-BYT",
+      "code": "05/2015/TTLT-BTP-BCA-BYT"
+    },
+    {
+      "title": "Thông tư 08.a/2010/TT-BTP",
+      "code": "08.a/2010/TT-BTP"
+    },
+    {
+      "title": "Thông tư 09b/2013/TT-BTP",
+      "code": "09b/2013/TT-BTP"
+    },
+    {
+      "title": "Quy định chi tiết thi hành một số điều của Luật hộ tịch và Nghị định số 123/2015/NĐ-CP ngày 15 tháng 11 năm 2015 của Chính phủ quy định chi tiết một số điều và biện pháp thi hành Luật hộ tịch",
+      "code": "15/2015/TT-BTP"
+    },
+    {
+      "title": "Nghị định 105/2014/NĐ-CP",
+      "code": "105/2014/NĐ-CP"
+    },
+    {
+      "title": "Luật 25/2008/QH12 - Bảo hiểm y tế",
+      "code": "25/2008/QH12"
+    },
+    {
+      "title": "Nghị định 158/2005/NĐ-CP",
+      "code": "158/2005/NĐ-CP"
+    },
+    {
+      "title": "Luật sửa đổi, bổ sung một số điều Luật bảo hiểm y tế",
+      "code": "46/2014/QH13"
+    },
+    {
+      "title": "về việc sửa đổi, bổ sung một số điều của các Nghị định về hộ tịch, hôn nhân và gia đình và chứng thực",
+      "code": "Nghị định số 06/2012/NĐ-CP"
+    }
+  ],
+  "legal_bases": [
+    {
+      "title": "Nghị định số 123/2015/NĐ-CP ngày 15/11/2015 của Chính phủ quy định chi tiết một số điều và biện pháp thi hành Luật Hộ tịch",
+      "code": "123/2015/NĐ-CP"
+    },
+    {
+      "title": "Luật 60/2014/QH13",
+      "code": "60/2014/QH13"
+    },
+    {
+      "title": "Thông tư liên tich 05/2015/TTLT-BTP-BCA-BYT",
+      "code": "05/2015/TTLT-BTP-BCA-BYT"
+    },
+    {
+      "title": "Thông tư 08.a/2010/TT-BTP",
+      "code": "08.a/2010/TT-BTP"
+    },
+    {
+      "title": "Thông tư 09b/2013/TT-BTP",
+      "code": "09b/2013/TT-BTP"
+    },
+    {
+      "title": "Quy định chi tiết thi hành một số điều của Luật hộ tịch và Nghị định số 123/2015/NĐ-CP ngày 15 tháng 11 năm 2015 của Chính phủ quy định chi tiết một số điều và biện pháp thi hành Luật hộ tịch",
+      "code": "15/2015/TT-BTP"
+    },
+    {
+      "title": "Nghị định 105/2014/NĐ-CP",
+      "code": "105/2014/NĐ-CP"
+    },
+    {
+      "title": "Luật 25/2008/QH12 - Bảo hiểm y tế",
+      "code": "25/2008/QH12"
+    },
+    {
+      "title": "Nghị định 158/2005/NĐ-CP",
+      "code": "158/2005/NĐ-CP"
+    },
+    {
+      "title": "Luật sửa đổi, bổ sung một số điều Luật bảo hiểm y tế",
+      "code": "46/2014/QH13"
+    },
+    {
+      "title": "về việc sửa đổi, bổ sung một số điều của các Nghị định về hộ tịch, hôn nhân và gia đình và chứng thực",
+      "code": "Nghị định số 06/2012/NĐ-CP"
+    }
+  ],
+  "faq": [
+    {
+      "question": "Có thể nộp qua kênh nào?",
+      "answer": "Các kênh hiện có: Trực tiếp."
+    },
+    {
+      "question": "Thời gian xử lý tham chiếu là bao lâu?",
+      "answer": "Thời gian xử lý tham chiếu hiện có là 15 ngày."
+    },
+    {
+      "question": "Kết quả chính của thủ tục là gì?",
+      "answer": "Kết quả chính được trích xuất là Giấy khai sinh."
+    }
+  ],
+  "guidance": {
+    "highlight_documents": [
+      {
+        "bucket": "required",
+        "name": "Tờ khai tham gia bảo hiểm y tế, Danh sách đề nghị cấp thẻ bảo hiểm y tế cho trẻ em dưới 6 tuổi của Ủy ban nhân dân cấp xã (theo mẫu quy định)",
+        "conditions": [],
+        "attachment_path": null
+      },
+      {
+        "bucket": "required",
+        "name": "Tờ khai đăng ký khai sinh theo mẫu quy định.",
+        "conditions": [],
+        "attachment_path": null
+      },
+      {
+        "bucket": "conditional",
+        "name": "Giấy chứng sinh do cơ sở y tế nơi trẻ em sinh ra cấp; nếu trẻ em sinh ra ngoài cơ sở y tế thì giấy chứng sinh được thay bằng văn bản xác nhận của người làm chứng; trường hợp không có người làm chứng thì người đi khai sinh phải làm giấy cam đoan về việc sinh là có thực. Đối với trường hợp trẻ em bị bỏ rơi thì nộp biên bản về việc trẻ em bị bỏ rơi thay cho giấy chứng sinh.",
+        "conditions": [
+          "Giấy chứng sinh do cơ sở y tế nơi trẻ em sinh ra cấp; nếu trẻ em sinh ra ngoài cơ sở y tế thì giấy chứng sinh được thay bằng văn bản xác nhận của người làm chứng; trường hợp không có người làm chứng thì người đi khai sinh phải làm giấy cam đoan về việc sinh là có thực. Đối với trường hợp trẻ em bị bỏ rơi thì nộp biên bản về việc trẻ em bị bỏ rơi thay cho giấy chứng sinh."
+        ],
+        "attachment_path": null
+      }
+    ],
+    "special_cases": [
+      "Có tình huống trẻ bị bỏ rơi hoặc thiếu giấy chứng sinh",
+      "Có thể cần đối chiếu quyền lợi bảo hiểm hoặc tuyến chuyên môn"
+    ],
+    "common_errors": [
+      "Thiếu giấy chứng sinh hoặc giấy thay thế hợp lệ.",
+      "Điền sai mẫu tờ khai hoặc chọn sai biểu mẫu đi kèm.",
+      "Sai nhóm đối tượng tham gia hoặc thông tin quyền lợi bảo hiểm y tế."
+    ],
+    "validation_hints": [
+      "Nên xác định trước kênh nộp hồ sơ để biết có cần bản giấy, bản điện tử hay xuất trình trực tiếp.",
+      "Thông tin hộ tịch giữa các giấy tờ phải thống nhất về họ tên, ngày sinh và quan hệ liên quan."
+    ]
+  },
+  "next_steps": {
+    "summary": "Chuẩn bị trước các giấy tờ cốt lõi của trẻ và người đi làm thủ tục, sau đó chọn kênh nộp phù hợp: Trực tiếp. Hiện có khoảng 3 mục giấy tờ cần theo dõi trong checklist.",
+    "time_badge": "15 ngày",
+    "result_label": "Giấy khai sinh",
+    "primary_channel": "in_person",
+    "channels": [
+      "in_person"
+    ]
+  },
+  "notes": [],
+  "provenance": {
+    "pipeline": "raw->structured->normalized->enriched->ui_api_payload",
+    "normalizer_version": "0.2.0",
+    "enricher_version": "0.2.0",
+    "mapping_notes": "excluded_from_clean_workflow_dataset",
+    "supported_group": true
+  }
+}

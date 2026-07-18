@@ -1,0 +1,87 @@
+{
+  "schema_version": "1.0",
+  "enricher_version": "0.2.0",
+  "source": {
+    "procedure_code": "1.004539",
+    "title": "Công bố đáp ứng yêu cầu là cơ sở thực hành trong đào tạo khối ngành sức khỏe đối với các cơ sở khám, chữa bệnh thuộc Sở Y tế và cơ sở khám bệnh, chữa bệnh tư nhân trên địa bàn tỉnh, thành phố",
+    "group_key": "suc_khoe_y_te",
+    "workflow_family": null,
+    "subflow": null
+  },
+  "experience": {
+    "entry_label": "Hỗ trợ y tế và bảo hiểm",
+    "overview_summary": "Thủ tục này thuộc nhóm y tế, thường cần đối chiếu thông tin người bệnh, đơn vị tiếp nhận hoặc quyền lợi chuyên ngành. Kết quả thường nhận được là Công bố thông tin các Cơ sở thực hành lên Cổng thông tin điện tử. Thời gian xử lý tham khảo: 15 ngày làm việc.",
+    "next_step_summary": "Nên xác định rõ đối tượng tham gia, quyền lợi hoặc nhu cầu điều chỉnh hồ sơ y tế trước khi nộp. Có thể chọn kênh nộp phù hợp: Trực tiếp. Hiện có khoảng 2 mục giấy tờ cần theo dõi trong checklist.",
+    "tone": "supportive_public_service"
+  },
+  "guidance": {
+    "highlight_documents": [
+      {
+        "bucket": "required",
+        "name": "Bản công bố cơ sở khám, chữa bệnh đáp ứng yêu cầu là cơ sở thực hành trong đào tạo khối ngành sức khỏe theo mẫu quy định tại Phụ lục số 02 ban hành kèm theo Nghị định số 111/2017/NĐ-CP.",
+        "conditions": [],
+        "attachment_path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/1_004539/M%E1%BA%ABu%20B%E1%BA%A3n%20c%C3%B4ng%20b%E1%BB%91_ND111.doc"
+      },
+      {
+        "bucket": "conditional",
+        "name": "Các tài liệu gửi kèm bản công bố để minh chứng cơ sở khám, chữa bệnh đáp ứng yêu cầu (nếu có) bao gồm: - Các ngành/chuyên ngành đào tạo thực hành - Trình độ đào tạo thực hành - Số lượng người đào tạo thực hành tối đa (bao gồm tất cả các trình độ) - Danh sách người giảng dạy thực hành đáp ứng yêu cầu - Danh sách các khoa, phòng tổ chức thực hành và số giường bệnh hoặc ghế răng tại mỗi khoa, phòng - Danh mục cơ sở vật chất, thiết bị phục vụ đào tạo thực hành",
+        "conditions": [
+          "Các tài liệu gửi kèm bản công bố để minh chứng cơ sở khám, chữa bệnh đáp ứng yêu cầu (nếu có) bao gồm: - Các ngành/chuyên ngành đào tạo thực hành - Trình độ đào tạo thực hành - Số lượng người đào tạo thực hành tối đa (bao gồm tất cả các trình độ) - Danh sách người giảng dạy thực hành đáp ứng yêu cầu - Danh sách các khoa, phòng tổ chức thực hành và số giường bệnh hoặc ghế răng tại mỗi khoa, phòng - Danh mục cơ sở vật chất, thiết bị phục vụ đào tạo thực hành"
+        ],
+        "attachment_path": null
+      }
+    ],
+    "special_cases": [],
+    "common_errors": [
+      "Điền sai mẫu tờ khai hoặc chọn sai biểu mẫu đi kèm."
+    ],
+    "validation_hints": [
+      "Nên xác định trước kênh nộp hồ sơ để biết có cần bản giấy, bản điện tử hay xuất trình trực tiếp.",
+      "Có mẫu biểu đính kèm, nên kiểm tra đúng biểu mẫu trước khi nộp.",
+      "Nên xác định đúng nhóm đối tượng, mã số bảo hiểm và quyền lợi áp dụng trước khi nộp."
+    ]
+  },
+  "intake": {
+    "candidate_input_fields": [
+      {
+        "field_id": "request_subject",
+        "label": "Đối tượng làm thủ tục",
+        "field_type": "text",
+        "required": true
+      },
+      {
+        "field_id": "insurance_or_medical_need",
+        "label": "Nhu cầu bảo hiểm hoặc y tế",
+        "field_type": "text",
+        "required": true
+      },
+      {
+        "field_id": "submission_channel_preference",
+        "label": "Kênh nộp dự kiến",
+        "field_type": "enum",
+        "required": false
+      },
+      {
+        "field_id": "has_insurance_number",
+        "label": "Đã có mã BHXH/BHYT",
+        "field_type": "boolean",
+        "required": false
+      }
+    ],
+    "suggested_clarifying_questions": [
+      "Bạn đang muốn đăng ký, điều chỉnh hay xác nhận quyền lợi y tế hoặc bảo hiểm nào?",
+      "Bạn đã có mã BHXH/BHYT hoặc thông tin đơn vị tiếp nhận liên quan chưa?"
+    ]
+  },
+  "ui_hints": {
+    "primary_channel": "in_person",
+    "result_label": "Công bố thông tin các Cơ sở thực hành lên Cổng thông tin điện tử",
+    "time_badge": "15 ngày làm việc",
+    "document_count_badge": 2
+  },
+  "provenance": {
+    "generator": "workflow_domain_enricher",
+    "derivation_mode": "rule_based_semantic_enrichment",
+    "supported_group": true
+  }
+}

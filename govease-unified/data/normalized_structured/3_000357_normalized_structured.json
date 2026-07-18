@@ -1,0 +1,146 @@
+{
+  "schema_version": "1.0",
+  "normalizer_version": "0.2.0",
+  "source": {
+    "procedure_code": "3.000357",
+    "title": "Thu hồi giấy phép sát hạch của trung tâm sát hạch lái xe loại 1, loại 2",
+    "raw_structured_parser_version": "0.1.0",
+    "field": "Sát hạch, cấp giấy phép lái xe"
+  },
+  "procedure": {
+    "level": "Cấp bộ/ngành",
+    "procedure_type": "OTHER",
+    "target_users": [
+      "Tổ chức (không bao gồm doanh nghiệp",
+      "HTX)",
+      "Công dân Việt Nam",
+      "Doanh nghiệp",
+      "Hợp tác xã"
+    ],
+    "authorities": [
+      "Cục cảnh sát giao thông"
+    ],
+    "receiving_places": []
+  },
+  "submission": {
+    "channels": [
+      "in_person"
+    ],
+    "methods": [
+      {
+        "method_id": "method_1",
+        "channel": "in_person",
+        "processing_time_text": "5 ngày làm việc",
+        "fee_text": null,
+        "description": null,
+        "is_online": false,
+        "is_postal": false,
+        "is_in_person": true
+      }
+    ],
+    "timing_summary": {
+      "unique_processing_times": [
+        "5 ngày làm việc"
+      ],
+      "method_count": 1
+    }
+  },
+  "documents": {
+    "required": [
+      {
+        "document_id": "gi_y_ph_p_s_t_h_ch_c_c_p",
+        "name": "Giấy phép sát hạch đã được cấp",
+        "group_name": "default",
+        "group_type": "unknown",
+        "original_count": "1",
+        "copy_count": "0",
+        "conditions": [],
+        "attachment_label": null,
+        "attachment_path": null
+      },
+      {
+        "document_id": "b_o_c_o_t_nh_h_nh_ho_t_ng_c_a_c_c_trung_t_m_s_t_h_ch_ho_c_bi_n_b_n_vi_ph_m_ho_c_quy_t_nh_gi_i_th",
+        "name": "Báo cáo tình hình hoạt động của các Trung tâm sát hạch hoặc biên bản vi phạm hoặc Quyết định giải thể",
+        "group_name": "default",
+        "group_type": "unknown",
+        "original_count": "1",
+        "copy_count": "0",
+        "conditions": [],
+        "attachment_label": null,
+        "attachment_path": null
+      }
+    ],
+    "conditional": [],
+    "presented": [],
+    "notes": [],
+    "forms": [],
+    "empty_groups": [],
+    "document_count": 2
+  },
+  "process": {
+    "steps": [
+      {
+        "step_id": "step_1",
+        "title": null,
+        "content": "1.",
+        "actor": "user",
+        "channel_hint": null,
+        "time_hint": null
+      },
+      {
+        "step_id": "step_2",
+        "title": "a)",
+        "content": "a) Nộp hồ sơ TTHC:",
+        "actor": "user",
+        "channel_hint": null,
+        "time_hint": null
+      },
+      {
+        "step_id": "step_3",
+        "title": "b)",
+        "content": "b) Giải quyết TTHC: - Trong thời hạn 05 ngày làm việc kể từ ngày phát hiện hành vi vi phạm quy định hoặc giải thể hoạt động sát hạch, Cục Cảnh sát giao thông ban hành quyết định thu hồi giấy phép sát hạch, thông báo đến các cơ quan liên quan để phối hợp thực hiện và công bố trên Trang thông tin điện tử. - Trung tâm sát hạch lái xe phải nộp lại giấy phép sát hạch cho Cục Cảnh sát giao, đồng thời dừng toàn bộ hoạt động sát hạch lái xe theo giấy phép đã bị thu hồi ngay sau khi quyết định có hiệu lực.",
+        "actor": "authority",
+        "channel_hint": null,
+        "time_hint": "05 ngày làm việc"
+      }
+    ],
+    "step_count": 3,
+    "notes": []
+  },
+  "eligibility": {
+    "conditions": [],
+    "has_conditions": false
+  },
+  "results": {
+    "items": [
+      {
+        "name": "Quyết định thu hồi giấy phép sát hạch",
+        "result_code": "KQ.G01.000192",
+        "raw_text": "Quyết định thu hồi giấy phép sát hạch"
+      }
+    ],
+    "primary_result": {
+      "name": "Quyết định thu hồi giấy phép sát hạch",
+      "result_code": "KQ.G01.000192",
+      "raw_text": "Quyết định thu hồi giấy phép sát hạch"
+    }
+  },
+  "legal_basis": {
+    "items": [
+      {
+        "title": "Quy định về hoạt động đào tạo và sát hạch lái xe.",
+        "code": "160/2024/NĐ-CP"
+      }
+    ],
+    "count": 1
+  },
+  "attachments": [],
+  "signals": {
+    "raw_parse_warnings": [],
+    "missing_documents": false,
+    "documents_section_present": true,
+    "documents_declared_empty": false,
+    "documents_only_in_notes": false,
+    "missing_results": false
+  }
+}

@@ -1,0 +1,59 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://govease.local/schemas/normalized_structured.schema.json",
+  "title": "GovEase Normalized Structured Procedure",
+  "type": "object",
+  "required": [
+    "schema_version",
+    "normalizer_version",
+    "source",
+    "procedure",
+    "submission",
+    "documents",
+    "process",
+    "eligibility",
+    "results",
+    "legal_basis",
+    "attachments",
+    "signals"
+  ],
+  "properties": {
+    "schema_version": {
+      "type": "string"
+    },
+    "normalizer_version": {
+      "type": "string"
+    },
+    "source": {
+      "type": "object"
+    },
+    "procedure": {
+      "type": "object"
+    },
+    "submission": {
+      "type": "object"
+    },
+    "documents": {
+      "type": "object"
+    },
+    "process": {
+      "type": "object"
+    },
+    "eligibility": {
+      "type": "object"
+    },
+    "results": {
+      "type": "object"
+    },
+    "legal_basis": {
+      "type": "object"
+    },
+    "attachments": {
+      "type": "array"
+    },
+    "signals": {
+      "type": "object"
+    }
+  },
+  "additionalProperties": true
+}

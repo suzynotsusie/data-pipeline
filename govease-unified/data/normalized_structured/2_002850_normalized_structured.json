@@ -1,0 +1,189 @@
+{
+  "schema_version": "1.0",
+  "normalizer_version": "0.2.0",
+  "source": {
+    "procedure_code": "2.002850",
+    "title": "Cấp lại văn bằng, chứng chỉ",
+    "raw_structured_parser_version": "0.1.0",
+    "field": "Văn bằng, chứng chỉ"
+  },
+  "procedure": {
+    "level": "Cấp tỉnh, Cơ quan khác",
+    "procedure_type": "NOT_ASSIGNED_REGULATION",
+    "target_users": [
+      "Công dân Việt Nam",
+      "Người nước ngoài",
+      "Người Việt Nam định cư ở nước ngoài"
+    ],
+    "authorities": [
+      "Cơ sở giáo dục"
+    ],
+    "receiving_places": []
+  },
+  "submission": {
+    "channels": [
+      "in_person",
+      "online",
+      "postal"
+    ],
+    "methods": [
+      {
+        "method_id": "method_1",
+        "channel": "in_person",
+        "processing_time_text": "3 ngày làm việc",
+        "fee_text": null,
+        "description": null,
+        "is_online": false,
+        "is_postal": false,
+        "is_in_person": true
+      },
+      {
+        "method_id": "method_2",
+        "channel": "online",
+        "processing_time_text": "3 ngày làm việc",
+        "fee_text": null,
+        "description": null,
+        "is_online": true,
+        "is_postal": false,
+        "is_in_person": false
+      },
+      {
+        "method_id": "method_3",
+        "channel": "postal",
+        "processing_time_text": "3 ngày làm việc",
+        "fee_text": null,
+        "description": null,
+        "is_online": false,
+        "is_postal": true,
+        "is_in_person": false
+      }
+    ],
+    "timing_summary": {
+      "unique_processing_times": [
+        "3 ngày làm việc"
+      ],
+      "method_count": 3
+    }
+  },
+  "documents": {
+    "required": [
+      {
+        "document_id": "phi_u_ngh_c_p_l_i_v_n_b_ng_ch_ng_ch_theo_m_u_t_i_ph_l_c_vi_ban_h_nh_k_m_theo_th_ng_t_s_10_2026_tt_bgd_t_nh_k_m_theo_quy_t_nh_n_y",
+        "name": "Phiếu đề nghị cấp lại văn bằng, chứng chỉ (theo Mẫu tại Phụ lục VI ban hành kèm theo Thông tư số 10/2026/TT-BGDĐT, đính kèm theo Quyết định này)",
+        "group_name": "default",
+        "group_type": "unknown",
+        "original_count": "1",
+        "copy_count": "0",
+        "conditions": [],
+        "attachment_label": "Muphiucpbnsaocplichnhsanidungvnbngchngch.docx",
+        "attachment_path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/2_002850/Muphiucpbnsaocplichnhsanidungvnbngchngch.docx"
+      },
+      {
+        "document_id": "gi_y_t_ch_ng_minh_c_quan_c_p_v_n_b_ng_ch_ng_ch_vi_t_sai_v_n_b_ng_ch_ng_ch",
+        "name": "Giấy tờ chứng minh cơ quan cấp văn bằng, chứng chỉ viết sai văn bằng, chứng chỉ",
+        "group_name": "default",
+        "group_type": "unknown",
+        "original_count": "1",
+        "copy_count": "0",
+        "conditions": [],
+        "attachment_label": null,
+        "attachment_path": null
+      }
+    ],
+    "conditional": [],
+    "presented": [],
+    "notes": [],
+    "forms": [
+      {
+        "name": "Phiếu đề nghị cấp lại văn bằng, chứng chỉ (theo Mẫu tại Phụ lục VI ban hành kèm theo Thông tư số 10/2026/TT-BGDĐT, đính kèm theo Quyết định này)",
+        "attachment_label": "Muphiucpbnsaocplichnhsanidungvnbngchngch.docx",
+        "attachment_path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/2_002850/Muphiucpbnsaocplichnhsanidungvnbngchngch.docx"
+      }
+    ],
+    "empty_groups": [],
+    "document_count": 2
+  },
+  "process": {
+    "steps": [
+      {
+        "step_id": "step_1",
+        "title": null,
+        "content": "1.",
+        "actor": "user",
+        "channel_hint": null,
+        "time_hint": null
+      },
+      {
+        "step_id": "step_2",
+        "title": "a)",
+        "content": "a) Người có yêu cầu cấp lại văn bằng, chứng chỉ cung cấp thông tin yêu cầu chỉnh sửa trên cổng dịch vụ công trực tuyến. Trường hợp không thể thực hiện theo dịch vụ công trực tuyến thì gửi trực tiếp hoặc qua dịch vụ bưu chính cho cơ quan có thẩm quyền cấp lại văn bằng, chứng chỉ hồ sơ yêu cầu gồm: Phiếu đề nghị cấp lại văn bằng, chứng chỉ (theo Mẫu tại Phụ lục VI ban hành kèm theo Thông tư số 10/2026/TT-BGDĐT); giấy tờ chứng minh cơ quan cấp văn bằng, chứng chỉ viết sai văn bằng, chứng chỉ;",
+        "actor": "authority",
+        "channel_hint": "trực tuyến",
+        "time_hint": null
+      },
+      {
+        "step_id": "step_3",
+        "title": "b)",
+        "content": "b) Trong thời hạn 03 ngày làm việc kể từ ngày nhận đủ hồ sơ hợp lệ, cơ quan có thẩm quyền cấp lại văn bằng, chứng chỉ xem xét quyết định việc cấp lại văn bằng, chứng chỉ; nếu không cấp lại thì phải trả lời bằng văn bản nêu rõ lý do;",
+        "actor": "authority",
+        "channel_hint": null,
+        "time_hint": "03 ngày làm việc"
+      },
+      {
+        "step_id": "step_4",
+        "title": "c)",
+        "content": "c) Cơ quan cấp lại văn bằng, chứng chỉ sử dụng mẫu văn bằng, chứng chỉ hiện hành để cấp lại văn bằng, chứng chỉ (đối với cấp lại dưới dạng văn bằng, chứng chỉ giấy).",
+        "actor": "authority",
+        "channel_hint": null,
+        "time_hint": null
+      }
+    ],
+    "step_count": 4,
+    "notes": []
+  },
+  "eligibility": {
+    "conditions": [
+      "Văn bằng, chứng chỉ đã cấp nhưng phát hiện bị viết sai do lỗi của cơ quan cấp văn bằng, chứng chỉ."
+    ],
+    "has_conditions": true
+  },
+  "results": {
+    "items": [
+      {
+        "name": "Văn bằng, chứng chỉ (cấp lại)",
+        "result_code": "KQ.G03.000488",
+        "raw_text": "Văn bằng, chứng chỉ (cấp lại)"
+      }
+    ],
+    "primary_result": {
+      "name": "Văn bằng, chứng chỉ (cấp lại)",
+      "result_code": "KQ.G03.000488",
+      "raw_text": "Văn bằng, chứng chỉ (cấp lại)"
+    }
+  },
+  "legal_basis": {
+    "items": [
+      {
+        "title": "Ban hành Quy chế văn bằng, chứng chỉ của hệ thống giáo dục quốc dân",
+        "code": "10/2026/TT-BGDĐT"
+      }
+    ],
+    "count": 1
+  },
+  "attachments": [
+    {
+      "label": "Muphiucpbnsaocplichnhsanidungvnbngchngch.docx",
+      "path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/2_002850/Muphiucpbnsaocplichnhsanidungvnbngchngch.docx",
+      "source_section": "Thành phần hồ sơ",
+      "document_name": "Phiếu đề nghị cấp lại văn bằng, chứng chỉ (theo Mẫu tại Phụ lục VI ban hành kèm theo Thông tư số 10/2026/TT-BGDĐT, đính kèm theo Quyết định này)"
+    }
+  ],
+  "signals": {
+    "raw_parse_warnings": [],
+    "missing_documents": false,
+    "documents_section_present": true,
+    "documents_declared_empty": false,
+    "documents_only_in_notes": false,
+    "missing_results": false
+  }
+}

@@ -1,0 +1,639 @@
+{
+  "schema_version": "3.0",
+  "record_type": "public_service_procedure_payload",
+  "id": "procedure-1.115223",
+  "procedure_code": "1.115223",
+  "code": "1.115223",
+  "title": "Đăng ký, cấp giấy chứng nhận đối với thửa đất có diện tích tăng thêm do thay đổi ranh giới so với giấy chứng nhận đã cấp (Cấp xã)",
+  "language": "vi",
+  "status": "generated_from_pipeline",
+  "field": "Đất đai",
+  "group_key": "dien_luc_nha_o_dat_dai",
+  "workflow_family": null,
+  "subflow": null,
+  "source": {
+    "source_url": "file:///C:/Users/ku060/Downloads/VAIC%20source/data-pipeline/raw_data/1_115223/1_115223_procedure_detail.md",
+    "source_markdown_path": "C:\\Users\\ku060\\Downloads\\VAIC source\\data-pipeline\\raw_data\\1_115223\\1_115223_procedure_detail.md",
+    "normalized_payload_path": "C:\\Users\\ku060\\Downloads\\VAIC source\\data-pipeline\\govease-unified\\data\\normalized_structured\\1_115223_normalized_structured.json",
+    "enriched_payload_path": "C:\\Users\\ku060\\Downloads\\VAIC source\\data-pipeline\\govease-unified\\data\\enriched_structured_priority\\1_115223_enriched_structured.json"
+  },
+  "scope": {
+    "included": "Thủ tục này thuộc nhóm đất đai và nhà ở, thường dùng để cấp, đổi hoặc cập nhật giấy chứng nhận và thông tin tài sản gắn liền với đất. Kết quả thường nhận được là Giấy chứng nhận. Thời gian xử lý tham khảo: 15 ngày làm việc.",
+    "not_included": []
+  },
+  "agency": {
+    "executing_agency": null,
+    "submission_place": null,
+    "receiving_places": []
+  },
+  "target_users": [
+    "Công dân Việt Nam"
+  ],
+  "submission_methods": [
+    {
+      "code": "IN_PERSON",
+      "label": "Trực tiếp",
+      "processing_time": "15 ngày làm việc",
+      "fee": null,
+      "description": "Đối với các xã miền núi, hải đảo, vùng sâu, vùng xa, vùng có điều kiện kinh tế - xã hội khó khăn, vùng có điều kiện kinh tế - xã hội đặc biệt khó khăn thì thời gian thực hiện không quá 20 ngày làm việc."
+    },
+    {
+      "code": "ONLINE",
+      "label": "Trực tuyến",
+      "processing_time": "15 ngày làm việc",
+      "fee": null,
+      "description": "Đối với các xã miền núi, hải đảo, vùng sâu, vùng xa, vùng có điều kiện kinh tế - xã hội khó khăn, vùng có điều kiện kinh tế - xã hội đặc biệt khó khăn thì thời gian thực hiện không quá 20 ngày làm việc."
+    },
+    {
+      "code": "POSTAL",
+      "label": "Dịch vụ bưu chính",
+      "processing_time": "15 ngày làm việc",
+      "fee": null,
+      "description": "Đối với các xã miền núi, hải đảo, vùng sâu, vùng xa, vùng có điều kiện kinh tế - xã hội khó khăn, vùng có điều kiện kinh tế - xã hội đặc biệt khó khăn thì thời gian thực hiện không quá 20 ngày làm việc."
+    }
+  ],
+  "processing_note": "Thời gian xử lý tham chiếu: 15 ngày làm việc. Nên chuẩn bị trước thông tin thửa đất, tài sản hoặc địa điểm tiếp nhận, rồi chọn kênh nộp phù hợp: Trực tiếp, Trực tuyến, Dịch vụ bưu chính. Hiện có khoảng 6 mục giấy tờ cần theo dõi trong checklist.",
+  "documents": {
+    "normally_required": [
+      {
+        "name": "Mẫu số 28. Đơn đăng ký biến động đất đai, tài sản gắn liền với đất theo quy định.",
+        "quantity": "1 bản chính, 0 bản sao",
+        "notes": [],
+        "group": "default",
+        "attachment_path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/1_115223/M%E1%BA%ABu%20s%E1%BB%91%2028.%20%C4%91%C6%A1n%20bi%E1%BA%BFn%20%C4%91%E1%BB%99ng%20%C4%91%E1%BA%A5t%20%C4%91ai.docx"
+      },
+      {
+        "name": "Giấy chứng nhận đã cấp (bản gốc).",
+        "quantity": "1 bản chính, 0 bản sao",
+        "notes": [],
+        "group": "default",
+        "attachment_path": null
+      },
+      {
+        "name": "Tờ khai thuế theo quy định của pháp luật thuế hiện hành",
+        "quantity": "1 bản chính, 0 bản sao",
+        "notes": [],
+        "group": "default",
+        "attachment_path": null
+      }
+    ],
+    "conditional": [
+      {
+        "condition": "Mảnh trích đo bản đồ địa chính thửa đất (nếu có).",
+        "document": "Mảnh trích đo bản đồ địa chính thửa đất (nếu có).",
+        "quantity": "1 bản chính, 0 bản sao",
+        "notes": [],
+        "attachment_path": null
+      },
+      {
+        "condition": "Giấy tờ chứng minh phần diện tích tăng thêm (nếu có).",
+        "document": "Giấy tờ chứng minh phần diện tích tăng thêm (nếu có).",
+        "quantity": "1 bản chính, 0 bản sao",
+        "notes": [],
+        "attachment_path": null
+      },
+      {
+        "condition": "Văn bản về việc đại diện theo quy định của pháp luật về dân sự đối với trường hợp thực hiện thủ tục đăng ký đất đai, tài sản gắn liền với đất thông qua người đại diện",
+        "document": "Văn bản về việc đại diện theo quy định của pháp luật về dân sự đối với trường hợp thực hiện thủ tục đăng ký đất đai, tài sản gắn liền với đất thông qua người đại diện",
+        "quantity": "1 bản chính, 0 bản sao",
+        "notes": [],
+        "attachment_path": null
+      }
+    ],
+    "forms": [
+      {
+        "name": "Mẫu số 28. Đơn đăng ký biến động đất đai, tài sản gắn liền với đất theo quy định.",
+        "attachment_label": "Mẫu số 28. đơn biến động đất đai.docx",
+        "attachment_path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/1_115223/M%E1%BA%ABu%20s%E1%BB%91%2028.%20%C4%91%C6%A1n%20bi%E1%BA%BFn%20%C4%91%E1%BB%99ng%20%C4%91%E1%BA%A5t%20%C4%91ai.docx"
+      }
+    ],
+    "presented": [],
+    "notes": [],
+    "summary": [
+      {
+        "group": "default",
+        "name": "Mẫu số 28. Đơn đăng ký biến động đất đai, tài sản gắn liền với đất theo quy định.",
+        "quantity": "1 bản chính, 0 bản sao",
+        "notes": [],
+        "attachment_path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/1_115223/M%E1%BA%ABu%20s%E1%BB%91%2028.%20%C4%91%C6%A1n%20bi%E1%BA%BFn%20%C4%91%E1%BB%99ng%20%C4%91%E1%BA%A5t%20%C4%91ai.docx"
+      },
+      {
+        "group": "default",
+        "name": "Giấy chứng nhận đã cấp (bản gốc).",
+        "quantity": "1 bản chính, 0 bản sao",
+        "notes": [],
+        "attachment_path": null
+      },
+      {
+        "group": "default",
+        "name": "Tờ khai thuế theo quy định của pháp luật thuế hiện hành",
+        "quantity": "1 bản chính, 0 bản sao",
+        "notes": [],
+        "attachment_path": null
+      },
+      {
+        "group": null,
+        "name": null,
+        "quantity": "1 bản chính, 0 bản sao",
+        "notes": [],
+        "attachment_path": null
+      },
+      {
+        "group": null,
+        "name": null,
+        "quantity": "1 bản chính, 0 bản sao",
+        "notes": [],
+        "attachment_path": null
+      },
+      {
+        "group": null,
+        "name": null,
+        "quantity": "1 bản chính, 0 bản sao",
+        "notes": [],
+        "attachment_path": null
+      },
+      {
+        "group": null,
+        "name": "Mẫu số 28. Đơn đăng ký biến động đất đai, tài sản gắn liền với đất theo quy định.",
+        "quantity": null,
+        "notes": null,
+        "attachment_path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/1_115223/M%E1%BA%ABu%20s%E1%BB%91%2028.%20%C4%91%C6%A1n%20bi%E1%BA%BFn%20%C4%91%E1%BB%99ng%20%C4%91%E1%BA%A5t%20%C4%91ai.docx"
+      }
+    ]
+  },
+  "steps": [
+    {
+      "order": 1,
+      "title": "Bước 1",
+      "description": "1. **Bước 1: Người yêu cầu đăng ký đối với trường hợp thửa đất gốc đã có Giấy chứng nhận, phần diện tích đất tăng thêm chưa được cấp Giấy chứng nhận hoặc thuộc trường hợp hộ gia đình, cá nhân đã được cấp giấy chứng nhận đối với một phần diện tích của thửa đất, phần diện tích còn lại chưa đủ điều kiện cấp giấy chứng nhận theo quy định của pháp luật tại thời điểm cấp giấy chứng nhận trước đây mà nay đủ điều kiện cấp Giấy chứng nhận quyền sử dụng đất, quyền sở hữu tài sản gắn liền với đất thì nộp hồ sơ đến Trung tâm Phục vụ hành chính công xã, phường nơi có đất.**",
+      "example": null
+    },
+    {
+      "order": 2,
+      "title": "Bước 2",
+      "description": "- Khi nộp hồ sơ, người yêu cầu đăng ký được lựa chọn nộp bản sao giấy tờ và xuất trình bản chính để cán bộ tiếp nhận hồ sơ kiểm tra đối chiếu hoặc nộp bản chính giấy tờ hoặc nộp bản sao giấy tờ đã có công chứng hoặc chứng thực; trường hợp nộp hồ sơ theo hình thức trực tuyến thì hồ sơ nộp phải được số hóa từ bản chính hoặc bản sao giấy tờ đã được công chứng, chứng thực.",
+      "example": "trực tuyến"
+    },
+    {
+      "order": 3,
+      "title": "Bước 3",
+      "description": "- Trường hợp nộp bản sao hoặc bản số hóa các loại giấy tờ thì khi nhận kết quả giải quyết thủ tục hành chính người yêu cầu đăng ký phải nộp bản chính các giấy tờ thuộc thành phần hồ sơ theo quy định.",
+      "example": null
+    },
+    {
+      "order": 4,
+      "title": "Bước 4",
+      "description": "2. **Bước 2: Cơ quan tiếp nhận hồ sơ thực hiện:**",
+      "example": null
+    },
+    {
+      "order": 5,
+      "title": "Bước 5",
+      "description": "- Kiểm tra tính đầy đủ của thành phần hồ sơ; cấp Giấy tiếp nhận hồ sơ và hẹn trả kết quả.",
+      "example": null
+    },
+    {
+      "order": 6,
+      "title": "Bước 6",
+      "description": "- Trường hợp chưa đầy đủ thành phần hồ sơ thì trả hồ sơ kèm Phiếu yêu cầu bổ sung, hoàn thiện hồ sơ để người yêu cầu đăng ký hoàn thiện, bổ sung theo quy định.",
+      "example": null
+    },
+    {
+      "order": 7,
+      "title": "Bước 7",
+      "description": "- Giấy tiếp nhận hồ sơ và hẹn trả kết quả và Phiếu yêu cầu bổ sung, hoàn thiện hồ sơ thực hiện theo mẫu quy định về thực hiện cơ chế một cửa, một cửa liên thông trong giải quyết thủ tục hành chính.",
+      "example": null
+    },
+    {
+      "order": 8,
+      "title": "Bước 8",
+      "description": "3. **Bước 3: Chủ tịch Ủy ban nhân dân cấp xã nơi có đất tổ chức thực hiện như sau:**",
+      "example": null
+    },
+    {
+      "order": 9,
+      "title": "Bước 9",
+      "description": "- Trích lục bản đồ địa chính đối với nơi đã có bản đồ địa chính.",
+      "example": null
+    },
+    {
+      "order": 10,
+      "title": "Bước 10",
+      "description": "- Đối với nơi chưa có bản đồ địa chính và trong hồ sơ đăng ký, cấp Giấy chứng nhận quyền sử dụng đất, quyền sở hữu tài sản gắn liền với đất đã có mảnh trích đo bản đồ địa chính thì kiểm tra, ký xác nhận mảnh trích đo bản đồ địa chính theo quy định, trừ trường hợp mảnh trích đo bản đồ địa chính đã được Ủy ban nhân dân cấp xã xác nhận hoặc Chi nhánh Văn phòng đăng ký đất đai kiểm tra, ký duyệt trước ngày 01 tháng 7 năm 2025; trường hợp trong hồ sơ đăng ký, cấp Giấy chứng nhận quyền sử dụng đất, quyền sở hữu tài sản gắn liền với đất chưa có mảnh trích đo bản đồ địa chính thì đề nghị đơn vị đo đạc có Giấy phép về hoạt động đo đạc, thành lập bản đồ địa chính thực hiện việc trích đo bản đồ địa chính; đơn vị đo đạc có trách nhiệm thực hiện trích đo bản đồ địa chính trong thời gian không quá 05 ngày làm việc kể từ ngày nhận được đề nghị của cấp xã, người sử dụng đất phải trả chi phí theo quy định.",
+      "example": "01 tháng"
+    },
+    {
+      "order": 11,
+      "title": "Bước 11",
+      "description": "- Rà soát hiện trạng sử dụng đất có hay không có nhà ở, công trình xây dựng; tình trạng tranh chấp đất đai, tài sản gắn liền với đất; việc rà soát tình trạng tranh chấp đất đai, tài sản gắn liền với đất được thực hiện căn cứ vào việc Ủy ban nhân dân cấp xã đang thụ lý đơn yêu cầu hòa giải tranh chấp đất đai, tài sản gắn liền với đất hoặc đơn yêu cầu giải quyết tranh chấp đất đai, tài sản gắn liền với đất hoặc nhận được văn bản hoặc thông báo của cơ quan có thẩm quyền về việc thụ lý đơn yêu cầu giải quyết tranh chấp đất đai, tài sản gắn liền với đất.",
+      "example": null
+    },
+    {
+      "order": 12,
+      "title": "Bước 12",
+      "description": "- Ngoài nội dung rà soát hiện trạng sử dụng đất có hay không có nhà ở, công trình xây dựng; tình trạng tranh chấp đất đai, tài sản gắn liền với đất, căn cứ vào trường hợp cụ thể thì rà soát các nội dung sau:",
+      "example": null
+    },
+    {
+      "order": 13,
+      "title": "Bước 13",
+      "description": "+ Trường hợp có giấy tờ về quyền sử dụng đất quy định tại khoản 7 Điều 137 Luật Đất đai thì thực hiện xác định đất sử dụng ổn định theo quy định tại khoản 38 Điều 3 Luật Đất đai.",
+      "example": null
+    },
+    {
+      "order": 14,
+      "title": "Bước 14",
+      "description": "+ Trường hợp không có giấy tờ về quyền sử dụng đất theo quy định tại Điều 137 Luật Đất đai thì xác định nguồn gốc sử dụng đất; xác định việc sử dụng đất ổn định theo quy định tại khoản 38 Điều 3 Luật Đất đai. Việc xác nhận sử dụng đất ổn định được căn cứ vào thời gian và mục đích sử dụng đất tại một trong các giấy tờ sau đây:",
+      "example": null
+    },
+    {
+      "order": 15,
+      "title": "Bước 15",
+      "description": "Biên lai nộp thuế sử dụng đất nông nghiệp, thuế nhà đất;",
+      "example": null
+    },
+    {
+      "order": 16,
+      "title": "Bước 16",
+      "description": "Biên bản hoặc quyết định xử phạt vi phạm hành chính trong việc sử dụng đất, biên bản hoặc quyết định xử phạt vi phạm hành chính trong việc xây dựng công trình gắn liền với đất;",
+      "example": null
+    },
+    {
+      "order": 17,
+      "title": "Bước 17",
+      "description": "Quyết định hoặc bản án của Tòa án nhân dân đã có hiệu lực thi hành, quyết định về thi hành án của cơ quan Thi hành án đã được thi hành về tài sản gắn liền với đất;",
+      "example": null
+    },
+    {
+      "order": 18,
+      "title": "Bước 18",
+      "description": "Giấy tờ nộp tiền điện, nước và các khoản nộp khác có địa chỉ thuộc thửa đất phải xác định;",
+      "example": null
+    },
+    {
+      "order": 19,
+      "title": "Bước 19",
+      "description": "Giấy tờ về giao đất không đúng thẩm quyền hoặc giấy tờ về việc mua, nhận thanh lý, hóa giá, phân phối nhà ở, công trình xây dựng gắn liền với đất theo quy định tại Điều 140 Luật Đất đai;",
+      "example": null
+    },
+    {
+      "order": 20,
+      "title": "Bước 20",
+      "description": "Giấy tờ về mua bán nhà, tài sản khác gắn liền với đất hoặc giấy tờ về mua bán đất, chuyển nhượng quyền sử dụng đất có chữ ký của các bên liên quan từ ngày 15 tháng 10 năm 1993 trở về sau;",
+      "example": "15 tháng"
+    },
+    {
+      "order": 21,
+      "title": "Bước 21",
+      "description": "Bản đồ, tài liệu điều tra, đo đạc về đất đai; sổ mục kê, sổ kiến điền được lập từ ngày 18 tháng 12 năm 1980 trở về sau;",
+      "example": "18 tháng"
+    },
+    {
+      "order": 22,
+      "title": "Bước 22",
+      "description": "Giấy tờ về việc kê khai, đăng ký nhà, đất có xác nhận của Ủy ban nhân dân cấp xã, cấp huyện hoặc cấp tỉnh tại thời điểm kê khai kể từ ngày 15 tháng 10 năm 1993 trở về sau;",
+      "example": "15 tháng"
+    },
+    {
+      "order": 23,
+      "title": "Bước 23",
+      "description": "Giấy tờ về việc đăng ký thường trú, tạm trú tại nhà ở gắn với đất ở do cơ quan có thẩm quyền cấp;",
+      "example": null
+    },
+    {
+      "order": 24,
+      "title": "Bước 24",
+      "description": "+ Trường hợp không có giấy tờ về quyền sử dụng đất theo quy định tại Điều 137 Luật Đất đai mà không có một trong các thông tin, giấy tờ tại nội dung nêu trên hoặc trên giấy tờ, thông tin đó không ghi rõ thời điểm xác lập giấy tờ, thời điểm xác lập thông tin và mục đích sử dụng đất được thực hiện trên cơ sở nội dung kê khai của người sử dụng đất và hiện trạng sử dụng đất.",
+      "example": null
+    },
+    {
+      "order": 25,
+      "title": "Bước 25",
+      "description": "+ Trường hợp không có giấy tờ về quyền sử dụng đất theo quy định tại Điều 137 Luật Đất đai và thời điểm bắt đầu sử dụng đất thể hiện trên các loại giấy tờ có sự không thống nhất thì thời điểm bắt đầu sử dụng đất được xác định theo giấy tờ hoặc thông tin có ngày, tháng, năm sử dụng đất sớm nhất.",
+      "example": null
+    },
+    {
+      "order": 26,
+      "title": "Bước 26",
+      "description": "+ Trường hợp đề nghị công nhận vào mục đích đất phi nông nghiệp quy định tại điểm d khoản 1, điểm d khoản 2, điểm d khoản 3 Điều 138 Luật Đất đai, khoản 3 Điều 25, điểm c khoản 1 và điểm c khoản 2 Điều 26 Nghị định số 101/2024/NĐ-CP và trường hợp quy định tại điểm a khoản 3 Điều 139 Luật Đất đai mà không thuộc khoản 5 Điều 25 Nghị định số 101/2024/NĐ-CP, khoản 2 và khoản 3 Điều 140 Luật Đất đai thì kiểm tra sự phù hợp với quy hoạch sử dụng đất cấp huyện hoặc quy hoạch sử dụng đất cấp xã hoặc một trong các quy hoạch theo quy định của pháp luật về quy hoạch đô thị và nông thôn; trường hợp quy định tại khoản 4 Điều 140 Luật Đất đai thì kiểm tra sự phù hợp với quy hoạch sử dụng đất;",
+      "example": null
+    },
+    {
+      "order": 27,
+      "title": "Bước 27",
+      "description": "+ Trường hợp quy định khoản 1 Điều 139 Luật Đất đai thì kiểm tra sự phù hợp với quy hoạch sử dụng đất, quy hoạch xây dựng.",
+      "example": null
+    },
+    {
+      "order": 28,
+      "title": "Bước 28",
+      "description": "+ Trường hợp quy định tại điểm a khoản 2 Điều 139 Luật Đất đai thì kiểm tra sự phù hợp với quy hoạch lâm nghiệp đối với rừng đặc dụng, rừng phòng hộ.",
+      "example": null
+    },
+    {
+      "order": 29,
+      "title": "Bước 29",
+      "description": "+ Trường hợp quy định tại điểm b khoản 2 Điều 139 Luật Đất đai thì kiểm tra sự phù hợp với quy hoạch sử dụng đất cho mục đích xây dựng công trình hạ tầng công cộng.",
+      "example": null
+    },
+    {
+      "order": 30,
+      "title": "Bước 30",
+      "description": "+Trường hợp quy định tại điểm c khoản 2 Điều 139 Luật Đất đai thì kiểm tra sự phù hợp quy hoạch lâm nghiệp đối với rừng đặc dụng, rừng phòng hộ, quy hoạch sử dụng đất cho mục đích xây dựng công trình hạ tầng công cộng, kiểm tra thêm sự phù hợp với quy hoạch sử dụng đất cấp huyện hoặc quy hoạch sử dụng đất cấp xã hoặc một trong các quy hoạch theo quy định của pháp luật về quy hoạch đô thị và nông thôn đối với trường hợp quy định tại điểm c khoản 2 Điều 26 Nghị định số 101/2024/NĐ-CP;",
+      "example": null
+    },
+    {
+      "order": 31,
+      "title": "Bước 31",
+      "description": "- Khi kiểm tra sự phù hợp với quy hoạch thì căn cứ vào quy hoạch có hiệu lực tại thời điểm xác nhận.",
+      "example": null
+    },
+    {
+      "order": 32,
+      "title": "Bước 32",
+      "description": "- Trường hợp người sử dụng đất, chủ sở hữu tài sản gắn liền với đất có nhu cầu chứng nhận quyền sở hữu nhà ở, công trình xây dựng thuộc trường hợp phải xin phép xây dựng quy định tại khoản 3 Điều 148, khoản 3 Điều 149 Luật Đất đai mà không có giấy xác nhận của cơ quan có chức năng quản lý về xây dựng cấp huyện trước ngày 01 tháng 7 năm 2025 về đủ điều kiện tồn tại nhà ở, công trình xây dựng đó theo quy định của pháp luật về xây dựng thì không thực hiện việc xác định việc đủ điều kiện tồn tại nhà ở, công trình xây dựng, việc đủ điều kiện tồn tại nhà ở, công trình xây dựng do chủ sở hữu công trình chịu trách nhiệm.",
+      "example": "01 tháng"
+    },
+    {
+      "order": 33,
+      "title": "Bước 33",
+      "description": "- Thực hiện niêm yết công khai các nội dung rà soát theo quy định tại trụ sở Ủy ban nhân dân cấp xã, khu dân cư nơi có đất, tài sản gắn liền với đất trong thời gian 15 ngày, đồng thời thực hiện xem xét giải quyết các ý kiến phản ánh về nội dung đã công khai (nếu có).",
+      "example": "15 ngày"
+    },
+    {
+      "order": 34,
+      "title": "Bước 34",
+      "description": "- Kiểm tra việc đủ điều kiện hay không đủ điều kiện được cấp Giấy chứng nhận quyền sử dụng đất, quyền sở hữu tài sản gắn liền với đất theo quy định của pháp luật về đất đai;",
+      "example": null
+    },
+    {
+      "order": 35,
+      "title": "Bước 35",
+      "description": "- Gửi Phiếu chuyển thông tin để xác định nghĩa vụ tài chính về đất đai theo Mẫu số 26 ban hành kèm theo Quyết định 18/2026/QĐ-UBND ngày 19 tháng 6 năm 2026 của Ủy ban nhân dân thành phố đến cơ quan thuế để xác định và thông báo thu nghĩa vụ tài chính đối với trường hợp phải thực hiện nghĩa vụ tài chính theo quy định của pháp luật.",
+      "example": "19 tháng"
+    },
+    {
+      "order": 36,
+      "title": "Bước 36",
+      "description": "- Thực hiện cấp Giấy chứng nhận đối với toàn bộ diện tích thửa đất.",
+      "example": null
+    },
+    {
+      "order": 37,
+      "title": "Bước 37",
+      "description": "- Đối với trường hợp phải thực hiện nghĩa vụ tài chính thì thực hiện các công việc tại điểm này sau khi có thông tin từ cơ sở dữ liệu được liên thông hoặc chứng từ hoặc giấy tờ chứng minh đã hoàn thành nghĩa vụ tài chính.",
+      "example": null
+    },
+    {
+      "order": 38,
+      "title": "Bước 38",
+      "description": "- Chuyển hồ sơ đến Chi nhánh Văn phòng đăng ký đất đai để lập, cập nhật, chỉnh lý hồ sơ địa chính, cơ sở dữ liệu đất đai.",
+      "example": null
+    },
+    {
+      "order": 39,
+      "title": "Bước 39",
+      "description": "- Chuyển Giấy chứng nhận đến Trung tâm Phục vụ hành chính công để trao cho người được cấp hoặc gửi cơ quan tiếp nhận hồ sơ để trao cho người được cấp.",
+      "example": null
+    }
+  ],
+  "input_fields": [
+    {
+      "field": "property_or_service_need",
+      "label": "Nhu cầu về đất đai, nhà ở hoặc điện lực",
+      "type": "string",
+      "required": true
+    },
+    {
+      "field": "property_location",
+      "label": "Địa điểm tài sản hoặc nơi sử dụng dịch vụ",
+      "type": "string",
+      "required": true
+    },
+    {
+      "field": "submission_channel_preference",
+      "label": "Kênh nộp dự kiến",
+      "type": "enum",
+      "required": false,
+      "options": [
+        "Trực tiếp",
+        "Trực tuyến",
+        "Dịch vụ bưu chính"
+      ]
+    },
+    {
+      "field": "has_current_certificate",
+      "label": "Đã có giấy tờ/tài liệu hiện trạng",
+      "type": "boolean",
+      "required": false
+    },
+    {
+      "field": "certificate_status",
+      "label": "Tình trạng giấy chứng nhận hiện tại",
+      "type": "enum",
+      "required": false
+    },
+    {
+      "field": "land_plot_identifier",
+      "label": "Thông tin thửa đất",
+      "type": "string",
+      "required": false
+    }
+  ],
+  "validation_rules": [
+    {
+      "id": "required-1",
+      "severity": "error",
+      "field": "property_or_service_need",
+      "rule": "Trường bắt buộc phải có dữ liệu hợp lệ trước khi nộp.",
+      "message": "Thiếu trường bắt buộc: Nhu cầu về đất đai, nhà ở hoặc điện lực."
+    },
+    {
+      "id": "required-2",
+      "severity": "error",
+      "field": "property_location",
+      "rule": "Trường bắt buộc phải có dữ liệu hợp lệ trước khi nộp.",
+      "message": "Thiếu trường bắt buộc: Địa điểm tài sản hoặc nơi sử dụng dịch vụ."
+    },
+    {
+      "id": "hint-1",
+      "severity": "warning",
+      "field": "general",
+      "rule": "Nên xác định trước kênh nộp hồ sơ để biết có cần bản giấy, bản điện tử hay xuất trình trực tiếp.",
+      "message": "Nên xác định trước kênh nộp hồ sơ để biết có cần bản giấy, bản điện tử hay xuất trình trực tiếp."
+    },
+    {
+      "id": "hint-2",
+      "severity": "warning",
+      "field": "general",
+      "rule": "Có mẫu biểu đính kèm, nên kiểm tra đúng biểu mẫu trước khi nộp.",
+      "message": "Có mẫu biểu đính kèm, nên kiểm tra đúng biểu mẫu trước khi nộp."
+    },
+    {
+      "id": "hint-3",
+      "severity": "warning",
+      "field": "general",
+      "rule": "Nên đối chiếu trước thông tin thửa đất, tài sản hoặc hiện trạng hồ sơ để tránh bị yêu cầu chỉnh sửa.",
+      "message": "Nên đối chiếu trước thông tin thửa đất, tài sản hoặc hiện trạng hồ sơ để tránh bị yêu cầu chỉnh sửa."
+    }
+  ],
+  "common_errors": [
+    {
+      "field": "general",
+      "issue": "Điền sai mẫu tờ khai hoặc chọn sai biểu mẫu đi kèm.",
+      "fix": "Nên xác định trước kênh nộp hồ sơ để biết có cần bản giấy, bản điện tử hay xuất trình trực tiếp."
+    },
+    {
+      "field": "general",
+      "issue": "Thông tin thửa đất, tài sản hoặc giấy chứng nhận chưa khớp với hồ sơ hiện có.",
+      "fix": "Nên xác định trước kênh nộp hồ sơ để biết có cần bản giấy, bản điện tử hay xuất trình trực tiếp."
+    }
+  ],
+  "clarifying_questions": [
+    {
+      "id": "clarify_1",
+      "question": "Bạn đang xử lý nhu cầu nào về đất đai, nhà ở hoặc điện lực?",
+      "purpose": "workflow_intake"
+    },
+    {
+      "id": "clarify_2",
+      "question": "Bạn đã có thông tin thửa đất, địa chỉ tài sản hoặc giấy tờ hiện trạng chưa?",
+      "purpose": "workflow_intake"
+    }
+  ],
+  "legal_basis": [
+    {
+      "title": "Luật Đất đai số 31/2024/QH15 ngày 18/01/2024 được sửa đổi bổ sung một số điều bởi Luật số 43/2024/QH15, Luật số 47/2024/QH15 và Luật số 58/2024/QH15 của Quốc hội.",
+      "code": "31/2024/QH15"
+    },
+    {
+      "title": "Quy định một số cơ chế, chính sách tháo gỡ khó khăn vướng mắc trong tổ chức thi hành Luật Đất đai",
+      "code": "254/2025/QH15"
+    },
+    {
+      "title": "Quy định trình tự, thủ tục hành chính về đất đai áp dụng trên địa bàn thành phố Đồng Nai",
+      "code": "18/2026/QĐ-UBND"
+    },
+    {
+      "title": "Quyết định về việc ủy quyền cho Ủy ban nhân dân cấp xã thực hiện một số nhiệm vụ quản lý nhà nước trong lĩnh vực đất đai trên địa bàn tỉnh Đồng Nai (nay là thành phố Đồng Nai)",
+      "code": "1370/QĐ-UBND"
+    },
+    {
+      "title": "quy định chi tiết và hướng dẫn một số điều của Nghị quyết số 254/2025/QH15 của Quốc hội quy định một số cơ chế, chính sách tháo gỡ khó khăn vướng mắc trong tổ chức thi hành Luật Đất đai",
+      "code": "49/2026/NĐ-CP"
+    }
+  ],
+  "legal_bases": [
+    {
+      "title": "Luật Đất đai số 31/2024/QH15 ngày 18/01/2024 được sửa đổi bổ sung một số điều bởi Luật số 43/2024/QH15, Luật số 47/2024/QH15 và Luật số 58/2024/QH15 của Quốc hội.",
+      "code": "31/2024/QH15"
+    },
+    {
+      "title": "Quy định một số cơ chế, chính sách tháo gỡ khó khăn vướng mắc trong tổ chức thi hành Luật Đất đai",
+      "code": "254/2025/QH15"
+    },
+    {
+      "title": "Quy định trình tự, thủ tục hành chính về đất đai áp dụng trên địa bàn thành phố Đồng Nai",
+      "code": "18/2026/QĐ-UBND"
+    },
+    {
+      "title": "Quyết định về việc ủy quyền cho Ủy ban nhân dân cấp xã thực hiện một số nhiệm vụ quản lý nhà nước trong lĩnh vực đất đai trên địa bàn tỉnh Đồng Nai (nay là thành phố Đồng Nai)",
+      "code": "1370/QĐ-UBND"
+    },
+    {
+      "title": "quy định chi tiết và hướng dẫn một số điều của Nghị quyết số 254/2025/QH15 của Quốc hội quy định một số cơ chế, chính sách tháo gỡ khó khăn vướng mắc trong tổ chức thi hành Luật Đất đai",
+      "code": "49/2026/NĐ-CP"
+    }
+  ],
+  "faq": [
+    {
+      "question": "Có thể nộp qua kênh nào?",
+      "answer": "Các kênh hiện có: Trực tiếp, Trực tuyến, Dịch vụ bưu chính."
+    },
+    {
+      "question": "Thời gian xử lý tham chiếu là bao lâu?",
+      "answer": "Thời gian xử lý tham chiếu hiện có là 15 ngày làm việc."
+    },
+    {
+      "question": "Kết quả chính của thủ tục là gì?",
+      "answer": "Kết quả chính được trích xuất là Giấy chứng nhận."
+    }
+  ],
+  "guidance": {
+    "highlight_documents": [
+      {
+        "bucket": "required",
+        "name": "Mẫu số 28. Đơn đăng ký biến động đất đai, tài sản gắn liền với đất theo quy định.",
+        "conditions": [],
+        "attachment_path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/1_115223/M%E1%BA%ABu%20s%E1%BB%91%2028.%20%C4%91%C6%A1n%20bi%E1%BA%BFn%20%C4%91%E1%BB%99ng%20%C4%91%E1%BA%A5t%20%C4%91ai.docx"
+      },
+      {
+        "bucket": "required",
+        "name": "Giấy chứng nhận đã cấp (bản gốc).",
+        "conditions": [],
+        "attachment_path": null
+      },
+      {
+        "bucket": "required",
+        "name": "Tờ khai thuế theo quy định của pháp luật thuế hiện hành",
+        "conditions": [],
+        "attachment_path": null
+      },
+      {
+        "bucket": "conditional",
+        "name": "Mảnh trích đo bản đồ địa chính thửa đất (nếu có).",
+        "conditions": [
+          "Mảnh trích đo bản đồ địa chính thửa đất (nếu có)."
+        ],
+        "attachment_path": null
+      },
+      {
+        "bucket": "conditional",
+        "name": "Giấy tờ chứng minh phần diện tích tăng thêm (nếu có).",
+        "conditions": [
+          "Giấy tờ chứng minh phần diện tích tăng thêm (nếu có)."
+        ],
+        "attachment_path": null
+      },
+      {
+        "bucket": "conditional",
+        "name": "Văn bản về việc đại diện theo quy định của pháp luật về dân sự đối với trường hợp thực hiện thủ tục đăng ký đất đai, tài sản gắn liền với đất thông qua người đại diện",
+        "conditions": [
+          "Văn bản về việc đại diện theo quy định của pháp luật về dân sự đối với trường hợp thực hiện thủ tục đăng ký đất đai, tài sản gắn liền với đất thông qua người đại diện"
+        ],
+        "attachment_path": null
+      }
+    ],
+    "special_cases": [
+      "Có thể cần đối chiếu thông tin thửa đất hoặc giấy chứng nhận"
+    ],
+    "common_errors": [
+      "Điền sai mẫu tờ khai hoặc chọn sai biểu mẫu đi kèm.",
+      "Thông tin thửa đất, tài sản hoặc giấy chứng nhận chưa khớp với hồ sơ hiện có."
+    ],
+    "validation_hints": [
+      "Nên xác định trước kênh nộp hồ sơ để biết có cần bản giấy, bản điện tử hay xuất trình trực tiếp.",
+      "Có mẫu biểu đính kèm, nên kiểm tra đúng biểu mẫu trước khi nộp.",
+      "Nên đối chiếu trước thông tin thửa đất, tài sản hoặc hiện trạng hồ sơ để tránh bị yêu cầu chỉnh sửa."
+    ]
+  },
+  "next_steps": {
+    "summary": "Nên chuẩn bị trước thông tin thửa đất, tài sản hoặc địa điểm tiếp nhận, rồi chọn kênh nộp phù hợp: Trực tiếp, Trực tuyến, Dịch vụ bưu chính. Hiện có khoảng 6 mục giấy tờ cần theo dõi trong checklist.",
+    "time_badge": "15 ngày làm việc",
+    "result_label": "Giấy chứng nhận",
+    "primary_channel": "in_person",
+    "channels": [
+      "in_person",
+      "online",
+      "postal"
+    ]
+  },
+  "notes": [],
+  "provenance": {
+    "pipeline": "raw->structured->normalized->enriched->ui_api_payload",
+    "normalizer_version": "0.2.0",
+    "enricher_version": "0.2.0",
+    "mapping_notes": "excluded_from_clean_workflow_dataset",
+    "supported_group": true
+  }
+}

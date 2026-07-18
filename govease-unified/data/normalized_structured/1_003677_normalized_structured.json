@@ -1,0 +1,225 @@
+{
+  "schema_version": "1.0",
+  "normalizer_version": "0.2.0",
+  "source": {
+    "procedure_code": "1.003677",
+    "title": "Khai báo tạm vắng",
+    "raw_structured_parser_version": "0.1.0",
+    "field": "Đăng ký, quản lý cư trú"
+  },
+  "procedure": {
+    "level": "Cấp xã",
+    "procedure_type": "TTHC được luật giao quy định chi tiết",
+    "target_users": [
+      "Hợp tác xã",
+      "Công dân Việt Nam",
+      "Cán bộ",
+      "công chức",
+      "viên chức",
+      "Tổ chức (không bao gồm doanh nghiệp",
+      "HTX)"
+    ],
+    "authorities": [
+      "Công an cấp Xã"
+    ],
+    "receiving_places": [
+      "Công an cấp xã"
+    ]
+  },
+  "submission": {
+    "channels": [
+      "online"
+    ],
+    "methods": [
+      {
+        "method_id": "method_1",
+        "channel": "online",
+        "processing_time_text": "1 ngày làm việc",
+        "fee_text": null,
+        "description": "- Trường hợp thuộc quy định tại điểm c, điểm d khoản 1 Điều 31 Luật Cư trú thì khai báo tạm vắng qua: + Trực tiếp tại cơ quan đăng ký cư trú hoặc tại địa điểm tiếp nhận khai báo tạm vắng do cơ quan đăng ký cư trú quy định; + Số điện thoại hoặc hộp thư điện tử do cơ quan đăng ký cư trú thông báo hoặc niêm yết; + Trang thông tin điện tử của cơ quan đăng ký cư trú hoặc qua các cổng cung cấp dịch vụ công trực tuyến như: Cổng dịch vụ công quốc gia, Cổng dịch vụ công Bộ Công an, Cổng dịch vụ công quản lý cư trú; + Ứng dụng trên thiết bị điện tử. Thời gian tiếp nhận hồ sơ: Giờ hành chính các ngày làm việc từ thứ 2 đến thứ 6 và sáng thứ 7 hàng tuần (trừ các ngày nghỉ lễ, tết theo quy định của pháp luật). Trong thời gian 01 ngày kể từ khi tiếp nhận đề nghị khai báo tạm vắng của công dân.",
+        "is_online": true,
+        "is_postal": false,
+        "is_in_person": false
+      },
+      {
+        "method_id": "method_2",
+        "channel": "online",
+        "processing_time_text": "2 ngày làm việc",
+        "fee_text": null,
+        "description": "trường hợp phức tạp thì có thể kéo dài hơn nhưng không quá 02 ngày làm việc.",
+        "is_online": true,
+        "is_postal": false,
+        "is_in_person": false
+      }
+    ],
+    "timing_summary": {
+      "unique_processing_times": [
+        "1 ngày làm việc",
+        "2 ngày làm việc"
+      ],
+      "method_count": 2
+    }
+  },
+  "documents": {
+    "required": [
+      {
+        "document_id": "ngh_khai_b_o_t_m_v_ng",
+        "name": "Đề nghị khai báo tạm vắng;",
+        "group_name": "- Trường hợp công dân thuộc quy định tại điểm a, điểm b khoản 1 Điều 31 Luật Cư trú, hồ sơ gồm:",
+        "group_type": "conditional",
+        "original_count": "1",
+        "copy_count": "0",
+        "conditions": [],
+        "attachment_label": null,
+        "attachment_path": null
+      },
+      {
+        "document_id": "v_n_b_n_ng_c_a_c_quan_c_th_m_quy_n_gi_m_s_t_qu_n_l_gi_o_d_c_ng_i",
+        "name": "Văn bản đồng ý của cơ quan có thẩm quyền giám sát, quản lý, giáo dục người đó.",
+        "group_name": "- Trường hợp công dân thuộc quy định tại điểm a, điểm b khoản 1 Điều 31 Luật Cư trú, hồ sơ gồm:",
+        "group_type": "conditional",
+        "original_count": "1",
+        "copy_count": "0",
+        "conditions": [],
+        "attachment_label": null,
+        "attachment_path": null
+      },
+      {
+        "document_id": "n_i_dung_khai_b_o_t_m_v_ng_g_m_h_v_t_n_s_nh_danh_c_nh_n_ho_c_s_ch_ng_minh_nh_n_d_n_s_h_chi_u_c_a_ng_i_khai_b_o_t_m_v_ng_l_do_t_m_v_ng_th_i_gian_t_m_v_ng_a_ch_n_i_n",
+        "name": "Nội dung khai báo tạm vắng gồm: họ và tên, số định danh cá nhân hoặc số Chứng minh nhân dân, số hộ chiếu của người khai báo tạm vắng; lý do tạm vắng; thời gian tạm vắng; địa chỉ nơi đến.",
+        "group_name": "- Trường hợp thuộc quy định tại điểm c, điểm d khoản 1 Điều 31 Luật Cư trú:",
+        "group_type": "conditional",
+        "original_count": "1",
+        "copy_count": "1",
+        "conditions": [],
+        "attachment_label": null,
+        "attachment_path": null
+      }
+    ],
+    "conditional": [],
+    "presented": [],
+    "notes": [],
+    "forms": [],
+    "empty_groups": [],
+    "document_count": 3
+  },
+  "process": {
+    "steps": [
+      {
+        "step_id": "step_1",
+        "title": null,
+        "content": "1.",
+        "actor": "user",
+        "channel_hint": null,
+        "time_hint": null
+      },
+      {
+        "step_id": "step_2",
+        "title": "Bước 1:",
+        "content": "Bước 1: Cá nhân, tổ chức chuẩn bị hồ sơ theo quy định của pháp luật.",
+        "actor": "user",
+        "channel_hint": null,
+        "time_hint": null
+      },
+      {
+        "step_id": "step_3",
+        "title": "Bước 2:",
+        "content": "Bước 2: Cá nhân, tổ chức nộp hồ sơ đến Công an cấp xã.",
+        "actor": "user",
+        "channel_hint": null,
+        "time_hint": null
+      },
+      {
+        "step_id": "step_4",
+        "title": "Bước 3:",
+        "content": "Bước 3: Khi tiếp nhận hồ sơ khai báo tạm vắng trong Cơ sở dữ liệu về cư trú, cơ quan đăng ký cư trú kiểm tra tính pháp lý và nội dung hồ sơ: - Trường hợp hồ sơ đã đầy đủ, hợp lệ thì tiếp nhận hồ sơ và cấp Phiếu tiếp nhận hồ sơ và hẹn trả kết quả (mẫu CT04 ban hành kèm theo Thông tư số 66/2023/TT-BCA) cho người đăng ký. - Trường hợp hồ sơ không đủ điều kiện thì từ chối và cấp Phiếu từ chối tiếp nhận, giải quyết hồ sơ (mẫu CT06 ban hành kèm theo Thông tư số 66/2023/TT-BCA) cho người đăng ký.",
+        "actor": "authority",
+        "channel_hint": null,
+        "time_hint": null
+      },
+      {
+        "step_id": "step_5",
+        "title": "Bước 4:",
+        "content": "Bước 4: Căn cứ theo ngày hẹn trên Phiếu tiếp nhận hồ sơ và hẹn trả kết quả để nhận thông báo kết quả giải quyết thủ tục đăng ký cư trú (nếu có).",
+        "actor": "user",
+        "channel_hint": null,
+        "time_hint": null
+      }
+    ],
+    "step_count": 5,
+    "notes": []
+  },
+  "eligibility": {
+    "conditions": [
+      "- Trường hợp người quy định tại điểm d khoản 1 Điều 31 Luật Cư trú là người chưa thành niên thì người thực hiện khai báo là cha, mẹ hoặc người giám hộ.",
+      "- Nội dung khai báo tạm vắng bao gồm họ và tên, số định danh cá nhân hoặc số Chứng minh nhân dân, số hộ chiếu của người khai báo tạm vắng; lý do tạm vắng; thời gian tạm vắng; địa chỉ nơi đến."
+    ],
+    "has_conditions": true
+  },
+  "results": {
+    "items": [
+      {
+        "name": "Thông báo kết quả giải quyết thủ tục về cư trú, hủy bỏ thủ tục về cư trú",
+        "result_code": "KQ.G01.000065",
+        "raw_text": "Thông báo kết quả giải quyết thủ tục về cư trú, hủy bỏ thủ tục về cư trú"
+      },
+      {
+        "name": "Cập nhật thông tin trong Cơ sở dữ liệu về cư trú",
+        "result_code": "KQ.G01.000066",
+        "raw_text": "Cập nhật thông tin trong Cơ sở dữ liệu về cư trú"
+      },
+      {
+        "name": "Phiếu khai báo tạm vắng (CT03)",
+        "result_code": "KQ.G01.000061",
+        "raw_text": "Phiếu khai báo tạm vắng (CT03)"
+      }
+    ],
+    "primary_result": {
+      "name": "Thông báo kết quả giải quyết thủ tục về cư trú, hủy bỏ thủ tục về cư trú",
+      "result_code": "KQ.G01.000065",
+      "raw_text": "Thông báo kết quả giải quyết thủ tục về cư trú, hủy bỏ thủ tục về cư trú"
+    }
+  },
+  "legal_basis": {
+    "items": [
+      {
+        "title": "Thông tư số 53/2025/TT-BCAngày 01/7/2025 của Bộ Công an sửa đổi, bổ sung một số điều của Thông tư số 55/2021/TT-BCA ngày 15 tháng 5 năm 2021 của Bộ trưởng Bộ Công an quy định chi tiết một số điều và biện pháp thi hành Luật Cư trú được sửa đổi, bổ sung bởi Thông tư số 66/2023/TT-BCA ngày 17 tháng 11 năm 2023; Thông tư số 56/2021/TT-BCA ngày 15 tháng 5 năm 2021 của Bộ trưởng Bộ Công an quy định về biểu mẫu trong đăng ký, quản lý cư trú được sửa đổi, bổ sung bởi Thông tư số 66/2023/TT-BCA ngày 17 tháng 11 năm 2023; Thông tư số 17/2024/TT-BCA ngày 15 tháng 5 năm 2024 của Bộ trưởng Bộ Công an quy định chi tiết một số điều và biện pháp thi hành Luật Căn cước.",
+        "code": "53/2025/TT-BCA"
+      },
+      {
+        "title": "Thông tư số 66/2023/TT-BCA Sửa đổi, bổ sung một số điều của Thông tư số 55/2021/TT-BCA ngày 15/5/2021 quy định chi tiết một số điều và biện pháp thi hành Luật Cư trú; Thông tư số 56/2021/TT-BCA ngày 15/5/2021 của Bộ trưởng Bộ Công an quy định về biểu mẫu trong đăng ký, quản lý cư trú; Thông tư số 57/2021/TT-BCA ngày 15/5/2021 của Bộ trưởng Bộ Công an quy định về quy trình đăng ký cư trú.",
+        "code": "66/2023/TT-BCA"
+      },
+      {
+        "title": "Luật Cư trú 2020",
+        "code": "68/2020/QH14"
+      },
+      {
+        "title": "Thông tư 57/2021/TT-BCA",
+        "code": "57/2021/TT-BCA"
+      },
+      {
+        "title": "Thông tư số 54/2025/TT-BCA ngày 01/7/2025 của Bộ trưởng Bộ Công an quy định về quy trình đăng ký cư trú.",
+        "code": "54/2025/TT-BCA"
+      },
+      {
+        "title": "Thông tư 55/2021/TT-BCA",
+        "code": "55/2021/TT-BCA"
+      },
+      {
+        "title": "Thông tư 56/2021/TT-BCA",
+        "code": "56/2021/TT-BCA"
+      }
+    ],
+    "count": 7
+  },
+  "attachments": [],
+  "signals": {
+    "raw_parse_warnings": [],
+    "missing_documents": false,
+    "documents_section_present": true,
+    "documents_declared_empty": false,
+    "documents_only_in_notes": false,
+    "missing_results": false
+  }
+}

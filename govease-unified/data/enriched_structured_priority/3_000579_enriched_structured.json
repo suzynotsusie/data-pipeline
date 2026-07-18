@@ -1,0 +1,93 @@
+{
+  "schema_version": "1.0",
+  "enricher_version": "0.2.0",
+  "source": {
+    "procedure_code": "3.000579",
+    "title": "Công bố Danh mục và Quy trình nội bộ thủ tục hành chính thuộc thẩm",
+    "group_key": "suc_khoe_y_te",
+    "workflow_family": null,
+    "subflow": null
+  },
+  "experience": {
+    "entry_label": "Hỗ trợ y tế và bảo hiểm",
+    "overview_summary": "Thủ tục này thuộc nhóm y tế, thường cần đối chiếu thông tin người bệnh, đơn vị tiếp nhận hoặc quyền lợi chuyên ngành. Kết quả thường nhận được là Quyết định về việc giải quyết chế độ trợ cấp hàng tháng đối với thanh niên xung phong. Thời gian xử lý tham khảo: 7 ngày.",
+    "next_step_summary": "Nên xác định rõ đối tượng tham gia, quyền lợi hoặc nhu cầu điều chỉnh hồ sơ y tế trước khi nộp. Có thể chọn kênh nộp phù hợp: Trực tiếp, Trực tuyến, Dịch vụ bưu chính. Hiện có khoảng 3 mục giấy tờ cần theo dõi trong checklist.",
+    "tone": "supportive_public_service"
+  },
+  "guidance": {
+    "highlight_documents": [
+      {
+        "bucket": "required",
+        "name": "Bản khai cá nhân đề nghị hưởng chế độ trợ cấp hàng tháng đối với thanh niên xung phong, theo mẫu BM.NCC.20.01 Hoặc Bản khai cá nhân đề nghị hưởng chế độ trợ cấp một lần đối với thanh niên xung phong đã từ trần, theo mẫu BM.NCC.20.02 Hoặc Bản khai cá nhân đề nghị hưởng chế độ trợ cấp một lần đối với thanh niên xung phong, theo mẫu BM.NCC.20.03",
+        "conditions": [],
+        "attachment_path": null
+      },
+      {
+        "bucket": "required",
+        "name": "Một trong các giấy tờ chứng minh là TNXP: - Lý lịch cán bộ hoặc lý lịch đảng viên (khai trước ngày Quyết định số 104/1999/QĐ-TTG ngày 14/4/1999 có hiệu lực thi hành); - Giấy tờ do cơ quan có thẩm quyền cấp trước khi TNXP trở về địa phương như: Giấy chứng nhận hoàn thành nhiệm vụ của đơn vị quản lý TNXP; Giấy chuyển thương, chuyển viện, phiếu sức khỏe; Giấy khen trong thời gian tham gia lực lượng TNXP; Giấy chứng nhận tham gia TNXP; Giấy điều động công tác, bổ nhiệm, giao nhiệm vụ; - Trưởng hợp TNXP không còn một trong các giấy tờ thì phải nộp bản khai có chứng thực của UBND cấp xã nơi đăng ký hộ khẩu thường trú trước khi tham gia TNXP.",
+        "conditions": [],
+        "attachment_path": null
+      },
+      {
+        "bucket": "required",
+        "name": "Giấy chứng nhận hộ nghèo",
+        "conditions": [],
+        "attachment_path": null
+      }
+    ],
+    "special_cases": [
+      "Có thể cần đối chiếu thông tin thửa đất hoặc giấy chứng nhận"
+    ],
+    "common_errors": [
+      "Điền sai mẫu tờ khai hoặc chọn sai biểu mẫu đi kèm.",
+      "Thông tin thửa đất, tài sản hoặc giấy chứng nhận chưa khớp với hồ sơ hiện có."
+    ],
+    "validation_hints": [
+      "Nên xác định trước kênh nộp hồ sơ để biết có cần bản giấy, bản điện tử hay xuất trình trực tiếp.",
+      "Nên xác định đúng nhóm đối tượng, mã số bảo hiểm và quyền lợi áp dụng trước khi nộp."
+    ]
+  },
+  "intake": {
+    "candidate_input_fields": [
+      {
+        "field_id": "request_subject",
+        "label": "Đối tượng làm thủ tục",
+        "field_type": "text",
+        "required": true
+      },
+      {
+        "field_id": "insurance_or_medical_need",
+        "label": "Nhu cầu bảo hiểm hoặc y tế",
+        "field_type": "text",
+        "required": true
+      },
+      {
+        "field_id": "submission_channel_preference",
+        "label": "Kênh nộp dự kiến",
+        "field_type": "enum",
+        "required": false
+      },
+      {
+        "field_id": "has_insurance_number",
+        "label": "Đã có mã BHXH/BHYT",
+        "field_type": "boolean",
+        "required": false
+      }
+    ],
+    "suggested_clarifying_questions": [
+      "Bạn đang muốn đăng ký, điều chỉnh hay xác nhận quyền lợi y tế hoặc bảo hiểm nào?",
+      "Bạn đã có mã BHXH/BHYT hoặc thông tin đơn vị tiếp nhận liên quan chưa?"
+    ]
+  },
+  "ui_hints": {
+    "primary_channel": "in_person",
+    "result_label": "Quyết định về việc giải quyết chế độ trợ cấp hàng tháng đối với thanh niên xung phong",
+    "time_badge": "7 ngày",
+    "document_count_badge": 3
+  },
+  "provenance": {
+    "generator": "workflow_domain_enricher",
+    "derivation_mode": "rule_based_semantic_enrichment",
+    "supported_group": true
+  }
+}

@@ -1,0 +1,316 @@
+{
+  "schema_version": "1.0",
+  "normalizer_version": "0.2.0",
+  "source": {
+    "procedure_code": "1.012822",
+    "title": "Thủ tục thực hiện, điều chỉnh, thôi hưởng trợ cấp xã hội hàng tháng cho người cao tuổi từ đủ 75 tuổi đến 80 tuổi mà không có lương hưu, trợ cấp bảo hiểm xã hội hàng tháng, trợ cấp xã hội hàng tháng; Người mắc bệnh ung thư, suy thận mãn chạy thận nhân tạo có giấy chứng nhận của cơ quan y tế có thẩm quyền mà không có lương hưu, tiền lương, trợ cấp bảo hiểm xã hội hàng tháng, trợ cấp xã hội hàng tháng; Người khuyết tật nhẹ là thế hệ thứ ba của người hoạt động kháng chiến bị nhiễm chất độc hóa học",
+    "raw_structured_parser_version": "0.1.0",
+    "field": "Bảo trợ xã hội"
+  },
+  "procedure": {
+    "level": "Cấp xã",
+    "procedure_type": "TTHC được luật giao quy định chi tiết",
+    "target_users": [
+      "Công dân Việt Nam"
+    ],
+    "authorities": [
+      "Chủ tịch UBND cấp xã"
+    ],
+    "receiving_places": [
+      "Trung tâm phục vụ hành chính công cấp xã"
+    ]
+  },
+  "submission": {
+    "channels": [
+      "in_person",
+      "online",
+      "postal"
+    ],
+    "methods": [
+      {
+        "method_id": "method_1",
+        "channel": "in_person",
+        "processing_time_text": "10 ngày làm việc",
+        "fee_text": null,
+        "description": "10 ngày làm việc, kể từ ngày nhận đủ hồ sơ.",
+        "is_online": false,
+        "is_postal": false,
+        "is_in_person": true
+      },
+      {
+        "method_id": "method_2",
+        "channel": "online",
+        "processing_time_text": "10 ngày làm việc",
+        "fee_text": null,
+        "description": "10 ngày làm việc, kể từ ngày nhận đủ hồ sơ.",
+        "is_online": true,
+        "is_postal": false,
+        "is_in_person": false
+      },
+      {
+        "method_id": "method_3",
+        "channel": "postal",
+        "processing_time_text": "10 ngày làm việc",
+        "fee_text": null,
+        "description": "10 ngày làm việc, kể từ ngày nhận đủ hồ sơ.",
+        "is_online": false,
+        "is_postal": true,
+        "is_in_person": false
+      }
+    ],
+    "timing_summary": {
+      "unique_processing_times": [
+        "10 ngày làm việc"
+      ],
+      "method_count": 3
+    }
+  },
+  "documents": {
+    "required": [
+      {
+        "document_id": "t_khai_ngh_tr_gi_p_x_h_i_m_u_tgxh_01",
+        "name": "Tờ khai đề nghị trợ giúp xã hội (Mẫu TGXH-01).",
+        "group_name": "- Đối với chính sách hỗ trợ cho người cao tuổi từ đủ 75 tuổi đến 80 tuổi mà không có lương hưu, trợ cấp bảo hiểm xã hội hàng tháng, trợ cấp xã hội hàng tháng.",
+        "group_type": "required",
+        "original_count": "1",
+        "copy_count": "0",
+        "conditions": [],
+        "attachment_label": "Mau TGXH-01.doc",
+        "attachment_path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/1_012822/Mau%20TGXH-01.doc"
+      },
+      {
+        "document_id": "t_khai_ngh_tr_gi_p_x_h_i_m_u_tgxh_02",
+        "name": "Tờ khai đề nghị trợ giúp xã hội (Mẫu TGXH-02);",
+        "group_name": "- Đối với chính sách hỗ trợ cho người mắc bệnh ung thư, suy thận mãn chạy thận nhân tạo có giấy chứng nhận của cơ quan y tế có thẩm quyền mà không có lương hưu, tiền lương, trợ cấp bảo hiểm xã hội hàng tháng, trợ cấp xã hội hàng tháng.",
+        "group_type": "required",
+        "original_count": "1",
+        "copy_count": "0",
+        "conditions": [],
+        "attachment_label": "Mau TGXH-02.doc",
+        "attachment_path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/1_012822/Mau%20TGXH-02.doc"
+      },
+      {
+        "document_id": "gi_y_ch_ng_nh_n_x_c_nh_n_c_a_c_quan_y_t_c_th_m_quy_n_c_c_p_trong_th_i_gian_03_th_ng_tr_c_khi_n_p_h_s_m_u_gxn",
+        "name": "Giấy chứng nhận/xác nhận của cơ quan y tế có thẩm quyền được cấp trong thời gian 03 tháng trước khi nộp hồ sơ (Mẫu GXN).",
+        "group_name": "- Đối với chính sách hỗ trợ cho người mắc bệnh ung thư, suy thận mãn chạy thận nhân tạo có giấy chứng nhận của cơ quan y tế có thẩm quyền mà không có lương hưu, tiền lương, trợ cấp bảo hiểm xã hội hàng tháng, trợ cấp xã hội hàng tháng.",
+        "group_type": "required",
+        "original_count": "1",
+        "copy_count": "0",
+        "conditions": [],
+        "attachment_label": "Mau GXN.doc",
+        "attachment_path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/1_012822/Mau%20GXN.doc"
+      },
+      {
+        "document_id": "t_khai_ngh_tr_gi_p_x_h_i_m_u_tgxh_03",
+        "name": "Tờ khai đề nghị trợ giúp xã hội (Mẫu TGXH-03);",
+        "group_name": "- Đối với chính sách hỗ trợ cho người khuyết tật nhẹ (được Hội đồng xác định mức độ khuyết tật cấp xã công nhận theo Thông tư số 01/2019/TT-BLĐTBXH ngày 02/01/2019 của Bộ LĐ-TB&XH) là thế hệ thứ ba của người hoạt động kháng chiến bị nhiễm chất độc hóa học.",
+        "group_type": "required",
+        "original_count": "1",
+        "copy_count": "1",
+        "conditions": [],
+        "attachment_label": "Mau TGXH-03.doc",
+        "attachment_path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/1_012822/Mau%20TGXH-03.doc"
+      },
+      {
+        "document_id": "b_n_sao_gi_y_x_c_nh_n_m_c_khuy_t_t_t_nh",
+        "name": "Bản sao giấy xác nhận mức độ khuyết tật nhẹ;",
+        "group_name": "- Đối với chính sách hỗ trợ cho người khuyết tật nhẹ (được Hội đồng xác định mức độ khuyết tật cấp xã công nhận theo Thông tư số 01/2019/TT-BLĐTBXH ngày 02/01/2019 của Bộ LĐ-TB&XH) là thế hệ thứ ba của người hoạt động kháng chiến bị nhiễm chất độc hóa học.",
+        "group_type": "required",
+        "original_count": "0",
+        "copy_count": "1",
+        "conditions": [],
+        "attachment_label": null,
+        "attachment_path": null
+      },
+      {
+        "document_id": "b_n_sao_gi_y_ch_ng_nh_n_quy_t_nh_h_ng_tr_c_p_u_i_i_v_i_ng_i_ho_t_ng_kh_ng_chi_n_b_nhi_m_ch_t_c_h_a_h_c",
+        "name": "Bản sao Giấy chứng nhận/Quyết định hưởng trợ cấp ưu đãi đối với người hoạt động kháng chiến bị nhiễm chất độc hóa học;",
+        "group_name": "- Đối với chính sách hỗ trợ cho người khuyết tật nhẹ (được Hội đồng xác định mức độ khuyết tật cấp xã công nhận theo Thông tư số 01/2019/TT-BLĐTBXH ngày 02/01/2019 của Bộ LĐ-TB&XH) là thế hệ thứ ba của người hoạt động kháng chiến bị nhiễm chất độc hóa học.",
+        "group_type": "required",
+        "original_count": "0",
+        "copy_count": "1",
+        "conditions": [],
+        "attachment_label": null,
+        "attachment_path": null
+      },
+      {
+        "document_id": "b_n_sao_c_ch_ng_th_c_t_gi_y_khai_sinh_tr_ch_l_c_khai_sinh_c_a_th_h_th_hai_v_i_ng_i_ho_t_ng_kh_ng_chi_n_b_nhi_m_ch_t_c_h_a_h_c",
+        "name": "Bản sao được chứng thực từ giấy khai sinh, trích lục khai sinh của thế hệ thứ hai với người hoạt động kháng chiến bị nhiễm chất độc hóa học.",
+        "group_name": "- Đối với chính sách hỗ trợ cho người khuyết tật nhẹ (được Hội đồng xác định mức độ khuyết tật cấp xã công nhận theo Thông tư số 01/2019/TT-BLĐTBXH ngày 02/01/2019 của Bộ LĐ-TB&XH) là thế hệ thứ ba của người hoạt động kháng chiến bị nhiễm chất độc hóa học.",
+        "group_type": "required",
+        "original_count": "0",
+        "copy_count": "1",
+        "conditions": [],
+        "attachment_label": null,
+        "attachment_path": null
+      },
+      {
+        "document_id": "v_n_b_n_ngh_i_u_ch_nh_ho_c_th_i_h_ng_tr_c_p_x_h_i_h_ng_th_ng_c_a_i_t_ng_ng_i_gi_m_h_c_a_i_t_ng_ho_c_t_ch_c_c_nh_n_li_n_quan_c_ki_n_ngh_v_vi_c_i_t_ng_kh_ng_c_n_i_u_ki_n_h_ng_ho_c_thay_i_i_u_ki_n_h_ng",
+        "name": "Văn bản đề nghị điều chỉnh hoặc thôi hưởng trợ cấp xã hội hàng tháng của đối tượng, người giám hộ của đối tượng hoặc tổ chức, cá nhân liên quan có kiến nghị về việc đối tượng không còn đủ điều kiện hưởng hoặc thay đổi điều kiện hưởng.",
+        "group_name": "* Đối với thủ tục điều chỉnh, thôi hưởng trợ cấp xã hội hàng tháng:",
+        "group_type": "required",
+        "original_count": "1",
+        "copy_count": "0",
+        "conditions": [],
+        "attachment_label": null,
+        "attachment_path": null
+      }
+    ],
+    "conditional": [],
+    "presented": [
+      {
+        "document_id": "v_th_ng_tin_n_i_c_tr_c_ng_ch_c_ti_p_nh_n_h_s_ch_u_tr_ch_nhi_m_khai_th_c_s_d_ng_th_ng_tin_v_n_i_c_tr_c_a_c_ng_d_n_t_c_s_d_li_u_qu_c_gia_v_d_n_c_gi_i_quy_t_th_t_c_h_nh_ch_nh_trong_tr_ng_h_p_kh_ng_th_khai_th_c_th_ng_tin_n_i_c_tr_c_a_c_ng_d_n_theo_kho_n_2_i_u_14_ngh_nh_s_104_2022_n_cp_ng_y_21_12_2022_c_a_ch_nh_ph_c_th_y_u_c_u_c_ng_d_n_n_p_b_n_sao_ho_c_xu_t_tr_nh_gi_y_x_c_nh_n_th_ng_tin_v_c_tr",
+        "name": "Về thông tin nơi cư trú: Công chức tiếp nhận hồ sơ chịu trách nhiệm khai thác, sử dụng thông tin về nơi cư trú của công dân từ Cơ sở dữ liệu quốc gia về dân cư để giải quyết thủ tục hành chính. Trong trường hợp không thể khai thác thông tin nơi cư trú của công dân theo Khoản 2 Điều 14 Nghị định số 104/2022/NĐ-CP ngày 21/12/2022 của Chính phủ, có thể yêu cầu công dân nộp bản sao hoặc xuất trình Giấy xác nhận thông tin về cư trú.",
+        "group_name": "* Khi nộp hồ sơ cần xuất trình các giấy tờ sau để công chức tiếp nhận đối chiếu các thông tin trong tờ khai:",
+        "group_type": "present",
+        "original_count": "0",
+        "copy_count": "1",
+        "conditions": [
+          "Về thông tin nơi cư trú: Công chức tiếp nhận hồ sơ chịu trách nhiệm khai thác, sử dụng thông tin về nơi cư trú của công dân từ Cơ sở dữ liệu quốc gia về dân cư để giải quyết thủ tục hành chính. Trong trường hợp không thể khai thác thông tin nơi cư trú của công dân theo Khoản 2 Điều 14 Nghị định số 104/2022/NĐ-CP ngày 21/12/2022 của Chính phủ, có thể yêu cầu công dân nộp bản sao hoặc xuất trình Giấy xác nhận thông tin về cư trú."
+        ],
+        "attachment_label": null,
+        "attachment_path": null
+      }
+    ],
+    "notes": [],
+    "forms": [
+      {
+        "name": "Tờ khai đề nghị trợ giúp xã hội (Mẫu TGXH-01).",
+        "attachment_label": "Mau TGXH-01.doc",
+        "attachment_path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/1_012822/Mau%20TGXH-01.doc"
+      },
+      {
+        "name": "Tờ khai đề nghị trợ giúp xã hội (Mẫu TGXH-02);",
+        "attachment_label": "Mau TGXH-02.doc",
+        "attachment_path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/1_012822/Mau%20TGXH-02.doc"
+      },
+      {
+        "name": "Giấy chứng nhận/xác nhận của cơ quan y tế có thẩm quyền được cấp trong thời gian 03 tháng trước khi nộp hồ sơ (Mẫu GXN).",
+        "attachment_label": "Mau GXN.doc",
+        "attachment_path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/1_012822/Mau%20GXN.doc"
+      },
+      {
+        "name": "Tờ khai đề nghị trợ giúp xã hội (Mẫu TGXH-03);",
+        "attachment_label": "Mau TGXH-03.doc",
+        "attachment_path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/1_012822/Mau%20TGXH-03.doc"
+      }
+    ],
+    "empty_groups": [],
+    "document_count": 9
+  },
+  "process": {
+    "steps": [
+      {
+        "step_id": "step_1",
+        "title": null,
+        "content": "1. - Đối tượng, người giám hộ của đối tượng hoặc tổ chức, cá nhân có liên quan làm hồ sơ theo quy định, nộp tại Trung tâm phục vụ hành chính công cấp xã nơi cư trú. Trung tâm phục vụ hành chính công cấp xã tiếp nhận hồ sơ (yêu cầu bổ sung, hoàn thiện nếu hồ sơ chưa đầy đủ), chuyển công chức xử lý.",
+        "actor": "authority",
+        "channel_hint": null,
+        "time_hint": null
+      },
+      {
+        "step_id": "step_2",
+        "title": null,
+        "content": "- Trong thời hạn 07 ngày làm việc, kể từ ngày nhận đủ hồ sơ, công chức phụ trách có trách nhiệm rà soát hồ sơ, trình Chủ tịch UBND cấp xã tổ chức việc xem xét, quyết định việc xét duyệt, thực hiện việc niêm yết công khai kết quả xét duyệt tại trụ sở UBND cấp xã trong thời gian 02 ngày làm việc. Trường hợp có khiếu nại, trong thời hạn 10 ngày làm việc, kể từ ngày nhận được khiếu nại, Chủ tịch UBND cấp xã tổ chức xem xét, kết luận, công khai nội dung khiếu nại. Trường hợp đối tượng không đủ điều kiện hưởng, UBND cấp xã trả lời bằng văn bản và nêu rõ lý do.",
+        "actor": "authority",
+        "channel_hint": null,
+        "time_hint": "07 ngày làm việc"
+      },
+      {
+        "step_id": "step_3",
+        "title": null,
+        "content": "- Trong thời hạn 03 ngày làm việc, kể từ ngày hồ sơ được xét duyệt và không có khiếu nại, Chủ tịch UBND cấp xã xem xét, quyết định trợ cấp xã hội hàng tháng, hỗ trợ kinh phí chăm sóc, nuôi dưỡng hàng tháng cho đối tượng.",
+        "actor": "user",
+        "channel_hint": null,
+        "time_hint": "03 ngày làm việc"
+      }
+    ],
+    "step_count": 3,
+    "notes": []
+  },
+  "eligibility": {
+    "conditions": [],
+    "has_conditions": false
+  },
+  "results": {
+    "items": [
+      {
+        "name": "Quyết định trợ cấp xã hội hàng tháng; Quyết định điều chỉnh hoặc quyết định thôi hưởng hoặc văn bản trả lời",
+        "result_code": "KQ.H17.000125",
+        "raw_text": "Quyết định trợ cấp xã hội hàng tháng; Quyết định điều chỉnh hoặc quyết định thôi hưởng hoặc văn bản trả lời"
+      }
+    ],
+    "primary_result": {
+      "name": "Quyết định trợ cấp xã hội hàng tháng; Quyết định điều chỉnh hoặc quyết định thôi hưởng hoặc văn bản trả lời",
+      "result_code": "KQ.H17.000125",
+      "raw_text": "Quyết định trợ cấp xã hội hàng tháng; Quyết định điều chỉnh hoặc quyết định thôi hưởng hoặc văn bản trả lời"
+    }
+  },
+  "legal_basis": {
+    "items": [
+      {
+        "title": "Nghị định sửa đổi, bổ sung một số điều của các Nghị định liên quan đến việc nộp xuất trình sổ hộ khẩu, sổ tạm trú giấy khi thực hiện thủ tục hành chính, cung cấp dịch vụ công",
+        "code": "104/2022/NĐ-CP"
+      },
+      {
+        "title": "Nghị định 146/2018/NĐ-CP Quy định chi tiết và hướng dẫn biện pháp thi hành một số điều của Luật bảo hiểm y tế",
+        "code": "Nghị định 146/2018/NĐ-CP"
+      },
+      {
+        "title": "75/2021/NQ-HĐND-Quy định về chính sách hỗ trợ hộ nghèo, hộ cận nghèo, hộ thoát nghèo trên địa bàn thành phố Đà Nẵng",
+        "code": "75/2021/NQ-HĐND"
+      },
+      {
+        "title": "QUY ĐỊNH CHÍNH SÁCH TRỢ GIÚP XÃ HỘI ĐỐI VỚI ĐỐI TƯỢNG BẢO TRỢ XÃ HỘI",
+        "code": "20/2021/NĐ-CP"
+      },
+      {
+        "title": "Nghị quyết số 101/2023/NQ-HĐND ngày 14/12/2023 của HĐND thành phố về sửa đổi, bổ sung một số điều của Nghị quyết số 34/2021/NQ-HĐND; - Nghị quyết số 75/2021/NQ-HĐND ngày 17/12/2021 của Hội đồng nhân dân thành phố Đà Nẵng quy định về chính sách hỗ trợ hộ nghèo, hộ cận nghèo, hộ thoát nghèo trên địa bàn thành phố Đà Nẵng",
+        "code": "101/2023/NQ-HĐND"
+      },
+      {
+        "title": "Thông qua mức chuẩn trợ giúp xã hội, mức trợ giúp xã hội và mở rộng đối tượng bảo trợ xã hội trên địa bàn thành phố Đà Nẵng;",
+        "code": "34/2021/NQ-HĐND"
+      },
+      {
+        "title": "28/2012/NĐ-CP - Quy định chi tiết và hướng dẫn thi hành một số điều của Luật Người khuyết tật",
+        "code": "28/2012/NĐ-CP"
+      }
+    ],
+    "count": 7
+  },
+  "attachments": [
+    {
+      "label": "Mau TGXH-01.doc",
+      "path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/1_012822/Mau%20TGXH-01.doc",
+      "source_section": "Thành phần hồ sơ",
+      "document_name": "Tờ khai đề nghị trợ giúp xã hội (Mẫu TGXH-01)."
+    },
+    {
+      "label": "Mau TGXH-02.doc",
+      "path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/1_012822/Mau%20TGXH-02.doc",
+      "source_section": "Thành phần hồ sơ",
+      "document_name": "Tờ khai đề nghị trợ giúp xã hội (Mẫu TGXH-02);"
+    },
+    {
+      "label": "Mau GXN.doc",
+      "path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/1_012822/Mau%20GXN.doc",
+      "source_section": "Thành phần hồ sơ",
+      "document_name": "Giấy chứng nhận/xác nhận của cơ quan y tế có thẩm quyền được cấp trong thời gian 03 tháng trước khi nộp hồ sơ (Mẫu GXN)."
+    },
+    {
+      "label": "Mau TGXH-03.doc",
+      "path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/1_012822/Mau%20TGXH-03.doc",
+      "source_section": "Thành phần hồ sơ",
+      "document_name": "Tờ khai đề nghị trợ giúp xã hội (Mẫu TGXH-03);"
+    }
+  ],
+  "signals": {
+    "raw_parse_warnings": [],
+    "missing_documents": false,
+    "documents_section_present": true,
+    "documents_declared_empty": false,
+    "documents_only_in_notes": false,
+    "missing_results": false
+  }
+}

@@ -1,0 +1,69 @@
+{
+  "schema_version": "1.0",
+  "enricher_version": "0.2.0",
+  "source": {
+    "procedure_code": "3.000599",
+    "title": "Thủ tục giải quyết kiến nghị, khiếu nại của khách hàng về lĩnh vực cấp nước",
+    "group_key": "giai_quyet_khieu_kien",
+    "workflow_family": "complaint_resolution_workflow",
+    "subflow": "giai_quyet_khieu_kien"
+  },
+  "experience": {
+    "entry_label": "Hỗ trợ khiếu nại và phản ánh",
+    "overview_summary": "Thủ tục này thuộc nhóm khiếu nại và phản ánh, thường cần trình bày rõ nội dung vụ việc, quyết định hoặc hành vi bị khiếu nại và căn cứ kèm theo. Kết quả thường nhận được là Văn bản trả lời kiến nghị, khiếu nại. Thời gian xử lý tham khảo: 7 ngày làm việc.",
+    "next_step_summary": "Nên tóm tắt rõ nội dung khiếu nại, quyết định hoặc hành vi liên quan và chuẩn bị tài liệu chứng minh trước khi nộp. Có thể chọn kênh nộp phù hợp: Trực tiếp, Trực tuyến, Dịch vụ bưu chính. Hiện hệ thống chưa trích xuất được checklist giấy tờ rõ ràng, nên bạn cần đối chiếu thêm ở nguồn chính thức.",
+    "tone": "supportive_public_service"
+  },
+  "guidance": {
+    "highlight_documents": [],
+    "special_cases": [],
+    "common_errors": [],
+    "validation_hints": [
+      "Nên xác định trước kênh nộp hồ sơ để biết có cần bản giấy, bản điện tử hay xuất trình trực tiếp.",
+      "Nên nêu rõ diễn biến vụ việc, quyết định hoặc hành vi bị khiếu nại và chuẩn bị tài liệu chứng minh."
+    ]
+  },
+  "intake": {
+    "candidate_input_fields": [
+      {
+        "field_id": "complaint_subject",
+        "label": "Nội dung khiếu nại chính",
+        "field_type": "text",
+        "required": true
+      },
+      {
+        "field_id": "decision_or_behavior_target",
+        "label": "Quyết định hoặc hành vi bị khiếu nại",
+        "field_type": "text",
+        "required": true
+      },
+      {
+        "field_id": "has_supporting_evidence",
+        "label": "Có tài liệu chứng minh kèm theo",
+        "field_type": "boolean",
+        "required": true
+      },
+      {
+        "field_id": "submission_channel_preference",
+        "label": "Kênh nộp dự kiến",
+        "field_type": "enum",
+        "required": false
+      }
+    ],
+    "suggested_clarifying_questions": [
+      "Bạn đang khiếu nại về quyết định hay hành vi nào, và thuộc cơ quan nào?",
+      "Bạn đã có đơn khiếu nại hoặc tài liệu chứng minh nội dung vụ việc chưa?"
+    ]
+  },
+  "ui_hints": {
+    "primary_channel": "in_person",
+    "result_label": "Văn bản trả lời kiến nghị, khiếu nại",
+    "time_badge": "7 ngày làm việc",
+    "document_count_badge": 0
+  },
+  "provenance": {
+    "generator": "workflow_domain_enricher",
+    "derivation_mode": "rule_based_semantic_enrichment",
+    "supported_group": true
+  }
+}

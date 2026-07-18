@@ -1,0 +1,120 @@
+{
+  "schema_version": "1.0",
+  "enricher_version": "0.2.0",
+  "source": {
+    "procedure_code": "2.000605",
+    "title": "Giải quyết hưởng lương hưu, trợ cấp hàng tháng đối với cán bộ xã",
+    "group_key": "huu_tri",
+    "workflow_family": "retirement_workflow",
+    "subflow": "che_do_huu_tri"
+  },
+  "experience": {
+    "entry_label": "Hỗ trợ chế độ hưu trí",
+    "overview_summary": "Thủ tục này thuộc nhóm hưu trí, thường dùng để xác định điều kiện nghỉ hưu, trợ cấp hoặc chế độ hưởng theo hồ sơ bảo hiểm xã hội. Kết quả thường nhận được là kết quả giải quyết theo thủ tục này. Thời gian xử lý tham khảo: 12 Ngày làm việc.",
+    "next_step_summary": "Nên rà trước quá trình đóng bảo hiểm, mốc tuổi và loại chế độ muốn hưởng trước khi nộp. Có thể chọn kênh nộp phù hợp: Trực tiếp, Trực tuyến, Dịch vụ bưu chính. Hiện có khoảng 16 mục giấy tờ cần theo dõi trong checklist.",
+    "tone": "supportive_public_service"
+  },
+  "guidance": {
+    "highlight_documents": [
+      {
+        "bucket": "required",
+        "name": "",
+        "conditions": [],
+        "attachment_path": "b) Quyết định nghỉ việc hưởng chế độ hưu trí theo mẫu ban hành kèm theo Nghị định số 46/2010/NĐ-CP hoặc bản chính Quyết định nghỉ việc hưởng chế độ hưu trí (mẫu số 12-HSB) hoặc Văn bản chấm dứt hợp đồng lao động hưởng chế độ hưu trí 12_HSB.docx"
+      },
+      {
+        "bucket": "required",
+        "name": "d) Bản chính Bản khai cá nhân về thời gian, địa bàn phục vụ trong Quân đội có hưởng phụ cấp khu vực (Mẫu số 04B –",
+        "conditions": [],
+        "attachment_path": "HBQP ban hành kèm theo Thông tư số 136/2020/TT-BQP ngày 29/10/2020) đối với người có thời gian phục vụ trong Quân đội trước ngày 01/01/2007 tại địa bàn có hưởng phụ cấp khu vực mà sổ BHXH không thể hiện đầy đủ thông tin làm căn cứ tính phụ cấp khu vực. 04B_HBQP.docx"
+      },
+      {
+        "bucket": "required",
+        "name": "",
+        "conditions": [],
+        "attachment_path": "b) Bản chính Đơn đề nghị 14_HSB.docx"
+      },
+      {
+        "bucket": "required",
+        "name": "",
+        "conditions": [],
+        "attachment_path": "d) Trường hợp đang chấp hành hình phạt mà thời gian bắt đầu chấp hành hình phạt tù từ ngày 01/01/2016 trở đi thì có thêm bản chính Giấy ủy quyền (mẫu số 13-HSB). 13_HSB.docx"
+      },
+      {
+        "bucket": "required",
+        "name": "h) Bản chính Bản khai cá nhân về thời gian, địa bàn phục vụ trong Quân đội có hưởng phụ cấp khu vực (Mẫu số 04B – HBQP ban hành kèm theo Thông tư số 136/2020/TT-BQP ngày 29/10/2020) đối với người có thời gian phục vụ trong Quân đội trước ngày 01/01/2007 tại địa bàn có hưởng phụ cấp khu vực mà sổ BHXH không thể hiện đầy đủ thông tin làm căn cứ tính phụ cấp khu vực.",
+        "conditions": [],
+        "attachment_path": null
+      },
+      {
+        "bucket": "required",
+        "name": "3. Đối với người có Quyết định hoặc Giấy chứng nhận chờ đủ điều kiện... Tên giấy tờ Mẫu đơn, tờ khai Số lượng a) Bản chính Quyết định hoặc bản chính Giấy chứng nhận chờ đủ điều kiện về tuổi đời để hưởng lương hưu hoặc chờ hưởng trợ cấp hàng tháng theo Nghị định số 09/1998/NĐ-CP;",
+        "conditions": [],
+        "attachment_path": "trường hợp bị mất giấy tờ trên thì có thêm bản chính Đơn đề nghị (mẫu số 14-HSB) nêu rõ lý do bị mất. 14_HSB.docx"
+      }
+    ],
+    "special_cases": [
+      "Có thể cần đối chiếu thông tin thửa đất hoặc giấy chứng nhận",
+      "Có thể cần đối chiếu quá trình đóng bảo hiểm để giải quyết chế độ"
+    ],
+    "common_errors": [
+      "Điền sai mẫu tờ khai hoặc chọn sai biểu mẫu đi kèm.",
+      "Thông tin thửa đất, tài sản hoặc giấy chứng nhận chưa khớp với hồ sơ hiện có.",
+      "Thiếu thông tin về thời gian tham gia bảo hiểm hoặc chưa xác định đúng chế độ hưu trí."
+    ],
+    "validation_hints": [
+      "Nên xác định trước kênh nộp hồ sơ để biết có cần bản giấy, bản điện tử hay xuất trình trực tiếp.",
+      "Có mẫu biểu đính kèm, nên kiểm tra đúng biểu mẫu trước khi nộp.",
+      "Nên rà lại quá trình tham gia bảo hiểm, độ tuổi và loại chế độ muốn hưởng trước khi nộp."
+    ]
+  },
+  "intake": {
+    "candidate_input_fields": [
+      {
+        "field_id": "insured_person_name",
+        "label": "Người hưởng chế độ",
+        "field_type": "text",
+        "required": true
+      },
+      {
+        "field_id": "retirement_or_allowance_need",
+        "label": "Nhu cầu hưởng chế độ hưu trí/trợ cấp",
+        "field_type": "text",
+        "required": true
+      },
+      {
+        "field_id": "social_insurance_participation_known",
+        "label": "Đã rõ quá trình tham gia BHXH",
+        "field_type": "boolean",
+        "required": true
+      },
+      {
+        "field_id": "submission_channel_preference",
+        "label": "Kênh nộp dự kiến",
+        "field_type": "enum",
+        "required": false
+      },
+      {
+        "field_id": "retirement_age_status",
+        "label": "Đã đến mốc tuổi hưởng chế độ",
+        "field_type": "boolean",
+        "required": false
+      }
+    ],
+    "suggested_clarifying_questions": [
+      "Bạn đang muốn chuẩn bị nghỉ hưu hay giải quyết chế độ hưu trí cụ thể nào?",
+      "Quá trình tham gia bảo hiểm và độ tuổi hưởng chế độ đã xác định rõ chưa?"
+    ]
+  },
+  "ui_hints": {
+    "primary_channel": "in_person",
+    "result_label": null,
+    "time_badge": "12 Ngày làm việc",
+    "document_count_badge": 16
+  },
+  "provenance": {
+    "generator": "workflow_domain_enricher",
+    "derivation_mode": "rule_based_semantic_enrichment",
+    "supported_group": true
+  }
+}

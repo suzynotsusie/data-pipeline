@@ -1,0 +1,274 @@
+{
+  "schema_version": "3.0",
+  "record_type": "public_service_procedure_payload",
+  "id": "procedure-1.014751",
+  "procedure_code": "1.014751",
+  "code": "1.014751",
+  "title": "Tiếp tục hưởng trợ cấp thất nghiệp (Cấp tỉnh)",
+  "language": "vi",
+  "status": "generated_from_pipeline",
+  "field": "Việc làm",
+  "group_key": "viec_lam",
+  "workflow_family": "employment_workflow",
+  "subflow": "bao_hiem_xa_hoi_that_nghiep_tro_cap",
+  "source": {
+    "source_url": "file:///C:/Users/ku060/Downloads/VAIC%20source/data-pipeline/raw_data/1_014751/1_014751_procedure_detail.md",
+    "source_markdown_path": "C:\\Users\\ku060\\Downloads\\VAIC source\\data-pipeline\\raw_data\\1_014751\\1_014751_procedure_detail.md",
+    "normalized_payload_path": "C:\\Users\\ku060\\Downloads\\VAIC source\\data-pipeline\\govease-unified\\data\\normalized_structured\\1_014751_normalized_structured.json",
+    "enriched_payload_path": "C:\\Users\\ku060\\Downloads\\VAIC source\\data-pipeline\\govease-unified\\data\\enriched_structured_priority\\1_014751_enriched_structured.json"
+  },
+  "scope": {
+    "included": "Thủ tục này thuộc nhóm việc làm và lao động, thường cần kiểm tra hồ sơ nghề nghiệp, đơn vị sử dụng lao động hoặc điều kiện hưởng chế độ liên quan. Kết quả thường nhận được là Quyết định về việc tiếp tục hưởng trợ cấp thất nghiệp. Thời gian xử lý tham khảo: 2 ngày làm việc.",
+    "not_included": []
+  },
+  "agency": {
+    "executing_agency": "Trung tâm Dịch vụ việc làm",
+    "submission_place": null,
+    "receiving_places": []
+  },
+  "target_users": [
+    "Công dân Việt Nam"
+  ],
+  "submission_methods": [
+    {
+      "code": "ONLINE",
+      "label": "Trực tuyến",
+      "processing_time": "2 ngày làm việc",
+      "fee": null,
+      "description": "Trong thời hạn 02 ngày làm việc kể từ ngày người lao động tiếp tục thực hiện thông báo về việc tìm kiếm việc làm hằng tháng theo quy định."
+    },
+    {
+      "code": "POSTAL",
+      "label": "Dịch vụ bưu chính",
+      "processing_time": "2 ngày làm việc",
+      "fee": null,
+      "description": "Trong thời hạn 02 ngày làm việc kể từ ngày người lao động tiếp tục thực hiện thông báo về việc tìm kiếm việc làm hằng tháng theo quy định."
+    },
+    {
+      "code": "IN_PERSON",
+      "label": "Trực tiếp",
+      "processing_time": "2 ngày làm việc",
+      "fee": null,
+      "description": "Trong thời hạn 02 ngày làm việc kể từ ngày người lao động tiếp tục thực hiện thông báo về việc tìm kiếm việc làm hằng tháng theo quy định."
+    }
+  ],
+  "processing_note": "Thời gian xử lý tham chiếu: 2 ngày làm việc. Nên xác định rõ nhu cầu lao động, hồ sơ nghề nghiệp hoặc chế độ cần giải quyết trước khi nộp. Có thể chọn kênh nộp phù hợp: Trực tiếp, Trực tuyến, Dịch vụ bưu chính. Hiện có 1 mục giấy tờ cần theo dõi trong checklist.",
+  "documents": {
+    "normally_required": [
+      {
+        "name": "Giấy tờ chứng minh về việc thông báo tìm kiếm việc làm hằng tháng theo quy định của người lao động đang hưởng trợ cấp thất nghiệp",
+        "quantity": "1 bản chính, 0 bản sao",
+        "notes": [],
+        "group": "default",
+        "attachment_path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/1_014751/Mus24tiPhlcbanhnhkmtheo_VL.docx"
+      }
+    ],
+    "conditional": [],
+    "forms": [
+      {
+        "name": "Giấy tờ chứng minh về việc thông báo tìm kiếm việc làm hằng tháng theo quy định của người lao động đang hưởng trợ cấp thất nghiệp",
+        "attachment_label": "Mus24tiPhlcbanhnhkmtheo_VL.docx",
+        "attachment_path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/1_014751/Mus24tiPhlcbanhnhkmtheo_VL.docx"
+      }
+    ],
+    "presented": [],
+    "notes": [],
+    "summary": [
+      {
+        "group": "default",
+        "name": "Giấy tờ chứng minh về việc thông báo tìm kiếm việc làm hằng tháng theo quy định của người lao động đang hưởng trợ cấp thất nghiệp",
+        "quantity": "1 bản chính, 0 bản sao",
+        "notes": [],
+        "attachment_path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/1_014751/Mus24tiPhlcbanhnhkmtheo_VL.docx"
+      },
+      {
+        "group": null,
+        "name": "Giấy tờ chứng minh về việc thông báo tìm kiếm việc làm hằng tháng theo quy định của người lao động đang hưởng trợ cấp thất nghiệp",
+        "quantity": null,
+        "notes": null,
+        "attachment_path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/1_014751/Mus24tiPhlcbanhnhkmtheo_VL.docx"
+      }
+    ]
+  },
+  "steps": [
+    {
+      "order": 1,
+      "title": "Bước 1",
+      "description": "1. Trong thời hạn 02 ngày làm việc kể từ ngày người lao động tiếp tục thực hiện thông báo về việc tìm kiếm việc làm hằng tháng theo quy định đối với người lao động bị tạm dừng hưởng trợ cấp thất nghiệp nếu vẫn còn thời gian hưởng trợ cấp thất nghiệp theo quyết định của Giám đốc Sở Nội vụ thì tổ chức dịch vụ việc làm công trình Giám đốc Sở Nội vụ quyết định về việc tiếp tục hưởng trợ cấp thất nghiệp cho người lao động.",
+      "example": "02 ngày làm việc"
+    },
+    {
+      "order": 2,
+      "title": "Bước 2",
+      "description": "Giám đốc Sở Nội vụ ban hành Quyết định về việc tiếp tục hưởng trợ cấp thất nghiệp.",
+      "example": null
+    },
+    {
+      "order": 3,
+      "title": "Bước 3",
+      "description": "Quyết định về việc tiếp tục hưởng trợ cấp thất nghiệp được tổ chức dịch vụ việc làm công gửi: 01 bản đến Bảo hiểm xã hội cơ sở để thực hiện tiếp tục chi trả trợ cấp thất nghiệp cho người lao động; 01 bản đến người lao động. Trường hợp người lao động nộp trực tuyến thì Quyết định về việc tiếp tục hưởng trợ cấp thất nghiệp gửi trực tuyến.",
+      "example": "trực tuyến"
+    }
+  ],
+  "input_fields": [
+    {
+      "field": "employment_need",
+      "label": "Nhu cầu việc làm hoặc lao động",
+      "type": "string",
+      "required": true
+    },
+    {
+      "field": "worker_or_employer_info",
+      "label": "Thông tin người lao động hoặc đơn vị sử dụng lao động",
+      "type": "string",
+      "required": true
+    },
+    {
+      "field": "submission_channel_preference",
+      "label": "Kênh nộp dự kiến",
+      "type": "enum",
+      "required": false,
+      "options": [
+        "Trực tiếp",
+        "Trực tuyến",
+        "Dịch vụ bưu chính"
+      ]
+    },
+    {
+      "field": "has_supporting_employment_documents",
+      "label": "Đã có hồ sơ lao động liên quan",
+      "type": "boolean",
+      "required": false
+    }
+  ],
+  "validation_rules": [
+    {
+      "id": "required-1",
+      "severity": "error",
+      "field": "employment_need",
+      "rule": "Trường bắt buộc phải có dữ liệu hợp lệ trước khi nộp.",
+      "message": "Thiếu trường bắt buộc: Nhu cầu việc làm hoặc lao động."
+    },
+    {
+      "id": "required-2",
+      "severity": "error",
+      "field": "worker_or_employer_info",
+      "rule": "Trường bắt buộc phải có dữ liệu hợp lệ trước khi nộp.",
+      "message": "Thiếu trường bắt buộc: Thông tin người lao động hoặc đơn vị sử dụng lao động."
+    },
+    {
+      "id": "hint-1",
+      "severity": "warning",
+      "field": "general",
+      "rule": "Nên xác định trước kênh nộp hồ sơ để biết có cần bản giấy, bản điện tử hay xuất trình trực tiếp.",
+      "message": "Nên xác định trước kênh nộp hồ sơ để biết có cần bản giấy, bản điện tử hay xuất trình trực tiếp."
+    },
+    {
+      "id": "hint-2",
+      "severity": "warning",
+      "field": "general",
+      "rule": "Có mẫu biểu đính kèm, nên kiểm tra đúng biểu mẫu trước khi nộp.",
+      "message": "Có mẫu biểu đính kèm, nên kiểm tra đúng biểu mẫu trước khi nộp."
+    },
+    {
+      "id": "hint-3",
+      "severity": "warning",
+      "field": "general",
+      "rule": "Nên xác định đúng nhóm thủ tục lao động, đơn vị liên quan và hồ sơ nghề nghiệp cần xuất trình.",
+      "message": "Nên xác định đúng nhóm thủ tục lao động, đơn vị liên quan và hồ sơ nghề nghiệp cần xuất trình."
+    }
+  ],
+  "common_errors": [
+    {
+      "field": "general",
+      "issue": "Thiếu hồ sơ về vị trí việc làm, đơn vị sử dụng lao động hoặc điều kiện làm việc áp dụng.",
+      "fix": "Nên xác định trước kênh nộp hồ sơ để biết có cần bản giấy, bản điện tử hay xuất trình trực tiếp."
+    }
+  ],
+  "clarifying_questions": [
+    {
+      "id": "clarify_1",
+      "question": "Bạn đang cần giải quyết thủ tục lao động nào cho người lao động hoặc doanh nghiệp?",
+      "purpose": "workflow_intake"
+    },
+    {
+      "id": "clarify_2",
+      "question": "Hồ sơ nghề nghiệp, đơn vị sử dụng lao động hoặc yếu tố lao động nước ngoài đã rõ chưa?",
+      "purpose": "workflow_intake"
+    }
+  ],
+  "legal_basis": [
+    {
+      "title": "Luật Việc làm",
+      "code": "74/2025/QH15"
+    },
+    {
+      "title": "Quy định chi tiết một số điều của Luật Việc làm về bảo hiểm thất nghiệp",
+      "code": "Nghị định số 374/2025/NĐ-CP"
+    }
+  ],
+  "legal_bases": [
+    {
+      "title": "Luật Việc làm",
+      "code": "74/2025/QH15"
+    },
+    {
+      "title": "Quy định chi tiết một số điều của Luật Việc làm về bảo hiểm thất nghiệp",
+      "code": "Nghị định số 374/2025/NĐ-CP"
+    }
+  ],
+  "faq": [
+    {
+      "question": "Có thể nộp qua kênh nào?",
+      "answer": "Các kênh hiện có: Trực tiếp, Trực tuyến, Dịch vụ bưu chính."
+    },
+    {
+      "question": "Thời gian xử lý tham chiếu là bao lâu?",
+      "answer": "Thời gian xử lý tham chiếu hiện có là 2 ngày làm việc."
+    },
+    {
+      "question": "Kết quả chính của thủ tục là gì?",
+      "answer": "Kết quả chính được trích xuất là Quyết định về việc tiếp tục hưởng trợ cấp thất nghiệp."
+    }
+  ],
+  "guidance": {
+    "highlight_documents": [
+      {
+        "bucket": "required",
+        "name": "Giấy tờ chứng minh về việc thông báo tìm kiếm việc làm hằng tháng theo quy định của người lao động đang hưởng trợ cấp thất nghiệp",
+        "conditions": [],
+        "attachment_path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/1_014751/Mus24tiPhlcbanhnhkmtheo_VL.docx"
+      }
+    ],
+    "special_cases": [
+      "Có thể cần xác minh quan hệ lao động hoặc giấy phép làm việc"
+    ],
+    "common_errors": [
+      "Thiếu hồ sơ về vị trí việc làm, đơn vị sử dụng lao động hoặc điều kiện làm việc áp dụng."
+    ],
+    "validation_hints": [
+      "Nên xác định trước kênh nộp hồ sơ để biết có cần bản giấy, bản điện tử hay xuất trình trực tiếp.",
+      "Có mẫu biểu đính kèm, nên kiểm tra đúng biểu mẫu trước khi nộp.",
+      "Nên xác định đúng nhóm thủ tục lao động, đơn vị liên quan và hồ sơ nghề nghiệp cần xuất trình."
+    ]
+  },
+  "next_steps": {
+    "summary": "Nên xác định rõ nhu cầu lao động, hồ sơ nghề nghiệp hoặc chế độ cần giải quyết trước khi nộp. Có thể chọn kênh nộp phù hợp: Trực tiếp, Trực tuyến, Dịch vụ bưu chính. Hiện có 1 mục giấy tờ cần theo dõi trong checklist.",
+    "time_badge": "2 ngày làm việc",
+    "result_label": "Quyết định về việc tiếp tục hưởng trợ cấp thất nghiệp",
+    "primary_channel": "online",
+    "channels": [
+      "in_person",
+      "online",
+      "postal"
+    ]
+  },
+  "notes": [],
+  "provenance": {
+    "pipeline": "raw->structured->normalized->enriched->ui_api_payload",
+    "normalizer_version": "0.2.0",
+    "enricher_version": "0.2.0",
+    "mapping_notes": "workflow_generated:viec_lam/bao_hiem_xa_hoi_that_nghiep_tro_cap",
+    "supported_group": true
+  }
+}

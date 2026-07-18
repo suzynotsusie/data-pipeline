@@ -1,0 +1,114 @@
+{
+  "schema_version": "1.0",
+  "enricher_version": "0.2.0",
+  "source": {
+    "procedure_code": "1.013338",
+    "title": "Xét công nhận tốt nghiệp trung học phổ thông",
+    "group_key": "hoc_tap",
+    "workflow_family": "education_study_workflow",
+    "subflow": "tuyen_sinh"
+  },
+  "experience": {
+    "entry_label": "Hỗ trợ giáo dục và học tập",
+    "overview_summary": "Thủ tục này thuộc nhóm giáo dục và học tập, thường liên quan đến hồ sơ đào tạo, văn bằng hoặc điều kiện học tập của người học. Kết quả thường nhận được là Bằng tốt nghiệp trung học phổ thông. Thời gian xử lý tham khảo: 7 ngày.",
+    "next_step_summary": "Nên rà trước thông tin người học, cơ sở đào tạo và loại kết quả cần xin xác nhận hoặc cấp lại. Có thể chọn kênh nộp phù hợp: Trực tiếp, Trực tuyến. Hiện có khoảng 6 mục giấy tờ cần theo dõi trong checklist.",
+    "tone": "supportive_public_service"
+  },
+  "guidance": {
+    "highlight_documents": [
+      {
+        "bucket": "required",
+        "name": "Giấy tờ xác nhận được triệu tập tham gia kỳ thi chọn đội tuyển quốc gia dự thi Olympic quốc tế hoặc Olympic khu vực các môn văn hóa; hoặc, người trong đội tuyển tham gia các cuộc thi Olympic quốc tế hoặc Olympic khu vực về khoa học kỹ thuật, văn hóa - văn nghệ đáp ứng các điều kiện miễn thi tất cả các môn thi trong kỳ thi tốt nghiệp trung học phổ thông quy định tại điểm a, điểm b khoản 1 Điều 39 Quy chế thi tốt nghiệp trung học phổ thông",
+        "conditions": [],
+        "attachment_path": null
+      },
+      {
+        "bucket": "required",
+        "name": "Giấy tờ minh chứng được miễn thi môn Ngữ văn trong xét công nhận tốt nghiệp trung học phổ thông đáp ứng điều kiện quy định tại khoản 3 Điều 39 Quy chế thi tốt nghiệp trung học phổ thông",
+        "conditions": [],
+        "attachment_path": null
+      },
+      {
+        "bucket": "required",
+        "name": "Phiếu đăng ký xét công nhận tốt nghiệp trung học phổ thông (theo mẫu tại Phụ lục III ban hành kèm theo Thông tư số 24/2024/TT-BGDĐT ngày 24/12/2024 của Bộ trưởng Bộ Giáo dục và Đào tạo ban hành Quy chế thi tốt nghiệp trung học phổ thông)",
+        "conditions": [],
+        "attachment_path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/1_013338/MUPHIUNGKXTCNGNHNTTNGHIPTHPT.docx"
+      },
+      {
+        "bucket": "required",
+        "name": "Giấy xác nhận khuyết tật do cơ quan có thẩm quyền cấp; hoặc Giấy xác nhận bị nhiễm chất độc hóa học và bị suy giảm khả năng lao động từ 61% trở lên do cơ quan có thẩm quyền cấp đáp ứng điều kiện miễn thi tất cả các môn thi trong kỳ thi tốt nghiệp trung học phổ thông quy định tại điểm c khoản 1 Điều 39 Quy chế thi tốt nghiệp trung học phổ thông",
+        "conditions": [],
+        "attachment_path": null
+      },
+      {
+        "bucket": "required",
+        "name": "Giấy tờ, chứng chỉ ngoại ngữ để chứng minh được miễn thi môn ngoại ngữ trong xét công nhận tốt nghiệp đáp ứng các điều kiện quy định taị khoản 2 Điều 39 Quy chế thi tốt nghiệp trung học phổ thông",
+        "conditions": [],
+        "attachment_path": null
+      },
+      {
+        "bucket": "conditional",
+        "name": "Hồ sơ, giấy tờ chứng minh thuộc đối tượng được cộng điểm ưu tiên, điểm khuyến khích (nếu có) theo quy định tại Điều 42, Điều 43 Quy chế thi tốt nghiệp trung học phổ thông",
+        "conditions": [
+          "Hồ sơ, giấy tờ chứng minh thuộc đối tượng được cộng điểm ưu tiên, điểm khuyến khích (nếu có) theo quy định tại Điều 42, Điều 43 Quy chế thi tốt nghiệp trung học phổ thông"
+        ],
+        "attachment_path": null
+      }
+    ],
+    "special_cases": [
+      "Có thể cần xác minh quan hệ lao động hoặc giấy phép làm việc"
+    ],
+    "common_errors": [
+      "Điền sai mẫu tờ khai hoặc chọn sai biểu mẫu đi kèm.",
+      "Thiếu hồ sơ về vị trí việc làm, đơn vị sử dụng lao động hoặc điều kiện làm việc áp dụng."
+    ],
+    "validation_hints": [
+      "Nên xác định trước kênh nộp hồ sơ để biết có cần bản giấy, bản điện tử hay xuất trình trực tiếp.",
+      "Có mẫu biểu đính kèm, nên kiểm tra đúng biểu mẫu trước khi nộp.",
+      "Nên rà lại thông tin người học, cơ sở đào tạo và loại xác nhận hoặc văn bằng cần xin."
+    ]
+  },
+  "intake": {
+    "candidate_input_fields": [
+      {
+        "field_id": "learner_full_name",
+        "label": "Tên người học",
+        "field_type": "text",
+        "required": true
+      },
+      {
+        "field_id": "education_record_type",
+        "label": "Loại hồ sơ học tập cần xử lý",
+        "field_type": "text",
+        "required": true
+      },
+      {
+        "field_id": "education_institution",
+        "label": "Cơ sở đào tạo liên quan",
+        "field_type": "text",
+        "required": false
+      },
+      {
+        "field_id": "submission_channel_preference",
+        "label": "Kênh nộp dự kiến",
+        "field_type": "enum",
+        "required": false
+      }
+    ],
+    "suggested_clarifying_questions": [
+      "Bạn đang cần xử lý hồ sơ học tập, văn bằng hay xác nhận nào?",
+      "Người học và cơ sở đào tạo liên quan đã xác định rõ chưa?"
+    ]
+  },
+  "ui_hints": {
+    "primary_channel": "online",
+    "result_label": "Bằng tốt nghiệp trung học phổ thông",
+    "time_badge": "7 ngày",
+    "document_count_badge": 6
+  },
+  "provenance": {
+    "generator": "workflow_domain_enricher",
+    "derivation_mode": "rule_based_semantic_enrichment",
+    "supported_group": true
+  }
+}

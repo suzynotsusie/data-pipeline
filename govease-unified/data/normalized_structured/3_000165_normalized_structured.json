@@ -1,0 +1,142 @@
+{
+  "schema_version": "1.0",
+  "normalizer_version": "0.2.0",
+  "source": {
+    "procedure_code": "3.000165",
+    "title": "Đăng ký cấp sao bản án, tài liệu trong hồ sơ vụ án",
+    "raw_structured_parser_version": "0.1.0",
+    "field": "Tòa án"
+  },
+  "procedure": {
+    "level": null,
+    "procedure_type": null,
+    "target_users": [],
+    "authorities": [
+      "Tòa án nhân dân tối cao Tòa án nhân dân cấp cao Tòa án nhân dân tỉnh, thành phố trực thuộc trung ương Tòa án nhân dân cấp huyện, quận, thị xã, thành phố thuộc tỉnh và tương đương"
+    ],
+    "receiving_places": []
+  },
+  "submission": {
+    "channels": [
+      "in_person",
+      "online"
+    ],
+    "methods": [
+      {
+        "method_id": "method_1",
+        "channel": "in_person",
+        "processing_time_text": null,
+        "fee_text": null,
+        "description": "Theo quy định của Bộ luật Tố tụng dân sự, Bộ Luật tố tụng hành chính",
+        "is_online": false,
+        "is_postal": false,
+        "is_in_person": true
+      },
+      {
+        "method_id": "method_2",
+        "channel": "online",
+        "processing_time_text": null,
+        "fee_text": null,
+        "description": "Theo quy định của Bộ luật Tố tụng dân sự, Bộ Luật tố tụng hành chính",
+        "is_online": true,
+        "is_postal": false,
+        "is_in_person": false
+      }
+    ],
+    "timing_summary": {
+      "unique_processing_times": [],
+      "method_count": 2
+    }
+  },
+  "documents": {
+    "required": [
+      {
+        "document_id": "ch_ng_minh_nh_n_d_n_c_n_c_c_c_ng_d_n",
+        "name": "Chứng minh nhân dân/Căn cước công dân",
+        "group_name": "default",
+        "group_type": "required",
+        "original_count": null,
+        "copy_count": "1",
+        "conditions": [],
+        "attachment_label": null,
+        "attachment_path": null
+      },
+      {
+        "document_id": "n_ng_k_c_p_sao_t_i_li_u",
+        "name": "Đơn đăng ký cấp sao tài liệu",
+        "group_name": "default",
+        "group_type": "required",
+        "original_count": "1",
+        "copy_count": null,
+        "conditions": [],
+        "attachment_label": null,
+        "attachment_path": null
+      }
+    ],
+    "conditional": [],
+    "presented": [],
+    "notes": [],
+    "forms": [],
+    "empty_groups": [],
+    "document_count": 2
+  },
+  "process": {
+    "steps": [
+      {
+        "step_id": "step_1",
+        "title": "Bước 1.",
+        "content": "Bước 1. Cá nhân, tổ chức đề nghị cấp bản sao trích lục bản án tại cơ quan Tòa án. Trường hợp thực hiện trực tuyến, cá nhân, tổ chức đăng nhập Cổng Dịch vụ công Quốc gia/Cổng thông tin điện tử của Tòa án nhân dân và lựa chọn dịch vụ, thực hiện nộp đăng ký trực tuyến.",
+        "actor": "authority",
+        "channel_hint": "trực tuyến",
+        "time_hint": null
+      },
+      {
+        "step_id": "step_2",
+        "title": "Bước 2.",
+        "content": "Bước 2. Cơ quan Tòa án xử lý đề nghị của cá nhân, tổ chức.",
+        "actor": "authority",
+        "channel_hint": null,
+        "time_hint": null
+      },
+      {
+        "step_id": "step_3",
+        "title": "Bước 3.",
+        "content": "Bước 3. Cơ quan Tòa án thông báo kết quả và phí cấp bản sao. Trường hợp thực hiện trực tuyến, thông báo sẽ được gửi trực tuyến đến cá nhân, tổ chức. Cá nhân, tổ chức thực hiện đóng phí cấp bản sao trực tuyến.",
+        "actor": "authority",
+        "channel_hint": "trực tuyến",
+        "time_hint": null
+      },
+      {
+        "step_id": "step_4",
+        "title": "Bước 4.",
+        "content": "Bước 4. Cá nhân, tổ chức nộp phí cấp bản sao và nhận kết quả tại Cơ quan Tòa án hoặc nhận kết quả qua đường bưu điện. Trường hợp thực hiện trực tuyến, cá nhân, tổ chức có thể nhận kết quả là các văn bản điện tử.",
+        "actor": "authority",
+        "channel_hint": "trực tuyến",
+        "time_hint": null
+      }
+    ],
+    "step_count": 4,
+    "notes": []
+  },
+  "eligibility": {
+    "conditions": [],
+    "has_conditions": false
+  },
+  "results": {
+    "items": [],
+    "primary_result": null
+  },
+  "legal_basis": {
+    "items": [],
+    "count": 0
+  },
+  "attachments": [],
+  "signals": {
+    "raw_parse_warnings": [],
+    "missing_documents": false,
+    "documents_section_present": true,
+    "documents_declared_empty": false,
+    "documents_only_in_notes": false,
+    "missing_results": true
+  }
+}

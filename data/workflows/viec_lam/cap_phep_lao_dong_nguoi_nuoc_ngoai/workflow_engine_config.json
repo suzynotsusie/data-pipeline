@@ -1,0 +1,361 @@
+{
+  "schema_version": "1.0",
+  "domain": "viec_lam",
+  "updated_at": "2026-07-18",
+  "source_files": [
+    "C:\\Users\\ku060\\Downloads\\VAIC source\\data-pipeline\\main\\full-data.csv",
+    "C:\\Users\\ku060\\Downloads\\VAIC source\\data-pipeline\\data\\workflows\\viec_lam\\summary.csv",
+    "C:\\Users\\ku060\\Downloads\\VAIC source\\data-pipeline\\data\\workflows\\viec_lam\\normalized.json",
+    "C:\\Users\\ku060\\Downloads\\VAIC source\\data-pipeline\\raw_data"
+  ],
+  "coverage": {
+    "expected_codes": [
+      "1.004527",
+      "1.014196",
+      "1.014197",
+      "1.014198",
+      "1.014199",
+      "1.014200",
+      "1.014201",
+      "2.000725",
+      "2.000731",
+      "2.000902",
+      "2.000907",
+      "2.001830",
+      "2.001940"
+    ],
+    "covered_codes": [
+      "1.004527",
+      "1.014196",
+      "1.014197",
+      "1.014198",
+      "1.014199",
+      "1.014200",
+      "1.014201",
+      "2.000725",
+      "2.000731",
+      "2.000902",
+      "2.000907",
+      "2.001830",
+      "2.001940"
+    ],
+    "missing_codes": []
+  },
+  "llm_contract": {
+    "role": "parse_user_answer_and_rephrase_question_only",
+    "required_output_schema": {
+      "intent": "viec_lam",
+      "current_node": "string",
+      "slot_updates": {
+        "subdomain_key": "ho_tro_tu_van_gioi_thieu_viec_lam | tuyen_dung | bao_hiem_xa_hoi_that_nghiep_tro_cap | chung_chi_hanh_nghe | nang_ngach | thue_thu_nhap_ca_nhan | cap_phep_lao_dong_nguoi_nuoc_ngoai | unknown",
+        "operation_key": "string",
+        "operation_group": "string"
+      },
+      "confidence": "0_to_1",
+      "needs_human_review": "boolean"
+    }
+  },
+  "entry_prompts": [
+    "Bạn đang cần tìm việc, nhận trợ cấp thất nghiệp, học nâng cao kỹ năng, khai thuế thu nhập hay làm giấy phép lao động?",
+    "Bạn muốn đăng ký mới, điều chỉnh thông tin, xin hỗ trợ, xin cấp chứng chỉ hay xin giấy phép làm việc?"
+  ],
+  "slots": [
+    {
+      "name": "subdomain_key",
+      "required": true,
+      "description": "Nhánh chính của nhóm Việc làm."
+    },
+    {
+      "name": "operation_key",
+      "required": true,
+      "description": "Thao tác cụ thể ánh xạ trực tiếp tới thủ tục cuối cùng."
+    },
+    {
+      "name": "operation_group",
+      "required": false,
+      "description": "Nhóm thao tác để gom các thủ tục gần nhau cho UI và parser."
+    }
+  ],
+  "subdomain_catalog": [
+    {
+      "subdomain_key": "cap_phep_lao_dong_nguoi_nuoc_ngoai",
+      "subdomain_label": "Cấp phép lao động cho người nước ngoài",
+      "event_id": 267,
+      "summary": "Nhóm thủ tục cấp, cấp lại, gia hạn giấy phép lao động hoặc xác nhận miễn giấy phép lao động cho người nước ngoài làm việc tại Việt Nam."
+    }
+  ],
+  "decision_tree": {
+    "start_node": "employment_subdomain",
+    "nodes": [
+      {
+        "id": "employment_subdomain",
+        "type": "question",
+        "slot": "subdomain_key",
+        "question": "Bạn đang hỏi về hỗ trợ việc làm, tuyển dụng, trợ cấp thất nghiệp, chứng chỉ nghề, nâng cao kỹ năng, thuế thu nhập cá nhân hay giấy phép lao động cho người nước ngoài?",
+        "options": [
+          "cap_phep_lao_dong_nguoi_nuoc_ngoai"
+        ],
+        "prefilled_value": "cap_phep_lao_dong_nguoi_nuoc_ngoai"
+      },
+      {
+        "id": "employment_operation",
+        "type": "question",
+        "slot": "operation_key",
+        "question": "Bạn cần làm thao tác nào cụ thể trong nhánh đã chọn?",
+        "options_by_subdomain": {
+          "cap_phep_lao_dong_nguoi_nuoc_ngoai": [
+            {
+              "operation_key": "cap_lai_giay_phep_lam_viec_cho_cong_dan_o_xto_ray_li_a_tham_gia_chuong_trinh_lao_dong_ket_hop_ky_nghi_tai_viet_nam",
+              "operation_group": "cap_lai_gpld_ky_nghi_ket_hop_lao_dong",
+              "procedure_code": "1.004527",
+              "procedure_title": "Cấp lại Giấy phép làm việc cho công dân Ô-xtơ-rây-li-a tham gia Chương trình Lao động kết hợp kỳ nghỉ tại Việt Nam"
+            },
+            {
+              "operation_key": "cap_giay_xac_nhan_khong_thuoc_dien_cap_giay_phep_lao_dong_doi_voi_nguoi_lao_dong_nuoc_ngoai_lam_viec_tai_viet_nam",
+              "operation_group": "cap_xac_nhan_mien_gpld",
+              "procedure_code": "1.014196",
+              "procedure_title": "Cấp giấy xác nhận không thuộc diện cấp giấy phép lao động đối với người lao động nước ngoài làm việc tại Việt Nam"
+            },
+            {
+              "operation_key": "cap_lai_giay_xac_nhan_khong_thuoc_dien_cap_giay_phep_lao_dong_doi_voi_nguoi_lao_dong_nuoc_ngoai_lam_viec_tai_viet_nam",
+              "operation_group": "cap_lai_xac_nhan_mien_gpld",
+              "procedure_code": "1.014197",
+              "procedure_title": "Cấp lại giấy xác nhận không thuộc diện cấp giấy phép lao động đối với người lao động nước ngoài làm việc tại Việt Nam"
+            },
+            {
+              "operation_key": "gia_han_giay_xac_nhan_khong_thuoc_dien_cap_giay_phep_lao_dong_doi_voi_nguoi_lao_dong_nuoc_ngoai_lam_viec_tai_viet_nam",
+              "operation_group": "gia_han_xac_nhan_mien_gpld",
+              "procedure_code": "1.014198",
+              "procedure_title": "Gia hạn giấy xác nhận không thuộc diện cấp giấy phép lao động đối với người lao động nước ngoài làm việc tại Việt Nam"
+            },
+            {
+              "operation_key": "cap_giay_phep_lao_dong_doi_voi_nguoi_lao_dong_nuoc_ngoai_lam_viec_tai_viet_nam",
+              "operation_group": "cap_gpld_nguoi_nuoc_ngoai",
+              "procedure_code": "1.014199",
+              "procedure_title": "Cấp giấy phép lao động đối với người lao động nước ngoài làm việc tại Việt Nam"
+            },
+            {
+              "operation_key": "cap_lai_giay_phep_lao_dong_doi_voi_nguoi_lao_dong_nuoc_ngoai_lam_viec_tai_viet_nam",
+              "operation_group": "cap_lai_gpld_nguoi_nuoc_ngoai",
+              "procedure_code": "1.014200",
+              "procedure_title": "Cấp lại giấy phép lao động đối với người lao động nước ngoài làm việc tại Việt Nam"
+            },
+            {
+              "operation_key": "gia_han_giay_phep_lao_dong_doi_voi_nguoi_lao_dong_nuoc_ngoai_lam_viec_tai_viet_nam",
+              "operation_group": "gia_han_gpld_nguoi_nuoc_ngoai",
+              "procedure_code": "1.014201",
+              "procedure_title": "Gia hạn giấy phép lao động đối với người lao động nước ngoài làm việc tại Việt Nam"
+            },
+            {
+              "operation_key": "cap_lai_giay_phep_lam_viec_trong_ky_nghi_cho_cong_dan_niu_di_lan",
+              "operation_group": "cap_lai_gpld_ky_nghi_ket_hop_lao_dong",
+              "procedure_code": "2.000725",
+              "procedure_title": "Cấp lại Giấy phép làm việc trong kỳ nghỉ cho công dân Niu-Di-Lân"
+            },
+            {
+              "operation_key": "cap_giay_phep_lam_viec_trong_ky_nghi_cho_cong_dan_niu_di_lan",
+              "operation_group": "cap_gpld_ky_nghi_ket_hop_lao_dong",
+              "procedure_code": "2.000731",
+              "procedure_title": "Cấp giấy phép làm việc trong kỳ nghỉ cho công dân Niu-Di-Lân"
+            },
+            {
+              "operation_key": "cap_lai_giay_phep_lao_dong_cho_chuyen_gia_khoa_hoc_cong_nghe_lam_viec_tai_viet_nam",
+              "operation_group": "cap_lai_gpld_chuyen_gia_khcn",
+              "procedure_code": "2.000902",
+              "procedure_title": "Cấp lại giấy phép lao động cho chuyên gia khoa học công nghệ làm việc tại Việt Nam"
+            },
+            {
+              "operation_key": "cap_giay_phep_lao_dong_cho_chuyen_gia_khoa_hoc_cong_nghe_lam_viec_tai_viet_nam",
+              "operation_group": "cap_gpld_chuyen_gia_khcn",
+              "procedure_code": "2.000907",
+              "procedure_title": "Cấp giấy phép lao động cho chuyên gia khoa học công nghệ làm việc tại Việt Nam"
+            },
+            {
+              "operation_key": "cap_giay_phep_lam_viec_cho_cong_dan_o_xto_ray_li_a_tham_gia_chuong_trinh_lao_dong_ket_hop_ky_nghi_tai_viet_nam",
+              "operation_group": "cap_gpld_ky_nghi_ket_hop_lao_dong",
+              "procedure_code": "2.001830",
+              "procedure_title": "Cấp Giấy phép làm việc cho công dân Ô-xtơ-rây-li-a tham gia Chương trình Lao động kết hợp kỳ nghỉ tại Việt Nam"
+            },
+            {
+              "operation_key": "bao_cao_chuyen_gia_khoa_hoc_cong_nghe_khong_thuoc_dien_cap_giay_phep_lao_dong_lam_viec_tai_viet_nam",
+              "operation_group": "cap_xac_nhan_mien_gpld",
+              "procedure_code": "2.001940",
+              "procedure_title": "Báo cáo chuyên gia khoa học công nghệ không thuộc diện cấp giấy phép lao động làm việc tại Việt Nam"
+            }
+          ]
+        },
+        "options": [
+          "cap_lai_giay_phep_lam_viec_cho_cong_dan_o_xto_ray_li_a_tham_gia_chuong_trinh_lao_dong_ket_hop_ky_nghi_tai_viet_nam",
+          "cap_giay_xac_nhan_khong_thuoc_dien_cap_giay_phep_lao_dong_doi_voi_nguoi_lao_dong_nuoc_ngoai_lam_viec_tai_viet_nam",
+          "cap_lai_giay_xac_nhan_khong_thuoc_dien_cap_giay_phep_lao_dong_doi_voi_nguoi_lao_dong_nuoc_ngoai_lam_viec_tai_viet_nam",
+          "gia_han_giay_xac_nhan_khong_thuoc_dien_cap_giay_phep_lao_dong_doi_voi_nguoi_lao_dong_nuoc_ngoai_lam_viec_tai_viet_nam",
+          "cap_giay_phep_lao_dong_doi_voi_nguoi_lao_dong_nuoc_ngoai_lam_viec_tai_viet_nam",
+          "cap_lai_giay_phep_lao_dong_doi_voi_nguoi_lao_dong_nuoc_ngoai_lam_viec_tai_viet_nam",
+          "gia_han_giay_phep_lao_dong_doi_voi_nguoi_lao_dong_nuoc_ngoai_lam_viec_tai_viet_nam",
+          "cap_lai_giay_phep_lam_viec_trong_ky_nghi_cho_cong_dan_niu_di_lan",
+          "cap_giay_phep_lam_viec_trong_ky_nghi_cho_cong_dan_niu_di_lan",
+          "cap_lai_giay_phep_lao_dong_cho_chuyen_gia_khoa_hoc_cong_nghe_lam_viec_tai_viet_nam",
+          "cap_giay_phep_lao_dong_cho_chuyen_gia_khoa_hoc_cong_nghe_lam_viec_tai_viet_nam",
+          "cap_giay_phep_lam_viec_cho_cong_dan_o_xto_ray_li_a_tham_gia_chuong_trinh_lao_dong_ket_hop_ky_nghi_tai_viet_nam",
+          "bao_cao_chuyen_gia_khoa_hoc_cong_nghe_khong_thuoc_dien_cap_giay_phep_lao_dong_lam_viec_tai_viet_nam"
+        ]
+      }
+    ],
+    "routes": [
+      {
+        "route_id": "cap_phep_lao_dong_nguoi_nuoc_ngoai-1_004527",
+        "conditions": {
+          "subdomain_key": "cap_phep_lao_dong_nguoi_nuoc_ngoai",
+          "operation_key": "cap_lai_giay_phep_lam_viec_cho_cong_dan_o_xto_ray_li_a_tham_gia_chuong_trinh_lao_dong_ket_hop_ky_nghi_tai_viet_nam"
+        },
+        "procedure_code": "1.004527",
+        "procedure_name": "Cấp lại Giấy phép làm việc cho công dân Ô-xtơ-rây-li-a tham gia Chương trình Lao động kết hợp kỳ nghỉ tại Việt Nam",
+        "why_this_route": "Route trực tiếp cho nhu cầu 'Cấp lại Giấy phép làm việc cho công dân Ô-xtơ-rây-li-a tham gia Chương trình Lao động kết hợp kỳ nghỉ tại Việt Nam' trong nhánh 'Cấp phép lao động cho người nước ngoài'."
+      },
+      {
+        "route_id": "cap_phep_lao_dong_nguoi_nuoc_ngoai-1_014196",
+        "conditions": {
+          "subdomain_key": "cap_phep_lao_dong_nguoi_nuoc_ngoai",
+          "operation_key": "cap_giay_xac_nhan_khong_thuoc_dien_cap_giay_phep_lao_dong_doi_voi_nguoi_lao_dong_nuoc_ngoai_lam_viec_tai_viet_nam"
+        },
+        "procedure_code": "1.014196",
+        "procedure_name": "Cấp giấy xác nhận không thuộc diện cấp giấy phép lao động đối với người lao động nước ngoài làm việc tại Việt Nam",
+        "why_this_route": "Route trực tiếp cho nhu cầu 'Cấp giấy xác nhận không thuộc diện cấp giấy phép lao động đối với người lao động nước ngoài làm việc tại Việt Nam' trong nhánh 'Cấp phép lao động cho người nước ngoài'."
+      },
+      {
+        "route_id": "cap_phep_lao_dong_nguoi_nuoc_ngoai-1_014197",
+        "conditions": {
+          "subdomain_key": "cap_phep_lao_dong_nguoi_nuoc_ngoai",
+          "operation_key": "cap_lai_giay_xac_nhan_khong_thuoc_dien_cap_giay_phep_lao_dong_doi_voi_nguoi_lao_dong_nuoc_ngoai_lam_viec_tai_viet_nam"
+        },
+        "procedure_code": "1.014197",
+        "procedure_name": "Cấp lại giấy xác nhận không thuộc diện cấp giấy phép lao động đối với người lao động nước ngoài làm việc tại Việt Nam",
+        "why_this_route": "Route trực tiếp cho nhu cầu 'Cấp lại giấy xác nhận không thuộc diện cấp giấy phép lao động đối với người lao động nước ngoài làm việc tại Việt Nam' trong nhánh 'Cấp phép lao động cho người nước ngoài'."
+      },
+      {
+        "route_id": "cap_phep_lao_dong_nguoi_nuoc_ngoai-1_014198",
+        "conditions": {
+          "subdomain_key": "cap_phep_lao_dong_nguoi_nuoc_ngoai",
+          "operation_key": "gia_han_giay_xac_nhan_khong_thuoc_dien_cap_giay_phep_lao_dong_doi_voi_nguoi_lao_dong_nuoc_ngoai_lam_viec_tai_viet_nam"
+        },
+        "procedure_code": "1.014198",
+        "procedure_name": "Gia hạn giấy xác nhận không thuộc diện cấp giấy phép lao động đối với người lao động nước ngoài làm việc tại Việt Nam",
+        "why_this_route": "Route trực tiếp cho nhu cầu 'Gia hạn giấy xác nhận không thuộc diện cấp giấy phép lao động đối với người lao động nước ngoài làm việc tại Việt Nam' trong nhánh 'Cấp phép lao động cho người nước ngoài'."
+      },
+      {
+        "route_id": "cap_phep_lao_dong_nguoi_nuoc_ngoai-1_014199",
+        "conditions": {
+          "subdomain_key": "cap_phep_lao_dong_nguoi_nuoc_ngoai",
+          "operation_key": "cap_giay_phep_lao_dong_doi_voi_nguoi_lao_dong_nuoc_ngoai_lam_viec_tai_viet_nam"
+        },
+        "procedure_code": "1.014199",
+        "procedure_name": "Cấp giấy phép lao động đối với người lao động nước ngoài làm việc tại Việt Nam",
+        "why_this_route": "Route trực tiếp cho nhu cầu 'Cấp giấy phép lao động đối với người lao động nước ngoài làm việc tại Việt Nam' trong nhánh 'Cấp phép lao động cho người nước ngoài'."
+      },
+      {
+        "route_id": "cap_phep_lao_dong_nguoi_nuoc_ngoai-1_014200",
+        "conditions": {
+          "subdomain_key": "cap_phep_lao_dong_nguoi_nuoc_ngoai",
+          "operation_key": "cap_lai_giay_phep_lao_dong_doi_voi_nguoi_lao_dong_nuoc_ngoai_lam_viec_tai_viet_nam"
+        },
+        "procedure_code": "1.014200",
+        "procedure_name": "Cấp lại giấy phép lao động đối với người lao động nước ngoài làm việc tại Việt Nam",
+        "why_this_route": "Route trực tiếp cho nhu cầu 'Cấp lại giấy phép lao động đối với người lao động nước ngoài làm việc tại Việt Nam' trong nhánh 'Cấp phép lao động cho người nước ngoài'."
+      },
+      {
+        "route_id": "cap_phep_lao_dong_nguoi_nuoc_ngoai-1_014201",
+        "conditions": {
+          "subdomain_key": "cap_phep_lao_dong_nguoi_nuoc_ngoai",
+          "operation_key": "gia_han_giay_phep_lao_dong_doi_voi_nguoi_lao_dong_nuoc_ngoai_lam_viec_tai_viet_nam"
+        },
+        "procedure_code": "1.014201",
+        "procedure_name": "Gia hạn giấy phép lao động đối với người lao động nước ngoài làm việc tại Việt Nam",
+        "why_this_route": "Route trực tiếp cho nhu cầu 'Gia hạn giấy phép lao động đối với người lao động nước ngoài làm việc tại Việt Nam' trong nhánh 'Cấp phép lao động cho người nước ngoài'."
+      },
+      {
+        "route_id": "cap_phep_lao_dong_nguoi_nuoc_ngoai-2_000725",
+        "conditions": {
+          "subdomain_key": "cap_phep_lao_dong_nguoi_nuoc_ngoai",
+          "operation_key": "cap_lai_giay_phep_lam_viec_trong_ky_nghi_cho_cong_dan_niu_di_lan"
+        },
+        "procedure_code": "2.000725",
+        "procedure_name": "Cấp lại Giấy phép làm việc trong kỳ nghỉ cho công dân Niu-Di-Lân",
+        "why_this_route": "Route trực tiếp cho nhu cầu 'Cấp lại Giấy phép làm việc trong kỳ nghỉ cho công dân Niu-Di-Lân' trong nhánh 'Cấp phép lao động cho người nước ngoài'."
+      },
+      {
+        "route_id": "cap_phep_lao_dong_nguoi_nuoc_ngoai-2_000731",
+        "conditions": {
+          "subdomain_key": "cap_phep_lao_dong_nguoi_nuoc_ngoai",
+          "operation_key": "cap_giay_phep_lam_viec_trong_ky_nghi_cho_cong_dan_niu_di_lan"
+        },
+        "procedure_code": "2.000731",
+        "procedure_name": "Cấp giấy phép làm việc trong kỳ nghỉ cho công dân Niu-Di-Lân",
+        "why_this_route": "Route trực tiếp cho nhu cầu 'Cấp giấy phép làm việc trong kỳ nghỉ cho công dân Niu-Di-Lân' trong nhánh 'Cấp phép lao động cho người nước ngoài'."
+      },
+      {
+        "route_id": "cap_phep_lao_dong_nguoi_nuoc_ngoai-2_000902",
+        "conditions": {
+          "subdomain_key": "cap_phep_lao_dong_nguoi_nuoc_ngoai",
+          "operation_key": "cap_lai_giay_phep_lao_dong_cho_chuyen_gia_khoa_hoc_cong_nghe_lam_viec_tai_viet_nam"
+        },
+        "procedure_code": "2.000902",
+        "procedure_name": "Cấp lại giấy phép lao động cho chuyên gia khoa học công nghệ làm việc tại Việt Nam",
+        "why_this_route": "Route trực tiếp cho nhu cầu 'Cấp lại giấy phép lao động cho chuyên gia khoa học công nghệ làm việc tại Việt Nam' trong nhánh 'Cấp phép lao động cho người nước ngoài'."
+      },
+      {
+        "route_id": "cap_phep_lao_dong_nguoi_nuoc_ngoai-2_000907",
+        "conditions": {
+          "subdomain_key": "cap_phep_lao_dong_nguoi_nuoc_ngoai",
+          "operation_key": "cap_giay_phep_lao_dong_cho_chuyen_gia_khoa_hoc_cong_nghe_lam_viec_tai_viet_nam"
+        },
+        "procedure_code": "2.000907",
+        "procedure_name": "Cấp giấy phép lao động cho chuyên gia khoa học công nghệ làm việc tại Việt Nam",
+        "why_this_route": "Route trực tiếp cho nhu cầu 'Cấp giấy phép lao động cho chuyên gia khoa học công nghệ làm việc tại Việt Nam' trong nhánh 'Cấp phép lao động cho người nước ngoài'."
+      },
+      {
+        "route_id": "cap_phep_lao_dong_nguoi_nuoc_ngoai-2_001830",
+        "conditions": {
+          "subdomain_key": "cap_phep_lao_dong_nguoi_nuoc_ngoai",
+          "operation_key": "cap_giay_phep_lam_viec_cho_cong_dan_o_xto_ray_li_a_tham_gia_chuong_trinh_lao_dong_ket_hop_ky_nghi_tai_viet_nam"
+        },
+        "procedure_code": "2.001830",
+        "procedure_name": "Cấp Giấy phép làm việc cho công dân Ô-xtơ-rây-li-a tham gia Chương trình Lao động kết hợp kỳ nghỉ tại Việt Nam",
+        "why_this_route": "Route trực tiếp cho nhu cầu 'Cấp Giấy phép làm việc cho công dân Ô-xtơ-rây-li-a tham gia Chương trình Lao động kết hợp kỳ nghỉ tại Việt Nam' trong nhánh 'Cấp phép lao động cho người nước ngoài'."
+      },
+      {
+        "route_id": "cap_phep_lao_dong_nguoi_nuoc_ngoai-2_001940",
+        "conditions": {
+          "subdomain_key": "cap_phep_lao_dong_nguoi_nuoc_ngoai",
+          "operation_key": "bao_cao_chuyen_gia_khoa_hoc_cong_nghe_khong_thuoc_dien_cap_giay_phep_lao_dong_lam_viec_tai_viet_nam"
+        },
+        "procedure_code": "2.001940",
+        "procedure_name": "Báo cáo chuyên gia khoa học công nghệ không thuộc diện cấp giấy phép lao động làm việc tại Việt Nam",
+        "why_this_route": "Route trực tiếp cho nhu cầu 'Báo cáo chuyên gia khoa học công nghệ không thuộc diện cấp giấy phép lao động làm việc tại Việt Nam' trong nhánh 'Cấp phép lao động cho người nước ngoài'."
+      }
+    ]
+  },
+  "pre_submission_checks": [
+    {
+      "field_group": "employment_support",
+      "checks": [
+        "Nhóm hỗ trợ việc làm và tuyển dụng phải làm rõ người dùng đang tìm việc, cập nhật tình trạng lao động hay xin hỗ trợ chi phí/liên kết việc làm.",
+        "Nếu là đăng ký hoặc điều chỉnh lao động, cần xác định rõ trạng thái hiện tại: có việc làm, thất nghiệp hay không tham gia hoạt động kinh tế."
+      ]
+    },
+    {
+      "field_group": "unemployment_and_skills",
+      "checks": [
+        "Nhóm thất nghiệp phải phân biệt rõ nộp hồ sơ hưởng mới, thông báo tìm việc hằng tháng, tiếp tục hưởng, tạm dừng, chấm dứt hay chuyển nơi hưởng.",
+        "Nhóm chứng chỉ và nâng cao kỹ năng phải làm rõ đây là cấp chứng chỉ, cấp lại hay xin hỗ trợ đào tạo/nâng cao kỹ năng nghề."
+      ]
+    },
+    {
+      "field_group": "tax_and_foreign_work",
+      "checks": [
+        "Nhóm thuế chỉ áp dụng cho khai thuế thu nhập cá nhân trực tiếp từ tiền lương, tiền công trong bộ workflow sạch này.",
+        "Nhóm giấy phép lao động cho người nước ngoài phải làm rõ là cấp mới, cấp lại, gia hạn hay xác nhận miễn giấy phép lao động."
+      ]
+    }
+  ],
+  "subdomain_key": "cap_phep_lao_dong_nguoi_nuoc_ngoai"
+}

@@ -1,0 +1,56 @@
+{
+  "schema_version": "1.0",
+  "domain": "viec_lam",
+  "updated_at": "2026-07-18",
+  "source_files": [
+    "C:\\Users\\ku060\\Downloads\\VAIC source\\data-pipeline\\main\\full-data.csv",
+    "C:\\Users\\ku060\\Downloads\\VAIC source\\data-pipeline\\raw_data"
+  ],
+  "subdomains": [
+    {
+      "subdomain_key": "thue_thu_nhap_ca_nhan",
+      "subdomain_label": "Thuế thu nhập cá nhân",
+      "event_id": 266,
+      "summary": "Nhóm thủ tục khai thuế thu nhập cá nhân trực tiếp đối với thu nhập từ tiền lương, tiền công.",
+      "entry_prompts": [
+        "Bạn đang cần khai thuế thu nhập cá nhân trực tiếp cho thu nhập từ lương, tiền công?"
+      ],
+      "procedure_count": 1,
+      "procedures": [
+        {
+          "procedure_code": "2.002237",
+          "procedure_title": "Khai thuế thu nhập cá nhân tháng/quý đối với cá nhân có thu nhập từ tiền lương, tiền công (bao gồm cả cá nhân nhận thưởng bằng cổ phiếu từ đơn vị sử dụng lao động) thuộc diện khai thuế thu nhập cá nhân trực tiếp với cơ quan thuế",
+          "subdomain_key": "thue_thu_nhap_ca_nhan",
+          "subdomain_label": "Thuế thu nhập cá nhân",
+          "event_id": 266,
+          "field": "Thuế",
+          "agency": "Thuế tỉnh, thành phố; Thuế cơ sở",
+          "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bfc-e973-712c-aa9f-9c143cebd1a0",
+          "raw_data_file": "C:\\Users\\ku060\\Downloads\\VAIC source\\data-pipeline\\raw_data\\2_002237\\2_002237_procedure_detail.md",
+          "raw_data_available": true,
+          "operation_group": "khai_thue_tncn_tu_tien_luong_tien_cong",
+          "operation_key": "khai_thue_thu_nhap_ca_nhan_thang_quy_doi_voi_ca_nhan_co_thu_nhap_tu_tien_luong_tien_cong_bao_gom_ca_ca_nhan_nhan_thuong_bang_co_phieu_tu_don_vi_su_dung_lao_dong_thuoc_dien_khai_thue_thu_nhap_ca_nhan_truc_tiep_voi_co_quan_thue",
+          "overview": "1. + Bước 1. ++ Trường hợp 1: Cá nhân có thu nhập từ tiền lương, tiền công thuộc diện khai thuế thu nhập cá nhân trực tiếp với cơ quan thuế: +++ Cá nhân có thu nhập từ tiền lương, tiền công do các tổ chức Quốc tế, Đại sứ quán, Lãnh sự quán tại Việt Nam trả nhưng chưa khấu trừ thuế; +++ Cá nhân cư trú có thu nhập từ tiền lương, tiền công trả từ nước ngoài; +++ Cá nhân không cư trú có thu nhập từ tiền lương, tiền công phát sinh tại Việt Nam nhưng được trả từ nước ngoài; +++ Cá nhân chuẩn bị hồ sơ khai thuế và gửi đến cơ quan thuế chậm nhất là ngày thứ 20 (hai mươi) của tháng tiếp theo tháng phát sinh nghĩa vụ thuế nếu cá nhân khai thuế theo tháng hoặc ngày cuối cùng của tháng đầu tiên của quý tiếp theo quý phát sinh nghĩa vụ thuế nếu cá nhân khai thuế theo quý. ++ Trường hợp 2: Cá nhân nhận thưởng bằng cổ phiếu từ đơn vị sử dụng lao động khai thuế thu nhập cá nhân trực tiếp với cơ quan thuế: +++ Cá nhân khi nhận thưởng bằng cổ phiếu từ đơn vị sử dụng lao động chưa phải nộp thuế đối với thu nhập từ tiền lương, tiền công; +++ Khi cá nhân chuyển nhượng cổ phiếu cùng loại thì khai thuế đối với thu nhập từ chuyển nhượng cổ phiếu và thu nhập từ tiền lương, tiền công do được thưởng bằng cổ phiếu; +++ Cá nhân chuẩn bị hồ sơ khai thuế và gửi đến cơ quan thuế quản lý chậm nhất là ngày thứ 10 kể từ ngày chuyển nhượng cổ phiếu cùng loại. + Bước 2. Cơ quan thuế thực hiện tiếp nhận: ++ Trường hợp hồ sơ được nộp trực tiếp tại cơ quan thuế hoặc hồ sơ được gửi qua đường bưu chính: cơ quan thuế thực hiện tiếp nhận, giải quyết hồ sơ theo quy định. ++ Trường hợp hồ sơ được nộp thông qua giao dịch điện tử, việc tiếp nhận, kiểm tra, chấp nhận, giải quyết hồ sơ (và trả kết quả nếu có kết quả) thông qua hệ thống xử lý dữ liệu điện tử của cơ quan thuế.",
+          "procedure_flow": "1. + Bước 1. ++ Trường hợp 1: Cá nhân có thu nhập từ tiền lương, tiền công thuộc diện khai thuế thu nhập cá nhân trực tiếp với cơ quan thuế: +++ Cá nhân có thu nhập từ tiền lương, tiền công do các tổ chức Quốc tế, Đại sứ quán, Lãnh sự quán tại Việt Nam trả nhưng chưa khấu trừ thuế; +++ Cá nhân cư trú có thu nhập từ tiền lương, tiền công trả từ nước ngoài; +++ Cá nhân không cư trú có thu nhập từ tiền lương, tiền công phát sinh tại Việt Nam nhưng được trả từ nước ngoài; +++ Cá nhân chuẩn bị hồ sơ khai thuế và gửi đến cơ quan thuế chậm nhất là ngày thứ 20 (hai mươi) của tháng tiếp theo tháng phát sinh nghĩa vụ thuế nếu cá nhân khai thuế theo tháng hoặc ngày cuối cùng của tháng đầu tiên của quý tiếp theo quý phát sinh nghĩa vụ thuế nếu cá nhân khai thuế theo quý. ++ Trường hợp 2: Cá nhân nhận thưởng bằng cổ phiếu từ đơn vị sử dụng lao động khai thuế thu nhập cá nhân trực tiếp với cơ quan thuế: +++ Cá nhân khi nhận thưởng bằng cổ phiếu từ đơn vị sử dụng lao động chưa phải nộp thuế đối với thu nhập từ tiền lương, tiền công; +++ Khi cá nhân chuyển nhượng cổ phiếu cùng loại thì khai thuế đối với thu nhập từ chuyển nhượng cổ phiếu và thu nhập từ tiền lương, tiền công do được thưởng bằng cổ phiếu; +++ Cá nhân chuẩn bị hồ sơ khai thuế và gửi đến cơ quan thuế quản lý chậm nhất là ngày thứ 10 kể từ ngày chuyển nhượng cổ phiếu cùng loại. + Bước 2. Cơ quan thuế thực hiện tiếp nhận: ++ Trường hợp hồ sơ được nộp trực tiếp tại cơ quan thuế hoặc hồ sơ được gửi qua đường bưu chính: cơ quan thuế thực hiện tiếp nhận, giải quyết hồ sơ theo quy định. ++ Trường hợp hồ sơ được nộp thông qua giao dịch điện tử, việc tiếp nhận, kiểm tra, chấp nhận, giải quyết hồ sơ (và trả kết quả nếu có kết quả) thông qua hệ thống xử lý dữ liệu điện tử của cơ quan thuế.",
+          "requirements": "Trường hợp người nộp thuế lựa chọn và gửi hồ sơ đến cơ quan thuế thông qua giao dịch điện tử thì phải tuân thủ đúng, đầy đủ các quy định và điều kiện thực hiện giao dịch điện tử trong lĩnh vực thuế tại Thông tư số 19/2021/TT-BTC ngày 18/3/2021 của Bộ trưởng Bộ Tài chính hướng dẫn giao dịch điện tử trong lĩnh vực thuế.",
+          "submission_methods": [
+            "Trực tuyến",
+            "Dịch vụ bưu chính",
+            "Trực tiếp"
+          ],
+          "processing_time_values": [
+            "Không phải trả kết quả cho người nộp thuế ngày",
+            "Không phải trả kết quả cho người nộp thuế ngày",
+            "Không phải trả kết quả cho người nộp thuế ngày"
+          ],
+          "document_groups": [],
+          "result_items": [
+            "Hồ sơ gửi đến cơ quan thuế không có kết quả giải quyết (Mã: `KQ.G12.000429`)"
+          ]
+        }
+      ]
+    }
+  ],
+  "subdomain_key": "thue_thu_nhap_ca_nhan",
+  "subdomain_label": "Thuế thu nhập cá nhân"
+}

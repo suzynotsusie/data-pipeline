@@ -49,7 +49,7 @@ python -m pip install -r requirements-dev.txt
 uvicorn backend.app.main:app --reload
 ```
 
-The API is available at `http://localhost:8000` and its interactive OpenAPI documentation is at `http://localhost:8000/docs`.
+The API is available at `http://localhost:8010` and its interactive OpenAPI documentation is at `http://localhost:8010/docs`.
 
 Chạy portal demo ở terminal thứ hai:
 
@@ -60,7 +60,7 @@ npm ci
 npm run dev
 ```
 
-The full demo is available at `http://localhost:3000`; the iframe-compatible assistant is at `/widget`. For Vercel, set `NEXT_PUBLIC_API_URL` to the public Render API and include the Vercel origin in Render's `CORS_ORIGINS`.
+The full demo is available at `http://localhost:3010`; the iframe-compatible assistant is at `/widget`. For Vercel, set `NEXT_PUBLIC_API_URL` to the public Render API and include the Vercel origin in Render's `CORS_ORIGINS`.
 
 The separate frontend project should configure its API base URL to this service and call endpoints under `/api`. Add every allowed frontend origin to the comma-separated `CORS_ORIGINS` environment variable.
 

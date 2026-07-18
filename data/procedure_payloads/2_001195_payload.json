@@ -1,0 +1,337 @@
+{
+  "schema_version": "3.0",
+  "record_type": "public_service_procedure_payload",
+  "id": "procedure-2.001195",
+  "procedure_code": "2.001195",
+  "code": "2.001195",
+  "title": "Cấp đổi thẻ căn cước (thực hiện tại cấp tỉnh)",
+  "language": "vi",
+  "status": "generated_from_pipeline",
+  "field": "Cấp, quản lý căn cước",
+  "group_key": "cu_tru_giay_to",
+  "workflow_family": null,
+  "subflow": null,
+  "source": {
+    "source_url": "file:///C:/Users/ku060/Downloads/VAIC%20source/data-pipeline/raw_data/2_001195/2_001195_procedure_detail.md",
+    "source_markdown_path": "C:\\Users\\ku060\\Downloads\\VAIC source\\data-pipeline\\raw_data\\2_001195\\2_001195_procedure_detail.md",
+    "normalized_payload_path": "C:\\Users\\ku060\\Downloads\\VAIC source\\data-pipeline\\govease-unified\\data\\normalized_structured\\2_001195_normalized_structured.json",
+    "enriched_payload_path": "C:\\Users\\ku060\\Downloads\\VAIC source\\data-pipeline\\govease-unified\\data\\enriched_structured_priority\\2_001195_enriched_structured.json"
+  },
+  "scope": {
+    "included": "Thủ tục này thuộc nhóm cư trú và giấy tờ, thường cần kiểm tra thông tin định danh hoặc hồ sơ giấy tờ chuyên ngành. Kết quả thường nhận được là kết quả giải quyết theo thủ tục này. Thời gian xử lý tham khảo: 07 Ngày làm việc.",
+    "not_included": []
+  },
+  "agency": {
+    "executing_agency": "Phòng cảnh sát quản lý hành chính về trật tự xã hội",
+    "submission_place": null,
+    "receiving_places": []
+  },
+  "target_users": [],
+  "submission_methods": [
+    {
+      "code": "IN_PERSON",
+      "label": "Trực tiếp",
+      "processing_time": "07 Ngày làm việc",
+      "fee": null,
+      "description": "Lệ phí: ĐồngXem chi tiết - Trực tiếp tại địa điểm tiếp dân cơ quan quản lý căn cước của Công an cấp tỉnh (Phòng Cảnh sát Quản lý hành chính về trật tự xã hội, Công an các tỉnh, thành phố trực thuộc Trung ương). - Thời gian tiếp nhận hồ sơ: Giờ hành chính các ngày làm việc từ thứ 2 đến thứ 6 hàng tuần (trừ các ngày nghỉ lễ, tết theo quy định của pháp luật)"
+    },
+    {
+      "code": "ONLINE",
+      "label": "Trực tuyến",
+      "processing_time": "07 Ngày làm việc",
+      "fee": null,
+      "description": "Lệ phí: ĐồngXem chi tiết - Thông qua Cổng dịch vụ công quốc gia, Cổng dịch vụ công Bộ Công an, Ứng dụng định danh quốc gia để đăng ký thời gian, địa điểm làm thủ tục đề nghị cấp đổi thẻ căn cước tại cơ quan quản lý căn cước của Công an cấp tỉnh. - Thời gian tiếp nhận hồ sơ: Giờ hành chính các ngày làm việc từ thứ 2 đến thứ 6 hàng tuần (trừ các ngày nghỉ lễ, tết theo quy định của pháp luật)"
+    }
+  ],
+  "processing_note": "Thời gian xử lý tham chiếu: 07 Ngày làm việc. Nên kiểm tra trước giấy tờ định danh, nơi nộp và mẫu biểu liên quan, rồi chọn kênh nộp phù hợp: Trực tiếp, Trực tuyến. Hiện có khoảng 3 mục giấy tờ cần theo dõi trong checklist.",
+  "documents": {
+    "normally_required": [
+      {
+        "name": "Phiếu được tạo lập khi trích xuất thông tin của công dân trong Cơ sở... Tên giấy tờ Mẫu đơn,",
+        "quantity": "1 bản chính, 0 bản sao",
+        "notes": [],
+        "group": "default",
+        "attachment_path": "tờ khai Số lượng Phiếu thu nhận thông tin căn cước (Mẫu CC01 ban hành kèm theo Thông tư số 17/2024/TT-BCA của Bộ Công an) Mẫu CC01 Phiếu thu nhận thông tin căn cước.doc"
+      },
+      {
+        "name": "Phiếu đề nghị giải quyết thủ tục về căn cước (Mẫu DC02 ban hành kèm... Tên giấy tờ Mẫu đơn,",
+        "quantity": "1 bản chính, 0 bản sao",
+        "notes": [],
+        "group": "default",
+        "attachment_path": "tờ khai Số lượng Phiếu đề nghị giải quyết thủ tục về căn cước (Mẫu DC02 ban hành kèm theo Thông tư số 17/2024/TT-BCA của Bộ Công an) Mẫu DC02 Phiếu đề nghị giải quyết thủ tục về căn cước.doc"
+      }
+    ],
+    "conditional": [
+      {
+        "condition": "Trường hợp người đề nghị cấp, cấp đổi, cấp lại thẻ căn cước là người... Tên giấy tờ Mẫu đơn, tờ khai Số lượng Giấy tờ, tài liệu có giá trị pháp lý chứng minh là người đại diện hợp pháp của người dưới 14 tuổi",
+        "document": "Trường hợp người đề nghị cấp, cấp đổi, cấp lại thẻ căn cước là người... Tên giấy tờ Mẫu đơn, tờ khai Số lượng Giấy tờ, tài liệu có giá trị pháp lý chứng minh là người đại diện hợp pháp của người dưới 14 tuổi",
+        "quantity": "1 bản chính, 0 bản sao",
+        "notes": [],
+        "attachment_path": null
+      }
+    ],
+    "forms": [
+      {
+        "name": "Phiếu được tạo lập khi trích xuất thông tin của công dân trong Cơ sở... Tên giấy tờ Mẫu đơn,",
+        "attachment_label": "TT-BCA của Bộ Công an) Mẫu CC01 Phiếu thu nhận thông tin căn cước.doc",
+        "attachment_path": "tờ khai Số lượng Phiếu thu nhận thông tin căn cước (Mẫu CC01 ban hành kèm theo Thông tư số 17/2024/TT-BCA của Bộ Công an) Mẫu CC01 Phiếu thu nhận thông tin căn cước.doc"
+      },
+      {
+        "name": "Phiếu đề nghị giải quyết thủ tục về căn cước (Mẫu DC02 ban hành kèm... Tên giấy tờ Mẫu đơn,",
+        "attachment_label": "TT-BCA của Bộ Công an) Mẫu DC02 Phiếu đề nghị giải quyết thủ tục về căn cước.doc",
+        "attachment_path": "tờ khai Số lượng Phiếu đề nghị giải quyết thủ tục về căn cước (Mẫu DC02 ban hành kèm theo Thông tư số 17/2024/TT-BCA của Bộ Công an) Mẫu DC02 Phiếu đề nghị giải quyết thủ tục về căn cước.doc"
+      }
+    ],
+    "presented": [],
+    "notes": [],
+    "summary": [
+      {
+        "group": "default",
+        "name": "Phiếu được tạo lập khi trích xuất thông tin của công dân trong Cơ sở... Tên giấy tờ Mẫu đơn,",
+        "quantity": "1 bản chính, 0 bản sao",
+        "notes": [],
+        "attachment_path": "tờ khai Số lượng Phiếu thu nhận thông tin căn cước (Mẫu CC01 ban hành kèm theo Thông tư số 17/2024/TT-BCA của Bộ Công an) Mẫu CC01 Phiếu thu nhận thông tin căn cước.doc"
+      },
+      {
+        "group": "default",
+        "name": "Phiếu đề nghị giải quyết thủ tục về căn cước (Mẫu DC02 ban hành kèm... Tên giấy tờ Mẫu đơn,",
+        "quantity": "1 bản chính, 0 bản sao",
+        "notes": [],
+        "attachment_path": "tờ khai Số lượng Phiếu đề nghị giải quyết thủ tục về căn cước (Mẫu DC02 ban hành kèm theo Thông tư số 17/2024/TT-BCA của Bộ Công an) Mẫu DC02 Phiếu đề nghị giải quyết thủ tục về căn cước.doc"
+      },
+      {
+        "group": null,
+        "name": null,
+        "quantity": "1 bản chính, 0 bản sao",
+        "notes": [],
+        "attachment_path": null
+      },
+      {
+        "group": null,
+        "name": "Phiếu được tạo lập khi trích xuất thông tin của công dân trong Cơ sở... Tên giấy tờ Mẫu đơn,",
+        "quantity": null,
+        "notes": null,
+        "attachment_path": "tờ khai Số lượng Phiếu thu nhận thông tin căn cước (Mẫu CC01 ban hành kèm theo Thông tư số 17/2024/TT-BCA của Bộ Công an) Mẫu CC01 Phiếu thu nhận thông tin căn cước.doc"
+      },
+      {
+        "group": null,
+        "name": "Phiếu đề nghị giải quyết thủ tục về căn cước (Mẫu DC02 ban hành kèm... Tên giấy tờ Mẫu đơn,",
+        "quantity": null,
+        "notes": null,
+        "attachment_path": "tờ khai Số lượng Phiếu đề nghị giải quyết thủ tục về căn cước (Mẫu DC02 ban hành kèm theo Thông tư số 17/2024/TT-BCA của Bộ Công an) Mẫu DC02 Phiếu đề nghị giải quyết thủ tục về căn cước.doc"
+      }
+    ]
+  },
+  "steps": [
+    {
+      "order": 1,
+      "title": "Bước 1",
+      "description": "-",
+      "example": null
+    },
+    {
+      "order": 2,
+      "title": "Bước 1:",
+      "description": "Bước 1: + Công dân đến cơ quan quản lý căn cước của Công an cấp tỉnh (Phòng Cảnh sát Quản lý hành chính về trật tự xã hội, Công an các tỉnh, thành phố trực thuộc Trung ương) đề nghị cấp đổi thẻ căn cước. + Công dân thông qua Cổng dịch vụ công quốc gia, Cổng dịch vụ công Bộ Công an, ứng dụng định danh quốc gia lựa chọn thủ tục, kiểm tra thông tin của mình được khai thác trong Cơ sở dữ liệu quốc gia về dân cư. Trường hợp thông tin chính xác thì đăng ký thời gian, địa điểm thực hiện thủ tục tại cơ quan quản lý căn cước của Công an cấp tỉnh. Hệ thống sẽ xác nhận và tự động chuyển đề nghị của công dân đến cơ quan quản lý căn cước nơi công dân đề nghị cấp đổi thẻ căn cước; + Trường hợp người đề nghị cấp, cấp đổi, cấp lại thẻ căn cước là người đại diện hợp pháp của người dưới 14 tuổi thì hồ sơ đề nghị cấp, cấp đổi, cấp lại thẻ căn cước phải có giấy tờ, tài liệu có giá trị pháp lý chứng minh là người đại diện hợp pháp của người dưới 14 tuổi; + Trường hợp người đại diện hợp pháp thực hiện thủ tục cấp đổi thẻ căn cước cho người dưới 06 tuổi qua Cổng dịch vụ công quốc gia, Cổng dịch vụ công Bộ Công an, ứng dụng định danh quốc gia thì lựa chọn thủ tục, kiểm tra thông tin của người dưới 06 tuổi trong Cơ sở dữ liệu quốc gia về dân cư. Trường hợp thông tin chính xác thì người đại diện hợp pháp xác nhận chuyển hồ sơ đề nghị đến cơ quan quản lý căn cước xem xét, giải quyết việc cấp đổi thẻ căn cước. -",
+      "example": null
+    },
+    {
+      "order": 3,
+      "title": "Bước 2:",
+      "description": "Bước 2: Công dân cung cấp thông tin gồm họ, chữ đệm và tên khai sinh, số định danh cá nhân, nơi cư trú để người tiếp nhận kiểm tra đối chiếu thông tin trong Cơ sở dữ liệu quốc gia về dân cư; -",
+      "example": null
+    },
+    {
+      "order": 4,
+      "title": "Bước 3:",
+      "description": "Bước 3: Cán bộ thu nhận tìm kiếm thông tin công dân trong Cơ sở dữ liệu quốc gia về dân cư để lập hồ sơ cấp đổi thẻ căn cước. + Trường hợp thông tin công dân không có sự thay đổi, điều chỉnh thì sử dụng thông tin của công dân trong cơ sở dữ liệu quốc gia về dân cư để lập hồ sơ cấp đổi thẻ căn cước. + Trường hợp thông tin công dân có sự thay đổi, điều chỉnh thì Cán bộ thu nhận hướng dẫn công dân thực hiện thủ tục điều chỉnh thông tin trong Cơ sở dữ liệu quốc gia về dân cư trước khi thực hiện thủ tục cấp đổi thẻ căn cước. + Trường hợp công dân không đủ điều kiện đổi thẻ căn cước thì từ chối tiếp nhận và nêu rõ lý do, thông báo về việc từ chối giải quyết thủ tục về căn cước (mẫu CC03 ban hành kèm theo Thông tư số 17/2024/TT-BCA ngày 15/5/2024 của Bộ Công an). -",
+      "example": null
+    },
+    {
+      "order": 5,
+      "title": "Bước 4:",
+      "description": "Bước 4: Tiến hành thu nhận vân tay, chụp ảnh khuôn mặt, thu nhận ảnh mống mắt của công dân từ đủ 06 tuổi trở lên. -",
+      "example": null
+    },
+    {
+      "order": 6,
+      "title": "Bước 5:",
+      "description": "Bước 5: In Phiếu thu nhận thông tin căn cước chuyển cho công dân hoặc người đại diện của người dưới 14 tuổi kiểm tra, ký xác nhận; in Phiếu đề nghị giải quyết thủ tục về căn cước (nếu có) cho công dân hoặc người đại diện của người dưới 14 tuổi kiểm tra, ký xác nhận. -",
+      "example": null
+    },
+    {
+      "order": 7,
+      "title": "Bước 6:",
+      "description": "Bước 6: Thu thẻ căn cước cũ, thu lệ phí (nếu có) và cấp giấy hẹn trả kết quả giải quyết thủ tục về căn cước (mẫu CC02 ban hành kèm theo Thông tư số 17/2024/TT-BCA ngày 15/5/2024 của Bộ Công an) cho công dân. -",
+      "example": null
+    },
+    {
+      "order": 8,
+      "title": "Bước 7:",
+      "description": "Bước 7: Công dân nhận kết quả trực tiếp tại cơ quan quản lý căn cước của Công an cấp tỉnh hoặc trả qua dịch vụ bưu chính đến địa chỉ theo yêu cầu.",
+      "example": "dịch vụ bưu chính"
+    }
+  ],
+  "input_fields": [
+    {
+      "field": "document_request_type",
+      "label": "Loại giấy tờ cần xử lý",
+      "type": "string",
+      "required": true
+    },
+    {
+      "field": "submission_channel_preference",
+      "label": "Kênh nộp dự kiến",
+      "type": "enum",
+      "required": false,
+      "options": [
+        "Trực tiếp",
+        "Trực tuyến"
+      ]
+    },
+    {
+      "field": "identity_document_available",
+      "label": "Có giấy tờ định danh",
+      "type": "boolean",
+      "required": true
+    },
+    {
+      "field": "residency_or_status_known",
+      "label": "Biết rõ nơi cư trú hoặc tình trạng hiện tại",
+      "type": "boolean",
+      "required": false
+    },
+    {
+      "field": "age_over_14",
+      "label": "Người làm thủ tục từ đủ 14 tuổi",
+      "type": "boolean",
+      "required": true
+    }
+  ],
+  "validation_rules": [
+    {
+      "id": "required-1",
+      "severity": "error",
+      "field": "document_request_type",
+      "rule": "Trường bắt buộc phải có dữ liệu hợp lệ trước khi nộp.",
+      "message": "Thiếu trường bắt buộc: Loại giấy tờ cần xử lý."
+    },
+    {
+      "id": "required-3",
+      "severity": "error",
+      "field": "identity_document_available",
+      "rule": "Trường bắt buộc phải có dữ liệu hợp lệ trước khi nộp.",
+      "message": "Thiếu trường bắt buộc: Có giấy tờ định danh."
+    },
+    {
+      "id": "required-5",
+      "severity": "error",
+      "field": "age_over_14",
+      "rule": "Trường bắt buộc phải có dữ liệu hợp lệ trước khi nộp.",
+      "message": "Thiếu trường bắt buộc: Người làm thủ tục từ đủ 14 tuổi."
+    },
+    {
+      "id": "hint-1",
+      "severity": "warning",
+      "field": "general",
+      "rule": "Nên xác định trước kênh nộp hồ sơ để biết có cần bản giấy, bản điện tử hay xuất trình trực tiếp.",
+      "message": "Nên xác định trước kênh nộp hồ sơ để biết có cần bản giấy, bản điện tử hay xuất trình trực tiếp."
+    },
+    {
+      "id": "hint-2",
+      "severity": "warning",
+      "field": "general",
+      "rule": "Có mẫu biểu đính kèm, nên kiểm tra đúng biểu mẫu trước khi nộp.",
+      "message": "Có mẫu biểu đính kèm, nên kiểm tra đúng biểu mẫu trước khi nộp."
+    },
+    {
+      "id": "hint-3",
+      "severity": "warning",
+      "field": "general",
+      "rule": "Nên đối chiếu trước dữ liệu định danh và nơi cư trú để tránh bị yêu cầu bổ sung.",
+      "message": "Nên đối chiếu trước dữ liệu định danh và nơi cư trú để tránh bị yêu cầu bổ sung."
+    }
+  ],
+  "common_errors": [
+    {
+      "field": "general",
+      "issue": "Điền sai mẫu tờ khai hoặc chọn sai biểu mẫu đi kèm.",
+      "fix": "Nên xác định trước kênh nộp hồ sơ để biết có cần bản giấy, bản điện tử hay xuất trình trực tiếp."
+    }
+  ],
+  "clarifying_questions": [
+    {
+      "id": "clarify_1",
+      "question": "Bạn đang xử lý giấy tờ gì và muốn nộp trực tiếp hay trực tuyến?",
+      "purpose": "workflow_intake"
+    },
+    {
+      "id": "clarify_2",
+      "question": "Thông tin định danh và nơi cư trú hiện tại đã sẵn sàng để đối chiếu chưa?",
+      "purpose": "workflow_intake"
+    }
+  ],
+  "legal_basis": [],
+  "legal_bases": [],
+  "faq": [
+    {
+      "question": "Có thể nộp qua kênh nào?",
+      "answer": "Các kênh hiện có: Trực tiếp, Trực tuyến."
+    },
+    {
+      "question": "Thời gian xử lý tham chiếu là bao lâu?",
+      "answer": "Thời gian xử lý tham chiếu hiện có là 07 Ngày làm việc."
+    }
+  ],
+  "guidance": {
+    "highlight_documents": [
+      {
+        "bucket": "required",
+        "name": "Phiếu được tạo lập khi trích xuất thông tin của công dân trong Cơ sở... Tên giấy tờ Mẫu đơn,",
+        "conditions": [],
+        "attachment_path": "tờ khai Số lượng Phiếu thu nhận thông tin căn cước (Mẫu CC01 ban hành kèm theo Thông tư số 17/2024/TT-BCA của Bộ Công an) Mẫu CC01 Phiếu thu nhận thông tin căn cước.doc"
+      },
+      {
+        "bucket": "required",
+        "name": "Phiếu đề nghị giải quyết thủ tục về căn cước (Mẫu DC02 ban hành kèm... Tên giấy tờ Mẫu đơn,",
+        "conditions": [],
+        "attachment_path": "tờ khai Số lượng Phiếu đề nghị giải quyết thủ tục về căn cước (Mẫu DC02 ban hành kèm theo Thông tư số 17/2024/TT-BCA của Bộ Công an) Mẫu DC02 Phiếu đề nghị giải quyết thủ tục về căn cước.doc"
+      },
+      {
+        "bucket": "conditional",
+        "name": "Trường hợp người đề nghị cấp, cấp đổi, cấp lại thẻ căn cước là người... Tên giấy tờ Mẫu đơn, tờ khai Số lượng Giấy tờ, tài liệu có giá trị pháp lý chứng minh là người đại diện hợp pháp của người dưới 14 tuổi",
+        "conditions": [
+          "Trường hợp người đề nghị cấp, cấp đổi, cấp lại thẻ căn cước là người... Tên giấy tờ Mẫu đơn, tờ khai Số lượng Giấy tờ, tài liệu có giá trị pháp lý chứng minh là người đại diện hợp pháp của người dưới 14 tuổi"
+        ],
+        "attachment_path": null
+      }
+    ],
+    "special_cases": [],
+    "common_errors": [
+      "Điền sai mẫu tờ khai hoặc chọn sai biểu mẫu đi kèm."
+    ],
+    "validation_hints": [
+      "Nên xác định trước kênh nộp hồ sơ để biết có cần bản giấy, bản điện tử hay xuất trình trực tiếp.",
+      "Có mẫu biểu đính kèm, nên kiểm tra đúng biểu mẫu trước khi nộp.",
+      "Nên đối chiếu trước dữ liệu định danh và nơi cư trú để tránh bị yêu cầu bổ sung."
+    ]
+  },
+  "next_steps": {
+    "summary": "Nên kiểm tra trước giấy tờ định danh, nơi nộp và mẫu biểu liên quan, rồi chọn kênh nộp phù hợp: Trực tiếp, Trực tuyến. Hiện có khoảng 3 mục giấy tờ cần theo dõi trong checklist.",
+    "time_badge": "07 Ngày làm việc",
+    "result_label": null,
+    "primary_channel": "in_person",
+    "channels": [
+      "in_person",
+      "online"
+    ]
+  },
+  "notes": [],
+  "provenance": {
+    "pipeline": "raw->structured->normalized->enriched->ui_api_payload",
+    "normalizer_version": "0.2.0",
+    "enricher_version": "0.2.0",
+    "mapping_notes": "excluded_from_clean_workflow_dataset",
+    "supported_group": true
+  }
+}

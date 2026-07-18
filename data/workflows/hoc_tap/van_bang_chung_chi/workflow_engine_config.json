@@ -1,0 +1,247 @@
+{
+  "schema_version": "1.0",
+  "domain": "hoc_tap",
+  "updated_at": "2026-07-18",
+  "source_files": [
+    "C:\\Users\\ku060\\Downloads\\VAIC source\\data-pipeline\\main\\full-data.csv",
+    "C:\\Users\\ku060\\Downloads\\VAIC source\\data-pipeline\\data\\workflows\\hoc_tap\\summary.csv",
+    "C:\\Users\\ku060\\Downloads\\VAIC source\\data-pipeline\\data\\workflows\\hoc_tap\\normalized.json",
+    "C:\\Users\\ku060\\Downloads\\VAIC source\\data-pipeline\\raw_data"
+  ],
+  "coverage": {
+    "expected_codes": [
+      "1.000915",
+      "1.001895",
+      "1.001912",
+      "1.004889",
+      "2.002850",
+      "3.000465",
+      "3.000466"
+    ],
+    "covered_codes": [
+      "1.000915",
+      "1.001895",
+      "1.001912",
+      "1.004889",
+      "2.002850",
+      "3.000465",
+      "3.000466"
+    ],
+    "missing_codes": []
+  },
+  "llm_contract": {
+    "role": "parse_user_answer_and_rephrase_question_only",
+    "required_output_schema": {
+      "intent": "hoc_tap",
+      "current_node": "string",
+      "slot_updates": {
+        "subdomain_key": "tuyen_sinh | chuyen_truong | hoc_bong_va_ho_tro | van_bang_chung_chi | hoc_tap_o_nuoc_ngoai_bang_ngan_sach | unknown",
+        "operation_key": "string",
+        "operation_group": "string"
+      },
+      "confidence": "0_to_1",
+      "needs_human_review": "boolean"
+    }
+  },
+  "entry_prompts": [
+    "Bạn đang cần làm việc về tuyển sinh, chuyển trường, hỗ trợ học tập, văn bằng chứng chỉ hay du học bằng ngân sách nhà nước?",
+    "Bạn muốn đăng ký mới, điều chỉnh, xin hỗ trợ, xin công nhận hay xin cấp lại giấy tờ học tập?"
+  ],
+  "slots": [
+    {
+      "name": "subdomain_key",
+      "required": true,
+      "description": "Nhánh chính của nhóm Học tập."
+    },
+    {
+      "name": "operation_key",
+      "required": true,
+      "description": "Thao tác cụ thể ánh xạ trực tiếp tới thủ tục cuối cùng."
+    },
+    {
+      "name": "operation_group",
+      "required": false,
+      "description": "Nhóm thao tác để gom các thủ tục gần nhau cho UI và parser."
+    }
+  ],
+  "subdomain_catalog": [
+    {
+      "subdomain_key": "van_bang_chung_chi",
+      "subdomain_label": "Cấp văn bằng, chứng chỉ; công nhận văn bằng, chứng chỉ do cơ sở nước ngoài cấp",
+      "event_id": 257,
+      "summary": "Nhóm thủ tục cấp lại, cấp bản sao, chỉnh sửa, công nhận văn bằng chứng chỉ và cấp bằng sau tốt nghiệp."
+    }
+  ],
+  "decision_tree": {
+    "start_node": "study_subdomain",
+    "nodes": [
+      {
+        "id": "study_subdomain",
+        "type": "question",
+        "slot": "subdomain_key",
+        "question": "Bạn đang hỏi về tuyển sinh, chuyển trường, học bổng hỗ trợ, văn bằng chứng chỉ hay học tập ở nước ngoài bằng ngân sách nhà nước?",
+        "options": [
+          "van_bang_chung_chi"
+        ],
+        "prefilled_value": "van_bang_chung_chi"
+      },
+      {
+        "id": "study_operation",
+        "type": "question",
+        "slot": "operation_key",
+        "question": "Bạn cần làm thao tác nào cụ thể trong nhánh đã chọn?",
+        "options_by_subdomain": {
+          "van_bang_chung_chi": [
+            {
+              "operation_key": "cong_nhan_bang_cu_nhan_bang_thac_si_bang_tien_si_va_van_bang_trinh_do_tuong_duong_do_co_so_giao_duc_nuoc_ngoai_cap_de_su_dung_tai_viet_nam",
+              "operation_group": "cong_nhan_van_bang",
+              "procedure_code": "1.000915",
+              "procedure_title": "Công nhận bằng cử nhân, bằng thạc sĩ, bằng tiến sĩ và văn bằng trình độ tương đương do cơ sở giáo dục nước ngoài cấp để sử dụng tại Việt Nam"
+            },
+            {
+              "operation_key": "xet_cap_bang_tien_si",
+              "operation_group": "cap_bang_sau_tot_nghiep",
+              "procedure_code": "1.001895",
+              "procedure_title": "Xét cấp bằng tiến sĩ"
+            },
+            {
+              "operation_key": "xet_tot_nghiep_va_cap_bang_thac_si_bang_diem",
+              "operation_group": "cap_bang_sau_tot_nghiep",
+              "procedure_code": "1.001912",
+              "procedure_title": "Xét tốt nghiệp và cấp bằng thạc sĩ, bảng điểm"
+            },
+            {
+              "operation_key": "cong_nhan_bang_tot_nghiep_trung_hoc_co_so_bang_tot_nghiep_trung_hoc_pho_thong_giay_chung_nhan_hoan_thanh_chuong_trinh_giao_duc_pho_thong_do_co_so_giao_duc_nuoc_ngoai_cap_de_su_dung_tai_viet_nam",
+              "operation_group": "cong_nhan_van_bang",
+              "procedure_code": "1.004889",
+              "procedure_title": "Công nhận bằng tốt nghiệp trung học cơ sở, bằng tốt nghiệp trung học phổ thông, giấy chứng nhận hoàn thành chương trình giáo dục phổ thông do cơ sở giáo dục nước ngoài cấp để sử dụng tại Việt Nam"
+            },
+            {
+              "operation_key": "cap_lai_van_bang_chung_chi",
+              "operation_group": "cap_lai",
+              "procedure_code": "2.002850",
+              "procedure_title": "Cấp lại văn bằng, chứng chỉ"
+            },
+            {
+              "operation_key": "cap_ban_sao_van_bang_chung_chi_tu_so_goc",
+              "operation_group": "cap_ban_sao",
+              "procedure_code": "3.000465",
+              "procedure_title": "Cấp bản sao văn bằng, chứng chỉ từ sổ gốc"
+            },
+            {
+              "operation_key": "chinh_sua_noi_dung_van_bang_chung_chi",
+              "operation_group": "chinh_sua",
+              "procedure_code": "3.000466",
+              "procedure_title": "Chỉnh sửa nội dung văn bằng, chứng chỉ"
+            }
+          ]
+        },
+        "options": [
+          "cong_nhan_bang_cu_nhan_bang_thac_si_bang_tien_si_va_van_bang_trinh_do_tuong_duong_do_co_so_giao_duc_nuoc_ngoai_cap_de_su_dung_tai_viet_nam",
+          "xet_cap_bang_tien_si",
+          "xet_tot_nghiep_va_cap_bang_thac_si_bang_diem",
+          "cong_nhan_bang_tot_nghiep_trung_hoc_co_so_bang_tot_nghiep_trung_hoc_pho_thong_giay_chung_nhan_hoan_thanh_chuong_trinh_giao_duc_pho_thong_do_co_so_giao_duc_nuoc_ngoai_cap_de_su_dung_tai_viet_nam",
+          "cap_lai_van_bang_chung_chi",
+          "cap_ban_sao_van_bang_chung_chi_tu_so_goc",
+          "chinh_sua_noi_dung_van_bang_chung_chi"
+        ]
+      }
+    ],
+    "routes": [
+      {
+        "route_id": "van_bang_chung_chi-1_000915",
+        "conditions": {
+          "subdomain_key": "van_bang_chung_chi",
+          "operation_key": "cong_nhan_bang_cu_nhan_bang_thac_si_bang_tien_si_va_van_bang_trinh_do_tuong_duong_do_co_so_giao_duc_nuoc_ngoai_cap_de_su_dung_tai_viet_nam"
+        },
+        "procedure_code": "1.000915",
+        "procedure_name": "Công nhận bằng cử nhân, bằng thạc sĩ, bằng tiến sĩ và văn bằng trình độ tương đương do cơ sở giáo dục nước ngoài cấp để sử dụng tại Việt Nam",
+        "why_this_route": "Route trực tiếp cho nhu cầu 'Công nhận bằng cử nhân, bằng thạc sĩ, bằng tiến sĩ và văn bằng trình độ tương đương do cơ sở giáo dục nước ngoài cấp để sử dụng tại Việt Nam' trong nhánh 'Cấp văn bằng, chứng chỉ; công nhận văn bằng, chứng chỉ do cơ sở nước ngoài cấp'."
+      },
+      {
+        "route_id": "van_bang_chung_chi-1_001895",
+        "conditions": {
+          "subdomain_key": "van_bang_chung_chi",
+          "operation_key": "xet_cap_bang_tien_si"
+        },
+        "procedure_code": "1.001895",
+        "procedure_name": "Xét cấp bằng tiến sĩ",
+        "why_this_route": "Route trực tiếp cho nhu cầu 'Xét cấp bằng tiến sĩ' trong nhánh 'Cấp văn bằng, chứng chỉ; công nhận văn bằng, chứng chỉ do cơ sở nước ngoài cấp'."
+      },
+      {
+        "route_id": "van_bang_chung_chi-1_001912",
+        "conditions": {
+          "subdomain_key": "van_bang_chung_chi",
+          "operation_key": "xet_tot_nghiep_va_cap_bang_thac_si_bang_diem"
+        },
+        "procedure_code": "1.001912",
+        "procedure_name": "Xét tốt nghiệp và cấp bằng thạc sĩ, bảng điểm",
+        "why_this_route": "Route trực tiếp cho nhu cầu 'Xét tốt nghiệp và cấp bằng thạc sĩ, bảng điểm' trong nhánh 'Cấp văn bằng, chứng chỉ; công nhận văn bằng, chứng chỉ do cơ sở nước ngoài cấp'."
+      },
+      {
+        "route_id": "van_bang_chung_chi-1_004889",
+        "conditions": {
+          "subdomain_key": "van_bang_chung_chi",
+          "operation_key": "cong_nhan_bang_tot_nghiep_trung_hoc_co_so_bang_tot_nghiep_trung_hoc_pho_thong_giay_chung_nhan_hoan_thanh_chuong_trinh_giao_duc_pho_thong_do_co_so_giao_duc_nuoc_ngoai_cap_de_su_dung_tai_viet_nam"
+        },
+        "procedure_code": "1.004889",
+        "procedure_name": "Công nhận bằng tốt nghiệp trung học cơ sở, bằng tốt nghiệp trung học phổ thông, giấy chứng nhận hoàn thành chương trình giáo dục phổ thông do cơ sở giáo dục nước ngoài cấp để sử dụng tại Việt Nam",
+        "why_this_route": "Route trực tiếp cho nhu cầu 'Công nhận bằng tốt nghiệp trung học cơ sở, bằng tốt nghiệp trung học phổ thông, giấy chứng nhận hoàn thành chương trình giáo dục phổ thông do cơ sở giáo dục nước ngoài cấp để sử dụng tại Việt Nam' trong nhánh 'Cấp văn bằng, chứng chỉ; công nhận văn bằng, chứng chỉ do cơ sở nước ngoài cấp'."
+      },
+      {
+        "route_id": "van_bang_chung_chi-2_002850",
+        "conditions": {
+          "subdomain_key": "van_bang_chung_chi",
+          "operation_key": "cap_lai_van_bang_chung_chi"
+        },
+        "procedure_code": "2.002850",
+        "procedure_name": "Cấp lại văn bằng, chứng chỉ",
+        "why_this_route": "Route trực tiếp cho nhu cầu 'Cấp lại văn bằng, chứng chỉ' trong nhánh 'Cấp văn bằng, chứng chỉ; công nhận văn bằng, chứng chỉ do cơ sở nước ngoài cấp'."
+      },
+      {
+        "route_id": "van_bang_chung_chi-3_000465",
+        "conditions": {
+          "subdomain_key": "van_bang_chung_chi",
+          "operation_key": "cap_ban_sao_van_bang_chung_chi_tu_so_goc"
+        },
+        "procedure_code": "3.000465",
+        "procedure_name": "Cấp bản sao văn bằng, chứng chỉ từ sổ gốc",
+        "why_this_route": "Route trực tiếp cho nhu cầu 'Cấp bản sao văn bằng, chứng chỉ từ sổ gốc' trong nhánh 'Cấp văn bằng, chứng chỉ; công nhận văn bằng, chứng chỉ do cơ sở nước ngoài cấp'."
+      },
+      {
+        "route_id": "van_bang_chung_chi-3_000466",
+        "conditions": {
+          "subdomain_key": "van_bang_chung_chi",
+          "operation_key": "chinh_sua_noi_dung_van_bang_chung_chi"
+        },
+        "procedure_code": "3.000466",
+        "procedure_name": "Chỉnh sửa nội dung văn bằng, chứng chỉ",
+        "why_this_route": "Route trực tiếp cho nhu cầu 'Chỉnh sửa nội dung văn bằng, chứng chỉ' trong nhánh 'Cấp văn bằng, chứng chỉ; công nhận văn bằng, chứng chỉ do cơ sở nước ngoài cấp'."
+      }
+    ]
+  },
+  "pre_submission_checks": [
+    {
+      "field_group": "education_identity",
+      "checks": [
+        "Thông tin người học phải thống nhất giữa giấy tờ nhân thân, hồ sơ trường học và biểu mẫu nộp.",
+        "Phải xác định đúng cấp học hoặc chương trình đào tạo trước khi chọn thủ tục."
+      ]
+    },
+    {
+      "field_group": "financial_support",
+      "checks": [
+        "Các thủ tục hỗ trợ học tập phải có giấy tờ chứng minh đúng diện hưởng chính sách.",
+        "Nếu xin miễn giảm học phí hoặc học bổng thì phải làm rõ cơ sở giáo dục và bậc học hiện tại."
+      ]
+    },
+    {
+      "field_group": "abroad_study",
+      "checks": [
+        "Nhóm học tập ở nước ngoài phải làm rõ trạng thái đi học, đang học hay đã hoàn thành về nước.",
+        "Các yêu cầu gia hạn hoặc tạm dừng phải có căn cứ phê duyệt của cơ quan cử đi học hoặc cơ quan quản lý."
+      ]
+    }
+  ],
+  "subdomain_key": "van_bang_chung_chi"
+}

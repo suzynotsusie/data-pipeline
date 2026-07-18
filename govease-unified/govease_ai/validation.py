@@ -48,7 +48,7 @@ class SubmissionValidator:
         for field in fields:
             if not isinstance(field, dict) or not field.get("required"):
                 continue
-            path = str(field.get("field") or "")
+            path = str(field.get("field") or field.get("field_id") or "")
             if not path or "*" in path:
                 continue
             if _is_blank(_get(submission, path)):

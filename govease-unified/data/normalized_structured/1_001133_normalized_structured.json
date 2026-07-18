@@ -1,0 +1,265 @@
+{
+  "schema_version": "1.0",
+  "normalizer_version": "0.2.0",
+  "source": {
+    "procedure_code": "1.001133",
+    "title": "Cấp, cấp lại, gia hạn Thẻ phóng viên nước ngoài cho phóng viên thường trú tại Việt Nam",
+    "raw_structured_parser_version": "0.1.0",
+    "field": "Báo chí"
+  },
+  "procedure": {
+    "level": "Cấp bộ/ngành",
+    "procedure_type": "TTHC được luật giao quy định chi tiết",
+    "target_users": [
+      "Người nước ngoài",
+      "Tổ chức nước ngoài"
+    ],
+    "authorities": [
+      "Bộ Ngoại giao"
+    ],
+    "receiving_places": []
+  },
+  "submission": {
+    "channels": [
+      "in_person",
+      "online",
+      "postal"
+    ],
+    "methods": [
+      {
+        "method_id": "method_1",
+        "channel": "postal",
+        "processing_time_text": "3 ngày làm việc",
+        "fee_text": null,
+        "description": "03 ngày làm việc kể từ khi nhận đủ hồ sơ đề nghị",
+        "is_online": false,
+        "is_postal": true,
+        "is_in_person": false
+      },
+      {
+        "method_id": "method_2",
+        "channel": "in_person",
+        "processing_time_text": "3 ngày làm việc",
+        "fee_text": null,
+        "description": "03 ngày làm việc kể từ khi nhận đủ hồ sơ đề nghị",
+        "is_online": false,
+        "is_postal": false,
+        "is_in_person": true
+      },
+      {
+        "method_id": "method_3",
+        "channel": "online",
+        "processing_time_text": "3 ngày làm việc",
+        "fee_text": null,
+        "description": null,
+        "is_online": true,
+        "is_postal": false,
+        "is_in_person": false
+      }
+    ],
+    "timing_summary": {
+      "unique_processing_times": [
+        "3 ngày làm việc"
+      ],
+      "method_count": 3
+    }
+  },
+  "documents": {
+    "required": [
+      {
+        "document_id": "v_n_b_n_ngh_c_p_m_i_c_p_l_i_gia_h_n_th_ph_ng_vi_n_n_c_ngo_i_c_a_ph_ng_vi_n_th_ng_tr_theo_m_u_do_b_ngo_i_giao_ban_h_nh",
+        "name": "Văn bản đề nghị cấp mới/cấp lại/Gia hạn Thẻ phóng viên nước ngoài của phóng viên thường trú theo mẫu do Bộ Ngoại giao ban hành.",
+        "group_name": "default",
+        "group_type": "unknown",
+        "original_count": "1",
+        "copy_count": "0",
+        "conditions": [],
+        "attachment_label": "Văn bản đề nghị cấp Thẻ phóng viên nước ngoài của phóng viên thường trú theo mẫu do Bộ Ngoại giao ban hành..pdf",
+        "attachment_path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/1_001133/V%C4%83n%20b%E1%BA%A3n%20%C4%91%E1%BB%81%20ngh%E1%BB%8B%20c%E1%BA%A5p%20Th%E1%BA%BB%20ph%C3%B3ng%20vi%C3%AAn%20n%C6%B0%E1%BB%9Bc%20ngo%C3%A0i%20c%E1%BB%A7a%20ph%C3%B3ng%20vi%C3%AAn%20th%C6%B0%E1%BB%9Dng%20tr%C3%BA%20theo%20m%E1%BA%ABu%20do%20B%E1%BB%99%20Ngo%E1%BA%A1i%20giao%20ban%20h%C3%A0nh..pdf"
+      },
+      {
+        "document_id": "02_nh_ch_n_dung_03_cm_x_04_cm_c_a_ph_ng_vi_n_th_ng_tr",
+        "name": "02 ảnh chân dung 03 cm x 04 cm của phóng viên thường trú.",
+        "group_name": "default",
+        "group_type": "unknown",
+        "original_count": "2",
+        "copy_count": "0",
+        "conditions": [],
+        "attachment_label": null,
+        "attachment_path": null
+      },
+      {
+        "document_id": "v_n_b_n_ngh_c_ph_ng_vi_n_th_ng_tr_c_a_ng_i_ng_u_c_quan_b_o_ch_n_c_ngo_i_ho_c_ng_i_c_ng_i_ng_u_c_quan_b_o_ch_n_c_ngo_i_y_quy_n_theo_m_u_do_b_ngo_i_giao_ban_h_nh",
+        "name": "Văn bản đề nghị cử phóng viên thường trú của người đứng đầu cơ quan báo chí nước ngoài hoặc người được người đứng đầu cơ quan báo chí nước ngoài ủy quyền theo mẫu do Bộ Ngoại giao ban hành.",
+        "group_name": "default",
+        "group_type": "unknown",
+        "original_count": "1",
+        "copy_count": "0",
+        "conditions": [],
+        "attachment_label": "Mau so 3 - Don de nghi cu phong vien thuong tru.docx",
+        "attachment_path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/1_001133/Mau%20so%203%20-%20Don%20de%20nghi%20cu%20phong%20vien%20thuong%20tru.docx"
+      }
+    ],
+    "conditional": [
+      {
+        "document_id": "th_ph_ng_vi_n_n_c_ngo_i_trong_tr_ng_h_p_th_b_h_ng",
+        "name": "Thẻ phóng viên nước ngoài (trong trường hợp thẻ bị hỏng).",
+        "group_name": "default",
+        "group_type": "unknown",
+        "original_count": "1",
+        "copy_count": "0",
+        "conditions": [
+          "Thẻ phóng viên nước ngoài (trong trường hợp thẻ bị hỏng)."
+        ],
+        "attachment_label": null,
+        "attachment_path": null
+      },
+      {
+        "document_id": "th_ph_ng_vi_n_n_c_ngo_i_tr_ng_h_p_xin_gia_h_n_th_ph_ng_vi_n_n_c_ngo_i",
+        "name": "Thẻ phóng viên nước ngoài (trường hợp xin gia hạn thẻ phóng viên nước ngoài)",
+        "group_name": "default",
+        "group_type": "unknown",
+        "original_count": "1",
+        "copy_count": "0",
+        "conditions": [
+          "Thẻ phóng viên nước ngoài (trường hợp xin gia hạn thẻ phóng viên nước ngoài)"
+        ],
+        "attachment_label": null,
+        "attachment_path": null
+      }
+    ],
+    "presented": [],
+    "notes": [
+      "Bản chụp hộ chiếu của phóng viên thường trú."
+    ],
+    "forms": [
+      {
+        "name": "Văn bản đề nghị cấp mới/cấp lại/Gia hạn Thẻ phóng viên nước ngoài của phóng viên thường trú theo mẫu do Bộ Ngoại giao ban hành.",
+        "attachment_label": "Văn bản đề nghị cấp Thẻ phóng viên nước ngoài của phóng viên thường trú theo mẫu do Bộ Ngoại giao ban hành..pdf",
+        "attachment_path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/1_001133/V%C4%83n%20b%E1%BA%A3n%20%C4%91%E1%BB%81%20ngh%E1%BB%8B%20c%E1%BA%A5p%20Th%E1%BA%BB%20ph%C3%B3ng%20vi%C3%AAn%20n%C6%B0%E1%BB%9Bc%20ngo%C3%A0i%20c%E1%BB%A7a%20ph%C3%B3ng%20vi%C3%AAn%20th%C6%B0%E1%BB%9Dng%20tr%C3%BA%20theo%20m%E1%BA%ABu%20do%20B%E1%BB%99%20Ngo%E1%BA%A1i%20giao%20ban%20h%C3%A0nh..pdf"
+      },
+      {
+        "name": "Văn bản đề nghị cử phóng viên thường trú của người đứng đầu cơ quan báo chí nước ngoài hoặc người được người đứng đầu cơ quan báo chí nước ngoài ủy quyền theo mẫu do Bộ Ngoại giao ban hành.",
+        "attachment_label": "Mau so 3 - Don de nghi cu phong vien thuong tru.docx",
+        "attachment_path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/1_001133/Mau%20so%203%20-%20Don%20de%20nghi%20cu%20phong%20vien%20thuong%20tru.docx"
+      }
+    ],
+    "empty_groups": [],
+    "document_count": 5
+  },
+  "process": {
+    "steps": [
+      {
+        "step_id": "step_1",
+        "title": null,
+        "content": "1. **Thẩm định hồ sơ**",
+        "actor": "user",
+        "channel_hint": null,
+        "time_hint": null
+      },
+      {
+        "step_id": "step_2",
+        "title": null,
+        "content": "Trong thời hạn 03 ngày làm việc kể từ khi nhận được hồ sơ đề nghị, Bộ Ngoại giao hoàn thành việc cấp, cấp lại hoặc gia hạn Thẻ phóng viên nước ngoài. Trong trường hợp từ chối cấp, cấp lại hoặc gia hạn Thẻ phóng viên nước ngoài, Bộ Ngoại giao thông báo bằng văn bản cho phóng viên nước ngoài",
+        "actor": "user",
+        "channel_hint": null,
+        "time_hint": "03 ngày làm việc"
+      },
+      {
+        "step_id": "step_3",
+        "title": null,
+        "content": "2. **Nộp hồ sơ**",
+        "actor": "user",
+        "channel_hint": null,
+        "time_hint": null
+      },
+      {
+        "step_id": "step_4",
+        "title": null,
+        "content": "Phóng viên thường trú có đề nghị cấp, cấp lại, gia hạn Thẻ phóng viên nước ngoài gửi 01 bộ hồ sơ đề nghị trực tiếp hoặc qua dịch vụ bưu chính đến Bộ Ngoại giao hoặc trực tuyến trên Cổng Dịch vụ công quốc gia.",
+        "actor": "user",
+        "channel_hint": "trực tuyến",
+        "time_hint": null
+      },
+      {
+        "step_id": "step_5",
+        "title": null,
+        "content": "3. Chậm nhất 15 ngày làm việc trước khi Thẻ phóng viên nước ngoài hết hạn, phóng viên thường trú phải làm thủ tục gia hạn Thẻ phóng viên nước ngoài nếu được Bộ Ngoại giao cho phép tiếp tục làm phóng viên thường trú. Phóng viên thường trú có đề nghị gia hạn Thẻ phóng viên nước ngoài gửi 01 bộ hồ sơ đề nghị gia hạn thẻ trực",
+        "actor": "user",
+        "channel_hint": null,
+        "time_hint": "15 ngày làm việc"
+      },
+      {
+        "step_id": "step_6",
+        "title": null,
+        "content": "tiếp hoặc qua dịch vụ bưu chính đến Bộ Ngoại giao;",
+        "actor": "user",
+        "channel_hint": "dịch vụ bưu chính",
+        "time_hint": null
+      }
+    ],
+    "step_count": 6,
+    "notes": []
+  },
+  "eligibility": {
+    "conditions": [],
+    "has_conditions": false
+  },
+  "results": {
+    "items": [
+      {
+        "name": "Thẻ phóng viên nước ngoài",
+        "result_code": "KQ.G08.000085",
+        "raw_text": "Thẻ phóng viên nước ngoài"
+      }
+    ],
+    "primary_result": {
+      "name": "Thẻ phóng viên nước ngoài",
+      "result_code": "KQ.G08.000085",
+      "raw_text": "Thẻ phóng viên nước ngoài"
+    }
+  },
+  "legal_basis": {
+    "items": [
+      {
+        "title": "Thông tư quy định về phân cấp thực hiện một số nhiệm vụ, quyền hạn trong lĩnh vực quản lý nhà nước của Bộ Tài chính",
+        "code": "31/2026/TT-BTC"
+      },
+      {
+        "title": "Luật báo chí",
+        "code": "103/2016/QH13"
+      },
+      {
+        "title": "Thông tư 06/2012/TT-BNG",
+        "code": "06/2012/TT-BNG"
+      },
+      {
+        "title": "Nghị định 88/2012/NĐ-CP",
+        "code": "88/2012/NĐ-CP"
+      }
+    ],
+    "count": 4
+  },
+  "attachments": [
+    {
+      "label": "Văn bản đề nghị cấp Thẻ phóng viên nước ngoài của phóng viên thường trú theo mẫu do Bộ Ngoại giao ban hành..pdf",
+      "path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/1_001133/V%C4%83n%20b%E1%BA%A3n%20%C4%91%E1%BB%81%20ngh%E1%BB%8B%20c%E1%BA%A5p%20Th%E1%BA%BB%20ph%C3%B3ng%20vi%C3%AAn%20n%C6%B0%E1%BB%9Bc%20ngo%C3%A0i%20c%E1%BB%A7a%20ph%C3%B3ng%20vi%C3%AAn%20th%C6%B0%E1%BB%9Dng%20tr%C3%BA%20theo%20m%E1%BA%ABu%20do%20B%E1%BB%99%20Ngo%E1%BA%A1i%20giao%20ban%20h%C3%A0nh..pdf",
+      "source_section": "Thành phần hồ sơ",
+      "document_name": "Văn bản đề nghị cấp mới/cấp lại/Gia hạn Thẻ phóng viên nước ngoài của phóng viên thường trú theo mẫu do Bộ Ngoại giao ban hành."
+    },
+    {
+      "label": "Mau so 3 - Don de nghi cu phong vien thuong tru.docx",
+      "path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/1_001133/Mau%20so%203%20-%20Don%20de%20nghi%20cu%20phong%20vien%20thuong%20tru.docx",
+      "source_section": "Thành phần hồ sơ",
+      "document_name": "Văn bản đề nghị cử phóng viên thường trú của người đứng đầu cơ quan báo chí nước ngoài hoặc người được người đứng đầu cơ quan báo chí nước ngoài ủy quyền theo mẫu do Bộ Ngoại giao ban hành."
+    }
+  ],
+  "signals": {
+    "raw_parse_warnings": [],
+    "missing_documents": false,
+    "documents_section_present": true,
+    "documents_declared_empty": false,
+    "documents_only_in_notes": false,
+    "missing_results": false
+  }
+}

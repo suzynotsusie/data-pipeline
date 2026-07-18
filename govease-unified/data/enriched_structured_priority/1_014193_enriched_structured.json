@@ -1,0 +1,133 @@
+{
+  "schema_version": "1.0",
+  "enricher_version": "0.2.0",
+  "source": {
+    "procedure_code": "1.014193",
+    "title": "Thủ tục khám bệnh, chữa bệnh bảo hiểm y tế",
+    "group_key": "suc_khoe_y_te",
+    "workflow_family": null,
+    "subflow": null
+  },
+  "experience": {
+    "entry_label": "Hỗ trợ y tế và bảo hiểm",
+    "overview_summary": "Thủ tục này thuộc nhóm y tế và bảo hiểm, thường dùng để đăng ký, điều chỉnh hoặc xác nhận quyền lợi bảo hiểm y tế. Kết quả thường nhận được là Người tham gia bảo hiểm y tế được giải quyết quyền lợi khám bệnh, chữa bệnh bảo hiểm y tế. Thời gian xử lý tham khảo: theo thời hạn của cơ quan xử lý.",
+    "next_step_summary": "Nên xác định rõ đối tượng tham gia, quyền lợi hoặc nhu cầu điều chỉnh hồ sơ y tế trước khi nộp. Có thể chọn kênh nộp phù hợp: Trực tiếp. Hiện có khoảng 14 mục giấy tờ cần theo dõi trong checklist.",
+    "tone": "supportive_public_service"
+  },
+  "guidance": {
+    "highlight_documents": [
+      {
+        "bucket": "required",
+        "name": "khi đến khám bệnh, chữa bệnh phải xuất trình giấy tiếp nhận hồ sơ và hẹn trả kết quả cấp, cấp lại và đổi thẻ bảo hiểm y tế, thông tin về thẻ bảo hiểm y tế do cơ quan bảo hiểm xã hội hoặc tổ chức, cá nhân được cơ quan bảo hiểm xã hội ủy quyền tiếp nhận hồ sơ cấp lại thẻ, đổi thẻ cấp và một loại giấy tờ chứng minh về nhân thân của người đó: căn cước, căn cước công dân, giấy chứng nhận căn cước, hộ chiếu, liên kết với tài khoản định danh điện tử (VNeID) mức độ 2 hoặc ứng dụng VssID hoặc giấy tờ chứng minh nhân thân khác do cơ quan, tổ chức có thẩm quyền cấp hoặc giấy xác nhận của công an cấp xã.",
+        "conditions": [],
+        "attachment_path": null
+      },
+      {
+        "bucket": "required",
+        "name": "Phiếu hẹn khám lại bản giấy có đóng dấu treo của cơ sở khám bệnh, chữa bệnh trên góc trái, phía trên và chữ ký của bác sĩ điều trị. Phiếu hẹn khám lại bản điện tử có chữ ký số của bác sĩ điều trị. Mỗi Phiếu hẹn khám lại chỉ sử dụng 01 (một) lần.",
+        "conditions": [],
+        "attachment_path": null
+      },
+      {
+        "bucket": "required",
+        "name": "Cơ sở khám bệnh, chữa bệnh ghi nội dung, lịch hẹn khám lại trong Phiếu hẹn khám lại (bản giấy hoặc bản điện tử) theo mẫu quy định tại Phụ lục V ban hành kèm theo Thông tư số 01/2025/TT-BYT hoặc ghi trong đơn thuốc, giấy ra viện (bản giấy hoặc bản điện tử) cho người bệnh (gọi chung là Phiếu hẹn khám lại)",
+        "conditions": [],
+        "attachment_path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/1_014193/Phieu%20hen%20kham%20lai%20theo%20PL%20V%20TT01.2025.docx"
+      },
+      {
+        "bucket": "conditional",
+        "name": "chỉ xuất trình thẻ bảo hiểm y tế bản giấy hoặc bản điện tử hoặc mã số bảo hiểm y tế; trường hợp chưa được cấp thẻ bảo hiểm y tế thì xuất trình giấy chứng sinh bản gốc hoặc bản chụp. Đối với trẻ vừa sinh, cha hoặc mẹ hoặc thân nhân của trẻ ký xác nhận trên hồ sơ bệnh án hoặc người đại diện cơ sở khám bệnh, chữa bệnh xác nhận trên hồ sơ bệnh án trong trường hợp trẻ không có cha, mẹ hoặc thân nhân.",
+        "conditions": [
+          "chỉ xuất trình thẻ bảo hiểm y tế bản giấy hoặc bản điện tử hoặc mã số bảo hiểm y tế; trường hợp chưa được cấp thẻ bảo hiểm y tế thì xuất trình giấy chứng sinh bản gốc hoặc bản chụp. Đối với trẻ vừa sinh, cha hoặc mẹ hoặc thân nhân của trẻ ký xác nhận trên hồ sơ bệnh án hoặc người đại diện cơ sở khám bệnh, chữa bệnh xác nhận trên hồ sơ bệnh án trong trường hợp trẻ không có cha, mẹ hoặc thân nhân."
+        ],
+        "attachment_path": null
+      },
+      {
+        "bucket": "conditional",
+        "name": "phải xuất trình thông tin về thẻ bảo hiểm y tế theo trường hợp 1 hoặc trường hợp 3 tại thủ tục này (Theo quy định tại khoản 4 Điều 37 của Nghị định số 188/2025/NĐ-CP). Trường hợp chưa có thẻ bảo hiểm y tế thì phải xuất trình giấy ra viện do cơ sở khám bệnh, chữa bệnh nơi lấy bộ phận cơ thể người cấp cho người đã hiến bộ phận cơ thể người và một trong các giấy tờ chứng minh nhân thân của người đó: căn cước, căn cước công dân, giấy chứng nhận căn cước, hộ chiếu, liên kết với tài khoản định danh điện tử (VNeID) mức độ 2 hoặc ứng dụng VssID hoặc giấy tờ chứng minh nhân thân khác do cơ quan, tổ chức có thẩm quyền cấp. Trường hợp chưa có thẻ bảo hiểm y tế nhưng phải điều trị ngay sau khi hiến, cơ sở khám bệnh, chữa bệnh và người bệnh hoặc thân nhân của người bệnh xác nhận vào hồ sơ bệnh án.",
+        "conditions": [
+          "phải xuất trình thông tin về thẻ bảo hiểm y tế theo trường hợp 1 hoặc trường hợp 3 tại thủ tục này (Theo quy định tại khoản 4 Điều 37 của Nghị định số 188/2025/NĐ-CP). Trường hợp chưa có thẻ bảo hiểm y tế thì phải xuất trình giấy ra viện do cơ sở khám bệnh, chữa bệnh nơi lấy bộ phận cơ thể người cấp cho người đã hiến bộ phận cơ thể người và một trong các giấy tờ chứng minh nhân thân của người đó: căn cước, căn cước công dân, giấy chứng nhận căn cước, hộ chiếu, liên kết với tài khoản định danh điện tử (VNeID) mức độ 2 hoặc ứng dụng VssID hoặc giấy tờ chứng minh nhân thân khác do cơ quan, tổ chức có thẩm quyền cấp. Trường hợp chưa có thẻ bảo hiểm y tế nhưng phải điều trị ngay sau khi hiến, cơ sở khám bệnh, chữa bệnh và người bệnh hoặc thân nhân của người bệnh xác nhận vào hồ sơ bệnh án."
+        ],
+        "attachment_path": null
+      },
+      {
+        "bucket": "conditional",
+        "name": "người tham gia bảo hiểm y tế phải xuất trình các giấy tờ theo trường hợp 1 hoặc trường hợp 2 hoặc trường hợp 3 tại thủ tục này trước khi kết thúc đợt điều trị (Theo quy định tại khoản 5 Điều 37 của Nghị định số 188/2025/NĐ-CP).",
+        "conditions": [
+          "người tham gia bảo hiểm y tế phải xuất trình các giấy tờ theo trường hợp 1 hoặc trường hợp 2 hoặc trường hợp 3 tại thủ tục này trước khi kết thúc đợt điều trị (Theo quy định tại khoản 5 Điều 37 của Nghị định số 188/2025/NĐ-CP)."
+        ],
+        "attachment_path": null
+      }
+    ],
+    "special_cases": [
+      "Có thể cần giấy tờ ủy quyền",
+      "Có trường hợp hồ sơ điện tử thay thế bản giấy",
+      "Có kiểm tra dữ liệu cư trú/định danh",
+      "Có thể cần đối chiếu quyền lợi bảo hiểm hoặc tuyến chuyên môn",
+      "Có thể cần đối chiếu thông tin thửa đất hoặc giấy chứng nhận",
+      "Có thể cần đối chiếu quá trình đóng bảo hiểm để giải quyết chế độ",
+      "Có thể cần hồ sơ tử tuất hoặc mai táng phí"
+    ],
+    "common_errors": [
+      "Thiếu giấy tờ hoặc nội dung ủy quyền phù hợp.",
+      "Thiếu giấy chứng sinh hoặc giấy thay thế hợp lệ.",
+      "Điền sai mẫu tờ khai hoặc chọn sai biểu mẫu đi kèm.",
+      "Sai nhóm đối tượng tham gia hoặc thông tin quyền lợi bảo hiểm y tế.",
+      "Thông tin thửa đất, tài sản hoặc giấy chứng nhận chưa khớp với hồ sơ hiện có."
+    ],
+    "validation_hints": [
+      "Nên xác định trước kênh nộp hồ sơ để biết có cần bản giấy, bản điện tử hay xuất trình trực tiếp.",
+      "Có mẫu biểu đính kèm, nên kiểm tra đúng biểu mẫu trước khi nộp.",
+      "Nên xác định đúng nhóm đối tượng, mã số bảo hiểm và quyền lợi áp dụng trước khi nộp."
+    ]
+  },
+  "intake": {
+    "candidate_input_fields": [
+      {
+        "field_id": "request_subject",
+        "label": "Đối tượng làm thủ tục",
+        "field_type": "text",
+        "required": true
+      },
+      {
+        "field_id": "insurance_or_medical_need",
+        "label": "Nhu cầu bảo hiểm hoặc y tế",
+        "field_type": "text",
+        "required": true
+      },
+      {
+        "field_id": "submission_channel_preference",
+        "label": "Kênh nộp dự kiến",
+        "field_type": "enum",
+        "required": false
+      },
+      {
+        "field_id": "has_insurance_number",
+        "label": "Đã có mã BHXH/BHYT",
+        "field_type": "boolean",
+        "required": false
+      },
+      {
+        "field_id": "insurance_participation_group",
+        "label": "Nhóm tham gia BHYT",
+        "field_type": "enum",
+        "required": true
+      }
+    ],
+    "suggested_clarifying_questions": [
+      "Bạn đang muốn đăng ký, điều chỉnh hay xác nhận quyền lợi y tế hoặc bảo hiểm nào?",
+      "Bạn đã có mã BHXH/BHYT hoặc thông tin đơn vị tiếp nhận liên quan chưa?"
+    ]
+  },
+  "ui_hints": {
+    "primary_channel": "in_person",
+    "result_label": "Người tham gia bảo hiểm y tế được giải quyết quyền lợi khám bệnh, chữa bệnh bảo hiểm y tế",
+    "time_badge": null,
+    "document_count_badge": 14
+  },
+  "provenance": {
+    "generator": "workflow_domain_enricher",
+    "derivation_mode": "rule_based_semantic_enrichment",
+    "supported_group": true
+  }
+}

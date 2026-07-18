@@ -1,0 +1,116 @@
+{
+  "schema_version": "1.0",
+  "enricher_version": "0.2.0",
+  "source": {
+    "procedure_code": "2.000821",
+    "title": "Giải quyết hưởng chế độ tử tuất",
+    "group_key": "nguoi_than_qua_doi",
+    "workflow_family": "death_family_support_workflow",
+    "subflow": "che_do_tu_tuat_mai_tang_phi"
+  },
+  "experience": {
+    "entry_label": "Hỗ trợ chế độ cho thân nhân",
+    "overview_summary": "Thủ tục này thuộc nhóm hỗ trợ thân nhân người đã mất, thường liên quan đến mai táng phí, tử tuất hoặc chế độ phát sinh sau khi người hưởng qua đời. Kết quả thường nhận được là kết quả giải quyết theo thủ tục này. Thời gian xử lý tham khảo: 8 Ngày làm việc.",
+    "next_step_summary": "Nên chuẩn bị giấy tờ của người đã mất, thân nhân và căn cứ hưởng chế độ trước khi nộp. Có thể chọn kênh nộp phù hợp: Trực tiếp, Trực tuyến, Dịch vụ bưu chính. Hiện có khoảng 9 mục giấy tờ cần theo dõi trong checklist.",
+    "tone": "supportive_public_service"
+  },
+  "guidance": {
+    "highlight_documents": [
+      {
+        "bucket": "required",
+        "name": "1. Đối với thân nhân của người đang đóng BHXH và thân nhân người bảo... Tên giấy tờ Mẫu đơn, tờ khai Số lượng a) Bản chính Sổ BHXH.",
+        "conditions": [],
+        "attachment_path": null
+      },
+      {
+        "bucket": "required",
+        "name": "b) Bản sao Giấy chứng tử hoặc bản sao Giấy báo tử hoặc trích lục khai tử hoặc bản sao Quyết định tuyên bố là đã chết của Tòa án đã có hiệu lực pháp luật.",
+        "conditions": [],
+        "attachment_path": null
+      },
+      {
+        "bucket": "required",
+        "name": "",
+        "conditions": [],
+        "attachment_path": "c) Bản chính Tờ khai của thân nhân (mẫu 09-HSB). 09_HSB.docx"
+      },
+      {
+        "bucket": "required",
+        "name": "g) Bản chính Bản khai cá nhân về thời gian, địa bàn phục vụ trong Quân đội có hưởng phụ cấp khu vực (Mẫu số 04C –",
+        "conditions": [],
+        "attachment_path": "HBQP ban hành kèm theo Thông tư số 136/2020/TT-BQP ngày 29/10/2020) đối với người có thời gian phục vụ trong Quân đội trước ngày 01/01/2007 tại địa bàn có hưởng phụ cấp khu vực mà sổ BHXH không thể hiện đầy đủ thông tin làm căn cứ tính phụ cấp khu vực. 04C_HBQP.docx"
+      },
+      {
+        "bucket": "required",
+        "name": "Đối với thân nhân của người đang hưởng hoặc tạm dừng hưởng lương hưu,... Tên giấy tờ Mẫu đơn, tờ khai Số lượng Hồ sơ như quy định tại các điểm b, c, d, e mục 1",
+        "conditions": [],
+        "attachment_path": null
+      },
+      {
+        "bucket": "conditional",
+        "name": "d) Bản chính Biên bản giám định mức suy giảm KNLĐ của Hội đồng GĐYK đối với thân nhân bị suy giảm KNLĐ từ 81% trở lên (trường hợp NLĐ đã có biên bản giám định y khoa để hưởng các chính sách khác trước đó mà đủ điều kiện hưởng thì có thể thay bằng bản sao) hoặc bản sao Giấy xác nhận khuyết tật mức độ đặc biệt nặng (tương đương mức suy giảm KNLĐ từ 81% trở lên) theo quy định tại Thông tư số 01/2019/TT-BLĐTBXH trong trường hợp hưởng trợ cấp tuất hàng tháng do suy giảm KNLĐ.",
+        "conditions": [
+          "d) Bản chính Biên bản giám định mức suy giảm KNLĐ của Hội đồng GĐYK đối với thân nhân bị suy giảm KNLĐ từ 81% trở lên (trường hợp NLĐ đã có biên bản giám định y khoa để hưởng các chính sách khác trước đó mà đủ điều kiện hưởng thì có thể thay bằng bản sao) hoặc bản sao Giấy xác nhận khuyết tật mức độ đặc biệt nặng (tương đương mức suy giảm KNLĐ từ 81% trở lên) theo quy định tại Thông tư số 01/2019/TT-BLĐTBXH trong trường hợp hưởng trợ cấp tuất hàng tháng do suy giảm KNLĐ."
+        ],
+        "attachment_path": null
+      }
+    ],
+    "special_cases": [
+      "Có trường hợp hồ sơ điện tử thay thế bản giấy",
+      "Có thể cần đối chiếu quá trình đóng bảo hiểm để giải quyết chế độ",
+      "Có thể cần hồ sơ tử tuất hoặc mai táng phí"
+    ],
+    "common_errors": [
+      "Điền sai mẫu tờ khai hoặc chọn sai biểu mẫu đi kèm.",
+      "Thiếu thông tin về thời gian tham gia bảo hiểm hoặc chưa xác định đúng chế độ hưu trí."
+    ],
+    "validation_hints": [
+      "Nên xác định trước kênh nộp hồ sơ để biết có cần bản giấy, bản điện tử hay xuất trình trực tiếp.",
+      "Có mẫu biểu đính kèm, nên kiểm tra đúng biểu mẫu trước khi nộp.",
+      "Nên kiểm tra kỹ giấy tờ của người đã mất, thân nhân và căn cứ phát sinh chế độ."
+    ]
+  },
+  "intake": {
+    "candidate_input_fields": [
+      {
+        "field_id": "deceased_person_name",
+        "label": "Người đã mất",
+        "field_type": "text",
+        "required": true
+      },
+      {
+        "field_id": "claimant_relationship",
+        "label": "Quan hệ của người nộp với người đã mất",
+        "field_type": "enum",
+        "required": true
+      },
+      {
+        "field_id": "support_benefit_type",
+        "label": "Loại chế độ cần giải quyết",
+        "field_type": "text",
+        "required": true
+      },
+      {
+        "field_id": "submission_channel_preference",
+        "label": "Kênh nộp dự kiến",
+        "field_type": "enum",
+        "required": false
+      }
+    ],
+    "suggested_clarifying_questions": [
+      "Bạn đang cần giải quyết mai táng phí, tử tuất hay chế độ nào cho thân nhân?",
+      "Giấy tờ của người đã mất và mối quan hệ của người nộp hồ sơ đã sẵn sàng chưa?"
+    ]
+  },
+  "ui_hints": {
+    "primary_channel": "in_person",
+    "result_label": null,
+    "time_badge": "8 Ngày làm việc",
+    "document_count_badge": 9
+  },
+  "provenance": {
+    "generator": "workflow_domain_enricher",
+    "derivation_mode": "rule_based_semantic_enrichment",
+    "supported_group": true
+  }
+}

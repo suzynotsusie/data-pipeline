@@ -1,0 +1,111 @@
+{
+  "schema_version": "1.0",
+  "enricher_version": "0.2.0",
+  "source": {
+    "procedure_code": "1.001130",
+    "title": "Phê duyệt nội dung trao đổi thông tin, dữ liệu khí tượng thủy văn, giám sát biến đổi khí hậu với tổ chức quốc tế tổ chức, cá nhân nước ngoài không thuộc điều ước quốc tế mà Cộng hòa xã hội chủ nghĩa Việt Nam là thành viên đối với thông tin, dữ liệu khí tượng thủy văn, giám sát biến đổi khí hậu trên phạm vi từ hai tỉnh, thành phố trực thuộc Trung ương trở lên",
+    "group_key": "suc_khoe_y_te",
+    "workflow_family": null,
+    "subflow": null
+  },
+  "experience": {
+    "entry_label": "Hỗ trợ y tế và bảo hiểm",
+    "overview_summary": "Thủ tục này thuộc nhóm y tế, thường cần đối chiếu thông tin người bệnh, đơn vị tiếp nhận hoặc quyền lợi chuyên ngành. Kết quả thường nhận được là Công văn về việc trao đổi thông tin, dữ liệu khí tượng thủy văn với tổ chức quốc tế, tổ chức, cá nhân nước ngoài theo Mẫu số 12 (kèm theo Nghị định số 113/2026/NĐ-CP ngày 01 tháng 4 năm 2026 của Chính phủ). Thời gian xử lý tham khảo: 13 ngày làm việc.",
+    "next_step_summary": "Nên xác định rõ đối tượng tham gia, quyền lợi hoặc nhu cầu điều chỉnh hồ sơ y tế trước khi nộp. Có thể chọn kênh nộp phù hợp: Trực tiếp, Trực tuyến, Dịch vụ bưu chính. Hiện có khoảng 7 mục giấy tờ cần theo dõi trong checklist.",
+    "tone": "supportive_public_service"
+  },
+  "guidance": {
+    "highlight_documents": [
+      {
+        "bucket": "required",
+        "name": "Tên, địa chỉ của tổ chức quốc tế, tổ chức, cá nhân nước ngoài được trao đổi thông tin, dữ liệu.",
+        "conditions": [],
+        "attachment_path": null
+      },
+      {
+        "bucket": "required",
+        "name": "Hình thức trao đổi thông tin, dữ liệu;",
+        "conditions": [],
+        "attachment_path": null
+      },
+      {
+        "bucket": "required",
+        "name": "Thời hạn trao đổi thông tin, dữ liệu.",
+        "conditions": [],
+        "attachment_path": null
+      },
+      {
+        "bucket": "required",
+        "name": "Loại, số lượng thông tin, dữ liệu cụ thể được trao đổi với tổ chức quốc tế, tổ chức, cá nhân nước ngoài;",
+        "conditions": [],
+        "attachment_path": null
+      },
+      {
+        "bucket": "required",
+        "name": "Mục đích trao đổi thông tin, dữ liệu với tổ chức quốc tế, tổ chức, cá nhân nước ngoài;",
+        "conditions": [],
+        "attachment_path": null
+      },
+      {
+        "bucket": "required",
+        "name": "Tên, địa chỉ đối với cơ quan, tổ chức; tên, số thẻ Căn cước/thẻ Căn cước công dân/số định danh cá nhân đối với cá nhân có nhu cầu trao đổi thông tin, dữ liệu khí tượng thủy văn, giám sát biến đổi khí hậu với tổ chức quốc tế, tổ chức, cá nhân nước ngoài.",
+        "conditions": [],
+        "attachment_path": null
+      }
+    ],
+    "special_cases": [
+      "Có yếu tố nước ngoài",
+      "Có kiểm tra dữ liệu cư trú/định danh"
+    ],
+    "common_errors": [
+      "Thiếu giấy tờ hợp pháp hóa hoặc giấy tờ nhân thân của phía nước ngoài."
+    ],
+    "validation_hints": [
+      "Nên xác định trước kênh nộp hồ sơ để biết có cần bản giấy, bản điện tử hay xuất trình trực tiếp.",
+      "Nên xác định đúng nhóm đối tượng, mã số bảo hiểm và quyền lợi áp dụng trước khi nộp."
+    ]
+  },
+  "intake": {
+    "candidate_input_fields": [
+      {
+        "field_id": "request_subject",
+        "label": "Đối tượng làm thủ tục",
+        "field_type": "text",
+        "required": true
+      },
+      {
+        "field_id": "insurance_or_medical_need",
+        "label": "Nhu cầu bảo hiểm hoặc y tế",
+        "field_type": "text",
+        "required": true
+      },
+      {
+        "field_id": "submission_channel_preference",
+        "label": "Kênh nộp dự kiến",
+        "field_type": "enum",
+        "required": false
+      },
+      {
+        "field_id": "has_insurance_number",
+        "label": "Đã có mã BHXH/BHYT",
+        "field_type": "boolean",
+        "required": false
+      }
+    ],
+    "suggested_clarifying_questions": [
+      "Bạn đang muốn đăng ký, điều chỉnh hay xác nhận quyền lợi y tế hoặc bảo hiểm nào?",
+      "Bạn đã có mã BHXH/BHYT hoặc thông tin đơn vị tiếp nhận liên quan chưa?"
+    ]
+  },
+  "ui_hints": {
+    "primary_channel": "online",
+    "result_label": "Công văn về việc trao đổi thông tin, dữ liệu khí tượng thủy văn với tổ chức quốc tế, tổ chức, cá nhân nước ngoài theo Mẫu số 12 (kèm theo Nghị định số 113/2026/NĐ-CP ngày 01 tháng 4 năm 2026 của Chính phủ)",
+    "time_badge": "13 ngày làm việc",
+    "document_count_badge": 7
+  },
+  "provenance": {
+    "generator": "workflow_domain_enricher",
+    "derivation_mode": "rule_based_semantic_enrichment",
+    "supported_group": true
+  }
+}

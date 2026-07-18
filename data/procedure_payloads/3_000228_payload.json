@@ -1,0 +1,355 @@
+{
+  "schema_version": "3.0",
+  "record_type": "public_service_procedure_payload",
+  "id": "procedure-3.000228",
+  "procedure_code": "3.000228",
+  "code": "3.000228",
+  "title": "Cấp tài khoản định danh điện tử mức độ 02, căn cước điện tử cho công dân Việt Nam (cấp xã)",
+  "language": "vi",
+  "status": "generated_from_pipeline",
+  "field": "Định danh và xác thực điện tử",
+  "group_key": "cu_tru_giay_to",
+  "workflow_family": "residence_identity_documents_workflow",
+  "subflow": "can_cuoc_chung_minh_nhan_dan",
+  "source": {
+    "source_url": "file:///C:/Users/ku060/Downloads/VAIC%20source/data-pipeline/raw_data/3_000228/3_000228_procedure_detail.md",
+    "source_markdown_path": "C:\\Users\\ku060\\Downloads\\VAIC source\\data-pipeline\\raw_data\\3_000228\\3_000228_procedure_detail.md",
+    "normalized_payload_path": "C:\\Users\\ku060\\Downloads\\VAIC source\\data-pipeline\\govease-unified\\data\\normalized_structured\\3_000228_normalized_structured.json",
+    "enriched_payload_path": "C:\\Users\\ku060\\Downloads\\VAIC source\\data-pipeline\\govease-unified\\data\\enriched_structured_priority\\3_000228_enriched_structured.json"
+  },
+  "scope": {
+    "included": "Thủ tục này thuộc nhóm cư trú và giấy tờ, thường cần kiểm tra thông tin định danh hoặc hồ sơ giấy tờ chuyên ngành. Kết quả thường nhận được là Thông báo kết quả qua ứng dụng VNeID hoặc tin nhắn SMS hoặc địa chỉ thư điện tử. Thời gian xử lý tham khảo: 3 ngày làm việc.",
+    "not_included": []
+  },
+  "agency": {
+    "executing_agency": "Cục cảnh sát quản lý hành chính về trật tự, xã hội",
+    "submission_place": null,
+    "receiving_places": []
+  },
+  "target_users": [
+    "Công dân Việt Nam"
+  ],
+  "submission_methods": [
+    {
+      "code": "IN_PERSON",
+      "label": "Trực tiếp",
+      "processing_time": "3 ngày làm việc",
+      "fee": null,
+      "description": "Công dân trực tiếp đến Công an xã, phường, thị trấn để thực hiện cấp tài khoản định danh điện tử mức độ 02, căn cước điện tử.<br>Thời hạn giải quyết: Không quá 03 ngày làm việc với trường hợp công dân có thẻ căn cước công dân gắn chip, thẻ căn cước còn hiệu lực."
+    },
+    {
+      "code": "IN_PERSON",
+      "label": "Trực tiếp",
+      "processing_time": "7 ngày làm việc",
+      "fee": null,
+      "description": "Không quá 07 ngày làm việc với trường hợp công dân chưa có thẻ Căn cước công dân gắn chip, thẻ căn cước hoặc thẻ Căn cước công dân gắn chip, thẻ căn cước đã hết hiệu lực."
+    }
+  ],
+  "processing_note": "Thời gian xử lý tham chiếu: 3 ngày làm việc. Nên kiểm tra trước giấy tờ định danh, nơi nộp và mẫu biểu liên quan, rồi chọn kênh nộp phù hợp: Trực tiếp. Hiện có khoảng 4 mục giấy tờ cần theo dõi trong checklist.",
+  "documents": {
+    "normally_required": [
+      {
+        "name": "Xuất trình thẻ Căn cước công dân gắn chip điện tử, thẻ căn cước còn hiệu lực",
+        "quantity": "1 bản chính, 0 bản sao",
+        "notes": [],
+        "group": "Công dân đã được cấp thẻ Căn cước công dân gắn chip điện tử, thẻ căn cước còn hiệu lực",
+        "attachment_path": null
+      },
+      {
+        "name": "a) Đối với cơ quan có chức năng quản lý nhà nước, cơ quan chuyên môn: - Văn bản đề nghị đăng ký mẫu con dấu của cơ quan, tổ chức, chức danh nhà nước; - Quyết định thành lập hoặc văn bản quy định về tổ chức, hoạt động của cơ quan có thẩm quyền.",
+        "quantity": "1 bản chính, 0 bản sao",
+        "notes": [],
+        "group": "Công dân đã được cấp thẻ Căn cước công dân gắn chip điện tử, thẻ căn cước còn hiệu lực",
+        "attachment_path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/3_000228/TK01-Phiunghcptikhonnhdanhintcnccint.docx"
+      },
+      {
+        "name": "Công dân chuẩn bị hồ sơ và thực hiện đồng thời thủ tục “cấp tài khoản định danh điện tử mức độ 2, căn cước điện tử cho công dân Việt Nam” cùng với thủ tục cấp thẻ căn cước.",
+        "quantity": "1 bản chính, 0 bản sao",
+        "notes": [],
+        "group": "Trường hợp công dân chưa được cấp thẻ Căn cước công dân gắn chip điện tử, thẻ căn cước hoặc thẻ hết hiệu lực",
+        "attachment_path": null
+      }
+    ],
+    "conditional": [
+      {
+        "condition": "Trong đó cung cấp rõ số thuê bao di động chính chủ, địa chỉ thư điện tử (nếu có) và thông tin khác đề nghị tích hợp (nếu có nhu cầu)",
+        "document": "Trong đó cung cấp rõ số thuê bao di động chính chủ, địa chỉ thư điện tử (nếu có) và thông tin khác đề nghị tích hợp (nếu có nhu cầu)",
+        "quantity": "1 bản chính, 0 bản sao",
+        "notes": [],
+        "attachment_path": null
+      }
+    ],
+    "forms": [
+      {
+        "name": "a) Đối với cơ quan có chức năng quản lý nhà nước, cơ quan chuyên môn: - Văn bản đề nghị đăng ký mẫu con dấu của cơ quan, tổ chức, chức danh nhà nước; - Quyết định thành lập hoặc văn bản quy định về tổ chức, hoạt động của cơ quan có thẩm quyền.",
+        "attachment_label": "TK01-Phiunghcptikhonnhdanhintcnccint.docx",
+        "attachment_path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/3_000228/TK01-Phiunghcptikhonnhdanhintcnccint.docx"
+      }
+    ],
+    "presented": [],
+    "notes": [],
+    "summary": [
+      {
+        "group": "Công dân đã được cấp thẻ Căn cước công dân gắn chip điện tử, thẻ căn cước còn hiệu lực",
+        "name": "Xuất trình thẻ Căn cước công dân gắn chip điện tử, thẻ căn cước còn hiệu lực",
+        "quantity": "1 bản chính, 0 bản sao",
+        "notes": [],
+        "attachment_path": null
+      },
+      {
+        "group": "Công dân đã được cấp thẻ Căn cước công dân gắn chip điện tử, thẻ căn cước còn hiệu lực",
+        "name": "a) Đối với cơ quan có chức năng quản lý nhà nước, cơ quan chuyên môn: - Văn bản đề nghị đăng ký mẫu con dấu của cơ quan, tổ chức, chức danh nhà nước; - Quyết định thành lập hoặc văn bản quy định về tổ chức, hoạt động của cơ quan có thẩm quyền.",
+        "quantity": "1 bản chính, 0 bản sao",
+        "notes": [],
+        "attachment_path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/3_000228/TK01-Phiunghcptikhonnhdanhintcnccint.docx"
+      },
+      {
+        "group": "Trường hợp công dân chưa được cấp thẻ Căn cước công dân gắn chip điện tử, thẻ căn cước hoặc thẻ hết hiệu lực",
+        "name": "Công dân chuẩn bị hồ sơ và thực hiện đồng thời thủ tục “cấp tài khoản định danh điện tử mức độ 2, căn cước điện tử cho công dân Việt Nam” cùng với thủ tục cấp thẻ căn cước.",
+        "quantity": "1 bản chính, 0 bản sao",
+        "notes": [],
+        "attachment_path": null
+      },
+      {
+        "group": null,
+        "name": null,
+        "quantity": "1 bản chính, 0 bản sao",
+        "notes": [],
+        "attachment_path": null
+      },
+      {
+        "group": null,
+        "name": "a) Đối với cơ quan có chức năng quản lý nhà nước, cơ quan chuyên môn: - Văn bản đề nghị đăng ký mẫu con dấu của cơ quan, tổ chức, chức danh nhà nước; - Quyết định thành lập hoặc văn bản quy định về tổ chức, hoạt động của cơ quan có thẩm quyền.",
+        "quantity": null,
+        "notes": null,
+        "attachment_path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/3_000228/TK01-Phiunghcptikhonnhdanhintcnccint.docx"
+      }
+    ]
+  },
+  "steps": [
+    {
+      "order": 1,
+      "title": "Bước 1",
+      "description": "1.",
+      "example": null
+    },
+    {
+      "order": 2,
+      "title": "a)",
+      "description": "a) Đối với công dân đã được cấp thẻ Căn cước công dân gắn chip điện tử, thẻ căn cước.",
+      "example": null
+    },
+    {
+      "order": 3,
+      "title": "Bước 1:",
+      "description": "Bước 1: Công dân Việt Nam đến Công an cấp xã trong cả nước không phụ thuộc vào nơi cư trú đề nghị đăng ký tài khoản định danh điện tử mức độ 2, căn cước điện tử. (Lưu ý: Lộ trình thực hiện cấp tài khoản định danh điện tử mức độ 2, căn cước điện tử cho công dân Việt Nam tại Công an cấp xã trong cả nước không phụ thuộc vào nơi cư trú thực hiện theo thông báo của Bộ Công an)",
+      "example": null
+    },
+    {
+      "order": 4,
+      "title": "Bước 2:",
+      "description": "Bước 2: Công dân xuất trình thẻ Căn cước công dân gắn chip điện tử, thẻ căn cước còn hiệu lực và cung cấp đầy đủ, chính xác thông tin trên Phiếu đề nghị cấp tài khoản định danh điện tử (mẫu TK01 ban hành kèm theo Nghị định số 69/2024/NĐ-CP ngày 25/6/2024 quy định về định danh và xác thực điện tử); trong đó cung cấp rõ số thuê bao di động chính chủ, địa chỉ thư điện tử của công dân (nếu có) và thông tin khác đề nghị tích hợp vào căn cước điện tử (nếu có nhu cầu) cho cán bộ tiếp nhận.",
+      "example": null
+    },
+    {
+      "order": 5,
+      "title": "Bước 3:",
+      "description": "Bước 3: Cán bộ tiếp nhận nhập thông tin công dân cung cấp vào hệ thống định danh và xác thực điện tử để xác thực; xác thực ảnh khuôn mặt, vân tay của công dân đến làm thủ tục với Cơ sở dữ liệu căn cước và khẳng định sự đồng ý đăng ký tạo lập tài khoản định danh điện tử, căn cước điện tử.",
+      "example": null
+    },
+    {
+      "order": 6,
+      "title": "Bước 4.",
+      "description": "Bước 4. Cơ quan quản lý định danh và xác thực điện tử tiến hành kiểm tra, xác thực thông tin công dân đề nghị cấp tài khoản định danh điện tử mức độ 02, căn cước điện tử và thông báo kết quả đăng ký cấp tài khoản định danh điện tử mức độ 02, căn cước điện tử qua Ứng dụng định danh quốc gia hoặc số thuê bao di động chính chủ hoặc địa chỉ thư điện tử.",
+      "example": null
+    },
+    {
+      "order": 7,
+      "title": "b)",
+      "description": "b) Đối với công dân chưa được cấp thẻ căn cước công dân gắn chip điện tử, thẻ căn cước: Cơ quan Công an tiến hành cấp tài khoản định danh điện tử mức độ 2, căn cước điện tử cùng với thủ tục cấp thẻ căn cước. Thời gian tiếp nhận hồ sơ: Giờ hành chính các ngày làm việc từ thứ 2 đến thứ 6 (trừ các ngày nghỉ lễ, tết theo quy định của pháp luật).",
+      "example": null
+    }
+  ],
+  "input_fields": [
+    {
+      "field": "document_request_type",
+      "label": "Loại giấy tờ cần xử lý",
+      "type": "string",
+      "required": true
+    },
+    {
+      "field": "submission_channel_preference",
+      "label": "Kênh nộp dự kiến",
+      "type": "enum",
+      "required": false,
+      "options": [
+        "Trực tiếp"
+      ]
+    },
+    {
+      "field": "identity_document_available",
+      "label": "Có giấy tờ định danh",
+      "type": "boolean",
+      "required": true
+    },
+    {
+      "field": "residency_or_status_known",
+      "label": "Biết rõ nơi cư trú hoặc tình trạng hiện tại",
+      "type": "boolean",
+      "required": false
+    },
+    {
+      "field": "age_over_14",
+      "label": "Người làm thủ tục từ đủ 14 tuổi",
+      "type": "boolean",
+      "required": true
+    }
+  ],
+  "validation_rules": [
+    {
+      "id": "required-1",
+      "severity": "error",
+      "field": "document_request_type",
+      "rule": "Trường bắt buộc phải có dữ liệu hợp lệ trước khi nộp.",
+      "message": "Thiếu trường bắt buộc: Loại giấy tờ cần xử lý."
+    },
+    {
+      "id": "required-3",
+      "severity": "error",
+      "field": "identity_document_available",
+      "rule": "Trường bắt buộc phải có dữ liệu hợp lệ trước khi nộp.",
+      "message": "Thiếu trường bắt buộc: Có giấy tờ định danh."
+    },
+    {
+      "id": "required-5",
+      "severity": "error",
+      "field": "age_over_14",
+      "rule": "Trường bắt buộc phải có dữ liệu hợp lệ trước khi nộp.",
+      "message": "Thiếu trường bắt buộc: Người làm thủ tục từ đủ 14 tuổi."
+    },
+    {
+      "id": "hint-1",
+      "severity": "warning",
+      "field": "general",
+      "rule": "Nên xác định trước kênh nộp hồ sơ để biết có cần bản giấy, bản điện tử hay xuất trình trực tiếp.",
+      "message": "Nên xác định trước kênh nộp hồ sơ để biết có cần bản giấy, bản điện tử hay xuất trình trực tiếp."
+    },
+    {
+      "id": "hint-2",
+      "severity": "warning",
+      "field": "general",
+      "rule": "Có mẫu biểu đính kèm, nên kiểm tra đúng biểu mẫu trước khi nộp.",
+      "message": "Có mẫu biểu đính kèm, nên kiểm tra đúng biểu mẫu trước khi nộp."
+    },
+    {
+      "id": "hint-3",
+      "severity": "warning",
+      "field": "general",
+      "rule": "Nên đối chiếu trước dữ liệu định danh và nơi cư trú để tránh bị yêu cầu bổ sung.",
+      "message": "Nên đối chiếu trước dữ liệu định danh và nơi cư trú để tránh bị yêu cầu bổ sung."
+    }
+  ],
+  "common_errors": [
+    {
+      "field": "general",
+      "issue": "Điền sai mẫu tờ khai hoặc chọn sai biểu mẫu đi kèm.",
+      "fix": "Nên xác định trước kênh nộp hồ sơ để biết có cần bản giấy, bản điện tử hay xuất trình trực tiếp."
+    }
+  ],
+  "clarifying_questions": [
+    {
+      "id": "clarify_1",
+      "question": "Bạn đang xử lý giấy tờ gì và muốn nộp trực tiếp hay trực tuyến?",
+      "purpose": "workflow_intake"
+    },
+    {
+      "id": "clarify_2",
+      "question": "Thông tin định danh và nơi cư trú hiện tại đã sẵn sàng để đối chiếu chưa?",
+      "purpose": "workflow_intake"
+    }
+  ],
+  "legal_basis": [
+    {
+      "title": "Nghị định số 69/2024/NĐ-CP của Chính phủ: Quy định về định danh và xác thực điện tử",
+      "code": "69/2024/NĐ-CP"
+    }
+  ],
+  "legal_bases": [
+    {
+      "title": "Nghị định số 69/2024/NĐ-CP của Chính phủ: Quy định về định danh và xác thực điện tử",
+      "code": "69/2024/NĐ-CP"
+    }
+  ],
+  "faq": [
+    {
+      "question": "Có thể nộp qua kênh nào?",
+      "answer": "Các kênh hiện có: Trực tiếp."
+    },
+    {
+      "question": "Thời gian xử lý tham chiếu là bao lâu?",
+      "answer": "Thời gian xử lý tham chiếu hiện có là 3 ngày làm việc."
+    },
+    {
+      "question": "Kết quả chính của thủ tục là gì?",
+      "answer": "Kết quả chính được trích xuất là Thông báo kết quả qua ứng dụng VNeID hoặc tin nhắn SMS hoặc địa chỉ thư điện tử."
+    }
+  ],
+  "guidance": {
+    "highlight_documents": [
+      {
+        "bucket": "required",
+        "name": "Xuất trình thẻ Căn cước công dân gắn chip điện tử, thẻ căn cước còn hiệu lực",
+        "conditions": [],
+        "attachment_path": null
+      },
+      {
+        "bucket": "required",
+        "name": "a) Đối với cơ quan có chức năng quản lý nhà nước, cơ quan chuyên môn: - Văn bản đề nghị đăng ký mẫu con dấu của cơ quan, tổ chức, chức danh nhà nước; - Quyết định thành lập hoặc văn bản quy định về tổ chức, hoạt động của cơ quan có thẩm quyền.",
+        "conditions": [],
+        "attachment_path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/3_000228/TK01-Phiunghcptikhonnhdanhintcnccint.docx"
+      },
+      {
+        "bucket": "required",
+        "name": "Công dân chuẩn bị hồ sơ và thực hiện đồng thời thủ tục “cấp tài khoản định danh điện tử mức độ 2, căn cước điện tử cho công dân Việt Nam” cùng với thủ tục cấp thẻ căn cước.",
+        "conditions": [],
+        "attachment_path": null
+      },
+      {
+        "bucket": "conditional",
+        "name": "Trong đó cung cấp rõ số thuê bao di động chính chủ, địa chỉ thư điện tử (nếu có) và thông tin khác đề nghị tích hợp (nếu có nhu cầu)",
+        "conditions": [
+          "Trong đó cung cấp rõ số thuê bao di động chính chủ, địa chỉ thư điện tử (nếu có) và thông tin khác đề nghị tích hợp (nếu có nhu cầu)"
+        ],
+        "attachment_path": null
+      }
+    ],
+    "special_cases": [
+      "Có kiểm tra dữ liệu cư trú/định danh"
+    ],
+    "common_errors": [
+      "Điền sai mẫu tờ khai hoặc chọn sai biểu mẫu đi kèm."
+    ],
+    "validation_hints": [
+      "Nên xác định trước kênh nộp hồ sơ để biết có cần bản giấy, bản điện tử hay xuất trình trực tiếp.",
+      "Có mẫu biểu đính kèm, nên kiểm tra đúng biểu mẫu trước khi nộp.",
+      "Nên đối chiếu trước dữ liệu định danh và nơi cư trú để tránh bị yêu cầu bổ sung."
+    ]
+  },
+  "next_steps": {
+    "summary": "Nên kiểm tra trước giấy tờ định danh, nơi nộp và mẫu biểu liên quan, rồi chọn kênh nộp phù hợp: Trực tiếp. Hiện có khoảng 4 mục giấy tờ cần theo dõi trong checklist.",
+    "time_badge": "3 ngày làm việc",
+    "result_label": "Thông báo kết quả qua ứng dụng VNeID hoặc tin nhắn SMS hoặc địa chỉ thư điện tử",
+    "primary_channel": "in_person",
+    "channels": [
+      "in_person"
+    ]
+  },
+  "notes": [],
+  "provenance": {
+    "pipeline": "raw->structured->normalized->enriched->ui_api_payload",
+    "normalizer_version": "0.2.0",
+    "enricher_version": "0.2.0",
+    "mapping_notes": "workflow_generated:cu_tru_giay_to/can_cuoc_chung_minh_nhan_dan",
+    "supported_group": true
+  }
+}

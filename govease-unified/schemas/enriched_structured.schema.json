@@ -1,0 +1,43 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://govease.local/schemas/enriched_structured.schema.json",
+  "title": "GovEase Enriched Structured Procedure",
+  "type": "object",
+  "required": [
+    "schema_version",
+    "enricher_version",
+    "source",
+    "experience",
+    "guidance",
+    "intake",
+    "ui_hints",
+    "provenance"
+  ],
+  "properties": {
+    "schema_version": {
+      "type": "string"
+    },
+    "enricher_version": {
+      "type": "string"
+    },
+    "source": {
+      "type": "object"
+    },
+    "experience": {
+      "type": "object"
+    },
+    "guidance": {
+      "type": "object"
+    },
+    "intake": {
+      "type": "object"
+    },
+    "ui_hints": {
+      "type": "object"
+    },
+    "provenance": {
+      "type": "object"
+    }
+  },
+  "additionalProperties": true
+}

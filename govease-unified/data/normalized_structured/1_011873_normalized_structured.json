@@ -1,0 +1,216 @@
+{
+  "schema_version": "1.0",
+  "normalizer_version": "0.2.0",
+  "source": {
+    "procedure_code": "1.011873",
+    "title": "Cấp lại Giấy chứng nhận chất lượng an toàn kỹ thuật và bảo vệ môi trường xe cơ giới nhập khẩu (theo Nghị định số 60/2023/NĐ-CP)",
+    "raw_structured_parser_version": "0.1.0",
+    "field": "Đăng kiểm"
+  },
+  "procedure": {
+    "level": "Cấp bộ/ngành",
+    "procedure_type": "TTHC được luật giao quy định chi tiết",
+    "target_users": [
+      "Doanh nghiệp có vốn đầu tư nước ngoài",
+      "Công dân Việt Nam",
+      "Doanh nghiệp",
+      "Người nước ngoài",
+      "Tổ chức nước ngoài",
+      "Tổ chức (không bao gồm doanh nghiệp",
+      "HTX)"
+    ],
+    "authorities": [
+      "Cục Đăng kiểm Việt Nam"
+    ],
+    "receiving_places": []
+  },
+  "submission": {
+    "channels": [
+      "in_person",
+      "online",
+      "postal"
+    ],
+    "methods": [
+      {
+        "method_id": "method_1",
+        "channel": "online",
+        "processing_time_text": "24 ngày làm việc",
+        "fee_text": null,
+        "description": "+ Phát hành văn bản thông báo: Trong vòng 02 ngày làm việc, trường hợp hồ sơ đầy đủ theo quy định;<br>+ Cấp bản sao Giấy chứng nhận: Sau 24 ngày làm việc, kể từ ngày phát hành văn bản, nếu không nhận được phản hồi từ các cơ quan có liên quan.<br>- Trường hợp bị hỏng: Trong vòng 02 ngày làm việc, trường hợp hồ sơ đầy đủ theo quy định.",
+        "is_online": true,
+        "is_postal": false,
+        "is_in_person": false
+      },
+      {
+        "method_id": "method_2",
+        "channel": "postal",
+        "processing_time_text": "24 ngày làm việc",
+        "fee_text": null,
+        "description": "+ Phát hành văn bản thông báo: Trong vòng 02 ngày làm việc, trường hợp hồ sơ đầy đủ theo quy định;<br>+ Cấp bản sao Giấy chứng nhận: Sau 24 ngày làm việc, kể từ ngày phát hành văn bản, nếu không nhận được phản hồi từ các cơ quan có liên quan.<br>- Trường hợp bị hỏng: Trong vòng 02 ngày làm việc, trường hợp hồ sơ đầy đủ theo quy định.",
+        "is_online": false,
+        "is_postal": true,
+        "is_in_person": false
+      },
+      {
+        "method_id": "method_3",
+        "channel": "in_person",
+        "processing_time_text": "2 ngày làm việc",
+        "fee_text": null,
+        "description": "+ Phát hành văn bản thông báo: Trong vòng 02 ngày làm việc, trường hợp hồ sơ đầy đủ theo quy định;<br>+ Cấp bản sao Giấy chứng nhận: Sau 24 ngày làm việc, kể từ ngày phát hành văn bản, nếu không nhận được phản hồi từ các cơ quan có liên quan.<br>- Trường hợp bị hỏng: Trong vòng 02 ngày làm việc, trường hợp hồ sơ đầy đủ theo quy định.",
+        "is_online": false,
+        "is_postal": false,
+        "is_in_person": true
+      }
+    ],
+    "timing_summary": {
+      "unique_processing_times": [
+        "24 ngày làm việc",
+        "2 ngày làm việc"
+      ],
+      "method_count": 3
+    }
+  },
+  "documents": {
+    "required": [
+      {
+        "document_id": "v_n_b_n_ngh_c_p_l_i_gi_y_ch_ng_nh_n",
+        "name": "Văn bản đề nghị cấp lại Giấy chứng nhận",
+        "group_name": "default",
+        "group_type": "unknown",
+        "original_count": "1",
+        "copy_count": "1",
+        "conditions": [],
+        "attachment_label": null,
+        "attachment_path": null
+      }
+    ],
+    "conditional": [
+      {
+        "document_id": "b_n_ch_nh_gi_y_ch_ng_nh_n_i_v_i_tr_ng_h_p_b_h_ng",
+        "name": "Bản chính Giấy chứng nhận (đối với trường hợp bị hỏng)",
+        "group_name": "default",
+        "group_type": "unknown",
+        "original_count": "1",
+        "copy_count": "1",
+        "conditions": [
+          "Bản chính Giấy chứng nhận (đối với trường hợp bị hỏng)"
+        ],
+        "attachment_label": null,
+        "attachment_path": null
+      }
+    ],
+    "presented": [],
+    "notes": [],
+    "forms": [],
+    "empty_groups": [],
+    "document_count": 2
+  },
+  "process": {
+    "steps": [
+      {
+        "step_id": "step_1",
+        "title": null,
+        "content": "1. **a) Nộp hồ sơ TTHC:**",
+        "actor": "user",
+        "channel_hint": null,
+        "time_hint": null
+      },
+      {
+        "step_id": "step_2",
+        "title": null,
+        "content": "Nộp trực tuyến thông qua Cổng thông tin một cửa quốc gia. Trường hợp bất khả kháng, người nhập khẩu có thể nộp hồ sơ giấy cho Trung tâm NVICC trực thuộc Cục ĐKVN.",
+        "actor": "user",
+        "channel_hint": "trực tuyến",
+        "time_hint": null
+      },
+      {
+        "step_id": "step_3",
+        "title": null,
+        "content": "2. **b) Giải quyết TTHC:**",
+        "actor": "user",
+        "channel_hint": null,
+        "time_hint": null
+      },
+      {
+        "step_id": "step_4",
+        "title": null,
+        "content": "- Cách thức cấp lại do bị mất:",
+        "actor": "user",
+        "channel_hint": null,
+        "time_hint": null
+      },
+      {
+        "step_id": "step_5",
+        "title": null,
+        "content": "+ Trường hợp hồ sơ đầy đủ theo quy định, trong vòng 02 ngày làm việc Trung tâm NVICC thông báo bằng văn bản gửi người nhập khẩu và cơ quan hải quan, thuế, công an; trường hợp hồ sơ chưa đầy đủ, Trung tâm NVICC hướng dẫn người nhập khẩu hoàn thiện hồ sơ.",
+        "actor": "authority",
+        "channel_hint": null,
+        "time_hint": "02 ngày làm việc"
+      },
+      {
+        "step_id": "step_6",
+        "title": null,
+        "content": "+ Sau 24 ngày làm việc, kể từ ngày phát hành văn bản, nếu không nhận được phản hồi từ các cơ quan có liên quan, Trung tâm NVICC sẽ cấp bản sao (của bản giấy hoặc của bản điện tử) Giấy chứng nhận; trường hợp không cấp lại, Trung tâm NVICC có văn bản trả lời và nêu rõ lý do.",
+        "actor": "authority",
+        "channel_hint": null,
+        "time_hint": "24 ngày làm việc"
+      },
+      {
+        "step_id": "step_7",
+        "title": null,
+        "content": "- Cách thức cấp lại do bị hỏng: Trường hợp hồ sơ đầy đủ theo quy định, Trung tâm NVICC thực hiện việc cấp lại bản chính Giấy chứng nhận trong vòng 02 ngày làm việc; trường hợp không cấp lại, Trung tâm NVICC có văn bản trả lời và nêu rõ lý do.",
+        "actor": "user",
+        "channel_hint": null,
+        "time_hint": "02 ngày làm việc"
+      }
+    ],
+    "step_count": 7,
+    "notes": []
+  },
+  "eligibility": {
+    "conditions": [
+      "Người nhập khẩu đã được cấp Giấy chứng nhận chất lượng an toàn kỹ thuật và bảo vệ môi trường xe cơ giới nhập khẩu theo quy định nhưng Giấy chứng nhận bị mất, bị hỏng hoặc hết hiệu lực."
+    ],
+    "has_conditions": true
+  },
+  "results": {
+    "items": [
+      {
+        "name": "Giấy chứng nhận chất lượng an toàn kỹ thuật và bảo vệ môi trường xe cơ giới nhập khẩu (theo Nghị định 60/2023/NĐ-CP)",
+        "result_code": "KQ.G04.000367",
+        "raw_text": "Giấy chứng nhận chất lượng an toàn kỹ thuật và bảo vệ môi trường xe cơ giới nhập khẩu (theo Nghị định 60/2023/NĐ-CP)"
+      }
+    ],
+    "primary_result": {
+      "name": "Giấy chứng nhận chất lượng an toàn kỹ thuật và bảo vệ môi trường xe cơ giới nhập khẩu (theo Nghị định 60/2023/NĐ-CP)",
+      "result_code": "KQ.G04.000367",
+      "raw_text": "Giấy chứng nhận chất lượng an toàn kỹ thuật và bảo vệ môi trường xe cơ giới nhập khẩu (theo Nghị định 60/2023/NĐ-CP)"
+    }
+  },
+  "legal_basis": {
+    "items": [
+      {
+        "title": "Thông tư 36/2022/TT-BTC",
+        "code": "36/2022/TT-BTC"
+      },
+      {
+        "title": "nghị quyết của Chính phủ về cắt giảm, phân cấp, đơn giản hóa thủ tục hành chính, điều kiện kinh doanh lĩnh vực quốc phòng, nội vụ, tài chính, xây dựng, ngoại giao, tư pháp, ngân hàng",
+        "code": "24/2026/NQ-CP"
+      },
+      {
+        "title": "Quy định về việc kiểm tra, chứng nhận chất lượng an toàn kỹ thuật và bảo vệ môi trường ô tô nhập khẩu và linh kiện nhập khẩu theo các Điều ước quốc tế mà Việt Nam là thành viên.",
+        "code": "60/2023/NĐ-CP"
+      }
+    ],
+    "count": 3
+  },
+  "attachments": [],
+  "signals": {
+    "raw_parse_warnings": [],
+    "missing_documents": false,
+    "documents_section_present": true,
+    "documents_declared_empty": false,
+    "documents_only_in_notes": false,
+    "missing_results": false
+  }
+}

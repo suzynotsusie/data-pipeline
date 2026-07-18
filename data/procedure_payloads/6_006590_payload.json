@@ -1,0 +1,359 @@
+{
+  "schema_version": "3.0",
+  "record_type": "public_service_procedure_payload",
+  "id": "procedure-6.006590",
+  "procedure_code": "6.006590",
+  "code": "6.006590",
+  "title": "Công nhận đăng kiểm viên đường sắt và đăng kiểm viên đường sắt bậc",
+  "language": "vi",
+  "status": "generated_from_pipeline",
+  "field": "Đăng kiểm",
+  "group_key": "phuong_tien_nguoi_lai",
+  "workflow_family": "vehicle_driver_workflow",
+  "subflow": "dang_kiem_phuong_tien",
+  "source": {
+    "source_url": "file:///C:/Users/ku060/Downloads/VAIC%20source/data-pipeline/raw_data/6_006590/6_006590_procedure_detail.md",
+    "source_markdown_path": "C:\\Users\\ku060\\Downloads\\VAIC source\\data-pipeline\\raw_data\\6_006590\\6_006590_procedure_detail.md",
+    "normalized_payload_path": "C:\\Users\\ku060\\Downloads\\VAIC source\\data-pipeline\\govease-unified\\data\\normalized_structured\\6_006590_normalized_structured.json",
+    "enriched_payload_path": "C:\\Users\\ku060\\Downloads\\VAIC source\\data-pipeline\\govease-unified\\data\\enriched_structured_priority\\6_006590_enriched_structured.json"
+  },
+  "scope": {
+    "included": "Thủ tục này thuộc nhóm phương tiện và đăng kiểm, thường cần đối chiếu hồ sơ kỹ thuật, đăng ký hoặc chứng nhận an toàn của phương tiện. Kết quả thường nhận được là Quyết định công nhận/công nhận lại đăng kiểm viên đường sắt/đăng kiểm viên đường sắt bậc cao. Thời gian xử lý tham khảo: 1 ngày làm việc.",
+    "not_included": []
+  },
+  "agency": {
+    "executing_agency": "Cục Đăng kiểm Việt Nam",
+    "submission_place": null,
+    "receiving_places": []
+  },
+  "target_users": [
+    "Cán bộ",
+    "công chức",
+    "viên chức"
+  ],
+  "submission_methods": [
+    {
+      "code": "IN_PERSON",
+      "label": "Trực tiếp",
+      "processing_time": "1 ngày làm việc",
+      "fee": null,
+      "description": null
+    },
+    {
+      "code": "ONLINE",
+      "label": "Trực tuyến",
+      "processing_time": "1 ngày làm việc",
+      "fee": null,
+      "description": null
+    },
+    {
+      "code": "POSTAL",
+      "label": "Dịch vụ bưu chính",
+      "processing_time": "1 ngày làm việc",
+      "fee": null,
+      "description": null
+    }
+  ],
+  "processing_note": "Thời gian xử lý tham chiếu: 1 ngày làm việc. Nên kiểm tra trước loại phương tiện hoặc loại giấy phép cần xử lý, cùng hồ sơ kỹ thuật hoặc nhân thân liên quan. Có thể chọn kênh nộp phù hợp: Trực tiếp, Trực tuyến, Dịch vụ bưu chính. Hiện có khoảng 4 mục giấy tờ cần theo dõi trong checklist.",
+  "documents": {
+    "normally_required": [
+      {
+        "name": "Đơn đề nghị công nhận/công nhận lại đăng kiểm viên đường sắt/đăng kiểm viên đường sắt bậc cao",
+        "quantity": "1 bản chính, 0 bản sao",
+        "notes": [],
+        "group": "default",
+        "attachment_path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/6_006590/%C4%90%C6%A1n%20%C4%91%E1%BB%81%20ngh%E1%BB%8B%20c%C3%B4ng%20nh%E1%BA%ADn%20%C4%90KV.pdf"
+      },
+      {
+        "name": "Bản chính hoặc bản sao có chứng thực hoặc bản điện tử hoặc bản sao điện tử Bằng tốt nghiệp đại học",
+        "quantity": "1 bản chính, 0 bản sao",
+        "notes": [],
+        "group": "default",
+        "attachment_path": null
+      },
+      {
+        "name": "Lý lịch chuyên môn của người được đề nghị công nhận Đăng kiểm viên theo mẫu (bản chính);",
+        "quantity": "1 bản chính, 0 bản sao",
+        "notes": [],
+        "group": "default",
+        "attachment_path": null
+      }
+    ],
+    "conditional": [
+      {
+        "condition": "Bản sao hợp pháp văn bằng, chứng chỉ: mỗi thứ 01 bản. -Bằng tốt nghiệp Đại học, Cao đẳng hoặc Trung học theo yêu cầu của ngạch cần tuyển dụng; -Chứng chỉ Ngoại ngữ trình độ B trở lên; -Chứng chỉ Tin học Văn phòng; -Chứng chỉ Quản lý Nhà nước (nếu có). (Khi nộp hồ sơ dự tuyển thí sinh chỉ cần nộp bản sao các văn bằng, chứng chỉ và bản sao các giấy tờ liên quan khác không cần công chứng hoặc chứng nhận của cơ quan có thẩm quyền nhưng phải ghi cam đoan trên bản sao là được sao từ bản chính, do người dự tuyển ký tên và chịu trách nhiệm)",
+        "document": "Bản sao hợp pháp văn bằng, chứng chỉ: mỗi thứ 01 bản. -Bằng tốt nghiệp Đại học, Cao đẳng hoặc Trung học theo yêu cầu của ngạch cần tuyển dụng; -Chứng chỉ Ngoại ngữ trình độ B trở lên; -Chứng chỉ Tin học Văn phòng; -Chứng chỉ Quản lý Nhà nước (nếu có). (Khi nộp hồ sơ dự tuyển thí sinh chỉ cần nộp bản sao các văn bằng, chứng chỉ và bản sao các giấy tờ liên quan khác không cần công chứng hoặc chứng nhận của cơ quan có thẩm quyền nhưng phải ghi cam đoan trên bản sao là được sao từ bản chính, do người dự tuyển ký tên và chịu trách nhiệm)",
+        "quantity": "1 bản chính, 0 bản sao",
+        "notes": [],
+        "attachment_path": null
+      }
+    ],
+    "forms": [
+      {
+        "name": "Đơn đề nghị công nhận/công nhận lại đăng kiểm viên đường sắt/đăng kiểm viên đường sắt bậc cao",
+        "attachment_label": "Đơn đề nghị công nhận ĐKV.pdf",
+        "attachment_path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/6_006590/%C4%90%C6%A1n%20%C4%91%E1%BB%81%20ngh%E1%BB%8B%20c%C3%B4ng%20nh%E1%BA%ADn%20%C4%90KV.pdf"
+      }
+    ],
+    "presented": [],
+    "notes": [],
+    "summary": [
+      {
+        "group": "default",
+        "name": "Đơn đề nghị công nhận/công nhận lại đăng kiểm viên đường sắt/đăng kiểm viên đường sắt bậc cao",
+        "quantity": "1 bản chính, 0 bản sao",
+        "notes": [],
+        "attachment_path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/6_006590/%C4%90%C6%A1n%20%C4%91%E1%BB%81%20ngh%E1%BB%8B%20c%C3%B4ng%20nh%E1%BA%ADn%20%C4%90KV.pdf"
+      },
+      {
+        "group": "default",
+        "name": "Bản chính hoặc bản sao có chứng thực hoặc bản điện tử hoặc bản sao điện tử Bằng tốt nghiệp đại học",
+        "quantity": "1 bản chính, 0 bản sao",
+        "notes": [],
+        "attachment_path": null
+      },
+      {
+        "group": "default",
+        "name": "Lý lịch chuyên môn của người được đề nghị công nhận Đăng kiểm viên theo mẫu (bản chính);",
+        "quantity": "1 bản chính, 0 bản sao",
+        "notes": [],
+        "attachment_path": null
+      },
+      {
+        "group": null,
+        "name": null,
+        "quantity": "1 bản chính, 0 bản sao",
+        "notes": [],
+        "attachment_path": null
+      },
+      {
+        "group": null,
+        "name": "Đơn đề nghị công nhận/công nhận lại đăng kiểm viên đường sắt/đăng kiểm viên đường sắt bậc cao",
+        "quantity": null,
+        "notes": null,
+        "attachment_path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/6_006590/%C4%90%C6%A1n%20%C4%91%E1%BB%81%20ngh%E1%BB%8B%20c%C3%B4ng%20nh%E1%BA%ADn%20%C4%90KV.pdf"
+      }
+    ]
+  },
+  "steps": [
+    {
+      "order": 1,
+      "title": "Bước 1",
+      "description": "1. + Cục trưởng Cục Đăng kiểm Việt Nam quyết định thành lập Hội đồng đánh giá Đăng kiểm viên đường sắt và quy định cụ thể quy chế làm việc của Hội đồng.",
+      "example": null
+    },
+    {
+      "order": 2,
+      "title": "Bước 2",
+      "description": "+ Hội đồng lập Chương trình sát hạch, nội dung sát hạch cụ thể cho Đăng kiểm viên đường sắt.",
+      "example": null
+    },
+    {
+      "order": 3,
+      "title": "Bước 3",
+      "description": "+ Hội đồng tổ chức sát hạch nghiệp vụ của Đăng kiểm viên đường sắt và lập báo cáo đánh giá.",
+      "example": null
+    },
+    {
+      "order": 4,
+      "title": "Bước 4",
+      "description": "+ Cục trưởng Cục Đăng kiểm Việt Nam quyết định công nhận và công nhận lại Đăng kiểm viên đường sắt trên cơ sở kết quả đánh giá của Hội đồng.",
+      "example": null
+    }
+  ],
+  "input_fields": [
+    {
+      "field": "vehicle_or_license_need",
+      "label": "Nhu cầu về phương tiện hoặc giấy phép",
+      "type": "string",
+      "required": true
+    },
+    {
+      "field": "vehicle_or_person_identifier",
+      "label": "Thông tin phương tiện hoặc người lái",
+      "type": "string",
+      "required": true
+    },
+    {
+      "field": "submission_channel_preference",
+      "label": "Kênh nộp dự kiến",
+      "type": "enum",
+      "required": false,
+      "options": [
+        "Trực tiếp",
+        "Trực tuyến",
+        "Dịch vụ bưu chính"
+      ]
+    },
+    {
+      "field": "has_technical_or_identity_documents",
+      "label": "Đã có hồ sơ kỹ thuật hoặc giấy tờ nhân thân",
+      "type": "boolean",
+      "required": false
+    }
+  ],
+  "validation_rules": [
+    {
+      "id": "required-1",
+      "severity": "error",
+      "field": "vehicle_or_license_need",
+      "rule": "Trường bắt buộc phải có dữ liệu hợp lệ trước khi nộp.",
+      "message": "Thiếu trường bắt buộc: Nhu cầu về phương tiện hoặc giấy phép."
+    },
+    {
+      "id": "required-2",
+      "severity": "error",
+      "field": "vehicle_or_person_identifier",
+      "rule": "Trường bắt buộc phải có dữ liệu hợp lệ trước khi nộp.",
+      "message": "Thiếu trường bắt buộc: Thông tin phương tiện hoặc người lái."
+    },
+    {
+      "id": "hint-1",
+      "severity": "warning",
+      "field": "general",
+      "rule": "Nên xác định trước kênh nộp hồ sơ để biết có cần bản giấy, bản điện tử hay xuất trình trực tiếp.",
+      "message": "Nên xác định trước kênh nộp hồ sơ để biết có cần bản giấy, bản điện tử hay xuất trình trực tiếp."
+    },
+    {
+      "id": "hint-2",
+      "severity": "warning",
+      "field": "general",
+      "rule": "Có mẫu biểu đính kèm, nên kiểm tra đúng biểu mẫu trước khi nộp.",
+      "message": "Có mẫu biểu đính kèm, nên kiểm tra đúng biểu mẫu trước khi nộp."
+    },
+    {
+      "id": "hint-3",
+      "severity": "warning",
+      "field": "general",
+      "rule": "Nên đối chiếu trước thông tin phương tiện, hồ sơ kỹ thuật hoặc giấy phép lái xe liên quan.",
+      "message": "Nên đối chiếu trước thông tin phương tiện, hồ sơ kỹ thuật hoặc giấy phép lái xe liên quan."
+    }
+  ],
+  "common_errors": [
+    {
+      "field": "general",
+      "issue": "Điền sai mẫu tờ khai hoặc chọn sai biểu mẫu đi kèm.",
+      "fix": "Nên xác định trước kênh nộp hồ sơ để biết có cần bản giấy, bản điện tử hay xuất trình trực tiếp."
+    },
+    {
+      "field": "general",
+      "issue": "Thiếu minh chứng học tập, văn bằng hoặc xác nhận từ cơ sở đào tạo.",
+      "fix": "Nên xác định trước kênh nộp hồ sơ để biết có cần bản giấy, bản điện tử hay xuất trình trực tiếp."
+    },
+    {
+      "field": "general",
+      "issue": "Thiếu hồ sơ kỹ thuật phương tiện hoặc thông tin giấy phép lái xe cần đối chiếu.",
+      "fix": "Nên xác định trước kênh nộp hồ sơ để biết có cần bản giấy, bản điện tử hay xuất trình trực tiếp."
+    }
+  ],
+  "clarifying_questions": [
+    {
+      "id": "clarify_1",
+      "question": "Bạn đang xử lý hồ sơ cho phương tiện hay cho giấy phép lái xe?",
+      "purpose": "workflow_intake"
+    },
+    {
+      "id": "clarify_2",
+      "question": "Bạn đã có thông tin nhận diện phương tiện hoặc giấy tờ của người lái chưa?",
+      "purpose": "workflow_intake"
+    }
+  ],
+  "legal_basis": [
+    {
+      "title": "Nghị định quy định chức năng, nhiệm vụ, quyền hạn và cơ cấu tổ chức của Bộ Xây dựng",
+      "code": "33/2025/NĐ-CP"
+    },
+    {
+      "title": "Thông tư quy định về tiêu chuẩn Đăng kiểm viên đường sắt và yêu cầu đối với cơ sở vật chất, kỹ thuật của tổ chức đăng kiểm đường sắt.",
+      "code": "19/2018/TT-BGTVT"
+    }
+  ],
+  "legal_bases": [
+    {
+      "title": "Nghị định quy định chức năng, nhiệm vụ, quyền hạn và cơ cấu tổ chức của Bộ Xây dựng",
+      "code": "33/2025/NĐ-CP"
+    },
+    {
+      "title": "Thông tư quy định về tiêu chuẩn Đăng kiểm viên đường sắt và yêu cầu đối với cơ sở vật chất, kỹ thuật của tổ chức đăng kiểm đường sắt.",
+      "code": "19/2018/TT-BGTVT"
+    }
+  ],
+  "faq": [
+    {
+      "question": "Có thể nộp qua kênh nào?",
+      "answer": "Các kênh hiện có: Trực tiếp, Trực tuyến, Dịch vụ bưu chính."
+    },
+    {
+      "question": "Thời gian xử lý tham chiếu là bao lâu?",
+      "answer": "Thời gian xử lý tham chiếu hiện có là 1 ngày làm việc."
+    },
+    {
+      "question": "Kết quả chính của thủ tục là gì?",
+      "answer": "Kết quả chính được trích xuất là Quyết định công nhận/công nhận lại đăng kiểm viên đường sắt/đăng kiểm viên đường sắt bậc cao."
+    }
+  ],
+  "guidance": {
+    "highlight_documents": [
+      {
+        "bucket": "required",
+        "name": "Đơn đề nghị công nhận/công nhận lại đăng kiểm viên đường sắt/đăng kiểm viên đường sắt bậc cao",
+        "conditions": [],
+        "attachment_path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/6_006590/%C4%90%C6%A1n%20%C4%91%E1%BB%81%20ngh%E1%BB%8B%20c%C3%B4ng%20nh%E1%BA%ADn%20%C4%90KV.pdf"
+      },
+      {
+        "bucket": "required",
+        "name": "Bản chính hoặc bản sao có chứng thực hoặc bản điện tử hoặc bản sao điện tử Bằng tốt nghiệp đại học",
+        "conditions": [],
+        "attachment_path": null
+      },
+      {
+        "bucket": "required",
+        "name": "Lý lịch chuyên môn của người được đề nghị công nhận Đăng kiểm viên theo mẫu (bản chính);",
+        "conditions": [],
+        "attachment_path": null
+      },
+      {
+        "bucket": "conditional",
+        "name": "Bản sao hợp pháp văn bằng, chứng chỉ: mỗi thứ 01 bản. -Bằng tốt nghiệp Đại học, Cao đẳng hoặc Trung học theo yêu cầu của ngạch cần tuyển dụng; -Chứng chỉ Ngoại ngữ trình độ B trở lên; -Chứng chỉ Tin học Văn phòng; -Chứng chỉ Quản lý Nhà nước (nếu có). (Khi nộp hồ sơ dự tuyển thí sinh chỉ cần nộp bản sao các văn bằng, chứng chỉ và bản sao các giấy tờ liên quan khác không cần công chứng hoặc chứng nhận của cơ quan có thẩm quyền nhưng phải ghi cam đoan trên bản sao là được sao từ bản chính, do người dự tuyển ký tên và chịu trách nhiệm)",
+        "conditions": [
+          "Bản sao hợp pháp văn bằng, chứng chỉ: mỗi thứ 01 bản. -Bằng tốt nghiệp Đại học, Cao đẳng hoặc Trung học theo yêu cầu của ngạch cần tuyển dụng; -Chứng chỉ Ngoại ngữ trình độ B trở lên; -Chứng chỉ Tin học Văn phòng; -Chứng chỉ Quản lý Nhà nước (nếu có). (Khi nộp hồ sơ dự tuyển thí sinh chỉ cần nộp bản sao các văn bằng, chứng chỉ và bản sao các giấy tờ liên quan khác không cần công chứng hoặc chứng nhận của cơ quan có thẩm quyền nhưng phải ghi cam đoan trên bản sao là được sao từ bản chính, do người dự tuyển ký tên và chịu trách nhiệm)"
+        ],
+        "attachment_path": null
+      }
+    ],
+    "special_cases": [
+      "Có trường hợp hồ sơ điện tử thay thế bản giấy",
+      "Có thể cần xác minh hồ sơ học tập hoặc văn bằng",
+      "Có thể cần hồ sơ kỹ thuật phương tiện hoặc giấy phép lái xe"
+    ],
+    "common_errors": [
+      "Điền sai mẫu tờ khai hoặc chọn sai biểu mẫu đi kèm.",
+      "Thiếu minh chứng học tập, văn bằng hoặc xác nhận từ cơ sở đào tạo.",
+      "Thiếu hồ sơ kỹ thuật phương tiện hoặc thông tin giấy phép lái xe cần đối chiếu."
+    ],
+    "validation_hints": [
+      "Nên xác định trước kênh nộp hồ sơ để biết có cần bản giấy, bản điện tử hay xuất trình trực tiếp.",
+      "Có mẫu biểu đính kèm, nên kiểm tra đúng biểu mẫu trước khi nộp.",
+      "Nên đối chiếu trước thông tin phương tiện, hồ sơ kỹ thuật hoặc giấy phép lái xe liên quan."
+    ]
+  },
+  "next_steps": {
+    "summary": "Nên kiểm tra trước loại phương tiện hoặc loại giấy phép cần xử lý, cùng hồ sơ kỹ thuật hoặc nhân thân liên quan. Có thể chọn kênh nộp phù hợp: Trực tiếp, Trực tuyến, Dịch vụ bưu chính. Hiện có khoảng 4 mục giấy tờ cần theo dõi trong checklist.",
+    "time_badge": "1 ngày làm việc",
+    "result_label": "Quyết định công nhận/công nhận lại đăng kiểm viên đường sắt/đăng kiểm viên đường sắt bậc cao",
+    "primary_channel": "in_person",
+    "channels": [
+      "in_person",
+      "online",
+      "postal"
+    ]
+  },
+  "notes": [],
+  "provenance": {
+    "pipeline": "raw->structured->normalized->enriched->ui_api_payload",
+    "normalizer_version": "0.2.0",
+    "enricher_version": "0.2.0",
+    "mapping_notes": "workflow_generated:phuong_tien_nguoi_lai/dang_kiem_phuong_tien",
+    "supported_group": true
+  }
+}

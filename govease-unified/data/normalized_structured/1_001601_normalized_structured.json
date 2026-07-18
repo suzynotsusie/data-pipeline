@@ -1,0 +1,150 @@
+{
+  "schema_version": "1.0",
+  "normalizer_version": "0.2.0",
+  "source": {
+    "procedure_code": "1.001601",
+    "title": "Ủy quyền lĩnh thay các chế độ bảo hiểm xã hội, trợ cấp thất nghiệp",
+    "raw_structured_parser_version": "0.1.0",
+    "field": "Chi trả các chế độ BHXH"
+  },
+  "procedure": {
+    "level": "Cấp xã, Cấp tỉnh, Cấp bộ/ngành",
+    "procedure_type": "TTHC được luật giao quy định chi tiết",
+    "target_users": [
+      "Công dân Việt Nam"
+    ],
+    "authorities": [
+      "Bảo hiểm xã hội cấp Tỉnh, Công đoàn cơ quan BHXH Việt Nam"
+    ],
+    "receiving_places": []
+  },
+  "submission": {
+    "channels": [
+      "in_person",
+      "postal"
+    ],
+    "methods": [
+      {
+        "method_id": "method_1",
+        "channel": "postal",
+        "processing_time_text": "1 ngày làm việc",
+        "fee_text": null,
+        "description": null,
+        "is_online": false,
+        "is_postal": true,
+        "is_in_person": false
+      },
+      {
+        "method_id": "method_2",
+        "channel": "in_person",
+        "processing_time_text": "1 ngày làm việc",
+        "fee_text": null,
+        "description": null,
+        "is_online": false,
+        "is_postal": false,
+        "is_in_person": true
+      }
+    ],
+    "timing_summary": {
+      "unique_processing_times": [
+        "1 ngày làm việc"
+      ],
+      "method_count": 2
+    }
+  },
+  "documents": {
+    "required": [
+      {
+        "document_id": "gi_y_y_quy_n_m_u_s_13_hsb_ho_c_h_p_ng_y_quy_n_theo_quy_nh_c_a_ph_p_lu_t",
+        "name": "Giấy ủy quyền (mẫu số 13-HSB) hoặc Hợp đồng ủy quyền theo quy định của pháp luật.",
+        "group_name": "default",
+        "group_type": "unknown",
+        "original_count": "1",
+        "copy_count": "0",
+        "conditions": [],
+        "attachment_label": null,
+        "attachment_path": null
+      }
+    ],
+    "conditional": [],
+    "presented": [],
+    "notes": [],
+    "forms": [],
+    "empty_groups": [],
+    "document_count": 1
+  },
+  "process": {
+    "steps": [
+      {
+        "step_id": "step_1",
+        "title": null,
+        "content": "1. **Bước 1. Lập hồ sơ** Người hưởng lập hồ sơ theo quy định tại mục Thành phần hồ sơ. 2. **Bước 2. Nộp hồ sơ**",
+        "actor": "user",
+        "channel_hint": null,
+        "time_hint": null
+      },
+      {
+        "step_id": "step_2",
+        "title": "a)",
+        "content": "a) Đối với nhận chế độ BHXH hàng tháng, trợ cấp thất nghiệp: Đến kỳ chi trả, người được ủy quyền nộp Giấy uỷ quyền (mẫu số 13-HSB) hoặc Hợp đồng ủy quyền cho cơ quan Bưu điện, xuất trình Chứng minh nhân dân hoặc giấy tờ tùy thân có ảnh và ký nhận tiền trên Danh sách chi trả. Người được ủy quyền có trách nhiệm báo giảm kịp thời khi người hưởng từ trần hoặc bị tạm dừng hưởng các chế độ BHXH hàng tháng theo quy định, nếu thực hiện sai phải chịu trách nhiệm trước pháp luật và hoàn trả về quỹ BHXH.",
+        "actor": "authority",
+        "channel_hint": null,
+        "time_hint": null
+      },
+      {
+        "step_id": "step_3",
+        "title": "b)",
+        "content": "b) Đối với nhận chế độ BHXH một lần: Người được ủy quyền nộp Giấy ủy quyền (mẫu số 13-HSB) hoặc Hợp đồng ủy quyền cho cơ quan BHXH hoặc cơ quan Bưu điện nơi chi trả; xuất trình Chứng minh nhân dân hoặc giấy tờ tùy thân có ảnh; nhận tiền và ký nhận tiền trên Danh sách chi trả hoặc Giấy nhận tiền.",
+        "actor": "authority",
+        "channel_hint": null,
+        "time_hint": null
+      },
+      {
+        "step_id": "step_4",
+        "title": "c)",
+        "content": "c) Đối với nhận chế độ ốm đau, thai sản, DSPHSK: Người được ủy quyền nộp giấy ủy quyền hoặc Hợp đồng ủy quyền cho cơ quan BHXH; xuất trình Chứng minh nhân dân hoặc giấy tờ tùy thân có ảnh; nhận tiền và ký nhận tiền trên phiếu chi. 3. **Bước 3.** Cơ quan BHXH tiếp nhận hồ sơ và giải quyết theo quy định.",
+        "actor": "authority",
+        "channel_hint": null,
+        "time_hint": null
+      }
+    ],
+    "step_count": 4,
+    "notes": []
+  },
+  "eligibility": {
+    "conditions": [],
+    "has_conditions": false
+  },
+  "results": {
+    "items": [
+      {
+        "name": "Người được ủy quyền được nhận tiền chế độ thay cho người hưởng",
+        "result_code": "KQ.G24.000042",
+        "raw_text": "Người được ủy quyền được nhận tiền chế độ thay cho người hưởng"
+      }
+    ],
+    "primary_result": {
+      "name": "Người được ủy quyền được nhận tiền chế độ thay cho người hưởng",
+      "result_code": "KQ.G24.000042",
+      "raw_text": "Người được ủy quyền được nhận tiền chế độ thay cho người hưởng"
+    }
+  },
+  "legal_basis": {
+    "items": [
+      {
+        "title": "LUẬT Bảo hiểm xã hội",
+        "code": "58/2014/QH13"
+      }
+    ],
+    "count": 1
+  },
+  "attachments": [],
+  "signals": {
+    "raw_parse_warnings": [],
+    "missing_documents": false,
+    "documents_section_present": true,
+    "documents_declared_empty": false,
+    "documents_only_in_notes": false,
+    "missing_results": false
+  }
+}

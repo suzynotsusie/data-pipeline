@@ -1,0 +1,85 @@
+{
+  "schema_version": "1.0",
+  "enricher_version": "0.2.0",
+  "source": {
+    "procedure_code": "1.115389",
+    "title": "Đổi tên trường cao đẳng theo Luật Thủ đô",
+    "group_key": "hoc_tap",
+    "workflow_family": null,
+    "subflow": null
+  },
+  "experience": {
+    "entry_label": "Hỗ trợ giáo dục và học tập",
+    "overview_summary": "Thủ tục này thuộc nhóm giáo dục và học tập, thường liên quan đến hồ sơ đào tạo, văn bằng hoặc điều kiện học tập của người học. Kết quả thường nhận được là Quyết định đổi tên hoặc cho phép đổi tên trường cao đẳng. Thời gian xử lý tham khảo: 3 ngày làm việc.",
+    "next_step_summary": "Nên rà trước thông tin người học, cơ sở đào tạo và loại kết quả cần xin xác nhận hoặc cấp lại. Có thể chọn kênh nộp phù hợp: Trực tiếp, Trực tuyến, Dịch vụ bưu chính. Hiện có khoảng 2 mục giấy tờ cần theo dõi trong checklist.",
+    "tone": "supportive_public_service"
+  },
+  "guidance": {
+    "highlight_documents": [
+      {
+        "bucket": "required",
+        "name": "Văn bản đề nghị của trường cao đẳng công lập hoặc tổ chức, cá nhân sở hữu đối với trường cao đẳng tư thục theo Mẫu số 07 Phụ lục II Nghị quyết số 15/2026/NQ-HĐND",
+        "conditions": [],
+        "attachment_path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/1_115389/M%E1%BA%ABu%20s%E1%BB%91%2007.%20V%C4%83n%20b%E1%BA%A3n%20%C4%91%E1%BB%81%20ngh%E1%BB%8B%20%C4%91%E1%BB%95i%20t%C3%AAn%2C%20cho%20ph%C3%A9p%20%C4%91%E1%BB%95i%20t%C3%AAn%20tr%C6%B0%E1%BB%9Dng%20cao%20%C4%91%E1%BA%B3ng.docx"
+      },
+      {
+        "bucket": "required",
+        "name": "Bản sao Văn bản chấp thuận chủ trương đổi tên của cơ quan có thẩm quyền đối với trường cao đẳng công lập và nghị quyết hoặc quyết định của Hội đồng thành viên hoặc Đại hội đồng cổ đông hoặc Hội đồng quản trị về chủ trương đổi tên theo quy định đối với tổ chức thành lập trường cao đẳng tư thục",
+        "conditions": [],
+        "attachment_path": null
+      }
+    ],
+    "special_cases": [],
+    "common_errors": [
+      "Điền sai mẫu tờ khai hoặc chọn sai biểu mẫu đi kèm."
+    ],
+    "validation_hints": [
+      "Nên xác định trước kênh nộp hồ sơ để biết có cần bản giấy, bản điện tử hay xuất trình trực tiếp.",
+      "Có mẫu biểu đính kèm, nên kiểm tra đúng biểu mẫu trước khi nộp.",
+      "Nên rà lại thông tin người học, cơ sở đào tạo và loại xác nhận hoặc văn bằng cần xin."
+    ]
+  },
+  "intake": {
+    "candidate_input_fields": [
+      {
+        "field_id": "learner_full_name",
+        "label": "Tên người học",
+        "field_type": "text",
+        "required": true
+      },
+      {
+        "field_id": "education_record_type",
+        "label": "Loại hồ sơ học tập cần xử lý",
+        "field_type": "text",
+        "required": true
+      },
+      {
+        "field_id": "education_institution",
+        "label": "Cơ sở đào tạo liên quan",
+        "field_type": "text",
+        "required": false
+      },
+      {
+        "field_id": "submission_channel_preference",
+        "label": "Kênh nộp dự kiến",
+        "field_type": "enum",
+        "required": false
+      }
+    ],
+    "suggested_clarifying_questions": [
+      "Bạn đang cần xử lý hồ sơ học tập, văn bằng hay xác nhận nào?",
+      "Người học và cơ sở đào tạo liên quan đã xác định rõ chưa?"
+    ]
+  },
+  "ui_hints": {
+    "primary_channel": "in_person",
+    "result_label": "Quyết định đổi tên hoặc cho phép đổi tên trường cao đẳng",
+    "time_badge": "3 ngày làm việc",
+    "document_count_badge": 2
+  },
+  "provenance": {
+    "generator": "workflow_domain_enricher",
+    "derivation_mode": "rule_based_semantic_enrichment",
+    "supported_group": true
+  }
+}

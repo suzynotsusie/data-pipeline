@@ -1,0 +1,132 @@
+{
+  "schema_version": "1.0",
+  "enricher_version": "0.2.0",
+  "source": {
+    "procedure_code": "2.000986",
+    "title": "Liên thông thủ tục hành chính về đăng ký khai sinh, đăng ký thường trú, cấp thẻ bảo hiểm y tế cho trẻ em dưới 6 tuổi",
+    "group_key": "co_con_nho",
+    "workflow_family": "child_early_life_workflow",
+    "subflow": "lien_thong_khai_sinh_bao_hiem_cu_tru"
+  },
+  "experience": {
+    "entry_label": "Hỗ trợ thủ tục cho trẻ em",
+    "overview_summary": "Thủ tục này xử lý liên thông cho trẻ nhỏ, giúp gia đình hoàn tất khai sinh, cư trú và bảo hiểm trong cùng một quy trình. Kết quả thường nhận được là Phiếu từ chối tiếp nhận, giải quyết hồ sơ (lĩnh vực cư trú). Thời gian xử lý tham khảo: 20 ngày.",
+    "next_step_summary": "Chuẩn bị trước các giấy tờ cốt lõi của trẻ và người đi làm thủ tục, sau đó chọn kênh nộp phù hợp: Trực tiếp. Hiện có khoảng 5 mục giấy tờ cần theo dõi trong checklist.",
+    "tone": "supportive_public_service"
+  },
+  "guidance": {
+    "highlight_documents": [
+      {
+        "bucket": "required",
+        "name": "Tờ khai tham gia bảo hiểm y tế, Danh sách đề nghị cấp thẻ bảo hiểm y tế cho trẻ em dưới 6 tuổi của Ủy ban nhân dân cấp xã (theo mẫu quy định)",
+        "conditions": [],
+        "attachment_path": null
+      },
+      {
+        "bucket": "required",
+        "name": "Tờ khai đăng ký khai sinh theo mẫu quy định.",
+        "conditions": [],
+        "attachment_path": null
+      },
+      {
+        "bucket": "conditional",
+        "name": "Trường hợp trẻ em không đăng ký thường trú cùng hộ khẩu với cha, mẹ mà đăng ký thường trú theo hộ khẩu của người khác thì ngoài bản sao Giấy khai sinh, phải có ý kiến bằng văn bản của cha, mẹ, có xác nhận của Ủy ban nhân dân cấp xã, ý kiến đồng ý của chủ hộ và Sổ hộ khẩu của chủ hộ (bản chính).",
+        "conditions": [
+          "Trường hợp trẻ em không đăng ký thường trú cùng hộ khẩu với cha, mẹ mà đăng ký thường trú theo hộ khẩu của người khác thì ngoài bản sao Giấy khai sinh, phải có ý kiến bằng văn bản của cha, mẹ, có xác nhận của Ủy ban nhân dân cấp xã, ý kiến đồng ý của chủ hộ và Sổ hộ khẩu của chủ hộ (bản chính)."
+        ],
+        "attachment_path": null
+      },
+      {
+        "bucket": "conditional",
+        "name": "Giấy chứng sinh do cơ sở y tế nơi trẻ em sinh ra cấp; nếu trẻ em sinh ra ngoài cơ sở y tế thì giấy chứng sinh được thay bằng văn bản xác nhận của người làm chứng; trường hợp không có người làm chứng thì người đi khai sinh phải làm giấy cam đoan về việc sinh là có thực. Đối với trường hợp trẻ em bị bỏ rơi thì nộp biên bản về việc trẻ em bị bỏ rơi thay cho giấy chứng sinh.",
+        "conditions": [
+          "Giấy chứng sinh do cơ sở y tế nơi trẻ em sinh ra cấp; nếu trẻ em sinh ra ngoài cơ sở y tế thì giấy chứng sinh được thay bằng văn bản xác nhận của người làm chứng; trường hợp không có người làm chứng thì người đi khai sinh phải làm giấy cam đoan về việc sinh là có thực. Đối với trường hợp trẻ em bị bỏ rơi thì nộp biên bản về việc trẻ em bị bỏ rơi thay cho giấy chứng sinh."
+        ],
+        "attachment_path": null
+      },
+      {
+        "bucket": "conditional",
+        "name": "Phiếu báo thay đổi hộ khẩu, nhân khẩu (theo mẫu quy định); Sổ hộ khẩu của cha, mẹ (bản chính) hoặc Sổ hộ khẩu của mẹ (bản chính) đối với trường hợp trẻ em đăng ký thường trú theo mẹ hoặc Sổ hộ khẩu của cha (bản chính) đối với trường hợp trẻ em đăng ký thường trú theo cha hoặc Sổ hộ khẩu của người nuôi dưỡng, chăm sóc trẻ (bản chính) đối với trường hợp trẻ em không đăng ký thường trú theo cha, mẹ, bản sao Giấy khai sinh của trẻ.",
+        "conditions": [
+          "Phiếu báo thay đổi hộ khẩu, nhân khẩu (theo mẫu quy định); Sổ hộ khẩu của cha, mẹ (bản chính) hoặc Sổ hộ khẩu của mẹ (bản chính) đối với trường hợp trẻ em đăng ký thường trú theo mẹ hoặc Sổ hộ khẩu của cha (bản chính) đối với trường hợp trẻ em đăng ký thường trú theo cha hoặc Sổ hộ khẩu của người nuôi dưỡng, chăm sóc trẻ (bản chính) đối với trường hợp trẻ em không đăng ký thường trú theo cha, mẹ, bản sao Giấy khai sinh của trẻ."
+        ],
+        "attachment_path": null
+      }
+    ],
+    "special_cases": [
+      "Có tình huống trẻ bị bỏ rơi hoặc thiếu giấy chứng sinh",
+      "Có thể cần đối chiếu quyền lợi bảo hiểm hoặc tuyến chuyên môn"
+    ],
+    "common_errors": [
+      "Thiếu giấy chứng sinh hoặc giấy thay thế hợp lệ.",
+      "Điền sai mẫu tờ khai hoặc chọn sai biểu mẫu đi kèm.",
+      "Sai nhóm đối tượng tham gia hoặc thông tin quyền lợi bảo hiểm y tế."
+    ],
+    "validation_hints": [
+      "Nên xác định trước kênh nộp hồ sơ để biết có cần bản giấy, bản điện tử hay xuất trình trực tiếp.",
+      "Thông tin hộ tịch giữa các giấy tờ phải thống nhất về họ tên, ngày sinh và quan hệ liên quan."
+    ]
+  },
+  "intake": {
+    "candidate_input_fields": [
+      {
+        "field_id": "child_full_name",
+        "label": "Tên trẻ",
+        "field_type": "text",
+        "required": false
+      },
+      {
+        "field_id": "child_birth_date",
+        "label": "Ngày sinh của trẻ",
+        "field_type": "date",
+        "required": false
+      },
+      {
+        "field_id": "child_birth_place",
+        "label": "Nơi sinh",
+        "field_type": "text",
+        "required": false
+      },
+      {
+        "field_id": "requester_relationship",
+        "label": "Quan hệ với trẻ",
+        "field_type": "enum",
+        "required": true
+      },
+      {
+        "field_id": "has_foreign_element",
+        "label": "Có yếu tố nước ngoài",
+        "field_type": "boolean",
+        "required": true
+      },
+      {
+        "field_id": "needs_health_insurance",
+        "label": "Cần liên thông bảo hiểm y tế",
+        "field_type": "boolean",
+        "required": true
+      },
+      {
+        "field_id": "needs_residence_registration",
+        "label": "Cần liên thông đăng ký thường trú",
+        "field_type": "boolean",
+        "required": true
+      }
+    ],
+    "suggested_clarifying_questions": [
+      "Bé đã có giấy chứng sinh hoặc giấy tờ thay thế chưa?",
+      "Thủ tục này có liên quan đến yếu tố nước ngoài, mang thai hộ hoặc trẻ bị bỏ rơi không?",
+      "Bạn muốn xử lý liên thông luôn bảo hiểm hoặc thường trú cho trẻ không?"
+    ]
+  },
+  "ui_hints": {
+    "primary_channel": "in_person",
+    "result_label": "Phiếu từ chối tiếp nhận, giải quyết hồ sơ (lĩnh vực cư trú)",
+    "time_badge": "20 ngày",
+    "document_count_badge": 5
+  },
+  "provenance": {
+    "generator": "workflow_domain_enricher",
+    "derivation_mode": "rule_based_semantic_enrichment",
+    "supported_group": true
+  }
+}

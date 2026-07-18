@@ -1,0 +1,421 @@
+{
+  "schema_version": "3.0",
+  "record_type": "public_service_procedure_payload",
+  "id": "procedure-1.001133",
+  "procedure_code": "1.001133",
+  "code": "1.001133",
+  "title": "Cấp, cấp lại, gia hạn Thẻ phóng viên nước ngoài cho phóng viên thường trú tại Việt Nam",
+  "language": "vi",
+  "status": "generated_from_pipeline",
+  "field": "Báo chí",
+  "group_key": "cu_tru_giay_to",
+  "workflow_family": null,
+  "subflow": null,
+  "source": {
+    "source_url": "file:///C:/Users/ku060/Downloads/VAIC%20source/data-pipeline/raw_data/1_001133/1_001133_procedure_detail.md",
+    "source_markdown_path": "C:\\Users\\ku060\\Downloads\\VAIC source\\data-pipeline\\raw_data\\1_001133\\1_001133_procedure_detail.md",
+    "normalized_payload_path": "C:\\Users\\ku060\\Downloads\\VAIC source\\data-pipeline\\govease-unified\\data\\normalized_structured\\1_001133_normalized_structured.json",
+    "enriched_payload_path": "C:\\Users\\ku060\\Downloads\\VAIC source\\data-pipeline\\govease-unified\\data\\enriched_structured_priority\\1_001133_enriched_structured.json"
+  },
+  "scope": {
+    "included": "Thủ tục này thuộc nhóm cư trú và giấy tờ, thường cần kiểm tra thông tin định danh hoặc hồ sơ giấy tờ chuyên ngành. Kết quả thường nhận được là Thẻ phóng viên nước ngoài. Thời gian xử lý tham khảo: 3 ngày làm việc.",
+    "not_included": []
+  },
+  "agency": {
+    "executing_agency": "Bộ Ngoại giao",
+    "submission_place": null,
+    "receiving_places": []
+  },
+  "target_users": [
+    "Người nước ngoài",
+    "Tổ chức nước ngoài"
+  ],
+  "submission_methods": [
+    {
+      "code": "POSTAL",
+      "label": "Dịch vụ bưu chính",
+      "processing_time": "3 ngày làm việc",
+      "fee": null,
+      "description": "03 ngày làm việc kể từ khi nhận đủ hồ sơ đề nghị"
+    },
+    {
+      "code": "IN_PERSON",
+      "label": "Trực tiếp",
+      "processing_time": "3 ngày làm việc",
+      "fee": null,
+      "description": "03 ngày làm việc kể từ khi nhận đủ hồ sơ đề nghị"
+    },
+    {
+      "code": "ONLINE",
+      "label": "Trực tuyến",
+      "processing_time": "3 ngày làm việc",
+      "fee": null,
+      "description": null
+    }
+  ],
+  "processing_note": "Thời gian xử lý tham chiếu: 3 ngày làm việc. Nên kiểm tra trước giấy tờ định danh, nơi nộp và mẫu biểu liên quan, rồi chọn kênh nộp phù hợp: Trực tiếp, Trực tuyến, Dịch vụ bưu chính. Hiện có khoảng 5 mục giấy tờ cần theo dõi trong checklist.",
+  "documents": {
+    "normally_required": [
+      {
+        "name": "Văn bản đề nghị cấp mới/cấp lại/Gia hạn Thẻ phóng viên nước ngoài của phóng viên thường trú theo mẫu do Bộ Ngoại giao ban hành.",
+        "quantity": "1 bản chính, 0 bản sao",
+        "notes": [],
+        "group": "default",
+        "attachment_path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/1_001133/V%C4%83n%20b%E1%BA%A3n%20%C4%91%E1%BB%81%20ngh%E1%BB%8B%20c%E1%BA%A5p%20Th%E1%BA%BB%20ph%C3%B3ng%20vi%C3%AAn%20n%C6%B0%E1%BB%9Bc%20ngo%C3%A0i%20c%E1%BB%A7a%20ph%C3%B3ng%20vi%C3%AAn%20th%C6%B0%E1%BB%9Dng%20tr%C3%BA%20theo%20m%E1%BA%ABu%20do%20B%E1%BB%99%20Ngo%E1%BA%A1i%20giao%20ban%20h%C3%A0nh..pdf"
+      },
+      {
+        "name": "02 ảnh chân dung 03 cm x 04 cm của phóng viên thường trú.",
+        "quantity": "2 bản chính, 0 bản sao",
+        "notes": [],
+        "group": "default",
+        "attachment_path": null
+      },
+      {
+        "name": "Văn bản đề nghị cử phóng viên thường trú của người đứng đầu cơ quan báo chí nước ngoài hoặc người được người đứng đầu cơ quan báo chí nước ngoài ủy quyền theo mẫu do Bộ Ngoại giao ban hành.",
+        "quantity": "1 bản chính, 0 bản sao",
+        "notes": [],
+        "group": "default",
+        "attachment_path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/1_001133/Mau%20so%203%20-%20Don%20de%20nghi%20cu%20phong%20vien%20thuong%20tru.docx"
+      }
+    ],
+    "conditional": [
+      {
+        "condition": "Thẻ phóng viên nước ngoài (trong trường hợp thẻ bị hỏng).",
+        "document": "Thẻ phóng viên nước ngoài (trong trường hợp thẻ bị hỏng).",
+        "quantity": "1 bản chính, 0 bản sao",
+        "notes": [],
+        "attachment_path": null
+      },
+      {
+        "condition": "Thẻ phóng viên nước ngoài (trường hợp xin gia hạn thẻ phóng viên nước ngoài)",
+        "document": "Thẻ phóng viên nước ngoài (trường hợp xin gia hạn thẻ phóng viên nước ngoài)",
+        "quantity": "1 bản chính, 0 bản sao",
+        "notes": [],
+        "attachment_path": null
+      }
+    ],
+    "forms": [
+      {
+        "name": "Văn bản đề nghị cấp mới/cấp lại/Gia hạn Thẻ phóng viên nước ngoài của phóng viên thường trú theo mẫu do Bộ Ngoại giao ban hành.",
+        "attachment_label": "Văn bản đề nghị cấp Thẻ phóng viên nước ngoài của phóng viên thường trú theo mẫu do Bộ Ngoại giao ban hành..pdf",
+        "attachment_path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/1_001133/V%C4%83n%20b%E1%BA%A3n%20%C4%91%E1%BB%81%20ngh%E1%BB%8B%20c%E1%BA%A5p%20Th%E1%BA%BB%20ph%C3%B3ng%20vi%C3%AAn%20n%C6%B0%E1%BB%9Bc%20ngo%C3%A0i%20c%E1%BB%A7a%20ph%C3%B3ng%20vi%C3%AAn%20th%C6%B0%E1%BB%9Dng%20tr%C3%BA%20theo%20m%E1%BA%ABu%20do%20B%E1%BB%99%20Ngo%E1%BA%A1i%20giao%20ban%20h%C3%A0nh..pdf"
+      },
+      {
+        "name": "Văn bản đề nghị cử phóng viên thường trú của người đứng đầu cơ quan báo chí nước ngoài hoặc người được người đứng đầu cơ quan báo chí nước ngoài ủy quyền theo mẫu do Bộ Ngoại giao ban hành.",
+        "attachment_label": "Mau so 3 - Don de nghi cu phong vien thuong tru.docx",
+        "attachment_path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/1_001133/Mau%20so%203%20-%20Don%20de%20nghi%20cu%20phong%20vien%20thuong%20tru.docx"
+      }
+    ],
+    "presented": [],
+    "notes": [
+      "Bản chụp hộ chiếu của phóng viên thường trú."
+    ],
+    "summary": [
+      {
+        "group": "default",
+        "name": "Văn bản đề nghị cấp mới/cấp lại/Gia hạn Thẻ phóng viên nước ngoài của phóng viên thường trú theo mẫu do Bộ Ngoại giao ban hành.",
+        "quantity": "1 bản chính, 0 bản sao",
+        "notes": [],
+        "attachment_path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/1_001133/V%C4%83n%20b%E1%BA%A3n%20%C4%91%E1%BB%81%20ngh%E1%BB%8B%20c%E1%BA%A5p%20Th%E1%BA%BB%20ph%C3%B3ng%20vi%C3%AAn%20n%C6%B0%E1%BB%9Bc%20ngo%C3%A0i%20c%E1%BB%A7a%20ph%C3%B3ng%20vi%C3%AAn%20th%C6%B0%E1%BB%9Dng%20tr%C3%BA%20theo%20m%E1%BA%ABu%20do%20B%E1%BB%99%20Ngo%E1%BA%A1i%20giao%20ban%20h%C3%A0nh..pdf"
+      },
+      {
+        "group": "default",
+        "name": "02 ảnh chân dung 03 cm x 04 cm của phóng viên thường trú.",
+        "quantity": "2 bản chính, 0 bản sao",
+        "notes": [],
+        "attachment_path": null
+      },
+      {
+        "group": "default",
+        "name": "Văn bản đề nghị cử phóng viên thường trú của người đứng đầu cơ quan báo chí nước ngoài hoặc người được người đứng đầu cơ quan báo chí nước ngoài ủy quyền theo mẫu do Bộ Ngoại giao ban hành.",
+        "quantity": "1 bản chính, 0 bản sao",
+        "notes": [],
+        "attachment_path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/1_001133/Mau%20so%203%20-%20Don%20de%20nghi%20cu%20phong%20vien%20thuong%20tru.docx"
+      },
+      {
+        "group": null,
+        "name": null,
+        "quantity": "1 bản chính, 0 bản sao",
+        "notes": [],
+        "attachment_path": null
+      },
+      {
+        "group": null,
+        "name": null,
+        "quantity": "1 bản chính, 0 bản sao",
+        "notes": [],
+        "attachment_path": null
+      },
+      {
+        "group": null,
+        "name": "Văn bản đề nghị cấp mới/cấp lại/Gia hạn Thẻ phóng viên nước ngoài của phóng viên thường trú theo mẫu do Bộ Ngoại giao ban hành.",
+        "quantity": null,
+        "notes": null,
+        "attachment_path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/1_001133/V%C4%83n%20b%E1%BA%A3n%20%C4%91%E1%BB%81%20ngh%E1%BB%8B%20c%E1%BA%A5p%20Th%E1%BA%BB%20ph%C3%B3ng%20vi%C3%AAn%20n%C6%B0%E1%BB%9Bc%20ngo%C3%A0i%20c%E1%BB%A7a%20ph%C3%B3ng%20vi%C3%AAn%20th%C6%B0%E1%BB%9Dng%20tr%C3%BA%20theo%20m%E1%BA%ABu%20do%20B%E1%BB%99%20Ngo%E1%BA%A1i%20giao%20ban%20h%C3%A0nh..pdf"
+      },
+      {
+        "group": null,
+        "name": "Văn bản đề nghị cử phóng viên thường trú của người đứng đầu cơ quan báo chí nước ngoài hoặc người được người đứng đầu cơ quan báo chí nước ngoài ủy quyền theo mẫu do Bộ Ngoại giao ban hành.",
+        "quantity": null,
+        "notes": null,
+        "attachment_path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/1_001133/Mau%20so%203%20-%20Don%20de%20nghi%20cu%20phong%20vien%20thuong%20tru.docx"
+      }
+    ]
+  },
+  "steps": [
+    {
+      "order": 1,
+      "title": "Bước 1",
+      "description": "1. **Thẩm định hồ sơ**",
+      "example": null
+    },
+    {
+      "order": 2,
+      "title": "Bước 2",
+      "description": "Trong thời hạn 03 ngày làm việc kể từ khi nhận được hồ sơ đề nghị, Bộ Ngoại giao hoàn thành việc cấp, cấp lại hoặc gia hạn Thẻ phóng viên nước ngoài. Trong trường hợp từ chối cấp, cấp lại hoặc gia hạn Thẻ phóng viên nước ngoài, Bộ Ngoại giao thông báo bằng văn bản cho phóng viên nước ngoài",
+      "example": "03 ngày làm việc"
+    },
+    {
+      "order": 3,
+      "title": "Bước 3",
+      "description": "2. **Nộp hồ sơ**",
+      "example": null
+    },
+    {
+      "order": 4,
+      "title": "Bước 4",
+      "description": "Phóng viên thường trú có đề nghị cấp, cấp lại, gia hạn Thẻ phóng viên nước ngoài gửi 01 bộ hồ sơ đề nghị trực tiếp hoặc qua dịch vụ bưu chính đến Bộ Ngoại giao hoặc trực tuyến trên Cổng Dịch vụ công quốc gia.",
+      "example": "trực tuyến"
+    },
+    {
+      "order": 5,
+      "title": "Bước 5",
+      "description": "3. Chậm nhất 15 ngày làm việc trước khi Thẻ phóng viên nước ngoài hết hạn, phóng viên thường trú phải làm thủ tục gia hạn Thẻ phóng viên nước ngoài nếu được Bộ Ngoại giao cho phép tiếp tục làm phóng viên thường trú. Phóng viên thường trú có đề nghị gia hạn Thẻ phóng viên nước ngoài gửi 01 bộ hồ sơ đề nghị gia hạn thẻ trực",
+      "example": "15 ngày làm việc"
+    },
+    {
+      "order": 6,
+      "title": "Bước 6",
+      "description": "tiếp hoặc qua dịch vụ bưu chính đến Bộ Ngoại giao;",
+      "example": "dịch vụ bưu chính"
+    }
+  ],
+  "input_fields": [
+    {
+      "field": "document_request_type",
+      "label": "Loại giấy tờ cần xử lý",
+      "type": "string",
+      "required": true
+    },
+    {
+      "field": "submission_channel_preference",
+      "label": "Kênh nộp dự kiến",
+      "type": "enum",
+      "required": false,
+      "options": [
+        "Trực tiếp",
+        "Trực tuyến",
+        "Dịch vụ bưu chính"
+      ]
+    },
+    {
+      "field": "identity_document_available",
+      "label": "Có giấy tờ định danh",
+      "type": "boolean",
+      "required": true
+    },
+    {
+      "field": "residency_or_status_known",
+      "label": "Biết rõ nơi cư trú hoặc tình trạng hiện tại",
+      "type": "boolean",
+      "required": false
+    }
+  ],
+  "validation_rules": [
+    {
+      "id": "required-1",
+      "severity": "error",
+      "field": "document_request_type",
+      "rule": "Trường bắt buộc phải có dữ liệu hợp lệ trước khi nộp.",
+      "message": "Thiếu trường bắt buộc: Loại giấy tờ cần xử lý."
+    },
+    {
+      "id": "required-3",
+      "severity": "error",
+      "field": "identity_document_available",
+      "rule": "Trường bắt buộc phải có dữ liệu hợp lệ trước khi nộp.",
+      "message": "Thiếu trường bắt buộc: Có giấy tờ định danh."
+    },
+    {
+      "id": "hint-1",
+      "severity": "warning",
+      "field": "general",
+      "rule": "Nên xác định trước kênh nộp hồ sơ để biết có cần bản giấy, bản điện tử hay xuất trình trực tiếp.",
+      "message": "Nên xác định trước kênh nộp hồ sơ để biết có cần bản giấy, bản điện tử hay xuất trình trực tiếp."
+    },
+    {
+      "id": "hint-2",
+      "severity": "warning",
+      "field": "general",
+      "rule": "Có mẫu biểu đính kèm, nên kiểm tra đúng biểu mẫu trước khi nộp.",
+      "message": "Có mẫu biểu đính kèm, nên kiểm tra đúng biểu mẫu trước khi nộp."
+    },
+    {
+      "id": "hint-3",
+      "severity": "warning",
+      "field": "general",
+      "rule": "Nên đối chiếu trước dữ liệu định danh và nơi cư trú để tránh bị yêu cầu bổ sung.",
+      "message": "Nên đối chiếu trước dữ liệu định danh và nơi cư trú để tránh bị yêu cầu bổ sung."
+    }
+  ],
+  "common_errors": [
+    {
+      "field": "general",
+      "issue": "Thiếu giấy tờ hoặc nội dung ủy quyền phù hợp.",
+      "fix": "Nên xác định trước kênh nộp hồ sơ để biết có cần bản giấy, bản điện tử hay xuất trình trực tiếp."
+    },
+    {
+      "field": "general",
+      "issue": "Thiếu giấy tờ hợp pháp hóa hoặc giấy tờ nhân thân của phía nước ngoài.",
+      "fix": "Nên xác định trước kênh nộp hồ sơ để biết có cần bản giấy, bản điện tử hay xuất trình trực tiếp."
+    },
+    {
+      "field": "general",
+      "issue": "Điền sai mẫu tờ khai hoặc chọn sai biểu mẫu đi kèm.",
+      "fix": "Nên xác định trước kênh nộp hồ sơ để biết có cần bản giấy, bản điện tử hay xuất trình trực tiếp."
+    }
+  ],
+  "clarifying_questions": [
+    {
+      "id": "clarify_1",
+      "question": "Bạn đang xử lý giấy tờ gì và muốn nộp trực tiếp hay trực tuyến?",
+      "purpose": "workflow_intake"
+    },
+    {
+      "id": "clarify_2",
+      "question": "Thông tin định danh và nơi cư trú hiện tại đã sẵn sàng để đối chiếu chưa?",
+      "purpose": "workflow_intake"
+    }
+  ],
+  "legal_basis": [
+    {
+      "title": "Thông tư quy định về phân cấp thực hiện một số nhiệm vụ, quyền hạn trong lĩnh vực quản lý nhà nước của Bộ Tài chính",
+      "code": "31/2026/TT-BTC"
+    },
+    {
+      "title": "Luật báo chí",
+      "code": "103/2016/QH13"
+    },
+    {
+      "title": "Thông tư 06/2012/TT-BNG",
+      "code": "06/2012/TT-BNG"
+    },
+    {
+      "title": "Nghị định 88/2012/NĐ-CP",
+      "code": "88/2012/NĐ-CP"
+    }
+  ],
+  "legal_bases": [
+    {
+      "title": "Thông tư quy định về phân cấp thực hiện một số nhiệm vụ, quyền hạn trong lĩnh vực quản lý nhà nước của Bộ Tài chính",
+      "code": "31/2026/TT-BTC"
+    },
+    {
+      "title": "Luật báo chí",
+      "code": "103/2016/QH13"
+    },
+    {
+      "title": "Thông tư 06/2012/TT-BNG",
+      "code": "06/2012/TT-BNG"
+    },
+    {
+      "title": "Nghị định 88/2012/NĐ-CP",
+      "code": "88/2012/NĐ-CP"
+    }
+  ],
+  "faq": [
+    {
+      "question": "Có thể nộp qua kênh nào?",
+      "answer": "Các kênh hiện có: Trực tiếp, Trực tuyến, Dịch vụ bưu chính."
+    },
+    {
+      "question": "Thời gian xử lý tham chiếu là bao lâu?",
+      "answer": "Thời gian xử lý tham chiếu hiện có là 3 ngày làm việc."
+    },
+    {
+      "question": "Kết quả chính của thủ tục là gì?",
+      "answer": "Kết quả chính được trích xuất là Thẻ phóng viên nước ngoài."
+    }
+  ],
+  "guidance": {
+    "highlight_documents": [
+      {
+        "bucket": "required",
+        "name": "Văn bản đề nghị cấp mới/cấp lại/Gia hạn Thẻ phóng viên nước ngoài của phóng viên thường trú theo mẫu do Bộ Ngoại giao ban hành.",
+        "conditions": [],
+        "attachment_path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/1_001133/V%C4%83n%20b%E1%BA%A3n%20%C4%91%E1%BB%81%20ngh%E1%BB%8B%20c%E1%BA%A5p%20Th%E1%BA%BB%20ph%C3%B3ng%20vi%C3%AAn%20n%C6%B0%E1%BB%9Bc%20ngo%C3%A0i%20c%E1%BB%A7a%20ph%C3%B3ng%20vi%C3%AAn%20th%C6%B0%E1%BB%9Dng%20tr%C3%BA%20theo%20m%E1%BA%ABu%20do%20B%E1%BB%99%20Ngo%E1%BA%A1i%20giao%20ban%20h%C3%A0nh..pdf"
+      },
+      {
+        "bucket": "required",
+        "name": "02 ảnh chân dung 03 cm x 04 cm của phóng viên thường trú.",
+        "conditions": [],
+        "attachment_path": null
+      },
+      {
+        "bucket": "required",
+        "name": "Văn bản đề nghị cử phóng viên thường trú của người đứng đầu cơ quan báo chí nước ngoài hoặc người được người đứng đầu cơ quan báo chí nước ngoài ủy quyền theo mẫu do Bộ Ngoại giao ban hành.",
+        "conditions": [],
+        "attachment_path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/1_001133/Mau%20so%203%20-%20Don%20de%20nghi%20cu%20phong%20vien%20thuong%20tru.docx"
+      },
+      {
+        "bucket": "conditional",
+        "name": "Thẻ phóng viên nước ngoài (trong trường hợp thẻ bị hỏng).",
+        "conditions": [
+          "Thẻ phóng viên nước ngoài (trong trường hợp thẻ bị hỏng)."
+        ],
+        "attachment_path": null
+      },
+      {
+        "bucket": "conditional",
+        "name": "Thẻ phóng viên nước ngoài (trường hợp xin gia hạn thẻ phóng viên nước ngoài)",
+        "conditions": [
+          "Thẻ phóng viên nước ngoài (trường hợp xin gia hạn thẻ phóng viên nước ngoài)"
+        ],
+        "attachment_path": null
+      }
+    ],
+    "special_cases": [
+      "Có yếu tố nước ngoài",
+      "Có thể cần giấy tờ ủy quyền"
+    ],
+    "common_errors": [
+      "Thiếu giấy tờ hoặc nội dung ủy quyền phù hợp.",
+      "Thiếu giấy tờ hợp pháp hóa hoặc giấy tờ nhân thân của phía nước ngoài.",
+      "Điền sai mẫu tờ khai hoặc chọn sai biểu mẫu đi kèm."
+    ],
+    "validation_hints": [
+      "Nên xác định trước kênh nộp hồ sơ để biết có cần bản giấy, bản điện tử hay xuất trình trực tiếp.",
+      "Có mẫu biểu đính kèm, nên kiểm tra đúng biểu mẫu trước khi nộp.",
+      "Nên đối chiếu trước dữ liệu định danh và nơi cư trú để tránh bị yêu cầu bổ sung."
+    ]
+  },
+  "next_steps": {
+    "summary": "Nên kiểm tra trước giấy tờ định danh, nơi nộp và mẫu biểu liên quan, rồi chọn kênh nộp phù hợp: Trực tiếp, Trực tuyến, Dịch vụ bưu chính. Hiện có khoảng 5 mục giấy tờ cần theo dõi trong checklist.",
+    "time_badge": "3 ngày làm việc",
+    "result_label": "Thẻ phóng viên nước ngoài",
+    "primary_channel": "postal",
+    "channels": [
+      "in_person",
+      "online",
+      "postal"
+    ]
+  },
+  "notes": [],
+  "provenance": {
+    "pipeline": "raw->structured->normalized->enriched->ui_api_payload",
+    "normalizer_version": "0.2.0",
+    "enricher_version": "0.2.0",
+    "mapping_notes": "excluded_from_clean_workflow_dataset",
+    "supported_group": true
+  }
+}

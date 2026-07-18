@@ -1,0 +1,216 @@
+{
+  "schema_version": "1.0",
+  "domain": "dien_luc_nha_o_dat_dai",
+  "updated_at": "2026-07-18",
+  "source_files": [
+    "C:\\Users\\ku060\\Downloads\\VAIC source\\data-pipeline\\main\\full-data.csv",
+    "C:\\Users\\ku060\\Downloads\\VAIC source\\data-pipeline\\data\\workflows\\dien_luc_nha_o_dat_dai\\summary.csv",
+    "C:\\Users\\ku060\\Downloads\\VAIC source\\data-pipeline\\data\\workflows\\dien_luc_nha_o_dat_dai\\normalized.json",
+    "C:\\Users\\ku060\\Downloads\\VAIC source\\data-pipeline\\raw_data"
+  ],
+  "coverage": {
+    "expected_codes": [
+      "1.011441",
+      "1.011442",
+      "1.011443",
+      "1.011444",
+      "1.011445"
+    ],
+    "covered_codes": [
+      "1.011441",
+      "1.011442",
+      "1.011443",
+      "1.011444",
+      "1.011445"
+    ],
+    "missing_codes": []
+  },
+  "llm_contract": {
+    "role": "parse_user_answer_and_rephrase_question_only",
+    "required_output_schema": {
+      "intent": "dien_luc_nha_o_dat_dai",
+      "current_node": "string",
+      "slot_updates": {
+        "subdomain_key": "dang_ky_quyen_so_huu_quyen_su_dung | chuyen_nhuong_tang_cho_thua_ke | gop_von_the_chap | chuyen_muc_dich_su_dung | xay_dung_cong_trinh_nha_o | cung_cap_dien_nang | unknown",
+        "operation_key": "string",
+        "operation_group": "string"
+      },
+      "confidence": "0_to_1",
+      "needs_human_review": "boolean"
+    }
+  },
+  "entry_prompts": [
+    "Bạn cần làm việc về quyền sử dụng đất, sang tên, thế chấp, chuyển mục đích, xây dựng nhà ở hay điện sinh hoạt?",
+    "Bạn muốn đăng ký mới, chỉnh lý biến động, xin phép xây dựng, đăng ký nhà ở xã hội hay cấp điện mới?"
+  ],
+  "slots": [
+    {
+      "name": "subdomain_key",
+      "required": true,
+      "description": "Nhánh chính của nhóm Điện lực, nhà ở, đất đai."
+    },
+    {
+      "name": "operation_key",
+      "required": true,
+      "description": "Thao tác cụ thể ánh xạ trực tiếp tới thủ tục cuối cùng."
+    },
+    {
+      "name": "operation_group",
+      "required": false,
+      "description": "Nhóm thao tác để gom các thủ tục gần nhau cho UI và parser."
+    }
+  ],
+  "subdomain_catalog": [
+    {
+      "subdomain_key": "gop_von_the_chap",
+      "subdomain_label": "Góp vốn, thế chấp",
+      "event_id": 290,
+      "summary": "Nhóm thủ tục đăng ký, thay đổi, xóa hoặc xử lý biện pháp bảo đảm bằng quyền sử dụng đất, tài sản gắn liền với đất và chuyển tiếp đăng ký thế chấp quyền tài sản phát sinh từ hợp đồng mua bán nhà ở."
+    }
+  ],
+  "decision_tree": {
+    "start_node": "housing_land_electricity_subdomain",
+    "nodes": [
+      {
+        "id": "housing_land_electricity_subdomain",
+        "type": "question",
+        "slot": "subdomain_key",
+        "question": "Bạn đang cần làm việc về sổ đất, sang tên, thế chấp, chuyển mục đích sử dụng đất, xây dựng nhà ở hay cấp điện?",
+        "options": [
+          "gop_von_the_chap"
+        ],
+        "prefilled_value": "gop_von_the_chap"
+      },
+      {
+        "id": "housing_land_electricity_operation",
+        "type": "question",
+        "slot": "operation_key",
+        "question": "Trong nhánh đã chọn, bạn đang cần thao tác cụ thể nào?",
+        "options_by_subdomain": {
+          "gop_von_the_chap": [
+            {
+              "operation_key": "dang_ky_bien_phap_bao_dam_bang_quyen_su_dung_dat_tai_san_gan_lien_voi_dat",
+              "operation_group": "dang_ky_bien_phap_bao_dam",
+              "procedure_code": "1.011441",
+              "procedure_title": "Đăng ký biện pháp bảo đảm bằng quyền sử dụng đất, tài sản gắn liền với đất"
+            },
+            {
+              "operation_key": "dang_ky_thay_doi_bien_phap_bao_dam_bang_quyen_su_dung_dat_tai_san_gan_lien_voi_dat",
+              "operation_group": "thay_doi_bien_phap_bao_dam",
+              "procedure_code": "1.011442",
+              "procedure_title": "Đăng ký thay đổi biện pháp bảo đảm bằng quyền sử dụng đất, tài sản gắn liền với đất"
+            },
+            {
+              "operation_key": "xoa_dang_ky_bien_phap_bao_dam_bang_quyen_su_dung_dat_tai_san_gan_lien_voi_dat",
+              "operation_group": "xoa_bien_phap_bao_dam",
+              "procedure_code": "1.011443",
+              "procedure_title": "Xóa đăng ký biện pháp bảo đảm bằng quyền sử dụng đất, tài sản gắn liền với đất"
+            },
+            {
+              "operation_key": "dang_ky_thong_bao_xu_ly_tai_san_bao_dam_dang_ky_thay_doi_xoa_dang_ky_thong_bao_xu_ly_tai_san_bao_dam_la_quyen_su_dung_dat_tai_san_gan_lien_voi_dat",
+              "operation_group": "thay_doi_bien_phap_bao_dam",
+              "procedure_code": "1.011444",
+              "procedure_title": "Đăng ký thông báo xử lý tài sản bảo đảm, đăng ký thay đổi, xóa đăng ký thông báo xử lý tài sản bảo đảm là quyền sử dụng đất, tài sản gắn liền với đất"
+            },
+            {
+              "operation_key": "chuyen_tiep_dang_ky_the_chap_quyen_tai_san_phat_sinh_tu_hop_dong_mua_ban_nha_o_hoac_tu_hop_dong_mua_ban_tai_san_khac_gan_lien_voi_dat",
+              "operation_group": "chuyen_tiep_dang_ky_the_chap",
+              "procedure_code": "1.011445",
+              "procedure_title": "Chuyển tiếp đăng ký thế chấp quyền tài sản phát sinh từ hợp đồng mua bán nhà ở hoặc từ hợp đồng mua bán tài sản khác gắn liền với đất"
+            }
+          ]
+        },
+        "options": [
+          "dang_ky_bien_phap_bao_dam_bang_quyen_su_dung_dat_tai_san_gan_lien_voi_dat",
+          "dang_ky_thay_doi_bien_phap_bao_dam_bang_quyen_su_dung_dat_tai_san_gan_lien_voi_dat",
+          "xoa_dang_ky_bien_phap_bao_dam_bang_quyen_su_dung_dat_tai_san_gan_lien_voi_dat",
+          "dang_ky_thong_bao_xu_ly_tai_san_bao_dam_dang_ky_thay_doi_xoa_dang_ky_thong_bao_xu_ly_tai_san_bao_dam_la_quyen_su_dung_dat_tai_san_gan_lien_voi_dat",
+          "chuyen_tiep_dang_ky_the_chap_quyen_tai_san_phat_sinh_tu_hop_dong_mua_ban_nha_o_hoac_tu_hop_dong_mua_ban_tai_san_khac_gan_lien_voi_dat"
+        ]
+      }
+    ],
+    "routes": [
+      {
+        "route_id": "gop_von_the_chap-1_011441",
+        "conditions": {
+          "subdomain_key": "gop_von_the_chap",
+          "operation_key": "dang_ky_bien_phap_bao_dam_bang_quyen_su_dung_dat_tai_san_gan_lien_voi_dat"
+        },
+        "procedure_code": "1.011441",
+        "procedure_name": "Đăng ký biện pháp bảo đảm bằng quyền sử dụng đất, tài sản gắn liền với đất",
+        "why_this_route": "Route trực tiếp cho nhu cầu 'Đăng ký biện pháp bảo đảm bằng quyền sử dụng đất, tài sản gắn liền với đất' trong nhánh 'Góp vốn, thế chấp'."
+      },
+      {
+        "route_id": "gop_von_the_chap-1_011442",
+        "conditions": {
+          "subdomain_key": "gop_von_the_chap",
+          "operation_key": "dang_ky_thay_doi_bien_phap_bao_dam_bang_quyen_su_dung_dat_tai_san_gan_lien_voi_dat"
+        },
+        "procedure_code": "1.011442",
+        "procedure_name": "Đăng ký thay đổi biện pháp bảo đảm bằng quyền sử dụng đất, tài sản gắn liền với đất",
+        "why_this_route": "Route trực tiếp cho nhu cầu 'Đăng ký thay đổi biện pháp bảo đảm bằng quyền sử dụng đất, tài sản gắn liền với đất' trong nhánh 'Góp vốn, thế chấp'."
+      },
+      {
+        "route_id": "gop_von_the_chap-1_011443",
+        "conditions": {
+          "subdomain_key": "gop_von_the_chap",
+          "operation_key": "xoa_dang_ky_bien_phap_bao_dam_bang_quyen_su_dung_dat_tai_san_gan_lien_voi_dat"
+        },
+        "procedure_code": "1.011443",
+        "procedure_name": "Xóa đăng ký biện pháp bảo đảm bằng quyền sử dụng đất, tài sản gắn liền với đất",
+        "why_this_route": "Route trực tiếp cho nhu cầu 'Xóa đăng ký biện pháp bảo đảm bằng quyền sử dụng đất, tài sản gắn liền với đất' trong nhánh 'Góp vốn, thế chấp'."
+      },
+      {
+        "route_id": "gop_von_the_chap-1_011444",
+        "conditions": {
+          "subdomain_key": "gop_von_the_chap",
+          "operation_key": "dang_ky_thong_bao_xu_ly_tai_san_bao_dam_dang_ky_thay_doi_xoa_dang_ky_thong_bao_xu_ly_tai_san_bao_dam_la_quyen_su_dung_dat_tai_san_gan_lien_voi_dat"
+        },
+        "procedure_code": "1.011444",
+        "procedure_name": "Đăng ký thông báo xử lý tài sản bảo đảm, đăng ký thay đổi, xóa đăng ký thông báo xử lý tài sản bảo đảm là quyền sử dụng đất, tài sản gắn liền với đất",
+        "why_this_route": "Route trực tiếp cho nhu cầu 'Đăng ký thông báo xử lý tài sản bảo đảm, đăng ký thay đổi, xóa đăng ký thông báo xử lý tài sản bảo đảm là quyền sử dụng đất, tài sản gắn liền với đất' trong nhánh 'Góp vốn, thế chấp'."
+      },
+      {
+        "route_id": "gop_von_the_chap-1_011445",
+        "conditions": {
+          "subdomain_key": "gop_von_the_chap",
+          "operation_key": "chuyen_tiep_dang_ky_the_chap_quyen_tai_san_phat_sinh_tu_hop_dong_mua_ban_nha_o_hoac_tu_hop_dong_mua_ban_tai_san_khac_gan_lien_voi_dat"
+        },
+        "procedure_code": "1.011445",
+        "procedure_name": "Chuyển tiếp đăng ký thế chấp quyền tài sản phát sinh từ hợp đồng mua bán nhà ở hoặc từ hợp đồng mua bán tài sản khác gắn liền với đất",
+        "why_this_route": "Route trực tiếp cho nhu cầu 'Chuyển tiếp đăng ký thế chấp quyền tài sản phát sinh từ hợp đồng mua bán nhà ở hoặc từ hợp đồng mua bán tài sản khác gắn liền với đất' trong nhánh 'Góp vốn, thế chấp'."
+      }
+    ]
+  },
+  "pre_submission_checks": [
+    {
+      "field_group": "land_registration",
+      "checks": [
+        "Nhóm đất đai phải làm rõ loại biến động: đăng ký lần đầu, cấp đổi, cấp lại, đính chính, tách thửa hay sang tên do chuyển quyền.",
+        "Thông tin thửa đất, số Giấy chứng nhận, chủ sử dụng đất và giấy tờ chứng minh nguồn gốc đất phải thống nhất giữa tờ khai và hồ sơ đính kèm."
+      ]
+    },
+    {
+      "field_group": "secured_transactions",
+      "checks": [
+        "Nhóm góp vốn, thế chấp phải xác định rõ là đăng ký mới, thay đổi, xóa hay thông báo xử lý tài sản bảo đảm.",
+        "Nếu là thế chấp quyền tài sản phát sinh từ hợp đồng mua bán nhà ở, phải có thông tin hợp đồng và tài sản gắn liền với đất đủ để định danh tài sản bảo đảm."
+      ]
+    },
+    {
+      "field_group": "construction_and_housing",
+      "checks": [
+        "Nhóm xây dựng, nhà ở phải phân biệt rõ xây mới, sửa chữa, cải tạo, di dời hay tiếp cận nhà ở xã hội.",
+        "Các trường hợp xin phép xây dựng nhà ở riêng lẻ cần kiểm tra địa chỉ xây dựng, quyền sử dụng đất và bản vẽ thiết kế trước khi nhận hồ sơ."
+      ]
+    },
+    {
+      "field_group": "electricity_services",
+      "checks": [
+        "Nhóm điện năng phải phân biệt giữa cấp điện mới và thông báo phát triển điện mặt trời mái nhà có đấu nối.",
+        "Nếu là cấp điện mới, cần có địa chỉ sử dụng điện, nhu cầu công suất và giấy tờ định danh người yêu cầu."
+      ]
+    }
+  ],
+  "subdomain_key": "gop_von_the_chap"
+}

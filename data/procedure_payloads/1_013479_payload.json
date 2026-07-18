@@ -1,0 +1,317 @@
+{
+  "schema_version": "3.0",
+  "record_type": "public_service_procedure_payload",
+  "id": "procedure-1.013479",
+  "procedure_code": "1.013479",
+  "code": "1.013479",
+  "title": "Hồ sơ mua tem điện tử thuốc lá hoặc tem điện tử rượu nhập khẩu",
+  "language": "vi",
+  "status": "generated_from_pipeline",
+  "field": "Hải quan",
+  "group_key": "suc_khoe_y_te",
+  "workflow_family": null,
+  "subflow": null,
+  "source": {
+    "source_url": "file:///C:/Users/ku060/Downloads/VAIC%20source/data-pipeline/raw_data/1_013479/1_013479_procedure_detail.md",
+    "source_markdown_path": "C:\\Users\\ku060\\Downloads\\VAIC source\\data-pipeline\\raw_data\\1_013479\\1_013479_procedure_detail.md",
+    "normalized_payload_path": "C:\\Users\\ku060\\Downloads\\VAIC source\\data-pipeline\\govease-unified\\data\\normalized_structured\\1_013479_normalized_structured.json",
+    "enriched_payload_path": "C:\\Users\\ku060\\Downloads\\VAIC source\\data-pipeline\\govease-unified\\data\\enriched_structured_priority\\1_013479_enriched_structured.json"
+  },
+  "scope": {
+    "included": "Thủ tục này thuộc nhóm y tế, thường cần đối chiếu thông tin người bệnh, đơn vị tiếp nhận hoặc quyền lợi chuyên ngành. Kết quả thường nhận được là Tem điện tử thuốc lá nhập khẩu, tem điện tử rượu nhập khẩu được bàn giao cho doanh nghiệp, tổ chức để dán lên sản phẩm. Thời gian xử lý tham khảo: 1 ngày.",
+    "not_included": []
+  },
+  "agency": {
+    "executing_agency": "Hải quan khu vực/ hải quan cửa khẩu",
+    "submission_place": null,
+    "receiving_places": []
+  },
+  "target_users": [
+    "Doanh nghiệp",
+    "Tổ chức (không bao gồm doanh nghiệp",
+    "HTX)"
+  ],
+  "submission_methods": [
+    {
+      "code": "ONLINE",
+      "label": "Trực tuyến",
+      "processing_time": "1 ngày",
+      "fee": null,
+      "description": null
+    }
+  ],
+  "processing_note": "Thời gian xử lý tham chiếu: 1 ngày. Nên xác định rõ đối tượng tham gia, quyền lợi hoặc nhu cầu điều chỉnh hồ sơ y tế trước khi nộp. Có thể chọn kênh nộp phù hợp: Trực tuyến. Hiện có khoảng 2 mục giấy tờ cần theo dõi trong checklist.",
+  "documents": {
+    "normally_required": [
+      {
+        "name": "Số lượng hồ sơ: 01 (bộ).",
+        "quantity": "1 bản chính, 0 bản sao",
+        "notes": [],
+        "group": "default",
+        "attachment_path": null
+      },
+      {
+        "name": "Đơn đề nghị mua tem điện tử rượu/tem điện tử thuốc lá nhập khẩu theo Mẫu số 09/TEM ban hành theo Phụ lục 6 Thông tư 31/2025/TT-BTC ngày 31/5/2025 của Bộ Tài chính.",
+        "quantity": "1 bản chính, 0 bản sao",
+        "notes": [],
+        "group": "default",
+        "attachment_path": null
+      }
+    ],
+    "conditional": [],
+    "forms": [],
+    "presented": [],
+    "notes": [],
+    "summary": [
+      {
+        "group": "default",
+        "name": "Số lượng hồ sơ: 01 (bộ).",
+        "quantity": "1 bản chính, 0 bản sao",
+        "notes": [],
+        "attachment_path": null
+      },
+      {
+        "group": "default",
+        "name": "Đơn đề nghị mua tem điện tử rượu/tem điện tử thuốc lá nhập khẩu theo Mẫu số 09/TEM ban hành theo Phụ lục 6 Thông tư 31/2025/TT-BTC ngày 31/5/2025 của Bộ Tài chính.",
+        "quantity": "1 bản chính, 0 bản sao",
+        "notes": [],
+        "attachment_path": null
+      }
+    ]
+  },
+  "steps": [
+    {
+      "order": 1,
+      "title": "Bước 1",
+      "description": "1.",
+      "example": null
+    },
+    {
+      "order": 2,
+      "title": "Bước 1:",
+      "description": "Bước 1: Doanh nghiệp, tổ chức khi mua tem điện tử thuốc lá, tem điện tử rượu điền đầy đủ thông tin trên Hệ thống Dịch vụ công trực tuyến (DVCTT) và đính kèm các giấy tờ theo yêu cầu.",
+      "example": "trực tuyến"
+    },
+    {
+      "order": 3,
+      "title": "Bước 2:",
+      "description": "Bước 2: Cơ quan hải quan tiếp nhận, kiểm tra hồ sơ mua tem.",
+      "example": null
+    },
+    {
+      "order": 4,
+      "title": "Bước 3:",
+      "description": "Bước 3: Cơ quan hải quan bàn giao tem điện tử cho doanh nghiệp, tổ chức đề nghị mua tem.",
+      "example": null
+    }
+  ],
+  "input_fields": [
+    {
+      "field": "request_subject",
+      "label": "Đối tượng làm thủ tục",
+      "type": "string",
+      "required": true
+    },
+    {
+      "field": "insurance_or_medical_need",
+      "label": "Nhu cầu bảo hiểm hoặc y tế",
+      "type": "string",
+      "required": true
+    },
+    {
+      "field": "submission_channel_preference",
+      "label": "Kênh nộp dự kiến",
+      "type": "enum",
+      "required": false,
+      "options": [
+        "Trực tuyến"
+      ]
+    },
+    {
+      "field": "has_insurance_number",
+      "label": "Đã có mã BHXH/BHYT",
+      "type": "boolean",
+      "required": false
+    }
+  ],
+  "validation_rules": [
+    {
+      "id": "required-1",
+      "severity": "error",
+      "field": "request_subject",
+      "rule": "Trường bắt buộc phải có dữ liệu hợp lệ trước khi nộp.",
+      "message": "Thiếu trường bắt buộc: Đối tượng làm thủ tục."
+    },
+    {
+      "id": "required-2",
+      "severity": "error",
+      "field": "insurance_or_medical_need",
+      "rule": "Trường bắt buộc phải có dữ liệu hợp lệ trước khi nộp.",
+      "message": "Thiếu trường bắt buộc: Nhu cầu bảo hiểm hoặc y tế."
+    },
+    {
+      "id": "hint-1",
+      "severity": "warning",
+      "field": "general",
+      "rule": "Nên xác định trước kênh nộp hồ sơ để biết có cần bản giấy, bản điện tử hay xuất trình trực tiếp.",
+      "message": "Nên xác định trước kênh nộp hồ sơ để biết có cần bản giấy, bản điện tử hay xuất trình trực tiếp."
+    },
+    {
+      "id": "hint-2",
+      "severity": "warning",
+      "field": "general",
+      "rule": "Nên xác định đúng nhóm đối tượng, mã số bảo hiểm và quyền lợi áp dụng trước khi nộp.",
+      "message": "Nên xác định đúng nhóm đối tượng, mã số bảo hiểm và quyền lợi áp dụng trước khi nộp."
+    }
+  ],
+  "common_errors": [
+    {
+      "field": "general",
+      "issue": "Điền sai mẫu tờ khai hoặc chọn sai biểu mẫu đi kèm.",
+      "fix": "Nên xác định trước kênh nộp hồ sơ để biết có cần bản giấy, bản điện tử hay xuất trình trực tiếp."
+    }
+  ],
+  "clarifying_questions": [
+    {
+      "id": "clarify_1",
+      "question": "Bạn đang muốn đăng ký, điều chỉnh hay xác nhận quyền lợi y tế hoặc bảo hiểm nào?",
+      "purpose": "workflow_intake"
+    },
+    {
+      "id": "clarify_2",
+      "question": "Bạn đã có mã BHXH/BHYT hoặc thông tin đơn vị tiếp nhận liên quan chưa?",
+      "purpose": "workflow_intake"
+    }
+  ],
+  "legal_basis": [
+    {
+      "title": "Luật 67/2006/QH11",
+      "code": "67/2006/QH11"
+    },
+    {
+      "title": "Quy định chi tiết một số điều và biện pháp thi hành Luật Phòng, chống tác hại của thuốc lá về kinh doanh thuốc lá",
+      "code": "67/2013/NĐ-CP"
+    },
+    {
+      "title": "Luật Quản lý thuế",
+      "code": "38/2019/QH14"
+    },
+    {
+      "title": "Sửa đổi, bổ sung một số điều của Thông tư số 23/2021/TT-BTC ngày 30 tháng 3 năm 2021 của Bộ trưởng Bộ Tài chính hướng dẫn việc in, phát hành, quản lý và sử dụng tem điện tử rượu và tem điện tử thuốc lá",
+      "code": "31/2025/TT-BTC"
+    },
+    {
+      "title": "Thông tư 23/2021/TT-BTC",
+      "code": "23/2021/TT-BTC"
+    },
+    {
+      "title": "Nghị định 123/2020/NĐ-CP",
+      "code": "123/2020/NĐ-CP"
+    },
+    {
+      "title": "Luật 51/2005/QH11",
+      "code": "51/2005/QH11"
+    },
+    {
+      "title": "Nghị định số 70/2025/NĐ-CP ngày ngày 20 tháng 3 năm 2025 của Chính phủ sửa đổi, bổ sung một số điều của Nghị định số 123/2020/NĐ-CP ngày 19 tháng 10 năm 2020 của Chính phủ quy định về hóa đơn, chứng từ.",
+      "code": "70/2025/NĐ-CP"
+    },
+    {
+      "title": "Nghị định 105/2017/NĐ-CP",
+      "code": "105/2017/NĐ-CP"
+    }
+  ],
+  "legal_bases": [
+    {
+      "title": "Luật 67/2006/QH11",
+      "code": "67/2006/QH11"
+    },
+    {
+      "title": "Quy định chi tiết một số điều và biện pháp thi hành Luật Phòng, chống tác hại của thuốc lá về kinh doanh thuốc lá",
+      "code": "67/2013/NĐ-CP"
+    },
+    {
+      "title": "Luật Quản lý thuế",
+      "code": "38/2019/QH14"
+    },
+    {
+      "title": "Sửa đổi, bổ sung một số điều của Thông tư số 23/2021/TT-BTC ngày 30 tháng 3 năm 2021 của Bộ trưởng Bộ Tài chính hướng dẫn việc in, phát hành, quản lý và sử dụng tem điện tử rượu và tem điện tử thuốc lá",
+      "code": "31/2025/TT-BTC"
+    },
+    {
+      "title": "Thông tư 23/2021/TT-BTC",
+      "code": "23/2021/TT-BTC"
+    },
+    {
+      "title": "Nghị định 123/2020/NĐ-CP",
+      "code": "123/2020/NĐ-CP"
+    },
+    {
+      "title": "Luật 51/2005/QH11",
+      "code": "51/2005/QH11"
+    },
+    {
+      "title": "Nghị định số 70/2025/NĐ-CP ngày ngày 20 tháng 3 năm 2025 của Chính phủ sửa đổi, bổ sung một số điều của Nghị định số 123/2020/NĐ-CP ngày 19 tháng 10 năm 2020 của Chính phủ quy định về hóa đơn, chứng từ.",
+      "code": "70/2025/NĐ-CP"
+    },
+    {
+      "title": "Nghị định 105/2017/NĐ-CP",
+      "code": "105/2017/NĐ-CP"
+    }
+  ],
+  "faq": [
+    {
+      "question": "Có thể nộp qua kênh nào?",
+      "answer": "Các kênh hiện có: Trực tuyến."
+    },
+    {
+      "question": "Thời gian xử lý tham chiếu là bao lâu?",
+      "answer": "Thời gian xử lý tham chiếu hiện có là 1 ngày."
+    },
+    {
+      "question": "Kết quả chính của thủ tục là gì?",
+      "answer": "Kết quả chính được trích xuất là Tem điện tử thuốc lá nhập khẩu, tem điện tử rượu nhập khẩu được bàn giao cho doanh nghiệp, tổ chức để dán lên sản phẩm."
+    }
+  ],
+  "guidance": {
+    "highlight_documents": [
+      {
+        "bucket": "required",
+        "name": "Số lượng hồ sơ: 01 (bộ).",
+        "conditions": [],
+        "attachment_path": null
+      },
+      {
+        "bucket": "required",
+        "name": "Đơn đề nghị mua tem điện tử rượu/tem điện tử thuốc lá nhập khẩu theo Mẫu số 09/TEM ban hành theo Phụ lục 6 Thông tư 31/2025/TT-BTC ngày 31/5/2025 của Bộ Tài chính.",
+        "conditions": [],
+        "attachment_path": null
+      }
+    ],
+    "special_cases": [],
+    "common_errors": [
+      "Điền sai mẫu tờ khai hoặc chọn sai biểu mẫu đi kèm."
+    ],
+    "validation_hints": [
+      "Nên xác định trước kênh nộp hồ sơ để biết có cần bản giấy, bản điện tử hay xuất trình trực tiếp.",
+      "Nên xác định đúng nhóm đối tượng, mã số bảo hiểm và quyền lợi áp dụng trước khi nộp."
+    ]
+  },
+  "next_steps": {
+    "summary": "Nên xác định rõ đối tượng tham gia, quyền lợi hoặc nhu cầu điều chỉnh hồ sơ y tế trước khi nộp. Có thể chọn kênh nộp phù hợp: Trực tuyến. Hiện có khoảng 2 mục giấy tờ cần theo dõi trong checklist.",
+    "time_badge": "1 ngày",
+    "result_label": "Tem điện tử thuốc lá nhập khẩu, tem điện tử rượu nhập khẩu được bàn giao cho doanh nghiệp, tổ chức để dán lên sản phẩm",
+    "primary_channel": "online",
+    "channels": [
+      "online"
+    ]
+  },
+  "notes": [],
+  "provenance": {
+    "pipeline": "raw->structured->normalized->enriched->ui_api_payload",
+    "normalizer_version": "0.2.0",
+    "enricher_version": "0.2.0",
+    "mapping_notes": "excluded_from_clean_workflow_dataset",
+    "supported_group": true
+  }
+}

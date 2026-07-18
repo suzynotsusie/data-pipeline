@@ -1,0 +1,111 @@
+{
+  "schema_version": "1.0",
+  "enricher_version": "0.2.0",
+  "source": {
+    "procedure_code": "3.000465",
+    "title": "Cấp bản sao văn bằng, chứng chỉ từ sổ gốc",
+    "group_key": "hoc_tap",
+    "workflow_family": "education_study_workflow",
+    "subflow": "van_bang_chung_chi"
+  },
+  "experience": {
+    "entry_label": "Hỗ trợ giáo dục và học tập",
+    "overview_summary": "Thủ tục này thuộc nhóm giáo dục và học tập, thường liên quan đến hồ sơ đào tạo, văn bằng hoặc điều kiện học tập của người học. Kết quả thường nhận được là Bản sao văn bằng, chứng chỉ từ sổ gốc. Thời gian xử lý tham khảo: 1 ngày làm việc.",
+    "next_step_summary": "Nên rà trước thông tin người học, cơ sở đào tạo và loại kết quả cần xin xác nhận hoặc cấp lại. Có thể chọn kênh nộp phù hợp: Trực tiếp, Trực tuyến, Dịch vụ bưu chính. Hiện có khoảng 3 mục giấy tờ cần theo dõi trong checklist.",
+    "tone": "supportive_public_service"
+  },
+  "guidance": {
+    "highlight_documents": [
+      {
+        "bucket": "required",
+        "name": "Phiếu đề nghị cấp bản sao từ sổ gốc (theo Mẫu tại Phụ lục VI Thông tư số 10/2026/TT-BGDĐT, đính kèm theo Quyết định này)",
+        "conditions": [],
+        "attachment_path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/3_000465/PH%E1%BB%A4%20L%E1%BB%A4C%20IV.doc"
+      },
+      {
+        "bucket": "conditional",
+        "name": "Trường hợp người yêu cầu cấp bản sao văn bằng, chứng chỉ từ sổ gốc là người đại diện theo pháp luật, người đại diện theo ủy quyền của người được cấp bản chính văn bằng, chứng chỉ thì phải có giấy ủy quyền (đối với người được ủy quyền);",
+        "conditions": [
+          "Trường hợp người yêu cầu cấp bản sao văn bằng, chứng chỉ từ sổ gốc là người đại diện theo pháp luật, người đại diện theo ủy quyền của người được cấp bản chính văn bằng, chứng chỉ thì phải có giấy ủy quyền (đối với người được ủy quyền);"
+        ],
+        "attachment_path": null
+      },
+      {
+        "bucket": "conditional",
+        "name": "Trường hợp người yêu cầu cấp bản sao văn bằng, chứng chỉ từ sổ gốc là cha, mẹ, con; vợ/chồng; anh, chị, em ruột; người thừa kế khác của người được cấp văn bằng, chứng chỉ (trong trường hợp người được cấp văn bằng, chứng chỉ đã chết hoặc mất năng lực dân sự) thì phải có giấy tờ hoặc được dẫn trích xuất thông tin từ cơ sở dữ liệu của cơ quan có thẩm quyền chứng minh quan hệ với người được cấp văn bằng, chứng chỉ.(Cơ quan giải quyết TTHC khai thác, sử dụng thông tin đã có trong Cơ sở dữ liệu quốc gia về CSDL quốc gia về dân cư để thay thế thành phần hồ sơ bản sao có chứng thực hoặc bản sao kèm theo bản gốc để đối chiếu của giấy chứng nhận đăng ký doanh nghiệp đối với cơ sở đào tạo, bồi dưỡng ngắn hạn có vốn đầu tư nước ngoài. Trường hợp Cơ quan giải quyết TTHC không khai thác được hoặc khai thác không đầy đủ dữ liệu về CSDL quốc gia về dân cư trong Cơ sở dữ liệu quốc gia theo quy định tại Điều 8 Nghị quyết 66.7/2025/NQ-CP ngày 15/11/2025 của Chính phủ quy định cắt giảm, đơn giản hóa thủ tục hành chính dựa trên dữ liệu)",
+        "conditions": [
+          "Trường hợp người yêu cầu cấp bản sao văn bằng, chứng chỉ từ sổ gốc là cha, mẹ, con; vợ/chồng; anh, chị, em ruột; người thừa kế khác của người được cấp văn bằng, chứng chỉ (trong trường hợp người được cấp văn bằng, chứng chỉ đã chết hoặc mất năng lực dân sự) thì phải có giấy tờ hoặc được dẫn trích xuất thông tin từ cơ sở dữ liệu của cơ quan có thẩm quyền chứng minh quan hệ với người được cấp văn bằng, chứng chỉ.(Cơ quan giải quyết TTHC khai thác, sử dụng thông tin đã có trong Cơ sở dữ liệu quốc gia về CSDL quốc gia về dân cư để thay thế thành phần hồ sơ bản sao có chứng thực hoặc bản sao kèm theo bản gốc để đối chiếu của giấy chứng nhận đăng ký doanh nghiệp đối với cơ sở đào tạo, bồi dưỡng ngắn hạn có vốn đầu tư nước ngoài. Trường hợp Cơ quan giải quyết TTHC không khai thác được hoặc khai thác không đầy đủ dữ liệu về CSDL quốc gia về dân cư trong Cơ sở dữ liệu quốc gia theo quy định tại Điều 8 Nghị quyết 66.7/2025/NQ-CP ngày 15/11/2025 của Chính phủ quy định cắt giảm, đơn giản hóa thủ tục hành chính dựa trên dữ liệu)"
+        ],
+        "attachment_path": null
+      }
+    ],
+    "special_cases": [
+      "Có yếu tố nước ngoài",
+      "Có thể cần giấy tờ ủy quyền",
+      "Có kiểm tra dữ liệu cư trú/định danh",
+      "Có thể cần đối chiếu thông tin thửa đất hoặc giấy chứng nhận",
+      "Có thể cần xác minh hồ sơ học tập hoặc văn bằng"
+    ],
+    "common_errors": [
+      "Thiếu giấy tờ hoặc nội dung ủy quyền phù hợp.",
+      "Thiếu giấy tờ hợp pháp hóa hoặc giấy tờ nhân thân của phía nước ngoài.",
+      "Điền sai mẫu tờ khai hoặc chọn sai biểu mẫu đi kèm.",
+      "Thông tin thửa đất, tài sản hoặc giấy chứng nhận chưa khớp với hồ sơ hiện có.",
+      "Thiếu minh chứng học tập, văn bằng hoặc xác nhận từ cơ sở đào tạo."
+    ],
+    "validation_hints": [
+      "Nên xác định trước kênh nộp hồ sơ để biết có cần bản giấy, bản điện tử hay xuất trình trực tiếp.",
+      "Có mẫu biểu đính kèm, nên kiểm tra đúng biểu mẫu trước khi nộp.",
+      "Nên rà lại thông tin người học, cơ sở đào tạo và loại xác nhận hoặc văn bằng cần xin."
+    ]
+  },
+  "intake": {
+    "candidate_input_fields": [
+      {
+        "field_id": "learner_full_name",
+        "label": "Tên người học",
+        "field_type": "text",
+        "required": true
+      },
+      {
+        "field_id": "education_record_type",
+        "label": "Loại hồ sơ học tập cần xử lý",
+        "field_type": "text",
+        "required": true
+      },
+      {
+        "field_id": "education_institution",
+        "label": "Cơ sở đào tạo liên quan",
+        "field_type": "text",
+        "required": false
+      },
+      {
+        "field_id": "submission_channel_preference",
+        "label": "Kênh nộp dự kiến",
+        "field_type": "enum",
+        "required": false
+      },
+      {
+        "field_id": "certificate_or_degree_type",
+        "label": "Loại văn bằng/chứng chỉ",
+        "field_type": "text",
+        "required": false
+      }
+    ],
+    "suggested_clarifying_questions": [
+      "Bạn đang cần xử lý hồ sơ học tập, văn bằng hay xác nhận nào?",
+      "Người học và cơ sở đào tạo liên quan đã xác định rõ chưa?"
+    ]
+  },
+  "ui_hints": {
+    "primary_channel": "online",
+    "result_label": "Bản sao văn bằng, chứng chỉ từ sổ gốc",
+    "time_badge": "1 ngày làm việc",
+    "document_count_badge": 3
+  },
+  "provenance": {
+    "generator": "workflow_domain_enricher",
+    "derivation_mode": "rule_based_semantic_enrichment",
+    "supported_group": true
+  }
+}

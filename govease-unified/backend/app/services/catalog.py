@@ -84,6 +84,14 @@ class CitizenCatalogService:
         group = next((item for item in self.groups if item.key == group_key), None)
         return group.preferred_workflow_family if group else None
 
+    def resolve_workflow_domain(self, group_key: str | None) -> str | None:
+        if not group_key:
+            return None
+        rows = self.group_index.get(group_key, [])
+        if any(_as_bool(row.get("in_workflow_dataset") or row.get("workflow_data_available")) for row in rows):
+            return group_key
+        return self.preferred_workflow_family(group_key)
+
     def list_procedures_for_group(self, group_key: str) -> list[dict[str, Any]]:
         return self._group_procedure_cards(group_key)
 
@@ -98,7 +106,7 @@ class CitizenCatalogService:
                     "code": code,
                     "title": self._pick_title(record, full_data),
                     "source_url": self._pick_source_url(record, full_data),
-                    "field": full_data.get("LÄ©nh vá»±c") or full_data.get("field"),
+                    "field": full_data.get("Lĩnh vực") or full_data.get("field"),
                     "raw_data_available": self._has_raw_data(code),
                     "normalized_available": _as_bool(row.get("normalized_available")),
                     "detail_level": record.detail_level if record else None,
@@ -113,7 +121,7 @@ class CitizenCatalogService:
     def _pick_title(self, record: ProcedureRecord | None, full_data: dict[str, str]) -> str:
         if record and record.title:
             return record.title
-        return full_data.get("TÃªn", "")
+        return full_data.get("Tên", "")
 
     def _pick_source_url(self, record: ProcedureRecord | None, full_data: dict[str, str]) -> str:
         if record and record.source_url:
@@ -156,7 +164,7 @@ class CitizenCatalogService:
             rows = list(csv.DictReader(handle))
         result: dict[str, dict[str, str]] = {}
         for row in rows:
-            code = str(row.get("MÃ£ sá»‘") or "").strip()
+            code = str(row.get("Mã số") or "").strip()
             if code:
                 result[code] = row
         return result

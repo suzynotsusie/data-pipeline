@@ -1,0 +1,275 @@
+{
+  "schema_version": "1.0",
+  "normalizer_version": "0.2.0",
+  "source": {
+    "procedure_code": "1.012895",
+    "title": "Thẩm định giá bán, giá thuê mua nhà ở xã hội/nhà ở cho lực lượng vũ trang nhân dân",
+    "raw_structured_parser_version": "0.1.0",
+    "field": "Nhà ở và công sở"
+  },
+  "procedure": {
+    "level": "Cấp tỉnh",
+    "procedure_type": "TTHC được luật giao quy định chi tiết",
+    "target_users": [
+      "Doanh nghiệp Việt Nam",
+      "Công dân Việt Nam",
+      "Tổ chức (không bao gồm doanh nghiệp",
+      "HTX)"
+    ],
+    "authorities": [
+      "Ủy ban nhân dân cấp tỉnh"
+    ],
+    "receiving_places": []
+  },
+  "submission": {
+    "channels": [
+      "in_person",
+      "online",
+      "postal"
+    ],
+    "methods": [
+      {
+        "method_id": "method_1",
+        "channel": "online",
+        "processing_time_text": "30 ngày",
+        "fee_text": null,
+        "description": null,
+        "is_online": true,
+        "is_postal": false,
+        "is_in_person": false
+      },
+      {
+        "method_id": "method_2",
+        "channel": "postal",
+        "processing_time_text": "30 ngày",
+        "fee_text": null,
+        "description": null,
+        "is_online": false,
+        "is_postal": true,
+        "is_in_person": false
+      },
+      {
+        "method_id": "method_3",
+        "channel": "in_person",
+        "processing_time_text": "30 ngày",
+        "fee_text": null,
+        "description": null,
+        "is_online": false,
+        "is_postal": false,
+        "is_in_person": true
+      }
+    ],
+    "timing_summary": {
+      "unique_processing_times": [
+        "30 ngày"
+      ],
+      "method_count": 3
+    }
+  },
+  "documents": {
+    "required": [
+      {
+        "document_id": "h_s_ph_p_l_c_a_d_n_g_m_b_n_sao_c_ch_ng_th_c_gi_y_t_ch_p_thu_n_ch_tr_ng_u_t_quy_t_nh_giao_t_ho_c_gi_y_ch_ng_nh_n_quy_n_s_d_ng_t_ho_c_gi_y_t_ch_ng_minh_quy_n_s_d_ng_t_kh_c_ph_duy_t_quy_ho_ch_chi_ti_t_t_l_1_500_gi_y_ph_p_x_y_d_ng_v_c_c_gi_y_t_kh_c_c_li_n_quan",
+        "name": "Hồ sơ pháp lý của dự án (gồm bản sao có chứng thực giấy tờ: Chấp thuận chủ trương đầu tư; Quyết định giao đất hoặc Giấy chứng nhận quyền sử dụng đất hoặc Giấy tờ chứng minh quyền sử dụng đất khác; phê duyệt quy hoạch chi tiết tỷ lệ 1/500; Giấy phép xây dựng và các giấy tờ khác có liên quan);",
+        "group_name": "default",
+        "group_type": "unknown",
+        "original_count": "1",
+        "copy_count": "1",
+        "conditions": [],
+        "attachment_label": null,
+        "attachment_path": null
+      },
+      {
+        "document_id": "n_ngh_th_m_nh_gi_theo_m_u",
+        "name": "Đơn đề nghị thẩm định giá theo mẫu;",
+        "group_name": "default",
+        "group_type": "unknown",
+        "original_count": "1",
+        "copy_count": "1",
+        "conditions": [],
+        "attachment_label": "DON THAMDINH GIA BAN GIA THUE GIA THUE MUA NOXH LLVT.docx",
+        "attachment_path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/1_012895/DON%20THAMDINH%20GIA%20BAN%20GIA%20THUE%20GIA%20THUE%20MUA%20NOXH%20LLVT.docx"
+      },
+      {
+        "document_id": "ph_ng_n_x_c_nh_gi_b_n_gi_thu_mua_nh_x_h_i_do_ch_u_t_x_y_d_ng",
+        "name": "Phương án xác định giá bán, giá thuê mua nhà ở xã hội do chủ đầu tư xây dựng.",
+        "group_name": "default",
+        "group_type": "unknown",
+        "original_count": "1",
+        "copy_count": "1",
+        "conditions": [],
+        "attachment_label": null,
+        "attachment_path": null
+      }
+    ],
+    "conditional": [],
+    "presented": [],
+    "notes": [],
+    "forms": [
+      {
+        "name": "Đơn đề nghị thẩm định giá theo mẫu;",
+        "attachment_label": "DON THAMDINH GIA BAN GIA THUE GIA THUE MUA NOXH LLVT.docx",
+        "attachment_path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/1_012895/DON%20THAMDINH%20GIA%20BAN%20GIA%20THUE%20GIA%20THUE%20MUA%20NOXH%20LLVT.docx"
+      }
+    ],
+    "empty_groups": [],
+    "document_count": 3
+  },
+  "process": {
+    "steps": [
+      {
+        "step_id": "step_1",
+        "title": null,
+        "content": "1. - Chủ đầu tư trực tiếp nộp 01 bộ hồ sơ (bản sao có chứng thực) đến cơ quan chuyên môn của Ủy ban nhân dân cấp tỉnh nơi có dự án hoặc nộp hồ sơ trực tuyến qua cổng dịch vụ công cấp tỉnh nơi có dự án để đề nghị tổ chức thẩm định giá bán, giá thuê mua nhà ở xã hội/nhà ở cho lực lượng vũ trang nhân dân do mình đầu tư xây dựng.",
+        "actor": "authority",
+        "channel_hint": "trực tuyến",
+        "time_hint": null
+      },
+      {
+        "step_id": "step_2",
+        "title": null,
+        "content": "Cơ quan chuyên môn của Ủy ban nhân dân cấp tỉnh nơi có dự án thực hiện việc thẩm định giá bán, giá thuê mua nhà ở xã hội do chủ đầu tư đề nghị theo quy định sau:",
+        "actor": "authority",
+        "channel_hint": null,
+        "time_hint": null
+      },
+      {
+        "step_id": "step_3",
+        "title": null,
+        "content": "- Cơ quan chuyên môn của Ủy ban nhân dân cấp tỉnh nơi có dự án tổ chức thẩm định và chịu trách nhiệm trước Ủy ban nhân dân cấp tỉnh về kết quả và thời hạn thực hiện thẩm định.",
+        "actor": "authority",
+        "channel_hint": null,
+        "time_hint": null
+      },
+      {
+        "step_id": "step_4",
+        "title": null,
+        "content": "Trường hợp chủ đầu tư đã hoàn thành xong việc xây dựng nhà ở xã hội và đã được kiểm toán hoặc quyết toán về chi phí của dự án theo quy định thì Cơ quan chuyên môn của Ủy ban nhân dân cấp tỉnh nơi có dự án có thể căn cứ vào báo cáo kiểm toán, quyết định phê duyệt quyết toán để thẩm định giá bán, giá cho thuê mua nhà ở xã hội của dự án.",
+        "actor": "authority",
+        "channel_hint": null,
+        "time_hint": null
+      },
+      {
+        "step_id": "step_5",
+        "title": null,
+        "content": "- Trong thời hạn 30 ngày, kể từ ngày nhận được Hồ sơ hợp lệ đề nghị thẩm định giá của chủ đầu tư, Cơ quan chuyên môn của Ủy ban nhân dân cấp tỉnh nơi có dự án có trách nhiệm tổ chức thẩm định và có văn bản thông báo kết quả thẩm định cho chủ đầu tư, trong đó nêu rõ các nội dung đồng ý và nội dung cần chỉnh sửa (nếu có).",
+        "actor": "authority",
+        "channel_hint": null,
+        "time_hint": "30 ngày"
+      },
+      {
+        "step_id": "step_6",
+        "title": null,
+        "content": "Căn cứ văn bản thông báo kết quả thẩm định, chủ đầu tư ban hành giá bán, giá cho thuê mua nhà ở xã hội của dự án trên nguyên tắc không được cao hơn giá đã được thẩm định.",
+        "actor": "user",
+        "channel_hint": null,
+        "time_hint": null
+      },
+      {
+        "step_id": "step_7",
+        "title": null,
+        "content": "- Nếu quá thời hạn quy định tại điểm b khoản này mà Cơ quan chuyên môn của Ủy ban nhân dân cấp tỉnh nơi có dự án không có văn bản thông báo kết quả thẩm định thì chủ đầu tư được quyền ban hành giá theo phương án giá đã trình thẩm định hoặc giá đề nghị trong hồ sơ dự thầu và ký Hợp đồng mua bán, thuê mua nhà ở xã hội với khách hàng, nhưng trước khi ký Hợp đồng chủ đầu tư phải có trách nhiệm gửi bảng giá bán, giá cho thuê mua nhà ở xã hội do chủ đầu tư ban hành đến Sở Xây dựng địa phương để theo dõi.",
+        "actor": "authority",
+        "channel_hint": null,
+        "time_hint": null
+      },
+      {
+        "step_id": "step_8",
+        "title": null,
+        "content": "- Trong thời hạn 60 ngày kể từ ngày quá thời hạn quy định tại điểm b khoản này thì Cơ quan chuyên môn của Ủy ban nhân dân cấp tỉnh nơi có dự án phải hoàn thành việc thẩm định giá bán, giá thuê mua nhà ở xã hội và có văn bản thông báo kết quả thẩm định tới chủ đầu tư.",
+        "actor": "authority",
+        "channel_hint": null,
+        "time_hint": "60 ngày"
+      },
+      {
+        "step_id": "step_9",
+        "title": null,
+        "content": "Khi có văn bản thông báo kết quả thẩm định mà giá thẩm định cao hơn giá do chủ đầu tư đã ký Hợp đồng thì chủ đầu tư không được thu thêm; trường hợp thấp hơn thì chủ đầu tư phải ký lại Hợp đồng hoặc điều chỉnh bổ sung Phụ lục Hợp đồng và phải hoàn trả lại phần chênh lệch cho người mua, thuê mua nhà ở.",
+        "actor": "user",
+        "channel_hint": null,
+        "time_hint": null
+      },
+      {
+        "step_id": "step_10",
+        "title": null,
+        "content": "- Cơ quan chuyên môn của Ủy ban nhân dân cấp tỉnh có trách nhiệm công bố công khai giá thẩm định tại Trang Thông tin điện tử của cơ quan nhà ở cấp tỉnh (sau 15 ngày kể từ ngày có kết quả thẩm định); chủ đầu tư dự án công bố công khai giá thẩm định, giá bán, giá thuê mua nhà ở xã hội tại dự án, trên Trang thông tin điện tử của chủ đầu tư, của dự án (nếu có).",
+        "actor": "authority",
+        "channel_hint": null,
+        "time_hint": "15 ngày"
+      },
+      {
+        "step_id": "step_11",
+        "title": null,
+        "content": "- Sau khi dự án đầu tư xây dựng nhà ở xã hội hoàn thành đưa vào sử dụng, chủ đầu tư thực hiện kiểm toán, phê duyệt quyết toán về chi phí của dự án theo quy định và gửi 01 bộ hồ sơ (bản sao có chứng thực) đến cơ quan chuyên môn của Ủy ban nhân dân cấp tỉnh nơi có dự án để kiểm tra giá bán, giá thuê mua nhà ở xã hội.",
+        "actor": "authority",
+        "channel_hint": null,
+        "time_hint": null
+      },
+      {
+        "step_id": "step_12",
+        "title": null,
+        "content": "Trường hợp giá bán, giá thuê mua nhà ở xã hội theo kết quả kiểm toán, phê duyệt quyết toán cao hơn giá do chủ đầu tư đã ký Hợp đồng thì chủ đầu tư không được thu thêm; trường hợp thấp hơn thì chủ đầu tư phải ký lại Hợp đồng hoặc điều chỉnh bổ sung Phụ lục Hợp đồng và phải hoàn trả lại phần chênh lệch cho người mua, thuê mua nhà ở.",
+        "actor": "user",
+        "channel_hint": null,
+        "time_hint": null
+      },
+      {
+        "step_id": "step_13",
+        "title": null,
+        "content": "- Trường hợp chủ đầu tư sử dụng giá trúng đấu thầu thì không phải thực hiện thẩm định lại giá bán, giá thuê mua nhà ở xã hội/nhà ở cho lực lượng vũ trang nhân dân theo quy định.",
+        "actor": "user",
+        "channel_hint": null,
+        "time_hint": null
+      }
+    ],
+    "step_count": 13,
+    "notes": []
+  },
+  "eligibility": {
+    "conditions": [],
+    "has_conditions": false
+  },
+  "results": {
+    "items": [
+      {
+        "name": "Văn bản thông báo kết quả thẩm định cho chủ đầu tư",
+        "result_code": "KQ.G17.000199",
+        "raw_text": "Văn bản thông báo kết quả thẩm định cho chủ đầu tư"
+      }
+    ],
+    "primary_result": {
+      "name": "Văn bản thông báo kết quả thẩm định cho chủ đầu tư",
+      "result_code": "KQ.G17.000199",
+      "raw_text": "Văn bản thông báo kết quả thẩm định cho chủ đầu tư"
+    }
+  },
+  "legal_basis": {
+    "items": [
+      {
+        "title": "Luật Nhà ở số 27/2023/QH15",
+        "code": "27/2023/QH15"
+      },
+      {
+        "title": "Nghị định số 100/2024/NĐ-CP ngày 26 tháng 7 năm 2024 của Chính phủ quy định chi tiết một số điều của Luật Nhà ở về phát triển và quản lý nhà ở xã hội",
+        "code": "100/2024/NĐ-CP"
+      }
+    ],
+    "count": 2
+  },
+  "attachments": [
+    {
+      "label": "DON THAMDINH GIA BAN GIA THUE GIA THUE MUA NOXH LLVT.docx",
+      "path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/1_012895/DON%20THAMDINH%20GIA%20BAN%20GIA%20THUE%20GIA%20THUE%20MUA%20NOXH%20LLVT.docx",
+      "source_section": "Thành phần hồ sơ",
+      "document_name": "Đơn đề nghị thẩm định giá theo mẫu;"
+    }
+  ],
+  "signals": {
+    "raw_parse_warnings": [],
+    "missing_documents": false,
+    "documents_section_present": true,
+    "documents_declared_empty": false,
+    "documents_only_in_notes": false,
+    "missing_results": false
+  }
+}

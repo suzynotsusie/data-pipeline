@@ -1,0 +1,109 @@
+{
+  "schema_version": "1.0",
+  "enricher_version": "0.2.0",
+  "source": {
+    "procedure_code": "2.001682",
+    "title": "Đăng ký chỉ định cơ sở kiểm nghiệm thực phẩm phục vụ quản lý nhà nước",
+    "group_key": "suc_khoe_y_te",
+    "workflow_family": null,
+    "subflow": null
+  },
+  "experience": {
+    "entry_label": "Hỗ trợ y tế và bảo hiểm",
+    "overview_summary": "Thủ tục này thuộc nhóm y tế, thường cần đối chiếu thông tin người bệnh, đơn vị tiếp nhận hoặc quyền lợi chuyên ngành. Kết quả thường nhận được là QUYẾT ĐỊNH VỀ VIỆC CHỈ ĐỊNH CƠ SỞ KIỂM NGHIỆM THỰC PHẨM PHỤC VỤ QUẢN LÝ NHÀ NƯỚC VỀ AN TOÀN THỰC PHẨM. Thời gian xử lý tham khảo: 45 ngày làm việc.",
+    "next_step_summary": "Nên xác định rõ đối tượng tham gia, quyền lợi hoặc nhu cầu điều chỉnh hồ sơ y tế trước khi nộp. Có thể chọn kênh nộp phù hợp: Trực tiếp. Hiện có khoảng 5 mục giấy tờ cần theo dõi trong checklist.",
+    "tone": "supportive_public_service"
+  },
+  "guidance": {
+    "highlight_documents": [
+      {
+        "bucket": "required",
+        "name": "Tài liệu, hồ sơ kỹ thuật và các quy trình liên quan đến chỉ tiêu/phép thử đăng ký chỉ định.",
+        "conditions": [],
+        "attachment_path": null
+      },
+      {
+        "bucket": "required",
+        "name": "Quyết định thành lập hoặc Giấy chứng nhận đăng ký kinh doanh (bản sao có chứng thực);",
+        "conditions": [],
+        "attachment_path": null
+      },
+      {
+        "bucket": "required",
+        "name": "Hồ sơ năng lực: - Danh sách, hồ sơ trang thiết bị chính, cơ sở hạ tầng (phù hợp nội dung báo cáo năng lực hoạt động cơ sở kiểm nghiệm theo mẫu quy định tại Phụ lục 2 - TTLT số 20/2013/TTLT-BYT-BCT-BNNPTNT); - Danh sách, hồ sơ kiểm nghiệm viên tương ứng với lĩnh vực đăng ký chỉ định kèm theo bản sao có chứng thực các chứng chỉ chuyên môn; - Các tài liệu chứng minh về bảo đảm chất lượng kiểm nghiệm: kế hoạch, kết quả thử nghiệm thành thạo hoặc so sánh liên phòng; Báo cáo kết quả kiểm tra thành thạo tay nghề của kiểm nghiệm viên đối với chỉ tiêu/phép thử đăng ký chỉ định; - Báo cáo năng lực cơ sở kiểm nghiệm theo mẫu quy định tại Phụ lục 2 - TTLT số 20/2013/TTLT-BYT-BCT-BNNPTNT; - Mẫu Phiếu kết quả kiểm nghiệm theo quy định tại Phụ lục 3 - TTLT số 20/2013/TTLT-BYT-BCT-BNNPTNT; - Kết quả hoạt động kiểm nghiệm đối với lĩnh vực đăng ký chỉ định trong mười hai (12) tháng gần nhất theo mẫu quy định tại Phụ lục 4 - TTLT số 20/2013/TTLT-BYT-BCT-BNNPTNT.",
+        "conditions": [],
+        "attachment_path": null
+      },
+      {
+        "bucket": "required",
+        "name": "Đơn đăng ký chỉ định cơ sở kiểm nghiệm theo mẫu quy định tại Phụ lục 1 - TTLT số 20/2013/TTLT-BYT-BCT-BNNPTNT;",
+        "conditions": [],
+        "attachment_path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/2_001682/DKchidinhgiahanchidinh.docx"
+      },
+      {
+        "bucket": "conditional",
+        "name": "Cơ quan giải quyết TTHC khai thác, sử dụng thông tin đã có trong Cơ sở dữ liệu quốc gia về đăng ký doanh nghiệp để thay thế thành phần hồ sơ Bản sao giấy chứng nhận đăng ký doanh nghiệp. Trường hợp Cơ quan giải quyết TTHC không khai thác được hoặc khai thác không đầy đủ dữ liệu doanh nghiệp trên Cơ sở dữ liệu quốc gia về đăng ký doanh nghiệp, Cơ quan giải quyết TTHC yêu cầu doanh nghiệp bổ sung Bản sao Giấy chứng nhận đăng ký doanh nghiệp theo quy định tại Điều 8 Nghị quyết 66.7/2025/NQ-CP ngày 15/11/2025 của Chính phủ quy định cắt giảm, đơn giản hóa thủ tục hành chính dựa trên dữ liệu",
+        "conditions": [
+          "Cơ quan giải quyết TTHC khai thác, sử dụng thông tin đã có trong Cơ sở dữ liệu quốc gia về đăng ký doanh nghiệp để thay thế thành phần hồ sơ Bản sao giấy chứng nhận đăng ký doanh nghiệp. Trường hợp Cơ quan giải quyết TTHC không khai thác được hoặc khai thác không đầy đủ dữ liệu doanh nghiệp trên Cơ sở dữ liệu quốc gia về đăng ký doanh nghiệp, Cơ quan giải quyết TTHC yêu cầu doanh nghiệp bổ sung Bản sao Giấy chứng nhận đăng ký doanh nghiệp theo quy định tại Điều 8 Nghị quyết 66.7/2025/NQ-CP ngày 15/11/2025 của Chính phủ quy định cắt giảm, đơn giản hóa thủ tục hành chính dựa trên dữ liệu"
+        ],
+        "attachment_path": null
+      }
+    ],
+    "special_cases": [
+      "Có kiểm tra dữ liệu cư trú/định danh",
+      "Có thể cần đối chiếu thông tin thửa đất hoặc giấy chứng nhận"
+    ],
+    "common_errors": [
+      "Điền sai mẫu tờ khai hoặc chọn sai biểu mẫu đi kèm.",
+      "Thông tin thửa đất, tài sản hoặc giấy chứng nhận chưa khớp với hồ sơ hiện có."
+    ],
+    "validation_hints": [
+      "Nên xác định trước kênh nộp hồ sơ để biết có cần bản giấy, bản điện tử hay xuất trình trực tiếp.",
+      "Có mẫu biểu đính kèm, nên kiểm tra đúng biểu mẫu trước khi nộp.",
+      "Nên xác định đúng nhóm đối tượng, mã số bảo hiểm và quyền lợi áp dụng trước khi nộp."
+    ]
+  },
+  "intake": {
+    "candidate_input_fields": [
+      {
+        "field_id": "request_subject",
+        "label": "Đối tượng làm thủ tục",
+        "field_type": "text",
+        "required": true
+      },
+      {
+        "field_id": "insurance_or_medical_need",
+        "label": "Nhu cầu bảo hiểm hoặc y tế",
+        "field_type": "text",
+        "required": true
+      },
+      {
+        "field_id": "submission_channel_preference",
+        "label": "Kênh nộp dự kiến",
+        "field_type": "enum",
+        "required": false
+      },
+      {
+        "field_id": "has_insurance_number",
+        "label": "Đã có mã BHXH/BHYT",
+        "field_type": "boolean",
+        "required": false
+      }
+    ],
+    "suggested_clarifying_questions": [
+      "Bạn đang muốn đăng ký, điều chỉnh hay xác nhận quyền lợi y tế hoặc bảo hiểm nào?",
+      "Bạn đã có mã BHXH/BHYT hoặc thông tin đơn vị tiếp nhận liên quan chưa?"
+    ]
+  },
+  "ui_hints": {
+    "primary_channel": "in_person",
+    "result_label": "QUYẾT ĐỊNH VỀ VIỆC CHỈ ĐỊNH CƠ SỞ KIỂM NGHIỆM THỰC PHẨM PHỤC VỤ QUẢN LÝ NHÀ NƯỚC VỀ AN TOÀN THỰC PHẨM",
+    "time_badge": "45 ngày làm việc",
+    "document_count_badge": 5
+  },
+  "provenance": {
+    "generator": "workflow_domain_enricher",
+    "derivation_mode": "rule_based_semantic_enrichment",
+    "supported_group": true
+  }
+}

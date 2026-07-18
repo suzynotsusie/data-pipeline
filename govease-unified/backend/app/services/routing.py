@@ -16,8 +16,7 @@ class CentralRouter:
         self.workflow_service = workflow_service
         self.disambiguator = IntakeDisambiguator(intent_parser)
         
-        # In a real scenario, this is dynamically loaded from data/workflows/
-        self.supported_workflow_domains = ["phuong_tien_nguoi_lai", "birth_registration", "residence_management"]
+        self.supported_workflow_domains = sorted(self.workflow_service.domains.keys())
 
     def process(self, session_id: str, message: str, current_session_state: dict[str, Any] | None = None) -> dict[str, Any]:
         

@@ -1,0 +1,260 @@
+{
+  "schema_version": "1.0",
+  "normalizer_version": "0.2.0",
+  "source": {
+    "procedure_code": "1.010000",
+    "title": "Cấp Giấy chứng nhận đăng ký phương tiện giao thông đường sắt",
+    "raw_structured_parser_version": "0.1.0",
+    "field": "Đường sắt"
+  },
+  "procedure": {
+    "level": "Cấp tỉnh, Cấp bộ/ngành",
+    "procedure_type": "TTHC được luật giao quy định chi tiết",
+    "target_users": [
+      "Doanh nghiệp có vốn đầu tư nước ngoài",
+      "Doanh nghiệp",
+      "Hợp tác xã",
+      "Tổ chức (không bao gồm doanh nghiệp",
+      "HTX)"
+    ],
+    "authorities": [
+      "Ủy ban nhân dân cấp tỉnh, Cục Đường sắt Việt Nam"
+    ],
+    "receiving_places": []
+  },
+  "submission": {
+    "channels": [
+      "in_person",
+      "online",
+      "postal"
+    ],
+    "methods": [
+      {
+        "method_id": "method_1",
+        "channel": "online",
+        "processing_time_text": "3 ngày làm việc",
+        "fee_text": null,
+        "description": null,
+        "is_online": true,
+        "is_postal": false,
+        "is_in_person": false
+      },
+      {
+        "method_id": "method_2",
+        "channel": "postal",
+        "processing_time_text": "3 ngày làm việc",
+        "fee_text": null,
+        "description": null,
+        "is_online": false,
+        "is_postal": true,
+        "is_in_person": false
+      },
+      {
+        "method_id": "method_3",
+        "channel": "in_person",
+        "processing_time_text": "3 ngày làm việc",
+        "fee_text": null,
+        "description": null,
+        "is_online": false,
+        "is_postal": false,
+        "is_in_person": true
+      }
+    ],
+    "timing_summary": {
+      "unique_processing_times": [
+        "3 ngày làm việc"
+      ],
+      "method_count": 3
+    }
+  },
+  "documents": {
+    "required": [
+      {
+        "document_id": "b_n_ch_nh_ho_c_b_n_i_n_t_n_ngh_c_p_gi_y_ch_ng_nh_n_ng_k_ph_ng_ti_n_c_a_ch_s_h_u_theo_m_u",
+        "name": "Bản chính hoặc bản điện tử đơn đề nghị cấp Giấy chứng nhận đăng ký phương tiện của chủ sở hữu theo mẫu",
+        "group_name": "*  Trường hợp phương tiện sản xuất, đóng mới, lắp ráp trong nước thành phần hồ sơ gồm:",
+        "group_type": "conditional",
+        "original_count": "1",
+        "copy_count": "0",
+        "conditions": [],
+        "attachment_label": "1. Phụ lục 1 cáp mới.docx",
+        "attachment_path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/1_010000/1.%20Ph%E1%BB%A5%20l%E1%BB%A5c%201%20c%C3%A1p%20m%E1%BB%9Bi.docx"
+      },
+      {
+        "document_id": "b_n_ch_nh_ho_c_b_n_sao_c_ch_ng_th_c_ho_c_b_n_i_n_t_ho_c_b_n_sao_i_n_t_t_khai_h_i_quan_d_ng_cho_ph_ng_ti_n_nh_p_kh_u_ho_c_t_khai_h_i_quan_c_th_ng_quan",
+        "name": "Bản chính hoặc bản sao có chứng thực hoặc bản điện tử hoặc bản sao điện tử tờ khai hải quan dùng cho phương tiện nhập khẩu hoặc tờ khai hải quan đã được thông quan.",
+        "group_name": "* Trường hợp phương tiện nhập khẩu thành phần hồ sơ gồm:",
+        "group_type": "conditional",
+        "original_count": "1",
+        "copy_count": "1",
+        "conditions": [],
+        "attachment_label": null,
+        "attachment_path": null
+      },
+      {
+        "document_id": "b_n_ch_nh_ho_c_b_n_i_n_t_n_ngh_c_p_gi_y_ch_ng_nh_n_ng_k_ph_ng_ti_n_c_a_ch_s_h_u_theo_m_u",
+        "name": "Bản chính hoặc bản điện tử đơn đề nghị cấp Giấy chứng nhận đăng ký phương tiện của chủ sở hữu theo mẫu.",
+        "group_name": "* Trường hợp phương tiện nhập khẩu thành phần hồ sơ gồm:",
+        "group_type": "conditional",
+        "original_count": "1",
+        "copy_count": "0",
+        "conditions": [],
+        "attachment_label": "2. Phụ lục 2 mẫu đơn, đề nghị  hỏng hoặc mất CNĐK.docx",
+        "attachment_path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/1_010000/2.%20Ph%E1%BB%A5%20l%E1%BB%A5c%202%20m%E1%BA%ABu%20%C4%91%C6%A1n%2C%20%C4%91%E1%BB%81%20ngh%E1%BB%8B%20%20h%E1%BB%8Fng%20ho%E1%BA%B7c%20m%E1%BA%A5t%20CN%C4%90K.docx"
+      },
+      {
+        "document_id": "b_n_ch_nh_ho_c_b_n_i_n_t_n_ngh_c_p_gi_y_ch_ng_nh_n_ng_k_ph_ng_ti_n_c_a_ch_s_h_u_theo_m_u_b_n_ch_nh_ho_c_b_n_sao_c_ch_ng_th_c_ho_c_b_n_i_n_t_ho_c_b_n_sao_i_n_t_h_p_ng_g_i_th_u_ho_c_h_p_ph_n_c_a_g_i_th_u_c_th_hi_n_vi_c_cung_c_p_ph_ng_ti_n_bi_n_b_n_b_n_giao_ph_ng_ti_n_cho_ch_s_h_u",
+        "name": "Bản chính hoặc bản điện tử đơn đề nghị cấp Giấy chứng nhận đăng ký phương tiện của chủ sở hữu theo mẫu. - Bản chính hoặc bản sao có chứng thực hoặc bản điện tử hoặc bản sao điện tử hợp đồng gói thầu hoặc hợp phần của gói thầu có thể hiện việc cung cấp phương tiện, biên bản bàn giao phương tiện cho chủ sở hữu.",
+        "group_name": "* Trường hợp không có hợp đồng mua bán, đóng mới, lắp ráp, hóa đơn riêng (do việc mua bán các phương tiện chỉ là hợp phần của gói thầu và không thể tách rời) thành phần hồ sơ gồm:",
+        "group_type": "conditional",
+        "original_count": "1",
+        "copy_count": "0",
+        "conditions": [],
+        "attachment_label": "1. Đơn cấp mới.docx",
+        "attachment_path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/1_010000/1.%20%C4%90%C6%A1n%20c%E1%BA%A5p%20m%E1%BB%9Bi.docx"
+      }
+    ],
+    "conditional": [
+      {
+        "document_id": "b_n_ch_nh_ho_c_b_n_sao_c_ch_ng_th_c_ho_c_b_n_i_n_t_ho_c_b_n_sao_i_n_t_c_c_gi_y_t_c_a_ph_ng_ti_n_bao_g_m_h_p_ng_mua_b_n_ng_m_i_l_p_r_p_cho_t_ng_ch_ng_t_n_p_l_ph_tr_c_b_n_u_c_quy_t_nh_i_u_chuy_n_ph_ng_ti_n_h_a_n_c_a_t_ch_c_c_nh_n_b_n_ph_ng_ti_n_n_u_ph_ng_ti_n_chuy_n_qua_nhi_u_t_ch_c_c_nh_n_th_khi_l_m_th_t_c_c_p_gi_y_ch_ng_nh_n_ng_k_ph_ng_ti_n_ch_c_n_h_a_n_c_a_t_ch_c_c_nh_n_b_n_cu_i_c_ng_i_v_i_c_c_gi_y_t_b_ng_ti_ng_n_c_ngo_i_th_ph_i_c_b_n_d_ch_ti_ng_vi_t_c_c_ng_ch_ng_d_ch_thu_t_k_m_theo_tr_ng_h_p_trong_c_ng_m_t_h_p_ng_mua_b_n_ng_m_i_l_p_r_p_cho_t_ng_ph_ng_ti_n_h_a_n_t_khai_h_i_quan_c_a_h_s_c_k_khai_nhi_u_ph_ng_ti_n_th_ch_s_h_u_c_tr_ch_nhi_m_cung_c_p_b_ng_k_khai_cho_t_ng_ph_ng_ti_n_ngh_c_c_p_gi_y_ch_ng_nh_n_ng_k",
+        "name": "Bản chính hoặc bản sao có chứng thực hoặc bản điện tử hoặc bản sao điện tử các giấy tờ của phương tiện bao gồm: hợp đồng mua bán, đóng mới, lắp ráp, cho, tặng; chứng từ đã nộp lệ phí trước bạ (nếu có); quyết định điều chuyển phương tiện; hóa đơn của tổ chức, cá nhân bán phương tiện (nếu phương tiện đã chuyển qua nhiều tổ chức, cá nhân thì khi làm thủ tục cấp Giấy chứng nhận đăng ký phương tiện chỉ cần hóa đơn của tổ chức, cá nhân bán cuối cùng); đối với các giấy tờ bằng tiếng nước ngoài thì phải có bản dịch tiếng Việt đã được công chứng dịch thuật kèm theo; Trường hợp trong cùng một hợp đồng mua bán, đóng mới, lắp ráp, cho, tặng phương tiện, hóa đơn, tờ khai hải quan của hồ sơ có kê khai nhiều phương tiện thì chủ sở hữu có trách nhiệm cung cấp bảng kê khai cho từng phương tiện đề nghị được cấp Giấy chứng nhận đăng ký.",
+        "group_name": "*  Trường hợp phương tiện sản xuất, đóng mới, lắp ráp trong nước thành phần hồ sơ gồm:",
+        "group_type": "conditional",
+        "original_count": "1",
+        "copy_count": "1",
+        "conditions": [
+          "Bản chính hoặc bản sao có chứng thực hoặc bản điện tử hoặc bản sao điện tử các giấy tờ của phương tiện bao gồm: hợp đồng mua bán, đóng mới, lắp ráp, cho, tặng; chứng từ đã nộp lệ phí trước bạ (nếu có); quyết định điều chuyển phương tiện; hóa đơn của tổ chức, cá nhân bán phương tiện (nếu phương tiện đã chuyển qua nhiều tổ chức, cá nhân thì khi làm thủ tục cấp Giấy chứng nhận đăng ký phương tiện chỉ cần hóa đơn của tổ chức, cá nhân bán cuối cùng); đối với các giấy tờ bằng tiếng nước ngoài thì phải có bản dịch tiếng Việt đã được công chứng dịch thuật kèm theo; Trường hợp trong cùng một hợp đồng mua bán, đóng mới, lắp ráp, cho, tặng phương tiện, hóa đơn, tờ khai hải quan của hồ sơ có kê khai nhiều phương tiện thì chủ sở hữu có trách nhiệm cung cấp bảng kê khai cho từng phương tiện đề nghị được cấp Giấy chứng nhận đăng ký."
+        ],
+        "attachment_label": null,
+        "attachment_path": null
+      },
+      {
+        "document_id": "b_n_ch_nh_ho_c_b_n_sao_c_ch_ng_th_c_ho_c_b_n_i_n_t_ho_c_b_n_sao_i_n_t_c_c_gi_y_t_c_a_ph_ng_ti_n_bao_g_m_h_p_ng_mua_b_n_ng_m_i_l_p_r_p_cho_t_ng_ch_ng_t_n_p_l_ph_tr_c_b_n_u_c_quy_t_nh_i_u_chuy_n_ph_ng_ti_n_h_a_n_c_a_t_ch_c_c_nh_n_b_n_ph_ng_ti_n_n_u_ph_ng_ti_n_chuy_n_qua_nhi_u_t_ch_c_c_nh_n_th_khi_l_m_th_t_c_c_p_gi_y_ch_ng_nh_n_ng_k_ph_ng_ti_n_ch_c_n_h_a_n_c_a_t_ch_c_c_nh_n_b_n_cu_i_c_ng_i_v_i_c_c_gi_y_t_b_ng_ti_ng_n_c_ngo_i_th_ph_i_c_b_n_d_ch_ti_ng_vi_t_c_c_ng_ch_ng_d_ch_thu_t_k_m_theo_tr_ng_h_p_trong_c_ng_m_t_h_p_ng_mua_b_n_ng_m_i_l_p_r_p_cho_t_ng_ph_ng_ti_n_h_a_n_t_khai_h_i_quan_c_a_h_s_c_k_khai_nhi_u_ph_ng_ti_n_th_ch_s_h_u_c_tr_ch_nhi_m_cung_c_p_b_ng_k_khai_cho_t_ng_ph_ng_ti_n_ngh_c_c_p_gi_y_ch_ng_nh_n_ng_k",
+        "name": "Bản chính hoặc bản sao có chứng thực hoặc bản điện tử hoặc bản sao điện tử các giấy tờ của phương tiện bao gồm: hợp đồng mua bán, đóng mới, lắp ráp, cho, tặng; chứng từ đã nộp lệ phí trước bạ (nếu có); quyết định điều chuyển phương tiện; hóa đơn của tổ chức, cá nhân bán phương tiện (nếu phương tiện đã chuyển qua nhiều tổ chức, cá nhân thì khi làm thủ tục cấp Giấy chứng nhận đăng ký phương tiện chỉ cần hóa đơn của tổ chức, cá nhân bán cuối cùng); đối với các giấy tờ bằng tiếng nước ngoài thì phải có bản dịch tiếng Việt đã được công chứng dịch thuật kèm theo; Trường hợp trong cùng một hợp đồng mua bán, đóng mới, lắp ráp, cho, tặng phương tiện, hóa đơn, tờ khai hải quan của hồ sơ có kê khai nhiều phương tiện thì chủ sở hữu có trách nhiệm cung cấp bảng kê khai cho từng phương tiện đề nghị được cấp Giấy chứng nhận đăng ký.",
+        "group_name": "* Trường hợp phương tiện nhập khẩu thành phần hồ sơ gồm:",
+        "group_type": "conditional",
+        "original_count": "1",
+        "copy_count": "1",
+        "conditions": [
+          "Bản chính hoặc bản sao có chứng thực hoặc bản điện tử hoặc bản sao điện tử các giấy tờ của phương tiện bao gồm: hợp đồng mua bán, đóng mới, lắp ráp, cho, tặng; chứng từ đã nộp lệ phí trước bạ (nếu có); quyết định điều chuyển phương tiện; hóa đơn của tổ chức, cá nhân bán phương tiện (nếu phương tiện đã chuyển qua nhiều tổ chức, cá nhân thì khi làm thủ tục cấp Giấy chứng nhận đăng ký phương tiện chỉ cần hóa đơn của tổ chức, cá nhân bán cuối cùng); đối với các giấy tờ bằng tiếng nước ngoài thì phải có bản dịch tiếng Việt đã được công chứng dịch thuật kèm theo; Trường hợp trong cùng một hợp đồng mua bán, đóng mới, lắp ráp, cho, tặng phương tiện, hóa đơn, tờ khai hải quan của hồ sơ có kê khai nhiều phương tiện thì chủ sở hữu có trách nhiệm cung cấp bảng kê khai cho từng phương tiện đề nghị được cấp Giấy chứng nhận đăng ký."
+        ],
+        "attachment_label": null,
+        "attachment_path": null
+      }
+    ],
+    "presented": [],
+    "notes": [],
+    "forms": [
+      {
+        "name": "Bản chính hoặc bản điện tử đơn đề nghị cấp Giấy chứng nhận đăng ký phương tiện của chủ sở hữu theo mẫu",
+        "attachment_label": "1. Phụ lục 1 cáp mới.docx",
+        "attachment_path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/1_010000/1.%20Ph%E1%BB%A5%20l%E1%BB%A5c%201%20c%C3%A1p%20m%E1%BB%9Bi.docx"
+      },
+      {
+        "name": "Bản chính hoặc bản điện tử đơn đề nghị cấp Giấy chứng nhận đăng ký phương tiện của chủ sở hữu theo mẫu.",
+        "attachment_label": "2. Phụ lục 2 mẫu đơn, đề nghị  hỏng hoặc mất CNĐK.docx",
+        "attachment_path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/1_010000/2.%20Ph%E1%BB%A5%20l%E1%BB%A5c%202%20m%E1%BA%ABu%20%C4%91%C6%A1n%2C%20%C4%91%E1%BB%81%20ngh%E1%BB%8B%20%20h%E1%BB%8Fng%20ho%E1%BA%B7c%20m%E1%BA%A5t%20CN%C4%90K.docx"
+      },
+      {
+        "name": "Bản chính hoặc bản điện tử đơn đề nghị cấp Giấy chứng nhận đăng ký phương tiện của chủ sở hữu theo mẫu. - Bản chính hoặc bản sao có chứng thực hoặc bản điện tử hoặc bản sao điện tử hợp đồng gói thầu hoặc hợp phần của gói thầu có thể hiện việc cung cấp phương tiện, biên bản bàn giao phương tiện cho chủ sở hữu.",
+        "attachment_label": "1. Đơn cấp mới.docx",
+        "attachment_path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/1_010000/1.%20%C4%90%C6%A1n%20c%E1%BA%A5p%20m%E1%BB%9Bi.docx"
+      }
+    ],
+    "empty_groups": [],
+    "document_count": 6
+  },
+  "process": {
+    "steps": [
+      {
+        "step_id": "step_1",
+        "title": null,
+        "content": "1.",
+        "actor": "user",
+        "channel_hint": null,
+        "time_hint": null
+      },
+      {
+        "step_id": "step_2",
+        "title": "a)",
+        "content": "a) Nộp hồ sơ TTHC: Chủ sở hữu phương tiện nộp 01 bộ hồ sơ làm thủ tục đề nghị cấp Giấy chứng nhận đăng ký phương tiện đến cơ quan cấp Giấy chứng nhận đăng ký phương tiện.",
+        "actor": "authority",
+        "channel_hint": null,
+        "time_hint": null
+      },
+      {
+        "step_id": "step_3",
+        "title": "b)",
+        "content": "b) Giải quyết TTHC: - Cơ quan cấp Giấy chứng nhận đăng ký phương tiện tiếp nhận và kiểm tra hồ sơ. + Trường hợp nộp hồ sơ trực tiếp tại bộ phận một cửa hoặc cổng dịch vụ công trực tuyến, cơ quan cấp Giấy chứng nhận đăng ký phương tiện tiếp nhận và kiểm tra hồ sơ. Trường hợp hồ sơ không đầy đủ theo quy định trong vòng 01 ngày làm việc kể từ ngày tiếp nhận hồ sơ, cơ quan cấp Giấy chứng nhận đăng ký phương tiện có trách nhiệm thông báo, hướng dẫn chủ sở hữu bổ sung, hoàn thiện hồ sơ theo đúng quy định. + Trường hợp nhận được hồ sơ qua hệ thống bưu chính, cơ quan nhà nước có thẩm quyền tiếp nhận và kiểm tra hồ sơ. Trường hợp hồ sơ không đầy đủ theo quy định, trong vòng 02 ngày làm việc kể từ ngày tiếp nhận hồ sơ, cơ quan cấp Giấy chứng nhận đăng ký phương tiện có trách nhiệm thông báo, hướng dẫn chủ sở hữu bổ sung, hoàn thiện hồ sơ theo đúng quy định. - Trong thời hạn 03 ngày làm việc kể từ ngày tiếp nhận hồ sơ đầy đủ, đúng quy định, cơ quan cấp Giấy chứng nhận đăng ký phương tiện có trách nhiệm cấp Giấy chứng nhận đăng ký phương tiện. Chủ sở hữu có trách nhiệm nộp lệ phí theo quy định. Trường hợp không cấp Giấy chứng nhận đăng ký phương tiện, trong thời hạn 03 ngày làm việc kể từ ngày tiếp nhận hồ sơ đầy đủ, đúng quy định, cơ quan cấp Giấy chứng nhận đăng ký phương tiện thông báo bằng văn bản cho chủ sở hữu và nêu rõ lý do.",
+        "actor": "authority",
+        "channel_hint": "trực tuyến",
+        "time_hint": "01 ngày làm việc"
+      }
+    ],
+    "step_count": 3,
+    "notes": []
+  },
+  "eligibility": {
+    "conditions": [],
+    "has_conditions": false
+  },
+  "results": {
+    "items": [
+      {
+        "name": "Cấp giấy chứng nhận đăng ký phương tiện giao thông đường sắt",
+        "result_code": "KQ.G17.000364",
+        "raw_text": "Cấp giấy chứng nhận đăng ký phương tiện giao thông đường sắt"
+      }
+    ],
+    "primary_result": {
+      "name": "Cấp giấy chứng nhận đăng ký phương tiện giao thông đường sắt",
+      "result_code": "KQ.G17.000364",
+      "raw_text": "Cấp giấy chứng nhận đăng ký phương tiện giao thông đường sắt"
+    }
+  },
+  "legal_basis": {
+    "items": [
+      {
+        "title": "Quy định về quản lý, khai thác vận tải đường sắt",
+        "code": "33/2025/TT-BXD"
+      },
+      {
+        "title": "Thông tư số 198/2016/TT-BTC của Bộ Tài chính: Quy định mức thu, chế độ thu, nộp, quản lý và sử dụng phí, lệ phí trong lĩnh vực đường thủy nội địa và đường sắt",
+        "code": "198/2016/TT/BTC"
+      },
+      {
+        "title": "Thông tư sửa đổi, bổ sung một số điều của các Thông tư để phân cấp, cắt giảm, đơn giản hóa thủ tục hành chính trong lĩnh vực đăng kiểm, đường bộ, đường sắt, quy hoạch đô thị và nông thôn thuộc phạm vi quản lý của Bộ Xây dựng",
+        "code": "Thông tư 24/2026/TT-BXD"
+      }
+    ],
+    "count": 3
+  },
+  "attachments": [
+    {
+      "label": "1. Phụ lục 1 cáp mới.docx",
+      "path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/1_010000/1.%20Ph%E1%BB%A5%20l%E1%BB%A5c%201%20c%C3%A1p%20m%E1%BB%9Bi.docx",
+      "source_section": "Thành phần hồ sơ",
+      "document_name": "Bản chính hoặc bản điện tử đơn đề nghị cấp Giấy chứng nhận đăng ký phương tiện của chủ sở hữu theo mẫu"
+    },
+    {
+      "label": "2. Phụ lục 2 mẫu đơn, đề nghị  hỏng hoặc mất CNĐK.docx",
+      "path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/1_010000/2.%20Ph%E1%BB%A5%20l%E1%BB%A5c%202%20m%E1%BA%ABu%20%C4%91%C6%A1n%2C%20%C4%91%E1%BB%81%20ngh%E1%BB%8B%20%20h%E1%BB%8Fng%20ho%E1%BA%B7c%20m%E1%BA%A5t%20CN%C4%90K.docx",
+      "source_section": "Thành phần hồ sơ",
+      "document_name": "Bản chính hoặc bản điện tử đơn đề nghị cấp Giấy chứng nhận đăng ký phương tiện của chủ sở hữu theo mẫu."
+    },
+    {
+      "label": "1. Đơn cấp mới.docx",
+      "path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/1_010000/1.%20%C4%90%C6%A1n%20c%E1%BA%A5p%20m%E1%BB%9Bi.docx",
+      "source_section": "Thành phần hồ sơ",
+      "document_name": "Bản chính hoặc bản điện tử đơn đề nghị cấp Giấy chứng nhận đăng ký phương tiện của chủ sở hữu theo mẫu. - Bản chính hoặc bản sao có chứng thực hoặc bản điện tử hoặc bản sao điện tử hợp đồng gói thầu hoặc hợp phần của gói thầu có thể hiện việc cung cấp phương tiện, biên bản bàn giao phương tiện cho chủ sở hữu."
+    }
+  ],
+  "signals": {
+    "raw_parse_warnings": [],
+    "missing_documents": false,
+    "documents_section_present": true,
+    "documents_declared_empty": false,
+    "documents_only_in_notes": false,
+    "missing_results": false
+  }
+}

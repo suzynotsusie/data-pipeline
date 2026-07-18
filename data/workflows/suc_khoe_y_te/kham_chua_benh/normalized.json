@@ -1,0 +1,87 @@
+{
+  "schema_version": "1.0",
+  "domain": "suc_khoe_y_te",
+  "updated_at": "2026-07-18",
+  "source_files": [
+    "C:\\Users\\ku060\\Downloads\\VAIC source\\data-pipeline\\main\\full-data.csv",
+    "C:\\Users\\ku060\\Downloads\\VAIC source\\data-pipeline\\raw_data"
+  ],
+  "subdomains": [
+    {
+      "subdomain_key": "kham_chua_benh",
+      "subdomain_label": "Khám, chữa bệnh",
+      "event_id": 312,
+      "summary": "Nhóm thủ tục chi trả trực tiếp chi phí khám, chữa bệnh bảo hiểm y tế và xác nhận không cùng chi trả trong năm cho người dân đi khám chữa bệnh.",
+      "entry_prompts": [
+        "Bạn đang cần thanh toán trực tiếp chi phí khám chữa bệnh BHYT hay xin giấy chứng nhận không cùng chi trả trong năm?"
+      ],
+      "procedure_count": 1,
+      "procedures": [
+        {
+          "procedure_code": "1.001656",
+          "procedure_title": "Thanh toán trực tiếp chi phí khám, chữa bệnh BHYT/Cấp giấy chứng nhận không cùng chi trả trong năm",
+          "subdomain_key": "kham_chua_benh",
+          "subdomain_label": "Khám, chữa bệnh",
+          "event_id": 312,
+          "field": "Thực hiện chính sách BHYT",
+          "agency": "Bảo hiểm xã hội tỉnh",
+          "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bfb-d76f-738b-9ca4-34d78e084f23",
+          "raw_data_file": "C:\\Users\\ku060\\Downloads\\VAIC source\\data-pipeline\\raw_data\\1_001656\\1_001656_procedure_detail.md",
+          "raw_data_available": true,
+          "operation_group": "chi_tra_bhyt_kham_chua_benh",
+          "operation_key": "thanh_toan_truc_tiep_chi_phi_kham_chua_benh_bhyt_cap_giay_chung_nhan_khong_cung_chi_tra_trong_nam",
+          "overview": "1. **Bước 1. Lập và nộp hồ sơ**",
+          "procedure_flow": "1. **Bước 1. Lập và nộp hồ sơ** Người bệnh hoặc thân nhân hoặc người đại diện hợp pháp theo quy định của pháp luật của người bệnh lập hồ sơ đề nghị thanh toán theo quy định tại mục 3.3 (Thành phần hồ sơ); nộp hồ sơ cho cơ quan BHXH. 2. **Bước 2.** Cơ quan BHXH tiếp nhận và thụ lý hồ sơ 3. **Bước 3. Nhận kết quả giải quyết** - Đối với trường hợp đề nghị thanh toán: nhận tiền theo phương thức đã đăng ký khi nộp hồ sơ. Trường hợp không được thanh toán: Văn bản nêu lý do không thanh toán của cơ quan BHXH. - Đối với trường hợp đề nghị cấp Giấy chứng nhận không cùng chi trả trong năm: nhận Giấy chứng nhận. Trường hợp không được cấp giấy chứng nhận, cơ quan BHXH có văn bản trả lời nêu rõ lý do.",
+          "requirements": "Không có thông tin",
+          "submission_methods": [
+            "Trực tuyến",
+            "Dịch vụ bưu chính",
+            "Trực tiếp"
+          ],
+          "processing_time_values": [
+            "40 ngày",
+            "40 ngày",
+            "40 ngày"
+          ],
+          "document_groups": [
+            {
+              "group_name": "1. Đối với việc thanh toán trực tiếp chi phí KCB",
+              "documents": [
+                {
+                  "Tên giấy tờ": "a) Bản chụp các giấy tờ sau (kèm bản chính để đối chiếu trong trường hợp nộp trực tiếp): + Thẻ BHYT và một trong các giấy tờ chứng minh về nhân thân có ảnh hợp lệ trong trường hợp thẻ BHYT chưa có ảnh (thẻ căn cước công dân/thẻ căn cước hoặc Chứng minh nhân dân còn giá trị sử dụng, Hộ chiếu, Thẻ Đảng viên, Thẻ Công an nhân dân, Thẻ quân nhân, Thẻ đoàn viên công đoàn, Thẻ học sinh, Thẻ sinh viên, Thẻ cựu chiến binh, Giấy phép lái xe hoặc một loại giấy tờ có ảnh hợp lệ khác); Giấy khai sinh, Giấy chứng sinh trong trường hợp trẻ em dưới 6 tuổi chưa có thẻ BHYT; + Giấy ra viện, phiếu khám bệnh hoặc sổ khám bệnh của lần KCB đề nghị thanh toán.",
+                  "Bản chính": "1",
+                  "Bản sao": "1",
+                  "Tệp đính kèm": "Không có"
+                },
+                {
+                  "Tên giấy tờ": "b) Bản chính: các hóa đơn, biên lai thu viện phí và các chứng từ liên quan khác. - Trong trường hợp người tham gia BHYT có nhu cầu sử dụng Hóa đơn, Biên lai bản chính vào mục đích khác, bộ phận một cửa của cơ quan BHXH chụp Hóa đơn, Biên lai và ký xác nhận trên bản chụp, trả bản chính cho người tham gia BHYT;  - Trường hợp người tham gia BHYT làm thất lạc Hóa đơn, Biên lai bản chính thì nộp bản chụp Hóa đơn, Biên lai hoặc bản chụp Hóa đơn, Biên lai có xác nhận của cơ sở khám bệnh, chữa bệnh nơi người có thẻ BHYT khám bệnh, chữa bệnh hoặc Bảng kê chi phí khám bệnh, chữa bệnh (theo Mẫu số 01/KBCB ban hành kèm theo Quyết định số 6556/QĐ-BYT ngày 30/10/2018 của Bộ Y tế); - Trong trường hồ sơ nộp qua dịch vụ bưu chính công ích hoặc qua hình thức trực tuyến là bản sao thì khi nhận kết quả phải xuất trình bản chính hoặc bản chụp có xác nhận của cơ sở KCB để đối chiếu.",
+                  "Bản chính": "1",
+                  "Bản sao": "1",
+                  "Tệp đính kèm": "Không có"
+                }
+              ]
+            },
+            {
+              "group_name": "2. Trường hợp đề nghị cấp giấy chứng nhận không cùng chi trả trong năm (có hoặc không kèm theo việc thanh toán trực tiếp chi phí KCB BHYT)",
+              "documents": [
+                {
+                  "Tên giấy tờ": "Hồ sơ tương tự như khoản 1 của mục 3.3 (Thành phần hồ sơ).",
+                  "Bản chính": "1",
+                  "Bản sao": "1",
+                  "Tệp đính kèm": "Không có"
+                }
+              ]
+            }
+          ],
+          "result_items": [
+            "Nhận tiền thanh toán chi phí KCB theo phương thức đăng ký (chuyển khoản hoặc nhận tiền mặt tại Phòng/bộ phận Tài chính - Kế toán của cơ quan BHXH) (Mã: `KQ.G24.000048`)",
+            "Giấy chứng nhận không cùng chi trả trong năm (nếu có đủ điều kiện) (Mã: `KQ.G24.000049`)",
+            "Trường hợp không được thanh toán hoặc không được cấp giấy Chứng nhận không cùng chi trả trong năm: nhận văn bản trả lời của cơ quan BHXH có nêu rõ lý do (Mã: `KQ.G24.000050`)"
+          ]
+        }
+      ]
+    }
+  ],
+  "subdomain_key": "kham_chua_benh",
+  "subdomain_label": "Khám, chữa bệnh"
+}

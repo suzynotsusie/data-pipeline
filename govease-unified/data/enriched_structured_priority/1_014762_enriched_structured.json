@@ -1,0 +1,93 @@
+{
+  "schema_version": "1.0",
+  "enricher_version": "0.2.0",
+  "source": {
+    "procedure_code": "1.014762",
+    "title": "Thủ tục Đánh giá định kỳ việc duy trì đáp ứng Thực hành tốt thử thuốc trên lâm sàng",
+    "group_key": "suc_khoe_y_te",
+    "workflow_family": null,
+    "subflow": null
+  },
+  "experience": {
+    "entry_label": "Hỗ trợ y tế và bảo hiểm",
+    "overview_summary": "Thủ tục này thuộc nhóm y tế, thường cần đối chiếu thông tin người bệnh, đơn vị tiếp nhận hoặc quyền lợi chuyên ngành. Kết quả thường nhận được là Giấy chứng nhận đạt GCP theo Mẫu số 05 quy định tại Phụ lục IV Thông tư số 50/2025/TT-BYT đối với cơ sở đã có đề nghị trong đơn đề nghị cấp giấy chứng nhận đủ điều kiện kinh doanh dược. Thời gian xử lý tham khảo: 30 ngày làm việc.",
+    "next_step_summary": "Nên xác định rõ đối tượng tham gia, quyền lợi hoặc nhu cầu điều chỉnh hồ sơ y tế trước khi nộp. Có thể chọn kênh nộp phù hợp: Trực tiếp, Trực tuyến, Dịch vụ bưu chính. Hiện có khoảng 3 mục giấy tờ cần theo dõi trong checklist.",
+    "tone": "supportive_public_service"
+  },
+  "guidance": {
+    "highlight_documents": [
+      {
+        "bucket": "required",
+        "name": "Đơn đề nghị đánh giá định kỳ việc duy trì đáp ứng GCP (Mẫu số 06 - Phụ lục số IV)",
+        "conditions": [],
+        "attachment_path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/1_014762/Mus06PhlcIV.docx"
+      },
+      {
+        "bucket": "required",
+        "name": "Báo cáo tóm tắt về hoạt động thử thuốc trên lâm sàng của cơ sở thử thuốc trên lâm sàng trong thời gian 03 năm gần nhất tính từ thời điểm đánh giá liền trước (không bao gồm các đợt đánh giá đột xuất, thanh tra, kiểm tra của Bộ Y tế, Sở Y tế) đến ngày đề nghị đánh giá định kỳ",
+        "conditions": [],
+        "attachment_path": null
+      },
+      {
+        "bucket": "conditional",
+        "name": "Tài liệu kỹ thuật cập nhật về điều kiện cơ sở vật chất, kỹ thuật và nhân sự của cơ sở thử thuốc trên lâm sàng (nếu có thay đổi);",
+        "conditions": [
+          "Tài liệu kỹ thuật cập nhật về điều kiện cơ sở vật chất, kỹ thuật và nhân sự của cơ sở thử thuốc trên lâm sàng (nếu có thay đổi);"
+        ],
+        "attachment_path": null
+      }
+    ],
+    "special_cases": [],
+    "common_errors": [
+      "Điền sai mẫu tờ khai hoặc chọn sai biểu mẫu đi kèm."
+    ],
+    "validation_hints": [
+      "Nên xác định trước kênh nộp hồ sơ để biết có cần bản giấy, bản điện tử hay xuất trình trực tiếp.",
+      "Có mẫu biểu đính kèm, nên kiểm tra đúng biểu mẫu trước khi nộp.",
+      "Nên xác định đúng nhóm đối tượng, mã số bảo hiểm và quyền lợi áp dụng trước khi nộp."
+    ]
+  },
+  "intake": {
+    "candidate_input_fields": [
+      {
+        "field_id": "request_subject",
+        "label": "Đối tượng làm thủ tục",
+        "field_type": "text",
+        "required": true
+      },
+      {
+        "field_id": "insurance_or_medical_need",
+        "label": "Nhu cầu bảo hiểm hoặc y tế",
+        "field_type": "text",
+        "required": true
+      },
+      {
+        "field_id": "submission_channel_preference",
+        "label": "Kênh nộp dự kiến",
+        "field_type": "enum",
+        "required": false
+      },
+      {
+        "field_id": "has_insurance_number",
+        "label": "Đã có mã BHXH/BHYT",
+        "field_type": "boolean",
+        "required": false
+      }
+    ],
+    "suggested_clarifying_questions": [
+      "Bạn đang muốn đăng ký, điều chỉnh hay xác nhận quyền lợi y tế hoặc bảo hiểm nào?",
+      "Bạn đã có mã BHXH/BHYT hoặc thông tin đơn vị tiếp nhận liên quan chưa?"
+    ]
+  },
+  "ui_hints": {
+    "primary_channel": "online",
+    "result_label": "Giấy chứng nhận đạt GCP theo Mẫu số 05 quy định tại Phụ lục IV Thông tư số 50/2025/TT-BYT đối với cơ sở đã có đề nghị trong đơn đề nghị cấp giấy chứng nhận đủ điều kiện kinh doanh dược",
+    "time_badge": "30 ngày làm việc",
+    "document_count_badge": 3
+  },
+  "provenance": {
+    "generator": "workflow_domain_enricher",
+    "derivation_mode": "rule_based_semantic_enrichment",
+    "supported_group": true
+  }
+}

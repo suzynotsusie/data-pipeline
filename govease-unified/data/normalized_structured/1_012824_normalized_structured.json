@@ -1,0 +1,194 @@
+{
+  "schema_version": "1.0",
+  "normalizer_version": "0.2.0",
+  "source": {
+    "procedure_code": "1.012824",
+    "title": "Hỗ trợ chi phí mai táng cho người cao tuổi từ đủ 75 tuổi đến 80 tuổi mà không có lương hưu, trợ cấp bảo hiểm xã hội hàng tháng, trợ cấp xã hội hàng tháng; Người mắc bệnh ung thư, suy thận mãn chạy thận nhân tạo có giấy chứng nhận của cơ quan y tế có thẩm quyền mà không có lương hưu, tiền lương, trợ cấp bảo hiểm xã hội hàng tháng, trợ cấp xã hội hàng tháng; Người khuyết tật nhẹ là thế hệ thứ ba của người hoạt động kháng chiến bị nhiễm chất độc hóa học",
+    "raw_structured_parser_version": "0.1.0",
+    "field": "Bảo trợ xã hội"
+  },
+  "procedure": {
+    "level": "Cấp xã",
+    "procedure_type": "TTHC được luật giao quy định chi tiết",
+    "target_users": [
+      "Công dân Việt Nam"
+    ],
+    "authorities": [],
+    "receiving_places": []
+  },
+  "submission": {
+    "channels": [
+      "in_person",
+      "online",
+      "postal"
+    ],
+    "methods": [
+      {
+        "method_id": "method_1",
+        "channel": "in_person",
+        "processing_time_text": "3 ngày làm việc",
+        "fee_text": null,
+        "description": "Kể từ ngày nhận đủ hồ sơ",
+        "is_online": false,
+        "is_postal": false,
+        "is_in_person": true
+      },
+      {
+        "method_id": "method_2",
+        "channel": "online",
+        "processing_time_text": "3 ngày làm việc",
+        "fee_text": null,
+        "description": "Kể từ ngày nhận đủ hồ sơ",
+        "is_online": true,
+        "is_postal": false,
+        "is_in_person": false
+      },
+      {
+        "method_id": "method_3",
+        "channel": "postal",
+        "processing_time_text": "3 ngày làm việc",
+        "fee_text": null,
+        "description": "Kể từ ngày nhận đủ hồ sơ",
+        "is_online": false,
+        "is_postal": true,
+        "is_in_person": false
+      }
+    ],
+    "timing_summary": {
+      "unique_processing_times": [
+        "3 ngày làm việc"
+      ],
+      "method_count": 3
+    }
+  },
+  "documents": {
+    "required": [
+      {
+        "document_id": "t_khai_ngh_h_tr_chi_ph_mai_t_ng_c_a_c_quan_t_ch_c_h_gia_nh_ho_c_c_nh_n_ng_ra_t_ch_c_mai_t_ng_cho_i_t_ng_theo_m_u_s_04_ban_h_nh_k_m_theo_ngh_nh_s_20_2021_n_cp",
+        "name": "Tờ khai đề nghị hỗ trợ chi phí mai táng của cơ quan, tổ chức, hộ gia đình hoặc cá nhân đứng ra tổ chức mai táng cho đối tượng theo Mẫu số 04 (ban hành kèm theo Nghị định số 20/2021/NĐ-CP).",
+        "group_name": "default",
+        "group_type": "unknown",
+        "original_count": "1",
+        "copy_count": "0",
+        "conditions": [],
+        "attachment_label": "To khai de nghi ho tro chi phi mai tang.doc",
+        "attachment_path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/1_012824/To%20khai%20de%20nghi%20ho%20tro%20chi%20phi%20mai%20tang.doc"
+      },
+      {
+        "document_id": "b_n_sao_gi_y_ch_ng_t_c_a_i_t_ng",
+        "name": "Bản sao giấy chứng tử của đối tượng;",
+        "group_name": "default",
+        "group_type": "unknown",
+        "original_count": "0",
+        "copy_count": "1",
+        "conditions": [],
+        "attachment_label": null,
+        "attachment_path": null
+      },
+      {
+        "document_id": "b_n_sao_quy_t_nh_ho_c_danh_s_ch_th_i_h_ng_tr_c_p_x_h_i_h_ng_th_ng_c_a_i_t_ng",
+        "name": "Bản sao quyết định hoặc danh sách thôi hưởng trợ cấp xã hội hàng tháng của đối tượng.",
+        "group_name": "default",
+        "group_type": "unknown",
+        "original_count": "0",
+        "copy_count": "1",
+        "conditions": [],
+        "attachment_label": null,
+        "attachment_path": null
+      }
+    ],
+    "conditional": [],
+    "presented": [],
+    "notes": [],
+    "forms": [
+      {
+        "name": "Tờ khai đề nghị hỗ trợ chi phí mai táng của cơ quan, tổ chức, hộ gia đình hoặc cá nhân đứng ra tổ chức mai táng cho đối tượng theo Mẫu số 04 (ban hành kèm theo Nghị định số 20/2021/NĐ-CP).",
+        "attachment_label": "To khai de nghi ho tro chi phi mai tang.doc",
+        "attachment_path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/1_012824/To%20khai%20de%20nghi%20ho%20tro%20chi%20phi%20mai%20tang.doc"
+      }
+    ],
+    "empty_groups": [],
+    "document_count": 3
+  },
+  "process": {
+    "steps": [
+      {
+        "step_id": "step_1",
+        "title": null,
+        "content": "1. - Đối tượng, người giám hộ của đối tượng hoặc tổ chức, cá nhân có liên quan làm hồ sơ theo quy định, nộp tại Trung tâm phục vụ hành chính công cấp xã nơi cư trú. Trung tâm phục vụ hành chính công cấp xã tiếp nhận hồ sơ (yêu cầu bổ sung, hoàn thiện nếu hồ sơ chưa đầy đủ);",
+        "actor": "user",
+        "channel_hint": null,
+        "time_hint": null
+      },
+      {
+        "step_id": "step_2",
+        "title": null,
+        "content": "- Trong thời hạn 03 ngày làm việc, kể từ ngày nhận đủ hồ sơ, công chức phụ trách xem xét, trình Chủ tịch UBND cấp xã quyết định hỗ trợ chi phí mai táng.",
+        "actor": "authority",
+        "channel_hint": null,
+        "time_hint": "03 ngày làm việc"
+      },
+      {
+        "step_id": "step_3",
+        "title": null,
+        "content": "- Trung tâm phục vụ hành chính công cấp xã trả kết quả cho công dân",
+        "actor": "user",
+        "channel_hint": null,
+        "time_hint": null
+      }
+    ],
+    "step_count": 3,
+    "notes": []
+  },
+  "eligibility": {
+    "conditions": [],
+    "has_conditions": false
+  },
+  "results": {
+    "items": [
+      {
+        "name": "Quyết định hỗ trợ chi phí mai táng hoặc văn bản trả lời",
+        "result_code": "KQ.H17.000126",
+        "raw_text": "Quyết định hỗ trợ chi phí mai táng hoặc văn bản trả lời"
+      }
+    ],
+    "primary_result": {
+      "name": "Quyết định hỗ trợ chi phí mai táng hoặc văn bản trả lời",
+      "result_code": "KQ.H17.000126",
+      "raw_text": "Quyết định hỗ trợ chi phí mai táng hoặc văn bản trả lời"
+    }
+  },
+  "legal_basis": {
+    "items": [
+      {
+        "title": "QUY ĐỊNH CHÍNH SÁCH TRỢ GIÚP XÃ HỘI ĐỐI VỚI ĐỐI TƯỢNG BẢO TRỢ XÃ HỘI",
+        "code": "20/2021/NĐ-CP"
+      },
+      {
+        "title": "Nghị quyết số 101/2023/NQ-HĐND ngày 14/12/2023 của HĐND thành phố về sửa đổi, bổ sung một số điều của Nghị quyết số 34/2021/NQ-HĐND; - Nghị quyết số 75/2021/NQ-HĐND ngày 17/12/2021 của Hội đồng nhân dân thành phố Đà Nẵng quy định về chính sách hỗ trợ hộ nghèo, hộ cận nghèo, hộ thoát nghèo trên địa bàn thành phố Đà Nẵng",
+        "code": "101/2023/NQ-HĐND"
+      },
+      {
+        "title": "Thông qua mức chuẩn trợ giúp xã hội, mức trợ giúp xã hội và mở rộng đối tượng bảo trợ xã hội trên địa bàn thành phố Đà Nẵng;",
+        "code": "34/2021/NQ-HĐND"
+      }
+    ],
+    "count": 3
+  },
+  "attachments": [
+    {
+      "label": "To khai de nghi ho tro chi phi mai tang.doc",
+      "path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/1_012824/To%20khai%20de%20nghi%20ho%20tro%20chi%20phi%20mai%20tang.doc",
+      "source_section": "Thành phần hồ sơ",
+      "document_name": "Tờ khai đề nghị hỗ trợ chi phí mai táng của cơ quan, tổ chức, hộ gia đình hoặc cá nhân đứng ra tổ chức mai táng cho đối tượng theo Mẫu số 04 (ban hành kèm theo Nghị định số 20/2021/NĐ-CP)."
+    }
+  ],
+  "signals": {
+    "raw_parse_warnings": [],
+    "missing_documents": false,
+    "documents_section_present": true,
+    "documents_declared_empty": false,
+    "documents_only_in_notes": false,
+    "missing_results": false
+  }
+}

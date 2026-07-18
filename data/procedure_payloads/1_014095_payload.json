@@ -1,0 +1,404 @@
+{
+  "schema_version": "3.0",
+  "record_type": "public_service_procedure_payload",
+  "id": "procedure-1.014095",
+  "procedure_code": "1.014095",
+  "code": "1.014095",
+  "title": "Cấp giấy xác nhận nội dung quảng cáo thuốc thông qua phương tiện tổ chức hội thảo, hội nghị, sự kiện giới thiệu thuốc",
+  "language": "vi",
+  "status": "generated_from_pipeline",
+  "field": "Dược phẩm",
+  "group_key": "suc_khoe_y_te",
+  "workflow_family": null,
+  "subflow": null,
+  "source": {
+    "source_url": "file:///C:/Users/ku060/Downloads/VAIC%20source/data-pipeline/raw_data/1_014095/1_014095_procedure_detail.md",
+    "source_markdown_path": "C:\\Users\\ku060\\Downloads\\VAIC source\\data-pipeline\\raw_data\\1_014095\\1_014095_procedure_detail.md",
+    "normalized_payload_path": "C:\\Users\\ku060\\Downloads\\VAIC source\\data-pipeline\\govease-unified\\data\\normalized_structured\\1_014095_normalized_structured.json",
+    "enriched_payload_path": "C:\\Users\\ku060\\Downloads\\VAIC source\\data-pipeline\\govease-unified\\data\\enriched_structured_priority\\1_014095_enriched_structured.json"
+  },
+  "scope": {
+    "included": "Thủ tục này thuộc nhóm y tế, thường cần đối chiếu thông tin người bệnh, đơn vị tiếp nhận hoặc quyền lợi chuyên ngành. Kết quả thường nhận được là Giấy xác nhận nội dung quảng cáo thuốc. Thời gian xử lý tham khảo: 15 ngày.",
+    "not_included": []
+  },
+  "agency": {
+    "executing_agency": "Bộ Y tế",
+    "submission_place": null,
+    "receiving_places": []
+  },
+  "target_users": [
+    "Tổ chức (không bao gồm doanh nghiệp",
+    "HTX)",
+    "Doanh nghiệp có vốn đầu tư nước ngoài",
+    "Doanh nghiệp Việt Nam",
+    "Hợp tác xã",
+    "Doanh nghiệp"
+  ],
+  "submission_methods": [
+    {
+      "code": "ONLINE",
+      "label": "Trực tuyến",
+      "processing_time": "15 ngày",
+      "fee": null,
+      "description": null
+    },
+    {
+      "code": "POSTAL",
+      "label": "Dịch vụ bưu chính",
+      "processing_time": "15 ngày",
+      "fee": null,
+      "description": null
+    },
+    {
+      "code": "IN_PERSON",
+      "label": "Trực tiếp",
+      "processing_time": "15 ngày",
+      "fee": null,
+      "description": null
+    }
+  ],
+  "processing_note": "Thời gian xử lý tham chiếu: 15 ngày. Nên xác định rõ đối tượng tham gia, quyền lợi hoặc nhu cầu điều chỉnh hồ sơ y tế trước khi nộp. Có thể chọn kênh nộp phù hợp: Trực tiếp, Trực tuyến, Dịch vụ bưu chính. Hiện có khoảng 4 mục giấy tờ cần theo dõi trong checklist.",
+  "documents": {
+    "normally_required": [
+      {
+        "name": "Đơn đề nghị xác nhận nội dung quảng cáo thuốc; Mẫu số 02 tại Phụ lục VI ban hành kèm theo Nghị định số 163/2025/NĐ-CP. Nội dung quảng cáo thuốc",
+        "quantity": "2 bản chính, 0 bản sao",
+        "notes": [],
+        "group": "default",
+        "attachment_path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/1_014095/Mu.docx"
+      },
+      {
+        "name": "Mẫu nhãn và tờ hướng dẫn sử dụng thuốc hiện hành đã được Bộ Y tế phê duyệt",
+        "quantity": "0 bản chính, 1 bản sao",
+        "notes": [],
+        "group": "default",
+        "attachment_path": null
+      }
+    ],
+    "conditional": [
+      {
+        "condition": "Tài liệu tham khảo có liên quan đến nội dung quảng cáo thuốc đề nghị xác nhận (nếu có)",
+        "document": "Tài liệu tham khảo có liên quan đến nội dung quảng cáo thuốc đề nghị xác nhận (nếu có)",
+        "quantity": "1 bản chính, 1 bản sao",
+        "notes": [],
+        "attachment_path": null
+      },
+      {
+        "condition": "Giấy phép thành lập văn phòng đại diện của công ty nước ngoài tại Việt Nam đối với cơ sở nước ngoài đứng tên đề nghị xác nhận nội dung quảng cáo thuốc hoặc Giấy chứng nhận đủ điều kiện kinh doanh dược đối với cơ sở kinh doanh dược của Việt Nam đứng tên đề nghị xác nhận nội dung quảng cáo thuốc. Miễn nộp Giấy chứng nhận đủ điều kiện kinh doanh dược do Bộ Y tế cấp đối với cơ sở kinh doanh dược của Việt Nam đứng tên đề nghị xác nhận nội dung quảng cáo thuốc; Giấy ủy quyền của cơ sở đăng ký thuốc cho cơ sở đứng tên trên hồ sơ đề nghị xác nhận nội dung quảng cáo thuốc trong trường hợp ủy quyền",
+        "document": "Giấy phép thành lập văn phòng đại diện của công ty nước ngoài tại Việt Nam đối với cơ sở nước ngoài đứng tên đề nghị xác nhận nội dung quảng cáo thuốc hoặc Giấy chứng nhận đủ điều kiện kinh doanh dược đối với cơ sở kinh doanh dược của Việt Nam đứng tên đề nghị xác nhận nội dung quảng cáo thuốc. Miễn nộp Giấy chứng nhận đủ điều kiện kinh doanh dược do Bộ Y tế cấp đối với cơ sở kinh doanh dược của Việt Nam đứng tên đề nghị xác nhận nội dung quảng cáo thuốc; Giấy ủy quyền của cơ sở đăng ký thuốc cho cơ sở đứng tên trên hồ sơ đề nghị xác nhận nội dung quảng cáo thuốc trong trường hợp ủy quyền",
+        "quantity": "1 bản chính, 1 bản sao",
+        "notes": [],
+        "attachment_path": null
+      }
+    ],
+    "forms": [
+      {
+        "name": "Đơn đề nghị xác nhận nội dung quảng cáo thuốc; Mẫu số 02 tại Phụ lục VI ban hành kèm theo Nghị định số 163/2025/NĐ-CP. Nội dung quảng cáo thuốc",
+        "attachment_label": "Mu.docx",
+        "attachment_path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/1_014095/Mu.docx"
+      }
+    ],
+    "presented": [],
+    "notes": [],
+    "summary": [
+      {
+        "group": "default",
+        "name": "Đơn đề nghị xác nhận nội dung quảng cáo thuốc; Mẫu số 02 tại Phụ lục VI ban hành kèm theo Nghị định số 163/2025/NĐ-CP. Nội dung quảng cáo thuốc",
+        "quantity": "2 bản chính, 0 bản sao",
+        "notes": [],
+        "attachment_path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/1_014095/Mu.docx"
+      },
+      {
+        "group": "default",
+        "name": "Mẫu nhãn và tờ hướng dẫn sử dụng thuốc hiện hành đã được Bộ Y tế phê duyệt",
+        "quantity": "0 bản chính, 1 bản sao",
+        "notes": [],
+        "attachment_path": null
+      },
+      {
+        "group": null,
+        "name": null,
+        "quantity": "1 bản chính, 1 bản sao",
+        "notes": [],
+        "attachment_path": null
+      },
+      {
+        "group": null,
+        "name": null,
+        "quantity": "1 bản chính, 1 bản sao",
+        "notes": [],
+        "attachment_path": null
+      },
+      {
+        "group": null,
+        "name": "Đơn đề nghị xác nhận nội dung quảng cáo thuốc; Mẫu số 02 tại Phụ lục VI ban hành kèm theo Nghị định số 163/2025/NĐ-CP. Nội dung quảng cáo thuốc",
+        "quantity": null,
+        "notes": null,
+        "attachment_path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/1_014095/Mu.docx"
+      }
+    ]
+  },
+  "steps": [
+    {
+      "order": 1,
+      "title": "Bước 1",
+      "description": "1.",
+      "example": null
+    },
+    {
+      "order": 2,
+      "title": "Bước 1:",
+      "description": "Bước 1: Cơ sở đề nghị xác nhận nội dung quảng cáo thuốc thông qua phương tiện tổ chức hội thảo, hội nghị, sự kiện giới thiệu thuốc nộp hồ sơ trực tiếp hoặc qua dịch vụ bưu chính hoặc trực tuyến đến Bộ Y tế, cụ thể: - Cục Quản lý Dược đối với thuốc hóa dược, sinh phẩm, thuốc dược liệu; - Cục Quản lý Y, Dược cổ truyền đối với thuốc cổ truyền;",
+      "example": "trực tuyến"
+    },
+    {
+      "order": 3,
+      "title": "Bước 2:",
+      "description": "Bước 2: Trong thời hạn 15 ngày kể từ ngày nhận đủ hồ sơ, Cục Quản lý Dược/ Cục Quản lý Y, Dược cổ truyền tổ chức thẩm định theo quy định tại Nghị định số 163/2025/NĐ-CP và pháp luật về quảng cáo và cấp giấy xác nhận theo Mẫu số 03 hoặc Mẫu số 04 tại Phụ lục VI ban hành kèm Nghị định số 163/2025/NĐ-CP. Trường hợp không cấp giấy xác nhận, Cục Quản lý Dược/ Cục Quản lý Y, Dược cổ truyền phải trả lời bằng văn bản và nêu rõ lý do không cấp;",
+      "example": "15 ngày"
+    },
+    {
+      "order": 4,
+      "title": "Bước 3:",
+      "description": "Bước 3: Trường hợp có yêu cầu sửa đổi, bổ sung hồ sơ, trong thời hạn 15 ngày kể từ ngày nhận đủ hồ sơ, Cục Quản lý Dược/ Cục Quản lý Y, Dược cổ truyền có văn bản đề nghị cơ sở sửa đổi, bổ sung;",
+      "example": "15 ngày"
+    },
+    {
+      "order": 5,
+      "title": "Bước 4:",
+      "description": "Bước 4: Trong thời hạn 90 ngày kể từ ngày Cục Quản lý Dược/ Cục Quản lý Y, Dược cổ truyền có văn bản thông báo sửa đổi, bổ sung, cơ sở phải nộp hồ sơ sửa đổi, bổ sung theo yêu cầu. Nếu quá thời hạn trên, hồ sơ đã nộp không còn giá trị;",
+      "example": "90 ngày"
+    },
+    {
+      "order": 6,
+      "title": "Bước 5:",
+      "description": "Bước 5: Trong thời hạn 15 ngày kể từ ngày nhận được hồ sơ sửa đổi, bổ sung theo yêu cầu, Cục Quản lý Dược/ Cục Quản lý Y, Dược cổ truyền tổ chức thẩm định theo quy định tại Nghị định số 163/2025/NĐ-CP và pháp luật về quảng cáo và cấp giấy xác nhận theo Mẫu số 03 hoặc Mẫu số 04 tại Phụ lục VI ban hành kèm theo Nghị định số 163/2025/NĐ-CP hoặc trả lời không cấp giấy xác nhận bằng văn bản và nêu rõ lý do;",
+      "example": "15 ngày"
+    },
+    {
+      "order": 7,
+      "title": "Bước 6:",
+      "description": "Bước 6: Trong thời hạn 03 ngày làm việc kể từ ngày cấp giấy xác nhận nội dung quảng cáo thuốc, Cục Quản lý Dược/ Cục Quản lý Y, Dược cổ truyền đăng tải nội dung quảng cáo thuốc được xác nhận trên Cổng thông tin điện tử của Bộ Y tế.",
+      "example": "03 ngày làm việc"
+    }
+  ],
+  "input_fields": [
+    {
+      "field": "request_subject",
+      "label": "Đối tượng làm thủ tục",
+      "type": "string",
+      "required": true
+    },
+    {
+      "field": "insurance_or_medical_need",
+      "label": "Nhu cầu bảo hiểm hoặc y tế",
+      "type": "string",
+      "required": true
+    },
+    {
+      "field": "submission_channel_preference",
+      "label": "Kênh nộp dự kiến",
+      "type": "enum",
+      "required": false,
+      "options": [
+        "Trực tiếp",
+        "Trực tuyến",
+        "Dịch vụ bưu chính"
+      ]
+    },
+    {
+      "field": "has_insurance_number",
+      "label": "Đã có mã BHXH/BHYT",
+      "type": "boolean",
+      "required": false
+    }
+  ],
+  "validation_rules": [
+    {
+      "id": "required-1",
+      "severity": "error",
+      "field": "request_subject",
+      "rule": "Trường bắt buộc phải có dữ liệu hợp lệ trước khi nộp.",
+      "message": "Thiếu trường bắt buộc: Đối tượng làm thủ tục."
+    },
+    {
+      "id": "required-2",
+      "severity": "error",
+      "field": "insurance_or_medical_need",
+      "rule": "Trường bắt buộc phải có dữ liệu hợp lệ trước khi nộp.",
+      "message": "Thiếu trường bắt buộc: Nhu cầu bảo hiểm hoặc y tế."
+    },
+    {
+      "id": "hint-1",
+      "severity": "warning",
+      "field": "general",
+      "rule": "Nên xác định trước kênh nộp hồ sơ để biết có cần bản giấy, bản điện tử hay xuất trình trực tiếp.",
+      "message": "Nên xác định trước kênh nộp hồ sơ để biết có cần bản giấy, bản điện tử hay xuất trình trực tiếp."
+    },
+    {
+      "id": "hint-2",
+      "severity": "warning",
+      "field": "general",
+      "rule": "Có mẫu biểu đính kèm, nên kiểm tra đúng biểu mẫu trước khi nộp.",
+      "message": "Có mẫu biểu đính kèm, nên kiểm tra đúng biểu mẫu trước khi nộp."
+    },
+    {
+      "id": "hint-3",
+      "severity": "warning",
+      "field": "general",
+      "rule": "Nên xác định đúng nhóm đối tượng, mã số bảo hiểm và quyền lợi áp dụng trước khi nộp.",
+      "message": "Nên xác định đúng nhóm đối tượng, mã số bảo hiểm và quyền lợi áp dụng trước khi nộp."
+    }
+  ],
+  "common_errors": [
+    {
+      "field": "general",
+      "issue": "Thiếu giấy tờ hoặc nội dung ủy quyền phù hợp.",
+      "fix": "Nên xác định trước kênh nộp hồ sơ để biết có cần bản giấy, bản điện tử hay xuất trình trực tiếp."
+    },
+    {
+      "field": "general",
+      "issue": "Thiếu giấy tờ hợp pháp hóa hoặc giấy tờ nhân thân của phía nước ngoài.",
+      "fix": "Nên xác định trước kênh nộp hồ sơ để biết có cần bản giấy, bản điện tử hay xuất trình trực tiếp."
+    },
+    {
+      "field": "general",
+      "issue": "Điền sai mẫu tờ khai hoặc chọn sai biểu mẫu đi kèm.",
+      "fix": "Nên xác định trước kênh nộp hồ sơ để biết có cần bản giấy, bản điện tử hay xuất trình trực tiếp."
+    },
+    {
+      "field": "general",
+      "issue": "Thông tin thửa đất, tài sản hoặc giấy chứng nhận chưa khớp với hồ sơ hiện có.",
+      "fix": "Nên xác định trước kênh nộp hồ sơ để biết có cần bản giấy, bản điện tử hay xuất trình trực tiếp."
+    }
+  ],
+  "clarifying_questions": [
+    {
+      "id": "clarify_1",
+      "question": "Bạn đang muốn đăng ký, điều chỉnh hay xác nhận quyền lợi y tế hoặc bảo hiểm nào?",
+      "purpose": "workflow_intake"
+    },
+    {
+      "id": "clarify_2",
+      "question": "Bạn đã có mã BHXH/BHYT hoặc thông tin đơn vị tiếp nhận liên quan chưa?",
+      "purpose": "workflow_intake"
+    }
+  ],
+  "legal_basis": [
+    {
+      "title": "41/2023/TT-BTC",
+      "code": "41/2023/TT-BTC"
+    },
+    {
+      "title": "Luật số 44/2024/QH15",
+      "code": "44/2024/QH15"
+    },
+    {
+      "title": "Nghị định của Chính phủ quy định chi tiết một số điều và biện pháp thi hành Luật dược",
+      "code": "163/2025/NĐ-CP"
+    },
+    {
+      "title": "Luật 105/2016/QH13 Dược",
+      "code": "105/2016/QH13"
+    }
+  ],
+  "legal_bases": [
+    {
+      "title": "41/2023/TT-BTC",
+      "code": "41/2023/TT-BTC"
+    },
+    {
+      "title": "Luật số 44/2024/QH15",
+      "code": "44/2024/QH15"
+    },
+    {
+      "title": "Nghị định của Chính phủ quy định chi tiết một số điều và biện pháp thi hành Luật dược",
+      "code": "163/2025/NĐ-CP"
+    },
+    {
+      "title": "Luật 105/2016/QH13 Dược",
+      "code": "105/2016/QH13"
+    }
+  ],
+  "faq": [
+    {
+      "question": "Có thể nộp qua kênh nào?",
+      "answer": "Các kênh hiện có: Trực tiếp, Trực tuyến, Dịch vụ bưu chính."
+    },
+    {
+      "question": "Thời gian xử lý tham chiếu là bao lâu?",
+      "answer": "Thời gian xử lý tham chiếu hiện có là 15 ngày."
+    },
+    {
+      "question": "Kết quả chính của thủ tục là gì?",
+      "answer": "Kết quả chính được trích xuất là Giấy xác nhận nội dung quảng cáo thuốc."
+    }
+  ],
+  "guidance": {
+    "highlight_documents": [
+      {
+        "bucket": "required",
+        "name": "Đơn đề nghị xác nhận nội dung quảng cáo thuốc; Mẫu số 02 tại Phụ lục VI ban hành kèm theo Nghị định số 163/2025/NĐ-CP. Nội dung quảng cáo thuốc",
+        "conditions": [],
+        "attachment_path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/1_014095/Mu.docx"
+      },
+      {
+        "bucket": "required",
+        "name": "Mẫu nhãn và tờ hướng dẫn sử dụng thuốc hiện hành đã được Bộ Y tế phê duyệt",
+        "conditions": [],
+        "attachment_path": null
+      },
+      {
+        "bucket": "conditional",
+        "name": "Tài liệu tham khảo có liên quan đến nội dung quảng cáo thuốc đề nghị xác nhận (nếu có)",
+        "conditions": [
+          "Tài liệu tham khảo có liên quan đến nội dung quảng cáo thuốc đề nghị xác nhận (nếu có)"
+        ],
+        "attachment_path": null
+      },
+      {
+        "bucket": "conditional",
+        "name": "Giấy phép thành lập văn phòng đại diện của công ty nước ngoài tại Việt Nam đối với cơ sở nước ngoài đứng tên đề nghị xác nhận nội dung quảng cáo thuốc hoặc Giấy chứng nhận đủ điều kiện kinh doanh dược đối với cơ sở kinh doanh dược của Việt Nam đứng tên đề nghị xác nhận nội dung quảng cáo thuốc. Miễn nộp Giấy chứng nhận đủ điều kiện kinh doanh dược do Bộ Y tế cấp đối với cơ sở kinh doanh dược của Việt Nam đứng tên đề nghị xác nhận nội dung quảng cáo thuốc; Giấy ủy quyền của cơ sở đăng ký thuốc cho cơ sở đứng tên trên hồ sơ đề nghị xác nhận nội dung quảng cáo thuốc trong trường hợp ủy quyền",
+        "conditions": [
+          "Giấy phép thành lập văn phòng đại diện của công ty nước ngoài tại Việt Nam đối với cơ sở nước ngoài đứng tên đề nghị xác nhận nội dung quảng cáo thuốc hoặc Giấy chứng nhận đủ điều kiện kinh doanh dược đối với cơ sở kinh doanh dược của Việt Nam đứng tên đề nghị xác nhận nội dung quảng cáo thuốc. Miễn nộp Giấy chứng nhận đủ điều kiện kinh doanh dược do Bộ Y tế cấp đối với cơ sở kinh doanh dược của Việt Nam đứng tên đề nghị xác nhận nội dung quảng cáo thuốc; Giấy ủy quyền của cơ sở đăng ký thuốc cho cơ sở đứng tên trên hồ sơ đề nghị xác nhận nội dung quảng cáo thuốc trong trường hợp ủy quyền"
+        ],
+        "attachment_path": null
+      }
+    ],
+    "special_cases": [
+      "Có yếu tố nước ngoài",
+      "Có thể cần giấy tờ ủy quyền",
+      "Có thể cần đối chiếu thông tin thửa đất hoặc giấy chứng nhận"
+    ],
+    "common_errors": [
+      "Thiếu giấy tờ hoặc nội dung ủy quyền phù hợp.",
+      "Thiếu giấy tờ hợp pháp hóa hoặc giấy tờ nhân thân của phía nước ngoài.",
+      "Điền sai mẫu tờ khai hoặc chọn sai biểu mẫu đi kèm.",
+      "Thông tin thửa đất, tài sản hoặc giấy chứng nhận chưa khớp với hồ sơ hiện có."
+    ],
+    "validation_hints": [
+      "Nên xác định trước kênh nộp hồ sơ để biết có cần bản giấy, bản điện tử hay xuất trình trực tiếp.",
+      "Có mẫu biểu đính kèm, nên kiểm tra đúng biểu mẫu trước khi nộp.",
+      "Nên xác định đúng nhóm đối tượng, mã số bảo hiểm và quyền lợi áp dụng trước khi nộp."
+    ]
+  },
+  "next_steps": {
+    "summary": "Nên xác định rõ đối tượng tham gia, quyền lợi hoặc nhu cầu điều chỉnh hồ sơ y tế trước khi nộp. Có thể chọn kênh nộp phù hợp: Trực tiếp, Trực tuyến, Dịch vụ bưu chính. Hiện có khoảng 4 mục giấy tờ cần theo dõi trong checklist.",
+    "time_badge": "15 ngày",
+    "result_label": "Giấy xác nhận nội dung quảng cáo thuốc",
+    "primary_channel": "online",
+    "channels": [
+      "in_person",
+      "online",
+      "postal"
+    ]
+  },
+  "notes": [],
+  "provenance": {
+    "pipeline": "raw->structured->normalized->enriched->ui_api_payload",
+    "normalizer_version": "0.2.0",
+    "enricher_version": "0.2.0",
+    "mapping_notes": "excluded_from_clean_workflow_dataset",
+    "supported_group": true
+  }
+}

@@ -1,0 +1,278 @@
+{
+  "schema_version": "1.0",
+  "domain": "nguoi_than_qua_doi",
+  "updated_at": "2026-07-18",
+  "source_files": [
+    "C:\\Users\\ku060\\Downloads\\VAIC source\\data-pipeline\\main\\full-data.csv",
+    "C:\\Users\\ku060\\Downloads\\VAIC source\\data-pipeline\\data\\workflows\\nguoi_than_qua_doi\\summary.csv",
+    "C:\\Users\\ku060\\Downloads\\VAIC source\\data-pipeline\\data\\workflows\\nguoi_than_qua_doi\\normalized.json",
+    "C:\\Users\\ku060\\Downloads\\VAIC source\\data-pipeline\\raw_data"
+  ],
+  "coverage": {
+    "expected_codes": [
+      "1.000419",
+      "1.000656",
+      "1.001766",
+      "1.004827",
+      "1.005461",
+      "2.000497",
+      "2.000527",
+      "2.000547",
+      "2.000702"
+    ],
+    "covered_codes": [
+      "1.000419",
+      "1.000656",
+      "1.001766",
+      "1.004827",
+      "1.005461",
+      "2.000497",
+      "2.000527",
+      "2.000547",
+      "2.000702"
+    ],
+    "missing_codes": []
+  },
+  "llm_contract": {
+    "role": "parse_user_answer_and_rephrase_question_only",
+    "required_output_schema": {
+      "intent": "nguoi_than_qua_doi",
+      "current_node": "string",
+      "slot_updates": {
+        "subdomain_key": "khai_tu | che_do_tu_tuat_mai_tang_phi | unknown",
+        "operation_key": "string",
+        "operation_group": "string"
+      },
+      "confidence": "0_to_1",
+      "needs_human_review": "boolean"
+    }
+  },
+  "entry_prompts": [
+    "Bạn đang cần làm khai tử cho người thân hay xin chế độ tử tuất, mai táng phí?",
+    "Bạn muốn đăng ký mới, đăng ký lại, ghi chú khai tử hay xin trợ cấp hỗ trợ sau khi người thân qua đời?"
+  ],
+  "slots": [
+    {
+      "name": "subdomain_key",
+      "required": true,
+      "description": "Nhánh chính của nhóm Người thân qua đời."
+    },
+    {
+      "name": "operation_key",
+      "required": true,
+      "description": "Thao tác cụ thể ánh xạ trực tiếp tới thủ tục cuối cùng."
+    },
+    {
+      "name": "operation_group",
+      "required": false,
+      "description": "Nhóm thao tác để gom các thủ tục gần nhau cho UI và parser."
+    }
+  ],
+  "subdomain_catalog": [
+    {
+      "subdomain_key": "khai_tu",
+      "subdomain_label": "Khai tử",
+      "event_id": 320,
+      "summary": "Nhóm thủ tục đăng ký khai tử, đăng ký lại khai tử và ghi chú việc khai tử đã được giải quyết ở nước ngoài."
+    }
+  ],
+  "decision_tree": {
+    "start_node": "death_subdomain",
+    "nodes": [
+      {
+        "id": "death_subdomain",
+        "type": "question",
+        "slot": "subdomain_key",
+        "question": "Bạn đang hỏi về khai tử hay chế độ tử tuất, mai táng phí?",
+        "options": [
+          "khai_tu"
+        ],
+        "prefilled_value": "khai_tu"
+      },
+      {
+        "id": "death_operation",
+        "type": "question",
+        "slot": "operation_key",
+        "question": "Bạn cần làm thao tác nào cụ thể trong nhánh đã chọn?",
+        "options_by_subdomain": {
+          "khai_tu": [
+            {
+              "operation_key": "thu_tuc_dang_ky_khai_tu_luu_dong",
+              "operation_group": "khai_tu_luu_dong",
+              "procedure_code": "1.000419",
+              "procedure_title": "Thủ tục đăng ký khai tử lưu động"
+            },
+            {
+              "operation_key": "thu_tuc_dang_ky_khai_tu",
+              "operation_group": "dang_ky_khai_tu",
+              "procedure_code": "1.000656",
+              "procedure_title": "Thủ tục đăng ký khai tử"
+            },
+            {
+              "operation_key": "thu_tuc_dang_ky_khai_tu_co_yeu_to_nuoc_ngoai",
+              "operation_group": "khai_tu_co_yeu_to_nuoc_ngoai",
+              "procedure_code": "1.001766",
+              "procedure_title": "Thủ tục đăng ký khai tử có yếu tố nước ngoài"
+            },
+            {
+              "operation_key": "thu_tuc_dang_ky_khai_tu_co_yeu_to_nuoc_ngoai_tai_khu_vuc_bien_gioi",
+              "operation_group": "khai_tu_bien_gioi",
+              "procedure_code": "1.004827",
+              "procedure_title": "Thủ tục đăng ký khai tử có yếu tố nước ngoài tại khu vực biên giới"
+            },
+            {
+              "operation_key": "dang_ky_lai_khai_tu",
+              "operation_group": "dang_ky_lai_khai_tu",
+              "procedure_code": "1.005461",
+              "procedure_title": "Đăng ký lại khai tử"
+            },
+            {
+              "operation_key": "thu_tuc_dang_ky_lai_khai_tu_co_yeu_to_nuoc_ngoai",
+              "operation_group": "dang_ky_lai_khai_tu",
+              "procedure_code": "2.000497",
+              "procedure_title": "Thủ tục đăng ký lại khai tử có yếu tố nước ngoài"
+            },
+            {
+              "operation_key": "thu_tuc_dang_ky_khai_tu_cho_cong_dan_viet_nam_o_nuoc_ngoai",
+              "operation_group": "khai_tu_cho_cong_dan_vn_o_nuoc_ngoai",
+              "procedure_code": "2.000527",
+              "procedure_title": "Thủ tục đăng ký khai tử cho công dân Việt Nam ở nước ngoài"
+            },
+            {
+              "operation_key": "thu_tuc_ghi_vao_so_ho_tich_viec_ho_tich_khac_cua_cong_dan_viet_nam_da_duoc_giai_quyet_tai_co_quan_co_tham_quyen_cua_nuoc_ngoai_khai_sinh_giam_ho_nhan_cha_me_con_xac_dinh_cha_me_con_nuoi_con_nuoi_khai_tu_thay_doi_ho_tich",
+              "operation_group": "ghi_chu_khai_tu",
+              "procedure_code": "2.000547",
+              "procedure_title": "Thủ tục ghi vào Sổ hộ tịch việc hộ tịch khác của công dân Việt Nam đã được giải quyết tại cơ quan có thẩm quyền của nước ngoài (khai sinh; giám hộ; nhận cha, mẹ, con; xác định cha, mẹ, con; nuôi con nuôi; khai tử; thay đổi hộ tịch)"
+            },
+            {
+              "operation_key": "thu_tuc_ghi_vao_so_ho_tich_cac_viec_ho_tich_da_dang_ky_tai_co_quan_co_tham_quyen_cua_nuoc_ngoai_giam_ho_nhan_cha_me_con_xac_dinh_cha_me_con_nuoi_con_nuoi_khai_tu_va_nhung_thay_doi_khac",
+              "operation_group": "ghi_chu_khai_tu",
+              "procedure_code": "2.000702",
+              "procedure_title": "Thủ tục ghi vào sổ hộ tịch các việc hộ tịch đã đăng ký tại cơ quan có thẩm quyền của nước ngoài (giám hộ; nhận cha, mẹ, con; xác định cha, mẹ con; nuôi con nuôi; khai tử; và những thay đổi khác)"
+            }
+          ]
+        },
+        "options": [
+          "thu_tuc_dang_ky_khai_tu_luu_dong",
+          "thu_tuc_dang_ky_khai_tu",
+          "thu_tuc_dang_ky_khai_tu_co_yeu_to_nuoc_ngoai",
+          "thu_tuc_dang_ky_khai_tu_co_yeu_to_nuoc_ngoai_tai_khu_vuc_bien_gioi",
+          "dang_ky_lai_khai_tu",
+          "thu_tuc_dang_ky_lai_khai_tu_co_yeu_to_nuoc_ngoai",
+          "thu_tuc_dang_ky_khai_tu_cho_cong_dan_viet_nam_o_nuoc_ngoai",
+          "thu_tuc_ghi_vao_so_ho_tich_viec_ho_tich_khac_cua_cong_dan_viet_nam_da_duoc_giai_quyet_tai_co_quan_co_tham_quyen_cua_nuoc_ngoai_khai_sinh_giam_ho_nhan_cha_me_con_xac_dinh_cha_me_con_nuoi_con_nuoi_khai_tu_thay_doi_ho_tich",
+          "thu_tuc_ghi_vao_so_ho_tich_cac_viec_ho_tich_da_dang_ky_tai_co_quan_co_tham_quyen_cua_nuoc_ngoai_giam_ho_nhan_cha_me_con_xac_dinh_cha_me_con_nuoi_con_nuoi_khai_tu_va_nhung_thay_doi_khac"
+        ]
+      }
+    ],
+    "routes": [
+      {
+        "route_id": "khai_tu-1_000419",
+        "conditions": {
+          "subdomain_key": "khai_tu",
+          "operation_key": "thu_tuc_dang_ky_khai_tu_luu_dong"
+        },
+        "procedure_code": "1.000419",
+        "procedure_name": "Thủ tục đăng ký khai tử lưu động",
+        "why_this_route": "Route trực tiếp cho nhu cầu 'Thủ tục đăng ký khai tử lưu động' trong nhánh 'Khai tử'."
+      },
+      {
+        "route_id": "khai_tu-1_000656",
+        "conditions": {
+          "subdomain_key": "khai_tu",
+          "operation_key": "thu_tuc_dang_ky_khai_tu"
+        },
+        "procedure_code": "1.000656",
+        "procedure_name": "Thủ tục đăng ký khai tử",
+        "why_this_route": "Route trực tiếp cho nhu cầu 'Thủ tục đăng ký khai tử' trong nhánh 'Khai tử'."
+      },
+      {
+        "route_id": "khai_tu-1_001766",
+        "conditions": {
+          "subdomain_key": "khai_tu",
+          "operation_key": "thu_tuc_dang_ky_khai_tu_co_yeu_to_nuoc_ngoai"
+        },
+        "procedure_code": "1.001766",
+        "procedure_name": "Thủ tục đăng ký khai tử có yếu tố nước ngoài",
+        "why_this_route": "Route trực tiếp cho nhu cầu 'Thủ tục đăng ký khai tử có yếu tố nước ngoài' trong nhánh 'Khai tử'."
+      },
+      {
+        "route_id": "khai_tu-1_004827",
+        "conditions": {
+          "subdomain_key": "khai_tu",
+          "operation_key": "thu_tuc_dang_ky_khai_tu_co_yeu_to_nuoc_ngoai_tai_khu_vuc_bien_gioi"
+        },
+        "procedure_code": "1.004827",
+        "procedure_name": "Thủ tục đăng ký khai tử có yếu tố nước ngoài tại khu vực biên giới",
+        "why_this_route": "Route trực tiếp cho nhu cầu 'Thủ tục đăng ký khai tử có yếu tố nước ngoài tại khu vực biên giới' trong nhánh 'Khai tử'."
+      },
+      {
+        "route_id": "khai_tu-1_005461",
+        "conditions": {
+          "subdomain_key": "khai_tu",
+          "operation_key": "dang_ky_lai_khai_tu"
+        },
+        "procedure_code": "1.005461",
+        "procedure_name": "Đăng ký lại khai tử",
+        "why_this_route": "Route trực tiếp cho nhu cầu 'Đăng ký lại khai tử' trong nhánh 'Khai tử'."
+      },
+      {
+        "route_id": "khai_tu-2_000497",
+        "conditions": {
+          "subdomain_key": "khai_tu",
+          "operation_key": "thu_tuc_dang_ky_lai_khai_tu_co_yeu_to_nuoc_ngoai"
+        },
+        "procedure_code": "2.000497",
+        "procedure_name": "Thủ tục đăng ký lại khai tử có yếu tố nước ngoài",
+        "why_this_route": "Route trực tiếp cho nhu cầu 'Thủ tục đăng ký lại khai tử có yếu tố nước ngoài' trong nhánh 'Khai tử'."
+      },
+      {
+        "route_id": "khai_tu-2_000527",
+        "conditions": {
+          "subdomain_key": "khai_tu",
+          "operation_key": "thu_tuc_dang_ky_khai_tu_cho_cong_dan_viet_nam_o_nuoc_ngoai"
+        },
+        "procedure_code": "2.000527",
+        "procedure_name": "Thủ tục đăng ký khai tử cho công dân Việt Nam ở nước ngoài",
+        "why_this_route": "Route trực tiếp cho nhu cầu 'Thủ tục đăng ký khai tử cho công dân Việt Nam ở nước ngoài' trong nhánh 'Khai tử'."
+      },
+      {
+        "route_id": "khai_tu-2_000547",
+        "conditions": {
+          "subdomain_key": "khai_tu",
+          "operation_key": "thu_tuc_ghi_vao_so_ho_tich_viec_ho_tich_khac_cua_cong_dan_viet_nam_da_duoc_giai_quyet_tai_co_quan_co_tham_quyen_cua_nuoc_ngoai_khai_sinh_giam_ho_nhan_cha_me_con_xac_dinh_cha_me_con_nuoi_con_nuoi_khai_tu_thay_doi_ho_tich"
+        },
+        "procedure_code": "2.000547",
+        "procedure_name": "Thủ tục ghi vào Sổ hộ tịch việc hộ tịch khác của công dân Việt Nam đã được giải quyết tại cơ quan có thẩm quyền của nước ngoài (khai sinh; giám hộ; nhận cha, mẹ, con; xác định cha, mẹ, con; nuôi con nuôi; khai tử; thay đổi hộ tịch)",
+        "why_this_route": "Route trực tiếp cho nhu cầu 'Thủ tục ghi vào Sổ hộ tịch việc hộ tịch khác của công dân Việt Nam đã được giải quyết tại cơ quan có thẩm quyền của nước ngoài (khai sinh; giám hộ; nhận cha, mẹ, con; xác định cha, mẹ, con; nuôi con nuôi; khai tử; thay đổi hộ tịch)' trong nhánh 'Khai tử'."
+      },
+      {
+        "route_id": "khai_tu-2_000702",
+        "conditions": {
+          "subdomain_key": "khai_tu",
+          "operation_key": "thu_tuc_ghi_vao_so_ho_tich_cac_viec_ho_tich_da_dang_ky_tai_co_quan_co_tham_quyen_cua_nuoc_ngoai_giam_ho_nhan_cha_me_con_xac_dinh_cha_me_con_nuoi_con_nuoi_khai_tu_va_nhung_thay_doi_khac"
+        },
+        "procedure_code": "2.000702",
+        "procedure_name": "Thủ tục ghi vào sổ hộ tịch các việc hộ tịch đã đăng ký tại cơ quan có thẩm quyền của nước ngoài (giám hộ; nhận cha, mẹ, con; xác định cha, mẹ con; nuôi con nuôi; khai tử; và những thay đổi khác)",
+        "why_this_route": "Route trực tiếp cho nhu cầu 'Thủ tục ghi vào sổ hộ tịch các việc hộ tịch đã đăng ký tại cơ quan có thẩm quyền của nước ngoài (giám hộ; nhận cha, mẹ, con; xác định cha, mẹ con; nuôi con nuôi; khai tử; và những thay đổi khác)' trong nhánh 'Khai tử'."
+      }
+    ]
+  },
+  "pre_submission_checks": [
+    {
+      "field_group": "death_registration",
+      "checks": [
+        "Nhóm khai tử phải xác định rõ nơi người mất qua đời, nơi cư trú và loại giấy tờ xác nhận việc tử vong.",
+        "Các trường hợp có yếu tố nước ngoài phải kiểm tra đủ giấy tờ nước ngoài và bản dịch/chứng thực kèm theo."
+      ]
+    },
+    {
+      "field_group": "survivor_support",
+      "checks": [
+        "Nhóm tử tuất và mai táng phí phải xác định rõ người đã mất thuộc chế độ BHXH, bảo trợ xã hội, người có công hay chính sách địa phương.",
+        "Thân nhân đứng đơn cần có căn cứ chứng minh quan hệ với người đã mất và chứng từ liên quan đến việc mai táng nếu thủ tục yêu cầu."
+      ]
+    }
+  ],
+  "subdomain_key": "khai_tu"
+}

@@ -1,0 +1,110 @@
+{
+  "schema_version": "1.0",
+  "enricher_version": "0.2.0",
+  "source": {
+    "procedure_code": "1.003587",
+    "title": "Cấp lại Giấy chứng nhận lưu hành thuốc thú y (trong trường hợp bị sai sót; thay đổi về: tên sản phẩm; tên, địa điểm cơ sở đăng ký; tên, địa điểm cơ sở sản xuất; quy cách đóng gói của sản phẩm; hình thức nhãn thuốc; hạn sử dụng; thời gian ngừng sử dụng thuốc; chống chỉ định điều trị; liệu trình điều trị; những thay đổi nhưng không ảnh hưởng đến chất lượng, hiệu quả, độ an toàn của thuốc thú y)",
+    "group_key": "suc_khoe_y_te",
+    "workflow_family": null,
+    "subflow": null
+  },
+  "experience": {
+    "entry_label": "Hỗ trợ y tế và bảo hiểm",
+    "overview_summary": "Thủ tục này thuộc nhóm y tế, thường cần đối chiếu thông tin người bệnh, đơn vị tiếp nhận hoặc quyền lợi chuyên ngành. Kết quả thường nhận được là Giấy chứng nhận lưu hành thuốc thú y sản xuất gia công, san chia. Thời gian xử lý tham khảo: 5 ngày.",
+    "next_step_summary": "Nên xác định rõ đối tượng tham gia, quyền lợi hoặc nhu cầu điều chỉnh hồ sơ y tế trước khi nộp. Có thể chọn kênh nộp phù hợp: Trực tiếp, Trực tuyến, Dịch vụ bưu chính. Hiện có khoảng 5 mục giấy tờ cần theo dõi trong checklist.",
+    "tone": "supportive_public_service"
+  },
+  "guidance": {
+    "highlight_documents": [
+      {
+        "bucket": "required",
+        "name": "Mẫu nhãn cũ, mới",
+        "conditions": [],
+        "attachment_path": null
+      },
+      {
+        "bucket": "required",
+        "name": "Đơn đề nghị cấp lại Giấy chứng nhận lưu hành thuốc thú y theo mẫu quy định tại Phụ lục IV ban hành kèm theo Thông tư số 15/2026/TT-BNNMT",
+        "conditions": [],
+        "attachment_path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/1_003587/PHU%CC%A3%20LU%CC%A3C%20IV.M%E1%BA%AAU%20%C4%90%C6%A0N%20%C4%90%E1%BB%80%20NGH%E1%BB%8A%20C%E1%BA%A4P%20L%E1%BA%A0I%20GI%E1%BA%A4Y%20CH%E1%BB%A8NG%20NH%E1%BA%ACN%20L%C6%AFU%20H%C3%80NH.docx"
+      },
+      {
+        "bucket": "required",
+        "name": "Tài liệu chứng minh nội dung thay đổi",
+        "conditions": [],
+        "attachment_path": null
+      },
+      {
+        "bucket": "conditional",
+        "name": "Bản cam kết không vi phạm các qui định của luật sở hữu trí tuệ theo mẫu quy định tại Phụ lục VII ban hành kèm theo Thông tư Thông tư số 13/2016/TT-BNNPTNT đối với trường hợp thay đổi tên sản phẩm",
+        "conditions": [
+          "Bản cam kết không vi phạm các qui định của luật sở hữu trí tuệ theo mẫu quy định tại Phụ lục VII ban hành kèm theo Thông tư Thông tư số 13/2016/TT-BNNPTNT đối với trường hợp thay đổi tên sản phẩm"
+        ],
+        "attachment_path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/1_003587/PH%E1%BB%A4%20L%E1%BB%A4C%20VII.M%E1%BA%AAU%20GI%E1%BA%A4Y%20CAM%20K%E1%BA%BET%20%C4%90%C4%82NG%20K%C3%9D%20L%C6%AFU%20H%C3%80NH.docx"
+      },
+      {
+        "bucket": "conditional",
+        "name": "Lưu ý: - Hồ sơ đăng ký thuốc thú y sản xuất ở nước ngoài phải được viết bằng tiếng Việt hoặc tiếng Anh. Trường hợp hồ sơ viết bằng tiếng Anh, các thông tin trong tờ hướng dẫn sử dụng thuốc, tóm tắt đặc tính sản phẩm bắt buộc phải viết bằng tiếng Việt. - Hồ sơ đăng ký thuốc thú y đối với hình thức nộp hồ sơ qua dịch vụ bưu chính hoặc trực tiếp phải được soạn thảo trên khổ giấy A4, đóng chắc chắn. Hồ sơ phải có trang bìa và Mục lục, được sắp xếp theo đúng trình tự của Mục lục, có phân cách giữa các phần. Các phần phân cách phải được đánh số thứ tự để dễ tham khảo; mỗi thuốc thú y phải có hồ sơ đăng ký riêng.",
+        "conditions": [
+          "Lưu ý: - Hồ sơ đăng ký thuốc thú y sản xuất ở nước ngoài phải được viết bằng tiếng Việt hoặc tiếng Anh. Trường hợp hồ sơ viết bằng tiếng Anh, các thông tin trong tờ hướng dẫn sử dụng thuốc, tóm tắt đặc tính sản phẩm bắt buộc phải viết bằng tiếng Việt. - Hồ sơ đăng ký thuốc thú y đối với hình thức nộp hồ sơ qua dịch vụ bưu chính hoặc trực tiếp phải được soạn thảo trên khổ giấy A4, đóng chắc chắn. Hồ sơ phải có trang bìa và Mục lục, được sắp xếp theo đúng trình tự của Mục lục, có phân cách giữa các phần. Các phần phân cách phải được đánh số thứ tự để dễ tham khảo; mỗi thuốc thú y phải có hồ sơ đăng ký riêng."
+        ],
+        "attachment_path": null
+      }
+    ],
+    "special_cases": [
+      "Có yếu tố nước ngoài"
+    ],
+    "common_errors": [
+      "Thiếu giấy tờ hợp pháp hóa hoặc giấy tờ nhân thân của phía nước ngoài.",
+      "Điền sai mẫu tờ khai hoặc chọn sai biểu mẫu đi kèm."
+    ],
+    "validation_hints": [
+      "Nên xác định trước kênh nộp hồ sơ để biết có cần bản giấy, bản điện tử hay xuất trình trực tiếp.",
+      "Có mẫu biểu đính kèm, nên kiểm tra đúng biểu mẫu trước khi nộp.",
+      "Nên xác định đúng nhóm đối tượng, mã số bảo hiểm và quyền lợi áp dụng trước khi nộp."
+    ]
+  },
+  "intake": {
+    "candidate_input_fields": [
+      {
+        "field_id": "request_subject",
+        "label": "Đối tượng làm thủ tục",
+        "field_type": "text",
+        "required": true
+      },
+      {
+        "field_id": "insurance_or_medical_need",
+        "label": "Nhu cầu bảo hiểm hoặc y tế",
+        "field_type": "text",
+        "required": true
+      },
+      {
+        "field_id": "submission_channel_preference",
+        "label": "Kênh nộp dự kiến",
+        "field_type": "enum",
+        "required": false
+      },
+      {
+        "field_id": "has_insurance_number",
+        "label": "Đã có mã BHXH/BHYT",
+        "field_type": "boolean",
+        "required": false
+      }
+    ],
+    "suggested_clarifying_questions": [
+      "Bạn đang muốn đăng ký, điều chỉnh hay xác nhận quyền lợi y tế hoặc bảo hiểm nào?",
+      "Bạn đã có mã BHXH/BHYT hoặc thông tin đơn vị tiếp nhận liên quan chưa?"
+    ]
+  },
+  "ui_hints": {
+    "primary_channel": "online",
+    "result_label": "Giấy chứng nhận lưu hành thuốc thú y sản xuất gia công, san chia",
+    "time_badge": "5 ngày",
+    "document_count_badge": 5
+  },
+  "provenance": {
+    "generator": "workflow_domain_enricher",
+    "derivation_mode": "rule_based_semantic_enrichment",
+    "supported_group": true
+  }
+}

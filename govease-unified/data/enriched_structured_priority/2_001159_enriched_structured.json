@@ -1,0 +1,79 @@
+{
+  "schema_version": "1.0",
+  "enricher_version": "0.2.0",
+  "source": {
+    "procedure_code": "2.001159",
+    "title": "Thông báo lưu trú",
+    "group_key": "cu_tru_giay_to",
+    "workflow_family": "residence_identity_documents_workflow",
+    "subflow": "luu_tru"
+  },
+  "experience": {
+    "entry_label": "Hỗ trợ cư trú và giấy tờ",
+    "overview_summary": "Thủ tục này thuộc nhóm cư trú và giấy tờ, thường cần kiểm tra thông tin định danh hoặc hồ sơ giấy tờ chuyên ngành. Kết quả thường nhận được là Cập nhật thông tin trong Cơ sở dữ liệu về cư trú. Thời gian xử lý tham khảo: 1 ngày.",
+    "next_step_summary": "Nên kiểm tra trước giấy tờ định danh, nơi nộp và mẫu biểu liên quan, rồi chọn kênh nộp phù hợp: Trực tiếp, Trực tuyến. Hiện có 1 mục giấy tờ cần theo dõi trong checklist.",
+    "tone": "supportive_public_service"
+  },
+  "guidance": {
+    "highlight_documents": [
+      {
+        "bucket": "required",
+        "name": "Khi có người đến lưu trú, đại diện hộ gia đình, cơ sở khám bệnh, chữa bệnh, cơ sở lưu trú du lịch, cơ sở lưu trú ở khu công nghiệp, cơ sở khác có chức năng lưu trú thì phải thực hiện việc thông báo lưu trú cho người đang lưu trú theo một trong các hình thức đã được quy định tại và theo quy định sau đây: - Chủ hộ hoặc thành viên hộ gia đình, đại diện cơ sở lưu trú ở khu công nghiệp, cơ sở lưu trú du lịch đề nghị người đến lưu trú xuất trình một trong các giấy tờ pháp lý thể hiện thông tin về số định danh cá nhân theo quy định của pháp luật và thực hiện việc thông báo lưu trú với cơ quan đăng ký cư trú; - Đại diện cơ sở khám bệnh, chữa bệnh có trách nhiệm lập danh sách người đến điều trị nội trú và thực hiện thông báo lưu trú với cơ quan đăng ký cư trú nơi đặt trụ sở cơ sở khám chữa bệnh",
+        "conditions": [],
+        "attachment_path": null
+      }
+    ],
+    "special_cases": [
+      "Có kiểm tra dữ liệu cư trú/định danh",
+      "Có thể cần đối chiếu quyền lợi bảo hiểm hoặc tuyến chuyên môn"
+    ],
+    "common_errors": [],
+    "validation_hints": [
+      "Nên xác định trước kênh nộp hồ sơ để biết có cần bản giấy, bản điện tử hay xuất trình trực tiếp.",
+      "Nên đối chiếu trước dữ liệu định danh và nơi cư trú để tránh bị yêu cầu bổ sung."
+    ]
+  },
+  "intake": {
+    "candidate_input_fields": [
+      {
+        "field_id": "document_request_type",
+        "label": "Loại giấy tờ cần xử lý",
+        "field_type": "text",
+        "required": true
+      },
+      {
+        "field_id": "submission_channel_preference",
+        "label": "Kênh nộp dự kiến",
+        "field_type": "enum",
+        "required": false
+      },
+      {
+        "field_id": "identity_document_available",
+        "label": "Có giấy tờ định danh",
+        "field_type": "boolean",
+        "required": true
+      },
+      {
+        "field_id": "residency_or_status_known",
+        "label": "Biết rõ nơi cư trú hoặc tình trạng hiện tại",
+        "field_type": "boolean",
+        "required": false
+      }
+    ],
+    "suggested_clarifying_questions": [
+      "Bạn đang xử lý giấy tờ gì và muốn nộp trực tiếp hay trực tuyến?",
+      "Thông tin định danh và nơi cư trú hiện tại đã sẵn sàng để đối chiếu chưa?"
+    ]
+  },
+  "ui_hints": {
+    "primary_channel": "online",
+    "result_label": "Cập nhật thông tin trong Cơ sở dữ liệu về cư trú",
+    "time_badge": "1 ngày",
+    "document_count_badge": 1
+  },
+  "provenance": {
+    "generator": "workflow_domain_enricher",
+    "derivation_mode": "rule_based_semantic_enrichment",
+    "supported_group": true
+  }
+}

@@ -1,0 +1,291 @@
+{
+  "schema_version": "3.0",
+  "record_type": "public_service_procedure_payload",
+  "id": "procedure-1.010337",
+  "procedure_code": "1.010337",
+  "code": "1.010337",
+  "title": "Đăng ký sử dụng hoá đơn điện tử/ Thay đổi nội dung đăng ký sử dụng hoá đơn điện tử/ ủy nhiệm lập hóa đơn điện tử/ Chuyển đổi áp dụng hóa đơn điện tử có mã của cơ quan thuế/Khai thác dữ liệu của chi nhánh, đơn vị phụ thuộc/Thông báo tạm ngừng sử dụng hóa đơn điện tử/Tích hợp hóa đơn điện tử với biên lai thu thuế, phí, lệ phí",
+  "language": "vi",
+  "status": "generated_from_pipeline",
+  "field": "Thuế",
+  "group_key": "suc_khoe_y_te",
+  "workflow_family": null,
+  "subflow": null,
+  "source": {
+    "source_url": "file:///C:/Users/ku060/Downloads/VAIC%20source/data-pipeline/raw_data/1_010337/1_010337_procedure_detail.md",
+    "source_markdown_path": "C:\\Users\\ku060\\Downloads\\VAIC source\\data-pipeline\\raw_data\\1_010337\\1_010337_procedure_detail.md",
+    "normalized_payload_path": "C:\\Users\\ku060\\Downloads\\VAIC source\\data-pipeline\\govease-unified\\data\\normalized_structured\\1_010337_normalized_structured.json",
+    "enriched_payload_path": "C:\\Users\\ku060\\Downloads\\VAIC source\\data-pipeline\\govease-unified\\data\\enriched_structured_priority\\1_010337_enriched_structured.json"
+  },
+  "scope": {
+    "included": "Thủ tục này thuộc nhóm y tế, thường cần đối chiếu thông tin người bệnh, đơn vị tiếp nhận hoặc quyền lợi chuyên ngành. Kết quả thường nhận được là Thông báo về việc chấp nhận/không chấp nhận đăng ký/thay đổi thông tin sử dụng hóa đơn điện tử/chứng từ điện tử (Mẫu số 01/TB-ĐKĐT). Thời gian xử lý tham khảo: 1 ngày.",
+    "not_included": []
+  },
+  "agency": {
+    "executing_agency": "Thuế tỉnh, thành phố, Thuế cơ sở, Cục Thuế - Bộ tài chính",
+    "submission_place": null,
+    "receiving_places": []
+  },
+  "target_users": [
+    "Tổ chức (không bao gồm doanh nghiệp",
+    "HTX)",
+    "Hợp tác xã",
+    "Công dân Việt Nam",
+    "Doanh nghiệp",
+    "Người nước ngoài",
+    "Tổ chức nước ngoài",
+    "Doanh nghiệp có vốn đầu tư nước ngoài",
+    "Doanh nghiệp Việt Nam"
+  ],
+  "submission_methods": [
+    {
+      "code": "ONLINE",
+      "label": "Trực tuyến",
+      "processing_time": "1 ngày",
+      "fee": null,
+      "description": null
+    }
+  ],
+  "processing_note": "Thời gian xử lý tham chiếu: 1 ngày. Nên xác định rõ đối tượng tham gia, quyền lợi hoặc nhu cầu điều chỉnh hồ sơ y tế trước khi nộp. Có thể chọn kênh nộp phù hợp: Trực tuyến. Hiện có khoảng 2 mục giấy tờ cần theo dõi trong checklist.",
+  "documents": {
+    "normally_required": [
+      {
+        "name": "Số lượng hồ sơ: 01 (bộ).",
+        "quantity": "1 bản chính, 0 bản sao",
+        "notes": [],
+        "group": "default",
+        "attachment_path": null
+      },
+      {
+        "name": "Tờ khai đăng ký/ Thay đổi thông tin sử dụng hoá đơn điện tử theo Mẫu số 01ĐKTĐ/HĐĐT Phụ lục IA kèm theo Nghị định số 70/2025/NĐ-CP ngày 20 /3/2025 của Chính phủ",
+        "quantity": "1 bản chính, 0 bản sao",
+        "notes": [],
+        "group": "default",
+        "attachment_path": null
+      }
+    ],
+    "conditional": [],
+    "forms": [],
+    "presented": [],
+    "notes": [],
+    "summary": [
+      {
+        "group": "default",
+        "name": "Số lượng hồ sơ: 01 (bộ).",
+        "quantity": "1 bản chính, 0 bản sao",
+        "notes": [],
+        "attachment_path": null
+      },
+      {
+        "group": "default",
+        "name": "Tờ khai đăng ký/ Thay đổi thông tin sử dụng hoá đơn điện tử theo Mẫu số 01ĐKTĐ/HĐĐT Phụ lục IA kèm theo Nghị định số 70/2025/NĐ-CP ngày 20 /3/2025 của Chính phủ",
+        "quantity": "1 bản chính, 0 bản sao",
+        "notes": [],
+        "attachment_path": null
+      }
+    ]
+  },
+  "steps": [
+    {
+      "order": 1,
+      "title": "Bước 1",
+      "description": "1. +",
+      "example": null
+    },
+    {
+      "order": 2,
+      "title": "Bước 1:",
+      "description": "Bước 1: Doanh nghiệp, tổ chức kinh tế, tổ chức khác, hộ, cá nhân kinh doanh thuộc trường hợp được sử dụng hóa đơn điện tử thực hiện truy cập vào Cổng thông tin điện tử của Tổng cục Thuế hoặc qua tổ chức cung cấp dịch vụ hóa đơn điện tử, để Đăng ký sử dụng hoá đơn điện tử/ Thay đổi nội dung đăng ký sử dụng hoá đơn điện tử/ Ủy nhiệm lập hóa đơn điện tử/ Chuyển đổi áp dụng hóa đơn điện tử có mã của cơ quan thuế, cụ thể: ++ Trường hợp (1): Đăng ký sử dụng hoá đơn điện tử +++ Đăng ký qua tổ chức cung cấp dịch vụ hóa đơn điện tử: Doanh nghiệp, tổ chức kinh tế, tổ chức khác, không thuộc đối tượng ngừng sử dụng hóa đơn theo quy định tại khoản 1 Điều 16 Nghị định số 123/2020/NĐ-CP (ngày 19/10/2020 của Chính phủ quy định về hóa đơn, chứng từ) đăng ký sử dụng hóa đơn điện tử (bao gồm cả đăng ký hóa đơn điện tử bán tài sản công, hóa đơn điện tử bán hàng dự trữ quốc gia). +++ Đăng ký qua Cổng thông tin điện tử của Tổng cục Thuế: Doanh nghiệp là tổ chức kết nối chuyển dữ liệu hóa đơn điện tử theo hình thức gửi trực tiếp đến cơ quan thuế thì đăng ký sử dụng hóa đơn điện tử. +++ Đăng ký qua Cổng thông tin điện tử của Tổng cục Thuế hoặc tổ chức cung cấp dịch vụ hóa đơn điện tử được Tổng cục Thuế ủy thác cung cấp dịch vụ hóa đơn điện tử có mã của cơ quan thuế không phải trả tiền dịch vụ: Doanh nghiệp nhỏ và vừa, hợp tác xã, sử dụng hóa đơn điện tử có mã của cơ quan thuế không phải trả tiền dịch vụ theo quy định tại khoản 1 Điều 16 Nghị định số 123/2020/NĐ-CP ngày 19/10/2020 của Chính phủ, thì có thể đăng ký sử dụng hóa đơn điện tử. Doanh nghiệp, tổ chức kinh tế, tổ chức khác, hộ, cá nhân kinh doanh lập hồ sơ, khai đầy đủ thông tin theo Mẫu số 01/ĐKTĐ-HĐĐT Phụ lục IA ban hành kèm theo Nghị định số 123/2020/NĐ-CP ngày 19/10/2020 của Chính phủ và gửi đến Cơ quan thuế quản lý (Tổng cục Thuế/Cục thuế/Chi cục thuế). Trường hợp được cơ quan thuế chấp nhận đăng ký sử dụng hóa đơn điện tử, thì doanh nghiệp, tổ chức kinh tế, tổ chức khác, hộ, cá nhân kinh doanh phải ngừng sử dụng hóa đơn điện tử đã thông báo phát hành theo các quy định trước đây/ phải tiêu hủy hóa đơn giấy đã thông báo phát hành nhưng chưa sử dụng theo quy định (nếu có). ++ Trường hợp (2): Thay đổi nội dung đăng ký sử dụng hoá đơn điện tử Doanh nghiệp, tổ chức kinh tế, tổ chức khác, hộ, cá nhân kinh doanh, có thay đổi thông tin đã đăng ký sử dụng hóa đơn điện tử tại khoản 1 Điều 15 Nghị định số 123/2020/NĐ-CP ngày 19/10/2020 của Chính phủ, thì lập hồ sơ thay đổi thông tin theo Mẫu số 01/ĐKTĐ- HĐĐT Phụ lục IA ban hành kèm theo Nghị định số 123/2020/NĐ-CP ngày 19/10/2020 của Chính phủ, và gửi cơ quan thuế quản lý, qua Cổng thông tin điện tử của Tổng cục Thuế hoặc qua tổ chức cung cấp dịch vụ hóa đơn điện tử, trừ trường hợp ngừng sử dụng hóa đơn điện tử theo quy định tại khoản 1 Điều 16 Nghị định số 123/2020/NĐ-CP ngày 19/10/2020 của Chính phủ. Doanh nghiệp, tổ chức kinh tế đăng ký chuyển dữ liệu hóa đơn điện tử theo hình thức gửi trực tiếp đến cơ quan thuế theo quy định tại điểm b1 khoản 3 Điều 22 của Nghị định số 123/2020/NĐ-CP ngày 19/10/2020 của Chính phủ được cơ quan thuế ra thông báo chấp nhận đăng ký sử dụng hóa đơn điện tử theo Mẫu số 01/TB-ĐKĐT Phụ lục IB ban hành kèm theo Nghị định số 123/2020/NĐ-CP ngày 19/10/2020 của Chính phủ nhưng tổ chức không thông báo cho Tổng cục Thuế để phối hợp kết nối hoặc kết quả kiểm thử kết nối, truyền nhận dữ liệu không thành công, doanh nghiệp, tổ chức thực hiện thay đổi đăng ký sử dụng hóa đơn điện tử theo Mẫu số 01/ĐKTĐ-HĐĐT Phụ lục IA ban hành kèm theo Nghị định số 123/2020/NĐ-CP ngày 19/10/2020 của Chính phủ, gửi cơ quan thuế quản lý qua Cổng thông tin điện tử của Tổng cục Thuế hoặc qua tổ chức cung cấp dịch vụ hóa đơn điện tử và thực hiện chuyển dữ liệu qua Tổ chức kết nối, nhận, truyền lưu trữ dữ liệu hóa đơn điện tử với cơ quan thuế. ++ Trường hợp (3): Ủy nhiệm lập hóa đơn điện tử/chấm dứt trước thời hạn ủy nhiệm lập hóa đơn điện tử: Bên thứ ba (bên nhận ủy nhiệm lập hóa đơn điện tử (HĐĐT)) là bên có quan hệ liên kết với người bán, là đối tượng đủ điều kiện sử dụng HĐĐT và không thuộc trường hợp ngừng sử dụng HĐĐT theo quy định tại Khoản 1 Điều 16 Nghị định số 123/2020/NĐ-CP ngày 19/10/2020 của Chính phủ. HĐĐT do bên nhận ủy nhiệm lập là HĐĐT có mã hoặc không có mã của cơ quan thuế và phải thể hiện tên, địa chỉ, mã số thuế của bên ủy nhiệm và tên, địa chỉ, mã số thuế của bên nhận ủy nhiệm và phải đúng thực tế phát sinh. Trường hợp hóa đơn ủy nhiệm là HĐĐT không có mã của cơ quan thuế thì bên ủy nhiệm có trách nhiệm chuyển dữ liệu HĐĐT hoặc thông qua tổ chức cung cấp dịch vụ để chuyển dữ liệu HĐĐT đến cơ quan thuế quản lý trực tiếp. Việc ủy nhiệm được xác định là thay đổi thông tin đăng ký sử dụng hóa đơn điện tử do đó bên ủy nhiệm và bên nhận ủy nhiệm phải đăng ký (thông báo) với cơ quan thuế theo quy định tại Điều 15 Nghị định số 123/2020/NĐ-CP ngày 19/10/2020 của Chính phủ về việc ủy nhiệm lập hóa đơn điện tử, bao gồm cả trường hợp chấm dứt trước thời hạn ủy nhiệm lập HĐĐT theo thỏa thuận giữa các bên. Các bên thực hiện điền thông tin liên quan chứng thư số, tên, mã số thuế tại Phần 5, Phần 6 Mẫu số 01ĐKTĐ/HĐĐT ban hành kèm theo Nghị định số 123/2020/NĐ-CP ngày 19/10/2020 của Chính phủ. ++ Trường hợp (4): Chuyển đổi áp dụng hóa đơn điện tử có mã của cơ quan thuế: +++ Chuyển từ sử dụng hóa đơn điện tử không có mã sang hóa đơn điện tử có mã của cơ quan thuế: Trong thời gian mười (10) ngày làm việc kể từ ngày cơ quan thuế phát hành thông báo Mẫu số 01/TB-KTT Phụ lục IB ban hành kèm theo Nghị định số 123/2020/NĐ-CP ngày 19/10/2020 của Chính phủ về việc chuyển đổi áp dụng hóa đơn điện tử có mã của cơ quan thuế hoặc khi người nộp thuế đang sử dụng hóa đơn điện tử không có mã nếu có nhu cầu chuyển đổi áp dụng hóa đơn điện tử có mã của cơ quan thuế, phải thay đổi thông tin sử dụng hóa đơn điện tử (chuyển từ sử dụng hóa đơn điện tử không có mã sang hóa đơn điện tử có mã của cơ quan thuế), theo Mẫu số 01/ĐKTĐ-HĐĐT Phụ lục IA ban hành kèm theo Nghị định số 123/2020/NĐ-CP ngày 19/10/2020 của Chính phủ, và gửi cơ quan thuế quản lý, qua Cổng thông tin điện tử của Tổng cục Thuế hoặc qua tổ chức cung cấp dịch vụ hóa đơn điện tử. +++ Chuyển từ sử dụng hóa đơn điện tử có mã của cơ quan thuế sang hóa đơn điện tử không có mã của cơ quan thuế: Sau 12 tháng kể từ thời điểm chuyển sang sử dụng hóa đơn điện tử có mã của cơ quan thuế, nếu người nộp thuế có nhu cầu sử dụng hóa đơn điện tử không có mã thì người nộp thuế thay đổi thông tin sử dụng hóa đơn điện tử, theo Mẫu số 01/ĐKTĐ-HĐĐT Phụ lục IA ban hành kèm theo Nghị định số 123/2020/NĐ-CP ngày 19/10/2020 của Chính phủ, và gửi cơ quan thuế quản lý, qua Cổng thông tin điện tử của Tổng cục Thuế hoặc qua tổ chức cung cấp dịch vụ hóa đơn điện tử. +",
+      "example": "12 tháng"
+    },
+    {
+      "order": 3,
+      "title": "Bước 2:",
+      "description": "Bước 2: Ký và gửi đến cơ quan thuế quản lý qua Cổng thông tin điện tử của Tổng cục Thuế hoặc qua tổ chức cung cấp dịch vụ hóa đơn điện tử. +",
+      "example": null
+    },
+    {
+      "order": 4,
+      "title": "Bước 3:",
+      "description": "Bước 3: Tổng cục Thuế tiếp nhận hồ sơ qua Cổng thông tin điện tử của Tổng cục Thuế hoặc qua tổ chức cung cấp dịch vụ hóa đơn điện tử, thực hiện kiểm tra, giải quyết hồ sơ thông qua hệ thống xử lý dữ liệu điện tử của cơ quan thuế và trả thông báo trực tiếp theo Mẫu số 01/TB-TNĐT Phụ lục IB ban hành kèm theo Nghị định số 123/2020/NĐ-CP ngày 19/10/2020 của Chính phủ.",
+      "example": "trực tiếp"
+    }
+  ],
+  "input_fields": [
+    {
+      "field": "request_subject",
+      "label": "Đối tượng làm thủ tục",
+      "type": "string",
+      "required": true
+    },
+    {
+      "field": "insurance_or_medical_need",
+      "label": "Nhu cầu bảo hiểm hoặc y tế",
+      "type": "string",
+      "required": true
+    },
+    {
+      "field": "submission_channel_preference",
+      "label": "Kênh nộp dự kiến",
+      "type": "enum",
+      "required": false,
+      "options": [
+        "Trực tuyến"
+      ]
+    },
+    {
+      "field": "has_insurance_number",
+      "label": "Đã có mã BHXH/BHYT",
+      "type": "boolean",
+      "required": false
+    }
+  ],
+  "validation_rules": [
+    {
+      "id": "required-1",
+      "severity": "error",
+      "field": "request_subject",
+      "rule": "Trường bắt buộc phải có dữ liệu hợp lệ trước khi nộp.",
+      "message": "Thiếu trường bắt buộc: Đối tượng làm thủ tục."
+    },
+    {
+      "id": "required-2",
+      "severity": "error",
+      "field": "insurance_or_medical_need",
+      "rule": "Trường bắt buộc phải có dữ liệu hợp lệ trước khi nộp.",
+      "message": "Thiếu trường bắt buộc: Nhu cầu bảo hiểm hoặc y tế."
+    },
+    {
+      "id": "hint-1",
+      "severity": "warning",
+      "field": "general",
+      "rule": "Nên xác định trước kênh nộp hồ sơ để biết có cần bản giấy, bản điện tử hay xuất trình trực tiếp.",
+      "message": "Nên xác định trước kênh nộp hồ sơ để biết có cần bản giấy, bản điện tử hay xuất trình trực tiếp."
+    },
+    {
+      "id": "hint-2",
+      "severity": "warning",
+      "field": "general",
+      "rule": "Nên xác định đúng nhóm đối tượng, mã số bảo hiểm và quyền lợi áp dụng trước khi nộp.",
+      "message": "Nên xác định đúng nhóm đối tượng, mã số bảo hiểm và quyền lợi áp dụng trước khi nộp."
+    }
+  ],
+  "common_errors": [
+    {
+      "field": "general",
+      "issue": "Điền sai mẫu tờ khai hoặc chọn sai biểu mẫu đi kèm.",
+      "fix": "Nên xác định trước kênh nộp hồ sơ để biết có cần bản giấy, bản điện tử hay xuất trình trực tiếp."
+    }
+  ],
+  "clarifying_questions": [
+    {
+      "id": "clarify_1",
+      "question": "Bạn đang muốn đăng ký, điều chỉnh hay xác nhận quyền lợi y tế hoặc bảo hiểm nào?",
+      "purpose": "workflow_intake"
+    },
+    {
+      "id": "clarify_2",
+      "question": "Bạn đã có mã BHXH/BHYT hoặc thông tin đơn vị tiếp nhận liên quan chưa?",
+      "purpose": "workflow_intake"
+    }
+  ],
+  "legal_basis": [
+    {
+      "title": "Nghị định số 118/2025/NĐ-CP của Chính phủ: Về thực hiện thủ tục hành chính theo cơ chế một cửa, một cửa liên thông tại Bộ phận Một cửa và Cổng Dịch vụ công quốc gia",
+      "code": "118/2025/NĐ-CP"
+    },
+    {
+      "title": "Nghị định 123/2020/NĐ-CP",
+      "code": "123/2020/NĐ-CP"
+    },
+    {
+      "title": "Nghị định số 70/2025/NĐ-CP ngày ngày 20 tháng 3 năm 2025 của Chính phủ sửa đổi, bổ sung một số điều của Nghị định số 123/2020/NĐ-CP ngày 19 tháng 10 năm 2020 của Chính phủ quy định về hóa đơn, chứng từ.",
+      "code": "70/2025/NĐ-CP"
+    },
+    {
+      "title": "Luật Quản lý thuế",
+      "code": "38/2019/QH14"
+    },
+    {
+      "title": "Thông tư 78/2021/TT-BTC",
+      "code": "78/2021/TT-BTC"
+    }
+  ],
+  "legal_bases": [
+    {
+      "title": "Nghị định số 118/2025/NĐ-CP của Chính phủ: Về thực hiện thủ tục hành chính theo cơ chế một cửa, một cửa liên thông tại Bộ phận Một cửa và Cổng Dịch vụ công quốc gia",
+      "code": "118/2025/NĐ-CP"
+    },
+    {
+      "title": "Nghị định 123/2020/NĐ-CP",
+      "code": "123/2020/NĐ-CP"
+    },
+    {
+      "title": "Nghị định số 70/2025/NĐ-CP ngày ngày 20 tháng 3 năm 2025 của Chính phủ sửa đổi, bổ sung một số điều của Nghị định số 123/2020/NĐ-CP ngày 19 tháng 10 năm 2020 của Chính phủ quy định về hóa đơn, chứng từ.",
+      "code": "70/2025/NĐ-CP"
+    },
+    {
+      "title": "Luật Quản lý thuế",
+      "code": "38/2019/QH14"
+    },
+    {
+      "title": "Thông tư 78/2021/TT-BTC",
+      "code": "78/2021/TT-BTC"
+    }
+  ],
+  "faq": [
+    {
+      "question": "Có thể nộp qua kênh nào?",
+      "answer": "Các kênh hiện có: Trực tuyến."
+    },
+    {
+      "question": "Thời gian xử lý tham chiếu là bao lâu?",
+      "answer": "Thời gian xử lý tham chiếu hiện có là 1 ngày."
+    },
+    {
+      "question": "Kết quả chính của thủ tục là gì?",
+      "answer": "Kết quả chính được trích xuất là Thông báo về việc chấp nhận/không chấp nhận đăng ký/thay đổi thông tin sử dụng hóa đơn điện tử/chứng từ điện tử (Mẫu số 01/TB-ĐKĐT)."
+    }
+  ],
+  "guidance": {
+    "highlight_documents": [
+      {
+        "bucket": "required",
+        "name": "Số lượng hồ sơ: 01 (bộ).",
+        "conditions": [],
+        "attachment_path": null
+      },
+      {
+        "bucket": "required",
+        "name": "Tờ khai đăng ký/ Thay đổi thông tin sử dụng hoá đơn điện tử theo Mẫu số 01ĐKTĐ/HĐĐT Phụ lục IA kèm theo Nghị định số 70/2025/NĐ-CP ngày 20 /3/2025 của Chính phủ",
+        "conditions": [],
+        "attachment_path": null
+      }
+    ],
+    "special_cases": [],
+    "common_errors": [
+      "Điền sai mẫu tờ khai hoặc chọn sai biểu mẫu đi kèm."
+    ],
+    "validation_hints": [
+      "Nên xác định trước kênh nộp hồ sơ để biết có cần bản giấy, bản điện tử hay xuất trình trực tiếp.",
+      "Nên xác định đúng nhóm đối tượng, mã số bảo hiểm và quyền lợi áp dụng trước khi nộp."
+    ]
+  },
+  "next_steps": {
+    "summary": "Nên xác định rõ đối tượng tham gia, quyền lợi hoặc nhu cầu điều chỉnh hồ sơ y tế trước khi nộp. Có thể chọn kênh nộp phù hợp: Trực tuyến. Hiện có khoảng 2 mục giấy tờ cần theo dõi trong checklist.",
+    "time_badge": "1 ngày",
+    "result_label": "Thông báo về việc chấp nhận/không chấp nhận đăng ký/thay đổi thông tin sử dụng hóa đơn điện tử/chứng từ điện tử (Mẫu số 01/TB-ĐKĐT)",
+    "primary_channel": "online",
+    "channels": [
+      "online"
+    ]
+  },
+  "notes": [],
+  "provenance": {
+    "pipeline": "raw->structured->normalized->enriched->ui_api_payload",
+    "normalizer_version": "0.2.0",
+    "enricher_version": "0.2.0",
+    "mapping_notes": "excluded_from_clean_workflow_dataset",
+    "supported_group": true
+  }
+}

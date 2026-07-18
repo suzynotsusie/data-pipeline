@@ -1,0 +1,121 @@
+{
+  "schema_version": "1.0",
+  "enricher_version": "0.2.0",
+  "source": {
+    "procedure_code": "1.001632",
+    "title": "Giải quyết hưởng chế độ TNLĐ, BNN đối với trường hợp bị TNLĐ lần đầu",
+    "group_key": "suc_khoe_y_te",
+    "workflow_family": "healthcare_medical_policy_workflow",
+    "subflow": "chinh_sach_y_te"
+  },
+  "experience": {
+    "entry_label": "Hỗ trợ y tế và bảo hiểm",
+    "overview_summary": "Thủ tục này thuộc nhóm y tế, thường cần đối chiếu thông tin người bệnh, đơn vị tiếp nhận hoặc quyền lợi chuyên ngành. Kết quả thường nhận được là Bản quá trình đóng BHXH (Mẫu 04-HSB). Thời gian xử lý tham khảo: 6 ngày làm việc.",
+    "next_step_summary": "Nên xác định rõ đối tượng tham gia, quyền lợi hoặc nhu cầu điều chỉnh hồ sơ y tế trước khi nộp. Có thể chọn kênh nộp phù hợp: Trực tiếp, Trực tuyến, Dịch vụ bưu chính. Hiện có khoảng 6 mục giấy tờ cần theo dõi trong checklist.",
+    "tone": "supportive_public_service"
+  },
+  "guidance": {
+    "highlight_documents": [
+      {
+        "bucket": "required",
+        "name": "1. Bản chính Văn bản đề nghị giải quyết chế độ TNLĐ, BNN (mẫu 05A-HSB) của đơn vị SDLĐ; bản chính Đơn đề nghị về việc hưởng chế độ BNN (mẫu 01) ban hành kèm theo Nghị định số 88/2020/NĐ-CP",
+        "conditions": [],
+        "attachment_path": null
+      },
+      {
+        "bucket": "conditional",
+        "name": "6. Hóa đơn, chứng từ thu phí giám định; bảng kê các nội dung giám định của cơ sở thực hiện GĐYK (trường hợp thanh toán phí GĐYK).",
+        "conditions": [
+          "6. Hóa đơn, chứng từ thu phí giám định; bảng kê các nội dung giám định của cơ sở thực hiện GĐYK (trường hợp thanh toán phí GĐYK)."
+        ],
+        "attachment_path": null
+      },
+      {
+        "bucket": "conditional",
+        "name": "4. Trường hợp bị BNN mà không điều trị nội trú thì có thêm Giấy khám BNN.",
+        "conditions": [
+          "4. Trường hợp bị BNN mà không điều trị nội trú thì có thêm Giấy khám BNN."
+        ],
+        "attachment_path": null
+      },
+      {
+        "bucket": "conditional",
+        "name": "3. Biên bản giám định mức suy giảm KNLĐ của Hội đồng GĐYK hoặc bản sao Giấy chứng nhận bị nhiễm HIV/AIDS do tai nạn rủi ro nghề nghiệp trong trường hợp bị nhiễm HIV/AIDS do tai nạn rủi ro nghề nghiệp (tương đương mức suy giảm KNLĐ 61%), nếu GĐYK mà tỷ lệ suy giảm KNLĐ cao hơn 61% thì hồ sơ hưởng chế độ BNN trong trường hợp này phải có Biên bản GĐYK.",
+        "conditions": [
+          "3. Biên bản giám định mức suy giảm KNLĐ của Hội đồng GĐYK hoặc bản sao Giấy chứng nhận bị nhiễm HIV/AIDS do tai nạn rủi ro nghề nghiệp trong trường hợp bị nhiễm HIV/AIDS do tai nạn rủi ro nghề nghiệp (tương đương mức suy giảm KNLĐ 61%), nếu GĐYK mà tỷ lệ suy giảm KNLĐ cao hơn 61% thì hồ sơ hưởng chế độ BNN trong trường hợp này phải có Biên bản GĐYK."
+        ],
+        "attachment_path": null
+      },
+      {
+        "bucket": "conditional",
+        "name": "2. Bản sao Giấy ra viện hoặc trích sao hồ sơ bệnh án sau khi đã điều trị TNLĐ hoặc BNN (trường hợp điều trị nội trú)",
+        "conditions": [
+          "2. Bản sao Giấy ra viện hoặc trích sao hồ sơ bệnh án sau khi đã điều trị TNLĐ hoặc BNN (trường hợp điều trị nội trú)"
+        ],
+        "attachment_path": null
+      },
+      {
+        "bucket": "conditional",
+        "name": "5. Chỉ định của cơ sở KCB, cơ sở chỉnh hình, phục hồi chức năng theo quy định về trang cấp PTTGSH (nếu có)",
+        "conditions": [
+          "5. Chỉ định của cơ sở KCB, cơ sở chỉnh hình, phục hồi chức năng theo quy định về trang cấp PTTGSH (nếu có)"
+        ],
+        "attachment_path": null
+      }
+    ],
+    "special_cases": [
+      "Có thể cần đối chiếu thông tin thửa đất hoặc giấy chứng nhận"
+    ],
+    "common_errors": [
+      "Điền sai mẫu tờ khai hoặc chọn sai biểu mẫu đi kèm.",
+      "Thông tin thửa đất, tài sản hoặc giấy chứng nhận chưa khớp với hồ sơ hiện có."
+    ],
+    "validation_hints": [
+      "Nên xác định trước kênh nộp hồ sơ để biết có cần bản giấy, bản điện tử hay xuất trình trực tiếp.",
+      "Nên xác định đúng nhóm đối tượng, mã số bảo hiểm và quyền lợi áp dụng trước khi nộp."
+    ]
+  },
+  "intake": {
+    "candidate_input_fields": [
+      {
+        "field_id": "request_subject",
+        "label": "Đối tượng làm thủ tục",
+        "field_type": "text",
+        "required": true
+      },
+      {
+        "field_id": "insurance_or_medical_need",
+        "label": "Nhu cầu bảo hiểm hoặc y tế",
+        "field_type": "text",
+        "required": true
+      },
+      {
+        "field_id": "submission_channel_preference",
+        "label": "Kênh nộp dự kiến",
+        "field_type": "enum",
+        "required": false
+      },
+      {
+        "field_id": "has_insurance_number",
+        "label": "Đã có mã BHXH/BHYT",
+        "field_type": "boolean",
+        "required": false
+      }
+    ],
+    "suggested_clarifying_questions": [
+      "Bạn đang muốn đăng ký, điều chỉnh hay xác nhận quyền lợi y tế hoặc bảo hiểm nào?",
+      "Bạn đã có mã BHXH/BHYT hoặc thông tin đơn vị tiếp nhận liên quan chưa?"
+    ]
+  },
+  "ui_hints": {
+    "primary_channel": "online",
+    "result_label": "Bản quá trình đóng BHXH (Mẫu 04-HSB)",
+    "time_badge": "6 ngày làm việc",
+    "document_count_badge": 6
+  },
+  "provenance": {
+    "generator": "workflow_domain_enricher",
+    "derivation_mode": "rule_based_semantic_enrichment",
+    "supported_group": true
+  }
+}

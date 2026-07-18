@@ -1,0 +1,82 @@
+{
+  "schema_version": "1.0",
+  "enricher_version": "0.2.0",
+  "source": {
+    "procedure_code": "3.000360",
+    "title": "Thu hồi chấp thuận hoạt động của sân tập lái để sát hạch lái xe mô tô",
+    "group_key": "phuong_tien_nguoi_lai",
+    "workflow_family": "vehicle_driver_workflow",
+    "subflow": "giay_phep_lai_xe"
+  },
+  "experience": {
+    "entry_label": "Hỗ trợ phương tiện và người lái",
+    "overview_summary": "Thủ tục này thuộc nhóm phương tiện và người lái, thường dùng để cấp, đổi hoặc xác nhận hồ sơ liên quan đến giấy phép lái xe. Kết quả thường nhận được là Quyết định thu hồi chấp thuận hoạt động của sân tập lái để sát hạch lái xe mô tô đủ điều kiện hoạt động. Thời gian xử lý tham khảo: 5 ngày làm việc.",
+    "next_step_summary": "Nên kiểm tra trước loại phương tiện hoặc loại giấy phép cần xử lý, cùng hồ sơ kỹ thuật hoặc nhân thân liên quan. Có thể chọn kênh nộp phù hợp: Trực tiếp. Hiện có khoảng 2 mục giấy tờ cần theo dõi trong checklist.",
+    "tone": "supportive_public_service"
+  },
+  "guidance": {
+    "highlight_documents": [
+      {
+        "bucket": "required",
+        "name": "Báo cáo tình hình hoạt động của các cơ sở đào tạo được chấp thuận hoạt động của sân tập lái để sát hạch lái xe mô tô hoặc biên bản vi phạm hoặc Quyết định giải thể",
+        "conditions": [],
+        "attachment_path": null
+      },
+      {
+        "bucket": "required",
+        "name": "Quyết định chấp thuận hoạt động của sân tập lái để sát hạch lái xe mô tô đủ điều kiện hoạt động.",
+        "conditions": [],
+        "attachment_path": null
+      }
+    ],
+    "special_cases": [],
+    "common_errors": [],
+    "validation_hints": [
+      "Nên xác định trước kênh nộp hồ sơ để biết có cần bản giấy, bản điện tử hay xuất trình trực tiếp.",
+      "Nên đối chiếu trước thông tin phương tiện, hồ sơ kỹ thuật hoặc giấy phép lái xe liên quan."
+    ]
+  },
+  "intake": {
+    "candidate_input_fields": [
+      {
+        "field_id": "vehicle_or_license_need",
+        "label": "Nhu cầu về phương tiện hoặc giấy phép",
+        "field_type": "text",
+        "required": true
+      },
+      {
+        "field_id": "vehicle_or_person_identifier",
+        "label": "Thông tin phương tiện hoặc người lái",
+        "field_type": "text",
+        "required": true
+      },
+      {
+        "field_id": "submission_channel_preference",
+        "label": "Kênh nộp dự kiến",
+        "field_type": "enum",
+        "required": false
+      },
+      {
+        "field_id": "has_technical_or_identity_documents",
+        "label": "Đã có hồ sơ kỹ thuật hoặc giấy tờ nhân thân",
+        "field_type": "boolean",
+        "required": false
+      }
+    ],
+    "suggested_clarifying_questions": [
+      "Bạn đang xử lý hồ sơ cho phương tiện hay cho giấy phép lái xe?",
+      "Bạn đã có thông tin nhận diện phương tiện hoặc giấy tờ của người lái chưa?"
+    ]
+  },
+  "ui_hints": {
+    "primary_channel": "in_person",
+    "result_label": "Quyết định thu hồi chấp thuận hoạt động của sân tập lái để sát hạch lái xe mô tô đủ điều kiện hoạt động",
+    "time_badge": "5 ngày làm việc",
+    "document_count_badge": 2
+  },
+  "provenance": {
+    "generator": "workflow_domain_enricher",
+    "derivation_mode": "rule_based_semantic_enrichment",
+    "supported_group": true
+  }
+}

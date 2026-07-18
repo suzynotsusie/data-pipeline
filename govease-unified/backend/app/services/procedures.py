@@ -2,6 +2,7 @@ from __future__ import annotations
 
 from typing import Any
 
+from govease_ai.guidance import build_user_guidance
 from govease_ai.procedure_data import ProcedureDataStore, ProcedureRecord
 
 PROVINCE_SOURCE_URL = "https://danhmuchanhchinh.nso.gov.vn/DMDVHC.asmx"
@@ -31,6 +32,10 @@ BIRTH_RELATIONSHIPS = [
 
 
 def procedure_summary(record: ProcedureRecord) -> dict[str, Any]:
+    agency = record.data.get("agency")
+    agency_name = record.data.get("agency")
+    if isinstance(agency, dict):
+        agency_name = agency.get("executing_agency") or agency.get("submission_place")
     return {
         "id": record.id,
         "code": record.code,
@@ -38,7 +43,7 @@ def procedure_summary(record: ProcedureRecord) -> dict[str, Any]:
         "detail_level": record.detail_level,
         "source_url": record.source_url,
         "status": record.data.get("status", "unknown"),
-        "agency": record.data.get("agency"),
+        "agency": agency_name,
     }
 
 
@@ -48,6 +53,11 @@ def list_procedures(store: ProcedureDataStore, *, detailed_only: bool) -> list[d
 
 
 def procedure_detail(record: ProcedureRecord) -> dict[str, Any]:
+    documents = record.data.get("documents") or {}
+    guidance = build_user_guidance(record.data)
+    primary_documents = _primary_documents(documents, guidance=record.data.get("guidance"))
+    conditional_documents = _normalize_document_items(documents.get("conditional") or [])
+    form_documents = _normalize_document_items(documents.get("forms") or [])
     return {
         **procedure_summary(record),
         "scope": record.data.get("scope"),
@@ -55,6 +65,21 @@ def procedure_detail(record: ProcedureRecord) -> dict[str, Any]:
         "submission_methods": record.data.get("submission_methods", []),
         "processing_note": record.data.get("processing_note"),
         "legal_bases": record.data.get("legal_bases") or record.data.get("legal_basis") or [],
+        "guidance": record.data.get("guidance") or {},
+        "next_steps": record.data.get("next_steps") or {},
+        "clarifying_questions": record.data.get("clarifying_questions") or [],
+        "checklist": {
+            "documents": primary_documents,
+            "conditional_documents": conditional_documents,
+            "forms": form_documents,
+            "notes": documents.get("notes") or [],
+            "steps": record.data.get("steps") or [],
+            "user_steps": guidance.get("user_steps") or [],
+            "next_step_summary": guidance.get("next_step_summary"),
+            "overview_summary": guidance.get("overview_summary"),
+            "processing_time_summary": guidance.get("processing_time_summary"),
+            "submission_place_summary": guidance.get("submission_place_summary"),
+        },
         "data_version": record.data.get("schema_version"),
         "provenance": record.data.get("provenance") or record.data.get("source") or {},
     }
@@ -64,10 +89,14 @@ def form_schema(record: ProcedureRecord) -> dict[str, Any]:
     fields = []
     raw_fields = record.data.get("input_fields") or _fallback_fields(record)
     for item in raw_fields:
-        if not isinstance(item, dict) or not item.get("field"):
+        if not isinstance(item, dict):
+            continue
+        path = str(item.get("field") or item.get("field_id") or "").strip()
+        if not path:
             continue
         field_type = str(item.get("type") or "string")
-        path = str(item["field"])
+        if item.get("field_type") and not item.get("type"):
+            field_type = str(item.get("field_type"))
         options = item.get("options") or item.get("values") or []
         options_source_url = record.source_url
         options_endpoint = None
@@ -93,8 +122,8 @@ def form_schema(record: ProcedureRecord) -> dict[str, Any]:
             validation["format"] = "12 chữ số, ưu tiên tự động điền từ tài khoản VNeID/DVCQG"
         fields.append(
             {
-                "path": item["field"],
-                "label": item.get("label") or item["field"],
+                "path": path,
+                "label": item.get("label") or path,
                 "type": field_type,
                 "required": bool(item.get("required")),
                 "example": item.get("example"),
@@ -114,6 +143,97 @@ def form_schema(record: ProcedureRecord) -> dict[str, Any]:
         "source_url": record.source_url,
         "schema_version": record.data.get("schema_version", "1.0"),
     }
+
+
+def _primary_documents(documents: dict[str, Any], *, guidance: Any) -> list[dict[str, Any]]:
+    primary = _normalize_document_items(documents.get("normally_required") or [])
+    if primary:
+        return primary
+
+    primary = _normalize_document_items(documents.get("presented") or [])
+    if primary:
+        return primary
+
+    primary = _normalize_document_items(documents.get("summary") or [])
+    if primary:
+        return primary
+
+    highlights = guidance.get("highlight_documents") if isinstance(guidance, dict) else []
+    fallback: list[dict[str, Any]] = []
+    for item in highlights or []:
+        if not isinstance(item, dict):
+            continue
+        bucket = str(item.get("bucket") or "").strip()
+        if bucket not in {"required", "presented"}:
+            continue
+        name = _clean_text(item.get("name"))
+        if not name:
+            continue
+        fallback.append(
+            {
+                "name": _compact_document_name(name),
+                "condition": "; ".join(str(value).strip() for value in item.get("conditions") or [] if str(value).strip()) or None,
+                "quantity": None,
+                "notes": None,
+                "alternatives": None,
+            }
+        )
+    return fallback
+
+
+def _normalize_document_items(values: list[Any]) -> list[dict[str, Any]]:
+    normalized: list[dict[str, Any]] = []
+    for item in values:
+        if not isinstance(item, dict):
+            continue
+        name = _clean_text(item.get("name") or item.get("document") or item.get("form_name") or item.get("title"))
+        if not name:
+            continue
+        full_name = name
+        notes = _clean_text(item.get("notes") or item.get("note") or item.get("why") or item.get("tep_dinh_kem"))
+        name = _compact_document_name(name)
+        if name != full_name and not notes:
+            notes = full_name
+        normalized.append(
+            {
+                "name": name,
+                "condition": _clean_text(item.get("condition") or item.get("applies_when") or item.get("group")) or None,
+                "quantity": _document_quantity(item),
+                "notes": notes or None,
+                "alternatives": item.get("alternatives") or item.get("documents"),
+            }
+        )
+    return normalized
+
+
+def _document_quantity(item: dict[str, Any]) -> str | None:
+    quantity = _clean_text(item.get("quantity"))
+    if quantity:
+        return quantity
+    parts: list[str] = []
+    if item.get("ban_chinh") is not None:
+        parts.append(f"{item['ban_chinh']} bản chính")
+    if item.get("ban_sao") is not None:
+        parts.append(f"{item['ban_sao']} bản sao")
+    return ", ".join(parts) or None
+
+
+def _compact_document_name(value: str) -> str:
+    name = _clean_text(value)
+    if len(name) <= 160:
+        return name
+    for separator in (". ", "; ", " - ", ": "):
+        if separator in name:
+            candidate = name.split(separator, 1)[0].strip()
+            if 12 <= len(candidate) <= 160:
+                return candidate
+    return name[:157].rstrip() + "..."
+
+
+def _clean_text(value: Any) -> str:
+    if value is None:
+        return ""
+    return " ".join(str(value).split())
 
 
 def _fallback_fields(record: ProcedureRecord) -> list[dict[str, Any]]:

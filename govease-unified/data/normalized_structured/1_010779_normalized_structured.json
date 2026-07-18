@@ -1,0 +1,165 @@
+{
+  "schema_version": "1.0",
+  "normalizer_version": "0.2.0",
+  "source": {
+    "procedure_code": "1.010779",
+    "title": "Xét chuyển học sinh hoàn thành dự bị đại học vào học trình độ đại học, trình độ cao đẳng ngành Giáo dục Mầm non",
+    "raw_structured_parser_version": "0.1.0",
+    "field": "Thi, tuyển sinh"
+  },
+  "procedure": {
+    "level": "Cấp bộ/ngành, Cơ quan khác",
+    "procedure_type": "TTHC được luật giao quy định chi tiết",
+    "target_users": [
+      "Công dân Việt Nam"
+    ],
+    "authorities": [
+      "Trường Dự bị Đại học Dân tộc Sầm Sơn - Bộ giáo dục đào tạo, Trường Dự bị Đại học Dân tộc Trung ương - Bộ giáo dục đào tạo, Trường Dự bị Đại học Dân tộc Nha Trang - Bộ giáo dục đào tạo, Trường Dự bị Đại học thành phố Hồ Chí Minh - Bộ giáo dục đào tạo"
+    ],
+    "receiving_places": []
+  },
+  "submission": {
+    "channels": [
+      "in_person",
+      "online",
+      "postal"
+    ],
+    "methods": [
+      {
+        "method_id": "method_1",
+        "channel": "online",
+        "processing_time_text": "1 ngày",
+        "fee_text": null,
+        "description": null,
+        "is_online": true,
+        "is_postal": false,
+        "is_in_person": false
+      },
+      {
+        "method_id": "method_2",
+        "channel": "postal",
+        "processing_time_text": "1 ngày",
+        "fee_text": null,
+        "description": null,
+        "is_online": false,
+        "is_postal": true,
+        "is_in_person": false
+      },
+      {
+        "method_id": "method_3",
+        "channel": "in_person",
+        "processing_time_text": "1 ngày",
+        "fee_text": null,
+        "description": null,
+        "is_online": false,
+        "is_postal": false,
+        "is_in_person": true
+      }
+    ],
+    "timing_summary": {
+      "unique_processing_times": [
+        "1 ngày"
+      ],
+      "method_count": 3
+    }
+  },
+  "documents": {
+    "required": [
+      {
+        "document_id": "kh_ng_quy_nh",
+        "name": "Không quy định",
+        "group_name": "default",
+        "group_type": "unknown",
+        "original_count": "0",
+        "copy_count": "0",
+        "conditions": [],
+        "attachment_label": null,
+        "attachment_path": null
+      }
+    ],
+    "conditional": [],
+    "presented": [],
+    "notes": [],
+    "forms": [],
+    "empty_groups": [],
+    "document_count": 1
+  },
+  "process": {
+    "steps": [
+      {
+        "step_id": "step_1",
+        "title": null,
+        "content": "1. Học sinh đăng ký nguyện vọng xét chuyển vào cơ sở đào tạo theo hướng dẫn của trường dự bị đại học. Mỗi học sinh hoàn thành dự bị đại học được đăng ký không quá 03 nguyện vọng xét chuyển vào ngành học của cơ sở đào tạo, sắp xếp nguyện vọng theo thứ tự ưu tiên từ cao xuống thấp (nguyện vọng 1 là nguyện vọng cao nhất).",
+        "actor": "user",
+        "channel_hint": null,
+        "time_hint": null
+      },
+      {
+        "step_id": "step_2",
+        "title": null,
+        "content": "Trường dự bị đại học nhập dữ liệu học sinh đăng ký xét chuyển; thông báo công khai dữ liệu trên trang thông tin điện tử của trường trong thời gian 5 ngày; cho phép học sinh được thay đổi thứ tự nguyện vọng đã đăng ký trong thời gian công khai dữ liệu; hoàn thiện dữ liệu xét chuyển sau khi học sinh điều chỉnh nguyện vọng.",
+        "actor": "user",
+        "channel_hint": null,
+        "time_hint": "5 ngày"
+      },
+      {
+        "step_id": "step_3",
+        "title": null,
+        "content": "Đối với mỗi ngành của cơ sở đào tạo, xét bắt đầu từ nguyện vọng 1, căn cứ điểm xét chuyển của học sinh lấy từ cao xuống cho đến khi đủ chỉ tiêu; nếu vẫn còn chỉ tiêu thì xét đến nguyện vọng 2; nguyện vọng 3. Trường hợp học sinh không đủ điểm xét chuyển theo các nguyện vọng đã đăng ký thì được Hội đồng xét chuyển vào cơ sở đào tạo còn chỉ tiêu.",
+        "actor": "user",
+        "channel_hint": null,
+        "time_hint": null
+      },
+      {
+        "step_id": "step_4",
+        "title": null,
+        "content": "Hiệu trưởng trường dự bị đại học phê duyệt kết quả xét chuyển học sinh hoàn thành dự bị đại học vào các cơ sở đào tạo; công bố kết quả trên trang thông tin điện tử của trường và niêm yết công khai tại trụ sở của trường; báo cáo Bộ Giáo dục và Đào tạo những vướng mắc (nếu có) trong quá trình xét chuyển để đảm bảo quyền lợi cho học sinh.",
+        "actor": "user",
+        "channel_hint": null,
+        "time_hint": null
+      }
+    ],
+    "step_count": 4,
+    "notes": []
+  },
+  "eligibility": {
+    "conditions": [
+      "Điều kiện học sinh được xét chuyển:",
+      "a) Hoàn thành dự bị đại học.",
+      "b) Đáp ứng được yêu cầu về ngưỡng đảm bảo chất lượng đầu vào (nếu có) đối với một số ngành theo quy định."
+    ],
+    "has_conditions": true
+  },
+  "results": {
+    "items": [
+      {
+        "name": "Quyết định phê duyệt kết quả xét chuyển học sinh hoàn thành dự bị đại học vào các cơ sở đào tạo của Hiệu trưởng trường dự bị đại học",
+        "result_code": "KQ.G03.000216",
+        "raw_text": "Quyết định phê duyệt kết quả xét chuyển học sinh hoàn thành dự bị đại học vào các cơ sở đào tạo của Hiệu trưởng trường dự bị đại học"
+      }
+    ],
+    "primary_result": {
+      "name": "Quyết định phê duyệt kết quả xét chuyển học sinh hoàn thành dự bị đại học vào các cơ sở đào tạo của Hiệu trưởng trường dự bị đại học",
+      "result_code": "KQ.G03.000216",
+      "raw_text": "Quyết định phê duyệt kết quả xét chuyển học sinh hoàn thành dự bị đại học vào các cơ sở đào tạo của Hiệu trưởng trường dự bị đại học"
+    }
+  },
+  "legal_basis": {
+    "items": [
+      {
+        "title": "Thông tư 44/2021/TT-BGDĐT",
+        "code": "44/2021/TT-BGDĐT"
+      }
+    ],
+    "count": 1
+  },
+  "attachments": [],
+  "signals": {
+    "raw_parse_warnings": [],
+    "missing_documents": false,
+    "documents_section_present": true,
+    "documents_declared_empty": false,
+    "documents_only_in_notes": false,
+    "missing_results": false
+  }
+}

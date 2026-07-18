@@ -1,0 +1,159 @@
+{
+  "schema_version": "1.0",
+  "domain": "dien_luc_nha_o_dat_dai",
+  "updated_at": "2026-07-18",
+  "source_files": [
+    "C:\\Users\\ku060\\Downloads\\VAIC source\\data-pipeline\\main\\full-data.csv",
+    "C:\\Users\\ku060\\Downloads\\VAIC source\\data-pipeline\\data\\workflows\\dien_luc_nha_o_dat_dai\\summary.csv",
+    "C:\\Users\\ku060\\Downloads\\VAIC source\\data-pipeline\\data\\workflows\\dien_luc_nha_o_dat_dai\\normalized.json",
+    "C:\\Users\\ku060\\Downloads\\VAIC source\\data-pipeline\\raw_data"
+  ],
+  "coverage": {
+    "expected_codes": [
+      "2.002676",
+      "3.000001"
+    ],
+    "covered_codes": [
+      "2.002676",
+      "3.000001"
+    ],
+    "missing_codes": []
+  },
+  "llm_contract": {
+    "role": "parse_user_answer_and_rephrase_question_only",
+    "required_output_schema": {
+      "intent": "dien_luc_nha_o_dat_dai",
+      "current_node": "string",
+      "slot_updates": {
+        "subdomain_key": "dang_ky_quyen_so_huu_quyen_su_dung | chuyen_nhuong_tang_cho_thua_ke | gop_von_the_chap | chuyen_muc_dich_su_dung | xay_dung_cong_trinh_nha_o | cung_cap_dien_nang | unknown",
+        "operation_key": "string",
+        "operation_group": "string"
+      },
+      "confidence": "0_to_1",
+      "needs_human_review": "boolean"
+    }
+  },
+  "entry_prompts": [
+    "Bạn cần làm việc về quyền sử dụng đất, sang tên, thế chấp, chuyển mục đích, xây dựng nhà ở hay điện sinh hoạt?",
+    "Bạn muốn đăng ký mới, chỉnh lý biến động, xin phép xây dựng, đăng ký nhà ở xã hội hay cấp điện mới?"
+  ],
+  "slots": [
+    {
+      "name": "subdomain_key",
+      "required": true,
+      "description": "Nhánh chính của nhóm Điện lực, nhà ở, đất đai."
+    },
+    {
+      "name": "operation_key",
+      "required": true,
+      "description": "Thao tác cụ thể ánh xạ trực tiếp tới thủ tục cuối cùng."
+    },
+    {
+      "name": "operation_group",
+      "required": false,
+      "description": "Nhóm thao tác để gom các thủ tục gần nhau cho UI và parser."
+    }
+  ],
+  "subdomain_catalog": [
+    {
+      "subdomain_key": "cung_cap_dien_nang",
+      "subdomain_label": "Cung cấp điện năng",
+      "event_id": 323,
+      "summary": "Nhóm thủ tục cấp điện mới cho hộ dân và thông báo phát triển điện mặt trời mái nhà tự sản xuất, tự tiêu thụ có đấu nối."
+    }
+  ],
+  "decision_tree": {
+    "start_node": "housing_land_electricity_subdomain",
+    "nodes": [
+      {
+        "id": "housing_land_electricity_subdomain",
+        "type": "question",
+        "slot": "subdomain_key",
+        "question": "Bạn đang cần làm việc về sổ đất, sang tên, thế chấp, chuyển mục đích sử dụng đất, xây dựng nhà ở hay cấp điện?",
+        "options": [
+          "cung_cap_dien_nang"
+        ],
+        "prefilled_value": "cung_cap_dien_nang"
+      },
+      {
+        "id": "housing_land_electricity_operation",
+        "type": "question",
+        "slot": "operation_key",
+        "question": "Trong nhánh đã chọn, bạn đang cần thao tác cụ thể nào?",
+        "options_by_subdomain": {
+          "cung_cap_dien_nang": [
+            {
+              "operation_key": "thong_bao_phat_trien_nguon_dien_mat_troi_mai_nha_tu_san_xuat_tu_tieu_thu_dau_noi_voi_he_thong_dien_quoc_gia_tai_cap_dien_ap_tu_trung_ap_tro_len",
+              "operation_group": "thong_bao_dien_mat_troi_mai_nha",
+              "procedure_code": "2.002676",
+              "procedure_title": "Thông báo phát triển nguồn điện mặt trời mái nhà tự sản xuất, tự tiêu thụ đấu nối với hệ thống điện quốc gia tại cấp điện áp từ trung áp trở lên"
+            },
+            {
+              "operation_key": "cap_dien_moi_tu_luoi_dien_ha_ap",
+              "operation_group": "cap_dien_moi",
+              "procedure_code": "3.000001",
+              "procedure_title": "Cấp điện mới từ lưới điện hạ áp"
+            }
+          ]
+        },
+        "options": [
+          "thong_bao_phat_trien_nguon_dien_mat_troi_mai_nha_tu_san_xuat_tu_tieu_thu_dau_noi_voi_he_thong_dien_quoc_gia_tai_cap_dien_ap_tu_trung_ap_tro_len",
+          "cap_dien_moi_tu_luoi_dien_ha_ap"
+        ]
+      }
+    ],
+    "routes": [
+      {
+        "route_id": "cung_cap_dien_nang-2_002676",
+        "conditions": {
+          "subdomain_key": "cung_cap_dien_nang",
+          "operation_key": "thong_bao_phat_trien_nguon_dien_mat_troi_mai_nha_tu_san_xuat_tu_tieu_thu_dau_noi_voi_he_thong_dien_quoc_gia_tai_cap_dien_ap_tu_trung_ap_tro_len"
+        },
+        "procedure_code": "2.002676",
+        "procedure_name": "Thông báo phát triển nguồn điện mặt trời mái nhà tự sản xuất, tự tiêu thụ đấu nối với hệ thống điện quốc gia tại cấp điện áp từ trung áp trở lên",
+        "why_this_route": "Route trực tiếp cho nhu cầu 'Thông báo phát triển nguồn điện mặt trời mái nhà tự sản xuất, tự tiêu thụ đấu nối với hệ thống điện quốc gia tại cấp điện áp từ trung áp trở lên' trong nhánh 'Cung cấp điện năng'."
+      },
+      {
+        "route_id": "cung_cap_dien_nang-3_000001",
+        "conditions": {
+          "subdomain_key": "cung_cap_dien_nang",
+          "operation_key": "cap_dien_moi_tu_luoi_dien_ha_ap"
+        },
+        "procedure_code": "3.000001",
+        "procedure_name": "Cấp điện mới từ lưới điện hạ áp",
+        "why_this_route": "Route trực tiếp cho nhu cầu 'Cấp điện mới từ lưới điện hạ áp' trong nhánh 'Cung cấp điện năng'."
+      }
+    ]
+  },
+  "pre_submission_checks": [
+    {
+      "field_group": "land_registration",
+      "checks": [
+        "Nhóm đất đai phải làm rõ loại biến động: đăng ký lần đầu, cấp đổi, cấp lại, đính chính, tách thửa hay sang tên do chuyển quyền.",
+        "Thông tin thửa đất, số Giấy chứng nhận, chủ sử dụng đất và giấy tờ chứng minh nguồn gốc đất phải thống nhất giữa tờ khai và hồ sơ đính kèm."
+      ]
+    },
+    {
+      "field_group": "secured_transactions",
+      "checks": [
+        "Nhóm góp vốn, thế chấp phải xác định rõ là đăng ký mới, thay đổi, xóa hay thông báo xử lý tài sản bảo đảm.",
+        "Nếu là thế chấp quyền tài sản phát sinh từ hợp đồng mua bán nhà ở, phải có thông tin hợp đồng và tài sản gắn liền với đất đủ để định danh tài sản bảo đảm."
+      ]
+    },
+    {
+      "field_group": "construction_and_housing",
+      "checks": [
+        "Nhóm xây dựng, nhà ở phải phân biệt rõ xây mới, sửa chữa, cải tạo, di dời hay tiếp cận nhà ở xã hội.",
+        "Các trường hợp xin phép xây dựng nhà ở riêng lẻ cần kiểm tra địa chỉ xây dựng, quyền sử dụng đất và bản vẽ thiết kế trước khi nhận hồ sơ."
+      ]
+    },
+    {
+      "field_group": "electricity_services",
+      "checks": [
+        "Nhóm điện năng phải phân biệt giữa cấp điện mới và thông báo phát triển điện mặt trời mái nhà có đấu nối.",
+        "Nếu là cấp điện mới, cần có địa chỉ sử dụng điện, nhu cầu công suất và giấy tờ định danh người yêu cầu."
+      ]
+    }
+  ],
+  "subdomain_key": "cung_cap_dien_nang"
+}

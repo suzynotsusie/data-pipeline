@@ -1,0 +1,117 @@
+{
+  "schema_version": "1.0",
+  "enricher_version": "0.2.0",
+  "source": {
+    "procedure_code": "1.008573",
+    "title": "Miễn thuế, giảm thuế theo Hiệp định thuế đối với cá nhân là đối tượng cư trú của nước ngoài và cá nhân người nước ngoài là đối tượng cư trú của Việt Nam",
+    "group_key": "cu_tru_giay_to",
+    "workflow_family": null,
+    "subflow": null
+  },
+  "experience": {
+    "entry_label": "Hỗ trợ cư trú và giấy tờ",
+    "overview_summary": "Thủ tục này thuộc nhóm cư trú và giấy tờ, thường cần kiểm tra thông tin định danh hoặc hồ sơ giấy tờ chuyên ngành. Kết quả thường nhận được là Thông báo về việc người nộp thuế thuộc hoặc không thuộc diện được miễn thuế theo Hiệp định thuế hoặc Điều ước quốc tế khác (Mẫu số 03-1/MGTH). Thời gian xử lý tham khảo: 30 ngày.",
+    "next_step_summary": "Nên kiểm tra trước giấy tờ định danh, nơi nộp và mẫu biểu liên quan, rồi chọn kênh nộp phù hợp: Trực tiếp, Trực tuyến, Dịch vụ bưu chính. Hiện có khoảng 10 mục giấy tờ cần theo dõi trong checklist.",
+    "tone": "supportive_public_service"
+  },
+  "guidance": {
+    "highlight_documents": [
+      {
+        "bucket": "required",
+        "name": "Văn bản đề nghị theo mẫu số 01/HTQT ban hành kèm theo Thông tư số 80/2021/TT-BTC ngày 29/9/2021 của Bộ Tài chính (đã được sửa đổi tại Thông tư số 94/2025/TT-BTC)",
+        "conditions": [],
+        "attachment_path": null
+      },
+      {
+        "bucket": "required",
+        "name": "+ Bản gốc (hoặc bản sao đã được chứng thực) Giấy chứng nhận cư trú của nước cư trú do Cơ quan thuế cấp ngay trước năm đề nghị miễn, giảm thuế theo Hiệp định thuế đã được hợp pháp hóa lãnh sự;",
+        "conditions": [],
+        "attachment_path": null
+      },
+      {
+        "bucket": "required",
+        "name": "+ Bản sao hộ chiếu sử dụng cho việc xuất nhập cảnh tại Việt Nam và cá nhân ký cam kết chịu trách nhiệm vào bản sao đó;",
+        "conditions": [],
+        "attachment_path": null
+      },
+      {
+        "bucket": "required",
+        "name": "+ Bản sao đăng ký kinh doanh hoặc giấy phép hành nghề do Việt Nam cấp (đối với các ngành nghề pháp luật Việt Nam yêu cầu phải đăng ký kinh doanh hoặc có giấy phép hành nghề) đối với cá nhân có thu nhập từ hoạt động hành nghề độc lập (thu nhập của thầy thuốc, luật sư, kỹ sư, kiến trúc sư, nha sĩ, kế toán viên) có xác nhận của người nộp thuế;",
+        "conditions": [],
+        "attachment_path": null
+      },
+      {
+        "bucket": "required",
+        "name": "+ Bản sao Hợp đồng lao động với người sử dụng lao động tại Việt Nam (đối với thu nhập từ tiền lương, tiền công và thu nhập từ kinh doanh) hoặc bản sao giấy tờ pháp lý chứng minh nguồn gốc của khoản thu nhập (đối với các loại thu nhập khác) và cá nhân ký cam kết chịu trách nhiệm vào bản sao đó;",
+        "conditions": [],
+        "attachment_path": null
+      },
+      {
+        "bucket": "required",
+        "name": "+ Bản sao đăng ký kinh doanh hoặc giấy phép hành nghề, giấy chứng nhận đăng ký thuế do nước cư trú cấp đối với cá nhân có thu nhập từ hoạt động hành nghề độc lập (thu nhập của thầy thuốc, luật sư, kỹ sư, kiến trúc sư, nha sĩ, kế toán viên) có xác nhận của người nộp thuế;",
+        "conditions": [],
+        "attachment_path": null
+      }
+    ],
+    "special_cases": [
+      "Có yếu tố nước ngoài",
+      "Có thể cần giấy tờ ủy quyền",
+      "Có thể cần đối chiếu thông tin thửa đất hoặc giấy chứng nhận",
+      "Có thể cần xác minh quan hệ lao động hoặc giấy phép làm việc"
+    ],
+    "common_errors": [
+      "Thiếu giấy tờ hoặc nội dung ủy quyền phù hợp.",
+      "Thiếu giấy tờ hợp pháp hóa hoặc giấy tờ nhân thân của phía nước ngoài.",
+      "Điền sai mẫu tờ khai hoặc chọn sai biểu mẫu đi kèm.",
+      "Thông tin thửa đất, tài sản hoặc giấy chứng nhận chưa khớp với hồ sơ hiện có.",
+      "Thiếu hồ sơ về vị trí việc làm, đơn vị sử dụng lao động hoặc điều kiện làm việc áp dụng."
+    ],
+    "validation_hints": [
+      "Nên xác định trước kênh nộp hồ sơ để biết có cần bản giấy, bản điện tử hay xuất trình trực tiếp.",
+      "Nên đối chiếu trước dữ liệu định danh và nơi cư trú để tránh bị yêu cầu bổ sung."
+    ]
+  },
+  "intake": {
+    "candidate_input_fields": [
+      {
+        "field_id": "document_request_type",
+        "label": "Loại giấy tờ cần xử lý",
+        "field_type": "text",
+        "required": true
+      },
+      {
+        "field_id": "submission_channel_preference",
+        "label": "Kênh nộp dự kiến",
+        "field_type": "enum",
+        "required": false
+      },
+      {
+        "field_id": "identity_document_available",
+        "label": "Có giấy tờ định danh",
+        "field_type": "boolean",
+        "required": true
+      },
+      {
+        "field_id": "residency_or_status_known",
+        "label": "Biết rõ nơi cư trú hoặc tình trạng hiện tại",
+        "field_type": "boolean",
+        "required": false
+      }
+    ],
+    "suggested_clarifying_questions": [
+      "Bạn đang xử lý giấy tờ gì và muốn nộp trực tiếp hay trực tuyến?",
+      "Thông tin định danh và nơi cư trú hiện tại đã sẵn sàng để đối chiếu chưa?"
+    ]
+  },
+  "ui_hints": {
+    "primary_channel": "online",
+    "result_label": "Thông báo về việc người nộp thuế thuộc hoặc không thuộc diện được miễn thuế theo Hiệp định thuế hoặc Điều ước quốc tế khác (Mẫu số 03-1/MGTH)",
+    "time_badge": "30 ngày",
+    "document_count_badge": 10
+  },
+  "provenance": {
+    "generator": "workflow_domain_enricher",
+    "derivation_mode": "rule_based_semantic_enrichment",
+    "supported_group": true
+  }
+}

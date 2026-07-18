@@ -1,0 +1,102 @@
+{
+  "schema_version": "1.0",
+  "enricher_version": "0.2.0",
+  "source": {
+    "procedure_code": "2.000689",
+    "title": "Thủ tục cấp Giấy xác nhận tình trạng hôn nhân cho công dân Việt Nam trong thời gian cư trú ở nước ngoài",
+    "group_key": "cu_tru_giay_to",
+    "workflow_family": null,
+    "subflow": null
+  },
+  "experience": {
+    "entry_label": "Hỗ trợ cư trú và giấy tờ",
+    "overview_summary": "Thủ tục này thuộc nhóm cư trú và giấy tờ, thường cần kiểm tra thông tin định danh hoặc hồ sơ giấy tờ chuyên ngành. Kết quả thường nhận được là Giấy xác nhận tình trạng hôn nhân. Thời gian xử lý tham khảo: 3 ngày làm việc.",
+    "next_step_summary": "Nên kiểm tra trước giấy tờ định danh, nơi nộp và mẫu biểu liên quan, rồi chọn kênh nộp phù hợp: Trực tiếp. Hiện có khoảng 3 mục giấy tờ cần theo dõi trong checklist.",
+    "tone": "supportive_public_service"
+  },
+  "guidance": {
+    "highlight_documents": [
+      {
+        "bucket": "conditional",
+        "name": "Giấy tờ phải xuất trình: - Hộ chiếu hoặc giấy tờ có giá trị thay thế hộ chiếu, chứng minh nhân dân, thẻ căn cước công dân, thẻ căn cước hoặc các giấy tờ khác có dán ảnh và thông tin cá nhân do cơ quan có thẩm quyền cấp, còn giá trị sử dụng để chứng minh về nhân thân, quốc tịchcủa người có yêu cầu cấp Giấy xác nhận tình trạng hôn nhân. - Giấy tờ chứng minh nơi cư trú của người yêu cầu cấp Giấy xác nhận tình trạng hôn nhân để xác định thẩm quyền. Trường hợp gửi hồ sơ qua đường hệ thống bưu chính thì nộp bản sao các giấy tờ nêu trên đã được chứng thực hợp lệ. Trường hợp người yêu cầu là công dân Việt Nam và đã được cấp thẻ Căn cước công dân hoặc thẻ Căn cước có số định danh cá nhân thì có thể xuất trình bản chính giấy tờ đó (nếu nộp trực tiếp) hoặc nộp bản chụp giấy tờ này (nếu nộp qua đường hệ thống bưu chính hoặc gửi qua hệ thống đăng ký hộ tịch trực tuyến) để chứng minh nhân thân khi cơ sở hạ tầng kỹ thuật cho phép Cơ quan đại diện Việt Nam ở nước ngoài kết nối với CSDLQGVDC.",
+        "conditions": [
+          "Giấy tờ phải xuất trình: - Hộ chiếu hoặc giấy tờ có giá trị thay thế hộ chiếu, chứng minh nhân dân, thẻ căn cước công dân, thẻ căn cước hoặc các giấy tờ khác có dán ảnh và thông tin cá nhân do cơ quan có thẩm quyền cấp, còn giá trị sử dụng để chứng minh về nhân thân, quốc tịchcủa người có yêu cầu cấp Giấy xác nhận tình trạng hôn nhân. - Giấy tờ chứng minh nơi cư trú của người yêu cầu cấp Giấy xác nhận tình trạng hôn nhân để xác định thẩm quyền. Trường hợp gửi hồ sơ qua đường hệ thống bưu chính thì nộp bản sao các giấy tờ nêu trên đã được chứng thực hợp lệ. Trường hợp người yêu cầu là công dân Việt Nam và đã được cấp thẻ Căn cước công dân hoặc thẻ Căn cước có số định danh cá nhân thì có thể xuất trình bản chính giấy tờ đó (nếu nộp trực tiếp) hoặc nộp bản chụp giấy tờ này (nếu nộp qua đường hệ thống bưu chính hoặc gửi qua hệ thống đăng ký hộ tịch trực tuyến) để chứng minh nhân thân khi cơ sở hạ tầng kỹ thuật cho phép Cơ quan đại diện Việt Nam ở nước ngoài kết nối với CSDLQGVDC."
+        ],
+        "attachment_path": null
+      },
+      {
+        "bucket": "conditional",
+        "name": "Tờ khai cấp Giấy xác nhận tình trạng hôn nhân theo mẫu tại Phụ lục Thông tư 04/2020/TT-BTP (nếu người có yêu cầu lựa chọn nộp hồ sơ theo hình thức trực tiếp).",
+        "conditions": [
+          "Tờ khai cấp Giấy xác nhận tình trạng hôn nhân theo mẫu tại Phụ lục Thông tư 04/2020/TT-BTP (nếu người có yêu cầu lựa chọn nộp hồ sơ theo hình thức trực tiếp)."
+        ],
+        "attachment_path": "file:///C:/Users/ku060/Downloads/data/raw_data/2_000689/17.%20Tk%20cap%20Giay%20XNTTHN.doc"
+      },
+      {
+        "bucket": "conditional",
+        "name": "Trường hợp người yêu cầu đã có vợ hoặc đã có chồng nhưng đã ly hôn thì phải nộp bản sao giấy tờ ly hôn đã có hiệu lực pháp luật; trường hợp người chồng hoặc người vợ đã chết thì phải nộp bản sao Giấy chứng tử hoặc giấy tờ chứng minh người đó đã chết. - Trường hợp đề nghị cấp Giấy xác nhận tình trạng hôn nhân để đăng ký kết hôn tại cơ quan có thẩm quyền của nước ngoài thì phải nộp thêm: + Giấy xác nhận tình trạng hôn nhân do Ủy ban nhân dân cấp xã, nơi người đó thường trú trước khi xuất cảnh cấp, nếu trước khi xuất cảnh công dân Việt Nam đã đủ tuổi kết hôn theo quy định của Luật hôn nhân và gia đình Việt Nam; trường hợp trước khi xuất cảnh công dân Việt Nam đã đăng ký kết hôn, nhưng sau khi ra nước ngoài đã ly hôn hoặc người vợ, chồng kia đã chết thì nộp các giấy tờ chứng minh theo quy định (Trường hợp người yêu cầu đã có vợ hoặc đã có chồng nhưng đã ly hôn thì phải nộp bản sao giấy tờ ly hôn đã có hiệu lực pháp luật; trường hợp người chồng hoặc người vợ đã chết thì phải nộp bản sao Giấy chứng tử hoặc giấy tờ chứng minh người đó đã chết). - Giấy xác nhận tình trạng hôn nhân do Cơ quan đại diện Việt Nam ở nước ngoài phụ trách khu vực lãnh sự nơi công dân Việt Nam đã cư trú trước đây cấp nếu công dân Việt Nam đã từng cư trú ở nhiều nơi khác nhau. Trường hợp không thể xin được xác nhận tình trạng hôn nhân tại các nơi cư trú trước đây thì phải nộp văn bản cam đoan về tình trạng hôn nhân của mình trong thời gian cư trú ở các nơi đó và chịu trách nhiệm trước pháp luật về nội dung đã cam đoan. - Trường hợp người yêu cầu là công dân Việt Nam đã được cấp số định danh cá nhân, các thông tin của người đó đã được cập nhật vào Cơ sở dữ liệu quốc gia về dân cư và Cơ quan đại diện đã sử dụng Phần mềm đăng ký, quản lý hộ tịch điện tử dùng chung thì Cơ quan đại diện khai thác thông tin trực tuyến theo hướng dẫn của Bộ Tư pháp và Bộ Công an.",
+        "conditions": [
+          "Trường hợp người yêu cầu đã có vợ hoặc đã có chồng nhưng đã ly hôn thì phải nộp bản sao giấy tờ ly hôn đã có hiệu lực pháp luật; trường hợp người chồng hoặc người vợ đã chết thì phải nộp bản sao Giấy chứng tử hoặc giấy tờ chứng minh người đó đã chết. - Trường hợp đề nghị cấp Giấy xác nhận tình trạng hôn nhân để đăng ký kết hôn tại cơ quan có thẩm quyền của nước ngoài thì phải nộp thêm: + Giấy xác nhận tình trạng hôn nhân do Ủy ban nhân dân cấp xã, nơi người đó thường trú trước khi xuất cảnh cấp, nếu trước khi xuất cảnh công dân Việt Nam đã đủ tuổi kết hôn theo quy định của Luật hôn nhân và gia đình Việt Nam; trường hợp trước khi xuất cảnh công dân Việt Nam đã đăng ký kết hôn, nhưng sau khi ra nước ngoài đã ly hôn hoặc người vợ, chồng kia đã chết thì nộp các giấy tờ chứng minh theo quy định (Trường hợp người yêu cầu đã có vợ hoặc đã có chồng nhưng đã ly hôn thì phải nộp bản sao giấy tờ ly hôn đã có hiệu lực pháp luật; trường hợp người chồng hoặc người vợ đã chết thì phải nộp bản sao Giấy chứng tử hoặc giấy tờ chứng minh người đó đã chết). - Giấy xác nhận tình trạng hôn nhân do Cơ quan đại diện Việt Nam ở nước ngoài phụ trách khu vực lãnh sự nơi công dân Việt Nam đã cư trú trước đây cấp nếu công dân Việt Nam đã từng cư trú ở nhiều nơi khác nhau. Trường hợp không thể xin được xác nhận tình trạng hôn nhân tại các nơi cư trú trước đây thì phải nộp văn bản cam đoan về tình trạng hôn nhân của mình trong thời gian cư trú ở các nơi đó và chịu trách nhiệm trước pháp luật về nội dung đã cam đoan. - Trường hợp người yêu cầu là công dân Việt Nam đã được cấp số định danh cá nhân, các thông tin của người đó đã được cập nhật vào Cơ sở dữ liệu quốc gia về dân cư và Cơ quan đại diện đã sử dụng Phần mềm đăng ký, quản lý hộ tịch điện tử dùng chung thì Cơ quan đại diện khai thác thông tin trực tuyến theo hướng dẫn của Bộ Tư pháp và Bộ Công an."
+        ],
+        "attachment_path": null
+      }
+    ],
+    "special_cases": [
+      "Có yếu tố nước ngoài",
+      "Có trường hợp hồ sơ điện tử thay thế bản giấy",
+      "Có kiểm tra dữ liệu cư trú/định danh"
+    ],
+    "common_errors": [
+      "Thiếu giấy tờ hợp pháp hóa hoặc giấy tờ nhân thân của phía nước ngoài.",
+      "Điền sai mẫu tờ khai hoặc chọn sai biểu mẫu đi kèm."
+    ],
+    "validation_hints": [
+      "Nên xác định trước kênh nộp hồ sơ để biết có cần bản giấy, bản điện tử hay xuất trình trực tiếp.",
+      "Có mẫu biểu đính kèm, nên kiểm tra đúng biểu mẫu trước khi nộp.",
+      "Nên đối chiếu trước dữ liệu định danh và nơi cư trú để tránh bị yêu cầu bổ sung."
+    ]
+  },
+  "intake": {
+    "candidate_input_fields": [
+      {
+        "field_id": "document_request_type",
+        "label": "Loại giấy tờ cần xử lý",
+        "field_type": "text",
+        "required": true
+      },
+      {
+        "field_id": "submission_channel_preference",
+        "label": "Kênh nộp dự kiến",
+        "field_type": "enum",
+        "required": false
+      },
+      {
+        "field_id": "identity_document_available",
+        "label": "Có giấy tờ định danh",
+        "field_type": "boolean",
+        "required": true
+      },
+      {
+        "field_id": "residency_or_status_known",
+        "label": "Biết rõ nơi cư trú hoặc tình trạng hiện tại",
+        "field_type": "boolean",
+        "required": false
+      }
+    ],
+    "suggested_clarifying_questions": [
+      "Bạn đang xử lý giấy tờ gì và muốn nộp trực tiếp hay trực tuyến?",
+      "Thông tin định danh và nơi cư trú hiện tại đã sẵn sàng để đối chiếu chưa?"
+    ]
+  },
+  "ui_hints": {
+    "primary_channel": "in_person",
+    "result_label": "Giấy xác nhận tình trạng hôn nhân",
+    "time_badge": "3 ngày làm việc",
+    "document_count_badge": 3
+  },
+  "provenance": {
+    "generator": "workflow_domain_enricher",
+    "derivation_mode": "rule_based_semantic_enrichment",
+    "supported_group": true
+  }
+}

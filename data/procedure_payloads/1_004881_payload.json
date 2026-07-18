@@ -1,0 +1,1433 @@
+{
+  "schema_version": "3.0",
+  "record_type": "public_service_procedure_payload",
+  "id": "procedure-1.004881",
+  "procedure_code": "1.004881",
+  "code": "1.004881",
+  "title": "Cấp Giấy chứng nhận lưu hành thuốc thú y; Cấp lại Giấy chứng nhận lưu hành thuốc thú y (trong trường hợp thay đổi thành phần, công thức, dạng bào chế, đường dùng, liều dùng, chỉ định điều trị của thuốc thú y; thay đổi phương pháp, quy trình sản xuất mà làm thay đổi chất lượng sản phẩm; đánh giá lại chất lượng, hiệu quả, độ an toàn của thuốc thú y theo quy định)",
+  "language": "vi",
+  "status": "generated_from_pipeline",
+  "field": "Thú y",
+  "group_key": "suc_khoe_y_te",
+  "workflow_family": null,
+  "subflow": null,
+  "source": {
+    "source_url": "file:///C:/Users/ku060/Downloads/VAIC%20source/data-pipeline/raw_data/1_004881/1_004881_procedure_detail.md",
+    "source_markdown_path": "C:\\Users\\ku060\\Downloads\\VAIC source\\data-pipeline\\raw_data\\1_004881\\1_004881_procedure_detail.md",
+    "normalized_payload_path": "C:\\Users\\ku060\\Downloads\\VAIC source\\data-pipeline\\govease-unified\\data\\normalized_structured\\1_004881_normalized_structured.json",
+    "enriched_payload_path": "C:\\Users\\ku060\\Downloads\\VAIC source\\data-pipeline\\govease-unified\\data\\enriched_structured_priority\\1_004881_enriched_structured.json"
+  },
+  "scope": {
+    "included": "Thủ tục này thuộc nhóm y tế, thường cần đối chiếu thông tin người bệnh, đơn vị tiếp nhận hoặc quyền lợi chuyên ngành. Kết quả thường nhận được là Giấy chứng nhận lưu hành thuốc thú y. Thời gian xử lý tham khảo: theo thời hạn của cơ quan xử lý.",
+    "not_included": []
+  },
+  "agency": {
+    "executing_agency": "Cục Chăn nuôi và Thú y - Bộ NN và MT",
+    "submission_place": null,
+    "receiving_places": []
+  },
+  "target_users": [
+    "Doanh nghiệp Việt Nam",
+    "Doanh nghiệp có vốn đầu tư nước ngoài",
+    "Tổ chức (không bao gồm doanh nghiệp",
+    "HTX)",
+    "Người Việt Nam định cư ở nước ngoài",
+    "Công dân Việt Nam",
+    "Doanh nghiệp",
+    "Người nước ngoài",
+    "Tổ chức Đảng",
+    "Tổ chức nước ngoài",
+    "Hợp tác xã"
+  ],
+  "submission_methods": [
+    {
+      "code": "ONLINE",
+      "label": "Trực tuyến",
+      "processing_time": null,
+      "fee": null,
+      "description": "- 10 ngày kể từ ngày nhận được hồ sơ hợp lệ đối với hồ sơ đăng ký sản xuất để xuất khẩu, sản xuất gia công, san chia;<br>- 30 ngày kể từ ngày nhận được hồ sơ hợp lệ đối với hồ sơ đăng ký thuốc được miễn khảo nghiệm, chế phẩm sinh học để chẩn đoán;<br>- 75 ngày kể từ ngày nhận được hồ sơ hợp lệ đối với hồ sơ đăng ký thuốc mới, vắc xin, kháng thể, thuốc từ dược liệu."
+    },
+    {
+      "code": "POSTAL",
+      "label": "Dịch vụ bưu chính",
+      "processing_time": null,
+      "fee": null,
+      "description": "- 10 ngày kể từ ngày nhận được hồ sơ hợp lệ đối với hồ sơ đăng ký sản xuất để xuất khẩu, sản xuất gia công, san chia;<br>- 30 ngày kể từ ngày nhận được hồ sơ hợp lệ đối với hồ sơ đăng ký thuốc được miễn khảo nghiệm, chế phẩm sinh học để chẩn đoán;<br>- 75 ngày kể từ ngày nhận được hồ sơ hợp lệ đối với hồ sơ đăng ký thuốc mới, vắc xin, kháng thể, thuốc từ dược liệu."
+    },
+    {
+      "code": "IN_PERSON",
+      "label": "Trực tiếp",
+      "processing_time": null,
+      "fee": null,
+      "description": "- 10 ngày kể từ ngày nhận được hồ sơ hợp lệ đối với hồ sơ đăng ký sản xuất để xuất khẩu, sản xuất gia công, san chia;<br>- 30 ngày kể từ ngày nhận được hồ sơ hợp lệ đối với hồ sơ đăng ký thuốc được miễn khảo nghiệm, chế phẩm sinh học để chẩn đoán;<br>- 75 ngày kể từ ngày nhận được hồ sơ hợp lệ đối với hồ sơ đăng ký thuốc mới, vắc xin, kháng thể, thuốc từ dược liệu."
+    }
+  ],
+  "processing_note": "Nên xác định rõ đối tượng tham gia, quyền lợi hoặc nhu cầu điều chỉnh hồ sơ y tế trước khi nộp. Có thể chọn kênh nộp phù hợp: Trực tiếp, Trực tuyến, Dịch vụ bưu chính. Hiện có khoảng 63 mục giấy tờ cần theo dõi trong checklist.",
+  "documents": {
+    "normally_required": [
+      {
+        "name": "Những thông tin về thuốc gốc, thuốc Generic (tên sản phẩm, tên nhà sản xuất, công thức, dạng bào chế, công dụng, chỉ định điều trị, chống chỉ định, liều lượng sử dụng, thời gian ngừng sử dụng thuốc, những lưu ý đối với động vật được chỉ định, với người sử dụng và các đặc tính kỹ thuật khác của sản phẩm)",
+        "quantity": "1 bản chính, 0 bản sao",
+        "notes": [],
+        "group": "(2) Đối với thuốc dạng dược phẩm, hóa chất, chế phẩm sinh học được miễn khảo nghiệm, hồ sơ đăng ký gồm:",
+        "attachment_path": null
+      },
+      {
+        "name": "Bản cam kết không vi phạm các quy định của luật sở hữu trí tuệ theo mẫu quy định tại Phụ lục VII ban hành kèm theo Thông tư số 13/2016/TT-BNNPTNT;",
+        "quantity": "1 bản chính, 0 bản sao",
+        "notes": [],
+        "group": "(2) Đối với thuốc dạng dược phẩm, hóa chất, chế phẩm sinh học được miễn khảo nghiệm, hồ sơ đăng ký gồm:",
+        "attachment_path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/1_004881/PH%E1%BB%A4%20L%E1%BB%A4C%20VII.M%E1%BA%AAU%20GI%E1%BA%A4Y%20CAM%20K%E1%BA%BET%20%C4%90%C4%82NG%20K%C3%9D%20L%C6%AFU%20H%C3%80NH.docx"
+      },
+      {
+        "name": "Tài liệu nghiên cứu về độ ổn định và hạn sử dụng của thuốc;",
+        "quantity": "1 bản chính, 0 bản sao",
+        "notes": [],
+        "group": "(2) Đối với thuốc dạng dược phẩm, hóa chất, chế phẩm sinh học được miễn khảo nghiệm, hồ sơ đăng ký gồm:",
+        "attachment_path": null
+      },
+      {
+        "name": "Tóm tắt đặc tính của sản phẩm theo mẫu quy định tại Phụ lục VIII ban hành kèm theo Thông tư số 13/2016/TT-BNNPTNT;",
+        "quantity": "1 bản chính, 0 bản sao",
+        "notes": [],
+        "group": "(2) Đối với thuốc dạng dược phẩm, hóa chất, chế phẩm sinh học được miễn khảo nghiệm, hồ sơ đăng ký gồm:",
+        "attachment_path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/1_004881/PH%E1%BB%A4%20L%E1%BB%A4C%20VIII.M%E1%BA%AAU%20T%C3%93M%20T%E1%BA%AET%20%C4%90%E1%BA%B6C%20T%C3%8DNH%20C%E1%BB%A6A%20S%E1%BA%A2N%20PH%E1%BA%A8M.docx"
+      },
+      {
+        "name": "Đơn đăng ký lưu hành theo mẫu quy định tại Phụ lục I ban hành kèm theo Thông tư số 13/2016/TT-BNNPTNT;",
+        "quantity": "1 bản chính, 0 bản sao",
+        "notes": [],
+        "group": "(2) Đối với thuốc dạng dược phẩm, hóa chất, chế phẩm sinh học được miễn khảo nghiệm, hồ sơ đăng ký gồm:",
+        "attachment_path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/1_004881/PH%E1%BB%A4%20L%E1%BB%A4C%20I.%20M%E1%BA%AAU%20%C4%90%C6%A0N%20%C4%90%C4%82NG%20K%C3%9D%20L%C6%AFU%20H%C3%80NH%20THU%E1%BB%90C%20TH%C3%9A%20Y.docx"
+      },
+      {
+        "name": "Mẫu nhãn sản phẩm, tờ hướng dẫn sử dụng;",
+        "quantity": "1 bản chính, 0 bản sao",
+        "notes": [],
+        "group": "(2) Đối với thuốc dạng dược phẩm, hóa chất, chế phẩm sinh học được miễn khảo nghiệm, hồ sơ đăng ký gồm:",
+        "attachment_path": null
+      },
+      {
+        "name": "Tiêu chuẩn chất lượng và phương pháp kiểm nghiệm;",
+        "quantity": "1 bản chính, 0 bản sao",
+        "notes": [],
+        "group": "(2) Đối với thuốc dạng dược phẩm, hóa chất, chế phẩm sinh học được miễn khảo nghiệm, hồ sơ đăng ký gồm:",
+        "attachment_path": null
+      },
+      {
+        "name": "Kết quả khảo nghiệm;",
+        "quantity": "1 bản chính, 0 bản sao",
+        "notes": [],
+        "group": "(1) Đối với thuốc thú y mới dạng dược phẩm, hóa chất, chế phẩm sinh học, hồ sơ đăng ký gồm:",
+        "attachment_path": null
+      },
+      {
+        "name": "Những nghiên cứu về tồn dư trong tất cả các loài động vật được chỉ định dùng thuốc để xác định thời gian ngừng sử dụng thuốc;",
+        "quantity": "1 bản chính, 0 bản sao",
+        "notes": [],
+        "group": "(1) Đối với thuốc thú y mới dạng dược phẩm, hóa chất, chế phẩm sinh học, hồ sơ đăng ký gồm:",
+        "attachment_path": null
+      },
+      {
+        "name": "Tài liệu nghiên cứu về độ ổn định và hạn sử dụng của thuốc;",
+        "quantity": "1 bản chính, 1 bản sao",
+        "notes": [],
+        "group": "(1) Đối với thuốc thú y mới dạng dược phẩm, hóa chất, chế phẩm sinh học, hồ sơ đăng ký gồm:",
+        "attachment_path": null
+      },
+      {
+        "name": "Đơn đăng ký lưu hành theo mẫu quy định tại Phụ lục I ban hành kèm theo Thông tư số 13/2016/TT-BNNPTNT;",
+        "quantity": "1 bản chính, 0 bản sao",
+        "notes": [],
+        "group": "(1) Đối với thuốc thú y mới dạng dược phẩm, hóa chất, chế phẩm sinh học, hồ sơ đăng ký gồm:",
+        "attachment_path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/1_004881/PH%E1%BB%A4%20L%E1%BB%A4C%20I.%20M%E1%BA%AAU%20%C4%90%C6%A0N%20%C4%90%C4%82NG%20K%C3%9D%20L%C6%AFU%20H%C3%80NH%20THU%E1%BB%90C%20TH%C3%9A%20Y.docx"
+      },
+      {
+        "name": "Bản cam kết không vi phạm các quy định của luật sở hữu trí tuệ theo mẫu quy định tại Phụ lục VII ban hành kèm theo Thông tư số 13/2016/TT-BNNPTNT;",
+        "quantity": "1 bản chính, 0 bản sao",
+        "notes": [],
+        "group": "(1) Đối với thuốc thú y mới dạng dược phẩm, hóa chất, chế phẩm sinh học, hồ sơ đăng ký gồm:",
+        "attachment_path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/1_004881/PH%E1%BB%A4%20L%E1%BB%A4C%20VII.M%E1%BA%AAU%20GI%E1%BA%A4Y%20CAM%20K%E1%BA%BET%20%C4%90%C4%82NG%20K%C3%9D%20L%C6%AFU%20H%C3%80NH.docx"
+      },
+      {
+        "name": "Báo cáo về các số liệu chứng minh độ an toàn bao gồm cả tài liệu nghiên cứu về độc tính (độc tính cấp, độc tính bán trường diễn, trường diễn, độc tính tế bào, khả năng gây ung thư);",
+        "quantity": "1 bản chính, 0 bản sao",
+        "notes": [],
+        "group": "(1) Đối với thuốc thú y mới dạng dược phẩm, hóa chất, chế phẩm sinh học, hồ sơ đăng ký gồm:",
+        "attachment_path": null
+      },
+      {
+        "name": "Tóm tắt đặc tính của sản phẩm theo mẫu quy định tại Phụ lục VIII ban hành kèm theo Thông tư số13/2016/TT-BNNPTNT;",
+        "quantity": "1 bản chính, 0 bản sao",
+        "notes": [],
+        "group": "(1) Đối với thuốc thú y mới dạng dược phẩm, hóa chất, chế phẩm sinh học, hồ sơ đăng ký gồm:",
+        "attachment_path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/1_004881/PH%E1%BB%A4%20L%E1%BB%A4C%20VIII.M%E1%BA%AAU%20T%C3%93M%20T%E1%BA%AET%20%C4%90%E1%BA%B6C%20T%C3%8DNH%20C%E1%BB%A6A%20S%E1%BA%A2N%20PH%E1%BA%A8M.docx"
+      },
+      {
+        "name": "Báo cáo về các số liệu chứng minh hiệu lực của sản phẩm bao gồm cả các tài liệu nghiên cứu về dược lý thực nghiệm; về dược lực học, dược động học và sinh khả dụng của sản phẩm;",
+        "quantity": "1 bản chính, 0 bản sao",
+        "notes": [],
+        "group": "(1) Đối với thuốc thú y mới dạng dược phẩm, hóa chất, chế phẩm sinh học, hồ sơ đăng ký gồm:",
+        "attachment_path": null
+      },
+      {
+        "name": "Tài liệu nghiên cứu về liều dùng và liệu trình điều trị đối với từng loài động vật được chỉ định;",
+        "quantity": "1 bản chính, 1 bản sao",
+        "notes": [],
+        "group": "(1) Đối với thuốc thú y mới dạng dược phẩm, hóa chất, chế phẩm sinh học, hồ sơ đăng ký gồm:",
+        "attachment_path": null
+      },
+      {
+        "name": "Tiêu chuẩn chất lượng và phương pháp kiểm nghiệm;",
+        "quantity": "1 bản chính, 0 bản sao",
+        "notes": [],
+        "group": "(1) Đối với thuốc thú y mới dạng dược phẩm, hóa chất, chế phẩm sinh học, hồ sơ đăng ký gồm:",
+        "attachment_path": null
+      },
+      {
+        "name": "Mẫu nhãn sản phẩm, tờ hướng dẫn sử dụng;",
+        "quantity": "1 bản chính, 0 bản sao",
+        "notes": [],
+        "group": "(1) Đối với thuốc thú y mới dạng dược phẩm, hóa chất, chế phẩm sinh học, hồ sơ đăng ký gồm:",
+        "attachment_path": null
+      },
+      {
+        "name": "Những nghiên cứu về tồn dư trong tất cả các loài động vật được chỉ định để xác định thời gian ngừng sử dụng vắc xin, kháng thể;",
+        "quantity": "1 bản chính, 0 bản sao",
+        "notes": [],
+        "group": "(3) Đối với vắc xin, kháng thể, hồ sơ đăng ký gồm:",
+        "attachment_path": null
+      },
+      {
+        "name": "Tiêu chuẩn chất lượng, phương pháp kiểm nghiệm vắc xin, kháng thể;",
+        "quantity": "1 bản chính, 0 bản sao",
+        "notes": [],
+        "group": "(3) Đối với vắc xin, kháng thể, hồ sơ đăng ký gồm:",
+        "attachment_path": null
+      },
+      {
+        "name": "Phương pháp xác định liều dùng và liệu trình sử dụng đối với từng loài động vật được chỉ định;",
+        "quantity": "1 bản chính, 1 bản sao",
+        "notes": [],
+        "group": "(3) Đối với vắc xin, kháng thể, hồ sơ đăng ký gồm:",
+        "attachment_path": null
+      },
+      {
+        "name": "Tài liệu nghiên cứu về độ ổn định, hồ sơ tóm tắt sản xuất từng lô của 3 lô liên tiếp và đề xuất hạn sử dụng;",
+        "quantity": "1 bản chính, 0 bản sao",
+        "notes": [],
+        "group": "(3) Đối với vắc xin, kháng thể, hồ sơ đăng ký gồm:",
+        "attachment_path": null
+      },
+      {
+        "name": "Báo cáo kết quả khảo nghiệm về hiệu lực, an toàn của sản phẩm;",
+        "quantity": "1 bản chính, 0 bản sao",
+        "notes": [],
+        "group": "(3) Đối với vắc xin, kháng thể, hồ sơ đăng ký gồm:",
+        "attachment_path": null
+      },
+      {
+        "name": "Đơn đăng ký lưu hành theo mẫu quy định tại Phụ lục II ban hành, kèm theo Thông tư số 13/2016/TT-BNNPTNT;",
+        "quantity": "1 bản chính, 0 bản sao",
+        "notes": [],
+        "group": "(3) Đối với vắc xin, kháng thể, hồ sơ đăng ký gồm:",
+        "attachment_path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/1_004881/PH%E1%BB%A4%20L%E1%BB%A4C%20II.M%E1%BA%AAU%20%C4%90%C6%A0N%20%C4%90%C4%82NG%20K%C3%9D%20L%C6%AFU%20H%C3%80NH%20V%E1%BA%AEC%20XIN%2C%20KH%C3%81NG%20TH%E1%BB%82%20D%C3%99NG%20TRONG%20TH%C3%9A%20Y.docx"
+      },
+      {
+        "name": "Tóm tắt đặc tính của sản phẩm theo mẫu quy định tại Phụ lục VIII ban hành kèm theo Thông tư số 13/2016/TT-BNNPTNT;",
+        "quantity": "1 bản chính, 0 bản sao",
+        "notes": [],
+        "group": "(3) Đối với vắc xin, kháng thể, hồ sơ đăng ký gồm:",
+        "attachment_path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/1_004881/PH%E1%BB%A4%20L%E1%BB%A4C%20VIII.M%E1%BA%AAU%20T%C3%93M%20T%E1%BA%AET%20%C4%90%E1%BA%B6C%20T%C3%8DNH%20C%E1%BB%A6A%20S%E1%BA%A2N%20PH%E1%BA%A8M.docx"
+      },
+      {
+        "name": "Báo cáo về các số liệu chứng minh độ an toàn, hiệu lực của sản phẩm, bao gồm tài liệu nghiên cứu về hàm lượng và độ dài miễn dịch đối với vắc xin;",
+        "quantity": "1 bản chính, 0 bản sao",
+        "notes": [],
+        "group": "(3) Đối với vắc xin, kháng thể, hồ sơ đăng ký gồm:",
+        "attachment_path": null
+      },
+      {
+        "name": "Mẫu nhãn sản phẩm, tờ hướng dẫn sử dụng;",
+        "quantity": "1 bản chính, 0 bản sao",
+        "notes": [],
+        "group": "(3) Đối với vắc xin, kháng thể, hồ sơ đăng ký gồm:",
+        "attachment_path": null
+      },
+      {
+        "name": "Tiêu chuẩn chất lượng, phương pháp kiểm nghiệm chế phẩm sinh học;",
+        "quantity": "1 bản chính, 0 bản sao",
+        "notes": [],
+        "group": "(4) Đối với chế phẩm sinh học để chẩn đoán (KIT xét nghiệm), hồ sơ đăng ký gồm:",
+        "attachment_path": null
+      },
+      {
+        "name": "Mẫu nhãn sản phẩm; tờ hướng dẫn sử dụng;",
+        "quantity": "1 bản chính, 0 bản sao",
+        "notes": [],
+        "group": "(4) Đối với chế phẩm sinh học để chẩn đoán (KIT xét nghiệm), hồ sơ đăng ký gồm:",
+        "attachment_path": null
+      },
+      {
+        "name": "Báo cáo về các số liệu chứng minh tính đặc hiệu của sản phẩm;",
+        "quantity": "1 bản chính, 0 bản sao",
+        "notes": [],
+        "group": "(4) Đối với chế phẩm sinh học để chẩn đoán (KIT xét nghiệm), hồ sơ đăng ký gồm:",
+        "attachment_path": null
+      },
+      {
+        "name": "Báo cáo kết quả khảo nghiệm, bao gồm nội dung khảo nghiệm về độ nhạy phân tích, tính đặc hiệu của sản phẩm;",
+        "quantity": "1 bản chính, 0 bản sao",
+        "notes": [],
+        "group": "(4) Đối với chế phẩm sinh học để chẩn đoán (KIT xét nghiệm), hồ sơ đăng ký gồm:",
+        "attachment_path": null
+      },
+      {
+        "name": "Đơn đăng ký lưu hành theo mẫu quy định tại Phụ lục III ban hành, kèm theo Thông tư số 13/2016/TT-BNNPTNT;",
+        "quantity": "1 bản chính, 0 bản sao",
+        "notes": [],
+        "group": "(4) Đối với chế phẩm sinh học để chẩn đoán (KIT xét nghiệm), hồ sơ đăng ký gồm:",
+        "attachment_path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/1_004881/PH%E1%BB%A4%20L%E1%BB%A4C%20III.M%E1%BA%AAU%20%C4%90%C6%A0N%20%C4%90%C4%82NG%20K%C3%9D%20L%C6%AFU%20H%C3%80NH%20CH%E1%BA%BE%20PH%E1%BA%A8M%20SINH%20H%E1%BB%8CC%20%C4%90%E1%BB%82%20CH%E1%BA%A8N%20%C4%90O%C3%81N.docx"
+      },
+      {
+        "name": "Báo cáo về các số liệu chứng minh độ nhạy phân tích;",
+        "quantity": "1 bản chính, 0 bản sao",
+        "notes": [],
+        "group": "(4) Đối với chế phẩm sinh học để chẩn đoán (KIT xét nghiệm), hồ sơ đăng ký gồm:",
+        "attachment_path": null
+      },
+      {
+        "name": "Tóm tắt đặc tính của sản phẩm theo mẫu quy định tại Phụ lục VIII ban hành kèm theo Thông tư số 13/2016/TT-BNNPTNT;",
+        "quantity": "1 bản chính, 0 bản sao",
+        "notes": [],
+        "group": "(4) Đối với chế phẩm sinh học để chẩn đoán (KIT xét nghiệm), hồ sơ đăng ký gồm:",
+        "attachment_path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/1_004881/PH%E1%BB%A4%20L%E1%BB%A4C%20VIII.M%E1%BA%AAU%20T%C3%93M%20T%E1%BA%AET%20%C4%90%E1%BA%B6C%20T%C3%8DNH%20C%E1%BB%A6A%20S%E1%BA%A2N%20PH%E1%BA%A8M.docx"
+      },
+      {
+        "name": "Tài liệu nghiên cứu về độ ổn định, hồ sơ tóm tắt sản xuất từng lô của 3 lô liên tiếp và đề xuất hạn sử dụng;",
+        "quantity": "1 bản chính, 0 bản sao",
+        "notes": [],
+        "group": "(4) Đối với chế phẩm sinh học để chẩn đoán (KIT xét nghiệm), hồ sơ đăng ký gồm:",
+        "attachment_path": null
+      },
+      {
+        "name": "Bản cam kết không vi phạm các qui định của luật sở hữu trí tuệ theo mẫu quy định tại Phụ lục VII ban hành kèm theo Thông tư số 13/2016/TT-BNNPTNT;",
+        "quantity": "1 bản chính, 0 bản sao",
+        "notes": [],
+        "group": "(5) Đối với thuốc thú y từ dược liệu, hồ sơ đăng ký gồm:",
+        "attachment_path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/1_004881/PH%E1%BB%A4%20L%E1%BB%A4C%20VII.M%E1%BA%AAU%20GI%E1%BA%A4Y%20CAM%20K%E1%BA%BET%20%C4%90%C4%82NG%20K%C3%9D%20L%C6%AFU%20H%C3%80NH.docx"
+      },
+      {
+        "name": "Tiêu chuẩn chất lượng và phương pháp kiểm nghiệm;",
+        "quantity": "1 bản chính, 0 bản sao",
+        "notes": [],
+        "group": "(5) Đối với thuốc thú y từ dược liệu, hồ sơ đăng ký gồm:",
+        "attachment_path": null
+      },
+      {
+        "name": "Tóm tắt đặc tính của sản phẩm theo mẫu quy định tại Phụ lục VIII ban hành kèm theo Thông tư số 13/2016/TT-BNNPTNT;",
+        "quantity": "1 bản chính, 0 bản sao",
+        "notes": [],
+        "group": "(5) Đối với thuốc thú y từ dược liệu, hồ sơ đăng ký gồm:",
+        "attachment_path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/1_004881/PH%E1%BB%A4%20L%E1%BB%A4C%20VIII.M%E1%BA%AAU%20T%C3%93M%20T%E1%BA%AET%20%C4%90%E1%BA%B6C%20T%C3%8DNH%20C%E1%BB%A6A%20S%E1%BA%A2N%20PH%E1%BA%A8M.docx"
+      },
+      {
+        "name": "Những nghiên cứu về tồn dư trong tất cả các loài động vật được chỉ định dùng thuốc để xác định thời gian ngừng sử dụng thuốc;",
+        "quantity": "1 bản chính, 0 bản sao",
+        "notes": [],
+        "group": "(5) Đối với thuốc thú y từ dược liệu, hồ sơ đăng ký gồm:",
+        "attachment_path": null
+      },
+      {
+        "name": "Mẫu nhãn sản phẩm, tờ hướng dẫn sử dụng;",
+        "quantity": "1 bản chính, 0 bản sao",
+        "notes": [],
+        "group": "(5) Đối với thuốc thú y từ dược liệu, hồ sơ đăng ký gồm:",
+        "attachment_path": null
+      },
+      {
+        "name": "Tài liệu nghiên cứu về độ ổn định và hạn sử dụng của thuốc;",
+        "quantity": "1 bản chính, 0 bản sao",
+        "notes": [],
+        "group": "(5) Đối với thuốc thú y từ dược liệu, hồ sơ đăng ký gồm:",
+        "attachment_path": null
+      },
+      {
+        "name": "Đơn đăng ký lưu hành theo mẫu quy định tại Phụ lục I ban hành kèm theo Thông tư số 13/2016/TT-BNNPTNT;",
+        "quantity": "1 bản chính, 0 bản sao",
+        "notes": [],
+        "group": "(5) Đối với thuốc thú y từ dược liệu, hồ sơ đăng ký gồm:",
+        "attachment_path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/1_004881/PH%E1%BB%A4%20L%E1%BB%A4C%20I.%20M%E1%BA%AAU%20%C4%90%C6%A0N%20%C4%90%C4%82NG%20K%C3%9D%20L%C6%AFU%20H%C3%80NH%20THU%E1%BB%90C%20TH%C3%9A%20Y.docx"
+      },
+      {
+        "name": "Tài liệu nghiên cứu về liều dùng và liệu trình điều trị đối với từng loài động vật được chỉ định;",
+        "quantity": "1 bản chính, 0 bản sao",
+        "notes": [],
+        "group": "(5) Đối với thuốc thú y từ dược liệu, hồ sơ đăng ký gồm:",
+        "attachment_path": null
+      },
+      {
+        "name": "Báo cáo về các số liệu chứng minh độ an toàn và hiệu quả của sản phẩm;",
+        "quantity": "1 bản chính, 0 bản sao",
+        "notes": [],
+        "group": "(5) Đối với thuốc thú y từ dược liệu, hồ sơ đăng ký gồm:",
+        "attachment_path": null
+      },
+      {
+        "name": "Tiêu chuẩn chất lượng và phương pháp kiểm nghiệm nguyên, phụ liệu ban đầu, bán thành phẩm và thành phẩm của bên đặt gia công, san chia;",
+        "quantity": "1 bản chính, 0 bản sao",
+        "notes": [],
+        "group": "(6) Đối với thuốc thú y đã có giấy chứng nhận lưu hành tại Việt Nam sản xuất gia công, san chia, hồ sơ đăng ký gồm:",
+        "attachment_path": null
+      },
+      {
+        "name": "Mẫu nhãn sản phẩm, tờ hướng dẫn sử dụng (nhãn đã đăng ký, nhãn gia công, san chia);",
+        "quantity": "1 bản chính, 0 bản sao",
+        "notes": [],
+        "group": "(6) Đối với thuốc thú y đã có giấy chứng nhận lưu hành tại Việt Nam sản xuất gia công, san chia, hồ sơ đăng ký gồm:",
+        "attachment_path": null
+      },
+      {
+        "name": "Tóm tắt thông tin sản phẩm (tên, thành phần, dạng bào chế, quy cách đóng gói, công dụng, cách dùng, hạn sử dụng);",
+        "quantity": "1 bản chính, 0 bản sao",
+        "notes": [],
+        "group": "(6) Đối với thuốc thú y đã có giấy chứng nhận lưu hành tại Việt Nam sản xuất gia công, san chia, hồ sơ đăng ký gồm:",
+        "attachment_path": null
+      },
+      {
+        "name": "Đơn đăng ký sản xuất gia công, san chia theo mẫu quy định tại Phụ lục X ban hành kèm theo Thông tư số 13/2022/TT-BNNPTNT;",
+        "quantity": "1 bản chính, 0 bản sao",
+        "notes": [],
+        "group": "(6) Đối với thuốc thú y đã có giấy chứng nhận lưu hành tại Việt Nam sản xuất gia công, san chia, hồ sơ đăng ký gồm:",
+        "attachment_path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/1_004881/PH%E1%BB%A4%20L%E1%BB%A4C%20X.M%E1%BA%AAU%20%C4%90%C6%A0N%20%C4%90%C4%82NG%20K%C3%9D%20L%C6%AFU%20H%C3%80NH%20THU%E1%BB%90C%20TH%C3%9A%20Y%20S%E1%BA%A2N%20XU%E1%BA%A4T%20GIA%20C%C3%94NG%2C%20SAN%20CHIA.docx"
+      },
+      {
+        "name": "Bản cam kết không vi phạm các quy định của luật sở hữu trí tuệ theo mẫu quy định tại Phụ lục XII ban hành kèm theo Thông tư số 13/2016/TT-BNNPTNT.",
+        "quantity": "1 bản chính, 0 bản sao",
+        "notes": [],
+        "group": "(7) Đối với thuốc thú y không có giấy chứng nhận lưu hành tại Việt Nam sản xuất để xuất khẩu, hồ sơ đăng ký gồm:",
+        "attachment_path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/1_004881/PH%E1%BB%A4%20L%E1%BB%A4C%20XII.M%E1%BA%AAU%20GI%E1%BA%A4Y%20CAM%20K%E1%BA%BET%20S%E1%BA%A2N%20XU%E1%BA%A4T%20THU%E1%BB%90C%20TH%C3%9A%20Y%20%C4%90%E1%BB%82%20XU%E1%BA%A4T%20KH%E1%BA%A8U.docx"
+      },
+      {
+        "name": "Bản cam kết thuốc sản xuất để xuất khẩu không tiêu thụ ở Việt Nam;",
+        "quantity": "1 bản chính, 0 bản sao",
+        "notes": [],
+        "group": "(7) Đối với thuốc thú y không có giấy chứng nhận lưu hành tại Việt Nam sản xuất để xuất khẩu, hồ sơ đăng ký gồm:",
+        "attachment_path": null
+      },
+      {
+        "name": "Tóm tắt đặc tính của sản phẩm theo mẫu quy định tại Phụ lục VIII ban hành kèm theo Thông tư số 13/2016/TT-BNNPTNT;",
+        "quantity": "1 bản chính, 0 bản sao",
+        "notes": [],
+        "group": "(7) Đối với thuốc thú y không có giấy chứng nhận lưu hành tại Việt Nam sản xuất để xuất khẩu, hồ sơ đăng ký gồm:",
+        "attachment_path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/1_004881/PH%E1%BB%A4%20L%E1%BB%A4C%20VIII.M%E1%BA%AAU%20T%C3%93M%20T%E1%BA%AET%20%C4%90%E1%BA%B6C%20T%C3%8DNH%20C%E1%BB%A6A%20S%E1%BA%A2N%20PH%E1%BA%A8M.docx"
+      },
+      {
+        "name": "Mẫu nhãn sản phẩm, tờ hướng dẫn sử dụng;",
+        "quantity": "1 bản chính, 0 bản sao",
+        "notes": [],
+        "group": "(7) Đối với thuốc thú y không có giấy chứng nhận lưu hành tại Việt Nam sản xuất để xuất khẩu, hồ sơ đăng ký gồm:",
+        "attachment_path": null
+      },
+      {
+        "name": "Đơn đăng ký sản xuất để xuất khẩu theo mẫu quy định tại Phụ lục XI ban hành kèm theo Thông tư số 13/2016/TT-BNNPTNT;",
+        "quantity": "1 bản chính, 0 bản sao",
+        "notes": [],
+        "group": "(7) Đối với thuốc thú y không có giấy chứng nhận lưu hành tại Việt Nam sản xuất để xuất khẩu, hồ sơ đăng ký gồm:",
+        "attachment_path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/1_004881/PH%E1%BB%A4%20L%E1%BB%A4C%20XI.M%E1%BA%AAU%20%C4%90%C6%A0N%20%C4%90%C4%82NG%20K%C3%9D%20S%E1%BA%A2N%20XU%E1%BA%A4T%20THU%E1%BB%90C%20TH%C3%9A%20Y%20%C4%90%E1%BB%82%20XU%E1%BA%A4T%20KH%E1%BA%A8U.docx"
+      },
+      {
+        "name": "Tiêu chuẩn chất lượng và phương pháp kiểm nghiệm;",
+        "quantity": "1 bản chính, 0 bản sao",
+        "notes": [],
+        "group": "(7) Đối với thuốc thú y không có giấy chứng nhận lưu hành tại Việt Nam sản xuất để xuất khẩu, hồ sơ đăng ký gồm:",
+        "attachment_path": null
+      },
+      {
+        "name": "Đơn đề nghị cấp lại Giấy chứng nhận lưu hành thuốc thú y theo mẫu quy định tại Phụ lục IV ban hành kèm theo Thông tư số 15/2026/TT-BNNMT",
+        "quantity": "1 bản chính, 0 bản sao",
+        "notes": [],
+        "group": "(8) Đối với trường hợp cấp lại Giấy chứng nhận lưu hành thuốc thú y (trong trường hợp thay đổi thành phần, công thức, dạng bào chế, đường dùng, liều dùng, chỉ định điều trị của thuốc thú y; thay đổi phương pháp, quy trình sản xuất mà làm thay đổi chất lượng sản phẩm; đánh giá lại chất lượng, hiệu quả, độ an toàn của thuốc thú y theo quy định)",
+        "attachment_path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/1_004881/PHU%CC%A3%20LU%CC%A3C%20IV.M%E1%BA%AAU%20%C4%90%C6%A0N%20%C4%90%E1%BB%80%20NGH%E1%BB%8A%20C%E1%BA%A4P%20L%E1%BA%A0I%20GI%E1%BA%A4Y%20CH%E1%BB%A8NG%20NH%E1%BA%ACN%20L%C6%AFU%20H%C3%80NH.docx"
+      }
+    ],
+    "conditional": [
+      {
+        "condition": "Các thông tin kỹ thuật khác (nếu có).",
+        "document": "Các thông tin kỹ thuật khác (nếu có).",
+        "quantity": "1 bản chính, 0 bản sao",
+        "notes": [],
+        "attachment_path": null
+      },
+      {
+        "condition": "Các thông tin kỹ thuật khác (nếu có).",
+        "document": "Các thông tin kỹ thuật khác (nếu có).",
+        "quantity": "1 bản chính, 0 bản sao",
+        "notes": [],
+        "attachment_path": null
+      },
+      {
+        "condition": "Các thông tin kỹ thuật khác như kết quả khảo nghiệm trong phạm vi phòng thí nghiệm, số liệu về việc sản phẩm đã được lưu hành tại các nước khác trên thế giới (nếu có).",
+        "document": "Các thông tin kỹ thuật khác như kết quả khảo nghiệm trong phạm vi phòng thí nghiệm, số liệu về việc sản phẩm đã được lưu hành tại các nước khác trên thế giới (nếu có).",
+        "quantity": "1 bản chính, 0 bản sao",
+        "notes": [],
+        "attachment_path": null
+      },
+      {
+        "condition": "Các tài liệu liên quan bao gồm: xuất xứ, lịch sử và độ ổn định của chủng vi sinh vật gốc dùng để chế vắc xin, kháng thể; thông tin và đặc tính của chủng vi sinh vật gốc dùng để sản xuất vắc xin, kháng thể đối với sản phẩm sản xuất trong nước; các tài liệu liên quan đến bản quyền và áp dụng chứng chỉ sản xuất vắc xin, kháng thể (nếu có);",
+        "document": "Các tài liệu liên quan bao gồm: xuất xứ, lịch sử và độ ổn định của chủng vi sinh vật gốc dùng để chế vắc xin, kháng thể; thông tin và đặc tính của chủng vi sinh vật gốc dùng để sản xuất vắc xin, kháng thể đối với sản phẩm sản xuất trong nước; các tài liệu liên quan đến bản quyền và áp dụng chứng chỉ sản xuất vắc xin, kháng thể (nếu có);",
+        "quantity": "1 bản chính, 0 bản sao",
+        "notes": [],
+        "attachment_path": null
+      },
+      {
+        "condition": "Các thông tin kỹ thuật khác (nếu có).",
+        "document": "Các thông tin kỹ thuật khác (nếu có).",
+        "quantity": "1 bản chính, 0 bản sao",
+        "notes": [],
+        "attachment_path": null
+      },
+      {
+        "condition": "Các tài liệu liên quan bao gồm: xuất xứ, lịch sử của chủng vi sinh vật gốc dùng để sản xuất chế phẩm sinh học; các tài liệu liên quan đến bản quyền và áp dụng chứng chỉ sản xuất chế phẩm sinh học (nếu có);",
+        "document": "Các tài liệu liên quan bao gồm: xuất xứ, lịch sử của chủng vi sinh vật gốc dùng để sản xuất chế phẩm sinh học; các tài liệu liên quan đến bản quyền và áp dụng chứng chỉ sản xuất chế phẩm sinh học (nếu có);",
+        "quantity": "1 bản chính, 0 bản sao",
+        "notes": [],
+        "attachment_path": null
+      },
+      {
+        "condition": "Các thông tin kỹ thuật khác (nếu có).",
+        "document": "Các thông tin kỹ thuật khác (nếu có).",
+        "quantity": "1 bản chính, 0 bản sao",
+        "notes": [],
+        "attachment_path": null
+      },
+      {
+        "condition": "Lưu ý: - Hồ sơ đăng ký thuốc thú y sản xuất ở nước ngoài phải được viết bằng tiếng Việt hoặc tiếng Anh. Trường hợp hồ sơ viết bằng tiếng Anh, các thông tin trong tờ hướng dẫn sử dụng thuốc, tóm tắt đặc tính sản phẩm bắt buộc phải viết bằng tiếng Việt. - Hồ sơ đăng ký thuốc thú y đối với hình thức nộp hồ sơ qua dịch vụ bưu chính hoặc trực tiếp phải được soạn thảo trên khổ giấy A4, đóng chắc chắn. Hồ sơ phải có trang bìa và Mục lục, được sắp xếp theo đúng trình tự của Mục lục, có phân cách giữa các phần. Các phần phân cách phải được đánh số thứ tự để dễ tham khảo; mỗi thuốc thú y phải có hồ sơ đăng ký riêng.",
+        "document": "Lưu ý: - Hồ sơ đăng ký thuốc thú y sản xuất ở nước ngoài phải được viết bằng tiếng Việt hoặc tiếng Anh. Trường hợp hồ sơ viết bằng tiếng Anh, các thông tin trong tờ hướng dẫn sử dụng thuốc, tóm tắt đặc tính sản phẩm bắt buộc phải viết bằng tiếng Việt. - Hồ sơ đăng ký thuốc thú y đối với hình thức nộp hồ sơ qua dịch vụ bưu chính hoặc trực tiếp phải được soạn thảo trên khổ giấy A4, đóng chắc chắn. Hồ sơ phải có trang bìa và Mục lục, được sắp xếp theo đúng trình tự của Mục lục, có phân cách giữa các phần. Các phần phân cách phải được đánh số thứ tự để dễ tham khảo; mỗi thuốc thú y phải có hồ sơ đăng ký riêng.",
+        "quantity": "1 bản chính, 1 bản sao",
+        "notes": [],
+        "attachment_path": null
+      }
+    ],
+    "forms": [
+      {
+        "name": "Bản cam kết không vi phạm các quy định của luật sở hữu trí tuệ theo mẫu quy định tại Phụ lục VII ban hành kèm theo Thông tư số 13/2016/TT-BNNPTNT;",
+        "attachment_label": "PHỤ LỤC VII.MẪU GIẤY CAM KẾT ĐĂNG KÝ LƯU HÀNH.docx",
+        "attachment_path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/1_004881/PH%E1%BB%A4%20L%E1%BB%A4C%20VII.M%E1%BA%AAU%20GI%E1%BA%A4Y%20CAM%20K%E1%BA%BET%20%C4%90%C4%82NG%20K%C3%9D%20L%C6%AFU%20H%C3%80NH.docx"
+      },
+      {
+        "name": "Tóm tắt đặc tính của sản phẩm theo mẫu quy định tại Phụ lục VIII ban hành kèm theo Thông tư số 13/2016/TT-BNNPTNT;",
+        "attachment_label": "PHỤ LỤC VIII.MẪU TÓM TẮT ĐẶC TÍNH CỦA SẢN PHẨM.docx",
+        "attachment_path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/1_004881/PH%E1%BB%A4%20L%E1%BB%A4C%20VIII.M%E1%BA%AAU%20T%C3%93M%20T%E1%BA%AET%20%C4%90%E1%BA%B6C%20T%C3%8DNH%20C%E1%BB%A6A%20S%E1%BA%A2N%20PH%E1%BA%A8M.docx"
+      },
+      {
+        "name": "Đơn đăng ký lưu hành theo mẫu quy định tại Phụ lục I ban hành kèm theo Thông tư số 13/2016/TT-BNNPTNT;",
+        "attachment_label": "PHỤ LỤC I. MẪU ĐƠN ĐĂNG KÝ LƯU HÀNH THUỐC THÚ Y.docx",
+        "attachment_path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/1_004881/PH%E1%BB%A4%20L%E1%BB%A4C%20I.%20M%E1%BA%AAU%20%C4%90%C6%A0N%20%C4%90%C4%82NG%20K%C3%9D%20L%C6%AFU%20H%C3%80NH%20THU%E1%BB%90C%20TH%C3%9A%20Y.docx"
+      },
+      {
+        "name": "Đơn đăng ký lưu hành theo mẫu quy định tại Phụ lục I ban hành kèm theo Thông tư số 13/2016/TT-BNNPTNT;",
+        "attachment_label": "PHỤ LỤC I. MẪU ĐƠN ĐĂNG KÝ LƯU HÀNH THUỐC THÚ Y.docx",
+        "attachment_path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/1_004881/PH%E1%BB%A4%20L%E1%BB%A4C%20I.%20M%E1%BA%AAU%20%C4%90%C6%A0N%20%C4%90%C4%82NG%20K%C3%9D%20L%C6%AFU%20H%C3%80NH%20THU%E1%BB%90C%20TH%C3%9A%20Y.docx"
+      },
+      {
+        "name": "Bản cam kết không vi phạm các quy định của luật sở hữu trí tuệ theo mẫu quy định tại Phụ lục VII ban hành kèm theo Thông tư số 13/2016/TT-BNNPTNT;",
+        "attachment_label": "PHỤ LỤC VII.MẪU GIẤY CAM KẾT ĐĂNG KÝ LƯU HÀNH.docx",
+        "attachment_path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/1_004881/PH%E1%BB%A4%20L%E1%BB%A4C%20VII.M%E1%BA%AAU%20GI%E1%BA%A4Y%20CAM%20K%E1%BA%BET%20%C4%90%C4%82NG%20K%C3%9D%20L%C6%AFU%20H%C3%80NH.docx"
+      },
+      {
+        "name": "Tóm tắt đặc tính của sản phẩm theo mẫu quy định tại Phụ lục VIII ban hành kèm theo Thông tư số13/2016/TT-BNNPTNT;",
+        "attachment_label": "PHỤ LỤC VIII.MẪU TÓM TẮT ĐẶC TÍNH CỦA SẢN PHẨM.docx",
+        "attachment_path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/1_004881/PH%E1%BB%A4%20L%E1%BB%A4C%20VIII.M%E1%BA%AAU%20T%C3%93M%20T%E1%BA%AET%20%C4%90%E1%BA%B6C%20T%C3%8DNH%20C%E1%BB%A6A%20S%E1%BA%A2N%20PH%E1%BA%A8M.docx"
+      },
+      {
+        "name": "Đơn đăng ký lưu hành theo mẫu quy định tại Phụ lục II ban hành, kèm theo Thông tư số 13/2016/TT-BNNPTNT;",
+        "attachment_label": "PHỤ LỤC II.MẪU ĐƠN ĐĂNG KÝ LƯU HÀNH VẮC XIN, KHÁNG THỂ DÙNG TRONG THÚ Y.docx",
+        "attachment_path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/1_004881/PH%E1%BB%A4%20L%E1%BB%A4C%20II.M%E1%BA%AAU%20%C4%90%C6%A0N%20%C4%90%C4%82NG%20K%C3%9D%20L%C6%AFU%20H%C3%80NH%20V%E1%BA%AEC%20XIN%2C%20KH%C3%81NG%20TH%E1%BB%82%20D%C3%99NG%20TRONG%20TH%C3%9A%20Y.docx"
+      },
+      {
+        "name": "Tóm tắt đặc tính của sản phẩm theo mẫu quy định tại Phụ lục VIII ban hành kèm theo Thông tư số 13/2016/TT-BNNPTNT;",
+        "attachment_label": "PHỤ LỤC VIII.MẪU TÓM TẮT ĐẶC TÍNH CỦA SẢN PHẨM.docx",
+        "attachment_path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/1_004881/PH%E1%BB%A4%20L%E1%BB%A4C%20VIII.M%E1%BA%AAU%20T%C3%93M%20T%E1%BA%AET%20%C4%90%E1%BA%B6C%20T%C3%8DNH%20C%E1%BB%A6A%20S%E1%BA%A2N%20PH%E1%BA%A8M.docx"
+      },
+      {
+        "name": "Đơn đăng ký lưu hành theo mẫu quy định tại Phụ lục III ban hành, kèm theo Thông tư số 13/2016/TT-BNNPTNT;",
+        "attachment_label": "PHỤ LỤC III.MẪU ĐƠN ĐĂNG KÝ LƯU HÀNH CHẾ PHẨM SINH HỌC ĐỂ CHẨN ĐOÁN.docx",
+        "attachment_path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/1_004881/PH%E1%BB%A4%20L%E1%BB%A4C%20III.M%E1%BA%AAU%20%C4%90%C6%A0N%20%C4%90%C4%82NG%20K%C3%9D%20L%C6%AFU%20H%C3%80NH%20CH%E1%BA%BE%20PH%E1%BA%A8M%20SINH%20H%E1%BB%8CC%20%C4%90%E1%BB%82%20CH%E1%BA%A8N%20%C4%90O%C3%81N.docx"
+      },
+      {
+        "name": "Tóm tắt đặc tính của sản phẩm theo mẫu quy định tại Phụ lục VIII ban hành kèm theo Thông tư số 13/2016/TT-BNNPTNT;",
+        "attachment_label": "PHỤ LỤC VIII.MẪU TÓM TẮT ĐẶC TÍNH CỦA SẢN PHẨM.docx",
+        "attachment_path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/1_004881/PH%E1%BB%A4%20L%E1%BB%A4C%20VIII.M%E1%BA%AAU%20T%C3%93M%20T%E1%BA%AET%20%C4%90%E1%BA%B6C%20T%C3%8DNH%20C%E1%BB%A6A%20S%E1%BA%A2N%20PH%E1%BA%A8M.docx"
+      },
+      {
+        "name": "Bản cam kết không vi phạm các qui định của luật sở hữu trí tuệ theo mẫu quy định tại Phụ lục VII ban hành kèm theo Thông tư số 13/2016/TT-BNNPTNT;",
+        "attachment_label": "PHỤ LỤC VII.MẪU GIẤY CAM KẾT ĐĂNG KÝ LƯU HÀNH.docx",
+        "attachment_path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/1_004881/PH%E1%BB%A4%20L%E1%BB%A4C%20VII.M%E1%BA%AAU%20GI%E1%BA%A4Y%20CAM%20K%E1%BA%BET%20%C4%90%C4%82NG%20K%C3%9D%20L%C6%AFU%20H%C3%80NH.docx"
+      },
+      {
+        "name": "Tóm tắt đặc tính của sản phẩm theo mẫu quy định tại Phụ lục VIII ban hành kèm theo Thông tư số 13/2016/TT-BNNPTNT;",
+        "attachment_label": "PHỤ LỤC VIII.MẪU TÓM TẮT ĐẶC TÍNH CỦA SẢN PHẨM.docx",
+        "attachment_path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/1_004881/PH%E1%BB%A4%20L%E1%BB%A4C%20VIII.M%E1%BA%AAU%20T%C3%93M%20T%E1%BA%AET%20%C4%90%E1%BA%B6C%20T%C3%8DNH%20C%E1%BB%A6A%20S%E1%BA%A2N%20PH%E1%BA%A8M.docx"
+      },
+      {
+        "name": "Đơn đăng ký lưu hành theo mẫu quy định tại Phụ lục I ban hành kèm theo Thông tư số 13/2016/TT-BNNPTNT;",
+        "attachment_label": "PHỤ LỤC I. MẪU ĐƠN ĐĂNG KÝ LƯU HÀNH THUỐC THÚ Y.docx",
+        "attachment_path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/1_004881/PH%E1%BB%A4%20L%E1%BB%A4C%20I.%20M%E1%BA%AAU%20%C4%90%C6%A0N%20%C4%90%C4%82NG%20K%C3%9D%20L%C6%AFU%20H%C3%80NH%20THU%E1%BB%90C%20TH%C3%9A%20Y.docx"
+      },
+      {
+        "name": "Đơn đăng ký sản xuất gia công, san chia theo mẫu quy định tại Phụ lục X ban hành kèm theo Thông tư số 13/2022/TT-BNNPTNT;",
+        "attachment_label": "PHỤ LỤC X.MẪU ĐƠN ĐĂNG KÝ LƯU HÀNH THUỐC THÚ Y SẢN XUẤT GIA CÔNG, SAN CHIA.docx",
+        "attachment_path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/1_004881/PH%E1%BB%A4%20L%E1%BB%A4C%20X.M%E1%BA%AAU%20%C4%90%C6%A0N%20%C4%90%C4%82NG%20K%C3%9D%20L%C6%AFU%20H%C3%80NH%20THU%E1%BB%90C%20TH%C3%9A%20Y%20S%E1%BA%A2N%20XU%E1%BA%A4T%20GIA%20C%C3%94NG%2C%20SAN%20CHIA.docx"
+      },
+      {
+        "name": "Bản cam kết không vi phạm các quy định của luật sở hữu trí tuệ theo mẫu quy định tại Phụ lục XII ban hành kèm theo Thông tư số 13/2016/TT-BNNPTNT.",
+        "attachment_label": "PHỤ LỤC XII.MẪU GIẤY CAM KẾT SẢN XUẤT THUỐC THÚ Y ĐỂ XUẤT KHẨU.docx",
+        "attachment_path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/1_004881/PH%E1%BB%A4%20L%E1%BB%A4C%20XII.M%E1%BA%AAU%20GI%E1%BA%A4Y%20CAM%20K%E1%BA%BET%20S%E1%BA%A2N%20XU%E1%BA%A4T%20THU%E1%BB%90C%20TH%C3%9A%20Y%20%C4%90%E1%BB%82%20XU%E1%BA%A4T%20KH%E1%BA%A8U.docx"
+      },
+      {
+        "name": "Tóm tắt đặc tính của sản phẩm theo mẫu quy định tại Phụ lục VIII ban hành kèm theo Thông tư số 13/2016/TT-BNNPTNT;",
+        "attachment_label": "PHỤ LỤC VIII.MẪU TÓM TẮT ĐẶC TÍNH CỦA SẢN PHẨM.docx",
+        "attachment_path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/1_004881/PH%E1%BB%A4%20L%E1%BB%A4C%20VIII.M%E1%BA%AAU%20T%C3%93M%20T%E1%BA%AET%20%C4%90%E1%BA%B6C%20T%C3%8DNH%20C%E1%BB%A6A%20S%E1%BA%A2N%20PH%E1%BA%A8M.docx"
+      },
+      {
+        "name": "Đơn đăng ký sản xuất để xuất khẩu theo mẫu quy định tại Phụ lục XI ban hành kèm theo Thông tư số 13/2016/TT-BNNPTNT;",
+        "attachment_label": "PHỤ LỤC XI.MẪU ĐƠN ĐĂNG KÝ SẢN XUẤT THUỐC THÚ Y ĐỂ XUẤT KHẨU.docx",
+        "attachment_path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/1_004881/PH%E1%BB%A4%20L%E1%BB%A4C%20XI.M%E1%BA%AAU%20%C4%90%C6%A0N%20%C4%90%C4%82NG%20K%C3%9D%20S%E1%BA%A2N%20XU%E1%BA%A4T%20THU%E1%BB%90C%20TH%C3%9A%20Y%20%C4%90%E1%BB%82%20XU%E1%BA%A4T%20KH%E1%BA%A8U.docx"
+      },
+      {
+        "name": "Đơn đề nghị cấp lại Giấy chứng nhận lưu hành thuốc thú y theo mẫu quy định tại Phụ lục IV ban hành kèm theo Thông tư số 15/2026/TT-BNNMT",
+        "attachment_label": "PHỤ LỤC IV.MẪU ĐƠN ĐỀ NGHỊ CẤP LẠI GIẤY CHỨNG NHẬN LƯU HÀNH.docx",
+        "attachment_path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/1_004881/PHU%CC%A3%20LU%CC%A3C%20IV.M%E1%BA%AAU%20%C4%90%C6%A0N%20%C4%90%E1%BB%80%20NGH%E1%BB%8A%20C%E1%BA%A4P%20L%E1%BA%A0I%20GI%E1%BA%A4Y%20CH%E1%BB%A8NG%20NH%E1%BA%ACN%20L%C6%AFU%20H%C3%80NH.docx"
+      }
+    ],
+    "presented": [],
+    "notes": [
+      "Giấy chứng nhận GMP hoặc văn bản của cơ quan nhà nước có thẩm quyền của nước sản xuất xác nhận cơ sở sản xuất đáp ứng tiêu chuẩn GMP đối với thuốc nhập khẩu hoặc Giấy chứng nhận hệ thống quản lý chất lượng (ISO) đối với hoá chất, chế phẩm sinh học nhập khẩu (trừ vắc-xin, kháng thể, KIT xét nghiệm) (bản chính hoặc bản chụp có đóng dấu xác nhận của doanh nghiệp đăng ký); Giấy chứng nhận hoặc văn bản của cơ quan thẩm quyền nước sản xuất hoặc nước xuất khẩu cấp xác nhận sản phẩm được phép lưu hành hoặc sử dụng tại quốc gia đó hoặc giấy chứng nhận hoặc văn bản của cơ quan nhà nước có thẩm quyền quốc gia khác xác nhận sản phẩm được phép lưu hành hoặc sử dụng tại quốc gia đó đối với sản phẩm chưa được cấp phép lưu hành, sử dụng tại nước sản xuất (bản chính hoặc bản chụp có đóng dấu xác nhận của doanh nghiệp đăng ký);",
+      "Phiếu phân tích chất lượng sản phẩm của nhà sản xuất và phiếu phân tích chất lượng sản phẩm của cơ quan kiểm nghiệm thuốc thú y được chỉ định tại Việt Nam cấp (bản chính hoặc bản chụp có đóng dấu xác nhận của doanh nghiệp đăng ký)",
+      "Phiếu phân tích chất lượng sản phẩm của nhà sản xuất, phiếu phân tích chất lượng sản phẩm của cơ quan kiểm nghiệm thuốc thú y được chỉ định tại Việt Nam (bản chính hoặc bản chụp có đóng dấu xác nhận của doanh nghiệp đăng ký)",
+      "Giấy chứng nhận GMP hoặc văn bản của cơ quan nhà nước có thẩm quyền của nước sản xuất xác nhận cơ sở sản xuất đáp ứng tiêu chuẩn GMP đối với thuốc nhập khẩu (bản chính hoặc bản chụp có đóng dấu xác nhận của doanh nghiệp đăng ký); Giấy chứng nhận hoặc văn bản của cơ quan thẩm quyền nước sản xuất hoặc nước xuất khẩu cấp xác nhận sản phẩm được phép lưu hành hoặc sử dụng tại quốc gia đó hoặc giấy chứng nhận hoặc văn bản của cơ quan nhà nước có thẩm quyền quốc gia khác xác nhận sản phẩm được phép lưu hành hoặc sử dụng tại quốc gia đó đối với sản phẩm chưa được cấp phép lưu hành, sử dụng tại nước sản xuất (bản chính hoặc bản chụp có đóng dấu xác nhận của doanh nghiệp đăng ký)",
+      "Phiếu phân tích chất lượng chế phẩm sinh học của cơ sở sản xuất, phiếu phân tích chất lượng chế phẩm sinh học do cơ quan kiểm nghiệm thuốc thú y được chỉ định tại Việt Nam cấp (bản chính hoặc bản chụp có đóng dấu xác nhận của doanh nghiệp đăng ký)",
+      "Giấy chứng nhận GMP hoặc văn bản của cơ quan nhà nước có thẩm quyền của nước sản xuất xác nhận cơ sở sản xuất đáp ứng tiêu chuẩn GMP hoặc Giấy chứng nhận hệ thống quản lý chất lượng (ISO) đối với thuốc nhập khẩu (bản chính hoặc bản chụp có đóng dấu xác nhận của doanh nghiệp đăng ký); Giấy chứng nhận hoặc văn bản của cơ quan thẩm quyền nước sản xuất hoặc nước xuất khẩu cấp xác nhận sản phẩm được phép lưu hành hoặc sử dụng tại quốc gia đó (bản chính hoặc bản chụp có đóng dấu xác nhận của doanh nghiệp đăng ký);",
+      "Giấy chứng nhận GMP hoặc văn bản của cơ quan nhà nước có thẩm quyền của nước sản xuất xác nhận cơ sở sản xuất đáp ứng tiêu chuẩn GMP hoặc Giấy chứng nhận hệ thống quản lý chất lượng (ISO) đối với thuốc nhập khẩu (bản chính hoặc bản chụp có đóng dấu xác nhận của doanh nghiệp đăng ký); Giấy chứng nhận hoặc văn bản của cơ quan thẩm quyền nước sản xuất hoặc nước xuất khẩu cấp xác nhận sản phẩm được phép lưu hành hoặc sử dụng tại quốc gia đó hoặc giấy chứng nhận hoặc văn bản của cơ quan nhà nước có thẩm quyền quốc gia khác xác nhận sản phẩm được phép lưu hành hoặc sử dụng tại quốc gia đó đối với sản phẩm chưa được cấp phép lưu hành, sử dụng tại nước sản xuất (bản chính hoặc bản chụp có đóng dấu xác nhận của doanh nghiệp đăng ký);",
+      "Phiếu phân tích chất lượng sản phẩm của nhà sản xuất và phiếu phân tích chất lượng sản phẩm của cơ quan kiểm nghiệm thuốc thú y được chỉ định tại Việt Nam cấp (bản chính hoặc bản chụp có đóng dấu xác nhận của doanh nghiệp đăng ký",
+      "Phiếu phân tích chất lượng sản phẩm của cơ sở nhận gia công, san chia (bản chính hoặc bản chụp có đóng dấu xác nhận của doanh nghiệp đăng ký)",
+      "Hợp đồng sản xuất gia công, san chia thuốc thú y giữa cơ sở đặt gia công, san chia và cơ sở nhận gia công, san chia (bản chính hoặc bản chụp có đóng dấu xác nhận của doanh nghiệp đăng ký);",
+      "Giấy chứng nhận GMP của cơ sở sản xuất (bản chính hoặc bản chụp có đóng dấu xác nhận của doanh nghiệp đăng ký);",
+      "Phiếu phân tích chất lượng sản phẩm của cơ sở sản xuất, phiếu phân tích chất lượng sản phẩm của cơ quan kiểm nghiệm thuốc thú y được chỉ định tại Việt Nam cấp (bản chính hoặc bản chụp có đóng dấu xác nhận của doanh nghiệp đăng ký);"
+    ],
+    "summary": [
+      {
+        "group": "(2) Đối với thuốc dạng dược phẩm, hóa chất, chế phẩm sinh học được miễn khảo nghiệm, hồ sơ đăng ký gồm:",
+        "name": "Những thông tin về thuốc gốc, thuốc Generic (tên sản phẩm, tên nhà sản xuất, công thức, dạng bào chế, công dụng, chỉ định điều trị, chống chỉ định, liều lượng sử dụng, thời gian ngừng sử dụng thuốc, những lưu ý đối với động vật được chỉ định, với người sử dụng và các đặc tính kỹ thuật khác của sản phẩm)",
+        "quantity": "1 bản chính, 0 bản sao",
+        "notes": [],
+        "attachment_path": null
+      },
+      {
+        "group": "(2) Đối với thuốc dạng dược phẩm, hóa chất, chế phẩm sinh học được miễn khảo nghiệm, hồ sơ đăng ký gồm:",
+        "name": "Bản cam kết không vi phạm các quy định của luật sở hữu trí tuệ theo mẫu quy định tại Phụ lục VII ban hành kèm theo Thông tư số 13/2016/TT-BNNPTNT;",
+        "quantity": "1 bản chính, 0 bản sao",
+        "notes": [],
+        "attachment_path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/1_004881/PH%E1%BB%A4%20L%E1%BB%A4C%20VII.M%E1%BA%AAU%20GI%E1%BA%A4Y%20CAM%20K%E1%BA%BET%20%C4%90%C4%82NG%20K%C3%9D%20L%C6%AFU%20H%C3%80NH.docx"
+      },
+      {
+        "group": "(2) Đối với thuốc dạng dược phẩm, hóa chất, chế phẩm sinh học được miễn khảo nghiệm, hồ sơ đăng ký gồm:",
+        "name": "Tài liệu nghiên cứu về độ ổn định và hạn sử dụng của thuốc;",
+        "quantity": "1 bản chính, 0 bản sao",
+        "notes": [],
+        "attachment_path": null
+      },
+      {
+        "group": "(2) Đối với thuốc dạng dược phẩm, hóa chất, chế phẩm sinh học được miễn khảo nghiệm, hồ sơ đăng ký gồm:",
+        "name": "Tóm tắt đặc tính của sản phẩm theo mẫu quy định tại Phụ lục VIII ban hành kèm theo Thông tư số 13/2016/TT-BNNPTNT;",
+        "quantity": "1 bản chính, 0 bản sao",
+        "notes": [],
+        "attachment_path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/1_004881/PH%E1%BB%A4%20L%E1%BB%A4C%20VIII.M%E1%BA%AAU%20T%C3%93M%20T%E1%BA%AET%20%C4%90%E1%BA%B6C%20T%C3%8DNH%20C%E1%BB%A6A%20S%E1%BA%A2N%20PH%E1%BA%A8M.docx"
+      },
+      {
+        "group": "(2) Đối với thuốc dạng dược phẩm, hóa chất, chế phẩm sinh học được miễn khảo nghiệm, hồ sơ đăng ký gồm:",
+        "name": "Đơn đăng ký lưu hành theo mẫu quy định tại Phụ lục I ban hành kèm theo Thông tư số 13/2016/TT-BNNPTNT;",
+        "quantity": "1 bản chính, 0 bản sao",
+        "notes": [],
+        "attachment_path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/1_004881/PH%E1%BB%A4%20L%E1%BB%A4C%20I.%20M%E1%BA%AAU%20%C4%90%C6%A0N%20%C4%90%C4%82NG%20K%C3%9D%20L%C6%AFU%20H%C3%80NH%20THU%E1%BB%90C%20TH%C3%9A%20Y.docx"
+      },
+      {
+        "group": "(2) Đối với thuốc dạng dược phẩm, hóa chất, chế phẩm sinh học được miễn khảo nghiệm, hồ sơ đăng ký gồm:",
+        "name": "Mẫu nhãn sản phẩm, tờ hướng dẫn sử dụng;",
+        "quantity": "1 bản chính, 0 bản sao",
+        "notes": [],
+        "attachment_path": null
+      },
+      {
+        "group": "(2) Đối với thuốc dạng dược phẩm, hóa chất, chế phẩm sinh học được miễn khảo nghiệm, hồ sơ đăng ký gồm:",
+        "name": "Tiêu chuẩn chất lượng và phương pháp kiểm nghiệm;",
+        "quantity": "1 bản chính, 0 bản sao",
+        "notes": [],
+        "attachment_path": null
+      },
+      {
+        "group": "(1) Đối với thuốc thú y mới dạng dược phẩm, hóa chất, chế phẩm sinh học, hồ sơ đăng ký gồm:",
+        "name": "Kết quả khảo nghiệm;",
+        "quantity": "1 bản chính, 0 bản sao",
+        "notes": [],
+        "attachment_path": null
+      },
+      {
+        "group": "(1) Đối với thuốc thú y mới dạng dược phẩm, hóa chất, chế phẩm sinh học, hồ sơ đăng ký gồm:",
+        "name": "Những nghiên cứu về tồn dư trong tất cả các loài động vật được chỉ định dùng thuốc để xác định thời gian ngừng sử dụng thuốc;",
+        "quantity": "1 bản chính, 0 bản sao",
+        "notes": [],
+        "attachment_path": null
+      },
+      {
+        "group": "(1) Đối với thuốc thú y mới dạng dược phẩm, hóa chất, chế phẩm sinh học, hồ sơ đăng ký gồm:",
+        "name": "Tài liệu nghiên cứu về độ ổn định và hạn sử dụng của thuốc;",
+        "quantity": "1 bản chính, 1 bản sao",
+        "notes": [],
+        "attachment_path": null
+      },
+      {
+        "group": "(1) Đối với thuốc thú y mới dạng dược phẩm, hóa chất, chế phẩm sinh học, hồ sơ đăng ký gồm:",
+        "name": "Đơn đăng ký lưu hành theo mẫu quy định tại Phụ lục I ban hành kèm theo Thông tư số 13/2016/TT-BNNPTNT;",
+        "quantity": "1 bản chính, 0 bản sao",
+        "notes": [],
+        "attachment_path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/1_004881/PH%E1%BB%A4%20L%E1%BB%A4C%20I.%20M%E1%BA%AAU%20%C4%90%C6%A0N%20%C4%90%C4%82NG%20K%C3%9D%20L%C6%AFU%20H%C3%80NH%20THU%E1%BB%90C%20TH%C3%9A%20Y.docx"
+      },
+      {
+        "group": "(1) Đối với thuốc thú y mới dạng dược phẩm, hóa chất, chế phẩm sinh học, hồ sơ đăng ký gồm:",
+        "name": "Bản cam kết không vi phạm các quy định của luật sở hữu trí tuệ theo mẫu quy định tại Phụ lục VII ban hành kèm theo Thông tư số 13/2016/TT-BNNPTNT;",
+        "quantity": "1 bản chính, 0 bản sao",
+        "notes": [],
+        "attachment_path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/1_004881/PH%E1%BB%A4%20L%E1%BB%A4C%20VII.M%E1%BA%AAU%20GI%E1%BA%A4Y%20CAM%20K%E1%BA%BET%20%C4%90%C4%82NG%20K%C3%9D%20L%C6%AFU%20H%C3%80NH.docx"
+      },
+      {
+        "group": "(1) Đối với thuốc thú y mới dạng dược phẩm, hóa chất, chế phẩm sinh học, hồ sơ đăng ký gồm:",
+        "name": "Báo cáo về các số liệu chứng minh độ an toàn bao gồm cả tài liệu nghiên cứu về độc tính (độc tính cấp, độc tính bán trường diễn, trường diễn, độc tính tế bào, khả năng gây ung thư);",
+        "quantity": "1 bản chính, 0 bản sao",
+        "notes": [],
+        "attachment_path": null
+      },
+      {
+        "group": "(1) Đối với thuốc thú y mới dạng dược phẩm, hóa chất, chế phẩm sinh học, hồ sơ đăng ký gồm:",
+        "name": "Tóm tắt đặc tính của sản phẩm theo mẫu quy định tại Phụ lục VIII ban hành kèm theo Thông tư số13/2016/TT-BNNPTNT;",
+        "quantity": "1 bản chính, 0 bản sao",
+        "notes": [],
+        "attachment_path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/1_004881/PH%E1%BB%A4%20L%E1%BB%A4C%20VIII.M%E1%BA%AAU%20T%C3%93M%20T%E1%BA%AET%20%C4%90%E1%BA%B6C%20T%C3%8DNH%20C%E1%BB%A6A%20S%E1%BA%A2N%20PH%E1%BA%A8M.docx"
+      },
+      {
+        "group": "(1) Đối với thuốc thú y mới dạng dược phẩm, hóa chất, chế phẩm sinh học, hồ sơ đăng ký gồm:",
+        "name": "Báo cáo về các số liệu chứng minh hiệu lực của sản phẩm bao gồm cả các tài liệu nghiên cứu về dược lý thực nghiệm; về dược lực học, dược động học và sinh khả dụng của sản phẩm;",
+        "quantity": "1 bản chính, 0 bản sao",
+        "notes": [],
+        "attachment_path": null
+      },
+      {
+        "group": "(1) Đối với thuốc thú y mới dạng dược phẩm, hóa chất, chế phẩm sinh học, hồ sơ đăng ký gồm:",
+        "name": "Tài liệu nghiên cứu về liều dùng và liệu trình điều trị đối với từng loài động vật được chỉ định;",
+        "quantity": "1 bản chính, 1 bản sao",
+        "notes": [],
+        "attachment_path": null
+      },
+      {
+        "group": "(1) Đối với thuốc thú y mới dạng dược phẩm, hóa chất, chế phẩm sinh học, hồ sơ đăng ký gồm:",
+        "name": "Tiêu chuẩn chất lượng và phương pháp kiểm nghiệm;",
+        "quantity": "1 bản chính, 0 bản sao",
+        "notes": [],
+        "attachment_path": null
+      },
+      {
+        "group": "(1) Đối với thuốc thú y mới dạng dược phẩm, hóa chất, chế phẩm sinh học, hồ sơ đăng ký gồm:",
+        "name": "Mẫu nhãn sản phẩm, tờ hướng dẫn sử dụng;",
+        "quantity": "1 bản chính, 0 bản sao",
+        "notes": [],
+        "attachment_path": null
+      },
+      {
+        "group": "(3) Đối với vắc xin, kháng thể, hồ sơ đăng ký gồm:",
+        "name": "Những nghiên cứu về tồn dư trong tất cả các loài động vật được chỉ định để xác định thời gian ngừng sử dụng vắc xin, kháng thể;",
+        "quantity": "1 bản chính, 0 bản sao",
+        "notes": [],
+        "attachment_path": null
+      },
+      {
+        "group": "(3) Đối với vắc xin, kháng thể, hồ sơ đăng ký gồm:",
+        "name": "Tiêu chuẩn chất lượng, phương pháp kiểm nghiệm vắc xin, kháng thể;",
+        "quantity": "1 bản chính, 0 bản sao",
+        "notes": [],
+        "attachment_path": null
+      },
+      {
+        "group": "(3) Đối với vắc xin, kháng thể, hồ sơ đăng ký gồm:",
+        "name": "Phương pháp xác định liều dùng và liệu trình sử dụng đối với từng loài động vật được chỉ định;",
+        "quantity": "1 bản chính, 1 bản sao",
+        "notes": [],
+        "attachment_path": null
+      },
+      {
+        "group": "(3) Đối với vắc xin, kháng thể, hồ sơ đăng ký gồm:",
+        "name": "Tài liệu nghiên cứu về độ ổn định, hồ sơ tóm tắt sản xuất từng lô của 3 lô liên tiếp và đề xuất hạn sử dụng;",
+        "quantity": "1 bản chính, 0 bản sao",
+        "notes": [],
+        "attachment_path": null
+      },
+      {
+        "group": "(3) Đối với vắc xin, kháng thể, hồ sơ đăng ký gồm:",
+        "name": "Báo cáo kết quả khảo nghiệm về hiệu lực, an toàn của sản phẩm;",
+        "quantity": "1 bản chính, 0 bản sao",
+        "notes": [],
+        "attachment_path": null
+      },
+      {
+        "group": "(3) Đối với vắc xin, kháng thể, hồ sơ đăng ký gồm:",
+        "name": "Đơn đăng ký lưu hành theo mẫu quy định tại Phụ lục II ban hành, kèm theo Thông tư số 13/2016/TT-BNNPTNT;",
+        "quantity": "1 bản chính, 0 bản sao",
+        "notes": [],
+        "attachment_path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/1_004881/PH%E1%BB%A4%20L%E1%BB%A4C%20II.M%E1%BA%AAU%20%C4%90%C6%A0N%20%C4%90%C4%82NG%20K%C3%9D%20L%C6%AFU%20H%C3%80NH%20V%E1%BA%AEC%20XIN%2C%20KH%C3%81NG%20TH%E1%BB%82%20D%C3%99NG%20TRONG%20TH%C3%9A%20Y.docx"
+      },
+      {
+        "group": "(3) Đối với vắc xin, kháng thể, hồ sơ đăng ký gồm:",
+        "name": "Tóm tắt đặc tính của sản phẩm theo mẫu quy định tại Phụ lục VIII ban hành kèm theo Thông tư số 13/2016/TT-BNNPTNT;",
+        "quantity": "1 bản chính, 0 bản sao",
+        "notes": [],
+        "attachment_path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/1_004881/PH%E1%BB%A4%20L%E1%BB%A4C%20VIII.M%E1%BA%AAU%20T%C3%93M%20T%E1%BA%AET%20%C4%90%E1%BA%B6C%20T%C3%8DNH%20C%E1%BB%A6A%20S%E1%BA%A2N%20PH%E1%BA%A8M.docx"
+      },
+      {
+        "group": "(3) Đối với vắc xin, kháng thể, hồ sơ đăng ký gồm:",
+        "name": "Báo cáo về các số liệu chứng minh độ an toàn, hiệu lực của sản phẩm, bao gồm tài liệu nghiên cứu về hàm lượng và độ dài miễn dịch đối với vắc xin;",
+        "quantity": "1 bản chính, 0 bản sao",
+        "notes": [],
+        "attachment_path": null
+      },
+      {
+        "group": "(3) Đối với vắc xin, kháng thể, hồ sơ đăng ký gồm:",
+        "name": "Mẫu nhãn sản phẩm, tờ hướng dẫn sử dụng;",
+        "quantity": "1 bản chính, 0 bản sao",
+        "notes": [],
+        "attachment_path": null
+      },
+      {
+        "group": "(4) Đối với chế phẩm sinh học để chẩn đoán (KIT xét nghiệm), hồ sơ đăng ký gồm:",
+        "name": "Tiêu chuẩn chất lượng, phương pháp kiểm nghiệm chế phẩm sinh học;",
+        "quantity": "1 bản chính, 0 bản sao",
+        "notes": [],
+        "attachment_path": null
+      },
+      {
+        "group": "(4) Đối với chế phẩm sinh học để chẩn đoán (KIT xét nghiệm), hồ sơ đăng ký gồm:",
+        "name": "Mẫu nhãn sản phẩm; tờ hướng dẫn sử dụng;",
+        "quantity": "1 bản chính, 0 bản sao",
+        "notes": [],
+        "attachment_path": null
+      },
+      {
+        "group": "(4) Đối với chế phẩm sinh học để chẩn đoán (KIT xét nghiệm), hồ sơ đăng ký gồm:",
+        "name": "Báo cáo về các số liệu chứng minh tính đặc hiệu của sản phẩm;",
+        "quantity": "1 bản chính, 0 bản sao",
+        "notes": [],
+        "attachment_path": null
+      },
+      {
+        "group": "(4) Đối với chế phẩm sinh học để chẩn đoán (KIT xét nghiệm), hồ sơ đăng ký gồm:",
+        "name": "Báo cáo kết quả khảo nghiệm, bao gồm nội dung khảo nghiệm về độ nhạy phân tích, tính đặc hiệu của sản phẩm;",
+        "quantity": "1 bản chính, 0 bản sao",
+        "notes": [],
+        "attachment_path": null
+      },
+      {
+        "group": "(4) Đối với chế phẩm sinh học để chẩn đoán (KIT xét nghiệm), hồ sơ đăng ký gồm:",
+        "name": "Đơn đăng ký lưu hành theo mẫu quy định tại Phụ lục III ban hành, kèm theo Thông tư số 13/2016/TT-BNNPTNT;",
+        "quantity": "1 bản chính, 0 bản sao",
+        "notes": [],
+        "attachment_path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/1_004881/PH%E1%BB%A4%20L%E1%BB%A4C%20III.M%E1%BA%AAU%20%C4%90%C6%A0N%20%C4%90%C4%82NG%20K%C3%9D%20L%C6%AFU%20H%C3%80NH%20CH%E1%BA%BE%20PH%E1%BA%A8M%20SINH%20H%E1%BB%8CC%20%C4%90%E1%BB%82%20CH%E1%BA%A8N%20%C4%90O%C3%81N.docx"
+      },
+      {
+        "group": "(4) Đối với chế phẩm sinh học để chẩn đoán (KIT xét nghiệm), hồ sơ đăng ký gồm:",
+        "name": "Báo cáo về các số liệu chứng minh độ nhạy phân tích;",
+        "quantity": "1 bản chính, 0 bản sao",
+        "notes": [],
+        "attachment_path": null
+      },
+      {
+        "group": "(4) Đối với chế phẩm sinh học để chẩn đoán (KIT xét nghiệm), hồ sơ đăng ký gồm:",
+        "name": "Tóm tắt đặc tính của sản phẩm theo mẫu quy định tại Phụ lục VIII ban hành kèm theo Thông tư số 13/2016/TT-BNNPTNT;",
+        "quantity": "1 bản chính, 0 bản sao",
+        "notes": [],
+        "attachment_path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/1_004881/PH%E1%BB%A4%20L%E1%BB%A4C%20VIII.M%E1%BA%AAU%20T%C3%93M%20T%E1%BA%AET%20%C4%90%E1%BA%B6C%20T%C3%8DNH%20C%E1%BB%A6A%20S%E1%BA%A2N%20PH%E1%BA%A8M.docx"
+      },
+      {
+        "group": "(4) Đối với chế phẩm sinh học để chẩn đoán (KIT xét nghiệm), hồ sơ đăng ký gồm:",
+        "name": "Tài liệu nghiên cứu về độ ổn định, hồ sơ tóm tắt sản xuất từng lô của 3 lô liên tiếp và đề xuất hạn sử dụng;",
+        "quantity": "1 bản chính, 0 bản sao",
+        "notes": [],
+        "attachment_path": null
+      },
+      {
+        "group": "(5) Đối với thuốc thú y từ dược liệu, hồ sơ đăng ký gồm:",
+        "name": "Bản cam kết không vi phạm các qui định của luật sở hữu trí tuệ theo mẫu quy định tại Phụ lục VII ban hành kèm theo Thông tư số 13/2016/TT-BNNPTNT;",
+        "quantity": "1 bản chính, 0 bản sao",
+        "notes": [],
+        "attachment_path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/1_004881/PH%E1%BB%A4%20L%E1%BB%A4C%20VII.M%E1%BA%AAU%20GI%E1%BA%A4Y%20CAM%20K%E1%BA%BET%20%C4%90%C4%82NG%20K%C3%9D%20L%C6%AFU%20H%C3%80NH.docx"
+      },
+      {
+        "group": "(5) Đối với thuốc thú y từ dược liệu, hồ sơ đăng ký gồm:",
+        "name": "Tiêu chuẩn chất lượng và phương pháp kiểm nghiệm;",
+        "quantity": "1 bản chính, 0 bản sao",
+        "notes": [],
+        "attachment_path": null
+      },
+      {
+        "group": "(5) Đối với thuốc thú y từ dược liệu, hồ sơ đăng ký gồm:",
+        "name": "Tóm tắt đặc tính của sản phẩm theo mẫu quy định tại Phụ lục VIII ban hành kèm theo Thông tư số 13/2016/TT-BNNPTNT;",
+        "quantity": "1 bản chính, 0 bản sao",
+        "notes": [],
+        "attachment_path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/1_004881/PH%E1%BB%A4%20L%E1%BB%A4C%20VIII.M%E1%BA%AAU%20T%C3%93M%20T%E1%BA%AET%20%C4%90%E1%BA%B6C%20T%C3%8DNH%20C%E1%BB%A6A%20S%E1%BA%A2N%20PH%E1%BA%A8M.docx"
+      },
+      {
+        "group": "(5) Đối với thuốc thú y từ dược liệu, hồ sơ đăng ký gồm:",
+        "name": "Những nghiên cứu về tồn dư trong tất cả các loài động vật được chỉ định dùng thuốc để xác định thời gian ngừng sử dụng thuốc;",
+        "quantity": "1 bản chính, 0 bản sao",
+        "notes": [],
+        "attachment_path": null
+      },
+      {
+        "group": "(5) Đối với thuốc thú y từ dược liệu, hồ sơ đăng ký gồm:",
+        "name": "Mẫu nhãn sản phẩm, tờ hướng dẫn sử dụng;",
+        "quantity": "1 bản chính, 0 bản sao",
+        "notes": [],
+        "attachment_path": null
+      },
+      {
+        "group": "(5) Đối với thuốc thú y từ dược liệu, hồ sơ đăng ký gồm:",
+        "name": "Tài liệu nghiên cứu về độ ổn định và hạn sử dụng của thuốc;",
+        "quantity": "1 bản chính, 0 bản sao",
+        "notes": [],
+        "attachment_path": null
+      },
+      {
+        "group": "(5) Đối với thuốc thú y từ dược liệu, hồ sơ đăng ký gồm:",
+        "name": "Đơn đăng ký lưu hành theo mẫu quy định tại Phụ lục I ban hành kèm theo Thông tư số 13/2016/TT-BNNPTNT;",
+        "quantity": "1 bản chính, 0 bản sao",
+        "notes": [],
+        "attachment_path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/1_004881/PH%E1%BB%A4%20L%E1%BB%A4C%20I.%20M%E1%BA%AAU%20%C4%90%C6%A0N%20%C4%90%C4%82NG%20K%C3%9D%20L%C6%AFU%20H%C3%80NH%20THU%E1%BB%90C%20TH%C3%9A%20Y.docx"
+      },
+      {
+        "group": "(5) Đối với thuốc thú y từ dược liệu, hồ sơ đăng ký gồm:",
+        "name": "Tài liệu nghiên cứu về liều dùng và liệu trình điều trị đối với từng loài động vật được chỉ định;",
+        "quantity": "1 bản chính, 0 bản sao",
+        "notes": [],
+        "attachment_path": null
+      },
+      {
+        "group": "(5) Đối với thuốc thú y từ dược liệu, hồ sơ đăng ký gồm:",
+        "name": "Báo cáo về các số liệu chứng minh độ an toàn và hiệu quả của sản phẩm;",
+        "quantity": "1 bản chính, 0 bản sao",
+        "notes": [],
+        "attachment_path": null
+      },
+      {
+        "group": "(6) Đối với thuốc thú y đã có giấy chứng nhận lưu hành tại Việt Nam sản xuất gia công, san chia, hồ sơ đăng ký gồm:",
+        "name": "Tiêu chuẩn chất lượng và phương pháp kiểm nghiệm nguyên, phụ liệu ban đầu, bán thành phẩm và thành phẩm của bên đặt gia công, san chia;",
+        "quantity": "1 bản chính, 0 bản sao",
+        "notes": [],
+        "attachment_path": null
+      },
+      {
+        "group": "(6) Đối với thuốc thú y đã có giấy chứng nhận lưu hành tại Việt Nam sản xuất gia công, san chia, hồ sơ đăng ký gồm:",
+        "name": "Mẫu nhãn sản phẩm, tờ hướng dẫn sử dụng (nhãn đã đăng ký, nhãn gia công, san chia);",
+        "quantity": "1 bản chính, 0 bản sao",
+        "notes": [],
+        "attachment_path": null
+      },
+      {
+        "group": "(6) Đối với thuốc thú y đã có giấy chứng nhận lưu hành tại Việt Nam sản xuất gia công, san chia, hồ sơ đăng ký gồm:",
+        "name": "Tóm tắt thông tin sản phẩm (tên, thành phần, dạng bào chế, quy cách đóng gói, công dụng, cách dùng, hạn sử dụng);",
+        "quantity": "1 bản chính, 0 bản sao",
+        "notes": [],
+        "attachment_path": null
+      },
+      {
+        "group": "(6) Đối với thuốc thú y đã có giấy chứng nhận lưu hành tại Việt Nam sản xuất gia công, san chia, hồ sơ đăng ký gồm:",
+        "name": "Đơn đăng ký sản xuất gia công, san chia theo mẫu quy định tại Phụ lục X ban hành kèm theo Thông tư số 13/2022/TT-BNNPTNT;",
+        "quantity": "1 bản chính, 0 bản sao",
+        "notes": [],
+        "attachment_path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/1_004881/PH%E1%BB%A4%20L%E1%BB%A4C%20X.M%E1%BA%AAU%20%C4%90%C6%A0N%20%C4%90%C4%82NG%20K%C3%9D%20L%C6%AFU%20H%C3%80NH%20THU%E1%BB%90C%20TH%C3%9A%20Y%20S%E1%BA%A2N%20XU%E1%BA%A4T%20GIA%20C%C3%94NG%2C%20SAN%20CHIA.docx"
+      },
+      {
+        "group": "(7) Đối với thuốc thú y không có giấy chứng nhận lưu hành tại Việt Nam sản xuất để xuất khẩu, hồ sơ đăng ký gồm:",
+        "name": "Bản cam kết không vi phạm các quy định của luật sở hữu trí tuệ theo mẫu quy định tại Phụ lục XII ban hành kèm theo Thông tư số 13/2016/TT-BNNPTNT.",
+        "quantity": "1 bản chính, 0 bản sao",
+        "notes": [],
+        "attachment_path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/1_004881/PH%E1%BB%A4%20L%E1%BB%A4C%20XII.M%E1%BA%AAU%20GI%E1%BA%A4Y%20CAM%20K%E1%BA%BET%20S%E1%BA%A2N%20XU%E1%BA%A4T%20THU%E1%BB%90C%20TH%C3%9A%20Y%20%C4%90%E1%BB%82%20XU%E1%BA%A4T%20KH%E1%BA%A8U.docx"
+      },
+      {
+        "group": "(7) Đối với thuốc thú y không có giấy chứng nhận lưu hành tại Việt Nam sản xuất để xuất khẩu, hồ sơ đăng ký gồm:",
+        "name": "Bản cam kết thuốc sản xuất để xuất khẩu không tiêu thụ ở Việt Nam;",
+        "quantity": "1 bản chính, 0 bản sao",
+        "notes": [],
+        "attachment_path": null
+      },
+      {
+        "group": "(7) Đối với thuốc thú y không có giấy chứng nhận lưu hành tại Việt Nam sản xuất để xuất khẩu, hồ sơ đăng ký gồm:",
+        "name": "Tóm tắt đặc tính của sản phẩm theo mẫu quy định tại Phụ lục VIII ban hành kèm theo Thông tư số 13/2016/TT-BNNPTNT;",
+        "quantity": "1 bản chính, 0 bản sao",
+        "notes": [],
+        "attachment_path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/1_004881/PH%E1%BB%A4%20L%E1%BB%A4C%20VIII.M%E1%BA%AAU%20T%C3%93M%20T%E1%BA%AET%20%C4%90%E1%BA%B6C%20T%C3%8DNH%20C%E1%BB%A6A%20S%E1%BA%A2N%20PH%E1%BA%A8M.docx"
+      },
+      {
+        "group": "(7) Đối với thuốc thú y không có giấy chứng nhận lưu hành tại Việt Nam sản xuất để xuất khẩu, hồ sơ đăng ký gồm:",
+        "name": "Mẫu nhãn sản phẩm, tờ hướng dẫn sử dụng;",
+        "quantity": "1 bản chính, 0 bản sao",
+        "notes": [],
+        "attachment_path": null
+      },
+      {
+        "group": "(7) Đối với thuốc thú y không có giấy chứng nhận lưu hành tại Việt Nam sản xuất để xuất khẩu, hồ sơ đăng ký gồm:",
+        "name": "Đơn đăng ký sản xuất để xuất khẩu theo mẫu quy định tại Phụ lục XI ban hành kèm theo Thông tư số 13/2016/TT-BNNPTNT;",
+        "quantity": "1 bản chính, 0 bản sao",
+        "notes": [],
+        "attachment_path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/1_004881/PH%E1%BB%A4%20L%E1%BB%A4C%20XI.M%E1%BA%AAU%20%C4%90%C6%A0N%20%C4%90%C4%82NG%20K%C3%9D%20S%E1%BA%A2N%20XU%E1%BA%A4T%20THU%E1%BB%90C%20TH%C3%9A%20Y%20%C4%90%E1%BB%82%20XU%E1%BA%A4T%20KH%E1%BA%A8U.docx"
+      },
+      {
+        "group": "(7) Đối với thuốc thú y không có giấy chứng nhận lưu hành tại Việt Nam sản xuất để xuất khẩu, hồ sơ đăng ký gồm:",
+        "name": "Tiêu chuẩn chất lượng và phương pháp kiểm nghiệm;",
+        "quantity": "1 bản chính, 0 bản sao",
+        "notes": [],
+        "attachment_path": null
+      },
+      {
+        "group": "(8) Đối với trường hợp cấp lại Giấy chứng nhận lưu hành thuốc thú y (trong trường hợp thay đổi thành phần, công thức, dạng bào chế, đường dùng, liều dùng, chỉ định điều trị của thuốc thú y; thay đổi phương pháp, quy trình sản xuất mà làm thay đổi chất lượng sản phẩm; đánh giá lại chất lượng, hiệu quả, độ an toàn của thuốc thú y theo quy định)",
+        "name": "Đơn đề nghị cấp lại Giấy chứng nhận lưu hành thuốc thú y theo mẫu quy định tại Phụ lục IV ban hành kèm theo Thông tư số 15/2026/TT-BNNMT",
+        "quantity": "1 bản chính, 0 bản sao",
+        "notes": [],
+        "attachment_path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/1_004881/PHU%CC%A3%20LU%CC%A3C%20IV.M%E1%BA%AAU%20%C4%90%C6%A0N%20%C4%90%E1%BB%80%20NGH%E1%BB%8A%20C%E1%BA%A4P%20L%E1%BA%A0I%20GI%E1%BA%A4Y%20CH%E1%BB%A8NG%20NH%E1%BA%ACN%20L%C6%AFU%20H%C3%80NH.docx"
+      },
+      {
+        "group": null,
+        "name": null,
+        "quantity": "1 bản chính, 0 bản sao",
+        "notes": [],
+        "attachment_path": null
+      },
+      {
+        "group": null,
+        "name": null,
+        "quantity": "1 bản chính, 0 bản sao",
+        "notes": [],
+        "attachment_path": null
+      },
+      {
+        "group": null,
+        "name": null,
+        "quantity": "1 bản chính, 0 bản sao",
+        "notes": [],
+        "attachment_path": null
+      },
+      {
+        "group": null,
+        "name": null,
+        "quantity": "1 bản chính, 0 bản sao",
+        "notes": [],
+        "attachment_path": null
+      },
+      {
+        "group": null,
+        "name": null,
+        "quantity": "1 bản chính, 0 bản sao",
+        "notes": [],
+        "attachment_path": null
+      },
+      {
+        "group": null,
+        "name": null,
+        "quantity": "1 bản chính, 0 bản sao",
+        "notes": [],
+        "attachment_path": null
+      },
+      {
+        "group": null,
+        "name": null,
+        "quantity": "1 bản chính, 0 bản sao",
+        "notes": [],
+        "attachment_path": null
+      },
+      {
+        "group": null,
+        "name": null,
+        "quantity": "1 bản chính, 1 bản sao",
+        "notes": [],
+        "attachment_path": null
+      },
+      {
+        "group": null,
+        "name": "Bản cam kết không vi phạm các quy định của luật sở hữu trí tuệ theo mẫu quy định tại Phụ lục VII ban hành kèm theo Thông tư số 13/2016/TT-BNNPTNT;",
+        "quantity": null,
+        "notes": null,
+        "attachment_path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/1_004881/PH%E1%BB%A4%20L%E1%BB%A4C%20VII.M%E1%BA%AAU%20GI%E1%BA%A4Y%20CAM%20K%E1%BA%BET%20%C4%90%C4%82NG%20K%C3%9D%20L%C6%AFU%20H%C3%80NH.docx"
+      },
+      {
+        "group": null,
+        "name": "Tóm tắt đặc tính của sản phẩm theo mẫu quy định tại Phụ lục VIII ban hành kèm theo Thông tư số 13/2016/TT-BNNPTNT;",
+        "quantity": null,
+        "notes": null,
+        "attachment_path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/1_004881/PH%E1%BB%A4%20L%E1%BB%A4C%20VIII.M%E1%BA%AAU%20T%C3%93M%20T%E1%BA%AET%20%C4%90%E1%BA%B6C%20T%C3%8DNH%20C%E1%BB%A6A%20S%E1%BA%A2N%20PH%E1%BA%A8M.docx"
+      },
+      {
+        "group": null,
+        "name": "Đơn đăng ký lưu hành theo mẫu quy định tại Phụ lục I ban hành kèm theo Thông tư số 13/2016/TT-BNNPTNT;",
+        "quantity": null,
+        "notes": null,
+        "attachment_path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/1_004881/PH%E1%BB%A4%20L%E1%BB%A4C%20I.%20M%E1%BA%AAU%20%C4%90%C6%A0N%20%C4%90%C4%82NG%20K%C3%9D%20L%C6%AFU%20H%C3%80NH%20THU%E1%BB%90C%20TH%C3%9A%20Y.docx"
+      },
+      {
+        "group": null,
+        "name": "Đơn đăng ký lưu hành theo mẫu quy định tại Phụ lục I ban hành kèm theo Thông tư số 13/2016/TT-BNNPTNT;",
+        "quantity": null,
+        "notes": null,
+        "attachment_path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/1_004881/PH%E1%BB%A4%20L%E1%BB%A4C%20I.%20M%E1%BA%AAU%20%C4%90%C6%A0N%20%C4%90%C4%82NG%20K%C3%9D%20L%C6%AFU%20H%C3%80NH%20THU%E1%BB%90C%20TH%C3%9A%20Y.docx"
+      },
+      {
+        "group": null,
+        "name": "Bản cam kết không vi phạm các quy định của luật sở hữu trí tuệ theo mẫu quy định tại Phụ lục VII ban hành kèm theo Thông tư số 13/2016/TT-BNNPTNT;",
+        "quantity": null,
+        "notes": null,
+        "attachment_path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/1_004881/PH%E1%BB%A4%20L%E1%BB%A4C%20VII.M%E1%BA%AAU%20GI%E1%BA%A4Y%20CAM%20K%E1%BA%BET%20%C4%90%C4%82NG%20K%C3%9D%20L%C6%AFU%20H%C3%80NH.docx"
+      },
+      {
+        "group": null,
+        "name": "Tóm tắt đặc tính của sản phẩm theo mẫu quy định tại Phụ lục VIII ban hành kèm theo Thông tư số13/2016/TT-BNNPTNT;",
+        "quantity": null,
+        "notes": null,
+        "attachment_path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/1_004881/PH%E1%BB%A4%20L%E1%BB%A4C%20VIII.M%E1%BA%AAU%20T%C3%93M%20T%E1%BA%AET%20%C4%90%E1%BA%B6C%20T%C3%8DNH%20C%E1%BB%A6A%20S%E1%BA%A2N%20PH%E1%BA%A8M.docx"
+      },
+      {
+        "group": null,
+        "name": "Đơn đăng ký lưu hành theo mẫu quy định tại Phụ lục II ban hành, kèm theo Thông tư số 13/2016/TT-BNNPTNT;",
+        "quantity": null,
+        "notes": null,
+        "attachment_path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/1_004881/PH%E1%BB%A4%20L%E1%BB%A4C%20II.M%E1%BA%AAU%20%C4%90%C6%A0N%20%C4%90%C4%82NG%20K%C3%9D%20L%C6%AFU%20H%C3%80NH%20V%E1%BA%AEC%20XIN%2C%20KH%C3%81NG%20TH%E1%BB%82%20D%C3%99NG%20TRONG%20TH%C3%9A%20Y.docx"
+      },
+      {
+        "group": null,
+        "name": "Tóm tắt đặc tính của sản phẩm theo mẫu quy định tại Phụ lục VIII ban hành kèm theo Thông tư số 13/2016/TT-BNNPTNT;",
+        "quantity": null,
+        "notes": null,
+        "attachment_path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/1_004881/PH%E1%BB%A4%20L%E1%BB%A4C%20VIII.M%E1%BA%AAU%20T%C3%93M%20T%E1%BA%AET%20%C4%90%E1%BA%B6C%20T%C3%8DNH%20C%E1%BB%A6A%20S%E1%BA%A2N%20PH%E1%BA%A8M.docx"
+      },
+      {
+        "group": null,
+        "name": "Đơn đăng ký lưu hành theo mẫu quy định tại Phụ lục III ban hành, kèm theo Thông tư số 13/2016/TT-BNNPTNT;",
+        "quantity": null,
+        "notes": null,
+        "attachment_path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/1_004881/PH%E1%BB%A4%20L%E1%BB%A4C%20III.M%E1%BA%AAU%20%C4%90%C6%A0N%20%C4%90%C4%82NG%20K%C3%9D%20L%C6%AFU%20H%C3%80NH%20CH%E1%BA%BE%20PH%E1%BA%A8M%20SINH%20H%E1%BB%8CC%20%C4%90%E1%BB%82%20CH%E1%BA%A8N%20%C4%90O%C3%81N.docx"
+      },
+      {
+        "group": null,
+        "name": "Tóm tắt đặc tính của sản phẩm theo mẫu quy định tại Phụ lục VIII ban hành kèm theo Thông tư số 13/2016/TT-BNNPTNT;",
+        "quantity": null,
+        "notes": null,
+        "attachment_path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/1_004881/PH%E1%BB%A4%20L%E1%BB%A4C%20VIII.M%E1%BA%AAU%20T%C3%93M%20T%E1%BA%AET%20%C4%90%E1%BA%B6C%20T%C3%8DNH%20C%E1%BB%A6A%20S%E1%BA%A2N%20PH%E1%BA%A8M.docx"
+      },
+      {
+        "group": null,
+        "name": "Bản cam kết không vi phạm các qui định của luật sở hữu trí tuệ theo mẫu quy định tại Phụ lục VII ban hành kèm theo Thông tư số 13/2016/TT-BNNPTNT;",
+        "quantity": null,
+        "notes": null,
+        "attachment_path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/1_004881/PH%E1%BB%A4%20L%E1%BB%A4C%20VII.M%E1%BA%AAU%20GI%E1%BA%A4Y%20CAM%20K%E1%BA%BET%20%C4%90%C4%82NG%20K%C3%9D%20L%C6%AFU%20H%C3%80NH.docx"
+      },
+      {
+        "group": null,
+        "name": "Tóm tắt đặc tính của sản phẩm theo mẫu quy định tại Phụ lục VIII ban hành kèm theo Thông tư số 13/2016/TT-BNNPTNT;",
+        "quantity": null,
+        "notes": null,
+        "attachment_path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/1_004881/PH%E1%BB%A4%20L%E1%BB%A4C%20VIII.M%E1%BA%AAU%20T%C3%93M%20T%E1%BA%AET%20%C4%90%E1%BA%B6C%20T%C3%8DNH%20C%E1%BB%A6A%20S%E1%BA%A2N%20PH%E1%BA%A8M.docx"
+      },
+      {
+        "group": null,
+        "name": "Đơn đăng ký lưu hành theo mẫu quy định tại Phụ lục I ban hành kèm theo Thông tư số 13/2016/TT-BNNPTNT;",
+        "quantity": null,
+        "notes": null,
+        "attachment_path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/1_004881/PH%E1%BB%A4%20L%E1%BB%A4C%20I.%20M%E1%BA%AAU%20%C4%90%C6%A0N%20%C4%90%C4%82NG%20K%C3%9D%20L%C6%AFU%20H%C3%80NH%20THU%E1%BB%90C%20TH%C3%9A%20Y.docx"
+      },
+      {
+        "group": null,
+        "name": "Đơn đăng ký sản xuất gia công, san chia theo mẫu quy định tại Phụ lục X ban hành kèm theo Thông tư số 13/2022/TT-BNNPTNT;",
+        "quantity": null,
+        "notes": null,
+        "attachment_path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/1_004881/PH%E1%BB%A4%20L%E1%BB%A4C%20X.M%E1%BA%AAU%20%C4%90%C6%A0N%20%C4%90%C4%82NG%20K%C3%9D%20L%C6%AFU%20H%C3%80NH%20THU%E1%BB%90C%20TH%C3%9A%20Y%20S%E1%BA%A2N%20XU%E1%BA%A4T%20GIA%20C%C3%94NG%2C%20SAN%20CHIA.docx"
+      },
+      {
+        "group": null,
+        "name": "Bản cam kết không vi phạm các quy định của luật sở hữu trí tuệ theo mẫu quy định tại Phụ lục XII ban hành kèm theo Thông tư số 13/2016/TT-BNNPTNT.",
+        "quantity": null,
+        "notes": null,
+        "attachment_path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/1_004881/PH%E1%BB%A4%20L%E1%BB%A4C%20XII.M%E1%BA%AAU%20GI%E1%BA%A4Y%20CAM%20K%E1%BA%BET%20S%E1%BA%A2N%20XU%E1%BA%A4T%20THU%E1%BB%90C%20TH%C3%9A%20Y%20%C4%90%E1%BB%82%20XU%E1%BA%A4T%20KH%E1%BA%A8U.docx"
+      },
+      {
+        "group": null,
+        "name": "Tóm tắt đặc tính của sản phẩm theo mẫu quy định tại Phụ lục VIII ban hành kèm theo Thông tư số 13/2016/TT-BNNPTNT;",
+        "quantity": null,
+        "notes": null,
+        "attachment_path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/1_004881/PH%E1%BB%A4%20L%E1%BB%A4C%20VIII.M%E1%BA%AAU%20T%C3%93M%20T%E1%BA%AET%20%C4%90%E1%BA%B6C%20T%C3%8DNH%20C%E1%BB%A6A%20S%E1%BA%A2N%20PH%E1%BA%A8M.docx"
+      },
+      {
+        "group": null,
+        "name": "Đơn đăng ký sản xuất để xuất khẩu theo mẫu quy định tại Phụ lục XI ban hành kèm theo Thông tư số 13/2016/TT-BNNPTNT;",
+        "quantity": null,
+        "notes": null,
+        "attachment_path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/1_004881/PH%E1%BB%A4%20L%E1%BB%A4C%20XI.M%E1%BA%AAU%20%C4%90%C6%A0N%20%C4%90%C4%82NG%20K%C3%9D%20S%E1%BA%A2N%20XU%E1%BA%A4T%20THU%E1%BB%90C%20TH%C3%9A%20Y%20%C4%90%E1%BB%82%20XU%E1%BA%A4T%20KH%E1%BA%A8U.docx"
+      },
+      {
+        "group": null,
+        "name": "Đơn đề nghị cấp lại Giấy chứng nhận lưu hành thuốc thú y theo mẫu quy định tại Phụ lục IV ban hành kèm theo Thông tư số 15/2026/TT-BNNMT",
+        "quantity": null,
+        "notes": null,
+        "attachment_path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/1_004881/PHU%CC%A3%20LU%CC%A3C%20IV.M%E1%BA%AAU%20%C4%90%C6%A0N%20%C4%90%E1%BB%80%20NGH%E1%BB%8A%20C%E1%BA%A4P%20L%E1%BA%A0I%20GI%E1%BA%A4Y%20CH%E1%BB%A8NG%20NH%E1%BA%ACN%20L%C6%AFU%20H%C3%80NH.docx"
+      }
+    ]
+  },
+  "steps": [
+    {
+      "order": 1,
+      "title": "Bước 1",
+      "description": "1.",
+      "example": null
+    },
+    {
+      "order": 2,
+      "title": "Bước 1:",
+      "description": "Bước 1: Gửi hồ sơ Tổ chức, cá nhân có nhu cầu đề nghị cấp Giấy chứng nhận lưu hành thuốc thú y; Cấp lại Giấy chứng nhận lưu hành thuốc thú y (trong trường hợp thay đổi thành phần, công thức, dạng bào chế, đường dùng, liều dùng, chỉ định điều trị của thuốc thú y; thay đổi phương pháp, quy trình sản xuất mà làm thay đổi chất lượng sản phẩm; đánh giá lại chất lượng, hiệu quả, độ an toàn của thuốc thú y theo quy định) chuẩn bị hồ sơ và nộp đến Cục Chăn nuôi và Thú y. Trong thời hạn 07 ngày kể từ ngày nhận hồ sơ đăng ký, Cục Chăn nuôi và Thú y có trách nhiệm thông báo cho tổ chức, cá nhân đăng ký biết để hoàn thiện đối với những trường hợp hồ sơ không đạt yêu cầu.",
+      "example": "07 ngày"
+    },
+    {
+      "order": 3,
+      "title": "Bước 2:",
+      "description": "Bước 2: Thẩm định hồ sơ, cấp Giấy chứng nhận lưu hành thuốc thú y Cục Chăn nuôi và Thú y tiếp nhận hồ sơ đăng ký lưu hành, thẩm định hồ sơ, tổ chức họp Hội đồng khoa học chuyên ngành thuốc thú y, cấp Giấy chứng nhận lưu hành thuốc thú y theo mẫu quy định tại Phụ lục IX ban hành kèm theo Thông tư số 13/2016/TT-BNNPTNT. Cục trưởng Cục Chăn nuôi và Thú y quyết định thành viên và nội dung họp của Hội đồng khoa học chuyên ngành thuốc thú y. Hội đồng khoa học chuyên ngành thuốc thú y họp ít nhất một lần trong ba tháng để đánh giá kết quả thẩm định hồ sơ, kết quả kiểm nghiệm, khảo nghiệm và đề nghị Cục trưởng Cục Chăn nuôi và Thú y cấp Giấy chứng nhận lưu hành thuốc thú y. Thời gian thẩm định hồ sơ và trả lời kết quả: 30 ngày, kể từ ngày nhận được hồ sơ hợp lệ đối với hồ sơ đăng ký thuốc được miễn khảo nghiệm, chế phẩm sinh học để chẩn đoán; 75 ngày, kể từ ngày nhận được hồ sơ hợp lệ, đối với hồ sơ đăng ký thuốc mới, vắc xin, kháng thể, thuốc từ dược liệu; trường hợp không cấp, trả lời bằng văn bản và nêu rõ lý do. Cục Chăn nuôi và Thú y có trách nhiệm thẩm định hồ sơ và trả lời kết quả trong thời hạn như sau: 10 ngày, kể từ ngày nhận được hồ sơ hợp lệ đối với hồ sơ đăng ký sản xuất để xuất khẩu, sản xuất gia công, san chia;. Đối với thuốc thú y đã có Giấy chứng nhận lưu hành tại Việt Nam đăng ký sản xuất gia công, san chia, Cục Chăn nuôi và Thú y thẩm định hồ sơ đăng ký, cấp Giấy chứng nhận lưu hành thuốc thú y sản xuất gia công, san chia theo mẫu quy định tại Phụ lục XIII kèm theo Thông tư số 13/2016/TT-BNNPTNT. Thời gian thẩm định hồ sơ và trả lời kết quả: 10 ngày, kể từ ngày nhận được hồ sơ hợp lệ đối với hồ sơ đăng ký sản xuất gia công, san chia; trường hợp không cấp, trả lời bằng văn bản và nêu rõ lý do. Đối với thuốc thú y không có Giấy chứng nhận lưu hành tại Việt Nam sản xuất để xuất khẩu, Cục Chăn nuôi và Thú y thẩm định hồ sơ đăng ký, cấp Giấy chứng nhận lưu hành thuốc thú y để xuất khẩu theo mẫu quy định tại Phụ lục XIV ban hành kèm theo Thông tư số 13/2016/TT-BNNPTNT hoặc theo yêu cầu của doanh nghiệp để xuất khẩu. Thời gian thẩm định hồ sơ và trả lời kết quả: 10 ngày, kể từ ngày nhận được hồ sơ hợp lệ đối với hồ sơ đăng ký sản xuất để xuất khẩu; trường hợp không cấp, trả lời bằng văn bản và nêu rõ lý do.",
+      "example": "30 ngày"
+    }
+  ],
+  "input_fields": [
+    {
+      "field": "request_subject",
+      "label": "Đối tượng làm thủ tục",
+      "type": "string",
+      "required": true
+    },
+    {
+      "field": "insurance_or_medical_need",
+      "label": "Nhu cầu bảo hiểm hoặc y tế",
+      "type": "string",
+      "required": true
+    },
+    {
+      "field": "submission_channel_preference",
+      "label": "Kênh nộp dự kiến",
+      "type": "enum",
+      "required": false,
+      "options": [
+        "Trực tiếp",
+        "Trực tuyến",
+        "Dịch vụ bưu chính"
+      ]
+    },
+    {
+      "field": "has_insurance_number",
+      "label": "Đã có mã BHXH/BHYT",
+      "type": "boolean",
+      "required": false
+    }
+  ],
+  "validation_rules": [
+    {
+      "id": "required-1",
+      "severity": "error",
+      "field": "request_subject",
+      "rule": "Trường bắt buộc phải có dữ liệu hợp lệ trước khi nộp.",
+      "message": "Thiếu trường bắt buộc: Đối tượng làm thủ tục."
+    },
+    {
+      "id": "required-2",
+      "severity": "error",
+      "field": "insurance_or_medical_need",
+      "rule": "Trường bắt buộc phải có dữ liệu hợp lệ trước khi nộp.",
+      "message": "Thiếu trường bắt buộc: Nhu cầu bảo hiểm hoặc y tế."
+    },
+    {
+      "id": "hint-1",
+      "severity": "warning",
+      "field": "general",
+      "rule": "Nên xác định trước kênh nộp hồ sơ để biết có cần bản giấy, bản điện tử hay xuất trình trực tiếp.",
+      "message": "Nên xác định trước kênh nộp hồ sơ để biết có cần bản giấy, bản điện tử hay xuất trình trực tiếp."
+    },
+    {
+      "id": "hint-2",
+      "severity": "warning",
+      "field": "general",
+      "rule": "Có mẫu biểu đính kèm, nên kiểm tra đúng biểu mẫu trước khi nộp.",
+      "message": "Có mẫu biểu đính kèm, nên kiểm tra đúng biểu mẫu trước khi nộp."
+    },
+    {
+      "id": "hint-3",
+      "severity": "warning",
+      "field": "general",
+      "rule": "Nên xác định đúng nhóm đối tượng, mã số bảo hiểm và quyền lợi áp dụng trước khi nộp.",
+      "message": "Nên xác định đúng nhóm đối tượng, mã số bảo hiểm và quyền lợi áp dụng trước khi nộp."
+    }
+  ],
+  "common_errors": [
+    {
+      "field": "general",
+      "issue": "Thiếu giấy tờ hợp pháp hóa hoặc giấy tờ nhân thân của phía nước ngoài.",
+      "fix": "Nên xác định trước kênh nộp hồ sơ để biết có cần bản giấy, bản điện tử hay xuất trình trực tiếp."
+    },
+    {
+      "field": "general",
+      "issue": "Điền sai mẫu tờ khai hoặc chọn sai biểu mẫu đi kèm.",
+      "fix": "Nên xác định trước kênh nộp hồ sơ để biết có cần bản giấy, bản điện tử hay xuất trình trực tiếp."
+    },
+    {
+      "field": "general",
+      "issue": "Thông tin thửa đất, tài sản hoặc giấy chứng nhận chưa khớp với hồ sơ hiện có.",
+      "fix": "Nên xác định trước kênh nộp hồ sơ để biết có cần bản giấy, bản điện tử hay xuất trình trực tiếp."
+    }
+  ],
+  "clarifying_questions": [
+    {
+      "id": "clarify_1",
+      "question": "Bạn đang muốn đăng ký, điều chỉnh hay xác nhận quyền lợi y tế hoặc bảo hiểm nào?",
+      "purpose": "workflow_intake"
+    },
+    {
+      "id": "clarify_2",
+      "question": "Bạn đã có mã BHXH/BHYT hoặc thông tin đơn vị tiếp nhận liên quan chưa?",
+      "purpose": "workflow_intake"
+    }
+  ],
+  "legal_basis": [
+    {
+      "title": "Thông tư số 101/2020/TT-BTC ngày 23/11/2020 của Bộ trưởng Bộ Tài chính quy định về mức thu, chế độ thu, nộp, quản lý phí, lệ phí trong công tác thú y",
+      "code": "101/2020/TT-BTC"
+    },
+    {
+      "title": "Luật Thú y",
+      "code": "Luật 79/2015/QH13"
+    },
+    {
+      "title": "của Bộ trưởng Bộ Nông nghiệp và Môi trường sửa đổi, bổ sung một số điều của các Thông tư quy định về quản lý thuốc thú y",
+      "code": "Thông tư số 15/2026/TT-BNNMT"
+    },
+    {
+      "title": "Quy định về quản lý thuốc thú y",
+      "code": "13/2016/TT-BNNPTNT"
+    },
+    {
+      "title": "Thông tư 13/2022/TT-BNNPTNT",
+      "code": "13/2022/TT-BNNPTNT"
+    }
+  ],
+  "legal_bases": [
+    {
+      "title": "Thông tư số 101/2020/TT-BTC ngày 23/11/2020 của Bộ trưởng Bộ Tài chính quy định về mức thu, chế độ thu, nộp, quản lý phí, lệ phí trong công tác thú y",
+      "code": "101/2020/TT-BTC"
+    },
+    {
+      "title": "Luật Thú y",
+      "code": "Luật 79/2015/QH13"
+    },
+    {
+      "title": "của Bộ trưởng Bộ Nông nghiệp và Môi trường sửa đổi, bổ sung một số điều của các Thông tư quy định về quản lý thuốc thú y",
+      "code": "Thông tư số 15/2026/TT-BNNMT"
+    },
+    {
+      "title": "Quy định về quản lý thuốc thú y",
+      "code": "13/2016/TT-BNNPTNT"
+    },
+    {
+      "title": "Thông tư 13/2022/TT-BNNPTNT",
+      "code": "13/2022/TT-BNNPTNT"
+    }
+  ],
+  "faq": [
+    {
+      "question": "Có thể nộp qua kênh nào?",
+      "answer": "Các kênh hiện có: Trực tiếp, Trực tuyến, Dịch vụ bưu chính."
+    },
+    {
+      "question": "Kết quả chính của thủ tục là gì?",
+      "answer": "Kết quả chính được trích xuất là Giấy chứng nhận lưu hành thuốc thú y."
+    }
+  ],
+  "guidance": {
+    "highlight_documents": [
+      {
+        "bucket": "required",
+        "name": "Những thông tin về thuốc gốc, thuốc Generic (tên sản phẩm, tên nhà sản xuất, công thức, dạng bào chế, công dụng, chỉ định điều trị, chống chỉ định, liều lượng sử dụng, thời gian ngừng sử dụng thuốc, những lưu ý đối với động vật được chỉ định, với người sử dụng và các đặc tính kỹ thuật khác của sản phẩm)",
+        "conditions": [],
+        "attachment_path": null
+      },
+      {
+        "bucket": "required",
+        "name": "Bản cam kết không vi phạm các quy định của luật sở hữu trí tuệ theo mẫu quy định tại Phụ lục VII ban hành kèm theo Thông tư số 13/2016/TT-BNNPTNT;",
+        "conditions": [],
+        "attachment_path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/1_004881/PH%E1%BB%A4%20L%E1%BB%A4C%20VII.M%E1%BA%AAU%20GI%E1%BA%A4Y%20CAM%20K%E1%BA%BET%20%C4%90%C4%82NG%20K%C3%9D%20L%C6%AFU%20H%C3%80NH.docx"
+      },
+      {
+        "bucket": "required",
+        "name": "Tài liệu nghiên cứu về độ ổn định và hạn sử dụng của thuốc;",
+        "conditions": [],
+        "attachment_path": null
+      },
+      {
+        "bucket": "required",
+        "name": "Tóm tắt đặc tính của sản phẩm theo mẫu quy định tại Phụ lục VIII ban hành kèm theo Thông tư số 13/2016/TT-BNNPTNT;",
+        "conditions": [],
+        "attachment_path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/1_004881/PH%E1%BB%A4%20L%E1%BB%A4C%20VIII.M%E1%BA%AAU%20T%C3%93M%20T%E1%BA%AET%20%C4%90%E1%BA%B6C%20T%C3%8DNH%20C%E1%BB%A6A%20S%E1%BA%A2N%20PH%E1%BA%A8M.docx"
+      },
+      {
+        "bucket": "required",
+        "name": "Đơn đăng ký lưu hành theo mẫu quy định tại Phụ lục I ban hành kèm theo Thông tư số 13/2016/TT-BNNPTNT;",
+        "conditions": [],
+        "attachment_path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/1_004881/PH%E1%BB%A4%20L%E1%BB%A4C%20I.%20M%E1%BA%AAU%20%C4%90%C6%A0N%20%C4%90%C4%82NG%20K%C3%9D%20L%C6%AFU%20H%C3%80NH%20THU%E1%BB%90C%20TH%C3%9A%20Y.docx"
+      },
+      {
+        "bucket": "required",
+        "name": "Mẫu nhãn sản phẩm, tờ hướng dẫn sử dụng;",
+        "conditions": [],
+        "attachment_path": null
+      }
+    ],
+    "special_cases": [
+      "Có yếu tố nước ngoài",
+      "Có thể cần đối chiếu thông tin thửa đất hoặc giấy chứng nhận"
+    ],
+    "common_errors": [
+      "Thiếu giấy tờ hợp pháp hóa hoặc giấy tờ nhân thân của phía nước ngoài.",
+      "Điền sai mẫu tờ khai hoặc chọn sai biểu mẫu đi kèm.",
+      "Thông tin thửa đất, tài sản hoặc giấy chứng nhận chưa khớp với hồ sơ hiện có."
+    ],
+    "validation_hints": [
+      "Nên xác định trước kênh nộp hồ sơ để biết có cần bản giấy, bản điện tử hay xuất trình trực tiếp.",
+      "Có mẫu biểu đính kèm, nên kiểm tra đúng biểu mẫu trước khi nộp.",
+      "Nên xác định đúng nhóm đối tượng, mã số bảo hiểm và quyền lợi áp dụng trước khi nộp."
+    ]
+  },
+  "next_steps": {
+    "summary": "Nên xác định rõ đối tượng tham gia, quyền lợi hoặc nhu cầu điều chỉnh hồ sơ y tế trước khi nộp. Có thể chọn kênh nộp phù hợp: Trực tiếp, Trực tuyến, Dịch vụ bưu chính. Hiện có khoảng 63 mục giấy tờ cần theo dõi trong checklist.",
+    "time_badge": null,
+    "result_label": "Giấy chứng nhận lưu hành thuốc thú y",
+    "primary_channel": "online",
+    "channels": [
+      "in_person",
+      "online",
+      "postal"
+    ]
+  },
+  "notes": [],
+  "provenance": {
+    "pipeline": "raw->structured->normalized->enriched->ui_api_payload",
+    "normalizer_version": "0.2.0",
+    "enricher_version": "0.2.0",
+    "mapping_notes": "excluded_from_clean_workflow_dataset",
+    "supported_group": true
+  }
+}

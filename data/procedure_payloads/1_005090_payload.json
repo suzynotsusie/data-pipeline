@@ -1,0 +1,301 @@
+{
+  "schema_version": "3.0",
+  "record_type": "public_service_procedure_payload",
+  "id": "procedure-1.005090",
+  "procedure_code": "1.005090",
+  "code": "1.005090",
+  "title": "Xét tuyển sinh vào trường phổ thông dân tộc nội trú",
+  "language": "vi",
+  "status": "generated_from_pipeline",
+  "field": "Thi, tuyển sinh",
+  "group_key": "hoc_tap",
+  "workflow_family": "education_study_workflow",
+  "subflow": "tuyen_sinh",
+  "source": {
+    "source_url": "file:///C:/Users/ku060/Downloads/VAIC%20source/data-pipeline/raw_data/1_005090/1_005090_procedure_detail.md",
+    "source_markdown_path": "C:\\Users\\ku060\\Downloads\\VAIC source\\data-pipeline\\raw_data\\1_005090\\1_005090_procedure_detail.md",
+    "normalized_payload_path": "C:\\Users\\ku060\\Downloads\\VAIC source\\data-pipeline\\govease-unified\\data\\normalized_structured\\1_005090_normalized_structured.json",
+    "enriched_payload_path": "C:\\Users\\ku060\\Downloads\\VAIC source\\data-pipeline\\govease-unified\\data\\enriched_structured_priority\\1_005090_enriched_structured.json"
+  },
+  "scope": {
+    "included": "Thủ tục này thuộc nhóm giáo dục và học tập, thường liên quan đến hồ sơ đào tạo, văn bằng hoặc điều kiện học tập của người học. Kết quả thường nhận được là kết quả giải quyết theo thủ tục này. Thời gian xử lý tham khảo: theo thời hạn của cơ quan xử lý.",
+    "not_included": []
+  },
+  "agency": {
+    "executing_agency": "Sở Giáo dục và Đào tạo Ủy ban nhân dân cấp xã",
+    "submission_place": null,
+    "receiving_places": []
+  },
+  "target_users": [],
+  "submission_methods": [
+    {
+      "code": "IN_PERSON",
+      "label": "Trực tiếp",
+      "processing_time": null,
+      "fee": null,
+      "description": "Tùy theo đợt Theo đợt, trước khi khai giảng năm học."
+    },
+    {
+      "code": "POSTAL",
+      "label": "Dịch vụ bưu chính",
+      "processing_time": null,
+      "fee": null,
+      "description": "Tùy theo đợt Theo đợt, trước khi khai giảng năm học"
+    }
+  ],
+  "processing_note": "Nên rà trước thông tin người học, cơ sở đào tạo và loại kết quả cần xin xác nhận hoặc cấp lại. Có thể chọn kênh nộp phù hợp: Trực tiếp, Dịch vụ bưu chính. Hiện có khoảng 4 mục giấy tờ cần theo dõi trong checklist.",
+  "documents": {
+    "normally_required": [
+      {
+        "name": "Tuyển sinh trung học cơ sở và phổ thông Tên giấy tờ Mẫu đơn, tờ khai Số lượng Học bạ cấp tiểu học hoặc các hồ sơ khác có giá trị thay thế học bạ",
+        "quantity": "1 bản chính, 0 bản sao",
+        "notes": [],
+        "group": "default",
+        "attachment_path": null
+      },
+      {
+        "name": "Học bạ cấp trung học cơ sở",
+        "quantity": "1 bản chính, 0 bản sao",
+        "notes": [],
+        "group": "default",
+        "attachment_path": null
+      }
+    ],
+    "conditional": [
+      {
+        "condition": "Giấy xác nhận chế độ ưu tiên do cơ quan có thẩm quyền cấp (nếu có)",
+        "document": "Giấy xác nhận chế độ ưu tiên do cơ quan có thẩm quyền cấp (nếu có)",
+        "quantity": "1 bản chính, 0 bản sao",
+        "notes": [],
+        "attachment_path": null
+      },
+      {
+        "condition": "Giấy xác nhận chế độ ưu tiên do cơ quan có thẩm quyền cấp (nếu có)",
+        "document": "Giấy xác nhận chế độ ưu tiên do cơ quan có thẩm quyền cấp (nếu có)",
+        "quantity": "1 bản chính, 0 bản sao",
+        "notes": [],
+        "attachment_path": null
+      }
+    ],
+    "forms": [],
+    "presented": [],
+    "notes": [
+      "Bản sao chứng thực hoặc bản chụp/photo kèm bản chính để đối chiếu bằng tốt nghiệp trung học cơ sở hoặc giấy chứng nhận tốt nghiệp trung học cơ sở tạm thờ"
+    ],
+    "summary": [
+      {
+        "group": "default",
+        "name": "Tuyển sinh trung học cơ sở và phổ thông Tên giấy tờ Mẫu đơn, tờ khai Số lượng Học bạ cấp tiểu học hoặc các hồ sơ khác có giá trị thay thế học bạ",
+        "quantity": "1 bản chính, 0 bản sao",
+        "notes": [],
+        "attachment_path": null
+      },
+      {
+        "group": "default",
+        "name": "Học bạ cấp trung học cơ sở",
+        "quantity": "1 bản chính, 0 bản sao",
+        "notes": [],
+        "attachment_path": null
+      },
+      {
+        "group": null,
+        "name": null,
+        "quantity": "1 bản chính, 0 bản sao",
+        "notes": [],
+        "attachment_path": null
+      },
+      {
+        "group": null,
+        "name": null,
+        "quantity": "1 bản chính, 0 bản sao",
+        "notes": [],
+        "attachment_path": null
+      }
+    ]
+  },
+  "steps": [
+    {
+      "order": 1,
+      "title": "Bước 1",
+      "description": "1. Kế hoạch tuyển sinh",
+      "example": null
+    },
+    {
+      "order": 2,
+      "title": "a)",
+      "description": "a) Sở Giáo dục và Đào tạo lập kế hoạch tuyển sinh đối với trường PTDTNT trên địa bàn tỉnh, trình Ủy ban nhân dân cấp tỉnh phê duyệt và ban hành. Kế hoạch tuyển sinh gồm các nội dung chính sau: đối tượng, địa bàn, phương thức, chỉ tiêu tuyển sinh; tỷ lệ tuyển sinh ở xã, thôn đặc biệt khó khăn và các địa bàn khác; tổ chức công tác tuyển sinh;",
+      "example": null
+    },
+    {
+      "order": 3,
+      "title": "b)",
+      "description": "b) Trường Hữu Nghị 80, Trường Hữu Nghị T78, Trường Phổ thông Vùng cao Việt Bắc lập kế hoạch tuyển sinh, báo cáo cơ quan chủ quản và trình Bộ Giáo dục và Đào tạo phê duyệt. 2. Tổ chức tuyển sinh",
+      "example": null
+    },
+    {
+      "order": 4,
+      "title": "a)",
+      "description": "a) Sở Giáo dục và Đào tạo hướng dẫn tuyển sinh đối với các trường PTDTNT có cấp học cao nhất là trung học phổ thông và hướng dẫn tuyển sinh đối với các Ủy ban nhân nhân xã hướng dẫn tuyển sinh đối với các trường PTDTNT trung học cơ sở đặt trên địa bàn;",
+      "example": null
+    },
+    {
+      "order": 5,
+      "title": "b)",
+      "description": "b) Trường Hữu Nghị 80, Trường Hữu Nghị T78 và Trường Phổ thông Vùng cao Việt Bắc tổ chức tuyển sinh theo kế hoạch được phê duyệt. Kế hoạch tuyển sinh gồm các nội dung chính sau: đối tượng; địa bàn; chỉ tiêu; phương thức tuyển sinh; tuyển thẳng và chế độ ưu tiên, khuyến khích; tổ chức công tác tuyển sinh.",
+      "example": null
+    }
+  ],
+  "input_fields": [
+    {
+      "field": "learner_full_name",
+      "label": "Tên người học",
+      "type": "string",
+      "required": true
+    },
+    {
+      "field": "education_record_type",
+      "label": "Loại hồ sơ học tập cần xử lý",
+      "type": "string",
+      "required": true
+    },
+    {
+      "field": "education_institution",
+      "label": "Cơ sở đào tạo liên quan",
+      "type": "string",
+      "required": false
+    },
+    {
+      "field": "submission_channel_preference",
+      "label": "Kênh nộp dự kiến",
+      "type": "enum",
+      "required": false,
+      "options": [
+        "Trực tiếp",
+        "Dịch vụ bưu chính"
+      ]
+    }
+  ],
+  "validation_rules": [
+    {
+      "id": "required-1",
+      "severity": "error",
+      "field": "learner_full_name",
+      "rule": "Trường bắt buộc phải có dữ liệu hợp lệ trước khi nộp.",
+      "message": "Thiếu trường bắt buộc: Tên người học."
+    },
+    {
+      "id": "required-2",
+      "severity": "error",
+      "field": "education_record_type",
+      "rule": "Trường bắt buộc phải có dữ liệu hợp lệ trước khi nộp.",
+      "message": "Thiếu trường bắt buộc: Loại hồ sơ học tập cần xử lý."
+    },
+    {
+      "id": "hint-1",
+      "severity": "warning",
+      "field": "general",
+      "rule": "Nên xác định trước kênh nộp hồ sơ để biết có cần bản giấy, bản điện tử hay xuất trình trực tiếp.",
+      "message": "Nên xác định trước kênh nộp hồ sơ để biết có cần bản giấy, bản điện tử hay xuất trình trực tiếp."
+    },
+    {
+      "id": "hint-2",
+      "severity": "warning",
+      "field": "general",
+      "rule": "Nên rà lại thông tin người học, cơ sở đào tạo và loại xác nhận hoặc văn bằng cần xin.",
+      "message": "Nên rà lại thông tin người học, cơ sở đào tạo và loại xác nhận hoặc văn bằng cần xin."
+    }
+  ],
+  "common_errors": [
+    {
+      "field": "general",
+      "issue": "Điền sai mẫu tờ khai hoặc chọn sai biểu mẫu đi kèm.",
+      "fix": "Nên xác định trước kênh nộp hồ sơ để biết có cần bản giấy, bản điện tử hay xuất trình trực tiếp."
+    },
+    {
+      "field": "general",
+      "issue": "Thông tin thửa đất, tài sản hoặc giấy chứng nhận chưa khớp với hồ sơ hiện có.",
+      "fix": "Nên xác định trước kênh nộp hồ sơ để biết có cần bản giấy, bản điện tử hay xuất trình trực tiếp."
+    }
+  ],
+  "clarifying_questions": [
+    {
+      "id": "clarify_1",
+      "question": "Bạn đang cần xử lý hồ sơ học tập, văn bằng hay xác nhận nào?",
+      "purpose": "workflow_intake"
+    },
+    {
+      "id": "clarify_2",
+      "question": "Người học và cơ sở đào tạo liên quan đã xác định rõ chưa?",
+      "purpose": "workflow_intake"
+    }
+  ],
+  "legal_basis": [],
+  "legal_bases": [],
+  "faq": [
+    {
+      "question": "Có thể nộp qua kênh nào?",
+      "answer": "Các kênh hiện có: Trực tiếp, Dịch vụ bưu chính."
+    }
+  ],
+  "guidance": {
+    "highlight_documents": [
+      {
+        "bucket": "required",
+        "name": "Tuyển sinh trung học cơ sở và phổ thông Tên giấy tờ Mẫu đơn, tờ khai Số lượng Học bạ cấp tiểu học hoặc các hồ sơ khác có giá trị thay thế học bạ",
+        "conditions": [],
+        "attachment_path": null
+      },
+      {
+        "bucket": "required",
+        "name": "Học bạ cấp trung học cơ sở",
+        "conditions": [],
+        "attachment_path": null
+      },
+      {
+        "bucket": "conditional",
+        "name": "Giấy xác nhận chế độ ưu tiên do cơ quan có thẩm quyền cấp (nếu có)",
+        "conditions": [
+          "Giấy xác nhận chế độ ưu tiên do cơ quan có thẩm quyền cấp (nếu có)"
+        ],
+        "attachment_path": null
+      },
+      {
+        "bucket": "conditional",
+        "name": "Giấy xác nhận chế độ ưu tiên do cơ quan có thẩm quyền cấp (nếu có)",
+        "conditions": [
+          "Giấy xác nhận chế độ ưu tiên do cơ quan có thẩm quyền cấp (nếu có)"
+        ],
+        "attachment_path": null
+      }
+    ],
+    "special_cases": [
+      "Có thể cần đối chiếu thông tin thửa đất hoặc giấy chứng nhận"
+    ],
+    "common_errors": [
+      "Điền sai mẫu tờ khai hoặc chọn sai biểu mẫu đi kèm.",
+      "Thông tin thửa đất, tài sản hoặc giấy chứng nhận chưa khớp với hồ sơ hiện có."
+    ],
+    "validation_hints": [
+      "Nên xác định trước kênh nộp hồ sơ để biết có cần bản giấy, bản điện tử hay xuất trình trực tiếp.",
+      "Nên rà lại thông tin người học, cơ sở đào tạo và loại xác nhận hoặc văn bằng cần xin."
+    ]
+  },
+  "next_steps": {
+    "summary": "Nên rà trước thông tin người học, cơ sở đào tạo và loại kết quả cần xin xác nhận hoặc cấp lại. Có thể chọn kênh nộp phù hợp: Trực tiếp, Dịch vụ bưu chính. Hiện có khoảng 4 mục giấy tờ cần theo dõi trong checklist.",
+    "time_badge": null,
+    "result_label": null,
+    "primary_channel": "in_person",
+    "channels": [
+      "in_person",
+      "postal"
+    ]
+  },
+  "notes": [],
+  "provenance": {
+    "pipeline": "raw->structured->normalized->enriched->ui_api_payload",
+    "normalizer_version": "0.2.0",
+    "enricher_version": "0.2.0",
+    "mapping_notes": "workflow_generated:hoc_tap/tuyen_sinh",
+    "supported_group": true
+  }
+}

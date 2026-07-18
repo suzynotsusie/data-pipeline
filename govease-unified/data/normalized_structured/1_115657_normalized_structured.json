@@ -1,0 +1,212 @@
+{
+  "schema_version": "1.0",
+  "normalizer_version": "0.2.0",
+  "source": {
+    "procedure_code": "1.115657",
+    "title": "Đăng ký đất đai lần đầu đối với trường hợp được Nhà nước giao đất để quản lý",
+    "raw_structured_parser_version": "0.1.0",
+    "field": "Đất đai"
+  },
+  "procedure": {
+    "level": "Cấp tỉnh",
+    "procedure_type": "TTHC được luật giao quy định chi tiết",
+    "target_users": [
+      "Công dân Việt Nam"
+    ],
+    "authorities": [
+      "Văn phòng đăng ký đất đai"
+    ],
+    "receiving_places": [
+      "Trung tâm Phục vụ hành chính công tỉnh Lào Cai (quầy giao dịch Chi nhánh văn phòng đăng ký đất đai) tại địa chỉ:"
+    ]
+  },
+  "submission": {
+    "channels": [
+      "in_person",
+      "online",
+      "postal"
+    ],
+    "methods": [
+      {
+        "method_id": "method_1",
+        "channel": "in_person",
+        "processing_time_text": "14 ngày làm việc",
+        "fee_text": null,
+        "description": "Không quá 14 ngày làm việc",
+        "is_online": false,
+        "is_postal": false,
+        "is_in_person": true
+      },
+      {
+        "method_id": "method_2",
+        "channel": "online",
+        "processing_time_text": "14 ngày làm việc",
+        "fee_text": null,
+        "description": "Không quá 14 ngày làm việc",
+        "is_online": true,
+        "is_postal": false,
+        "is_in_person": false
+      },
+      {
+        "method_id": "method_3",
+        "channel": "postal",
+        "processing_time_text": "14 ngày làm việc",
+        "fee_text": null,
+        "description": "Không quá 14 ngày làm việc",
+        "is_online": false,
+        "is_postal": true,
+        "is_in_person": false
+      }
+    ],
+    "timing_summary": {
+      "unique_processing_times": [
+        "14 ngày làm việc"
+      ],
+      "method_count": 3
+    }
+  },
+  "documents": {
+    "required": [
+      {
+        "document_id": "n_ng_k_t_ai_t_i_s_n_g_n_li_n_v_i_t_theo_m_u_s_21_ban_h_nh_k_m_theo_quy_t_nh_s_47_2026_q_ubnd",
+        "name": "Đơn đăng ký đất đai, tài sản gắn liền với đất theo Mẫu số 21 ban hành kèm theo Quyết định số 47/2026/QĐ-UBND",
+        "group_name": "default",
+        "group_type": "unknown",
+        "original_count": "1",
+        "copy_count": "0",
+        "conditions": [],
+        "attachment_label": "mẫu số 21.docx",
+        "attachment_path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/1_115657/m%E1%BA%ABu%20s%E1%BB%91%2021.docx"
+      },
+      {
+        "document_id": "b_o_c_o_k_t_qu_r_so_t_hi_n_tr_ng_s_d_ng_t_theo_m_u_s_21_ban_h_nh_k_m_theo_quy_t_nh_s_47_2026_q_ubnd",
+        "name": "Báo cáo kết quả rà soát hiện trạng sử dụng đất theo Mẫu số 21đ ban hành kèm theo Quyết định số 47/2026/QĐ-UBND",
+        "group_name": "default",
+        "group_type": "unknown",
+        "original_count": "1",
+        "copy_count": "0",
+        "conditions": [],
+        "attachment_label": "mẫu số 21d.docx",
+        "attachment_path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/1_115657/m%E1%BA%ABu%20s%E1%BB%91%2021d.docx"
+      }
+    ],
+    "conditional": [],
+    "presented": [],
+    "notes": [],
+    "forms": [
+      {
+        "name": "Đơn đăng ký đất đai, tài sản gắn liền với đất theo Mẫu số 21 ban hành kèm theo Quyết định số 47/2026/QĐ-UBND",
+        "attachment_label": "mẫu số 21.docx",
+        "attachment_path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/1_115657/m%E1%BA%ABu%20s%E1%BB%91%2021.docx"
+      },
+      {
+        "name": "Báo cáo kết quả rà soát hiện trạng sử dụng đất theo Mẫu số 21đ ban hành kèm theo Quyết định số 47/2026/QĐ-UBND",
+        "attachment_label": "mẫu số 21d.docx",
+        "attachment_path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/1_115657/m%E1%BA%ABu%20s%E1%BB%91%2021d.docx"
+      }
+    ],
+    "empty_groups": [],
+    "document_count": 2
+  },
+  "process": {
+    "steps": [
+      {
+        "step_id": "step_1",
+        "title": null,
+        "content": "1. **Bước 1:**",
+        "actor": "user",
+        "channel_hint": null,
+        "time_hint": null
+      },
+      {
+        "step_id": "step_2",
+        "title": null,
+        "content": "Tổ chức, cá nhân có nhu cầu nộp hồ sơ trực tiếp tại Trung tâm Phục vụ hành chính công cấp tỉnh (hoặc cấp xã) hoặc qua dịch vụ bưu chính hoặc trực tuyến trên Cổng dịch vụ công.",
+        "actor": "user",
+        "channel_hint": "trực tuyến",
+        "time_hint": null
+      },
+      {
+        "step_id": "step_3",
+        "title": null,
+        "content": "2. **Bước 2:**",
+        "actor": "user",
+        "channel_hint": null,
+        "time_hint": null
+      },
+      {
+        "step_id": "step_4",
+        "title": null,
+        "content": "Văn phòng Đăng ký đất đai, Chi nhánh Văn phòng Đăng ký đất đai thực hiện việc lập, cập nhật, chỉnh lý hồ sơ địa chính, cơ sở dữ liệu đất đai.",
+        "actor": "user",
+        "channel_hint": null,
+        "time_hint": null
+      }
+    ],
+    "step_count": 4,
+    "notes": []
+  },
+  "eligibility": {
+    "conditions": [
+      "Không"
+    ],
+    "has_conditions": true
+  },
+  "results": {
+    "items": [
+      {
+        "name": "Lập, cập nhật, chỉnh lý hồ sơ địa chính, cơ sở dữ liệu đất đai",
+        "result_code": "H38-KQ000278",
+        "raw_text": "Lập, cập nhật, chỉnh lý hồ sơ địa chính, cơ sở dữ liệu đất đai"
+      }
+    ],
+    "primary_result": {
+      "name": "Lập, cập nhật, chỉnh lý hồ sơ địa chính, cơ sở dữ liệu đất đai",
+      "result_code": "H38-KQ000278",
+      "raw_text": "Lập, cập nhật, chỉnh lý hồ sơ địa chính, cơ sở dữ liệu đất đai"
+    }
+  },
+  "legal_basis": {
+    "items": [
+      {
+        "title": "Sửa đổi, bổ sung một số điều của các nghị định quy định chi tiết thi hành Luật Đất đai",
+        "code": "226/2025/NĐ-CP"
+      },
+      {
+        "title": "Luật Đất đai số 31/2024/QH15 ngày 18/01/2024 được sửa đổi bổ sung một số điều bởi Luật số 43/2024/QH15, Luật số 47/2024/QH15 và Luật số 58/2024/QH15 của Quốc hội.",
+        "code": "31/2024/QH15"
+      },
+      {
+        "title": "Nghị định quy định về điều tra cơ bản đất đai, đăng ký, cấp Giấy chứng nhận quyền sử dụng đất, quyền sở hữu tài sản gắn liền với đất và Hệ thống thông tin đất đai.",
+        "code": "101/2024/NĐ-CP"
+      },
+      {
+        "title": "Quyết định số 47/2026/QĐ-UBND ngày 28/6/2026 của Ủy ban nhân dân tỉnh Lào Cai về ban hành Quy định trình tự, thủ tục hành chính về đất đai trên địa bàn tỉnh Lào Cai",
+        "code": "47/2026/QĐ-UBND"
+      }
+    ],
+    "count": 4
+  },
+  "attachments": [
+    {
+      "label": "mẫu số 21.docx",
+      "path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/1_115657/m%E1%BA%ABu%20s%E1%BB%91%2021.docx",
+      "source_section": "Thành phần hồ sơ",
+      "document_name": "Đơn đăng ký đất đai, tài sản gắn liền với đất theo Mẫu số 21 ban hành kèm theo Quyết định số 47/2026/QĐ-UBND"
+    },
+    {
+      "label": "mẫu số 21d.docx",
+      "path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/1_115657/m%E1%BA%ABu%20s%E1%BB%91%2021d.docx",
+      "source_section": "Thành phần hồ sơ",
+      "document_name": "Báo cáo kết quả rà soát hiện trạng sử dụng đất theo Mẫu số 21đ ban hành kèm theo Quyết định số 47/2026/QĐ-UBND"
+    }
+  ],
+  "signals": {
+    "raw_parse_warnings": [],
+    "missing_documents": false,
+    "documents_section_present": true,
+    "documents_declared_empty": false,
+    "documents_only_in_notes": false,
+    "missing_results": false
+  }
+}

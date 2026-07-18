@@ -1,0 +1,116 @@
+{
+  "schema_version": "1.0",
+  "enricher_version": "0.2.0",
+  "source": {
+    "procedure_code": "1.015027",
+    "title": "Xét hưởng chế độ trợ cấp đối với đối tượng hoặc thân nhân đối tượng thuộc Công an nhân dân trực tiếp tham gia chiến tranh bảo vệ Tổ quốc ở biên giới Tây Nam, biên giới phía Bắc, làm nhiệm vụ truy quét Fulro ở Tây Nguyên và làm nhiệm vụ quốc tế ở Campuchia, giúp bạn Lào sau ngày 30/4/1975 ở địa bàn và thời gian quy định tại Điều 3 Nghị định số 23/2012/NĐ-CP, được sửa đổi, bổ sung bởi Nghị định số 209/2025/NĐ-CP, có từ đủ 20 năm trở lên công tác trong Công an nhân dân (hoặc Quân đội nhân dân hoặc làm công tác cơ yếu) đã xuất ngũ, thôi việc trước ngày 01/4/2000 (thực hiện tại cấp tỉnh).",
+    "group_key": "suc_khoe_y_te",
+    "workflow_family": null,
+    "subflow": null
+  },
+  "experience": {
+    "entry_label": "Hỗ trợ y tế và bảo hiểm",
+    "overview_summary": "Thủ tục này thuộc nhóm y tế, thường cần đối chiếu thông tin người bệnh, đơn vị tiếp nhận hoặc quyền lợi chuyên ngành. Kết quả thường nhận được là - Hoặc Quyết định về việc hưởng chế độ trợ cấp một lần (mẫu số 07 ban hành kèm theo Thông tư số 05/2026/TT-BCA). Thời gian xử lý tham khảo: 7 ngày làm việc.",
+    "next_step_summary": "Nên xác định rõ đối tượng tham gia, quyền lợi hoặc nhu cầu điều chỉnh hồ sơ y tế trước khi nộp. Có thể chọn kênh nộp phù hợp: Trực tiếp. Hiện có khoảng 11 mục giấy tờ cần theo dõi trong checklist.",
+    "tone": "supportive_public_service"
+  },
+  "guidance": {
+    "highlight_documents": [
+      {
+        "bucket": "required",
+        "name": "Bản khai cá nhân (mẫu số 01 ban hành kèm theo Thông tư số 05/2026/TT-BCA).",
+        "conditions": [],
+        "attachment_path": null
+      },
+      {
+        "bucket": "required",
+        "name": "Bản quá trình công tác để giải quyết chế độ hưu trí (mẫu số 05 ban hành kèm theo Thông tư số 05/2026/TT-BCA).",
+        "conditions": [],
+        "attachment_path": null
+      },
+      {
+        "bucket": "required",
+        "name": "Công văn đề nghị giải quyết chế độ (mẫu số 02 ban hành kèm theo Thông tư số 05/2026/TT-BCA) kèm theo danh sách đề nghị giải quyết chế độ hưu trí (mẫu số 02-A ban hành kèm theo Thông tư số 05/2026/TT-BCA) của Công an cấp tỉnh nơi đối tượng thường trú;",
+        "conditions": [],
+        "attachment_path": null
+      },
+      {
+        "bucket": "required",
+        "name": "Bản khai thân nhân (mẫu số 06 ban hành kèm theo Thông tư số 05/2026/TT-BCA).",
+        "conditions": [],
+        "attachment_path": null
+      },
+      {
+        "bucket": "required",
+        "name": "Giấy chứng tử hoặc báo tử.",
+        "conditions": [],
+        "attachment_path": null
+      },
+      {
+        "bucket": "required",
+        "name": "Công văn đề nghị giải quyết chế độ (mẫu số 02 ban hành kèm theo Thông tư số 05/2026/TT-BCA) và danh sách đề nghị giải quyết chế độ trợ cấp một lần (mẫu số 02-B ban hành kèm theo Thông tư số 05/2026/TT-BCA) của Công an cấp tỉnh nơi thân nhân đối tượng thường trú;",
+        "conditions": [],
+        "attachment_path": null
+      }
+    ],
+    "special_cases": [
+      "Có thể cần đối chiếu thông tin thửa đất hoặc giấy chứng nhận",
+      "Có thể cần đối chiếu quá trình đóng bảo hiểm để giải quyết chế độ",
+      "Có thể cần hồ sơ tử tuất hoặc mai táng phí",
+      "Có thể cần xác minh quan hệ lao động hoặc giấy phép làm việc"
+    ],
+    "common_errors": [
+      "Điền sai mẫu tờ khai hoặc chọn sai biểu mẫu đi kèm.",
+      "Thông tin thửa đất, tài sản hoặc giấy chứng nhận chưa khớp với hồ sơ hiện có.",
+      "Thiếu thông tin về thời gian tham gia bảo hiểm hoặc chưa xác định đúng chế độ hưu trí.",
+      "Thiếu hồ sơ về vị trí việc làm, đơn vị sử dụng lao động hoặc điều kiện làm việc áp dụng."
+    ],
+    "validation_hints": [
+      "Nên xác định trước kênh nộp hồ sơ để biết có cần bản giấy, bản điện tử hay xuất trình trực tiếp.",
+      "Nên xác định đúng nhóm đối tượng, mã số bảo hiểm và quyền lợi áp dụng trước khi nộp."
+    ]
+  },
+  "intake": {
+    "candidate_input_fields": [
+      {
+        "field_id": "request_subject",
+        "label": "Đối tượng làm thủ tục",
+        "field_type": "text",
+        "required": true
+      },
+      {
+        "field_id": "insurance_or_medical_need",
+        "label": "Nhu cầu bảo hiểm hoặc y tế",
+        "field_type": "text",
+        "required": true
+      },
+      {
+        "field_id": "submission_channel_preference",
+        "label": "Kênh nộp dự kiến",
+        "field_type": "enum",
+        "required": false
+      },
+      {
+        "field_id": "has_insurance_number",
+        "label": "Đã có mã BHXH/BHYT",
+        "field_type": "boolean",
+        "required": false
+      }
+    ],
+    "suggested_clarifying_questions": [
+      "Bạn đang muốn đăng ký, điều chỉnh hay xác nhận quyền lợi y tế hoặc bảo hiểm nào?",
+      "Bạn đã có mã BHXH/BHYT hoặc thông tin đơn vị tiếp nhận liên quan chưa?"
+    ]
+  },
+  "ui_hints": {
+    "primary_channel": "in_person",
+    "result_label": "- Hoặc Quyết định về việc hưởng chế độ trợ cấp một lần (mẫu số 07 ban hành kèm theo Thông tư số 05/2026/TT-BCA)",
+    "time_badge": "7 ngày làm việc",
+    "document_count_badge": 11
+  },
+  "provenance": {
+    "generator": "workflow_domain_enricher",
+    "derivation_mode": "rule_based_semantic_enrichment",
+    "supported_group": true
+  }
+}

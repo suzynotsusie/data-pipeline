@@ -1,0 +1,102 @@
+{
+  "schema_version": "1.0",
+  "enricher_version": "0.2.0",
+  "source": {
+    "procedure_code": "1.014577",
+    "title": "Chính sách hỗ trợ đào tạo các ngành, nghề phục vụ công nghiệp bán dẫn, trí tuệ nhân tạo, công nghệ số cho học sinh, sinh viên",
+    "group_key": "hoc_tap",
+    "workflow_family": null,
+    "subflow": null
+  },
+  "experience": {
+    "entry_label": "Hỗ trợ giáo dục và học tập",
+    "overview_summary": "Thủ tục này thuộc nhóm giáo dục và học tập, thường liên quan đến hồ sơ đào tạo, văn bằng hoặc điều kiện học tập của người học. Kết quả thường nhận được là Quyết định phê duyệt kinh phí hỗ trợ học phí cho học sinh, sinh viên của Giám đốc Sở Giáo dục và Đào tạo hoặc văn bản trả lời nêu rõ lý do không hỗ trợ. Thời gian xử lý tham khảo: 15 ngày làm việc.",
+    "next_step_summary": "Nên rà trước thông tin người học, cơ sở đào tạo và loại kết quả cần xin xác nhận hoặc cấp lại. Có thể chọn kênh nộp phù hợp: Trực tiếp, Trực tuyến, Dịch vụ bưu chính. Hiện có khoảng 5 mục giấy tờ cần theo dõi trong checklist.",
+    "tone": "supportive_public_service"
+  },
+  "guidance": {
+    "highlight_documents": [
+      {
+        "bucket": "required",
+        "name": "Văn bản đề nghị hỗ trợ đào tạo (quy định tại Mẫu số 03 Phụ lục III kèm theo Nghị quyết 113/2025/NQ-HĐND",
+        "conditions": [],
+        "attachment_path": null
+      },
+      {
+        "bucket": "required",
+        "name": "Bảng tổng hợp kinh phí đề nghị hỗ trợ (quy định tại Mẫu số 04 Phụ lục III kèm theo Nghị quyết 113/2025/NQ-HĐND",
+        "conditions": [],
+        "attachment_path": null
+      },
+      {
+        "bucket": "required",
+        "name": "Danh sách học sinh, sinh viên đề nghị hỗ trợ (quy định tại Mẫu số 05 Phụ lục III kèm theo Nghị quyết 113/2025/NQ-HĐND",
+        "conditions": [],
+        "attachment_path": null
+      },
+      {
+        "bucket": "required",
+        "name": "Bản sao có chứng thực: Đăng ký hoạt động GDNN/Đăng ký bổ sung hoạt động GDNN do cơ quan có thẩm quyền cấp đối với trình độ trung cấp, cao đẳng. Quyết định mở mã ngành đào tạo của cấp có thẩm quyền đối với trình độ đại học hoặc cung cấp thông tin về đăng ký hoạt động GDNN/đăng ký bổ sung hoạt động GDNN hoặc Quyết định mở mã ngành đào tạo đã được kết nối, chia sẻ giữa các cơ quan, tổ chức theo quy định",
+        "conditions": [],
+        "attachment_path": null
+      },
+      {
+        "bucket": "required",
+        "name": "Quyết định ban hành mức thu học phí (theo các năm học",
+        "conditions": [],
+        "attachment_path": null
+      }
+    ],
+    "special_cases": [],
+    "common_errors": [
+      "Điền sai mẫu tờ khai hoặc chọn sai biểu mẫu đi kèm."
+    ],
+    "validation_hints": [
+      "Nên xác định trước kênh nộp hồ sơ để biết có cần bản giấy, bản điện tử hay xuất trình trực tiếp.",
+      "Nên rà lại thông tin người học, cơ sở đào tạo và loại xác nhận hoặc văn bằng cần xin."
+    ]
+  },
+  "intake": {
+    "candidate_input_fields": [
+      {
+        "field_id": "learner_full_name",
+        "label": "Tên người học",
+        "field_type": "text",
+        "required": true
+      },
+      {
+        "field_id": "education_record_type",
+        "label": "Loại hồ sơ học tập cần xử lý",
+        "field_type": "text",
+        "required": true
+      },
+      {
+        "field_id": "education_institution",
+        "label": "Cơ sở đào tạo liên quan",
+        "field_type": "text",
+        "required": false
+      },
+      {
+        "field_id": "submission_channel_preference",
+        "label": "Kênh nộp dự kiến",
+        "field_type": "enum",
+        "required": false
+      }
+    ],
+    "suggested_clarifying_questions": [
+      "Bạn đang cần xử lý hồ sơ học tập, văn bằng hay xác nhận nào?",
+      "Người học và cơ sở đào tạo liên quan đã xác định rõ chưa?"
+    ]
+  },
+  "ui_hints": {
+    "primary_channel": "in_person",
+    "result_label": "Quyết định phê duyệt kinh phí hỗ trợ học phí cho học sinh, sinh viên của Giám đốc Sở Giáo dục và Đào tạo hoặc văn bản trả lời nêu rõ lý do không hỗ trợ",
+    "time_badge": "15 ngày làm việc",
+    "document_count_badge": 5
+  },
+  "provenance": {
+    "generator": "workflow_domain_enricher",
+    "derivation_mode": "rule_based_semantic_enrichment",
+    "supported_group": true
+  }
+}

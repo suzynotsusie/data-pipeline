@@ -1,0 +1,100 @@
+{
+  "schema_version": "1.0",
+  "enricher_version": "0.2.0",
+  "source": {
+    "procedure_code": "1.008624",
+    "title": "Cấp lại Chứng chỉ hành nghề luật sư trong trường hợp bị thu hồi Chứng chỉ hành nghề luật sư theo quy định tại Điều 18 của Luật Luật sư",
+    "group_key": "hoc_tap",
+    "workflow_family": null,
+    "subflow": null
+  },
+  "experience": {
+    "entry_label": "Hỗ trợ giáo dục và học tập",
+    "overview_summary": "Thủ tục này thuộc nhóm giáo dục và học tập, thường liên quan đến hồ sơ đào tạo, văn bằng hoặc điều kiện học tập của người học. Kết quả thường nhận được là Chứng chỉ hành nghề luật sư. Thời gian xử lý tham khảo: 15 ngày làm việc.",
+    "next_step_summary": "Nên rà trước thông tin người học, cơ sở đào tạo và loại kết quả cần xin xác nhận hoặc cấp lại. Có thể chọn kênh nộp phù hợp: Trực tiếp, Trực tuyến, Dịch vụ bưu chính. Hiện có khoảng 4 mục giấy tờ cần theo dõi trong checklist.",
+    "tone": "supportive_public_service"
+  },
+  "guidance": {
+    "highlight_documents": [
+      {
+        "bucket": "required",
+        "name": "Văn bản đề nghị cấp lại Chứng chỉ hành nghề luật sư",
+        "conditions": [],
+        "attachment_path": null
+      },
+      {
+        "bucket": "required",
+        "name": "Giấy tờ chứng minh lý do bị thu hồi Chứng chỉ hành nghề luật sư không còn",
+        "conditions": [],
+        "attachment_path": null
+      },
+      {
+        "bucket": "required",
+        "name": "Bản sao Bằng cử nhân luật hoặc bản sao Bằng thạc sỹ luật trừ những người là giáo sư, phó giáo sư chuyên ngành luật, tiến sỹ luật;",
+        "conditions": [],
+        "attachment_path": null
+      },
+      {
+        "bucket": "conditional",
+        "name": "Bản sao Giấy chứng nhận kiểm tra kết quả tập sự hành nghề luật sư đối với người đạt yêu cầu kiểm tra hoặc bản sao giấy tờ chứng minh là người được miễn tập sự hành nghề luật sư quy định tại khoản 1 Điều 16 của Luật Luật sư đối với trường hợp miễn tập sự hành nghề luật sư bao gồm một trong các giấy tờ sau đây: + Bản sao Quyết định bổ nhiệm thẩm phán, kiểm sát viên, điều tra viên hoặc Nghị quyết của Hội đồng nhân dân, Biên bản bầu thẩm phán của Hội đồng nhân dân đối với trường hợp thẩm phán do Hội đồng nhân dân cấp huyện, cấp tỉnh bầu. + Bản sao Quyết định phong hàm Giáo sư, Phó Giáo sư chuyên ngành luật sư hoặc bản sao bằng tiến sỹ luật. + Bản sao Quyết định bổ nhiệm thẩm tra viên cao cấp ngành Tòa án, kiểm tra viên cao cấp ngành Kiểm sát, chuyên viên cao cấp, nghiên cứu viên cao cấp, giảng viên cao cấp chuyên ngành luật. + Các giấy tờ hợp pháp khác chứng minh là người được miễn tập sự hành nghề luật sư.",
+        "conditions": [
+          "Bản sao Giấy chứng nhận kiểm tra kết quả tập sự hành nghề luật sư đối với người đạt yêu cầu kiểm tra hoặc bản sao giấy tờ chứng minh là người được miễn tập sự hành nghề luật sư quy định tại khoản 1 Điều 16 của Luật Luật sư đối với trường hợp miễn tập sự hành nghề luật sư bao gồm một trong các giấy tờ sau đây: + Bản sao Quyết định bổ nhiệm thẩm phán, kiểm sát viên, điều tra viên hoặc Nghị quyết của Hội đồng nhân dân, Biên bản bầu thẩm phán của Hội đồng nhân dân đối với trường hợp thẩm phán do Hội đồng nhân dân cấp huyện, cấp tỉnh bầu. + Bản sao Quyết định phong hàm Giáo sư, Phó Giáo sư chuyên ngành luật sư hoặc bản sao bằng tiến sỹ luật. + Bản sao Quyết định bổ nhiệm thẩm tra viên cao cấp ngành Tòa án, kiểm tra viên cao cấp ngành Kiểm sát, chuyên viên cao cấp, nghiên cứu viên cao cấp, giảng viên cao cấp chuyên ngành luật. + Các giấy tờ hợp pháp khác chứng minh là người được miễn tập sự hành nghề luật sư."
+        ],
+        "attachment_path": null
+      }
+    ],
+    "special_cases": [
+      "Có thể cần đối chiếu thông tin thửa đất hoặc giấy chứng nhận"
+    ],
+    "common_errors": [
+      "Thông tin thửa đất, tài sản hoặc giấy chứng nhận chưa khớp với hồ sơ hiện có."
+    ],
+    "validation_hints": [
+      "Nên xác định trước kênh nộp hồ sơ để biết có cần bản giấy, bản điện tử hay xuất trình trực tiếp.",
+      "Nên rà lại thông tin người học, cơ sở đào tạo và loại xác nhận hoặc văn bằng cần xin."
+    ]
+  },
+  "intake": {
+    "candidate_input_fields": [
+      {
+        "field_id": "learner_full_name",
+        "label": "Tên người học",
+        "field_type": "text",
+        "required": true
+      },
+      {
+        "field_id": "education_record_type",
+        "label": "Loại hồ sơ học tập cần xử lý",
+        "field_type": "text",
+        "required": true
+      },
+      {
+        "field_id": "education_institution",
+        "label": "Cơ sở đào tạo liên quan",
+        "field_type": "text",
+        "required": false
+      },
+      {
+        "field_id": "submission_channel_preference",
+        "label": "Kênh nộp dự kiến",
+        "field_type": "enum",
+        "required": false
+      }
+    ],
+    "suggested_clarifying_questions": [
+      "Bạn đang cần xử lý hồ sơ học tập, văn bằng hay xác nhận nào?",
+      "Người học và cơ sở đào tạo liên quan đã xác định rõ chưa?"
+    ]
+  },
+  "ui_hints": {
+    "primary_channel": "online",
+    "result_label": "Chứng chỉ hành nghề luật sư",
+    "time_badge": "15 ngày làm việc",
+    "document_count_badge": 4
+  },
+  "provenance": {
+    "generator": "workflow_domain_enricher",
+    "derivation_mode": "rule_based_semantic_enrichment",
+    "supported_group": true
+  }
+}

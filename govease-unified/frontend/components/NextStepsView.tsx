@@ -2,13 +2,16 @@
 
 import type { IntakeResult, ValidationResult } from "../lib/types";
 import { Icon } from "./Icon";
+import { WorkflowScrollDock } from "./WorkflowScrollDock";
 
 function buildTimeline(result: IntakeResult, validation: ValidationResult | null) {
   const procedureTitle = result.procedure?.title || "thủ tục của bạn";
   const issues = validation?.issues || [];
   const blocking = issues.filter((issue) => issue.blocking);
   const warnings = issues.filter((issue) => !issue.blocking);
-  const submissionHint = result.checklist.steps?.[0]?.description || "Hoàn tất tờ khai trực tuyến theo đúng hồ sơ đã rà soát.";
+  const submissionHint =
+    result.checklist.steps?.[0]?.description ||
+    "Hoàn tất tờ khai trực tuyến theo đúng hồ sơ đã rà soát.";
 
   return [
     {
@@ -49,27 +52,35 @@ export function NextStepsView({
   const ready = validation?.ready_to_submit;
 
   return (
-    <div className="next-steps-view">
-      {/* Banner Thành công hoặc Cảnh báo */}
+    <div className="next-steps-view" data-workflow-scroll>
       {ready ? (
         <div className="status-banner success">
-          <div className="status-icon"><Icon name="check" /></div>
+          <div className="status-icon">
+            <Icon name="check" />
+          </div>
           <div className="status-text">
             <strong>Đã đạt kiểm tra sơ bộ</strong>
-            <p>Dữ liệu đúng cấu trúc và chưa phát hiện mâu thuẫn. Kết quả này không thay thế bước kiểm tra của cơ quan nhà nước.</p>
+            <p>
+              Dữ liệu đúng cấu trúc và chưa phát hiện mâu thuẫn. Kết quả này không thay thế bước
+              kiểm tra của cơ quan nhà nước.
+            </p>
           </div>
         </div>
       ) : (
         <div className="status-banner warning">
-          <div className="status-icon"><Icon name="warning" /></div>
+          <div className="status-icon">
+            <Icon name="warning" />
+          </div>
           <div className="status-text">
             <strong>Cần rà soát thêm hồ sơ</strong>
-            <p>Hiện còn {issueCount} nội dung nên xử lý hoặc rà soát thêm. Tuy nhiên, bạn vẫn có thể xem lộ trình bên dưới để chuẩn bị.</p>
+            <p>
+              Hiện còn {issueCount} nội dung nên xử lý hoặc rà soát thêm. Tuy nhiên, bạn vẫn có
+              thể xem lộ trình bên dưới để chuẩn bị.
+            </p>
           </div>
         </div>
       )}
 
-      {/* Lộ trình các bước - Timeline UI */}
       <div className="modern-timeline">
         {steps.map((step, index) => (
           <div className={`timeline-step ${step.tone}`} key={step.title}>
@@ -84,12 +95,11 @@ export function NextStepsView({
         ))}
       </div>
 
-      {/* Nguồn tham chiếu - Reference Card */}
       {!!result.sources.length && (
-        <a 
-          href={result.sources[0].source_url || "https://dichvucong.gov.vn"} 
-          target="_blank" 
-          rel="noreferrer" 
+        <a
+          href={result.sources[0].source_url || "https://dichvucong.gov.vn"}
+          target="_blank"
+          rel="noreferrer"
           className="reference-card"
         >
           <div className="ref-icon">
@@ -114,6 +124,7 @@ export function NextStepsView({
           <Icon name="home" />
         </button>
       </div>
+      <WorkflowScrollDock />
     </div>
   );
 }

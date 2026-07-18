@@ -1,0 +1,113 @@
+{
+  "schema_version": "1.0",
+  "enricher_version": "0.2.0",
+  "source": {
+    "procedure_code": "1.001280",
+    "title": "Cấp giấy thông hành biên giới Việt Nam – Lào cho công dân Việt Nam có hộ khẩu thường trú ở tỉnh có chung đường biên giới với Lào (thực hiện tại cấp tỉnh)",
+    "group_key": "cu_tru_giay_to",
+    "workflow_family": null,
+    "subflow": null
+  },
+  "experience": {
+    "entry_label": "Hỗ trợ cư trú và giấy tờ",
+    "overview_summary": "Thủ tục này thuộc nhóm cư trú và giấy tờ, thường cần kiểm tra thông tin định danh hoặc hồ sơ giấy tờ chuyên ngành. Kết quả thường nhận được là Giấy thông hành biên giới Việt Nam – Lào. Thời gian xử lý tham khảo: 3 ngày làm việc.",
+    "next_step_summary": "Nên kiểm tra trước giấy tờ định danh, nơi nộp và mẫu biểu liên quan, rồi chọn kênh nộp phù hợp: Trực tiếp, Trực tuyến. Hiện có khoảng 5 mục giấy tờ cần theo dõi trong checklist.",
+    "tone": "supportive_public_service"
+  },
+  "guidance": {
+    "highlight_documents": [
+      {
+        "bucket": "required",
+        "name": "02 ảnh 4x6cm mới chụp, mặt nhìn thẳng, đầu để trần, không đeo kính màu, phông nền trắng; trong đó 01 ảnh dán vào Tờ khai",
+        "conditions": [],
+        "attachment_path": null
+      },
+      {
+        "bucket": "conditional",
+        "name": "01 bản sao có chứng thực giấy tờ do cơ quan có thẩm quyền của Việt Nam cấp chứng minh người đại diện theo pháp luật đối với người mất năng lực hành vi dân sự, người có khó khăn trong nhận thức, làm chủ hành vi theo quy định của Bộ luật Dân sự, người chưa đủ 14 tuổi; trường hợp nộp bản chụp thì xuất trình bản chính để kiểm tra, đối chiếu.",
+        "conditions": [
+          "01 bản sao có chứng thực giấy tờ do cơ quan có thẩm quyền của Việt Nam cấp chứng minh người đại diện theo pháp luật đối với người mất năng lực hành vi dân sự, người có khó khăn trong nhận thức, làm chủ hành vi theo quy định của Bộ luật Dân sự, người chưa đủ 14 tuổi; trường hợp nộp bản chụp thì xuất trình bản chính để kiểm tra, đối chiếu."
+        ],
+        "attachment_path": null
+      },
+      {
+        "bucket": "conditional",
+        "name": "Giấy thông hành đã được cấp nếu còn giá trị sử dụng.",
+        "conditions": [
+          "Giấy thông hành đã được cấp nếu còn giá trị sử dụng."
+        ],
+        "attachment_path": null
+      },
+      {
+        "bucket": "conditional",
+        "name": "01 bản sao giấy khai sinh hoặc trích lục ghi vào sổ hộ tịch việc khai sinh do cơ quan có thẩm quyền của Việt Nam cấp đối với người chưa đủ 14 tuổi chưa được cấp mã số định danh cá nhân; trường hợp nôp bản chụp thì xuất trình bản chính để kiểm tra, đối chiếu",
+        "conditions": [
+          "01 bản sao giấy khai sinh hoặc trích lục ghi vào sổ hộ tịch việc khai sinh do cơ quan có thẩm quyền của Việt Nam cấp đối với người chưa đủ 14 tuổi chưa được cấp mã số định danh cá nhân; trường hợp nôp bản chụp thì xuất trình bản chính để kiểm tra, đối chiếu"
+        ],
+        "attachment_path": null
+      },
+      {
+        "bucket": "conditional",
+        "name": "Tờ khai đề nghị cấp giấy thông hành (mẫu M01a) ban hành kèm theo Nghị định số 67/2024/NĐ-CP ngày 25/6/2024 của Chính phủ; người chưa đủ 14 tuổi đề nghị cấp riêng giấy thông hành sử dụng tờ khai theo mẫu M01b ban hành kèm theo Nghị định số 184/2025/NĐ-CP ngày 01/7/2025 của Chính phủ. Trường hợp người mất năng lực hành vi dân sự, người có khó khăn trong nhận thức, làm chủ hành vi theo quy định của bộ luật dân sự, người chưa đủ 14 tuổi thì tờ khai do cha, mẹ, người đại diện hợp pháp khai và ký tên.",
+        "conditions": [
+          "Tờ khai đề nghị cấp giấy thông hành (mẫu M01a) ban hành kèm theo Nghị định số 67/2024/NĐ-CP ngày 25/6/2024 của Chính phủ; người chưa đủ 14 tuổi đề nghị cấp riêng giấy thông hành sử dụng tờ khai theo mẫu M01b ban hành kèm theo Nghị định số 184/2025/NĐ-CP ngày 01/7/2025 của Chính phủ. Trường hợp người mất năng lực hành vi dân sự, người có khó khăn trong nhận thức, làm chủ hành vi theo quy định của bộ luật dân sự, người chưa đủ 14 tuổi thì tờ khai do cha, mẹ, người đại diện hợp pháp khai và ký tên."
+        ],
+        "attachment_path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/1_001280/m01a.pdf"
+      }
+    ],
+    "special_cases": [
+      "Có kiểm tra dữ liệu cư trú/định danh"
+    ],
+    "common_errors": [
+      "Điền sai mẫu tờ khai hoặc chọn sai biểu mẫu đi kèm."
+    ],
+    "validation_hints": [
+      "Nên xác định trước kênh nộp hồ sơ để biết có cần bản giấy, bản điện tử hay xuất trình trực tiếp.",
+      "Có mẫu biểu đính kèm, nên kiểm tra đúng biểu mẫu trước khi nộp.",
+      "Nên đối chiếu trước dữ liệu định danh và nơi cư trú để tránh bị yêu cầu bổ sung."
+    ]
+  },
+  "intake": {
+    "candidate_input_fields": [
+      {
+        "field_id": "document_request_type",
+        "label": "Loại giấy tờ cần xử lý",
+        "field_type": "text",
+        "required": true
+      },
+      {
+        "field_id": "submission_channel_preference",
+        "label": "Kênh nộp dự kiến",
+        "field_type": "enum",
+        "required": false
+      },
+      {
+        "field_id": "identity_document_available",
+        "label": "Có giấy tờ định danh",
+        "field_type": "boolean",
+        "required": true
+      },
+      {
+        "field_id": "residency_or_status_known",
+        "label": "Biết rõ nơi cư trú hoặc tình trạng hiện tại",
+        "field_type": "boolean",
+        "required": false
+      }
+    ],
+    "suggested_clarifying_questions": [
+      "Bạn đang xử lý giấy tờ gì và muốn nộp trực tiếp hay trực tuyến?",
+      "Thông tin định danh và nơi cư trú hiện tại đã sẵn sàng để đối chiếu chưa?"
+    ]
+  },
+  "ui_hints": {
+    "primary_channel": "online",
+    "result_label": "Giấy thông hành biên giới Việt Nam – Lào",
+    "time_badge": "3 ngày làm việc",
+    "document_count_badge": 5
+  },
+  "provenance": {
+    "generator": "workflow_domain_enricher",
+    "derivation_mode": "rule_based_semantic_enrichment",
+    "supported_group": true
+  }
+}

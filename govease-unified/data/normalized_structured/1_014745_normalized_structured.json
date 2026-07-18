@@ -1,0 +1,149 @@
+{
+  "schema_version": "1.0",
+  "normalizer_version": "0.2.0",
+  "source": {
+    "procedure_code": "1.014745",
+    "title": "Tham gia bảo hiểm thất nghiệp (Cấp tỉnh)",
+    "raw_structured_parser_version": "0.1.0",
+    "field": "Việc làm"
+  },
+  "procedure": {
+    "level": "Cấp tỉnh",
+    "procedure_type": "TTHC được luật giao quy định chi tiết",
+    "target_users": [
+      "Doanh nghiệp",
+      "Doanh nghiệp có vốn đầu tư nước ngoài"
+    ],
+    "authorities": [
+      "Bảo hiểm xã hội Việt Nam"
+    ],
+    "receiving_places": []
+  },
+  "submission": {
+    "channels": [
+      "in_person",
+      "online"
+    ],
+    "methods": [
+      {
+        "method_id": "method_1",
+        "channel": "online",
+        "processing_time_text": "1 ngày",
+        "fee_text": null,
+        "description": null,
+        "is_online": true,
+        "is_postal": false,
+        "is_in_person": false
+      },
+      {
+        "method_id": "method_2",
+        "channel": "in_person",
+        "processing_time_text": "1 ngày",
+        "fee_text": null,
+        "description": null,
+        "is_online": false,
+        "is_postal": false,
+        "is_in_person": true
+      }
+    ],
+    "timing_summary": {
+      "unique_processing_times": [
+        "1 ngày"
+      ],
+      "method_count": 2
+    }
+  },
+  "documents": {
+    "required": [],
+    "conditional": [
+      {
+        "document_id": "theo_quy_nh_c_a_b_o_hi_m_x_h_i_vi_t_nam_i_v_i_tr_ng_h_p_ng_i_s_d_ng_lao_ng_ng_k_tham_gia_b_o_hi_m_th_t_nghi_p_i_v_i_ng_i_lao_ng_l_ng_i_khuy_t_t_t_th_k_m_theo_b_n_sao_gi_y_x_c_nh_n_khuy_t_t_t_c_a_t_ng_ng_i_lao_ng",
+        "name": "Theo quy định của Bảo hiểm xã hội Việt Nam. Đối với trường hợp người sử dụng lao động đăng ký tham gia bảo hiểm thất nghiệp đối với người lao động là người khuyết tật thì kèm theo bản sao giấy xác nhận khuyết tật của từng người lao động.",
+        "group_name": "default",
+        "group_type": "unknown",
+        "original_count": "1",
+        "copy_count": "0",
+        "conditions": [
+          "Theo quy định của Bảo hiểm xã hội Việt Nam. Đối với trường hợp người sử dụng lao động đăng ký tham gia bảo hiểm thất nghiệp đối với người lao động là người khuyết tật thì kèm theo bản sao giấy xác nhận khuyết tật của từng người lao động."
+        ],
+        "attachment_label": null,
+        "attachment_path": null
+      }
+    ],
+    "presented": [],
+    "notes": [],
+    "forms": [],
+    "empty_groups": [],
+    "document_count": 1
+  },
+  "process": {
+    "steps": [
+      {
+        "step_id": "step_1",
+        "title": null,
+        "content": "1.",
+        "actor": "user",
+        "channel_hint": null,
+        "time_hint": null
+      },
+      {
+        "step_id": "step_2",
+        "title": "Bước 1:",
+        "content": "Bước 1: Người sử dụng lao động lập và nộp hồ sơ tham gia bảo hiểm thất nghiệp của người lao động cho cơ quan bảo hiểm xã hội.",
+        "actor": "authority",
+        "channel_hint": null,
+        "time_hint": null
+      },
+      {
+        "step_id": "step_3",
+        "title": "Bước 2:",
+        "content": "Bước 2: Hằng tháng, người sử dụng lao động đóng bảo hiểm thất nghiệp theo mức bằng 1% quỹ tiền lương tháng của những người lao động đang tham gia bảo hiểm thất nghiệp và trích tiền lương của từng người lao động theo mức bằng 1% tiền lương tháng để đóng cùng một lúc vào quỹ bảo hiểm thất nghiệp. Người sử dụng lao động khi tuyển dụng mới và sử dụng người lao động là người khuyết tật thì được giảm mức đóng bảo hiểm thất nghiệp từ 1% xuống 0% tiền đóng bảo hiểm thất nghiệp thuộc trách nhiệm của người sử dụng lao động phải đóng cho người lao động là người khuyết tật trong thời gian người lao động làm việc nhưng thời gian hỗ trợ không quá 12 tháng đầu kể từ khi tuyển mới người lao động khuyết tật.",
+        "actor": "user",
+        "channel_hint": null,
+        "time_hint": "12 tháng"
+      }
+    ],
+    "step_count": 3,
+    "notes": []
+  },
+  "eligibility": {
+    "conditions": [],
+    "has_conditions": false
+  },
+  "results": {
+    "items": [
+      {
+        "name": "Người lao động tham gia đóng bảo hiểm thất nghiệp",
+        "result_code": "KQ.G09.000391",
+        "raw_text": "Người lao động tham gia đóng bảo hiểm thất nghiệp"
+      }
+    ],
+    "primary_result": {
+      "name": "Người lao động tham gia đóng bảo hiểm thất nghiệp",
+      "result_code": "KQ.G09.000391",
+      "raw_text": "Người lao động tham gia đóng bảo hiểm thất nghiệp"
+    }
+  },
+  "legal_basis": {
+    "items": [
+      {
+        "title": "Quy định chi tiết một số điều của Luật Việc làm về bảo hiểm thất nghiệp",
+        "code": "Nghị định số 374/2025/NĐ-CP"
+      },
+      {
+        "title": "Luật Việc làm",
+        "code": "74/2025/QH15"
+      }
+    ],
+    "count": 2
+  },
+  "attachments": [],
+  "signals": {
+    "raw_parse_warnings": [],
+    "missing_documents": false,
+    "documents_section_present": true,
+    "documents_declared_empty": false,
+    "documents_only_in_notes": false,
+    "missing_results": false
+  }
+}

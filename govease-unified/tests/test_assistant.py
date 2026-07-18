@@ -39,6 +39,9 @@ class ProcedureAssistantTests(unittest.TestCase):
         self.assertEqual("1.004194", result["procedure"]["code"])
         self.assertGreaterEqual(len(result["checklist"]["documents"]), 2)
         self.assertGreaterEqual(len(result["checklist"]["steps"]), 2)
+        self.assertTrue(result["checklist"]["user_steps"])
+        self.assertLessEqual(len(result["checklist"]["user_steps"]), 7)
+        self.assertTrue(result["checklist"]["next_step_summary"])
         self.assertTrue(result["sources"])
         self.assertTrue(all(source["source_url"] for source in result["sources"]))
 

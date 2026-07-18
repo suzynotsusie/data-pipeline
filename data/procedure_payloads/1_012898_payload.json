@@ -1,0 +1,284 @@
+{
+  "schema_version": "3.0",
+  "record_type": "public_service_procedure_payload",
+  "id": "procedure-1.012898",
+  "procedure_code": "1.012898",
+  "code": "1.012898",
+  "title": "Cho thuê nhà ở cũ thuộc tài sản công đối với trường hợp ký lại hợp đồng thuê",
+  "language": "vi",
+  "status": "generated_from_pipeline",
+  "field": "Nhà ở và công sở",
+  "group_key": "dien_luc_nha_o_dat_dai",
+  "workflow_family": null,
+  "subflow": null,
+  "source": {
+    "source_url": "file:///C:/Users/ku060/Downloads/VAIC%20source/data-pipeline/raw_data/1_012898/1_012898_procedure_detail.md",
+    "source_markdown_path": "C:\\Users\\ku060\\Downloads\\VAIC source\\data-pipeline\\raw_data\\1_012898\\1_012898_procedure_detail.md",
+    "normalized_payload_path": "C:\\Users\\ku060\\Downloads\\VAIC source\\data-pipeline\\govease-unified\\data\\normalized_structured\\1_012898_normalized_structured.json",
+    "enriched_payload_path": "C:\\Users\\ku060\\Downloads\\VAIC source\\data-pipeline\\govease-unified\\data\\enriched_structured_priority\\1_012898_enriched_structured.json"
+  },
+  "scope": {
+    "included": "Thủ tục này thuộc nhóm nhà ở, đất đai và điện lực, thường cần kiểm tra hiện trạng hồ sơ tài sản hoặc điều kiện hạ tầng liên quan. Kết quả thường nhận được là Hợp đồng thuê nhà ở cũ thuộc tài sản công. Thời gian xử lý tham khảo: 15 ngày.",
+    "not_included": []
+  },
+  "agency": {
+    "executing_agency": "Bộ Quốc phòng",
+    "submission_place": null,
+    "receiving_places": []
+  },
+  "target_users": [
+    "Công dân Việt Nam",
+    "Cán bộ",
+    "công chức",
+    "viên chức"
+  ],
+  "submission_methods": [
+    {
+      "code": "ONLINE",
+      "label": "Trực tuyến",
+      "processing_time": "15 ngày",
+      "fee": null,
+      "description": "- Trường hợp là nhà ở do địa phương quản lý thì nộp hồ sơ trực tiếp, trực tuyến hoặc qua dịch vụ bưu chính đến Trung tâm phục vụ hành chính công của UBND cấp tỉnh hoặc Bộ phận tiếp nhận và trả kết quả giải quyết TTHC.<br>- Trường hợp nhà ở do Bộ Quốc phòng quản lý thì nộp hồ sơ trực tiếp, trực tuyến hoặc qua dịch vụ bưu chính đến cơ quan quản lý nhà ở hoặc đơn vị quản lý vận hành nhà ở được Bộ Quốc phòng giao thực hiện."
+    },
+    {
+      "code": "POSTAL",
+      "label": "Dịch vụ bưu chính",
+      "processing_time": "15 ngày",
+      "fee": null,
+      "description": "- Trường hợp là nhà ở do địa phương quản lý thì nộp hồ sơ trực tiếp, trực tuyến hoặc qua dịch vụ bưu chính đến Trung tâm phục vụ hành chính công của UBND cấp tỉnh hoặc Bộ phận tiếp nhận và trả kết quả giải quyết TTHC.<br>- Trường hợp nhà ở do Bộ Quốc phòng quản lý thì nộp hồ sơ trực tiếp, trực tuyến hoặc qua dịch vụ bưu chính đến cơ quan quản lý nhà ở hoặc đơn vị quản lý vận hành nhà ở được Bộ Quốc phòng giao thực hiện."
+    },
+    {
+      "code": "IN_PERSON",
+      "label": "Trực tiếp",
+      "processing_time": "15 ngày",
+      "fee": null,
+      "description": "- Trường hợp là nhà ở do địa phương quản lý thì nộp hồ sơ trực tiếp, trực tuyến hoặc qua dịch vụ bưu chính đến Trung tâm phục vụ hành chính công của UBND cấp tỉnh hoặc Bộ phận tiếp nhận và trả kết quả giải quyết TTHC.<br>- Trường hợp nhà ở do Bộ Quốc phòng quản lý thì nộp hồ sơ trực tiếp, trực tuyến hoặc qua dịch vụ bưu chính đến cơ quan quản lý nhà ở hoặc đơn vị quản lý vận hành nhà ở được Bộ Quốc phòng giao thực hiện."
+    }
+  ],
+  "processing_note": "Thời gian xử lý tham chiếu: 15 ngày. Nên chuẩn bị trước thông tin thửa đất, tài sản hoặc địa điểm tiếp nhận, rồi chọn kênh nộp phù hợp: Trực tiếp, Trực tuyến, Dịch vụ bưu chính. Hiện có khoảng 2 mục giấy tờ cần theo dõi trong checklist.",
+  "documents": {
+    "normally_required": [
+      {
+        "name": "Bản chính hợp đồng thuê nhà ở đã ký kết với cơ quan có thẩm quyền",
+        "quantity": "1 bản chính, 1 bản sao",
+        "notes": [],
+        "group": "default",
+        "attachment_path": null
+      },
+      {
+        "name": "Đơn đề nghị thuê nhà ở cũ thuộc tài sản công theo Mẫu số 02 của Phụ lục V ban hành kèm theo Nghị định số 95/2024/NĐ-CP ngày 24/7/2024 của Chính phủ quy định chi tiết một số điều của Luật Nhà ở (Mẫu đơn có quy định về các thông tin đã có trong cơ sở dữ liệu quốc gia về dân cư hoặc cơ sở dữ liệu chuyên ngành thì các thông tin này được thay thế bằng mã số định danh cá nhân hoặc mã số chuyên ngành thể hiện trong mẫu đơn, tờ khai khi cơ sở dữ liệu quốc gia về dân cư hoặc cơ sở dữ liệu chuyên ngành được vận hành).",
+        "quantity": "1 bản chính, 1 bản sao",
+        "notes": [],
+        "group": "default",
+        "attachment_path": null
+      }
+    ],
+    "conditional": [],
+    "forms": [],
+    "presented": [],
+    "notes": [],
+    "summary": [
+      {
+        "group": "default",
+        "name": "Bản chính hợp đồng thuê nhà ở đã ký kết với cơ quan có thẩm quyền",
+        "quantity": "1 bản chính, 1 bản sao",
+        "notes": [],
+        "attachment_path": null
+      },
+      {
+        "group": "default",
+        "name": "Đơn đề nghị thuê nhà ở cũ thuộc tài sản công theo Mẫu số 02 của Phụ lục V ban hành kèm theo Nghị định số 95/2024/NĐ-CP ngày 24/7/2024 của Chính phủ quy định chi tiết một số điều của Luật Nhà ở (Mẫu đơn có quy định về các thông tin đã có trong cơ sở dữ liệu quốc gia về dân cư hoặc cơ sở dữ liệu chuyên ngành thì các thông tin này được thay thế bằng mã số định danh cá nhân hoặc mã số chuyên ngành thể hiện trong mẫu đơn, tờ khai khi cơ sở dữ liệu quốc gia về dân cư hoặc cơ sở dữ liệu chuyên ngành được vận hành).",
+        "quantity": "1 bản chính, 1 bản sao",
+        "notes": [],
+        "attachment_path": null
+      }
+    ]
+  },
+  "steps": [
+    {
+      "order": 1,
+      "title": "Bước 1",
+      "description": "1. **- Trước ngày hết hạn hợp đồng thuê nhà tối thiểu 30 ngày, người đang thuê nhà ở nộp 01 bộ hồ sơ đến đơn vị quản lý vận hành nhà ở hoặc cơ quan quản lý nhà ở. Trường hợp UBND cấp tỉnh phân cấp, ủy quyền cho UBND cấp xã thực hiện quyền đại diện chủ sở hữu nhà ở cũ thuộc tài sản công thì UBND cấp xã đồng thời là cơ quan quản lý nhà ở**",
+      "example": "30 ngày"
+    },
+    {
+      "order": 2,
+      "title": "Bước 2",
+      "description": "- Trong thời hạn tối đa 15 ngày, kể từ ngày nhận được hồ sơ đề nghị ký lại hợp đồng, đơn vị quản lý vận hành hoặc cơ quan quản lý nhà ở có trách nhiệm kiểm tra hồ sơ, trường hợp người thuê nhà ở vẫn thuộc đối tượng và đủ điều kiện thuê nhà ở theo quy định thì có văn bản thông báo rõ thời gian, địa điểm để người thuê thực hiện ký lại hợp đồng thuê nhà ở; trường hợp không còn đủ điều kiện thuê nhà ở thì phải có thông báo cho người thuê biết rõ lý do.",
+      "example": "15 ngày"
+    },
+    {
+      "order": 3,
+      "title": "Bước 3",
+      "description": "Trong thời hạn tối đa 15 ngày, kể từ ngày nhận được văn bản thông báo, người đề nghị thực hiện ký lại hợp đồng",
+      "example": "15 ngày"
+    }
+  ],
+  "input_fields": [
+    {
+      "field": "property_or_service_need",
+      "label": "Nhu cầu về đất đai, nhà ở hoặc điện lực",
+      "type": "string",
+      "required": true
+    },
+    {
+      "field": "property_location",
+      "label": "Địa điểm tài sản hoặc nơi sử dụng dịch vụ",
+      "type": "string",
+      "required": true
+    },
+    {
+      "field": "submission_channel_preference",
+      "label": "Kênh nộp dự kiến",
+      "type": "enum",
+      "required": false,
+      "options": [
+        "Trực tiếp",
+        "Trực tuyến",
+        "Dịch vụ bưu chính"
+      ]
+    },
+    {
+      "field": "has_current_certificate",
+      "label": "Đã có giấy tờ/tài liệu hiện trạng",
+      "type": "boolean",
+      "required": false
+    }
+  ],
+  "validation_rules": [
+    {
+      "id": "required-1",
+      "severity": "error",
+      "field": "property_or_service_need",
+      "rule": "Trường bắt buộc phải có dữ liệu hợp lệ trước khi nộp.",
+      "message": "Thiếu trường bắt buộc: Nhu cầu về đất đai, nhà ở hoặc điện lực."
+    },
+    {
+      "id": "required-2",
+      "severity": "error",
+      "field": "property_location",
+      "rule": "Trường bắt buộc phải có dữ liệu hợp lệ trước khi nộp.",
+      "message": "Thiếu trường bắt buộc: Địa điểm tài sản hoặc nơi sử dụng dịch vụ."
+    },
+    {
+      "id": "hint-1",
+      "severity": "warning",
+      "field": "general",
+      "rule": "Nên xác định trước kênh nộp hồ sơ để biết có cần bản giấy, bản điện tử hay xuất trình trực tiếp.",
+      "message": "Nên xác định trước kênh nộp hồ sơ để biết có cần bản giấy, bản điện tử hay xuất trình trực tiếp."
+    },
+    {
+      "id": "hint-2",
+      "severity": "warning",
+      "field": "general",
+      "rule": "Nên đối chiếu trước thông tin thửa đất, tài sản hoặc hiện trạng hồ sơ để tránh bị yêu cầu chỉnh sửa.",
+      "message": "Nên đối chiếu trước thông tin thửa đất, tài sản hoặc hiện trạng hồ sơ để tránh bị yêu cầu chỉnh sửa."
+    }
+  ],
+  "common_errors": [
+    {
+      "field": "general",
+      "issue": "Điền sai mẫu tờ khai hoặc chọn sai biểu mẫu đi kèm.",
+      "fix": "Nên xác định trước kênh nộp hồ sơ để biết có cần bản giấy, bản điện tử hay xuất trình trực tiếp."
+    }
+  ],
+  "clarifying_questions": [
+    {
+      "id": "clarify_1",
+      "question": "Bạn đang xử lý nhu cầu nào về đất đai, nhà ở hoặc điện lực?",
+      "purpose": "workflow_intake"
+    },
+    {
+      "id": "clarify_2",
+      "question": "Bạn đã có thông tin thửa đất, địa chỉ tài sản hoặc giấy tờ hiện trạng chưa?",
+      "purpose": "workflow_intake"
+    }
+  ],
+  "legal_basis": [
+    {
+      "title": "Luật Nhà ở số 27/2023/QH15",
+      "code": "27/2023/QH15"
+    },
+    {
+      "title": "Nghị định số 95/2024/NĐ-CP ngày 24 tháng 7 năm 2024 của Chính phủ về quy định chi tiết một số điều của Luật Nhà ở;",
+      "code": "95/2024/NĐ-CP"
+    },
+    {
+      "title": "NGHỊ ĐỊNH Sửa đổi, bổ sung một số điều của các Nghị định trong lĩnh vực nhà ở, kinh đoanh bất động sản",
+      "code": "54/2026/NĐ-CP"
+    }
+  ],
+  "legal_bases": [
+    {
+      "title": "Luật Nhà ở số 27/2023/QH15",
+      "code": "27/2023/QH15"
+    },
+    {
+      "title": "Nghị định số 95/2024/NĐ-CP ngày 24 tháng 7 năm 2024 của Chính phủ về quy định chi tiết một số điều của Luật Nhà ở;",
+      "code": "95/2024/NĐ-CP"
+    },
+    {
+      "title": "NGHỊ ĐỊNH Sửa đổi, bổ sung một số điều của các Nghị định trong lĩnh vực nhà ở, kinh đoanh bất động sản",
+      "code": "54/2026/NĐ-CP"
+    }
+  ],
+  "faq": [
+    {
+      "question": "Có thể nộp qua kênh nào?",
+      "answer": "Các kênh hiện có: Trực tiếp, Trực tuyến, Dịch vụ bưu chính."
+    },
+    {
+      "question": "Thời gian xử lý tham chiếu là bao lâu?",
+      "answer": "Thời gian xử lý tham chiếu hiện có là 15 ngày."
+    },
+    {
+      "question": "Kết quả chính của thủ tục là gì?",
+      "answer": "Kết quả chính được trích xuất là Hợp đồng thuê nhà ở cũ thuộc tài sản công."
+    }
+  ],
+  "guidance": {
+    "highlight_documents": [
+      {
+        "bucket": "required",
+        "name": "Bản chính hợp đồng thuê nhà ở đã ký kết với cơ quan có thẩm quyền",
+        "conditions": [],
+        "attachment_path": null
+      },
+      {
+        "bucket": "required",
+        "name": "Đơn đề nghị thuê nhà ở cũ thuộc tài sản công theo Mẫu số 02 của Phụ lục V ban hành kèm theo Nghị định số 95/2024/NĐ-CP ngày 24/7/2024 của Chính phủ quy định chi tiết một số điều của Luật Nhà ở (Mẫu đơn có quy định về các thông tin đã có trong cơ sở dữ liệu quốc gia về dân cư hoặc cơ sở dữ liệu chuyên ngành thì các thông tin này được thay thế bằng mã số định danh cá nhân hoặc mã số chuyên ngành thể hiện trong mẫu đơn, tờ khai khi cơ sở dữ liệu quốc gia về dân cư hoặc cơ sở dữ liệu chuyên ngành được vận hành).",
+        "conditions": [],
+        "attachment_path": null
+      }
+    ],
+    "special_cases": [
+      "Có kiểm tra dữ liệu cư trú/định danh"
+    ],
+    "common_errors": [
+      "Điền sai mẫu tờ khai hoặc chọn sai biểu mẫu đi kèm."
+    ],
+    "validation_hints": [
+      "Nên xác định trước kênh nộp hồ sơ để biết có cần bản giấy, bản điện tử hay xuất trình trực tiếp.",
+      "Nên đối chiếu trước thông tin thửa đất, tài sản hoặc hiện trạng hồ sơ để tránh bị yêu cầu chỉnh sửa."
+    ]
+  },
+  "next_steps": {
+    "summary": "Nên chuẩn bị trước thông tin thửa đất, tài sản hoặc địa điểm tiếp nhận, rồi chọn kênh nộp phù hợp: Trực tiếp, Trực tuyến, Dịch vụ bưu chính. Hiện có khoảng 2 mục giấy tờ cần theo dõi trong checklist.",
+    "time_badge": "15 ngày",
+    "result_label": "Hợp đồng thuê nhà ở cũ thuộc tài sản công",
+    "primary_channel": "online",
+    "channels": [
+      "in_person",
+      "online",
+      "postal"
+    ]
+  },
+  "notes": [],
+  "provenance": {
+    "pipeline": "raw->structured->normalized->enriched->ui_api_payload",
+    "normalizer_version": "0.2.0",
+    "enricher_version": "0.2.0",
+    "mapping_notes": "excluded_from_clean_workflow_dataset",
+    "supported_group": true
+  }
+}

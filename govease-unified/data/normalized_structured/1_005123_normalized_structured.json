@@ -1,0 +1,197 @@
+{
+  "schema_version": "1.0",
+  "normalizer_version": "0.2.0",
+  "source": {
+    "procedure_code": "1.005123",
+    "title": "Gia hạn giấy phép xây dựng công trình thiết yếu, dùng chung với đường sắt",
+    "raw_structured_parser_version": "0.1.0",
+    "field": "Đường sắt"
+  },
+  "procedure": {
+    "level": "Cấp tỉnh, Cấp bộ/ngành",
+    "procedure_type": "TTHC được luật giao quy định chi tiết",
+    "target_users": [
+      "Doanh nghiệp có vốn đầu tư nước ngoài",
+      "Doanh nghiệp Việt Nam",
+      "Công dân Việt Nam",
+      "Doanh nghiệp",
+      "Tổ chức nước ngoài",
+      "Hợp tác xã",
+      "Tổ chức (không bao gồm doanh nghiệp",
+      "HTX)"
+    ],
+    "authorities": [
+      "Cục Đường sắt Việt Nam, Chủ tịch ủy ban nhân dân cấp tỉnh"
+    ],
+    "receiving_places": [
+      "Cục Đường sắt Việt Nam, 120 Lê Duẩn, phường Văn Miếu - Quốc Tử Giám - Tp. Hà Nội"
+    ]
+  },
+  "submission": {
+    "channels": [
+      "in_person",
+      "online",
+      "postal"
+    ],
+    "methods": [
+      {
+        "method_id": "method_1",
+        "channel": "online",
+        "processing_time_text": "3 ngày làm việc",
+        "fee_text": null,
+        "description": null,
+        "is_online": true,
+        "is_postal": false,
+        "is_in_person": false
+      },
+      {
+        "method_id": "method_2",
+        "channel": "postal",
+        "processing_time_text": "3 ngày làm việc",
+        "fee_text": null,
+        "description": null,
+        "is_online": false,
+        "is_postal": true,
+        "is_in_person": false
+      },
+      {
+        "method_id": "method_3",
+        "channel": "in_person",
+        "processing_time_text": "3 ngày làm việc",
+        "fee_text": null,
+        "description": null,
+        "is_online": false,
+        "is_postal": false,
+        "is_in_person": true
+      }
+    ],
+    "timing_summary": {
+      "unique_processing_times": [
+        "3 ngày làm việc"
+      ],
+      "method_count": 3
+    }
+  },
+  "documents": {
+    "required": [
+      {
+        "document_id": "t_i_li_u_ch_ng_minh_l_do_ngh_gia_h_n",
+        "name": "Tài liệu chứng minh lý do đề nghị gia hạn",
+        "group_name": "default",
+        "group_type": "unknown",
+        "original_count": "1",
+        "copy_count": "1",
+        "conditions": [],
+        "attachment_label": null,
+        "attachment_path": null
+      },
+      {
+        "document_id": "ti_n_thi_c_ng_c_ng_tr_nh_c_c_p_c_th_m_quy_n_ph_duy_t",
+        "name": "Tiến độ thi công công trình được cấp có thẩm quyền phê duyệt",
+        "group_name": "default",
+        "group_type": "unknown",
+        "original_count": "1",
+        "copy_count": "1",
+        "conditions": [],
+        "attachment_label": null,
+        "attachment_path": null
+      },
+      {
+        "document_id": "n_ngh_theo_m_u_quy_nh",
+        "name": "Đơn đề nghị theo mẫu quy định",
+        "group_name": "default",
+        "group_type": "unknown",
+        "original_count": "1",
+        "copy_count": "1",
+        "conditions": [],
+        "attachment_label": "1.7. Quyet dinh gia han GPXD.docx",
+        "attachment_path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/1_005123/1.7.%20Quyet%20dinh%20gia%20han%20GPXD.docx"
+      }
+    ],
+    "conditional": [],
+    "presented": [],
+    "notes": [],
+    "forms": [
+      {
+        "name": "Đơn đề nghị theo mẫu quy định",
+        "attachment_label": "1.7. Quyet dinh gia han GPXD.docx",
+        "attachment_path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/1_005123/1.7.%20Quyet%20dinh%20gia%20han%20GPXD.docx"
+      }
+    ],
+    "empty_groups": [],
+    "document_count": 3
+  },
+  "process": {
+    "steps": [
+      {
+        "step_id": "step_1",
+        "title": null,
+        "content": "1.",
+        "actor": "user",
+        "channel_hint": null,
+        "time_hint": null
+      },
+      {
+        "step_id": "step_2",
+        "title": "a)",
+        "content": "a) Nộp hồ sơ TTHC Chủ đầu tư dự án lập 01 bộ hồ sơ gửi đến cơ quan có thẩm quyền theo một trong các hình thức: nộp hồ sơ trực tiếp tại bộ phận một cửa của cơ quan có thẩm quyền; nộp qua hệ thống dịch vụ công trực tuyến; nộp qua hệ thống bưu chính.",
+        "actor": "authority",
+        "channel_hint": "trực tuyến",
+        "time_hint": null
+      },
+      {
+        "step_id": "step_3",
+        "title": "b)",
+        "content": "b) Giải quyết TTHC - Cơ quan có thẩm quyền tiếp nhận và kiểm tra hồ sơ đề nghị. Trường hợp thành phần hồ sơ chưa đầy đủ theo quy định, trong vòng 01 ngày làm việc (nếu tiếp nhận hồ sơ trực tiếp tại bộ phận một cửa hoặc qua cổng dịch vụ công trực tuyến) hoặc 02 ngày làm việc (nếu tiếp nhận hồ sơ qua hệ thống bưu chính) kể từ ngày tiếp nhận hồ sơ, cơ quan có thẩm quyền trả kết quả bằng văn bản và hướng dẫn chủ đầu tư hoàn thiện hồ sơ theo quy định. - Trường hợp hồ sơ đầy đủ, cơ quan có thẩm quyền quyết định gia hạn giấy phép theo mẫu quy định. - Trường hợp không gia hạn giấy phép, cơ quan có thẩm quyền trả lời bằng văn bản hoặc thông báo qua hệ thống thông tin giải quyết thủ tục hành chính và nêu rõ lý do.",
+        "actor": "authority",
+        "channel_hint": "trực tuyến",
+        "time_hint": "01 ngày làm việc"
+      }
+    ],
+    "step_count": 3,
+    "notes": []
+  },
+  "eligibility": {
+    "conditions": [],
+    "has_conditions": false
+  },
+  "results": {
+    "items": [
+      {
+        "name": "QĐ gia hạn GPXD",
+        "result_code": "KQ.G17.000572",
+        "raw_text": "QĐ gia hạn GPXD"
+      }
+    ],
+    "primary_result": {
+      "name": "QĐ gia hạn GPXD",
+      "result_code": "KQ.G17.000572",
+      "raw_text": "QĐ gia hạn GPXD"
+    }
+  },
+  "legal_basis": {
+    "items": [
+      {
+        "title": "Thông tư số 34/2025/TT-BXD ngày 14/11/2025 của Bộ trưởng Bộ Xây dựng quy định về quản lý, khai thác kết cấu hạ tầng đường sắt",
+        "code": "34/2025/TT-BXD"
+      }
+    ],
+    "count": 1
+  },
+  "attachments": [
+    {
+      "label": "1.7. Quyet dinh gia han GPXD.docx",
+      "path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/1_005123/1.7.%20Quyet%20dinh%20gia%20han%20GPXD.docx",
+      "source_section": "Thành phần hồ sơ",
+      "document_name": "Đơn đề nghị theo mẫu quy định"
+    }
+  ],
+  "signals": {
+    "raw_parse_warnings": [],
+    "missing_documents": false,
+    "documents_section_present": true,
+    "documents_declared_empty": false,
+    "documents_only_in_notes": false,
+    "missing_results": false
+  }
+}

@@ -1,0 +1,103 @@
+{
+  "schema_version": "1.0",
+  "enricher_version": "0.2.0",
+  "source": {
+    "procedure_code": "1.014101",
+    "title": "Điều chỉnh nội dung Chứng chỉ hành nghề dược theo hình thức xét hồ sơ",
+    "group_key": "hoc_tap",
+    "workflow_family": null,
+    "subflow": null
+  },
+  "experience": {
+    "entry_label": "Hỗ trợ giáo dục và học tập",
+    "overview_summary": "Thủ tục này thuộc nhóm giáo dục và học tập, thường liên quan đến hồ sơ đào tạo, văn bằng hoặc điều kiện học tập của người học. Kết quả thường nhận được là Chứng chỉ hành nghề dược. Thời gian xử lý tham khảo: 10 ngày.",
+    "next_step_summary": "Nên rà trước thông tin người học, cơ sở đào tạo và loại kết quả cần xin xác nhận hoặc cấp lại. Có thể chọn kênh nộp phù hợp: Trực tiếp, Trực tuyến, Dịch vụ bưu chính. Hiện có khoảng 4 mục giấy tờ cần theo dõi trong checklist.",
+    "tone": "supportive_public_service"
+  },
+  "guidance": {
+    "highlight_documents": [
+      {
+        "bucket": "required",
+        "name": "Chứng chỉ hành nghề dược đã được cấp",
+        "conditions": [],
+        "attachment_path": null
+      },
+      {
+        "bucket": "required",
+        "name": "Đơn đề nghị điều chỉnh Chứng chỉ hành nghề dược, có ảnh chân dung của người đề nghị cấp Chứng chỉ hành nghề dược chụp trong thời gian không quá 06 tháng;",
+        "conditions": [],
+        "attachment_path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/1_014101/Mus05.docx"
+      },
+      {
+        "bucket": "required",
+        "name": "Các giấy tờ chứng minh nội dung thay đổi. Số lượng là: Bản chính: 1 hoặc Bản sao có chứng thực: 1 hoặc Bản sao kèm xuất trình bản chính để đối chiếu: 1.",
+        "conditions": [],
+        "attachment_path": null
+      },
+      {
+        "bucket": "conditional",
+        "name": "Văn bằng chuyên môn tương ứng và giấy xác nhận thời gian thực hành chuyên môn tại cơ sở dược phù hợp đối với trường hợp thay đổi phạm vi hoạt động chuyên môn. Đối với các văn bằng do cơ sở đào tạo nước ngoài cấp, phải kèm theo giấy công nhận tương đương của cơ quan có thẩm quyền về công nhận tương đương theo quy định tại khoản 2 Điều 12 của Nghị định số 163/2025/NĐ-CP. Giấy tờ này do cơ quan có thẩm quyền nước ngoài cấp, phải là bản được hợp pháp hóa lãnh sự theo quy định. Các giấy tờ này phải có bản dịch sang tiếng Việt và được chứng thực chữ ký người dịch theo quy định",
+        "conditions": [
+          "Văn bằng chuyên môn tương ứng và giấy xác nhận thời gian thực hành chuyên môn tại cơ sở dược phù hợp đối với trường hợp thay đổi phạm vi hoạt động chuyên môn. Đối với các văn bằng do cơ sở đào tạo nước ngoài cấp, phải kèm theo giấy công nhận tương đương của cơ quan có thẩm quyền về công nhận tương đương theo quy định tại khoản 2 Điều 12 của Nghị định số 163/2025/NĐ-CP. Giấy tờ này do cơ quan có thẩm quyền nước ngoài cấp, phải là bản được hợp pháp hóa lãnh sự theo quy định. Các giấy tờ này phải có bản dịch sang tiếng Việt và được chứng thực chữ ký người dịch theo quy định"
+        ],
+        "attachment_path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/1_014101/Mus03.docx"
+      }
+    ],
+    "special_cases": [
+      "Có yếu tố nước ngoài",
+      "Có thể cần xác minh hồ sơ học tập hoặc văn bằng"
+    ],
+    "common_errors": [
+      "Thiếu giấy tờ hợp pháp hóa hoặc giấy tờ nhân thân của phía nước ngoài.",
+      "Thiếu minh chứng học tập, văn bằng hoặc xác nhận từ cơ sở đào tạo."
+    ],
+    "validation_hints": [
+      "Nên xác định trước kênh nộp hồ sơ để biết có cần bản giấy, bản điện tử hay xuất trình trực tiếp.",
+      "Có mẫu biểu đính kèm, nên kiểm tra đúng biểu mẫu trước khi nộp.",
+      "Nên rà lại thông tin người học, cơ sở đào tạo và loại xác nhận hoặc văn bằng cần xin."
+    ]
+  },
+  "intake": {
+    "candidate_input_fields": [
+      {
+        "field_id": "learner_full_name",
+        "label": "Tên người học",
+        "field_type": "text",
+        "required": true
+      },
+      {
+        "field_id": "education_record_type",
+        "label": "Loại hồ sơ học tập cần xử lý",
+        "field_type": "text",
+        "required": true
+      },
+      {
+        "field_id": "education_institution",
+        "label": "Cơ sở đào tạo liên quan",
+        "field_type": "text",
+        "required": false
+      },
+      {
+        "field_id": "submission_channel_preference",
+        "label": "Kênh nộp dự kiến",
+        "field_type": "enum",
+        "required": false
+      }
+    ],
+    "suggested_clarifying_questions": [
+      "Bạn đang cần xử lý hồ sơ học tập, văn bằng hay xác nhận nào?",
+      "Người học và cơ sở đào tạo liên quan đã xác định rõ chưa?"
+    ]
+  },
+  "ui_hints": {
+    "primary_channel": "online",
+    "result_label": "Chứng chỉ hành nghề dược",
+    "time_badge": "10 ngày",
+    "document_count_badge": 4
+  },
+  "provenance": {
+    "generator": "workflow_domain_enricher",
+    "derivation_mode": "rule_based_semantic_enrichment",
+    "supported_group": true
+  }
+}

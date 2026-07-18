@@ -1,0 +1,821 @@
+{
+  "schema_version": "1.0",
+  "domain": "cu_tru_giay_to",
+  "updated_at": "2026-07-18",
+  "source_files": [
+    "C:\\Users\\ku060\\Downloads\\VAIC source\\data-pipeline\\main\\full-data.csv",
+    "C:\\Users\\ku060\\Downloads\\VAIC source\\data-pipeline\\data\\workflows\\cu_tru_giay_to\\summary.csv",
+    "C:\\Users\\ku060\\Downloads\\VAIC source\\data-pipeline\\data\\workflows\\cu_tru_giay_to\\normalized.json",
+    "C:\\Users\\ku060\\Downloads\\VAIC source\\data-pipeline\\raw_data"
+  ],
+  "coverage": {
+    "expected_codes": [
+      "1.014060",
+      "1.014061",
+      "1.014062",
+      "1.014063",
+      "1.014064",
+      "1.014067",
+      "1.014068",
+      "3.000228",
+      "3.000271",
+      "3.000272",
+      "3.000276",
+      "3.000277",
+      "3.000285",
+      "3.000286",
+      "1.001445",
+      "1.001456",
+      "1.001471",
+      "1.010094",
+      "1.010103",
+      "1.010382",
+      "1.010384",
+      "1.010385",
+      "1.010386",
+      "2.000539",
+      "1.003197",
+      "1.004222",
+      "1.010038",
+      "1.010039",
+      "1.010041",
+      "1.013313",
+      "1.013314",
+      "2.001159",
+      "1.002755",
+      "1.004194",
+      "1.010028",
+      "1.010040",
+      "1.003677"
+    ],
+    "covered_codes": [
+      "1.014060",
+      "1.014061",
+      "1.014062",
+      "1.014063",
+      "1.014064",
+      "1.014067",
+      "1.014068",
+      "3.000228",
+      "3.000271",
+      "3.000272",
+      "3.000276",
+      "3.000277",
+      "3.000285",
+      "3.000286",
+      "1.001445",
+      "1.001456",
+      "1.001471",
+      "1.010094",
+      "1.010103",
+      "1.010382",
+      "1.010384",
+      "1.010385",
+      "1.010386",
+      "2.000539",
+      "1.003197",
+      "1.004222",
+      "1.010038",
+      "1.010039",
+      "1.010041",
+      "1.013313",
+      "1.013314",
+      "2.001159",
+      "1.002755",
+      "1.004194",
+      "1.010028",
+      "1.010040",
+      "1.003677"
+    ],
+    "missing_codes": []
+  },
+  "llm_contract": {
+    "role": "parse_user_answer_and_rephrase_question_only",
+    "required_output_schema": {
+      "intent": "cu_tru_giay_to",
+      "current_node": "string",
+      "slot_updates": {
+        "subdomain_key": "ho_khau | tam_tru | luu_tru | can_cuoc_chung_minh_nhan_dan | ho_chieu | tam_vang | unknown",
+        "operation_key": "string",
+        "operation_group": "string"
+      },
+      "confidence": "0_to_1",
+      "needs_human_review": "boolean"
+    }
+  },
+  "entry_prompts": [
+    "Bạn đang cần làm việc về cư trú, căn cước hay hộ chiếu?",
+    "Bạn muốn đăng ký, gia hạn, xóa, xác nhận thông tin, cấp lại giấy tờ hay xử lý giấy tờ bị mất?"
+  ],
+  "slots": [
+    {
+      "name": "subdomain_key",
+      "required": true,
+      "description": "Nhánh chính của nhóm Cư trú và giấy tờ tùy thân."
+    },
+    {
+      "name": "operation_key",
+      "required": true,
+      "description": "Thao tác cụ thể ánh xạ trực tiếp tới thủ tục cuối cùng."
+    },
+    {
+      "name": "operation_group",
+      "required": false,
+      "description": "Nhóm thao tác để gom các thủ tục gần nhau cho UI và parser."
+    }
+  ],
+  "subdomain_catalog": [
+    {
+      "subdomain_key": "ho_khau",
+      "subdomain_label": "Hộ khẩu",
+      "event_id": 269,
+      "summary": "Nhóm thủ tục thường trú, tách hộ, xác nhận và điều chỉnh thông tin cư trú liên quan đến nơi ở ổn định."
+    },
+    {
+      "subdomain_key": "tam_tru",
+      "subdomain_label": "Tạm trú",
+      "event_id": 270,
+      "summary": "Nhóm thủ tục đăng ký, gia hạn, xóa tạm trú và khai báo thông tin cư trú khi chưa đủ điều kiện đăng ký chính thức."
+    },
+    {
+      "subdomain_key": "luu_tru",
+      "subdomain_label": "Lưu trú",
+      "event_id": 271,
+      "summary": "Nhóm thủ tục thông báo lưu trú cho trường hợp ở ngắn hạn, khác với đăng ký tạm trú."
+    },
+    {
+      "subdomain_key": "can_cuoc_chung_minh_nhan_dan",
+      "subdomain_label": "Căn cước công dân/Chứng minh nhân dân",
+      "event_id": 272,
+      "summary": "Nhóm thủ tục cấp, cấp đổi, cấp lại căn cước, giấy chứng nhận căn cước và tài khoản/căn cước điện tử."
+    },
+    {
+      "subdomain_key": "ho_chieu",
+      "subdomain_label": "Hộ chiếu",
+      "event_id": 273,
+      "summary": "Nhóm thủ tục cấp hộ chiếu phổ thông, trình báo mất và khôi phục giá trị sử dụng hộ chiếu."
+    },
+    {
+      "subdomain_key": "tam_vang",
+      "subdomain_label": "Tạm vắng",
+      "event_id": 363,
+      "summary": "Nhóm thủ tục khai báo tạm vắng khi công dân rời nơi cư trú trong thời gian thuộc diện phải thông báo."
+    }
+  ],
+  "decision_tree": {
+    "start_node": "residence_identity_subdomain",
+    "nodes": [
+      {
+        "id": "residence_identity_subdomain",
+        "type": "question",
+        "slot": "subdomain_key",
+        "question": "Bạn đang hỏi về hộ khẩu, tạm trú, lưu trú, căn cước, hộ chiếu hay tạm vắng?",
+        "options": [
+          "ho_khau",
+          "tam_tru",
+          "luu_tru",
+          "can_cuoc_chung_minh_nhan_dan",
+          "ho_chieu",
+          "tam_vang"
+        ]
+      },
+      {
+        "id": "residence_identity_operation",
+        "type": "question",
+        "slot": "operation_key",
+        "question": "Bạn cần làm thao tác nào cụ thể trong nhánh đã chọn?",
+        "options_by_subdomain": {
+          "can_cuoc_chung_minh_nhan_dan": [
+            {
+              "operation_key": "tich_hop_cap_nhat_dieu_chinh_thong_tin_tren_the_can_cuoc",
+              "operation_group": "cap_nhat_tich_hop_can_cuoc",
+              "procedure_code": "1.014060",
+              "procedure_title": "Tích hợp, cập nhật, điều chỉnh thông tin trên thẻ căn cước"
+            },
+            {
+              "operation_key": "cap_the_can_cuoc_cho_nguoi_tu_du_14_tuoi_tro_len",
+              "operation_group": "cap_the_can_cuoc_tu_14_tuoi",
+              "procedure_code": "1.014061",
+              "procedure_title": "Cấp thẻ căn cước cho người từ đủ 14 tuổi trở lên"
+            },
+            {
+              "operation_key": "cap_the_can_cuoc_cho_nguoi_duoi_14_tuoi",
+              "operation_group": "cap_the_can_cuoc_duoi_14",
+              "procedure_code": "1.014062",
+              "procedure_title": "Cấp thẻ căn cước cho người dưới 14 tuổi"
+            },
+            {
+              "operation_key": "cap_doi_the_can_cuoc",
+              "operation_group": "cap_doi_the_can_cuoc",
+              "procedure_code": "1.014063",
+              "procedure_title": "Cấp đổi thẻ căn cước"
+            },
+            {
+              "operation_key": "cap_lai_the_can_cuoc",
+              "operation_group": "cap_lai_the_can_cuoc",
+              "procedure_code": "1.014064",
+              "procedure_title": "Cấp lại thẻ căn cước"
+            },
+            {
+              "operation_key": "cap_doi_giay_chung_nhan_can_cuoc",
+              "operation_group": "cap_doi_giay_chung_nhan_can_cuoc",
+              "procedure_code": "1.014067",
+              "procedure_title": "Cấp đổi giấy chứng nhận căn cước"
+            },
+            {
+              "operation_key": "cap_lai_giay_chung_nhan_can_cuoc",
+              "operation_group": "cap_lai_giay_chung_nhan_can_cuoc",
+              "procedure_code": "1.014068",
+              "procedure_title": "Cấp lại giấy chứng nhận căn cước"
+            },
+            {
+              "operation_key": "cap_tai_khoan_dinh_danh_dien_tu_muc_do_02_can_cuoc_dien_tu_cho_cong_dan_viet_nam_cap_xa",
+              "operation_group": "cap_tai_khoan_dinh_danh_muc_2",
+              "procedure_code": "3.000228",
+              "procedure_title": "Cấp tài khoản định danh điện tử mức độ 02, căn cước điện tử cho công dân Việt Nam (cấp xã)"
+            },
+            {
+              "operation_key": "khoa_can_cuoc_dien_tu_thuc_hien_tai_cap_trung_uong",
+              "operation_group": "khoa_can_cuoc_dien_tu",
+              "procedure_code": "3.000271",
+              "procedure_title": "Khóa căn cước điện tử (thực hiện tại cấp trung ương)"
+            },
+            {
+              "operation_key": "mo_khoa_can_cuoc_dien_tu_thuc_hien_tai_cap_trung_uong",
+              "operation_group": "khoa_can_cuoc_dien_tu",
+              "procedure_code": "3.000272",
+              "procedure_title": "Mở khóa căn cước điện tử (thực hiện tại cấp trung ương)"
+            },
+            {
+              "operation_key": "khoa_can_cuoc_dien_tu_thuc_hien_tai_cap_tinh",
+              "operation_group": "khoa_can_cuoc_dien_tu",
+              "procedure_code": "3.000276",
+              "procedure_title": "Khóa căn cước điện tử (thực hiện tại cấp tỉnh)"
+            },
+            {
+              "operation_key": "mo_khoa_can_cuoc_dien_tu_thuc_hien_tai_cap_tinh",
+              "operation_group": "khoa_can_cuoc_dien_tu",
+              "procedure_code": "3.000277",
+              "procedure_title": "Mở khóa căn cước điện tử (thực hiện tại cấp tỉnh)"
+            },
+            {
+              "operation_key": "khoa_can_cuoc_dien_tu_thuc_hien_tai_cap_xa",
+              "operation_group": "khoa_can_cuoc_dien_tu",
+              "procedure_code": "3.000285",
+              "procedure_title": "Khóa căn cước điện tử (thực hiện tại cấp xã)"
+            },
+            {
+              "operation_key": "mo_khoa_can_cuoc_dien_tu_thuc_hien_tai_cap_xa",
+              "operation_group": "khoa_can_cuoc_dien_tu",
+              "procedure_code": "3.000286",
+              "procedure_title": "Mở khóa căn cước điện tử (thực hiện tại cấp xã)"
+            }
+          ],
+          "ho_chieu": [
+            {
+              "operation_key": "trinh_bao_mat_ho_chieu_pho_thong_thuc_hien_tai_cap_tinh",
+              "operation_group": "trinh_bao_mat_ho_chieu",
+              "procedure_code": "1.001445",
+              "procedure_title": "Trình báo mất hộ chiếu phổ thông (thực hiện tại cấp tỉnh)"
+            },
+            {
+              "operation_key": "cap_ho_chieu_pho_thong_o_trong_nuoc_thuc_hien_tai_cap_tinh",
+              "operation_group": "cap_ho_chieu_trong_nuoc",
+              "procedure_code": "1.001456",
+              "procedure_title": "Cấp hộ chiếu phổ thông ở trong nước (thực hiện tại cấp tỉnh)"
+            },
+            {
+              "operation_key": "cap_ho_chieu_pho_thong_o_trong_nuoc_thuc_hien_tai_cap_trung_uong",
+              "operation_group": "cap_ho_chieu_trong_nuoc",
+              "procedure_code": "1.001471",
+              "procedure_title": "Cấp hộ chiếu phổ thông ở trong nước (thực hiện tại cấp trung ương)"
+            },
+            {
+              "operation_key": "thu_tuc_cap_ho_chieu_pho_thong_khong_gan_chip_dien_tu_tai_co_quan_dai_dien_viet_nam_o_nuoc_ngoai",
+              "operation_group": "cap_ho_chieu_o_nuoc_ngoai",
+              "procedure_code": "1.010094",
+              "procedure_title": "Thủ tục cấp hộ chiếu phổ thông (không gắn chip điện tử) tại Cơ quan đại diện Việt Nam ở nước ngoài"
+            },
+            {
+              "operation_key": "thu_tuc_cap_ho_chieu_pho_thong_theo_thu_tuc_rut_gon_tai_co_quan_dai_dien_viet_nam_o_nuoc_ngoai",
+              "operation_group": "cap_ho_chieu_rut_gon_o_nuoc_ngoai",
+              "procedure_code": "1.010103",
+              "procedure_title": "Thủ tục cấp hộ chiếu phổ thông theo thủ tục rút gọn tại Cơ quan đại diện Việt Nam ở nước ngoài"
+            },
+            {
+              "operation_key": "khoi_phuc_gia_tri_su_dung_ho_chieu_pho_thong_thuc_hien_tai_cap_trung_uong",
+              "operation_group": "khoi_phuc_gia_tri_ho_chieu",
+              "procedure_code": "1.010382",
+              "procedure_title": "Khôi phục giá trị sử dụng hộ chiếu phổ thông (thực hiện tại cấp trung ương)"
+            },
+            {
+              "operation_key": "khoi_phuc_gia_tri_su_dung_ho_chieu_pho_thong_thuc_hien_tai_cap_tinh",
+              "operation_group": "khoi_phuc_gia_tri_ho_chieu",
+              "procedure_code": "1.010384",
+              "procedure_title": "Khôi phục giá trị sử dụng hộ chiếu phổ thông (thực hiện tại cấp tỉnh)"
+            },
+            {
+              "operation_key": "trinh_bao_mat_ho_chieu_pho_thong_thuc_hien_tai_cap_huyen",
+              "operation_group": "trinh_bao_mat_ho_chieu",
+              "procedure_code": "1.010385",
+              "procedure_title": "Trình báo mất hộ chiếu phổ thông (thực hiện tại cấp huyện)"
+            },
+            {
+              "operation_key": "trinh_bao_mat_ho_chieu_pho_thong_thuc_hien_tai_cap_xa",
+              "operation_group": "trinh_bao_mat_ho_chieu",
+              "procedure_code": "1.010386",
+              "procedure_title": "Trình báo mất hộ chiếu phổ thông (thực hiện tại cấp xã)"
+            },
+            {
+              "operation_key": "trinh_bao_mat_ho_chieu_pho_thong_thuc_hien_tai_cap_trung_uong",
+              "operation_group": "trinh_bao_mat_ho_chieu",
+              "procedure_code": "2.000539",
+              "procedure_title": "Trình báo mất hộ chiếu phổ thông (thực hiện tại cấp trung ương)"
+            }
+          ],
+          "ho_khau": [
+            {
+              "operation_key": "xoa_dang_ky_thuong_tru",
+              "operation_group": "dang_ky_thuong_tru",
+              "procedure_code": "1.003197",
+              "procedure_title": "Xóa đăng ký thường trú"
+            },
+            {
+              "operation_key": "dang_ky_thuong_tru",
+              "operation_group": "dang_ky_thuong_tru",
+              "procedure_code": "1.004222",
+              "procedure_title": "Đăng ký thường trú"
+            },
+            {
+              "operation_key": "tach_ho",
+              "operation_group": "tach_ho",
+              "procedure_code": "1.010038",
+              "procedure_title": "Tách hộ"
+            },
+            {
+              "operation_key": "dieu_chinh_thong_tin_ve_cu_tru_trong_co_so_du_lieu_ve_cu_tru",
+              "operation_group": "dieu_chinh_thong_tin_cu_tru",
+              "procedure_code": "1.010039",
+              "procedure_title": "Điều chỉnh thông tin về cư trú trong Cơ sở dữ liệu về cư trú"
+            },
+            {
+              "operation_key": "xac_nhan_thong_tin_ve_cu_tru",
+              "operation_group": "xac_nhan_thong_tin_cu_tru",
+              "procedure_code": "1.010041",
+              "procedure_title": "Xác nhận thông tin về cư trú"
+            },
+            {
+              "operation_key": "xac_nhan_noi_thuong_xuyen_dau_do_su_dung_phuong_tien_vao_muc_dich_de_o",
+              "operation_group": "xac_nhan_dieu_kien_thuong_tru_phuong_tien",
+              "procedure_code": "1.013313",
+              "procedure_title": "Xác nhận nơi thường xuyên đậu, đỗ; sử dụng phương tiện vào mục đích để ở"
+            },
+            {
+              "operation_key": "xac_nhan_ve_dieu_kien_dien_tich_binh_quan_nha_o_de_dang_ky_thuong_tru_vao_cho_o_do_thue_muon_o_nho_nha_o_dat_o_khong_co_tranh_chap_quyen_so_huu_nha_o_quyen_su_dung_dat_o_khong_thuoc_dia_diem_khong_duoc_dang_ky_thuong_tru_moi",
+              "operation_group": "dang_ky_thuong_tru",
+              "procedure_code": "1.013314",
+              "procedure_title": "Xác nhận về điều kiện diện tích bình quân nhà ở để đăng ký thường trú vào chỗ ở do thuê, mượn, ở nhờ; nhà ở, đất ở không có tranh chấp quyền sở hữu nhà ở, quyền sử dụng đất ở, không thuộc địa điểm không được đăng ký thường trú mới"
+            }
+          ],
+          "luu_tru": [
+            {
+              "operation_key": "thong_bao_luu_tru",
+              "operation_group": "thong_bao_luu_tru",
+              "procedure_code": "2.001159",
+              "procedure_title": "Thông báo lưu trú"
+            }
+          ],
+          "tam_tru": [
+            {
+              "operation_key": "gia_han_tam_tru",
+              "operation_group": "gia_han_tam_tru",
+              "procedure_code": "1.002755",
+              "procedure_title": "Gia hạn tạm trú"
+            },
+            {
+              "operation_key": "dang_ky_tam_tru",
+              "operation_group": "dang_ky_tam_tru",
+              "procedure_code": "1.004194",
+              "procedure_title": "Đăng ký tạm trú"
+            },
+            {
+              "operation_key": "xoa_dang_ky_tam_tru",
+              "operation_group": "dang_ky_tam_tru",
+              "procedure_code": "1.010028",
+              "procedure_title": "Xóa đăng ký tạm trú"
+            },
+            {
+              "operation_key": "khai_bao_thong_tin_ve_cu_tru_doi_voi_nguoi_chua_du_dieu_kien_dang_ky_thuong_tru_dang_ky_tam_tru",
+              "operation_group": "dang_ky_tam_tru",
+              "procedure_code": "1.010040",
+              "procedure_title": "Khai báo thông tin về cư trú đối với người chưa đủ điều kiện đăng ký thường trú, đăng ký tạm trú"
+            }
+          ],
+          "tam_vang": [
+            {
+              "operation_key": "khai_bao_tam_vang",
+              "operation_group": "khai_bao_tam_vang",
+              "procedure_code": "1.003677",
+              "procedure_title": "Khai báo tạm vắng"
+            }
+          ]
+        }
+      }
+    ],
+    "routes": [
+      {
+        "route_id": "can_cuoc_chung_minh_nhan_dan-1_014060",
+        "conditions": {
+          "subdomain_key": "can_cuoc_chung_minh_nhan_dan",
+          "operation_key": "tich_hop_cap_nhat_dieu_chinh_thong_tin_tren_the_can_cuoc"
+        },
+        "procedure_code": "1.014060",
+        "procedure_name": "Tích hợp, cập nhật, điều chỉnh thông tin trên thẻ căn cước",
+        "why_this_route": "Route trực tiếp cho nhu cầu 'Tích hợp, cập nhật, điều chỉnh thông tin trên thẻ căn cước' trong nhánh 'Căn cước công dân/Chứng minh nhân dân'."
+      },
+      {
+        "route_id": "can_cuoc_chung_minh_nhan_dan-1_014061",
+        "conditions": {
+          "subdomain_key": "can_cuoc_chung_minh_nhan_dan",
+          "operation_key": "cap_the_can_cuoc_cho_nguoi_tu_du_14_tuoi_tro_len"
+        },
+        "procedure_code": "1.014061",
+        "procedure_name": "Cấp thẻ căn cước cho người từ đủ 14 tuổi trở lên",
+        "why_this_route": "Route trực tiếp cho nhu cầu 'Cấp thẻ căn cước cho người từ đủ 14 tuổi trở lên' trong nhánh 'Căn cước công dân/Chứng minh nhân dân'."
+      },
+      {
+        "route_id": "can_cuoc_chung_minh_nhan_dan-1_014062",
+        "conditions": {
+          "subdomain_key": "can_cuoc_chung_minh_nhan_dan",
+          "operation_key": "cap_the_can_cuoc_cho_nguoi_duoi_14_tuoi"
+        },
+        "procedure_code": "1.014062",
+        "procedure_name": "Cấp thẻ căn cước cho người dưới 14 tuổi",
+        "why_this_route": "Route trực tiếp cho nhu cầu 'Cấp thẻ căn cước cho người dưới 14 tuổi' trong nhánh 'Căn cước công dân/Chứng minh nhân dân'."
+      },
+      {
+        "route_id": "can_cuoc_chung_minh_nhan_dan-1_014063",
+        "conditions": {
+          "subdomain_key": "can_cuoc_chung_minh_nhan_dan",
+          "operation_key": "cap_doi_the_can_cuoc"
+        },
+        "procedure_code": "1.014063",
+        "procedure_name": "Cấp đổi thẻ căn cước",
+        "why_this_route": "Route trực tiếp cho nhu cầu 'Cấp đổi thẻ căn cước' trong nhánh 'Căn cước công dân/Chứng minh nhân dân'."
+      },
+      {
+        "route_id": "can_cuoc_chung_minh_nhan_dan-1_014064",
+        "conditions": {
+          "subdomain_key": "can_cuoc_chung_minh_nhan_dan",
+          "operation_key": "cap_lai_the_can_cuoc"
+        },
+        "procedure_code": "1.014064",
+        "procedure_name": "Cấp lại thẻ căn cước",
+        "why_this_route": "Route trực tiếp cho nhu cầu 'Cấp lại thẻ căn cước' trong nhánh 'Căn cước công dân/Chứng minh nhân dân'."
+      },
+      {
+        "route_id": "can_cuoc_chung_minh_nhan_dan-1_014067",
+        "conditions": {
+          "subdomain_key": "can_cuoc_chung_minh_nhan_dan",
+          "operation_key": "cap_doi_giay_chung_nhan_can_cuoc"
+        },
+        "procedure_code": "1.014067",
+        "procedure_name": "Cấp đổi giấy chứng nhận căn cước",
+        "why_this_route": "Route trực tiếp cho nhu cầu 'Cấp đổi giấy chứng nhận căn cước' trong nhánh 'Căn cước công dân/Chứng minh nhân dân'."
+      },
+      {
+        "route_id": "can_cuoc_chung_minh_nhan_dan-1_014068",
+        "conditions": {
+          "subdomain_key": "can_cuoc_chung_minh_nhan_dan",
+          "operation_key": "cap_lai_giay_chung_nhan_can_cuoc"
+        },
+        "procedure_code": "1.014068",
+        "procedure_name": "Cấp lại giấy chứng nhận căn cước",
+        "why_this_route": "Route trực tiếp cho nhu cầu 'Cấp lại giấy chứng nhận căn cước' trong nhánh 'Căn cước công dân/Chứng minh nhân dân'."
+      },
+      {
+        "route_id": "can_cuoc_chung_minh_nhan_dan-3_000228",
+        "conditions": {
+          "subdomain_key": "can_cuoc_chung_minh_nhan_dan",
+          "operation_key": "cap_tai_khoan_dinh_danh_dien_tu_muc_do_02_can_cuoc_dien_tu_cho_cong_dan_viet_nam_cap_xa"
+        },
+        "procedure_code": "3.000228",
+        "procedure_name": "Cấp tài khoản định danh điện tử mức độ 02, căn cước điện tử cho công dân Việt Nam (cấp xã)",
+        "why_this_route": "Route trực tiếp cho nhu cầu 'Cấp tài khoản định danh điện tử mức độ 02, căn cước điện tử cho công dân Việt Nam (cấp xã)' trong nhánh 'Căn cước công dân/Chứng minh nhân dân'."
+      },
+      {
+        "route_id": "can_cuoc_chung_minh_nhan_dan-3_000271",
+        "conditions": {
+          "subdomain_key": "can_cuoc_chung_minh_nhan_dan",
+          "operation_key": "khoa_can_cuoc_dien_tu_thuc_hien_tai_cap_trung_uong"
+        },
+        "procedure_code": "3.000271",
+        "procedure_name": "Khóa căn cước điện tử (thực hiện tại cấp trung ương)",
+        "why_this_route": "Route trực tiếp cho nhu cầu 'Khóa căn cước điện tử (thực hiện tại cấp trung ương)' trong nhánh 'Căn cước công dân/Chứng minh nhân dân'."
+      },
+      {
+        "route_id": "can_cuoc_chung_minh_nhan_dan-3_000272",
+        "conditions": {
+          "subdomain_key": "can_cuoc_chung_minh_nhan_dan",
+          "operation_key": "mo_khoa_can_cuoc_dien_tu_thuc_hien_tai_cap_trung_uong"
+        },
+        "procedure_code": "3.000272",
+        "procedure_name": "Mở khóa căn cước điện tử (thực hiện tại cấp trung ương)",
+        "why_this_route": "Route trực tiếp cho nhu cầu 'Mở khóa căn cước điện tử (thực hiện tại cấp trung ương)' trong nhánh 'Căn cước công dân/Chứng minh nhân dân'."
+      },
+      {
+        "route_id": "can_cuoc_chung_minh_nhan_dan-3_000276",
+        "conditions": {
+          "subdomain_key": "can_cuoc_chung_minh_nhan_dan",
+          "operation_key": "khoa_can_cuoc_dien_tu_thuc_hien_tai_cap_tinh"
+        },
+        "procedure_code": "3.000276",
+        "procedure_name": "Khóa căn cước điện tử (thực hiện tại cấp tỉnh)",
+        "why_this_route": "Route trực tiếp cho nhu cầu 'Khóa căn cước điện tử (thực hiện tại cấp tỉnh)' trong nhánh 'Căn cước công dân/Chứng minh nhân dân'."
+      },
+      {
+        "route_id": "can_cuoc_chung_minh_nhan_dan-3_000277",
+        "conditions": {
+          "subdomain_key": "can_cuoc_chung_minh_nhan_dan",
+          "operation_key": "mo_khoa_can_cuoc_dien_tu_thuc_hien_tai_cap_tinh"
+        },
+        "procedure_code": "3.000277",
+        "procedure_name": "Mở khóa căn cước điện tử (thực hiện tại cấp tỉnh)",
+        "why_this_route": "Route trực tiếp cho nhu cầu 'Mở khóa căn cước điện tử (thực hiện tại cấp tỉnh)' trong nhánh 'Căn cước công dân/Chứng minh nhân dân'."
+      },
+      {
+        "route_id": "can_cuoc_chung_minh_nhan_dan-3_000285",
+        "conditions": {
+          "subdomain_key": "can_cuoc_chung_minh_nhan_dan",
+          "operation_key": "khoa_can_cuoc_dien_tu_thuc_hien_tai_cap_xa"
+        },
+        "procedure_code": "3.000285",
+        "procedure_name": "Khóa căn cước điện tử (thực hiện tại cấp xã)",
+        "why_this_route": "Route trực tiếp cho nhu cầu 'Khóa căn cước điện tử (thực hiện tại cấp xã)' trong nhánh 'Căn cước công dân/Chứng minh nhân dân'."
+      },
+      {
+        "route_id": "can_cuoc_chung_minh_nhan_dan-3_000286",
+        "conditions": {
+          "subdomain_key": "can_cuoc_chung_minh_nhan_dan",
+          "operation_key": "mo_khoa_can_cuoc_dien_tu_thuc_hien_tai_cap_xa"
+        },
+        "procedure_code": "3.000286",
+        "procedure_name": "Mở khóa căn cước điện tử (thực hiện tại cấp xã)",
+        "why_this_route": "Route trực tiếp cho nhu cầu 'Mở khóa căn cước điện tử (thực hiện tại cấp xã)' trong nhánh 'Căn cước công dân/Chứng minh nhân dân'."
+      },
+      {
+        "route_id": "ho_chieu-1_001445",
+        "conditions": {
+          "subdomain_key": "ho_chieu",
+          "operation_key": "trinh_bao_mat_ho_chieu_pho_thong_thuc_hien_tai_cap_tinh"
+        },
+        "procedure_code": "1.001445",
+        "procedure_name": "Trình báo mất hộ chiếu phổ thông (thực hiện tại cấp tỉnh)",
+        "why_this_route": "Route trực tiếp cho nhu cầu 'Trình báo mất hộ chiếu phổ thông (thực hiện tại cấp tỉnh)' trong nhánh 'Hộ chiếu'."
+      },
+      {
+        "route_id": "ho_chieu-1_001456",
+        "conditions": {
+          "subdomain_key": "ho_chieu",
+          "operation_key": "cap_ho_chieu_pho_thong_o_trong_nuoc_thuc_hien_tai_cap_tinh"
+        },
+        "procedure_code": "1.001456",
+        "procedure_name": "Cấp hộ chiếu phổ thông ở trong nước (thực hiện tại cấp tỉnh)",
+        "why_this_route": "Route trực tiếp cho nhu cầu 'Cấp hộ chiếu phổ thông ở trong nước (thực hiện tại cấp tỉnh)' trong nhánh 'Hộ chiếu'."
+      },
+      {
+        "route_id": "ho_chieu-1_001471",
+        "conditions": {
+          "subdomain_key": "ho_chieu",
+          "operation_key": "cap_ho_chieu_pho_thong_o_trong_nuoc_thuc_hien_tai_cap_trung_uong"
+        },
+        "procedure_code": "1.001471",
+        "procedure_name": "Cấp hộ chiếu phổ thông ở trong nước (thực hiện tại cấp trung ương)",
+        "why_this_route": "Route trực tiếp cho nhu cầu 'Cấp hộ chiếu phổ thông ở trong nước (thực hiện tại cấp trung ương)' trong nhánh 'Hộ chiếu'."
+      },
+      {
+        "route_id": "ho_chieu-1_010094",
+        "conditions": {
+          "subdomain_key": "ho_chieu",
+          "operation_key": "thu_tuc_cap_ho_chieu_pho_thong_khong_gan_chip_dien_tu_tai_co_quan_dai_dien_viet_nam_o_nuoc_ngoai"
+        },
+        "procedure_code": "1.010094",
+        "procedure_name": "Thủ tục cấp hộ chiếu phổ thông (không gắn chip điện tử) tại Cơ quan đại diện Việt Nam ở nước ngoài",
+        "why_this_route": "Route trực tiếp cho nhu cầu 'Thủ tục cấp hộ chiếu phổ thông (không gắn chip điện tử) tại Cơ quan đại diện Việt Nam ở nước ngoài' trong nhánh 'Hộ chiếu'."
+      },
+      {
+        "route_id": "ho_chieu-1_010103",
+        "conditions": {
+          "subdomain_key": "ho_chieu",
+          "operation_key": "thu_tuc_cap_ho_chieu_pho_thong_theo_thu_tuc_rut_gon_tai_co_quan_dai_dien_viet_nam_o_nuoc_ngoai"
+        },
+        "procedure_code": "1.010103",
+        "procedure_name": "Thủ tục cấp hộ chiếu phổ thông theo thủ tục rút gọn tại Cơ quan đại diện Việt Nam ở nước ngoài",
+        "why_this_route": "Route trực tiếp cho nhu cầu 'Thủ tục cấp hộ chiếu phổ thông theo thủ tục rút gọn tại Cơ quan đại diện Việt Nam ở nước ngoài' trong nhánh 'Hộ chiếu'."
+      },
+      {
+        "route_id": "ho_chieu-1_010382",
+        "conditions": {
+          "subdomain_key": "ho_chieu",
+          "operation_key": "khoi_phuc_gia_tri_su_dung_ho_chieu_pho_thong_thuc_hien_tai_cap_trung_uong"
+        },
+        "procedure_code": "1.010382",
+        "procedure_name": "Khôi phục giá trị sử dụng hộ chiếu phổ thông (thực hiện tại cấp trung ương)",
+        "why_this_route": "Route trực tiếp cho nhu cầu 'Khôi phục giá trị sử dụng hộ chiếu phổ thông (thực hiện tại cấp trung ương)' trong nhánh 'Hộ chiếu'."
+      },
+      {
+        "route_id": "ho_chieu-1_010384",
+        "conditions": {
+          "subdomain_key": "ho_chieu",
+          "operation_key": "khoi_phuc_gia_tri_su_dung_ho_chieu_pho_thong_thuc_hien_tai_cap_tinh"
+        },
+        "procedure_code": "1.010384",
+        "procedure_name": "Khôi phục giá trị sử dụng hộ chiếu phổ thông (thực hiện tại cấp tỉnh)",
+        "why_this_route": "Route trực tiếp cho nhu cầu 'Khôi phục giá trị sử dụng hộ chiếu phổ thông (thực hiện tại cấp tỉnh)' trong nhánh 'Hộ chiếu'."
+      },
+      {
+        "route_id": "ho_chieu-1_010385",
+        "conditions": {
+          "subdomain_key": "ho_chieu",
+          "operation_key": "trinh_bao_mat_ho_chieu_pho_thong_thuc_hien_tai_cap_huyen"
+        },
+        "procedure_code": "1.010385",
+        "procedure_name": "Trình báo mất hộ chiếu phổ thông (thực hiện tại cấp huyện)",
+        "why_this_route": "Route trực tiếp cho nhu cầu 'Trình báo mất hộ chiếu phổ thông (thực hiện tại cấp huyện)' trong nhánh 'Hộ chiếu'."
+      },
+      {
+        "route_id": "ho_chieu-1_010386",
+        "conditions": {
+          "subdomain_key": "ho_chieu",
+          "operation_key": "trinh_bao_mat_ho_chieu_pho_thong_thuc_hien_tai_cap_xa"
+        },
+        "procedure_code": "1.010386",
+        "procedure_name": "Trình báo mất hộ chiếu phổ thông (thực hiện tại cấp xã)",
+        "why_this_route": "Route trực tiếp cho nhu cầu 'Trình báo mất hộ chiếu phổ thông (thực hiện tại cấp xã)' trong nhánh 'Hộ chiếu'."
+      },
+      {
+        "route_id": "ho_chieu-2_000539",
+        "conditions": {
+          "subdomain_key": "ho_chieu",
+          "operation_key": "trinh_bao_mat_ho_chieu_pho_thong_thuc_hien_tai_cap_trung_uong"
+        },
+        "procedure_code": "2.000539",
+        "procedure_name": "Trình báo mất hộ chiếu phổ thông (thực hiện tại cấp trung ương)",
+        "why_this_route": "Route trực tiếp cho nhu cầu 'Trình báo mất hộ chiếu phổ thông (thực hiện tại cấp trung ương)' trong nhánh 'Hộ chiếu'."
+      },
+      {
+        "route_id": "ho_khau-1_003197",
+        "conditions": {
+          "subdomain_key": "ho_khau",
+          "operation_key": "xoa_dang_ky_thuong_tru"
+        },
+        "procedure_code": "1.003197",
+        "procedure_name": "Xóa đăng ký thường trú",
+        "why_this_route": "Route trực tiếp cho nhu cầu 'Xóa đăng ký thường trú' trong nhánh 'Hộ khẩu'."
+      },
+      {
+        "route_id": "ho_khau-1_004222",
+        "conditions": {
+          "subdomain_key": "ho_khau",
+          "operation_key": "dang_ky_thuong_tru"
+        },
+        "procedure_code": "1.004222",
+        "procedure_name": "Đăng ký thường trú",
+        "why_this_route": "Route trực tiếp cho nhu cầu 'Đăng ký thường trú' trong nhánh 'Hộ khẩu'."
+      },
+      {
+        "route_id": "ho_khau-1_010038",
+        "conditions": {
+          "subdomain_key": "ho_khau",
+          "operation_key": "tach_ho"
+        },
+        "procedure_code": "1.010038",
+        "procedure_name": "Tách hộ",
+        "why_this_route": "Route trực tiếp cho nhu cầu 'Tách hộ' trong nhánh 'Hộ khẩu'."
+      },
+      {
+        "route_id": "ho_khau-1_010039",
+        "conditions": {
+          "subdomain_key": "ho_khau",
+          "operation_key": "dieu_chinh_thong_tin_ve_cu_tru_trong_co_so_du_lieu_ve_cu_tru"
+        },
+        "procedure_code": "1.010039",
+        "procedure_name": "Điều chỉnh thông tin về cư trú trong Cơ sở dữ liệu về cư trú",
+        "why_this_route": "Route trực tiếp cho nhu cầu 'Điều chỉnh thông tin về cư trú trong Cơ sở dữ liệu về cư trú' trong nhánh 'Hộ khẩu'."
+      },
+      {
+        "route_id": "ho_khau-1_010041",
+        "conditions": {
+          "subdomain_key": "ho_khau",
+          "operation_key": "xac_nhan_thong_tin_ve_cu_tru"
+        },
+        "procedure_code": "1.010041",
+        "procedure_name": "Xác nhận thông tin về cư trú",
+        "why_this_route": "Route trực tiếp cho nhu cầu 'Xác nhận thông tin về cư trú' trong nhánh 'Hộ khẩu'."
+      },
+      {
+        "route_id": "ho_khau-1_013313",
+        "conditions": {
+          "subdomain_key": "ho_khau",
+          "operation_key": "xac_nhan_noi_thuong_xuyen_dau_do_su_dung_phuong_tien_vao_muc_dich_de_o"
+        },
+        "procedure_code": "1.013313",
+        "procedure_name": "Xác nhận nơi thường xuyên đậu, đỗ; sử dụng phương tiện vào mục đích để ở",
+        "why_this_route": "Route trực tiếp cho nhu cầu 'Xác nhận nơi thường xuyên đậu, đỗ; sử dụng phương tiện vào mục đích để ở' trong nhánh 'Hộ khẩu'."
+      },
+      {
+        "route_id": "ho_khau-1_013314",
+        "conditions": {
+          "subdomain_key": "ho_khau",
+          "operation_key": "xac_nhan_ve_dieu_kien_dien_tich_binh_quan_nha_o_de_dang_ky_thuong_tru_vao_cho_o_do_thue_muon_o_nho_nha_o_dat_o_khong_co_tranh_chap_quyen_so_huu_nha_o_quyen_su_dung_dat_o_khong_thuoc_dia_diem_khong_duoc_dang_ky_thuong_tru_moi"
+        },
+        "procedure_code": "1.013314",
+        "procedure_name": "Xác nhận về điều kiện diện tích bình quân nhà ở để đăng ký thường trú vào chỗ ở do thuê, mượn, ở nhờ; nhà ở, đất ở không có tranh chấp quyền sở hữu nhà ở, quyền sử dụng đất ở, không thuộc địa điểm không được đăng ký thường trú mới",
+        "why_this_route": "Route trực tiếp cho nhu cầu 'Xác nhận về điều kiện diện tích bình quân nhà ở để đăng ký thường trú vào chỗ ở do thuê, mượn, ở nhờ; nhà ở, đất ở không có tranh chấp quyền sở hữu nhà ở, quyền sử dụng đất ở, không thuộc địa điểm không được đăng ký thường trú mới' trong nhánh 'Hộ khẩu'."
+      },
+      {
+        "route_id": "luu_tru-2_001159",
+        "conditions": {
+          "subdomain_key": "luu_tru",
+          "operation_key": "thong_bao_luu_tru"
+        },
+        "procedure_code": "2.001159",
+        "procedure_name": "Thông báo lưu trú",
+        "why_this_route": "Route trực tiếp cho nhu cầu 'Thông báo lưu trú' trong nhánh 'Lưu trú'."
+      },
+      {
+        "route_id": "tam_tru-1_002755",
+        "conditions": {
+          "subdomain_key": "tam_tru",
+          "operation_key": "gia_han_tam_tru"
+        },
+        "procedure_code": "1.002755",
+        "procedure_name": "Gia hạn tạm trú",
+        "why_this_route": "Route trực tiếp cho nhu cầu 'Gia hạn tạm trú' trong nhánh 'Tạm trú'."
+      },
+      {
+        "route_id": "tam_tru-1_004194",
+        "conditions": {
+          "subdomain_key": "tam_tru",
+          "operation_key": "dang_ky_tam_tru"
+        },
+        "procedure_code": "1.004194",
+        "procedure_name": "Đăng ký tạm trú",
+        "why_this_route": "Route trực tiếp cho nhu cầu 'Đăng ký tạm trú' trong nhánh 'Tạm trú'."
+      },
+      {
+        "route_id": "tam_tru-1_010028",
+        "conditions": {
+          "subdomain_key": "tam_tru",
+          "operation_key": "xoa_dang_ky_tam_tru"
+        },
+        "procedure_code": "1.010028",
+        "procedure_name": "Xóa đăng ký tạm trú",
+        "why_this_route": "Route trực tiếp cho nhu cầu 'Xóa đăng ký tạm trú' trong nhánh 'Tạm trú'."
+      },
+      {
+        "route_id": "tam_tru-1_010040",
+        "conditions": {
+          "subdomain_key": "tam_tru",
+          "operation_key": "khai_bao_thong_tin_ve_cu_tru_doi_voi_nguoi_chua_du_dieu_kien_dang_ky_thuong_tru_dang_ky_tam_tru"
+        },
+        "procedure_code": "1.010040",
+        "procedure_name": "Khai báo thông tin về cư trú đối với người chưa đủ điều kiện đăng ký thường trú, đăng ký tạm trú",
+        "why_this_route": "Route trực tiếp cho nhu cầu 'Khai báo thông tin về cư trú đối với người chưa đủ điều kiện đăng ký thường trú, đăng ký tạm trú' trong nhánh 'Tạm trú'."
+      },
+      {
+        "route_id": "tam_vang-1_003677",
+        "conditions": {
+          "subdomain_key": "tam_vang",
+          "operation_key": "khai_bao_tam_vang"
+        },
+        "procedure_code": "1.003677",
+        "procedure_name": "Khai báo tạm vắng",
+        "why_this_route": "Route trực tiếp cho nhu cầu 'Khai báo tạm vắng' trong nhánh 'Tạm vắng'."
+      }
+    ]
+  },
+  "pre_submission_checks": [
+    {
+      "field_group": "residence_information",
+      "checks": [
+        "Nhóm cư trú phải phân biệt rõ thường trú, tạm trú, lưu trú và tạm vắng trước khi chọn thủ tục.",
+        "Địa chỉ cư trú và giấy tờ chứng minh chỗ ở phải thống nhất giữa tờ khai, dữ liệu cư trú và hồ sơ đính kèm."
+      ]
+    },
+    {
+      "field_group": "identity_documents",
+      "checks": [
+        "Nhóm căn cước phải làm rõ là cấp mới, cấp đổi, cấp lại hay điều chỉnh/tích hợp thông tin.",
+        "Nhóm định danh điện tử cần xác định đúng thao tác cấp mức 2, khóa hay mở khóa căn cước điện tử."
+      ]
+    },
+    {
+      "field_group": "passport_context",
+      "checks": [
+        "Nhóm hộ chiếu phải xác định rõ làm trong nước hay tại cơ quan đại diện ở nước ngoài.",
+        "Các trường hợp mất hộ chiếu hoặc khôi phục giá trị sử dụng phải có căn cứ về tình trạng giấy tờ hiện tại."
+      ]
+    }
+  ]
+}

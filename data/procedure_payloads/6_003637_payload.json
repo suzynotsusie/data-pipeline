@@ -1,0 +1,589 @@
+{
+  "schema_version": "3.0",
+  "record_type": "public_service_procedure_payload",
+  "id": "procedure-6.003637",
+  "procedure_code": "6.003637",
+  "code": "6.003637",
+  "title": "Thu hồi nhà ở thuộc tài sản công",
+  "language": "vi",
+  "status": "generated_from_pipeline",
+  "field": "Nhà ở và công sở",
+  "group_key": "dien_luc_nha_o_dat_dai",
+  "workflow_family": null,
+  "subflow": null,
+  "source": {
+    "source_url": "file:///C:/Users/ku060/Downloads/VAIC%20source/data-pipeline/raw_data/6_003637/6_003637_procedure_detail.md",
+    "source_markdown_path": "C:\\Users\\ku060\\Downloads\\VAIC source\\data-pipeline\\raw_data\\6_003637\\6_003637_procedure_detail.md",
+    "normalized_payload_path": "C:\\Users\\ku060\\Downloads\\VAIC source\\data-pipeline\\govease-unified\\data\\normalized_structured\\6_003637_normalized_structured.json",
+    "enriched_payload_path": "C:\\Users\\ku060\\Downloads\\VAIC source\\data-pipeline\\govease-unified\\data\\enriched_structured_priority\\6_003637_enriched_structured.json"
+  },
+  "scope": {
+    "included": "Thủ tục này thuộc nhóm nhà ở, đất đai và điện lực, thường cần kiểm tra hiện trạng hồ sơ tài sản hoặc điều kiện hạ tầng liên quan. Kết quả thường nhận được là Quyết định thu hồi nhà ở thuộc tài sản công. Thời gian xử lý tham khảo: 60 ngày.",
+    "not_included": []
+  },
+  "agency": {
+    "executing_agency": "Bộ Công an, Ủy ban nhân dân cấp tỉnh, Bộ Quốc phòng",
+    "submission_place": null,
+    "receiving_places": []
+  },
+  "target_users": [
+    "Cán bộ",
+    "công chức",
+    "viên chức"
+  ],
+  "submission_methods": [
+    {
+      "code": "IN_PERSON",
+      "label": "Trực tiếp",
+      "processing_time": "60 ngày",
+      "fee": null,
+      "description": "+ Đối với việc thu hồi nhà ở không phải là căn hộ chung cư: thời gian không quá 60 ngày, kể từ ngày đơn vị quản lý vận hành nhà ở phát hiện nhà ở thuộc trường hợp bị thu hồi.<br>+ Đối với việc thu hồi nhà ở là căn hộ chung cư thuộc diện phải phá dỡ khẩn cấp theo quy định của pháp luật về cải tạo, xây dựng lại chung cư: thời gian là 30 ngày, kể từ ngày kết thúc việc di dời các chủ sở hữu, người sử dụng.<br>+ Đối với việc thu hồi nhà ở là căn hộ chung cư thuộc diện phải phá dỡ tại điểm c, d và đ khoản 2 Điều 59 Luật Nhà ở: căn cứ theo thời điểm thực hiện di dời chủ sở hữu, người sử dụng nhà chung cư."
+    },
+    {
+      "code": "ONLINE",
+      "label": "Trực tuyến",
+      "processing_time": "60 ngày",
+      "fee": null,
+      "description": "+ Đối với việc thu hồi nhà ở không phải là căn hộ chung cư: thời gian không quá 60 ngày, kể từ ngày đơn vị quản lý vận hành nhà ở phát hiện nhà ở thuộc trường hợp bị thu hồi.<br>+ Đối với việc thu hồi nhà ở là căn hộ chung cư thuộc diện phải phá dỡ khẩn cấp theo quy định của pháp luật về cải tạo, xây dựng lại chung cư: thời gian là 30 ngày, kể từ ngày kết thúc việc di dời các chủ sở hữu, người sử dụng.<br>+ Đối với việc thu hồi nhà ở là căn hộ chung cư thuộc diện phải phá dỡ tại điểm c, d và đ khoản 2 Điều 59 Luật Nhà ở: căn cứ theo thời điểm thực hiện di dời chủ sở hữu, người sử dụng nhà chung cư."
+    },
+    {
+      "code": "POSTAL",
+      "label": "Dịch vụ bưu chính",
+      "processing_time": "60 ngày",
+      "fee": null,
+      "description": "+ Đối với việc thu hồi nhà ở không phải là căn hộ chung cư: thời gian không quá 60 ngày, kể từ ngày đơn vị quản lý vận hành nhà ở phát hiện nhà ở thuộc trường hợp bị thu hồi.<br>+ Đối với việc thu hồi nhà ở là căn hộ chung cư thuộc diện phải phá dỡ khẩn cấp theo quy định của pháp luật về cải tạo, xây dựng lại chung cư: thời gian là 30 ngày, kể từ ngày kết thúc việc di dời các chủ sở hữu, người sử dụng.<br>+ Đối với việc thu hồi nhà ở là căn hộ chung cư thuộc diện phải phá dỡ tại điểm c, d và đ khoản 2 Điều 59 Luật Nhà ở: căn cứ theo thời điểm thực hiện di dời chủ sở hữu, người sử dụng nhà chung cư."
+    }
+  ],
+  "processing_note": "Thời gian xử lý tham chiếu: 60 ngày. Nên chuẩn bị trước thông tin thửa đất, tài sản hoặc địa điểm tiếp nhận, rồi chọn kênh nộp phù hợp: Trực tiếp, Trực tuyến, Dịch vụ bưu chính. Hiện có khoảng 2 mục giấy tờ cần theo dõi trong checklist.",
+  "documents": {
+    "normally_required": [
+      {
+        "name": "Văn bản đề nghị thu hồi nhà ở của đơn vị quản lý vận hành hoặc của cơ quan quản lý nhà ở",
+        "quantity": "1 bản chính, 0 bản sao",
+        "notes": [],
+        "group": "default",
+        "attachment_path": null
+      },
+      {
+        "name": "Tờ trình của cơ quan quản lý nhà ở gửi đại diện chủ sở hữu nhà ở xem xét, ban hành quyết định thu hồi nhà ở",
+        "quantity": "1 bản chính, 0 bản sao",
+        "notes": [],
+        "group": "default",
+        "attachment_path": null
+      }
+    ],
+    "conditional": [],
+    "forms": [],
+    "presented": [],
+    "notes": [],
+    "summary": [
+      {
+        "group": "default",
+        "name": "Văn bản đề nghị thu hồi nhà ở của đơn vị quản lý vận hành hoặc của cơ quan quản lý nhà ở",
+        "quantity": "1 bản chính, 0 bản sao",
+        "notes": [],
+        "attachment_path": null
+      },
+      {
+        "group": "default",
+        "name": "Tờ trình của cơ quan quản lý nhà ở gửi đại diện chủ sở hữu nhà ở xem xét, ban hành quyết định thu hồi nhà ở",
+        "quantity": "1 bản chính, 0 bản sao",
+        "notes": [],
+        "attachment_path": null
+      }
+    ]
+  },
+  "steps": [
+    {
+      "order": 1,
+      "title": "Bước 1",
+      "description": "1. *** Trình tự, thủ tục thu hồi nhà ở thuộc tài sản công không phải là căn hộ chung cư được thực hiện như sau:**",
+      "example": null
+    },
+    {
+      "order": 2,
+      "title": "Bước 2",
+      "description": "+ Trong thời hạn 15 ngày, kể từ ngày phát hiện một trong các trường hợp nhà ở",
+      "example": "15 ngày"
+    },
+    {
+      "order": 3,
+      "title": "Bước 3",
+      "description": "thuộc diện bị thu hồi theo quy định tại Điều 127 của Luật Nhà ở hoặc kể từ ngày",
+      "example": null
+    },
+    {
+      "order": 4,
+      "title": "Bước 4",
+      "description": "có kết luận kiểm định của cơ quan có thẩm quyền về việc nhà ở thuộc trường hợp",
+      "example": null
+    },
+    {
+      "order": 5,
+      "title": "Bước 5",
+      "description": "theo phải phá dỡ để cải tạo, xây dựng lại theo quy định, đơn vị được giao quản lý",
+      "example": null
+    },
+    {
+      "order": 6,
+      "title": "Bước 6",
+      "description": "vận hành nhà ở phải có báo cáo cơ quan được đại diện chủ sở hữu giao quản lý",
+      "example": null
+    },
+    {
+      "order": 7,
+      "title": "Bước 7",
+      "description": "nhà ở đó về việc đề nghị thu hồi nhà ở;",
+      "example": null
+    },
+    {
+      "order": 8,
+      "title": "Bước 8",
+      "description": "+ Trong thời hạn 15 ngày kể từ ngày nhận được văn bản của đơn vị quản lý vận",
+      "example": "15 ngày"
+    },
+    {
+      "order": 9,
+      "title": "Bước 9",
+      "description": "hành nhà ở, cơ quan quản lý nhà ở có trách nhiệm kiểm tra, nếu thuộc diện phải",
+      "example": null
+    },
+    {
+      "order": 10,
+      "title": "Bước 10",
+      "description": "thu hồi nhà ở theo quy định tại Điều 127 của Luật Nhà ở thì có tờ trình gửi đại",
+      "example": null
+    },
+    {
+      "order": 11,
+      "title": "Bước 11",
+      "description": "diện chủ sở hữu nhà ở đó xem xét, ban hành quyết định thu hồi nhà ở; trường hợp",
+      "example": null
+    },
+    {
+      "order": 12,
+      "title": "Bước 12",
+      "description": "cơ quan quản lý nhà ở tự kiểm tra mà phát hiện nhà ở thuộc diện phải thu hồi (trừ",
+      "example": null
+    },
+    {
+      "order": 13,
+      "title": "Bước 13",
+      "description": "trường hợp quy định tại điểm g khoản 1 Điều 127 của Luật Nhà ở) thì phải làm",
+      "example": null
+    },
+    {
+      "order": 14,
+      "title": "Bước 14",
+      "description": "thủ tục đề nghị thu hồi nhà ở;",
+      "example": null
+    },
+    {
+      "order": 15,
+      "title": "Bước 15",
+      "description": "+ Trong thời hạn 15 ngày kể từ ngày nhận được tờ trình của cơ quan quản lý nhà",
+      "example": "15 ngày"
+    },
+    {
+      "order": 16,
+      "title": "Bước 16",
+      "description": "ở, đại diện chủ sở hữu nhà ở có trách nhiệm kiểm tra, nếu có đủ điều kiện thu hồi",
+      "example": null
+    },
+    {
+      "order": 17,
+      "title": "Bước 17",
+      "description": "nhà ở thì ban hành quyết định thu hồi nhà ở, đồng thời gửi quyết định này cho cơ",
+      "example": null
+    },
+    {
+      "order": 18,
+      "title": "Bước 18",
+      "description": "quan quản lý nhà ở, đơn vị quản lý vận hành nhà ở và người đang trực tiếp sử",
+      "example": "trực tiếp"
+    },
+    {
+      "order": 19,
+      "title": "Bước 19",
+      "description": "dụng nhà ở thuộc diện bị thu hồi biết để thực hiện.",
+      "example": null
+    },
+    {
+      "order": 20,
+      "title": "Bước 20",
+      "description": "Trường hợp nhà ở đang do Bộ Quốc phòng, Bộ Công an quản lý thì cơ quan có",
+      "example": null
+    },
+    {
+      "order": 21,
+      "title": "Bước 21",
+      "description": "chức năng quản lý nhà ở của Bộ Quốc phòng, Bộ Công an được ban hành quyết",
+      "example": null
+    },
+    {
+      "order": 22,
+      "title": "Bước 22",
+      "description": "định thu hồi nhà ở (nếu được giao thực hiện), sau đó gửi quyết định này cho đơn",
+      "example": null
+    },
+    {
+      "order": 23,
+      "title": "Bước 23",
+      "description": "vị quản lý vận hành nhà ở, người đang trực tiếp sử dụng nhà ở biết để thực hiện",
+      "example": "trực tiếp"
+    },
+    {
+      "order": 24,
+      "title": "Bước 24",
+      "description": "và gửi đến cơ quan đại diện chủ sở hữu để báo cáo;",
+      "example": null
+    },
+    {
+      "order": 25,
+      "title": "Bước 25",
+      "description": "+ Trong thời hạn 15 ngày kể từ ngày nhận được quyết định thu hồi nhà ở, đơn vị",
+      "example": "15 ngày"
+    },
+    {
+      "order": 26,
+      "title": "Bước 26",
+      "description": "quản lý vận hành nhà ở có trách nhiệm thông báo bằng văn bản kèm theo bản sao",
+      "example": null
+    },
+    {
+      "order": 27,
+      "title": "Bước 27",
+      "description": "quyết định thu hồi nhà ở cho người đang trực tiếp sử dụng nhà ở biết để bàn giao",
+      "example": "trực tiếp"
+    },
+    {
+      "order": 28,
+      "title": "Bước 28",
+      "description": "lại nhà ở.",
+      "example": null
+    },
+    {
+      "order": 29,
+      "title": "Bước 29",
+      "description": "Trong thời hạn 05 ngày kể từ ngày nhận quyết định thu hồi nhà ở của đại diện chủ",
+      "example": "05 ngày"
+    },
+    {
+      "order": 30,
+      "title": "Bước 30",
+      "description": "sở hữu nhà ở, đơn vị quản lý vận hành nhà ở hoặc cơ quan quản lý nhà ở có văn",
+      "example": null
+    },
+    {
+      "order": 31,
+      "title": "Bước 31",
+      "description": "bản thông báo về việc chấm dứt hợp đồng thuê, thuê mua hoặc mua nhà ở (đối",
+      "example": null
+    },
+    {
+      "order": 32,
+      "title": "Bước 32",
+      "description": "với trường hợp đã ký hợp đồng).",
+      "example": null
+    },
+    {
+      "order": 33,
+      "title": "Bước 33",
+      "description": "2. *** Trình tự, thủ tục thu hồi căn hộ nhà chung cư đối với trường hợp di dời khẩn cấp quy định tại điểm a và điểm b khoản 2 Điều 59 Luật Nhà ở được thực hiện như sau:**",
+      "example": null
+    },
+    {
+      "order": 34,
+      "title": "Bước 34",
+      "description": "+ Trong thời hạn 15 ngày kể từ ngày kết thúc việc di dời chủ sở hữu, người sử",
+      "example": "15 ngày"
+    },
+    {
+      "order": 35,
+      "title": "Bước 35",
+      "description": "dụng nhà ở theo quy định của pháp luật về cải tạo, xây dựng lại nhà chung cư, cơ",
+      "example": null
+    },
+    {
+      "order": 36,
+      "title": "Bước 36",
+      "description": "quan quản lý nhà ở báo cáo đại diện chủ sở hữu nhà ở ban hành quyết định thu",
+      "example": null
+    },
+    {
+      "order": 37,
+      "title": "Bước 37",
+      "description": "hồi nhà ở;",
+      "example": null
+    },
+    {
+      "order": 38,
+      "title": "Bước 38",
+      "description": "+ Trong thời hạn 15 ngày, kể từ ngày nhận được báo cáo của cơ quan quản lý nhà",
+      "example": "15 ngày"
+    },
+    {
+      "order": 39,
+      "title": "Bước 39",
+      "description": "ở, đại diện chủ sở hữu xem xét, ban hành quyết định thu hồi nhà ở theo quy định;",
+      "example": null
+    },
+    {
+      "order": 40,
+      "title": "Bước 40",
+      "description": "quyết định này được gửi cho đơn vị quản lý vận hành nhà ở, cơ quan quản lý nhà",
+      "example": null
+    },
+    {
+      "order": 41,
+      "title": "Bước 41",
+      "description": "ở và người đang trực tiếp sử dụng nhà ở thuộc diện bị thu hồi.",
+      "example": "trực tiếp"
+    },
+    {
+      "order": 42,
+      "title": "Bước 42",
+      "description": "3. *** Trình tự, thủ tục thu hồi căn hộ nhà chung cư thuộc diện quy định tại các điểm c, d và đ khoản 2 Điều 59 của Luật Nhà ở được thực hiện như sau:**",
+      "example": null
+    },
+    {
+      "order": 43,
+      "title": "Bước 43",
+      "description": "+ Sau khi có phương án bồi thường, hỗ trợ, tái định cư được phê duyệt theo quy",
+      "example": null
+    },
+    {
+      "order": 44,
+      "title": "Bước 44",
+      "description": "định của pháp luật về cải tạo, xây dựng lại nhà chung cư, đơn vị được giao quản",
+      "example": null
+    },
+    {
+      "order": 45,
+      "title": "Bước 45",
+      "description": "lý vận hành nhà ở báo cáo cơ quan được đại diện chủ sở hữu giao quản lý nhà ở",
+      "example": null
+    },
+    {
+      "order": 46,
+      "title": "Bước 46",
+      "description": "đó để có tờ trình gửi đại diện chủ sở hữu ban hành quyết định thu hồi nhà ở;",
+      "example": null
+    },
+    {
+      "order": 47,
+      "title": "Bước 47",
+      "description": "+ Sau khi ban hành quyết định thu hồi nhà ở, cơ quan ban hành quyết định gửi",
+      "example": null
+    },
+    {
+      "order": 48,
+      "title": "Bước 48",
+      "description": "quyết định này cho cơ quan quản lý nhà ở, đơn vị quản lý vận hành nhà ở và người",
+      "example": null
+    },
+    {
+      "order": 49,
+      "title": "Bước 49",
+      "description": "đang trực tiếp sử dụng nhà ở thuộc diện bị thu hồi biết để thực hiện.",
+      "example": "trực tiếp"
+    },
+    {
+      "order": 50,
+      "title": "Bước 50",
+      "description": "Trường hợp nhà ở đang do Bộ Quốc phòng, Bộ Công an quản lý thì cơ quan có",
+      "example": null
+    },
+    {
+      "order": 51,
+      "title": "Bước 51",
+      "description": "chức năng quản lý nhà ở của Bộ Quốc phòng, Bộ Công an được ban hành quyết",
+      "example": null
+    },
+    {
+      "order": 52,
+      "title": "Bước 52",
+      "description": "định thu hồi nhà ở (nếu được giao thực hiện), sau đó gửi quyết định này cho đơn",
+      "example": null
+    },
+    {
+      "order": 53,
+      "title": "Bước 53",
+      "description": "vị quản lý vận hành nhà ở, người đang trực tiếp sử dụng nhà ở biết để thực hiện",
+      "example": "trực tiếp"
+    },
+    {
+      "order": 54,
+      "title": "Bước 54",
+      "description": "và gửi đến cơ quan đại diện chủ sở hữu để báo cáo;",
+      "example": null
+    },
+    {
+      "order": 55,
+      "title": "Bước 55",
+      "description": "+ Thời gian thực hiện quyết định thu hồi căn hộ nhà chung cư được xác định cùng",
+      "example": null
+    },
+    {
+      "order": 56,
+      "title": "Bước 56",
+      "description": "với thời điểm thực hiện di dời chủ sở hữu, người sử dụng căn hộ chung cư theo",
+      "example": null
+    },
+    {
+      "order": 57,
+      "title": "Bước 57",
+      "description": "quy định của pháp luật về cải tạo, xây dựng lại nhà chung cư.",
+      "example": null
+    }
+  ],
+  "input_fields": [
+    {
+      "field": "property_or_service_need",
+      "label": "Nhu cầu về đất đai, nhà ở hoặc điện lực",
+      "type": "string",
+      "required": true
+    },
+    {
+      "field": "property_location",
+      "label": "Địa điểm tài sản hoặc nơi sử dụng dịch vụ",
+      "type": "string",
+      "required": true
+    },
+    {
+      "field": "submission_channel_preference",
+      "label": "Kênh nộp dự kiến",
+      "type": "enum",
+      "required": false,
+      "options": [
+        "Trực tiếp",
+        "Trực tuyến",
+        "Dịch vụ bưu chính"
+      ]
+    },
+    {
+      "field": "has_current_certificate",
+      "label": "Đã có giấy tờ/tài liệu hiện trạng",
+      "type": "boolean",
+      "required": false
+    }
+  ],
+  "validation_rules": [
+    {
+      "id": "required-1",
+      "severity": "error",
+      "field": "property_or_service_need",
+      "rule": "Trường bắt buộc phải có dữ liệu hợp lệ trước khi nộp.",
+      "message": "Thiếu trường bắt buộc: Nhu cầu về đất đai, nhà ở hoặc điện lực."
+    },
+    {
+      "id": "required-2",
+      "severity": "error",
+      "field": "property_location",
+      "rule": "Trường bắt buộc phải có dữ liệu hợp lệ trước khi nộp.",
+      "message": "Thiếu trường bắt buộc: Địa điểm tài sản hoặc nơi sử dụng dịch vụ."
+    },
+    {
+      "id": "hint-1",
+      "severity": "warning",
+      "field": "general",
+      "rule": "Nên xác định trước kênh nộp hồ sơ để biết có cần bản giấy, bản điện tử hay xuất trình trực tiếp.",
+      "message": "Nên xác định trước kênh nộp hồ sơ để biết có cần bản giấy, bản điện tử hay xuất trình trực tiếp."
+    },
+    {
+      "id": "hint-2",
+      "severity": "warning",
+      "field": "general",
+      "rule": "Nên đối chiếu trước thông tin thửa đất, tài sản hoặc hiện trạng hồ sơ để tránh bị yêu cầu chỉnh sửa.",
+      "message": "Nên đối chiếu trước thông tin thửa đất, tài sản hoặc hiện trạng hồ sơ để tránh bị yêu cầu chỉnh sửa."
+    }
+  ],
+  "common_errors": [],
+  "clarifying_questions": [
+    {
+      "id": "clarify_1",
+      "question": "Bạn đang xử lý nhu cầu nào về đất đai, nhà ở hoặc điện lực?",
+      "purpose": "workflow_intake"
+    },
+    {
+      "id": "clarify_2",
+      "question": "Bạn đã có thông tin thửa đất, địa chỉ tài sản hoặc giấy tờ hiện trạng chưa?",
+      "purpose": "workflow_intake"
+    }
+  ],
+  "legal_basis": [
+    {
+      "title": "Luật Nhà ở số 27/2023/QH15",
+      "code": "27/2023/QH15"
+    },
+    {
+      "title": "Nghị định số 95/2024/NĐ-CP ngày 24 tháng 7 năm 2024 của Chính phủ về quy định chi tiết một số điều của Luật Nhà ở;",
+      "code": "95/2024/NĐ-CP"
+    }
+  ],
+  "legal_bases": [
+    {
+      "title": "Luật Nhà ở số 27/2023/QH15",
+      "code": "27/2023/QH15"
+    },
+    {
+      "title": "Nghị định số 95/2024/NĐ-CP ngày 24 tháng 7 năm 2024 của Chính phủ về quy định chi tiết một số điều của Luật Nhà ở;",
+      "code": "95/2024/NĐ-CP"
+    }
+  ],
+  "faq": [
+    {
+      "question": "Có thể nộp qua kênh nào?",
+      "answer": "Các kênh hiện có: Trực tiếp, Trực tuyến, Dịch vụ bưu chính."
+    },
+    {
+      "question": "Thời gian xử lý tham chiếu là bao lâu?",
+      "answer": "Thời gian xử lý tham chiếu hiện có là 60 ngày."
+    },
+    {
+      "question": "Kết quả chính của thủ tục là gì?",
+      "answer": "Kết quả chính được trích xuất là Quyết định thu hồi nhà ở thuộc tài sản công."
+    }
+  ],
+  "guidance": {
+    "highlight_documents": [
+      {
+        "bucket": "required",
+        "name": "Văn bản đề nghị thu hồi nhà ở của đơn vị quản lý vận hành hoặc của cơ quan quản lý nhà ở",
+        "conditions": [],
+        "attachment_path": null
+      },
+      {
+        "bucket": "required",
+        "name": "Tờ trình của cơ quan quản lý nhà ở gửi đại diện chủ sở hữu nhà ở xem xét, ban hành quyết định thu hồi nhà ở",
+        "conditions": [],
+        "attachment_path": null
+      }
+    ],
+    "special_cases": [],
+    "common_errors": [],
+    "validation_hints": [
+      "Nên xác định trước kênh nộp hồ sơ để biết có cần bản giấy, bản điện tử hay xuất trình trực tiếp.",
+      "Nên đối chiếu trước thông tin thửa đất, tài sản hoặc hiện trạng hồ sơ để tránh bị yêu cầu chỉnh sửa."
+    ]
+  },
+  "next_steps": {
+    "summary": "Nên chuẩn bị trước thông tin thửa đất, tài sản hoặc địa điểm tiếp nhận, rồi chọn kênh nộp phù hợp: Trực tiếp, Trực tuyến, Dịch vụ bưu chính. Hiện có khoảng 2 mục giấy tờ cần theo dõi trong checklist.",
+    "time_badge": "60 ngày",
+    "result_label": "Quyết định thu hồi nhà ở thuộc tài sản công",
+    "primary_channel": "in_person",
+    "channels": [
+      "in_person",
+      "online",
+      "postal"
+    ]
+  },
+  "notes": [],
+  "provenance": {
+    "pipeline": "raw->structured->normalized->enriched->ui_api_payload",
+    "normalizer_version": "0.2.0",
+    "enricher_version": "0.2.0",
+    "mapping_notes": "excluded_from_clean_workflow_dataset",
+    "supported_group": true
+  }
+}

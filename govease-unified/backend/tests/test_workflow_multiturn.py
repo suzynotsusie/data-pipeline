@@ -3,7 +3,7 @@ import unittest
 
 from fastapi.testclient import TestClient
 
-os.environ["CORS_ORIGINS"] = "http://localhost:3000,https://gov-ease-ai.vercel.app"
+os.environ["CORS_ORIGINS"] = "http://localhost:3010,https://gov-ease-ai.vercel.app"
 
 from backend.app.main import app
 
@@ -67,6 +67,18 @@ class WorkflowMultiTurnTests(unittest.TestCase):
 
         second = self._next(first["session_id"], "khai sinh moi")
         self.assertEqual("birth_location", second["current_node_id"])
+
+    def test_birth_explain_mode_then_re_registration_without_foreign_element(self) -> None:
+        first = self._start("Toi khong biet dang ky lai hay khai sinh moi")
+        self.assertEqual("birth_registration", first["domain_key"])
+        self.assertEqual("birth_request_type", first["current_node_id"])
+
+        second = self._next(first["session_id"], "dang ky lai")
+        self.assertEqual("birth_foreign_element", second["current_node_id"])
+
+        final = self._next(first["session_id"], "khong")
+        self.assertEqual("completed", final["status"])
+        self.assertEqual("1.004884", final["procedure"]["code"])
 
     def test_residence_temporary_extend_multiturn(self) -> None:
         first = self._start("residence_management")
@@ -152,10 +164,19 @@ class WorkflowMultiTurnTests(unittest.TestCase):
     def test_birth_abroad_consular_multiturn_short_answers(self) -> None:
         first = self._start("Toi muon lam khai sinh cho con")
         second = self._next(first["session_id"], "o nuoc ngoai")
-        final = self._next(first["session_id"], "co quan dai dien")
+
+        self.assertEqual("completed", second["status"])
+        self.assertEqual("1.001020", second["procedure"]["code"])
+        self.assertEqual("consular", second["answers"]["service_channel"])
+
+    def test_birth_new_abroad_path_auto_maps_to_consular_route(self) -> None:
+        first = self._start("toi lam giay khai sinh cho con")
+        second = self._next(first["session_id"], "co")
+        final = self._next(first["session_id"], "o nuoc ngoai")
 
         self.assertEqual("completed", final["status"])
         self.assertEqual("1.001020", final["procedure"]["code"])
+        self.assertEqual("consular", final["answers"]["service_channel"])
 
     def test_residence_delete_temporary_multiturn_binary_path(self) -> None:
         first = self._start("residence_management")
@@ -168,6 +189,22 @@ class WorkflowMultiTurnTests(unittest.TestCase):
         final = self._next(first["session_id"], "khong")
         self.assertEqual("completed", final["status"])
         self.assertEqual("1.010028", final["procedure"]["code"])
+
+    def test_retirement_preparation_exposes_operation_choices(self) -> None:
+        response = self.client.post(
+            "/api/v1/intake",
+            json={
+                "message": "toi can ho tro",
+                "group_key": "huu_tri",
+                "subdomain_key": "chuan_bi_nghi_huu",
+            },
+        )
+        self.assertEqual(200, response.status_code)
+        payload = response.json()
+        self.assertEqual("huu_tri", payload["domain_key"])
+        self.assertEqual("retirement_operation", payload["clarifying_question_id"])
+        self.assertGreaterEqual(len(payload["quick_replies"]), 3)
+        self.assertTrue(any(item["label"] != item["value"] for item in payload["quick_replies"]))
 
 
 if __name__ == "__main__":

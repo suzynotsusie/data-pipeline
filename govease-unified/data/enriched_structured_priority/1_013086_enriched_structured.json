@@ -1,0 +1,98 @@
+{
+  "schema_version": "1.0",
+  "enricher_version": "0.2.0",
+  "source": {
+    "procedure_code": "1.013086",
+    "title": "Đăng ký xe tạm thời thực hiện bằng dịch vụ công trực tuyến một phần hoặc trực tiếp thực hiện tại cấp trung ương, cấp tỉnh, cấp xã",
+    "group_key": "phuong_tien_nguoi_lai",
+    "workflow_family": "vehicle_driver_workflow",
+    "subflow": "dang_ky_phuong_tien"
+  },
+  "experience": {
+    "entry_label": "Hỗ trợ phương tiện và người lái",
+    "overview_summary": "Thủ tục này thuộc nhóm phương tiện và đăng kiểm, thường cần đối chiếu hồ sơ kỹ thuật, đăng ký hoặc chứng nhận an toàn của phương tiện. Kết quả thường nhận được là Giấy chứng nhận đăng ký xe tạm thời. Thời gian xử lý tham khảo: 1 ngày làm việc.",
+    "next_step_summary": "Nên kiểm tra trước loại phương tiện hoặc loại giấy phép cần xử lý, cùng hồ sơ kỹ thuật hoặc nhân thân liên quan. Có thể chọn kênh nộp phù hợp: Trực tiếp, Trực tuyến. Hiện có khoảng 3 mục giấy tờ cần theo dõi trong checklist.",
+    "tone": "supportive_public_service"
+  },
+  "guidance": {
+    "highlight_documents": [
+      {
+        "bucket": "required",
+        "name": "Giấy khai đăng ký xe (theo mẫu ĐKX10/79 ban hành kèm theo Thông tư số 13/2025/TT-BCA ngày 28/02/2025 của Bộ trưởng Bộ Công an).",
+        "conditions": [],
+        "attachment_path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/1_013086/MauKX1079.docx"
+      },
+      {
+        "bucket": "required",
+        "name": "Giấy tờ của chủ xe.",
+        "conditions": [],
+        "attachment_path": null
+      },
+      {
+        "bucket": "conditional",
+        "name": "Chứng nhận nguồn gốc xe, gồm một trong các giấy tờ sau: - Bản phô tô giấy chứng nhận an toàn kỹ thuật bảo vệ môi trường xe nhập khẩu đối với trường hợp không có dữ liệu điện tử (trường hợp xe di chuyển từ nhà máy đến kho, cảng hoặc từ kho, cảng, nhà máy, đại lý bán xe đến nơi đăng ký xe hoặc về các đại lý, kho lưu trữ khác theo quy định tại điểm a khoản 5 Điều 39 Luật Trật tự, an toàn giao thông đường bộ); - Phiếu kiểm tra chất lượng xuất xưởng đối với xe thuộc đối tượng nghiên cứu phát triển có nhu cầu tham gia giao thông đường bộ theo quy định (trường hợp xe chạy thử nghiệm thuộc đối tượng nghiên cứu phát triển có nhu cầu tham gia giao thông đường bộ theo quy định tại điểm c khoản 5 Điều 39 Luật Trật tự, an toàn giao thông đường bộ). - Văn bản của cơ quan có thẩm quyền cho phép tham gia giao thông, kèm theo danh sách xe và bản phô tô chứng nhận đăng ký xe của nước sở tại (trường hợp xe đăng ký ở nước ngoài được cơ quan thẩm quyền cho phép bao gồm cả xe có tay lái bên phải (tay lái nghịch) vào Việt Nam quá cảnh, tạm nhập, tái xuất có thời hạn để tham dự hội nghị, hội chợ, triển lãm, thể dục, thể thao, du lịch theo quy định tại điểm b khoản 5 Điều 39 Luật Trật tự, an toàn giao thông đường bộ); - Văn bản đề nghị đăng ký xe tạm thời, kèm theo bản phô tô chứng nhận đăng ký xe, danh sách xe (trường hợp xe phục vụ các sự kiện do Đảng, Nhà nước tổ chức theo quy định tại điểm b khoản 5 Điều 39 Luật Trật tự, an toàn giao thông đường bộ); Trường hợp chủ xe làm thủ tục thu hồi để tái xuất về nước hoặc chuyển quyền sở hữu xe, có nhu cầu thì được cấp đăng ký xe tạm thời cùng với thủ tục thu hồi, không phải có hồ sơ đăng ký xe tạm thời (trường hợp xe làm thủ tục thu hồi để tái xuất theo quy định tại điểm b khoản 5 Điều 39 Luật Trật tự, an toàn giao thông đường bộ)",
+        "conditions": [
+          "Chứng nhận nguồn gốc xe, gồm một trong các giấy tờ sau: - Bản phô tô giấy chứng nhận an toàn kỹ thuật bảo vệ môi trường xe nhập khẩu đối với trường hợp không có dữ liệu điện tử (trường hợp xe di chuyển từ nhà máy đến kho, cảng hoặc từ kho, cảng, nhà máy, đại lý bán xe đến nơi đăng ký xe hoặc về các đại lý, kho lưu trữ khác theo quy định tại điểm a khoản 5 Điều 39 Luật Trật tự, an toàn giao thông đường bộ); - Phiếu kiểm tra chất lượng xuất xưởng đối với xe thuộc đối tượng nghiên cứu phát triển có nhu cầu tham gia giao thông đường bộ theo quy định (trường hợp xe chạy thử nghiệm thuộc đối tượng nghiên cứu phát triển có nhu cầu tham gia giao thông đường bộ theo quy định tại điểm c khoản 5 Điều 39 Luật Trật tự, an toàn giao thông đường bộ). - Văn bản của cơ quan có thẩm quyền cho phép tham gia giao thông, kèm theo danh sách xe và bản phô tô chứng nhận đăng ký xe của nước sở tại (trường hợp xe đăng ký ở nước ngoài được cơ quan thẩm quyền cho phép bao gồm cả xe có tay lái bên phải (tay lái nghịch) vào Việt Nam quá cảnh, tạm nhập, tái xuất có thời hạn để tham dự hội nghị, hội chợ, triển lãm, thể dục, thể thao, du lịch theo quy định tại điểm b khoản 5 Điều 39 Luật Trật tự, an toàn giao thông đường bộ); - Văn bản đề nghị đăng ký xe tạm thời, kèm theo bản phô tô chứng nhận đăng ký xe, danh sách xe (trường hợp xe phục vụ các sự kiện do Đảng, Nhà nước tổ chức theo quy định tại điểm b khoản 5 Điều 39 Luật Trật tự, an toàn giao thông đường bộ); Trường hợp chủ xe làm thủ tục thu hồi để tái xuất về nước hoặc chuyển quyền sở hữu xe, có nhu cầu thì được cấp đăng ký xe tạm thời cùng với thủ tục thu hồi, không phải có hồ sơ đăng ký xe tạm thời (trường hợp xe làm thủ tục thu hồi để tái xuất theo quy định tại điểm b khoản 5 Điều 39 Luật Trật tự, an toàn giao thông đường bộ)"
+        ],
+        "attachment_path": null
+      }
+    ],
+    "special_cases": [
+      "Có yếu tố nước ngoài",
+      "Có thể cần đối chiếu thông tin thửa đất hoặc giấy chứng nhận"
+    ],
+    "common_errors": [
+      "Thiếu giấy tờ hợp pháp hóa hoặc giấy tờ nhân thân của phía nước ngoài.",
+      "Điền sai mẫu tờ khai hoặc chọn sai biểu mẫu đi kèm.",
+      "Thông tin thửa đất, tài sản hoặc giấy chứng nhận chưa khớp với hồ sơ hiện có."
+    ],
+    "validation_hints": [
+      "Nên xác định trước kênh nộp hồ sơ để biết có cần bản giấy, bản điện tử hay xuất trình trực tiếp.",
+      "Có mẫu biểu đính kèm, nên kiểm tra đúng biểu mẫu trước khi nộp.",
+      "Nên đối chiếu trước thông tin phương tiện, hồ sơ kỹ thuật hoặc giấy phép lái xe liên quan."
+    ]
+  },
+  "intake": {
+    "candidate_input_fields": [
+      {
+        "field_id": "vehicle_or_license_need",
+        "label": "Nhu cầu về phương tiện hoặc giấy phép",
+        "field_type": "text",
+        "required": true
+      },
+      {
+        "field_id": "vehicle_or_person_identifier",
+        "label": "Thông tin phương tiện hoặc người lái",
+        "field_type": "text",
+        "required": true
+      },
+      {
+        "field_id": "submission_channel_preference",
+        "label": "Kênh nộp dự kiến",
+        "field_type": "enum",
+        "required": false
+      },
+      {
+        "field_id": "has_technical_or_identity_documents",
+        "label": "Đã có hồ sơ kỹ thuật hoặc giấy tờ nhân thân",
+        "field_type": "boolean",
+        "required": false
+      }
+    ],
+    "suggested_clarifying_questions": [
+      "Bạn đang xử lý hồ sơ cho phương tiện hay cho giấy phép lái xe?",
+      "Bạn đã có thông tin nhận diện phương tiện hoặc giấy tờ của người lái chưa?"
+    ]
+  },
+  "ui_hints": {
+    "primary_channel": "online",
+    "result_label": "Giấy chứng nhận đăng ký xe tạm thời",
+    "time_badge": "1 ngày làm việc",
+    "document_count_badge": 3
+  },
+  "provenance": {
+    "generator": "workflow_domain_enricher",
+    "derivation_mode": "rule_based_semantic_enrichment",
+    "supported_group": true
+  }
+}

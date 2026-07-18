@@ -1,0 +1,473 @@
+{
+  "schema_version": "1.0",
+  "domain": "cu_tru_giay_to",
+  "updated_at": "2026-07-18",
+  "source_files": [
+    "C:\\Users\\ku060\\Downloads\\VAIC source\\data-pipeline\\main\\full-data.csv",
+    "C:\\Users\\ku060\\Downloads\\VAIC source\\data-pipeline\\raw_data"
+  ],
+  "subdomains": [
+    {
+      "subdomain_key": "can_cuoc_chung_minh_nhan_dan",
+      "subdomain_label": "Căn cước công dân/Chứng minh nhân dân",
+      "event_id": 272,
+      "summary": "Nhóm thủ tục cấp, cấp đổi, cấp lại căn cước, giấy chứng nhận căn cước và tài khoản/căn cước điện tử.",
+      "entry_prompts": [
+        "Bạn đang muốn cấp mới, cấp đổi, cấp lại căn cước hay xử lý căn cước điện tử?",
+        "Trường hợp của bạn là thẻ căn cước, giấy chứng nhận căn cước hay tài khoản định danh điện tử?"
+      ],
+      "procedure_count": 14,
+      "procedures": [
+        {
+          "procedure_code": "1.014060",
+          "procedure_title": "Tích hợp, cập nhật, điều chỉnh thông tin trên thẻ căn cước",
+          "subdomain_key": "can_cuoc_chung_minh_nhan_dan",
+          "subdomain_label": "Căn cước công dân/Chứng minh nhân dân",
+          "event_id": 272,
+          "field": "Cấp, quản lý căn cước",
+          "agency": "Công an cấp Xã",
+          "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bf7-9e09-7323-9cbf-c3e26f69e0c1",
+          "raw_data_file": "C:\\Users\\ku060\\Downloads\\VAIC source\\data-pipeline\\raw_data\\1_014060\\1_014060_procedure_detail.md",
+          "raw_data_available": true,
+          "operation_group": "cap_nhat_tich_hop_can_cuoc",
+          "operation_key": "tich_hop_cap_nhat_dieu_chinh_thong_tin_tren_the_can_cuoc",
+          "overview": "1. Bước 1: Cá nhân chuẩn bị đầy đủ hồ sơ theo quy định của pháp luật. Bước 2: + Công dân nộp hồ sơ tại Công an cấp xã trong cả nước không phụ thuộc vào nơi cư trú. + Công dân thông qua Cổng dịch vụ công quốc gia, Cổng dịch vụ công Bộ Công an, ứng dụng định danh quốc gia lựa chọn thông tin cần tích hợp, cập nhật, điều chỉnh đã có trong Cơ sở dữ liệu quốc gia về dân cư, Cơ sở dữ liệu căn cước và đăng ký thời gian với Công an cấp xã để thực hiện tích hợp, cập nhật, điều chỉnh thông tin trên thẻ căn cước. (Lưu ý: Lộ trình tích hợp, cập nhật, điều chỉnh thông tin trên thẻ căn cước tại Công an cấp xã trong cả nước không phụ thuộc vào nơi cư trú thực hiện theo thông báo của Bộ Công an) Bước 3: Cán bộ tiếp nhận hồ sơ kiểm tra tính pháp lý và nội dung hồ sơ. - Chuyển yêu cầu tích hợp đến cơ quan quản lý căn cước của Bộ Công an kèm theo hồ sơ đề nghị cấp, cấp đổi, cấp lại thẻ căn cước (Đối với trường hợp tích hợp thông tin trên thẻ căn cước khi thực hiện thủ tục cấp, cấp đổi, cấp lại thẻ căn cước). - Trường hợp thông tin đề nghị tích hợp, cập nhật, điều chỉnh chưa có trong Cơ sở dữ liệu quốc gia về dân cư, Cơ sở dữ liệu căn cước thì Công an cấp xã thực hiện tiếp nhận và chuyển yêu cầu tích hợp, cập nhật, điều chỉnh thông tin tới cơ quan quản lý căn cước của Bộ Công an để xác thực thông tin đề nghị tích hợp thông qua cơ sở dữ liệu quốc gia, cơ sở dữ liệu chuyên ngành. Sau khi xác thực thành công thì thực hiện tích hợp, cập nhật, điều chỉnh thông tin vào thẻ căn cước. - Trường hợp hồ sơ không đầy đủ thì hướng dẫn công dân bổ sung, hoàn thiện hồ sơ; trường hợp hồ sơ không hợp lệ thì từ chối tiếp nhận và nêu rõ lý do, thông báo về việc từ chối giải quyết thủ tục về căn cước cước (Mẫu CC03 ban hành kèm theo Thông tư số 53/2025/TT-BCA ngày 01/7/2025 của Bộ Công an).",
+          "procedure_flow": "1. Bước 1: Cá nhân chuẩn bị đầy đủ hồ sơ theo quy định của pháp luật. Bước 2: + Công dân nộp hồ sơ tại Công an cấp xã trong cả nước không phụ thuộc vào nơi cư trú. + Công dân thông qua Cổng dịch vụ công quốc gia, Cổng dịch vụ công Bộ Công an, ứng dụng định danh quốc gia lựa chọn thông tin cần tích hợp, cập nhật, điều chỉnh đã có trong Cơ sở dữ liệu quốc gia về dân cư, Cơ sở dữ liệu căn cước và đăng ký thời gian với Công an cấp xã để thực hiện tích hợp, cập nhật, điều chỉnh thông tin trên thẻ căn cước. (Lưu ý: Lộ trình tích hợp, cập nhật, điều chỉnh thông tin trên thẻ căn cước tại Công an cấp xã trong cả nước không phụ thuộc vào nơi cư trú thực hiện theo thông báo của Bộ Công an) Bước 3: Cán bộ tiếp nhận hồ sơ kiểm tra tính pháp lý và nội dung hồ sơ. - Chuyển yêu cầu tích hợp đến cơ quan quản lý căn cước của Bộ Công an kèm theo hồ sơ đề nghị cấp, cấp đổi, cấp lại thẻ căn cước (Đối với trường hợp tích hợp thông tin trên thẻ căn cước khi thực hiện thủ tục cấp, cấp đổi, cấp lại thẻ căn cước). - Trường hợp thông tin đề nghị tích hợp, cập nhật, điều chỉnh chưa có trong Cơ sở dữ liệu quốc gia về dân cư, Cơ sở dữ liệu căn cước thì Công an cấp xã thực hiện tiếp nhận và chuyển yêu cầu tích hợp, cập nhật, điều chỉnh thông tin tới cơ quan quản lý căn cước của Bộ Công an để xác thực thông tin đề nghị tích hợp thông qua cơ sở dữ liệu quốc gia, cơ sở dữ liệu chuyên ngành. Sau khi xác thực thành công thì thực hiện tích hợp, cập nhật, điều chỉnh thông tin vào thẻ căn cước. - Trường hợp hồ sơ không đầy đủ thì hướng dẫn công dân bổ sung, hoàn thiện hồ sơ; trường hợp hồ sơ không hợp lệ thì từ chối tiếp nhận và nêu rõ lý do, thông báo về việc từ chối giải quyết thủ tục về căn cước cước (Mẫu CC03 ban hành kèm theo Thông tư số 53/2025/TT-BCA ngày 01/7/2025 của Bộ Công an).",
+          "requirements": "Thông tin đề nghị tích hợp, cập nhật, điều chỉnh phải được xác thực qua Cơ sở dữ liệu chuyên ngành.",
+          "submission_methods": [
+            "Trực tiếp",
+            "Trực tuyến"
+          ],
+          "processing_time_values": [
+            "7 ngày làm việc",
+            "7 ngày làm việc"
+          ],
+          "document_groups": [],
+          "result_items": [
+            "Thông báo kết quả tích hợp, cập nhật, điều chỉnh thông tin trên thẻ căn cước. (Mã: `KQ.G01.000143`)"
+          ]
+        },
+        {
+          "procedure_code": "1.014061",
+          "procedure_title": "Cấp thẻ căn cước cho người từ đủ 14 tuổi trở lên",
+          "subdomain_key": "can_cuoc_chung_minh_nhan_dan",
+          "subdomain_label": "Căn cước công dân/Chứng minh nhân dân",
+          "event_id": 272,
+          "field": "Cấp, quản lý căn cước",
+          "agency": "Công an cấp Xã",
+          "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bf7-9e11-77ef-bf03-ae190acb0be3",
+          "raw_data_file": "C:\\Users\\ku060\\Downloads\\VAIC source\\data-pipeline\\raw_data\\1_014061\\1_014061_procedure_detail.md",
+          "raw_data_available": true,
+          "operation_group": "cap_the_can_cuoc_tu_14_tuoi",
+          "operation_key": "cap_the_can_cuoc_cho_nguoi_tu_du_14_tuoi_tro_len",
+          "overview": "1. - Bước 1: + Công dân đến Công an cấp xã hoặc Bộ phận một cửa cấp xã trong cả nước không phụ thuộc vào nơi cư trú (nếu đã triển khai) đề nghị cấp thẻ căn cước. + Công dân thông qua Cổng dịch vụ công quốc gia, Cổng dịch vụ công Bộ Công an, ứng dụng định danh quốc gia lựa chọn thủ tục cấp thẻ căn cước, kiểm tra thông tin của mình được khai thác trong Cơ sở dữ liệu quốc gia về dân cư. Trường hợp thông tin chính xác thì đăng ký thời gian và địa điểm thực hiện thủ tục tại Công an cấp xã. Hệ thống sẽ xác nhận và tự động chuyển đề nghị của công dân đến Công an cấp xã nơi công dân đề nghị cấp thẻ căn cước; (Lưu ý: Lộ trình cấp thẻ căn cước cho người từ đủ 14 tuổi trở lên tại Công an cấp xã trong cả nước không phụ thuộc vào nơi cư trú thực hiện theo thông báo của Bộ Công an) - Bước 2: Công dân cung cấp thông tin gồm họ, chữ đệm và tên khai sinh, số định danh cá nhân, nơi cư trú để người tiếp nhận kiểm tra đối chiếu thông tin trong Cơ sở dữ liệu quốc gia về dân cư; - Bước 3: Cán bộ thu nhận thông tin công dân tìm kiếm thông tin trong Cơ sở dữ liệu quốc gia về dân cư để lập hồ sơ cấp thẻ căn cước. + Trường hợp thông tin công dân chưa có trong Cơ sở dữ liệu quốc gia về dân cư Cán bộ thu nhận đề nghị công dân xuất trình một trong các loại giấy tờ pháp lý chứng minh nội dung thông tin nhân thân và hướng dẫn thu thập, cập nhật thông tin vào Cơ sở dữ liệu quốc gia về dân cư trước khi thực hiện thủ tục cấp thẻ căn cước. + Trường hợp thông tin công dân có sự thay đổi, điều chỉnh thì Cán bộ thu nhận hướng dẫn công dân thực hiện thủ tục điều chỉnh thông tin trong Cơ sở dữ liệu quốc gia về dân cư trước khi thực hiện thủ tục cấp thẻ căn cước. + Trường hợp thông tin công dân không có sự thay đổi, điều chỉnh thì sử dụng thông tin của công dân trong cơ sở dữ liệu quốc gia về dân cư để lập hồ sơ cấp Căn cước. + Trường hợp công dân không đủ điều kiện cấp thẻ căn cước thì từ chối tiếp nhận và nêu rõ lý do, thông báo về việc từ chối giải quyết thủ tục về căn cước (Mẫu CC03 ban hành kèm theo Thông tư số 53/2025/TT-BCA ngày 01/7/2025 của Bộ Công an). - Bước 4: Tiến hành thu nhận vân tay, chụp ảnh khuôn mặt và thu nhận ảnh mống mắt của công dân. - Bước 5: In Phiếu thu nhận thông tin căn cước, Phiếu thu thập thông tin dân cư (nếu có) chuyển cho công dân kiểm tra, ký xác nhận. - Bước 6: Thu thẻ Căn cước công dân (nếu có), thu lệ phí (nếu có) và cấp giấy hẹn trả kết quả giải quyết thủ tục về căn cước (mẫu CC02 ban hành kèm theo Thông tư số 17/2024/TT-BCA ngày 15/5/2024 của Bộ trưởng Bộ Công an). Bước 7: Nhận kết quả trực tiếp tại Công an cấp xã hoặc trả qua dịch vụ bưu chính đến địa chỉ theo yêu cầu.",
+          "procedure_flow": "1. - Bước 1: + Công dân đến Công an cấp xã hoặc Bộ phận một cửa cấp xã trong cả nước không phụ thuộc vào nơi cư trú (nếu đã triển khai) đề nghị cấp thẻ căn cước. + Công dân thông qua Cổng dịch vụ công quốc gia, Cổng dịch vụ công Bộ Công an, ứng dụng định danh quốc gia lựa chọn thủ tục cấp thẻ căn cước, kiểm tra thông tin của mình được khai thác trong Cơ sở dữ liệu quốc gia về dân cư. Trường hợp thông tin chính xác thì đăng ký thời gian và địa điểm thực hiện thủ tục tại Công an cấp xã. Hệ thống sẽ xác nhận và tự động chuyển đề nghị của công dân đến Công an cấp xã nơi công dân đề nghị cấp thẻ căn cước; (Lưu ý: Lộ trình cấp thẻ căn cước cho người từ đủ 14 tuổi trở lên tại Công an cấp xã trong cả nước không phụ thuộc vào nơi cư trú thực hiện theo thông báo của Bộ Công an) - Bước 2: Công dân cung cấp thông tin gồm họ, chữ đệm và tên khai sinh, số định danh cá nhân, nơi cư trú để người tiếp nhận kiểm tra đối chiếu thông tin trong Cơ sở dữ liệu quốc gia về dân cư; - Bước 3: Cán bộ thu nhận thông tin công dân tìm kiếm thông tin trong Cơ sở dữ liệu quốc gia về dân cư để lập hồ sơ cấp thẻ căn cước. + Trường hợp thông tin công dân chưa có trong Cơ sở dữ liệu quốc gia về dân cư Cán bộ thu nhận đề nghị công dân xuất trình một trong các loại giấy tờ pháp lý chứng minh nội dung thông tin nhân thân và hướng dẫn thu thập, cập nhật thông tin vào Cơ sở dữ liệu quốc gia về dân cư trước khi thực hiện thủ tục cấp thẻ căn cước. + Trường hợp thông tin công dân có sự thay đổi, điều chỉnh thì Cán bộ thu nhận hướng dẫn công dân thực hiện thủ tục điều chỉnh thông tin trong Cơ sở dữ liệu quốc gia về dân cư trước khi thực hiện thủ tục cấp thẻ căn cước. + Trường hợp thông tin công dân không có sự thay đổi, điều chỉnh thì sử dụng thông tin của công dân trong cơ sở dữ liệu quốc gia về dân cư để lập hồ sơ cấp Căn cước. + Trường hợp công dân không đủ điều kiện cấp thẻ căn cước thì từ chối tiếp nhận và nêu rõ lý do, thông báo về việc từ chối giải quyết thủ tục về căn cước (Mẫu CC03 ban hành kèm theo Thông tư số 53/2025/TT-BCA ngày 01/7/2025 của Bộ Công an). - Bước 4: Tiến hành thu nhận vân tay, chụp ảnh khuôn mặt và thu nhận ảnh mống mắt của công dân. - Bước 5: In Phiếu thu nhận thông tin căn cước, Phiếu thu thập thông tin dân cư (nếu có) chuyển cho công dân kiểm tra, ký xác nhận. - Bước 6: Thu thẻ Căn cước công dân (nếu có), thu lệ phí (nếu có) và cấp giấy hẹn trả kết quả giải quyết thủ tục về căn cước (mẫu CC02 ban hành kèm theo Thông tư số 17/2024/TT-BCA ngày 15/5/2024 của Bộ trưởng Bộ Công an). Bước 7: Nhận kết quả trực tiếp tại Công an cấp xã hoặc trả qua dịch vụ bưu chính đến địa chỉ theo yêu cầu.",
+          "requirements": "Không có thông tin",
+          "submission_methods": [
+            "Trực tiếp",
+            "Trực tuyến"
+          ],
+          "processing_time_values": [
+            "7 ngày làm việc",
+            "7 ngày làm việc"
+          ],
+          "document_groups": [],
+          "result_items": [
+            "Thẻ căn cước (Mã: `KQ.G01.000023`)"
+          ]
+        },
+        {
+          "procedure_code": "1.014062",
+          "procedure_title": "Cấp thẻ căn cước cho người dưới 14 tuổi",
+          "subdomain_key": "can_cuoc_chung_minh_nhan_dan",
+          "subdomain_label": "Căn cước công dân/Chứng minh nhân dân",
+          "event_id": 272,
+          "field": "Cấp, quản lý căn cước",
+          "agency": "Công an cấp Xã",
+          "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bf7-9e16-74eb-bb7b-a492aadf15a0",
+          "raw_data_file": "C:\\Users\\ku060\\Downloads\\VAIC source\\data-pipeline\\raw_data\\1_014062\\1_014062_procedure_detail.md",
+          "raw_data_available": true,
+          "operation_group": "cap_the_can_cuoc_duoi_14",
+          "operation_key": "cap_the_can_cuoc_cho_nguoi_duoi_14_tuoi",
+          "overview": "1. - Bước 1: + Trường hợp người đại diện hợp pháp thực hiện thủ tục cấp thẻ căn cước cho người dưới 06 tuổi thông qua cổng dịch vụ công hoặc ứng dụng định danh quốc gia thì lựa chọn thủ tục, kiểm tra thông tin của người dưới 06 tuổi trong Cơ sở dữ liệu quốc gia về dân cư. Trường hợp thông tin chính xác thì người đại diện hợp pháp xác nhận chuyển hồ sơ đề nghị đến Công an cấp xã trong cả nước không phụ thuộc vào nơi cư trú xem xét, giải quyết việc cấp thẻ căn cước. + Trường hợp thực hiện trực tiếp tại Công an cấp xã, người đại diện hợp pháp đưa người dưới 14 tuổi đến địa điểm làm thủ tục cấp thẻ căn cước. (Lưu ý: Lộ trình cấp thẻ căn cước cho người dưới 14 tuổi tại Công an cấp xã trong cả nước không phụ thuộc vào nơi cư trú thực hiện theo thông báo của Bộ Công an) - Bước 2: Cán bộ thu nhận thông tin công dân tìm kiếm thông tin trong Cơ sở dữ liệu quốc gia về dân cư để lập hồ sơ cấp thẻ căn cước. + Trường hợp thông tin công dân chưa có trong Cơ sở dữ liệu quốc gia về dân cư Cán bộ thu nhận đề nghị công dân xuất trình một trong các loại giấy tờ pháp lý chứng minh nội dung thông tin nhân thân và hướng dẫn thu thập, cập nhật thông tin vào Cơ sở dữ liệu quốc gia về dân cư trước khi thực hiện thủ tục cấp thẻ căn cước. + Trường hợp thông tin công dân có sự thay đổi, điều chỉnh thì Cán bộ thu nhận hướng dẫn công dân thực hiện thủ tục điều chỉnh thông tin trong Cơ sở dữ liệu quốc gia về dân cư trước khi thực hiện thủ tục cấp thẻ căn cước. + Trường hợp thông tin công dân không có sự thay đổi, điều chỉnh thì sử dụng thông tin của công dân trong cơ sở dữ liệu quốc gia về dân cư để lập hồ sơ cấp thẻ căn cước. + Trường hợp công dân không đủ điều kiện cấp thẻ căn cước thì từ chối tiếp nhận và nêu rõ lý do, thông báo về việc từ chối giải quyết thủ tục về căn cước (Mẫu CC03 ban hành kèm theo Thông tư số 53/2025/TT-BCA ngày 01/7/2025 của Bộ Công an). - Bước 3: Tiến hành thu nhận vân tay, chụp ảnh khuôn mặt và thu nhận ảnh mống mắt của người từ đủ 06 tuổi đến dưới 14 tuổi. - Bước 4: In Phiếu thu nhận thông tin căn cước; Phiếu thu thập thông tin dân cư (nếu có) cho người đại diện hợp pháp của người dưới 14 tuổi kiểm tra, ký xác nhận. - Bước 5: thu lệ phí (nếu có) và cấp giấy hẹn trả kết quả giải quyết thủ tục về căn cước (mẫu CC02 ban hành kèm theo Thông tư số 17/2024/TT-BCA ngày 15/5/2024 của Bộ Công an). Bước 6: Nhận kết quả trực tiếp tại Công an cấp xã hoặc trả qua dịch vụ bưu chính đến địa chỉ theo yêu cầu.",
+          "procedure_flow": "1. - Bước 1: + Trường hợp người đại diện hợp pháp thực hiện thủ tục cấp thẻ căn cước cho người dưới 06 tuổi thông qua cổng dịch vụ công hoặc ứng dụng định danh quốc gia thì lựa chọn thủ tục, kiểm tra thông tin của người dưới 06 tuổi trong Cơ sở dữ liệu quốc gia về dân cư. Trường hợp thông tin chính xác thì người đại diện hợp pháp xác nhận chuyển hồ sơ đề nghị đến Công an cấp xã trong cả nước không phụ thuộc vào nơi cư trú xem xét, giải quyết việc cấp thẻ căn cước. + Trường hợp thực hiện trực tiếp tại Công an cấp xã, người đại diện hợp pháp đưa người dưới 14 tuổi đến địa điểm làm thủ tục cấp thẻ căn cước. (Lưu ý: Lộ trình cấp thẻ căn cước cho người dưới 14 tuổi tại Công an cấp xã trong cả nước không phụ thuộc vào nơi cư trú thực hiện theo thông báo của Bộ Công an) - Bước 2: Cán bộ thu nhận thông tin công dân tìm kiếm thông tin trong Cơ sở dữ liệu quốc gia về dân cư để lập hồ sơ cấp thẻ căn cước. + Trường hợp thông tin công dân chưa có trong Cơ sở dữ liệu quốc gia về dân cư Cán bộ thu nhận đề nghị công dân xuất trình một trong các loại giấy tờ pháp lý chứng minh nội dung thông tin nhân thân và hướng dẫn thu thập, cập nhật thông tin vào Cơ sở dữ liệu quốc gia về dân cư trước khi thực hiện thủ tục cấp thẻ căn cước. + Trường hợp thông tin công dân có sự thay đổi, điều chỉnh thì Cán bộ thu nhận hướng dẫn công dân thực hiện thủ tục điều chỉnh thông tin trong Cơ sở dữ liệu quốc gia về dân cư trước khi thực hiện thủ tục cấp thẻ căn cước. + Trường hợp thông tin công dân không có sự thay đổi, điều chỉnh thì sử dụng thông tin của công dân trong cơ sở dữ liệu quốc gia về dân cư để lập hồ sơ cấp thẻ căn cước. + Trường hợp công dân không đủ điều kiện cấp thẻ căn cước thì từ chối tiếp nhận và nêu rõ lý do, thông báo về việc từ chối giải quyết thủ tục về căn cước (Mẫu CC03 ban hành kèm theo Thông tư số 53/2025/TT-BCA ngày 01/7/2025 của Bộ Công an). - Bước 3: Tiến hành thu nhận vân tay, chụp ảnh khuôn mặt và thu nhận ảnh mống mắt của người từ đủ 06 tuổi đến dưới 14 tuổi. - Bước 4: In Phiếu thu nhận thông tin căn cước; Phiếu thu thập thông tin dân cư (nếu có) cho người đại diện hợp pháp của người dưới 14 tuổi kiểm tra, ký xác nhận. - Bước 5: thu lệ phí (nếu có) và cấp giấy hẹn trả kết quả giải quyết thủ tục về căn cước (mẫu CC02 ban hành kèm theo Thông tư số 17/2024/TT-BCA ngày 15/5/2024 của Bộ Công an). Bước 6: Nhận kết quả trực tiếp tại Công an cấp xã hoặc trả qua dịch vụ bưu chính đến địa chỉ theo yêu cầu.",
+          "requirements": "Không có thông tin",
+          "submission_methods": [
+            "Trực tiếp",
+            "Trực tuyến",
+            "Dịch vụ bưu chính"
+          ],
+          "processing_time_values": [
+            "7 ngày làm việc",
+            "7 ngày làm việc",
+            "7 ngày làm việc"
+          ],
+          "document_groups": [],
+          "result_items": [
+            "Thẻ căn cước (Mã: `KQ.G01.000023`)"
+          ]
+        },
+        {
+          "procedure_code": "1.014063",
+          "procedure_title": "Cấp đổi thẻ căn cước",
+          "subdomain_key": "can_cuoc_chung_minh_nhan_dan",
+          "subdomain_label": "Căn cước công dân/Chứng minh nhân dân",
+          "event_id": 272,
+          "field": "Cấp, quản lý căn cước",
+          "agency": "Công an cấp Xã",
+          "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bf7-9e0f-730b-9510-60349ebab5b2",
+          "raw_data_file": "C:\\Users\\ku060\\Downloads\\VAIC source\\data-pipeline\\raw_data\\1_014063\\1_014063_procedure_detail.md",
+          "raw_data_available": true,
+          "operation_group": "cap_doi_the_can_cuoc",
+          "operation_key": "cap_doi_the_can_cuoc",
+          "overview": "1. - Bước 1: + Công dân đến Công an cấp xã hoặc bộ phận một của cấp xã trong cả nước không phụ thuộc vào nơi cư trú đề nghị cấp đổi thẻ căn cước. + Công dân thông qua Cổng dịch vụ công quốc gia, Cổng dịch vụ công Bộ Công an, ứng dụng định danh quốc gia lựa chọn thủ tục, kiểm tra thông tin của mình được khai thác trong Cơ sở dữ liệu quốc gia về dân cư. Trường hợp thông tin chính xác thì đăng ký thời gian, địa điểm thực hiện thủ tục tại Công an cấp xã trong cả nước không phụ thuộc vào nơi cư trú. Hệ thống sẽ xác nhận và tự động chuyển đề nghị của công dân đến cơ quan quản lý căn cước nơi công dân đề nghị cấp đổi thẻ căn cước. + Trường hợp người đề nghị cấp đổi thẻ căn cước là người đại diện hợp pháp của người dưới 14 tuổi thì hồ sơ đề nghị cấp đổi thẻ căn cước phải có giấy tờ, tài liệu có giá trị pháp lý chứng minh là người đại diện hợp pháp của người dưới 14 tuổi. + Trường hợp người đại diện hợp pháp thực hiện thủ tục cấp đổi thẻ căn cước cho người dưới 06 tuổi, cấp đổi thẻ căn cước khi thông tin trên thẻ căn cước thay đổi do sắp xếp đơn vị hành chính qua Cổng dịch vụ công quốc gia, Cổng dịch vụ công Bộ Công an, ứng dụng định danh quốc gia thì lựa chọn thủ tục, kiểm tra thông tin của người dưới 06 tuổi, người yêu cầu cấp đổi thẻ căn cước khi thông tin trên thẻ căn cước thay đổi do sắp xếp đơn vị hành chính trong Cơ sở dữ liệu quốc gia về dân cư. Trường hợp thông tin chính xác thì người đại diện hợp pháp xác nhận chuyển hồ sơ đề nghị đến cơ quan quản lý căn cước xem xét, giải quyết việc cấp đổi thẻ căn cước. (Lưu ý: Lộ trình cấp đổi thẻ căn cước tại Công an cấp xã trong cả nước không phụ thuộc vào nơi cư trú thực hiện theo thông báo của Bộ Công an) - Bước 2: Công dân cung cấp thông tin gồm họ, chữ đệm và tên khai sinh, số định danh cá nhân, nơi cư trú để người tiếp nhận kiểm tra đối chiếu thông tin trong Cơ sở dữ liệu quốc gia về dân cư; - Bước 3: Cán bộ thu nhận tìm kiếm thông tin công dân trong Cơ sở dữ liệu quốc gia về dân cư để lập hồ sơ cấp đổi thẻ căn cước. + Trường hợp thông tin công dân không có sự thay đổi, điều chỉnh thì sử dụng thông tin của công dân trong cơ sở dữ liệu quốc gia về dân cư để lập hồ sơ cấp đổi thẻ căn cước. + Trường hợp thông tin công dân có sự thay đổi, điều chỉnh thì Cán bộ thu nhận hướng dẫn công dân thực hiện thủ tục điều chỉnh thông tin trong Cơ sở dữ liệu quốc gia về dân cư trước khi thực hiện thủ tục cấp đổi thẻ căn cước. + Trường hợp thông tin công dân có sự thay đổi, điều chỉnh do sắp xếp đơn vị hành chính thì Cán bộ thu nhận thì cán bộ thu nhận sử dụng thông tin về ảnh khuôn mặt, vân tay, mống mắt đã được thu nhận lần gần nhất và các thông tin hiện có trong Cơ sở dữ liệu quốc gia về dân cư, Cơ sở dữ liệu căn cước để cấp đổi thẻ căn cước. + Trường hợp công dân không đủ điều kiện đổi thẻ căn cước thì từ chối tiếp nhận và nêu rõ lý do, thông báo về việc từ chối giải quyết thủ tục về căn cước (Mẫu CC03 ban hành kèm theo Thông tư số 53/2025/TT-BCA ngày 01/7/2025 của Bộ Công an). - Bước 4: Tiến hành thu nhận vân tay, chụp ảnh khuôn mặt, thu nhận ảnh mống mắt của công dân từ đủ 06 tuổi trở lên trừ trường hợp người yêu cầu cấp đổi thẻ căn cước khi thông tin trên thẻ căn cước thay đổi do sắp xếp đơn vị hành chính. - Bước 5: In Phiếu thu nhận thông tin căn cước cho công dân hoặc người đại diện của người dưới 14 tuổi kiểm tra, ký xác nhận. - Bước 6: Thu thẻ căn cước cũ, thu lệ phí (nếu có) và cấp giấy hẹn trả kết quả giải quyết thủ tục về căn cước cho công dân (mẫu CC02 ban hành kèm theo Thông tư số 17/2024/TT-BCA ngày 15/5/2024 của Bộ Công an). - Bước 7: Nhận kết quả trực tiếp tại Công an cấp xã hoặc trả qua dịch vụ bưu chính đến địa chỉ theo yêu cầu.",
+          "procedure_flow": "1. - Bước 1: + Công dân đến Công an cấp xã hoặc bộ phận một của cấp xã trong cả nước không phụ thuộc vào nơi cư trú đề nghị cấp đổi thẻ căn cước. + Công dân thông qua Cổng dịch vụ công quốc gia, Cổng dịch vụ công Bộ Công an, ứng dụng định danh quốc gia lựa chọn thủ tục, kiểm tra thông tin của mình được khai thác trong Cơ sở dữ liệu quốc gia về dân cư. Trường hợp thông tin chính xác thì đăng ký thời gian, địa điểm thực hiện thủ tục tại Công an cấp xã trong cả nước không phụ thuộc vào nơi cư trú. Hệ thống sẽ xác nhận và tự động chuyển đề nghị của công dân đến cơ quan quản lý căn cước nơi công dân đề nghị cấp đổi thẻ căn cước. + Trường hợp người đề nghị cấp đổi thẻ căn cước là người đại diện hợp pháp của người dưới 14 tuổi thì hồ sơ đề nghị cấp đổi thẻ căn cước phải có giấy tờ, tài liệu có giá trị pháp lý chứng minh là người đại diện hợp pháp của người dưới 14 tuổi. + Trường hợp người đại diện hợp pháp thực hiện thủ tục cấp đổi thẻ căn cước cho người dưới 06 tuổi, cấp đổi thẻ căn cước khi thông tin trên thẻ căn cước thay đổi do sắp xếp đơn vị hành chính qua Cổng dịch vụ công quốc gia, Cổng dịch vụ công Bộ Công an, ứng dụng định danh quốc gia thì lựa chọn thủ tục, kiểm tra thông tin của người dưới 06 tuổi, người yêu cầu cấp đổi thẻ căn cước khi thông tin trên thẻ căn cước thay đổi do sắp xếp đơn vị hành chính trong Cơ sở dữ liệu quốc gia về dân cư. Trường hợp thông tin chính xác thì người đại diện hợp pháp xác nhận chuyển hồ sơ đề nghị đến cơ quan quản lý căn cước xem xét, giải quyết việc cấp đổi thẻ căn cước. (Lưu ý: Lộ trình cấp đổi thẻ căn cước tại Công an cấp xã trong cả nước không phụ thuộc vào nơi cư trú thực hiện theo thông báo của Bộ Công an) - Bước 2: Công dân cung cấp thông tin gồm họ, chữ đệm và tên khai sinh, số định danh cá nhân, nơi cư trú để người tiếp nhận kiểm tra đối chiếu thông tin trong Cơ sở dữ liệu quốc gia về dân cư; - Bước 3: Cán bộ thu nhận tìm kiếm thông tin công dân trong Cơ sở dữ liệu quốc gia về dân cư để lập hồ sơ cấp đổi thẻ căn cước. + Trường hợp thông tin công dân không có sự thay đổi, điều chỉnh thì sử dụng thông tin của công dân trong cơ sở dữ liệu quốc gia về dân cư để lập hồ sơ cấp đổi thẻ căn cước. + Trường hợp thông tin công dân có sự thay đổi, điều chỉnh thì Cán bộ thu nhận hướng dẫn công dân thực hiện thủ tục điều chỉnh thông tin trong Cơ sở dữ liệu quốc gia về dân cư trước khi thực hiện thủ tục cấp đổi thẻ căn cước. + Trường hợp thông tin công dân có sự thay đổi, điều chỉnh do sắp xếp đơn vị hành chính thì Cán bộ thu nhận thì cán bộ thu nhận sử dụng thông tin về ảnh khuôn mặt, vân tay, mống mắt đã được thu nhận lần gần nhất và các thông tin hiện có trong Cơ sở dữ liệu quốc gia về dân cư, Cơ sở dữ liệu căn cước để cấp đổi thẻ căn cước. + Trường hợp công dân không đủ điều kiện đổi thẻ căn cước thì từ chối tiếp nhận và nêu rõ lý do, thông báo về việc từ chối giải quyết thủ tục về căn cước (Mẫu CC03 ban hành kèm theo Thông tư số 53/2025/TT-BCA ngày 01/7/2025 của Bộ Công an). - Bước 4: Tiến hành thu nhận vân tay, chụp ảnh khuôn mặt, thu nhận ảnh mống mắt của công dân từ đủ 06 tuổi trở lên trừ trường hợp người yêu cầu cấp đổi thẻ căn cước khi thông tin trên thẻ căn cước thay đổi do sắp xếp đơn vị hành chính. - Bước 5: In Phiếu thu nhận thông tin căn cước cho công dân hoặc người đại diện của người dưới 14 tuổi kiểm tra, ký xác nhận. - Bước 6: Thu thẻ căn cước cũ, thu lệ phí (nếu có) và cấp giấy hẹn trả kết quả giải quyết thủ tục về căn cước cho công dân (mẫu CC02 ban hành kèm theo Thông tư số 17/2024/TT-BCA ngày 15/5/2024 của Bộ Công an). - Bước 7: Nhận kết quả trực tiếp tại Công an cấp xã hoặc trả qua dịch vụ bưu chính đến địa chỉ theo yêu cầu.",
+          "requirements": "Không có thông tin",
+          "submission_methods": [
+            "Trực tiếp",
+            "Trực tuyến",
+            "Dịch vụ bưu chính"
+          ],
+          "processing_time_values": [
+            "7 ngày làm việc",
+            "7 ngày làm việc",
+            "7 ngày làm việc"
+          ],
+          "document_groups": [],
+          "result_items": [
+            "Thẻ căn cước (Mã: `KQ.G01.000023`)"
+          ]
+        },
+        {
+          "procedure_code": "1.014064",
+          "procedure_title": "Cấp lại thẻ căn cước",
+          "subdomain_key": "can_cuoc_chung_minh_nhan_dan",
+          "subdomain_label": "Căn cước công dân/Chứng minh nhân dân",
+          "event_id": 272,
+          "field": "Cấp, quản lý căn cước",
+          "agency": "Công an cấp Xã",
+          "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bf7-9e0b-7681-bd68-83f1e84c1cc7",
+          "raw_data_file": "C:\\Users\\ku060\\Downloads\\VAIC source\\data-pipeline\\raw_data\\1_014064\\1_014064_procedure_detail.md",
+          "raw_data_available": true,
+          "operation_group": "cap_lai_the_can_cuoc",
+          "operation_key": "cap_lai_the_can_cuoc",
+          "overview": "1. - Bước 1: + Công dân đến Công an cấp xã trong cả nước không phụ thuộc vào nơi cư trú đề nghị cấp lại thẻ căn cước hoặc thông qua Cổng dịch vụ công quốc gia, Cổng dịch vụ công Bộ Công an, ứng dụng định danh quốc gia lựa chọn thủ tục cấp lại thẻ căn cước, kiểm tra thông tin của mình được khai thác trong Cơ sở dữ liệu quốc gia về dân cư. Trường hợp thông tin chính xác thì xác nhận chuyển hồ sơ đề nghị cấp lại thẻ căn cước đến Công an cấp xã trong cả nước không phụ thuộc vào nơi cư trú nơi công dân đã lựa chọn . + Trường hợp người đề nghị cấp lại thẻ căn cước là người đại diện hợp pháp của người dưới 14 tuổi thì hồ sơ đề nghị cấp, cấp đổi, cấp lại thẻ căn cước phải có giấy tờ, tài liệu có giá trị pháp lý chứng minh là người đại diện hợp pháp của người dưới 14 tuổi; (Lưu ý: Lộ trình cấp lại thẻ căn cước tại Công an cấp xã trong cả nước không phụ thuộc vào nơi cư trú thực hiện theo thông báo của Bộ Công an) - Bước 2: Cán bộ thu nhận thông tin công dân tìm kiếm thông tin trong Cơ sở dữ liệu quốc gia về dân cư để lập hồ sơ cấp lại thẻ căn cước. - Bước 3: + Trường hợp cấp lại thẻ căn cước do bị mất thẻ căn cước hoặc thẻ căn cước bị hư hỏng không sử dụng được thì cán bộ thu nhận sử dụng thông tin về ảnh khuôn mặt, vân tay, mống mắt đã được thu nhận lần gần nhất và các thông tin hiện có trong Cơ sở dữ liệu quốc gia về dân cư, Cơ sở dữ liệu căn cước để cấp lại thẻ căn cước. + Trường hợp cấp lại thẻ căn cước quy định tại điểm b khoản 2 Điều 24 Luật Căn cước (Được trở lại quốc tịch Việt Nam theo quy định của pháp luật về quốc tịch Việt Nam), các bước thực hiện như đối với thủ tục cấp mới thẻ căn cước. + Trường hợp công dân không đủ điều kiện cấp lại thẻ căn cước thì từ chối tiếp nhận và nêu rõ lý do, thông báo về việc từ chối giải quyết thủ tục về căn cước (Mẫu CC03 ban hành kèm theo Thông tư số 53/2025/TT-BCA ngày 01/7/2025 của Bộ Công an). - Bước 4: Tiến hành thu nhận vân tay, chụp ảnh khuôn mặt và thu nhận ảnh mống mắt của công dân (áp dụng với trường hợp cấp lại thẻ căn cước quy định tại điểm b khoản 2 Điều 24 Luật Căn cước). - Bước 5: In Phiếu thu nhận thông tin căn cước chuyển cho công dân hoặc người đại diện của người dưới 14 tuổi kiểm tra, ký xác nhận đối với trường hợp công dân trực tiếp đến thực hiện thủ tục cấp lại tại Công an cấp xã. - Bước 6: Thu thẻ căn cước cũ (nếu có), thu lệ phí (nếu có) và cấp giấy hẹn trả kết quả giải quyết thủ tục về căn cước cho công dân (mẫu CC02 ban hành kèm theo Thông tư số 17/2024/TT-BCA ngày 15/5/2024 của Bộ Công an) (bản giấy hoặc bản điện tử). - Bước 6: Nhận kết quả trực tiếp tại cơ quan Công an nơi tiếp nhận hồ sơ hoặc trả qua dịch vụ bưu chính đến địa chỉ theo yêu cầu.",
+          "procedure_flow": "1. - Bước 1: + Công dân đến Công an cấp xã trong cả nước không phụ thuộc vào nơi cư trú đề nghị cấp lại thẻ căn cước hoặc thông qua Cổng dịch vụ công quốc gia, Cổng dịch vụ công Bộ Công an, ứng dụng định danh quốc gia lựa chọn thủ tục cấp lại thẻ căn cước, kiểm tra thông tin của mình được khai thác trong Cơ sở dữ liệu quốc gia về dân cư. Trường hợp thông tin chính xác thì xác nhận chuyển hồ sơ đề nghị cấp lại thẻ căn cước đến Công an cấp xã trong cả nước không phụ thuộc vào nơi cư trú nơi công dân đã lựa chọn . + Trường hợp người đề nghị cấp lại thẻ căn cước là người đại diện hợp pháp của người dưới 14 tuổi thì hồ sơ đề nghị cấp, cấp đổi, cấp lại thẻ căn cước phải có giấy tờ, tài liệu có giá trị pháp lý chứng minh là người đại diện hợp pháp của người dưới 14 tuổi; (Lưu ý: Lộ trình cấp lại thẻ căn cước tại Công an cấp xã trong cả nước không phụ thuộc vào nơi cư trú thực hiện theo thông báo của Bộ Công an) - Bước 2: Cán bộ thu nhận thông tin công dân tìm kiếm thông tin trong Cơ sở dữ liệu quốc gia về dân cư để lập hồ sơ cấp lại thẻ căn cước. - Bước 3: + Trường hợp cấp lại thẻ căn cước do bị mất thẻ căn cước hoặc thẻ căn cước bị hư hỏng không sử dụng được thì cán bộ thu nhận sử dụng thông tin về ảnh khuôn mặt, vân tay, mống mắt đã được thu nhận lần gần nhất và các thông tin hiện có trong Cơ sở dữ liệu quốc gia về dân cư, Cơ sở dữ liệu căn cước để cấp lại thẻ căn cước. + Trường hợp cấp lại thẻ căn cước quy định tại điểm b khoản 2 Điều 24 Luật Căn cước (Được trở lại quốc tịch Việt Nam theo quy định của pháp luật về quốc tịch Việt Nam), các bước thực hiện như đối với thủ tục cấp mới thẻ căn cước. + Trường hợp công dân không đủ điều kiện cấp lại thẻ căn cước thì từ chối tiếp nhận và nêu rõ lý do, thông báo về việc từ chối giải quyết thủ tục về căn cước (Mẫu CC03 ban hành kèm theo Thông tư số 53/2025/TT-BCA ngày 01/7/2025 của Bộ Công an). - Bước 4: Tiến hành thu nhận vân tay, chụp ảnh khuôn mặt và thu nhận ảnh mống mắt của công dân (áp dụng với trường hợp cấp lại thẻ căn cước quy định tại điểm b khoản 2 Điều 24 Luật Căn cước). - Bước 5: In Phiếu thu nhận thông tin căn cước chuyển cho công dân hoặc người đại diện của người dưới 14 tuổi kiểm tra, ký xác nhận đối với trường hợp công dân trực tiếp đến thực hiện thủ tục cấp lại tại Công an cấp xã. - Bước 6: Thu thẻ căn cước cũ (nếu có), thu lệ phí (nếu có) và cấp giấy hẹn trả kết quả giải quyết thủ tục về căn cước cho công dân (mẫu CC02 ban hành kèm theo Thông tư số 17/2024/TT-BCA ngày 15/5/2024 của Bộ Công an) (bản giấy hoặc bản điện tử). - Bước 6: Nhận kết quả trực tiếp tại cơ quan Công an nơi tiếp nhận hồ sơ hoặc trả qua dịch vụ bưu chính đến địa chỉ theo yêu cầu.",
+          "requirements": "Không có thông tin",
+          "submission_methods": [
+            "Trực tiếp",
+            "Trực tuyến",
+            "Dịch vụ bưu chính"
+          ],
+          "processing_time_values": [
+            "7 ngày làm việc",
+            "7 ngày làm việc",
+            "7 ngày làm việc"
+          ],
+          "document_groups": [],
+          "result_items": [
+            "Thẻ căn cước (Mã: `KQ.G01.000023`)"
+          ]
+        },
+        {
+          "procedure_code": "1.014067",
+          "procedure_title": "Cấp đổi giấy chứng nhận căn cước",
+          "subdomain_key": "can_cuoc_chung_minh_nhan_dan",
+          "subdomain_label": "Căn cước công dân/Chứng minh nhân dân",
+          "event_id": 272,
+          "field": "Cấp, quản lý căn cước",
+          "agency": "Công an cấp Xã",
+          "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bf7-9e0c-71f6-a76a-8f99b1cfea5a",
+          "raw_data_file": "C:\\Users\\ku060\\Downloads\\VAIC source\\data-pipeline\\raw_data\\1_014067\\1_014067_procedure_detail.md",
+          "raw_data_available": true,
+          "operation_group": "cap_doi_giay_chung_nhan_can_cuoc",
+          "operation_key": "cap_doi_giay_chung_nhan_can_cuoc",
+          "overview": "1. - Bước 1: Người gốc Việt Nam chưa xác định được quốc tịch đến Công an cấp xã trong cả nước không phụ thuộc nơi cư trú đề nghị cấp đổi giấy chứng nhận căn cước cung cấp thông tin gồm họ, chữ đệm và tên khai sinh, số định danh cá nhân, nơi ở hiện tại để người tiếp nhận kiểm tra đối chiếu thông tin trong Cơ sở dữ liệu quốc gia về dân cư. (Lưu ý: Lộ trình cấp đổi giấy chứng nhận căn cước tại Công an cấp xã trong cả nước không phụ thuộc vào nơi cư trú thực hiện theo thông báo của Bộ Công an) - Bước 2: Cán bộ thu nhận tìm kiếm thông tin Người gốc Việt Nam chưa xác định được quốc tịch trong Cơ sở dữ liệu quốc gia về dân cư để lập hồ sơ cấp đổi giấy chứng nhận căn cước. + Trường hợp thông tin người gốc Việt Nam chưa xác định được quốc tịch không có sự thay đổi, điều chỉnh thì sử dụng thông tin người đó trong Cơ sở dữ liệu quốc gia về dân cư để lập hồ sơ cấp đổi giấy chứng nhận căn cước. + Trường hợp thông tin người gốc Việt Nam chưa xác định được quốc tịch có sự thay đổi, điều chỉnh thì đề nghị người đó thực hiện thủ tục điều chỉnh thông tin trong Cơ sở dữ liệu quốc gia về dân cư trước khi thực hiện cấp đổi giấy chứng nhận căn cước. + Trường hợp người gốc Việt Nam chưa xác định được quốc tịch không đủ điều kiện cấp đổi giấy chứng nhân căn cước thì từ chối tiếp nhận và nêu rõ lý do, thông báo về việc từ chối giải quyết thủ tục về căn cước (Mẫu CC03 ban hành kèm theo Thông tư số 53/2025/TT-BCA ngày 01/7/2025 của Bộ Công an). - Bước 3: Tiến hành thu nhận vân tay, chụp ảnh khuôn mặt, thu nhận ảnh mống mắt của người gốc Việt Nam chưa xác định được quốc tịch (không thu nhận vân tay, ảnh khuôn mặt, mống mắt của người dưới 06 tuổi). - Bước 4: In Phiếu thu nhận thông tin căn cước; Phiếu đề nghị giải quyết thủ tục về căn cước (nếu có) chuyển cho người gốc Việt Nam chưa xác định được quốc tịch kiểm tra, ký xác nhận; - Bước 5: Thu giấy chứng nhận căn cước cũ, cấp giấy hẹn trả kết quả giải quyết thủ tục về căn cước cho người gốc Việt Nam chưa xác định được quốc tịch (Mẫu CC02 ban hành kèm theo Thông tư số 17/2024/TT-BCA ngày 15/5/2024 của Bộ Công an). - Bước 6: Nhận kết quả trực tiếp tại Công an cấp xã hoặc trả qua dịch vụ bưu chính đến địa chỉ theo yêu cầu.",
+          "procedure_flow": "1. - Bước 1: Người gốc Việt Nam chưa xác định được quốc tịch đến Công an cấp xã trong cả nước không phụ thuộc nơi cư trú đề nghị cấp đổi giấy chứng nhận căn cước cung cấp thông tin gồm họ, chữ đệm và tên khai sinh, số định danh cá nhân, nơi ở hiện tại để người tiếp nhận kiểm tra đối chiếu thông tin trong Cơ sở dữ liệu quốc gia về dân cư. (Lưu ý: Lộ trình cấp đổi giấy chứng nhận căn cước tại Công an cấp xã trong cả nước không phụ thuộc vào nơi cư trú thực hiện theo thông báo của Bộ Công an) - Bước 2: Cán bộ thu nhận tìm kiếm thông tin Người gốc Việt Nam chưa xác định được quốc tịch trong Cơ sở dữ liệu quốc gia về dân cư để lập hồ sơ cấp đổi giấy chứng nhận căn cước. + Trường hợp thông tin người gốc Việt Nam chưa xác định được quốc tịch không có sự thay đổi, điều chỉnh thì sử dụng thông tin người đó trong Cơ sở dữ liệu quốc gia về dân cư để lập hồ sơ cấp đổi giấy chứng nhận căn cước. + Trường hợp thông tin người gốc Việt Nam chưa xác định được quốc tịch có sự thay đổi, điều chỉnh thì đề nghị người đó thực hiện thủ tục điều chỉnh thông tin trong Cơ sở dữ liệu quốc gia về dân cư trước khi thực hiện cấp đổi giấy chứng nhận căn cước. + Trường hợp người gốc Việt Nam chưa xác định được quốc tịch không đủ điều kiện cấp đổi giấy chứng nhân căn cước thì từ chối tiếp nhận và nêu rõ lý do, thông báo về việc từ chối giải quyết thủ tục về căn cước (Mẫu CC03 ban hành kèm theo Thông tư số 53/2025/TT-BCA ngày 01/7/2025 của Bộ Công an). - Bước 3: Tiến hành thu nhận vân tay, chụp ảnh khuôn mặt, thu nhận ảnh mống mắt của người gốc Việt Nam chưa xác định được quốc tịch (không thu nhận vân tay, ảnh khuôn mặt, mống mắt của người dưới 06 tuổi). - Bước 4: In Phiếu thu nhận thông tin căn cước; Phiếu đề nghị giải quyết thủ tục về căn cước (nếu có) chuyển cho người gốc Việt Nam chưa xác định được quốc tịch kiểm tra, ký xác nhận; - Bước 5: Thu giấy chứng nhận căn cước cũ, cấp giấy hẹn trả kết quả giải quyết thủ tục về căn cước cho người gốc Việt Nam chưa xác định được quốc tịch (Mẫu CC02 ban hành kèm theo Thông tư số 17/2024/TT-BCA ngày 15/5/2024 của Bộ Công an). - Bước 6: Nhận kết quả trực tiếp tại Công an cấp xã hoặc trả qua dịch vụ bưu chính đến địa chỉ theo yêu cầu.",
+          "requirements": "Không có thông tin",
+          "submission_methods": [
+            "Trực tiếp"
+          ],
+          "processing_time_values": [
+            "7 ngày làm việc"
+          ],
+          "document_groups": [],
+          "result_items": [
+            "Giấy chứng nhận căn cước (Mã: `KQ.G01.000144`)"
+          ]
+        },
+        {
+          "procedure_code": "1.014068",
+          "procedure_title": "Cấp lại giấy chứng nhận căn cước",
+          "subdomain_key": "can_cuoc_chung_minh_nhan_dan",
+          "subdomain_label": "Căn cước công dân/Chứng minh nhân dân",
+          "event_id": 272,
+          "field": "Cấp, quản lý căn cước",
+          "agency": "Công an cấp Xã",
+          "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bf7-9e14-75fa-82e9-ae8a6d3149cb",
+          "raw_data_file": "C:\\Users\\ku060\\Downloads\\VAIC source\\data-pipeline\\raw_data\\1_014068\\1_014068_procedure_detail.md",
+          "raw_data_available": true,
+          "operation_group": "cap_lai_giay_chung_nhan_can_cuoc",
+          "operation_key": "cap_lai_giay_chung_nhan_can_cuoc",
+          "overview": "1. - Bước 1: Người gốc Việt Nam chưa xác định được quốc tịch đến Công an cấp xã trong cả nước không phụ thuộc nơi cư trú nơi đang sinh sống đề nghị cấp lại giấy chứng nhận căn cước cung cấp thông tin gồm họ, chữ đệm và tên khai sinh, số định danh cá nhân, nơi ở hiện tại để người tiếp nhận kiểm tra đối chiếu thông tin trong Cơ sở dữ liệu quốc gia về dân cư. (Lưu ý: Lộ trình cấp lại giấy chứng nhận căn cước tại Công an cấp xã trong cả nước không phụ thuộc vào nơi cư trú thực hiện theo thông báo của Bộ Công an) - Bước 2: Cán bộ thu nhận tìm kiếm thông tin người gốc Việt Nam chưa xác định được quốc tịch trong Cơ sở dữ liệu quốc gia về dân cư để lập hồ sơ cấp lại giấy chứng nhận căn cước. + Trường hợp thông tin người gốc Việt Nam chưa xác định được quốc tịch không có sự thay đổi, điều chỉnh thì sử dụng thông tin người đó trong cơ sở dữ liệu quốc gia về dân cư để lập hồ sơ cấp lại giấy chứng nhận căn cước. + Trường hợp thông tin người gốc Việt Nam chưa xác định được quốc tịch có sự thay đổi, điều chỉnh thì đề nghị người đó thực hiện thủ tục điều chỉnh thông tin trong Cơ sở dữ liệu quốc gia về dân cư trước khi thực hiện cấp lại giấy chứng nhận căn cước. + Trường hợp người gốc Việt Nam chưa xác định được quốc tịch không đủ điều kiện cấp lại giấy chứng nhận căn cước thì từ chối tiếp nhận và nêu rõ lý do, thông báo về việc từ chối giải quyết thủ tục về căn cước (Mẫu CC03 ban hành kèm theo Thông tư số 17/2024/TT-BCA ngày 15/5/2024 của Bộ Công an). - Bước 3: Tiến hành thu nhận vân tay, chụp ảnh khuôn mặt, thu nhận ảnh mống mắt của người gốc Việt Nam chưa xác định được quốc tịch (không thu nhận vân tay, ảnh khuôn mặt, mống mắt của người dưới 06 tuổi). - Bước 4: In Phiếu thu nhận thông tin căn cước; Phiếu đề nghị giải quyết thủ tục về căn cước (nếu có) chuyển cho người gốc Việt Nam chưa xác định được quốc tịch kiểm tra, ký xác nhận. - Bước 5: Cấp giấy hẹn trả kết quả giải quyết thủ tục về căn cước cho người gốc Việt Nam chưa xác định được quốc tịch (Mẫu CC02 ban hành kèm theo Thông tư số 17/2024/TT-BCA ngày 15/5/2024 của Bộ Công an). - Bước 6: Nhận kết quả trực tiếp tại cơ quan Công an nơi tiếp nhận hồ sơ hoặc trả qua dịch vụ bưu chính đến địa chỉ theo yêu cầu.",
+          "procedure_flow": "1. - Bước 1: Người gốc Việt Nam chưa xác định được quốc tịch đến Công an cấp xã trong cả nước không phụ thuộc nơi cư trú nơi đang sinh sống đề nghị cấp lại giấy chứng nhận căn cước cung cấp thông tin gồm họ, chữ đệm và tên khai sinh, số định danh cá nhân, nơi ở hiện tại để người tiếp nhận kiểm tra đối chiếu thông tin trong Cơ sở dữ liệu quốc gia về dân cư. (Lưu ý: Lộ trình cấp lại giấy chứng nhận căn cước tại Công an cấp xã trong cả nước không phụ thuộc vào nơi cư trú thực hiện theo thông báo của Bộ Công an) - Bước 2: Cán bộ thu nhận tìm kiếm thông tin người gốc Việt Nam chưa xác định được quốc tịch trong Cơ sở dữ liệu quốc gia về dân cư để lập hồ sơ cấp lại giấy chứng nhận căn cước. + Trường hợp thông tin người gốc Việt Nam chưa xác định được quốc tịch không có sự thay đổi, điều chỉnh thì sử dụng thông tin người đó trong cơ sở dữ liệu quốc gia về dân cư để lập hồ sơ cấp lại giấy chứng nhận căn cước. + Trường hợp thông tin người gốc Việt Nam chưa xác định được quốc tịch có sự thay đổi, điều chỉnh thì đề nghị người đó thực hiện thủ tục điều chỉnh thông tin trong Cơ sở dữ liệu quốc gia về dân cư trước khi thực hiện cấp lại giấy chứng nhận căn cước. + Trường hợp người gốc Việt Nam chưa xác định được quốc tịch không đủ điều kiện cấp lại giấy chứng nhận căn cước thì từ chối tiếp nhận và nêu rõ lý do, thông báo về việc từ chối giải quyết thủ tục về căn cước (Mẫu CC03 ban hành kèm theo Thông tư số 17/2024/TT-BCA ngày 15/5/2024 của Bộ Công an). - Bước 3: Tiến hành thu nhận vân tay, chụp ảnh khuôn mặt, thu nhận ảnh mống mắt của người gốc Việt Nam chưa xác định được quốc tịch (không thu nhận vân tay, ảnh khuôn mặt, mống mắt của người dưới 06 tuổi). - Bước 4: In Phiếu thu nhận thông tin căn cước; Phiếu đề nghị giải quyết thủ tục về căn cước (nếu có) chuyển cho người gốc Việt Nam chưa xác định được quốc tịch kiểm tra, ký xác nhận. - Bước 5: Cấp giấy hẹn trả kết quả giải quyết thủ tục về căn cước cho người gốc Việt Nam chưa xác định được quốc tịch (Mẫu CC02 ban hành kèm theo Thông tư số 17/2024/TT-BCA ngày 15/5/2024 của Bộ Công an). - Bước 6: Nhận kết quả trực tiếp tại cơ quan Công an nơi tiếp nhận hồ sơ hoặc trả qua dịch vụ bưu chính đến địa chỉ theo yêu cầu.",
+          "requirements": "Không có thông tin",
+          "submission_methods": [
+            "Trực tiếp"
+          ],
+          "processing_time_values": [
+            "7 ngày làm việc"
+          ],
+          "document_groups": [],
+          "result_items": [
+            "Giấy chứng nhận căn cước (Mã: `KQ.G01.000144`)"
+          ]
+        },
+        {
+          "procedure_code": "3.000228",
+          "procedure_title": "Cấp tài khoản định danh điện tử mức độ 02, căn cước điện tử cho công dân Việt Nam (cấp xã)",
+          "subdomain_key": "can_cuoc_chung_minh_nhan_dan",
+          "subdomain_label": "Căn cước công dân/Chứng minh nhân dân",
+          "event_id": 272,
+          "field": "Định danh và xác thực điện tử",
+          "agency": "Công an cấp Xã",
+          "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bf7-b5a6-76fd-a4b1-49c93d86d9d6",
+          "raw_data_file": "C:\\Users\\ku060\\Downloads\\VAIC source\\data-pipeline\\raw_data\\3_000228\\3_000228_procedure_detail.md",
+          "raw_data_available": true,
+          "operation_group": "cap_tai_khoan_dinh_danh_muc_2",
+          "operation_key": "cap_tai_khoan_dinh_danh_dien_tu_muc_do_02_can_cuoc_dien_tu_cho_cong_dan_viet_nam_cap_xa",
+          "overview": "1. a) Đối với công dân đã được cấp thẻ Căn cước công dân gắn chip điện tử, thẻ căn cước. Bước 1: Công dân Việt Nam đến Công an cấp xã trong cả nước không phụ thuộc vào nơi cư trú đề nghị đăng ký tài khoản định danh điện tử mức độ 2, căn cước điện tử. (Lưu ý: Lộ trình thực hiện cấp tài khoản định danh điện tử mức độ 2, căn cước điện tử cho công dân Việt Nam tại Công an cấp xã trong cả nước không phụ thuộc vào nơi cư trú thực hiện theo thông báo của Bộ Công an) Bước 2: Công dân xuất trình thẻ Căn cước công dân gắn chip điện tử, thẻ căn cước còn hiệu lực và cung cấp đầy đủ, chính xác thông tin trên Phiếu đề nghị cấp tài khoản định danh điện tử (mẫu TK01 ban hành kèm theo Nghị định số 69/2024/NĐ-CP ngày 25/6/2024 quy định về định danh và xác thực điện tử); trong đó cung cấp rõ số thuê bao di động chính chủ, địa chỉ thư điện tử của công dân (nếu có) và thông tin khác đề nghị tích hợp vào căn cước điện tử (nếu có nhu cầu) cho cán bộ tiếp nhận. Bước 3: Cán bộ tiếp nhận nhập thông tin công dân cung cấp vào hệ thống định danh và xác thực điện tử để xác thực; xác thực ảnh khuôn mặt, vân tay của công dân đến làm thủ tục với Cơ sở dữ liệu căn cước và khẳng định sự đồng ý đăng ký tạo lập tài khoản định danh điện tử, căn cước điện tử. Bước 4. Cơ quan quản lý định danh và xác thực điện tử tiến hành kiểm tra, xác thực thông tin công dân đề nghị cấp tài khoản định danh điện tử mức độ 02, căn cước điện tử và thông báo kết quả đăng ký cấp tài khoản định danh điện tử mức độ 02, căn cước điện tử qua Ứng dụng định danh quốc gia hoặc số thuê bao di động chính chủ hoặc địa chỉ thư điện tử. b) Đối với công dân chưa được cấp thẻ căn cước công dân gắn chip điện tử, thẻ căn cước: Cơ quan Công an tiến hành cấp tài khoản định danh điện tử mức độ 2, căn cước điện tử cùng với thủ tục cấp thẻ căn cước. Thời gian tiếp nhận hồ sơ: Giờ hành chính các ngày làm việc từ thứ 2 đến thứ 6 (trừ các ngày nghỉ lễ, tết theo quy định của pháp luật).",
+          "procedure_flow": "1. a) Đối với công dân đã được cấp thẻ Căn cước công dân gắn chip điện tử, thẻ căn cước. Bước 1: Công dân Việt Nam đến Công an cấp xã trong cả nước không phụ thuộc vào nơi cư trú đề nghị đăng ký tài khoản định danh điện tử mức độ 2, căn cước điện tử. (Lưu ý: Lộ trình thực hiện cấp tài khoản định danh điện tử mức độ 2, căn cước điện tử cho công dân Việt Nam tại Công an cấp xã trong cả nước không phụ thuộc vào nơi cư trú thực hiện theo thông báo của Bộ Công an) Bước 2: Công dân xuất trình thẻ Căn cước công dân gắn chip điện tử, thẻ căn cước còn hiệu lực và cung cấp đầy đủ, chính xác thông tin trên Phiếu đề nghị cấp tài khoản định danh điện tử (mẫu TK01 ban hành kèm theo Nghị định số 69/2024/NĐ-CP ngày 25/6/2024 quy định về định danh và xác thực điện tử); trong đó cung cấp rõ số thuê bao di động chính chủ, địa chỉ thư điện tử của công dân (nếu có) và thông tin khác đề nghị tích hợp vào căn cước điện tử (nếu có nhu cầu) cho cán bộ tiếp nhận. Bước 3: Cán bộ tiếp nhận nhập thông tin công dân cung cấp vào hệ thống định danh và xác thực điện tử để xác thực; xác thực ảnh khuôn mặt, vân tay của công dân đến làm thủ tục với Cơ sở dữ liệu căn cước và khẳng định sự đồng ý đăng ký tạo lập tài khoản định danh điện tử, căn cước điện tử. Bước 4. Cơ quan quản lý định danh và xác thực điện tử tiến hành kiểm tra, xác thực thông tin công dân đề nghị cấp tài khoản định danh điện tử mức độ 02, căn cước điện tử và thông báo kết quả đăng ký cấp tài khoản định danh điện tử mức độ 02, căn cước điện tử qua Ứng dụng định danh quốc gia hoặc số thuê bao di động chính chủ hoặc địa chỉ thư điện tử. b) Đối với công dân chưa được cấp thẻ căn cước công dân gắn chip điện tử, thẻ căn cước: Cơ quan Công an tiến hành cấp tài khoản định danh điện tử mức độ 2, căn cước điện tử cùng với thủ tục cấp thẻ căn cước. Thời gian tiếp nhận hồ sơ: Giờ hành chính các ngày làm việc từ thứ 2 đến thứ 6 (trừ các ngày nghỉ lễ, tết theo quy định của pháp luật).",
+          "requirements": "Người dưới 14 tuổi, người được giám hộ, người được đại diện cùng người đại diện hoặc người giám hộ của mình đến Công an xã, phường, thị trấn để làm thủ tục cấp tài khoản định danh điện tử mức độ 02, căn cước điện tử. Người đại diện, người giám hộ sử dụng số thuê bao di động chính chủ của mình để kê khai, đăng ký cấp tài khoản định danh điện tử mức độ 02, căn cước điện tử cho công dân Việt Nam là người dưới 14 tuổi, người được giám hộ, người được đại diện.",
+          "submission_methods": [
+            "Trực tiếp",
+            "Trực tiếp"
+          ],
+          "processing_time_values": [
+            "3 ngày làm việc",
+            "7 ngày làm việc"
+          ],
+          "document_groups": [
+            {
+              "group_name": "Công dân đã được cấp thẻ Căn cước công dân gắn chip điện tử, thẻ căn cước còn hiệu lực",
+              "documents": [
+                {
+                  "Tên giấy tờ": "Xuất trình thẻ Căn cước công dân gắn chip điện tử, thẻ căn cước còn hiệu lực",
+                  "Bản chính": "1",
+                  "Bản sao": "0",
+                  "Tệp đính kèm": "Không có"
+                },
+                {
+                  "Tên giấy tờ": "a) Đối với cơ quan có chức năng quản lý nhà nước, cơ quan chuyên môn:  - Văn bản đề nghị đăng ký mẫu con dấu của cơ quan, tổ chức, chức danh nhà nước; - Quyết định thành lập hoặc văn bản quy định về tổ chức, hoạt động của cơ quan có thẩm quyền.",
+                  "Bản chính": "1",
+                  "Bản sao": "0",
+                  "Tệp đính kèm": "[TK01-Phiunghcptikhonnhdanhintcnccint.docx](file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/3_000228/TK01-Phiunghcptikhonnhdanhintcnccint.docx)"
+                },
+                {
+                  "Tên giấy tờ": "Trong đó cung cấp rõ số thuê bao di động chính chủ, địa chỉ thư điện tử (nếu có) và thông tin khác đề nghị tích hợp (nếu có nhu cầu)",
+                  "Bản chính": "1",
+                  "Bản sao": "0",
+                  "Tệp đính kèm": "Không có"
+                }
+              ]
+            },
+            {
+              "group_name": "Trường hợp công dân chưa được cấp thẻ Căn cước công dân gắn chip điện tử, thẻ căn cước hoặc thẻ hết hiệu lực",
+              "documents": [
+                {
+                  "Tên giấy tờ": "Công dân chuẩn bị hồ sơ và thực hiện đồng thời thủ tục “cấp tài khoản định danh điện tử mức độ 2, căn cước điện tử cho công dân Việt Nam” cùng với thủ tục cấp thẻ căn cước.",
+                  "Bản chính": "1",
+                  "Bản sao": "0",
+                  "Tệp đính kèm": "Không có"
+                }
+              ]
+            }
+          ],
+          "result_items": [
+            "Thông báo kết quả qua ứng dụng VNeID hoặc tin nhắn SMS hoặc địa chỉ thư điện tử. (Mã: `KQ.G01.000096`)"
+          ]
+        },
+        {
+          "procedure_code": "3.000271",
+          "procedure_title": "Khóa căn cước điện tử (thực hiện tại cấp trung ương)",
+          "subdomain_key": "can_cuoc_chung_minh_nhan_dan",
+          "subdomain_label": "Căn cước công dân/Chứng minh nhân dân",
+          "event_id": 272,
+          "field": "Định danh và xác thực điện tử",
+          "agency": "",
+          "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bf7-b5ea-746b-a7b8-3b91f3bcd96a",
+          "raw_data_file": "C:\\Users\\ku060\\Downloads\\VAIC source\\data-pipeline\\raw_data\\3_000271\\3_000271_procedure_detail.md",
+          "raw_data_available": true,
+          "operation_group": "khoa_can_cuoc_dien_tu",
+          "operation_key": "khoa_can_cuoc_dien_tu_thuc_hien_tai_cap_trung_uong",
+          "overview": "1. Bước 1: Người được cấp căn cước điện tử thực hiện yêu cầu khóa căn cước điện tử của mình thông qua Ứng dụng định danh quốc gia theo Phiếu đề nghị khóa, mở khóa tài khoản định danh điện tử, căn cước điện tử (mẫu TK03 ban hành kèm theo Nghị định số 69/2024/NĐ-CP ngày 25/6/2024 quy định về định danh và xác thực điện tử). Bước 2: Cơ quan quản lý căn cước có trách nhiệm ghi nhận, kiểm tra, xác thực và khóa căn cước điện tử ngay sau khi nhận được yêu cầu khóa căn cước điện tử của công dân trên hệ thống định danh và xác thực điện tử.",
+          "procedure_flow": "1. Bước 1: Người được cấp căn cước điện tử thực hiện yêu cầu khóa căn cước điện tử của mình thông qua Ứng dụng định danh quốc gia theo Phiếu đề nghị khóa, mở khóa tài khoản định danh điện tử, căn cước điện tử (mẫu TK03 ban hành kèm theo Nghị định số 69/2024/NĐ-CP ngày 25/6/2024 quy định về định danh và xác thực điện tử). Bước 2: Cơ quan quản lý căn cước có trách nhiệm ghi nhận, kiểm tra, xác thực và khóa căn cước điện tử ngay sau khi nhận được yêu cầu khóa căn cước điện tử của công dân trên hệ thống định danh và xác thực điện tử.",
+          "requirements": "Không",
+          "submission_methods": [
+            "Trực tuyến"
+          ],
+          "processing_time_values": [
+            "1 ngày làm việc"
+          ],
+          "document_groups": [],
+          "result_items": [
+            "Thông báo kết quả tới chủ thể đề nghị khóa căn cước điện tử thông qua Ứng đụng định danh quốc gia (Mã: `KQ.G01.000151`)"
+          ]
+        },
+        {
+          "procedure_code": "3.000272",
+          "procedure_title": "Mở khóa căn cước điện tử (thực hiện tại cấp trung ương)",
+          "subdomain_key": "can_cuoc_chung_minh_nhan_dan",
+          "subdomain_label": "Căn cước công dân/Chứng minh nhân dân",
+          "event_id": 272,
+          "field": "Định danh và xác thực điện tử",
+          "agency": "",
+          "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bf7-b5d4-75ed-a3db-11a8bd08eb4f",
+          "raw_data_file": "C:\\Users\\ku060\\Downloads\\VAIC source\\data-pipeline\\raw_data\\3_000272\\3_000272_procedure_detail.md",
+          "raw_data_available": true,
+          "operation_group": "khoa_can_cuoc_dien_tu",
+          "operation_key": "mo_khoa_can_cuoc_dien_tu_thuc_hien_tai_cap_trung_uong",
+          "overview": "1. Bước 1: Người bị khóa căn cước điện tử thực hiện yêu cầu mở khóa căn cước điện tử thông qua Ứng dụng định danh quốc gia theo Phiếu đề nghị khóa, mở khóa tài khoản định danh điện tử, căn cước điện tử (mẫu TK03 ban hành kèm theo Nghị định số 69/2024/NĐ-CP ngày 25/6/2024 quy định về định danh và xác thực điện tử). Bước 2: Cơ quan quản lý căn cước có trách nhiệm ghi nhận, kiểm tra, xác thực và mở khóa căn cước điện tử ngay sau khi nhận được yêu cầu khóa căn cước điện tử của công dân trên hệ thống định danh và xác thực điện tử.",
+          "procedure_flow": "1. Bước 1: Người bị khóa căn cước điện tử thực hiện yêu cầu mở khóa căn cước điện tử thông qua Ứng dụng định danh quốc gia theo Phiếu đề nghị khóa, mở khóa tài khoản định danh điện tử, căn cước điện tử (mẫu TK03 ban hành kèm theo Nghị định số 69/2024/NĐ-CP ngày 25/6/2024 quy định về định danh và xác thực điện tử). Bước 2: Cơ quan quản lý căn cước có trách nhiệm ghi nhận, kiểm tra, xác thực và mở khóa căn cước điện tử ngay sau khi nhận được yêu cầu khóa căn cước điện tử của công dân trên hệ thống định danh và xác thực điện tử.",
+          "requirements": "Không",
+          "submission_methods": [
+            "Trực tuyến"
+          ],
+          "processing_time_values": [
+            "1 ngày làm việc"
+          ],
+          "document_groups": [],
+          "result_items": [
+            "Thông báo kết quả tới chủ thể đề nghị khóa căn cước điện tử thông qua Ứng đụng định danh quốc gia (Mã: `KQ.G01.000151`)"
+          ]
+        },
+        {
+          "procedure_code": "3.000276",
+          "procedure_title": "Khóa căn cước điện tử (thực hiện tại cấp tỉnh)",
+          "subdomain_key": "can_cuoc_chung_minh_nhan_dan",
+          "subdomain_label": "Căn cước công dân/Chứng minh nhân dân",
+          "event_id": 272,
+          "field": "Định danh và xác thực điện tử",
+          "agency": "Phòng cảnh sát quản lý hành chính về trật tự xã hội",
+          "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bf7-bd5a-738e-93a8-40faa4cc541e",
+          "raw_data_file": "C:\\Users\\ku060\\Downloads\\VAIC source\\data-pipeline\\raw_data\\3_000276\\3_000276_procedure_detail.md",
+          "raw_data_available": true,
+          "operation_group": "khoa_can_cuoc_dien_tu",
+          "operation_key": "khoa_can_cuoc_dien_tu_thuc_hien_tai_cap_tinh",
+          "overview": "1. a) Người được cấp căn cước điện tử thực hiện yêu cầu khóa căn cước điện tử trực tiếp tại Phòng Cảnh sát quản lý hành chính về trật tự xã hội, Công an tỉnh, thành phố trong cả nước không phụ thuộc vào nơi cư trú hoặc thông qua Ứng dụng định danh quốc gia theo Phiếu đề nghị khóa, mở khóa tài khoản định danh điện tử, căn cước điện tử (mẫu TK03 ban hành kèm theo Nghị định số 69/2024/NĐ-CP ngày 25/6/2024 quy định về định danh và xác thực điện tử). Cơ quan quản lý căn cước có trách nhiệm ghi nhận, kiểm tra, xác thực và khóa căn cước điện tử ngay sau khi nhận được yêu cầu khóa căn cước điện tử của công dân trên hệ thống định danh và xác thực điện tử. (Lưu ý: Lộ trình thực hiện việc khóa căn cước điện tử tại Phòng Cảnh sát quản lý hành chính về trật tự xã hội, Công an tỉnh, thành phố trong cả nước không phụ thuộc vào nơi cư trú thực hiện theo thông báo của Bộ Công an) b) Khóa căn cước điện tử theo đề nghị của cơ quan tiến hành tố tụng, cơ quan khác có thẩm quyền Bước 1: Cơ quan tiến hành tố tụng, cơ quan khác có thẩm quyền gửi văn bản đề nghị khóa căn cước điện tử đến Phòng Cảnh sát quản lý hành chính về trật tự xã hội, Công an tỉnh, thành phố trong cả nước không phụ thuộc vào nơi cư trú để tiếp nhận, xử lý. (Lưu ý: Lộ trình thực hiện việc khóa căn cước điện tử tại Phòng Cảnh sát quản lý hành chính về trật tự xã hội, Công an tỉnh, thành phố trong cả nước không phụ thuộc vào nơi cư trú thực hiện theo thông báo của Bộ Công an) Bước 2: Trong thời hạn 01 ngày làm việc, kể từ ngày nhận được đề nghị khóa căn cước điện tử của cơ quan tiến hành tố tụng, cơ quan khác có thẩm quyền, Phòng Cảnh sát quản lý hành chính về trật tự xã hội, Công an tỉnh, thành phố nơi tiếp nhận đề nghị phải xem xét, chuyển đề nghị khóa căn cước điện tử đến thủ trưởng cơ quan quản lý căn cước Bộ Công an để xem xét, phê duyệt thông qua hệ thống định danh và xác thực điện tử. Bước 3: Trong thời hạn 02 ngày làm việc kể từ ngày nhận được đề xuất của Phòng Cảnh sát quản lý hành chính về trật tự xã hội, Công an tỉnh, thành phố, thủ trưởng cơ quan quản lý căn cước Bộ Công an xem xét, phê duyệt đối với trường hợp yêu cầu khóa căn cước điện tử và thông báo tới cơ quan đề nghị khóa căn cước điện tử và công dân. Trường hợp từ chối khóa căn cước điện tử thì có văn bản trả lời và nêu rõ lý do.",
+          "procedure_flow": "1. a) Người được cấp căn cước điện tử thực hiện yêu cầu khóa căn cước điện tử trực tiếp tại Phòng Cảnh sát quản lý hành chính về trật tự xã hội, Công an tỉnh, thành phố trong cả nước không phụ thuộc vào nơi cư trú hoặc thông qua Ứng dụng định danh quốc gia theo Phiếu đề nghị khóa, mở khóa tài khoản định danh điện tử, căn cước điện tử (mẫu TK03 ban hành kèm theo Nghị định số 69/2024/NĐ-CP ngày 25/6/2024 quy định về định danh và xác thực điện tử). Cơ quan quản lý căn cước có trách nhiệm ghi nhận, kiểm tra, xác thực và khóa căn cước điện tử ngay sau khi nhận được yêu cầu khóa căn cước điện tử của công dân trên hệ thống định danh và xác thực điện tử. (Lưu ý: Lộ trình thực hiện việc khóa căn cước điện tử tại Phòng Cảnh sát quản lý hành chính về trật tự xã hội, Công an tỉnh, thành phố trong cả nước không phụ thuộc vào nơi cư trú thực hiện theo thông báo của Bộ Công an) b) Khóa căn cước điện tử theo đề nghị của cơ quan tiến hành tố tụng, cơ quan khác có thẩm quyền Bước 1: Cơ quan tiến hành tố tụng, cơ quan khác có thẩm quyền gửi văn bản đề nghị khóa căn cước điện tử đến Phòng Cảnh sát quản lý hành chính về trật tự xã hội, Công an tỉnh, thành phố trong cả nước không phụ thuộc vào nơi cư trú để tiếp nhận, xử lý. (Lưu ý: Lộ trình thực hiện việc khóa căn cước điện tử tại Phòng Cảnh sát quản lý hành chính về trật tự xã hội, Công an tỉnh, thành phố trong cả nước không phụ thuộc vào nơi cư trú thực hiện theo thông báo của Bộ Công an) Bước 2: Trong thời hạn 01 ngày làm việc, kể từ ngày nhận được đề nghị khóa căn cước điện tử của cơ quan tiến hành tố tụng, cơ quan khác có thẩm quyền, Phòng Cảnh sát quản lý hành chính về trật tự xã hội, Công an tỉnh, thành phố nơi tiếp nhận đề nghị phải xem xét, chuyển đề nghị khóa căn cước điện tử đến thủ trưởng cơ quan quản lý căn cước Bộ Công an để xem xét, phê duyệt thông qua hệ thống định danh và xác thực điện tử. Bước 3: Trong thời hạn 02 ngày làm việc kể từ ngày nhận được đề xuất của Phòng Cảnh sát quản lý hành chính về trật tự xã hội, Công an tỉnh, thành phố, thủ trưởng cơ quan quản lý căn cước Bộ Công an xem xét, phê duyệt đối với trường hợp yêu cầu khóa căn cước điện tử và thông báo tới cơ quan đề nghị khóa căn cước điện tử và công dân. Trường hợp từ chối khóa căn cước điện tử thì có văn bản trả lời và nêu rõ lý do.",
+          "requirements": "không",
+          "submission_methods": [
+            "Trực tuyến",
+            "Dịch vụ bưu chính",
+            "Trực tiếp"
+          ],
+          "processing_time_values": [
+            "3 ngày làm việc",
+            "3 ngày làm việc",
+            "3 ngày làm việc"
+          ],
+          "document_groups": [],
+          "result_items": [
+            "Thông báo kết quả tới cơ quan đề nghị khóa căn cước điện tử và chủ thể bị khóa căn cước điện tử. Trường hợp từ chối khóa căn cước điện tử thì có văn bản trả lời và nêu rõ lý do. (Mã: `KQ.G01.000155`)"
+          ]
+        },
+        {
+          "procedure_code": "3.000277",
+          "procedure_title": "Mở khóa căn cước điện tử (thực hiện tại cấp tỉnh)",
+          "subdomain_key": "can_cuoc_chung_minh_nhan_dan",
+          "subdomain_label": "Căn cước công dân/Chứng minh nhân dân",
+          "event_id": 272,
+          "field": "Định danh và xác thực điện tử",
+          "agency": "Phòng cảnh sát quản lý hành chính về trật tự xã hội",
+          "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bf7-bd5d-7695-b50d-b06b3b7a3c6e",
+          "raw_data_file": "C:\\Users\\ku060\\Downloads\\VAIC source\\data-pipeline\\raw_data\\3_000277\\3_000277_procedure_detail.md",
+          "raw_data_available": true,
+          "operation_group": "khoa_can_cuoc_dien_tu",
+          "operation_key": "mo_khoa_can_cuoc_dien_tu_thuc_hien_tai_cap_tinh",
+          "overview": "1. a) Người bị khóa căn cước điện tử thực hiện yêu cầu mở khóa căn cước điện tử trực tiếp tại Phòng Cảnh sát quản lý hành chính về trật tự xã hội, Công an tỉnh, thành phố trong cả nước không phụ thuộc vào nơi cư trú hoặc thông qua Ứng dụng định danh quốc gia theo Phiếu đề nghị khóa, mở khóa tài khoản định danh điện tử, căn cước điện tử (mẫu TK03 ban hành kèm theo Nghị định số 69/2024/NĐ-CP ngày 25/6/2024 quy định về định danh và xác thực điện tử). Cơ quan quản lý căn cước có trách nhiệm ghi nhận, kiểm tra, xác thực và mở khóa căn cước điện tử ngay sau khi nhận được yêu cầu mở khóa căn cước điện tử của công dân trên hệ thống định danh và xác thực điện tử. (Lưu ý: Lộ trình thực hiện việc mở khóa căn cước điện tử tại Phòng Cảnh sát quản lý hành chính về trật tự xã hội, Công an tỉnh, thành phố trong cả nước không phụ thuộc vào nơi cư trú thực hiện theo thông báo của Bộ Công an) b) Mở khóa căn cước điện tử theo đề nghị của cơ quan tiến hành tố tụng, cơ quan khác có thẩm quyền Bước 1: Cơ quan tiến hành tố tụng, cơ quan khác có thẩm quyền gửi văn bản đề nghị mở khóa căn cước điện tử đến Phòng Cảnh sát quản lý hành chính về trật tự xã hội, Công an tỉnh, thành phố trong cả nước không phụ thuộc vào nơi cư trú để tiếp nhận, xử lý. (Lưu ý: Lộ trình thực hiện việc mở khóa căn cước điện tử tại Phòng Cảnh sát quản lý hành chính về trật tự xã hội, Công an tỉnh, thành phố trong cả nước không phụ thuộc vào nơi cư trú thực hiện theo thông báo của Bộ Công an) Bước 2: Trong thời hạn 01 ngày làm việc, kể từ ngày nhận được đề nghị mở khóa căn cước điện tử của cơ quan tiến hành tố tụng, cơ quan khác có thẩm quyền, Phòng Cảnh sát quản lý hành chính về trật tự xã hội, Công an tỉnh, thành phố nơi tiếp nhận đề nghị phải xem xét, chuyển đề nghị mở khóa căn cước điện tử đến thủ trưởng cơ quan quản lý căn cước Bộ Công an để xem xét, phê duyệt thông qua hệ thống định danh và xác thực điện tử. Bước 3: Trong thời hạn 02 ngày làm việc kể từ ngày nhận được đề xuất của Phòng Cảnh sát quản lý hành chính về trật tự xã hội, Công an tỉnh, thành phố, thủ trưởng cơ quan quản lý căn cước Bộ Công an xem xét, phê duyệt đối với trường hợp yêu cầu mở khóa căn cước điện tử và thông báo tới cơ quan đề nghị mở khóa căn cước điện tử và chủ thể được mở khóa căn cước điện tử. Trường hợp từ chối mở khóa căn cước điện tử thì có văn bản trả lời và nêu rõ lý do.",
+          "procedure_flow": "1. a) Người bị khóa căn cước điện tử thực hiện yêu cầu mở khóa căn cước điện tử trực tiếp tại Phòng Cảnh sát quản lý hành chính về trật tự xã hội, Công an tỉnh, thành phố trong cả nước không phụ thuộc vào nơi cư trú hoặc thông qua Ứng dụng định danh quốc gia theo Phiếu đề nghị khóa, mở khóa tài khoản định danh điện tử, căn cước điện tử (mẫu TK03 ban hành kèm theo Nghị định số 69/2024/NĐ-CP ngày 25/6/2024 quy định về định danh và xác thực điện tử). Cơ quan quản lý căn cước có trách nhiệm ghi nhận, kiểm tra, xác thực và mở khóa căn cước điện tử ngay sau khi nhận được yêu cầu mở khóa căn cước điện tử của công dân trên hệ thống định danh và xác thực điện tử. (Lưu ý: Lộ trình thực hiện việc mở khóa căn cước điện tử tại Phòng Cảnh sát quản lý hành chính về trật tự xã hội, Công an tỉnh, thành phố trong cả nước không phụ thuộc vào nơi cư trú thực hiện theo thông báo của Bộ Công an) b) Mở khóa căn cước điện tử theo đề nghị của cơ quan tiến hành tố tụng, cơ quan khác có thẩm quyền Bước 1: Cơ quan tiến hành tố tụng, cơ quan khác có thẩm quyền gửi văn bản đề nghị mở khóa căn cước điện tử đến Phòng Cảnh sát quản lý hành chính về trật tự xã hội, Công an tỉnh, thành phố trong cả nước không phụ thuộc vào nơi cư trú để tiếp nhận, xử lý. (Lưu ý: Lộ trình thực hiện việc mở khóa căn cước điện tử tại Phòng Cảnh sát quản lý hành chính về trật tự xã hội, Công an tỉnh, thành phố trong cả nước không phụ thuộc vào nơi cư trú thực hiện theo thông báo của Bộ Công an) Bước 2: Trong thời hạn 01 ngày làm việc, kể từ ngày nhận được đề nghị mở khóa căn cước điện tử của cơ quan tiến hành tố tụng, cơ quan khác có thẩm quyền, Phòng Cảnh sát quản lý hành chính về trật tự xã hội, Công an tỉnh, thành phố nơi tiếp nhận đề nghị phải xem xét, chuyển đề nghị mở khóa căn cước điện tử đến thủ trưởng cơ quan quản lý căn cước Bộ Công an để xem xét, phê duyệt thông qua hệ thống định danh và xác thực điện tử. Bước 3: Trong thời hạn 02 ngày làm việc kể từ ngày nhận được đề xuất của Phòng Cảnh sát quản lý hành chính về trật tự xã hội, Công an tỉnh, thành phố, thủ trưởng cơ quan quản lý căn cước Bộ Công an xem xét, phê duyệt đối với trường hợp yêu cầu mở khóa căn cước điện tử và thông báo tới cơ quan đề nghị mở khóa căn cước điện tử và chủ thể được mở khóa căn cước điện tử. Trường hợp từ chối mở khóa căn cước điện tử thì có văn bản trả lời và nêu rõ lý do.",
+          "requirements": "Không",
+          "submission_methods": [
+            "Trực tuyến",
+            "Dịch vụ bưu chính",
+            "Trực tiếp"
+          ],
+          "processing_time_values": [
+            "3 ngày làm việc",
+            "3 ngày làm việc",
+            "3 ngày làm việc"
+          ],
+          "document_groups": [],
+          "result_items": [
+            "Thông báo kết quả tới cơ quan đề nghị mở khóa căn cước điện tử và chủ thể được mở khóa căn cước điện tử. Trường hợp từ chối mở khóa căn cước điện tử thì có văn bản trả lời và nêu rõ lý do (Mã: `KQ.G01.000156`)"
+          ]
+        },
+        {
+          "procedure_code": "3.000285",
+          "procedure_title": "Khóa căn cước điện tử (thực hiện tại cấp xã)",
+          "subdomain_key": "can_cuoc_chung_minh_nhan_dan",
+          "subdomain_label": "Căn cước công dân/Chứng minh nhân dân",
+          "event_id": 272,
+          "field": "Định danh và xác thực điện tử",
+          "agency": "Công an cấp Xã",
+          "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bf7-bd6c-72eb-98eb-cdb436f645a9",
+          "raw_data_file": "C:\\Users\\ku060\\Downloads\\VAIC source\\data-pipeline\\raw_data\\3_000285\\3_000285_procedure_detail.md",
+          "raw_data_available": true,
+          "operation_group": "khoa_can_cuoc_dien_tu",
+          "operation_key": "khoa_can_cuoc_dien_tu_thuc_hien_tai_cap_xa",
+          "overview": "1. a) Người được cấp căn cước điện tử thực hiện yêu cầu khóa căn cước điện tử trực tiếp tại Công an cấp xã trong cả nước không phụ thuộc vào nơi cư trú hoặc thông qua Ứng dụng định danh quốc gia theo Phiếu đề nghị khóa, mở khóa tài khoản định danh điện tử, căn cước điện tử (mẫu TK03 ban hành kèm theo Nghị định số 69/2024/NĐ-CP ngày 25/6/2024 quy định về định danh và xác thực điện tử). Cơ quan quản lý căn cước có trách nhiệm ghi nhận, kiểm tra, xác thực và khóa căn cước điện tử ngay sau khi nhận được yêu cầu khóa căn cước điện tử của công dân trên hệ thống định danh và xác thực điện tử. (Lưu ý: Lộ trình thực hiện khóa căn cước điện tử tại Công an cấp xã trong cả nước không phụ thuộc vào nơi cư trú thực hiện theo thông báo của Bộ Công an) b) Khóa căn cước điện tử theo đề nghị của cơ quan tiến hành tố tụng, cơ quan khác có thẩm quyền Bước 1: Cơ quan tiến hành tố tụng, cơ quan khác có thẩm quyền gửi văn bản đề nghị khóa căn cước điện tử đến Công an cấp xã trong cả nước không phụ thuộc vào nơi cư trú để tiếp nhận, xử lý. (Lưu ý: Lộ trình thực hiện khóa căn cước điện tử tại Công an cấp xã trong cả nước không phụ thuộc vào nơi cư trú thực hiện theo thông báo của Bộ Công an) Bước 2: Trong thời hạn 01 ngày làm việc, kể từ ngày nhận được đề nghị khóa căn cước điện tử của cơ quan tiến hành tố tụng, cơ quan khác có thẩm quyền, Công an cấp xã nơi tiếp nhận đề nghị phải xem xét, chuyển đề nghị khóa căn cước điện tử đến thủ trưởng cơ quan quản lý căn cước Bộ Công an để xem xét, phê duyệt thông qua hệ thống định danh và xác thực điện tử. Bước 3: Trong thời hạn 02 ngày làm việc kể từ ngày nhận được đề xuất của Công an cấp xã, thủ trưởng cơ quan quản lý căn cước Bộ Công an xem xét, phê duyệt đối với trường hợp yêu cầu khóa căn cước điện tử và thông báo tới cơ quan đề nghị khóa căn cước điện tử và công dân. Trường hợp từ chối khóa căn cước điện tử thì có văn bản trả lời và nêu rõ lý do.",
+          "procedure_flow": "1. a) Người được cấp căn cước điện tử thực hiện yêu cầu khóa căn cước điện tử trực tiếp tại Công an cấp xã trong cả nước không phụ thuộc vào nơi cư trú hoặc thông qua Ứng dụng định danh quốc gia theo Phiếu đề nghị khóa, mở khóa tài khoản định danh điện tử, căn cước điện tử (mẫu TK03 ban hành kèm theo Nghị định số 69/2024/NĐ-CP ngày 25/6/2024 quy định về định danh và xác thực điện tử). Cơ quan quản lý căn cước có trách nhiệm ghi nhận, kiểm tra, xác thực và khóa căn cước điện tử ngay sau khi nhận được yêu cầu khóa căn cước điện tử của công dân trên hệ thống định danh và xác thực điện tử. (Lưu ý: Lộ trình thực hiện khóa căn cước điện tử tại Công an cấp xã trong cả nước không phụ thuộc vào nơi cư trú thực hiện theo thông báo của Bộ Công an) b) Khóa căn cước điện tử theo đề nghị của cơ quan tiến hành tố tụng, cơ quan khác có thẩm quyền Bước 1: Cơ quan tiến hành tố tụng, cơ quan khác có thẩm quyền gửi văn bản đề nghị khóa căn cước điện tử đến Công an cấp xã trong cả nước không phụ thuộc vào nơi cư trú để tiếp nhận, xử lý. (Lưu ý: Lộ trình thực hiện khóa căn cước điện tử tại Công an cấp xã trong cả nước không phụ thuộc vào nơi cư trú thực hiện theo thông báo của Bộ Công an) Bước 2: Trong thời hạn 01 ngày làm việc, kể từ ngày nhận được đề nghị khóa căn cước điện tử của cơ quan tiến hành tố tụng, cơ quan khác có thẩm quyền, Công an cấp xã nơi tiếp nhận đề nghị phải xem xét, chuyển đề nghị khóa căn cước điện tử đến thủ trưởng cơ quan quản lý căn cước Bộ Công an để xem xét, phê duyệt thông qua hệ thống định danh và xác thực điện tử. Bước 3: Trong thời hạn 02 ngày làm việc kể từ ngày nhận được đề xuất của Công an cấp xã, thủ trưởng cơ quan quản lý căn cước Bộ Công an xem xét, phê duyệt đối với trường hợp yêu cầu khóa căn cước điện tử và thông báo tới cơ quan đề nghị khóa căn cước điện tử và công dân. Trường hợp từ chối khóa căn cước điện tử thì có văn bản trả lời và nêu rõ lý do.",
+          "requirements": "không",
+          "submission_methods": [
+            "Trực tuyến",
+            "Dịch vụ bưu chính",
+            "Trực tiếp"
+          ],
+          "processing_time_values": [
+            "3 ngày làm việc",
+            "3 ngày làm việc",
+            "3 ngày làm việc"
+          ],
+          "document_groups": [],
+          "result_items": [
+            "Thông báo kết quả tới cơ quan tiến hành tố tụng, cơ quan khác có thẩm quyền đề nghị khóa tài khoản định danh điện tử và chủ thể bị khóa tài khoản. Trường hợp từ chối khóa tài khoản định danh điện tử thì có văn bản trả lời và nêu rõ lý do. (Mã: `KQ.G01.000157`)"
+          ]
+        },
+        {
+          "procedure_code": "3.000286",
+          "procedure_title": "Mở khóa căn cước điện tử (thực hiện tại cấp xã)",
+          "subdomain_key": "can_cuoc_chung_minh_nhan_dan",
+          "subdomain_label": "Căn cước công dân/Chứng minh nhân dân",
+          "event_id": 272,
+          "field": "Định danh và xác thực điện tử",
+          "agency": "Công an cấp Xã",
+          "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bf7-bd65-767f-9dfe-e06cdd1502a8",
+          "raw_data_file": "C:\\Users\\ku060\\Downloads\\VAIC source\\data-pipeline\\raw_data\\3_000286\\3_000286_procedure_detail.md",
+          "raw_data_available": true,
+          "operation_group": "khoa_can_cuoc_dien_tu",
+          "operation_key": "mo_khoa_can_cuoc_dien_tu_thuc_hien_tai_cap_xa",
+          "overview": "1. a) Người bị khóa căn cước điện tử thực hiện yêu cầu mở khóa căn cước điện tử trực tiếp tại Công an cấp xã trong cả nước không phụ thuộc vào nơi cư trú hoặc thông qua Ứng dụng định danh quốc gia theo Phiếu đề nghị khóa, mở khóa tài khoản định danh điện tử, căn cước điện tử (mẫu TK03 ban hành kèm theo Nghị định số 69/2024/NĐ-CP ngày 25/6/2024 quy định về định danh và xác thực điện tử). Cơ quan quản lý căn cước có trách nhiệm ghi nhận, kiểm tra, xác thực và mở khóa căn cước điện tử ngay sau khi nhận được yêu cầu mở khóa căn cước điện tử của công dân trên hệ thống định danh và xác thực điện tử. (Lưu ý: Lộ trình thực hiện mở khóa căn cước điện tử tại Công an cấp xã trong cả nước không phụ thuộc vào nơi cư trú thực hiện theo thông báo của Bộ Công an) b) Mở khóa căn cước điện tử theo đề nghị của cơ quan tiến hành tố tụng, cơ quan khác có thẩm quyền: Bước 1: Cơ quan tiến hành tố tụng, cơ quan khác có thẩm quyền gửi văn bản đề nghị mở khóa căn cước điện tử đến Công an cấp xã trong cả nước không phụ thuộc vào nơi cư trú để tiếp nhận, xử lý. (Lưu ý: Lộ trình thực hiện mở khóa căn cước điện tử tại Công an cấp xã trong cả nước không phụ thuộc vào nơi cư trú thực hiện theo thông báo của Bộ Công an) Bước 2: Trong thời hạn 01 ngày làm việc, kể từ ngày nhận được đề nghị mở khóa căn cước điện tử của cơ quan tiến hành tố tụng, cơ quan khác có thẩm quyền, Công an cấp xã nơi tiếp nhận đề nghị phải xem xét, chuyển đề nghị mở khóa căn cước điện tử đến thủ trưởng cơ quan quản lý căn cước Bộ Công an để xem xét, phê duyệt thông qua hệ thống định danh và xác thực điện tử. Bước 3: Trong thời hạn 02 ngày làm việc kể từ ngày nhận được đề xuất của Công an cấp xã, thủ trưởng cơ quan quản lý căn cước Bộ Công an xem xét, phê duyệt đối với trường hợp yêu cầu mở khóa căn cước điện tử và thông báo tới cơ quan đề nghị mở khóa căn cước điện tử và chủ thể được mở khóa căn cước điện tử. Trường hợp từ chối mở khóa căn cước điện tử thì có văn bản trả lời và nêu rõ lý do.",
+          "procedure_flow": "1. a) Người bị khóa căn cước điện tử thực hiện yêu cầu mở khóa căn cước điện tử trực tiếp tại Công an cấp xã trong cả nước không phụ thuộc vào nơi cư trú hoặc thông qua Ứng dụng định danh quốc gia theo Phiếu đề nghị khóa, mở khóa tài khoản định danh điện tử, căn cước điện tử (mẫu TK03 ban hành kèm theo Nghị định số 69/2024/NĐ-CP ngày 25/6/2024 quy định về định danh và xác thực điện tử). Cơ quan quản lý căn cước có trách nhiệm ghi nhận, kiểm tra, xác thực và mở khóa căn cước điện tử ngay sau khi nhận được yêu cầu mở khóa căn cước điện tử của công dân trên hệ thống định danh và xác thực điện tử. (Lưu ý: Lộ trình thực hiện mở khóa căn cước điện tử tại Công an cấp xã trong cả nước không phụ thuộc vào nơi cư trú thực hiện theo thông báo của Bộ Công an) b) Mở khóa căn cước điện tử theo đề nghị của cơ quan tiến hành tố tụng, cơ quan khác có thẩm quyền: Bước 1: Cơ quan tiến hành tố tụng, cơ quan khác có thẩm quyền gửi văn bản đề nghị mở khóa căn cước điện tử đến Công an cấp xã trong cả nước không phụ thuộc vào nơi cư trú để tiếp nhận, xử lý. (Lưu ý: Lộ trình thực hiện mở khóa căn cước điện tử tại Công an cấp xã trong cả nước không phụ thuộc vào nơi cư trú thực hiện theo thông báo của Bộ Công an) Bước 2: Trong thời hạn 01 ngày làm việc, kể từ ngày nhận được đề nghị mở khóa căn cước điện tử của cơ quan tiến hành tố tụng, cơ quan khác có thẩm quyền, Công an cấp xã nơi tiếp nhận đề nghị phải xem xét, chuyển đề nghị mở khóa căn cước điện tử đến thủ trưởng cơ quan quản lý căn cước Bộ Công an để xem xét, phê duyệt thông qua hệ thống định danh và xác thực điện tử. Bước 3: Trong thời hạn 02 ngày làm việc kể từ ngày nhận được đề xuất của Công an cấp xã, thủ trưởng cơ quan quản lý căn cước Bộ Công an xem xét, phê duyệt đối với trường hợp yêu cầu mở khóa căn cước điện tử và thông báo tới cơ quan đề nghị mở khóa căn cước điện tử và chủ thể được mở khóa căn cước điện tử. Trường hợp từ chối mở khóa căn cước điện tử thì có văn bản trả lời và nêu rõ lý do.",
+          "requirements": "không",
+          "submission_methods": [
+            "Trực tuyến",
+            "Dịch vụ bưu chính",
+            "Trực tiếp"
+          ],
+          "processing_time_values": [
+            "3 ngày làm việc",
+            "3 ngày làm việc",
+            "3 ngày làm việc"
+          ],
+          "document_groups": [],
+          "result_items": [
+            "Thông báo kết quả tới cơ quan tiến hành tố tụng, cơ quan khác có thẩm quyền đề nghị khóa tài khoản định danh điện tử và chủ thể bị khóa tài khoản. Trường hợp từ chối khóa tài khoản định danh điện tử thì có văn bản trả lời và nêu rõ lý do. (Mã: `KQ.G01.000157`)"
+          ]
+        }
+      ]
+    }
+  ],
+  "subdomain_key": "can_cuoc_chung_minh_nhan_dan",
+  "subdomain_label": "Căn cước công dân/Chứng minh nhân dân"
+}

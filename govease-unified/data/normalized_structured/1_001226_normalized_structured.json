@@ -1,0 +1,171 @@
+{
+  "schema_version": "1.0",
+  "normalizer_version": "0.2.0",
+  "source": {
+    "procedure_code": "1.001226",
+    "title": "Cấp giấy phép đến các tỉnh, thành phố của Việt Nam cho công dân Lào nhập cảnh bằng Giấy thông hành biên giới tại Công an cấp tỉnh",
+    "raw_structured_parser_version": "0.1.0",
+    "field": "Quản lý xuất nhập cảnh"
+  },
+  "procedure": {
+    "level": "Cấp tỉnh",
+    "procedure_type": "TTHC được luật giao quy định chi tiết",
+    "target_users": [
+      "Người nước ngoài"
+    ],
+    "authorities": [
+      "Công an cấp Tỉnh"
+    ],
+    "receiving_places": [
+      "trực tiếp tại trụ sở Phòng Quản lý xuất nhập cảnh Công an tỉnh nơi công dân Lào nhập cảnh."
+    ]
+  },
+  "submission": {
+    "channels": [
+      "in_person"
+    ],
+    "methods": [
+      {
+        "method_id": "method_1",
+        "channel": "in_person",
+        "processing_time_text": "1 ngày làm việc",
+        "fee_text": null,
+        "description": null,
+        "is_online": false,
+        "is_postal": false,
+        "is_in_person": true
+      }
+    ],
+    "timing_summary": {
+      "unique_processing_times": [
+        "1 ngày làm việc"
+      ],
+      "method_count": 1
+    }
+  },
+  "documents": {
+    "required": [
+      {
+        "document_id": "t_khai_ngh_c_p_gi_y_ph_p_n_c_c_t_nh_th_nh_ph_c_a_vi_t_nam_m_u_n24_ban_h_nh_k_m_theo_th_ng_t_s_41_2011_tt_bca_ng_y_29_06_2011_c_a_b_c_ng_an",
+        "name": "Tờ khai đề nghị cấp giấy phép đến các tỉnh, thành phố của Việt Nam (mẫu N24 ban hành kèm theo Thông tư số 41/2011/TT-BCA, ngày 29/06/2011 của Bộ Công an)",
+        "group_name": "default",
+        "group_type": "unknown",
+        "original_count": "1",
+        "copy_count": "0",
+        "conditions": [],
+        "attachment_label": "TK de nghi cap GP den cac tinh tp cua VN(N24).doc",
+        "attachment_path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/1_001226/TK%20de%20nghi%20cap%20GP%20den%20cac%20tinh%20tp%20cua%20VN%28N24%29.doc"
+      },
+      {
+        "document_id": "gi_y_th_ng_h_nh_bi_n_gi_i_c_a_ng_i_ngh_c_p_gi_y_ph_p",
+        "name": "Giấy thông hành biên giới của người đề nghị cấp giấy phép",
+        "group_name": "default",
+        "group_type": "unknown",
+        "original_count": "1",
+        "copy_count": "0",
+        "conditions": [],
+        "attachment_label": null,
+        "attachment_path": null
+      }
+    ],
+    "conditional": [],
+    "presented": [],
+    "notes": [],
+    "forms": [
+      {
+        "name": "Tờ khai đề nghị cấp giấy phép đến các tỉnh, thành phố của Việt Nam (mẫu N24 ban hành kèm theo Thông tư số 41/2011/TT-BCA, ngày 29/06/2011 của Bộ Công an)",
+        "attachment_label": "TK de nghi cap GP den cac tinh tp cua VN(N24).doc",
+        "attachment_path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/1_001226/TK%20de%20nghi%20cap%20GP%20den%20cac%20tinh%20tp%20cua%20VN%28N24%29.doc"
+      }
+    ],
+    "empty_groups": [],
+    "document_count": 2
+  },
+  "process": {
+    "steps": [
+      {
+        "step_id": "step_1",
+        "title": null,
+        "content": "1.",
+        "actor": "user",
+        "channel_hint": null,
+        "time_hint": null
+      },
+      {
+        "step_id": "step_2",
+        "title": "Bước 1:",
+        "content": "Bước 1: Chuẩn bị hồ sơ theo quy định của pháp luật.",
+        "actor": "user",
+        "channel_hint": null,
+        "time_hint": null
+      },
+      {
+        "step_id": "step_3",
+        "title": "Bước 2:",
+        "content": "Bước 2: Nộp hồ sơ: * Công dân Lào mang giấy thông hành biên giới nhập cảnh vào một tỉnh biên giới của Việt Nam, nếu có nhu cầu đến các tỉnh, thành phố khác của Việt Nam thì nộp hồ sơ tại Cơ quan Quản lý xuất nhập cảnh Công an cấp tỉnh nơi nhập cảnh. * Cán bộ quản lý xuất nhập cảnh tiếp nhận hồ sơ, kiểm tra tính pháp lý và nội dung hồ sơ: + Trường hợp hồ sơ đã đầy đủ, hợp lệ thì cấp giấy hẹn trả kết quả cho người đề nghị cấp giấy phép; yêu cầu nộp phí cho cán bộ thu phí. Cán bộ thu phí thu tiền, giao biên lai thu tiền cho người đề nghị cấp giấy phép. + Trường hợp hồ sơ thiếu hoặc không hợp lệ thì cán bộ tiếp nhận hồ sơ hướng dẫn để người đề nghị cấp giấy phép hoàn chỉnh hồ sơ. * Thời gian tiếp nhận hồ sơ: Từ thứ 2 đến sáng thứ 7 hàng tuần (trừ ngày Tết, ngày lễ).",
+        "actor": "authority",
+        "channel_hint": null,
+        "time_hint": null
+      },
+      {
+        "step_id": "step_4",
+        "title": "Bước 3:",
+        "content": "Bước 3: Nhận kết quả + Người đề nghị cấp giấy phép trực tiếp nhận kết quả tại Cơ quan Quản lý xuất nhập cảnh nơi nộp hồ sơ. Khi đến nhận kết quả mang theo giấy hẹn trả kết quả, biên lai thu tiền để đối chiếu. + Trường hợp chưa cấp giấy phép thì trả lời bằng văn bản và nêu rõ lý do. + Thời gian trả kết quả: Từ thứ 2 đến thứ 6 hàng tuần (trừ ngày Tết, ngày lễ).",
+        "actor": "authority",
+        "channel_hint": "trực tiếp",
+        "time_hint": null
+      }
+    ],
+    "step_count": 4,
+    "notes": []
+  },
+  "eligibility": {
+    "conditions": [
+      "công dân Lào nhập cảnh Việt Nam bằng giấy thông hành biên giới do Công an tỉnh có chung đường biên giới với Việt Nam của Lào cấp để công tác hoặc giải quyết việc riêng."
+    ],
+    "has_conditions": true
+  },
+  "results": {
+    "items": [
+      {
+        "name": "Giấy phép đến các tỉnh, thành phố của Việt Nam",
+        "result_code": "KQ.G01.000003",
+        "raw_text": "Giấy phép đến các tỉnh, thành phố của Việt Nam"
+      }
+    ],
+    "primary_result": {
+      "name": "Giấy phép đến các tỉnh, thành phố của Việt Nam",
+      "result_code": "KQ.G01.000003",
+      "raw_text": "Giấy phép đến các tỉnh, thành phố của Việt Nam"
+    }
+  },
+  "legal_basis": {
+    "items": [
+      {
+        "title": "QUY ĐỊNH MỨC THU, CHẾ ĐỘ THU, NỘP, QUẢN LÝ VÀ SỬ DỤNG PHÍ, LỆ PHÍ TRONG LĨNH VỰC XUẤT CẢNH, NHẬP CẢNH, QUÁ CẢNH, CƯ TRÚ TẠI VIỆT NAM",
+        "code": "25/2021/TT-BTC"
+      },
+      {
+        "title": "Thông tư 41/2011/TT-BCA",
+        "code": "41/2011/TT-BCA"
+      }
+    ],
+    "count": 2
+  },
+  "attachments": [
+    {
+      "label": "TK de nghi cap GP den cac tinh tp cua VN(N24).doc",
+      "path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/1_001226/TK%20de%20nghi%20cap%20GP%20den%20cac%20tinh%20tp%20cua%20VN%28N24%29.doc",
+      "source_section": "Thành phần hồ sơ",
+      "document_name": "Tờ khai đề nghị cấp giấy phép đến các tỉnh, thành phố của Việt Nam (mẫu N24 ban hành kèm theo Thông tư số 41/2011/TT-BCA, ngày 29/06/2011 của Bộ Công an)"
+    }
+  ],
+  "signals": {
+    "raw_parse_warnings": [],
+    "missing_documents": false,
+    "documents_section_present": true,
+    "documents_declared_empty": false,
+    "documents_only_in_notes": false,
+    "missing_results": false
+  }
+}

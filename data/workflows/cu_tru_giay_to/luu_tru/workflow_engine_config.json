@@ -1,0 +1,133 @@
+{
+  "schema_version": "1.0",
+  "domain": "cu_tru_giay_to",
+  "updated_at": "2026-07-18",
+  "source_files": [
+    "C:\\Users\\ku060\\Downloads\\VAIC source\\data-pipeline\\main\\full-data.csv",
+    "C:\\Users\\ku060\\Downloads\\VAIC source\\data-pipeline\\data\\workflows\\cu_tru_giay_to\\summary.csv",
+    "C:\\Users\\ku060\\Downloads\\VAIC source\\data-pipeline\\data\\workflows\\cu_tru_giay_to\\normalized.json",
+    "C:\\Users\\ku060\\Downloads\\VAIC source\\data-pipeline\\raw_data"
+  ],
+  "coverage": {
+    "expected_codes": [
+      "2.001159"
+    ],
+    "covered_codes": [
+      "2.001159"
+    ],
+    "missing_codes": []
+  },
+  "llm_contract": {
+    "role": "parse_user_answer_and_rephrase_question_only",
+    "required_output_schema": {
+      "intent": "cu_tru_giay_to",
+      "current_node": "string",
+      "slot_updates": {
+        "subdomain_key": "ho_khau | tam_tru | luu_tru | can_cuoc_chung_minh_nhan_dan | ho_chieu | tam_vang | unknown",
+        "operation_key": "string",
+        "operation_group": "string"
+      },
+      "confidence": "0_to_1",
+      "needs_human_review": "boolean"
+    }
+  },
+  "entry_prompts": [
+    "Bạn đang cần làm việc về cư trú, căn cước hay hộ chiếu?",
+    "Bạn muốn đăng ký, gia hạn, xóa, xác nhận thông tin, cấp lại giấy tờ hay xử lý giấy tờ bị mất?"
+  ],
+  "slots": [
+    {
+      "name": "subdomain_key",
+      "required": true,
+      "description": "Nhánh chính của nhóm Cư trú và giấy tờ tùy thân."
+    },
+    {
+      "name": "operation_key",
+      "required": true,
+      "description": "Thao tác cụ thể ánh xạ trực tiếp tới thủ tục cuối cùng."
+    },
+    {
+      "name": "operation_group",
+      "required": false,
+      "description": "Nhóm thao tác để gom các thủ tục gần nhau cho UI và parser."
+    }
+  ],
+  "subdomain_catalog": [
+    {
+      "subdomain_key": "luu_tru",
+      "subdomain_label": "Lưu trú",
+      "event_id": 271,
+      "summary": "Nhóm thủ tục thông báo lưu trú cho trường hợp ở ngắn hạn, khác với đăng ký tạm trú."
+    }
+  ],
+  "decision_tree": {
+    "start_node": "residence_identity_subdomain",
+    "nodes": [
+      {
+        "id": "residence_identity_subdomain",
+        "type": "question",
+        "slot": "subdomain_key",
+        "question": "Bạn đang hỏi về hộ khẩu, tạm trú, lưu trú, căn cước, hộ chiếu hay tạm vắng?",
+        "options": [
+          "luu_tru"
+        ],
+        "prefilled_value": "luu_tru"
+      },
+      {
+        "id": "residence_identity_operation",
+        "type": "question",
+        "slot": "operation_key",
+        "question": "Bạn cần làm thao tác nào cụ thể trong nhánh đã chọn?",
+        "options_by_subdomain": {
+          "luu_tru": [
+            {
+              "operation_key": "thong_bao_luu_tru",
+              "operation_group": "thong_bao_luu_tru",
+              "procedure_code": "2.001159",
+              "procedure_title": "Thông báo lưu trú"
+            }
+          ]
+        },
+        "options": [
+          "thong_bao_luu_tru"
+        ]
+      }
+    ],
+    "routes": [
+      {
+        "route_id": "luu_tru-2_001159",
+        "conditions": {
+          "subdomain_key": "luu_tru",
+          "operation_key": "thong_bao_luu_tru"
+        },
+        "procedure_code": "2.001159",
+        "procedure_name": "Thông báo lưu trú",
+        "why_this_route": "Route trực tiếp cho nhu cầu 'Thông báo lưu trú' trong nhánh 'Lưu trú'."
+      }
+    ]
+  },
+  "pre_submission_checks": [
+    {
+      "field_group": "residence_information",
+      "checks": [
+        "Nhóm cư trú phải phân biệt rõ thường trú, tạm trú, lưu trú và tạm vắng trước khi chọn thủ tục.",
+        "Địa chỉ cư trú và giấy tờ chứng minh chỗ ở phải thống nhất giữa tờ khai, dữ liệu cư trú và hồ sơ đính kèm."
+      ]
+    },
+    {
+      "field_group": "identity_documents",
+      "checks": [
+        "Nhóm căn cước phải làm rõ là cấp mới, cấp đổi, cấp lại hay điều chỉnh/tích hợp thông tin.",
+        "Nhóm định danh điện tử cần xác định đúng thao tác cấp mức 2, khóa hay mở khóa căn cước điện tử."
+      ]
+    },
+    {
+      "field_group": "passport_context",
+      "checks": [
+        "Nhóm hộ chiếu phải xác định rõ làm trong nước hay tại cơ quan đại diện ở nước ngoài.",
+        "Các trường hợp mất hộ chiếu hoặc khôi phục giá trị sử dụng phải có căn cứ về tình trạng giấy tờ hiện tại."
+      ]
+    }
+  ],
+  "subdomain_key": "luu_tru"
+}

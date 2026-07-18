@@ -1,0 +1,258 @@
+{
+  "schema_version": "1.0",
+  "normalizer_version": "0.2.0",
+  "source": {
+    "procedure_code": "3.000422",
+    "title": "Thủ tục tuyển sinh đào tạo trình độ đại học, cao đẳng quân sự hệ chính quy",
+    "raw_structured_parser_version": "0.1.0",
+    "field": "Tuyển sinh quân sự"
+  },
+  "procedure": {
+    "level": "Cấp bộ/ngành",
+    "procedure_type": "OTHER",
+    "target_users": [
+      "Công dân Việt Nam"
+    ],
+    "authorities": [
+      "Ban chỉ huy quân sự cấp Xã"
+    ],
+    "receiving_places": []
+  },
+  "submission": {
+    "channels": [
+      "in_person"
+    ],
+    "methods": [
+      {
+        "method_id": "method_1",
+        "channel": "in_person",
+        "processing_time_text": "1 ngày",
+        "fee_text": null,
+        "description": null,
+        "is_online": false,
+        "is_postal": false,
+        "is_in_person": true
+      }
+    ],
+    "timing_summary": {
+      "unique_processing_times": [
+        "1 ngày"
+      ],
+      "method_count": 1
+    }
+  },
+  "documents": {
+    "required": [
+      {
+        "document_id": "04_nh_ch_n_dung_c_4_x_6cm_theo_quy_nh_c_a_b_qu_c_ph_ng",
+        "name": "04 ảnh chân dung cỡ 4 x 6cm theo quy định của Bộ Quốc phòng.",
+        "group_name": "default",
+        "group_type": "unknown",
+        "original_count": "1",
+        "copy_count": "0",
+        "conditions": [],
+        "attachment_label": null,
+        "attachment_path": null
+      },
+      {
+        "document_id": "01_phi_u_kh_m_s_c_kho",
+        "name": "01 phiếu khám sức khoẻ.",
+        "group_name": "default",
+        "group_type": "unknown",
+        "original_count": "1",
+        "copy_count": "0",
+        "conditions": [],
+        "attachment_label": null,
+        "attachment_path": null
+      },
+      {
+        "document_id": "01_b_n_th_m_tra_x_c_minh_l_l_ch",
+        "name": "01 bản thẩm tra, xác minh lý lịch.",
+        "group_name": "default",
+        "group_type": "unknown",
+        "original_count": "1",
+        "copy_count": "0",
+        "conditions": [],
+        "attachment_label": null,
+        "attachment_path": null
+      },
+      {
+        "document_id": "03_phi_u_ng_k_s_tuy_n_theo_quy_nh_c_a_b_qu_c_ph_ng",
+        "name": "03 phiếu đăng ký sơ tuyển theo quy định của Bộ Quốc phòng.",
+        "group_name": "default",
+        "group_type": "unknown",
+        "original_count": "1",
+        "copy_count": "0",
+        "conditions": [],
+        "attachment_label": null,
+        "attachment_path": null
+      }
+    ],
+    "conditional": [
+      {
+        "document_id": "01_gi_y_ch_ng_nh_n_c_h_ng_u_ti_n_i_v_i_nh_ng_th_sinh_thu_c_di_n_u_ti_n_n_u_c",
+        "name": "01 giấy chứng nhận được hưởng ưu tiên đối với những thí sinh thuộc diện ưu tiên (nếu có).",
+        "group_name": "default",
+        "group_type": "unknown",
+        "original_count": "1",
+        "copy_count": "0",
+        "conditions": [
+          "01 giấy chứng nhận được hưởng ưu tiên đối với những thí sinh thuộc diện ưu tiên (nếu có)."
+        ],
+        "attachment_label": null,
+        "attachment_path": null
+      }
+    ],
+    "presented": [],
+    "notes": [],
+    "forms": [],
+    "empty_groups": [],
+    "document_count": 5
+  },
+  "process": {
+    "steps": [
+      {
+        "step_id": "step_1",
+        "title": null,
+        "content": "1. Thí sinh phải tự mình viết kê khai các mẫu biểu, hồ sơ sơ tuyển thuộc phần quy định thí sinh tự khai và trực tiếp đến nộp hồ sơ sơ tuyển cho Ban Tuyển sinh quân sự cấp xã (đối với thanh niên ngoài Quân đội), cấp trung đoàn (đối với quân nhân tại ngũ) theo đúng thời gian quy định. Khi đến nộp hồ sơ đăng ký dự tuyển, thí sinh phải mang Giấy chứng minh nhân dân, thẻ căn cước công dân hoặc các giấy tờ tùy thân khác để đối chiếu",
+        "actor": "user",
+        "channel_hint": "trực tiếp",
+        "time_hint": null
+      },
+      {
+        "step_id": "step_2",
+        "title": null,
+        "content": "Ban Tuyển sinh cấp xã tổ chức khám sơ tuyển sức khỏe (do Hội đồng khám sức khỏe nghĩa vụ quân sự cấp xã thực hiện)",
+        "actor": "user",
+        "channel_hint": null,
+        "time_hint": null
+      },
+      {
+        "step_id": "step_3",
+        "title": null,
+        "content": "Ban Tuyển sinh quân sự cấp xã tổ chức xác minh chính trị, gồm: Tình hình kinh tế, chính trị của gia đình; tình hình bản thân thí sinh; người cung cấp lý lịch. Xét duyệt hồ sơ đăng ký dự tuyển kết luận cụ thể những trường hợp đủ tiêu chuẩn và những trường hợp không đủ tiêu chuẩn; tổng hợp số đủ tiêu chuẩn được dự tuyển theo từng trường, nộp hồ sơ và danh sách về Ban Tuyển sinh quân sự cấp tỉnh; trường hợp không đủ tiêu chuẩn dự tuyển phải thông báo lý do cụ thể tới thí sinh",
+        "actor": "user",
+        "channel_hint": null,
+        "time_hint": null
+      },
+      {
+        "step_id": "step_4",
+        "title": null,
+        "content": "Ban Tuyển sinh quân sự cấp tỉnh xét duyệt kết quả đề nghị của cấp huyện; tổng hợp, bàn giao hồ sơ sơ tuyển, danh sách thí sinh đăng ký dự tuyển, danh sách thí sinh có nơi thường trú phía Nam nhưng thuộc diện hưởng điểm chuẩn đối với thí sinh các tỉnh phía Bắc cho các trường và báo cáo về Ban Tuyển sinh quân sự Bộ Quốc phòng",
+        "actor": "user",
+        "channel_hint": null,
+        "time_hint": null
+      },
+      {
+        "step_id": "step_5",
+        "title": null,
+        "content": "Các trường tổ chức thẩm định và xét duyệt hồ sơ thí sinh đăng ký dự tuyển:",
+        "actor": "user",
+        "channel_hint": null,
+        "time_hint": null
+      },
+      {
+        "step_id": "step_6",
+        "title": null,
+        "content": "- Thành phần tổ xét duyệt do Chủ tịch Hội đồng tuyển sinh trường quyết định, gồm: Cán bộ ngành bảo vệ, thanh tra và các cơ quan chức năng của trường.",
+        "actor": "authority",
+        "channel_hint": null,
+        "time_hint": null
+      },
+      {
+        "step_id": "step_7",
+        "title": null,
+        "content": "- Tổ chức xét duyệt hồ sơ chặt chẽ, kiểm tra ảnh, lý lịch chính trị gia đình, kết quả khám sức khoẻ, chính sách ưu tiên và các nội dung kê khai trong hồ sơ đăng ký dự tuyển của thí sinh, đối chiếu với các tiêu chuẩn quy định để kết luận thí sinh đủ tiêu chuẩn hay không dự tuyển.",
+        "actor": "user",
+        "channel_hint": null,
+        "time_hint": null
+      },
+      {
+        "step_id": "step_8",
+        "title": null,
+        "content": "+ Trường hợp xác minh lý lịch của thí sinh do người đăng ký dự tuyển tự khai, tự xin xác nhận của cấp ủy địa phương; cấp ủy địa phương kết luận không rõ về lịch sử chính trị và điều kiện phát triển vào Đảng Cộng sản Việt Nam; hồ sơ không dán ảnh, không đóng dấu hoặc đóng dấu không rõ thì Hội đồng tuyển sinh trường trả hồ sơ cho Ban Tuyển sinh các địa phương để bổ sung, hoàn chỉnh theo quy định.",
+        "actor": "user",
+        "channel_hint": null,
+        "time_hint": null
+      },
+      {
+        "step_id": "step_9",
+        "title": null,
+        "content": "+ Trường hợp có nghi vấn, hoặc có nội dung chưa rõ, Hội đồng tuyển sinh trường phải yêu cầu Ban Tuyển sinh các địa phương đăng ký dự tuyển xác minh làm rõ.",
+        "actor": "user",
+        "channel_hint": null,
+        "time_hint": null
+      },
+      {
+        "step_id": "step_10",
+        "title": null,
+        "content": "+ Trường hợp thí sinh là thanh niên ngoài Quân đội đã nộp hồ sơ đăng ký dự tuyển, qua xét duyệt các trường kết luận không đủ tiêu chuẩn dự tuyển, các trường phải thông báo cho Ban Tuyển sinh quân sự nơi thí sinh đăng ký dự tuyển và thí sinh biết.",
+        "actor": "user",
+        "channel_hint": null,
+        "time_hint": null
+      },
+      {
+        "step_id": "step_11",
+        "title": null,
+        "content": "- Tổng hợp báo cáo kết quả xét duyệt hồ sơ về Ban Tuyển sinh quân sự Bộ Quốc phòng, thông báo kết quả xét duyệt hồ sơ cho các địa phương trước ngày 20 tháng 6; gửi phiếu báo kết quả cho thí sinh đủ điều kiện dự tuyển trước ngày 27 tháng 6 hằng năm",
+        "actor": "user",
+        "channel_hint": null,
+        "time_hint": "20 tháng"
+      }
+    ],
+    "step_count": 11,
+    "notes": []
+  },
+  "eligibility": {
+    "conditions": [],
+    "has_conditions": false
+  },
+  "results": {
+    "items": [
+      {
+        "name": "Phiếu báo cho thí sinh",
+        "result_code": "KQ.G11.000233",
+        "raw_text": "Phiếu báo cho thí sinh"
+      }
+    ],
+    "primary_result": {
+      "name": "Phiếu báo cho thí sinh",
+      "result_code": "KQ.G11.000233",
+      "raw_text": "Phiếu báo cho thí sinh"
+    }
+  },
+  "legal_basis": {
+    "items": [
+      {
+        "title": "Luật Giáo dục",
+        "code": "43/2019/QH14"
+      },
+      {
+        "title": "Sửa đổi bổ sung một số điều của Luật Nghĩa vụ quân sự",
+        "code": "43/2005/QH11"
+      },
+      {
+        "title": "Luật dân quân tự vệ",
+        "code": "48/2019/QH14"
+      },
+      {
+        "title": "Sửa đổi, bổ sung một số điều của Luật Sĩ quan quân đội nhân dân Việt Nam",
+        "code": "19/2008/QH12"
+      },
+      {
+        "title": "Giáo dục",
+        "code": "38/2005/QH11"
+      }
+    ],
+    "count": 5
+  },
+  "attachments": [],
+  "signals": {
+    "raw_parse_warnings": [],
+    "missing_documents": false,
+    "documents_section_present": true,
+    "documents_declared_empty": false,
+    "documents_only_in_notes": false,
+    "missing_results": false
+  }
+}

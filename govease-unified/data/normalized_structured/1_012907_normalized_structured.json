@@ -1,0 +1,193 @@
+{
+  "schema_version": "1.0",
+  "normalizer_version": "0.2.0",
+  "source": {
+    "procedure_code": "1.012907",
+    "title": "Cấp lại chứng chỉ hành nghề môi giới bất động sản (trong trường hợp chứng chỉ bị cháy, bị mất, bị rách, bị hủy hoại do thiên tai hoặc lý do bất khả kháng khác)",
+    "raw_structured_parser_version": "0.1.0",
+    "field": "Kinh doanh bất động sản"
+  },
+  "procedure": {
+    "level": "Cấp tỉnh",
+    "procedure_type": "TTHC được luật giao quy định chi tiết",
+    "target_users": [
+      "Công dân Việt Nam",
+      "Người nước ngoài",
+      "Người Việt Nam định cư ở nước ngoài"
+    ],
+    "authorities": [
+      "Sở Xây dựng"
+    ],
+    "receiving_places": []
+  },
+  "submission": {
+    "channels": [
+      "in_person",
+      "online",
+      "postal"
+    ],
+    "methods": [
+      {
+        "method_id": "method_1",
+        "channel": "online",
+        "processing_time_text": "10 ngày làm việc",
+        "fee_text": null,
+        "description": null,
+        "is_online": true,
+        "is_postal": false,
+        "is_in_person": false
+      },
+      {
+        "method_id": "method_2",
+        "channel": "postal",
+        "processing_time_text": "10 ngày làm việc",
+        "fee_text": null,
+        "description": null,
+        "is_online": false,
+        "is_postal": true,
+        "is_in_person": false
+      },
+      {
+        "method_id": "method_3",
+        "channel": "in_person",
+        "processing_time_text": "10 ngày làm việc",
+        "fee_text": null,
+        "description": null,
+        "is_online": false,
+        "is_postal": false,
+        "is_in_person": true
+      }
+    ],
+    "timing_summary": {
+      "unique_processing_times": [
+        "10 ngày làm việc"
+      ],
+      "method_count": 3
+    }
+  },
+  "documents": {
+    "required": [
+      {
+        "document_id": "02_nh_c_4x6cm_ch_p_trong_th_i_gian_06_th_ng_t_nh_n_ng_y_n_p_h_s",
+        "name": "02 ảnh cỡ 4x6cm chụp trong thời gian 06 tháng tính đến ngày nộp hồ sơ;",
+        "group_name": "default",
+        "group_type": "unknown",
+        "original_count": "1",
+        "copy_count": "1",
+        "conditions": [],
+        "attachment_label": null,
+        "attachment_path": null
+      },
+      {
+        "document_id": "n_xin_c_p_l_i_ch_ng_ch_c_d_n_nh_theo_m_u_t_i_ph_l_c_xxvii_ngh_nh_s_96_2024_n_cp_ng_y_24_7_2024_c_a_ch_nh_ph_quy_nh_chi_ti_t_m_t_s_i_u_c_a_lu_t_kinh_doanh_b_t_ng_s_n",
+        "name": "Đơn xin cấp lại chứng chỉ có dán ảnh (theo mẫu tại Phụ lục XXVII Nghị định số 96/2024/NĐ-CP ngày 24/7/2024 của Chính phủ quy định chi tiết một số điều của Luật Kinh doanh bất động sản);",
+        "group_name": "default",
+        "group_type": "unknown",
+        "original_count": "1",
+        "copy_count": "1",
+        "conditions": [],
+        "attachment_label": "Phụ lục XXVII.docx",
+        "attachment_path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/1_012907/Ph%E1%BB%A5%20l%E1%BB%A5c%20XXVII.docx"
+      }
+    ],
+    "conditional": [
+      {
+        "document_id": "ch_ng_ch_c_n_u_c",
+        "name": "Chứng chỉ cũ (nếu có).",
+        "group_name": "default",
+        "group_type": "unknown",
+        "original_count": "1",
+        "copy_count": "1",
+        "conditions": [
+          "Chứng chỉ cũ (nếu có)."
+        ],
+        "attachment_label": null,
+        "attachment_path": null
+      }
+    ],
+    "presented": [],
+    "notes": [],
+    "forms": [
+      {
+        "name": "Đơn xin cấp lại chứng chỉ có dán ảnh (theo mẫu tại Phụ lục XXVII Nghị định số 96/2024/NĐ-CP ngày 24/7/2024 của Chính phủ quy định chi tiết một số điều của Luật Kinh doanh bất động sản);",
+        "attachment_label": "Phụ lục XXVII.docx",
+        "attachment_path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/1_012907/Ph%E1%BB%A5%20l%E1%BB%A5c%20XXVII.docx"
+      }
+    ],
+    "empty_groups": [],
+    "document_count": 3
+  },
+  "process": {
+    "steps": [
+      {
+        "step_id": "step_1",
+        "title": null,
+        "content": "1. - Người có chứng chỉ bị mất, bị rách, bị cháy, bị hủy hoại chứng chỉ do thiên tai hoặc lý do bất khả kháng khác nộp 01 bộ hồ sơ đến Sở Xây dựng.",
+        "actor": "user",
+        "channel_hint": null,
+        "time_hint": null
+      },
+      {
+        "step_id": "step_2",
+        "title": null,
+        "content": "- Trong thời hạn 10 ngày làm việc kể từ ngày nhận đủ hồ sơ, Sở Xây dựng đã cấp chứng chỉ kiểm tra hồ sơ và cấp lại chứng chỉ.",
+        "actor": "user",
+        "channel_hint": null,
+        "time_hint": "10 ngày làm việc"
+      }
+    ],
+    "step_count": 2,
+    "notes": []
+  },
+  "eligibility": {
+    "conditions": [],
+    "has_conditions": false
+  },
+  "results": {
+    "items": [
+      {
+        "name": "Chứng chỉ hành nghề môi giới bất động sản",
+        "result_code": "KQ.G17.000207",
+        "raw_text": "Chứng chỉ hành nghề môi giới bất động sản"
+      }
+    ],
+    "primary_result": {
+      "name": "Chứng chỉ hành nghề môi giới bất động sản",
+      "result_code": "KQ.G17.000207",
+      "raw_text": "Chứng chỉ hành nghề môi giới bất động sản"
+    }
+  },
+  "legal_basis": {
+    "items": [
+      {
+        "title": "quy định về phân quyền, phân cấp trong lĩnh vực quản lý nhà nước của Bộ Xây dựng",
+        "code": "144/2025/NĐ-CP"
+      },
+      {
+        "title": "Về xây dựng và quản lý Hệ thống thông tin, cơ sở dữ liệu về nhà ở và thị trường bất động sản",
+        "code": "357/2025/NĐ-CP"
+      },
+      {
+        "title": "Quy định chi tiết một số điều của Luật Kinh doanh bất động sản",
+        "code": "96/2024/NĐ-CP"
+      }
+    ],
+    "count": 3
+  },
+  "attachments": [
+    {
+      "label": "Phụ lục XXVII.docx",
+      "path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/1_012907/Ph%E1%BB%A5%20l%E1%BB%A5c%20XXVII.docx",
+      "source_section": "Thành phần hồ sơ",
+      "document_name": "Đơn xin cấp lại chứng chỉ có dán ảnh (theo mẫu tại Phụ lục XXVII Nghị định số 96/2024/NĐ-CP ngày 24/7/2024 của Chính phủ quy định chi tiết một số điều của Luật Kinh doanh bất động sản);"
+    }
+  ],
+  "signals": {
+    "raw_parse_warnings": [],
+    "missing_documents": false,
+    "documents_section_present": true,
+    "documents_declared_empty": false,
+    "documents_only_in_notes": false,
+    "missing_results": false
+  }
+}

@@ -1,0 +1,113 @@
+{
+  "schema_version": "1.0",
+  "enricher_version": "0.2.0",
+  "source": {
+    "procedure_code": "1.012327",
+    "title": "Thủ tục thừa nhận tiêu chuẩn quản lý chất lượng cơ sở khám bệnh, chữa bệnh",
+    "group_key": "suc_khoe_y_te",
+    "workflow_family": null,
+    "subflow": null
+  },
+  "experience": {
+    "entry_label": "Hỗ trợ y tế và bảo hiểm",
+    "overview_summary": "Thủ tục này thuộc nhóm y tế, thường cần đối chiếu thông tin người bệnh, đơn vị tiếp nhận hoặc quyền lợi chuyên ngành. Kết quả thường nhận được là Quyết định thừa nhận tiêu chuẩn của tổ chức chứng nhận chất lượng. Thời gian xử lý tham khảo: 20 ngày.",
+    "next_step_summary": "Nên xác định rõ đối tượng tham gia, quyền lợi hoặc nhu cầu điều chỉnh hồ sơ y tế trước khi nộp. Có thể chọn kênh nộp phù hợp: Trực tiếp, Trực tuyến, Dịch vụ bưu chính. Hiện có khoảng 6 mục giấy tờ cần theo dõi trong checklist.",
+    "tone": "supportive_public_service"
+  },
+  "guidance": {
+    "highlight_documents": [
+      {
+        "bucket": "required",
+        "name": "4. Bản sao có chứng thực Quyết định thành lập, Giấy chứng nhận đăng ký doanh nghiệp hoặc Giấy chứng nhận đầu tư của Tổ chức chứng nhận chất lượng",
+        "conditions": [],
+        "attachment_path": null
+      },
+      {
+        "bucket": "required",
+        "name": "2. Bản đầy đủ tiêu chuẩn quản lý chất lượng đề nghị thừa nhận",
+        "conditions": [],
+        "attachment_path": null
+      },
+      {
+        "bucket": "required",
+        "name": "1. Đơn đề nghị thừa nhận tiêu chuẩn quản lý chất lượng cơ sở khám bệnh, chữa bệnh theo quy định tại mẫu 02 Phụ lục số XX",
+        "conditions": [],
+        "attachment_path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/1_012327/M%E1%BA%ABu%2002%20Ph%E1%BB%A5%20l%E1%BB%A5c%20XX.docx"
+      },
+      {
+        "bucket": "required",
+        "name": "6. Bản trả lời đáp ứng các tiêu chí cụ thể thừa nhận tiêu chuẩn quản lý chất lượng cơ sở khám chữa bệnh theo quy định tại mẫu số 01 Phụ lục số XX",
+        "conditions": [],
+        "attachment_path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/1_012327/M%E1%BA%ABu%2001%20Ph%E1%BB%A5%20l%E1%BB%A5c%20XX.docx"
+      },
+      {
+        "bucket": "required",
+        "name": "3. Bản sao có chứng thực Giấy chứng nhận đăng ký hoạt động đánh giá, chứng nhận chất lượng cơ sở khám bệnh, chữa bệnh của Tổ chức chứng nhận chất lượng theo quy định tại Điều 76 và Điều 77 Nghị định số 96/2023/NĐ-CP ngày 30 tháng 12 năm 2023 của Chính phủ quy định chi tiết một số điều của Luật Khám bệnh, chữa bệnh (sau đây gọi tắt là Nghị định số 96/2023/NĐ-CP).",
+        "conditions": [],
+        "attachment_path": null
+      },
+      {
+        "bucket": "required",
+        "name": "5. Tài liệu chứng minh tiêu chuẩn đã được áp dụng thử nghiệm tại các cơ sở khám bệnh, chữa bệnh tại Việt Nam bao gồm: báo cáo thử nghiệm áp dụng tiêu chuẩn; tổng hợp ý kiến của cán bộ quản lý các cơ sở khám bệnh, chữa bệnh và các chuyên gia trong lĩnh vực quản lý chất lượng.",
+        "conditions": [],
+        "attachment_path": null
+      }
+    ],
+    "special_cases": [
+      "Có thể cần đối chiếu quyền lợi bảo hiểm hoặc tuyến chuyên môn",
+      "Có thể cần đối chiếu thông tin thửa đất hoặc giấy chứng nhận"
+    ],
+    "common_errors": [
+      "Điền sai mẫu tờ khai hoặc chọn sai biểu mẫu đi kèm.",
+      "Thông tin thửa đất, tài sản hoặc giấy chứng nhận chưa khớp với hồ sơ hiện có."
+    ],
+    "validation_hints": [
+      "Nên xác định trước kênh nộp hồ sơ để biết có cần bản giấy, bản điện tử hay xuất trình trực tiếp.",
+      "Có mẫu biểu đính kèm, nên kiểm tra đúng biểu mẫu trước khi nộp.",
+      "Nên xác định đúng nhóm đối tượng, mã số bảo hiểm và quyền lợi áp dụng trước khi nộp."
+    ]
+  },
+  "intake": {
+    "candidate_input_fields": [
+      {
+        "field_id": "request_subject",
+        "label": "Đối tượng làm thủ tục",
+        "field_type": "text",
+        "required": true
+      },
+      {
+        "field_id": "insurance_or_medical_need",
+        "label": "Nhu cầu bảo hiểm hoặc y tế",
+        "field_type": "text",
+        "required": true
+      },
+      {
+        "field_id": "submission_channel_preference",
+        "label": "Kênh nộp dự kiến",
+        "field_type": "enum",
+        "required": false
+      },
+      {
+        "field_id": "has_insurance_number",
+        "label": "Đã có mã BHXH/BHYT",
+        "field_type": "boolean",
+        "required": false
+      }
+    ],
+    "suggested_clarifying_questions": [
+      "Bạn đang muốn đăng ký, điều chỉnh hay xác nhận quyền lợi y tế hoặc bảo hiểm nào?",
+      "Bạn đã có mã BHXH/BHYT hoặc thông tin đơn vị tiếp nhận liên quan chưa?"
+    ]
+  },
+  "ui_hints": {
+    "primary_channel": "online",
+    "result_label": "Quyết định thừa nhận tiêu chuẩn của tổ chức chứng nhận chất lượng",
+    "time_badge": "20 ngày",
+    "document_count_badge": 6
+  },
+  "provenance": {
+    "generator": "workflow_domain_enricher",
+    "derivation_mode": "rule_based_semantic_enrichment",
+    "supported_group": true
+  }
+}

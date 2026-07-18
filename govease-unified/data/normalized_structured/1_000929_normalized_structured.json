@@ -1,0 +1,190 @@
+{
+  "schema_version": "1.0",
+  "normalizer_version": "0.2.0",
+  "source": {
+    "procedure_code": "1.000929",
+    "title": "Cấp phép hoạt động báo chí tại Việt Nam cho phóng viên nước ngoài không thường trú",
+    "raw_structured_parser_version": "0.1.0",
+    "field": "Báo chí"
+  },
+  "procedure": {
+    "level": "Cấp bộ/ngành",
+    "procedure_type": "TTHC được luật giao quy định chi tiết",
+    "target_users": [
+      "Người nước ngoài",
+      "Tổ chức nước ngoài"
+    ],
+    "authorities": [
+      "Bộ Ngoại giao"
+    ],
+    "receiving_places": []
+  },
+  "submission": {
+    "channels": [
+      "in_person",
+      "postal"
+    ],
+    "methods": [
+      {
+        "method_id": "method_1",
+        "channel": "postal",
+        "processing_time_text": "10 ngày làm việc",
+        "fee_text": null,
+        "description": "10 ngày làm việc kể từ khi nhận được hồ sơ",
+        "is_online": false,
+        "is_postal": true,
+        "is_in_person": false
+      },
+      {
+        "method_id": "method_2",
+        "channel": "in_person",
+        "processing_time_text": "10 ngày làm việc",
+        "fee_text": null,
+        "description": "10 ngày làm việc kể từ khi nhận được hồ sơ",
+        "is_online": false,
+        "is_postal": false,
+        "is_in_person": true
+      }
+    ],
+    "timing_summary": {
+      "unique_processing_times": [
+        "10 ngày làm việc"
+      ],
+      "method_count": 2
+    }
+  },
+  "documents": {
+    "required": [
+      {
+        "document_id": "v_n_b_n_ngh_ho_t_ng_th_ng_tin_b_o_ch_t_i_vi_t_nam_theo_m_u_do_b_ngo_i_giao_ban_h_nh",
+        "name": "Văn bản đề nghị hoạt động thông tin, báo chí tại Việt Nam theo mẫu do Bộ Ngoại giao ban hành.",
+        "group_name": "default",
+        "group_type": "unknown",
+        "original_count": "1",
+        "copy_count": "0",
+        "conditions": [],
+        "attachment_label": "Mau so 1 - Don de nghi hoat dong bao chi tai Vietnam (1).docx",
+        "attachment_path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/1_000929/Mau%20so%201%20-%20Don%20de%20nghi%20hoat%20dong%20bao%20chi%20tai%20Vietnam%20%281%29.docx"
+      }
+    ],
+    "conditional": [],
+    "presented": [],
+    "notes": [
+      "Bản chụp hộ chiếu của phóng viên nước ngoài."
+    ],
+    "forms": [
+      {
+        "name": "Văn bản đề nghị hoạt động thông tin, báo chí tại Việt Nam theo mẫu do Bộ Ngoại giao ban hành.",
+        "attachment_label": "Mau so 1 - Don de nghi hoat dong bao chi tai Vietnam (1).docx",
+        "attachment_path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/1_000929/Mau%20so%201%20-%20Don%20de%20nghi%20hoat%20dong%20bao%20chi%20tai%20Vietnam%20%281%29.docx"
+      }
+    ],
+    "empty_groups": [],
+    "document_count": 1
+  },
+  "process": {
+    "steps": [
+      {
+        "step_id": "step_1",
+        "title": null,
+        "content": "1. **Nộp Hồ sơ**",
+        "actor": "user",
+        "channel_hint": null,
+        "time_hint": null
+      },
+      {
+        "step_id": "step_2",
+        "title": null,
+        "content": "Phóng viên nước ngoài có yêu cầu hoạt động báo chí tại Việt Nam gửi hồ sơ tới Bộ Ngoại giao hoặc cơ quan đại diện ngoại giao, cơ quan lãnh sự hoặc các cơ quan khác được ủy quyền thực hiện chức năng lãnh sự của Việt Nam ở nước ngoài (sau đây gọi chung là Cơ quan đại diện Việt Nam)",
+        "actor": "authority",
+        "channel_hint": null,
+        "time_hint": null
+      },
+      {
+        "step_id": "step_3",
+        "title": null,
+        "content": "2. **Thẩm định Hồ sơ**",
+        "actor": "user",
+        "channel_hint": null,
+        "time_hint": null
+      },
+      {
+        "step_id": "step_4",
+        "title": null,
+        "content": "Bộ Ngoại giao thẩm định hồ sơ và cấp Giấy phép (trong trường hợp được chấp thuận) hoặc gửi văn bản thông báo (trong trường hợp không chấp thuận đối với đề nghị của phóng viên).",
+        "actor": "user",
+        "channel_hint": null,
+        "time_hint": null
+      },
+      {
+        "step_id": "step_5",
+        "title": null,
+        "content": "3. **Nhận Giấy phép**",
+        "actor": "user",
+        "channel_hint": null,
+        "time_hint": null
+      },
+      {
+        "step_id": "step_6",
+        "title": null,
+        "content": "Sau khi vào Việt Nam, phóng viên nước ngoài đến cơ quan hướng dẫn phóng viên của Bộ Ngoại giao (Trung tâm Hướng dẫn Báo chí nước ngoài) hoặc một cơ quan được Bộ Ngoại giao ủy nhiệm để nhận Giấy phép hoạt động báo chí và hướng dẫn hoạt động.",
+        "actor": "authority",
+        "channel_hint": null,
+        "time_hint": null
+      }
+    ],
+    "step_count": 6,
+    "notes": []
+  },
+  "eligibility": {
+    "conditions": [],
+    "has_conditions": false
+  },
+  "results": {
+    "items": [
+      {
+        "name": "Giấy phép hoạt động báo chí",
+        "result_code": "KQ.G08.000090",
+        "raw_text": "Giấy phép hoạt động báo chí"
+      }
+    ],
+    "primary_result": {
+      "name": "Giấy phép hoạt động báo chí",
+      "result_code": "KQ.G08.000090",
+      "raw_text": "Giấy phép hoạt động báo chí"
+    }
+  },
+  "legal_basis": {
+    "items": [
+      {
+        "title": "Thông tư 06/2012/TT-BNG",
+        "code": "06/2012/TT-BNG"
+      },
+      {
+        "title": "Nghị định 88/2012/NĐ-CP",
+        "code": "88/2012/NĐ-CP"
+      },
+      {
+        "title": "Luật báo chí",
+        "code": "103/2016/QH13"
+      }
+    ],
+    "count": 3
+  },
+  "attachments": [
+    {
+      "label": "Mau so 1 - Don de nghi hoat dong bao chi tai Vietnam (1).docx",
+      "path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/1_000929/Mau%20so%201%20-%20Don%20de%20nghi%20hoat%20dong%20bao%20chi%20tai%20Vietnam%20%281%29.docx",
+      "source_section": "Thành phần hồ sơ",
+      "document_name": "Văn bản đề nghị hoạt động thông tin, báo chí tại Việt Nam theo mẫu do Bộ Ngoại giao ban hành."
+    }
+  ],
+  "signals": {
+    "raw_parse_warnings": [],
+    "missing_documents": false,
+    "documents_section_present": true,
+    "documents_declared_empty": false,
+    "documents_only_in_notes": false,
+    "missing_results": false
+  }
+}

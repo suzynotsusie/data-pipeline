@@ -1,0 +1,459 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://govease.local/schemas/raw_structured.schema.json",
+  "title": "GovEase Raw Structured Procedure",
+  "type": "object",
+  "required": [
+    "schema_version",
+    "extracted_at",
+    "source",
+    "meta",
+    "overview",
+    "process",
+    "submission_methods",
+    "documents",
+    "eligibility",
+    "results",
+    "legal_basis",
+    "attachments",
+    "quality",
+    "raw_sections"
+  ],
+  "properties": {
+    "schema_version": {
+      "type": "string"
+    },
+    "extracted_at": {
+      "type": "string"
+    },
+    "source": {
+      "type": "object",
+      "required": [
+        "procedure_code",
+        "source_markdown_path",
+        "parser_version",
+        "content_hash"
+      ],
+      "properties": {
+        "procedure_code": {
+          "type": "string"
+        },
+        "source_markdown_path": {
+          "type": "string"
+        },
+        "source_url": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "parser_version": {
+          "type": "string"
+        },
+        "content_hash": {
+          "type": "string"
+        }
+      },
+      "additionalProperties": true
+    },
+    "meta": {
+      "type": "object",
+      "required": [
+        "title",
+        "field",
+        "target_users"
+      ],
+      "properties": {
+        "title": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "decision_number": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "level": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "procedure_type": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "field": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "target_users": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "authority": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "receiving_address": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "delegated_authority": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "coordinating_authority": {
+          "type": [
+            "string",
+            "null"
+          ]
+        }
+      },
+      "additionalProperties": true
+    },
+    "related_procedures": {
+      "type": "array",
+      "items": {
+        "type": "object"
+      }
+    },
+    "overview": {
+      "type": "object",
+      "required": [
+        "short_summary",
+        "description",
+        "keywords"
+      ],
+      "properties": {
+        "short_summary": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "description": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "keywords": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      },
+      "additionalProperties": true
+    },
+    "process": {
+      "type": "object",
+      "required": [
+        "raw_text",
+        "steps",
+        "milestones"
+      ],
+      "properties": {
+        "raw_text": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "steps": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": [
+              "step_id",
+              "index",
+              "content",
+              "actor",
+              "artifacts"
+            ],
+            "properties": {
+              "step_id": {
+                "type": "string"
+              },
+              "index": {
+                "type": "integer"
+              },
+              "title": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "content": {
+                "type": "string"
+              },
+              "actor": {
+                "type": "string"
+              },
+              "time_hint": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "channel_hint": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "artifacts": {
+                "type": "array"
+              }
+            },
+            "additionalProperties": true
+          }
+        },
+        "milestones": {
+          "type": "array"
+        }
+      },
+      "additionalProperties": true
+    },
+    "submission_methods": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "method",
+          "processing_time",
+          "fee",
+          "description",
+          "raw_row"
+        ],
+        "properties": {
+          "method": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "processing_time": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "fee": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "description": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "raw_row": {
+            "type": "object"
+          }
+        },
+        "additionalProperties": true
+      }
+    },
+    "documents": {
+      "type": "object",
+      "required": [
+        "groups",
+        "flattened_documents"
+      ],
+      "properties": {
+        "groups": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": [
+              "group_id",
+              "group_name",
+              "group_type",
+              "documents"
+            ],
+            "properties": {
+              "group_id": {
+                "type": "string"
+              },
+              "group_name": {
+                "type": "string"
+              },
+              "group_type": {
+                "type": "string"
+              },
+              "documents": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "required": [
+                    "name",
+                    "original_count",
+                    "copy_count",
+                    "is_conditional",
+                    "conditions",
+                    "notes",
+                    "raw_text"
+                  ],
+                  "properties": {
+                    "name": {
+                      "type": "string"
+                    },
+                    "original_count": {
+                      "type": [
+                        "string",
+                        "null"
+                      ]
+                    },
+                    "copy_count": {
+                      "type": [
+                        "string",
+                        "null"
+                      ]
+                    },
+                    "attachment_label": {
+                      "type": [
+                        "string",
+                        "null"
+                      ]
+                    },
+                    "attachment_path": {
+                      "type": [
+                        "string",
+                        "null"
+                      ]
+                    },
+                    "is_conditional": {
+                      "type": "boolean"
+                    },
+                    "conditions": {
+                      "type": "array",
+                      "items": {
+                        "type": "string"
+                      }
+                    },
+                    "notes": {
+                      "type": "array",
+                      "items": {
+                        "type": "string"
+                      }
+                    },
+                    "raw_text": {
+                      "type": "string"
+                    }
+                  },
+                  "additionalProperties": true
+                }
+              }
+            },
+            "additionalProperties": true
+          }
+        },
+        "flattened_documents": {
+          "type": "array",
+          "items": {
+            "type": "object"
+          }
+        }
+      },
+      "additionalProperties": true
+    },
+    "eligibility": {
+      "type": "object",
+      "required": [
+        "raw_text",
+        "conditions",
+        "special_cases",
+        "warnings"
+      ],
+      "properties": {
+        "raw_text": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "conditions": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "special_cases": {
+          "type": "array"
+        },
+        "warnings": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      },
+      "additionalProperties": true
+    },
+    "results": {
+      "type": "array",
+      "items": {
+        "type": "object"
+      }
+    },
+    "legal_basis": {
+      "type": "array",
+      "items": {
+        "type": "object"
+      }
+    },
+    "attachments": {
+      "type": "array",
+      "items": {
+        "type": "object"
+      }
+    },
+    "quality": {
+      "type": "object",
+      "required": [
+        "section_presence",
+        "parse_warnings",
+        "needs_manual_review"
+      ],
+      "properties": {
+        "section_presence": {
+          "type": "object"
+        },
+        "parse_warnings": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "needs_manual_review": {
+          "type": "boolean"
+        }
+      },
+      "additionalProperties": true
+    },
+    "raw_sections": {
+      "type": "object"
+    }
+  },
+  "additionalProperties": true
+}

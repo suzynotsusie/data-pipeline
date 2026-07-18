@@ -1,0 +1,218 @@
+{
+  "schema_version": "1.0",
+  "normalizer_version": "0.2.0",
+  "source": {
+    "procedure_code": "1.014753",
+    "title": "Chuyển nơi hưởng trợ cấp thất nghiệp (Cấp tỉnh)",
+    "raw_structured_parser_version": "0.1.0",
+    "field": "Việc làm"
+  },
+  "procedure": {
+    "level": "Cấp tỉnh",
+    "procedure_type": "TTHC được luật giao quy định chi tiết",
+    "target_users": [
+      "Công dân Việt Nam"
+    ],
+    "authorities": [
+      "Trung tâm Dịch vụ việc làm"
+    ],
+    "receiving_places": []
+  },
+  "submission": {
+    "channels": [
+      "in_person",
+      "online",
+      "postal"
+    ],
+    "methods": [
+      {
+        "method_id": "method_1",
+        "channel": "online",
+        "processing_time_text": "3 ngày làm việc",
+        "fee_text": null,
+        "description": "Trong thời hạn 03 ngày làm việc, kể từ ngày nhận được đề nghị chuyển nơi hưởng trợ cấp thất nghiệp của người lao động.",
+        "is_online": true,
+        "is_postal": false,
+        "is_in_person": false
+      },
+      {
+        "method_id": "method_2",
+        "channel": "postal",
+        "processing_time_text": "3 ngày làm việc",
+        "fee_text": null,
+        "description": "Trong thời hạn 03 ngày làm việc, kể từ ngày nhận được đề nghị chuyển nơi hưởng trợ cấp thất nghiệp của người lao động.",
+        "is_online": false,
+        "is_postal": true,
+        "is_in_person": false
+      },
+      {
+        "method_id": "method_3",
+        "channel": "in_person",
+        "processing_time_text": "3 ngày làm việc",
+        "fee_text": null,
+        "description": "Trong thời hạn 03 ngày làm việc, kể từ ngày nhận được đề nghị chuyển nơi hưởng trợ cấp thất nghiệp của người lao động.",
+        "is_online": false,
+        "is_postal": false,
+        "is_in_person": true
+      }
+    ],
+    "timing_summary": {
+      "unique_processing_times": [
+        "3 ngày làm việc"
+      ],
+      "method_count": 3
+    }
+  },
+  "documents": {
+    "required": [
+      {
+        "document_id": "ngh_chuy_n_n_i_h_ng_tr_c_p_th_t_nghi_p_c_a_ng_i_lao_ng",
+        "name": "Đề nghị chuyển nơi hưởng trợ cấp thất nghiệp của người lao động.",
+        "group_name": "default",
+        "group_type": "unknown",
+        "original_count": "1",
+        "copy_count": "0",
+        "conditions": [],
+        "attachment_label": "Mus19tiPhlcbanhnhkmtheo_VL.docx",
+        "attachment_path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/1_014753/Mus19tiPhlcbanhnhkmtheo_VL.docx"
+      }
+    ],
+    "conditional": [
+      {
+        "document_id": "ngh_r_t_h_s_chuy_n_n_i_h_ng_tr_c_p_th_t_nghi_p_i_v_i_tr_ng_h_p_ng_i_lao_ng_kh_ng_c_nhu_c_u_chuy_n_n_i_h_ng_tr_c_p_th_t_nghi_p_n_a_th_ng_i_lao_ng",
+        "name": "Đề nghị rút hồ sơ chuyển nơi hưởng trợ cấp thất nghiệp đối với trường hợp người lao động không có nhu cầu chuyển nơi hưởng trợ cấp thất nghiệp nữa thì người lao động.",
+        "group_name": "default",
+        "group_type": "unknown",
+        "original_count": "1",
+        "copy_count": "0",
+        "conditions": [
+          "Đề nghị rút hồ sơ chuyển nơi hưởng trợ cấp thất nghiệp đối với trường hợp người lao động không có nhu cầu chuyển nơi hưởng trợ cấp thất nghiệp nữa thì người lao động."
+        ],
+        "attachment_label": "Mus23tiPhlcbanhnhkmtheo_VL.docx",
+        "attachment_path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/1_014753/Mus23tiPhlcbanhnhkmtheo_VL.docx"
+      }
+    ],
+    "presented": [],
+    "notes": [],
+    "forms": [
+      {
+        "name": "Đề nghị chuyển nơi hưởng trợ cấp thất nghiệp của người lao động.",
+        "attachment_label": "Mus19tiPhlcbanhnhkmtheo_VL.docx",
+        "attachment_path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/1_014753/Mus19tiPhlcbanhnhkmtheo_VL.docx"
+      },
+      {
+        "name": "Đề nghị rút hồ sơ chuyển nơi hưởng trợ cấp thất nghiệp đối với trường hợp người lao động không có nhu cầu chuyển nơi hưởng trợ cấp thất nghiệp nữa thì người lao động.",
+        "attachment_label": "Mus23tiPhlcbanhnhkmtheo_VL.docx",
+        "attachment_path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/1_014753/Mus23tiPhlcbanhnhkmtheo_VL.docx"
+      }
+    ],
+    "empty_groups": [],
+    "document_count": 2
+  },
+  "process": {
+    "steps": [
+      {
+        "step_id": "step_1",
+        "title": null,
+        "content": "1.",
+        "actor": "user",
+        "channel_hint": null,
+        "time_hint": null
+      },
+      {
+        "step_id": "step_2",
+        "title": "Bước 1:",
+        "content": "Bước 1: Người lao động đã hưởng ít nhất 01 tháng trợ cấp thất nghiệp theo quy định mà có nhu cầu chuyển nơi hưởng trợ cấp thất nghiệp đến tỉnh, thành phố trực thuộc trung ương khác thì phải nộp đề nghị chuyển nơi hưởng trợ cấp thất nghiệp theo Mẫu số 19 tại Phụ lục ban hành kèm theo Nghị định số 374/2025/NĐ-CP và gửi tổ chức dịch vụ việc làm công nơi đang hưởng trợ cấp thất nghiệp.",
+        "actor": "user",
+        "channel_hint": null,
+        "time_hint": "01 tháng"
+      },
+      {
+        "step_id": "step_3",
+        "title": "Bước 2:",
+        "content": "Bước 2: Trong thời hạn 03 ngày làm việc, kể từ ngày nhận được đề nghị của người lao động, tổ chức dịch vụ việc làm công có trách nhiệm gửi thông báo về việc chuyển nơi hưởng trợ cấp thất nghiệp cho Bảo hiểm xã hội cấp tỉnh để dừng việc chi trả trợ cấp thất nghiệp, đồng thời gửi giấy giới thiệu và hồ sơ chuyển nơi hưởng trợ cấp thất nghiệp cho tổ chức dịch vụ việc làm công nơi người lao động chuyển đến.",
+        "actor": "user",
+        "channel_hint": null,
+        "time_hint": "03 ngày làm việc"
+      },
+      {
+        "step_id": "step_4",
+        "title": "Bước 3:",
+        "content": "Bước 3: Trong thời hạn 03 ngày làm việc, kể từ ngày nhận được hồ sơ chuyển nơi hưởng trợ cấp thất nghiệp do người lao động chuyển đến, tổ chức dịch vụ việc làm công gửi văn bản đề nghị Bảo hiểm xã hội cấp tỉnh nơi chuyển đến để tiếp tục thực hiện việc chi trả trợ cấp thất nghiệp và cấp thẻ bảo hiểm y tế cho người lao động. Trường hợp người lao động đã nhận hồ sơ chuyển nơi hưởng trợ cấp thất nghiệp nhưng chưa nộp cho tổ chức dịch vụ việc làm công nơi chuyển đến và không có nhu cầu chuyển nơi hưởng trợ cấp thất nghiệp nữa thì người lao động phải nộp lại giấy giới thiệu chuyển nơi hưởng trợ cấp thất nghiệp cho tổ chức dịch vụ việc làm công nơi chuyển đi. Trong thời hạn 03 ngày làm việc kể từ ngày nhận lại giấy giới thiệu chuyển nơi hưởng trợ cấp thất nghiệp, tổ chức dịch vụ việc làm công gửi văn bản đề nghị cơ quan bảo hiểm xã hội cấp tỉnh để tiếp tục thực hiện việc chi trả trợ cấp thất nghiệp và cấp thẻ bảo hiểm y tế cho người lao động. Trường hợp người lao động không có nhu cầu chuyển nơi hưởng trợ cấp thất nghiệp nữa thì người lao động gửi đề nghị rút hồ sơ chuyển nơi hưởng trợ cấp thất nghiệp cho tổ chức dịch vụ việc làm công nơi chuyển đi theo Mẫu số 23 tại Phụ lục ban hành kèm theo Nghị định số 374/2025/NĐ-CP. Trong thời hạn 03 ngày làm việc kể từ ngày nhận đề nghị rút hồ sơ chuyển nơi hưởng trợ cấp thất nghiệp của người lao động, tổ chức dịch vụ việc làm công nơi chuyển đến gửi giấy giới thiệu và hồ sơ chuyển nơi hưởng trợ cấp thất nghiệp cho tổ chức dịch vụ việc làm công nơi người lao động chuyển đi.",
+        "actor": "authority",
+        "channel_hint": null,
+        "time_hint": "03 ngày làm việc"
+      },
+      {
+        "step_id": "step_5",
+        "title": "Bước 4:",
+        "content": "Bước 4: Cơ quan bảo hiểm xã hội nơi người lao động chuyển đến hưởng trợ cấp thất nghiệp thực hiện chi trả trợ cấp thất nghiệp và cấp thẻ bảo hiểm y tế cho người lao động theo quy định của pháp luật.",
+        "actor": "authority",
+        "channel_hint": null,
+        "time_hint": null
+      }
+    ],
+    "step_count": 5,
+    "notes": []
+  },
+  "eligibility": {
+    "conditions": [
+      "Người lao động đã hưởng ít nhất 01 tháng trợ cấp thất nghiệp theo quy định và có nhu cầu chuyển hưởng trợ cấp nơi hưởng trợ cấp thất nghiệp đến tỉnh, thành phố trực thuộc trung ¬ương khác."
+    ],
+    "has_conditions": true
+  },
+  "results": {
+    "items": [
+      {
+        "name": "Giấy giới thiệu chuyển nơi hưởng trợ cấp thất nghiệp và văn bản thông báo Bảo hiểm xã hội cấp tỉnh về việc dừng",
+        "result_code": "KQ.G09.000526",
+        "raw_text": "Giấy giới thiệu chuyển nơi hưởng trợ cấp thất nghiệp và văn bản thông báo Bảo hiểm xã hội cấp tỉnh về việc dừng"
+      },
+      {
+        "name": "Tiếp tục chi trả trợ cấp thất nghiệp và cấp thẻ BHYT",
+        "result_code": "KQ.G09.000527",
+        "raw_text": "Tiếp tục chi trả trợ cấp thất nghiệp và cấp thẻ BHYT"
+      }
+    ],
+    "primary_result": {
+      "name": "Giấy giới thiệu chuyển nơi hưởng trợ cấp thất nghiệp và văn bản thông báo Bảo hiểm xã hội cấp tỉnh về việc dừng",
+      "result_code": "KQ.G09.000526",
+      "raw_text": "Giấy giới thiệu chuyển nơi hưởng trợ cấp thất nghiệp và văn bản thông báo Bảo hiểm xã hội cấp tỉnh về việc dừng"
+    }
+  },
+  "legal_basis": {
+    "items": [
+      {
+        "title": "Luật Việc làm",
+        "code": "74/2025/QH15"
+      },
+      {
+        "title": "Quy định chi tiết một số điều của Luật Việc làm về bảo hiểm thất nghiệp",
+        "code": "Nghị định số 374/2025/NĐ-CP"
+      }
+    ],
+    "count": 2
+  },
+  "attachments": [
+    {
+      "label": "Mus19tiPhlcbanhnhkmtheo_VL.docx",
+      "path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/1_014753/Mus19tiPhlcbanhnhkmtheo_VL.docx",
+      "source_section": "Thành phần hồ sơ",
+      "document_name": "Đề nghị chuyển nơi hưởng trợ cấp thất nghiệp của người lao động."
+    },
+    {
+      "label": "Mus23tiPhlcbanhnhkmtheo_VL.docx",
+      "path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/1_014753/Mus23tiPhlcbanhnhkmtheo_VL.docx",
+      "source_section": "Thành phần hồ sơ",
+      "document_name": "Đề nghị rút hồ sơ chuyển nơi hưởng trợ cấp thất nghiệp đối với trường hợp người lao động không có nhu cầu chuyển nơi hưởng trợ cấp thất nghiệp nữa thì người lao động."
+    }
+  ],
+  "signals": {
+    "raw_parse_warnings": [],
+    "missing_documents": false,
+    "documents_section_present": true,
+    "documents_declared_empty": false,
+    "documents_only_in_notes": false,
+    "missing_results": false
+  }
+}

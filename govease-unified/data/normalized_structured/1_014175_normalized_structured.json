@@ -1,0 +1,183 @@
+{
+  "schema_version": "1.0",
+  "normalizer_version": "0.2.0",
+  "source": {
+    "procedure_code": "1.014175",
+    "title": "TIẾP TỤC HƯỞNG LƯƠNG HƯU, TRỢ CẤP BẢO HIỂM XÃ HỘI HẰNG THÁNG TRONG TRƯỜNG HỢP ĐÃ BỊ TẠM DỪNG HOẶC CHẤM DỨT HƯỞNG",
+    "raw_structured_parser_version": "0.1.0",
+    "field": "Bảo hiểm xã hội"
+  },
+  "procedure": {
+    "level": "Cấp tỉnh",
+    "procedure_type": "TTHC được luật giao quy định chi tiết",
+    "target_users": [
+      "Công dân Việt Nam"
+    ],
+    "authorities": [
+      "Bảo hiểm xã hội tỉnh"
+    ],
+    "receiving_places": []
+  },
+  "submission": {
+    "channels": [
+      "in_person",
+      "online",
+      "postal"
+    ],
+    "methods": [
+      {
+        "method_id": "method_1",
+        "channel": "online",
+        "processing_time_text": "10 ngày làm việc",
+        "fee_text": null,
+        "description": "Trong thời hạn 10 ngày làm việc kể từ ngày nhận đủ hồ sơ theo quy định.<br>Trực tiếp, trực tuyến hoặc qua dịch vụ bưu chính.",
+        "is_online": true,
+        "is_postal": false,
+        "is_in_person": false
+      },
+      {
+        "method_id": "method_2",
+        "channel": "postal",
+        "processing_time_text": "10 ngày làm việc",
+        "fee_text": null,
+        "description": "Trong thời hạn 10 ngày làm việc kể từ ngày nhận đủ hồ sơ theo quy định.<br>Trực tiếp, trực tuyến hoặc qua dịch vụ bưu chính.",
+        "is_online": false,
+        "is_postal": true,
+        "is_in_person": false
+      },
+      {
+        "method_id": "method_3",
+        "channel": "in_person",
+        "processing_time_text": "10 ngày làm việc",
+        "fee_text": null,
+        "description": "Trong thời hạn 10 ngày làm việc kể từ ngày nhận đủ hồ sơ theo quy định.<br>Trực tiếp, trực tuyến hoặc qua dịch vụ bưu chính.",
+        "is_online": false,
+        "is_postal": false,
+        "is_in_person": true
+      }
+    ],
+    "timing_summary": {
+      "unique_processing_times": [
+        "10 ngày làm việc"
+      ],
+      "method_count": 3
+    }
+  },
+  "documents": {
+    "required": [
+      {
+        "document_id": "v_n_b_n_ngh_ti_p_t_c_h_ng_l_ng_h_u_tr_c_p_b_o_hi_m_x_h_i_h_ng_th_ng",
+        "name": "Văn bản đề nghị tiếp tục hưởng lương hưu, trợ cấp bảo hiểm xã hội hằng tháng.",
+        "group_name": "default",
+        "group_type": "unknown",
+        "original_count": "1",
+        "copy_count": "0",
+        "conditions": [],
+        "attachment_label": null,
+        "attachment_path": null
+      }
+    ],
+    "conditional": [
+      {
+        "document_id": "v_n_b_n_c_a_c_quan_nh_n_c_c_th_m_quy_n_v_vi_c_tr_v_n_c_i_v_i_tr_ng_h_p_i_v_i_ng_i_xu_t_c_nh_tr_i_ph_p_tr_v",
+        "name": "Văn bản của cơ quan nhà nước có thẩm quyền về việc trở về nước đối với trường hợp đối với người xuất cảnh trái phép trở về;",
+        "group_name": "default",
+        "group_type": "unknown",
+        "original_count": "1",
+        "copy_count": "0",
+        "conditions": [
+          "Văn bản của cơ quan nhà nước có thẩm quyền về việc trở về nước đối với trường hợp đối với người xuất cảnh trái phép trở về;"
+        ],
+        "attachment_label": null,
+        "attachment_path": null
+      },
+      {
+        "document_id": "quy_t_nh_c_a_t_a_n_h_y_b_quy_t_nh_tuy_n_b_m_t_t_ch_ho_c_h_y_b_quy_t_nh_tuy_n_b_l_ch_t_i_v_i_tr_ng_h_p_c_quy_t_nh_c_a_t_a_n_h_y_b_quy_t_nh_tuy_n_b_m_t_t_ch_ho_c_quy_t_nh_tuy_n_b_l_ch_t",
+        "name": "Quyết định của Tòa án hủy bỏ quyết định tuyên bố mất tích hoặc hủy bỏ quyết định tuyên bố là đã chết đối với trường hợp có quyết định của Tòa án hủy bỏ quyết định tuyên bố mất tích hoặc quyết định tuyên bố là đã chết.",
+        "group_name": "default",
+        "group_type": "unknown",
+        "original_count": "1",
+        "copy_count": "0",
+        "conditions": [
+          "Quyết định của Tòa án hủy bỏ quyết định tuyên bố mất tích hoặc hủy bỏ quyết định tuyên bố là đã chết đối với trường hợp có quyết định của Tòa án hủy bỏ quyết định tuyên bố mất tích hoặc quyết định tuyên bố là đã chết."
+        ],
+        "attachment_label": null,
+        "attachment_path": null
+      }
+    ],
+    "presented": [],
+    "notes": [],
+    "forms": [],
+    "empty_groups": [],
+    "document_count": 3
+  },
+  "process": {
+    "steps": [
+      {
+        "step_id": "step_1",
+        "title": null,
+        "content": "1.",
+        "actor": "user",
+        "channel_hint": null,
+        "time_hint": null
+      },
+      {
+        "step_id": "step_2",
+        "title": "Bước 1:",
+        "content": "Bước 1: Người đề nghị tiếp tục hưởng lương hưu, trợ cấp bảo hiểm xã hội hằng tháng nộp hồ sơ theo quy định cho cơ quan bảo hiểm xã hội.",
+        "actor": "authority",
+        "channel_hint": null,
+        "time_hint": null
+      },
+      {
+        "step_id": "step_3",
+        "title": "Bước 2:",
+        "content": "Bước 2: Trong thời hạn 10 ngày làm việc kể từ ngày nhận đủ hồ sơ theo quy định, cơ quan bảo hiểm xã hội có trách nhiệm giải quyết. Trường hợp không giải quyết thì phải trả lời bằng văn bản và nêu rõ lý do.",
+        "actor": "authority",
+        "channel_hint": null,
+        "time_hint": "10 ngày làm việc"
+      }
+    ],
+    "step_count": 3,
+    "notes": []
+  },
+  "eligibility": {
+    "conditions": [
+      "- Người tạm dừng hưởng lương hưu, trợ cấp bảo hiểm xã hội hằng tháng xuất cảnh trái phép trở về.",
+      "- Người tạm dừng hưởng lương hưu, trợ cấp bảo hiểm xã hội hằng tháng có quyết định của Tòa án hủy bỏ quyết định tuyên bố mất tích hoặc huỷ bỏ quyết định tuyên bố là đã chết."
+    ],
+    "has_conditions": true
+  },
+  "results": {
+    "items": [
+      {
+        "name": "Quyết định về việc tiếp tục hưởng lương hưu, trợ cấp bảo hiểm xã hội hằng tháng",
+        "result_code": "KQ.G09.000363",
+        "raw_text": "Quyết định về việc tiếp tục hưởng lương hưu, trợ cấp bảo hiểm xã hội hằng tháng"
+      }
+    ],
+    "primary_result": {
+      "name": "Quyết định về việc tiếp tục hưởng lương hưu, trợ cấp bảo hiểm xã hội hằng tháng",
+      "result_code": "KQ.G09.000363",
+      "raw_text": "Quyết định về việc tiếp tục hưởng lương hưu, trợ cấp bảo hiểm xã hội hằng tháng"
+    }
+  },
+  "legal_basis": {
+    "items": [
+      {
+        "title": "Luật Bảo hiểm xã hội",
+        "code": "41/2024/QH15"
+      }
+    ],
+    "count": 1
+  },
+  "attachments": [],
+  "signals": {
+    "raw_parse_warnings": [],
+    "missing_documents": false,
+    "documents_section_present": true,
+    "documents_declared_empty": false,
+    "documents_only_in_notes": false,
+    "missing_results": false
+  }
+}

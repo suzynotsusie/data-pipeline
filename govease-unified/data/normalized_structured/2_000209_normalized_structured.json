@@ -1,0 +1,201 @@
+{
+  "schema_version": "1.0",
+  "normalizer_version": "0.2.0",
+  "source": {
+    "procedure_code": "2.000209",
+    "title": "Nhập khẩu thuốc lá nhằm mục đích phi thương mại",
+    "raw_structured_parser_version": "0.1.0",
+    "field": "Công nghiệp tiêu dùng"
+  },
+  "procedure": {
+    "level": "Cấp tỉnh",
+    "procedure_type": "NOT_ASSIGNED_REGULATION",
+    "target_users": [
+      "Doanh nghiệp"
+    ],
+    "authorities": [
+      "Ủy ban nhân dân cấp tỉnh"
+    ],
+    "receiving_places": []
+  },
+  "submission": {
+    "channels": [
+      "in_person",
+      "online",
+      "postal"
+    ],
+    "methods": [
+      {
+        "method_id": "method_1",
+        "channel": "online",
+        "processing_time_text": "7 ngày làm việc",
+        "fee_text": null,
+        "description": null,
+        "is_online": true,
+        "is_postal": false,
+        "is_in_person": false
+      },
+      {
+        "method_id": "method_2",
+        "channel": "postal",
+        "processing_time_text": "7 ngày làm việc",
+        "fee_text": null,
+        "description": null,
+        "is_online": false,
+        "is_postal": true,
+        "is_in_person": false
+      },
+      {
+        "method_id": "method_3",
+        "channel": "in_person",
+        "processing_time_text": "7 ngày làm việc",
+        "fee_text": null,
+        "description": null,
+        "is_online": false,
+        "is_postal": false,
+        "is_in_person": true
+      }
+    ],
+    "timing_summary": {
+      "unique_processing_times": [
+        "7 ngày làm việc"
+      ],
+      "method_count": 3
+    }
+  },
+  "documents": {
+    "required": [
+      {
+        "document_id": "n_theo_m_u_do_b_c_ng_th_ng",
+        "name": "Đơn theo mẫu do Bộ Công Thương",
+        "group_name": "default",
+        "group_type": "unknown",
+        "original_count": "1",
+        "copy_count": "0",
+        "conditions": [],
+        "attachment_label": "Donnhapkhauthuoclaphithuongmai.docx",
+        "attachment_path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/2_000209/Donnhapkhauthuoclaphithuongmai.docx"
+      },
+      {
+        "document_id": "b_n_sao_gi_y_t_ch_ng_minh_ngu_n_g_c_c_a_s_h_ng_m_u_nh_p_kh_u",
+        "name": "Bản sao Giấy tờ chứng minh nguồn gốc của số hàng mẫu nhập khẩu.;",
+        "group_name": "default",
+        "group_type": "unknown",
+        "original_count": "0",
+        "copy_count": "1",
+        "conditions": [],
+        "attachment_label": null,
+        "attachment_path": null
+      }
+    ],
+    "conditional": [],
+    "presented": [],
+    "notes": [],
+    "forms": [
+      {
+        "name": "Đơn theo mẫu do Bộ Công Thương",
+        "attachment_label": "Donnhapkhauthuoclaphithuongmai.docx",
+        "attachment_path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/2_000209/Donnhapkhauthuoclaphithuongmai.docx"
+      }
+    ],
+    "empty_groups": [],
+    "document_count": 2
+  },
+  "process": {
+    "steps": [
+      {
+        "step_id": "step_1",
+        "title": null,
+        "content": "1. Doanh nghiệp có Giấy phép sản xuất sản phẩm thuốc lá nhập khẩu thuốc lá vào Việt Nam để nghiên cứu sản xuất thử nộp 01 bộ hồ sơ trực tiếp, qua bưu chính hoặc qua mạng internet đến Ủy ban nhân dân cấp tỉnh bao gồm:",
+        "actor": "user",
+        "channel_hint": "dịch vụ bưu chính",
+        "time_hint": null
+      },
+      {
+        "step_id": "step_2",
+        "title": null,
+        "content": "- Văn bản đề nghị xin nhập khẩu.",
+        "actor": "user",
+        "channel_hint": null,
+        "time_hint": null
+      },
+      {
+        "step_id": "step_3",
+        "title": null,
+        "content": "- Giấy tờ chứng minh nguồn gốc của số hàng mẫu nhập khẩu.",
+        "actor": "user",
+        "channel_hint": null,
+        "time_hint": null
+      },
+      {
+        "step_id": "step_4",
+        "title": null,
+        "content": "Trong thời hạn 07 ngày làm việc kể từ ngày nhận đủ hồ sơ hợp lệ, Ủy ban nhân dân cấp tỉnh xem xét và có văn bản trả lời doanh nghiệp, trường hợp từ chối phải có văn bản nêu rõ lý do.",
+        "actor": "user",
+        "channel_hint": null,
+        "time_hint": "07 ngày làm việc"
+      }
+    ],
+    "step_count": 4,
+    "notes": []
+  },
+  "eligibility": {
+    "conditions": [],
+    "has_conditions": false
+  },
+  "results": {
+    "items": [
+      {
+        "name": "Văn bản trả lời đồng ý hoặc từ chối nhập khẩu thuốc lá nhằm mục đích phi thương mại",
+        "result_code": "KQ.G02.000126",
+        "raw_text": "Văn bản trả lời đồng ý hoặc từ chối nhập khẩu thuốc lá nhằm mục đích phi thương mại"
+      }
+    ],
+    "primary_result": {
+      "name": "Văn bản trả lời đồng ý hoặc từ chối nhập khẩu thuốc lá nhằm mục đích phi thương mại",
+      "result_code": "KQ.G02.000126",
+      "raw_text": "Văn bản trả lời đồng ý hoặc từ chối nhập khẩu thuốc lá nhằm mục đích phi thương mại"
+    }
+  },
+  "legal_basis": {
+    "items": [
+      {
+        "title": "Quy định chi tiết một số điều và biện pháp thi hành Luật Phòng, chống tác hại của thuốc lá về kinh doanh thuốc lá",
+        "code": "67/2013/NĐ-CP"
+      },
+      {
+        "title": "sửa đổi, bổ sung một số điều của Nghị định số 67/2013/NĐ-CP ngày 27 tháng 6 năm 2013 của Chính phủ quy định chi tiết một số điều và biện pháp thi hành Luật Phòng, chống tác hại của thuốc lá về kinh doanh thuốc lá",
+        "code": "106/2017/NĐ-CP"
+      },
+      {
+        "title": "Quy định chi tiết một số điều của các Nghị định liên quan đến kinh doanh thuốc lá",
+        "code": "57/2018/TT-BCT"
+      },
+      {
+        "title": "Sửa đổi, bổ sung một số quy định về phân cấp thực hiện thủ tục hành chính trong các lĩnh vực thuộc phạm vi quản lý của Bộ Công Thương",
+        "code": "38/2025/TT-BCT"
+      },
+      {
+        "title": "Thông tư số 43/2023/TT_BCT",
+        "code": "43/2023/TT-BCT"
+      }
+    ],
+    "count": 5
+  },
+  "attachments": [
+    {
+      "label": "Donnhapkhauthuoclaphithuongmai.docx",
+      "path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/2_000209/Donnhapkhauthuoclaphithuongmai.docx",
+      "source_section": "Thành phần hồ sơ",
+      "document_name": "Đơn theo mẫu do Bộ Công Thương"
+    }
+  ],
+  "signals": {
+    "raw_parse_warnings": [],
+    "missing_documents": false,
+    "documents_section_present": true,
+    "documents_declared_empty": false,
+    "documents_only_in_notes": false,
+    "missing_results": false
+  }
+}

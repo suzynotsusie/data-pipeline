@@ -1,0 +1,133 @@
+{
+  "schema_version": "1.0",
+  "domain": "cu_tru_giay_to",
+  "updated_at": "2026-07-18",
+  "source_files": [
+    "C:\\Users\\ku060\\Downloads\\VAIC source\\data-pipeline\\main\\full-data.csv",
+    "C:\\Users\\ku060\\Downloads\\VAIC source\\data-pipeline\\data\\workflows\\cu_tru_giay_to\\summary.csv",
+    "C:\\Users\\ku060\\Downloads\\VAIC source\\data-pipeline\\data\\workflows\\cu_tru_giay_to\\normalized.json",
+    "C:\\Users\\ku060\\Downloads\\VAIC source\\data-pipeline\\raw_data"
+  ],
+  "coverage": {
+    "expected_codes": [
+      "1.003677"
+    ],
+    "covered_codes": [
+      "1.003677"
+    ],
+    "missing_codes": []
+  },
+  "llm_contract": {
+    "role": "parse_user_answer_and_rephrase_question_only",
+    "required_output_schema": {
+      "intent": "cu_tru_giay_to",
+      "current_node": "string",
+      "slot_updates": {
+        "subdomain_key": "ho_khau | tam_tru | luu_tru | can_cuoc_chung_minh_nhan_dan | ho_chieu | tam_vang | unknown",
+        "operation_key": "string",
+        "operation_group": "string"
+      },
+      "confidence": "0_to_1",
+      "needs_human_review": "boolean"
+    }
+  },
+  "entry_prompts": [
+    "Bạn đang cần làm việc về cư trú, căn cước hay hộ chiếu?",
+    "Bạn muốn đăng ký, gia hạn, xóa, xác nhận thông tin, cấp lại giấy tờ hay xử lý giấy tờ bị mất?"
+  ],
+  "slots": [
+    {
+      "name": "subdomain_key",
+      "required": true,
+      "description": "Nhánh chính của nhóm Cư trú và giấy tờ tùy thân."
+    },
+    {
+      "name": "operation_key",
+      "required": true,
+      "description": "Thao tác cụ thể ánh xạ trực tiếp tới thủ tục cuối cùng."
+    },
+    {
+      "name": "operation_group",
+      "required": false,
+      "description": "Nhóm thao tác để gom các thủ tục gần nhau cho UI và parser."
+    }
+  ],
+  "subdomain_catalog": [
+    {
+      "subdomain_key": "tam_vang",
+      "subdomain_label": "Tạm vắng",
+      "event_id": 363,
+      "summary": "Nhóm thủ tục khai báo tạm vắng khi công dân rời nơi cư trú trong thời gian thuộc diện phải thông báo."
+    }
+  ],
+  "decision_tree": {
+    "start_node": "residence_identity_subdomain",
+    "nodes": [
+      {
+        "id": "residence_identity_subdomain",
+        "type": "question",
+        "slot": "subdomain_key",
+        "question": "Bạn đang hỏi về hộ khẩu, tạm trú, lưu trú, căn cước, hộ chiếu hay tạm vắng?",
+        "options": [
+          "tam_vang"
+        ],
+        "prefilled_value": "tam_vang"
+      },
+      {
+        "id": "residence_identity_operation",
+        "type": "question",
+        "slot": "operation_key",
+        "question": "Bạn cần làm thao tác nào cụ thể trong nhánh đã chọn?",
+        "options_by_subdomain": {
+          "tam_vang": [
+            {
+              "operation_key": "khai_bao_tam_vang",
+              "operation_group": "khai_bao_tam_vang",
+              "procedure_code": "1.003677",
+              "procedure_title": "Khai báo tạm vắng"
+            }
+          ]
+        },
+        "options": [
+          "khai_bao_tam_vang"
+        ]
+      }
+    ],
+    "routes": [
+      {
+        "route_id": "tam_vang-1_003677",
+        "conditions": {
+          "subdomain_key": "tam_vang",
+          "operation_key": "khai_bao_tam_vang"
+        },
+        "procedure_code": "1.003677",
+        "procedure_name": "Khai báo tạm vắng",
+        "why_this_route": "Route trực tiếp cho nhu cầu 'Khai báo tạm vắng' trong nhánh 'Tạm vắng'."
+      }
+    ]
+  },
+  "pre_submission_checks": [
+    {
+      "field_group": "residence_information",
+      "checks": [
+        "Nhóm cư trú phải phân biệt rõ thường trú, tạm trú, lưu trú và tạm vắng trước khi chọn thủ tục.",
+        "Địa chỉ cư trú và giấy tờ chứng minh chỗ ở phải thống nhất giữa tờ khai, dữ liệu cư trú và hồ sơ đính kèm."
+      ]
+    },
+    {
+      "field_group": "identity_documents",
+      "checks": [
+        "Nhóm căn cước phải làm rõ là cấp mới, cấp đổi, cấp lại hay điều chỉnh/tích hợp thông tin.",
+        "Nhóm định danh điện tử cần xác định đúng thao tác cấp mức 2, khóa hay mở khóa căn cước điện tử."
+      ]
+    },
+    {
+      "field_group": "passport_context",
+      "checks": [
+        "Nhóm hộ chiếu phải xác định rõ làm trong nước hay tại cơ quan đại diện ở nước ngoài.",
+        "Các trường hợp mất hộ chiếu hoặc khôi phục giá trị sử dụng phải có căn cứ về tình trạng giấy tờ hiện tại."
+      ]
+    }
+  ],
+  "subdomain_key": "tam_vang"
+}

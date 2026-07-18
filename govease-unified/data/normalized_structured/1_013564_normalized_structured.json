@@ -1,0 +1,182 @@
+{
+  "schema_version": "1.0",
+  "normalizer_version": "0.2.0",
+  "source": {
+    "procedure_code": "1.013564",
+    "title": "Thủ tục cấp Giấy phép xuống tàu cho người Việt Nam và người nước ngoài thuộc các cơ quan, doanh nghiệp có nhu cầu thường xuyên xuống tàu thuyền nước ngoài làm việc.",
+    "raw_structured_parser_version": "0.1.0",
+    "field": "Quản lý biên giới"
+  },
+  "procedure": {
+    "level": "Cấp xã",
+    "procedure_type": "TTHC được luật giao quy định chi tiết",
+    "target_users": [
+      "Công dân Việt Nam",
+      "Doanh nghiệp",
+      "Người nước ngoài"
+    ],
+    "authorities": [
+      "Biên phòng cửa khẩu cảng"
+    ],
+    "receiving_places": []
+  },
+  "submission": {
+    "channels": [
+      "in_person"
+    ],
+    "methods": [
+      {
+        "method_id": "method_1",
+        "channel": "in_person",
+        "processing_time_text": null,
+        "fee_text": null,
+        "description": "Người đề nghị cấp Giấy phép xuống tàu hoặc đại diện cơ quan, doanh nghiệp chủ quản nộp và xuất trình các loại giấy tờ tại trụ sở Biên phòng cửa khẩu cảng.",
+        "is_online": false,
+        "is_postal": false,
+        "is_in_person": true
+      }
+    ],
+    "timing_summary": {
+      "unique_processing_times": [],
+      "method_count": 1
+    }
+  },
+  "documents": {
+    "required": [
+      {
+        "document_id": "gi_y_gi_i_thi_u_ho_c_c_ng_v_n_ngh_c_p_gi_y_ph_p_xu_ng_t_u_c_a_c_quan_doanh_nghi_p_ch_qu_n",
+        "name": "Giấy giới thiệu hoặc công văn đề nghị cấp Giấy phép xuống tàu của cơ quan, doanh nghiệp chủ quản",
+        "group_name": "Thành phần hồ sơ phải nộp",
+        "group_type": "required",
+        "original_count": "1",
+        "copy_count": "0",
+        "conditions": [],
+        "attachment_label": null,
+        "attachment_path": null
+      },
+      {
+        "document_id": "01_danh_s_ch_tr_ch_ngang_c_a_ng_i_ngh_c_p_gi_y_ph_p_xu_ng_t_u",
+        "name": "01 danh sách trích ngang của người đề nghị cấp Giấy phép xuống tàu",
+        "group_name": "Thành phần hồ sơ phải nộp",
+        "group_type": "required",
+        "original_count": "1",
+        "copy_count": "0",
+        "conditions": [],
+        "attachment_label": "Danh sách trích ngang đề nghị cấp phép xuống tàu.docx",
+        "attachment_path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/1_013564/Danh%20s%C3%A1ch%20tr%C3%ADch%20ngang%20%C4%91%E1%BB%81%20ngh%E1%BB%8B%20c%E1%BA%A5p%20ph%C3%A9p%20xu%E1%BB%91ng%20t%C3%A0u.docx"
+      },
+      {
+        "document_id": "01_nh_m_u_c_02_cm_x_03_cm_gi_y_phe_p_xu_ng_t_u_th_i_h_n_12_th_ng",
+        "name": "01 ảnh màu cỡ 02 cm x 03 cm (Giấy phép xuống tàu thời hạn 12 tháng)",
+        "group_name": "Thành phần hồ sơ phải nộp",
+        "group_type": "required",
+        "original_count": "1",
+        "copy_count": "0",
+        "conditions": [],
+        "attachment_label": null,
+        "attachment_path": null
+      }
+    ],
+    "conditional": [],
+    "presented": [
+      {
+        "document_id": "h_chi_u_ho_c_gi_y_t_c_gi_tr_i_l_i_qu_c_t",
+        "name": "Hộ chiếu hoặc giấy tờ có giá trị đi lại quốc tế",
+        "group_name": "Thành phần hồ sơ phải phải xuất trình đối với người nước ngoài",
+        "group_type": "present",
+        "original_count": "1",
+        "copy_count": "1",
+        "conditions": [],
+        "attachment_label": null,
+        "attachment_path": null
+      }
+    ],
+    "notes": [],
+    "forms": [
+      {
+        "name": "01 danh sách trích ngang của người đề nghị cấp Giấy phép xuống tàu",
+        "attachment_label": "Danh sách trích ngang đề nghị cấp phép xuống tàu.docx",
+        "attachment_path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/1_013564/Danh%20s%C3%A1ch%20tr%C3%ADch%20ngang%20%C4%91%E1%BB%81%20ngh%E1%BB%8B%20c%E1%BA%A5p%20ph%C3%A9p%20xu%E1%BB%91ng%20t%C3%A0u.docx"
+      }
+    ],
+    "empty_groups": [],
+    "document_count": 4
+  },
+  "process": {
+    "steps": [
+      {
+        "step_id": "step_1",
+        "title": null,
+        "content": "1. **Trình tự thực hiện**",
+        "actor": "user",
+        "channel_hint": null,
+        "time_hint": null
+      },
+      {
+        "step_id": "step_2",
+        "title": null,
+        "content": "- Bước 1: Người đề nghị cấp Giấy phép xuống tàu hoặc đại diện cơ quan, doanh nghiệp chủ quản nộp và xuất trình cho Biên phòng cửa khẩu cảng các loại giấy tờ theo quy định;",
+        "actor": "authority",
+        "channel_hint": null,
+        "time_hint": null
+      },
+      {
+        "step_id": "step_3",
+        "title": null,
+        "content": "- Bước 2: Biên phòng cửa khẩu cảng tiếp nhận, kiểm tra các loại giấy tờ, cấp Giấy phép xuống tàu hoặc gửi văn bản nêu rõ lý do trong trường hợp từ chối cấp Giấy phép xuống tàu.",
+        "actor": "user",
+        "channel_hint": null,
+        "time_hint": null
+      }
+    ],
+    "step_count": 3,
+    "notes": []
+  },
+  "eligibility": {
+    "conditions": [],
+    "has_conditions": false
+  },
+  "results": {
+    "items": [
+      {
+        "name": "Giấy phép xuống tàu thời hạn 03 tháng, 12 tháng do Biên phòng cửa khẩu cảng cấp",
+        "result_code": "KQ.G11.000270",
+        "raw_text": "Giấy phép xuống tàu thời hạn 03 tháng, 12 tháng do Biên phòng cửa khẩu cảng cấp"
+      }
+    ],
+    "primary_result": {
+      "name": "Giấy phép xuống tàu thời hạn 03 tháng, 12 tháng do Biên phòng cửa khẩu cảng cấp",
+      "result_code": "KQ.G11.000270",
+      "raw_text": "Giấy phép xuống tàu thời hạn 03 tháng, 12 tháng do Biên phòng cửa khẩu cảng cấp"
+    }
+  },
+  "legal_basis": {
+    "items": [
+      {
+        "title": "Quy định về quản lý, bảo an ninh, trật tự tại cửa khẩu cảng",
+        "code": "77/2017/NĐ-CP"
+      },
+      {
+        "title": "Thông tư 138/2016/TT-BTC",
+        "code": "138/2016/TT-BTC"
+      }
+    ],
+    "count": 2
+  },
+  "attachments": [
+    {
+      "label": "Danh sách trích ngang đề nghị cấp phép xuống tàu.docx",
+      "path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/1_013564/Danh%20s%C3%A1ch%20tr%C3%ADch%20ngang%20%C4%91%E1%BB%81%20ngh%E1%BB%8B%20c%E1%BA%A5p%20ph%C3%A9p%20xu%E1%BB%91ng%20t%C3%A0u.docx",
+      "source_section": "Thành phần hồ sơ",
+      "document_name": "01 danh sách trích ngang của người đề nghị cấp Giấy phép xuống tàu"
+    }
+  ],
+  "signals": {
+    "raw_parse_warnings": [],
+    "missing_documents": false,
+    "documents_section_present": true,
+    "documents_declared_empty": false,
+    "documents_only_in_notes": false,
+    "missing_results": false
+  }
+}

@@ -1,0 +1,77 @@
+{
+  "schema_version": "1.0",
+  "enricher_version": "0.2.0",
+  "source": {
+    "procedure_code": "1.013819",
+    "title": "Giải quyết tranh chấp trong kinh doanh dịch vụ viễn thông đối với tranh chấp của doanh nghiệp viễn thông thuộc phạm vi giấy phép cung cấp dịch vụ có hạ tầng mạng, loại mạng viễn thông công cộng cố định mặt đất không sử dụng băng tần số vô tuyến điện, không sử dụng số thuê bao viễn thông có phạm vi thiết lập mạng viễn thông trên một tỉnh, thành phố trực thuộc trung ương",
+    "group_key": "giai_quyet_khieu_kien",
+    "workflow_family": null,
+    "subflow": null
+  },
+  "experience": {
+    "entry_label": "Hỗ trợ khiếu nại và phản ánh",
+    "overview_summary": "Thủ tục này thuộc nhóm khiếu nại và phản ánh, thường cần trình bày rõ nội dung vụ việc, quyết định hoặc hành vi bị khiếu nại và căn cứ kèm theo. Kết quả thường nhận được là Quyết định giải quyết tranh chấp. Thời gian xử lý tham khảo: 16 ngày làm việc.",
+    "next_step_summary": "Nên tóm tắt rõ nội dung khiếu nại, quyết định hoặc hành vi liên quan và chuẩn bị tài liệu chứng minh trước khi nộp. Có thể chọn kênh nộp phù hợp: Trực tiếp, Trực tuyến, Dịch vụ bưu chính. Hiện có 1 mục giấy tờ cần theo dõi trong checklist.",
+    "tone": "supportive_public_service"
+  },
+  "guidance": {
+    "highlight_documents": [
+      {
+        "bucket": "required",
+        "name": "Đơn đề nghị giải quyết tranh chấp trong kinh doanh dịch vụ viễn thông",
+        "conditions": [],
+        "attachment_path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/1_013819/M%E1%BA%ABu%20s%E1%BB%91%2001.docx"
+      }
+    ],
+    "special_cases": [],
+    "common_errors": [],
+    "validation_hints": [
+      "Nên xác định trước kênh nộp hồ sơ để biết có cần bản giấy, bản điện tử hay xuất trình trực tiếp.",
+      "Có mẫu biểu đính kèm, nên kiểm tra đúng biểu mẫu trước khi nộp.",
+      "Nên nêu rõ diễn biến vụ việc, quyết định hoặc hành vi bị khiếu nại và chuẩn bị tài liệu chứng minh."
+    ]
+  },
+  "intake": {
+    "candidate_input_fields": [
+      {
+        "field_id": "complaint_subject",
+        "label": "Nội dung khiếu nại chính",
+        "field_type": "text",
+        "required": true
+      },
+      {
+        "field_id": "decision_or_behavior_target",
+        "label": "Quyết định hoặc hành vi bị khiếu nại",
+        "field_type": "text",
+        "required": true
+      },
+      {
+        "field_id": "has_supporting_evidence",
+        "label": "Có tài liệu chứng minh kèm theo",
+        "field_type": "boolean",
+        "required": true
+      },
+      {
+        "field_id": "submission_channel_preference",
+        "label": "Kênh nộp dự kiến",
+        "field_type": "enum",
+        "required": false
+      }
+    ],
+    "suggested_clarifying_questions": [
+      "Bạn đang khiếu nại về quyết định hay hành vi nào, và thuộc cơ quan nào?",
+      "Bạn đã có đơn khiếu nại hoặc tài liệu chứng minh nội dung vụ việc chưa?"
+    ]
+  },
+  "ui_hints": {
+    "primary_channel": "online",
+    "result_label": "Quyết định giải quyết tranh chấp",
+    "time_badge": "16 ngày làm việc",
+    "document_count_badge": 1
+  },
+  "provenance": {
+    "generator": "workflow_domain_enricher",
+    "derivation_mode": "rule_based_semantic_enrichment",
+    "supported_group": true
+  }
+}

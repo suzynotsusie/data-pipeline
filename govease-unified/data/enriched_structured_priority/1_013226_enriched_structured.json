@@ -1,0 +1,112 @@
+{
+  "schema_version": "1.0",
+  "enricher_version": "0.2.0",
+  "source": {
+    "procedure_code": "1.013226",
+    "title": "Cấp điều chỉnh giấy phép xây dựng đối với công trình cấp III, cấp IV (công trình Không theo tuyến/Theo tuyến trong đô thị/Tín ngưỡng, tôn giáo/Tượng đài, tranh hoành tráng/Theo giai đoạn cho công trình không theo tuyến/Theo giai đoạn cho công trình theo tuyến trong đô thị/Dự án) và nhà ở riêng lẻ",
+    "group_key": "dien_luc_nha_o_dat_dai",
+    "workflow_family": null,
+    "subflow": null
+  },
+  "experience": {
+    "entry_label": "Hỗ trợ nhà ở, đất đai và điện lực",
+    "overview_summary": "Thủ tục này thuộc nhóm nhà ở, đất đai và điện lực, thường cần kiểm tra hiện trạng hồ sơ tài sản hoặc điều kiện hạ tầng liên quan. Kết quả thường nhận được là - Giấy phép xây dựng được điều chỉnh. Thời gian xử lý tham khảo: 9 ngày.",
+    "next_step_summary": "Nên chuẩn bị trước thông tin thửa đất, tài sản hoặc địa điểm tiếp nhận, rồi chọn kênh nộp phù hợp: Trực tiếp, Trực tuyến, Dịch vụ bưu chính. Hiện có khoảng 23 mục giấy tờ cần theo dõi trong checklist.",
+    "tone": "supportive_public_service"
+  },
+  "guidance": {
+    "highlight_documents": [
+      {
+        "bucket": "required",
+        "name": "Văn bản chấp thuận về địa điểm xây dựng của Ủy ban nhân dân cấp xã đối với công trình xây dựng biển quảng cáo, trạm viễn thông, cột ăng-ten và các công trình tương tự khác theo quy định của pháp luật có liên quan tại khu vực không thuộc nhóm đất có mục đích sử dụng để xây dựng đối với loại công trình này và không được chuyển đổi mục đích sử dụng đất",
+        "conditions": [],
+        "attachment_path": null
+      },
+      {
+        "bucket": "required",
+        "name": "Bản chính giấy phép xây dựng đã được cấp kèm theo bản vẽ đã được cấp kèm theo giấy xây dựng",
+        "conditions": [],
+        "attachment_path": null
+      },
+      {
+        "bucket": "required",
+        "name": "Báo cáo kết quả thẩm định và văn bản phê duyệt thiết kế xây dựng điều chỉnh (trừ nhà ở riêng lẻ) của chủ đầu tư, trong đó phải có nội dung về bảo đảm an toàn chịu lực, an toàn phòng, chống cháy, nổ, bảo vệ môi trường; kèm theo các hồ sơ theo quy định tại điểm c khoản 1 Điều 55 Nghị định số 175/2024/NĐ-CP tương ứng với phần điều chỉnh thiết kế",
+        "conditions": [],
+        "attachment_path": null
+      },
+      {
+        "bucket": "required",
+        "name": "02 bộ bản vẽ thiết kế xây dựng trong hồ sơ thiết kế xây dựng điều chỉnh triển khai sau thiết kế cơ sở được phê duyệt theo quy định của pháp luật về xây dựng tương ứng theo quy định tại Điều 55, Điều 56, Điều 57, Điều 58, Điều 59 Nghị định số 175/2024/NĐ-CP",
+        "conditions": [],
+        "attachment_path": null
+      },
+      {
+        "bucket": "required",
+        "name": "Hợp đồng thuê đất được giữa chủ đầu tư xây dựng công trình và người quản lý, sử dụng công trình giao thông hoặc văn bản chấp thuận của cơ quan quản lý nhà nước có thẩm quyền về giao thông đối với công trình được phép xây dựng trong phạm vi đất dành cho giao thông theo quy định của pháp luật",
+        "conditions": [],
+        "attachment_path": null
+      },
+      {
+        "bucket": "required",
+        "name": "Giấy chứng nhận quyền sử dụng đất được cấp theo quy định của Luật Đất đai qua các thời kỳ",
+        "conditions": [],
+        "attachment_path": null
+      }
+    ],
+    "special_cases": [
+      "Có kiểm tra dữ liệu cư trú/định danh",
+      "Có thể cần đối chiếu thông tin thửa đất hoặc giấy chứng nhận"
+    ],
+    "common_errors": [
+      "Điền sai mẫu tờ khai hoặc chọn sai biểu mẫu đi kèm.",
+      "Thông tin thửa đất, tài sản hoặc giấy chứng nhận chưa khớp với hồ sơ hiện có."
+    ],
+    "validation_hints": [
+      "Nên xác định trước kênh nộp hồ sơ để biết có cần bản giấy, bản điện tử hay xuất trình trực tiếp.",
+      "Nên đối chiếu trước thông tin thửa đất, tài sản hoặc hiện trạng hồ sơ để tránh bị yêu cầu chỉnh sửa."
+    ]
+  },
+  "intake": {
+    "candidate_input_fields": [
+      {
+        "field_id": "property_or_service_need",
+        "label": "Nhu cầu về đất đai, nhà ở hoặc điện lực",
+        "field_type": "text",
+        "required": true
+      },
+      {
+        "field_id": "property_location",
+        "label": "Địa điểm tài sản hoặc nơi sử dụng dịch vụ",
+        "field_type": "text",
+        "required": true
+      },
+      {
+        "field_id": "submission_channel_preference",
+        "label": "Kênh nộp dự kiến",
+        "field_type": "enum",
+        "required": false
+      },
+      {
+        "field_id": "has_current_certificate",
+        "label": "Đã có giấy tờ/tài liệu hiện trạng",
+        "field_type": "boolean",
+        "required": false
+      }
+    ],
+    "suggested_clarifying_questions": [
+      "Bạn đang xử lý nhu cầu nào về đất đai, nhà ở hoặc điện lực?",
+      "Bạn đã có thông tin thửa đất, địa chỉ tài sản hoặc giấy tờ hiện trạng chưa?"
+    ]
+  },
+  "ui_hints": {
+    "primary_channel": "online",
+    "result_label": "- Giấy phép xây dựng được điều chỉnh",
+    "time_badge": "9 ngày",
+    "document_count_badge": 23
+  },
+  "provenance": {
+    "generator": "workflow_domain_enricher",
+    "derivation_mode": "rule_based_semantic_enrichment",
+    "supported_group": true
+  }
+}

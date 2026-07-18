@@ -10,6 +10,9 @@ from datetime import date
 from pathlib import Path
 from typing import Any
 
+from workflow_fixture_generation import ensure_fixture_coverage
+from workflow_subdomain_layout import materialize_subdomain_outputs
+
 
 ROOT = Path(__file__).resolve().parents[2]
 FULL_DATA_CSV = ROOT / "main" / "full-data.csv"
@@ -575,11 +578,20 @@ def write_workflow_config(records: list[dict[str, Any]], summary_path: Path, nor
     return path
 
 
-def write_test_cases() -> tuple[Path, Path]:
+def write_test_cases(records: list[dict[str, Any]]) -> tuple[Path, Path]:
     intake_path = TESTS_DIR / "intake_cases.json"
     submission_path = TESTS_DIR / "submission_cases.json"
-    intake_path.write_text(json.dumps(INTAKE_CASES, ensure_ascii=False, indent=2), encoding="utf-8")
-    submission_path.write_text(json.dumps(SUBMISSION_CASES, ensure_ascii=False, indent=2), encoding="utf-8")
+    covered_intake, covered_submission = ensure_fixture_coverage(
+        DOMAIN_KEY,
+        records,
+        INTAKE_CASES,
+        SUBMISSION_CASES,
+    )
+    intake_path.write_text(json.dumps(covered_intake, ensure_ascii=False, indent=2), encoding="utf-8")
+    submission_path.write_text(
+        json.dumps(covered_submission, ensure_ascii=False, indent=2),
+        encoding="utf-8",
+    )
     return intake_path, submission_path
 
 
@@ -677,7 +689,8 @@ def main() -> None:
     summary_path = write_summary(records)
     normalized_path = write_normalized(records)
     config_path = write_workflow_config(records, summary_path, normalized_path)
-    intake_path, submission_path = write_test_cases()
+    materialize_subdomain_outputs(WORKFLOW_DIR, summary_path, normalized_path, config_path)
+    intake_path, submission_path = write_test_cases(records)
     update_mapping(records)
     update_checklist(records)
     print(

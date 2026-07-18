@@ -1,0 +1,108 @@
+{
+  "schema_version": "1.0",
+  "enricher_version": "0.2.0",
+  "source": {
+    "procedure_code": "1.013624",
+    "title": "Thủ tục cấp mới giấy phép hoạt động khám bệnh, chữa bệnh.",
+    "group_key": "suc_khoe_y_te",
+    "workflow_family": null,
+    "subflow": null
+  },
+  "experience": {
+    "entry_label": "Hỗ trợ y tế và bảo hiểm",
+    "overview_summary": "Thủ tục này thuộc nhóm y tế, thường cần đối chiếu thông tin người bệnh, đơn vị tiếp nhận hoặc quyền lợi chuyên ngành. Kết quả thường nhận được là Giấy phép hoạt động khám bệnh, chữa bệnh. Thời gian xử lý tham khảo: 65 ngày.",
+    "next_step_summary": "Nên xác định rõ đối tượng tham gia, quyền lợi hoặc nhu cầu điều chỉnh hồ sơ y tế trước khi nộp. Có thể chọn kênh nộp phù hợp: Trực tiếp, Dịch vụ bưu chính. Hiện có khoảng 7 mục giấy tờ cần theo dõi trong checklist.",
+    "tone": "supportive_public_service"
+  },
+  "guidance": {
+    "highlight_documents": [
+      {
+        "bucket": "required",
+        "name": "Bản sao hợp lệ giấy phép hành nghề và giấy xác nhận quá trình hành nghề của người chịu trách nhiệm chuyên môn của cơ sở khám bệnh, chữa bệnh thuộc lực lượng vũ trang nhân dân;",
+        "conditions": [],
+        "attachment_path": null
+      },
+      {
+        "bucket": "required",
+        "name": "Bản sao hợp lệ quyết định thành lập hoặc quyết định ban hành biểu tổ chức, biên chế của cơ sở khám bệnh, chữa bệnh của cấp có thẩm quyền;",
+        "conditions": [],
+        "attachment_path": null
+      },
+      {
+        "bucket": "required",
+        "name": "Danh sách những người đăng ký làm việc ngoài giờ không thuộc Bộ Quốc phòng quản lý tại cơ sở khám bệnh, chữa bệnh;",
+        "conditions": [],
+        "attachment_path": null
+      },
+      {
+        "bucket": "required",
+        "name": "Danh sách người đăng ký hành nghề của cơ sở khám bệnh, chữa bệnh thuộc lực lượng vũ trang nhân dân (bao gồm đăng ký người hành nghề và người làm việc chuyên môn tại cơ sở nhưng không thuộc diện phải cấp giấy phép hành nghề) theo Mẫu số 01a Phụ lục III kèm theo Nghị định số 16/2024/NĐ-CP;",
+        "conditions": [],
+        "attachment_path": null
+      },
+      {
+        "bucket": "required",
+        "name": "Bản sao hợp lệ các văn bản, tài liệu chứng minh cơ sở khám bệnh, chữa bệnh đáp ứng các điều kiện về cơ sở vật chất, thiết bị y tế, tổ chức biên chế phù hợp với cấp chuyên môn kỹ thuật của một trong các loại hình tổ chức cơ sở khám bệnh, chữa bệnh quy định tại các Điều 19, 20, 21 22, 23 và 24 Nghị định số 16/2024/NĐ-CP .",
+        "conditions": [],
+        "attachment_path": null
+      },
+      {
+        "bucket": "required",
+        "name": "Bản kê khai cơ sở vật chất, thiết bị y tế của cơ sở khám bệnh, chữa bệnh theo Mẫu số 02 Phụ lục III kèm theo Nghị định số 16/2024/NĐ-CP;",
+        "conditions": [],
+        "attachment_path": null
+      }
+    ],
+    "special_cases": [],
+    "common_errors": [
+      "Điền sai mẫu tờ khai hoặc chọn sai biểu mẫu đi kèm."
+    ],
+    "validation_hints": [
+      "Nên xác định trước kênh nộp hồ sơ để biết có cần bản giấy, bản điện tử hay xuất trình trực tiếp.",
+      "Nên xác định đúng nhóm đối tượng, mã số bảo hiểm và quyền lợi áp dụng trước khi nộp."
+    ]
+  },
+  "intake": {
+    "candidate_input_fields": [
+      {
+        "field_id": "request_subject",
+        "label": "Đối tượng làm thủ tục",
+        "field_type": "text",
+        "required": true
+      },
+      {
+        "field_id": "insurance_or_medical_need",
+        "label": "Nhu cầu bảo hiểm hoặc y tế",
+        "field_type": "text",
+        "required": true
+      },
+      {
+        "field_id": "submission_channel_preference",
+        "label": "Kênh nộp dự kiến",
+        "field_type": "enum",
+        "required": false
+      },
+      {
+        "field_id": "has_insurance_number",
+        "label": "Đã có mã BHXH/BHYT",
+        "field_type": "boolean",
+        "required": false
+      }
+    ],
+    "suggested_clarifying_questions": [
+      "Bạn đang muốn đăng ký, điều chỉnh hay xác nhận quyền lợi y tế hoặc bảo hiểm nào?",
+      "Bạn đã có mã BHXH/BHYT hoặc thông tin đơn vị tiếp nhận liên quan chưa?"
+    ]
+  },
+  "ui_hints": {
+    "primary_channel": "postal",
+    "result_label": "Giấy phép hoạt động khám bệnh, chữa bệnh",
+    "time_badge": "65 ngày",
+    "document_count_badge": 7
+  },
+  "provenance": {
+    "generator": "workflow_domain_enricher",
+    "derivation_mode": "rule_based_semantic_enrichment",
+    "supported_group": true
+  }
+}

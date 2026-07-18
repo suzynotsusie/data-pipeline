@@ -1,0 +1,326 @@
+{
+  "schema_version": "3.0",
+  "record_type": "public_service_procedure_payload",
+  "id": "procedure-1.000256",
+  "procedure_code": "1.000256",
+  "code": "1.000256",
+  "title": "Phê duyệt Bản công bố phù hợp Lao động hàng hải phần II và cấp Giấy chứng nhận Lao động hàng hải",
+  "language": "vi",
+  "status": "generated_from_pipeline",
+  "field": "Đăng kiểm",
+  "group_key": "phuong_tien_nguoi_lai",
+  "workflow_family": "vehicle_driver_workflow",
+  "subflow": "dang_kiem_phuong_tien",
+  "source": {
+    "source_url": "file:///C:/Users/ku060/Downloads/VAIC%20source/data-pipeline/raw_data/1_000256/1_000256_procedure_detail.md",
+    "source_markdown_path": "C:\\Users\\ku060\\Downloads\\VAIC source\\data-pipeline\\raw_data\\1_000256\\1_000256_procedure_detail.md",
+    "normalized_payload_path": "C:\\Users\\ku060\\Downloads\\VAIC source\\data-pipeline\\govease-unified\\data\\normalized_structured\\1_000256_normalized_structured.json",
+    "enriched_payload_path": "C:\\Users\\ku060\\Downloads\\VAIC source\\data-pipeline\\govease-unified\\data\\enriched_structured_priority\\1_000256_enriched_structured.json"
+  },
+  "scope": {
+    "included": "Thủ tục này thuộc nhóm phương tiện và đăng kiểm, thường cần đối chiếu hồ sơ kỹ thuật, đăng ký hoặc chứng nhận an toàn của phương tiện. Kết quả thường nhận được là Bản công bố phù hợp Lao động hàng hải phần II. Thời gian xử lý tham khảo: 1 ngày làm việc.",
+    "not_included": []
+  },
+  "agency": {
+    "executing_agency": "Cục Đăng kiểm Việt Nam",
+    "submission_place": null,
+    "receiving_places": []
+  },
+  "target_users": [
+    "Người Việt Nam định cư ở nước ngoài",
+    "Tổ chức (không bao gồm doanh nghiệp",
+    "HTX)",
+    "Doanh nghiệp có vốn đầu tư nước ngoài",
+    "Công dân Việt Nam",
+    "Người nước ngoài",
+    "Doanh nghiệp",
+    "Tổ chức nước ngoài",
+    "Hợp tác xã"
+  ],
+  "submission_methods": [
+    {
+      "code": "POSTAL",
+      "label": "Dịch vụ bưu chính",
+      "processing_time": "1 ngày làm việc",
+      "fee": null,
+      "description": null
+    },
+    {
+      "code": "IN_PERSON",
+      "label": "Trực tiếp",
+      "processing_time": "1 ngày làm việc",
+      "fee": null,
+      "description": null
+    }
+  ],
+  "processing_note": "Thời gian xử lý tham chiếu: 1 ngày làm việc. Nên kiểm tra trước loại phương tiện hoặc loại giấy phép cần xử lý, cùng hồ sơ kỹ thuật hoặc nhân thân liên quan. Có thể chọn kênh nộp phù hợp: Trực tiếp, Dịch vụ bưu chính. Hiện có khoảng 4 mục giấy tờ cần theo dõi trong checklist.",
+  "documents": {
+    "normally_required": [
+      {
+        "name": "Hợp đồng Lao động thuyền viên và Thỏa ước Lao động tập thể còn hiệu lực",
+        "quantity": "0 bản chính, 1 bản sao",
+        "notes": [],
+        "group": "default",
+        "attachment_path": null
+      },
+      {
+        "name": "bản sao Bản công bố phù hợp Lao động hàng hải phần I đã được Cục Hàng hải Việt Nam cấp",
+        "quantity": "0 bản chính, 1 bản sao",
+        "notes": [],
+        "group": "default",
+        "attachment_path": null
+      },
+      {
+        "name": "các quy trình quản lý lao động hàng hải của chủ tàu",
+        "quantity": "0 bản chính, 1 bản sao",
+        "notes": [],
+        "group": "default",
+        "attachment_path": null
+      },
+      {
+        "name": "Bản công bố phù hợp Lao động hàng hải phần II do chủ tàu lập theo mẫu",
+        "quantity": "1 bản chính, 0 bản sao",
+        "notes": [],
+        "group": "default",
+        "attachment_path": null
+      }
+    ],
+    "conditional": [],
+    "forms": [],
+    "presented": [],
+    "notes": [],
+    "summary": [
+      {
+        "group": "default",
+        "name": "Hợp đồng Lao động thuyền viên và Thỏa ước Lao động tập thể còn hiệu lực",
+        "quantity": "0 bản chính, 1 bản sao",
+        "notes": [],
+        "attachment_path": null
+      },
+      {
+        "group": "default",
+        "name": "bản sao Bản công bố phù hợp Lao động hàng hải phần I đã được Cục Hàng hải Việt Nam cấp",
+        "quantity": "0 bản chính, 1 bản sao",
+        "notes": [],
+        "attachment_path": null
+      },
+      {
+        "group": "default",
+        "name": "các quy trình quản lý lao động hàng hải của chủ tàu",
+        "quantity": "0 bản chính, 1 bản sao",
+        "notes": [],
+        "attachment_path": null
+      },
+      {
+        "group": "default",
+        "name": "Bản công bố phù hợp Lao động hàng hải phần II do chủ tàu lập theo mẫu",
+        "quantity": "1 bản chính, 0 bản sao",
+        "notes": [],
+        "attachment_path": null
+      }
+    ]
+  },
+  "steps": [
+    {
+      "order": 1,
+      "title": "Bước 1",
+      "description": "1.",
+      "example": null
+    },
+    {
+      "order": 2,
+      "title": "a)",
+      "description": "a) Nộp hồ sơ TTHC: - Chủ tàu gửi hồ sơ đề nghị phê duyệt Bản công bố phù hợp Lao động hàng hải phần II và cấp Giấy chứng nhận Lao động hàng hải đến Cục Đăng kiểm Việt Nam",
+      "example": null
+    },
+    {
+      "order": 3,
+      "title": "b)",
+      "description": "b) Giải quyết TTHC: Cục Đăng kiểm Việt Nam tiếp nhận, kiểm tra hồ sơ và xử lý như sau: - Trường hợp hồ sơ nộp trực tiếp, nếu hồ sơ đầy đủ thì cấp giấy biên nhận hồ sơ và hẹn trả kết quả theo thời hạn quy định tại điểm c khoản này; nếu hồ sơ không đầy đủ theo quy định thì hướng dẫn chủ tàu hoàn thiện hồ sơ ngay trong ngày làm việc - Trường hợp nhận hồ sơ qua hệ thống bưu chính hoặc hình thức phù hợp khác, nếu hồ sơ không đầy đủ theo quy định, trong thời hạn 02 (hai) ngày làm việc, kể từ ngày nhận được hồ sơ, Cục Đăng kiểm Việt Nam có văn bản yêu cầu bổ sung, hoàn thiện hồ sơ - Trong thời hạn 05 (năm) ngày làm việc, kể từ ngày nhận được hồ sơ đầy đủ theo quy định, Cục Đăng kiểm Việt Nam phải hoàn thành việc thẩm định hồ sơ; nếu kết quả thẩm định chưa đạt yêu cầu thì yêu cầu chủ tàu bổ sung, hoàn thiện; - Nếu kết quả thẩm định hồ sơ đạt yêu cầu, Cục Đăng kiểm Việt Nam thông báo cho chủ tàu để tổ chức đánh giá việc thực hiện Bản công bố phù hợp Lao động hàng hải phần II và các quy định của Công ước MLC 2006 trên tàu biển - Nếu kết quả đánh giá trên tàu biển đáp ứng các quy định của Công ước MLC 2006 thì trong thời hạn 01 (một) ngày làm việc, kể từ khi hoàn thành việc đánh giá, Cục Đăng kiểm Việt Nam phê duyệt Bản công bố phù hợp Lao động hàng hải phần II, cấp Giấy chứng nhận Lao động hàng hải cho tàu biển và gửi chủ tàu - Nếu kết quả đánh giá trên tàu không đáp ứng các quy định của Công ước MLC 2006 thì trong thời hạn 01 (một) ngày làm việc, kể từ khi hoàn thành việc đánh giá, Cục Đăng kiểm Việt Nam phải trả lời bằng văn bản nêu rõ lý do không phê duyệt Bản công bố phù hợp Lao động hàng hải phần II và việc không cấp Giấy chứng nhận Lao động hàng hải.",
+      "example": "dịch vụ bưu chính"
+    }
+  ],
+  "input_fields": [
+    {
+      "field": "vehicle_or_license_need",
+      "label": "Nhu cầu về phương tiện hoặc giấy phép",
+      "type": "string",
+      "required": true
+    },
+    {
+      "field": "vehicle_or_person_identifier",
+      "label": "Thông tin phương tiện hoặc người lái",
+      "type": "string",
+      "required": true
+    },
+    {
+      "field": "submission_channel_preference",
+      "label": "Kênh nộp dự kiến",
+      "type": "enum",
+      "required": false,
+      "options": [
+        "Trực tiếp",
+        "Dịch vụ bưu chính"
+      ]
+    },
+    {
+      "field": "has_technical_or_identity_documents",
+      "label": "Đã có hồ sơ kỹ thuật hoặc giấy tờ nhân thân",
+      "type": "boolean",
+      "required": false
+    }
+  ],
+  "validation_rules": [
+    {
+      "id": "required-1",
+      "severity": "error",
+      "field": "vehicle_or_license_need",
+      "rule": "Trường bắt buộc phải có dữ liệu hợp lệ trước khi nộp.",
+      "message": "Thiếu trường bắt buộc: Nhu cầu về phương tiện hoặc giấy phép."
+    },
+    {
+      "id": "required-2",
+      "severity": "error",
+      "field": "vehicle_or_person_identifier",
+      "rule": "Trường bắt buộc phải có dữ liệu hợp lệ trước khi nộp.",
+      "message": "Thiếu trường bắt buộc: Thông tin phương tiện hoặc người lái."
+    },
+    {
+      "id": "hint-1",
+      "severity": "warning",
+      "field": "general",
+      "rule": "Nên xác định trước kênh nộp hồ sơ để biết có cần bản giấy, bản điện tử hay xuất trình trực tiếp.",
+      "message": "Nên xác định trước kênh nộp hồ sơ để biết có cần bản giấy, bản điện tử hay xuất trình trực tiếp."
+    },
+    {
+      "id": "hint-2",
+      "severity": "warning",
+      "field": "general",
+      "rule": "Nên đối chiếu trước thông tin phương tiện, hồ sơ kỹ thuật hoặc giấy phép lái xe liên quan.",
+      "message": "Nên đối chiếu trước thông tin phương tiện, hồ sơ kỹ thuật hoặc giấy phép lái xe liên quan."
+    }
+  ],
+  "common_errors": [
+    {
+      "field": "general",
+      "issue": "Điền sai mẫu tờ khai hoặc chọn sai biểu mẫu đi kèm.",
+      "fix": "Nên xác định trước kênh nộp hồ sơ để biết có cần bản giấy, bản điện tử hay xuất trình trực tiếp."
+    },
+    {
+      "field": "general",
+      "issue": "Thiếu hồ sơ về vị trí việc làm, đơn vị sử dụng lao động hoặc điều kiện làm việc áp dụng.",
+      "fix": "Nên xác định trước kênh nộp hồ sơ để biết có cần bản giấy, bản điện tử hay xuất trình trực tiếp."
+    }
+  ],
+  "clarifying_questions": [
+    {
+      "id": "clarify_1",
+      "question": "Bạn đang xử lý hồ sơ cho phương tiện hay cho giấy phép lái xe?",
+      "purpose": "workflow_intake"
+    },
+    {
+      "id": "clarify_2",
+      "question": "Bạn đã có thông tin nhận diện phương tiện hoặc giấy tờ của người lái chưa?",
+      "purpose": "workflow_intake"
+    }
+  ],
+  "legal_basis": [
+    {
+      "title": "Quy định về giá dịch vụ kiểm định an toàn kỹ thuật và chất lượng tàu biến, công trình biến; Sản phẩm công nghiệp lắp đặt trên tàu biển, công trình biển; đánh giá, chứng nhận hệ thống quản lý an toàn và phê duyệt, kiểm tra, đánh giá, chứng nhận lao động hàng hải hải",
+      "code": "234/2016/TT-BTC"
+    },
+    {
+      "title": "Quy định thủ tục cấp, thu hồi bản công bố phù hợp Lao động hàng hải và Giấy chứng nhận Lao động hàng hải",
+      "code": "43/2015/TT-BGTVT"
+    },
+    {
+      "title": "Sửa đổi, bổ sung Phụ lục III và Phụ lục V ban hành kèm theo Thông tư số 43/2015/TT-BGTVT ngày 20 tháng 8 năm 2015 của Bộ trưởng Bộ Giao thông vận tải quy định thủ tục cấp, phê duyệt, thu hồi Bản công bố phù hợp lao động hàng hải và Giấy chứng nhận Lao động hàng hải",
+      "code": "24/2017/TT-BGTVT"
+    }
+  ],
+  "legal_bases": [
+    {
+      "title": "Quy định về giá dịch vụ kiểm định an toàn kỹ thuật và chất lượng tàu biến, công trình biến; Sản phẩm công nghiệp lắp đặt trên tàu biển, công trình biển; đánh giá, chứng nhận hệ thống quản lý an toàn và phê duyệt, kiểm tra, đánh giá, chứng nhận lao động hàng hải hải",
+      "code": "234/2016/TT-BTC"
+    },
+    {
+      "title": "Quy định thủ tục cấp, thu hồi bản công bố phù hợp Lao động hàng hải và Giấy chứng nhận Lao động hàng hải",
+      "code": "43/2015/TT-BGTVT"
+    },
+    {
+      "title": "Sửa đổi, bổ sung Phụ lục III và Phụ lục V ban hành kèm theo Thông tư số 43/2015/TT-BGTVT ngày 20 tháng 8 năm 2015 của Bộ trưởng Bộ Giao thông vận tải quy định thủ tục cấp, phê duyệt, thu hồi Bản công bố phù hợp lao động hàng hải và Giấy chứng nhận Lao động hàng hải",
+      "code": "24/2017/TT-BGTVT"
+    }
+  ],
+  "faq": [
+    {
+      "question": "Có thể nộp qua kênh nào?",
+      "answer": "Các kênh hiện có: Trực tiếp, Dịch vụ bưu chính."
+    },
+    {
+      "question": "Thời gian xử lý tham chiếu là bao lâu?",
+      "answer": "Thời gian xử lý tham chiếu hiện có là 1 ngày làm việc."
+    },
+    {
+      "question": "Kết quả chính của thủ tục là gì?",
+      "answer": "Kết quả chính được trích xuất là Bản công bố phù hợp Lao động hàng hải phần II."
+    }
+  ],
+  "guidance": {
+    "highlight_documents": [
+      {
+        "bucket": "required",
+        "name": "Hợp đồng Lao động thuyền viên và Thỏa ước Lao động tập thể còn hiệu lực",
+        "conditions": [],
+        "attachment_path": null
+      },
+      {
+        "bucket": "required",
+        "name": "bản sao Bản công bố phù hợp Lao động hàng hải phần I đã được Cục Hàng hải Việt Nam cấp",
+        "conditions": [],
+        "attachment_path": null
+      },
+      {
+        "bucket": "required",
+        "name": "các quy trình quản lý lao động hàng hải của chủ tàu",
+        "conditions": [],
+        "attachment_path": null
+      },
+      {
+        "bucket": "required",
+        "name": "Bản công bố phù hợp Lao động hàng hải phần II do chủ tàu lập theo mẫu",
+        "conditions": [],
+        "attachment_path": null
+      }
+    ],
+    "special_cases": [
+      "Có thể cần xác minh quan hệ lao động hoặc giấy phép làm việc"
+    ],
+    "common_errors": [
+      "Điền sai mẫu tờ khai hoặc chọn sai biểu mẫu đi kèm.",
+      "Thiếu hồ sơ về vị trí việc làm, đơn vị sử dụng lao động hoặc điều kiện làm việc áp dụng."
+    ],
+    "validation_hints": [
+      "Nên xác định trước kênh nộp hồ sơ để biết có cần bản giấy, bản điện tử hay xuất trình trực tiếp.",
+      "Nên đối chiếu trước thông tin phương tiện, hồ sơ kỹ thuật hoặc giấy phép lái xe liên quan."
+    ]
+  },
+  "next_steps": {
+    "summary": "Nên kiểm tra trước loại phương tiện hoặc loại giấy phép cần xử lý, cùng hồ sơ kỹ thuật hoặc nhân thân liên quan. Có thể chọn kênh nộp phù hợp: Trực tiếp, Dịch vụ bưu chính. Hiện có khoảng 4 mục giấy tờ cần theo dõi trong checklist.",
+    "time_badge": "1 ngày làm việc",
+    "result_label": "Bản công bố phù hợp Lao động hàng hải phần II",
+    "primary_channel": "postal",
+    "channels": [
+      "in_person",
+      "postal"
+    ]
+  },
+  "notes": [],
+  "provenance": {
+    "pipeline": "raw->structured->normalized->enriched->ui_api_payload",
+    "normalizer_version": "0.2.0",
+    "enricher_version": "0.2.0",
+    "mapping_notes": "workflow_generated:phuong_tien_nguoi_lai/dang_kiem_phuong_tien",
+    "supported_group": true
+  }
+}

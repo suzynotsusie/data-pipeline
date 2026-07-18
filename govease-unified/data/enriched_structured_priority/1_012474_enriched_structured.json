@@ -1,0 +1,114 @@
+{
+  "schema_version": "1.0",
+  "enricher_version": "0.2.0",
+  "source": {
+    "procedure_code": "1.012474",
+    "title": "Hỗ trợ tiền vé xe cho người lao động",
+    "group_key": "viec_lam",
+    "workflow_family": "employment_workflow",
+    "subflow": "ho_tro_tu_van_gioi_thieu_viec_lam"
+  },
+  "experience": {
+    "entry_label": "Hỗ trợ việc làm và lao động",
+    "overview_summary": "Thủ tục này thuộc nhóm việc làm và lao động, thường cần kiểm tra hồ sơ nghề nghiệp, đơn vị sử dụng lao động hoặc điều kiện hưởng chế độ liên quan. Kết quả thường nhận được là Quyết định phê duyệt của UBND cấp xã. Thời gian xử lý tham khảo: 8 ngày làm việc.",
+    "next_step_summary": "Nên xác định rõ nhu cầu lao động, hồ sơ nghề nghiệp hoặc chế độ cần giải quyết trước khi nộp. Có thể chọn kênh nộp phù hợp: Trực tiếp, Trực tuyến, Dịch vụ bưu chính. Hiện có khoảng 6 mục giấy tờ cần theo dõi trong checklist.",
+    "tone": "supportive_public_service"
+  },
+  "guidance": {
+    "highlight_documents": [
+      {
+        "bucket": "required",
+        "name": "Đơn đề nghị hỗ trợ theo Mẫu số 01 kèm theo Nghị quyết số 14/2021/NQ-HĐND ngày 09 tháng 12 năm 2021 của Hội đồng nhân dân tỉnh Điện Biên quy định chính sách hỗ trợ tiền vé xe cho người lao động của tỉnh Điện Biên đi sơ tuyển, đi làm việc có tổ chức tại các doanh nghiệp, khu công nghiệp ngoài tỉnh.",
+        "conditions": [],
+        "attachment_path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/1_012474/M%E1%BA%ABu%20s%E1%BB%91%2001.docx"
+      },
+      {
+        "bucket": "required",
+        "name": "Vé xe vận tải hành khách thông thường.",
+        "conditions": [],
+        "attachment_path": null
+      },
+      {
+        "bucket": "required",
+        "name": "Đơn đề nghị hỗ trợ theo Mẫu số 02 kèm theo Nghị quyết số 14/2021/NQ-HĐND ngày 09 tháng 12 năm 2021 của Hội đồng nhân dân tỉnh Điện Biên Quy định chính sách hỗ trợ tiền vé xe cho người lao động của tỉnh Điện Biên đi sơ tuyển, đi làm việc có tổ chức tại các doanh nghiệp, khu công nghiệp ngoài tỉnh.",
+        "conditions": [],
+        "attachment_path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/1_012474/M%E1%BA%ABu%20s%E1%BB%91%2002.docx"
+      },
+      {
+        "bucket": "required",
+        "name": "Bản sao có chứng thực hợp đồng lao động từ đủ 12 tháng trở lên hoặc Quyết định mở lớp hoặc hợp đồng đào tạo trình độ trung cấp nghề, cao đẳng nghề.",
+        "conditions": [],
+        "attachment_path": null
+      },
+      {
+        "bucket": "required",
+        "name": "Vé xe vận tải hành khách thông thường.",
+        "conditions": [],
+        "attachment_path": null
+      },
+      {
+        "bucket": "conditional",
+        "name": "Bản sao có chứng thực của một trong các giấy tờ sau: Quyết định trúng tuyển vào làm việc từ đủ 12 tháng trở lên, quyết định trúng tuyển hoặc giấy báo nhập học (trường hợp người lao động đi tham gia sơ tuyển), quyết định mở lớp học nghề trình độ trung cấp nghề, cao đẳng nghề hoặc hợp đồng đào tạo với cơ sở giáo dục nghề nghiệp; quyết định tuyển dụng lao động hoặc hợp đồng lao động từ 01 năm (12 tháng) trở lên với doanh nghiệp tuyển dụng (trường hợp người lao động đi làm việc, đi học nghề).",
+        "conditions": [
+          "Bản sao có chứng thực của một trong các giấy tờ sau: Quyết định trúng tuyển vào làm việc từ đủ 12 tháng trở lên, quyết định trúng tuyển hoặc giấy báo nhập học (trường hợp người lao động đi tham gia sơ tuyển), quyết định mở lớp học nghề trình độ trung cấp nghề, cao đẳng nghề hoặc hợp đồng đào tạo với cơ sở giáo dục nghề nghiệp; quyết định tuyển dụng lao động hoặc hợp đồng lao động từ 01 năm (12 tháng) trở lên với doanh nghiệp tuyển dụng (trường hợp người lao động đi làm việc, đi học nghề)."
+        ],
+        "attachment_path": null
+      }
+    ],
+    "special_cases": [
+      "Có thể cần xác minh quan hệ lao động hoặc giấy phép làm việc"
+    ],
+    "common_errors": [
+      "Điền sai mẫu tờ khai hoặc chọn sai biểu mẫu đi kèm.",
+      "Thiếu hồ sơ về vị trí việc làm, đơn vị sử dụng lao động hoặc điều kiện làm việc áp dụng."
+    ],
+    "validation_hints": [
+      "Nên xác định trước kênh nộp hồ sơ để biết có cần bản giấy, bản điện tử hay xuất trình trực tiếp.",
+      "Có mẫu biểu đính kèm, nên kiểm tra đúng biểu mẫu trước khi nộp.",
+      "Nên xác định đúng nhóm thủ tục lao động, đơn vị liên quan và hồ sơ nghề nghiệp cần xuất trình."
+    ]
+  },
+  "intake": {
+    "candidate_input_fields": [
+      {
+        "field_id": "employment_need",
+        "label": "Nhu cầu việc làm hoặc lao động",
+        "field_type": "text",
+        "required": true
+      },
+      {
+        "field_id": "worker_or_employer_info",
+        "label": "Thông tin người lao động hoặc đơn vị sử dụng lao động",
+        "field_type": "text",
+        "required": true
+      },
+      {
+        "field_id": "submission_channel_preference",
+        "label": "Kênh nộp dự kiến",
+        "field_type": "enum",
+        "required": false
+      },
+      {
+        "field_id": "has_supporting_employment_documents",
+        "label": "Đã có hồ sơ lao động liên quan",
+        "field_type": "boolean",
+        "required": false
+      }
+    ],
+    "suggested_clarifying_questions": [
+      "Bạn đang cần giải quyết thủ tục lao động nào cho người lao động hoặc doanh nghiệp?",
+      "Hồ sơ nghề nghiệp, đơn vị sử dụng lao động hoặc yếu tố lao động nước ngoài đã rõ chưa?"
+    ]
+  },
+  "ui_hints": {
+    "primary_channel": "in_person",
+    "result_label": "Quyết định phê duyệt của UBND cấp xã",
+    "time_badge": "8 ngày làm việc",
+    "document_count_badge": 6
+  },
+  "provenance": {
+    "generator": "workflow_domain_enricher",
+    "derivation_mode": "rule_based_semantic_enrichment",
+    "supported_group": true
+  }
+}

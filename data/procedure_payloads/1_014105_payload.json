@@ -1,0 +1,341 @@
+{
+  "schema_version": "3.0",
+  "record_type": "public_service_procedure_payload",
+  "id": "procedure-1.014105",
+  "procedure_code": "1.014105",
+  "code": "1.014105",
+  "title": "Cấp phép xuất khẩu thuốc phải kiểm soát đặc biệt thuộc hành lý cá nhân của tổ chức, cá nhân xuất cảnh gửi theo vận tải đơn, hàng hóa mang theo người của tổ chức, cá nhân xuất cảnh để điều trị bệnh cho bản thân người xuất cảnh và không phải là nguyên liệu làm thuốc phải kiểm soát đặc biệt",
+  "language": "vi",
+  "status": "generated_from_pipeline",
+  "field": "Dược phẩm",
+  "group_key": "suc_khoe_y_te",
+  "workflow_family": null,
+  "subflow": null,
+  "source": {
+    "source_url": "file:///C:/Users/ku060/Downloads/VAIC%20source/data-pipeline/raw_data/1_014105/1_014105_procedure_detail.md",
+    "source_markdown_path": "C:\\Users\\ku060\\Downloads\\VAIC source\\data-pipeline\\raw_data\\1_014105\\1_014105_procedure_detail.md",
+    "normalized_payload_path": "C:\\Users\\ku060\\Downloads\\VAIC source\\data-pipeline\\govease-unified\\data\\normalized_structured\\1_014105_normalized_structured.json",
+    "enriched_payload_path": "C:\\Users\\ku060\\Downloads\\VAIC source\\data-pipeline\\govease-unified\\data\\enriched_structured_priority\\1_014105_enriched_structured.json"
+  },
+  "scope": {
+    "included": "Thủ tục này thuộc nhóm y tế, thường cần đối chiếu thông tin người bệnh, đơn vị tiếp nhận hoặc quyền lợi chuyên ngành. Kết quả thường nhận được là Giấy phép xuất khẩu/Văn bản yêu cầu sửa đổi, bổ sung hồ sơ/Văn bản trả lời không cấp phép xuất khẩu. Thời gian xử lý tham khảo: theo thời hạn của cơ quan xử lý.",
+    "not_included": []
+  },
+  "agency": {
+    "executing_agency": "Ủy ban nhân dân cấp tỉnh",
+    "submission_place": null,
+    "receiving_places": []
+  },
+  "target_users": [
+    "Doanh nghiệp có vốn đầu tư nước ngoài",
+    "Hợp tác xã",
+    "Công dân Việt Nam",
+    "Doanh nghiệp",
+    "Người nước ngoài",
+    "Tổ chức nước ngoài",
+    "Tổ chức (không bao gồm doanh nghiệp",
+    "HTX)",
+    "Người Việt Nam định cư ở nước ngoài"
+  ],
+  "submission_methods": [
+    {
+      "code": "ONLINE",
+      "label": "Trực tuyến",
+      "processing_time": null,
+      "fee": null,
+      "description": "07 ngày làm việc đối với trường hợp không có yêu cầu sửa đổi, bổ sung hồ sơ. 05 ngày làm việc đối với trường hợp yêu cầu sửa đổi, bổ sung hồ sơ hoặc trường hợp không cấp phép xuất khẩu."
+    },
+    {
+      "code": "POSTAL",
+      "label": "Dịch vụ bưu chính",
+      "processing_time": null,
+      "fee": null,
+      "description": "07 ngày làm việc đối với trường hợp không có yêu cầu sửa đổi, bổ sung hồ sơ. 05 ngày làm việc đối với trường hợp yêu cầu sửa đổi, bổ sung hồ sơ hoặc trường hợp không cấp phép xuất khẩu."
+    },
+    {
+      "code": "IN_PERSON",
+      "label": "Trực tiếp",
+      "processing_time": null,
+      "fee": null,
+      "description": "07 ngày làm việc đối với trường hợp không có yêu cầu sửa đổi, bổ sung hồ sơ. 05 ngày làm việc đối với trường hợp yêu cầu sửa đổi, bổ sung hồ sơ hoặc trường hợp không cấp phép xuất khẩu."
+    }
+  ],
+  "processing_note": "Nên xác định rõ đối tượng tham gia, quyền lợi hoặc nhu cầu điều chỉnh hồ sơ y tế trước khi nộp. Có thể chọn kênh nộp phù hợp: Trực tiếp, Trực tuyến, Dịch vụ bưu chính. Hiện có khoảng 2 mục giấy tờ cần theo dõi trong checklist.",
+  "documents": {
+    "normally_required": [
+      {
+        "name": "Đơn đề nghị xuất khẩu thuốc",
+        "quantity": "1 bản chính, 0 bản sao",
+        "notes": [],
+        "group": "default",
+        "attachment_path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/1_014105/Mus07.docx"
+      }
+    ],
+    "conditional": [
+      {
+        "condition": "Bản sao đơn thuốc, sổ y bạ theo dõi điều trị ngoại trú có chứng thực hoặc có chữ ký của người đề nghị hoặc có đóng dấu của tổ chức đề nghị. Các giấy tờ này phải có đầy đủ các nội dung sau: Tên, tuổi người bệnh; tên thuốc, hàm lượng hoặc nồng độ và dung tích; số lượng thuốc (hoặc số ngày dùng thuốc); liều dùng; họ tên, chữ ký của thầy thuốc; địa chỉ của bệnh viện, phòng khám nơi thầy thuốc hành nghề. Trường hợp bản sao có chữ ký của người đề nghị hoặc đóng dấu của tổ chức đề nghị thì phải kèm xuất trình bản chính để đối chiếu khi nộp hồ sơ. Các giấy tờ này nếu không được thể hiện bằng tiếng Việt hoặc tiếng Anh thì phải nộp thêm bản dịch của tài liệu đó ra tiếng Việt hoặc tiếng Anh và bản dịch được chứng thực chữ ký người dịch theo quy định.",
+        "document": "Bản sao đơn thuốc, sổ y bạ theo dõi điều trị ngoại trú có chứng thực hoặc có chữ ký của người đề nghị hoặc có đóng dấu của tổ chức đề nghị. Các giấy tờ này phải có đầy đủ các nội dung sau: Tên, tuổi người bệnh; tên thuốc, hàm lượng hoặc nồng độ và dung tích; số lượng thuốc (hoặc số ngày dùng thuốc); liều dùng; họ tên, chữ ký của thầy thuốc; địa chỉ của bệnh viện, phòng khám nơi thầy thuốc hành nghề. Trường hợp bản sao có chữ ký của người đề nghị hoặc đóng dấu của tổ chức đề nghị thì phải kèm xuất trình bản chính để đối chiếu khi nộp hồ sơ. Các giấy tờ này nếu không được thể hiện bằng tiếng Việt hoặc tiếng Anh thì phải nộp thêm bản dịch của tài liệu đó ra tiếng Việt hoặc tiếng Anh và bản dịch được chứng thực chữ ký người dịch theo quy định.",
+        "quantity": "0 bản chính, 1 bản sao",
+        "notes": [],
+        "attachment_path": null
+      }
+    ],
+    "forms": [
+      {
+        "name": "Đơn đề nghị xuất khẩu thuốc",
+        "attachment_label": "Mus07.docx",
+        "attachment_path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/1_014105/Mus07.docx"
+      }
+    ],
+    "presented": [],
+    "notes": [],
+    "summary": [
+      {
+        "group": "default",
+        "name": "Đơn đề nghị xuất khẩu thuốc",
+        "quantity": "1 bản chính, 0 bản sao",
+        "notes": [],
+        "attachment_path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/1_014105/Mus07.docx"
+      },
+      {
+        "group": null,
+        "name": null,
+        "quantity": "0 bản chính, 1 bản sao",
+        "notes": [],
+        "attachment_path": null
+      },
+      {
+        "group": null,
+        "name": "Đơn đề nghị xuất khẩu thuốc",
+        "quantity": null,
+        "notes": null,
+        "attachment_path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/1_014105/Mus07.docx"
+      }
+    ]
+  },
+  "steps": [
+    {
+      "order": 1,
+      "title": "Bước 1",
+      "description": "1.",
+      "example": null
+    },
+    {
+      "order": 2,
+      "title": "Bước 1:",
+      "description": "Bước 1: Tổ chức, cá nhân đề nghị cấp phép xuất khẩu nộp hồ sơ trực tiếp hoặc qua dịch vụ bưu chính hoặc trực tuyến về Ủy ban nhân dân cấp tỉnh nơi cửa khẩu làm thủ tục xuất cảnh hoặc nơi người bệnh đang sinh sống, tạm trú hợp pháp hoặc nơi tổ chức đặt trụ sở;",
+      "example": "trực tuyến"
+    },
+    {
+      "order": 3,
+      "title": "Bước 2:",
+      "description": "Bước 2: Sau khi nhận được hồ sơ, Ủy ban nhân dân cấp tỉnh trả cho tổ chức, cá nhân đề nghị Phiếu tiếp nhận hồ sơ theo Mẫu số 01 tại Phụ lục I của Nghị định số 163/2025/NĐ-CP;",
+      "example": null
+    },
+    {
+      "order": 4,
+      "title": "Bước 3:",
+      "description": "Bước 3: Trường hợp không có yêu cầu sửa đổi, bổ sung hồ sơ, Ủy ban nhân dân cấp tỉnh cấp phép xuất khẩu trong thời hạn 07 ngày làm việc kể từ ngày ghi trên Phiếu tiếp nhận hồ sơ. Trường hợp có yêu cầu sửa đổi, bổ sung hồ sơ, Ủy ban nhân dân cấp tỉnh có văn bản trả lời theo Mẫu số 16 tại Phụ lục I của Nghị định số 163/2025/NĐ-CP để yêu cầu sửa đổi, bổ sung hồ sơ trong thời hạn 05 ngày làm việc kể từ ngày ghi trên Phiếu tiếp nhận hồ sơ;",
+      "example": "07 ngày làm việc"
+    },
+    {
+      "order": 5,
+      "title": "Bước 4:",
+      "description": "Bước 4: Sau khi nhận hồ sơ sửa đổi, bổ sung, Ủy ban nhân dân cấp tỉnh trả tổ chức, cá nhân Phiếu tiếp nhận hồ sơ sửa đổi, bổ sung theo Mẫu số 01 tại Phụ lục I của Nghị định số 163/2025/NĐ-CP. Trường hợp hồ sơ sửa đổi, bổ sung không đáp ứng yêu cầu, Ủy ban nhân dân cấp tỉnh có văn bản trả lời và nêu rõ lý do không cấp phép xuất khẩu theo Mẫu số 16 tại Phụ lục I của Nghị định số 163/2025/NĐ-CP trong thời hạn 05 ngày làm việc kể từ ngày ghi trên Phiếu tiếp nhận hồ sơ. Trường hợp không có yêu cầu sửa đổi, bổ sung đối với hồ sơ sửa đổi, bổ sung, Ủy ban nhân dân cấp tỉnh cấp phép xuất khẩu theo quy định tại",
+      "example": "05 ngày làm việc"
+    },
+    {
+      "order": 6,
+      "title": "bước 3.",
+      "description": "bước 3. Trong thời hạn 03 tháng kể từ ngày Ủy ban nhân dân cấp tỉnh có văn bản thông báo sửa đổi, bổ sung, tổ chức, cá nhân đề nghị cấp phép xuất khẩu phải nộp hồ sơ sửa đổi, bổ sung theo yêu cầu. Sau thời hạn trên, tổ chức, cá nhân không nộp hồ sơ sửa đổi, bổ sung thì hồ sơ đã nộp không còn giá trị.",
+      "example": "03 tháng"
+    }
+  ],
+  "input_fields": [
+    {
+      "field": "request_subject",
+      "label": "Đối tượng làm thủ tục",
+      "type": "string",
+      "required": true
+    },
+    {
+      "field": "insurance_or_medical_need",
+      "label": "Nhu cầu bảo hiểm hoặc y tế",
+      "type": "string",
+      "required": true
+    },
+    {
+      "field": "submission_channel_preference",
+      "label": "Kênh nộp dự kiến",
+      "type": "enum",
+      "required": false,
+      "options": [
+        "Trực tiếp",
+        "Trực tuyến",
+        "Dịch vụ bưu chính"
+      ]
+    },
+    {
+      "field": "has_insurance_number",
+      "label": "Đã có mã BHXH/BHYT",
+      "type": "boolean",
+      "required": false
+    }
+  ],
+  "validation_rules": [
+    {
+      "id": "required-1",
+      "severity": "error",
+      "field": "request_subject",
+      "rule": "Trường bắt buộc phải có dữ liệu hợp lệ trước khi nộp.",
+      "message": "Thiếu trường bắt buộc: Đối tượng làm thủ tục."
+    },
+    {
+      "id": "required-2",
+      "severity": "error",
+      "field": "insurance_or_medical_need",
+      "rule": "Trường bắt buộc phải có dữ liệu hợp lệ trước khi nộp.",
+      "message": "Thiếu trường bắt buộc: Nhu cầu bảo hiểm hoặc y tế."
+    },
+    {
+      "id": "hint-1",
+      "severity": "warning",
+      "field": "general",
+      "rule": "Nên xác định trước kênh nộp hồ sơ để biết có cần bản giấy, bản điện tử hay xuất trình trực tiếp.",
+      "message": "Nên xác định trước kênh nộp hồ sơ để biết có cần bản giấy, bản điện tử hay xuất trình trực tiếp."
+    },
+    {
+      "id": "hint-2",
+      "severity": "warning",
+      "field": "general",
+      "rule": "Có mẫu biểu đính kèm, nên kiểm tra đúng biểu mẫu trước khi nộp.",
+      "message": "Có mẫu biểu đính kèm, nên kiểm tra đúng biểu mẫu trước khi nộp."
+    },
+    {
+      "id": "hint-3",
+      "severity": "warning",
+      "field": "general",
+      "rule": "Nên xác định đúng nhóm đối tượng, mã số bảo hiểm và quyền lợi áp dụng trước khi nộp.",
+      "message": "Nên xác định đúng nhóm đối tượng, mã số bảo hiểm và quyền lợi áp dụng trước khi nộp."
+    }
+  ],
+  "common_errors": [],
+  "clarifying_questions": [
+    {
+      "id": "clarify_1",
+      "question": "Bạn đang muốn đăng ký, điều chỉnh hay xác nhận quyền lợi y tế hoặc bảo hiểm nào?",
+      "purpose": "workflow_intake"
+    },
+    {
+      "id": "clarify_2",
+      "question": "Bạn đã có mã BHXH/BHYT hoặc thông tin đơn vị tiếp nhận liên quan chưa?",
+      "purpose": "workflow_intake"
+    }
+  ],
+  "legal_basis": [
+    {
+      "title": "Sửa đổi, bổ sung một số điều của Thông tư số 20/2017/TT-BYT ngày 10 tháng 5 năm 2017 của Bộ trưởng Bộ Y tế quy định chi tiết một số điều của Luật dược và Nghị định số 54/2017/NĐ-CP ngày 08 tháng 5 năm 2017 của Chính phủ về thuốc và nguyên liệu làm thuốc phải kiểm soát đặc biệt",
+      "code": "27/2024/TT-BYT"
+    },
+    {
+      "title": "Quyết định của Bộ trưởng Bộ Y tế công bố danh mục thuốc, dược chất thuộc danh mục chất bị cấm sử dụng trong một số ngành, lĩnh vực",
+      "code": "3235/QĐ-BYT"
+    },
+    {
+      "title": "Nghị định của Chính phủ quy định chi tiết một số điều và biện pháp thi hành Luật dược",
+      "code": "163/2025/NĐ-CP"
+    },
+    {
+      "title": "Luật số 44/2024/QH15",
+      "code": "44/2024/QH15"
+    },
+    {
+      "title": "105/2016/QH13 Dược",
+      "code": "Luật 105/2016/QH13"
+    },
+    {
+      "title": "Thông tư 06/2017/TT-BYT",
+      "code": "06/2017/TT-BYT"
+    }
+  ],
+  "legal_bases": [
+    {
+      "title": "Sửa đổi, bổ sung một số điều của Thông tư số 20/2017/TT-BYT ngày 10 tháng 5 năm 2017 của Bộ trưởng Bộ Y tế quy định chi tiết một số điều của Luật dược và Nghị định số 54/2017/NĐ-CP ngày 08 tháng 5 năm 2017 của Chính phủ về thuốc và nguyên liệu làm thuốc phải kiểm soát đặc biệt",
+      "code": "27/2024/TT-BYT"
+    },
+    {
+      "title": "Quyết định của Bộ trưởng Bộ Y tế công bố danh mục thuốc, dược chất thuộc danh mục chất bị cấm sử dụng trong một số ngành, lĩnh vực",
+      "code": "3235/QĐ-BYT"
+    },
+    {
+      "title": "Nghị định của Chính phủ quy định chi tiết một số điều và biện pháp thi hành Luật dược",
+      "code": "163/2025/NĐ-CP"
+    },
+    {
+      "title": "Luật số 44/2024/QH15",
+      "code": "44/2024/QH15"
+    },
+    {
+      "title": "105/2016/QH13 Dược",
+      "code": "Luật 105/2016/QH13"
+    },
+    {
+      "title": "Thông tư 06/2017/TT-BYT",
+      "code": "06/2017/TT-BYT"
+    }
+  ],
+  "faq": [
+    {
+      "question": "Có thể nộp qua kênh nào?",
+      "answer": "Các kênh hiện có: Trực tiếp, Trực tuyến, Dịch vụ bưu chính."
+    },
+    {
+      "question": "Kết quả chính của thủ tục là gì?",
+      "answer": "Kết quả chính được trích xuất là Giấy phép xuất khẩu/Văn bản yêu cầu sửa đổi, bổ sung hồ sơ/Văn bản trả lời không cấp phép xuất khẩu."
+    }
+  ],
+  "guidance": {
+    "highlight_documents": [
+      {
+        "bucket": "required",
+        "name": "Đơn đề nghị xuất khẩu thuốc",
+        "conditions": [],
+        "attachment_path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/1_014105/Mus07.docx"
+      },
+      {
+        "bucket": "conditional",
+        "name": "Bản sao đơn thuốc, sổ y bạ theo dõi điều trị ngoại trú có chứng thực hoặc có chữ ký của người đề nghị hoặc có đóng dấu của tổ chức đề nghị. Các giấy tờ này phải có đầy đủ các nội dung sau: Tên, tuổi người bệnh; tên thuốc, hàm lượng hoặc nồng độ và dung tích; số lượng thuốc (hoặc số ngày dùng thuốc); liều dùng; họ tên, chữ ký của thầy thuốc; địa chỉ của bệnh viện, phòng khám nơi thầy thuốc hành nghề. Trường hợp bản sao có chữ ký của người đề nghị hoặc đóng dấu của tổ chức đề nghị thì phải kèm xuất trình bản chính để đối chiếu khi nộp hồ sơ. Các giấy tờ này nếu không được thể hiện bằng tiếng Việt hoặc tiếng Anh thì phải nộp thêm bản dịch của tài liệu đó ra tiếng Việt hoặc tiếng Anh và bản dịch được chứng thực chữ ký người dịch theo quy định.",
+        "conditions": [
+          "Bản sao đơn thuốc, sổ y bạ theo dõi điều trị ngoại trú có chứng thực hoặc có chữ ký của người đề nghị hoặc có đóng dấu của tổ chức đề nghị. Các giấy tờ này phải có đầy đủ các nội dung sau: Tên, tuổi người bệnh; tên thuốc, hàm lượng hoặc nồng độ và dung tích; số lượng thuốc (hoặc số ngày dùng thuốc); liều dùng; họ tên, chữ ký của thầy thuốc; địa chỉ của bệnh viện, phòng khám nơi thầy thuốc hành nghề. Trường hợp bản sao có chữ ký của người đề nghị hoặc đóng dấu của tổ chức đề nghị thì phải kèm xuất trình bản chính để đối chiếu khi nộp hồ sơ. Các giấy tờ này nếu không được thể hiện bằng tiếng Việt hoặc tiếng Anh thì phải nộp thêm bản dịch của tài liệu đó ra tiếng Việt hoặc tiếng Anh và bản dịch được chứng thực chữ ký người dịch theo quy định."
+        ],
+        "attachment_path": null
+      }
+    ],
+    "special_cases": [],
+    "common_errors": [],
+    "validation_hints": [
+      "Nên xác định trước kênh nộp hồ sơ để biết có cần bản giấy, bản điện tử hay xuất trình trực tiếp.",
+      "Có mẫu biểu đính kèm, nên kiểm tra đúng biểu mẫu trước khi nộp.",
+      "Nên xác định đúng nhóm đối tượng, mã số bảo hiểm và quyền lợi áp dụng trước khi nộp."
+    ]
+  },
+  "next_steps": {
+    "summary": "Nên xác định rõ đối tượng tham gia, quyền lợi hoặc nhu cầu điều chỉnh hồ sơ y tế trước khi nộp. Có thể chọn kênh nộp phù hợp: Trực tiếp, Trực tuyến, Dịch vụ bưu chính. Hiện có khoảng 2 mục giấy tờ cần theo dõi trong checklist.",
+    "time_badge": null,
+    "result_label": "Giấy phép xuất khẩu/Văn bản yêu cầu sửa đổi, bổ sung hồ sơ/Văn bản trả lời không cấp phép xuất khẩu",
+    "primary_channel": "online",
+    "channels": [
+      "in_person",
+      "online",
+      "postal"
+    ]
+  },
+  "notes": [],
+  "provenance": {
+    "pipeline": "raw->structured->normalized->enriched->ui_api_payload",
+    "normalizer_version": "0.2.0",
+    "enricher_version": "0.2.0",
+    "mapping_notes": "excluded_from_clean_workflow_dataset",
+    "supported_group": true
+  }
+}

@@ -1,0 +1,118 @@
+{
+  "schema_version": "1.0",
+  "enricher_version": "0.2.0",
+  "source": {
+    "procedure_code": "1.014084",
+    "title": "Cấp Chứng chỉ hành nghề dược (bao gồm cả trường hợp cấp Chứng chỉ hành nghề dược cho người bị thu hồi Chứng chỉ hành nghề dược theo quy định tại các khoản 1, 2, 4, 5, 6, 7, 8, 9, 10, 11 Điều 28 của Luật Dược) theo hình thức thi",
+    "group_key": "hoc_tap",
+    "workflow_family": null,
+    "subflow": null
+  },
+  "experience": {
+    "entry_label": "Hỗ trợ giáo dục và học tập",
+    "overview_summary": "Thủ tục này thuộc nhóm giáo dục và học tập, thường liên quan đến hồ sơ đào tạo, văn bằng hoặc điều kiện học tập của người học. Kết quả thường nhận được là Chứng chỉ hành nghề dược. Thời gian xử lý tham khảo: 20 ngày.",
+    "next_step_summary": "Nên rà trước thông tin người học, cơ sở đào tạo và loại kết quả cần xin xác nhận hoặc cấp lại. Có thể chọn kênh nộp phù hợp: Trực tiếp, Trực tuyến, Dịch vụ bưu chính. Hiện có khoảng 8 mục giấy tờ cần theo dõi trong checklist.",
+    "tone": "supportive_public_service"
+  },
+  "guidance": {
+    "highlight_documents": [
+      {
+        "bucket": "required",
+        "name": "Văn bằng chuyên môn.",
+        "conditions": [],
+        "attachment_path": null
+      },
+      {
+        "bucket": "required",
+        "name": "Giấy tờ do cơ quan có thẩm quyền nước ngoài cấp phải được hợp pháp hóa lãnh sự theo quy định, phải có bản dịch sang tiếng Việt và được chứng thực chữ ký người dịch theo quy định",
+        "conditions": [],
+        "attachment_path": null
+      },
+      {
+        "bucket": "required",
+        "name": "Giấy chứng nhận đủ sức khỏe để hành nghề dược do cơ sở y tế có thẩm quyền cấp",
+        "conditions": [],
+        "attachment_path": null
+      },
+      {
+        "bucket": "required",
+        "name": "Giấy công nhận tương đương của cơ quan có thẩm quyền về công nhận tương đương theo quy định tại khoản 2 Điều 12 của Nghị định số 163/2025/NĐ-CP đối với các văn bằng chuyên môn do cơ sở đào tạo nước ngoài cấp",
+        "conditions": [],
+        "attachment_path": null
+      },
+      {
+        "bucket": "required",
+        "name": "Đơn đề nghị cấp Chứng chỉ hành nghề dược, có ảnh chân dung của người đề nghị được chụp trong thời gian không quá 06 tháng. Mẫu số 02 Phụ lục I của Nghị định số 163/2025/NĐ-CP",
+        "conditions": [],
+        "attachment_path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/1_014084/Mu.docx"
+      },
+      {
+        "bucket": "conditional",
+        "name": "Phiếu lý lịch tư pháp. Trường hợp là người nước ngoài, người Việt Nam định cư ở nước ngoài phải có lý lịch tư pháp hoặc văn bản xác nhận hiện không phải là người phạm tội hoặc bị truy cứu trách nhiệm hình sự, không thuộc trường hợp bị cấm hành nghề, cấm làm công việc liên quan đến hoạt động dược theo bản án, quyết định của Tòa án do cơ quan có thẩm quyền của nước ngoài cấp. Không yêu cầu nộp Phiếu lý lịch tư pháp kể từ ngày dữ liệu về lý lịch tư pháp được chia sẻ theo quy định tại khoản 5 Điều 127 của Nghị định số 163/2025/NĐ-CP",
+        "conditions": [
+          "Phiếu lý lịch tư pháp. Trường hợp là người nước ngoài, người Việt Nam định cư ở nước ngoài phải có lý lịch tư pháp hoặc văn bản xác nhận hiện không phải là người phạm tội hoặc bị truy cứu trách nhiệm hình sự, không thuộc trường hợp bị cấm hành nghề, cấm làm công việc liên quan đến hoạt động dược theo bản án, quyết định của Tòa án do cơ quan có thẩm quyền của nước ngoài cấp. Không yêu cầu nộp Phiếu lý lịch tư pháp kể từ ngày dữ liệu về lý lịch tư pháp được chia sẻ theo quy định tại khoản 5 Điều 127 của Nghị định số 163/2025/NĐ-CP"
+        ],
+        "attachment_path": null
+      }
+    ],
+    "special_cases": [
+      "Có yếu tố nước ngoài",
+      "Có thể cần đối chiếu thông tin thửa đất hoặc giấy chứng nhận",
+      "Có thể cần xác minh hồ sơ học tập hoặc văn bằng"
+    ],
+    "common_errors": [
+      "Thiếu giấy tờ hợp pháp hóa hoặc giấy tờ nhân thân của phía nước ngoài.",
+      "Điền sai mẫu tờ khai hoặc chọn sai biểu mẫu đi kèm.",
+      "Thông tin thửa đất, tài sản hoặc giấy chứng nhận chưa khớp với hồ sơ hiện có.",
+      "Thiếu minh chứng học tập, văn bằng hoặc xác nhận từ cơ sở đào tạo."
+    ],
+    "validation_hints": [
+      "Nên xác định trước kênh nộp hồ sơ để biết có cần bản giấy, bản điện tử hay xuất trình trực tiếp.",
+      "Có mẫu biểu đính kèm, nên kiểm tra đúng biểu mẫu trước khi nộp.",
+      "Nên rà lại thông tin người học, cơ sở đào tạo và loại xác nhận hoặc văn bằng cần xin."
+    ]
+  },
+  "intake": {
+    "candidate_input_fields": [
+      {
+        "field_id": "learner_full_name",
+        "label": "Tên người học",
+        "field_type": "text",
+        "required": true
+      },
+      {
+        "field_id": "education_record_type",
+        "label": "Loại hồ sơ học tập cần xử lý",
+        "field_type": "text",
+        "required": true
+      },
+      {
+        "field_id": "education_institution",
+        "label": "Cơ sở đào tạo liên quan",
+        "field_type": "text",
+        "required": false
+      },
+      {
+        "field_id": "submission_channel_preference",
+        "label": "Kênh nộp dự kiến",
+        "field_type": "enum",
+        "required": false
+      }
+    ],
+    "suggested_clarifying_questions": [
+      "Bạn đang cần xử lý hồ sơ học tập, văn bằng hay xác nhận nào?",
+      "Người học và cơ sở đào tạo liên quan đã xác định rõ chưa?"
+    ]
+  },
+  "ui_hints": {
+    "primary_channel": "online",
+    "result_label": "Chứng chỉ hành nghề dược",
+    "time_badge": "20 ngày",
+    "document_count_badge": 8
+  },
+  "provenance": {
+    "generator": "workflow_domain_enricher",
+    "derivation_mode": "rule_based_semantic_enrichment",
+    "supported_group": true
+  }
+}

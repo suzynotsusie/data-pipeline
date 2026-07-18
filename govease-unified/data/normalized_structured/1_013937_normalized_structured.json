@@ -1,0 +1,224 @@
+{
+  "schema_version": "1.0",
+  "normalizer_version": "0.2.0",
+  "source": {
+    "procedure_code": "1.013937",
+    "title": "Công nhận tài liệu lưu trữ có giá trị đặc biệt.",
+    "raw_structured_parser_version": "0.1.0",
+    "field": "Văn thư và Lưu trữ nhà nước"
+  },
+  "procedure": {
+    "level": "Cấp tỉnh",
+    "procedure_type": "TTHC được luật giao quy định chi tiết",
+    "target_users": [
+      "Công dân Việt Nam",
+      "Tổ chức (không bao gồm doanh nghiệp",
+      "HTX)"
+    ],
+    "authorities": [
+      "Ủy ban nhân dân cấp tỉnh"
+    ],
+    "receiving_places": []
+  },
+  "submission": {
+    "channels": [
+      "in_person",
+      "online",
+      "postal"
+    ],
+    "methods": [
+      {
+        "method_id": "method_1",
+        "channel": "online",
+        "processing_time_text": "60 ngày",
+        "fee_text": null,
+        "description": "Chậm nhất là 60 ngày kể từ ngày nhận hồ sơ đầy đủ, chính xác theo quy định.<br>Cơ quan, tổ chức nộp hồ sơ trực tuyến hoặc nộp hồ sơ trực tiếp hoặc qua dịch vụ bưu chính.",
+        "is_online": true,
+        "is_postal": false,
+        "is_in_person": false
+      },
+      {
+        "method_id": "method_2",
+        "channel": "postal",
+        "processing_time_text": "60 ngày",
+        "fee_text": null,
+        "description": "Chậm nhất là 60 ngày kể từ ngày nhận hồ sơ đầy đủ, chính xác theo quy định.<br>Cơ quan, tổ chức nộp hồ sơ trực tuyến hoặc nộp hồ sơ trực tiếp hoặc qua dịch vụ bưu chính.",
+        "is_online": false,
+        "is_postal": true,
+        "is_in_person": false
+      },
+      {
+        "method_id": "method_3",
+        "channel": "in_person",
+        "processing_time_text": "60 ngày",
+        "fee_text": null,
+        "description": "Chậm nhất là 60 ngày kể từ ngày nhận hồ sơ đầy đủ, chính xác theo quy định.<br>Cơ quan, tổ chức nộp hồ sơ trực tuyến hoặc nộp hồ sơ trực tiếp hoặc qua dịch vụ bưu chính.",
+        "is_online": false,
+        "is_postal": false,
+        "is_in_person": true
+      }
+    ],
+    "timing_summary": {
+      "unique_processing_times": [
+        "60 ngày"
+      ],
+      "method_count": 3
+    }
+  },
+  "documents": {
+    "required": [
+      {
+        "document_id": "b_n_sao_ho_c_nh_ch_p_t_i_li_u_l_u_tr_th_hi_n_c_c_c_th_ng_tin_c_b_n_c_a_t_i_li_u",
+        "name": "Bản sao hoặc ảnh chụp tài liệu lưu trữ thể hiện được các thông tin cơ bản của tài liệu",
+        "group_name": "default",
+        "group_type": "unknown",
+        "original_count": "0",
+        "copy_count": "1",
+        "conditions": [],
+        "attachment_label": null,
+        "attachment_path": null
+      },
+      {
+        "document_id": "v_n_b_n_ngh_c_ng_nh_n_t_i_li_u_l_u_tr_c_gi_tr_c_bi_t_c_a_c_quan_t_ch_c_ho_c_n_ngh_c_ng_nh_n_t_i_li_u_l_u_tr_c_gi_tr_c_bi_t_c_a_c_nh_n",
+        "name": "Văn bản đề nghị công nhận tài liệu lưu trữ có giá trị đặc biệt của cơ quan, tổ chức hoặc đơn đề nghị công nhận tài liệu lưu trữ có giá trị đặc biệt của cá nhân",
+        "group_name": "default",
+        "group_type": "unknown",
+        "original_count": "1",
+        "copy_count": "0",
+        "conditions": [],
+        "attachment_label": null,
+        "attachment_path": null
+      },
+      {
+        "document_id": "b_n_thuy_t_minh_t_i_li_u_l_u_tr",
+        "name": "Bản thuyết minh tài liệu lưu trữ",
+        "group_name": "default",
+        "group_type": "unknown",
+        "original_count": "1",
+        "copy_count": "0",
+        "conditions": [],
+        "attachment_label": null,
+        "attachment_path": null
+      }
+    ],
+    "conditional": [
+      {
+        "document_id": "t_li_u_t_i_li_u_kh_c_ch_ng_minh_gi_tr_c_bi_t_c_a_t_i_li_u_l_u_tr_n_u_c",
+        "name": "Tư liệu, tài liệu khác chứng minh giá trị đặc biệt của tài liệu lưu trữ (nếu có)",
+        "group_name": "default",
+        "group_type": "unknown",
+        "original_count": "1",
+        "copy_count": "0",
+        "conditions": [
+          "Tư liệu, tài liệu khác chứng minh giá trị đặc biệt của tài liệu lưu trữ (nếu có)"
+        ],
+        "attachment_label": null,
+        "attachment_path": null
+      }
+    ],
+    "presented": [],
+    "notes": [],
+    "forms": [],
+    "empty_groups": [],
+    "document_count": 4
+  },
+  "process": {
+    "steps": [
+      {
+        "step_id": "step_1",
+        "title": null,
+        "content": "1. -",
+        "actor": "user",
+        "channel_hint": null,
+        "time_hint": null
+      },
+      {
+        "step_id": "step_2",
+        "title": "Bước 1:",
+        "content": "Bước 1: Sở Nội vụ tiếp nhận hồ sơ đề nghị công nhận tài liệu lưu trữ có giá trị đặc biệt đối với tài liệu lưu trữ tư và tài liệu lưu trữ của cơ quan, tổ chức thuộc địa bàn quản lý, trừ các cơ quan, tổ chức thuộc thẩm quyền tiếp nhận của Cục Văn thư và Lưu trữ nhà nước. -",
+        "actor": "authority",
+        "channel_hint": null,
+        "time_hint": null
+      },
+      {
+        "step_id": "step_3",
+        "title": "Bước 2:",
+        "content": "Bước 2: Sở Nội vụ kiểm tra và nhận hồ sơ đối với trường hợp hồ sơ đầy đủ, chính xác theo quy định; yêu cầu cơ quan, tổ chức bổ sung, hoàn thiện hồ sơ đối với trường hợp hồ sơ chưa đầy đủ, chưa chính xác; trường hợp từ chối nhận hồ sơ phải nêu rõ lý do. -",
+        "actor": "authority",
+        "channel_hint": null,
+        "time_hint": null
+      },
+      {
+        "step_id": "step_4",
+        "title": "Bước 3:",
+        "content": "Bước 3: Hội đồng Xác định tài liệu lưu trữ có giá trị đặc biệt xem xét hồ sơ, đánh giá giá trị của tài liệu và kiểm tra trực tiếp tài liệu trong trường hợp cần thiết; trình Chủ tịch Ủy ban nhân dân cấp tỉnh xem xét, công nhận tài liệu lưu trữ có giá trị đặc biệt. -",
+        "actor": "user",
+        "channel_hint": "trực tiếp",
+        "time_hint": null
+      },
+      {
+        "step_id": "step_5",
+        "title": "Bước 4:",
+        "content": "Bước 4: Chủ tịch Ủy ban nhân dân cấp tỉnh ban hành quyết định công nhận tài liệu lưu trữ có giá trị đặc biệt.",
+        "actor": "user",
+        "channel_hint": null,
+        "time_hint": null
+      }
+    ],
+    "step_count": 5,
+    "notes": []
+  },
+  "eligibility": {
+    "conditions": [
+      "a) Tài liệu đề nghị công nhận là tài liệu lưu trữ có giá trị đặc biệt phải đáp ứng một trong các tiêu chí về nội dung quy định tại khoản 2 Điều 38 Luật Lưu trữ năm 2024 và một trong các tiêu chí về hình thức, xuất xứ quy định tại khoản 3 Điều 38 Luật Lưu trữ năm 2024, cụ thể:",
+      "- Tiêu chí về nội dung bao gồm:",
+      "+ Phản ánh lịch sử hình thành và phát triển của quốc gia, dân tộc, của ngành, lĩnh vực;",
+      "+ Quá trình hình thành, xác lập và thực thi chủ quyền lãnh thổ Việt Nam, biên giới quốc gia;",
+      "+ Công trình khoa học, sản phẩm tiêu biểu của ngành, lĩnh vực;",
+      "+ Thân thế, sự nghiệp và đóng góp của cá nhân, gia đình, dòng họ tiêu biểu;",
+      "+ Tài liệu lưu trữ khác có tầm quan trọng đặc biệt đối với quốc gia, dân tộc hoặc thế giới.",
+      "- Tiêu chí về hình thức, xuất xứ bao gồm:",
+      "+ Phương pháp, kỹ thuật trình bày đặc sắc, có tính thẩm mỹ và nghệ thuật;",
+      "+ Đặc trưng, điển hình của thời kỳ lịch sử;",
+      "+ Hình thành trong hoàn cảnh lịch sử đặc biệt về thời gian, địa điểm hoặc tác giả.",
+      "b) Hồ sơ đề nghị công nhận tài liệu lưu trữ có giá trị đặc biệt không thuộc trường hợp đang tranh chấp về quyền sở hữu, quyền quản lý."
+    ],
+    "has_conditions": true
+  },
+  "results": {
+    "items": [
+      {
+        "name": "Quyết định công nhận tài liệu lưu trữ có giá trị đặc biệt",
+        "result_code": "KQ.G09.000352",
+        "raw_text": "Quyết định công nhận tài liệu lưu trữ có giá trị đặc biệt"
+      }
+    ],
+    "primary_result": {
+      "name": "Quyết định công nhận tài liệu lưu trữ có giá trị đặc biệt",
+      "result_code": "KQ.G09.000352",
+      "raw_text": "Quyết định công nhận tài liệu lưu trữ có giá trị đặc biệt"
+    }
+  },
+  "legal_basis": {
+    "items": [
+      {
+        "title": "Luật Lưu trữ",
+        "code": "33/2024/QH15"
+      },
+      {
+        "title": "quy định chi tiết một số điều của Luật Lưu trữ",
+        "code": "06/2025/TT-BNV"
+      }
+    ],
+    "count": 2
+  },
+  "attachments": [],
+  "signals": {
+    "raw_parse_warnings": [],
+    "missing_documents": false,
+    "documents_section_present": true,
+    "documents_declared_empty": false,
+    "documents_only_in_notes": false,
+    "missing_results": false
+  }
+}

@@ -1,0 +1,120 @@
+{
+  "schema_version": "1.0",
+  "enricher_version": "0.2.0",
+  "source": {
+    "procedure_code": "1.011445",
+    "title": "Chuyển tiếp đăng ký thế chấp quyền tài sản phát sinh từ hợp đồng mua bán nhà ở hoặc từ hợp đồng mua bán tài sản khác gắn liền với đất",
+    "group_key": "dien_luc_nha_o_dat_dai",
+    "workflow_family": "housing_land_electricity_workflow",
+    "subflow": "gop_von_the_chap"
+  },
+  "experience": {
+    "entry_label": "Hỗ trợ nhà ở, đất đai và điện lực",
+    "overview_summary": "Thủ tục này thuộc nhóm nhà ở, đất đai và điện lực, thường cần kiểm tra hiện trạng hồ sơ tài sản hoặc điều kiện hạ tầng liên quan. Kết quả thường nhận được là Phiếu yêu cầu chuyển tiếp đăng ký thế chấp. Thời gian xử lý tham khảo: 3 ngày làm việc.",
+    "next_step_summary": "Nên chuẩn bị trước thông tin thửa đất, tài sản hoặc địa điểm tiếp nhận, rồi chọn kênh nộp phù hợp: Trực tiếp, Trực tuyến, Dịch vụ bưu chính. Hiện có khoảng 9 mục giấy tờ cần theo dõi trong checklist.",
+    "tone": "supportive_public_service"
+  },
+  "guidance": {
+    "highlight_documents": [
+      {
+        "bucket": "required",
+        "name": "Hợp đồng thế chấp quyền tài sản phát sinh từ hợp đồng mua bán nhà ở (01 bản chính hoặc 01 bản sao có chứng thực) (khoản 3 Điều 26 Nghị định số 99/2022/NĐ-CP).",
+        "conditions": [],
+        "attachment_path": null
+      },
+      {
+        "bucket": "required",
+        "name": "Văn bản chứng nhận đăng ký thế chấp quyền tài sản phát sinh từ hợp đồng mua bán nhà ở (01 bản chính) (khoản 3 Điều 26 Nghị định số 99/2022/NĐ-CP).",
+        "conditions": [],
+        "attachment_path": null
+      },
+      {
+        "bucket": "required",
+        "name": "Phiếu yêu cầu theo Mẫu số 05a tại Phụ lục (01 bản chính) (khoản 3 Điều 26 Nghị định số 99/2022/NĐ-CP).",
+        "conditions": [],
+        "attachment_path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/1_011445/Mau%20so%2005a_Chuyen%20tiep%20dang%20ky%20the%20chap.docx"
+      },
+      {
+        "bucket": "conditional",
+        "name": "Giấy chứng nhận (bản gốc) trong trường hợp chuyển tiếp sang đăng ký thế chấp nhà ở đã được cấp Giấy chứng nhận (khoản 3 Điều 26 Nghị định số 99/2022/NĐ-CP). Bản gốc Giấy chứng nhận đối với quyền sử dụng đất, tài sản gắn liền với đất là thành phần hồ sơ đăng ký quy định tại Điều 26 Nghị định số 99/2022/NĐ-CP hoặc được quy định tại Điều 36 Nghị định số 99/2022/NĐ-CP được thay thế bằng việc khai thác, sử dụng thông tin tương ứng từ cơ sở dữ liệu đất đai mà không phải nộp trong hồ sơ đăng ký. Trường hợp không khai thác được thông tin hoặc thông tin khai thác được không đầy đủ, không chính xác để thay thế cho giấy tờ là thành phần hồ sơ đăng ký thì cơ quan đăng ký yêu cầu người yêu cầu đăng ký nộp giấy tờ tương ứng thuộc thành phần hồ sơ đăng ký theo quy định tại Nghị định số 99/2022/NĐ-CP để giải quyết việc đăng ký.",
+        "conditions": [
+          "Giấy chứng nhận (bản gốc) trong trường hợp chuyển tiếp sang đăng ký thế chấp nhà ở đã được cấp Giấy chứng nhận (khoản 3 Điều 26 Nghị định số 99/2022/NĐ-CP). Bản gốc Giấy chứng nhận đối với quyền sử dụng đất, tài sản gắn liền với đất là thành phần hồ sơ đăng ký quy định tại Điều 26 Nghị định số 99/2022/NĐ-CP hoặc được quy định tại Điều 36 Nghị định số 99/2022/NĐ-CP được thay thế bằng việc khai thác, sử dụng thông tin tương ứng từ cơ sở dữ liệu đất đai mà không phải nộp trong hồ sơ đăng ký. Trường hợp không khai thác được thông tin hoặc thông tin khai thác được không đầy đủ, không chính xác để thay thế cho giấy tờ là thành phần hồ sơ đăng ký thì cơ quan đăng ký yêu cầu người yêu cầu đăng ký nộp giấy tờ tương ứng thuộc thành phần hồ sơ đăng ký theo quy định tại Nghị định số 99/2022/NĐ-CP để giải quyết việc đăng ký."
+        ],
+        "attachment_path": null
+      },
+      {
+        "bucket": "conditional",
+        "name": "Hợp đồng thế chấp nhà ở hình thành trong tương lai (01 bản chính hoặc 01 bản sao có chứng thực) đối với chuyển tiếp sang thế chấp nhà ở hình thành trong tương lai, trừ trường hợp hợp đồng thế chấp quyền tài sản phát sinh từ hợp đồng mua bán nhà ở đã có nội dung về chuyển tiếp sang thế chấp nhà ở hình thành trong tương lai. Hợp đồng thế chấp nhà ở (01 bản chính hoặc 01 bản sao có chứng thực) đối với chuyển tiếp sang thế chấp nhà ở đã được cấp Giấy chứng nhận, trừ trường hợp quy định tại khoản 4 Điều 26 Nghị định số 99/2022/NĐ-CP (khoản 3 Điều 26 Nghị định số 99/2022/NĐ-CP).",
+        "conditions": [
+          "Hợp đồng thế chấp nhà ở hình thành trong tương lai (01 bản chính hoặc 01 bản sao có chứng thực) đối với chuyển tiếp sang thế chấp nhà ở hình thành trong tương lai, trừ trường hợp hợp đồng thế chấp quyền tài sản phát sinh từ hợp đồng mua bán nhà ở đã có nội dung về chuyển tiếp sang thế chấp nhà ở hình thành trong tương lai. Hợp đồng thế chấp nhà ở (01 bản chính hoặc 01 bản sao có chứng thực) đối với chuyển tiếp sang thế chấp nhà ở đã được cấp Giấy chứng nhận, trừ trường hợp quy định tại khoản 4 Điều 26 Nghị định số 99/2022/NĐ-CP (khoản 3 Điều 26 Nghị định số 99/2022/NĐ-CP)."
+        ],
+        "attachment_path": null
+      },
+      {
+        "bucket": "conditional",
+        "name": "Trường hợp thực hiện thông qua người đại diện thì văn bản có nội dung về đại diện là tài liệu phải có trong hồ sơ đăng ký, hồ sơ cung cấp thông tin (01 bản chính hoặc 01 bản sao có chứng thực hoặc 01 bản sao kèm bản chính để đối chiếu), trừ trường hợp thực hiện việc đăng ký qua tài khoản đăng ký trực tuyến của người đại diện quy định tại khoản 2 Điều 24 Nghị định số 99/2022/NĐ-CP (khoản 7 Điều 8 Nghị định số 99/2022/NĐ-CP, khoản 4 Điều 24 Nghị định số 99/2022/NĐ-CP).",
+        "conditions": [
+          "Trường hợp thực hiện thông qua người đại diện thì văn bản có nội dung về đại diện là tài liệu phải có trong hồ sơ đăng ký, hồ sơ cung cấp thông tin (01 bản chính hoặc 01 bản sao có chứng thực hoặc 01 bản sao kèm bản chính để đối chiếu), trừ trường hợp thực hiện việc đăng ký qua tài khoản đăng ký trực tuyến của người đại diện quy định tại khoản 2 Điều 24 Nghị định số 99/2022/NĐ-CP (khoản 7 Điều 8 Nghị định số 99/2022/NĐ-CP, khoản 4 Điều 24 Nghị định số 99/2022/NĐ-CP)."
+        ],
+        "attachment_path": null
+      }
+    ],
+    "special_cases": [
+      "Có trường hợp hồ sơ điện tử thay thế bản giấy",
+      "Có thể cần đối chiếu thông tin thửa đất hoặc giấy chứng nhận"
+    ],
+    "common_errors": [
+      "Thông tin định danh hoặc cư trú không khớp với dữ liệu dân cư.",
+      "Điền sai mẫu tờ khai hoặc chọn sai biểu mẫu đi kèm.",
+      "Thông tin thửa đất, tài sản hoặc giấy chứng nhận chưa khớp với hồ sơ hiện có."
+    ],
+    "validation_hints": [
+      "Nên xác định trước kênh nộp hồ sơ để biết có cần bản giấy, bản điện tử hay xuất trình trực tiếp.",
+      "Có mẫu biểu đính kèm, nên kiểm tra đúng biểu mẫu trước khi nộp.",
+      "Nên đối chiếu trước thông tin thửa đất, tài sản hoặc hiện trạng hồ sơ để tránh bị yêu cầu chỉnh sửa."
+    ]
+  },
+  "intake": {
+    "candidate_input_fields": [
+      {
+        "field_id": "property_or_service_need",
+        "label": "Nhu cầu về đất đai, nhà ở hoặc điện lực",
+        "field_type": "text",
+        "required": true
+      },
+      {
+        "field_id": "property_location",
+        "label": "Địa điểm tài sản hoặc nơi sử dụng dịch vụ",
+        "field_type": "text",
+        "required": true
+      },
+      {
+        "field_id": "submission_channel_preference",
+        "label": "Kênh nộp dự kiến",
+        "field_type": "enum",
+        "required": false
+      },
+      {
+        "field_id": "has_current_certificate",
+        "label": "Đã có giấy tờ/tài liệu hiện trạng",
+        "field_type": "boolean",
+        "required": false
+      }
+    ],
+    "suggested_clarifying_questions": [
+      "Bạn đang xử lý nhu cầu nào về đất đai, nhà ở hoặc điện lực?",
+      "Bạn đã có thông tin thửa đất, địa chỉ tài sản hoặc giấy tờ hiện trạng chưa?"
+    ]
+  },
+  "ui_hints": {
+    "primary_channel": "online",
+    "result_label": "Phiếu yêu cầu chuyển tiếp đăng ký thế chấp",
+    "time_badge": "3 ngày làm việc",
+    "document_count_badge": 9
+  },
+  "provenance": {
+    "generator": "workflow_domain_enricher",
+    "derivation_mode": "rule_based_semantic_enrichment",
+    "supported_group": true
+  }
+}

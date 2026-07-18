@@ -17,7 +17,7 @@ class Settings:
     api_v1_prefix: str = "/api/v1"
     cors_origins: tuple[str, ...] = tuple(
         origin.strip()
-        for origin in os.getenv("CORS_ORIGINS", "http://localhost:3000").split(",")
+        for origin in os.getenv("CORS_ORIGINS", "http://localhost:3010").split(",")
         if origin.strip()
     )
     data_root: str = os.getenv("GOVEASE_DATA_ROOT", "../data")

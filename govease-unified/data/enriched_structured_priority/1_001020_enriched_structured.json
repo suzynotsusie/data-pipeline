@@ -1,0 +1,111 @@
+{
+  "schema_version": "1.0",
+  "enricher_version": "0.2.0",
+  "source": {
+    "procedure_code": "1.001020",
+    "title": "Thủ tục đăng ký khai sinh cho trẻ em sinh ra ở nước ngoài và có quốc tịch Việt Nam",
+    "group_key": "co_con_nho",
+    "workflow_family": "child_early_life_workflow",
+    "subflow": "khai_sinh"
+  },
+  "experience": {
+    "entry_label": "Hỗ trợ thủ tục cho trẻ em",
+    "overview_summary": "Thủ tục này thuộc nhóm giấy tờ cho trẻ nhỏ, thường dùng để đăng ký hoặc cập nhật thông tin khai sinh. Kết quả thường nhận được là Giấy khai sinh. Thời gian xử lý tham khảo: 1 ngày làm việc.",
+    "next_step_summary": "Chuẩn bị trước các giấy tờ cốt lõi của trẻ và người đi làm thủ tục, sau đó chọn kênh nộp phù hợp: Trực tiếp. Hiện có khoảng 3 mục giấy tờ cần theo dõi trong checklist.",
+    "tone": "supportive_public_service"
+  },
+  "guidance": {
+    "highlight_documents": [
+      {
+        "bucket": "conditional",
+        "name": "Giấy chứng sinh hoặc giấy tờ khác do cơ quan có thẩm quyền nước ngoài cấp, xác nhận về việc trẻ em được sinh ra và quan hệ mẹ - con. Trong trường hợp không có các giấy tờ nêu trên thì nộp văn bản của người làm chứng xác nhận về việc sinh; nếu không có người làm chứng thì phải có giấy cam đoan về việc sinh. - Văn bản của cha mẹ thỏa thuận lựa chọn quốc tịch Việt Nam cho con đối với trường hợp trẻ em có cha hoặc mẹ là công dân Việt Nam còn người kia là người nước ngoài. Nếu cha, mẹ không nộp hồ sơ trực tiếp thì chữ ký trên văn bản thỏa thuận lựa chọn quốc tịch cho con phải được chứng thực hợp lệ.",
+        "conditions": [
+          "Giấy chứng sinh hoặc giấy tờ khác do cơ quan có thẩm quyền nước ngoài cấp, xác nhận về việc trẻ em được sinh ra và quan hệ mẹ - con. Trong trường hợp không có các giấy tờ nêu trên thì nộp văn bản của người làm chứng xác nhận về việc sinh; nếu không có người làm chứng thì phải có giấy cam đoan về việc sinh. - Văn bản của cha mẹ thỏa thuận lựa chọn quốc tịch Việt Nam cho con đối với trường hợp trẻ em có cha hoặc mẹ là công dân Việt Nam còn người kia là người nước ngoài. Nếu cha, mẹ không nộp hồ sơ trực tiếp thì chữ ký trên văn bản thỏa thuận lựa chọn quốc tịch cho con phải được chứng thực hợp lệ."
+        ],
+        "attachment_path": null
+      },
+      {
+        "bucket": "conditional",
+        "name": "Tờ khai đăng ký khai sinh theo mẫu tại Phụ lục Thông tư số 04/2020/TT-BTP (nếu người có yêu cầu lựa chọn nộp hồ sơ theo hình thức trực tiếp).",
+        "conditions": [
+          "Tờ khai đăng ký khai sinh theo mẫu tại Phụ lục Thông tư số 04/2020/TT-BTP (nếu người có yêu cầu lựa chọn nộp hồ sơ theo hình thức trực tiếp)."
+        ],
+        "attachment_path": "file:///C:/Users/ku060/Downloads/data/raw_data/1_001020/1.%20TK%20dang%20ky%20khai%20sinh.doc"
+      },
+      {
+        "bucket": "presented",
+        "name": "Hộ chiếu hoặc giấy tờ có giá trị thay thế hộ chiếu, chứng minh nhân dân, thẻ căn cước công dân, thẻ căn cước hoặc các giấy tờ khác có dán ảnh và thông tin cá nhân do cơ quan có thẩm quyền cấp, còn giá trị sử dụng để chứng minh về nhân thân, quốc tịch của cha, mẹ trẻ em. - Giấy tờ chứng minh nơi cư trú để xác định thẩm quyền đăng ký khai sinh. Trường hợp gửi hồ sơ qua đường hệ thống bưu chính thì nộp bản sao các giấy tờ nêu trên đã được chứng thực hợp lệ. Trường hợp người yêu cầu là công dân Việt Nam và đã được cấp thẻ Căn cước công dân hoặc thẻ Căn cước có số định danh cá nhân thì có thể xuất trình bản chính giấy tờ đó (nếu nộp trực tiếp) hoặc nộp bản chụp giấy tờ này (nếu nộp qua hệ thống bưu chính hoặc gửi qua hệ thống đăng ký hộ tịch trực tuyến) để chứng minh nhân thân khi cơ sở hạ tầng kỹ thuật cho phép Cơ quan đại diện Việt Nam ở nước ngoài kết nối với CSDLQGVDC. - Giấy tờ chứng minh quan hệ hôn nhân nếu cha, mẹ của trẻ đã đăng ký kết hôn, trừ trường hợp cả cha, mẹ trẻ em đều là công dân Việt Nam, có số định danh cá nhân, đã đăng ký kết hôn hoặc ghi vào sổ việc đăng ký kết hôn tại cơ quan có thẩm quyền của Việt Nam và Cơ quan đại diện Việt Nam ở nước ngoài đã kết nối với Cơ sở dữ liệu hộ tịch điện tử.",
+        "conditions": [
+          "Hộ chiếu hoặc giấy tờ có giá trị thay thế hộ chiếu, chứng minh nhân dân, thẻ căn cước công dân, thẻ căn cước hoặc các giấy tờ khác có dán ảnh và thông tin cá nhân do cơ quan có thẩm quyền cấp, còn giá trị sử dụng để chứng minh về nhân thân, quốc tịch của cha, mẹ trẻ em. - Giấy tờ chứng minh nơi cư trú để xác định thẩm quyền đăng ký khai sinh. Trường hợp gửi hồ sơ qua đường hệ thống bưu chính thì nộp bản sao các giấy tờ nêu trên đã được chứng thực hợp lệ. Trường hợp người yêu cầu là công dân Việt Nam và đã được cấp thẻ Căn cước công dân hoặc thẻ Căn cước có số định danh cá nhân thì có thể xuất trình bản chính giấy tờ đó (nếu nộp trực tiếp) hoặc nộp bản chụp giấy tờ này (nếu nộp qua hệ thống bưu chính hoặc gửi qua hệ thống đăng ký hộ tịch trực tuyến) để chứng minh nhân thân khi cơ sở hạ tầng kỹ thuật cho phép Cơ quan đại diện Việt Nam ở nước ngoài kết nối với CSDLQGVDC. - Giấy tờ chứng minh quan hệ hôn nhân nếu cha, mẹ của trẻ đã đăng ký kết hôn, trừ trường hợp cả cha, mẹ trẻ em đều là công dân Việt Nam, có số định danh cá nhân, đã đăng ký kết hôn hoặc ghi vào sổ việc đăng ký kết hôn tại cơ quan có thẩm quyền của Việt Nam và Cơ quan đại diện Việt Nam ở nước ngoài đã kết nối với Cơ sở dữ liệu hộ tịch điện tử."
+        ],
+        "attachment_path": null
+      }
+    ],
+    "special_cases": [
+      "Có yếu tố nước ngoài",
+      "Có trường hợp hồ sơ điện tử thay thế bản giấy",
+      "Có tình huống trẻ bị bỏ rơi hoặc thiếu giấy chứng sinh",
+      "Có thể cần chứng cứ quan hệ cha, mẹ, con",
+      "Có kiểm tra dữ liệu cư trú/định danh"
+    ],
+    "common_errors": [
+      "Thiếu giấy chứng sinh hoặc giấy thay thế hợp lệ.",
+      "Thiếu giấy tờ hợp pháp hóa hoặc giấy tờ nhân thân của phía nước ngoài.",
+      "Điền sai mẫu tờ khai hoặc chọn sai biểu mẫu đi kèm."
+    ],
+    "validation_hints": [
+      "Nên xác định trước kênh nộp hồ sơ để biết có cần bản giấy, bản điện tử hay xuất trình trực tiếp.",
+      "Có mẫu biểu đính kèm, nên kiểm tra đúng biểu mẫu trước khi nộp.",
+      "Thông tin hộ tịch giữa các giấy tờ phải thống nhất về họ tên, ngày sinh và quan hệ liên quan."
+    ]
+  },
+  "intake": {
+    "candidate_input_fields": [
+      {
+        "field_id": "child_full_name",
+        "label": "Tên trẻ",
+        "field_type": "text",
+        "required": false
+      },
+      {
+        "field_id": "child_birth_date",
+        "label": "Ngày sinh của trẻ",
+        "field_type": "date",
+        "required": false
+      },
+      {
+        "field_id": "child_birth_place",
+        "label": "Nơi sinh",
+        "field_type": "text",
+        "required": false
+      },
+      {
+        "field_id": "requester_relationship",
+        "label": "Quan hệ với trẻ",
+        "field_type": "enum",
+        "required": true
+      },
+      {
+        "field_id": "has_foreign_element",
+        "label": "Có yếu tố nước ngoài",
+        "field_type": "boolean",
+        "required": true
+      }
+    ],
+    "suggested_clarifying_questions": [
+      "Bé đã có giấy chứng sinh hoặc giấy tờ thay thế chưa?",
+      "Thủ tục này có liên quan đến yếu tố nước ngoài, mang thai hộ hoặc trẻ bị bỏ rơi không?"
+    ]
+  },
+  "ui_hints": {
+    "primary_channel": "in_person",
+    "result_label": "Giấy khai sinh",
+    "time_badge": "1 ngày làm việc",
+    "document_count_badge": 3
+  },
+  "provenance": {
+    "generator": "workflow_domain_enricher",
+    "derivation_mode": "rule_based_semantic_enrichment",
+    "supported_group": true
+  }
+}

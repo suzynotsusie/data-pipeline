@@ -1,0 +1,241 @@
+{
+  "schema_version": "3.0",
+  "record_type": "public_service_procedure_payload",
+  "id": "procedure-1.010779",
+  "procedure_code": "1.010779",
+  "code": "1.010779",
+  "title": "Xét chuyển học sinh hoàn thành dự bị đại học vào học trình độ đại học, trình độ cao đẳng ngành Giáo dục Mầm non",
+  "language": "vi",
+  "status": "generated_from_pipeline",
+  "field": "Thi, tuyển sinh",
+  "group_key": "hoc_tap",
+  "workflow_family": "education_study_workflow",
+  "subflow": "tuyen_sinh",
+  "source": {
+    "source_url": "file:///C:/Users/ku060/Downloads/VAIC%20source/data-pipeline/raw_data/1_010779/1_010779_procedure_detail.md",
+    "source_markdown_path": "C:\\Users\\ku060\\Downloads\\VAIC source\\data-pipeline\\raw_data\\1_010779\\1_010779_procedure_detail.md",
+    "normalized_payload_path": "C:\\Users\\ku060\\Downloads\\VAIC source\\data-pipeline\\govease-unified\\data\\normalized_structured\\1_010779_normalized_structured.json",
+    "enriched_payload_path": "C:\\Users\\ku060\\Downloads\\VAIC source\\data-pipeline\\govease-unified\\data\\enriched_structured_priority\\1_010779_enriched_structured.json"
+  },
+  "scope": {
+    "included": "Thủ tục này thuộc nhóm giáo dục và học tập, thường liên quan đến hồ sơ đào tạo, văn bằng hoặc điều kiện học tập của người học. Kết quả thường nhận được là Quyết định phê duyệt kết quả xét chuyển học sinh hoàn thành dự bị đại học vào các cơ sở đào tạo của Hiệu trưởng trường dự bị đại học. Thời gian xử lý tham khảo: 1 ngày.",
+    "not_included": []
+  },
+  "agency": {
+    "executing_agency": "Trường Dự bị Đại học Dân tộc Sầm Sơn - Bộ giáo dục đào tạo, Trường Dự bị Đại học Dân tộc Trung ương - Bộ giáo dục đào tạo, Trường Dự bị Đại học Dân tộc Nha Trang - Bộ giáo dục đào tạo, Trường Dự bị Đại học thành phố Hồ Chí Minh - Bộ giáo dục đào tạo",
+    "submission_place": null,
+    "receiving_places": []
+  },
+  "target_users": [
+    "Công dân Việt Nam"
+  ],
+  "submission_methods": [
+    {
+      "code": "ONLINE",
+      "label": "Trực tuyến",
+      "processing_time": "1 ngày",
+      "fee": null,
+      "description": null
+    },
+    {
+      "code": "POSTAL",
+      "label": "Dịch vụ bưu chính",
+      "processing_time": "1 ngày",
+      "fee": null,
+      "description": null
+    },
+    {
+      "code": "IN_PERSON",
+      "label": "Trực tiếp",
+      "processing_time": "1 ngày",
+      "fee": null,
+      "description": null
+    }
+  ],
+  "processing_note": "Thời gian xử lý tham chiếu: 1 ngày. Nên rà trước thông tin người học, cơ sở đào tạo và loại kết quả cần xin xác nhận hoặc cấp lại. Có thể chọn kênh nộp phù hợp: Trực tiếp, Trực tuyến, Dịch vụ bưu chính. Hiện có 1 mục giấy tờ cần theo dõi trong checklist.",
+  "documents": {
+    "normally_required": [
+      {
+        "name": "Không quy định",
+        "quantity": "0 bản chính, 0 bản sao",
+        "notes": [],
+        "group": "default",
+        "attachment_path": null
+      }
+    ],
+    "conditional": [],
+    "forms": [],
+    "presented": [],
+    "notes": [],
+    "summary": [
+      {
+        "group": "default",
+        "name": "Không quy định",
+        "quantity": "0 bản chính, 0 bản sao",
+        "notes": [],
+        "attachment_path": null
+      }
+    ]
+  },
+  "steps": [
+    {
+      "order": 1,
+      "title": "Bước 1",
+      "description": "1. Học sinh đăng ký nguyện vọng xét chuyển vào cơ sở đào tạo theo hướng dẫn của trường dự bị đại học. Mỗi học sinh hoàn thành dự bị đại học được đăng ký không quá 03 nguyện vọng xét chuyển vào ngành học của cơ sở đào tạo, sắp xếp nguyện vọng theo thứ tự ưu tiên từ cao xuống thấp (nguyện vọng 1 là nguyện vọng cao nhất).",
+      "example": null
+    },
+    {
+      "order": 2,
+      "title": "Bước 2",
+      "description": "Trường dự bị đại học nhập dữ liệu học sinh đăng ký xét chuyển; thông báo công khai dữ liệu trên trang thông tin điện tử của trường trong thời gian 5 ngày; cho phép học sinh được thay đổi thứ tự nguyện vọng đã đăng ký trong thời gian công khai dữ liệu; hoàn thiện dữ liệu xét chuyển sau khi học sinh điều chỉnh nguyện vọng.",
+      "example": "5 ngày"
+    },
+    {
+      "order": 3,
+      "title": "Bước 3",
+      "description": "Đối với mỗi ngành của cơ sở đào tạo, xét bắt đầu từ nguyện vọng 1, căn cứ điểm xét chuyển của học sinh lấy từ cao xuống cho đến khi đủ chỉ tiêu; nếu vẫn còn chỉ tiêu thì xét đến nguyện vọng 2; nguyện vọng 3. Trường hợp học sinh không đủ điểm xét chuyển theo các nguyện vọng đã đăng ký thì được Hội đồng xét chuyển vào cơ sở đào tạo còn chỉ tiêu.",
+      "example": null
+    },
+    {
+      "order": 4,
+      "title": "Bước 4",
+      "description": "Hiệu trưởng trường dự bị đại học phê duyệt kết quả xét chuyển học sinh hoàn thành dự bị đại học vào các cơ sở đào tạo; công bố kết quả trên trang thông tin điện tử của trường và niêm yết công khai tại trụ sở của trường; báo cáo Bộ Giáo dục và Đào tạo những vướng mắc (nếu có) trong quá trình xét chuyển để đảm bảo quyền lợi cho học sinh.",
+      "example": null
+    }
+  ],
+  "input_fields": [
+    {
+      "field": "learner_full_name",
+      "label": "Tên người học",
+      "type": "string",
+      "required": true
+    },
+    {
+      "field": "education_record_type",
+      "label": "Loại hồ sơ học tập cần xử lý",
+      "type": "string",
+      "required": true
+    },
+    {
+      "field": "education_institution",
+      "label": "Cơ sở đào tạo liên quan",
+      "type": "string",
+      "required": false
+    },
+    {
+      "field": "submission_channel_preference",
+      "label": "Kênh nộp dự kiến",
+      "type": "enum",
+      "required": false,
+      "options": [
+        "Trực tiếp",
+        "Trực tuyến",
+        "Dịch vụ bưu chính"
+      ]
+    }
+  ],
+  "validation_rules": [
+    {
+      "id": "required-1",
+      "severity": "error",
+      "field": "learner_full_name",
+      "rule": "Trường bắt buộc phải có dữ liệu hợp lệ trước khi nộp.",
+      "message": "Thiếu trường bắt buộc: Tên người học."
+    },
+    {
+      "id": "required-2",
+      "severity": "error",
+      "field": "education_record_type",
+      "rule": "Trường bắt buộc phải có dữ liệu hợp lệ trước khi nộp.",
+      "message": "Thiếu trường bắt buộc: Loại hồ sơ học tập cần xử lý."
+    },
+    {
+      "id": "hint-1",
+      "severity": "warning",
+      "field": "general",
+      "rule": "Nên xác định trước kênh nộp hồ sơ để biết có cần bản giấy, bản điện tử hay xuất trình trực tiếp.",
+      "message": "Nên xác định trước kênh nộp hồ sơ để biết có cần bản giấy, bản điện tử hay xuất trình trực tiếp."
+    },
+    {
+      "id": "hint-2",
+      "severity": "warning",
+      "field": "general",
+      "rule": "Nên rà lại thông tin người học, cơ sở đào tạo và loại xác nhận hoặc văn bằng cần xin.",
+      "message": "Nên rà lại thông tin người học, cơ sở đào tạo và loại xác nhận hoặc văn bằng cần xin."
+    }
+  ],
+  "common_errors": [],
+  "clarifying_questions": [
+    {
+      "id": "clarify_1",
+      "question": "Bạn đang cần xử lý hồ sơ học tập, văn bằng hay xác nhận nào?",
+      "purpose": "workflow_intake"
+    },
+    {
+      "id": "clarify_2",
+      "question": "Người học và cơ sở đào tạo liên quan đã xác định rõ chưa?",
+      "purpose": "workflow_intake"
+    }
+  ],
+  "legal_basis": [
+    {
+      "title": "Thông tư 44/2021/TT-BGDĐT",
+      "code": "44/2021/TT-BGDĐT"
+    }
+  ],
+  "legal_bases": [
+    {
+      "title": "Thông tư 44/2021/TT-BGDĐT",
+      "code": "44/2021/TT-BGDĐT"
+    }
+  ],
+  "faq": [
+    {
+      "question": "Có thể nộp qua kênh nào?",
+      "answer": "Các kênh hiện có: Trực tiếp, Trực tuyến, Dịch vụ bưu chính."
+    },
+    {
+      "question": "Thời gian xử lý tham chiếu là bao lâu?",
+      "answer": "Thời gian xử lý tham chiếu hiện có là 1 ngày."
+    },
+    {
+      "question": "Kết quả chính của thủ tục là gì?",
+      "answer": "Kết quả chính được trích xuất là Quyết định phê duyệt kết quả xét chuyển học sinh hoàn thành dự bị đại học vào các cơ sở đào tạo của Hiệu trưởng trường dự bị đại học."
+    }
+  ],
+  "guidance": {
+    "highlight_documents": [
+      {
+        "bucket": "required",
+        "name": "Không quy định",
+        "conditions": [],
+        "attachment_path": null
+      }
+    ],
+    "special_cases": [],
+    "common_errors": [],
+    "validation_hints": [
+      "Nên xác định trước kênh nộp hồ sơ để biết có cần bản giấy, bản điện tử hay xuất trình trực tiếp.",
+      "Nên rà lại thông tin người học, cơ sở đào tạo và loại xác nhận hoặc văn bằng cần xin."
+    ]
+  },
+  "next_steps": {
+    "summary": "Nên rà trước thông tin người học, cơ sở đào tạo và loại kết quả cần xin xác nhận hoặc cấp lại. Có thể chọn kênh nộp phù hợp: Trực tiếp, Trực tuyến, Dịch vụ bưu chính. Hiện có 1 mục giấy tờ cần theo dõi trong checklist.",
+    "time_badge": "1 ngày",
+    "result_label": "Quyết định phê duyệt kết quả xét chuyển học sinh hoàn thành dự bị đại học vào các cơ sở đào tạo của Hiệu trưởng trường dự bị đại học",
+    "primary_channel": "online",
+    "channels": [
+      "in_person",
+      "online",
+      "postal"
+    ]
+  },
+  "notes": [],
+  "provenance": {
+    "pipeline": "raw->structured->normalized->enriched->ui_api_payload",
+    "normalizer_version": "0.2.0",
+    "enricher_version": "0.2.0",
+    "mapping_notes": "workflow_generated:hoc_tap/tuyen_sinh",
+    "supported_group": true
+  }
+}

@@ -1,0 +1,112 @@
+{
+  "schema_version": "1.0",
+  "enricher_version": "0.2.0",
+  "source": {
+    "procedure_code": "1.013966",
+    "title": "Thủ tục cấp phó bản văn bằng bảo hộ và cấp lại văn bằng bảo hộ/phó bản văn bằng bảo hộ",
+    "group_key": "hoc_tap",
+    "workflow_family": null,
+    "subflow": null
+  },
+  "experience": {
+    "entry_label": "Hỗ trợ giáo dục và học tập",
+    "overview_summary": "Thủ tục này thuộc nhóm giáo dục và học tập, thường liên quan đến hồ sơ đào tạo, văn bằng hoặc điều kiện học tập của người học. Kết quả thường nhận được là Thông báo kết quả thẩm định đơn yêu cầu cấp phó bản văn bằng bảo hộ, cấp lại văn bằng bảo hộ/phó bản văn bằng bảo hộ;. Thời gian xử lý tham khảo: 30 ngày.",
+    "next_step_summary": "Nên rà trước thông tin người học, cơ sở đào tạo và loại kết quả cần xin xác nhận hoặc cấp lại. Có thể chọn kênh nộp phù hợp: Trực tiếp, Trực tuyến, Dịch vụ bưu chính. Hiện có khoảng 4 mục giấy tờ cần theo dõi trong checklist.",
+    "tone": "supportive_public_service"
+  },
+  "guidance": {
+    "highlight_documents": [
+      {
+        "bucket": "required",
+        "name": "Tờ khai yêu cầu cấp phó bản văn bằng bảo hộ, cấp lại văn bằng bảo hộ/phó bản văn bằng bảo hộ",
+        "conditions": [],
+        "attachment_path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/1_013966/1.013966_Mus13.docx"
+      },
+      {
+        "bucket": "required",
+        "name": "02 mẫu nhãn hiệu, 01 bộ ảnh chụp hoặc 01 bộ bản vẽ kiểu dáng công nghiệp trùng với mẫu nhãn hiệu, bộ ảnh chụp hoặc bản vẽ kiểu dáng công nghiệp trong văn bằng bảo hộ gốc",
+        "conditions": [],
+        "attachment_path": null
+      },
+      {
+        "bucket": "conditional",
+        "name": "Văn bản ủy quyền (trường hợp yêu cầu được nộp thông qua đại diện);",
+        "conditions": [
+          "Văn bản ủy quyền (trường hợp yêu cầu được nộp thông qua đại diện);"
+        ],
+        "attachment_path": null
+      },
+      {
+        "bucket": "conditional",
+        "name": "Bản sao chứng từ nộp phí, lệ phí (trường hợp nộp phí, lệ phí qua dịch vụ bưu chính hoặc nộp trực tiếp vào tài khoản của Ủy ban nhân dân cấp tỉnh (phí/lệ phí yêu cầu cấp phó bản văn bằng bảo hộ, cấp lại văn bằng bảo hộ/phó bản văn bằng bảo hộ) và cơ quan quản lý nhà nước về quyền sở hữu công nghiệp (phí đăng bạ và công bố)",
+        "conditions": [
+          "Bản sao chứng từ nộp phí, lệ phí (trường hợp nộp phí, lệ phí qua dịch vụ bưu chính hoặc nộp trực tiếp vào tài khoản của Ủy ban nhân dân cấp tỉnh (phí/lệ phí yêu cầu cấp phó bản văn bằng bảo hộ, cấp lại văn bằng bảo hộ/phó bản văn bằng bảo hộ) và cơ quan quản lý nhà nước về quyền sở hữu công nghiệp (phí đăng bạ và công bố)"
+        ],
+        "attachment_path": null
+      }
+    ],
+    "special_cases": [
+      "Có thể cần giấy tờ ủy quyền",
+      "Có thể cần xác minh hồ sơ học tập hoặc văn bằng"
+    ],
+    "common_errors": [
+      "Thiếu giấy tờ hoặc nội dung ủy quyền phù hợp.",
+      "Điền sai mẫu tờ khai hoặc chọn sai biểu mẫu đi kèm.",
+      "Thiếu minh chứng học tập, văn bằng hoặc xác nhận từ cơ sở đào tạo."
+    ],
+    "validation_hints": [
+      "Nên xác định trước kênh nộp hồ sơ để biết có cần bản giấy, bản điện tử hay xuất trình trực tiếp.",
+      "Có mẫu biểu đính kèm, nên kiểm tra đúng biểu mẫu trước khi nộp.",
+      "Nên rà lại thông tin người học, cơ sở đào tạo và loại xác nhận hoặc văn bằng cần xin."
+    ]
+  },
+  "intake": {
+    "candidate_input_fields": [
+      {
+        "field_id": "learner_full_name",
+        "label": "Tên người học",
+        "field_type": "text",
+        "required": true
+      },
+      {
+        "field_id": "education_record_type",
+        "label": "Loại hồ sơ học tập cần xử lý",
+        "field_type": "text",
+        "required": true
+      },
+      {
+        "field_id": "education_institution",
+        "label": "Cơ sở đào tạo liên quan",
+        "field_type": "text",
+        "required": false
+      },
+      {
+        "field_id": "submission_channel_preference",
+        "label": "Kênh nộp dự kiến",
+        "field_type": "enum",
+        "required": false
+      },
+      {
+        "field_id": "certificate_or_degree_type",
+        "label": "Loại văn bằng/chứng chỉ",
+        "field_type": "text",
+        "required": false
+      }
+    ],
+    "suggested_clarifying_questions": [
+      "Bạn đang cần xử lý hồ sơ học tập, văn bằng hay xác nhận nào?",
+      "Người học và cơ sở đào tạo liên quan đã xác định rõ chưa?"
+    ]
+  },
+  "ui_hints": {
+    "primary_channel": "online",
+    "result_label": "Thông báo kết quả thẩm định đơn yêu cầu cấp phó bản văn bằng bảo hộ, cấp lại văn bằng bảo hộ/phó bản văn bằng bảo hộ;",
+    "time_badge": "30 ngày",
+    "document_count_badge": 4
+  },
+  "provenance": {
+    "generator": "workflow_domain_enricher",
+    "derivation_mode": "rule_based_semantic_enrichment",
+    "supported_group": true
+  }
+}

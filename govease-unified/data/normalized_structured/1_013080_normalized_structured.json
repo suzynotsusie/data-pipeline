@@ -1,0 +1,188 @@
+{
+  "schema_version": "1.0",
+  "normalizer_version": "0.2.0",
+  "source": {
+    "procedure_code": "1.013080",
+    "title": "Cấp lại chứng nhận đăng ký xe, biển số xe thực hiện bằng dịch vụ công trực tuyến toàn trình",
+    "raw_structured_parser_version": "0.1.0",
+    "field": "Đăng ký, quản lý phương tiện giao thông cơ giới, xe máy chuyên dùng"
+  },
+  "procedure": {
+    "level": "Cấp xã, Cấp tỉnh, Cấp bộ/ngành",
+    "procedure_type": "TTHC được luật giao quy định chi tiết",
+    "target_users": [
+      "Doanh nghiệp có vốn đầu tư nước ngoài",
+      "Công dân Việt Nam",
+      "Doanh nghiệp",
+      "Người nước ngoài",
+      "Tổ chức nước ngoài",
+      "Hợp tác xã",
+      "Tổ chức (không bao gồm doanh nghiệp",
+      "HTX)"
+    ],
+    "authorities": [
+      "Cục cảnh sát giao thông, Công an cấp Xã, Công an tỉnh"
+    ],
+    "receiving_places": []
+  },
+  "submission": {
+    "channels": [
+      "online"
+    ],
+    "methods": [
+      {
+        "method_id": "method_1",
+        "channel": "online",
+        "processing_time_text": "2 ngày làm việc",
+        "fee_text": null,
+        "description": "- Cách thức thực hiện: + Chủ xe thực hiện kê khai đăng ký xe trên Cổng dịch vụ công hoặc Ứng dụng định danh quốc gia. Cơ quan đăng ký xe tiếp nhận hồ sơ trong giờ làm việc. + Trả kết quả qua dịch vụ bưu chính. - Thời hạn giải quyết: + Cấp lại chứng nhận đăng ký xe: Phải tiến hành xác minh trong thời hạn 30 ngày, kể từ ngày nhận đủ hồ sơ hợp lệ; sau khi xác minh, nếu đủ điều kiện thì cấp lại trong thời hạn 02 ngày làm việc. + Cấp lại biển số xe: Phải tiến hành xác minh trong thời hạn 30 ngày, kể từ ngày nhận đủ hồ sơ hợp lệ; sau khi xác minh, nếu đủ điều kiện thì cấp lại trong thời hạn 02 ngày làm việc. + Thời gian trả kết quả đăng ký xe theo quy định được tính từ ngày nhận đủ hồ sơ hợp lệ và hệ thống đăng ký, quản lý xe đã nhận được kết quả xác thực về việc hoàn thành nộp lệ phí đăng ký xe từ cổng dịch vụ công.",
+        "is_online": true,
+        "is_postal": false,
+        "is_in_person": false
+      }
+    ],
+    "timing_summary": {
+      "unique_processing_times": [
+        "2 ngày làm việc"
+      ],
+      "method_count": 1
+    }
+  },
+  "documents": {
+    "required": [
+      {
+        "document_id": "gi_y_khai_ng_k_xe_m_u_kx10_79_ban_h_nh_k_m_theo_th_ng_t_s_13_2025_tt_bca_ng_y_28_02_2025_c_a_b_tr_ng_b_c_ng_an",
+        "name": "Giấy khai đăng ký xe (mẫu ĐKX10/79 ban hành kèm theo Thông tư số 13/2025/TT-BCA ngày 28/02/2025 của Bộ trưởng Bộ Công an).",
+        "group_name": "default",
+        "group_type": "unknown",
+        "original_count": "1",
+        "copy_count": "0",
+        "conditions": [],
+        "attachment_label": null,
+        "attachment_path": null
+      },
+      {
+        "document_id": "gi_y_t_c_a_ch_xe_s_d_ng_t_i_kho_n_nh_danh_m_c_2",
+        "name": "Giấy tờ của chủ xe (sử dụng tài khoản định danh mức độ 2)",
+        "group_name": "default",
+        "group_type": "unknown",
+        "original_count": "1",
+        "copy_count": "0",
+        "conditions": [],
+        "attachment_label": null,
+        "attachment_path": null
+      }
+    ],
+    "conditional": [],
+    "presented": [],
+    "notes": [],
+    "forms": [],
+    "empty_groups": [],
+    "document_count": 2
+  },
+  "process": {
+    "steps": [
+      {
+        "step_id": "step_1",
+        "title": null,
+        "content": "1.",
+        "actor": "user",
+        "channel_hint": null,
+        "time_hint": null
+      },
+      {
+        "step_id": "step_2",
+        "title": "Bước 1:",
+        "content": "Bước 1: Chủ xe sử dụng tài khoản định danh điện tử mức độ 2 để đăng nhập vào cổng dịch vụ công và kê khai chính xác, đầy đủ, trung thực các nội dung quy định trong mẫu giấy khai đăng ký xe điện tử. Nộp bản chà số máy, số khung của xe qua dịch vụ bưu chính cho cơ quan đăng ký xe;",
+        "actor": "authority",
+        "channel_hint": "dịch vụ bưu chính",
+        "time_hint": null
+      },
+      {
+        "step_id": "step_3",
+        "title": "Bước 2:",
+        "content": "Bước 2: Sau khi kê khai thành công, chủ xe nhận mã hồ sơ dịch vụ công, lịch hẹn giải quyết hồ sơ do cổng dịch vụ công thông báo qua tin nhắn điện thoại hoặc qua địa chỉ thư điện tử;",
+        "actor": "user",
+        "channel_hint": null,
+        "time_hint": null
+      },
+      {
+        "step_id": "step_4",
+        "title": "Bước 3:",
+        "content": "Bước 3: Sau khi kiểm tra hồ sơ xe đảm bảo hợp lệ, cơ quan đăng ký xe gửi thông báo cho chủ xe để nộp lệ phí đăng ký xe qua tiện ích thanh toán được tích hợp trên cổng dịch vụ công, phí dịch vụ bưu chính trên cổng dịch vụ công để trả kết quả đăng ký xe theo quy định;",
+        "actor": "authority",
+        "channel_hint": "dịch vụ bưu chính",
+        "time_hint": null
+      },
+      {
+        "step_id": "step_5",
+        "title": "Bước 4:",
+        "content": "Bước 4: Chủ xe nhận chứng nhận đăng ký xe hoặc biển số xe theo quy định từ dịch vụ bưu chính.",
+        "actor": "user",
+        "channel_hint": "dịch vụ bưu chính",
+        "time_hint": null
+      }
+    ],
+    "step_count": 5,
+    "notes": []
+  },
+  "eligibility": {
+    "conditions": [
+      "Chủ xe thực hiện dịch vụ công trực tuyến toàn trình đối với trường hợp cấp lại chứng nhận đăng ký xe, cấp lại biển số xe (trừ trường hợp xe đã đăng ký biển 3 số hoặc biển 4 số)."
+    ],
+    "has_conditions": true
+  },
+  "results": {
+    "items": [
+      {
+        "name": "Biển số xe",
+        "result_code": "KQ.G01.000015",
+        "raw_text": "Biển số xe"
+      },
+      {
+        "name": "Giấy chứng nhận đăng ký xe",
+        "result_code": "KQ.G01.000014",
+        "raw_text": "Giấy chứng nhận đăng ký xe"
+      }
+    ],
+    "primary_result": {
+      "name": "Biển số xe",
+      "result_code": "KQ.G01.000015",
+      "raw_text": "Biển số xe"
+    }
+  },
+  "legal_basis": {
+    "items": [
+      {
+        "title": "Luật Trật tự, an toàn giao thông đường bộ",
+        "code": "36/2024/QH15"
+      },
+      {
+        "title": "Thông tư sửa đổi, bổ sung một số điều của các thông tư quy định về trật tự, an toàn giao thông đường bộ, đường sắt và đường thủy nội địa.",
+        "code": "13/2025/TT-BCA"
+      },
+      {
+        "title": "Thông tư số 60/2023/TT-BTC ngày 07/9/2023 của Bộ Tài chính quy định mức thu, chế độ thu, nộp, quản lý lệ phí đăng ký, cấp biển số phương tiện giao thông cơ giới đường bộ",
+        "code": "60/2023/TT-BTC"
+      },
+      {
+        "title": "hông tư số 06/2025/TT-BTC của Bộ Tài chính: Sửa đổi, bổ sung một số điều của các Thông tư của Bộ trưởng Bộ Tài chính quy định về phí, lệ phí",
+        "code": "06/2025/TT-BTC"
+      },
+      {
+        "title": "Thông tư số 79/2024/TT-BCA ngày 15/11/2024 của Bộ trưởng Bộ Công an quy định về cấp, thu hồi chứng nhận đăng ký, biển số xe cơ giới, xe máy chuyên dùng.",
+        "code": "79/2024/TT-BCA"
+      }
+    ],
+    "count": 5
+  },
+  "attachments": [],
+  "signals": {
+    "raw_parse_warnings": [],
+    "missing_documents": false,
+    "documents_section_present": true,
+    "documents_declared_empty": false,
+    "documents_only_in_notes": false,
+    "missing_results": false
+  }
+}

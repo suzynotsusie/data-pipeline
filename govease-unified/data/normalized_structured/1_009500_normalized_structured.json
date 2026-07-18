@@ -1,0 +1,574 @@
+{
+  "schema_version": "1.0",
+  "normalizer_version": "0.2.0",
+  "source": {
+    "procedure_code": "1.009500",
+    "title": "Đăng ký chào bán chứng chỉ quỹ đóng, quỹ mở, quỹ đầu tư bất động sản, quỹ hoán đổi danh mục, cổ phiếu công ty đầu tư chứng khoán đại chúng lần đầu ra công chúng",
+    "raw_structured_parser_version": "0.1.0",
+    "field": "Chứng khoán"
+  },
+  "procedure": {
+    "level": "Cấp bộ/ngành",
+    "procedure_type": "TTHC được luật giao quy định chi tiết",
+    "target_users": [
+      "Doanh nghiệp"
+    ],
+    "authorities": [
+      "Ủy ban Chứng khoán Nhà nước - Bộ tài chính"
+    ],
+    "receiving_places": []
+  },
+  "submission": {
+    "channels": [
+      "in_person",
+      "online",
+      "postal"
+    ],
+    "methods": [
+      {
+        "method_id": "method_1",
+        "channel": "online",
+        "processing_time_text": "30 ngày",
+        "fee_text": null,
+        "description": "30 ngày kể từ ngày UBCKNN nhận được hồ sơ đầy đủ, hợp lệ.",
+        "is_online": true,
+        "is_postal": false,
+        "is_in_person": false
+      },
+      {
+        "method_id": "method_2",
+        "channel": "postal",
+        "processing_time_text": "30 ngày",
+        "fee_text": null,
+        "description": "30 ngày kể từ ngày UBCKNN nhận được hồ sơ đầy đủ, hợp lệ.",
+        "is_online": false,
+        "is_postal": true,
+        "is_in_person": false
+      },
+      {
+        "method_id": "method_3",
+        "channel": "in_person",
+        "processing_time_text": "30 ngày",
+        "fee_text": null,
+        "description": "30 ngày kể từ ngày UBCKNN nhận được hồ sơ đầy đủ, hợp lệ.",
+        "is_online": false,
+        "is_postal": false,
+        "is_in_person": true
+      }
+    ],
+    "timing_summary": {
+      "unique_processing_times": [
+        "30 ngày"
+      ],
+      "method_count": 3
+    }
+  },
+  "documents": {
+    "required": [
+      {
+        "document_id": "1_danh_s_ch_b_n_th_ng_tin_c_nh_n_c_a_ng_i_i_u_h_nh_nh_n_vi_n_nghi_p_v_th_m_nh_gi_theo_m_u_s_91_m_u_s_101_ph_l_c_ban_h_nh_k_m_theo_ngh_nh_155_2020_n_cp_v_th_th_m_nh_vi_n_v_gi",
+        "name": "1) Danh sách, bản thông tin cá nhân của người điều hành, nhân viên nghiệp vụ thẩm định giá theo Mẫu số 91, Mẫu số 101 Phụ lục ban hành kèm theo Nghị định 155/2020/NĐ-CP và thẻ thẩm định viên về giá;",
+        "group_name": "- Trường hợp đăng ký chào bán chứng chỉ quỹ đầu tư bất động sản hoạt động dưới hình thức quỹ đóng, nộp bổ sung:",
+        "group_type": "conditional",
+        "original_count": "1",
+        "copy_count": "0",
+        "conditions": [],
+        "attachment_label": "Mẫu số 91 bản thông tin.docx",
+        "attachment_path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/1_009500/M%E1%BA%ABu%20s%E1%BB%91%2091%20b%E1%BA%A3n%20th%C3%B4ng%20tin.docx"
+      },
+      {
+        "document_id": "danh_s_ch_nh_u_t_g_p_v_n_b_ng_b_t_ng_s_n_theo_m_u_s_103_ph_l_c_ban_h_nh_k_m_theo_ngh_nh_155_2020_n_cp_k_m_theo_quy_t_nh_g_p_t_i_s_n_v_o_qu_u_t_b_t_ng_s_n_cam_k_t_tu_n_th_c_c_i_u_ki_n_v_h_n_ch_chuy_n_nh_ng_ch_ng_ch_qu_c_a_c_p_c_th_m_quy_n_c_a_t_ch_c_g_p_v_n",
+        "name": "Danh sách nhà đầu tư góp vốn bằng bất động sản theo Mẫu số 103 Phụ lục ban hành kèm theo Nghị định 155/2020/NĐ-CP; kèm theo quyết định góp tài sản vào quỹ đầu tư bất động sản, cam kết tuân thủ các điều kiện về hạn chế chuyển nhượng chứng chỉ quỹ của cấp có thẩm quyền của tổ chức góp vốn;",
+        "group_name": "Trường hợp góp vốn bằng bất động sản cần bổ sung các tài liệu sau:",
+        "group_type": "conditional",
+        "original_count": "1",
+        "copy_count": "0",
+        "conditions": [],
+        "attachment_label": "315Mẫu số 103.docx",
+        "attachment_path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/1_009500/315M%E1%BA%ABu%20s%E1%BB%91%20103.docx"
+      },
+      {
+        "document_id": "b_o_c_o_t_i_ch_nh_n_m_g_n_nh_t_c_a_t_ch_c_g_p_v_n_t_nh_n_th_i_i_m_n_p_h_s_ng_k_ch_o_b_n_ra_c_ng_ch_ng_ph_i_p_ng_quy_nh_t_i_i_u_20_lu_t_ch_ng_kho_n_ho_c_b_o_c_o_c_a_t_ch_c_qu_n_l_b_t_ng_s_n_v_t_nh_h_nh_khai_th_c_b_t_ng_s_n_g_p_v_n_trong_n_m_g_n_nh_t_c_x_c_nh_n_c_a_t_ch_c_ki_m_to_n_c_l_p",
+        "name": "Báo cáo tài chính năm gần nhất của tổ chức góp vốn tính đến thời điểm nộp hồ sơ đăng ký chào bán ra công chúng phải đáp ứng quy định tại Điều 20 Luật Chứng khoán hoặc báo cáo của tổ chức quản lý bất động sản về tình hình khai thác bất động sản góp vốn trong năm gần nhất có xác nhận của tổ chức kiểm toán độc lập;",
+        "group_name": "Trường hợp góp vốn bằng bất động sản cần bổ sung các tài liệu sau:",
+        "group_type": "conditional",
+        "original_count": "1",
+        "copy_count": "0",
+        "conditions": [],
+        "attachment_label": null,
+        "attachment_path": null
+      },
+      {
+        "document_id": "phi_u_l_y_ki_n_nh_u_t_v_c_c_nh_u_g_p_v_n_b_ng_b_t_ng_gi_b_t_ng_s_n_g_p_v_n",
+        "name": "Phiếu lấy ý kiến nhà đầu tư về các nhà đầu góp vốn bằng bất động, giá bất động sản góp vốn.",
+        "group_name": "Trường hợp góp vốn bằng bất động sản cần bổ sung các tài liệu sau:",
+        "group_type": "conditional",
+        "original_count": "1",
+        "copy_count": "0",
+        "conditions": [],
+        "attachment_label": null,
+        "attachment_path": null
+      },
+      {
+        "document_id": "ch_ng_th_th_m_nh_gi_v_b_t_ng_s_n_g_p_v_n_c_a_02_doanh_nghi_p_th_m_nh_gi_c_l_p",
+        "name": "Chứng thư thẩm định giá về bất động sản góp vốn của 02 doanh nghiệp thẩm định giá độc lập;",
+        "group_name": "Trường hợp góp vốn bằng bất động sản cần bổ sung các tài liệu sau:",
+        "group_type": "conditional",
+        "original_count": "1",
+        "copy_count": "0",
+        "conditions": [],
+        "attachment_label": null,
+        "attachment_path": null
+      },
+      {
+        "document_id": "c_c_t_i_li_u_v_quy_n_s_h_u_quy_n_s_d_ng_b_t_ng_s_n_c_a_nh_u_t_g_p_v_n_theo_quy_nh_ph_p_lu_t_v_kinh_doanh_b_t_ng_s_n_ph_p_lu_t_v_nh_ph_p_lu_t_v_t_ai",
+        "name": "Các tài liệu về quyền sở hữu, quyền sử dụng bất động sản của nhà đầu tư góp vốn theo quy định pháp luật về kinh doanh bất động sản, pháp luật về nhà ở, pháp luật về đất đai;",
+        "group_name": "Trường hợp góp vốn bằng bất động sản cần bổ sung các tài liệu sau:",
+        "group_type": "conditional",
+        "original_count": "1",
+        "copy_count": "0",
+        "conditions": [],
+        "attachment_label": null,
+        "attachment_path": null
+      },
+      {
+        "document_id": "2_d_th_o_i_u_l_qu_c_ng_ty_u_t_ch_ng_kho_n_theo_m_u_ph_l_c_i_ii_ban_h_nh_k_m_theo_th_ng_t_98_2020_tt_btc_ng_y_16_11_2020_c_a_b_t_i_ch_nh",
+        "name": "2) Dự thảo Điều lệ quỹ/công ty đầu tư chứng khoán theo Mẫu Phụ lục I/II ban hành kèm theo Thông tư 98/2020/TT-BTC ngày 16/11/2020 của Bộ Tài chính;",
+        "group_name": "Thành phần, số lượng hồ sơ:",
+        "group_type": "required",
+        "original_count": "1",
+        "copy_count": "0",
+        "conditions": [],
+        "attachment_label": "31Phụ lục 1 mẫu điều lệ.docx",
+        "attachment_path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/1_009500/31Ph%E1%BB%A5%20l%E1%BB%A5c%201%20m%E1%BA%ABu%20%C4%91i%E1%BB%81u%20l%E1%BB%87.docx"
+      },
+      {
+        "document_id": "3_b_n_c_o_b_ch_theo_m_u_ph_l_c_iii_iv_ban_h_nh_k_m_theo_th_ng_t_98_2020_tt_btc_ng_y_16_11_2020_c_a_b_t_i_ch_nh",
+        "name": "3) Bản cáo bạch theo Mẫu Phụ lục III/IV ban hành kèm theo Thông tư 98/2020/TT-BTC ngày 16/11/2020 của Bộ Tài chính;",
+        "group_name": "Thành phần, số lượng hồ sơ:",
+        "group_type": "required",
+        "original_count": "1",
+        "copy_count": "0",
+        "conditions": [],
+        "attachment_label": "phụ lục III mẫu báo cáo bạch.docx",
+        "attachment_path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/1_009500/ph%E1%BB%A5%20l%E1%BB%A5c%20III%20m%E1%BA%ABu%20b%C3%A1o%20c%C3%A1o%20b%E1%BA%A1ch.docx"
+      },
+      {
+        "document_id": "1_gi_y_ng_k_ch_o_b_n_ch_ng_ch_qu_c_phi_u_c_ng_ty_u_t_ch_ng_kho_n_ra_c_ng_ch_ng_m_u_s_100_ph_l_c_ban_h_nh_k_m_theo_ngh_nh_155_2020_n_cp_ng_y_31_12_2020_c_a_ch_nh_ph",
+        "name": "1) Giấy đăng ký chào bán chứng chỉ quỹ/cổ phiếu công ty đầu tư chứng khoán ra công chúng - Mẫu số 100 Phụ lục ban hành kèm theo Nghị định 155/2020/NĐ-CP ngày 31/12/2020 của Chính phủ;",
+        "group_name": "Thành phần, số lượng hồ sơ:",
+        "group_type": "required",
+        "original_count": "1",
+        "copy_count": "0",
+        "conditions": [],
+        "attachment_label": "Mẫu số 100.docx",
+        "attachment_path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/1_009500/M%E1%BA%ABu%20s%E1%BB%91%20100.docx"
+      },
+      {
+        "document_id": "6_h_p_ng_nguy_n_t_c_v_vi_c_ph_n_ph_i_ch_ng_ch_qu_h_p_ng_ph_n_ph_i_c_phi_u_c_ng_ty_u_t_ch_ng_kho_n_gi_a_c_ng_ty_qu_n_l_qu_u_t_ch_ng_kho_n_v_c_c_i_l_ph_n_ph_i_k_m_theo_gi_y_ch_ng_nh_n_ng_k_ho_t_ng_i_l_ph_n_ph_i_ch_ng_ch_qu_b_o_c_o_th_m_nh_c_s_v_t_ch_t_k_thu_t_nh_n_s_t_i_c_c_a_i_m_ph_n_ph_i_ch_ng_ch_qu_c_phi_u_c_ng_ty_u_t_ch_ng_kho_n_c_a_c_ng_ty_qu_n_l_qu_u_t_ch_ng_kho_n",
+        "name": "6) Hợp đồng nguyên tắc về việc phân phối chứng chỉ quỹ/Hợp đồng phân phối cổ phiếu công ty đầu tư chứng khoán giữa công ty quản lý quỹ đầu tư chứng khoán và các đại lý phân phối kèm theo Giấy chứng nhận đăng ký hoạt động đại lý phân phối chứng chỉ quỹ, báo cáo thẩm định cơ sở vật chất, kỹ thuật, nhân sự tại các địa điểm phân phối chứng chỉ quỹ/ cổ phiếu công ty đầu tư chứng khoán của công ty quản lý quỹ đầu tư chứng khoán;",
+        "group_name": "Thành phần, số lượng hồ sơ:",
+        "group_type": "required",
+        "original_count": "1",
+        "copy_count": "0",
+        "conditions": [],
+        "attachment_label": null,
+        "attachment_path": null
+      },
+      {
+        "document_id": "4_b_n_c_o_b_ch_t_m_t_t_theo_m_u_ph_l_c_v_vi_ban_h_nh_k_m_theo_th_ng_t_98_2020_tt_btc_ng_y_16_11_2020_c_a_b_t_i_ch_nh",
+        "name": "4) Bản cáo bạch tóm tắt theo Mẫu Phụ lục V/VI ban hành kèm theo Thông tư 98/2020/TT-BTC ngày 16/11/2020 của Bộ Tài chính;",
+        "group_name": "Thành phần, số lượng hồ sơ:",
+        "group_type": "required",
+        "original_count": "1",
+        "copy_count": "0",
+        "conditions": [],
+        "attachment_label": "Phụ lục V.VI.docx",
+        "attachment_path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/1_009500/Ph%E1%BB%A5%20l%E1%BB%A5c%20V.VI.docx"
+      },
+      {
+        "document_id": "5_h_p_ng_nguy_n_t_c_v_vi_c_gi_m_s_t_gi_a_ng_n_h_ng_gi_m_s_t_v_c_ng_ty_qu_n_l_qu_u_t_ch_ng_kho_n_i_v_i_qu_h_p_ng_l_u_k_gi_m_s_t_gi_a_ng_n_h_ng_gi_m_s_t_v_c_ng_ty_qu_n_l_qu_u_t_ch_ng_kho_n_i_v_i_c_ng_ty_u_t_ch_ng_kho_n",
+        "name": "5) Hợp đồng nguyên tắc về việc giám sát giữa ngân hàng giám sát và công ty quản lý quỹ đầu tư chứng khoán (đối với quỹ)/Hợp đồng lưu ký, giám sát giữa ngân hàng giám sát và công ty quản lý quỹ đầu tư chứng khoán (đối với công ty đầu tư chứng khoán);",
+        "group_name": "Thành phần, số lượng hồ sơ:",
+        "group_type": "required",
+        "original_count": "1",
+        "copy_count": "0",
+        "conditions": [],
+        "attachment_label": null,
+        "attachment_path": null
+      }
+    ],
+    "conditional": [
+      {
+        "document_id": "2_h_p_ng_th_m_nh_gi_b_t_ng_s_n_gi_a_c_ng_ty_qu_n_l_qu_u_t_ch_ng_kho_n_k_v_i_doanh_nghi_p_th_m_nh_gi_b_t_ng_s_n_theo_quy_nh_lu_t_gi_n_u_c",
+        "name": "2) Hợp đồng thẩm định giá bất động sản giữa công ty quản lý quỹ đầu tư chứng khoán ký với doanh nghiệp thẩm định giá bất động sản theo quy định Luật Giá (nếu có);",
+        "group_name": "- Trường hợp đăng ký chào bán chứng chỉ quỹ đầu tư bất động sản hoạt động dưới hình thức quỹ đóng, nộp bổ sung:",
+        "group_type": "conditional",
+        "original_count": "1",
+        "copy_count": "0",
+        "conditions": [
+          "2) Hợp đồng thẩm định giá bất động sản giữa công ty quản lý quỹ đầu tư chứng khoán ký với doanh nghiệp thẩm định giá bất động sản theo quy định Luật Giá (nếu có);"
+        ],
+        "attachment_label": null,
+        "attachment_path": null
+      },
+      {
+        "document_id": "3_h_p_ng_qu_n_l_b_t_ng_s_n_gi_a_c_ng_ty_qu_n_l_qu_u_t_ch_ng_kho_n_k_v_i_t_ch_c_qu_n_l_b_t_ng_s_n_n_u_c",
+        "name": "3) Hợp đồng quản lý bất động sản giữa công ty quản lý quỹ đầu tư chứng khoán ký với tổ chức quản lý bất động sản (nếu có);",
+        "group_name": "- Trường hợp đăng ký chào bán chứng chỉ quỹ đầu tư bất động sản hoạt động dưới hình thức quỹ đóng, nộp bổ sung:",
+        "group_type": "conditional",
+        "original_count": "1",
+        "copy_count": "0",
+        "conditions": [
+          "3) Hợp đồng quản lý bất động sản giữa công ty quản lý quỹ đầu tư chứng khoán ký với tổ chức quản lý bất động sản (nếu có);"
+        ],
+        "attachment_label": null,
+        "attachment_path": null
+      },
+      {
+        "document_id": "h_p_ng_k_v_i_c_c_t_ch_c_cung_c_p_d_ch_v_qu_n_tr_qu_v_i_l_chuy_n_nh_ng_n_u_c",
+        "name": "Hợp đồng ký với các tổ chức cung cấp dịch vụ quản trị quỹ và đại lý chuyển nhượng (nếu có).",
+        "group_name": "- Trường hợp đăng ký chào bán lần đầu chứng chỉ quỹ mở ra công chúng, nộp bổ sung:",
+        "group_type": "conditional",
+        "original_count": "1",
+        "copy_count": "0",
+        "conditions": [
+          "Hợp đồng ký với các tổ chức cung cấp dịch vụ quản trị quỹ và đại lý chuyển nhượng (nếu có)."
+        ],
+        "attachment_label": null,
+        "attachment_path": null
+      },
+      {
+        "document_id": "2_h_p_ng_l_p_qu_gi_a_c_ng_ty_qu_n_l_qu_u_t_ch_ng_kho_n_v_i_c_c_th_nh_vi_n_l_p_qu_k_m_theo_gi_y_ph_p_th_nh_l_p_v_ho_t_ng_c_a_c_ng_ty_ch_ng_kho_n_ng_n_h_ng_l_u_k_gi_y_ch_ng_nh_n_ho_t_ng_l_u_k_c_a_ng_n_h_ng_l_u_k_b_ng_t_ng_h_p_t_l_v_n_kh_d_ng_t_l_an_to_n_v_n_c_a_c_ng_ty_ch_ng_kho_n_ng_n_h_ng_l_u_k_cho_12_th_ng_g_n_nh_t_tr_c_th_i_i_m_n_p_h_s_v_c_c_t_i_li_u_kh_c_theo_h_p_ng_n_u_c",
+        "name": "2) Hợp đồng lập quỹ giữa công ty quản lý quỹ đầu tư chứng khoán với các thành viên lập quỹ, kèm theo Giấy phép thành lập và hoạt động của công ty chứng khoán, ngân hàng lưu ký, Giấy chứng nhận hoạt động lưu ký của ngân hàng lưu ký, bảng tổng hợp tỷ lệ vốn khả dụng, tỷ lệ an toàn vốn của công ty chứng khoán, ngân hàng lưu ký cho 12 tháng gần nhất trước thời điểm nộp hồ sơ và các tài liệu khác theo hợp đồng (nếu có).",
+        "group_name": "Trường hợp đăng ký chào bán chứng chỉ quỹ hoán đổi danh mục, nộp bổ sung:",
+        "group_type": "conditional",
+        "original_count": "1",
+        "copy_count": "0",
+        "conditions": [
+          "2) Hợp đồng lập quỹ giữa công ty quản lý quỹ đầu tư chứng khoán với các thành viên lập quỹ, kèm theo Giấy phép thành lập và hoạt động của công ty chứng khoán, ngân hàng lưu ký, Giấy chứng nhận hoạt động lưu ký của ngân hàng lưu ký, bảng tổng hợp tỷ lệ vốn khả dụng, tỷ lệ an toàn vốn của công ty chứng khoán, ngân hàng lưu ký cho 12 tháng gần nhất trước thời điểm nộp hồ sơ và các tài liệu khác theo hợp đồng (nếu có)."
+        ],
+        "attachment_label": null,
+        "attachment_path": null
+      },
+      {
+        "document_id": "1_h_p_ng_k_gi_a_c_ng_ty_qu_n_l_qu_u_t_ch_ng_kho_n_v_s_giao_d_ch_ch_ng_kho_n_v_vi_c_cung_c_p_ch_s_tham_chi_u_cho_qu_k_m_t_i_li_u_v_ch_s_tham_chi_u_bao_g_m_nguy_n_t_c_x_y_d_ng_v_qu_n_l_ch_s_v_c_c_t_i_li_u_li_n_quan_m_t_chi_ti_t_v_danh_m_c_ch_ng_kho_n_c_c_u_c_a_ch_s_nguy_n_l_v_ph_ng_ph_p_l_a_ch_n_ch_ng_kho_n_trong_r_ch_s_nguy_n_l_v_ph_ng_ph_p_t_nh_ch_s_th_nh_ph_n_h_s_trong_th_t_c_h_nh_ch_nh_n_y_c_thay_th_ho_c_c_t_gi_m_ho_c_c_mi_n_tr_trong_tr_ng_h_p_ubcknn_khai_th_c_c_th_ng_tin_t_c_c_c_s_d_li_u_qu_c_gia_c_s_d_li_u_chuy_n_ng_nh_ho_c_t_i_li_u_c_g_i_t_i_y_ban_ch_ng_kho_n_nh_n_c_theo_quy_nh_v_b_o_c_o_v_c_ng_b_th_ng_tin_tr_ng_h_p_kh_ng_khai_th_c_c_th_ng_tin_ho_c_th_ng_tin_khai_th_c_c_kh_ng_y_kh_ng_ch_nh_x_c_th_c_nh_n_t_ch_c_b_sung_th_nh_ph_n_h_s_gi_i_quy_t_th_t_c_h_nh_ch_nh_ng_th_i_c_nh_n_t_ch_c_th_c_hi_n_c_p_nh_t_i_u_ch_nh_th_ng_tin_trong_c_c_c_s_d_li_u_theo_quy_nh_c_a_ph_p_lu_t",
+        "name": "1) Hợp đồng ký giữa công ty quản lý quỹ đầu tư chứng khoán và Sở giao dịch chứng khoán về việc cung cấp chỉ số tham chiếu cho quỹ, kèm tài liệu về chỉ số tham chiếu, bao gồm: nguyên tắc xây dựng và quản lý chỉ số và các tài liệu liên quan mô tả chi tiết về danh mục chứng khoán cơ cấu của chỉ số, nguyên lý và phương pháp lựa chọn chứng khoán trong rổ chỉ số, nguyên lý và phương pháp tính chỉ số.; Thành phần hồ sơ trong thủ tục hành chính này được thay thế hoặc cắt giảm hoặc được miễn trừ trong trường hợp UBCKNN khai thác được thông tin từ các cơ sở dữ liệu quốc gia, cơ sở dữ liệu chuyên ngành hoặc tài liệu đó đã được gửi tới Ủy ban Chứng khoán Nhà nước theo quy định về báo cáo và công bố thông tin. Trường hợp không khai thác được thông tin hoặc thông tin khai thác được không đầy đủ, không chính xác thì cá nhân, tổ chức bổ sung thành phần hồ sơ để giải quyết thủ tục hành chính; đồng thời cá nhân, tổ chức thực hiện cập nhật, điều chỉnh thông tin trong các cơ sở dữ liệu theo quy định của pháp luật.",
+        "group_name": "Trường hợp đăng ký chào bán chứng chỉ quỹ hoán đổi danh mục, nộp bổ sung:",
+        "group_type": "conditional",
+        "original_count": "1",
+        "copy_count": "0",
+        "conditions": [
+          "1) Hợp đồng ký giữa công ty quản lý quỹ đầu tư chứng khoán và Sở giao dịch chứng khoán về việc cung cấp chỉ số tham chiếu cho quỹ, kèm tài liệu về chỉ số tham chiếu, bao gồm: nguyên tắc xây dựng và quản lý chỉ số và các tài liệu liên quan mô tả chi tiết về danh mục chứng khoán cơ cấu của chỉ số, nguyên lý và phương pháp lựa chọn chứng khoán trong rổ chỉ số, nguyên lý và phương pháp tính chỉ số.; Thành phần hồ sơ trong thủ tục hành chính này được thay thế hoặc cắt giảm hoặc được miễn trừ trong trường hợp UBCKNN khai thác được thông tin từ các cơ sở dữ liệu quốc gia, cơ sở dữ liệu chuyên ngành hoặc tài liệu đó đã được gửi tới Ủy ban Chứng khoán Nhà nước theo quy định về báo cáo và công bố thông tin. Trường hợp không khai thác được thông tin hoặc thông tin khai thác được không đầy đủ, không chính xác thì cá nhân, tổ chức bổ sung thành phần hồ sơ để giải quyết thủ tục hành chính; đồng thời cá nhân, tổ chức thực hiện cập nhật, điều chỉnh thông tin trong các cơ sở dữ liệu theo quy định của pháp luật."
+        ],
+        "attachment_label": null,
+        "attachment_path": null
+      },
+      {
+        "document_id": "7_c_c_h_p_ng_nguy_n_t_c_k_v_i_c_c_t_ch_c_cung_c_p_d_ch_v_c_li_n_quan_n_u_c",
+        "name": "7) Các hợp đồng nguyên tắc ký với các tổ chức cung cấp dịch vụ có liên quan (nếu có);",
+        "group_name": "Thành phần, số lượng hồ sơ:",
+        "group_type": "required",
+        "original_count": "1",
+        "copy_count": "0",
+        "conditions": [
+          "7) Các hợp đồng nguyên tắc ký với các tổ chức cung cấp dịch vụ có liên quan (nếu có);"
+        ],
+        "attachment_label": null,
+        "attachment_path": null
+      },
+      {
+        "document_id": "10_cam_k_t_b_o_l_nh_ph_t_h_nh_n_u_c_c_c_t_i_li_u_qu_ng_c_o_th_ng_tin_gi_i_thi_u_v_qu_c_ng_ty_u_t_ch_ng_kho_n_d_ki_n_ch_o_b_n_n_u_c",
+        "name": "10) Cam kết bảo lãnh phát hành (nếu có), các tài liệu quảng cáo, thông tin giới thiệu về quỹ/công ty đầu tư chứng khoán dự kiến chào bán (nếu có).",
+        "group_name": "Thành phần, số lượng hồ sơ:",
+        "group_type": "required",
+        "original_count": "1",
+        "copy_count": "0",
+        "conditions": [
+          "10) Cam kết bảo lãnh phát hành (nếu có), các tài liệu quảng cáo, thông tin giới thiệu về quỹ/công ty đầu tư chứng khoán dự kiến chào bán (nếu có)."
+        ],
+        "attachment_label": null,
+        "attachment_path": null
+      },
+      {
+        "document_id": "9_tr_ng_h_p_qu_c_ng_ty_u_t_ch_ng_kho_n_i_ch_ng_d_ki_n_kh_ng_t_ch_c_i_h_i_nh_u_t_i_h_i_ng_c_ng_l_n_th_nh_t_c_ng_ty_qu_n_l_qu_u_t_ch_ng_kho_n_ph_i_b_sung_c_c_t_i_li_u_l_y_ki_n_nh_u_t_v_b_u_c_c_th_nh_vi_n_ban_i_di_n_qu_k_m_theo_b_n_th_ng_tin_c_nh_n_l_l_ch_t_ph_p_v_c_c_n_i_dung_kh_c_l_y_ki_n_nh_u_t_i_v_i_qu_c_c_t_i_li_u_l_y_ki_n_nh_u_t_v_ni_m_y_t_c_phi_u_t_i_s_giao_d_ch_ch_ng_kho_n_c_c_u_h_i_ng_qu_n_tr_th_nh_vi_n_h_i_ng_qu_n_tr_c_a_c_ng_ty_v_c_c_n_i_dung_kh_c_l_y_ki_n_nh_u_t_i_v_i_c_ng_ty_u_t_ch_ng_kho_n",
+        "name": "9) Trường hợp quỹ/công ty đầu tư chứng khoán đại chúng dự kiến không tổ chức Đại hội nhà đầu tư/Đại hội đồng cổ đông lần thứ nhất, công ty quản lý quỹ đầu tư chứng khoán phải bổ sung: - Các tài liệu lấy ý kiến nhà đầu tư về bầu các thành viên ban đại diện quỹ, kèm theo bản thông tin cá nhân, lý lịch tư pháp, và các nội dung khác lấy ý kiến nhà đầu tư (đối với quỹ); - Các tài liệu lấy ý kiến nhà đầu tư về: niêm yết cổ phiếu tại Sở giao dịch chứng khoán, cơ cấu Hội đồng quản trị, thành viên hội đồng quản trị của công ty và các nội dung khác lấy ý kiến nhà đầu tư (đối với công ty đầu tư chứng khoán);",
+        "group_name": "Thành phần, số lượng hồ sơ:",
+        "group_type": "required",
+        "original_count": "1",
+        "copy_count": "0",
+        "conditions": [
+          "9) Trường hợp quỹ/công ty đầu tư chứng khoán đại chúng dự kiến không tổ chức Đại hội nhà đầu tư/Đại hội đồng cổ đông lần thứ nhất, công ty quản lý quỹ đầu tư chứng khoán phải bổ sung: - Các tài liệu lấy ý kiến nhà đầu tư về bầu các thành viên ban đại diện quỹ, kèm theo bản thông tin cá nhân, lý lịch tư pháp, và các nội dung khác lấy ý kiến nhà đầu tư (đối với quỹ); - Các tài liệu lấy ý kiến nhà đầu tư về: niêm yết cổ phiếu tại Sở giao dịch chứng khoán, cơ cấu Hội đồng quản trị, thành viên hội đồng quản trị của công ty và các nội dung khác lấy ý kiến nhà đầu tư (đối với công ty đầu tư chứng khoán);"
+        ],
+        "attachment_label": null,
+        "attachment_path": null
+      },
+      {
+        "document_id": "8_danh_s_ch_b_n_th_ng_tin_c_nh_n_c_a_ng_i_i_u_h_nh_qu_theo_m_u_s_91_m_u_s_101_ph_l_c_ban_h_nh_k_m_theo_ngh_nh_155_2020_n_cp_ng_y_16_11_2020_c_a_b_t_i_ch_nh_i_v_i_qu_danh_s_ch_nh_n_s_d_ki_n_ng_i_i_u_h_nh_c_ng_ty_k_m_theo_b_n_th_ng_tin_c_nh_n_theo_m_u_s_91_m_u_s_105_ph_l_c_ban_h_nh_k_m_theo_ngh_nh_155_2020_n_cp_v_l_l_ch_t_ph_p_c_a_th_nh_vi_n_h_i_ng_qu_n_tr_t_ng_gi_m_c_gi_m_c_c_c_p_kh_ng_qu_06_th_ng_t_nh_n_ng_y_n_p_h_s_i_v_i_c_ng_ty_u_t_ch_ng_kho_n_th_nh_ph_n_h_s_trong_th_t_c_h_nh_ch_nh_n_y_c_thay_th_ho_c_c_t_gi_m_ho_c_c_mi_n_tr_trong_tr_ng_h_p_ubcknn_khai_th_c_c_th_ng_tin_t_c_c_c_s_d_li_u_qu_c_gia_c_s_d_li_u_chuy_n_ng_nh_ho_c_t_i_li_u_c_g_i_t_i_y_ban_ch_ng_kho_n_nh_n_c_theo_quy_nh_v_b_o_c_o_v_c_ng_b_th_ng_tin_tr_ng_h_p_kh_ng_khai_th_c_c_th_ng_tin_ho_c_th_ng_tin_khai_th_c_c_kh_ng_y_kh_ng_ch_nh_x_c_th_c_nh_n_t_ch_c_b_sung_th_nh_ph_n_h_s_gi_i_quy_t_th_t_c_h_nh_ch_nh_ng_th_i_c_nh_n_t_ch_c_th_c_hi_n_c_p_nh_t_i_u_ch_nh_th_ng_tin_trong_c_c_c_s_d_li_u_theo_quy_nh_c_a_ph_p_lu_t",
+        "name": "8) Danh sách, bản thông tin cá nhân của người điều hành quỹ theo Mẫu số 91, Mẫu số 101 Phụ lục ban hành kèm theo Nghị định 155/2020/NĐ-CP ngày 16/11/2020 của Bộ Tài chính (đối với quỹ)/Danh sách nhân sự dự kiến, người điều hành công ty kèm theo bản thông tin cá nhân theo Mẫu số 91, Mẫu số 105 Phụ lục ban hành kèm theo Nghị định 155/2020/NĐ-CP và Lý lịch tư pháp của thành viên Hội đồng quản trị, Tổng giám đốc (Giám đốc) được cấp không quá 06 tháng tính đến ngày nộp hồ sơ (đối với công ty đầu tư chứng khoán);; Thành phần hồ sơ trong thủ tục hành chính này được thay thế hoặc cắt giảm hoặc được miễn trừ trong trường hợp UBCKNN khai thác được thông tin từ các cơ sở dữ liệu quốc gia, cơ sở dữ liệu chuyên ngành hoặc tài liệu đó đã được gửi tới Ủy ban Chứng khoán Nhà nước theo quy định về báo cáo và công bố thông tin. Trường hợp không khai thác được thông tin hoặc thông tin khai thác được không đầy đủ, không chính xác thì cá nhân, tổ chức bổ sung thành phần hồ sơ để giải quyết thủ tục hành chính; đồng thời cá nhân, tổ chức thực hiện cập nhật, điều chỉnh thông tin trong các cơ sở dữ liệu theo quy định của pháp luật.",
+        "group_name": "Thành phần, số lượng hồ sơ:",
+        "group_type": "required",
+        "original_count": "1",
+        "copy_count": "0",
+        "conditions": [
+          "8) Danh sách, bản thông tin cá nhân của người điều hành quỹ theo Mẫu số 91, Mẫu số 101 Phụ lục ban hành kèm theo Nghị định 155/2020/NĐ-CP ngày 16/11/2020 của Bộ Tài chính (đối với quỹ)/Danh sách nhân sự dự kiến, người điều hành công ty kèm theo bản thông tin cá nhân theo Mẫu số 91, Mẫu số 105 Phụ lục ban hành kèm theo Nghị định 155/2020/NĐ-CP và Lý lịch tư pháp của thành viên Hội đồng quản trị, Tổng giám đốc (Giám đốc) được cấp không quá 06 tháng tính đến ngày nộp hồ sơ (đối với công ty đầu tư chứng khoán);; Thành phần hồ sơ trong thủ tục hành chính này được thay thế hoặc cắt giảm hoặc được miễn trừ trong trường hợp UBCKNN khai thác được thông tin từ các cơ sở dữ liệu quốc gia, cơ sở dữ liệu chuyên ngành hoặc tài liệu đó đã được gửi tới Ủy ban Chứng khoán Nhà nước theo quy định về báo cáo và công bố thông tin. Trường hợp không khai thác được thông tin hoặc thông tin khai thác được không đầy đủ, không chính xác thì cá nhân, tổ chức bổ sung thành phần hồ sơ để giải quyết thủ tục hành chính; đồng thời cá nhân, tổ chức thực hiện cập nhật, điều chỉnh thông tin trong các cơ sở dữ liệu theo quy định của pháp luật."
+        ],
+        "attachment_label": "Mẫu số 101.docx",
+        "attachment_path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/1_009500/M%E1%BA%ABu%20s%E1%BB%91%20101.docx"
+      }
+    ],
+    "presented": [],
+    "notes": [],
+    "forms": [
+      {
+        "name": "1) Danh sách, bản thông tin cá nhân của người điều hành, nhân viên nghiệp vụ thẩm định giá theo Mẫu số 91, Mẫu số 101 Phụ lục ban hành kèm theo Nghị định 155/2020/NĐ-CP và thẻ thẩm định viên về giá;",
+        "attachment_label": "Mẫu số 91 bản thông tin.docx",
+        "attachment_path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/1_009500/M%E1%BA%ABu%20s%E1%BB%91%2091%20b%E1%BA%A3n%20th%C3%B4ng%20tin.docx"
+      },
+      {
+        "name": "Danh sách nhà đầu tư góp vốn bằng bất động sản theo Mẫu số 103 Phụ lục ban hành kèm theo Nghị định 155/2020/NĐ-CP; kèm theo quyết định góp tài sản vào quỹ đầu tư bất động sản, cam kết tuân thủ các điều kiện về hạn chế chuyển nhượng chứng chỉ quỹ của cấp có thẩm quyền của tổ chức góp vốn;",
+        "attachment_label": "315Mẫu số 103.docx",
+        "attachment_path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/1_009500/315M%E1%BA%ABu%20s%E1%BB%91%20103.docx"
+      },
+      {
+        "name": "2) Dự thảo Điều lệ quỹ/công ty đầu tư chứng khoán theo Mẫu Phụ lục I/II ban hành kèm theo Thông tư 98/2020/TT-BTC ngày 16/11/2020 của Bộ Tài chính;",
+        "attachment_label": "31Phụ lục 1 mẫu điều lệ.docx",
+        "attachment_path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/1_009500/31Ph%E1%BB%A5%20l%E1%BB%A5c%201%20m%E1%BA%ABu%20%C4%91i%E1%BB%81u%20l%E1%BB%87.docx"
+      },
+      {
+        "name": "3) Bản cáo bạch theo Mẫu Phụ lục III/IV ban hành kèm theo Thông tư 98/2020/TT-BTC ngày 16/11/2020 của Bộ Tài chính;",
+        "attachment_label": "phụ lục III mẫu báo cáo bạch.docx",
+        "attachment_path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/1_009500/ph%E1%BB%A5%20l%E1%BB%A5c%20III%20m%E1%BA%ABu%20b%C3%A1o%20c%C3%A1o%20b%E1%BA%A1ch.docx"
+      },
+      {
+        "name": "1) Giấy đăng ký chào bán chứng chỉ quỹ/cổ phiếu công ty đầu tư chứng khoán ra công chúng - Mẫu số 100 Phụ lục ban hành kèm theo Nghị định 155/2020/NĐ-CP ngày 31/12/2020 của Chính phủ;",
+        "attachment_label": "Mẫu số 100.docx",
+        "attachment_path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/1_009500/M%E1%BA%ABu%20s%E1%BB%91%20100.docx"
+      },
+      {
+        "name": "4) Bản cáo bạch tóm tắt theo Mẫu Phụ lục V/VI ban hành kèm theo Thông tư 98/2020/TT-BTC ngày 16/11/2020 của Bộ Tài chính;",
+        "attachment_label": "Phụ lục V.VI.docx",
+        "attachment_path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/1_009500/Ph%E1%BB%A5%20l%E1%BB%A5c%20V.VI.docx"
+      },
+      {
+        "name": "8) Danh sách, bản thông tin cá nhân của người điều hành quỹ theo Mẫu số 91, Mẫu số 101 Phụ lục ban hành kèm theo Nghị định 155/2020/NĐ-CP ngày 16/11/2020 của Bộ Tài chính (đối với quỹ)/Danh sách nhân sự dự kiến, người điều hành công ty kèm theo bản thông tin cá nhân theo Mẫu số 91, Mẫu số 105 Phụ lục ban hành kèm theo Nghị định 155/2020/NĐ-CP và Lý lịch tư pháp của thành viên Hội đồng quản trị, Tổng giám đốc (Giám đốc) được cấp không quá 06 tháng tính đến ngày nộp hồ sơ (đối với công ty đầu tư chứng khoán);; Thành phần hồ sơ trong thủ tục hành chính này được thay thế hoặc cắt giảm hoặc được miễn trừ trong trường hợp UBCKNN khai thác được thông tin từ các cơ sở dữ liệu quốc gia, cơ sở dữ liệu chuyên ngành hoặc tài liệu đó đã được gửi tới Ủy ban Chứng khoán Nhà nước theo quy định về báo cáo và công bố thông tin. Trường hợp không khai thác được thông tin hoặc thông tin khai thác được không đầy đủ, không chính xác thì cá nhân, tổ chức bổ sung thành phần hồ sơ để giải quyết thủ tục hành chính; đồng thời cá nhân, tổ chức thực hiện cập nhật, điều chỉnh thông tin trong các cơ sở dữ liệu theo quy định của pháp luật.",
+        "attachment_label": "Mẫu số 101.docx",
+        "attachment_path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/1_009500/M%E1%BA%ABu%20s%E1%BB%91%20101.docx"
+      }
+    ],
+    "empty_groups": [],
+    "document_count": 21
+  },
+  "process": {
+    "steps": [
+      {
+        "step_id": "step_1",
+        "title": null,
+        "content": "1.",
+        "actor": "user",
+        "channel_hint": null,
+        "time_hint": null
+      },
+      {
+        "step_id": "step_2",
+        "title": "Bước 1:",
+        "content": "Bước 1: Công ty quản lý quỹ đầu tư chứng khoán nộp hồ sơ đăng ký chào bán lần đầu chứng chỉ quỹ đóng, quỹ mở, quỹ bất động sản, quỹ hoán đổi danh mục, cổ phiếu công ty đầu tư chứng khoán đại chúng ra công chúng đến UBCKNN.",
+        "actor": "user",
+        "channel_hint": null,
+        "time_hint": null
+      },
+      {
+        "step_id": "step_3",
+        "title": "Bước 2:",
+        "content": "Bước 2: UBCKNN (Bộ phận một cửa) tiếp nhận và kiểm tra danh mục hồ sơ. Trường hợp danh mục chưa đầy đủ, UBCKNN hướng dẫn bổ sung hồ sơ theo quy định.",
+        "actor": "user",
+        "channel_hint": null,
+        "time_hint": null
+      },
+      {
+        "step_id": "step_4",
+        "title": "Bước 3:",
+        "content": "Bước 3: UBCKNN thẩm định tính đầy đủ, hợp lệ của nội dung hồ sơ. Trường hợp hồ sơ chưa đầy đủ, chưa hợp lệ, trong thời hạn 07 ngày làm việc, UBCKNN trả lời bằng văn bản và nêu rõ nội dung yêu cầu sửa đổi, bổ sung.",
+        "actor": "user",
+        "channel_hint": null,
+        "time_hint": "07 ngày làm việc"
+      },
+      {
+        "step_id": "step_5",
+        "title": "Bước 4:",
+        "content": "Bước 4: Trong thời hạn 60 ngày kể từ ngày UBCKNN có văn bản yêu cầu sửa đổi, bổ sung hồ sơ, công ty quản lý quỹ đầu tư chứng khoán hoàn thiện hồ sơ và gửi đến UBCKNN.",
+        "actor": "user",
+        "channel_hint": null,
+        "time_hint": "60 ngày"
+      },
+      {
+        "step_id": "step_6",
+        "title": "Bước 5:",
+        "content": "Bước 5: Trong thời hạn 30 ngày kể từ ngày nhận được hồ sơ đầy đủ, hợp lệ, UBCKNN cấp Giấy chứng nhận đăng ký chào bán chứng chỉ quỹ đóng, quỹ mở, quỹ bất động sản, quỹ hoán đổi danh mục, cổ phiếu công ty đầu tư chứng khoán đại chúng ra công chúng cho công ty quản lý quỹ đầu tư chứng khoán. Trường hợp từ chối, UBCKNN trả lời bằng văn bản và nêu rõ lý do.",
+        "actor": "user",
+        "channel_hint": null,
+        "time_hint": "30 ngày"
+      }
+    ],
+    "step_count": 6,
+    "notes": []
+  },
+  "eligibility": {
+    "conditions": [
+      "1) Tổng giá trị chứng chỉ quỹ/cổ phiếu đăng ký chào bán tối thiểu là 50 tỷ đồng;",
+      "2) Có phương án phát hành và phương án đầu tư vốn thu được từ đợt chào bán chứng chỉ quỹ/cổ phiếu phù hợp với quy định pháp luật;",
+      "3) Phải được giám sát bởi ngân hàng giám sát;",
+      "4) Chứng chỉ quỹ đóng, quỹ hoán đổi danh mục, cổ phiếu công ty đầu tư chứng khoán đại chúng chào bán ra công chúng phải được niêm yết trên Sở giao dịch chứng khoán trong thời hạn 30 ngày kể từ ngày Giấy chứng nhận đăng ký lập quỹ/Giấy phép thành lập và hoạt động công ty đầu tư chứng khoán có hiệu lực;",
+      "5) Công ty quản lý quỹ đầu tư chứng khoán có tối thiểu 02 người điều hành quỹ/công ty có chứng chỉ hành nghề quản lý quỹ; không bị đặt vào tình trạng cảnh báo, kiểm soát, kiểm soát đặc biệt, đình chỉ hoặc chưa thực hiện đầy đủ các hình thức xử phạt, biện pháp khắc phục hậu quả theo quyết định xử phạt vi phạm hành chính trong lĩnh vực chứng khoán và thị trường chứng khoán.",
+      "6) Tên tiếng Việt của quỹ đầu tư chứng khoán, công ty đầu tư chứng khoán phải theo quy định pháp luật về doanh nghiệp và có ít nhất hai thành tố sau đây: (i) Tên loại hình quỹ: Tên loại hình quỹ được viết là “quỹ đầu tư” đối với quỹ đóng, quỹ mở, quỹ thành viên; được viết là “quỹ đầu tư bất động sản” đối với quỹ đầu tư bất động sản; được viết là “quỹ ETF” đối với quỹ hoán đổi danh mục; được viết là “công ty cổ phần đầu tư chứng khoán” đối với công ty đầu tư chứng khoán. (ii) Tên riêng: phù hợp với mục tiêu đầu tư, chiến lược đầu tư của quỹ. Đối với quỹ ETF, tên riêng của quỹ bao gồm tên viết tắt của công ty quản lý quỹ đầu tư chứng khoán và chỉ số tham chiếu.",
+      "7) Phương án chào bán chứng chỉ quỹ đóng/cổ phiếu công ty đầu tư chứng khoán lần đầu phải bao gồm các nội dung tối thiểu theo Mẫu số 99 Phụ lục ban hành kèm theo Nghị định 155/2020/NĐ-CP.",
+      "- Đối với quỹ đầu tư bất động sản hoạt động dưới hình thức quỹ đóng, đáp ứng thêm điều kiện:",
+      "1) Có tối thiểu 02 nhân viên nghiệp vụ có thẻ thẩm định viên về giá theo quy định Luật Giá.",
+      "2) Nhà đầu tư được góp vốn bằng bất động sản trong đợt chào bán lần đầu. Bất động sản được góp vốn phải đáp ứng các điều kiện sau:",
+      "- Đáp ứng quy định tại Điều lệ quỹ, mục tiêu đầu tư, chính sách đầu tư của quỹ;",
+      "- Thuộc sở hữu hợp pháp của nhà đầu tư, không bị hạn chế chuyển nhượng quyền sở hữu hoặc quyền sử dụng của bất động sản dự kiến góp vào quỹ; không phải là tài sản bảo đảm đang được cầm cố, thế chấp, ký quỹ, ký cược, bị phong tỏa hoặc trong các giao dịch tài sản bảo đảm khác theo quy định pháp luật dân sự;",
+      "- Được phép kinh doanh theo quy định pháp luật về kinh doanh bất động sản;",
+      "- Là nhà, công trình xây dựng đã hoàn thành theo quy định của pháp luật về xây dựng;",
+      "- Trường hợp bất động sản đang trong quá trình xây dựng, quỹ đầu tư bất động sản chỉ được nhận góp vốn bằng bất động sản khi đáp ứng các điều kiện sau: có hợp đồng giao dịch với các khách hàng tiềm năng, bảo đảm bất động sản có thể bán được hoặc có thể sử dụng, cho thuê ngay sau khi hoàn tất; dự án xây dựng đãđược thực hiện đúng tiến độ tính đến thời điểm quỹ tham gia góp vốn; tổng giá trị các dự án bất động sản trong quá trình xây dựng mà quỹ đầu tư không vượt quá 10% tổng giá trị tài sản của quỹ; không phải là đất chưa có công trình xây dựng theo quy định của pháp luật về kinh doanh bất động sản và Luật Đất đai.",
+      "- Đối với quỹ hoán đổi danh mục, đáp ứng thêm điều kiện:",
+      "1) Có tối thiểu 02 thành viên lập quỹ đáp ứng điều kiện",
+      "- Là công ty chứng khoán có nghiệp vụ môi giới và tự doanh chứng khoán, ngân hàng lưu ký.",
+      "- Trong 12 tháng gần nhất, trước tháng nộp hồ sơ đăng ký thành lập quỹ hoán đổi danh mục, công ty chứng khoán phải duy trì tỷ lệ vốn khả dụng tối thiểu đạt 220%, hoặc một tỷ lệ khác cao hơn theo yêu cầu của công ty quản lý quỹ đầu tư chứng khoán; ngân hàng lưu ký phải đáp ứng tỷ lệ an toàn vốn theo quy định của pháp luật về ngân hàng.",
+      "- Đã ký hợp đồng lập quỹ hoán đổi danh mục với công ty quản lý quỹ đầu tư chứng khoán.",
+      "- Đáp ứng các điều kiện khác (nếu có) tại hợp đồng lập quỹ.",
+      "- Mỗi nhà đầu tư, thành viên lập quỹ đăng ký mua tối thiểu 01 lô chứng chỉ quỹ. Tổng số lô chứng chỉ quỹ chào bán thành công phải đạt tối thiểu 10 lô, hoặc một số lượng khác theo Điều lệ quỹ, bảo đảm vốn điều lệ của quỹ đạt tối thiểu 50 tỷ đồng.",
+      "2) Chỉ số tham chiếu của quỹ hoán đổi danh mục phải đáp ứng đầy đủ các điều kiện sau:",
+      "- Do Sở giao dịch chứng khoán xây dựng và quản lý;",
+      "- Được xây dựng trên cơ sở các chứng khoán cơ cấu đang niêm yết trên Sở giao dịch chứng khoán;",
+      "- Có mục tiêu cụ thể, rõ ràng, có tính đại diện cao, thể hiện đặc trưng của thị trường hoặc nhóm ngành nghề, lĩnh vực. Nguyên tắc hoạt động, công tác quản lý và duy trì chỉ số phải đảm bảo chỉ số phản ánh hợp lý biến động chung trên thị trường hoặc của nhóm ngành nghề, lĩnh vực, phản ánh chính xác sự biến động giá của chứng khoán cơ cấu, sự thay đổi tỷ trọng chứng khoán cơ cấu và loại chứng khoán cơ cấu;",
+      "- Danh mục chứng khoán cơ cấu của chỉ số tham chiếu phải đa dạng và bảo đảm: có tối thiểu 10 cổ phiếu trong danh mục, tỷ trọng của mỗi cổ phiếu trong danh mục không vượt quá 20% giá trị của chỉ số (đối với chỉ số cổ phiếu); có tối thiểu 05 trái phiếu trong danh mục, tỷ trọng mỗi trái phiếu trong danh mục không vượt quá 20% giá trị của chỉ số (đối với chỉ số trái phiếu), trừ trường hợp trái phiếu Chính phủ, tín phiếu, trái phiếu được Chính phủ bảo lãnh và trái phiếu chính quyền địa phương;",
+      "- Thông tin về chỉ số tham chiếu, mức thay đổi trong ngày của chỉ số tham chiếu phải được công bố hàng ngày trên trang thông tin điện tử của Sở giao dịch chứng khoán và các phương tiện thông tin đại chúng theo quy định của pháp luật về công bố thông tin trên thị trường chứng khoán.",
+      "3) Danh mục chứng khoán cơ cấu trong giao dịch hoán đổi phải đáp ứng đầy đủ các điều kiện sau:",
+      "- Bao gồm tối thiểu 50% số chứng khoán cơ sở hình thành chỉ số tham chiếu (danh mục chứng khoán của chỉ số tham chiếu);",
+      "- Giá trị danh mục chứng khoán cơ cấu không thấp hơn 95% giá trị của danh mục chứng khoán tương ứng của chỉ số tham chiếu."
+    ],
+    "has_conditions": true
+  },
+  "results": {
+    "items": [
+      {
+        "name": "+ Văn bản từ chối (nêu rõ lý do)",
+        "result_code": "KQ.G12.001213",
+        "raw_text": "+ Văn bản từ chối (nêu rõ lý do)"
+      },
+      {
+        "name": "Giấy chứng nhận đăng ký chào bán chứng chỉ quỹ đầu tư chứng khoán/cổ phiếu công ty đầu tư chứng khoán đại chúng ra công chúng",
+        "result_code": "KQ.G12.001111",
+        "raw_text": "Giấy chứng nhận đăng ký chào bán chứng chỉ quỹ đầu tư chứng khoán/cổ phiếu công ty đầu tư chứng khoán đại chúng ra công chúng"
+      }
+    ],
+    "primary_result": {
+      "name": "+ Văn bản từ chối (nêu rõ lý do)",
+      "result_code": "KQ.G12.001213",
+      "raw_text": "+ Văn bản từ chối (nêu rõ lý do)"
+    }
+  },
+  "legal_basis": {
+    "items": [
+      {
+        "title": "Thông tư quy định mức thu, miễn một số khoản phí, lệ phí nhằm hỗ trợ cho doanh nghiệp, người dân",
+        "code": "64/2025/TT-BTC"
+      },
+      {
+        "title": "Nghị quyết số 66.7/2025/NQ-CP của Chính phủ: Quy định cắt giảm, đơn giản hóa thủ tục hành chính dựa trên dữ liệu",
+        "code": "66.7/2025/NQ-CP"
+      },
+      {
+        "title": "Nghị định 155/2020/NĐ-CP",
+        "code": "155/2020/NĐ-CP"
+      },
+      {
+        "title": "Luật 54/2019/QH14",
+        "code": "54/2019/QH14"
+      },
+      {
+        "title": "Thông tư quy định mức thu, chế độ thu, nộp, quản lý và sử dụng lệ phí trong lĩnh vực chứng khoán",
+        "code": "25/2022/TT-BTC"
+      },
+      {
+        "title": "Thông tư 98/2020/TT-BTC",
+        "code": "98/2020/TT-BTC"
+      },
+      {
+        "title": "Nghị quyết về cắt giảm, phân cấp, đơn giản hóa thủ tục hành chính, điều kiện kinh doanh lĩnh vực quốc phòng, nội vụ, tài chính, xây dựng, ngoại giao, tư pháp, ngân hàng.",
+        "code": "Nghị quyết số 24/2026/NQ-CP"
+      }
+    ],
+    "count": 7
+  },
+  "attachments": [
+    {
+      "label": "Mẫu số 91 bản thông tin.docx",
+      "path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/1_009500/M%E1%BA%ABu%20s%E1%BB%91%2091%20b%E1%BA%A3n%20th%C3%B4ng%20tin.docx",
+      "source_section": "Thành phần hồ sơ",
+      "document_name": "1) Danh sách, bản thông tin cá nhân của người điều hành, nhân viên nghiệp vụ thẩm định giá theo Mẫu số 91, Mẫu số 101 Phụ lục ban hành kèm theo Nghị định 155/2020/NĐ-CP và thẻ thẩm định viên về giá;"
+    },
+    {
+      "label": "Mẫu số 101.docx",
+      "path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/1_009500/M%E1%BA%ABu%20s%E1%BB%91%20101.docx",
+      "source_section": "Thành phần hồ sơ",
+      "document_name": "1) Danh sách, bản thông tin cá nhân của người điều hành, nhân viên nghiệp vụ thẩm định giá theo Mẫu số 91, Mẫu số 101 Phụ lục ban hành kèm theo Nghị định 155/2020/NĐ-CP và thẻ thẩm định viên về giá;"
+    },
+    {
+      "label": "315Mẫu số 103.docx",
+      "path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/1_009500/315M%E1%BA%ABu%20s%E1%BB%91%20103.docx",
+      "source_section": "Thành phần hồ sơ",
+      "document_name": "Danh sách nhà đầu tư góp vốn bằng bất động sản theo Mẫu số 103 Phụ lục ban hành kèm theo Nghị định 155/2020/NĐ-CP; kèm theo quyết định góp tài sản vào quỹ đầu tư bất động sản, cam kết tuân thủ các điều kiện về hạn chế chuyển nhượng chứng chỉ quỹ của cấp có thẩm quyền của tổ chức góp vốn;"
+    },
+    {
+      "label": "31Phụ lục 1 mẫu điều lệ.docx",
+      "path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/1_009500/31Ph%E1%BB%A5%20l%E1%BB%A5c%201%20m%E1%BA%ABu%20%C4%91i%E1%BB%81u%20l%E1%BB%87.docx",
+      "source_section": "Thành phần hồ sơ",
+      "document_name": "2) Dự thảo Điều lệ quỹ/công ty đầu tư chứng khoán theo Mẫu Phụ lục I/II ban hành kèm theo Thông tư 98/2020/TT-BTC ngày 16/11/2020 của Bộ Tài chính;"
+    },
+    {
+      "label": "phụ lục III mẫu báo cáo bạch.docx",
+      "path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/1_009500/ph%E1%BB%A5%20l%E1%BB%A5c%20III%20m%E1%BA%ABu%20b%C3%A1o%20c%C3%A1o%20b%E1%BA%A1ch.docx",
+      "source_section": "Thành phần hồ sơ",
+      "document_name": "3) Bản cáo bạch theo Mẫu Phụ lục III/IV ban hành kèm theo Thông tư 98/2020/TT-BTC ngày 16/11/2020 của Bộ Tài chính;"
+    },
+    {
+      "label": "Phụ lục IV báo cáo bạch.docx",
+      "path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/1_009500/Ph%E1%BB%A5%20l%E1%BB%A5c%20IV%20b%C3%A1o%20c%C3%A1o%20b%E1%BA%A1ch.docx",
+      "source_section": "Thành phần hồ sơ",
+      "document_name": "3) Bản cáo bạch theo Mẫu Phụ lục III/IV ban hành kèm theo Thông tư 98/2020/TT-BTC ngày 16/11/2020 của Bộ Tài chính;"
+    },
+    {
+      "label": "Mẫu số 100.docx",
+      "path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/1_009500/M%E1%BA%ABu%20s%E1%BB%91%20100.docx",
+      "source_section": "Thành phần hồ sơ",
+      "document_name": "1) Giấy đăng ký chào bán chứng chỉ quỹ/cổ phiếu công ty đầu tư chứng khoán ra công chúng - Mẫu số 100 Phụ lục ban hành kèm theo Nghị định 155/2020/NĐ-CP ngày 31/12/2020 của Chính phủ;"
+    },
+    {
+      "label": "Phụ lục V.VI.docx",
+      "path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/1_009500/Ph%E1%BB%A5%20l%E1%BB%A5c%20V.VI.docx",
+      "source_section": "Thành phần hồ sơ",
+      "document_name": "4) Bản cáo bạch tóm tắt theo Mẫu Phụ lục V/VI ban hành kèm theo Thông tư 98/2020/TT-BTC ngày 16/11/2020 của Bộ Tài chính;"
+    },
+    {
+      "label": "Mẫu số 101.docx",
+      "path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/1_009500/M%E1%BA%ABu%20s%E1%BB%91%20101.docx",
+      "source_section": "Thành phần hồ sơ",
+      "document_name": "8) Danh sách, bản thông tin cá nhân của người điều hành quỹ theo Mẫu số 91, Mẫu số 101 Phụ lục ban hành kèm theo Nghị định 155/2020/NĐ-CP ngày 16/11/2020 của Bộ Tài chính (đối với quỹ)/Danh sách nhân sự dự kiến, người điều hành công ty kèm theo bản thông tin cá nhân theo Mẫu số 91, Mẫu số 105 Phụ lục ban hành kèm theo Nghị định 155/2020/NĐ-CP và Lý lịch tư pháp của thành viên Hội đồng quản trị, Tổng giám đốc (Giám đốc) được cấp không quá 06 tháng tính đến ngày nộp hồ sơ (đối với công ty đầu tư chứng khoán);; Thành phần hồ sơ trong thủ tục hành chính này được thay thế hoặc cắt giảm hoặc được miễn trừ trong trường hợp UBCKNN khai thác được thông tin từ các cơ sở dữ liệu quốc gia, cơ sở dữ liệu chuyên ngành hoặc tài liệu đó đã được gửi tới Ủy ban Chứng khoán Nhà nước theo quy định về báo cáo và công bố thông tin. Trường hợp không khai thác được thông tin hoặc thông tin khai thác được không đầy đủ, không chính xác thì cá nhân, tổ chức bổ sung thành phần hồ sơ để giải quyết thủ tục hành chính; đồng thời cá nhân, tổ chức thực hiện cập nhật, điều chỉnh thông tin trong các cơ sở dữ liệu theo quy định của pháp luật."
+    },
+    {
+      "label": "Mẫu số 91.docx",
+      "path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/1_009500/M%E1%BA%ABu%20s%E1%BB%91%2091.docx",
+      "source_section": "Thành phần hồ sơ",
+      "document_name": "8) Danh sách, bản thông tin cá nhân của người điều hành quỹ theo Mẫu số 91, Mẫu số 101 Phụ lục ban hành kèm theo Nghị định 155/2020/NĐ-CP ngày 16/11/2020 của Bộ Tài chính (đối với quỹ)/Danh sách nhân sự dự kiến, người điều hành công ty kèm theo bản thông tin cá nhân theo Mẫu số 91, Mẫu số 105 Phụ lục ban hành kèm theo Nghị định 155/2020/NĐ-CP và Lý lịch tư pháp của thành viên Hội đồng quản trị, Tổng giám đốc (Giám đốc) được cấp không quá 06 tháng tính đến ngày nộp hồ sơ (đối với công ty đầu tư chứng khoán);; Thành phần hồ sơ trong thủ tục hành chính này được thay thế hoặc cắt giảm hoặc được miễn trừ trong trường hợp UBCKNN khai thác được thông tin từ các cơ sở dữ liệu quốc gia, cơ sở dữ liệu chuyên ngành hoặc tài liệu đó đã được gửi tới Ủy ban Chứng khoán Nhà nước theo quy định về báo cáo và công bố thông tin. Trường hợp không khai thác được thông tin hoặc thông tin khai thác được không đầy đủ, không chính xác thì cá nhân, tổ chức bổ sung thành phần hồ sơ để giải quyết thủ tục hành chính; đồng thời cá nhân, tổ chức thực hiện cập nhật, điều chỉnh thông tin trong các cơ sở dữ liệu theo quy định của pháp luật."
+    }
+  ],
+  "signals": {
+    "raw_parse_warnings": [],
+    "missing_documents": false,
+    "documents_section_present": true,
+    "documents_declared_empty": false,
+    "documents_only_in_notes": false,
+    "missing_results": false
+  }
+}

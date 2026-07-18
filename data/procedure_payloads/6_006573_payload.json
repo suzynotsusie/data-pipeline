@@ -1,0 +1,235 @@
+{
+  "schema_version": "3.0",
+  "record_type": "public_service_procedure_payload",
+  "id": "procedure-6.006573",
+  "procedure_code": "6.006573",
+  "code": "6.006573",
+  "title": "Phê duyệt điều chỉnh, bổ sung kế hoạch bảo trì công trình hàng hải do Bộ Xây dựng quản lý",
+  "language": "vi",
+  "status": "generated_from_pipeline",
+  "field": "Hàng hải và đường thủy nội địa",
+  "group_key": "dien_luc_nha_o_dat_dai",
+  "workflow_family": null,
+  "subflow": null,
+  "source": {
+    "source_url": "file:///C:/Users/ku060/Downloads/VAIC%20source/data-pipeline/raw_data/6_006573/6_006573_procedure_detail.md",
+    "source_markdown_path": "C:\\Users\\ku060\\Downloads\\VAIC source\\data-pipeline\\raw_data\\6_006573\\6_006573_procedure_detail.md",
+    "normalized_payload_path": "C:\\Users\\ku060\\Downloads\\VAIC source\\data-pipeline\\govease-unified\\data\\normalized_structured\\6_006573_normalized_structured.json",
+    "enriched_payload_path": "C:\\Users\\ku060\\Downloads\\VAIC source\\data-pipeline\\govease-unified\\data\\enriched_structured_priority\\6_006573_enriched_structured.json"
+  },
+  "scope": {
+    "included": "Thủ tục này thuộc nhóm nhà ở, đất đai và điện lực, thường cần kiểm tra hiện trạng hồ sơ tài sản hoặc điều kiện hạ tầng liên quan. Kết quả thường nhận được là Quyết định phê duyệt điều chỉnh kế hoạch bảo trì công trình hàng hải. Thời gian xử lý tham khảo: theo thời hạn của cơ quan xử lý.",
+    "not_included": []
+  },
+  "agency": {
+    "executing_agency": "Cục Hàng hải và Đường thủy Việt Nam, Bộ Xây dựng",
+    "submission_place": null,
+    "receiving_places": []
+  },
+  "target_users": [
+    "Cán bộ",
+    "công chức",
+    "viên chức"
+  ],
+  "submission_methods": [
+    {
+      "code": "IN_PERSON",
+      "label": "Trực tiếp",
+      "processing_time": null,
+      "fee": null,
+      "description": "Không quy định"
+    },
+    {
+      "code": "ONLINE",
+      "label": "Trực tuyến",
+      "processing_time": null,
+      "fee": null,
+      "description": "Không quy định"
+    },
+    {
+      "code": "POSTAL",
+      "label": "Dịch vụ bưu chính",
+      "processing_time": null,
+      "fee": null,
+      "description": "Không quy định"
+    }
+  ],
+  "processing_note": "Nên chuẩn bị trước thông tin thửa đất, tài sản hoặc địa điểm tiếp nhận, rồi chọn kênh nộp phù hợp: Trực tiếp, Trực tuyến, Dịch vụ bưu chính. Hiện có 1 mục giấy tờ cần theo dõi trong checklist.",
+  "documents": {
+    "normally_required": [
+      {
+        "name": "Tờ trình xin chấp thuận điều chỉnh, bổ sung kế hoạch bảo trì công trình hàng hải",
+        "quantity": "1 bản chính, 0 bản sao",
+        "notes": [],
+        "group": "default",
+        "attachment_path": null
+      }
+    ],
+    "conditional": [],
+    "forms": [],
+    "presented": [],
+    "notes": [],
+    "summary": [
+      {
+        "group": "default",
+        "name": "Tờ trình xin chấp thuận điều chỉnh, bổ sung kế hoạch bảo trì công trình hàng hải",
+        "quantity": "1 bản chính, 0 bản sao",
+        "notes": [],
+        "attachment_path": null
+      }
+    ]
+  },
+  "steps": [
+    {
+      "order": 1,
+      "title": "Bước 1",
+      "description": "1. + Trong quá trình lập, thẩm định, phê duyệt thiết kế, dự toán công trình, Cục Hàng hải và Đường thủy Việt Nam được điều chỉnh chuẩn tắc nạo vét, khối lượng, kinh phí dự kiến thực hiện của công trình nhưng không tăng quá 20% kinh phí dự kiến của công trình, không làm tăng tổng kinh phí dự kiến trong kế hoạch bảo trì công trình hàng hải đã được phê duyệt và đảm bảo hiệu quả kinh tế - kỹ thuật, khai thác tối đa hiệu quả tuyến luồng, đồng thời báo cáo Bộ Xây dựng việc điều chỉnh; tổng hợp, trình Bộ Xây dựng phê duyệt điều chỉnh kế hoạch bảo trì công trình hàng hải trước ngày 01 tháng 11 hàng năm;",
+      "example": "01 tháng"
+    },
+    {
+      "order": 2,
+      "title": "Bước 2",
+      "description": "+ Cục Hàng hải và Đường thủy Việt Nam báo cáo Bộ Xây dựng xem xét, chấp thuận điều chỉnh, bổ sung kế hoạch bảo trì công trình hàng hải trong các trường hợp: điều chỉnh tăng quá 20% kinh phí dự kiến của công trình đã được phê duyệt kế hoạch; tăng tổng kinh phí dự kiến thực hiện; thời gian thực hiện; công trình không thực hiện; bổ sung công trình ngoài kế hoạch bảo trì công trình hàng hải đã được phê duyệt.",
+      "example": null
+    }
+  ],
+  "input_fields": [
+    {
+      "field": "property_or_service_need",
+      "label": "Nhu cầu về đất đai, nhà ở hoặc điện lực",
+      "type": "string",
+      "required": true
+    },
+    {
+      "field": "property_location",
+      "label": "Địa điểm tài sản hoặc nơi sử dụng dịch vụ",
+      "type": "string",
+      "required": true
+    },
+    {
+      "field": "submission_channel_preference",
+      "label": "Kênh nộp dự kiến",
+      "type": "enum",
+      "required": false,
+      "options": [
+        "Trực tiếp",
+        "Trực tuyến",
+        "Dịch vụ bưu chính"
+      ]
+    },
+    {
+      "field": "has_current_certificate",
+      "label": "Đã có giấy tờ/tài liệu hiện trạng",
+      "type": "boolean",
+      "required": false
+    }
+  ],
+  "validation_rules": [
+    {
+      "id": "required-1",
+      "severity": "error",
+      "field": "property_or_service_need",
+      "rule": "Trường bắt buộc phải có dữ liệu hợp lệ trước khi nộp.",
+      "message": "Thiếu trường bắt buộc: Nhu cầu về đất đai, nhà ở hoặc điện lực."
+    },
+    {
+      "id": "required-2",
+      "severity": "error",
+      "field": "property_location",
+      "rule": "Trường bắt buộc phải có dữ liệu hợp lệ trước khi nộp.",
+      "message": "Thiếu trường bắt buộc: Địa điểm tài sản hoặc nơi sử dụng dịch vụ."
+    },
+    {
+      "id": "hint-1",
+      "severity": "warning",
+      "field": "general",
+      "rule": "Nên xác định trước kênh nộp hồ sơ để biết có cần bản giấy, bản điện tử hay xuất trình trực tiếp.",
+      "message": "Nên xác định trước kênh nộp hồ sơ để biết có cần bản giấy, bản điện tử hay xuất trình trực tiếp."
+    },
+    {
+      "id": "hint-2",
+      "severity": "warning",
+      "field": "general",
+      "rule": "Nên đối chiếu trước thông tin thửa đất, tài sản hoặc hiện trạng hồ sơ để tránh bị yêu cầu chỉnh sửa.",
+      "message": "Nên đối chiếu trước thông tin thửa đất, tài sản hoặc hiện trạng hồ sơ để tránh bị yêu cầu chỉnh sửa."
+    }
+  ],
+  "common_errors": [],
+  "clarifying_questions": [
+    {
+      "id": "clarify_1",
+      "question": "Bạn đang xử lý nhu cầu nào về đất đai, nhà ở hoặc điện lực?",
+      "purpose": "workflow_intake"
+    },
+    {
+      "id": "clarify_2",
+      "question": "Bạn đã có thông tin thửa đất, địa chỉ tài sản hoặc giấy tờ hiện trạng chưa?",
+      "purpose": "workflow_intake"
+    }
+  ],
+  "legal_basis": [
+    {
+      "title": "THÔNG TƯ QUY ĐỊNH VỀ BẢO TRÌ CÔNG TRÌNH HÀNG HẢI",
+      "code": "19/2022/TT-BGTVT"
+    },
+    {
+      "title": "Nghị định 33/2013/NĐ-CP",
+      "code": "33/2013/NĐ-CP"
+    }
+  ],
+  "legal_bases": [
+    {
+      "title": "THÔNG TƯ QUY ĐỊNH VỀ BẢO TRÌ CÔNG TRÌNH HÀNG HẢI",
+      "code": "19/2022/TT-BGTVT"
+    },
+    {
+      "title": "Nghị định 33/2013/NĐ-CP",
+      "code": "33/2013/NĐ-CP"
+    }
+  ],
+  "faq": [
+    {
+      "question": "Có thể nộp qua kênh nào?",
+      "answer": "Các kênh hiện có: Trực tiếp, Trực tuyến, Dịch vụ bưu chính."
+    },
+    {
+      "question": "Kết quả chính của thủ tục là gì?",
+      "answer": "Kết quả chính được trích xuất là Quyết định phê duyệt điều chỉnh kế hoạch bảo trì công trình hàng hải."
+    }
+  ],
+  "guidance": {
+    "highlight_documents": [
+      {
+        "bucket": "required",
+        "name": "Tờ trình xin chấp thuận điều chỉnh, bổ sung kế hoạch bảo trì công trình hàng hải",
+        "conditions": [],
+        "attachment_path": null
+      }
+    ],
+    "special_cases": [],
+    "common_errors": [],
+    "validation_hints": [
+      "Nên xác định trước kênh nộp hồ sơ để biết có cần bản giấy, bản điện tử hay xuất trình trực tiếp.",
+      "Nên đối chiếu trước thông tin thửa đất, tài sản hoặc hiện trạng hồ sơ để tránh bị yêu cầu chỉnh sửa."
+    ]
+  },
+  "next_steps": {
+    "summary": "Nên chuẩn bị trước thông tin thửa đất, tài sản hoặc địa điểm tiếp nhận, rồi chọn kênh nộp phù hợp: Trực tiếp, Trực tuyến, Dịch vụ bưu chính. Hiện có 1 mục giấy tờ cần theo dõi trong checklist.",
+    "time_badge": null,
+    "result_label": "Quyết định phê duyệt điều chỉnh kế hoạch bảo trì công trình hàng hải",
+    "primary_channel": "in_person",
+    "channels": [
+      "in_person",
+      "online",
+      "postal"
+    ]
+  },
+  "notes": [],
+  "provenance": {
+    "pipeline": "raw->structured->normalized->enriched->ui_api_payload",
+    "normalizer_version": "0.2.0",
+    "enricher_version": "0.2.0",
+    "mapping_notes": "excluded_from_clean_workflow_dataset",
+    "supported_group": true
+  }
+}

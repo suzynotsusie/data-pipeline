@@ -1,0 +1,392 @@
+{
+  "schema_version": "3.0",
+  "record_type": "public_service_procedure_payload",
+  "id": "procedure-1.115132",
+  "procedure_code": "1.115132",
+  "code": "1.115132",
+  "title": "Thủ tục Khai thuế thu nhập doanh nghiệp, thuế thu nhập cá nhân đối với thu nhập từ chuyển nhượng tài sản mã hóa của tổ chức được thành lập theo quy định của pháp luật nước ngoài (tổ chức nước ngoài) và cá nhân (bao gồm cả cá nhân cư trú và cá nhân không cư trú) do Tổ chức cung cấp dịch vụ tài sản mã hóa khấu trừ, khai thay, nộp thay",
+  "language": "vi",
+  "status": "generated_from_pipeline",
+  "field": "Thuế",
+  "group_key": "cu_tru_giay_to",
+  "workflow_family": null,
+  "subflow": null,
+  "source": {
+    "source_url": "file:///C:/Users/ku060/Downloads/VAIC%20source/data-pipeline/raw_data/1_115132/1_115132_procedure_detail.md",
+    "source_markdown_path": "C:\\Users\\ku060\\Downloads\\VAIC source\\data-pipeline\\raw_data\\1_115132\\1_115132_procedure_detail.md",
+    "normalized_payload_path": "C:\\Users\\ku060\\Downloads\\VAIC source\\data-pipeline\\govease-unified\\data\\normalized_structured\\1_115132_normalized_structured.json",
+    "enriched_payload_path": "C:\\Users\\ku060\\Downloads\\VAIC source\\data-pipeline\\govease-unified\\data\\enriched_structured_priority\\1_115132_enriched_structured.json"
+  },
+  "scope": {
+    "included": "Thủ tục này thuộc nhóm cư trú và giấy tờ, thường cần kiểm tra thông tin định danh hoặc hồ sơ giấy tờ chuyên ngành. Kết quả thường nhận được là Hồ sơ gửi đến cơ quan thuế không có kết quả giải quyết. Thời gian xử lý tham khảo: Không phải trả kết quả cho người nộp thuế ngày.",
+    "not_included": []
+  },
+  "agency": {
+    "executing_agency": "Chi cục Thuế Thương mại điện tử - Cục Thuế",
+    "submission_place": "Cơ quan thuế quản lý trực tiếp Tổ chức cung cấp dịch vụ do Cục trưởng Cục Thuế quyết định.",
+    "receiving_places": [
+      "Cơ quan thuế quản lý trực tiếp Tổ chức cung cấp dịch vụ do Cục trưởng Cục Thuế quyết định."
+    ]
+  },
+  "target_users": [
+    "Công dân Việt Nam",
+    "Tổ chức (không bao gồm doanh nghiệp",
+    "HTX)"
+  ],
+  "submission_methods": [
+    {
+      "code": "ONLINE",
+      "label": "Trực tuyến",
+      "processing_time": "Không phải trả kết quả cho người nộp thuế ngày",
+      "fee": null,
+      "description": "Trực tuyến qua Cổng dịch vụ công quốc gia hoặc Ứng dụng định danh quốc gia theo quy định về thực hiện cơ chế một cửa, một cửa liên thông trong giải quyết thủ tục hành chính."
+    }
+  ],
+  "processing_note": "Thời gian xử lý tham chiếu: Không phải trả kết quả cho người nộp thuế ngày. Nên kiểm tra trước giấy tờ định danh, nơi nộp và mẫu biểu liên quan, rồi chọn kênh nộp phù hợp: Trực tuyến. Hiện có khoảng 2 mục giấy tờ cần theo dõi trong checklist.",
+  "documents": {
+    "normally_required": [
+      {
+        "name": "Tờ khai khấu trừ thuế đối với cá nhân cư trú, cá nhân không cư trú và tổ chức nước ngoài có hoạt động chuyển nhượng tài sản mã hóa (Mẫu số 01/TSMH Thông tư số 41/2026/TT-BTC)",
+        "quantity": "1 bản chính, 0 bản sao",
+        "notes": [],
+        "group": "default",
+        "attachment_path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/1_115132/M%E1%BA%ABu%20s%E1%BB%91%2001%20TSMH.docx"
+      },
+      {
+        "name": "Phụ lục Bảng kê chi tiết số thuế đã khấu trừ của cá nhân cư trú, cá nhân không cư trú và tổ chức nước ngoài có hoạt động chuyển nhượng tài sản mã hóa (Mẫu số 01-1/TSMH Thông tư số 41/2026/TT-BTC)",
+        "quantity": "1 bản chính, 0 bản sao",
+        "notes": [],
+        "group": "default",
+        "attachment_path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/1_115132/M%E1%BA%ABu%20s%E1%BB%91%2001-1%20BK%20TSMH.docx"
+      }
+    ],
+    "conditional": [],
+    "forms": [
+      {
+        "name": "Tờ khai khấu trừ thuế đối với cá nhân cư trú, cá nhân không cư trú và tổ chức nước ngoài có hoạt động chuyển nhượng tài sản mã hóa (Mẫu số 01/TSMH Thông tư số 41/2026/TT-BTC)",
+        "attachment_label": "Mẫu số 01 TSMH.docx",
+        "attachment_path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/1_115132/M%E1%BA%ABu%20s%E1%BB%91%2001%20TSMH.docx"
+      },
+      {
+        "name": "Phụ lục Bảng kê chi tiết số thuế đã khấu trừ của cá nhân cư trú, cá nhân không cư trú và tổ chức nước ngoài có hoạt động chuyển nhượng tài sản mã hóa (Mẫu số 01-1/TSMH Thông tư số 41/2026/TT-BTC)",
+        "attachment_label": "Mẫu số 01-1 BK TSMH.docx",
+        "attachment_path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/1_115132/M%E1%BA%ABu%20s%E1%BB%91%2001-1%20BK%20TSMH.docx"
+      }
+    ],
+    "presented": [],
+    "notes": [],
+    "summary": [
+      {
+        "group": "default",
+        "name": "Tờ khai khấu trừ thuế đối với cá nhân cư trú, cá nhân không cư trú và tổ chức nước ngoài có hoạt động chuyển nhượng tài sản mã hóa (Mẫu số 01/TSMH Thông tư số 41/2026/TT-BTC)",
+        "quantity": "1 bản chính, 0 bản sao",
+        "notes": [],
+        "attachment_path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/1_115132/M%E1%BA%ABu%20s%E1%BB%91%2001%20TSMH.docx"
+      },
+      {
+        "group": "default",
+        "name": "Phụ lục Bảng kê chi tiết số thuế đã khấu trừ của cá nhân cư trú, cá nhân không cư trú và tổ chức nước ngoài có hoạt động chuyển nhượng tài sản mã hóa (Mẫu số 01-1/TSMH Thông tư số 41/2026/TT-BTC)",
+        "quantity": "1 bản chính, 0 bản sao",
+        "notes": [],
+        "attachment_path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/1_115132/M%E1%BA%ABu%20s%E1%BB%91%2001-1%20BK%20TSMH.docx"
+      },
+      {
+        "group": null,
+        "name": "Tờ khai khấu trừ thuế đối với cá nhân cư trú, cá nhân không cư trú và tổ chức nước ngoài có hoạt động chuyển nhượng tài sản mã hóa (Mẫu số 01/TSMH Thông tư số 41/2026/TT-BTC)",
+        "quantity": null,
+        "notes": null,
+        "attachment_path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/1_115132/M%E1%BA%ABu%20s%E1%BB%91%2001%20TSMH.docx"
+      },
+      {
+        "group": null,
+        "name": "Phụ lục Bảng kê chi tiết số thuế đã khấu trừ của cá nhân cư trú, cá nhân không cư trú và tổ chức nước ngoài có hoạt động chuyển nhượng tài sản mã hóa (Mẫu số 01-1/TSMH Thông tư số 41/2026/TT-BTC)",
+        "quantity": null,
+        "notes": null,
+        "attachment_path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/1_115132/M%E1%BA%ABu%20s%E1%BB%91%2001-1%20BK%20TSMH.docx"
+      }
+    ]
+  },
+  "steps": [
+    {
+      "order": 1,
+      "title": "Bước 1",
+      "description": "1.",
+      "example": null
+    },
+    {
+      "order": 2,
+      "title": "Bước 1:",
+      "description": "Bước 1: Tổ chức có hoạt động cung cấp dịch vụ tài sản mã hóa theo quy định tại khoản 3 Điều 3 Nghị quyết số 05/2025/NQ-CP chuẩn bị hồ sơ khai thuế và nộp đến cơ quan thuế. Thời gian nộp hồ sơ khai thuế chậm nhất là ngày thứ 20 của tháng tiếp theo tháng phát sinh nghĩa vụ thuế. Tổ chức có hoạt động cung cấp dịch vụ tài sản mã hóa thực hiện truy cập vào Cổng dịch vụ công Quốc gia hoặc Ứng dụng định danh quốc gia theo quy định về thực hiện cơ chế một cửa, một cửa liên thông trong giải quyết thủ tục hành chính để khai tờ khai, ký điện tử và gửi đến cơ quan thuế qua Cổng thông tin điện tử mà người nộp thuế lựa chọn.",
+      "example": null
+    },
+    {
+      "order": 3,
+      "title": "Bước 3",
+      "description": "2.",
+      "example": null
+    },
+    {
+      "order": 4,
+      "title": "Bước 2:",
+      "description": "Bước 2: Cơ quan thuế tiếp nhận, kiểm tra, chấp nhận, giải quyết hồ sơ thông qua hệ thống xử lý dữ liệu điện tử của cơ quan thuế.",
+      "example": null
+    }
+  ],
+  "input_fields": [
+    {
+      "field": "document_request_type",
+      "label": "Loại giấy tờ cần xử lý",
+      "type": "string",
+      "required": true
+    },
+    {
+      "field": "submission_channel_preference",
+      "label": "Kênh nộp dự kiến",
+      "type": "enum",
+      "required": false,
+      "options": [
+        "Trực tuyến"
+      ]
+    },
+    {
+      "field": "identity_document_available",
+      "label": "Có giấy tờ định danh",
+      "type": "boolean",
+      "required": true
+    },
+    {
+      "field": "residency_or_status_known",
+      "label": "Biết rõ nơi cư trú hoặc tình trạng hiện tại",
+      "type": "boolean",
+      "required": false
+    }
+  ],
+  "validation_rules": [
+    {
+      "id": "required-1",
+      "severity": "error",
+      "field": "document_request_type",
+      "rule": "Trường bắt buộc phải có dữ liệu hợp lệ trước khi nộp.",
+      "message": "Thiếu trường bắt buộc: Loại giấy tờ cần xử lý."
+    },
+    {
+      "id": "required-3",
+      "severity": "error",
+      "field": "identity_document_available",
+      "rule": "Trường bắt buộc phải có dữ liệu hợp lệ trước khi nộp.",
+      "message": "Thiếu trường bắt buộc: Có giấy tờ định danh."
+    },
+    {
+      "id": "hint-1",
+      "severity": "warning",
+      "field": "general",
+      "rule": "Nên xác định trước kênh nộp hồ sơ để biết có cần bản giấy, bản điện tử hay xuất trình trực tiếp.",
+      "message": "Nên xác định trước kênh nộp hồ sơ để biết có cần bản giấy, bản điện tử hay xuất trình trực tiếp."
+    },
+    {
+      "id": "hint-2",
+      "severity": "warning",
+      "field": "general",
+      "rule": "Có mẫu biểu đính kèm, nên kiểm tra đúng biểu mẫu trước khi nộp.",
+      "message": "Có mẫu biểu đính kèm, nên kiểm tra đúng biểu mẫu trước khi nộp."
+    },
+    {
+      "id": "hint-3",
+      "severity": "warning",
+      "field": "general",
+      "rule": "Nên đối chiếu trước dữ liệu định danh và nơi cư trú để tránh bị yêu cầu bổ sung.",
+      "message": "Nên đối chiếu trước dữ liệu định danh và nơi cư trú để tránh bị yêu cầu bổ sung."
+    }
+  ],
+  "common_errors": [
+    {
+      "field": "general",
+      "issue": "Thiếu giấy tờ hợp pháp hóa hoặc giấy tờ nhân thân của phía nước ngoài.",
+      "fix": "Nên xác định trước kênh nộp hồ sơ để biết có cần bản giấy, bản điện tử hay xuất trình trực tiếp."
+    },
+    {
+      "field": "general",
+      "issue": "Điền sai mẫu tờ khai hoặc chọn sai biểu mẫu đi kèm.",
+      "fix": "Nên xác định trước kênh nộp hồ sơ để biết có cần bản giấy, bản điện tử hay xuất trình trực tiếp."
+    }
+  ],
+  "clarifying_questions": [
+    {
+      "id": "clarify_1",
+      "question": "Bạn đang xử lý giấy tờ gì và muốn nộp trực tiếp hay trực tuyến?",
+      "purpose": "workflow_intake"
+    },
+    {
+      "id": "clarify_2",
+      "question": "Thông tin định danh và nơi cư trú hiện tại đã sẵn sàng để đối chiếu chưa?",
+      "purpose": "workflow_intake"
+    }
+  ],
+  "legal_basis": [
+    {
+      "title": "Thông tư sửa đổi, bổ sung một số điều của Thông tư số 80/2021/TT-BTC ngày 29 tháng 9 năm 2021 của Bộ Tài chính hướng dẫn thi hành một số điều của Luật Quản lý thuế và Nghị định số 126/2020/NĐ-CP ngày 19 tháng 10 năm 2020 của Chính phủ quy định chi tiết một số điều của Luật Quản lý thuế và sửa đổi, bổ sung một số mẫu biểu của Thông tư số 40/2021/TT-BTC ngày 01 tháng 6 năm 2021 của Bộ Tài chính hướng dẫn thuế giá trị gia tăng, thuế thu nhập cá nhân và quản lý thuế đối với hộ kinh doanh, cá nhân kinh doanh",
+      "code": "94/2025/TT-BTC"
+    },
+    {
+      "title": "Luật Quản lý thuế",
+      "code": "38/2019/QH14"
+    },
+    {
+      "title": "Nghị định 126/2020/NĐ-CP",
+      "code": "126/2020/NĐ-CP"
+    },
+    {
+      "title": "Thông tư số 19/2021/TT-BTC ngày 18/3/2021 của Bộ Tài chính hướng dẫn Giao dịch điện tử trong lĩnh vực thuế",
+      "code": "19/2021/TT-BTC"
+    },
+    {
+      "title": "sửa đổi một số điều của Thông tư 19/2021/TT-BTC ngày 18/3/2021 của Bộ trưởng Bộ Tài chính hướng dẫn giao dịch điện tử trong lĩnh vực thuế",
+      "code": "46/2024/TT-BTC"
+    },
+    {
+      "title": "Nghị định số 91/2022/NĐ-CP sửa đổi bổ sung một số điều của Nghị định số 126/2020/NĐ-CP ngày 19/10/2020 của Chính phủ quy định chi tiết một số điều của Luật Quản lý thuế",
+      "code": "91/2022/NĐ-CP"
+    },
+    {
+      "title": "Nghị định số 373/2025/NĐ-CP của Chính phủ: Sửa đổi, bổ sung một số điều của Nghị định số 126/2020/NĐ-CP ngày 19 tháng 10 năm 2020 của Chính phủ quy định chi tiết một số điều của Luật Quản lý thuế",
+      "code": "373/2025/NĐ-CP"
+    },
+    {
+      "title": "Thông tư 80/2021/TT-BTC",
+      "code": "80/2021/TT-BTC"
+    },
+    {
+      "title": "Luật số 56/2024/QH15 của Quốc hội: Luật sửa đổi, bổ sung một số điều của Luật Chứng khoán, Luật Kế toán, Luật Kiểm toán độc lập, Luật Ngân sách nhà nước, Luật Quản lý, sử dụng tài sản công, Luật Quản lý thuế, Luật Thuế thu nhập cá nhân, Luật Dự trữ quốc gia, Luật Xử lý vi phạm hành chính",
+      "code": "56/2024/QH15"
+    },
+    {
+      "title": "Về việc triển khai thí điểm thị trường tài sản mã hóa tại Việt Nam",
+      "code": "05/2025/NQ-CP"
+    },
+    {
+      "title": "Nghị định số 40/2025/NĐ-CP ngày 26 tháng 2 năm 2025 của Chính phủ quy định chức năng, nhiệm vụ, quyền hạn và cơ cấu tổ chức của Bộ Công Thương",
+      "code": "40/2025/NĐ-CP"
+    },
+    {
+      "title": "Sửa đổi, bổ sung một số điều của Thông tư số 80/2021/TT-BTC ngày 29 tháng 9 năm 2021 của Bộ trưởng Bộ Tài chính hướng dẫn thi hành một số điều của Luật Quản lý thuế và Nghị định số 126/2020/NĐ-CP ngày 19 tháng 10 năm 2020 của Chính phủ quy định chi tiết một số điều của Luật Quản lý thuế",
+      "code": "21/2026/TT-BTC"
+    },
+    {
+      "title": "Hướng dẫn việc kê khai, khấu trừ, nộp thuế, quyết toán thuế trên thị trường tài sản mã hóa",
+      "code": "41/2026/TT-BTC"
+    }
+  ],
+  "legal_bases": [
+    {
+      "title": "Thông tư sửa đổi, bổ sung một số điều của Thông tư số 80/2021/TT-BTC ngày 29 tháng 9 năm 2021 của Bộ Tài chính hướng dẫn thi hành một số điều của Luật Quản lý thuế và Nghị định số 126/2020/NĐ-CP ngày 19 tháng 10 năm 2020 của Chính phủ quy định chi tiết một số điều của Luật Quản lý thuế và sửa đổi, bổ sung một số mẫu biểu của Thông tư số 40/2021/TT-BTC ngày 01 tháng 6 năm 2021 của Bộ Tài chính hướng dẫn thuế giá trị gia tăng, thuế thu nhập cá nhân và quản lý thuế đối với hộ kinh doanh, cá nhân kinh doanh",
+      "code": "94/2025/TT-BTC"
+    },
+    {
+      "title": "Luật Quản lý thuế",
+      "code": "38/2019/QH14"
+    },
+    {
+      "title": "Nghị định 126/2020/NĐ-CP",
+      "code": "126/2020/NĐ-CP"
+    },
+    {
+      "title": "Thông tư số 19/2021/TT-BTC ngày 18/3/2021 của Bộ Tài chính hướng dẫn Giao dịch điện tử trong lĩnh vực thuế",
+      "code": "19/2021/TT-BTC"
+    },
+    {
+      "title": "sửa đổi một số điều của Thông tư 19/2021/TT-BTC ngày 18/3/2021 của Bộ trưởng Bộ Tài chính hướng dẫn giao dịch điện tử trong lĩnh vực thuế",
+      "code": "46/2024/TT-BTC"
+    },
+    {
+      "title": "Nghị định số 91/2022/NĐ-CP sửa đổi bổ sung một số điều của Nghị định số 126/2020/NĐ-CP ngày 19/10/2020 của Chính phủ quy định chi tiết một số điều của Luật Quản lý thuế",
+      "code": "91/2022/NĐ-CP"
+    },
+    {
+      "title": "Nghị định số 373/2025/NĐ-CP của Chính phủ: Sửa đổi, bổ sung một số điều của Nghị định số 126/2020/NĐ-CP ngày 19 tháng 10 năm 2020 của Chính phủ quy định chi tiết một số điều của Luật Quản lý thuế",
+      "code": "373/2025/NĐ-CP"
+    },
+    {
+      "title": "Thông tư 80/2021/TT-BTC",
+      "code": "80/2021/TT-BTC"
+    },
+    {
+      "title": "Luật số 56/2024/QH15 của Quốc hội: Luật sửa đổi, bổ sung một số điều của Luật Chứng khoán, Luật Kế toán, Luật Kiểm toán độc lập, Luật Ngân sách nhà nước, Luật Quản lý, sử dụng tài sản công, Luật Quản lý thuế, Luật Thuế thu nhập cá nhân, Luật Dự trữ quốc gia, Luật Xử lý vi phạm hành chính",
+      "code": "56/2024/QH15"
+    },
+    {
+      "title": "Về việc triển khai thí điểm thị trường tài sản mã hóa tại Việt Nam",
+      "code": "05/2025/NQ-CP"
+    },
+    {
+      "title": "Nghị định số 40/2025/NĐ-CP ngày 26 tháng 2 năm 2025 của Chính phủ quy định chức năng, nhiệm vụ, quyền hạn và cơ cấu tổ chức của Bộ Công Thương",
+      "code": "40/2025/NĐ-CP"
+    },
+    {
+      "title": "Sửa đổi, bổ sung một số điều của Thông tư số 80/2021/TT-BTC ngày 29 tháng 9 năm 2021 của Bộ trưởng Bộ Tài chính hướng dẫn thi hành một số điều của Luật Quản lý thuế và Nghị định số 126/2020/NĐ-CP ngày 19 tháng 10 năm 2020 của Chính phủ quy định chi tiết một số điều của Luật Quản lý thuế",
+      "code": "21/2026/TT-BTC"
+    },
+    {
+      "title": "Hướng dẫn việc kê khai, khấu trừ, nộp thuế, quyết toán thuế trên thị trường tài sản mã hóa",
+      "code": "41/2026/TT-BTC"
+    }
+  ],
+  "faq": [
+    {
+      "question": "Có thể nộp qua kênh nào?",
+      "answer": "Các kênh hiện có: Trực tuyến."
+    },
+    {
+      "question": "Thời gian xử lý tham chiếu là bao lâu?",
+      "answer": "Thời gian xử lý tham chiếu hiện có là Không phải trả kết quả cho người nộp thuế ngày."
+    },
+    {
+      "question": "Kết quả chính của thủ tục là gì?",
+      "answer": "Kết quả chính được trích xuất là Hồ sơ gửi đến cơ quan thuế không có kết quả giải quyết."
+    }
+  ],
+  "guidance": {
+    "highlight_documents": [
+      {
+        "bucket": "required",
+        "name": "Tờ khai khấu trừ thuế đối với cá nhân cư trú, cá nhân không cư trú và tổ chức nước ngoài có hoạt động chuyển nhượng tài sản mã hóa (Mẫu số 01/TSMH Thông tư số 41/2026/TT-BTC)",
+        "conditions": [],
+        "attachment_path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/1_115132/M%E1%BA%ABu%20s%E1%BB%91%2001%20TSMH.docx"
+      },
+      {
+        "bucket": "required",
+        "name": "Phụ lục Bảng kê chi tiết số thuế đã khấu trừ của cá nhân cư trú, cá nhân không cư trú và tổ chức nước ngoài có hoạt động chuyển nhượng tài sản mã hóa (Mẫu số 01-1/TSMH Thông tư số 41/2026/TT-BTC)",
+        "conditions": [],
+        "attachment_path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/1_115132/M%E1%BA%ABu%20s%E1%BB%91%2001-1%20BK%20TSMH.docx"
+      }
+    ],
+    "special_cases": [
+      "Có yếu tố nước ngoài"
+    ],
+    "common_errors": [
+      "Thiếu giấy tờ hợp pháp hóa hoặc giấy tờ nhân thân của phía nước ngoài.",
+      "Điền sai mẫu tờ khai hoặc chọn sai biểu mẫu đi kèm."
+    ],
+    "validation_hints": [
+      "Nên xác định trước kênh nộp hồ sơ để biết có cần bản giấy, bản điện tử hay xuất trình trực tiếp.",
+      "Có mẫu biểu đính kèm, nên kiểm tra đúng biểu mẫu trước khi nộp.",
+      "Nên đối chiếu trước dữ liệu định danh và nơi cư trú để tránh bị yêu cầu bổ sung."
+    ]
+  },
+  "next_steps": {
+    "summary": "Nên kiểm tra trước giấy tờ định danh, nơi nộp và mẫu biểu liên quan, rồi chọn kênh nộp phù hợp: Trực tuyến. Hiện có khoảng 2 mục giấy tờ cần theo dõi trong checklist.",
+    "time_badge": "Không phải trả kết quả cho người nộp thuế ngày",
+    "result_label": "Hồ sơ gửi đến cơ quan thuế không có kết quả giải quyết",
+    "primary_channel": "online",
+    "channels": [
+      "online"
+    ]
+  },
+  "notes": [],
+  "provenance": {
+    "pipeline": "raw->structured->normalized->enriched->ui_api_payload",
+    "normalizer_version": "0.2.0",
+    "enricher_version": "0.2.0",
+    "mapping_notes": "excluded_from_clean_workflow_dataset",
+    "supported_group": true
+  }
+}

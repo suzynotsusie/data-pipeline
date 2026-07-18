@@ -1,0 +1,113 @@
+{
+  "schema_version": "1.0",
+  "enricher_version": "0.2.0",
+  "source": {
+    "procedure_code": "1.005142",
+    "title": "Đăng ký dự thi tốt nghiệp trung học phổ thông",
+    "group_key": "hoc_tap",
+    "workflow_family": "education_study_workflow",
+    "subflow": "tuyen_sinh"
+  },
+  "experience": {
+    "entry_label": "Hỗ trợ giáo dục và học tập",
+    "overview_summary": "Thủ tục này thuộc nhóm giáo dục và học tập, thường liên quan đến hồ sơ đào tạo, văn bằng hoặc điều kiện học tập của người học. Kết quả thường nhận được là kết quả giải quyết theo thủ tục này. Thời gian xử lý tham khảo: Theo hướng dẫn tổ chức kỳ thi tốt nghiệp THPT hằng năm của Bộ Giáo dục và Đào tạo.",
+    "next_step_summary": "Nên rà trước thông tin người học, cơ sở đào tạo và loại kết quả cần xin xác nhận hoặc cấp lại. Có thể chọn kênh nộp phù hợp: Trực tiếp, Trực tuyến, Dịch vụ bưu chính. Hiện có khoảng 8 mục giấy tờ cần theo dõi trong checklist.",
+    "tone": "supportive_public_service"
+  },
+  "guidance": {
+    "highlight_documents": [
+      {
+        "bucket": "required",
+        "name": "",
+        "conditions": [],
+        "attachment_path": "Phiếu Đăng ký dự thi (theo mẫu tại Phụ lục II ban hành kèm theo Thông tư số 24/2024/TT-BGDĐT ngày 24/12/2024 của Bộ trưởng Bộ Giáo dục và Đào tạo ban hành Quy chế thi tốt nghiệp trung học phổ thông) MUPHIUNGKDTHI.docx"
+      },
+      {
+        "bucket": "required",
+        "name": "Ảnh cỡ 4x6 chụp theo kiểu căn cước/căn cước công dân, được chụp trước thời gian nộp hồ sơ không quá 06 tháng",
+        "conditions": [],
+        "attachment_path": null
+      },
+      {
+        "bucket": "required",
+        "name": "Bản sao học bạ trung học phổ thông (đối với thí sinh là người đã hoàn thành Chương trình giáo dục phổ thông/giáo dục thường xuyên nhưng chưa tốt nghiệp trung học phổ thông ở những năm trước thuộc điểm b khoản 1 Điều 19 của Quy chế thi tốt nghiệp trung học phổ thông)",
+        "conditions": [],
+        "attachment_path": null
+      },
+      {
+        "bucket": "required",
+        "name": "Bản sao Bằng tốt nghiệp trung học phổ thông (đối với thí sinh là người đã có Bằng tốt nghiệp trung học phổ thông dự thi để lấy kết quả làm cơ sở đăng ký xét tuyển sinh thuộc điểm c khoản 1 Điều 19 của Quy chế thi tốt nghiệp trung học phổ thông)",
+        "conditions": [],
+        "attachment_path": null
+      },
+      {
+        "bucket": "required",
+        "name": "Bản sao Bằng tốt nghiệp trung cấp, bản sao Sổ học tập hoặc bảng điểm học các môn văn hóa trung học phổ thông theo quy định của Luật Giáo dục và các văn bản hướng dẫn hiện hành của Bộ Giáo dục và Đào tạo (đối với thí sinh là người đã có Bằng tốt nghiệp trung cấp dự thi để lấy kết quả làm cơ sở đăng ký xét tuyển sinh thuộc điểm d khoản 1 Điều 19 của Quy chế thi tốt nghiệp trung học phổ thông)",
+        "conditions": [],
+        "attachment_path": null
+      },
+      {
+        "bucket": "conditional",
+        "name": "Các loại chứng nhận hợp lệ để được hưởng chế độ ưu tiên, khuyến khích (nếu có)",
+        "conditions": [
+          "Các loại chứng nhận hợp lệ để được hưởng chế độ ưu tiên, khuyến khích (nếu có)"
+        ],
+        "attachment_path": null
+      }
+    ],
+    "special_cases": [
+      "Có thể cần xác minh hồ sơ học tập hoặc văn bằng"
+    ],
+    "common_errors": [
+      "Thiếu minh chứng học tập, văn bằng hoặc xác nhận từ cơ sở đào tạo."
+    ],
+    "validation_hints": [
+      "Nên xác định trước kênh nộp hồ sơ để biết có cần bản giấy, bản điện tử hay xuất trình trực tiếp.",
+      "Có mẫu biểu đính kèm, nên kiểm tra đúng biểu mẫu trước khi nộp.",
+      "Nên rà lại thông tin người học, cơ sở đào tạo và loại xác nhận hoặc văn bằng cần xin."
+    ]
+  },
+  "intake": {
+    "candidate_input_fields": [
+      {
+        "field_id": "learner_full_name",
+        "label": "Tên người học",
+        "field_type": "text",
+        "required": true
+      },
+      {
+        "field_id": "education_record_type",
+        "label": "Loại hồ sơ học tập cần xử lý",
+        "field_type": "text",
+        "required": true
+      },
+      {
+        "field_id": "education_institution",
+        "label": "Cơ sở đào tạo liên quan",
+        "field_type": "text",
+        "required": false
+      },
+      {
+        "field_id": "submission_channel_preference",
+        "label": "Kênh nộp dự kiến",
+        "field_type": "enum",
+        "required": false
+      }
+    ],
+    "suggested_clarifying_questions": [
+      "Bạn đang cần xử lý hồ sơ học tập, văn bằng hay xác nhận nào?",
+      "Người học và cơ sở đào tạo liên quan đã xác định rõ chưa?"
+    ]
+  },
+  "ui_hints": {
+    "primary_channel": "in_person",
+    "result_label": null,
+    "time_badge": "Theo hướng dẫn tổ chức kỳ thi tốt nghiệp THPT hằng năm của Bộ Giáo dục và Đào tạo",
+    "document_count_badge": 8
+  },
+  "provenance": {
+    "generator": "workflow_domain_enricher",
+    "derivation_mode": "rule_based_semantic_enrichment",
+    "supported_group": true
+  }
+}

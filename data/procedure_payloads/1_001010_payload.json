@@ -1,0 +1,422 @@
+{
+  "schema_version": "3.0",
+  "record_type": "public_service_procedure_payload",
+  "id": "procedure-1.001010",
+  "procedure_code": "1.001010",
+  "code": "1.001010",
+  "title": "Cấp thẻ thường trú cho người nước ngoài tại Việt Nam (thực hiện tại cấp tinh)",
+  "language": "vi",
+  "status": "generated_from_pipeline",
+  "field": "Quản lý xuất nhập cảnh",
+  "group_key": "cu_tru_giay_to",
+  "workflow_family": null,
+  "subflow": null,
+  "source": {
+    "source_url": "file:///C:/Users/ku060/Downloads/VAIC%20source/data-pipeline/raw_data/1_001010/1_001010_procedure_detail.md",
+    "source_markdown_path": "C:\\Users\\ku060\\Downloads\\VAIC source\\data-pipeline\\raw_data\\1_001010\\1_001010_procedure_detail.md",
+    "normalized_payload_path": "C:\\Users\\ku060\\Downloads\\VAIC source\\data-pipeline\\govease-unified\\data\\normalized_structured\\1_001010_normalized_structured.json",
+    "enriched_payload_path": "C:\\Users\\ku060\\Downloads\\VAIC source\\data-pipeline\\govease-unified\\data\\enriched_structured_priority\\1_001010_enriched_structured.json"
+  },
+  "scope": {
+    "included": "Thủ tục này thuộc nhóm cư trú và giấy tờ, thường cần kiểm tra thông tin định danh hoặc hồ sơ giấy tờ chuyên ngành. Kết quả thường nhận được là Thẻ thường trú. Thời gian xử lý tham khảo: 6 ngày.",
+    "not_included": []
+  },
+  "agency": {
+    "executing_agency": "Cục quản lý xuất nhập cảnh",
+    "submission_place": "Phòng Quản lý xuất, nhập cảnh, Công an tỉnh, thành phố trực thuộc Trung ương.",
+    "receiving_places": [
+      "Phòng Quản lý xuất, nhập cảnh, Công an tỉnh, thành phố trực thuộc Trung ương."
+    ]
+  },
+  "target_users": [
+    "Người nước ngoài"
+  ],
+  "submission_methods": [
+    {
+      "code": "IN_PERSON",
+      "label": "Trực tiếp",
+      "processing_time": "6 ngày",
+      "fee": null,
+      "description": null
+    }
+  ],
+  "processing_note": "Thời gian xử lý tham chiếu: 6 ngày. Nên kiểm tra trước giấy tờ định danh, nơi nộp và mẫu biểu liên quan, rồi chọn kênh nộp phù hợp: Trực tiếp. Hiện có khoảng 6 mục giấy tờ cần theo dõi trong checklist.",
+  "documents": {
+    "normally_required": [
+      {
+        "name": "Lý lịch tư pháp do cơ quan có thẩm quyền của nước mà người đó là công dân cấp;",
+        "quantity": "1 bản chính, 0 bản sao",
+        "notes": [],
+        "group": "default",
+        "attachment_path": null
+      },
+      {
+        "name": "Bản sao hộ chiếu có chứng thực;",
+        "quantity": "0 bản chính, 1 bản sao",
+        "notes": [],
+        "group": "default",
+        "attachment_path": null
+      },
+      {
+        "name": "Đơn xin thường trú;",
+        "quantity": "1 bản chính, 0 bản sao",
+        "notes": [],
+        "group": "default",
+        "attachment_path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/1_001010/M%E1%BA%ABu-NA12%2C-%C4%90%C6%A1n-xin-th%C6%B0%E1%BB%9Dng-tr%C3%BA-cho-ng%C6%B0%E1%BB%9Di-n%C6%B0%E1%BB%9Bc-ngo%C3%A0i.-doc.doc"
+      },
+      {
+        "name": "Giấy bảo lãnh cho người nước ngoài thường trú tại Việt Nam (NA11) ban hành kèm theo Thông tư số 22/2023/TT-BCA ngày 30/6/2023 của Bộ Công an.",
+        "quantity": "1 bản chính, 0 bản sao",
+        "notes": [],
+        "group": "default",
+        "attachment_path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/1_001010/NA11.doc"
+      },
+      {
+        "name": "Giấy tờ chứng minh đủ điều kiện được xét cho thường trú quy định tại Điều 40 của Luật Nhập cảnh, xuất cảnh, quá cảnh, cư trú của người nước ngoài tại Việt Nam (Luật số 47/2014/QH13, ngày 16/6/2014);",
+        "quantity": "1 bản chính, 0 bản sao",
+        "notes": [],
+        "group": "default",
+        "attachment_path": null
+      },
+      {
+        "name": "Công hàm của cơ quan đại diện của nước mà người đó là công dân đề nghị Việt Nam giải quyết cho người đó thường trú;",
+        "quantity": "1 bản chính, 0 bản sao",
+        "notes": [],
+        "group": "default",
+        "attachment_path": null
+      }
+    ],
+    "conditional": [],
+    "forms": [
+      {
+        "name": "Đơn xin thường trú;",
+        "attachment_label": "Mẫu-NA12,-Đơn-xin-thường-trú-cho-người-nước-ngoài.-doc.doc",
+        "attachment_path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/1_001010/M%E1%BA%ABu-NA12%2C-%C4%90%C6%A1n-xin-th%C6%B0%E1%BB%9Dng-tr%C3%BA-cho-ng%C6%B0%E1%BB%9Di-n%C6%B0%E1%BB%9Bc-ngo%C3%A0i.-doc.doc"
+      },
+      {
+        "name": "Giấy bảo lãnh cho người nước ngoài thường trú tại Việt Nam (NA11) ban hành kèm theo Thông tư số 22/2023/TT-BCA ngày 30/6/2023 của Bộ Công an.",
+        "attachment_label": "NA11.doc",
+        "attachment_path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/1_001010/NA11.doc"
+      }
+    ],
+    "presented": [],
+    "notes": [],
+    "summary": [
+      {
+        "group": "default",
+        "name": "Lý lịch tư pháp do cơ quan có thẩm quyền của nước mà người đó là công dân cấp;",
+        "quantity": "1 bản chính, 0 bản sao",
+        "notes": [],
+        "attachment_path": null
+      },
+      {
+        "group": "default",
+        "name": "Bản sao hộ chiếu có chứng thực;",
+        "quantity": "0 bản chính, 1 bản sao",
+        "notes": [],
+        "attachment_path": null
+      },
+      {
+        "group": "default",
+        "name": "Đơn xin thường trú;",
+        "quantity": "1 bản chính, 0 bản sao",
+        "notes": [],
+        "attachment_path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/1_001010/M%E1%BA%ABu-NA12%2C-%C4%90%C6%A1n-xin-th%C6%B0%E1%BB%9Dng-tr%C3%BA-cho-ng%C6%B0%E1%BB%9Di-n%C6%B0%E1%BB%9Bc-ngo%C3%A0i.-doc.doc"
+      },
+      {
+        "group": "default",
+        "name": "Giấy bảo lãnh cho người nước ngoài thường trú tại Việt Nam (NA11) ban hành kèm theo Thông tư số 22/2023/TT-BCA ngày 30/6/2023 của Bộ Công an.",
+        "quantity": "1 bản chính, 0 bản sao",
+        "notes": [],
+        "attachment_path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/1_001010/NA11.doc"
+      },
+      {
+        "group": "default",
+        "name": "Giấy tờ chứng minh đủ điều kiện được xét cho thường trú quy định tại Điều 40 của Luật Nhập cảnh, xuất cảnh, quá cảnh, cư trú của người nước ngoài tại Việt Nam (Luật số 47/2014/QH13, ngày 16/6/2014);",
+        "quantity": "1 bản chính, 0 bản sao",
+        "notes": [],
+        "attachment_path": null
+      },
+      {
+        "group": "default",
+        "name": "Công hàm của cơ quan đại diện của nước mà người đó là công dân đề nghị Việt Nam giải quyết cho người đó thường trú;",
+        "quantity": "1 bản chính, 0 bản sao",
+        "notes": [],
+        "attachment_path": null
+      },
+      {
+        "group": null,
+        "name": "Đơn xin thường trú;",
+        "quantity": null,
+        "notes": null,
+        "attachment_path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/1_001010/M%E1%BA%ABu-NA12%2C-%C4%90%C6%A1n-xin-th%C6%B0%E1%BB%9Dng-tr%C3%BA-cho-ng%C6%B0%E1%BB%9Di-n%C6%B0%E1%BB%9Bc-ngo%C3%A0i.-doc.doc"
+      },
+      {
+        "group": null,
+        "name": "Giấy bảo lãnh cho người nước ngoài thường trú tại Việt Nam (NA11) ban hành kèm theo Thông tư số 22/2023/TT-BCA ngày 30/6/2023 của Bộ Công an.",
+        "quantity": null,
+        "notes": null,
+        "attachment_path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/1_001010/NA11.doc"
+      }
+    ]
+  },
+  "steps": [
+    {
+      "order": 1,
+      "title": "Bước 1",
+      "description": "1.",
+      "example": null
+    },
+    {
+      "order": 2,
+      "title": "Bước 1:",
+      "description": "Bước 1: Chuẩn bị hồ sơ theo quy định của pháp luật",
+      "example": null
+    },
+    {
+      "order": 3,
+      "title": "Bước 2:",
+      "description": "Bước 2: Nộp hồ sơ tại Cơ quan Quản lý xuất nhập cảnh Công an cấp tỉnh. * Cán bộ tiếp nhận hồ sơ kiểm tra tính pháp lý và nội dung hồ sơ: + Nếu hồ sơ đầy đủ, hợp lệ thì tiếp nhận hồ sơ, in và cấp giấy hẹn trả kết quả cho người nộp hồ sơ; yêu cầu nộp phí cho cán bộ thu phí. Cán bộ thu phí thu tiền, giao biên lai thu tiền cho người nộp hồ sơ + Nếu hồ sơ hồ sơ thiếu hoặc không hợp lệ thì cán bộ tiếp nhận hồ sơ hướng dẫn để người nộp hồ sơ hoàn chỉnh * Thời gian tiếp nhận hồ sơ: Từ thứ 2 đến sáng thứ 7 hàng tuần (trừ ngày Tết, ngày lễ)",
+      "example": null
+    },
+    {
+      "order": 4,
+      "title": "Bước 3:",
+      "description": "Bước 3: Cục Quản lý xuất nhập cảnh thông báo bằng văn bản kết quả giải quyết cho người xin thường trú và Công an cấp tỉnh nơi người nước ngoài xin thường trú. Nếu được chấp nhận, trong thời hạn 05 ngày làm việc kể từ ngày nhận được thông báo của Cục Quản lý xuất nhập cảnh, Công an cấp tỉnh nơi người nước ngoài xin thường trú thông báo người nước ngoài được giải quyết cho thường trú",
+      "example": "05 ngày làm việc"
+    },
+    {
+      "order": 5,
+      "title": "Bước 4:",
+      "description": "Bước 4: Trong thời hạn 03 tháng kể từ khi nhận được thông báo giải quyết cho thường trú, người nước ngoài phải đến Cơ quan quản lý xuất nhập cảnh Công an cấp tỉnh nơi xin thường trú để nhận thẻ thường trú: Người nhận đưa giấy biên nhận và nộp lệ phí theo quy định. Cán bộ trả kết quả kiểm tra và yêu cầu ký nhận, trả thẻ thường trú cho người đến nhận kết quả * Thời gian trả kết quả: Từ thứ 2 đến sáng thứ 7 hàng tuần (trừ ngày Tết, ngày lễ)",
+      "example": "03 tháng"
+    }
+  ],
+  "input_fields": [
+    {
+      "field": "document_request_type",
+      "label": "Loại giấy tờ cần xử lý",
+      "type": "string",
+      "required": true
+    },
+    {
+      "field": "submission_channel_preference",
+      "label": "Kênh nộp dự kiến",
+      "type": "enum",
+      "required": false,
+      "options": [
+        "Trực tiếp"
+      ]
+    },
+    {
+      "field": "identity_document_available",
+      "label": "Có giấy tờ định danh",
+      "type": "boolean",
+      "required": true
+    },
+    {
+      "field": "residency_or_status_known",
+      "label": "Biết rõ nơi cư trú hoặc tình trạng hiện tại",
+      "type": "boolean",
+      "required": false
+    }
+  ],
+  "validation_rules": [
+    {
+      "id": "required-1",
+      "severity": "error",
+      "field": "document_request_type",
+      "rule": "Trường bắt buộc phải có dữ liệu hợp lệ trước khi nộp.",
+      "message": "Thiếu trường bắt buộc: Loại giấy tờ cần xử lý."
+    },
+    {
+      "id": "required-3",
+      "severity": "error",
+      "field": "identity_document_available",
+      "rule": "Trường bắt buộc phải có dữ liệu hợp lệ trước khi nộp.",
+      "message": "Thiếu trường bắt buộc: Có giấy tờ định danh."
+    },
+    {
+      "id": "hint-1",
+      "severity": "warning",
+      "field": "general",
+      "rule": "Nên xác định trước kênh nộp hồ sơ để biết có cần bản giấy, bản điện tử hay xuất trình trực tiếp.",
+      "message": "Nên xác định trước kênh nộp hồ sơ để biết có cần bản giấy, bản điện tử hay xuất trình trực tiếp."
+    },
+    {
+      "id": "hint-2",
+      "severity": "warning",
+      "field": "general",
+      "rule": "Có mẫu biểu đính kèm, nên kiểm tra đúng biểu mẫu trước khi nộp.",
+      "message": "Có mẫu biểu đính kèm, nên kiểm tra đúng biểu mẫu trước khi nộp."
+    },
+    {
+      "id": "hint-3",
+      "severity": "warning",
+      "field": "general",
+      "rule": "Nên đối chiếu trước dữ liệu định danh và nơi cư trú để tránh bị yêu cầu bổ sung.",
+      "message": "Nên đối chiếu trước dữ liệu định danh và nơi cư trú để tránh bị yêu cầu bổ sung."
+    }
+  ],
+  "common_errors": [
+    {
+      "field": "general",
+      "issue": "Thiếu giấy tờ hợp pháp hóa hoặc giấy tờ nhân thân của phía nước ngoài.",
+      "fix": "Nên xác định trước kênh nộp hồ sơ để biết có cần bản giấy, bản điện tử hay xuất trình trực tiếp."
+    }
+  ],
+  "clarifying_questions": [
+    {
+      "id": "clarify_1",
+      "question": "Bạn đang xử lý giấy tờ gì và muốn nộp trực tiếp hay trực tuyến?",
+      "purpose": "workflow_intake"
+    },
+    {
+      "id": "clarify_2",
+      "question": "Thông tin định danh và nơi cư trú hiện tại đã sẵn sàng để đối chiếu chưa?",
+      "purpose": "workflow_intake"
+    }
+  ],
+  "legal_basis": [
+    {
+      "title": "Nghị quyết số 66.7/2025/NQ-CP của Chính phủ: Quy định cắt giảm, đơn giản hóa thủ tục hành chính dựa trên dữ liệu",
+      "code": "66.7/2025/NQ-CP"
+    },
+    {
+      "title": "Quy định mẫu giấy tờ liên quan đến việc nhập cảnh, xuất cảnh, cư trú của người nước ngoài tại Việt Nam",
+      "code": "04/2015/TT-BCA"
+    },
+    {
+      "title": "Nghị định số 327/2025/NĐ-CP ngày 18/12/2025 của Chính phủ quy định về chính sách nhập cảnh, xuất cảnh, cư trú đối với người nước ngoài tại Trung tâm tài chính quốc tế tại Việt Nam",
+      "code": "327/2025/NĐ-CP"
+    },
+    {
+      "title": "Thông tư 31/2015/TT-BCA",
+      "code": "31/2015/TT-BCA"
+    },
+    {
+      "title": "Nhập cảnh, xuất cảnh, quá cảnh, cư trú của người nước ngoài tại Việt Nam",
+      "code": "47/2014/QH13"
+    },
+    {
+      "title": "Luật Xuất cảnh, nhập cảnh của công dân Việt Nam và Luật Nhập cảnh, xuất cảnh, quá cảnh, cư trú của người nước ngoài tại Việt Nam sửa đổi 2023",
+      "code": "23/2023/QH15"
+    },
+    {
+      "title": "Nghị định 118/2015/NĐ-CP",
+      "code": "118/2015/NĐ-CP"
+    }
+  ],
+  "legal_bases": [
+    {
+      "title": "Nghị quyết số 66.7/2025/NQ-CP của Chính phủ: Quy định cắt giảm, đơn giản hóa thủ tục hành chính dựa trên dữ liệu",
+      "code": "66.7/2025/NQ-CP"
+    },
+    {
+      "title": "Quy định mẫu giấy tờ liên quan đến việc nhập cảnh, xuất cảnh, cư trú của người nước ngoài tại Việt Nam",
+      "code": "04/2015/TT-BCA"
+    },
+    {
+      "title": "Nghị định số 327/2025/NĐ-CP ngày 18/12/2025 của Chính phủ quy định về chính sách nhập cảnh, xuất cảnh, cư trú đối với người nước ngoài tại Trung tâm tài chính quốc tế tại Việt Nam",
+      "code": "327/2025/NĐ-CP"
+    },
+    {
+      "title": "Thông tư 31/2015/TT-BCA",
+      "code": "31/2015/TT-BCA"
+    },
+    {
+      "title": "Nhập cảnh, xuất cảnh, quá cảnh, cư trú của người nước ngoài tại Việt Nam",
+      "code": "47/2014/QH13"
+    },
+    {
+      "title": "Luật Xuất cảnh, nhập cảnh của công dân Việt Nam và Luật Nhập cảnh, xuất cảnh, quá cảnh, cư trú của người nước ngoài tại Việt Nam sửa đổi 2023",
+      "code": "23/2023/QH15"
+    },
+    {
+      "title": "Nghị định 118/2015/NĐ-CP",
+      "code": "118/2015/NĐ-CP"
+    }
+  ],
+  "faq": [
+    {
+      "question": "Có thể nộp qua kênh nào?",
+      "answer": "Các kênh hiện có: Trực tiếp."
+    },
+    {
+      "question": "Thời gian xử lý tham chiếu là bao lâu?",
+      "answer": "Thời gian xử lý tham chiếu hiện có là 6 ngày."
+    },
+    {
+      "question": "Kết quả chính của thủ tục là gì?",
+      "answer": "Kết quả chính được trích xuất là Thẻ thường trú."
+    }
+  ],
+  "guidance": {
+    "highlight_documents": [
+      {
+        "bucket": "required",
+        "name": "Lý lịch tư pháp do cơ quan có thẩm quyền của nước mà người đó là công dân cấp;",
+        "conditions": [],
+        "attachment_path": null
+      },
+      {
+        "bucket": "required",
+        "name": "Bản sao hộ chiếu có chứng thực;",
+        "conditions": [],
+        "attachment_path": null
+      },
+      {
+        "bucket": "required",
+        "name": "Đơn xin thường trú;",
+        "conditions": [],
+        "attachment_path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/1_001010/M%E1%BA%ABu-NA12%2C-%C4%90%C6%A1n-xin-th%C6%B0%E1%BB%9Dng-tr%C3%BA-cho-ng%C6%B0%E1%BB%9Di-n%C6%B0%E1%BB%9Bc-ngo%C3%A0i.-doc.doc"
+      },
+      {
+        "bucket": "required",
+        "name": "Giấy bảo lãnh cho người nước ngoài thường trú tại Việt Nam (NA11) ban hành kèm theo Thông tư số 22/2023/TT-BCA ngày 30/6/2023 của Bộ Công an.",
+        "conditions": [],
+        "attachment_path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/1_001010/NA11.doc"
+      },
+      {
+        "bucket": "required",
+        "name": "Giấy tờ chứng minh đủ điều kiện được xét cho thường trú quy định tại Điều 40 của Luật Nhập cảnh, xuất cảnh, quá cảnh, cư trú của người nước ngoài tại Việt Nam (Luật số 47/2014/QH13, ngày 16/6/2014);",
+        "conditions": [],
+        "attachment_path": null
+      },
+      {
+        "bucket": "required",
+        "name": "Công hàm của cơ quan đại diện của nước mà người đó là công dân đề nghị Việt Nam giải quyết cho người đó thường trú;",
+        "conditions": [],
+        "attachment_path": null
+      }
+    ],
+    "special_cases": [
+      "Có yếu tố nước ngoài"
+    ],
+    "common_errors": [
+      "Thiếu giấy tờ hợp pháp hóa hoặc giấy tờ nhân thân của phía nước ngoài."
+    ],
+    "validation_hints": [
+      "Nên xác định trước kênh nộp hồ sơ để biết có cần bản giấy, bản điện tử hay xuất trình trực tiếp.",
+      "Có mẫu biểu đính kèm, nên kiểm tra đúng biểu mẫu trước khi nộp.",
+      "Nên đối chiếu trước dữ liệu định danh và nơi cư trú để tránh bị yêu cầu bổ sung."
+    ]
+  },
+  "next_steps": {
+    "summary": "Nên kiểm tra trước giấy tờ định danh, nơi nộp và mẫu biểu liên quan, rồi chọn kênh nộp phù hợp: Trực tiếp. Hiện có khoảng 6 mục giấy tờ cần theo dõi trong checklist.",
+    "time_badge": "6 ngày",
+    "result_label": "Thẻ thường trú",
+    "primary_channel": "in_person",
+    "channels": [
+      "in_person"
+    ]
+  },
+  "notes": [],
+  "provenance": {
+    "pipeline": "raw->structured->normalized->enriched->ui_api_payload",
+    "normalizer_version": "0.2.0",
+    "enricher_version": "0.2.0",
+    "mapping_notes": "excluded_from_clean_workflow_dataset",
+    "supported_group": true
+  }
+}

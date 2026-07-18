@@ -1,0 +1,475 @@
+{
+  "schema_version": "3.0",
+  "record_type": "public_service_procedure_payload",
+  "id": "procedure-1.001632",
+  "procedure_code": "1.001632",
+  "code": "1.001632",
+  "title": "Giải quyết hưởng chế độ TNLĐ, BNN đối với trường hợp bị TNLĐ lần đầu",
+  "language": "vi",
+  "status": "generated_from_pipeline",
+  "field": "Thực hiện chính sách BHXH",
+  "group_key": "suc_khoe_y_te",
+  "workflow_family": "healthcare_medical_policy_workflow",
+  "subflow": "chinh_sach_y_te",
+  "source": {
+    "source_url": "file:///C:/Users/ku060/Downloads/VAIC%20source/data-pipeline/raw_data/1_001632/1_001632_procedure_detail.md",
+    "source_markdown_path": "C:\\Users\\ku060\\Downloads\\VAIC source\\data-pipeline\\raw_data\\1_001632\\1_001632_procedure_detail.md",
+    "normalized_payload_path": "C:\\Users\\ku060\\Downloads\\VAIC source\\data-pipeline\\govease-unified\\data\\normalized_structured\\1_001632_normalized_structured.json",
+    "enriched_payload_path": "C:\\Users\\ku060\\Downloads\\VAIC source\\data-pipeline\\govease-unified\\data\\enriched_structured_priority\\1_001632_enriched_structured.json"
+  },
+  "scope": {
+    "included": "Thủ tục này thuộc nhóm y tế, thường cần đối chiếu thông tin người bệnh, đơn vị tiếp nhận hoặc quyền lợi chuyên ngành. Kết quả thường nhận được là Bản quá trình đóng BHXH (Mẫu 04-HSB). Thời gian xử lý tham khảo: 6 ngày làm việc.",
+    "not_included": []
+  },
+  "agency": {
+    "executing_agency": "Bảo hiểm xã hội cấp Tỉnh, Bảo hiểm xã hội cấp huyện",
+    "submission_place": null,
+    "receiving_places": []
+  },
+  "target_users": [
+    "Doanh nghiệp có vốn đầu tư nước ngoài",
+    "Tổ chức (không bao gồm doanh nghiệp",
+    "HTX)",
+    "Công dân Việt Nam",
+    "Doanh nghiệp",
+    "Tổ chức nước ngoài",
+    "Hợp tác xã",
+    "Cán bộ",
+    "công chức",
+    "viên chức"
+  ],
+  "submission_methods": [
+    {
+      "code": "ONLINE",
+      "label": "Trực tuyến",
+      "processing_time": "6 ngày làm việc",
+      "fee": null,
+      "description": null
+    },
+    {
+      "code": "POSTAL",
+      "label": "Dịch vụ bưu chính",
+      "processing_time": "6 ngày làm việc",
+      "fee": null,
+      "description": null
+    },
+    {
+      "code": "IN_PERSON",
+      "label": "Trực tiếp",
+      "processing_time": "6 ngày làm việc",
+      "fee": null,
+      "description": null
+    }
+  ],
+  "processing_note": "Thời gian xử lý tham chiếu: 6 ngày làm việc. Nên xác định rõ đối tượng tham gia, quyền lợi hoặc nhu cầu điều chỉnh hồ sơ y tế trước khi nộp. Có thể chọn kênh nộp phù hợp: Trực tiếp, Trực tuyến, Dịch vụ bưu chính. Hiện có khoảng 6 mục giấy tờ cần theo dõi trong checklist.",
+  "documents": {
+    "normally_required": [
+      {
+        "name": "1. Bản chính Văn bản đề nghị giải quyết chế độ TNLĐ, BNN (mẫu 05A-HSB) của đơn vị SDLĐ; bản chính Đơn đề nghị về việc hưởng chế độ BNN (mẫu 01) ban hành kèm theo Nghị định số 88/2020/NĐ-CP",
+        "quantity": "1 bản chính, 0 bản sao",
+        "notes": [],
+        "group": "Trường hợp không quy định là bản chính thì có thể nộp bản sao hợp lệ. Trường hợp nộp hồ sơ trực tuyến: thành phần hồ sơ quy định là bản sao nhưng NLĐ có thể nộp bản chính điện tử",
+        "attachment_path": null
+      }
+    ],
+    "conditional": [
+      {
+        "condition": "6. Hóa đơn, chứng từ thu phí giám định; bảng kê các nội dung giám định của cơ sở thực hiện GĐYK (trường hợp thanh toán phí GĐYK).",
+        "document": "6. Hóa đơn, chứng từ thu phí giám định; bảng kê các nội dung giám định của cơ sở thực hiện GĐYK (trường hợp thanh toán phí GĐYK).",
+        "quantity": "1 bản chính, 0 bản sao",
+        "notes": [],
+        "attachment_path": null
+      },
+      {
+        "condition": "4. Trường hợp bị BNN mà không điều trị nội trú thì có thêm Giấy khám BNN.",
+        "document": "4. Trường hợp bị BNN mà không điều trị nội trú thì có thêm Giấy khám BNN.",
+        "quantity": "1 bản chính, 0 bản sao",
+        "notes": [],
+        "attachment_path": null
+      },
+      {
+        "condition": "3. Biên bản giám định mức suy giảm KNLĐ của Hội đồng GĐYK hoặc bản sao Giấy chứng nhận bị nhiễm HIV/AIDS do tai nạn rủi ro nghề nghiệp trong trường hợp bị nhiễm HIV/AIDS do tai nạn rủi ro nghề nghiệp (tương đương mức suy giảm KNLĐ 61%), nếu GĐYK mà tỷ lệ suy giảm KNLĐ cao hơn 61% thì hồ sơ hưởng chế độ BNN trong trường hợp này phải có Biên bản GĐYK.",
+        "document": "3. Biên bản giám định mức suy giảm KNLĐ của Hội đồng GĐYK hoặc bản sao Giấy chứng nhận bị nhiễm HIV/AIDS do tai nạn rủi ro nghề nghiệp trong trường hợp bị nhiễm HIV/AIDS do tai nạn rủi ro nghề nghiệp (tương đương mức suy giảm KNLĐ 61%), nếu GĐYK mà tỷ lệ suy giảm KNLĐ cao hơn 61% thì hồ sơ hưởng chế độ BNN trong trường hợp này phải có Biên bản GĐYK.",
+        "quantity": "1 bản chính, 0 bản sao",
+        "notes": [],
+        "attachment_path": null
+      },
+      {
+        "condition": "2. Bản sao Giấy ra viện hoặc trích sao hồ sơ bệnh án sau khi đã điều trị TNLĐ hoặc BNN (trường hợp điều trị nội trú)",
+        "document": "2. Bản sao Giấy ra viện hoặc trích sao hồ sơ bệnh án sau khi đã điều trị TNLĐ hoặc BNN (trường hợp điều trị nội trú)",
+        "quantity": "0 bản chính, 1 bản sao",
+        "notes": [],
+        "attachment_path": null
+      },
+      {
+        "condition": "5. Chỉ định của cơ sở KCB, cơ sở chỉnh hình, phục hồi chức năng theo quy định về trang cấp PTTGSH (nếu có)",
+        "document": "5. Chỉ định của cơ sở KCB, cơ sở chỉnh hình, phục hồi chức năng theo quy định về trang cấp PTTGSH (nếu có)",
+        "quantity": "1 bản chính, 0 bản sao",
+        "notes": [],
+        "attachment_path": null
+      }
+    ],
+    "forms": [],
+    "presented": [],
+    "notes": [],
+    "summary": [
+      {
+        "group": "Trường hợp không quy định là bản chính thì có thể nộp bản sao hợp lệ. Trường hợp nộp hồ sơ trực tuyến: thành phần hồ sơ quy định là bản sao nhưng NLĐ có thể nộp bản chính điện tử",
+        "name": "1. Bản chính Văn bản đề nghị giải quyết chế độ TNLĐ, BNN (mẫu 05A-HSB) của đơn vị SDLĐ; bản chính Đơn đề nghị về việc hưởng chế độ BNN (mẫu 01) ban hành kèm theo Nghị định số 88/2020/NĐ-CP",
+        "quantity": "1 bản chính, 0 bản sao",
+        "notes": [],
+        "attachment_path": null
+      },
+      {
+        "group": null,
+        "name": null,
+        "quantity": "1 bản chính, 0 bản sao",
+        "notes": [],
+        "attachment_path": null
+      },
+      {
+        "group": null,
+        "name": null,
+        "quantity": "1 bản chính, 0 bản sao",
+        "notes": [],
+        "attachment_path": null
+      },
+      {
+        "group": null,
+        "name": null,
+        "quantity": "1 bản chính, 0 bản sao",
+        "notes": [],
+        "attachment_path": null
+      },
+      {
+        "group": null,
+        "name": null,
+        "quantity": "0 bản chính, 1 bản sao",
+        "notes": [],
+        "attachment_path": null
+      },
+      {
+        "group": null,
+        "name": null,
+        "quantity": "1 bản chính, 0 bản sao",
+        "notes": [],
+        "attachment_path": null
+      }
+    ]
+  },
+  "steps": [
+    {
+      "order": 1,
+      "title": "Bước 1",
+      "description": "1. **Bước 1. Lập, nộp hồ sơ**",
+      "example": null
+    },
+    {
+      "order": 2,
+      "title": "Bước 2",
+      "description": "1. NLĐ lập hồ sơ theo quy định tại mục 4.3 (Thành phần hồ sơ); Nộp hồ sơ cho đơn vị SDLĐ.",
+      "example": null
+    },
+    {
+      "order": 3,
+      "title": "Bước 3",
+      "description": "2. NLĐ đã nghỉ hưu, thôi việc hoặc chuyển sang đơn vị SDLĐ khác bị mắc BNN trong thời gian bảo đảm lập hồ sơ theo quy định tại điểm 1, 3, 5, 6 mục 4.3 (Thành phần hồ sơ); Nộp hồ sơ cho cơ quan BHXH nơi đang chi trả lương hưu (đối với trường hợp đang hưởng lương hưu) hoặc cơ quan BHXH (trong trường hợp đã thôi việc) hoặc nộp cho đơn vị SDLĐ nơi NLĐ đang làm việc (đối với trường hợp chuyển sang đơn vị SDLĐ khác).",
+      "example": null
+    },
+    {
+      "order": 4,
+      "title": "Bước 4",
+      "description": "3. Đơn vị SDLĐ: Tiếp nhận hồ sơ từ NLĐ nêu tại điểm 1; điểm 2 (trường hợp NLĐ chuyển đến đơn vị làm việc bị mắc BNN); lập Văn bản đề nghị giải quyết chế độ TNLĐ hoặc BNN (mẫu số 05A-HSB); nộp cho cơ quan BHXH nơi đơn vị SDLĐ đóng BHXH. Đối với NLĐ sau khi đã nghỉ việc hoặc đã về hưu người SDLĐ mới lập hồ sơ giải quyết chế độ BHXH về TNLĐ trong thời gian NLĐ làm việc thì người SDLĐ chuyển hồ sơ đến cơ quan BHXH (trường hợp đã nghỉ việc) hoặc nơi chi trả lương hưu (trường hợp đang hưởng lương hưu).",
+      "example": null
+    },
+    {
+      "order": 5,
+      "title": "Bước 5",
+      "description": "2. **Bước 2.**",
+      "example": null
+    },
+    {
+      "order": 6,
+      "title": "Bước 6",
+      "description": "Cơ quan BHXH tiếp nhận hồ sơ và giải quyết theo quy định.",
+      "example": null
+    },
+    {
+      "order": 7,
+      "title": "Bước 7",
+      "description": "3. **Bước 3. Nhận kết quả giải quyết**",
+      "example": null
+    },
+    {
+      "order": 8,
+      "title": "Bước 8",
+      "description": "1. Đơn vị SDLĐ: Quyết định về việc hưởng trợ cấp TNLĐ, BNN hàng tháng hoặc một lần; Quyết định cấp tiền mua PTTGSH (nếu có); Bản quá trình đóng BHXH; Thẻ BHYT đối với trường hợp nghỉ việc hưởng trợ cấp TNLĐ, BNN hàng tháng; Thông báo về việc chi trả lương hưu, trợ cấp BHXH đối với trường hợp di chuyển hưởng chế độ BHXH tại huyện/tỉnh khác để trả cho NLĐ.",
+      "example": null
+    },
+    {
+      "order": 9,
+      "title": "Bước 9",
+      "description": "2. NLĐ:",
+      "example": null
+    },
+    {
+      "order": 10,
+      "title": "Bước 10",
+      "description": "- Nhận tiền trợ cấp;",
+      "example": null
+    },
+    {
+      "order": 11,
+      "title": "Bước 11",
+      "description": "- Trường hợp NLĐ nghỉ hưu, thôi việc: Quyết định hưởng trợ cấp TNLĐ, BNN hàng tháng hoặc một lần; Quyết định cấp tiền mua PTTGSH (nếu có); Bản quá trình đóng BHXH; thẻ BHYT đối với trường hợp hưởng trợ cấp TNLĐ, BNN hàng tháng; Thông báo về việc chi trả lương hưu, trợ cấp BHXH đối với trường hợp di chuyển hưởng chế độ BHXH tại huyện/tỉnh khác.",
+      "example": null
+    }
+  ],
+  "input_fields": [
+    {
+      "field": "request_subject",
+      "label": "Đối tượng làm thủ tục",
+      "type": "string",
+      "required": true
+    },
+    {
+      "field": "insurance_or_medical_need",
+      "label": "Nhu cầu bảo hiểm hoặc y tế",
+      "type": "string",
+      "required": true
+    },
+    {
+      "field": "submission_channel_preference",
+      "label": "Kênh nộp dự kiến",
+      "type": "enum",
+      "required": false,
+      "options": [
+        "Trực tiếp",
+        "Trực tuyến",
+        "Dịch vụ bưu chính"
+      ]
+    },
+    {
+      "field": "has_insurance_number",
+      "label": "Đã có mã BHXH/BHYT",
+      "type": "boolean",
+      "required": false
+    }
+  ],
+  "validation_rules": [
+    {
+      "id": "required-1",
+      "severity": "error",
+      "field": "request_subject",
+      "rule": "Trường bắt buộc phải có dữ liệu hợp lệ trước khi nộp.",
+      "message": "Thiếu trường bắt buộc: Đối tượng làm thủ tục."
+    },
+    {
+      "id": "required-2",
+      "severity": "error",
+      "field": "insurance_or_medical_need",
+      "rule": "Trường bắt buộc phải có dữ liệu hợp lệ trước khi nộp.",
+      "message": "Thiếu trường bắt buộc: Nhu cầu bảo hiểm hoặc y tế."
+    },
+    {
+      "id": "hint-1",
+      "severity": "warning",
+      "field": "general",
+      "rule": "Nên xác định trước kênh nộp hồ sơ để biết có cần bản giấy, bản điện tử hay xuất trình trực tiếp.",
+      "message": "Nên xác định trước kênh nộp hồ sơ để biết có cần bản giấy, bản điện tử hay xuất trình trực tiếp."
+    },
+    {
+      "id": "hint-2",
+      "severity": "warning",
+      "field": "general",
+      "rule": "Nên xác định đúng nhóm đối tượng, mã số bảo hiểm và quyền lợi áp dụng trước khi nộp.",
+      "message": "Nên xác định đúng nhóm đối tượng, mã số bảo hiểm và quyền lợi áp dụng trước khi nộp."
+    }
+  ],
+  "common_errors": [
+    {
+      "field": "general",
+      "issue": "Điền sai mẫu tờ khai hoặc chọn sai biểu mẫu đi kèm.",
+      "fix": "Nên xác định trước kênh nộp hồ sơ để biết có cần bản giấy, bản điện tử hay xuất trình trực tiếp."
+    },
+    {
+      "field": "general",
+      "issue": "Thông tin thửa đất, tài sản hoặc giấy chứng nhận chưa khớp với hồ sơ hiện có.",
+      "fix": "Nên xác định trước kênh nộp hồ sơ để biết có cần bản giấy, bản điện tử hay xuất trình trực tiếp."
+    }
+  ],
+  "clarifying_questions": [
+    {
+      "id": "clarify_1",
+      "question": "Bạn đang muốn đăng ký, điều chỉnh hay xác nhận quyền lợi y tế hoặc bảo hiểm nào?",
+      "purpose": "workflow_intake"
+    },
+    {
+      "id": "clarify_2",
+      "question": "Bạn đã có mã BHXH/BHYT hoặc thông tin đơn vị tiếp nhận liên quan chưa?",
+      "purpose": "workflow_intake"
+    }
+  ],
+  "legal_basis": [
+    {
+      "title": "BAN HÀNH QUY TRÌNH GIẢI QUYẾT HƯỞNG CÁC CHẾ ĐỘ BẢO HIỂM XÃ HỘI, CHI TRẢ CÁC CHẾ ĐỘ BẢO HIỂM XÃ HỘI, BẢO HIỂM THẤT NGHIỆP",
+      "code": "2222/QĐ-BHXH"
+    },
+    {
+      "title": "Nghị định 143/2018/NĐ-CP",
+      "code": "143/2018/NĐ-CP"
+    },
+    {
+      "title": "Thông tư 15/2016/TT-BYT",
+      "code": "15/2016/TT-BYT"
+    },
+    {
+      "title": "Nghị định 58/2020/NĐ-CP",
+      "code": "58/2020/NĐ-CP"
+    },
+    {
+      "title": "Nghị định số 88/2020/NĐ-CP ngày 28/7/2020 của Chính phủ quy định chi tiết một số điều của Luật An toàn, vệ sinh lao động về bảo hiểm tai nạn lao động, bệnh nghề nghiệp bắt buộc",
+      "code": "88/2020/NĐ-CP"
+    },
+    {
+      "title": "Luật 84/2015/QH13",
+      "code": "84/2015/QH13"
+    },
+    {
+      "title": "Nghị định 166/2016/NĐ-CP-Quy định về giao dịch điện tử trong lĩnh vực bảo hiểm xã hội, bảo hiểm y tế và bảo hiểm thất nghiệp",
+      "code": "166/2016/NĐ-CP"
+    },
+    {
+      "title": "LUẬT Bảo hiểm xã hội",
+      "code": "58/2014/QH13"
+    }
+  ],
+  "legal_bases": [
+    {
+      "title": "BAN HÀNH QUY TRÌNH GIẢI QUYẾT HƯỞNG CÁC CHẾ ĐỘ BẢO HIỂM XÃ HỘI, CHI TRẢ CÁC CHẾ ĐỘ BẢO HIỂM XÃ HỘI, BẢO HIỂM THẤT NGHIỆP",
+      "code": "2222/QĐ-BHXH"
+    },
+    {
+      "title": "Nghị định 143/2018/NĐ-CP",
+      "code": "143/2018/NĐ-CP"
+    },
+    {
+      "title": "Thông tư 15/2016/TT-BYT",
+      "code": "15/2016/TT-BYT"
+    },
+    {
+      "title": "Nghị định 58/2020/NĐ-CP",
+      "code": "58/2020/NĐ-CP"
+    },
+    {
+      "title": "Nghị định số 88/2020/NĐ-CP ngày 28/7/2020 của Chính phủ quy định chi tiết một số điều của Luật An toàn, vệ sinh lao động về bảo hiểm tai nạn lao động, bệnh nghề nghiệp bắt buộc",
+      "code": "88/2020/NĐ-CP"
+    },
+    {
+      "title": "Luật 84/2015/QH13",
+      "code": "84/2015/QH13"
+    },
+    {
+      "title": "Nghị định 166/2016/NĐ-CP-Quy định về giao dịch điện tử trong lĩnh vực bảo hiểm xã hội, bảo hiểm y tế và bảo hiểm thất nghiệp",
+      "code": "166/2016/NĐ-CP"
+    },
+    {
+      "title": "LUẬT Bảo hiểm xã hội",
+      "code": "58/2014/QH13"
+    }
+  ],
+  "faq": [
+    {
+      "question": "Có thể nộp qua kênh nào?",
+      "answer": "Các kênh hiện có: Trực tiếp, Trực tuyến, Dịch vụ bưu chính."
+    },
+    {
+      "question": "Thời gian xử lý tham chiếu là bao lâu?",
+      "answer": "Thời gian xử lý tham chiếu hiện có là 6 ngày làm việc."
+    },
+    {
+      "question": "Kết quả chính của thủ tục là gì?",
+      "answer": "Kết quả chính được trích xuất là Bản quá trình đóng BHXH (Mẫu 04-HSB)."
+    }
+  ],
+  "guidance": {
+    "highlight_documents": [
+      {
+        "bucket": "required",
+        "name": "1. Bản chính Văn bản đề nghị giải quyết chế độ TNLĐ, BNN (mẫu 05A-HSB) của đơn vị SDLĐ; bản chính Đơn đề nghị về việc hưởng chế độ BNN (mẫu 01) ban hành kèm theo Nghị định số 88/2020/NĐ-CP",
+        "conditions": [],
+        "attachment_path": null
+      },
+      {
+        "bucket": "conditional",
+        "name": "6. Hóa đơn, chứng từ thu phí giám định; bảng kê các nội dung giám định của cơ sở thực hiện GĐYK (trường hợp thanh toán phí GĐYK).",
+        "conditions": [
+          "6. Hóa đơn, chứng từ thu phí giám định; bảng kê các nội dung giám định của cơ sở thực hiện GĐYK (trường hợp thanh toán phí GĐYK)."
+        ],
+        "attachment_path": null
+      },
+      {
+        "bucket": "conditional",
+        "name": "4. Trường hợp bị BNN mà không điều trị nội trú thì có thêm Giấy khám BNN.",
+        "conditions": [
+          "4. Trường hợp bị BNN mà không điều trị nội trú thì có thêm Giấy khám BNN."
+        ],
+        "attachment_path": null
+      },
+      {
+        "bucket": "conditional",
+        "name": "3. Biên bản giám định mức suy giảm KNLĐ của Hội đồng GĐYK hoặc bản sao Giấy chứng nhận bị nhiễm HIV/AIDS do tai nạn rủi ro nghề nghiệp trong trường hợp bị nhiễm HIV/AIDS do tai nạn rủi ro nghề nghiệp (tương đương mức suy giảm KNLĐ 61%), nếu GĐYK mà tỷ lệ suy giảm KNLĐ cao hơn 61% thì hồ sơ hưởng chế độ BNN trong trường hợp này phải có Biên bản GĐYK.",
+        "conditions": [
+          "3. Biên bản giám định mức suy giảm KNLĐ của Hội đồng GĐYK hoặc bản sao Giấy chứng nhận bị nhiễm HIV/AIDS do tai nạn rủi ro nghề nghiệp trong trường hợp bị nhiễm HIV/AIDS do tai nạn rủi ro nghề nghiệp (tương đương mức suy giảm KNLĐ 61%), nếu GĐYK mà tỷ lệ suy giảm KNLĐ cao hơn 61% thì hồ sơ hưởng chế độ BNN trong trường hợp này phải có Biên bản GĐYK."
+        ],
+        "attachment_path": null
+      },
+      {
+        "bucket": "conditional",
+        "name": "2. Bản sao Giấy ra viện hoặc trích sao hồ sơ bệnh án sau khi đã điều trị TNLĐ hoặc BNN (trường hợp điều trị nội trú)",
+        "conditions": [
+          "2. Bản sao Giấy ra viện hoặc trích sao hồ sơ bệnh án sau khi đã điều trị TNLĐ hoặc BNN (trường hợp điều trị nội trú)"
+        ],
+        "attachment_path": null
+      },
+      {
+        "bucket": "conditional",
+        "name": "5. Chỉ định của cơ sở KCB, cơ sở chỉnh hình, phục hồi chức năng theo quy định về trang cấp PTTGSH (nếu có)",
+        "conditions": [
+          "5. Chỉ định của cơ sở KCB, cơ sở chỉnh hình, phục hồi chức năng theo quy định về trang cấp PTTGSH (nếu có)"
+        ],
+        "attachment_path": null
+      }
+    ],
+    "special_cases": [
+      "Có thể cần đối chiếu thông tin thửa đất hoặc giấy chứng nhận"
+    ],
+    "common_errors": [
+      "Điền sai mẫu tờ khai hoặc chọn sai biểu mẫu đi kèm.",
+      "Thông tin thửa đất, tài sản hoặc giấy chứng nhận chưa khớp với hồ sơ hiện có."
+    ],
+    "validation_hints": [
+      "Nên xác định trước kênh nộp hồ sơ để biết có cần bản giấy, bản điện tử hay xuất trình trực tiếp.",
+      "Nên xác định đúng nhóm đối tượng, mã số bảo hiểm và quyền lợi áp dụng trước khi nộp."
+    ]
+  },
+  "next_steps": {
+    "summary": "Nên xác định rõ đối tượng tham gia, quyền lợi hoặc nhu cầu điều chỉnh hồ sơ y tế trước khi nộp. Có thể chọn kênh nộp phù hợp: Trực tiếp, Trực tuyến, Dịch vụ bưu chính. Hiện có khoảng 6 mục giấy tờ cần theo dõi trong checklist.",
+    "time_badge": "6 ngày làm việc",
+    "result_label": "Bản quá trình đóng BHXH (Mẫu 04-HSB)",
+    "primary_channel": "online",
+    "channels": [
+      "in_person",
+      "online",
+      "postal"
+    ]
+  },
+  "notes": [],
+  "provenance": {
+    "pipeline": "raw->structured->normalized->enriched->ui_api_payload",
+    "normalizer_version": "0.2.0",
+    "enricher_version": "0.2.0",
+    "mapping_notes": "workflow_generated:suc_khoe_y_te/chinh_sach_y_te",
+    "supported_group": true
+  }
+}

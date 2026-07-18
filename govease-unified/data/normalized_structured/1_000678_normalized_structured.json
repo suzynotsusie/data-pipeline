@@ -1,0 +1,218 @@
+{
+  "schema_version": "1.0",
+  "normalizer_version": "0.2.0",
+  "source": {
+    "procedure_code": "1.000678",
+    "title": "Cấp giấy phép quá cảnh đối với hàng hóa thuộc danh mục cấm Campuchia",
+    "raw_structured_parser_version": "0.1.0",
+    "field": "Xuất nhập khẩu"
+  },
+  "procedure": {
+    "level": "Cấp tỉnh",
+    "procedure_type": "TTHC được luật giao quy định chi tiết",
+    "target_users": [
+      "Công dân Việt Nam",
+      "Doanh nghiệp",
+      "Người nước ngoài",
+      "Tổ chức nước ngoài",
+      "Hợp tác xã",
+      "Cán bộ",
+      "công chức",
+      "viên chức",
+      "Doanh nghiệp có vốn đầu tư nước ngoài",
+      "Tổ chức (không bao gồm doanh nghiệp",
+      "HTX)",
+      "Người Việt Nam định cư ở nước ngoài"
+    ],
+    "authorities": [],
+    "receiving_places": []
+  },
+  "submission": {
+    "channels": [
+      "in_person",
+      "online",
+      "postal"
+    ],
+    "methods": [
+      {
+        "method_id": "method_1",
+        "channel": "online",
+        "processing_time_text": "7 ngày làm việc",
+        "fee_text": null,
+        "description": null,
+        "is_online": true,
+        "is_postal": false,
+        "is_in_person": false
+      },
+      {
+        "method_id": "method_2",
+        "channel": "postal",
+        "processing_time_text": "7 ngày làm việc",
+        "fee_text": null,
+        "description": null,
+        "is_online": false,
+        "is_postal": true,
+        "is_in_person": false
+      },
+      {
+        "method_id": "method_3",
+        "channel": "in_person",
+        "processing_time_text": "7 ngày làm việc",
+        "fee_text": null,
+        "description": null,
+        "is_online": false,
+        "is_postal": false,
+        "is_in_person": true
+      }
+    ],
+    "timing_summary": {
+      "unique_processing_times": [
+        "7 ngày làm việc"
+      ],
+      "method_count": 3
+    }
+  },
+  "documents": {
+    "required": [
+      {
+        "document_id": "n_ngh_cho_ph_p_qu_c_nh_theo_m_u_quy_nh_01_b_n_ch_nh",
+        "name": "Đơn đề nghị cho phép quá cảnh theo mẫu quy định: 01 bản chính",
+        "group_name": "default",
+        "group_type": "unknown",
+        "original_count": "1",
+        "copy_count": "0",
+        "conditions": [],
+        "attachment_label": "qua canh cpc.docx",
+        "attachment_path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/1_000678/qua%20canh%20cpc.docx"
+      },
+      {
+        "document_id": "v_n_b_n_c_a_b_th_ng_m_i_v_ng_qu_c_campuchia_ngh_cho_ph_p_qu_c_nh_h_ng_h_a_01_b_n_ch_nh",
+        "name": "Văn bản của Bộ Thương mại Vương quốc Campuchia đề nghị cho phép quá cảnh hàng hóa: 01 bản chính",
+        "group_name": "default",
+        "group_type": "unknown",
+        "original_count": "1",
+        "copy_count": "0",
+        "conditions": [],
+        "attachment_label": null,
+        "attachment_path": null
+      }
+    ],
+    "conditional": [
+      {
+        "document_id": "h_p_ng_v_n_chuy_n_h_ng_h_a_qu_c_nh_trong_tr_ng_h_p_ch_h_ng_k_h_p_ng_v_n_chuy_n_v_i_doanh_nghi_p_vi_t_nam_ho_c_doanh_nghi_p_n_c_th_3",
+        "name": "Hợp đồng vận chuyển hàng hóa quá cảnh (trong trường hợp chủ hàng ký hợp đồng vận chuyển với doanh nghiệp Việt Nam hoặc doanh nghiệp nước thứ 3)",
+        "group_name": "default",
+        "group_type": "unknown",
+        "original_count": "1",
+        "copy_count": "0",
+        "conditions": [
+          "Hợp đồng vận chuyển hàng hóa quá cảnh (trong trường hợp chủ hàng ký hợp đồng vận chuyển với doanh nghiệp Việt Nam hoặc doanh nghiệp nước thứ 3)"
+        ],
+        "attachment_label": null,
+        "attachment_path": null
+      }
+    ],
+    "presented": [],
+    "notes": [],
+    "forms": [
+      {
+        "name": "Đơn đề nghị cho phép quá cảnh theo mẫu quy định: 01 bản chính",
+        "attachment_label": "qua canh cpc.docx",
+        "attachment_path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/1_000678/qua%20canh%20cpc.docx"
+      }
+    ],
+    "empty_groups": [],
+    "document_count": 3
+  },
+  "process": {
+    "steps": [
+      {
+        "step_id": "step_1",
+        "title": null,
+        "content": "1. **Trường hợp hồ sơ đầy đủ, hợp lệ, đáp ứng đủ điều kiện**",
+        "actor": "user",
+        "channel_hint": null,
+        "time_hint": null
+      },
+      {
+        "step_id": "step_2",
+        "title": "Bước 1:",
+        "content": "Bước 1: Chủ hàng gửi hồ sơ đề nghị cấp phép quá cảnh hàng hóa đến Ủy ban nhân dân cấp tỉnh",
+        "actor": "user",
+        "channel_hint": null,
+        "time_hint": null
+      },
+      {
+        "step_id": "step_3",
+        "title": "Bước 2:",
+        "content": "Bước 2: Trường hợp hồ sơ chưa đầy đủ, chưa hợp lệ, trong vòng 03 (ba) ngày làm việc, kể từ ngày nhận được hồ sơ, cơ quan tiếp nhận hồ sơ có văn bản gửi chủ hàng yêu cầu bổ sung, chỉnh sửa",
+        "actor": "authority",
+        "channel_hint": null,
+        "time_hint": null
+      },
+      {
+        "step_id": "step_4",
+        "title": "Bước 3:",
+        "content": "Bước 3: Trong thời hạn 7 ngày làm việc kể từ ngày nhận đủ hồ sơ hợp lệ, Ủy ban nhân dân cấp tỉnh xem xét cấp giấy phép quá cảnh.",
+        "actor": "user",
+        "channel_hint": null,
+        "time_hint": "7 ngày làm việc"
+      }
+    ],
+    "step_count": 4,
+    "notes": []
+  },
+  "eligibility": {
+    "conditions": [
+      "không"
+    ],
+    "has_conditions": true
+  },
+  "results": {
+    "items": [
+      {
+        "name": "Giấy phép quá cảnh đối với hàng hóa thuộc danh mục cấm Campuchia",
+        "result_code": "KQ.G02.000143",
+        "raw_text": "Giấy phép quá cảnh đối với hàng hóa thuộc danh mục cấm Campuchia"
+      }
+    ],
+    "primary_result": {
+      "name": "Giấy phép quá cảnh đối với hàng hóa thuộc danh mục cấm Campuchia",
+      "result_code": "KQ.G02.000143",
+      "raw_text": "Giấy phép quá cảnh đối với hàng hóa thuộc danh mục cấm Campuchia"
+    }
+  },
+  "legal_basis": {
+    "items": [
+      {
+        "title": "Thông tư số 26/2026/TT-BCT ngày 20 tháng 5 năm 2026 của Bộ trưởng Bộ Công Thương sửa đổi bổ sung một số quy định về phân cấp, cắt giảm, đơn giản hóa thủ tục hành chính trong các lĩnh vực thuộc phạm vi quản lý của Bộ Công Thương.",
+        "code": "26/2026/TT-BCT"
+      },
+      {
+        "title": "Thông tư số 27/2014/TT-BCT quy định về quá cảnh hàng hóa của Vương quốc Campuchia qua lãnh thổ nước Cộng hòa xã hội chủ nghĩa Việt Nam",
+        "code": "9423/QĐ-BCT"
+      },
+      {
+        "title": "Thông tư số 24/2024/TT-BCT",
+        "code": "Thông tư số 24/2024/TT-BCT"
+      }
+    ],
+    "count": 3
+  },
+  "attachments": [
+    {
+      "label": "qua canh cpc.docx",
+      "path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/1_000678/qua%20canh%20cpc.docx",
+      "source_section": "Thành phần hồ sơ",
+      "document_name": "Đơn đề nghị cho phép quá cảnh theo mẫu quy định: 01 bản chính"
+    }
+  ],
+  "signals": {
+    "raw_parse_warnings": [],
+    "missing_documents": false,
+    "documents_section_present": true,
+    "documents_declared_empty": false,
+    "documents_only_in_notes": false,
+    "missing_results": false
+  }
+}

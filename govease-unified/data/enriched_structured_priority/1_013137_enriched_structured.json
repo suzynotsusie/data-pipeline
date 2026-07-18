@@ -1,0 +1,94 @@
+{
+  "schema_version": "1.0",
+  "enricher_version": "0.2.0",
+  "source": {
+    "procedure_code": "1.013137",
+    "title": "Thủ tục đăng ký nghĩa vụ quân sự chuyển đến khi thay đổi nơi cư trú hoặc nơi làm việc, học tập",
+    "group_key": "cu_tru_giay_to",
+    "workflow_family": null,
+    "subflow": null
+  },
+  "experience": {
+    "entry_label": "Hỗ trợ cư trú và giấy tờ",
+    "overview_summary": "Thủ tục này thuộc nhóm cư trú và giấy tờ, thường cần kiểm tra thông tin định danh hoặc hồ sơ giấy tờ chuyên ngành. Kết quả thường nhận được là Công dân hoàn thành đăng ký nghĩa vụ quân sự chuyển đến. Thời gian xử lý tham khảo: 1 ngày làm việc.",
+    "next_step_summary": "Nên kiểm tra trước giấy tờ định danh, nơi nộp và mẫu biểu liên quan, rồi chọn kênh nộp phù hợp: Trực tiếp, Trực tuyến. Hiện có khoảng 3 mục giấy tờ cần theo dõi trong checklist.",
+    "tone": "supportive_public_service"
+  },
+  "guidance": {
+    "highlight_documents": [
+      {
+        "bucket": "required",
+        "name": "Giấy giới thiệu di chuyển đăng ký nghĩa vụ quân sự hoặc Giấy giới thiệu di chuyển quân nhân dự bị cho công dân.",
+        "conditions": [],
+        "attachment_path": null
+      },
+      {
+        "bucket": "required",
+        "name": "Phiếu quân nhân dự bị",
+        "conditions": [],
+        "attachment_path": null
+      },
+      {
+        "bucket": "conditional",
+        "name": "Giấy xác nhận thông tin về cư trú do cơ quan công an cấp xã cấp hoặc quyết định của người đứng đầu cơ quan, tổ chức về thay đổi nơi làm việc, học tập mới. Trường hợp cơ quan hoặc người có thẩm quyền được giao trách nhiệm tiếp nhận, giải quyết thủ tục hành chính, cung cấp dịch vụ công khai thác được thông tin về nơi cư trú của công dân trên Cơ sở dữ liệu quốc gia về dân cư thì không yêu cầu công dân cung cấp giấy xác nhận thông tin về cư trú hoặc quyết định về thay đổi nơi làm việc, học tập mới.",
+        "conditions": [
+          "Giấy xác nhận thông tin về cư trú do cơ quan công an cấp xã cấp hoặc quyết định của người đứng đầu cơ quan, tổ chức về thay đổi nơi làm việc, học tập mới. Trường hợp cơ quan hoặc người có thẩm quyền được giao trách nhiệm tiếp nhận, giải quyết thủ tục hành chính, cung cấp dịch vụ công khai thác được thông tin về nơi cư trú của công dân trên Cơ sở dữ liệu quốc gia về dân cư thì không yêu cầu công dân cung cấp giấy xác nhận thông tin về cư trú hoặc quyết định về thay đổi nơi làm việc, học tập mới."
+        ],
+        "attachment_path": null
+      }
+    ],
+    "special_cases": [
+      "Có kiểm tra dữ liệu cư trú/định danh"
+    ],
+    "common_errors": [
+      "Điền sai mẫu tờ khai hoặc chọn sai biểu mẫu đi kèm."
+    ],
+    "validation_hints": [
+      "Nên xác định trước kênh nộp hồ sơ để biết có cần bản giấy, bản điện tử hay xuất trình trực tiếp.",
+      "Nên đối chiếu trước dữ liệu định danh và nơi cư trú để tránh bị yêu cầu bổ sung."
+    ]
+  },
+  "intake": {
+    "candidate_input_fields": [
+      {
+        "field_id": "document_request_type",
+        "label": "Loại giấy tờ cần xử lý",
+        "field_type": "text",
+        "required": true
+      },
+      {
+        "field_id": "submission_channel_preference",
+        "label": "Kênh nộp dự kiến",
+        "field_type": "enum",
+        "required": false
+      },
+      {
+        "field_id": "identity_document_available",
+        "label": "Có giấy tờ định danh",
+        "field_type": "boolean",
+        "required": true
+      },
+      {
+        "field_id": "residency_or_status_known",
+        "label": "Biết rõ nơi cư trú hoặc tình trạng hiện tại",
+        "field_type": "boolean",
+        "required": false
+      }
+    ],
+    "suggested_clarifying_questions": [
+      "Bạn đang xử lý giấy tờ gì và muốn nộp trực tiếp hay trực tuyến?",
+      "Thông tin định danh và nơi cư trú hiện tại đã sẵn sàng để đối chiếu chưa?"
+    ]
+  },
+  "ui_hints": {
+    "primary_channel": "online",
+    "result_label": "Công dân hoàn thành đăng ký nghĩa vụ quân sự chuyển đến",
+    "time_badge": "1 ngày làm việc",
+    "document_count_badge": 3
+  },
+  "provenance": {
+    "generator": "workflow_domain_enricher",
+    "derivation_mode": "rule_based_semantic_enrichment",
+    "supported_group": true
+  }
+}

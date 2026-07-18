@@ -1,0 +1,393 @@
+{
+  "schema_version": "3.0",
+  "record_type": "public_service_procedure_payload",
+  "id": "procedure-3.000606",
+  "procedure_code": "3.000606",
+  "code": "3.000606",
+  "title": "Hưởng chính sách về thu nhập, lưu trú đối với các chuyên gia, nhà khoa học làm việc trong lĩnh vực vi mạch bán dẫn, trí tuệ nhân tạo trên địa bàn thành phố",
+  "language": "vi",
+  "status": "generated_from_pipeline",
+  "field": "Hoạt động khoa học và công nghệ",
+  "group_key": "cu_tru_giay_to",
+  "workflow_family": null,
+  "subflow": null,
+  "source": {
+    "source_url": "file:///C:/Users/ku060/Downloads/VAIC%20source/data-pipeline/raw_data/3_000606/3_000606_procedure_detail.md",
+    "source_markdown_path": "C:\\Users\\ku060\\Downloads\\VAIC source\\data-pipeline\\raw_data\\3_000606\\3_000606_procedure_detail.md",
+    "normalized_payload_path": "C:\\Users\\ku060\\Downloads\\VAIC source\\data-pipeline\\govease-unified\\data\\normalized_structured\\3_000606_normalized_structured.json",
+    "enriched_payload_path": "C:\\Users\\ku060\\Downloads\\VAIC source\\data-pipeline\\govease-unified\\data\\enriched_structured_priority\\3_000606_enriched_structured.json"
+  },
+  "scope": {
+    "included": "Thủ tục này thuộc nhóm cư trú và giấy tờ, thường cần kiểm tra thông tin định danh hoặc hồ sơ giấy tờ chuyên ngành. Kết quả thường nhận được là Quyết định phê duyệt hỗ trợ của Sở Khoa học và Công nghệ hoặc văn bản thông báo kết quả xét duyệt hồ sơ đề nghị hỗ trợ. Thời gian xử lý tham khảo: 15 ngày làm việc.",
+    "not_included": []
+  },
+  "agency": {
+    "executing_agency": "Sở Khoa học và Công nghệ TP.Đà Nẵng",
+    "submission_place": null,
+    "receiving_places": []
+  },
+  "target_users": [
+    "Công dân Việt Nam",
+    "Người nước ngoài cư trú tại Việt Nam"
+  ],
+  "submission_methods": [
+    {
+      "code": "IN_PERSON",
+      "label": "Trực tiếp",
+      "processing_time": "15 ngày làm việc",
+      "fee": null,
+      "description": "- Hội đồng thẩm định: 08 ngày làm việc.<br>- Sở Khoa học và Công nghệ: 07 ngày làm việc (bao gồm thời gian thành lập hội đồng và thời gian xem xét kết quả thẩm định của hội đồng và trình UBND thành phố nếu có)."
+    },
+    {
+      "code": "ONLINE",
+      "label": "Trực tuyến",
+      "processing_time": "15 ngày làm việc",
+      "fee": null,
+      "description": "- Hội đồng thẩm định: 08 ngày làm việc.<br>- Sở Khoa học và Công nghệ: 07 ngày làm việc (bao gồm thời gian thành lập hội đồng và thời gian xem xét kết quả thẩm định của hội đồng và trình UBND thành phố nếu có)."
+    },
+    {
+      "code": "POSTAL",
+      "label": "Dịch vụ bưu chính",
+      "processing_time": "15 ngày làm việc",
+      "fee": null,
+      "description": "- Hội đồng thẩm định: 08 ngày làm việc.<br>- Sở Khoa học và Công nghệ: 07 ngày làm việc (bao gồm thời gian thành lập hội đồng và thời gian xem xét kết quả thẩm định của hội đồng và trình UBND thành phố nếu có)."
+    }
+  ],
+  "processing_note": "Thời gian xử lý tham chiếu: 15 ngày làm việc. Nên kiểm tra trước giấy tờ định danh, nơi nộp và mẫu biểu liên quan, rồi chọn kênh nộp phù hợp: Trực tiếp, Trực tuyến, Dịch vụ bưu chính. Hiện có khoảng 6 mục giấy tờ cần theo dõi trong checklist.",
+  "documents": {
+    "normally_required": [
+      {
+        "name": "Đơn đề nghị hỗ trợ",
+        "quantity": "1 bản chính, 0 bản sao",
+        "notes": [],
+        "group": "default",
+        "attachment_path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/3_000606/Mau%2001.docx"
+      },
+      {
+        "name": "Hợp đồng lao động với tổ chức, cơ quan nhà nước, đơn vị sự nghiệp công lập, cơ sở giáo dục đại học, doanh nghiệp trên địa thành phố Đà Nẵng",
+        "quantity": "1 bản chính, 0 bản sao",
+        "notes": [],
+        "group": "default",
+        "attachment_path": null
+      },
+      {
+        "name": "Giấy phép lao động hoặc văn bản công nhận người lao động được miễn giấy phép lao động (đối với người nước ngoài)",
+        "quantity": "1 bản chính, 0 bản sao",
+        "notes": [],
+        "group": "default",
+        "attachment_path": null
+      }
+    ],
+    "conditional": [
+      {
+        "condition": "Hồ sơ chứng minh nhân lực đạt điều kiện tại Khoản 2 Điều 4 Nghị quyết số 21/2026/NQ-HĐND (Nếu hưởng chính sách về thu nhập ban đầu, chi phí lưu trú)",
+        "document": "Hồ sơ chứng minh nhân lực đạt điều kiện tại Khoản 2 Điều 4 Nghị quyết số 21/2026/NQ-HĐND (Nếu hưởng chính sách về thu nhập ban đầu, chi phí lưu trú)",
+        "quantity": "1 bản chính, 0 bản sao",
+        "notes": [],
+        "attachment_path": null
+      },
+      {
+        "condition": "Hóa đơn, hợp đồng đối với chi phí lưu trú (nếu hưởng chính sách này) và tài liệu chứng minh lưu trú thực tế",
+        "document": "Hóa đơn, hợp đồng đối với chi phí lưu trú (nếu hưởng chính sách này) và tài liệu chứng minh lưu trú thực tế",
+        "quantity": "1 bản chính, 0 bản sao",
+        "notes": [],
+        "attachment_path": null
+      },
+      {
+        "condition": "Hồ sơ chứng minh nhân lực có các hoạt động tại điểm c Khoản 3, điểm c Khoản 4 Điều 4 Nghị quyết số 21/2026/NQ-HĐND (Nếu hưởng chính sách về chi phí công bố bài báo khoa học, quyền sở hữu trí tuệ)",
+        "document": "Hồ sơ chứng minh nhân lực có các hoạt động tại điểm c Khoản 3, điểm c Khoản 4 Điều 4 Nghị quyết số 21/2026/NQ-HĐND (Nếu hưởng chính sách về chi phí công bố bài báo khoa học, quyền sở hữu trí tuệ)",
+        "quantity": "1 bản chính, 0 bản sao",
+        "notes": [],
+        "attachment_path": null
+      }
+    ],
+    "forms": [
+      {
+        "name": "Đơn đề nghị hỗ trợ",
+        "attachment_label": "Mau 01.docx",
+        "attachment_path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/3_000606/Mau%2001.docx"
+      }
+    ],
+    "presented": [],
+    "notes": [],
+    "summary": [
+      {
+        "group": "default",
+        "name": "Đơn đề nghị hỗ trợ",
+        "quantity": "1 bản chính, 0 bản sao",
+        "notes": [],
+        "attachment_path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/3_000606/Mau%2001.docx"
+      },
+      {
+        "group": "default",
+        "name": "Hợp đồng lao động với tổ chức, cơ quan nhà nước, đơn vị sự nghiệp công lập, cơ sở giáo dục đại học, doanh nghiệp trên địa thành phố Đà Nẵng",
+        "quantity": "1 bản chính, 0 bản sao",
+        "notes": [],
+        "attachment_path": null
+      },
+      {
+        "group": "default",
+        "name": "Giấy phép lao động hoặc văn bản công nhận người lao động được miễn giấy phép lao động (đối với người nước ngoài)",
+        "quantity": "1 bản chính, 0 bản sao",
+        "notes": [],
+        "attachment_path": null
+      },
+      {
+        "group": null,
+        "name": null,
+        "quantity": "1 bản chính, 0 bản sao",
+        "notes": [],
+        "attachment_path": null
+      },
+      {
+        "group": null,
+        "name": null,
+        "quantity": "1 bản chính, 0 bản sao",
+        "notes": [],
+        "attachment_path": null
+      },
+      {
+        "group": null,
+        "name": null,
+        "quantity": "1 bản chính, 0 bản sao",
+        "notes": [],
+        "attachment_path": null
+      },
+      {
+        "group": null,
+        "name": "Đơn đề nghị hỗ trợ",
+        "quantity": null,
+        "notes": null,
+        "attachment_path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/3_000606/Mau%2001.docx"
+      }
+    ]
+  },
+  "steps": [
+    {
+      "order": 1,
+      "title": "Bước 1",
+      "description": "1. Cá nhân nộp hồ sơ về Sở Khoa học và Công nghệ.",
+      "example": null
+    },
+    {
+      "order": 2,
+      "title": "Bước 2",
+      "description": "2. Sau khi tiếp nhận đầy đủ hồ sơ hợp lệ, Sở Khoa học và Công nghệ thành lập Hội đồng thẩm định để tiến hành thẩm định hồ sơ.",
+      "example": null
+    },
+    {
+      "order": 3,
+      "title": "Bước 3",
+      "description": "3. Hội đồng thẩm định tổ chức thẩm định và báo cáo kết quả thẩm định gửi Sở Khoa học và Công nghệ.",
+      "example": null
+    },
+    {
+      "order": 4,
+      "title": "Bước 4",
+      "description": "4. Sở Khoa học và Công nghệ quyết định hỗ trợ.",
+      "example": null
+    },
+    {
+      "order": 5,
+      "title": "Bước 5",
+      "description": "5. Sở Khoa học và Công nghệ trả kết quả cho cá nhân.",
+      "example": null
+    }
+  ],
+  "input_fields": [
+    {
+      "field": "document_request_type",
+      "label": "Loại giấy tờ cần xử lý",
+      "type": "string",
+      "required": true
+    },
+    {
+      "field": "submission_channel_preference",
+      "label": "Kênh nộp dự kiến",
+      "type": "enum",
+      "required": false,
+      "options": [
+        "Trực tiếp",
+        "Trực tuyến",
+        "Dịch vụ bưu chính"
+      ]
+    },
+    {
+      "field": "identity_document_available",
+      "label": "Có giấy tờ định danh",
+      "type": "boolean",
+      "required": true
+    },
+    {
+      "field": "residency_or_status_known",
+      "label": "Biết rõ nơi cư trú hoặc tình trạng hiện tại",
+      "type": "boolean",
+      "required": false
+    }
+  ],
+  "validation_rules": [
+    {
+      "id": "required-1",
+      "severity": "error",
+      "field": "document_request_type",
+      "rule": "Trường bắt buộc phải có dữ liệu hợp lệ trước khi nộp.",
+      "message": "Thiếu trường bắt buộc: Loại giấy tờ cần xử lý."
+    },
+    {
+      "id": "required-3",
+      "severity": "error",
+      "field": "identity_document_available",
+      "rule": "Trường bắt buộc phải có dữ liệu hợp lệ trước khi nộp.",
+      "message": "Thiếu trường bắt buộc: Có giấy tờ định danh."
+    },
+    {
+      "id": "hint-1",
+      "severity": "warning",
+      "field": "general",
+      "rule": "Nên xác định trước kênh nộp hồ sơ để biết có cần bản giấy, bản điện tử hay xuất trình trực tiếp.",
+      "message": "Nên xác định trước kênh nộp hồ sơ để biết có cần bản giấy, bản điện tử hay xuất trình trực tiếp."
+    },
+    {
+      "id": "hint-2",
+      "severity": "warning",
+      "field": "general",
+      "rule": "Có mẫu biểu đính kèm, nên kiểm tra đúng biểu mẫu trước khi nộp.",
+      "message": "Có mẫu biểu đính kèm, nên kiểm tra đúng biểu mẫu trước khi nộp."
+    },
+    {
+      "id": "hint-3",
+      "severity": "warning",
+      "field": "general",
+      "rule": "Nên đối chiếu trước dữ liệu định danh và nơi cư trú để tránh bị yêu cầu bổ sung.",
+      "message": "Nên đối chiếu trước dữ liệu định danh và nơi cư trú để tránh bị yêu cầu bổ sung."
+    }
+  ],
+  "common_errors": [
+    {
+      "field": "general",
+      "issue": "Thiếu giấy tờ hợp pháp hóa hoặc giấy tờ nhân thân của phía nước ngoài.",
+      "fix": "Nên xác định trước kênh nộp hồ sơ để biết có cần bản giấy, bản điện tử hay xuất trình trực tiếp."
+    },
+    {
+      "field": "general",
+      "issue": "Thiếu hồ sơ về vị trí việc làm, đơn vị sử dụng lao động hoặc điều kiện làm việc áp dụng.",
+      "fix": "Nên xác định trước kênh nộp hồ sơ để biết có cần bản giấy, bản điện tử hay xuất trình trực tiếp."
+    }
+  ],
+  "clarifying_questions": [
+    {
+      "id": "clarify_1",
+      "question": "Bạn đang xử lý giấy tờ gì và muốn nộp trực tiếp hay trực tuyến?",
+      "purpose": "workflow_intake"
+    },
+    {
+      "id": "clarify_2",
+      "question": "Thông tin định danh và nơi cư trú hiện tại đã sẵn sàng để đối chiếu chưa?",
+      "purpose": "workflow_intake"
+    }
+  ],
+  "legal_basis": [
+    {
+      "title": "Quy định chính sách phát triển nguồn nhân lực lĩnh vực vi mạch bán dẫn, trí tuệ nhân tạo trên địa bàn thành phố Đà Nẵng",
+      "code": "21/2026/NQ-HĐND (thành phố Đà Nẵng)"
+    }
+  ],
+  "legal_bases": [
+    {
+      "title": "Quy định chính sách phát triển nguồn nhân lực lĩnh vực vi mạch bán dẫn, trí tuệ nhân tạo trên địa bàn thành phố Đà Nẵng",
+      "code": "21/2026/NQ-HĐND (thành phố Đà Nẵng)"
+    }
+  ],
+  "faq": [
+    {
+      "question": "Có thể nộp qua kênh nào?",
+      "answer": "Các kênh hiện có: Trực tiếp, Trực tuyến, Dịch vụ bưu chính."
+    },
+    {
+      "question": "Thời gian xử lý tham chiếu là bao lâu?",
+      "answer": "Thời gian xử lý tham chiếu hiện có là 15 ngày làm việc."
+    },
+    {
+      "question": "Kết quả chính của thủ tục là gì?",
+      "answer": "Kết quả chính được trích xuất là Quyết định phê duyệt hỗ trợ của Sở Khoa học và Công nghệ hoặc văn bản thông báo kết quả xét duyệt hồ sơ đề nghị hỗ trợ."
+    }
+  ],
+  "guidance": {
+    "highlight_documents": [
+      {
+        "bucket": "required",
+        "name": "Đơn đề nghị hỗ trợ",
+        "conditions": [],
+        "attachment_path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/3_000606/Mau%2001.docx"
+      },
+      {
+        "bucket": "required",
+        "name": "Hợp đồng lao động với tổ chức, cơ quan nhà nước, đơn vị sự nghiệp công lập, cơ sở giáo dục đại học, doanh nghiệp trên địa thành phố Đà Nẵng",
+        "conditions": [],
+        "attachment_path": null
+      },
+      {
+        "bucket": "required",
+        "name": "Giấy phép lao động hoặc văn bản công nhận người lao động được miễn giấy phép lao động (đối với người nước ngoài)",
+        "conditions": [],
+        "attachment_path": null
+      },
+      {
+        "bucket": "conditional",
+        "name": "Hồ sơ chứng minh nhân lực đạt điều kiện tại Khoản 2 Điều 4 Nghị quyết số 21/2026/NQ-HĐND (Nếu hưởng chính sách về thu nhập ban đầu, chi phí lưu trú)",
+        "conditions": [
+          "Hồ sơ chứng minh nhân lực đạt điều kiện tại Khoản 2 Điều 4 Nghị quyết số 21/2026/NQ-HĐND (Nếu hưởng chính sách về thu nhập ban đầu, chi phí lưu trú)"
+        ],
+        "attachment_path": null
+      },
+      {
+        "bucket": "conditional",
+        "name": "Hóa đơn, hợp đồng đối với chi phí lưu trú (nếu hưởng chính sách này) và tài liệu chứng minh lưu trú thực tế",
+        "conditions": [
+          "Hóa đơn, hợp đồng đối với chi phí lưu trú (nếu hưởng chính sách này) và tài liệu chứng minh lưu trú thực tế"
+        ],
+        "attachment_path": null
+      },
+      {
+        "bucket": "conditional",
+        "name": "Hồ sơ chứng minh nhân lực có các hoạt động tại điểm c Khoản 3, điểm c Khoản 4 Điều 4 Nghị quyết số 21/2026/NQ-HĐND (Nếu hưởng chính sách về chi phí công bố bài báo khoa học, quyền sở hữu trí tuệ)",
+        "conditions": [
+          "Hồ sơ chứng minh nhân lực có các hoạt động tại điểm c Khoản 3, điểm c Khoản 4 Điều 4 Nghị quyết số 21/2026/NQ-HĐND (Nếu hưởng chính sách về chi phí công bố bài báo khoa học, quyền sở hữu trí tuệ)"
+        ],
+        "attachment_path": null
+      }
+    ],
+    "special_cases": [
+      "Có yếu tố nước ngoài",
+      "Có thể cần xác minh quan hệ lao động hoặc giấy phép làm việc"
+    ],
+    "common_errors": [
+      "Thiếu giấy tờ hợp pháp hóa hoặc giấy tờ nhân thân của phía nước ngoài.",
+      "Thiếu hồ sơ về vị trí việc làm, đơn vị sử dụng lao động hoặc điều kiện làm việc áp dụng."
+    ],
+    "validation_hints": [
+      "Nên xác định trước kênh nộp hồ sơ để biết có cần bản giấy, bản điện tử hay xuất trình trực tiếp.",
+      "Có mẫu biểu đính kèm, nên kiểm tra đúng biểu mẫu trước khi nộp.",
+      "Nên đối chiếu trước dữ liệu định danh và nơi cư trú để tránh bị yêu cầu bổ sung."
+    ]
+  },
+  "next_steps": {
+    "summary": "Nên kiểm tra trước giấy tờ định danh, nơi nộp và mẫu biểu liên quan, rồi chọn kênh nộp phù hợp: Trực tiếp, Trực tuyến, Dịch vụ bưu chính. Hiện có khoảng 6 mục giấy tờ cần theo dõi trong checklist.",
+    "time_badge": "15 ngày làm việc",
+    "result_label": "Quyết định phê duyệt hỗ trợ của Sở Khoa học và Công nghệ hoặc văn bản thông báo kết quả xét duyệt hồ sơ đề nghị hỗ trợ",
+    "primary_channel": "in_person",
+    "channels": [
+      "in_person",
+      "online",
+      "postal"
+    ]
+  },
+  "notes": [],
+  "provenance": {
+    "pipeline": "raw->structured->normalized->enriched->ui_api_payload",
+    "normalizer_version": "0.2.0",
+    "enricher_version": "0.2.0",
+    "mapping_notes": "excluded_from_clean_workflow_dataset",
+    "supported_group": true
+  }
+}

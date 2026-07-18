@@ -1,0 +1,316 @@
+{
+  "schema_version": "3.0",
+  "record_type": "public_service_procedure_payload",
+  "id": "procedure-1.013198",
+  "procedure_code": "1.013198",
+  "code": "1.013198",
+  "title": "Thủ tục công nhận tuổi nghề cơ yếu đối với người làm công tác cơ yếu thôi làm việc trong tổ chức cơ yếu (nghỉ hưu, chuyển ngành, thôi việc)",
+  "language": "vi",
+  "status": "generated_from_pipeline",
+  "field": "Cơ yếu",
+  "group_key": "huu_tri",
+  "workflow_family": "retirement_workflow",
+  "subflow": "chuan_bi_nghi_huu",
+  "source": {
+    "source_url": "file:///C:/Users/ku060/Downloads/VAIC%20source/data-pipeline/raw_data/1_013198/1_013198_procedure_detail.md",
+    "source_markdown_path": "C:\\Users\\ku060\\Downloads\\VAIC source\\data-pipeline\\raw_data\\1_013198\\1_013198_procedure_detail.md",
+    "normalized_payload_path": "C:\\Users\\ku060\\Downloads\\VAIC source\\data-pipeline\\govease-unified\\data\\normalized_structured\\1_013198_normalized_structured.json",
+    "enriched_payload_path": "C:\\Users\\ku060\\Downloads\\VAIC source\\data-pipeline\\govease-unified\\data\\enriched_structured_priority\\1_013198_enriched_structured.json"
+  },
+  "scope": {
+    "included": "Thủ tục này thuộc nhóm hưu trí, thường dùng để xác định điều kiện nghỉ hưu, trợ cấp hoặc chế độ hưởng theo hồ sơ bảo hiểm xã hội. Kết quả thường nhận được là Quyết định công nhận tuổi nghề cơ yếu. Thời gian xử lý tham khảo: 30 ngày làm việc.",
+    "not_included": []
+  },
+  "agency": {
+    "executing_agency": "Trưởng ban Cơ yếu Chính phủ",
+    "submission_place": null,
+    "receiving_places": []
+  },
+  "target_users": [
+    "Cán bộ",
+    "công chức",
+    "viên chức"
+  ],
+  "submission_methods": [
+    {
+      "code": "POSTAL",
+      "label": "Dịch vụ bưu chính",
+      "processing_time": "30 ngày làm việc",
+      "fee": null,
+      "description": null
+    },
+    {
+      "code": "IN_PERSON",
+      "label": "Trực tiếp",
+      "processing_time": "30 ngày làm việc",
+      "fee": null,
+      "description": null
+    }
+  ],
+  "processing_note": "Thời gian xử lý tham chiếu: 30 ngày làm việc. Nên rà trước quá trình đóng bảo hiểm, mốc tuổi và loại chế độ muốn hưởng trước khi nộp. Có thể chọn kênh nộp phù hợp: Trực tiếp, Dịch vụ bưu chính. Hiện có khoảng 4 mục giấy tờ cần theo dõi trong checklist.",
+  "documents": {
+    "normally_required": [
+      {
+        "name": "Đơn đề nghị xác nhận, công nhận tuổi nghề cơ yếu",
+        "quantity": "1 bản chính, 0 bản sao",
+        "notes": [],
+        "group": "default",
+        "attachment_path": null
+      }
+    ],
+    "conditional": [
+      {
+        "condition": "Xác nhận thời gian làm công tác cơ yếu của Thủ trưởng cơ quan, tổ chức trực tiếp quản lý người làm công tác cơ yếu đối với các trường hợp có lý lịch phức tạp, chưa rõ ràng hoặc hồ sơ không thể hiện rõ về thời gian làm việc trong tổ chức cơ yếu, thời gian trong kháng chiến chống Pháp, chống Mỹ hoặc được cử làm các nhiệm vụ đặc biệt; trường hợp cơ quan, tổ chức trực tiếp quản lý người làm công tác cơ yếu chia tách, sáp nhập hoặc giải thể thì Thủ trưởng cơ quan, tổ chức cấp trên trực tiếp xác nhận",
+        "document": "Xác nhận thời gian làm công tác cơ yếu của Thủ trưởng cơ quan, tổ chức trực tiếp quản lý người làm công tác cơ yếu đối với các trường hợp có lý lịch phức tạp, chưa rõ ràng hoặc hồ sơ không thể hiện rõ về thời gian làm việc trong tổ chức cơ yếu, thời gian trong kháng chiến chống Pháp, chống Mỹ hoặc được cử làm các nhiệm vụ đặc biệt; trường hợp cơ quan, tổ chức trực tiếp quản lý người làm công tác cơ yếu chia tách, sáp nhập hoặc giải thể thì Thủ trưởng cơ quan, tổ chức cấp trên trực tiếp xác nhận",
+        "quantity": "1 bản chính, 0 bản sao",
+        "notes": [],
+        "attachment_path": null
+      },
+      {
+        "condition": "Đối với các trường hợp giấy tờ không thể hiện quá trình làm công tác cơ yếu, người làm công tác cơ yếu lập Bản khai quá trình làm công tác cơ yếu trong tổ chức cơ yếu có xác nhận của cơ quan, tổ chức sử dụng cơ yếu trực tiếp quản lý người làm công tác cơ yếu trước khi thôi làm việc trong tổ chức cơ yếu; trường hợp cơ quan, tổ chức cũ đã chia tách, sáp nhập hoặc giải thể thì cơ quan, tổ chức quản lý cấp trên trực tiếp xác nhận",
+        "document": "Đối với các trường hợp giấy tờ không thể hiện quá trình làm công tác cơ yếu, người làm công tác cơ yếu lập Bản khai quá trình làm công tác cơ yếu trong tổ chức cơ yếu có xác nhận của cơ quan, tổ chức sử dụng cơ yếu trực tiếp quản lý người làm công tác cơ yếu trước khi thôi làm việc trong tổ chức cơ yếu; trường hợp cơ quan, tổ chức cũ đã chia tách, sáp nhập hoặc giải thể thì cơ quan, tổ chức quản lý cấp trên trực tiếp xác nhận",
+        "quantity": "1 bản chính, 0 bản sao",
+        "notes": [],
+        "attachment_path": null
+      },
+      {
+        "condition": "Bản sao có chứng thực Sơ yếu lý lịch của người làm công tác cơ yếu trong thời gian làm việc trong tổ chức cơ yếu hoặc Lý lịch đảng viên. Trường hợp không còn lý lịch thì căn cứ vào hồ sơ nghỉ hưu, chuyển ngành, thôi việc trong đó thể hiện quá trình làm công tác cơ yếu",
+        "document": "Bản sao có chứng thực Sơ yếu lý lịch của người làm công tác cơ yếu trong thời gian làm việc trong tổ chức cơ yếu hoặc Lý lịch đảng viên. Trường hợp không còn lý lịch thì căn cứ vào hồ sơ nghỉ hưu, chuyển ngành, thôi việc trong đó thể hiện quá trình làm công tác cơ yếu",
+        "quantity": "0 bản chính, 1 bản sao",
+        "notes": [],
+        "attachment_path": null
+      }
+    ],
+    "forms": [],
+    "presented": [],
+    "notes": [],
+    "summary": [
+      {
+        "group": "default",
+        "name": "Đơn đề nghị xác nhận, công nhận tuổi nghề cơ yếu",
+        "quantity": "1 bản chính, 0 bản sao",
+        "notes": [],
+        "attachment_path": null
+      },
+      {
+        "group": null,
+        "name": null,
+        "quantity": "1 bản chính, 0 bản sao",
+        "notes": [],
+        "attachment_path": null
+      },
+      {
+        "group": null,
+        "name": null,
+        "quantity": "1 bản chính, 0 bản sao",
+        "notes": [],
+        "attachment_path": null
+      },
+      {
+        "group": null,
+        "name": null,
+        "quantity": "0 bản chính, 1 bản sao",
+        "notes": [],
+        "attachment_path": null
+      }
+    ]
+  },
+  "steps": [
+    {
+      "order": 1,
+      "title": "Bước 1",
+      "description": "1.",
+      "example": null
+    },
+    {
+      "order": 2,
+      "title": "Bước 1.",
+      "description": "Bước 1. Người làm công tác cơ yếu thôi làm việc trong tổ chức cơ yếu (nghỉ hưu, chuyển ngành, thôi việc), cá nhân hoàn thiện hồ sơ gửi Cục Cơ yếu các Bộ, ngành theo hệ thống tổ chức quản lý người làm công tác cơ yếu trước khi thôi làm việc trong tổ chức cơ yếu.",
+      "example": null
+    },
+    {
+      "order": 3,
+      "title": "Bước 2.",
+      "description": "Bước 2. Cục Cơ yếu các Bộ, ngành có trách nhiệm kiểm tra tính hợp lệ của hồ sơ và công văn gửi Ban cơ yếu Chính phủ; trường hợp hồ sơ không hợp lệ, Cục Cơ yếu các Bộ, ngành có văn bản thông báo, hướng dẫn cho tổ chức, cá nhân hoàn thiện hồ sơ trong thời hạn 5 (năm) ngày làm việc kể từ ngày nhận được hồ sơ.",
+      "example": null
+    },
+    {
+      "order": 4,
+      "title": "Bước 3.",
+      "description": "Bước 3. Cục Chính trị - Tổ chức/Ban Cơ yếu Chính phủ có trách nhiệm thẩm định, báo cáo Trưởng ban Ban Cơ yếu Chính phủ xem xét, quyết định công nhận tuổi nghề cơ yếu.",
+      "example": null
+    }
+  ],
+  "input_fields": [
+    {
+      "field": "insured_person_name",
+      "label": "Người hưởng chế độ",
+      "type": "string",
+      "required": true
+    },
+    {
+      "field": "retirement_or_allowance_need",
+      "label": "Nhu cầu hưởng chế độ hưu trí/trợ cấp",
+      "type": "string",
+      "required": true
+    },
+    {
+      "field": "social_insurance_participation_known",
+      "label": "Đã rõ quá trình tham gia BHXH",
+      "type": "boolean",
+      "required": true
+    },
+    {
+      "field": "submission_channel_preference",
+      "label": "Kênh nộp dự kiến",
+      "type": "enum",
+      "required": false,
+      "options": [
+        "Trực tiếp",
+        "Dịch vụ bưu chính"
+      ]
+    }
+  ],
+  "validation_rules": [
+    {
+      "id": "required-1",
+      "severity": "error",
+      "field": "insured_person_name",
+      "rule": "Trường bắt buộc phải có dữ liệu hợp lệ trước khi nộp.",
+      "message": "Thiếu trường bắt buộc: Người hưởng chế độ."
+    },
+    {
+      "id": "required-2",
+      "severity": "error",
+      "field": "retirement_or_allowance_need",
+      "rule": "Trường bắt buộc phải có dữ liệu hợp lệ trước khi nộp.",
+      "message": "Thiếu trường bắt buộc: Nhu cầu hưởng chế độ hưu trí/trợ cấp."
+    },
+    {
+      "id": "required-3",
+      "severity": "error",
+      "field": "social_insurance_participation_known",
+      "rule": "Trường bắt buộc phải có dữ liệu hợp lệ trước khi nộp.",
+      "message": "Thiếu trường bắt buộc: Đã rõ quá trình tham gia BHXH."
+    },
+    {
+      "id": "hint-1",
+      "severity": "warning",
+      "field": "general",
+      "rule": "Nên xác định trước kênh nộp hồ sơ để biết có cần bản giấy, bản điện tử hay xuất trình trực tiếp.",
+      "message": "Nên xác định trước kênh nộp hồ sơ để biết có cần bản giấy, bản điện tử hay xuất trình trực tiếp."
+    },
+    {
+      "id": "hint-2",
+      "severity": "warning",
+      "field": "general",
+      "rule": "Nên rà lại quá trình tham gia bảo hiểm, độ tuổi và loại chế độ muốn hưởng trước khi nộp.",
+      "message": "Nên rà lại quá trình tham gia bảo hiểm, độ tuổi và loại chế độ muốn hưởng trước khi nộp."
+    }
+  ],
+  "common_errors": [],
+  "clarifying_questions": [
+    {
+      "id": "clarify_1",
+      "question": "Bạn đang muốn chuẩn bị nghỉ hưu hay giải quyết chế độ hưu trí cụ thể nào?",
+      "purpose": "workflow_intake"
+    },
+    {
+      "id": "clarify_2",
+      "question": "Quá trình tham gia bảo hiểm và độ tuổi hưởng chế độ đã xác định rõ chưa?",
+      "purpose": "workflow_intake"
+    }
+  ],
+  "legal_basis": [
+    {
+      "title": "Quy định về tính tuổi nghề cơ yếu.",
+      "code": "01/2016/TT-BQP"
+    },
+    {
+      "title": "Luật cơ yếu",
+      "code": "05/2011/QH13"
+    }
+  ],
+  "legal_bases": [
+    {
+      "title": "Quy định về tính tuổi nghề cơ yếu.",
+      "code": "01/2016/TT-BQP"
+    },
+    {
+      "title": "Luật cơ yếu",
+      "code": "05/2011/QH13"
+    }
+  ],
+  "faq": [
+    {
+      "question": "Có thể nộp qua kênh nào?",
+      "answer": "Các kênh hiện có: Trực tiếp, Dịch vụ bưu chính."
+    },
+    {
+      "question": "Thời gian xử lý tham chiếu là bao lâu?",
+      "answer": "Thời gian xử lý tham chiếu hiện có là 30 ngày làm việc."
+    },
+    {
+      "question": "Kết quả chính của thủ tục là gì?",
+      "answer": "Kết quả chính được trích xuất là Quyết định công nhận tuổi nghề cơ yếu."
+    }
+  ],
+  "guidance": {
+    "highlight_documents": [
+      {
+        "bucket": "required",
+        "name": "Đơn đề nghị xác nhận, công nhận tuổi nghề cơ yếu",
+        "conditions": [],
+        "attachment_path": null
+      },
+      {
+        "bucket": "conditional",
+        "name": "Xác nhận thời gian làm công tác cơ yếu của Thủ trưởng cơ quan, tổ chức trực tiếp quản lý người làm công tác cơ yếu đối với các trường hợp có lý lịch phức tạp, chưa rõ ràng hoặc hồ sơ không thể hiện rõ về thời gian làm việc trong tổ chức cơ yếu, thời gian trong kháng chiến chống Pháp, chống Mỹ hoặc được cử làm các nhiệm vụ đặc biệt; trường hợp cơ quan, tổ chức trực tiếp quản lý người làm công tác cơ yếu chia tách, sáp nhập hoặc giải thể thì Thủ trưởng cơ quan, tổ chức cấp trên trực tiếp xác nhận",
+        "conditions": [
+          "Xác nhận thời gian làm công tác cơ yếu của Thủ trưởng cơ quan, tổ chức trực tiếp quản lý người làm công tác cơ yếu đối với các trường hợp có lý lịch phức tạp, chưa rõ ràng hoặc hồ sơ không thể hiện rõ về thời gian làm việc trong tổ chức cơ yếu, thời gian trong kháng chiến chống Pháp, chống Mỹ hoặc được cử làm các nhiệm vụ đặc biệt; trường hợp cơ quan, tổ chức trực tiếp quản lý người làm công tác cơ yếu chia tách, sáp nhập hoặc giải thể thì Thủ trưởng cơ quan, tổ chức cấp trên trực tiếp xác nhận"
+        ],
+        "attachment_path": null
+      },
+      {
+        "bucket": "conditional",
+        "name": "Đối với các trường hợp giấy tờ không thể hiện quá trình làm công tác cơ yếu, người làm công tác cơ yếu lập Bản khai quá trình làm công tác cơ yếu trong tổ chức cơ yếu có xác nhận của cơ quan, tổ chức sử dụng cơ yếu trực tiếp quản lý người làm công tác cơ yếu trước khi thôi làm việc trong tổ chức cơ yếu; trường hợp cơ quan, tổ chức cũ đã chia tách, sáp nhập hoặc giải thể thì cơ quan, tổ chức quản lý cấp trên trực tiếp xác nhận",
+        "conditions": [
+          "Đối với các trường hợp giấy tờ không thể hiện quá trình làm công tác cơ yếu, người làm công tác cơ yếu lập Bản khai quá trình làm công tác cơ yếu trong tổ chức cơ yếu có xác nhận của cơ quan, tổ chức sử dụng cơ yếu trực tiếp quản lý người làm công tác cơ yếu trước khi thôi làm việc trong tổ chức cơ yếu; trường hợp cơ quan, tổ chức cũ đã chia tách, sáp nhập hoặc giải thể thì cơ quan, tổ chức quản lý cấp trên trực tiếp xác nhận"
+        ],
+        "attachment_path": null
+      },
+      {
+        "bucket": "conditional",
+        "name": "Bản sao có chứng thực Sơ yếu lý lịch của người làm công tác cơ yếu trong thời gian làm việc trong tổ chức cơ yếu hoặc Lý lịch đảng viên. Trường hợp không còn lý lịch thì căn cứ vào hồ sơ nghỉ hưu, chuyển ngành, thôi việc trong đó thể hiện quá trình làm công tác cơ yếu",
+        "conditions": [
+          "Bản sao có chứng thực Sơ yếu lý lịch của người làm công tác cơ yếu trong thời gian làm việc trong tổ chức cơ yếu hoặc Lý lịch đảng viên. Trường hợp không còn lý lịch thì căn cứ vào hồ sơ nghỉ hưu, chuyển ngành, thôi việc trong đó thể hiện quá trình làm công tác cơ yếu"
+        ],
+        "attachment_path": null
+      }
+    ],
+    "special_cases": [],
+    "common_errors": [],
+    "validation_hints": [
+      "Nên xác định trước kênh nộp hồ sơ để biết có cần bản giấy, bản điện tử hay xuất trình trực tiếp.",
+      "Nên rà lại quá trình tham gia bảo hiểm, độ tuổi và loại chế độ muốn hưởng trước khi nộp."
+    ]
+  },
+  "next_steps": {
+    "summary": "Nên rà trước quá trình đóng bảo hiểm, mốc tuổi và loại chế độ muốn hưởng trước khi nộp. Có thể chọn kênh nộp phù hợp: Trực tiếp, Dịch vụ bưu chính. Hiện có khoảng 4 mục giấy tờ cần theo dõi trong checklist.",
+    "time_badge": "30 ngày làm việc",
+    "result_label": "Quyết định công nhận tuổi nghề cơ yếu",
+    "primary_channel": "postal",
+    "channels": [
+      "in_person",
+      "postal"
+    ]
+  },
+  "notes": [],
+  "provenance": {
+    "pipeline": "raw->structured->normalized->enriched->ui_api_payload",
+    "normalizer_version": "0.2.0",
+    "enricher_version": "0.2.0",
+    "mapping_notes": "workflow_generated:huu_tri/chuan_bi_nghi_huu",
+    "supported_group": true
+  }
+}

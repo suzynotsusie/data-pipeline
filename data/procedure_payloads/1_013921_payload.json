@@ -1,0 +1,371 @@
+{
+  "schema_version": "3.0",
+  "record_type": "public_service_procedure_payload",
+  "id": "procedure-1.013921",
+  "procedure_code": "1.013921",
+  "code": "1.013921",
+  "title": "Sử dụng tài liệu lưu trữ tại lưu trữ lịch sử của nhà nước",
+  "language": "vi",
+  "status": "generated_from_pipeline",
+  "field": "Văn thư và Lưu trữ nhà nước",
+  "group_key": "cu_tru_giay_to",
+  "workflow_family": null,
+  "subflow": null,
+  "source": {
+    "source_url": "file:///C:/Users/ku060/Downloads/VAIC%20source/data-pipeline/raw_data/1_013921/1_013921_procedure_detail.md",
+    "source_markdown_path": "C:\\Users\\ku060\\Downloads\\VAIC source\\data-pipeline\\raw_data\\1_013921\\1_013921_procedure_detail.md",
+    "normalized_payload_path": "C:\\Users\\ku060\\Downloads\\VAIC source\\data-pipeline\\govease-unified\\data\\normalized_structured\\1_013921_normalized_structured.json",
+    "enriched_payload_path": "C:\\Users\\ku060\\Downloads\\VAIC source\\data-pipeline\\govease-unified\\data\\enriched_structured_priority\\1_013921_enriched_structured.json"
+  },
+  "scope": {
+    "included": "Thủ tục này thuộc nhóm cư trú và giấy tờ, thường cần kiểm tra thông tin định danh hoặc hồ sơ giấy tờ chuyên ngành. Kết quả thường nhận được là Các hồ sơ, văn bản, tài liệu được cung cấp. Thời gian xử lý tham khảo: 1 ngày làm việc.",
+    "not_included": []
+  },
+  "agency": {
+    "executing_agency": null,
+    "submission_place": null,
+    "receiving_places": []
+  },
+  "target_users": [
+    "Tổ chức (không bao gồm doanh nghiệp",
+    "HTX)",
+    "Công dân Việt Nam"
+  ],
+  "submission_methods": [
+    {
+      "code": "ONLINE",
+      "label": "Trực tuyến",
+      "processing_time": "1 ngày làm việc",
+      "fee": null,
+      "description": "Thời hạn cung cấp tài liệu chậm nhất là 01 ngày làm việc kể từ ngày tiếp nhận Phiếu yêu cầu đọc tài liệu lưu trữ"
+    },
+    {
+      "code": "ONLINE",
+      "label": "Trực tuyến",
+      "processing_time": "2 ngày làm việc",
+      "fee": null,
+      "description": "chậm nhất là 02 ngày làm việc kể từ ngày tiếp nhận Phiếu yêu cầu sao và xác thực tài liệu lưu trữ"
+    },
+    {
+      "code": "ONLINE",
+      "label": "Trực tuyến",
+      "processing_time": "7 ngày làm việc",
+      "fee": null,
+      "description": "Đối với tài liệu lưu trữ tiếp cận có điều kiện, thời hạn cung cấp tài liệu chậm nhất là 07 ngày làm việc kể từ ngày tiếp nhận Phiếu yêu cầu đọc tài liệu lưu trữ, Phiếu yêu cầu sao và xác thực tài liệu lưu trữ."
+    },
+    {
+      "code": "IN_PERSON",
+      "label": "Trực tiếp",
+      "processing_time": "1 ngày làm việc",
+      "fee": null,
+      "description": "Thời hạn cung cấp tài liệu chậm nhất là 01 ngày làm việc kể từ ngày tiếp nhận Phiếu yêu cầu đọc tài liệu lưu trữ"
+    },
+    {
+      "code": "IN_PERSON",
+      "label": "Trực tiếp",
+      "processing_time": "2 ngày làm việc",
+      "fee": null,
+      "description": "chậm nhất là 02 ngày làm việc kể từ ngày tiếp nhận Phiếu yêu cầu sao và xác thực tài liệu lưu trữ"
+    },
+    {
+      "code": "IN_PERSON",
+      "label": "Trực tiếp",
+      "processing_time": "7 ngày làm việc",
+      "fee": null,
+      "description": "Đối với tài liệu lưu trữ tiếp cận có điều kiện, thời hạn cung cấp tài liệu chậm nhất là 07 ngày làm việc kể từ ngày tiếp nhận Phiếu yêu cầu đọc tài liệu lưu trữ, Phiếu yêu cầu sao và xác thực tài liệu lưu trữ."
+    }
+  ],
+  "processing_note": "Thời gian xử lý tham chiếu: 1 ngày làm việc. Nên kiểm tra trước giấy tờ định danh, nơi nộp và mẫu biểu liên quan, rồi chọn kênh nộp phù hợp: Trực tiếp, Trực tuyến. Hiện có khoảng 4 mục giấy tờ cần theo dõi trong checklist.",
+  "documents": {
+    "normally_required": [
+      {
+        "name": "Phiếu yêu cầu đọc tài liệu lưu trữ hoặc Phiếu yêu cầu sao và xác thực tài liệu lưu trữ",
+        "quantity": "1 bản chính, 0 bản sao",
+        "notes": [],
+        "group": "default",
+        "attachment_path": null
+      },
+      {
+        "name": "Phiếu đăng ký sử dụng tài liệu lưu trữ",
+        "quantity": "1 bản chính, 0 bản sao",
+        "notes": [],
+        "group": "default",
+        "attachment_path": null
+      }
+    ],
+    "conditional": [
+      {
+        "condition": "Giấy giới thiệu hoặc văn bản đề nghị của cơ quan, tổ chức nơi công tác (trường hợp sử dụng vì mục đích công tác)",
+        "document": "Giấy giới thiệu hoặc văn bản đề nghị của cơ quan, tổ chức nơi công tác (trường hợp sử dụng vì mục đích công tác)",
+        "quantity": "1 bản chính, 0 bản sao",
+        "notes": [],
+        "attachment_path": null
+      },
+      {
+        "condition": "Văn bản liên quan về mục đích sử dụng, đối tượng ưu tiên (nếu có)",
+        "document": "Văn bản liên quan về mục đích sử dụng, đối tượng ưu tiên (nếu có)",
+        "quantity": "1 bản chính, 0 bản sao",
+        "notes": [],
+        "attachment_path": null
+      }
+    ],
+    "forms": [],
+    "presented": [],
+    "notes": [],
+    "summary": [
+      {
+        "group": "default",
+        "name": "Phiếu yêu cầu đọc tài liệu lưu trữ hoặc Phiếu yêu cầu sao và xác thực tài liệu lưu trữ",
+        "quantity": "1 bản chính, 0 bản sao",
+        "notes": [],
+        "attachment_path": null
+      },
+      {
+        "group": "default",
+        "name": "Phiếu đăng ký sử dụng tài liệu lưu trữ",
+        "quantity": "1 bản chính, 0 bản sao",
+        "notes": [],
+        "attachment_path": null
+      },
+      {
+        "group": null,
+        "name": null,
+        "quantity": "1 bản chính, 0 bản sao",
+        "notes": [],
+        "attachment_path": null
+      },
+      {
+        "group": null,
+        "name": null,
+        "quantity": "1 bản chính, 0 bản sao",
+        "notes": [],
+        "attachment_path": null
+      }
+    ]
+  },
+  "steps": [
+    {
+      "order": 1,
+      "title": "Bước 1",
+      "description": "1. -",
+      "example": null
+    },
+    {
+      "order": 2,
+      "title": "Bước 1:",
+      "description": "Bước 1: Độc giả có nhu cầu sử dụng tài liệu lưu trữ điền các thông tin vào Phiếu đăng ký sử dụng tài liệu và cung cấp các văn bản liên quan về mục đích sử dụng, đối tượng ưu tiên (nếu có). -",
+      "example": null
+    },
+    {
+      "order": 3,
+      "title": "Bước 2:",
+      "description": "Bước 2: Người đứng đầu lưu trữ lịch sử của Nhà nước ở trung ương xem xét, phê duyệt Phiếu đăng ký sử dụng tài liệu lưu trữ của độc giả. -",
+      "example": null
+    },
+    {
+      "order": 4,
+      "title": "Bước 3:",
+      "description": "Bước 3: Độc giả điền thông tin vào Phiếu yêu cầu đọc tài liệu lưu trữ hoặc Phiếu yêu cầu sao và xác thực tài liệu lưu trữ. -",
+      "example": null
+    },
+    {
+      "order": 5,
+      "title": "Bước 4:",
+      "description": "Bước 4: Người đứng đầu lưu trữ lịch sử của Nhà nước ở trung ương xem xét, phê duyệt Phiếu yêu cầu đọc tài liệu lưu trữ hoặc Phiếu yêu cầu sao và xác thực tài liệu lưu trữ của độc giả. Đối với tài liệu lưu trữ tiếp cận có điều kiện, người đứng đầu lưu trữ lịch sử của Nhà nước ở trung ương quyết định việc sử dụng tài liệu lưu trữ của độc giả sau khi có sự phê duyệt của cơ quan tham mưu quản lý nhà nước về lưu trữ. -",
+      "example": null
+    },
+    {
+      "order": 6,
+      "title": "Bước 5:",
+      "description": "Bước 5: Độc giả nhận tài liệu theo Phiếu yêu cầu đã được phê duyệt.",
+      "example": null
+    }
+  ],
+  "input_fields": [
+    {
+      "field": "document_request_type",
+      "label": "Loại giấy tờ cần xử lý",
+      "type": "string",
+      "required": true
+    },
+    {
+      "field": "submission_channel_preference",
+      "label": "Kênh nộp dự kiến",
+      "type": "enum",
+      "required": false,
+      "options": [
+        "Trực tiếp",
+        "Trực tuyến"
+      ]
+    },
+    {
+      "field": "identity_document_available",
+      "label": "Có giấy tờ định danh",
+      "type": "boolean",
+      "required": true
+    },
+    {
+      "field": "residency_or_status_known",
+      "label": "Biết rõ nơi cư trú hoặc tình trạng hiện tại",
+      "type": "boolean",
+      "required": false
+    }
+  ],
+  "validation_rules": [
+    {
+      "id": "required-1",
+      "severity": "error",
+      "field": "document_request_type",
+      "rule": "Trường bắt buộc phải có dữ liệu hợp lệ trước khi nộp.",
+      "message": "Thiếu trường bắt buộc: Loại giấy tờ cần xử lý."
+    },
+    {
+      "id": "required-3",
+      "severity": "error",
+      "field": "identity_document_available",
+      "rule": "Trường bắt buộc phải có dữ liệu hợp lệ trước khi nộp.",
+      "message": "Thiếu trường bắt buộc: Có giấy tờ định danh."
+    },
+    {
+      "id": "hint-1",
+      "severity": "warning",
+      "field": "general",
+      "rule": "Nên xác định trước kênh nộp hồ sơ để biết có cần bản giấy, bản điện tử hay xuất trình trực tiếp.",
+      "message": "Nên xác định trước kênh nộp hồ sơ để biết có cần bản giấy, bản điện tử hay xuất trình trực tiếp."
+    },
+    {
+      "id": "hint-2",
+      "severity": "warning",
+      "field": "general",
+      "rule": "Nên đối chiếu trước dữ liệu định danh và nơi cư trú để tránh bị yêu cầu bổ sung.",
+      "message": "Nên đối chiếu trước dữ liệu định danh và nơi cư trú để tránh bị yêu cầu bổ sung."
+    }
+  ],
+  "common_errors": [
+    {
+      "field": "general",
+      "issue": "Điền sai mẫu tờ khai hoặc chọn sai biểu mẫu đi kèm.",
+      "fix": "Nên xác định trước kênh nộp hồ sơ để biết có cần bản giấy, bản điện tử hay xuất trình trực tiếp."
+    }
+  ],
+  "clarifying_questions": [
+    {
+      "id": "clarify_1",
+      "question": "Bạn đang xử lý giấy tờ gì và muốn nộp trực tiếp hay trực tuyến?",
+      "purpose": "workflow_intake"
+    },
+    {
+      "id": "clarify_2",
+      "question": "Thông tin định danh và nơi cư trú hiện tại đã sẵn sàng để đối chiếu chưa?",
+      "purpose": "workflow_intake"
+    }
+  ],
+  "legal_basis": [
+    {
+      "title": "Quy định nghiệp vụ lữu trữ tài liệu lưu trữ số",
+      "code": "05/2025/TT-BNV"
+    },
+    {
+      "title": "Luật Lưu trữ",
+      "code": "33/2024/QH15"
+    },
+    {
+      "title": "Thông tư",
+      "code": "275/2016/TT-BTC"
+    },
+    {
+      "title": "quy định chi tiết một số điều của Luật Lưu trữ",
+      "code": "06/2025/TT-BNV"
+    }
+  ],
+  "legal_bases": [
+    {
+      "title": "Quy định nghiệp vụ lữu trữ tài liệu lưu trữ số",
+      "code": "05/2025/TT-BNV"
+    },
+    {
+      "title": "Luật Lưu trữ",
+      "code": "33/2024/QH15"
+    },
+    {
+      "title": "Thông tư",
+      "code": "275/2016/TT-BTC"
+    },
+    {
+      "title": "quy định chi tiết một số điều của Luật Lưu trữ",
+      "code": "06/2025/TT-BNV"
+    }
+  ],
+  "faq": [
+    {
+      "question": "Có thể nộp qua kênh nào?",
+      "answer": "Các kênh hiện có: Trực tiếp, Trực tuyến."
+    },
+    {
+      "question": "Thời gian xử lý tham chiếu là bao lâu?",
+      "answer": "Thời gian xử lý tham chiếu hiện có là 1 ngày làm việc."
+    },
+    {
+      "question": "Kết quả chính của thủ tục là gì?",
+      "answer": "Kết quả chính được trích xuất là Các hồ sơ, văn bản, tài liệu được cung cấp."
+    }
+  ],
+  "guidance": {
+    "highlight_documents": [
+      {
+        "bucket": "required",
+        "name": "Phiếu yêu cầu đọc tài liệu lưu trữ hoặc Phiếu yêu cầu sao và xác thực tài liệu lưu trữ",
+        "conditions": [],
+        "attachment_path": null
+      },
+      {
+        "bucket": "required",
+        "name": "Phiếu đăng ký sử dụng tài liệu lưu trữ",
+        "conditions": [],
+        "attachment_path": null
+      },
+      {
+        "bucket": "conditional",
+        "name": "Giấy giới thiệu hoặc văn bản đề nghị của cơ quan, tổ chức nơi công tác (trường hợp sử dụng vì mục đích công tác)",
+        "conditions": [
+          "Giấy giới thiệu hoặc văn bản đề nghị của cơ quan, tổ chức nơi công tác (trường hợp sử dụng vì mục đích công tác)"
+        ],
+        "attachment_path": null
+      },
+      {
+        "bucket": "conditional",
+        "name": "Văn bản liên quan về mục đích sử dụng, đối tượng ưu tiên (nếu có)",
+        "conditions": [
+          "Văn bản liên quan về mục đích sử dụng, đối tượng ưu tiên (nếu có)"
+        ],
+        "attachment_path": null
+      }
+    ],
+    "special_cases": [],
+    "common_errors": [
+      "Điền sai mẫu tờ khai hoặc chọn sai biểu mẫu đi kèm."
+    ],
+    "validation_hints": [
+      "Nên xác định trước kênh nộp hồ sơ để biết có cần bản giấy, bản điện tử hay xuất trình trực tiếp.",
+      "Nên đối chiếu trước dữ liệu định danh và nơi cư trú để tránh bị yêu cầu bổ sung."
+    ]
+  },
+  "next_steps": {
+    "summary": "Nên kiểm tra trước giấy tờ định danh, nơi nộp và mẫu biểu liên quan, rồi chọn kênh nộp phù hợp: Trực tiếp, Trực tuyến. Hiện có khoảng 4 mục giấy tờ cần theo dõi trong checklist.",
+    "time_badge": "1 ngày làm việc",
+    "result_label": "Các hồ sơ, văn bản, tài liệu được cung cấp",
+    "primary_channel": "online",
+    "channels": [
+      "in_person",
+      "online"
+    ]
+  },
+  "notes": [],
+  "provenance": {
+    "pipeline": "raw->structured->normalized->enriched->ui_api_payload",
+    "normalizer_version": "0.2.0",
+    "enricher_version": "0.2.0",
+    "mapping_notes": "excluded_from_clean_workflow_dataset",
+    "supported_group": true
+  }
+}

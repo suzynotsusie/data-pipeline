@@ -1,15 +1,20 @@
 from __future__ import annotations
 
 import json
+import logging
 import re
 import unicodedata
 from dataclasses import dataclass, field
 from pathlib import Path
+from time import perf_counter
 from typing import Any
 from uuid import uuid4
 
 from govease_ai import LLMIntentParser, ProcedureAssistant
 from govease_ai.procedure_data import DEFAULT_DATA_ROOT
+
+CATALOG_ROOT = Path(__file__).resolve().parents[3] / "data" / "catalog"
+logger = logging.getLogger(__name__)
 
 
 def _normalize(text: str) -> str:
@@ -267,26 +272,61 @@ class WorkflowIntakeService:
                 config=_read_json(data_root / "residence_procedures" / "workflow_engine_config.json"),
             ),
         }
+        self.domains = self._load_domains(data_root)
         for domain in self.domains.values():
             domain.node_map = {node["id"]: node for node in domain.config["decision_tree"]["nodes"]}
         self.code_to_domain: dict[str, str] = {}
+        self.route_by_domain_and_code: dict[tuple[str, str], dict[str, Any]] = {}
         for domain_key, domain in self.domains.items():
             for route in domain.config["decision_tree"]["routes"]:
                 procedure_code = route.get("procedure_code")
                 if procedure_code:
                     self.code_to_domain[procedure_code] = domain_key
+                    self.route_by_domain_and_code[(domain_key, procedure_code)] = route
+
+    def _load_domains(self, data_root: Path) -> dict[str, DomainBundle]:
+        labels = _workflow_domain_labels()
+        domains: dict[str, DomainBundle] = {}
+
+        legacy_paths = {
+            "birth_registration": data_root / "birth_procedure" / "workflow_engine_config.json",
+            "residence_management": data_root / "residence_procedures" / "workflow_engine_config.json",
+        }
+        for key, path in legacy_paths.items():
+            if not path.exists():
+                continue
+            domains[key] = DomainBundle(
+                key=key,
+                label=labels.get(key, key.replace("_", " ").title()),
+                config=_read_json(path),
+            )
+
+        workflow_root = data_root / "workflows"
+        if workflow_root.exists():
+            for path in sorted(workflow_root.glob("*/workflow_engine_config.json")):
+                config = _read_json(path)
+                key = str(config.get("domain") or path.parent.name)
+                domains[key] = DomainBundle(
+                    key=key,
+                    label=labels.get(key, key.replace("_", " ").title()),
+                    config=config,
+                )
+        return domains
 
     def _infer_entry_from_routes(self, message: str) -> dict[str, Any] | None:
         text = _normalize(message)
         if _contains_any(text, ["bao hiem", "bhyt"]) and _contains_any(text, ["con", "tre", "em be", "so sinh", "moi sinh"]):
             return {
-                "domain_key": "birth_registration",
+                "domain_key": "co_con_nho" if "co_con_nho" in self.domains else "birth_registration",
                 "confidence": 0.78,
                 "slot_updates": {
-                    "request_type": "new_registration",
-                    "wants_linked_bundle": "bhyt_only",
+                    **({"subdomain_key": "bao_hiem_y_te"} if "co_con_nho" in self.domains else {}),
+                    **({} if "co_con_nho" in self.domains else {"request_type": "new_registration", "wants_linked_bundle": "bhyt_only"}),
                 },
             }
+        domain_guess = _best_matching_domain_subdomain(self.domains, message)
+        if domain_guess:
+            return domain_guess
         procedure_code, score = self.assistant.retriever.classify(message)
         if not procedure_code or score <= 0:
             return None
@@ -294,15 +334,21 @@ class WorkflowIntakeService:
         if domain_key not in self.domains:
             return None
 
-        slot_updates = _heuristic_parse(domain_key, message).get("slot_updates", {})
+        route = self.route_by_domain_and_code.get((domain_key, procedure_code))
+        route_conditions = dict((route or {}).get("conditions") or {})
+        slot_updates = route_conditions or _heuristic_parse(domain_key, message).get("slot_updates", {})
         return {
             "domain_key": domain_key,
-            "confidence": 0.6,
+            "confidence": 0.6 if route_conditions else 0.55,
             "slot_updates": slot_updates,
         }
 
     def _infer_entry_with_ai(self, message: str) -> dict[str, Any] | None:
-        raw = self.intent_parser.parse(message)
+        raw = self.intent_parser.parse(
+            message,
+            supported_domains=list(self.domains.keys()),
+            supported_taxonomy=_taxonomy_payload(self.domains),
+        )
         if not isinstance(raw, dict):
             return None
         domain_key = raw.get("domain_key")
@@ -315,6 +361,13 @@ class WorkflowIntakeService:
             return None
         confidence_value = max(0.0, min(confidence_value, 1.0))
         slot_updates = _sanitize_slot_updates(domain_key, raw.get("slot_updates") or {})
+        subdomain_key = raw.get("subdomain_key")
+        if (
+            domain_key in self.domains
+            and isinstance(subdomain_key, str)
+            and subdomain_key in _subdomain_labels(self.domains[domain_key].config)
+        ):
+            slot_updates.setdefault("subdomain_key", subdomain_key)
         return {
             "domain_key": domain_key,
             "confidence": confidence_value,
@@ -327,185 +380,240 @@ class WorkflowIntakeService:
         *,
         session_id: str | None = None,
         preferred_domain_key: str | None = None,
+        preferred_subdomain_key: str | None = None,
     ) -> dict[str, Any]:
+        diagnostics = _RequestDiagnostics()
         session = self.sessions.get(session_id or "") or WorkflowSession(session_id=session_id or str(uuid4()))
-        session.messages.append({"role": "user", "content": message})
-        _update_interaction_mode(session, message)
-        if session.domain_key is None and preferred_domain_key in self.domains:
-            session.domain_key = preferred_domain_key
+        try:
+            session.messages.append({"role": "user", "content": message})
+            _update_interaction_mode(session, message)
+            locked_domain_key = preferred_domain_key if preferred_domain_key in self.domains else None
+            if session.domain_key is None and preferred_domain_key in self.domains:
+                session.domain_key = preferred_domain_key
+            if preferred_subdomain_key and session.slots.get("subdomain_key") in (None, "", "unknown"):
+                session.slots["subdomain_key"] = preferred_subdomain_key
 
-        latest_entry = _heuristic_entry_analysis(message)
-        if session.domain_key is None:
-            heuristic_entry = _apply_entry_heuristic_hints(message, latest_entry)
-            ai_entry = self._infer_entry_with_ai(message)
-            if _entry_has_domain(ai_entry):
-                latest_entry = _merge_entry(ai_entry, heuristic_entry) or heuristic_entry
-            else:
-                latest_entry = heuristic_entry
-            if latest_entry.get("domain_key") not in self.domains:
-                route_hint = self._infer_entry_from_routes(message)
-                if _entry_is_better(route_hint, latest_entry):
-                    latest_entry = route_hint
-        switched = _maybe_switch_domain(session, latest_entry)
+            latest_entry = _heuristic_entry_analysis(message)
+            diagnostics.mark("heuristic_entry")
+            if locked_domain_key:
+                latest_entry = {
+                    "domain_key": locked_domain_key,
+                    "confidence": 1.0,
+                    "slot_updates": dict(session.slots),
+                }
+            if session.domain_key is None:
+                heuristic_entry = _apply_entry_heuristic_hints(message, latest_entry)
+                if _should_lock_legacy_first_turn(message, heuristic_entry):
+                    latest_entry = heuristic_entry
+                else:
+                    ai_entry = self._infer_entry_with_ai(message)
+                    diagnostics.mark("ai_domain_inference")
+                    if _entry_has_domain(ai_entry):
+                        latest_entry = _merge_entry(ai_entry, heuristic_entry) or heuristic_entry
+                    else:
+                        latest_entry = heuristic_entry
+                    generic_hint = _best_matching_domain_subdomain(self.domains, message)
+                    diagnostics.mark("catalog_domain_match")
+                    if _entry_is_better(generic_hint, latest_entry) and not _should_keep_legacy_entry(
+                        message,
+                        latest_entry,
+                        generic_hint,
+                    ):
+                        latest_entry = _merge_entry(generic_hint, latest_entry) or generic_hint
+                if latest_entry.get("domain_key") not in self.domains:
+                    route_hint = self._infer_entry_from_routes(message)
+                    diagnostics.mark("route_classifier_fallback")
+                    if _entry_is_better(route_hint, latest_entry):
+                        latest_entry = route_hint
+            switched = _maybe_switch_domain(session, latest_entry)
+            diagnostics.mark("domain_resolution")
 
-        if session.completed_route_id and session.domain_key:
+            if session.completed_route_id and session.domain_key:
+                domain = self.domains[session.domain_key]
+                route = next(
+                    item for item in domain.config["decision_tree"]["routes"] if item["route_id"] == session.completed_route_id
+                )
+                response = self._finalize_route(session, domain, route, diagnostics=diagnostics)
+                self.sessions[session.session_id] = session
+                return response
+
+            if not session.domain_key:
+                domain_key = latest_entry.get("domain_key")
+                if domain_key not in self.domains:
+                    self.sessions[session.session_id] = session
+                    return self._response(
+                            session,
+                            status="needs_clarification",
+                        question=_build_domain_selection_message(session),
+                        quick_replies=_domain_selection_replies(self.domains),
+                        confidence=0.2,
+                    )
+                session.domain_key = domain_key
+                entry_updates = dict(latest_entry.get("slot_updates") or {})
+                if _should_defer_route_resolution(domain_key, message):
+                    entry_updates = _strip_route_level_updates(domain_key, entry_updates)
+                if entry_updates:
+                    _apply_updates(session, entry_updates)
+
             domain = self.domains[session.domain_key]
-            route = next(
-                item for item in domain.config["decision_tree"]["routes"] if item["route_id"] == session.completed_route_id
+            defer_route_resolution = _should_defer_route_resolution(domain.key, message)
+            if domain.key not in {"birth_registration", "residence_management"} and not session.slots.get("subdomain_key"):
+                domain_hint = _best_matching_domain_subdomain({domain.key: domain}, message)
+                if domain_hint and domain_hint.get("slot_updates"):
+                    domain_hint_updates = dict(domain_hint["slot_updates"])
+                    if defer_route_resolution:
+                        domain_hint_updates = _strip_route_level_updates(domain.key, domain_hint_updates)
+                    if domain_hint_updates:
+                        _apply_updates(session, domain_hint_updates)
+            effective_subdomain_key = preferred_subdomain_key or (
+                session.slots.get("subdomain_key") if isinstance(session.slots.get("subdomain_key"), str) else None
             )
-            response = self._finalize_route(session, domain, route)
-            self.sessions[session.session_id] = session
-            return response
+            inferred_route = None
+            if not defer_route_resolution:
+                inferred_route = self._infer_route_from_existing_domain(domain.key, message, effective_subdomain_key)
+            diagnostics.mark("existing_domain_route_inference")
+            if inferred_route:
+                _apply_updates(session, inferred_route["slot_updates"])
 
-        if not session.domain_key:
-            domain_key = latest_entry.get("domain_key")
-            if domain_key not in self.domains:
+            explain_payload = _maybe_build_explain_mode_payload(domain, session, message)
+            if explain_payload is not None:
                 self.sessions[session.session_id] = session
                 return self._response(
-                    session,
+                        session,
                     status="needs_clarification",
-                    question=_build_domain_selection_message(session),
-                    quick_replies=[
-                        {"value": "birth_registration", "label": "Khai sinh"},
-                        {"value": "residence_management", "label": "Cư trú"},
-                    ],
-                    confidence=0.2,
-                )
-            session.domain_key = domain_key
-            entry_updates = latest_entry.get("slot_updates") or {}
-            if entry_updates:
-                _apply_updates(session, dict(entry_updates))
-
-        domain = self.domains[session.domain_key]
-
-        explain_payload = _maybe_build_explain_mode_payload(domain, session, message)
-        if explain_payload is not None:
-            self.sessions[session.session_id] = session
-            return self._response(
-                session,
-                status="needs_clarification",
-                question=explain_payload["question"],
-                quick_replies=explain_payload["quick_replies"],
-                confidence=float(explain_payload["confidence"]),
-            )
-
-        if not session.current_node_id and session.slots:
-            exact = domain.exact_match(session.slots)
-            if exact:
-                session.completed_route_id = exact["route_id"]
-                self.sessions[session.session_id] = session
-                return self._finalize_route(session, domain, exact)
-
-            next_node = _next_question(domain, session)
-            if next_node and len(session.messages) == 1:
-                session.current_node_id = next_node["id"]
-                session.asked_node_ids.append(next_node["id"])
-                self.sessions[session.session_id] = session
-                return self._response(
-                    session,
-                    status="needs_clarification",
-                    question=_build_question_message(domain, session, next_node, first_turn=True),
-                    quick_replies=_quick_replies(next_node, session),
-                    confidence=latest_entry.get("confidence", 0.78),
+                    question=explain_payload["question"],
+                    quick_replies=explain_payload["quick_replies"],
+                    confidence=float(explain_payload["confidence"]),
                 )
 
-        if session.current_node_id is None:
-            synthetic_start = _synthetic_start_node(domain.key) if not session.slots else None
-            if synthetic_start:
-                session.current_node_id = synthetic_start
-                session.asked_node_ids.append(synthetic_start)
-            else:
-                first_node = _next_question(domain, session)
-                if not first_node:
+            if not session.current_node_id and session.slots:
+                exact = domain.exact_match(session.slots)
+                if exact and not defer_route_resolution:
+                    session.completed_route_id = exact["route_id"]
+                    self.sessions[session.session_id] = session
+                    return self._finalize_route(session, domain, exact, diagnostics=diagnostics)
+
+                next_node = _next_question(domain, session)
+                if next_node and len(session.messages) == 1:
+                    session.current_node_id = next_node["id"]
+                    session.asked_node_ids.append(next_node["id"])
                     self.sessions[session.session_id] = session
                     return self._response(
                         session,
                         status="needs_clarification",
-                        question="Mình chưa đủ dữ liệu để chọn đúng thủ tục. Bạn mô tả lại ngắn gọn hơn giúp mình nhé.",
-                        quick_replies=[],
-                        confidence=0.2,
+                        question=_build_question_message(domain, session, next_node, first_turn=True),
+                        quick_replies=_quick_replies(next_node, session),
+                        confidence=latest_entry.get("confidence", 0.78),
                     )
-                session.current_node_id = first_node["id"]
-                session.asked_node_ids.append(first_node["id"])
 
-        if _is_synthetic_node(domain.key, session.current_node_id):
-            response = self._handle_synthetic(domain, session, message)
-            self.sessions[session.session_id] = session
-            return response
+            if session.current_node_id is None:
+                synthetic_start = _synthetic_start_node(domain.key) if not session.slots else None
+                if synthetic_start:
+                    session.current_node_id = synthetic_start
+                    session.asked_node_ids.append(synthetic_start)
+                else:
+                    first_node = _next_question(domain, session)
+                    if not first_node:
+                        self.sessions[session.session_id] = session
+                        return self._response(
+                            session,
+                            status="needs_clarification",
+                            question="M?nh ch?a ?? d? li?u ?? ch?n ??ng th? t?c. B?n m? t? l?i ng?n g?n h?n gi?p m?nh nh?.",
+                            quick_replies=[],
+                            confidence=0.2,
+                        )
+                    session.current_node_id = first_node["id"]
+                    session.asked_node_ids.append(first_node["id"])
 
-        parsed = _heuristic_parse(domain.key, message, domain.node_map[session.current_node_id]["slot"])
-        updates = parsed.get("slot_updates") or {}
-        previous_slots = dict(session.slots)
-        if updates:
-            _apply_updates(session, updates)
-
-        exact = domain.exact_match(session.slots)
-        if exact:
-            session.completed_route_id = exact["route_id"]
-            session.current_node_id = None
-            self.sessions[session.session_id] = session
-            return self._finalize_route(session, domain, exact)
-
-        next_node = _next_question(domain, session)
-        if not next_node:
-            candidates = domain.route_candidates(session.slots)
-            if len(candidates) == 0 and updates:
-                session.slots = previous_slots
-                retry_payload = _retry_current_question_payload(
-                    domain,
-                    session,
-                    prefix="Mình thấy câu trả lời vừa rồi chưa khớp với nhánh đang hỏi, nên mình hỏi lại đúng 1 ý này để tránh đi sai thủ tục:",
-                    confidence=0.4,
-                )
+            if _is_synthetic_node(domain.key, session.current_node_id):
+                response = self._handle_synthetic(domain, session, message)
                 self.sessions[session.session_id] = session
-                return self._response(
-                    session,
-                    status="needs_clarification",
-                    question=retry_payload["question"],
-                    quick_replies=retry_payload["quick_replies"],
-                    confidence=retry_payload["confidence"],
-                )
-            if len(candidates) == 1:
-                session.completed_route_id = candidates[0]["route_id"]
+                return response
+
+            node = domain.node_map[session.current_node_id]
+            parsed = _match_node_option(node, session, message) or _heuristic_parse(domain.key, message, node.get("slot"))
+            updates = parsed.get("slot_updates") or {}
+            previous_slots = dict(session.slots)
+            if updates:
+                _apply_updates(session, updates)
+
+            exact = domain.exact_match(session.slots)
+            if exact:
+                session.completed_route_id = exact["route_id"]
                 session.current_node_id = None
                 self.sessions[session.session_id] = session
-                return self._finalize_route(session, domain, candidates[0])
-            if not updates:
-                retry_payload = _retry_current_question_payload(
-                    domain,
-                    session,
-                    prefix="Mình chưa bắt đúng ý trả lời ở câu này.",
-                    confidence=parsed.get("confidence", 0.3),
-                )
+                return self._finalize_route(session, domain, exact, diagnostics=diagnostics)
+
+            next_node = _next_question(domain, session)
+            if not next_node:
+                candidates = domain.route_candidates(session.slots)
+                if len(candidates) == 0 and updates:
+                    session.slots = previous_slots
+                    retry_payload = _retry_current_question_payload(
+                        domain,
+                        session,
+                        prefix="M?nh th?y c?u tr? l?i v?a r?i ch?a kh?p v?i nh?nh ?ang h?i, n?n m?nh h?i l?i ??ng 1 ? n?y ?? tr?nh ?i sai th? t?c:",
+                        confidence=0.4,
+                    )
+                    self.sessions[session.session_id] = session
+                    return self._response(
+                        session,
+                        status="needs_clarification",
+                        question=retry_payload["question"],
+                        quick_replies=retry_payload["quick_replies"],
+                        confidence=retry_payload["confidence"],
+                    )
+                if len(candidates) == 1:
+                    session.completed_route_id = candidates[0]["route_id"]
+                    session.current_node_id = None
+                    self.sessions[session.session_id] = session
+                    return self._finalize_route(session, domain, candidates[0], diagnostics=diagnostics)
+                if not updates:
+                    retry_payload = _retry_current_question_payload(
+                        domain,
+                        session,
+                        prefix="M?nh ch?a b?t ??ng ? tr? l?i ? c?u n?y.",
+                        confidence=parsed.get("confidence", 0.3),
+                    )
+                    self.sessions[session.session_id] = session
+                    return self._response(
+                        session,
+                        status="needs_clarification",
+                        question=retry_payload["question"],
+                        quick_replies=retry_payload["quick_replies"],
+                        confidence=retry_payload["confidence"],
+                    )
                 self.sessions[session.session_id] = session
                 return self._response(
                     session,
                     status="needs_clarification",
-                    question=retry_payload["question"],
-                    quick_replies=retry_payload["quick_replies"],
-                    confidence=retry_payload["confidence"],
+                    question=parsed.get("clarification_hint")
+                    or "M?nh ?? thu h?p ???c v?i nh?nh nh?ng v?n ch?a ?? ch?c ?? ch?t m?t th? t?c duy nh?t. B?n m? t? th?m ho?n c?nh c? th? gi?p m?nh nh?.",
+                    quick_replies=[],
+                    confidence=parsed.get("confidence", 0.3),
                 )
+
+            session.current_node_id = next_node["id"]
+            if next_node["id"] not in session.asked_node_ids:
+                session.asked_node_ids.append(next_node["id"])
             self.sessions[session.session_id] = session
             return self._response(
                 session,
                 status="needs_clarification",
-                question=parsed.get("clarification_hint")
-                or "Mình đã thu hẹp được vài nhánh nhưng vẫn chưa đủ chắc để chốt một thủ tục duy nhất. Bạn mô tả thêm hoàn cảnh cụ thể giúp mình nhé.",
-                quick_replies=[],
-                confidence=parsed.get("confidence", 0.3),
+                question=_build_question_message(domain, session, next_node, first_turn=len(session.asked_node_ids) <= 2),
+                quick_replies=_quick_replies(next_node, session),
+                confidence=max(parsed.get("confidence", 0.76), 0.82 if switched else 0.76),
             )
-
-        session.current_node_id = next_node["id"]
-        if next_node["id"] not in session.asked_node_ids:
-            session.asked_node_ids.append(next_node["id"])
-        self.sessions[session.session_id] = session
-        return self._response(
-            session,
-            status="needs_clarification",
-            question=_build_question_message(domain, session, next_node, first_turn=len(session.asked_node_ids) <= 2),
-            quick_replies=_quick_replies(next_node, session),
-            confidence=max(parsed.get("confidence", 0.76), 0.82 if switched else 0.76),
-        )
+        finally:
+            logger.info(
+                "workflow_intake_timing session=%s domain=%s node=%s route=%s total_ms=%.2f steps=%s",
+                session.session_id,
+                session.domain_key,
+                session.current_node_id,
+                session.completed_route_id,
+                diagnostics.snapshot(message_count=len(session.messages), slot_count=len(session.slots))["total_ms"],
+                diagnostics.steps_ms,
+            )
 
     def _handle_synthetic(self, domain: DomainBundle, session: WorkflowSession, message: str) -> dict[str, Any]:
         node_id = session.current_node_id or ""
@@ -581,13 +689,23 @@ class WorkflowIntakeService:
             confidence=0.3,
         )
 
-    def _finalize_route(self, session: WorkflowSession, domain: DomainBundle, route: dict[str, Any]) -> dict[str, Any]:
+    def _finalize_route(
+        self,
+        session: WorkflowSession,
+        domain: DomainBundle,
+        route: dict[str, Any],
+        *,
+        diagnostics: _RequestDiagnostics | None = None,
+    ) -> dict[str, Any]:
         user_need = " ".join(item["content"] for item in session.messages if item["role"] == "user")
         intake = self.assistant.guided_intake(
             user_need,
             procedure_identifier=route["procedure_code"],
             answers=session.slots,
         )
+        if diagnostics is not None:
+            diagnostics.mark("guided_intake_finalize")
+        procedure_payload = intake.get("procedure") or _procedure_payload_from_route(route)
         return {
             "session_id": session.session_id,
             "status": "completed",
@@ -596,7 +714,7 @@ class WorkflowIntakeService:
             "clarifying_question": None,
             "answers": dict(session.slots),
             "confidence": 1.0,
-            "procedure": intake.get("procedure"),
+            "procedure": procedure_payload,
             "checklist": intake.get("checklist") or {"documents": [], "conditional_documents": [], "steps": []},
             "examples": intake.get("examples") or [],
             "common_errors": intake.get("common_errors") or [],
@@ -648,6 +766,37 @@ class WorkflowIntakeService:
             },
         }
 
+    def _infer_route_from_existing_domain(
+        self,
+        domain_key: str,
+        message: str,
+        preferred_subdomain_key: str | None,
+    ) -> dict[str, Any] | None:
+        if domain_key in {"birth_registration", "residence_management"} and not preferred_subdomain_key:
+            return None
+        domain = self.domains.get(domain_key)
+        if domain and preferred_subdomain_key:
+            heuristic_route = _best_matching_route(domain, message, preferred_subdomain_key)
+            if heuristic_route:
+                return {
+                    "slot_updates": dict(heuristic_route.get("conditions") or {}),
+                    "confidence": 0.93,
+                }
+        procedure_code, score = self.assistant.retriever.classify(message)
+        if not procedure_code or score <= 0:
+            return None
+        route = self.route_by_domain_and_code.get((domain_key, procedure_code))
+        if not route:
+            return None
+        conditions = dict(route.get("conditions") or {})
+        route_subdomain = conditions.get("subdomain_key")
+        if preferred_subdomain_key and route_subdomain not in (None, "", preferred_subdomain_key):
+            return None
+        return {
+            "slot_updates": conditions,
+            "confidence": min(max(float(score), 0.6), 0.98),
+        }
+
 
 def _parse_yes_no(user_message: str) -> str | None:
     text = _normalize(user_message)
@@ -656,6 +805,29 @@ def _parse_yes_no(user_message: str) -> str | None:
     if text in {"no", "n", "khong", "khong phai", "chua"}:
         return "no"
     return None
+
+
+@dataclass
+class _RequestDiagnostics:
+    started_at: float = field(default_factory=perf_counter)
+    last_mark_at: float = field(default_factory=perf_counter)
+    steps_ms: dict[str, float] = field(default_factory=dict)
+
+    def mark(self, name: str) -> None:
+        now = perf_counter()
+        self.steps_ms[name] = round((now - self.last_mark_at) * 1000, 2)
+        self.last_mark_at = now
+
+    def snapshot(self, *, message_count: int, slot_count: int) -> dict[str, Any]:
+        total_ms = round((perf_counter() - self.started_at) * 1000, 2)
+        dominant_step = max(self.steps_ms.items(), key=lambda item: item[1])[0] if self.steps_ms else "none"
+        return {
+            "total_ms": total_ms,
+            "steps_ms": dict(self.steps_ms),
+            "dominant_step": dominant_step,
+            "message_count": message_count,
+            "slot_count": slot_count,
+        }
 
 
 def _synthetic_start_node(domain_key: str) -> str | None:
@@ -673,8 +845,7 @@ def _is_synthetic_node(domain_key: str, node_id: str | None) -> bool:
 def _quick_replies(node: dict[str, Any] | None, session: WorkflowSession | None = None) -> list[dict[str, str]]:
     if not node:
         return []
-    options = _node_options(node, session)
-    return _quick_replies_for_options(options)
+    return _quick_replies_for_items(_node_option_items(node, session))
 
 
 def _quick_replies_for_options(options: list[str]) -> list[dict[str, str]]:
@@ -690,14 +861,76 @@ def _quick_replies_for_options(options: list[str]) -> list[dict[str, str]]:
     ]
 
 
-def _node_options(node: dict[str, Any], session: WorkflowSession | None = None) -> list[str]:
-    options = list(node.get("options", []))
-    if not session:
-        return options
-    if node.get("slot") == "request_type_detail" and session.domain_key == "birth_registration":
-        if session.slots.get("request_type") == "foreign_record_note":
-            return ["birth_only", "multi_civil_status"]
+def _quick_replies_for_items(options: list[dict[str, str]]) -> list[dict[str, str]]:
+    if not options:
+        return []
     return options
+
+
+def _match_node_option(node: dict[str, Any], session: WorkflowSession, user_message: str) -> dict[str, Any] | None:
+    slot = str(node.get("slot") or "").strip()
+    if not slot:
+        return None
+    text = _normalize(user_message)
+    for option in _node_option_items(node, session):
+        value = option["value"]
+        label = option["label"]
+        if text in {_normalize(value), _normalize(label), _normalize(OPTION_LABELS.get(value, value))}:
+            return {
+                "slot_updates": {slot: value},
+                "confidence": 0.99,
+                "needs_clarification": False,
+                "clarification_hint": "",
+            }
+    return None
+
+
+def _node_options(node: dict[str, Any], session: WorkflowSession | None = None) -> list[str]:
+    return [item["value"] for item in _node_option_items(node, session)]
+
+
+def _node_option_items(node: dict[str, Any], session: WorkflowSession | None = None) -> list[dict[str, str]]:
+    if not node:
+        return []
+
+    if session and node.get("slot") == "request_type_detail" and session.domain_key == "birth_registration":
+        if session.slots.get("request_type") == "foreign_record_note":
+            return _option_items_from_values(["birth_only", "multi_civil_status"])
+
+    if session and node.get("slot") == "operation_key":
+        subdomain_key = session.slots.get("subdomain_key")
+        options_by_subdomain = node.get("options_by_subdomain") or {}
+        raw_items = options_by_subdomain.get(subdomain_key, []) if isinstance(options_by_subdomain, dict) else []
+        items: list[dict[str, str]] = []
+        for raw in raw_items:
+            if not isinstance(raw, dict):
+                continue
+            value = str(raw.get("operation_key") or "").strip()
+            if not value:
+                continue
+            label = (
+                str(raw.get("procedure_title") or "").strip()
+                or str(raw.get("label") or "").strip()
+                or OPTION_LABELS.get(value, value)
+            )
+            description = str(raw.get("operation_group") or "").replace("_", " ").strip()
+            items.append({"value": value, "label": label, "description": description})
+        return items
+
+    return _option_items_from_values(list(node.get("options", [])))
+
+
+def _option_items_from_values(options: list[str]) -> list[dict[str, str]]:
+    items: list[dict[str, str]] = []
+    for option in options:
+        items.append(
+            {
+                "value": option,
+                "label": OPTION_LABELS.get(option, option),
+                "description": OPTION_DESCRIPTIONS.get(option, ""),
+            }
+        )
+    return items
 
 
 def _normalize_residence_slots(slots: dict[str, Any]) -> dict[str, Any]:
@@ -738,12 +971,7 @@ def _slot_priority(domain: DomainBundle) -> list[str]:
             "wants_linked_bundle",
             "request_type_detail",
         ]
-    return [
-        "residence_goal",
-        "registration_status",
-        "need_precondition_confirmation",
-        "residence_place_type",
-    ]
+    return [node["slot"] for node in domain.config["decision_tree"]["nodes"] if isinstance(node, dict) and node.get("slot")]
 
 
 def _next_question(domain: DomainBundle, session: WorkflowSession) -> dict[str, Any] | None:
@@ -914,6 +1142,14 @@ def _apply_updates(session: WorkflowSession, updates: dict[str, Any]) -> None:
         and session.slots.get("request_type") != "mobile_service"
     ):
         session.slots["service_channel"] = "standard"
+    if (
+        session.domain_key == "birth_registration"
+        and session.slots.get("request_type") == "new_registration"
+        and session.slots.get("birth_location") == "abroad"
+        and not session.slots.get("service_channel")
+    ):
+        # Children born abroad are handled through the overseas representative route in the current dataset.
+        session.slots["service_channel"] = "consular"
     if session.domain_key == "residence_management":
         session.slots = _harmonize_residence_slots(session.slots)
 
@@ -954,8 +1190,15 @@ ALLOWED_SLOT_VALUES: dict[str, set[str]] = {
 
 
 def _sanitize_slot_updates(domain_key: str | None, updates: dict[str, Any]) -> dict[str, Any]:
-    if domain_key not in {"birth_registration", "residence_management"} or not isinstance(updates, dict):
+    if not isinstance(updates, dict):
         return {}
+    if domain_key not in {"birth_registration", "residence_management"}:
+        sanitized_generic: dict[str, Any] = {}
+        for key in ("subdomain_key", "operation_key"):
+            value = updates.get(key)
+            if isinstance(value, str) and value.strip():
+                sanitized_generic[key] = value.strip()
+        return sanitized_generic
     allowed_slots = {
         "birth_registration": {
             "request_type",
@@ -984,6 +1227,28 @@ def _sanitize_slot_updates(domain_key: str | None, updates: dict[str, Any]) -> d
     return sanitized
 
 
+def _strip_route_level_updates(domain_key: str | None, updates: dict[str, Any]) -> dict[str, Any]:
+    if not isinstance(updates, dict):
+        return {}
+    if domain_key in {"birth_registration", "residence_management"}:
+        return dict(updates)
+    return {
+        key: value
+        for key, value in updates.items()
+        if key not in {"operation_key", "operation_group"} and not key.startswith("procedure_")
+    }
+
+
+def _should_defer_route_resolution(domain_key: str | None, message: str) -> bool:
+    if domain_key in {None, "", "birth_registration", "residence_management"}:
+        return False
+    if _detect_interaction_mode(message) == "explain_first":
+        return True
+    if domain_key == "co_con_nho" and _is_generic_newborn_life_event(message):
+        return True
+    return False
+
+
 def _entry_confidence(entry: dict[str, Any] | None) -> float:
     if not isinstance(entry, dict):
         return 0.0
@@ -994,7 +1259,7 @@ def _entry_confidence(entry: dict[str, Any] | None) -> float:
 
 
 def _entry_has_domain(entry: dict[str, Any] | None) -> bool:
-    return isinstance(entry, dict) and entry.get("domain_key") in {"birth_registration", "residence_management"}
+    return isinstance(entry, dict) and entry.get("domain_key") not in {None, "", "unknown"}
 
 
 def _entry_is_better(candidate: dict[str, Any] | None, baseline: dict[str, Any] | None) -> bool:
@@ -1007,6 +1272,54 @@ def _entry_is_better(candidate: dict[str, Any] | None, baseline: dict[str, Any] 
     candidate_slots = len((candidate or {}).get("slot_updates") or {})
     baseline_slots = len((baseline or {}).get("slot_updates") or {})
     return (candidate_score, candidate_slots) > (baseline_score, baseline_slots)
+
+
+def _should_keep_legacy_entry(
+    message: str,
+    baseline: dict[str, Any] | None,
+    candidate: dict[str, Any] | None,
+) -> bool:
+    baseline_domain = (baseline or {}).get("domain_key")
+    candidate_domain = (candidate or {}).get("domain_key")
+    if baseline_domain not in {"birth_registration", "residence_management"}:
+        return False
+    if candidate_domain in {None, baseline_domain}:
+        return False
+    if _entry_confidence(candidate) >= _entry_confidence(baseline) + 0.12:
+        return False
+    if _is_generic_newborn_life_event(message):
+        return False
+    return True
+
+
+def _should_lock_legacy_first_turn(message: str, entry: dict[str, Any] | None) -> bool:
+    domain_key = (entry or {}).get("domain_key")
+    if domain_key not in {"birth_registration", "residence_management"}:
+        return False
+    if _is_generic_newborn_life_event(message):
+        return False
+    return True
+
+
+def _is_generic_newborn_life_event(message: str) -> bool:
+    text = _normalize(message)
+    if not _contains_any(text, ["moi sinh con", "vua sinh con", "moi de con", "moi sinh be", "vua sinh be"]):
+        return False
+    if _contains_any(
+        text,
+        [
+            "khai sinh",
+            "giay khai sinh",
+            "bao hiem",
+            "bhyt",
+            "thuong tru",
+            "tam tru",
+            "trich luc",
+            "dang ky",
+        ],
+    ):
+        return False
+    return True
 
 
 def _merge_entry(primary: dict[str, Any] | None, fallback: dict[str, Any] | None) -> dict[str, Any] | None:
@@ -1028,10 +1341,13 @@ def _apply_entry_heuristic_hints(message: str, entry: dict[str, Any]) -> dict[st
     text = _normalize(message)
     slot_updates = dict(updated.get("slot_updates") or {})
     if _contains_any(text, ["bao hiem", "bhyt"]) and _contains_any(text, ["con", "tre", "em be", "so sinh", "moi sinh"]):
-        updated["domain_key"] = "birth_registration"
+        updated["domain_key"] = "co_con_nho" if updated.get("domain_key") == "co_con_nho" else "birth_registration"
         updated["confidence"] = max(_entry_confidence(updated), 0.84)
-        slot_updates.setdefault("request_type", "new_registration")
-        slot_updates.setdefault("wants_linked_bundle", "bhyt_only")
+        if updated["domain_key"] == "co_con_nho":
+            slot_updates.setdefault("subdomain_key", "bao_hiem_y_te")
+        else:
+            slot_updates.setdefault("request_type", "new_registration")
+            slot_updates.setdefault("wants_linked_bundle", "bhyt_only")
     updated["slot_updates"] = slot_updates
     return updated
 
@@ -1095,7 +1411,7 @@ def _heuristic_entry_analysis(user_message: str) -> dict[str, Any]:
 
 def _maybe_switch_domain(session: WorkflowSession, entry: dict[str, Any]) -> bool:
     next_domain = entry.get("domain_key")
-    if next_domain not in {"birth_registration", "residence_management"}:
+    if not next_domain:
         return False
     if session.domain_key in (None, next_domain):
         return False
@@ -1113,6 +1429,411 @@ def _maybe_switch_domain(session: WorkflowSession, entry: dict[str, Any]) -> boo
     if slot_updates:
         _apply_updates(session, dict(slot_updates))
     return True
+
+
+def _workflow_domain_labels() -> dict[str, str]:
+    labels = {
+        "birth_registration": "Khai sinh",
+        "residence_management": "Cư trú",
+    }
+    groups_path = CATALOG_ROOT / "citizen_groups.json"
+    if not groups_path.exists():
+        return labels
+    payload = _read_json(groups_path)
+    for item in payload.get("groups", []):
+        if isinstance(item, dict) and item.get("key") and item.get("label"):
+            labels[str(item["key"])] = str(item["label"])
+    return labels
+
+
+def _subdomain_labels(config: dict[str, Any]) -> dict[str, str]:
+    labels: dict[str, str] = {}
+    for item in config.get("subdomain_catalog", []):
+        if isinstance(item, dict) and item.get("subdomain_key") and item.get("subdomain_label"):
+            labels[str(item["subdomain_key"])] = str(item["subdomain_label"])
+    return labels
+
+
+def _taxonomy_payload(domains: dict[str, DomainBundle]) -> list[dict[str, Any]]:
+    payload: list[dict[str, Any]] = []
+    for domain_key, domain in sorted(domains.items()):
+        subdomains = [
+            {"subdomain_key": subdomain_key, "subdomain_label": subdomain_label}
+            for subdomain_key, subdomain_label in _subdomain_labels(domain.config).items()
+        ]
+        payload.append(
+            {
+                "domain_key": domain_key,
+                "domain_label": domain.label,
+                "subdomains": subdomains,
+            }
+        )
+    return payload
+
+
+def _domain_selection_replies(domains: dict[str, DomainBundle]) -> list[dict[str, str]]:
+    replies: list[dict[str, str]] = []
+    for domain_key, domain in sorted(domains.items()):
+        replies.append({"value": domain_key, "label": domain.label})
+    return replies
+
+
+def _best_matching_domain_subdomain(domains: dict[str, DomainBundle], user_message: str) -> dict[str, Any] | None:
+    text = _normalize(user_message)
+    if not text:
+        return None
+    direct_domain_hints = [
+        (
+            "huu_tri",
+            ["nghi huu", "huu tri", "luong huu", "che do huu", "benh nghe nghiep"],
+            {"subdomain_key": "che_do_huu_tri"},
+            0.95,
+        ),
+        (
+            "hon_nhan_gia_dinh",
+            ["giam ho"],
+            {"subdomain_key": "giam_ho"},
+            0.96,
+        ),
+        (
+            "hon_nhan_gia_dinh",
+            ["ket hon"],
+            {"subdomain_key": "ket_hon"},
+            0.95,
+        ),
+        (
+            "hon_nhan_gia_dinh",
+            ["nhan con nuoi", "nuoi con nuoi"],
+            {"subdomain_key": "nhan_con_nuoi"},
+            0.95,
+        ),
+        (
+            "hon_nhan_gia_dinh",
+            ["nhan cha me con"],
+            {"subdomain_key": "nhan_cha_me_con"},
+            0.95,
+        ),
+        (
+            "hon_nhan_gia_dinh",
+            ["ghi vao so ho tich", "trich luc ho tich", "cai chinh ho tich"],
+            {"subdomain_key": "cai_chinh_trich_luc_ho_tich"},
+            0.95,
+        ),
+        (
+            "hoc_tap",
+            ["hoc sinh nguoi nuoc ngoai", "tiep nhan hoc sinh", "chuyen truong"],
+            {"subdomain_key": "chuyen_truong"},
+            0.96,
+        ),
+        (
+            "hoc_tap",
+            ["hoc bong", "ho tro chi phi hoc tap", "mien giam hoc phi", "ban tru"],
+            {"subdomain_key": "hoc_bong_va_ho_tro"},
+            0.95,
+        ),
+        (
+            "hoc_tap",
+            ["van bang", "chung chi", "cong nhan van bang"],
+            {"subdomain_key": "van_bang_chung_chi"},
+            0.95,
+        ),
+        (
+            "hoc_tap",
+            ["hoc nuoc ngoai", "du hoc", "ngan sach nha nuoc", "cu di hoc"],
+            {"subdomain_key": "hoc_tap_o_nuoc_ngoai_bang_ngan_sach"},
+            0.95,
+        ),
+        (
+            "hoc_tap",
+            ["tuyen sinh", "du thi", "phuc khao", "xet tuyen"],
+            {"subdomain_key": "tuyen_sinh"},
+            0.95,
+        ),
+        (
+            "viec_lam",
+            ["that nghiep", "tro cap that nghiep"],
+            {"subdomain_key": "bao_hiem_xa_hoi_that_nghiep_tro_cap"},
+            0.96,
+        ),
+        (
+            "viec_lam",
+            ["ho tro tien ve xe", "tu van", "gioi thieu viec lam", "di lam viec ngoai tinh"],
+            {"subdomain_key": "ho_tro_tu_van_gioi_thieu_viec_lam"},
+            0.96,
+        ),
+        (
+            "viec_lam",
+            ["giay phep lao dong", "trong ky nghi", "nguoi nuoc ngoai lam viec", "mien giay phep lao dong"],
+            {"subdomain_key": "cap_phep_lao_dong_nguoi_nuoc_ngoai"},
+            0.96,
+        ),
+        (
+            "viec_lam",
+            ["chung chi ky nang", "ky nang nghe"],
+            {"subdomain_key": "chung_chi_hanh_nghe"},
+            0.95,
+        ),
+        (
+            "viec_lam",
+            ["dang ky lao dong", "dieu chinh thong tin dang ky lao dong"],
+            {"subdomain_key": "tuyen_dung"},
+            0.95,
+        ),
+        (
+            "phuong_tien_nguoi_lai",
+            ["bang lai", "giay phep lai xe", "sat hach lai xe"],
+            {"subdomain_key": "giay_phep_lai_xe"},
+            0.96,
+        ),
+        (
+            "phuong_tien_nguoi_lai",
+            ["dang ky xe", "bien so xe", "chung nhan dang ky xe"],
+            {"subdomain_key": "dang_ky_phuong_tien"},
+            0.96,
+        ),
+        (
+            "phuong_tien_nguoi_lai",
+            ["dang kiem", "kiem dinh", "khi thai", "an ninh tau bien", "lao dong hang hai", "xe co gioi", "xe may chuyen dung"],
+            {"subdomain_key": "dang_kiem_phuong_tien"},
+            0.95,
+        ),
+        (
+            "dien_luc_nha_o_dat_dai",
+            ["so do", "giay chung nhan", "quyen su dung dat", "cap dien", "nha o", "dat dai"],
+            {},
+            0.93,
+        ),
+    ]
+    for domain_key, phrases, slot_updates, confidence in direct_domain_hints:
+        if domain_key in domains and _contains_any(text, phrases):
+            return {
+                "domain_key": domain_key,
+                "confidence": confidence,
+                "slot_updates": dict(slot_updates),
+            }
+    if (
+        "co_con_nho" in domains
+        and _contains_any(text, ["trich luc khai sinh", "ban sao khai sinh", "ban sao giay khai sinh"])
+    ):
+        return {
+            "domain_key": "co_con_nho",
+            "confidence": 0.94,
+            "slot_updates": {"subdomain_key": "khai_sinh"},
+        }
+    if (
+        "nguoi_than_qua_doi" in domains
+        and _contains_any(text, ["khai tu", "giay khai tu", "mai tang", "tu tuat", "nguoi than qua doi"])
+    ):
+        slot_updates = {"subdomain_key": "khai_tu"} if _contains_any(text, ["khai tu", "giay khai tu"]) else {}
+        return {
+            "domain_key": "nguoi_than_qua_doi",
+            "confidence": 0.95,
+            "slot_updates": slot_updates,
+        }
+    if (
+        "co_con_nho" in domains
+        and _contains_any(text, ["bao hiem", "bhyt"])
+        and _contains_any(text, ["con", "tre", "em be", "so sinh", "moi sinh"])
+    ):
+        return {
+            "domain_key": "co_con_nho",
+            "confidence": 0.91,
+            "slot_updates": {"subdomain_key": "bao_hiem_y_te"},
+        }
+    if (
+        "co_con_nho" in domains
+        and _contains_any(text, ["moi sinh con", "vua sinh con", "moi de con", "moi sinh be", "vua sinh be"])
+    ):
+        return {
+            "domain_key": "co_con_nho",
+            "confidence": 0.93,
+            "slot_updates": {"subdomain_key": "khai_sinh"},
+        }
+    complaint_like = _contains_any(text, ["khieu nai", "khieu kien", "to cao", "phan anh", "tranh chap"])
+    best_domain_key: str | None = None
+    best_subdomain_key: str | None = None
+    best_score = 0.0
+    for domain_key, domain in domains.items():
+        domain_text = _normalize(f"{domain.label} {domain_key.replace('_', ' ')}")
+        domain_score = 0.0
+        if complaint_like and domain_key == "giai_quyet_khieu_kien":
+            domain_score += 4.0
+        if any(phrase in text for phrase in _meaningful_phrases(domain_text)):
+            domain_score += 1.5
+        if any(token in text for token in re.split(r"\s+", domain_text) if len(token) >= 4):
+            domain_score += 1.0
+
+        best_domain_route_score = 0.0
+        best_domain_route: dict[str, Any] | None = None
+        for route in domain.config["decision_tree"]["routes"]:
+            route_score = _route_match_score(route, text)
+            if route_score > best_domain_route_score:
+                best_domain_route_score = route_score
+                best_domain_route = route
+
+        best_subdomain_score = 0.0
+        candidate_subdomain_key: str | None = None
+        for subdomain_key, subdomain_label in _subdomain_labels(domain.config).items():
+            subdomain_text = _normalize(f"{subdomain_label} {subdomain_key.replace('_', ' ')}")
+            score = 0.0
+            if any(phrase in text for phrase in _meaningful_phrases(subdomain_text)):
+                score += 2.0
+            if any(token in text for token in re.split(r"\s+", subdomain_text) if len(token) >= 4):
+                score += 1.0
+            route = _best_matching_route(domain, user_message, subdomain_key)
+            if route:
+                score = max(score, _route_match_score(route, text))
+            if score > best_subdomain_score:
+                best_subdomain_score = score
+                candidate_subdomain_key = subdomain_key
+
+        total_score = max(domain_score, best_domain_route_score, best_subdomain_score)
+        if total_score > best_score:
+            best_score = total_score
+            best_domain_key = domain_key
+            if best_subdomain_score >= max(2.0, best_domain_route_score - 0.5):
+                best_subdomain_key = candidate_subdomain_key
+            else:
+                best_subdomain_key = (
+                    str((best_domain_route or {}).get("conditions", {}).get("subdomain_key"))
+                    if (best_domain_route or {}).get("conditions", {}).get("subdomain_key")
+                    else None
+                )
+
+    if best_domain_key is None or best_score < 2.0:
+        return None
+    slot_updates: dict[str, Any] = {}
+    if best_subdomain_key:
+        slot_updates["subdomain_key"] = best_subdomain_key
+    return {
+        "domain_key": best_domain_key,
+        "confidence": min(0.92, 0.58 + best_score * 0.08),
+        "slot_updates": slot_updates,
+    }
+
+
+def _best_matching_route(domain: DomainBundle, user_message: str, subdomain_key: str) -> dict[str, Any] | None:
+    text = _normalize(user_message)
+    message_tokens = {token for token in re.split(r"\s+", text) if len(token) >= 3}
+    best_score = 0
+    best_route: dict[str, Any] | None = None
+    for route in domain.config["decision_tree"]["routes"]:
+        conditions = route.get("conditions") or {}
+        if conditions.get("subdomain_key") != subdomain_key:
+            continue
+        route_text = _normalize(
+            f"{route.get('procedure_name', '')} {str(conditions.get('operation_key') or '').replace('_', ' ')}"
+        )
+        route_tokens = {token for token in re.split(r"\s+", route_text) if len(token) >= 3}
+        overlap = len(message_tokens & route_tokens)
+        phrase_bonus = 2 if any(phrase in route_text for phrase in _meaningful_phrases(text)) else 0
+        score = overlap + phrase_bonus
+        if score > best_score:
+            best_score = score
+            best_route = route
+    return best_route if best_score >= 2 else None
+
+
+def _meaningful_phrases(text: str) -> list[str]:
+    words = [word for word in re.split(r"\s+", text) if len(word) >= 3]
+    phrases = [" ".join(words[index : index + 2]) for index in range(len(words) - 1)]
+    phrases.extend(" ".join(words[index : index + 3]) for index in range(len(words) - 2))
+    return phrases
+
+
+def _action_markers(text: str) -> set[str]:
+    markers: set[str] = set()
+    if _contains_any(text, ["cap lai", "dang ky lai"]):
+        markers.add("reissue")
+    if _contains_any(text, ["cap doi", "doi giay phep", "doi chung nhan", "doi bien so", "doi giay"]):
+        markers.add("exchange")
+    if _contains_any(text, ["gia han"]):
+        markers.add("renew")
+    if _contains_any(text, ["dieu chinh", "cap nhat thong tin"]):
+        markers.add("adjust")
+    if _contains_any(text, ["thi", "sat hach", "lan dau"]):
+        markers.add("exam")
+    if _contains_any(text, ["ho tro", "tro cap", "tu van", "gioi thieu viec lam"]):
+        markers.add("support")
+    if _contains_any(text, ["dang ky"]):
+        markers.add("register")
+    if _contains_any(text, ["tiep nhan"]):
+        markers.add("receive")
+    if _contains_any(text, ["khieu nai"]):
+        markers.add("complaint")
+    if _contains_any(text, ["giam sat"]):
+        markers.add("supervision")
+    if _contains_any(text, ["giam ho"]):
+        markers.add("guardianship")
+    if not markers.intersection({"reissue", "exchange"}):
+        if _contains_any(text, ["cap moi", "cap giay phep", "cap giay chung nhan", "duoc cap", "cap the"]):
+            markers.add("issue")
+    return markers
+
+
+def _country_markers(text: str) -> set[str]:
+    countries: dict[str, list[str]] = {
+        "new_zealand": ["niu di lan", "new zealand"],
+        "australia": ["o xto ray lia", "uc", "australia"],
+        "korea": ["han quoc", "korea"],
+        "china": ["trung quoc", "china"],
+    }
+    matched = set()
+    for key, phrases in countries.items():
+        if _contains_any(text, phrases):
+            matched.add(key)
+    return matched
+
+
+def _route_match_score(route: dict[str, Any], normalized_message: str) -> float:
+    route_text = _normalize(
+        f"{route.get('procedure_name', '')} "
+        f"{str((route.get('conditions') or {}).get('operation_key') or '').replace('_', ' ')}"
+    )
+    route_tokens = {token for token in re.split(r"\s+", route_text) if len(token) >= 3}
+    message_tokens = {token for token in re.split(r"\s+", normalized_message) if len(token) >= 3}
+    overlap = len(route_tokens & message_tokens)
+    phrase_bonus = sum(1 for phrase in _meaningful_phrases(normalized_message) if phrase in route_text)
+    exact_phrase_bonus = 4 if normalized_message in route_text else 0
+    message_actions = _action_markers(normalized_message)
+    route_actions = _action_markers(route_text)
+    action_bonus = len(message_actions & route_actions) * 3
+    conflicting_actions = {
+        ("issue", "reissue"),
+        ("issue", "exchange"),
+        ("reissue", "exchange"),
+        ("adjust", "support"),
+        ("support", "register"),
+        ("complaint", "register"),
+        ("exam", "exchange"),
+    }
+    action_penalty = 0
+    for left, right in conflicting_actions:
+        if left in message_actions and right in route_actions:
+            action_penalty += 3
+        if right in message_actions and left in route_actions:
+            action_penalty += 3
+    message_countries = _country_markers(normalized_message)
+    route_countries = _country_markers(route_text)
+    country_bonus = len(message_countries & route_countries) * 2
+    if message_countries and route_countries and not (message_countries & route_countries):
+        action_penalty += 2
+    return float(overlap + phrase_bonus + exact_phrase_bonus + action_bonus + country_bonus - action_penalty)
+
+
+def _procedure_payload_from_route(route: dict[str, Any]) -> dict[str, Any] | None:
+    procedure_code = str(route.get("procedure_code") or "").strip()
+    procedure_title = str(route.get("procedure_name") or route.get("procedure_title") or "").strip()
+    source_url = str(route.get("source_url") or "").strip()
+    if not procedure_code and not procedure_title:
+        return None
+    return {
+        "id": procedure_code or _normalize_key(procedure_title),
+        "code": procedure_code,
+        "title": procedure_title or procedure_code,
+        "source_url": source_url,
+        "detail_level": "workflow_index",
+    }
 
 
 def _update_interaction_mode(session: WorkflowSession, user_message: str) -> None:
@@ -1161,9 +1882,9 @@ def _build_domain_selection_message(session: WorkflowSession) -> str:
     if session.interaction_mode == "explain_first":
         return (
             "Mình có thể giải thích rất ngắn trước rồi mới chọn đúng thủ tục.\n"
-            "Bạn đang muốn tìm hiểu nhóm nào: khai sinh hay cư trú?"
+            "Bạn đang muốn tìm hiểu nhóm nào để mình định hướng nhanh hơn?"
         )
-    return "Mình đang hỗ trợ 2 nhóm chính là khai sinh và cư trú. Bạn muốn bắt đầu với nhóm nào?"
+    return "Mình đang hỗ trợ nhiều nhóm thủ tục. Bạn muốn bắt đầu với nhóm nào?"
 
 
 def _maybe_build_explain_mode_payload(
@@ -1512,7 +2233,10 @@ def _heuristic_parse(domain_key: str | None, user_message: str, expected_slot: s
         if wants_preconfirmation:
             updates["need_precondition_confirmation"] = "need_confirmation"
 
-        if _contains_any_exact_phrase(text, ["dang ky thuong tru", "nhap ho khau", "o lau dai", "thuong tru"]):
+        if (
+            not _contains_any_exact_phrase(text, ["xoa dang ky thuong tru", "xoa thuong tru"])
+            and _contains_any_exact_phrase(text, ["dang ky thuong tru", "nhap ho khau", "o lau dai", "thuong tru"])
+        ):
             updates["residence_goal"] = "register_permanent"
 
         if "gia han" in text and "khong phai gia han" not in text and _contains_any(text, ["tam tru", "da co tam tru"]):

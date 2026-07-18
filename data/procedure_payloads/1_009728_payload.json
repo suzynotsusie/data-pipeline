@@ -1,0 +1,434 @@
+{
+  "schema_version": "3.0",
+  "record_type": "public_service_procedure_payload",
+  "id": "procedure-1.009728",
+  "procedure_code": "1.009728",
+  "code": "1.009728",
+  "title": "Đăng ký phát hành cổ phiếu theo chương trình lựa chọn cho người lao động trong công ty của công ty đại chúng",
+  "language": "vi",
+  "status": "generated_from_pipeline",
+  "field": "Chứng khoán",
+  "group_key": "viec_lam",
+  "workflow_family": null,
+  "subflow": null,
+  "source": {
+    "source_url": "file:///C:/Users/ku060/Downloads/VAIC%20source/data-pipeline/raw_data/1_009728/1_009728_procedure_detail.md",
+    "source_markdown_path": "C:\\Users\\ku060\\Downloads\\VAIC source\\data-pipeline\\raw_data\\1_009728\\1_009728_procedure_detail.md",
+    "normalized_payload_path": "C:\\Users\\ku060\\Downloads\\VAIC source\\data-pipeline\\govease-unified\\data\\normalized_structured\\1_009728_normalized_structured.json",
+    "enriched_payload_path": "C:\\Users\\ku060\\Downloads\\VAIC source\\data-pipeline\\govease-unified\\data\\enriched_structured_priority\\1_009728_enriched_structured.json"
+  },
+  "scope": {
+    "included": "Thủ tục này thuộc nhóm việc làm và lao động, thường cần kiểm tra hồ sơ nghề nghiệp, đơn vị sử dụng lao động hoặc điều kiện hưởng chế độ liên quan. Kết quả thường nhận được là Văn bản của UBCKNN về việc nhận được đầy đủ tài liệu báo cáo phát hành của tổ chức phát hành hoặc văn bản từ chối của UBCKNN. Thời gian xử lý tham khảo: 7 ngày làm việc.",
+    "not_included": []
+  },
+  "agency": {
+    "executing_agency": "Ủy ban Chứng khoán Nhà nước - Bộ tài chính",
+    "submission_place": null,
+    "receiving_places": []
+  },
+  "target_users": [
+    "Doanh nghiệp"
+  ],
+  "submission_methods": [
+    {
+      "code": "ONLINE",
+      "label": "Trực tuyến",
+      "processing_time": "7 ngày làm việc",
+      "fee": null,
+      "description": null
+    },
+    {
+      "code": "POSTAL",
+      "label": "Dịch vụ bưu chính",
+      "processing_time": "7 ngày làm việc",
+      "fee": null,
+      "description": null
+    },
+    {
+      "code": "IN_PERSON",
+      "label": "Trực tiếp",
+      "processing_time": "7 ngày làm việc",
+      "fee": null,
+      "description": null
+    }
+  ],
+  "processing_note": "Thời gian xử lý tham chiếu: 7 ngày làm việc. Nên xác định rõ nhu cầu lao động, hồ sơ nghề nghiệp hoặc chế độ cần giải quyết trước khi nộp. Có thể chọn kênh nộp phù hợp: Trực tiếp, Trực tuyến, Dịch vụ bưu chính. Hiện có khoảng 9 mục giấy tờ cần theo dõi trong checklist.",
+  "documents": {
+    "normally_required": [
+      {
+        "name": "Văn bản chấp thuận của Ngân hàng Nhà nước Việt Nam về đề nghị tăng vốn điều lệ theo quy định của pháp luật về các tổ chức tín dụng đối với việc phát hành cổ phiếu của tổ chức tín dụng hoặc văn bản chấp thuận của Bộ Tài chính về việc tăng vốn điều lệ theo quy định của pháp luật về kinh doanh bảo hiểm đối với việc phát hành cổ phiếu của tổ chức kinh doanh bảo hiểm;",
+        "quantity": "1 bản chính, 0 bản sao",
+        "notes": [],
+        "group": "default",
+        "attachment_path": null
+      },
+      {
+        "name": "Quyết định của Đại hội đồng cổ đông thông qua phương án phát hành cổ phiếu cho người lao động. Những người có quyền lợi liên quan đến đợt phát hành không được tham gia biểu quyết thông qua nội dung này",
+        "quantity": "1 bản chính, 0 bản sao",
+        "notes": [],
+        "group": "default",
+        "attachment_path": null
+      },
+      {
+        "name": "Báo cáo phát hành cổ phiếu theo Mẫu số 17 Phụ lục ban hành kèm theo Nghị định số 245/2025/NĐ-CP sửa đổi, bổ sung một số điều của Nghị định số 155/2020/NĐ-CP",
+        "quantity": "1 bản chính, 0 bản sao",
+        "notes": [],
+        "group": "default",
+        "attachment_path": null
+      },
+      {
+        "name": "Quyết định của Hội đồng quản trị thông qua việc triển khai phương án phát hành",
+        "quantity": "1 bản chính, 0 bản sao",
+        "notes": [],
+        "group": "default",
+        "attachment_path": null
+      }
+    ],
+    "conditional": [
+      {
+        "condition": "Báo cáo tài chính kỳ gần nhất được kiểm toán bởi tổ chức kiểm toán được chấp thuận trong trường hợp phát hành cổ phiếu thưởng cho người lao động",
+        "document": "Báo cáo tài chính kỳ gần nhất được kiểm toán bởi tổ chức kiểm toán được chấp thuận trong trường hợp phát hành cổ phiếu thưởng cho người lao động",
+        "quantity": "1 bản chính, 0 bản sao",
+        "notes": [],
+        "attachment_path": null
+      },
+      {
+        "condition": "Văn bản xác nhận của ngân hàng, chi nhánh ngân hàng nước ngoài về việc mở tài khoản phong tỏa nhận tiền mua cổ phiếu trừ trường hợp phát hành cổ phiếu thưởng cho người lao động",
+        "document": "Văn bản xác nhận của ngân hàng, chi nhánh ngân hàng nước ngoài về việc mở tài khoản phong tỏa nhận tiền mua cổ phiếu trừ trường hợp phát hành cổ phiếu thưởng cho người lao động",
+        "quantity": "1 bản chính, 0 bản sao",
+        "notes": [],
+        "attachment_path": null
+      },
+      {
+        "condition": "Quyết định của Đại hội đồng cổ đông hoặc Hội đồng quản trị (trong trường hợp được Đại hội đồng cổ đông ủy quyền) thông qua danh sách người lao động được tham gia chương trình, nguyên tắc xác định số cổ phiếu được phân phối cho từng đối tượng và thời gian thực hiện, trường hợp công ty mua lại cổ phiếu của người lao động và phương án bán ra số cổ phiếu được công ty mua lại. Những người có quyền lợi liên quan đến đợt phát hành không được tham gia biểu quyết thông qua nội dung này",
+        "document": "Quyết định của Đại hội đồng cổ đông hoặc Hội đồng quản trị (trong trường hợp được Đại hội đồng cổ đông ủy quyền) thông qua danh sách người lao động được tham gia chương trình, nguyên tắc xác định số cổ phiếu được phân phối cho từng đối tượng và thời gian thực hiện, trường hợp công ty mua lại cổ phiếu của người lao động và phương án bán ra số cổ phiếu được công ty mua lại. Những người có quyền lợi liên quan đến đợt phát hành không được tham gia biểu quyết thông qua nội dung này",
+        "quantity": "1 bản chính, 0 bản sao",
+        "notes": [],
+        "attachment_path": null
+      },
+      {
+        "condition": "Quyết định của Đại hội đồng cổ đông hoặc Hội đồng quản trị (trong trường hợp được Đại hội đồng cổ đông ủy quyền) thông qua phương án đảm bảo việc phát hành cổ phiếu đáp ứng quy định về tỷ lệ sở hữu nước ngoài trong trường hợp phát hành cổ phiếu cho người lao động là nhà đầu tư nước ngoài",
+        "document": "Quyết định của Đại hội đồng cổ đông hoặc Hội đồng quản trị (trong trường hợp được Đại hội đồng cổ đông ủy quyền) thông qua phương án đảm bảo việc phát hành cổ phiếu đáp ứng quy định về tỷ lệ sở hữu nước ngoài trong trường hợp phát hành cổ phiếu cho người lao động là nhà đầu tư nước ngoài",
+        "quantity": "1 bản chính, 0 bản sao",
+        "notes": [],
+        "attachment_path": null
+      },
+      {
+        "condition": "Quyết định của cấp có thẩm quyền của công ty con thông qua việc phân phối lợi nhuận, sao kê có xác nhận của ngân hàng chứng minh việc đã điều chuyển lợi nhuận từ các công ty con về công ty mẹ trong trường hợp sử dụng lợi nhuận sau thuế chưa phân phối làm nguồn để phát hành cổ phiếu thưởng cho người lao động và nguồn vốn thực hiện thấp hơn lợi nhuận sau thuế chưa phân phối trên báo cáo tài chính hợp nhất, cao hơn mức lợi nhuận sau thuế chưa phân phối trên báo cáo tài chính riêng của công ty mẹ",
+        "document": "Quyết định của cấp có thẩm quyền của công ty con thông qua việc phân phối lợi nhuận, sao kê có xác nhận của ngân hàng chứng minh việc đã điều chuyển lợi nhuận từ các công ty con về công ty mẹ trong trường hợp sử dụng lợi nhuận sau thuế chưa phân phối làm nguồn để phát hành cổ phiếu thưởng cho người lao động và nguồn vốn thực hiện thấp hơn lợi nhuận sau thuế chưa phân phối trên báo cáo tài chính hợp nhất, cao hơn mức lợi nhuận sau thuế chưa phân phối trên báo cáo tài chính riêng của công ty mẹ",
+        "quantity": "1 bản chính, 0 bản sao",
+        "notes": [],
+        "attachment_path": null
+      }
+    ],
+    "forms": [],
+    "presented": [],
+    "notes": [],
+    "summary": [
+      {
+        "group": "default",
+        "name": "Văn bản chấp thuận của Ngân hàng Nhà nước Việt Nam về đề nghị tăng vốn điều lệ theo quy định của pháp luật về các tổ chức tín dụng đối với việc phát hành cổ phiếu của tổ chức tín dụng hoặc văn bản chấp thuận của Bộ Tài chính về việc tăng vốn điều lệ theo quy định của pháp luật về kinh doanh bảo hiểm đối với việc phát hành cổ phiếu của tổ chức kinh doanh bảo hiểm;",
+        "quantity": "1 bản chính, 0 bản sao",
+        "notes": [],
+        "attachment_path": null
+      },
+      {
+        "group": "default",
+        "name": "Quyết định của Đại hội đồng cổ đông thông qua phương án phát hành cổ phiếu cho người lao động. Những người có quyền lợi liên quan đến đợt phát hành không được tham gia biểu quyết thông qua nội dung này",
+        "quantity": "1 bản chính, 0 bản sao",
+        "notes": [],
+        "attachment_path": null
+      },
+      {
+        "group": "default",
+        "name": "Báo cáo phát hành cổ phiếu theo Mẫu số 17 Phụ lục ban hành kèm theo Nghị định số 245/2025/NĐ-CP sửa đổi, bổ sung một số điều của Nghị định số 155/2020/NĐ-CP",
+        "quantity": "1 bản chính, 0 bản sao",
+        "notes": [],
+        "attachment_path": null
+      },
+      {
+        "group": "default",
+        "name": "Quyết định của Hội đồng quản trị thông qua việc triển khai phương án phát hành",
+        "quantity": "1 bản chính, 0 bản sao",
+        "notes": [],
+        "attachment_path": null
+      },
+      {
+        "group": null,
+        "name": null,
+        "quantity": "1 bản chính, 0 bản sao",
+        "notes": [],
+        "attachment_path": null
+      },
+      {
+        "group": null,
+        "name": null,
+        "quantity": "1 bản chính, 0 bản sao",
+        "notes": [],
+        "attachment_path": null
+      },
+      {
+        "group": null,
+        "name": null,
+        "quantity": "1 bản chính, 0 bản sao",
+        "notes": [],
+        "attachment_path": null
+      },
+      {
+        "group": null,
+        "name": null,
+        "quantity": "1 bản chính, 0 bản sao",
+        "notes": [],
+        "attachment_path": null
+      },
+      {
+        "group": null,
+        "name": null,
+        "quantity": "1 bản chính, 0 bản sao",
+        "notes": [],
+        "attachment_path": null
+      }
+    ]
+  },
+  "steps": [
+    {
+      "order": 1,
+      "title": "Bước 1",
+      "description": "1. +",
+      "example": null
+    },
+    {
+      "order": 2,
+      "title": "Bước 1:",
+      "description": "Bước 1: Công ty đại chúng gửi tài liệu báo cáo phát hành cổ phiếu theo chương trình lựa chọn cho người lao động trong công ty cho Ủy ban Chứng khoán Nhà nước (UBCKNN); +",
+      "example": null
+    },
+    {
+      "order": 3,
+      "title": "Bước 2:",
+      "description": "Bước 2: UBCKNN tiếp nhận, xem xét hồ sơ. +",
+      "example": null
+    },
+    {
+      "order": 4,
+      "title": "Bước 3:",
+      "description": "Bước 3: Sau khi nhận được tài liệu báo cáo phát hành đầy đủ và hợp lệ, UBCKNN thông báo bằng văn bản cho tổ chức phát hành và đăng tải trên trang thông tin điện tử của UBCKNN về việc nhận được đầy đủ tài liệu báo cáo phát hành của tổ chức phát hành. Trường hợp từ chối, UBCKNN phải trả lời bằng văn bản và nêu rõ lý do;",
+      "example": null
+    }
+  ],
+  "input_fields": [
+    {
+      "field": "employment_need",
+      "label": "Nhu cầu việc làm hoặc lao động",
+      "type": "string",
+      "required": true
+    },
+    {
+      "field": "worker_or_employer_info",
+      "label": "Thông tin người lao động hoặc đơn vị sử dụng lao động",
+      "type": "string",
+      "required": true
+    },
+    {
+      "field": "submission_channel_preference",
+      "label": "Kênh nộp dự kiến",
+      "type": "enum",
+      "required": false,
+      "options": [
+        "Trực tiếp",
+        "Trực tuyến",
+        "Dịch vụ bưu chính"
+      ]
+    },
+    {
+      "field": "has_supporting_employment_documents",
+      "label": "Đã có hồ sơ lao động liên quan",
+      "type": "boolean",
+      "required": false
+    }
+  ],
+  "validation_rules": [
+    {
+      "id": "required-1",
+      "severity": "error",
+      "field": "employment_need",
+      "rule": "Trường bắt buộc phải có dữ liệu hợp lệ trước khi nộp.",
+      "message": "Thiếu trường bắt buộc: Nhu cầu việc làm hoặc lao động."
+    },
+    {
+      "id": "required-2",
+      "severity": "error",
+      "field": "worker_or_employer_info",
+      "rule": "Trường bắt buộc phải có dữ liệu hợp lệ trước khi nộp.",
+      "message": "Thiếu trường bắt buộc: Thông tin người lao động hoặc đơn vị sử dụng lao động."
+    },
+    {
+      "id": "hint-1",
+      "severity": "warning",
+      "field": "general",
+      "rule": "Nên xác định trước kênh nộp hồ sơ để biết có cần bản giấy, bản điện tử hay xuất trình trực tiếp.",
+      "message": "Nên xác định trước kênh nộp hồ sơ để biết có cần bản giấy, bản điện tử hay xuất trình trực tiếp."
+    },
+    {
+      "id": "hint-2",
+      "severity": "warning",
+      "field": "general",
+      "rule": "Nên xác định đúng nhóm thủ tục lao động, đơn vị liên quan và hồ sơ nghề nghiệp cần xuất trình.",
+      "message": "Nên xác định đúng nhóm thủ tục lao động, đơn vị liên quan và hồ sơ nghề nghiệp cần xuất trình."
+    }
+  ],
+  "common_errors": [
+    {
+      "field": "general",
+      "issue": "Thiếu giấy tờ hoặc nội dung ủy quyền phù hợp.",
+      "fix": "Nên xác định trước kênh nộp hồ sơ để biết có cần bản giấy, bản điện tử hay xuất trình trực tiếp."
+    },
+    {
+      "field": "general",
+      "issue": "Thiếu giấy tờ hợp pháp hóa hoặc giấy tờ nhân thân của phía nước ngoài.",
+      "fix": "Nên xác định trước kênh nộp hồ sơ để biết có cần bản giấy, bản điện tử hay xuất trình trực tiếp."
+    },
+    {
+      "field": "general",
+      "issue": "Điền sai mẫu tờ khai hoặc chọn sai biểu mẫu đi kèm.",
+      "fix": "Nên xác định trước kênh nộp hồ sơ để biết có cần bản giấy, bản điện tử hay xuất trình trực tiếp."
+    },
+    {
+      "field": "general",
+      "issue": "Thiếu hồ sơ về vị trí việc làm, đơn vị sử dụng lao động hoặc điều kiện làm việc áp dụng.",
+      "fix": "Nên xác định trước kênh nộp hồ sơ để biết có cần bản giấy, bản điện tử hay xuất trình trực tiếp."
+    }
+  ],
+  "clarifying_questions": [
+    {
+      "id": "clarify_1",
+      "question": "Bạn đang cần giải quyết thủ tục lao động nào cho người lao động hoặc doanh nghiệp?",
+      "purpose": "workflow_intake"
+    },
+    {
+      "id": "clarify_2",
+      "question": "Hồ sơ nghề nghiệp, đơn vị sử dụng lao động hoặc yếu tố lao động nước ngoài đã rõ chưa?",
+      "purpose": "workflow_intake"
+    }
+  ],
+  "legal_basis": [
+    {
+      "title": "Luật số 56/2024/QH15 của Quốc hội: Luật sửa đổi, bổ sung một số điều của Luật Chứng khoán, Luật Kế toán, Luật Kiểm toán độc lập, Luật Ngân sách nhà nước, Luật Quản lý, sử dụng tài sản công, Luật Quản lý thuế, Luật Thuế thu nhập cá nhân, Luật Dự trữ quốc gia, Luật Xử lý vi phạm hành chính",
+      "code": "56/2024/QH15"
+    },
+    {
+      "title": "Nghị định 155/2020/NĐ-CP",
+      "code": "155/2020/NĐ-CP"
+    },
+    {
+      "title": "Nghị định sửa đổi, bổ sung một số điều của Nghị định số 155/2020/NĐ-CP ngày 31 tháng 12 năm 2020 của Chính phủ quy định chi tiết thi hành một số điều của Luật Chứng khoán",
+      "code": "245/2025/NĐ-CP"
+    }
+  ],
+  "legal_bases": [
+    {
+      "title": "Luật số 56/2024/QH15 của Quốc hội: Luật sửa đổi, bổ sung một số điều của Luật Chứng khoán, Luật Kế toán, Luật Kiểm toán độc lập, Luật Ngân sách nhà nước, Luật Quản lý, sử dụng tài sản công, Luật Quản lý thuế, Luật Thuế thu nhập cá nhân, Luật Dự trữ quốc gia, Luật Xử lý vi phạm hành chính",
+      "code": "56/2024/QH15"
+    },
+    {
+      "title": "Nghị định 155/2020/NĐ-CP",
+      "code": "155/2020/NĐ-CP"
+    },
+    {
+      "title": "Nghị định sửa đổi, bổ sung một số điều của Nghị định số 155/2020/NĐ-CP ngày 31 tháng 12 năm 2020 của Chính phủ quy định chi tiết thi hành một số điều của Luật Chứng khoán",
+      "code": "245/2025/NĐ-CP"
+    }
+  ],
+  "faq": [
+    {
+      "question": "Có thể nộp qua kênh nào?",
+      "answer": "Các kênh hiện có: Trực tiếp, Trực tuyến, Dịch vụ bưu chính."
+    },
+    {
+      "question": "Thời gian xử lý tham chiếu là bao lâu?",
+      "answer": "Thời gian xử lý tham chiếu hiện có là 7 ngày làm việc."
+    },
+    {
+      "question": "Kết quả chính của thủ tục là gì?",
+      "answer": "Kết quả chính được trích xuất là Văn bản của UBCKNN về việc nhận được đầy đủ tài liệu báo cáo phát hành của tổ chức phát hành hoặc văn bản từ chối của UBCKNN."
+    }
+  ],
+  "guidance": {
+    "highlight_documents": [
+      {
+        "bucket": "required",
+        "name": "Văn bản chấp thuận của Ngân hàng Nhà nước Việt Nam về đề nghị tăng vốn điều lệ theo quy định của pháp luật về các tổ chức tín dụng đối với việc phát hành cổ phiếu của tổ chức tín dụng hoặc văn bản chấp thuận của Bộ Tài chính về việc tăng vốn điều lệ theo quy định của pháp luật về kinh doanh bảo hiểm đối với việc phát hành cổ phiếu của tổ chức kinh doanh bảo hiểm;",
+        "conditions": [],
+        "attachment_path": null
+      },
+      {
+        "bucket": "required",
+        "name": "Quyết định của Đại hội đồng cổ đông thông qua phương án phát hành cổ phiếu cho người lao động. Những người có quyền lợi liên quan đến đợt phát hành không được tham gia biểu quyết thông qua nội dung này",
+        "conditions": [],
+        "attachment_path": null
+      },
+      {
+        "bucket": "required",
+        "name": "Báo cáo phát hành cổ phiếu theo Mẫu số 17 Phụ lục ban hành kèm theo Nghị định số 245/2025/NĐ-CP sửa đổi, bổ sung một số điều của Nghị định số 155/2020/NĐ-CP",
+        "conditions": [],
+        "attachment_path": null
+      },
+      {
+        "bucket": "required",
+        "name": "Quyết định của Hội đồng quản trị thông qua việc triển khai phương án phát hành",
+        "conditions": [],
+        "attachment_path": null
+      },
+      {
+        "bucket": "conditional",
+        "name": "Báo cáo tài chính kỳ gần nhất được kiểm toán bởi tổ chức kiểm toán được chấp thuận trong trường hợp phát hành cổ phiếu thưởng cho người lao động",
+        "conditions": [
+          "Báo cáo tài chính kỳ gần nhất được kiểm toán bởi tổ chức kiểm toán được chấp thuận trong trường hợp phát hành cổ phiếu thưởng cho người lao động"
+        ],
+        "attachment_path": null
+      },
+      {
+        "bucket": "conditional",
+        "name": "Văn bản xác nhận của ngân hàng, chi nhánh ngân hàng nước ngoài về việc mở tài khoản phong tỏa nhận tiền mua cổ phiếu trừ trường hợp phát hành cổ phiếu thưởng cho người lao động",
+        "conditions": [
+          "Văn bản xác nhận của ngân hàng, chi nhánh ngân hàng nước ngoài về việc mở tài khoản phong tỏa nhận tiền mua cổ phiếu trừ trường hợp phát hành cổ phiếu thưởng cho người lao động"
+        ],
+        "attachment_path": null
+      }
+    ],
+    "special_cases": [
+      "Có yếu tố nước ngoài",
+      "Có thể cần giấy tờ ủy quyền",
+      "Có thể cần xác minh quan hệ lao động hoặc giấy phép làm việc"
+    ],
+    "common_errors": [
+      "Thiếu giấy tờ hoặc nội dung ủy quyền phù hợp.",
+      "Thiếu giấy tờ hợp pháp hóa hoặc giấy tờ nhân thân của phía nước ngoài.",
+      "Điền sai mẫu tờ khai hoặc chọn sai biểu mẫu đi kèm.",
+      "Thiếu hồ sơ về vị trí việc làm, đơn vị sử dụng lao động hoặc điều kiện làm việc áp dụng."
+    ],
+    "validation_hints": [
+      "Nên xác định trước kênh nộp hồ sơ để biết có cần bản giấy, bản điện tử hay xuất trình trực tiếp.",
+      "Nên xác định đúng nhóm thủ tục lao động, đơn vị liên quan và hồ sơ nghề nghiệp cần xuất trình."
+    ]
+  },
+  "next_steps": {
+    "summary": "Nên xác định rõ nhu cầu lao động, hồ sơ nghề nghiệp hoặc chế độ cần giải quyết trước khi nộp. Có thể chọn kênh nộp phù hợp: Trực tiếp, Trực tuyến, Dịch vụ bưu chính. Hiện có khoảng 9 mục giấy tờ cần theo dõi trong checklist.",
+    "time_badge": "7 ngày làm việc",
+    "result_label": "Văn bản của UBCKNN về việc nhận được đầy đủ tài liệu báo cáo phát hành của tổ chức phát hành hoặc văn bản từ chối của UBCKNN",
+    "primary_channel": "online",
+    "channels": [
+      "in_person",
+      "online",
+      "postal"
+    ]
+  },
+  "notes": [],
+  "provenance": {
+    "pipeline": "raw->structured->normalized->enriched->ui_api_payload",
+    "normalizer_version": "0.2.0",
+    "enricher_version": "0.2.0",
+    "mapping_notes": "excluded_from_clean_workflow_dataset",
+    "supported_group": true
+  }
+}

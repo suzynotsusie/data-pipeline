@@ -1,0 +1,118 @@
+{
+  "schema_version": "1.0",
+  "enricher_version": "0.2.0",
+  "source": {
+    "procedure_code": "3.000038",
+    "title": "Thủ tục cấp, cấp lại, điều chỉnh Giấy chứng nhận đủ điều kiện kinh doanh dịch vụ quản lý quỹ bảo hiểm hưu trí bổ sung",
+    "group_key": "huu_tri",
+    "workflow_family": null,
+    "subflow": null
+  },
+  "experience": {
+    "entry_label": "Hỗ trợ chế độ hưu trí",
+    "overview_summary": "Thủ tục này thuộc nhóm hưu trí, thường dùng để xác định điều kiện nghỉ hưu, trợ cấp hoặc chế độ hưởng theo hồ sơ bảo hiểm xã hội. Kết quả thường nhận được là Giấy chứng nhận đủ điều kiện kinh doanh dịch vụ quản lý Quỹ hưu trí bổ sung tự nguyện. Thời gian xử lý tham khảo: 30 ngày làm việc.",
+    "next_step_summary": "Nên rà trước quá trình đóng bảo hiểm, mốc tuổi và loại chế độ muốn hưởng trước khi nộp. Có thể chọn kênh nộp phù hợp: Trực tiếp, Trực tuyến. Hiện có khoảng 29 mục giấy tờ cần theo dõi trong checklist.",
+    "tone": "supportive_public_service"
+  },
+  "guidance": {
+    "highlight_documents": [
+      {
+        "bucket": "required",
+        "name": "+ Đơn đề nghị cấp Giấy chứng nhận đủ điều kiện kinh doanh theo mẫu.",
+        "conditions": [],
+        "attachment_path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/3_000038/m%E1%BA%ABu%20s%E1%BB%91%201%20n%C4%91%2085%202026.docx"
+      },
+      {
+        "bucket": "required",
+        "name": "+ Dự thảo Điều lệ quỹ đối với mỗi quỹ hưu trí dự kiến thành lập đáp ứng quy định tại Điều 11 Nghị định số 85/2026/NĐ-CP.",
+        "conditions": [],
+        "attachment_path": null
+      },
+      {
+        "bucket": "required",
+        "name": "+ Phương án kinh doanh dịch vụ quản lý quỹ hưu trí:",
+        "conditions": [],
+        "attachment_path": null
+      },
+      {
+        "bucket": "required",
+        "name": "++ Kế hoạch hoạt động quản lý quỹ hưu trí trong 05 năm tiếp theo bao gồm: mô tả chương trình bảo hiểm hưu trí bổ sung dự kiến triển khai; nguyên tắc phối hợp, trách nhiệm của doanh nghiệp quản lý quỹ với các tổ chức cung cấp dịch vụ theo quy định tại khoản 5 Điều 9 Nghị định số 85/2026/NĐ-CP trong triển khai chương trình bảo hiểm hưu trí bổ sung; phương án phát triển đối tượng tham gia.",
+        "conditions": [],
+        "attachment_path": null
+      },
+      {
+        "bucket": "required",
+        "name": "++ Phương án về cơ sở hạ tầng công nghệ thông tin để quản lý từng tài khoản hưu trí cá nhân đảm bảo thực hiện các hoạt động đóng góp, đầu tư, thanh toán chi phí, chi trả cho người tham gia quỹ và người sử dụng lao động, thanh toán thuế thu nhập cá nhân.",
+        "conditions": [],
+        "attachment_path": null
+      },
+      {
+        "bucket": "required",
+        "name": "++ Mẫu hợp đồng khung về tham gia quỹ hưu trí đáp ứng điều kiện quy định tại Điều 15 Nghị định số 85/2026/NĐ-CP.",
+        "conditions": [],
+        "attachment_path": null
+      }
+    ],
+    "special_cases": [
+      "Có yếu tố nước ngoài",
+      "Có thể cần đối chiếu thông tin thửa đất hoặc giấy chứng nhận",
+      "Có thể cần đối chiếu quá trình đóng bảo hiểm để giải quyết chế độ",
+      "Có thể cần xác minh quan hệ lao động hoặc giấy phép làm việc"
+    ],
+    "common_errors": [
+      "Thiếu giấy tờ hợp pháp hóa hoặc giấy tờ nhân thân của phía nước ngoài.",
+      "Điền sai mẫu tờ khai hoặc chọn sai biểu mẫu đi kèm.",
+      "Thông tin thửa đất, tài sản hoặc giấy chứng nhận chưa khớp với hồ sơ hiện có.",
+      "Thiếu thông tin về thời gian tham gia bảo hiểm hoặc chưa xác định đúng chế độ hưu trí.",
+      "Thiếu hồ sơ về vị trí việc làm, đơn vị sử dụng lao động hoặc điều kiện làm việc áp dụng."
+    ],
+    "validation_hints": [
+      "Nên xác định trước kênh nộp hồ sơ để biết có cần bản giấy, bản điện tử hay xuất trình trực tiếp.",
+      "Có mẫu biểu đính kèm, nên kiểm tra đúng biểu mẫu trước khi nộp.",
+      "Nên rà lại quá trình tham gia bảo hiểm, độ tuổi và loại chế độ muốn hưởng trước khi nộp."
+    ]
+  },
+  "intake": {
+    "candidate_input_fields": [
+      {
+        "field_id": "insured_person_name",
+        "label": "Người hưởng chế độ",
+        "field_type": "text",
+        "required": true
+      },
+      {
+        "field_id": "retirement_or_allowance_need",
+        "label": "Nhu cầu hưởng chế độ hưu trí/trợ cấp",
+        "field_type": "text",
+        "required": true
+      },
+      {
+        "field_id": "social_insurance_participation_known",
+        "label": "Đã rõ quá trình tham gia BHXH",
+        "field_type": "boolean",
+        "required": true
+      },
+      {
+        "field_id": "submission_channel_preference",
+        "label": "Kênh nộp dự kiến",
+        "field_type": "enum",
+        "required": false
+      }
+    ],
+    "suggested_clarifying_questions": [
+      "Bạn đang muốn chuẩn bị nghỉ hưu hay giải quyết chế độ hưu trí cụ thể nào?",
+      "Quá trình tham gia bảo hiểm và độ tuổi hưởng chế độ đã xác định rõ chưa?"
+    ]
+  },
+  "ui_hints": {
+    "primary_channel": "in_person",
+    "result_label": "Giấy chứng nhận đủ điều kiện kinh doanh dịch vụ quản lý Quỹ hưu trí bổ sung tự nguyện",
+    "time_badge": "30 ngày làm việc",
+    "document_count_badge": 29
+  },
+  "provenance": {
+    "generator": "workflow_domain_enricher",
+    "derivation_mode": "rule_based_semantic_enrichment",
+    "supported_group": true
+  }
+}

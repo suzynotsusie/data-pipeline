@@ -1,0 +1,286 @@
+{
+  "schema_version": "3.0",
+  "record_type": "public_service_procedure_payload",
+  "id": "procedure-3.000249",
+  "procedure_code": "3.000249",
+  "code": "3.000249",
+  "title": "Thủ tục cấp thẻ tạm trú cho người nước ngoài tại Việt Nam",
+  "language": "vi",
+  "status": "generated_from_pipeline",
+  "field": "Ưu đãi, miễn trừ",
+  "group_key": "cu_tru_giay_to",
+  "workflow_family": null,
+  "subflow": null,
+  "source": {
+    "source_url": "file:///C:/Users/ku060/Downloads/VAIC%20source/data-pipeline/raw_data/3_000249/3_000249_procedure_detail.md",
+    "source_markdown_path": "C:\\Users\\ku060\\Downloads\\VAIC source\\data-pipeline\\raw_data\\3_000249\\3_000249_procedure_detail.md",
+    "normalized_payload_path": "C:\\Users\\ku060\\Downloads\\VAIC source\\data-pipeline\\govease-unified\\data\\normalized_structured\\3_000249_normalized_structured.json",
+    "enriched_payload_path": "C:\\Users\\ku060\\Downloads\\VAIC source\\data-pipeline\\govease-unified\\data\\enriched_structured_priority\\3_000249_enriched_structured.json"
+  },
+  "scope": {
+    "included": "Thủ tục này thuộc nhóm cư trú và giấy tờ, thường cần kiểm tra thông tin định danh hoặc hồ sơ giấy tờ chuyên ngành. Kết quả thường nhận được là Thẻ tạm trú. Thời gian xử lý tham khảo: 5 ngày làm việc.",
+    "not_included": []
+  },
+  "agency": {
+    "executing_agency": "Sở Ngoại vụ Thành phố Hồ Chí Minh - Bộ Ngoại giao, Cục Lễ tân Nhà nước và Phiên dịch đối ngoại - Bộ Ngoại giao",
+    "submission_place": null,
+    "receiving_places": []
+  },
+  "target_users": [
+    "Người nước ngoài"
+  ],
+  "submission_methods": [
+    {
+      "code": "IN_PERSON",
+      "label": "Trực tiếp",
+      "processing_time": "5 ngày làm việc",
+      "fee": null,
+      "description": "- Đối với các cơ quan đại diện ngoại giao, cơ quan đại diện của các tổ chức quốc tế tại Hà Nội: đăng ký và khai hồ sơ trực tuyến qua Cổng Dịch vụ công của Bộ Ngoại giao; nộp hồ sơ trực tiếp/gửi qua dịch vụ bưu chính đến Cục Lễ tân Nhà nước.<br>- Đối với các cơ quan đại diện ngoại giao, cơ quan đại diện của các tổ chức quốc tế tại các tỉnh phía Nam (từ Đà Nẵng trở vào): đăng ký và khai hồ sơ trực tuyến qua Cổng Dịch vụ công của Bộ Ngoại giao; nộp hồ sơ trực tiếp/gửi qua dịch vụ bưu chính đến Sở Ngoại vụ TP.HCM"
+    }
+  ],
+  "processing_note": "Thời gian xử lý tham chiếu: 5 ngày làm việc. Nên kiểm tra trước giấy tờ định danh, nơi nộp và mẫu biểu liên quan, rồi chọn kênh nộp phù hợp: Trực tiếp. Hiện có khoảng 4 mục giấy tờ cần theo dõi trong checklist.",
+  "documents": {
+    "normally_required": [
+      {
+        "name": "Hộ chiếu bản gốc, còn giá trị sử dụng.",
+        "quantity": "1 bản chính, 0 bản sao",
+        "notes": [],
+        "group": "default",
+        "attachment_path": null
+      },
+      {
+        "name": "Tờ khai đề nghị cấp thẻ tạm trú (theo mẫu NA8ban hành kèm theo Thông tư 04/2015/TT-BCA của Bộ Công an), có xác nhận của người có thẩm quyền của cơ quan đại diện ngoại giao, cơ quan lãnh sự, cơ quan đại diện của tổ chức quốc tế tại Việt Nam.",
+        "quantity": "1 bản chính, 0 bản sao",
+        "notes": [],
+        "group": "default",
+        "attachment_path": null
+      }
+    ],
+    "conditional": [
+      {
+        "condition": "Trường hợp thuộc diện tăng biên chế của cơ quan đại diện ngoại giao, cơ quan lãnh sự, cơ quan đại diện của tổ chức quốc tế tại Việt Nam, cần bổ sung công hàm của Bộ Ngoại giao nước cử thông báo về việc tăng biên chế.",
+        "document": "Trường hợp thuộc diện tăng biên chế của cơ quan đại diện ngoại giao, cơ quan lãnh sự, cơ quan đại diện của tổ chức quốc tế tại Việt Nam, cần bổ sung công hàm của Bộ Ngoại giao nước cử thông báo về việc tăng biên chế.",
+        "quantity": "1 bản chính, 0 bản sao",
+        "notes": [],
+        "attachment_path": null
+      },
+      {
+        "condition": "Công hàm đề nghị cấp thẻ tạm trú của cơ quan đại diện ngoại giao, cơ quan lãnh sự, cơ quan đại diện của tổ chức quốc tế tại Việt Nam, trong đó ghi rõ các thông tin: họ tên, ngày sinh, quốc tịch, giới tính, số và ký hiệu hộ chiếu, nghề nghiệp, chức vụ của người đề nghị cấp thẻ tạm trú (tham khảo mẫu NA6 ban hành kèm theo Thông tư 04/2015/TT-BCA của Bộ Công an). Đối với trường hợp thay biên chế hoặc bổ sung biên chế mới của cơ quan đại diện ngoại giao, cơ quan lãnh sự, cơ quan đại diện của tổ chức quốc tế tại Việt Nam thì công hàm đề nghị cấp thẻ tạm trú cần ghi rõ họ tên, chức danh của người được thay biên chế hoặc người được bổ sung biên chế.",
+        "document": "Công hàm đề nghị cấp thẻ tạm trú của cơ quan đại diện ngoại giao, cơ quan lãnh sự, cơ quan đại diện của tổ chức quốc tế tại Việt Nam, trong đó ghi rõ các thông tin: họ tên, ngày sinh, quốc tịch, giới tính, số và ký hiệu hộ chiếu, nghề nghiệp, chức vụ của người đề nghị cấp thẻ tạm trú (tham khảo mẫu NA6 ban hành kèm theo Thông tư 04/2015/TT-BCA của Bộ Công an). Đối với trường hợp thay biên chế hoặc bổ sung biên chế mới của cơ quan đại diện ngoại giao, cơ quan lãnh sự, cơ quan đại diện của tổ chức quốc tế tại Việt Nam thì công hàm đề nghị cấp thẻ tạm trú cần ghi rõ họ tên, chức danh của người được thay biên chế hoặc người được bổ sung biên chế.",
+        "quantity": "1 bản chính, 0 bản sao",
+        "notes": [],
+        "attachment_path": null
+      }
+    ],
+    "forms": [],
+    "presented": [],
+    "notes": [],
+    "summary": [
+      {
+        "group": "default",
+        "name": "Hộ chiếu bản gốc, còn giá trị sử dụng.",
+        "quantity": "1 bản chính, 0 bản sao",
+        "notes": [],
+        "attachment_path": null
+      },
+      {
+        "group": "default",
+        "name": "Tờ khai đề nghị cấp thẻ tạm trú (theo mẫu NA8ban hành kèm theo Thông tư 04/2015/TT-BCA của Bộ Công an), có xác nhận của người có thẩm quyền của cơ quan đại diện ngoại giao, cơ quan lãnh sự, cơ quan đại diện của tổ chức quốc tế tại Việt Nam.",
+        "quantity": "1 bản chính, 0 bản sao",
+        "notes": [],
+        "attachment_path": null
+      },
+      {
+        "group": null,
+        "name": null,
+        "quantity": "1 bản chính, 0 bản sao",
+        "notes": [],
+        "attachment_path": null
+      },
+      {
+        "group": null,
+        "name": null,
+        "quantity": "1 bản chính, 0 bản sao",
+        "notes": [],
+        "attachment_path": null
+      }
+    ]
+  },
+  "steps": [
+    {
+      "order": 1,
+      "title": "Bước 1",
+      "description": "1. Bộ Ngoại giao (Cục Lễ tân Nhà nước/Sở Ngoại vụ Thành phố Hồ Chí Minh) tiếp nhận hồ sơ đề nghị cấp thẻ tạm trú cho người nước ngoài là thành viêncơ quan đại diện ngoại giao, cơ quan lãnh sự, cơ quan đại diện của tổ chức quốc tế tại Việt Nam và vợ, chồng, con dưới 18 tuổi, người giúp việc.",
+      "example": null
+    },
+    {
+      "order": 2,
+      "title": "Bước 2",
+      "description": "2. Bộ Ngoại giao (Cục Lễ tân Nhà nước/Sở Ngoại vụ Thành phố Hồ Chí Minh) kiểm tra tính đầy đủ của hồ sơ và yêu cầu bổ sung nếu cần.",
+      "example": null
+    },
+    {
+      "order": 3,
+      "title": "Bước 3",
+      "description": "3. Sau khi xác định hồ sơ hợp lệ và đáp ứng đủ yêu cầu, Bộ ngoại giao (Cục Lễ tân Nhà nước/Sở Ngoại vụ Thành phố Hồ Chí Minh) trả ra kết quả là thẻ tạm trú.",
+      "example": null
+    },
+    {
+      "order": 4,
+      "title": "Bước 4",
+      "description": "4. Trong thời gian 05 ngày làm việc kể từ ngày nhận đủ hồ sơ hợp lệ, Bộ Ngoại giao (Cục Lễ tân Nhà nước/Sở Ngoại vụ Thành phố Hồ Chí Minh) trả kết quả bằng hình thức trực tiếp.",
+      "example": "05 ngày làm việc"
+    }
+  ],
+  "input_fields": [
+    {
+      "field": "document_request_type",
+      "label": "Loại giấy tờ cần xử lý",
+      "type": "string",
+      "required": true
+    },
+    {
+      "field": "submission_channel_preference",
+      "label": "Kênh nộp dự kiến",
+      "type": "enum",
+      "required": false,
+      "options": [
+        "Trực tiếp"
+      ]
+    },
+    {
+      "field": "identity_document_available",
+      "label": "Có giấy tờ định danh",
+      "type": "boolean",
+      "required": true
+    },
+    {
+      "field": "residency_or_status_known",
+      "label": "Biết rõ nơi cư trú hoặc tình trạng hiện tại",
+      "type": "boolean",
+      "required": false
+    }
+  ],
+  "validation_rules": [
+    {
+      "id": "required-1",
+      "severity": "error",
+      "field": "document_request_type",
+      "rule": "Trường bắt buộc phải có dữ liệu hợp lệ trước khi nộp.",
+      "message": "Thiếu trường bắt buộc: Loại giấy tờ cần xử lý."
+    },
+    {
+      "id": "required-3",
+      "severity": "error",
+      "field": "identity_document_available",
+      "rule": "Trường bắt buộc phải có dữ liệu hợp lệ trước khi nộp.",
+      "message": "Thiếu trường bắt buộc: Có giấy tờ định danh."
+    },
+    {
+      "id": "hint-1",
+      "severity": "warning",
+      "field": "general",
+      "rule": "Nên xác định trước kênh nộp hồ sơ để biết có cần bản giấy, bản điện tử hay xuất trình trực tiếp.",
+      "message": "Nên xác định trước kênh nộp hồ sơ để biết có cần bản giấy, bản điện tử hay xuất trình trực tiếp."
+    },
+    {
+      "id": "hint-2",
+      "severity": "warning",
+      "field": "general",
+      "rule": "Nên đối chiếu trước dữ liệu định danh và nơi cư trú để tránh bị yêu cầu bổ sung.",
+      "message": "Nên đối chiếu trước dữ liệu định danh và nơi cư trú để tránh bị yêu cầu bổ sung."
+    }
+  ],
+  "common_errors": [
+    {
+      "field": "general",
+      "issue": "Điền sai mẫu tờ khai hoặc chọn sai biểu mẫu đi kèm.",
+      "fix": "Nên xác định trước kênh nộp hồ sơ để biết có cần bản giấy, bản điện tử hay xuất trình trực tiếp."
+    }
+  ],
+  "clarifying_questions": [
+    {
+      "id": "clarify_1",
+      "question": "Bạn đang xử lý giấy tờ gì và muốn nộp trực tiếp hay trực tuyến?",
+      "purpose": "workflow_intake"
+    },
+    {
+      "id": "clarify_2",
+      "question": "Thông tin định danh và nơi cư trú hiện tại đã sẵn sàng để đối chiếu chưa?",
+      "purpose": "workflow_intake"
+    }
+  ],
+  "legal_basis": [],
+  "legal_bases": [],
+  "faq": [
+    {
+      "question": "Có thể nộp qua kênh nào?",
+      "answer": "Các kênh hiện có: Trực tiếp."
+    },
+    {
+      "question": "Thời gian xử lý tham chiếu là bao lâu?",
+      "answer": "Thời gian xử lý tham chiếu hiện có là 5 ngày làm việc."
+    },
+    {
+      "question": "Kết quả chính của thủ tục là gì?",
+      "answer": "Kết quả chính được trích xuất là Thẻ tạm trú."
+    }
+  ],
+  "guidance": {
+    "highlight_documents": [
+      {
+        "bucket": "required",
+        "name": "Hộ chiếu bản gốc, còn giá trị sử dụng.",
+        "conditions": [],
+        "attachment_path": null
+      },
+      {
+        "bucket": "required",
+        "name": "Tờ khai đề nghị cấp thẻ tạm trú (theo mẫu NA8ban hành kèm theo Thông tư 04/2015/TT-BCA của Bộ Công an), có xác nhận của người có thẩm quyền của cơ quan đại diện ngoại giao, cơ quan lãnh sự, cơ quan đại diện của tổ chức quốc tế tại Việt Nam.",
+        "conditions": [],
+        "attachment_path": null
+      },
+      {
+        "bucket": "conditional",
+        "name": "Trường hợp thuộc diện tăng biên chế của cơ quan đại diện ngoại giao, cơ quan lãnh sự, cơ quan đại diện của tổ chức quốc tế tại Việt Nam, cần bổ sung công hàm của Bộ Ngoại giao nước cử thông báo về việc tăng biên chế.",
+        "conditions": [
+          "Trường hợp thuộc diện tăng biên chế của cơ quan đại diện ngoại giao, cơ quan lãnh sự, cơ quan đại diện của tổ chức quốc tế tại Việt Nam, cần bổ sung công hàm của Bộ Ngoại giao nước cử thông báo về việc tăng biên chế."
+        ],
+        "attachment_path": null
+      },
+      {
+        "bucket": "conditional",
+        "name": "Công hàm đề nghị cấp thẻ tạm trú của cơ quan đại diện ngoại giao, cơ quan lãnh sự, cơ quan đại diện của tổ chức quốc tế tại Việt Nam, trong đó ghi rõ các thông tin: họ tên, ngày sinh, quốc tịch, giới tính, số và ký hiệu hộ chiếu, nghề nghiệp, chức vụ của người đề nghị cấp thẻ tạm trú (tham khảo mẫu NA6 ban hành kèm theo Thông tư 04/2015/TT-BCA của Bộ Công an). Đối với trường hợp thay biên chế hoặc bổ sung biên chế mới của cơ quan đại diện ngoại giao, cơ quan lãnh sự, cơ quan đại diện của tổ chức quốc tế tại Việt Nam thì công hàm đề nghị cấp thẻ tạm trú cần ghi rõ họ tên, chức danh của người được thay biên chế hoặc người được bổ sung biên chế.",
+        "conditions": [
+          "Công hàm đề nghị cấp thẻ tạm trú của cơ quan đại diện ngoại giao, cơ quan lãnh sự, cơ quan đại diện của tổ chức quốc tế tại Việt Nam, trong đó ghi rõ các thông tin: họ tên, ngày sinh, quốc tịch, giới tính, số và ký hiệu hộ chiếu, nghề nghiệp, chức vụ của người đề nghị cấp thẻ tạm trú (tham khảo mẫu NA6 ban hành kèm theo Thông tư 04/2015/TT-BCA của Bộ Công an). Đối với trường hợp thay biên chế hoặc bổ sung biên chế mới của cơ quan đại diện ngoại giao, cơ quan lãnh sự, cơ quan đại diện của tổ chức quốc tế tại Việt Nam thì công hàm đề nghị cấp thẻ tạm trú cần ghi rõ họ tên, chức danh của người được thay biên chế hoặc người được bổ sung biên chế."
+        ],
+        "attachment_path": null
+      }
+    ],
+    "special_cases": [],
+    "common_errors": [
+      "Điền sai mẫu tờ khai hoặc chọn sai biểu mẫu đi kèm."
+    ],
+    "validation_hints": [
+      "Nên xác định trước kênh nộp hồ sơ để biết có cần bản giấy, bản điện tử hay xuất trình trực tiếp.",
+      "Nên đối chiếu trước dữ liệu định danh và nơi cư trú để tránh bị yêu cầu bổ sung."
+    ]
+  },
+  "next_steps": {
+    "summary": "Nên kiểm tra trước giấy tờ định danh, nơi nộp và mẫu biểu liên quan, rồi chọn kênh nộp phù hợp: Trực tiếp. Hiện có khoảng 4 mục giấy tờ cần theo dõi trong checklist.",
+    "time_badge": "5 ngày làm việc",
+    "result_label": "Thẻ tạm trú",
+    "primary_channel": "in_person",
+    "channels": [
+      "in_person"
+    ]
+  },
+  "notes": [],
+  "provenance": {
+    "pipeline": "raw->structured->normalized->enriched->ui_api_payload",
+    "normalizer_version": "0.2.0",
+    "enricher_version": "0.2.0",
+    "mapping_notes": "excluded_from_clean_workflow_dataset",
+    "supported_group": true
+  }
+}

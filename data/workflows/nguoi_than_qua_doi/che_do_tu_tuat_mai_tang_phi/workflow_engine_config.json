@@ -1,0 +1,278 @@
+{
+  "schema_version": "1.0",
+  "domain": "nguoi_than_qua_doi",
+  "updated_at": "2026-07-18",
+  "source_files": [
+    "C:\\Users\\ku060\\Downloads\\VAIC source\\data-pipeline\\main\\full-data.csv",
+    "C:\\Users\\ku060\\Downloads\\VAIC source\\data-pipeline\\data\\workflows\\nguoi_than_qua_doi\\summary.csv",
+    "C:\\Users\\ku060\\Downloads\\VAIC source\\data-pipeline\\data\\workflows\\nguoi_than_qua_doi\\normalized.json",
+    "C:\\Users\\ku060\\Downloads\\VAIC source\\data-pipeline\\raw_data"
+  ],
+  "coverage": {
+    "expected_codes": [
+      "1.001731",
+      "1.010456",
+      "1.014028",
+      "1.014177",
+      "1.014359",
+      "2.000821",
+      "2.002307",
+      "2.002308",
+      "2.002862"
+    ],
+    "covered_codes": [
+      "1.001731",
+      "1.010456",
+      "1.014028",
+      "1.014177",
+      "1.014359",
+      "2.000821",
+      "2.002307",
+      "2.002308",
+      "2.002862"
+    ],
+    "missing_codes": []
+  },
+  "llm_contract": {
+    "role": "parse_user_answer_and_rephrase_question_only",
+    "required_output_schema": {
+      "intent": "nguoi_than_qua_doi",
+      "current_node": "string",
+      "slot_updates": {
+        "subdomain_key": "khai_tu | che_do_tu_tuat_mai_tang_phi | unknown",
+        "operation_key": "string",
+        "operation_group": "string"
+      },
+      "confidence": "0_to_1",
+      "needs_human_review": "boolean"
+    }
+  },
+  "entry_prompts": [
+    "Bạn đang cần làm khai tử cho người thân hay xin chế độ tử tuất, mai táng phí?",
+    "Bạn muốn đăng ký mới, đăng ký lại, ghi chú khai tử hay xin trợ cấp hỗ trợ sau khi người thân qua đời?"
+  ],
+  "slots": [
+    {
+      "name": "subdomain_key",
+      "required": true,
+      "description": "Nhánh chính của nhóm Người thân qua đời."
+    },
+    {
+      "name": "operation_key",
+      "required": true,
+      "description": "Thao tác cụ thể ánh xạ trực tiếp tới thủ tục cuối cùng."
+    },
+    {
+      "name": "operation_group",
+      "required": false,
+      "description": "Nhóm thao tác để gom các thủ tục gần nhau cho UI và parser."
+    }
+  ],
+  "subdomain_catalog": [
+    {
+      "subdomain_key": "che_do_tu_tuat_mai_tang_phi",
+      "subdomain_label": "Chế độ tử tuất, mai táng phí",
+      "event_id": 321,
+      "summary": "Nhóm thủ tục hưởng chế độ tử tuất, trợ cấp mai táng và hỗ trợ chi phí mai táng cho thân nhân người đã mất."
+    }
+  ],
+  "decision_tree": {
+    "start_node": "death_subdomain",
+    "nodes": [
+      {
+        "id": "death_subdomain",
+        "type": "question",
+        "slot": "subdomain_key",
+        "question": "Bạn đang hỏi về khai tử hay chế độ tử tuất, mai táng phí?",
+        "options": [
+          "che_do_tu_tuat_mai_tang_phi"
+        ],
+        "prefilled_value": "che_do_tu_tuat_mai_tang_phi"
+      },
+      {
+        "id": "death_operation",
+        "type": "question",
+        "slot": "operation_key",
+        "question": "Bạn cần làm thao tác nào cụ thể trong nhánh đã chọn?",
+        "options_by_subdomain": {
+          "che_do_tu_tuat_mai_tang_phi": [
+            {
+              "operation_key": "ho_tro_chi_phi_mai_tang_cho_doi_tuong_bao_tro_xa_hoi",
+              "operation_group": "ho_tro_mai_tang_bao_tro_xa_hoi",
+              "procedure_code": "1.001731",
+              "procedure_title": "Hỗ trợ chi phí mai táng cho đối tượng bảo trợ xã hội"
+            },
+            {
+              "operation_key": "giai_quyet_che_do_mai_tang_phi_doi_voi_dan_cong_hoa_tuyen_tham_gia_khang_chien_chong_phap_chong_my_chien_tranh_bao_ve_to_quoc_va_lam_nhiem_vu_quoc_te_huong_tro_cap_theo_quyet_dinh_so_49_2015_qd_ttg_cua_thu_tuong_chinh_phu",
+              "operation_group": "mai_tang_phi_dan_cong_hoa_tuyen",
+              "procedure_code": "1.010456",
+              "procedure_title": "Giải quyết chế độ mai táng phí đối với dân công hỏa tuyến tham gia kháng chiến chống Pháp, chống Mỹ, chiến tranh bảo vệ Tổ quốc và làm nhiệm vụ quốc tế hưởng trợ cấp theo Quyết định số 49/2015/QĐ-TTg của Thủ tướng Chính phủ"
+            },
+            {
+              "operation_key": "ho_tro_chi_phi_mai_tang_doi_voi_doi_tuong_huong_tro_cap_huu_tri_xa_hoi",
+              "operation_group": "ho_tro_mai_tang_bao_tro_xa_hoi",
+              "procedure_code": "1.014028",
+              "procedure_title": "Hỗ trợ chi phí mai táng đối với đối tượng hưởng trợ cấp hưu trí xã hội"
+            },
+            {
+              "operation_key": "huong_tro_cap_mai_tang",
+              "operation_group": "tro_cap_mai_tang_bhxh",
+              "procedure_code": "1.014177",
+              "procedure_title": "HƯỞNG TRỢ CẤP MAI TÁNG"
+            },
+            {
+              "operation_key": "giai_quyet_che_do_mai_tang_phi_doi_voi_dan_cong_hoa_tuyen_tham_gia_khang_chien_chong_phap_chong_my_chien_tranh_bao_ve_to_quoc_va_lam_nhiem_vu_quoc_te",
+              "operation_group": "mai_tang_phi_dan_cong_hoa_tuyen",
+              "procedure_code": "1.014359",
+              "procedure_title": "Giải quyết chế độ mai táng phí đối với dân công hỏa tuyến tham gia kháng chiến chống Pháp, chống Mỹ, chiến tranh bảo vệ Tổ quốc và làm nhiệm vụ quốc tế"
+            },
+            {
+              "operation_key": "giai_quyet_huong_che_do_tu_tuat",
+              "operation_group": "che_do_tu_tuat",
+              "procedure_code": "2.000821",
+              "procedure_title": "Giải quyết hưởng chế độ tử tuất"
+            },
+            {
+              "operation_key": "giai_quyet_che_do_mai_tang_phi_doi_voi_cuu_chien_binh",
+              "operation_group": "mai_tang_phi_cuu_chien_binh",
+              "procedure_code": "2.002307",
+              "procedure_title": "Giải quyết chế độ mai táng phí đối với cựu chiến binh"
+            },
+            {
+              "operation_key": "giai_quyet_che_do_mai_tang_phi_doi_voi_thanh_nien_xung_phong_thoi_ky_chong_phap",
+              "operation_group": "mai_tang_phi_thanh_nien_xung_phong",
+              "procedure_code": "2.002308",
+              "procedure_title": "Giải quyết chế độ mai táng phí đối với thanh niên xung phong thời kỳ chống Pháp"
+            },
+            {
+              "operation_key": "ho_tro_chi_phi_mai_tang_doi_voi_nguoi_dan_toc_thieu_so_tren_dia_ban_tinh_lai_chau_giai_doan_2025_2030",
+              "operation_group": "ho_tro_mai_tang_dia_phuong",
+              "procedure_code": "2.002862",
+              "procedure_title": "Hỗ trợ chi phí mai táng đối với người dân tộc thiểu số trên địa bàn tỉnh Lai Châu giai đoạn 2025-2030"
+            }
+          ]
+        },
+        "options": [
+          "ho_tro_chi_phi_mai_tang_cho_doi_tuong_bao_tro_xa_hoi",
+          "giai_quyet_che_do_mai_tang_phi_doi_voi_dan_cong_hoa_tuyen_tham_gia_khang_chien_chong_phap_chong_my_chien_tranh_bao_ve_to_quoc_va_lam_nhiem_vu_quoc_te_huong_tro_cap_theo_quyet_dinh_so_49_2015_qd_ttg_cua_thu_tuong_chinh_phu",
+          "ho_tro_chi_phi_mai_tang_doi_voi_doi_tuong_huong_tro_cap_huu_tri_xa_hoi",
+          "huong_tro_cap_mai_tang",
+          "giai_quyet_che_do_mai_tang_phi_doi_voi_dan_cong_hoa_tuyen_tham_gia_khang_chien_chong_phap_chong_my_chien_tranh_bao_ve_to_quoc_va_lam_nhiem_vu_quoc_te",
+          "giai_quyet_huong_che_do_tu_tuat",
+          "giai_quyet_che_do_mai_tang_phi_doi_voi_cuu_chien_binh",
+          "giai_quyet_che_do_mai_tang_phi_doi_voi_thanh_nien_xung_phong_thoi_ky_chong_phap",
+          "ho_tro_chi_phi_mai_tang_doi_voi_nguoi_dan_toc_thieu_so_tren_dia_ban_tinh_lai_chau_giai_doan_2025_2030"
+        ]
+      }
+    ],
+    "routes": [
+      {
+        "route_id": "che_do_tu_tuat_mai_tang_phi-1_001731",
+        "conditions": {
+          "subdomain_key": "che_do_tu_tuat_mai_tang_phi",
+          "operation_key": "ho_tro_chi_phi_mai_tang_cho_doi_tuong_bao_tro_xa_hoi"
+        },
+        "procedure_code": "1.001731",
+        "procedure_name": "Hỗ trợ chi phí mai táng cho đối tượng bảo trợ xã hội",
+        "why_this_route": "Route trực tiếp cho nhu cầu 'Hỗ trợ chi phí mai táng cho đối tượng bảo trợ xã hội' trong nhánh 'Chế độ tử tuất, mai táng phí'."
+      },
+      {
+        "route_id": "che_do_tu_tuat_mai_tang_phi-1_010456",
+        "conditions": {
+          "subdomain_key": "che_do_tu_tuat_mai_tang_phi",
+          "operation_key": "giai_quyet_che_do_mai_tang_phi_doi_voi_dan_cong_hoa_tuyen_tham_gia_khang_chien_chong_phap_chong_my_chien_tranh_bao_ve_to_quoc_va_lam_nhiem_vu_quoc_te_huong_tro_cap_theo_quyet_dinh_so_49_2015_qd_ttg_cua_thu_tuong_chinh_phu"
+        },
+        "procedure_code": "1.010456",
+        "procedure_name": "Giải quyết chế độ mai táng phí đối với dân công hỏa tuyến tham gia kháng chiến chống Pháp, chống Mỹ, chiến tranh bảo vệ Tổ quốc và làm nhiệm vụ quốc tế hưởng trợ cấp theo Quyết định số 49/2015/QĐ-TTg của Thủ tướng Chính phủ",
+        "why_this_route": "Route trực tiếp cho nhu cầu 'Giải quyết chế độ mai táng phí đối với dân công hỏa tuyến tham gia kháng chiến chống Pháp, chống Mỹ, chiến tranh bảo vệ Tổ quốc và làm nhiệm vụ quốc tế hưởng trợ cấp theo Quyết định số 49/2015/QĐ-TTg của Thủ tướng Chính phủ' trong nhánh 'Chế độ tử tuất, mai táng phí'."
+      },
+      {
+        "route_id": "che_do_tu_tuat_mai_tang_phi-1_014028",
+        "conditions": {
+          "subdomain_key": "che_do_tu_tuat_mai_tang_phi",
+          "operation_key": "ho_tro_chi_phi_mai_tang_doi_voi_doi_tuong_huong_tro_cap_huu_tri_xa_hoi"
+        },
+        "procedure_code": "1.014028",
+        "procedure_name": "Hỗ trợ chi phí mai táng đối với đối tượng hưởng trợ cấp hưu trí xã hội",
+        "why_this_route": "Route trực tiếp cho nhu cầu 'Hỗ trợ chi phí mai táng đối với đối tượng hưởng trợ cấp hưu trí xã hội' trong nhánh 'Chế độ tử tuất, mai táng phí'."
+      },
+      {
+        "route_id": "che_do_tu_tuat_mai_tang_phi-1_014177",
+        "conditions": {
+          "subdomain_key": "che_do_tu_tuat_mai_tang_phi",
+          "operation_key": "huong_tro_cap_mai_tang"
+        },
+        "procedure_code": "1.014177",
+        "procedure_name": "HƯỞNG TRỢ CẤP MAI TÁNG",
+        "why_this_route": "Route trực tiếp cho nhu cầu 'HƯỞNG TRỢ CẤP MAI TÁNG' trong nhánh 'Chế độ tử tuất, mai táng phí'."
+      },
+      {
+        "route_id": "che_do_tu_tuat_mai_tang_phi-1_014359",
+        "conditions": {
+          "subdomain_key": "che_do_tu_tuat_mai_tang_phi",
+          "operation_key": "giai_quyet_che_do_mai_tang_phi_doi_voi_dan_cong_hoa_tuyen_tham_gia_khang_chien_chong_phap_chong_my_chien_tranh_bao_ve_to_quoc_va_lam_nhiem_vu_quoc_te"
+        },
+        "procedure_code": "1.014359",
+        "procedure_name": "Giải quyết chế độ mai táng phí đối với dân công hỏa tuyến tham gia kháng chiến chống Pháp, chống Mỹ, chiến tranh bảo vệ Tổ quốc và làm nhiệm vụ quốc tế",
+        "why_this_route": "Route trực tiếp cho nhu cầu 'Giải quyết chế độ mai táng phí đối với dân công hỏa tuyến tham gia kháng chiến chống Pháp, chống Mỹ, chiến tranh bảo vệ Tổ quốc và làm nhiệm vụ quốc tế' trong nhánh 'Chế độ tử tuất, mai táng phí'."
+      },
+      {
+        "route_id": "che_do_tu_tuat_mai_tang_phi-2_000821",
+        "conditions": {
+          "subdomain_key": "che_do_tu_tuat_mai_tang_phi",
+          "operation_key": "giai_quyet_huong_che_do_tu_tuat"
+        },
+        "procedure_code": "2.000821",
+        "procedure_name": "Giải quyết hưởng chế độ tử tuất",
+        "why_this_route": "Route trực tiếp cho nhu cầu 'Giải quyết hưởng chế độ tử tuất' trong nhánh 'Chế độ tử tuất, mai táng phí'."
+      },
+      {
+        "route_id": "che_do_tu_tuat_mai_tang_phi-2_002307",
+        "conditions": {
+          "subdomain_key": "che_do_tu_tuat_mai_tang_phi",
+          "operation_key": "giai_quyet_che_do_mai_tang_phi_doi_voi_cuu_chien_binh"
+        },
+        "procedure_code": "2.002307",
+        "procedure_name": "Giải quyết chế độ mai táng phí đối với cựu chiến binh",
+        "why_this_route": "Route trực tiếp cho nhu cầu 'Giải quyết chế độ mai táng phí đối với cựu chiến binh' trong nhánh 'Chế độ tử tuất, mai táng phí'."
+      },
+      {
+        "route_id": "che_do_tu_tuat_mai_tang_phi-2_002308",
+        "conditions": {
+          "subdomain_key": "che_do_tu_tuat_mai_tang_phi",
+          "operation_key": "giai_quyet_che_do_mai_tang_phi_doi_voi_thanh_nien_xung_phong_thoi_ky_chong_phap"
+        },
+        "procedure_code": "2.002308",
+        "procedure_name": "Giải quyết chế độ mai táng phí đối với thanh niên xung phong thời kỳ chống Pháp",
+        "why_this_route": "Route trực tiếp cho nhu cầu 'Giải quyết chế độ mai táng phí đối với thanh niên xung phong thời kỳ chống Pháp' trong nhánh 'Chế độ tử tuất, mai táng phí'."
+      },
+      {
+        "route_id": "che_do_tu_tuat_mai_tang_phi-2_002862",
+        "conditions": {
+          "subdomain_key": "che_do_tu_tuat_mai_tang_phi",
+          "operation_key": "ho_tro_chi_phi_mai_tang_doi_voi_nguoi_dan_toc_thieu_so_tren_dia_ban_tinh_lai_chau_giai_doan_2025_2030"
+        },
+        "procedure_code": "2.002862",
+        "procedure_name": "Hỗ trợ chi phí mai táng đối với người dân tộc thiểu số trên địa bàn tỉnh Lai Châu giai đoạn 2025-2030",
+        "why_this_route": "Route trực tiếp cho nhu cầu 'Hỗ trợ chi phí mai táng đối với người dân tộc thiểu số trên địa bàn tỉnh Lai Châu giai đoạn 2025-2030' trong nhánh 'Chế độ tử tuất, mai táng phí'."
+      }
+    ]
+  },
+  "pre_submission_checks": [
+    {
+      "field_group": "death_registration",
+      "checks": [
+        "Nhóm khai tử phải xác định rõ nơi người mất qua đời, nơi cư trú và loại giấy tờ xác nhận việc tử vong.",
+        "Các trường hợp có yếu tố nước ngoài phải kiểm tra đủ giấy tờ nước ngoài và bản dịch/chứng thực kèm theo."
+      ]
+    },
+    {
+      "field_group": "survivor_support",
+      "checks": [
+        "Nhóm tử tuất và mai táng phí phải xác định rõ người đã mất thuộc chế độ BHXH, bảo trợ xã hội, người có công hay chính sách địa phương.",
+        "Thân nhân đứng đơn cần có căn cứ chứng minh quan hệ với người đã mất và chứng từ liên quan đến việc mai táng nếu thủ tục yêu cầu."
+      ]
+    }
+  ],
+  "subdomain_key": "che_do_tu_tuat_mai_tang_phi"
+}

@@ -1,0 +1,215 @@
+{
+  "schema_version": "1.0",
+  "normalizer_version": "0.2.0",
+  "source": {
+    "procedure_code": "1.014165",
+    "title": "HƯỞNG CHẾ ĐỘ THAI SẢN ĐỐI VỚI LAO ĐỘNG NỮ ĐI KHÁM THAI, LAO ĐỘNG NỮ SẢY THAI, PHÁ THAI HOẶC CÓ THAI CHẾT TRONG TỬ CUNG, THAI CHẾT TRONG KHI CHUYỂN DẠ, THAI NGOÀI TỬ CUNG; NGƯỜI LAO ĐỘNG THỰC HIỆN BIỆN PHÁP TRÁNH THAI",
+    "raw_structured_parser_version": "0.1.0",
+    "field": "Bảo hiểm xã hội"
+  },
+  "procedure": {
+    "level": "Cấp tỉnh",
+    "procedure_type": "TTHC được luật giao quy định chi tiết",
+    "target_users": [
+      "Công dân Việt Nam"
+    ],
+    "authorities": [
+      "Bảo hiểm xã hội tỉnh"
+    ],
+    "receiving_places": []
+  },
+  "submission": {
+    "channels": [
+      "in_person",
+      "online",
+      "postal"
+    ],
+    "methods": [
+      {
+        "method_id": "method_1",
+        "channel": "online",
+        "processing_time_text": "7 ngày làm việc",
+        "fee_text": null,
+        "description": "Trong thời hạn 07 ngày làm việc kể từ ngày nhận đủ hồ sơ từ người sử dụng lao động.<br>Trực tiếp, trực tuyến hoặc qua dịch vụ bưu chính",
+        "is_online": true,
+        "is_postal": false,
+        "is_in_person": false
+      },
+      {
+        "method_id": "method_2",
+        "channel": "postal",
+        "processing_time_text": "7 ngày làm việc",
+        "fee_text": null,
+        "description": "Trong thời hạn 07 ngày làm việc kể từ ngày nhận đủ hồ sơ từ người sử dụng lao động.<br>Trực tiếp, trực tuyến hoặc qua dịch vụ bưu chính",
+        "is_online": false,
+        "is_postal": true,
+        "is_in_person": false
+      },
+      {
+        "method_id": "method_3",
+        "channel": "in_person",
+        "processing_time_text": "7 ngày làm việc",
+        "fee_text": null,
+        "description": "Trong thời hạn 07 ngày làm việc kể từ ngày nhận đủ hồ sơ từ người sử dụng lao động.<br>Trực tiếp, trực tuyến hoặc qua dịch vụ bưu chính",
+        "is_online": false,
+        "is_postal": false,
+        "is_in_person": true
+      }
+    ],
+    "timing_summary": {
+      "unique_processing_times": [
+        "7 ngày làm việc"
+      ],
+      "method_count": 3
+    }
+  },
+  "documents": {
+    "required": [
+      {
+        "document_id": "danh_s_ch_ng_i_lao_ng_ngh_vi_c_h_ng_ch_thai_s_n_do_ng_i_s_d_ng_lao_ng_l_p",
+        "name": "Danh sách người lao động nghỉ việc hưởng chế độ thai sản do người sử dụng lao động lập",
+        "group_name": "default",
+        "group_type": "unknown",
+        "original_count": "1",
+        "copy_count": "0",
+        "conditions": [],
+        "attachment_label": null,
+        "attachment_path": null
+      },
+      {
+        "document_id": "b_n_ch_nh_ho_c_b_n_sao_gi_y_ra_vi_n_c_th_hi_n_th_ng_tin_ch_nh_v_th_i_gian_c_n_i_u_tr_ngo_i_tr_sau_th_i_gian_i_u_tr_n_i_tr",
+        "name": "Bản chính hoặc bản sao giấy ra viện có thể hiện thông tin chỉ định về thời gian cần điều trị ngoại trú sau thời gian điều trị nội trú.",
+        "group_name": "default",
+        "group_type": "unknown",
+        "original_count": "1",
+        "copy_count": "1",
+        "conditions": [],
+        "attachment_label": null,
+        "attachment_path": null
+      }
+    ],
+    "conditional": [
+      {
+        "document_id": "b_n_ch_nh_ho_c_b_n_sao_gi_y_ra_vi_n_ho_c_b_n_t_m_t_t_h_s_b_nh_n_ho_c_gi_y_t_ch_ng_minh_qu_tr_nh_i_u_tr_n_i_tr_c_a_ng_i_lao_ng_trong_tr_ng_h_p_i_u_tr_n_i_tr",
+        "name": "Bản chính hoặc bản sao giấy ra viện hoặc bản tóm tắt hồ sơ bệnh án hoặc giấy tờ chứng minh quá trình điều trị nội trú của người lao động trong trường hợp điều trị nội trú",
+        "group_name": "default",
+        "group_type": "unknown",
+        "original_count": "1",
+        "copy_count": "1",
+        "conditions": [
+          "Bản chính hoặc bản sao giấy ra viện hoặc bản tóm tắt hồ sơ bệnh án hoặc giấy tờ chứng minh quá trình điều trị nội trú của người lao động trong trường hợp điều trị nội trú"
+        ],
+        "attachment_label": null,
+        "attachment_path": null
+      },
+      {
+        "document_id": "tr_ng_h_p_c_c_gi_y_t_n_u_tr_n_ho_c_c_c_gi_y_t_c_n_i_dung_t_ng_t_do_c_quan_t_ch_c_c_nh_n_c_th_m_quy_n_c_a_n_c_ngo_i_c_p_th_ph_i_p_ng_c_c_c_y_u_c_u_sau_c_b_n_d_ch_ti_ng_vi_t_c_c_ng_ch_ng_ho_c_ch_ng_th_c_theo_quy_nh_c_a_ph_p_lu_t_v_c_ng_ch_ng_ch_ng_th_c_c_h_p_ph_p_h_a_l_nh_s_tr_tr_ng_h_p_i_u_c_qu_c_t_m_n_c_c_ng_h_a_x_h_i_ch_ngh_a_vi_t_nam_l_th_nh_vi_n_c_quy_nh_kh_c",
+        "name": "⁕ Trường hợp các giấy tờ nêu trên hoặc các giấy tờ có nội dung tương tự do cơ quan, tổ chức, cá nhân có thẩm quyền của nước ngoài cấp thì phải đáp ứng được các yêu cầu sau: + Có bản dịch tiếng Việt được công chứng hoặc chứng thực theo quy định của pháp luật về công chứng, chứng thực; + Được hợp pháp hóa lãnh sự, trừ trường hợp điều ước quốc tế mà nước Cộng hòa xã hội chủ nghĩa Việt Nam là thành viên có quy định khác.",
+        "group_name": "default",
+        "group_type": "unknown",
+        "original_count": "1",
+        "copy_count": "1",
+        "conditions": [
+          "⁕ Trường hợp các giấy tờ nêu trên hoặc các giấy tờ có nội dung tương tự do cơ quan, tổ chức, cá nhân có thẩm quyền của nước ngoài cấp thì phải đáp ứng được các yêu cầu sau: + Có bản dịch tiếng Việt được công chứng hoặc chứng thực theo quy định của pháp luật về công chứng, chứng thực; + Được hợp pháp hóa lãnh sự, trừ trường hợp điều ước quốc tế mà nước Cộng hòa xã hội chủ nghĩa Việt Nam là thành viên có quy định khác."
+        ],
+        "attachment_label": null,
+        "attachment_path": null
+      },
+      {
+        "document_id": "gi_y_ch_ng_nh_n_ngh_vi_c_h_ng_b_o_hi_m_x_h_i_trong_tr_ng_h_p_i_u_tr_ngo_i_tr",
+        "name": "Giấy chứng nhận nghỉ việc hưởng bảo hiểm xã hội trong trường hợp điều trị ngoại trú",
+        "group_name": "default",
+        "group_type": "unknown",
+        "original_count": "1",
+        "copy_count": "0",
+        "conditions": [
+          "Giấy chứng nhận nghỉ việc hưởng bảo hiểm xã hội trong trường hợp điều trị ngoại trú"
+        ],
+        "attachment_label": null,
+        "attachment_path": null
+      }
+    ],
+    "presented": [],
+    "notes": [],
+    "forms": [],
+    "empty_groups": [],
+    "document_count": 5
+  },
+  "process": {
+    "steps": [
+      {
+        "step_id": "step_1",
+        "title": null,
+        "content": "1.",
+        "actor": "user",
+        "channel_hint": null,
+        "time_hint": null
+      },
+      {
+        "step_id": "step_2",
+        "title": "Bước 1:",
+        "content": "Bước 1: Người lao động có trách nhiệm nộp hồ sơ cho người sử dụng lao động. Thời hạn nộp hồ sơ chậm nhất là 45 ngày kể từ ngày hết thời gian nghỉ việc hưởng chế độ thai sản.",
+        "actor": "user",
+        "channel_hint": null,
+        "time_hint": "45 ngày"
+      },
+      {
+        "step_id": "step_3",
+        "title": "Bước 2:",
+        "content": "Bước 2: Trong thời hạn 07 ngày làm việc kể từ ngày nhận đủ hồ sơ từ người lao động, người sử dụng lao động có trách nhiệm lập danh sách người lao động nghỉ việc hưởng chế độ thai sản kèm theo hồ sơ nộp cho cơ quan bảo hiểm xã hội. Bước 3 Cơ quan bảo hiểm xã hội có trách nhiệm giải quyết trong thời hạn 07 ngày làm việc kể từ ngày nhận đủ hồ sơ từ người sử dụng lao động. Trường hợp không giải quyết thì phải trả lời bằng văn bản và nêu rõ lý do.",
+        "actor": "authority",
+        "channel_hint": null,
+        "time_hint": "07 ngày làm việc"
+      }
+    ],
+    "step_count": 3,
+    "notes": []
+  },
+  "eligibility": {
+    "conditions": [
+      "Lao động nữ, lao động nữ mang thai hộ mang thai phải nghỉ việc đi khám thai, sảy thai, phá thai hoặc có thai chết trong tử cung, thai chết trong khi chuyển dạ, thai ngoài tử cung; người lao động phải nghỉ việc thực hiện biện pháp tránh thai; Người lao động sử dụng các biện pháp tránh thai mà các biện pháp đó phải",
+      "được thực hiện tại cơ sở khám bệnh, chữa bệnh."
+    ],
+    "has_conditions": true
+  },
+  "results": {
+    "items": [
+      {
+        "name": "Danh sách giải quyết hưởng chế độ thai sản cho người lao động",
+        "result_code": "KQ.G09.000360",
+        "raw_text": "Danh sách giải quyết hưởng chế độ thai sản cho người lao động"
+      }
+    ],
+    "primary_result": {
+      "name": "Danh sách giải quyết hưởng chế độ thai sản cho người lao động",
+      "result_code": "KQ.G09.000360",
+      "raw_text": "Danh sách giải quyết hưởng chế độ thai sản cho người lao động"
+    }
+  },
+  "legal_basis": {
+    "items": [
+      {
+        "title": "Luật Bảo hiểm xã hội",
+        "code": "41/2024/QH15"
+      },
+      {
+        "title": "Quy định chi tiết và hướng dẫn thi hành một số điều của Luật Bảo hiểm xã hội về bảo hiểm xã hội bắt buộc",
+        "code": "158/2025/NĐ-CP"
+      },
+      {
+        "title": "QUY ĐỊNH CHI TIẾT MỘT SỐ ĐIỀU CỦA LUẬT BẢO HIỂM XÃ HỘI VỀ BẢO HIỂM XÃ HỘI BẮT BUỘC",
+        "code": "12/2025/TT-BNV"
+      }
+    ],
+    "count": 3
+  },
+  "attachments": [],
+  "signals": {
+    "raw_parse_warnings": [],
+    "missing_documents": false,
+    "documents_section_present": true,
+    "documents_declared_empty": false,
+    "documents_only_in_notes": false,
+    "missing_results": false
+  }
+}

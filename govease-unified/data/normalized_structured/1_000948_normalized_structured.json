@@ -1,0 +1,219 @@
+{
+  "schema_version": "1.0",
+  "normalizer_version": "0.2.0",
+  "source": {
+    "procedure_code": "1.000948",
+    "title": "Cấp lại Giấy phép chế biến nguyên liệu thuốc lá",
+    "raw_structured_parser_version": "0.1.0",
+    "field": "Công nghiệp tiêu dùng"
+  },
+  "procedure": {
+    "level": "Cấp tỉnh",
+    "procedure_type": "TTHC được luật giao quy định chi tiết",
+    "target_users": [
+      "Doanh nghiệp"
+    ],
+    "authorities": [
+      "Ủy ban nhân dân cấp tỉnh"
+    ],
+    "receiving_places": []
+  },
+  "submission": {
+    "channels": [
+      "online",
+      "postal"
+    ],
+    "methods": [
+      {
+        "method_id": "method_1",
+        "channel": "online",
+        "processing_time_text": "15 ngày làm việc",
+        "fee_text": null,
+        "description": null,
+        "is_online": true,
+        "is_postal": false,
+        "is_in_person": false
+      },
+      {
+        "method_id": "method_2",
+        "channel": "postal",
+        "processing_time_text": "15 ngày làm việc",
+        "fee_text": null,
+        "description": null,
+        "is_online": false,
+        "is_postal": true,
+        "is_in_person": false
+      }
+    ],
+    "timing_summary": {
+      "unique_processing_times": [
+        "15 ngày làm việc"
+      ],
+      "method_count": 2
+    }
+  },
+  "documents": {
+    "required": [
+      {
+        "document_id": "v_n_b_n_ngh_c_p_l_i_theo_m_u_ph_l_c_38_th_ng_t_s_57_2018_tt_bct",
+        "name": "Văn bản đề nghị cấp lại (Theo mẫu Phụ lục 38 Thông tư số 57/2018/TT-BCT)",
+        "group_name": "Trường hợp giấy phép chế biến nguyên liệu thuốc lá bị mất, bị tiêu hủy toàn bộ hoặc một phần, bị rách, nát hoặc bị cháy, tổ chức, cá nhân được cấp phép phải lập, nộp 01 bộ hồ sơ đề nghị cấp lại, bao gồm",
+        "group_type": "conditional",
+        "original_count": "1",
+        "copy_count": "0",
+        "conditions": [],
+        "attachment_label": "Dondenghicaplai.docx",
+        "attachment_path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/1_000948/Dondenghicaplai.docx"
+      },
+      {
+        "document_id": "1_b_h_s_nh_c_p_m_i",
+        "name": "1 bộ hồ sơ như cấp mới",
+        "group_name": "Trường hợp giấy phép chế biến nguyên liệu thuốc lá đã được cấp hết thời hạn hiệu lực. Trước thời hạn hết hiệu lực của giấy phép 30 ngày, tổ chức, cá nhân phải nộp hồ sơ đề nghị cấp lại giấy phép trong trường hợp tiếp tục kinh doanh. Thành phần hồ sơ thủ tục cấp lại như đối với trường hợp cấp mới.",
+        "group_type": "conditional",
+        "original_count": "1",
+        "copy_count": "0",
+        "conditions": [],
+        "attachment_label": "Dondenghicapgiayphep.docx",
+        "attachment_path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/1_000948/Dondenghicapgiayphep.docx"
+      }
+    ],
+    "conditional": [
+      {
+        "document_id": "b_n_sao_gi_y_ph_p_ch_bi_n_nguy_n_li_u_thu_c_l_c_c_p_n_u_c",
+        "name": "Bản sao giấy phép chế biến nguyên liệu thuốc lá đã được cấp (nếu có).",
+        "group_name": "Trường hợp giấy phép chế biến nguyên liệu thuốc lá bị mất, bị tiêu hủy toàn bộ hoặc một phần, bị rách, nát hoặc bị cháy, tổ chức, cá nhân được cấp phép phải lập, nộp 01 bộ hồ sơ đề nghị cấp lại, bao gồm",
+        "group_type": "conditional",
+        "original_count": "0",
+        "copy_count": "1",
+        "conditions": [
+          "Bản sao giấy phép chế biến nguyên liệu thuốc lá đã được cấp (nếu có)."
+        ],
+        "attachment_label": null,
+        "attachment_path": null
+      }
+    ],
+    "presented": [],
+    "notes": [],
+    "forms": [
+      {
+        "name": "Văn bản đề nghị cấp lại (Theo mẫu Phụ lục 38 Thông tư số 57/2018/TT-BCT)",
+        "attachment_label": "Dondenghicaplai.docx",
+        "attachment_path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/1_000948/Dondenghicaplai.docx"
+      },
+      {
+        "name": "1 bộ hồ sơ như cấp mới",
+        "attachment_label": "Dondenghicapgiayphep.docx",
+        "attachment_path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/1_000948/Dondenghicapgiayphep.docx"
+      }
+    ],
+    "empty_groups": [],
+    "document_count": 3
+  },
+  "process": {
+    "steps": [
+      {
+        "step_id": "step_1",
+        "title": null,
+        "content": "1. - Doanh nghiệp có Giấy phép chế biến nguyên liệu thuốc lá nộp hồ sơ xin đề nghị cấp lại giấy phép chế biến nguyên liệu thuốc lá cho cơ quan nhà nước có thẩm quyền; - Trong thời hạn 15 ngày làm việc kể từ ngày nhận đủ hồ sơ hợp lệ, cơ quan có thẩm quyền xem xét và cấp lại giấy phép chế biến nguyên liệu thuốc lá. Trường hợp tổ chức, cá nhân không đáp ứng được điều kiện theo quy định cơ quan có thẩm quyền cấp phép sẽ có văn bản trả lời từ chối cấp phép và nêu rõ lý do. Doanh nghiệp có Giấy phép chế biến nguyên liệu thuốc lá gửi 01 bộ hồ sơ đề nghị cấp lại Giấy phép chế biến nguyên liệu thuốc lá hoặc qua đường bưu điện hoặc qua mạng điện tử đến Ủy ban nhân dân cấp tỉnh.",
+        "actor": "authority",
+        "channel_hint": null,
+        "time_hint": "15 ngày làm việc"
+      },
+      {
+        "step_id": "step_2",
+        "title": "a)",
+        "content": "a) Trường hợp giấy phép chế biến nguyên liệu thuốc lá đã được cấp hết thời hạn hiệu lực. Trước thời hạn hết hiệu lực của giấy phép 30 ngày, tổ chức, cá nhân phải nộp hồ sơ đề nghị cấp lại giấy phép trong trường hợp tiếp tục kinh doanh. Hồ sơ, thẩm quyền, trình tự, thủ tục cấp lại như đối với trường hợp cấp mới.",
+        "actor": "user",
+        "channel_hint": null,
+        "time_hint": "30 ngày"
+      },
+      {
+        "step_id": "step_3",
+        "title": "b)",
+        "content": "b) Trường hợp giấy phép chế biến nguyên liệu thuốc lá bị mất, bị tiêu hủy toàn bộ hoặc một phần, bị rách, nát hoặc bị cháy, tổ chức, cá nhân được cấp phép phải lập, nộp 01 bộ hồ sơ đề nghị cấp lại",
+        "actor": "user",
+        "channel_hint": null,
+        "time_hint": null
+      }
+    ],
+    "step_count": 3,
+    "notes": []
+  },
+  "eligibility": {
+    "conditions": [],
+    "has_conditions": false
+  },
+  "results": {
+    "items": [
+      {
+        "name": "Cấp lại Giấy phép chế biến nguyên liệu thuốc lá",
+        "result_code": "KQ.G02.000101",
+        "raw_text": "Cấp lại Giấy phép chế biến nguyên liệu thuốc lá"
+      }
+    ],
+    "primary_result": {
+      "name": "Cấp lại Giấy phép chế biến nguyên liệu thuốc lá",
+      "result_code": "KQ.G02.000101",
+      "raw_text": "Cấp lại Giấy phép chế biến nguyên liệu thuốc lá"
+    }
+  },
+  "legal_basis": {
+    "items": [
+      {
+        "title": "Sửa đổi, bổ sung một số điều của Thông tư số 57/2018/TT-BCT ngày 26 tháng 12 năm 2018 của Bộ trưởng Bộ Công Thương quy định chi tiết một số điều của các Nghị định liên quan đến kinh doanh thuốc lá",
+        "code": "28/2019/TT-BCT"
+      },
+      {
+        "title": "sửa đổi, bổ sung một số điều của Nghị định số 67/2013/NĐ-CP ngày 27 tháng 6 năm 2013 của Chính phủ quy định chi tiết một số điều và biện pháp thi hành Luật Phòng, chống tác hại của thuốc lá về kinh doanh thuốc lá",
+        "code": "106/2017/NĐ-CP"
+      },
+      {
+        "title": "Quy định chi tiết một số điều và biện pháp thi hành Luật Phòng, chống tác hại của thuốc lá về kinh doanh thuốc lá",
+        "code": "67/2013/NĐ-CP"
+      },
+      {
+        "title": "Sửa đổi, bổ sung một số điều của các Nghị định liên quan đến điều kiện đầu tư kinh doanh thuộc lĩnh vực quản lý nhà nước của Bộ Công Thương",
+        "code": "17/2020/NĐ-CP"
+      },
+      {
+        "title": "Sửa đổi một số Nghị định liên quan đến điều kiện đầu tư kinh doanh thuộc phạm vi quản lý nhà nước của Bộ Công Thương",
+        "code": "08/2018/NĐ-CP"
+      },
+      {
+        "title": "Quy định chi tiết một số điều của các Nghị định liên quan đến kinh doanh thuốc lá",
+        "code": "57/2018/TT-BCT"
+      },
+      {
+        "title": "Luật Phòng, chống tác hại của thuốc lá",
+        "code": "09/2012/QH13"
+      },
+      {
+        "title": "Sửa đổi, bổ sung một số quy định về phân cấp thực hiện thủ tục hành chính trong các lĩnh vực thuộc phạm vi quản lý của Bộ Công Thương",
+        "code": "38/2025/TT-BCT"
+      }
+    ],
+    "count": 8
+  },
+  "attachments": [
+    {
+      "label": "Dondenghicaplai.docx",
+      "path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/1_000948/Dondenghicaplai.docx",
+      "source_section": "Thành phần hồ sơ",
+      "document_name": "Văn bản đề nghị cấp lại (Theo mẫu Phụ lục 38 Thông tư số 57/2018/TT-BCT)"
+    },
+    {
+      "label": "Dondenghicapgiayphep.docx",
+      "path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/1_000948/Dondenghicapgiayphep.docx",
+      "source_section": "Thành phần hồ sơ",
+      "document_name": "1 bộ hồ sơ như cấp mới"
+    }
+  ],
+  "signals": {
+    "raw_parse_warnings": [],
+    "missing_documents": false,
+    "documents_section_present": true,
+    "documents_declared_empty": false,
+    "documents_only_in_notes": false,
+    "missing_results": false
+  }
+}

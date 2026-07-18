@@ -1,0 +1,272 @@
+{
+  "schema_version": "3.0",
+  "record_type": "public_service_procedure_payload",
+  "id": "procedure-3.000163",
+  "procedure_code": "3.000163",
+  "code": "3.000163",
+  "title": "Nộp đơn khởi kiện, tài liệu, chứng cứ và nhận các văn bản, thông báo tố tụng",
+  "language": "vi",
+  "status": "generated_from_pipeline",
+  "field": "Tòa án",
+  "group_key": "giai_quyet_khieu_kien",
+  "workflow_family": "complaint_resolution_workflow",
+  "subflow": "giai_quyet_khieu_kien",
+  "source": {
+    "source_url": "file:///C:/Users/ku060/Downloads/VAIC%20source/data-pipeline/raw_data/3_000163/3_000163_procedure_detail.md",
+    "source_markdown_path": "C:\\Users\\ku060\\Downloads\\VAIC source\\data-pipeline\\raw_data\\3_000163\\3_000163_procedure_detail.md",
+    "normalized_payload_path": "C:\\Users\\ku060\\Downloads\\VAIC source\\data-pipeline\\govease-unified\\data\\normalized_structured\\3_000163_normalized_structured.json",
+    "enriched_payload_path": "C:\\Users\\ku060\\Downloads\\VAIC source\\data-pipeline\\govease-unified\\data\\enriched_structured_priority\\3_000163_enriched_structured.json"
+  },
+  "scope": {
+    "included": "Thủ tục này thuộc nhóm khiếu nại và phản ánh, thường cần trình bày rõ nội dung vụ việc, quyết định hoặc hành vi bị khiếu nại và căn cứ kèm theo. Kết quả thường nhận được là kết quả giải quyết theo thủ tục này. Thời gian xử lý tham khảo: theo thời hạn của cơ quan xử lý.",
+    "not_included": []
+  },
+  "agency": {
+    "executing_agency": "Tòa án nhân dân tối cao Tòa án nhân dân cấp cao Tòa án nhân dân tỉnh, thành phố trực thuộc trung ương Tòa án nhân dân cấp huyện, quận, thị xã, thành phố thuộc tỉnh và tương đương",
+    "submission_place": null,
+    "receiving_places": []
+  },
+  "target_users": [],
+  "submission_methods": [
+    {
+      "code": "IN_PERSON",
+      "label": "Trực tiếp",
+      "processing_time": null,
+      "fee": null,
+      "description": "Theo quy định của Bộ luật Tố tụng dân sự, Bộ Luật tố tụng hành chính"
+    },
+    {
+      "code": "ONLINE",
+      "label": "Trực tuyến",
+      "processing_time": null,
+      "fee": null,
+      "description": "Theo quy định của Bộ luật Tố tụng dân sự, Bộ Luật tố tụng hành chính"
+    }
+  ],
+  "processing_note": "Nên tóm tắt rõ nội dung khiếu nại, quyết định hoặc hành vi liên quan và chuẩn bị tài liệu chứng minh trước khi nộp. Có thể chọn kênh nộp phù hợp: Trực tiếp, Trực tuyến. Hiện có khoảng 3 mục giấy tờ cần theo dõi trong checklist.",
+  "documents": {
+    "normally_required": [
+      {
+        "name": "Giấy tờ phải nộp Tên giấy tờ Mẫu đơn, tờ khai Số lượng Đơn khởi kiện",
+        "quantity": "1 bản chính, 0 bản sao",
+        "notes": [],
+        "group": "default",
+        "attachment_path": null
+      }
+    ],
+    "conditional": [
+      {
+        "condition": "Tài liệu, chứng cứ kèm theo (nếu có)",
+        "document": "Tài liệu, chứng cứ kèm theo (nếu có)",
+        "quantity": "0 bản chính, 1 bản sao",
+        "notes": [],
+        "attachment_path": null
+      },
+      {
+        "condition": "Bao gồm Tên giấy tờ Mẫu đơn, tờ khai Số lượng Tài liệu, chứng cứ kèm theo (nếu có)",
+        "document": "Bao gồm Tên giấy tờ Mẫu đơn, tờ khai Số lượng Tài liệu, chứng cứ kèm theo (nếu có)",
+        "quantity": "1 bản chính, 1 bản sao",
+        "notes": [],
+        "attachment_path": null
+      }
+    ],
+    "forms": [],
+    "presented": [],
+    "notes": [],
+    "summary": [
+      {
+        "group": "default",
+        "name": "Giấy tờ phải nộp Tên giấy tờ Mẫu đơn, tờ khai Số lượng Đơn khởi kiện",
+        "quantity": "1 bản chính, 0 bản sao",
+        "notes": [],
+        "attachment_path": null
+      },
+      {
+        "group": null,
+        "name": null,
+        "quantity": "0 bản chính, 1 bản sao",
+        "notes": [],
+        "attachment_path": null
+      },
+      {
+        "group": null,
+        "name": null,
+        "quantity": "1 bản chính, 1 bản sao",
+        "notes": [],
+        "attachment_path": null
+      }
+    ]
+  },
+  "steps": [
+    {
+      "order": 1,
+      "title": "Bước 1.",
+      "description": "Bước 1. Cá nhân, tổ chức nộp đơn khởi kiện, tài liệu chứng cứ và nhận các văn bản, thông báo tố tụng. Trường hợp thực hiện trực tuyến, Cá nhân, tổ chức đăng nhập Cổng Dịch vụ công Quốc gia/Cổng Dịch vụ công của Tòa án nhân dân, lựa chọn và tiến hành thực hiện nộp trực tuyến hoặc đăng ký nhận thông báo, văn bản tố tụng.",
+      "example": "trực tuyến"
+    },
+    {
+      "order": 2,
+      "title": "Bước 2.",
+      "description": "Bước 2. Cơ quan Tòa án thông báo kết quả giải quyết đơn khởi kiện. Nếu đơn đủ điều kiện thụ lý thì cơ quan Tòa án ra thông báo nộp tiền tạm ứng án phí đối với đơn khởi kiện. Căn cứ thông báo, cá nhân, tổ chức đến Cơ quan Thi hành án nộp tiền tạm ứng án phí, lệ phí tòa án. Trường hợp thực hiện trực tuyến, căn cứ trên thông báo tống đạt hoặc tin nhắn SMS (nếu có) về việc Tòa án gửi thông báo nộp tiền tạm ứng án phí, cá nhân, tổ chức chọn mục thanh toán trực tuyến án phí và thực hiện thanh toán trực tuyến.",
+      "example": "trực tuyến"
+    },
+    {
+      "order": 3,
+      "title": "Bước 3.",
+      "description": "Bước 3. Cá nhân, tổ chức nộp biên lai thu tiền tạm ứng đến Cơ quan Tòa án. Cơ quan Tòa án tiến hành thụ lý vụ án. Trường hợp thực hiện trực tuyến, hệ thống thanh toán trực tuyến sẽ tự động chuyển biên lai thu tạm ứng án phí, lệ phí Tòa án đến Cơ quan Tòa án để thụ lý vụ án và có thông báo đến cá nhân, tổ chức.",
+      "example": "trực tuyến"
+    },
+    {
+      "order": 4,
+      "title": "Bước 4.",
+      "description": "Bước 4. Nhận tài liệu, thông báo văn bản tố tụng trực tuyến trên hệ thống hoặc theo địa chỉ đã đăng ký.",
+      "example": "trực tuyến"
+    }
+  ],
+  "input_fields": [
+    {
+      "field": "complaint_subject",
+      "label": "Nội dung khiếu nại chính",
+      "type": "string",
+      "required": true
+    },
+    {
+      "field": "decision_or_behavior_target",
+      "label": "Quyết định hoặc hành vi bị khiếu nại",
+      "type": "string",
+      "required": true
+    },
+    {
+      "field": "has_supporting_evidence",
+      "label": "Có tài liệu chứng minh kèm theo",
+      "type": "boolean",
+      "required": true
+    },
+    {
+      "field": "submission_channel_preference",
+      "label": "Kênh nộp dự kiến",
+      "type": "enum",
+      "required": false,
+      "options": [
+        "Trực tiếp",
+        "Trực tuyến"
+      ]
+    }
+  ],
+  "validation_rules": [
+    {
+      "id": "required-1",
+      "severity": "error",
+      "field": "complaint_subject",
+      "rule": "Trường bắt buộc phải có dữ liệu hợp lệ trước khi nộp.",
+      "message": "Thiếu trường bắt buộc: Nội dung khiếu nại chính."
+    },
+    {
+      "id": "required-2",
+      "severity": "error",
+      "field": "decision_or_behavior_target",
+      "rule": "Trường bắt buộc phải có dữ liệu hợp lệ trước khi nộp.",
+      "message": "Thiếu trường bắt buộc: Quyết định hoặc hành vi bị khiếu nại."
+    },
+    {
+      "id": "required-3",
+      "severity": "error",
+      "field": "has_supporting_evidence",
+      "rule": "Trường bắt buộc phải có dữ liệu hợp lệ trước khi nộp.",
+      "message": "Thiếu trường bắt buộc: Có tài liệu chứng minh kèm theo."
+    },
+    {
+      "id": "hint-1",
+      "severity": "warning",
+      "field": "general",
+      "rule": "Nên xác định trước kênh nộp hồ sơ để biết có cần bản giấy, bản điện tử hay xuất trình trực tiếp.",
+      "message": "Nên xác định trước kênh nộp hồ sơ để biết có cần bản giấy, bản điện tử hay xuất trình trực tiếp."
+    },
+    {
+      "id": "hint-2",
+      "severity": "warning",
+      "field": "general",
+      "rule": "Nên nêu rõ diễn biến vụ việc, quyết định hoặc hành vi bị khiếu nại và chuẩn bị tài liệu chứng minh.",
+      "message": "Nên nêu rõ diễn biến vụ việc, quyết định hoặc hành vi bị khiếu nại và chuẩn bị tài liệu chứng minh."
+    }
+  ],
+  "common_errors": [
+    {
+      "field": "general",
+      "issue": "Điền sai mẫu tờ khai hoặc chọn sai biểu mẫu đi kèm.",
+      "fix": "Nên xác định trước kênh nộp hồ sơ để biết có cần bản giấy, bản điện tử hay xuất trình trực tiếp."
+    }
+  ],
+  "clarifying_questions": [
+    {
+      "id": "clarify_1",
+      "question": "Bạn đang khiếu nại về quyết định hay hành vi nào, và thuộc cơ quan nào?",
+      "purpose": "workflow_intake"
+    },
+    {
+      "id": "clarify_2",
+      "question": "Bạn đã có đơn khiếu nại hoặc tài liệu chứng minh nội dung vụ việc chưa?",
+      "purpose": "workflow_intake"
+    }
+  ],
+  "legal_basis": [],
+  "legal_bases": [],
+  "faq": [
+    {
+      "question": "Có thể nộp qua kênh nào?",
+      "answer": "Các kênh hiện có: Trực tiếp, Trực tuyến."
+    }
+  ],
+  "guidance": {
+    "highlight_documents": [
+      {
+        "bucket": "required",
+        "name": "Giấy tờ phải nộp Tên giấy tờ Mẫu đơn, tờ khai Số lượng Đơn khởi kiện",
+        "conditions": [],
+        "attachment_path": null
+      },
+      {
+        "bucket": "conditional",
+        "name": "Tài liệu, chứng cứ kèm theo (nếu có)",
+        "conditions": [
+          "Tài liệu, chứng cứ kèm theo (nếu có)"
+        ],
+        "attachment_path": null
+      },
+      {
+        "bucket": "conditional",
+        "name": "Bao gồm Tên giấy tờ Mẫu đơn, tờ khai Số lượng Tài liệu, chứng cứ kèm theo (nếu có)",
+        "conditions": [
+          "Bao gồm Tên giấy tờ Mẫu đơn, tờ khai Số lượng Tài liệu, chứng cứ kèm theo (nếu có)"
+        ],
+        "attachment_path": null
+      }
+    ],
+    "special_cases": [],
+    "common_errors": [
+      "Điền sai mẫu tờ khai hoặc chọn sai biểu mẫu đi kèm."
+    ],
+    "validation_hints": [
+      "Nên xác định trước kênh nộp hồ sơ để biết có cần bản giấy, bản điện tử hay xuất trình trực tiếp.",
+      "Nên nêu rõ diễn biến vụ việc, quyết định hoặc hành vi bị khiếu nại và chuẩn bị tài liệu chứng minh."
+    ]
+  },
+  "next_steps": {
+    "summary": "Nên tóm tắt rõ nội dung khiếu nại, quyết định hoặc hành vi liên quan và chuẩn bị tài liệu chứng minh trước khi nộp. Có thể chọn kênh nộp phù hợp: Trực tiếp, Trực tuyến. Hiện có khoảng 3 mục giấy tờ cần theo dõi trong checklist.",
+    "time_badge": null,
+    "result_label": null,
+    "primary_channel": "in_person",
+    "channels": [
+      "in_person",
+      "online"
+    ]
+  },
+  "notes": [],
+  "provenance": {
+    "pipeline": "raw->structured->normalized->enriched->ui_api_payload",
+    "normalizer_version": "0.2.0",
+    "enricher_version": "0.2.0",
+    "mapping_notes": "workflow_generated:giai_quyet_khieu_kien/giai_quyet_khieu_kien",
+    "supported_group": true
+  }
+}

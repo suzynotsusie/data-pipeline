@@ -1,0 +1,364 @@
+{
+  "schema_version": "3.0",
+  "record_type": "public_service_procedure_payload",
+  "id": "procedure-1.007642",
+  "procedure_code": "1.007642",
+  "code": "1.007642",
+  "title": "Thủ tục hải quan đối với gói, kiện hàng hóa nhập khẩu có trị giá hải quan trong định mức miễn thuế nhập khẩu theo quy định tại Điều 8 và Điều 29 Nghị định số 134/2016/NĐ-CP ngày 1/9/2016 của Chính phủ và không thuộc mặt hàng phải có giấy phép nhập khẩu, kiểm tra chuyên ngành gửi qua dịch vụ bưu chính",
+  "language": "vi",
+  "status": "generated_from_pipeline",
+  "field": "Hải quan",
+  "group_key": "suc_khoe_y_te",
+  "workflow_family": null,
+  "subflow": null,
+  "source": {
+    "source_url": "file:///C:/Users/ku060/Downloads/VAIC%20source/data-pipeline/raw_data/1_007642/1_007642_procedure_detail.md",
+    "source_markdown_path": "C:\\Users\\ku060\\Downloads\\VAIC source\\data-pipeline\\raw_data\\1_007642\\1_007642_procedure_detail.md",
+    "normalized_payload_path": "C:\\Users\\ku060\\Downloads\\VAIC source\\data-pipeline\\govease-unified\\data\\normalized_structured\\1_007642_normalized_structured.json",
+    "enriched_payload_path": "C:\\Users\\ku060\\Downloads\\VAIC source\\data-pipeline\\govease-unified\\data\\enriched_structured_priority\\1_007642_enriched_structured.json"
+  },
+  "scope": {
+    "included": "Thủ tục này thuộc nhóm y tế, thường cần đối chiếu thông tin người bệnh, đơn vị tiếp nhận hoặc quyền lợi chuyên ngành. Kết quả thường nhận được là Xác nhận thông quan. Thời gian xử lý tham khảo: 1 ngày.",
+    "not_included": []
+  },
+  "agency": {
+    "executing_agency": "Chi cục Hải quan khu vực",
+    "submission_place": null,
+    "receiving_places": []
+  },
+  "target_users": [
+    "Doanh nghiệp có vốn đầu tư nước ngoài",
+    "Tổ chức (không bao gồm doanh nghiệp",
+    "HTX)",
+    "Doanh nghiệp"
+  ],
+  "submission_methods": [
+    {
+      "code": "ONLINE",
+      "label": "Trực tuyến",
+      "processing_time": "1 ngày",
+      "fee": null,
+      "description": null
+    },
+    {
+      "code": "IN_PERSON",
+      "label": "Trực tiếp",
+      "processing_time": "1 ngày",
+      "fee": null,
+      "description": null
+    }
+  ],
+  "processing_note": "Thời gian xử lý tham chiếu: 1 ngày. Nên xác định rõ đối tượng tham gia, quyền lợi hoặc nhu cầu điều chỉnh hồ sơ y tế trước khi nộp. Có thể chọn kênh nộp phù hợp: Trực tiếp, Trực tuyến. Hiện có khoảng 5 mục giấy tờ cần theo dõi trong checklist.",
+  "documents": {
+    "normally_required": [
+      {
+        "name": "Số lượng hồ sơ: 01 bộ",
+        "quantity": "0 bản chính, 0 bản sao",
+        "notes": [],
+        "group": "default",
+        "attachment_path": null
+      },
+      {
+        "name": "a) Tờ khai hải quan hàng hóa nhập khẩu trị giá thấp đối với gói, kiện hàng hóa nhập khẩu theo chỉ tiêu thông tin tại phần A Phụ lục I Danh mục 1 ban hành kèm theo Thông tư này.",
+        "quantity": "1 bản chính, 0 bản sao",
+        "notes": [],
+        "group": "default",
+        "attachment_path": null
+      }
+    ],
+    "conditional": [
+      {
+        "condition": "c) Hóa đơn thương mại (nếu có): 01 bản chụp;",
+        "document": "c) Hóa đơn thương mại (nếu có): 01 bản chụp;",
+        "quantity": "0 bản chính, 1 bản sao",
+        "notes": [],
+        "attachment_path": null
+      },
+      {
+        "condition": "Trường hợp thực hiện trên tờ khai hải quan giấy theo quy định tại khoản 12 Điều 1 Nghị định số 59/2018/NĐ-CP ngày 20/4/2018, doanh nghiệp khai và nộp 02 bản chính tờ khai hải quan hàng hóa nhập khẩu theo mẫu HQ/2015/NK Phụ lục IV ban hành kèm Thông tư số 38/2015/TT-BTC ngày 25/3/2015 đã được khai theo hướng dẫn tại Phụ lục II Danh mục 1 ban hành kèm theo Thông tư này;",
+        "document": "Trường hợp thực hiện trên tờ khai hải quan giấy theo quy định tại khoản 12 Điều 1 Nghị định số 59/2018/NĐ-CP ngày 20/4/2018, doanh nghiệp khai và nộp 02 bản chính tờ khai hải quan hàng hóa nhập khẩu theo mẫu HQ/2015/NK Phụ lục IV ban hành kèm Thông tư số 38/2015/TT-BTC ngày 25/3/2015 đã được khai theo hướng dẫn tại Phụ lục II Danh mục 1 ban hành kèm theo Thông tư này;",
+        "quantity": "2 bản chính, 0 bản sao",
+        "notes": [],
+        "attachment_path": null
+      },
+      {
+        "condition": "b) Tờ khai CN22 hoặc CN23 hoặc số hiệu bưu gửi E1QT hoặc các chứng từ vận tải khác có giá trị tương đương trong trường hợp hàng hóa vận chuyển bằng đường biển, đường hàng không, đường sắt, vận tải đa phương thức theo quy định của pháp luật: 01 bản chụp.",
+        "document": "b) Tờ khai CN22 hoặc CN23 hoặc số hiệu bưu gửi E1QT hoặc các chứng từ vận tải khác có giá trị tương đương trong trường hợp hàng hóa vận chuyển bằng đường biển, đường hàng không, đường sắt, vận tải đa phương thức theo quy định của pháp luật: 01 bản chụp.",
+        "quantity": "1 bản chính, 0 bản sao",
+        "notes": [],
+        "attachment_path": null
+      }
+    ],
+    "forms": [],
+    "presented": [],
+    "notes": [],
+    "summary": [
+      {
+        "group": "default",
+        "name": "Số lượng hồ sơ: 01 bộ",
+        "quantity": "0 bản chính, 0 bản sao",
+        "notes": [],
+        "attachment_path": null
+      },
+      {
+        "group": "default",
+        "name": "a) Tờ khai hải quan hàng hóa nhập khẩu trị giá thấp đối với gói, kiện hàng hóa nhập khẩu theo chỉ tiêu thông tin tại phần A Phụ lục I Danh mục 1 ban hành kèm theo Thông tư này.",
+        "quantity": "1 bản chính, 0 bản sao",
+        "notes": [],
+        "attachment_path": null
+      },
+      {
+        "group": null,
+        "name": null,
+        "quantity": "0 bản chính, 1 bản sao",
+        "notes": [],
+        "attachment_path": null
+      },
+      {
+        "group": null,
+        "name": null,
+        "quantity": "2 bản chính, 0 bản sao",
+        "notes": [],
+        "attachment_path": null
+      },
+      {
+        "group": null,
+        "name": null,
+        "quantity": "1 bản chính, 0 bản sao",
+        "notes": [],
+        "attachment_path": null
+      }
+    ]
+  },
+  "steps": [
+    {
+      "order": 1,
+      "title": "Bước 1",
+      "description": "1.",
+      "example": null
+    },
+    {
+      "order": 2,
+      "title": "Bước 1:",
+      "description": "Bước 1: Doanh nghiệp thay mặt chủ hàng làm thủ tục hải quan, xuất trình hồ sơ và gói, kiện hàng hóa để công chức hải quan kiểm tra theo yêu cầu: + Khai và gửi đầy đủ các chỉ tiêu thông tin trên tờ khai đến Hệ thống xử lý dữ liệu điện tử hải quan; nhận thông tin phản hồi từ Hệ thống (đối với khai điện tử) hoặc Thực hiện khai tờ khai hải quan giấy theo quy định tại khoản 12 Điều 1 Nghị định 59/2018/NĐ-CP . + Xuất trình hồ sơ hải quan và gói, kiện hàng hóa để kiểm tra theo quyết định của cơ quan hải quan. + Khai sửa đổi bổ sung, hủy tờ khai (nếu có). + Thực hiện các quyết định của cơ quan hải quan.",
+      "example": null
+    },
+    {
+      "order": 3,
+      "title": "Bước 2:",
+      "description": "Bước 2: Cơ quan hải quan thực hiện làm thủ tục hải quan đối với hàng hóa nhập khẩu theo quy định: + Tiếp nhận và kiểm tra hồ sơ hải quan, hồ sơ khai sửa đổi, bổ sung (nếu có). + Tiếp nhận, kiểm tra hồ sơ đề nghị hủy tờ khai của doanh nghiệp và thực hiện hủy tờ khai theo quy định. + Thực hiện thông quan gói, kiện hàng hóa theo quy định.",
+      "example": null
+    }
+  ],
+  "input_fields": [
+    {
+      "field": "request_subject",
+      "label": "Đối tượng làm thủ tục",
+      "type": "string",
+      "required": true
+    },
+    {
+      "field": "insurance_or_medical_need",
+      "label": "Nhu cầu bảo hiểm hoặc y tế",
+      "type": "string",
+      "required": true
+    },
+    {
+      "field": "submission_channel_preference",
+      "label": "Kênh nộp dự kiến",
+      "type": "enum",
+      "required": false,
+      "options": [
+        "Trực tiếp",
+        "Trực tuyến"
+      ]
+    },
+    {
+      "field": "has_insurance_number",
+      "label": "Đã có mã BHXH/BHYT",
+      "type": "boolean",
+      "required": false
+    }
+  ],
+  "validation_rules": [
+    {
+      "id": "required-1",
+      "severity": "error",
+      "field": "request_subject",
+      "rule": "Trường bắt buộc phải có dữ liệu hợp lệ trước khi nộp.",
+      "message": "Thiếu trường bắt buộc: Đối tượng làm thủ tục."
+    },
+    {
+      "id": "required-2",
+      "severity": "error",
+      "field": "insurance_or_medical_need",
+      "rule": "Trường bắt buộc phải có dữ liệu hợp lệ trước khi nộp.",
+      "message": "Thiếu trường bắt buộc: Nhu cầu bảo hiểm hoặc y tế."
+    },
+    {
+      "id": "hint-1",
+      "severity": "warning",
+      "field": "general",
+      "rule": "Nên xác định trước kênh nộp hồ sơ để biết có cần bản giấy, bản điện tử hay xuất trình trực tiếp.",
+      "message": "Nên xác định trước kênh nộp hồ sơ để biết có cần bản giấy, bản điện tử hay xuất trình trực tiếp."
+    },
+    {
+      "id": "hint-2",
+      "severity": "warning",
+      "field": "general",
+      "rule": "Nên xác định đúng nhóm đối tượng, mã số bảo hiểm và quyền lợi áp dụng trước khi nộp.",
+      "message": "Nên xác định đúng nhóm đối tượng, mã số bảo hiểm và quyền lợi áp dụng trước khi nộp."
+    }
+  ],
+  "common_errors": [
+    {
+      "field": "general",
+      "issue": "Điền sai mẫu tờ khai hoặc chọn sai biểu mẫu đi kèm.",
+      "fix": "Nên xác định trước kênh nộp hồ sơ để biết có cần bản giấy, bản điện tử hay xuất trình trực tiếp."
+    }
+  ],
+  "clarifying_questions": [
+    {
+      "id": "clarify_1",
+      "question": "Bạn đang muốn đăng ký, điều chỉnh hay xác nhận quyền lợi y tế hoặc bảo hiểm nào?",
+      "purpose": "workflow_intake"
+    },
+    {
+      "id": "clarify_2",
+      "question": "Bạn đã có mã BHXH/BHYT hoặc thông tin đơn vị tiếp nhận liên quan chưa?",
+      "purpose": "workflow_intake"
+    }
+  ],
+  "legal_basis": [
+    {
+      "title": "Thông tư số 274/2016/TT-BTC ngày 14/11/2016 của Bộ Tài chính quy định mức thu, chế độ thu, nộp, quản lý và sử dụng phí hải quan và lệ phí hàng hóa, phương tiện quá cảnh.",
+      "code": "274/2016/TT-BTC"
+    },
+    {
+      "title": "Nghị định 08/2015/NĐ-CP",
+      "code": "08/2015/NĐ-CP"
+    },
+    {
+      "title": "Nghị định 59/2018/NĐ-CP",
+      "code": "59/2018/NĐ-CP"
+    },
+    {
+      "title": "Quy định về thủ tục hải quan; kiểm tra, giám sát hải quan; thuế xuất khẩu thuế nhập khẩu và quản lý thuế đối vớỉ hàng hoá xuất khẩu, nhập khẩu.",
+      "code": "38/2015/TT-BTC"
+    },
+    {
+      "title": "Luật 54/2014/QH13",
+      "code": "54/2014/QH13"
+    },
+    {
+      "title": "Thông tư số 56/2019/TT-BTC ngày 23/8/2019 của Bộ Tài chính",
+      "code": "56/2019/TT-BTC"
+    }
+  ],
+  "legal_bases": [
+    {
+      "title": "Thông tư số 274/2016/TT-BTC ngày 14/11/2016 của Bộ Tài chính quy định mức thu, chế độ thu, nộp, quản lý và sử dụng phí hải quan và lệ phí hàng hóa, phương tiện quá cảnh.",
+      "code": "274/2016/TT-BTC"
+    },
+    {
+      "title": "Nghị định 08/2015/NĐ-CP",
+      "code": "08/2015/NĐ-CP"
+    },
+    {
+      "title": "Nghị định 59/2018/NĐ-CP",
+      "code": "59/2018/NĐ-CP"
+    },
+    {
+      "title": "Quy định về thủ tục hải quan; kiểm tra, giám sát hải quan; thuế xuất khẩu thuế nhập khẩu và quản lý thuế đối vớỉ hàng hoá xuất khẩu, nhập khẩu.",
+      "code": "38/2015/TT-BTC"
+    },
+    {
+      "title": "Luật 54/2014/QH13",
+      "code": "54/2014/QH13"
+    },
+    {
+      "title": "Thông tư số 56/2019/TT-BTC ngày 23/8/2019 của Bộ Tài chính",
+      "code": "56/2019/TT-BTC"
+    }
+  ],
+  "faq": [
+    {
+      "question": "Có thể nộp qua kênh nào?",
+      "answer": "Các kênh hiện có: Trực tiếp, Trực tuyến."
+    },
+    {
+      "question": "Thời gian xử lý tham chiếu là bao lâu?",
+      "answer": "Thời gian xử lý tham chiếu hiện có là 1 ngày."
+    },
+    {
+      "question": "Kết quả chính của thủ tục là gì?",
+      "answer": "Kết quả chính được trích xuất là Xác nhận thông quan."
+    }
+  ],
+  "guidance": {
+    "highlight_documents": [
+      {
+        "bucket": "required",
+        "name": "Số lượng hồ sơ: 01 bộ",
+        "conditions": [],
+        "attachment_path": null
+      },
+      {
+        "bucket": "required",
+        "name": "a) Tờ khai hải quan hàng hóa nhập khẩu trị giá thấp đối với gói, kiện hàng hóa nhập khẩu theo chỉ tiêu thông tin tại phần A Phụ lục I Danh mục 1 ban hành kèm theo Thông tư này.",
+        "conditions": [],
+        "attachment_path": null
+      },
+      {
+        "bucket": "conditional",
+        "name": "c) Hóa đơn thương mại (nếu có): 01 bản chụp;",
+        "conditions": [
+          "c) Hóa đơn thương mại (nếu có): 01 bản chụp;"
+        ],
+        "attachment_path": null
+      },
+      {
+        "bucket": "conditional",
+        "name": "Trường hợp thực hiện trên tờ khai hải quan giấy theo quy định tại khoản 12 Điều 1 Nghị định số 59/2018/NĐ-CP ngày 20/4/2018, doanh nghiệp khai và nộp 02 bản chính tờ khai hải quan hàng hóa nhập khẩu theo mẫu HQ/2015/NK Phụ lục IV ban hành kèm Thông tư số 38/2015/TT-BTC ngày 25/3/2015 đã được khai theo hướng dẫn tại Phụ lục II Danh mục 1 ban hành kèm theo Thông tư này;",
+        "conditions": [
+          "Trường hợp thực hiện trên tờ khai hải quan giấy theo quy định tại khoản 12 Điều 1 Nghị định số 59/2018/NĐ-CP ngày 20/4/2018, doanh nghiệp khai và nộp 02 bản chính tờ khai hải quan hàng hóa nhập khẩu theo mẫu HQ/2015/NK Phụ lục IV ban hành kèm Thông tư số 38/2015/TT-BTC ngày 25/3/2015 đã được khai theo hướng dẫn tại Phụ lục II Danh mục 1 ban hành kèm theo Thông tư này;"
+        ],
+        "attachment_path": null
+      },
+      {
+        "bucket": "conditional",
+        "name": "b) Tờ khai CN22 hoặc CN23 hoặc số hiệu bưu gửi E1QT hoặc các chứng từ vận tải khác có giá trị tương đương trong trường hợp hàng hóa vận chuyển bằng đường biển, đường hàng không, đường sắt, vận tải đa phương thức theo quy định của pháp luật: 01 bản chụp.",
+        "conditions": [
+          "b) Tờ khai CN22 hoặc CN23 hoặc số hiệu bưu gửi E1QT hoặc các chứng từ vận tải khác có giá trị tương đương trong trường hợp hàng hóa vận chuyển bằng đường biển, đường hàng không, đường sắt, vận tải đa phương thức theo quy định của pháp luật: 01 bản chụp."
+        ],
+        "attachment_path": null
+      }
+    ],
+    "special_cases": [],
+    "common_errors": [
+      "Điền sai mẫu tờ khai hoặc chọn sai biểu mẫu đi kèm."
+    ],
+    "validation_hints": [
+      "Nên xác định trước kênh nộp hồ sơ để biết có cần bản giấy, bản điện tử hay xuất trình trực tiếp.",
+      "Nên xác định đúng nhóm đối tượng, mã số bảo hiểm và quyền lợi áp dụng trước khi nộp."
+    ]
+  },
+  "next_steps": {
+    "summary": "Nên xác định rõ đối tượng tham gia, quyền lợi hoặc nhu cầu điều chỉnh hồ sơ y tế trước khi nộp. Có thể chọn kênh nộp phù hợp: Trực tiếp, Trực tuyến. Hiện có khoảng 5 mục giấy tờ cần theo dõi trong checklist.",
+    "time_badge": "1 ngày",
+    "result_label": "Xác nhận thông quan",
+    "primary_channel": "online",
+    "channels": [
+      "in_person",
+      "online"
+    ]
+  },
+  "notes": [],
+  "provenance": {
+    "pipeline": "raw->structured->normalized->enriched->ui_api_payload",
+    "normalizer_version": "0.2.0",
+    "enricher_version": "0.2.0",
+    "mapping_notes": "excluded_from_clean_workflow_dataset",
+    "supported_group": true
+  }
+}

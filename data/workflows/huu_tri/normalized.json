@@ -1,0 +1,1146 @@
+{
+  "schema_version": "1.0",
+  "domain": "huu_tri",
+  "updated_at": "2026-07-18",
+  "source_files": [
+    "C:\\Users\\ku060\\Downloads\\VAIC source\\data-pipeline\\main\\full-data.csv",
+    "C:\\Users\\ku060\\Downloads\\VAIC source\\data-pipeline\\raw_data"
+  ],
+  "subdomains": [
+    {
+      "subdomain_key": "chuan_bi_nghi_huu",
+      "subdomain_label": "Chuẩn bị nghỉ hưu",
+      "event_id": 318,
+      "summary": "Nhóm thủ tục chuẩn bị hồ sơ, quá trình tham gia bảo hiểm xã hội và các điều kiện nền tảng để người dân sẵn sàng bước sang giai đoạn nghỉ hưu hoặc chọn phương án hưởng thay thế.",
+      "entry_prompts": [
+        "Bạn đang chuẩn bị nghỉ hưu, cần rà điều kiện hưởng lương hưu hay cập nhật quá trình tham gia bảo hiểm xã hội?",
+        "Bạn muốn đăng ký tham gia BHXH, điều chỉnh thông tin, tính thời gian công tác hay xem phương án hưởng khi chưa đủ điều kiện nghỉ hưu?"
+      ],
+      "procedure_count": 10,
+      "procedures": [
+        {
+          "procedure_code": "1.002179",
+          "procedure_title": "Đăng ký, đăng ký lại, điều chỉnh đóng BHXH tự nguyện; cấp sổ BHXH",
+          "subdomain_key": "chuan_bi_nghi_huu",
+          "subdomain_label": "Chuẩn bị nghỉ hưu",
+          "event_id": 318,
+          "field": "Thu BHXH, BHYT, BHTN, BH tai nạn lao động, BNN",
+          "agency": "",
+          "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bfb-d782-7538-959f-13ec3688f02c",
+          "raw_data_file": "C:\\Users\\ku060\\Downloads\\VAIC source\\data-pipeline\\raw_data\\1_002179\\1_002179_procedure_detail.md",
+          "raw_data_available": true,
+          "operation_group": "tham_gia_bhxh_tu_nguyen",
+          "operation_key": "dang_ky_dang_ky_lai_dieu_chinh_dong_bhxh_tu_nguyen_cap_so_bhxh",
+          "overview": "Bước 1. Lập, nộp hồ sơ 1. Người tham gia a) Trường hợp người tham gia đóng trực tiếp cho cơ quan BHXH hoặc Tổ chức dịch vụ: Lập hồ sơ theo quy định tại tiết 1.1 điểm 1 Mục Thành phần hồ sơ và nộp cho Tổ chức dịch vụ hoặc cơ quan BHXH trên phạm vi toàn quốc b) Trường hợp người tham gia nộp hồ sơ qua Cổng Dịch vụ công: Lập hồ sơ theo quy định tại tiết 1.2 điểm 1 Mục Thành phần hồ sơ và nộp trực tuyến trên Cổng Dịch vụ công. c) Trường hợp người tham gia có yêu cầu hoàn trả tiền đóng BHXH tự nguyện: Lập hồ sơ theo quy định tại tiết 1.3 điểm 1 Mục Thành phần hồ sơ, nộp trực tiếp cho cơ quan BHXH hoặc Tổ chức dịch vụ. 2. Tổ chức dịch vụ: Nhận hồ sơ của người tham gia, lập hồ sơ theo quy định tại điểm 2 Mục Thành phần hồ sơ và nộp cho cơ quan BHXH. Bước 2. Đóng tiền 1. Người tham gia: Đóng tiền theo phương thức đăng ký cho tổ chức dịch vụ hoặc cơ quan BHXH trên phạm vi toàn quốc hoặc đóng tiền trực tuyến khi thực hiện qua Cổng Dịch vụ công. 2. Tổ chức dịch vụ: thu tiền đóng BHXH phần thuộc trách nhiệm đóng của người tham gia BHXH tự nguyện; cấp biên lai thu tiền cho người tham gia theo quy định. Nộp số tiền đã thu của người tham gia cho cơ quan BHXH hàng ngày thông qua tài khoản ngân hàng hoặc hệ thống tiện ích thông minh. Bước 3. Cơ quan BHXH tiếp nhận hồ sơ và giải quyết theo quy định. Bước 4. Nhận kết quả giải quyết gồm: Sổ BHXH; Quyết định hoàn trả (Mẫu C16-TS) và tiền hoàn trả (nếu có) theo hình thức đã đăng ký.",
+          "procedure_flow": "Bước 1. Lập, nộp hồ sơ 1. Người tham gia a) Trường hợp người tham gia đóng trực tiếp cho cơ quan BHXH hoặc Tổ chức dịch vụ: Lập hồ sơ theo quy định tại tiết 1.1 điểm 1 Mục Thành phần hồ sơ và nộp cho Tổ chức dịch vụ hoặc cơ quan BHXH trên phạm vi toàn quốc b) Trường hợp người tham gia nộp hồ sơ qua Cổng Dịch vụ công: Lập hồ sơ theo quy định tại tiết 1.2 điểm 1 Mục Thành phần hồ sơ và nộp trực tuyến trên Cổng Dịch vụ công. c) Trường hợp người tham gia có yêu cầu hoàn trả tiền đóng BHXH tự nguyện: Lập hồ sơ theo quy định tại tiết 1.3 điểm 1 Mục Thành phần hồ sơ, nộp trực tiếp cho cơ quan BHXH hoặc Tổ chức dịch vụ. 2. Tổ chức dịch vụ: Nhận hồ sơ của người tham gia, lập hồ sơ theo quy định tại điểm 2 Mục Thành phần hồ sơ và nộp cho cơ quan BHXH. Bước 2. Đóng tiền 1. Người tham gia: Đóng tiền theo phương thức đăng ký cho tổ chức dịch vụ hoặc cơ quan BHXH trên phạm vi toàn quốc hoặc đóng tiền trực tuyến khi thực hiện qua Cổng Dịch vụ công. 2. Tổ chức dịch vụ: thu tiền đóng BHXH phần thuộc trách nhiệm đóng của người tham gia BHXH tự nguyện; cấp biên lai thu tiền cho người tham gia theo quy định. Nộp số tiền đã thu của người tham gia cho cơ quan BHXH hàng ngày thông qua tài khoản ngân hàng hoặc hệ thống tiện ích thông minh. Bước 3. Cơ quan BHXH tiếp nhận hồ sơ và giải quyết theo quy định. Bước 4. Nhận kết quả giải quyết gồm: Sổ BHXH; Quyết định hoàn trả (Mẫu C16-TS) và tiền hoàn trả (nếu có) theo hình thức đã đăng ký.",
+          "requirements": "Không có yêu cầu điều kiện",
+          "submission_methods": [],
+          "processing_time_values": [],
+          "document_groups": [],
+          "result_items": []
+        },
+        {
+          "procedure_code": "1.013198",
+          "procedure_title": "Thủ tục công nhận tuổi nghề cơ yếu đối với người làm công tác cơ yếu thôi làm việc trong tổ chức cơ yếu (nghỉ hưu, chuyển ngành, thôi việc)",
+          "subdomain_key": "chuan_bi_nghi_huu",
+          "subdomain_label": "Chuẩn bị nghỉ hưu",
+          "event_id": 318,
+          "field": "Cơ yếu",
+          "agency": "Cục Chính trị - Tổ chức/Ban Cơ yếu Chính phủ",
+          "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bfb-916c-75dc-8da9-5557d36fe11d",
+          "raw_data_file": "C:\\Users\\ku060\\Downloads\\VAIC source\\data-pipeline\\raw_data\\1_013198\\1_013198_procedure_detail.md",
+          "raw_data_available": true,
+          "operation_group": "cong_nhan_tuoi_nghe_dac_thu",
+          "operation_key": "thu_tuc_cong_nhan_tuoi_nghe_co_yeu_doi_voi_nguoi_lam_cong_tac_co_yeu_thoi_lam_viec_trong_to_chuc_co_yeu_nghi_huu_chuyen_nganh_thoi_viec",
+          "overview": "1. Bước 1. Người làm công tác cơ yếu thôi làm việc trong tổ chức cơ yếu (nghỉ hưu, chuyển ngành, thôi việc), cá nhân hoàn thiện hồ sơ gửi Cục Cơ yếu các Bộ, ngành theo hệ thống tổ chức quản lý người làm công tác cơ yếu trước khi thôi làm việc trong tổ chức cơ yếu. Bước 2. Cục Cơ yếu các Bộ, ngành có trách nhiệm kiểm tra tính hợp lệ của hồ sơ và công văn gửi Ban cơ yếu Chính phủ; trường hợp hồ sơ không hợp lệ, Cục Cơ yếu các Bộ, ngành có văn bản thông báo, hướng dẫn cho tổ chức, cá nhân hoàn thiện hồ sơ trong thời hạn 5 (năm) ngày làm việc kể từ ngày nhận được hồ sơ. Bước 3. Cục Chính trị - Tổ chức/Ban Cơ yếu Chính phủ có trách nhiệm thẩm định, báo cáo Trưởng ban Ban Cơ yếu Chính phủ xem xét, quyết định công nhận tuổi nghề cơ yếu.",
+          "procedure_flow": "1. Bước 1. Người làm công tác cơ yếu thôi làm việc trong tổ chức cơ yếu (nghỉ hưu, chuyển ngành, thôi việc), cá nhân hoàn thiện hồ sơ gửi Cục Cơ yếu các Bộ, ngành theo hệ thống tổ chức quản lý người làm công tác cơ yếu trước khi thôi làm việc trong tổ chức cơ yếu. Bước 2. Cục Cơ yếu các Bộ, ngành có trách nhiệm kiểm tra tính hợp lệ của hồ sơ và công văn gửi Ban cơ yếu Chính phủ; trường hợp hồ sơ không hợp lệ, Cục Cơ yếu các Bộ, ngành có văn bản thông báo, hướng dẫn cho tổ chức, cá nhân hoàn thiện hồ sơ trong thời hạn 5 (năm) ngày làm việc kể từ ngày nhận được hồ sơ. Bước 3. Cục Chính trị - Tổ chức/Ban Cơ yếu Chính phủ có trách nhiệm thẩm định, báo cáo Trưởng ban Ban Cơ yếu Chính phủ xem xét, quyết định công nhận tuổi nghề cơ yếu.",
+          "requirements": "Không có thông tin",
+          "submission_methods": [
+            "Dịch vụ bưu chính",
+            "Trực tiếp"
+          ],
+          "processing_time_values": [
+            "30 ngày làm việc",
+            "30 ngày làm việc"
+          ],
+          "document_groups": [],
+          "result_items": [
+            "Quyết định công nhận tuổi nghề cơ yếu (Mã: `KQ.G11.000254`)"
+          ]
+        },
+        {
+          "procedure_code": "1.014160",
+          "procedure_title": "ĐĂNG KÝ THAM GIA BẢO HIỂM XÃ HỘI VÀ CẤP SỔ BẢO HIỂM XÃ HỘI",
+          "subdomain_key": "chuan_bi_nghi_huu",
+          "subdomain_label": "Chuẩn bị nghỉ hưu",
+          "event_id": 318,
+          "field": "Bảo hiểm xã hội",
+          "agency": "Bảo hiểm xã hội tỉnh",
+          "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bfb-2346-765c-bd01-9d81f614f971",
+          "raw_data_file": "C:\\Users\\ku060\\Downloads\\VAIC source\\data-pipeline\\raw_data\\1_014160\\1_014160_procedure_detail.md",
+          "raw_data_available": true,
+          "operation_group": "dang_ky_tham_gia_bhxh",
+          "operation_key": "dang_ky_tham_gia_bao_hiem_xa_hoi_va_cap_so_bao_hiem_xa_hoi",
+          "overview": "1. Bước 1: - Người sử dụng lao động có trách nhiệm kê khai và nộp hồ sơ tham gia bảo hiểm xã hội bắt buộc của người lao động cho cơ quan bảo hiểm xã hội trong thời hạn 30 ngày kể từ ngày người lao động thuộc đối tượng tham gia bảo hiểm xã hội bắt buộc. - Đối tượng: (i) chủ hộ kinh doanh có đăng ký kinh doanh nộp thuế theo phương pháp kê khai và (ii) người quản lý doanh nghiệp, kiểm soát viên, người đại diện phần vốn nhà nước, người đại diện phần vốn của doanh nghiệp theo quy định của pháp luật; thành viên Hội đồng quản trị, Tổng giám đốc, Giám đốc, thành viên Ban kiểm soát hoặc kiểm soát viên và các chức danh quản lý khác được bầu của hợp tác xã, liên hiệp hợp tác xã theo quy định của Luật Hợp tác xã không hưởng tiền lương tự nộp hồ sơ cho cơ quan bảo hiểm xã hội trong thời hạn 30 ngày kể từ ngày thuộc đối tượng tham gia bảo hiểm xã hội bắt buộc. - Người tham gia bảo hiểm xã hội tự nguyện nộp hồ sơ cho cơ quan bảo hiểm xã hội. Bước 2: Trong thời hạn 05 ngày làm việc kể từ ngày nhận đủ hồ sơ theo quy định, cơ quan bảo hiểm xã hội có trách nhiệm cấp sổ bảo hiểm xã hội; Trường hợp không cấp sổ bảo hiểm xã hội thì phải trả lời bằng văn bản và nêu rõ lý do.",
+          "procedure_flow": "1. Bước 1: - Người sử dụng lao động có trách nhiệm kê khai và nộp hồ sơ tham gia bảo hiểm xã hội bắt buộc của người lao động cho cơ quan bảo hiểm xã hội trong thời hạn 30 ngày kể từ ngày người lao động thuộc đối tượng tham gia bảo hiểm xã hội bắt buộc. - Đối tượng: (i) chủ hộ kinh doanh có đăng ký kinh doanh nộp thuế theo phương pháp kê khai và (ii) người quản lý doanh nghiệp, kiểm soát viên, người đại diện phần vốn nhà nước, người đại diện phần vốn của doanh nghiệp theo quy định của pháp luật; thành viên Hội đồng quản trị, Tổng giám đốc, Giám đốc, thành viên Ban kiểm soát hoặc kiểm soát viên và các chức danh quản lý khác được bầu của hợp tác xã, liên hiệp hợp tác xã theo quy định của Luật Hợp tác xã không hưởng tiền lương tự nộp hồ sơ cho cơ quan bảo hiểm xã hội trong thời hạn 30 ngày kể từ ngày thuộc đối tượng tham gia bảo hiểm xã hội bắt buộc. - Người tham gia bảo hiểm xã hội tự nguyện nộp hồ sơ cho cơ quan bảo hiểm xã hội. Bước 2: Trong thời hạn 05 ngày làm việc kể từ ngày nhận đủ hồ sơ theo quy định, cơ quan bảo hiểm xã hội có trách nhiệm cấp sổ bảo hiểm xã hội; Trường hợp không cấp sổ bảo hiểm xã hội thì phải trả lời bằng văn bản và nêu rõ lý do.",
+          "requirements": "Không có thông tin",
+          "submission_methods": [
+            "Trực tuyến",
+            "Dịch vụ bưu chính",
+            "Trực tiếp"
+          ],
+          "processing_time_values": [
+            "5 ngày làm việc",
+            "5 ngày làm việc",
+            "5 ngày làm việc"
+          ],
+          "document_groups": [
+            {
+              "group_name": "(1) Đối với đối tượng tham gia bảo hiểm xã hội bắt buộc (do người sử dụng lao động nộp):",
+              "documents": [
+                {
+                  "Tên giấy tờ": "- Tờ khai đăng ký tham gia bảo hiểm xã hội của người lao động.",
+                  "Bản chính": "1",
+                  "Bản sao": "0",
+                  "Tệp đính kèm": "Không có"
+                },
+                {
+                  "Tên giấy tờ": "- Tờ khai đăng ký tham gia bảo hiểm xã hội của người sử dụng lao động kèm theo danh sách người lao động tham gia bảo hiểm xã hội;",
+                  "Bản chính": "1",
+                  "Bản sao": "0",
+                  "Tệp đính kèm": "Không có"
+                }
+              ]
+            },
+            {
+              "group_name": "(2) Đối tượng: (i) Chủ hộ kinh doanh của hộ kinh doanh có đăng ký kinh doanh nộp thuế theo phương pháp kê khai và (ii) người quản lý doanh nghiệp, kiểm soát viên, người đại diện phần vốn nhà nước, người đại diện phần vốn của doanh nghiệp theo quy định của pháp luật; thành viên Hội đồng quản trị, Tổng giám đốc, Giám đốc, thành viên Ban kiểm soát hoặc kiểm soát viên và các chức danh quản lý khác được bầu của hợp tác xã, liên hiệp hợp tác xã theo quy định của Luật Hợp tác xã không hưởng tiền lương tự nộp:",
+              "documents": [
+                {
+                  "Tên giấy tờ": "Tờ khai đăng ký tham gia bảo hiểm xã hội của người lao động.",
+                  "Bản chính": "1",
+                  "Bản sao": "0",
+                  "Tệp đính kèm": "Không có"
+                }
+              ]
+            },
+            {
+              "group_name": "(3) Đối với đối tượng tham gia bảo hiểm xã hội tự nguyện:",
+              "documents": [
+                {
+                  "Tên giấy tờ": "Tờ khai đăng ký tham gia bảo hiểm xã hội của người tham gia bảo hiểm xã hội tự nguyện.",
+                  "Bản chính": "1",
+                  "Bản sao": "0",
+                  "Tệp đính kèm": "Không có"
+                }
+              ]
+            }
+          ],
+          "result_items": [
+            "Sổ Bảo hiểm xã hội. (Mã: `KQ.G09.000488`)"
+          ]
+        },
+        {
+          "procedure_code": "1.014162",
+          "procedure_title": "ĐIỀU CHỈNH THÔNG TIN ĐĂNG KÝ KÊ KHAI THAM GIA BẢO HIỂM XÃ HỘI",
+          "subdomain_key": "chuan_bi_nghi_huu",
+          "subdomain_label": "Chuẩn bị nghỉ hưu",
+          "event_id": 318,
+          "field": "Bảo hiểm xã hội",
+          "agency": "Bảo hiểm xã hội tỉnh",
+          "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bfb-2334-7727-9345-3ee9502bfe7f",
+          "raw_data_file": "C:\\Users\\ku060\\Downloads\\VAIC source\\data-pipeline\\raw_data\\1_014162\\1_014162_procedure_detail.md",
+          "raw_data_available": true,
+          "operation_group": "dieu_chinh_thong_tin_bhxh",
+          "operation_key": "dieu_chinh_thong_tin_dang_ky_ke_khai_tham_gia_bao_hiem_xa_hoi",
+          "overview": "1. Bước 1: Khi thông tin đăng ký kê khai tham gia bảo hiểm xã hội thay đổi thì người đăng ký kê khai theo quy định nộp tờ khai điều chỉnh thông tin kèm theo bản sao giấy tờ có liên quan đến việc điều chỉnh thông tin cho cơ quan bảo hiểm xã hội. Bước 2: Trong thời hạn 05 ngày làm việc kể từ ngày nhận đủ tờ khai và giấy tờ theo quy định, cơ quan bảo hiểm xã hội có trách nhiệm điều chỉnh thông tin tham gia bảo hiểm xã hội của người tham gia; Trường hợp không thực hiện điều chỉnh thì phải trả lời bằng văn bản và nêu rõ lý do.",
+          "procedure_flow": "1. Bước 1: Khi thông tin đăng ký kê khai tham gia bảo hiểm xã hội thay đổi thì người đăng ký kê khai theo quy định nộp tờ khai điều chỉnh thông tin kèm theo bản sao giấy tờ có liên quan đến việc điều chỉnh thông tin cho cơ quan bảo hiểm xã hội. Bước 2: Trong thời hạn 05 ngày làm việc kể từ ngày nhận đủ tờ khai và giấy tờ theo quy định, cơ quan bảo hiểm xã hội có trách nhiệm điều chỉnh thông tin tham gia bảo hiểm xã hội của người tham gia; Trường hợp không thực hiện điều chỉnh thì phải trả lời bằng văn bản và nêu rõ lý do.",
+          "requirements": "Người sử dụng lao động và người lao động có thông tin đăng ký kê khai tham gia bảo hiểm xã hội thay đổi.",
+          "submission_methods": [
+            "Trực tuyến",
+            "Dịch vụ bưu chính",
+            "Trực tiếp"
+          ],
+          "processing_time_values": [
+            "5 ngày làm việc",
+            "5 ngày làm việc",
+            "5 ngày làm việc"
+          ],
+          "document_groups": [],
+          "result_items": [
+            "Điều chỉnh thông tin tham gia bảo hiểm xã hội của người sử dụng lao động, người lao động (Mã: `KQ.G09.000357`)"
+          ]
+        },
+        {
+          "procedure_code": "1.014173",
+          "procedure_title": "HƯỞNG BẢO HIỂM XÃ HỘI MỘT LẦN.",
+          "subdomain_key": "chuan_bi_nghi_huu",
+          "subdomain_label": "Chuẩn bị nghỉ hưu",
+          "event_id": 318,
+          "field": "Bảo hiểm xã hội",
+          "agency": "Bảo hiểm xã hội tỉnh",
+          "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bfb-2368-7249-ba0e-736f3bcd4303",
+          "raw_data_file": "C:\\Users\\ku060\\Downloads\\VAIC source\\data-pipeline\\raw_data\\1_014173\\1_014173_procedure_detail.md",
+          "raw_data_available": true,
+          "operation_group": "huong_bhxh_mot_lan",
+          "operation_key": "huong_bao_hiem_xa_hoi_mot_lan",
+          "overview": "1. Bước 1: Người lao động khi đủ điều kiện hưởng bảo hiểm xã hội một lần nộp hồ sơ cho cơ quan bảo hiểm xã hội. Bước 2: Trong thời hạn 07 ngày làm việc kể từ ngày nhận đủ hồ sơ theo quy định, cơ quan bảo hiểm xã hội có trách nhiệm giải quyết. Trường hợp không giải quyết thì phải trả lời bằng văn bản và nêu rõ lý do.",
+          "procedure_flow": "1. Bước 1: Người lao động khi đủ điều kiện hưởng bảo hiểm xã hội một lần nộp hồ sơ cho cơ quan bảo hiểm xã hội. Bước 2: Trong thời hạn 07 ngày làm việc kể từ ngày nhận đủ hồ sơ theo quy định, cơ quan bảo hiểm xã hội có trách nhiệm giải quyết. Trường hợp không giải quyết thì phải trả lời bằng văn bản và nêu rõ lý do.",
+          "requirements": "- Người lao động đủ tuổi nghỉ hưu theo quy định tại khoản 2 Điều 169 của Bộ luật Lao động và có thời gian đóng bảo hiểm xã hội từ đủ 15 năm trở lên. - Người bắt đầu tham gia bảo hiểm xã hội tự nguyện trước ngày 01 tháng 01 năm 2021 và có từ đủ 20 năm đóng bảo hiểm xã hội tự nguyện trở lên và đủ 60 tuổi đối với nam, đủ 55 tuổi đối với nữ.",
+          "submission_methods": [
+            "Trực tuyến",
+            "Dịch vụ bưu chính",
+            "Trực tiếp"
+          ],
+          "processing_time_values": [
+            "7 ngày làm việc",
+            "7 ngày làm việc",
+            "7 ngày làm việc"
+          ],
+          "document_groups": [],
+          "result_items": [
+            "Quyết định về việc hưởng bảo hiểm xã hội một lần (Mã: `KQ.G09.000490`)"
+          ]
+        },
+        {
+          "procedure_code": "1.014181",
+          "procedure_title": "TÍNH THỜI GIAN CÔNG TÁC ĐỂ HƯỞNG BẢO HIỂM XÃ HỘI ĐỐI VỚI NGƯỜI LAO ĐỘNG LÀM VIỆC THUỘC KHU VỰC NHÀ NƯỚC, NGHỈ CHỜ VIỆC TỪ NGÀY 01 THÁNG 11 NĂM 1987 ĐẾN TRƯỚC NGÀY 01 THÁNG 01 NĂM 1995",
+          "subdomain_key": "chuan_bi_nghi_huu",
+          "subdomain_label": "Chuẩn bị nghỉ hưu",
+          "event_id": 318,
+          "field": "Bảo hiểm xã hội",
+          "agency": "Bảo hiểm xã hội tỉnh",
+          "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bfb-2394-77f9-bebc-7ff8c3d52f36",
+          "raw_data_file": "C:\\Users\\ku060\\Downloads\\VAIC source\\data-pipeline\\raw_data\\1_014181\\1_014181_procedure_detail.md",
+          "raw_data_available": true,
+          "operation_group": "ra_soat_thoi_gian_dong_bhxh",
+          "operation_key": "tinh_thoi_gian_cong_tac_de_huong_bao_hiem_xa_hoi_doi_voi_nguoi_lao_dong_lam_viec_thuoc_khu_vuc_nha_nuoc_nghi_cho_viec_tu_ngay_01_thang_11_nam_1987_den_truoc_ngay_01_thang_01_nam_1995",
+          "overview": "1. Bước 1: Người lao động và người sử dụng lao động hoàn thiện hồ sơ theo quy định gửi cơ quan bảo hiểm xã hội. Bước 2 Trong thời hạn 15 ngày làm việc kể từ ngày nhận được hồ sơ từ người sử dụng lao động, cơ quan bảo hiểm xã hội phải giải quyết. Trường hợp không giải quyết thì phải trả lời bằng văn bản và nêu rõ lý do.",
+          "procedure_flow": "1. Bước 1: Người lao động và người sử dụng lao động hoàn thiện hồ sơ theo quy định gửi cơ quan bảo hiểm xã hội. Bước 2 Trong thời hạn 15 ngày làm việc kể từ ngày nhận được hồ sơ từ người sử dụng lao động, cơ quan bảo hiểm xã hội phải giải quyết. Trường hợp không giải quyết thì phải trả lời bằng văn bản và nêu rõ lý do.",
+          "requirements": "Không có thông tin",
+          "submission_methods": [
+            "Trực tuyến",
+            "Dịch vụ bưu chính",
+            "Trực tiếp"
+          ],
+          "processing_time_values": [
+            "15 ngày làm việc",
+            "15 ngày làm việc",
+            "15 ngày làm việc"
+          ],
+          "document_groups": [],
+          "result_items": [
+            "Xác nhận bổ sung thời gian công tác để tính hưởng bảo hiểm xã hội trong sổ bảo hiểm xã hội (Mã: `KQ.G09.000368`)"
+          ]
+        },
+        {
+          "procedure_code": "1.014183",
+          "procedure_title": "CHẾ ĐỘ ĐỐI VỚI NGƯỜI LAO ĐỘNG KHÔNG ĐỦ ĐIỀU KIỆN HƯỞNG LƯƠNG HƯU VÀ CHƯA ĐỦ TUỔI HƯỞNG TRỢ CẤP HƯU TRÍ XÃ HỘI",
+          "subdomain_key": "chuan_bi_nghi_huu",
+          "subdomain_label": "Chuẩn bị nghỉ hưu",
+          "event_id": 318,
+          "field": "Bảo hiểm xã hội",
+          "agency": "Bảo hiểm xã hội tỉnh",
+          "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bfb-2af1-7417-8f61-1b31b0d76b1a",
+          "raw_data_file": "C:\\Users\\ku060\\Downloads\\VAIC source\\data-pipeline\\raw_data\\1_014183\\1_014183_procedure_detail.md",
+          "raw_data_available": true,
+          "operation_group": "xu_ly_chua_du_dieu_kien_huu",
+          "operation_key": "che_do_doi_voi_nguoi_lao_dong_khong_du_dieu_kien_huong_luong_huu_va_chua_du_tuoi_huong_tro_cap_huu_tri_xa_hoi",
+          "overview": "1. Bước 1: Công dân Việt Nam đủ tuổi nghỉ hưu có thời gian đóng bảo hiểm xã hội nhưng không đủ điều kiện hưởng lương hưu theo quy định của pháp luật và chưa đủ điều kiện hưởng trợ cấp hưu trí xã hội theo quy định gửi hồ sơ đến cơ quan bảo hiểm xã hội. Bước 2: Trong thời hạn 05 ngày làm việc kể từ ngày nhận đủ hồ sơ theo quy định, cơ quan bảo hiểm xã hội có trách nhiệm giải quyết. Trường hợp không giải quyết thì phải trả lời bằng văn bản và nêu rõ lý do.",
+          "procedure_flow": "1. Bước 1: Công dân Việt Nam đủ tuổi nghỉ hưu có thời gian đóng bảo hiểm xã hội nhưng không đủ điều kiện hưởng lương hưu theo quy định của pháp luật và chưa đủ điều kiện hưởng trợ cấp hưu trí xã hội theo quy định gửi hồ sơ đến cơ quan bảo hiểm xã hội. Bước 2: Trong thời hạn 05 ngày làm việc kể từ ngày nhận đủ hồ sơ theo quy định, cơ quan bảo hiểm xã hội có trách nhiệm giải quyết. Trường hợp không giải quyết thì phải trả lời bằng văn bản và nêu rõ lý do.",
+          "requirements": "Không có thông tin",
+          "submission_methods": [
+            "Trực tuyến",
+            "Dịch vụ bưu chính",
+            "Trực tiếp"
+          ],
+          "processing_time_values": [
+            "5 ngày làm việc",
+            "5 ngày làm việc",
+            "5 ngày làm việc"
+          ],
+          "document_groups": [],
+          "result_items": [
+            "Quyết định về việc hưởng trợ cấp hằng tháng (Mã: `KQ.G09.000373`)"
+          ]
+        },
+        {
+          "procedure_code": "2.002342",
+          "procedure_title": "Giải quyết chế độ cho người lao động phát hiện bị bệnh nghề nghiệp khi đã nghỉ hưu hoặc không còn làm việc trong các nghề, công việc có nguy cơ bị bệnh nghề nghiệp, gồm: Chi phí giám định thương tật, bệnh tật; trợ cấp một lần hoặc hằng tháng; trợ cấp phục vụ; hỗ trợ phương tiện trợ giúp sinh hoạt, dụng cụ chỉnh hình; dưỡng sức, phục hồi sức khỏe; trợ cấp khi người lao động chết do bệnh nghề nghiệp; đóng bảo hiểm y tế cho người nghỉ việc hưởng trợ cấp bảo hiểm bệnh nghề nghiệp hằng tháng",
+          "subdomain_key": "chuan_bi_nghi_huu",
+          "subdomain_label": "Chuẩn bị nghỉ hưu",
+          "event_id": 318,
+          "field": "An toàn, vệ sinh lao động",
+          "agency": "",
+          "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bfb-4a50-773e-b2d6-68af3ff79abd",
+          "raw_data_file": "C:\\Users\\ku060\\Downloads\\VAIC source\\data-pipeline\\raw_data\\2_002342\\2_002342_procedure_detail.md",
+          "raw_data_available": true,
+          "operation_group": "ho_so_benh_nghe_nghiep_sau_nghi_huu",
+          "operation_key": "giai_quyet_che_do_cho_nguoi_lao_dong_phat_hien_bi_benh_nghe_nghiep_khi_da_nghi_huu_hoac_khong_con_lam_viec_trong_cac_nghe_cong_viec_co_nguy_co_bi_benh_nghe_nghiep_gom_chi_phi_giam_dinh_thuong_tat_benh_tat_tro_cap_mot_lan_hoac_hang_thang_tro_cap_phuc_vu_ho_tro_phuong_tien_tro_giup_sinh_hoat_dung_cu_chinh_hinh_duong_suc_phuc_hoi_suc_khoe_tro_cap_khi_nguoi_lao_dong_chet_do_benh_nghe_nghiep_dong_bao_hiem_y_te_cho_nguoi_nghi_viec_huong_tro_cap_bao_hiem_benh_nghe_nghiep_hang_thang",
+          "overview": "1. - Bước 1: Người lao động, người sử dụng lao động nộp 01 bộ hồ sơ cho cơ quan Bảo hiểm xã hội để giải quyết hưởng chế độ theo quy định. - Bước 2: Trong thời hạn 10 ngày kể từ ngày nhận đủ hồ sơ, cơ quan bảo hiểm xã hội có trách nhiệm giải quyết chế độ cho người lao động. Trường hợp không giải quyết thì phải trả lời bằng văn bản và nêu rõ lý do.",
+          "procedure_flow": "1. - Bước 1: Người lao động, người sử dụng lao động nộp 01 bộ hồ sơ cho cơ quan Bảo hiểm xã hội để giải quyết hưởng chế độ theo quy định. - Bước 2: Trong thời hạn 10 ngày kể từ ngày nhận đủ hồ sơ, cơ quan bảo hiểm xã hội có trách nhiệm giải quyết chế độ cho người lao động. Trường hợp không giải quyết thì phải trả lời bằng văn bản và nêu rõ lý do.",
+          "requirements": "Người lao động phát hiện bị bệnh nghề nghiệp trong khoảng thời gian bảo đảm theo quy định của Bộ trưởng Bộ Y tế. - Có tham gia bảo hiểm xã hội bắt buộc trong thời gian làm nghề, công việc gây ra bệnh nghề nghiệp. - Bị suy giảm khả năng lao động từ 5% trở lên do bị bệnh nghề nghiệp.",
+          "submission_methods": [
+            "Dịch vụ bưu chính",
+            "Trực tiếp"
+          ],
+          "processing_time_values": [
+            "10 ngày",
+            "10 ngày"
+          ],
+          "document_groups": [],
+          "result_items": [
+            "Có trách nhiệm giải quyết hưởng chế độ, nếu không giải quyết phải trả lời bằng văn bản và nêu rõ lý do (Mã: `KQ.G09.000469`)"
+          ]
+        },
+        {
+          "procedure_code": "2.002343",
+          "procedure_title": "Hỗ trợ chi phí khám, chữa bệnh nghề nghiệp cho người lao động phát hiện bị bệnh nghề nghiệp khi đã nghỉ hưu hoặc không còn làm việc trong các nghề, công việc có nguy cơ bị bệnh nghề nghiệp",
+          "subdomain_key": "chuan_bi_nghi_huu",
+          "subdomain_label": "Chuẩn bị nghỉ hưu",
+          "event_id": 318,
+          "field": "An toàn, vệ sinh lao động",
+          "agency": "Sở Nội Vụ",
+          "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bfb-4a53-7608-88a4-16bbccf032f2",
+          "raw_data_file": "C:\\Users\\ku060\\Downloads\\VAIC source\\data-pipeline\\raw_data\\2_002343\\2_002343_procedure_detail.md",
+          "raw_data_available": true,
+          "operation_group": "ho_so_benh_nghe_nghiep_sau_nghi_huu",
+          "operation_key": "ho_tro_chi_phi_kham_chua_benh_nghe_nghiep_cho_nguoi_lao_dong_phat_hien_bi_benh_nghe_nghiep_khi_da_nghi_huu_hoac_khong_con_lam_viec_trong_cac_nghe_cong_viec_co_nguy_co_bi_benh_nghe_nghiep",
+          "overview": "1. - Bước 1: Người lao động hoặc người sử dụng lao động nơi người lao động đang làm việc nộp 01 bộ hồ sơ theo quy định đến Sở Nội vụ - Bước 2: Sở Nội vụ tiếp nhận thẩm định hồ sơ và quyết định việc hỗ trợ. Nếu không hỗ trợ trả lời bằng văn bản và nêu rõ lý do. - Bước 3: Sở Nội vụ gửi quyết định kèm danh sách dữ liệu hỗ trợ đến cơ quan Bảo hiểm xã hội thực hiện chi trả kinh phí hỗ trợ theo quyết định.",
+          "procedure_flow": "1. - Bước 1: Người lao động hoặc người sử dụng lao động nơi người lao động đang làm việc nộp 01 bộ hồ sơ theo quy định đến Sở Nội vụ - Bước 2: Sở Nội vụ tiếp nhận thẩm định hồ sơ và quyết định việc hỗ trợ. Nếu không hỗ trợ trả lời bằng văn bản và nêu rõ lý do. - Bước 3: Sở Nội vụ gửi quyết định kèm danh sách dữ liệu hỗ trợ đến cơ quan Bảo hiểm xã hội thực hiện chi trả kinh phí hỗ trợ theo quyết định.",
+          "requirements": "- Người lao động phát hiện bị bệnh nghề nghiệp trong khoảng thời gian bảo đảm theo quy định của Bộ trưởng Bộ Y tế. - Có tham gia bảo hiểm xã hội bắt buộc trong thời gian làm nghề, công việc gây ra bệnh nghề nghiệp. - Bị suy giảm khả năng lao động từ 5% trở lên do bị bệnh nghề nghiệp.",
+          "submission_methods": [
+            "Dịch vụ bưu chính",
+            "Trực tiếp"
+          ],
+          "processing_time_values": [
+            "10 ngày làm việc",
+            "10 ngày làm việc"
+          ],
+          "document_groups": [],
+          "result_items": [
+            "Quyết định việc hỗ trợ kinh phí và thực hiện hỗ trợ kinh phí (Mã: `KQ.G09.000468`)"
+          ]
+        },
+        {
+          "procedure_code": "2.002761",
+          "procedure_title": "Thủ tục xác nhận cán bộ Quân đội nghỉ hưu mắc bệnh hiểm nghèo",
+          "subdomain_key": "chuan_bi_nghi_huu",
+          "subdomain_label": "Chuẩn bị nghỉ hưu",
+          "event_id": 318,
+          "field": "Chính sách BQP",
+          "agency": "Ủy ban nhân dân cấp xã",
+          "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bfb-cf79-74df-bb1f-3fd783777d04",
+          "raw_data_file": "C:\\Users\\ku060\\Downloads\\VAIC source\\data-pipeline\\raw_data\\2_002761\\2_002761_procedure_detail.md",
+          "raw_data_available": true,
+          "operation_group": "xac_nhan_dieu_kien_nghi_huu",
+          "operation_key": "thu_tuc_xac_nhan_can_bo_quan_doi_nghi_huu_mac_benh_hiem_ngheo",
+          "overview": "1. Bước 1: Sĩ quan Quân đội nghỉ hưu hoặc thân nhân nộp 01 bộ hồ sơ theo quy định tại điểm a khoản 4 Điều 5 Nghị định số 343/2025/NĐ-CP cho Ủy ban nhân dân cấp xã nơi thường trú bằng hình thức trực tiếp hoặc qua dịch vụ bưu chính hoặc trên môi trường điện tử. Trường hợp cơ quan tiếp nhận hồ sơ khai thác được các giấy tờ trong thành phần hồ sơ (trừ đơn đề nghị giám định y khoa) trên Cơ sở dữ liệu quốc gia về dân cư và cơ sở dữ liệu, hệ thống thông tin có liên quan thì sĩ quan Quân đội nghỉ hưu không phải nộp các giấy tờ nêu trên. Bước 2: Ủy ban nhân dân cấp xã trong thời gian 03 ngày làm việc kể từ ngày tiếp nhận hồ sơ theo quy định có trách nhiệm tổng hợp, đề nghị Bộ Tư lệnh Thủ đô Hà Nội hoặc Bộ Chỉ huy quân sự cấp tỉnh. Sau khi có quyết định của Bộ Tư lệnh Thủ đô Hà Nội hoặc Bộ Chỉ huy quân sự cấp tỉnh về việc hưởng chế độ hỗ trợ hằng quý đối với sĩ quan Quân đội nghỉ hưu mắc bệnh hiểm nghèo thì tiếp nhận, quản lý và thực hiện hỗ trợ theo quy định bằng hình thức trực tiếp hoặc qua dịch vụ bưu chính hoặc qua tài khoản cá nhân. Bước 3: Bộ Tư lệnh Thủ đô Hà Nội hoặc Bộ Chỉ huy quân sự cấp tỉnh trong thời gian 03 ngày làm việc kể từ ngày nhận đủ hồ sơ do Ủy ban nhân dân cấp xã chuyển đến, có trách nhiệm kiểm tra hồ sơ, đối chiếu với danh mục bệnh hiểm nghèo do cấp có thẩm quyền ban hành; trường hợp đủ điều kiện thì cấp giấy giới thiệu theo Mẫu số 02 tại Phụ lục ban hành kèm theo Nghị định số 343/2025/NĐ-CP đề nghị Hội đồng giám định y khoa theo quy định của Bộ Quốc phòng kèm theo bản sao hồ sơ để khám giám định; trường hợp không đủ điều kiện thì trả lời Ủy ban nhân dân cấp xã nơi đề nghị và đối tượng bằng văn bản. Căn cứ kết quả giám định của Hội đồng giám định y khoa, nếu kết luận mắc bệnh hiểm nghèo thì trong thời gian 03 ngày làm việc kể từ ngày nhận được biên bản giám định y khoa của Hội đồng giám định y khoa, Bộ Tư lệnh Thủ đô Hà Nội hoặc Bộ Chỉ huy quân sự cấp tỉnh có trách nhiệm ban hành quyết định về việc hưởng chế độ hỗ trợ hằng quý đối với sĩ quan Quân đội nghỉ hưu mắc bệnh hiểm nghèo (02 bản) theo Mẫu số 04 tại Phụ lục ban hành kèm theo Nghị định số 343/2025/NĐ-CP (01 bản gửi đối tượng, 01 bản gửi Ủy ban nhân dân cấp xã nơi đối tượng thường trú để thực hiện chế độ); trường hợp kết luận không mắc bệnh hiểm nghèo thì trả lời Ủy ban nhân dân cấp xã nơi đề nghị và đối tượng bằng văn bản. Bước 4: Hội đồng giám định y khoa trong thời gian 30 ngày làm việc kể từ ngày nhận đủ hồ sơ hợp lệ do Bộ Tư lệnh Thủ đô Hà Nội hoặc Bộ Chỉ huy quân sự cấp tỉnh chuyển đến, có trách nhiệm tổ chức khám giám định bệnh hiểm nghèo theo quy định; kết luận, gửi biên bản giám định y khoa theo Mẫu số 03 tại Phụ lục ban hành kèm theo Nghị định số 343/2025/NĐ-CP về Bộ Tư lệnh Thủ đô Hà Nội hoặc Bộ Chỉ huy quân sự cấp tỉnh nơi đề nghị.",
+          "procedure_flow": "1. Bước 1: Sĩ quan Quân đội nghỉ hưu hoặc thân nhân nộp 01 bộ hồ sơ theo quy định tại điểm a khoản 4 Điều 5 Nghị định số 343/2025/NĐ-CP cho Ủy ban nhân dân cấp xã nơi thường trú bằng hình thức trực tiếp hoặc qua dịch vụ bưu chính hoặc trên môi trường điện tử. Trường hợp cơ quan tiếp nhận hồ sơ khai thác được các giấy tờ trong thành phần hồ sơ (trừ đơn đề nghị giám định y khoa) trên Cơ sở dữ liệu quốc gia về dân cư và cơ sở dữ liệu, hệ thống thông tin có liên quan thì sĩ quan Quân đội nghỉ hưu không phải nộp các giấy tờ nêu trên. Bước 2: Ủy ban nhân dân cấp xã trong thời gian 03 ngày làm việc kể từ ngày tiếp nhận hồ sơ theo quy định có trách nhiệm tổng hợp, đề nghị Bộ Tư lệnh Thủ đô Hà Nội hoặc Bộ Chỉ huy quân sự cấp tỉnh. Sau khi có quyết định của Bộ Tư lệnh Thủ đô Hà Nội hoặc Bộ Chỉ huy quân sự cấp tỉnh về việc hưởng chế độ hỗ trợ hằng quý đối với sĩ quan Quân đội nghỉ hưu mắc bệnh hiểm nghèo thì tiếp nhận, quản lý và thực hiện hỗ trợ theo quy định bằng hình thức trực tiếp hoặc qua dịch vụ bưu chính hoặc qua tài khoản cá nhân. Bước 3: Bộ Tư lệnh Thủ đô Hà Nội hoặc Bộ Chỉ huy quân sự cấp tỉnh trong thời gian 03 ngày làm việc kể từ ngày nhận đủ hồ sơ do Ủy ban nhân dân cấp xã chuyển đến, có trách nhiệm kiểm tra hồ sơ, đối chiếu với danh mục bệnh hiểm nghèo do cấp có thẩm quyền ban hành; trường hợp đủ điều kiện thì cấp giấy giới thiệu theo Mẫu số 02 tại Phụ lục ban hành kèm theo Nghị định số 343/2025/NĐ-CP đề nghị Hội đồng giám định y khoa theo quy định của Bộ Quốc phòng kèm theo bản sao hồ sơ để khám giám định; trường hợp không đủ điều kiện thì trả lời Ủy ban nhân dân cấp xã nơi đề nghị và đối tượng bằng văn bản. Căn cứ kết quả giám định của Hội đồng giám định y khoa, nếu kết luận mắc bệnh hiểm nghèo thì trong thời gian 03 ngày làm việc kể từ ngày nhận được biên bản giám định y khoa của Hội đồng giám định y khoa, Bộ Tư lệnh Thủ đô Hà Nội hoặc Bộ Chỉ huy quân sự cấp tỉnh có trách nhiệm ban hành quyết định về việc hưởng chế độ hỗ trợ hằng quý đối với sĩ quan Quân đội nghỉ hưu mắc bệnh hiểm nghèo (02 bản) theo Mẫu số 04 tại Phụ lục ban hành kèm theo Nghị định số 343/2025/NĐ-CP (01 bản gửi đối tượng, 01 bản gửi Ủy ban nhân dân cấp xã nơi đối tượng thường trú để thực hiện chế độ); trường hợp kết luận không mắc bệnh hiểm nghèo thì trả lời Ủy ban nhân dân cấp xã nơi đề nghị và đối tượng bằng văn bản. Bước 4: Hội đồng giám định y khoa trong thời gian 30 ngày làm việc kể từ ngày nhận đủ hồ sơ hợp lệ do Bộ Tư lệnh Thủ đô Hà Nội hoặc Bộ Chỉ huy quân sự cấp tỉnh chuyển đến, có trách nhiệm tổ chức khám giám định bệnh hiểm nghèo theo quy định; kết luận, gửi biên bản giám định y khoa theo Mẫu số 03 tại Phụ lục ban hành kèm theo Nghị định số 343/2025/NĐ-CP về Bộ Tư lệnh Thủ đô Hà Nội hoặc Bộ Chỉ huy quân sự cấp tỉnh nơi đề nghị.",
+          "requirements": "Không có thông tin",
+          "submission_methods": [
+            "Trực tuyến",
+            "Dịch vụ bưu chính",
+            "Trực tiếp"
+          ],
+          "processing_time_values": [
+            "39 ngày làm việc",
+            "39 ngày làm việc",
+            "39 ngày làm việc"
+          ],
+          "document_groups": [],
+          "result_items": [
+            "Quyết định công nhận sĩ quan Quân đội nghỉ hưu mắc bệnh hiểm nghèo (Mã: `KQ.G11.000411`)"
+          ]
+        }
+      ]
+    },
+    {
+      "subdomain_key": "che_do_huu_tri",
+      "subdomain_label": "Chế độ hưu trí",
+      "event_id": 319,
+      "summary": "Nhóm thủ tục hưởng lương hưu, trợ cấp hưu trí xã hội, chuyển nơi hưởng, thay đổi hình thức nhận và các chế độ phát sinh trong quá trình đang hưởng hưu trí.",
+      "entry_prompts": [
+        "Bạn đang muốn hưởng lương hưu, chuyển nơi nhận, đổi cách nhận hay điều chỉnh chế độ đang hưởng?",
+        "Trường hợp của bạn là hưu trí BHXH bắt buộc, BHXH tự nguyện, trợ cấp hưu trí xã hội hay chế độ hưu trí đặc thù?"
+      ],
+      "procedure_count": 18,
+      "procedures": [
+        {
+          "procedure_code": "1.001646",
+          "procedure_title": "Giải quyết hưởng trợ cấp đối với nhà giáo đã nghỉ hưu chưa được hưởng chế độ phụ cấp thâm niên trong lương hưu theo Nghị định số 14/2020/NĐ-CP",
+          "subdomain_key": "che_do_huu_tri",
+          "subdomain_label": "Chế độ hưu trí",
+          "event_id": 319,
+          "field": "Thực hiện chính sách BHXH",
+          "agency": "Công đoàn cơ quan BHXH Việt Nam",
+          "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bfb-d77c-7184-91f2-958c26e2b067",
+          "raw_data_file": "C:\\Users\\ku060\\Downloads\\VAIC source\\data-pipeline\\raw_data\\1_001646\\1_001646_procedure_detail.md",
+          "raw_data_available": true,
+          "operation_group": "phu_cap_tham_nien_nha_giao_nghi_huu",
+          "operation_key": "giai_quyet_huong_tro_cap_doi_voi_nha_giao_da_nghi_huu_chua_duoc_huong_che_do_phu_cap_tham_nien_trong_luong_huu_theo_nghi_dinh_so_14_2020_nd_cp",
+          "overview": "1. **Bước 1. Lập, nộp hồ sơ**",
+          "procedure_flow": "1. **Bước 1. Lập, nộp hồ sơ** Người hưởng hoặc thân nhân người hưởng lập hồ sơ theo quy định tại mục 15.3 (Thành phần hồ sơ); nộp hồ sơ cho cơ quan BHXH đang chi trả lương hưu, trợ cấp BHXH hoặc cơ quan BHXH (trường hợp người hưởng đã chết). 2. **Bước 2.** Cơ quan BHXH tiếp nhận hồ sơ và giải quyết theo quy định. 3. **Bước 3. Nhận kết quả giải quyết** Người hưởng hoặc thân nhân người hưởng nhận Quyết định về việc hưởng trợ cấp theo Nghị định số 14/2020/NĐ-CP ngày 24/01/2020 của Chính phủ (nếu đủ hồ sơ đủ điều kiện giải quyết) và tiền trợ cấp. Văn bản trả lời nêu rõ lý do không giải quyết (nếu không đủ hồ sơ, hồ sơ không đúng).",
+          "requirements": "Không có thông tin",
+          "submission_methods": [
+            "Trực tuyến",
+            "Dịch vụ bưu chính",
+            "Trực tiếp"
+          ],
+          "processing_time_values": [
+            "12 ngày làm việc",
+            "12 ngày làm việc",
+            "12 ngày làm việc"
+          ],
+          "document_groups": [
+            {
+              "group_name": "1. Đối với nhà giáo đang hưởng lương hưu",
+              "documents": [
+                {
+                  "Tên giấy tờ": "Bản chính Tờ khai đề nghị hưởng trợ cấp",
+                  "Bản chính": "1",
+                  "Bản sao": "0",
+                  "Tệp đính kèm": "Không có"
+                }
+              ]
+            },
+            {
+              "group_name": "2. Đối với nhà giáo đủ điều kiện hưởng trợ cấp, chưa được giải quyết chế độ mà từ trần từ ngày 01 tháng 01 năm 2012 trở về sau, hồ sơ bao gồm",
+              "documents": [
+                {
+                  "Tên giấy tờ": "a) Bản chính Tờ khai đề nghị hưởng trợ cấp của thân nhân",
+                  "Bản chính": "1",
+                  "Bản sao": "0",
+                  "Tệp đính kèm": "Không có"
+                },
+                {
+                  "Tên giấy tờ": "c) Bản chính Văn bản ủy quyền (mẫu số 03) (trường hợp chỉ có một thân nhân thì không cần văn bản ủy quyền này).",
+                  "Bản chính": "1",
+                  "Bản sao": "0",
+                  "Tệp đính kèm": "Không có"
+                },
+                {
+                  "Tên giấy tờ": "b) Bản sao Giấy chứng tử hoặc Giấy báo tử hoặc Quyết định của tòa án tuyên bố là đã chết (mang theo bản chính để đối chiếu)",
+                  "Bản chính": "0",
+                  "Bản sao": "1",
+                  "Tệp đính kèm": "Không có"
+                }
+              ]
+            }
+          ],
+          "result_items": [
+            "Quyết định về việc hưởng trợ cấp theo Nghị định số14/2020/NĐ-CP ngày 24/01/2020 của Chính phủ (Mã: `KQ.G24.000020`)"
+          ]
+        },
+        {
+          "procedure_code": "1.001710",
+          "procedure_title": "Giải quyết điều chỉnh, hủy quyết định, chấm dứt hưởng BHXH",
+          "subdomain_key": "che_do_huu_tri",
+          "subdomain_label": "Chế độ hưu trí",
+          "event_id": 319,
+          "field": "Thực hiện chính sách BHXH",
+          "agency": "Bảo hiểm xã hội tỉnh; Công đoàn cơ quan BHXH Việt Nam",
+          "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bfb-d77c-7514-8e03-9ace6223bb2c",
+          "raw_data_file": "C:\\Users\\ku060\\Downloads\\VAIC source\\data-pipeline\\raw_data\\1_001710\\1_001710_procedure_detail.md",
+          "raw_data_available": true,
+          "operation_group": "dieu_chinh_ho_so_huong_huu",
+          "operation_key": "giai_quyet_dieu_chinh_huy_quyet_dinh_cham_dut_huong_bhxh",
+          "overview": "1. **Bước 1. Lập, nộp hồ sơ**",
+          "procedure_flow": "1. **Bước 1. Lập, nộp hồ sơ** - Đơn vị SDLĐ lập hồ sơ theo quy định tại mục 14.3 (Thành phần hồ sơ) nộp cho cơ quan BHXH nơi đơn vị SDLĐ đóng BHXH. - NLĐ lập hồ sơ theo quy định tại mục 14.3 (Thành phần hồ sơ); nộp cho cơ quan BHXH nơi đang chi trả BHXH hàng tháng hoặc cơ quan BHXH (đối với trường hợp hưởng BHXH một lần). - Người đang hưởng BHXH hàng tháng hoặc thân nhân người hưởng BHXH hàng tháng chết đề nghị cập nhật thông tin nhân thân theo căn cước công dân: Lập hồ sơ theo quy định tại mục 14.3 (thành phần hồ sơ), nộp hồ sơ cho cơ quan BHXH nơi đang chi trả BHXH hàng tháng. 2. **Bước 2.** Cơ quan BHXH tiếp nhận hồ sơ và giải quyết theo quy định. 3. **Bước 3. Nhận kết quả giải quyết** - Đơn vị SDLĐ: Nhận hồ sơ, giấy tờ liên quan để trả cho NLĐ. - NLĐ: Nhận quyết định điều chỉnh, hủy quyết định hưởng hoặc chấm dứt hưởng; tiền truy lĩnh hoặc nộp tiền phải thu hồi (nếu có). - Người đang hưởng BHXH hàng tháng hoặc thân nhân người hưởng BHXH hàng tháng chết nhận: Xác nhận cập nhật thông tin nhân thân theo căn cước công dân (Mẫu 29-HSB).",
+          "requirements": "Không có thông tin",
+          "submission_methods": [
+            "Trực tuyến",
+            "Dịch vụ bưu chính",
+            "Trực tiếp"
+          ],
+          "processing_time_values": [
+            "12 ngày",
+            "12 ngày",
+            "12 ngày"
+          ],
+          "document_groups": [
+            {
+              "group_name": "(Trường hợp không quy định là bản chính thì có thể nộp bản sao hợp lệ. Trường hợp nộp hồ sơ trực tuyến: thành phần hồ sơ quy định là bản sao nhưng NLĐ có thể nộp bản chính điện tử).",
+              "documents": [
+                {
+                  "Tên giấy tờ": "c) Bản chính Mẫu 2-CBH ban hành kèm theo Quyết định số 686/QĐ-BHXH trong trường hợp người đang hưởng BHXH hàng tháng hoặc thân nhân người hưởng BHXH hàng tháng chết đề nghị cập nhật thông tin nhân thân theo căn cước công dân",
+                  "Bản chính": "1",
+                  "Bản sao": "0",
+                  "Tệp đính kèm": "Không có"
+                },
+                {
+                  "Tên giấy tờ": "a) Bản chính Đơn đề nghị (mẫu số 14-HSB) trong trường hợp NLĐ có yêu cầu điều chỉnh",
+                  "Bản chính": "1",
+                  "Bản sao": "0",
+                  "Tệp đính kèm": "Không có"
+                },
+                {
+                  "Tên giấy tờ": "b) Hồ sơ, giấy tờ, văn bản làm căn cứ điều chỉnh, hủy quyết định hưởng hoặc chấm dứt hưởng BHXH.",
+                  "Bản chính": "1",
+                  "Bản sao": "0",
+                  "Tệp đính kèm": "Không có"
+                }
+              ]
+            }
+          ],
+          "result_items": [
+            "Tiền truy lĩnh hoặc tiền phải nộp thu hồi (nếu có) (Mã: `KQ.G12.001240`)",
+            "Quyết định điều chỉnh, hủy quyết định hưởng hoặc chấm dứt hưởng (Các Mẫu: 6A-HSB, 6B-HSB, 6C-HSB) (Mã: `KQ.G12.001242`)",
+            "Quyết định về việc chấm dứt hưởng chế độ BHXH (Mã: `KQ.G24.000023`)",
+            "Quyết định về việc điều chỉnh chế độ BHXH (Mã: `KQ.G24.000021`)",
+            "Quyết định về việc hủy quyết định hưởng chế độ BHXH (Mã: `KQ.G24.000022`)",
+            "Xác nhận cập nhật thông tin nhân thân theo căn cước công dân (Mẫu 29-HSB) trong trường hợp NLĐ có yêu cầu (Mã: `KQ.G24.000072`)"
+          ]
+        },
+        {
+          "procedure_code": "1.001742",
+          "procedure_title": "Giải quyết chuyển hưởng sang địa bàn khác đối với người đang hưởng lương hưu, trợ cấp BHXH hàng tháng và người chờ hưởng lương hưu, trợ cấp hàng tháng",
+          "subdomain_key": "che_do_huu_tri",
+          "subdomain_label": "Chế độ hưu trí",
+          "event_id": 319,
+          "field": "Thực hiện chính sách BHXH",
+          "agency": "",
+          "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bfb-d777-72e9-84de-147abe18e3c4",
+          "raw_data_file": "C:\\Users\\ku060\\Downloads\\VAIC source\\data-pipeline\\raw_data\\1_001742\\1_001742_procedure_detail.md",
+          "raw_data_available": true,
+          "operation_group": "huong_luong_huu",
+          "operation_key": "giai_quyet_chuyen_huong_sang_dia_ban_khac_doi_voi_nguoi_dang_huong_luong_huu_tro_cap_bhxh_hang_thang_va_nguoi_cho_huong_luong_huu_tro_cap_hang_thang",
+          "overview": "1. **Bước 1. Lập, nộp hồ sơ**",
+          "procedure_flow": "1. **Bước 1. Lập, nộp hồ sơ** 1. Người đang hưởng lương hưu, trợ cấp BHXH hàng tháng: lập hồ sơ theo quy định tại mục 13.3 (Thành phần hồ sơ) và nộp cho cơ quan BHXH nơi đang chi trả lương hưu, trợ cấp hàng tháng. 2. Người đang chờ hưởng lương hưu, trợ cấp BHXH hàng tháng: lập hồ sơ theo quy định tại mục 13.3 (Thành phần hồ sơ) và nộp cho cơ quan BHXH nơi đang quản lý hồ sơ chờ. 2. **Bước 2.** Cơ quan BHXH tiếp nhận hồ sơ và giải quyết theo quy định. 3. **Bước 3. Nhận kết quả giải quyết** Người hưởng nhận Thông báo về việc chi trả lương hưu, trợ cấp BHXH hoặc nhận Thông báo về việc tiếp nhận hồ sơ chờ hưởng lương hưu/trợ cấp hàng tháng (đối với người đang chờ hưởng).",
+          "requirements": "Không có thông tin",
+          "submission_methods": [
+            "Trực tuyến",
+            "Dịch vụ bưu chính",
+            "Trực tiếp"
+          ],
+          "processing_time_values": [
+            "1 ngày",
+            "1 ngày",
+            "1 ngày"
+          ],
+          "document_groups": [],
+          "result_items": [
+            "Thông báo về việc tiếp nhận hồ sơ chờ hưởng lương hưu/trợ cấp hàng tháng (Mã: `KQ.G24.000025`)",
+            "Thông báo về việc chi trả lương hưu, trợ cấp BHXH (Mã: `KQ.G24.000024`)"
+          ]
+        },
+        {
+          "procedure_code": "1.012822",
+          "procedure_title": "Thủ tục thực hiện, điều chỉnh, thôi hưởng trợ cấp xã hội hàng tháng cho người cao tuổi từ đủ 75 tuổi đến 80 tuổi mà không có lương hưu, trợ cấp bảo hiểm xã hội hàng tháng, trợ cấp xã hội hàng tháng; Người mắc bệnh ung thư, suy thận mãn chạy thận nhân tạo có giấy chứng nhận của cơ quan y tế có thẩm quyền mà không có lương hưu, tiền lương, trợ cấp bảo hiểm xã hội hàng tháng, trợ cấp xã hội hàng tháng; Người khuyết tật nhẹ là thế hệ thứ ba của người hoạt động kháng chiến bị nhiễm chất độc hóa học",
+          "subdomain_key": "che_do_huu_tri",
+          "subdomain_label": "Chế độ hưu trí",
+          "event_id": 319,
+          "field": "Bảo trợ xã hội",
+          "agency": "Ủy ban nhân dân cấp xã",
+          "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019dbd44-83df-72cd-b0bd-c0629d51a884",
+          "raw_data_file": "C:\\Users\\ku060\\Downloads\\VAIC source\\data-pipeline\\raw_data\\1_012822\\1_012822_procedure_detail.md",
+          "raw_data_available": true,
+          "operation_group": "ho_tro_nguoi_cao_tuoi_khong_luong_huu",
+          "operation_key": "thu_tuc_thuc_hien_dieu_chinh_thoi_huong_tro_cap_xa_hoi_hang_thang_cho_nguoi_cao_tuoi_tu_du_75_tuoi_den_80_tuoi_ma_khong_co_luong_huu_tro_cap_bao_hiem_xa_hoi_hang_thang_tro_cap_xa_hoi_hang_thang_nguoi_mac_benh_ung_thu_suy_than_man_chay_than_nhan_tao_co_giay_chung_nhan_cua_co_quan_y_te_co_tham_quyen_ma_khong_co_luong_huu_tien_luong_tro_cap_bao_hiem_xa_hoi_hang_thang_tro_cap_xa_hoi_hang_thang_nguoi_khuyet_tat_nhe_la_the_he_thu_ba_cua_nguoi_hoat_dong_khang_chien_bi_nhiem_chat_doc_hoa_hoc",
+          "overview": "1. - Đối tượng, người giám hộ của đối tượng hoặc tổ chức, cá nhân có liên quan làm hồ sơ theo quy định, nộp tại Trung tâm phục vụ hành chính công cấp xã nơi cư trú. Trung tâm phục vụ hành chính công cấp xã tiếp nhận hồ sơ (yêu cầu bổ sung, hoàn thiện nếu hồ sơ chưa đầy đủ), chuyển công chức xử lý. - Trong thời hạn 07 ngày làm việc, kể từ ngày nhận đủ hồ sơ, công chức phụ trách có trách nhiệm rà soát hồ sơ, trình Chủ tịch UBND cấp xã tổ chức việc xem xét, quyết định việc xét duyệt, thực hiện việc niêm yết công khai kết quả xét duyệt tại trụ sở UBND cấp xã trong thời gian 02 ngày làm việc. Trường hợp có khiếu nại, trong thời hạn 10 ngày làm việc, kể từ ngày nhận được khiếu nại, Chủ tịch UBND cấp xã tổ chức xem xét, kết luận, công khai nội dung khiếu nại. Trường hợp đối tượng không đủ điều kiện hưởng, UBND cấp xã trả lời bằng văn bản và nêu rõ lý do. - Trong thời hạn 03 ngày làm việc, kể từ ngày hồ sơ được xét duyệt và không có khiếu nại, Chủ tịch UBND cấp xã xem xét, quyết định trợ cấp xã hội hàng tháng, hỗ trợ kinh phí chăm sóc, nuôi dưỡng hàng tháng cho đối tượng.",
+          "procedure_flow": "1. - Đối tượng, người giám hộ của đối tượng hoặc tổ chức, cá nhân có liên quan làm hồ sơ theo quy định, nộp tại Trung tâm phục vụ hành chính công cấp xã nơi cư trú. Trung tâm phục vụ hành chính công cấp xã tiếp nhận hồ sơ (yêu cầu bổ sung, hoàn thiện nếu hồ sơ chưa đầy đủ), chuyển công chức xử lý. - Trong thời hạn 07 ngày làm việc, kể từ ngày nhận đủ hồ sơ, công chức phụ trách có trách nhiệm rà soát hồ sơ, trình Chủ tịch UBND cấp xã tổ chức việc xem xét, quyết định việc xét duyệt, thực hiện việc niêm yết công khai kết quả xét duyệt tại trụ sở UBND cấp xã trong thời gian 02 ngày làm việc. Trường hợp có khiếu nại, trong thời hạn 10 ngày làm việc, kể từ ngày nhận được khiếu nại, Chủ tịch UBND cấp xã tổ chức xem xét, kết luận, công khai nội dung khiếu nại. Trường hợp đối tượng không đủ điều kiện hưởng, UBND cấp xã trả lời bằng văn bản và nêu rõ lý do. - Trong thời hạn 03 ngày làm việc, kể từ ngày hồ sơ được xét duyệt và không có khiếu nại, Chủ tịch UBND cấp xã xem xét, quyết định trợ cấp xã hội hàng tháng, hỗ trợ kinh phí chăm sóc, nuôi dưỡng hàng tháng cho đối tượng.",
+          "requirements": "Không có thông tin",
+          "submission_methods": [
+            "Trực tiếp",
+            "Trực tuyến",
+            "Dịch vụ bưu chính"
+          ],
+          "processing_time_values": [
+            "10 ngày làm việc",
+            "10 ngày làm việc",
+            "10 ngày làm việc"
+          ],
+          "document_groups": [
+            {
+              "group_name": "- Đối với chính sách hỗ trợ cho người cao tuổi từ đủ 75 tuổi đến 80 tuổi mà không có lương hưu, trợ cấp bảo hiểm xã hội hàng tháng, trợ cấp xã hội hàng tháng.",
+              "documents": [
+                {
+                  "Tên giấy tờ": "+ Tờ khai đề nghị trợ giúp xã hội (Mẫu TGXH-01).",
+                  "Bản chính": "1",
+                  "Bản sao": "0",
+                  "Tệp đính kèm": "[Mau TGXH-01.doc](file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/1_012822/Mau%20TGXH-01.doc)"
+                }
+              ]
+            },
+            {
+              "group_name": "- Đối với chính sách hỗ trợ cho người mắc bệnh ung thư, suy thận mãn chạy thận nhân tạo có giấy chứng nhận của cơ quan y tế có thẩm quyền mà không có lương hưu, tiền lương, trợ cấp bảo hiểm xã hội hàng tháng, trợ cấp xã hội hàng tháng.",
+              "documents": [
+                {
+                  "Tên giấy tờ": "+ Tờ khai đề nghị trợ giúp xã hội (Mẫu TGXH-02);",
+                  "Bản chính": "1",
+                  "Bản sao": "0",
+                  "Tệp đính kèm": "[Mau TGXH-02.doc](file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/1_012822/Mau%20TGXH-02.doc)"
+                },
+                {
+                  "Tên giấy tờ": "+ Giấy chứng nhận/xác nhận của cơ quan y tế có thẩm quyền được cấp trong thời gian 03 tháng trước khi nộp hồ sơ (Mẫu GXN).",
+                  "Bản chính": "1",
+                  "Bản sao": "0",
+                  "Tệp đính kèm": "[Mau GXN.doc](file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/1_012822/Mau%20GXN.doc)"
+                }
+              ]
+            },
+            {
+              "group_name": "- Đối với chính sách hỗ trợ cho người khuyết tật nhẹ (được Hội đồng xác định mức độ khuyết tật cấp xã công nhận theo Thông tư số 01/2019/TT-BLĐTBXH ngày 02/01/2019 của Bộ LĐ-TB&XH) là thế hệ thứ ba của người hoạt động kháng chiến bị nhiễm chất độc hóa học.",
+              "documents": [
+                {
+                  "Tên giấy tờ": "+ Tờ khai đề nghị trợ giúp xã hội (Mẫu TGXH-03);",
+                  "Bản chính": "1",
+                  "Bản sao": "1",
+                  "Tệp đính kèm": "[Mau TGXH-03.doc](file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/1_012822/Mau%20TGXH-03.doc)"
+                },
+                {
+                  "Tên giấy tờ": "+ Bản sao giấy xác nhận mức độ khuyết tật nhẹ;",
+                  "Bản chính": "0",
+                  "Bản sao": "1",
+                  "Tệp đính kèm": "Không có"
+                },
+                {
+                  "Tên giấy tờ": "+ Bản sao Giấy chứng nhận/Quyết định hưởng trợ cấp ưu đãi đối với người hoạt động kháng chiến bị nhiễm chất độc hóa học;",
+                  "Bản chính": "0",
+                  "Bản sao": "1",
+                  "Tệp đính kèm": "Không có"
+                },
+                {
+                  "Tên giấy tờ": "+ Bản sao được chứng thực từ giấy khai sinh, trích lục khai sinh của thế hệ thứ hai với người hoạt động kháng chiến bị nhiễm chất độc hóa học.",
+                  "Bản chính": "0",
+                  "Bản sao": "1",
+                  "Tệp đính kèm": "Không có"
+                }
+              ]
+            },
+            {
+              "group_name": "* Khi nộp hồ sơ cần xuất trình các giấy tờ sau để công chức tiếp nhận đối chiếu các thông tin trong tờ khai:",
+              "documents": [
+                {
+                  "Tên giấy tờ": "- Về thông tin nơi cư trú: Công chức tiếp nhận hồ sơ chịu trách nhiệm khai thác, sử dụng thông tin về nơi cư trú của công dân từ Cơ sở dữ liệu quốc gia về dân cư để giải quyết thủ tục hành chính. Trong trường hợp không thể khai thác thông tin nơi cư trú của công dân theo Khoản 2 Điều 14 Nghị định số 104/2022/NĐ-CP ngày 21/12/2022 của Chính phủ, có thể yêu cầu công dân nộp bản sao hoặc xuất trình Giấy xác nhận thông tin về cư trú.",
+                  "Bản chính": "0",
+                  "Bản sao": "1",
+                  "Tệp đính kèm": "Không có"
+                }
+              ]
+            },
+            {
+              "group_name": "* Đối với thủ tục điều chỉnh, thôi hưởng trợ cấp xã hội hàng tháng:",
+              "documents": [
+                {
+                  "Tên giấy tờ": "- Văn bản đề nghị điều chỉnh hoặc thôi hưởng trợ cấp xã hội hàng tháng của đối tượng, người giám hộ của đối tượng hoặc tổ chức, cá nhân liên quan có kiến nghị về việc đối tượng không còn đủ điều kiện hưởng hoặc thay đổi điều kiện hưởng.",
+                  "Bản chính": "1",
+                  "Bản sao": "0",
+                  "Tệp đính kèm": "Không có"
+                }
+              ]
+            }
+          ],
+          "result_items": [
+            "Quyết định trợ cấp xã hội hàng tháng; Quyết định điều chỉnh hoặc quyết định thôi hưởng hoặc văn bản trả lời (Mã: `KQ.H17.000125`)"
+          ]
+        },
+        {
+          "procedure_code": "1.013140",
+          "procedure_title": "Thủ tục giải quyết chế độ hưu trí đối với quân nhân trực tiếp tham gia kháng chiến chống Mỹ cứu nước từ ngày 30/4/1975 trở về trước có 20 năm trở lên phục vụ quân đội đã phục viên, xuất ngũ",
+          "subdomain_key": "che_do_huu_tri",
+          "subdomain_label": "Chế độ hưu trí",
+          "event_id": 319,
+          "field": "Chính sách BQP",
+          "agency": "Ban chỉ huy quân sự cấp Xã",
+          "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bfb-8925-7679-80a7-bb91ac850da9",
+          "raw_data_file": "C:\\Users\\ku060\\Downloads\\VAIC source\\data-pipeline\\raw_data\\1_013140\\1_013140_procedure_detail.md",
+          "raw_data_available": true,
+          "operation_group": "huu_tri_quan_nhan",
+          "operation_key": "thu_tuc_giai_quyet_che_do_huu_tri_doi_voi_quan_nhan_truc_tiep_tham_gia_khang_chien_chong_my_cuu_nuoc_tu_ngay_30_4_1975_tro_ve_truoc_co_20_nam_tro_len_phuc_vu_quan_doi_da_phuc_vien_xuat_ngu",
+          "overview": "1. Bước 1. Đối tượng nộp các giấy tờ theo quy định cho Ban Chỉ huy quân sự xã. Bước 2. Trong thời hạn không quá 3 ngày làm việc, kể từ khi nhận đủ hồ sơ theo quy định, Ban Chỉ huy quân sự xã hoàn thành việc tổng hợp, lập hồ sơ báo cáo Bộ Chỉ huy quân sự tỉnh hoặc Cục Chính trị/Bộ Tư lệnh Thủ đô Hà Nội. Bước 3. Trong thời hạn không quá 5 ngày làm việc, kể từ khi nhận đủ hồ sơ theo quy định do Ban Chỉ huy quân sự xã báo cáo, Bộ Chỉ huy quân sự tỉnh hoặc Cục Chính trị/Bộ Tư lệnh Thủ đô Hà Nội hoàn thành việc xét duyệt, hoàn thiện hồ sơ báo cáo Bộ Tư lệnh Quân khu (qua Cục Chính trị), Bộ Tư lệnh Thủ đô Hà Nội. Bước 4. Trong thời hạn không quá 5 ngày làm việc, kể từ khi nhận đủ hồ sơ hợp lệ của Bộ Chỉ huy quân sự tỉnh, Cục Chính trị Quân khu hoàn thành việc thẩm định, hoàn thiện hồ sơ, báo cáo Thủ trưởng Bộ Tư lệnh Quân khu đề nghị Bảo hiểm xã hội Quân đội xem xét, ra quyết định hưởng chế độ cho các đối tượng theo quy định. Đối với Bộ Tư lệnh Thủ đô Hà Nội, trong thời hạn không quá 05 ngày làm việc, Cục Chính trị hoàn thiện hồ sơ, báo cáo Thủ trưởng Bộ Tư lệnh đề nghị Bảo hiểm xã hội Quân đội xem xét, ra quyết định hưởng chế độ cho các đối tượng theo quy định. Bước 5. Trong thời hạn 30 ngày, kể từ ngày nhận đủ hồ sơ theo quy định của Bộ Tư lệnh Quân khu Bộ Tư lệnh Thủ đô Hà Nội chuyển đến Bảo hiểm xã hội Quân đội xét duyệt, ra quyết định hưởng chế độ hưu trí.",
+          "procedure_flow": "1. Bước 1. Đối tượng nộp các giấy tờ theo quy định cho Ban Chỉ huy quân sự xã. Bước 2. Trong thời hạn không quá 3 ngày làm việc, kể từ khi nhận đủ hồ sơ theo quy định, Ban Chỉ huy quân sự xã hoàn thành việc tổng hợp, lập hồ sơ báo cáo Bộ Chỉ huy quân sự tỉnh hoặc Cục Chính trị/Bộ Tư lệnh Thủ đô Hà Nội. Bước 3. Trong thời hạn không quá 5 ngày làm việc, kể từ khi nhận đủ hồ sơ theo quy định do Ban Chỉ huy quân sự xã báo cáo, Bộ Chỉ huy quân sự tỉnh hoặc Cục Chính trị/Bộ Tư lệnh Thủ đô Hà Nội hoàn thành việc xét duyệt, hoàn thiện hồ sơ báo cáo Bộ Tư lệnh Quân khu (qua Cục Chính trị), Bộ Tư lệnh Thủ đô Hà Nội. Bước 4. Trong thời hạn không quá 5 ngày làm việc, kể từ khi nhận đủ hồ sơ hợp lệ của Bộ Chỉ huy quân sự tỉnh, Cục Chính trị Quân khu hoàn thành việc thẩm định, hoàn thiện hồ sơ, báo cáo Thủ trưởng Bộ Tư lệnh Quân khu đề nghị Bảo hiểm xã hội Quân đội xem xét, ra quyết định hưởng chế độ cho các đối tượng theo quy định. Đối với Bộ Tư lệnh Thủ đô Hà Nội, trong thời hạn không quá 05 ngày làm việc, Cục Chính trị hoàn thiện hồ sơ, báo cáo Thủ trưởng Bộ Tư lệnh đề nghị Bảo hiểm xã hội Quân đội xem xét, ra quyết định hưởng chế độ cho các đối tượng theo quy định. Bước 5. Trong thời hạn 30 ngày, kể từ ngày nhận đủ hồ sơ theo quy định của Bộ Tư lệnh Quân khu Bộ Tư lệnh Thủ đô Hà Nội chuyển đến Bảo hiểm xã hội Quân đội xét duyệt, ra quyết định hưởng chế độ hưu trí.",
+          "requirements": "- Đối tượng áp dụng Quân nhân nhập ngũ từ ngày 30/4/1975 trở về trước có 20 năm trở lên phục vụ Quân đội, hiện không thuộc diện đang được hưởng chế độ hưu trí, chế độ mất sức lao động, chế độ bệnh binh hàng tháng, thuộc một trong các trường hợp sau đây: + Đã phục viên, xuất ngũ trước ngày 01/4/2000; + Thương binh bị suy giảm khả năng lao động 81% trở lên đang điều trị tại các trung tâm điều dưỡng thương binh hoặc từ trung tâm điều dưỡng thương binh đã về gia đình trước ngày 01/4/2000; + Quân nhân chuyển ngành hoặc chuyển sang công nhân viên chức quốc phòng rồi thôi việc trước ngày 01/01/1995; đã có quyết định chuyển ngành trước ngày 01/4/2000 nhưng không thực hiện được hoặc quân nhân đã về địa phương mà chưa giải quyết chế độ phục viên, xuất ngũ; + Quân nhân phục viên, xuất ngũ đi lao động hợp tác quốc tế hoặc được cử đi lao động hợp tác quốc tế về nước đã phục viên, xuất ngũ trước ngày 01/4/2000. - Đối tượng không áp dụng + Đối tượng đào ngũ, đầu hàng, phản bội, chiêu hồi; + Vi phạm pháp luật đang chấp hành án tù chung thân; đang thi hành án tù giam; bị kết án về một trong các tội về xâm phạm an ninh quốc gia mà chưa được xóa án tích; + Xuất cảnh trái phép hoặc đang bị tòa án tuyên bố là mất tích.",
+          "submission_methods": [
+            "Trực tiếp"
+          ],
+          "processing_time_values": [
+            "43 ngày làm việc"
+          ],
+          "document_groups": [],
+          "result_items": [
+            "Quyết định hưởng chế độ hưu trí (Mã: `KQ.G11.000028`)"
+          ]
+        },
+        {
+          "procedure_code": "1.013142",
+          "procedure_title": "Thủ tục giải quyết chế độ hưu trí đối với quân nhân, người làm công tác cơ yếu, nhập ngũ sau ngày 30/4/1975, trực tiếp tham gia chiến tranh bảo vệ Tổ quốc và làm nhiệm vụ quốc tế, có từ đủ 20 năm trở lên phục vụ trong quân đội, cơ yếu đã phục viên, xuất ngũ, thôi việc",
+          "subdomain_key": "che_do_huu_tri",
+          "subdomain_label": "Chế độ hưu trí",
+          "event_id": 319,
+          "field": "Chính sách BQP",
+          "agency": "Ủy ban nhân dân cấp xã",
+          "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bfb-8931-743b-bee8-21eae0316487",
+          "raw_data_file": "C:\\Users\\ku060\\Downloads\\VAIC source\\data-pipeline\\raw_data\\1_013142\\1_013142_procedure_detail.md",
+          "raw_data_available": true,
+          "operation_group": "huu_tri_quan_nhan",
+          "operation_key": "thu_tuc_giai_quyet_che_do_huu_tri_doi_voi_quan_nhan_nguoi_lam_cong_tac_co_yeu_nhap_ngu_sau_ngay_30_4_1975_truc_tiep_tham_gia_chien_tranh_bao_ve_to_quoc_va_lam_nhiem_vu_quoc_te_co_tu_du_20_nam_tro_len_phuc_vu_trong_quan_doi_co_yeu_da_phuc_vien_xuat_ngu_thoi_viec",
+          "overview": "1. Bước 1. Đối tượng trực tiếp nộp hồ sơ theo quy định cho Ủy ban nhân dân cấp xã nơi thường trú theo từng đợt (mỗi đợt vào ngày đầu tuần trong tuần đầu, tháng đầu của mỗi quý). Bước 2. Ủy ban nhân dân cấp xã tổng hợp, lập hồ sơ báo cáo Bộ Chỉ huy quân sự cấp tỉnh. Bước 3. Bộ Chỉ huy quân sự cấp tỉnh hoàn thành việc xét duyệt, báo cáo Bộ Tư lệnh Quân khu; Bộ Tư lệnh Thủ đô Hà Nội tiếp nhận hồ sơ do Ủy ban nhân dân cấp xã báo cáo (qua Cục Chính trị); Bước 4. Bộ Tư lệnh Quân khu, Bộ Tư lệnh Thủ đô Hà Nội hoàn thành việc thẩm định, hoàn thiện hồ sơ chuyển Bảo hiểm xã hội Quân đội; Bước 5. Bảo hiểm xã hội Quân đội tiến hành xét duyệt, ra quyết định hưởng chế độ hưu trí hàng tháng cho các đối tượng, chuyển hồ sơ đến Bảo hiểm xã hội Việt Nam và các cơ quan, đơn vị, đối tượng theo quy định.",
+          "procedure_flow": "1. Bước 1. Đối tượng trực tiếp nộp hồ sơ theo quy định cho Ủy ban nhân dân cấp xã nơi thường trú theo từng đợt (mỗi đợt vào ngày đầu tuần trong tuần đầu, tháng đầu của mỗi quý). Bước 2. Ủy ban nhân dân cấp xã tổng hợp, lập hồ sơ báo cáo Bộ Chỉ huy quân sự cấp tỉnh. Bước 3. Bộ Chỉ huy quân sự cấp tỉnh hoàn thành việc xét duyệt, báo cáo Bộ Tư lệnh Quân khu; Bộ Tư lệnh Thủ đô Hà Nội tiếp nhận hồ sơ do Ủy ban nhân dân cấp xã báo cáo (qua Cục Chính trị); Bước 4. Bộ Tư lệnh Quân khu, Bộ Tư lệnh Thủ đô Hà Nội hoàn thành việc thẩm định, hoàn thiện hồ sơ chuyển Bảo hiểm xã hội Quân đội; Bước 5. Bảo hiểm xã hội Quân đội tiến hành xét duyệt, ra quyết định hưởng chế độ hưu trí hàng tháng cho các đối tượng, chuyển hồ sơ đến Bảo hiểm xã hội Việt Nam và các cơ quan, đơn vị, đối tượng theo quy định.",
+          "requirements": "- Quân nhân, người làm công tác cơ yếu nhập ngũ, tuyển dụng sau ngày 30/4/1975, trực tiếp tham gia chiến tranh bảo vệ Tổ quốc và làm nhiệm vụ quốc tế, có từ đủ 20 năm trở lên công tác trong quân đội, cơ yếu đã phục viên, xuất ngũ, thôi việc. - Không thuộc diện đang hưởng chế độ hưu trí, mất sức lao động, bệnh binh hàng tháng. - Không thuộc các trường hợp sau: Đào ngũ, đầu hàng, phản bội, chiêu hồi; vi phạm pháp luật hiện đang thi hành án tù giam, tù chung thân hoặc đã bị kết án về một trong các tội xâm phạm an ninh quốc gia mà chưa được xoá án tích; bị tước danh hiệu quân nhân, bị buộc thôi việc; xuất cảnh trái phép, định cư ở nước ngoài bất hợp pháp hoặc bị tòa án tuyên là mất tích.",
+          "submission_methods": [
+            "Trực tiếp"
+          ],
+          "processing_time_values": [
+            "54 ngày làm việc"
+          ],
+          "document_groups": [],
+          "result_items": [
+            "Quyết định hưởng chế độ hưu trí (Mã: `KQ.G11.000028`)"
+          ]
+        },
+        {
+          "procedure_code": "1.014027",
+          "procedure_title": "Thực hiện, điều chỉnh, thôi hưởng trợ cấp hưu trí xã hội",
+          "subdomain_key": "che_do_huu_tri",
+          "subdomain_label": "Chế độ hưu trí",
+          "event_id": 319,
+          "field": "Bảo trợ xã hội",
+          "agency": "Ủy ban nhân dân cấp xã",
+          "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bff-2d80-74d8-8515-90f6f61822f0",
+          "raw_data_file": "C:\\Users\\ku060\\Downloads\\VAIC source\\data-pipeline\\raw_data\\1_014027\\1_014027_procedure_detail.md",
+          "raw_data_available": true,
+          "operation_group": "che_do_huu_tri_khac",
+          "operation_key": "thuc_hien_dieu_chinh_thoi_huong_tro_cap_huu_tri_xa_hoi",
+          "overview": "1. - Bước 1: Người đề nghị trợ cấp hưu trí xã hội có văn bản đề nghị hưởng trợ cấp hưu trí xã hội, đề nghị nhận trợ cấp hưu trí xã hội tại nơi cư trú mới, đề nghị thay đổi thông tin người đang hưởng trợ cấp hưu trí xã hội theo Mẫu số 01 ban hành kèm theo Nghị định số 176/2025/NĐ-CP ngày 30/6/2025 của Chính phủ quy định chi tiết và hướng dẫn thi hành một số điều của Luật Bảo hiểm xã hội về trợ cấp hưu trí xã hội (sau đây gọi tắt là Nghị định số 176/2025/NĐ-CP) gửi Ủy ban nhân dân xã, phường, đặc khu trực thuộc tỉnh, thành phố nơi cư trú (sau đây gọi chung là Ủy ban nhân dân cấp xã). - Bước 2: Trong thời hạn 10 ngày làm việc, kể từ ngày nhận được văn bản đề nghị hưởng trợ cấp hưu trí xã hội, Chủ tịch Ủy ban nhân dân cấp xã tổ chức xem xét, thực hiện xác thực và chuẩn hoá thông tin liên quan của người đề nghị trợ cấp hưu trí xã hội với cơ sở dữ liệu quốc gia về dân cư, quyết định và thực hiện chi trả trợ cấp hưu trí xã hội cho người đề nghị theo quy định pháp luật. Thời gian hưởng chế độ trợ cấp hưu trí xã hội hằng tháng tính từ tháng Chủ tịch Ủy ban nhân dân cấp xã ký quyết định; Trường hợp người đề nghị không đủ điều kiện hưởng trợ cấp hưu trí xã hội thì Chủ tịch Ủy ban nhân dân cấp xã trả lời bằng văn bản, nêu rõ lý do. + Trường hợp đối tượng đang hưởng trợ cấp hưu trí xã hội thay đổi nơi cư trú đề nghị được nhận chế độ trợ cấp hưu trí xã hội ở nơi cư trú mới (theo Mẫu số 01 ban hành kèm theo Nghị định này), Chủ tịch Ủy ban nhân dân cấp xã nơi cư trú cũ quyết định thôi chi trả trợ cấp hưu trí xã hội tại địa bàn và có văn bản gửi kèm theo giấy tờ có liên quan của người đề nghị đến Chủ tịch Ủy ban nhân dân cấp xã nơi cư trú mới của người đề nghị. Chủ tịch Ủy ban nhân dân cấp xã nơi cư trú mới căn cứ giấy tờ liên quan của người đề nghị, xem xét quyết định tiếp tục trợ cấp hưu trí xã hội và thực hiện chi trả trợ cấp hưu trí xã hội từ tháng thôi chi trả tại nơi cư trú cũ. + Trường hợp đối tượng đang hưởng trợ cấp hưu trí xã hội bị chết hoặc không còn đủ điều kiện hưởng trợ cấp hưu trí xã hội theo quy định tại Điều 2 Nghị định số 176/2025/NĐ-CP, Chủ tịch Ủy ban nhân dân cấp xã quyết định thôi hưởng trợ cấp hưu trí xã hội. Thời gian thôi hưởng trợ cấp hưu trí xã hội từ tháng sau liền kề tháng đối tượng chết hoặc không đủ điều kiện hưởng trợ cấp hưu trí xã hội.",
+          "procedure_flow": "1. - Bước 1: Người đề nghị trợ cấp hưu trí xã hội có văn bản đề nghị hưởng trợ cấp hưu trí xã hội, đề nghị nhận trợ cấp hưu trí xã hội tại nơi cư trú mới, đề nghị thay đổi thông tin người đang hưởng trợ cấp hưu trí xã hội theo Mẫu số 01 ban hành kèm theo Nghị định số 176/2025/NĐ-CP ngày 30/6/2025 của Chính phủ quy định chi tiết và hướng dẫn thi hành một số điều của Luật Bảo hiểm xã hội về trợ cấp hưu trí xã hội (sau đây gọi tắt là Nghị định số 176/2025/NĐ-CP) gửi Ủy ban nhân dân xã, phường, đặc khu trực thuộc tỉnh, thành phố nơi cư trú (sau đây gọi chung là Ủy ban nhân dân cấp xã). - Bước 2: Trong thời hạn 10 ngày làm việc, kể từ ngày nhận được văn bản đề nghị hưởng trợ cấp hưu trí xã hội, Chủ tịch Ủy ban nhân dân cấp xã tổ chức xem xét, thực hiện xác thực và chuẩn hoá thông tin liên quan của người đề nghị trợ cấp hưu trí xã hội với cơ sở dữ liệu quốc gia về dân cư, quyết định và thực hiện chi trả trợ cấp hưu trí xã hội cho người đề nghị theo quy định pháp luật. Thời gian hưởng chế độ trợ cấp hưu trí xã hội hằng tháng tính từ tháng Chủ tịch Ủy ban nhân dân cấp xã ký quyết định; Trường hợp người đề nghị không đủ điều kiện hưởng trợ cấp hưu trí xã hội thì Chủ tịch Ủy ban nhân dân cấp xã trả lời bằng văn bản, nêu rõ lý do. + Trường hợp đối tượng đang hưởng trợ cấp hưu trí xã hội thay đổi nơi cư trú đề nghị được nhận chế độ trợ cấp hưu trí xã hội ở nơi cư trú mới (theo Mẫu số 01 ban hành kèm theo Nghị định này), Chủ tịch Ủy ban nhân dân cấp xã nơi cư trú cũ quyết định thôi chi trả trợ cấp hưu trí xã hội tại địa bàn và có văn bản gửi kèm theo giấy tờ có liên quan của người đề nghị đến Chủ tịch Ủy ban nhân dân cấp xã nơi cư trú mới của người đề nghị. Chủ tịch Ủy ban nhân dân cấp xã nơi cư trú mới căn cứ giấy tờ liên quan của người đề nghị, xem xét quyết định tiếp tục trợ cấp hưu trí xã hội và thực hiện chi trả trợ cấp hưu trí xã hội từ tháng thôi chi trả tại nơi cư trú cũ. + Trường hợp đối tượng đang hưởng trợ cấp hưu trí xã hội bị chết hoặc không còn đủ điều kiện hưởng trợ cấp hưu trí xã hội theo quy định tại Điều 2 Nghị định số 176/2025/NĐ-CP, Chủ tịch Ủy ban nhân dân cấp xã quyết định thôi hưởng trợ cấp hưu trí xã hội. Thời gian thôi hưởng trợ cấp hưu trí xã hội từ tháng sau liền kề tháng đối tượng chết hoặc không đủ điều kiện hưởng trợ cấp hưu trí xã hội.",
+          "requirements": "- Công dân Việt Nam được hưởng trợ cấp hưu trí xã hội khi có đủ các điều kiện sau đây: + Từ đủ 75 tuổi trở lên; + Không hưởng lương hưu hoặc trợ cấp bảo hiểm xã hội hằng tháng; hoặc đang hưởng lương hưu hoặc trợ cấp bảo hiểm xã hội hằng tháng thấp hơn mức trợ cấp hưu trí quy định tại Nghị định số 176/2025/NĐ-CP; + Có văn bản đề nghị hưởng trợ cấp hưu trí xã hội. - Công dân Việt Nam từ đủ 70 tuổi đến dưới 75 tuổi thuộc hộ nghèo, hộ cận nghèo theo quy định của Chính phủ; không hưởng lương hưu hoặc trợ cấp bảo hiểm xã hội hằng tháng; hoặc đang hưởng lương hưu hoặc trợ cấp bảo hiểm xã hội hằng tháng thấp hơn mức trợ cấp hưu trí quy định tại Nghị định số 176/2025/NĐ-CP; có văn bản đề nghị hưởng trợ cấp hưu trí xã hội.",
+          "submission_methods": [
+            "Trực tuyến",
+            "Dịch vụ bưu chính",
+            "Trực tiếp"
+          ],
+          "processing_time_values": [
+            "10 ngày làm việc",
+            "10 ngày làm việc",
+            "10 ngày làm việc"
+          ],
+          "document_groups": [],
+          "result_items": [
+            "Quyết định trợ cấp hưu trí xã hội (BYT) (Mã: `KQ.G18.000316`)",
+            "Quyết định điều chỉnh trợ cấp hưu trí xã hội (BYT) (Mã: `KQ.G18.000317`)",
+            "Quyết định thôi hưởng trợ cấp hưu trí xã hội (BYT) (Mã: `KQ.G18.000318`)"
+          ]
+        },
+        {
+          "procedure_code": "1.014171",
+          "procedure_title": "HƯỞNG LƯƠNG HƯU ĐỐI VỚI NGƯỜI THAM GIA BẢO HIỂM XÃ HỘI BẮT BUỘC",
+          "subdomain_key": "che_do_huu_tri",
+          "subdomain_label": "Chế độ hưu trí",
+          "event_id": 319,
+          "field": "Bảo hiểm xã hội",
+          "agency": "Bảo hiểm xã hội tỉnh",
+          "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bfb-235f-71ec-90c8-e12fd9c20cba",
+          "raw_data_file": "C:\\Users\\ku060\\Downloads\\VAIC source\\data-pipeline\\raw_data\\1_014171\\1_014171_procedure_detail.md",
+          "raw_data_available": true,
+          "operation_group": "huong_luong_huu",
+          "operation_key": "huong_luong_huu_doi_voi_nguoi_tham_gia_bao_hiem_xa_hoi_bat_buoc",
+          "overview": "1. Bước 1: - Trong thời hạn 20 ngày trước thời điểm người lao động đủ điều kiện hưởng lương hưu, người sử dụng lao động nộp hồ sơ cho cơ quan bảo hiểm xã hội. - Trường hợp người đang bảo lưu thời gian đóng bảo hiểm xã hội bắt buộc: Trong thời hạn 20 ngày trước thời điểm đủ điều kiện hưởng lương hưu, người đang bảo lưu thời gian đóng bảo hiểm xã hội bắt buộc nộp hồ sơ cho cơ quan bảo hiểm xã hội. Bước 2: Trong thời hạn 20 ngày, không bao gồm ngày nghỉ lễ, tết, kể từ ngày nhận đủ hồ sơ theo quy định đối với người đề nghị hưởng lương hưu, cơ quan bảo hiểm xã hội có trách nhiệm giải quyết. Trường hợp không giải quyết thì phải trả lời bằng văn bản và nêu rõ lý do.",
+          "procedure_flow": "1. Bước 1: - Trong thời hạn 20 ngày trước thời điểm người lao động đủ điều kiện hưởng lương hưu, người sử dụng lao động nộp hồ sơ cho cơ quan bảo hiểm xã hội. - Trường hợp người đang bảo lưu thời gian đóng bảo hiểm xã hội bắt buộc: Trong thời hạn 20 ngày trước thời điểm đủ điều kiện hưởng lương hưu, người đang bảo lưu thời gian đóng bảo hiểm xã hội bắt buộc nộp hồ sơ cho cơ quan bảo hiểm xã hội. Bước 2: Trong thời hạn 20 ngày, không bao gồm ngày nghỉ lễ, tết, kể từ ngày nhận đủ hồ sơ theo quy định đối với người đề nghị hưởng lương hưu, cơ quan bảo hiểm xã hội có trách nhiệm giải quyết. Trường hợp không giải quyết thì phải trả lời bằng văn bản và nêu rõ lý do.",
+          "requirements": "- Người lao động nghỉ việc có thời gian đóng bảo hiểm xã hội bắt buộc từ đủ 15 năm trở lên thuộc một trong các trường hợp sau đây: + Đủ tuổi nghỉ hưu theo quy định tại khoản 2 Điều 169 của Bộ luật Lao động; + Đủ tuổi nghỉ hưu theo quy định tại khoản 3 Điều 169 của Bộ luật Lao động và có tổng thời gian đóng bảo hiểm xã hội bắt buộc từ đủ 15 năm trở lên khi làm nghề, công việc nặng nhọc, độc hại, nguy hiểm hoặc đặc biệt nặng nhọc, độc hại, nguy hiểm thuộc danh mục nghề, công việc nặng nhọc, độc hại, nguy hiểm hoặc đặc biệt nặng nhọc, độc hại, nguy hiểm do Bộ trưởng Bộ Lao động - Thương binh và Xã hội ban hành hoặc làm việc ở vùng có điều kiện kinh tế - xã hội đặc biệt khó khăn bao gồm cả thời gian làm việc ở nơi có phụ cấp khu vực hệ số 0,7 trở lên trước ngày 01 tháng 01 năm 2021; + Người lao động có tuổi thấp hơn tối đa 10 tuổi so với tuổi quy định tại khoản 2 Điều 169 của Bộ luật Lao động và có từ đủ 15 năm trở lên làm công việc khai thác than trong hầm lò theo quy định của Chính phủ; + Người bị nhiễm HIV/AIDS do tai nạn rủi ro nghề nghiệp trong khi thực hiện nhiệm vụ được giao. - Người lao động khi nghỉ việc có thời gian đóng bảo hiểm xã hội bắt buộc từ đủ 20 năm trở lên thì được hưởng lương hưu với mức thấp hơn so với người đủ điều kiện hưởng lương hưu nếu thuộc một trong các trường hợp sau đây: + Có tuổi thấp hơn tối đa 05 tuổi so với tuổi quy định tại khoản 2 Điều 169 Bộ luật Lao động và bị suy giảm khả năng lao động từ 61% đến dưới 81%; + Có tuổi thấp hơn tối đa 10 tuổi so với tuổi quy định ại khoản 2 Điều 169 Bộ luật Lao động và bị suy giảm khả năng lao động từ 81% trở lên; + Có từ đủ 15 năm trở lên làm nghề, công việc đặc biệt nặng nhọc, độc hại, nguy hiểm thuộc danh mục nghề, công việc đặc biệt nặng nhọc, độc hại, nguy hiểm do Bộ trưởng Bộ Lao động - Thương binh và Xã hội (từ ngày 01/3/2025 là Bộ trưởng Bộ Nội vụ) ban hành và bị suy giảm khả năng lao động từ 61% trở lên. - Người lao động có từ đủ 15 năm đóng bảo hiểm xã hội trở lên và có văn bản của cơ quan bảo hiểm xã hội xác nhận về việc chờ đủ điều kiện về tuổi đời để hưởng lương hưu được quy định tại Nghị định số 12/CP ngày 26 tháng 01 năm 1995 được sửa đổi, bổ sung một số điều theo Nghị định số 01/2003/NĐ-CP ngày 09 tháng 01 năm 2003 của Chính phủ thì được hưởng lương hưu khi nam đủ 60 tuổi, nữ đủ 55 tuổi. - Cán bộ xã thuộc đối tượng điều chỉnh của Nghị định số 09/1998/NĐ-CP đã có quyết định hoặc giấy chứng nhận chờ đủ điều kiện về tuổi đời để hưởng trợ cấp hằng tháng của cơ quan bảo hiểm xã hội thì được hưởng trợ cấp hằng tháng khi nam đủ 55 tuổi, nữ đủ 50 tuổi. - Người vừa có thời gian đóng bảo hiểm xã hội tự nguyện vừa có thời gian đóng bảo hiểm xã hội bắt buộc mà tham gia bảo hiểm xã hội tự nguyện trước ngày 01 tháng 01 năm 2021 và đủ 20 năm đóng bảo hiểm xã hội tự nguyện trở lên thì điều kiện về tuổi hưởng lương hưu là đủ 60 tuổi đối với nam, đủ 55 tuổi đối với nữ.",
+          "submission_methods": [
+            "Trực tuyến",
+            "Dịch vụ bưu chính",
+            "Trực tiếp"
+          ],
+          "processing_time_values": [
+            "20 ngày",
+            "20 ngày",
+            "20 ngày"
+          ],
+          "document_groups": [
+            {
+              "group_name": "- Đối với người bị nhiễm HIV/AIDS do tai nạn rủi ro nghề nghiệp trong khi thực hiện nhiệm vụ được giao",
+              "documents": [
+                {
+                  "Tên giấy tờ": "+ Bản chính hoặc bản sao văn bản xác định việc chấm dứt hợp đồng lao động hoặc văn bản chấm dứt làm việc hoặc văn bản đề nghị của đối tượng:  (i) Người lao động đi làm việc ở nước ngoài theo hợp đồng quy định tại Luật Người lao động Việt Nam đi làm việc ở nước ngoài theo hợp đồng, trừ trường hợp điều ước quốc tế mà nước Cộng hòa xã hội chủ nghĩa Việt Nam là thành viên có quy định khác.  (ii) Vợ hoặc chồng không hưởng lương từ ngân sách nhà nước được cử đi công tác nhiệm kỳ cùng thành viên cơ quan đại diện nước Cộng hòa xã hội chủ nghĩa Việt Nam ở nước ngoài được hưởng chế độ sinh hoạt phí. (iii) Chủ hộ kinh doanh của hộ kinh doanh có đăng ký kinh doanh nộp thuế theo phương pháp kê khai. (iv) Người quản lý doanh nghiệp, kiểm soát viên, người đại diện phần vốn nhà nước, người đại diện phần vốn của doanh nghiệp theo quy định của pháp luật; thành viên Hội đồng quản trị, Tổng giám đốc, Giám đốc, thành viên Ban kiểm soát hoặc kiểm soát viên và các chức danh quản lý khác được bầu của hợp tác xã, liên hiệp hợp tác xã theo quy định của Luật Hợp tác xã không hưởng tiền lương.- Bản sao giấy chứng nhận bị nhiễm HIV do tai nạn rủi ro nghề nghiệp",
+                  "Bản chính": "1",
+                  "Bản sao": "1",
+                  "Tệp đính kèm": "Không có"
+                },
+                {
+                  "Tên giấy tờ": "Sổ bảo hiểm xã hội .",
+                  "Bản chính": "1",
+                  "Bản sao": "0",
+                  "Tệp đính kèm": "Không có"
+                }
+              ]
+            },
+            {
+              "group_name": "- Đối với người lao động bị suy giảm khả năng lao động:",
+              "documents": [
+                {
+                  "Tên giấy tờ": "+ Biên bản giám định mức suy giảm khả năng lao động của Hội đồng giám định y khoa hoặc bản sao giấy xác nhận mức độ khuyết tật nặng, đặc biệt nặng có thể hiện kết luận của Hội đồng giám định y khoa ghi rõ tỷ lệ phần trăm suy giảm khả năng lao động.",
+                  "Bản chính": "1",
+                  "Bản sao": "1",
+                  "Tệp đính kèm": "Không có"
+                },
+                {
+                  "Tên giấy tờ": "+ Sổ bảo hiểm xã hội .",
+                  "Bản chính": "1",
+                  "Bản sao": "0",
+                  "Tệp đính kèm": "Không có"
+                },
+                {
+                  "Tên giấy tờ": "+ Bản chính hoặc bản sao văn bản xác định việc chấm dứt hợp đồng lao động hoặc văn bản chấm dứt làm việc hoặc văn bản đề nghị của đối tượng:  (i) Người lao động đi làm việc ở nước ngoài theo hợp đồng quy định tại Luật Người lao động Việt Nam đi làm việc ở nước ngoài theo hợp đồng, trừ trường hợp điều ước quốc tế mà nước Cộng hòa xã hội chủ nghĩa Việt Nam là thành viên có quy định khác. (ii) Vợ hoặc chồng không hưởng lương từ ngân sách nhà nước được cử đi công tác nhiệm kỳ cùng thành viên cơ quan đại diện nước Cộng hòa xã hội chủ nghĩa Việt Nam ở nước ngoài được hưởng chế độ sinh hoạt phí. (iii) Chủ hộ kinh doanh của hộ kinh doanh có đăng ký kinh doanh nộp thuế theo phương pháp kê khai.  (iv) Người quản lý doanh nghiệp, kiểm soát viên, người đại diện phần vốn nhà nước, người đại diện phần vốn của doanh nghiệp theo quy định của pháp luật; thành viên Hội đồng quản trị, Tổng giám đốc, Giám đốc, thành viên Ban kiểm soát hoặc kiểm soát viên và các chức danh quản lý khác được bầu của hợp tác xã, liên hiệp hợp tác xã theo quy định của Luật Hợp tác xã không hưởng tiền lương.",
+                  "Bản chính": "1",
+                  "Bản sao": "1",
+                  "Tệp đính kèm": "Không có"
+                }
+              ]
+            },
+            {
+              "group_name": "- Đối với người đang bảo lưu thời gian đóng bảo hiểm xã hội bắt buộc",
+              "documents": [
+                {
+                  "Tên giấy tờ": "+ Sổ bảo hiểm xã hội",
+                  "Bản chính": "1",
+                  "Bản sao": "0",
+                  "Tệp đính kèm": "Không có"
+                },
+                {
+                  "Tên giấy tờ": "+ Văn bản đề nghị của người đang bảo lưu thời gian đóng bảo hiểm xã hội bắt buộc",
+                  "Bản chính": "1",
+                  "Bản sao": "0",
+                  "Tệp đính kèm": "Không có"
+                }
+              ]
+            },
+            {
+              "group_name": "- Đối với người đang tham gia bảo hiểm xã hội bắt buộc",
+              "documents": [
+                {
+                  "Tên giấy tờ": "+ Sổ bảo hiểm xã hội;",
+                  "Bản chính": "1",
+                  "Bản sao": "0",
+                  "Tệp đính kèm": "Không có"
+                },
+                {
+                  "Tên giấy tờ": "+ Bản chính hoặc bản sao văn bản xác định việc chấm dứt hợp đồng lao động hoặc văn bản chấm dứt làm việc hoặc văn bản đề nghị của đối tượng:  (i) Người lao động đi làm việc ở nước ngoài theo hợp đồng quy định tại Luật Người lao động Việt Nam đi làm việc ở nước ngoài theo hợp đồng, trừ trường hợp điều ước quốc tế mà nước Cộng hòa xã hội chủ nghĩa Việt Nam là thành viên có quy định khác.  (ii) Vợ hoặc chồng không hưởng lương từ ngân sách nhà nước được cử đi công tác nhiệm kỳ cùng thành viên cơ quan đại diện nước Cộng hòa xã hội chủ nghĩa Việt Nam ở nước ngoài được hưởng chế độ sinh hoạt phí. (iii) Chủ hộ kinh doanh của hộ kinh doanh có đăng ký kinh doanh nộp thuế theo phương pháp kê khai. (iv) Người quản lý doanh nghiệp, kiểm soát viên, người đại diện phần vốn nhà nước, người đại diện phần vốn của doanh nghiệp theo quy định của pháp luật; thành viên Hội đồng quản trị, Tổng giám đốc, Giám đốc, thành viên Ban kiểm soát hoặc kiểm soát viên và các chức danh quản lý khác được bầu của hợp tác xã, liên hiệp hợp tác xã theo quy định của Luật Hợp tác xã không hưởng tiền lương.",
+                  "Bản chính": "1",
+                  "Bản sao": "1",
+                  "Tệp đính kèm": "Không có"
+                }
+              ]
+            }
+          ],
+          "result_items": [
+            "Quyết định về việc hưởng chế độ hưu trí hằng tháng.. (Mã: `KQ.G09.000489`)"
+          ]
+        },
+        {
+          "procedure_code": "1.014172",
+          "procedure_title": "HƯỞNG LƯƠNG HƯU ĐỐI VỚI NGƯỜI THAM GIA BẢO HIỂM XÃ HỘI TỰ NGUYỆN",
+          "subdomain_key": "che_do_huu_tri",
+          "subdomain_label": "Chế độ hưu trí",
+          "event_id": 319,
+          "field": "Bảo hiểm xã hội",
+          "agency": "Bảo hiểm xã hội tỉnh",
+          "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bfb-235f-76e1-accf-51162d0e6b1a",
+          "raw_data_file": "C:\\Users\\ku060\\Downloads\\VAIC source\\data-pipeline\\raw_data\\1_014172\\1_014172_procedure_detail.md",
+          "raw_data_available": true,
+          "operation_group": "huong_luong_huu",
+          "operation_key": "huong_luong_huu_doi_voi_nguoi_tham_gia_bao_hiem_xa_hoi_tu_nguyen",
+          "overview": "1. Bước 1: Trong thời hạn 20 ngày trước thời điểm đủ điều kiện hưởng lương hưu, người tham gia bảo hiểm xã hội tự nguyện, người đang bảo lưu thời gian đóng bảo hiểm xã hội nộp hồ sơ quy định cho cơ quan bảo hiểm xã hội. Bước 2: Trong thời hạn 20 ngày, không bao gồm ngày nghỉ lễ, tết, kể từ ngày nhận đủ hồ sơ theo quy định đối với người đề nghị hưởng lương hưu cơ quan bảo hiểm xã hội có trách nhiệm giải quyết. Trường hợp không giải quyết thì phải trả lời bằng văn bản và nêu rõ lý do.",
+          "procedure_flow": "1. Bước 1: Trong thời hạn 20 ngày trước thời điểm đủ điều kiện hưởng lương hưu, người tham gia bảo hiểm xã hội tự nguyện, người đang bảo lưu thời gian đóng bảo hiểm xã hội nộp hồ sơ quy định cho cơ quan bảo hiểm xã hội. Bước 2: Trong thời hạn 20 ngày, không bao gồm ngày nghỉ lễ, tết, kể từ ngày nhận đủ hồ sơ theo quy định đối với người đề nghị hưởng lương hưu cơ quan bảo hiểm xã hội có trách nhiệm giải quyết. Trường hợp không giải quyết thì phải trả lời bằng văn bản và nêu rõ lý do.",
+          "requirements": "Không có thông tin",
+          "submission_methods": [
+            "Trực tuyến",
+            "Dịch vụ bưu chính",
+            "Trực tiếp"
+          ],
+          "processing_time_values": [
+            "20 ngày",
+            "20 ngày",
+            "20 ngày"
+          ],
+          "document_groups": [],
+          "result_items": [
+            "Quyết định về việc hưởng chế độ hưu trí hằng tháng.. (Mã: `KQ.G09.000489`)"
+          ]
+        },
+        {
+          "procedure_code": "1.014174",
+          "procedure_title": "HƯỞNG TRỢ CẤP MỘT LẦN ĐỐI VỚI NGƯỜI ĐANG HƯỞNG LƯƠNG HƯU, TRỢ CẤP BẢO HIỂM XÃ HỘI HẰNG THÁNG RA NƯỚC NGOÀI ĐỂ ĐỊNH CƯ.",
+          "subdomain_key": "che_do_huu_tri",
+          "subdomain_label": "Chế độ hưu trí",
+          "event_id": 319,
+          "field": "Bảo hiểm xã hội",
+          "agency": "Bảo hiểm xã hội tỉnh",
+          "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bfb-236e-71b0-8d75-1adbc57b9a0a",
+          "raw_data_file": "C:\\Users\\ku060\\Downloads\\VAIC source\\data-pipeline\\raw_data\\1_014174\\1_014174_procedure_detail.md",
+          "raw_data_available": true,
+          "operation_group": "huong_luong_huu",
+          "operation_key": "huong_tro_cap_mot_lan_doi_voi_nguoi_dang_huong_luong_huu_tro_cap_bao_hiem_xa_hoi_hang_thang_ra_nuoc_ngoai_de_dinh_cu",
+          "overview": "1. Bước 1: Người đang hưởng lương hưu, trợ cấp bảo hiểm xã hội hằng tháng có nguyện vọng ra nước ngoài định cư nộp hồ sơ cho cơ quan bảo hiểm xã hội. Bước 2: Trong thời hạn 07 ngày làm việc kể từ ngày nhận đủ hồ sơ theo quy định, cơ quan bảo hiểm xã hội có trách nhiệm giải quyết. Trường hợp không giải quyết thì phải trả lời bằng văn bản và nêu rõ lý do.",
+          "procedure_flow": "1. Bước 1: Người đang hưởng lương hưu, trợ cấp bảo hiểm xã hội hằng tháng có nguyện vọng ra nước ngoài định cư nộp hồ sơ cho cơ quan bảo hiểm xã hội. Bước 2: Trong thời hạn 07 ngày làm việc kể từ ngày nhận đủ hồ sơ theo quy định, cơ quan bảo hiểm xã hội có trách nhiệm giải quyết. Trường hợp không giải quyết thì phải trả lời bằng văn bản và nêu rõ lý do.",
+          "requirements": "Không có thông tin",
+          "submission_methods": [
+            "Trực tuyến",
+            "Dịch vụ bưu chính",
+            "Trực tiếp"
+          ],
+          "processing_time_values": [
+            "7 ngày làm việc",
+            "7 ngày làm việc",
+            "7 ngày làm việc"
+          ],
+          "document_groups": [],
+          "result_items": [
+            "Quyết định về việc hưởng trợ cấp một lần. (Mã: `KQ.G09.000491`)"
+          ]
+        },
+        {
+          "procedure_code": "1.014175",
+          "procedure_title": "TIẾP TỤC HƯỞNG LƯƠNG HƯU, TRỢ CẤP BẢO HIỂM XÃ HỘI HẰNG THÁNG TRONG TRƯỜNG HỢP ĐÃ BỊ TẠM DỪNG HOẶC CHẤM DỨT HƯỞNG",
+          "subdomain_key": "che_do_huu_tri",
+          "subdomain_label": "Chế độ hưu trí",
+          "event_id": 319,
+          "field": "Bảo hiểm xã hội",
+          "agency": "Bảo hiểm xã hội tỉnh",
+          "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bfb-235d-70a9-aeee-7df6bbc04088",
+          "raw_data_file": "C:\\Users\\ku060\\Downloads\\VAIC source\\data-pipeline\\raw_data\\1_014175\\1_014175_procedure_detail.md",
+          "raw_data_available": true,
+          "operation_group": "huong_luong_huu",
+          "operation_key": "tiep_tuc_huong_luong_huu_tro_cap_bao_hiem_xa_hoi_hang_thang_trong_truong_hop_da_bi_tam_dung_hoac_cham_dut_huong",
+          "overview": "1. Bước 1: Người đề nghị tiếp tục hưởng lương hưu, trợ cấp bảo hiểm xã hội hằng tháng nộp hồ sơ theo quy định cho cơ quan bảo hiểm xã hội. Bước 2: Trong thời hạn 10 ngày làm việc kể từ ngày nhận đủ hồ sơ theo quy định, cơ quan bảo hiểm xã hội có trách nhiệm giải quyết. Trường hợp không giải quyết thì phải trả lời bằng văn bản và nêu rõ lý do.",
+          "procedure_flow": "1. Bước 1: Người đề nghị tiếp tục hưởng lương hưu, trợ cấp bảo hiểm xã hội hằng tháng nộp hồ sơ theo quy định cho cơ quan bảo hiểm xã hội. Bước 2: Trong thời hạn 10 ngày làm việc kể từ ngày nhận đủ hồ sơ theo quy định, cơ quan bảo hiểm xã hội có trách nhiệm giải quyết. Trường hợp không giải quyết thì phải trả lời bằng văn bản và nêu rõ lý do.",
+          "requirements": "- Người tạm dừng hưởng lương hưu, trợ cấp bảo hiểm xã hội hằng tháng xuất cảnh trái phép trở về. - Người tạm dừng hưởng lương hưu, trợ cấp bảo hiểm xã hội hằng tháng có quyết định của Tòa án hủy bỏ quyết định tuyên bố mất tích hoặc huỷ bỏ quyết định tuyên bố là đã chết.",
+          "submission_methods": [
+            "Trực tuyến",
+            "Dịch vụ bưu chính",
+            "Trực tiếp"
+          ],
+          "processing_time_values": [
+            "10 ngày làm việc",
+            "10 ngày làm việc",
+            "10 ngày làm việc"
+          ],
+          "document_groups": [],
+          "result_items": [
+            "Quyết định về việc tiếp tục hưởng lương hưu, trợ cấp bảo hiểm xã hội hằng tháng. (Mã: `KQ.G09.000363`)"
+          ]
+        },
+        {
+          "procedure_code": "1.014176",
+          "procedure_title": "THAY ĐỔI HÌNH THỨC NHẬN, NƠI NHẬN LƯƠNG HƯU, TRỢ CẤP BẢO HIỂM XÃ HỘI HẰNG THÁNG",
+          "subdomain_key": "che_do_huu_tri",
+          "subdomain_label": "Chế độ hưu trí",
+          "event_id": 319,
+          "field": "Bảo hiểm xã hội",
+          "agency": "Bảo hiểm xã hội tỉnh",
+          "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bfb-2373-769e-9f1d-609faf4295ce",
+          "raw_data_file": "C:\\Users\\ku060\\Downloads\\VAIC source\\data-pipeline\\raw_data\\1_014176\\1_014176_procedure_detail.md",
+          "raw_data_available": true,
+          "operation_group": "thay_doi_cach_nhan_huu",
+          "operation_key": "thay_doi_hinh_thuc_nhan_noi_nhan_luong_huu_tro_cap_bao_hiem_xa_hoi_hang_thang",
+          "overview": "1. Bước 1: Người đang hưởng lương hưu, trợ cấp bảo hiểm xã hội hằng tháng có nguyện vọng thay đổi hình thức nhận hoặc thay đổi nơi nhận do chuyển nơi cư trú trong nước thì có văn bản gửi cơ quan bảo hiểm xã hội nơi đang chi trả. Bước 2: Trong thời hạn 05 ngày làm việc kể từ ngày nhận được văn bản, cơ quan bảo hiểm xã hội có trách nhiệm giải quyết. Trường hợp không giải quyết thì phải trả lời bằng văn bản và nêu rõ lý do.",
+          "procedure_flow": "1. Bước 1: Người đang hưởng lương hưu, trợ cấp bảo hiểm xã hội hằng tháng có nguyện vọng thay đổi hình thức nhận hoặc thay đổi nơi nhận do chuyển nơi cư trú trong nước thì có văn bản gửi cơ quan bảo hiểm xã hội nơi đang chi trả. Bước 2: Trong thời hạn 05 ngày làm việc kể từ ngày nhận được văn bản, cơ quan bảo hiểm xã hội có trách nhiệm giải quyết. Trường hợp không giải quyết thì phải trả lời bằng văn bản và nêu rõ lý do.",
+          "requirements": "Không có thông tin",
+          "submission_methods": [
+            "Trực tuyến",
+            "Dịch vụ bưu chính",
+            "Trực tiếp"
+          ],
+          "processing_time_values": [
+            "50 ngày làm việc",
+            "50 ngày làm việc",
+            "50 ngày làm việc"
+          ],
+          "document_groups": [],
+          "result_items": [
+            "Thông báo về việc tiếp nhận hồ sơ di chuyển và đăng ký nhận lương hưu hoặc trợ cấp bảo hiểm xã hội hằng tháng (Mã: `KQ.G09.000492`)"
+          ]
+        },
+        {
+          "procedure_code": "1.014589",
+          "procedure_title": "Thủ tục Hỗ trợ cho Người cao tuổi từ đủ 70 tuổi đến dưới 75 tuổi; Người cao tuổi dưới 75 tuổi thường trú trên địa bàn tỉnh, là Đảng viên được tặng huy hiệu 40 năm tuổi đảng trở lên, không có lương hưu, trợ cấp bảo hiểm xã hội, trợ cấp xã hội hàng tháng",
+          "subdomain_key": "che_do_huu_tri",
+          "subdomain_label": "Chế độ hưu trí",
+          "event_id": 319,
+          "field": "Bảo trợ xã hội",
+          "agency": "Ủy ban nhân dân cấp xã",
+          "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d7c4f-0f4f-756f-a7db-e8f96edb8171",
+          "raw_data_file": "C:\\Users\\ku060\\Downloads\\VAIC source\\data-pipeline\\raw_data\\1_014589\\1_014589_procedure_detail.md",
+          "raw_data_available": true,
+          "operation_group": "ho_tro_nguoi_cao_tuoi_khong_luong_huu",
+          "operation_key": "thu_tuc_ho_tro_cho_nguoi_cao_tuoi_tu_du_70_tuoi_den_duoi_75_tuoi_nguoi_cao_tuoi_duoi_75_tuoi_thuong_tru_tren_dia_ban_tinh_la_dang_vien_duoc_tang_huy_hieu_40_nam_tuoi_dang_tro_len_khong_co_luong_huu_tro_cap_bao_hiem_xa_hoi_tro_cap_xa_hoi_hang_thang",
+          "overview": "1. - Bước 1: Đối tượng hoặc người giám hộ của đối tượng quy định tại điểm d, đ và e khoản 2 Điều 1 Nghị quyết số 103/2025/NQ-HĐND làm hồ sơ theo quy định, gửi Chủ tịch Ủy ban nhân dân cấp xã nơi đối tượng dăng ký thường trú. - Bước 2: Trong thời hạn 10 ngày làm việc, kể từ ngày nhận được đề nghị của đối tượng, Chủ tịch Ủy ban nhân dân cấp xã tổ chức xem xét, thực hiện xác thực và chuẩn hóa thông tin liên quan của đối tượng với cơ sở dữ liệu quốc gia về dân cư, quyết định và thực hiện chi trả trợ cấp xã hội hằng tháng cho đối tượng. Trường hợp đối tượng không đủ điều kiện hưởng, Chủ tịch Ủy ban nhân dân cấp xã trả lời bằng văn bản, nêu rõ lý do.",
+          "procedure_flow": "1. - Bước 1: Đối tượng hoặc người giám hộ của đối tượng quy định tại điểm d, đ và e khoản 2 Điều 1 Nghị quyết số 103/2025/NQ-HĐND làm hồ sơ theo quy định, gửi Chủ tịch Ủy ban nhân dân cấp xã nơi đối tượng dăng ký thường trú. - Bước 2: Trong thời hạn 10 ngày làm việc, kể từ ngày nhận được đề nghị của đối tượng, Chủ tịch Ủy ban nhân dân cấp xã tổ chức xem xét, thực hiện xác thực và chuẩn hóa thông tin liên quan của đối tượng với cơ sở dữ liệu quốc gia về dân cư, quyết định và thực hiện chi trả trợ cấp xã hội hằng tháng cho đối tượng. Trường hợp đối tượng không đủ điều kiện hưởng, Chủ tịch Ủy ban nhân dân cấp xã trả lời bằng văn bản, nêu rõ lý do.",
+          "requirements": "Không có thông tin",
+          "submission_methods": [
+            "Trực tiếp",
+            "Trực tuyến",
+            "Dịch vụ bưu chính"
+          ],
+          "processing_time_values": [
+            "10 ngày làm việc",
+            "10 ngày làm việc",
+            "10 ngày làm việc"
+          ],
+          "document_groups": [],
+          "result_items": [
+            "Quyết định hỗ trợ cho đối tượng được hưởng chính sách. (Mã: `KQ.H05.000269`)"
+          ]
+        },
+        {
+          "procedure_code": "2.000605",
+          "procedure_title": "Giải quyết hưởng lương hưu, trợ cấp hàng tháng đối với cán bộ xã",
+          "subdomain_key": "che_do_huu_tri",
+          "subdomain_label": "Chế độ hưu trí",
+          "event_id": 319,
+          "field": "Thực hiện chính sách BHXH",
+          "agency": "",
+          "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bfc-d9d2-72ad-a33e-dae4ebb492df",
+          "raw_data_file": "C:\\Users\\ku060\\Downloads\\VAIC source\\data-pipeline\\raw_data\\2_000605\\2_000605_procedure_detail.md",
+          "raw_data_available": true,
+          "operation_group": "huong_luong_huu",
+          "operation_key": "giai_quyet_huong_luong_huu_tro_cap_hang_thang_doi_voi_can_bo_xa",
+          "overview": "Bước 1. Lập, nộp hồ sơ 1. NLĐ đang đóng BHXH: lập hồ sơ theo quy định tại mục 10.3.1 (Thành phần hồ sơ); nộp cho cho đơn vị SDLĐ. Đơn vị SDLĐ tiếp nhận, lập và nộp hồ sơ theo quy định cho cơ quan BHXH nơi đơn vị đóng BHXH. 2. Người đang tham gia BHXH tự nguyện, người bảo lưu thời gian đóng BHXH: lập hồ sơ theo quy định tại mục 10.3.2 (Thành phần hồ sơ); nộp cho cơ quan BHXH. 3. NLĐ có Quyết định hoặc Giấy chứng nhận chờ đủ điều kiện về tuổi đời để hưởng lương hưu hoặc hưởng trợ cấp hàng tháng theo Nghị định số 09/1998/NĐ-CP: lập hồ sơ theo quy định tại mục 10.3.3 (Thành phần hồ sơ); nộp cho cơ quan BHXH. Bước 2. Cơ quan BHXH tiếp nhận hồ sơ và giải quyết theo quy định. Bước 3. Nhận kết quả giải quyết 1. Đơn vị SDLĐ: Nhận kết quả giải quyết từ cơ quan BHXH để trả cho NLĐ nêu tại điểm 1 Bước 1 Mục 10.1 gồm: Quyết định về việc hưởng chế độ hưu trí hàng tháng; Bản quá trình đóng BHXH; Thông báo về việc chi trả lương hưu, trợ cấp BHXH đối với trường hợp di chuyển hưởng chế độ BHXH tại huyện/tỉnh khác; Thẻ BHYT. 2. Người lao động: - Nhận tiền lương hưu, trợ cấp BHXH hàng tháng - Người lao động nêu tại điểm 2, 3 Bước 1 Mục 10.1: nhận Quyết định về việc hưởng chế độ hưu trí hàng tháng; Bản quá trình đóng BHXH; Thông báo về việc chi trả lương hưu, trợ cấp BHXH đối với trường hợp di chuyển hưởng chế độ BHXH tại huyện/tỉnh khác; Thẻ BHYT.",
+          "procedure_flow": "Bước 1. Lập, nộp hồ sơ 1. NLĐ đang đóng BHXH: lập hồ sơ theo quy định tại mục 10.3.1 (Thành phần hồ sơ); nộp cho cho đơn vị SDLĐ. Đơn vị SDLĐ tiếp nhận, lập và nộp hồ sơ theo quy định cho cơ quan BHXH nơi đơn vị đóng BHXH. 2. Người đang tham gia BHXH tự nguyện, người bảo lưu thời gian đóng BHXH: lập hồ sơ theo quy định tại mục 10.3.2 (Thành phần hồ sơ); nộp cho cơ quan BHXH. 3. NLĐ có Quyết định hoặc Giấy chứng nhận chờ đủ điều kiện về tuổi đời để hưởng lương hưu hoặc hưởng trợ cấp hàng tháng theo Nghị định số 09/1998/NĐ-CP: lập hồ sơ theo quy định tại mục 10.3.3 (Thành phần hồ sơ); nộp cho cơ quan BHXH. Bước 2. Cơ quan BHXH tiếp nhận hồ sơ và giải quyết theo quy định. Bước 3. Nhận kết quả giải quyết 1. Đơn vị SDLĐ: Nhận kết quả giải quyết từ cơ quan BHXH để trả cho NLĐ nêu tại điểm 1 Bước 1 Mục 10.1 gồm: Quyết định về việc hưởng chế độ hưu trí hàng tháng; Bản quá trình đóng BHXH; Thông báo về việc chi trả lương hưu, trợ cấp BHXH đối với trường hợp di chuyển hưởng chế độ BHXH tại huyện/tỉnh khác; Thẻ BHYT. 2. Người lao động: - Nhận tiền lương hưu, trợ cấp BHXH hàng tháng - Người lao động nêu tại điểm 2, 3 Bước 1 Mục 10.1: nhận Quyết định về việc hưởng chế độ hưu trí hàng tháng; Bản quá trình đóng BHXH; Thông báo về việc chi trả lương hưu, trợ cấp BHXH đối với trường hợp di chuyển hưởng chế độ BHXH tại huyện/tỉnh khác; Thẻ BHYT.",
+          "requirements": "- Điều 169, khoản 1 Điều 219 Bộ Luật lao động",
+          "submission_methods": [],
+          "processing_time_values": [],
+          "document_groups": [],
+          "result_items": []
+        },
+        {
+          "procedure_code": "2.000740",
+          "procedure_title": "Người hưởng lĩnh chế độ bảo hiểm xã hội bằng tiền mặt chuyển sang lĩnh bằng tài khoản cá nhân và ngược lại, hoặc thay đổi thông tin cá nhân",
+          "subdomain_key": "che_do_huu_tri",
+          "subdomain_label": "Chế độ hưu trí",
+          "event_id": 319,
+          "field": "Chi trả các chế độ BHXH",
+          "agency": "",
+          "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bfc-d9c8-753d-b367-2ead6cc9c31d",
+          "raw_data_file": "C:\\Users\\ku060\\Downloads\\VAIC source\\data-pipeline\\raw_data\\2_000740\\2_000740_procedure_detail.md",
+          "raw_data_available": true,
+          "operation_group": "thay_doi_cach_nhan_huu",
+          "operation_key": "nguoi_huong_linh_che_do_bao_hiem_xa_hoi_bang_tien_mat_chuyen_sang_linh_bang_tai_khoan_ca_nhan_va_nguoc_lai_hoac_thay_doi_thong_tin_ca_nhan",
+          "overview": "Bước 1. Lập, nộp hồ sơ Người hưởng lập theo quy định tại mục Thành phần hồ sơ; nộp hồ sơ cho cơ quan bưu điện hoặc cơ quan BHXH, ghi rõ: Số tài khoản cá nhân (hoặc thẻ ATM), ngân hàng nơi mở tài khoản; hoặc nơi nhận chế độ BHXH hàng tháng mới. Nếu có chi phí phát hành thẻ ATM lần đầu, người hưởng nộp chứng từ cho Bưu điện tỉnh hoặc Bưu điện huyện để thanh toán theo quy định. Bước 2. Cơ quan BHXH tiếp nhận hồ sơ và giải quyết theo quy định Bước 3. Nhận kết quả giải quyết Người hưởng lĩnh phí phát hành thẻ ATM (trong trường hợp phát hành thẻ ATM lần đầu).",
+          "procedure_flow": "Bước 1. Lập, nộp hồ sơ Người hưởng lập theo quy định tại mục Thành phần hồ sơ; nộp hồ sơ cho cơ quan bưu điện hoặc cơ quan BHXH, ghi rõ: Số tài khoản cá nhân (hoặc thẻ ATM), ngân hàng nơi mở tài khoản; hoặc nơi nhận chế độ BHXH hàng tháng mới. Nếu có chi phí phát hành thẻ ATM lần đầu, người hưởng nộp chứng từ cho Bưu điện tỉnh hoặc Bưu điện huyện để thanh toán theo quy định. Bước 2. Cơ quan BHXH tiếp nhận hồ sơ và giải quyết theo quy định Bước 3. Nhận kết quả giải quyết Người hưởng lĩnh phí phát hành thẻ ATM (trong trường hợp phát hành thẻ ATM lần đầu).",
+          "requirements": "Không có yêu cầu điều kiện",
+          "submission_methods": [],
+          "processing_time_values": [],
+          "document_groups": [],
+          "result_items": []
+        },
+        {
+          "procedure_code": "2.000755",
+          "procedure_title": "Giải quyết hưởng trợ cấp một lần đối với người đang hưởng lương hưu, trợ cấp BHXH hàng tháng ra nước ngoài để định cư và công dân nước ngoài đang hưởng lương hưu, trợ cấp BHXH hàng tháng không còn cư trú ở Việt Nam",
+          "subdomain_key": "che_do_huu_tri",
+          "subdomain_label": "Chế độ hưu trí",
+          "event_id": 319,
+          "field": "Thực hiện chính sách BHXH",
+          "agency": "",
+          "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bfc-d9ca-768c-a8f4-c918230b95c9",
+          "raw_data_file": "C:\\Users\\ku060\\Downloads\\VAIC source\\data-pipeline\\raw_data\\2_000755\\2_000755_procedure_detail.md",
+          "raw_data_available": true,
+          "operation_group": "huong_luong_huu",
+          "operation_key": "giai_quyet_huong_tro_cap_mot_lan_doi_voi_nguoi_dang_huong_luong_huu_tro_cap_bhxh_hang_thang_ra_nuoc_ngoai_de_dinh_cu_va_cong_dan_nuoc_ngoai_dang_huong_luong_huu_tro_cap_bhxh_hang_thang_khong_con_cu_tru_o_viet_nam",
+          "overview": "1. **Bước 1. Lập, nộp hồ sơ**",
+          "procedure_flow": "1. **Bước 1. Lập, nộp hồ sơ** Người hưởng lập hồ sơ theo quy định tại mục 11.3 (Thành phần hồ sơ) và nộp cho cơ quan BHXH nơi đang chi trả lương hưu, trợ cấp BHXH hàng tháng. 2. **Bước 2.** Cơ quan BHXH tiếp nhận hồ sơ và giải quyết theo quy định. 3. **Bước 3. Nhận kết quả giải quyết** Người hưởng nhận Quyết định về việc hưởng trợ cấp một lần và tiền trợ cấp.",
+          "requirements": "Không có thông tin",
+          "submission_methods": [
+            "Trực tuyến",
+            "Dịch vụ bưu chính",
+            "Trực tiếp"
+          ],
+          "processing_time_values": [
+            "5 ngày làm việc",
+            "5 ngày làm việc",
+            "5 ngày làm việc"
+          ],
+          "document_groups": [
+            {
+              "group_name": "Đối với công dân nước ngoài đang hưởng lương hưu, trợ cấp BHXH hàng tháng không còn cư trú ở Việt Nam",
+              "documents": [
+                {
+                  "Tên giấy tờ": "Bản chính Đơn đề nghị (mẫu 14-HSB)",
+                  "Bản chính": "1",
+                  "Bản sao": "0",
+                  "Tệp đính kèm": "Không có"
+                }
+              ]
+            },
+            {
+              "group_name": "Đối với người đang hưởng lương hưu, trợ cấp BHXH hàng tháng ra nước ngoài định cư",
+              "documents": [
+                {
+                  "Tên giấy tờ": "Bản sao Giấy xác nhận của cơ quan có thẩm quyền về việc thôi quốc tịch Việt Nam hoặc bản dịch tiếng Việt được chứng thực của một trong các giấy tờ sau: - Hộ chiếu do nước ngoài cấp. - Thị thực của cơ quan nước ngoài có thẩm quyền cấp; giấy tờ xác nhận về việc đang làm thủ tục nhập quốc tịch nước ngoài. - Giấy tờ xác nhận hoặc thẻ thường trú, cư trú có thời hạn từ 05 năm trở lên của cơ quan nước ngoài có thẩm quyền cấp.",
+                  "Bản chính": "0",
+                  "Bản sao": "1",
+                  "Tệp đính kèm": "Không có"
+                },
+                {
+                  "Tên giấy tờ": "Bản chính Đơn đề nghị (mẫu 14-HSB)",
+                  "Bản chính": "1",
+                  "Bản sao": "0",
+                  "Tệp đính kèm": "Không có"
+                }
+              ]
+            }
+          ],
+          "result_items": [
+            "Quyết định về việc hưởng trợ cấp một lần (Mã: `KQ.G24.000027`)",
+            "Tiền trợ cấp (Mã: `KQ.G24.000053`)"
+          ]
+        },
+        {
+          "procedure_code": "2.000762",
+          "procedure_title": "Giải quyết hưởng trợ cấp hàng tháng theo Quyết định số 613/QĐ-TTg",
+          "subdomain_key": "che_do_huu_tri",
+          "subdomain_label": "Chế độ hưu trí",
+          "event_id": 319,
+          "field": "Thực hiện chính sách BHXH",
+          "agency": "Bảo hiểm xã hội tỉnh",
+          "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bfc-d9cf-774f-a7e7-9e24f53a6a18",
+          "raw_data_file": "C:\\Users\\ku060\\Downloads\\VAIC source\\data-pipeline\\raw_data\\2_000762\\2_000762_procedure_detail.md",
+          "raw_data_available": true,
+          "operation_group": "tro_cap_hang_thang_theo_qd_613",
+          "operation_key": "giai_quyet_huong_tro_cap_hang_thang_theo_quyet_dinh_so_613_qd_ttg",
+          "overview": "Bước 1. Lập hồ sơ Người đề nghị lập hồ sơ theo quy định tại mục 8.3 (thành phần hồ sơ) và nộp cho cơ quan BHXH nơi đã chi trả trợ cấp trước khi thôi hưởng trợ cấp mất sức lao động hàng tháng hoặc nơi đã quyết định thôi hưởng trợ cấp mất sức lao động hàng tháng. Bước 2. Cơ quan BHXH tiếp nhận hồ sơ và giải quyết theo quy định. Bước 3. Nhận kết quả giải quyết Người đề nghị nhận Quyết định hưởng trợ cấp hàng tháng hoặc Quyết định về việc hưởng trợ cấp mai táng hoặc Quyết định về việc hưởng chế độ tuất một lần; thẻ BHYT (đối với trường hợp hưởng trợ cấp hàng tháng); Thông báo về việc chi trả lương hưu, trợ cấp BHXH đối với trường hợp di chuyển hưởng chế độ BHXH tại huyện/tỉnh khác và tiền trợ cấp.",
+          "procedure_flow": "Bước 1. Lập hồ sơ Người đề nghị lập hồ sơ theo quy định tại mục 8.3 (thành phần hồ sơ) và nộp cho cơ quan BHXH nơi đã chi trả trợ cấp trước khi thôi hưởng trợ cấp mất sức lao động hàng tháng hoặc nơi đã quyết định thôi hưởng trợ cấp mất sức lao động hàng tháng. Bước 2. Cơ quan BHXH tiếp nhận hồ sơ và giải quyết theo quy định. Bước 3. Nhận kết quả giải quyết Người đề nghị nhận Quyết định hưởng trợ cấp hàng tháng hoặc Quyết định về việc hưởng trợ cấp mai táng hoặc Quyết định về việc hưởng chế độ tuất một lần; thẻ BHYT (đối với trường hợp hưởng trợ cấp hàng tháng); Thông báo về việc chi trả lương hưu, trợ cấp BHXH đối với trường hợp di chuyển hưởng chế độ BHXH tại huyện/tỉnh khác và tiền trợ cấp.",
+          "requirements": "Điều 1 Quyết định số 613/QĐ-TTg; Điều 1 Thông tư số 16/2010/TT-BLĐTBXH",
+          "submission_methods": [],
+          "processing_time_values": [],
+          "document_groups": [],
+          "result_items": []
+        },
+        {
+          "procedure_code": "2.000809",
+          "procedure_title": "Giải quyết hưởng tiếp lương hưu, trợ cấp BHXH hàng tháng đối với người chấp hành xong hình phạt tù, người xuất cảnh trái phép trở về nước định cư hợp pháp, người được Tòa án hủy quyết định tuyên bố mất tích",
+          "subdomain_key": "che_do_huu_tri",
+          "subdomain_label": "Chế độ hưu trí",
+          "event_id": 319,
+          "field": "Thực hiện chính sách BHXH",
+          "agency": "",
+          "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bfc-d9cd-707b-b7c1-de93b025f7d5",
+          "raw_data_file": "C:\\Users\\ku060\\Downloads\\VAIC source\\data-pipeline\\raw_data\\2_000809\\2_000809_procedure_detail.md",
+          "raw_data_available": true,
+          "operation_group": "che_do_huu_tri_khac",
+          "operation_key": "giai_quyet_huong_tiep_luong_huu_tro_cap_bhxh_hang_thang_doi_voi_nguoi_chap_hanh_xong_hinh_phat_tu_nguoi_xuat_canh_trai_phep_tro_ve_nuoc_dinh_cu_hop_phap_nguoi_duoc_toa_an_huy_quyet_dinh_tuyen_bo_mat_tich",
+          "overview": "1. **Bước 1. Lập, nộp hồ sơ**",
+          "procedure_flow": "1. **Bước 1. Lập, nộp hồ sơ** Người hưởng lập hồ sơ theo quy định tại mục 12.3 (Thành phần hồ sơ); nộp cho cơ quan BHXH nơi chi trả lương hưu, trợ cấp BHXH hàng tháng trước khi đi tù hoặc xuất cảnh hoặc mất tích. 2. **Bước 2.** Cơ quan BHXH tiếp nhận hồ sơ và giải quyết theo quy định. 3. **Bước 3. Nhận kết quả** Người hưởng nhận kết quả, gồm: Quyết định về việc hưởng tiếp chế độ BHXH hàng tháng; Thẻ BHYT; Thông báo về việc chi trả lương hưu, trợ cấp BHXH đối với trường hợp di chuyển hưởng chế độ BHXH tại huyện/tỉnh khác; Thẻ BHYT; tiền trợ cấp.",
+          "requirements": "Không có thông tin",
+          "submission_methods": [
+            "Trực tuyến",
+            "Dịch vụ bưu chính",
+            "Trực tiếp"
+          ],
+          "processing_time_values": [
+            "5 ngày làm việc",
+            "5 ngày làm việc",
+            "5 ngày làm việc"
+          ],
+          "document_groups": [],
+          "result_items": [
+            "Tiền trợ cấp (Mã: `KQ.G24.000053`)",
+            "Thẻ BHYT (Mã: `KQ.G24.000004`)",
+            "Quyết định về việc hưởng tiếp chế độ BHXH hàng tháng (Mã: `KQ.G24.000026`)",
+            "Thông báo về việc chi trả lương hưu, trợ cấp BHXH đối với trường hợp di chuyển hưởng chế độ BHXH tại huyện/tỉnh khác. (Mã: `KQ.G24.000071`)"
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,355 @@
+{
+  "schema_version": "3.0",
+  "record_type": "public_service_procedure_payload",
+  "id": "procedure-1.003125",
+  "procedure_code": "1.003125",
+  "code": "1.003125",
+  "title": "Cấp giấy phép hoạt động ngân hàng mô",
+  "language": "vi",
+  "status": "generated_from_pipeline",
+  "field": "Khám bệnh, chữa bệnh",
+  "group_key": "suc_khoe_y_te",
+  "workflow_family": null,
+  "subflow": null,
+  "source": {
+    "source_url": "file:///C:/Users/ku060/Downloads/VAIC%20source/data-pipeline/raw_data/1_003125/1_003125_procedure_detail.md",
+    "source_markdown_path": "C:\\Users\\ku060\\Downloads\\VAIC source\\data-pipeline\\raw_data\\1_003125\\1_003125_procedure_detail.md",
+    "normalized_payload_path": "C:\\Users\\ku060\\Downloads\\VAIC source\\data-pipeline\\govease-unified\\data\\normalized_structured\\1_003125_normalized_structured.json",
+    "enriched_payload_path": "C:\\Users\\ku060\\Downloads\\VAIC source\\data-pipeline\\govease-unified\\data\\enriched_structured_priority\\1_003125_enriched_structured.json"
+  },
+  "scope": {
+    "included": "Thủ tục này thuộc nhóm y tế, thường cần đối chiếu thông tin người bệnh, đơn vị tiếp nhận hoặc quyền lợi chuyên ngành. Kết quả thường nhận được là Giấy phép hoạt động của ngân hàng mô. Thời gian xử lý tham khảo: 30 ngày.",
+    "not_included": []
+  },
+  "agency": {
+    "executing_agency": "Cục Quản lý Khám chữa bệnh - Bộ Y tế",
+    "submission_place": null,
+    "receiving_places": []
+  },
+  "target_users": [
+    "Doanh nghiệp có vốn đầu tư nước ngoài",
+    "Tổ chức (không bao gồm doanh nghiệp",
+    "HTX)",
+    "Người Việt Nam định cư ở nước ngoài",
+    "Công dân Việt Nam",
+    "Doanh nghiệp",
+    "Hợp tác xã",
+    "Cán bộ",
+    "công chức",
+    "viên chức"
+  ],
+  "submission_methods": [
+    {
+      "code": "POSTAL",
+      "label": "Dịch vụ bưu chính",
+      "processing_time": "30 ngày",
+      "fee": null,
+      "description": "30 ngày, kể từ ngày nhận được hồ sơ hợp lệ"
+    },
+    {
+      "code": "IN_PERSON",
+      "label": "Trực tiếp",
+      "processing_time": "30 ngày",
+      "fee": null,
+      "description": "30 ngày, kể từ ngày nhận được hồ sơ hợp lệ"
+    }
+  ],
+  "processing_note": "Thời gian xử lý tham chiếu: 30 ngày. Nên xác định rõ đối tượng tham gia, quyền lợi hoặc nhu cầu điều chỉnh hồ sơ y tế trước khi nộp. Có thể chọn kênh nộp phù hợp: Trực tiếp, Dịch vụ bưu chính. Hiện có khoảng 4 mục giấy tờ cần theo dõi trong checklist.",
+  "documents": {
+    "normally_required": [
+      {
+        "name": "b) Bản sao quyết định thành lập ngân hàng mô hoặc bản photocopy có bản chính để đối chiếu hoặc Giấy chứng nhận doanh nghiệp đối với ngân hàng mô tư nhân;",
+        "quantity": "0 bản chính, 1 bản sao",
+        "notes": [],
+        "group": "default",
+        "attachment_path": null
+      },
+      {
+        "name": "c) Bản kê khai cơ sở vật chất, trang thiết bị y tế để chứng minh đủ điều kiện quy định tại Điều 3a Nghị định số 155/2018/NĐ-CP ngày 12 tháng 11 năm 2018 của Chính phủ;",
+        "quantity": "1 bản chính, 0 bản sao",
+        "notes": [],
+        "group": "default",
+        "attachment_path": null
+      },
+      {
+        "name": "a) Đơn đề nghị cấp Giấy phép hoạt động ngân hàng mô theo mẫu quy định tại Phụ lục I ban hành kèm theo Nghị định số 155/2018/NĐ-CP ngày 12 tháng 11 năm 2018 của Chính phủ sửa đổi, bổ sung một số quy định liên quan đến điều kiện đầu tư kinh doanh thuộc phạm vi quản lý nhà nước của Bộ Y tế;",
+        "quantity": "1 bản chính, 0 bản sao",
+        "notes": [],
+        "group": "default",
+        "attachment_path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/1_003125/ph%E1%BB%A5%20l%E1%BB%A5c%201.docx"
+      },
+      {
+        "name": "d) Đối với ngân hàng mô độc lập: Bản kê khai nhân lực của ngân hàng mô để chứng minh đủ điều kiện quy định tại Điều 3a Nghị định số 155/2018/NĐ-CP ngày 12 tháng 11 năm 2018 của Chính phủ. Đối với người quản lý chuyên môn còn phải có bản sao chứng thực văn bằng, chứng chỉ; Đối với ngân hàng mô thuộc cơ sở y tế chỉ cần chứng chỉ hành nghề.",
+        "quantity": "1 bản chính, 0 bản sao",
+        "notes": [],
+        "group": "default",
+        "attachment_path": null
+      }
+    ],
+    "conditional": [],
+    "forms": [
+      {
+        "name": "a) Đơn đề nghị cấp Giấy phép hoạt động ngân hàng mô theo mẫu quy định tại Phụ lục I ban hành kèm theo Nghị định số 155/2018/NĐ-CP ngày 12 tháng 11 năm 2018 của Chính phủ sửa đổi, bổ sung một số quy định liên quan đến điều kiện đầu tư kinh doanh thuộc phạm vi quản lý nhà nước của Bộ Y tế;",
+        "attachment_label": "phụ lục 1.docx",
+        "attachment_path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/1_003125/ph%E1%BB%A5%20l%E1%BB%A5c%201.docx"
+      }
+    ],
+    "presented": [],
+    "notes": [],
+    "summary": [
+      {
+        "group": "default",
+        "name": "b) Bản sao quyết định thành lập ngân hàng mô hoặc bản photocopy có bản chính để đối chiếu hoặc Giấy chứng nhận doanh nghiệp đối với ngân hàng mô tư nhân;",
+        "quantity": "0 bản chính, 1 bản sao",
+        "notes": [],
+        "attachment_path": null
+      },
+      {
+        "group": "default",
+        "name": "c) Bản kê khai cơ sở vật chất, trang thiết bị y tế để chứng minh đủ điều kiện quy định tại Điều 3a Nghị định số 155/2018/NĐ-CP ngày 12 tháng 11 năm 2018 của Chính phủ;",
+        "quantity": "1 bản chính, 0 bản sao",
+        "notes": [],
+        "attachment_path": null
+      },
+      {
+        "group": "default",
+        "name": "a) Đơn đề nghị cấp Giấy phép hoạt động ngân hàng mô theo mẫu quy định tại Phụ lục I ban hành kèm theo Nghị định số 155/2018/NĐ-CP ngày 12 tháng 11 năm 2018 của Chính phủ sửa đổi, bổ sung một số quy định liên quan đến điều kiện đầu tư kinh doanh thuộc phạm vi quản lý nhà nước của Bộ Y tế;",
+        "quantity": "1 bản chính, 0 bản sao",
+        "notes": [],
+        "attachment_path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/1_003125/ph%E1%BB%A5%20l%E1%BB%A5c%201.docx"
+      },
+      {
+        "group": "default",
+        "name": "d) Đối với ngân hàng mô độc lập: Bản kê khai nhân lực của ngân hàng mô để chứng minh đủ điều kiện quy định tại Điều 3a Nghị định số 155/2018/NĐ-CP ngày 12 tháng 11 năm 2018 của Chính phủ. Đối với người quản lý chuyên môn còn phải có bản sao chứng thực văn bằng, chứng chỉ; Đối với ngân hàng mô thuộc cơ sở y tế chỉ cần chứng chỉ hành nghề.",
+        "quantity": "1 bản chính, 0 bản sao",
+        "notes": [],
+        "attachment_path": null
+      },
+      {
+        "group": null,
+        "name": "a) Đơn đề nghị cấp Giấy phép hoạt động ngân hàng mô theo mẫu quy định tại Phụ lục I ban hành kèm theo Nghị định số 155/2018/NĐ-CP ngày 12 tháng 11 năm 2018 của Chính phủ sửa đổi, bổ sung một số quy định liên quan đến điều kiện đầu tư kinh doanh thuộc phạm vi quản lý nhà nước của Bộ Y tế;",
+        "quantity": null,
+        "notes": null,
+        "attachment_path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/1_003125/ph%E1%BB%A5%20l%E1%BB%A5c%201.docx"
+      }
+    ]
+  },
+  "steps": [
+    {
+      "order": 1,
+      "title": "Bước 1",
+      "description": "1.",
+      "example": null
+    },
+    {
+      "order": 2,
+      "title": "Bước 1:",
+      "description": "Bước 1: Cơ quan, tổ chức, cá nhân nộp 01 bộ hồ sơ đề nghị cấp Giấy phép hoạt động ngân hàng mô gửi về Cục Quản lý Khám, chữa bệnh- Bộ Y tế.",
+      "example": null
+    },
+    {
+      "order": 3,
+      "title": "Bước 2:",
+      "description": "Bước 2: Cục Quản lý Khám, chữa bệnh tiếp nhận và gửi Phiếu tiếp nhận hồ sơ cho Cơ quan, tổ chức, cá nhân nộp hồ sơ. Bước 3: Bộ Y tế sẽ xem xét và thẩm định hồ sơ để cấp Giấy phép hoạt động ngân hàng mô, cụ thể: - Sau khi tiếp nhận, trong thời gian 03 ngày làm việc, Bộ Y tế có trách nhiệm xem xét tính hợp lệ của hồ sơ. Trường hợp hồ sơ chưa hợp lệ, Bộ Y tế có văn bản thông báo hướng dẫn để cơ quan, tổ chức, cá nhân hoàn thiện hồ sơ; - Trong thời gian 05 làm việc kể từ ngày nhận đủ hồ sơ hợp lệ, Bộ trưởng Bộ Y tế ra Quyết định thành lập Hội đồng thẩm định cấp Giấy phép hoạt động ngân hàng mô. Thành phần Hội đồng thẩm định tối thiểu gồm 5 thành viên là đại diện đơn vị có liên quan của Bộ Y tế, chuyên gia về y tế, pháp luật; Bước 4. Trong thời hạn 17 ngày làm việc kể từ ngày có Quyết định thành lập, Hội đồng tiến hành thẩm định tại ngân hàng mô, lập biên bản thẩm định và báo cáo kết quả thẩm định cho Bộ trưởng Bộ Y tế, căn cứ kết quả thẩm định của Hội đồng, Bộ trưởng Bộ Y tế cấp Giấy phép hoạt động cho ngân hàng mô theo mẫu quy định tại Phụ lục kèm theo Nghị định số 155/2018/NĐ-CP ngày 12 tháng 11 năm 2018 của Chính phủ. Thời gian giải quyết: Từ khi nhận được hồ sơ hợp lệ của cơ sở đề nghị Bộ Y tế cấp Giấy phép hoạt động ngân hàng mô đến khi Bộ Y tế cấp phép là 30 ngày.",
+      "example": "03 ngày làm việc"
+    }
+  ],
+  "input_fields": [
+    {
+      "field": "request_subject",
+      "label": "Đối tượng làm thủ tục",
+      "type": "string",
+      "required": true
+    },
+    {
+      "field": "insurance_or_medical_need",
+      "label": "Nhu cầu bảo hiểm hoặc y tế",
+      "type": "string",
+      "required": true
+    },
+    {
+      "field": "submission_channel_preference",
+      "label": "Kênh nộp dự kiến",
+      "type": "enum",
+      "required": false,
+      "options": [
+        "Trực tiếp",
+        "Dịch vụ bưu chính"
+      ]
+    },
+    {
+      "field": "has_insurance_number",
+      "label": "Đã có mã BHXH/BHYT",
+      "type": "boolean",
+      "required": false
+    }
+  ],
+  "validation_rules": [
+    {
+      "id": "required-1",
+      "severity": "error",
+      "field": "request_subject",
+      "rule": "Trường bắt buộc phải có dữ liệu hợp lệ trước khi nộp.",
+      "message": "Thiếu trường bắt buộc: Đối tượng làm thủ tục."
+    },
+    {
+      "id": "required-2",
+      "severity": "error",
+      "field": "insurance_or_medical_need",
+      "rule": "Trường bắt buộc phải có dữ liệu hợp lệ trước khi nộp.",
+      "message": "Thiếu trường bắt buộc: Nhu cầu bảo hiểm hoặc y tế."
+    },
+    {
+      "id": "hint-1",
+      "severity": "warning",
+      "field": "general",
+      "rule": "Nên xác định trước kênh nộp hồ sơ để biết có cần bản giấy, bản điện tử hay xuất trình trực tiếp.",
+      "message": "Nên xác định trước kênh nộp hồ sơ để biết có cần bản giấy, bản điện tử hay xuất trình trực tiếp."
+    },
+    {
+      "id": "hint-2",
+      "severity": "warning",
+      "field": "general",
+      "rule": "Có mẫu biểu đính kèm, nên kiểm tra đúng biểu mẫu trước khi nộp.",
+      "message": "Có mẫu biểu đính kèm, nên kiểm tra đúng biểu mẫu trước khi nộp."
+    },
+    {
+      "id": "hint-3",
+      "severity": "warning",
+      "field": "general",
+      "rule": "Nên xác định đúng nhóm đối tượng, mã số bảo hiểm và quyền lợi áp dụng trước khi nộp.",
+      "message": "Nên xác định đúng nhóm đối tượng, mã số bảo hiểm và quyền lợi áp dụng trước khi nộp."
+    }
+  ],
+  "common_errors": [
+    {
+      "field": "general",
+      "issue": "Điền sai mẫu tờ khai hoặc chọn sai biểu mẫu đi kèm.",
+      "fix": "Nên xác định trước kênh nộp hồ sơ để biết có cần bản giấy, bản điện tử hay xuất trình trực tiếp."
+    },
+    {
+      "field": "general",
+      "issue": "Thông tin thửa đất, tài sản hoặc giấy chứng nhận chưa khớp với hồ sơ hiện có.",
+      "fix": "Nên xác định trước kênh nộp hồ sơ để biết có cần bản giấy, bản điện tử hay xuất trình trực tiếp."
+    },
+    {
+      "field": "general",
+      "issue": "Thiếu minh chứng học tập, văn bằng hoặc xác nhận từ cơ sở đào tạo.",
+      "fix": "Nên xác định trước kênh nộp hồ sơ để biết có cần bản giấy, bản điện tử hay xuất trình trực tiếp."
+    }
+  ],
+  "clarifying_questions": [
+    {
+      "id": "clarify_1",
+      "question": "Bạn đang muốn đăng ký, điều chỉnh hay xác nhận quyền lợi y tế hoặc bảo hiểm nào?",
+      "purpose": "workflow_intake"
+    },
+    {
+      "id": "clarify_2",
+      "question": "Bạn đã có mã BHXH/BHYT hoặc thông tin đơn vị tiếp nhận liên quan chưa?",
+      "purpose": "workflow_intake"
+    }
+  ],
+  "legal_basis": [
+    {
+      "title": "NGHỊ ĐỊNH 155/2018/NĐ-CP SỬA ĐỔI QUY ĐỊNH LIÊN QUAN ĐẾN ĐIỀU KIỆN KINH DOANH THUỘC BỘ Y TẾ",
+      "code": "155/2018/NĐ-CP"
+    },
+    {
+      "title": "Luật 75/2006/QH11",
+      "code": "75/2006/QH11"
+    },
+    {
+      "title": "Nghị định 118/2016/NĐ-CP-Nghị định sửa đổi, bổ sung một số điều của Nghị định số 56/2008/NĐ-CP ngày 29 tháng 4 năm 2008 của Chính phủ quy định về tổ chức, hoạt động của ngân hàng mô và Trung tâm điều phối quốc gia về ghép bộ phận cơ thể người",
+      "code": "118/2016/NĐ-CP"
+    }
+  ],
+  "legal_bases": [
+    {
+      "title": "NGHỊ ĐỊNH 155/2018/NĐ-CP SỬA ĐỔI QUY ĐỊNH LIÊN QUAN ĐẾN ĐIỀU KIỆN KINH DOANH THUỘC BỘ Y TẾ",
+      "code": "155/2018/NĐ-CP"
+    },
+    {
+      "title": "Luật 75/2006/QH11",
+      "code": "75/2006/QH11"
+    },
+    {
+      "title": "Nghị định 118/2016/NĐ-CP-Nghị định sửa đổi, bổ sung một số điều của Nghị định số 56/2008/NĐ-CP ngày 29 tháng 4 năm 2008 của Chính phủ quy định về tổ chức, hoạt động của ngân hàng mô và Trung tâm điều phối quốc gia về ghép bộ phận cơ thể người",
+      "code": "118/2016/NĐ-CP"
+    }
+  ],
+  "faq": [
+    {
+      "question": "Có thể nộp qua kênh nào?",
+      "answer": "Các kênh hiện có: Trực tiếp, Dịch vụ bưu chính."
+    },
+    {
+      "question": "Thời gian xử lý tham chiếu là bao lâu?",
+      "answer": "Thời gian xử lý tham chiếu hiện có là 30 ngày."
+    },
+    {
+      "question": "Kết quả chính của thủ tục là gì?",
+      "answer": "Kết quả chính được trích xuất là Giấy phép hoạt động của ngân hàng mô."
+    }
+  ],
+  "guidance": {
+    "highlight_documents": [
+      {
+        "bucket": "required",
+        "name": "b) Bản sao quyết định thành lập ngân hàng mô hoặc bản photocopy có bản chính để đối chiếu hoặc Giấy chứng nhận doanh nghiệp đối với ngân hàng mô tư nhân;",
+        "conditions": [],
+        "attachment_path": null
+      },
+      {
+        "bucket": "required",
+        "name": "c) Bản kê khai cơ sở vật chất, trang thiết bị y tế để chứng minh đủ điều kiện quy định tại Điều 3a Nghị định số 155/2018/NĐ-CP ngày 12 tháng 11 năm 2018 của Chính phủ;",
+        "conditions": [],
+        "attachment_path": null
+      },
+      {
+        "bucket": "required",
+        "name": "a) Đơn đề nghị cấp Giấy phép hoạt động ngân hàng mô theo mẫu quy định tại Phụ lục I ban hành kèm theo Nghị định số 155/2018/NĐ-CP ngày 12 tháng 11 năm 2018 của Chính phủ sửa đổi, bổ sung một số quy định liên quan đến điều kiện đầu tư kinh doanh thuộc phạm vi quản lý nhà nước của Bộ Y tế;",
+        "conditions": [],
+        "attachment_path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/1_003125/ph%E1%BB%A5%20l%E1%BB%A5c%201.docx"
+      },
+      {
+        "bucket": "required",
+        "name": "d) Đối với ngân hàng mô độc lập: Bản kê khai nhân lực của ngân hàng mô để chứng minh đủ điều kiện quy định tại Điều 3a Nghị định số 155/2018/NĐ-CP ngày 12 tháng 11 năm 2018 của Chính phủ. Đối với người quản lý chuyên môn còn phải có bản sao chứng thực văn bằng, chứng chỉ; Đối với ngân hàng mô thuộc cơ sở y tế chỉ cần chứng chỉ hành nghề.",
+        "conditions": [],
+        "attachment_path": null
+      }
+    ],
+    "special_cases": [
+      "Có thể cần đối chiếu thông tin thửa đất hoặc giấy chứng nhận",
+      "Có thể cần xác minh hồ sơ học tập hoặc văn bằng"
+    ],
+    "common_errors": [
+      "Điền sai mẫu tờ khai hoặc chọn sai biểu mẫu đi kèm.",
+      "Thông tin thửa đất, tài sản hoặc giấy chứng nhận chưa khớp với hồ sơ hiện có.",
+      "Thiếu minh chứng học tập, văn bằng hoặc xác nhận từ cơ sở đào tạo."
+    ],
+    "validation_hints": [
+      "Nên xác định trước kênh nộp hồ sơ để biết có cần bản giấy, bản điện tử hay xuất trình trực tiếp.",
+      "Có mẫu biểu đính kèm, nên kiểm tra đúng biểu mẫu trước khi nộp.",
+      "Nên xác định đúng nhóm đối tượng, mã số bảo hiểm và quyền lợi áp dụng trước khi nộp."
+    ]
+  },
+  "next_steps": {
+    "summary": "Nên xác định rõ đối tượng tham gia, quyền lợi hoặc nhu cầu điều chỉnh hồ sơ y tế trước khi nộp. Có thể chọn kênh nộp phù hợp: Trực tiếp, Dịch vụ bưu chính. Hiện có khoảng 4 mục giấy tờ cần theo dõi trong checklist.",
+    "time_badge": "30 ngày",
+    "result_label": "Giấy phép hoạt động của ngân hàng mô",
+    "primary_channel": "postal",
+    "channels": [
+      "in_person",
+      "postal"
+    ]
+  },
+  "notes": [],
+  "provenance": {
+    "pipeline": "raw->structured->normalized->enriched->ui_api_payload",
+    "normalizer_version": "0.2.0",
+    "enricher_version": "0.2.0",
+    "mapping_notes": "excluded_from_clean_workflow_dataset",
+    "supported_group": true
+  }
+}

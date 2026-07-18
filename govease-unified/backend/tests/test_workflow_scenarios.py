@@ -3,7 +3,7 @@ import unittest
 
 from fastapi.testclient import TestClient
 
-os.environ["CORS_ORIGINS"] = "http://localhost:3000,https://gov-ease-ai.vercel.app"
+os.environ["CORS_ORIGINS"] = "http://localhost:3010,https://gov-ease-ai.vercel.app"
 
 from backend.app.main import app
 
@@ -30,7 +30,7 @@ class WorkflowScenarioTests(unittest.TestCase):
             {"message": "Toi can xac nhan dieu kien thuong tru khi dang o thue nha", "status": "completed", "code": "1.013314"},
             {"message": "Toi can xac nhan dieu kien thuong tru cho noi o la xe de o", "status": "completed", "code": "1.013313"},
             {"message": "Toi chua du dieu kien dang ky cu tru nhung van muon khai bao thong tin cu tru", "status": "completed", "code": "1.010040"},
-            {"message": "Toi muon dang ky thuong tru", "status": "needs_clarification", "domain": "residence_management", "node": "residence_need_precondition"},
+            {"message": "Toi muon dang ky thuong tru", "status": "needs_clarification", "domain": "residence_management", "node": "residence_place_type"},
             {"message": "Toi dang o thue va muon dang ky thuong tru", "status": "needs_clarification", "domain": "residence_management", "node": "residence_need_precondition"},
             {"message": "Toi muon lam khai sinh cho con", "status": "needs_clarification", "domain": "birth_registration", "node": "birth_location"},
             {"message": "Toi muon dang ky khai sinh lan dau", "status": "needs_clarification", "domain": "birth_registration", "node": "birth_location"},

@@ -1,0 +1,86 @@
+{
+  "schema_version": "1.0",
+  "enricher_version": "0.2.0",
+  "source": {
+    "procedure_code": "3.000164",
+    "title": "Đăng ký nhận các thông báo, văn bản tố tụng bằng phương tiện điện tử",
+    "group_key": "giai_quyet_khieu_kien",
+    "workflow_family": "complaint_resolution_workflow",
+    "subflow": "giai_quyet_khieu_kien"
+  },
+  "experience": {
+    "entry_label": "Hỗ trợ khiếu nại và phản ánh",
+    "overview_summary": "Thủ tục này thuộc nhóm khiếu nại và phản ánh, thường cần trình bày rõ nội dung vụ việc, quyết định hoặc hành vi bị khiếu nại và căn cứ kèm theo. Kết quả thường nhận được là kết quả giải quyết theo thủ tục này. Thời gian xử lý tham khảo: theo thời hạn của cơ quan xử lý.",
+    "next_step_summary": "Nên tóm tắt rõ nội dung khiếu nại, quyết định hoặc hành vi liên quan và chuẩn bị tài liệu chứng minh trước khi nộp. Có thể chọn kênh nộp phù hợp: Trực tiếp, Trực tuyến. Hiện có khoảng 2 mục giấy tờ cần theo dõi trong checklist.",
+    "tone": "supportive_public_service"
+  },
+  "guidance": {
+    "highlight_documents": [
+      {
+        "bucket": "required",
+        "name": "Giấy tờ phải nộp Tên giấy tờ Mẫu đơn, tờ khai Số lượng Đăng ký nhận thông báo, văn bản tố tụng bằng phương tiện điện tử",
+        "conditions": [],
+        "attachment_path": null
+      },
+      {
+        "bucket": "required",
+        "name": "Thông tin vụ/việc",
+        "conditions": [],
+        "attachment_path": null
+      }
+    ],
+    "special_cases": [
+      "Có thể cần hồ sơ kỹ thuật phương tiện hoặc giấy phép lái xe"
+    ],
+    "common_errors": [
+      "Điền sai mẫu tờ khai hoặc chọn sai biểu mẫu đi kèm."
+    ],
+    "validation_hints": [
+      "Nên xác định trước kênh nộp hồ sơ để biết có cần bản giấy, bản điện tử hay xuất trình trực tiếp.",
+      "Nên nêu rõ diễn biến vụ việc, quyết định hoặc hành vi bị khiếu nại và chuẩn bị tài liệu chứng minh."
+    ]
+  },
+  "intake": {
+    "candidate_input_fields": [
+      {
+        "field_id": "complaint_subject",
+        "label": "Nội dung khiếu nại chính",
+        "field_type": "text",
+        "required": true
+      },
+      {
+        "field_id": "decision_or_behavior_target",
+        "label": "Quyết định hoặc hành vi bị khiếu nại",
+        "field_type": "text",
+        "required": true
+      },
+      {
+        "field_id": "has_supporting_evidence",
+        "label": "Có tài liệu chứng minh kèm theo",
+        "field_type": "boolean",
+        "required": true
+      },
+      {
+        "field_id": "submission_channel_preference",
+        "label": "Kênh nộp dự kiến",
+        "field_type": "enum",
+        "required": false
+      }
+    ],
+    "suggested_clarifying_questions": [
+      "Bạn đang khiếu nại về quyết định hay hành vi nào, và thuộc cơ quan nào?",
+      "Bạn đã có đơn khiếu nại hoặc tài liệu chứng minh nội dung vụ việc chưa?"
+    ]
+  },
+  "ui_hints": {
+    "primary_channel": "in_person",
+    "result_label": null,
+    "time_badge": null,
+    "document_count_badge": 2
+  },
+  "provenance": {
+    "generator": "workflow_domain_enricher",
+    "derivation_mode": "rule_based_semantic_enrichment",
+    "supported_group": true
+  }
+}

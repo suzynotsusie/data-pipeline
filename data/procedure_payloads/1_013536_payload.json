@@ -1,0 +1,298 @@
+{
+  "schema_version": "3.0",
+  "record_type": "public_service_procedure_payload",
+  "id": "procedure-1.013536",
+  "procedure_code": "1.013536",
+  "code": "1.013536",
+  "title": "Thủ tục giải quyết khiếu nại lần hai cấp Bộ Tổng Tham mưu, Tổng cục Chính trị, các Tổng cục, Quân khu, Quân chủng, Bộ Tư lệnh Bộ đội Biên phòng và cấp tương đương",
+  "language": "vi",
+  "status": "generated_from_pipeline",
+  "field": "Khiếu nại BQP",
+  "group_key": "giai_quyet_khieu_kien",
+  "workflow_family": "complaint_resolution_workflow",
+  "subflow": "giai_quyet_khieu_kien",
+  "source": {
+    "source_url": "file:///C:/Users/ku060/Downloads/VAIC%20source/data-pipeline/raw_data/1_013536/1_013536_procedure_detail.md",
+    "source_markdown_path": "C:\\Users\\ku060\\Downloads\\VAIC source\\data-pipeline\\raw_data\\1_013536\\1_013536_procedure_detail.md",
+    "normalized_payload_path": "C:\\Users\\ku060\\Downloads\\VAIC source\\data-pipeline\\govease-unified\\data\\normalized_structured\\1_013536_normalized_structured.json",
+    "enriched_payload_path": "C:\\Users\\ku060\\Downloads\\VAIC source\\data-pipeline\\govease-unified\\data\\enriched_structured_priority\\1_013536_enriched_structured.json"
+  },
+  "scope": {
+    "included": "Thủ tục này thuộc nhóm khiếu nại và phản ánh, thường cần trình bày rõ nội dung vụ việc, quyết định hoặc hành vi bị khiếu nại và căn cứ kèm theo. Kết quả thường nhận được là Quyết định giải quyết khiếu nại lần hai. Thời gian xử lý tham khảo: 70 ngày.",
+    "not_included": []
+  },
+  "agency": {
+    "executing_agency": "Bộ Tư lệnh Quân khu",
+    "submission_place": null,
+    "receiving_places": []
+  },
+  "target_users": [
+    "Công dân Việt Nam"
+  ],
+  "submission_methods": [
+    {
+      "code": "POSTAL",
+      "label": "Dịch vụ bưu chính",
+      "processing_time": "70 ngày",
+      "fee": null,
+      "description": null
+    },
+    {
+      "code": "IN_PERSON",
+      "label": "Trực tiếp",
+      "processing_time": "70 ngày",
+      "fee": null,
+      "description": null
+    }
+  ],
+  "processing_note": "Thời gian xử lý tham chiếu: 70 ngày. Nên tóm tắt rõ nội dung khiếu nại, quyết định hoặc hành vi liên quan và chuẩn bị tài liệu chứng minh trước khi nộp. Có thể chọn kênh nộp phù hợp: Trực tiếp, Dịch vụ bưu chính. Hiện có khoảng 3 mục giấy tờ cần theo dõi trong checklist.",
+  "documents": {
+    "normally_required": [
+      {
+        "name": "Quyết định giải quyết khiếu nại lần đầu",
+        "quantity": "1 bản chính, 0 bản sao",
+        "notes": [],
+        "group": "default",
+        "attachment_path": null
+      },
+      {
+        "name": "1. Đơn khiếu nại hoặc bản ghi lời khiếu nại.",
+        "quantity": "1 bản chính, 0 bản sao",
+        "notes": [],
+        "group": "default",
+        "attachment_path": null
+      }
+    ],
+    "conditional": [
+      {
+        "condition": "2. Giấy uỷ quyền (nếu có).",
+        "document": "2. Giấy uỷ quyền (nếu có).",
+        "quantity": "1 bản chính, 0 bản sao",
+        "notes": [],
+        "attachment_path": null
+      }
+    ],
+    "forms": [],
+    "presented": [],
+    "notes": [],
+    "summary": [
+      {
+        "group": "default",
+        "name": "Quyết định giải quyết khiếu nại lần đầu",
+        "quantity": "1 bản chính, 0 bản sao",
+        "notes": [],
+        "attachment_path": null
+      },
+      {
+        "group": "default",
+        "name": "1. Đơn khiếu nại hoặc bản ghi lời khiếu nại.",
+        "quantity": "1 bản chính, 0 bản sao",
+        "notes": [],
+        "attachment_path": null
+      },
+      {
+        "group": null,
+        "name": null,
+        "quantity": "1 bản chính, 0 bản sao",
+        "notes": [],
+        "attachment_path": null
+      }
+    ]
+  },
+  "steps": [
+    {
+      "order": 1,
+      "title": "Bước 1",
+      "description": "1. Giải quyết khiếu nại lần hai đối với quyết định hành chính, hành vi hành chính của người chỉ huy cơ quan, đơn vị cấp dưới trực tiếp do mình quản lý đã giải quyết lần đầu nhưng còn khiếu nại hoặc khiếu nại lần đầu đã hết thời hạn nhưng chưa được giải quyết. - Trong thời hạn 30 ngày, kể từ ngày hết thời hạn giải quyết khiếu nại quy định tại Điều 28 Luật Khiếu nại mà khiếu nại lần đầu không được giải quyết hoặc kể từ ngày nhận được quyết định giải quyết khiếu nại lần đầu mà người khiếu nại không đồng ý thì có quyền khiếu nại đến người có thẩm quyền giải quyết khiếu nại lần hai. - Khiếu nại lần hai thuộc thẩm quyền giải quyết của Tổng Tham mưu trưởng, Chủ nhiệm Tổng cục Chính trị, Chủ nhiệm các Tổng cục; Tư lệnh Quân khu, Quân chủng, Bộ đội Biên phòng và cấp tương đương Khoản 5 Điều 6 Thông tư số 218/2013/TT-BQP, đã được sửa đổi, bổ sung một số điều tại Thông tư số 45/2025/TT-BQP, người khiếu nại có thể gửi đơn và các tài liệu liên quan (nếu có) qua dịch vụ bưu chính, gửi trên môi trường điện tử hoặc trực tiếp khiếu nại tại nơi tiếp công dân của cơ quan, đơn vị. Cụ thể:",
+      "example": "30 ngày"
+    },
+    {
+      "order": 2,
+      "title": "a)",
+      "description": "a) Trường hợp khiếu nại được thực hiện bằng đơn thì trong đơn khiếu nại phải ghi rõ ngày, tháng, năm khiếu nại; tên, địa chỉ của người khiếu nại; tên, địa chỉ của cơ quan, tổ chức, cá nhân bị khiếu nại; nội dung, lý do khiếu nại, tài liệu liên quan đến nội dung khiếu nại và yêu cầu giải quyết của người khiếu nại. Đơn khiếu nại phải do người khiếu nại ký tên hoặc điểm chỉ.",
+      "example": null
+    },
+    {
+      "order": 3,
+      "title": "b)",
+      "description": "b) Trường hợp người khiếu nại đến khiếu nại trực tiếp thì người tiếp nhận khiếu nại hướng dẫn người khiếu nại viết đơn khiếu nại hoặc người tiếp nhận ghi lại việc khiếu nại bằng văn bản như trường hợp khiếu nại được thực hiện bằng đơn và yêu cầu người khiếu nại ký hoặc điểm chỉ xác nhận vào văn bản.",
+      "example": "trực tiếp"
+    },
+    {
+      "order": 4,
+      "title": "c)",
+      "description": "c) Trường hợp nhiều người cùng khiếu nại về một nội dung thì thực hiện như sau: + Trường hợp nhiều người đến khiếu nại trực tiếp thì cơ quan có thẩm quyền tổ chức tiếp và hướng dẫn người khiếu nại cử đại diện theo quy định tại Điều 6, Điều 7 Nghị định số 124/2020/NĐ-CP để trình bày nội dung khiếu nại; người tiếp nhận khiếu nại ghi lại việc khiếu nại bằng văn bản. Việc tiếp nhiều người cùng khiếu nại thực hiện theo quy định tại Chương V của Luật Khiếu nại; + Trường hợp nhiều người khiếu nại bằng đơn thì trong đơn phải ghi rõ nội dung quy định tại Điểm a Khoản này, có chữ ký của những người khiếu nại và phải cử người đại diện để trình bày khi có yêu cầu của người giải quyết khiếu nại;",
+      "example": "trực tiếp"
+    },
+    {
+      "order": 5,
+      "title": "d)",
+      "description": "d) Trường hợp khiếu nại được thực hiện thông qua người đại diện thì người đại diện phải có giấy tờ chứng minh tính hợp pháp của việc đại diện và thực hiện khiếu nại theo quy định của Luật Khiếu nại. Thanh tra (cán bộ kiêm nhiệm Thanh tra) cơ quan, đơn vị có trách nhiệm tiếp nhận nghiên cứu, xử lý đơn khiếu nại thuộc thẩm quyền của Thủ trưởng cơ quan, đơn vị cấp mình theo quy định tại Mục 1 Chương III Thông tư số 05/2021/TT-TTCP, Điều 7 Thông tư số 218/2013/TT-BQP, đã được sửa đổi, bổ sung một số điều tại Thông tư số 45/2025/TT-BQP, nếu đơn khiếu nại thuộc một trong các trường hợp được quy định tại Điều 11 Luật Khiếu nại thì hướng dẫn hoặc có văn bản trả lời cho người khiếu nại biết rõ lý do, nếu đơn đủ điều kiện để thụ lý giải quyết thì có trách nhiệm báo cáo, đề xuất để Thủ trưởng cơ quan, đơn vị cấp mình quyết định xem xét, giải quyết. Thụ lý đơn: Trong thời hạn 10 ngày, kể từ ngày nhận được đơn khiếu nại thuộc thẩm quyền giải quyết của Thủ trưởng đơn vị các cấp theo Khoản 5 Điều 6 Thông tư số 218/2013/ TT-BQP, đã được sửa đổi, bổ sung một số điều tại Thông tư số 45/2025/TT-BQP thì Thanh tra Bộ Quốc phòng có trách nhiệm giúp Bộ trưởng Bộ Quốc phòng nghiên cứu, xử lý đơn khiếu nại, nếu đơn khiếu nại thuộc một trong các trường hợp được quy định tại Điều 11 Luật Khiếu nại thì hướng dẫn hoặc có văn bản trả lời cho người khiếu nại biết rõ lý do, nếu đơn đủ điều kiện để thụ lý giải quyết thì có trách nhiệm thông báo bằng văn bản cho người khiếu nại, cơ quan, tổ chức, cá nhân có thẩm quyền đã chuyển khiếu nại đến và người giải quyết khiếu nại lần đầu biết và báo cáo, đề xuất Thủ trưởng đơn vị quyết định, xem xét giải quyết. Xác minh vụ việc khiếu nại: Trong quá trình giải quyết khiếu nại lần hai, Thanh tra các cấp căn cứ vào vào nội dung, tính chất của việc khiếu nại tiến hành xác minh, kết luận nội dung khiếu nại. Việc xác minh thực hiện theo quy định tại Khoản 2, 3, 4 Điều 29 Luật Khiếu nại, Mục 2 Chương IV Nghị định số 124/2020/NĐ-CP và các Điều 11,12,13,14 Thông tư số 218/2013/TT-BQP, đã được sửa đổi, bổ sung một số điều tại Thông tư số 45/2025/TT-BQP. Tổ chức đối thoại: - Trong quá trình giải quyết khiếu nại lần hai, Thanh tra các cấp có trách nhiệm tổ chức tiến hành đối thoại với người khiếu nại, người bị khiếu nại, người có quyền và nghĩa vụ liên quan, cơ quan, tổ chức, cá nhân có liên quan để làm rõ nội dung khiếu nại, yêu cầu của người khiếu nại, hướng giải quyết khiếu nại, thông báo bằng văn bản với người khiếu nại, người bị khiếu nại, người có quyền và nghĩa vụ liên quan, cơ quan, tổ chức có liên quan biết thời gian, địa điểm, nội dung việc gặp gỡ, đối thoại; việc đối thoại phải tiến hành công khai, dân chủ theo quy định tại Điều 39, Luật Khiếu nại. - Trường hợp người có thẩm quyền giải quyết khiếu nại không thể tham gia đối thoại (do thực hiện nhiệm vụ) thì ủy quyền cho Chánh Thanh tra cấp mình hoặc Trưởng đoàn xác minh tiến hành đối thoại khi ban hành quyết định giải quyết. - Việc đối thoại được lập thành biên bản; biên bản ghi rõ ý kiến của những người tham gia; kết quả đối thoại, có chữ ký hoặc điểm chỉ của người tham gia; trường hợp người tham gia đối thoại không ký, điểm chỉ xác nhận thì phải ghi rõ lý do, biên bản này được lưu vào hồ sơ vụ việc khiếu nại. Kết quả đối thoại là một trong các căn cứ để giải quyết khiếu nại. - Đối với vụ việc phức tạp, nếu thấy cần thiết, người giải quyết khiếu nại lần hai thành lập Hội đồng tư vấn để tham khảo ý kiến giải quyết khiếu nại Ra quyết định giải quyết khiếu nại lần hai: - Chánh Thanh tra Bộ Tổng Tham mưu, Tổng cục Chính trị, các Tổng cục; Quân khu, Quân chủng, Bộ đội Biên phòng và cấp tương đương hoặc cơ quan được giao xác minh khiếu nại lần hai, báo cáo trình Thủ trưởng cơ quan, đơn vị về kết quả xác minh, kiến nghị biện pháp giải quyết; Thủ trưởng Bộ Tổng Tham mưu, Tổng cục Chính trị, các Tổng cục; Quân khu, Quân chủng, Bộ đội Biên phòng và cấp tương đương xem xét, ra quyết định giải quyết khiếu nại lần hai bằng văn bản. Trong thời hạn 07 ngày, kể từ ngày có quyết định giải quyết khiếu nại lần hai của Thủ trưởng đơn vị. Thanh tra Bộ Tổng Tham mưu, Tổng cục Chính trị, các Tổng cục; Quân khu, Quân chủng, Bộ đội Biên phòng và cấp tương đương chịu trách nhiệm gửi quyết định giải quyết khiếu nại lần hai cho người khiếu nại, người bị khiếu nại, người giải quyết khiếu nại lần đầu, người có quyền, nghĩa vụ liên quan, cơ quan, tổ chức, cá nhân có thẩm quyền chuyển khiếu nại đến.",
+      "example": "10 ngày"
+    }
+  ],
+  "input_fields": [
+    {
+      "field": "complaint_subject",
+      "label": "Nội dung khiếu nại chính",
+      "type": "string",
+      "required": true
+    },
+    {
+      "field": "decision_or_behavior_target",
+      "label": "Quyết định hoặc hành vi bị khiếu nại",
+      "type": "string",
+      "required": true
+    },
+    {
+      "field": "has_supporting_evidence",
+      "label": "Có tài liệu chứng minh kèm theo",
+      "type": "boolean",
+      "required": true
+    },
+    {
+      "field": "submission_channel_preference",
+      "label": "Kênh nộp dự kiến",
+      "type": "enum",
+      "required": false,
+      "options": [
+        "Trực tiếp",
+        "Dịch vụ bưu chính"
+      ]
+    }
+  ],
+  "validation_rules": [
+    {
+      "id": "required-1",
+      "severity": "error",
+      "field": "complaint_subject",
+      "rule": "Trường bắt buộc phải có dữ liệu hợp lệ trước khi nộp.",
+      "message": "Thiếu trường bắt buộc: Nội dung khiếu nại chính."
+    },
+    {
+      "id": "required-2",
+      "severity": "error",
+      "field": "decision_or_behavior_target",
+      "rule": "Trường bắt buộc phải có dữ liệu hợp lệ trước khi nộp.",
+      "message": "Thiếu trường bắt buộc: Quyết định hoặc hành vi bị khiếu nại."
+    },
+    {
+      "id": "required-3",
+      "severity": "error",
+      "field": "has_supporting_evidence",
+      "rule": "Trường bắt buộc phải có dữ liệu hợp lệ trước khi nộp.",
+      "message": "Thiếu trường bắt buộc: Có tài liệu chứng minh kèm theo."
+    },
+    {
+      "id": "hint-1",
+      "severity": "warning",
+      "field": "general",
+      "rule": "Nên xác định trước kênh nộp hồ sơ để biết có cần bản giấy, bản điện tử hay xuất trình trực tiếp.",
+      "message": "Nên xác định trước kênh nộp hồ sơ để biết có cần bản giấy, bản điện tử hay xuất trình trực tiếp."
+    },
+    {
+      "id": "hint-2",
+      "severity": "warning",
+      "field": "general",
+      "rule": "Nên nêu rõ diễn biến vụ việc, quyết định hoặc hành vi bị khiếu nại và chuẩn bị tài liệu chứng minh.",
+      "message": "Nên nêu rõ diễn biến vụ việc, quyết định hoặc hành vi bị khiếu nại và chuẩn bị tài liệu chứng minh."
+    }
+  ],
+  "common_errors": [
+    {
+      "field": "general",
+      "issue": "Nội dung khiếu nại chưa nêu rõ quyết định, hành vi hoặc tài liệu chứng minh liên quan.",
+      "fix": "Nên xác định trước kênh nộp hồ sơ để biết có cần bản giấy, bản điện tử hay xuất trình trực tiếp."
+    }
+  ],
+  "clarifying_questions": [
+    {
+      "id": "clarify_1",
+      "question": "Bạn đang khiếu nại về quyết định hay hành vi nào, và thuộc cơ quan nào?",
+      "purpose": "workflow_intake"
+    },
+    {
+      "id": "clarify_2",
+      "question": "Bạn đã có đơn khiếu nại hoặc tài liệu chứng minh nội dung vụ việc chưa?",
+      "purpose": "workflow_intake"
+    }
+  ],
+  "legal_basis": [
+    {
+      "title": "Luật Khiếu nại năm 2011",
+      "code": "02/2011/QH13"
+    }
+  ],
+  "legal_bases": [
+    {
+      "title": "Luật Khiếu nại năm 2011",
+      "code": "02/2011/QH13"
+    }
+  ],
+  "faq": [
+    {
+      "question": "Có thể nộp qua kênh nào?",
+      "answer": "Các kênh hiện có: Trực tiếp, Dịch vụ bưu chính."
+    },
+    {
+      "question": "Thời gian xử lý tham chiếu là bao lâu?",
+      "answer": "Thời gian xử lý tham chiếu hiện có là 70 ngày."
+    },
+    {
+      "question": "Kết quả chính của thủ tục là gì?",
+      "answer": "Kết quả chính được trích xuất là Quyết định giải quyết khiếu nại lần hai."
+    }
+  ],
+  "guidance": {
+    "highlight_documents": [
+      {
+        "bucket": "required",
+        "name": "Quyết định giải quyết khiếu nại lần đầu",
+        "conditions": [],
+        "attachment_path": null
+      },
+      {
+        "bucket": "required",
+        "name": "1. Đơn khiếu nại hoặc bản ghi lời khiếu nại.",
+        "conditions": [],
+        "attachment_path": null
+      },
+      {
+        "bucket": "conditional",
+        "name": "2. Giấy uỷ quyền (nếu có).",
+        "conditions": [
+          "2. Giấy uỷ quyền (nếu có)."
+        ],
+        "attachment_path": null
+      }
+    ],
+    "special_cases": [
+      "Có thể cần tài liệu chứng minh nội dung khiếu nại"
+    ],
+    "common_errors": [
+      "Nội dung khiếu nại chưa nêu rõ quyết định, hành vi hoặc tài liệu chứng minh liên quan."
+    ],
+    "validation_hints": [
+      "Nên xác định trước kênh nộp hồ sơ để biết có cần bản giấy, bản điện tử hay xuất trình trực tiếp.",
+      "Nên nêu rõ diễn biến vụ việc, quyết định hoặc hành vi bị khiếu nại và chuẩn bị tài liệu chứng minh."
+    ]
+  },
+  "next_steps": {
+    "summary": "Nên tóm tắt rõ nội dung khiếu nại, quyết định hoặc hành vi liên quan và chuẩn bị tài liệu chứng minh trước khi nộp. Có thể chọn kênh nộp phù hợp: Trực tiếp, Dịch vụ bưu chính. Hiện có khoảng 3 mục giấy tờ cần theo dõi trong checklist.",
+    "time_badge": "70 ngày",
+    "result_label": "Quyết định giải quyết khiếu nại lần hai",
+    "primary_channel": "postal",
+    "channels": [
+      "in_person",
+      "postal"
+    ]
+  },
+  "notes": [],
+  "provenance": {
+    "pipeline": "raw->structured->normalized->enriched->ui_api_payload",
+    "normalizer_version": "0.2.0",
+    "enricher_version": "0.2.0",
+    "mapping_notes": "workflow_generated:giai_quyet_khieu_kien/giai_quyet_khieu_kien",
+    "supported_group": true
+  }
+}

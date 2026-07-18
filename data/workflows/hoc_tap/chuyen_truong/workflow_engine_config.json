@@ -1,0 +1,247 @@
+{
+  "schema_version": "1.0",
+  "domain": "hoc_tap",
+  "updated_at": "2026-07-18",
+  "source_files": [
+    "C:\\Users\\ku060\\Downloads\\VAIC source\\data-pipeline\\main\\full-data.csv",
+    "C:\\Users\\ku060\\Downloads\\VAIC source\\data-pipeline\\data\\workflows\\hoc_tap\\summary.csv",
+    "C:\\Users\\ku060\\Downloads\\VAIC source\\data-pipeline\\data\\workflows\\hoc_tap\\normalized.json",
+    "C:\\Users\\ku060\\Downloads\\VAIC source\\data-pipeline\\raw_data"
+  ],
+  "coverage": {
+    "expected_codes": [
+      "1.005108",
+      "1.010627",
+      "2.001904",
+      "2.002854",
+      "2.002855",
+      "2.002856",
+      "2.002857"
+    ],
+    "covered_codes": [
+      "1.005108",
+      "1.010627",
+      "2.001904",
+      "2.002854",
+      "2.002855",
+      "2.002856",
+      "2.002857"
+    ],
+    "missing_codes": []
+  },
+  "llm_contract": {
+    "role": "parse_user_answer_and_rephrase_question_only",
+    "required_output_schema": {
+      "intent": "hoc_tap",
+      "current_node": "string",
+      "slot_updates": {
+        "subdomain_key": "tuyen_sinh | chuyen_truong | hoc_bong_va_ho_tro | van_bang_chung_chi | hoc_tap_o_nuoc_ngoai_bang_ngan_sach | unknown",
+        "operation_key": "string",
+        "operation_group": "string"
+      },
+      "confidence": "0_to_1",
+      "needs_human_review": "boolean"
+    }
+  },
+  "entry_prompts": [
+    "Bạn đang cần làm việc về tuyển sinh, chuyển trường, hỗ trợ học tập, văn bằng chứng chỉ hay du học bằng ngân sách nhà nước?",
+    "Bạn muốn đăng ký mới, điều chỉnh, xin hỗ trợ, xin công nhận hay xin cấp lại giấy tờ học tập?"
+  ],
+  "slots": [
+    {
+      "name": "subdomain_key",
+      "required": true,
+      "description": "Nhánh chính của nhóm Học tập."
+    },
+    {
+      "name": "operation_key",
+      "required": true,
+      "description": "Thao tác cụ thể ánh xạ trực tiếp tới thủ tục cuối cùng."
+    },
+    {
+      "name": "operation_group",
+      "required": false,
+      "description": "Nhóm thao tác để gom các thủ tục gần nhau cho UI và parser."
+    }
+  ],
+  "subdomain_catalog": [
+    {
+      "subdomain_key": "chuyen_truong",
+      "subdomain_label": "Chuyển trường",
+      "event_id": 255,
+      "summary": "Nhóm thủ tục chuyển trường, tiếp nhận học sinh và điều chỉnh quá trình học tập khi người học thay đổi nơi học."
+    }
+  ],
+  "decision_tree": {
+    "start_node": "study_subdomain",
+    "nodes": [
+      {
+        "id": "study_subdomain",
+        "type": "question",
+        "slot": "subdomain_key",
+        "question": "Bạn đang hỏi về tuyển sinh, chuyển trường, học bổng hỗ trợ, văn bằng chứng chỉ hay học tập ở nước ngoài bằng ngân sách nhà nước?",
+        "options": [
+          "chuyen_truong"
+        ],
+        "prefilled_value": "chuyen_truong"
+      },
+      {
+        "id": "study_operation",
+        "type": "question",
+        "slot": "operation_key",
+        "question": "Bạn cần làm thao tác nào cụ thể trong nhánh đã chọn?",
+        "options_by_subdomain": {
+          "chuyen_truong": [
+            {
+              "operation_key": "thuyen_chuyen_doi_tuong_hoc_bo_tuc_trung_hoc_co_so",
+              "operation_group": "chuyen_truong",
+              "procedure_code": "1.005108",
+              "procedure_title": "Thuyên chuyển đối tượng học bổ túc trung học cơ sở"
+            },
+            {
+              "operation_key": "chuyen_nganh_nghe_hoc_chuyen_truong_chuyen_nuoc_den_hoc",
+              "operation_group": "chuyen_truong",
+              "procedure_code": "1.010627",
+              "procedure_title": "Chuyển ngành, nghề học, chuyển trường, chuyển nước đến học"
+            },
+            {
+              "operation_key": "tiep_nhan_doi_tuong_hoc_bo_tuc_trung_hoc_co_so",
+              "operation_group": "tiep_nhan_hoc_sinh",
+              "procedure_code": "2.001904",
+              "procedure_title": "Tiếp nhận đối tượng học bổ túc trung học cơ sở"
+            },
+            {
+              "operation_key": "chuyen_truong_va_tiep_nhan_hoc_sinh",
+              "operation_group": "chuyen_truong",
+              "procedure_code": "2.002854",
+              "procedure_title": "Chuyển trường và tiếp nhận học sinh"
+            },
+            {
+              "operation_key": "tiep_nhan_hoc_sinh_viet_nam_tu_nuoc_ngoai_ve_nuoc",
+              "operation_group": "tiep_nhan_tu_nuoc_ngoai",
+              "procedure_code": "2.002855",
+              "procedure_title": "Tiếp nhận học sinh Việt Nam từ nước ngoài về nước"
+            },
+            {
+              "operation_key": "tiep_nhan_hoc_sinh_nguoi_nuoc_ngoai",
+              "operation_group": "tiep_nhan_nguoi_nuoc_ngoai",
+              "procedure_code": "2.002856",
+              "procedure_title": "Tiếp nhận học sinh người nước ngoài"
+            },
+            {
+              "operation_key": "tiep_nhan_hoc_sinh_xin_hoc_lai",
+              "operation_group": "hoc_lai",
+              "procedure_code": "2.002857",
+              "procedure_title": "Tiếp nhận học sinh xin học lại"
+            }
+          ]
+        },
+        "options": [
+          "thuyen_chuyen_doi_tuong_hoc_bo_tuc_trung_hoc_co_so",
+          "chuyen_nganh_nghe_hoc_chuyen_truong_chuyen_nuoc_den_hoc",
+          "tiep_nhan_doi_tuong_hoc_bo_tuc_trung_hoc_co_so",
+          "chuyen_truong_va_tiep_nhan_hoc_sinh",
+          "tiep_nhan_hoc_sinh_viet_nam_tu_nuoc_ngoai_ve_nuoc",
+          "tiep_nhan_hoc_sinh_nguoi_nuoc_ngoai",
+          "tiep_nhan_hoc_sinh_xin_hoc_lai"
+        ]
+      }
+    ],
+    "routes": [
+      {
+        "route_id": "chuyen_truong-1_005108",
+        "conditions": {
+          "subdomain_key": "chuyen_truong",
+          "operation_key": "thuyen_chuyen_doi_tuong_hoc_bo_tuc_trung_hoc_co_so"
+        },
+        "procedure_code": "1.005108",
+        "procedure_name": "Thuyên chuyển đối tượng học bổ túc trung học cơ sở",
+        "why_this_route": "Route trực tiếp cho nhu cầu 'Thuyên chuyển đối tượng học bổ túc trung học cơ sở' trong nhánh 'Chuyển trường'."
+      },
+      {
+        "route_id": "chuyen_truong-1_010627",
+        "conditions": {
+          "subdomain_key": "chuyen_truong",
+          "operation_key": "chuyen_nganh_nghe_hoc_chuyen_truong_chuyen_nuoc_den_hoc"
+        },
+        "procedure_code": "1.010627",
+        "procedure_name": "Chuyển ngành, nghề học, chuyển trường, chuyển nước đến học",
+        "why_this_route": "Route trực tiếp cho nhu cầu 'Chuyển ngành, nghề học, chuyển trường, chuyển nước đến học' trong nhánh 'Chuyển trường'."
+      },
+      {
+        "route_id": "chuyen_truong-2_001904",
+        "conditions": {
+          "subdomain_key": "chuyen_truong",
+          "operation_key": "tiep_nhan_doi_tuong_hoc_bo_tuc_trung_hoc_co_so"
+        },
+        "procedure_code": "2.001904",
+        "procedure_name": "Tiếp nhận đối tượng học bổ túc trung học cơ sở",
+        "why_this_route": "Route trực tiếp cho nhu cầu 'Tiếp nhận đối tượng học bổ túc trung học cơ sở' trong nhánh 'Chuyển trường'."
+      },
+      {
+        "route_id": "chuyen_truong-2_002854",
+        "conditions": {
+          "subdomain_key": "chuyen_truong",
+          "operation_key": "chuyen_truong_va_tiep_nhan_hoc_sinh"
+        },
+        "procedure_code": "2.002854",
+        "procedure_name": "Chuyển trường và tiếp nhận học sinh",
+        "why_this_route": "Route trực tiếp cho nhu cầu 'Chuyển trường và tiếp nhận học sinh' trong nhánh 'Chuyển trường'."
+      },
+      {
+        "route_id": "chuyen_truong-2_002855",
+        "conditions": {
+          "subdomain_key": "chuyen_truong",
+          "operation_key": "tiep_nhan_hoc_sinh_viet_nam_tu_nuoc_ngoai_ve_nuoc"
+        },
+        "procedure_code": "2.002855",
+        "procedure_name": "Tiếp nhận học sinh Việt Nam từ nước ngoài về nước",
+        "why_this_route": "Route trực tiếp cho nhu cầu 'Tiếp nhận học sinh Việt Nam từ nước ngoài về nước' trong nhánh 'Chuyển trường'."
+      },
+      {
+        "route_id": "chuyen_truong-2_002856",
+        "conditions": {
+          "subdomain_key": "chuyen_truong",
+          "operation_key": "tiep_nhan_hoc_sinh_nguoi_nuoc_ngoai"
+        },
+        "procedure_code": "2.002856",
+        "procedure_name": "Tiếp nhận học sinh người nước ngoài",
+        "why_this_route": "Route trực tiếp cho nhu cầu 'Tiếp nhận học sinh người nước ngoài' trong nhánh 'Chuyển trường'."
+      },
+      {
+        "route_id": "chuyen_truong-2_002857",
+        "conditions": {
+          "subdomain_key": "chuyen_truong",
+          "operation_key": "tiep_nhan_hoc_sinh_xin_hoc_lai"
+        },
+        "procedure_code": "2.002857",
+        "procedure_name": "Tiếp nhận học sinh xin học lại",
+        "why_this_route": "Route trực tiếp cho nhu cầu 'Tiếp nhận học sinh xin học lại' trong nhánh 'Chuyển trường'."
+      }
+    ]
+  },
+  "pre_submission_checks": [
+    {
+      "field_group": "education_identity",
+      "checks": [
+        "Thông tin người học phải thống nhất giữa giấy tờ nhân thân, hồ sơ trường học và biểu mẫu nộp.",
+        "Phải xác định đúng cấp học hoặc chương trình đào tạo trước khi chọn thủ tục."
+      ]
+    },
+    {
+      "field_group": "financial_support",
+      "checks": [
+        "Các thủ tục hỗ trợ học tập phải có giấy tờ chứng minh đúng diện hưởng chính sách.",
+        "Nếu xin miễn giảm học phí hoặc học bổng thì phải làm rõ cơ sở giáo dục và bậc học hiện tại."
+      ]
+    },
+    {
+      "field_group": "abroad_study",
+      "checks": [
+        "Nhóm học tập ở nước ngoài phải làm rõ trạng thái đi học, đang học hay đã hoàn thành về nước.",
+        "Các yêu cầu gia hạn hoặc tạm dừng phải có căn cứ phê duyệt của cơ quan cử đi học hoặc cơ quan quản lý."
+      ]
+    }
+  ],
+  "subdomain_key": "chuyen_truong"
+}

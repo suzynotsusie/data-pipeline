@@ -1,0 +1,191 @@
+{
+  "schema_version": "1.0",
+  "normalizer_version": "0.2.0",
+  "source": {
+    "procedure_code": "2.002679",
+    "title": "Hỗ trợ Trung tâm Dịch vụ việc làm tỉnh đưa lao động đi làm việc ở nước ngoài (tại Trung Quốc và Hàn Quốc theo Thỏa thuận địa phương) và đi làm việc ngoài tỉnh",
+    "raw_structured_parser_version": "0.1.0",
+    "field": "Việc làm (G07-LĐ11)"
+  },
+  "procedure": {
+    "level": "Cấp tỉnh",
+    "procedure_type": "TTHC được luật giao quy định chi tiết",
+    "target_users": [
+      "Tổ chức (không bao gồm doanh nghiệp",
+      "HTX)"
+    ],
+    "authorities": [
+      "UBND tỉnh Tuyên Quang"
+    ],
+    "receiving_places": []
+  },
+  "submission": {
+    "channels": [
+      "in_person",
+      "online",
+      "postal"
+    ],
+    "methods": [
+      {
+        "method_id": "method_1",
+        "channel": "in_person",
+        "processing_time_text": "15 ngày làm việc",
+        "fee_text": null,
+        "description": "15 ngày làm việc, kể từ khi nhận đủ hồ sơ hợp lệ",
+        "is_online": false,
+        "is_postal": false,
+        "is_in_person": true
+      },
+      {
+        "method_id": "method_2",
+        "channel": "online",
+        "processing_time_text": "15 ngày làm việc",
+        "fee_text": null,
+        "description": "15 ngày làm việc, kể từ khi nhận đủ hồ sơ hợp lệ",
+        "is_online": true,
+        "is_postal": false,
+        "is_in_person": false
+      },
+      {
+        "method_id": "method_3",
+        "channel": "postal",
+        "processing_time_text": "15 ngày làm việc",
+        "fee_text": null,
+        "description": "15 ngày làm việc, kể từ khi nhận đủ hồ sơ hợp lệ",
+        "is_online": false,
+        "is_postal": true,
+        "is_in_person": false
+      }
+    ],
+    "timing_summary": {
+      "unique_processing_times": [
+        "15 ngày làm việc"
+      ],
+      "method_count": 3
+    }
+  },
+  "documents": {
+    "required": [
+      {
+        "document_id": "i_v_i_a_ng_i_lao_ng_i_l_m_vi_c_n_c_ngo_i_c_ng_v_n_ngh_thanh_to_n_k_m_theo_danh_s_ch_ng_i_lao_ng_danh_s_ch_c_x_c_nh_n_c_a_ubnd_c_p_x_n_i_ng_i_lao_ng_c_tr",
+        "name": "Đối với đưa người lao động đi làm việc ở nước ngoài: Công văn đề nghị thanh toán kèm theo danh sách người lao động (danh sách có xác nhận của UBND cấp xã nơi người lao động cư trú)",
+        "group_name": "default",
+        "group_type": "unknown",
+        "original_count": "1",
+        "copy_count": "0",
+        "conditions": [],
+        "attachment_label": null,
+        "attachment_path": null
+      },
+      {
+        "document_id": "i_v_i_a_ng_i_lao_ng_i_l_m_vi_c_ngo_i_t_nh_c_ng_v_n_ngh_thanh_to_n_k_m_theo_danh_s_ch_ng_i_lao_ng_x_c_nh_n_c_a_doanh_nghi_p_ti_p_nh_n_lao_ng_h_giang_n_l_m_vi_c_m_u_s_03",
+        "name": "Đối với đưa người lao động đi làm việc ngoài tỉnh: Công văn đề nghị thanh toán kèm theo danh sách người lao động, xác nhận của doanh nghiệp tiếp nhận lao động Hà Giang đến làm việc (mẫu số 03).",
+        "group_name": "default",
+        "group_type": "unknown",
+        "original_count": "1",
+        "copy_count": "0",
+        "conditions": [],
+        "attachment_label": null,
+        "attachment_path": null
+      }
+    ],
+    "conditional": [],
+    "presented": [],
+    "notes": [],
+    "forms": [],
+    "empty_groups": [],
+    "document_count": 2
+  },
+  "process": {
+    "steps": [
+      {
+        "step_id": "step_1",
+        "title": null,
+        "content": "1. Trung tâm Dịch vụ việc làm tỉnh (sau đây gọi là Trung tâm) đưa lao động đi làm việc ở nước ngoài và đi làm việc ngoài tỉnh có nhu cầu được hỗ trợ gửi hồ sơ đến Sở Nội vụ.",
+        "actor": "user",
+        "channel_hint": null,
+        "time_hint": null
+      },
+      {
+        "step_id": "step_2",
+        "title": "Bước 1:",
+        "content": "Bước 1: Sở Nội vụ thực hiện thẩm định hồ sơ trong thời gian 05 ngày làm việc và gửi Sở Tài chính để xem xét trình Ủy ban nhân dân cấp tỉnh. Nếu hồ sơ chưa đáp ứng đủ tiêu chuẩn, chất lượng thì Sở Nội vụ có trách nhiệm tổng hợp và gửi Trung tâm Dịch vụ việc làm để bổ sung, sửa đổi hồ sơ: 03 ngày làm việc (chỉ được thực hiện một lần). Trường hợp hồ sơ không đáp ứng được các điều kiện để tiếp tục giải quyết thì thực hiện trả hồ sơ ngay sau khi tổ chức thẩm định và nêu rõ lý do.",
+        "actor": "user",
+        "channel_hint": null,
+        "time_hint": "05 ngày làm việc"
+      },
+      {
+        "step_id": "step_3",
+        "title": "Bước 2:",
+        "content": "Bước 2: Căn cứ kết quả thẩm định, Sở Tài chính trình Ủy ban nhân dân cấp tỉnh xem xét quyết định: 05 ngày làm việc.",
+        "actor": "user",
+        "channel_hint": null,
+        "time_hint": "05 ngày làm việc"
+      },
+      {
+        "step_id": "step_4",
+        "title": "Bước 3:",
+        "content": "Bước 3: Ủy ban nhân dân cấp tỉnh xem xét quyết định hỗ trợ và trả kết quả cho Sở Tài chính, Sở Nội vụ: 05 ngày làm việc. Trường hợp không quyết định phải có văn bản trả lời, nêu rõ lý do: 03 ngày làm việc.",
+        "actor": "user",
+        "channel_hint": null,
+        "time_hint": "05 ngày làm việc"
+      },
+      {
+        "step_id": "step_5",
+        "title": "Bước 4:",
+        "content": "Bước 4: Sở Nội vụ trả kết quả cho Trung tâm Dịch vụ việc làm tỉnh.",
+        "actor": "user",
+        "channel_hint": null,
+        "time_hint": null
+      }
+    ],
+    "step_count": 5,
+    "notes": []
+  },
+  "eligibility": {
+    "conditions": [
+      "Đối tượng không áp dụng: Không hỗ trợ Trung tâm dịch vụ việc làm đối với số lao động do Trung tâm tư vấn, đưa đi đã được hỗ trợ tư vấn, giáo dục định hướng cho người lao động theo Quyết định số 352/QĐ-UBND ngày 27/2/2018 của UBND tỉnh về phê duyệt Phương án thí điểm lựa chọn doanh nghiệp đưa lao động sang Trung Quốc làm việc theo Thỏa thuận quản lý lao động qua biên giới; Quyết định số 215/QĐ-UBND ngày 15/02/2024 của Ủy ban nhân dân cấp tỉnh về phê duyệt Phương án thí điểm lựa chọn doanh nghiệp đưa lao động sang Trung Quốc làm việc theo Thỏa thuận quản lý lao động qua biên giới. Nghị quyết số 47/2012/NQ-HĐND ngày 14/7/2012 của HĐND tỉnh; Nghị quyết số 27/2019/NQ-HĐND ngày 11/12/2019 của HĐND tỉnh."
+    ],
+    "has_conditions": true
+  },
+  "results": {
+    "items": [
+      {
+        "name": "Quyết định hỗ trợ hoặc văn bản trả lời, nêu rõ lý do không có quyết định hỗ trợ",
+        "result_code": "KQ.H22.000009",
+        "raw_text": "Quyết định hỗ trợ hoặc văn bản trả lời, nêu rõ lý do không có quyết định hỗ trợ"
+      }
+    ],
+    "primary_result": {
+      "name": "Quyết định hỗ trợ hoặc văn bản trả lời, nêu rõ lý do không có quyết định hỗ trợ",
+      "result_code": "KQ.H22.000009",
+      "raw_text": "Quyết định hỗ trợ hoặc văn bản trả lời, nêu rõ lý do không có quyết định hỗ trợ"
+    }
+  },
+  "legal_basis": {
+    "items": [
+      {
+        "title": "Nghị định 150/2025/NĐ-CP quy định tổ chức các cơ quan chuyên môn thuộc Ủy ban nhân dân tỉnh, thành phố trực thuộc trung ương và Ủy ban nhân dân xã, phường, đặc khu thuộc tỉnh, thành phố trực thuộc trung ương.",
+        "code": "150/2025/NĐ-CP"
+      },
+      {
+        "title": "Nghị quyết số 19/2024/NQ-HĐND ngày 14/11/2024 của HĐND tỉnh Hà Giang quy định về hỗ trợ người lao động tỉnh Hà Giang đi làm việc ở nước ngoài và đi làm việc ngoài tỉnh",
+        "code": "19/2024/NQ-HĐND"
+      },
+      {
+        "title": "Nghị quyết số 51/NQ-HĐND ngày 25/8/2025 của HĐND tỉnh Tuyên Quang về việc áp dụng các Nghị quyết quy phạm pháp luật của Hội đồng nhân dân tỉnh Tuyên Quang và tỉnh Hà Giang trước sắp xếp trên địa bàn tỉnh Tuyên Quang.",
+        "code": "51/NQ-HĐND"
+      }
+    ],
+    "count": 3
+  },
+  "attachments": [],
+  "signals": {
+    "raw_parse_warnings": [],
+    "missing_documents": false,
+    "documents_section_present": true,
+    "documents_declared_empty": false,
+    "documents_only_in_notes": false,
+    "missing_results": false
+  }
+}

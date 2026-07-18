@@ -1,0 +1,328 @@
+{
+  "schema_version": "1.0",
+  "normalizer_version": "0.2.0",
+  "source": {
+    "procedure_code": "1.013105",
+    "title": "Cấp mới Giấy chứng nhận đủ điều kiện hoạt động kiểm định khí thải xe mô tô, xe gắn máy",
+    "raw_structured_parser_version": "0.1.0",
+    "field": "Đăng kiểm"
+  },
+  "procedure": {
+    "level": "Cấp tỉnh",
+    "procedure_type": "TTHC được luật giao quy định chi tiết",
+    "target_users": [
+      "Tổ chức (không bao gồm doanh nghiệp",
+      "HTX)",
+      "Doanh nghiệp có vốn đầu tư nước ngoài",
+      "Doanh nghiệp",
+      "Tổ chức nước ngoài",
+      "Hợp tác xã"
+    ],
+    "authorities": [
+      "Sở Xây dựng"
+    ],
+    "receiving_places": []
+  },
+  "submission": {
+    "channels": [
+      "in_person",
+      "online",
+      "postal"
+    ],
+    "methods": [
+      {
+        "method_id": "method_1",
+        "channel": "online",
+        "processing_time_text": "2 ngày làm việc",
+        "fee_text": null,
+        "description": "- Tiếp nhận hồ sơ: 03 ngày làm việc.<br>- Kiểm tra, đánh giá thực tế: 08 ngày.<br>- Cấp Giấy chứng nhận: 02 ngày làm việc.",
+        "is_online": true,
+        "is_postal": false,
+        "is_in_person": false
+      },
+      {
+        "method_id": "method_2",
+        "channel": "postal",
+        "processing_time_text": "2 ngày làm việc",
+        "fee_text": null,
+        "description": "- Tiếp nhận hồ sơ: 03 ngày làm việc.<br>- Kiểm tra, đánh giá thực tế: 08 ngày.<br>- Cấp Giấy chứng nhận: 02 ngày làm việc.",
+        "is_online": false,
+        "is_postal": true,
+        "is_in_person": false
+      },
+      {
+        "method_id": "method_3",
+        "channel": "in_person",
+        "processing_time_text": "2 ngày làm việc",
+        "fee_text": null,
+        "description": "- Tiếp nhận hồ sơ: 03 ngày làm việc.<br>- Kiểm tra, đánh giá thực tế: 08 ngày.<br>- Cấp Giấy chứng nhận: 02 ngày làm việc.",
+        "is_online": false,
+        "is_postal": false,
+        "is_in_person": true
+      }
+    ],
+    "timing_summary": {
+      "unique_processing_times": [
+        "2 ngày làm việc"
+      ],
+      "method_count": 3
+    }
+  },
+  "documents": {
+    "required": [
+      {
+        "document_id": "v_n_b_n_ngh_theo_m_u_k_m_theo_b_n_th_ng_tin_v_c_s_ki_m_nh_kh_th_i",
+        "name": "Văn bản đề nghị theo mẫu kèm theo bản thông tin về cơ sở kiểm định khí thải",
+        "group_name": "* Trường hợp đề nghị cấp mới Giấy chứng nhận",
+        "group_type": "conditional",
+        "original_count": "1",
+        "copy_count": "0",
+        "conditions": [],
+        "attachment_label": null,
+        "attachment_path": null
+      },
+      {
+        "document_id": "danh_s_ch_thi_t_b_ki_m_tra_theo_m_u",
+        "name": "Danh sách thiết bị kiểm tra theo mẫu",
+        "group_name": "* Trường hợp đề nghị cấp mới Giấy chứng nhận",
+        "group_type": "conditional",
+        "original_count": "1",
+        "copy_count": "0",
+        "conditions": [],
+        "attachment_label": null,
+        "attachment_path": null
+      },
+      {
+        "document_id": "danh_s_ch_tr_ch_ngang_nh_n_l_c_theo_m_u",
+        "name": "Danh sách trích ngang nhân lực theo mẫu",
+        "group_name": "* Trường hợp đề nghị cấp mới Giấy chứng nhận",
+        "group_type": "conditional",
+        "original_count": "1",
+        "copy_count": "0",
+        "conditions": [],
+        "attachment_label": null,
+        "attachment_path": null
+      },
+      {
+        "document_id": "b_n_v_b_tr_chung_c_a_c_s_ki_m_nh_kh_th_i_th_hi_n_c_v_tr_ki_m_tra",
+        "name": "Bản vẽ bố trí chung của cơ sở kiểm định khí thải thể hiện được vị trí kiểm tra",
+        "group_name": "* Trường hợp đề nghị cấp mới Giấy chứng nhận",
+        "group_type": "conditional",
+        "original_count": "1",
+        "copy_count": "0",
+        "conditions": [],
+        "attachment_label": null,
+        "attachment_path": null
+      },
+      {
+        "document_id": "v_n_b_n_ngh_ki_m_tra_nh_gi_l_i",
+        "name": "Văn bản đề nghị kiểm tra, đánh giá lại",
+        "group_name": "Trường hợp phải đánh giá lại",
+        "group_type": "conditional",
+        "original_count": "1",
+        "copy_count": "0",
+        "conditions": [],
+        "attachment_label": null,
+        "attachment_path": null
+      }
+    ],
+    "conditional": [],
+    "presented": [],
+    "notes": [],
+    "forms": [],
+    "empty_groups": [],
+    "document_count": 5
+  },
+  "process": {
+    "steps": [
+      {
+        "step_id": "step_1",
+        "title": null,
+        "content": "1. **a) Nộp hồ sơ TTHC:**",
+        "actor": "user",
+        "channel_hint": null,
+        "time_hint": null
+      },
+      {
+        "step_id": "step_2",
+        "title": null,
+        "content": "Tổ chức thành lập cơ sở kiểm định khí thải nộp 01 bộ hồ sơ đề nghị cấp mới giấy chứng nhận đủ điều kiện hoạt động kiểm định khí thải xe mô tô, xe gắn máy đến Trung tâm Phục vụ hành chính công cấp tỉnh.",
+        "actor": "user",
+        "channel_hint": null,
+        "time_hint": null
+      },
+      {
+        "step_id": "step_3",
+        "title": null,
+        "content": "2. **b) Giải quyết TTHC:**",
+        "actor": "user",
+        "channel_hint": null,
+        "time_hint": null
+      },
+      {
+        "step_id": "step_4",
+        "title": null,
+        "content": "* Tiếp nhận hồ sơ",
+        "actor": "user",
+        "channel_hint": null,
+        "time_hint": null
+      },
+      {
+        "step_id": "step_5",
+        "title": null,
+        "content": "- Trường hợp nộp trực tiếp: Sở Xây dựng kiểm tra thành phần hồ sơ trong ngày làm việc; nếu chưa đầy đủ theo quy định thì hướng dẫn tổ chức thành lập cơ sở kiểm định khí thải hoàn thiện hồ sơ; nếu đầy đủ theo quy định, lập phiếu kiểm soát, trong thời hạn 03 ngày làm việc kể từ ngày nhận được hồ sơ, lập thông báo tiếp nhận hồ sơ, trong đó ghi rõ thông tin về lịch kiểm tra, đánh giá thực tế;",
+        "actor": "user",
+        "channel_hint": "trực tiếp",
+        "time_hint": "03 ngày làm việc"
+      },
+      {
+        "step_id": "step_6",
+        "title": null,
+        "content": "- Trường hợp nộp qua hệ thống bưu chính hoặc qua hệ thống dịch vụ công trực tuyến: trong thời hạn 01 ngày làm việc kể từ thời điểm nhận hồ sơ, Sở Xây dựng kiểm tra thành phần hồ sơ; nếu chưa đầy đủ theo quy định, thông báo cho tổ chức thành lập cơ sở kiểm định khí thải; nếu đầy đủ theo quy định, lập phiếu kiểm soát, trong thời hạn 03 ngày làm việc kể từ ngày nhận được hồ sơ, lập thông báo tiếp nhận hồ sơ, trong đó ghi rõ thông tin về lịch kiểm tra, đánh giá thực tế.",
+        "actor": "user",
+        "channel_hint": "trực tuyến",
+        "time_hint": "01 ngày làm việc"
+      },
+      {
+        "step_id": "step_7",
+        "title": null,
+        "content": "* Kiểm tra, đánh giá thực tế",
+        "actor": "user",
+        "channel_hint": null,
+        "time_hint": null
+      },
+      {
+        "step_id": "step_8",
+        "title": null,
+        "content": "Việc kiểm tra, đánh giá thực tế được thực hiện trong thời hạn 08 ngày kể từ ngày lập thông báo tiếp nhận hồ sơ như sau:",
+        "actor": "user",
+        "channel_hint": null,
+        "time_hint": "08 ngày"
+      },
+      {
+        "step_id": "step_9",
+        "title": null,
+        "content": "- Kiểm tra, đánh giá cơ sở kiểm định khí thải phù hợp với yêu cầu kỹ thuật quy định tại Quy chuẩn kỹ thuật quốc gia về cơ sở vật chất kỹ thuật và vị trí cơ sở đăng kiểm xe cơ giới, cơ sở kiểm định khí thải xe mô tô, xe gắn máy để ghi nhận vào biên bản;",
+        "actor": "user",
+        "channel_hint": null,
+        "time_hint": null
+      },
+      {
+        "step_id": "step_10",
+        "title": null,
+        "content": "- Kiểm tra, đánh giá cơ sở kiểm định khí thải theo quy định tại Nghị định quy định về điều kiện kinh doanh dịch vụ kiểm định xe cơ giới; tổ chức, hoạt động của cơ sở đăng kiểm; niên hạn sử dụng của xe cơ giới và tổng hợp kết quả kiểm tra, đánh giá ghi nhận các nội dung tương ứng vào biên bản.",
+        "actor": "user",
+        "channel_hint": null,
+        "time_hint": null
+      },
+      {
+        "step_id": "step_11",
+        "title": null,
+        "content": "* Xử lý kết quả kiểm tra, đánh giá thực tế",
+        "actor": "user",
+        "channel_hint": null,
+        "time_hint": null
+      },
+      {
+        "step_id": "step_12",
+        "title": null,
+        "content": "- Trường hợp kết quả kiểm tra, đánh giá thực tế đạt yêu cầu: Sở Xây dựng thực hiện cấp giấy chứng nhận đủ điều kiện hoạt động kiểm định khí thải xe mô tô, xe gắn máy;",
+        "actor": "user",
+        "channel_hint": null,
+        "time_hint": null
+      },
+      {
+        "step_id": "step_13",
+        "title": null,
+        "content": "- Trường hợp kết quả kiểm tra, đánh giá thực tế không đạt yêu cầu: Sở Xây dựng ghi rõ lý do vào biên bản và gửi cho tổ chức thành lập cơ sở kiểm định khí thải để khắc phục các nội dung không đạt yêu cầu.",
+        "actor": "user",
+        "channel_hint": null,
+        "time_hint": null
+      },
+      {
+        "step_id": "step_14",
+        "title": null,
+        "content": "* Cấp giấy chứng nhận đủ điều kiện hoạt động kiểm định khí thải xe mô tô, xe gắn máy",
+        "actor": "user",
+        "channel_hint": null,
+        "time_hint": null
+      },
+      {
+        "step_id": "step_15",
+        "title": null,
+        "content": "Trong thời hạn 02 ngày làm việc kể từ ngày kết thúc việc kiểm tra, đánh giá thực tế đạt yêu cầu, Sở Xây dựng cấp giấy chứng nhận đủ điều kiện hoạt động kiểm định khí thải xe mô tô, xe gắn máy; mã số cơ sở kiểm định khí thải.",
+        "actor": "user",
+        "channel_hint": null,
+        "time_hint": "02 ngày làm việc"
+      },
+      {
+        "step_id": "step_16",
+        "title": null,
+        "content": "* Khắc phục đối với trường hợp kết quả kiểm tra, đánh giá không đạt yêu cầu",
+        "actor": "user",
+        "channel_hint": null,
+        "time_hint": null
+      },
+      {
+        "step_id": "step_17",
+        "title": null,
+        "content": "- Việc khắc phục và kiểm tra, đánh giá lại được thực hiện trong thời hạn 03 tháng kể từ ngày thông báo các nội dung không đạt yêu cầu. Quá thời hạn này, để tiếp tục, tổ chức thành lập cơ sở kiểm định khí thải thực hiện trình tự, thủ tục lại từ đầu;",
+        "actor": "user",
+        "channel_hint": null,
+        "time_hint": "03 tháng"
+      },
+      {
+        "step_id": "step_18",
+        "title": null,
+        "content": "- Sau khi khắc phục các nội dung không đạt, tổ chức thành lập cơ sở kiểm định khí thải gửi văn bản đề nghị tới Sở Xây dựng. Trong thời hạn 03 ngày làm việc kể từ ngày nhận được văn bản đề nghị, Sở Xây dựng thực hiện các bước quy định. Trường hợp kết quả kiểm tra, đánh giá lại không đạt yêu cầu, nêu rõ lý do không đạt và kết luận cơ sở kiểm định khí thải không đủ điều kiện hoạt động, dừng thủ tục cấp giấy chứng nhận đủ điều kiện hoạt động kiểm định khí thải xe mô tô, xe gắn máy.",
+        "actor": "user",
+        "channel_hint": null,
+        "time_hint": "03 ngày làm việc"
+      }
+    ],
+    "step_count": 18,
+    "notes": []
+  },
+  "eligibility": {
+    "conditions": [
+      "Cơ sở đăng kiểm là đơn vị sự nghiệp công lập, doanh nghiệp hoặc hợp tác xã được thành lập theo quy định của pháp luật."
+    ],
+    "has_conditions": true
+  },
+  "results": {
+    "items": [
+      {
+        "name": "Giấy chứng nhận đủ điều kiện hoạt động kiểm định xe cơ giới",
+        "result_code": "KQ.G04.000265",
+        "raw_text": "Giấy chứng nhận đủ điều kiện hoạt động kiểm định xe cơ giới"
+      }
+    ],
+    "primary_result": {
+      "name": "Giấy chứng nhận đủ điều kiện hoạt động kiểm định xe cơ giới",
+      "result_code": "KQ.G04.000265",
+      "raw_text": "Giấy chứng nhận đủ điều kiện hoạt động kiểm định xe cơ giới"
+    }
+  },
+  "legal_basis": {
+    "items": [
+      {
+        "title": "Quy định trình tự, thủ tục cấp mới, cấp lại, tạm đình chỉ hoạt động, thu hồi giấy chứng nhận đủ điều kiện hoạt động kiểm định xe cơ giới của cơ sở đăng kiểm xe cơ giới, cơ sở kiểm định khí thải xe mô tô, xe gắn máy.",
+        "code": "46/2024/TT-BGTVT"
+      },
+      {
+        "title": "Thông tư sửa đổi, bổ sung một số điều của các Thông tư để cắt giảm, đơn giản hóa thủ tục hành chính trong lĩnh vực đăng kiểm đường bộ, hàng không dân dụng và thanh tra thuộc phạm vi quản lý của Bộ Xây dựng",
+        "code": "71/2025/TT-BXD"
+      }
+    ],
+    "count": 2
+  },
+  "attachments": [],
+  "signals": {
+    "raw_parse_warnings": [],
+    "missing_documents": false,
+    "documents_section_present": true,
+    "documents_declared_empty": false,
+    "documents_only_in_notes": false,
+    "missing_results": false
+  }
+}

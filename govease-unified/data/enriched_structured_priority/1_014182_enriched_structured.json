@@ -1,0 +1,118 @@
+{
+  "schema_version": "1.0",
+  "enricher_version": "0.2.0",
+  "source": {
+    "procedure_code": "1.014182",
+    "title": "TÍNH THỜI GIAN CÔNG TÁC ĐỐI VỚI NGƯỜI LAO ĐỘNG ĐI HỢP TÁC LAO ĐỘNG TRƯỚC NGÀY 01 THÁNG 01 NĂM 1995 VÀ GIẢI QUYẾT CHẾ ĐỘ TỬ TUẤT ĐỐI VỚI NGƯỜI LAO ĐỘNG ĐÃ CHẾT SAU KHI ĐI HỢP TÁC LAO ĐỘNG VỀ NUÓC NHƯNG THÂN NHÂN CHƯA ĐƯỢC HƯỞNG CHẾ ĐỘ TỬ TUẤT",
+    "group_key": "nguoi_than_qua_doi",
+    "workflow_family": null,
+    "subflow": null
+  },
+  "experience": {
+    "entry_label": "Hỗ trợ chế độ cho thân nhân",
+    "overview_summary": "Thủ tục này thuộc nhóm hỗ trợ thân nhân người đã mất, thường liên quan đến mai táng phí, tử tuất hoặc chế độ phát sinh sau khi người hưởng qua đời. Kết quả thường nhận được là - Xác nhận bổ sung thời gian công tác để tính hưởng bảo hiểm xã hội trong sổ bảo hiểm xã hội- Quyết định về việc hưởng chế độ hưu trí hằng tháng hoặc Quyết định về việc hưởng bảo hiểm xã hội một lần.- Quyết định về việc hưởng trợ cấp mai táng và Quyết định về việc hưởng trợ cấp tuất hằng tháng hoặc Quyết định về việc hưởng trợ cấp tuất một lần. Thời gian xử lý tham khảo: 15 ngày làm việc.",
+    "next_step_summary": "Nên chuẩn bị giấy tờ của người đã mất, thân nhân và căn cứ hưởng chế độ trước khi nộp. Có thể chọn kênh nộp phù hợp: Trực tiếp, Trực tuyến, Dịch vụ bưu chính. Hiện có khoảng 16 mục giấy tờ cần theo dõi trong checklist.",
+    "tone": "supportive_public_service"
+  },
+  "guidance": {
+    "highlight_documents": [
+      {
+        "bucket": "required",
+        "name": "(iv) Đơn đề nghị tính thời gian công tác hưởng chế độ hưu trí, tử tuất đối với người lao động đã nghỉ việc.",
+        "conditions": [],
+        "attachment_path": null
+      },
+      {
+        "bucket": "required",
+        "name": "(i) Hồ sơ quy định tại các điểm (i), (iii) và (iv) mục a nêu trên;",
+        "conditions": [],
+        "attachment_path": null
+      },
+      {
+        "bucket": "required",
+        "name": "(i) Hồ sơ quy định tại các điểm (i), (iii) và (iv) mục a nêu trên",
+        "conditions": [],
+        "attachment_path": null
+      },
+      {
+        "bucket": "required",
+        "name": "(iii) Giấy xác nhận của cơ quan quản lý chuyên gia về việc đã hoàn thành nghĩa vụ đóng góp cho ngân sách nhà nước và đóng bảo hiểm xã hội theo quy định của Nhà nước của chuyên gia trong thời gian làm việc ở nước ngoài",
+        "conditions": [],
+        "attachment_path": null
+      },
+      {
+        "bucket": "required",
+        "name": "(ii) Sổ bảo hiểm xã hội;",
+        "conditions": [],
+        "attachment_path": null
+      },
+      {
+        "bucket": "required",
+        "name": "(iv) Tờ khai của thân nhân;",
+        "conditions": [],
+        "attachment_path": null
+      }
+    ],
+    "special_cases": [
+      "Có yếu tố nước ngoài",
+      "Có thể cần đối chiếu thông tin thửa đất hoặc giấy chứng nhận",
+      "Có thể cần đối chiếu quá trình đóng bảo hiểm để giải quyết chế độ",
+      "Có thể cần hồ sơ tử tuất hoặc mai táng phí",
+      "Có thể cần xác minh quan hệ lao động hoặc giấy phép làm việc"
+    ],
+    "common_errors": [
+      "Thiếu giấy tờ hợp pháp hóa hoặc giấy tờ nhân thân của phía nước ngoài.",
+      "Điền sai mẫu tờ khai hoặc chọn sai biểu mẫu đi kèm.",
+      "Thông tin thửa đất, tài sản hoặc giấy chứng nhận chưa khớp với hồ sơ hiện có.",
+      "Thiếu thông tin về thời gian tham gia bảo hiểm hoặc chưa xác định đúng chế độ hưu trí.",
+      "Thiếu giấy tờ về người đã mất hoặc căn cứ xác định thân nhân hưởng chế độ."
+    ],
+    "validation_hints": [
+      "Nên xác định trước kênh nộp hồ sơ để biết có cần bản giấy, bản điện tử hay xuất trình trực tiếp.",
+      "Nên kiểm tra kỹ giấy tờ của người đã mất, thân nhân và căn cứ phát sinh chế độ."
+    ]
+  },
+  "intake": {
+    "candidate_input_fields": [
+      {
+        "field_id": "deceased_person_name",
+        "label": "Người đã mất",
+        "field_type": "text",
+        "required": true
+      },
+      {
+        "field_id": "claimant_relationship",
+        "label": "Quan hệ của người nộp với người đã mất",
+        "field_type": "enum",
+        "required": true
+      },
+      {
+        "field_id": "support_benefit_type",
+        "label": "Loại chế độ cần giải quyết",
+        "field_type": "text",
+        "required": true
+      },
+      {
+        "field_id": "submission_channel_preference",
+        "label": "Kênh nộp dự kiến",
+        "field_type": "enum",
+        "required": false
+      }
+    ],
+    "suggested_clarifying_questions": [
+      "Bạn đang cần giải quyết mai táng phí, tử tuất hay chế độ nào cho thân nhân?",
+      "Giấy tờ của người đã mất và mối quan hệ của người nộp hồ sơ đã sẵn sàng chưa?"
+    ]
+  },
+  "ui_hints": {
+    "primary_channel": "online",
+    "result_label": "- Xác nhận bổ sung thời gian công tác để tính hưởng bảo hiểm xã hội trong sổ bảo hiểm xã hội- Quyết định về việc hưởng chế độ hưu trí hằng tháng hoặc Quyết định về việc hưởng bảo hiểm xã hội một lần.- Quyết định về việc hưởng trợ cấp mai táng và Quyết định về việc hưởng trợ cấp tuất hằng tháng hoặc Quyết định về việc hưởng trợ cấp tuất một lần",
+    "time_badge": "15 ngày làm việc",
+    "document_count_badge": 16
+  },
+  "provenance": {
+    "generator": "workflow_domain_enricher",
+    "derivation_mode": "rule_based_semantic_enrichment",
+    "supported_group": true
+  }
+}

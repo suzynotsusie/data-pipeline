@@ -1,0 +1,938 @@
+{
+  "schema_version": "1.0",
+  "domain": "viec_lam",
+  "updated_at": "2026-07-18",
+  "source_files": [
+    "C:\\Users\\ku060\\Downloads\\VAIC source\\data-pipeline\\main\\full-data.csv",
+    "C:\\Users\\ku060\\Downloads\\VAIC source\\data-pipeline\\data\\workflows\\viec_lam\\summary.csv",
+    "C:\\Users\\ku060\\Downloads\\VAIC source\\data-pipeline\\data\\workflows\\viec_lam\\normalized.json",
+    "C:\\Users\\ku060\\Downloads\\VAIC source\\data-pipeline\\raw_data"
+  ],
+  "coverage": {
+    "expected_codes": [
+      "1.001601",
+      "1.014745",
+      "1.014748",
+      "1.014749",
+      "1.014750",
+      "1.014751",
+      "1.014752",
+      "1.014753",
+      "1.004527",
+      "1.014196",
+      "1.014197",
+      "1.014198",
+      "1.014199",
+      "1.014200",
+      "1.014201",
+      "2.000725",
+      "2.000731",
+      "2.000902",
+      "2.000907",
+      "2.001830",
+      "2.001940",
+      "1.115477",
+      "1.115480",
+      "1.115481",
+      "1.115482",
+      "1.012474",
+      "1.014746",
+      "2.002681",
+      "2.002682",
+      "1.014578",
+      "1.014747",
+      "1.014754",
+      "1.115483",
+      "2.002821",
+      "2.002237",
+      "1.115302",
+      "1.115303",
+      "1.115304",
+      "1.115305",
+      "1.115306",
+      "1.115307",
+      "1.115308",
+      "1.115309"
+    ],
+    "covered_codes": [
+      "1.001601",
+      "1.014745",
+      "1.014748",
+      "1.014749",
+      "1.014750",
+      "1.014751",
+      "1.014752",
+      "1.014753",
+      "1.004527",
+      "1.014196",
+      "1.014197",
+      "1.014198",
+      "1.014199",
+      "1.014200",
+      "1.014201",
+      "2.000725",
+      "2.000731",
+      "2.000902",
+      "2.000907",
+      "2.001830",
+      "2.001940",
+      "1.115477",
+      "1.115480",
+      "1.115481",
+      "1.115482",
+      "1.012474",
+      "1.014746",
+      "2.002681",
+      "2.002682",
+      "1.014578",
+      "1.014747",
+      "1.014754",
+      "1.115483",
+      "2.002821",
+      "2.002237",
+      "1.115302",
+      "1.115303",
+      "1.115304",
+      "1.115305",
+      "1.115306",
+      "1.115307",
+      "1.115308",
+      "1.115309"
+    ],
+    "missing_codes": []
+  },
+  "llm_contract": {
+    "role": "parse_user_answer_and_rephrase_question_only",
+    "required_output_schema": {
+      "intent": "viec_lam",
+      "current_node": "string",
+      "slot_updates": {
+        "subdomain_key": "ho_tro_tu_van_gioi_thieu_viec_lam | tuyen_dung | bao_hiem_xa_hoi_that_nghiep_tro_cap | chung_chi_hanh_nghe | nang_ngach | thue_thu_nhap_ca_nhan | cap_phep_lao_dong_nguoi_nuoc_ngoai | unknown",
+        "operation_key": "string",
+        "operation_group": "string"
+      },
+      "confidence": "0_to_1",
+      "needs_human_review": "boolean"
+    }
+  },
+  "entry_prompts": [
+    "Bạn đang cần tìm việc, nhận trợ cấp thất nghiệp, học nâng cao kỹ năng, khai thuế thu nhập hay làm giấy phép lao động?",
+    "Bạn muốn đăng ký mới, điều chỉnh thông tin, xin hỗ trợ, xin cấp chứng chỉ hay xin giấy phép làm việc?"
+  ],
+  "slots": [
+    {
+      "name": "subdomain_key",
+      "required": true,
+      "description": "Nhánh chính của nhóm Việc làm."
+    },
+    {
+      "name": "operation_key",
+      "required": true,
+      "description": "Thao tác cụ thể ánh xạ trực tiếp tới thủ tục cuối cùng."
+    },
+    {
+      "name": "operation_group",
+      "required": false,
+      "description": "Nhóm thao tác để gom các thủ tục gần nhau cho UI và parser."
+    }
+  ],
+  "subdomain_catalog": [
+    {
+      "subdomain_key": "ho_tro_tu_van_gioi_thieu_viec_lam",
+      "subdomain_label": "Hỗ trợ, tư vấn giới thiệu việc làm",
+      "event_id": 260,
+      "summary": "Nhóm thủ tục hỗ trợ tư vấn, giới thiệu việc làm và hỗ trợ đi làm trong, ngoài tỉnh hoặc đi làm việc ở nước ngoài."
+    },
+    {
+      "subdomain_key": "tuyen_dung",
+      "subdomain_label": "Tuyển dụng",
+      "event_id": 261,
+      "summary": "Nhóm thủ tục đăng ký lao động và điều chỉnh trạng thái lao động, phục vụ nhu cầu tìm việc và quản lý hồ sơ việc làm của người lao động."
+    },
+    {
+      "subdomain_key": "bao_hiem_xa_hoi_that_nghiep_tro_cap",
+      "subdomain_label": "Bảo hiểm xã hội, thất nghiệp, trợ cấp",
+      "event_id": 262,
+      "summary": "Nhóm thủ tục tham gia, hưởng, tiếp tục hưởng, tạm dừng, chấm dứt và chuyển nơi hưởng trợ cấp thất nghiệp."
+    },
+    {
+      "subdomain_key": "chung_chi_hanh_nghe",
+      "subdomain_label": "Chứng chỉ hành nghề",
+      "event_id": 264,
+      "summary": "Nhóm thủ tục đánh giá, cấp và cấp lại chứng chỉ kỹ năng nghề quốc gia cho người lao động."
+    },
+    {
+      "subdomain_key": "nang_ngach",
+      "subdomain_label": "Nâng ngạch",
+      "event_id": 265,
+      "summary": "Nhóm thủ tục hỗ trợ đào tạo, bồi dưỡng và nâng cao trình độ kỹ năng nghề để phát triển nghề nghiệp."
+    },
+    {
+      "subdomain_key": "thue_thu_nhap_ca_nhan",
+      "subdomain_label": "Thuế thu nhập cá nhân",
+      "event_id": 266,
+      "summary": "Nhóm thủ tục khai thuế thu nhập cá nhân trực tiếp đối với thu nhập từ tiền lương, tiền công."
+    },
+    {
+      "subdomain_key": "cap_phep_lao_dong_nguoi_nuoc_ngoai",
+      "subdomain_label": "Cấp phép lao động cho người nước ngoài",
+      "event_id": 267,
+      "summary": "Nhóm thủ tục cấp, cấp lại, gia hạn giấy phép lao động hoặc xác nhận miễn giấy phép lao động cho người nước ngoài làm việc tại Việt Nam."
+    }
+  ],
+  "decision_tree": {
+    "start_node": "employment_subdomain",
+    "nodes": [
+      {
+        "id": "employment_subdomain",
+        "type": "question",
+        "slot": "subdomain_key",
+        "question": "Bạn đang hỏi về hỗ trợ việc làm, tuyển dụng, trợ cấp thất nghiệp, chứng chỉ nghề, nâng cao kỹ năng, thuế thu nhập cá nhân hay giấy phép lao động cho người nước ngoài?",
+        "options": [
+          "ho_tro_tu_van_gioi_thieu_viec_lam",
+          "tuyen_dung",
+          "bao_hiem_xa_hoi_that_nghiep_tro_cap",
+          "chung_chi_hanh_nghe",
+          "nang_ngach",
+          "thue_thu_nhap_ca_nhan",
+          "cap_phep_lao_dong_nguoi_nuoc_ngoai"
+        ]
+      },
+      {
+        "id": "employment_operation",
+        "type": "question",
+        "slot": "operation_key",
+        "question": "Bạn cần làm thao tác nào cụ thể trong nhánh đã chọn?",
+        "options_by_subdomain": {
+          "bao_hiem_xa_hoi_that_nghiep_tro_cap": [
+            {
+              "operation_key": "uy_quyen_linh_thay_cac_che_do_bao_hiem_xa_hoi_tro_cap_that_nghiep",
+              "operation_group": "uy_quyen_nhan_che_do",
+              "procedure_code": "1.001601",
+              "procedure_title": "Ủy quyền lĩnh thay các chế độ bảo hiểm xã hội, trợ cấp thất nghiệp"
+            },
+            {
+              "operation_key": "tham_gia_bao_hiem_that_nghiep_cap_tinh",
+              "operation_group": "tham_gia_bao_hiem_that_nghiep",
+              "procedure_code": "1.014745",
+              "procedure_title": "Tham gia bảo hiểm thất nghiệp (Cấp tỉnh)"
+            },
+            {
+              "operation_key": "huong_tro_cap_that_nghiep_cap_tinh",
+              "operation_group": "huong_tro_cap_that_nghiep",
+              "procedure_code": "1.014748",
+              "procedure_title": "Hưởng trợ cấp thất nghiệp (Cấp tỉnh)"
+            },
+            {
+              "operation_key": "thong_bao_hang_thang_ve_viec_tim_kiem_viec_lam_cap_tinh",
+              "operation_group": "thong_bao_tim_kiem_viec_lam",
+              "procedure_code": "1.014749",
+              "procedure_title": "Thông báo hằng tháng về việc tìm kiếm việc làm (Cấp tỉnh)"
+            },
+            {
+              "operation_key": "tam_dung_huong_tro_cap_that_nghiep_cap_tinh",
+              "operation_group": "huong_tro_cap_that_nghiep",
+              "procedure_code": "1.014750",
+              "procedure_title": "Tạm dừng hưởng trợ cấp thất nghiệp (Cấp tỉnh)"
+            },
+            {
+              "operation_key": "tiep_tuc_huong_tro_cap_that_nghiep_cap_tinh",
+              "operation_group": "huong_tro_cap_that_nghiep",
+              "procedure_code": "1.014751",
+              "procedure_title": "Tiếp tục hưởng trợ cấp thất nghiệp (Cấp tỉnh)"
+            },
+            {
+              "operation_key": "cham_dut_huong_tro_cap_that_nghiep_cap_tinh",
+              "operation_group": "huong_tro_cap_that_nghiep",
+              "procedure_code": "1.014752",
+              "procedure_title": "Chấm dứt hưởng trợ cấp thất nghiệp (Cấp tỉnh)"
+            },
+            {
+              "operation_key": "chuyen_noi_huong_tro_cap_that_nghiep_cap_tinh",
+              "operation_group": "huong_tro_cap_that_nghiep",
+              "procedure_code": "1.014753",
+              "procedure_title": "Chuyển nơi hưởng trợ cấp thất nghiệp (Cấp tỉnh)"
+            }
+          ],
+          "cap_phep_lao_dong_nguoi_nuoc_ngoai": [
+            {
+              "operation_key": "cap_lai_giay_phep_lam_viec_cho_cong_dan_o_xto_ray_li_a_tham_gia_chuong_trinh_lao_dong_ket_hop_ky_nghi_tai_viet_nam",
+              "operation_group": "cap_lai_gpld_ky_nghi_ket_hop_lao_dong",
+              "procedure_code": "1.004527",
+              "procedure_title": "Cấp lại Giấy phép làm việc cho công dân Ô-xtơ-rây-li-a tham gia Chương trình Lao động kết hợp kỳ nghỉ tại Việt Nam"
+            },
+            {
+              "operation_key": "cap_giay_xac_nhan_khong_thuoc_dien_cap_giay_phep_lao_dong_doi_voi_nguoi_lao_dong_nuoc_ngoai_lam_viec_tai_viet_nam",
+              "operation_group": "cap_xac_nhan_mien_gpld",
+              "procedure_code": "1.014196",
+              "procedure_title": "Cấp giấy xác nhận không thuộc diện cấp giấy phép lao động đối với người lao động nước ngoài làm việc tại Việt Nam"
+            },
+            {
+              "operation_key": "cap_lai_giay_xac_nhan_khong_thuoc_dien_cap_giay_phep_lao_dong_doi_voi_nguoi_lao_dong_nuoc_ngoai_lam_viec_tai_viet_nam",
+              "operation_group": "cap_lai_xac_nhan_mien_gpld",
+              "procedure_code": "1.014197",
+              "procedure_title": "Cấp lại giấy xác nhận không thuộc diện cấp giấy phép lao động đối với người lao động nước ngoài làm việc tại Việt Nam"
+            },
+            {
+              "operation_key": "gia_han_giay_xac_nhan_khong_thuoc_dien_cap_giay_phep_lao_dong_doi_voi_nguoi_lao_dong_nuoc_ngoai_lam_viec_tai_viet_nam",
+              "operation_group": "gia_han_xac_nhan_mien_gpld",
+              "procedure_code": "1.014198",
+              "procedure_title": "Gia hạn giấy xác nhận không thuộc diện cấp giấy phép lao động đối với người lao động nước ngoài làm việc tại Việt Nam"
+            },
+            {
+              "operation_key": "cap_giay_phep_lao_dong_doi_voi_nguoi_lao_dong_nuoc_ngoai_lam_viec_tai_viet_nam",
+              "operation_group": "cap_gpld_nguoi_nuoc_ngoai",
+              "procedure_code": "1.014199",
+              "procedure_title": "Cấp giấy phép lao động đối với người lao động nước ngoài làm việc tại Việt Nam"
+            },
+            {
+              "operation_key": "cap_lai_giay_phep_lao_dong_doi_voi_nguoi_lao_dong_nuoc_ngoai_lam_viec_tai_viet_nam",
+              "operation_group": "cap_lai_gpld_nguoi_nuoc_ngoai",
+              "procedure_code": "1.014200",
+              "procedure_title": "Cấp lại giấy phép lao động đối với người lao động nước ngoài làm việc tại Việt Nam"
+            },
+            {
+              "operation_key": "gia_han_giay_phep_lao_dong_doi_voi_nguoi_lao_dong_nuoc_ngoai_lam_viec_tai_viet_nam",
+              "operation_group": "gia_han_gpld_nguoi_nuoc_ngoai",
+              "procedure_code": "1.014201",
+              "procedure_title": "Gia hạn giấy phép lao động đối với người lao động nước ngoài làm việc tại Việt Nam"
+            },
+            {
+              "operation_key": "cap_lai_giay_phep_lam_viec_trong_ky_nghi_cho_cong_dan_niu_di_lan",
+              "operation_group": "cap_lai_gpld_ky_nghi_ket_hop_lao_dong",
+              "procedure_code": "2.000725",
+              "procedure_title": "Cấp lại Giấy phép làm việc trong kỳ nghỉ cho công dân Niu-Di-Lân"
+            },
+            {
+              "operation_key": "cap_giay_phep_lam_viec_trong_ky_nghi_cho_cong_dan_niu_di_lan",
+              "operation_group": "cap_gpld_ky_nghi_ket_hop_lao_dong",
+              "procedure_code": "2.000731",
+              "procedure_title": "Cấp giấy phép làm việc trong kỳ nghỉ cho công dân Niu-Di-Lân"
+            },
+            {
+              "operation_key": "cap_lai_giay_phep_lao_dong_cho_chuyen_gia_khoa_hoc_cong_nghe_lam_viec_tai_viet_nam",
+              "operation_group": "cap_lai_gpld_chuyen_gia_khcn",
+              "procedure_code": "2.000902",
+              "procedure_title": "Cấp lại giấy phép lao động cho chuyên gia khoa học công nghệ làm việc tại Việt Nam"
+            },
+            {
+              "operation_key": "cap_giay_phep_lao_dong_cho_chuyen_gia_khoa_hoc_cong_nghe_lam_viec_tai_viet_nam",
+              "operation_group": "cap_gpld_chuyen_gia_khcn",
+              "procedure_code": "2.000907",
+              "procedure_title": "Cấp giấy phép lao động cho chuyên gia khoa học công nghệ làm việc tại Việt Nam"
+            },
+            {
+              "operation_key": "cap_giay_phep_lam_viec_cho_cong_dan_o_xto_ray_li_a_tham_gia_chuong_trinh_lao_dong_ket_hop_ky_nghi_tai_viet_nam",
+              "operation_group": "cap_gpld_ky_nghi_ket_hop_lao_dong",
+              "procedure_code": "2.001830",
+              "procedure_title": "Cấp Giấy phép làm việc cho công dân Ô-xtơ-rây-li-a tham gia Chương trình Lao động kết hợp kỳ nghỉ tại Việt Nam"
+            },
+            {
+              "operation_key": "bao_cao_chuyen_gia_khoa_hoc_cong_nghe_khong_thuoc_dien_cap_giay_phep_lao_dong_lam_viec_tai_viet_nam",
+              "operation_group": "cap_xac_nhan_mien_gpld",
+              "procedure_code": "2.001940",
+              "procedure_title": "Báo cáo chuyên gia khoa học công nghệ không thuộc diện cấp giấy phép lao động làm việc tại Việt Nam"
+            }
+          ],
+          "chung_chi_hanh_nghe": [
+            {
+              "operation_key": "cong_nhan_thua_nhan_lan_nhau_ve_chung_chi_ky_nang_nghe_quoc_gia_giua_viet_nam_voi_cac_quoc_gia_khac_cap_trung_uong",
+              "operation_group": "cong_nhan_chung_chi_ky_nang",
+              "procedure_code": "1.115477",
+              "procedure_title": "Công nhận, thừa nhận lẫn nhau về chứng chỉ kỹ năng nghề quốc gia giữa Việt Nam với các quốc gia khác (Cấp Trung ương)"
+            },
+            {
+              "operation_key": "cap_chung_chi_ky_nang_nghe_quoc_gia_cap_tinh",
+              "operation_group": "cap_chung_chi_ky_nang",
+              "procedure_code": "1.115480",
+              "procedure_title": "Cấp chứng chỉ kỹ năng nghề quốc gia (Cấp tỉnh)"
+            },
+            {
+              "operation_key": "cap_lai_chung_chi_ky_nang_nghe_quoc_gia_cap_tinh",
+              "operation_group": "cap_lai_chung_chi_ky_nang",
+              "procedure_code": "1.115481",
+              "procedure_title": "Cấp lại chứng chỉ kỹ năng nghề quốc gia (Cấp tỉnh)"
+            },
+            {
+              "operation_key": "de_nghi_ho_tro_tham_gia_danh_gia_cap_chung_chi_ky_nang_nghe_quoc_gia_cap_tinh",
+              "operation_group": "ho_tro_danh_gia_ky_nang",
+              "procedure_code": "1.115482",
+              "procedure_title": "Đề nghị hỗ trợ tham gia đánh giá, cấp chứng chỉ kỹ năng nghề quốc gia (Cấp tỉnh)"
+            }
+          ],
+          "ho_tro_tu_van_gioi_thieu_viec_lam": [
+            {
+              "operation_key": "ho_tro_tien_ve_xe_cho_nguoi_lao_dong",
+              "operation_group": "ho_tro_chi_phi_di_lai",
+              "procedure_code": "1.012474",
+              "procedure_title": "Hỗ trợ tiền vé xe cho người lao động"
+            },
+            {
+              "operation_key": "ho_tro_tu_van_gioi_thieu_viec_lam_cap_tinh",
+              "operation_group": "tu_van_gioi_thieu_viec_lam",
+              "procedure_code": "1.014746",
+              "procedure_title": "Hỗ trợ tư vấn, giới thiệu việc làm (Cấp tỉnh)"
+            },
+            {
+              "operation_key": "ho_tro_nguoi_lao_dong_di_lam_viec_ngoai_tinh_cap_xa",
+              "operation_group": "ho_tro_di_lam_viec_ngoai_tinh",
+              "procedure_code": "2.002681",
+              "procedure_title": "Hỗ trợ người lao động đi làm việc ngoài tỉnh (cấp xã)"
+            },
+            {
+              "operation_key": "ho_tro_nguoi_lao_dong_di_lam_viec_o_nuoc_ngoai_tai_trung_quoc_va_han_quoc_theo_thoa_thuan_dia_phuong",
+              "operation_group": "ho_tro_di_lam_viec_o_nuoc_ngoai",
+              "procedure_code": "2.002682",
+              "procedure_title": "Hỗ trợ người lao động đi làm việc ở nước ngoài (tại Trung Quốc và Hàn Quốc theo Thỏa thuận địa phương)"
+            }
+          ],
+          "nang_ngach": [
+            {
+              "operation_key": "chinh_sach_ho_tro_dao_tao_dao_tao_lai_dao_tao_nang_cao_cho_nguoi_lao_dong_phuc_vu_cong_nghiep_ban_dan_tri_tue_nhan_tao_cong_nghe_so",
+              "operation_group": "ho_tro_nang_cao_trinh_do_ky_nang",
+              "procedure_code": "1.014578",
+              "procedure_title": "Chính sách hỗ trợ đào tạo, đào tạo lại, đào tạo nâng cao cho người lao động phục vụ công nghiệp bán dẫn, trí tuệ nhân tạo, công nghệ số"
+            },
+            {
+              "operation_key": "ho_tro_nguoi_lao_dong_tham_gia_dao_tao_nang_cao_trinh_do_ky_nang_nghe_cap_tinh",
+              "operation_group": "ho_tro_nang_cao_trinh_do_ky_nang",
+              "procedure_code": "1.014747",
+              "procedure_title": "Hỗ trợ người lao động tham gia đào tạo, nâng cao trình độ kỹ năng nghề (Cấp tỉnh)"
+            },
+            {
+              "operation_key": "ho_tro_nguoi_su_dung_lao_dong_dao_tao_boi_duong_nang_cao_trinh_do_ky_nang_nghe_de_duy_tri_viec_lam_cho_nguoi_lao_dong_cap_tinh",
+              "operation_group": "ho_tro_dao_tao_duy_tri_viec_lam",
+              "procedure_code": "1.014754",
+              "procedure_title": "Hỗ trợ người sử dụng lao động đào tạo, bồi dưỡng, nâng cao trình độ kỹ năng nghề để duy trì việc làm cho người lao động (Cấp tỉnh)"
+            },
+            {
+              "operation_key": "de_nghi_ho_tro_tham_gia_dao_tao_boi_duong_nang_cao_trinh_do_ky_nang_nghe_cap_tinh",
+              "operation_group": "ho_tro_nang_cao_trinh_do_ky_nang",
+              "procedure_code": "1.115483",
+              "procedure_title": "Đề nghị hỗ trợ tham gia đào tạo, bồi dưỡng, nâng cao trình độ kỹ năng nghề (Cấp tỉnh)"
+            },
+            {
+              "operation_key": "ho_tro_dao_tao_nghe_cho_nguoi_lao_dong_o_khu_vuc_nong_thon_nguoi_lao_dong_la_thanh_nien",
+              "operation_group": "ho_tro_dao_tao_nghe",
+              "procedure_code": "2.002821",
+              "procedure_title": "Hỗ trợ đào tạo nghề cho người lao động ở khu vực nông thôn, người lao động là thanh niên"
+            }
+          ],
+          "thue_thu_nhap_ca_nhan": [
+            {
+              "operation_key": "khai_thue_thu_nhap_ca_nhan_thang_quy_doi_voi_ca_nhan_co_thu_nhap_tu_tien_luong_tien_cong_bao_gom_ca_ca_nhan_nhan_thuong_bang_co_phieu_tu_don_vi_su_dung_lao_dong_thuoc_dien_khai_thue_thu_nhap_ca_nhan_truc_tiep_voi_co_quan_thue",
+              "operation_group": "khai_thue_tncn_tu_tien_luong_tien_cong",
+              "procedure_code": "2.002237",
+              "procedure_title": "Khai thuế thu nhập cá nhân tháng/quý đối với cá nhân có thu nhập từ tiền lương, tiền công (bao gồm cả cá nhân nhận thưởng bằng cổ phiếu từ đơn vị sử dụng lao động) thuộc diện khai thuế thu nhập cá nhân trực tiếp với cơ quan thuế"
+            }
+          ],
+          "tuyen_dung": [
+            {
+              "operation_key": "thu_tuc_ket_noi_econtract_voi_nen_tang_hop_dong_lao_dong_dien_tu",
+              "operation_group": "ket_noi_hop_dong_lao_dong_dien_tu",
+              "procedure_code": "1.115302",
+              "procedure_title": "Thủ tục Kết nối eContract với Nền tảng hợp đồng lao động điện tử"
+            },
+            {
+              "operation_key": "dang_ky_lao_dong_doi_voi_nguoi_lao_dong_thuoc_doi_tuong_tham_gia_bao_hiem_xa_hoi_bat_buoc",
+              "operation_group": "dang_ky_lao_dong",
+              "procedure_code": "1.115303",
+              "procedure_title": "Đăng ký lao động đối với người lao động thuộc đối tượng tham gia bảo hiểm xã hội bắt buộc"
+            },
+            {
+              "operation_key": "dieu_chinh_thong_tin_dang_ky_lao_dong_doi_voi_nguoi_lao_dong_thuoc_doi_tuong_tham_gia_bao_hiem_xa_hoi_bat_buoc",
+              "operation_group": "dieu_chinh_dang_ky_lao_dong",
+              "procedure_code": "1.115304",
+              "procedure_title": "Điều chỉnh thông tin đăng ký lao động đối với người lao động thuộc đối tượng tham gia bảo hiểm xã hội bắt buộc"
+            },
+            {
+              "operation_key": "dang_ky_lao_dong_doi_voi_nguoi_lao_dong_dang_co_viec_lam_khong_thuoc_doi_tuong_tham_gia_bao_hiem_xa_hoi_bat_buoc_nguoi_that_nghiep",
+              "operation_group": "dang_ky_lao_dong",
+              "procedure_code": "1.115305",
+              "procedure_title": "Đăng ký lao động đối với người lao động đang có việc làm không thuộc đối tượng tham gia bảo hiểm xã hội bắt buộc, người thất nghiệp."
+            },
+            {
+              "operation_key": "dieu_chinh_thong_tin_dang_ky_lao_dong_doi_voi_nguoi_lao_dong_dang_co_viec_lam_va_khong_thuoc_doi_tuong_tham_gia_bao_hiem_xa_hoi_bat_buoc",
+              "operation_group": "dieu_chinh_dang_ky_lao_dong",
+              "procedure_code": "1.115306",
+              "procedure_title": "Điều chỉnh thông tin đăng ký lao động đối với người lao động đang có việc làm và không thuộc đối tượng tham gia bảo hiểm xã hội bắt buộc"
+            },
+            {
+              "operation_key": "dieu_chinh_thong_tin_dang_ky_lao_dong_trong_truong_hop_thay_doi_tinh_trang_tu_nguoi_co_viec_lam_sang_nguoi_that_nghiep",
+              "operation_group": "dieu_chinh_dang_ky_lao_dong",
+              "procedure_code": "1.115307",
+              "procedure_title": "Điều chỉnh thông tin đăng ký lao động trong trường hợp thay đổi tình trạng từ người có việc làm sang người thất nghiệp"
+            },
+            {
+              "operation_key": "dieu_chinh_thong_tin_dang_ky_lao_dong_truong_hop_thay_doi_tinh_trang_tu_nguoi_co_viec_lam_hoac_nguoi_that_nghiep_sang_khong_tham_gia_hoat_dong_kinh_te",
+              "operation_group": "dieu_chinh_dang_ky_lao_dong",
+              "procedure_code": "1.115308",
+              "procedure_title": "Điều chỉnh thông tin đăng ký lao động trường hợp thay đổi tình trạng từ người có việc làm hoặc người thất nghiệp sang không tham gia hoạt động kinh tế"
+            },
+            {
+              "operation_key": "dieu_chinh_thong_tin_dang_ky_lao_dong_doi_voi_nguoi_lao_dong_giao_ket_hop_dong_lao_dong_voi_nhieu_nguoi_su_dung_lao_dong",
+              "operation_group": "dieu_chinh_dang_ky_lao_dong",
+              "procedure_code": "1.115309",
+              "procedure_title": "Điều chỉnh thông tin đăng ký lao động đối với người lao động giao kết hợp đồng lao động với nhiều người sử dụng lao động"
+            }
+          ]
+        }
+      }
+    ],
+    "routes": [
+      {
+        "route_id": "bao_hiem_xa_hoi_that_nghiep_tro_cap-1_001601",
+        "conditions": {
+          "subdomain_key": "bao_hiem_xa_hoi_that_nghiep_tro_cap",
+          "operation_key": "uy_quyen_linh_thay_cac_che_do_bao_hiem_xa_hoi_tro_cap_that_nghiep"
+        },
+        "procedure_code": "1.001601",
+        "procedure_name": "Ủy quyền lĩnh thay các chế độ bảo hiểm xã hội, trợ cấp thất nghiệp",
+        "why_this_route": "Route trực tiếp cho nhu cầu 'Ủy quyền lĩnh thay các chế độ bảo hiểm xã hội, trợ cấp thất nghiệp' trong nhánh 'Bảo hiểm xã hội, thất nghiệp, trợ cấp'."
+      },
+      {
+        "route_id": "bao_hiem_xa_hoi_that_nghiep_tro_cap-1_014745",
+        "conditions": {
+          "subdomain_key": "bao_hiem_xa_hoi_that_nghiep_tro_cap",
+          "operation_key": "tham_gia_bao_hiem_that_nghiep_cap_tinh"
+        },
+        "procedure_code": "1.014745",
+        "procedure_name": "Tham gia bảo hiểm thất nghiệp (Cấp tỉnh)",
+        "why_this_route": "Route trực tiếp cho nhu cầu 'Tham gia bảo hiểm thất nghiệp (Cấp tỉnh)' trong nhánh 'Bảo hiểm xã hội, thất nghiệp, trợ cấp'."
+      },
+      {
+        "route_id": "bao_hiem_xa_hoi_that_nghiep_tro_cap-1_014748",
+        "conditions": {
+          "subdomain_key": "bao_hiem_xa_hoi_that_nghiep_tro_cap",
+          "operation_key": "huong_tro_cap_that_nghiep_cap_tinh"
+        },
+        "procedure_code": "1.014748",
+        "procedure_name": "Hưởng trợ cấp thất nghiệp (Cấp tỉnh)",
+        "why_this_route": "Route trực tiếp cho nhu cầu 'Hưởng trợ cấp thất nghiệp (Cấp tỉnh)' trong nhánh 'Bảo hiểm xã hội, thất nghiệp, trợ cấp'."
+      },
+      {
+        "route_id": "bao_hiem_xa_hoi_that_nghiep_tro_cap-1_014749",
+        "conditions": {
+          "subdomain_key": "bao_hiem_xa_hoi_that_nghiep_tro_cap",
+          "operation_key": "thong_bao_hang_thang_ve_viec_tim_kiem_viec_lam_cap_tinh"
+        },
+        "procedure_code": "1.014749",
+        "procedure_name": "Thông báo hằng tháng về việc tìm kiếm việc làm (Cấp tỉnh)",
+        "why_this_route": "Route trực tiếp cho nhu cầu 'Thông báo hằng tháng về việc tìm kiếm việc làm (Cấp tỉnh)' trong nhánh 'Bảo hiểm xã hội, thất nghiệp, trợ cấp'."
+      },
+      {
+        "route_id": "bao_hiem_xa_hoi_that_nghiep_tro_cap-1_014750",
+        "conditions": {
+          "subdomain_key": "bao_hiem_xa_hoi_that_nghiep_tro_cap",
+          "operation_key": "tam_dung_huong_tro_cap_that_nghiep_cap_tinh"
+        },
+        "procedure_code": "1.014750",
+        "procedure_name": "Tạm dừng hưởng trợ cấp thất nghiệp (Cấp tỉnh)",
+        "why_this_route": "Route trực tiếp cho nhu cầu 'Tạm dừng hưởng trợ cấp thất nghiệp (Cấp tỉnh)' trong nhánh 'Bảo hiểm xã hội, thất nghiệp, trợ cấp'."
+      },
+      {
+        "route_id": "bao_hiem_xa_hoi_that_nghiep_tro_cap-1_014751",
+        "conditions": {
+          "subdomain_key": "bao_hiem_xa_hoi_that_nghiep_tro_cap",
+          "operation_key": "tiep_tuc_huong_tro_cap_that_nghiep_cap_tinh"
+        },
+        "procedure_code": "1.014751",
+        "procedure_name": "Tiếp tục hưởng trợ cấp thất nghiệp (Cấp tỉnh)",
+        "why_this_route": "Route trực tiếp cho nhu cầu 'Tiếp tục hưởng trợ cấp thất nghiệp (Cấp tỉnh)' trong nhánh 'Bảo hiểm xã hội, thất nghiệp, trợ cấp'."
+      },
+      {
+        "route_id": "bao_hiem_xa_hoi_that_nghiep_tro_cap-1_014752",
+        "conditions": {
+          "subdomain_key": "bao_hiem_xa_hoi_that_nghiep_tro_cap",
+          "operation_key": "cham_dut_huong_tro_cap_that_nghiep_cap_tinh"
+        },
+        "procedure_code": "1.014752",
+        "procedure_name": "Chấm dứt hưởng trợ cấp thất nghiệp (Cấp tỉnh)",
+        "why_this_route": "Route trực tiếp cho nhu cầu 'Chấm dứt hưởng trợ cấp thất nghiệp (Cấp tỉnh)' trong nhánh 'Bảo hiểm xã hội, thất nghiệp, trợ cấp'."
+      },
+      {
+        "route_id": "bao_hiem_xa_hoi_that_nghiep_tro_cap-1_014753",
+        "conditions": {
+          "subdomain_key": "bao_hiem_xa_hoi_that_nghiep_tro_cap",
+          "operation_key": "chuyen_noi_huong_tro_cap_that_nghiep_cap_tinh"
+        },
+        "procedure_code": "1.014753",
+        "procedure_name": "Chuyển nơi hưởng trợ cấp thất nghiệp (Cấp tỉnh)",
+        "why_this_route": "Route trực tiếp cho nhu cầu 'Chuyển nơi hưởng trợ cấp thất nghiệp (Cấp tỉnh)' trong nhánh 'Bảo hiểm xã hội, thất nghiệp, trợ cấp'."
+      },
+      {
+        "route_id": "cap_phep_lao_dong_nguoi_nuoc_ngoai-1_004527",
+        "conditions": {
+          "subdomain_key": "cap_phep_lao_dong_nguoi_nuoc_ngoai",
+          "operation_key": "cap_lai_giay_phep_lam_viec_cho_cong_dan_o_xto_ray_li_a_tham_gia_chuong_trinh_lao_dong_ket_hop_ky_nghi_tai_viet_nam"
+        },
+        "procedure_code": "1.004527",
+        "procedure_name": "Cấp lại Giấy phép làm việc cho công dân Ô-xtơ-rây-li-a tham gia Chương trình Lao động kết hợp kỳ nghỉ tại Việt Nam",
+        "why_this_route": "Route trực tiếp cho nhu cầu 'Cấp lại Giấy phép làm việc cho công dân Ô-xtơ-rây-li-a tham gia Chương trình Lao động kết hợp kỳ nghỉ tại Việt Nam' trong nhánh 'Cấp phép lao động cho người nước ngoài'."
+      },
+      {
+        "route_id": "cap_phep_lao_dong_nguoi_nuoc_ngoai-1_014196",
+        "conditions": {
+          "subdomain_key": "cap_phep_lao_dong_nguoi_nuoc_ngoai",
+          "operation_key": "cap_giay_xac_nhan_khong_thuoc_dien_cap_giay_phep_lao_dong_doi_voi_nguoi_lao_dong_nuoc_ngoai_lam_viec_tai_viet_nam"
+        },
+        "procedure_code": "1.014196",
+        "procedure_name": "Cấp giấy xác nhận không thuộc diện cấp giấy phép lao động đối với người lao động nước ngoài làm việc tại Việt Nam",
+        "why_this_route": "Route trực tiếp cho nhu cầu 'Cấp giấy xác nhận không thuộc diện cấp giấy phép lao động đối với người lao động nước ngoài làm việc tại Việt Nam' trong nhánh 'Cấp phép lao động cho người nước ngoài'."
+      },
+      {
+        "route_id": "cap_phep_lao_dong_nguoi_nuoc_ngoai-1_014197",
+        "conditions": {
+          "subdomain_key": "cap_phep_lao_dong_nguoi_nuoc_ngoai",
+          "operation_key": "cap_lai_giay_xac_nhan_khong_thuoc_dien_cap_giay_phep_lao_dong_doi_voi_nguoi_lao_dong_nuoc_ngoai_lam_viec_tai_viet_nam"
+        },
+        "procedure_code": "1.014197",
+        "procedure_name": "Cấp lại giấy xác nhận không thuộc diện cấp giấy phép lao động đối với người lao động nước ngoài làm việc tại Việt Nam",
+        "why_this_route": "Route trực tiếp cho nhu cầu 'Cấp lại giấy xác nhận không thuộc diện cấp giấy phép lao động đối với người lao động nước ngoài làm việc tại Việt Nam' trong nhánh 'Cấp phép lao động cho người nước ngoài'."
+      },
+      {
+        "route_id": "cap_phep_lao_dong_nguoi_nuoc_ngoai-1_014198",
+        "conditions": {
+          "subdomain_key": "cap_phep_lao_dong_nguoi_nuoc_ngoai",
+          "operation_key": "gia_han_giay_xac_nhan_khong_thuoc_dien_cap_giay_phep_lao_dong_doi_voi_nguoi_lao_dong_nuoc_ngoai_lam_viec_tai_viet_nam"
+        },
+        "procedure_code": "1.014198",
+        "procedure_name": "Gia hạn giấy xác nhận không thuộc diện cấp giấy phép lao động đối với người lao động nước ngoài làm việc tại Việt Nam",
+        "why_this_route": "Route trực tiếp cho nhu cầu 'Gia hạn giấy xác nhận không thuộc diện cấp giấy phép lao động đối với người lao động nước ngoài làm việc tại Việt Nam' trong nhánh 'Cấp phép lao động cho người nước ngoài'."
+      },
+      {
+        "route_id": "cap_phep_lao_dong_nguoi_nuoc_ngoai-1_014199",
+        "conditions": {
+          "subdomain_key": "cap_phep_lao_dong_nguoi_nuoc_ngoai",
+          "operation_key": "cap_giay_phep_lao_dong_doi_voi_nguoi_lao_dong_nuoc_ngoai_lam_viec_tai_viet_nam"
+        },
+        "procedure_code": "1.014199",
+        "procedure_name": "Cấp giấy phép lao động đối với người lao động nước ngoài làm việc tại Việt Nam",
+        "why_this_route": "Route trực tiếp cho nhu cầu 'Cấp giấy phép lao động đối với người lao động nước ngoài làm việc tại Việt Nam' trong nhánh 'Cấp phép lao động cho người nước ngoài'."
+      },
+      {
+        "route_id": "cap_phep_lao_dong_nguoi_nuoc_ngoai-1_014200",
+        "conditions": {
+          "subdomain_key": "cap_phep_lao_dong_nguoi_nuoc_ngoai",
+          "operation_key": "cap_lai_giay_phep_lao_dong_doi_voi_nguoi_lao_dong_nuoc_ngoai_lam_viec_tai_viet_nam"
+        },
+        "procedure_code": "1.014200",
+        "procedure_name": "Cấp lại giấy phép lao động đối với người lao động nước ngoài làm việc tại Việt Nam",
+        "why_this_route": "Route trực tiếp cho nhu cầu 'Cấp lại giấy phép lao động đối với người lao động nước ngoài làm việc tại Việt Nam' trong nhánh 'Cấp phép lao động cho người nước ngoài'."
+      },
+      {
+        "route_id": "cap_phep_lao_dong_nguoi_nuoc_ngoai-1_014201",
+        "conditions": {
+          "subdomain_key": "cap_phep_lao_dong_nguoi_nuoc_ngoai",
+          "operation_key": "gia_han_giay_phep_lao_dong_doi_voi_nguoi_lao_dong_nuoc_ngoai_lam_viec_tai_viet_nam"
+        },
+        "procedure_code": "1.014201",
+        "procedure_name": "Gia hạn giấy phép lao động đối với người lao động nước ngoài làm việc tại Việt Nam",
+        "why_this_route": "Route trực tiếp cho nhu cầu 'Gia hạn giấy phép lao động đối với người lao động nước ngoài làm việc tại Việt Nam' trong nhánh 'Cấp phép lao động cho người nước ngoài'."
+      },
+      {
+        "route_id": "cap_phep_lao_dong_nguoi_nuoc_ngoai-2_000725",
+        "conditions": {
+          "subdomain_key": "cap_phep_lao_dong_nguoi_nuoc_ngoai",
+          "operation_key": "cap_lai_giay_phep_lam_viec_trong_ky_nghi_cho_cong_dan_niu_di_lan"
+        },
+        "procedure_code": "2.000725",
+        "procedure_name": "Cấp lại Giấy phép làm việc trong kỳ nghỉ cho công dân Niu-Di-Lân",
+        "why_this_route": "Route trực tiếp cho nhu cầu 'Cấp lại Giấy phép làm việc trong kỳ nghỉ cho công dân Niu-Di-Lân' trong nhánh 'Cấp phép lao động cho người nước ngoài'."
+      },
+      {
+        "route_id": "cap_phep_lao_dong_nguoi_nuoc_ngoai-2_000731",
+        "conditions": {
+          "subdomain_key": "cap_phep_lao_dong_nguoi_nuoc_ngoai",
+          "operation_key": "cap_giay_phep_lam_viec_trong_ky_nghi_cho_cong_dan_niu_di_lan"
+        },
+        "procedure_code": "2.000731",
+        "procedure_name": "Cấp giấy phép làm việc trong kỳ nghỉ cho công dân Niu-Di-Lân",
+        "why_this_route": "Route trực tiếp cho nhu cầu 'Cấp giấy phép làm việc trong kỳ nghỉ cho công dân Niu-Di-Lân' trong nhánh 'Cấp phép lao động cho người nước ngoài'."
+      },
+      {
+        "route_id": "cap_phep_lao_dong_nguoi_nuoc_ngoai-2_000902",
+        "conditions": {
+          "subdomain_key": "cap_phep_lao_dong_nguoi_nuoc_ngoai",
+          "operation_key": "cap_lai_giay_phep_lao_dong_cho_chuyen_gia_khoa_hoc_cong_nghe_lam_viec_tai_viet_nam"
+        },
+        "procedure_code": "2.000902",
+        "procedure_name": "Cấp lại giấy phép lao động cho chuyên gia khoa học công nghệ làm việc tại Việt Nam",
+        "why_this_route": "Route trực tiếp cho nhu cầu 'Cấp lại giấy phép lao động cho chuyên gia khoa học công nghệ làm việc tại Việt Nam' trong nhánh 'Cấp phép lao động cho người nước ngoài'."
+      },
+      {
+        "route_id": "cap_phep_lao_dong_nguoi_nuoc_ngoai-2_000907",
+        "conditions": {
+          "subdomain_key": "cap_phep_lao_dong_nguoi_nuoc_ngoai",
+          "operation_key": "cap_giay_phep_lao_dong_cho_chuyen_gia_khoa_hoc_cong_nghe_lam_viec_tai_viet_nam"
+        },
+        "procedure_code": "2.000907",
+        "procedure_name": "Cấp giấy phép lao động cho chuyên gia khoa học công nghệ làm việc tại Việt Nam",
+        "why_this_route": "Route trực tiếp cho nhu cầu 'Cấp giấy phép lao động cho chuyên gia khoa học công nghệ làm việc tại Việt Nam' trong nhánh 'Cấp phép lao động cho người nước ngoài'."
+      },
+      {
+        "route_id": "cap_phep_lao_dong_nguoi_nuoc_ngoai-2_001830",
+        "conditions": {
+          "subdomain_key": "cap_phep_lao_dong_nguoi_nuoc_ngoai",
+          "operation_key": "cap_giay_phep_lam_viec_cho_cong_dan_o_xto_ray_li_a_tham_gia_chuong_trinh_lao_dong_ket_hop_ky_nghi_tai_viet_nam"
+        },
+        "procedure_code": "2.001830",
+        "procedure_name": "Cấp Giấy phép làm việc cho công dân Ô-xtơ-rây-li-a tham gia Chương trình Lao động kết hợp kỳ nghỉ tại Việt Nam",
+        "why_this_route": "Route trực tiếp cho nhu cầu 'Cấp Giấy phép làm việc cho công dân Ô-xtơ-rây-li-a tham gia Chương trình Lao động kết hợp kỳ nghỉ tại Việt Nam' trong nhánh 'Cấp phép lao động cho người nước ngoài'."
+      },
+      {
+        "route_id": "cap_phep_lao_dong_nguoi_nuoc_ngoai-2_001940",
+        "conditions": {
+          "subdomain_key": "cap_phep_lao_dong_nguoi_nuoc_ngoai",
+          "operation_key": "bao_cao_chuyen_gia_khoa_hoc_cong_nghe_khong_thuoc_dien_cap_giay_phep_lao_dong_lam_viec_tai_viet_nam"
+        },
+        "procedure_code": "2.001940",
+        "procedure_name": "Báo cáo chuyên gia khoa học công nghệ không thuộc diện cấp giấy phép lao động làm việc tại Việt Nam",
+        "why_this_route": "Route trực tiếp cho nhu cầu 'Báo cáo chuyên gia khoa học công nghệ không thuộc diện cấp giấy phép lao động làm việc tại Việt Nam' trong nhánh 'Cấp phép lao động cho người nước ngoài'."
+      },
+      {
+        "route_id": "chung_chi_hanh_nghe-1_115477",
+        "conditions": {
+          "subdomain_key": "chung_chi_hanh_nghe",
+          "operation_key": "cong_nhan_thua_nhan_lan_nhau_ve_chung_chi_ky_nang_nghe_quoc_gia_giua_viet_nam_voi_cac_quoc_gia_khac_cap_trung_uong"
+        },
+        "procedure_code": "1.115477",
+        "procedure_name": "Công nhận, thừa nhận lẫn nhau về chứng chỉ kỹ năng nghề quốc gia giữa Việt Nam với các quốc gia khác (Cấp Trung ương)",
+        "why_this_route": "Route trực tiếp cho nhu cầu 'Công nhận, thừa nhận lẫn nhau về chứng chỉ kỹ năng nghề quốc gia giữa Việt Nam với các quốc gia khác (Cấp Trung ương)' trong nhánh 'Chứng chỉ hành nghề'."
+      },
+      {
+        "route_id": "chung_chi_hanh_nghe-1_115480",
+        "conditions": {
+          "subdomain_key": "chung_chi_hanh_nghe",
+          "operation_key": "cap_chung_chi_ky_nang_nghe_quoc_gia_cap_tinh"
+        },
+        "procedure_code": "1.115480",
+        "procedure_name": "Cấp chứng chỉ kỹ năng nghề quốc gia (Cấp tỉnh)",
+        "why_this_route": "Route trực tiếp cho nhu cầu 'Cấp chứng chỉ kỹ năng nghề quốc gia (Cấp tỉnh)' trong nhánh 'Chứng chỉ hành nghề'."
+      },
+      {
+        "route_id": "chung_chi_hanh_nghe-1_115481",
+        "conditions": {
+          "subdomain_key": "chung_chi_hanh_nghe",
+          "operation_key": "cap_lai_chung_chi_ky_nang_nghe_quoc_gia_cap_tinh"
+        },
+        "procedure_code": "1.115481",
+        "procedure_name": "Cấp lại chứng chỉ kỹ năng nghề quốc gia (Cấp tỉnh)",
+        "why_this_route": "Route trực tiếp cho nhu cầu 'Cấp lại chứng chỉ kỹ năng nghề quốc gia (Cấp tỉnh)' trong nhánh 'Chứng chỉ hành nghề'."
+      },
+      {
+        "route_id": "chung_chi_hanh_nghe-1_115482",
+        "conditions": {
+          "subdomain_key": "chung_chi_hanh_nghe",
+          "operation_key": "de_nghi_ho_tro_tham_gia_danh_gia_cap_chung_chi_ky_nang_nghe_quoc_gia_cap_tinh"
+        },
+        "procedure_code": "1.115482",
+        "procedure_name": "Đề nghị hỗ trợ tham gia đánh giá, cấp chứng chỉ kỹ năng nghề quốc gia (Cấp tỉnh)",
+        "why_this_route": "Route trực tiếp cho nhu cầu 'Đề nghị hỗ trợ tham gia đánh giá, cấp chứng chỉ kỹ năng nghề quốc gia (Cấp tỉnh)' trong nhánh 'Chứng chỉ hành nghề'."
+      },
+      {
+        "route_id": "ho_tro_tu_van_gioi_thieu_viec_lam-1_012474",
+        "conditions": {
+          "subdomain_key": "ho_tro_tu_van_gioi_thieu_viec_lam",
+          "operation_key": "ho_tro_tien_ve_xe_cho_nguoi_lao_dong"
+        },
+        "procedure_code": "1.012474",
+        "procedure_name": "Hỗ trợ tiền vé xe cho người lao động",
+        "why_this_route": "Route trực tiếp cho nhu cầu 'Hỗ trợ tiền vé xe cho người lao động' trong nhánh 'Hỗ trợ, tư vấn giới thiệu việc làm'."
+      },
+      {
+        "route_id": "ho_tro_tu_van_gioi_thieu_viec_lam-1_014746",
+        "conditions": {
+          "subdomain_key": "ho_tro_tu_van_gioi_thieu_viec_lam",
+          "operation_key": "ho_tro_tu_van_gioi_thieu_viec_lam_cap_tinh"
+        },
+        "procedure_code": "1.014746",
+        "procedure_name": "Hỗ trợ tư vấn, giới thiệu việc làm (Cấp tỉnh)",
+        "why_this_route": "Route trực tiếp cho nhu cầu 'Hỗ trợ tư vấn, giới thiệu việc làm (Cấp tỉnh)' trong nhánh 'Hỗ trợ, tư vấn giới thiệu việc làm'."
+      },
+      {
+        "route_id": "ho_tro_tu_van_gioi_thieu_viec_lam-2_002681",
+        "conditions": {
+          "subdomain_key": "ho_tro_tu_van_gioi_thieu_viec_lam",
+          "operation_key": "ho_tro_nguoi_lao_dong_di_lam_viec_ngoai_tinh_cap_xa"
+        },
+        "procedure_code": "2.002681",
+        "procedure_name": "Hỗ trợ người lao động đi làm việc ngoài tỉnh (cấp xã)",
+        "why_this_route": "Route trực tiếp cho nhu cầu 'Hỗ trợ người lao động đi làm việc ngoài tỉnh (cấp xã)' trong nhánh 'Hỗ trợ, tư vấn giới thiệu việc làm'."
+      },
+      {
+        "route_id": "ho_tro_tu_van_gioi_thieu_viec_lam-2_002682",
+        "conditions": {
+          "subdomain_key": "ho_tro_tu_van_gioi_thieu_viec_lam",
+          "operation_key": "ho_tro_nguoi_lao_dong_di_lam_viec_o_nuoc_ngoai_tai_trung_quoc_va_han_quoc_theo_thoa_thuan_dia_phuong"
+        },
+        "procedure_code": "2.002682",
+        "procedure_name": "Hỗ trợ người lao động đi làm việc ở nước ngoài (tại Trung Quốc và Hàn Quốc theo Thỏa thuận địa phương)",
+        "why_this_route": "Route trực tiếp cho nhu cầu 'Hỗ trợ người lao động đi làm việc ở nước ngoài (tại Trung Quốc và Hàn Quốc theo Thỏa thuận địa phương)' trong nhánh 'Hỗ trợ, tư vấn giới thiệu việc làm'."
+      },
+      {
+        "route_id": "nang_ngach-1_014578",
+        "conditions": {
+          "subdomain_key": "nang_ngach",
+          "operation_key": "chinh_sach_ho_tro_dao_tao_dao_tao_lai_dao_tao_nang_cao_cho_nguoi_lao_dong_phuc_vu_cong_nghiep_ban_dan_tri_tue_nhan_tao_cong_nghe_so"
+        },
+        "procedure_code": "1.014578",
+        "procedure_name": "Chính sách hỗ trợ đào tạo, đào tạo lại, đào tạo nâng cao cho người lao động phục vụ công nghiệp bán dẫn, trí tuệ nhân tạo, công nghệ số",
+        "why_this_route": "Route trực tiếp cho nhu cầu 'Chính sách hỗ trợ đào tạo, đào tạo lại, đào tạo nâng cao cho người lao động phục vụ công nghiệp bán dẫn, trí tuệ nhân tạo, công nghệ số' trong nhánh 'Nâng ngạch'."
+      },
+      {
+        "route_id": "nang_ngach-1_014747",
+        "conditions": {
+          "subdomain_key": "nang_ngach",
+          "operation_key": "ho_tro_nguoi_lao_dong_tham_gia_dao_tao_nang_cao_trinh_do_ky_nang_nghe_cap_tinh"
+        },
+        "procedure_code": "1.014747",
+        "procedure_name": "Hỗ trợ người lao động tham gia đào tạo, nâng cao trình độ kỹ năng nghề (Cấp tỉnh)",
+        "why_this_route": "Route trực tiếp cho nhu cầu 'Hỗ trợ người lao động tham gia đào tạo, nâng cao trình độ kỹ năng nghề (Cấp tỉnh)' trong nhánh 'Nâng ngạch'."
+      },
+      {
+        "route_id": "nang_ngach-1_014754",
+        "conditions": {
+          "subdomain_key": "nang_ngach",
+          "operation_key": "ho_tro_nguoi_su_dung_lao_dong_dao_tao_boi_duong_nang_cao_trinh_do_ky_nang_nghe_de_duy_tri_viec_lam_cho_nguoi_lao_dong_cap_tinh"
+        },
+        "procedure_code": "1.014754",
+        "procedure_name": "Hỗ trợ người sử dụng lao động đào tạo, bồi dưỡng, nâng cao trình độ kỹ năng nghề để duy trì việc làm cho người lao động (Cấp tỉnh)",
+        "why_this_route": "Route trực tiếp cho nhu cầu 'Hỗ trợ người sử dụng lao động đào tạo, bồi dưỡng, nâng cao trình độ kỹ năng nghề để duy trì việc làm cho người lao động (Cấp tỉnh)' trong nhánh 'Nâng ngạch'."
+      },
+      {
+        "route_id": "nang_ngach-1_115483",
+        "conditions": {
+          "subdomain_key": "nang_ngach",
+          "operation_key": "de_nghi_ho_tro_tham_gia_dao_tao_boi_duong_nang_cao_trinh_do_ky_nang_nghe_cap_tinh"
+        },
+        "procedure_code": "1.115483",
+        "procedure_name": "Đề nghị hỗ trợ tham gia đào tạo, bồi dưỡng, nâng cao trình độ kỹ năng nghề (Cấp tỉnh)",
+        "why_this_route": "Route trực tiếp cho nhu cầu 'Đề nghị hỗ trợ tham gia đào tạo, bồi dưỡng, nâng cao trình độ kỹ năng nghề (Cấp tỉnh)' trong nhánh 'Nâng ngạch'."
+      },
+      {
+        "route_id": "nang_ngach-2_002821",
+        "conditions": {
+          "subdomain_key": "nang_ngach",
+          "operation_key": "ho_tro_dao_tao_nghe_cho_nguoi_lao_dong_o_khu_vuc_nong_thon_nguoi_lao_dong_la_thanh_nien"
+        },
+        "procedure_code": "2.002821",
+        "procedure_name": "Hỗ trợ đào tạo nghề cho người lao động ở khu vực nông thôn, người lao động là thanh niên",
+        "why_this_route": "Route trực tiếp cho nhu cầu 'Hỗ trợ đào tạo nghề cho người lao động ở khu vực nông thôn, người lao động là thanh niên' trong nhánh 'Nâng ngạch'."
+      },
+      {
+        "route_id": "thue_thu_nhap_ca_nhan-2_002237",
+        "conditions": {
+          "subdomain_key": "thue_thu_nhap_ca_nhan",
+          "operation_key": "khai_thue_thu_nhap_ca_nhan_thang_quy_doi_voi_ca_nhan_co_thu_nhap_tu_tien_luong_tien_cong_bao_gom_ca_ca_nhan_nhan_thuong_bang_co_phieu_tu_don_vi_su_dung_lao_dong_thuoc_dien_khai_thue_thu_nhap_ca_nhan_truc_tiep_voi_co_quan_thue"
+        },
+        "procedure_code": "2.002237",
+        "procedure_name": "Khai thuế thu nhập cá nhân tháng/quý đối với cá nhân có thu nhập từ tiền lương, tiền công (bao gồm cả cá nhân nhận thưởng bằng cổ phiếu từ đơn vị sử dụng lao động) thuộc diện khai thuế thu nhập cá nhân trực tiếp với cơ quan thuế",
+        "why_this_route": "Route trực tiếp cho nhu cầu 'Khai thuế thu nhập cá nhân tháng/quý đối với cá nhân có thu nhập từ tiền lương, tiền công (bao gồm cả cá nhân nhận thưởng bằng cổ phiếu từ đơn vị sử dụng lao động) thuộc diện khai thuế thu nhập cá nhân trực tiếp với cơ quan thuế' trong nhánh 'Thuế thu nhập cá nhân'."
+      },
+      {
+        "route_id": "tuyen_dung-1_115302",
+        "conditions": {
+          "subdomain_key": "tuyen_dung",
+          "operation_key": "thu_tuc_ket_noi_econtract_voi_nen_tang_hop_dong_lao_dong_dien_tu"
+        },
+        "procedure_code": "1.115302",
+        "procedure_name": "Thủ tục Kết nối eContract với Nền tảng hợp đồng lao động điện tử",
+        "why_this_route": "Route trực tiếp cho nhu cầu 'Thủ tục Kết nối eContract với Nền tảng hợp đồng lao động điện tử' trong nhánh 'Tuyển dụng'."
+      },
+      {
+        "route_id": "tuyen_dung-1_115303",
+        "conditions": {
+          "subdomain_key": "tuyen_dung",
+          "operation_key": "dang_ky_lao_dong_doi_voi_nguoi_lao_dong_thuoc_doi_tuong_tham_gia_bao_hiem_xa_hoi_bat_buoc"
+        },
+        "procedure_code": "1.115303",
+        "procedure_name": "Đăng ký lao động đối với người lao động thuộc đối tượng tham gia bảo hiểm xã hội bắt buộc",
+        "why_this_route": "Route trực tiếp cho nhu cầu 'Đăng ký lao động đối với người lao động thuộc đối tượng tham gia bảo hiểm xã hội bắt buộc' trong nhánh 'Tuyển dụng'."
+      },
+      {
+        "route_id": "tuyen_dung-1_115304",
+        "conditions": {
+          "subdomain_key": "tuyen_dung",
+          "operation_key": "dieu_chinh_thong_tin_dang_ky_lao_dong_doi_voi_nguoi_lao_dong_thuoc_doi_tuong_tham_gia_bao_hiem_xa_hoi_bat_buoc"
+        },
+        "procedure_code": "1.115304",
+        "procedure_name": "Điều chỉnh thông tin đăng ký lao động đối với người lao động thuộc đối tượng tham gia bảo hiểm xã hội bắt buộc",
+        "why_this_route": "Route trực tiếp cho nhu cầu 'Điều chỉnh thông tin đăng ký lao động đối với người lao động thuộc đối tượng tham gia bảo hiểm xã hội bắt buộc' trong nhánh 'Tuyển dụng'."
+      },
+      {
+        "route_id": "tuyen_dung-1_115305",
+        "conditions": {
+          "subdomain_key": "tuyen_dung",
+          "operation_key": "dang_ky_lao_dong_doi_voi_nguoi_lao_dong_dang_co_viec_lam_khong_thuoc_doi_tuong_tham_gia_bao_hiem_xa_hoi_bat_buoc_nguoi_that_nghiep"
+        },
+        "procedure_code": "1.115305",
+        "procedure_name": "Đăng ký lao động đối với người lao động đang có việc làm không thuộc đối tượng tham gia bảo hiểm xã hội bắt buộc, người thất nghiệp.",
+        "why_this_route": "Route trực tiếp cho nhu cầu 'Đăng ký lao động đối với người lao động đang có việc làm không thuộc đối tượng tham gia bảo hiểm xã hội bắt buộc, người thất nghiệp.' trong nhánh 'Tuyển dụng'."
+      },
+      {
+        "route_id": "tuyen_dung-1_115306",
+        "conditions": {
+          "subdomain_key": "tuyen_dung",
+          "operation_key": "dieu_chinh_thong_tin_dang_ky_lao_dong_doi_voi_nguoi_lao_dong_dang_co_viec_lam_va_khong_thuoc_doi_tuong_tham_gia_bao_hiem_xa_hoi_bat_buoc"
+        },
+        "procedure_code": "1.115306",
+        "procedure_name": "Điều chỉnh thông tin đăng ký lao động đối với người lao động đang có việc làm và không thuộc đối tượng tham gia bảo hiểm xã hội bắt buộc",
+        "why_this_route": "Route trực tiếp cho nhu cầu 'Điều chỉnh thông tin đăng ký lao động đối với người lao động đang có việc làm và không thuộc đối tượng tham gia bảo hiểm xã hội bắt buộc' trong nhánh 'Tuyển dụng'."
+      },
+      {
+        "route_id": "tuyen_dung-1_115307",
+        "conditions": {
+          "subdomain_key": "tuyen_dung",
+          "operation_key": "dieu_chinh_thong_tin_dang_ky_lao_dong_trong_truong_hop_thay_doi_tinh_trang_tu_nguoi_co_viec_lam_sang_nguoi_that_nghiep"
+        },
+        "procedure_code": "1.115307",
+        "procedure_name": "Điều chỉnh thông tin đăng ký lao động trong trường hợp thay đổi tình trạng từ người có việc làm sang người thất nghiệp",
+        "why_this_route": "Route trực tiếp cho nhu cầu 'Điều chỉnh thông tin đăng ký lao động trong trường hợp thay đổi tình trạng từ người có việc làm sang người thất nghiệp' trong nhánh 'Tuyển dụng'."
+      },
+      {
+        "route_id": "tuyen_dung-1_115308",
+        "conditions": {
+          "subdomain_key": "tuyen_dung",
+          "operation_key": "dieu_chinh_thong_tin_dang_ky_lao_dong_truong_hop_thay_doi_tinh_trang_tu_nguoi_co_viec_lam_hoac_nguoi_that_nghiep_sang_khong_tham_gia_hoat_dong_kinh_te"
+        },
+        "procedure_code": "1.115308",
+        "procedure_name": "Điều chỉnh thông tin đăng ký lao động trường hợp thay đổi tình trạng từ người có việc làm hoặc người thất nghiệp sang không tham gia hoạt động kinh tế",
+        "why_this_route": "Route trực tiếp cho nhu cầu 'Điều chỉnh thông tin đăng ký lao động trường hợp thay đổi tình trạng từ người có việc làm hoặc người thất nghiệp sang không tham gia hoạt động kinh tế' trong nhánh 'Tuyển dụng'."
+      },
+      {
+        "route_id": "tuyen_dung-1_115309",
+        "conditions": {
+          "subdomain_key": "tuyen_dung",
+          "operation_key": "dieu_chinh_thong_tin_dang_ky_lao_dong_doi_voi_nguoi_lao_dong_giao_ket_hop_dong_lao_dong_voi_nhieu_nguoi_su_dung_lao_dong"
+        },
+        "procedure_code": "1.115309",
+        "procedure_name": "Điều chỉnh thông tin đăng ký lao động đối với người lao động giao kết hợp đồng lao động với nhiều người sử dụng lao động",
+        "why_this_route": "Route trực tiếp cho nhu cầu 'Điều chỉnh thông tin đăng ký lao động đối với người lao động giao kết hợp đồng lao động với nhiều người sử dụng lao động' trong nhánh 'Tuyển dụng'."
+      }
+    ]
+  },
+  "pre_submission_checks": [
+    {
+      "field_group": "employment_support",
+      "checks": [
+        "Nhóm hỗ trợ việc làm và tuyển dụng phải làm rõ người dùng đang tìm việc, cập nhật tình trạng lao động hay xin hỗ trợ chi phí/liên kết việc làm.",
+        "Nếu là đăng ký hoặc điều chỉnh lao động, cần xác định rõ trạng thái hiện tại: có việc làm, thất nghiệp hay không tham gia hoạt động kinh tế."
+      ]
+    },
+    {
+      "field_group": "unemployment_and_skills",
+      "checks": [
+        "Nhóm thất nghiệp phải phân biệt rõ nộp hồ sơ hưởng mới, thông báo tìm việc hằng tháng, tiếp tục hưởng, tạm dừng, chấm dứt hay chuyển nơi hưởng.",
+        "Nhóm chứng chỉ và nâng cao kỹ năng phải làm rõ đây là cấp chứng chỉ, cấp lại hay xin hỗ trợ đào tạo/nâng cao kỹ năng nghề."
+      ]
+    },
+    {
+      "field_group": "tax_and_foreign_work",
+      "checks": [
+        "Nhóm thuế chỉ áp dụng cho khai thuế thu nhập cá nhân trực tiếp từ tiền lương, tiền công trong bộ workflow sạch này.",
+        "Nhóm giấy phép lao động cho người nước ngoài phải làm rõ là cấp mới, cấp lại, gia hạn hay xác nhận miễn giấy phép lao động."
+      ]
+    }
+  ]
+}

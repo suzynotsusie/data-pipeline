@@ -8,6 +8,13 @@
   </head>
   <body>
     <div class="shell">
+      <div id="introOverlay" class="intro-overlay" style="display: none;">
+        <div class="intro-modal">
+          <h2>Chào mừng bạn đến với GovEase AI</h2>
+          <p>Trợ lý ảo hỗ trợ tìm kiếm và thực hiện thủ tục hành chính công một cách nhanh chóng và dễ dàng. Nhập câu hỏi của bạn để bắt đầu.</p>
+          <button id="introContinueBtn" class="btn-primary">Tiếp tục</button>
+        </div>
+      </div>
       <aside class="sidebar">
         <div class="brand">
           <div class="brand-mark">G</div>
@@ -16,6 +23,22 @@
             <h1>Trợ lý workflow</h1>
           </div>
         </div>
+
+        <section class="panel">
+          <h2>Cấu hình Lĩnh vực</h2>
+          <div style="display: grid; gap: 8px; margin-bottom: 12px;">
+            <label for="groupSelect" style="font-size: 13px; font-weight: 600;">Nhóm Công Dân</label>
+            <select id="groupSelect" class="form-select">
+              <option value="">-- Chọn nhóm --</option>
+            </select>
+          </div>
+          <div style="display: grid; gap: 8px;">
+            <label for="subdomainSelect" style="font-size: 13px; font-weight: 600;">Subdomain</label>
+            <select id="subdomainSelect" class="form-select">
+              <option value="">-- Chọn subdomain --</option>
+            </select>
+          </div>
+        </section>
 
         <section class="panel">
           <h2>Trạng thái</h2>
@@ -41,9 +64,17 @@
       </aside>
 
       <main class="main">
-        <section class="hero">
-          <p class="eyebrow">GPT-5 mini + workflow engine</p>
-          <h2>Chat tự nhiên, backend vẫn đi theo decision tree</h2>
+        <section class="hero" id="chatHeader">
+          <div style="display: flex; justify-content: space-between; align-items: flex-start; width: 100%;">
+            <div>
+              <p class="eyebrow">GPT-5 mini + workflow engine</p>
+              <h2>Chat tự nhiên, backend vẫn đi theo decision tree</h2>
+            </div>
+            <div style="display: flex; gap: 8px;">
+              <button type="button" id="refreshChatBtn" class="header-action-btn" title="Làm mới chat">&#x21bb;</button>
+              <button type="button" id="closeOverlayBtn" class="header-action-btn" title="Đóng chat">&#x2715;</button>
+            </div>
+          </div>
           <p>
             Ví dụ: “Tôi mới sinh con, muốn làm khai sinh cho bé” hoặc “Tôi muốn đăng ký tạm trú”.
           </p>

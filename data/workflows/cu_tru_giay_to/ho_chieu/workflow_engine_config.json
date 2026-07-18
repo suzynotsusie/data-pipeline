@@ -1,0 +1,304 @@
+{
+  "schema_version": "1.0",
+  "domain": "cu_tru_giay_to",
+  "updated_at": "2026-07-18",
+  "source_files": [
+    "C:\\Users\\ku060\\Downloads\\VAIC source\\data-pipeline\\main\\full-data.csv",
+    "C:\\Users\\ku060\\Downloads\\VAIC source\\data-pipeline\\data\\workflows\\cu_tru_giay_to\\summary.csv",
+    "C:\\Users\\ku060\\Downloads\\VAIC source\\data-pipeline\\data\\workflows\\cu_tru_giay_to\\normalized.json",
+    "C:\\Users\\ku060\\Downloads\\VAIC source\\data-pipeline\\raw_data"
+  ],
+  "coverage": {
+    "expected_codes": [
+      "1.001445",
+      "1.001456",
+      "1.001471",
+      "1.010094",
+      "1.010103",
+      "1.010382",
+      "1.010384",
+      "1.010385",
+      "1.010386",
+      "2.000539"
+    ],
+    "covered_codes": [
+      "1.001445",
+      "1.001456",
+      "1.001471",
+      "1.010094",
+      "1.010103",
+      "1.010382",
+      "1.010384",
+      "1.010385",
+      "1.010386",
+      "2.000539"
+    ],
+    "missing_codes": []
+  },
+  "llm_contract": {
+    "role": "parse_user_answer_and_rephrase_question_only",
+    "required_output_schema": {
+      "intent": "cu_tru_giay_to",
+      "current_node": "string",
+      "slot_updates": {
+        "subdomain_key": "ho_khau | tam_tru | luu_tru | can_cuoc_chung_minh_nhan_dan | ho_chieu | tam_vang | unknown",
+        "operation_key": "string",
+        "operation_group": "string"
+      },
+      "confidence": "0_to_1",
+      "needs_human_review": "boolean"
+    }
+  },
+  "entry_prompts": [
+    "Bạn đang cần làm việc về cư trú, căn cước hay hộ chiếu?",
+    "Bạn muốn đăng ký, gia hạn, xóa, xác nhận thông tin, cấp lại giấy tờ hay xử lý giấy tờ bị mất?"
+  ],
+  "slots": [
+    {
+      "name": "subdomain_key",
+      "required": true,
+      "description": "Nhánh chính của nhóm Cư trú và giấy tờ tùy thân."
+    },
+    {
+      "name": "operation_key",
+      "required": true,
+      "description": "Thao tác cụ thể ánh xạ trực tiếp tới thủ tục cuối cùng."
+    },
+    {
+      "name": "operation_group",
+      "required": false,
+      "description": "Nhóm thao tác để gom các thủ tục gần nhau cho UI và parser."
+    }
+  ],
+  "subdomain_catalog": [
+    {
+      "subdomain_key": "ho_chieu",
+      "subdomain_label": "Hộ chiếu",
+      "event_id": 273,
+      "summary": "Nhóm thủ tục cấp hộ chiếu phổ thông, trình báo mất và khôi phục giá trị sử dụng hộ chiếu."
+    }
+  ],
+  "decision_tree": {
+    "start_node": "residence_identity_subdomain",
+    "nodes": [
+      {
+        "id": "residence_identity_subdomain",
+        "type": "question",
+        "slot": "subdomain_key",
+        "question": "Bạn đang hỏi về hộ khẩu, tạm trú, lưu trú, căn cước, hộ chiếu hay tạm vắng?",
+        "options": [
+          "ho_chieu"
+        ],
+        "prefilled_value": "ho_chieu"
+      },
+      {
+        "id": "residence_identity_operation",
+        "type": "question",
+        "slot": "operation_key",
+        "question": "Bạn cần làm thao tác nào cụ thể trong nhánh đã chọn?",
+        "options_by_subdomain": {
+          "ho_chieu": [
+            {
+              "operation_key": "trinh_bao_mat_ho_chieu_pho_thong_thuc_hien_tai_cap_tinh",
+              "operation_group": "trinh_bao_mat_ho_chieu",
+              "procedure_code": "1.001445",
+              "procedure_title": "Trình báo mất hộ chiếu phổ thông (thực hiện tại cấp tỉnh)"
+            },
+            {
+              "operation_key": "cap_ho_chieu_pho_thong_o_trong_nuoc_thuc_hien_tai_cap_tinh",
+              "operation_group": "cap_ho_chieu_trong_nuoc",
+              "procedure_code": "1.001456",
+              "procedure_title": "Cấp hộ chiếu phổ thông ở trong nước (thực hiện tại cấp tỉnh)"
+            },
+            {
+              "operation_key": "cap_ho_chieu_pho_thong_o_trong_nuoc_thuc_hien_tai_cap_trung_uong",
+              "operation_group": "cap_ho_chieu_trong_nuoc",
+              "procedure_code": "1.001471",
+              "procedure_title": "Cấp hộ chiếu phổ thông ở trong nước (thực hiện tại cấp trung ương)"
+            },
+            {
+              "operation_key": "thu_tuc_cap_ho_chieu_pho_thong_khong_gan_chip_dien_tu_tai_co_quan_dai_dien_viet_nam_o_nuoc_ngoai",
+              "operation_group": "cap_ho_chieu_o_nuoc_ngoai",
+              "procedure_code": "1.010094",
+              "procedure_title": "Thủ tục cấp hộ chiếu phổ thông (không gắn chip điện tử) tại Cơ quan đại diện Việt Nam ở nước ngoài"
+            },
+            {
+              "operation_key": "thu_tuc_cap_ho_chieu_pho_thong_theo_thu_tuc_rut_gon_tai_co_quan_dai_dien_viet_nam_o_nuoc_ngoai",
+              "operation_group": "cap_ho_chieu_rut_gon_o_nuoc_ngoai",
+              "procedure_code": "1.010103",
+              "procedure_title": "Thủ tục cấp hộ chiếu phổ thông theo thủ tục rút gọn tại Cơ quan đại diện Việt Nam ở nước ngoài"
+            },
+            {
+              "operation_key": "khoi_phuc_gia_tri_su_dung_ho_chieu_pho_thong_thuc_hien_tai_cap_trung_uong",
+              "operation_group": "khoi_phuc_gia_tri_ho_chieu",
+              "procedure_code": "1.010382",
+              "procedure_title": "Khôi phục giá trị sử dụng hộ chiếu phổ thông (thực hiện tại cấp trung ương)"
+            },
+            {
+              "operation_key": "khoi_phuc_gia_tri_su_dung_ho_chieu_pho_thong_thuc_hien_tai_cap_tinh",
+              "operation_group": "khoi_phuc_gia_tri_ho_chieu",
+              "procedure_code": "1.010384",
+              "procedure_title": "Khôi phục giá trị sử dụng hộ chiếu phổ thông (thực hiện tại cấp tỉnh)"
+            },
+            {
+              "operation_key": "trinh_bao_mat_ho_chieu_pho_thong_thuc_hien_tai_cap_huyen",
+              "operation_group": "trinh_bao_mat_ho_chieu",
+              "procedure_code": "1.010385",
+              "procedure_title": "Trình báo mất hộ chiếu phổ thông (thực hiện tại cấp huyện)"
+            },
+            {
+              "operation_key": "trinh_bao_mat_ho_chieu_pho_thong_thuc_hien_tai_cap_xa",
+              "operation_group": "trinh_bao_mat_ho_chieu",
+              "procedure_code": "1.010386",
+              "procedure_title": "Trình báo mất hộ chiếu phổ thông (thực hiện tại cấp xã)"
+            },
+            {
+              "operation_key": "trinh_bao_mat_ho_chieu_pho_thong_thuc_hien_tai_cap_trung_uong",
+              "operation_group": "trinh_bao_mat_ho_chieu",
+              "procedure_code": "2.000539",
+              "procedure_title": "Trình báo mất hộ chiếu phổ thông (thực hiện tại cấp trung ương)"
+            }
+          ]
+        },
+        "options": [
+          "trinh_bao_mat_ho_chieu_pho_thong_thuc_hien_tai_cap_tinh",
+          "cap_ho_chieu_pho_thong_o_trong_nuoc_thuc_hien_tai_cap_tinh",
+          "cap_ho_chieu_pho_thong_o_trong_nuoc_thuc_hien_tai_cap_trung_uong",
+          "thu_tuc_cap_ho_chieu_pho_thong_khong_gan_chip_dien_tu_tai_co_quan_dai_dien_viet_nam_o_nuoc_ngoai",
+          "thu_tuc_cap_ho_chieu_pho_thong_theo_thu_tuc_rut_gon_tai_co_quan_dai_dien_viet_nam_o_nuoc_ngoai",
+          "khoi_phuc_gia_tri_su_dung_ho_chieu_pho_thong_thuc_hien_tai_cap_trung_uong",
+          "khoi_phuc_gia_tri_su_dung_ho_chieu_pho_thong_thuc_hien_tai_cap_tinh",
+          "trinh_bao_mat_ho_chieu_pho_thong_thuc_hien_tai_cap_huyen",
+          "trinh_bao_mat_ho_chieu_pho_thong_thuc_hien_tai_cap_xa",
+          "trinh_bao_mat_ho_chieu_pho_thong_thuc_hien_tai_cap_trung_uong"
+        ]
+      }
+    ],
+    "routes": [
+      {
+        "route_id": "ho_chieu-1_001445",
+        "conditions": {
+          "subdomain_key": "ho_chieu",
+          "operation_key": "trinh_bao_mat_ho_chieu_pho_thong_thuc_hien_tai_cap_tinh"
+        },
+        "procedure_code": "1.001445",
+        "procedure_name": "Trình báo mất hộ chiếu phổ thông (thực hiện tại cấp tỉnh)",
+        "why_this_route": "Route trực tiếp cho nhu cầu 'Trình báo mất hộ chiếu phổ thông (thực hiện tại cấp tỉnh)' trong nhánh 'Hộ chiếu'."
+      },
+      {
+        "route_id": "ho_chieu-1_001456",
+        "conditions": {
+          "subdomain_key": "ho_chieu",
+          "operation_key": "cap_ho_chieu_pho_thong_o_trong_nuoc_thuc_hien_tai_cap_tinh"
+        },
+        "procedure_code": "1.001456",
+        "procedure_name": "Cấp hộ chiếu phổ thông ở trong nước (thực hiện tại cấp tỉnh)",
+        "why_this_route": "Route trực tiếp cho nhu cầu 'Cấp hộ chiếu phổ thông ở trong nước (thực hiện tại cấp tỉnh)' trong nhánh 'Hộ chiếu'."
+      },
+      {
+        "route_id": "ho_chieu-1_001471",
+        "conditions": {
+          "subdomain_key": "ho_chieu",
+          "operation_key": "cap_ho_chieu_pho_thong_o_trong_nuoc_thuc_hien_tai_cap_trung_uong"
+        },
+        "procedure_code": "1.001471",
+        "procedure_name": "Cấp hộ chiếu phổ thông ở trong nước (thực hiện tại cấp trung ương)",
+        "why_this_route": "Route trực tiếp cho nhu cầu 'Cấp hộ chiếu phổ thông ở trong nước (thực hiện tại cấp trung ương)' trong nhánh 'Hộ chiếu'."
+      },
+      {
+        "route_id": "ho_chieu-1_010094",
+        "conditions": {
+          "subdomain_key": "ho_chieu",
+          "operation_key": "thu_tuc_cap_ho_chieu_pho_thong_khong_gan_chip_dien_tu_tai_co_quan_dai_dien_viet_nam_o_nuoc_ngoai"
+        },
+        "procedure_code": "1.010094",
+        "procedure_name": "Thủ tục cấp hộ chiếu phổ thông (không gắn chip điện tử) tại Cơ quan đại diện Việt Nam ở nước ngoài",
+        "why_this_route": "Route trực tiếp cho nhu cầu 'Thủ tục cấp hộ chiếu phổ thông (không gắn chip điện tử) tại Cơ quan đại diện Việt Nam ở nước ngoài' trong nhánh 'Hộ chiếu'."
+      },
+      {
+        "route_id": "ho_chieu-1_010103",
+        "conditions": {
+          "subdomain_key": "ho_chieu",
+          "operation_key": "thu_tuc_cap_ho_chieu_pho_thong_theo_thu_tuc_rut_gon_tai_co_quan_dai_dien_viet_nam_o_nuoc_ngoai"
+        },
+        "procedure_code": "1.010103",
+        "procedure_name": "Thủ tục cấp hộ chiếu phổ thông theo thủ tục rút gọn tại Cơ quan đại diện Việt Nam ở nước ngoài",
+        "why_this_route": "Route trực tiếp cho nhu cầu 'Thủ tục cấp hộ chiếu phổ thông theo thủ tục rút gọn tại Cơ quan đại diện Việt Nam ở nước ngoài' trong nhánh 'Hộ chiếu'."
+      },
+      {
+        "route_id": "ho_chieu-1_010382",
+        "conditions": {
+          "subdomain_key": "ho_chieu",
+          "operation_key": "khoi_phuc_gia_tri_su_dung_ho_chieu_pho_thong_thuc_hien_tai_cap_trung_uong"
+        },
+        "procedure_code": "1.010382",
+        "procedure_name": "Khôi phục giá trị sử dụng hộ chiếu phổ thông (thực hiện tại cấp trung ương)",
+        "why_this_route": "Route trực tiếp cho nhu cầu 'Khôi phục giá trị sử dụng hộ chiếu phổ thông (thực hiện tại cấp trung ương)' trong nhánh 'Hộ chiếu'."
+      },
+      {
+        "route_id": "ho_chieu-1_010384",
+        "conditions": {
+          "subdomain_key": "ho_chieu",
+          "operation_key": "khoi_phuc_gia_tri_su_dung_ho_chieu_pho_thong_thuc_hien_tai_cap_tinh"
+        },
+        "procedure_code": "1.010384",
+        "procedure_name": "Khôi phục giá trị sử dụng hộ chiếu phổ thông (thực hiện tại cấp tỉnh)",
+        "why_this_route": "Route trực tiếp cho nhu cầu 'Khôi phục giá trị sử dụng hộ chiếu phổ thông (thực hiện tại cấp tỉnh)' trong nhánh 'Hộ chiếu'."
+      },
+      {
+        "route_id": "ho_chieu-1_010385",
+        "conditions": {
+          "subdomain_key": "ho_chieu",
+          "operation_key": "trinh_bao_mat_ho_chieu_pho_thong_thuc_hien_tai_cap_huyen"
+        },
+        "procedure_code": "1.010385",
+        "procedure_name": "Trình báo mất hộ chiếu phổ thông (thực hiện tại cấp huyện)",
+        "why_this_route": "Route trực tiếp cho nhu cầu 'Trình báo mất hộ chiếu phổ thông (thực hiện tại cấp huyện)' trong nhánh 'Hộ chiếu'."
+      },
+      {
+        "route_id": "ho_chieu-1_010386",
+        "conditions": {
+          "subdomain_key": "ho_chieu",
+          "operation_key": "trinh_bao_mat_ho_chieu_pho_thong_thuc_hien_tai_cap_xa"
+        },
+        "procedure_code": "1.010386",
+        "procedure_name": "Trình báo mất hộ chiếu phổ thông (thực hiện tại cấp xã)",
+        "why_this_route": "Route trực tiếp cho nhu cầu 'Trình báo mất hộ chiếu phổ thông (thực hiện tại cấp xã)' trong nhánh 'Hộ chiếu'."
+      },
+      {
+        "route_id": "ho_chieu-2_000539",
+        "conditions": {
+          "subdomain_key": "ho_chieu",
+          "operation_key": "trinh_bao_mat_ho_chieu_pho_thong_thuc_hien_tai_cap_trung_uong"
+        },
+        "procedure_code": "2.000539",
+        "procedure_name": "Trình báo mất hộ chiếu phổ thông (thực hiện tại cấp trung ương)",
+        "why_this_route": "Route trực tiếp cho nhu cầu 'Trình báo mất hộ chiếu phổ thông (thực hiện tại cấp trung ương)' trong nhánh 'Hộ chiếu'."
+      }
+    ]
+  },
+  "pre_submission_checks": [
+    {
+      "field_group": "residence_information",
+      "checks": [
+        "Nhóm cư trú phải phân biệt rõ thường trú, tạm trú, lưu trú và tạm vắng trước khi chọn thủ tục.",
+        "Địa chỉ cư trú và giấy tờ chứng minh chỗ ở phải thống nhất giữa tờ khai, dữ liệu cư trú và hồ sơ đính kèm."
+      ]
+    },
+    {
+      "field_group": "identity_documents",
+      "checks": [
+        "Nhóm căn cước phải làm rõ là cấp mới, cấp đổi, cấp lại hay điều chỉnh/tích hợp thông tin.",
+        "Nhóm định danh điện tử cần xác định đúng thao tác cấp mức 2, khóa hay mở khóa căn cước điện tử."
+      ]
+    },
+    {
+      "field_group": "passport_context",
+      "checks": [
+        "Nhóm hộ chiếu phải xác định rõ làm trong nước hay tại cơ quan đại diện ở nước ngoài.",
+        "Các trường hợp mất hộ chiếu hoặc khôi phục giá trị sử dụng phải có căn cứ về tình trạng giấy tờ hiện tại."
+      ]
+    }
+  ],
+  "subdomain_key": "ho_chieu"
+}

@@ -1,0 +1,91 @@
+{
+  "schema_version": "1.0",
+  "enricher_version": "0.2.0",
+  "source": {
+    "procedure_code": "2.002813",
+    "title": "Chấm dứt hoạt động của Đề án dạy và học bằng tiếng nước ngoài",
+    "group_key": "hoc_tap",
+    "workflow_family": null,
+    "subflow": null
+  },
+  "experience": {
+    "entry_label": "Hỗ trợ giáo dục và học tập",
+    "overview_summary": "Thủ tục này thuộc nhóm giáo dục và học tập, thường liên quan đến hồ sơ đào tạo, văn bằng hoặc điều kiện học tập của người học. Kết quả thường nhận được là Quyết định chấm dứt hoạt động của Đề án dạy và học bằng tiếng nước ngoài. Thời gian xử lý tham khảo: 3 ngày làm việc.",
+    "next_step_summary": "Nên rà trước thông tin người học, cơ sở đào tạo và loại kết quả cần xin xác nhận hoặc cấp lại. Có thể chọn kênh nộp phù hợp: Trực tiếp, Trực tuyến, Dịch vụ bưu chính. Hiện có 1 mục giấy tờ cần theo dõi trong checklist.",
+    "tone": "supportive_public_service"
+  },
+  "guidance": {
+    "highlight_documents": [
+      {
+        "bucket": "conditional",
+        "name": "Văn bản đề nghị chấm dứt hoạt động của Đề án dạy và học bằng tiếng nước ngoài theo Mẫu số 04 tại Phụ lục ban hành kèm theo Nghị định số 222/2025/NĐ-CP, trong đó có các nội dung về cơ sở giáo dục, Quyết định cho phép thực hiện Đề án; lý do chấm dứt Đề án; cam kết bảo đảm quyền lợi của người dạy và người học, sự trung thực và tính chính xác về nội dung văn bản đề nghị chấm dứt; đề xuất, kiến nghị (nếu có)",
+        "conditions": [
+          "Văn bản đề nghị chấm dứt hoạt động của Đề án dạy và học bằng tiếng nước ngoài theo Mẫu số 04 tại Phụ lục ban hành kèm theo Nghị định số 222/2025/NĐ-CP, trong đó có các nội dung về cơ sở giáo dục, Quyết định cho phép thực hiện Đề án; lý do chấm dứt Đề án; cam kết bảo đảm quyền lợi của người dạy và người học, sự trung thực và tính chính xác về nội dung văn bản đề nghị chấm dứt; đề xuất, kiến nghị (nếu có)"
+        ],
+        "attachment_path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/2_002813/MauVBdenghichamdutthuchienDean.docx"
+      }
+    ],
+    "special_cases": [
+      "Có yếu tố nước ngoài",
+      "Có thể cần xác minh hồ sơ học tập hoặc văn bằng"
+    ],
+    "common_errors": [
+      "Thiếu giấy tờ hợp pháp hóa hoặc giấy tờ nhân thân của phía nước ngoài.",
+      "Điền sai mẫu tờ khai hoặc chọn sai biểu mẫu đi kèm."
+    ],
+    "validation_hints": [
+      "Nên xác định trước kênh nộp hồ sơ để biết có cần bản giấy, bản điện tử hay xuất trình trực tiếp.",
+      "Có mẫu biểu đính kèm, nên kiểm tra đúng biểu mẫu trước khi nộp.",
+      "Nên rà lại thông tin người học, cơ sở đào tạo và loại xác nhận hoặc văn bằng cần xin."
+    ]
+  },
+  "intake": {
+    "candidate_input_fields": [
+      {
+        "field_id": "learner_full_name",
+        "label": "Tên người học",
+        "field_type": "text",
+        "required": true
+      },
+      {
+        "field_id": "education_record_type",
+        "label": "Loại hồ sơ học tập cần xử lý",
+        "field_type": "text",
+        "required": true
+      },
+      {
+        "field_id": "education_institution",
+        "label": "Cơ sở đào tạo liên quan",
+        "field_type": "text",
+        "required": false
+      },
+      {
+        "field_id": "submission_channel_preference",
+        "label": "Kênh nộp dự kiến",
+        "field_type": "enum",
+        "required": false
+      },
+      {
+        "field_id": "certificate_or_degree_type",
+        "label": "Loại văn bằng/chứng chỉ",
+        "field_type": "text",
+        "required": false
+      }
+    ],
+    "suggested_clarifying_questions": [
+      "Bạn đang cần xử lý hồ sơ học tập, văn bằng hay xác nhận nào?",
+      "Người học và cơ sở đào tạo liên quan đã xác định rõ chưa?"
+    ]
+  },
+  "ui_hints": {
+    "primary_channel": "online",
+    "result_label": "Quyết định chấm dứt hoạt động của Đề án dạy và học bằng tiếng nước ngoài",
+    "time_badge": "3 ngày làm việc",
+    "document_count_badge": 1
+  },
+  "provenance": {
+    "generator": "workflow_domain_enricher",
+    "derivation_mode": "rule_based_semantic_enrichment",
+    "supported_group": true
+  }
+}

@@ -1,0 +1,331 @@
+{
+  "schema_version": "3.0",
+  "record_type": "public_service_procedure_payload",
+  "id": "procedure-1.014746",
+  "procedure_code": "1.014746",
+  "code": "1.014746",
+  "title": "Hỗ trợ tư vấn, giới thiệu việc làm (Cấp tỉnh)",
+  "language": "vi",
+  "status": "generated_from_pipeline",
+  "field": "Việc làm",
+  "group_key": "viec_lam",
+  "workflow_family": "employment_workflow",
+  "subflow": "ho_tro_tu_van_gioi_thieu_viec_lam",
+  "source": {
+    "source_url": "file:///C:/Users/ku060/Downloads/VAIC%20source/data-pipeline/raw_data/1_014746/1_014746_procedure_detail.md",
+    "source_markdown_path": "C:\\Users\\ku060\\Downloads\\VAIC source\\data-pipeline\\raw_data\\1_014746\\1_014746_procedure_detail.md",
+    "normalized_payload_path": "C:\\Users\\ku060\\Downloads\\VAIC source\\data-pipeline\\govease-unified\\data\\normalized_structured\\1_014746_normalized_structured.json",
+    "enriched_payload_path": "C:\\Users\\ku060\\Downloads\\VAIC source\\data-pipeline\\govease-unified\\data\\enriched_structured_priority\\1_014746_enriched_structured.json"
+  },
+  "scope": {
+    "included": "Thủ tục này thuộc nhóm việc làm và lao động, thường cần kiểm tra hồ sơ nghề nghiệp, đơn vị sử dụng lao động hoặc điều kiện hưởng chế độ liên quan. Kết quả thường nhận được là Người lao động được tư vấn, giới thiệu việc làm miễn phí. Thời gian xử lý tham khảo: 3 ngày làm việc.",
+    "not_included": []
+  },
+  "agency": {
+    "executing_agency": null,
+    "submission_place": null,
+    "receiving_places": []
+  },
+  "target_users": [
+    "Công dân Việt Nam"
+  ],
+  "submission_methods": [
+    {
+      "code": "ONLINE",
+      "label": "Trực tuyến",
+      "processing_time": "3 ngày làm việc",
+      "fee": null,
+      "description": "Trong thời hạn 03 ngày làm việc ghi trong phiếu hẹn, người lao động sẽ được tư vấn, giới thiệu việc làm."
+    },
+    {
+      "code": "POSTAL",
+      "label": "Dịch vụ bưu chính",
+      "processing_time": "3 ngày làm việc",
+      "fee": null,
+      "description": "Trong thời hạn 03 ngày làm việc ghi trong phiếu hẹn, người lao động sẽ được tư vấn, giới thiệu việc làm."
+    },
+    {
+      "code": "IN_PERSON",
+      "label": "Trực tiếp",
+      "processing_time": "3 ngày làm việc",
+      "fee": null,
+      "description": "Trong thời hạn 03 ngày làm việc ghi trong phiếu hẹn, người lao động sẽ được tư vấn, giới thiệu việc làm."
+    }
+  ],
+  "processing_note": "Thời gian xử lý tham chiếu: 3 ngày làm việc. Nên xác định rõ nhu cầu lao động, hồ sơ nghề nghiệp hoặc chế độ cần giải quyết trước khi nộp. Có thể chọn kênh nộp phù hợp: Trực tiếp, Trực tuyến, Dịch vụ bưu chính. Hiện có khoảng 2 mục giấy tờ cần theo dõi trong checklist.",
+  "documents": {
+    "normally_required": [
+      {
+        "name": "Phiếu tư vấn việc làm theo Mẫu số 01 Phụ lục I tại Phụ lục ban hành kèm theo Nghị định số 352/2025/NĐ-CP.",
+        "quantity": "1 bản chính, 0 bản sao",
+        "notes": [],
+        "group": "default",
+        "attachment_path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/1_014746/Mus01tiPhlcbanhnhkmtheo_VL.docx"
+      }
+    ],
+    "conditional": [
+      {
+        "condition": "Đối với trường hợp nộp hồ sơ tư vấn, giới thiệu việc làm lần đầu tiên sau khi thất nghiệp: Giấy tờ xác nhận về việc chấm dứt hợp đồng lao động, hợp đồng làm việc hoặc chấm dứt làm việc theo quy định tại điểm b khoản 1 Điều 14 Nghị định số 374/2025/NĐ-CP, cụ thể như sau: Bản chính hoặc bản sao có chứng thực hoặc bản chính kèm theo bản sao để đối chiếu hoặc bản điện tử của một trong các giấy tờ sau đây xác nhận về việc chấm dứt hợp đồng lao động/hợp đồng làm việc hoặc chấm dứt làm việc: hợp đồng lao động hoặc hợp đồng làm việc đã hết hạn hoặc đã hoàn thành công việc theo hợp đồng lao động; quyết định thôi việc; quyết định sa thải; quyết định kỷ luật buộc thôi việc; thông báo hoặc thỏa thuận chấm dứt hợp đồng lao động hoặc hợp đồng làm việc; xác nhận của người sử dụng lao động trong đó có nội dung cụ thể về thông tin của người lao động; loại hợp đồng lao động đã ký; lý do, thời điểm chấm dứt hợp đồng lao động đối với người lao động; xác nhận của cơ quan nhà nước có thẩm quyền về việc doanh nghiệp hoặc hợp tác xã giải thể, phá sản hoặc quyết định bãi nhiệm, miễn nhiệm, cách chức đối với các chức danh được bổ nhiệm trong trường hợp người lao động là người quản lý doanh nghiệp, quản lý hợp tác xã; trường hợp người lao động không có các giấy tờ xác nhận về việc chấm dứt hợp đồng lao động do đơn vị sử dụng lao động không có người đại diện theo pháp luật và người được người đại diện theo pháp luật ủy quyền thì thực hiện theo quy trình quy trình sau: Người lao động tại đơn vị sử dụng lao động không có người đại diện theo pháp luật và người được người đại diện theo pháp luật ủy quyền có nhu cầu chấm dứt hợp đồng lao động để hưởng các chế độ bảo hiểm thất nghiệp thì người lao động đề nghị Sở Nội vụ thực hiện các thủ tục để xác nhận việc chấm dứt hợp đồng lao động hoặc hợp đồng làm việc. Sở Nội vụ gửi văn bản yêu cầu Sở Tài chính xác nhận đơn vị sử dụng lao động không có người đại diện theo pháp luật hoặc không có người được người đại diện theo pháp luật ủy quyền trong thời hạn 03 ngày làm việc kể từ ngày nhận được văn bản đề nghị của người lao động. Sở Tài chính có trách nhiệm phối hợp với cơ quan thuế, cơ quan công an, chính quyền địa phương nơi đơn vị sử dụng lao động đặt trụ sở chính thực hiện xác minh nội dung đơn vị sử dụng lao động không có người đại diện theo pháp luật hoặc không có người được người đại diện theo pháp luật ủy quyền. Sở Tài chính gửi văn bản trả lời cho Sở Nội vụ về nội dung đơn vị sử dụng lao động không có người đại diện theo pháp luật hoặc không có người được người đại diện theo pháp luật ủy quyền trong thời hạn 10 ngày làm việc kể từ ngày nhận được văn bản yêu cầu xác nhận của Sở Nội vụ. Trường hợp người lao động làm việc theo hợp đồng lao động có thời hạn từ đủ 01 tháng đến dưới 12 tháng thì giấy tờ xác nhận về việc chấm dứt hợp đồng lao động là bản chính hoặc bản sao có chứng thực của hợp đồng đó.",
+        "document": "Đối với trường hợp nộp hồ sơ tư vấn, giới thiệu việc làm lần đầu tiên sau khi thất nghiệp: Giấy tờ xác nhận về việc chấm dứt hợp đồng lao động, hợp đồng làm việc hoặc chấm dứt làm việc theo quy định tại điểm b khoản 1 Điều 14 Nghị định số 374/2025/NĐ-CP, cụ thể như sau: Bản chính hoặc bản sao có chứng thực hoặc bản chính kèm theo bản sao để đối chiếu hoặc bản điện tử của một trong các giấy tờ sau đây xác nhận về việc chấm dứt hợp đồng lao động/hợp đồng làm việc hoặc chấm dứt làm việc: hợp đồng lao động hoặc hợp đồng làm việc đã hết hạn hoặc đã hoàn thành công việc theo hợp đồng lao động; quyết định thôi việc; quyết định sa thải; quyết định kỷ luật buộc thôi việc; thông báo hoặc thỏa thuận chấm dứt hợp đồng lao động hoặc hợp đồng làm việc; xác nhận của người sử dụng lao động trong đó có nội dung cụ thể về thông tin của người lao động; loại hợp đồng lao động đã ký; lý do, thời điểm chấm dứt hợp đồng lao động đối với người lao động; xác nhận của cơ quan nhà nước có thẩm quyền về việc doanh nghiệp hoặc hợp tác xã giải thể, phá sản hoặc quyết định bãi nhiệm, miễn nhiệm, cách chức đối với các chức danh được bổ nhiệm trong trường hợp người lao động là người quản lý doanh nghiệp, quản lý hợp tác xã; trường hợp người lao động không có các giấy tờ xác nhận về việc chấm dứt hợp đồng lao động do đơn vị sử dụng lao động không có người đại diện theo pháp luật và người được người đại diện theo pháp luật ủy quyền thì thực hiện theo quy trình quy trình sau: Người lao động tại đơn vị sử dụng lao động không có người đại diện theo pháp luật và người được người đại diện theo pháp luật ủy quyền có nhu cầu chấm dứt hợp đồng lao động để hưởng các chế độ bảo hiểm thất nghiệp thì người lao động đề nghị Sở Nội vụ thực hiện các thủ tục để xác nhận việc chấm dứt hợp đồng lao động hoặc hợp đồng làm việc. Sở Nội vụ gửi văn bản yêu cầu Sở Tài chính xác nhận đơn vị sử dụng lao động không có người đại diện theo pháp luật hoặc không có người được người đại diện theo pháp luật ủy quyền trong thời hạn 03 ngày làm việc kể từ ngày nhận được văn bản đề nghị của người lao động. Sở Tài chính có trách nhiệm phối hợp với cơ quan thuế, cơ quan công an, chính quyền địa phương nơi đơn vị sử dụng lao động đặt trụ sở chính thực hiện xác minh nội dung đơn vị sử dụng lao động không có người đại diện theo pháp luật hoặc không có người được người đại diện theo pháp luật ủy quyền. Sở Tài chính gửi văn bản trả lời cho Sở Nội vụ về nội dung đơn vị sử dụng lao động không có người đại diện theo pháp luật hoặc không có người được người đại diện theo pháp luật ủy quyền trong thời hạn 10 ngày làm việc kể từ ngày nhận được văn bản yêu cầu xác nhận của Sở Nội vụ. Trường hợp người lao động làm việc theo hợp đồng lao động có thời hạn từ đủ 01 tháng đến dưới 12 tháng thì giấy tờ xác nhận về việc chấm dứt hợp đồng lao động là bản chính hoặc bản sao có chứng thực của hợp đồng đó.",
+        "quantity": "1 bản chính, 0 bản sao",
+        "notes": [],
+        "attachment_path": null
+      }
+    ],
+    "forms": [
+      {
+        "name": "Phiếu tư vấn việc làm theo Mẫu số 01 Phụ lục I tại Phụ lục ban hành kèm theo Nghị định số 352/2025/NĐ-CP.",
+        "attachment_label": "Mus01tiPhlcbanhnhkmtheo_VL.docx",
+        "attachment_path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/1_014746/Mus01tiPhlcbanhnhkmtheo_VL.docx"
+      }
+    ],
+    "presented": [],
+    "notes": [],
+    "summary": [
+      {
+        "group": "default",
+        "name": "Phiếu tư vấn việc làm theo Mẫu số 01 Phụ lục I tại Phụ lục ban hành kèm theo Nghị định số 352/2025/NĐ-CP.",
+        "quantity": "1 bản chính, 0 bản sao",
+        "notes": [],
+        "attachment_path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/1_014746/Mus01tiPhlcbanhnhkmtheo_VL.docx"
+      },
+      {
+        "group": null,
+        "name": null,
+        "quantity": "1 bản chính, 0 bản sao",
+        "notes": [],
+        "attachment_path": null
+      },
+      {
+        "group": null,
+        "name": "Phiếu tư vấn việc làm theo Mẫu số 01 Phụ lục I tại Phụ lục ban hành kèm theo Nghị định số 352/2025/NĐ-CP.",
+        "quantity": null,
+        "notes": null,
+        "attachment_path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/1_014746/Mus01tiPhlcbanhnhkmtheo_VL.docx"
+      }
+    ]
+  },
+  "steps": [
+    {
+      "order": 1,
+      "title": "Bước 1",
+      "description": "1.",
+      "example": null
+    },
+    {
+      "order": 2,
+      "title": "Bước 1:",
+      "description": "Bước 1: Người lao động ghi đầy đủ thông tin trong phiếu tư vấn việc làm theo Mẫu số 01 Phụ lục I tại Phụ lục ban hành kèm theo Nghị định số 352/2025/NĐ-CP và nộp 01 bộ hồ sơ đề nghị tư vấn, giới thiệu việc làm trực tiếp tại tổ chức dịch vụ việc làm công hoặc qua Cổng Dịch vụ quốc gia hoặc gửi qua dịch vụ bưu chính. Trong thời hạn 03 ngày làm việc ghi trong phiếu hẹn, người lao động sẽ được tư vấn, giới thiệu việc làm.",
+      "example": "03 ngày làm việc"
+    },
+    {
+      "order": 3,
+      "title": "Bước 2:",
+      "description": "Bước 2: Tổ chức dịch vụ việc làm công tiếp nhận hồ sơ đề nghị tư vấn, giới thiệu việc làm và căn cứ vào nhu cầu, khả năng của người lao động, nhu cầu tuyển dụng của người sử dụng lao động để trao đổi và hỗ trợ người lao động đưa ra lựa chọn việc làm phù hợp, cung cấp thêm thông tin về chính sách pháp luật cho người lao động.",
+      "example": null
+    },
+    {
+      "order": 4,
+      "title": "Bước 3:",
+      "description": "Bước 3: Sau khi người lao động được tư vấn và có nhu cầu được giới thiệu việc làm, tổ chức dịch vụ việc làm công gửi người lao động phiếu giới thiệu việc làm theo Mẫu số 01 tại Phụ lục ban hành kèm theo Nghị định số 374/2025/NĐ-CP để người lao động tham gia dự tuyển lao động. Trường hợp nộp hồ sơ qua Cổng Dịch vụ quốc gia hoặc qua dịch vụ bưu chính mà người lao động không trực tiếp đến tổ chức dịch vụ việc làm công để được tư vấn, kết quả phiếu giới thiệu việc làm được gửi qua Cổng Dịch công quốc gia hoặc qua dịch vụ bưu chính để người lao động được biết và tham gia tuyển.",
+      "example": "dịch vụ bưu chính"
+    },
+    {
+      "order": 5,
+      "title": "Bước 4:",
+      "description": "Bước 4: Tổ chức dịch vụ việc làm công có trách nhiệm theo dõi kết quả dự tuyển lao động để kịp thời hỗ trợ người lao động, đồng thời tổng hợp nhu cầu tìm kiếm việc làm của người lao động, phân tích dự báo thị trường lao động để hỗ trợ tư vấn, giới thiệu việc làm kịp thời cho người lao động tham gia bảo hiểm thất nghiệp.",
+      "example": null
+    }
+  ],
+  "input_fields": [
+    {
+      "field": "employment_need",
+      "label": "Nhu cầu việc làm hoặc lao động",
+      "type": "string",
+      "required": true
+    },
+    {
+      "field": "worker_or_employer_info",
+      "label": "Thông tin người lao động hoặc đơn vị sử dụng lao động",
+      "type": "string",
+      "required": true
+    },
+    {
+      "field": "submission_channel_preference",
+      "label": "Kênh nộp dự kiến",
+      "type": "enum",
+      "required": false,
+      "options": [
+        "Trực tiếp",
+        "Trực tuyến",
+        "Dịch vụ bưu chính"
+      ]
+    },
+    {
+      "field": "has_supporting_employment_documents",
+      "label": "Đã có hồ sơ lao động liên quan",
+      "type": "boolean",
+      "required": false
+    }
+  ],
+  "validation_rules": [
+    {
+      "id": "required-1",
+      "severity": "error",
+      "field": "employment_need",
+      "rule": "Trường bắt buộc phải có dữ liệu hợp lệ trước khi nộp.",
+      "message": "Thiếu trường bắt buộc: Nhu cầu việc làm hoặc lao động."
+    },
+    {
+      "id": "required-2",
+      "severity": "error",
+      "field": "worker_or_employer_info",
+      "rule": "Trường bắt buộc phải có dữ liệu hợp lệ trước khi nộp.",
+      "message": "Thiếu trường bắt buộc: Thông tin người lao động hoặc đơn vị sử dụng lao động."
+    },
+    {
+      "id": "hint-1",
+      "severity": "warning",
+      "field": "general",
+      "rule": "Nên xác định trước kênh nộp hồ sơ để biết có cần bản giấy, bản điện tử hay xuất trình trực tiếp.",
+      "message": "Nên xác định trước kênh nộp hồ sơ để biết có cần bản giấy, bản điện tử hay xuất trình trực tiếp."
+    },
+    {
+      "id": "hint-2",
+      "severity": "warning",
+      "field": "general",
+      "rule": "Có mẫu biểu đính kèm, nên kiểm tra đúng biểu mẫu trước khi nộp.",
+      "message": "Có mẫu biểu đính kèm, nên kiểm tra đúng biểu mẫu trước khi nộp."
+    },
+    {
+      "id": "hint-3",
+      "severity": "warning",
+      "field": "general",
+      "rule": "Nên xác định đúng nhóm thủ tục lao động, đơn vị liên quan và hồ sơ nghề nghiệp cần xuất trình.",
+      "message": "Nên xác định đúng nhóm thủ tục lao động, đơn vị liên quan và hồ sơ nghề nghiệp cần xuất trình."
+    }
+  ],
+  "common_errors": [
+    {
+      "field": "general",
+      "issue": "Thiếu giấy tờ hoặc nội dung ủy quyền phù hợp.",
+      "fix": "Nên xác định trước kênh nộp hồ sơ để biết có cần bản giấy, bản điện tử hay xuất trình trực tiếp."
+    },
+    {
+      "field": "general",
+      "issue": "Điền sai mẫu tờ khai hoặc chọn sai biểu mẫu đi kèm.",
+      "fix": "Nên xác định trước kênh nộp hồ sơ để biết có cần bản giấy, bản điện tử hay xuất trình trực tiếp."
+    },
+    {
+      "field": "general",
+      "issue": "Thiếu hồ sơ về vị trí việc làm, đơn vị sử dụng lao động hoặc điều kiện làm việc áp dụng.",
+      "fix": "Nên xác định trước kênh nộp hồ sơ để biết có cần bản giấy, bản điện tử hay xuất trình trực tiếp."
+    }
+  ],
+  "clarifying_questions": [
+    {
+      "id": "clarify_1",
+      "question": "Bạn đang cần giải quyết thủ tục lao động nào cho người lao động hoặc doanh nghiệp?",
+      "purpose": "workflow_intake"
+    },
+    {
+      "id": "clarify_2",
+      "question": "Hồ sơ nghề nghiệp, đơn vị sử dụng lao động hoặc yếu tố lao động nước ngoài đã rõ chưa?",
+      "purpose": "workflow_intake"
+    }
+  ],
+  "legal_basis": [
+    {
+      "title": "Luật Việc làm",
+      "code": "74/2025/QH15"
+    },
+    {
+      "title": "Quy định chi tiết một số điều của Luật Việc làm về bảo hiểm thất nghiệp",
+      "code": "Nghị định số 374/2025/NĐ-CP"
+    },
+    {
+      "title": "Quy định chi tiết một số điều của Luật Việc làm về dịch vụ việc làm",
+      "code": "352/2025/NĐ-CP"
+    }
+  ],
+  "legal_bases": [
+    {
+      "title": "Luật Việc làm",
+      "code": "74/2025/QH15"
+    },
+    {
+      "title": "Quy định chi tiết một số điều của Luật Việc làm về bảo hiểm thất nghiệp",
+      "code": "Nghị định số 374/2025/NĐ-CP"
+    },
+    {
+      "title": "Quy định chi tiết một số điều của Luật Việc làm về dịch vụ việc làm",
+      "code": "352/2025/NĐ-CP"
+    }
+  ],
+  "faq": [
+    {
+      "question": "Có thể nộp qua kênh nào?",
+      "answer": "Các kênh hiện có: Trực tiếp, Trực tuyến, Dịch vụ bưu chính."
+    },
+    {
+      "question": "Thời gian xử lý tham chiếu là bao lâu?",
+      "answer": "Thời gian xử lý tham chiếu hiện có là 3 ngày làm việc."
+    },
+    {
+      "question": "Kết quả chính của thủ tục là gì?",
+      "answer": "Kết quả chính được trích xuất là Người lao động được tư vấn, giới thiệu việc làm miễn phí."
+    }
+  ],
+  "guidance": {
+    "highlight_documents": [
+      {
+        "bucket": "required",
+        "name": "Phiếu tư vấn việc làm theo Mẫu số 01 Phụ lục I tại Phụ lục ban hành kèm theo Nghị định số 352/2025/NĐ-CP.",
+        "conditions": [],
+        "attachment_path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/1_014746/Mus01tiPhlcbanhnhkmtheo_VL.docx"
+      },
+      {
+        "bucket": "conditional",
+        "name": "Đối với trường hợp nộp hồ sơ tư vấn, giới thiệu việc làm lần đầu tiên sau khi thất nghiệp: Giấy tờ xác nhận về việc chấm dứt hợp đồng lao động, hợp đồng làm việc hoặc chấm dứt làm việc theo quy định tại điểm b khoản 1 Điều 14 Nghị định số 374/2025/NĐ-CP, cụ thể như sau: Bản chính hoặc bản sao có chứng thực hoặc bản chính kèm theo bản sao để đối chiếu hoặc bản điện tử của một trong các giấy tờ sau đây xác nhận về việc chấm dứt hợp đồng lao động/hợp đồng làm việc hoặc chấm dứt làm việc: hợp đồng lao động hoặc hợp đồng làm việc đã hết hạn hoặc đã hoàn thành công việc theo hợp đồng lao động; quyết định thôi việc; quyết định sa thải; quyết định kỷ luật buộc thôi việc; thông báo hoặc thỏa thuận chấm dứt hợp đồng lao động hoặc hợp đồng làm việc; xác nhận của người sử dụng lao động trong đó có nội dung cụ thể về thông tin của người lao động; loại hợp đồng lao động đã ký; lý do, thời điểm chấm dứt hợp đồng lao động đối với người lao động; xác nhận của cơ quan nhà nước có thẩm quyền về việc doanh nghiệp hoặc hợp tác xã giải thể, phá sản hoặc quyết định bãi nhiệm, miễn nhiệm, cách chức đối với các chức danh được bổ nhiệm trong trường hợp người lao động là người quản lý doanh nghiệp, quản lý hợp tác xã; trường hợp người lao động không có các giấy tờ xác nhận về việc chấm dứt hợp đồng lao động do đơn vị sử dụng lao động không có người đại diện theo pháp luật và người được người đại diện theo pháp luật ủy quyền thì thực hiện theo quy trình quy trình sau: Người lao động tại đơn vị sử dụng lao động không có người đại diện theo pháp luật và người được người đại diện theo pháp luật ủy quyền có nhu cầu chấm dứt hợp đồng lao động để hưởng các chế độ bảo hiểm thất nghiệp thì người lao động đề nghị Sở Nội vụ thực hiện các thủ tục để xác nhận việc chấm dứt hợp đồng lao động hoặc hợp đồng làm việc. Sở Nội vụ gửi văn bản yêu cầu Sở Tài chính xác nhận đơn vị sử dụng lao động không có người đại diện theo pháp luật hoặc không có người được người đại diện theo pháp luật ủy quyền trong thời hạn 03 ngày làm việc kể từ ngày nhận được văn bản đề nghị của người lao động. Sở Tài chính có trách nhiệm phối hợp với cơ quan thuế, cơ quan công an, chính quyền địa phương nơi đơn vị sử dụng lao động đặt trụ sở chính thực hiện xác minh nội dung đơn vị sử dụng lao động không có người đại diện theo pháp luật hoặc không có người được người đại diện theo pháp luật ủy quyền. Sở Tài chính gửi văn bản trả lời cho Sở Nội vụ về nội dung đơn vị sử dụng lao động không có người đại diện theo pháp luật hoặc không có người được người đại diện theo pháp luật ủy quyền trong thời hạn 10 ngày làm việc kể từ ngày nhận được văn bản yêu cầu xác nhận của Sở Nội vụ. Trường hợp người lao động làm việc theo hợp đồng lao động có thời hạn từ đủ 01 tháng đến dưới 12 tháng thì giấy tờ xác nhận về việc chấm dứt hợp đồng lao động là bản chính hoặc bản sao có chứng thực của hợp đồng đó.",
+        "conditions": [
+          "Đối với trường hợp nộp hồ sơ tư vấn, giới thiệu việc làm lần đầu tiên sau khi thất nghiệp: Giấy tờ xác nhận về việc chấm dứt hợp đồng lao động, hợp đồng làm việc hoặc chấm dứt làm việc theo quy định tại điểm b khoản 1 Điều 14 Nghị định số 374/2025/NĐ-CP, cụ thể như sau: Bản chính hoặc bản sao có chứng thực hoặc bản chính kèm theo bản sao để đối chiếu hoặc bản điện tử của một trong các giấy tờ sau đây xác nhận về việc chấm dứt hợp đồng lao động/hợp đồng làm việc hoặc chấm dứt làm việc: hợp đồng lao động hoặc hợp đồng làm việc đã hết hạn hoặc đã hoàn thành công việc theo hợp đồng lao động; quyết định thôi việc; quyết định sa thải; quyết định kỷ luật buộc thôi việc; thông báo hoặc thỏa thuận chấm dứt hợp đồng lao động hoặc hợp đồng làm việc; xác nhận của người sử dụng lao động trong đó có nội dung cụ thể về thông tin của người lao động; loại hợp đồng lao động đã ký; lý do, thời điểm chấm dứt hợp đồng lao động đối với người lao động; xác nhận của cơ quan nhà nước có thẩm quyền về việc doanh nghiệp hoặc hợp tác xã giải thể, phá sản hoặc quyết định bãi nhiệm, miễn nhiệm, cách chức đối với các chức danh được bổ nhiệm trong trường hợp người lao động là người quản lý doanh nghiệp, quản lý hợp tác xã; trường hợp người lao động không có các giấy tờ xác nhận về việc chấm dứt hợp đồng lao động do đơn vị sử dụng lao động không có người đại diện theo pháp luật và người được người đại diện theo pháp luật ủy quyền thì thực hiện theo quy trình quy trình sau: Người lao động tại đơn vị sử dụng lao động không có người đại diện theo pháp luật và người được người đại diện theo pháp luật ủy quyền có nhu cầu chấm dứt hợp đồng lao động để hưởng các chế độ bảo hiểm thất nghiệp thì người lao động đề nghị Sở Nội vụ thực hiện các thủ tục để xác nhận việc chấm dứt hợp đồng lao động hoặc hợp đồng làm việc. Sở Nội vụ gửi văn bản yêu cầu Sở Tài chính xác nhận đơn vị sử dụng lao động không có người đại diện theo pháp luật hoặc không có người được người đại diện theo pháp luật ủy quyền trong thời hạn 03 ngày làm việc kể từ ngày nhận được văn bản đề nghị của người lao động. Sở Tài chính có trách nhiệm phối hợp với cơ quan thuế, cơ quan công an, chính quyền địa phương nơi đơn vị sử dụng lao động đặt trụ sở chính thực hiện xác minh nội dung đơn vị sử dụng lao động không có người đại diện theo pháp luật hoặc không có người được người đại diện theo pháp luật ủy quyền. Sở Tài chính gửi văn bản trả lời cho Sở Nội vụ về nội dung đơn vị sử dụng lao động không có người đại diện theo pháp luật hoặc không có người được người đại diện theo pháp luật ủy quyền trong thời hạn 10 ngày làm việc kể từ ngày nhận được văn bản yêu cầu xác nhận của Sở Nội vụ. Trường hợp người lao động làm việc theo hợp đồng lao động có thời hạn từ đủ 01 tháng đến dưới 12 tháng thì giấy tờ xác nhận về việc chấm dứt hợp đồng lao động là bản chính hoặc bản sao có chứng thực của hợp đồng đó."
+        ],
+        "attachment_path": null
+      }
+    ],
+    "special_cases": [
+      "Có thể cần giấy tờ ủy quyền",
+      "Có trường hợp hồ sơ điện tử thay thế bản giấy",
+      "Có thể cần xác minh quan hệ lao động hoặc giấy phép làm việc"
+    ],
+    "common_errors": [
+      "Thiếu giấy tờ hoặc nội dung ủy quyền phù hợp.",
+      "Điền sai mẫu tờ khai hoặc chọn sai biểu mẫu đi kèm.",
+      "Thiếu hồ sơ về vị trí việc làm, đơn vị sử dụng lao động hoặc điều kiện làm việc áp dụng."
+    ],
+    "validation_hints": [
+      "Nên xác định trước kênh nộp hồ sơ để biết có cần bản giấy, bản điện tử hay xuất trình trực tiếp.",
+      "Có mẫu biểu đính kèm, nên kiểm tra đúng biểu mẫu trước khi nộp.",
+      "Nên xác định đúng nhóm thủ tục lao động, đơn vị liên quan và hồ sơ nghề nghiệp cần xuất trình."
+    ]
+  },
+  "next_steps": {
+    "summary": "Nên xác định rõ nhu cầu lao động, hồ sơ nghề nghiệp hoặc chế độ cần giải quyết trước khi nộp. Có thể chọn kênh nộp phù hợp: Trực tiếp, Trực tuyến, Dịch vụ bưu chính. Hiện có khoảng 2 mục giấy tờ cần theo dõi trong checklist.",
+    "time_badge": "3 ngày làm việc",
+    "result_label": "Người lao động được tư vấn, giới thiệu việc làm miễn phí",
+    "primary_channel": "online",
+    "channels": [
+      "in_person",
+      "online",
+      "postal"
+    ]
+  },
+  "notes": [],
+  "provenance": {
+    "pipeline": "raw->structured->normalized->enriched->ui_api_payload",
+    "normalizer_version": "0.2.0",
+    "enricher_version": "0.2.0",
+    "mapping_notes": "workflow_generated:viec_lam/ho_tro_tu_van_gioi_thieu_viec_lam",
+    "supported_group": true
+  }
+}

@@ -1,0 +1,271 @@
+{
+  "schema_version": "1.0",
+  "normalizer_version": "0.2.0",
+  "source": {
+    "procedure_code": "1.115441",
+    "title": "Chuyển hình thức giao đất, cho thuê đất",
+    "raw_structured_parser_version": "0.1.0",
+    "field": "Đất đai"
+  },
+  "procedure": {
+    "level": "Cấp xã",
+    "procedure_type": "TTHC được luật giao quy định chi tiết",
+    "target_users": [
+      "Tổ chức (không bao gồm doanh nghiệp",
+      "HTX)",
+      "Người Việt Nam định cư ở nước ngoài",
+      "Công dân Việt Nam",
+      "Doanh nghiệp",
+      "Hợp tác xã",
+      "Doanh nghiệp Việt Nam"
+    ],
+    "authorities": [
+      "Chủ tịch UBND cấp xã"
+    ],
+    "receiving_places": [
+      "+ Trung tâm Phục vụ hành chính công tỉnh địa chỉ tầng 1 và tầng 2 (giữa 2 toà nhà A, B) Khu liên cơ quan, Quảng trường 3/2, phường Bắc Giang, tỉnh Bắc Ninh."
+    ]
+  },
+  "submission": {
+    "channels": [
+      "in_person",
+      "online",
+      "postal"
+    ],
+    "methods": [
+      {
+        "method_id": "method_1",
+        "channel": "in_person",
+        "processing_time_text": "10 ngày",
+        "fee_text": null,
+        "description": "Không quá 10 ngày kể từ ngày nhận đủ hồ sơ hợp lệ. <br>Đối với các xã miền núi, vùng có điều kiện kinh tế - xã hội khó khăn; vùng có điều kiện kinh tế - xã hội đặc biệt khó khăn thì thời gian thực hiện không quá 15 ngày.",
+        "is_online": false,
+        "is_postal": false,
+        "is_in_person": true
+      },
+      {
+        "method_id": "method_2",
+        "channel": "online",
+        "processing_time_text": "10 ngày",
+        "fee_text": null,
+        "description": "Không quá 10 ngày kể từ ngày nhận đủ hồ sơ hợp lệ. <br>Đối với các xã miền núi, vùng có điều kiện kinh tế - xã hội khó khăn; vùng có điều kiện kinh tế - xã hội đặc biệt khó khăn thì thời gian thực hiện không quá 15 ngày.",
+        "is_online": true,
+        "is_postal": false,
+        "is_in_person": false
+      },
+      {
+        "method_id": "method_3",
+        "channel": "postal",
+        "processing_time_text": "10 ngày",
+        "fee_text": null,
+        "description": "Không quá 10 ngày kể từ ngày nhận đủ hồ sơ hợp lệ. <br>Đối với các xã miền núi, vùng có điều kiện kinh tế - xã hội khó khăn; vùng có điều kiện kinh tế - xã hội đặc biệt khó khăn thì thời gian thực hiện không quá 15 ngày.",
+        "is_online": false,
+        "is_postal": true,
+        "is_in_person": false
+      }
+    ],
+    "timing_summary": {
+      "unique_processing_times": [
+        "10 ngày"
+      ],
+      "method_count": 3
+    }
+  },
+  "documents": {
+    "required": [
+      {
+        "document_id": "n_ngh_h_tr_m_u_1",
+        "name": "Đơn đề nghị hỗ trợ (Mẫu 1).",
+        "group_name": "default",
+        "group_type": "unknown",
+        "original_count": "1",
+        "copy_count": "0",
+        "conditions": [],
+        "attachment_label": "Mẫu 1..docx",
+        "attachment_path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/1_115441/M%E1%BA%ABu%201..docx"
+      }
+    ],
+    "conditional": [],
+    "presented": [],
+    "notes": [],
+    "forms": [
+      {
+        "name": "Đơn đề nghị hỗ trợ (Mẫu 1).",
+        "attachment_label": "Mẫu 1..docx",
+        "attachment_path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/1_115441/M%E1%BA%ABu%201..docx"
+      }
+    ],
+    "empty_groups": [],
+    "document_count": 1
+  },
+  "process": {
+    "steps": [
+      {
+        "step_id": "step_1",
+        "title": null,
+        "content": "1. **Bước 1: Người đề nghị nộp hồ sơ đến Trung tâm Phục vụ hành chính công.**",
+        "actor": "user",
+        "channel_hint": null,
+        "time_hint": null
+      },
+      {
+        "step_id": "step_2",
+        "title": null,
+        "content": "Khi nộp hồ sơ, người nộp hồ sơ được lựa chọn nộp bản sao giấy tờ và xuất trình bản chính để cán bộ tiếp nhận hồ sơ kiểm tra, đối chiếu hoặc nộp bản chính giấy tờ hoặc nộp bản sao giấy tờ đã có công chứng hoặc chứng thực theo quy định của pháp luật về công chứng, chứng thực. Trường hợp nộp hồ sơ theo hình thức trực tuyến thì hồ sơ nộp phải được số hóa từ bản chính hoặc bản sao giấy tờ đã được công chứng, chứng thực.",
+        "actor": "authority",
+        "channel_hint": "trực tuyến",
+        "time_hint": null
+      },
+      {
+        "step_id": "step_3",
+        "title": null,
+        "content": "Trung tâm Phục vụ hành chính công tiếp nhận hồ sơ và chuyển hồ sơ đến Phòng Kinh tế/Phòng Kinh tế Hạ tầng và Đô thị.",
+        "actor": "user",
+        "channel_hint": null,
+        "time_hint": null
+      },
+      {
+        "step_id": "step_4",
+        "title": null,
+        "content": "2. **Bước 2: Phòng Kinh tế/Phòng Kinh tế Hạ tầng và Đô thị thực hiện:**",
+        "actor": "user",
+        "channel_hint": null,
+        "time_hint": null
+      },
+      {
+        "step_id": "step_5",
+        "title": null,
+        "content": "Khi nộp hồ sơ, người nộp hồ sơ được lựa chọn nộp bản sao giấy tờ và xuất trình bản chính để cán bộ tiếp nhận hồ sơ kiểm tra, đối chiếu hoặc nộp bản chính giấy tờ hoặc nộp bản sao giấy tờ đã có công chứng hoặc chứng thực theo quy định của pháp luật về công chứng, chứng thực. Trường hợp nộp hồ sơ theo hình thức trực tuyến thì hồ sơ nộp phải được số hóa từ bản chính hoặc bản sao giấy tờ đã được công chứng, chứng thực.",
+        "actor": "authority",
+        "channel_hint": "trực tuyến",
+        "time_hint": null
+      },
+      {
+        "step_id": "step_6",
+        "title": null,
+        "content": "Trung tâm Phục vụ hành chính công tiếp nhận hồ sơ và chuyển hồ sơ đến Phòng Kinh tế/Phòng Kinh tế Hạ tầng và Đô thị.",
+        "actor": "user",
+        "channel_hint": null,
+        "time_hint": null
+      },
+      {
+        "step_id": "step_7",
+        "title": null,
+        "content": "3. **Bước 3:**",
+        "actor": "user",
+        "channel_hint": null,
+        "time_hint": null
+      },
+      {
+        "step_id": "step_8",
+        "title": null,
+        "content": "Chủ tịch Ủy ban nhân dân cấp xã xem xét ban hành quyết định chuyển hình thức giao đất, cho thuê đất.",
+        "actor": "user",
+        "channel_hint": null,
+        "time_hint": null
+      },
+      {
+        "step_id": "step_9",
+        "title": null,
+        "content": "4. **Bước 4: Phòng Kinh tế/Phòng Kinh tế Hạ tầng và Đô thị:**",
+        "actor": "user",
+        "channel_hint": null,
+        "time_hint": null
+      },
+      {
+        "step_id": "step_10",
+        "title": null,
+        "content": "- Chuyển hồ sơ đến Chi nhánh Văn phòng đăng ký đất đai để cập nhật, chỉnh lý cơ sở dữ liệu đất đai, hồ sơ địa chính; Chuyển thông tin địa chính theo Mẫu số 19 tại Phụ lục IV ban hành kèm theo quyết định này cho cơ quan thuế (đối với trường hợp không phải xác định giá đất cụ thể). Trường hợp phải xác định giá đất cụ thể thì tổ chức việc xác định giá đất.",
+        "actor": "authority",
+        "channel_hint": null,
+        "time_hint": null
+      },
+      {
+        "step_id": "step_11",
+        "title": null,
+        "content": "Sau khi Chủ tịch Ủy ban nhân dân tỉnh ban hành quyết định phê duyệt giá đất thì thực hiện chuyển thông tin địa chính theo Mẫu số 19 tại Phụ lục IV ban hành kèm theo quyết định này cho cơ quan thuế.",
+        "actor": "authority",
+        "channel_hint": null,
+        "time_hint": null
+      },
+      {
+        "step_id": "step_12",
+        "title": null,
+        "content": "- Ký Hợp đồng thuê đất (đối với trường hợp thuê đất) theo phân cấp, uỷ quyền hoặc trình Chủ tịch Uỷ ban nhân dân cấp xã ký Hợp đồng thuê đất đối với trường hợp không được phân cấp, uỷ quyền (trường hợp người sử dụng đất có nhu cầu).",
+        "actor": "user",
+        "channel_hint": null,
+        "time_hint": null
+      },
+      {
+        "step_id": "step_13",
+        "title": null,
+        "content": "- Trình Chủ tịch Ủy ban nhân dân cấp xã ký Giấy chứng nhận quyền sử dụng đất sau khi người sử dụng đất hoàn thành nghĩa vụ tài chính hoặc nhận được Thông báo đã hoàn thành nghĩa vụ tài chính của cơ quan thuế. Chuyển hồ sơ đến Chi nhánh Văn phòng đăng ký đất đai để cập nhật, chỉnh lý cơ sở dữ liệu đất đai, hồ sơ địa chính.",
+        "actor": "authority",
+        "channel_hint": null,
+        "time_hint": null
+      },
+      {
+        "step_id": "step_14",
+        "title": null,
+        "content": "5. **Bước 6: Phòng Kinh tế/Phòng Kinh tế Hạ tầng và Đô thị:**",
+        "actor": "user",
+        "channel_hint": null,
+        "time_hint": null
+      },
+      {
+        "step_id": "step_15",
+        "title": null,
+        "content": "Trao Giấy chứng nhận quyền sử dụng đất cho người sử dụng đất. Chuyển hồ sơ đến Chi nhánh Văn phòng đăng ký đất đai để cập nhật, chỉnh lý cơ sở dữ liệu đất đai, hồ sơ địa chính.",
+        "actor": "user",
+        "channel_hint": null,
+        "time_hint": null
+      }
+    ],
+    "step_count": 15,
+    "notes": []
+  },
+  "eligibility": {
+    "conditions": [
+      "- Cá nhân Nhà nước cho thuê đất thu tiền thuê đất hằng năm nhưng thuộc trường hợp được Nhà nước cho thuê đất thu tiền thuê đất một lần cho cả thời gian thuê theo quy định của Luật Đất đai thì được lựa chọn chuyển sang thuê đất trả tiền thuê đất một lần cho thời gian thuê đất còn lại.",
+      "- Tổ chức kinh tế, tổ chức kinh tế có vốn đầu tư nước ngoài đang được Nhà nước cho thuê đất thu tiền thuê đất một lần cho cả thời gian thuê được lựa chọn chuyển sang thuê đất thu tiền thuê đất hằng năm.",
+      "- Đơn vị sự nghiệp công lập được Nhà nước giao đất không thu tiền sử dụng đất mà có nhu cầu sử dụng một phần hoặc toàn bộ diện tích được giao để sản xuất, kinh doanh, cung cấp dịch vụ thì được lựa chọn chuyển sang hình thức Nhà nước cho thuê đất thu tiền thuê đất hằng năm đối với phần diện tích đó.",
+      "- Đơn vị sự nghiệp công lập được Nhà nước giao đất không thu tiền sử dụng đất hoặc cho thuê đất trước ngày Luật Đất đai có hiệu lực mà có nhu cầu chuyển sang hình thức giao đất, cho thuê đất theo quy định.",
+      "- Trường hợp khu công nghiệp được đầu tư bằng ngân sách nhà nước mà cơ quan nhà nước có thẩm quyền đã giao cho tổ chức, đơn vị sự nghiệp công lập quản lý trước ngày 01 tháng 8 năm 2024 mà Ủy ban nhân dân cấp có thẩm quyền cho các tổ chức, cá nhân thuê đất gắn với kết cấu hạ tầng đã được đầu tư."
+    ],
+    "has_conditions": true
+  },
+  "results": {
+    "items": [
+      {
+        "name": "Quyết định chuyển hình thức giao đất, cho thuê đất",
+        "result_code": "KQ.G10.000870",
+        "raw_text": "Quyết định chuyển hình thức giao đất, cho thuê đất"
+      }
+    ],
+    "primary_result": {
+      "name": "Quyết định chuyển hình thức giao đất, cho thuê đất",
+      "result_code": "KQ.G10.000870",
+      "raw_text": "Quyết định chuyển hình thức giao đất, cho thuê đất"
+    }
+  },
+  "legal_basis": {
+    "items": [],
+    "count": 0
+  },
+  "attachments": [
+    {
+      "label": "Mẫu 1..docx",
+      "path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/1_115441/M%E1%BA%ABu%201..docx",
+      "source_section": "Thành phần hồ sơ",
+      "document_name": "Đơn đề nghị hỗ trợ (Mẫu 1)."
+    }
+  ],
+  "signals": {
+    "raw_parse_warnings": [],
+    "missing_documents": false,
+    "documents_section_present": true,
+    "documents_declared_empty": false,
+    "documents_only_in_notes": false,
+    "missing_results": false
+  }
+}

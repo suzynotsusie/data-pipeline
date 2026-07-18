@@ -1,0 +1,439 @@
+{
+  "schema_version": "1.0",
+  "domain": "phuong_tien_nguoi_lai",
+  "updated_at": "2026-07-18",
+  "source_files": [
+    "C:\\Users\\ku060\\Downloads\\VAIC source\\data-pipeline\\main\\full-data.csv",
+    "C:\\Users\\ku060\\Downloads\\VAIC source\\data-pipeline\\data\\workflows\\phuong_tien_nguoi_lai\\summary.csv",
+    "C:\\Users\\ku060\\Downloads\\VAIC source\\data-pipeline\\data\\workflows\\phuong_tien_nguoi_lai\\normalized.json",
+    "C:\\Users\\ku060\\Downloads\\VAIC source\\data-pipeline\\raw_data"
+  ],
+  "coverage": {
+    "expected_codes": [
+      "3.000346",
+      "3.000347",
+      "3.000348",
+      "3.000349",
+      "3.000350",
+      "3.000351",
+      "3.000352",
+      "3.000353",
+      "3.000355",
+      "3.000356",
+      "3.000357",
+      "3.000358",
+      "3.000359",
+      "3.000360",
+      "3.000361",
+      "3.000362",
+      "3.000363"
+    ],
+    "covered_codes": [
+      "3.000346",
+      "3.000347",
+      "3.000348",
+      "3.000349",
+      "3.000350",
+      "3.000351",
+      "3.000352",
+      "3.000353",
+      "3.000355",
+      "3.000356",
+      "3.000357",
+      "3.000358",
+      "3.000359",
+      "3.000360",
+      "3.000361",
+      "3.000362",
+      "3.000363"
+    ],
+    "missing_codes": []
+  },
+  "llm_contract": {
+    "role": "parse_user_answer_and_rephrase_question_only",
+    "required_output_schema": {
+      "intent": "phuong_tien_nguoi_lai",
+      "current_node": "string",
+      "slot_updates": {
+        "subdomain_key": "giay_phep_lai_xe | dang_ky_phuong_tien | dang_kiem_phuong_tien | unknown",
+        "operation_key": "string",
+        "operation_group": "string",
+        "needs_human_review": "boolean"
+      },
+      "confidence": "0_to_1",
+      "needs_human_review": "boolean"
+    }
+  },
+  "entry_prompts": [
+    "Bạn đang cần làm việc về bằng lái, đăng ký xe hay đăng kiểm phương tiện?",
+    "Bạn muốn cấp mới, cấp lại, đổi, thu hồi hay xác nhận/chứng nhận cho phương tiện của mình?"
+  ],
+  "slots": [
+    {
+      "name": "subdomain_key",
+      "required": true,
+      "description": "Nhánh chính trong domain phương tiện và người lái."
+    },
+    {
+      "name": "operation_key",
+      "required": true,
+      "description": "Thao tác cụ thể ánh xạ trực tiếp tới thủ tục cuối cùng."
+    },
+    {
+      "name": "operation_group",
+      "required": false,
+      "description": "Nhóm thao tác nghiệp vụ để gom các thủ tục gần nhau cho UI và parser."
+    }
+  ],
+  "subdomain_catalog": [
+    {
+      "subdomain_key": "giay_phep_lai_xe",
+      "subdomain_label": "Giấy phép lái xe",
+      "event_id": 315,
+      "field_name": "Sát hạch, cấp giấy phép lái xe",
+      "summary": "Nhóm thủ tục liên quan đến cấp, đổi, cấp lại, thu hồi giấy phép lái xe và cấp phép/chấp thuận cho hoạt động sát hạch lái xe."
+    }
+  ],
+  "decision_tree": {
+    "start_node": "vehicle_subdomain",
+    "nodes": [
+      {
+        "id": "vehicle_subdomain",
+        "type": "question",
+        "slot": "subdomain_key",
+        "question": "Bạn đang hỏi về giấy phép lái xe, đăng ký phương tiện hay đăng kiểm phương tiện?",
+        "options": [
+          "giay_phep_lai_xe"
+        ],
+        "prefilled_value": "giay_phep_lai_xe"
+      },
+      {
+        "id": "vehicle_operation",
+        "type": "question",
+        "slot": "operation_key",
+        "question": "Bạn cần làm thao tác nào cụ thể trong nhánh đã chọn?",
+        "options_by_subdomain": {
+          "giay_phep_lai_xe": [
+            {
+              "operation_key": "cap_giay_phep_lai_xe",
+              "operation_group": "cap_moi_gplx",
+              "procedure_code": "3.000346",
+              "procedure_title": "Cấp giấy phép lái xe"
+            },
+            {
+              "operation_key": "doi_giay_phep_lai_xe",
+              "operation_group": "doi_gplx",
+              "procedure_code": "3.000347",
+              "procedure_title": "Đổi giấy phép lái xe"
+            },
+            {
+              "operation_key": "cap_lai_giay_phep_lai_xe",
+              "operation_group": "cap_lai_gplx",
+              "procedure_code": "3.000348",
+              "procedure_title": "Cấp lại giấy phép lái xe"
+            },
+            {
+              "operation_key": "doi_giay_phep_lai_xe_quan_su_do_bo_quoc_phong_cap",
+              "operation_group": "doi_gplx_quan_su",
+              "procedure_code": "3.000349",
+              "procedure_title": "Đổi giấy phép lái xe quân sự do Bộ Quốc phòng cấp"
+            },
+            {
+              "operation_key": "doi_giay_phep_lai_xe_cong_an_nhan_dan",
+              "operation_group": "doi_gplx_cong_an",
+              "procedure_code": "3.000350",
+              "procedure_title": "Đổi giấy phép lái xe Công an nhân dân"
+            },
+            {
+              "operation_key": "doi_giay_phep_lai_xe_hoac_bang_lai_xe_cua_nguoi_nuoc_ngoai",
+              "operation_group": "doi_gplx_nuoc_ngoai",
+              "procedure_code": "3.000351",
+              "procedure_title": "Đổi giấy phép lái xe hoặc bằng lái xe của người nước ngoài"
+            },
+            {
+              "operation_key": "thu_hoi_giay_phep_lai_xe",
+              "operation_group": "thu_hoi_gplx",
+              "procedure_code": "3.000352",
+              "procedure_title": "Thu hồi giấy phép lái xe"
+            },
+            {
+              "operation_key": "cap_giay_phep_lai_xe_quoc_te",
+              "operation_group": "gplx_quoc_te",
+              "procedure_code": "3.000353",
+              "procedure_title": "Cấp giấy phép lái xe quốc tế"
+            },
+            {
+              "operation_key": "cap_giay_phep_sat_hach_cho_trung_tam_sat_hach_lai_xe_loai_1_loai_2",
+              "operation_group": "co_so_sat_hach",
+              "procedure_code": "3.000355",
+              "procedure_title": "Cấp giấy phép sát hạch cho trung tâm sát hạch lái xe loại 1, loại 2"
+            },
+            {
+              "operation_key": "cap_lai_giay_phep_sat_hach_cho_trung_tam_sat_hach_lai_xe_loai_1_loai_2",
+              "operation_group": "co_so_sat_hach",
+              "procedure_code": "3.000356",
+              "procedure_title": "Cấp lại giấy phép sát hạch cho trung tâm sát hạch lái xe loại 1, loại 2"
+            },
+            {
+              "operation_key": "thu_hoi_giay_phep_sat_hach_cua_trung_tam_sat_hach_lai_xe_loai_1_loai_2",
+              "operation_group": "co_so_sat_hach",
+              "procedure_code": "3.000357",
+              "procedure_title": "Thu hồi giấy phép sát hạch của trung tâm sát hạch lái xe loại 1, loại 2"
+            },
+            {
+              "operation_key": "chap_thuan_hoat_dong_cua_san_tap_lai_de_sat_hach_lai_xe_mo_to",
+              "operation_group": "co_so_sat_hach",
+              "procedure_code": "3.000358",
+              "procedure_title": "Chấp thuận hoạt động của sân tập lái để sát hạch lái xe mô tô"
+            },
+            {
+              "operation_key": "chap_thuan_lai_hoat_dong_cua_san_tap_lai_de_sat_hach_lai_xe_mo_to",
+              "operation_group": "co_so_sat_hach",
+              "procedure_code": "3.000359",
+              "procedure_title": "Chấp thuận lại hoạt động của sân tập lái để sát hạch lái xe mô tô"
+            },
+            {
+              "operation_key": "thu_hoi_chap_thuan_hoat_dong_cua_san_tap_lai_de_sat_hach_lai_xe_mo_to",
+              "operation_group": "co_so_sat_hach",
+              "procedure_code": "3.000360",
+              "procedure_title": "Thu hồi chấp thuận hoạt động của sân tập lái để sát hạch lái xe mô tô"
+            },
+            {
+              "operation_key": "cap_giay_phep_cho_trung_tam_sat_hach_lai_xe_loai_3",
+              "operation_group": "co_so_sat_hach",
+              "procedure_code": "3.000361",
+              "procedure_title": "Cấp giấy phép cho trung tâm sát hạch lái xe loại 3"
+            },
+            {
+              "operation_key": "cap_lai_giay_phep_sat_hach_cho_trung_tam_sat_hach_lai_xe_loai_3",
+              "operation_group": "co_so_sat_hach",
+              "procedure_code": "3.000362",
+              "procedure_title": "Cấp lại giấy phép sát hạch cho trung tâm sát hạch lái xe loại 3"
+            },
+            {
+              "operation_key": "thu_hoi_giay_phep_sat_hach_cho_trung_tam_sat_hach_lai_xe_loai_3",
+              "operation_group": "co_so_sat_hach",
+              "procedure_code": "3.000363",
+              "procedure_title": "Thu hồi giấy phép sát hạch cho trung tâm sát hạch lái xe loại 3"
+            }
+          ]
+        },
+        "options": [
+          "cap_giay_phep_lai_xe",
+          "doi_giay_phep_lai_xe",
+          "cap_lai_giay_phep_lai_xe",
+          "doi_giay_phep_lai_xe_quan_su_do_bo_quoc_phong_cap",
+          "doi_giay_phep_lai_xe_cong_an_nhan_dan",
+          "doi_giay_phep_lai_xe_hoac_bang_lai_xe_cua_nguoi_nuoc_ngoai",
+          "thu_hoi_giay_phep_lai_xe",
+          "cap_giay_phep_lai_xe_quoc_te",
+          "cap_giay_phep_sat_hach_cho_trung_tam_sat_hach_lai_xe_loai_1_loai_2",
+          "cap_lai_giay_phep_sat_hach_cho_trung_tam_sat_hach_lai_xe_loai_1_loai_2",
+          "thu_hoi_giay_phep_sat_hach_cua_trung_tam_sat_hach_lai_xe_loai_1_loai_2",
+          "chap_thuan_hoat_dong_cua_san_tap_lai_de_sat_hach_lai_xe_mo_to",
+          "chap_thuan_lai_hoat_dong_cua_san_tap_lai_de_sat_hach_lai_xe_mo_to",
+          "thu_hoi_chap_thuan_hoat_dong_cua_san_tap_lai_de_sat_hach_lai_xe_mo_to",
+          "cap_giay_phep_cho_trung_tam_sat_hach_lai_xe_loai_3",
+          "cap_lai_giay_phep_sat_hach_cho_trung_tam_sat_hach_lai_xe_loai_3",
+          "thu_hoi_giay_phep_sat_hach_cho_trung_tam_sat_hach_lai_xe_loai_3"
+        ]
+      }
+    ],
+    "routes": [
+      {
+        "route_id": "giay_phep_lai_xe-3_000346",
+        "conditions": {
+          "subdomain_key": "giay_phep_lai_xe",
+          "operation_key": "cap_giay_phep_lai_xe"
+        },
+        "procedure_code": "3.000346",
+        "procedure_name": "Cấp giấy phép lái xe",
+        "why_this_route": "Route trực tiếp cho nhu cầu 'Cấp giấy phép lái xe' trong nhánh 'Giấy phép lái xe'."
+      },
+      {
+        "route_id": "giay_phep_lai_xe-3_000347",
+        "conditions": {
+          "subdomain_key": "giay_phep_lai_xe",
+          "operation_key": "doi_giay_phep_lai_xe"
+        },
+        "procedure_code": "3.000347",
+        "procedure_name": "Đổi giấy phép lái xe",
+        "why_this_route": "Route trực tiếp cho nhu cầu 'Đổi giấy phép lái xe' trong nhánh 'Giấy phép lái xe'."
+      },
+      {
+        "route_id": "giay_phep_lai_xe-3_000348",
+        "conditions": {
+          "subdomain_key": "giay_phep_lai_xe",
+          "operation_key": "cap_lai_giay_phep_lai_xe"
+        },
+        "procedure_code": "3.000348",
+        "procedure_name": "Cấp lại giấy phép lái xe",
+        "why_this_route": "Route trực tiếp cho nhu cầu 'Cấp lại giấy phép lái xe' trong nhánh 'Giấy phép lái xe'."
+      },
+      {
+        "route_id": "giay_phep_lai_xe-3_000349",
+        "conditions": {
+          "subdomain_key": "giay_phep_lai_xe",
+          "operation_key": "doi_giay_phep_lai_xe_quan_su_do_bo_quoc_phong_cap"
+        },
+        "procedure_code": "3.000349",
+        "procedure_name": "Đổi giấy phép lái xe quân sự do Bộ Quốc phòng cấp",
+        "why_this_route": "Route trực tiếp cho nhu cầu 'Đổi giấy phép lái xe quân sự do Bộ Quốc phòng cấp' trong nhánh 'Giấy phép lái xe'."
+      },
+      {
+        "route_id": "giay_phep_lai_xe-3_000350",
+        "conditions": {
+          "subdomain_key": "giay_phep_lai_xe",
+          "operation_key": "doi_giay_phep_lai_xe_cong_an_nhan_dan"
+        },
+        "procedure_code": "3.000350",
+        "procedure_name": "Đổi giấy phép lái xe Công an nhân dân",
+        "why_this_route": "Route trực tiếp cho nhu cầu 'Đổi giấy phép lái xe Công an nhân dân' trong nhánh 'Giấy phép lái xe'."
+      },
+      {
+        "route_id": "giay_phep_lai_xe-3_000351",
+        "conditions": {
+          "subdomain_key": "giay_phep_lai_xe",
+          "operation_key": "doi_giay_phep_lai_xe_hoac_bang_lai_xe_cua_nguoi_nuoc_ngoai"
+        },
+        "procedure_code": "3.000351",
+        "procedure_name": "Đổi giấy phép lái xe hoặc bằng lái xe của người nước ngoài",
+        "why_this_route": "Route trực tiếp cho nhu cầu 'Đổi giấy phép lái xe hoặc bằng lái xe của người nước ngoài' trong nhánh 'Giấy phép lái xe'."
+      },
+      {
+        "route_id": "giay_phep_lai_xe-3_000352",
+        "conditions": {
+          "subdomain_key": "giay_phep_lai_xe",
+          "operation_key": "thu_hoi_giay_phep_lai_xe"
+        },
+        "procedure_code": "3.000352",
+        "procedure_name": "Thu hồi giấy phép lái xe",
+        "why_this_route": "Route trực tiếp cho nhu cầu 'Thu hồi giấy phép lái xe' trong nhánh 'Giấy phép lái xe'."
+      },
+      {
+        "route_id": "giay_phep_lai_xe-3_000353",
+        "conditions": {
+          "subdomain_key": "giay_phep_lai_xe",
+          "operation_key": "cap_giay_phep_lai_xe_quoc_te"
+        },
+        "procedure_code": "3.000353",
+        "procedure_name": "Cấp giấy phép lái xe quốc tế",
+        "why_this_route": "Route trực tiếp cho nhu cầu 'Cấp giấy phép lái xe quốc tế' trong nhánh 'Giấy phép lái xe'."
+      },
+      {
+        "route_id": "giay_phep_lai_xe-3_000355",
+        "conditions": {
+          "subdomain_key": "giay_phep_lai_xe",
+          "operation_key": "cap_giay_phep_sat_hach_cho_trung_tam_sat_hach_lai_xe_loai_1_loai_2"
+        },
+        "procedure_code": "3.000355",
+        "procedure_name": "Cấp giấy phép sát hạch cho trung tâm sát hạch lái xe loại 1, loại 2",
+        "why_this_route": "Route trực tiếp cho nhu cầu 'Cấp giấy phép sát hạch cho trung tâm sát hạch lái xe loại 1, loại 2' trong nhánh 'Giấy phép lái xe'."
+      },
+      {
+        "route_id": "giay_phep_lai_xe-3_000356",
+        "conditions": {
+          "subdomain_key": "giay_phep_lai_xe",
+          "operation_key": "cap_lai_giay_phep_sat_hach_cho_trung_tam_sat_hach_lai_xe_loai_1_loai_2"
+        },
+        "procedure_code": "3.000356",
+        "procedure_name": "Cấp lại giấy phép sát hạch cho trung tâm sát hạch lái xe loại 1, loại 2",
+        "why_this_route": "Route trực tiếp cho nhu cầu 'Cấp lại giấy phép sát hạch cho trung tâm sát hạch lái xe loại 1, loại 2' trong nhánh 'Giấy phép lái xe'."
+      },
+      {
+        "route_id": "giay_phep_lai_xe-3_000357",
+        "conditions": {
+          "subdomain_key": "giay_phep_lai_xe",
+          "operation_key": "thu_hoi_giay_phep_sat_hach_cua_trung_tam_sat_hach_lai_xe_loai_1_loai_2"
+        },
+        "procedure_code": "3.000357",
+        "procedure_name": "Thu hồi giấy phép sát hạch của trung tâm sát hạch lái xe loại 1, loại 2",
+        "why_this_route": "Route trực tiếp cho nhu cầu 'Thu hồi giấy phép sát hạch của trung tâm sát hạch lái xe loại 1, loại 2' trong nhánh 'Giấy phép lái xe'."
+      },
+      {
+        "route_id": "giay_phep_lai_xe-3_000358",
+        "conditions": {
+          "subdomain_key": "giay_phep_lai_xe",
+          "operation_key": "chap_thuan_hoat_dong_cua_san_tap_lai_de_sat_hach_lai_xe_mo_to"
+        },
+        "procedure_code": "3.000358",
+        "procedure_name": "Chấp thuận hoạt động của sân tập lái để sát hạch lái xe mô tô",
+        "why_this_route": "Route trực tiếp cho nhu cầu 'Chấp thuận hoạt động của sân tập lái để sát hạch lái xe mô tô' trong nhánh 'Giấy phép lái xe'."
+      },
+      {
+        "route_id": "giay_phep_lai_xe-3_000359",
+        "conditions": {
+          "subdomain_key": "giay_phep_lai_xe",
+          "operation_key": "chap_thuan_lai_hoat_dong_cua_san_tap_lai_de_sat_hach_lai_xe_mo_to"
+        },
+        "procedure_code": "3.000359",
+        "procedure_name": "Chấp thuận lại hoạt động của sân tập lái để sát hạch lái xe mô tô",
+        "why_this_route": "Route trực tiếp cho nhu cầu 'Chấp thuận lại hoạt động của sân tập lái để sát hạch lái xe mô tô' trong nhánh 'Giấy phép lái xe'."
+      },
+      {
+        "route_id": "giay_phep_lai_xe-3_000360",
+        "conditions": {
+          "subdomain_key": "giay_phep_lai_xe",
+          "operation_key": "thu_hoi_chap_thuan_hoat_dong_cua_san_tap_lai_de_sat_hach_lai_xe_mo_to"
+        },
+        "procedure_code": "3.000360",
+        "procedure_name": "Thu hồi chấp thuận hoạt động của sân tập lái để sát hạch lái xe mô tô",
+        "why_this_route": "Route trực tiếp cho nhu cầu 'Thu hồi chấp thuận hoạt động của sân tập lái để sát hạch lái xe mô tô' trong nhánh 'Giấy phép lái xe'."
+      },
+      {
+        "route_id": "giay_phep_lai_xe-3_000361",
+        "conditions": {
+          "subdomain_key": "giay_phep_lai_xe",
+          "operation_key": "cap_giay_phep_cho_trung_tam_sat_hach_lai_xe_loai_3"
+        },
+        "procedure_code": "3.000361",
+        "procedure_name": "Cấp giấy phép cho trung tâm sát hạch lái xe loại 3",
+        "why_this_route": "Route trực tiếp cho nhu cầu 'Cấp giấy phép cho trung tâm sát hạch lái xe loại 3' trong nhánh 'Giấy phép lái xe'."
+      },
+      {
+        "route_id": "giay_phep_lai_xe-3_000362",
+        "conditions": {
+          "subdomain_key": "giay_phep_lai_xe",
+          "operation_key": "cap_lai_giay_phep_sat_hach_cho_trung_tam_sat_hach_lai_xe_loai_3"
+        },
+        "procedure_code": "3.000362",
+        "procedure_name": "Cấp lại giấy phép sát hạch cho trung tâm sát hạch lái xe loại 3",
+        "why_this_route": "Route trực tiếp cho nhu cầu 'Cấp lại giấy phép sát hạch cho trung tâm sát hạch lái xe loại 3' trong nhánh 'Giấy phép lái xe'."
+      },
+      {
+        "route_id": "giay_phep_lai_xe-3_000363",
+        "conditions": {
+          "subdomain_key": "giay_phep_lai_xe",
+          "operation_key": "thu_hoi_giay_phep_sat_hach_cho_trung_tam_sat_hach_lai_xe_loai_3"
+        },
+        "procedure_code": "3.000363",
+        "procedure_name": "Thu hồi giấy phép sát hạch cho trung tâm sát hạch lái xe loại 3",
+        "why_this_route": "Route trực tiếp cho nhu cầu 'Thu hồi giấy phép sát hạch cho trung tâm sát hạch lái xe loại 3' trong nhánh 'Giấy phép lái xe'."
+      }
+    ]
+  },
+  "pre_submission_checks": [
+    {
+      "field_group": "driver_identity",
+      "checks": [
+        "Thông tin CCCD/hộ chiếu phải đúng định dạng và còn hiệu lực.",
+        "Nếu đổi hoặc cấp lại bằng lái thì phải đối chiếu đúng thông tin giấy phép cũ với dữ liệu hiện tại."
+      ]
+    },
+    {
+      "field_group": "vehicle_registration",
+      "checks": [
+        "Hồ sơ đăng ký xe phải có chứng từ nguồn gốc xe và chứng từ quyền sở hữu hợp lệ.",
+        "Các thủ tục sang tên hoặc thu hồi cần làm rõ trạng thái đăng ký cũ và biển số hiện tại."
+      ]
+    },
+    {
+      "field_group": "inspection_readiness",
+      "checks": [
+        "Nhóm đăng kiểm phải xác định đúng loại phương tiện trước khi chọn thủ tục kiểm định/chứng nhận.",
+        "Cần đối chiếu thời hạn, giấy tờ kỹ thuật và việc xe có thuộc diện miễn kiểm định lần đầu hay không."
+      ]
+    }
+  ],
+  "subdomain_key": "giay_phep_lai_xe"
+}

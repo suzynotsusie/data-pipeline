@@ -1,0 +1,104 @@
+{
+  "schema_version": "1.0",
+  "enricher_version": "0.2.0",
+  "source": {
+    "procedure_code": "1.014217",
+    "title": "Thủ tục lấy ý kiến đối với việc sửa chữa, cải tạo, xây dựng nhà ở riêng lẻ nằm trong khu vực bảo vệ di tích, di sản thế giới (trường hợp không cấp giấy phép xây dựng)",
+    "group_key": "dien_luc_nha_o_dat_dai",
+    "workflow_family": null,
+    "subflow": null
+  },
+  "experience": {
+    "entry_label": "Hỗ trợ nhà ở, đất đai và điện lực",
+    "overview_summary": "Thủ tục này thuộc nhóm nhà ở, đất đai và điện lực, thường cần kiểm tra hiện trạng hồ sơ tài sản hoặc điều kiện hạ tầng liên quan. Kết quả thường nhận được là Văn bản chấp thuận sử dụng tác phẩm, cuộc biểu diễn, bản ghi âm, ghi hình, chương trình phát sóng mà Nhà nước là đại diện quản lý quyền tác giả, chủ sở hữu quyền liên quan. Thời gian xử lý tham khảo: 7 ngày làm việc.",
+    "next_step_summary": "Nên chuẩn bị trước thông tin thửa đất, tài sản hoặc địa điểm tiếp nhận, rồi chọn kênh nộp phù hợp: Trực tuyến. Hiện có khoảng 5 mục giấy tờ cần theo dõi trong checklist.",
+    "tone": "supportive_public_service"
+  },
+  "guidance": {
+    "highlight_documents": [
+      {
+        "bucket": "required",
+        "name": "(4) Bộ ảnh màu kích thước 10 x 15 cm, chụp vào thời điểm đề nghị, thể hiện tổng thể hiện trạng của khu vực dự kiến sửa chữa, cải tạo, xây dựng nhà ở riêng lẻ.",
+        "conditions": [],
+        "attachment_path": null
+      },
+      {
+        "bucket": "required",
+        "name": "(1) Văn bản đề nghị của Chủ dự án đầu tư xây dựng nhà ở riêng lẻ theo Mẫu số 10 tại Phụ lục kèm theo Nghị định số 208/2025/NĐ-CP ngày 17 tháng 7 năm 2025 của Chính phủ.",
+        "conditions": [],
+        "attachment_path": null
+      },
+      {
+        "bucket": "required",
+        "name": "(3) Bản đồ vị trí nhà ở riêng lẻ lấy ý kiến sửa chữa, cải tạo, xây dựng, trong đó thể hiện vị trí ranh giới di tích, di sản thế giới.",
+        "conditions": [],
+        "attachment_path": null
+      },
+      {
+        "bucket": "required",
+        "name": "(2) Hồ sơ đề nghị cấp giấy phép xây dựng nhà ở riêng lẻ theo quy định của pháp luật về xây dựng.",
+        "conditions": [],
+        "attachment_path": null
+      },
+      {
+        "bucket": "conditional",
+        "name": "(5) Các văn bản pháp lý khác có liên quan đến di tích, công trình nhà ở đơn lẻ trước đó (nếu có).",
+        "conditions": [
+          "(5) Các văn bản pháp lý khác có liên quan đến di tích, công trình nhà ở đơn lẻ trước đó (nếu có)."
+        ],
+        "attachment_path": null
+      }
+    ],
+    "special_cases": [],
+    "common_errors": [
+      "Điền sai mẫu tờ khai hoặc chọn sai biểu mẫu đi kèm."
+    ],
+    "validation_hints": [
+      "Nên xác định trước kênh nộp hồ sơ để biết có cần bản giấy, bản điện tử hay xuất trình trực tiếp.",
+      "Nên đối chiếu trước thông tin thửa đất, tài sản hoặc hiện trạng hồ sơ để tránh bị yêu cầu chỉnh sửa."
+    ]
+  },
+  "intake": {
+    "candidate_input_fields": [
+      {
+        "field_id": "property_or_service_need",
+        "label": "Nhu cầu về đất đai, nhà ở hoặc điện lực",
+        "field_type": "text",
+        "required": true
+      },
+      {
+        "field_id": "property_location",
+        "label": "Địa điểm tài sản hoặc nơi sử dụng dịch vụ",
+        "field_type": "text",
+        "required": true
+      },
+      {
+        "field_id": "submission_channel_preference",
+        "label": "Kênh nộp dự kiến",
+        "field_type": "enum",
+        "required": false
+      },
+      {
+        "field_id": "has_current_certificate",
+        "label": "Đã có giấy tờ/tài liệu hiện trạng",
+        "field_type": "boolean",
+        "required": false
+      }
+    ],
+    "suggested_clarifying_questions": [
+      "Bạn đang xử lý nhu cầu nào về đất đai, nhà ở hoặc điện lực?",
+      "Bạn đã có thông tin thửa đất, địa chỉ tài sản hoặc giấy tờ hiện trạng chưa?"
+    ]
+  },
+  "ui_hints": {
+    "primary_channel": "online",
+    "result_label": "Văn bản chấp thuận sử dụng tác phẩm, cuộc biểu diễn, bản ghi âm, ghi hình, chương trình phát sóng mà Nhà nước là đại diện quản lý quyền tác giả, chủ sở hữu quyền liên quan",
+    "time_badge": "7 ngày làm việc",
+    "document_count_badge": 5
+  },
+  "provenance": {
+    "generator": "workflow_domain_enricher",
+    "derivation_mode": "rule_based_semantic_enrichment",
+    "supported_group": true
+  }
+}

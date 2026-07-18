@@ -1,0 +1,207 @@
+{
+  "schema_version": "1.0",
+  "normalizer_version": "0.2.0",
+  "source": {
+    "procedure_code": "1.013734",
+    "title": "Đăng ký hợp đồng lao động trực tiếp giao kết .",
+    "raw_structured_parser_version": "0.1.0",
+    "field": "Quản lý lao động ngoài nước"
+  },
+  "procedure": {
+    "level": "Cấp xã",
+    "procedure_type": "TTHC được luật giao quy định chi tiết",
+    "target_users": [
+      "Công dân Việt Nam"
+    ],
+    "authorities": [],
+    "receiving_places": []
+  },
+  "submission": {
+    "channels": [
+      "in_person",
+      "online",
+      "postal"
+    ],
+    "methods": [
+      {
+        "method_id": "method_1",
+        "channel": "online",
+        "processing_time_text": "5 ngày làm việc",
+        "fee_text": null,
+        "description": null,
+        "is_online": true,
+        "is_postal": false,
+        "is_in_person": false
+      },
+      {
+        "method_id": "method_2",
+        "channel": "postal",
+        "processing_time_text": "5 ngày làm việc",
+        "fee_text": null,
+        "description": null,
+        "is_online": false,
+        "is_postal": true,
+        "is_in_person": false
+      },
+      {
+        "method_id": "method_3",
+        "channel": "in_person",
+        "processing_time_text": "5 ngày làm việc",
+        "fee_text": null,
+        "description": null,
+        "is_online": false,
+        "is_postal": false,
+        "is_in_person": true
+      }
+    ],
+    "timing_summary": {
+      "unique_processing_times": [
+        "5 ngày làm việc"
+      ],
+      "method_count": 3
+    }
+  },
+  "documents": {
+    "required": [
+      {
+        "document_id": "b_n_sao_h_p_ng_lao_ng_k_m_theo_b_n_d_ch_ti_ng_vi_t_c_ch_ng_th_c",
+        "name": "Bản sao hợp đồng lao động kèm theo bản dịch tiếng Việt được chứng thực",
+        "group_name": "default",
+        "group_type": "unknown",
+        "original_count": "0",
+        "copy_count": "1",
+        "conditions": [],
+        "attachment_label": null,
+        "attachment_path": null
+      },
+      {
+        "document_id": "v_n_b_n_ng_k_theo_m_u_s_05_ph_l_c_i_ban_h_nh_k_m_theo_th_ng_t_s_09_2026_tt_bnv",
+        "name": "Văn bản đăng ký theo Mẫu số 05 Phụ lục I ban hành kèm theo Thông tư số 09/2026/TT-BNV",
+        "group_name": "default",
+        "group_type": "unknown",
+        "original_count": "1",
+        "copy_count": "0",
+        "conditions": [],
+        "attachment_label": "Mẫu số 05 Thông tư số 09.docx",
+        "attachment_path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/1_013734/M%E1%BA%ABu%20s%E1%BB%91%2005%20Th%C3%B4ng%20t%C6%B0%20s%E1%BB%91%2009.docx"
+      }
+    ],
+    "conditional": [],
+    "presented": [],
+    "notes": [],
+    "forms": [
+      {
+        "name": "Văn bản đăng ký theo Mẫu số 05 Phụ lục I ban hành kèm theo Thông tư số 09/2026/TT-BNV",
+        "attachment_label": "Mẫu số 05 Thông tư số 09.docx",
+        "attachment_path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/1_013734/M%E1%BA%ABu%20s%E1%BB%91%2005%20Th%C3%B4ng%20t%C6%B0%20s%E1%BB%91%2009.docx"
+      }
+    ],
+    "empty_groups": [],
+    "document_count": 2
+  },
+  "process": {
+    "steps": [
+      {
+        "step_id": "step_1",
+        "title": null,
+        "content": "1. -",
+        "actor": "user",
+        "channel_hint": null,
+        "time_hint": null
+      },
+      {
+        "step_id": "step_2",
+        "title": "Bước 1.",
+        "content": "Bước 1. Người lao động nộp 01 (một) bộ hồ sơ trực tiếp, qua dịch vụ bưu chính hoặc trực tuyến tới Uỷ ban nhân dân cấp xã nơi thường trú của người lao động; -",
+        "actor": "user",
+        "channel_hint": "trực tuyến",
+        "time_hint": null
+      },
+      {
+        "step_id": "step_3",
+        "title": "Bước 2.",
+        "content": "Bước 2. Trong thời hạn 05 ngày làm việc kể từ ngày nhận đủ hồ sơ hợp lệ, Uỷ ban nhân dân cấp xã nơi thường trú của người lao động xác nhận bằng văn bản việc đăng ký hợp đồng lao động cho người lao động; trường hợp không chấp thuận phải nêu rõ lý do.",
+        "actor": "user",
+        "channel_hint": null,
+        "time_hint": "05 ngày làm việc"
+      }
+    ],
+    "step_count": 3,
+    "notes": []
+  },
+  "eligibility": {
+    "conditions": [
+      "Người lao động Việt Nam đi làm việc ở nước ngoài theo hợp đồng lao động trực tiếp giao kết đáp ứng các điều kiện:",
+      "a) Các điều kiện quy định tại các khoản 1, 2, 3, 4 và 6 Điều 44 của Luật Người lao động Việt Nam đi làm việc ở nước ngoài theo hợp đồng, cụ thể gồm: Có năng lực hành vi dân sự đầy đủ; tự nguyện đi làm việc ở nước ngoài; đủ sức khoẻ theo quy định của pháp luật Việt Nam và yêu cầu của nước tiếp nhận lao động; đáp ứng yêu cầu về trình độ ngoại ngữ, chuyên môn, trình độ, kỹ năng nghề và các điều kiện khác theo yêu cầu của nước tiếp nhận lao động; không thuộc trường hợp bị cấm xuất cảnh, không được xuất cảnh, bị tạm hoãn xuất cảnh theo quy định của pháp luật Việt Nam;",
+      "b) Có hợp đồng lao động theo quy định tại Điều 52 của Luật Người lao động Việt Nam đi làm việc ở nước ngoài theo hợp đồng."
+    ],
+    "has_conditions": true
+  },
+  "results": {
+    "items": [
+      {
+        "name": "Văn bản trả lời;",
+        "result_code": "KQ.G09.000484",
+        "raw_text": "Văn bản trả lời;"
+      }
+    ],
+    "primary_result": {
+      "name": "Văn bản trả lời;",
+      "result_code": "KQ.G09.000484",
+      "raw_text": "Văn bản trả lời;"
+    }
+  },
+  "legal_basis": {
+    "items": [
+      {
+        "title": "QUY ĐỊNH CHI TIẾT MỘT SỐ ĐIỀU CỦA LUẬT NGƯỜI LAO ĐỘNG VIỆT NAM ĐI LÀM VIỆC Ở NƯỚC NGOÀI THEO HỢP ĐỒNG",
+        "code": "21/2021/TT-BLĐTBXH"
+      },
+      {
+        "title": "Sửa đổi, bổ sung một số điều của Thông tư số 21/2021/TT-BLĐTBXH ngày 15 tháng 12 năm 2021 của Bộ trưởng Bộ Lao động – Thương binh và Xã hội quy định chi tiết một số điều của Luật Người lao động Việt Nam đi làm việc ở nước ngoài theo hợp đồng",
+        "code": "09/2026/TT-BNV"
+      },
+      {
+        "title": "Quy định về phân quyền, phân cấp trong quản lý nhà nước lĩnh vực nội vụ",
+        "code": "128/2025/NĐ-CP"
+      },
+      {
+        "title": "69-2020-QH14 Luật Ng VN đi LĐNN ngày 13.11.2020",
+        "code": "69/2020/QH14"
+      },
+      {
+        "title": "Nghị định số 45/2025/NĐ-CP ngày 28/02/2025 của Chính phủ quy định tổ chức các cơ quan chuyên môn thuộc Ủy ban nhân dân tỉnh, thành phố trực thuộc trung ương và Ủy ban nhân dân huyện, quận, thị xã, thành phố thuộc tỉnh, thành phố thuộc thành phố trực thuộc trung ương",
+        "code": "45/2025/NĐ-CP"
+      },
+      {
+        "title": "Nghị định số 25/2025/NĐ-CP ngày 21 tháng 02 năm 2025 của Chính phủ quy định chức năng, nhiệm vụ, quyền hạn và cơ cấu tổ chức của Bộ Nội vụ",
+        "code": "Nghị định số 25/2025/NĐ-CP"
+      },
+      {
+        "title": "Nghị quyết số 190/2025/QH15 của Quốc hội: Quy định về xử lý một số vấn đề liên quan đến sắp xếp tổ chức bộ máy nhà nước",
+        "code": "190/2025/NQ-QH15"
+      },
+      {
+        "title": "QUY ĐỊNH VỀ HỆ THỐNG CƠ SỞ DỮ LIỆU VỀ NGƯỜI LAO ĐỘNG VIỆT NAM ĐI LÀM VIỆC Ở NƯỚC NGOÀI THEO HỢP ĐỒNG",
+        "code": "20/2021/TT-BLĐTBXH"
+      }
+    ],
+    "count": 8
+  },
+  "attachments": [
+    {
+      "label": "Mẫu số 05 Thông tư số 09.docx",
+      "path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/1_013734/M%E1%BA%ABu%20s%E1%BB%91%2005%20Th%C3%B4ng%20t%C6%B0%20s%E1%BB%91%2009.docx",
+      "source_section": "Thành phần hồ sơ",
+      "document_name": "Văn bản đăng ký theo Mẫu số 05 Phụ lục I ban hành kèm theo Thông tư số 09/2026/TT-BNV"
+    }
+  ],
+  "signals": {
+    "raw_parse_warnings": [],
+    "missing_documents": false,
+    "documents_section_present": true,
+    "documents_declared_empty": false,
+    "documents_only_in_notes": false,
+    "missing_results": false
+  }
+}

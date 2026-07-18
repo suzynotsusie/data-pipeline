@@ -1,0 +1,443 @@
+{
+  "schema_version": "3.0",
+  "record_type": "public_service_procedure_payload",
+  "id": "procedure-1.013097",
+  "procedure_code": "1.013097",
+  "code": "1.013097",
+  "title": "Cấp lại giấy chứng nhận cải tạo",
+  "language": "vi",
+  "status": "generated_from_pipeline",
+  "field": "Đăng kiểm",
+  "group_key": "phuong_tien_nguoi_lai",
+  "workflow_family": "vehicle_driver_workflow",
+  "subflow": "dang_kiem_phuong_tien",
+  "source": {
+    "source_url": "file:///C:/Users/ku060/Downloads/VAIC%20source/data-pipeline/raw_data/1_013097/1_013097_procedure_detail.md",
+    "source_markdown_path": "C:\\Users\\ku060\\Downloads\\VAIC source\\data-pipeline\\raw_data\\1_013097\\1_013097_procedure_detail.md",
+    "normalized_payload_path": "C:\\Users\\ku060\\Downloads\\VAIC source\\data-pipeline\\govease-unified\\data\\normalized_structured\\1_013097_normalized_structured.json",
+    "enriched_payload_path": "C:\\Users\\ku060\\Downloads\\VAIC source\\data-pipeline\\govease-unified\\data\\enriched_structured_priority\\1_013097_enriched_structured.json"
+  },
+  "scope": {
+    "included": "Thủ tục này thuộc nhóm phương tiện và đăng kiểm, thường cần đối chiếu hồ sơ kỹ thuật, đăng ký hoặc chứng nhận an toàn của phương tiện. Kết quả thường nhận được là Giấy chứng nhận cải tạo (xe cơ giới, xe máy chuyên dùng). Thời gian xử lý tham khảo: 1.5 ngày làm việc.",
+    "not_included": []
+  },
+  "agency": {
+    "executing_agency": "Cơ sở đăng kiểm (xe cơ giới, xe máy chuyên dùng)",
+    "submission_place": null,
+    "receiving_places": []
+  },
+  "target_users": [
+    "Doanh nghiệp có vốn đầu tư nước ngoài",
+    "Công dân Việt Nam",
+    "Doanh nghiệp",
+    "Người nước ngoài",
+    "Tổ chức nước ngoài",
+    "Hợp tác xã",
+    "Tổ chức (không bao gồm doanh nghiệp",
+    "HTX)"
+  ],
+  "submission_methods": [
+    {
+      "code": "ONLINE",
+      "label": "Trực tuyến",
+      "processing_time": "1.5 ngày làm việc",
+      "fee": null,
+      "description": "- Trường hợp Giấy chứng nhận cải tạo bị mất, hỏng, sai thông tin: trong thời hạn 01 ngày làm việc kể từ thời điểm nhận được hồ sơ đối với trường hợp hồ sơ lưu trữ tại cơ sở đăng kiểm; trong thời hạn 1,5 ngày làm việc kể từ thời điểm nhận được hồ sơ đối với trường hợp hồ sơ lưu trữ tại cơ sở đăng kiểm khác.<br>- Trường hợp giấy chứng nhận xe cơ giới cải tạo có thời hạn theo các quy định của pháp luật: ngay trong ngày nhận đủ hồ sơ và kết quả kiểm tra, đánh giá xe thực tế đạt yêu cầu."
+    },
+    {
+      "code": "POSTAL",
+      "label": "Dịch vụ bưu chính",
+      "processing_time": "1.5 ngày làm việc",
+      "fee": null,
+      "description": "- Trường hợp Giấy chứng nhận cải tạo bị mất, hỏng, sai thông tin: trong thời hạn 01 ngày làm việc kể từ thời điểm nhận được hồ sơ đối với trường hợp hồ sơ lưu trữ tại cơ sở đăng kiểm; trong thời hạn 1,5 ngày làm việc kể từ thời điểm nhận được hồ sơ đối với trường hợp hồ sơ lưu trữ tại cơ sở đăng kiểm khác.<br>- Trường hợp giấy chứng nhận xe cơ giới cải tạo có thời hạn theo các quy định của pháp luật: ngay trong ngày nhận đủ hồ sơ và kết quả kiểm tra, đánh giá xe thực tế đạt yêu cầu."
+    },
+    {
+      "code": "IN_PERSON",
+      "label": "Trực tiếp",
+      "processing_time": "1.5 ngày làm việc",
+      "fee": null,
+      "description": "- Trường hợp Giấy chứng nhận cải tạo bị mất, hỏng, sai thông tin: trong thời hạn 01 ngày làm việc kể từ thời điểm nhận được hồ sơ đối với trường hợp hồ sơ lưu trữ tại cơ sở đăng kiểm; trong thời hạn 1,5 ngày làm việc kể từ thời điểm nhận được hồ sơ đối với trường hợp hồ sơ lưu trữ tại cơ sở đăng kiểm khác.<br>- Trường hợp giấy chứng nhận xe cơ giới cải tạo có thời hạn theo các quy định của pháp luật: ngay trong ngày nhận đủ hồ sơ và kết quả kiểm tra, đánh giá xe thực tế đạt yêu cầu."
+    }
+  ],
+  "processing_note": "Thời gian xử lý tham chiếu: 1.5 ngày làm việc. Nên kiểm tra trước loại phương tiện hoặc loại giấy phép cần xử lý, cùng hồ sơ kỹ thuật hoặc nhân thân liên quan. Có thể chọn kênh nộp phù hợp: Trực tiếp, Trực tuyến, Dịch vụ bưu chính. Hiện có khoảng 8 mục giấy tờ cần theo dõi trong checklist.",
+  "documents": {
+    "normally_required": [
+      {
+        "name": "Giấy tờ phải nộp:",
+        "quantity": "0 bản chính, 0 bản sao",
+        "notes": [],
+        "group": "* Trường hợp Giấy chứng nhận cải tạo bị mất, hỏng, sai thông tin",
+        "attachment_path": null
+      },
+      {
+        "name": "Đơn đề nghị theo mẫu quy định;",
+        "quantity": "1 bản chính, 0 bản sao",
+        "notes": [],
+        "group": "* Trường hợp Giấy chứng nhận cải tạo bị mất, hỏng, sai thông tin",
+        "attachment_path": null
+      },
+      {
+        "name": "Giấy tờ về đăng ký xe (gồm một trong các giấy tờ sau: bản chính chứng nhận đăng ký xe; bản sao có chứng thực hoặc bản sao điện tử được chứng thực từ bản chính chứng nhận đăng ký xe; bản chính giấy hẹn cấp chứng nhận đăng ký xe) hoặc bản chính chứng nhận thu hồi chứng nhận đăng ký xe, biển số xe",
+        "quantity": "1 bản chính, 0 bản sao",
+        "notes": [],
+        "group": "* Trường hợp Giấy chứng nhận cải tạo bị mất, hỏng, sai thông tin",
+        "attachment_path": null
+      },
+      {
+        "name": "Giấy tờ phải xuất trình:",
+        "quantity": "0 bản chính, 0 bản sao",
+        "notes": [],
+        "group": "* Trường hợp Giấy chứng nhận cải tạo bị mất, hỏng, sai thông tin",
+        "attachment_path": null
+      },
+      {
+        "name": "Giấy chứng nhận cải tạo bị hỏng hoặc bị sai thông tin",
+        "quantity": "1 bản chính, 0 bản sao",
+        "notes": [],
+        "group": "* Trường hợp Giấy chứng nhận cải tạo bị mất, hỏng, sai thông tin",
+        "attachment_path": null
+      },
+      {
+        "name": "Đơn đề nghị theo mẫu quy định;",
+        "quantity": "1 bản chính, 0 bản sao",
+        "notes": [],
+        "group": "* Trường hợp giấy chứng nhận xe cơ giới cải tạo có thời hạn theo các quy định của pháp luật",
+        "attachment_path": null
+      },
+      {
+        "name": "Giấy tờ về đăng ký xe (gồm một trong các giấy tờ sau: bản chính chứng nhận đăng ký xe; bản sao có chứng thực hoặc bản sao điện tử được chứng thực từ bản chính chứng nhận đăng ký xe; bản chính giấy hẹn cấp chứng nhận đăng ký xe) hoặc bản chính chứng nhận thu hồi chứng nhận đăng ký xe, biển số xe.",
+        "quantity": "1 bản chính, 0 bản sao",
+        "notes": [],
+        "group": "* Trường hợp giấy chứng nhận xe cơ giới cải tạo có thời hạn theo các quy định của pháp luật",
+        "attachment_path": null
+      },
+      {
+        "name": "Giấy chứng nhận xe cơ giới cải tạo được cơ quan có thẩm quyền cấp.",
+        "quantity": "1 bản chính, 0 bản sao",
+        "notes": [],
+        "group": "* Trường hợp giấy chứng nhận xe cơ giới cải tạo có thời hạn theo các quy định của pháp luật",
+        "attachment_path": null
+      }
+    ],
+    "conditional": [],
+    "forms": [],
+    "presented": [],
+    "notes": [],
+    "summary": [
+      {
+        "group": "* Trường hợp Giấy chứng nhận cải tạo bị mất, hỏng, sai thông tin",
+        "name": "Giấy tờ phải nộp:",
+        "quantity": "0 bản chính, 0 bản sao",
+        "notes": [],
+        "attachment_path": null
+      },
+      {
+        "group": "* Trường hợp Giấy chứng nhận cải tạo bị mất, hỏng, sai thông tin",
+        "name": "Đơn đề nghị theo mẫu quy định;",
+        "quantity": "1 bản chính, 0 bản sao",
+        "notes": [],
+        "attachment_path": null
+      },
+      {
+        "group": "* Trường hợp Giấy chứng nhận cải tạo bị mất, hỏng, sai thông tin",
+        "name": "Giấy tờ về đăng ký xe (gồm một trong các giấy tờ sau: bản chính chứng nhận đăng ký xe; bản sao có chứng thực hoặc bản sao điện tử được chứng thực từ bản chính chứng nhận đăng ký xe; bản chính giấy hẹn cấp chứng nhận đăng ký xe) hoặc bản chính chứng nhận thu hồi chứng nhận đăng ký xe, biển số xe",
+        "quantity": "1 bản chính, 0 bản sao",
+        "notes": [],
+        "attachment_path": null
+      },
+      {
+        "group": "* Trường hợp Giấy chứng nhận cải tạo bị mất, hỏng, sai thông tin",
+        "name": "Giấy tờ phải xuất trình:",
+        "quantity": "0 bản chính, 0 bản sao",
+        "notes": [],
+        "attachment_path": null
+      },
+      {
+        "group": "* Trường hợp Giấy chứng nhận cải tạo bị mất, hỏng, sai thông tin",
+        "name": "Giấy chứng nhận cải tạo bị hỏng hoặc bị sai thông tin",
+        "quantity": "1 bản chính, 0 bản sao",
+        "notes": [],
+        "attachment_path": null
+      },
+      {
+        "group": "* Trường hợp giấy chứng nhận xe cơ giới cải tạo có thời hạn theo các quy định của pháp luật",
+        "name": "Đơn đề nghị theo mẫu quy định;",
+        "quantity": "1 bản chính, 0 bản sao",
+        "notes": [],
+        "attachment_path": null
+      },
+      {
+        "group": "* Trường hợp giấy chứng nhận xe cơ giới cải tạo có thời hạn theo các quy định của pháp luật",
+        "name": "Giấy tờ về đăng ký xe (gồm một trong các giấy tờ sau: bản chính chứng nhận đăng ký xe; bản sao có chứng thực hoặc bản sao điện tử được chứng thực từ bản chính chứng nhận đăng ký xe; bản chính giấy hẹn cấp chứng nhận đăng ký xe) hoặc bản chính chứng nhận thu hồi chứng nhận đăng ký xe, biển số xe.",
+        "quantity": "1 bản chính, 0 bản sao",
+        "notes": [],
+        "attachment_path": null
+      },
+      {
+        "group": "* Trường hợp giấy chứng nhận xe cơ giới cải tạo có thời hạn theo các quy định của pháp luật",
+        "name": "Giấy chứng nhận xe cơ giới cải tạo được cơ quan có thẩm quyền cấp.",
+        "quantity": "1 bản chính, 0 bản sao",
+        "notes": [],
+        "attachment_path": null
+      }
+    ]
+  },
+  "steps": [
+    {
+      "order": 1,
+      "title": "Bước 1",
+      "description": "1. **a) Nộp hồ sơ TTHC:**",
+      "example": null
+    },
+    {
+      "order": 2,
+      "title": "Bước 2",
+      "description": "Chủ xe nộp hồ sơ đề nghị cấp lại đến Cơ sở đăng kiểm.",
+      "example": null
+    },
+    {
+      "order": 3,
+      "title": "Bước 3",
+      "description": "2. **b) Giải quyết TTHC:**",
+      "example": null
+    },
+    {
+      "order": 4,
+      "title": "Bước 4",
+      "description": "* Trường hợp Giấy chứng nhận cải tạo bị mất, hỏng, sai thông tin",
+      "example": null
+    },
+    {
+      "order": 5,
+      "title": "Bước 5",
+      "description": "- Cơ sở đăng kiểm thực hiện việc cấp lại giấy chứng nhận cải tạo trong thời hạn 01 ngày làm việc kể từ thời điểm nhận được hồ sơ đối với trường hợp hồ sơ lưu trữ tại cơ sở đăng kiểm; trong thời hạn 1,5 ngày làm việc kể từ thời điểm nhận được hồ sơ đối với trường hợp hồ sơ lưu trữ tại cơ sở đăng kiểm khác.",
+      "example": "01 ngày làm việc"
+    },
+    {
+      "order": 6,
+      "title": "Bước 6",
+      "description": "* Trường hợp giấy chứng nhận xe cơ giới cải tạo có thời hạn theo các quy định của pháp luật",
+      "example": null
+    },
+    {
+      "order": 7,
+      "title": "Bước 7",
+      "description": "- Cơ sở đăng kiểm tiến hành kiểm tra đối chiếu các thông số kỹ thuật của xe cơ giới thực tế với giấy chứng nhận xe cơ giới cải tạo (hoặc dữ liệu lưu trữ trong phần mềm quản lý cải tạo xe nếu chủ xe không xuất trình được giấy chứng nhận xe cơ giới cải tạo đã được cấp), trường hợp phù hợp thì cấp lại giấy chứng nhận xe cơ giới cải tạo cho chủ xe; trường hợp không phù hợp, cơ sở đăng kiểm cấp thông báo kết quả kiểm tra, đánh giá.",
+      "example": null
+    }
+  ],
+  "input_fields": [
+    {
+      "field": "vehicle_or_license_need",
+      "label": "Nhu cầu về phương tiện hoặc giấy phép",
+      "type": "string",
+      "required": true
+    },
+    {
+      "field": "vehicle_or_person_identifier",
+      "label": "Thông tin phương tiện hoặc người lái",
+      "type": "string",
+      "required": true
+    },
+    {
+      "field": "submission_channel_preference",
+      "label": "Kênh nộp dự kiến",
+      "type": "enum",
+      "required": false,
+      "options": [
+        "Trực tiếp",
+        "Trực tuyến",
+        "Dịch vụ bưu chính"
+      ]
+    },
+    {
+      "field": "has_technical_or_identity_documents",
+      "label": "Đã có hồ sơ kỹ thuật hoặc giấy tờ nhân thân",
+      "type": "boolean",
+      "required": false
+    }
+  ],
+  "validation_rules": [
+    {
+      "id": "required-1",
+      "severity": "error",
+      "field": "vehicle_or_license_need",
+      "rule": "Trường bắt buộc phải có dữ liệu hợp lệ trước khi nộp.",
+      "message": "Thiếu trường bắt buộc: Nhu cầu về phương tiện hoặc giấy phép."
+    },
+    {
+      "id": "required-2",
+      "severity": "error",
+      "field": "vehicle_or_person_identifier",
+      "rule": "Trường bắt buộc phải có dữ liệu hợp lệ trước khi nộp.",
+      "message": "Thiếu trường bắt buộc: Thông tin phương tiện hoặc người lái."
+    },
+    {
+      "id": "hint-1",
+      "severity": "warning",
+      "field": "general",
+      "rule": "Nên xác định trước kênh nộp hồ sơ để biết có cần bản giấy, bản điện tử hay xuất trình trực tiếp.",
+      "message": "Nên xác định trước kênh nộp hồ sơ để biết có cần bản giấy, bản điện tử hay xuất trình trực tiếp."
+    },
+    {
+      "id": "hint-2",
+      "severity": "warning",
+      "field": "general",
+      "rule": "Nên đối chiếu trước thông tin phương tiện, hồ sơ kỹ thuật hoặc giấy phép lái xe liên quan.",
+      "message": "Nên đối chiếu trước thông tin phương tiện, hồ sơ kỹ thuật hoặc giấy phép lái xe liên quan."
+    }
+  ],
+  "common_errors": [
+    {
+      "field": "general",
+      "issue": "Điền sai mẫu tờ khai hoặc chọn sai biểu mẫu đi kèm.",
+      "fix": "Nên xác định trước kênh nộp hồ sơ để biết có cần bản giấy, bản điện tử hay xuất trình trực tiếp."
+    },
+    {
+      "field": "general",
+      "issue": "Thông tin thửa đất, tài sản hoặc giấy chứng nhận chưa khớp với hồ sơ hiện có.",
+      "fix": "Nên xác định trước kênh nộp hồ sơ để biết có cần bản giấy, bản điện tử hay xuất trình trực tiếp."
+    }
+  ],
+  "clarifying_questions": [
+    {
+      "id": "clarify_1",
+      "question": "Bạn đang xử lý hồ sơ cho phương tiện hay cho giấy phép lái xe?",
+      "purpose": "workflow_intake"
+    },
+    {
+      "id": "clarify_2",
+      "question": "Bạn đã có thông tin nhận diện phương tiện hoặc giấy tờ của người lái chưa?",
+      "purpose": "workflow_intake"
+    }
+  ],
+  "legal_basis": [
+    {
+      "title": "Thông tư 36/2022/TT-BTC",
+      "code": "36/2022/TT-BTC"
+    },
+    {
+      "title": "Thông tư sửa đổi, bổ sung một số điều của các Thông tư để phân cấp, cắt giảm, đơn giản hóa thủ tục hành chính trong lĩnh vực đăng kiểm, đường bộ, đường sắt, quy hoạch đô thị và nông thôn thuộc phạm vi quản lý của Bộ Xây dựng.",
+      "code": "24/2026/TT-BXD"
+    },
+    {
+      "title": "Quy định giá dịch vụ kiểm định an toàn kỹ thuật và bảo vệ môi trường đối với xe cơ giới, thiết bị và xe máy chuyên dùng đang lưu hành; đánh giá, hiệu chuẩn thiết bị kiểm tra xe cơ giới.",
+      "code": "238/2016/TT-BTC"
+    },
+    {
+      "title": "Thông tư 55/2022/TT-BTC",
+      "code": "55/2022/TT-BTC"
+    },
+    {
+      "title": "Quy định trình tự, thủ tục kiểm định, miễn kiểm định lần đầu cho xe cơ giới, xe máy chuyên dùng; trình tự, thủ tục chứng nhận an toàn kỹ thuật và bảo vệ môi trường đối với xe cơ giới cải tạo, xe máy chuyên dùng cải tạo; trình tự, thủ tục kiểm định khí thải xe mô tô, xe gắn máy",
+      "code": "47/2024/TT-BGTVT"
+    }
+  ],
+  "legal_bases": [
+    {
+      "title": "Thông tư 36/2022/TT-BTC",
+      "code": "36/2022/TT-BTC"
+    },
+    {
+      "title": "Thông tư sửa đổi, bổ sung một số điều của các Thông tư để phân cấp, cắt giảm, đơn giản hóa thủ tục hành chính trong lĩnh vực đăng kiểm, đường bộ, đường sắt, quy hoạch đô thị và nông thôn thuộc phạm vi quản lý của Bộ Xây dựng.",
+      "code": "24/2026/TT-BXD"
+    },
+    {
+      "title": "Quy định giá dịch vụ kiểm định an toàn kỹ thuật và bảo vệ môi trường đối với xe cơ giới, thiết bị và xe máy chuyên dùng đang lưu hành; đánh giá, hiệu chuẩn thiết bị kiểm tra xe cơ giới.",
+      "code": "238/2016/TT-BTC"
+    },
+    {
+      "title": "Thông tư 55/2022/TT-BTC",
+      "code": "55/2022/TT-BTC"
+    },
+    {
+      "title": "Quy định trình tự, thủ tục kiểm định, miễn kiểm định lần đầu cho xe cơ giới, xe máy chuyên dùng; trình tự, thủ tục chứng nhận an toàn kỹ thuật và bảo vệ môi trường đối với xe cơ giới cải tạo, xe máy chuyên dùng cải tạo; trình tự, thủ tục kiểm định khí thải xe mô tô, xe gắn máy",
+      "code": "47/2024/TT-BGTVT"
+    }
+  ],
+  "faq": [
+    {
+      "question": "Có thể nộp qua kênh nào?",
+      "answer": "Các kênh hiện có: Trực tiếp, Trực tuyến, Dịch vụ bưu chính."
+    },
+    {
+      "question": "Thời gian xử lý tham chiếu là bao lâu?",
+      "answer": "Thời gian xử lý tham chiếu hiện có là 1.5 ngày làm việc."
+    },
+    {
+      "question": "Kết quả chính của thủ tục là gì?",
+      "answer": "Kết quả chính được trích xuất là Giấy chứng nhận cải tạo (xe cơ giới, xe máy chuyên dùng)."
+    }
+  ],
+  "guidance": {
+    "highlight_documents": [
+      {
+        "bucket": "required",
+        "name": "Giấy tờ phải nộp:",
+        "conditions": [],
+        "attachment_path": null
+      },
+      {
+        "bucket": "required",
+        "name": "Đơn đề nghị theo mẫu quy định;",
+        "conditions": [],
+        "attachment_path": null
+      },
+      {
+        "bucket": "required",
+        "name": "Giấy tờ về đăng ký xe (gồm một trong các giấy tờ sau: bản chính chứng nhận đăng ký xe; bản sao có chứng thực hoặc bản sao điện tử được chứng thực từ bản chính chứng nhận đăng ký xe; bản chính giấy hẹn cấp chứng nhận đăng ký xe) hoặc bản chính chứng nhận thu hồi chứng nhận đăng ký xe, biển số xe",
+        "conditions": [],
+        "attachment_path": null
+      },
+      {
+        "bucket": "required",
+        "name": "Giấy tờ phải xuất trình:",
+        "conditions": [],
+        "attachment_path": null
+      },
+      {
+        "bucket": "required",
+        "name": "Giấy chứng nhận cải tạo bị hỏng hoặc bị sai thông tin",
+        "conditions": [],
+        "attachment_path": null
+      },
+      {
+        "bucket": "required",
+        "name": "Đơn đề nghị theo mẫu quy định;",
+        "conditions": [],
+        "attachment_path": null
+      }
+    ],
+    "special_cases": [
+      "Có thể cần đối chiếu thông tin thửa đất hoặc giấy chứng nhận",
+      "Có thể cần hồ sơ kỹ thuật phương tiện hoặc giấy phép lái xe"
+    ],
+    "common_errors": [
+      "Điền sai mẫu tờ khai hoặc chọn sai biểu mẫu đi kèm.",
+      "Thông tin thửa đất, tài sản hoặc giấy chứng nhận chưa khớp với hồ sơ hiện có."
+    ],
+    "validation_hints": [
+      "Nên xác định trước kênh nộp hồ sơ để biết có cần bản giấy, bản điện tử hay xuất trình trực tiếp.",
+      "Nên đối chiếu trước thông tin phương tiện, hồ sơ kỹ thuật hoặc giấy phép lái xe liên quan."
+    ]
+  },
+  "next_steps": {
+    "summary": "Nên kiểm tra trước loại phương tiện hoặc loại giấy phép cần xử lý, cùng hồ sơ kỹ thuật hoặc nhân thân liên quan. Có thể chọn kênh nộp phù hợp: Trực tiếp, Trực tuyến, Dịch vụ bưu chính. Hiện có khoảng 8 mục giấy tờ cần theo dõi trong checklist.",
+    "time_badge": "1.5 ngày làm việc",
+    "result_label": "Giấy chứng nhận cải tạo (xe cơ giới, xe máy chuyên dùng)",
+    "primary_channel": "online",
+    "channels": [
+      "in_person",
+      "online",
+      "postal"
+    ]
+  },
+  "notes": [],
+  "provenance": {
+    "pipeline": "raw->structured->normalized->enriched->ui_api_payload",
+    "normalizer_version": "0.2.0",
+    "enricher_version": "0.2.0",
+    "mapping_notes": "workflow_generated:phuong_tien_nguoi_lai/dang_kiem_phuong_tien",
+    "supported_group": true
+  }
+}

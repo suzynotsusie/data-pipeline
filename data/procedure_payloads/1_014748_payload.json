@@ -1,0 +1,352 @@
+{
+  "schema_version": "3.0",
+  "record_type": "public_service_procedure_payload",
+  "id": "procedure-1.014748",
+  "procedure_code": "1.014748",
+  "code": "1.014748",
+  "title": "Hưởng trợ cấp thất nghiệp (Cấp tỉnh)",
+  "language": "vi",
+  "status": "generated_from_pipeline",
+  "field": "Việc làm",
+  "group_key": "viec_lam",
+  "workflow_family": "employment_workflow",
+  "subflow": "bao_hiem_xa_hoi_that_nghiep_tro_cap",
+  "source": {
+    "source_url": "file:///C:/Users/ku060/Downloads/VAIC%20source/data-pipeline/raw_data/1_014748/1_014748_procedure_detail.md",
+    "source_markdown_path": "C:\\Users\\ku060\\Downloads\\VAIC source\\data-pipeline\\raw_data\\1_014748\\1_014748_procedure_detail.md",
+    "normalized_payload_path": "C:\\Users\\ku060\\Downloads\\VAIC source\\data-pipeline\\govease-unified\\data\\normalized_structured\\1_014748_normalized_structured.json",
+    "enriched_payload_path": "C:\\Users\\ku060\\Downloads\\VAIC source\\data-pipeline\\govease-unified\\data\\enriched_structured_priority\\1_014748_enriched_structured.json"
+  },
+  "scope": {
+    "included": "Thủ tục này thuộc nhóm việc làm và lao động, thường cần kiểm tra hồ sơ nghề nghiệp, đơn vị sử dụng lao động hoặc điều kiện hưởng chế độ liên quan. Kết quả thường nhận được là Quyết định về việc hưởng trợ cấp thất nghiệp. Thời gian xử lý tham khảo: 15 ngày làm việc.",
+    "not_included": []
+  },
+  "agency": {
+    "executing_agency": "Ủy ban nhân dân tỉnh và thành phố trực thuộc Trung ương",
+    "submission_place": null,
+    "receiving_places": []
+  },
+  "target_users": [
+    "Công dân Việt Nam"
+  ],
+  "submission_methods": [
+    {
+      "code": "ONLINE",
+      "label": "Trực tuyến",
+      "processing_time": "15 ngày làm việc",
+      "fee": null,
+      "description": "Thời hạn 15 ngày làm việc, kể từ ngày nhận đủ hồ sơ theo quy định. Trường hợp hồ sơ đề nghị hưởng trợ cấp thất nghiệp gửi qua dịch vụ bưu chính thì ngày nhận hồ sơ được tính là ngày chuyển đến ghi trên dấu bưu chính."
+    },
+    {
+      "code": "POSTAL",
+      "label": "Dịch vụ bưu chính",
+      "processing_time": "15 ngày làm việc",
+      "fee": null,
+      "description": "Thời hạn 15 ngày làm việc, kể từ ngày nhận đủ hồ sơ theo quy định. Trường hợp hồ sơ đề nghị hưởng trợ cấp thất nghiệp gửi qua dịch vụ bưu chính thì ngày nhận hồ sơ được tính là ngày chuyển đến ghi trên dấu bưu chính."
+    },
+    {
+      "code": "IN_PERSON",
+      "label": "Trực tiếp",
+      "processing_time": "15 ngày làm việc",
+      "fee": null,
+      "description": "Thời hạn 15 ngày làm việc, kể từ ngày nhận đủ hồ sơ theo quy định. Trường hợp hồ sơ đề nghị hưởng trợ cấp thất nghiệp gửi qua dịch vụ bưu chính thì ngày nhận hồ sơ được tính là ngày chuyển đến ghi trên dấu bưu chính."
+    }
+  ],
+  "processing_note": "Thời gian xử lý tham chiếu: 15 ngày làm việc. Nên xác định rõ nhu cầu lao động, hồ sơ nghề nghiệp hoặc chế độ cần giải quyết trước khi nộp. Có thể chọn kênh nộp phù hợp: Trực tiếp, Trực tuyến, Dịch vụ bưu chính. Hiện có khoảng 3 mục giấy tờ cần theo dõi trong checklist.",
+  "documents": {
+    "normally_required": [
+      {
+        "name": "1. Sổ bảo hiểm xã hội.",
+        "quantity": "1 bản chính, 0 bản sao",
+        "notes": [],
+        "group": "default",
+        "attachment_path": null
+      }
+    ],
+    "conditional": [
+      {
+        "condition": "Bản chính hoặc bản sao có chứng thực hoặc bản chính kèm theo bản sao để đối chiếu hoặc bản điện tử của một trong các giấy tờ sau đây xác nhận về việc chấm dứt hợp đồng lao động/hợp đồng làm việc hoặc chấm dứt làm việc: hợp đồng lao động hoặc hợp đồng làm việc đã hết hạn hoặc đã hoàn thành công việc theo hợp đồng lao động; quyết định thôi việc; quyết định sa thải; quyết định kỷ luật buộc thôi việc; thông báo hoặc thỏa thuận chấm dứt hợp đồng lao động hoặc hợp đồng làm việc; xác nhận của người sử dụng lao động trong đó có nội dung cụ thể về thông tin của người lao động; loại hợp đồng lao động đã ký; lý do, thời điểm chấm dứt hợp đồng lao động đối với người lao động; xác nhận của cơ quan nhà nước có thẩm quyền về việc doanh nghiệp hoặc hợp tác xã giải thể, phá sản hoặc quyết định bãi nhiệm, miễn nhiệm, cách chức đối với các chức danh được bổ nhiệm trong trường hợp người lao động là người quản lý doanh nghiệp, quản lý hợp tác xã; trường hợp người lao động không có các giấy tờ xác nhận về việc chấm dứt hợp đồng lao động do đơn vị sử dụng lao động không có người đại diện theo pháp luật và người được người đại diện theo pháp luật ủy quyền thì thực hiện theo quy trình quy trình sau: Người lao động tại đơn vị sử dụng lao động không có người đại diện theo pháp luật và người được người đại diện theo pháp luật ủy quyền có nhu cầu chấm dứt hợp đồng lao động để hưởng các chế độ bảo hiểm thất nghiệp thì người lao động đề nghị Sở Nội vụ thực hiện các thủ tục để xác nhận việc chấm dứt hợp đồng lao động hoặc hợp đồng làm việc. Sở Nội vụ gửi văn bản yêu cầu Sở Tài chính xác nhận đơn vị sử dụng lao động không có người đại diện theo pháp luật hoặc không có người được người đại diện theo pháp luật ủy quyền trong thời hạn 03 ngày làm việc kể từ ngày nhận được văn bản đề nghị của người lao động. Sở Tài chính có trách nhiệm phối hợp với cơ quan thuế, cơ quan công an, chính quyền địa phương nơi đơn vị sử dụng lao động đặt trụ sở chính thực hiện xác minh nội dung đơn vị sử dụng lao động không có người đại diện theo pháp luật hoặc không có người được người đại diện theo pháp luật ủy quyền. Sở Tài chính gửi văn bản trả lời cho Sở Nội vụ về nội dung đơn vị sử dụng lao động không có người đại diện theo pháp luật hoặc không có người được người đại diện theo pháp luật ủy quyền trong thời hạn 10 ngày làm việc kể từ ngày nhận được văn bản yêu cầu xác nhận của Sở Nội vụ. Trường hợp người lao động làm việc theo hợp đồng lao động có thời hạn từ đủ 01 tháng đến dưới 12 tháng thì giấy tờ xác nhận về việc chấm dứt hợp đồng lao động là bản chính hoặc bản sao có chứng thực của hợp đồng đó.",
+        "document": "Bản chính hoặc bản sao có chứng thực hoặc bản chính kèm theo bản sao để đối chiếu hoặc bản điện tử của một trong các giấy tờ sau đây xác nhận về việc chấm dứt hợp đồng lao động/hợp đồng làm việc hoặc chấm dứt làm việc: hợp đồng lao động hoặc hợp đồng làm việc đã hết hạn hoặc đã hoàn thành công việc theo hợp đồng lao động; quyết định thôi việc; quyết định sa thải; quyết định kỷ luật buộc thôi việc; thông báo hoặc thỏa thuận chấm dứt hợp đồng lao động hoặc hợp đồng làm việc; xác nhận của người sử dụng lao động trong đó có nội dung cụ thể về thông tin của người lao động; loại hợp đồng lao động đã ký; lý do, thời điểm chấm dứt hợp đồng lao động đối với người lao động; xác nhận của cơ quan nhà nước có thẩm quyền về việc doanh nghiệp hoặc hợp tác xã giải thể, phá sản hoặc quyết định bãi nhiệm, miễn nhiệm, cách chức đối với các chức danh được bổ nhiệm trong trường hợp người lao động là người quản lý doanh nghiệp, quản lý hợp tác xã; trường hợp người lao động không có các giấy tờ xác nhận về việc chấm dứt hợp đồng lao động do đơn vị sử dụng lao động không có người đại diện theo pháp luật và người được người đại diện theo pháp luật ủy quyền thì thực hiện theo quy trình quy trình sau: Người lao động tại đơn vị sử dụng lao động không có người đại diện theo pháp luật và người được người đại diện theo pháp luật ủy quyền có nhu cầu chấm dứt hợp đồng lao động để hưởng các chế độ bảo hiểm thất nghiệp thì người lao động đề nghị Sở Nội vụ thực hiện các thủ tục để xác nhận việc chấm dứt hợp đồng lao động hoặc hợp đồng làm việc. Sở Nội vụ gửi văn bản yêu cầu Sở Tài chính xác nhận đơn vị sử dụng lao động không có người đại diện theo pháp luật hoặc không có người được người đại diện theo pháp luật ủy quyền trong thời hạn 03 ngày làm việc kể từ ngày nhận được văn bản đề nghị của người lao động. Sở Tài chính có trách nhiệm phối hợp với cơ quan thuế, cơ quan công an, chính quyền địa phương nơi đơn vị sử dụng lao động đặt trụ sở chính thực hiện xác minh nội dung đơn vị sử dụng lao động không có người đại diện theo pháp luật hoặc không có người được người đại diện theo pháp luật ủy quyền. Sở Tài chính gửi văn bản trả lời cho Sở Nội vụ về nội dung đơn vị sử dụng lao động không có người đại diện theo pháp luật hoặc không có người được người đại diện theo pháp luật ủy quyền trong thời hạn 10 ngày làm việc kể từ ngày nhận được văn bản yêu cầu xác nhận của Sở Nội vụ. Trường hợp người lao động làm việc theo hợp đồng lao động có thời hạn từ đủ 01 tháng đến dưới 12 tháng thì giấy tờ xác nhận về việc chấm dứt hợp đồng lao động là bản chính hoặc bản sao có chứng thực của hợp đồng đó.",
+        "quantity": "1 bản chính, 0 bản sao",
+        "notes": [],
+        "attachment_path": null
+      },
+      {
+        "condition": "Đề nghị hưởng trợ cấp thất nghiệp theo Mẫu số 10 tại Phụ lục ban hành kèm theo Nghị định số 374/2025/NĐ-CP. Trường hợp người lao động không có nhu cầu hưởng trợ cấp thất nghiệp thì nộp đề nghị không hưởng trợ cấp thất nghiệp theo Mẫu số 11 tại Phụ lục ban hành kèm theo Nghị định số 374/2025/NĐ-CP.",
+        "document": "Đề nghị hưởng trợ cấp thất nghiệp theo Mẫu số 10 tại Phụ lục ban hành kèm theo Nghị định số 374/2025/NĐ-CP. Trường hợp người lao động không có nhu cầu hưởng trợ cấp thất nghiệp thì nộp đề nghị không hưởng trợ cấp thất nghiệp theo Mẫu số 11 tại Phụ lục ban hành kèm theo Nghị định số 374/2025/NĐ-CP.",
+        "quantity": "1 bản chính, 0 bản sao",
+        "notes": [],
+        "attachment_path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/1_014748/Mus10tiPhlcbanhnhkmtheo_VL.docx"
+      }
+    ],
+    "forms": [
+      {
+        "name": "Đề nghị hưởng trợ cấp thất nghiệp theo Mẫu số 10 tại Phụ lục ban hành kèm theo Nghị định số 374/2025/NĐ-CP. Trường hợp người lao động không có nhu cầu hưởng trợ cấp thất nghiệp thì nộp đề nghị không hưởng trợ cấp thất nghiệp theo Mẫu số 11 tại Phụ lục ban hành kèm theo Nghị định số 374/2025/NĐ-CP.",
+        "attachment_label": "Mus10tiPhlcbanhnhkmtheo_VL.docx",
+        "attachment_path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/1_014748/Mus10tiPhlcbanhnhkmtheo_VL.docx"
+      }
+    ],
+    "presented": [],
+    "notes": [],
+    "summary": [
+      {
+        "group": "default",
+        "name": "1. Sổ bảo hiểm xã hội.",
+        "quantity": "1 bản chính, 0 bản sao",
+        "notes": [],
+        "attachment_path": null
+      },
+      {
+        "group": null,
+        "name": null,
+        "quantity": "1 bản chính, 0 bản sao",
+        "notes": [],
+        "attachment_path": null
+      },
+      {
+        "group": null,
+        "name": null,
+        "quantity": "1 bản chính, 0 bản sao",
+        "notes": [],
+        "attachment_path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/1_014748/Mus10tiPhlcbanhnhkmtheo_VL.docx"
+      },
+      {
+        "group": null,
+        "name": "Đề nghị hưởng trợ cấp thất nghiệp theo Mẫu số 10 tại Phụ lục ban hành kèm theo Nghị định số 374/2025/NĐ-CP. Trường hợp người lao động không có nhu cầu hưởng trợ cấp thất nghiệp thì nộp đề nghị không hưởng trợ cấp thất nghiệp theo Mẫu số 11 tại Phụ lục ban hành kèm theo Nghị định số 374/2025/NĐ-CP.",
+        "quantity": null,
+        "notes": null,
+        "attachment_path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/1_014748/Mus10tiPhlcbanhnhkmtheo_VL.docx"
+      }
+    ]
+  },
+  "steps": [
+    {
+      "order": 1,
+      "title": "Bước 1",
+      "description": "1.",
+      "example": null
+    },
+    {
+      "order": 2,
+      "title": "Bước 1:",
+      "description": "Bước 1: Nộp hồ sơ hưởng trợ cấp thất nghiệp (1) Trong thời hạn 03 tháng kể từ ngày chấm dứt hợp đồng lao động hoặc hợp đồng làm việc hoặc chấm dứt làm việc hoặc kể từ ngày có xác nhận của cơ quan có thẩm quyền đối với người sử dụng lao động không có khả năng đóng bảo hiểm thất nghiệp theo quy định tại khoản 6 Điều 3 Nghị định số 374/2025/NĐ-CP, người lao động chưa có việc làm mà có nhu cầu hưởng trợ cấp thất nghiệp nộp 01 bộ hồ sơ đề nghị hưởng trợ cấp thất nghiệp cho tổ chức dịch vụ việc làm công tại địa phương nơi người lao động có nhu cầu nhận trợ cấp thất nghiệp. Người lao động được ủy quyền cho người khác nộp hồ sơ hoặc gửi hồ sơ qua dịch vụ bưu chính nếu thuộc một trong các trường hợp sau: ốm đau, thai sản có xác nhận của cơ sở y tế có thẩm quyền; bị tai nạn có xác nhận của cảnh sát giao thông hoặc cơ sở y tế có thẩm quyền; hỏa hoạn, lũ lụt, động đất, sóng thần, địch họa, dịch bệnh có xác nhận của Chủ tịch Ủy ban nhân dân cấp xã. Ngày nộp hồ sơ là ngày người được ủy quyền trực tiếp nộp hồ sơ hoặc ngày đi ghi trên dấu bưu chính đối với trường hợp gửi qua dịch vụ bưu chính. (2) Trong thời hạn 10 ngày làm việc kể từ ngày nộp hồ sơ đề nghị hưởng trợ cấp thất nghiệp, nếu người lao động không có nhu cầu hưởng trợ cấp thất nghiệp thì người lao động phải nộp đề nghị không hưởng trợ cấp thất nghiệp theo Mẫu số 11 tại Phụ lục ban hành kèm theo Nghị định số 374/2025/NĐ-CP cho tổ chức dịch vụ việc làm công nơi người lao động đã nộp hồ sơ đề nghị hưởng trợ cấp thất nghiệp. Trường hợp người lao động trực tiếp nộp hồ sơ, tổ chức dịch vụ việc làm công có trách nhiệm gửi lại hồ sơ đề nghị hưởng trợ cấp thất nghiệp cho người lao động vào ngày trả kết quả theo phiếu hẹn trả kết quả. (3) Tổ chức dịch vụ việc làm công có trách nhiệm tiếp nhận, kiểm tra hồ sơ, ghi phiếu hẹn trả kết quả theo Mẫu số 04 tại Phụ lục ban hành kèm theo Nghị định số 374/2025/NĐ-CP và trao phiếu cho người nộp hồ sơ trực tiếp hoặc gửi qua dịch vụ bưu chính đối với trường hợp nộp hồ sơ qua dịch vụ bưu chính, trường hợp người lao động nộp hồ sơ trực tuyến thì gửi thông báo về việc hẹn trả kết quả trong 03 ngày làm việc cho người lao động.",
+      "example": "03 tháng"
+    },
+    {
+      "order": 3,
+      "title": "Bước 2:",
+      "description": "Bước 2: Trong thời hạn 15 ngày làm việc kể từ ngày nhận đủ hồ sơ theo quy định, tổ chức dịch vụ việc làm công có trách nhiệm xem xét, trình Giám đốc Sở Nội vụ quyết định về việc hưởng trợ cấp thất nghiệp của người lao động, trường hợp hồ sơ đề nghị hưởng trợ cấp thất nghiệp gửi qua dịch vụ bưu chính thì ngày nhận hồ sơ được tính là ngày chuyển đến ghi trên dấu bưu chính. Trường hợp hồ sơ chưa đủ các thông tin để làm cơ sở giải quyết thì tổ chức dịch vụ việc làm công yêu cầu người lao động bổ sung, hoàn thiện hồ sơ, phiếu yêu cầu theo Mẫu số 03 tại Phụ lục ban hành kèm theo Nghị định số 374/2025/NĐ-CP. Quyết định về việc hưởng trợ cấp thất nghiệp thực hiện theo Mẫu số 12 tại Phụ lục ban hành kèm theo Nghị định số 374/2025/NĐ-CP. Quyết định về việc hưởng trợ cấp thất nghiệp được tổ chức dịch vụ việc làm công gửi: 01 bản đến Bảo hiểm xã hội cấp tỉnh nơi người lao động đang hưởng trợ cấp thất nghiệp để thực hiện chi trả trợ cấp thất nghiệp và cấp thẻ bảo hiểm y tế cho người lao động; 01 bản đến người lao động được hưởng trợ cấp thất nghiệp. Trường hợp người lao động không được hưởng trợ cấp thất nghiệp thì tổ chức dịch vụ việc làm công phải thông báo bằng văn bản và nêu rõ lý do.",
+      "example": "15 ngày làm việc"
+    },
+    {
+      "order": 4,
+      "title": "Bước 3:",
+      "description": "Bước 3: Chi trả trợ cấp thất nghiệp Trong thời hạn 05 ngày làm việc kể từ ngày người lao động hết thời hạn nhận quyết định về việc hưởng trợ cấp thất nghiệp hoặc hết thời hạn thông báo về việc tìm kiếm việc làm hằng tháng, cơ quan bảo hiểm xã hội thực hiện chi trả trợ cấp thất nghiệp cho người lao động.",
+      "example": "05 ngày làm việc"
+    },
+    {
+      "order": 5,
+      "title": "Bước 4:",
+      "description": "Bước 4: Đối với trường hợp người lao động nộp hồ sơ trực tiếp, sau thời hạn 03 ngày làm việc kể từ ngày ghi trong phiếu hẹn trả kết quả, nếu người lao động không đến nhận quyết định vể việc hưởng trợ cấp thất nghiệp thì được coi là không có nhu cầu hưởng trợ cấp thất nghiệp. Trong thời hạn 02 ngày làm việc kể từ ngày hết thời hạn nhận quyết định về việc hưởng trợ cấp thất nghiệp, tổ chức dịch vụ việc làm công phải thông tin cho cơ quan bảo hiểm xã hội các trường hợp không đến nhận quyết định về việc hưởng trợ cấp thất nghiệp để dừng chi trả theo quy định. Trong thời hạn 07 ngày làm việc kể từ ngày người lao động không đến nhận quyết định về việc hưởng trợ cấp thất nghiệp theo quy định, tổ chức dịch vụ việc làm công trình Giám đốc Sở Nội vụ quyết định về việc hủy quyết định hưởng trợ cấp thất nghiệp của người lao động. Quyết định về việc hủy quyết định hưởng trợ cấp thất nghiệp được tổ chức dịch vụ việc làm công gửi: 01 bản đến Bảo hiểm xã hội cấp tỉnh để không chi trả trợ cấp thất nghiệp cho người lao động; 01 bản đến người lao động. Quyết định về việc hủy quyết định hưởng trợ cấp thất nghiệp thực hiện theo Mẫu số 08 tại Phụ lục ban hành kèm theo Nghị định số 374/2025/NĐ-CP.",
+      "example": "03 ngày làm việc"
+    },
+    {
+      "order": 6,
+      "title": "Bước 5:",
+      "description": "Bước 5: Sau thời hạn 03 tháng kể từ ngày người lao động hết thời hạn hưởng trợ cấp thất nghiệp theo quyết định hưởng trợ cấp thất nghiệp nhưng người lao động không đến nhận tiền trợ cấp thất nghiệp và không thông báo bằng văn bản cơ quan bảo hiểm xã hội nơi đang hưởng trợ cấp thất nghiệp thì người lao động đó được xác định là không có nhu cầu hưởng trợ cấp thất nghiệp. Trong thời hạn 07 ngày làm việc sau thời hạn nêu trên, cơ quan bảo hiểm xã hội phải thông báo cho tổ chức dịch vụ việc làm công nơi người lao động đang hưởng trợ cấp thất nghiệp về việc người lao động không đến nhận tiền trợ cấp thất nghiệp. Thông báo về việc người lao động không đến nhận tiền trợ cấp thất nghiệp thực hiện theo Mẫu số 13 tại Phụ lục ban hành kèm theo Nghị định số 374/2025/NĐ-CP. Trong thời hạn 10 ngày làm việc kể từ ngày nhận được thông báo của cơ quan bảo hiểm xã hội, tổ chức dịch vụ việc làm công có trách nhiệm xem xét, trình Giám đốc Sở Nội vụ quyết định về việc bảo lưu thời gian đóng bảo hiểm thất nghiệp cho người lao động. Quyết định về việc bảo lưu thời gian đóng bảo hiểm thất nghiệp được tổ chức dịch vụ việc làm công gửi: 01 bản đến Bảo hiểm xã hội cấp tỉnh để thực hiện bảo lưu thời gian đóng bảo hiểm thất nghiệp cho người lao động; 01 bản đến người lao động. Trường hợp người lao động nộp hồ sơ trực tuyến thì Quyết định về việc bảo lưu thời gian đóng bảo hiểm thất nghiệp gửi 01 bản đến Bảo hiểm xã hội cấp tỉnh, 01 bản đến người lao động bằng hình thức trực tuyến. Quyết định bảo lưu thời gian đóng bảo hiểm thất nghiệp thực hiện theo Mẫu số 14 tại Phụ lục ban hành kèm theo Nghị định số 374/2025/NĐ-CP.",
+      "example": "03 tháng"
+    }
+  ],
+  "input_fields": [
+    {
+      "field": "employment_need",
+      "label": "Nhu cầu việc làm hoặc lao động",
+      "type": "string",
+      "required": true
+    },
+    {
+      "field": "worker_or_employer_info",
+      "label": "Thông tin người lao động hoặc đơn vị sử dụng lao động",
+      "type": "string",
+      "required": true
+    },
+    {
+      "field": "submission_channel_preference",
+      "label": "Kênh nộp dự kiến",
+      "type": "enum",
+      "required": false,
+      "options": [
+        "Trực tiếp",
+        "Trực tuyến",
+        "Dịch vụ bưu chính"
+      ]
+    },
+    {
+      "field": "has_supporting_employment_documents",
+      "label": "Đã có hồ sơ lao động liên quan",
+      "type": "boolean",
+      "required": false
+    }
+  ],
+  "validation_rules": [
+    {
+      "id": "required-1",
+      "severity": "error",
+      "field": "employment_need",
+      "rule": "Trường bắt buộc phải có dữ liệu hợp lệ trước khi nộp.",
+      "message": "Thiếu trường bắt buộc: Nhu cầu việc làm hoặc lao động."
+    },
+    {
+      "id": "required-2",
+      "severity": "error",
+      "field": "worker_or_employer_info",
+      "rule": "Trường bắt buộc phải có dữ liệu hợp lệ trước khi nộp.",
+      "message": "Thiếu trường bắt buộc: Thông tin người lao động hoặc đơn vị sử dụng lao động."
+    },
+    {
+      "id": "hint-1",
+      "severity": "warning",
+      "field": "general",
+      "rule": "Nên xác định trước kênh nộp hồ sơ để biết có cần bản giấy, bản điện tử hay xuất trình trực tiếp.",
+      "message": "Nên xác định trước kênh nộp hồ sơ để biết có cần bản giấy, bản điện tử hay xuất trình trực tiếp."
+    },
+    {
+      "id": "hint-2",
+      "severity": "warning",
+      "field": "general",
+      "rule": "Có mẫu biểu đính kèm, nên kiểm tra đúng biểu mẫu trước khi nộp.",
+      "message": "Có mẫu biểu đính kèm, nên kiểm tra đúng biểu mẫu trước khi nộp."
+    },
+    {
+      "id": "hint-3",
+      "severity": "warning",
+      "field": "general",
+      "rule": "Nên xác định đúng nhóm thủ tục lao động, đơn vị liên quan và hồ sơ nghề nghiệp cần xuất trình.",
+      "message": "Nên xác định đúng nhóm thủ tục lao động, đơn vị liên quan và hồ sơ nghề nghiệp cần xuất trình."
+    }
+  ],
+  "common_errors": [
+    {
+      "field": "general",
+      "issue": "Thiếu giấy tờ hoặc nội dung ủy quyền phù hợp.",
+      "fix": "Nên xác định trước kênh nộp hồ sơ để biết có cần bản giấy, bản điện tử hay xuất trình trực tiếp."
+    },
+    {
+      "field": "general",
+      "issue": "Điền sai mẫu tờ khai hoặc chọn sai biểu mẫu đi kèm.",
+      "fix": "Nên xác định trước kênh nộp hồ sơ để biết có cần bản giấy, bản điện tử hay xuất trình trực tiếp."
+    },
+    {
+      "field": "general",
+      "issue": "Thiếu hồ sơ về vị trí việc làm, đơn vị sử dụng lao động hoặc điều kiện làm việc áp dụng.",
+      "fix": "Nên xác định trước kênh nộp hồ sơ để biết có cần bản giấy, bản điện tử hay xuất trình trực tiếp."
+    }
+  ],
+  "clarifying_questions": [
+    {
+      "id": "clarify_1",
+      "question": "Bạn đang cần giải quyết thủ tục lao động nào cho người lao động hoặc doanh nghiệp?",
+      "purpose": "workflow_intake"
+    },
+    {
+      "id": "clarify_2",
+      "question": "Hồ sơ nghề nghiệp, đơn vị sử dụng lao động hoặc yếu tố lao động nước ngoài đã rõ chưa?",
+      "purpose": "workflow_intake"
+    }
+  ],
+  "legal_basis": [
+    {
+      "title": "Luật Việc làm",
+      "code": "74/2025/QH15"
+    },
+    {
+      "title": "Quy định chi tiết một số điều của Luật Việc làm về bảo hiểm thất nghiệp",
+      "code": "Nghị định số 374/2025/NĐ-CP"
+    }
+  ],
+  "legal_bases": [
+    {
+      "title": "Luật Việc làm",
+      "code": "74/2025/QH15"
+    },
+    {
+      "title": "Quy định chi tiết một số điều của Luật Việc làm về bảo hiểm thất nghiệp",
+      "code": "Nghị định số 374/2025/NĐ-CP"
+    }
+  ],
+  "faq": [
+    {
+      "question": "Có thể nộp qua kênh nào?",
+      "answer": "Các kênh hiện có: Trực tiếp, Trực tuyến, Dịch vụ bưu chính."
+    },
+    {
+      "question": "Thời gian xử lý tham chiếu là bao lâu?",
+      "answer": "Thời gian xử lý tham chiếu hiện có là 15 ngày làm việc."
+    },
+    {
+      "question": "Kết quả chính của thủ tục là gì?",
+      "answer": "Kết quả chính được trích xuất là Quyết định về việc hưởng trợ cấp thất nghiệp."
+    }
+  ],
+  "guidance": {
+    "highlight_documents": [
+      {
+        "bucket": "required",
+        "name": "1. Sổ bảo hiểm xã hội.",
+        "conditions": [],
+        "attachment_path": null
+      },
+      {
+        "bucket": "conditional",
+        "name": "Bản chính hoặc bản sao có chứng thực hoặc bản chính kèm theo bản sao để đối chiếu hoặc bản điện tử của một trong các giấy tờ sau đây xác nhận về việc chấm dứt hợp đồng lao động/hợp đồng làm việc hoặc chấm dứt làm việc: hợp đồng lao động hoặc hợp đồng làm việc đã hết hạn hoặc đã hoàn thành công việc theo hợp đồng lao động; quyết định thôi việc; quyết định sa thải; quyết định kỷ luật buộc thôi việc; thông báo hoặc thỏa thuận chấm dứt hợp đồng lao động hoặc hợp đồng làm việc; xác nhận của người sử dụng lao động trong đó có nội dung cụ thể về thông tin của người lao động; loại hợp đồng lao động đã ký; lý do, thời điểm chấm dứt hợp đồng lao động đối với người lao động; xác nhận của cơ quan nhà nước có thẩm quyền về việc doanh nghiệp hoặc hợp tác xã giải thể, phá sản hoặc quyết định bãi nhiệm, miễn nhiệm, cách chức đối với các chức danh được bổ nhiệm trong trường hợp người lao động là người quản lý doanh nghiệp, quản lý hợp tác xã; trường hợp người lao động không có các giấy tờ xác nhận về việc chấm dứt hợp đồng lao động do đơn vị sử dụng lao động không có người đại diện theo pháp luật và người được người đại diện theo pháp luật ủy quyền thì thực hiện theo quy trình quy trình sau: Người lao động tại đơn vị sử dụng lao động không có người đại diện theo pháp luật và người được người đại diện theo pháp luật ủy quyền có nhu cầu chấm dứt hợp đồng lao động để hưởng các chế độ bảo hiểm thất nghiệp thì người lao động đề nghị Sở Nội vụ thực hiện các thủ tục để xác nhận việc chấm dứt hợp đồng lao động hoặc hợp đồng làm việc. Sở Nội vụ gửi văn bản yêu cầu Sở Tài chính xác nhận đơn vị sử dụng lao động không có người đại diện theo pháp luật hoặc không có người được người đại diện theo pháp luật ủy quyền trong thời hạn 03 ngày làm việc kể từ ngày nhận được văn bản đề nghị của người lao động. Sở Tài chính có trách nhiệm phối hợp với cơ quan thuế, cơ quan công an, chính quyền địa phương nơi đơn vị sử dụng lao động đặt trụ sở chính thực hiện xác minh nội dung đơn vị sử dụng lao động không có người đại diện theo pháp luật hoặc không có người được người đại diện theo pháp luật ủy quyền. Sở Tài chính gửi văn bản trả lời cho Sở Nội vụ về nội dung đơn vị sử dụng lao động không có người đại diện theo pháp luật hoặc không có người được người đại diện theo pháp luật ủy quyền trong thời hạn 10 ngày làm việc kể từ ngày nhận được văn bản yêu cầu xác nhận của Sở Nội vụ. Trường hợp người lao động làm việc theo hợp đồng lao động có thời hạn từ đủ 01 tháng đến dưới 12 tháng thì giấy tờ xác nhận về việc chấm dứt hợp đồng lao động là bản chính hoặc bản sao có chứng thực của hợp đồng đó.",
+        "conditions": [
+          "Bản chính hoặc bản sao có chứng thực hoặc bản chính kèm theo bản sao để đối chiếu hoặc bản điện tử của một trong các giấy tờ sau đây xác nhận về việc chấm dứt hợp đồng lao động/hợp đồng làm việc hoặc chấm dứt làm việc: hợp đồng lao động hoặc hợp đồng làm việc đã hết hạn hoặc đã hoàn thành công việc theo hợp đồng lao động; quyết định thôi việc; quyết định sa thải; quyết định kỷ luật buộc thôi việc; thông báo hoặc thỏa thuận chấm dứt hợp đồng lao động hoặc hợp đồng làm việc; xác nhận của người sử dụng lao động trong đó có nội dung cụ thể về thông tin của người lao động; loại hợp đồng lao động đã ký; lý do, thời điểm chấm dứt hợp đồng lao động đối với người lao động; xác nhận của cơ quan nhà nước có thẩm quyền về việc doanh nghiệp hoặc hợp tác xã giải thể, phá sản hoặc quyết định bãi nhiệm, miễn nhiệm, cách chức đối với các chức danh được bổ nhiệm trong trường hợp người lao động là người quản lý doanh nghiệp, quản lý hợp tác xã; trường hợp người lao động không có các giấy tờ xác nhận về việc chấm dứt hợp đồng lao động do đơn vị sử dụng lao động không có người đại diện theo pháp luật và người được người đại diện theo pháp luật ủy quyền thì thực hiện theo quy trình quy trình sau: Người lao động tại đơn vị sử dụng lao động không có người đại diện theo pháp luật và người được người đại diện theo pháp luật ủy quyền có nhu cầu chấm dứt hợp đồng lao động để hưởng các chế độ bảo hiểm thất nghiệp thì người lao động đề nghị Sở Nội vụ thực hiện các thủ tục để xác nhận việc chấm dứt hợp đồng lao động hoặc hợp đồng làm việc. Sở Nội vụ gửi văn bản yêu cầu Sở Tài chính xác nhận đơn vị sử dụng lao động không có người đại diện theo pháp luật hoặc không có người được người đại diện theo pháp luật ủy quyền trong thời hạn 03 ngày làm việc kể từ ngày nhận được văn bản đề nghị của người lao động. Sở Tài chính có trách nhiệm phối hợp với cơ quan thuế, cơ quan công an, chính quyền địa phương nơi đơn vị sử dụng lao động đặt trụ sở chính thực hiện xác minh nội dung đơn vị sử dụng lao động không có người đại diện theo pháp luật hoặc không có người được người đại diện theo pháp luật ủy quyền. Sở Tài chính gửi văn bản trả lời cho Sở Nội vụ về nội dung đơn vị sử dụng lao động không có người đại diện theo pháp luật hoặc không có người được người đại diện theo pháp luật ủy quyền trong thời hạn 10 ngày làm việc kể từ ngày nhận được văn bản yêu cầu xác nhận của Sở Nội vụ. Trường hợp người lao động làm việc theo hợp đồng lao động có thời hạn từ đủ 01 tháng đến dưới 12 tháng thì giấy tờ xác nhận về việc chấm dứt hợp đồng lao động là bản chính hoặc bản sao có chứng thực của hợp đồng đó."
+        ],
+        "attachment_path": null
+      },
+      {
+        "bucket": "conditional",
+        "name": "Đề nghị hưởng trợ cấp thất nghiệp theo Mẫu số 10 tại Phụ lục ban hành kèm theo Nghị định số 374/2025/NĐ-CP. Trường hợp người lao động không có nhu cầu hưởng trợ cấp thất nghiệp thì nộp đề nghị không hưởng trợ cấp thất nghiệp theo Mẫu số 11 tại Phụ lục ban hành kèm theo Nghị định số 374/2025/NĐ-CP.",
+        "conditions": [
+          "Đề nghị hưởng trợ cấp thất nghiệp theo Mẫu số 10 tại Phụ lục ban hành kèm theo Nghị định số 374/2025/NĐ-CP. Trường hợp người lao động không có nhu cầu hưởng trợ cấp thất nghiệp thì nộp đề nghị không hưởng trợ cấp thất nghiệp theo Mẫu số 11 tại Phụ lục ban hành kèm theo Nghị định số 374/2025/NĐ-CP."
+        ],
+        "attachment_path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/1_014748/Mus10tiPhlcbanhnhkmtheo_VL.docx"
+      }
+    ],
+    "special_cases": [
+      "Có thể cần giấy tờ ủy quyền",
+      "Có trường hợp hồ sơ điện tử thay thế bản giấy",
+      "Có thể cần đối chiếu quá trình đóng bảo hiểm để giải quyết chế độ",
+      "Có thể cần xác minh quan hệ lao động hoặc giấy phép làm việc"
+    ],
+    "common_errors": [
+      "Thiếu giấy tờ hoặc nội dung ủy quyền phù hợp.",
+      "Điền sai mẫu tờ khai hoặc chọn sai biểu mẫu đi kèm.",
+      "Thiếu hồ sơ về vị trí việc làm, đơn vị sử dụng lao động hoặc điều kiện làm việc áp dụng."
+    ],
+    "validation_hints": [
+      "Nên xác định trước kênh nộp hồ sơ để biết có cần bản giấy, bản điện tử hay xuất trình trực tiếp.",
+      "Có mẫu biểu đính kèm, nên kiểm tra đúng biểu mẫu trước khi nộp.",
+      "Nên xác định đúng nhóm thủ tục lao động, đơn vị liên quan và hồ sơ nghề nghiệp cần xuất trình."
+    ]
+  },
+  "next_steps": {
+    "summary": "Nên xác định rõ nhu cầu lao động, hồ sơ nghề nghiệp hoặc chế độ cần giải quyết trước khi nộp. Có thể chọn kênh nộp phù hợp: Trực tiếp, Trực tuyến, Dịch vụ bưu chính. Hiện có khoảng 3 mục giấy tờ cần theo dõi trong checklist.",
+    "time_badge": "15 ngày làm việc",
+    "result_label": "Quyết định về việc hưởng trợ cấp thất nghiệp",
+    "primary_channel": "online",
+    "channels": [
+      "in_person",
+      "online",
+      "postal"
+    ]
+  },
+  "notes": [],
+  "provenance": {
+    "pipeline": "raw->structured->normalized->enriched->ui_api_payload",
+    "normalizer_version": "0.2.0",
+    "enricher_version": "0.2.0",
+    "mapping_notes": "workflow_generated:viec_lam/bao_hiem_xa_hoi_that_nghiep_tro_cap",
+    "supported_group": true
+  }
+}

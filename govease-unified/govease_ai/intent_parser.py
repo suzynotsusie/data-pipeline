@@ -26,7 +26,8 @@ class LLMIntentParser:
         self, 
         user_message: str, 
         supported_domains: list[str] | None = None,
-        context_slots: dict[str, Any] | None = None
+        context_slots: dict[str, Any] | None = None,
+        supported_taxonomy: list[dict[str, Any]] | None = None,
     ) -> dict[str, Any] | None:
         if not self.status.enabled:
             return None
@@ -48,6 +49,7 @@ class LLMIntentParser:
         payload = {
             "user_message": user_message,
             "supported_domains": supported_domains,
+            "supported_taxonomy": supported_taxonomy or [],
             "context_slots": context_slots or {}
         }
 
@@ -61,11 +63,12 @@ class LLMIntentParser:
                         "role": "system",
                         "content": (
                             "You are a public-service intent parsing AI. Classify the user's message into one of the "
-                            "supported_domains (or unknown). "
+                            "supported_domains (or unknown), and when possible also classify the best matching subdomain_key "
+                            "from supported_taxonomy. "
                             "You must also detect if the query is ambiguous, missing prerequisites, or out of scope.\n"
                             "Return JSON strictly with these keys:\n"
-                            "- domain (string or null)\n"
-                            "- subdomain (string or null)\n"
+                            "- domain_key (string or null)\n"
+                            "- subdomain_key (string or null)\n"
                             "- intent (string or null)\n"
                             "- slot_updates (dict)\n"
                             "- ambiguity_flags (list of strings)\n"
@@ -91,8 +94,8 @@ class LLMIntentParser:
             return None
             
         return {
-            "domain": parsed.get("domain"),
-            "subdomain": parsed.get("subdomain"),
+            "domain_key": parsed.get("domain_key") or parsed.get("domain"),
+            "subdomain_key": parsed.get("subdomain_key") or parsed.get("subdomain"),
             "intent": parsed.get("intent"),
             "slot_updates": parsed.get("slot_updates") or {},
             "ambiguity_flags": parsed.get("ambiguity_flags") or [],

@@ -2,23 +2,22 @@
 
 import Image from "next/image";
 import { useState } from "react";
+import type { CitizenGroupOption } from "../lib/types";
 import { Icon } from "./Icon";
 import { CitizenAssistant } from "./CitizenAssistant";
 
-export function FloatingAssistant() {
+export function FloatingAssistant({ groups }: { groups: CitizenGroupOption[] }) {
   const [open, setOpen] = useState(false);
+  const [refreshKey, setRefreshKey] = useState(0);
 
-  function openExpandedChat() {
-    const popup = window.open(new URL("/widget", window.location.origin).toString(), "govease-chat");
-    if (!popup) window.location.assign("/widget");
-    else popup.focus();
+  function refreshChat() {
+    setRefreshKey(prev => prev + 1);
   }
 
   return (
     <div className={`floating-assistant ${open ? "open" : ""}`}>
-      {open && (
-        <div className="assistant-modal" role="dialog" aria-modal="false" aria-label="Trợ lý GovEase AI">
-          <div className="assistant-modal-panel">
+      <div className={`assistant-modal ${open ? "open" : ""}`} role="dialog" aria-modal={open} aria-hidden={!open} aria-label="Trợ lý GovEase AI">
+        <div className="assistant-modal-panel">
             <header className="assistant-popup-header">
               <div>
                 <span className="assistant-popup-logo">
@@ -33,9 +32,9 @@ export function FloatingAssistant() {
                 </div>
               </div>
               <nav>
-                <button className="expand-chat" type="button" onClick={openExpandedChat} aria-label="Mở chatbot trong trang mới">
-                  <Icon name="external" />
-                  <span>Mở rộng</span>
+                <button className="expand-chat" type="button" onClick={refreshChat} aria-label="Làm mới cuộc trò chuyện">
+                  <Icon name="refresh" />
+                  <span>Làm mới</span>
                 </button>
                 <button onClick={() => setOpen(false)} aria-label="Đóng">
                   <Icon name="close" />
@@ -43,12 +42,11 @@ export function FloatingAssistant() {
               </nav>
             </header>
             <div className="assistant-popup-body">
-              <CitizenAssistant compact />
+              <CitizenAssistant key={refreshKey} compact groups={groups} />
             </div>
           </div>
         </div>
-      )}
-      <button className="floating-button floating-logo-button" onClick={() => setOpen(!open)} aria-label="Trợ lý GovEase AI">
+      <button className={`floating-button ${open ? "open" : ""}`} onClick={() => setOpen(!open)} aria-label="Trợ lý GovEase AI">
         {open ? (
           <Icon name="close" />
         ) : (

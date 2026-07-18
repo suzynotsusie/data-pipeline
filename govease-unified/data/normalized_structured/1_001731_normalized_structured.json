@@ -1,0 +1,176 @@
+{
+  "schema_version": "1.0",
+  "normalizer_version": "0.2.0",
+  "source": {
+    "procedure_code": "1.001731",
+    "title": "Hỗ trợ chi phí mai táng cho đối tượng bảo trợ xã hội",
+    "raw_structured_parser_version": "0.1.0",
+    "field": "Bảo trợ xã hội"
+  },
+  "procedure": {
+    "level": null,
+    "procedure_type": null,
+    "target_users": [],
+    "authorities": [
+      "Ủy ban nhân dân cấp xã"
+    ],
+    "receiving_places": []
+  },
+  "submission": {
+    "channels": [
+      "in_person",
+      "online",
+      "postal"
+    ],
+    "methods": [
+      {
+        "method_id": "method_1",
+        "channel": "in_person",
+        "processing_time_text": "3 Ngày làm việc",
+        "fee_text": null,
+        "description": "ngày làm việc kể từ ngày nhận đủ hồ sơ hợp lệ",
+        "is_online": false,
+        "is_postal": false,
+        "is_in_person": true
+      },
+      {
+        "method_id": "method_2",
+        "channel": "online",
+        "processing_time_text": "3 Ngày làm việc",
+        "fee_text": null,
+        "description": "ngày làm việc kể từ ngày nhận đủ hồ sơ hợp lệ",
+        "is_online": true,
+        "is_postal": false,
+        "is_in_person": false
+      },
+      {
+        "method_id": "method_3",
+        "channel": "postal",
+        "processing_time_text": "3 Ngày làm việc",
+        "fee_text": null,
+        "description": "ngày làm việc kể từ ngày nhận đủ hồ sơ hợp lệ",
+        "is_online": false,
+        "is_postal": true,
+        "is_in_person": false
+      }
+    ],
+    "timing_summary": {
+      "unique_processing_times": [
+        "3 Ngày làm việc"
+      ],
+      "method_count": 3
+    }
+  },
+  "documents": {
+    "required": [
+      {
+        "document_id": "t_khai_ngh_h_tr_chi_ph_mai_t_ng_c_a_c_quan_t_ch_c_h_gia_nh_ho_c_c_nh_n_ng_ra_t_ch_c_mai_t_ng_cho_i_t_ng_theo_m_u_s_04_ban_h_nh_k_m_theo_ngh_nh_s_20_2021_n_cp",
+        "name": "Tờ khai đề nghị hỗ trợ chi phí mai táng của cơ quan, tổ chức, hộ gia đình hoặc cá nhân đứng ra tổ chức mai táng cho đối tượng (theo Mẫu số 04 ban hành kèm theo Nghị định số 20/2021/NĐ-CP);",
+        "group_name": "default",
+        "group_type": "required",
+        "original_count": "1",
+        "copy_count": "0",
+        "conditions": [],
+        "attachment_label": "Mus04.docx",
+        "attachment_path": "Mus04.docx"
+      },
+      {
+        "document_id": "b_n_sao_gi_y_ch_ng_t_ho_c_gi_y_b_o_t_c_a_i_t_ng",
+        "name": "Bản sao giấy chứng tử hoặc giấy báo tử của đối tượng",
+        "group_name": "default",
+        "group_type": "required",
+        "original_count": "0",
+        "copy_count": "1",
+        "conditions": [],
+        "attachment_label": null,
+        "attachment_path": null
+      }
+    ],
+    "conditional": [
+      {
+        "document_id": "b_n_sao_quy_t_nh_ho_c_danh_s_ch_th_i_h_ng_tr_c_p_b_o_hi_m_x_h_i_tr_c_p_kh_c_c_a_c_quan_c_th_m_quy_n_i_v_i_tr_ng_h_p_ng_i_t_80_tu_i_ang_h_ng_tr_c_p_tu_t_b_o_hi_m_x_h_i_h_ng_th_ng_tr_c_p_h_ng_th_ng_kh_c",
+        "name": "Bản sao quyết định hoặc danh sách thôi hưởng trợ cấp bảo hiểm xã hội, trợ cấp khác của cơ quan có thẩm quyền đối với trường hợp người từ đủ 80 tuổi đang hưởng trợ cấp tuất bảo hiểm xã hội hàng tháng, trợ cấp hàng tháng khác",
+        "group_name": "default",
+        "group_type": "required",
+        "original_count": "0",
+        "copy_count": "1",
+        "conditions": [
+          "Bản sao quyết định hoặc danh sách thôi hưởng trợ cấp bảo hiểm xã hội, trợ cấp khác của cơ quan có thẩm quyền đối với trường hợp người từ đủ 80 tuổi đang hưởng trợ cấp tuất bảo hiểm xã hội hàng tháng, trợ cấp hàng tháng khác"
+        ],
+        "attachment_label": null,
+        "attachment_path": null
+      }
+    ],
+    "presented": [],
+    "notes": [],
+    "forms": [
+      {
+        "name": "Tờ khai đề nghị hỗ trợ chi phí mai táng của cơ quan, tổ chức, hộ gia đình hoặc cá nhân đứng ra tổ chức mai táng cho đối tượng (theo Mẫu số 04 ban hành kèm theo Nghị định số 20/2021/NĐ-CP);",
+        "attachment_label": "Mus04.docx",
+        "attachment_path": "Mus04.docx"
+      }
+    ],
+    "empty_groups": [],
+    "document_count": 3
+  },
+  "process": {
+    "steps": [
+      {
+        "step_id": "step_1",
+        "title": null,
+        "content": "-",
+        "actor": "user",
+        "channel_hint": null,
+        "time_hint": null
+      },
+      {
+        "step_id": "step_2",
+        "title": "Bước 1:",
+        "content": "Bước 1: Cá nhân, cơ quan, đơn vị chịu trách nhiệm mai táng cho đối tượng làm hồ sơ theo quy định, gửi Chủ tịch Ủy ban nhân dân cấp xã. -",
+        "actor": "authority",
+        "channel_hint": null,
+        "time_hint": null
+      },
+      {
+        "step_id": "step_3",
+        "title": "Bước 2:",
+        "content": "Bước 2: Trong thời hạn 03 ngày làm việc, kể từ ngày nhận được Tờ khai của cá nhân, cơ quan, đơn vị tổ chức đứng ra mai táng cho đối tượng, Chủ tịch Ủy ban nhân dân cấp xã xem xét, quyết định hỗ trợ chi phí mai táng và thực hiện chi trả kinh phí hỗ trợ theo quy định.",
+        "actor": "authority",
+        "channel_hint": null,
+        "time_hint": "03 ngày làm việc"
+      }
+    ],
+    "step_count": 3,
+    "notes": []
+  },
+  "eligibility": {
+    "conditions": [
+      "Những đối tượng khi chết được hỗ trợ chi phí mai táng: - Đối tượng quy định tại Điều 5 Nghị định số 20/2021/NĐ-CP đang hưởng trợ cấp xã hội hàng tháng. - Con của người đơn thân nghèo đang nuôi con quy định tại khoản 4 Điều 5 Nghị định số 20/2021/NĐ-CP. - Người từ đủ 80 tuổi đang hưởng trợ cấp tuất bảo hiểm xã hội hàng tháng, trợ cấp hàng tháng khác. - Hộ gia đình có người chết, mất tích do thiên tai, hỏa hoạn, dịch bệnh; tai nạn giao thông, tai nạn lao động nghiêm trọng hoặc các lý do bất khả kháng khác. - Cơ quan, tổ chức, cá nhân tổ chức mai táng cho người chết quy định tại khoản 1 Điều 14 nghị định số 20/2021/NĐ-CP do không có người nhận trách nhiệm tổ chức mai táng."
+    ],
+    "has_conditions": true
+  },
+  "results": {
+    "items": [],
+    "primary_result": null
+  },
+  "legal_basis": {
+    "items": [],
+    "count": 0
+  },
+  "attachments": [
+    {
+      "label": "Mus04.docx",
+      "path": "Mus04.docx",
+      "source_section": "Thành phần hồ sơ",
+      "document_name": "Tờ khai đề nghị hỗ trợ chi phí mai táng của cơ quan, tổ chức, hộ gia đình hoặc cá nhân đứng ra tổ chức mai táng cho đối tượng (theo Mẫu số 04 ban hành kèm theo Nghị định số 20/2021/NĐ-CP);"
+    }
+  ],
+  "signals": {
+    "raw_parse_warnings": [],
+    "missing_documents": false,
+    "documents_section_present": true,
+    "documents_declared_empty": false,
+    "documents_only_in_notes": false,
+    "missing_results": true
+  }
+}

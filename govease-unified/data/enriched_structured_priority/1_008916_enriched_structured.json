@@ -1,0 +1,101 @@
+{
+  "schema_version": "1.0",
+  "enricher_version": "0.2.0",
+  "source": {
+    "procedure_code": "1.008916",
+    "title": "Thay đổi tên gọi, Trưởng chi nhánh, địa chỉ trụ sở sang tỉnh, thành phố trực thuộc trung ương khác của chi nhánh tổ chức hòa giải thương mại nước ngoài tại Việt Nam; đăng ký hoạt động của chi nhánh tổ chức hoà giải thương mại nước ngoài tại Việt Nam khi thay đổi tên gọi, Trưởng chi nhánh",
+    "group_key": "suc_khoe_y_te",
+    "workflow_family": null,
+    "subflow": null
+  },
+  "experience": {
+    "entry_label": "Hỗ trợ y tế và bảo hiểm",
+    "overview_summary": "Thủ tục này thuộc nhóm y tế, thường cần đối chiếu thông tin người bệnh, đơn vị tiếp nhận hoặc quyền lợi chuyên ngành. Kết quả thường nhận được là Văn bản chấp thuận của Chủ tịch uỷ ban nhân dân cấp tỉnh về việc thay đổi Giấy phép thành lập, Giấy đăng ký hoạt động của chi nhánh tổ chức hoà giải thương mại nước ngoài tại Việt Nam đã được thay đổi theo Mẫu TP-HGTM-13 ban hành kèm theo Thông tư số 11/2025/TT-BTP ngày 25/6/2025 của Bộ trưởng Bộ trưởng Bộ Tư pháp sửa đổi, bổ sung, bãi bỏ một số điều của các Thông tư thuộc lĩnh vực quản lý nhà nước của Bộ Tư pháp. Thời gian xử lý tham khảo: 15 ngày làm việc.",
+    "next_step_summary": "Nên xác định rõ đối tượng tham gia, quyền lợi hoặc nhu cầu điều chỉnh hồ sơ y tế trước khi nộp. Có thể chọn kênh nộp phù hợp: Trực tiếp, Trực tuyến, Dịch vụ bưu chính. Hiện có khoảng 4 mục giấy tờ cần theo dõi trong checklist.",
+    "tone": "supportive_public_service"
+  },
+  "guidance": {
+    "highlight_documents": [
+      {
+        "bucket": "required",
+        "name": "Giấy đề nghị thành lập",
+        "conditions": [],
+        "attachment_path": null
+      },
+      {
+        "bucket": "required",
+        "name": "Bản sao kèm bản chính để đối chiếu hoặc bản sao điện tử hoặc bản sao điện tử từ sổ gốc hoặc bản sao điện tử có chứng thực từ bản chính hoặc bản sao có chứng thực Giấy phép thành lập Chi nhánh",
+        "conditions": [],
+        "attachment_path": null
+      },
+      {
+        "bucket": "required",
+        "name": "Thông báo chuyển địa điểm trụ sở cho Sở Tư pháp nơi Chi nhánh đặt trụ sở;",
+        "conditions": [],
+        "attachment_path": null
+      },
+      {
+        "bucket": "conditional",
+        "name": "Trường hợp thay đổi tên về tên gọi, Trưởng chi nhánh của tổ chức hoà giải thương mại nước ngoài tại Việt Nam thì nộpVăn bản đề nghị thay đổi tên gọi, Trưởng chi nhánh; Trường hợp thay đổi địa chỉ trụ sở sang tỉnh, thành phố trực thuộc trung ương khác thì nộp: Thông báo chuyển địa điểm trụ sở cho Sở Tư pháp nơi Chi nhánh đặt trụ sở; Giấy đề nghị thành lập; Bản sao kèm bản chính để đối chiếu hoặc bản sao điện tử hoặc bản sao điện tử từ sổ gốc hoặc bản sao điện tử có chứng thực từ bản chính hoặc bản sao có chứng thực Giấy phép thành lập Chi nhánh",
+        "conditions": [
+          "Trường hợp thay đổi tên về tên gọi, Trưởng chi nhánh của tổ chức hoà giải thương mại nước ngoài tại Việt Nam thì nộpVăn bản đề nghị thay đổi tên gọi, Trưởng chi nhánh; Trường hợp thay đổi địa chỉ trụ sở sang tỉnh, thành phố trực thuộc trung ương khác thì nộp: Thông báo chuyển địa điểm trụ sở cho Sở Tư pháp nơi Chi nhánh đặt trụ sở; Giấy đề nghị thành lập; Bản sao kèm bản chính để đối chiếu hoặc bản sao điện tử hoặc bản sao điện tử từ sổ gốc hoặc bản sao điện tử có chứng thực từ bản chính hoặc bản sao có chứng thực Giấy phép thành lập Chi nhánh"
+        ],
+        "attachment_path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/1_008916/M%E1%BA%ABu%20%20TP-HGTM-13.docx"
+      }
+    ],
+    "special_cases": [
+      "Có yếu tố nước ngoài"
+    ],
+    "common_errors": [
+      "Thiếu giấy tờ hợp pháp hóa hoặc giấy tờ nhân thân của phía nước ngoài."
+    ],
+    "validation_hints": [
+      "Nên xác định trước kênh nộp hồ sơ để biết có cần bản giấy, bản điện tử hay xuất trình trực tiếp.",
+      "Có mẫu biểu đính kèm, nên kiểm tra đúng biểu mẫu trước khi nộp.",
+      "Nên xác định đúng nhóm đối tượng, mã số bảo hiểm và quyền lợi áp dụng trước khi nộp."
+    ]
+  },
+  "intake": {
+    "candidate_input_fields": [
+      {
+        "field_id": "request_subject",
+        "label": "Đối tượng làm thủ tục",
+        "field_type": "text",
+        "required": true
+      },
+      {
+        "field_id": "insurance_or_medical_need",
+        "label": "Nhu cầu bảo hiểm hoặc y tế",
+        "field_type": "text",
+        "required": true
+      },
+      {
+        "field_id": "submission_channel_preference",
+        "label": "Kênh nộp dự kiến",
+        "field_type": "enum",
+        "required": false
+      },
+      {
+        "field_id": "has_insurance_number",
+        "label": "Đã có mã BHXH/BHYT",
+        "field_type": "boolean",
+        "required": false
+      }
+    ],
+    "suggested_clarifying_questions": [
+      "Bạn đang muốn đăng ký, điều chỉnh hay xác nhận quyền lợi y tế hoặc bảo hiểm nào?",
+      "Bạn đã có mã BHXH/BHYT hoặc thông tin đơn vị tiếp nhận liên quan chưa?"
+    ]
+  },
+  "ui_hints": {
+    "primary_channel": "online",
+    "result_label": "Văn bản chấp thuận của Chủ tịch uỷ ban nhân dân cấp tỉnh về việc thay đổi Giấy phép thành lập, Giấy đăng ký hoạt động của chi nhánh tổ chức hoà giải thương mại nước ngoài tại Việt Nam đã được thay đổi theo Mẫu TP-HGTM-13 ban hành kèm theo Thông tư số 11/2025/TT-BTP ngày 25/6/2025 của Bộ trưởng Bộ trưởng Bộ Tư pháp sửa đổi, bổ sung, bãi bỏ một số điều của các Thông tư thuộc lĩnh vực quản lý nhà nước của Bộ Tư pháp",
+    "time_badge": "15 ngày làm việc",
+    "document_count_badge": 4
+  },
+  "provenance": {
+    "generator": "workflow_domain_enricher",
+    "derivation_mode": "rule_based_semantic_enrichment",
+    "supported_group": true
+  }
+}

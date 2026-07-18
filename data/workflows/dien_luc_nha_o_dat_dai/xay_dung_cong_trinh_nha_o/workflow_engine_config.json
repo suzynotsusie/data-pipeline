@@ -1,0 +1,254 @@
+{
+  "schema_version": "1.0",
+  "domain": "dien_luc_nha_o_dat_dai",
+  "updated_at": "2026-07-18",
+  "source_files": [
+    "C:\\Users\\ku060\\Downloads\\VAIC source\\data-pipeline\\main\\full-data.csv",
+    "C:\\Users\\ku060\\Downloads\\VAIC source\\data-pipeline\\data\\workflows\\dien_luc_nha_o_dat_dai\\summary.csv",
+    "C:\\Users\\ku060\\Downloads\\VAIC source\\data-pipeline\\data\\workflows\\dien_luc_nha_o_dat_dai\\normalized.json",
+    "C:\\Users\\ku060\\Downloads\\VAIC source\\data-pipeline\\raw_data"
+  ],
+  "coverage": {
+    "expected_codes": [
+      "1.009122",
+      "1.012896",
+      "1.013225",
+      "1.013229",
+      "1.013232",
+      "1.014632",
+      "1.115150"
+    ],
+    "covered_codes": [
+      "1.009122",
+      "1.012896",
+      "1.013225",
+      "1.013229",
+      "1.013232",
+      "1.014632",
+      "1.115150"
+    ],
+    "missing_codes": []
+  },
+  "llm_contract": {
+    "role": "parse_user_answer_and_rephrase_question_only",
+    "required_output_schema": {
+      "intent": "dien_luc_nha_o_dat_dai",
+      "current_node": "string",
+      "slot_updates": {
+        "subdomain_key": "dang_ky_quyen_so_huu_quyen_su_dung | chuyen_nhuong_tang_cho_thua_ke | gop_von_the_chap | chuyen_muc_dich_su_dung | xay_dung_cong_trinh_nha_o | cung_cap_dien_nang | unknown",
+        "operation_key": "string",
+        "operation_group": "string"
+      },
+      "confidence": "0_to_1",
+      "needs_human_review": "boolean"
+    }
+  },
+  "entry_prompts": [
+    "Bạn cần làm việc về quyền sử dụng đất, sang tên, thế chấp, chuyển mục đích, xây dựng nhà ở hay điện sinh hoạt?",
+    "Bạn muốn đăng ký mới, chỉnh lý biến động, xin phép xây dựng, đăng ký nhà ở xã hội hay cấp điện mới?"
+  ],
+  "slots": [
+    {
+      "name": "subdomain_key",
+      "required": true,
+      "description": "Nhánh chính của nhóm Điện lực, nhà ở, đất đai."
+    },
+    {
+      "name": "operation_key",
+      "required": true,
+      "description": "Thao tác cụ thể ánh xạ trực tiếp tới thủ tục cuối cùng."
+    },
+    {
+      "name": "operation_group",
+      "required": false,
+      "description": "Nhóm thao tác để gom các thủ tục gần nhau cho UI và parser."
+    }
+  ],
+  "subdomain_catalog": [
+    {
+      "subdomain_key": "xay_dung_cong_trinh_nha_o",
+      "subdomain_label": "Xây dựng công trình, nhà ở",
+      "event_id": 313,
+      "summary": "Nhóm thủ tục cấp phép xây dựng, sửa chữa, di dời nhà ở riêng lẻ và tiếp cận nhà ở xã hội, thuê mua nhà ở xã hội cho hộ gia đình, cá nhân."
+    }
+  ],
+  "decision_tree": {
+    "start_node": "housing_land_electricity_subdomain",
+    "nodes": [
+      {
+        "id": "housing_land_electricity_subdomain",
+        "type": "question",
+        "slot": "subdomain_key",
+        "question": "Bạn đang cần làm việc về sổ đất, sang tên, thế chấp, chuyển mục đích sử dụng đất, xây dựng nhà ở hay cấp điện?",
+        "options": [
+          "xay_dung_cong_trinh_nha_o"
+        ],
+        "prefilled_value": "xay_dung_cong_trinh_nha_o"
+      },
+      {
+        "id": "housing_land_electricity_operation",
+        "type": "question",
+        "slot": "operation_key",
+        "question": "Trong nhánh đã chọn, bạn đang cần thao tác cụ thể nào?",
+        "options_by_subdomain": {
+          "xay_dung_cong_trinh_nha_o": [
+            {
+              "operation_key": "cap_giay_phep_xay_dung_co_thoi_han_doi_voi_cong_trinh_nha_o_rieng_le_cong_trinh_cap_iii_cap_iv",
+              "operation_group": "cap_phep_xay_dung_co_thoi_han",
+              "procedure_code": "1.009122",
+              "procedure_title": "Cấp giấy phép xây dựng có thời hạn đối với công trình, nhà ở riêng lẻ (công trình cấp III, cấp IV)"
+            },
+            {
+              "operation_key": "cho_thue_cho_thue_mua_nha_o_xa_hoi_do_nha_nuoc_dau_tu_xay_dung_bang_von_dau_tu_cong",
+              "operation_group": "tiep_can_nha_o_xa_hoi",
+              "procedure_code": "1.012896",
+              "procedure_title": "Cho thuê, cho thuê mua nhà ở xã hội do Nhà nước đầu tư xây dựng bằng vốn đầu tư công"
+            },
+            {
+              "operation_key": "cap_giay_phep_xay_dung_moi_doi_voi_cong_trinh_cap_iii_cap_iv_cong_trinh_khong_theo_tuyen_theo_tuyen_trong_do_thi_tin_nguong_ton_giao_tuong_dai_tranh_hoanh_trang_theo_giai_doan_cho_cong_trinh_khong_theo_tuyen_theo_giai_doan_cho_cong_trinh_theo_tuyen_trong_do_thi_du_an_va_nha_o_rieng_le",
+              "operation_group": "cap_phep_xay_dung_moi",
+              "procedure_code": "1.013225",
+              "procedure_title": "Cấp giấy phép xây dựng mới đối với công trình cấp III, cấp IV (Công trình không theo tuyến/Theo tuyến trong đô thị/Tín ngưỡng, tôn giáo/Tượng đài, tranh hoành tráng/Theo giai đoạn cho công trình không theo tuyến/Theo giai đoạn cho công trình theo tuyến trong đô thị/Dự án) và nhà ở riêng lẻ"
+            },
+            {
+              "operation_key": "cap_giay_phep_xay_dung_sua_chua_cai_tao_doi_voi_cong_trinh_cap_iii_cap_iv_cong_trinh_khong_theo_tuyen_theo_tuyen_trong_do_thi_tin_nguong_ton_giao_tuong_dai_tranh_hoanh_trang_theo_giai_doan_cho_cong_trinh_khong_theo_tuyen_theo_giai_doan_cho_cong_trinh_theo_tuyen_trong_do_thi_du_an_va_nha_o_rieng_le",
+              "operation_group": "cap_phep_sua_chua_cai_tao",
+              "procedure_code": "1.013229",
+              "procedure_title": "Cấp giấy phép xây dựng sửa chữa, cải tạo đối với công trình cấp III, cấp IV (công trình Không theo tuyến/Theo tuyến trong đô thị/Tín ngưỡng, tôn giáo/Tượng đài, tranh hoành tráng/Theo giai đoạn cho công trình không theo tuyến/Theo giai đoạn cho công trình theo tuyến trong đô thị/Dự án) và nhà ở riêng lẻ:"
+            },
+            {
+              "operation_key": "cap_giay_phep_di_doi_doi_voi_cong_trinh_cap_iii_cap_iv_cong_trinh_khong_theo_tuyen_theo_tuyen_trong_do_thi_tin_nguong_ton_giao_tuong_dai_tranh_hoanh_trang_theo_giai_doan_cho_cong_trinh_khong_theo_tuyen_theo_giai_doan_cho_cong_trinh_theo_tuyen_trong_do_thi_du_an_va_nha_o_rieng_le",
+              "operation_group": "cap_phep_di_doi_cong_trinh_nha_o",
+              "procedure_code": "1.013232",
+              "procedure_title": "Cấp giấy phép di dời đối với công trình cấp III, cấp IV (Công trình không theo tuyến/Theo tuyến trong đô thị/Tín ngưỡng, tôn giáo/Tượng đài, tranh hoành tráng/Theo giai đoạn cho công trình không theo tuyến/Theo giai đoạn cho công trình theo tuyến trong đô thị/Dự án) và nhà ở riêng lẻ"
+            },
+            {
+              "operation_key": "dang_ky_mua_thue_mua_thue_nha_o_xa_hoi_vay_von_de_ho_gia_dinh_ca_nhan_tu_xay_dung_hoac_cai_tao_sua_chua_nha_o",
+              "operation_group": "tiep_can_nha_o_xa_hoi",
+              "procedure_code": "1.014632",
+              "procedure_title": "Đăng ký mua, thuê mua, thuê nhà ở xã hội, vay vốn để hộ gia đình, cá nhân tự xây dựng hoặc cải tạo, sửa chữa nhà ở"
+            },
+            {
+              "operation_key": "thu_tuc_ban_cho_thue_mua_cho_thue_nha_o_xa_hoi_duoc_dau_tu_xay_dung_theo_du_an_va_khong_su_dung_von_dau_tu_cong_nguon_tai_chinh_cong_doan",
+              "operation_group": "tiep_can_nha_o_xa_hoi",
+              "procedure_code": "1.115150",
+              "procedure_title": "Thủ tục bán, cho thuê mua, cho thuê nhà ở xã hội được đầu tư xây dựng theo dự án và không sử dụng vốn đầu tư công, nguồn tài chính công đoàn"
+            }
+          ]
+        },
+        "options": [
+          "cap_giay_phep_xay_dung_co_thoi_han_doi_voi_cong_trinh_nha_o_rieng_le_cong_trinh_cap_iii_cap_iv",
+          "cho_thue_cho_thue_mua_nha_o_xa_hoi_do_nha_nuoc_dau_tu_xay_dung_bang_von_dau_tu_cong",
+          "cap_giay_phep_xay_dung_moi_doi_voi_cong_trinh_cap_iii_cap_iv_cong_trinh_khong_theo_tuyen_theo_tuyen_trong_do_thi_tin_nguong_ton_giao_tuong_dai_tranh_hoanh_trang_theo_giai_doan_cho_cong_trinh_khong_theo_tuyen_theo_giai_doan_cho_cong_trinh_theo_tuyen_trong_do_thi_du_an_va_nha_o_rieng_le",
+          "cap_giay_phep_xay_dung_sua_chua_cai_tao_doi_voi_cong_trinh_cap_iii_cap_iv_cong_trinh_khong_theo_tuyen_theo_tuyen_trong_do_thi_tin_nguong_ton_giao_tuong_dai_tranh_hoanh_trang_theo_giai_doan_cho_cong_trinh_khong_theo_tuyen_theo_giai_doan_cho_cong_trinh_theo_tuyen_trong_do_thi_du_an_va_nha_o_rieng_le",
+          "cap_giay_phep_di_doi_doi_voi_cong_trinh_cap_iii_cap_iv_cong_trinh_khong_theo_tuyen_theo_tuyen_trong_do_thi_tin_nguong_ton_giao_tuong_dai_tranh_hoanh_trang_theo_giai_doan_cho_cong_trinh_khong_theo_tuyen_theo_giai_doan_cho_cong_trinh_theo_tuyen_trong_do_thi_du_an_va_nha_o_rieng_le",
+          "dang_ky_mua_thue_mua_thue_nha_o_xa_hoi_vay_von_de_ho_gia_dinh_ca_nhan_tu_xay_dung_hoac_cai_tao_sua_chua_nha_o",
+          "thu_tuc_ban_cho_thue_mua_cho_thue_nha_o_xa_hoi_duoc_dau_tu_xay_dung_theo_du_an_va_khong_su_dung_von_dau_tu_cong_nguon_tai_chinh_cong_doan"
+        ]
+      }
+    ],
+    "routes": [
+      {
+        "route_id": "xay_dung_cong_trinh_nha_o-1_009122",
+        "conditions": {
+          "subdomain_key": "xay_dung_cong_trinh_nha_o",
+          "operation_key": "cap_giay_phep_xay_dung_co_thoi_han_doi_voi_cong_trinh_nha_o_rieng_le_cong_trinh_cap_iii_cap_iv"
+        },
+        "procedure_code": "1.009122",
+        "procedure_name": "Cấp giấy phép xây dựng có thời hạn đối với công trình, nhà ở riêng lẻ (công trình cấp III, cấp IV)",
+        "why_this_route": "Route trực tiếp cho nhu cầu 'Cấp giấy phép xây dựng có thời hạn đối với công trình, nhà ở riêng lẻ (công trình cấp III, cấp IV)' trong nhánh 'Xây dựng công trình, nhà ở'."
+      },
+      {
+        "route_id": "xay_dung_cong_trinh_nha_o-1_012896",
+        "conditions": {
+          "subdomain_key": "xay_dung_cong_trinh_nha_o",
+          "operation_key": "cho_thue_cho_thue_mua_nha_o_xa_hoi_do_nha_nuoc_dau_tu_xay_dung_bang_von_dau_tu_cong"
+        },
+        "procedure_code": "1.012896",
+        "procedure_name": "Cho thuê, cho thuê mua nhà ở xã hội do Nhà nước đầu tư xây dựng bằng vốn đầu tư công",
+        "why_this_route": "Route trực tiếp cho nhu cầu 'Cho thuê, cho thuê mua nhà ở xã hội do Nhà nước đầu tư xây dựng bằng vốn đầu tư công' trong nhánh 'Xây dựng công trình, nhà ở'."
+      },
+      {
+        "route_id": "xay_dung_cong_trinh_nha_o-1_013225",
+        "conditions": {
+          "subdomain_key": "xay_dung_cong_trinh_nha_o",
+          "operation_key": "cap_giay_phep_xay_dung_moi_doi_voi_cong_trinh_cap_iii_cap_iv_cong_trinh_khong_theo_tuyen_theo_tuyen_trong_do_thi_tin_nguong_ton_giao_tuong_dai_tranh_hoanh_trang_theo_giai_doan_cho_cong_trinh_khong_theo_tuyen_theo_giai_doan_cho_cong_trinh_theo_tuyen_trong_do_thi_du_an_va_nha_o_rieng_le"
+        },
+        "procedure_code": "1.013225",
+        "procedure_name": "Cấp giấy phép xây dựng mới đối với công trình cấp III, cấp IV (Công trình không theo tuyến/Theo tuyến trong đô thị/Tín ngưỡng, tôn giáo/Tượng đài, tranh hoành tráng/Theo giai đoạn cho công trình không theo tuyến/Theo giai đoạn cho công trình theo tuyến trong đô thị/Dự án) và nhà ở riêng lẻ",
+        "why_this_route": "Route trực tiếp cho nhu cầu 'Cấp giấy phép xây dựng mới đối với công trình cấp III, cấp IV (Công trình không theo tuyến/Theo tuyến trong đô thị/Tín ngưỡng, tôn giáo/Tượng đài, tranh hoành tráng/Theo giai đoạn cho công trình không theo tuyến/Theo giai đoạn cho công trình theo tuyến trong đô thị/Dự án) và nhà ở riêng lẻ' trong nhánh 'Xây dựng công trình, nhà ở'."
+      },
+      {
+        "route_id": "xay_dung_cong_trinh_nha_o-1_013229",
+        "conditions": {
+          "subdomain_key": "xay_dung_cong_trinh_nha_o",
+          "operation_key": "cap_giay_phep_xay_dung_sua_chua_cai_tao_doi_voi_cong_trinh_cap_iii_cap_iv_cong_trinh_khong_theo_tuyen_theo_tuyen_trong_do_thi_tin_nguong_ton_giao_tuong_dai_tranh_hoanh_trang_theo_giai_doan_cho_cong_trinh_khong_theo_tuyen_theo_giai_doan_cho_cong_trinh_theo_tuyen_trong_do_thi_du_an_va_nha_o_rieng_le"
+        },
+        "procedure_code": "1.013229",
+        "procedure_name": "Cấp giấy phép xây dựng sửa chữa, cải tạo đối với công trình cấp III, cấp IV (công trình Không theo tuyến/Theo tuyến trong đô thị/Tín ngưỡng, tôn giáo/Tượng đài, tranh hoành tráng/Theo giai đoạn cho công trình không theo tuyến/Theo giai đoạn cho công trình theo tuyến trong đô thị/Dự án) và nhà ở riêng lẻ:",
+        "why_this_route": "Route trực tiếp cho nhu cầu 'Cấp giấy phép xây dựng sửa chữa, cải tạo đối với công trình cấp III, cấp IV (công trình Không theo tuyến/Theo tuyến trong đô thị/Tín ngưỡng, tôn giáo/Tượng đài, tranh hoành tráng/Theo giai đoạn cho công trình không theo tuyến/Theo giai đoạn cho công trình theo tuyến trong đô thị/Dự án) và nhà ở riêng lẻ:' trong nhánh 'Xây dựng công trình, nhà ở'."
+      },
+      {
+        "route_id": "xay_dung_cong_trinh_nha_o-1_013232",
+        "conditions": {
+          "subdomain_key": "xay_dung_cong_trinh_nha_o",
+          "operation_key": "cap_giay_phep_di_doi_doi_voi_cong_trinh_cap_iii_cap_iv_cong_trinh_khong_theo_tuyen_theo_tuyen_trong_do_thi_tin_nguong_ton_giao_tuong_dai_tranh_hoanh_trang_theo_giai_doan_cho_cong_trinh_khong_theo_tuyen_theo_giai_doan_cho_cong_trinh_theo_tuyen_trong_do_thi_du_an_va_nha_o_rieng_le"
+        },
+        "procedure_code": "1.013232",
+        "procedure_name": "Cấp giấy phép di dời đối với công trình cấp III, cấp IV (Công trình không theo tuyến/Theo tuyến trong đô thị/Tín ngưỡng, tôn giáo/Tượng đài, tranh hoành tráng/Theo giai đoạn cho công trình không theo tuyến/Theo giai đoạn cho công trình theo tuyến trong đô thị/Dự án) và nhà ở riêng lẻ",
+        "why_this_route": "Route trực tiếp cho nhu cầu 'Cấp giấy phép di dời đối với công trình cấp III, cấp IV (Công trình không theo tuyến/Theo tuyến trong đô thị/Tín ngưỡng, tôn giáo/Tượng đài, tranh hoành tráng/Theo giai đoạn cho công trình không theo tuyến/Theo giai đoạn cho công trình theo tuyến trong đô thị/Dự án) và nhà ở riêng lẻ' trong nhánh 'Xây dựng công trình, nhà ở'."
+      },
+      {
+        "route_id": "xay_dung_cong_trinh_nha_o-1_014632",
+        "conditions": {
+          "subdomain_key": "xay_dung_cong_trinh_nha_o",
+          "operation_key": "dang_ky_mua_thue_mua_thue_nha_o_xa_hoi_vay_von_de_ho_gia_dinh_ca_nhan_tu_xay_dung_hoac_cai_tao_sua_chua_nha_o"
+        },
+        "procedure_code": "1.014632",
+        "procedure_name": "Đăng ký mua, thuê mua, thuê nhà ở xã hội, vay vốn để hộ gia đình, cá nhân tự xây dựng hoặc cải tạo, sửa chữa nhà ở",
+        "why_this_route": "Route trực tiếp cho nhu cầu 'Đăng ký mua, thuê mua, thuê nhà ở xã hội, vay vốn để hộ gia đình, cá nhân tự xây dựng hoặc cải tạo, sửa chữa nhà ở' trong nhánh 'Xây dựng công trình, nhà ở'."
+      },
+      {
+        "route_id": "xay_dung_cong_trinh_nha_o-1_115150",
+        "conditions": {
+          "subdomain_key": "xay_dung_cong_trinh_nha_o",
+          "operation_key": "thu_tuc_ban_cho_thue_mua_cho_thue_nha_o_xa_hoi_duoc_dau_tu_xay_dung_theo_du_an_va_khong_su_dung_von_dau_tu_cong_nguon_tai_chinh_cong_doan"
+        },
+        "procedure_code": "1.115150",
+        "procedure_name": "Thủ tục bán, cho thuê mua, cho thuê nhà ở xã hội được đầu tư xây dựng theo dự án và không sử dụng vốn đầu tư công, nguồn tài chính công đoàn",
+        "why_this_route": "Route trực tiếp cho nhu cầu 'Thủ tục bán, cho thuê mua, cho thuê nhà ở xã hội được đầu tư xây dựng theo dự án và không sử dụng vốn đầu tư công, nguồn tài chính công đoàn' trong nhánh 'Xây dựng công trình, nhà ở'."
+      }
+    ]
+  },
+  "pre_submission_checks": [
+    {
+      "field_group": "land_registration",
+      "checks": [
+        "Nhóm đất đai phải làm rõ loại biến động: đăng ký lần đầu, cấp đổi, cấp lại, đính chính, tách thửa hay sang tên do chuyển quyền.",
+        "Thông tin thửa đất, số Giấy chứng nhận, chủ sử dụng đất và giấy tờ chứng minh nguồn gốc đất phải thống nhất giữa tờ khai và hồ sơ đính kèm."
+      ]
+    },
+    {
+      "field_group": "secured_transactions",
+      "checks": [
+        "Nhóm góp vốn, thế chấp phải xác định rõ là đăng ký mới, thay đổi, xóa hay thông báo xử lý tài sản bảo đảm.",
+        "Nếu là thế chấp quyền tài sản phát sinh từ hợp đồng mua bán nhà ở, phải có thông tin hợp đồng và tài sản gắn liền với đất đủ để định danh tài sản bảo đảm."
+      ]
+    },
+    {
+      "field_group": "construction_and_housing",
+      "checks": [
+        "Nhóm xây dựng, nhà ở phải phân biệt rõ xây mới, sửa chữa, cải tạo, di dời hay tiếp cận nhà ở xã hội.",
+        "Các trường hợp xin phép xây dựng nhà ở riêng lẻ cần kiểm tra địa chỉ xây dựng, quyền sử dụng đất và bản vẽ thiết kế trước khi nhận hồ sơ."
+      ]
+    },
+    {
+      "field_group": "electricity_services",
+      "checks": [
+        "Nhóm điện năng phải phân biệt giữa cấp điện mới và thông báo phát triển điện mặt trời mái nhà có đấu nối.",
+        "Nếu là cấp điện mới, cần có địa chỉ sử dụng điện, nhu cầu công suất và giấy tờ định danh người yêu cầu."
+      ]
+    }
+  ],
+  "subdomain_key": "xay_dung_cong_trinh_nha_o"
+}

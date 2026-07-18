@@ -1,0 +1,227 @@
+{
+  "schema_version": "1.0",
+  "normalizer_version": "0.2.0",
+  "source": {
+    "procedure_code": "1.001798",
+    "title": "Ký hợp đồng khám, chữa bệnh BHYT",
+    "raw_structured_parser_version": "0.1.0",
+    "field": "Thực hiện chính sách BHYT"
+  },
+  "procedure": {
+    "level": "Cấp xã, Cấp tỉnh, Cấp bộ/ngành",
+    "procedure_type": "TTHC được luật giao quy định chi tiết",
+    "target_users": [
+      "Tổ chức (không bao gồm doanh nghiệp",
+      "HTX)",
+      "Doanh nghiệp"
+    ],
+    "authorities": [
+      "Bảo hiểm xã hội cấp huyện, Bảo hiểm xã hội tỉnh"
+    ],
+    "receiving_places": []
+  },
+  "submission": {
+    "channels": [
+      "in_person",
+      "online",
+      "postal"
+    ],
+    "methods": [
+      {
+        "method_id": "method_1",
+        "channel": "online",
+        "processing_time_text": "30 ngày",
+        "fee_text": null,
+        "description": null,
+        "is_online": true,
+        "is_postal": false,
+        "is_in_person": false
+      },
+      {
+        "method_id": "method_2",
+        "channel": "postal",
+        "processing_time_text": "30 ngày",
+        "fee_text": null,
+        "description": null,
+        "is_online": false,
+        "is_postal": true,
+        "is_in_person": false
+      },
+      {
+        "method_id": "method_3",
+        "channel": "in_person",
+        "processing_time_text": "30 ngày",
+        "fee_text": null,
+        "description": null,
+        "is_online": false,
+        "is_postal": false,
+        "is_in_person": true
+      }
+    ],
+    "timing_summary": {
+      "unique_processing_times": [
+        "30 ngày"
+      ],
+      "method_count": 3
+    }
+  },
+  "documents": {
+    "required": [
+      {
+        "document_id": "c_ng_v_n_ngh_k_h_p_ng_kcb_bhyt_c_a_c_s",
+        "name": "Công văn đề nghị ký hợp đồng KCB BHYT của cơ sở",
+        "group_name": "1. Đối với cơ sở KCB lần đầu ký hợp đồng hoặc cơ sở KCB sau khi đã chấm dứt hợp đồng",
+        "group_type": "required",
+        "original_count": "1",
+        "copy_count": "1",
+        "conditions": [],
+        "attachment_label": null,
+        "attachment_path": null
+      },
+      {
+        "document_id": "b_n_sao_gi_y_ph_p_ho_t_ng_kh_m_b_nh_ch_a_b_nh_do_c_quan_nh_n_c_c_th_m_quy_n_c_p_cho_c_s_kh_m_b_nh_ch_a_b_nh",
+        "name": "Bản sao giấy phép hoạt động khám bệnh, chữa bệnh do cơ quan nhà nước có thẩm quyền cấp cho cơ sở khám bệnh, chữa bệnh;",
+        "group_name": "1. Đối với cơ sở KCB lần đầu ký hợp đồng hoặc cơ sở KCB sau khi đã chấm dứt hợp đồng",
+        "group_type": "required",
+        "original_count": "0",
+        "copy_count": "1",
+        "conditions": [],
+        "attachment_label": null,
+        "attachment_path": null
+      },
+      {
+        "document_id": "danh_s_ch_nh_n_l_c_ng_k_h_nh_ngh_t_i_c_s_kh_m_b_nh_ch_a_b_nh_c_y_th_ng_tin_theo_quy_nh_t_i_m_u_s_01_ph_l_c_ii_ban_h_nh_k_m_theo_ngh_nh_s_96_2023_n_cp_ng_y_30_12_2023_c_a_ch_nh_ph",
+        "name": "Danh sách nhân lực đăng ký hành nghề tại cơ sở khám bệnh, chữa bệnh có đầy đủ thông tin theo quy định tại Mẫu số 01 Phụ lục II ban hành kèm theo Nghị định số 96/2023/NĐ-CP ngày 30/12/2023 của Chính phủ.",
+        "group_name": "1. Đối với cơ sở KCB lần đầu ký hợp đồng hoặc cơ sở KCB sau khi đã chấm dứt hợp đồng",
+        "group_type": "required",
+        "original_count": "1",
+        "copy_count": "1",
+        "conditions": [],
+        "attachment_label": null,
+        "attachment_path": null
+      },
+      {
+        "document_id": "danh_m_c_thu_c_h_a_ch_t_v_t_t_y_t_d_ch_v_k_thu_t_y_t_c_c_p_c_th_m_quy_n_ph_duy_t_b_ng_v_n_b_n_ho_c_b_n_i_n_t",
+        "name": "Danh mục thuốc, hóa chất, vật tư y tế, dịch vụ kỹ thuật y tế được cấp có thẩm quyền phê duyệt (bằng văn bản hoặc bản điện tử);",
+        "group_name": "1. Đối với cơ sở KCB lần đầu ký hợp đồng hoặc cơ sở KCB sau khi đã chấm dứt hợp đồng",
+        "group_type": "required",
+        "original_count": "1",
+        "copy_count": "1",
+        "conditions": [],
+        "attachment_label": null,
+        "attachment_path": null
+      }
+    ],
+    "conditional": [
+      {
+        "document_id": "b_n_ch_p_c_ng_d_u_c_a_c_s_i_v_i_quy_t_nh_ph_n_h_ng_b_nh_vi_n_c_a_c_p_c_th_m_quy_n_n_u_c_ho_c_quy_t_nh_v_tuy_n_chuy_n_m_n_k_thu_t_c_a_c_p_c_th_m_quy_n_i_v_i_c_s_kh_m_b_nh_ch_a_b_nh_ngo_i_c_ng_l_p",
+        "name": "Bản chụp có đóng dấu của cơ sở đối với quyết định phân hạng bệnh viện của cấp có thẩm quyền (nếu có) hoặc quyết định về tuyến chuyên môn kỹ thuật của cấp có thẩm quyền đối với cơ sở khám bệnh, chữa bệnh ngoài công lập;",
+        "group_name": "1. Đối với cơ sở KCB lần đầu ký hợp đồng hoặc cơ sở KCB sau khi đã chấm dứt hợp đồng",
+        "group_type": "required",
+        "original_count": "0",
+        "copy_count": "1",
+        "conditions": [
+          "Bản chụp có đóng dấu của cơ sở đối với quyết định phân hạng bệnh viện của cấp có thẩm quyền (nếu có) hoặc quyết định về tuyến chuyên môn kỹ thuật của cấp có thẩm quyền đối với cơ sở khám bệnh, chữa bệnh ngoài công lập;"
+        ],
+        "attachment_label": null,
+        "attachment_path": null
+      },
+      {
+        "document_id": "b_n_ch_p_c_ng_d_u_c_a_c_s_i_v_i_quy_t_nh_b_sung_ch_c_n_ng_nhi_m_v_ph_m_vi_chuy_n_m_n_ph_n_h_ng_b_nh_vi_n_c_a_c_p_c_th_m_quy_n_n_u_c_ho_c_quy_t_nh_v_tuy_n_chuy_n_m_n_k_thu_t_c_a_c_p_c_th_m_quy_n_i_v_i_c_s_kh_m_b_nh_ch_a_b_nh_ngo_i_c_ng_l_p",
+        "name": "Bản chụp có đóng dấu của cơ sở đối với quyết định bổ sung chức năng, nhiệm vụ, phạm vi chuyên môn, phân hạng bệnh viện của cấp có thẩm quyền (nếu có) hoặc quyết định về tuyến chuyên môn kỹ thuật của cấp có thẩm quyền đối với cơ sở khám bệnh, chữa bệnh ngoài công lập.",
+        "group_name": "2. Đối với cơ sở KCB ký hợp đồng KCB BHYT hàng năm",
+        "group_type": "required",
+        "original_count": "0",
+        "copy_count": "1",
+        "conditions": [
+          "Bản chụp có đóng dấu của cơ sở đối với quyết định bổ sung chức năng, nhiệm vụ, phạm vi chuyên môn, phân hạng bệnh viện của cấp có thẩm quyền (nếu có) hoặc quyết định về tuyến chuyên môn kỹ thuật của cấp có thẩm quyền đối với cơ sở khám bệnh, chữa bệnh ngoài công lập."
+        ],
+        "attachment_label": null,
+        "attachment_path": null
+      }
+    ],
+    "presented": [],
+    "notes": [],
+    "forms": [],
+    "empty_groups": [],
+    "document_count": 6
+  },
+  "process": {
+    "steps": [
+      {
+        "step_id": "step_1",
+        "title": null,
+        "content": "1. **Bước 1. Lập, nộp hồ sơ** Cơ sở KCB lập hồ sơ ký hợp đồng theo quy định tại mục Thành phần hồ sơ và nộp hồ sơ cho cơ quan BHXH. 2. **Bước 2.** Cơ quan BHXH tiếp nhận hồ sơ, thẩm định theo quy định 3. **Bước 3. Ký hợp đồng**",
+        "actor": "authority",
+        "channel_hint": null,
+        "time_hint": null
+      },
+      {
+        "step_id": "step_2",
+        "title": "a)",
+        "content": "a) Trường hợp cơ sở KCB đủ điều kiện thì cơ quan BHXH và cơ sở KCB ký hợp đồng KCB BHYT theo Mẫu số 7 Phụ lục ban hành kèm theo Nghị định 75/2023/NĐ-CP.",
+        "actor": "authority",
+        "channel_hint": null,
+        "time_hint": null
+      },
+      {
+        "step_id": "step_3",
+        "title": "b)",
+        "content": "b) Trường hợp cơ sở KCB không đủ điều kiện, cơ quan BHXH có văn bản trả lời nêu rõ lý do.",
+        "actor": "authority",
+        "channel_hint": null,
+        "time_hint": null
+      }
+    ],
+    "step_count": 3,
+    "notes": []
+  },
+  "eligibility": {
+    "conditions": [],
+    "has_conditions": false
+  },
+  "results": {
+    "items": [
+      {
+        "name": "Hợp đồng KCB BHYT",
+        "result_code": "KQ.G24.000046",
+        "raw_text": "Hợp đồng KCB BHYT"
+      }
+    ],
+    "primary_result": {
+      "name": "Hợp đồng KCB BHYT",
+      "result_code": "KQ.G24.000046",
+      "raw_text": "Hợp đồng KCB BHYT"
+    }
+  },
+  "legal_basis": {
+    "items": [
+      {
+        "title": "Luật sửa đổi, bổ sung một số điều Luật bảo hiểm y tế",
+        "code": "46/2014/QH13"
+      },
+      {
+        "title": "Quy định chi tiết và hướng dẫn biện pháp thi hành một số điều của Luật bảo hiểm y tế",
+        "code": "146/2018/NĐ-CP"
+      },
+      {
+        "title": "Luật 25/2008/QH12 - Bảo hiểm y tế",
+        "code": "25/2008/QH12"
+      },
+      {
+        "title": "Thông tư 09/2019/TT-BYT",
+        "code": "09/2019/TT-BYT"
+      }
+    ],
+    "count": 4
+  },
+  "attachments": [],
+  "signals": {
+    "raw_parse_warnings": [],
+    "missing_documents": false,
+    "documents_section_present": true,
+    "documents_declared_empty": false,
+    "documents_only_in_notes": false,
+    "missing_results": false
+  }
+}

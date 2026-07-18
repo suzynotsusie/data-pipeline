@@ -1,0 +1,280 @@
+{
+  "schema_version": "1.0",
+  "normalizer_version": "0.2.0",
+  "source": {
+    "procedure_code": "1.014100",
+    "title": "Cấp lại Chứng chỉ hành  nghề dược theo hình thức xét hồ sơ (trường hợp bị hư hỏng hoặc bị mất)",
+    "raw_structured_parser_version": "0.1.0",
+    "field": "Dược phẩm"
+  },
+  "procedure": {
+    "level": "Cấp tỉnh",
+    "procedure_type": "TTHC được luật giao quy định chi tiết",
+    "target_users": [
+      "Công dân Việt Nam"
+    ],
+    "authorities": [],
+    "receiving_places": []
+  },
+  "submission": {
+    "channels": [
+      "in_person",
+      "online",
+      "postal"
+    ],
+    "methods": [
+      {
+        "method_id": "method_1",
+        "channel": "online",
+        "processing_time_text": "10 ngày",
+        "fee_text": null,
+        "description": null,
+        "is_online": true,
+        "is_postal": false,
+        "is_in_person": false
+      },
+      {
+        "method_id": "method_2",
+        "channel": "postal",
+        "processing_time_text": "10 ngày",
+        "fee_text": null,
+        "description": null,
+        "is_online": false,
+        "is_postal": true,
+        "is_in_person": false
+      },
+      {
+        "method_id": "method_3",
+        "channel": "in_person",
+        "processing_time_text": "10 ngày",
+        "fee_text": null,
+        "description": null,
+        "is_online": false,
+        "is_postal": false,
+        "is_in_person": true
+      }
+    ],
+    "timing_summary": {
+      "unique_processing_times": [
+        "10 ngày"
+      ],
+      "method_count": 3
+    }
+  },
+  "documents": {
+    "required": [
+      {
+        "document_id": "n_ngh_c_p_l_i_ch_ng_ch_h_nh_ngh_d_c_c_nh_ch_n_dung_c_a_ng_i_ngh_c_p_ch_ng_ch_h_nh_ngh_d_c_ch_p_trong_th_i_gian_kh_ng_qu_06_th_ng",
+        "name": "Đơn đề nghị cấp lại Chứng chỉ hành nghề dược, có ảnh chân dung của người đề nghị cấp Chứng chỉ hành nghề dược chụp trong thời gian không quá 06 tháng;",
+        "group_name": "default",
+        "group_type": "unknown",
+        "original_count": "1",
+        "copy_count": "0",
+        "conditions": [],
+        "attachment_label": "Mus04.docx",
+        "attachment_path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/1_014100/Mus04.docx"
+      }
+    ],
+    "conditional": [
+      {
+        "document_id": "ch_ng_ch_h_nh_ngh_d_c_c_c_p_tr_tr_ng_h_p_ch_ng_ch_h_nh_ngh_d_c_b_m_t",
+        "name": "Chứng chỉ hành nghề dược đã được cấp trừ trường hợp Chứng chỉ hành nghề dược bị mất",
+        "group_name": "default",
+        "group_type": "unknown",
+        "original_count": "1",
+        "copy_count": "0",
+        "conditions": [
+          "Chứng chỉ hành nghề dược đã được cấp trừ trường hợp Chứng chỉ hành nghề dược bị mất"
+        ],
+        "attachment_label": null,
+        "attachment_path": null
+      }
+    ],
+    "presented": [],
+    "notes": [],
+    "forms": [
+      {
+        "name": "Đơn đề nghị cấp lại Chứng chỉ hành nghề dược, có ảnh chân dung của người đề nghị cấp Chứng chỉ hành nghề dược chụp trong thời gian không quá 06 tháng;",
+        "attachment_label": "Mus04.docx",
+        "attachment_path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/1_014100/Mus04.docx"
+      }
+    ],
+    "empty_groups": [],
+    "document_count": 2
+  },
+  "process": {
+    "steps": [
+      {
+        "step_id": "step_1",
+        "title": null,
+        "content": "1.",
+        "actor": "user",
+        "channel_hint": null,
+        "time_hint": null
+      },
+      {
+        "step_id": "step_2",
+        "title": "Bước 1:",
+        "content": "Bước 1: Người đề nghị cấp Chứng chỉ hành nghề dược gửi hồ sơ về Sở Y tế tỉnh, thành phố trực thuộc trung ương.",
+        "actor": "user",
+        "channel_hint": null,
+        "time_hint": null
+      },
+      {
+        "step_id": "step_3",
+        "title": "Bước 2:",
+        "content": "Bước 2: Sau khi nhận hồ sơ đầy đủ, Sở Y tế trả cho người đề nghị cấp Chứng chỉ hành nghề dược Phiếu tiếp nhận hồ sơ theo Mẫu số 01 Phụ lục I của Nghị định số 163/2025/NĐ-CP.",
+        "actor": "user",
+        "channel_hint": null,
+        "time_hint": null
+      },
+      {
+        "step_id": "step_4",
+        "title": "Bước 3:",
+        "content": "Bước 3:",
+        "actor": "user",
+        "channel_hint": null,
+        "time_hint": null
+      },
+      {
+        "step_id": "step_5",
+        "title": "a)",
+        "content": "a) Trường hợp không có yêu cầu sửa đổi, bổ sung hồ sơ, Sở Y tế cấp lại và trả cho người đề nghị 01 bản Chứng chỉ hành nghề dược trong thời hạn 10 ngày kể từ ngày ghi trên Phiếu tiếp nhận hồ sơ.",
+        "actor": "user",
+        "channel_hint": null,
+        "time_hint": "10 ngày"
+      },
+      {
+        "step_id": "step_6",
+        "title": "b)",
+        "content": "b) Trường hợp có yêu cầu sửa đổi, bổ sung hồ sơ, Sở Y tế có văn bản thông báo nội dung yêu cầu sửa đổi, bổ sung theo Mẫu số 16 Phụ lục I ban hành kèm theo Nghị định số 163/2025/NĐ-CP trong thời hạn 05 ngày làm việc, kể từ ngày ghi trên Phiếu tiếp nhận hồ sơ.",
+        "actor": "user",
+        "channel_hint": null,
+        "time_hint": "05 ngày làm việc"
+      },
+      {
+        "step_id": "step_7",
+        "title": "Bước 4:",
+        "content": "Bước 4: Sau khi nhận hồ sơ sửa đổi, bổ sung, Sở Y tế trả cho người đề nghị Phiếu tiếp nhận hồ sơ sửa đổi, bổ sung theo Mẫu số 01 Phụ lục I của Nghị định số 163/2025/NĐ-CP",
+        "actor": "user",
+        "channel_hint": null,
+        "time_hint": null
+      },
+      {
+        "step_id": "step_8",
+        "title": "a)",
+        "content": "a) Trường hợp hồ sơ sửa đổi, bổ sung không đáp ứng yêu cầu, trong thời hạn 05 ngày làm việc kể từ ngày ghi trên Phiếu tiếp nhận hồ sơ sửa đổi, bổ sung, Sở Y tế có văn bản thông báo cho người đề nghị theo Mẫu số 16 tại Phụ lục I ban hành kèm theo Nghị định số 163/2025/NĐ-CP về việc không cấp lại Chứng chỉ hành nghề dược. b)Trường hợp không có yêu cầu sửa đổi, bổ sung đối với hồ sơ sửa đổi, bổ sung, Sở Y tế cấp lại và trả cho người đề nghị 01 bản Chứng chỉ hành nghề theo quy định tại điểm a",
+        "actor": "user",
+        "channel_hint": null,
+        "time_hint": "05 ngày làm việc"
+      },
+      {
+        "step_id": "step_9",
+        "title": "Bước 3.",
+        "content": "Bước 3.",
+        "actor": "user",
+        "channel_hint": null,
+        "time_hint": null
+      },
+      {
+        "step_id": "step_10",
+        "title": "c)",
+        "content": "c) Trong thời hạn 06 tháng kể từ ngày Sở Y tế có văn bản thông báo sửa đổi, bổ sung, người đề nghị cấp Chứng chỉ hành nghề dược phải nộp hồ sơ sửa đổi, bổ sung theo yêu cầu. Sau thời hạn trên, người đề nghị không nộp hồ sơ sửa đổi, bổ sung thì hồ sơ đã nộp không còn giá trị.",
+        "actor": "user",
+        "channel_hint": null,
+        "time_hint": "06 tháng"
+      },
+      {
+        "step_id": "step_11",
+        "title": "Bước 5:",
+        "content": "Bước 5: Trong thời hạn 03 ngày làm việc kể từ ngày cấp Chứng chỉ hành nghề dược, Sở Y tế công bố, cập nhật trên Trang thông tin điện tử của Sở Y tế các thông tin sau:",
+        "actor": "user",
+        "channel_hint": null,
+        "time_hint": "03 ngày làm việc"
+      },
+      {
+        "step_id": "step_12",
+        "title": "a)",
+        "content": "a) Họ, tên, ngày tháng năm sinh của người được cấp Chứng chỉ hành nghề dược;",
+        "actor": "user",
+        "channel_hint": null,
+        "time_hint": null
+      },
+      {
+        "step_id": "step_13",
+        "title": "b)",
+        "content": "b) Số Chứng chỉ hành nghề dược của người được cấp Chứng chỉ hành nghề dược;",
+        "actor": "user",
+        "channel_hint": null,
+        "time_hint": null
+      },
+      {
+        "step_id": "step_14",
+        "title": "c)",
+        "content": "c) Phạm vi hoạt động chuyên môn được cấp trên Chứng chỉ hành nghề dược",
+        "actor": "user",
+        "channel_hint": null,
+        "time_hint": null
+      }
+    ],
+    "step_count": 14,
+    "notes": []
+  },
+  "eligibility": {
+    "conditions": [
+      "Chứng chỉ hành nghề dược đã được cấp bị mất hoặc hư hỏng"
+    ],
+    "has_conditions": true
+  },
+  "results": {
+    "items": [
+      {
+        "name": "Chứng chỉ hành nghề dược",
+        "result_code": "KQ.G18.000010",
+        "raw_text": "Chứng chỉ hành nghề dược"
+      }
+    ],
+    "primary_result": {
+      "name": "Chứng chỉ hành nghề dược",
+      "result_code": "KQ.G18.000010",
+      "raw_text": "Chứng chỉ hành nghề dược"
+    }
+  },
+  "legal_basis": {
+    "items": [
+      {
+        "title": "Luật 105/2016/QH13 Dược",
+        "code": "105/2016/QH13"
+      },
+      {
+        "title": "Nghị định của Chính phủ quy định chi tiết một số điều và biện pháp thi hành Luật dược",
+        "code": "163/2025/NĐ-CP"
+      },
+      {
+        "title": "Luật số 44/2024/QH15",
+        "code": "44/2024/QH15"
+      },
+      {
+        "title": "41/2023/TT-BTC",
+        "code": "41/2023/TT-BTC"
+      }
+    ],
+    "count": 4
+  },
+  "attachments": [
+    {
+      "label": "Mus04.docx",
+      "path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/1_014100/Mus04.docx",
+      "source_section": "Thành phần hồ sơ",
+      "document_name": "Đơn đề nghị cấp lại Chứng chỉ hành nghề dược, có ảnh chân dung của người đề nghị cấp Chứng chỉ hành nghề dược chụp trong thời gian không quá 06 tháng;"
+    }
+  ],
+  "signals": {
+    "raw_parse_warnings": [],
+    "missing_documents": false,
+    "documents_section_present": true,
+    "documents_declared_empty": false,
+    "documents_only_in_notes": false,
+    "missing_results": false
+  }
+}

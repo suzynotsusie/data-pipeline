@@ -1,0 +1,175 @@
+{
+  "schema_version": "1.0",
+  "normalizer_version": "0.2.0",
+  "source": {
+    "procedure_code": "1.011947",
+    "title": "Trợ giúp xã hội khẩn cấp cho người bị bệnh hiểm nghèo thuộc hộ nghèo, hộ cận nghèo và hộ có mức sống trung bình",
+    "raw_structured_parser_version": "0.1.0",
+    "field": "Bảo trợ xã hội"
+  },
+  "procedure": {
+    "level": "Cấp xã",
+    "procedure_type": "TTHC được luật giao quy định chi tiết",
+    "target_users": [
+      "Công dân Việt Nam"
+    ],
+    "authorities": [],
+    "receiving_places": [
+      "Trung tâm phục vụ hành chính công cấp xã."
+    ]
+  },
+  "submission": {
+    "channels": [
+      "in_person"
+    ],
+    "methods": [
+      {
+        "method_id": "method_1",
+        "channel": "in_person",
+        "processing_time_text": "3 ngày làm việc",
+        "fee_text": null,
+        "description": "Tại UBND cấp xã, phường: 03 ngày làm việc (kể từ khi nhận hồ sơ đến khi có kết quả xử lý).",
+        "is_online": false,
+        "is_postal": false,
+        "is_in_person": true
+      }
+    ],
+    "timing_summary": {
+      "unique_processing_times": [
+        "3 ngày làm việc"
+      ],
+      "method_count": 1
+    }
+  },
+  "documents": {
+    "required": [
+      {
+        "document_id": "1_m_u_t_khai_ngh_tr_gi_p_x_h_i",
+        "name": "1. Mẫu tờ khai đề nghị trợ giúp xã hội;",
+        "group_name": "default",
+        "group_type": "unknown",
+        "original_count": "1",
+        "copy_count": "0",
+        "conditions": [],
+        "attachment_label": "To khai de nghi tro giup xa hoi.doc",
+        "attachment_path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/1_011947/To%20khai%20de%20nghi%20tro%20giup%20xa%20hoi.doc"
+      },
+      {
+        "document_id": "2_gi_y_x_c_nh_n_c_a_c_quan_y_t_c_th_m_quy_n",
+        "name": "2. Giấy xác nhận của cơ quan y tế có thẩm quyền;",
+        "group_name": "default",
+        "group_type": "unknown",
+        "original_count": "1",
+        "copy_count": "0",
+        "conditions": [],
+        "attachment_label": null,
+        "attachment_path": null
+      }
+    ],
+    "conditional": [
+      {
+        "document_id": "3_quy_t_nh_c_ng_nh_n_h_c_m_c_s_ng_trung_b_nh_n_u_tr_ng_h_p_thu_c_h_c_m_c_s_ng_trung_b_nh",
+        "name": "3. Quyết định công nhận hộ có mức sống trung bình (nếu trường hợp thuộc hộ có mức sống trung bình).",
+        "group_name": "default",
+        "group_type": "unknown",
+        "original_count": "1",
+        "copy_count": "0",
+        "conditions": [
+          "3. Quyết định công nhận hộ có mức sống trung bình (nếu trường hợp thuộc hộ có mức sống trung bình)."
+        ],
+        "attachment_label": null,
+        "attachment_path": null
+      }
+    ],
+    "presented": [],
+    "notes": [],
+    "forms": [
+      {
+        "name": "1. Mẫu tờ khai đề nghị trợ giúp xã hội;",
+        "attachment_label": "To khai de nghi tro giup xa hoi.doc",
+        "attachment_path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/1_011947/To%20khai%20de%20nghi%20tro%20giup%20xa%20hoi.doc"
+      }
+    ],
+    "empty_groups": [],
+    "document_count": 3
+  },
+  "process": {
+    "steps": [
+      {
+        "step_id": "step_1",
+        "title": null,
+        "content": "1. -",
+        "actor": "user",
+        "channel_hint": null,
+        "time_hint": null
+      },
+      {
+        "step_id": "step_2",
+        "title": "Bước 1:",
+        "content": "Bước 1: Bộ phận Tiếp nhận và trả kết quả cấp xã hướng dẫn hoàn thiện và tiếp nhận hồ sơ, chuyển công chức chuyên môn xử lý; -",
+        "actor": "authority",
+        "channel_hint": null,
+        "time_hint": null
+      },
+      {
+        "step_id": "step_3",
+        "title": "Bước 2:",
+        "content": "Bước 2: Công chức xử lý, trình chủ tịch UBND cấp xã ký Quyết định, chuyển cho Bộ phận Tiếp nhận và trả kết quả để trả cho công dân.",
+        "actor": "authority",
+        "channel_hint": null,
+        "time_hint": null
+      }
+    ],
+    "step_count": 3,
+    "notes": []
+  },
+  "eligibility": {
+    "conditions": [
+      "Không có"
+    ],
+    "has_conditions": true
+  },
+  "results": {
+    "items": [
+      {
+        "name": "Quyết định hỗ trợ khó khăn đột xuất",
+        "result_code": "KQ.H17.000048",
+        "raw_text": "Quyết định hỗ trợ khó khăn đột xuất"
+      }
+    ],
+    "primary_result": {
+      "name": "Quyết định hỗ trợ khó khăn đột xuất",
+      "result_code": "KQ.H17.000048",
+      "raw_text": "Quyết định hỗ trợ khó khăn đột xuất"
+    }
+  },
+  "legal_basis": {
+    "items": [
+      {
+        "title": "Thông qua mức chuẩn trợ giúp xã hội, mức trợ giúp xã hội và mở rộng đối tượng bảo trợ xã hội trên địa bàn thành phố Đà Nẵng;",
+        "code": "34/2021/NQ-HĐND"
+      },
+      {
+        "title": "Sửa đổi, bổ sung Nghị quyết số 34/2021/NQ-HĐND.",
+        "code": "93/2022/NQ-HĐND"
+      }
+    ],
+    "count": 2
+  },
+  "attachments": [
+    {
+      "label": "To khai de nghi tro giup xa hoi.doc",
+      "path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/1_011947/To%20khai%20de%20nghi%20tro%20giup%20xa%20hoi.doc",
+      "source_section": "Thành phần hồ sơ",
+      "document_name": "1. Mẫu tờ khai đề nghị trợ giúp xã hội;"
+    }
+  ],
+  "signals": {
+    "raw_parse_warnings": [],
+    "missing_documents": false,
+    "documents_section_present": true,
+    "documents_declared_empty": false,
+    "documents_only_in_notes": false,
+    "missing_results": false
+  }
+}

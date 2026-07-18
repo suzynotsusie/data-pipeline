@@ -40,10 +40,17 @@ Codex khong lam cac hang muc loi backend sau:
 
 - Tao workflow dataset cho tung domain/subdomain
 - Uu tien rollout:
+  - `co_con_nho` (da co workflow dataset va test data cho 17 ma thu tuc / 4 subdomain)
   - `phuong_tien_nguoi_lai` (da co workflow dataset va test data cho 70 ma thu tuc / 3 subdomain)
   - `hoc_tap` (da co workflow dataset va test data cho 49 ma thu tuc / 5 subdomain)
+  - `cu_tru_giay_to` (da co workflow dataset va test data cho 37 ma thu tuc / 6 subdomain)
+  - `viec_lam` (da co workflow dataset va test data cho 43 ma thu tuc / 7 subdomain)
   - `hon_nhan_gia_dinh` (da co workflow dataset va test data cho 40 ma thu tuc / 5 subdomain)
   - `nguoi_than_qua_doi` (da co workflow dataset va test data cho 18 ma thu tuc / 2 subdomain)
+  - `dien_luc_nha_o_dat_dai` (da co workflow dataset va test data cho 23 ma thu tuc / 6 subdomain)
+  - `suc_khoe_y_te` (da co workflow dataset va test data cho 9 ma thu tuc / 2 subdomain)
+  - `huu_tri` (da co workflow dataset va test data cho 28 ma thu tuc / 2 subdomain)
+  - `giai_quyet_khieu_kien` (da co workflow dataset va test data cho 38 ma thu tuc / 1 subdomain)
 
 Deliverables cho moi domain/subdomain:
 
@@ -88,15 +95,9 @@ Thu muc muc tieu:
 
 Buoc tiep theo dung pham vi Codex la:
 
-1. Mo rong cach lam nay sang domain Cong dan tiep theo uu tien cao
-2. Xac dinh subdomain citizen-facing cho nhom nay
-3. Sinh:
-   - `summary.csv`
-   - `normalized.json`
-   - `workflow_engine_config.json`
-4. Tao:
-   - `intake_cases.json`
-   - `submission_cases.json`
+1. Tich hop frontend hien thi cho 11 nhom Cong dan va payload intake theo `group_key` / `subdomain_key`
+2. Dong bo danh sach subdomain hien thi voi `citizen_group_domains.json` va workflow catalog da sinh
+3. Truyen payload intake theo `group_key`, `subdomain_key` va metadata workflow tu frontend/UI 11 nhom Cong dan
 
 ## Coordination Rule
 

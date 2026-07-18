@@ -1,0 +1,425 @@
+{
+  "schema_version": "3.0",
+  "record_type": "public_service_procedure_payload",
+  "id": "procedure-1.012279",
+  "procedure_code": "1.012279",
+  "code": "1.012279",
+  "title": "Cấp lại giấy phép hoạt động khám bệnh, chữa bệnh",
+  "language": "vi",
+  "status": "generated_from_pipeline",
+  "field": "Khám bệnh, chữa bệnh",
+  "group_key": "suc_khoe_y_te",
+  "workflow_family": null,
+  "subflow": null,
+  "source": {
+    "source_url": "file:///C:/Users/ku060/Downloads/VAIC%20source/data-pipeline/raw_data/1_012279/1_012279_procedure_detail.md",
+    "source_markdown_path": "C:\\Users\\ku060\\Downloads\\VAIC source\\data-pipeline\\raw_data\\1_012279\\1_012279_procedure_detail.md",
+    "normalized_payload_path": "C:\\Users\\ku060\\Downloads\\VAIC source\\data-pipeline\\govease-unified\\data\\normalized_structured\\1_012279_normalized_structured.json",
+    "enriched_payload_path": "C:\\Users\\ku060\\Downloads\\VAIC source\\data-pipeline\\govease-unified\\data\\enriched_structured_priority\\1_012279_enriched_structured.json"
+  },
+  "scope": {
+    "included": "Thủ tục này thuộc nhóm y tế, thường cần đối chiếu thông tin người bệnh, đơn vị tiếp nhận hoặc quyền lợi chuyên ngành. Kết quả thường nhận được là Giấy phép hoạt động khám bệnh, chữa bệnh. Thời gian xử lý tham khảo: 20 ngày.",
+    "not_included": []
+  },
+  "agency": {
+    "executing_agency": "Sở Y tế, Cục Quản lý Khám chữa bệnh - Bộ Y tế, Cục Phòng bệnh - Bộ Y tế, Cục Quản lý Y, Dược cổ truyền - Bộ Y tế",
+    "submission_place": null,
+    "receiving_places": []
+  },
+  "target_users": [
+    "Doanh nghiệp",
+    "Tổ chức nước ngoài",
+    "Hợp tác xã",
+    "Doanh nghiệp có vốn đầu tư nước ngoài",
+    "Doanh nghiệp Việt Nam",
+    "Tổ chức (không bao gồm doanh nghiệp",
+    "HTX)"
+  ],
+  "submission_methods": [
+    {
+      "code": "IN_PERSON",
+      "label": "Trực tiếp",
+      "processing_time": "20 ngày",
+      "fee": null,
+      "description": "20 ngày (10 ngày làm việc đối với bệnh viện tư nhân) kể từ ngày nhận đủ hồ sơ"
+    },
+    {
+      "code": "ONLINE",
+      "label": "Trực tuyến",
+      "processing_time": "20 ngày",
+      "fee": null,
+      "description": "20 ngày (10 ngày làm việc đối với bệnh viện tư nhân) kể từ ngày nhận đủ hồ sơ"
+    },
+    {
+      "code": "POSTAL",
+      "label": "Dịch vụ bưu chính",
+      "processing_time": "20 ngày",
+      "fee": null,
+      "description": "20 ngày (10 ngày làm việc đối với bệnh viện tư nhân) kể từ ngày nhận đủ hồ sơ"
+    }
+  ],
+  "processing_note": "Thời gian xử lý tham chiếu: 20 ngày. Nên xác định rõ đối tượng tham gia, quyền lợi hoặc nhu cầu điều chỉnh hồ sơ y tế trước khi nộp. Có thể chọn kênh nộp phù hợp: Trực tiếp, Trực tuyến, Dịch vụ bưu chính. Hiện có khoảng 5 mục giấy tờ cần theo dõi trong checklist.",
+  "documents": {
+    "normally_required": [
+      {
+        "name": "Đơn theo Mẫu 02 Phụ lục II ban hành kèm theo Nghị định số 96/2023/NĐ-CP",
+        "quantity": "1 bản chính, 0 bản sao",
+        "notes": [],
+        "group": "Trường hợp 1: Trường hợp giấy phép hoạt động bị mất hoặc hư hỏng",
+        "attachment_path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/1_012279/M%E1%BA%ABu%2002.docx"
+      },
+      {
+        "name": "c) Bản gốc giấy phép hoạt động đã cấp.",
+        "quantity": "1 bản chính, 0 bản sao",
+        "notes": [],
+        "group": "Trường hợp 2: Trường hợp sai sót thông tin",
+        "attachment_path": null
+      },
+      {
+        "name": "Tài liệu chứng minh nội dung, thông tin sai sót cần sửa lại",
+        "quantity": "1 bản chính, 0 bản sao",
+        "notes": [],
+        "group": "Trường hợp 2: Trường hợp sai sót thông tin",
+        "attachment_path": null
+      },
+      {
+        "name": "Đơn theo Mẫu 02 Phụ lục II ban hành kèm theo Nghị định số 96/2023/NĐ-CP",
+        "quantity": "1 bản chính, 0 bản sao",
+        "notes": [],
+        "group": "Trường hợp 2: Trường hợp sai sót thông tin",
+        "attachment_path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/1_012279/M%E1%BA%ABu%2002.docx"
+      }
+    ],
+    "conditional": [
+      {
+        "condition": "Bản sao bị mất hoặc bản gốc giấy phép hoạt động bị hư hỏng (nếu có)",
+        "document": "Bản sao bị mất hoặc bản gốc giấy phép hoạt động bị hư hỏng (nếu có)",
+        "quantity": "0 bản chính, 1 bản sao",
+        "notes": [],
+        "attachment_path": null
+      }
+    ],
+    "forms": [
+      {
+        "name": "Đơn theo Mẫu 02 Phụ lục II ban hành kèm theo Nghị định số 96/2023/NĐ-CP",
+        "attachment_label": "Mẫu 02.docx",
+        "attachment_path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/1_012279/M%E1%BA%ABu%2002.docx"
+      },
+      {
+        "name": "Đơn theo Mẫu 02 Phụ lục II ban hành kèm theo Nghị định số 96/2023/NĐ-CP",
+        "attachment_label": "Mẫu 02.docx",
+        "attachment_path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/1_012279/M%E1%BA%ABu%2002.docx"
+      }
+    ],
+    "presented": [],
+    "notes": [],
+    "summary": [
+      {
+        "group": "Trường hợp 1: Trường hợp giấy phép hoạt động bị mất hoặc hư hỏng",
+        "name": "Đơn theo Mẫu 02 Phụ lục II ban hành kèm theo Nghị định số 96/2023/NĐ-CP",
+        "quantity": "1 bản chính, 0 bản sao",
+        "notes": [],
+        "attachment_path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/1_012279/M%E1%BA%ABu%2002.docx"
+      },
+      {
+        "group": "Trường hợp 2: Trường hợp sai sót thông tin",
+        "name": "c) Bản gốc giấy phép hoạt động đã cấp.",
+        "quantity": "1 bản chính, 0 bản sao",
+        "notes": [],
+        "attachment_path": null
+      },
+      {
+        "group": "Trường hợp 2: Trường hợp sai sót thông tin",
+        "name": "Tài liệu chứng minh nội dung, thông tin sai sót cần sửa lại",
+        "quantity": "1 bản chính, 0 bản sao",
+        "notes": [],
+        "attachment_path": null
+      },
+      {
+        "group": "Trường hợp 2: Trường hợp sai sót thông tin",
+        "name": "Đơn theo Mẫu 02 Phụ lục II ban hành kèm theo Nghị định số 96/2023/NĐ-CP",
+        "quantity": "1 bản chính, 0 bản sao",
+        "notes": [],
+        "attachment_path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/1_012279/M%E1%BA%ABu%2002.docx"
+      },
+      {
+        "group": null,
+        "name": null,
+        "quantity": "0 bản chính, 1 bản sao",
+        "notes": [],
+        "attachment_path": null
+      },
+      {
+        "group": null,
+        "name": "Đơn theo Mẫu 02 Phụ lục II ban hành kèm theo Nghị định số 96/2023/NĐ-CP",
+        "quantity": null,
+        "notes": null,
+        "attachment_path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/1_012279/M%E1%BA%ABu%2002.docx"
+      },
+      {
+        "group": null,
+        "name": "Đơn theo Mẫu 02 Phụ lục II ban hành kèm theo Nghị định số 96/2023/NĐ-CP",
+        "quantity": null,
+        "notes": null,
+        "attachment_path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/1_012279/M%E1%BA%ABu%2002.docx"
+      }
+    ]
+  },
+  "steps": [
+    {
+      "order": 1,
+      "title": "Bước 1",
+      "description": "1. **Bước 1:** Nộp 01 bộ hồ sơ đề nghị cấp lại giấy phép hoạt động và nộp phí theo quy định của pháp luật về phí, lệ phí cho cơ quan cấp giấy phép hoạt động cụ thể như sau: 1. Bộ Y tế:",
+      "example": null
+    },
+    {
+      "order": 2,
+      "title": "a)",
+      "description": "a) Cục Quản lý Khám, chữa bệnh: đối với các cơ sở khám bệnh, chữa bệnh Nhà nước trực thuộc Bộ Y tế trừ các trường hợp thuộc điểm b mục này;",
+      "example": null
+    },
+    {
+      "order": 3,
+      "title": "b)",
+      "description": "b) Cục Quản lý Y, Dược cổ truyền: đối với các cơ sở khám bệnh, chữa bệnh y học cổ truyền Nhà nước trực thuộc Bộ Y tế. 2. Ủy ban nhân dân cấp Tỉnh :",
+      "example": null
+    },
+    {
+      "order": 4,
+      "title": "a)",
+      "description": "a) Các cơ sở khám bệnh, chữa bệnh trên địa bàn quản lý của Ủy ban nhân dân cấp Tỉnh (bao gồm cả các cơ sở khám bệnh, chữa bệnh thuộc Bộ, ngành), trừ cơ sở khám bệnh, chữa bệnh trực thuộc Bộ Y tế và các cơ sở khám bệnh, chữa bệnh thuộc thẩm quyền quản lý của Bộ Quốc phòng, Bộ Công an;",
+      "example": null
+    },
+    {
+      "order": 5,
+      "title": "b)",
+      "description": "b) Cơ sở khám bệnh, chữa bệnh tư nhân trên địa bàn quản lý (bao gồm cả bệnh viện tư nhân). 2. **Bước 2:** Sau khi nhận hồ sơ, cơ quan cấp giấy phép hoạt động trả cho cơ sở đề nghị phiếu tiếp nhận hồ sơ. 3. **Bước 3:** Đối với trường hợp cơ sở khám bệnh, chữa bệnh không phải là bệnh viện tư nhân: Trong thời hạn 20 ngày, kể từ ngày ghi trên phiếu tiếp nhận hồ sơ, cơ quan cấp giấy phép hoạt động cấp lại giấy phép hoạt động và cập nhật thông tin về việc cấp lại giấy phép hoạt động trên cổng thông tin điện tử hoặc trang tin điện tử của cơ quan và trên Hệ thống thông tin về quản lý hoạt động khám bệnh, chữa bệnh. Đối với trường hợp cơ sở khám bệnh, chữa bệnh là bệnh viện tư nhân: 1. Trong thời hạn 03 ngày làm việc kể từ ngày tiếp nhận hồ sơ, cơ quan cấp giấy phép hoạt động phải có văn bản gửi Bộ Y tế để xác minh thông tin của bệnh viện tư nhân đề nghị cấp lại giấy phép hoạt động theo Mẫu 01 Phụ lục IV ban hành kèm theo Nghị quyết số 21/2026/NQ, trừ trường hợp bệnh viện tư nhân đã nộp kèm theo hồ sơ bản gốc giấy phép hoạt động hoặc bản sao được chứng thực bản sao từ bản chính theo quy định của pháp luật về chứng thực bản sao từ bản chính (Bệnh viện tư nhân phải chịu hoàn toàn trách nhiệm trước pháp luật đối với tính xác thực và hiệu lực của bản sao từ bản chính). 2. Trong thời hạn 03 ngày làm việc kể từ ngày nhận được văn bản xác minh thông tin tại mục 1, Bộ Y tế phải có văn bản trả lời xác minh nội dung thông tin theo Mẫu 02 Phụ lục IV ban hành kèm theo Nghị quyết số 21/2026/NQ-CP. 3. Trong thời hạn 04 ngày làm việc, kể từ ngày nhận được văn bản xác minh của Bộ Y tế quy định tại mục 2 hoặc kể từ ngày tiếp nhận hồ sơ theo quy định tại khoản 2 Phần này đối với trường hợp bệnh viện tư nhân đã nộp kèm theo hồ sơ bản gốc giấy phép hoạt động hoặc bản sao được chứng thực bản sao từ bản chính theo quy định của pháp luật về chứng thực bản sao từ bản chính, cơ quan cấp giấy phép hoạt động thực hiện việc cấp lại giấy phép hoạt động cho bệnh viện tư nhân theo quy định tại Mẫu 03 Phụ lục IV ban hành kèm theo Nghị quyết số 21/2026/NQ-CP và cập nhật thông tin về việc cấp lại giấy phép hoạt động trên cổng thông tin điện tử hoặc trang tin điện tử của cơ quan và trên Hệ thống thông tin về quản lý hoạt động khám bệnh, chữa bệnh. Quyết định cấp lại giấy phép hoạt động khám bệnh, chữa bệnh có giá trị như giấy phép hoạt động khám bệnh, chữa bệnh.",
+      "example": "20 ngày"
+    }
+  ],
+  "input_fields": [
+    {
+      "field": "request_subject",
+      "label": "Đối tượng làm thủ tục",
+      "type": "string",
+      "required": true
+    },
+    {
+      "field": "insurance_or_medical_need",
+      "label": "Nhu cầu bảo hiểm hoặc y tế",
+      "type": "string",
+      "required": true
+    },
+    {
+      "field": "submission_channel_preference",
+      "label": "Kênh nộp dự kiến",
+      "type": "enum",
+      "required": false,
+      "options": [
+        "Trực tiếp",
+        "Trực tuyến",
+        "Dịch vụ bưu chính"
+      ]
+    },
+    {
+      "field": "has_insurance_number",
+      "label": "Đã có mã BHXH/BHYT",
+      "type": "boolean",
+      "required": false
+    }
+  ],
+  "validation_rules": [
+    {
+      "id": "required-1",
+      "severity": "error",
+      "field": "request_subject",
+      "rule": "Trường bắt buộc phải có dữ liệu hợp lệ trước khi nộp.",
+      "message": "Thiếu trường bắt buộc: Đối tượng làm thủ tục."
+    },
+    {
+      "id": "required-2",
+      "severity": "error",
+      "field": "insurance_or_medical_need",
+      "rule": "Trường bắt buộc phải có dữ liệu hợp lệ trước khi nộp.",
+      "message": "Thiếu trường bắt buộc: Nhu cầu bảo hiểm hoặc y tế."
+    },
+    {
+      "id": "hint-1",
+      "severity": "warning",
+      "field": "general",
+      "rule": "Nên xác định trước kênh nộp hồ sơ để biết có cần bản giấy, bản điện tử hay xuất trình trực tiếp.",
+      "message": "Nên xác định trước kênh nộp hồ sơ để biết có cần bản giấy, bản điện tử hay xuất trình trực tiếp."
+    },
+    {
+      "id": "hint-2",
+      "severity": "warning",
+      "field": "general",
+      "rule": "Có mẫu biểu đính kèm, nên kiểm tra đúng biểu mẫu trước khi nộp.",
+      "message": "Có mẫu biểu đính kèm, nên kiểm tra đúng biểu mẫu trước khi nộp."
+    },
+    {
+      "id": "hint-3",
+      "severity": "warning",
+      "field": "general",
+      "rule": "Nên xác định đúng nhóm đối tượng, mã số bảo hiểm và quyền lợi áp dụng trước khi nộp.",
+      "message": "Nên xác định đúng nhóm đối tượng, mã số bảo hiểm và quyền lợi áp dụng trước khi nộp."
+    }
+  ],
+  "common_errors": [
+    {
+      "field": "general",
+      "issue": "Điền sai mẫu tờ khai hoặc chọn sai biểu mẫu đi kèm.",
+      "fix": "Nên xác định trước kênh nộp hồ sơ để biết có cần bản giấy, bản điện tử hay xuất trình trực tiếp."
+    }
+  ],
+  "clarifying_questions": [
+    {
+      "id": "clarify_1",
+      "question": "Bạn đang muốn đăng ký, điều chỉnh hay xác nhận quyền lợi y tế hoặc bảo hiểm nào?",
+      "purpose": "workflow_intake"
+    },
+    {
+      "id": "clarify_2",
+      "question": "Bạn đã có mã BHXH/BHYT hoặc thông tin đơn vị tiếp nhận liên quan chưa?",
+      "purpose": "workflow_intake"
+    }
+  ],
+  "legal_basis": [
+    {
+      "title": "Thông tư",
+      "code": "59/2023/TT-BTC"
+    },
+    {
+      "title": "Nghị định số 42/2025/NĐ-CP của Chính phủ: Quy định chức năng, nhiệm vụ, quyền hạn và cơ cấu tổ chức của Bộ Y tế",
+      "code": "42/2025/NĐ-CP"
+    },
+    {
+      "title": "Luật Khám, chữa bệnh 15/2023/QH15 (09/1/2023)",
+      "code": "15/2023/QH15"
+    },
+    {
+      "title": "Nghị định số 96/2023/NĐ-CP ngày 30 tháng 12 năm 2023 của Chính phủ quy định chi tiết một số điều của Luật Khám bệnh, chữa bệnh.",
+      "code": "96/2023/NĐ-CP"
+    },
+    {
+      "title": "Quy định về phân cấp trong lĩnh vực y, dược cổ truyền",
+      "code": "21/2026/TT-BYT"
+    },
+    {
+      "title": "Thông tư quy định mức thu, miễn một số khoản phí, lệ phí nhằm hỗ trợ cho doanh nghiệp, người dân",
+      "code": "64/2025/TT-BTC"
+    },
+    {
+      "title": "5. Thông tư 64/2025/TT-BTC ngày 30/6/2025 của Bộ Tài chính về việc quy định mức thu, miễn một số khoản phí, lệ phí nhằm hỗ trợ cho doanh nghiệp, người dân.",
+      "code": "Thông tư 64/2025/TT-BTC"
+    }
+  ],
+  "legal_bases": [
+    {
+      "title": "Thông tư",
+      "code": "59/2023/TT-BTC"
+    },
+    {
+      "title": "Nghị định số 42/2025/NĐ-CP của Chính phủ: Quy định chức năng, nhiệm vụ, quyền hạn và cơ cấu tổ chức của Bộ Y tế",
+      "code": "42/2025/NĐ-CP"
+    },
+    {
+      "title": "Luật Khám, chữa bệnh 15/2023/QH15 (09/1/2023)",
+      "code": "15/2023/QH15"
+    },
+    {
+      "title": "Nghị định số 96/2023/NĐ-CP ngày 30 tháng 12 năm 2023 của Chính phủ quy định chi tiết một số điều của Luật Khám bệnh, chữa bệnh.",
+      "code": "96/2023/NĐ-CP"
+    },
+    {
+      "title": "Quy định về phân cấp trong lĩnh vực y, dược cổ truyền",
+      "code": "21/2026/TT-BYT"
+    },
+    {
+      "title": "Thông tư quy định mức thu, miễn một số khoản phí, lệ phí nhằm hỗ trợ cho doanh nghiệp, người dân",
+      "code": "64/2025/TT-BTC"
+    },
+    {
+      "title": "5. Thông tư 64/2025/TT-BTC ngày 30/6/2025 của Bộ Tài chính về việc quy định mức thu, miễn một số khoản phí, lệ phí nhằm hỗ trợ cho doanh nghiệp, người dân.",
+      "code": "Thông tư 64/2025/TT-BTC"
+    }
+  ],
+  "faq": [
+    {
+      "question": "Có thể nộp qua kênh nào?",
+      "answer": "Các kênh hiện có: Trực tiếp, Trực tuyến, Dịch vụ bưu chính."
+    },
+    {
+      "question": "Thời gian xử lý tham chiếu là bao lâu?",
+      "answer": "Thời gian xử lý tham chiếu hiện có là 20 ngày."
+    },
+    {
+      "question": "Kết quả chính của thủ tục là gì?",
+      "answer": "Kết quả chính được trích xuất là Giấy phép hoạt động khám bệnh, chữa bệnh."
+    }
+  ],
+  "guidance": {
+    "highlight_documents": [
+      {
+        "bucket": "required",
+        "name": "Đơn theo Mẫu 02 Phụ lục II ban hành kèm theo Nghị định số 96/2023/NĐ-CP",
+        "conditions": [],
+        "attachment_path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/1_012279/M%E1%BA%ABu%2002.docx"
+      },
+      {
+        "bucket": "required",
+        "name": "c) Bản gốc giấy phép hoạt động đã cấp.",
+        "conditions": [],
+        "attachment_path": null
+      },
+      {
+        "bucket": "required",
+        "name": "Tài liệu chứng minh nội dung, thông tin sai sót cần sửa lại",
+        "conditions": [],
+        "attachment_path": null
+      },
+      {
+        "bucket": "required",
+        "name": "Đơn theo Mẫu 02 Phụ lục II ban hành kèm theo Nghị định số 96/2023/NĐ-CP",
+        "conditions": [],
+        "attachment_path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/1_012279/M%E1%BA%ABu%2002.docx"
+      },
+      {
+        "bucket": "conditional",
+        "name": "Bản sao bị mất hoặc bản gốc giấy phép hoạt động bị hư hỏng (nếu có)",
+        "conditions": [
+          "Bản sao bị mất hoặc bản gốc giấy phép hoạt động bị hư hỏng (nếu có)"
+        ],
+        "attachment_path": null
+      }
+    ],
+    "special_cases": [],
+    "common_errors": [
+      "Điền sai mẫu tờ khai hoặc chọn sai biểu mẫu đi kèm."
+    ],
+    "validation_hints": [
+      "Nên xác định trước kênh nộp hồ sơ để biết có cần bản giấy, bản điện tử hay xuất trình trực tiếp.",
+      "Có mẫu biểu đính kèm, nên kiểm tra đúng biểu mẫu trước khi nộp.",
+      "Nên xác định đúng nhóm đối tượng, mã số bảo hiểm và quyền lợi áp dụng trước khi nộp."
+    ]
+  },
+  "next_steps": {
+    "summary": "Nên xác định rõ đối tượng tham gia, quyền lợi hoặc nhu cầu điều chỉnh hồ sơ y tế trước khi nộp. Có thể chọn kênh nộp phù hợp: Trực tiếp, Trực tuyến, Dịch vụ bưu chính. Hiện có khoảng 5 mục giấy tờ cần theo dõi trong checklist.",
+    "time_badge": "20 ngày",
+    "result_label": "Giấy phép hoạt động khám bệnh, chữa bệnh",
+    "primary_channel": "in_person",
+    "channels": [
+      "in_person",
+      "online",
+      "postal"
+    ]
+  },
+  "notes": [],
+  "provenance": {
+    "pipeline": "raw->structured->normalized->enriched->ui_api_payload",
+    "normalizer_version": "0.2.0",
+    "enricher_version": "0.2.0",
+    "mapping_notes": "excluded_from_clean_workflow_dataset",
+    "supported_group": true
+  }
+}

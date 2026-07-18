@@ -1,0 +1,213 @@
+{
+  "schema_version": "1.0",
+  "normalizer_version": "0.2.0",
+  "source": {
+    "procedure_code": "1.000363",
+    "title": "Cấp phép nhập khẩu tự động thuốc lá điếu, xì gà",
+    "raw_structured_parser_version": "0.1.0",
+    "field": "Công nghiệp tiêu dùng"
+  },
+  "procedure": {
+    "level": "Cấp tỉnh",
+    "procedure_type": "TTHC được luật giao quy định chi tiết",
+    "target_users": [
+      "Tổ chức (không bao gồm doanh nghiệp",
+      "HTX)",
+      "Doanh nghiệp"
+    ],
+    "authorities": [
+      "Ủy ban nhân dân cấp tỉnh"
+    ],
+    "receiving_places": []
+  },
+  "submission": {
+    "channels": [
+      "in_person",
+      "online",
+      "postal"
+    ],
+    "methods": [
+      {
+        "method_id": "method_1",
+        "channel": "online",
+        "processing_time_text": "5 ngày làm việc",
+        "fee_text": null,
+        "description": null,
+        "is_online": true,
+        "is_postal": false,
+        "is_in_person": false
+      },
+      {
+        "method_id": "method_2",
+        "channel": "postal",
+        "processing_time_text": "5 ngày làm việc",
+        "fee_text": null,
+        "description": null,
+        "is_online": false,
+        "is_postal": true,
+        "is_in_person": false
+      },
+      {
+        "method_id": "method_3",
+        "channel": "in_person",
+        "processing_time_text": "5 ngày làm việc",
+        "fee_text": null,
+        "description": null,
+        "is_online": false,
+        "is_postal": false,
+        "is_in_person": true
+      }
+    ],
+    "timing_summary": {
+      "unique_processing_times": [
+        "5 ngày làm việc"
+      ],
+      "method_count": 3
+    }
+  },
+  "documents": {
+    "required": [
+      {
+        "document_id": "h_p_ng_nh_p_kh_u_1_m_t_b_n_sao_c_ng_d_u_sao_y_b_n_ch_nh_c_a_th_ng_nh_n",
+        "name": "Hợp đồng nhập khẩu: 1 (một) bản sao (có đóng dấu sao y bản chính của thương nhân)",
+        "group_name": "default",
+        "group_type": "unknown",
+        "original_count": "1",
+        "copy_count": "0",
+        "conditions": [],
+        "attachment_label": null,
+        "attachment_path": null
+      },
+      {
+        "document_id": "h_a_n_th_ng_m_i_1_m_t_b_n_sao_c_ng_d_u_sao_y_b_n_ch_nh_c_a_th_ng_nh_n",
+        "name": "Hóa đơn thương mại: 1 (một) bản sao (có đóng dấu sao y bản chính của thương nhân)",
+        "group_name": "default",
+        "group_type": "unknown",
+        "original_count": "1",
+        "copy_count": "0",
+        "conditions": [],
+        "attachment_label": null,
+        "attachment_path": null
+      },
+      {
+        "document_id": "v_n_n_ho_c_ch_ng_t_v_n_t_i_c_a_l_h_ng_1_m_t_b_n_sao_c_ng_d_u_sao_y_b_n_ch_nh_c_a_th_ng_nh_n",
+        "name": "Vận đơn hoặc chứng từ vận tải của lô hàng: 1 (một) bản sao (có đóng dấu sao y bản chính của thương nhân)",
+        "group_name": "default",
+        "group_type": "unknown",
+        "original_count": "1",
+        "copy_count": "0",
+        "conditions": [],
+        "attachment_label": null,
+        "attachment_path": null
+      },
+      {
+        "document_id": "n_ng_k_nh_p_kh_u_t_ng_thu_c_l_i_u_x_g_2_hai_b_n_theo_m_u_quy_nh_t_i_ph_l_c_ii",
+        "name": "Đơn đăng ký nhập khẩu tự động thuốc lá điếu, xì gà: 2 (hai) bản theo mẫu quy định tại Phụ lục II",
+        "group_name": "default",
+        "group_type": "unknown",
+        "original_count": "1",
+        "copy_count": "1",
+        "conditions": [],
+        "attachment_label": "ThuocladieuXiga.docx",
+        "attachment_path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/1_000363/ThuocladieuXiga.docx"
+      }
+    ],
+    "conditional": [],
+    "presented": [],
+    "notes": [],
+    "forms": [
+      {
+        "name": "Đơn đăng ký nhập khẩu tự động thuốc lá điếu, xì gà: 2 (hai) bản theo mẫu quy định tại Phụ lục II",
+        "attachment_label": "ThuocladieuXiga.docx",
+        "attachment_path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/1_000363/ThuocladieuXiga.docx"
+      }
+    ],
+    "empty_groups": [],
+    "document_count": 4
+  },
+  "process": {
+    "steps": [
+      {
+        "step_id": "step_1",
+        "title": null,
+        "content": "1. Thương nhân gửi 1 (một) bộ hồ sơ xin cấp Giấy phép qua đường bưu điện đến Cơ quan có thẩm quyền",
+        "actor": "authority",
+        "channel_hint": null,
+        "time_hint": null
+      },
+      {
+        "step_id": "step_2",
+        "title": null,
+        "content": "Cơ quan có thẩm quyền kiểm tra tính hợp lệ, đầy đủ của hồ sơ. Trường hợp hồ sơ đầy đủ, hợp lệ, trong thời hạn 05 ngày làm việc, Cơ quan có thẩm quyền cấp giấy phép nhập khẩu tự động",
+        "actor": "authority",
+        "channel_hint": null,
+        "time_hint": "05 ngày làm việc"
+      },
+      {
+        "step_id": "step_3",
+        "title": null,
+        "content": "Trường hợp hồ sơ không đầy đủ, hợp lệ hoặc không đồng ý xác nhận, Cơ quan có thẩm quyền thông báo bằng văn bản cho thương nhân để hoàn chỉnh hồ sơ hoặc nêu rõ lý do không xác nhận",
+        "actor": "authority",
+        "channel_hint": null,
+        "time_hint": null
+      }
+    ],
+    "step_count": 3,
+    "notes": []
+  },
+  "eligibility": {
+    "conditions": [],
+    "has_conditions": false
+  },
+  "results": {
+    "items": [
+      {
+        "name": "văn bản xác nhận nhập khẩu tự động thuốc lá điếu, xì gà",
+        "result_code": "KQ.G02.000137",
+        "raw_text": "văn bản xác nhận nhập khẩu tự động thuốc lá điếu, xì gà"
+      }
+    ],
+    "primary_result": {
+      "name": "văn bản xác nhận nhập khẩu tự động thuốc lá điếu, xì gà",
+      "result_code": "KQ.G02.000137",
+      "raw_text": "văn bản xác nhận nhập khẩu tự động thuốc lá điếu, xì gà"
+    }
+  },
+  "legal_basis": {
+    "items": [
+      {
+        "title": "Sửa đổi, bổ sung một số quy định về phân cấp thực hiện thủ tục hành chính trong các lĩnh vực thuộc phạm vi quản lý của Bộ Công Thương",
+        "code": "38/2025/TT-BCT"
+      },
+      {
+        "title": "Quy định chi tiết một số điều và biện pháp thi hành Luật Phòng, chống tác hại của thuốc lá về kinh doanh thuốc lá",
+        "code": "67/2013/NĐ-CP"
+      },
+      {
+        "title": "Quy định nhập khẩu thuốc lá điếu, xì gà",
+        "code": "37/2013/TT-BCT"
+      },
+      {
+        "title": "Nghị định số 187/2013/NĐ-CP",
+        "code": "187/2013/NĐ-CP"
+      }
+    ],
+    "count": 4
+  },
+  "attachments": [
+    {
+      "label": "ThuocladieuXiga.docx",
+      "path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/1_000363/ThuocladieuXiga.docx",
+      "source_section": "Thành phần hồ sơ",
+      "document_name": "Đơn đăng ký nhập khẩu tự động thuốc lá điếu, xì gà: 2 (hai) bản theo mẫu quy định tại Phụ lục II"
+    }
+  ],
+  "signals": {
+    "raw_parse_warnings": [],
+    "missing_documents": false,
+    "documents_section_present": true,
+    "documents_declared_empty": false,
+    "documents_only_in_notes": false,
+    "missing_results": false
+  }
+}

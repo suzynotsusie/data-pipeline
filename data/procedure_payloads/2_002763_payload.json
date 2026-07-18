@@ -1,0 +1,309 @@
+{
+  "schema_version": "3.0",
+  "record_type": "public_service_procedure_payload",
+  "id": "procedure-2.002763",
+  "procedure_code": "2.002763",
+  "code": "2.002763",
+  "title": "Thủ tục giải quyết chế độ trợ cấp chết do tai nạn hoặc chết do ốm đau, tai nạn rủi ro đối với quân nhân dự bị; học viên đào tạo sĩ quan dự bị từ 03 tháng trở lên chưa tham gia bảo hiểm xã hội, bảo hiểm y tế",
+  "language": "vi",
+  "status": "generated_from_pipeline",
+  "field": "Chính sách BQP",
+  "group_key": "suc_khoe_y_te",
+  "workflow_family": null,
+  "subflow": null,
+  "source": {
+    "source_url": "file:///C:/Users/ku060/Downloads/VAIC%20source/data-pipeline/raw_data/2_002763/2_002763_procedure_detail.md",
+    "source_markdown_path": "C:\\Users\\ku060\\Downloads\\VAIC source\\data-pipeline\\raw_data\\2_002763\\2_002763_procedure_detail.md",
+    "normalized_payload_path": "C:\\Users\\ku060\\Downloads\\VAIC source\\data-pipeline\\govease-unified\\data\\normalized_structured\\2_002763_normalized_structured.json",
+    "enriched_payload_path": "C:\\Users\\ku060\\Downloads\\VAIC source\\data-pipeline\\govease-unified\\data\\enriched_structured_priority\\2_002763_enriched_structured.json"
+  },
+  "scope": {
+    "included": "Thủ tục này thuộc nhóm y tế và bảo hiểm, thường dùng để đăng ký, điều chỉnh hoặc xác nhận quyền lợi bảo hiểm y tế. Kết quả thường nhận được là Quyết định trợ cấp của đơn vị trực tiếp huấn luyện. Thời gian xử lý tham khảo: 10 ngày làm việc.",
+    "not_included": []
+  },
+  "agency": {
+    "executing_agency": "Cấp đại đội, tiểu đoàn hoặc tương đương",
+    "submission_place": null,
+    "receiving_places": []
+  },
+  "target_users": [
+    "Công dân Việt Nam"
+  ],
+  "submission_methods": [
+    {
+      "code": "ONLINE",
+      "label": "Trực tuyến",
+      "processing_time": "10 ngày làm việc",
+      "fee": null,
+      "description": null
+    },
+    {
+      "code": "POSTAL",
+      "label": "Dịch vụ bưu chính",
+      "processing_time": "10 ngày làm việc",
+      "fee": null,
+      "description": null
+    },
+    {
+      "code": "IN_PERSON",
+      "label": "Trực tiếp",
+      "processing_time": "10 ngày làm việc",
+      "fee": null,
+      "description": null
+    }
+  ],
+  "processing_note": "Thời gian xử lý tham chiếu: 10 ngày làm việc. Nên xác định rõ đối tượng tham gia, quyền lợi hoặc nhu cầu điều chỉnh hồ sơ y tế trước khi nộp. Có thể chọn kênh nộp phù hợp: Trực tiếp, Trực tuyến, Dịch vụ bưu chính. Hiện có khoảng 2 mục giấy tờ cần theo dõi trong checklist.",
+  "documents": {
+    "normally_required": [
+      {
+        "name": "Lệnh gọi tập trung huấn luyện hoặc quyết định gọi đào tạo sĩ quan dự bị của cấp có thẩm quyền (01 bản sao)",
+        "quantity": "0 bản chính, 1 bản sao",
+        "notes": [],
+        "group": "default",
+        "attachment_path": null
+      }
+    ],
+    "conditional": [
+      {
+        "condition": "Giấy báo tử hoặc giấy chứng tử (01 bản sao) của đối tượng hoặc trích lục khai tử hoặc bản sao quyết định tuyên bố là đã chết của tòa án đã có hiệu lực pháp luật (đối với trường hợp mất tích)",
+        "document": "Giấy báo tử hoặc giấy chứng tử (01 bản sao) của đối tượng hoặc trích lục khai tử hoặc bản sao quyết định tuyên bố là đã chết của tòa án đã có hiệu lực pháp luật (đối với trường hợp mất tích)",
+        "quantity": "0 bản chính, 1 bản sao",
+        "notes": [],
+        "attachment_path": null
+      }
+    ],
+    "forms": [],
+    "presented": [],
+    "notes": [],
+    "summary": [
+      {
+        "group": "default",
+        "name": "Lệnh gọi tập trung huấn luyện hoặc quyết định gọi đào tạo sĩ quan dự bị của cấp có thẩm quyền (01 bản sao)",
+        "quantity": "0 bản chính, 1 bản sao",
+        "notes": [],
+        "attachment_path": null
+      },
+      {
+        "group": null,
+        "name": null,
+        "quantity": "0 bản chính, 1 bản sao",
+        "notes": [],
+        "attachment_path": null
+      }
+    ]
+  },
+  "steps": [
+    {
+      "order": 1,
+      "title": "Bước 1",
+      "description": "1.",
+      "example": null
+    },
+    {
+      "order": 2,
+      "title": "Bước 1.",
+      "description": "Bước 1. Thân nhân của đối tượng trực tiếp hoặc gửi trên môi trường điện tử hoặc qua dịch vụ bưu chính công ích nộp giấy báo tử hoặc giấy chứng tử của đối tượng (01 bản sao) hoặc trích lục khai tử hoặc bản sao quyết định tuyên bố là đã chết của tòa án đã có hiệu lực pháp luật (đối với trường hợp mất tích) cho đơn vị trực tiếp huấn luyện.",
+      "example": "dịch vụ bưu chính"
+    },
+    {
+      "order": 3,
+      "title": "Bước 2.",
+      "description": "Bước 2. Trong thời hạn 10 ngày làm việc, đơn vị trực tiếp huấn luyện tiếp nhận hồ sơ; thẩm định, hoàn thiện hồ sơ, quyết định việc hưởng trợ cấp theo quy định theo quy định tại điểm c khoản 1 Điều 8 Nghị định số 79/2020/NĐ-CP.",
+      "example": "10 ngày làm việc"
+    },
+    {
+      "order": 4,
+      "title": "Bước 3.",
+      "description": "Bước 3. Đơn vị trực tiếp huấn luyện thông báo cho gia đình đối tượng đến trực tiếp nhận trợ cấp hoặc chuyển khoản.",
+      "example": "trực tiếp"
+    }
+  ],
+  "input_fields": [
+    {
+      "field": "request_subject",
+      "label": "Đối tượng làm thủ tục",
+      "type": "string",
+      "required": true
+    },
+    {
+      "field": "insurance_or_medical_need",
+      "label": "Nhu cầu bảo hiểm hoặc y tế",
+      "type": "string",
+      "required": true
+    },
+    {
+      "field": "submission_channel_preference",
+      "label": "Kênh nộp dự kiến",
+      "type": "enum",
+      "required": false,
+      "options": [
+        "Trực tiếp",
+        "Trực tuyến",
+        "Dịch vụ bưu chính"
+      ]
+    },
+    {
+      "field": "has_insurance_number",
+      "label": "Đã có mã BHXH/BHYT",
+      "type": "boolean",
+      "required": false
+    },
+    {
+      "field": "insurance_participation_group",
+      "label": "Nhóm tham gia BHYT",
+      "type": "enum",
+      "required": true
+    }
+  ],
+  "validation_rules": [
+    {
+      "id": "required-1",
+      "severity": "error",
+      "field": "request_subject",
+      "rule": "Trường bắt buộc phải có dữ liệu hợp lệ trước khi nộp.",
+      "message": "Thiếu trường bắt buộc: Đối tượng làm thủ tục."
+    },
+    {
+      "id": "required-2",
+      "severity": "error",
+      "field": "insurance_or_medical_need",
+      "rule": "Trường bắt buộc phải có dữ liệu hợp lệ trước khi nộp.",
+      "message": "Thiếu trường bắt buộc: Nhu cầu bảo hiểm hoặc y tế."
+    },
+    {
+      "id": "required-5",
+      "severity": "error",
+      "field": "insurance_participation_group",
+      "rule": "Trường bắt buộc phải có dữ liệu hợp lệ trước khi nộp.",
+      "message": "Thiếu trường bắt buộc: Nhóm tham gia BHYT."
+    },
+    {
+      "id": "hint-1",
+      "severity": "warning",
+      "field": "general",
+      "rule": "Nên xác định trước kênh nộp hồ sơ để biết có cần bản giấy, bản điện tử hay xuất trình trực tiếp.",
+      "message": "Nên xác định trước kênh nộp hồ sơ để biết có cần bản giấy, bản điện tử hay xuất trình trực tiếp."
+    },
+    {
+      "id": "hint-2",
+      "severity": "warning",
+      "field": "general",
+      "rule": "Nên xác định đúng nhóm đối tượng, mã số bảo hiểm và quyền lợi áp dụng trước khi nộp.",
+      "message": "Nên xác định đúng nhóm đối tượng, mã số bảo hiểm và quyền lợi áp dụng trước khi nộp."
+    }
+  ],
+  "common_errors": [],
+  "clarifying_questions": [
+    {
+      "id": "clarify_1",
+      "question": "Bạn đang muốn đăng ký, điều chỉnh hay xác nhận quyền lợi y tế hoặc bảo hiểm nào?",
+      "purpose": "workflow_intake"
+    },
+    {
+      "id": "clarify_2",
+      "question": "Bạn đã có mã BHXH/BHYT hoặc thông tin đơn vị tiếp nhận liên quan chưa?",
+      "purpose": "workflow_intake"
+    }
+  ],
+  "legal_basis": [
+    {
+      "title": "01/2013/TT-BVHTTDL",
+      "code": "01/2013/TT-BVHTTDL"
+    },
+    {
+      "title": "Nghị định số 209/2025/NĐ-CP của Chính phủ: Sửa đổi, bổ sung một số điều của 11 Nghị định của Chính phủ thuộc lĩnh vực quản lý nhà nước của Bộ Quốc phòng",
+      "code": "209/2025/NĐ-CP"
+    },
+    {
+      "title": "Luật 53/2019/QH14",
+      "code": "53/2019/QH14"
+    },
+    {
+      "title": "Luật 84/2015/QH13",
+      "code": "84/2015/QH13"
+    },
+    {
+      "title": "Nghị định 79/2020/NĐ-CP",
+      "code": "79/2020/NĐ-CP"
+    }
+  ],
+  "legal_bases": [
+    {
+      "title": "01/2013/TT-BVHTTDL",
+      "code": "01/2013/TT-BVHTTDL"
+    },
+    {
+      "title": "Nghị định số 209/2025/NĐ-CP của Chính phủ: Sửa đổi, bổ sung một số điều của 11 Nghị định của Chính phủ thuộc lĩnh vực quản lý nhà nước của Bộ Quốc phòng",
+      "code": "209/2025/NĐ-CP"
+    },
+    {
+      "title": "Luật 53/2019/QH14",
+      "code": "53/2019/QH14"
+    },
+    {
+      "title": "Luật 84/2015/QH13",
+      "code": "84/2015/QH13"
+    },
+    {
+      "title": "Nghị định 79/2020/NĐ-CP",
+      "code": "79/2020/NĐ-CP"
+    }
+  ],
+  "faq": [
+    {
+      "question": "Có thể nộp qua kênh nào?",
+      "answer": "Các kênh hiện có: Trực tiếp, Trực tuyến, Dịch vụ bưu chính."
+    },
+    {
+      "question": "Thời gian xử lý tham chiếu là bao lâu?",
+      "answer": "Thời gian xử lý tham chiếu hiện có là 10 ngày làm việc."
+    },
+    {
+      "question": "Kết quả chính của thủ tục là gì?",
+      "answer": "Kết quả chính được trích xuất là Quyết định trợ cấp của đơn vị trực tiếp huấn luyện."
+    }
+  ],
+  "guidance": {
+    "highlight_documents": [
+      {
+        "bucket": "required",
+        "name": "Lệnh gọi tập trung huấn luyện hoặc quyết định gọi đào tạo sĩ quan dự bị của cấp có thẩm quyền (01 bản sao)",
+        "conditions": [],
+        "attachment_path": null
+      },
+      {
+        "bucket": "conditional",
+        "name": "Giấy báo tử hoặc giấy chứng tử (01 bản sao) của đối tượng hoặc trích lục khai tử hoặc bản sao quyết định tuyên bố là đã chết của tòa án đã có hiệu lực pháp luật (đối với trường hợp mất tích)",
+        "conditions": [
+          "Giấy báo tử hoặc giấy chứng tử (01 bản sao) của đối tượng hoặc trích lục khai tử hoặc bản sao quyết định tuyên bố là đã chết của tòa án đã có hiệu lực pháp luật (đối với trường hợp mất tích)"
+        ],
+        "attachment_path": null
+      }
+    ],
+    "special_cases": [],
+    "common_errors": [],
+    "validation_hints": [
+      "Nên xác định trước kênh nộp hồ sơ để biết có cần bản giấy, bản điện tử hay xuất trình trực tiếp.",
+      "Nên xác định đúng nhóm đối tượng, mã số bảo hiểm và quyền lợi áp dụng trước khi nộp."
+    ]
+  },
+  "next_steps": {
+    "summary": "Nên xác định rõ đối tượng tham gia, quyền lợi hoặc nhu cầu điều chỉnh hồ sơ y tế trước khi nộp. Có thể chọn kênh nộp phù hợp: Trực tiếp, Trực tuyến, Dịch vụ bưu chính. Hiện có khoảng 2 mục giấy tờ cần theo dõi trong checklist.",
+    "time_badge": "10 ngày làm việc",
+    "result_label": "Quyết định trợ cấp của đơn vị trực tiếp huấn luyện",
+    "primary_channel": "online",
+    "channels": [
+      "in_person",
+      "online",
+      "postal"
+    ]
+  },
+  "notes": [],
+  "provenance": {
+    "pipeline": "raw->structured->normalized->enriched->ui_api_payload",
+    "normalizer_version": "0.2.0",
+    "enricher_version": "0.2.0",
+    "mapping_notes": "excluded_from_clean_workflow_dataset",
+    "supported_group": true
+  }
+}

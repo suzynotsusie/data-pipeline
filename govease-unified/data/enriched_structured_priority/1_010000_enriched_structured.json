@@ -1,0 +1,120 @@
+{
+  "schema_version": "1.0",
+  "enricher_version": "0.2.0",
+  "source": {
+    "procedure_code": "1.010000",
+    "title": "Cấp Giấy chứng nhận đăng ký phương tiện giao thông đường sắt",
+    "group_key": "phuong_tien_nguoi_lai",
+    "workflow_family": null,
+    "subflow": null
+  },
+  "experience": {
+    "entry_label": "Hỗ trợ phương tiện và người lái",
+    "overview_summary": "Thủ tục này thuộc nhóm phương tiện và đăng kiểm, thường cần đối chiếu hồ sơ kỹ thuật, đăng ký hoặc chứng nhận an toàn của phương tiện. Kết quả thường nhận được là Cấp giấy chứng nhận đăng ký phương tiện giao thông đường sắt. Thời gian xử lý tham khảo: 3 ngày làm việc.",
+    "next_step_summary": "Nên kiểm tra trước loại phương tiện hoặc loại giấy phép cần xử lý, cùng hồ sơ kỹ thuật hoặc nhân thân liên quan. Có thể chọn kênh nộp phù hợp: Trực tiếp, Trực tuyến, Dịch vụ bưu chính. Hiện có khoảng 6 mục giấy tờ cần theo dõi trong checklist.",
+    "tone": "supportive_public_service"
+  },
+  "guidance": {
+    "highlight_documents": [
+      {
+        "bucket": "required",
+        "name": "Bản chính hoặc bản điện tử đơn đề nghị cấp Giấy chứng nhận đăng ký phương tiện của chủ sở hữu theo mẫu",
+        "conditions": [],
+        "attachment_path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/1_010000/1.%20Ph%E1%BB%A5%20l%E1%BB%A5c%201%20c%C3%A1p%20m%E1%BB%9Bi.docx"
+      },
+      {
+        "bucket": "required",
+        "name": "Bản chính hoặc bản sao có chứng thực hoặc bản điện tử hoặc bản sao điện tử tờ khai hải quan dùng cho phương tiện nhập khẩu hoặc tờ khai hải quan đã được thông quan.",
+        "conditions": [],
+        "attachment_path": null
+      },
+      {
+        "bucket": "required",
+        "name": "Bản chính hoặc bản điện tử đơn đề nghị cấp Giấy chứng nhận đăng ký phương tiện của chủ sở hữu theo mẫu.",
+        "conditions": [],
+        "attachment_path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/1_010000/2.%20Ph%E1%BB%A5%20l%E1%BB%A5c%202%20m%E1%BA%ABu%20%C4%91%C6%A1n%2C%20%C4%91%E1%BB%81%20ngh%E1%BB%8B%20%20h%E1%BB%8Fng%20ho%E1%BA%B7c%20m%E1%BA%A5t%20CN%C4%90K.docx"
+      },
+      {
+        "bucket": "required",
+        "name": "Bản chính hoặc bản điện tử đơn đề nghị cấp Giấy chứng nhận đăng ký phương tiện của chủ sở hữu theo mẫu. - Bản chính hoặc bản sao có chứng thực hoặc bản điện tử hoặc bản sao điện tử hợp đồng gói thầu hoặc hợp phần của gói thầu có thể hiện việc cung cấp phương tiện, biên bản bàn giao phương tiện cho chủ sở hữu.",
+        "conditions": [],
+        "attachment_path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/1_010000/1.%20%C4%90%C6%A1n%20c%E1%BA%A5p%20m%E1%BB%9Bi.docx"
+      },
+      {
+        "bucket": "conditional",
+        "name": "Bản chính hoặc bản sao có chứng thực hoặc bản điện tử hoặc bản sao điện tử các giấy tờ của phương tiện bao gồm: hợp đồng mua bán, đóng mới, lắp ráp, cho, tặng; chứng từ đã nộp lệ phí trước bạ (nếu có); quyết định điều chuyển phương tiện; hóa đơn của tổ chức, cá nhân bán phương tiện (nếu phương tiện đã chuyển qua nhiều tổ chức, cá nhân thì khi làm thủ tục cấp Giấy chứng nhận đăng ký phương tiện chỉ cần hóa đơn của tổ chức, cá nhân bán cuối cùng); đối với các giấy tờ bằng tiếng nước ngoài thì phải có bản dịch tiếng Việt đã được công chứng dịch thuật kèm theo; Trường hợp trong cùng một hợp đồng mua bán, đóng mới, lắp ráp, cho, tặng phương tiện, hóa đơn, tờ khai hải quan của hồ sơ có kê khai nhiều phương tiện thì chủ sở hữu có trách nhiệm cung cấp bảng kê khai cho từng phương tiện đề nghị được cấp Giấy chứng nhận đăng ký.",
+        "conditions": [
+          "Bản chính hoặc bản sao có chứng thực hoặc bản điện tử hoặc bản sao điện tử các giấy tờ của phương tiện bao gồm: hợp đồng mua bán, đóng mới, lắp ráp, cho, tặng; chứng từ đã nộp lệ phí trước bạ (nếu có); quyết định điều chuyển phương tiện; hóa đơn của tổ chức, cá nhân bán phương tiện (nếu phương tiện đã chuyển qua nhiều tổ chức, cá nhân thì khi làm thủ tục cấp Giấy chứng nhận đăng ký phương tiện chỉ cần hóa đơn của tổ chức, cá nhân bán cuối cùng); đối với các giấy tờ bằng tiếng nước ngoài thì phải có bản dịch tiếng Việt đã được công chứng dịch thuật kèm theo; Trường hợp trong cùng một hợp đồng mua bán, đóng mới, lắp ráp, cho, tặng phương tiện, hóa đơn, tờ khai hải quan của hồ sơ có kê khai nhiều phương tiện thì chủ sở hữu có trách nhiệm cung cấp bảng kê khai cho từng phương tiện đề nghị được cấp Giấy chứng nhận đăng ký."
+        ],
+        "attachment_path": null
+      },
+      {
+        "bucket": "conditional",
+        "name": "Bản chính hoặc bản sao có chứng thực hoặc bản điện tử hoặc bản sao điện tử các giấy tờ của phương tiện bao gồm: hợp đồng mua bán, đóng mới, lắp ráp, cho, tặng; chứng từ đã nộp lệ phí trước bạ (nếu có); quyết định điều chuyển phương tiện; hóa đơn của tổ chức, cá nhân bán phương tiện (nếu phương tiện đã chuyển qua nhiều tổ chức, cá nhân thì khi làm thủ tục cấp Giấy chứng nhận đăng ký phương tiện chỉ cần hóa đơn của tổ chức, cá nhân bán cuối cùng); đối với các giấy tờ bằng tiếng nước ngoài thì phải có bản dịch tiếng Việt đã được công chứng dịch thuật kèm theo; Trường hợp trong cùng một hợp đồng mua bán, đóng mới, lắp ráp, cho, tặng phương tiện, hóa đơn, tờ khai hải quan của hồ sơ có kê khai nhiều phương tiện thì chủ sở hữu có trách nhiệm cung cấp bảng kê khai cho từng phương tiện đề nghị được cấp Giấy chứng nhận đăng ký.",
+        "conditions": [
+          "Bản chính hoặc bản sao có chứng thực hoặc bản điện tử hoặc bản sao điện tử các giấy tờ của phương tiện bao gồm: hợp đồng mua bán, đóng mới, lắp ráp, cho, tặng; chứng từ đã nộp lệ phí trước bạ (nếu có); quyết định điều chuyển phương tiện; hóa đơn của tổ chức, cá nhân bán phương tiện (nếu phương tiện đã chuyển qua nhiều tổ chức, cá nhân thì khi làm thủ tục cấp Giấy chứng nhận đăng ký phương tiện chỉ cần hóa đơn của tổ chức, cá nhân bán cuối cùng); đối với các giấy tờ bằng tiếng nước ngoài thì phải có bản dịch tiếng Việt đã được công chứng dịch thuật kèm theo; Trường hợp trong cùng một hợp đồng mua bán, đóng mới, lắp ráp, cho, tặng phương tiện, hóa đơn, tờ khai hải quan của hồ sơ có kê khai nhiều phương tiện thì chủ sở hữu có trách nhiệm cung cấp bảng kê khai cho từng phương tiện đề nghị được cấp Giấy chứng nhận đăng ký."
+        ],
+        "attachment_path": null
+      }
+    ],
+    "special_cases": [
+      "Có yếu tố nước ngoài",
+      "Có trường hợp hồ sơ điện tử thay thế bản giấy",
+      "Có thể cần đối chiếu thông tin thửa đất hoặc giấy chứng nhận",
+      "Có thể cần hồ sơ kỹ thuật phương tiện hoặc giấy phép lái xe"
+    ],
+    "common_errors": [
+      "Thiếu giấy tờ hợp pháp hóa hoặc giấy tờ nhân thân của phía nước ngoài.",
+      "Điền sai mẫu tờ khai hoặc chọn sai biểu mẫu đi kèm.",
+      "Thông tin thửa đất, tài sản hoặc giấy chứng nhận chưa khớp với hồ sơ hiện có."
+    ],
+    "validation_hints": [
+      "Nên xác định trước kênh nộp hồ sơ để biết có cần bản giấy, bản điện tử hay xuất trình trực tiếp.",
+      "Có mẫu biểu đính kèm, nên kiểm tra đúng biểu mẫu trước khi nộp.",
+      "Nên đối chiếu trước thông tin phương tiện, hồ sơ kỹ thuật hoặc giấy phép lái xe liên quan."
+    ]
+  },
+  "intake": {
+    "candidate_input_fields": [
+      {
+        "field_id": "vehicle_or_license_need",
+        "label": "Nhu cầu về phương tiện hoặc giấy phép",
+        "field_type": "text",
+        "required": true
+      },
+      {
+        "field_id": "vehicle_or_person_identifier",
+        "label": "Thông tin phương tiện hoặc người lái",
+        "field_type": "text",
+        "required": true
+      },
+      {
+        "field_id": "submission_channel_preference",
+        "label": "Kênh nộp dự kiến",
+        "field_type": "enum",
+        "required": false
+      },
+      {
+        "field_id": "has_technical_or_identity_documents",
+        "label": "Đã có hồ sơ kỹ thuật hoặc giấy tờ nhân thân",
+        "field_type": "boolean",
+        "required": false
+      }
+    ],
+    "suggested_clarifying_questions": [
+      "Bạn đang xử lý hồ sơ cho phương tiện hay cho giấy phép lái xe?",
+      "Bạn đã có thông tin nhận diện phương tiện hoặc giấy tờ của người lái chưa?"
+    ]
+  },
+  "ui_hints": {
+    "primary_channel": "online",
+    "result_label": "Cấp giấy chứng nhận đăng ký phương tiện giao thông đường sắt",
+    "time_badge": "3 ngày làm việc",
+    "document_count_badge": 6
+  },
+  "provenance": {
+    "generator": "workflow_domain_enricher",
+    "derivation_mode": "rule_based_semantic_enrichment",
+    "supported_group": true
+  }
+}

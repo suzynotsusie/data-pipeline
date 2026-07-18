@@ -1,0 +1,387 @@
+{
+  "schema_version": "3.0",
+  "record_type": "public_service_procedure_payload",
+  "id": "procedure-1.014059",
+  "procedure_code": "1.014059",
+  "code": "1.014059",
+  "title": "Thu thập, cập nhật thông tin sinh trắc học về giọng nói vào Cơ sở dữ liệu về căn cước",
+  "language": "vi",
+  "status": "generated_from_pipeline",
+  "field": "Cấp, quản lý căn cước",
+  "group_key": "cu_tru_giay_to",
+  "workflow_family": null,
+  "subflow": null,
+  "source": {
+    "source_url": "file:///C:/Users/ku060/Downloads/VAIC%20source/data-pipeline/raw_data/1_014059/1_014059_procedure_detail.md",
+    "source_markdown_path": "C:\\Users\\ku060\\Downloads\\VAIC source\\data-pipeline\\raw_data\\1_014059\\1_014059_procedure_detail.md",
+    "normalized_payload_path": "C:\\Users\\ku060\\Downloads\\VAIC source\\data-pipeline\\govease-unified\\data\\normalized_structured\\1_014059_normalized_structured.json",
+    "enriched_payload_path": "C:\\Users\\ku060\\Downloads\\VAIC source\\data-pipeline\\govease-unified\\data\\enriched_structured_priority\\1_014059_enriched_structured.json"
+  },
+  "scope": {
+    "included": "Thủ tục này thuộc nhóm cư trú và giấy tờ, thường cần kiểm tra thông tin định danh hoặc hồ sơ giấy tờ chuyên ngành. Kết quả thường nhận được là Thông báo kết quả thu thập, cập nhật thông tin sinh trắc học về giọng nói vào Cơ sở dữ liệu về căn cước. Thời gian xử lý tham khảo: 7 ngày làm việc.",
+    "not_included": []
+  },
+  "agency": {
+    "executing_agency": "Công an cấp Xã",
+    "submission_place": null,
+    "receiving_places": []
+  },
+  "target_users": [
+    "Công dân Việt Nam"
+  ],
+  "submission_methods": [
+    {
+      "code": "IN_PERSON",
+      "label": "Trực tiếp",
+      "processing_time": "7 ngày làm việc",
+      "fee": null,
+      "description": "- Nộp hồ sơ trực tiếp tại Công an cấp xã. - Thời gian tiếp nhận hồ sơ: Giờ hành chính các ngày làm việc từ thứ 2 đến thứ 6 và sáng thứ 7 hàng tuần (trừ các ngày nghỉ lễ, tết theo quy định của pháp luật). - Thời hạn giải quyết: 07 ngày làm việc."
+    },
+    {
+      "code": "ONLINE",
+      "label": "Trực tuyến",
+      "processing_time": "7 ngày làm việc",
+      "fee": null,
+      "description": "- Nộp hồ sơ trực tiếp tại Công an cấp xã. - Thời gian tiếp nhận hồ sơ: Giờ hành chính các ngày làm việc từ thứ 2 đến thứ 6 và sáng thứ 7 hàng tuần (trừ các ngày nghỉ lễ, tết theo quy định của pháp luật). - Thời hạn giải quyết: 07 ngày làm việc."
+    }
+  ],
+  "processing_note": "Thời gian xử lý tham chiếu: 7 ngày làm việc. Nên kiểm tra trước giấy tờ định danh, nơi nộp và mẫu biểu liên quan, rồi chọn kênh nộp phù hợp: Trực tiếp, Trực tuyến. Hiện có khoảng 4 mục giấy tờ cần theo dõi trong checklist.",
+  "documents": {
+    "normally_required": [
+      {
+        "name": "Phiếu đề nghị giải quyết thủ tục về căn cước (Mẫu DC02 ban hành kèm theo Thông tư số 17/2024/TT-BCA của Bộ Công an)",
+        "quantity": "1 bản chính, 0 bản sao",
+        "notes": [],
+        "group": "default",
+        "attachment_path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/1_014059/M%E1%BA%ABu%20DC02%20Phi%E1%BA%BFu%20%C4%91%E1%BB%81%20ngh%E1%BB%8B%20gi%E1%BA%A3i%20quy%E1%BA%BFt%20th%E1%BB%A7%20t%E1%BB%A5c%20v%E1%BB%81%20c%C4%83n%20c%C6%B0%E1%BB%9Bc.doc"
+      },
+      {
+        "name": "Xuất trình thẻ căn cước của công dân để cơ quan Công an kiểm tra, xác định đúng người đề nghị thực hiện thủ tục.",
+        "quantity": "1 bản chính, 0 bản sao",
+        "notes": [],
+        "group": "default",
+        "attachment_path": null
+      }
+    ],
+    "conditional": [
+      {
+        "condition": "Văn bản cam kết bảo đảm sức khỏe bình thường không ảnh hưởng đến giọng nói đối với trường hợp quy định tại điểm d khoản 7 Điều 13 Nghị định số 70/2024/NĐ-CP ngày 25/6/2024",
+        "document": "Văn bản cam kết bảo đảm sức khỏe bình thường không ảnh hưởng đến giọng nói đối với trường hợp quy định tại điểm d khoản 7 Điều 13 Nghị định số 70/2024/NĐ-CP ngày 25/6/2024",
+        "quantity": "1 bản chính, 0 bản sao",
+        "notes": [],
+        "attachment_path": null
+      },
+      {
+        "condition": "Giấy tờ, tài liệu có giá trị pháp lý xác thực kết quả thu nhận, phân tích, lưu trữ giọng nói của cơ quan, tổ chức quy định tại khoản 5 Điều 13 Nghị định số 70/2024/NĐ-CP ngày 25/6/2024 (nếu có)",
+        "document": "Giấy tờ, tài liệu có giá trị pháp lý xác thực kết quả thu nhận, phân tích, lưu trữ giọng nói của cơ quan, tổ chức quy định tại khoản 5 Điều 13 Nghị định số 70/2024/NĐ-CP ngày 25/6/2024 (nếu có)",
+        "quantity": "1 bản chính, 0 bản sao",
+        "notes": [],
+        "attachment_path": null
+      }
+    ],
+    "forms": [
+      {
+        "name": "Phiếu đề nghị giải quyết thủ tục về căn cước (Mẫu DC02 ban hành kèm theo Thông tư số 17/2024/TT-BCA của Bộ Công an)",
+        "attachment_label": "Mẫu DC02 Phiếu đề nghị giải quyết thủ tục về căn cước.doc",
+        "attachment_path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/1_014059/M%E1%BA%ABu%20DC02%20Phi%E1%BA%BFu%20%C4%91%E1%BB%81%20ngh%E1%BB%8B%20gi%E1%BA%A3i%20quy%E1%BA%BFt%20th%E1%BB%A7%20t%E1%BB%A5c%20v%E1%BB%81%20c%C4%83n%20c%C6%B0%E1%BB%9Bc.doc"
+      }
+    ],
+    "presented": [],
+    "notes": [],
+    "summary": [
+      {
+        "group": "default",
+        "name": "Phiếu đề nghị giải quyết thủ tục về căn cước (Mẫu DC02 ban hành kèm theo Thông tư số 17/2024/TT-BCA của Bộ Công an)",
+        "quantity": "1 bản chính, 0 bản sao",
+        "notes": [],
+        "attachment_path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/1_014059/M%E1%BA%ABu%20DC02%20Phi%E1%BA%BFu%20%C4%91%E1%BB%81%20ngh%E1%BB%8B%20gi%E1%BA%A3i%20quy%E1%BA%BFt%20th%E1%BB%A7%20t%E1%BB%A5c%20v%E1%BB%81%20c%C4%83n%20c%C6%B0%E1%BB%9Bc.doc"
+      },
+      {
+        "group": "default",
+        "name": "Xuất trình thẻ căn cước của công dân để cơ quan Công an kiểm tra, xác định đúng người đề nghị thực hiện thủ tục.",
+        "quantity": "1 bản chính, 0 bản sao",
+        "notes": [],
+        "attachment_path": null
+      },
+      {
+        "group": null,
+        "name": null,
+        "quantity": "1 bản chính, 0 bản sao",
+        "notes": [],
+        "attachment_path": null
+      },
+      {
+        "group": null,
+        "name": null,
+        "quantity": "1 bản chính, 0 bản sao",
+        "notes": [],
+        "attachment_path": null
+      },
+      {
+        "group": null,
+        "name": "Phiếu đề nghị giải quyết thủ tục về căn cước (Mẫu DC02 ban hành kèm theo Thông tư số 17/2024/TT-BCA của Bộ Công an)",
+        "quantity": null,
+        "notes": null,
+        "attachment_path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/1_014059/M%E1%BA%ABu%20DC02%20Phi%E1%BA%BFu%20%C4%91%E1%BB%81%20ngh%E1%BB%8B%20gi%E1%BA%A3i%20quy%E1%BA%BFt%20th%E1%BB%A7%20t%E1%BB%A5c%20v%E1%BB%81%20c%C4%83n%20c%C6%B0%E1%BB%9Bc.doc"
+      }
+    ]
+  },
+  "steps": [
+    {
+      "order": 1,
+      "title": "Bước 1",
+      "description": "1.",
+      "example": null
+    },
+    {
+      "order": 2,
+      "title": "Bước 1:",
+      "description": "Bước 1: Cá nhân chuẩn bị đầy đủ hồ sơ theo quy định của pháp luật.",
+      "example": null
+    },
+    {
+      "order": 3,
+      "title": "Bước 2:",
+      "description": "Bước 2: Nộp hồ sơ tại Công an cấp xã trong cả nước không phụ thuộc vào nơi cư trú. (Lưu ý: Lộ trình thu thập, cập nhật thông tin sinh trắc học về giọng nói vào Cơ sở dữ liệu về căn cước tại Công an cấp xã trong cả nước không phụ thuộc vào nơi cư trú thực hiện theo thông báo của Bộ Công an)",
+      "example": null
+    },
+    {
+      "order": 4,
+      "title": "Bước 3:",
+      "description": "Bước 3: Cán bộ tiếp nhận hồ sơ kiểm tra tính pháp lý và nội dung hồ sơ. - Trường hợp thông tin sinh trắc học về giọng nói của công dân đã có trong hệ thống thông tin của cơ quan, tổ chức quy định tại khoản 5 Điều 13 Nghị Định số 70/2024/NĐ-CP ngày 25/6/2024 thì trong thời hạn 07 ngày làm việc kể từ ngày tiếp nhận đề nghị của công dân, Công an cấp xã có trách nhiệm phối hợp kiểm tra, đối sánh và xác thực đảm bảo tính chính xác của thông tin trước khi thu thập, cập nhật vào Cơ sở dữ liệu căn cước. - Trường hợp thông tin giọng nói của công dân chưa có trong hệ thống thông tin của cơ quan, tổ chức quy định tại khoản 5 Điều 13 Nghị Định số 70/2024/NĐ-CP ngày 25/6/2024 thì Công an cấp xã thực hiện trực tiếp thu thập thông tin sinh trắc học về giọng nói để cập nhật vào Cơ sở dữ liệu căn cước. - Trường hợp hồ sơ không đầy đủ thì hướng dẫn công dân bổ sung, hoàn thiện hồ sơ; trường hợp hồ sơ không hợp lệ thì từ chối tiếp nhận và nêu rõ lý do, thông báo về việc từ chối giải quyết thủ tục về căn cước (Mẫu CC03 ban hành kèm theo Thông tư số 53/2025/TT-BCA ngày 01/7/2025 của Bộ Công an).",
+      "example": "07 ngày làm việc"
+    }
+  ],
+  "input_fields": [
+    {
+      "field": "document_request_type",
+      "label": "Loại giấy tờ cần xử lý",
+      "type": "string",
+      "required": true
+    },
+    {
+      "field": "submission_channel_preference",
+      "label": "Kênh nộp dự kiến",
+      "type": "enum",
+      "required": false,
+      "options": [
+        "Trực tiếp",
+        "Trực tuyến"
+      ]
+    },
+    {
+      "field": "identity_document_available",
+      "label": "Có giấy tờ định danh",
+      "type": "boolean",
+      "required": true
+    },
+    {
+      "field": "residency_or_status_known",
+      "label": "Biết rõ nơi cư trú hoặc tình trạng hiện tại",
+      "type": "boolean",
+      "required": false
+    },
+    {
+      "field": "age_over_14",
+      "label": "Người làm thủ tục từ đủ 14 tuổi",
+      "type": "boolean",
+      "required": true
+    }
+  ],
+  "validation_rules": [
+    {
+      "id": "required-1",
+      "severity": "error",
+      "field": "document_request_type",
+      "rule": "Trường bắt buộc phải có dữ liệu hợp lệ trước khi nộp.",
+      "message": "Thiếu trường bắt buộc: Loại giấy tờ cần xử lý."
+    },
+    {
+      "id": "required-3",
+      "severity": "error",
+      "field": "identity_document_available",
+      "rule": "Trường bắt buộc phải có dữ liệu hợp lệ trước khi nộp.",
+      "message": "Thiếu trường bắt buộc: Có giấy tờ định danh."
+    },
+    {
+      "id": "required-5",
+      "severity": "error",
+      "field": "age_over_14",
+      "rule": "Trường bắt buộc phải có dữ liệu hợp lệ trước khi nộp.",
+      "message": "Thiếu trường bắt buộc: Người làm thủ tục từ đủ 14 tuổi."
+    },
+    {
+      "id": "hint-1",
+      "severity": "warning",
+      "field": "general",
+      "rule": "Nên xác định trước kênh nộp hồ sơ để biết có cần bản giấy, bản điện tử hay xuất trình trực tiếp.",
+      "message": "Nên xác định trước kênh nộp hồ sơ để biết có cần bản giấy, bản điện tử hay xuất trình trực tiếp."
+    },
+    {
+      "id": "hint-2",
+      "severity": "warning",
+      "field": "general",
+      "rule": "Có mẫu biểu đính kèm, nên kiểm tra đúng biểu mẫu trước khi nộp.",
+      "message": "Có mẫu biểu đính kèm, nên kiểm tra đúng biểu mẫu trước khi nộp."
+    },
+    {
+      "id": "hint-3",
+      "severity": "warning",
+      "field": "general",
+      "rule": "Nên đối chiếu trước dữ liệu định danh và nơi cư trú để tránh bị yêu cầu bổ sung.",
+      "message": "Nên đối chiếu trước dữ liệu định danh và nơi cư trú để tránh bị yêu cầu bổ sung."
+    }
+  ],
+  "common_errors": [
+    {
+      "field": "general",
+      "issue": "Điền sai mẫu tờ khai hoặc chọn sai biểu mẫu đi kèm.",
+      "fix": "Nên xác định trước kênh nộp hồ sơ để biết có cần bản giấy, bản điện tử hay xuất trình trực tiếp."
+    }
+  ],
+  "clarifying_questions": [
+    {
+      "id": "clarify_1",
+      "question": "Bạn đang xử lý giấy tờ gì và muốn nộp trực tiếp hay trực tuyến?",
+      "purpose": "workflow_intake"
+    },
+    {
+      "id": "clarify_2",
+      "question": "Thông tin định danh và nơi cư trú hiện tại đã sẵn sàng để đối chiếu chưa?",
+      "purpose": "workflow_intake"
+    }
+  ],
+  "legal_basis": [
+    {
+      "title": "Thông tư quy định quy định về quy trình cấp, cấp đổi, cấp lại thẻ căn cước, giấy chứng nhận căn cước",
+      "code": "18/2024/TT-BCA"
+    },
+    {
+      "title": "Nghị định của Chính phủ: Quy định chi tiết một số điều và biện pháp thi hành Luật Căn cước",
+      "code": "70/2024/NĐ-CP"
+    },
+    {
+      "title": "Luật Căn cước",
+      "code": "26/2023/QH15"
+    },
+    {
+      "title": "Thông tư quy định chi tiết một số điều và biện pháp thi hành Luật Căn cước",
+      "code": "17/2024/TT-BCA"
+    },
+    {
+      "title": "Nghị quyết số 190/2025/QH15 của Quốc hội: Quy định về xử lý một số vấn đề liên quan đến sắp xếp tổ chức bộ máy nhà nước",
+      "code": "190/2025/NQ-QH15"
+    },
+    {
+      "title": "Thông tư 16/2024/TT-BCA quy định về mẫu thẻ căn cước, mẫu giấy chứng nhận căn cước",
+      "code": "16/2024/TT-BCA"
+    },
+    {
+      "title": "Thông tư số 53/2025/TT-BCAngày 01/7/2025 của Bộ Công an sửa đổi, bổ sung một số điều của Thông tư số 55/2021/TT-BCA ngày 15 tháng 5 năm 2021 của Bộ trưởng Bộ Công an quy định chi tiết một số điều và biện pháp thi hành Luật Cư trú được sửa đổi, bổ sung bởi Thông tư số 66/2023/TT-BCA ngày 17 tháng 11 năm 2023; Thông tư số 56/2021/TT-BCA ngày 15 tháng 5 năm 2021 của Bộ trưởng Bộ Công an quy định về biểu mẫu trong đăng ký, quản lý cư trú được sửa đổi, bổ sung bởi Thông tư số 66/2023/TT-BCA ngày 17 tháng 11 năm 2023; Thông tư số 17/2024/TT-BCA ngày 15 tháng 5 năm 2024 của Bộ trưởng Bộ Công an quy định chi tiết một số điều và biện pháp thi hành Luật Căn cước.",
+      "code": "53/2025/TT-BCA"
+    }
+  ],
+  "legal_bases": [
+    {
+      "title": "Thông tư quy định quy định về quy trình cấp, cấp đổi, cấp lại thẻ căn cước, giấy chứng nhận căn cước",
+      "code": "18/2024/TT-BCA"
+    },
+    {
+      "title": "Nghị định của Chính phủ: Quy định chi tiết một số điều và biện pháp thi hành Luật Căn cước",
+      "code": "70/2024/NĐ-CP"
+    },
+    {
+      "title": "Luật Căn cước",
+      "code": "26/2023/QH15"
+    },
+    {
+      "title": "Thông tư quy định chi tiết một số điều và biện pháp thi hành Luật Căn cước",
+      "code": "17/2024/TT-BCA"
+    },
+    {
+      "title": "Nghị quyết số 190/2025/QH15 của Quốc hội: Quy định về xử lý một số vấn đề liên quan đến sắp xếp tổ chức bộ máy nhà nước",
+      "code": "190/2025/NQ-QH15"
+    },
+    {
+      "title": "Thông tư 16/2024/TT-BCA quy định về mẫu thẻ căn cước, mẫu giấy chứng nhận căn cước",
+      "code": "16/2024/TT-BCA"
+    },
+    {
+      "title": "Thông tư số 53/2025/TT-BCAngày 01/7/2025 của Bộ Công an sửa đổi, bổ sung một số điều của Thông tư số 55/2021/TT-BCA ngày 15 tháng 5 năm 2021 của Bộ trưởng Bộ Công an quy định chi tiết một số điều và biện pháp thi hành Luật Cư trú được sửa đổi, bổ sung bởi Thông tư số 66/2023/TT-BCA ngày 17 tháng 11 năm 2023; Thông tư số 56/2021/TT-BCA ngày 15 tháng 5 năm 2021 của Bộ trưởng Bộ Công an quy định về biểu mẫu trong đăng ký, quản lý cư trú được sửa đổi, bổ sung bởi Thông tư số 66/2023/TT-BCA ngày 17 tháng 11 năm 2023; Thông tư số 17/2024/TT-BCA ngày 15 tháng 5 năm 2024 của Bộ trưởng Bộ Công an quy định chi tiết một số điều và biện pháp thi hành Luật Căn cước.",
+      "code": "53/2025/TT-BCA"
+    }
+  ],
+  "faq": [
+    {
+      "question": "Có thể nộp qua kênh nào?",
+      "answer": "Các kênh hiện có: Trực tiếp, Trực tuyến."
+    },
+    {
+      "question": "Thời gian xử lý tham chiếu là bao lâu?",
+      "answer": "Thời gian xử lý tham chiếu hiện có là 7 ngày làm việc."
+    },
+    {
+      "question": "Kết quả chính của thủ tục là gì?",
+      "answer": "Kết quả chính được trích xuất là Thông báo kết quả thu thập, cập nhật thông tin sinh trắc học về giọng nói vào Cơ sở dữ liệu về căn cước."
+    }
+  ],
+  "guidance": {
+    "highlight_documents": [
+      {
+        "bucket": "required",
+        "name": "Phiếu đề nghị giải quyết thủ tục về căn cước (Mẫu DC02 ban hành kèm theo Thông tư số 17/2024/TT-BCA của Bộ Công an)",
+        "conditions": [],
+        "attachment_path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/1_014059/M%E1%BA%ABu%20DC02%20Phi%E1%BA%BFu%20%C4%91%E1%BB%81%20ngh%E1%BB%8B%20gi%E1%BA%A3i%20quy%E1%BA%BFt%20th%E1%BB%A7%20t%E1%BB%A5c%20v%E1%BB%81%20c%C4%83n%20c%C6%B0%E1%BB%9Bc.doc"
+      },
+      {
+        "bucket": "required",
+        "name": "Xuất trình thẻ căn cước của công dân để cơ quan Công an kiểm tra, xác định đúng người đề nghị thực hiện thủ tục.",
+        "conditions": [],
+        "attachment_path": null
+      },
+      {
+        "bucket": "conditional",
+        "name": "Văn bản cam kết bảo đảm sức khỏe bình thường không ảnh hưởng đến giọng nói đối với trường hợp quy định tại điểm d khoản 7 Điều 13 Nghị định số 70/2024/NĐ-CP ngày 25/6/2024",
+        "conditions": [
+          "Văn bản cam kết bảo đảm sức khỏe bình thường không ảnh hưởng đến giọng nói đối với trường hợp quy định tại điểm d khoản 7 Điều 13 Nghị định số 70/2024/NĐ-CP ngày 25/6/2024"
+        ],
+        "attachment_path": null
+      },
+      {
+        "bucket": "conditional",
+        "name": "Giấy tờ, tài liệu có giá trị pháp lý xác thực kết quả thu nhận, phân tích, lưu trữ giọng nói của cơ quan, tổ chức quy định tại khoản 5 Điều 13 Nghị định số 70/2024/NĐ-CP ngày 25/6/2024 (nếu có)",
+        "conditions": [
+          "Giấy tờ, tài liệu có giá trị pháp lý xác thực kết quả thu nhận, phân tích, lưu trữ giọng nói của cơ quan, tổ chức quy định tại khoản 5 Điều 13 Nghị định số 70/2024/NĐ-CP ngày 25/6/2024 (nếu có)"
+        ],
+        "attachment_path": null
+      }
+    ],
+    "special_cases": [],
+    "common_errors": [
+      "Điền sai mẫu tờ khai hoặc chọn sai biểu mẫu đi kèm."
+    ],
+    "validation_hints": [
+      "Nên xác định trước kênh nộp hồ sơ để biết có cần bản giấy, bản điện tử hay xuất trình trực tiếp.",
+      "Có mẫu biểu đính kèm, nên kiểm tra đúng biểu mẫu trước khi nộp.",
+      "Nên đối chiếu trước dữ liệu định danh và nơi cư trú để tránh bị yêu cầu bổ sung."
+    ]
+  },
+  "next_steps": {
+    "summary": "Nên kiểm tra trước giấy tờ định danh, nơi nộp và mẫu biểu liên quan, rồi chọn kênh nộp phù hợp: Trực tiếp, Trực tuyến. Hiện có khoảng 4 mục giấy tờ cần theo dõi trong checklist.",
+    "time_badge": "7 ngày làm việc",
+    "result_label": "Thông báo kết quả thu thập, cập nhật thông tin sinh trắc học về giọng nói vào Cơ sở dữ liệu về căn cước",
+    "primary_channel": "in_person",
+    "channels": [
+      "in_person",
+      "online"
+    ]
+  },
+  "notes": [],
+  "provenance": {
+    "pipeline": "raw->structured->normalized->enriched->ui_api_payload",
+    "normalizer_version": "0.2.0",
+    "enricher_version": "0.2.0",
+    "mapping_notes": "excluded_from_clean_workflow_dataset",
+    "supported_group": true
+  }
+}

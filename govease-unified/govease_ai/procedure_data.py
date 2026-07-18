@@ -66,9 +66,13 @@ def load_procedure_store(data_root: str | Path = DEFAULT_DATA_ROOT) -> Procedure
 
 
 def _load_index_records(data_root: Path) -> Iterable[ProcedureRecord]:
-    for path in data_root.glob("*/*_normalized.json"):
+    for path in _iter_index_paths(data_root):
         payload = _read_json(path)
         entries = payload.get("procedures", []) if isinstance(payload, dict) else payload
+        if isinstance(payload, dict) and not entries:
+            for subdomain in payload.get("subdomains", []):
+                if isinstance(subdomain, dict):
+                    entries.extend(subdomain.get("procedures", []))
         if not isinstance(entries, list):
             continue
 
@@ -76,7 +80,9 @@ def _load_index_records(data_root: Path) -> Iterable[ProcedureRecord]:
             if not isinstance(item, dict):
                 continue
             code = str(item.get("procedure_code") or item.get("code") or "").strip()
-            title = str(item.get("title") or item.get("name") or item.get("procedure_name") or "").strip()
+            title = str(
+                item.get("title") or item.get("name") or item.get("procedure_name") or item.get("procedure_title") or ""
+            ).strip()
             if not code and not title:
                 continue
             record_id = str(item.get("id") or code or _normalize_key(title)).strip()
@@ -93,7 +99,7 @@ def _load_index_records(data_root: Path) -> Iterable[ProcedureRecord]:
 
 
 def _load_detailed_records(data_root: Path) -> Iterable[ProcedureRecord]:
-    for path in data_root.glob("*/*.json"):
+    for path in data_root.rglob("*.json"):
         if _is_generated_or_index_file(path):
             continue
 
@@ -101,12 +107,23 @@ def _load_detailed_records(data_root: Path) -> Iterable[ProcedureRecord]:
         if not isinstance(payload, dict) or not _looks_like_detailed_template(payload):
             continue
 
-        code = str(payload.get("procedure_code") or payload.get("code") or "").strip()
+        source = payload.get("source") if isinstance(payload.get("source"), dict) else {}
+        code = str(
+            payload.get("procedure_code")
+            or payload.get("code")
+            or source.get("procedure_code")
+            or source.get("code")
+            or ""
+        ).strip()
         title = str(
-            payload.get("title") or payload.get("procedure_name") or payload.get("name") or code
+            payload.get("title")
+            or payload.get("procedure_name")
+            or payload.get("name")
+            or source.get("title")
+            or source.get("procedure_name")
+            or code
         ).strip()
         record_id = str(payload.get("id") or code or _normalize_key(title)).strip()
-        source = payload.get("source") if isinstance(payload.get("source"), dict) else {}
         source_url = str(source.get("source_url") or payload.get("source_url") or "").strip()
 
         yield ProcedureRecord(
@@ -122,6 +139,8 @@ def _load_detailed_records(data_root: Path) -> Iterable[ProcedureRecord]:
 
 def _keep_best(records_by_code: dict[str, ProcedureRecord], candidate: ProcedureRecord) -> None:
     key = candidate.code or candidate.id
+    if not key:
+        return
     current = records_by_code.get(key)
     if current is None or _record_score(candidate) > _record_score(current):
         records_by_code[key] = candidate
@@ -147,12 +166,27 @@ def _is_generated_or_index_file(path: Path) -> bool:
     name = path.name
     return (
         name.endswith("_normalized.json")
+        or name == "normalized.json"
         or name.endswith("_raw.json")
         or name.endswith("_report.json")
         or name in {"build_report.json"}
         or name.endswith("_chunks.json")
         or name.endswith("_chunks.jsonl")
     )
+
+
+def _iter_index_paths(data_root: Path) -> Iterable[Path]:
+    seen: set[Path] = set()
+    patterns = (
+        "*_normalized.json",
+        "normalized.json",
+    )
+    for pattern in patterns:
+        for path in data_root.rglob(pattern):
+            if path in seen:
+                continue
+            seen.add(path)
+            yield path
 
 
 def _read_json(path: Path) -> Any:

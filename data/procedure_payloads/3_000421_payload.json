@@ -1,0 +1,428 @@
+{
+  "schema_version": "3.0",
+  "record_type": "public_service_procedure_payload",
+  "id": "procedure-3.000421",
+  "procedure_code": "3.000421",
+  "code": "3.000421",
+  "title": "Thủ tục tuyển sinh theo chế độ cử tuyển đại học, cao đẳng, trung cấp",
+  "language": "vi",
+  "status": "generated_from_pipeline",
+  "field": "Tuyển sinh quân sự",
+  "group_key": "hoc_tap",
+  "workflow_family": null,
+  "subflow": null,
+  "source": {
+    "source_url": "file:///C:/Users/ku060/Downloads/VAIC%20source/data-pipeline/raw_data/3_000421/3_000421_procedure_detail.md",
+    "source_markdown_path": "C:\\Users\\ku060\\Downloads\\VAIC source\\data-pipeline\\raw_data\\3_000421\\3_000421_procedure_detail.md",
+    "normalized_payload_path": "C:\\Users\\ku060\\Downloads\\VAIC source\\data-pipeline\\govease-unified\\data\\normalized_structured\\3_000421_normalized_structured.json",
+    "enriched_payload_path": "C:\\Users\\ku060\\Downloads\\VAIC source\\data-pipeline\\govease-unified\\data\\enriched_structured_priority\\3_000421_enriched_structured.json"
+  },
+  "scope": {
+    "included": "Thủ tục này thuộc nhóm giáo dục và học tập, thường liên quan đến hồ sơ đào tạo, văn bằng hoặc điều kiện học tập của người học. Kết quả thường nhận được là Quyết định vào học của Trưởng ban Tuyển sinh quân sự Bộ Quốc phòng. Thời gian xử lý tham khảo: 1 ngày.",
+    "not_included": []
+  },
+  "agency": {
+    "executing_agency": "Trưởng ban tuyển sinh quân sự Bộ Quốc phòng",
+    "submission_place": null,
+    "receiving_places": []
+  },
+  "target_users": [
+    "Công dân Việt Nam"
+  ],
+  "submission_methods": [
+    {
+      "code": "IN_PERSON",
+      "label": "Trực tiếp",
+      "processing_time": "1 ngày",
+      "fee": null,
+      "description": null
+    }
+  ],
+  "processing_note": "Thời gian xử lý tham chiếu: 1 ngày. Nên rà trước thông tin người học, cơ sở đào tạo và loại kết quả cần xin xác nhận hoặc cấp lại. Có thể chọn kênh nộp phù hợp: Trực tiếp. Hiện có khoảng 9 mục giấy tờ cần theo dõi trong checklist.",
+  "documents": {
+    "normally_required": [
+      {
+        "name": "3. 01 phiếu khám sức khoẻ",
+        "quantity": "1 bản chính, 0 bản sao",
+        "notes": [],
+        "group": "default",
+        "attachment_path": null
+      },
+      {
+        "name": "9. Xác nhận nơi thường trú, thời gian thường trú. Ban Tuyển sinh quân sự cấp huyện chịu trách nhiệm xác nhận nơi thường trú, thời gian thường trú của thí sinh dự tuyển. Việc khai thác, sử dụng thông tin về cư trú thực hiện theo quy định tại Điều 14 Nghị định số 104/2022/NĐ- CP ngày 21/12/2022 của Chính phủ về sửa đổi, bổ sung một số điều của các nghị định liên quan đến việc nộp, xuất trình sổ hộ khẩu, sổ tạm trú giấy khi thực hiện thủ tục hành chính, cung cấp dịch vụ công",
+        "quantity": "1 bản chính, 0 bản sao",
+        "notes": [],
+        "group": "default",
+        "attachment_path": null
+      },
+      {
+        "name": "7. Bản sao học bạ trung học phổ thông",
+        "quantity": "0 bản chính, 1 bản sao",
+        "notes": [],
+        "group": "default",
+        "attachment_path": null
+      },
+      {
+        "name": "5. Bản sao kèm bản chính để đối chiếu hoặc bản sao được chứng thực từ bản chính giấy khai sinh",
+        "quantity": "0 bản chính, 1 bản sao",
+        "notes": [],
+        "group": "default",
+        "attachment_path": null
+      },
+      {
+        "name": "1. Đơn đăng ký xét tuyển học theo chế độ cử tuyển",
+        "quantity": "1 bản chính, 0 bản sao",
+        "notes": [],
+        "group": "default",
+        "attachment_path": null
+      },
+      {
+        "name": "2. 03 phiếu đăng ký dự tuyển theo quy định của Bộ Quốc phòng",
+        "quantity": "1 bản chính, 0 bản sao",
+        "notes": [],
+        "group": "default",
+        "attachment_path": null
+      },
+      {
+        "name": "4. 01 bản thẩm tra, xác minh lý lịch",
+        "quantity": "1 bản chính, 0 bản sao",
+        "notes": [],
+        "group": "default",
+        "attachment_path": null
+      },
+      {
+        "name": "6. Bản sao bằng tốt nghiệp trung học phổ thông hoặc giấy chứng nhận tốt nghiệp tạm thời đối với thí sinh chưa được cấp bằng tốt nghiệp",
+        "quantity": "0 bản chính, 1 bản sao",
+        "notes": [],
+        "group": "default",
+        "attachment_path": null
+      }
+    ],
+    "conditional": [
+      {
+        "condition": "8. Giấy xác nhận là con liệt sỹ, con thương binh, bệnh binh; người được hưởng chính sách như thương binh; các giấy xác nhận đối tượng mà thí sinh được hưởng ưu tiên xét cử tuyển (nếu có)",
+        "document": "8. Giấy xác nhận là con liệt sỹ, con thương binh, bệnh binh; người được hưởng chính sách như thương binh; các giấy xác nhận đối tượng mà thí sinh được hưởng ưu tiên xét cử tuyển (nếu có)",
+        "quantity": "1 bản chính, 0 bản sao",
+        "notes": [],
+        "attachment_path": null
+      }
+    ],
+    "forms": [],
+    "presented": [],
+    "notes": [],
+    "summary": [
+      {
+        "group": "default",
+        "name": "3. 01 phiếu khám sức khoẻ",
+        "quantity": "1 bản chính, 0 bản sao",
+        "notes": [],
+        "attachment_path": null
+      },
+      {
+        "group": "default",
+        "name": "9. Xác nhận nơi thường trú, thời gian thường trú. Ban Tuyển sinh quân sự cấp huyện chịu trách nhiệm xác nhận nơi thường trú, thời gian thường trú của thí sinh dự tuyển. Việc khai thác, sử dụng thông tin về cư trú thực hiện theo quy định tại Điều 14 Nghị định số 104/2022/NĐ- CP ngày 21/12/2022 của Chính phủ về sửa đổi, bổ sung một số điều của các nghị định liên quan đến việc nộp, xuất trình sổ hộ khẩu, sổ tạm trú giấy khi thực hiện thủ tục hành chính, cung cấp dịch vụ công",
+        "quantity": "1 bản chính, 0 bản sao",
+        "notes": [],
+        "attachment_path": null
+      },
+      {
+        "group": "default",
+        "name": "7. Bản sao học bạ trung học phổ thông",
+        "quantity": "0 bản chính, 1 bản sao",
+        "notes": [],
+        "attachment_path": null
+      },
+      {
+        "group": "default",
+        "name": "5. Bản sao kèm bản chính để đối chiếu hoặc bản sao được chứng thực từ bản chính giấy khai sinh",
+        "quantity": "0 bản chính, 1 bản sao",
+        "notes": [],
+        "attachment_path": null
+      },
+      {
+        "group": "default",
+        "name": "1. Đơn đăng ký xét tuyển học theo chế độ cử tuyển",
+        "quantity": "1 bản chính, 0 bản sao",
+        "notes": [],
+        "attachment_path": null
+      },
+      {
+        "group": "default",
+        "name": "2. 03 phiếu đăng ký dự tuyển theo quy định của Bộ Quốc phòng",
+        "quantity": "1 bản chính, 0 bản sao",
+        "notes": [],
+        "attachment_path": null
+      },
+      {
+        "group": "default",
+        "name": "4. 01 bản thẩm tra, xác minh lý lịch",
+        "quantity": "1 bản chính, 0 bản sao",
+        "notes": [],
+        "attachment_path": null
+      },
+      {
+        "group": "default",
+        "name": "6. Bản sao bằng tốt nghiệp trung học phổ thông hoặc giấy chứng nhận tốt nghiệp tạm thời đối với thí sinh chưa được cấp bằng tốt nghiệp",
+        "quantity": "0 bản chính, 1 bản sao",
+        "notes": [],
+        "attachment_path": null
+      },
+      {
+        "group": null,
+        "name": null,
+        "quantity": "1 bản chính, 0 bản sao",
+        "notes": [],
+        "attachment_path": null
+      }
+    ]
+  },
+  "steps": [
+    {
+      "order": 1,
+      "title": "Bước 1",
+      "description": "1. Căn cứ chỉ tiêu cử tuyển do Bộ Quốc phòng giao, Ban Tuyển sinh quân sự và cơ quan chức năng các quân khu hoặc tương đương phân bổ chỉ tiêu cho các đơn vị, địa phương trực thuộc và chỉ đạo, hướng dẫn tổ chức thực hiện, chỉ tiêu phải bảo đảm đúng cơ cấu vùng miền",
+      "example": null
+    },
+    {
+      "order": 2,
+      "title": "Bước 2",
+      "description": "Ban Tuyển sinh quân sự và cơ quan chức năng cấp sư đoàn, tỉnh và tương đương tổ chức sơ tuyển và hướng dẫn thí sinh làm hồ sơ theo mẫu quy định của Ban Tuyển sinh quân sự Bộ Quốc phòng, thực hiện xong trước ngày 25 tháng 6 hằng năm",
+      "example": "25 tháng"
+    },
+    {
+      "order": 3,
+      "title": "Bước 3",
+      "description": "Ban Tuyển sinh quân sự các cấp xét duyệt hồ sơ, thông qua cấp ủy cùng cấp và báo cáo đề nghị với các trường trước ngày 30 tháng 6 hằng năm",
+      "example": "30 tháng"
+    },
+    {
+      "order": 4,
+      "title": "Bước 4",
+      "description": "Hội đồng tuyển sinh các trường thẩm định, báo cáo đề nghị với Ban Tuyển sinh quân sự Bộ Quốc phòng (qua Cơ quan Thường trực) trước ngày 15 tháng 7 hằng năm",
+      "example": "15 tháng"
+    },
+    {
+      "order": 5,
+      "title": "Bước 5",
+      "description": "Cơ quan Thường trực chủ trì, phối hợp với cơ quan Thành viên Ban Tuyển sinh quân sự BQP thẩm định và đề xuất danh sách đủ tiêu chuẩn cử tuyển xong trước ngày 10 tháng 8 hằng năm; tổng hợp, báo cáo Trưởng ban Tuyển sinh quân sự Bộ Quốc phòng xem xét, quyết định trước ngày 30 tháng 8 hằng năm",
+      "example": "10 tháng"
+    }
+  ],
+  "input_fields": [
+    {
+      "field": "learner_full_name",
+      "label": "Tên người học",
+      "type": "string",
+      "required": true
+    },
+    {
+      "field": "education_record_type",
+      "label": "Loại hồ sơ học tập cần xử lý",
+      "type": "string",
+      "required": true
+    },
+    {
+      "field": "education_institution",
+      "label": "Cơ sở đào tạo liên quan",
+      "type": "string",
+      "required": false
+    },
+    {
+      "field": "submission_channel_preference",
+      "label": "Kênh nộp dự kiến",
+      "type": "enum",
+      "required": false,
+      "options": [
+        "Trực tiếp"
+      ]
+    }
+  ],
+  "validation_rules": [
+    {
+      "id": "required-1",
+      "severity": "error",
+      "field": "learner_full_name",
+      "rule": "Trường bắt buộc phải có dữ liệu hợp lệ trước khi nộp.",
+      "message": "Thiếu trường bắt buộc: Tên người học."
+    },
+    {
+      "id": "required-2",
+      "severity": "error",
+      "field": "education_record_type",
+      "rule": "Trường bắt buộc phải có dữ liệu hợp lệ trước khi nộp.",
+      "message": "Thiếu trường bắt buộc: Loại hồ sơ học tập cần xử lý."
+    },
+    {
+      "id": "hint-1",
+      "severity": "warning",
+      "field": "general",
+      "rule": "Nên xác định trước kênh nộp hồ sơ để biết có cần bản giấy, bản điện tử hay xuất trình trực tiếp.",
+      "message": "Nên xác định trước kênh nộp hồ sơ để biết có cần bản giấy, bản điện tử hay xuất trình trực tiếp."
+    },
+    {
+      "id": "hint-2",
+      "severity": "warning",
+      "field": "general",
+      "rule": "Nên rà lại thông tin người học, cơ sở đào tạo và loại xác nhận hoặc văn bằng cần xin.",
+      "message": "Nên rà lại thông tin người học, cơ sở đào tạo và loại xác nhận hoặc văn bằng cần xin."
+    }
+  ],
+  "common_errors": [
+    {
+      "field": "general",
+      "issue": "Điền sai mẫu tờ khai hoặc chọn sai biểu mẫu đi kèm.",
+      "fix": "Nên xác định trước kênh nộp hồ sơ để biết có cần bản giấy, bản điện tử hay xuất trình trực tiếp."
+    },
+    {
+      "field": "general",
+      "issue": "Thông tin thửa đất, tài sản hoặc giấy chứng nhận chưa khớp với hồ sơ hiện có.",
+      "fix": "Nên xác định trước kênh nộp hồ sơ để biết có cần bản giấy, bản điện tử hay xuất trình trực tiếp."
+    }
+  ],
+  "clarifying_questions": [
+    {
+      "id": "clarify_1",
+      "question": "Bạn đang cần xử lý hồ sơ học tập, văn bằng hay xác nhận nào?",
+      "purpose": "workflow_intake"
+    },
+    {
+      "id": "clarify_2",
+      "question": "Người học và cơ sở đào tạo liên quan đã xác định rõ chưa?",
+      "purpose": "workflow_intake"
+    }
+  ],
+  "legal_basis": [
+    {
+      "title": "Luật Giáo dục",
+      "code": "43/2019/QH14"
+    },
+    {
+      "title": "Sửa đổi bổ sung một số điều của Luật Nghĩa vụ quân sự",
+      "code": "43/2005/QH11"
+    },
+    {
+      "title": "Luật giáo dục đại học",
+      "code": "08/2012/QH13"
+    },
+    {
+      "title": "Sửa đổi, bổ sung một số điều của Luật Sĩ quan quân đội nhân dân Việt Nam",
+      "code": "19/2008/QH12"
+    },
+    {
+      "title": "Luật dân quân tự vệ",
+      "code": "48/2019/QH14"
+    },
+    {
+      "title": "Nghị định 141/2020/NĐ-CP",
+      "code": "141/2020/NĐ-CP"
+    }
+  ],
+  "legal_bases": [
+    {
+      "title": "Luật Giáo dục",
+      "code": "43/2019/QH14"
+    },
+    {
+      "title": "Sửa đổi bổ sung một số điều của Luật Nghĩa vụ quân sự",
+      "code": "43/2005/QH11"
+    },
+    {
+      "title": "Luật giáo dục đại học",
+      "code": "08/2012/QH13"
+    },
+    {
+      "title": "Sửa đổi, bổ sung một số điều của Luật Sĩ quan quân đội nhân dân Việt Nam",
+      "code": "19/2008/QH12"
+    },
+    {
+      "title": "Luật dân quân tự vệ",
+      "code": "48/2019/QH14"
+    },
+    {
+      "title": "Nghị định 141/2020/NĐ-CP",
+      "code": "141/2020/NĐ-CP"
+    }
+  ],
+  "faq": [
+    {
+      "question": "Có thể nộp qua kênh nào?",
+      "answer": "Các kênh hiện có: Trực tiếp."
+    },
+    {
+      "question": "Thời gian xử lý tham chiếu là bao lâu?",
+      "answer": "Thời gian xử lý tham chiếu hiện có là 1 ngày."
+    },
+    {
+      "question": "Kết quả chính của thủ tục là gì?",
+      "answer": "Kết quả chính được trích xuất là Quyết định vào học của Trưởng ban Tuyển sinh quân sự Bộ Quốc phòng."
+    }
+  ],
+  "guidance": {
+    "highlight_documents": [
+      {
+        "bucket": "required",
+        "name": "3. 01 phiếu khám sức khoẻ",
+        "conditions": [],
+        "attachment_path": null
+      },
+      {
+        "bucket": "required",
+        "name": "9. Xác nhận nơi thường trú, thời gian thường trú. Ban Tuyển sinh quân sự cấp huyện chịu trách nhiệm xác nhận nơi thường trú, thời gian thường trú của thí sinh dự tuyển. Việc khai thác, sử dụng thông tin về cư trú thực hiện theo quy định tại Điều 14 Nghị định số 104/2022/NĐ- CP ngày 21/12/2022 của Chính phủ về sửa đổi, bổ sung một số điều của các nghị định liên quan đến việc nộp, xuất trình sổ hộ khẩu, sổ tạm trú giấy khi thực hiện thủ tục hành chính, cung cấp dịch vụ công",
+        "conditions": [],
+        "attachment_path": null
+      },
+      {
+        "bucket": "required",
+        "name": "7. Bản sao học bạ trung học phổ thông",
+        "conditions": [],
+        "attachment_path": null
+      },
+      {
+        "bucket": "required",
+        "name": "5. Bản sao kèm bản chính để đối chiếu hoặc bản sao được chứng thực từ bản chính giấy khai sinh",
+        "conditions": [],
+        "attachment_path": null
+      },
+      {
+        "bucket": "required",
+        "name": "1. Đơn đăng ký xét tuyển học theo chế độ cử tuyển",
+        "conditions": [],
+        "attachment_path": null
+      },
+      {
+        "bucket": "required",
+        "name": "2. 03 phiếu đăng ký dự tuyển theo quy định của Bộ Quốc phòng",
+        "conditions": [],
+        "attachment_path": null
+      }
+    ],
+    "special_cases": [
+      "Có thể cần đối chiếu thông tin thửa đất hoặc giấy chứng nhận"
+    ],
+    "common_errors": [
+      "Điền sai mẫu tờ khai hoặc chọn sai biểu mẫu đi kèm.",
+      "Thông tin thửa đất, tài sản hoặc giấy chứng nhận chưa khớp với hồ sơ hiện có."
+    ],
+    "validation_hints": [
+      "Nên xác định trước kênh nộp hồ sơ để biết có cần bản giấy, bản điện tử hay xuất trình trực tiếp.",
+      "Nên rà lại thông tin người học, cơ sở đào tạo và loại xác nhận hoặc văn bằng cần xin."
+    ]
+  },
+  "next_steps": {
+    "summary": "Nên rà trước thông tin người học, cơ sở đào tạo và loại kết quả cần xin xác nhận hoặc cấp lại. Có thể chọn kênh nộp phù hợp: Trực tiếp. Hiện có khoảng 9 mục giấy tờ cần theo dõi trong checklist.",
+    "time_badge": "1 ngày",
+    "result_label": "Quyết định vào học của Trưởng ban Tuyển sinh quân sự Bộ Quốc phòng",
+    "primary_channel": "in_person",
+    "channels": [
+      "in_person"
+    ]
+  },
+  "notes": [],
+  "provenance": {
+    "pipeline": "raw->structured->normalized->enriched->ui_api_payload",
+    "normalizer_version": "0.2.0",
+    "enricher_version": "0.2.0",
+    "mapping_notes": "excluded_from_clean_workflow_dataset",
+    "supported_group": true
+  }
+}

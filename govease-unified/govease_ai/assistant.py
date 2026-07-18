@@ -2,6 +2,7 @@ from __future__ import annotations
 
 from typing import Any
 
+from .guidance import build_user_guidance
 from .model_config import ModelConfig
 from .procedure_data import ProcedureDataStore, ProcedureRecord, load_procedure_store
 from .retrieval import KeywordRetriever, normalize_text
@@ -99,6 +100,7 @@ class ProcedureAssistant:
                 for chunk in contexts
             ],
         }
+        result["checklist"].update(build_user_guidance(record.data))
         result["answer"] = _render_intake_answer(result, user_need=user_need)
         return result
 
@@ -140,7 +142,7 @@ def _documents(record: ProcedureRecord, *, group: str) -> list[dict[str, Any]]:
         return []
     values = docs.get(group) or []
     if not values and group == "normally_required":
-        values = docs.get("summary") or []
+        values = docs.get("presented") or _named_summary_items(docs.get("summary")) or []
     if not isinstance(values, list):
         return []
 
@@ -158,7 +160,34 @@ def _documents(record: ProcedureRecord, *, group: str) -> list[dict[str, Any]]:
                 "alternatives": item.get("alternatives") or item.get("documents"),
             }
         )
-    return normalized
+    normalized = [item for item in normalized if _clean_text(item.get("name"))]
+    if normalized:
+        return normalized
+
+    if group == "normally_required":
+        guidance = record.data.get("guidance") or {}
+        highlights = guidance.get("highlight_documents") if isinstance(guidance, dict) else []
+        fallback: list[dict[str, Any]] = []
+        for item in highlights or []:
+            if not isinstance(item, dict):
+                continue
+            bucket = str(item.get("bucket") or "").strip()
+            if bucket not in {"required", "presented"}:
+                continue
+            name = _clean_text(item.get("name"))
+            if not name:
+                continue
+            fallback.append(
+                {
+                    "name": name,
+                    "condition": "; ".join(item.get("conditions") or []) or None,
+                    "quantity": None,
+                    "notes": None,
+                    "alternatives": None,
+                }
+            )
+        return fallback
+    return []
 
 
 def _steps(record: ProcedureRecord) -> list[dict[str, Any]]:
@@ -196,6 +225,16 @@ def _quantity_from_summary_item(item: dict[str, Any]) -> str | None:
     if item.get("ban_sao") is not None:
         parts.append(f"{item['ban_sao']} ban sao")
     return ", ".join(parts) or None
+
+
+def _named_summary_items(values: Any) -> list[dict[str, Any]]:
+    if not isinstance(values, list):
+        return []
+    return [
+        item
+        for item in values
+        if isinstance(item, dict) and _clean_text(item.get("name") or item.get("document"))
+    ]
 
 
 def _derived_steps(record: ProcedureRecord) -> list[dict[str, Any]]:
@@ -308,6 +347,8 @@ def _render_intake_answer(result: dict[str, Any], *, user_need: str = "") -> str
 
     checklist = result.get("checklist") or {}
     documents = checklist.get("documents") or []
+    next_step_summary = _clean_text(checklist.get("next_step_summary"))
+    user_steps = checklist.get("user_steps") or []
     if documents:
         lines.append("Hồ sơ chính cần chuẩn bị:")
         lines.extend(_format_document_lines(documents, limit=10))
@@ -323,7 +364,10 @@ def _render_intake_answer(result: dict[str, Any], *, user_need: str = "") -> str
             lines.append("Giấy tờ phát sinh phù hợp với câu hỏi:")
         lines.extend(_format_document_lines(conditional_documents, limit=6))
 
-    steps = checklist.get("steps") or []
+    if next_step_summary:
+        lines.append(next_step_summary)
+
+    steps = user_steps or checklist.get("steps") or []
     if steps:
         lines.append("Các bước nên làm:")
         for step in steps:

@@ -1,0 +1,180 @@
+{
+  "schema_version": "1.0",
+  "normalizer_version": "0.2.0",
+  "source": {
+    "procedure_code": "2.002857",
+    "title": "Tiếp nhận học sinh xin học lại",
+    "raw_structured_parser_version": "0.1.0",
+    "field": "Giáo dục và Đào tạo thuộc hệ thống giáo dục quốc dân"
+  },
+  "procedure": {
+    "level": "Cơ quan khác",
+    "procedure_type": "NOT_ASSIGNED_REGULATION",
+    "target_users": [
+      "Người Việt Nam định cư ở nước ngoài",
+      "Công dân Việt Nam",
+      "Người nước ngoài"
+    ],
+    "authorities": [],
+    "receiving_places": []
+  },
+  "submission": {
+    "channels": [
+      "in_person",
+      "online",
+      "postal"
+    ],
+    "methods": [
+      {
+        "method_id": "method_1",
+        "channel": "in_person",
+        "processing_time_text": "8 ngày làm việc",
+        "fee_text": null,
+        "description": "- Trong thời gian không quá 05 ngày làm việc kể từ ngày tiếp nhận hồ sơ, hiệu trưởng nhà trường có ý kiến đồng ý về việc tiếp nhận học sinh;<br>- Trường hợp xin học lại tại trường khác: thời hạn giải quyết thực hiện như đối với học sinh chuyển trường.",
+        "is_online": false,
+        "is_postal": false,
+        "is_in_person": true
+      },
+      {
+        "method_id": "method_2",
+        "channel": "online",
+        "processing_time_text": "8 ngày làm việc",
+        "fee_text": null,
+        "description": "- Trong thời gian không quá 05 ngày làm việc kể từ ngày tiếp nhận hồ sơ, hiệu trưởng nhà trường có ý kiến đồng ý về việc tiếp nhận học sinh;<br>- Trường hợp xin học lại tại trường khác: thời hạn giải quyết thực hiện như đối với học sinh chuyển trường.",
+        "is_online": true,
+        "is_postal": false,
+        "is_in_person": false
+      },
+      {
+        "method_id": "method_3",
+        "channel": "postal",
+        "processing_time_text": "8 ngày làm việc",
+        "fee_text": null,
+        "description": "- Trong thời gian không quá 05 ngày làm việc kể từ ngày tiếp nhận hồ sơ, hiệu trưởng nhà trường có ý kiến đồng ý về việc tiếp nhận học sinh;<br>- Trường hợp xin học lại tại trường khác: thời hạn giải quyết thực hiện như đối với học sinh chuyển trường.",
+        "is_online": false,
+        "is_postal": true,
+        "is_in_person": false
+      }
+    ],
+    "timing_summary": {
+      "unique_processing_times": [
+        "8 ngày làm việc"
+      ],
+      "method_count": 3
+    }
+  },
+  "documents": {
+    "required": [
+      {
+        "document_id": "n_xin_h_c_l_i_c_a_h_c_sinh_ho_c_cha_m_h_c_sinh",
+        "name": "Đơn xin học lại của học sinh hoặc cha mẹ học sinh.",
+        "group_name": "default",
+        "group_type": "unknown",
+        "original_count": "1",
+        "copy_count": "0",
+        "conditions": [],
+        "attachment_label": null,
+        "attachment_path": null
+      }
+    ],
+    "conditional": [],
+    "presented": [],
+    "notes": [],
+    "forms": [],
+    "empty_groups": [],
+    "document_count": 1
+  },
+  "process": {
+    "steps": [
+      {
+        "step_id": "step_1",
+        "title": null,
+        "content": "1. **Trường hợp xin học lại tại trường đã thôi học:**",
+        "actor": "user",
+        "channel_hint": null,
+        "time_hint": null
+      },
+      {
+        "step_id": "step_2",
+        "title": null,
+        "content": "- Học sinh hoặc cha mẹ học sinh nộp đơn xin học lại và khai báo thông tin cá nhân trên Cổng dịch vụ công. Trường hợp không thực hiện được việc nộp đơn xin học lại và khai báo thông tin cá nhân trên Cổng dịch vụ công, học sinh hoặc cha mẹ học sinh nộp đơn xin học lại bằng hình thức nộp trực tiếp, nộp trực tuyến hoặc nộp qua đường bưu điện;",
+        "actor": "user",
+        "channel_hint": "trực tuyến",
+        "time_hint": null
+      },
+      {
+        "step_id": "step_3",
+        "title": null,
+        "content": "- Nhà trường tiếp nhận hồ sơ học sinh, kiểm tra đối chiếu các thông tin để xem xét, quyết định theo quy định của Giám đốc Sở Giáo dục và Đào tạo; thông báo cho học sinh kết quả được chấp nhận vào nhập học tại trường hoặc không được chấp nhận;",
+        "actor": "user",
+        "channel_hint": null,
+        "time_hint": null
+      },
+      {
+        "step_id": "step_4",
+        "title": null,
+        "content": "- Hiệu trưởng nhà trường; tổ chức trao đổi, khảo sát, tư vấn và tiếp nhận xếp học sinh vào lớp.",
+        "actor": "user",
+        "channel_hint": null,
+        "time_hint": null
+      },
+      {
+        "step_id": "step_5",
+        "title": null,
+        "content": "2. **Trường hợp xin học lại tại trường khác:**",
+        "actor": "user",
+        "channel_hint": null,
+        "time_hint": null
+      },
+      {
+        "step_id": "step_6",
+        "title": null,
+        "content": "Hồ sơ bổ sung và thủ tục thực hiện như đối với học sinh chuyển trường.",
+        "actor": "user",
+        "channel_hint": null,
+        "time_hint": null
+      }
+    ],
+    "step_count": 6,
+    "notes": []
+  },
+  "eligibility": {
+    "conditions": [
+      "- Học sinh xin học lại sau thời gian nghỉ nhưng còn trong độ tuổi quy định theo cấp học;",
+      "- Việc xin học lại được thực hiện trong thời gian nghỉ hè trước khi khai giảng năm học mới."
+    ],
+    "has_conditions": true
+  },
+  "results": {
+    "items": [
+      {
+        "name": "Phê duyệt của Hiệu trưởng nơi học sinh xin học lại về việc tiếp nhận học sinh",
+        "result_code": "KQ.G03.000500",
+        "raw_text": "Phê duyệt của Hiệu trưởng nơi học sinh xin học lại về việc tiếp nhận học sinh"
+      }
+    ],
+    "primary_result": {
+      "name": "Phê duyệt của Hiệu trưởng nơi học sinh xin học lại về việc tiếp nhận học sinh",
+      "result_code": "KQ.G03.000500",
+      "raw_text": "Phê duyệt của Hiệu trưởng nơi học sinh xin học lại về việc tiếp nhận học sinh"
+    }
+  },
+  "legal_basis": {
+    "items": [
+      {
+        "title": "Ban hành Điều lệ trường tiểu học, trường trung học cơ sở, trường trung học phổ thông và trường phổ thông có nhiều cấp học",
+        "code": "15/2026/TT-BGDĐT"
+      }
+    ],
+    "count": 1
+  },
+  "attachments": [],
+  "signals": {
+    "raw_parse_warnings": [],
+    "missing_documents": false,
+    "documents_section_present": true,
+    "documents_declared_empty": false,
+    "documents_only_in_notes": false,
+    "missing_results": false
+  }
+}

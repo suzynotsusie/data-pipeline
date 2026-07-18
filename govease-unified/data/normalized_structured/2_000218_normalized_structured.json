@@ -1,0 +1,215 @@
+{
+  "schema_version": "1.0",
+  "normalizer_version": "0.2.0",
+  "source": {
+    "procedure_code": "2.000218",
+    "title": "Cấp sửa đổi, bổ sung Giấy phép sản xuất sản phẩm thuốc lá",
+    "raw_structured_parser_version": "0.1.0",
+    "field": "Công nghiệp tiêu dùng"
+  },
+  "procedure": {
+    "level": "Cấp bộ/ngành",
+    "procedure_type": "NOT_ASSIGNED_REGULATION",
+    "target_users": [
+      "Doanh nghiệp"
+    ],
+    "authorities": [
+      "Bộ Công thương"
+    ],
+    "receiving_places": []
+  },
+  "submission": {
+    "channels": [
+      "in_person",
+      "online",
+      "postal"
+    ],
+    "methods": [
+      {
+        "method_id": "method_1",
+        "channel": "online",
+        "processing_time_text": "15 ngày làm việc",
+        "fee_text": null,
+        "description": null,
+        "is_online": true,
+        "is_postal": false,
+        "is_in_person": false
+      },
+      {
+        "method_id": "method_2",
+        "channel": "postal",
+        "processing_time_text": "15 ngày làm việc",
+        "fee_text": null,
+        "description": null,
+        "is_online": false,
+        "is_postal": true,
+        "is_in_person": false
+      },
+      {
+        "method_id": "method_3",
+        "channel": "in_person",
+        "processing_time_text": "15 ngày làm việc",
+        "fee_text": null,
+        "description": null,
+        "is_online": false,
+        "is_postal": false,
+        "is_in_person": true
+      }
+    ],
+    "timing_summary": {
+      "unique_processing_times": [
+        "15 ngày làm việc"
+      ],
+      "method_count": 3
+    }
+  },
+  "documents": {
+    "required": [
+      {
+        "document_id": "b_n_sao_gi_y_ph_p_s_n_xu_t_s_n_ph_m_thu_c_l",
+        "name": "Bản sao Giấy phép sản xuất sản phẩm thuốc lá",
+        "group_name": "default",
+        "group_type": "unknown",
+        "original_count": "0",
+        "copy_count": "1",
+        "conditions": [],
+        "attachment_label": null,
+        "attachment_path": null
+      },
+      {
+        "document_id": "c_c_t_i_li_u_ch_ng_minh_nhu_c_u_s_a_i_b_sung",
+        "name": "Các tài liệu chứng minh nhu cầu sửa đổi, bổ sung.",
+        "group_name": "default",
+        "group_type": "unknown",
+        "original_count": "1",
+        "copy_count": "0",
+        "conditions": [],
+        "attachment_label": null,
+        "attachment_path": null
+      },
+      {
+        "document_id": "v_n_b_n_ngh_s_a_i_b_sung",
+        "name": "Văn bản đề nghị sửa đổi, bổ sung;",
+        "group_name": "default",
+        "group_type": "unknown",
+        "original_count": "1",
+        "copy_count": "0",
+        "conditions": [],
+        "attachment_label": "Phụ lục 32.docx",
+        "attachment_path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/2_000218/Ph%E1%BB%A5%20l%E1%BB%A5c%2032.docx"
+      }
+    ],
+    "conditional": [],
+    "presented": [],
+    "notes": [],
+    "forms": [
+      {
+        "name": "Văn bản đề nghị sửa đổi, bổ sung;",
+        "attachment_label": "Phụ lục 32.docx",
+        "attachment_path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/2_000218/Ph%E1%BB%A5%20l%E1%BB%A5c%2032.docx"
+      }
+    ],
+    "empty_groups": [],
+    "document_count": 3
+  },
+  "process": {
+    "steps": [
+      {
+        "step_id": "step_1",
+        "title": null,
+        "content": "1. + Doanh nghiệp sản xuất thuốc lá nộp 01 bộ hồ sơ đề nghị cấp sửa đổi, bổ sung Giấy phép sản xuất sản phẩm thuốc lá cho Bộ Công Thương",
+        "actor": "user",
+        "channel_hint": null,
+        "time_hint": null
+      },
+      {
+        "step_id": "step_2",
+        "title": null,
+        "content": "+ Trong thời hạn 15 ngày làm việc kể từ ngày nhận đủ hồ sơ hợp lệ, cơ quan có thẩm quyền xem xét và cấp lại Giấy phép sản xuất sản phẩm thuốc lá.",
+        "actor": "authority",
+        "channel_hint": null,
+        "time_hint": "15 ngày làm việc"
+      },
+      {
+        "step_id": "step_3",
+        "title": null,
+        "content": "+ Trường hợp doanh nghiệp không đáp ứng được điều kiện theo quy định, Bộ Công Thương sẽ có văn bản trả lời từ chối cấp phép và nêu rõ lý do.",
+        "actor": "user",
+        "channel_hint": null,
+        "time_hint": null
+      }
+    ],
+    "step_count": 3,
+    "notes": []
+  },
+  "eligibility": {
+    "conditions": [
+      "- Doanh nghiệp đang sản xuất sản phẩm thuốc lá trước thời điểm ban hành Nghị quyết số 12/2000/NQ-CP ngày 14 tháng 8 năm 2000 của Chính phủ về Chính sách quốc gia phòng, chống tác hại thuốc lá trong giai đoạn 2000 - 2010 hoặc doanh nghiệp đã được Thủ tướng Chính phủ đồng ý về chủ trương đầu tư trong trường hợp sáp nhập, liên doanh để sản xuất thuốc lá.",
+      "- Điều kiện về đầu tư và sử dụng nguyên liệu thuốc lá được trồng trong nước:",
+      "+ Doanh nghiệp phải tham gia đầu tư trồng cây thuốc lá dưới hình thức đầu tư trực tiếp hoặc liên kết đầu tư với các doanh nghiệp có Giấy chứng nhận đủ điều kiện đầu tư trồng cây thuốc lá, phù hợp với quy mô sản xuất kinh doanh của doanh nghiệp",
+      "+ Phải sử dụng nguyên liệu thuốc lá được trồng trong nước để sản xuất thuốc lá. Trong trường hợp không đủ nguyên liệu trong nước thì được nhập khẩu phần nguyên liệu còn thiếu theo kế hoạch nhập khẩu hàng năm do Bộ Công Thương công bố, trừ trường hợp sản xuất sản phẩm thuốc lá nhãn nước ngoài hoặc sản phẩm thuốc lá để xuất khẩu.",
+      "- Điều kiện về máy móc thiết bị:",
+      "Có máy móc thiết bị chuyên ngành gồm các công đoạn chính: Cuốn điếu, đóng bao;"
+    ],
+    "has_conditions": true
+  },
+  "results": {
+    "items": [
+      {
+        "name": "Cấp sửa đổi, bổ sung Giấy phép sản xuất sản phẩm thuốc lá",
+        "result_code": "KQ.G02.000105",
+        "raw_text": "Cấp sửa đổi, bổ sung Giấy phép sản xuất sản phẩm thuốc lá"
+      }
+    ],
+    "primary_result": {
+      "name": "Cấp sửa đổi, bổ sung Giấy phép sản xuất sản phẩm thuốc lá",
+      "result_code": "KQ.G02.000105",
+      "raw_text": "Cấp sửa đổi, bổ sung Giấy phép sản xuất sản phẩm thuốc lá"
+    }
+  },
+  "legal_basis": {
+    "items": [
+      {
+        "title": "Sửa đổi, bổ sung một số điều của Thông tư số 57/2018/TT-BCT ngày 26 tháng 12 năm 2018 của Bộ trưởng Bộ Công Thương quy định chi tiết một số điều của các Nghị định liên quan đến kinh doanh thuốc lá",
+        "code": "28/2019/TT-BCT"
+      },
+      {
+        "title": "sửa đổi, bổ sung một số điều của Nghị định số 67/2013/NĐ-CP ngày 27 tháng 6 năm 2013 của Chính phủ quy định chi tiết một số điều và biện pháp thi hành Luật Phòng, chống tác hại của thuốc lá về kinh doanh thuốc lá",
+        "code": "106/2017/NĐ-CP"
+      },
+      {
+        "title": "Quy định chi tiết một số điều và biện pháp thi hành Luật Phòng, chống tác hại của thuốc lá về kinh doanh thuốc lá",
+        "code": "67/2013/NĐ-CP"
+      },
+      {
+        "title": "Sửa đổi, bổ sung một số điều của các Nghị định liên quan đến điều kiện đầu tư kinh doanh thuộc lĩnh vực quản lý nhà nước của Bộ Công Thương",
+        "code": "17/2020/NĐ-CP"
+      },
+      {
+        "title": "Sửa đổi một số Nghị định liên quan đến điều kiện đầu tư kinh doanh thuộc phạm vi quản lý nhà nước của Bộ Công Thương",
+        "code": "08/2018/NĐ-CP"
+      },
+      {
+        "title": "Quy định chi tiết một số điều của các Nghị định liên quan đến kinh doanh thuốc lá",
+        "code": "57/2018/TT-BCT"
+      }
+    ],
+    "count": 6
+  },
+  "attachments": [
+    {
+      "label": "Phụ lục 32.docx",
+      "path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/2_000218/Ph%E1%BB%A5%20l%E1%BB%A5c%2032.docx",
+      "source_section": "Thành phần hồ sơ",
+      "document_name": "Văn bản đề nghị sửa đổi, bổ sung;"
+    }
+  ],
+  "signals": {
+    "raw_parse_warnings": [],
+    "missing_documents": false,
+    "documents_section_present": true,
+    "documents_declared_empty": false,
+    "documents_only_in_notes": false,
+    "missing_results": false
+  }
+}

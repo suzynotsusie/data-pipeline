@@ -1,0 +1,266 @@
+{
+  "schema_version": "1.0",
+  "domain": "viec_lam",
+  "updated_at": "2026-07-18",
+  "source_files": [
+    "C:\\Users\\ku060\\Downloads\\VAIC source\\data-pipeline\\main\\full-data.csv",
+    "C:\\Users\\ku060\\Downloads\\VAIC source\\data-pipeline\\data\\workflows\\viec_lam\\summary.csv",
+    "C:\\Users\\ku060\\Downloads\\VAIC source\\data-pipeline\\data\\workflows\\viec_lam\\normalized.json",
+    "C:\\Users\\ku060\\Downloads\\VAIC source\\data-pipeline\\raw_data"
+  ],
+  "coverage": {
+    "expected_codes": [
+      "1.115302",
+      "1.115303",
+      "1.115304",
+      "1.115305",
+      "1.115306",
+      "1.115307",
+      "1.115308",
+      "1.115309"
+    ],
+    "covered_codes": [
+      "1.115302",
+      "1.115303",
+      "1.115304",
+      "1.115305",
+      "1.115306",
+      "1.115307",
+      "1.115308",
+      "1.115309"
+    ],
+    "missing_codes": []
+  },
+  "llm_contract": {
+    "role": "parse_user_answer_and_rephrase_question_only",
+    "required_output_schema": {
+      "intent": "viec_lam",
+      "current_node": "string",
+      "slot_updates": {
+        "subdomain_key": "ho_tro_tu_van_gioi_thieu_viec_lam | tuyen_dung | bao_hiem_xa_hoi_that_nghiep_tro_cap | chung_chi_hanh_nghe | nang_ngach | thue_thu_nhap_ca_nhan | cap_phep_lao_dong_nguoi_nuoc_ngoai | unknown",
+        "operation_key": "string",
+        "operation_group": "string"
+      },
+      "confidence": "0_to_1",
+      "needs_human_review": "boolean"
+    }
+  },
+  "entry_prompts": [
+    "Bạn đang cần tìm việc, nhận trợ cấp thất nghiệp, học nâng cao kỹ năng, khai thuế thu nhập hay làm giấy phép lao động?",
+    "Bạn muốn đăng ký mới, điều chỉnh thông tin, xin hỗ trợ, xin cấp chứng chỉ hay xin giấy phép làm việc?"
+  ],
+  "slots": [
+    {
+      "name": "subdomain_key",
+      "required": true,
+      "description": "Nhánh chính của nhóm Việc làm."
+    },
+    {
+      "name": "operation_key",
+      "required": true,
+      "description": "Thao tác cụ thể ánh xạ trực tiếp tới thủ tục cuối cùng."
+    },
+    {
+      "name": "operation_group",
+      "required": false,
+      "description": "Nhóm thao tác để gom các thủ tục gần nhau cho UI và parser."
+    }
+  ],
+  "subdomain_catalog": [
+    {
+      "subdomain_key": "tuyen_dung",
+      "subdomain_label": "Tuyển dụng",
+      "event_id": 261,
+      "summary": "Nhóm thủ tục đăng ký lao động và điều chỉnh trạng thái lao động, phục vụ nhu cầu tìm việc và quản lý hồ sơ việc làm của người lao động."
+    }
+  ],
+  "decision_tree": {
+    "start_node": "employment_subdomain",
+    "nodes": [
+      {
+        "id": "employment_subdomain",
+        "type": "question",
+        "slot": "subdomain_key",
+        "question": "Bạn đang hỏi về hỗ trợ việc làm, tuyển dụng, trợ cấp thất nghiệp, chứng chỉ nghề, nâng cao kỹ năng, thuế thu nhập cá nhân hay giấy phép lao động cho người nước ngoài?",
+        "options": [
+          "tuyen_dung"
+        ],
+        "prefilled_value": "tuyen_dung"
+      },
+      {
+        "id": "employment_operation",
+        "type": "question",
+        "slot": "operation_key",
+        "question": "Bạn cần làm thao tác nào cụ thể trong nhánh đã chọn?",
+        "options_by_subdomain": {
+          "tuyen_dung": [
+            {
+              "operation_key": "thu_tuc_ket_noi_econtract_voi_nen_tang_hop_dong_lao_dong_dien_tu",
+              "operation_group": "ket_noi_hop_dong_lao_dong_dien_tu",
+              "procedure_code": "1.115302",
+              "procedure_title": "Thủ tục Kết nối eContract với Nền tảng hợp đồng lao động điện tử"
+            },
+            {
+              "operation_key": "dang_ky_lao_dong_doi_voi_nguoi_lao_dong_thuoc_doi_tuong_tham_gia_bao_hiem_xa_hoi_bat_buoc",
+              "operation_group": "dang_ky_lao_dong",
+              "procedure_code": "1.115303",
+              "procedure_title": "Đăng ký lao động đối với người lao động thuộc đối tượng tham gia bảo hiểm xã hội bắt buộc"
+            },
+            {
+              "operation_key": "dieu_chinh_thong_tin_dang_ky_lao_dong_doi_voi_nguoi_lao_dong_thuoc_doi_tuong_tham_gia_bao_hiem_xa_hoi_bat_buoc",
+              "operation_group": "dieu_chinh_dang_ky_lao_dong",
+              "procedure_code": "1.115304",
+              "procedure_title": "Điều chỉnh thông tin đăng ký lao động đối với người lao động thuộc đối tượng tham gia bảo hiểm xã hội bắt buộc"
+            },
+            {
+              "operation_key": "dang_ky_lao_dong_doi_voi_nguoi_lao_dong_dang_co_viec_lam_khong_thuoc_doi_tuong_tham_gia_bao_hiem_xa_hoi_bat_buoc_nguoi_that_nghiep",
+              "operation_group": "dang_ky_lao_dong",
+              "procedure_code": "1.115305",
+              "procedure_title": "Đăng ký lao động đối với người lao động đang có việc làm không thuộc đối tượng tham gia bảo hiểm xã hội bắt buộc, người thất nghiệp."
+            },
+            {
+              "operation_key": "dieu_chinh_thong_tin_dang_ky_lao_dong_doi_voi_nguoi_lao_dong_dang_co_viec_lam_va_khong_thuoc_doi_tuong_tham_gia_bao_hiem_xa_hoi_bat_buoc",
+              "operation_group": "dieu_chinh_dang_ky_lao_dong",
+              "procedure_code": "1.115306",
+              "procedure_title": "Điều chỉnh thông tin đăng ký lao động đối với người lao động đang có việc làm và không thuộc đối tượng tham gia bảo hiểm xã hội bắt buộc"
+            },
+            {
+              "operation_key": "dieu_chinh_thong_tin_dang_ky_lao_dong_trong_truong_hop_thay_doi_tinh_trang_tu_nguoi_co_viec_lam_sang_nguoi_that_nghiep",
+              "operation_group": "dieu_chinh_dang_ky_lao_dong",
+              "procedure_code": "1.115307",
+              "procedure_title": "Điều chỉnh thông tin đăng ký lao động trong trường hợp thay đổi tình trạng từ người có việc làm sang người thất nghiệp"
+            },
+            {
+              "operation_key": "dieu_chinh_thong_tin_dang_ky_lao_dong_truong_hop_thay_doi_tinh_trang_tu_nguoi_co_viec_lam_hoac_nguoi_that_nghiep_sang_khong_tham_gia_hoat_dong_kinh_te",
+              "operation_group": "dieu_chinh_dang_ky_lao_dong",
+              "procedure_code": "1.115308",
+              "procedure_title": "Điều chỉnh thông tin đăng ký lao động trường hợp thay đổi tình trạng từ người có việc làm hoặc người thất nghiệp sang không tham gia hoạt động kinh tế"
+            },
+            {
+              "operation_key": "dieu_chinh_thong_tin_dang_ky_lao_dong_doi_voi_nguoi_lao_dong_giao_ket_hop_dong_lao_dong_voi_nhieu_nguoi_su_dung_lao_dong",
+              "operation_group": "dieu_chinh_dang_ky_lao_dong",
+              "procedure_code": "1.115309",
+              "procedure_title": "Điều chỉnh thông tin đăng ký lao động đối với người lao động giao kết hợp đồng lao động với nhiều người sử dụng lao động"
+            }
+          ]
+        },
+        "options": [
+          "thu_tuc_ket_noi_econtract_voi_nen_tang_hop_dong_lao_dong_dien_tu",
+          "dang_ky_lao_dong_doi_voi_nguoi_lao_dong_thuoc_doi_tuong_tham_gia_bao_hiem_xa_hoi_bat_buoc",
+          "dieu_chinh_thong_tin_dang_ky_lao_dong_doi_voi_nguoi_lao_dong_thuoc_doi_tuong_tham_gia_bao_hiem_xa_hoi_bat_buoc",
+          "dang_ky_lao_dong_doi_voi_nguoi_lao_dong_dang_co_viec_lam_khong_thuoc_doi_tuong_tham_gia_bao_hiem_xa_hoi_bat_buoc_nguoi_that_nghiep",
+          "dieu_chinh_thong_tin_dang_ky_lao_dong_doi_voi_nguoi_lao_dong_dang_co_viec_lam_va_khong_thuoc_doi_tuong_tham_gia_bao_hiem_xa_hoi_bat_buoc",
+          "dieu_chinh_thong_tin_dang_ky_lao_dong_trong_truong_hop_thay_doi_tinh_trang_tu_nguoi_co_viec_lam_sang_nguoi_that_nghiep",
+          "dieu_chinh_thong_tin_dang_ky_lao_dong_truong_hop_thay_doi_tinh_trang_tu_nguoi_co_viec_lam_hoac_nguoi_that_nghiep_sang_khong_tham_gia_hoat_dong_kinh_te",
+          "dieu_chinh_thong_tin_dang_ky_lao_dong_doi_voi_nguoi_lao_dong_giao_ket_hop_dong_lao_dong_voi_nhieu_nguoi_su_dung_lao_dong"
+        ]
+      }
+    ],
+    "routes": [
+      {
+        "route_id": "tuyen_dung-1_115302",
+        "conditions": {
+          "subdomain_key": "tuyen_dung",
+          "operation_key": "thu_tuc_ket_noi_econtract_voi_nen_tang_hop_dong_lao_dong_dien_tu"
+        },
+        "procedure_code": "1.115302",
+        "procedure_name": "Thủ tục Kết nối eContract với Nền tảng hợp đồng lao động điện tử",
+        "why_this_route": "Route trực tiếp cho nhu cầu 'Thủ tục Kết nối eContract với Nền tảng hợp đồng lao động điện tử' trong nhánh 'Tuyển dụng'."
+      },
+      {
+        "route_id": "tuyen_dung-1_115303",
+        "conditions": {
+          "subdomain_key": "tuyen_dung",
+          "operation_key": "dang_ky_lao_dong_doi_voi_nguoi_lao_dong_thuoc_doi_tuong_tham_gia_bao_hiem_xa_hoi_bat_buoc"
+        },
+        "procedure_code": "1.115303",
+        "procedure_name": "Đăng ký lao động đối với người lao động thuộc đối tượng tham gia bảo hiểm xã hội bắt buộc",
+        "why_this_route": "Route trực tiếp cho nhu cầu 'Đăng ký lao động đối với người lao động thuộc đối tượng tham gia bảo hiểm xã hội bắt buộc' trong nhánh 'Tuyển dụng'."
+      },
+      {
+        "route_id": "tuyen_dung-1_115304",
+        "conditions": {
+          "subdomain_key": "tuyen_dung",
+          "operation_key": "dieu_chinh_thong_tin_dang_ky_lao_dong_doi_voi_nguoi_lao_dong_thuoc_doi_tuong_tham_gia_bao_hiem_xa_hoi_bat_buoc"
+        },
+        "procedure_code": "1.115304",
+        "procedure_name": "Điều chỉnh thông tin đăng ký lao động đối với người lao động thuộc đối tượng tham gia bảo hiểm xã hội bắt buộc",
+        "why_this_route": "Route trực tiếp cho nhu cầu 'Điều chỉnh thông tin đăng ký lao động đối với người lao động thuộc đối tượng tham gia bảo hiểm xã hội bắt buộc' trong nhánh 'Tuyển dụng'."
+      },
+      {
+        "route_id": "tuyen_dung-1_115305",
+        "conditions": {
+          "subdomain_key": "tuyen_dung",
+          "operation_key": "dang_ky_lao_dong_doi_voi_nguoi_lao_dong_dang_co_viec_lam_khong_thuoc_doi_tuong_tham_gia_bao_hiem_xa_hoi_bat_buoc_nguoi_that_nghiep"
+        },
+        "procedure_code": "1.115305",
+        "procedure_name": "Đăng ký lao động đối với người lao động đang có việc làm không thuộc đối tượng tham gia bảo hiểm xã hội bắt buộc, người thất nghiệp.",
+        "why_this_route": "Route trực tiếp cho nhu cầu 'Đăng ký lao động đối với người lao động đang có việc làm không thuộc đối tượng tham gia bảo hiểm xã hội bắt buộc, người thất nghiệp.' trong nhánh 'Tuyển dụng'."
+      },
+      {
+        "route_id": "tuyen_dung-1_115306",
+        "conditions": {
+          "subdomain_key": "tuyen_dung",
+          "operation_key": "dieu_chinh_thong_tin_dang_ky_lao_dong_doi_voi_nguoi_lao_dong_dang_co_viec_lam_va_khong_thuoc_doi_tuong_tham_gia_bao_hiem_xa_hoi_bat_buoc"
+        },
+        "procedure_code": "1.115306",
+        "procedure_name": "Điều chỉnh thông tin đăng ký lao động đối với người lao động đang có việc làm và không thuộc đối tượng tham gia bảo hiểm xã hội bắt buộc",
+        "why_this_route": "Route trực tiếp cho nhu cầu 'Điều chỉnh thông tin đăng ký lao động đối với người lao động đang có việc làm và không thuộc đối tượng tham gia bảo hiểm xã hội bắt buộc' trong nhánh 'Tuyển dụng'."
+      },
+      {
+        "route_id": "tuyen_dung-1_115307",
+        "conditions": {
+          "subdomain_key": "tuyen_dung",
+          "operation_key": "dieu_chinh_thong_tin_dang_ky_lao_dong_trong_truong_hop_thay_doi_tinh_trang_tu_nguoi_co_viec_lam_sang_nguoi_that_nghiep"
+        },
+        "procedure_code": "1.115307",
+        "procedure_name": "Điều chỉnh thông tin đăng ký lao động trong trường hợp thay đổi tình trạng từ người có việc làm sang người thất nghiệp",
+        "why_this_route": "Route trực tiếp cho nhu cầu 'Điều chỉnh thông tin đăng ký lao động trong trường hợp thay đổi tình trạng từ người có việc làm sang người thất nghiệp' trong nhánh 'Tuyển dụng'."
+      },
+      {
+        "route_id": "tuyen_dung-1_115308",
+        "conditions": {
+          "subdomain_key": "tuyen_dung",
+          "operation_key": "dieu_chinh_thong_tin_dang_ky_lao_dong_truong_hop_thay_doi_tinh_trang_tu_nguoi_co_viec_lam_hoac_nguoi_that_nghiep_sang_khong_tham_gia_hoat_dong_kinh_te"
+        },
+        "procedure_code": "1.115308",
+        "procedure_name": "Điều chỉnh thông tin đăng ký lao động trường hợp thay đổi tình trạng từ người có việc làm hoặc người thất nghiệp sang không tham gia hoạt động kinh tế",
+        "why_this_route": "Route trực tiếp cho nhu cầu 'Điều chỉnh thông tin đăng ký lao động trường hợp thay đổi tình trạng từ người có việc làm hoặc người thất nghiệp sang không tham gia hoạt động kinh tế' trong nhánh 'Tuyển dụng'."
+      },
+      {
+        "route_id": "tuyen_dung-1_115309",
+        "conditions": {
+          "subdomain_key": "tuyen_dung",
+          "operation_key": "dieu_chinh_thong_tin_dang_ky_lao_dong_doi_voi_nguoi_lao_dong_giao_ket_hop_dong_lao_dong_voi_nhieu_nguoi_su_dung_lao_dong"
+        },
+        "procedure_code": "1.115309",
+        "procedure_name": "Điều chỉnh thông tin đăng ký lao động đối với người lao động giao kết hợp đồng lao động với nhiều người sử dụng lao động",
+        "why_this_route": "Route trực tiếp cho nhu cầu 'Điều chỉnh thông tin đăng ký lao động đối với người lao động giao kết hợp đồng lao động với nhiều người sử dụng lao động' trong nhánh 'Tuyển dụng'."
+      }
+    ]
+  },
+  "pre_submission_checks": [
+    {
+      "field_group": "employment_support",
+      "checks": [
+        "Nhóm hỗ trợ việc làm và tuyển dụng phải làm rõ người dùng đang tìm việc, cập nhật tình trạng lao động hay xin hỗ trợ chi phí/liên kết việc làm.",
+        "Nếu là đăng ký hoặc điều chỉnh lao động, cần xác định rõ trạng thái hiện tại: có việc làm, thất nghiệp hay không tham gia hoạt động kinh tế."
+      ]
+    },
+    {
+      "field_group": "unemployment_and_skills",
+      "checks": [
+        "Nhóm thất nghiệp phải phân biệt rõ nộp hồ sơ hưởng mới, thông báo tìm việc hằng tháng, tiếp tục hưởng, tạm dừng, chấm dứt hay chuyển nơi hưởng.",
+        "Nhóm chứng chỉ và nâng cao kỹ năng phải làm rõ đây là cấp chứng chỉ, cấp lại hay xin hỗ trợ đào tạo/nâng cao kỹ năng nghề."
+      ]
+    },
+    {
+      "field_group": "tax_and_foreign_work",
+      "checks": [
+        "Nhóm thuế chỉ áp dụng cho khai thuế thu nhập cá nhân trực tiếp từ tiền lương, tiền công trong bộ workflow sạch này.",
+        "Nhóm giấy phép lao động cho người nước ngoài phải làm rõ là cấp mới, cấp lại, gia hạn hay xác nhận miễn giấy phép lao động."
+      ]
+    }
+  ],
+  "subdomain_key": "tuyen_dung"
+}

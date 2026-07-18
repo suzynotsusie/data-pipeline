@@ -1,0 +1,449 @@
+{
+  "schema_version": "1.0",
+  "domain": "huu_tri",
+  "updated_at": "2026-07-18",
+  "source_files": [
+    "C:\\Users\\ku060\\Downloads\\VAIC source\\data-pipeline\\main\\full-data.csv",
+    "C:\\Users\\ku060\\Downloads\\VAIC source\\data-pipeline\\data\\workflows\\huu_tri\\summary.csv",
+    "C:\\Users\\ku060\\Downloads\\VAIC source\\data-pipeline\\data\\workflows\\huu_tri\\normalized.json",
+    "C:\\Users\\ku060\\Downloads\\VAIC source\\data-pipeline\\raw_data"
+  ],
+  "coverage": {
+    "expected_codes": [
+      "1.001646",
+      "1.001710",
+      "1.001742",
+      "1.012822",
+      "1.013140",
+      "1.013142",
+      "1.014027",
+      "1.014171",
+      "1.014172",
+      "1.014174",
+      "1.014175",
+      "1.014176",
+      "1.014589",
+      "2.000605",
+      "2.000740",
+      "2.000755",
+      "2.000762",
+      "2.000809"
+    ],
+    "covered_codes": [
+      "1.001646",
+      "1.001710",
+      "1.001742",
+      "1.012822",
+      "1.013140",
+      "1.013142",
+      "1.014027",
+      "1.014171",
+      "1.014172",
+      "1.014174",
+      "1.014175",
+      "1.014176",
+      "1.014589",
+      "2.000605",
+      "2.000740",
+      "2.000755",
+      "2.000762",
+      "2.000809"
+    ],
+    "missing_codes": []
+  },
+  "llm_contract": {
+    "role": "parse_user_answer_and_rephrase_question_only",
+    "required_output_schema": {
+      "intent": "huu_tri",
+      "current_node": "string",
+      "slot_updates": {
+        "subdomain_key": "chuan_bi_nghi_huu | che_do_huu_tri | unknown",
+        "operation_key": "string",
+        "operation_group": "string"
+      },
+      "confidence": "0_to_1",
+      "needs_human_review": "boolean"
+    }
+  },
+  "entry_prompts": [
+    "Bạn đang hỏi về chuẩn bị hồ sơ nghỉ hưu hay đang hưởng lương hưu, trợ cấp hưu trí?",
+    "Bạn muốn tham gia BHXH để chuẩn bị nghỉ hưu, xin hưởng lương hưu, chuyển nơi nhận hay điều chỉnh cách nhận chế độ?"
+  ],
+  "slots": [
+    {
+      "name": "subdomain_key",
+      "required": true,
+      "description": "Nhánh chính của nhóm Hưu trí."
+    },
+    {
+      "name": "operation_key",
+      "required": true,
+      "description": "Thao tác cụ thể ánh xạ trực tiếp tới thủ tục cuối cùng."
+    },
+    {
+      "name": "operation_group",
+      "required": false,
+      "description": "Nhóm thao tác để gom các thủ tục gần nhau cho UI và parser."
+    }
+  ],
+  "subdomain_catalog": [
+    {
+      "subdomain_key": "che_do_huu_tri",
+      "subdomain_label": "Chế độ hưu trí",
+      "event_id": 319,
+      "summary": "Nhóm thủ tục hưởng lương hưu, trợ cấp hưu trí xã hội, chuyển nơi hưởng, thay đổi hình thức nhận và các chế độ phát sinh trong quá trình đang hưởng hưu trí."
+    }
+  ],
+  "decision_tree": {
+    "start_node": "retirement_subdomain",
+    "nodes": [
+      {
+        "id": "retirement_subdomain",
+        "type": "question",
+        "slot": "subdomain_key",
+        "question": "Bạn đang chuẩn bị nghỉ hưu hay đang làm thủ tục hưởng, điều chỉnh chế độ hưu trí?",
+        "options": [
+          "che_do_huu_tri"
+        ],
+        "prefilled_value": "che_do_huu_tri"
+      },
+      {
+        "id": "retirement_operation",
+        "type": "question",
+        "slot": "operation_key",
+        "question": "Bạn cần thao tác nào cụ thể trong nhánh đã chọn?",
+        "options_by_subdomain": {
+          "che_do_huu_tri": [
+            {
+              "operation_key": "giai_quyet_huong_tro_cap_doi_voi_nha_giao_da_nghi_huu_chua_duoc_huong_che_do_phu_cap_tham_nien_trong_luong_huu_theo_nghi_dinh_so_14_2020_nd_cp",
+              "operation_group": "phu_cap_tham_nien_nha_giao_nghi_huu",
+              "procedure_code": "1.001646",
+              "procedure_title": "Giải quyết hưởng trợ cấp đối với nhà giáo đã nghỉ hưu chưa được hưởng chế độ phụ cấp thâm niên trong lương hưu theo Nghị định số 14/2020/NĐ-CP"
+            },
+            {
+              "operation_key": "giai_quyet_dieu_chinh_huy_quyet_dinh_cham_dut_huong_bhxh",
+              "operation_group": "dieu_chinh_ho_so_huong_huu",
+              "procedure_code": "1.001710",
+              "procedure_title": "Giải quyết điều chỉnh, hủy quyết định, chấm dứt hưởng BHXH"
+            },
+            {
+              "operation_key": "giai_quyet_chuyen_huong_sang_dia_ban_khac_doi_voi_nguoi_dang_huong_luong_huu_tro_cap_bhxh_hang_thang_va_nguoi_cho_huong_luong_huu_tro_cap_hang_thang",
+              "operation_group": "huong_luong_huu",
+              "procedure_code": "1.001742",
+              "procedure_title": "Giải quyết chuyển hưởng sang địa bàn khác đối với người đang hưởng lương hưu, trợ cấp BHXH hàng tháng và người chờ hưởng lương hưu, trợ cấp hàng tháng"
+            },
+            {
+              "operation_key": "thu_tuc_thuc_hien_dieu_chinh_thoi_huong_tro_cap_xa_hoi_hang_thang_cho_nguoi_cao_tuoi_tu_du_75_tuoi_den_80_tuoi_ma_khong_co_luong_huu_tro_cap_bao_hiem_xa_hoi_hang_thang_tro_cap_xa_hoi_hang_thang_nguoi_mac_benh_ung_thu_suy_than_man_chay_than_nhan_tao_co_giay_chung_nhan_cua_co_quan_y_te_co_tham_quyen_ma_khong_co_luong_huu_tien_luong_tro_cap_bao_hiem_xa_hoi_hang_thang_tro_cap_xa_hoi_hang_thang_nguoi_khuyet_tat_nhe_la_the_he_thu_ba_cua_nguoi_hoat_dong_khang_chien_bi_nhiem_chat_doc_hoa_hoc",
+              "operation_group": "ho_tro_nguoi_cao_tuoi_khong_luong_huu",
+              "procedure_code": "1.012822",
+              "procedure_title": "Thủ tục thực hiện, điều chỉnh, thôi hưởng trợ cấp xã hội hàng tháng cho người cao tuổi từ đủ 75 tuổi đến 80 tuổi mà không có lương hưu, trợ cấp bảo hiểm xã hội hàng tháng, trợ cấp xã hội hàng tháng; Người mắc bệnh ung thư, suy thận mãn chạy thận nhân tạo có giấy chứng nhận của cơ quan y tế có thẩm quyền mà không có lương hưu, tiền lương, trợ cấp bảo hiểm xã hội hàng tháng, trợ cấp xã hội hàng tháng; Người khuyết tật nhẹ là thế hệ thứ ba của người hoạt động kháng chiến bị nhiễm chất độc hóa học"
+            },
+            {
+              "operation_key": "thu_tuc_giai_quyet_che_do_huu_tri_doi_voi_quan_nhan_truc_tiep_tham_gia_khang_chien_chong_my_cuu_nuoc_tu_ngay_30_4_1975_tro_ve_truoc_co_20_nam_tro_len_phuc_vu_quan_doi_da_phuc_vien_xuat_ngu",
+              "operation_group": "huu_tri_quan_nhan",
+              "procedure_code": "1.013140",
+              "procedure_title": "Thủ tục giải quyết chế độ hưu trí đối với quân nhân trực tiếp tham gia kháng chiến chống Mỹ cứu nước từ ngày 30/4/1975 trở về trước có 20 năm trở lên phục vụ quân đội đã phục viên, xuất ngũ"
+            },
+            {
+              "operation_key": "thu_tuc_giai_quyet_che_do_huu_tri_doi_voi_quan_nhan_nguoi_lam_cong_tac_co_yeu_nhap_ngu_sau_ngay_30_4_1975_truc_tiep_tham_gia_chien_tranh_bao_ve_to_quoc_va_lam_nhiem_vu_quoc_te_co_tu_du_20_nam_tro_len_phuc_vu_trong_quan_doi_co_yeu_da_phuc_vien_xuat_ngu_thoi_viec",
+              "operation_group": "huu_tri_quan_nhan",
+              "procedure_code": "1.013142",
+              "procedure_title": "Thủ tục giải quyết chế độ hưu trí đối với quân nhân, người làm công tác cơ yếu, nhập ngũ sau ngày 30/4/1975, trực tiếp tham gia chiến tranh bảo vệ Tổ quốc và làm nhiệm vụ quốc tế, có từ đủ 20 năm trở lên phục vụ trong quân đội, cơ yếu đã phục viên, xuất ngũ, thôi việc"
+            },
+            {
+              "operation_key": "thuc_hien_dieu_chinh_thoi_huong_tro_cap_huu_tri_xa_hoi",
+              "operation_group": "che_do_huu_tri_khac",
+              "procedure_code": "1.014027",
+              "procedure_title": "Thực hiện, điều chỉnh, thôi hưởng trợ cấp hưu trí xã hội"
+            },
+            {
+              "operation_key": "huong_luong_huu_doi_voi_nguoi_tham_gia_bao_hiem_xa_hoi_bat_buoc",
+              "operation_group": "huong_luong_huu",
+              "procedure_code": "1.014171",
+              "procedure_title": "HƯỞNG LƯƠNG HƯU ĐỐI VỚI NGƯỜI THAM GIA BẢO HIỂM XÃ HỘI BẮT BUỘC"
+            },
+            {
+              "operation_key": "huong_luong_huu_doi_voi_nguoi_tham_gia_bao_hiem_xa_hoi_tu_nguyen",
+              "operation_group": "huong_luong_huu",
+              "procedure_code": "1.014172",
+              "procedure_title": "HƯỞNG LƯƠNG HƯU ĐỐI VỚI NGƯỜI THAM GIA BẢO HIỂM XÃ HỘI TỰ NGUYỆN"
+            },
+            {
+              "operation_key": "huong_tro_cap_mot_lan_doi_voi_nguoi_dang_huong_luong_huu_tro_cap_bao_hiem_xa_hoi_hang_thang_ra_nuoc_ngoai_de_dinh_cu",
+              "operation_group": "huong_luong_huu",
+              "procedure_code": "1.014174",
+              "procedure_title": "HƯỞNG TRỢ CẤP MỘT LẦN ĐỐI VỚI NGƯỜI ĐANG HƯỞNG LƯƠNG HƯU, TRỢ CẤP BẢO HIỂM XÃ HỘI HẰNG THÁNG RA NƯỚC NGOÀI ĐỂ ĐỊNH CƯ."
+            },
+            {
+              "operation_key": "tiep_tuc_huong_luong_huu_tro_cap_bao_hiem_xa_hoi_hang_thang_trong_truong_hop_da_bi_tam_dung_hoac_cham_dut_huong",
+              "operation_group": "huong_luong_huu",
+              "procedure_code": "1.014175",
+              "procedure_title": "TIẾP TỤC HƯỞNG LƯƠNG HƯU, TRỢ CẤP BẢO HIỂM XÃ HỘI HẰNG THÁNG TRONG TRƯỜNG HỢP ĐÃ BỊ TẠM DỪNG HOẶC CHẤM DỨT HƯỞNG"
+            },
+            {
+              "operation_key": "thay_doi_hinh_thuc_nhan_noi_nhan_luong_huu_tro_cap_bao_hiem_xa_hoi_hang_thang",
+              "operation_group": "thay_doi_cach_nhan_huu",
+              "procedure_code": "1.014176",
+              "procedure_title": "THAY ĐỔI HÌNH THỨC NHẬN, NƠI NHẬN LƯƠNG HƯU, TRỢ CẤP BẢO HIỂM XÃ HỘI HẰNG THÁNG"
+            },
+            {
+              "operation_key": "thu_tuc_ho_tro_cho_nguoi_cao_tuoi_tu_du_70_tuoi_den_duoi_75_tuoi_nguoi_cao_tuoi_duoi_75_tuoi_thuong_tru_tren_dia_ban_tinh_la_dang_vien_duoc_tang_huy_hieu_40_nam_tuoi_dang_tro_len_khong_co_luong_huu_tro_cap_bao_hiem_xa_hoi_tro_cap_xa_hoi_hang_thang",
+              "operation_group": "ho_tro_nguoi_cao_tuoi_khong_luong_huu",
+              "procedure_code": "1.014589",
+              "procedure_title": "Thủ tục Hỗ trợ cho Người cao tuổi từ đủ 70 tuổi đến dưới 75 tuổi; Người cao tuổi dưới 75 tuổi thường trú trên địa bàn tỉnh, là Đảng viên được tặng huy hiệu 40 năm tuổi đảng trở lên, không có lương hưu, trợ cấp bảo hiểm xã hội, trợ cấp xã hội hàng tháng"
+            },
+            {
+              "operation_key": "giai_quyet_huong_luong_huu_tro_cap_hang_thang_doi_voi_can_bo_xa",
+              "operation_group": "huong_luong_huu",
+              "procedure_code": "2.000605",
+              "procedure_title": "Giải quyết hưởng lương hưu, trợ cấp hàng tháng đối với cán bộ xã"
+            },
+            {
+              "operation_key": "nguoi_huong_linh_che_do_bao_hiem_xa_hoi_bang_tien_mat_chuyen_sang_linh_bang_tai_khoan_ca_nhan_va_nguoc_lai_hoac_thay_doi_thong_tin_ca_nhan",
+              "operation_group": "thay_doi_cach_nhan_huu",
+              "procedure_code": "2.000740",
+              "procedure_title": "Người hưởng lĩnh chế độ bảo hiểm xã hội bằng tiền mặt chuyển sang lĩnh bằng tài khoản cá nhân và ngược lại, hoặc thay đổi thông tin cá nhân"
+            },
+            {
+              "operation_key": "giai_quyet_huong_tro_cap_mot_lan_doi_voi_nguoi_dang_huong_luong_huu_tro_cap_bhxh_hang_thang_ra_nuoc_ngoai_de_dinh_cu_va_cong_dan_nuoc_ngoai_dang_huong_luong_huu_tro_cap_bhxh_hang_thang_khong_con_cu_tru_o_viet_nam",
+              "operation_group": "huong_luong_huu",
+              "procedure_code": "2.000755",
+              "procedure_title": "Giải quyết hưởng trợ cấp một lần đối với người đang hưởng lương hưu, trợ cấp BHXH hàng tháng ra nước ngoài để định cư và công dân nước ngoài đang hưởng lương hưu, trợ cấp BHXH hàng tháng không còn cư trú ở Việt Nam"
+            },
+            {
+              "operation_key": "giai_quyet_huong_tro_cap_hang_thang_theo_quyet_dinh_so_613_qd_ttg",
+              "operation_group": "tro_cap_hang_thang_theo_qd_613",
+              "procedure_code": "2.000762",
+              "procedure_title": "Giải quyết hưởng trợ cấp hàng tháng theo Quyết định số 613/QĐ-TTg"
+            },
+            {
+              "operation_key": "giai_quyet_huong_tiep_luong_huu_tro_cap_bhxh_hang_thang_doi_voi_nguoi_chap_hanh_xong_hinh_phat_tu_nguoi_xuat_canh_trai_phep_tro_ve_nuoc_dinh_cu_hop_phap_nguoi_duoc_toa_an_huy_quyet_dinh_tuyen_bo_mat_tich",
+              "operation_group": "che_do_huu_tri_khac",
+              "procedure_code": "2.000809",
+              "procedure_title": "Giải quyết hưởng tiếp lương hưu, trợ cấp BHXH hàng tháng đối với người chấp hành xong hình phạt tù, người xuất cảnh trái phép trở về nước định cư hợp pháp, người được Tòa án hủy quyết định tuyên bố mất tích"
+            }
+          ]
+        },
+        "options": [
+          "giai_quyet_huong_tro_cap_doi_voi_nha_giao_da_nghi_huu_chua_duoc_huong_che_do_phu_cap_tham_nien_trong_luong_huu_theo_nghi_dinh_so_14_2020_nd_cp",
+          "giai_quyet_dieu_chinh_huy_quyet_dinh_cham_dut_huong_bhxh",
+          "giai_quyet_chuyen_huong_sang_dia_ban_khac_doi_voi_nguoi_dang_huong_luong_huu_tro_cap_bhxh_hang_thang_va_nguoi_cho_huong_luong_huu_tro_cap_hang_thang",
+          "thu_tuc_thuc_hien_dieu_chinh_thoi_huong_tro_cap_xa_hoi_hang_thang_cho_nguoi_cao_tuoi_tu_du_75_tuoi_den_80_tuoi_ma_khong_co_luong_huu_tro_cap_bao_hiem_xa_hoi_hang_thang_tro_cap_xa_hoi_hang_thang_nguoi_mac_benh_ung_thu_suy_than_man_chay_than_nhan_tao_co_giay_chung_nhan_cua_co_quan_y_te_co_tham_quyen_ma_khong_co_luong_huu_tien_luong_tro_cap_bao_hiem_xa_hoi_hang_thang_tro_cap_xa_hoi_hang_thang_nguoi_khuyet_tat_nhe_la_the_he_thu_ba_cua_nguoi_hoat_dong_khang_chien_bi_nhiem_chat_doc_hoa_hoc",
+          "thu_tuc_giai_quyet_che_do_huu_tri_doi_voi_quan_nhan_truc_tiep_tham_gia_khang_chien_chong_my_cuu_nuoc_tu_ngay_30_4_1975_tro_ve_truoc_co_20_nam_tro_len_phuc_vu_quan_doi_da_phuc_vien_xuat_ngu",
+          "thu_tuc_giai_quyet_che_do_huu_tri_doi_voi_quan_nhan_nguoi_lam_cong_tac_co_yeu_nhap_ngu_sau_ngay_30_4_1975_truc_tiep_tham_gia_chien_tranh_bao_ve_to_quoc_va_lam_nhiem_vu_quoc_te_co_tu_du_20_nam_tro_len_phuc_vu_trong_quan_doi_co_yeu_da_phuc_vien_xuat_ngu_thoi_viec",
+          "thuc_hien_dieu_chinh_thoi_huong_tro_cap_huu_tri_xa_hoi",
+          "huong_luong_huu_doi_voi_nguoi_tham_gia_bao_hiem_xa_hoi_bat_buoc",
+          "huong_luong_huu_doi_voi_nguoi_tham_gia_bao_hiem_xa_hoi_tu_nguyen",
+          "huong_tro_cap_mot_lan_doi_voi_nguoi_dang_huong_luong_huu_tro_cap_bao_hiem_xa_hoi_hang_thang_ra_nuoc_ngoai_de_dinh_cu",
+          "tiep_tuc_huong_luong_huu_tro_cap_bao_hiem_xa_hoi_hang_thang_trong_truong_hop_da_bi_tam_dung_hoac_cham_dut_huong",
+          "thay_doi_hinh_thuc_nhan_noi_nhan_luong_huu_tro_cap_bao_hiem_xa_hoi_hang_thang",
+          "thu_tuc_ho_tro_cho_nguoi_cao_tuoi_tu_du_70_tuoi_den_duoi_75_tuoi_nguoi_cao_tuoi_duoi_75_tuoi_thuong_tru_tren_dia_ban_tinh_la_dang_vien_duoc_tang_huy_hieu_40_nam_tuoi_dang_tro_len_khong_co_luong_huu_tro_cap_bao_hiem_xa_hoi_tro_cap_xa_hoi_hang_thang",
+          "giai_quyet_huong_luong_huu_tro_cap_hang_thang_doi_voi_can_bo_xa",
+          "nguoi_huong_linh_che_do_bao_hiem_xa_hoi_bang_tien_mat_chuyen_sang_linh_bang_tai_khoan_ca_nhan_va_nguoc_lai_hoac_thay_doi_thong_tin_ca_nhan",
+          "giai_quyet_huong_tro_cap_mot_lan_doi_voi_nguoi_dang_huong_luong_huu_tro_cap_bhxh_hang_thang_ra_nuoc_ngoai_de_dinh_cu_va_cong_dan_nuoc_ngoai_dang_huong_luong_huu_tro_cap_bhxh_hang_thang_khong_con_cu_tru_o_viet_nam",
+          "giai_quyet_huong_tro_cap_hang_thang_theo_quyet_dinh_so_613_qd_ttg",
+          "giai_quyet_huong_tiep_luong_huu_tro_cap_bhxh_hang_thang_doi_voi_nguoi_chap_hanh_xong_hinh_phat_tu_nguoi_xuat_canh_trai_phep_tro_ve_nuoc_dinh_cu_hop_phap_nguoi_duoc_toa_an_huy_quyet_dinh_tuyen_bo_mat_tich"
+        ]
+      }
+    ],
+    "routes": [
+      {
+        "route_id": "che_do_huu_tri-1_001646",
+        "conditions": {
+          "subdomain_key": "che_do_huu_tri",
+          "operation_key": "giai_quyet_huong_tro_cap_doi_voi_nha_giao_da_nghi_huu_chua_duoc_huong_che_do_phu_cap_tham_nien_trong_luong_huu_theo_nghi_dinh_so_14_2020_nd_cp"
+        },
+        "procedure_code": "1.001646",
+        "procedure_name": "Giải quyết hưởng trợ cấp đối với nhà giáo đã nghỉ hưu chưa được hưởng chế độ phụ cấp thâm niên trong lương hưu theo Nghị định số 14/2020/NĐ-CP",
+        "why_this_route": "Route trực tiếp cho nhu cầu 'Giải quyết hưởng trợ cấp đối với nhà giáo đã nghỉ hưu chưa được hưởng chế độ phụ cấp thâm niên trong lương hưu theo Nghị định số 14/2020/NĐ-CP' trong nhánh 'Chế độ hưu trí'."
+      },
+      {
+        "route_id": "che_do_huu_tri-1_001710",
+        "conditions": {
+          "subdomain_key": "che_do_huu_tri",
+          "operation_key": "giai_quyet_dieu_chinh_huy_quyet_dinh_cham_dut_huong_bhxh"
+        },
+        "procedure_code": "1.001710",
+        "procedure_name": "Giải quyết điều chỉnh, hủy quyết định, chấm dứt hưởng BHXH",
+        "why_this_route": "Route trực tiếp cho nhu cầu 'Giải quyết điều chỉnh, hủy quyết định, chấm dứt hưởng BHXH' trong nhánh 'Chế độ hưu trí'."
+      },
+      {
+        "route_id": "che_do_huu_tri-1_001742",
+        "conditions": {
+          "subdomain_key": "che_do_huu_tri",
+          "operation_key": "giai_quyet_chuyen_huong_sang_dia_ban_khac_doi_voi_nguoi_dang_huong_luong_huu_tro_cap_bhxh_hang_thang_va_nguoi_cho_huong_luong_huu_tro_cap_hang_thang"
+        },
+        "procedure_code": "1.001742",
+        "procedure_name": "Giải quyết chuyển hưởng sang địa bàn khác đối với người đang hưởng lương hưu, trợ cấp BHXH hàng tháng và người chờ hưởng lương hưu, trợ cấp hàng tháng",
+        "why_this_route": "Route trực tiếp cho nhu cầu 'Giải quyết chuyển hưởng sang địa bàn khác đối với người đang hưởng lương hưu, trợ cấp BHXH hàng tháng và người chờ hưởng lương hưu, trợ cấp hàng tháng' trong nhánh 'Chế độ hưu trí'."
+      },
+      {
+        "route_id": "che_do_huu_tri-1_012822",
+        "conditions": {
+          "subdomain_key": "che_do_huu_tri",
+          "operation_key": "thu_tuc_thuc_hien_dieu_chinh_thoi_huong_tro_cap_xa_hoi_hang_thang_cho_nguoi_cao_tuoi_tu_du_75_tuoi_den_80_tuoi_ma_khong_co_luong_huu_tro_cap_bao_hiem_xa_hoi_hang_thang_tro_cap_xa_hoi_hang_thang_nguoi_mac_benh_ung_thu_suy_than_man_chay_than_nhan_tao_co_giay_chung_nhan_cua_co_quan_y_te_co_tham_quyen_ma_khong_co_luong_huu_tien_luong_tro_cap_bao_hiem_xa_hoi_hang_thang_tro_cap_xa_hoi_hang_thang_nguoi_khuyet_tat_nhe_la_the_he_thu_ba_cua_nguoi_hoat_dong_khang_chien_bi_nhiem_chat_doc_hoa_hoc"
+        },
+        "procedure_code": "1.012822",
+        "procedure_name": "Thủ tục thực hiện, điều chỉnh, thôi hưởng trợ cấp xã hội hàng tháng cho người cao tuổi từ đủ 75 tuổi đến 80 tuổi mà không có lương hưu, trợ cấp bảo hiểm xã hội hàng tháng, trợ cấp xã hội hàng tháng; Người mắc bệnh ung thư, suy thận mãn chạy thận nhân tạo có giấy chứng nhận của cơ quan y tế có thẩm quyền mà không có lương hưu, tiền lương, trợ cấp bảo hiểm xã hội hàng tháng, trợ cấp xã hội hàng tháng; Người khuyết tật nhẹ là thế hệ thứ ba của người hoạt động kháng chiến bị nhiễm chất độc hóa học",
+        "why_this_route": "Route trực tiếp cho nhu cầu 'Thủ tục thực hiện, điều chỉnh, thôi hưởng trợ cấp xã hội hàng tháng cho người cao tuổi từ đủ 75 tuổi đến 80 tuổi mà không có lương hưu, trợ cấp bảo hiểm xã hội hàng tháng, trợ cấp xã hội hàng tháng; Người mắc bệnh ung thư, suy thận mãn chạy thận nhân tạo có giấy chứng nhận của cơ quan y tế có thẩm quyền mà không có lương hưu, tiền lương, trợ cấp bảo hiểm xã hội hàng tháng, trợ cấp xã hội hàng tháng; Người khuyết tật nhẹ là thế hệ thứ ba của người hoạt động kháng chiến bị nhiễm chất độc hóa học' trong nhánh 'Chế độ hưu trí'."
+      },
+      {
+        "route_id": "che_do_huu_tri-1_013140",
+        "conditions": {
+          "subdomain_key": "che_do_huu_tri",
+          "operation_key": "thu_tuc_giai_quyet_che_do_huu_tri_doi_voi_quan_nhan_truc_tiep_tham_gia_khang_chien_chong_my_cuu_nuoc_tu_ngay_30_4_1975_tro_ve_truoc_co_20_nam_tro_len_phuc_vu_quan_doi_da_phuc_vien_xuat_ngu"
+        },
+        "procedure_code": "1.013140",
+        "procedure_name": "Thủ tục giải quyết chế độ hưu trí đối với quân nhân trực tiếp tham gia kháng chiến chống Mỹ cứu nước từ ngày 30/4/1975 trở về trước có 20 năm trở lên phục vụ quân đội đã phục viên, xuất ngũ",
+        "why_this_route": "Route trực tiếp cho nhu cầu 'Thủ tục giải quyết chế độ hưu trí đối với quân nhân trực tiếp tham gia kháng chiến chống Mỹ cứu nước từ ngày 30/4/1975 trở về trước có 20 năm trở lên phục vụ quân đội đã phục viên, xuất ngũ' trong nhánh 'Chế độ hưu trí'."
+      },
+      {
+        "route_id": "che_do_huu_tri-1_013142",
+        "conditions": {
+          "subdomain_key": "che_do_huu_tri",
+          "operation_key": "thu_tuc_giai_quyet_che_do_huu_tri_doi_voi_quan_nhan_nguoi_lam_cong_tac_co_yeu_nhap_ngu_sau_ngay_30_4_1975_truc_tiep_tham_gia_chien_tranh_bao_ve_to_quoc_va_lam_nhiem_vu_quoc_te_co_tu_du_20_nam_tro_len_phuc_vu_trong_quan_doi_co_yeu_da_phuc_vien_xuat_ngu_thoi_viec"
+        },
+        "procedure_code": "1.013142",
+        "procedure_name": "Thủ tục giải quyết chế độ hưu trí đối với quân nhân, người làm công tác cơ yếu, nhập ngũ sau ngày 30/4/1975, trực tiếp tham gia chiến tranh bảo vệ Tổ quốc và làm nhiệm vụ quốc tế, có từ đủ 20 năm trở lên phục vụ trong quân đội, cơ yếu đã phục viên, xuất ngũ, thôi việc",
+        "why_this_route": "Route trực tiếp cho nhu cầu 'Thủ tục giải quyết chế độ hưu trí đối với quân nhân, người làm công tác cơ yếu, nhập ngũ sau ngày 30/4/1975, trực tiếp tham gia chiến tranh bảo vệ Tổ quốc và làm nhiệm vụ quốc tế, có từ đủ 20 năm trở lên phục vụ trong quân đội, cơ yếu đã phục viên, xuất ngũ, thôi việc' trong nhánh 'Chế độ hưu trí'."
+      },
+      {
+        "route_id": "che_do_huu_tri-1_014027",
+        "conditions": {
+          "subdomain_key": "che_do_huu_tri",
+          "operation_key": "thuc_hien_dieu_chinh_thoi_huong_tro_cap_huu_tri_xa_hoi"
+        },
+        "procedure_code": "1.014027",
+        "procedure_name": "Thực hiện, điều chỉnh, thôi hưởng trợ cấp hưu trí xã hội",
+        "why_this_route": "Route trực tiếp cho nhu cầu 'Thực hiện, điều chỉnh, thôi hưởng trợ cấp hưu trí xã hội' trong nhánh 'Chế độ hưu trí'."
+      },
+      {
+        "route_id": "che_do_huu_tri-1_014171",
+        "conditions": {
+          "subdomain_key": "che_do_huu_tri",
+          "operation_key": "huong_luong_huu_doi_voi_nguoi_tham_gia_bao_hiem_xa_hoi_bat_buoc"
+        },
+        "procedure_code": "1.014171",
+        "procedure_name": "HƯỞNG LƯƠNG HƯU ĐỐI VỚI NGƯỜI THAM GIA BẢO HIỂM XÃ HỘI BẮT BUỘC",
+        "why_this_route": "Route trực tiếp cho nhu cầu 'HƯỞNG LƯƠNG HƯU ĐỐI VỚI NGƯỜI THAM GIA BẢO HIỂM XÃ HỘI BẮT BUỘC' trong nhánh 'Chế độ hưu trí'."
+      },
+      {
+        "route_id": "che_do_huu_tri-1_014172",
+        "conditions": {
+          "subdomain_key": "che_do_huu_tri",
+          "operation_key": "huong_luong_huu_doi_voi_nguoi_tham_gia_bao_hiem_xa_hoi_tu_nguyen"
+        },
+        "procedure_code": "1.014172",
+        "procedure_name": "HƯỞNG LƯƠNG HƯU ĐỐI VỚI NGƯỜI THAM GIA BẢO HIỂM XÃ HỘI TỰ NGUYỆN",
+        "why_this_route": "Route trực tiếp cho nhu cầu 'HƯỞNG LƯƠNG HƯU ĐỐI VỚI NGƯỜI THAM GIA BẢO HIỂM XÃ HỘI TỰ NGUYỆN' trong nhánh 'Chế độ hưu trí'."
+      },
+      {
+        "route_id": "che_do_huu_tri-1_014174",
+        "conditions": {
+          "subdomain_key": "che_do_huu_tri",
+          "operation_key": "huong_tro_cap_mot_lan_doi_voi_nguoi_dang_huong_luong_huu_tro_cap_bao_hiem_xa_hoi_hang_thang_ra_nuoc_ngoai_de_dinh_cu"
+        },
+        "procedure_code": "1.014174",
+        "procedure_name": "HƯỞNG TRỢ CẤP MỘT LẦN ĐỐI VỚI NGƯỜI ĐANG HƯỞNG LƯƠNG HƯU, TRỢ CẤP BẢO HIỂM XÃ HỘI HẰNG THÁNG RA NƯỚC NGOÀI ĐỂ ĐỊNH CƯ.",
+        "why_this_route": "Route trực tiếp cho nhu cầu 'HƯỞNG TRỢ CẤP MỘT LẦN ĐỐI VỚI NGƯỜI ĐANG HƯỞNG LƯƠNG HƯU, TRỢ CẤP BẢO HIỂM XÃ HỘI HẰNG THÁNG RA NƯỚC NGOÀI ĐỂ ĐỊNH CƯ.' trong nhánh 'Chế độ hưu trí'."
+      },
+      {
+        "route_id": "che_do_huu_tri-1_014175",
+        "conditions": {
+          "subdomain_key": "che_do_huu_tri",
+          "operation_key": "tiep_tuc_huong_luong_huu_tro_cap_bao_hiem_xa_hoi_hang_thang_trong_truong_hop_da_bi_tam_dung_hoac_cham_dut_huong"
+        },
+        "procedure_code": "1.014175",
+        "procedure_name": "TIẾP TỤC HƯỞNG LƯƠNG HƯU, TRỢ CẤP BẢO HIỂM XÃ HỘI HẰNG THÁNG TRONG TRƯỜNG HỢP ĐÃ BỊ TẠM DỪNG HOẶC CHẤM DỨT HƯỞNG",
+        "why_this_route": "Route trực tiếp cho nhu cầu 'TIẾP TỤC HƯỞNG LƯƠNG HƯU, TRỢ CẤP BẢO HIỂM XÃ HỘI HẰNG THÁNG TRONG TRƯỜNG HỢP ĐÃ BỊ TẠM DỪNG HOẶC CHẤM DỨT HƯỞNG' trong nhánh 'Chế độ hưu trí'."
+      },
+      {
+        "route_id": "che_do_huu_tri-1_014176",
+        "conditions": {
+          "subdomain_key": "che_do_huu_tri",
+          "operation_key": "thay_doi_hinh_thuc_nhan_noi_nhan_luong_huu_tro_cap_bao_hiem_xa_hoi_hang_thang"
+        },
+        "procedure_code": "1.014176",
+        "procedure_name": "THAY ĐỔI HÌNH THỨC NHẬN, NƠI NHẬN LƯƠNG HƯU, TRỢ CẤP BẢO HIỂM XÃ HỘI HẰNG THÁNG",
+        "why_this_route": "Route trực tiếp cho nhu cầu 'THAY ĐỔI HÌNH THỨC NHẬN, NƠI NHẬN LƯƠNG HƯU, TRỢ CẤP BẢO HIỂM XÃ HỘI HẰNG THÁNG' trong nhánh 'Chế độ hưu trí'."
+      },
+      {
+        "route_id": "che_do_huu_tri-1_014589",
+        "conditions": {
+          "subdomain_key": "che_do_huu_tri",
+          "operation_key": "thu_tuc_ho_tro_cho_nguoi_cao_tuoi_tu_du_70_tuoi_den_duoi_75_tuoi_nguoi_cao_tuoi_duoi_75_tuoi_thuong_tru_tren_dia_ban_tinh_la_dang_vien_duoc_tang_huy_hieu_40_nam_tuoi_dang_tro_len_khong_co_luong_huu_tro_cap_bao_hiem_xa_hoi_tro_cap_xa_hoi_hang_thang"
+        },
+        "procedure_code": "1.014589",
+        "procedure_name": "Thủ tục Hỗ trợ cho Người cao tuổi từ đủ 70 tuổi đến dưới 75 tuổi; Người cao tuổi dưới 75 tuổi thường trú trên địa bàn tỉnh, là Đảng viên được tặng huy hiệu 40 năm tuổi đảng trở lên, không có lương hưu, trợ cấp bảo hiểm xã hội, trợ cấp xã hội hàng tháng",
+        "why_this_route": "Route trực tiếp cho nhu cầu 'Thủ tục Hỗ trợ cho Người cao tuổi từ đủ 70 tuổi đến dưới 75 tuổi; Người cao tuổi dưới 75 tuổi thường trú trên địa bàn tỉnh, là Đảng viên được tặng huy hiệu 40 năm tuổi đảng trở lên, không có lương hưu, trợ cấp bảo hiểm xã hội, trợ cấp xã hội hàng tháng' trong nhánh 'Chế độ hưu trí'."
+      },
+      {
+        "route_id": "che_do_huu_tri-2_000605",
+        "conditions": {
+          "subdomain_key": "che_do_huu_tri",
+          "operation_key": "giai_quyet_huong_luong_huu_tro_cap_hang_thang_doi_voi_can_bo_xa"
+        },
+        "procedure_code": "2.000605",
+        "procedure_name": "Giải quyết hưởng lương hưu, trợ cấp hàng tháng đối với cán bộ xã",
+        "why_this_route": "Route trực tiếp cho nhu cầu 'Giải quyết hưởng lương hưu, trợ cấp hàng tháng đối với cán bộ xã' trong nhánh 'Chế độ hưu trí'."
+      },
+      {
+        "route_id": "che_do_huu_tri-2_000740",
+        "conditions": {
+          "subdomain_key": "che_do_huu_tri",
+          "operation_key": "nguoi_huong_linh_che_do_bao_hiem_xa_hoi_bang_tien_mat_chuyen_sang_linh_bang_tai_khoan_ca_nhan_va_nguoc_lai_hoac_thay_doi_thong_tin_ca_nhan"
+        },
+        "procedure_code": "2.000740",
+        "procedure_name": "Người hưởng lĩnh chế độ bảo hiểm xã hội bằng tiền mặt chuyển sang lĩnh bằng tài khoản cá nhân và ngược lại, hoặc thay đổi thông tin cá nhân",
+        "why_this_route": "Route trực tiếp cho nhu cầu 'Người hưởng lĩnh chế độ bảo hiểm xã hội bằng tiền mặt chuyển sang lĩnh bằng tài khoản cá nhân và ngược lại, hoặc thay đổi thông tin cá nhân' trong nhánh 'Chế độ hưu trí'."
+      },
+      {
+        "route_id": "che_do_huu_tri-2_000755",
+        "conditions": {
+          "subdomain_key": "che_do_huu_tri",
+          "operation_key": "giai_quyet_huong_tro_cap_mot_lan_doi_voi_nguoi_dang_huong_luong_huu_tro_cap_bhxh_hang_thang_ra_nuoc_ngoai_de_dinh_cu_va_cong_dan_nuoc_ngoai_dang_huong_luong_huu_tro_cap_bhxh_hang_thang_khong_con_cu_tru_o_viet_nam"
+        },
+        "procedure_code": "2.000755",
+        "procedure_name": "Giải quyết hưởng trợ cấp một lần đối với người đang hưởng lương hưu, trợ cấp BHXH hàng tháng ra nước ngoài để định cư và công dân nước ngoài đang hưởng lương hưu, trợ cấp BHXH hàng tháng không còn cư trú ở Việt Nam",
+        "why_this_route": "Route trực tiếp cho nhu cầu 'Giải quyết hưởng trợ cấp một lần đối với người đang hưởng lương hưu, trợ cấp BHXH hàng tháng ra nước ngoài để định cư và công dân nước ngoài đang hưởng lương hưu, trợ cấp BHXH hàng tháng không còn cư trú ở Việt Nam' trong nhánh 'Chế độ hưu trí'."
+      },
+      {
+        "route_id": "che_do_huu_tri-2_000762",
+        "conditions": {
+          "subdomain_key": "che_do_huu_tri",
+          "operation_key": "giai_quyet_huong_tro_cap_hang_thang_theo_quyet_dinh_so_613_qd_ttg"
+        },
+        "procedure_code": "2.000762",
+        "procedure_name": "Giải quyết hưởng trợ cấp hàng tháng theo Quyết định số 613/QĐ-TTg",
+        "why_this_route": "Route trực tiếp cho nhu cầu 'Giải quyết hưởng trợ cấp hàng tháng theo Quyết định số 613/QĐ-TTg' trong nhánh 'Chế độ hưu trí'."
+      },
+      {
+        "route_id": "che_do_huu_tri-2_000809",
+        "conditions": {
+          "subdomain_key": "che_do_huu_tri",
+          "operation_key": "giai_quyet_huong_tiep_luong_huu_tro_cap_bhxh_hang_thang_doi_voi_nguoi_chap_hanh_xong_hinh_phat_tu_nguoi_xuat_canh_trai_phep_tro_ve_nuoc_dinh_cu_hop_phap_nguoi_duoc_toa_an_huy_quyet_dinh_tuyen_bo_mat_tich"
+        },
+        "procedure_code": "2.000809",
+        "procedure_name": "Giải quyết hưởng tiếp lương hưu, trợ cấp BHXH hàng tháng đối với người chấp hành xong hình phạt tù, người xuất cảnh trái phép trở về nước định cư hợp pháp, người được Tòa án hủy quyết định tuyên bố mất tích",
+        "why_this_route": "Route trực tiếp cho nhu cầu 'Giải quyết hưởng tiếp lương hưu, trợ cấp BHXH hàng tháng đối với người chấp hành xong hình phạt tù, người xuất cảnh trái phép trở về nước định cư hợp pháp, người được Tòa án hủy quyết định tuyên bố mất tích' trong nhánh 'Chế độ hưu trí'."
+      }
+    ]
+  },
+  "pre_submission_checks": [
+    {
+      "field_group": "retirement_preparation",
+      "checks": [
+        "Nhánh chuẩn bị nghỉ hưu phải làm rõ người dùng đang tham gia BHXH bắt buộc hay tự nguyện, cần bổ sung thời gian đóng hay rà lại điều kiện hưởng.",
+        "Nếu người dùng chưa đủ điều kiện hưởng lương hưu thì cần phân biệt rõ giữa phương án hưởng BHXH một lần và các chế độ chuyển tiếp hoặc hỗ trợ khác."
+      ]
+    },
+    {
+      "field_group": "retirement_benefit",
+      "checks": [
+        "Nhánh chế độ hưu trí phải xác định rõ đây là hưởng mới, tiếp tục hưởng, chuyển nơi nhận, đổi hình thức nhận hay điều chỉnh hồ sơ đang hưởng.",
+        "Các thủ tục trợ cấp hưu trí xã hội cần kiểm tra điều kiện không có lương hưu, độ tuổi và xác nhận về tình trạng hưởng trợ cấp hằng tháng hiện tại."
+      ]
+    }
+  ],
+  "subdomain_key": "che_do_huu_tri"
+}

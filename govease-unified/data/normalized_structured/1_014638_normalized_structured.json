@@ -1,0 +1,207 @@
+{
+  "schema_version": "1.0",
+  "normalizer_version": "0.2.0",
+  "source": {
+    "procedure_code": "1.014638",
+    "title": "Bổ sung, sửa đổi Giấy phép, cấp lại do mất, thất lạc Giấy phép cho phép thực hiện hoạt động gia công hàng hóa thuộc Danh mục sản phẩm công nghệ thông tin đã qua sử dụng cấm nhập khẩu cho thương nhân nước ngoài để tiêu thụ ở nước ngoài",
+    "raw_structured_parser_version": "0.1.0",
+    "field": "Công nghiệp công nghệ số, công nghệ thông tin, điện tử"
+  },
+  "procedure": {
+    "level": "Cấp tỉnh",
+    "procedure_type": "TTHC được luật giao quy định chi tiết",
+    "target_users": [
+      "Doanh nghiệp có vốn đầu tư nước ngoài",
+      "Doanh nghiệp",
+      "Tổ chức (không bao gồm doanh nghiệp",
+      "HTX)"
+    ],
+    "authorities": [
+      "Chủ tịch ủy ban nhân dân cấp tỉnh"
+    ],
+    "receiving_places": []
+  },
+  "submission": {
+    "channels": [
+      "in_person",
+      "online",
+      "postal"
+    ],
+    "methods": [
+      {
+        "method_id": "method_1",
+        "channel": "online",
+        "processing_time_text": "3 ngày làm việc",
+        "fee_text": null,
+        "description": "Nộp trực tuyến qua hệ thống dịch vụ công trực tuyến: Cổng dịch vụ công quốc gia (https://dichvucong.gov.vn)",
+        "is_online": true,
+        "is_postal": false,
+        "is_in_person": false
+      },
+      {
+        "method_id": "method_2",
+        "channel": "postal",
+        "processing_time_text": "3 ngày làm việc",
+        "fee_text": null,
+        "description": "Nộp trực tiếp hoặc qua dịch vụ bưu chính tại Trung tâm Phục vụ hành chính công cấp tỉnh.",
+        "is_online": false,
+        "is_postal": true,
+        "is_in_person": false
+      },
+      {
+        "method_id": "method_3",
+        "channel": "in_person",
+        "processing_time_text": "3 ngày làm việc",
+        "fee_text": null,
+        "description": "Nộp trực tiếp hoặc qua dịch vụ bưu chính tại Trung tâm Phục vụ hành chính công cấp tỉnh.",
+        "is_online": false,
+        "is_postal": false,
+        "is_in_person": true
+      }
+    ],
+    "timing_summary": {
+      "unique_processing_times": [
+        "3 ngày làm việc"
+      ],
+      "method_count": 3
+    }
+  },
+  "documents": {
+    "required": [
+      {
+        "document_id": "n_ngh_b_sung_s_a_i_c_p_l_i_gi_y_ph_p",
+        "name": "Đơn đề nghị bổ sung, sửa đổi, cấp lại Giấy phép",
+        "group_name": "default",
+        "group_type": "unknown",
+        "original_count": "1",
+        "copy_count": "0",
+        "conditions": [],
+        "attachment_label": "Mẫu số 04.docx",
+        "attachment_path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/1_014638/Ma%CC%82%CC%83u%20so%CC%82%CC%81%2004.docx"
+      }
+    ],
+    "conditional": [
+      {
+        "document_id": "gi_y_ph_p_gia_c_ng_c_c_p_n_u_c",
+        "name": "Giấy phép gia công đã được cấp (nếu có)",
+        "group_name": "default",
+        "group_type": "unknown",
+        "original_count": "1",
+        "copy_count": "0",
+        "conditions": [
+          "Giấy phép gia công đã được cấp (nếu có)"
+        ],
+        "attachment_label": null,
+        "attachment_path": null
+      }
+    ],
+    "presented": [],
+    "notes": [],
+    "forms": [
+      {
+        "name": "Đơn đề nghị bổ sung, sửa đổi, cấp lại Giấy phép",
+        "attachment_label": "Mẫu số 04.docx",
+        "attachment_path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/1_014638/Ma%CC%82%CC%83u%20so%CC%82%CC%81%2004.docx"
+      }
+    ],
+    "empty_groups": [],
+    "document_count": 2
+  },
+  "process": {
+    "steps": [
+      {
+        "step_id": "step_1",
+        "title": null,
+        "content": "1.",
+        "actor": "user",
+        "channel_hint": null,
+        "time_hint": null
+      },
+      {
+        "step_id": "step_2",
+        "title": "a)",
+        "content": "a) Thương nhân gửi 01 bộ hồ sơ đề nghị bổ sung, sửa đổi, cấp lại Giấy phép gia công hàng hóa trực tiếp hoặc qua dịch vụ bưu chính đến Trung tâm Phục vụ hành chính công cấp tỉnh hoặc theo hình thức trực tuyến tại Cổng dịch vụ công quốc gia;",
+        "actor": "user",
+        "channel_hint": "trực tuyến",
+        "time_hint": null
+      },
+      {
+        "step_id": "step_3",
+        "title": "b)",
+        "content": "b) Trường hợp hồ sơ chưa đầy đủ, đúng quy định, trong thời hạn 03 ngày làm việc kể từ ngày nhận được hồ sơ, cơ quan chuyên môn thuộc Ủy ban nhân dân cấp tỉnh thực hiện việc tiếp nhận, giải quyết thủ tục hành chính thông báo cho thương nhân để bổ sung, hoàn thiện hồ sơ;",
+        "actor": "authority",
+        "channel_hint": null,
+        "time_hint": "03 ngày làm việc"
+      },
+      {
+        "step_id": "step_4",
+        "title": "c)",
+        "content": "c) Trong thời hạn 03 ngày làm việc kể từ ngày nhận được hồ sơ đầy đủ, đúng quy định, cơ quan chuyên môn thuộc Ủy ban nhân dân cấp tỉnh tham mưu, trình Chủ tịch Ủy ban nhân dân cấp tỉnh xem xét quyết định bổ sung, sửa đổi, cấp lại Giấy phép; trường hợp từ chối sửa đổi, bổ sung, cấp lại Giấy phép có văn bản thông báo, nêu rõ lý do.",
+        "actor": "authority",
+        "channel_hint": null,
+        "time_hint": "03 ngày làm việc"
+      }
+    ],
+    "step_count": 4,
+    "notes": []
+  },
+  "eligibility": {
+    "conditions": [],
+    "has_conditions": false
+  },
+  "results": {
+    "items": [
+      {
+        "name": "Giấy phép cho thương nhân thực hiện hoạt động gia công hàng hóa thuộc Danh mục sản phẩm công nghệ thông tin đã qua sử dụng cấm nhập khẩu cho thương nhân nước ngoài để tiêu thụ ở nước ngoài",
+        "result_code": "Giấy phép cho thương nhân",
+        "raw_text": "Giấy phép cho thương nhân thực hiện hoạt động gia công hàng hóa thuộc Danh mục sản phẩm công nghệ thông tin đã qua sử dụng cấm nhập khẩu cho thương nhân nước ngoài để tiêu thụ ở nước ngoài"
+      }
+    ],
+    "primary_result": {
+      "name": "Giấy phép cho thương nhân thực hiện hoạt động gia công hàng hóa thuộc Danh mục sản phẩm công nghệ thông tin đã qua sử dụng cấm nhập khẩu cho thương nhân nước ngoài để tiêu thụ ở nước ngoài",
+      "result_code": "Giấy phép cho thương nhân",
+      "raw_text": "Giấy phép cho thương nhân thực hiện hoạt động gia công hàng hóa thuộc Danh mục sản phẩm công nghệ thông tin đã qua sử dụng cấm nhập khẩu cho thương nhân nước ngoài để tiêu thụ ở nước ngoài"
+    }
+  },
+  "legal_basis": {
+    "items": [
+      {
+        "title": "Nghị quyết số 66.18/2026/NQ-CP ngày 18 tháng 5 năm 2026 của Chính phủ về việc phân quyền, cắt giảm, đơn giản hóa thủ tục hành chính, điều kiện kinh doanh",
+        "code": "66.18/2026/NQ-CP"
+      },
+      {
+        "title": "Luật quản lý ngoại thương",
+        "code": "05/2017/QH14"
+      },
+      {
+        "title": "Quy định chi tiết một số điều của Luật Quản lý Ngoại thương",
+        "code": "69/2018/NĐ-CP"
+      },
+      {
+        "title": "Nghị định số 146/2025/NĐ-CP",
+        "code": "nghị định 146/2025"
+      },
+      {
+        "title": "Thông tư số 26/2025/TT-BKHCN",
+        "code": "26/2025/TT-BKHCN"
+      }
+    ],
+    "count": 5
+  },
+  "attachments": [
+    {
+      "label": "Mẫu số 04.docx",
+      "path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/1_014638/Ma%CC%82%CC%83u%20so%CC%82%CC%81%2004.docx",
+      "source_section": "Thành phần hồ sơ",
+      "document_name": "Đơn đề nghị bổ sung, sửa đổi, cấp lại Giấy phép"
+    }
+  ],
+  "signals": {
+    "raw_parse_warnings": [],
+    "missing_documents": false,
+    "documents_section_present": true,
+    "documents_declared_empty": false,
+    "documents_only_in_notes": false,
+    "missing_results": false
+  }
+}

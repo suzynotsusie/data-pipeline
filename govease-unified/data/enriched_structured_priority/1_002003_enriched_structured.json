@@ -1,0 +1,94 @@
+{
+  "schema_version": "1.0",
+  "enricher_version": "0.2.0",
+  "source": {
+    "procedure_code": "1.002003",
+    "title": "Thủ tục cấp lại Chứng chỉ hành nghề bảo quản, tu bổ, phục hồi di tích",
+    "group_key": "hoc_tap",
+    "workflow_family": null,
+    "subflow": null
+  },
+  "experience": {
+    "entry_label": "Hỗ trợ giáo dục và học tập",
+    "overview_summary": "Thủ tục này thuộc nhóm giáo dục và học tập, thường liên quan đến hồ sơ đào tạo, văn bằng hoặc điều kiện học tập của người học. Kết quả thường nhận được là Chứng chỉ hành nghề bảo quản, tu bổ, phục hồi di tích. Thời gian xử lý tham khảo: 5 ngày làm việc.",
+    "next_step_summary": "Nên rà trước thông tin người học, cơ sở đào tạo và loại kết quả cần xin xác nhận hoặc cấp lại. Có thể chọn kênh nộp phù hợp: Trực tiếp, Trực tuyến, Dịch vụ bưu chính. Hiện có khoảng 3 mục giấy tờ cần theo dõi trong checklist.",
+    "tone": "supportive_public_service"
+  },
+  "guidance": {
+    "highlight_documents": [
+      {
+        "bucket": "required",
+        "name": "Ít nhất 02 ảnh màu khổ 4 cm x 6 cm chụp trong vòng 06 tháng gần nhất, độ phân giải tối thiểu 300 dpi hoặc tương đương.",
+        "conditions": [],
+        "attachment_path": null
+      },
+      {
+        "bucket": "required",
+        "name": "Đơn đề nghị cấp lại Chứng chỉ hành nghề bảo quản, tu bổ, phục hồi di tích theo Mẫu số 51 tại Phụ lục I ban hành kèm theo Nghị định số 308/2025/NĐ-CP ngày 28 tháng 11 năm 2025 của Chính phủ.",
+        "conditions": [],
+        "attachment_path": null
+      },
+      {
+        "bucket": "conditional",
+        "name": "Trường hợp bổ sung nội dung hành nghề đã được ghi nhận trong Chứng chỉ hành nghề bảo quản, tu bổ, phục hồi di tích đã cấp, phải gửi kèm theo hồ sơ các bản sao có chứng thực hoặc bản sao có xuất trình bản chính để đối chiếu (trường hợp nộp hồ sơ trực tiếp); bản sao có chứng thực (trường hợp gửi hồ sơ trực tuyến hoặc qua đường bưu điện) chứng chỉ, chứng nhận quy định tại điểm b khoản 3 Điều 73 Nghị định số 308/2025/NĐ-CP ngày 28 tháng 11 năm 2025 của Chính phủ đối với nội dung hành nghề bổ sung.",
+        "conditions": [
+          "Trường hợp bổ sung nội dung hành nghề đã được ghi nhận trong Chứng chỉ hành nghề bảo quản, tu bổ, phục hồi di tích đã cấp, phải gửi kèm theo hồ sơ các bản sao có chứng thực hoặc bản sao có xuất trình bản chính để đối chiếu (trường hợp nộp hồ sơ trực tiếp); bản sao có chứng thực (trường hợp gửi hồ sơ trực tuyến hoặc qua đường bưu điện) chứng chỉ, chứng nhận quy định tại điểm b khoản 3 Điều 73 Nghị định số 308/2025/NĐ-CP ngày 28 tháng 11 năm 2025 của Chính phủ đối với nội dung hành nghề bổ sung."
+        ],
+        "attachment_path": null
+      }
+    ],
+    "special_cases": [
+      "Có trường hợp hồ sơ điện tử thay thế bản giấy"
+    ],
+    "common_errors": [
+      "Điền sai mẫu tờ khai hoặc chọn sai biểu mẫu đi kèm."
+    ],
+    "validation_hints": [
+      "Nên xác định trước kênh nộp hồ sơ để biết có cần bản giấy, bản điện tử hay xuất trình trực tiếp.",
+      "Nên rà lại thông tin người học, cơ sở đào tạo và loại xác nhận hoặc văn bằng cần xin."
+    ]
+  },
+  "intake": {
+    "candidate_input_fields": [
+      {
+        "field_id": "learner_full_name",
+        "label": "Tên người học",
+        "field_type": "text",
+        "required": true
+      },
+      {
+        "field_id": "education_record_type",
+        "label": "Loại hồ sơ học tập cần xử lý",
+        "field_type": "text",
+        "required": true
+      },
+      {
+        "field_id": "education_institution",
+        "label": "Cơ sở đào tạo liên quan",
+        "field_type": "text",
+        "required": false
+      },
+      {
+        "field_id": "submission_channel_preference",
+        "label": "Kênh nộp dự kiến",
+        "field_type": "enum",
+        "required": false
+      }
+    ],
+    "suggested_clarifying_questions": [
+      "Bạn đang cần xử lý hồ sơ học tập, văn bằng hay xác nhận nào?",
+      "Người học và cơ sở đào tạo liên quan đã xác định rõ chưa?"
+    ]
+  },
+  "ui_hints": {
+    "primary_channel": "online",
+    "result_label": "Chứng chỉ hành nghề bảo quản, tu bổ, phục hồi di tích",
+    "time_badge": "5 ngày làm việc",
+    "document_count_badge": 3
+  },
+  "provenance": {
+    "generator": "workflow_domain_enricher",
+    "derivation_mode": "rule_based_semantic_enrichment",
+    "supported_group": true
+  }
+}

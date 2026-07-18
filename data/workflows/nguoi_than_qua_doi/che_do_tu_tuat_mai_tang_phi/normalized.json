@@ -1,0 +1,283 @@
+{
+  "schema_version": "1.0",
+  "domain": "nguoi_than_qua_doi",
+  "updated_at": "2026-07-18",
+  "source_files": [
+    "C:\\Users\\ku060\\Downloads\\VAIC source\\data-pipeline\\main\\full-data.csv",
+    "C:\\Users\\ku060\\Downloads\\VAIC source\\data-pipeline\\raw_data"
+  ],
+  "subdomains": [
+    {
+      "subdomain_key": "che_do_tu_tuat_mai_tang_phi",
+      "subdomain_label": "Chế độ tử tuất, mai táng phí",
+      "event_id": 321,
+      "summary": "Nhóm thủ tục hưởng chế độ tử tuất, trợ cấp mai táng và hỗ trợ chi phí mai táng cho thân nhân người đã mất.",
+      "entry_prompts": [
+        "Bạn đang cần hưởng trợ cấp tử tuất, trợ cấp mai táng hay hỗ trợ chi phí mai táng?",
+        "Người đã mất thuộc nhóm bảo hiểm xã hội, bảo trợ xã hội, người có công hay chính sách địa phương đặc thù?"
+      ],
+      "procedure_count": 9,
+      "procedures": [
+        {
+          "procedure_code": "1.001731",
+          "procedure_title": "Hỗ trợ chi phí mai táng cho đối tượng bảo trợ xã hội",
+          "subdomain_key": "che_do_tu_tuat_mai_tang_phi",
+          "subdomain_label": "Chế độ tử tuất, mai táng phí",
+          "event_id": 321,
+          "field": "Bảo trợ xã hội",
+          "agency": "Ủy ban nhân dân cấp xã",
+          "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bfe-b7dd-7239-b166-b6cd79d326b8",
+          "raw_data_file": "C:\\Users\\ku060\\Downloads\\VAIC source\\data-pipeline\\raw_data\\1_001731\\1_001731_procedure_detail.md",
+          "raw_data_available": true,
+          "operation_group": "ho_tro_mai_tang_bao_tro_xa_hoi",
+          "operation_key": "ho_tro_chi_phi_mai_tang_cho_doi_tuong_bao_tro_xa_hoi",
+          "overview": "- Bước 1: Cá nhân, cơ quan, đơn vị chịu trách nhiệm mai táng cho đối tượng làm hồ sơ theo quy định, gửi Chủ tịch Ủy ban nhân dân cấp xã. - Bước 2: Trong thời hạn 03 ngày làm việc, kể từ ngày nhận được Tờ khai của cá nhân, cơ quan, đơn vị tổ chức đứng ra mai táng cho đối tượng, Chủ tịch Ủy ban nhân dân cấp xã xem xét, quyết định hỗ trợ chi phí mai táng và thực hiện chi trả kinh phí hỗ trợ theo quy định.",
+          "procedure_flow": "- Bước 1: Cá nhân, cơ quan, đơn vị chịu trách nhiệm mai táng cho đối tượng làm hồ sơ theo quy định, gửi Chủ tịch Ủy ban nhân dân cấp xã. - Bước 2: Trong thời hạn 03 ngày làm việc, kể từ ngày nhận được Tờ khai của cá nhân, cơ quan, đơn vị tổ chức đứng ra mai táng cho đối tượng, Chủ tịch Ủy ban nhân dân cấp xã xem xét, quyết định hỗ trợ chi phí mai táng và thực hiện chi trả kinh phí hỗ trợ theo quy định.",
+          "requirements": "Những đối tượng khi chết được hỗ trợ chi phí mai táng: - Đối tượng quy định tại Điều 5 Nghị định số 20/2021/NĐ-CP đang hưởng trợ cấp xã hội hàng tháng. - Con của người đơn thân nghèo đang nuôi con quy định tại khoản 4 Điều 5 Nghị định số 20/2021/NĐ-CP. - Người từ đủ 80 tuổi đang hưởng trợ cấp tuất bảo hiểm xã hội hàng tháng, trợ cấp hàng tháng khác. - Hộ gia đình có người chết, mất tích do thiên tai, hỏa hoạn, dịch bệnh; tai nạn giao thông, tai nạn lao động nghiêm trọng hoặc các lý do bất khả kháng khác. - Cơ quan, tổ chức, cá nhân tổ chức mai táng cho người chết quy định tại khoản 1 Điều 14 nghị định số 20/2021/NĐ-CP do không có người nhận trách nhiệm tổ chức mai táng.",
+          "submission_methods": [],
+          "processing_time_values": [],
+          "document_groups": [],
+          "result_items": []
+        },
+        {
+          "procedure_code": "1.010456",
+          "procedure_title": "Giải quyết chế độ mai táng phí đối với dân công hỏa tuyến tham gia kháng chiến chống Pháp, chống Mỹ, chiến tranh bảo vệ Tổ quốc và làm nhiệm vụ quốc tế hưởng trợ cấp theo Quyết định số 49/2015/QĐ-TTg của Thủ tướng Chính phủ",
+          "subdomain_key": "che_do_tu_tuat_mai_tang_phi",
+          "subdomain_label": "Chế độ tử tuất, mai táng phí",
+          "event_id": 321,
+          "field": "Người có công",
+          "agency": "Ủy ban nhân dân cấp xã",
+          "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019dbe41-6991-743a-819d-5be7935767c7",
+          "raw_data_file": "C:\\Users\\ku060\\Downloads\\VAIC source\\data-pipeline\\raw_data\\1_010456\\1_010456_procedure_detail.md",
+          "raw_data_available": true,
+          "operation_group": "mai_tang_phi_dan_cong_hoa_tuyen",
+          "operation_key": "giai_quyet_che_do_mai_tang_phi_doi_voi_dan_cong_hoa_tuyen_tham_gia_khang_chien_chong_phap_chong_my_chien_tranh_bao_ve_to_quoc_va_lam_nhiem_vu_quoc_te_huong_tro_cap_theo_quyet_dinh_so_49_2015_qd_ttg_cua_thu_tuong_chinh_phu",
+          "overview": "1. - Bước 1: Tổ chức, cá nhân hoàn thiện hồ sơ theo hướng dẫn và nộp hồ sơ trực tuyến trên Cổng dịch vụ công hoặc nộp trực tiếp tại Trung tâm Phục vụ hành chính công cấp xã hoặc gửi hồ sơ qua đường bưu điện.",
+          "procedure_flow": "1. - Bước 1: Tổ chức, cá nhân hoàn thiện hồ sơ theo hướng dẫn và nộp hồ sơ trực tuyến trên Cổng dịch vụ công hoặc nộp trực tiếp tại Trung tâm Phục vụ hành chính công cấp xã hoặc gửi hồ sơ qua đường bưu điện. 2. - Bước 2: Trung tâm Phục vụ hành chính công tiếp nhận hồ sơ (yêu cầu bổ sung, hoàn thiện nếu hồ sơ chưa đầy đủ); chuyển Sở Nội vụ thẩm định. 3. - Bước 3: Sở Nội vụ rà soát, xem xét ban hành Quyết định giải quyết chuyển cấp xã trả kết quả. 4. - Bước 4: Trung tâm Phục vụ hành chính công cấp xã trả kết quả cho tổ chức, công dân.",
+          "requirements": "Không có",
+          "submission_methods": [
+            "Trực tiếp",
+            "Trực tuyến",
+            "Dịch vụ bưu chính"
+          ],
+          "processing_time_values": [
+            "10 ngày làm việc",
+            "10 ngày làm việc",
+            "10 ngày làm việc"
+          ],
+          "document_groups": [],
+          "result_items": [
+            "1. Quyết định hành chính (Mã: `000.00.00.H17-KQ2647`)"
+          ]
+        },
+        {
+          "procedure_code": "1.014028",
+          "procedure_title": "Hỗ trợ chi phí mai táng đối với đối tượng hưởng trợ cấp hưu trí xã hội",
+          "subdomain_key": "che_do_tu_tuat_mai_tang_phi",
+          "subdomain_label": "Chế độ tử tuất, mai táng phí",
+          "event_id": 321,
+          "field": "Bảo trợ xã hội",
+          "agency": "Ủy ban nhân dân cấp xã",
+          "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bff-3508-7268-b54b-6ce79a8cbf0e",
+          "raw_data_file": "C:\\Users\\ku060\\Downloads\\VAIC source\\data-pipeline\\raw_data\\1_014028\\1_014028_procedure_detail.md",
+          "raw_data_available": true,
+          "operation_group": "ho_tro_mai_tang_bao_tro_xa_hoi",
+          "operation_key": "ho_tro_chi_phi_mai_tang_doi_voi_doi_tuong_huong_tro_cap_huu_tri_xa_hoi",
+          "overview": "1. - Bước 1: Tổ chức, cá nhân lo mai táng cho đối tượng có Tờ khai đề nghị hỗ trợ chi phí mai táng theo Mẫu số 02 ban hành kèm theo Nghị định số 176/2025/NĐ-CP gửi Ủy ban nhân dân xã, phường, đặc khu (sau đây gọi chung là Ủy ban nhân dân cấp xã); - Bước 2: Trong thời hạn 03 ngày làm việc, kể từ ngày nhận đủ hồ sơ, Chủ tịch Ủy ban nhân dân cấp xã xem xét, quyết định hỗ trợ chi phí mai táng.",
+          "procedure_flow": "1. - Bước 1: Tổ chức, cá nhân lo mai táng cho đối tượng có Tờ khai đề nghị hỗ trợ chi phí mai táng theo Mẫu số 02 ban hành kèm theo Nghị định số 176/2025/NĐ-CP gửi Ủy ban nhân dân xã, phường, đặc khu (sau đây gọi chung là Ủy ban nhân dân cấp xã); - Bước 2: Trong thời hạn 03 ngày làm việc, kể từ ngày nhận đủ hồ sơ, Chủ tịch Ủy ban nhân dân cấp xã xem xét, quyết định hỗ trợ chi phí mai táng.",
+          "requirements": "Tổ chức, cá nhân lo mai táng cho đối tượng được hưởng trợ cấp hưu trí xã hội hoặc người đã có văn bản đề nghị hưởng trợ cấp hưu trí xã hội, đủ điều kiện hưởng nhưng Chủ tịch Ủy ban nhân dân cấp xã chưa ban hành quyết định hưởng trợ cấp hưu trí xã hội khi chết thì được hỗ trợ chi phí mai táng.",
+          "submission_methods": [
+            "Trực tuyến",
+            "Dịch vụ bưu chính",
+            "Trực tiếp"
+          ],
+          "processing_time_values": [
+            "3 ngày làm việc",
+            "3 ngày làm việc",
+            "3 ngày làm việc"
+          ],
+          "document_groups": [],
+          "result_items": [
+            "Quyết định hỗ trợ chi phí mai táng (BYT) (Mã: `KQ.G18.000312`)"
+          ]
+        },
+        {
+          "procedure_code": "1.014177",
+          "procedure_title": "HƯỞNG TRỢ CẤP MAI TÁNG",
+          "subdomain_key": "che_do_tu_tuat_mai_tang_phi",
+          "subdomain_label": "Chế độ tử tuất, mai táng phí",
+          "event_id": 321,
+          "field": "Bảo hiểm xã hội",
+          "agency": "Bảo hiểm xã hội tỉnh",
+          "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bfb-236e-71b0-8d75-1d77a69b881f",
+          "raw_data_file": "C:\\Users\\ku060\\Downloads\\VAIC source\\data-pipeline\\raw_data\\1_014177\\1_014177_procedure_detail.md",
+          "raw_data_available": true,
+          "operation_group": "tro_cap_mai_tang_bhxh",
+          "operation_key": "huong_tro_cap_mai_tang",
+          "overview": "1. Bước 1: Trong thời hạn 90 ngày kể từ ngày người đang bảo lưu thời gian đóng bảo hiểm xã hội, người tham gia bảo hiểm tự nguyện, người đang hưởng hoặc đang tạm dừng hưởng lương hưu, trợ cấp tai nạn lao động, bệnh nghề nghiệp hằng tháng chết thì thân nhân hoặc tổ chức, cá nhân lo mai táng nộp hồ sơ cho cơ quan bảo hiểm xã hội. Trong thời hạn 90 ngày kể từ ngày người lao động đang tham gia bảo hiểm xã hội bắt buộc chết thì thân nhân hoặc tổ chức, cá nhân lo mai táng nộp hồ sơ quy định cho người sử dụng lao động. Bước 2: Trong thời hạn 30 ngày kể từ ngày nhận đủ hồ sơ từ thân nhân của người lao động đang tham gia bảo hiểm xã hội bắt buộc chết, người sử dụng lao động có trách nhiệm nộp hồ sơ cho cơ quan bảo hiểm xã hội. Bước 3: Trong thời hạn 10 ngày làm việc kể từ ngày nhận đủ hồ sơ theo quy định, cơ quan bảo hiểm xã hội có trách nhiệm giải quyết. Trường hợp không giải quyết thì phải trả lời bằng văn bản và nêu rõ lý do.",
+          "procedure_flow": "1. Bước 1: Trong thời hạn 90 ngày kể từ ngày người đang bảo lưu thời gian đóng bảo hiểm xã hội, người tham gia bảo hiểm tự nguyện, người đang hưởng hoặc đang tạm dừng hưởng lương hưu, trợ cấp tai nạn lao động, bệnh nghề nghiệp hằng tháng chết thì thân nhân hoặc tổ chức, cá nhân lo mai táng nộp hồ sơ cho cơ quan bảo hiểm xã hội. Trong thời hạn 90 ngày kể từ ngày người lao động đang tham gia bảo hiểm xã hội bắt buộc chết thì thân nhân hoặc tổ chức, cá nhân lo mai táng nộp hồ sơ quy định cho người sử dụng lao động. Bước 2: Trong thời hạn 30 ngày kể từ ngày nhận đủ hồ sơ từ thân nhân của người lao động đang tham gia bảo hiểm xã hội bắt buộc chết, người sử dụng lao động có trách nhiệm nộp hồ sơ cho cơ quan bảo hiểm xã hội. Bước 3: Trong thời hạn 10 ngày làm việc kể từ ngày nhận đủ hồ sơ theo quy định, cơ quan bảo hiểm xã hội có trách nhiệm giải quyết. Trường hợp không giải quyết thì phải trả lời bằng văn bản và nêu rõ lý do.",
+          "requirements": "Không có thông tin",
+          "submission_methods": [
+            "Trực tuyến",
+            "Dịch vụ bưu chính",
+            "Trực tiếp"
+          ],
+          "processing_time_values": [
+            "10 ngày làm việc",
+            "10 ngày làm việc",
+            "10 ngày làm việc"
+          ],
+          "document_groups": [],
+          "result_items": [
+            "Quyết định về việc hưởng trợ cấp mai táng. (Mã: `KQ.G09.000364`)"
+          ]
+        },
+        {
+          "procedure_code": "1.014359",
+          "procedure_title": "Giải quyết chế độ mai táng phí đối với dân công hỏa tuyến tham gia kháng chiến chống Pháp, chống Mỹ, chiến tranh bảo vệ Tổ quốc và làm nhiệm vụ quốc tế",
+          "subdomain_key": "che_do_tu_tuat_mai_tang_phi",
+          "subdomain_label": "Chế độ tử tuất, mai táng phí",
+          "event_id": 321,
+          "field": "Người có công",
+          "agency": "Ủy ban nhân dân cấp xã; Sở Nội Vụ",
+          "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bfb-2b25-777d-a825-2823012ce7ec",
+          "raw_data_file": "C:\\Users\\ku060\\Downloads\\VAIC source\\data-pipeline\\raw_data\\1_014359\\1_014359_procedure_detail.md",
+          "raw_data_available": true,
+          "operation_group": "mai_tang_phi_dan_cong_hoa_tuyen",
+          "operation_key": "giai_quyet_che_do_mai_tang_phi_doi_voi_dan_cong_hoa_tuyen_tham_gia_khang_chien_chong_phap_chong_my_chien_tranh_bao_ve_to_quoc_va_lam_nhiem_vu_quoc_te",
+          "overview": "1. Bước 1: Thân nhân đối tượng nộp hồ sơ theo hướng dẫn tại điểm a khoản 3 Điều 5 Quyết định số 49/2015/QĐ-TTg ngày 14/10/2015 của Thủ tướng Chính phủ cho Ủy ban nhân dân cấp xã nơi thường trú bằng hình thức trực tiếp hoặc qua dịch vụ bưu chính công ích hoặc trên môi trường điện tử. Ủy ban nhân dân cấp xã sau thời gian 05 ngày làm việc, tổng hợp, báo cáo Sở Nội vụ. Bước 2: Sở Nội vụ kiểm tra, tổng hợp, báo cáo Ủy ban nhân dân cấp tỉnh và ra quyết định hưởng trợ cấp mai táng phí đối với thân nhân từng đối tượng. Thời gian giải quyết chế độ đối với thân nhân đối tượng theo trách nhiệm được giao của mỗi cấp không quá 07 ngày làm việc kể từ khi nhận đủ hồ sơ theo quy định; nếu hồ sơ không đủ điều kiện xem xét, giải quyết thì cơ quan tiếp nhận phải có văn bản trả lời, nêu rõ lý do.",
+          "procedure_flow": "1. Bước 1: Thân nhân đối tượng nộp hồ sơ theo hướng dẫn tại điểm a khoản 3 Điều 5 Quyết định số 49/2015/QĐ-TTg ngày 14/10/2015 của Thủ tướng Chính phủ cho Ủy ban nhân dân cấp xã nơi thường trú bằng hình thức trực tiếp hoặc qua dịch vụ bưu chính công ích hoặc trên môi trường điện tử. Ủy ban nhân dân cấp xã sau thời gian 05 ngày làm việc, tổng hợp, báo cáo Sở Nội vụ. Bước 2: Sở Nội vụ kiểm tra, tổng hợp, báo cáo Ủy ban nhân dân cấp tỉnh và ra quyết định hưởng trợ cấp mai táng phí đối với thân nhân từng đối tượng. Thời gian giải quyết chế độ đối với thân nhân đối tượng theo trách nhiệm được giao của mỗi cấp không quá 07 ngày làm việc kể từ khi nhận đủ hồ sơ theo quy định; nếu hồ sơ không đủ điều kiện xem xét, giải quyết thì cơ quan tiếp nhận phải có văn bản trả lời, nêu rõ lý do.",
+          "requirements": "- Đối tượng đáp ứng điều kiện sau thì thân nhân được hưởng trợ cấp mai táng phí: Người được Ủy ban hành chính hoặc Ủy ban nhân dân cấp xã trở lên hoặc cơ quan, đơn vị có thẩm quyền huy động, quản lý tập trung, được giao làm nhiệm vụ phục vụ chiến đấu cho các đơn vị Quân đội hoặc phục vụ các chiến trường, bao gồm: Vận chuyển vũ khí trang bị, đạn dược, lương thực, thực phẩm, vận chuyển thương binh, bệnh binh; làm đường cơ động, san lấp hố bom, bảo đảm giao thông, liên lạc, vót chông, làm cạm bẫy; đào hầm hào, xây dựng công sự, trận địa, khu vực phòng thủ, trong thời gian và địa bàn theo quy định tại Điểm a, b, c Khoản 2 Điều 2 Quyết định số 49/2015/QĐ-TTg. - Dân công hỏa tuyến tham gia kháng chiến chống Pháp, chống Mỹ, chiến tranh bảo vệ Tổ quốc và làm nhiệm vụ quốc tế thuộc một trong các trường hợp sau đây, không thuộc đối tượng áp dụng: + Hiện đang hưởng chế độ hưu trí, chế độ mất sức lao động, chế độ bệnh binh, chế độ người hoạt động kháng chiến bị nhiễm chất độc hóa học hằng tháng hoặc đang công tác trong cơ quan Nhà nước, làm việc trong doanh nghiệp nhà nước hưởng lương từ ngân sách nhà nước có tham gia bảo hiểm xã hội bắt buộc. + Đã từ trần nhưng không còn vợ hoặc chồng; bố đẻ, mẹ đẻ; con đẻ, con nuôi hoặc người nuôi dưỡng hợp pháp. + Đang chấp hành hình phạt tù có thời hạn, tù chung thân; hoặc người bị kết án về một trong những tội về xâm phạm đến an ninh quốc gia. + Xuất cảnh trái phép, đang định cư ở nước ngoài bất hợp pháp hoặc bị tòa án tuyên bố là mất tích; hoặc thoái thác nhiệm vụ, đầu hàng, phản bội, chiêu hồi.",
+          "submission_methods": [
+            "Trực tuyến",
+            "Dịch vụ bưu chính",
+            "Trực tiếp"
+          ],
+          "processing_time_values": [
+            "12 ngày làm việc",
+            "12 ngày làm việc",
+            "12 ngày làm việc"
+          ],
+          "document_groups": [],
+          "result_items": [
+            "Quyết định hưởng trợ cấp mai táng phí đối với thân nhân từng đối tượng. (Mã: `KQ.G09.000383`)"
+          ]
+        },
+        {
+          "procedure_code": "2.000821",
+          "procedure_title": "Giải quyết hưởng chế độ tử tuất",
+          "subdomain_key": "che_do_tu_tuat_mai_tang_phi",
+          "subdomain_label": "Chế độ tử tuất, mai táng phí",
+          "event_id": 321,
+          "field": "Thực hiện chính sách BHXH",
+          "agency": "",
+          "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bfc-d9c7-75c6-bfa0-631818e8ba0c",
+          "raw_data_file": "C:\\Users\\ku060\\Downloads\\VAIC source\\data-pipeline\\raw_data\\2_000821\\2_000821_procedure_detail.md",
+          "raw_data_available": true,
+          "operation_group": "che_do_tu_tuat",
+          "operation_key": "giai_quyet_huong_che_do_tu_tuat",
+          "overview": "Bước 1. Lập hồ sơ Thân nhân NLĐ lập hồ sơ theo quy định tại mục Thành phần hồ sơ Bước 2. Nộp hồ sơ 1. Trường hợp NLĐ đang đóng BHXH bắt buộc mà bị chết: Thân nhân nộp hồ sơ cho đơn vị SDLĐ. Đơn vị SDLĐ tiếp nhận đủ hồ sơ từ thân nhân NLĐ, nộp hồ sơ cho cơ quan BHXH nơi đơn vị đóng BHXH. 2. Trường hợp NLĐ bị chết mà đang bảo lưu thời gian đóng BHXH bắt buộc (áp dụng đối với cả trường hợp người bị chết trong thời gian đang đóng BHXH mà đơn vị SDLĐ đã thực hiện chốt sổ BHXH nếu thân nhân có nguyện vọng trực tiếp nộp hồ sơ, trừ trường hợp chết do TNLĐ, BNN) hoặc đang chờ đủ điều kiện về tuổi đời để hưởng chế độ hưu trí, trợ cấp cán bộ xã hàng tháng hoặc tham gia BHXH tự nguyện: Thân nhân nộp hồ sơ theo quy định cho cơ quan BHXH. 3. Trường hợp người đang hưởng hoặc đang tạm dừng hưởng lương hưu, trợ cấp BHXH hàng tháng chết: Thân nhân nộp hồ sơ cho cơ quan BHXH nơi đang chi trả lương hưu, trợ cấp BHXH hàng tháng của NLĐ (đối với trường hợp đang hưởng) hoặc nơi đang chi trả trước khi tạm dừng hưởng (đối với trường hợp đang tạm dừng hưởng). Bước 3. Cơ quan BHXH tiếp nhận hồ sơ và giải quyết theo quy định. Bước 4. Nhận kết quả giải quyết 1. Đơn vị SDLĐ: Nhận Quyết định về việc hưởng trợ cấp mai táng, Quyết định về việc hưởng chế độ tử tuất hàng tháng hoặc một lần; bản quá trình đóng BHXH; Thông báo về việc chi trả lương hưu, trợ cấp BHXH đối với trường hợp di chuyển hưởng chế độ BHXH tại huyện/tỉnh khác để trả cho thân nhân NLĐ đối với các trường hợp nêu tại điểm 1 bước 2 mục 7.1. 2. Thân nhân NLĐ: - Nhận tiền trợ cấp - Thân nhân NLĐ nêu tại điểm 2, 3 bước 2 mục 7.1: Nhận Quyết định về việc hưởng trợ cấp mai táng, Quyết định về việc hưởng chế độ tử tuất hàng tháng hoặc một lần; bản quá trình đóng BHXH (đối với người đang tham gia hoặc bảo lưu thời gian đóng BHXH bị chết); Thông báo về việc chi trả lương hưu, trợ cấp BHXH đối với trường hợp di chuyển hưởng chế độ BHXH tại huyện/tỉnh khác.",
+          "procedure_flow": "Bước 1. Lập hồ sơ Thân nhân NLĐ lập hồ sơ theo quy định tại mục Thành phần hồ sơ Bước 2. Nộp hồ sơ 1. Trường hợp NLĐ đang đóng BHXH bắt buộc mà bị chết: Thân nhân nộp hồ sơ cho đơn vị SDLĐ. Đơn vị SDLĐ tiếp nhận đủ hồ sơ từ thân nhân NLĐ, nộp hồ sơ cho cơ quan BHXH nơi đơn vị đóng BHXH. 2. Trường hợp NLĐ bị chết mà đang bảo lưu thời gian đóng BHXH bắt buộc (áp dụng đối với cả trường hợp người bị chết trong thời gian đang đóng BHXH mà đơn vị SDLĐ đã thực hiện chốt sổ BHXH nếu thân nhân có nguyện vọng trực tiếp nộp hồ sơ, trừ trường hợp chết do TNLĐ, BNN) hoặc đang chờ đủ điều kiện về tuổi đời để hưởng chế độ hưu trí, trợ cấp cán bộ xã hàng tháng hoặc tham gia BHXH tự nguyện: Thân nhân nộp hồ sơ theo quy định cho cơ quan BHXH. 3. Trường hợp người đang hưởng hoặc đang tạm dừng hưởng lương hưu, trợ cấp BHXH hàng tháng chết: Thân nhân nộp hồ sơ cho cơ quan BHXH nơi đang chi trả lương hưu, trợ cấp BHXH hàng tháng của NLĐ (đối với trường hợp đang hưởng) hoặc nơi đang chi trả trước khi tạm dừng hưởng (đối với trường hợp đang tạm dừng hưởng). Bước 3. Cơ quan BHXH tiếp nhận hồ sơ và giải quyết theo quy định. Bước 4. Nhận kết quả giải quyết 1. Đơn vị SDLĐ: Nhận Quyết định về việc hưởng trợ cấp mai táng, Quyết định về việc hưởng chế độ tử tuất hàng tháng hoặc một lần; bản quá trình đóng BHXH; Thông báo về việc chi trả lương hưu, trợ cấp BHXH đối với trường hợp di chuyển hưởng chế độ BHXH tại huyện/tỉnh khác để trả cho thân nhân NLĐ đối với các trường hợp nêu tại điểm 1 bước 2 mục 7.1. 2. Thân nhân NLĐ: - Nhận tiền trợ cấp - Thân nhân NLĐ nêu tại điểm 2, 3 bước 2 mục 7.1: Nhận Quyết định về việc hưởng trợ cấp mai táng, Quyết định về việc hưởng chế độ tử tuất hàng tháng hoặc một lần; bản quá trình đóng BHXH (đối với người đang tham gia hoặc bảo lưu thời gian đóng BHXH bị chết); Thông báo về việc chi trả lương hưu, trợ cấp BHXH đối với trường hợp di chuyển hưởng chế độ BHXH tại huyện/tỉnh khác.",
+          "requirements": "1. Điều kiện hưởng trợ cấp mai táng: Điều 66, 80 Luật BHXH; Điều 53 Luật An toàn vệ sinh lao động; Điều 12, 13 Nghị định số 115/2015/NĐ-CP; Điều 8 Nghị định số 134/2015/NĐ-CP; Điều 24, 38 Thông tư số 59/2015/TT-BLĐTBXH; khoản 2 Điều 7 Thông tư số 01/2016/TT-BLĐTBXH; Khoản 5 Điều 17 Thông tư số 105/2016/TTLT-BQP-BCA-BLĐTBXH; Khoản 1 Điều 2 QĐ 250/QĐ-TTg. 2. Điều kiện hưởng trợ cấp tuất hàng tháng: Điều 67 Luật BHXH; khoản 4 Điều 12, Điều 13, Khoản 1 Điều 14 Nghị định số 115/2015/NĐ-CP; Khoản 3 Điều 8 Nghị định số 134/2015/NĐ-CP; Điều 25 Thông tư số 59/2015/TT-BLĐTBXH; Khoản 5 Điều 17 Thông tư số 105/2016/TTLT-BQP-BCA-BLĐTBXH. 3. Điều kiện hưởng trợ cấp tuất một lần: Điều 69, 81 Luật BHXH; Khoản 5 Điều 12, Điều 13, khoản 2 điều 14 Nghị định số 115/2015/NĐ-CP; khoản 4,5 Nghị định số 134/2015/NĐ-CP; điều 27 Thông tư số 59/2015/TT-BLĐTBXH; khoản 4 Điều 7 Thông tư số 01/2016/TT-BLĐTBXH; Khoản 5 Điều 17 Thông tư số 105/2016/TTLT-BQP-BCA-BLĐTBXH.",
+          "submission_methods": [],
+          "processing_time_values": [],
+          "document_groups": [],
+          "result_items": []
+        },
+        {
+          "procedure_code": "2.002307",
+          "procedure_title": "Giải quyết chế độ mai táng phí đối với cựu chiến binh",
+          "subdomain_key": "che_do_tu_tuat_mai_tang_phi",
+          "subdomain_label": "Chế độ tử tuất, mai táng phí",
+          "event_id": 321,
+          "field": "Người có công",
+          "agency": "Sở Nội Vụ",
+          "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bfb-4a4e-7368-a306-f665291850ca",
+          "raw_data_file": "C:\\Users\\ku060\\Downloads\\VAIC source\\data-pipeline\\raw_data\\2_002307\\2_002307_procedure_detail.md",
+          "raw_data_available": true,
+          "operation_group": "mai_tang_phi_cuu_chien_binh",
+          "operation_key": "giai_quyet_che_do_mai_tang_phi_doi_voi_cuu_chien_binh",
+          "overview": "1. Bước 1: Đại diện thân nhân hoặc người tổ chức mai táng có trách nhiệm lập hồ sơ theo quy định, gửi Ủy ban nhân dân, cấp xã; Bước 2: Ủy ban nhân dân cấp xã trong thời gian 05 ngày kể từ ngày nhận đủ hồ sơ có trách nhiệm xác nhận bản khai, gửi Phòng Lao động - Thương binh và Xã hội kèm các giấy tờ theo quy định; Bước 3: Phòng Lao động - Thương binh và Xã hội trong thời gian 10 ngày kể từ ngày nhận đủ các giấy tờ, có trách nhiệm kiểm tra, lập phiếu báo giảm và tổng hợp danh sách gửi Sở Lao động - Thương binh và Xã hội; Bước 4: Sở Lao động - Thương binh và Xã hội trong thời gian 10 ngày kể từ ngày nhận đủ các giấy tờ theo quy định có trách nhiệm đối chiếu, ghép hồ sơ người có công đang quản lý với hồ sơ đề nghị hưởng mai táng phí, trợ cấp một lần và ra quyết định.",
+          "procedure_flow": "1. Bước 1: Đại diện thân nhân hoặc người tổ chức mai táng có trách nhiệm lập hồ sơ theo quy định, gửi Ủy ban nhân dân, cấp xã; Bước 2: Ủy ban nhân dân cấp xã trong thời gian 05 ngày kể từ ngày nhận đủ hồ sơ có trách nhiệm xác nhận bản khai, gửi Phòng Lao động - Thương binh và Xã hội kèm các giấy tờ theo quy định; Bước 3: Phòng Lao động - Thương binh và Xã hội trong thời gian 10 ngày kể từ ngày nhận đủ các giấy tờ, có trách nhiệm kiểm tra, lập phiếu báo giảm và tổng hợp danh sách gửi Sở Lao động - Thương binh và Xã hội; Bước 4: Sở Lao động - Thương binh và Xã hội trong thời gian 10 ngày kể từ ngày nhận đủ các giấy tờ theo quy định có trách nhiệm đối chiếu, ghép hồ sơ người có công đang quản lý với hồ sơ đề nghị hưởng mai táng phí, trợ cấp một lần và ra quyết định.",
+          "requirements": "Không",
+          "submission_methods": [
+            "Dịch vụ bưu chính",
+            "Trực tiếp"
+          ],
+          "processing_time_values": [
+            "25 ngày",
+            "25 ngày"
+          ],
+          "document_groups": [],
+          "result_items": [
+            "Quyết định trợ cấp mai táng phí (Mã: `KQ.G07.000132`)"
+          ]
+        },
+        {
+          "procedure_code": "2.002308",
+          "procedure_title": "Giải quyết chế độ mai táng phí đối với thanh niên xung phong thời kỳ chống Pháp",
+          "subdomain_key": "che_do_tu_tuat_mai_tang_phi",
+          "subdomain_label": "Chế độ tử tuất, mai táng phí",
+          "event_id": 321,
+          "field": "Người có công",
+          "agency": "Ủy ban nhân dân cấp xã",
+          "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bfb-4a52-722d-90e3-4cafef5d497c",
+          "raw_data_file": "C:\\Users\\ku060\\Downloads\\VAIC source\\data-pipeline\\raw_data\\2_002308\\2_002308_procedure_detail.md",
+          "raw_data_available": true,
+          "operation_group": "mai_tang_phi_thanh_nien_xung_phong",
+          "operation_key": "giai_quyet_che_do_mai_tang_phi_doi_voi_thanh_nien_xung_phong_thoi_ky_chong_phap",
+          "overview": "1. Bước 1: Thân nhân lập bản khai thanh niên xung phong từ trần kèm theo giấy khai tử; Bước 2: Ủy ban nhân dân cấp xã xác nhận vào bản khai của từng người; chuyển bản khai kèm giấy khai tử và một trong những giấy tờ (bản sao có công chứng) xác nhận là thanh niên xung phong quy định tại điểm a Khoản 1 Điều 3 Thông tư số 24/2009/TT-BLĐTBXH ngày 10/07/2009 của Bộ Lao động - Thương binh và Xã hội hướng dẫn thực hiện Quyết định số 170/2008/QĐ-TTg ngày 18/12/2008 của Thủ tướng Chính phủ về chế độ bảo hiểm y tế và trợ cấp mai táng đối với thanh niên xung phong thời kỳ kháng chiến chống Pháp (sau đây gọi tắt là Thông tư số 24/2009/TT-BLĐTBXH) về Phòng Nội vụ; Bước 3: Phòng Nội vụ lập danh sách kèm theo các giấy tờ chuyển Sở Nội vụ Bước 4: Sở Nội vụ: - Ghép hồ sơ thanh niên xung phong đang quản lý cấp thẻ bảo hiểm y tế (nếu có) với bản khai, giấy khai tử để hoàn chỉnh hồ sơ giải quyết mai táng phí; - Giám đốc Sở Nội vụ ra quyết định trợ cấp mai táng theo Mẫu số 25 tại Phụ lục ban hành kèm theo Thông tư 08/2023/TT-BLĐTBXH ngày 29/8/2023 của Bộ trưởng Bộ Lao động - Thương binh và Xã hội sửa đổi, bổ sung, bãi bỏ một số điều của các Thông tư, Thông tư liên tịch có quy định liên quan đến việc nộp, xuất trình sổ hộ khẩu giấy, sổ tạm trú giấy hoặc giấy tờ có yêu cầu xác nhận nơi cư trú khi thực hiện thủ tục hành chính thuộc lĩnh vực quản lý nhà nước của Bộ Lao động- Thương binh và Xã hội (sau đây gọi tắt là Thông tư số 08/2023/TT-BLĐTBXH).",
+          "procedure_flow": "1. Bước 1: Thân nhân lập bản khai thanh niên xung phong từ trần kèm theo giấy khai tử; Bước 2: Ủy ban nhân dân cấp xã xác nhận vào bản khai của từng người; chuyển bản khai kèm giấy khai tử và một trong những giấy tờ (bản sao có công chứng) xác nhận là thanh niên xung phong quy định tại điểm a Khoản 1 Điều 3 Thông tư số 24/2009/TT-BLĐTBXH ngày 10/07/2009 của Bộ Lao động - Thương binh và Xã hội hướng dẫn thực hiện Quyết định số 170/2008/QĐ-TTg ngày 18/12/2008 của Thủ tướng Chính phủ về chế độ bảo hiểm y tế và trợ cấp mai táng đối với thanh niên xung phong thời kỳ kháng chiến chống Pháp (sau đây gọi tắt là Thông tư số 24/2009/TT-BLĐTBXH) về Phòng Nội vụ; Bước 3: Phòng Nội vụ lập danh sách kèm theo các giấy tờ chuyển Sở Nội vụ Bước 4: Sở Nội vụ: - Ghép hồ sơ thanh niên xung phong đang quản lý cấp thẻ bảo hiểm y tế (nếu có) với bản khai, giấy khai tử để hoàn chỉnh hồ sơ giải quyết mai táng phí; - Giám đốc Sở Nội vụ ra quyết định trợ cấp mai táng theo Mẫu số 25 tại Phụ lục ban hành kèm theo Thông tư 08/2023/TT-BLĐTBXH ngày 29/8/2023 của Bộ trưởng Bộ Lao động - Thương binh và Xã hội sửa đổi, bổ sung, bãi bỏ một số điều của các Thông tư, Thông tư liên tịch có quy định liên quan đến việc nộp, xuất trình sổ hộ khẩu giấy, sổ tạm trú giấy hoặc giấy tờ có yêu cầu xác nhận nơi cư trú khi thực hiện thủ tục hành chính thuộc lĩnh vực quản lý nhà nước của Bộ Lao động- Thương binh và Xã hội (sau đây gọi tắt là Thông tư số 08/2023/TT-BLĐTBXH).",
+          "requirements": "Không có thông tin",
+          "submission_methods": [
+            "Trực tuyến",
+            "Dịch vụ bưu chính",
+            "Trực tiếp"
+          ],
+          "processing_time_values": [
+            "N/A",
+            "N/A",
+            "N/A"
+          ],
+          "document_groups": [],
+          "result_items": [
+            "Quyết định về việc giải quyết trợ cấp mai táng (Mã: `KQ.G09.000444`)"
+          ]
+        },
+        {
+          "procedure_code": "2.002862",
+          "procedure_title": "Hỗ trợ chi phí mai táng đối với người dân tộc thiểu số trên địa bàn tỉnh Lai Châu giai đoạn 2025-2030",
+          "subdomain_key": "che_do_tu_tuat_mai_tang_phi",
+          "subdomain_label": "Chế độ tử tuất, mai táng phí",
+          "event_id": 321,
+          "field": "Người có công",
+          "agency": "Ủy ban nhân dân cấp xã",
+          "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d9016-e181-753d-880e-69a6d964af86",
+          "raw_data_file": "C:\\Users\\ku060\\Downloads\\VAIC source\\data-pipeline\\raw_data\\2_002862\\2_002862_procedure_detail.md",
+          "raw_data_available": true,
+          "operation_group": "ho_tro_mai_tang_dia_phuong",
+          "operation_key": "ho_tro_chi_phi_mai_tang_doi_voi_nguoi_dan_toc_thieu_so_tren_dia_ban_tinh_lai_chau_giai_doan_2025_2030",
+          "overview": "1. - Hộ gia đình, cá nhân hoặc cơ quan, tổ chức trực tiếp tổ chức thực hiện việc mai táng, sau khi hoàn thành việc mai táng trong vòng 30 ngày làm việc nộp 01 bộ hồ sơ theo quy định đến Trung tâm phục vụ hành chính công nơi người chết thường trú trước khi chết. - Trong thời gian 07 ngày làm việc kể từ ngày nhận đủ hồ sơ, thủ tục hợp lệ, phòng Văn hoá - Xã hội cấp xã tham mưu Chủ tịch Ủy ban nhân dân cấp xã ban hành quyết định hỗ trợ theo quy định; trường hợp không đủ điều kiện thì thông báo bằng văn bản và nêu rõ lý do.",
+          "procedure_flow": "1. - Hộ gia đình, cá nhân hoặc cơ quan, tổ chức trực tiếp tổ chức thực hiện việc mai táng, sau khi hoàn thành việc mai táng trong vòng 30 ngày làm việc nộp 01 bộ hồ sơ theo quy định đến Trung tâm phục vụ hành chính công nơi người chết thường trú trước khi chết. - Trong thời gian 07 ngày làm việc kể từ ngày nhận đủ hồ sơ, thủ tục hợp lệ, phòng Văn hoá - Xã hội cấp xã tham mưu Chủ tịch Ủy ban nhân dân cấp xã ban hành quyết định hỗ trợ theo quy định; trường hợp không đủ điều kiện thì thông báo bằng văn bản và nêu rõ lý do.",
+          "requirements": "- Thi thể người chết phải được lưu giữ, bảo quản trong quan tài và mai táng đúng nơi quy định. - Thi thể người chết khi mai táng hoặc hoả táng thực hiện lưu giữ, bảo quản theo quy định tại khoản 1,2,3,4 Điều 4 và khoản 1, Điều 13 Thông tư số 21/2021/TT-BYT ngày 26 tháng 11 năm 2021 của Bộ Y tế quy định về vệ sinh trong mai táng, hỏa táng. - Trường hợp hoả táng thì phải thực hiện hoả táng tại cơ sở đảm bảo các điều kiện theo quy định.",
+          "submission_methods": [
+            "Trực tiếp",
+            "Trực tuyến",
+            "Dịch vụ bưu chính"
+          ],
+          "processing_time_values": [
+            "7 ngày làm việc",
+            "7 ngày làm việc",
+            "7 ngày làm việc"
+          ],
+          "document_groups": [],
+          "result_items": [
+            "Quyết định hỗ trợ chi phí mai táng đối với người dân tộc thiểu số trên địa bàn tỉnh Lai Châu (Mã: `KQ.G07.000999`)"
+          ]
+        }
+      ]
+    }
+  ],
+  "subdomain_key": "che_do_tu_tuat_mai_tang_phi",
+  "subdomain_label": "Chế độ tử tuất, mai táng phí"
+}

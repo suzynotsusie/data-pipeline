@@ -1,0 +1,286 @@
+{
+  "schema_version": "3.0",
+  "record_type": "public_service_procedure_payload",
+  "id": "procedure-2.000592",
+  "procedure_code": "2.000592",
+  "code": "2.000592",
+  "title": "Thủ tục giải quyết khiếu nại về trợ giúp pháp lý",
+  "language": "vi",
+  "status": "generated_from_pipeline",
+  "field": "Trợ giúp pháp lý",
+  "group_key": "giai_quyet_khieu_kien",
+  "workflow_family": "complaint_resolution_workflow",
+  "subflow": "giai_quyet_khieu_kien",
+  "source": {
+    "source_url": "file:///C:/Users/ku060/Downloads/VAIC%20source/data-pipeline/raw_data/2_000592/2_000592_procedure_detail.md",
+    "source_markdown_path": "C:\\Users\\ku060\\Downloads\\VAIC source\\data-pipeline\\raw_data\\2_000592\\2_000592_procedure_detail.md",
+    "normalized_payload_path": "C:\\Users\\ku060\\Downloads\\VAIC source\\data-pipeline\\govease-unified\\data\\normalized_structured\\2_000592_normalized_structured.json",
+    "enriched_payload_path": "C:\\Users\\ku060\\Downloads\\VAIC source\\data-pipeline\\govease-unified\\data\\enriched_structured_priority\\2_000592_enriched_structured.json"
+  },
+  "scope": {
+    "included": "Thủ tục này thuộc nhóm khiếu nại và phản ánh, thường cần trình bày rõ nội dung vụ việc, quyết định hoặc hành vi bị khiếu nại và căn cứ kèm theo. Kết quả thường nhận được là Quyết định giải quyết khiếu nại về trợ giúp pháp lý. Thời gian xử lý tham khảo: theo thời hạn của cơ quan xử lý.",
+    "not_included": []
+  },
+  "agency": {
+    "executing_agency": "Giám đốc Sở Tư pháp, Người đứng đầu của tổ chức thực hiện trợ giúp pháp lý",
+    "submission_place": null,
+    "receiving_places": []
+  },
+  "target_users": [
+    "Công dân Việt Nam"
+  ],
+  "submission_methods": [
+    {
+      "code": "ONLINE",
+      "label": "Trực tuyến",
+      "processing_time": null,
+      "fee": null,
+      "description": "Nộp đơn khiếu nại đến người đứng đầu của tổ chức thực hiện trợ giúp pháp lý (đối với khiếu nại lần 1); nộp đến Giám đốc Sở Tư pháp (khiếu nại lần 2)."
+    },
+    {
+      "code": "POSTAL",
+      "label": "Dịch vụ bưu chính",
+      "processing_time": null,
+      "fee": null,
+      "description": "Nộp đơn khiếu nại đến người đứng đầu của tổ chức thực hiện trợ giúp pháp lý (đối với khiếu nại lần 1); nộp đến Giám đốc Sở Tư pháp (khiếu nại lần 2)."
+    },
+    {
+      "code": "IN_PERSON",
+      "label": "Trực tiếp",
+      "processing_time": null,
+      "fee": null,
+      "description": "Nộp đơn khiếu nại đến người đứng đầu của tổ chức thực hiện trợ giúp pháp lý (đối với khiếu nại lần 1); nộp đến Giám đốc Sở Tư pháp (khiếu nại lần 2)."
+    }
+  ],
+  "processing_note": "Nên tóm tắt rõ nội dung khiếu nại, quyết định hoặc hành vi liên quan và chuẩn bị tài liệu chứng minh trước khi nộp. Có thể chọn kênh nộp phù hợp: Trực tiếp, Trực tuyến, Dịch vụ bưu chính. Hiện có 1 mục giấy tờ cần theo dõi trong checklist.",
+  "documents": {
+    "normally_required": [
+      {
+        "name": "Đơn khiếu nại",
+        "quantity": "1 bản chính, 0 bản sao",
+        "notes": [],
+        "group": "default",
+        "attachment_path": null
+      }
+    ],
+    "conditional": [],
+    "forms": [],
+    "presented": [],
+    "notes": [],
+    "summary": [
+      {
+        "group": "default",
+        "name": "Đơn khiếu nại",
+        "quantity": "1 bản chính, 0 bản sao",
+        "notes": [],
+        "attachment_path": null
+      }
+    ]
+  },
+  "steps": [
+    {
+      "order": 1,
+      "title": "Bước 1",
+      "description": "1. - Người được trợ giúp pháp lý có quyền gửi đơn khiếu nại đến người đứng đầu tổ chức thực hiện trợ giúp pháp lý.",
+      "example": null
+    },
+    {
+      "order": 2,
+      "title": "Bước 2",
+      "description": "- Người đứng đầu tổ chức thực hiện trợ giúp pháp lý (Trung tâm trợ giúp pháp lý nhà nước tỉnh/thành phố, Chi nhánh của Trung tâm, tổ chức ký hợp đồng thực hiện trợ giúp pháp lý, tổ chức đăng ký tham gia trợ giúp pháp lý) có trách nhiệm giải quyết khiếu nại đối với những hành vi quy định tại khoản 1, Điều 45 Luật Trợ giúp pháp lý trong thời hạn 03 ngày làm việc kể từ ngày nhận được khiếu nại.",
+      "example": "03 ngày làm việc"
+    },
+    {
+      "order": 3,
+      "title": "Bước 3",
+      "description": "- Trường hợp người khiếu nại không đồng ý với quyết định giải quyết khiếu nại của người đứng đầu tổ chức thực hiện trợ giúp pháp lý hoặc quá thời hạn mà khiếu nại không được giải quyết thì có quyền khiếu nại lên Giám đốc Sở Tư pháp. Trong thời hạn 15 ngày kể từ ngày nhận được khiếu nại, Giám đốc Sở Tư pháp có trách nhiệm giải quyết khiếu nại. Quyết định giải quyết khiếu nại của Giám đốc Sở Tư pháp có hiệu lực thi hành.",
+      "example": "15 ngày"
+    },
+    {
+      "order": 4,
+      "title": "Bước 4",
+      "description": "- Trường hợp người khiếu nại không đồng ý với quyết định giải quyết khiếu nại của Giám đốc Sở Tư pháp hoặc quá thời hạn mà khiếu nại không được giải quyết thì có quyền khởi kiện tại Tòa án.",
+      "example": null
+    }
+  ],
+  "input_fields": [
+    {
+      "field": "complaint_subject",
+      "label": "Nội dung khiếu nại chính",
+      "type": "string",
+      "required": true
+    },
+    {
+      "field": "decision_or_behavior_target",
+      "label": "Quyết định hoặc hành vi bị khiếu nại",
+      "type": "string",
+      "required": true
+    },
+    {
+      "field": "has_supporting_evidence",
+      "label": "Có tài liệu chứng minh kèm theo",
+      "type": "boolean",
+      "required": true
+    },
+    {
+      "field": "submission_channel_preference",
+      "label": "Kênh nộp dự kiến",
+      "type": "enum",
+      "required": false,
+      "options": [
+        "Trực tiếp",
+        "Trực tuyến",
+        "Dịch vụ bưu chính"
+      ]
+    }
+  ],
+  "validation_rules": [
+    {
+      "id": "required-1",
+      "severity": "error",
+      "field": "complaint_subject",
+      "rule": "Trường bắt buộc phải có dữ liệu hợp lệ trước khi nộp.",
+      "message": "Thiếu trường bắt buộc: Nội dung khiếu nại chính."
+    },
+    {
+      "id": "required-2",
+      "severity": "error",
+      "field": "decision_or_behavior_target",
+      "rule": "Trường bắt buộc phải có dữ liệu hợp lệ trước khi nộp.",
+      "message": "Thiếu trường bắt buộc: Quyết định hoặc hành vi bị khiếu nại."
+    },
+    {
+      "id": "required-3",
+      "severity": "error",
+      "field": "has_supporting_evidence",
+      "rule": "Trường bắt buộc phải có dữ liệu hợp lệ trước khi nộp.",
+      "message": "Thiếu trường bắt buộc: Có tài liệu chứng minh kèm theo."
+    },
+    {
+      "id": "hint-1",
+      "severity": "warning",
+      "field": "general",
+      "rule": "Nên xác định trước kênh nộp hồ sơ để biết có cần bản giấy, bản điện tử hay xuất trình trực tiếp.",
+      "message": "Nên xác định trước kênh nộp hồ sơ để biết có cần bản giấy, bản điện tử hay xuất trình trực tiếp."
+    },
+    {
+      "id": "hint-2",
+      "severity": "warning",
+      "field": "general",
+      "rule": "Nên nêu rõ diễn biến vụ việc, quyết định hoặc hành vi bị khiếu nại và chuẩn bị tài liệu chứng minh.",
+      "message": "Nên nêu rõ diễn biến vụ việc, quyết định hoặc hành vi bị khiếu nại và chuẩn bị tài liệu chứng minh."
+    }
+  ],
+  "common_errors": [
+    {
+      "field": "general",
+      "issue": "Nội dung khiếu nại chưa nêu rõ quyết định, hành vi hoặc tài liệu chứng minh liên quan.",
+      "fix": "Nên xác định trước kênh nộp hồ sơ để biết có cần bản giấy, bản điện tử hay xuất trình trực tiếp."
+    }
+  ],
+  "clarifying_questions": [
+    {
+      "id": "clarify_1",
+      "question": "Bạn đang khiếu nại về quyết định hay hành vi nào, và thuộc cơ quan nào?",
+      "purpose": "workflow_intake"
+    },
+    {
+      "id": "clarify_2",
+      "question": "Bạn đã có đơn khiếu nại hoặc tài liệu chứng minh nội dung vụ việc chưa?",
+      "purpose": "workflow_intake"
+    }
+  ],
+  "legal_basis": [
+    {
+      "title": "Thông tư của Bộ trưởng Bộ Tư pháp",
+      "code": "10/2023/TT-BTP"
+    },
+    {
+      "title": "Luật 11/2017/QH14 - Trợ giúp pháp lý",
+      "code": "11/2017/QH14"
+    },
+    {
+      "title": "Thông tư 11/2025/TT-BTP ngày 25/6/2025 của Bộ Tư pháp sửa đổi, bổ sung, bãi bỏ một số điều của các Thông tư thuộc lĩnh vực quản lý Nhà nước của Bộ Tư pháp",
+      "code": "11/2025/TT-BTP"
+    },
+    {
+      "title": "Thông tư 12/2018/TT-BTP",
+      "code": "12/2018/TT-BTP"
+    },
+    {
+      "title": "Thông tư số 08/2025/TT-BTP ngày 12/6/2025 của Bộ trưởng Bộ Tư pháp quy định về phân định thẩm quyền của chính quyền địa phương 02 cấp và phân cấp trong lĩnh vực quản lý nhà nước của Bộ Tư pháp",
+      "code": "08/2025/TT-BTP"
+    }
+  ],
+  "legal_bases": [
+    {
+      "title": "Thông tư của Bộ trưởng Bộ Tư pháp",
+      "code": "10/2023/TT-BTP"
+    },
+    {
+      "title": "Luật 11/2017/QH14 - Trợ giúp pháp lý",
+      "code": "11/2017/QH14"
+    },
+    {
+      "title": "Thông tư 11/2025/TT-BTP ngày 25/6/2025 của Bộ Tư pháp sửa đổi, bổ sung, bãi bỏ một số điều của các Thông tư thuộc lĩnh vực quản lý Nhà nước của Bộ Tư pháp",
+      "code": "11/2025/TT-BTP"
+    },
+    {
+      "title": "Thông tư 12/2018/TT-BTP",
+      "code": "12/2018/TT-BTP"
+    },
+    {
+      "title": "Thông tư số 08/2025/TT-BTP ngày 12/6/2025 của Bộ trưởng Bộ Tư pháp quy định về phân định thẩm quyền của chính quyền địa phương 02 cấp và phân cấp trong lĩnh vực quản lý nhà nước của Bộ Tư pháp",
+      "code": "08/2025/TT-BTP"
+    }
+  ],
+  "faq": [
+    {
+      "question": "Có thể nộp qua kênh nào?",
+      "answer": "Các kênh hiện có: Trực tiếp, Trực tuyến, Dịch vụ bưu chính."
+    },
+    {
+      "question": "Kết quả chính của thủ tục là gì?",
+      "answer": "Kết quả chính được trích xuất là Quyết định giải quyết khiếu nại về trợ giúp pháp lý."
+    }
+  ],
+  "guidance": {
+    "highlight_documents": [
+      {
+        "bucket": "required",
+        "name": "Đơn khiếu nại",
+        "conditions": [],
+        "attachment_path": null
+      }
+    ],
+    "special_cases": [
+      "Có thể cần tài liệu chứng minh nội dung khiếu nại"
+    ],
+    "common_errors": [
+      "Nội dung khiếu nại chưa nêu rõ quyết định, hành vi hoặc tài liệu chứng minh liên quan."
+    ],
+    "validation_hints": [
+      "Nên xác định trước kênh nộp hồ sơ để biết có cần bản giấy, bản điện tử hay xuất trình trực tiếp.",
+      "Nên nêu rõ diễn biến vụ việc, quyết định hoặc hành vi bị khiếu nại và chuẩn bị tài liệu chứng minh."
+    ]
+  },
+  "next_steps": {
+    "summary": "Nên tóm tắt rõ nội dung khiếu nại, quyết định hoặc hành vi liên quan và chuẩn bị tài liệu chứng minh trước khi nộp. Có thể chọn kênh nộp phù hợp: Trực tiếp, Trực tuyến, Dịch vụ bưu chính. Hiện có 1 mục giấy tờ cần theo dõi trong checklist.",
+    "time_badge": null,
+    "result_label": "Quyết định giải quyết khiếu nại về trợ giúp pháp lý",
+    "primary_channel": "online",
+    "channels": [
+      "in_person",
+      "online",
+      "postal"
+    ]
+  },
+  "notes": [],
+  "provenance": {
+    "pipeline": "raw->structured->normalized->enriched->ui_api_payload",
+    "normalizer_version": "0.2.0",
+    "enricher_version": "0.2.0",
+    "mapping_notes": "workflow_generated:giai_quyet_khieu_kien/giai_quyet_khieu_kien",
+    "supported_group": true
+  }
+}

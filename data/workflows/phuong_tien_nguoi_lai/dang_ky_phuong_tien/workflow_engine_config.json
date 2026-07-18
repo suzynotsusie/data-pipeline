@@ -1,0 +1,382 @@
+{
+  "schema_version": "1.0",
+  "domain": "phuong_tien_nguoi_lai",
+  "updated_at": "2026-07-18",
+  "source_files": [
+    "C:\\Users\\ku060\\Downloads\\VAIC source\\data-pipeline\\main\\full-data.csv",
+    "C:\\Users\\ku060\\Downloads\\VAIC source\\data-pipeline\\data\\workflows\\phuong_tien_nguoi_lai\\summary.csv",
+    "C:\\Users\\ku060\\Downloads\\VAIC source\\data-pipeline\\data\\workflows\\phuong_tien_nguoi_lai\\normalized.json",
+    "C:\\Users\\ku060\\Downloads\\VAIC source\\data-pipeline\\raw_data"
+  ],
+  "coverage": {
+    "expected_codes": [
+      "1.012575",
+      "1.013065",
+      "1.013066",
+      "1.013067",
+      "1.013076",
+      "1.013079",
+      "1.013080",
+      "1.013082",
+      "1.013083",
+      "1.013086",
+      "1.013123",
+      "3.000381",
+      "3.000382",
+      "3.000383"
+    ],
+    "covered_codes": [
+      "1.012575",
+      "1.013065",
+      "1.013066",
+      "1.013067",
+      "1.013076",
+      "1.013079",
+      "1.013080",
+      "1.013082",
+      "1.013083",
+      "1.013086",
+      "1.013123",
+      "3.000381",
+      "3.000382",
+      "3.000383"
+    ],
+    "missing_codes": []
+  },
+  "llm_contract": {
+    "role": "parse_user_answer_and_rephrase_question_only",
+    "required_output_schema": {
+      "intent": "phuong_tien_nguoi_lai",
+      "current_node": "string",
+      "slot_updates": {
+        "subdomain_key": "giay_phep_lai_xe | dang_ky_phuong_tien | dang_kiem_phuong_tien | unknown",
+        "operation_key": "string",
+        "operation_group": "string",
+        "needs_human_review": "boolean"
+      },
+      "confidence": "0_to_1",
+      "needs_human_review": "boolean"
+    }
+  },
+  "entry_prompts": [
+    "Bạn đang cần làm việc về bằng lái, đăng ký xe hay đăng kiểm phương tiện?",
+    "Bạn muốn cấp mới, cấp lại, đổi, thu hồi hay xác nhận/chứng nhận cho phương tiện của mình?"
+  ],
+  "slots": [
+    {
+      "name": "subdomain_key",
+      "required": true,
+      "description": "Nhánh chính trong domain phương tiện và người lái."
+    },
+    {
+      "name": "operation_key",
+      "required": true,
+      "description": "Thao tác cụ thể ánh xạ trực tiếp tới thủ tục cuối cùng."
+    },
+    {
+      "name": "operation_group",
+      "required": false,
+      "description": "Nhóm thao tác nghiệp vụ để gom các thủ tục gần nhau cho UI và parser."
+    }
+  ],
+  "subdomain_catalog": [
+    {
+      "subdomain_key": "dang_ky_phuong_tien",
+      "subdomain_label": "Đăng ký phương tiện",
+      "event_id": 316,
+      "field_name": "Đăng ký, quản lý phương tiện giao thông cơ giới, xe máy chuyên dùng",
+      "summary": "Nhóm thủ tục liên quan đến đăng ký, cấp đổi, cấp lại, sang tên, thu hồi đăng ký và biển số phương tiện giao thông cơ giới, xe máy chuyên dùng."
+    }
+  ],
+  "decision_tree": {
+    "start_node": "vehicle_subdomain",
+    "nodes": [
+      {
+        "id": "vehicle_subdomain",
+        "type": "question",
+        "slot": "subdomain_key",
+        "question": "Bạn đang hỏi về giấy phép lái xe, đăng ký phương tiện hay đăng kiểm phương tiện?",
+        "options": [
+          "dang_ky_phuong_tien"
+        ],
+        "prefilled_value": "dang_ky_phuong_tien"
+      },
+      {
+        "id": "vehicle_operation",
+        "type": "question",
+        "slot": "operation_key",
+        "question": "Bạn cần làm thao tác nào cụ thể trong nhánh đã chọn?",
+        "options_by_subdomain": {
+          "dang_ky_phuong_tien": [
+            {
+              "operation_key": "dang_ky_xe_lan_dau_truc_tuyen_toan_trinh_doi_voi_xe_san_xuat_lap_rap_trong_nuoc_thuc_hien_tai_cap_tinh_cap_xa",
+              "operation_group": "dang_ky_lan_dau",
+              "procedure_code": "1.012575",
+              "procedure_title": "Đăng ký xe lần đầu trực tuyến toàn trình đối với xe sản xuất lắp ráp trong nước thực hiện tại cấp tỉnh, cấp xã"
+            },
+            {
+              "operation_key": "thu_hoi_chung_nhan_dang_ky_xe_bien_so_xe_thuc_hien_bang_dich_vu_cong_toan_trinh",
+              "operation_group": "thu_hoi_dang_ky_xe",
+              "procedure_code": "1.013065",
+              "procedure_title": "Thu hồi chứng nhận đăng ký xe, biển số xe thực hiện bằng dịch vụ công toàn trình"
+            },
+            {
+              "operation_key": "dang_ky_xe_lan_dau_truc_tuyen_toan_trinh_doi_voi_xe_nhap_khau_thuc_hien_tai_cap_tinh_cap_xa",
+              "operation_group": "dang_ky_lan_dau",
+              "procedure_code": "1.013066",
+              "procedure_title": "Đăng ký xe lần đầu trực tuyến toàn trình đối với xe nhập khẩu thực hiện tại cấp tỉnh, cấp xã"
+            },
+            {
+              "operation_key": "dang_ky_cap_bien_so_xe_lan_dau_thuc_hien_bang_dich_vu_cong_mot_phan_hoac_truc_tiep_thuc_hien_tai_cap_trung_uong_cap_tinh_cap_xa",
+              "operation_group": "dang_ky_khac",
+              "procedure_code": "1.013067",
+              "procedure_title": "Đăng ký, cấp biển số xe lần đầu thực hiện bằng dịch vụ công một phần hoặc trực tiếp thực hiện tại cấp trung ương, cấp tỉnh, cấp xã"
+            },
+            {
+              "operation_key": "cap_chung_nhan_dang_ky_xe_bien_so_xe_trong_truong_hop_thay_doi_chu_xe_dang_ky_sang_ten_xe_bang_dich_vu_cong_truc_tuyen_mot_phan_hoac_truc_tiep_thuc_hien_tai_cap_trung_uong_cap_tinh_cap_xa",
+              "operation_group": "sang_ten_xe",
+              "procedure_code": "1.013076",
+              "procedure_title": "Cấp chứng nhận đăng ký xe, biển số xe trong trường hợp thay đổi chủ xe (đăng ký sang tên xe) bằng dịch vụ công trực tuyến một phần hoặc trực tiếp thực hiện tại cấp trung ương, cấp tỉnh, cấp xã"
+            },
+            {
+              "operation_key": "doi_chung_nhan_dang_ky_xe_bien_so_xe_bang_dich_vu_cong_truc_tuyen_mot_phan_hoac_truc_tiep_thuc_hien_tai_cap_trung_uong_cap_tinh_cap_xa",
+              "operation_group": "doi_dang_ky_xe",
+              "procedure_code": "1.013079",
+              "procedure_title": "Đổi chứng nhận đăng ký xe, biển số xe bằng dịch vụ công trực tuyến một phần hoặc trực tiếp thực hiện tại cấp trung ương, cấp tỉnh, cấp xã"
+            },
+            {
+              "operation_key": "cap_lai_chung_nhan_dang_ky_xe_bien_so_xe_thuc_hien_bang_dich_vu_cong_truc_tuyen_toan_trinh",
+              "operation_group": "cap_lai_dang_ky_xe",
+              "procedure_code": "1.013080",
+              "procedure_title": "Cấp lại chứng nhận đăng ký xe, biển số xe thực hiện bằng dịch vụ công trực tuyến toàn trình"
+            },
+            {
+              "operation_key": "cap_lai_chung_nhan_dang_ky_xe_bien_so_xe_thuc_hien_bang_dich_vu_cong_truc_tuyen_mot_phan_hoac_truc_tiep_thuc_hien_tai_cap_trung_uong_cap_tinh_cap_xa",
+              "operation_group": "cap_lai_dang_ky_xe",
+              "procedure_code": "1.013082",
+              "procedure_title": "Cấp lại chứng nhận đăng ký xe, biển số xe thực hiện bằng dịch vụ công trực tuyến một phần hoặc trực tiếp thực hiện tại cấp trung ương, cấp tỉnh, cấp xã"
+            },
+            {
+              "operation_key": "dang_ky_xe_tam_thoi_thuc_hien_bang_dich_vu_cong_truc_tuyen_toan_trinh",
+              "operation_group": "dang_ky_tam_thoi",
+              "procedure_code": "1.013083",
+              "procedure_title": "Đăng ký xe tạm thời thực hiện bằng dịch vụ công trực tuyến toàn trình"
+            },
+            {
+              "operation_key": "dang_ky_xe_tam_thoi_thuc_hien_bang_dich_vu_cong_truc_tuyen_mot_phan_hoac_truc_tiep_thuc_hien_tai_cap_trung_uong_cap_tinh_cap_xa",
+              "operation_group": "dang_ky_tam_thoi",
+              "procedure_code": "1.013086",
+              "procedure_title": "Đăng ký xe tạm thời thực hiện bằng dịch vụ công trực tuyến một phần hoặc trực tiếp thực hiện tại cấp trung ương, cấp tỉnh, cấp xã"
+            },
+            {
+              "operation_key": "thu_hoi_giay_chung_nhan_dang_ky_bien_so_xe_thuc_hien_bang_dich_vu_cong_truc_tuyen_mot_phan_hoac_truc_tiep_thuc_hien_tai_cap_trung_uong_cap_tinh_cap_xa",
+              "operation_group": "thu_hoi_dang_ky_xe",
+              "procedure_code": "1.013123",
+              "procedure_title": "Thu hồi giấy chứng nhận đăng ký, biển số xe thực hiện bằng dịch vụ công trực tuyến một phần hoặc trực tiếp thực hiện tại cấp trung ương, cấp tỉnh, cấp xã"
+            },
+            {
+              "operation_key": "thu_hoi_giay_phep_hoat_dong_doi_voi_phuong_tien_giao_thong_thong_minh_tai_cuc_canh_sat_giao_thong",
+              "operation_group": "phuong_tien_thong_minh",
+              "procedure_code": "3.000381",
+              "procedure_title": "Thu hồi Giấy phép hoạt động đối với phương tiện giao thông thông minh tại Cục cảnh sát giao thông"
+            },
+            {
+              "operation_key": "cap_lai_giay_phep_hoat_dong_doi_voi_phuong_tien_giao_thong_thong_minh_tai_cuc_canh_sat_giao_thong",
+              "operation_group": "phuong_tien_thong_minh",
+              "procedure_code": "3.000382",
+              "procedure_title": "Cấp lại Giấy phép hoạt động đối với phương tiện giao thông thông minh tại Cục Cảnh sát giao thông"
+            },
+            {
+              "operation_key": "cap_phep_hoat_dong_doi_voi_phuong_tien_giao_thong_thong_minh_tai_cuc_canh_sat_giao_thong",
+              "operation_group": "phuong_tien_thong_minh",
+              "procedure_code": "3.000383",
+              "procedure_title": "Cấp phép hoạt động đối với phương tiện giao thông thông minh tại Cục Cảnh sát giao thông"
+            }
+          ]
+        },
+        "options": [
+          "dang_ky_xe_lan_dau_truc_tuyen_toan_trinh_doi_voi_xe_san_xuat_lap_rap_trong_nuoc_thuc_hien_tai_cap_tinh_cap_xa",
+          "thu_hoi_chung_nhan_dang_ky_xe_bien_so_xe_thuc_hien_bang_dich_vu_cong_toan_trinh",
+          "dang_ky_xe_lan_dau_truc_tuyen_toan_trinh_doi_voi_xe_nhap_khau_thuc_hien_tai_cap_tinh_cap_xa",
+          "dang_ky_cap_bien_so_xe_lan_dau_thuc_hien_bang_dich_vu_cong_mot_phan_hoac_truc_tiep_thuc_hien_tai_cap_trung_uong_cap_tinh_cap_xa",
+          "cap_chung_nhan_dang_ky_xe_bien_so_xe_trong_truong_hop_thay_doi_chu_xe_dang_ky_sang_ten_xe_bang_dich_vu_cong_truc_tuyen_mot_phan_hoac_truc_tiep_thuc_hien_tai_cap_trung_uong_cap_tinh_cap_xa",
+          "doi_chung_nhan_dang_ky_xe_bien_so_xe_bang_dich_vu_cong_truc_tuyen_mot_phan_hoac_truc_tiep_thuc_hien_tai_cap_trung_uong_cap_tinh_cap_xa",
+          "cap_lai_chung_nhan_dang_ky_xe_bien_so_xe_thuc_hien_bang_dich_vu_cong_truc_tuyen_toan_trinh",
+          "cap_lai_chung_nhan_dang_ky_xe_bien_so_xe_thuc_hien_bang_dich_vu_cong_truc_tuyen_mot_phan_hoac_truc_tiep_thuc_hien_tai_cap_trung_uong_cap_tinh_cap_xa",
+          "dang_ky_xe_tam_thoi_thuc_hien_bang_dich_vu_cong_truc_tuyen_toan_trinh",
+          "dang_ky_xe_tam_thoi_thuc_hien_bang_dich_vu_cong_truc_tuyen_mot_phan_hoac_truc_tiep_thuc_hien_tai_cap_trung_uong_cap_tinh_cap_xa",
+          "thu_hoi_giay_chung_nhan_dang_ky_bien_so_xe_thuc_hien_bang_dich_vu_cong_truc_tuyen_mot_phan_hoac_truc_tiep_thuc_hien_tai_cap_trung_uong_cap_tinh_cap_xa",
+          "thu_hoi_giay_phep_hoat_dong_doi_voi_phuong_tien_giao_thong_thong_minh_tai_cuc_canh_sat_giao_thong",
+          "cap_lai_giay_phep_hoat_dong_doi_voi_phuong_tien_giao_thong_thong_minh_tai_cuc_canh_sat_giao_thong",
+          "cap_phep_hoat_dong_doi_voi_phuong_tien_giao_thong_thong_minh_tai_cuc_canh_sat_giao_thong"
+        ]
+      }
+    ],
+    "routes": [
+      {
+        "route_id": "dang_ky_phuong_tien-1_012575",
+        "conditions": {
+          "subdomain_key": "dang_ky_phuong_tien",
+          "operation_key": "dang_ky_xe_lan_dau_truc_tuyen_toan_trinh_doi_voi_xe_san_xuat_lap_rap_trong_nuoc_thuc_hien_tai_cap_tinh_cap_xa"
+        },
+        "procedure_code": "1.012575",
+        "procedure_name": "Đăng ký xe lần đầu trực tuyến toàn trình đối với xe sản xuất lắp ráp trong nước thực hiện tại cấp tỉnh, cấp xã",
+        "why_this_route": "Route trực tiếp cho nhu cầu 'Đăng ký xe lần đầu trực tuyến toàn trình đối với xe sản xuất lắp ráp trong nước thực hiện tại cấp tỉnh, cấp xã' trong nhánh 'Đăng ký phương tiện'."
+      },
+      {
+        "route_id": "dang_ky_phuong_tien-1_013065",
+        "conditions": {
+          "subdomain_key": "dang_ky_phuong_tien",
+          "operation_key": "thu_hoi_chung_nhan_dang_ky_xe_bien_so_xe_thuc_hien_bang_dich_vu_cong_toan_trinh"
+        },
+        "procedure_code": "1.013065",
+        "procedure_name": "Thu hồi chứng nhận đăng ký xe, biển số xe thực hiện bằng dịch vụ công toàn trình",
+        "why_this_route": "Route trực tiếp cho nhu cầu 'Thu hồi chứng nhận đăng ký xe, biển số xe thực hiện bằng dịch vụ công toàn trình' trong nhánh 'Đăng ký phương tiện'."
+      },
+      {
+        "route_id": "dang_ky_phuong_tien-1_013066",
+        "conditions": {
+          "subdomain_key": "dang_ky_phuong_tien",
+          "operation_key": "dang_ky_xe_lan_dau_truc_tuyen_toan_trinh_doi_voi_xe_nhap_khau_thuc_hien_tai_cap_tinh_cap_xa"
+        },
+        "procedure_code": "1.013066",
+        "procedure_name": "Đăng ký xe lần đầu trực tuyến toàn trình đối với xe nhập khẩu thực hiện tại cấp tỉnh, cấp xã",
+        "why_this_route": "Route trực tiếp cho nhu cầu 'Đăng ký xe lần đầu trực tuyến toàn trình đối với xe nhập khẩu thực hiện tại cấp tỉnh, cấp xã' trong nhánh 'Đăng ký phương tiện'."
+      },
+      {
+        "route_id": "dang_ky_phuong_tien-1_013067",
+        "conditions": {
+          "subdomain_key": "dang_ky_phuong_tien",
+          "operation_key": "dang_ky_cap_bien_so_xe_lan_dau_thuc_hien_bang_dich_vu_cong_mot_phan_hoac_truc_tiep_thuc_hien_tai_cap_trung_uong_cap_tinh_cap_xa"
+        },
+        "procedure_code": "1.013067",
+        "procedure_name": "Đăng ký, cấp biển số xe lần đầu thực hiện bằng dịch vụ công một phần hoặc trực tiếp thực hiện tại cấp trung ương, cấp tỉnh, cấp xã",
+        "why_this_route": "Route trực tiếp cho nhu cầu 'Đăng ký, cấp biển số xe lần đầu thực hiện bằng dịch vụ công một phần hoặc trực tiếp thực hiện tại cấp trung ương, cấp tỉnh, cấp xã' trong nhánh 'Đăng ký phương tiện'."
+      },
+      {
+        "route_id": "dang_ky_phuong_tien-1_013076",
+        "conditions": {
+          "subdomain_key": "dang_ky_phuong_tien",
+          "operation_key": "cap_chung_nhan_dang_ky_xe_bien_so_xe_trong_truong_hop_thay_doi_chu_xe_dang_ky_sang_ten_xe_bang_dich_vu_cong_truc_tuyen_mot_phan_hoac_truc_tiep_thuc_hien_tai_cap_trung_uong_cap_tinh_cap_xa"
+        },
+        "procedure_code": "1.013076",
+        "procedure_name": "Cấp chứng nhận đăng ký xe, biển số xe trong trường hợp thay đổi chủ xe (đăng ký sang tên xe) bằng dịch vụ công trực tuyến một phần hoặc trực tiếp thực hiện tại cấp trung ương, cấp tỉnh, cấp xã",
+        "why_this_route": "Route trực tiếp cho nhu cầu 'Cấp chứng nhận đăng ký xe, biển số xe trong trường hợp thay đổi chủ xe (đăng ký sang tên xe) bằng dịch vụ công trực tuyến một phần hoặc trực tiếp thực hiện tại cấp trung ương, cấp tỉnh, cấp xã' trong nhánh 'Đăng ký phương tiện'."
+      },
+      {
+        "route_id": "dang_ky_phuong_tien-1_013079",
+        "conditions": {
+          "subdomain_key": "dang_ky_phuong_tien",
+          "operation_key": "doi_chung_nhan_dang_ky_xe_bien_so_xe_bang_dich_vu_cong_truc_tuyen_mot_phan_hoac_truc_tiep_thuc_hien_tai_cap_trung_uong_cap_tinh_cap_xa"
+        },
+        "procedure_code": "1.013079",
+        "procedure_name": "Đổi chứng nhận đăng ký xe, biển số xe bằng dịch vụ công trực tuyến một phần hoặc trực tiếp thực hiện tại cấp trung ương, cấp tỉnh, cấp xã",
+        "why_this_route": "Route trực tiếp cho nhu cầu 'Đổi chứng nhận đăng ký xe, biển số xe bằng dịch vụ công trực tuyến một phần hoặc trực tiếp thực hiện tại cấp trung ương, cấp tỉnh, cấp xã' trong nhánh 'Đăng ký phương tiện'."
+      },
+      {
+        "route_id": "dang_ky_phuong_tien-1_013080",
+        "conditions": {
+          "subdomain_key": "dang_ky_phuong_tien",
+          "operation_key": "cap_lai_chung_nhan_dang_ky_xe_bien_so_xe_thuc_hien_bang_dich_vu_cong_truc_tuyen_toan_trinh"
+        },
+        "procedure_code": "1.013080",
+        "procedure_name": "Cấp lại chứng nhận đăng ký xe, biển số xe thực hiện bằng dịch vụ công trực tuyến toàn trình",
+        "why_this_route": "Route trực tiếp cho nhu cầu 'Cấp lại chứng nhận đăng ký xe, biển số xe thực hiện bằng dịch vụ công trực tuyến toàn trình' trong nhánh 'Đăng ký phương tiện'."
+      },
+      {
+        "route_id": "dang_ky_phuong_tien-1_013082",
+        "conditions": {
+          "subdomain_key": "dang_ky_phuong_tien",
+          "operation_key": "cap_lai_chung_nhan_dang_ky_xe_bien_so_xe_thuc_hien_bang_dich_vu_cong_truc_tuyen_mot_phan_hoac_truc_tiep_thuc_hien_tai_cap_trung_uong_cap_tinh_cap_xa"
+        },
+        "procedure_code": "1.013082",
+        "procedure_name": "Cấp lại chứng nhận đăng ký xe, biển số xe thực hiện bằng dịch vụ công trực tuyến một phần hoặc trực tiếp thực hiện tại cấp trung ương, cấp tỉnh, cấp xã",
+        "why_this_route": "Route trực tiếp cho nhu cầu 'Cấp lại chứng nhận đăng ký xe, biển số xe thực hiện bằng dịch vụ công trực tuyến một phần hoặc trực tiếp thực hiện tại cấp trung ương, cấp tỉnh, cấp xã' trong nhánh 'Đăng ký phương tiện'."
+      },
+      {
+        "route_id": "dang_ky_phuong_tien-1_013083",
+        "conditions": {
+          "subdomain_key": "dang_ky_phuong_tien",
+          "operation_key": "dang_ky_xe_tam_thoi_thuc_hien_bang_dich_vu_cong_truc_tuyen_toan_trinh"
+        },
+        "procedure_code": "1.013083",
+        "procedure_name": "Đăng ký xe tạm thời thực hiện bằng dịch vụ công trực tuyến toàn trình",
+        "why_this_route": "Route trực tiếp cho nhu cầu 'Đăng ký xe tạm thời thực hiện bằng dịch vụ công trực tuyến toàn trình' trong nhánh 'Đăng ký phương tiện'."
+      },
+      {
+        "route_id": "dang_ky_phuong_tien-1_013086",
+        "conditions": {
+          "subdomain_key": "dang_ky_phuong_tien",
+          "operation_key": "dang_ky_xe_tam_thoi_thuc_hien_bang_dich_vu_cong_truc_tuyen_mot_phan_hoac_truc_tiep_thuc_hien_tai_cap_trung_uong_cap_tinh_cap_xa"
+        },
+        "procedure_code": "1.013086",
+        "procedure_name": "Đăng ký xe tạm thời thực hiện bằng dịch vụ công trực tuyến một phần hoặc trực tiếp thực hiện tại cấp trung ương, cấp tỉnh, cấp xã",
+        "why_this_route": "Route trực tiếp cho nhu cầu 'Đăng ký xe tạm thời thực hiện bằng dịch vụ công trực tuyến một phần hoặc trực tiếp thực hiện tại cấp trung ương, cấp tỉnh, cấp xã' trong nhánh 'Đăng ký phương tiện'."
+      },
+      {
+        "route_id": "dang_ky_phuong_tien-1_013123",
+        "conditions": {
+          "subdomain_key": "dang_ky_phuong_tien",
+          "operation_key": "thu_hoi_giay_chung_nhan_dang_ky_bien_so_xe_thuc_hien_bang_dich_vu_cong_truc_tuyen_mot_phan_hoac_truc_tiep_thuc_hien_tai_cap_trung_uong_cap_tinh_cap_xa"
+        },
+        "procedure_code": "1.013123",
+        "procedure_name": "Thu hồi giấy chứng nhận đăng ký, biển số xe thực hiện bằng dịch vụ công trực tuyến một phần hoặc trực tiếp thực hiện tại cấp trung ương, cấp tỉnh, cấp xã",
+        "why_this_route": "Route trực tiếp cho nhu cầu 'Thu hồi giấy chứng nhận đăng ký, biển số xe thực hiện bằng dịch vụ công trực tuyến một phần hoặc trực tiếp thực hiện tại cấp trung ương, cấp tỉnh, cấp xã' trong nhánh 'Đăng ký phương tiện'."
+      },
+      {
+        "route_id": "dang_ky_phuong_tien-3_000381",
+        "conditions": {
+          "subdomain_key": "dang_ky_phuong_tien",
+          "operation_key": "thu_hoi_giay_phep_hoat_dong_doi_voi_phuong_tien_giao_thong_thong_minh_tai_cuc_canh_sat_giao_thong"
+        },
+        "procedure_code": "3.000381",
+        "procedure_name": "Thu hồi Giấy phép hoạt động đối với phương tiện giao thông thông minh tại Cục cảnh sát giao thông",
+        "why_this_route": "Route trực tiếp cho nhu cầu 'Thu hồi Giấy phép hoạt động đối với phương tiện giao thông thông minh tại Cục cảnh sát giao thông' trong nhánh 'Đăng ký phương tiện'."
+      },
+      {
+        "route_id": "dang_ky_phuong_tien-3_000382",
+        "conditions": {
+          "subdomain_key": "dang_ky_phuong_tien",
+          "operation_key": "cap_lai_giay_phep_hoat_dong_doi_voi_phuong_tien_giao_thong_thong_minh_tai_cuc_canh_sat_giao_thong"
+        },
+        "procedure_code": "3.000382",
+        "procedure_name": "Cấp lại Giấy phép hoạt động đối với phương tiện giao thông thông minh tại Cục Cảnh sát giao thông",
+        "why_this_route": "Route trực tiếp cho nhu cầu 'Cấp lại Giấy phép hoạt động đối với phương tiện giao thông thông minh tại Cục Cảnh sát giao thông' trong nhánh 'Đăng ký phương tiện'."
+      },
+      {
+        "route_id": "dang_ky_phuong_tien-3_000383",
+        "conditions": {
+          "subdomain_key": "dang_ky_phuong_tien",
+          "operation_key": "cap_phep_hoat_dong_doi_voi_phuong_tien_giao_thong_thong_minh_tai_cuc_canh_sat_giao_thong"
+        },
+        "procedure_code": "3.000383",
+        "procedure_name": "Cấp phép hoạt động đối với phương tiện giao thông thông minh tại Cục Cảnh sát giao thông",
+        "why_this_route": "Route trực tiếp cho nhu cầu 'Cấp phép hoạt động đối với phương tiện giao thông thông minh tại Cục Cảnh sát giao thông' trong nhánh 'Đăng ký phương tiện'."
+      }
+    ]
+  },
+  "pre_submission_checks": [
+    {
+      "field_group": "driver_identity",
+      "checks": [
+        "Thông tin CCCD/hộ chiếu phải đúng định dạng và còn hiệu lực.",
+        "Nếu đổi hoặc cấp lại bằng lái thì phải đối chiếu đúng thông tin giấy phép cũ với dữ liệu hiện tại."
+      ]
+    },
+    {
+      "field_group": "vehicle_registration",
+      "checks": [
+        "Hồ sơ đăng ký xe phải có chứng từ nguồn gốc xe và chứng từ quyền sở hữu hợp lệ.",
+        "Các thủ tục sang tên hoặc thu hồi cần làm rõ trạng thái đăng ký cũ và biển số hiện tại."
+      ]
+    },
+    {
+      "field_group": "inspection_readiness",
+      "checks": [
+        "Nhóm đăng kiểm phải xác định đúng loại phương tiện trước khi chọn thủ tục kiểm định/chứng nhận.",
+        "Cần đối chiếu thời hạn, giấy tờ kỹ thuật và việc xe có thuộc diện miễn kiểm định lần đầu hay không."
+      ]
+    }
+  ],
+  "subdomain_key": "dang_ky_phuong_tien"
+}

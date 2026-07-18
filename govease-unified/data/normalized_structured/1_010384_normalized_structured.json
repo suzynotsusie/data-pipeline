@@ -1,0 +1,176 @@
+{
+  "schema_version": "1.0",
+  "normalizer_version": "0.2.0",
+  "source": {
+    "procedure_code": "1.010384",
+    "title": "Khôi phục giá trị sử dụng hộ chiếu phổ thông (thực hiện tại cấp tỉnh)",
+    "raw_structured_parser_version": "0.1.0",
+    "field": "Quản lý xuất nhập cảnh"
+  },
+  "procedure": {
+    "level": null,
+    "procedure_type": null,
+    "target_users": [],
+    "authorities": [
+      "Phòng quản lý xuất nhập cảnh"
+    ],
+    "receiving_places": []
+  },
+  "submission": {
+    "channels": [
+      "in_person",
+      "online",
+      "postal"
+    ],
+    "methods": [
+      {
+        "method_id": "method_1",
+        "channel": "in_person",
+        "processing_time_text": "05 Ngày làm việc",
+        "fee_text": null,
+        "description": "nộp hồ sơ trực tiếp tại trụ sở Cơ quan Quản lý xuất nhập cảnh Công an cấp tỉnh. Không quá 05 ngày làm việc từ ngày nhận đầy đủ hồ sơ theo quy định",
+        "is_online": false,
+        "is_postal": false,
+        "is_in_person": true
+      },
+      {
+        "method_id": "method_2",
+        "channel": "online",
+        "processing_time_text": "05 Ngày làm việc",
+        "fee_text": null,
+        "description": "nộp hồ sơ trực tuyến qua Cổng dịch vụ công quốc gia hoặc Cổng dịch vụ công Bộ Công an. Không quá 05 ngày làm việc từ ngày nhận đầy đủ hồ sơ theo quy định",
+        "is_online": true,
+        "is_postal": false,
+        "is_in_person": false
+      },
+      {
+        "method_id": "method_3",
+        "channel": "postal",
+        "processing_time_text": "05 Ngày làm việc",
+        "fee_text": null,
+        "description": "nộp bổ sung hồ sơ qua dịch vụ bưu chính công ích theo thông báo của Cơ quan Quản lý xuất nhập cảnh Công an cấp tỉnh trên Cổng dịch vụ công quốc gia hoặc Cổng dịch vụ công Bộ Công an (nếu có). Không quá 05 ngày làm việc từ ngày nhận đầy đủ hồ sơ theo quy định",
+        "is_online": false,
+        "is_postal": true,
+        "is_in_person": false
+      }
+    ],
+    "timing_summary": {
+      "unique_processing_times": [
+        "05 Ngày làm việc"
+      ],
+      "method_count": 3
+    }
+  },
+  "documents": {
+    "required": [
+      {
+        "document_id": "t_khai_ngh_kh_i_ph_c_gi_tr_s_d_ng_h_chi_u_ph_th_ng_m_u_tk04_ban_h_nh_k_m_theo_th_ng_t_s_31_2023_tt_bca_ng_y_20_7_2023_c_a_b_c_ng_an_i_v_i_ng_i_m_t_n_ng_l_c_h_nh_vi_d_n_s_ng_i_c_kh_kh_n_trong_nh_n_th_c_l_m_ch_h_nh_vi_ng_i_ch_a_14_tu_i_th_ng_i_i_di_n_h_p_ph_p_khai",
+        "name": "Tờ khai đề nghị khôi phục giá trị sử dụng hộ chiếu phổ thông (mẫu TK04) ban hành kèm theo Thông tư số 31/2023/TT-BCA ngày 20/7/2023 của Bộ Công an. Đối với người mất năng lực hành vi dân sự, người có khó khăn trong nhận thức, làm chủ hành vi, người chưa đủ 14 tuổi thì người đại diện hợp pháp khai,",
+        "group_name": "default",
+        "group_type": "required",
+        "original_count": "1",
+        "copy_count": "0",
+        "conditions": [],
+        "attachment_label": "ký thay. Mẫu TK04 khôi phục HC TK04 MỚI.doc",
+        "attachment_path": "ký thay. Mẫu TK04 khôi phục HC TK04 MỚI.doc"
+      },
+      {
+        "document_id": "h_chi_u_ph_th_ng_c_n_nguy_n_v_n_v_c_th_th_c_do_n_c_ngo_i_c_p_c_n_th_i_h_n",
+        "name": "Hộ chiếu phổ thông còn nguyên vẹn và có thị thực do nước ngoài cấp còn thời hạn.",
+        "group_name": "default",
+        "group_type": "required",
+        "original_count": "1",
+        "copy_count": "0",
+        "conditions": [],
+        "attachment_label": null,
+        "attachment_path": null
+      }
+    ],
+    "conditional": [
+      {
+        "document_id": "tr_ng_h_p_n_p_h_s_tr_c_tuy_n_th_th_nh_ph_n_h_s_ph_i_c_ch_ng_th_c_i_n_t_theo_quy_nh_tr_ng_h_p_h_s_ch_a_c_ch_ng_th_c_i_n_t_th_g_i_h_s_v_c_quan_ti_p_nh_n_th_ng_qua_d_ch_v_b_u_ch_nh_c_ng_ch",
+        "name": "Trường hợp nộp hồ sơ trực tuyến thì thành phần hồ sơ phải được chứng thực điện tử theo quy định, trường hợp hồ sơ chưa được chứng thực điện tử thì gửi hồ sơ về cơ quan tiếp nhận thông qua dịch vụ bưu chính công ích.",
+        "group_name": "default",
+        "group_type": "required",
+        "original_count": "0",
+        "copy_count": "0",
+        "conditions": [
+          "Trường hợp nộp hồ sơ trực tuyến thì thành phần hồ sơ phải được chứng thực điện tử theo quy định, trường hợp hồ sơ chưa được chứng thực điện tử thì gửi hồ sơ về cơ quan tiếp nhận thông qua dịch vụ bưu chính công ích."
+        ],
+        "attachment_label": null,
+        "attachment_path": null
+      }
+    ],
+    "presented": [],
+    "notes": [],
+    "forms": [
+      {
+        "name": "Tờ khai đề nghị khôi phục giá trị sử dụng hộ chiếu phổ thông (mẫu TK04) ban hành kèm theo Thông tư số 31/2023/TT-BCA ngày 20/7/2023 của Bộ Công an. Đối với người mất năng lực hành vi dân sự, người có khó khăn trong nhận thức, làm chủ hành vi, người chưa đủ 14 tuổi thì người đại diện hợp pháp khai,",
+        "attachment_label": "ký thay. Mẫu TK04 khôi phục HC TK04 MỚI.doc",
+        "attachment_path": "ký thay. Mẫu TK04 khôi phục HC TK04 MỚI.doc"
+      }
+    ],
+    "empty_groups": [],
+    "document_count": 3
+  },
+  "process": {
+    "steps": [
+      {
+        "step_id": "step_1",
+        "title": "Bước 1:",
+        "content": "Bước 1: Chuẩn bị hồ sơ theo quy định của pháp luật.",
+        "actor": "user",
+        "channel_hint": null,
+        "time_hint": null
+      },
+      {
+        "step_id": "step_2",
+        "title": "Bước 2:",
+        "content": "Bước 2: Nộp hồ sơ * Người đề nghị khôi phục giá trị sử dụng hộ chiếu phổ thông trực tiếp nộp hồ sơ vào giờ hành chính các ngày làm việc trong tuần tại Cơ quan Quản lý xuất nhập cảnh Công an cấp tỉnh nơi thuận lợi hoặc nộp hồ sơ qua Cổng dịch vụ công trực tuyến và gửi bổ sung hồ sơ qua dịch vụ bưu chính công ích theo thông báo của Cơ quan Quản lý xuất nhập cảnh Công an cấp tỉnh trên Cổng dịch vụ công quốc gia hoặc Cổng dịch vụ công Bộ Công an (nếu có). * Cán bộ quản lý xuất nhập cảnh tiếp nhận hồ sơ, kiểm tra, đối chiếu thông tin trong tờ khai với thông tin trong hộ chiếu: + Trường hợp hồ sơ đã đầy đủ, hợp lệ thì cấp giấy hẹn trả kết quả cho người đề nghị khôi phục giá trị sử dụng hộ chiếu phổ thông hoặc thông báo trên Cổng dịch vụ công quốc gia hoặc Cổng dịch vụ công Bộ Công an. + Trường hợp hồ sơ thiếu hoặc không hợp lệ thì cán bộ tiếp nhận hồ sơ hướng dẫn hoặc thông báo trên Cổng dịch vụ công quốc gia hoặc Cổng dịch vụ công Bộ Công an để người đề nghị khôi phục giá trị sử dụng hộ chiếu phổ thông hoàn chỉnh hồ sơ. + Trường hợp hồ sơ không đủ điều kiện thì không tiếp nhận hồ sơ, trả lời bằng văn bản hoặc thông báo trên Cổng dịch vụ công quốc gia hoặc Cổng dịch vụ công Bộ Công an và nêu rõ lý do. * Trường hợp nôp hồ sơ trực tuyến, người đề nghị khôi phục giá trị sử dụng hộ chiếu phổ thông có thể yêu cầu nhận kết quả qua dịch vụ bưu chính và phải trả phí dịch vụ chuyển phát. * Thời gian tiếp nhận hồ sơ: Từ thứ 2 đến thứ 6 hàng tuần và sáng thứ 7 (đối với các đơn vị bố trí tiếp nhận hồ sơ vào sáng thứ 7); trừ ngày Tết, ngày lễ.",
+        "actor": "authority",
+        "channel_hint": "trực tuyến",
+        "time_hint": null
+      },
+      {
+        "step_id": "step_3",
+        "title": "Bước 3:",
+        "content": "Bước 3: Nhận kết quả + Người đề nghị khôi phục giá trị sử dụng hộ chiếu phổ thông trực tiếp nhận kết quả tại Cơ quan Quản lý xuất nhập cảnh Công an cấp tỉnh nơi đã nộp hồ sơ; khi đến nhận kết quả mang theo giấy hẹn trả kết quả và xuất trình Chứng minh nhân dân, Thẻ căn cước công dân. Trường hợp đề nghị nhận kết quả qua dịch vụ bưu chính thực hiện theo hướng dẫn của cơ quan cung cấp dịch vụ bưu chính. + Trường hợp không đồng ý khôi phục giá trị sử dụng hộ chiếu phổ thông thì phải trả lời bằng văn bản hoặc thông báo qua Cổng dịch vụ công quốc gia hoặc Cổng dịch vụ công Bộ Công an và nêu rõ lý do. + Thời gian trả kết quả: Từ thứ 2 đến thứ 6 hàng tuần (trừ ngày Tết, ngày lễ).",
+        "actor": "authority",
+        "channel_hint": "dịch vụ bưu chính",
+        "time_hint": null
+      }
+    ],
+    "step_count": 3,
+    "notes": []
+  },
+  "eligibility": {
+    "conditions": [
+      "Hộ chiếu phổ thông đã bị hủy giá trị sử dụng do bị mất ở trong nước, sau khi tìm lại được còn nguyên vẹn và có thị thực do nước ngoài cấp còn thời hạn."
+    ],
+    "has_conditions": true
+  },
+  "results": {
+    "items": [],
+    "primary_result": null
+  },
+  "legal_basis": {
+    "items": [],
+    "count": 0
+  },
+  "attachments": [
+    {
+      "label": "ký thay. Mẫu TK04 khôi phục HC TK04 MỚI.doc",
+      "path": "ký thay. Mẫu TK04 khôi phục HC TK04 MỚI.doc",
+      "source_section": "Thành phần hồ sơ",
+      "document_name": "Tờ khai đề nghị khôi phục giá trị sử dụng hộ chiếu phổ thông (mẫu TK04) ban hành kèm theo Thông tư số 31/2023/TT-BCA ngày 20/7/2023 của Bộ Công an. Đối với người mất năng lực hành vi dân sự, người có khó khăn trong nhận thức, làm chủ hành vi, người chưa đủ 14 tuổi thì người đại diện hợp pháp khai,"
+    }
+  ],
+  "signals": {
+    "raw_parse_warnings": [],
+    "missing_documents": false,
+    "documents_section_present": true,
+    "documents_declared_empty": false,
+    "documents_only_in_notes": false,
+    "missing_results": true
+  }
+}

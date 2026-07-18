@@ -1,0 +1,230 @@
+{
+  "schema_version": "3.0",
+  "record_type": "public_service_procedure_payload",
+  "id": "procedure-1.013626",
+  "procedure_code": "1.013626",
+  "code": "1.013626",
+  "title": "Thủ tục cho phép người hành nghề được tiếp tục hành nghề khám bệnh, chữa bệnh sau khi bị đình chỉ hoạt động chuyên môn.",
+  "language": "vi",
+  "status": "generated_from_pipeline",
+  "field": "Khám bệnh, chữa bệnh BQP",
+  "group_key": "suc_khoe_y_te",
+  "workflow_family": null,
+  "subflow": null,
+  "source": {
+    "source_url": "file:///C:/Users/ku060/Downloads/VAIC%20source/data-pipeline/raw_data/1_013626/1_013626_procedure_detail.md",
+    "source_markdown_path": "C:\\Users\\ku060\\Downloads\\VAIC source\\data-pipeline\\raw_data\\1_013626\\1_013626_procedure_detail.md",
+    "normalized_payload_path": "C:\\Users\\ku060\\Downloads\\VAIC source\\data-pipeline\\govease-unified\\data\\normalized_structured\\1_013626_normalized_structured.json",
+    "enriched_payload_path": "C:\\Users\\ku060\\Downloads\\VAIC source\\data-pipeline\\govease-unified\\data\\enriched_structured_priority\\1_013626_enriched_structured.json"
+  },
+  "scope": {
+    "included": "Thủ tục này thuộc nhóm y tế, thường cần đối chiếu thông tin người bệnh, đơn vị tiếp nhận hoặc quyền lợi chuyên ngành. Kết quả thường nhận được là Quyết định cho phép tiếp tục hành nghề. Thời gian xử lý tham khảo: 5 ngày.",
+    "not_included": []
+  },
+  "agency": {
+    "executing_agency": "Cục Quân y/Tổng cục Hậu cần - Kỹ thuật",
+    "submission_place": null,
+    "receiving_places": []
+  },
+  "target_users": [
+    "Cán bộ",
+    "công chức",
+    "viên chức"
+  ],
+  "submission_methods": [
+    {
+      "code": "POSTAL",
+      "label": "Dịch vụ bưu chính",
+      "processing_time": "5 ngày",
+      "fee": null,
+      "description": null
+    },
+    {
+      "code": "IN_PERSON",
+      "label": "Trực tiếp",
+      "processing_time": "5 ngày",
+      "fee": null,
+      "description": null
+    }
+  ],
+  "processing_note": "Thời gian xử lý tham chiếu: 5 ngày. Nên xác định rõ đối tượng tham gia, quyền lợi hoặc nhu cầu điều chỉnh hồ sơ y tế trước khi nộp. Có thể chọn kênh nộp phù hợp: Trực tiếp, Dịch vụ bưu chính. Hiện có 1 mục giấy tờ cần theo dõi trong checklist.",
+  "documents": {
+    "normally_required": [],
+    "conditional": [
+      {
+        "condition": "1. Đơn đề nghị. 2. Kết quả cập nhật kiến thức y khoa liên tục (trường hợp quyết định đình chỉ bắt buộc người hành nghề bị đình chỉ hoạt động phải cập nhật kiến thức y khoa liên tục). 3. Báo cáo về việc khắc phục sai sót chuyên môn kỹ thuật của người hành nghề (trường hợp người hành nghề bị đình chỉ theo kết luận của Hội đồng chuyên môn). 4. Báo cáo về việc khắc phục vi phạm đạo đức nghề nghiệp của người hành nghề (trường hợp người hành nghề vi phạm đạo đức nghề nghiệp bị đình chỉ theo kết luận của cơ quan có thẩm quyền).",
+        "document": "1. Đơn đề nghị. 2. Kết quả cập nhật kiến thức y khoa liên tục (trường hợp quyết định đình chỉ bắt buộc người hành nghề bị đình chỉ hoạt động phải cập nhật kiến thức y khoa liên tục). 3. Báo cáo về việc khắc phục sai sót chuyên môn kỹ thuật của người hành nghề (trường hợp người hành nghề bị đình chỉ theo kết luận của Hội đồng chuyên môn). 4. Báo cáo về việc khắc phục vi phạm đạo đức nghề nghiệp của người hành nghề (trường hợp người hành nghề vi phạm đạo đức nghề nghiệp bị đình chỉ theo kết luận của cơ quan có thẩm quyền).",
+        "quantity": "1 bản chính, 0 bản sao",
+        "notes": [],
+        "attachment_path": null
+      }
+    ],
+    "forms": [],
+    "presented": [],
+    "notes": [],
+    "summary": [
+      {
+        "group": null,
+        "name": null,
+        "quantity": "1 bản chính, 0 bản sao",
+        "notes": [],
+        "attachment_path": null
+      }
+    ]
+  },
+  "steps": [
+    {
+      "order": 1,
+      "title": "Bước 1",
+      "description": "1. 1. Trường hợp quyết định đình chỉ không bắt buộc người hành nghề bị đình chỉ hoạt động phải cập nhật kiến thức y khoa liên tục thì người hành nghề được tiếp tục hành nghề khi hết thời hạn đình chỉ.",
+      "example": null
+    },
+    {
+      "order": 2,
+      "title": "Bước 2",
+      "description": "2. Trường hợp quyết định đình chỉ bắt buộc người hành nghề bị đình chỉ hoạt động phải cập nhật kiến thức y khoa liên tục, trong thời hạn 12 tháng kể từ khi có quyết định đình chỉ có hiệu lực, người hành nghề có trách nhiệm thực hiện và gửi kết quả cập nhật kiến thức y khoa liên tục theo quy định của Bộ Y tế về Cơ quan được giao quản lý về y tế.",
+      "example": "12 tháng"
+    },
+    {
+      "order": 3,
+      "title": "Bước 3",
+      "description": "3. Trong thời hạn 05 ngày làm việc, kể từ ngày nhận được kết quả cập nhật kiến thức y khoa liên tục, Cơ quan được giao quản lý về y tế báo cáo cơ quan đã cấp giấy phép hành nghề cho người hành nghề quyết định việc cho phép tiếp tục hành nghề.",
+      "example": "05 ngày làm việc"
+    }
+  ],
+  "input_fields": [
+    {
+      "field": "request_subject",
+      "label": "Đối tượng làm thủ tục",
+      "type": "string",
+      "required": true
+    },
+    {
+      "field": "insurance_or_medical_need",
+      "label": "Nhu cầu bảo hiểm hoặc y tế",
+      "type": "string",
+      "required": true
+    },
+    {
+      "field": "submission_channel_preference",
+      "label": "Kênh nộp dự kiến",
+      "type": "enum",
+      "required": false,
+      "options": [
+        "Trực tiếp",
+        "Dịch vụ bưu chính"
+      ]
+    },
+    {
+      "field": "has_insurance_number",
+      "label": "Đã có mã BHXH/BHYT",
+      "type": "boolean",
+      "required": false
+    }
+  ],
+  "validation_rules": [
+    {
+      "id": "required-1",
+      "severity": "error",
+      "field": "request_subject",
+      "rule": "Trường bắt buộc phải có dữ liệu hợp lệ trước khi nộp.",
+      "message": "Thiếu trường bắt buộc: Đối tượng làm thủ tục."
+    },
+    {
+      "id": "required-2",
+      "severity": "error",
+      "field": "insurance_or_medical_need",
+      "rule": "Trường bắt buộc phải có dữ liệu hợp lệ trước khi nộp.",
+      "message": "Thiếu trường bắt buộc: Nhu cầu bảo hiểm hoặc y tế."
+    },
+    {
+      "id": "hint-1",
+      "severity": "warning",
+      "field": "general",
+      "rule": "Nên xác định trước kênh nộp hồ sơ để biết có cần bản giấy, bản điện tử hay xuất trình trực tiếp.",
+      "message": "Nên xác định trước kênh nộp hồ sơ để biết có cần bản giấy, bản điện tử hay xuất trình trực tiếp."
+    },
+    {
+      "id": "hint-2",
+      "severity": "warning",
+      "field": "general",
+      "rule": "Nên xác định đúng nhóm đối tượng, mã số bảo hiểm và quyền lợi áp dụng trước khi nộp.",
+      "message": "Nên xác định đúng nhóm đối tượng, mã số bảo hiểm và quyền lợi áp dụng trước khi nộp."
+    }
+  ],
+  "common_errors": [],
+  "clarifying_questions": [
+    {
+      "id": "clarify_1",
+      "question": "Bạn đang muốn đăng ký, điều chỉnh hay xác nhận quyền lợi y tế hoặc bảo hiểm nào?",
+      "purpose": "workflow_intake"
+    },
+    {
+      "id": "clarify_2",
+      "question": "Bạn đã có mã BHXH/BHYT hoặc thông tin đơn vị tiếp nhận liên quan chưa?",
+      "purpose": "workflow_intake"
+    }
+  ],
+  "legal_basis": [
+    {
+      "title": "Nghị định số 16/2024/NĐ-CP ngày 16/02/2024 của Chính phủ về người hành nghề khám bệnh, chữa bệnh và cơ sở khám bệnh, chữa bệnh thuộc lực lượng vũ trang nhân dân",
+      "code": "16/2024/NĐ-CP"
+    }
+  ],
+  "legal_bases": [
+    {
+      "title": "Nghị định số 16/2024/NĐ-CP ngày 16/02/2024 của Chính phủ về người hành nghề khám bệnh, chữa bệnh và cơ sở khám bệnh, chữa bệnh thuộc lực lượng vũ trang nhân dân",
+      "code": "16/2024/NĐ-CP"
+    }
+  ],
+  "faq": [
+    {
+      "question": "Có thể nộp qua kênh nào?",
+      "answer": "Các kênh hiện có: Trực tiếp, Dịch vụ bưu chính."
+    },
+    {
+      "question": "Thời gian xử lý tham chiếu là bao lâu?",
+      "answer": "Thời gian xử lý tham chiếu hiện có là 5 ngày."
+    },
+    {
+      "question": "Kết quả chính của thủ tục là gì?",
+      "answer": "Kết quả chính được trích xuất là Quyết định cho phép tiếp tục hành nghề."
+    }
+  ],
+  "guidance": {
+    "highlight_documents": [
+      {
+        "bucket": "conditional",
+        "name": "1. Đơn đề nghị. 2. Kết quả cập nhật kiến thức y khoa liên tục (trường hợp quyết định đình chỉ bắt buộc người hành nghề bị đình chỉ hoạt động phải cập nhật kiến thức y khoa liên tục). 3. Báo cáo về việc khắc phục sai sót chuyên môn kỹ thuật của người hành nghề (trường hợp người hành nghề bị đình chỉ theo kết luận của Hội đồng chuyên môn). 4. Báo cáo về việc khắc phục vi phạm đạo đức nghề nghiệp của người hành nghề (trường hợp người hành nghề vi phạm đạo đức nghề nghiệp bị đình chỉ theo kết luận của cơ quan có thẩm quyền).",
+        "conditions": [
+          "1. Đơn đề nghị. 2. Kết quả cập nhật kiến thức y khoa liên tục (trường hợp quyết định đình chỉ bắt buộc người hành nghề bị đình chỉ hoạt động phải cập nhật kiến thức y khoa liên tục). 3. Báo cáo về việc khắc phục sai sót chuyên môn kỹ thuật của người hành nghề (trường hợp người hành nghề bị đình chỉ theo kết luận của Hội đồng chuyên môn). 4. Báo cáo về việc khắc phục vi phạm đạo đức nghề nghiệp của người hành nghề (trường hợp người hành nghề vi phạm đạo đức nghề nghiệp bị đình chỉ theo kết luận của cơ quan có thẩm quyền)."
+        ],
+        "attachment_path": null
+      }
+    ],
+    "special_cases": [],
+    "common_errors": [],
+    "validation_hints": [
+      "Nên xác định trước kênh nộp hồ sơ để biết có cần bản giấy, bản điện tử hay xuất trình trực tiếp.",
+      "Nên xác định đúng nhóm đối tượng, mã số bảo hiểm và quyền lợi áp dụng trước khi nộp."
+    ]
+  },
+  "next_steps": {
+    "summary": "Nên xác định rõ đối tượng tham gia, quyền lợi hoặc nhu cầu điều chỉnh hồ sơ y tế trước khi nộp. Có thể chọn kênh nộp phù hợp: Trực tiếp, Dịch vụ bưu chính. Hiện có 1 mục giấy tờ cần theo dõi trong checklist.",
+    "time_badge": "5 ngày",
+    "result_label": "Quyết định cho phép tiếp tục hành nghề",
+    "primary_channel": "postal",
+    "channels": [
+      "in_person",
+      "postal"
+    ]
+  },
+  "notes": [],
+  "provenance": {
+    "pipeline": "raw->structured->normalized->enriched->ui_api_payload",
+    "normalizer_version": "0.2.0",
+    "enricher_version": "0.2.0",
+    "mapping_notes": "excluded_from_clean_workflow_dataset",
+    "supported_group": true
+  }
+}

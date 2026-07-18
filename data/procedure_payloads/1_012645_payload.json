@@ -1,0 +1,382 @@
+{
+  "schema_version": "3.0",
+  "record_type": "public_service_procedure_payload",
+  "id": "procedure-1.012645",
+  "procedure_code": "1.012645",
+  "code": "1.012645",
+  "title": "THỦ TỤC ĐỀ NGHỊ THAY ĐỔI TÊN CỦA TỔ CHỨC TÔN GIÁO, TỔ CHỨC TÔN GIÁO TRỰC THUỘC CÓ ĐỊA BÀN HOẠT ĐỘNG Ở MỘT TỈNH (CẤP TỈNH)",
+  "language": "vi",
+  "status": "generated_from_pipeline",
+  "field": "Tín ngưỡng, tôn giáo",
+  "group_key": "suc_khoe_y_te",
+  "workflow_family": null,
+  "subflow": null,
+  "source": {
+    "source_url": "file:///C:/Users/ku060/Downloads/VAIC%20source/data-pipeline/raw_data/1_012645/1_012645_procedure_detail.md",
+    "source_markdown_path": "C:\\Users\\ku060\\Downloads\\VAIC source\\data-pipeline\\raw_data\\1_012645\\1_012645_procedure_detail.md",
+    "normalized_payload_path": "C:\\Users\\ku060\\Downloads\\VAIC source\\data-pipeline\\govease-unified\\data\\normalized_structured\\1_012645_normalized_structured.json",
+    "enriched_payload_path": "C:\\Users\\ku060\\Downloads\\VAIC source\\data-pipeline\\govease-unified\\data\\enriched_structured_priority\\1_012645_enriched_structured.json"
+  },
+  "scope": {
+    "included": "Thủ tục này thuộc nhóm y tế, thường cần đối chiếu thông tin người bệnh, đơn vị tiếp nhận hoặc quyền lợi chuyên ngành. Kết quả thường nhận được là Văn bản trả lời về việc thay đổi tên của tổ chức tôn giáo, tổ chức tôn giáo trực thuộc có địa bàn hoạt động ở một tỉnh. Thời gian xử lý tham khảo: 30 ngày.",
+    "not_included": []
+  },
+  "agency": {
+    "executing_agency": "Ủy ban nhân dân cấp tỉnh",
+    "submission_place": null,
+    "receiving_places": []
+  },
+  "target_users": [
+    "Tổ chức (không bao gồm doanh nghiệp",
+    "HTX)"
+  ],
+  "submission_methods": [
+    {
+      "code": "ONLINE",
+      "label": "Trực tuyến",
+      "processing_time": "30 ngày",
+      "fee": null,
+      "description": "Nộp hồ sơ qua Cổng dịch vụ công trực tuyến."
+    },
+    {
+      "code": "POSTAL",
+      "label": "Dịch vụ bưu chính",
+      "processing_time": "30 ngày",
+      "fee": null,
+      "description": "Nộp hồ sơ qua dịch vụ bưu chính công ích; qua thuê dịch vụ của doanh nghiệp, cá nhân hoặc ủy quyền theo quy định của pháp luật. Ngày tiếp nhận hồ sơ được tính theo ngày ghi trên dấu công văn đến."
+    },
+    {
+      "code": "IN_PERSON",
+      "label": "Trực tiếp",
+      "processing_time": "30 ngày",
+      "fee": null,
+      "description": "Nộp hồ sơ trực tiếp tại Trung tâm Hành chính công của tỉnh hoặc Bộ phận Tiếp nhận và trả kết quả của Sở Dân tộc và Tôn giáo hoặc Sở Nội vụ. Sở Dân tộc và Tôn giáo hoặc Sở Nội vụ tiếp nhận hồ sơ đề nghị, có Giấy tiếp nhận hồ sơ và hẹn ngày trả kết quả."
+    }
+  ],
+  "processing_note": "Thời gian xử lý tham chiếu: 30 ngày. Nên xác định rõ đối tượng tham gia, quyền lợi hoặc nhu cầu điều chỉnh hồ sơ y tế trước khi nộp. Có thể chọn kênh nộp phù hợp: Trực tiếp, Trực tuyến, Dịch vụ bưu chính. Hiện có khoảng 6 mục giấy tờ cần theo dõi trong checklist.",
+  "documents": {
+    "normally_required": [
+      {
+        "name": "Văn bản đề nghị thay đổi tên của tổ chức tôn giáo hoặc tổ chức tôn giáo trực thuộc",
+        "quantity": "1 bản chính, 0 bản sao",
+        "notes": [],
+        "group": "default",
+        "attachment_path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/1_012645/M%E1%BA%ABu%20B11.docx"
+      },
+      {
+        "name": "Hoặc Văn bản xác nhận của cơ quan nhà nước có thẩm quyền",
+        "quantity": "1 bản chính, 0 bản sao",
+        "notes": [],
+        "group": "default",
+        "attachment_path": null
+      },
+      {
+        "name": "Hoặc Bản sao văn bản chấp thuận thành lập, chia, tách hoặc sáp nhập, hợp nhất tổ chức tôn giáo trực thuộc có địa bàn hoạt động trong một tỉnh của cơ quan nhà nước có thẩm quyền;",
+        "quantity": "0 bản chính, 1 bản sao",
+        "notes": [],
+        "group": "default",
+        "attachment_path": null
+      },
+      {
+        "name": "Bản sao văn bản chấp thuận thành lập tổ chức tôn giáo trực thuộc có địa bàn hoạt động trong một tỉnh của cơ quan nhà nước có thẩm quyền;",
+        "quantity": "0 bản chính, 1 bản sao",
+        "notes": [],
+        "group": "default",
+        "attachment_path": null
+      }
+    ],
+    "conditional": [
+      {
+        "condition": "Bản sao văn bản thành lập, chia, tách, sáp nhập, hợp nhất tổ chức tôn giáo trực thuộc của tổ chức tôn giáo hoặc tổ chức tôn giáo trực thuộc quản lý trực tiếp đối với trường hợp thay đổi tên của tổ chức tôn giáo trực thuộc.",
+        "document": "Bản sao văn bản thành lập, chia, tách, sáp nhập, hợp nhất tổ chức tôn giáo trực thuộc của tổ chức tôn giáo hoặc tổ chức tôn giáo trực thuộc quản lý trực tiếp đối với trường hợp thay đổi tên của tổ chức tôn giáo trực thuộc.",
+        "quantity": "0 bản chính, 1 bản sao",
+        "notes": [],
+        "attachment_path": null
+      },
+      {
+        "condition": "Bản sao quyết định công nhận tổ chức tôn giáo của cơ quan nhà nước có thẩm quyền đối với trường hợp thay đổi tên của tổ chức tôn giáo có địa bàn hoạt động trong một tỉnh;",
+        "document": "Bản sao quyết định công nhận tổ chức tôn giáo của cơ quan nhà nước có thẩm quyền đối với trường hợp thay đổi tên của tổ chức tôn giáo có địa bàn hoạt động trong một tỉnh;",
+        "quantity": "0 bản chính, 1 bản sao",
+        "notes": [],
+        "attachment_path": null
+      }
+    ],
+    "forms": [
+      {
+        "name": "Văn bản đề nghị thay đổi tên của tổ chức tôn giáo hoặc tổ chức tôn giáo trực thuộc",
+        "attachment_label": "Mẫu B11.docx",
+        "attachment_path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/1_012645/M%E1%BA%ABu%20B11.docx"
+      }
+    ],
+    "presented": [],
+    "notes": [],
+    "summary": [
+      {
+        "group": "default",
+        "name": "Văn bản đề nghị thay đổi tên của tổ chức tôn giáo hoặc tổ chức tôn giáo trực thuộc",
+        "quantity": "1 bản chính, 0 bản sao",
+        "notes": [],
+        "attachment_path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/1_012645/M%E1%BA%ABu%20B11.docx"
+      },
+      {
+        "group": "default",
+        "name": "Hoặc Văn bản xác nhận của cơ quan nhà nước có thẩm quyền",
+        "quantity": "1 bản chính, 0 bản sao",
+        "notes": [],
+        "attachment_path": null
+      },
+      {
+        "group": "default",
+        "name": "Hoặc Bản sao văn bản chấp thuận thành lập, chia, tách hoặc sáp nhập, hợp nhất tổ chức tôn giáo trực thuộc có địa bàn hoạt động trong một tỉnh của cơ quan nhà nước có thẩm quyền;",
+        "quantity": "0 bản chính, 1 bản sao",
+        "notes": [],
+        "attachment_path": null
+      },
+      {
+        "group": "default",
+        "name": "Bản sao văn bản chấp thuận thành lập tổ chức tôn giáo trực thuộc có địa bàn hoạt động trong một tỉnh của cơ quan nhà nước có thẩm quyền;",
+        "quantity": "0 bản chính, 1 bản sao",
+        "notes": [],
+        "attachment_path": null
+      },
+      {
+        "group": null,
+        "name": null,
+        "quantity": "0 bản chính, 1 bản sao",
+        "notes": [],
+        "attachment_path": null
+      },
+      {
+        "group": null,
+        "name": null,
+        "quantity": "0 bản chính, 1 bản sao",
+        "notes": [],
+        "attachment_path": null
+      },
+      {
+        "group": null,
+        "name": "Văn bản đề nghị thay đổi tên của tổ chức tôn giáo hoặc tổ chức tôn giáo trực thuộc",
+        "quantity": null,
+        "notes": null,
+        "attachment_path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/1_012645/M%E1%BA%ABu%20B11.docx"
+      }
+    ]
+  },
+  "steps": [
+    {
+      "order": 1,
+      "title": "Bước 1",
+      "description": "1. Bước 1: Trước khi thay đổi tên của tổ chức tôn giáo, tổ chức tôn giáo trực thuộc có địa bàn hoạt động ở một tỉnh, tổ chức tôn giáo có trách nhiệm gửi hồ sơ đề nghị đến Sở Dân tộc và Tôn giáo hoặc Sở Nội vụ.",
+      "example": null
+    },
+    {
+      "order": 2,
+      "title": "Bước 2",
+      "description": "Bước 2: Sở Dân tộc và Tôn giáo hoặc Sở Nội vụ xem xét hồ sơ đề nghị, trường hợp hồ sơ chưa đầy đủ, hợp lệ, Sở Dân tộc và Tôn giáo hoặc Sở Nội vụ hướng dẫn trực tiếp hoặc thông báo qua thư điện tử, tin nhắn điện thoại hoặc văn bản cho tổ chức để bổ sung, hoàn thiện hồ sơ. Trường hợp từ chối tiếp nhận, giải quyết hồ sơ phải nêu rõ lý do. Thời gian hoàn thiện hồ sơ không tính vào thời hạn giải quyết.",
+      "example": "trực tiếp"
+    },
+    {
+      "order": 3,
+      "title": "Bước 3",
+      "description": "Bước 3:",
+      "example": null
+    },
+    {
+      "order": 4,
+      "title": "Bước 4",
+      "description": "+ Sở Dân tộc và Tôn giáo hoặc Sở Nội vụ phối hợp với các cơ quan liên quan thẩm định hồ sơ (nếu cần thiết), trình Ủy ban nhân dân cấp tỉnh.",
+      "example": null
+    },
+    {
+      "order": 5,
+      "title": "Bước 5",
+      "description": "+ Ủy ban nhân dân cấp tỉnh căn cứ Tờ trình của Sở Dân tộc và Tôn giáo hoặc Sở Nội vụ chấp thuận hoặc không chấp thuận về việc thay đổi tên của tổ chức tôn giáo, tổ chức tôn giáo trực thuộc có địa bàn hoạt động ở một tỉnh và gửi kết quả giải quyết về Trung tâm Hành chính công của tỉnh hoặc Bộ phận Tiếp nhận và trả kết quả của Sở Dân tộc và Tôn giáo hoặc Sở Nội vụ để trả cho tổ chức. Trường hợp không chấp thuận phải trả lời bằng văn bản và nêu rõ lý do.",
+      "example": null
+    }
+  ],
+  "input_fields": [
+    {
+      "field": "request_subject",
+      "label": "Đối tượng làm thủ tục",
+      "type": "string",
+      "required": true
+    },
+    {
+      "field": "insurance_or_medical_need",
+      "label": "Nhu cầu bảo hiểm hoặc y tế",
+      "type": "string",
+      "required": true
+    },
+    {
+      "field": "submission_channel_preference",
+      "label": "Kênh nộp dự kiến",
+      "type": "enum",
+      "required": false,
+      "options": [
+        "Trực tiếp",
+        "Trực tuyến",
+        "Dịch vụ bưu chính"
+      ]
+    },
+    {
+      "field": "has_insurance_number",
+      "label": "Đã có mã BHXH/BHYT",
+      "type": "boolean",
+      "required": false
+    }
+  ],
+  "validation_rules": [
+    {
+      "id": "required-1",
+      "severity": "error",
+      "field": "request_subject",
+      "rule": "Trường bắt buộc phải có dữ liệu hợp lệ trước khi nộp.",
+      "message": "Thiếu trường bắt buộc: Đối tượng làm thủ tục."
+    },
+    {
+      "id": "required-2",
+      "severity": "error",
+      "field": "insurance_or_medical_need",
+      "rule": "Trường bắt buộc phải có dữ liệu hợp lệ trước khi nộp.",
+      "message": "Thiếu trường bắt buộc: Nhu cầu bảo hiểm hoặc y tế."
+    },
+    {
+      "id": "hint-1",
+      "severity": "warning",
+      "field": "general",
+      "rule": "Nên xác định trước kênh nộp hồ sơ để biết có cần bản giấy, bản điện tử hay xuất trình trực tiếp.",
+      "message": "Nên xác định trước kênh nộp hồ sơ để biết có cần bản giấy, bản điện tử hay xuất trình trực tiếp."
+    },
+    {
+      "id": "hint-2",
+      "severity": "warning",
+      "field": "general",
+      "rule": "Có mẫu biểu đính kèm, nên kiểm tra đúng biểu mẫu trước khi nộp.",
+      "message": "Có mẫu biểu đính kèm, nên kiểm tra đúng biểu mẫu trước khi nộp."
+    },
+    {
+      "id": "hint-3",
+      "severity": "warning",
+      "field": "general",
+      "rule": "Nên xác định đúng nhóm đối tượng, mã số bảo hiểm và quyền lợi áp dụng trước khi nộp.",
+      "message": "Nên xác định đúng nhóm đối tượng, mã số bảo hiểm và quyền lợi áp dụng trước khi nộp."
+    }
+  ],
+  "common_errors": [],
+  "clarifying_questions": [
+    {
+      "id": "clarify_1",
+      "question": "Bạn đang muốn đăng ký, điều chỉnh hay xác nhận quyền lợi y tế hoặc bảo hiểm nào?",
+      "purpose": "workflow_intake"
+    },
+    {
+      "id": "clarify_2",
+      "question": "Bạn đã có mã BHXH/BHYT hoặc thông tin đơn vị tiếp nhận liên quan chưa?",
+      "purpose": "workflow_intake"
+    }
+  ],
+  "legal_basis": [
+    {
+      "title": "Nghị định số 95/2023/NĐ-CP ngày 29/12/2023 của Chính phủ quy định chi tiết một số điều và biện pháp thi hành Luật tín ngưỡng, tôn giáo.",
+      "code": "95/2023/NĐ-CP"
+    },
+    {
+      "title": "Tín ngưỡng, tôn giáo",
+      "code": "02/2016/QH14"
+    }
+  ],
+  "legal_bases": [
+    {
+      "title": "Nghị định số 95/2023/NĐ-CP ngày 29/12/2023 của Chính phủ quy định chi tiết một số điều và biện pháp thi hành Luật tín ngưỡng, tôn giáo.",
+      "code": "95/2023/NĐ-CP"
+    },
+    {
+      "title": "Tín ngưỡng, tôn giáo",
+      "code": "02/2016/QH14"
+    }
+  ],
+  "faq": [
+    {
+      "question": "Có thể nộp qua kênh nào?",
+      "answer": "Các kênh hiện có: Trực tiếp, Trực tuyến, Dịch vụ bưu chính."
+    },
+    {
+      "question": "Thời gian xử lý tham chiếu là bao lâu?",
+      "answer": "Thời gian xử lý tham chiếu hiện có là 30 ngày."
+    },
+    {
+      "question": "Kết quả chính của thủ tục là gì?",
+      "answer": "Kết quả chính được trích xuất là Văn bản trả lời về việc thay đổi tên của tổ chức tôn giáo, tổ chức tôn giáo trực thuộc có địa bàn hoạt động ở một tỉnh."
+    }
+  ],
+  "guidance": {
+    "highlight_documents": [
+      {
+        "bucket": "required",
+        "name": "Văn bản đề nghị thay đổi tên của tổ chức tôn giáo hoặc tổ chức tôn giáo trực thuộc",
+        "conditions": [],
+        "attachment_path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/1_012645/M%E1%BA%ABu%20B11.docx"
+      },
+      {
+        "bucket": "required",
+        "name": "Hoặc Văn bản xác nhận của cơ quan nhà nước có thẩm quyền",
+        "conditions": [],
+        "attachment_path": null
+      },
+      {
+        "bucket": "required",
+        "name": "Hoặc Bản sao văn bản chấp thuận thành lập, chia, tách hoặc sáp nhập, hợp nhất tổ chức tôn giáo trực thuộc có địa bàn hoạt động trong một tỉnh của cơ quan nhà nước có thẩm quyền;",
+        "conditions": [],
+        "attachment_path": null
+      },
+      {
+        "bucket": "required",
+        "name": "Bản sao văn bản chấp thuận thành lập tổ chức tôn giáo trực thuộc có địa bàn hoạt động trong một tỉnh của cơ quan nhà nước có thẩm quyền;",
+        "conditions": [],
+        "attachment_path": null
+      },
+      {
+        "bucket": "conditional",
+        "name": "Bản sao văn bản thành lập, chia, tách, sáp nhập, hợp nhất tổ chức tôn giáo trực thuộc của tổ chức tôn giáo hoặc tổ chức tôn giáo trực thuộc quản lý trực tiếp đối với trường hợp thay đổi tên của tổ chức tôn giáo trực thuộc.",
+        "conditions": [
+          "Bản sao văn bản thành lập, chia, tách, sáp nhập, hợp nhất tổ chức tôn giáo trực thuộc của tổ chức tôn giáo hoặc tổ chức tôn giáo trực thuộc quản lý trực tiếp đối với trường hợp thay đổi tên của tổ chức tôn giáo trực thuộc."
+        ],
+        "attachment_path": null
+      },
+      {
+        "bucket": "conditional",
+        "name": "Bản sao quyết định công nhận tổ chức tôn giáo của cơ quan nhà nước có thẩm quyền đối với trường hợp thay đổi tên của tổ chức tôn giáo có địa bàn hoạt động trong một tỉnh;",
+        "conditions": [
+          "Bản sao quyết định công nhận tổ chức tôn giáo của cơ quan nhà nước có thẩm quyền đối với trường hợp thay đổi tên của tổ chức tôn giáo có địa bàn hoạt động trong một tỉnh;"
+        ],
+        "attachment_path": null
+      }
+    ],
+    "special_cases": [],
+    "common_errors": [],
+    "validation_hints": [
+      "Nên xác định trước kênh nộp hồ sơ để biết có cần bản giấy, bản điện tử hay xuất trình trực tiếp.",
+      "Có mẫu biểu đính kèm, nên kiểm tra đúng biểu mẫu trước khi nộp.",
+      "Nên xác định đúng nhóm đối tượng, mã số bảo hiểm và quyền lợi áp dụng trước khi nộp."
+    ]
+  },
+  "next_steps": {
+    "summary": "Nên xác định rõ đối tượng tham gia, quyền lợi hoặc nhu cầu điều chỉnh hồ sơ y tế trước khi nộp. Có thể chọn kênh nộp phù hợp: Trực tiếp, Trực tuyến, Dịch vụ bưu chính. Hiện có khoảng 6 mục giấy tờ cần theo dõi trong checklist.",
+    "time_badge": "30 ngày",
+    "result_label": "Văn bản trả lời về việc thay đổi tên của tổ chức tôn giáo, tổ chức tôn giáo trực thuộc có địa bàn hoạt động ở một tỉnh",
+    "primary_channel": "online",
+    "channels": [
+      "in_person",
+      "online",
+      "postal"
+    ]
+  },
+  "notes": [],
+  "provenance": {
+    "pipeline": "raw->structured->normalized->enriched->ui_api_payload",
+    "normalizer_version": "0.2.0",
+    "enricher_version": "0.2.0",
+    "mapping_notes": "excluded_from_clean_workflow_dataset",
+    "supported_group": true
+  }
+}

@@ -1,0 +1,104 @@
+{
+  "schema_version": "1.0",
+  "enricher_version": "0.2.0",
+  "source": {
+    "procedure_code": "1.007994",
+    "title": "Cấp phép xuất khẩu giống cây trồng và hạt lai của giống cây trồng chưa được cấp quyết định công nhận lưu hành hoặc tự công bố lưu hành và không thuộc Danh mục nguồn gen giống cây trồng cấm xuất khẩu phục vụ nghiên cứu, khảo nghiệm, quảng cáo, triển lãm, trao đổi quốc tế không vì mục đích thương mại.",
+    "group_key": "suc_khoe_y_te",
+    "workflow_family": null,
+    "subflow": null
+  },
+  "experience": {
+    "entry_label": "Hỗ trợ y tế và bảo hiểm",
+    "overview_summary": "Thủ tục này thuộc nhóm y tế, thường cần đối chiếu thông tin người bệnh, đơn vị tiếp nhận hoặc quyền lợi chuyên ngành. Kết quả thường nhận được là Giấy phép xuất khẩu giống cây trồng (theo Mẫu số 27 Phụ lục II ban hành kèm theo Thông tư số 07/2026/TT-BNNMT). Thời gian xử lý tham khảo: 10 ngày làm việc.",
+    "next_step_summary": "Nên xác định rõ đối tượng tham gia, quyền lợi hoặc nhu cầu điều chỉnh hồ sơ y tế trước khi nộp. Có thể chọn kênh nộp phù hợp: Trực tiếp, Trực tuyến, Dịch vụ bưu chính. Hiện có khoảng 4 mục giấy tờ cần theo dõi trong checklist.",
+    "tone": "supportive_public_service"
+  },
+  "guidance": {
+    "highlight_documents": [
+      {
+        "bucket": "required",
+        "name": "Văn bản đề nghị cấp Giấy phép xuất khẩu giống cây trồng theo Mẫu số 25 Phụ lục II ban hành kèm theo Thông tư số 07/2026/TT-BNNMT",
+        "conditions": [],
+        "attachment_path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/1_007994/M%E1%BA%ABu%20s%E1%BB%91%2025.docx"
+      },
+      {
+        "bucket": "required",
+        "name": "Tờ khai kỹ thuật (mỗi giống chỉ nộp một lần khi xuất khẩu lần đầu) theo Mẫu số 26 Phụ lục II ban hành kèm theo Thông tư số 07/2026/TT-BNNMT",
+        "conditions": [],
+        "attachment_path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/1_007994/M%E1%BA%ABu%20s%E1%BB%91%2026.docx"
+      },
+      {
+        "bucket": "conditional",
+        "name": "Giấy xác nhận hoặc Giấy mời tham gia hội chợ, triển lãm của đơn vị tổ chức đối với trường hợp xuất khẩu để tham gia hội chợ, triển lãm.",
+        "conditions": [
+          "Giấy xác nhận hoặc Giấy mời tham gia hội chợ, triển lãm của đơn vị tổ chức đối với trường hợp xuất khẩu để tham gia hội chợ, triển lãm."
+        ],
+        "attachment_path": null
+      },
+      {
+        "bucket": "conditional",
+        "name": "Thỏa thuận hợp tác bằng tiếng nước ngoài phải có bản dịch ra tiếng Việt có xác nhận của cơ quan dịch thuật đối với trường hợp xuất khẩu phục vụ nghiên cứu, khảo nghiệm, hợp tác quốc tế.",
+        "conditions": [
+          "Thỏa thuận hợp tác bằng tiếng nước ngoài phải có bản dịch ra tiếng Việt có xác nhận của cơ quan dịch thuật đối với trường hợp xuất khẩu phục vụ nghiên cứu, khảo nghiệm, hợp tác quốc tế."
+        ],
+        "attachment_path": null
+      }
+    ],
+    "special_cases": [
+      "Có yếu tố nước ngoài"
+    ],
+    "common_errors": [
+      "Thiếu giấy tờ hợp pháp hóa hoặc giấy tờ nhân thân của phía nước ngoài.",
+      "Điền sai mẫu tờ khai hoặc chọn sai biểu mẫu đi kèm."
+    ],
+    "validation_hints": [
+      "Nên xác định trước kênh nộp hồ sơ để biết có cần bản giấy, bản điện tử hay xuất trình trực tiếp.",
+      "Có mẫu biểu đính kèm, nên kiểm tra đúng biểu mẫu trước khi nộp.",
+      "Nên xác định đúng nhóm đối tượng, mã số bảo hiểm và quyền lợi áp dụng trước khi nộp."
+    ]
+  },
+  "intake": {
+    "candidate_input_fields": [
+      {
+        "field_id": "request_subject",
+        "label": "Đối tượng làm thủ tục",
+        "field_type": "text",
+        "required": true
+      },
+      {
+        "field_id": "insurance_or_medical_need",
+        "label": "Nhu cầu bảo hiểm hoặc y tế",
+        "field_type": "text",
+        "required": true
+      },
+      {
+        "field_id": "submission_channel_preference",
+        "label": "Kênh nộp dự kiến",
+        "field_type": "enum",
+        "required": false
+      },
+      {
+        "field_id": "has_insurance_number",
+        "label": "Đã có mã BHXH/BHYT",
+        "field_type": "boolean",
+        "required": false
+      }
+    ],
+    "suggested_clarifying_questions": [
+      "Bạn đang muốn đăng ký, điều chỉnh hay xác nhận quyền lợi y tế hoặc bảo hiểm nào?",
+      "Bạn đã có mã BHXH/BHYT hoặc thông tin đơn vị tiếp nhận liên quan chưa?"
+    ]
+  },
+  "ui_hints": {
+    "primary_channel": "online",
+    "result_label": "Giấy phép xuất khẩu giống cây trồng (theo Mẫu số 27 Phụ lục II ban hành kèm theo Thông tư số 07/2026/TT-BNNMT)",
+    "time_badge": "10 ngày làm việc",
+    "document_count_badge": 4
+  },
+  "provenance": {
+    "generator": "workflow_domain_enricher",
+    "derivation_mode": "rule_based_semantic_enrichment",
+    "supported_group": true
+  }
+}

@@ -20,6 +20,7 @@ class IntakeRequest(ChatRequest):
     procedure_code: str | None = Field(default=None, max_length=50)
     persona: str | None = Field(default=None, max_length=50)
     group_key: str | None = Field(default=None, max_length=100)
+    subdomain_key: str | None = Field(default=None, max_length=100)
     candidate_procedure_codes: list[str] = Field(default_factory=list, max_length=50)
     answers: dict[str, Any] = Field(default_factory=dict)
 

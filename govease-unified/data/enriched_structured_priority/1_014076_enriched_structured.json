@@ -1,0 +1,108 @@
+{
+  "schema_version": "1.0",
+  "enricher_version": "0.2.0",
+  "source": {
+    "procedure_code": "1.014076",
+    "title": "Cấp giấy chứng nhận đủ điều kiện kinh doanh dược thuộc thẩm quyền của Sở Y tế (Cơ sở bán buôn thuốc, nguyên liệu làm thuốc; Cơ sở bán lẻ thuốc bao gồm nhà thuốc, quầy thuốc, tủ thuốc trạm y tế xã, cơ sở chuyên bán lẻ dược liệu, thuốc dược liệu, thuốc cổ truyền)",
+    "group_key": "suc_khoe_y_te",
+    "workflow_family": null,
+    "subflow": null
+  },
+  "experience": {
+    "entry_label": "Hỗ trợ y tế và bảo hiểm",
+    "overview_summary": "Thủ tục này thuộc nhóm y tế, thường cần đối chiếu thông tin người bệnh, đơn vị tiếp nhận hoặc quyền lợi chuyên ngành. Kết quả thường nhận được là Giấy chứng nhận đủ điều kiện kinh doanh dược, Giấy chứng nhận thực hành tốt (nếu cơ sở đề nghị), Văn bản thông báo kết quả. Thời gian xử lý tham khảo: 30 ngày.",
+    "next_step_summary": "Nên xác định rõ đối tượng tham gia, quyền lợi hoặc nhu cầu điều chỉnh hồ sơ y tế trước khi nộp. Có thể chọn kênh nộp phù hợp: Trực tuyến, Dịch vụ bưu chính. Hiện có khoảng 5 mục giấy tờ cần theo dõi trong checklist.",
+    "tone": "supportive_public_service"
+  },
+  "guidance": {
+    "highlight_documents": [
+      {
+        "bucket": "required",
+        "name": "Đơn đề nghị cấp Giấy chứng nhận đủ điều kiện kinh doanh dược",
+        "conditions": [],
+        "attachment_path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/1_014076/Mus10.docx"
+      },
+      {
+        "bucket": "required",
+        "name": "Giấy chứng nhận đăng ký doanh nghiệp hoặc tài liệu pháp lý chứng minh việc thành lập cơ sở",
+        "conditions": [],
+        "attachment_path": null
+      },
+      {
+        "bucket": "required",
+        "name": "Tài liệu kỹ thuật quy định tại điểm b khoản 1 Điều 38 của Luật Dược bao gồm các tài liệu sau: - Đối với cơ sở bán buôn thuốc, nguyên liệu làm thuốc: Tài liệu về cơ sở vật chất, tài liệu chuyên môn kỹ thuật và nhân sự theo nguyên tắc Thực hành tốt phân phối thuốc, nguyên liệu làm thuốc; - Đối với cơ sở bán lẻ thuốc: Tài liệu về cơ sở vật chất, tài liệu chuyên môn kỹ thuật và nhân sự theo nguyên tắc Thực hành tốt cơ sở bán lẻ thuốc. Đối với cơ sở chuyên bán lẻ dược liệu, thuốc dược liệu, thuốc cổ truyền: Tài liệu chứng minh việc đáp ứng quy định tại khoản 5 Điều 19 của Nghị định số 163/2025/NĐ-CP.",
+        "conditions": [],
+        "attachment_path": null
+      },
+      {
+        "bucket": "required",
+        "name": "Chứng chỉ hành nghề dược",
+        "conditions": [],
+        "attachment_path": null
+      },
+      {
+        "bucket": "conditional",
+        "name": "Tài liệu thuyết minh cơ sở đáp ứng các biện pháp bảo đảm an ninh, không thất thoát thuốc phải kiểm soát đặc biệt theo Mẫu số 11 tại Phụ lục II ban hành kèm theo Nghị định số 163/2025/NĐ-CP. (Chỉ áp dụng đối với trường hợp cơ sở có đề nghị cho phép kinh doanh thuốc phải kiểm soát đặc biệt)",
+        "conditions": [
+          "Tài liệu thuyết minh cơ sở đáp ứng các biện pháp bảo đảm an ninh, không thất thoát thuốc phải kiểm soát đặc biệt theo Mẫu số 11 tại Phụ lục II ban hành kèm theo Nghị định số 163/2025/NĐ-CP. (Chỉ áp dụng đối với trường hợp cơ sở có đề nghị cho phép kinh doanh thuốc phải kiểm soát đặc biệt)"
+        ],
+        "attachment_path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/1_014076/Mus11.docx"
+      }
+    ],
+    "special_cases": [
+      "Có thể cần đối chiếu thông tin thửa đất hoặc giấy chứng nhận"
+    ],
+    "common_errors": [
+      "Điền sai mẫu tờ khai hoặc chọn sai biểu mẫu đi kèm.",
+      "Thông tin thửa đất, tài sản hoặc giấy chứng nhận chưa khớp với hồ sơ hiện có."
+    ],
+    "validation_hints": [
+      "Nên xác định trước kênh nộp hồ sơ để biết có cần bản giấy, bản điện tử hay xuất trình trực tiếp.",
+      "Có mẫu biểu đính kèm, nên kiểm tra đúng biểu mẫu trước khi nộp.",
+      "Nên xác định đúng nhóm đối tượng, mã số bảo hiểm và quyền lợi áp dụng trước khi nộp."
+    ]
+  },
+  "intake": {
+    "candidate_input_fields": [
+      {
+        "field_id": "request_subject",
+        "label": "Đối tượng làm thủ tục",
+        "field_type": "text",
+        "required": true
+      },
+      {
+        "field_id": "insurance_or_medical_need",
+        "label": "Nhu cầu bảo hiểm hoặc y tế",
+        "field_type": "text",
+        "required": true
+      },
+      {
+        "field_id": "submission_channel_preference",
+        "label": "Kênh nộp dự kiến",
+        "field_type": "enum",
+        "required": false
+      },
+      {
+        "field_id": "has_insurance_number",
+        "label": "Đã có mã BHXH/BHYT",
+        "field_type": "boolean",
+        "required": false
+      }
+    ],
+    "suggested_clarifying_questions": [
+      "Bạn đang muốn đăng ký, điều chỉnh hay xác nhận quyền lợi y tế hoặc bảo hiểm nào?",
+      "Bạn đã có mã BHXH/BHYT hoặc thông tin đơn vị tiếp nhận liên quan chưa?"
+    ]
+  },
+  "ui_hints": {
+    "primary_channel": "online",
+    "result_label": "Giấy chứng nhận đủ điều kiện kinh doanh dược, Giấy chứng nhận thực hành tốt (nếu cơ sở đề nghị), Văn bản thông báo kết quả",
+    "time_badge": "30 ngày",
+    "document_count_badge": 5
+  },
+  "provenance": {
+    "generator": "workflow_domain_enricher",
+    "derivation_mode": "rule_based_semantic_enrichment",
+    "supported_group": true
+  }
+}

@@ -1,0 +1,491 @@
+{
+  "schema_version": "3.0",
+  "record_type": "public_service_procedure_payload",
+  "id": "procedure-1.014140",
+  "procedure_code": "1.014140",
+  "code": "1.014140",
+  "title": "Thủ tục thanh toán trực tiếp chi phí khám bệnh, chữa bệnh giữa cơ quan bảo hiểm xã hội và người tham gia bảo hiểm y tế",
+  "language": "vi",
+  "status": "generated_from_pipeline",
+  "field": "Bảo hiểm y tế",
+  "group_key": "suc_khoe_y_te",
+  "workflow_family": null,
+  "subflow": null,
+  "source": {
+    "source_url": "file:///C:/Users/ku060/Downloads/VAIC%20source/data-pipeline/raw_data/1_014140/1_014140_procedure_detail.md",
+    "source_markdown_path": "C:\\Users\\ku060\\Downloads\\VAIC source\\data-pipeline\\raw_data\\1_014140\\1_014140_procedure_detail.md",
+    "normalized_payload_path": "C:\\Users\\ku060\\Downloads\\VAIC source\\data-pipeline\\govease-unified\\data\\normalized_structured\\1_014140_normalized_structured.json",
+    "enriched_payload_path": "C:\\Users\\ku060\\Downloads\\VAIC source\\data-pipeline\\govease-unified\\data\\enriched_structured_priority\\1_014140_enriched_structured.json"
+  },
+  "scope": {
+    "included": "Thủ tục này thuộc nhóm y tế và bảo hiểm, thường dùng để đăng ký, điều chỉnh hoặc xác nhận quyền lợi bảo hiểm y tế. Kết quả thường nhận được là Người bệnh hoặc thân nhân của người bệnh nhận được chi phí thanh toán trực tiếp bằng tiền mặt hoặc chuyển khoản theo số tài khoản của người bệnh được cung cấp tại văn bản đề nghị thanh toán trực tiếp. Thời gian xử lý tham khảo: 25 ngày.",
+    "not_included": []
+  },
+  "agency": {
+    "executing_agency": "Bảo hiểm xã hội tỉnh",
+    "submission_place": null,
+    "receiving_places": []
+  },
+  "target_users": [
+    "Công dân Việt Nam"
+  ],
+  "submission_methods": [
+    {
+      "code": "IN_PERSON",
+      "label": "Trực tiếp",
+      "processing_time": "25 ngày",
+      "fee": null,
+      "description": "1. Trường hợp không có yêu cầu sửa đổi, bổ sung hồ sơ: 25 ngày kể từ ngày nhận đủ hồ sơ hợp lệ."
+    },
+    {
+      "code": "IN_PERSON",
+      "label": "Trực tiếp",
+      "processing_time": "5 ngày làm việc",
+      "fee": null,
+      "description": "2. Trường hợp yêu cầu sửa đổi, bổ sung hồ sơ: - Trong thời hạn 05 ngày làm việc, kể từ ngày nhận hồ sơ (trường hợp nộp hồ sơ bản giấy căn cứ theo ngày ghi trên dấu công văn đến hoặc giấy tiếp nhận hồ sơ), cơ quan bảo hiểm xã hội phải có văn bản ghi cụ thể nội dung cần sửa đổi, bổ sung gửi người bệnh hoặc thân nhân của người bệnh. - Trong thời hạn 20 ngày kể từ ngày nhận được văn bản yêu cầu sửa đổi, bổ sung (trường hợp nộp hồ sơ bản giấy căn cứ theo ngày ghi trên dấu công văn đến hoặc giấy tiếp nhận hồ sơ), người bệnh hoặc thân nhân của người bệnh có trách nhiệm sửa đổi, bổ sung hồ sơ và gửi cơ quan bảo hiểm xã hội để xem xét. - Trong thời hạn 20 ngày, kể từ ngày nhận hồ sơ sửa đổi, bổ sung đáp ứng đủ điều kiện theo quy định (trường hợp nộp hồ sơ bản giấy căn cứ theo ngày ghi trên dấu công văn đến hoặc giấy tiếp nhận hồ sơ), cơ quan bảo hiểm xã hội phải thực hiện thanh toán chi phí cho người bệnh"
+    },
+    {
+      "code": "IN_PERSON",
+      "label": "Trực tiếp",
+      "processing_time": "50 ngày",
+      "fee": null,
+      "description": "3. Trường hợp thanh toán cơ quan, tổ chức, người sử dụng lao động chậm đóng, trốn đóng bảo hiểm y tế hoàn trả chi phí khám bệnh, chữa bệnh bảo hiểm y tế cho người lao động: Trong thời hạn 40 ngày kể từ ngày nhận đủ hồ sơ đề nghị thanh toán."
+    },
+    {
+      "code": "ONLINE",
+      "label": "Trực tuyến",
+      "processing_time": "25 ngày",
+      "fee": null,
+      "description": "1. Trường hợp không có yêu cầu sửa đổi, bổ sung hồ sơ: 25 ngày kể từ ngày nhận đủ hồ sơ hợp lệ."
+    },
+    {
+      "code": "ONLINE",
+      "label": "Trực tuyến",
+      "processing_time": "5 ngày làm việc",
+      "fee": null,
+      "description": "2. Trường hợp yêu cầu sửa đổi, bổ sung hồ sơ: - Trong thời hạn 05 ngày làm việc, kể từ ngày nhận hồ sơ (trường hợp nộp hồ sơ bản giấy căn cứ theo ngày ghi trên dấu công văn đến hoặc giấy tiếp nhận hồ sơ), cơ quan bảo hiểm xã hội phải có văn bản ghi cụ thể nội dung cần sửa đổi, bổ sung gửi người bệnh hoặc thân nhân của người bệnh. - Trong thời hạn 20 ngày kể từ ngày nhận được văn bản yêu cầu sửa đổi, bổ sung (trường hợp nộp hồ sơ bản giấy căn cứ theo ngày ghi trên dấu công văn đến hoặc giấy tiếp nhận hồ sơ), người bệnh hoặc thân nhân của người bệnh có trách nhiệm sửa đổi, bổ sung hồ sơ và gửi cơ quan bảo hiểm xã hội để xem xét. - Trong thời hạn 20 ngày, kể từ ngày nhận hồ sơ sửa đổi, bổ sung đáp ứng đủ điều kiện theo quy định (trường hợp nộp hồ sơ bản giấy căn cứ theo ngày ghi trên dấu công văn đến hoặc giấy tiếp nhận hồ sơ), cơ quan bảo hiểm xã hội phải thực hiện thanh toán chi phí cho người bệnh"
+    },
+    {
+      "code": "ONLINE",
+      "label": "Trực tuyến",
+      "processing_time": "50 ngày",
+      "fee": null,
+      "description": "3. Trường hợp thanh toán cơ quan, tổ chức, người sử dụng lao động chậm đóng, trốn đóng bảo hiểm y tế hoàn trả chi phí khám bệnh, chữa bệnh bảo hiểm y tế cho người lao động: Trong thời hạn 40 ngày kể từ ngày nhận đủ hồ sơ đề nghị thanh toán."
+    }
+  ],
+  "processing_note": "Thời gian xử lý tham chiếu: 25 ngày. Nên xác định rõ đối tượng tham gia, quyền lợi hoặc nhu cầu điều chỉnh hồ sơ y tế trước khi nộp. Có thể chọn kênh nộp phù hợp: Trực tiếp, Trực tuyến. Hiện có khoảng 7 mục giấy tờ cần theo dõi trong checklist.",
+  "documents": {
+    "normally_required": [
+      {
+        "name": "Văn bản đề nghị thanh toán trực tiếp theo Mẫu số 10 Phụ lục ban hành kèm theo Nghị định số 188/2025/NĐ-CP",
+        "quantity": "1 bản chính, 0 bản sao",
+        "notes": [],
+        "group": "default",
+        "attachment_path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/1_014140/BYT.%20QD%202306.2025%20M%E1%BA%ABu%20s%E1%BB%91%2010.docx"
+      },
+      {
+        "name": "Hóa đơn và bảng kê chi phí",
+        "quantity": "1 bản chính, 0 bản sao",
+        "notes": [],
+        "group": "default",
+        "attachment_path": null
+      }
+    ],
+    "conditional": [
+      {
+        "condition": "Bản chụp của thẻ bảo hiểm y tế hoặc mã số bảo hiểm y tế đối với trường hợp có thông tin về thẻ bảo hiểm y tế bản điện tử, giấy chứng minh nhân thân theo quy định",
+        "document": "Bản chụp của thẻ bảo hiểm y tế hoặc mã số bảo hiểm y tế đối với trường hợp có thông tin về thẻ bảo hiểm y tế bản điện tử, giấy chứng minh nhân thân theo quy định",
+        "quantity": "1 bản chính, 0 bản sao",
+        "notes": [],
+        "attachment_path": null
+      },
+      {
+        "condition": "Bảng kê chi phí xác định số tiền người bệnh đã thanh toán cho cơ sở khám bệnh, chữa bệnh kèm theo hoá đơn hợp pháp (do cơ sở khám bệnh, chữa bệnh cung cấp đối với đề nghị thanh toán chi phí khám bệnh, chữa bệnh bảo hiểm y tế cho người lao động trong trường hợp cơ quan, tổ chức, người sử dụng lao động chậm đóng, trốn đóng bảo hiểm y tế)",
+        "document": "Bảng kê chi phí xác định số tiền người bệnh đã thanh toán cho cơ sở khám bệnh, chữa bệnh kèm theo hoá đơn hợp pháp (do cơ sở khám bệnh, chữa bệnh cung cấp đối với đề nghị thanh toán chi phí khám bệnh, chữa bệnh bảo hiểm y tế cho người lao động trong trường hợp cơ quan, tổ chức, người sử dụng lao động chậm đóng, trốn đóng bảo hiểm y tế)",
+        "quantity": "1 bản chính, 0 bản sao",
+        "notes": [],
+        "attachment_path": null
+      },
+      {
+        "condition": "Phiếu chỉ định thiết bị y tế cho người bệnh trong trường hợp chỉ định thiết bị y tế (đối với trường hợp đề nghị thanh toán trực tiếp khi người bệnh tự mua thuốc, thiết bị y tế)",
+        "document": "Phiếu chỉ định thiết bị y tế cho người bệnh trong trường hợp chỉ định thiết bị y tế (đối với trường hợp đề nghị thanh toán trực tiếp khi người bệnh tự mua thuốc, thiết bị y tế)",
+        "quantity": "1 bản chính, 0 bản sao",
+        "notes": [],
+        "attachment_path": null
+      },
+      {
+        "condition": "Phiếu xác nhận tình trạng thiếu thuốc, thiết bị y tế theo quy định tại Mẫu số 11 Phụ lục ban hành kèm theo Nghị định số 188/2025/NĐ-CP của Chính phủ (cơ sở khám bệnh, chữa bệnh cấp cho người bệnh đối với trường hợp đề nghị thanh toán trực tiếp khi người bệnh tự mua thuốc, thiết bị y tế)",
+        "document": "Phiếu xác nhận tình trạng thiếu thuốc, thiết bị y tế theo quy định tại Mẫu số 11 Phụ lục ban hành kèm theo Nghị định số 188/2025/NĐ-CP của Chính phủ (cơ sở khám bệnh, chữa bệnh cấp cho người bệnh đối với trường hợp đề nghị thanh toán trực tiếp khi người bệnh tự mua thuốc, thiết bị y tế)",
+        "quantity": "1 bản chính, 0 bản sao",
+        "notes": [],
+        "attachment_path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/1_014140/BYT%20QD%202306.%202025%20M%E1%BA%ABu%20s%E1%BB%91%2011.docx"
+      },
+      {
+        "condition": "Bản chụp của thẻ BHYT có mức hưởng cũ và thẻ BHYT có mức hưởng mới cao hơn (đối với trường hợp đề nghị thanh toán trực tiếp do thay đổi mức hưởng của thẻ bảo hiểm y tế theo quy định tại khoản 5 Điều 54 của Nghị định số 188/2025/NĐ-CP ngày 01 tháng 7 năm 2025 của Chính phủ).",
+        "document": "Bản chụp của thẻ BHYT có mức hưởng cũ và thẻ BHYT có mức hưởng mới cao hơn (đối với trường hợp đề nghị thanh toán trực tiếp do thay đổi mức hưởng của thẻ bảo hiểm y tế theo quy định tại khoản 5 Điều 54 của Nghị định số 188/2025/NĐ-CP ngày 01 tháng 7 năm 2025 của Chính phủ).",
+        "quantity": "1 bản chính, 0 bản sao",
+        "notes": [],
+        "attachment_path": null
+      }
+    ],
+    "forms": [
+      {
+        "name": "Phiếu xác nhận tình trạng thiếu thuốc, thiết bị y tế theo quy định tại Mẫu số 11 Phụ lục ban hành kèm theo Nghị định số 188/2025/NĐ-CP của Chính phủ (cơ sở khám bệnh, chữa bệnh cấp cho người bệnh đối với trường hợp đề nghị thanh toán trực tiếp khi người bệnh tự mua thuốc, thiết bị y tế)",
+        "attachment_label": "BYT QD 2306. 2025 Mẫu số 11.docx",
+        "attachment_path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/1_014140/BYT%20QD%202306.%202025%20M%E1%BA%ABu%20s%E1%BB%91%2011.docx"
+      },
+      {
+        "name": "Văn bản đề nghị thanh toán trực tiếp theo Mẫu số 10 Phụ lục ban hành kèm theo Nghị định số 188/2025/NĐ-CP",
+        "attachment_label": "BYT. QD 2306.2025 Mẫu số 10.docx",
+        "attachment_path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/1_014140/BYT.%20QD%202306.2025%20M%E1%BA%ABu%20s%E1%BB%91%2010.docx"
+      }
+    ],
+    "presented": [],
+    "notes": [
+      "Bản chụp (có dấu treo của cơ sở khám bệnh, chữa bệnh) của giấy ra viện hoặc phiếu khám bệnh hoặc sổ khám bệnh của lần khám bệnh, chữa bệnh đề nghị thanh toán"
+    ],
+    "summary": [
+      {
+        "group": "default",
+        "name": "Văn bản đề nghị thanh toán trực tiếp theo Mẫu số 10 Phụ lục ban hành kèm theo Nghị định số 188/2025/NĐ-CP",
+        "quantity": "1 bản chính, 0 bản sao",
+        "notes": [],
+        "attachment_path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/1_014140/BYT.%20QD%202306.2025%20M%E1%BA%ABu%20s%E1%BB%91%2010.docx"
+      },
+      {
+        "group": "default",
+        "name": "Hóa đơn và bảng kê chi phí",
+        "quantity": "1 bản chính, 0 bản sao",
+        "notes": [],
+        "attachment_path": null
+      },
+      {
+        "group": null,
+        "name": null,
+        "quantity": "1 bản chính, 0 bản sao",
+        "notes": [],
+        "attachment_path": null
+      },
+      {
+        "group": null,
+        "name": null,
+        "quantity": "1 bản chính, 0 bản sao",
+        "notes": [],
+        "attachment_path": null
+      },
+      {
+        "group": null,
+        "name": null,
+        "quantity": "1 bản chính, 0 bản sao",
+        "notes": [],
+        "attachment_path": null
+      },
+      {
+        "group": null,
+        "name": null,
+        "quantity": "1 bản chính, 0 bản sao",
+        "notes": [],
+        "attachment_path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/1_014140/BYT%20QD%202306.%202025%20M%E1%BA%ABu%20s%E1%BB%91%2011.docx"
+      },
+      {
+        "group": null,
+        "name": null,
+        "quantity": "1 bản chính, 0 bản sao",
+        "notes": [],
+        "attachment_path": null
+      },
+      {
+        "group": null,
+        "name": "Phiếu xác nhận tình trạng thiếu thuốc, thiết bị y tế theo quy định tại Mẫu số 11 Phụ lục ban hành kèm theo Nghị định số 188/2025/NĐ-CP của Chính phủ (cơ sở khám bệnh, chữa bệnh cấp cho người bệnh đối với trường hợp đề nghị thanh toán trực tiếp khi người bệnh tự mua thuốc, thiết bị y tế)",
+        "quantity": null,
+        "notes": null,
+        "attachment_path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/1_014140/BYT%20QD%202306.%202025%20M%E1%BA%ABu%20s%E1%BB%91%2011.docx"
+      },
+      {
+        "group": null,
+        "name": "Văn bản đề nghị thanh toán trực tiếp theo Mẫu số 10 Phụ lục ban hành kèm theo Nghị định số 188/2025/NĐ-CP",
+        "quantity": null,
+        "notes": null,
+        "attachment_path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/1_014140/BYT.%20QD%202306.2025%20M%E1%BA%ABu%20s%E1%BB%91%2010.docx"
+      }
+    ]
+  },
+  "steps": [
+    {
+      "order": 1,
+      "title": "Bước 1",
+      "description": "1. **Trường hợp người tham gia bảo hiểm y tế đề nghị cơ quan bảo hiểm xã hội thanh toán trực tiếp chi phí khám bệnh, chữa bệnh bảo hiểm y tế**",
+      "example": "trực tiếp"
+    },
+    {
+      "order": 2,
+      "title": "Bước 1:",
+      "description": "Bước 1: Người bệnh hoặc thân nhân của người bệnh kê khai đầy đủ thông tin theo văn bản đề nghị thanh toán trực tiếp, đồng thời nộp hồ sơ theo quy định tại các khoản 2, 3 và 4 Điều 55 của Nghị định số 188/2025/NĐ-CP cho cơ quan bảo hiểm xã hội nơi ký hợp đồng khám bệnh, chữa bệnh bảo hiểm y tế với cơ sở khám bệnh, chữa bệnh nơi bệnh nhân điều trị.",
+      "example": "trực tiếp"
+    },
+    {
+      "order": 3,
+      "title": "Bước 2:",
+      "description": "Bước 2: Cổng dịch vụ công quốc gia hoặc ứng dụng của cơ quan bảo hiểm xã hội hoặc cán bộ tiếp nhận hồ sơ trả Giấy tiếp nhận hồ sơ và hẹn trả kết quả thanh toán trực tiếp cho người bệnh hoặc thân nhân của người bệnh.",
+      "example": "trực tiếp"
+    },
+    {
+      "order": 4,
+      "title": "Bước 3:",
+      "description": "Bước 3: - Trường hợp không có yêu cầu sửa đổi, bổ sung hồ sơ, trong thời hạn 25 ngày, kể từ ngày nhận đủ hồ sơ hợp lệ (trường hợp nộp hồ sơ bản giấy căn cứ theo ngày ghi trên dấu công văn đến hoặc giấy tiếp nhận hồ sơ), cơ quan bảo hiểm xã hội phải hoàn thành việc giám định bảo hiểm y tế và thanh toán chi phí cho người bệnh. - Trường hợp có yêu cầu sửa đổi, bổ sung hồ sơ được thực hiện như sau: + Trong thời hạn 05 ngày làm việc, kể từ ngày nhận hồ sơ (trường hợp nộp hồ sơ bản giấy căn cứ theo ngày ghi trên dấu công văn đến hoặc giấy tiếp nhận hồ sơ), cơ quan bảo hiểm xã hội phải có văn bản ghi cụ thể nội dung cần sửa đổi, bổ sung gửi người bệnh hoặc thân nhân của người bệnh. + Trong thời hạn 20 ngày kể từ ngày nhận được văn bản yêu cầu sửa đổi, bổ sung (trường hợp nộp hồ sơ bản giấy căn cứ theo ngày ghi trên dấu công văn đến hoặc giấy tiếp nhận hồ sơ), người bệnh hoặc thân nhân của người bệnh có trách nhiệm sửa đổi, bổ sung hồ sơ và gửi cơ quan bảo hiểm xã hội để xem xét. + Trong thời hạn 20 ngày, kể từ ngày nhận hồ sơ sửa đổi, bổ sung đáp ứng đủ điều kiện theo quy định (trường hợp nộp hồ sơ bản giấy căn cứ theo ngày ghi trên dấu công văn đến hoặc giấy tiếp nhận hồ sơ), cơ quan bảo hiểm xã hội phải thực hiện thanh toán chi phí cho người bệnh. Chi phí thanh toán trực tiếp bằng tiền mặt hoặc chuyển khoản theo số tài khoản của người bệnh được cung cấp tại văn bản đề nghị thanh toán trực tiếp. 2. **Trường hợp cơ quan, tổ chức, người sử dụng lao động chậm đóng, trốn đóng bảo hiểm y tế hoàn trả chi phí khám bệnh, chữa bệnh bảo hiểm y tế cho người lao động** +",
+      "example": "25 ngày"
+    },
+    {
+      "order": 5,
+      "title": "Bước 1:",
+      "description": "Bước 1: Người lao động hoặc thân nhân hoặc người đại diện hợp pháp theo quy định của pháp luật của người lao động trực tiếp nộp hồ sơ theo thành phần quy định tại các khoản 2, 3 và 4 Điều 55 của Nghị định số 188/2025/NĐ-CP và bảng kê chi phí xác định số tiền người bệnh đã thanh toán cho cơ sở khám bệnh, chữa bệnh kèm theo hoá đơn hợp pháp do cơ sở khám bệnh, chữa bệnh cung cấp cho cơ quan, tổ chức, người sử dụng lao động chậm đóng, trốn đóng bảo hiểm y tế. +",
+      "example": "trực tiếp"
+    },
+    {
+      "order": 6,
+      "title": "Bước 2:",
+      "description": "Bước 2: Trong thời hạn 40 ngày kể từ ngày nhận đủ hồ sơ đề nghị thanh toán, cơ quan, tổ chức, người sử dụng lao động có trách nhiệm phải thanh toán chi phí khám bệnh, chữa bệnh cho người lao động hoặc thân nhân hoặc người đại diện hợp pháp theo quy định của pháp luật của người lao động.",
+      "example": "40 ngày"
+    }
+  ],
+  "input_fields": [
+    {
+      "field": "request_subject",
+      "label": "Đối tượng làm thủ tục",
+      "type": "string",
+      "required": true
+    },
+    {
+      "field": "insurance_or_medical_need",
+      "label": "Nhu cầu bảo hiểm hoặc y tế",
+      "type": "string",
+      "required": true
+    },
+    {
+      "field": "submission_channel_preference",
+      "label": "Kênh nộp dự kiến",
+      "type": "enum",
+      "required": false,
+      "options": [
+        "Trực tiếp",
+        "Trực tuyến"
+      ]
+    },
+    {
+      "field": "has_insurance_number",
+      "label": "Đã có mã BHXH/BHYT",
+      "type": "boolean",
+      "required": false
+    },
+    {
+      "field": "insurance_participation_group",
+      "label": "Nhóm tham gia BHYT",
+      "type": "enum",
+      "required": true
+    }
+  ],
+  "validation_rules": [
+    {
+      "id": "required-1",
+      "severity": "error",
+      "field": "request_subject",
+      "rule": "Trường bắt buộc phải có dữ liệu hợp lệ trước khi nộp.",
+      "message": "Thiếu trường bắt buộc: Đối tượng làm thủ tục."
+    },
+    {
+      "id": "required-2",
+      "severity": "error",
+      "field": "insurance_or_medical_need",
+      "rule": "Trường bắt buộc phải có dữ liệu hợp lệ trước khi nộp.",
+      "message": "Thiếu trường bắt buộc: Nhu cầu bảo hiểm hoặc y tế."
+    },
+    {
+      "id": "required-5",
+      "severity": "error",
+      "field": "insurance_participation_group",
+      "rule": "Trường bắt buộc phải có dữ liệu hợp lệ trước khi nộp.",
+      "message": "Thiếu trường bắt buộc: Nhóm tham gia BHYT."
+    },
+    {
+      "id": "hint-1",
+      "severity": "warning",
+      "field": "general",
+      "rule": "Nên xác định trước kênh nộp hồ sơ để biết có cần bản giấy, bản điện tử hay xuất trình trực tiếp.",
+      "message": "Nên xác định trước kênh nộp hồ sơ để biết có cần bản giấy, bản điện tử hay xuất trình trực tiếp."
+    },
+    {
+      "id": "hint-2",
+      "severity": "warning",
+      "field": "general",
+      "rule": "Có mẫu biểu đính kèm, nên kiểm tra đúng biểu mẫu trước khi nộp.",
+      "message": "Có mẫu biểu đính kèm, nên kiểm tra đúng biểu mẫu trước khi nộp."
+    },
+    {
+      "id": "hint-3",
+      "severity": "warning",
+      "field": "general",
+      "rule": "Nên xác định đúng nhóm đối tượng, mã số bảo hiểm và quyền lợi áp dụng trước khi nộp.",
+      "message": "Nên xác định đúng nhóm đối tượng, mã số bảo hiểm và quyền lợi áp dụng trước khi nộp."
+    }
+  ],
+  "common_errors": [
+    {
+      "field": "general",
+      "issue": "Điền sai mẫu tờ khai hoặc chọn sai biểu mẫu đi kèm.",
+      "fix": "Nên xác định trước kênh nộp hồ sơ để biết có cần bản giấy, bản điện tử hay xuất trình trực tiếp."
+    },
+    {
+      "field": "general",
+      "issue": "Sai nhóm đối tượng tham gia hoặc thông tin quyền lợi bảo hiểm y tế.",
+      "fix": "Nên xác định trước kênh nộp hồ sơ để biết có cần bản giấy, bản điện tử hay xuất trình trực tiếp."
+    },
+    {
+      "field": "general",
+      "issue": "Thiếu hồ sơ về vị trí việc làm, đơn vị sử dụng lao động hoặc điều kiện làm việc áp dụng.",
+      "fix": "Nên xác định trước kênh nộp hồ sơ để biết có cần bản giấy, bản điện tử hay xuất trình trực tiếp."
+    }
+  ],
+  "clarifying_questions": [
+    {
+      "id": "clarify_1",
+      "question": "Bạn đang muốn đăng ký, điều chỉnh hay xác nhận quyền lợi y tế hoặc bảo hiểm nào?",
+      "purpose": "workflow_intake"
+    },
+    {
+      "id": "clarify_2",
+      "question": "Bạn đã có mã BHXH/BHYT hoặc thông tin đơn vị tiếp nhận liên quan chưa?",
+      "purpose": "workflow_intake"
+    }
+  ],
+  "legal_basis": [
+    {
+      "title": "Luật 25/2008/QH12 - Bảo hiểm y tế",
+      "code": "25/2008/QH12"
+    },
+    {
+      "title": "Luật số 51/2024/QH15 ngày 27/11/2024 của Quốc hội sửa đổi, bổ sung một số điều của Luật Bảo hiểm y tế",
+      "code": "51/2024/QH15"
+    },
+    {
+      "title": "Nghị định quy định chi tiết và hướng dẫn thi hành một số điều của Luật Bảo hiểm y tế (188/2025/NĐ-CP ngày 01/7/2025)",
+      "code": "188/2025/NĐ-CP"
+    },
+    {
+      "title": "46/2014/QH13 Sửa đổi, bổ sung một số điều của Luật Bảo hiểm y tế",
+      "code": "Luật 46/2014/QH13"
+    }
+  ],
+  "legal_bases": [
+    {
+      "title": "Luật 25/2008/QH12 - Bảo hiểm y tế",
+      "code": "25/2008/QH12"
+    },
+    {
+      "title": "Luật số 51/2024/QH15 ngày 27/11/2024 của Quốc hội sửa đổi, bổ sung một số điều của Luật Bảo hiểm y tế",
+      "code": "51/2024/QH15"
+    },
+    {
+      "title": "Nghị định quy định chi tiết và hướng dẫn thi hành một số điều của Luật Bảo hiểm y tế (188/2025/NĐ-CP ngày 01/7/2025)",
+      "code": "188/2025/NĐ-CP"
+    },
+    {
+      "title": "46/2014/QH13 Sửa đổi, bổ sung một số điều của Luật Bảo hiểm y tế",
+      "code": "Luật 46/2014/QH13"
+    }
+  ],
+  "faq": [
+    {
+      "question": "Có thể nộp qua kênh nào?",
+      "answer": "Các kênh hiện có: Trực tiếp, Trực tuyến."
+    },
+    {
+      "question": "Thời gian xử lý tham chiếu là bao lâu?",
+      "answer": "Thời gian xử lý tham chiếu hiện có là 25 ngày."
+    },
+    {
+      "question": "Kết quả chính của thủ tục là gì?",
+      "answer": "Kết quả chính được trích xuất là Người bệnh hoặc thân nhân của người bệnh nhận được chi phí thanh toán trực tiếp bằng tiền mặt hoặc chuyển khoản theo số tài khoản của người bệnh được cung cấp tại văn bản đề nghị thanh toán trực tiếp."
+    }
+  ],
+  "guidance": {
+    "highlight_documents": [
+      {
+        "bucket": "required",
+        "name": "Văn bản đề nghị thanh toán trực tiếp theo Mẫu số 10 Phụ lục ban hành kèm theo Nghị định số 188/2025/NĐ-CP",
+        "conditions": [],
+        "attachment_path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/1_014140/BYT.%20QD%202306.2025%20M%E1%BA%ABu%20s%E1%BB%91%2010.docx"
+      },
+      {
+        "bucket": "required",
+        "name": "Hóa đơn và bảng kê chi phí",
+        "conditions": [],
+        "attachment_path": null
+      },
+      {
+        "bucket": "conditional",
+        "name": "Bản chụp của thẻ bảo hiểm y tế hoặc mã số bảo hiểm y tế đối với trường hợp có thông tin về thẻ bảo hiểm y tế bản điện tử, giấy chứng minh nhân thân theo quy định",
+        "conditions": [
+          "Bản chụp của thẻ bảo hiểm y tế hoặc mã số bảo hiểm y tế đối với trường hợp có thông tin về thẻ bảo hiểm y tế bản điện tử, giấy chứng minh nhân thân theo quy định"
+        ],
+        "attachment_path": null
+      },
+      {
+        "bucket": "conditional",
+        "name": "Bảng kê chi phí xác định số tiền người bệnh đã thanh toán cho cơ sở khám bệnh, chữa bệnh kèm theo hoá đơn hợp pháp (do cơ sở khám bệnh, chữa bệnh cung cấp đối với đề nghị thanh toán chi phí khám bệnh, chữa bệnh bảo hiểm y tế cho người lao động trong trường hợp cơ quan, tổ chức, người sử dụng lao động chậm đóng, trốn đóng bảo hiểm y tế)",
+        "conditions": [
+          "Bảng kê chi phí xác định số tiền người bệnh đã thanh toán cho cơ sở khám bệnh, chữa bệnh kèm theo hoá đơn hợp pháp (do cơ sở khám bệnh, chữa bệnh cung cấp đối với đề nghị thanh toán chi phí khám bệnh, chữa bệnh bảo hiểm y tế cho người lao động trong trường hợp cơ quan, tổ chức, người sử dụng lao động chậm đóng, trốn đóng bảo hiểm y tế)"
+        ],
+        "attachment_path": null
+      },
+      {
+        "bucket": "conditional",
+        "name": "Phiếu chỉ định thiết bị y tế cho người bệnh trong trường hợp chỉ định thiết bị y tế (đối với trường hợp đề nghị thanh toán trực tiếp khi người bệnh tự mua thuốc, thiết bị y tế)",
+        "conditions": [
+          "Phiếu chỉ định thiết bị y tế cho người bệnh trong trường hợp chỉ định thiết bị y tế (đối với trường hợp đề nghị thanh toán trực tiếp khi người bệnh tự mua thuốc, thiết bị y tế)"
+        ],
+        "attachment_path": null
+      },
+      {
+        "bucket": "conditional",
+        "name": "Phiếu xác nhận tình trạng thiếu thuốc, thiết bị y tế theo quy định tại Mẫu số 11 Phụ lục ban hành kèm theo Nghị định số 188/2025/NĐ-CP của Chính phủ (cơ sở khám bệnh, chữa bệnh cấp cho người bệnh đối với trường hợp đề nghị thanh toán trực tiếp khi người bệnh tự mua thuốc, thiết bị y tế)",
+        "conditions": [
+          "Phiếu xác nhận tình trạng thiếu thuốc, thiết bị y tế theo quy định tại Mẫu số 11 Phụ lục ban hành kèm theo Nghị định số 188/2025/NĐ-CP của Chính phủ (cơ sở khám bệnh, chữa bệnh cấp cho người bệnh đối với trường hợp đề nghị thanh toán trực tiếp khi người bệnh tự mua thuốc, thiết bị y tế)"
+        ],
+        "attachment_path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/1_014140/BYT%20QD%202306.%202025%20M%E1%BA%ABu%20s%E1%BB%91%2011.docx"
+      }
+    ],
+    "special_cases": [
+      "Có trường hợp hồ sơ điện tử thay thế bản giấy",
+      "Có thể cần đối chiếu quyền lợi bảo hiểm hoặc tuyến chuyên môn",
+      "Có thể cần xác minh quan hệ lao động hoặc giấy phép làm việc"
+    ],
+    "common_errors": [
+      "Điền sai mẫu tờ khai hoặc chọn sai biểu mẫu đi kèm.",
+      "Sai nhóm đối tượng tham gia hoặc thông tin quyền lợi bảo hiểm y tế.",
+      "Thiếu hồ sơ về vị trí việc làm, đơn vị sử dụng lao động hoặc điều kiện làm việc áp dụng."
+    ],
+    "validation_hints": [
+      "Nên xác định trước kênh nộp hồ sơ để biết có cần bản giấy, bản điện tử hay xuất trình trực tiếp.",
+      "Có mẫu biểu đính kèm, nên kiểm tra đúng biểu mẫu trước khi nộp.",
+      "Nên xác định đúng nhóm đối tượng, mã số bảo hiểm và quyền lợi áp dụng trước khi nộp."
+    ]
+  },
+  "next_steps": {
+    "summary": "Nên xác định rõ đối tượng tham gia, quyền lợi hoặc nhu cầu điều chỉnh hồ sơ y tế trước khi nộp. Có thể chọn kênh nộp phù hợp: Trực tiếp, Trực tuyến. Hiện có khoảng 7 mục giấy tờ cần theo dõi trong checklist.",
+    "time_badge": "25 ngày",
+    "result_label": "Người bệnh hoặc thân nhân của người bệnh nhận được chi phí thanh toán trực tiếp bằng tiền mặt hoặc chuyển khoản theo số tài khoản của người bệnh được cung cấp tại văn bản đề nghị thanh toán trực tiếp",
+    "primary_channel": "in_person",
+    "channels": [
+      "in_person",
+      "online"
+    ]
+  },
+  "notes": [],
+  "provenance": {
+    "pipeline": "raw->structured->normalized->enriched->ui_api_payload",
+    "normalizer_version": "0.2.0",
+    "enricher_version": "0.2.0",
+    "mapping_notes": "excluded_from_clean_workflow_dataset",
+    "supported_group": true
+  }
+}

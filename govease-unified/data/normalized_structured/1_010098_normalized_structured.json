@@ -1,0 +1,195 @@
+{
+  "schema_version": "1.0",
+  "normalizer_version": "0.2.0",
+  "source": {
+    "procedure_code": "1.010098",
+    "title": "Khai thác thông tin của công dân trong Cơ sở dữ liệu căn cước (thực hiện tại cấp tỉnh)",
+    "raw_structured_parser_version": "0.1.0",
+    "field": "Cấp, quản lý căn cước"
+  },
+  "procedure": {
+    "level": "Cấp tỉnh",
+    "procedure_type": "TTHC được luật giao quy định chi tiết",
+    "target_users": [
+      "Tổ chức (không bao gồm doanh nghiệp",
+      "HTX)",
+      "Hợp tác xã",
+      "Công dân Việt Nam",
+      "Doanh nghiệp",
+      "Tổ chức nước ngoài"
+    ],
+    "authorities": [
+      "Phòng cảnh sát quản lý hành chính về trật tự xã hội"
+    ],
+    "receiving_places": []
+  },
+  "submission": {
+    "channels": [
+      "in_person",
+      "postal"
+    ],
+    "methods": [
+      {
+        "method_id": "method_1",
+        "channel": "postal",
+        "processing_time_text": "3 ngày làm việc",
+        "fee_text": null,
+        "description": "- Nộp hồ sơ qua dịch vụ bưu chính (nếu có); - Thời gian tiếp nhận hồ sơ: Giờ hành chính các ngày làm việc từ thứ 2 đến thứ 6 hàng tuần (trừ các ngày nghỉ lễ, tết theo quy định của pháp luật).",
+        "is_online": false,
+        "is_postal": true,
+        "is_in_person": false
+      },
+      {
+        "method_id": "method_2",
+        "channel": "in_person",
+        "processing_time_text": "3 ngày làm việc",
+        "fee_text": null,
+        "description": "- Nộp hồ sơ trực tiếp tại Cơ quan quản lý căn cước của Công an cấp tỉnh hoặc Trung tâm phục vụ hành chính công tỉnh, thành phố trực thuộc Trung ương (nếu đã triển khai). - Thời gian tiếp nhận hồ sơ: Giờ hành chính các ngày làm việc từ thứ 2 đến thứ 6 hàng tuần (trừ các ngày nghỉ lễ, tết theo quy định của pháp luật).",
+        "is_online": false,
+        "is_postal": false,
+        "is_in_person": true
+      }
+    ],
+    "timing_summary": {
+      "unique_processing_times": [
+        "3 ngày làm việc"
+      ],
+      "method_count": 2
+    }
+  },
+  "documents": {
+    "required": [
+      {
+        "document_id": "phi_u_ngh_gi_i_quy_t_th_t_c_v_c_n_c_c_m_u_dc02_ban_h_nh_k_m_theo_th_ng_t_s_17_2024_tt_bca_c_a_b_c_ng_an",
+        "name": "Phiếu đề nghị giải quyết thủ tục về căn cước (Mẫu DC02 ban hành kèm theo Thông tư số 17/2024/TT-BCA của Bộ Công an)",
+        "group_name": "Trong phiếu nêu rõ mục đích, nội dung, phạm vi thông tin cần khai thác trong Cơ sở dữ liệu căn cước và cam đoan về việc chịu trách nhiệm trong sử dụng thông tin khi được khai thác.",
+        "group_type": "required",
+        "original_count": "1",
+        "copy_count": "0",
+        "conditions": [],
+        "attachment_label": "Mẫu DC02 Phiếu đề nghị giải quyết thủ tục về căn cước.doc",
+        "attachment_path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/1_010098/M%E1%BA%ABu%20DC02%20Phi%E1%BA%BFu%20%C4%91%E1%BB%81%20ngh%E1%BB%8B%20gi%E1%BA%A3i%20quy%E1%BA%BFt%20th%E1%BB%A7%20t%E1%BB%A5c%20v%E1%BB%81%20c%C4%83n%20c%C6%B0%E1%BB%9Bc.doc"
+      }
+    ],
+    "conditional": [],
+    "presented": [],
+    "notes": [],
+    "forms": [
+      {
+        "name": "Phiếu đề nghị giải quyết thủ tục về căn cước (Mẫu DC02 ban hành kèm theo Thông tư số 17/2024/TT-BCA của Bộ Công an)",
+        "attachment_label": "Mẫu DC02 Phiếu đề nghị giải quyết thủ tục về căn cước.doc",
+        "attachment_path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/1_010098/M%E1%BA%ABu%20DC02%20Phi%E1%BA%BFu%20%C4%91%E1%BB%81%20ngh%E1%BB%8B%20gi%E1%BA%A3i%20quy%E1%BA%BFt%20th%E1%BB%A7%20t%E1%BB%A5c%20v%E1%BB%81%20c%C4%83n%20c%C6%B0%E1%BB%9Bc.doc"
+      }
+    ],
+    "empty_groups": [],
+    "document_count": 1
+  },
+  "process": {
+    "steps": [
+      {
+        "step_id": "step_1",
+        "title": null,
+        "content": "1.",
+        "actor": "user",
+        "channel_hint": null,
+        "time_hint": null
+      },
+      {
+        "step_id": "step_2",
+        "title": "Bước 1:",
+        "content": "Bước 1: Cơ quan, tổ chức, cá nhân chuẩn bị đầy đủ hồ sơ theo quy định của pháp luật.",
+        "actor": "authority",
+        "channel_hint": null,
+        "time_hint": null
+      },
+      {
+        "step_id": "step_3",
+        "title": "Bước 2:",
+        "content": "Bước 2: Nộp hồ sơ tại cơ quan quản lý căn cước của Công an cấp tỉnh (Phòng Cảnh sát quản lý hành chính về trật tự xã hội, Công an tỉnh, thành phố trực thuộc Trung ương) hoặc Trung tâm phục vụ hành chính công tỉnh, thành phố trực thuộc Trung ương (nếu đã triển khai).",
+        "actor": "authority",
+        "channel_hint": null,
+        "time_hint": null
+      },
+      {
+        "step_id": "step_4",
+        "title": "Bước 3:",
+        "content": "Bước 3: Cán bộ tiếp nhận hồ sơ kiểm tra tính pháp lý và nội dung hồ sơ. - Trường hợp hồ sơ đầy đủ, hợp lệ thì tiếp nhận hồ sơ và cấp giấy hẹn trả kết quả giải quyết thủ tục về căn cước (Mẫu CC02 ban hành kèm theo Thông tư số 17/2024/TT-BCA ngày 15/5/2024 của Bộ Công an). - Trường hợp hồ sơ không đầy đủ thì hướng dẫn cơ quan, tổ chức, cá nhân bổ sung, hoàn thiện hồ sơ; trường hợp hồ sơ không hợp lệ thì từ chối tiếp nhận và nêu rõ lý do bằng Thông báo về việc từ chối giải quyết thủ tục về căn cước (Mẫu CC03 ban hành kèm theo Thông tư số 17/2024/TT-BCA ngày 15/5/2024 của Bộ Công an).",
+        "actor": "authority",
+        "channel_hint": null,
+        "time_hint": null
+      },
+      {
+        "step_id": "step_5",
+        "title": "Bước 4:",
+        "content": "Bước 4: Cơ quan, tổ chức, cá nhân nhận văn bản trả lời tại cơ quan quản lý căn cước của Công an cấp tỉnh; văn bản điện tử hoặc dịch vụ bưu chính phát đến địa chỉ theo yêu cầu.",
+        "actor": "authority",
+        "channel_hint": "dịch vụ bưu chính",
+        "time_hint": null
+      }
+    ],
+    "step_count": 5,
+    "notes": []
+  },
+  "eligibility": {
+    "conditions": [
+      "Phát triển kinh tế số, xã hội số, công dân số khi được công dân đó đồng ý.",
+      "- Trường hợp khai thác thông tin của người bị mất năng lực hành vi dân sự, người có khó khăn trong nhận thức, làm chủ hành vi theo quy định của Bộ luật Dân sự, người dưới 14 tuổi, người bị tuyên bố mất tích, người đã chết phải được sự đồng ý của cơ quan quản lý căn cước và một trong những người đại diện hợp pháp, người thừa kế theo quy định tại điểm d khoản 3 Điều 16 Luật Căn cước;"
+    ],
+    "has_conditions": true
+  },
+  "results": {
+    "items": [
+      {
+        "name": "Phiếu cung cấp thông tin trong cơ sở dữ liệu quốc gia về dân cư, cơ sở dữ liệu căn cước bằng văn bản giấy hoặc văn bản điện tử (Mẫu DC03 ban hành kèm theo Thông tư số 17/2024/TT-BCA của Bộ Công an)",
+        "result_code": "KQ.G01.000140",
+        "raw_text": "Phiếu cung cấp thông tin trong cơ sở dữ liệu quốc gia về dân cư, cơ sở dữ liệu căn cước bằng văn bản giấy hoặc văn bản điện tử (Mẫu DC03 ban hành kèm theo Thông tư số 17/2024/TT-BCA của Bộ Công an)"
+      }
+    ],
+    "primary_result": {
+      "name": "Phiếu cung cấp thông tin trong cơ sở dữ liệu quốc gia về dân cư, cơ sở dữ liệu căn cước bằng văn bản giấy hoặc văn bản điện tử (Mẫu DC03 ban hành kèm theo Thông tư số 17/2024/TT-BCA của Bộ Công an)",
+      "result_code": "KQ.G01.000140",
+      "raw_text": "Phiếu cung cấp thông tin trong cơ sở dữ liệu quốc gia về dân cư, cơ sở dữ liệu căn cước bằng văn bản giấy hoặc văn bản điện tử (Mẫu DC03 ban hành kèm theo Thông tư số 17/2024/TT-BCA của Bộ Công an)"
+    }
+  },
+  "legal_basis": {
+    "items": [
+      {
+        "title": "Thông tư quy định chi tiết một số điều và biện pháp thi hành Luật Căn cước",
+        "code": "17/2024/TT-BCA"
+      },
+      {
+        "title": "Thông tư 16/2024/TT-BCA quy định về mẫu thẻ căn cước, mẫu giấy chứng nhận căn cước",
+        "code": "16/2024/TT-BCA"
+      },
+      {
+        "title": "Luật Căn cước",
+        "code": "26/2023/QH15"
+      },
+      {
+        "title": "Thông tư quy định quy định về quy trình cấp, cấp đổi, cấp lại thẻ căn cước, giấy chứng nhận căn cước",
+        "code": "18/2024/TT-BCA"
+      },
+      {
+        "title": "Nghị định của Chính phủ: Quy định chi tiết một số điều và biện pháp thi hành Luật Căn cước",
+        "code": "70/2024/NĐ-CP"
+      }
+    ],
+    "count": 5
+  },
+  "attachments": [
+    {
+      "label": "Mẫu DC02 Phiếu đề nghị giải quyết thủ tục về căn cước.doc",
+      "path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/1_010098/M%E1%BA%ABu%20DC02%20Phi%E1%BA%BFu%20%C4%91%E1%BB%81%20ngh%E1%BB%8B%20gi%E1%BA%A3i%20quy%E1%BA%BFt%20th%E1%BB%A7%20t%E1%BB%A5c%20v%E1%BB%81%20c%C4%83n%20c%C6%B0%E1%BB%9Bc.doc",
+      "source_section": "Thành phần hồ sơ",
+      "document_name": "Phiếu đề nghị giải quyết thủ tục về căn cước (Mẫu DC02 ban hành kèm theo Thông tư số 17/2024/TT-BCA của Bộ Công an)"
+    }
+  ],
+  "signals": {
+    "raw_parse_warnings": [],
+    "missing_documents": false,
+    "documents_section_present": true,
+    "documents_declared_empty": false,
+    "documents_only_in_notes": false,
+    "missing_results": false
+  }
+}

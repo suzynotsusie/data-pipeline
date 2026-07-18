@@ -1,0 +1,576 @@
+{
+  "schema_version": "1.0",
+  "domain": "dien_luc_nha_o_dat_dai",
+  "updated_at": "2026-07-18",
+  "source_files": [
+    "C:\\Users\\ku060\\Downloads\\VAIC source\\data-pipeline\\main\\full-data.csv",
+    "C:\\Users\\ku060\\Downloads\\VAIC source\\data-pipeline\\data\\workflows\\dien_luc_nha_o_dat_dai\\summary.csv",
+    "C:\\Users\\ku060\\Downloads\\VAIC source\\data-pipeline\\data\\workflows\\dien_luc_nha_o_dat_dai\\normalized.json",
+    "C:\\Users\\ku060\\Downloads\\VAIC source\\data-pipeline\\raw_data"
+  ],
+  "coverage": {
+    "expected_codes": [
+      "1.013992",
+      "1.115708",
+      "1.013831",
+      "1.014365",
+      "2.002676",
+      "3.000001",
+      "1.012783",
+      "1.012784",
+      "1.012786",
+      "1.012790",
+      "1.013978",
+      "1.011441",
+      "1.011442",
+      "1.011443",
+      "1.011444",
+      "1.011445",
+      "1.009122",
+      "1.012896",
+      "1.013225",
+      "1.013229",
+      "1.013232",
+      "1.014632",
+      "1.115150"
+    ],
+    "covered_codes": [
+      "1.013992",
+      "1.115708",
+      "1.013831",
+      "1.014365",
+      "2.002676",
+      "3.000001",
+      "1.012783",
+      "1.012784",
+      "1.012786",
+      "1.012790",
+      "1.013978",
+      "1.011441",
+      "1.011442",
+      "1.011443",
+      "1.011444",
+      "1.011445",
+      "1.009122",
+      "1.012896",
+      "1.013225",
+      "1.013229",
+      "1.013232",
+      "1.014632",
+      "1.115150"
+    ],
+    "missing_codes": []
+  },
+  "llm_contract": {
+    "role": "parse_user_answer_and_rephrase_question_only",
+    "required_output_schema": {
+      "intent": "dien_luc_nha_o_dat_dai",
+      "current_node": "string",
+      "slot_updates": {
+        "subdomain_key": "dang_ky_quyen_so_huu_quyen_su_dung | chuyen_nhuong_tang_cho_thua_ke | gop_von_the_chap | chuyen_muc_dich_su_dung | xay_dung_cong_trinh_nha_o | cung_cap_dien_nang | unknown",
+        "operation_key": "string",
+        "operation_group": "string"
+      },
+      "confidence": "0_to_1",
+      "needs_human_review": "boolean"
+    }
+  },
+  "entry_prompts": [
+    "Bạn cần làm việc về quyền sử dụng đất, sang tên, thế chấp, chuyển mục đích, xây dựng nhà ở hay điện sinh hoạt?",
+    "Bạn muốn đăng ký mới, chỉnh lý biến động, xin phép xây dựng, đăng ký nhà ở xã hội hay cấp điện mới?"
+  ],
+  "slots": [
+    {
+      "name": "subdomain_key",
+      "required": true,
+      "description": "Nhánh chính của nhóm Điện lực, nhà ở, đất đai."
+    },
+    {
+      "name": "operation_key",
+      "required": true,
+      "description": "Thao tác cụ thể ánh xạ trực tiếp tới thủ tục cuối cùng."
+    },
+    {
+      "name": "operation_group",
+      "required": false,
+      "description": "Nhóm thao tác để gom các thủ tục gần nhau cho UI và parser."
+    }
+  ],
+  "subdomain_catalog": [
+    {
+      "subdomain_key": "dang_ky_quyen_so_huu_quyen_su_dung",
+      "subdomain_label": "Đăng ký quyền sở hữu, quyền sử dụng",
+      "event_id": 287,
+      "summary": "Nhóm thủ tục đăng ký lần đầu, cấp đổi, cấp lại, đính chính và tách thửa liên quan đến quyền sử dụng đất, quyền sở hữu tài sản gắn liền với đất."
+    },
+    {
+      "subdomain_key": "chuyen_nhuong_tang_cho_thua_ke",
+      "subdomain_label": "Chuyển nhượng, tặng cho, thừa kế",
+      "event_id": 288,
+      "summary": "Nhóm thủ tục biến động đất đai do chuyển nhượng, tặng cho, thừa kế hoặc chuyển quyền gắn với tách thửa, hợp thửa."
+    },
+    {
+      "subdomain_key": "gop_von_the_chap",
+      "subdomain_label": "Góp vốn, thế chấp",
+      "event_id": 290,
+      "summary": "Nhóm thủ tục đăng ký, thay đổi, xóa hoặc xử lý biện pháp bảo đảm bằng quyền sử dụng đất, tài sản gắn liền với đất và chuyển tiếp đăng ký thế chấp quyền tài sản phát sinh từ hợp đồng mua bán nhà ở."
+    },
+    {
+      "subdomain_key": "chuyen_muc_dich_su_dung",
+      "subdomain_label": "Chuyển mục đích sử dụng",
+      "event_id": 311,
+      "summary": "Nhóm thủ tục chuyển mục đích sử dụng đất, bao gồm cả trường hợp phải xin phép và không phải xin phép cơ quan nhà nước có thẩm quyền."
+    },
+    {
+      "subdomain_key": "xay_dung_cong_trinh_nha_o",
+      "subdomain_label": "Xây dựng công trình, nhà ở",
+      "event_id": 313,
+      "summary": "Nhóm thủ tục cấp phép xây dựng, sửa chữa, di dời nhà ở riêng lẻ và tiếp cận nhà ở xã hội, thuê mua nhà ở xã hội cho hộ gia đình, cá nhân."
+    },
+    {
+      "subdomain_key": "cung_cap_dien_nang",
+      "subdomain_label": "Cung cấp điện năng",
+      "event_id": 323,
+      "summary": "Nhóm thủ tục cấp điện mới cho hộ dân và thông báo phát triển điện mặt trời mái nhà tự sản xuất, tự tiêu thụ có đấu nối."
+    }
+  ],
+  "decision_tree": {
+    "start_node": "housing_land_electricity_subdomain",
+    "nodes": [
+      {
+        "id": "housing_land_electricity_subdomain",
+        "type": "question",
+        "slot": "subdomain_key",
+        "question": "Bạn đang cần làm việc về sổ đất, sang tên, thế chấp, chuyển mục đích sử dụng đất, xây dựng nhà ở hay cấp điện?",
+        "options": [
+          "dang_ky_quyen_so_huu_quyen_su_dung",
+          "chuyen_nhuong_tang_cho_thua_ke",
+          "gop_von_the_chap",
+          "chuyen_muc_dich_su_dung",
+          "xay_dung_cong_trinh_nha_o",
+          "cung_cap_dien_nang"
+        ]
+      },
+      {
+        "id": "housing_land_electricity_operation",
+        "type": "question",
+        "slot": "operation_key",
+        "question": "Trong nhánh đã chọn, bạn đang cần thao tác cụ thể nào?",
+        "options_by_subdomain": {
+          "chuyen_muc_dich_su_dung": [
+            {
+              "operation_key": "dang_ky_bien_dong_chuyen_muc_dich_su_dung_dat_khong_phai_xin_phep_co_quan_nha_nuoc_co_tham_quyen",
+              "operation_group": "dang_ky_bien_dong_khong_xin_phep",
+              "procedure_code": "1.013992",
+              "procedure_title": "Đăng ký biến động chuyển mục đích sử dụng đất không phải xin phép cơ quan nhà nước có thẩm quyền"
+            },
+            {
+              "operation_key": "chuyen_muc_dich_su_dung_dat",
+              "operation_group": "xin_chuyen_muc_dich_su_dung_dat",
+              "procedure_code": "1.115708",
+              "procedure_title": "Chuyển mục đích sử dụng đất"
+            }
+          ],
+          "chuyen_nhuong_tang_cho_thua_ke": [
+            {
+              "operation_key": "dang_ky_bien_dong_quyen_su_dung_dat_quyen_so_huu_tai_san_gan_lien_voi_dat_trong_cac_truong_hop_chuyen_doi_quyen_su_dung_dat_nong_nghiep_ma_khong_theo_phuong_an_don_dien_doi_thua_chuyen_nhuong_thua_ke_tang_cho_quyen_su_dung_dat_quyen_so_huu_tai_san_gan_lien_voi_dat_gop_von_bang_quyen_su_dung_dat_quyen_so_huu_tai_san_gan_lien_voi_dat_cho_thue_cho_thue_lai_quyen_su_dung_dat_trong_du_an_xay_dung_kinh_doanh_ket_cau_ha_tang_ban_hoac_tang_cho_hoac_de_thua_ke_hoac_gop_von_bang_tai_san_gan_lien_voi_dat_thue_cua_nha_nuoc_theo_hinh_thuc_thue_dat_tra_tien_hang_nam",
+              "operation_group": "dang_ky_bien_dong_chuyen_quyen",
+              "procedure_code": "1.013831",
+              "procedure_title": "Đăng ký biến động quyền sử dụng đất, quyền sở hữu tài sản gắn liền với đất trong các trường hợp chuyển đổi quyền sử dụng đất nông nghiệp mà không theo phương án dồn điền, đổi thửa; chuyển nhượng, thừa kế, tặng cho quyền sử dụng đất, quyền sở hữu tài sản gắn liền với đất, góp vốn bằng quyền sử dụng đất, quyền sở hữu tài sản gắn liền với đất; cho thuê, cho thuê lại quyền sử dụng đất trong dự án xây dựng kinh doanh kết cấu hạ tầng; bán hoặc tặng cho hoặc để thừa kế hoặc góp vốn bằng tài sản gắn liền với đất thuê của Nhà nước theo hình thức thuê đất trả tiền hàng năm"
+            },
+            {
+              "operation_key": "dang_ky_tach_thua_hop_thua_dat_dong_thoi_voi_chuyen_quyen_su_dung_dat_quyen_so_huu_tai_san_gan_lien_voi_dat_cho_ca_nhan",
+              "operation_group": "tach_thua_gan_chuyen_quyen",
+              "procedure_code": "1.014365",
+              "procedure_title": "Đăng ký tách thửa, hợp thửa đất đồng thời với chuyển quyền sử dụng đất, quyền sở hữu tài sản gắn liền với đất cho cá nhân"
+            }
+          ],
+          "cung_cap_dien_nang": [
+            {
+              "operation_key": "thong_bao_phat_trien_nguon_dien_mat_troi_mai_nha_tu_san_xuat_tu_tieu_thu_dau_noi_voi_he_thong_dien_quoc_gia_tai_cap_dien_ap_tu_trung_ap_tro_len",
+              "operation_group": "thong_bao_dien_mat_troi_mai_nha",
+              "procedure_code": "2.002676",
+              "procedure_title": "Thông báo phát triển nguồn điện mặt trời mái nhà tự sản xuất, tự tiêu thụ đấu nối với hệ thống điện quốc gia tại cấp điện áp từ trung áp trở lên"
+            },
+            {
+              "operation_key": "cap_dien_moi_tu_luoi_dien_ha_ap",
+              "operation_group": "cap_dien_moi",
+              "procedure_code": "3.000001",
+              "procedure_title": "Cấp điện mới từ lưới điện hạ áp"
+            }
+          ],
+          "dang_ky_quyen_so_huu_quyen_su_dung": [
+            {
+              "operation_key": "cap_doi_giay_chung_nhan_quyen_su_dung_dat_quyen_so_huu_tai_san_gan_lien_voi_dat",
+              "operation_group": "cap_doi_giay_chung_nhan",
+              "procedure_code": "1.012783",
+              "procedure_title": "Cấp đổi Giấy chứng nhận quyền sử dụng đất, quyền sở hữu tài sản gắn liền với đất"
+            },
+            {
+              "operation_key": "tach_thua_hoac_hop_thua_dat",
+              "operation_group": "tach_hop_thua",
+              "procedure_code": "1.012784",
+              "procedure_title": "Tách thửa hoặc hợp thửa đất."
+            },
+            {
+              "operation_key": "cap_lai_giay_chung_nhan_do_bi_mat",
+              "operation_group": "cap_lai_giay_chung_nhan",
+              "procedure_code": "1.012786",
+              "procedure_title": "Cấp lại Giấy chứng nhận do bị mất"
+            },
+            {
+              "operation_key": "dinh_chinh_giay_chung_nhan_da_cap",
+              "operation_group": "dinh_chinh_giay_chung_nhan",
+              "procedure_code": "1.012790",
+              "procedure_title": "Đính chính Giấy chứng nhận đã cấp."
+            },
+            {
+              "operation_key": "dang_ky_dat_dai_tai_san_gan_lien_voi_dat_cap_giay_chung_nhan_quyen_su_dung_dat_quyen_so_huu_tai_san_gan_lien_voi_dat_lan_dau_doi_voi_ho_gia_dinh_ca_nhan_cong_dong_dan_cu_nguoi_goc_viet_nam_dinh_cu_o_nuoc_ngoai",
+              "operation_group": "dang_ky_lan_dau",
+              "procedure_code": "1.013978",
+              "procedure_title": "Đăng ký đất đai, tài sản gắn liền với đất, cấp Giấy chứng nhận quyền sử dụng đất, quyền sở hữu tài sản gắn liền với đất lần đầu đối với hộ gia đình, cá nhân, cộng đồng dân cư, người gốc Việt Nam định cư ở nước ngoài"
+            }
+          ],
+          "gop_von_the_chap": [
+            {
+              "operation_key": "dang_ky_bien_phap_bao_dam_bang_quyen_su_dung_dat_tai_san_gan_lien_voi_dat",
+              "operation_group": "dang_ky_bien_phap_bao_dam",
+              "procedure_code": "1.011441",
+              "procedure_title": "Đăng ký biện pháp bảo đảm bằng quyền sử dụng đất, tài sản gắn liền với đất"
+            },
+            {
+              "operation_key": "dang_ky_thay_doi_bien_phap_bao_dam_bang_quyen_su_dung_dat_tai_san_gan_lien_voi_dat",
+              "operation_group": "thay_doi_bien_phap_bao_dam",
+              "procedure_code": "1.011442",
+              "procedure_title": "Đăng ký thay đổi biện pháp bảo đảm bằng quyền sử dụng đất, tài sản gắn liền với đất"
+            },
+            {
+              "operation_key": "xoa_dang_ky_bien_phap_bao_dam_bang_quyen_su_dung_dat_tai_san_gan_lien_voi_dat",
+              "operation_group": "xoa_bien_phap_bao_dam",
+              "procedure_code": "1.011443",
+              "procedure_title": "Xóa đăng ký biện pháp bảo đảm bằng quyền sử dụng đất, tài sản gắn liền với đất"
+            },
+            {
+              "operation_key": "dang_ky_thong_bao_xu_ly_tai_san_bao_dam_dang_ky_thay_doi_xoa_dang_ky_thong_bao_xu_ly_tai_san_bao_dam_la_quyen_su_dung_dat_tai_san_gan_lien_voi_dat",
+              "operation_group": "thay_doi_bien_phap_bao_dam",
+              "procedure_code": "1.011444",
+              "procedure_title": "Đăng ký thông báo xử lý tài sản bảo đảm, đăng ký thay đổi, xóa đăng ký thông báo xử lý tài sản bảo đảm là quyền sử dụng đất, tài sản gắn liền với đất"
+            },
+            {
+              "operation_key": "chuyen_tiep_dang_ky_the_chap_quyen_tai_san_phat_sinh_tu_hop_dong_mua_ban_nha_o_hoac_tu_hop_dong_mua_ban_tai_san_khac_gan_lien_voi_dat",
+              "operation_group": "chuyen_tiep_dang_ky_the_chap",
+              "procedure_code": "1.011445",
+              "procedure_title": "Chuyển tiếp đăng ký thế chấp quyền tài sản phát sinh từ hợp đồng mua bán nhà ở hoặc từ hợp đồng mua bán tài sản khác gắn liền với đất"
+            }
+          ],
+          "xay_dung_cong_trinh_nha_o": [
+            {
+              "operation_key": "cap_giay_phep_xay_dung_co_thoi_han_doi_voi_cong_trinh_nha_o_rieng_le_cong_trinh_cap_iii_cap_iv",
+              "operation_group": "cap_phep_xay_dung_co_thoi_han",
+              "procedure_code": "1.009122",
+              "procedure_title": "Cấp giấy phép xây dựng có thời hạn đối với công trình, nhà ở riêng lẻ (công trình cấp III, cấp IV)"
+            },
+            {
+              "operation_key": "cho_thue_cho_thue_mua_nha_o_xa_hoi_do_nha_nuoc_dau_tu_xay_dung_bang_von_dau_tu_cong",
+              "operation_group": "tiep_can_nha_o_xa_hoi",
+              "procedure_code": "1.012896",
+              "procedure_title": "Cho thuê, cho thuê mua nhà ở xã hội do Nhà nước đầu tư xây dựng bằng vốn đầu tư công"
+            },
+            {
+              "operation_key": "cap_giay_phep_xay_dung_moi_doi_voi_cong_trinh_cap_iii_cap_iv_cong_trinh_khong_theo_tuyen_theo_tuyen_trong_do_thi_tin_nguong_ton_giao_tuong_dai_tranh_hoanh_trang_theo_giai_doan_cho_cong_trinh_khong_theo_tuyen_theo_giai_doan_cho_cong_trinh_theo_tuyen_trong_do_thi_du_an_va_nha_o_rieng_le",
+              "operation_group": "cap_phep_xay_dung_moi",
+              "procedure_code": "1.013225",
+              "procedure_title": "Cấp giấy phép xây dựng mới đối với công trình cấp III, cấp IV (Công trình không theo tuyến/Theo tuyến trong đô thị/Tín ngưỡng, tôn giáo/Tượng đài, tranh hoành tráng/Theo giai đoạn cho công trình không theo tuyến/Theo giai đoạn cho công trình theo tuyến trong đô thị/Dự án) và nhà ở riêng lẻ"
+            },
+            {
+              "operation_key": "cap_giay_phep_xay_dung_sua_chua_cai_tao_doi_voi_cong_trinh_cap_iii_cap_iv_cong_trinh_khong_theo_tuyen_theo_tuyen_trong_do_thi_tin_nguong_ton_giao_tuong_dai_tranh_hoanh_trang_theo_giai_doan_cho_cong_trinh_khong_theo_tuyen_theo_giai_doan_cho_cong_trinh_theo_tuyen_trong_do_thi_du_an_va_nha_o_rieng_le",
+              "operation_group": "cap_phep_sua_chua_cai_tao",
+              "procedure_code": "1.013229",
+              "procedure_title": "Cấp giấy phép xây dựng sửa chữa, cải tạo đối với công trình cấp III, cấp IV (công trình Không theo tuyến/Theo tuyến trong đô thị/Tín ngưỡng, tôn giáo/Tượng đài, tranh hoành tráng/Theo giai đoạn cho công trình không theo tuyến/Theo giai đoạn cho công trình theo tuyến trong đô thị/Dự án) và nhà ở riêng lẻ:"
+            },
+            {
+              "operation_key": "cap_giay_phep_di_doi_doi_voi_cong_trinh_cap_iii_cap_iv_cong_trinh_khong_theo_tuyen_theo_tuyen_trong_do_thi_tin_nguong_ton_giao_tuong_dai_tranh_hoanh_trang_theo_giai_doan_cho_cong_trinh_khong_theo_tuyen_theo_giai_doan_cho_cong_trinh_theo_tuyen_trong_do_thi_du_an_va_nha_o_rieng_le",
+              "operation_group": "cap_phep_di_doi_cong_trinh_nha_o",
+              "procedure_code": "1.013232",
+              "procedure_title": "Cấp giấy phép di dời đối với công trình cấp III, cấp IV (Công trình không theo tuyến/Theo tuyến trong đô thị/Tín ngưỡng, tôn giáo/Tượng đài, tranh hoành tráng/Theo giai đoạn cho công trình không theo tuyến/Theo giai đoạn cho công trình theo tuyến trong đô thị/Dự án) và nhà ở riêng lẻ"
+            },
+            {
+              "operation_key": "dang_ky_mua_thue_mua_thue_nha_o_xa_hoi_vay_von_de_ho_gia_dinh_ca_nhan_tu_xay_dung_hoac_cai_tao_sua_chua_nha_o",
+              "operation_group": "tiep_can_nha_o_xa_hoi",
+              "procedure_code": "1.014632",
+              "procedure_title": "Đăng ký mua, thuê mua, thuê nhà ở xã hội, vay vốn để hộ gia đình, cá nhân tự xây dựng hoặc cải tạo, sửa chữa nhà ở"
+            },
+            {
+              "operation_key": "thu_tuc_ban_cho_thue_mua_cho_thue_nha_o_xa_hoi_duoc_dau_tu_xay_dung_theo_du_an_va_khong_su_dung_von_dau_tu_cong_nguon_tai_chinh_cong_doan",
+              "operation_group": "tiep_can_nha_o_xa_hoi",
+              "procedure_code": "1.115150",
+              "procedure_title": "Thủ tục bán, cho thuê mua, cho thuê nhà ở xã hội được đầu tư xây dựng theo dự án và không sử dụng vốn đầu tư công, nguồn tài chính công đoàn"
+            }
+          ]
+        }
+      }
+    ],
+    "routes": [
+      {
+        "route_id": "chuyen_muc_dich_su_dung-1_013992",
+        "conditions": {
+          "subdomain_key": "chuyen_muc_dich_su_dung",
+          "operation_key": "dang_ky_bien_dong_chuyen_muc_dich_su_dung_dat_khong_phai_xin_phep_co_quan_nha_nuoc_co_tham_quyen"
+        },
+        "procedure_code": "1.013992",
+        "procedure_name": "Đăng ký biến động chuyển mục đích sử dụng đất không phải xin phép cơ quan nhà nước có thẩm quyền",
+        "why_this_route": "Route trực tiếp cho nhu cầu 'Đăng ký biến động chuyển mục đích sử dụng đất không phải xin phép cơ quan nhà nước có thẩm quyền' trong nhánh 'Chuyển mục đích sử dụng'."
+      },
+      {
+        "route_id": "chuyen_muc_dich_su_dung-1_115708",
+        "conditions": {
+          "subdomain_key": "chuyen_muc_dich_su_dung",
+          "operation_key": "chuyen_muc_dich_su_dung_dat"
+        },
+        "procedure_code": "1.115708",
+        "procedure_name": "Chuyển mục đích sử dụng đất",
+        "why_this_route": "Route trực tiếp cho nhu cầu 'Chuyển mục đích sử dụng đất' trong nhánh 'Chuyển mục đích sử dụng'."
+      },
+      {
+        "route_id": "chuyen_nhuong_tang_cho_thua_ke-1_013831",
+        "conditions": {
+          "subdomain_key": "chuyen_nhuong_tang_cho_thua_ke",
+          "operation_key": "dang_ky_bien_dong_quyen_su_dung_dat_quyen_so_huu_tai_san_gan_lien_voi_dat_trong_cac_truong_hop_chuyen_doi_quyen_su_dung_dat_nong_nghiep_ma_khong_theo_phuong_an_don_dien_doi_thua_chuyen_nhuong_thua_ke_tang_cho_quyen_su_dung_dat_quyen_so_huu_tai_san_gan_lien_voi_dat_gop_von_bang_quyen_su_dung_dat_quyen_so_huu_tai_san_gan_lien_voi_dat_cho_thue_cho_thue_lai_quyen_su_dung_dat_trong_du_an_xay_dung_kinh_doanh_ket_cau_ha_tang_ban_hoac_tang_cho_hoac_de_thua_ke_hoac_gop_von_bang_tai_san_gan_lien_voi_dat_thue_cua_nha_nuoc_theo_hinh_thuc_thue_dat_tra_tien_hang_nam"
+        },
+        "procedure_code": "1.013831",
+        "procedure_name": "Đăng ký biến động quyền sử dụng đất, quyền sở hữu tài sản gắn liền với đất trong các trường hợp chuyển đổi quyền sử dụng đất nông nghiệp mà không theo phương án dồn điền, đổi thửa; chuyển nhượng, thừa kế, tặng cho quyền sử dụng đất, quyền sở hữu tài sản gắn liền với đất, góp vốn bằng quyền sử dụng đất, quyền sở hữu tài sản gắn liền với đất; cho thuê, cho thuê lại quyền sử dụng đất trong dự án xây dựng kinh doanh kết cấu hạ tầng; bán hoặc tặng cho hoặc để thừa kế hoặc góp vốn bằng tài sản gắn liền với đất thuê của Nhà nước theo hình thức thuê đất trả tiền hàng năm",
+        "why_this_route": "Route trực tiếp cho nhu cầu 'Đăng ký biến động quyền sử dụng đất, quyền sở hữu tài sản gắn liền với đất trong các trường hợp chuyển đổi quyền sử dụng đất nông nghiệp mà không theo phương án dồn điền, đổi thửa; chuyển nhượng, thừa kế, tặng cho quyền sử dụng đất, quyền sở hữu tài sản gắn liền với đất, góp vốn bằng quyền sử dụng đất, quyền sở hữu tài sản gắn liền với đất; cho thuê, cho thuê lại quyền sử dụng đất trong dự án xây dựng kinh doanh kết cấu hạ tầng; bán hoặc tặng cho hoặc để thừa kế hoặc góp vốn bằng tài sản gắn liền với đất thuê của Nhà nước theo hình thức thuê đất trả tiền hàng năm' trong nhánh 'Chuyển nhượng, tặng cho, thừa kế'."
+      },
+      {
+        "route_id": "chuyen_nhuong_tang_cho_thua_ke-1_014365",
+        "conditions": {
+          "subdomain_key": "chuyen_nhuong_tang_cho_thua_ke",
+          "operation_key": "dang_ky_tach_thua_hop_thua_dat_dong_thoi_voi_chuyen_quyen_su_dung_dat_quyen_so_huu_tai_san_gan_lien_voi_dat_cho_ca_nhan"
+        },
+        "procedure_code": "1.014365",
+        "procedure_name": "Đăng ký tách thửa, hợp thửa đất đồng thời với chuyển quyền sử dụng đất, quyền sở hữu tài sản gắn liền với đất cho cá nhân",
+        "why_this_route": "Route trực tiếp cho nhu cầu 'Đăng ký tách thửa, hợp thửa đất đồng thời với chuyển quyền sử dụng đất, quyền sở hữu tài sản gắn liền với đất cho cá nhân' trong nhánh 'Chuyển nhượng, tặng cho, thừa kế'."
+      },
+      {
+        "route_id": "cung_cap_dien_nang-2_002676",
+        "conditions": {
+          "subdomain_key": "cung_cap_dien_nang",
+          "operation_key": "thong_bao_phat_trien_nguon_dien_mat_troi_mai_nha_tu_san_xuat_tu_tieu_thu_dau_noi_voi_he_thong_dien_quoc_gia_tai_cap_dien_ap_tu_trung_ap_tro_len"
+        },
+        "procedure_code": "2.002676",
+        "procedure_name": "Thông báo phát triển nguồn điện mặt trời mái nhà tự sản xuất, tự tiêu thụ đấu nối với hệ thống điện quốc gia tại cấp điện áp từ trung áp trở lên",
+        "why_this_route": "Route trực tiếp cho nhu cầu 'Thông báo phát triển nguồn điện mặt trời mái nhà tự sản xuất, tự tiêu thụ đấu nối với hệ thống điện quốc gia tại cấp điện áp từ trung áp trở lên' trong nhánh 'Cung cấp điện năng'."
+      },
+      {
+        "route_id": "cung_cap_dien_nang-3_000001",
+        "conditions": {
+          "subdomain_key": "cung_cap_dien_nang",
+          "operation_key": "cap_dien_moi_tu_luoi_dien_ha_ap"
+        },
+        "procedure_code": "3.000001",
+        "procedure_name": "Cấp điện mới từ lưới điện hạ áp",
+        "why_this_route": "Route trực tiếp cho nhu cầu 'Cấp điện mới từ lưới điện hạ áp' trong nhánh 'Cung cấp điện năng'."
+      },
+      {
+        "route_id": "dang_ky_quyen_so_huu_quyen_su_dung-1_012783",
+        "conditions": {
+          "subdomain_key": "dang_ky_quyen_so_huu_quyen_su_dung",
+          "operation_key": "cap_doi_giay_chung_nhan_quyen_su_dung_dat_quyen_so_huu_tai_san_gan_lien_voi_dat"
+        },
+        "procedure_code": "1.012783",
+        "procedure_name": "Cấp đổi Giấy chứng nhận quyền sử dụng đất, quyền sở hữu tài sản gắn liền với đất",
+        "why_this_route": "Route trực tiếp cho nhu cầu 'Cấp đổi Giấy chứng nhận quyền sử dụng đất, quyền sở hữu tài sản gắn liền với đất' trong nhánh 'Đăng ký quyền sở hữu, quyền sử dụng'."
+      },
+      {
+        "route_id": "dang_ky_quyen_so_huu_quyen_su_dung-1_012784",
+        "conditions": {
+          "subdomain_key": "dang_ky_quyen_so_huu_quyen_su_dung",
+          "operation_key": "tach_thua_hoac_hop_thua_dat"
+        },
+        "procedure_code": "1.012784",
+        "procedure_name": "Tách thửa hoặc hợp thửa đất.",
+        "why_this_route": "Route trực tiếp cho nhu cầu 'Tách thửa hoặc hợp thửa đất.' trong nhánh 'Đăng ký quyền sở hữu, quyền sử dụng'."
+      },
+      {
+        "route_id": "dang_ky_quyen_so_huu_quyen_su_dung-1_012786",
+        "conditions": {
+          "subdomain_key": "dang_ky_quyen_so_huu_quyen_su_dung",
+          "operation_key": "cap_lai_giay_chung_nhan_do_bi_mat"
+        },
+        "procedure_code": "1.012786",
+        "procedure_name": "Cấp lại Giấy chứng nhận do bị mất",
+        "why_this_route": "Route trực tiếp cho nhu cầu 'Cấp lại Giấy chứng nhận do bị mất' trong nhánh 'Đăng ký quyền sở hữu, quyền sử dụng'."
+      },
+      {
+        "route_id": "dang_ky_quyen_so_huu_quyen_su_dung-1_012790",
+        "conditions": {
+          "subdomain_key": "dang_ky_quyen_so_huu_quyen_su_dung",
+          "operation_key": "dinh_chinh_giay_chung_nhan_da_cap"
+        },
+        "procedure_code": "1.012790",
+        "procedure_name": "Đính chính Giấy chứng nhận đã cấp.",
+        "why_this_route": "Route trực tiếp cho nhu cầu 'Đính chính Giấy chứng nhận đã cấp.' trong nhánh 'Đăng ký quyền sở hữu, quyền sử dụng'."
+      },
+      {
+        "route_id": "dang_ky_quyen_so_huu_quyen_su_dung-1_013978",
+        "conditions": {
+          "subdomain_key": "dang_ky_quyen_so_huu_quyen_su_dung",
+          "operation_key": "dang_ky_dat_dai_tai_san_gan_lien_voi_dat_cap_giay_chung_nhan_quyen_su_dung_dat_quyen_so_huu_tai_san_gan_lien_voi_dat_lan_dau_doi_voi_ho_gia_dinh_ca_nhan_cong_dong_dan_cu_nguoi_goc_viet_nam_dinh_cu_o_nuoc_ngoai"
+        },
+        "procedure_code": "1.013978",
+        "procedure_name": "Đăng ký đất đai, tài sản gắn liền với đất, cấp Giấy chứng nhận quyền sử dụng đất, quyền sở hữu tài sản gắn liền với đất lần đầu đối với hộ gia đình, cá nhân, cộng đồng dân cư, người gốc Việt Nam định cư ở nước ngoài",
+        "why_this_route": "Route trực tiếp cho nhu cầu 'Đăng ký đất đai, tài sản gắn liền với đất, cấp Giấy chứng nhận quyền sử dụng đất, quyền sở hữu tài sản gắn liền với đất lần đầu đối với hộ gia đình, cá nhân, cộng đồng dân cư, người gốc Việt Nam định cư ở nước ngoài' trong nhánh 'Đăng ký quyền sở hữu, quyền sử dụng'."
+      },
+      {
+        "route_id": "gop_von_the_chap-1_011441",
+        "conditions": {
+          "subdomain_key": "gop_von_the_chap",
+          "operation_key": "dang_ky_bien_phap_bao_dam_bang_quyen_su_dung_dat_tai_san_gan_lien_voi_dat"
+        },
+        "procedure_code": "1.011441",
+        "procedure_name": "Đăng ký biện pháp bảo đảm bằng quyền sử dụng đất, tài sản gắn liền với đất",
+        "why_this_route": "Route trực tiếp cho nhu cầu 'Đăng ký biện pháp bảo đảm bằng quyền sử dụng đất, tài sản gắn liền với đất' trong nhánh 'Góp vốn, thế chấp'."
+      },
+      {
+        "route_id": "gop_von_the_chap-1_011442",
+        "conditions": {
+          "subdomain_key": "gop_von_the_chap",
+          "operation_key": "dang_ky_thay_doi_bien_phap_bao_dam_bang_quyen_su_dung_dat_tai_san_gan_lien_voi_dat"
+        },
+        "procedure_code": "1.011442",
+        "procedure_name": "Đăng ký thay đổi biện pháp bảo đảm bằng quyền sử dụng đất, tài sản gắn liền với đất",
+        "why_this_route": "Route trực tiếp cho nhu cầu 'Đăng ký thay đổi biện pháp bảo đảm bằng quyền sử dụng đất, tài sản gắn liền với đất' trong nhánh 'Góp vốn, thế chấp'."
+      },
+      {
+        "route_id": "gop_von_the_chap-1_011443",
+        "conditions": {
+          "subdomain_key": "gop_von_the_chap",
+          "operation_key": "xoa_dang_ky_bien_phap_bao_dam_bang_quyen_su_dung_dat_tai_san_gan_lien_voi_dat"
+        },
+        "procedure_code": "1.011443",
+        "procedure_name": "Xóa đăng ký biện pháp bảo đảm bằng quyền sử dụng đất, tài sản gắn liền với đất",
+        "why_this_route": "Route trực tiếp cho nhu cầu 'Xóa đăng ký biện pháp bảo đảm bằng quyền sử dụng đất, tài sản gắn liền với đất' trong nhánh 'Góp vốn, thế chấp'."
+      },
+      {
+        "route_id": "gop_von_the_chap-1_011444",
+        "conditions": {
+          "subdomain_key": "gop_von_the_chap",
+          "operation_key": "dang_ky_thong_bao_xu_ly_tai_san_bao_dam_dang_ky_thay_doi_xoa_dang_ky_thong_bao_xu_ly_tai_san_bao_dam_la_quyen_su_dung_dat_tai_san_gan_lien_voi_dat"
+        },
+        "procedure_code": "1.011444",
+        "procedure_name": "Đăng ký thông báo xử lý tài sản bảo đảm, đăng ký thay đổi, xóa đăng ký thông báo xử lý tài sản bảo đảm là quyền sử dụng đất, tài sản gắn liền với đất",
+        "why_this_route": "Route trực tiếp cho nhu cầu 'Đăng ký thông báo xử lý tài sản bảo đảm, đăng ký thay đổi, xóa đăng ký thông báo xử lý tài sản bảo đảm là quyền sử dụng đất, tài sản gắn liền với đất' trong nhánh 'Góp vốn, thế chấp'."
+      },
+      {
+        "route_id": "gop_von_the_chap-1_011445",
+        "conditions": {
+          "subdomain_key": "gop_von_the_chap",
+          "operation_key": "chuyen_tiep_dang_ky_the_chap_quyen_tai_san_phat_sinh_tu_hop_dong_mua_ban_nha_o_hoac_tu_hop_dong_mua_ban_tai_san_khac_gan_lien_voi_dat"
+        },
+        "procedure_code": "1.011445",
+        "procedure_name": "Chuyển tiếp đăng ký thế chấp quyền tài sản phát sinh từ hợp đồng mua bán nhà ở hoặc từ hợp đồng mua bán tài sản khác gắn liền với đất",
+        "why_this_route": "Route trực tiếp cho nhu cầu 'Chuyển tiếp đăng ký thế chấp quyền tài sản phát sinh từ hợp đồng mua bán nhà ở hoặc từ hợp đồng mua bán tài sản khác gắn liền với đất' trong nhánh 'Góp vốn, thế chấp'."
+      },
+      {
+        "route_id": "xay_dung_cong_trinh_nha_o-1_009122",
+        "conditions": {
+          "subdomain_key": "xay_dung_cong_trinh_nha_o",
+          "operation_key": "cap_giay_phep_xay_dung_co_thoi_han_doi_voi_cong_trinh_nha_o_rieng_le_cong_trinh_cap_iii_cap_iv"
+        },
+        "procedure_code": "1.009122",
+        "procedure_name": "Cấp giấy phép xây dựng có thời hạn đối với công trình, nhà ở riêng lẻ (công trình cấp III, cấp IV)",
+        "why_this_route": "Route trực tiếp cho nhu cầu 'Cấp giấy phép xây dựng có thời hạn đối với công trình, nhà ở riêng lẻ (công trình cấp III, cấp IV)' trong nhánh 'Xây dựng công trình, nhà ở'."
+      },
+      {
+        "route_id": "xay_dung_cong_trinh_nha_o-1_012896",
+        "conditions": {
+          "subdomain_key": "xay_dung_cong_trinh_nha_o",
+          "operation_key": "cho_thue_cho_thue_mua_nha_o_xa_hoi_do_nha_nuoc_dau_tu_xay_dung_bang_von_dau_tu_cong"
+        },
+        "procedure_code": "1.012896",
+        "procedure_name": "Cho thuê, cho thuê mua nhà ở xã hội do Nhà nước đầu tư xây dựng bằng vốn đầu tư công",
+        "why_this_route": "Route trực tiếp cho nhu cầu 'Cho thuê, cho thuê mua nhà ở xã hội do Nhà nước đầu tư xây dựng bằng vốn đầu tư công' trong nhánh 'Xây dựng công trình, nhà ở'."
+      },
+      {
+        "route_id": "xay_dung_cong_trinh_nha_o-1_013225",
+        "conditions": {
+          "subdomain_key": "xay_dung_cong_trinh_nha_o",
+          "operation_key": "cap_giay_phep_xay_dung_moi_doi_voi_cong_trinh_cap_iii_cap_iv_cong_trinh_khong_theo_tuyen_theo_tuyen_trong_do_thi_tin_nguong_ton_giao_tuong_dai_tranh_hoanh_trang_theo_giai_doan_cho_cong_trinh_khong_theo_tuyen_theo_giai_doan_cho_cong_trinh_theo_tuyen_trong_do_thi_du_an_va_nha_o_rieng_le"
+        },
+        "procedure_code": "1.013225",
+        "procedure_name": "Cấp giấy phép xây dựng mới đối với công trình cấp III, cấp IV (Công trình không theo tuyến/Theo tuyến trong đô thị/Tín ngưỡng, tôn giáo/Tượng đài, tranh hoành tráng/Theo giai đoạn cho công trình không theo tuyến/Theo giai đoạn cho công trình theo tuyến trong đô thị/Dự án) và nhà ở riêng lẻ",
+        "why_this_route": "Route trực tiếp cho nhu cầu 'Cấp giấy phép xây dựng mới đối với công trình cấp III, cấp IV (Công trình không theo tuyến/Theo tuyến trong đô thị/Tín ngưỡng, tôn giáo/Tượng đài, tranh hoành tráng/Theo giai đoạn cho công trình không theo tuyến/Theo giai đoạn cho công trình theo tuyến trong đô thị/Dự án) và nhà ở riêng lẻ' trong nhánh 'Xây dựng công trình, nhà ở'."
+      },
+      {
+        "route_id": "xay_dung_cong_trinh_nha_o-1_013229",
+        "conditions": {
+          "subdomain_key": "xay_dung_cong_trinh_nha_o",
+          "operation_key": "cap_giay_phep_xay_dung_sua_chua_cai_tao_doi_voi_cong_trinh_cap_iii_cap_iv_cong_trinh_khong_theo_tuyen_theo_tuyen_trong_do_thi_tin_nguong_ton_giao_tuong_dai_tranh_hoanh_trang_theo_giai_doan_cho_cong_trinh_khong_theo_tuyen_theo_giai_doan_cho_cong_trinh_theo_tuyen_trong_do_thi_du_an_va_nha_o_rieng_le"
+        },
+        "procedure_code": "1.013229",
+        "procedure_name": "Cấp giấy phép xây dựng sửa chữa, cải tạo đối với công trình cấp III, cấp IV (công trình Không theo tuyến/Theo tuyến trong đô thị/Tín ngưỡng, tôn giáo/Tượng đài, tranh hoành tráng/Theo giai đoạn cho công trình không theo tuyến/Theo giai đoạn cho công trình theo tuyến trong đô thị/Dự án) và nhà ở riêng lẻ:",
+        "why_this_route": "Route trực tiếp cho nhu cầu 'Cấp giấy phép xây dựng sửa chữa, cải tạo đối với công trình cấp III, cấp IV (công trình Không theo tuyến/Theo tuyến trong đô thị/Tín ngưỡng, tôn giáo/Tượng đài, tranh hoành tráng/Theo giai đoạn cho công trình không theo tuyến/Theo giai đoạn cho công trình theo tuyến trong đô thị/Dự án) và nhà ở riêng lẻ:' trong nhánh 'Xây dựng công trình, nhà ở'."
+      },
+      {
+        "route_id": "xay_dung_cong_trinh_nha_o-1_013232",
+        "conditions": {
+          "subdomain_key": "xay_dung_cong_trinh_nha_o",
+          "operation_key": "cap_giay_phep_di_doi_doi_voi_cong_trinh_cap_iii_cap_iv_cong_trinh_khong_theo_tuyen_theo_tuyen_trong_do_thi_tin_nguong_ton_giao_tuong_dai_tranh_hoanh_trang_theo_giai_doan_cho_cong_trinh_khong_theo_tuyen_theo_giai_doan_cho_cong_trinh_theo_tuyen_trong_do_thi_du_an_va_nha_o_rieng_le"
+        },
+        "procedure_code": "1.013232",
+        "procedure_name": "Cấp giấy phép di dời đối với công trình cấp III, cấp IV (Công trình không theo tuyến/Theo tuyến trong đô thị/Tín ngưỡng, tôn giáo/Tượng đài, tranh hoành tráng/Theo giai đoạn cho công trình không theo tuyến/Theo giai đoạn cho công trình theo tuyến trong đô thị/Dự án) và nhà ở riêng lẻ",
+        "why_this_route": "Route trực tiếp cho nhu cầu 'Cấp giấy phép di dời đối với công trình cấp III, cấp IV (Công trình không theo tuyến/Theo tuyến trong đô thị/Tín ngưỡng, tôn giáo/Tượng đài, tranh hoành tráng/Theo giai đoạn cho công trình không theo tuyến/Theo giai đoạn cho công trình theo tuyến trong đô thị/Dự án) và nhà ở riêng lẻ' trong nhánh 'Xây dựng công trình, nhà ở'."
+      },
+      {
+        "route_id": "xay_dung_cong_trinh_nha_o-1_014632",
+        "conditions": {
+          "subdomain_key": "xay_dung_cong_trinh_nha_o",
+          "operation_key": "dang_ky_mua_thue_mua_thue_nha_o_xa_hoi_vay_von_de_ho_gia_dinh_ca_nhan_tu_xay_dung_hoac_cai_tao_sua_chua_nha_o"
+        },
+        "procedure_code": "1.014632",
+        "procedure_name": "Đăng ký mua, thuê mua, thuê nhà ở xã hội, vay vốn để hộ gia đình, cá nhân tự xây dựng hoặc cải tạo, sửa chữa nhà ở",
+        "why_this_route": "Route trực tiếp cho nhu cầu 'Đăng ký mua, thuê mua, thuê nhà ở xã hội, vay vốn để hộ gia đình, cá nhân tự xây dựng hoặc cải tạo, sửa chữa nhà ở' trong nhánh 'Xây dựng công trình, nhà ở'."
+      },
+      {
+        "route_id": "xay_dung_cong_trinh_nha_o-1_115150",
+        "conditions": {
+          "subdomain_key": "xay_dung_cong_trinh_nha_o",
+          "operation_key": "thu_tuc_ban_cho_thue_mua_cho_thue_nha_o_xa_hoi_duoc_dau_tu_xay_dung_theo_du_an_va_khong_su_dung_von_dau_tu_cong_nguon_tai_chinh_cong_doan"
+        },
+        "procedure_code": "1.115150",
+        "procedure_name": "Thủ tục bán, cho thuê mua, cho thuê nhà ở xã hội được đầu tư xây dựng theo dự án và không sử dụng vốn đầu tư công, nguồn tài chính công đoàn",
+        "why_this_route": "Route trực tiếp cho nhu cầu 'Thủ tục bán, cho thuê mua, cho thuê nhà ở xã hội được đầu tư xây dựng theo dự án và không sử dụng vốn đầu tư công, nguồn tài chính công đoàn' trong nhánh 'Xây dựng công trình, nhà ở'."
+      }
+    ]
+  },
+  "pre_submission_checks": [
+    {
+      "field_group": "land_registration",
+      "checks": [
+        "Nhóm đất đai phải làm rõ loại biến động: đăng ký lần đầu, cấp đổi, cấp lại, đính chính, tách thửa hay sang tên do chuyển quyền.",
+        "Thông tin thửa đất, số Giấy chứng nhận, chủ sử dụng đất và giấy tờ chứng minh nguồn gốc đất phải thống nhất giữa tờ khai và hồ sơ đính kèm."
+      ]
+    },
+    {
+      "field_group": "secured_transactions",
+      "checks": [
+        "Nhóm góp vốn, thế chấp phải xác định rõ là đăng ký mới, thay đổi, xóa hay thông báo xử lý tài sản bảo đảm.",
+        "Nếu là thế chấp quyền tài sản phát sinh từ hợp đồng mua bán nhà ở, phải có thông tin hợp đồng và tài sản gắn liền với đất đủ để định danh tài sản bảo đảm."
+      ]
+    },
+    {
+      "field_group": "construction_and_housing",
+      "checks": [
+        "Nhóm xây dựng, nhà ở phải phân biệt rõ xây mới, sửa chữa, cải tạo, di dời hay tiếp cận nhà ở xã hội.",
+        "Các trường hợp xin phép xây dựng nhà ở riêng lẻ cần kiểm tra địa chỉ xây dựng, quyền sử dụng đất và bản vẽ thiết kế trước khi nhận hồ sơ."
+      ]
+    },
+    {
+      "field_group": "electricity_services",
+      "checks": [
+        "Nhóm điện năng phải phân biệt giữa cấp điện mới và thông báo phát triển điện mặt trời mái nhà có đấu nối.",
+        "Nếu là cấp điện mới, cần có địa chỉ sử dụng điện, nhu cầu công suất và giấy tờ định danh người yêu cầu."
+      ]
+    }
+  ]
+}

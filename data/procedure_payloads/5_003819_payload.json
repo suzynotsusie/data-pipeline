@@ -1,0 +1,293 @@
+{
+  "schema_version": "3.0",
+  "record_type": "public_service_procedure_payload",
+  "id": "procedure-5.003819",
+  "procedure_code": "5.003819",
+  "code": "5.003819",
+  "title": "Đổi tên trường trung cấp, trường trung học nghề công lập trực thuộc Bộ Giáo dục và Đào tạo",
+  "language": "vi",
+  "status": "generated_from_pipeline",
+  "field": "Giáo dục nghề nghiệp",
+  "group_key": "hoc_tap",
+  "workflow_family": null,
+  "subflow": null,
+  "source": {
+    "source_url": "file:///C:/Users/ku060/Downloads/VAIC%20source/data-pipeline/raw_data/5_003819/5_003819_procedure_detail.md",
+    "source_markdown_path": "C:\\Users\\ku060\\Downloads\\VAIC source\\data-pipeline\\raw_data\\5_003819\\5_003819_procedure_detail.md",
+    "normalized_payload_path": "C:\\Users\\ku060\\Downloads\\VAIC source\\data-pipeline\\govease-unified\\data\\normalized_structured\\5_003819_normalized_structured.json",
+    "enriched_payload_path": "C:\\Users\\ku060\\Downloads\\VAIC source\\data-pipeline\\govease-unified\\data\\enriched_structured_priority\\5_003819_enriched_structured.json"
+  },
+  "scope": {
+    "included": "Thủ tục này thuộc nhóm giáo dục và học tập, thường liên quan đến hồ sơ đào tạo, văn bằng hoặc điều kiện học tập của người học. Kết quả thường nhận được là Quyết định quyết định đổi tên trung tâm giáo dục nghề nghiệp, trường trung cấp. Thời gian xử lý tham khảo: 3 ngày làm việc.",
+    "not_included": []
+  },
+  "agency": {
+    "executing_agency": "Bộ Giáo dục và Đào tạo",
+    "submission_place": null,
+    "receiving_places": []
+  },
+  "target_users": [
+    "Tổ chức (không bao gồm doanh nghiệp",
+    "HTX)"
+  ],
+  "submission_methods": [
+    {
+      "code": "IN_PERSON",
+      "label": "Trực tiếp",
+      "processing_time": "3 ngày làm việc",
+      "fee": null,
+      "description": null
+    },
+    {
+      "code": "ONLINE",
+      "label": "Trực tuyến",
+      "processing_time": "3 ngày làm việc",
+      "fee": null,
+      "description": null
+    },
+    {
+      "code": "POSTAL",
+      "label": "Dịch vụ bưu chính",
+      "processing_time": "3 ngày làm việc",
+      "fee": null,
+      "description": null
+    }
+  ],
+  "processing_note": "Thời gian xử lý tham chiếu: 3 ngày làm việc. Nên rà trước thông tin người học, cơ sở đào tạo và loại kết quả cần xin xác nhận hoặc cấp lại. Có thể chọn kênh nộp phù hợp: Trực tiếp, Trực tuyến, Dịch vụ bưu chính. Hiện có 1 mục giấy tờ cần theo dõi trong checklist.",
+  "documents": {
+    "normally_required": [
+      {
+        "name": "Văn bản đề nghị đổi tên theo Mẫu số 04 Phụ lục I ban hành kèm theo Nghị định số 95/NĐ-CP.",
+        "quantity": "1 bản chính, 0 bản sao",
+        "notes": [],
+        "group": "default",
+        "attachment_path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/5_003819/M%E1%BA%ABu%20s%E1%BB%91%204-Pl1.doc"
+      }
+    ],
+    "conditional": [],
+    "forms": [
+      {
+        "name": "Văn bản đề nghị đổi tên theo Mẫu số 04 Phụ lục I ban hành kèm theo Nghị định số 95/NĐ-CP.",
+        "attachment_label": "Mẫu số 4-Pl1.doc",
+        "attachment_path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/5_003819/M%E1%BA%ABu%20s%E1%BB%91%204-Pl1.doc"
+      }
+    ],
+    "presented": [],
+    "notes": [],
+    "summary": [
+      {
+        "group": "default",
+        "name": "Văn bản đề nghị đổi tên theo Mẫu số 04 Phụ lục I ban hành kèm theo Nghị định số 95/NĐ-CP.",
+        "quantity": "1 bản chính, 0 bản sao",
+        "notes": [],
+        "attachment_path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/5_003819/M%E1%BA%ABu%20s%E1%BB%91%204-Pl1.doc"
+      },
+      {
+        "group": null,
+        "name": "Văn bản đề nghị đổi tên theo Mẫu số 04 Phụ lục I ban hành kèm theo Nghị định số 95/NĐ-CP.",
+        "quantity": null,
+        "notes": null,
+        "attachment_path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/5_003819/M%E1%BA%ABu%20s%E1%BB%91%204-Pl1.doc"
+      }
+    ]
+  },
+  "steps": [
+    {
+      "order": 1,
+      "title": "Bước 1",
+      "description": "1.",
+      "example": null
+    },
+    {
+      "order": 2,
+      "title": "a)",
+      "description": "a) Cơ quan đề nghị đổi tên trường trung cấp, trường trung học nghề công lập trực thuộc Bộ Giáo dục và Đào tạo gửi hồ sơ theo quy định tại khoản 2 Điều 4 Nghị định 95/NĐ-CP đến Cổng Dịch vụ công quốc gia hoặc qua dịch vụ bưu chính hoặc trực tiếp tại Bộ phận một cửa của Bộ Giáo dục và Đào tạo; 2.",
+      "example": "dịch vụ bưu chính"
+    },
+    {
+      "order": 3,
+      "title": "b)",
+      "description": "b) Trong thời hạn 03 ngày làm việc kể từ ngày nhận được hồ sơ đề nghị đổi tên trường trung cấp, trường trung học nghề, Bộ Giáo dục và Đào tạo thẩm định hồ sơ, trình Bộ trưởng Bộ Giáo dục và Đào tạo quyết định đổi tên trường trung cấp, trường trung học nghề. Trường hợp không quyết định đổi tên thì có văn bản trả lời và nêu rõ lý do; 3.",
+      "example": "03 ngày làm việc"
+    },
+    {
+      "order": 4,
+      "title": "c)",
+      "description": "c) Trong thời hạn 02 ngày làm việc kể từ ngày ban hành quyết định đổi tên, Bộ Giáo dục và Đào tạo có trách nhiệm công khai và gửi quyết định đổi tên cơ sở giáo dục nghề nghiệp đến các cơ quan, đơn vị liên quan để theo dõi, quản lý; 4.",
+      "example": "02 ngày làm việc"
+    },
+    {
+      "order": 5,
+      "title": "d)",
+      "description": "d) Trường trung cấp, trường trung học nghề sau khi đổi tên có trách nhiệm thực hiện công khai tên chính thức, tên tiếng nước ngoài hoặc tên giao dịch quốc tế hoặc các tên gọi khác trên trang thông tin điện tử của trường trung cấp, trường trung học nghề; cập nhật thông tin tên gọi vào cơ sở dữ liệu quốc gia về giáo dục nghề nghiệp theo quy định và được tiếp tục đào tạo các nhóm ngành, nhóm nghề đã được cơ quan có thẩm quyền cấp trong giấy phép hoạt động giáo dục nghề nghiệp.",
+      "example": null
+    }
+  ],
+  "input_fields": [
+    {
+      "field": "learner_full_name",
+      "label": "Tên người học",
+      "type": "string",
+      "required": true
+    },
+    {
+      "field": "education_record_type",
+      "label": "Loại hồ sơ học tập cần xử lý",
+      "type": "string",
+      "required": true
+    },
+    {
+      "field": "education_institution",
+      "label": "Cơ sở đào tạo liên quan",
+      "type": "string",
+      "required": false
+    },
+    {
+      "field": "submission_channel_preference",
+      "label": "Kênh nộp dự kiến",
+      "type": "enum",
+      "required": false,
+      "options": [
+        "Trực tiếp",
+        "Trực tuyến",
+        "Dịch vụ bưu chính"
+      ]
+    }
+  ],
+  "validation_rules": [
+    {
+      "id": "required-1",
+      "severity": "error",
+      "field": "learner_full_name",
+      "rule": "Trường bắt buộc phải có dữ liệu hợp lệ trước khi nộp.",
+      "message": "Thiếu trường bắt buộc: Tên người học."
+    },
+    {
+      "id": "required-2",
+      "severity": "error",
+      "field": "education_record_type",
+      "rule": "Trường bắt buộc phải có dữ liệu hợp lệ trước khi nộp.",
+      "message": "Thiếu trường bắt buộc: Loại hồ sơ học tập cần xử lý."
+    },
+    {
+      "id": "hint-1",
+      "severity": "warning",
+      "field": "general",
+      "rule": "Nên xác định trước kênh nộp hồ sơ để biết có cần bản giấy, bản điện tử hay xuất trình trực tiếp.",
+      "message": "Nên xác định trước kênh nộp hồ sơ để biết có cần bản giấy, bản điện tử hay xuất trình trực tiếp."
+    },
+    {
+      "id": "hint-2",
+      "severity": "warning",
+      "field": "general",
+      "rule": "Có mẫu biểu đính kèm, nên kiểm tra đúng biểu mẫu trước khi nộp.",
+      "message": "Có mẫu biểu đính kèm, nên kiểm tra đúng biểu mẫu trước khi nộp."
+    },
+    {
+      "id": "hint-3",
+      "severity": "warning",
+      "field": "general",
+      "rule": "Nên rà lại thông tin người học, cơ sở đào tạo và loại xác nhận hoặc văn bằng cần xin.",
+      "message": "Nên rà lại thông tin người học, cơ sở đào tạo và loại xác nhận hoặc văn bằng cần xin."
+    }
+  ],
+  "common_errors": [
+    {
+      "field": "general",
+      "issue": "Điền sai mẫu tờ khai hoặc chọn sai biểu mẫu đi kèm.",
+      "fix": "Nên xác định trước kênh nộp hồ sơ để biết có cần bản giấy, bản điện tử hay xuất trình trực tiếp."
+    }
+  ],
+  "clarifying_questions": [
+    {
+      "id": "clarify_1",
+      "question": "Bạn đang cần xử lý hồ sơ học tập, văn bằng hay xác nhận nào?",
+      "purpose": "workflow_intake"
+    },
+    {
+      "id": "clarify_2",
+      "question": "Người học và cơ sở đào tạo liên quan đã xác định rõ chưa?",
+      "purpose": "workflow_intake"
+    }
+  ],
+  "legal_basis": [
+    {
+      "title": "Nghị quyết số 23/2026/NQ-CP của Chính phủ: Về cắt giảm, phân cấp, đơn giản hóa thủ tục hành chính và cắt giảm điều kiện kinh doanh thuộc phạm vi quản lý của Bộ Giáo dục và Đào tạo",
+      "code": "23/2026/NQ-CP"
+    },
+    {
+      "title": "Nghị định số 95/2026/NĐ-CP của Chính phủ: Quy định chi tiết một số điều của Luật Giáo dục nghề nghiệp",
+      "code": "95/2026/NĐ-CP"
+    },
+    {
+      "title": "Luật Giáo dục nghề nghiệp",
+      "code": "Luật Giáo dục nghề nghiệp số 124/2025/QH15"
+    }
+  ],
+  "legal_bases": [
+    {
+      "title": "Nghị quyết số 23/2026/NQ-CP của Chính phủ: Về cắt giảm, phân cấp, đơn giản hóa thủ tục hành chính và cắt giảm điều kiện kinh doanh thuộc phạm vi quản lý của Bộ Giáo dục và Đào tạo",
+      "code": "23/2026/NQ-CP"
+    },
+    {
+      "title": "Nghị định số 95/2026/NĐ-CP của Chính phủ: Quy định chi tiết một số điều của Luật Giáo dục nghề nghiệp",
+      "code": "95/2026/NĐ-CP"
+    },
+    {
+      "title": "Luật Giáo dục nghề nghiệp",
+      "code": "Luật Giáo dục nghề nghiệp số 124/2025/QH15"
+    }
+  ],
+  "faq": [
+    {
+      "question": "Có thể nộp qua kênh nào?",
+      "answer": "Các kênh hiện có: Trực tiếp, Trực tuyến, Dịch vụ bưu chính."
+    },
+    {
+      "question": "Thời gian xử lý tham chiếu là bao lâu?",
+      "answer": "Thời gian xử lý tham chiếu hiện có là 3 ngày làm việc."
+    },
+    {
+      "question": "Kết quả chính của thủ tục là gì?",
+      "answer": "Kết quả chính được trích xuất là Quyết định quyết định đổi tên trung tâm giáo dục nghề nghiệp, trường trung cấp."
+    }
+  ],
+  "guidance": {
+    "highlight_documents": [
+      {
+        "bucket": "required",
+        "name": "Văn bản đề nghị đổi tên theo Mẫu số 04 Phụ lục I ban hành kèm theo Nghị định số 95/NĐ-CP.",
+        "conditions": [],
+        "attachment_path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/5_003819/M%E1%BA%ABu%20s%E1%BB%91%204-Pl1.doc"
+      }
+    ],
+    "special_cases": [],
+    "common_errors": [
+      "Điền sai mẫu tờ khai hoặc chọn sai biểu mẫu đi kèm."
+    ],
+    "validation_hints": [
+      "Nên xác định trước kênh nộp hồ sơ để biết có cần bản giấy, bản điện tử hay xuất trình trực tiếp.",
+      "Có mẫu biểu đính kèm, nên kiểm tra đúng biểu mẫu trước khi nộp.",
+      "Nên rà lại thông tin người học, cơ sở đào tạo và loại xác nhận hoặc văn bằng cần xin."
+    ]
+  },
+  "next_steps": {
+    "summary": "Nên rà trước thông tin người học, cơ sở đào tạo và loại kết quả cần xin xác nhận hoặc cấp lại. Có thể chọn kênh nộp phù hợp: Trực tiếp, Trực tuyến, Dịch vụ bưu chính. Hiện có 1 mục giấy tờ cần theo dõi trong checklist.",
+    "time_badge": "3 ngày làm việc",
+    "result_label": "Quyết định quyết định đổi tên trung tâm giáo dục nghề nghiệp, trường trung cấp",
+    "primary_channel": "in_person",
+    "channels": [
+      "in_person",
+      "online",
+      "postal"
+    ]
+  },
+  "notes": [],
+  "provenance": {
+    "pipeline": "raw->structured->normalized->enriched->ui_api_payload",
+    "normalizer_version": "0.2.0",
+    "enricher_version": "0.2.0",
+    "mapping_notes": "excluded_from_clean_workflow_dataset",
+    "supported_group": true
+  }
+}

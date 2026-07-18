@@ -2,7 +2,7 @@ from __future__ import annotations
 
 import unittest
 
-from backend.app.services.procedures import form_schema, list_procedures
+from backend.app.services.procedures import form_schema, list_procedures, procedure_detail
 from govease_ai.procedure_data import load_procedure_store
 
 
@@ -13,7 +13,10 @@ class ProcedureApiModelTests(unittest.TestCase):
 
     def test_catalog_defaults_can_expose_detailed_pilot_procedures(self) -> None:
         items = list_procedures(self.store, detailed_only=True)
-        self.assertEqual({"1.001193", "1.004194"}, {item["code"] for item in items})
+        codes = {item["code"] for item in items}
+        self.assertIn("1.001193", codes)
+        self.assertIn("1.004194", codes)
+        self.assertGreaterEqual(len(items), 2)
 
     def test_form_schema_has_required_fields_and_sources(self) -> None:
         for code in ("1.001193", "1.004194"):
@@ -31,6 +34,27 @@ class ProcedureApiModelTests(unittest.TestCase):
         self.assertIn("Cá nhân đang nuôi dưỡng trẻ", fields["requester.relationship_to_child"]["options"])
         self.assertEqual("^[0-9]{12}$", fields["mother.identity_number"]["validation"]["pattern"])
         self.assertEqual("vneid", fields["mother.identity_number"]["prefill_source"])
+
+    def test_procedure_detail_exposes_user_facing_guidance(self) -> None:
+        detail = procedure_detail(self.store.require("1.004194"))
+        checklist = detail["checklist"]
+        self.assertTrue(checklist["user_steps"])
+        self.assertLessEqual(len(checklist["user_steps"]), 7)
+        self.assertTrue(checklist["next_step_summary"])
+
+    def test_procedure_detail_localizes_submission_channels(self) -> None:
+        detail = procedure_detail(self.store.require("1.004194"))
+        summary = detail["checklist"]["next_step_summary"]
+        self.assertNotIn("in_person", summary)
+        self.assertNotIn("online", summary)
+        self.assertNotIn("postal", summary)
+
+    def test_procedure_detail_filters_and_compacts_documents(self) -> None:
+        detail = procedure_detail(self.store.require("2.000635"))
+        documents = detail["checklist"]["documents"]
+        self.assertTrue(documents)
+        self.assertTrue(all(item["name"].strip() for item in documents))
+        self.assertTrue(all(len(item["name"]) <= 160 for item in documents))
 
 
 if __name__ == "__main__":

@@ -1,0 +1,304 @@
+{
+  "schema_version": "3.0",
+  "record_type": "public_service_procedure_payload",
+  "id": "procedure-1.008564",
+  "procedure_code": "1.008564",
+  "code": "1.008564",
+  "title": "Hoàn thuế khi chuyển đổi sở hữu, chuyển đổi doanh nghiệp, sáp nhập, hợp nhất, chia, tách, giải thể, phá sản, chấm dứt hoạt động đối với trường hợp không thuộc diện cơ quan thuế kiểm tra tại trụ sở của người nộp thuế",
+  "language": "vi",
+  "status": "generated_from_pipeline",
+  "field": "Thuế",
+  "group_key": "suc_khoe_y_te",
+  "workflow_family": null,
+  "subflow": null,
+  "source": {
+    "source_url": "file:///C:/Users/ku060/Downloads/VAIC%20source/data-pipeline/raw_data/1_008564/1_008564_procedure_detail.md",
+    "source_markdown_path": "C:\\Users\\ku060\\Downloads\\VAIC source\\data-pipeline\\raw_data\\1_008564\\1_008564_procedure_detail.md",
+    "normalized_payload_path": "C:\\Users\\ku060\\Downloads\\VAIC source\\data-pipeline\\govease-unified\\data\\normalized_structured\\1_008564_normalized_structured.json",
+    "enriched_payload_path": "C:\\Users\\ku060\\Downloads\\VAIC source\\data-pipeline\\govease-unified\\data\\enriched_structured_priority\\1_008564_enriched_structured.json"
+  },
+  "scope": {
+    "included": "Thủ tục này thuộc nhóm y tế, thường cần đối chiếu thông tin người bệnh, đơn vị tiếp nhận hoặc quyền lợi chuyên ngành. Kết quả thường nhận được là Quyết định hoàn thuế kiêm bù trừ thu Ngân sách nhà nước (02/QĐHT). Thời gian xử lý tham khảo: 6 ngày làm việc.",
+    "not_included": []
+  },
+  "agency": {
+    "executing_agency": "Thuế cơ sở, Cục Thuế - Bộ tài chính, Thuế tỉnh, thành phố",
+    "submission_place": null,
+    "receiving_places": []
+  },
+  "target_users": [
+    "Hợp tác xã",
+    "Doanh nghiệp",
+    "Tổ chức nước ngoài",
+    "Doanh nghiệp Việt Nam",
+    "Doanh nghiệp có vốn đầu tư nước ngoài",
+    "Tổ chức (không bao gồm doanh nghiệp",
+    "HTX)"
+  ],
+  "submission_methods": [
+    {
+      "code": "ONLINE",
+      "label": "Trực tuyến",
+      "processing_time": "6 ngày làm việc",
+      "fee": null,
+      "description": null
+    },
+    {
+      "code": "POSTAL",
+      "label": "Dịch vụ bưu chính",
+      "processing_time": "6 ngày làm việc",
+      "fee": null,
+      "description": null
+    },
+    {
+      "code": "IN_PERSON",
+      "label": "Trực tiếp",
+      "processing_time": "40 ngày",
+      "fee": null,
+      "description": null
+    }
+  ],
+  "processing_note": "Thời gian xử lý tham chiếu: 6 ngày làm việc. Nên xác định rõ đối tượng tham gia, quyền lợi hoặc nhu cầu điều chỉnh hồ sơ y tế trước khi nộp. Có thể chọn kênh nộp phù hợp: Trực tiếp, Trực tuyến, Dịch vụ bưu chính. Hiện có khoảng 2 mục giấy tờ cần theo dõi trong checklist.",
+  "documents": {
+    "normally_required": [
+      {
+        "name": "Giấy đề nghị hoàn trả khoản thu NSNN theo mẫu số 01/HT ban hành kèm theo Phụ lục I Thông tư số 80/2021/TT-BTC (đã được sửa đổi tại Thông tư số 40/2025/TT-BTC và Thông tư số 94/2025/TT-BTC);",
+        "quantity": "1 bản chính, 1 bản sao",
+        "notes": [],
+        "group": "Đối với trường hợp hoàn thuế GTGT chưa được khấu trừ hết:",
+        "attachment_path": null
+      }
+    ],
+    "conditional": [
+      {
+        "condition": "+ Văn bản ủy quyền trong trường hợp người nộp thuế không trực tiếp thực hiện thủ tục hoàn thuế, trừ trường hợp đại lý thuế nộp hồ sơ hoàn thuế theo hợp đồng đã ký giữa đại lý thuế và người nộp thuế;",
+        "document": "+ Văn bản ủy quyền trong trường hợp người nộp thuế không trực tiếp thực hiện thủ tục hoàn thuế, trừ trường hợp đại lý thuế nộp hồ sơ hoàn thuế theo hợp đồng đã ký giữa đại lý thuế và người nộp thuế;",
+        "quantity": "1 bản chính, 0 bản sao",
+        "notes": [],
+        "attachment_path": null
+      }
+    ],
+    "forms": [],
+    "presented": [],
+    "notes": [],
+    "summary": [
+      {
+        "group": "Đối với trường hợp hoàn thuế GTGT chưa được khấu trừ hết:",
+        "name": "Giấy đề nghị hoàn trả khoản thu NSNN theo mẫu số 01/HT ban hành kèm theo Phụ lục I Thông tư số 80/2021/TT-BTC (đã được sửa đổi tại Thông tư số 40/2025/TT-BTC và Thông tư số 94/2025/TT-BTC);",
+        "quantity": "1 bản chính, 1 bản sao",
+        "notes": [],
+        "attachment_path": null
+      },
+      {
+        "group": null,
+        "name": null,
+        "quantity": "1 bản chính, 0 bản sao",
+        "notes": [],
+        "attachment_path": null
+      }
+    ]
+  },
+  "steps": [
+    {
+      "order": 1,
+      "title": "Bước 1",
+      "description": "1. +",
+      "example": null
+    },
+    {
+      "order": 2,
+      "title": "Bước 1.",
+      "description": "Bước 1. Người nộp thuế (NNT) thuộc trường hợp và đối tượng được hoàn thuế khi chuyển đổi sở hữu, chuyển đổi doanh nghiệp, sáp nhập, hợp nhất, chia, tách, giải thể, phá sản, chấm dứt hoạt động không thuộc diện cơ quan thuế kiểm tra tại trụ sở của người nộp thuế chuẩn bị hồ sơ đề nghị hoàn và gửi đến cơ quan thuế. Trường hợp NNT gửi hồ sơ qua giao dịch điện tử: NNT truy cập vào Cổng thông tin điện tử mà NNT lựa chọn (Cổng thông tin điện tử của Tổng Thuế tỉnh/TP/Cổng thông tin điện tử của cơ quan nhà nước có thẩm quyền bao gồm: Cổng dịch vụ công quốc gia, Cổng dịch vụ công cấp Bộ, cấp tỉnh theo quy định về thực hiện cơ chế một cửa, một cửa liên thông trong giải quyết thủ tục hành chính và đã được kết nối với Cổng thông tin điện tử của Tổng Thuế tỉnh/TP (sau đây gọi là Cổng thông tin điện tử của cơ quan nhà nước có thẩm quyền/Cổng thông tin của tổ chức cung cấp dịch vụ T-VAN) để khai hồ sơ hoàn thuế và các phụ lục đính kèm theo quy định dưới dạng điện tử (nếu có), ký điện tử và gửi đến cơ quan thuế qua Cổng thông tin điện tử mà NNT lựa chọn. +",
+      "example": null
+    },
+    {
+      "order": 3,
+      "title": "Bước 2.",
+      "description": "Bước 2. Cơ quan thuế tiếp nhận: ++ Trường hợp hồ sơ được nộp trực tiếp tại cơ quan thuế: +++ Tiếp nhận hồ sơ: công chức thuế tiếp nhận hồ sơ và gửi Thông báo về việc tiếp nhận hồ sơ theo mẫu số 01/TB-HT ban hành kèm theo phụ lục I Thông tư số 80/2021/TT-BTC ngày 29/9/2021 của Bộ Tài chính hướng dẫn thi hành một số điều của Luật quản lý thuế và Nghị định số 126/2020/NĐ-CP ngày 19/10/2020 của Chính phủ quy định chi tiết một số điều của Luật Quản lý thuế (sau đây gọi là Thông tư số 80/2021/TT-BTC) cho NNT và ghi sổ nhận hồ sơ trên hệ thống ứng dụng quản lý thuế. +++ Kiểm tra, giải quyết hồ sơ: ++++ Hồ sơ được chấp nhận/không chấp nhận: Cơ quan thuế gửi Thông báo chấp nhận/không chấp nhận hồ sơ đề nghị hoàn thuế theo mẫu số 02/TB-HT ban hành kèm theo Phụ lục I Thông tư số 80/2021/TT-BTC trong thời hạn 03 (ba) ngày làm việc kể từ ngày tiếp nhận hồ sơ đề nghị hoàn thuế. ++++ Hồ sơ được chấp nhận giải quyết: Cơ quan thuế giải quyết hồ sơ đề nghị hoàn thuế của NNT và trả kết quả theo quy định của Luật Quản lý thuế và các văn bản hướng dẫn thi hành. ++ Trường hợp hồ sơ được gửi qua đường bưu chính: +++ Tiếp nhận hồ sơ: công chức thuế đóng dấu tiếp nhận, ghi ngày nhận hồ sơ và ghi sổ hồ sơ trên hệ thống ứng dụng quản lý thuế. +++ Kiểm tra, giải quyết hồ sơ: ++++ Hồ sơ được chấp nhận/không chấp nhận: Cơ quan thuế gửi thông báo chấp nhận/không chấp nhận hồ sơ đề nghị hoàn thuế theo mẫu số 02/TB-HT ban hành kèm theo Phụ lục I Thông tư số 80/2021/TT-BTC trong thời hạn 03 (ba) ngày làm việc kể từ ngày tiếp nhận hồ sơ đề nghị hoàn thuế. ++++ Hồ sơ không đúng thủ tục: Cơ quan thuế gửi Thông báo về việc hồ sơ không đúng thủ tục theo mẫu số 03/TB-HT ban hành kèm theo Phụ lục I Thông tư số 80/2021/TT-BTC trong thời hạn 03 (ba) ngày làm việc kể từ ngày tiếp nhận hồ sơ đề nghị hoàn thuế. ++++ Hồ sơ được chấp nhận giải quyết: Cơ quan thuế giải quyết hồ sơ đề nghị hoàn thuế của NNT và trả kết quả theo quy định của Luật Quản lý thuế và các văn bản hướng dẫn thi hành. ++ Trường hợp hồ sơ được nộp thông qua giao dịch điện tử, việc tiếp nhận, kiểm tra, chấp nhận hồ sơ hoàn thuế do cơ quan thuế thực hiện thông qua hệ thống xử lý dữ liệu điện tử: +++ Tiếp nhận hồ sơ: Cổng thông tin điện tử của Tổng Thuế tỉnh/TP gửi thông báo tiếp nhận việc NNT đã nộp hồ sơ đề nghị hoàn thuế theo mẫu số 01/TB-HT ban hành kèm theo Phụ lục I Thông tư số 80/2021/TT-BTC cho NNT qua Cổng thông tin điện tử mà NNT lựa chọn lập và gửi hồ sơ (Cổng thông tin điện tử của cơ quan nhà nước có thẩm quyền hoặc tổ chức cung cấp dịch vụ T-VAN) chậm nhất 15 phút kể từ khi nhận được hồ sơ đề nghị hoàn thuế của NNT. +++ Kiểm tra, giải quyết hồ sơ: ++++ Hồ sơ được chấp nhận/không chấp nhận: Cơ quan thuế gửi thông báo chấp nhận/không chấp nhận hồ sơ theo mẫu số 02/TB-HT ban hành kèm theo Phụ lục I Thông tư số 80/2021/TT-BTC đến Cổng thông tin điện tử mà NNT lựa chọn lập và gửi hồ sơ (Cổng thông tin điện tử của cơ quan nhà nước có thẩm quyền hoặc tổ chức cung cấp dịch vụ T-VAN) trong thời hạn 03 (ba) ngày làm việc kể từ ngày thông báo tiếp nhận hồ sơ hoàn thuế điện tử. ++++ Hồ sơ được chấp nhận giải quyết: Cơ quan thuế giải quyết hồ sơ đề nghị hoàn thuế của NNT và trả kết quả theo quy định của Luật Quản lý thuế và các văn bản hướng dẫn thi hành.",
+      "example": "dịch vụ bưu chính"
+    }
+  ],
+  "input_fields": [
+    {
+      "field": "request_subject",
+      "label": "Đối tượng làm thủ tục",
+      "type": "string",
+      "required": true
+    },
+    {
+      "field": "insurance_or_medical_need",
+      "label": "Nhu cầu bảo hiểm hoặc y tế",
+      "type": "string",
+      "required": true
+    },
+    {
+      "field": "submission_channel_preference",
+      "label": "Kênh nộp dự kiến",
+      "type": "enum",
+      "required": false,
+      "options": [
+        "Trực tiếp",
+        "Trực tuyến",
+        "Dịch vụ bưu chính"
+      ]
+    },
+    {
+      "field": "has_insurance_number",
+      "label": "Đã có mã BHXH/BHYT",
+      "type": "boolean",
+      "required": false
+    }
+  ],
+  "validation_rules": [
+    {
+      "id": "required-1",
+      "severity": "error",
+      "field": "request_subject",
+      "rule": "Trường bắt buộc phải có dữ liệu hợp lệ trước khi nộp.",
+      "message": "Thiếu trường bắt buộc: Đối tượng làm thủ tục."
+    },
+    {
+      "id": "required-2",
+      "severity": "error",
+      "field": "insurance_or_medical_need",
+      "rule": "Trường bắt buộc phải có dữ liệu hợp lệ trước khi nộp.",
+      "message": "Thiếu trường bắt buộc: Nhu cầu bảo hiểm hoặc y tế."
+    },
+    {
+      "id": "hint-1",
+      "severity": "warning",
+      "field": "general",
+      "rule": "Nên xác định trước kênh nộp hồ sơ để biết có cần bản giấy, bản điện tử hay xuất trình trực tiếp.",
+      "message": "Nên xác định trước kênh nộp hồ sơ để biết có cần bản giấy, bản điện tử hay xuất trình trực tiếp."
+    },
+    {
+      "id": "hint-2",
+      "severity": "warning",
+      "field": "general",
+      "rule": "Nên xác định đúng nhóm đối tượng, mã số bảo hiểm và quyền lợi áp dụng trước khi nộp.",
+      "message": "Nên xác định đúng nhóm đối tượng, mã số bảo hiểm và quyền lợi áp dụng trước khi nộp."
+    }
+  ],
+  "common_errors": [
+    {
+      "field": "general",
+      "issue": "Thiếu giấy tờ hoặc nội dung ủy quyền phù hợp.",
+      "fix": "Nên xác định trước kênh nộp hồ sơ để biết có cần bản giấy, bản điện tử hay xuất trình trực tiếp."
+    },
+    {
+      "field": "general",
+      "issue": "Điền sai mẫu tờ khai hoặc chọn sai biểu mẫu đi kèm.",
+      "fix": "Nên xác định trước kênh nộp hồ sơ để biết có cần bản giấy, bản điện tử hay xuất trình trực tiếp."
+    }
+  ],
+  "clarifying_questions": [
+    {
+      "id": "clarify_1",
+      "question": "Bạn đang muốn đăng ký, điều chỉnh hay xác nhận quyền lợi y tế hoặc bảo hiểm nào?",
+      "purpose": "workflow_intake"
+    },
+    {
+      "id": "clarify_2",
+      "question": "Bạn đã có mã BHXH/BHYT hoặc thông tin đơn vị tiếp nhận liên quan chưa?",
+      "purpose": "workflow_intake"
+    }
+  ],
+  "legal_basis": [
+    {
+      "title": "Luật Quản lý thuế",
+      "code": "38/2019/QH14"
+    },
+    {
+      "title": "Thông tư số 19/2021/TT-BTC ngày 18/3/2021 của Bộ Tài chính hướng dẫn Giao dịch điện tử trong lĩnh vực thuế",
+      "code": "19/2021/TT-BTC"
+    },
+    {
+      "title": "Nghị định số 118/2025/NĐ-CP của Chính phủ: Về thực hiện thủ tục hành chính theo cơ chế một cửa, một cửa liên thông tại Bộ phận Một cửa và Cổng Dịch vụ công quốc gia",
+      "code": "118/2025/NĐ-CP"
+    },
+    {
+      "title": "Thông tư 80/2021/TT-BTC",
+      "code": "80/2021/TT-BTC"
+    }
+  ],
+  "legal_bases": [
+    {
+      "title": "Luật Quản lý thuế",
+      "code": "38/2019/QH14"
+    },
+    {
+      "title": "Thông tư số 19/2021/TT-BTC ngày 18/3/2021 của Bộ Tài chính hướng dẫn Giao dịch điện tử trong lĩnh vực thuế",
+      "code": "19/2021/TT-BTC"
+    },
+    {
+      "title": "Nghị định số 118/2025/NĐ-CP của Chính phủ: Về thực hiện thủ tục hành chính theo cơ chế một cửa, một cửa liên thông tại Bộ phận Một cửa và Cổng Dịch vụ công quốc gia",
+      "code": "118/2025/NĐ-CP"
+    },
+    {
+      "title": "Thông tư 80/2021/TT-BTC",
+      "code": "80/2021/TT-BTC"
+    }
+  ],
+  "faq": [
+    {
+      "question": "Có thể nộp qua kênh nào?",
+      "answer": "Các kênh hiện có: Trực tiếp, Trực tuyến, Dịch vụ bưu chính."
+    },
+    {
+      "question": "Thời gian xử lý tham chiếu là bao lâu?",
+      "answer": "Thời gian xử lý tham chiếu hiện có là 6 ngày làm việc."
+    },
+    {
+      "question": "Kết quả chính của thủ tục là gì?",
+      "answer": "Kết quả chính được trích xuất là Quyết định hoàn thuế kiêm bù trừ thu Ngân sách nhà nước (02/QĐHT)."
+    }
+  ],
+  "guidance": {
+    "highlight_documents": [
+      {
+        "bucket": "required",
+        "name": "Giấy đề nghị hoàn trả khoản thu NSNN theo mẫu số 01/HT ban hành kèm theo Phụ lục I Thông tư số 80/2021/TT-BTC (đã được sửa đổi tại Thông tư số 40/2025/TT-BTC và Thông tư số 94/2025/TT-BTC);",
+        "conditions": [],
+        "attachment_path": null
+      },
+      {
+        "bucket": "conditional",
+        "name": "+ Văn bản ủy quyền trong trường hợp người nộp thuế không trực tiếp thực hiện thủ tục hoàn thuế, trừ trường hợp đại lý thuế nộp hồ sơ hoàn thuế theo hợp đồng đã ký giữa đại lý thuế và người nộp thuế;",
+        "conditions": [
+          "+ Văn bản ủy quyền trong trường hợp người nộp thuế không trực tiếp thực hiện thủ tục hoàn thuế, trừ trường hợp đại lý thuế nộp hồ sơ hoàn thuế theo hợp đồng đã ký giữa đại lý thuế và người nộp thuế;"
+        ],
+        "attachment_path": null
+      }
+    ],
+    "special_cases": [
+      "Có thể cần giấy tờ ủy quyền"
+    ],
+    "common_errors": [
+      "Thiếu giấy tờ hoặc nội dung ủy quyền phù hợp.",
+      "Điền sai mẫu tờ khai hoặc chọn sai biểu mẫu đi kèm."
+    ],
+    "validation_hints": [
+      "Nên xác định trước kênh nộp hồ sơ để biết có cần bản giấy, bản điện tử hay xuất trình trực tiếp.",
+      "Nên xác định đúng nhóm đối tượng, mã số bảo hiểm và quyền lợi áp dụng trước khi nộp."
+    ]
+  },
+  "next_steps": {
+    "summary": "Nên xác định rõ đối tượng tham gia, quyền lợi hoặc nhu cầu điều chỉnh hồ sơ y tế trước khi nộp. Có thể chọn kênh nộp phù hợp: Trực tiếp, Trực tuyến, Dịch vụ bưu chính. Hiện có khoảng 2 mục giấy tờ cần theo dõi trong checklist.",
+    "time_badge": "6 ngày làm việc",
+    "result_label": "Quyết định hoàn thuế kiêm bù trừ thu Ngân sách nhà nước (02/QĐHT)",
+    "primary_channel": "online",
+    "channels": [
+      "in_person",
+      "online",
+      "postal"
+    ]
+  },
+  "notes": [],
+  "provenance": {
+    "pipeline": "raw->structured->normalized->enriched->ui_api_payload",
+    "normalizer_version": "0.2.0",
+    "enricher_version": "0.2.0",
+    "mapping_notes": "excluded_from_clean_workflow_dataset",
+    "supported_group": true
+  }
+}

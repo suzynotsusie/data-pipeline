@@ -1,0 +1,211 @@
+{
+  "schema_version": "1.0",
+  "normalizer_version": "0.2.0",
+  "source": {
+    "procedure_code": "2.001117",
+    "title": "Cấp lại chứng chỉ hành nghề Quản tài viên trong trường hợp chứng chỉ bị mất hoặc bị hư hỏng không thể sử dụng được",
+    "raw_structured_parser_version": "0.1.0",
+    "field": "Quản tài viên"
+  },
+  "procedure": {
+    "level": "Cấp tỉnh",
+    "procedure_type": "NOT_ASSIGNED_REGULATION",
+    "target_users": [
+      "Công dân Việt Nam",
+      "Người nước ngoài"
+    ],
+    "authorities": [
+      "Chủ tịch ủy ban nhân dân cấp tỉnh"
+    ],
+    "receiving_places": []
+  },
+  "submission": {
+    "channels": [
+      "in_person",
+      "online",
+      "postal"
+    ],
+    "methods": [
+      {
+        "method_id": "method_1",
+        "channel": "online",
+        "processing_time_text": "5 ngày làm việc",
+        "fee_text": null,
+        "description": "Phí: 800.000 đồng/hồ sơ (áp dụng mức phí 400.000 đồng/hồ sơ kể từ ngày 01/7/2025 đến hết ngày 31/12/2026 theo Thông tư số 64/2025/TT-BTC).<br>Lệ phí: 100.000 đồng/hồ sơ.",
+        "is_online": true,
+        "is_postal": false,
+        "is_in_person": false
+      },
+      {
+        "method_id": "method_2",
+        "channel": "in_person",
+        "processing_time_text": "5 ngày làm việc",
+        "fee_text": null,
+        "description": "Phí: 800.000 đồng/hồ sơ (áp dụng mức phí 400.000 đồng/hồ sơ kể từ ngày 01/7/2025 đến hết ngày 31/12/2026 theo Thông tư số 64/2025/TT-BTC).<br>Lệ phí: 100.000 đồng/hồ sơ.",
+        "is_online": false,
+        "is_postal": false,
+        "is_in_person": true
+      },
+      {
+        "method_id": "method_3",
+        "channel": "postal",
+        "processing_time_text": "5 ngày làm việc",
+        "fee_text": null,
+        "description": "Phí: 800.000 đồng/hồ sơ (áp dụng mức phí 400.000 đồng/hồ sơ kể từ ngày 01/7/2025 đến hết ngày 31/12/2026 theo Thông tư số 64/2025/TT-BTC).<br>Lệ phí: 100.000 đồng/hồ sơ.",
+        "is_online": false,
+        "is_postal": true,
+        "is_in_person": false
+      }
+    ],
+    "timing_summary": {
+      "unique_processing_times": [
+        "5 ngày làm việc"
+      ],
+      "method_count": 3
+    }
+  },
+  "documents": {
+    "required": [
+      {
+        "document_id": "ch_ng_ch_h_nh_ngh_qu_n_t_i_vi_n_b_h_h_ng_kh_ng_th_s_d_ng_c",
+        "name": "Chứng chỉ hành nghề Quản tài viên bị hư hỏng không thể sử dụng được",
+        "group_name": "default",
+        "group_type": "unknown",
+        "original_count": "1",
+        "copy_count": "0",
+        "conditions": [],
+        "attachment_label": null,
+        "attachment_path": null
+      },
+      {
+        "document_id": "n_ngh_c_p_l_i_ch_ng_ch_h_nh_ngh_qu_n_t_i_vi_n_theo_m_u_tp_qtv_05",
+        "name": "Đơn đề nghị cấp lại chứng chỉ hành nghề Quản tài viên theo Mẫu TP- QTV-05",
+        "group_name": "default",
+        "group_type": "unknown",
+        "original_count": "1",
+        "copy_count": "0",
+        "conditions": [],
+        "attachment_label": "Mẫu TP-QTV-05.docx",
+        "attachment_path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/2_001117/M%E1%BA%ABu%20TP-QTV-05.docx"
+      },
+      {
+        "document_id": "02_nh_m_u_c_3cm_x_4cm_c_ch_p_kh_ng_qu_06_th_ng_tr_c_ng_y_n_p_h_s",
+        "name": "02 ảnh màu cỡ 3cm x 4cm được chụp không quá 06 tháng trước ngày nộp hồ sơ",
+        "group_name": "default",
+        "group_type": "unknown",
+        "original_count": "1",
+        "copy_count": "0",
+        "conditions": [],
+        "attachment_label": null,
+        "attachment_path": null
+      }
+    ],
+    "conditional": [],
+    "presented": [],
+    "notes": [],
+    "forms": [
+      {
+        "name": "Đơn đề nghị cấp lại chứng chỉ hành nghề Quản tài viên theo Mẫu TP- QTV-05",
+        "attachment_label": "Mẫu TP-QTV-05.docx",
+        "attachment_path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/2_001117/M%E1%BA%ABu%20TP-QTV-05.docx"
+      }
+    ],
+    "empty_groups": [],
+    "document_count": 3
+  },
+  "process": {
+    "steps": [
+      {
+        "step_id": "step_1",
+        "title": null,
+        "content": "1. Chứng chỉ hành nghề Quản tài viên được xem xét cấp lại trong trường hợp chứng chỉ bị mất hoặc bị hư hỏng không thể sử dụng được.",
+        "actor": "user",
+        "channel_hint": null,
+        "time_hint": null
+      },
+      {
+        "step_id": "step_2",
+        "title": null,
+        "content": "Người đề nghị cấp lại chứng chỉ hành nghề Quản tài viên lập 01 bộ hồ sơ và nộp trực tiếp hoặc qua dịch vụ bưu chính đến Sở Tư pháp nơi đã cấp chứng chỉ hành nghề đó hoặc trực tuyến trên môi trường điện tử theo quy định tại Điều 4 của Nghị định số 65/2026/NĐ-CP.",
+        "actor": "user",
+        "channel_hint": "trực tuyến",
+        "time_hint": null
+      },
+      {
+        "step_id": "step_3",
+        "title": null,
+        "content": "Trong thời hạn 03 ngày làm việc kể từ ngày nhận đủ hồ sơ hợp lệ, Sở Tư pháp xem xét, có văn bản đề nghị Chủ tịch Ủy ban nhân dân cấp tỉnh cấp lại chứng chỉ hành nghề Quản tài viên cho người đề nghị; trường hợp từ chối đề nghị phải trả lời bằng văn bản có nêu rõ lý do.",
+        "actor": "user",
+        "channel_hint": null,
+        "time_hint": "03 ngày làm việc"
+      },
+      {
+        "step_id": "step_4",
+        "title": null,
+        "content": "Trong thời hạn 02 ngày làm việc kể từ ngày Sở Tư pháp có văn bản đề nghị kèm theo hồ sơ hợp lệ, Chủ tịch Ủy ban nhân dân cấp tỉnh xem xét, cấp lại chứng chỉ hành nghề Quản tài viên cho người đề nghị; trường hợp từ chối cấp lại phải trả lời bằng văn bản có nêu rõ lý do.",
+        "actor": "user",
+        "channel_hint": null,
+        "time_hint": "02 ngày làm việc"
+      }
+    ],
+    "step_count": 4,
+    "notes": []
+  },
+  "eligibility": {
+    "conditions": [
+      "Chứng chỉ bị mất hoặc bị hư hỏng không thể sử dụng được."
+    ],
+    "has_conditions": true
+  },
+  "results": {
+    "items": [
+      {
+        "name": "Quyết định cấp chứng chỉ hành nghề Quản tài viên; Chứng chỉ hành nghề Quản tài viên",
+        "result_code": "KQ.G15.000139",
+        "raw_text": "Quyết định cấp chứng chỉ hành nghề Quản tài viên; Chứng chỉ hành nghề Quản tài viên"
+      }
+    ],
+    "primary_result": {
+      "name": "Quyết định cấp chứng chỉ hành nghề Quản tài viên; Chứng chỉ hành nghề Quản tài viên",
+      "result_code": "KQ.G15.000139",
+      "raw_text": "Quyết định cấp chứng chỉ hành nghề Quản tài viên; Chứng chỉ hành nghề Quản tài viên"
+    }
+  },
+  "legal_basis": {
+    "items": [
+      {
+        "title": "Thông tư quy định mức thu, miễn một số khoản phí, lệ phí nhằm hỗ trợ cho doanh nghiệp, người dân",
+        "code": "64/2025/TT-BTC"
+      },
+      {
+        "title": "Luật Phục hồi, phá sản",
+        "code": "142/2025/QH15"
+      },
+      {
+        "title": "Thông tư quy định mức thu, chế độ thu, nộp, quản lý và sử dụng phí thẩm định tiêu chuẩn, điều kiện hành nghề, hoạt động quản lý, thanh lý tài sản; lệ phí cấp chứng chỉ hành nghề quản tài viên",
+        "code": "224/2016/TT-BTC"
+      },
+      {
+        "title": "Nghị định số 65/2026/NĐ-CP quy định chi tiết một số điều và biện pháp thi hành Luật Phục hồi, phá sản về Quản tài viên và hành nghề quản lý, thanh lý tài sản;",
+        "code": "65/2026/NĐ-CP"
+      }
+    ],
+    "count": 4
+  },
+  "attachments": [
+    {
+      "label": "Mẫu TP-QTV-05.docx",
+      "path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/2_001117/M%E1%BA%ABu%20TP-QTV-05.docx",
+      "source_section": "Thành phần hồ sơ",
+      "document_name": "Đơn đề nghị cấp lại chứng chỉ hành nghề Quản tài viên theo Mẫu TP- QTV-05"
+    }
+  ],
+  "signals": {
+    "raw_parse_warnings": [],
+    "missing_documents": false,
+    "documents_section_present": true,
+    "documents_declared_empty": false,
+    "documents_only_in_notes": false,
+    "missing_results": false
+  }
+}

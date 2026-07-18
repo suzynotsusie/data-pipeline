@@ -1,0 +1,202 @@
+{
+  "schema_version": "1.0",
+  "normalizer_version": "0.2.0",
+  "source": {
+    "procedure_code": "1.115307",
+    "title": "Điều chỉnh thông tin đăng ký lao động trong trường hợp thay đổi tình trạng từ người có việc làm sang người thất nghiệp",
+    "raw_structured_parser_version": "0.1.0",
+    "field": "Việc làm"
+  },
+  "procedure": {
+    "level": "Cấp bộ/ngành",
+    "procedure_type": "TTHC được luật giao quy định chi tiết",
+    "target_users": [
+      "Công dân Việt Nam"
+    ],
+    "authorities": [
+      "Bộ Nội vụ"
+    ],
+    "receiving_places": []
+  },
+  "submission": {
+    "channels": [
+      "in_person",
+      "online",
+      "postal"
+    ],
+    "methods": [
+      {
+        "method_id": "method_1",
+        "channel": "online",
+        "processing_time_text": "1 ngày",
+        "fee_text": null,
+        "description": "trực tuyến qua Sàn giao dịch việc làm quốc gia<br>(https://www.vieclam.gov.vn) hoặc trên ứng dụng định danh điện tử VNeID. ngay sau khi người lao động hoàn thành Tờ khai<br>điện tử.",
+        "is_online": true,
+        "is_postal": false,
+        "is_in_person": false
+      },
+      {
+        "method_id": "method_2",
+        "channel": "in_person",
+        "processing_time_text": "1 ngày",
+        "fee_text": null,
+        "description": "trực tuyến qua Sàn giao dịch việc làm quốc gia<br>(https://www.vieclam.gov.vn) hoặc trên ứng dụng định danh điện tử VNeID. ngay sau khi người lao động hoàn thành Tờ khai<br>điện tử.",
+        "is_online": false,
+        "is_postal": false,
+        "is_in_person": true
+      },
+      {
+        "method_id": "method_3",
+        "channel": "postal",
+        "processing_time_text": "1 ngày",
+        "fee_text": null,
+        "description": "trực tuyến qua Sàn giao dịch việc làm quốc gia<br>(https://www.vieclam.gov.vn) hoặc trên ứng dụng định danh điện tử VNeID. ngay sau khi người lao động hoàn thành Tờ khai<br>điện tử.",
+        "is_online": false,
+        "is_postal": true,
+        "is_in_person": false
+      }
+    ],
+    "timing_summary": {
+      "unique_processing_times": [
+        "1 ngày"
+      ],
+      "method_count": 3
+    }
+  },
+  "documents": {
+    "required": [
+      {
+        "document_id": "t_khai_i_n_t_ng_k_i_u_ch_nh_th_ng_tin_ng_k_lao_ng_t_i_ph_l_c_k_m_theo_ngh_nh_s_318_2025_n_cp",
+        "name": "Tờ khai điện tử đăng ký, điều chỉnh thông tin đăng ký lao động (tại phụ lục kèm theo Nghị định số 318/2025/NĐ-CP).",
+        "group_name": "default",
+        "group_type": "unknown",
+        "original_count": "1",
+        "copy_count": "0",
+        "conditions": [],
+        "attachment_label": "Tờ khai kèm theo ND318.doc",
+        "attachment_path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/1_115307/T%E1%BB%9D%20khai%20k%C3%A8m%20theo%20ND318.doc"
+      }
+    ],
+    "conditional": [],
+    "presented": [],
+    "notes": [],
+    "forms": [
+      {
+        "name": "Tờ khai điện tử đăng ký, điều chỉnh thông tin đăng ký lao động (tại phụ lục kèm theo Nghị định số 318/2025/NĐ-CP).",
+        "attachment_label": "Tờ khai kèm theo ND318.doc",
+        "attachment_path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/1_115307/T%E1%BB%9D%20khai%20k%C3%A8m%20theo%20ND318.doc"
+      }
+    ],
+    "empty_groups": [],
+    "document_count": 1
+  },
+  "process": {
+    "steps": [
+      {
+        "step_id": "step_1",
+        "title": null,
+        "content": "1.",
+        "actor": "user",
+        "channel_hint": null,
+        "time_hint": null
+      },
+      {
+        "step_id": "step_2",
+        "title": "Bước 1.",
+        "content": "Bước 1. Người lao động truy cập vào Sàn giao dịch việc làm quốc gia (https://www.vieclam.gov.vn) hoặc trên ứng dụng định danh điện tử VNeID, chọn mục đăng ký, điều chỉnh thông tin đăng ký lao động và điền vào Tờ khai điện tử quy định tại khoản 1 Điều 6 Nghị định số 318/2025/NĐ-CP.",
+        "actor": "user",
+        "channel_hint": null,
+        "time_hint": null
+      },
+      {
+        "step_id": "step_3",
+        "title": null,
+        "content": "2.",
+        "actor": "user",
+        "channel_hint": null,
+        "time_hint": null
+      },
+      {
+        "step_id": "step_4",
+        "title": "Bước 2.",
+        "content": "Bước 2. Hệ thống đăng ký lao động tiếp nhận, xử lý và trả kết quả đăng ký thành công ngay sau khi người lao động hoàn thành Tờ khai điện tử, nếu đăng ký không thành công hệ thống phản hồi lý do.",
+        "actor": "user",
+        "channel_hint": null,
+        "time_hint": null
+      },
+      {
+        "step_id": "step_5",
+        "title": null,
+        "content": "3.",
+        "actor": "user",
+        "channel_hint": null,
+        "time_hint": null
+      },
+      {
+        "step_id": "step_6",
+        "title": "Bước 3.",
+        "content": "Bước 3. Thông tin điều chỉnh thông tin đăng ký lao động của người lao động được cập nhật, đồng bộ vào cơ sở dữ liệu về người lao động.",
+        "actor": "user",
+        "channel_hint": null,
+        "time_hint": null
+      }
+    ],
+    "step_count": 6,
+    "notes": []
+  },
+  "eligibility": {
+    "conditions": [
+      "thay đổi tình trạng từ người có việc làm sang người thất nghiệp.",
+      "- Thời gian thực hiện: Từ ngày 01/01/2027."
+    ],
+    "has_conditions": true
+  },
+  "results": {
+    "items": [
+      {
+        "name": "- Nếu đăng ký không thành công hệ thống phản hồi lý do",
+        "result_code": "KQ.G09.001347",
+        "raw_text": "- Nếu đăng ký không thành công hệ thống phản hồi lý do"
+      },
+      {
+        "name": "- Hệ thống đăng ký lao động trả kết quả đăng ký thành công ngay sau khi người lao động hoàn thành Tờ khai điện tử",
+        "result_code": "KQ.G09.001346",
+        "raw_text": "- Hệ thống đăng ký lao động trả kết quả đăng ký thành công ngay sau khi người lao động hoàn thành Tờ khai điện tử"
+      }
+    ],
+    "primary_result": {
+      "name": "- Nếu đăng ký không thành công hệ thống phản hồi lý do",
+      "result_code": "KQ.G09.001347",
+      "raw_text": "- Nếu đăng ký không thành công hệ thống phản hồi lý do"
+    }
+  },
+  "legal_basis": {
+    "items": [
+      {
+        "title": "Luật Việc làm",
+        "code": "74/2025/QH15"
+      },
+      {
+        "title": "Quy định chi tiết một số điều của Luật Việc làm về đăng ký lao động và hệ thống thông tin thị trường lao động",
+        "code": "318/2025/NĐ-CP"
+      }
+    ],
+    "count": 2
+  },
+  "attachments": [
+    {
+      "label": "Tờ khai kèm theo ND318.doc",
+      "path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/1_115307/T%E1%BB%9D%20khai%20k%C3%A8m%20theo%20ND318.doc",
+      "source_section": "Thành phần hồ sơ",
+      "document_name": "Tờ khai điện tử đăng ký, điều chỉnh thông tin đăng ký lao động (tại phụ lục kèm theo Nghị định số 318/2025/NĐ-CP)."
+    }
+  ],
+  "signals": {
+    "raw_parse_warnings": [],
+    "missing_documents": false,
+    "documents_section_present": true,
+    "documents_declared_empty": false,
+    "documents_only_in_notes": false,
+    "missing_results": false
+  }
+}

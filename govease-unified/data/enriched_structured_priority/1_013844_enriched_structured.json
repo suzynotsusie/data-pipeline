@@ -1,0 +1,106 @@
+{
+  "schema_version": "1.0",
+  "enricher_version": "0.2.0",
+  "source": {
+    "procedure_code": "1.013844",
+    "title": "Đăng ký chỉ định cơ sở kiểm nghiệm thực phẩm đã đƣợc tổ chức công nhận hợp pháp của Việt Nam hoặc tổ chức công nhận nƣớc ngoài là thành viên tham gia thỏa thuận lẫn nhau của Hiệp hội công nhận phòng thí nhiệm Quốc tế, Hiệp hội công nhận phòng thí nghiệm Châu Á- Thái Bình Dƣơng đánh giá và cấp chứng chỉ công nhận theo Tiêu chuẩn quốc gia TCVN ISO/IEC 17025 hoặc Tiêu chuẩn quốc tế ISO/IEC 17025",
+    "group_key": "hoc_tap",
+    "workflow_family": null,
+    "subflow": null
+  },
+  "experience": {
+    "entry_label": "Hỗ trợ giáo dục và học tập",
+    "overview_summary": "Thủ tục này thuộc nhóm giáo dục và học tập, thường liên quan đến hồ sơ đào tạo, văn bằng hoặc điều kiện học tập của người học. Kết quả thường nhận được là Quyết định chỉ định cơ sở kiểm nghiệm. Thời gian xử lý tham khảo: 30 ngày làm việc.",
+    "next_step_summary": "Nên rà trước thông tin người học, cơ sở đào tạo và loại kết quả cần xin xác nhận hoặc cấp lại. Có thể chọn kênh nộp phù hợp: Trực tiếp, Trực tuyến, Dịch vụ bưu chính. Hiện có khoảng 5 mục giấy tờ cần theo dõi trong checklist.",
+    "tone": "supportive_public_service"
+  },
+  "guidance": {
+    "highlight_documents": [
+      {
+        "bucket": "required",
+        "name": "Đơn đăng ký chỉ định cơ sở kiểm nghiệm theo Mẫu số 05 ban hành kèm theo Phụ lục 5 Nghị định 148/2025/NĐ-CP;",
+        "conditions": [],
+        "attachment_path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/1_013844/M%E1%BA%ABu%205%20PL%20V%20N%C4%90%20148.docx"
+      },
+      {
+        "bucket": "required",
+        "name": "Hồ sơ năng lực: - Danh sách, hồ sơ trang thiết bị chính, cơ sở hạ tầng (phù hợp nội dung báo cáo năng lực hoạt động cơ sở kiểm nghiệm theo Mẫu số 06 ban hành kèm theo Phụ lục 5 Nghị định 148/2025/NĐ-CP); - Danh sách, hồ sơ kiểm nghiệm viên tương ứng với lĩnh vực đăng ký chỉ định kèm theo bản sao có chứng thực các chứng chỉ chuyên môn; - Các tài liệu chứng minh về bảo đảm chất lượng kiểm nghiệm: kế hoạch, kết quả thử nghiệm thành thạo hoặc so sánh liên phòng; Báo cáo kết quả kiểm tra thành thạo tay nghề của kiểm nghiệm viên đối với chỉ tiêu/phép thử đăng ký chỉ định; - Báo cáo năng lực cơ sở kiểm nghiệm theo mẫu quy định tại Mẫu số 06 ban hành kèm theo Phụ lục 5 Nghị định 148/2025/NĐ-CP; - Mẫu Phiếu kết quả kiểm nghiệm theo Mẫu số 07 ban hành kèm theo Phụ lục 5 Nghị định 148/2025/NĐ-CP; - Kết quả hoạt động kiểm nghiệm đối với lĩnh vực đăng ký chỉ định trong mười hai (12) tháng gần nhất theo Mẫu số 08 ban hành kèm theo Phụ lục 5 Nghị định 148/2025/NĐ-CP.",
+        "conditions": [],
+        "attachment_path": null
+      },
+      {
+        "bucket": "required",
+        "name": "Tài liệu, hồ sơ kỹ thuật và các quy trình liên quan đến chỉ tiêu/phép thử đăng ký chỉ định.",
+        "conditions": [],
+        "attachment_path": null
+      },
+      {
+        "bucket": "required",
+        "name": "Quyết định thành lập hoặc Giấy chứng nhận đăng ký kinh doanh (bản sao có chứng thực);",
+        "conditions": [],
+        "attachment_path": null
+      },
+      {
+        "bucket": "required",
+        "name": "Bản sao có chứng thực chứng chỉ công nhận danh mục, phạm vi công nhận.",
+        "conditions": [],
+        "attachment_path": null
+      }
+    ],
+    "special_cases": [
+      "Có thể cần đối chiếu thông tin thửa đất hoặc giấy chứng nhận"
+    ],
+    "common_errors": [
+      "Điền sai mẫu tờ khai hoặc chọn sai biểu mẫu đi kèm.",
+      "Thông tin thửa đất, tài sản hoặc giấy chứng nhận chưa khớp với hồ sơ hiện có."
+    ],
+    "validation_hints": [
+      "Nên xác định trước kênh nộp hồ sơ để biết có cần bản giấy, bản điện tử hay xuất trình trực tiếp.",
+      "Có mẫu biểu đính kèm, nên kiểm tra đúng biểu mẫu trước khi nộp.",
+      "Nên rà lại thông tin người học, cơ sở đào tạo và loại xác nhận hoặc văn bằng cần xin."
+    ]
+  },
+  "intake": {
+    "candidate_input_fields": [
+      {
+        "field_id": "learner_full_name",
+        "label": "Tên người học",
+        "field_type": "text",
+        "required": true
+      },
+      {
+        "field_id": "education_record_type",
+        "label": "Loại hồ sơ học tập cần xử lý",
+        "field_type": "text",
+        "required": true
+      },
+      {
+        "field_id": "education_institution",
+        "label": "Cơ sở đào tạo liên quan",
+        "field_type": "text",
+        "required": false
+      },
+      {
+        "field_id": "submission_channel_preference",
+        "label": "Kênh nộp dự kiến",
+        "field_type": "enum",
+        "required": false
+      }
+    ],
+    "suggested_clarifying_questions": [
+      "Bạn đang cần xử lý hồ sơ học tập, văn bằng hay xác nhận nào?",
+      "Người học và cơ sở đào tạo liên quan đã xác định rõ chưa?"
+    ]
+  },
+  "ui_hints": {
+    "primary_channel": "online",
+    "result_label": "Quyết định chỉ định cơ sở kiểm nghiệm",
+    "time_badge": "30 ngày làm việc",
+    "document_count_badge": 5
+  },
+  "provenance": {
+    "generator": "workflow_domain_enricher",
+    "derivation_mode": "rule_based_semantic_enrichment",
+    "supported_group": true
+  }
+}

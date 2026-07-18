@@ -1,0 +1,315 @@
+{
+  "schema_version": "3.0",
+  "record_type": "public_service_procedure_payload",
+  "id": "procedure-1.013513",
+  "procedure_code": "1.013513",
+  "code": "1.013513",
+  "title": "Thủ tục thanh toán chi phí khám bệnh, chữa bệnh cho Dân quân tự vệ không tham gia bảo hiểm y tế nếu bị ốm đau, bị tai nạn, bị thương",
+  "language": "vi",
+  "status": "generated_from_pipeline",
+  "field": "Dân quân tự vệ",
+  "group_key": "suc_khoe_y_te",
+  "workflow_family": null,
+  "subflow": null,
+  "source": {
+    "source_url": "file:///C:/Users/ku060/Downloads/VAIC%20source/data-pipeline/raw_data/1_013513/1_013513_procedure_detail.md",
+    "source_markdown_path": "C:\\Users\\ku060\\Downloads\\VAIC source\\data-pipeline\\raw_data\\1_013513\\1_013513_procedure_detail.md",
+    "normalized_payload_path": "C:\\Users\\ku060\\Downloads\\VAIC source\\data-pipeline\\govease-unified\\data\\normalized_structured\\1_013513_normalized_structured.json",
+    "enriched_payload_path": "C:\\Users\\ku060\\Downloads\\VAIC source\\data-pipeline\\govease-unified\\data\\enriched_structured_priority\\1_013513_enriched_structured.json"
+  },
+  "scope": {
+    "included": "Thủ tục này thuộc nhóm y tế và bảo hiểm, thường dùng để đăng ký, điều chỉnh hoặc xác nhận quyền lợi bảo hiểm y tế. Kết quả thường nhận được là Quyết định kinh phí khám bệnh, chữa bệnh cho dân quân. Thời gian xử lý tham khảo: 13 ngày làm việc.",
+    "not_included": []
+  },
+  "agency": {
+    "executing_agency": "Chủ tịch ủy ban nhân dân cấp tỉnh",
+    "submission_place": null,
+    "receiving_places": []
+  },
+  "target_users": [
+    "Công dân Việt Nam"
+  ],
+  "submission_methods": [
+    {
+      "code": "POSTAL",
+      "label": "Dịch vụ bưu chính",
+      "processing_time": "13 ngày làm việc",
+      "fee": null,
+      "description": null
+    },
+    {
+      "code": "IN_PERSON",
+      "label": "Trực tiếp",
+      "processing_time": "13 ngày làm việc",
+      "fee": null,
+      "description": null
+    }
+  ],
+  "processing_note": "Thời gian xử lý tham chiếu: 13 ngày làm việc. Nên xác định rõ đối tượng tham gia, quyền lợi hoặc nhu cầu điều chỉnh hồ sơ y tế trước khi nộp. Có thể chọn kênh nộp phù hợp: Trực tiếp, Dịch vụ bưu chính. Hiện có khoảng 3 mục giấy tờ cần theo dõi trong checklist.",
+  "documents": {
+    "normally_required": [
+      {
+        "name": "Phiếu xét nghiệm, đơn thuốc, hóa đơn thu tiền, giấy xuất viện",
+        "quantity": "1 bản chính, 0 bản sao",
+        "notes": [],
+        "group": "default",
+        "attachment_path": null
+      },
+      {
+        "name": "Quyết định công dân thực hiện nghĩa vụ tham gia Dân quân tự vệ; quyết định điều động hoặc huy động hoặc kế hoạch thực hiện nhiệm vụ được cấp có thẩm quyền phê duyệt",
+        "quantity": "1 bản chính, 0 bản sao",
+        "notes": [],
+        "group": "default",
+        "attachment_path": null
+      },
+      {
+        "name": "Đơn đề nghị thanh toán chi phí khám bệnh, chữa bệnh của dân quân hoặc người đại diện hợp pháp của dân quân",
+        "quantity": "1 bản chính, 0 bản sao",
+        "notes": [],
+        "group": "default",
+        "attachment_path": null
+      }
+    ],
+    "conditional": [],
+    "forms": [],
+    "presented": [],
+    "notes": [],
+    "summary": [
+      {
+        "group": "default",
+        "name": "Phiếu xét nghiệm, đơn thuốc, hóa đơn thu tiền, giấy xuất viện",
+        "quantity": "1 bản chính, 0 bản sao",
+        "notes": [],
+        "attachment_path": null
+      },
+      {
+        "group": "default",
+        "name": "Quyết định công dân thực hiện nghĩa vụ tham gia Dân quân tự vệ; quyết định điều động hoặc huy động hoặc kế hoạch thực hiện nhiệm vụ được cấp có thẩm quyền phê duyệt",
+        "quantity": "1 bản chính, 0 bản sao",
+        "notes": [],
+        "attachment_path": null
+      },
+      {
+        "group": "default",
+        "name": "Đơn đề nghị thanh toán chi phí khám bệnh, chữa bệnh của dân quân hoặc người đại diện hợp pháp của dân quân",
+        "quantity": "1 bản chính, 0 bản sao",
+        "notes": [],
+        "attachment_path": null
+      }
+    ]
+  },
+  "steps": [
+    {
+      "order": 1,
+      "title": "Bước 1",
+      "description": "1.",
+      "example": null
+    },
+    {
+      "order": 2,
+      "title": "Bước 1.",
+      "description": "Bước 1. Dân quân hoặc người đại diện hợp pháp của dân quân gửi trực tiếp hoặc qua bưu chính, môi trường điện tử đơn đề nghị thanh toán tiền khám bệnh, chữa bệnh cho dân quân kèm theo phiếu xét nghiệm, đơn thuốc, hóa đơn thu tiền, giấy ra viện cho cơ quan quân sự địa phương. Dân quân thuộc đơn vị Dân quân tự vệ của cấp nào tổ chức thì gửi đơn cho cơ quan quân sự địa phương cấp đó; trường hợp không hợp lệ, trong thời hạn 03 ngày làm việc kể từ ngày nhận được đơn đề nghị, cơ quan quân sự địa phương phải có văn bản hướng dẫn gửi người nộp đơn để bổ sung, hoàn thiện.",
+      "example": "03 ngày làm việc"
+    },
+    {
+      "order": 3,
+      "title": "Bước 2.",
+      "description": "Bước 2. Trong thời hạn 05 ngày làm việc, kể từ ngày nhận đơn đề nghị, cơ quan quân sự địa phương lập 01 bộ hồ sơ. Tư lệnh Bộ Tư lệnh Thủ đô Hà Nội, Tư lệnh Bộ Tư lệnh Thành phố Hồ Chí Minh, Chỉ huy trưởng Bộ chỉ huy quân sự cấp tỉnh trình Chủ tịch Ủy ban nhân dân cùng cấp quyết định; Chỉ huy trưởng Ban chỉ huy quân sự cấp xã báo cáo Chủ tịch Ủy ban nhân dân cấp xã trình Chủ tịch Ủy ban nhân dân cấp xã quyết định.",
+      "example": "05 ngày làm việc"
+    },
+    {
+      "order": 4,
+      "title": "Bước 3.",
+      "description": "Bước 3. Trong thời hạn 03 ngày làm việc, kể từ ngày nhận được hồ sơ trình, Chủ tịch Ủy ban nhân dân cấp xã hoặc Chủ tịch Ủy ban nhân dân cấp tỉnh quyết định kinh phí khám bệnh, chữa bệnh cho dân quân. B",
+      "example": "03 ngày làm việc"
+    },
+    {
+      "order": 5,
+      "title": "Bước 4.",
+      "description": "Bước 4. Trong thời hạn 05 ngày làm việc, kể từ ngày ra quyết định, Ủy ban nhân dân cấp xã có trách nhiệm thực hiện chi trả kinh phí khám bệnh, chữa bệnh cho dân quân; việc chi trả bằng hình thức chuyển khoản hoặc qua đường bưu chính hoặc trực tiếp nhận ở cấp xã.",
+      "example": "05 ngày làm việc"
+    }
+  ],
+  "input_fields": [
+    {
+      "field": "request_subject",
+      "label": "Đối tượng làm thủ tục",
+      "type": "string",
+      "required": true
+    },
+    {
+      "field": "insurance_or_medical_need",
+      "label": "Nhu cầu bảo hiểm hoặc y tế",
+      "type": "string",
+      "required": true
+    },
+    {
+      "field": "submission_channel_preference",
+      "label": "Kênh nộp dự kiến",
+      "type": "enum",
+      "required": false,
+      "options": [
+        "Trực tiếp",
+        "Dịch vụ bưu chính"
+      ]
+    },
+    {
+      "field": "has_insurance_number",
+      "label": "Đã có mã BHXH/BHYT",
+      "type": "boolean",
+      "required": false
+    },
+    {
+      "field": "insurance_participation_group",
+      "label": "Nhóm tham gia BHYT",
+      "type": "enum",
+      "required": true
+    }
+  ],
+  "validation_rules": [
+    {
+      "id": "required-1",
+      "severity": "error",
+      "field": "request_subject",
+      "rule": "Trường bắt buộc phải có dữ liệu hợp lệ trước khi nộp.",
+      "message": "Thiếu trường bắt buộc: Đối tượng làm thủ tục."
+    },
+    {
+      "id": "required-2",
+      "severity": "error",
+      "field": "insurance_or_medical_need",
+      "rule": "Trường bắt buộc phải có dữ liệu hợp lệ trước khi nộp.",
+      "message": "Thiếu trường bắt buộc: Nhu cầu bảo hiểm hoặc y tế."
+    },
+    {
+      "id": "required-5",
+      "severity": "error",
+      "field": "insurance_participation_group",
+      "rule": "Trường bắt buộc phải có dữ liệu hợp lệ trước khi nộp.",
+      "message": "Thiếu trường bắt buộc: Nhóm tham gia BHYT."
+    },
+    {
+      "id": "hint-1",
+      "severity": "warning",
+      "field": "general",
+      "rule": "Nên xác định trước kênh nộp hồ sơ để biết có cần bản giấy, bản điện tử hay xuất trình trực tiếp.",
+      "message": "Nên xác định trước kênh nộp hồ sơ để biết có cần bản giấy, bản điện tử hay xuất trình trực tiếp."
+    },
+    {
+      "id": "hint-2",
+      "severity": "warning",
+      "field": "general",
+      "rule": "Nên xác định đúng nhóm đối tượng, mã số bảo hiểm và quyền lợi áp dụng trước khi nộp.",
+      "message": "Nên xác định đúng nhóm đối tượng, mã số bảo hiểm và quyền lợi áp dụng trước khi nộp."
+    }
+  ],
+  "common_errors": [
+    {
+      "field": "general",
+      "issue": "Điền sai mẫu tờ khai hoặc chọn sai biểu mẫu đi kèm.",
+      "fix": "Nên xác định trước kênh nộp hồ sơ để biết có cần bản giấy, bản điện tử hay xuất trình trực tiếp."
+    }
+  ],
+  "clarifying_questions": [
+    {
+      "id": "clarify_1",
+      "question": "Bạn đang muốn đăng ký, điều chỉnh hay xác nhận quyền lợi y tế hoặc bảo hiểm nào?",
+      "purpose": "workflow_intake"
+    },
+    {
+      "id": "clarify_2",
+      "question": "Bạn đã có mã BHXH/BHYT hoặc thông tin đơn vị tiếp nhận liên quan chưa?",
+      "purpose": "workflow_intake"
+    }
+  ],
+  "legal_basis": [
+    {
+      "title": "Nghị định số 220/2025/NĐ-CP ngày 07 tháng 8 năm 2025 của Chính phủ sửa đổi, bổ sung một số điều của một số Nghị định trong lĩnh vực quốc phòng, quân sự khi tổ chức chính quyền địa phương hai cấp",
+      "code": "220/2025/NĐ-CP"
+    },
+    {
+      "title": "Nghị định 72/2020/NĐ-CP",
+      "code": "72/2020/NĐ-CP"
+    },
+    {
+      "title": "Luật dân quân tự vệ",
+      "code": "48/2019/QH14"
+    }
+  ],
+  "legal_bases": [
+    {
+      "title": "Nghị định số 220/2025/NĐ-CP ngày 07 tháng 8 năm 2025 của Chính phủ sửa đổi, bổ sung một số điều của một số Nghị định trong lĩnh vực quốc phòng, quân sự khi tổ chức chính quyền địa phương hai cấp",
+      "code": "220/2025/NĐ-CP"
+    },
+    {
+      "title": "Nghị định 72/2020/NĐ-CP",
+      "code": "72/2020/NĐ-CP"
+    },
+    {
+      "title": "Luật dân quân tự vệ",
+      "code": "48/2019/QH14"
+    }
+  ],
+  "faq": [
+    {
+      "question": "Có thể nộp qua kênh nào?",
+      "answer": "Các kênh hiện có: Trực tiếp, Dịch vụ bưu chính."
+    },
+    {
+      "question": "Thời gian xử lý tham chiếu là bao lâu?",
+      "answer": "Thời gian xử lý tham chiếu hiện có là 13 ngày làm việc."
+    },
+    {
+      "question": "Kết quả chính của thủ tục là gì?",
+      "answer": "Kết quả chính được trích xuất là Quyết định kinh phí khám bệnh, chữa bệnh cho dân quân."
+    }
+  ],
+  "guidance": {
+    "highlight_documents": [
+      {
+        "bucket": "required",
+        "name": "Phiếu xét nghiệm, đơn thuốc, hóa đơn thu tiền, giấy xuất viện",
+        "conditions": [],
+        "attachment_path": null
+      },
+      {
+        "bucket": "required",
+        "name": "Quyết định công dân thực hiện nghĩa vụ tham gia Dân quân tự vệ; quyết định điều động hoặc huy động hoặc kế hoạch thực hiện nhiệm vụ được cấp có thẩm quyền phê duyệt",
+        "conditions": [],
+        "attachment_path": null
+      },
+      {
+        "bucket": "required",
+        "name": "Đơn đề nghị thanh toán chi phí khám bệnh, chữa bệnh của dân quân hoặc người đại diện hợp pháp của dân quân",
+        "conditions": [],
+        "attachment_path": null
+      }
+    ],
+    "special_cases": [],
+    "common_errors": [
+      "Điền sai mẫu tờ khai hoặc chọn sai biểu mẫu đi kèm."
+    ],
+    "validation_hints": [
+      "Nên xác định trước kênh nộp hồ sơ để biết có cần bản giấy, bản điện tử hay xuất trình trực tiếp.",
+      "Nên xác định đúng nhóm đối tượng, mã số bảo hiểm và quyền lợi áp dụng trước khi nộp."
+    ]
+  },
+  "next_steps": {
+    "summary": "Nên xác định rõ đối tượng tham gia, quyền lợi hoặc nhu cầu điều chỉnh hồ sơ y tế trước khi nộp. Có thể chọn kênh nộp phù hợp: Trực tiếp, Dịch vụ bưu chính. Hiện có khoảng 3 mục giấy tờ cần theo dõi trong checklist.",
+    "time_badge": "13 ngày làm việc",
+    "result_label": "Quyết định kinh phí khám bệnh, chữa bệnh cho dân quân",
+    "primary_channel": "postal",
+    "channels": [
+      "in_person",
+      "postal"
+    ]
+  },
+  "notes": [],
+  "provenance": {
+    "pipeline": "raw->structured->normalized->enriched->ui_api_payload",
+    "normalizer_version": "0.2.0",
+    "enricher_version": "0.2.0",
+    "mapping_notes": "excluded_from_clean_workflow_dataset",
+    "supported_group": true
+  }
+}

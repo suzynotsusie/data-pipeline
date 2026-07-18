@@ -1,0 +1,233 @@
+{
+  "schema_version": "1.0",
+  "normalizer_version": "0.2.0",
+  "source": {
+    "procedure_code": "1.014137",
+    "title": "Thủ tục cấp thẻ bảo hiểm y tế",
+    "raw_structured_parser_version": "0.1.0",
+    "field": "Bảo hiểm y tế"
+  },
+  "procedure": {
+    "level": "Cấp tỉnh, Cơ quan khác",
+    "procedure_type": "TTHC được luật giao quy định chi tiết",
+    "target_users": [
+      "Doanh nghiệp có vốn đầu tư nước ngoài",
+      "Tổ chức (không bao gồm doanh nghiệp",
+      "HTX)",
+      "Người Việt Nam định cư ở nước ngoài",
+      "Công dân Việt Nam",
+      "Doanh nghiệp",
+      "Người nước ngoài",
+      "Tổ chức nước ngoài",
+      "Hợp tác xã",
+      "Cán bộ",
+      "công chức",
+      "viên chức"
+    ],
+    "authorities": [
+      "Bảo hiểm xã hội tỉnh"
+    ],
+    "receiving_places": []
+  },
+  "submission": {
+    "channels": [
+      "in_person",
+      "online",
+      "postal"
+    ],
+    "methods": [
+      {
+        "method_id": "method_1",
+        "channel": "online",
+        "processing_time_text": "5 ngày làm việc",
+        "fee_text": null,
+        "description": "05 ngày làm việc kể từ ngày nhận đủ hồ sơ.",
+        "is_online": true,
+        "is_postal": false,
+        "is_in_person": false
+      },
+      {
+        "method_id": "method_2",
+        "channel": "postal",
+        "processing_time_text": "5 ngày làm việc",
+        "fee_text": null,
+        "description": "05 ngày làm việc kể từ ngày nhận đủ hồ sơ.",
+        "is_online": false,
+        "is_postal": true,
+        "is_in_person": false
+      },
+      {
+        "method_id": "method_3",
+        "channel": "in_person",
+        "processing_time_text": "5 ngày làm việc",
+        "fee_text": null,
+        "description": "05 ngày làm việc kể từ ngày nhận đủ hồ sơ.",
+        "is_online": false,
+        "is_postal": false,
+        "is_in_person": true
+      }
+    ],
+    "timing_summary": {
+      "unique_processing_times": [
+        "5 ngày làm việc"
+      ],
+      "method_count": 3
+    }
+  },
+  "documents": {
+    "required": [
+      {
+        "document_id": "t_khai_tham_gia_i_u_ch_nh_th_ng_tin_b_o_hi_m_y_t_theo_m_u_s_2_ph_l_c_ban_h_nh_k_m_theo_ngh_nh_s_188_2025_n_cp",
+        "name": "Tờ khai tham gia, điều chỉnh thông tin bảo hiểm y tế theo Mẫu số 2 Phụ lục ban hành kèm theo Nghị định số 188/2025/NĐ-CP",
+        "group_name": "default",
+        "group_type": "unknown",
+        "original_count": "1",
+        "copy_count": "0",
+        "conditions": [],
+        "attachment_label": "Mau to khai dieu chinh.docx",
+        "attachment_path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/1_014137/Mau%20to%20khai%20dieu%20chinh.docx"
+      },
+      {
+        "document_id": "danh_s_ch_i_t_ng_tham_gia_b_o_hi_m_y_t_theo_m_u_s_3_ph_l_c_ban_h_nh_k_m_theo_ngh_nh_s_188_2025_n_cp_i_v_i_c_quan_t_ch_c_qu_n_l_i_t_ng_tham_gia_b_o_hi_m_y_t",
+        "name": "Danh sách đối tượng tham gia bảo hiểm y tế theo Mẫu số 3 Phụ lục ban hành kèm theo Nghị định số 188/2025/NĐ-CP (đối với cơ quan, tổ chức quản lý đối tượng tham gia bảo hiểm y tế).",
+        "group_name": "default",
+        "group_type": "unknown",
+        "original_count": "1",
+        "copy_count": "0",
+        "conditions": [],
+        "attachment_label": "Mau ds doi tuong.docx",
+        "attachment_path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/1_014137/Mau%20ds%20doi%20tuong.docx"
+      }
+    ],
+    "conditional": [
+      {
+        "document_id": "b_n_scan_c_c_v_n_b_n_t_i_li_u_li_n_quan_n_u_c_trong_tr_ng_h_p_thay_i_th_ng_tin_th_n_nh_n_ho_c_thay_i_th_ng_tin_quy_n_l_i_c_h_ng",
+        "name": "Bản scan các văn bản, tài liệu liên quan (nếu có) trong trường hợp thay đổi thông tin thân nhân hoặc thay đổi thông tin quyền lợi được hưởng.",
+        "group_name": "default",
+        "group_type": "unknown",
+        "original_count": "1",
+        "copy_count": "0",
+        "conditions": [
+          "Bản scan các văn bản, tài liệu liên quan (nếu có) trong trường hợp thay đổi thông tin thân nhân hoặc thay đổi thông tin quyền lợi được hưởng."
+        ],
+        "attachment_label": null,
+        "attachment_path": null
+      }
+    ],
+    "presented": [],
+    "notes": [],
+    "forms": [
+      {
+        "name": "Tờ khai tham gia, điều chỉnh thông tin bảo hiểm y tế theo Mẫu số 2 Phụ lục ban hành kèm theo Nghị định số 188/2025/NĐ-CP",
+        "attachment_label": "Mau to khai dieu chinh.docx",
+        "attachment_path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/1_014137/Mau%20to%20khai%20dieu%20chinh.docx"
+      },
+      {
+        "name": "Danh sách đối tượng tham gia bảo hiểm y tế theo Mẫu số 3 Phụ lục ban hành kèm theo Nghị định số 188/2025/NĐ-CP (đối với cơ quan, tổ chức quản lý đối tượng tham gia bảo hiểm y tế).",
+        "attachment_label": "Mau ds doi tuong.docx",
+        "attachment_path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/1_014137/Mau%20ds%20doi%20tuong.docx"
+      }
+    ],
+    "empty_groups": [],
+    "document_count": 3
+  },
+  "process": {
+    "steps": [
+      {
+        "step_id": "step_1",
+        "title": null,
+        "content": "1. -",
+        "actor": "user",
+        "channel_hint": null,
+        "time_hint": null
+      },
+      {
+        "step_id": "step_2",
+        "title": "Bước 1:",
+        "content": "Bước 1: Người tham gia bảo hiểm y tế kê khai đầy đủ thông tin theo Mẫu số 2 Phụ lục ban hành kèm theo Nghị định số 188/2025/NĐ-CP hoặc cơ quan, tổ chức quản lý đối tượng kê khai đầy đủ thông tin theo Mẫu số 3 Phụ lục ban hành kèm theo Nghị định số 188/2025/NĐ-CP trên Cổng dịch vụ công quốc gia hoặc qua ứng dụng của cơ quan bảo hiểm xã hội hoặc nộp trực tiếp tại bộ phận một cửa của cơ quan bảo hiểm xã hội hoặc gửi qua dịch vụ bưu chính công ích đến cơ quan bảo hiểm xã hội được giao nhiệm vụ tiếp nhận. + Người tham gia bảo hiểm y tế hoặc cơ quan, tổ chức quản lý đối tượng tích chọn cấp thẻ bảo hiểm y tế bản điện tử hoặc cấp thẻ bảo hiểm y tế bản giấy trên Tờ khai tham gia hoặc danh sách đối tượng tham gia + Trường hợp thay đổi thông tin thân nhân hoặc thay đổi thông tin quyền lợi được hưởng thì người tham gia bảo hiểm y tế phải cung cấp bản chụp (scan) các văn bản, tài liệu liên quan để nộp cùng Tờ khai trên. -",
+        "actor": "authority",
+        "channel_hint": "dịch vụ bưu chính",
+        "time_hint": null
+      },
+      {
+        "step_id": "step_3",
+        "title": "Bước 2:",
+        "content": "Bước 2: Cổng dịch vụ công quốc gia hoặc ứng dụng của cơ quan bảo hiểm xã hội hoặc cán bộ tiếp nhận hồ sơ trả Giấy tiếp nhận hồ sơ và hẹn trả kết quả cấp thẻ bảo hiểm y tế cho người tham gia bảo hiểm y tế hoặc cho cơ quan, tổ chức quản lý đối tượng. -",
+        "actor": "authority",
+        "channel_hint": null,
+        "time_hint": null
+      },
+      {
+        "step_id": "step_4",
+        "title": "Bước 3:",
+        "content": "Bước 3: Trong thời hạn 05 ngày làm việc, kể từ ngày nhận đủ hồ sơ theo quy định, cơ quan bảo hiểm xã hội trả thẻ bảo hiểm y tế, cụ thể như sau: + Trường hợp cấp thẻ bảo hiểm y tế bản điện tử, cơ quan bảo hiểm xã hội trả kết quả thẻ bảo hiểm y tế bản điện tử vào ứng dụng bảo hiểm xã hội số (VssID), hòm thư điện tử cá nhân (email), liên kết với tài khoản định danh điện tử (VNeID) mức độ 2. + Trường hợp cấp thẻ bảo hiểm y tế bản giấy, cơ quan bảo hiểm xã hội chuyển thẻ bảo hiểm y tế bản giấy cho người tham gia bảo hiểm y tế hoặc tổ chức quản lý đối tượng. - Đối với trẻ em dưới 6 tuổi, việc cấp thẻ bảo hiểm y tế thực hiện liên thông cùng với thủ tục đăng ký khai sinh, đăng ký thường trú theo quy định tại Nghị định số 63/2024/NĐ-CP ngày 10 tháng 6 năm 2024 của Chính phủ quy định việc thực hiện liên thông điện tử 02 nhóm thủ tục hành chính: đăng ký khai sinh, đăng ký thường trú, cấp thẻ bảo hiểm y tế cho trẻ em dưới 6 tuổi; đăng ký khai tử, xóa đăng ký thường trú, giải quyết mai táng phí, tử tuất.",
+        "actor": "authority",
+        "channel_hint": null,
+        "time_hint": "05 ngày làm việc"
+      }
+    ],
+    "step_count": 4,
+    "notes": []
+  },
+  "eligibility": {
+    "conditions": [],
+    "has_conditions": false
+  },
+  "results": {
+    "items": [
+      {
+        "name": "Thẻ bảo hiểm y tế bản điện tử hoặc thẻ bảo hiểm y tế bản giấy",
+        "result_code": "KQ.G18.000285",
+        "raw_text": "Thẻ bảo hiểm y tế bản điện tử hoặc thẻ bảo hiểm y tế bản giấy"
+      }
+    ],
+    "primary_result": {
+      "name": "Thẻ bảo hiểm y tế bản điện tử hoặc thẻ bảo hiểm y tế bản giấy",
+      "result_code": "KQ.G18.000285",
+      "raw_text": "Thẻ bảo hiểm y tế bản điện tử hoặc thẻ bảo hiểm y tế bản giấy"
+    }
+  },
+  "legal_basis": {
+    "items": [
+      {
+        "title": "Luật 25/2008/QH12 - Bảo hiểm y tế",
+        "code": "25/2008/QH12"
+      },
+      {
+        "title": "Luật số 51/2024/QH15 ngày 27/11/2024 của Quốc hội sửa đổi, bổ sung một số điều của Luật Bảo hiểm y tế",
+        "code": "51/2024/QH15"
+      },
+      {
+        "title": "Nghị định quy định chi tiết và hướng dẫn thi hành một số điều của Luật Bảo hiểm y tế (188/2025/NĐ-CP ngày 01/7/2025)",
+        "code": "188/2025/NĐ-CP"
+      },
+      {
+        "title": "46/2014/QH13 Sửa đổi, bổ sung một số điều của Luật Bảo hiểm y tế",
+        "code": "Luật 46/2014/QH13"
+      }
+    ],
+    "count": 4
+  },
+  "attachments": [
+    {
+      "label": "Mau to khai dieu chinh.docx",
+      "path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/1_014137/Mau%20to%20khai%20dieu%20chinh.docx",
+      "source_section": "Thành phần hồ sơ",
+      "document_name": "Tờ khai tham gia, điều chỉnh thông tin bảo hiểm y tế theo Mẫu số 2 Phụ lục ban hành kèm theo Nghị định số 188/2025/NĐ-CP"
+    },
+    {
+      "label": "Mau ds doi tuong.docx",
+      "path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/1_014137/Mau%20ds%20doi%20tuong.docx",
+      "source_section": "Thành phần hồ sơ",
+      "document_name": "Danh sách đối tượng tham gia bảo hiểm y tế theo Mẫu số 3 Phụ lục ban hành kèm theo Nghị định số 188/2025/NĐ-CP (đối với cơ quan, tổ chức quản lý đối tượng tham gia bảo hiểm y tế)."
+    }
+  ],
+  "signals": {
+    "raw_parse_warnings": [],
+    "missing_documents": false,
+    "documents_section_present": true,
+    "documents_declared_empty": false,
+    "documents_only_in_notes": false,
+    "missing_results": false
+  }
+}

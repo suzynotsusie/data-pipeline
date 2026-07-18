@@ -1,0 +1,100 @@
+{
+  "schema_version": "1.0",
+  "enricher_version": "0.2.0",
+  "source": {
+    "procedure_code": "1.014037",
+    "title": "Thủ tục công bố tiêu chuẩn chất lượng vị thuốc cổ truyền, dược liệu",
+    "group_key": "suc_khoe_y_te",
+    "workflow_family": null,
+    "subflow": null
+  },
+  "experience": {
+    "entry_label": "Hỗ trợ y tế và bảo hiểm",
+    "overview_summary": "Thủ tục này thuộc nhóm y tế, thường cần đối chiếu thông tin người bệnh, đơn vị tiếp nhận hoặc quyền lợi chuyên ngành. Kết quả thường nhận được là Bản tự công bố chất lượng vị thuốc cổ truyền, dược liệu theo Mẫu số 02 Phụ lục I ban hành kèm theo Thông tư số 32/2025/TT-BYT ngày 01/7/2025 được công bố trên Trang Thông tin điện tử của Cục Quản lý Y, Dược cổ truyền. Thời gian xử lý tham khảo: 7 ngày làm việc.",
+    "next_step_summary": "Nên xác định rõ đối tượng tham gia, quyền lợi hoặc nhu cầu điều chỉnh hồ sơ y tế trước khi nộp. Có thể chọn kênh nộp phù hợp: Trực tiếp, Trực tuyến, Dịch vụ bưu chính. Hiện có khoảng 4 mục giấy tờ cần theo dõi trong checklist.",
+    "tone": "supportive_public_service"
+  },
+  "guidance": {
+    "highlight_documents": [
+      {
+        "bucket": "required",
+        "name": "a) Bản công bố chất lượng vị thuốc cổ truyền, dược liệu theo Mẫu số 02 Phụ lục I ban hành kèm theo Thông tư số 32/2025/TT-BYT ngày 01/7/2025;",
+        "conditions": [],
+        "attachment_path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/1_014037/Mu.docx"
+      },
+      {
+        "bucket": "required",
+        "name": "b) Bản sao Phiếu kiểm nghiệm vị thuốc cổ truyền, dược liệu đạt theo tiêu chuẩn chất lượng công bố do cơ sở kiểm nghiệm nhà nước đạt tiêu chuẩn GLP hoặc cơ sở kinh doanh dịch vụ kiểm nghiệm được cấp giấy chứng nhận đủ điều kiện kinh doanh dược phạm vi kinh doanh dịch vụ kiểm nghiệm ban hành;",
+        "conditions": [],
+        "attachment_path": null
+      },
+      {
+        "bucket": "required",
+        "name": "c) Bản sao tài liệu chứng minh nguồn gốc, xuất xứ của vị thuốc cổ truyền, dược liệu theo quy định tại khoản 2, khoản 3 Điều 12 Thông tư số 32/2025/TT-BYT ngày 01/7/2025;",
+        "conditions": [],
+        "attachment_path": null
+      },
+      {
+        "bucket": "required",
+        "name": "d) Các tài liệu trong hồ sơ công bố phải được thể hiện bằng tiếng Việt hoặc tiếng Anh; cơ sở kinh doanh vị thuốc cổ truyền, dược liệu, cơ sở khám bệnh, chữa bệnh tự chịu trách nhiệm toàn diện trước pháp luật về tính chính xác, hợp pháp, trung thực của tất cả các tài liệu trong hồ sơ công bố.",
+        "conditions": [],
+        "attachment_path": null
+      }
+    ],
+    "special_cases": [
+      "Có thể cần đối chiếu thông tin thửa đất hoặc giấy chứng nhận"
+    ],
+    "common_errors": [
+      "Điền sai mẫu tờ khai hoặc chọn sai biểu mẫu đi kèm.",
+      "Thông tin thửa đất, tài sản hoặc giấy chứng nhận chưa khớp với hồ sơ hiện có."
+    ],
+    "validation_hints": [
+      "Nên xác định trước kênh nộp hồ sơ để biết có cần bản giấy, bản điện tử hay xuất trình trực tiếp.",
+      "Có mẫu biểu đính kèm, nên kiểm tra đúng biểu mẫu trước khi nộp.",
+      "Nên xác định đúng nhóm đối tượng, mã số bảo hiểm và quyền lợi áp dụng trước khi nộp."
+    ]
+  },
+  "intake": {
+    "candidate_input_fields": [
+      {
+        "field_id": "request_subject",
+        "label": "Đối tượng làm thủ tục",
+        "field_type": "text",
+        "required": true
+      },
+      {
+        "field_id": "insurance_or_medical_need",
+        "label": "Nhu cầu bảo hiểm hoặc y tế",
+        "field_type": "text",
+        "required": true
+      },
+      {
+        "field_id": "submission_channel_preference",
+        "label": "Kênh nộp dự kiến",
+        "field_type": "enum",
+        "required": false
+      },
+      {
+        "field_id": "has_insurance_number",
+        "label": "Đã có mã BHXH/BHYT",
+        "field_type": "boolean",
+        "required": false
+      }
+    ],
+    "suggested_clarifying_questions": [
+      "Bạn đang muốn đăng ký, điều chỉnh hay xác nhận quyền lợi y tế hoặc bảo hiểm nào?",
+      "Bạn đã có mã BHXH/BHYT hoặc thông tin đơn vị tiếp nhận liên quan chưa?"
+    ]
+  },
+  "ui_hints": {
+    "primary_channel": "online",
+    "result_label": "Bản tự công bố chất lượng vị thuốc cổ truyền, dược liệu theo Mẫu số 02 Phụ lục I ban hành kèm theo Thông tư số 32/2025/TT-BYT ngày 01/7/2025 được công bố trên Trang Thông tin điện tử của Cục Quản lý Y, Dược cổ truyền",
+    "time_badge": "7 ngày làm việc",
+    "document_count_badge": 4
+  },
+  "provenance": {
+    "generator": "workflow_domain_enricher",
+    "derivation_mode": "rule_based_semantic_enrichment",
+    "supported_group": true
+  }
+}

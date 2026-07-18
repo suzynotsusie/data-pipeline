@@ -1,0 +1,165 @@
+{
+  "schema_version": "1.0",
+  "normalizer_version": "0.2.0",
+  "source": {
+    "procedure_code": "2.000725",
+    "title": "Cấp lại Giấy phép làm việc trong kỳ nghỉ cho công dân Niu-Di-Lân",
+    "raw_structured_parser_version": "0.1.0",
+    "field": "Việc làm"
+  },
+  "procedure": {
+    "level": null,
+    "procedure_type": null,
+    "target_users": [],
+    "authorities": [
+      "Cục Việc làm"
+    ],
+    "receiving_places": []
+  },
+  "submission": {
+    "channels": [
+      "in_person",
+      "postal"
+    ],
+    "methods": [
+      {
+        "method_id": "method_1",
+        "channel": "in_person",
+        "processing_time_text": "03 Ngày làm việc",
+        "fee_text": null,
+        "description": "Phí: 500000 Đồng Công dân Niu Di-lân nộp hồ sơ trực tiếp hoặc qua đường bưu điện đến Cục Việc làm (Bộ Nội vụ)",
+        "is_online": false,
+        "is_postal": false,
+        "is_in_person": true
+      },
+      {
+        "method_id": "method_2",
+        "channel": "postal",
+        "processing_time_text": "03 Ngày làm việc",
+        "fee_text": null,
+        "description": "Phí: 500000 Đồng Công dân Niu Di-lân nộp hồ sơ trực tiếp hoặc qua đường bưu điện đến Cục Việc làm (Bộ Nội vụ)",
+        "is_online": false,
+        "is_postal": true,
+        "is_in_person": false
+      }
+    ],
+    "timing_summary": {
+      "unique_processing_times": [
+        "03 Ngày làm việc"
+      ],
+      "method_count": 2
+    }
+  },
+  "documents": {
+    "required": [
+      {
+        "document_id": "t_khai_ngh_c_p_l_i_gi_y_ph_p_l_m_vi_c_trong_k_ngh_c_a_c_ng_d_n_niu_di_l_n_theo_m_u_s_3_ban_h_nh_k_m_theo_th_ng_t_li_n_t_ch_s_15_2012_ttlt_bl_tbxh_bca_bng_ng_y_06_6_2012",
+        "name": "Tờ khai đề nghị cấp lại giấy phép làm việc trong kỳ nghỉ của công dân Niu Di-lân theo mẫu số 3 ban hành kèm theo Thông tư liên tịch số 15/2012/TTLT-BLĐTBXH-BCA-BNG ngày 06/6/2012,",
+        "group_name": "default",
+        "group_type": "required",
+        "original_count": "1",
+        "copy_count": "0",
+        "conditions": [],
+        "attachment_label": "trong đó giải thích rõ lý do bị mất hoặc bị hỏng 2.Mus03-TTLT15.docx",
+        "attachment_path": "trong đó giải thích rõ lý do bị mất hoặc bị hỏng 2.Mus03-TTLT15.docx"
+      },
+      {
+        "document_id": "03_ba_nh_m_u_c_3cm_x_4cm_u_tr_n_ch_p_ch_nh_di_n_r_m_t_r_hai_tai_kh_ng_eo_k_nh_ph_ng_nh_m_u_tr_ng",
+        "name": "03 (ba) ảnh mầu cỡ 3cm x 4cm, đầu để trần, chụp chính diện, rõ mặt, rõ hai tai, không đeo kính, phông ảnh màu trắng",
+        "group_name": "default",
+        "group_type": "required",
+        "original_count": "1",
+        "copy_count": "0",
+        "conditions": [],
+        "attachment_label": null,
+        "attachment_path": null
+      }
+    ],
+    "conditional": [
+      {
+        "document_id": "gi_y_ph_p_c_c_p_trong_tr_ng_h_p_gi_y_ph_p_b_h_ng",
+        "name": "Giấy phép đã được cấp trong trường hợp giấy phép bị hỏng",
+        "group_name": "default",
+        "group_type": "required",
+        "original_count": "1",
+        "copy_count": "0",
+        "conditions": [
+          "Giấy phép đã được cấp trong trường hợp giấy phép bị hỏng"
+        ],
+        "attachment_label": null,
+        "attachment_path": null
+      }
+    ],
+    "presented": [],
+    "notes": [],
+    "forms": [
+      {
+        "name": "Tờ khai đề nghị cấp lại giấy phép làm việc trong kỳ nghỉ của công dân Niu Di-lân theo mẫu số 3 ban hành kèm theo Thông tư liên tịch số 15/2012/TTLT-BLĐTBXH-BCA-BNG ngày 06/6/2012,",
+        "attachment_label": "trong đó giải thích rõ lý do bị mất hoặc bị hỏng 2.Mus03-TTLT15.docx",
+        "attachment_path": "trong đó giải thích rõ lý do bị mất hoặc bị hỏng 2.Mus03-TTLT15.docx"
+      }
+    ],
+    "empty_groups": [],
+    "document_count": 3
+  },
+  "process": {
+    "steps": [
+      {
+        "step_id": "step_1",
+        "title": "Bước 1:",
+        "content": "Bước 1: Trong thời hạn 03 (ba) ngày kể từ ngày phát hiện giấy phép bị mất hoặc bị hỏng thì công dân Niu Di-lân có trách nhiệm đề nghị Cục Việc làm (Bộ Nội vụ) cấp lại giấy phép bằng cách nộp hồ sơ đề nghị cấp lại giấy phép trực tiếp hoặc qua đường bưu điện",
+        "actor": "user",
+        "channel_hint": "trực tiếp",
+        "time_hint": null
+      },
+      {
+        "step_id": "step_2",
+        "title": "Bước 2:",
+        "content": "Bước 2: Trong thời gian 03 (ba) ngày (tính theo ngày làm việc) kể từ ngày nhận đủ hồ sơ đề nghị cấp lại giấy phép của công dân Niu Di-lân, Cục Việc làm (Bộ Nội vụ) cấp lại giấy phép và thông báo cho công dân Niu Di-lân. Trường hợp không cấp lại giấy phép phải trả lời bằng văn bản và nêu rõ lý do",
+        "actor": "user",
+        "channel_hint": null,
+        "time_hint": null
+      },
+      {
+        "step_id": "step_3",
+        "title": "Bước 3:",
+        "content": "Bước 3: Công dân Niu Di-lân nhận giấy phép được cấp lại tại trụ sở Cục Việc làm (Bộ Nội vụ) hoặc tại trụ sở Trung tâm Giới thiệu việc làm thành phố Hồ Chí Minh thuộc Sở Nội vụ thành phố Hồ Chí Minh",
+        "actor": "user",
+        "channel_hint": null,
+        "time_hint": null
+      }
+    ],
+    "step_count": 3,
+    "notes": []
+  },
+  "eligibility": {
+    "conditions": [
+      "Công dân Niu Di-lân đã được cấp giấy phép nhưng giấy phép bị mất hoặc bị hỏng."
+    ],
+    "has_conditions": true
+  },
+  "results": {
+    "items": [],
+    "primary_result": null
+  },
+  "legal_basis": {
+    "items": [],
+    "count": 0
+  },
+  "attachments": [
+    {
+      "label": "trong đó giải thích rõ lý do bị mất hoặc bị hỏng 2.Mus03-TTLT15.docx",
+      "path": "trong đó giải thích rõ lý do bị mất hoặc bị hỏng 2.Mus03-TTLT15.docx",
+      "source_section": "Thành phần hồ sơ",
+      "document_name": "Tờ khai đề nghị cấp lại giấy phép làm việc trong kỳ nghỉ của công dân Niu Di-lân theo mẫu số 3 ban hành kèm theo Thông tư liên tịch số 15/2012/TTLT-BLĐTBXH-BCA-BNG ngày 06/6/2012,"
+    }
+  ],
+  "signals": {
+    "raw_parse_warnings": [],
+    "missing_documents": false,
+    "documents_section_present": true,
+    "documents_declared_empty": false,
+    "documents_only_in_notes": false,
+    "missing_results": true
+  }
+}

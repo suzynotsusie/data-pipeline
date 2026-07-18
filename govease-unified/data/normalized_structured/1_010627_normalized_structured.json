@@ -1,0 +1,199 @@
+{
+  "schema_version": "1.0",
+  "normalizer_version": "0.2.0",
+  "source": {
+    "procedure_code": "1.010627",
+    "title": "Chuyển ngành, nghề học, chuyển trường, chuyển nước đến học",
+    "raw_structured_parser_version": "0.1.0",
+    "field": "Giáo dục, đào tạo với nước ngoài"
+  },
+  "procedure": {
+    "level": "Cấp bộ/ngành",
+    "procedure_type": "TTHC được luật giao quy định chi tiết",
+    "target_users": [
+      "Công dân Việt Nam"
+    ],
+    "authorities": [
+      "Bộ trưởng Bộ Giáo dục và Đào tạo"
+    ],
+    "receiving_places": []
+  },
+  "submission": {
+    "channels": [
+      "in_person",
+      "online",
+      "postal"
+    ],
+    "methods": [
+      {
+        "method_id": "method_1",
+        "channel": "online",
+        "processing_time_text": "20 ngày làm việc",
+        "fee_text": null,
+        "description": null,
+        "is_online": true,
+        "is_postal": false,
+        "is_in_person": false
+      },
+      {
+        "method_id": "method_2",
+        "channel": "postal",
+        "processing_time_text": "20 ngày làm việc",
+        "fee_text": null,
+        "description": null,
+        "is_online": false,
+        "is_postal": true,
+        "is_in_person": false
+      },
+      {
+        "method_id": "method_3",
+        "channel": "in_person",
+        "processing_time_text": "20 ngày làm việc",
+        "fee_text": null,
+        "description": null,
+        "is_online": false,
+        "is_postal": false,
+        "is_in_person": true
+      }
+    ],
+    "timing_summary": {
+      "unique_processing_times": [
+        "20 ngày làm việc"
+      ],
+      "method_count": 3
+    }
+  },
+  "documents": {
+    "required": [
+      {
+        "document_id": "b_n_sao_v_n_b_n_ng_c_a_c_s_gi_o_d_c_n_c_ngo_i_c_n_i_chuy_n_i_v_chuy_n_n_v_vi_c_du_h_c_sinh_chuy_n_ng_nh_ngh_h_c_chuy_n_tr_ng_chuy_n_n_c_n_h_c",
+        "name": "Bản sao văn bản đồng ý của cơ sở giáo dục nước ngoài cả nơi chuyển đi và chuyển đến về việc du học sinh chuyển ngành, nghề học, chuyển trường, chuyển nước đến học",
+        "group_name": "default",
+        "group_type": "unknown",
+        "original_count": "0",
+        "copy_count": "1",
+        "conditions": [],
+        "attachment_label": null,
+        "attachment_path": null
+      },
+      {
+        "document_id": "n_ngh_chuy_n_ng_nh_ngh_h_c_chuy_n_tr_ng_chuy_n_n_c_n_h_c_theo_m_u_s_02_t_i_ph_l_c_ban_h_nh_k_m_theo_ngh_nh_s_86_2021_n_cp",
+        "name": "Đơn đề nghị chuyển ngành, nghề học, chuyển trường, chuyển nước đến học (theo mẫu số 02 tại Phụ lục ban hành kèm theo Nghị định số 86/2021/NĐ-CP)",
+        "group_name": "default",
+        "group_type": "unknown",
+        "original_count": "1",
+        "copy_count": "1",
+        "conditions": [],
+        "attachment_label": "Mauso2_Donchuyentruong-nganh-nuoc.docx",
+        "attachment_path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/1_010627/Mauso2_Donchuyentruong-nganh-nuoc.docx"
+      }
+    ],
+    "conditional": [
+      {
+        "document_id": "ki_n_ng_b_ng_v_n_b_n_c_a_c_quan_qu_n_l_tr_c_ti_p_du_h_c_sinh_v_vi_c_chuy_n_ng_nh_ngh_h_c_chuy_n_tr_ng_chuy_n_n_c_n_h_c_i_v_i_tr_ng_h_p_c_c_quan_c_ng_t_c",
+        "name": "Ý kiến đồng ý bằng văn bản của cơ quan quản lý trực tiếp du học sinh về việc chuyển ngành, nghề học, chuyển trường, chuyển nước đến học (đối với trường hợp có cơ quan công tác)",
+        "group_name": "default",
+        "group_type": "unknown",
+        "original_count": "0",
+        "copy_count": "1",
+        "conditions": [
+          "Ý kiến đồng ý bằng văn bản của cơ quan quản lý trực tiếp du học sinh về việc chuyển ngành, nghề học, chuyển trường, chuyển nước đến học (đối với trường hợp có cơ quan công tác)"
+        ],
+        "attachment_label": null,
+        "attachment_path": null
+      }
+    ],
+    "presented": [],
+    "notes": [],
+    "forms": [
+      {
+        "name": "Đơn đề nghị chuyển ngành, nghề học, chuyển trường, chuyển nước đến học (theo mẫu số 02 tại Phụ lục ban hành kèm theo Nghị định số 86/2021/NĐ-CP)",
+        "attachment_label": "Mauso2_Donchuyentruong-nganh-nuoc.docx",
+        "attachment_path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/1_010627/Mauso2_Donchuyentruong-nganh-nuoc.docx"
+      }
+    ],
+    "empty_groups": [],
+    "document_count": 3
+  },
+  "process": {
+    "steps": [
+      {
+        "step_id": "step_1",
+        "title": null,
+        "content": "1. Du học sinh nộp 01 bộ hồ sơ quy định qua đường bưu điện hoặc trực tiếp hoặc trực tuyến cho cơ quan cử đi học",
+        "actor": "authority",
+        "channel_hint": "trực tuyến",
+        "time_hint": null
+      },
+      {
+        "step_id": "step_2",
+        "title": null,
+        "content": "Trong thời hạn 05 ngày làm việc, nếu hồ sơ xin chuyển ngành, nghề học, chuyển trường, chuyển nước đến học không hợp lệ, cơ quan cử đi học thông báo cho du học sinh để bổ sung và hoàn thiện theo quy định",
+        "actor": "authority",
+        "channel_hint": null,
+        "time_hint": "05 ngày làm việc"
+      },
+      {
+        "step_id": "step_3",
+        "title": null,
+        "content": "Trong thời hạn 20 ngày làm việc, kể từ ngày nhận đủ hồ sơ hợp lệ, cơ quan cử đi học ra quyết định cho phép du học sinh chuyển ngành, nghề học, chuyển trường, chuyển nước đến học. Cơ quan cử đi học gửi Quyết định này cho du học sinh và cơ quan quản lý trực tiếp của du học sinh (đối với trường hợp có cơ quan công tác); trường hợp không đồng ý phải có văn bản thông báo cho du học sinh và cơ quan quản lý trực tiếp của du học sinh (đối với trường hợp có cơ quan công tác) nêu rõ lý do.",
+        "actor": "authority",
+        "channel_hint": "trực tiếp",
+        "time_hint": "20 ngày làm việc"
+      },
+      {
+        "step_id": "step_4",
+        "title": null,
+        "content": "Du học sinh đi học theo học bổng do phía nước ngoài đài thọ nếu chuyển ngành, nghề học, chuyển trường thì thực hiện thủ tục theo quy trình trên và theo quy định của phía nước ngoài đài thọ học bổng.",
+        "actor": "user",
+        "channel_hint": null,
+        "time_hint": null
+      }
+    ],
+    "step_count": 4,
+    "notes": []
+  },
+  "eligibility": {
+    "conditions": [],
+    "has_conditions": false
+  },
+  "results": {
+    "items": [
+      {
+        "name": "Quyết định đồng ý cho chuyển ngành, nghề học, chuyển trường, chuyển nước đến học (Quyết định của Bộ trưởng Bộ Giáo dục và Đào tạo. Hoặc Quyết định của Thủ trưởng cơ quan, đơn vị thuộc, trực thuộc (trong trường hợp được Bộ Giáo dục và Đào tạo giao nhiệm vụ hoặc phân cấp).)",
+        "result_code": "KQ.G03.000217",
+        "raw_text": "Quyết định đồng ý cho chuyển ngành, nghề học, chuyển trường, chuyển nước đến học (Quyết định của Bộ trưởng Bộ Giáo dục và Đào tạo. Hoặc Quyết định của Thủ trưởng cơ quan, đơn vị thuộc, trực thuộc (trong trường hợp được Bộ Giáo dục và Đào tạo giao nhiệm vụ hoặc phân cấp).)"
+      }
+    ],
+    "primary_result": {
+      "name": "Quyết định đồng ý cho chuyển ngành, nghề học, chuyển trường, chuyển nước đến học (Quyết định của Bộ trưởng Bộ Giáo dục và Đào tạo. Hoặc Quyết định của Thủ trưởng cơ quan, đơn vị thuộc, trực thuộc (trong trường hợp được Bộ Giáo dục và Đào tạo giao nhiệm vụ hoặc phân cấp).)",
+      "result_code": "KQ.G03.000217",
+      "raw_text": "Quyết định đồng ý cho chuyển ngành, nghề học, chuyển trường, chuyển nước đến học (Quyết định của Bộ trưởng Bộ Giáo dục và Đào tạo. Hoặc Quyết định của Thủ trưởng cơ quan, đơn vị thuộc, trực thuộc (trong trường hợp được Bộ Giáo dục và Đào tạo giao nhiệm vụ hoặc phân cấp).)"
+    }
+  },
+  "legal_basis": {
+    "items": [
+      {
+        "title": "Nghị định 86/2021/NĐ-CP",
+        "code": "86/2021/NĐ-CP"
+      }
+    ],
+    "count": 1
+  },
+  "attachments": [
+    {
+      "label": "Mauso2_Donchuyentruong-nganh-nuoc.docx",
+      "path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/1_010627/Mauso2_Donchuyentruong-nganh-nuoc.docx",
+      "source_section": "Thành phần hồ sơ",
+      "document_name": "Đơn đề nghị chuyển ngành, nghề học, chuyển trường, chuyển nước đến học (theo mẫu số 02 tại Phụ lục ban hành kèm theo Nghị định số 86/2021/NĐ-CP)"
+    }
+  ],
+  "signals": {
+    "raw_parse_warnings": [],
+    "missing_documents": false,
+    "documents_section_present": true,
+    "documents_declared_empty": false,
+    "documents_only_in_notes": false,
+    "missing_results": false
+  }
+}

@@ -1,0 +1,277 @@
+{
+  "schema_version": "3.0",
+  "record_type": "public_service_procedure_payload",
+  "id": "procedure-2.002767",
+  "procedure_code": "2.002767",
+  "code": "2.002767",
+  "title": "Thủ tục đăng ký khám bệnh, chữa bệnh đối với sĩ quan phục viên có đủ 15 năm phục vụ trong Quân đội",
+  "language": "vi",
+  "status": "generated_from_pipeline",
+  "field": "Chính sách BQP",
+  "group_key": "suc_khoe_y_te",
+  "workflow_family": null,
+  "subflow": null,
+  "source": {
+    "source_url": "file:///C:/Users/ku060/Downloads/VAIC%20source/data-pipeline/raw_data/2_002767/2_002767_procedure_detail.md",
+    "source_markdown_path": "C:\\Users\\ku060\\Downloads\\VAIC source\\data-pipeline\\raw_data\\2_002767\\2_002767_procedure_detail.md",
+    "normalized_payload_path": "C:\\Users\\ku060\\Downloads\\VAIC source\\data-pipeline\\govease-unified\\data\\normalized_structured\\2_002767_normalized_structured.json",
+    "enriched_payload_path": "C:\\Users\\ku060\\Downloads\\VAIC source\\data-pipeline\\govease-unified\\data\\enriched_structured_priority\\2_002767_enriched_structured.json"
+  },
+  "scope": {
+    "included": "Thủ tục này thuộc nhóm y tế, thường cần đối chiếu thông tin người bệnh, đơn vị tiếp nhận hoặc quyền lợi chuyên ngành. Kết quả thường nhận được là Sổ khám bệnh, chữa bệnh của sĩ quan phục viên 15 năm. Thời gian xử lý tham khảo: 1 ngày.",
+    "not_included": []
+  },
+  "agency": {
+    "executing_agency": "Bệnh viện Quân đội",
+    "submission_place": null,
+    "receiving_places": []
+  },
+  "target_users": [
+    "Công dân Việt Nam"
+  ],
+  "submission_methods": [
+    {
+      "code": "ONLINE",
+      "label": "Trực tuyến",
+      "processing_time": "1 ngày",
+      "fee": null,
+      "description": null
+    },
+    {
+      "code": "POSTAL",
+      "label": "Dịch vụ bưu chính",
+      "processing_time": "1 ngày",
+      "fee": null,
+      "description": null
+    },
+    {
+      "code": "IN_PERSON",
+      "label": "Trực tiếp",
+      "processing_time": "1 ngày",
+      "fee": null,
+      "description": null
+    }
+  ],
+  "processing_note": "Thời gian xử lý tham chiếu: 1 ngày. Nên xác định rõ đối tượng tham gia, quyền lợi hoặc nhu cầu điều chỉnh hồ sơ y tế trước khi nộp. Có thể chọn kênh nộp phù hợp: Trực tiếp, Trực tuyến, Dịch vụ bưu chính. Hiện có khoảng 2 mục giấy tờ cần theo dõi trong checklist.",
+  "documents": {
+    "normally_required": [
+      {
+        "name": "Giấy giới thiệu của Bộ chỉ huy quân sự cấp tỉnh (nơi cư trú)",
+        "quantity": "1 bản chính, 0 bản sao",
+        "notes": [],
+        "group": "default",
+        "attachment_path": null
+      },
+      {
+        "name": "Quyết định phục viên của sĩ quan (hoặc giấy chứng nhận có đủ 15 năm phục vụ trong Quân đội)",
+        "quantity": "0 bản chính, 1 bản sao",
+        "notes": [],
+        "group": "default",
+        "attachment_path": null
+      }
+    ],
+    "conditional": [],
+    "forms": [],
+    "presented": [],
+    "notes": [],
+    "summary": [
+      {
+        "group": "default",
+        "name": "Giấy giới thiệu của Bộ chỉ huy quân sự cấp tỉnh (nơi cư trú)",
+        "quantity": "1 bản chính, 0 bản sao",
+        "notes": [],
+        "attachment_path": null
+      },
+      {
+        "group": "default",
+        "name": "Quyết định phục viên của sĩ quan (hoặc giấy chứng nhận có đủ 15 năm phục vụ trong Quân đội)",
+        "quantity": "0 bản chính, 1 bản sao",
+        "notes": [],
+        "attachment_path": null
+      }
+    ]
+  },
+  "steps": [
+    {
+      "order": 1,
+      "title": "Bước 1",
+      "description": "1. Bước 1. Sĩ quan phục viên về địa phương, làm đơn đề nghị đăng ký khám bệnh, chữa bệnh theo mẫu kèm theo, gửi cùng bản sao Quyết định phục viên hoặc bản sao giấy chứng nhận có đủ 15 năm phục vụ trong Quân đội đến Bộ chỉ huy quân sự tỉnh, thành phố trực thuộc trung ương (sau đây gọi tắt là Bộ chỉ huy quân sự tỉnh) bằng hình thức trực tiếp hoặc qua dịch vụ bưu chính hoặc trên môi trường điện tử. Ngay trong ngày tiếp nhận hồ sơ đăng ký khám bệnh, chữa bệnh, Bộ chỉ huy quân sự tỉnh có trách nhiệm cấp giấy giới thiệu, chuyển kèm hồ sơ đến bệnh viện Quân đội ở gần nơi đối tượng thường trú nhất để làm thủ tục đăng ký khám bệnh, chữa bệnh ban đầu.",
+      "example": "15 năm"
+    },
+    {
+      "order": 2,
+      "title": "Bước 2",
+      "description": "Bước 2. Bệnh viện Quân đội căn cứ vào hồ sơ và giấy giới thiệu của Bộ chỉ huy quân sự tỉnh, căn cước công dân hoặc căn cước của sĩ quan phục viên để cấp sổ khám bệnh, chữa bệnh cho sĩ quan phục viên.",
+      "example": null
+    },
+    {
+      "order": 3,
+      "title": "Bước 3",
+      "description": "Bước 3. Trường hợp sĩ quan phục viên thay đổi bệnh viện Quân đội khám bệnh, chữa bệnh do di chuyển nơi thường trú, thủ tục đăng ký khám bệnh, chữa bệnh tại bệnh viện Quân đội mới được thực hiện theo giấy giới thiệu của Bộ chỉ huy quân sự tỉnh (nơi thường trú mới) và sổ khám bệnh của bệnh viện cũ.",
+      "example": null
+    },
+    {
+      "order": 4,
+      "title": "Bước 4",
+      "description": "Bước 4. Sĩ quan phục viên thuộc đối tượng quy định tại khoản 2 Điều 1 Quy định này có nguyện vọng khám bệnh, chữa bệnh tại bệnh viện Quân đội thì đăng ký với cơ quan bảo hiểm xã hội địa phương, được hưởng các quyền lợi khám bệnh, chữa bệnh và có trách nhiệm thực hiện theo quy định của pháp luật về bảo hiểm y tế.",
+      "example": null
+    }
+  ],
+  "input_fields": [
+    {
+      "field": "request_subject",
+      "label": "Đối tượng làm thủ tục",
+      "type": "string",
+      "required": true
+    },
+    {
+      "field": "insurance_or_medical_need",
+      "label": "Nhu cầu bảo hiểm hoặc y tế",
+      "type": "string",
+      "required": true
+    },
+    {
+      "field": "submission_channel_preference",
+      "label": "Kênh nộp dự kiến",
+      "type": "enum",
+      "required": false,
+      "options": [
+        "Trực tiếp",
+        "Trực tuyến",
+        "Dịch vụ bưu chính"
+      ]
+    },
+    {
+      "field": "has_insurance_number",
+      "label": "Đã có mã BHXH/BHYT",
+      "type": "boolean",
+      "required": false
+    }
+  ],
+  "validation_rules": [
+    {
+      "id": "required-1",
+      "severity": "error",
+      "field": "request_subject",
+      "rule": "Trường bắt buộc phải có dữ liệu hợp lệ trước khi nộp.",
+      "message": "Thiếu trường bắt buộc: Đối tượng làm thủ tục."
+    },
+    {
+      "id": "required-2",
+      "severity": "error",
+      "field": "insurance_or_medical_need",
+      "rule": "Trường bắt buộc phải có dữ liệu hợp lệ trước khi nộp.",
+      "message": "Thiếu trường bắt buộc: Nhu cầu bảo hiểm hoặc y tế."
+    },
+    {
+      "id": "hint-1",
+      "severity": "warning",
+      "field": "general",
+      "rule": "Nên xác định trước kênh nộp hồ sơ để biết có cần bản giấy, bản điện tử hay xuất trình trực tiếp.",
+      "message": "Nên xác định trước kênh nộp hồ sơ để biết có cần bản giấy, bản điện tử hay xuất trình trực tiếp."
+    },
+    {
+      "id": "hint-2",
+      "severity": "warning",
+      "field": "general",
+      "rule": "Nên xác định đúng nhóm đối tượng, mã số bảo hiểm và quyền lợi áp dụng trước khi nộp.",
+      "message": "Nên xác định đúng nhóm đối tượng, mã số bảo hiểm và quyền lợi áp dụng trước khi nộp."
+    }
+  ],
+  "common_errors": [],
+  "clarifying_questions": [
+    {
+      "id": "clarify_1",
+      "question": "Bạn đang muốn đăng ký, điều chỉnh hay xác nhận quyền lợi y tế hoặc bảo hiểm nào?",
+      "purpose": "workflow_intake"
+    },
+    {
+      "id": "clarify_2",
+      "question": "Bạn đã có mã BHXH/BHYT hoặc thông tin đơn vị tiếp nhận liên quan chưa?",
+      "purpose": "workflow_intake"
+    }
+  ],
+  "legal_basis": [
+    {
+      "title": "Thông tư số 103/2025/TT-BQP ngày 26/9/2025 của Bộ trưởng Bộ Quốc phòng về việc sửa đổi, bổ sung một số điều của các Thông tư liên tịch, Thông tư, Quyết định của Bộ trưởng Bộ Quốc phòng về lĩnh vực chính sách",
+      "code": "103/2025/TT-BQP"
+    },
+    {
+      "title": "Sửa đổi, bổ sung một số điều của Quy định về khám bệnh, chữa bệnh đối với sĩ quan phục viên có đủ 15 năm phục vụ trong quân đội, ban hành kèm theo Quyết định số 33/2003/QĐ-BQP ngày 07 tháng 4 năm 2003 của Bộ trưởng Bộ Quốc phòng",
+      "code": "139/2011/TT-BQP"
+    },
+    {
+      "title": "Ban hành Quy định về khám bệnh, chữa bệnh đối với sĩ quan phục viên có đủ 15 năm phục vụ trong quân đội",
+      "code": "33/2003/QĐ-BQP"
+    }
+  ],
+  "legal_bases": [
+    {
+      "title": "Thông tư số 103/2025/TT-BQP ngày 26/9/2025 của Bộ trưởng Bộ Quốc phòng về việc sửa đổi, bổ sung một số điều của các Thông tư liên tịch, Thông tư, Quyết định của Bộ trưởng Bộ Quốc phòng về lĩnh vực chính sách",
+      "code": "103/2025/TT-BQP"
+    },
+    {
+      "title": "Sửa đổi, bổ sung một số điều của Quy định về khám bệnh, chữa bệnh đối với sĩ quan phục viên có đủ 15 năm phục vụ trong quân đội, ban hành kèm theo Quyết định số 33/2003/QĐ-BQP ngày 07 tháng 4 năm 2003 của Bộ trưởng Bộ Quốc phòng",
+      "code": "139/2011/TT-BQP"
+    },
+    {
+      "title": "Ban hành Quy định về khám bệnh, chữa bệnh đối với sĩ quan phục viên có đủ 15 năm phục vụ trong quân đội",
+      "code": "33/2003/QĐ-BQP"
+    }
+  ],
+  "faq": [
+    {
+      "question": "Có thể nộp qua kênh nào?",
+      "answer": "Các kênh hiện có: Trực tiếp, Trực tuyến, Dịch vụ bưu chính."
+    },
+    {
+      "question": "Thời gian xử lý tham chiếu là bao lâu?",
+      "answer": "Thời gian xử lý tham chiếu hiện có là 1 ngày."
+    },
+    {
+      "question": "Kết quả chính của thủ tục là gì?",
+      "answer": "Kết quả chính được trích xuất là Sổ khám bệnh, chữa bệnh của sĩ quan phục viên 15 năm."
+    }
+  ],
+  "guidance": {
+    "highlight_documents": [
+      {
+        "bucket": "required",
+        "name": "Giấy giới thiệu của Bộ chỉ huy quân sự cấp tỉnh (nơi cư trú)",
+        "conditions": [],
+        "attachment_path": null
+      },
+      {
+        "bucket": "required",
+        "name": "Quyết định phục viên của sĩ quan (hoặc giấy chứng nhận có đủ 15 năm phục vụ trong Quân đội)",
+        "conditions": [],
+        "attachment_path": null
+      }
+    ],
+    "special_cases": [],
+    "common_errors": [],
+    "validation_hints": [
+      "Nên xác định trước kênh nộp hồ sơ để biết có cần bản giấy, bản điện tử hay xuất trình trực tiếp.",
+      "Nên xác định đúng nhóm đối tượng, mã số bảo hiểm và quyền lợi áp dụng trước khi nộp."
+    ]
+  },
+  "next_steps": {
+    "summary": "Nên xác định rõ đối tượng tham gia, quyền lợi hoặc nhu cầu điều chỉnh hồ sơ y tế trước khi nộp. Có thể chọn kênh nộp phù hợp: Trực tiếp, Trực tuyến, Dịch vụ bưu chính. Hiện có khoảng 2 mục giấy tờ cần theo dõi trong checklist.",
+    "time_badge": "1 ngày",
+    "result_label": "Sổ khám bệnh, chữa bệnh của sĩ quan phục viên 15 năm",
+    "primary_channel": "online",
+    "channels": [
+      "in_person",
+      "online",
+      "postal"
+    ]
+  },
+  "notes": [],
+  "provenance": {
+    "pipeline": "raw->structured->normalized->enriched->ui_api_payload",
+    "normalizer_version": "0.2.0",
+    "enricher_version": "0.2.0",
+    "mapping_notes": "excluded_from_clean_workflow_dataset",
+    "supported_group": true
+  }
+}

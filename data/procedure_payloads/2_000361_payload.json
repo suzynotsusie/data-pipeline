@@ -1,0 +1,424 @@
+{
+  "schema_version": "3.0",
+  "record_type": "public_service_procedure_payload",
+  "id": "procedure-2.000361",
+  "procedure_code": "2.000361",
+  "code": "2.000361",
+  "title": "Cấp giấy phép lập cơ sở bán lẻ thứ nhất, cơ sở bán lẻ ngoài cơ sở bán lẻ thứ nhất thuộc trường hợp không phải thực hiện thủ tục kiểm tra nhu cầu kinh tế (ENT)",
+  "language": "vi",
+  "status": "generated_from_pipeline",
+  "field": "Thương mại quốc tế",
+  "group_key": "suc_khoe_y_te",
+  "workflow_family": null,
+  "subflow": null,
+  "source": {
+    "source_url": "file:///C:/Users/ku060/Downloads/VAIC%20source/data-pipeline/raw_data/2_000361/2_000361_procedure_detail.md",
+    "source_markdown_path": "C:\\Users\\ku060\\Downloads\\VAIC source\\data-pipeline\\raw_data\\2_000361\\2_000361_procedure_detail.md",
+    "normalized_payload_path": "C:\\Users\\ku060\\Downloads\\VAIC source\\data-pipeline\\govease-unified\\data\\normalized_structured\\2_000361_normalized_structured.json",
+    "enriched_payload_path": "C:\\Users\\ku060\\Downloads\\VAIC source\\data-pipeline\\govease-unified\\data\\enriched_structured_priority\\2_000361_enriched_structured.json"
+  },
+  "scope": {
+    "included": "Thủ tục này thuộc nhóm y tế, thường cần đối chiếu thông tin người bệnh, đơn vị tiếp nhận hoặc quyền lợi chuyên ngành. Kết quả thường nhận được là GIẤY PHÉP LẬP CƠ SỞ BÁN LẺ. Thời gian xử lý tham khảo: 20 ngày làm việc.",
+    "not_included": []
+  },
+  "agency": {
+    "executing_agency": null,
+    "submission_place": null,
+    "receiving_places": []
+  },
+  "target_users": [
+    "Tổ chức nước ngoài"
+  ],
+  "submission_methods": [
+    {
+      "code": "ONLINE",
+      "label": "Trực tuyến",
+      "processing_time": "20 ngày làm việc",
+      "fee": null,
+      "description": null
+    },
+    {
+      "code": "POSTAL",
+      "label": "Dịch vụ bưu chính",
+      "processing_time": "20 ngày làm việc",
+      "fee": null,
+      "description": null
+    },
+    {
+      "code": "IN_PERSON",
+      "label": "Trực tiếp",
+      "processing_time": "20 ngày làm việc",
+      "fee": null,
+      "description": null
+    }
+  ],
+  "processing_note": "Thời gian xử lý tham chiếu: 20 ngày làm việc. Nên xác định rõ đối tượng tham gia, quyền lợi hoặc nhu cầu điều chỉnh hồ sơ y tế trước khi nộp. Có thể chọn kênh nộp phù hợp: Trực tiếp, Trực tuyến, Dịch vụ bưu chính. Hiện có khoảng 4 mục giấy tờ cần theo dõi trong checklist.",
+  "documents": {
+    "normally_required": [
+      {
+        "name": "Đơn đề nghị cấp Giấy phép lập cơ sở bán lẻ (Mẫu số 04 Phụ lục ban hành kèm theo Nghị định số 09/2018/NĐ-CP).",
+        "quantity": "2 bản chính, 0 bản sao",
+        "notes": [],
+        "group": "default",
+        "attachment_path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/2_000361/04M%C4%90-%C4%90%C6%A1n%20c%E1%BA%A5p%20GPBL%20%281%29.doc"
+      },
+      {
+        "name": "Tài liệu của cơ quan thuế chứng minh không còn nợ thuế quá hạn.",
+        "quantity": "2 bản chính, 0 bản sao",
+        "notes": [],
+        "group": "default",
+        "attachment_path": null
+      }
+    ],
+    "conditional": [
+      {
+        "condition": "Bản sao: Giấy chứng nhận đăng ký doanh nghiệp, Giấy chứng nhận đăng ký đầu tư dự án lập cơ sở bán lẻ (nếu có), Giấy phép kinh doanh.",
+        "document": "Bản sao: Giấy chứng nhận đăng ký doanh nghiệp, Giấy chứng nhận đăng ký đầu tư dự án lập cơ sở bán lẻ (nếu có), Giấy phép kinh doanh.",
+        "quantity": "2 bản chính, 0 bản sao",
+        "notes": [],
+        "attachment_path": null
+      },
+      {
+        "condition": "Bản giải trình có nội dung: a) Địa điểm lập cơ sở bán lẻ: Địa chỉ cơ sở bán lẻ; mô tả khu vực chung, có liên quan và khu vực sử dụng để lập cơ sở bán lẻ; giải trình việc đáp ứng điều kiện quy định tại điểm c khoản 1 Điều 22 Nghị định 09/2018/NĐ-CP gồm: (i) Không còn nợ thuế quá hạn trong trường hợp đã được thành lập tại Việt Nam từ 01 năm trở lên; (ii) Địa điểm lập cơ sở bán lẻ phù hợp với quy hoạch có liên quan tại khu vực thị trường địa lý, kèm theo tài liệu về địa điểm lập cơ sở bán lẻ. b) Kế hoạch kinh doanh tại cơ sở bán lẻ: Trình bày kế hoạch kinh doanh và phát triển thị trường; nhu cầu về lao động; đánh giá tác động, hiệu quả kinh tế - xã hội của kế hoạch kinh doanh;",
+        "document": "Bản giải trình có nội dung: a) Địa điểm lập cơ sở bán lẻ: Địa chỉ cơ sở bán lẻ; mô tả khu vực chung, có liên quan và khu vực sử dụng để lập cơ sở bán lẻ; giải trình việc đáp ứng điều kiện quy định tại điểm c khoản 1 Điều 22 Nghị định 09/2018/NĐ-CP gồm: (i) Không còn nợ thuế quá hạn trong trường hợp đã được thành lập tại Việt Nam từ 01 năm trở lên; (ii) Địa điểm lập cơ sở bán lẻ phù hợp với quy hoạch có liên quan tại khu vực thị trường địa lý, kèm theo tài liệu về địa điểm lập cơ sở bán lẻ. b) Kế hoạch kinh doanh tại cơ sở bán lẻ: Trình bày kế hoạch kinh doanh và phát triển thị trường; nhu cầu về lao động; đánh giá tác động, hiệu quả kinh tế - xã hội của kế hoạch kinh doanh;",
+        "quantity": "2 bản chính, 0 bản sao",
+        "notes": [],
+        "attachment_path": null
+      }
+    ],
+    "forms": [
+      {
+        "name": "Đơn đề nghị cấp Giấy phép lập cơ sở bán lẻ (Mẫu số 04 Phụ lục ban hành kèm theo Nghị định số 09/2018/NĐ-CP).",
+        "attachment_label": "04MĐ-Đơn cấp GPBL (1).doc",
+        "attachment_path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/2_000361/04M%C4%90-%C4%90%C6%A1n%20c%E1%BA%A5p%20GPBL%20%281%29.doc"
+      }
+    ],
+    "presented": [],
+    "notes": [],
+    "summary": [
+      {
+        "group": "default",
+        "name": "Đơn đề nghị cấp Giấy phép lập cơ sở bán lẻ (Mẫu số 04 Phụ lục ban hành kèm theo Nghị định số 09/2018/NĐ-CP).",
+        "quantity": "2 bản chính, 0 bản sao",
+        "notes": [],
+        "attachment_path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/2_000361/04M%C4%90-%C4%90%C6%A1n%20c%E1%BA%A5p%20GPBL%20%281%29.doc"
+      },
+      {
+        "group": "default",
+        "name": "Tài liệu của cơ quan thuế chứng minh không còn nợ thuế quá hạn.",
+        "quantity": "2 bản chính, 0 bản sao",
+        "notes": [],
+        "attachment_path": null
+      },
+      {
+        "group": null,
+        "name": null,
+        "quantity": "2 bản chính, 0 bản sao",
+        "notes": [],
+        "attachment_path": null
+      },
+      {
+        "group": null,
+        "name": null,
+        "quantity": "2 bản chính, 0 bản sao",
+        "notes": [],
+        "attachment_path": null
+      },
+      {
+        "group": null,
+        "name": "Đơn đề nghị cấp Giấy phép lập cơ sở bán lẻ (Mẫu số 04 Phụ lục ban hành kèm theo Nghị định số 09/2018/NĐ-CP).",
+        "quantity": null,
+        "notes": null,
+        "attachment_path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/2_000361/04M%C4%90-%C4%90%C6%A1n%20c%E1%BA%A5p%20GPBL%20%281%29.doc"
+      }
+    ]
+  },
+  "steps": [
+    {
+      "order": 1,
+      "title": "Bước 1",
+      "description": "1. Tổ chức kinh tế có vốn đầu tư nước ngoài gửi 02 bộ hồ sơ gửi trực tiếp hoặc qua đường bưu chính hoặc qua mạng điện tử (nếu đủ điều kiện áp dụng) đến Cơ quan cấp Giấy phép.",
+      "example": "dịch vụ bưu chính"
+    },
+    {
+      "order": 2,
+      "title": "Bước 2",
+      "description": "Trong thời hạn 03 ngày làm việc kể từ ngày nhận được hồ sơ, Cơ quan cấp Giấy phép kiểm tra và yêu cầu sửa đổi, bổ sung nếu hồ sơ chưa đủ và hợp lệ.",
+      "example": "03 ngày làm việc"
+    },
+    {
+      "order": 3,
+      "title": "Bước 3",
+      "description": "Trong thời hạn 10 ngày làm việc kể từ ngày nhận được hồ sơ đủ và hợp lệ, Cơ quan cấp Giấy phép kiểm tra việc đáp ứng điều kiện quy định tại khoản 1 Điều 22 Nghị định số 09/2018/NĐ-CP:",
+      "example": "10 ngày làm việc"
+    },
+    {
+      "order": 4,
+      "title": "Bước 4",
+      "description": "Trường hợp không đáp ứng điều kiện, Cơ quan cấp Giấy phép có văn bản trả lời và nêu rõ lý do;",
+      "example": null
+    },
+    {
+      "order": 5,
+      "title": "Bước 5",
+      "description": "Trường hợp đáp ứng điều kiện, Cơ quan cấp Giấy phép gửi hồ sơ kèm văn bản lấy ý kiến Ủy ban nhân dân cấp tỉnh (Mẫu số 09 Phụ lục ban hành kèm theo Nghị định này).",
+      "example": null
+    },
+    {
+      "order": 6,
+      "title": "Bước 6",
+      "description": "Trong thời hạn 07 ngày làm việc kể từ ngày nhận được hồ sơ, Ủy ban nhân dân cấp tỉnh căn cứ vào nội dung tương ứng quy định tại Điều 25 Nghị định số 09/2018/NĐ-CP để có văn bản chấp thuận cấp Giấy phép lập cơ sở bán lẻ; trường hợp từ chối phải có văn bản trả lời và nêu rõ lý do (Mẫu số 10 Phụ lục ban hành kèm theo Nghị định số 09/2018/NĐ-CP).",
+      "example": "07 ngày làm việc"
+    },
+    {
+      "order": 7,
+      "title": "Bước 7",
+      "description": "Trong thời hạn 03 ngày làm việc kể từ ngày nhận được văn bản chấp thuận của Ủy ban nhân dân cấp tỉnh, Cơ quan cấp Giấy phép cấp Giấy phép lập cơ sở bán lẻ. Trường hợp Ủy ban nhân dân cấp tỉnh từ chối, Cơ quan cấp Giấy phép phải có văn bản trả lời và nêu rõ lý do.",
+      "example": "03 ngày làm việc"
+    }
+  ],
+  "input_fields": [
+    {
+      "field": "request_subject",
+      "label": "Đối tượng làm thủ tục",
+      "type": "string",
+      "required": true
+    },
+    {
+      "field": "insurance_or_medical_need",
+      "label": "Nhu cầu bảo hiểm hoặc y tế",
+      "type": "string",
+      "required": true
+    },
+    {
+      "field": "submission_channel_preference",
+      "label": "Kênh nộp dự kiến",
+      "type": "enum",
+      "required": false,
+      "options": [
+        "Trực tiếp",
+        "Trực tuyến",
+        "Dịch vụ bưu chính"
+      ]
+    },
+    {
+      "field": "has_insurance_number",
+      "label": "Đã có mã BHXH/BHYT",
+      "type": "boolean",
+      "required": false
+    }
+  ],
+  "validation_rules": [
+    {
+      "id": "required-1",
+      "severity": "error",
+      "field": "request_subject",
+      "rule": "Trường bắt buộc phải có dữ liệu hợp lệ trước khi nộp.",
+      "message": "Thiếu trường bắt buộc: Đối tượng làm thủ tục."
+    },
+    {
+      "id": "required-2",
+      "severity": "error",
+      "field": "insurance_or_medical_need",
+      "rule": "Trường bắt buộc phải có dữ liệu hợp lệ trước khi nộp.",
+      "message": "Thiếu trường bắt buộc: Nhu cầu bảo hiểm hoặc y tế."
+    },
+    {
+      "id": "hint-1",
+      "severity": "warning",
+      "field": "general",
+      "rule": "Nên xác định trước kênh nộp hồ sơ để biết có cần bản giấy, bản điện tử hay xuất trình trực tiếp.",
+      "message": "Nên xác định trước kênh nộp hồ sơ để biết có cần bản giấy, bản điện tử hay xuất trình trực tiếp."
+    },
+    {
+      "id": "hint-2",
+      "severity": "warning",
+      "field": "general",
+      "rule": "Có mẫu biểu đính kèm, nên kiểm tra đúng biểu mẫu trước khi nộp.",
+      "message": "Có mẫu biểu đính kèm, nên kiểm tra đúng biểu mẫu trước khi nộp."
+    },
+    {
+      "id": "hint-3",
+      "severity": "warning",
+      "field": "general",
+      "rule": "Nên xác định đúng nhóm đối tượng, mã số bảo hiểm và quyền lợi áp dụng trước khi nộp.",
+      "message": "Nên xác định đúng nhóm đối tượng, mã số bảo hiểm và quyền lợi áp dụng trước khi nộp."
+    }
+  ],
+  "common_errors": [
+    {
+      "field": "general",
+      "issue": "Điền sai mẫu tờ khai hoặc chọn sai biểu mẫu đi kèm.",
+      "fix": "Nên xác định trước kênh nộp hồ sơ để biết có cần bản giấy, bản điện tử hay xuất trình trực tiếp."
+    },
+    {
+      "field": "general",
+      "issue": "Thông tin thửa đất, tài sản hoặc giấy chứng nhận chưa khớp với hồ sơ hiện có.",
+      "fix": "Nên xác định trước kênh nộp hồ sơ để biết có cần bản giấy, bản điện tử hay xuất trình trực tiếp."
+    },
+    {
+      "field": "general",
+      "issue": "Thiếu hồ sơ về vị trí việc làm, đơn vị sử dụng lao động hoặc điều kiện làm việc áp dụng.",
+      "fix": "Nên xác định trước kênh nộp hồ sơ để biết có cần bản giấy, bản điện tử hay xuất trình trực tiếp."
+    }
+  ],
+  "clarifying_questions": [
+    {
+      "id": "clarify_1",
+      "question": "Bạn đang muốn đăng ký, điều chỉnh hay xác nhận quyền lợi y tế hoặc bảo hiểm nào?",
+      "purpose": "workflow_intake"
+    },
+    {
+      "id": "clarify_2",
+      "question": "Bạn đã có mã BHXH/BHYT hoặc thông tin đơn vị tiếp nhận liên quan chưa?",
+      "purpose": "workflow_intake"
+    }
+  ],
+  "legal_basis": [
+    {
+      "title": "Quy định chi tiết Luật thương mại và Luật Quản lý ngoại thương về hoạt động mua bán hàng hóa và các hoạt động liên quan trực tiếp đến mua bán hàng hóa của nhà đầu tư nước ngoài, tổ chức kinh tế có vốn đầu tư nước ngoài tại Việt Nam",
+      "code": "09/2018/NĐ-CP"
+    },
+    {
+      "title": "Luật sửa đổi, bổ sung Điều 6 và Phụ lục 4 về Danh mục ngành, nghề đầu tư kinh doanh có điều kiện của Luật đầu tư",
+      "code": "03/2016/QH14"
+    },
+    {
+      "title": "Luật Thương mại",
+      "code": "36/2005/QH11"
+    },
+    {
+      "title": "Luật quản lý ngoại thương",
+      "code": "05/2017/QH14"
+    },
+    {
+      "title": "Nghị quyết số 19/2026/NQ-CP ngày 29 tháng 4 năm 2026 của Chính phủ về cắt giảm, phân cấp, đơn giản hoá thủ tục hành chính, điều kiện kinh doanh thuộc quản lý của Bộ Công Thương",
+      "code": "19/2026/NQ-CP"
+    },
+    {
+      "title": "Luật đầu tư",
+      "code": "67/2014/QH13"
+    },
+    {
+      "title": "Nghị quyết số 66.7/2025/NQ-CP của Chính phủ: Quy định cắt giảm, đơn giản hóa thủ tục hành chính dựa trên dữ liệu",
+      "code": "66.7/2025/NQ-CP"
+    },
+    {
+      "title": "Nghị định số 146/2025/NĐ-CP",
+      "code": "nghị định 146/2025"
+    }
+  ],
+  "legal_bases": [
+    {
+      "title": "Quy định chi tiết Luật thương mại và Luật Quản lý ngoại thương về hoạt động mua bán hàng hóa và các hoạt động liên quan trực tiếp đến mua bán hàng hóa của nhà đầu tư nước ngoài, tổ chức kinh tế có vốn đầu tư nước ngoài tại Việt Nam",
+      "code": "09/2018/NĐ-CP"
+    },
+    {
+      "title": "Luật sửa đổi, bổ sung Điều 6 và Phụ lục 4 về Danh mục ngành, nghề đầu tư kinh doanh có điều kiện của Luật đầu tư",
+      "code": "03/2016/QH14"
+    },
+    {
+      "title": "Luật Thương mại",
+      "code": "36/2005/QH11"
+    },
+    {
+      "title": "Luật quản lý ngoại thương",
+      "code": "05/2017/QH14"
+    },
+    {
+      "title": "Nghị quyết số 19/2026/NQ-CP ngày 29 tháng 4 năm 2026 của Chính phủ về cắt giảm, phân cấp, đơn giản hoá thủ tục hành chính, điều kiện kinh doanh thuộc quản lý của Bộ Công Thương",
+      "code": "19/2026/NQ-CP"
+    },
+    {
+      "title": "Luật đầu tư",
+      "code": "67/2014/QH13"
+    },
+    {
+      "title": "Nghị quyết số 66.7/2025/NQ-CP của Chính phủ: Quy định cắt giảm, đơn giản hóa thủ tục hành chính dựa trên dữ liệu",
+      "code": "66.7/2025/NQ-CP"
+    },
+    {
+      "title": "Nghị định số 146/2025/NĐ-CP",
+      "code": "nghị định 146/2025"
+    }
+  ],
+  "faq": [
+    {
+      "question": "Có thể nộp qua kênh nào?",
+      "answer": "Các kênh hiện có: Trực tiếp, Trực tuyến, Dịch vụ bưu chính."
+    },
+    {
+      "question": "Thời gian xử lý tham chiếu là bao lâu?",
+      "answer": "Thời gian xử lý tham chiếu hiện có là 20 ngày làm việc."
+    },
+    {
+      "question": "Kết quả chính của thủ tục là gì?",
+      "answer": "Kết quả chính được trích xuất là GIẤY PHÉP LẬP CƠ SỞ BÁN LẺ."
+    }
+  ],
+  "guidance": {
+    "highlight_documents": [
+      {
+        "bucket": "required",
+        "name": "Đơn đề nghị cấp Giấy phép lập cơ sở bán lẻ (Mẫu số 04 Phụ lục ban hành kèm theo Nghị định số 09/2018/NĐ-CP).",
+        "conditions": [],
+        "attachment_path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/2_000361/04M%C4%90-%C4%90%C6%A1n%20c%E1%BA%A5p%20GPBL%20%281%29.doc"
+      },
+      {
+        "bucket": "required",
+        "name": "Tài liệu của cơ quan thuế chứng minh không còn nợ thuế quá hạn.",
+        "conditions": [],
+        "attachment_path": null
+      },
+      {
+        "bucket": "conditional",
+        "name": "Bản sao: Giấy chứng nhận đăng ký doanh nghiệp, Giấy chứng nhận đăng ký đầu tư dự án lập cơ sở bán lẻ (nếu có), Giấy phép kinh doanh.",
+        "conditions": [
+          "Bản sao: Giấy chứng nhận đăng ký doanh nghiệp, Giấy chứng nhận đăng ký đầu tư dự án lập cơ sở bán lẻ (nếu có), Giấy phép kinh doanh."
+        ],
+        "attachment_path": null
+      },
+      {
+        "bucket": "conditional",
+        "name": "Bản giải trình có nội dung: a) Địa điểm lập cơ sở bán lẻ: Địa chỉ cơ sở bán lẻ; mô tả khu vực chung, có liên quan và khu vực sử dụng để lập cơ sở bán lẻ; giải trình việc đáp ứng điều kiện quy định tại điểm c khoản 1 Điều 22 Nghị định 09/2018/NĐ-CP gồm: (i) Không còn nợ thuế quá hạn trong trường hợp đã được thành lập tại Việt Nam từ 01 năm trở lên; (ii) Địa điểm lập cơ sở bán lẻ phù hợp với quy hoạch có liên quan tại khu vực thị trường địa lý, kèm theo tài liệu về địa điểm lập cơ sở bán lẻ. b) Kế hoạch kinh doanh tại cơ sở bán lẻ: Trình bày kế hoạch kinh doanh và phát triển thị trường; nhu cầu về lao động; đánh giá tác động, hiệu quả kinh tế - xã hội của kế hoạch kinh doanh;",
+        "conditions": [
+          "Bản giải trình có nội dung: a) Địa điểm lập cơ sở bán lẻ: Địa chỉ cơ sở bán lẻ; mô tả khu vực chung, có liên quan và khu vực sử dụng để lập cơ sở bán lẻ; giải trình việc đáp ứng điều kiện quy định tại điểm c khoản 1 Điều 22 Nghị định 09/2018/NĐ-CP gồm: (i) Không còn nợ thuế quá hạn trong trường hợp đã được thành lập tại Việt Nam từ 01 năm trở lên; (ii) Địa điểm lập cơ sở bán lẻ phù hợp với quy hoạch có liên quan tại khu vực thị trường địa lý, kèm theo tài liệu về địa điểm lập cơ sở bán lẻ. b) Kế hoạch kinh doanh tại cơ sở bán lẻ: Trình bày kế hoạch kinh doanh và phát triển thị trường; nhu cầu về lao động; đánh giá tác động, hiệu quả kinh tế - xã hội của kế hoạch kinh doanh;"
+        ],
+        "attachment_path": null
+      }
+    ],
+    "special_cases": [
+      "Có thể cần đối chiếu thông tin thửa đất hoặc giấy chứng nhận",
+      "Có thể cần xác minh quan hệ lao động hoặc giấy phép làm việc"
+    ],
+    "common_errors": [
+      "Điền sai mẫu tờ khai hoặc chọn sai biểu mẫu đi kèm.",
+      "Thông tin thửa đất, tài sản hoặc giấy chứng nhận chưa khớp với hồ sơ hiện có.",
+      "Thiếu hồ sơ về vị trí việc làm, đơn vị sử dụng lao động hoặc điều kiện làm việc áp dụng."
+    ],
+    "validation_hints": [
+      "Nên xác định trước kênh nộp hồ sơ để biết có cần bản giấy, bản điện tử hay xuất trình trực tiếp.",
+      "Có mẫu biểu đính kèm, nên kiểm tra đúng biểu mẫu trước khi nộp.",
+      "Nên xác định đúng nhóm đối tượng, mã số bảo hiểm và quyền lợi áp dụng trước khi nộp."
+    ]
+  },
+  "next_steps": {
+    "summary": "Nên xác định rõ đối tượng tham gia, quyền lợi hoặc nhu cầu điều chỉnh hồ sơ y tế trước khi nộp. Có thể chọn kênh nộp phù hợp: Trực tiếp, Trực tuyến, Dịch vụ bưu chính. Hiện có khoảng 4 mục giấy tờ cần theo dõi trong checklist.",
+    "time_badge": "20 ngày làm việc",
+    "result_label": "GIẤY PHÉP LẬP CƠ SỞ BÁN LẺ",
+    "primary_channel": "online",
+    "channels": [
+      "in_person",
+      "online",
+      "postal"
+    ]
+  },
+  "notes": [],
+  "provenance": {
+    "pipeline": "raw->structured->normalized->enriched->ui_api_payload",
+    "normalizer_version": "0.2.0",
+    "enricher_version": "0.2.0",
+    "mapping_notes": "excluded_from_clean_workflow_dataset",
+    "supported_group": true
+  }
+}

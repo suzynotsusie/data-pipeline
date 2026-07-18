@@ -1,0 +1,126 @@
+{
+  "schema_version": "1.0",
+  "domain": "co_con_nho",
+  "updated_at": "2026-07-18",
+  "source_files": [
+    "C:\\Users\\ku060\\Downloads\\VAIC source\\data-pipeline\\main\\full-data.csv",
+    "C:\\Users\\ku060\\Downloads\\VAIC source\\data-pipeline\\data\\workflows\\co_con_nho\\summary.csv",
+    "C:\\Users\\ku060\\Downloads\\VAIC source\\data-pipeline\\data\\workflows\\co_con_nho\\normalized.json",
+    "C:\\Users\\ku060\\Downloads\\VAIC source\\data-pipeline\\raw_data"
+  ],
+  "coverage": {
+    "expected_codes": [
+      "1.004222"
+    ],
+    "covered_codes": [
+      "1.004222"
+    ],
+    "missing_codes": []
+  },
+  "llm_contract": {
+    "role": "parse_user_answer_and_rephrase_question_only",
+    "required_output_schema": {
+      "intent": "co_con_nho",
+      "current_node": "string",
+      "slot_updates": {
+        "subdomain_key": "lien_thong_khai_sinh_bao_hiem_cu_tru | khai_sinh | cu_tru | unknown",
+        "operation_key": "string",
+        "operation_group": "string"
+      },
+      "confidence": "0_to_1",
+      "needs_human_review": "boolean"
+    }
+  },
+  "entry_prompts": [
+    "Bạn đang cần làm việc về khai sinh, bảo hiểm y tế hay cư trú cho trẻ nhỏ?",
+    "Bạn muốn làm khai sinh riêng, liên thông thêm bảo hiểm hoặc cư trú, hay xin lại giấy tờ đã có?"
+  ],
+  "slots": [
+    {
+      "name": "subdomain_key",
+      "required": true,
+      "description": "Nhánh chính của nhóm Có con nhỏ."
+    },
+    {
+      "name": "operation_key",
+      "required": true,
+      "description": "Thao tác cụ thể ánh xạ trực tiếp tới thủ tục cuối cùng."
+    },
+    {
+      "name": "operation_group",
+      "required": false,
+      "description": "Nhóm thao tác để gom các thủ tục gần nhau cho UI và parser."
+    }
+  ],
+  "subdomain_catalog": [
+    {
+      "subdomain_key": "cu_tru",
+      "subdomain_label": "Cư trú",
+      "event_id": 253,
+      "summary": "Nhóm thủ tục đăng ký thường trú cho trẻ nhỏ khi gia đình không làm qua gói liên thông đầy đủ."
+    }
+  ],
+  "decision_tree": {
+    "start_node": "child_subdomain",
+    "nodes": [
+      {
+        "id": "child_subdomain",
+        "type": "question",
+        "slot": "subdomain_key",
+        "question": "Bạn đang hỏi về liên thông sau sinh, khai sinh, bảo hiểm y tế hay cư trú cho trẻ?",
+        "options": [
+          "cu_tru"
+        ],
+        "prefilled_value": "cu_tru"
+      },
+      {
+        "id": "child_operation",
+        "type": "question",
+        "slot": "operation_key",
+        "question": "Bạn cần làm thao tác nào cụ thể trong nhánh đã chọn?",
+        "options_by_subdomain": {
+          "cu_tru": [
+            {
+              "operation_key": "dang_ky_thuong_tru",
+              "operation_group": "dang_ky_thuong_tru_cho_tre",
+              "procedure_code": "1.004222",
+              "procedure_title": "Đăng ký thường trú"
+            }
+          ]
+        },
+        "options": [
+          "dang_ky_thuong_tru"
+        ]
+      }
+    ],
+    "routes": [
+      {
+        "route_id": "cu_tru-1_004222",
+        "conditions": {
+          "subdomain_key": "cu_tru",
+          "operation_key": "dang_ky_thuong_tru"
+        },
+        "procedure_code": "1.004222",
+        "procedure_name": "Đăng ký thường trú",
+        "why_this_route": "Route trực tiếp cho nhu cầu 'Đăng ký thường trú' trong nhánh 'Cư trú'."
+      }
+    ]
+  },
+  "pre_submission_checks": [
+    {
+      "field_group": "child_birth_information",
+      "checks": [
+        "Thông tin trẻ gồm họ tên, ngày sinh, nơi sinh và giới tính phải thống nhất giữa giấy chứng sinh, tờ khai và hồ sơ liên thông.",
+        "Nhóm khai sinh có yếu tố nước ngoài hoặc kết hợp nhận cha mẹ con cần đối chiếu chặt chẽ giấy tờ nhân thân của cha mẹ."
+      ]
+    },
+    {
+      "field_group": "linked_services",
+      "checks": [
+        "Nếu làm liên thông bảo hiểm y tế hoặc cư trú, dữ liệu của trẻ và cha mẹ phải đồng bộ giữa hồ sơ khai sinh, bảo hiểm và cư trú.",
+        "Đăng ký thường trú cho trẻ cần có địa chỉ cư trú rõ ràng và hồ sơ chứng minh chỗ ở hợp lệ khi không làm qua gói liên thông đầy đủ."
+      ]
+    }
+  ],
+  "subdomain_key": "cu_tru"
+}

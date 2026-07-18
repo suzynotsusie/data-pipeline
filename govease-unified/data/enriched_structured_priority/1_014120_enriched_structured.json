@@ -1,0 +1,103 @@
+{
+  "schema_version": "1.0",
+  "enricher_version": "0.2.0",
+  "source": {
+    "procedure_code": "1.014120",
+    "title": "Cấp phép xuất khẩu dược liệu thuộc danh mục loài, chủng loại dược liệu quý, hiếm, đặc hữu phải kiểm soát",
+    "group_key": "suc_khoe_y_te",
+    "workflow_family": null,
+    "subflow": null
+  },
+  "experience": {
+    "entry_label": "Hỗ trợ y tế và bảo hiểm",
+    "overview_summary": "Thủ tục này thuộc nhóm y tế, thường cần đối chiếu thông tin người bệnh, đơn vị tiếp nhận hoặc quyền lợi chuyên ngành. Kết quả thường nhận được là văn bản thông báo kết quả giải quyết hồ sơ. Thời gian xử lý tham khảo: 7 ngày.",
+    "next_step_summary": "Nên xác định rõ đối tượng tham gia, quyền lợi hoặc nhu cầu điều chỉnh hồ sơ y tế trước khi nộp. Có thể chọn kênh nộp phù hợp: Trực tiếp, Trực tuyến, Dịch vụ bưu chính. Hiện có khoảng 4 mục giấy tờ cần theo dõi trong checklist.",
+    "tone": "supportive_public_service"
+  },
+  "guidance": {
+    "highlight_documents": [
+      {
+        "bucket": "required",
+        "name": "a) 03 bản chính Đơn hàng xuất khẩu theo Mẫu số 06 tại Phụ lục III ban hành kèm theo Nghị định số 163/2025/NĐ-CP; Mẫu số 06 tại Phụ lục III ban hành kèm theo Nghị định số 163/2025/NĐ-CP",
+        "conditions": [],
+        "attachment_path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/1_014120/Mu2.docx"
+      },
+      {
+        "bucket": "conditional",
+        "name": "c) Bản sao có chứng thực hoặc bản sao có đóng dấu của cơ sở xuất khẩu hợp đồng thu mua dược liệu. Trường hợp bản sao có đóng dấu của cơ sở thì phải xuất trình bản chính để đối chiếu khi nộp hồ sơ; Bản chính: 00 Bản sao: 01 và/ hoặc 01 bản chính để đối chiếu khi nộp hồ sơ",
+        "conditions": [
+          "c) Bản sao có chứng thực hoặc bản sao có đóng dấu của cơ sở xuất khẩu hợp đồng thu mua dược liệu. Trường hợp bản sao có đóng dấu của cơ sở thì phải xuất trình bản chính để đối chiếu khi nộp hồ sơ; Bản chính: 00 Bản sao: 01 và/ hoặc 01 bản chính để đối chiếu khi nộp hồ sơ"
+        ],
+        "attachment_path": null
+      },
+      {
+        "bucket": "conditional",
+        "name": "d) Trường hợp xuất khẩu không vì mục đích thương mại không phải nộp hồ sơ quy định tại điểm b và c khoản 2 Điều 45 Nghị định số 163/2025/NĐ-CP Bản chính: 00 Bản sao: 00 Số lượng hồ sơ: 01 bộ hồ sơ",
+        "conditions": [
+          "d) Trường hợp xuất khẩu không vì mục đích thương mại không phải nộp hồ sơ quy định tại điểm b và c khoản 2 Điều 45 Nghị định số 163/2025/NĐ-CP Bản chính: 00 Bản sao: 00 Số lượng hồ sơ: 01 bộ hồ sơ"
+        ],
+        "attachment_path": null
+      },
+      {
+        "bucket": "conditional",
+        "name": "b) Bản sao giấy xác nhận của Ủy ban nhân dân cấp xã về nguồn gốc dược liệu nuôi trồng có chứng thực hoặc đóng dấu của cơ sở xuất khẩu. Trường hợp bản sao có đóng dấu của cơ sở thì phải xuất trình bản chính để đối chiếu khi nộp hồ sơ; Bản chính: 00 Bản sao: 01 và/ hoặc 01 bản chính để đối chiếu khi nộp hồ sơ",
+        "conditions": [
+          "b) Bản sao giấy xác nhận của Ủy ban nhân dân cấp xã về nguồn gốc dược liệu nuôi trồng có chứng thực hoặc đóng dấu của cơ sở xuất khẩu. Trường hợp bản sao có đóng dấu của cơ sở thì phải xuất trình bản chính để đối chiếu khi nộp hồ sơ; Bản chính: 00 Bản sao: 01 và/ hoặc 01 bản chính để đối chiếu khi nộp hồ sơ"
+        ],
+        "attachment_path": null
+      }
+    ],
+    "special_cases": [],
+    "common_errors": [
+      "Điền sai mẫu tờ khai hoặc chọn sai biểu mẫu đi kèm."
+    ],
+    "validation_hints": [
+      "Nên xác định trước kênh nộp hồ sơ để biết có cần bản giấy, bản điện tử hay xuất trình trực tiếp.",
+      "Có mẫu biểu đính kèm, nên kiểm tra đúng biểu mẫu trước khi nộp.",
+      "Nên xác định đúng nhóm đối tượng, mã số bảo hiểm và quyền lợi áp dụng trước khi nộp."
+    ]
+  },
+  "intake": {
+    "candidate_input_fields": [
+      {
+        "field_id": "request_subject",
+        "label": "Đối tượng làm thủ tục",
+        "field_type": "text",
+        "required": true
+      },
+      {
+        "field_id": "insurance_or_medical_need",
+        "label": "Nhu cầu bảo hiểm hoặc y tế",
+        "field_type": "text",
+        "required": true
+      },
+      {
+        "field_id": "submission_channel_preference",
+        "label": "Kênh nộp dự kiến",
+        "field_type": "enum",
+        "required": false
+      },
+      {
+        "field_id": "has_insurance_number",
+        "label": "Đã có mã BHXH/BHYT",
+        "field_type": "boolean",
+        "required": false
+      }
+    ],
+    "suggested_clarifying_questions": [
+      "Bạn đang muốn đăng ký, điều chỉnh hay xác nhận quyền lợi y tế hoặc bảo hiểm nào?",
+      "Bạn đã có mã BHXH/BHYT hoặc thông tin đơn vị tiếp nhận liên quan chưa?"
+    ]
+  },
+  "ui_hints": {
+    "primary_channel": "online",
+    "result_label": "văn bản thông báo kết quả giải quyết hồ sơ",
+    "time_badge": "7 ngày",
+    "document_count_badge": 4
+  },
+  "provenance": {
+    "generator": "workflow_domain_enricher",
+    "derivation_mode": "rule_based_semantic_enrichment",
+    "supported_group": true
+  }
+}

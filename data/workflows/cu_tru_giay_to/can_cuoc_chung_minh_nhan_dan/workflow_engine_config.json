@@ -1,0 +1,380 @@
+{
+  "schema_version": "1.0",
+  "domain": "cu_tru_giay_to",
+  "updated_at": "2026-07-18",
+  "source_files": [
+    "C:\\Users\\ku060\\Downloads\\VAIC source\\data-pipeline\\main\\full-data.csv",
+    "C:\\Users\\ku060\\Downloads\\VAIC source\\data-pipeline\\data\\workflows\\cu_tru_giay_to\\summary.csv",
+    "C:\\Users\\ku060\\Downloads\\VAIC source\\data-pipeline\\data\\workflows\\cu_tru_giay_to\\normalized.json",
+    "C:\\Users\\ku060\\Downloads\\VAIC source\\data-pipeline\\raw_data"
+  ],
+  "coverage": {
+    "expected_codes": [
+      "1.014060",
+      "1.014061",
+      "1.014062",
+      "1.014063",
+      "1.014064",
+      "1.014067",
+      "1.014068",
+      "3.000228",
+      "3.000271",
+      "3.000272",
+      "3.000276",
+      "3.000277",
+      "3.000285",
+      "3.000286"
+    ],
+    "covered_codes": [
+      "1.014060",
+      "1.014061",
+      "1.014062",
+      "1.014063",
+      "1.014064",
+      "1.014067",
+      "1.014068",
+      "3.000228",
+      "3.000271",
+      "3.000272",
+      "3.000276",
+      "3.000277",
+      "3.000285",
+      "3.000286"
+    ],
+    "missing_codes": []
+  },
+  "llm_contract": {
+    "role": "parse_user_answer_and_rephrase_question_only",
+    "required_output_schema": {
+      "intent": "cu_tru_giay_to",
+      "current_node": "string",
+      "slot_updates": {
+        "subdomain_key": "ho_khau | tam_tru | luu_tru | can_cuoc_chung_minh_nhan_dan | ho_chieu | tam_vang | unknown",
+        "operation_key": "string",
+        "operation_group": "string"
+      },
+      "confidence": "0_to_1",
+      "needs_human_review": "boolean"
+    }
+  },
+  "entry_prompts": [
+    "Bạn đang cần làm việc về cư trú, căn cước hay hộ chiếu?",
+    "Bạn muốn đăng ký, gia hạn, xóa, xác nhận thông tin, cấp lại giấy tờ hay xử lý giấy tờ bị mất?"
+  ],
+  "slots": [
+    {
+      "name": "subdomain_key",
+      "required": true,
+      "description": "Nhánh chính của nhóm Cư trú và giấy tờ tùy thân."
+    },
+    {
+      "name": "operation_key",
+      "required": true,
+      "description": "Thao tác cụ thể ánh xạ trực tiếp tới thủ tục cuối cùng."
+    },
+    {
+      "name": "operation_group",
+      "required": false,
+      "description": "Nhóm thao tác để gom các thủ tục gần nhau cho UI và parser."
+    }
+  ],
+  "subdomain_catalog": [
+    {
+      "subdomain_key": "can_cuoc_chung_minh_nhan_dan",
+      "subdomain_label": "Căn cước công dân/Chứng minh nhân dân",
+      "event_id": 272,
+      "summary": "Nhóm thủ tục cấp, cấp đổi, cấp lại căn cước, giấy chứng nhận căn cước và tài khoản/căn cước điện tử."
+    }
+  ],
+  "decision_tree": {
+    "start_node": "residence_identity_subdomain",
+    "nodes": [
+      {
+        "id": "residence_identity_subdomain",
+        "type": "question",
+        "slot": "subdomain_key",
+        "question": "Bạn đang hỏi về hộ khẩu, tạm trú, lưu trú, căn cước, hộ chiếu hay tạm vắng?",
+        "options": [
+          "can_cuoc_chung_minh_nhan_dan"
+        ],
+        "prefilled_value": "can_cuoc_chung_minh_nhan_dan"
+      },
+      {
+        "id": "residence_identity_operation",
+        "type": "question",
+        "slot": "operation_key",
+        "question": "Bạn cần làm thao tác nào cụ thể trong nhánh đã chọn?",
+        "options_by_subdomain": {
+          "can_cuoc_chung_minh_nhan_dan": [
+            {
+              "operation_key": "tich_hop_cap_nhat_dieu_chinh_thong_tin_tren_the_can_cuoc",
+              "operation_group": "cap_nhat_tich_hop_can_cuoc",
+              "procedure_code": "1.014060",
+              "procedure_title": "Tích hợp, cập nhật, điều chỉnh thông tin trên thẻ căn cước"
+            },
+            {
+              "operation_key": "cap_the_can_cuoc_cho_nguoi_tu_du_14_tuoi_tro_len",
+              "operation_group": "cap_the_can_cuoc_tu_14_tuoi",
+              "procedure_code": "1.014061",
+              "procedure_title": "Cấp thẻ căn cước cho người từ đủ 14 tuổi trở lên"
+            },
+            {
+              "operation_key": "cap_the_can_cuoc_cho_nguoi_duoi_14_tuoi",
+              "operation_group": "cap_the_can_cuoc_duoi_14",
+              "procedure_code": "1.014062",
+              "procedure_title": "Cấp thẻ căn cước cho người dưới 14 tuổi"
+            },
+            {
+              "operation_key": "cap_doi_the_can_cuoc",
+              "operation_group": "cap_doi_the_can_cuoc",
+              "procedure_code": "1.014063",
+              "procedure_title": "Cấp đổi thẻ căn cước"
+            },
+            {
+              "operation_key": "cap_lai_the_can_cuoc",
+              "operation_group": "cap_lai_the_can_cuoc",
+              "procedure_code": "1.014064",
+              "procedure_title": "Cấp lại thẻ căn cước"
+            },
+            {
+              "operation_key": "cap_doi_giay_chung_nhan_can_cuoc",
+              "operation_group": "cap_doi_giay_chung_nhan_can_cuoc",
+              "procedure_code": "1.014067",
+              "procedure_title": "Cấp đổi giấy chứng nhận căn cước"
+            },
+            {
+              "operation_key": "cap_lai_giay_chung_nhan_can_cuoc",
+              "operation_group": "cap_lai_giay_chung_nhan_can_cuoc",
+              "procedure_code": "1.014068",
+              "procedure_title": "Cấp lại giấy chứng nhận căn cước"
+            },
+            {
+              "operation_key": "cap_tai_khoan_dinh_danh_dien_tu_muc_do_02_can_cuoc_dien_tu_cho_cong_dan_viet_nam_cap_xa",
+              "operation_group": "cap_tai_khoan_dinh_danh_muc_2",
+              "procedure_code": "3.000228",
+              "procedure_title": "Cấp tài khoản định danh điện tử mức độ 02, căn cước điện tử cho công dân Việt Nam (cấp xã)"
+            },
+            {
+              "operation_key": "khoa_can_cuoc_dien_tu_thuc_hien_tai_cap_trung_uong",
+              "operation_group": "khoa_can_cuoc_dien_tu",
+              "procedure_code": "3.000271",
+              "procedure_title": "Khóa căn cước điện tử (thực hiện tại cấp trung ương)"
+            },
+            {
+              "operation_key": "mo_khoa_can_cuoc_dien_tu_thuc_hien_tai_cap_trung_uong",
+              "operation_group": "khoa_can_cuoc_dien_tu",
+              "procedure_code": "3.000272",
+              "procedure_title": "Mở khóa căn cước điện tử (thực hiện tại cấp trung ương)"
+            },
+            {
+              "operation_key": "khoa_can_cuoc_dien_tu_thuc_hien_tai_cap_tinh",
+              "operation_group": "khoa_can_cuoc_dien_tu",
+              "procedure_code": "3.000276",
+              "procedure_title": "Khóa căn cước điện tử (thực hiện tại cấp tỉnh)"
+            },
+            {
+              "operation_key": "mo_khoa_can_cuoc_dien_tu_thuc_hien_tai_cap_tinh",
+              "operation_group": "khoa_can_cuoc_dien_tu",
+              "procedure_code": "3.000277",
+              "procedure_title": "Mở khóa căn cước điện tử (thực hiện tại cấp tỉnh)"
+            },
+            {
+              "operation_key": "khoa_can_cuoc_dien_tu_thuc_hien_tai_cap_xa",
+              "operation_group": "khoa_can_cuoc_dien_tu",
+              "procedure_code": "3.000285",
+              "procedure_title": "Khóa căn cước điện tử (thực hiện tại cấp xã)"
+            },
+            {
+              "operation_key": "mo_khoa_can_cuoc_dien_tu_thuc_hien_tai_cap_xa",
+              "operation_group": "khoa_can_cuoc_dien_tu",
+              "procedure_code": "3.000286",
+              "procedure_title": "Mở khóa căn cước điện tử (thực hiện tại cấp xã)"
+            }
+          ]
+        },
+        "options": [
+          "tich_hop_cap_nhat_dieu_chinh_thong_tin_tren_the_can_cuoc",
+          "cap_the_can_cuoc_cho_nguoi_tu_du_14_tuoi_tro_len",
+          "cap_the_can_cuoc_cho_nguoi_duoi_14_tuoi",
+          "cap_doi_the_can_cuoc",
+          "cap_lai_the_can_cuoc",
+          "cap_doi_giay_chung_nhan_can_cuoc",
+          "cap_lai_giay_chung_nhan_can_cuoc",
+          "cap_tai_khoan_dinh_danh_dien_tu_muc_do_02_can_cuoc_dien_tu_cho_cong_dan_viet_nam_cap_xa",
+          "khoa_can_cuoc_dien_tu_thuc_hien_tai_cap_trung_uong",
+          "mo_khoa_can_cuoc_dien_tu_thuc_hien_tai_cap_trung_uong",
+          "khoa_can_cuoc_dien_tu_thuc_hien_tai_cap_tinh",
+          "mo_khoa_can_cuoc_dien_tu_thuc_hien_tai_cap_tinh",
+          "khoa_can_cuoc_dien_tu_thuc_hien_tai_cap_xa",
+          "mo_khoa_can_cuoc_dien_tu_thuc_hien_tai_cap_xa"
+        ]
+      }
+    ],
+    "routes": [
+      {
+        "route_id": "can_cuoc_chung_minh_nhan_dan-1_014060",
+        "conditions": {
+          "subdomain_key": "can_cuoc_chung_minh_nhan_dan",
+          "operation_key": "tich_hop_cap_nhat_dieu_chinh_thong_tin_tren_the_can_cuoc"
+        },
+        "procedure_code": "1.014060",
+        "procedure_name": "Tích hợp, cập nhật, điều chỉnh thông tin trên thẻ căn cước",
+        "why_this_route": "Route trực tiếp cho nhu cầu 'Tích hợp, cập nhật, điều chỉnh thông tin trên thẻ căn cước' trong nhánh 'Căn cước công dân/Chứng minh nhân dân'."
+      },
+      {
+        "route_id": "can_cuoc_chung_minh_nhan_dan-1_014061",
+        "conditions": {
+          "subdomain_key": "can_cuoc_chung_minh_nhan_dan",
+          "operation_key": "cap_the_can_cuoc_cho_nguoi_tu_du_14_tuoi_tro_len"
+        },
+        "procedure_code": "1.014061",
+        "procedure_name": "Cấp thẻ căn cước cho người từ đủ 14 tuổi trở lên",
+        "why_this_route": "Route trực tiếp cho nhu cầu 'Cấp thẻ căn cước cho người từ đủ 14 tuổi trở lên' trong nhánh 'Căn cước công dân/Chứng minh nhân dân'."
+      },
+      {
+        "route_id": "can_cuoc_chung_minh_nhan_dan-1_014062",
+        "conditions": {
+          "subdomain_key": "can_cuoc_chung_minh_nhan_dan",
+          "operation_key": "cap_the_can_cuoc_cho_nguoi_duoi_14_tuoi"
+        },
+        "procedure_code": "1.014062",
+        "procedure_name": "Cấp thẻ căn cước cho người dưới 14 tuổi",
+        "why_this_route": "Route trực tiếp cho nhu cầu 'Cấp thẻ căn cước cho người dưới 14 tuổi' trong nhánh 'Căn cước công dân/Chứng minh nhân dân'."
+      },
+      {
+        "route_id": "can_cuoc_chung_minh_nhan_dan-1_014063",
+        "conditions": {
+          "subdomain_key": "can_cuoc_chung_minh_nhan_dan",
+          "operation_key": "cap_doi_the_can_cuoc"
+        },
+        "procedure_code": "1.014063",
+        "procedure_name": "Cấp đổi thẻ căn cước",
+        "why_this_route": "Route trực tiếp cho nhu cầu 'Cấp đổi thẻ căn cước' trong nhánh 'Căn cước công dân/Chứng minh nhân dân'."
+      },
+      {
+        "route_id": "can_cuoc_chung_minh_nhan_dan-1_014064",
+        "conditions": {
+          "subdomain_key": "can_cuoc_chung_minh_nhan_dan",
+          "operation_key": "cap_lai_the_can_cuoc"
+        },
+        "procedure_code": "1.014064",
+        "procedure_name": "Cấp lại thẻ căn cước",
+        "why_this_route": "Route trực tiếp cho nhu cầu 'Cấp lại thẻ căn cước' trong nhánh 'Căn cước công dân/Chứng minh nhân dân'."
+      },
+      {
+        "route_id": "can_cuoc_chung_minh_nhan_dan-1_014067",
+        "conditions": {
+          "subdomain_key": "can_cuoc_chung_minh_nhan_dan",
+          "operation_key": "cap_doi_giay_chung_nhan_can_cuoc"
+        },
+        "procedure_code": "1.014067",
+        "procedure_name": "Cấp đổi giấy chứng nhận căn cước",
+        "why_this_route": "Route trực tiếp cho nhu cầu 'Cấp đổi giấy chứng nhận căn cước' trong nhánh 'Căn cước công dân/Chứng minh nhân dân'."
+      },
+      {
+        "route_id": "can_cuoc_chung_minh_nhan_dan-1_014068",
+        "conditions": {
+          "subdomain_key": "can_cuoc_chung_minh_nhan_dan",
+          "operation_key": "cap_lai_giay_chung_nhan_can_cuoc"
+        },
+        "procedure_code": "1.014068",
+        "procedure_name": "Cấp lại giấy chứng nhận căn cước",
+        "why_this_route": "Route trực tiếp cho nhu cầu 'Cấp lại giấy chứng nhận căn cước' trong nhánh 'Căn cước công dân/Chứng minh nhân dân'."
+      },
+      {
+        "route_id": "can_cuoc_chung_minh_nhan_dan-3_000228",
+        "conditions": {
+          "subdomain_key": "can_cuoc_chung_minh_nhan_dan",
+          "operation_key": "cap_tai_khoan_dinh_danh_dien_tu_muc_do_02_can_cuoc_dien_tu_cho_cong_dan_viet_nam_cap_xa"
+        },
+        "procedure_code": "3.000228",
+        "procedure_name": "Cấp tài khoản định danh điện tử mức độ 02, căn cước điện tử cho công dân Việt Nam (cấp xã)",
+        "why_this_route": "Route trực tiếp cho nhu cầu 'Cấp tài khoản định danh điện tử mức độ 02, căn cước điện tử cho công dân Việt Nam (cấp xã)' trong nhánh 'Căn cước công dân/Chứng minh nhân dân'."
+      },
+      {
+        "route_id": "can_cuoc_chung_minh_nhan_dan-3_000271",
+        "conditions": {
+          "subdomain_key": "can_cuoc_chung_minh_nhan_dan",
+          "operation_key": "khoa_can_cuoc_dien_tu_thuc_hien_tai_cap_trung_uong"
+        },
+        "procedure_code": "3.000271",
+        "procedure_name": "Khóa căn cước điện tử (thực hiện tại cấp trung ương)",
+        "why_this_route": "Route trực tiếp cho nhu cầu 'Khóa căn cước điện tử (thực hiện tại cấp trung ương)' trong nhánh 'Căn cước công dân/Chứng minh nhân dân'."
+      },
+      {
+        "route_id": "can_cuoc_chung_minh_nhan_dan-3_000272",
+        "conditions": {
+          "subdomain_key": "can_cuoc_chung_minh_nhan_dan",
+          "operation_key": "mo_khoa_can_cuoc_dien_tu_thuc_hien_tai_cap_trung_uong"
+        },
+        "procedure_code": "3.000272",
+        "procedure_name": "Mở khóa căn cước điện tử (thực hiện tại cấp trung ương)",
+        "why_this_route": "Route trực tiếp cho nhu cầu 'Mở khóa căn cước điện tử (thực hiện tại cấp trung ương)' trong nhánh 'Căn cước công dân/Chứng minh nhân dân'."
+      },
+      {
+        "route_id": "can_cuoc_chung_minh_nhan_dan-3_000276",
+        "conditions": {
+          "subdomain_key": "can_cuoc_chung_minh_nhan_dan",
+          "operation_key": "khoa_can_cuoc_dien_tu_thuc_hien_tai_cap_tinh"
+        },
+        "procedure_code": "3.000276",
+        "procedure_name": "Khóa căn cước điện tử (thực hiện tại cấp tỉnh)",
+        "why_this_route": "Route trực tiếp cho nhu cầu 'Khóa căn cước điện tử (thực hiện tại cấp tỉnh)' trong nhánh 'Căn cước công dân/Chứng minh nhân dân'."
+      },
+      {
+        "route_id": "can_cuoc_chung_minh_nhan_dan-3_000277",
+        "conditions": {
+          "subdomain_key": "can_cuoc_chung_minh_nhan_dan",
+          "operation_key": "mo_khoa_can_cuoc_dien_tu_thuc_hien_tai_cap_tinh"
+        },
+        "procedure_code": "3.000277",
+        "procedure_name": "Mở khóa căn cước điện tử (thực hiện tại cấp tỉnh)",
+        "why_this_route": "Route trực tiếp cho nhu cầu 'Mở khóa căn cước điện tử (thực hiện tại cấp tỉnh)' trong nhánh 'Căn cước công dân/Chứng minh nhân dân'."
+      },
+      {
+        "route_id": "can_cuoc_chung_minh_nhan_dan-3_000285",
+        "conditions": {
+          "subdomain_key": "can_cuoc_chung_minh_nhan_dan",
+          "operation_key": "khoa_can_cuoc_dien_tu_thuc_hien_tai_cap_xa"
+        },
+        "procedure_code": "3.000285",
+        "procedure_name": "Khóa căn cước điện tử (thực hiện tại cấp xã)",
+        "why_this_route": "Route trực tiếp cho nhu cầu 'Khóa căn cước điện tử (thực hiện tại cấp xã)' trong nhánh 'Căn cước công dân/Chứng minh nhân dân'."
+      },
+      {
+        "route_id": "can_cuoc_chung_minh_nhan_dan-3_000286",
+        "conditions": {
+          "subdomain_key": "can_cuoc_chung_minh_nhan_dan",
+          "operation_key": "mo_khoa_can_cuoc_dien_tu_thuc_hien_tai_cap_xa"
+        },
+        "procedure_code": "3.000286",
+        "procedure_name": "Mở khóa căn cước điện tử (thực hiện tại cấp xã)",
+        "why_this_route": "Route trực tiếp cho nhu cầu 'Mở khóa căn cước điện tử (thực hiện tại cấp xã)' trong nhánh 'Căn cước công dân/Chứng minh nhân dân'."
+      }
+    ]
+  },
+  "pre_submission_checks": [
+    {
+      "field_group": "residence_information",
+      "checks": [
+        "Nhóm cư trú phải phân biệt rõ thường trú, tạm trú, lưu trú và tạm vắng trước khi chọn thủ tục.",
+        "Địa chỉ cư trú và giấy tờ chứng minh chỗ ở phải thống nhất giữa tờ khai, dữ liệu cư trú và hồ sơ đính kèm."
+      ]
+    },
+    {
+      "field_group": "identity_documents",
+      "checks": [
+        "Nhóm căn cước phải làm rõ là cấp mới, cấp đổi, cấp lại hay điều chỉnh/tích hợp thông tin.",
+        "Nhóm định danh điện tử cần xác định đúng thao tác cấp mức 2, khóa hay mở khóa căn cước điện tử."
+      ]
+    },
+    {
+      "field_group": "passport_context",
+      "checks": [
+        "Nhóm hộ chiếu phải xác định rõ làm trong nước hay tại cơ quan đại diện ở nước ngoài.",
+        "Các trường hợp mất hộ chiếu hoặc khôi phục giá trị sử dụng phải có căn cứ về tình trạng giấy tờ hiện tại."
+      ]
+    }
+  ],
+  "subdomain_key": "can_cuoc_chung_minh_nhan_dan"
+}

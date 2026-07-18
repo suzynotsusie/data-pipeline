@@ -1,5 +1,27 @@
 export type ChatMessage = { role: "user" | "assistant"; content: string };
 
+export type CitizenSubdomainOption = {
+  event_id: number;
+  subdomain_key: string;
+  label: string;
+  summary?: string | null;
+};
+
+export type CitizenGroupOption = {
+  group_key: string;
+  group_id: number;
+  label: string;
+  description: string;
+  entry_prompts: string[];
+  subdomains: CitizenSubdomainOption[];
+};
+
+export type CitizenWorkflowCatalog = {
+  persona: "citizen";
+  updated_at: string;
+  groups: CitizenGroupOption[];
+};
+
 export type Source = {
   title: string;
   source_url: string;
@@ -43,6 +65,12 @@ export type IntakeResult = {
     documents?: ChecklistItem[];
     conditional_documents?: ChecklistItem[];
     steps?: StepItem[];
+    user_steps?: StepItem[];
+    next_step_summary?: string | null;
+    overview_summary?: string | null;
+    processing_time_summary?: string | null;
+    submission_place_summary?: string | null;
+    submission_method_labels?: string[];
   };
   examples: string[];
   common_errors: Array<{ field?: string; problem?: string; fix?: string }>;

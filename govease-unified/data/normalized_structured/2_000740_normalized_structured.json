@@ -1,0 +1,151 @@
+{
+  "schema_version": "1.0",
+  "normalizer_version": "0.2.0",
+  "source": {
+    "procedure_code": "2.000740",
+    "title": "Người hưởng lĩnh chế độ bảo hiểm xã hội bằng tiền mặt chuyển sang lĩnh bằng tài khoản cá nhân và ngược lại, hoặc thay đổi thông tin cá nhân",
+    "raw_structured_parser_version": "0.1.0",
+    "field": "Chi trả các chế độ BHXH"
+  },
+  "procedure": {
+    "level": null,
+    "procedure_type": null,
+    "target_users": [],
+    "authorities": [
+      "Bảo hiểm xã hội cấp huyện Bảo hiểm xã hội cấp Tỉnh"
+    ],
+    "receiving_places": []
+  },
+  "submission": {
+    "channels": [
+      "in_person",
+      "postal"
+    ],
+    "methods": [
+      {
+        "method_id": "method_1",
+        "channel": "in_person",
+        "processing_time_text": "1 Ngày làm việc",
+        "fee_text": null,
+        "description": "Ngay khi cơ quan BHXH nhận được hồ sơ 1. Nộp hồ sơ: người hưởng nộp hồ sơ tại cơ quan BHXH hoặc các điểm chi trả; 2. Nhận kết quả: người hưởng nhận phí phát hành thẻ ATM tại Bưu điện tỉnh hoặc Bưu điện huyện (nơi nộp chứng từ thu phí phát hành thẻ ATM lần đầu) ngay trong ngày",
+        "is_online": false,
+        "is_postal": false,
+        "is_in_person": true
+      },
+      {
+        "method_id": "method_2",
+        "channel": "postal",
+        "processing_time_text": "1 Ngày làm việc",
+        "fee_text": null,
+        "description": "Ngay khi cơ quan BHXH nhận được hồ sơ 1. Nộp hồ sơ: người hưởng nộp hồ sơ cho cơ quan BHXH thông qua dịch vụ bưu chính công ích. 2. Nhận kết quả: người hưởng nhận phí phát hành thẻ ATM tại Bưu điện tỉnh hoặc Bưu điện huyện (nơi nộp chứng từ thu phí phát hành thẻ ATM lần đầu) ngay trong ngày",
+        "is_online": false,
+        "is_postal": true,
+        "is_in_person": false
+      }
+    ],
+    "timing_summary": {
+      "unique_processing_times": [
+        "1 Ngày làm việc"
+      ],
+      "method_count": 2
+    }
+  },
+  "documents": {
+    "required": [
+      {
+        "document_id": "document",
+        "name": "",
+        "group_name": "default",
+        "group_type": "required",
+        "original_count": "1",
+        "copy_count": "0",
+        "conditions": [],
+        "attachment_label": "Thông báo thay đổi thông tin người hưởng (mẫu số 2-CBH) 02_CBH.docx",
+        "attachment_path": "Thông báo thay đổi thông tin người hưởng (mẫu số 2-CBH) 02_CBH.docx"
+      },
+      {
+        "document_id": "ch_ng_t_thu_ph_m_t_i_kho_n_c_nh_n_l_n_u_c_a_ng_n_h_ng_n_i_ng_i_h_ng_m_t_i_kho_n",
+        "name": "Chứng từ thu phí mở tài khoản cá nhân lần đầu của Ngân hàng nơi người hưởng mở tài khoản.",
+        "group_name": "default",
+        "group_type": "required",
+        "original_count": "1",
+        "copy_count": "0",
+        "conditions": [],
+        "attachment_label": null,
+        "attachment_path": null
+      }
+    ],
+    "conditional": [],
+    "presented": [],
+    "notes": [],
+    "forms": [
+      {
+        "name": "",
+        "attachment_label": "Thông báo thay đổi thông tin người hưởng (mẫu số 2-CBH) 02_CBH.docx",
+        "attachment_path": "Thông báo thay đổi thông tin người hưởng (mẫu số 2-CBH) 02_CBH.docx"
+      }
+    ],
+    "empty_groups": [],
+    "document_count": 2
+  },
+  "process": {
+    "steps": [
+      {
+        "step_id": "step_1",
+        "title": "Bước 1.",
+        "content": "Bước 1. Lập, nộp hồ sơ Người hưởng lập theo quy định tại mục Thành phần hồ sơ; nộp hồ sơ cho cơ quan bưu điện hoặc cơ quan BHXH, ghi rõ: Số tài khoản cá nhân (hoặc thẻ ATM), ngân hàng nơi mở tài khoản; hoặc nơi nhận chế độ BHXH hàng tháng mới. Nếu có chi phí phát hành thẻ ATM lần đầu, người hưởng nộp chứng từ cho Bưu điện tỉnh hoặc Bưu điện huyện để thanh toán theo quy định.",
+        "actor": "authority",
+        "channel_hint": null,
+        "time_hint": null
+      },
+      {
+        "step_id": "step_2",
+        "title": "Bước 2.",
+        "content": "Bước 2. Cơ quan BHXH tiếp nhận hồ sơ và giải quyết theo quy định",
+        "actor": "authority",
+        "channel_hint": null,
+        "time_hint": null
+      },
+      {
+        "step_id": "step_3",
+        "title": "Bước 3.",
+        "content": "Bước 3. Nhận kết quả giải quyết Người hưởng lĩnh phí phát hành thẻ ATM (trong trường hợp phát hành thẻ ATM lần đầu).",
+        "actor": "user",
+        "channel_hint": null,
+        "time_hint": null
+      }
+    ],
+    "step_count": 3,
+    "notes": []
+  },
+  "eligibility": {
+    "conditions": [
+      "Không có yêu cầu điều kiện"
+    ],
+    "has_conditions": true
+  },
+  "results": {
+    "items": [],
+    "primary_result": null
+  },
+  "legal_basis": {
+    "items": [],
+    "count": 0
+  },
+  "attachments": [
+    {
+      "label": "Thông báo thay đổi thông tin người hưởng (mẫu số 2-CBH) 02_CBH.docx",
+      "path": "Thông báo thay đổi thông tin người hưởng (mẫu số 2-CBH) 02_CBH.docx",
+      "source_section": "Thành phần hồ sơ",
+      "document_name": ""
+    }
+  ],
+  "signals": {
+    "raw_parse_warnings": [],
+    "missing_documents": false,
+    "documents_section_present": true,
+    "documents_declared_empty": false,
+    "documents_only_in_notes": false,
+    "missing_results": true
+  }
+}

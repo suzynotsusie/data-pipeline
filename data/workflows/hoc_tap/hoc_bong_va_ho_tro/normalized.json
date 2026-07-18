@@ -1,0 +1,745 @@
+{
+  "schema_version": "1.0",
+  "domain": "hoc_tap",
+  "updated_at": "2026-07-18",
+  "source_files": [
+    "C:\\Users\\ku060\\Downloads\\VAIC source\\data-pipeline\\main\\full-data.csv",
+    "C:\\Users\\ku060\\Downloads\\VAIC source\\data-pipeline\\raw_data"
+  ],
+  "subdomains": [
+    {
+      "subdomain_key": "hoc_bong_va_ho_tro",
+      "subdomain_label": "Học bổng và chính sách hỗ trợ",
+      "event_id": 256,
+      "summary": "Nhóm thủ tục học bổng, miễn giảm học phí, hỗ trợ chi phí học tập, hỗ trợ bán trú và các chính sách tài chính cho người học.",
+      "entry_prompts": [
+        "Bạn đang xin học bổng, miễn giảm học phí hay hỗ trợ chi phí học tập?",
+        "Chính sách này áp dụng cho mầm non, phổ thông, giáo dục nghề nghiệp hay đại học?"
+      ],
+      "procedure_count": 17,
+      "procedures": [
+        {
+          "procedure_code": "1.001622",
+          "procedure_title": "Hỗ trợ ăn trưa đối với trẻ em mẫu giáo",
+          "subdomain_key": "hoc_bong_va_ho_tro",
+          "subdomain_label": "Học bổng và chính sách hỗ trợ",
+          "event_id": 256,
+          "field": "Giáo dục và Đào tạo thuộc hệ thống giáo dục quốc dân",
+          "agency": "Cơ sở giáo dục",
+          "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bf8-98e7-70fc-a7e2-3c4617d4c507",
+          "raw_data_file": "C:\\Users\\ku060\\Downloads\\VAIC source\\data-pipeline\\raw_data\\1_001622\\1_001622_procedure_detail.md",
+          "raw_data_available": true,
+          "operation_group": "tro_cap_hoc_tap",
+          "operation_key": "ho_tro_an_trua_doi_voi_tre_em_mau_giao",
+          "overview": "1. Tháng 8 hằng năm, cơ sở giáo dục mầm non tổ chức phổ biến, thông báo rộng rãi và hướng dẫn cho cha mẹ hoặc người chăm sóc, nuôi dưỡng trẻ em thuộc đối tượng được hưởng chính sách nộp hồ sơ đề nghị hỗ trợ ăn trưa. Trong vòng 15 ngày làm việc kể từ ngày cơ sở giáo dục mầm non thông báo, cha mẹ hoặc người chăm sóc, nuôi dưỡng trẻ em nộp trực tiếp hoặc qua bưu điện hoặc trực tuyến 01 bộ hồ sơ theo quy định tại cơ sở giáo dục mầm non. Mỗi đối tượng nộp 01 bộ hồ sơ cho 01 lần đầu đề nghị hỗ trợ trong cả thời gian học tại cơ sở giáo dục mầm non. Riêng đối tượng trẻ em là nhân khẩu trong gia đình thuộc diện hộ nghèo, cận nghèo theo quy định của Thủ tướng Chính phủ nộp bổ sung Giấy chứng nhận hộ nghèo, hộ cận nghèo theo từng năm học. Trong vòng 10 ngày làm việc, kể từ ngày hết hạn nhận hồ sơ, cơ sở giáo dục mầm non lập danh sách trẻ em mẫu giáo được hỗ trợ ăn trưa kèm theo hồ sơ cha mẹ hoặc người chăm sóc trẻ em nộp gửi về phòng giáo dục và đào tạo nơi cơ sở giáo dục mầm non đặt trụ sở để tổng hợp, xem xét; Cơ sở giáo dục mầm non tiếp nhận, kiểm tra thành phần hồ sơ, nếu thành phần hồ sơ nộp là bản sao chưa có chứng thực của cấp có thẩm quyền, người nhận hồ sơ có trách nhiệm đối chiếu với bản chính, ký xác nhận vào bản sao để đưa vào hồ sơ, yêu cầu bổ sung nếu hồ sơ chưa đầy đủ hoặc chưa đúng quy định. Sau khi tiếp nhận hồ sơ hợp lệ, cơ sở giáo dục mầm non gửi giấy tiếp nhận hồ sơ cho cha mẹ hoặc người chăm sóc trẻ em. Trường hợp hồ sơ gửi qua bưu điện hoặc trực tuyến không bảo đảm yêu cầu, trong thời hạn 05 ngày làm việc cơ sở giáo dục mầm non gửi thông báo không tiếp nhận hồ sơ và lý do cho cha mẹ hoặc người chăm sóc, nuôi dưỡng trẻ em. Trong vòng 10 ngày làm việc, kể từ ngày hết hạn nhận hồ sơ, cơ sở giáo dục mầm non lập danh sách trẻ em mẫu giáo được hỗ trợ ăn trưa theo Mẫu số 01 quy định tại Phụ lục kèm theo Nghị định số 105/2020/NĐ-CP ngày 08/9/2020 của Chính phủ quy định chính sách phát triển giáo dục mầm non (Nghị định số 105/2020/NĐ-CP) kèm theo hồ sơ theo quy định gửi về UBND xã đang quản lý trực tiếp để xem xét, tổng hợp. Trong vòng 07 ngày làm việc, kể từ khi nhận được hồ sơ của cơ sở giáo dục mầm non, phòng có chức năng quản lý giáo dục của Ủy ban nhân dân cấp xã tổ chức thẩm định hồ sơ, tổng hợp danh sách trẻ em mẫu giáo được hỗ trợ ăn trưa theo Mẫu số 02 quy định tại Phụ lục kèm theo Nghị định Nghị định số 105/2020/NĐ-CP gửi cơ quan tài chính cùng cấp trình Ủy ban nhân dân cấp xã ra quyết định phê duyệt theo quy định của Luật Ngân sách nhà nước. Trong vòng 07 ngày làm việc, kể từ khi nhận được hồ sơ của phòng có chức năng quản lý giáo dục, Ủy ban nhân dân cấp xã phê duyệt danh sách trẻ em mẫu giáo được hỗ trợ ăn trưa và thông báo kết quả cho cơ sở giáo dục mầm non. Sau khi được cấp có thẩm quyền phê duyệt danh sách trẻ em mẫu giáo được hỗ trợ ăn trưa, cơ sở giáo dục mầm non thông báo công khai và tổ chức triển khai thực hiện chi hỗ trợ. Phương thức thực hiện - Cơ sở giáo dục mầm non chịu trách nhiệm tiếp nhận kinh phí và thực hiện việc chi trả. Căn cứ vào thực tế quản lý và cách tổ chức ăn trưa của nhà trường, lãnh đạo cơ sở giáo dục mầm non thống nhất với ban đại diện cha mẹ trẻ em để lựa chọn thực hiện theo một trong hai phương thức sau: + Phương thức 1: Cơ sở giáo dục mầm non giữ lại kinh phí hỗ trợ để tổ chức bữa ăn trưa cho trẻ em (đối với các cơ sở giáo dục mầm non có tổ chức nấu ăn cho trẻ em); + Phương thức 2: Chi trả trực tiếp bằng tiền mặt cho cha mẹ hoặc người chăm sóc, nuôi dưỡng trẻ em theo quy định: Việc chi trả kinh phí hỗ trợ ăn trưa được thực hiện 2 lần trong năm học: lần 1 chi trả đủ 4 tháng vào tháng 11 hoặc tháng 12 hằng năm; lần 2 chi trả đủ các tháng còn lại vào tháng 3 hoặc tháng 4 hằng năm. - Trường hợp cha mẹ hoặc người chăm sóc, nuôi dưỡng trẻ em chưa nhận được kinh phí hỗ trợ ăn trưa theo thời hạn quy định thì được truy lĩnh trong kỳ chi trả tiếp theo. - Trường hợp trẻ em chuyển trường, cơ sở giáo dục mầm non có trách nhiệm trả lại hồ sơ đề nghị hỗ trợ ăn trưa cho cha mẹ hoặc người chăm sóc, nuôi dưỡng trẻ em. Cơ sở giáo dục mầm non nơi trẻ em chuyển đến có trách nhiệm báo cáo phòng có chức năng quản lý giáo dục trình Chủ tịch Ủy ban nhân dân cấp xã ra quyết định chuyển kinh phí hoặc cấp bổ sung kinh phí để cơ sở giáo dục mầm non nơi trẻ em chuyển đến thực hiện chi trả hỗ trợ ăn trưa theo quy định. - Trường hợp trẻ em thôi học, cơ sở giáo dục mầm non có trách nhiệm báo cáo phòng có chức năng quản lý giáo dục trình Ủy ban nhân dân cấp xã dừng thực hiện chi trả.",
+          "procedure_flow": "1. Tháng 8 hằng năm, cơ sở giáo dục mầm non tổ chức phổ biến, thông báo rộng rãi và hướng dẫn cho cha mẹ hoặc người chăm sóc, nuôi dưỡng trẻ em thuộc đối tượng được hưởng chính sách nộp hồ sơ đề nghị hỗ trợ ăn trưa. Trong vòng 15 ngày làm việc kể từ ngày cơ sở giáo dục mầm non thông báo, cha mẹ hoặc người chăm sóc, nuôi dưỡng trẻ em nộp trực tiếp hoặc qua bưu điện hoặc trực tuyến 01 bộ hồ sơ theo quy định tại cơ sở giáo dục mầm non. Mỗi đối tượng nộp 01 bộ hồ sơ cho 01 lần đầu đề nghị hỗ trợ trong cả thời gian học tại cơ sở giáo dục mầm non. Riêng đối tượng trẻ em là nhân khẩu trong gia đình thuộc diện hộ nghèo, cận nghèo theo quy định của Thủ tướng Chính phủ nộp bổ sung Giấy chứng nhận hộ nghèo, hộ cận nghèo theo từng năm học. Trong vòng 10 ngày làm việc, kể từ ngày hết hạn nhận hồ sơ, cơ sở giáo dục mầm non lập danh sách trẻ em mẫu giáo được hỗ trợ ăn trưa kèm theo hồ sơ cha mẹ hoặc người chăm sóc trẻ em nộp gửi về phòng giáo dục và đào tạo nơi cơ sở giáo dục mầm non đặt trụ sở để tổng hợp, xem xét; Cơ sở giáo dục mầm non tiếp nhận, kiểm tra thành phần hồ sơ, nếu thành phần hồ sơ nộp là bản sao chưa có chứng thực của cấp có thẩm quyền, người nhận hồ sơ có trách nhiệm đối chiếu với bản chính, ký xác nhận vào bản sao để đưa vào hồ sơ, yêu cầu bổ sung nếu hồ sơ chưa đầy đủ hoặc chưa đúng quy định. Sau khi tiếp nhận hồ sơ hợp lệ, cơ sở giáo dục mầm non gửi giấy tiếp nhận hồ sơ cho cha mẹ hoặc người chăm sóc trẻ em. Trường hợp hồ sơ gửi qua bưu điện hoặc trực tuyến không bảo đảm yêu cầu, trong thời hạn 05 ngày làm việc cơ sở giáo dục mầm non gửi thông báo không tiếp nhận hồ sơ và lý do cho cha mẹ hoặc người chăm sóc, nuôi dưỡng trẻ em. Trong vòng 10 ngày làm việc, kể từ ngày hết hạn nhận hồ sơ, cơ sở giáo dục mầm non lập danh sách trẻ em mẫu giáo được hỗ trợ ăn trưa theo Mẫu số 01 quy định tại Phụ lục kèm theo Nghị định số 105/2020/NĐ-CP ngày 08/9/2020 của Chính phủ quy định chính sách phát triển giáo dục mầm non (Nghị định số 105/2020/NĐ-CP) kèm theo hồ sơ theo quy định gửi về UBND xã đang quản lý trực tiếp để xem xét, tổng hợp. Trong vòng 07 ngày làm việc, kể từ khi nhận được hồ sơ của cơ sở giáo dục mầm non, phòng có chức năng quản lý giáo dục của Ủy ban nhân dân cấp xã tổ chức thẩm định hồ sơ, tổng hợp danh sách trẻ em mẫu giáo được hỗ trợ ăn trưa theo Mẫu số 02 quy định tại Phụ lục kèm theo Nghị định Nghị định số 105/2020/NĐ-CP gửi cơ quan tài chính cùng cấp trình Ủy ban nhân dân cấp xã ra quyết định phê duyệt theo quy định của Luật Ngân sách nhà nước. Trong vòng 07 ngày làm việc, kể từ khi nhận được hồ sơ của phòng có chức năng quản lý giáo dục, Ủy ban nhân dân cấp xã phê duyệt danh sách trẻ em mẫu giáo được hỗ trợ ăn trưa và thông báo kết quả cho cơ sở giáo dục mầm non. Sau khi được cấp có thẩm quyền phê duyệt danh sách trẻ em mẫu giáo được hỗ trợ ăn trưa, cơ sở giáo dục mầm non thông báo công khai và tổ chức triển khai thực hiện chi hỗ trợ. Phương thức thực hiện - Cơ sở giáo dục mầm non chịu trách nhiệm tiếp nhận kinh phí và thực hiện việc chi trả. Căn cứ vào thực tế quản lý và cách tổ chức ăn trưa của nhà trường, lãnh đạo cơ sở giáo dục mầm non thống nhất với ban đại diện cha mẹ trẻ em để lựa chọn thực hiện theo một trong hai phương thức sau: + Phương thức 1: Cơ sở giáo dục mầm non giữ lại kinh phí hỗ trợ để tổ chức bữa ăn trưa cho trẻ em (đối với các cơ sở giáo dục mầm non có tổ chức nấu ăn cho trẻ em); + Phương thức 2: Chi trả trực tiếp bằng tiền mặt cho cha mẹ hoặc người chăm sóc, nuôi dưỡng trẻ em theo quy định: Việc chi trả kinh phí hỗ trợ ăn trưa được thực hiện 2 lần trong năm học: lần 1 chi trả đủ 4 tháng vào tháng 11 hoặc tháng 12 hằng năm; lần 2 chi trả đủ các tháng còn lại vào tháng 3 hoặc tháng 4 hằng năm. - Trường hợp cha mẹ hoặc người chăm sóc, nuôi dưỡng trẻ em chưa nhận được kinh phí hỗ trợ ăn trưa theo thời hạn quy định thì được truy lĩnh trong kỳ chi trả tiếp theo. - Trường hợp trẻ em chuyển trường, cơ sở giáo dục mầm non có trách nhiệm trả lại hồ sơ đề nghị hỗ trợ ăn trưa cho cha mẹ hoặc người chăm sóc, nuôi dưỡng trẻ em. Cơ sở giáo dục mầm non nơi trẻ em chuyển đến có trách nhiệm báo cáo phòng có chức năng quản lý giáo dục trình Chủ tịch Ủy ban nhân dân cấp xã ra quyết định chuyển kinh phí hoặc cấp bổ sung kinh phí để cơ sở giáo dục mầm non nơi trẻ em chuyển đến thực hiện chi trả hỗ trợ ăn trưa theo quy định. - Trường hợp trẻ em thôi học, cơ sở giáo dục mầm non có trách nhiệm báo cáo phòng có chức năng quản lý giáo dục trình Ủy ban nhân dân cấp xã dừng thực hiện chi trả.",
+          "requirements": "Trẻ em độ tuổi mẫu giáo (không bao gồm trẻ em dân tộc thiểu số rất ít người theo quy định tại Nghị định số 57/2017/NĐ-CP ngày 09 tháng 5 năm 2017 của Chính phủ quy định chính sách ưu tiên tuyển sinh và hỗ trợ học tập đối với trẻ em mẫu giáo, học sinh, sinh viên dân tộc thiểu số rất ít người) đang học tại lớp mẫu giáo trong các cơ sở giáo dục mầm non bảo đảm một trong những điều kiện sau: - Có cha hoặc có mẹ hoặc có người chăm sóc trẻ em hoặc trẻ em thường trú ở thôn đặc biệt khó khăn, xã có điều kiện kinh tế - xã hội đặc biệt khó khăn, xã đặc biệt khó khăn vùng bãi ngang ven biển, hải đảo theo quy định của Thủ tướng Chính phủ. - Không có nguồn nuôi dưỡng được quy định tại khoản 1 Điều 5 Nghị định số 136/2013/NĐ-CP ngày 21 tháng 10 năm 2013 của Chính phủ quy định chính sách trợ giúp xã hội đối với đối tượng bảo trợ xã hội. - Là nhân khẩu trong gia đình thuộc diện hộ nghèo, cận nghèo theo quy định của Thủ tướng Chính phủ. - Trẻ em là con liệt sĩ, con Anh hùng Lực lượng vũ trang nhân dân, con thương binh, con người hưởng chính sách như thương binh, con bệnh binh; con một số đối tượng chính sách khác theo quy định tại Pháp lệnh ưu đãi người có công với cách mạng (nếu có). - Trẻ em khuyết tật học hòa nhập.",
+          "submission_methods": [
+            "Trực tuyến",
+            "Dịch vụ bưu chính",
+            "Trực tiếp"
+          ],
+          "processing_time_values": [
+            "24 ngày làm việc",
+            "24 ngày làm việc",
+            "24 ngày làm việc"
+          ],
+          "document_groups": [
+            {
+              "group_name": "Đối với trẻ em không có nguồn nuôi dưỡng được quy định tại khoản 1 Điều 5 Nghị định số 136/2013/NĐ-CP ngày 21 tháng 10 năm 2013 của Chính phủ quy định chính sách trợ giúp xã hội đối với đối tượng bảo trợ xã hội thì cha mẹ hoặc người chăm sóc, nuôi dưỡng trẻ em nộp một trong số các loại giấy tờ sau:",
+              "documents": [
+                {
+                  "Tên giấy tờ": "Bản sao kèm theo bản chính để đối chiếu hoặc bản sao có chứng thực Giấy chứng nhận nuôi con nuôi đối với trẻ mồ côi, bị bỏ rơi hoặc trẻ em thuộc các trường hợp khác quy định khoản 1 Điều 5 Nghị định số 136/2013/NĐ-CP ngày 21 tháng 10 năm 2013 của Chính phủ quy định chính sách trợ giúp xã hội đối với đối tượng bảo trợ xã hội",
+                  "Bản chính": "0",
+                  "Bản sao": "1",
+                  "Tệp đính kèm": "Không có"
+                },
+                {
+                  "Tên giấy tờ": "Bản sao kèm bản chính để đối chiếu hoặc bản sao có chứng thực Văn bản xác nhận của Ủy ban nhân dân cấp xã hoặc cơ sở bảo trợ xã hội về tình trạng trẻ mồ côi, bị bỏ rơi hoặc trẻ thuộc các trường hợp khác quy định tại khoản 1 Điều 5 Nghị định số 136/2013/NĐ-CP ngày 21 tháng 10 năm 2013 của Chính phủ quy định chính sách trợ giúp xã hội đối với đối tượng bảo trợ xã hội",
+                  "Bản chính": "0",
+                  "Bản sao": "1",
+                  "Tệp đính kèm": "Không có"
+                },
+                {
+                  "Tên giấy tờ": "Bản sao kèm bản chính để đối chiếu hoặc bản sao có chứng thực Quyết định về việc trợ cấp xã hội của Chủ tịch Ủy ban nhân dân cấp huyện",
+                  "Bản chính": "0",
+                  "Bản sao": "1",
+                  "Tệp đính kèm": "Không có"
+                }
+              ]
+            },
+            {
+              "group_name": "Đối với trẻ em thuộc đối tượng là con liệt sĩ, con Anh hùng Lực lượng vũ trang nhân dân, con thương binh, con người hưởng chính sách như thương binh, con bệnh binh; con một số đối tượng chính sách khác theo quy định tại Pháp lệnh ưu đãi người có công với cách mạng (nếu có)",
+              "documents": [
+                {
+                  "Tên giấy tờ": "Bản sao kèm theo bản chính để đối chiếu hoặc bản sao có chứng thực Giấy xác nhận của cơ quan quản lý đối tượng người có công và Giấy khai sinh của trẻ em. (Cơ quan giải quyết TTHC khai thác, sử dụng thông tin đã có trong Cơ sở dữ liệu quốc gia về dân cư, Cơ sở dữ liệu về hộ tịch để thay thế thành phần hồ sơ Bản sao Quyết định về việc trợ cấp xã hội, Bản sao xác nhận về tình trạng trẻ mồ côi, bị bỏ rơi hoặc trẻ thuộc các trường hợp khác quy định, Giấy chứng nhận nuôi con nuôi.  Trường hợp Cơ quan giải quyết TTHC không khai thác được hoặc khai thác không đầy đủ dữ liệu công dân trên Cơ sở dữ liệu quốc gia về về dân cư, Cơ sở dữ liệu về hộ tịch, Cơ quan giải quyết TTHC yêu cầu công dân bổ sung Bản sao Quyết định về việc trợ cấp xã hội, Bản sao xác nhận về tình trạng trẻ mồ côi, bị bỏ rơi hoặc trẻ thuộc các trường hợp khác quy định, Giấy chứng nhận nuôi con nuôi theo quy định tại Điều 8 Nghị quyết 66.7/2025/NQ-CP ngày 15/11/2025 của Chính phủ quy định cắt giảm, đơn giản hóa thủ tục hành chính dựa trên dữ liệu)",
+                  "Bản chính": "0",
+                  "Bản sao": "1",
+                  "Tệp đính kèm": "Không có"
+                }
+              ]
+            },
+            {
+              "group_name": "Đối với trẻ em thuộc đối tượng là nhân khẩu trong gia đình thuộc diện hộ nghèo, cận nghèo theo quy định của Thủ tướng Chính phủ",
+              "documents": [
+                {
+                  "Tên giấy tờ": "Bản sao và mang bản chính để đối chiếu hoặc bản sao có chứng thực Giấy chứng nhận hoặc Giấy xác nhận hộ nghèo, hộ cận nghèo do Ủy ban nhân dân cấp xã cấp",
+                  "Bản chính": "0",
+                  "Bản sao": "1",
+                  "Tệp đính kèm": "Không có"
+                }
+              ]
+            },
+            {
+              "group_name": "Đối với trẻ em thuộc đối tượng là trẻ em khuyết tật học hòa nhập",
+              "documents": [
+                {
+                  "Tên giấy tờ": "Bản sao kèm theo bản chính để đối chiếu hoặc bản sao có chứng thực Giấy xác nhận khuyết tật do Ủy ban nhân dân cấp xã cấp hoặc Quyết định về việc trợ cấp xã hội của Chủ tịch Ủy ban nhân dân cấp huyện. (Cơ quan giải quyết TTHC khai thác, sử dụng thông tin đã có trong Cơ sở dữ liệu quốc gia về dân cư, Cơ sở dữ liệu về hộ tịch để thay thế thành phần hồ sơ Bản sao Quyết định về việc trợ cấp xã hội, Bản sao xác nhận về tình trạng trẻ mồ côi, bị bỏ rơi hoặc trẻ thuộc các trường hợp khác quy định, Giấy chứng nhận nuôi con nuôi.  Trường hợp Cơ quan giải quyết TTHC không khai thác được hoặc khai thác không đầy đủ dữ liệu công dân trên Cơ sở dữ liệu quốc gia về về dân cư, Cơ sở dữ liệu về hộ tịch, Cơ quan giải quyết TTHC yêu cầu công dân bổ sung Bản sao Quyết định về việc trợ cấp xã hội, Bản sao xác nhận về tình trạng trẻ mồ côi, bị bỏ rơi hoặc trẻ thuộc các trường hợp khác quy định, Giấy chứng nhận nuôi con nuôi theo quy định tại Điều 8 Nghị quyết 66.7/2025/NQ-CP ngày 15/11/2025 của Chính phủ quy định cắt giảm, đơn giản hóa thủ tục hành chính dựa trên dữ liệu)",
+                  "Bản chính": "0",
+                  "Bản sao": "1",
+                  "Tệp đính kèm": "Không có"
+                }
+              ]
+            },
+            {
+              "group_name": "Đối với trẻ em thường trú ở thôn đặc biệt khó khăn, xã có điều kiện kinh tế - xã hội đặc biệt khó khăn, xã đặc biệt khó khăn vùng bãi ngang ven biển, hải đảo theo quy định của Thủ tướng Chính phủ thì cha mẹ hoặc người chăm sốc, nuôi dưỡng trẻ em :",
+              "documents": [
+                {
+                  "Tên giấy tờ": "Cung cấp thông tin về số định danh cá nhân của trẻ em hoặc của cha hoặc mẹ hoặc người chăm sóc, nuôi dưỡng trẻ em",
+                  "Bản chính": "1",
+                  "Bản sao": "1",
+                  "Tệp đính kèm": "Không có"
+                },
+                {
+                  "Tên giấy tờ": "Bản sao của một trong các loại giấy tờ: Thẻ Căn cước công dân, Chứng minh nhân dân, Giấy xác nhận thông tin về cư trú, Giấy thông báo số định danh cá nhân và thông tin công dân trong Cơ sở dữ liệu quốc gia về dân cư trong trường hợp cơ quan, tổ chức không thể khai thác được thông tin cư trú của công dân trong Cơ sở dữ liệu quốc gia về dân cư",
+                  "Bản chính": "0",
+                  "Bản sao": "1",
+                  "Tệp đính kèm": "Không có"
+                }
+              ]
+            }
+          ],
+          "result_items": [
+            "Danh sách trẻ em mẫu giáo được hỗ trợ ăn trưa do UBND cấp xã phê duyệt (Mã: `KQ.G03.000423`)"
+          ]
+        },
+        {
+          "procedure_code": "1.001714",
+          "procedure_title": "Cấp học bổng và hỗ trợ kinh phí mua phương tiện, đồ dùng học tập dùng riêng cho người khuyết tật học tại các cơ sở giáo dục",
+          "subdomain_key": "hoc_bong_va_ho_tro",
+          "subdomain_label": "Học bổng và chính sách hỗ trợ",
+          "event_id": 256,
+          "field": "Giáo dục và Đào tạo thuộc hệ thống giáo dục quốc dân",
+          "agency": "Cơ sở giáo dục",
+          "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bf8-98e1-7328-a826-74115e520507",
+          "raw_data_file": "C:\\Users\\ku060\\Downloads\\VAIC source\\data-pipeline\\raw_data\\1_001714\\1_001714_procedure_detail.md",
+          "raw_data_available": true,
+          "operation_group": "hoc_bong",
+          "operation_key": "cap_hoc_bong_va_ho_tro_kinh_phi_mua_phuong_tien_do_dung_hoc_tap_dung_rieng_cho_nguoi_khuyet_tat_hoc_tai_cac_co_so_giao_duc",
+          "overview": "1. Trong vòng 30 ngày làm việc kể từ ngày bắt đầu năm học, người đứng đầu cơ sở giáo dục thông báo cho người khuyết tật học tại cơ sở giáo dục (hoặc cha mẹ, người giám hộ) về chính sách đối với người khuyết tật và nộp một bộ hồ sơ theo quy định. Đối với cơ sở giáo dục công lập: - Người khuyết tật (hoặc cha mẹ, người giám hộ) nộp một bộ hồ sơ theo quy định cho cơ sở giáo dục công lập người khuyết tật đang học. - Người đứng đầu cơ sở giáo dục công lập căn cứ vào quy định tại khoản 1 và khoản 2 Điều 7 Thông tư liên tịch số 42/2013/TTLT-BGDĐT-BLĐTBXH-BTC ngày 31 tháng 12 năm 2013 của liên Bộ Giáo dục và Đào tạo, Bộ Lao động, Thương binh và Xã hội, Bộ Tài chính quy định chính sách về giáo dục đối với người khuyết tật (Thông tư liên tịch số 42) tổ chức quy trình kiểm tra, đối chiếu và chịu trách nhiệm về tính chính xác của hồ sơ, tổng hợp, lập danh sách và dự toán kinh phí báo cáo cơ quan quản lý cấp trên trực tiếp để cơ quan quản lý cấp trên thẩm định, phê duyệt, tổng hợp báo cáo cơ quan tài chính trình cấp có thẩm quyền phê duyệt kinh phí thực hiện chính sách học bổng và hỗ trợ chi phí mua phương tiện, đồ dùng học tập dùng riêng cho người khuyết tật đang học tại cơ sở giáo dục. - Kinh phí thực hiện chính sách học bổng và hỗ trợ chi phí mua phương tiện, đồ dùng học tập dùng riêng cho người khuyết tật đang theo học tại cơ sở giáo dục công lập được cân đối trong dự toán kinh phí hàng năm phân bổ cho cơ sở này. Căn cứ vào dự toán kinh phí sự nghiệp giáo dục đã được phê duyệt, cơ sở giáo dục thực hiện việc quản lý kinh phí, tổ chức chi trả học bổng và kinh phí hỗ trợ chi phí mua phương tiện, đồ dùng học tập dùng riêng cho người khuyết tật theo khoản 1 và khoản 2 Điều 7 Thông tư liên tịch số 42; - Khi rút dự toán kinh phí thực hiện chính sách học bổng và hỗ trợ chi phí mua phương tiện, đồ dùng học tập dùng riêng cho người khuyết tật, cơ sở giáo dục công lập phải gửi cơ quan Kho bạc Nhà nước nơi đơn vị giao dịch bản tổng hợp đề nghị chi trả học bổng và hỗ trợ chi phí mua phương tiện, đồ dùng học tập dùng riêng cho người khuyết tật (gồm các nội dung: họ tên người khuyết tật, mức học bổng, mức hỗ trợ chi phí mua phương tiện và tổng nhu cầu kinh phí đề nghị chi trả kèm theo đầy đủ các hồ sơ (bản photo) về việc xác nhận đối tượng theo quy định tại điểm a khoản 1 Điều 8 Thông tư liên tịch số 42). Đối với cơ sở giáo dục ngoài công lập: - Người khuyết tật học tại cơ sở giáo dục (hoặc cha mẹ, người giám hộ) nộp một bộ hồ sơ theo hướng dẫn sau: + Đối với người khuyết tật học tại cơ sở giáo dục trực thuộc xã quản lý gửi về Ủy ban nhân dân xã; + Đối với người khuyết tật học tại các cơ sở giáo dục trực thuộc cấp tỉnh quản lý gửi về sở giáo dục và đào tạo; + Đối với người khuyết tật có nơi thường trú trên địa bàn xã, đang học tại các cơ sở giáo dục đại học, trung cấp chuyên nghiệp trong phạm vi cả nước gửi về Ủy ban nhân dân cấp xã. - Cơ sở giáo dục ngoài công lập có trách nhiệm xác nhận vào đơn đề nghị của người học trong vòng 10 ngày làm việc kể từ ngày nhận được đơn đề nghị của học sinh, sinh viên. - Ủy ban nhân dân xã chịu trách nhiệm quản lý, tổ chức thực hiện chi trả học bổng và hỗ trợ chi phí mua phương tiện, đồ dùng học tập dùng riêng cho người khuyết tật học tại các cơ sở giáo dục trực thuộc xã quản lý; - Sở giáo dục và đào tạo chịu trách nhiệm quản lý, tổ chức thực hiện chi trả học bổng và hỗ trợ chi phí mua phương tiện, đồ dùng học tập dùng riêng cho người khuyết tật đang học tại các cơ sở giáo dục trực thuộc cấp tỉnh quản lý; - Ủy ban nhân dân xã chịu trách nhiệm quản lý, tổ chức thực hiện chi trả học bổng và hỗ trợ chi phí mua phương tiện, đồ dùng học tập dùng riêng cho người khuyết tật có nơi thường trú trên địa bàn xã, đang học tại các cơ sở giáo dục đại học, trung cấp chuyên nghiệp ngoài công lập trong phạm vi cả nước Thời gian cấp học bổng và hỗ trợ chi phí: việc chi trả học bổng và hỗ trợ chi phí mua phương tiện, đồ dùng học tập dùng riêng cho người khuyết tật được thực hiện 2 lần trong năm: lần 1 chi trả vào tháng 9 hoặc tháng 10, tháng 11; lần 2 chi trả vào tháng 3 hoặc tháng 4, tháng 5. Việc chi trả học bổng và hỗ trợ chi phí mua phương tiện, đồ dùng học tập phải đảm bảo thuận tiện cho người khuyết tật đi học. Trường hợp người học chưa nhận được chế độ theo thời hạn quy định thì được truy lĩnh trong kỳ chi trả tiếp theo. Cơ quan thực hiện chi trả có trách nhiệm thông báo công khai về thủ tục, thời gian chi trả học bổng và hỗ trợ chi phí cho người khuyết tật để thuận tiện cho người khuyết tật hoặc gia đình người khuyết tật được nhận chế độ chính sách theo đúng quy định.",
+          "procedure_flow": "1. Trong vòng 30 ngày làm việc kể từ ngày bắt đầu năm học, người đứng đầu cơ sở giáo dục thông báo cho người khuyết tật học tại cơ sở giáo dục (hoặc cha mẹ, người giám hộ) về chính sách đối với người khuyết tật và nộp một bộ hồ sơ theo quy định. Đối với cơ sở giáo dục công lập: - Người khuyết tật (hoặc cha mẹ, người giám hộ) nộp một bộ hồ sơ theo quy định cho cơ sở giáo dục công lập người khuyết tật đang học. - Người đứng đầu cơ sở giáo dục công lập căn cứ vào quy định tại khoản 1 và khoản 2 Điều 7 Thông tư liên tịch số 42/2013/TTLT-BGDĐT-BLĐTBXH-BTC ngày 31 tháng 12 năm 2013 của liên Bộ Giáo dục và Đào tạo, Bộ Lao động, Thương binh và Xã hội, Bộ Tài chính quy định chính sách về giáo dục đối với người khuyết tật (Thông tư liên tịch số 42) tổ chức quy trình kiểm tra, đối chiếu và chịu trách nhiệm về tính chính xác của hồ sơ, tổng hợp, lập danh sách và dự toán kinh phí báo cáo cơ quan quản lý cấp trên trực tiếp để cơ quan quản lý cấp trên thẩm định, phê duyệt, tổng hợp báo cáo cơ quan tài chính trình cấp có thẩm quyền phê duyệt kinh phí thực hiện chính sách học bổng và hỗ trợ chi phí mua phương tiện, đồ dùng học tập dùng riêng cho người khuyết tật đang học tại cơ sở giáo dục. - Kinh phí thực hiện chính sách học bổng và hỗ trợ chi phí mua phương tiện, đồ dùng học tập dùng riêng cho người khuyết tật đang theo học tại cơ sở giáo dục công lập được cân đối trong dự toán kinh phí hàng năm phân bổ cho cơ sở này. Căn cứ vào dự toán kinh phí sự nghiệp giáo dục đã được phê duyệt, cơ sở giáo dục thực hiện việc quản lý kinh phí, tổ chức chi trả học bổng và kinh phí hỗ trợ chi phí mua phương tiện, đồ dùng học tập dùng riêng cho người khuyết tật theo khoản 1 và khoản 2 Điều 7 Thông tư liên tịch số 42; - Khi rút dự toán kinh phí thực hiện chính sách học bổng và hỗ trợ chi phí mua phương tiện, đồ dùng học tập dùng riêng cho người khuyết tật, cơ sở giáo dục công lập phải gửi cơ quan Kho bạc Nhà nước nơi đơn vị giao dịch bản tổng hợp đề nghị chi trả học bổng và hỗ trợ chi phí mua phương tiện, đồ dùng học tập dùng riêng cho người khuyết tật (gồm các nội dung: họ tên người khuyết tật, mức học bổng, mức hỗ trợ chi phí mua phương tiện và tổng nhu cầu kinh phí đề nghị chi trả kèm theo đầy đủ các hồ sơ (bản photo) về việc xác nhận đối tượng theo quy định tại điểm a khoản 1 Điều 8 Thông tư liên tịch số 42). Đối với cơ sở giáo dục ngoài công lập: - Người khuyết tật học tại cơ sở giáo dục (hoặc cha mẹ, người giám hộ) nộp một bộ hồ sơ theo hướng dẫn sau: + Đối với người khuyết tật học tại cơ sở giáo dục trực thuộc xã quản lý gửi về Ủy ban nhân dân xã; + Đối với người khuyết tật học tại các cơ sở giáo dục trực thuộc cấp tỉnh quản lý gửi về sở giáo dục và đào tạo; + Đối với người khuyết tật có nơi thường trú trên địa bàn xã, đang học tại các cơ sở giáo dục đại học, trung cấp chuyên nghiệp trong phạm vi cả nước gửi về Ủy ban nhân dân cấp xã. - Cơ sở giáo dục ngoài công lập có trách nhiệm xác nhận vào đơn đề nghị của người học trong vòng 10 ngày làm việc kể từ ngày nhận được đơn đề nghị của học sinh, sinh viên. - Ủy ban nhân dân xã chịu trách nhiệm quản lý, tổ chức thực hiện chi trả học bổng và hỗ trợ chi phí mua phương tiện, đồ dùng học tập dùng riêng cho người khuyết tật học tại các cơ sở giáo dục trực thuộc xã quản lý; - Sở giáo dục và đào tạo chịu trách nhiệm quản lý, tổ chức thực hiện chi trả học bổng và hỗ trợ chi phí mua phương tiện, đồ dùng học tập dùng riêng cho người khuyết tật đang học tại các cơ sở giáo dục trực thuộc cấp tỉnh quản lý; - Ủy ban nhân dân xã chịu trách nhiệm quản lý, tổ chức thực hiện chi trả học bổng và hỗ trợ chi phí mua phương tiện, đồ dùng học tập dùng riêng cho người khuyết tật có nơi thường trú trên địa bàn xã, đang học tại các cơ sở giáo dục đại học, trung cấp chuyên nghiệp ngoài công lập trong phạm vi cả nước Thời gian cấp học bổng và hỗ trợ chi phí: việc chi trả học bổng và hỗ trợ chi phí mua phương tiện, đồ dùng học tập dùng riêng cho người khuyết tật được thực hiện 2 lần trong năm: lần 1 chi trả vào tháng 9 hoặc tháng 10, tháng 11; lần 2 chi trả vào tháng 3 hoặc tháng 4, tháng 5. Việc chi trả học bổng và hỗ trợ chi phí mua phương tiện, đồ dùng học tập phải đảm bảo thuận tiện cho người khuyết tật đi học. Trường hợp người học chưa nhận được chế độ theo thời hạn quy định thì được truy lĩnh trong kỳ chi trả tiếp theo. Cơ quan thực hiện chi trả có trách nhiệm thông báo công khai về thủ tục, thời gian chi trả học bổng và hỗ trợ chi phí cho người khuyết tật để thuận tiện cho người khuyết tật hoặc gia đình người khuyết tật được nhận chế độ chính sách theo đúng quy định.",
+          "requirements": "Là người khuyết tật thuộc hộ nghèo, hộ cận nghèo đang đi học tại các cơ sở giáo dục ngoài công lập.",
+          "submission_methods": [
+            "Trực tuyến",
+            "Dịch vụ bưu chính",
+            "Trực tiếp"
+          ],
+          "processing_time_values": [
+            "N/A",
+            "N/A",
+            "N/A"
+          ],
+          "document_groups": [
+            {
+              "group_name": "Đối với người khuyết tập học tại các cơ sở giáo dục công lập",
+              "documents": [
+                {
+                  "Tên giấy tờ": "Giấy chứng nhận là hộ nghèo hoặc hộ cận nghèo do uỷ ban nhân dân xã (bản sao có công chứng)",
+                  "Bản chính": "1",
+                  "Bản sao": "1",
+                  "Tệp đính kèm": "Không có"
+                },
+                {
+                  "Tên giấy tờ": "Giấy chứng nhận về khuyết tật do cơ quan có thẩm quyền cấp theo quy định của Nhà nước (bản sao có công chứng)",
+                  "Bản chính": "0",
+                  "Bản sao": "1",
+                  "Tệp đính kèm": "Không có"
+                }
+              ]
+            },
+            {
+              "group_name": "Đối với người khuyết tật học tại các cơ sở giáo dục ngoài công lập",
+              "documents": [
+                {
+                  "Tên giấy tờ": "Giấy chứng nhận là hộ nghèo hoặc hộ cận nghèo do uỷ ban nhân dân xã, phường, thị trấn cấp (bản sao có công chứng).",
+                  "Bản chính": "0",
+                  "Bản sao": "1",
+                  "Tệp đính kèm": "Không có"
+                },
+                {
+                  "Tên giấy tờ": "Giấy chứng nhận về khuyết tật do cơ quan có thẩm quyền cấp theo quy định của Nhà nước (bản sao có công chứng);",
+                  "Bản chính": "0",
+                  "Bản sao": "1",
+                  "Tệp đính kèm": "Không có"
+                },
+                {
+                  "Tên giấy tờ": "Đơn có xác nhận của nhà trường (theo mẫu tại phụ lục ban hành kèm theo Thông tư liên tịch số 42)",
+                  "Bản chính": "1",
+                  "Bản sao": "0",
+                  "Tệp đính kèm": "[PHỤ LỤC.docx](file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/1_001714/PH%E1%BB%A4%20L%E1%BB%A4C.docx)"
+                }
+              ]
+            }
+          ],
+          "result_items": [
+            "Người khuyết tật được chi trả học bổng và hỗ trợ chi phí mua phương tiện, đồ dùng học tập dùng riêng cho người khuyết tật theo định mức quy định (Mã: `KQ.G03.000083`)"
+          ]
+        },
+        {
+          "procedure_code": "1.002982",
+          "procedure_title": "Hỗ trợ học tập đối với học sinh trung học phổ thông các dân tộc thiểu số rất ít người",
+          "subdomain_key": "hoc_bong_va_ho_tro",
+          "subdomain_label": "Học bổng và chính sách hỗ trợ",
+          "event_id": 256,
+          "field": "Giáo dục và Đào tạo thuộc hệ thống giáo dục quốc dân",
+          "agency": "Cơ sở giáo dục",
+          "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bf8-a0bb-75c1-9994-33530adf31a5",
+          "raw_data_file": "C:\\Users\\ku060\\Downloads\\VAIC source\\data-pipeline\\raw_data\\1_002982\\1_002982_procedure_detail.md",
+          "raw_data_available": true,
+          "operation_group": "chinh_sach_ho_tro_khac",
+          "operation_key": "ho_tro_hoc_tap_doi_voi_hoc_sinh_trung_hoc_pho_thong_cac_dan_toc_thieu_so_rat_it_nguoi",
+          "overview": "Đối với học sinh trung học phổ thông học tại các cơ sở giáo dục công... Đầu năm học, các cơ sở giáo dục phổ thông có học sinh dân tộc thiểu số rất ít người theo học tổ chức phổ biến, thông báo rộng rãi, hướng dẫn cho học sinh thuộc đối tượng được hưởng chính sách làm đơn đề nghị hỗ trợ học tập. Trong thời hạn 20 ngày làm việc, kể từ ngày niêm yết thông báo; học sinh nộp đơn cho cơ sở giáo dục. Trong thời hạn 10 ngày làm việc, kể từ ngày hết hạn hết hạn nhận đơn, các cơ sở giáo dục có trách nhiệm tổ chức xem xét đơn đề nghị hỗ trợ học tập, lập và phê duyệt danh sách đối tượng được hưởng, niêm yết công khai danh sách đối tượng được hưởng, gửi báo cáo cơ quan quản lý cấp trên trực tiếp và thực hiện việc chi trả Học sinh học tại các cơ sở giáo dục công lập chỉ cần nộp đơn đề nghị hỗ trợ học tập một lần khi bắt đầu vào học tại một cơ sở giáo dục. Trong các năm học tiếp theo, các cơ sở giáo dục căn cứ vào danh sách học sinh dân tộc thiểu số rất ít người đang học tại trường và đơn đề nghị của học sinh mới vào học để lập và phê duyệt danh sách đối tượng được hưởng. - Các cơ sở giáo dục công lập chi trả tiền hỗ trợ học tập trực tiếp cho cha mẹ (hoặc người chăm sóc) trẻ mẫu giáo; cho học sinh, sinh viên. Việc chi trả thực hiện theo tháng. Đối với học sinh trung học phổ thông học tại các cơ sở giáo dục... Đầu năm học, các cơ sở giáo dục phổ thông có học sinh dân tộc thiểu số rất ít người theo học tổ chức phổ biến, thông báo rộng rãi, hướng dẫn cho học sinh thuộc đối tượng được hưởng chính sách làm đơn đề nghị hỗ trợ học tập. Trong thời hạn 20 ngày làm việc, kể từ ngày niêm yết thông báo học sinh nộp đơn cho cơ sở giáo dục. Các cơ sở giáo dục có trách nhiệm xác nhận vào đơn đề nghị hỗ trợ học tập của học sinh dân tộc thiểu số rất ít người. Trong thời hạn 30 ngày làm việc, kể từ ngày khai giảng năm học, học sinh trung học phổ thông nộp đơn đề nghị hỗ trợ học tập cho Sở Giáo dục và Đào tạo nơi học sinh có hộ khẩu thường trú. Trong trường hợp học sinh không trực tiếp đến nộp thì cha mẹ học sinh nộp thay. Trong thời hạn 10 ngày làm việc, kể từ ngày hết hạn nhận đơn đề nghị hỗ trợ Sở Giáo dục và Đào tạo có trách nhiệm tổ chức xem xét đơn, lập và phê duyệt danh sách đối tượng được hưởng, niêm yết công khai danh sách đối tượng được hưởng chính sách và thực hiện chi trả. Sở giáo dục và đào tạo chi trả tiền hỗ trợ học tập trực tiếp học sinh hoặc thông qua cha mẹ học sinh thuộc các cơ sở giáo dục ngoài công lập. Tùy thuộc vào điều kiện thực tế của đối tượng được hưởng, việc chi trả có thể thực hiện theo tháng hoặc theo quý.",
+          "procedure_flow": "Đối với học sinh trung học phổ thông học tại các cơ sở giáo dục công... Đầu năm học, các cơ sở giáo dục phổ thông có học sinh dân tộc thiểu số rất ít người theo học tổ chức phổ biến, thông báo rộng rãi, hướng dẫn cho học sinh thuộc đối tượng được hưởng chính sách làm đơn đề nghị hỗ trợ học tập. Trong thời hạn 20 ngày làm việc, kể từ ngày niêm yết thông báo; học sinh nộp đơn cho cơ sở giáo dục. Trong thời hạn 10 ngày làm việc, kể từ ngày hết hạn hết hạn nhận đơn, các cơ sở giáo dục có trách nhiệm tổ chức xem xét đơn đề nghị hỗ trợ học tập, lập và phê duyệt danh sách đối tượng được hưởng, niêm yết công khai danh sách đối tượng được hưởng, gửi báo cáo cơ quan quản lý cấp trên trực tiếp và thực hiện việc chi trả Học sinh học tại các cơ sở giáo dục công lập chỉ cần nộp đơn đề nghị hỗ trợ học tập một lần khi bắt đầu vào học tại một cơ sở giáo dục. Trong các năm học tiếp theo, các cơ sở giáo dục căn cứ vào danh sách học sinh dân tộc thiểu số rất ít người đang học tại trường và đơn đề nghị của học sinh mới vào học để lập và phê duyệt danh sách đối tượng được hưởng. - Các cơ sở giáo dục công lập chi trả tiền hỗ trợ học tập trực tiếp cho cha mẹ (hoặc người chăm sóc) trẻ mẫu giáo; cho học sinh, sinh viên. Việc chi trả thực hiện theo tháng. Đối với học sinh trung học phổ thông học tại các cơ sở giáo dục... Đầu năm học, các cơ sở giáo dục phổ thông có học sinh dân tộc thiểu số rất ít người theo học tổ chức phổ biến, thông báo rộng rãi, hướng dẫn cho học sinh thuộc đối tượng được hưởng chính sách làm đơn đề nghị hỗ trợ học tập. Trong thời hạn 20 ngày làm việc, kể từ ngày niêm yết thông báo học sinh nộp đơn cho cơ sở giáo dục. Các cơ sở giáo dục có trách nhiệm xác nhận vào đơn đề nghị hỗ trợ học tập của học sinh dân tộc thiểu số rất ít người. Trong thời hạn 30 ngày làm việc, kể từ ngày khai giảng năm học, học sinh trung học phổ thông nộp đơn đề nghị hỗ trợ học tập cho Sở Giáo dục và Đào tạo nơi học sinh có hộ khẩu thường trú. Trong trường hợp học sinh không trực tiếp đến nộp thì cha mẹ học sinh nộp thay. Trong thời hạn 10 ngày làm việc, kể từ ngày hết hạn nhận đơn đề nghị hỗ trợ Sở Giáo dục và Đào tạo có trách nhiệm tổ chức xem xét đơn, lập và phê duyệt danh sách đối tượng được hưởng, niêm yết công khai danh sách đối tượng được hưởng chính sách và thực hiện chi trả. Sở giáo dục và đào tạo chi trả tiền hỗ trợ học tập trực tiếp học sinh hoặc thông qua cha mẹ học sinh thuộc các cơ sở giáo dục ngoài công lập. Tùy thuộc vào điều kiện thực tế của đối tượng được hưởng, việc chi trả có thể thực hiện theo tháng hoặc theo quý.",
+          "requirements": "Học sinh trung học phổ thông thuộc 16 dân tộc: Cống, Mảng, Pu Péo, Si La, Cờ Lao, Bố Y, La Ha, Ngái, Chứt, Ơ Đu, Brâu, Rơ Măm, Lô Lô, Lự, Pà Thẻn, La Hủ đang học tập tại các cơ sở giáo dục thuộc hệ thống giáo dục quốc dân.",
+          "submission_methods": [],
+          "processing_time_values": [],
+          "document_groups": [],
+          "result_items": []
+        },
+        {
+          "procedure_code": "1.003702",
+          "procedure_title": "Hỗ trợ học tập đối với trẻ mẫu giáo, học sinh tiểu học, học sinh trung học cơ sở, sinh viên các dân tộc thiểu số rất ít người",
+          "subdomain_key": "hoc_bong_va_ho_tro",
+          "subdomain_label": "Học bổng và chính sách hỗ trợ",
+          "event_id": 256,
+          "field": "Giáo dục và Đào tạo thuộc hệ thống giáo dục quốc dân",
+          "agency": "Cơ sở giáo dục",
+          "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bf8-a0b7-73bc-a140-d0bbe50f7991",
+          "raw_data_file": "C:\\Users\\ku060\\Downloads\\VAIC source\\data-pipeline\\raw_data\\1_003702\\1_003702_procedure_detail.md",
+          "raw_data_available": true,
+          "operation_group": "chinh_sach_ho_tro_khac",
+          "operation_key": "ho_tro_hoc_tap_doi_voi_tre_mau_giao_hoc_sinh_tieu_hoc_hoc_sinh_trung_hoc_co_so_sinh_vien_cac_dan_toc_thieu_so_rat_it_nguoi",
+          "overview": "a) Đối với trẻ mẫu giáo, học sinh tiểu học, học sinh trung học cơ sở,... - Đầu năm học, các cơ sở giáo dục mầm non, cơ sở giáo dục phổ thông có trẻ mẫu giáo, học sinh tiểu học, học sinh trung học cơ sở dân tộc thiểu số rất ít người theo học tổ chức phổ biến, thông báo rộng rãi, hướng dẫn cho cha mẹ (hoặc người chăm sóc) trẻ mẫu giáo; cho học sinh thuộc đối tượng được hưởng chính sách làm đơn đề nghị hỗ trợ học tập. - Đầu khóa học, các trường dự bị đại học, các cơ sở giáo dục đại học có học sinh, sinh viên dân tộc thiểu số rất ít người theo học tổ chức phổ biến, thông báo rộng rãi cho học sinh, sinh viên thuộc đối tượng được hưởng chính sách làm đơn đề nghị hỗ trợ học tập. - Trong thời hạn 20 ngày làm việc, kể từ ngày niêm yết thông báo, cha mẹ (hoặc người chăm sóc) trẻ mẫu giáo; học sinh, sinh viên nộp đơn cho cơ sở giáo dục. - Trong thời hạn 10 ngày làm việc, kể từ ngày hết hạn hết hạn nhận đơn, các cơ sở giáo dục có trách nhiệm tổ chức xem xét đơn đề nghị hỗ trợ học tập, lập và phê duyệt danh sách đối tượng được hưởng, niêm yết công khai danh sách đối tượng được hưởng, gửi báo cáo cơ quan quản lý cấp trên trực tiếp và thực hiện việc chi trả. Trẻ mẫu giáo, học sinh, sinh viên học tại các cơ sở giáo dục công lập chỉ cần nộp đơn đề nghị hỗ trợ học tập một lần khi bắt đầu vào học tại một cơ sở giáo dục. Trong các năm học tiếp theo, các cơ sở giáo dục căn cứ vào danh sách trẻ mẫu giáo, học sinh, sinh viên dân tộc thiểu số rất ít người đang học tại trường và đơn đề nghị của trẻ mẫu giáo, học sinh, sinh viên mới vào học để lập và phê duyệt danh sách đối tượng được hưởng. Các cơ sở giáo dục công lập chi trả tiền hỗ trợ học tập trực tiếp cho cha mẹ (hoặc người chăm sóc) trẻ mẫu giáo; cho học sinh, sinh viên. Việc chi trả thực hiện theo tháng. b) Đối với trẻ mẫu giáo, học sinh, sinh viên học tại các cơ sở giáo... - Đầu năm học, các cơ sở giáo dục mầm non, cơ sở giáo dục phổ thông có trẻ mẫu giáo, học sinh tiểu học, học sinh trung học cơ sở dân tộc thiểu số rất ít người theo học tổ chức phổ biến, thông báo rộng rãi, hướng dẫn cho cha mẹ (hoặc người chăm sóc) trẻ mẫu giáo; cho học sinh thuộc đối tượng được hưởng chính sách làm đơn đề nghị hỗ trợ học tập. - Đầu khóa học, các cơ sở giáo dục đại học có học sinh, sinh viên dân tộc thiểu số rất ít người theo học tổ chức phổ biến, thông báo rộng rãi cho học sinh, sinh viên thuộc đối tượng được hưởng chính sách làm đơn đề nghị hỗ trợ học tập. - Trong thời hạn 20 ngày làm việc, kể từ ngày niêm yết thông báo, cha mẹ (hoặc người chăm sóc) trẻ mẫu giáo; học sinh, sinh viên nộp đơn cho cơ sở giáo dục. Các cơ sở giáo dục có trách nhiệm xác nhận vào đơn đề nghị hỗ trợ học tập của cha mẹ (hoặc người chăm sóc) trẻ mẫu giáo; của học sinh, sinh viên dân tộc thiểu số rất ít người. - Trong thời hạn 30 ngày làm việc, kể từ ngày khai giảng năm học, khóa học, cha mẹ (hoặc người chăm sóc) trẻ mẫu giáo; học sinh tiểu học, học sinh trung học cơ sở nộp đơn đề nghị hỗ trợ học tập cho Phòng Giáo dục và Đào tạo; học sinh, sinh viên học tại khoa, trường dự bị đại học, các cơ sở giáo dục đại học nộp đơn đề nghị hỗ trợ học tập cho Phòng Lao động - Thương binh và Xã hội tại nơi trẻ mẫu giáo, học sinh, sinh viên có hộ khẩu thường trú. Trong trường hợp học sinh, sinh viên không trực tiếp đến nộp thì cha mẹ học sinh, sinh viên nộp thay. - Trong thời hạn 10 ngày làm việc, kể từ ngày hết hạn nhận đơn đề nghị hỗ trợ, Phòng Giáo dục và Đào tạo, Phòng Lao động - Thương binh và Xã hội có trách nhiệm tổ chức xem xét đơn, lập và phê duyệt danh sách đối tượng được hưởng, niêm yết công khai danh sách đối tượng được hưởng chính sách và thực hiện chi trả. Phòng giáo dục và đào tạo, phòng lao động - thương binh và xã hội chi trả tiền hỗ trợ học tập trực tiếp cho cha mẹ (hoặc người chăm sóc) trẻ mẫu giáo; học sinh, sinh viên hoặc thông qua cha mẹ học sinh, sinh viên thuộc các cơ sở giáo dục ngoài công lập. Tùy thuộc vào điều kiện thực tế của đối tượng được hưởng, việc chi trả có thể thực hiện theo tháng hoặc theo quý.",
+          "procedure_flow": "a) Đối với trẻ mẫu giáo, học sinh tiểu học, học sinh trung học cơ sở,... - Đầu năm học, các cơ sở giáo dục mầm non, cơ sở giáo dục phổ thông có trẻ mẫu giáo, học sinh tiểu học, học sinh trung học cơ sở dân tộc thiểu số rất ít người theo học tổ chức phổ biến, thông báo rộng rãi, hướng dẫn cho cha mẹ (hoặc người chăm sóc) trẻ mẫu giáo; cho học sinh thuộc đối tượng được hưởng chính sách làm đơn đề nghị hỗ trợ học tập. - Đầu khóa học, các trường dự bị đại học, các cơ sở giáo dục đại học có học sinh, sinh viên dân tộc thiểu số rất ít người theo học tổ chức phổ biến, thông báo rộng rãi cho học sinh, sinh viên thuộc đối tượng được hưởng chính sách làm đơn đề nghị hỗ trợ học tập. - Trong thời hạn 20 ngày làm việc, kể từ ngày niêm yết thông báo, cha mẹ (hoặc người chăm sóc) trẻ mẫu giáo; học sinh, sinh viên nộp đơn cho cơ sở giáo dục. - Trong thời hạn 10 ngày làm việc, kể từ ngày hết hạn hết hạn nhận đơn, các cơ sở giáo dục có trách nhiệm tổ chức xem xét đơn đề nghị hỗ trợ học tập, lập và phê duyệt danh sách đối tượng được hưởng, niêm yết công khai danh sách đối tượng được hưởng, gửi báo cáo cơ quan quản lý cấp trên trực tiếp và thực hiện việc chi trả. Trẻ mẫu giáo, học sinh, sinh viên học tại các cơ sở giáo dục công lập chỉ cần nộp đơn đề nghị hỗ trợ học tập một lần khi bắt đầu vào học tại một cơ sở giáo dục. Trong các năm học tiếp theo, các cơ sở giáo dục căn cứ vào danh sách trẻ mẫu giáo, học sinh, sinh viên dân tộc thiểu số rất ít người đang học tại trường và đơn đề nghị của trẻ mẫu giáo, học sinh, sinh viên mới vào học để lập và phê duyệt danh sách đối tượng được hưởng. Các cơ sở giáo dục công lập chi trả tiền hỗ trợ học tập trực tiếp cho cha mẹ (hoặc người chăm sóc) trẻ mẫu giáo; cho học sinh, sinh viên. Việc chi trả thực hiện theo tháng. b) Đối với trẻ mẫu giáo, học sinh, sinh viên học tại các cơ sở giáo... - Đầu năm học, các cơ sở giáo dục mầm non, cơ sở giáo dục phổ thông có trẻ mẫu giáo, học sinh tiểu học, học sinh trung học cơ sở dân tộc thiểu số rất ít người theo học tổ chức phổ biến, thông báo rộng rãi, hướng dẫn cho cha mẹ (hoặc người chăm sóc) trẻ mẫu giáo; cho học sinh thuộc đối tượng được hưởng chính sách làm đơn đề nghị hỗ trợ học tập. - Đầu khóa học, các cơ sở giáo dục đại học có học sinh, sinh viên dân tộc thiểu số rất ít người theo học tổ chức phổ biến, thông báo rộng rãi cho học sinh, sinh viên thuộc đối tượng được hưởng chính sách làm đơn đề nghị hỗ trợ học tập. - Trong thời hạn 20 ngày làm việc, kể từ ngày niêm yết thông báo, cha mẹ (hoặc người chăm sóc) trẻ mẫu giáo; học sinh, sinh viên nộp đơn cho cơ sở giáo dục. Các cơ sở giáo dục có trách nhiệm xác nhận vào đơn đề nghị hỗ trợ học tập của cha mẹ (hoặc người chăm sóc) trẻ mẫu giáo; của học sinh, sinh viên dân tộc thiểu số rất ít người. - Trong thời hạn 30 ngày làm việc, kể từ ngày khai giảng năm học, khóa học, cha mẹ (hoặc người chăm sóc) trẻ mẫu giáo; học sinh tiểu học, học sinh trung học cơ sở nộp đơn đề nghị hỗ trợ học tập cho Phòng Giáo dục và Đào tạo; học sinh, sinh viên học tại khoa, trường dự bị đại học, các cơ sở giáo dục đại học nộp đơn đề nghị hỗ trợ học tập cho Phòng Lao động - Thương binh và Xã hội tại nơi trẻ mẫu giáo, học sinh, sinh viên có hộ khẩu thường trú. Trong trường hợp học sinh, sinh viên không trực tiếp đến nộp thì cha mẹ học sinh, sinh viên nộp thay. - Trong thời hạn 10 ngày làm việc, kể từ ngày hết hạn nhận đơn đề nghị hỗ trợ, Phòng Giáo dục và Đào tạo, Phòng Lao động - Thương binh và Xã hội có trách nhiệm tổ chức xem xét đơn, lập và phê duyệt danh sách đối tượng được hưởng, niêm yết công khai danh sách đối tượng được hưởng chính sách và thực hiện chi trả. Phòng giáo dục và đào tạo, phòng lao động - thương binh và xã hội chi trả tiền hỗ trợ học tập trực tiếp cho cha mẹ (hoặc người chăm sóc) trẻ mẫu giáo; học sinh, sinh viên hoặc thông qua cha mẹ học sinh, sinh viên thuộc các cơ sở giáo dục ngoài công lập. Tùy thuộc vào điều kiện thực tế của đối tượng được hưởng, việc chi trả có thể thực hiện theo tháng hoặc theo quý.",
+          "requirements": "Trẻ mẫu giáo, học sinh tiểu học, học sinh trung học phổ thông, sinh viên thuộc 16 dân tộc: Cống, Mảng, Pu Péo, Si La, Cờ Lao, Bố Y, La Ha, Ngái, Chứt, Ơ Đu, Brâu, Rơ Măm, Lô Lô, Lự, Pà Thẻn, La Hủ đang học tập tại các cơ sở giáo dục thuộc hệ thống giáo dục quốc dân.",
+          "submission_methods": [],
+          "processing_time_values": [],
+          "document_groups": [],
+          "result_items": []
+        },
+        {
+          "procedure_code": "1.008950",
+          "procedure_title": "Trợ cấp đối với trẻ em mầm non là con công nhân, người lao động làm việc tại khu công nghiệp",
+          "subdomain_key": "hoc_bong_va_ho_tro",
+          "subdomain_label": "Học bổng và chính sách hỗ trợ",
+          "event_id": 256,
+          "field": "Giáo dục và Đào tạo thuộc hệ thống giáo dục quốc dân",
+          "agency": "Cơ sở giáo dục",
+          "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bf8-b0a4-756f-a185-c74fda62ef1c",
+          "raw_data_file": "C:\\Users\\ku060\\Downloads\\VAIC source\\data-pipeline\\raw_data\\1_008950\\1_008950_procedure_detail.md",
+          "raw_data_available": true,
+          "operation_group": "tro_cap_hoc_tap",
+          "operation_key": "tro_cap_doi_voi_tre_em_mam_non_la_con_cong_nhan_nguoi_lao_dong_lam_viec_tai_khu_cong_nghiep",
+          "overview": "1. Tháng 8 hằng năm, cơ sở giáo dục mầm non tổ chức phổ biến, thông báo rộng rãi và hướng dẫn cho cha mẹ hoặc người chăm sóc, nuôi dưỡng trẻ em thuộc đối tượng được hưởng chính sách nộp hồ sơ đề nghị trợ cấp Trong vòng 15 ngày làm việc kể từ ngày cơ sở giáo dục mầm non thông báo, cha mẹ hoặc người chăm sóc, nuôi dưỡng trẻ em nộp trực tiếp hoặc qua bưu điện hoặc trực tuyến 01 bộ hồ sơ theo quy định tại cơ sở giáo dục mầm non Cơ sở giáo dục mầm non tiếp nhận, kiểm tra thành phần hồ sơ, nếu thành phần hồ sơ nộp là bản sao chưa có chứng thực của cấp có thẩm quyền, người nhận hồ sơ có trách nhiệm đối chiếu với bản chính, ký xác nhận vào bản sao để đưa vào hồ sơ, yêu cầu bổ sung nếu hồ sơ chưa đầy đủ hoặc chưa đúng quy định. Sau khi tiếp nhận hồ sơ hợp lệ, cơ sở giáo dục mầm non gửi giấy tiếp nhận hồ sơ cho cha mẹ hoặc người chăm sóc, nuôi dưỡng trẻ em. Trường hợp hồ sơ gửi qua bưu điện hoặc trực tuyến không bảo đảm yêu cầu, trong thời hạn 05 ngày làm việc cơ sở giáo dục mầm non gửi thông báo không tiếp nhận hồ sơ và lý do cho cha mẹ hoặc người chăm sóc, nuôi dưỡng trẻ em Trong vòng 10 ngày làm việc, kể từ ngày hết hạn nhận hồ sơ, cơ sở giáo dục mầm non lập danh sách trẻ em mầm non được hưởng trợ cấp kèm theo hồ sơ quy định gửi về phòng giáo dục và đào tạo đang quản lý trực tiếp để xem xét, tổng hợp; người đại diện theo pháp luật của cơ sở giáo dục mầm non dân lập, tư thục hoàn toàn chịu trách nhiệm về danh sách trẻ em được hưởng trợ cấp Trong vòng 07 ngày làm việc, kể từ khi nhận được hồ sơ của cơ sở giáo dục mầm non, phòng có chức năng quản lý giáo dục của Ủy ban nhân dân cấp xã tổ chức thẩm định hồ sơ, tổng hợp danh sách trẻ em mầm non được hưởng trợ cấp gửi cơ quan tài chính cùng cấp trình UBND cấp xã quyết định phê duyệt theo quy định của Luật Ngân sách nhà nước; Trong vòng 07 ngày làm việc, kể từ khi nhận được hồ sơ của phòng có chức năng quản lý giáo dục, Ủy ban nhân dân cấp xã phê duyệt danh sách trẻ em mẫu giáo được hỗ trợ ăn trưa và thông báo kết quả cho cơ sở giáo dục mầm non. Sau khi được cấp có thẩm quyền phê duyệt, cơ sở giáo dục mầm non thông báo công khai danh sách trẻ em mầm non được trợ cấp Phương thức thực hiện Cơ sở giáo dục mầm non chịu trách nhiệm tiếp nhận kinh phí và chi trả kinh phí trợ cấp trực tiếp bằng tiền mặt cho cha mẹ hoặc người chăm sóc, nuôi dưỡng trẻ em; Thời gian chi trả thực hiện 2 lần trong năm học: lần 1 chi trả đủ 4 tháng vào tháng 11 hoặc tháng 12 hằng năm; lần 2 chi trả đủ các tháng còn lại vào tháng 3 hoặc tháng 4 hằng năm; Trường hợp cha mẹ hoặc người chăm sóc, nuôi dưỡng trẻ em chưa nhận được kinh phí hỗ trợ học phí theo thời hạn thì được truy lĩnh trong kỳ chi trả tiếp theo; Trường hợp trẻ em thôi học, cơ sở giáo dục mầm non có trách nhiệm báo cáo phòng có chức năng quản lý giáo dục trình Ủy ban nhân dân cấp xã dừng thực hiện chi trả chính sách.",
+          "procedure_flow": "1. Tháng 8 hằng năm, cơ sở giáo dục mầm non tổ chức phổ biến, thông báo rộng rãi và hướng dẫn cho cha mẹ hoặc người chăm sóc, nuôi dưỡng trẻ em thuộc đối tượng được hưởng chính sách nộp hồ sơ đề nghị trợ cấp Trong vòng 15 ngày làm việc kể từ ngày cơ sở giáo dục mầm non thông báo, cha mẹ hoặc người chăm sóc, nuôi dưỡng trẻ em nộp trực tiếp hoặc qua bưu điện hoặc trực tuyến 01 bộ hồ sơ theo quy định tại cơ sở giáo dục mầm non Cơ sở giáo dục mầm non tiếp nhận, kiểm tra thành phần hồ sơ, nếu thành phần hồ sơ nộp là bản sao chưa có chứng thực của cấp có thẩm quyền, người nhận hồ sơ có trách nhiệm đối chiếu với bản chính, ký xác nhận vào bản sao để đưa vào hồ sơ, yêu cầu bổ sung nếu hồ sơ chưa đầy đủ hoặc chưa đúng quy định. Sau khi tiếp nhận hồ sơ hợp lệ, cơ sở giáo dục mầm non gửi giấy tiếp nhận hồ sơ cho cha mẹ hoặc người chăm sóc, nuôi dưỡng trẻ em. Trường hợp hồ sơ gửi qua bưu điện hoặc trực tuyến không bảo đảm yêu cầu, trong thời hạn 05 ngày làm việc cơ sở giáo dục mầm non gửi thông báo không tiếp nhận hồ sơ và lý do cho cha mẹ hoặc người chăm sóc, nuôi dưỡng trẻ em Trong vòng 10 ngày làm việc, kể từ ngày hết hạn nhận hồ sơ, cơ sở giáo dục mầm non lập danh sách trẻ em mầm non được hưởng trợ cấp kèm theo hồ sơ quy định gửi về phòng giáo dục và đào tạo đang quản lý trực tiếp để xem xét, tổng hợp; người đại diện theo pháp luật của cơ sở giáo dục mầm non dân lập, tư thục hoàn toàn chịu trách nhiệm về danh sách trẻ em được hưởng trợ cấp Trong vòng 07 ngày làm việc, kể từ khi nhận được hồ sơ của cơ sở giáo dục mầm non, phòng có chức năng quản lý giáo dục của Ủy ban nhân dân cấp xã tổ chức thẩm định hồ sơ, tổng hợp danh sách trẻ em mầm non được hưởng trợ cấp gửi cơ quan tài chính cùng cấp trình UBND cấp xã quyết định phê duyệt theo quy định của Luật Ngân sách nhà nước; Trong vòng 07 ngày làm việc, kể từ khi nhận được hồ sơ của phòng có chức năng quản lý giáo dục, Ủy ban nhân dân cấp xã phê duyệt danh sách trẻ em mẫu giáo được hỗ trợ ăn trưa và thông báo kết quả cho cơ sở giáo dục mầm non. Sau khi được cấp có thẩm quyền phê duyệt, cơ sở giáo dục mầm non thông báo công khai danh sách trẻ em mầm non được trợ cấp Phương thức thực hiện Cơ sở giáo dục mầm non chịu trách nhiệm tiếp nhận kinh phí và chi trả kinh phí trợ cấp trực tiếp bằng tiền mặt cho cha mẹ hoặc người chăm sóc, nuôi dưỡng trẻ em; Thời gian chi trả thực hiện 2 lần trong năm học: lần 1 chi trả đủ 4 tháng vào tháng 11 hoặc tháng 12 hằng năm; lần 2 chi trả đủ các tháng còn lại vào tháng 3 hoặc tháng 4 hằng năm; Trường hợp cha mẹ hoặc người chăm sóc, nuôi dưỡng trẻ em chưa nhận được kinh phí hỗ trợ học phí theo thời hạn thì được truy lĩnh trong kỳ chi trả tiếp theo; Trường hợp trẻ em thôi học, cơ sở giáo dục mầm non có trách nhiệm báo cáo phòng có chức năng quản lý giáo dục trình Ủy ban nhân dân cấp xã dừng thực hiện chi trả chính sách.",
+          "requirements": "Trẻ em đang học tại các cơ sở giáo dục mầm non thuộc loại hình dân lập, tư thục đã được cơ quan có thẩm quyền cấp phép thành lập và hoạt động theo đúng quy định có cha hoặc mẹ hoặc người chăm sóc, nuôi dưỡng trẻ em là công nhân, người lao động đang làm việc tại các khu công nghiệp được doanh nghiệp ký hợp đồng lao động theo quy định",
+          "submission_methods": [
+            "Trực tuyến",
+            "Dịch vụ bưu chính",
+            "Trực tiếp"
+          ],
+          "processing_time_values": [
+            "24 ngày làm việc",
+            "24 ngày làm việc",
+            "24 ngày làm việc"
+          ],
+          "document_groups": [],
+          "result_items": [
+            "Danh sách trẻ em mầm non được hưởng trợ cấp do UBND cấp xã phê duyệt (Mã: `KQ.G03.000424`)"
+          ]
+        },
+        {
+          "procedure_code": "1.009002",
+          "procedure_title": "Đăng ký hỗ trợ tiền đóng học phí và chi phí sinh hoạt đối với sinh viên học các ngành đào tạo giáo viên tại các đại học, học viện, trường đại học, trường cao đẳng được phép đào tạo giáo viên",
+          "subdomain_key": "hoc_bong_va_ho_tro",
+          "subdomain_label": "Học bổng và chính sách hỗ trợ",
+          "event_id": 256,
+          "field": "Giáo dục và Đào tạo thuộc hệ thống giáo dục quốc dân",
+          "agency": "Cơ sở giáo dục; Cơ sở giáo dục đại học",
+          "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bf8-b0a5-7402-af80-1178fabc81d7",
+          "raw_data_file": "C:\\Users\\ku060\\Downloads\\VAIC source\\data-pipeline\\raw_data\\1_009002\\1_009002_procedure_detail.md",
+          "raw_data_available": true,
+          "operation_group": "chinh_sach_ho_tro_khac",
+          "operation_key": "dang_ky_ho_tro_tien_dong_hoc_phi_va_chi_phi_sinh_hoat_doi_voi_sinh_vien_hoc_cac_nganh_dao_tao_giao_vien_tai_cac_dai_hoc_hoc_vien_truong_dai_hoc_truong_cao_dang_duoc_phep_dao_tao_giao_vien",
+          "overview": "1. a) Hằng năm, căn cứ vào chỉ tiêu được Bộ Giáo dục và Đào tạo thông báo, cơ sở đào tạo giáo viên thông báo cho thí sinh trúng tuyển vào các ngành đào tạo giáo viên để đăng ký hỗ trợ tiền đóng học phí và chi phí sinh hoạt; công khai số lượng, danh sách sinh viên trúng tuyển lên cổng thông tin điện tử của Bộ Giáo dục và Đào tạo và trang thông tin điện tử của cơ sở đào tạo giáo viên để các địa phương đăng ký giao nhiệm vụ, đặt hàng đào tạo sinh viên sư phạm. b) Trong thời hạn 30 ngày kể từ ngày nhận được thông báo trúng tuyển, sinh viên sư phạm nộp Đơn đề nghị hưởng và cam kết bồi hoàn học phí, chi phí sinh hoạt đến cơ sở đào tạo giáo viên (theo quy định tại điểm a khoản 12 Điều 1 và theo Mẫu số 01 tại Phụ lục ban hành kèm theo Nghị định số 60/2025/NĐ-CP ngày 03/3/2025 của Chính phủ sửa đổi, bổ sung một số điều của Nghị định số 116/2020/NĐ-CP ngày 25/9/2020 của Chính phủ quy định về chính sách hỗ trợ tiền đóng học phí, chi phí sinh hoạt đối với sinh viên sư phạm). c) Các cơ sở đào tạo giáo viên tổng hợp và thông báo cho các địa phương đã giao nhiệm vụ, đặt hàng để thống nhất xét hỗ trợ cho sinh viên sư phạm thuộc đối tượng giao nhiệm vụ, đặt hàng. d) Cơ quan giao nhiệm vụ, đặt hàng xây dựng tiêu chí tuyển chọn sinh viên sư phạm đã trúng tuyển, phối hợp với cơ sở đào tạo giáo viên xét chọn bảo đảm công bằng, công khai, minh bạch. đ) Trong thời hạn 15 ngày kể từ ngày kết thúc nhận đơn đăng ký, cơ sở đào tạo giáo viên thống nhất với cơ quan giao nhiệm vụ, đặt hàng để xác nhận và thông báo cho sinh viên sư phạm được hưởng chính sách hỗ trợ thuộc đối tượng giao nhiệm vụ, đặt hàng và xét duyệt các đối tượng hưởng chính sách hỗ trợ đối với sinh viên sư phạm trong phạm vi chỉ tiêu Bộ Giáo dục và Đào tạo thông báo và không thuộc chỉ tiêu đặt hàng. e) Danh sách sinh viên sư phạm được hưởng chính sách hỗ trợ tiền đóng học phí, chi phí sinh hoạt và danh sách sinh viên sư phạm thuộc đối tượng giao nhiệm vụ, đặt hàng của địa phương được công khai trên cổng thông tin điện tử của địa phương và trang thông tin điện tử của cơ sở đào tạo giáo viên chậm nhất sau 05 ngày làm việc kể từ khi hoàn thành việc xét duyệt gửi cơ quan giao nhiệm vụ, đặt hàng để thực hiện, đồng thời gửi cơ quan cấp trên để theo dõi.",
+          "procedure_flow": "1. a) Hằng năm, căn cứ vào chỉ tiêu được Bộ Giáo dục và Đào tạo thông báo, cơ sở đào tạo giáo viên thông báo cho thí sinh trúng tuyển vào các ngành đào tạo giáo viên để đăng ký hỗ trợ tiền đóng học phí và chi phí sinh hoạt; công khai số lượng, danh sách sinh viên trúng tuyển lên cổng thông tin điện tử của Bộ Giáo dục và Đào tạo và trang thông tin điện tử của cơ sở đào tạo giáo viên để các địa phương đăng ký giao nhiệm vụ, đặt hàng đào tạo sinh viên sư phạm. b) Trong thời hạn 30 ngày kể từ ngày nhận được thông báo trúng tuyển, sinh viên sư phạm nộp Đơn đề nghị hưởng và cam kết bồi hoàn học phí, chi phí sinh hoạt đến cơ sở đào tạo giáo viên (theo quy định tại điểm a khoản 12 Điều 1 và theo Mẫu số 01 tại Phụ lục ban hành kèm theo Nghị định số 60/2025/NĐ-CP ngày 03/3/2025 của Chính phủ sửa đổi, bổ sung một số điều của Nghị định số 116/2020/NĐ-CP ngày 25/9/2020 của Chính phủ quy định về chính sách hỗ trợ tiền đóng học phí, chi phí sinh hoạt đối với sinh viên sư phạm). c) Các cơ sở đào tạo giáo viên tổng hợp và thông báo cho các địa phương đã giao nhiệm vụ, đặt hàng để thống nhất xét hỗ trợ cho sinh viên sư phạm thuộc đối tượng giao nhiệm vụ, đặt hàng. d) Cơ quan giao nhiệm vụ, đặt hàng xây dựng tiêu chí tuyển chọn sinh viên sư phạm đã trúng tuyển, phối hợp với cơ sở đào tạo giáo viên xét chọn bảo đảm công bằng, công khai, minh bạch. đ) Trong thời hạn 15 ngày kể từ ngày kết thúc nhận đơn đăng ký, cơ sở đào tạo giáo viên thống nhất với cơ quan giao nhiệm vụ, đặt hàng để xác nhận và thông báo cho sinh viên sư phạm được hưởng chính sách hỗ trợ thuộc đối tượng giao nhiệm vụ, đặt hàng và xét duyệt các đối tượng hưởng chính sách hỗ trợ đối với sinh viên sư phạm trong phạm vi chỉ tiêu Bộ Giáo dục và Đào tạo thông báo và không thuộc chỉ tiêu đặt hàng. e) Danh sách sinh viên sư phạm được hưởng chính sách hỗ trợ tiền đóng học phí, chi phí sinh hoạt và danh sách sinh viên sư phạm thuộc đối tượng giao nhiệm vụ, đặt hàng của địa phương được công khai trên cổng thông tin điện tử của địa phương và trang thông tin điện tử của cơ sở đào tạo giáo viên chậm nhất sau 05 ngày làm việc kể từ khi hoàn thành việc xét duyệt gửi cơ quan giao nhiệm vụ, đặt hàng để thực hiện, đồng thời gửi cơ quan cấp trên để theo dõi.",
+          "requirements": "Không có thông tin",
+          "submission_methods": [
+            "Trực tuyến",
+            "Dịch vụ bưu chính",
+            "Trực tiếp"
+          ],
+          "processing_time_values": [
+            "15 ngày",
+            "15 ngày",
+            "15 ngày"
+          ],
+          "document_groups": [
+            {
+              "group_name": "Sinh viên chỉ nộp Đơn đề nghị hưởng và cam kết bồi hoàn học phí, chi phí sinh hoạt đến cơ sở đào tạo giáo viên cho 01 lần đầu đề nghị hỗ trợ trong cả thời gian học tại cơ sở đào tạo giáo viên. :",
+              "documents": [
+                {
+                  "Tên giấy tờ": "Đơn đề nghị hưởng và cam kết bồi hoàn học phí, chi phí sinh hoạt (theo quy định tại điểm a khoản 12 Điều 1 và theo Mẫu số 01 tại Phụ lục ban hành kèm theo Nghị định số 60/2025/NĐ-CP ngày 03/3/2025 của Chính phủ sửa đổi, bổ sung một số điều của Nghị định số 116/2020/NĐ-CP ngày 25/9/2020 của Chính phủ quy định về chính sách hỗ trợ tiền đóng học phí, chi phí sinh hoạt đối với sinh viên sư phạm).",
+                  "Bản chính": "1",
+                  "Bản sao": "0",
+                  "Tệp đính kèm": "[MUNNGH_kemtheoND60.docx](file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/1_009002/MUNNGH_kemtheoND60.docx)"
+                }
+              ]
+            }
+          ],
+          "result_items": [
+            "Danh sách sinh viên sư phạm được hưởng chính sách hỗ trợ tiền đóng học phí, chi phí sinh hoạt và danh sách sinh viên sư phạm thuộc đối tượng giao nhiệm vụ, đặt hàng của địa phương được công khai trên cổng thông tin điện tử của địa phương và trang thông tin điện tử của cơ sở đào tạo giáo viên (Mã: `KQ.G03.000080`)"
+          ]
+        },
+        {
+          "procedure_code": "1.010497",
+          "procedure_title": "Đề nghị miễn giảm học phí, hỗ trợ chi phí học tập, hỗ trợ tiền đóng học phí đối với người học tại các cơ sở giáo dục mầm non, giáo dục phổ thông, giáo dục thường xuyên, giáo dục nghề nghiệp và giáo dục đại học",
+          "subdomain_key": "hoc_bong_va_ho_tro",
+          "subdomain_label": "Học bổng và chính sách hỗ trợ",
+          "event_id": 256,
+          "field": "Giáo dục và Đào tạo thuộc hệ thống giáo dục quốc dân",
+          "agency": "Sở Giáo dục và Đào tạo tỉnh Tuyên Quang; Cơ sở giáo dục",
+          "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019dc562-901d-73ca-9cbf-76f252e06d59",
+          "raw_data_file": "C:\\Users\\ku060\\Downloads\\VAIC source\\data-pipeline\\raw_data\\1_010497\\1_010497_procedure_detail.md",
+          "raw_data_available": true,
+          "operation_group": "mien_giam_hoc_phi",
+          "operation_key": "de_nghi_mien_giam_hoc_phi_ho_tro_chi_phi_hoc_tap_ho_tro_tien_dong_hoc_phi_doi_voi_nguoi_hoc_tai_cac_co_so_giao_duc_mam_non_giao_duc_pho_thong_giao_duc_thuong_xuyen_giao_duc_nghe_nghiep_va_giao_duc_dai_hoc",
+          "overview": "1. Gửi (nộp) hồ sơ TTHC - Trong vòng 45 ngày làm việc kể từ ngày khai giảng năm học, cha mẹ (hoặc người giám hộ) trẻ em mầm non, học sinh phổ thông, học viên học tại cơ sở giáo dục thường xuyên; học sinh, sinh viên, học viên học ở các cơ sở giáo dục nghề nghiệp và giáo dục đại học thuộc đối tượng được miễn giảm học phí, hỗ trợ tiền đóng học phí, chi phí học tập nộp hồ sơ quy định tại khoản 1 Điều 19 Nghị định số 81/2021/NĐ-CP ngày 27/8/2021 của Chính phủ quy định về cơ chế thu, quản lý học phí đối với cơ sở giáo dục thuộc hệ thống giáo dục quốc dân và chính sách miễn, giảm học phí, hỗ trợ chi phí học tập; giá dịch vụ trong lĩnh vực giáo dục (Nghị định số 81/2021/NĐ-CP) gửi cơ sở giáo dục theo hình thức nộp trực tiếp hoặc DVBCCI. Cách thức thực hiện: Trực tiếp hoặc qua dịch vụ BCCI Địa điểm gửi hồ sơ: Cơ sở giáo dục nơi học sinh theo học Thành phần hồ sơ: STT Tên thành phần hồ sơ Mẫu thành phần hồ sơ Tiêu chuẩn Trực tiếp hoặc qua DVBCCI DVC trực tuyến 1 Đơn đề nghị 1. Đối với các đối tượng thuộc diện được miễn, giảm học phí học mầm non, giáo dục phổ thông, giáo dục thường xuyên theo Bản chính văn bản giấy 2. Các đối tượng học sinh tiểu học tư thục được hỗ trợ tiền đóng học phí",
+          "procedure_flow": "1. Gửi (nộp) hồ sơ TTHC - Trong vòng 45 ngày làm việc kể từ ngày khai giảng năm học, cha mẹ (hoặc người giám hộ) trẻ em mầm non, học sinh phổ thông, học viên học tại cơ sở giáo dục thường xuyên; học sinh, sinh viên, học viên học ở các cơ sở giáo dục nghề nghiệp và giáo dục đại học thuộc đối tượng được miễn giảm học phí, hỗ trợ tiền đóng học phí, chi phí học tập nộp hồ sơ quy định tại khoản 1 Điều 19 Nghị định số 81/2021/NĐ-CP ngày 27/8/2021 của Chính phủ quy định về cơ chế thu, quản lý học phí đối với cơ sở giáo dục thuộc hệ thống giáo dục quốc dân và chính sách miễn, giảm học phí, hỗ trợ chi phí học tập; giá dịch vụ trong lĩnh vực giáo dục (Nghị định số 81/2021/NĐ-CP) gửi cơ sở giáo dục theo hình thức nộp trực tiếp hoặc DVBCCI. Cách thức thực hiện: Trực tiếp hoặc qua dịch vụ BCCI Địa điểm gửi hồ sơ: Cơ sở giáo dục nơi học sinh theo học Thành phần hồ sơ: STT Tên thành phần hồ sơ Mẫu thành phần hồ sơ Tiêu chuẩn Trực tiếp hoặc qua DVBCCI DVC trực tuyến 1 Đơn đề nghị 1. Đối với các đối tượng thuộc diện được miễn, giảm học phí học mầm non, giáo dục phổ thông, giáo dục thường xuyên theo Bản chính văn bản giấy 2. Các đối tượng học sinh tiểu học tư thục được hỗ trợ tiền đóng học phí 3. Đối với các đối tượng thuộc diện được hỗ trợ chi phí học tập học mầm non, giáo dục phổ thông, giáo dục thường xuyên 4. Đối với các đối tượng thuộc diện miễn, giảm học phí ở các cơ sở giáo dục nghề nghiệp và giáo dục đại học công lập 5. Đối với các đối tượng thuộc diện miễn, giảm học phí ở các cơ sở giáo dục nghề nghiệp và giáo dục đại học tư thục 6. Đối với trẻ em mầm non và học sinh phổ thông, học viên học tại cơ sở giáo dục thường xuyên theo chương trình giáo dục phổ thông vừa thuộc diện được miễn, giảm học phí vừa thuộc diện được hỗ trợ chi phí học tập 2 Giấy tờ chứng minh thuộc đối tượng miễn, giảm học phí và hỗ trợ chi phí học tập đối với các đối tượng như sau: Giấy xác nhận của cơ quan quản lý đối tượng người có công đối với đối tượng được quy định tại khoản 1 Điều 15 Nghị định số 81/2021/NĐ-CP Bản sao chứng thực hoặc bản sao kèm bản chính để đối chiếu hoặc bản sao từ sổ gốc Giấy xác nhận khuyết tật do Ủy ban nhân dân cấp xã cấp hoặc Quyết định về việc trợ cấp xã hội của Chủ tịch Ủy ban nhân dân cấp huyện đối với đối tượng được quy định tại khoản 2 Điều 15 Nghị định số 81/2021/NĐ-CP Quyết định về việc trợ cấp xã hội của Chủ tịch Ủy ban nhân dân cấp huyện đối với đối tượng được quy định tại khoản 3 Điều 15 Nghị định số 81/2021/NĐ-CP Giấy xác nhận hộ nghèo do Ủy ban nhân dân cấp xã cấp cho đối tượng được quy định tại khoản 4 Điều 15 Nghị định số 81/2021/NĐ-CP Giấy chứng nhận đối tượng được hưởng chế độ miễn học phí theo quy định tại Nghị định số 27/2016/NĐ-CP ngày 06 tháng 4 năm 2016 của Chính phủ quy định một số chế độ, chính sách đối với hạ sĩ quan, binh sĩ phục vụ tại ngũ, xuất ngũ và thân nhân của hạ sĩ quan, binh sĩ tại ngũ và văn bản hướng dẫn của Bộ Quốc phòng đối với đối tượng quy định tại khoản 7 Điều 15 Nghị định số 81/2021/NĐ-CP Giấy khai sinh và giấy xác nhận hộ nghèo hoặc hộ cận nghèo do Ủy ban nhân dân cấp xã cấp cho đối tượng được quy định tại khoản 12 Điều 15 Nghị định số 81/2021/NĐ-CP Giấy khai sinh và sổ hộ khẩu thường trú hoặc giấy xác nhận của cơ quan công an về việc đăng ký thường trú (trường hợp sổ hộ khẩu bị thất lạc) đối với đối tượng được quy định tại khoản 5, khoản 8, khoản 15 Điều 15 và điểm c khoản 1 và khoản 3 Điều 16 Nghị định số 81/2021/NĐ-CP. Kể từ năm học 2024 - 2025 (từ ngày 01 tháng 9 năm 2024) đối tượng quy định tại khoản 5, khoản 6 Điều 15 Nghị định số 81/2021/NĐ-CP và kể từ năm học 2025 - 2026 (từ ngày 01 tháng 9 năm 2025) đối tượng quy định tại khoản 8, khoản 9 Điều 15 Nghị định số 81/2021/NĐ-CP chỉ phải nộp giấy khai sinh Bằng tốt nghiệp trung học cơ sở hoặc giấy xác nhận tốt nghiệp tạm thời đối với đối tượng được quy định tại khoản 17 Điều 15 Nghị định số 81/2021/NĐ-CP Sổ hưởng trợ cấp hàng tháng của cha hoặc mẹ bị tai nạn lao động hoặc mắc bệnh nghề nghiệp do tổ chức bảo hiểm xã hội cấp đối với đối tượng được quy định tại điểm a khoản 2 Điều 16 Nghị định số 81/2021/NĐ-CP Giấy xác nhận hộ cận nghèo do Ủy ban nhân dân cấp xã cấp cho đối tượng được quy định tại điểm b khoản 2 Điều 16 Nghị định số 81/2021/NĐ-CP. Người học thuộc diện miễn, giảm học phí và hỗ trợ chi phí học tập chỉ phải làm 01 bộ hồ sơ nộp lần đầu cho cả thời gian học tập. Riêng đối với người học thuộc diện hộ nghèo, hộ cận nghèo thì vào mỗi đầu học kỳ phải nộp bổ sung giấy xác nhận hộ nghèo, hộ cận nghèo để làm căn cứ xem xét miễn, giảm học phí và hỗ trợ chi phí học tập cho kỳ học tiếp theo. Trường hợp học sinh, sinh viên có thẻ căn cước công dân và được cấp mã số định danh cá nhân, thông tin về nơi thường trú có thể khai thác từ việc kết nối và chia sẻ dữ liệu về dân cư với các cơ sở giáo dục đào tạo, Phòng GDĐT, Sở GDĐT, Phòng LĐTBXH, Phòng Tài chính, Sở Tài chính, thì cha mẹ (hoặc người giám hộ) trẻ em, học sinh, sinh viên không phải nộp Giấy khai sinh và Sổ hộ khẩu thường trú. Số lượng hồ sơ: 01 3.2 Giải quyết hồ sơ TTHC Bước 1. Xét duyệt hồ sơ, lập danh sách học sinh - Trong vòng 10 ngày làm việc kể từ khi nhận được đơn đề nghị miễn giảm học phí và hỗ trợ chi phí học tập, hỗ trợ tiền đóng học phí cho học sinh tiểu học tư thục ở địa bàn không đủ trường công lập, Hiệu trưởng nhà trường có trách nhiệm xét duyệt hồ sơ và lập danh sách học sinh được miễn, giảm học phí và hỗ trợ chi phí học tập, hỗ trợ tiền đóng học phí học sinh tiểu học tư thục. - Gửi cấp phê duyệt cụ thể: + Đối với cơ sở giáo dục mầm non, tiểu học và trung học cơ sở, cơ sở giáo dục thường xuyên thuộc Phòng giáo dục đào tạo gửi Phòng GDĐT thẩm định + Đối với trường trung học phổ thông, cơ sở giáo dục thường xuyên và các cơ sở giáo dục khác trực thuộc Sở GDĐT gửi Sở Giáo dục và Đào tạo thẩm định; Cách thức thực hiện: Trực tiếp hoặc qua Dịch vụ BCCI hoặc qua dịch vụ công trực tuyến mức độ 4 Địa điểm gửi hồ sơ: - Đối với cơ sở giáo dục mầm non, tiểu học và trung học cơ sở, cơ sở giáo dục thường xuyên thuộc Phòng giáo dục đào tạo gửi hồ sơ trực tiếp hoặc qua DVBCCI tại Bộ phận tiếp nhận và trả kết quả thủ tục hành chính cấp huyện, hoặc trực tuyến qua Cổng dịch vụ công của tinh (http://dichvucong.hagiang.gov.vn) - Đối với trường trung học phổ thông, cơ sở giáo dục thường xuyên và các cơ sở giáo dục khác trực thuộc Sở GDĐT gửi hồ sơ trực tiếp hoặc qua DVBCCI tại Trung tâm Phục vụ hành chính công tỉnh (Số 519, đường Nguyễn Trãi, TP Hà Giang, tỉnh Hà Giang) hoặc trực tuyến qua Cổng dịch vụ công của tinh (http://dichvucong.hagiang.gov.vn) Thành phần hồ sơ: STT Tên thành phần hồ sơ Mẫu thành phần hồ sơ Tiêu chuẩn Trực tiếp hoặc qua DVBCCI DVC trực tuyến 1 Tờ trình Bản chính văn bản giấy Bản điện tử được ký số 2 Danh sách đối tượng học sinh hưởng chính sách theo Nghị định số 81/2021/NĐ-CP Bản chính văn bản giấy Bản điện tử được ký số Số lượng hồ sơ: 01 Bước 2. Thẩm định, phê duyệt danh sách - Phòng Giáo dục và Đào tạo thực hiện thẩm định và ban hành Quyết định phê duyệt danh sách học sinh được học sinh hưởng chính sách theo Nghị định số 81/2021/NĐ-CP gửi cơ sở giáo dục thực theo quy định đối với cơ sở giáo dục mầm non, tiểu học và trung học cơ sở, cơ sở giáo dục thường xuyên thuộc Phòng giáo dục đào tạo. - Sở Giáo dục và Đào tạo thực hiện thẩm định và ban hành Quyết định phê duyệt danh sách học sinh được học sinh hưởng chính sách theo Nghị định số 81/2021/NĐ-CP gửi cơ sở giáo dục thực theo quy định đối với trường trung học phổ thông, cơ sở giáo dục thường xuyên và các cơ sở giáo dục khác trực thuộc Sở Giáo dục và Đào tạo. * Ghi chú: đối với các cơ sở giáo dục (cơ sở giáo dục nghề nghiệp và giáo dục đại học công lập; cơ sở giáo dục mầm non dân lập, tư thục; cơ sở giáo dục phổ thông tư thục; cơ sở giáo dục thường xuyên tư thục, giáo dục nghề nghiệp và giáo dục đại học tư thục; cơ sở giáo dục nghề nghiệp và giáo dục đại học tư thục) thực hiện như sau: + Đối với cơ sở giáo dục nghề nghiệp và giáo dục đại học công lập: Trong vòng 10 ngày làm việc kể từ khi nhận được đơn đề nghị miễn, giảm học phí, Thủ trưởng cơ sở giáo dục nghề nghiệp và giáo dục đại học công lập có trách nhiệm xét duyệt hồ sơ và quyết định miễn, giảm học phí đối với học sinh, sinh viên và học viên; đồng thời lập danh sách học sinh, sinh viên, học viên được miễn, giảm học phí theo mẫu quy định tại Phụ lục IX ban hành kèm theo Nghị định số 81/2021/NĐ-CP gửi cơ quan quản lý cấp trên trực tiếp. Cơ quan quản lý cấp trên thẩm định, lập dự toán kinh phí theo mẫu quy định tại Phụ lục X ban hành kèm theo Nghị định số 81/2021/NĐ-CP gửi Bộ Tài chính tổng hợp, trình cấp có thẩm quyền bố trí kinh phí thực hiện trong dự toán ngân sách hàng năm; + Đối với cơ sở giáo dục mầm non dân lập, tư thục; cơ sở giáo dục phổ thông tư thục; cơ sở giáo dục thường xuyên tư thục, giáo dục nghề nghiệp và giáo dục đại học tư thục: Trong vòng 10 ngày làm việc kể từ khi nhận được đơn đề nghị miễn giảm học phí, cấp bù miễn giảm học phí và hỗ trợ chi phí học tập, hỗ trợ tiền đóng học phí của người học, cơ sở giáo dục mầm non dân lập, tư thục; cơ sở giáo dục phổ thông tư thục; cơ sở giáo dục thường xuyên tư thục, giáo dục nghề nghiệp và giáo dục đại học tư thục có trách nhiệm cấp cho người học giấy xác nhận theo quy định tại Phụ lục VIII ban hành kèm theo Nghị định số 81/2021/NĐ-CP. + Đối với cơ sở giáo dục nghề nghiệp và giáo dục đại học tư thục: Trong vòng 10 ngày làm việc kể từ khi nhận được đơn đề nghị miễn, giảm học phí, Thủ trưởng cơ sở giáo dục nghề nghiệp và giáo dục đại học tư thục có trách nhiệm xác nhận hồ sơ miễn, giảm học phí đối với người học; đồng thời lập danh sách người học được miễn, giảm học phí theo mẫu quy định tại Phụ lục IX ban hành kèm theo Nghị định số 81/2021/NĐ-CP gửi về Phòng Lao động - Thương binh và Xã hội nơi người học đăng ký thường trú để thực hiện theo quy định.",
+          "requirements": "Nghị định số 81/2021/NĐ-CP ngày 27/8/2021 của Chính phủ quy định về cơ chế thu, quản lý học phí đối với cơ sở giáo dục thuộc hệ thống giáo dục quốc dân và chính sách miễn, giảm học phí, hỗ trợ chi phí học tập; giá dịch vụ trong lĩnh vực giáo dục. - Quyết định số 3385 /QĐ-BGDĐT ngày 15/10/2021 của Bộ GD&ĐT công bố thủ tục hành chính được thay thế lĩnh vực giáo dục và đào tạo thuộc hệ thống giáo dục quốc dân thuộc phạm vi, chức năng quản lý của Bộ Giáo dục và Đào tạo.",
+          "submission_methods": [
+            "Trực tiếp",
+            "Trực tiếp"
+          ],
+          "processing_time_values": [
+            "10 ngày làm việc",
+            "5 ngày làm việc"
+          ],
+          "document_groups": [
+            {
+              "group_name": "Đơn đề nghị",
+              "documents": [
+                {
+                  "Tên giấy tờ": "1. Đối với các đối tượng thuộc diện được miễn, giảm học phí học mầm non, giáo dục phổ thông, giáo dục thường xuyên theo",
+                  "Bản chính": "1",
+                  "Bản sao": "0",
+                  "Tệp đính kèm": "Không có"
+                },
+                {
+                  "Tên giấy tờ": "2. Các đối tượng học sinh tiểu học tư thục được hỗ trợ tiền đóng học phí",
+                  "Bản chính": "1",
+                  "Bản sao": "0",
+                  "Tệp đính kèm": "Không có"
+                },
+                {
+                  "Tên giấy tờ": "3. Đối với các đối tượng thuộc diện được hỗ trợ chi phí học tập học mầm non, giáo dục phổ thông, giáo dục thường xuyên",
+                  "Bản chính": "1",
+                  "Bản sao": "0",
+                  "Tệp đính kèm": "Không có"
+                },
+                {
+                  "Tên giấy tờ": "4. Đối với các đối tượng thuộc diện miễn, giảm học phí ở các cơ sở giáo dục nghề nghiệp và giáo dục đại học công lập",
+                  "Bản chính": "1",
+                  "Bản sao": "0",
+                  "Tệp đính kèm": "Không có"
+                },
+                {
+                  "Tên giấy tờ": "5. Đối với các đối tượng thuộc diện miễn, giảm học phí ở các cơ sở giáo dục nghề nghiệp và giáo dục đại học tư thục",
+                  "Bản chính": "1",
+                  "Bản sao": "0",
+                  "Tệp đính kèm": "Không có"
+                },
+                {
+                  "Tên giấy tờ": "6. Đối với trẻ em mầm non và học sinh phổ thông, học viên học tại cơ sở giáo dục thường xuyên theo chương trình giáo dục phổ thông vừa thuộc diện được miễn, giảm học phí vừa thuộc diện được hỗ trợ chi phí học tập",
+                  "Bản chính": "1",
+                  "Bản sao": "0",
+                  "Tệp đính kèm": "Không có"
+                }
+              ]
+            },
+            {
+              "group_name": "Giấy tờ chứng minh thuộc đối tượng miễn, giảm học phí và hỗ trợ chi phí học tập đối với các đối tượng như sau:",
+              "documents": [
+                {
+                  "Tên giấy tờ": "Giấy xác nhận của cơ quan quản lý đối tượng người có công đối với đối tượng được quy định tại khoản 1 Điều 15 Nghị định số 81/2021/NĐ-CP",
+                  "Bản chính": "1",
+                  "Bản sao": "0",
+                  "Tệp đính kèm": "Không có"
+                },
+                {
+                  "Tên giấy tờ": "Giấy xác nhận khuyết tật do Ủy ban nhân dân cấp xã cấp hoặc Quyết định về việc trợ cấp xã hội của Chủ tịch Ủy ban nhân dân cấp huyện đối với đối tượng được quy định tại khoản 2 Điều 15 Nghị định số 81/2021/NĐ-CP",
+                  "Bản chính": "1",
+                  "Bản sao": "0",
+                  "Tệp đính kèm": "Không có"
+                },
+                {
+                  "Tên giấy tờ": "Quyết định về việc trợ cấp xã hội của Chủ tịch Ủy ban nhân dân cấp huyện đối với đối tượng được quy định tại khoản 3 Điều 15 Nghị định số 81/2021/NĐ-CP",
+                  "Bản chính": "1",
+                  "Bản sao": "0",
+                  "Tệp đính kèm": "Không có"
+                },
+                {
+                  "Tên giấy tờ": "Giấy xác nhận hộ nghèo do Ủy ban nhân dân cấp xã cấp cho đối tượng được quy định tại khoản 4 Điều 15 Nghị định số 81/2021/NĐ-CP",
+                  "Bản chính": "1",
+                  "Bản sao": "0",
+                  "Tệp đính kèm": "Không có"
+                },
+                {
+                  "Tên giấy tờ": "Giấy chứng nhận đối tượng được hưởng chế độ miễn học phí theo quy định tại Nghị định số 27/2016/NĐ-CP ngày 06 tháng 4 năm 2016 của Chính phủ quy định một số chế độ, chính sách đối với hạ sĩ quan, binh sĩ phục vụ tại ngũ, xuất ngũ và thân nhân của hạ sĩ quan, binh sĩ tại ngũ và văn bản hướng dẫn của Bộ Quốc phòng đối với đối tượng quy định tại khoản 7 Điều 15 Nghị định số 81/2021/NĐ-CP",
+                  "Bản chính": "1",
+                  "Bản sao": "0",
+                  "Tệp đính kèm": "Không có"
+                },
+                {
+                  "Tên giấy tờ": "Giấy khai sinh và giấy xác nhận hộ nghèo hoặc hộ cận nghèo do Ủy ban nhân dân cấp xã cấp cho đối tượng được quy định tại khoản 12 Điều 15 Nghị định số 81/2021/NĐ-CP",
+                  "Bản chính": "1",
+                  "Bản sao": "0",
+                  "Tệp đính kèm": "Không có"
+                },
+                {
+                  "Tên giấy tờ": "Giấy khai sinh và sổ hộ khẩu thường trú hoặc giấy xác nhận của cơ quan công an về việc đăng ký thường trú (trường hợp sổ hộ khẩu bị thất lạc) đối với đối tượng được quy định tại khoản 5, khoản 8, khoản 15 Điều 15 và điểm c khoản 1 và khoản 3 Điều 16 Nghị định số 81/2021/NĐ-CP. Kể từ năm học 2024 - 2025 (từ ngày 01 tháng 9 năm 2024) đối tượng quy định tại khoản 5, khoản 6 Điều 15 Nghị định số 81/2021/NĐ-CP và kể từ năm học 2025 - 2026 (từ ngày 01 tháng 9 năm 2025) đối tượng quy định tại khoản 8, khoản 9 Điều 15 Nghị định số 81/2021/NĐ-CP chỉ phải nộp giấy khai sinh",
+                  "Bản chính": "1",
+                  "Bản sao": "0",
+                  "Tệp đính kèm": "Không có"
+                },
+                {
+                  "Tên giấy tờ": "Bằng tốt nghiệp trung học cơ sở hoặc giấy xác nhận tốt nghiệp tạm thời đối với đối tượng được quy định tại khoản 17 Điều 15 Nghị định số 81/2021/NĐ-CP",
+                  "Bản chính": "1",
+                  "Bản sao": "0",
+                  "Tệp đính kèm": "Không có"
+                },
+                {
+                  "Tên giấy tờ": "Sổ hưởng trợ cấp hàng tháng của cha hoặc mẹ bị tai nạn lao động hoặc mắc bệnh nghề nghiệp do tổ chức bảo hiểm xã hội cấp đối với đối tượng được quy định tại điểm a khoản 2 Điều 16 Nghị định số 81/2021/NĐ-CP",
+                  "Bản chính": "1",
+                  "Bản sao": "0",
+                  "Tệp đính kèm": "Không có"
+                },
+                {
+                  "Tên giấy tờ": "Giấy xác nhận hộ cận nghèo do Ủy ban nhân dân cấp xã cấp cho đối tượng được quy định tại điểm b khoản 2 Điều 16 Nghị định số 81/2021/NĐ-CP.",
+                  "Bản chính": "1",
+                  "Bản sao": "0",
+                  "Tệp đính kèm": "Không có"
+                }
+              ]
+            }
+          ],
+          "result_items": [
+            "Quyết định phê duyệt kèm theo Danh sách học sinh hưởng hỗ trợ theo Nghị định số 81/2021/NĐ-CP (Mã: `000.00.00.H22-KQ000074`)"
+          ]
+        },
+        {
+          "procedure_code": "1.014334",
+          "procedure_title": "Đề nghị hỗ trợ chi phí học tập trong trường trung học phổ thông tư thục, cơ sở giáo dục thường xuyên tư thục, trường trung học phổ thông trong các trường đại học, cao đẳng, viện nghiên cứu",
+          "subdomain_key": "hoc_bong_va_ho_tro",
+          "subdomain_label": "Học bổng và chính sách hỗ trợ",
+          "event_id": 256,
+          "field": "Giáo dục và Đào tạo thuộc hệ thống giáo dục quốc dân",
+          "agency": "Sở Giáo dục và Đào tạo Thành phố Hà Nội; Cơ sở giáo dục",
+          "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bf8-c7e2-7668-a2a3-b7731373da8c",
+          "raw_data_file": "C:\\Users\\ku060\\Downloads\\VAIC source\\data-pipeline\\raw_data\\1_014334\\1_014334_procedure_detail.md",
+          "raw_data_available": true,
+          "operation_group": "ho_tro_chi_phi_hoc_tap",
+          "operation_key": "de_nghi_ho_tro_chi_phi_hoc_tap_trong_truong_trung_hoc_pho_thong_tu_thuc_co_so_giao_duc_thuong_xuyen_tu_thuc_truong_trung_hoc_pho_thong_trong_cac_truong_dai_hoc_cao_dang_vien_nghien_cuu",
+          "overview": "1. a) Trong vòng 45 ngày làm việc kể từ ngày khai giảng năm học, học sinh trung học phổ thông, học viên theo học chương trình giáo dục thường xuyên cấp trung học phổ thông tại cơ sở giáo dục thường xuyên thuộc đối tượng được hỗ trợ chi phí học tập nộp đơn theo mẫu tại Phụ lục II Nghị định số 238/2025/NĐ-CP kèm theo giấy tờ minh chứng đối tượng được hỗ trợ chi phí học tập gửi cơ sở giáo dục. Trường hợp người học nộp hồ sơ sau thời hạn quy định nêu trên thì được xem xét hưởng chính sách kể từ thời điểm nộp hồ sơ cho đơn vị tiếp nhận hồ sơ theo quy định. b) Trong vòng 10 ngày làm việc kể từ khi kết thúc thời hạn nộp hồ sơ đề nghị hỗ trợ chi phí học tập, Hiệu trưởng nhà trường có trách nhiệm lập danh sách người học được hỗ trợ chi phí học tập gửi Sở Giáo dục và Đào tạo theo phân cấp quản lý nhà nước về giáo dục, đào tạo thẩm định, phê duyệt.",
+          "procedure_flow": "1. a) Trong vòng 45 ngày làm việc kể từ ngày khai giảng năm học, học sinh trung học phổ thông, học viên theo học chương trình giáo dục thường xuyên cấp trung học phổ thông tại cơ sở giáo dục thường xuyên thuộc đối tượng được hỗ trợ chi phí học tập nộp đơn theo mẫu tại Phụ lục II Nghị định số 238/2025/NĐ-CP kèm theo giấy tờ minh chứng đối tượng được hỗ trợ chi phí học tập gửi cơ sở giáo dục. Trường hợp người học nộp hồ sơ sau thời hạn quy định nêu trên thì được xem xét hưởng chính sách kể từ thời điểm nộp hồ sơ cho đơn vị tiếp nhận hồ sơ theo quy định. b) Trong vòng 10 ngày làm việc kể từ khi kết thúc thời hạn nộp hồ sơ đề nghị hỗ trợ chi phí học tập, Hiệu trưởng nhà trường có trách nhiệm lập danh sách người học được hỗ trợ chi phí học tập gửi Sở Giáo dục và Đào tạo theo phân cấp quản lý nhà nước về giáo dục, đào tạo thẩm định, phê duyệt.",
+          "requirements": "a) Trẻ em mầm non, học sinh phổ thông, học viên học tại cơ sở giáo dục thường xuyên theo chương trình giáo dục phổ thông thuộc đối tượng được hỗ trợ chi phí học tập theo quy định tại Điều 17 Nghị định số 238/2025/NĐ-CP. b) Không áp dụng chế độ hỗ trợ chi phí học tập đối với trẻ em mầm non, học sinh phổ thông, học viên học tại cơ sở giáo dục thường xuyên theo chương trình giáo dục phổ thông trong thời gian người học bị kỷ luật ngừng học hoặc buộc thôi học, bảo lưu, học lưu ban, học lại, học bổ sung. Trường hợp người học phải dừng học; học lại, bảo lưu, lưu ban (không quá một lần) do ốm đau, tai nạn hoặc dừng học vì lý do bất khả kháng không do kỷ luật hoặc tự thôi học thì thủ trưởng cơ sở giáo dục xem xét cho tiếp tục học tập theo quy định và tiếp tục được hưởng chính sách hỗ trợ quy định tại Nghị định số 238/2025/NĐ-CP theo quy định tại khoản 8 Điều 19 Nghị định số 238/2025/NĐ-CP.",
+          "submission_methods": [
+            "Trực tuyến",
+            "Dịch vụ bưu chính",
+            "Trực tiếp"
+          ],
+          "processing_time_values": [
+            "10 ngày làm việc",
+            "10 ngày làm việc",
+            "10 ngày làm việc"
+          ],
+          "document_groups": [],
+          "result_items": [
+            "Quyết định phê duyệt danh sách được hưởng chế độ hỗ trợ chi phí học tập theo đúng đối tượng quy định (Mã: `KQ.G03.000428`)"
+          ]
+        },
+        {
+          "procedure_code": "1.014335",
+          "procedure_title": "Đề nghị miễn, giảm học phí trong cơ sở giáo dục nghề nghiệp, cơ sở giáo dục đại học tư thục và cơ sở giáo dục nghề nghiệp, cơ sở giáo dục đại học thuộc tổ chức kinh tế, doanh nghiệp nhà nước",
+          "subdomain_key": "hoc_bong_va_ho_tro",
+          "subdomain_label": "Học bổng và chính sách hỗ trợ",
+          "event_id": 256,
+          "field": "Giáo dục và Đào tạo thuộc hệ thống giáo dục quốc dân",
+          "agency": "Cơ sở giáo dục; Ủy ban nhân dân cấp xã",
+          "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bf8-c7e3-746e-8437-305980ee5536",
+          "raw_data_file": "C:\\Users\\ku060\\Downloads\\VAIC source\\data-pipeline\\raw_data\\1_014335\\1_014335_procedure_detail.md",
+          "raw_data_available": true,
+          "operation_group": "mien_giam_hoc_phi",
+          "operation_key": "de_nghi_mien_giam_hoc_phi_trong_co_so_giao_duc_nghe_nghiep_co_so_giao_duc_dai_hoc_tu_thuc_va_co_so_giao_duc_nghe_nghiep_co_so_giao_duc_dai_hoc_thuoc_to_chuc_kinh_te_doanh_nghiep_nha_nuoc",
+          "overview": "1. a) Trong vòng 45 ngày làm việc kể từ ngày nhập học, người học thuộc đối tượng được miễn, giảm học phí nộp Đơn đề nghị chi trả tiền miễn, giảm học phí theo mẫu tại Phụ lục IV Nghị định số 238/2025/NĐ-CP, kèm theo giấy tờ minh chứng đối tượng được miễn, giảm học phí gửi cơ sở giáo dục nghề nghiệp, cơ sở giáo dục đại học. Trường hợp người học nộp hồ sơ sau thời hạn quy định nêu trên thì được xem xét hưởng chính sách kể từ thời điểm nộp hồ sơ cho đơn vị tiếp nhận hồ sơ theo quy định. b) Trong vòng 10 ngày làm việc kể từ khi kết thúc thời hạn nộp hồ sơ đề nghị miễn, giảm học phí, Thủ trưởng cơ sở giáo dục nghề nghiệp, cơ sở giáo dục đại học có trách nhiệm xác nhận hồ sơ miễn, giảm học phí đối với người học theo mẫu tại Phụ lục V Nghị định số 238/2025/NĐ-CP; đồng thời lập danh sách người học được miễn, giảm học phí theo mẫu quy định tại Phụ lục VI Nghị định số 238/2025/NĐ-CP gửi về Ủy ban nhân dân xã, phường, đặc khu trực thuộc cấp tỉnh nơi người học đăng ký thường trú để thực hiện rà soát, thẩm định hồ sơ theo quy định.",
+          "procedure_flow": "1. a) Trong vòng 45 ngày làm việc kể từ ngày nhập học, người học thuộc đối tượng được miễn, giảm học phí nộp Đơn đề nghị chi trả tiền miễn, giảm học phí theo mẫu tại Phụ lục IV Nghị định số 238/2025/NĐ-CP, kèm theo giấy tờ minh chứng đối tượng được miễn, giảm học phí gửi cơ sở giáo dục nghề nghiệp, cơ sở giáo dục đại học. Trường hợp người học nộp hồ sơ sau thời hạn quy định nêu trên thì được xem xét hưởng chính sách kể từ thời điểm nộp hồ sơ cho đơn vị tiếp nhận hồ sơ theo quy định. b) Trong vòng 10 ngày làm việc kể từ khi kết thúc thời hạn nộp hồ sơ đề nghị miễn, giảm học phí, Thủ trưởng cơ sở giáo dục nghề nghiệp, cơ sở giáo dục đại học có trách nhiệm xác nhận hồ sơ miễn, giảm học phí đối với người học theo mẫu tại Phụ lục V Nghị định số 238/2025/NĐ-CP; đồng thời lập danh sách người học được miễn, giảm học phí theo mẫu quy định tại Phụ lục VI Nghị định số 238/2025/NĐ-CP gửi về Ủy ban nhân dân xã, phường, đặc khu trực thuộc cấp tỉnh nơi người học đăng ký thường trú để thực hiện rà soát, thẩm định hồ sơ theo quy định.",
+          "requirements": "a) Học sinh, sinh viên thuộc đối tượng được miễn, giảm học phí theo quy định tại Điều 15; khoản 1, khoản 2 Điều 16 của Nghị định số 238/2025/NĐ-CP. b) Học sinh, sinh viên không thuộc các trường hợp không áp dụng chế độ miễn, giảm học phí theo quy định tại khoản 5, khoản 6, khoản 7, khoản 8 Điều 19 Nghị định số 238/2025/NĐ-CP.",
+          "submission_methods": [
+            "Trực tuyến",
+            "Dịch vụ bưu chính",
+            "Trực tiếp"
+          ],
+          "processing_time_values": [
+            "10 ngày làm việc",
+            "10 ngày làm việc",
+            "10 ngày làm việc"
+          ],
+          "document_groups": [],
+          "result_items": [
+            "Quyết định phê duyệt danh sách được hưởng chế độ miễn, giảm học phí theo đúng đối tượng quy định (Mã: `KQ.G03.000427`)"
+          ]
+        },
+        {
+          "procedure_code": "1.014336",
+          "procedure_title": "Đề nghị hỗ trợ chi phí học tập trong cơ sở giáo dục mầm non công lập, cơ sở giáo dục phổ thông công lập, cơ sở giáo dục công lập thực hiện chương trình giáo dục phổ thông",
+          "subdomain_key": "hoc_bong_va_ho_tro",
+          "subdomain_label": "Học bổng và chính sách hỗ trợ",
+          "event_id": 256,
+          "field": "Giáo dục và Đào tạo thuộc hệ thống giáo dục quốc dân",
+          "agency": "Cơ sở giáo dục",
+          "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bf8-c7e3-744b-8bd9-0747eeabb2db",
+          "raw_data_file": "C:\\Users\\ku060\\Downloads\\VAIC source\\data-pipeline\\raw_data\\1_014336\\1_014336_procedure_detail.md",
+          "raw_data_available": true,
+          "operation_group": "ho_tro_chi_phi_hoc_tap",
+          "operation_key": "de_nghi_ho_tro_chi_phi_hoc_tap_trong_co_so_giao_duc_mam_non_cong_lap_co_so_giao_duc_pho_thong_cong_lap_co_so_giao_duc_cong_lap_thuc_hien_chuong_trinh_giao_duc_pho_thong",
+          "overview": "1. a) Trong vòng 45 ngày làm việc kể từ ngày khai giảng năm học, cha mẹ (hoặc người giám hộ) trẻ em mầm non, học sinh phổ thông, học viên theo học chương trình giáo dục phổ thông tại cơ sở giáo dục thường xuyên thuộc đối tượng được hỗ trợ chi phí học tập nộp đơn theo mẫu tại Phụ lục II Nghị định số 238/2025/NĐ-CP kèm theo giấy tờ minh chứng đối tượng được hỗ trợ chi phí học tập gửi cơ sở giáo dục. Trường hợp người học nộp hồ sơ sau thời hạn quy định nêu trên thì được xem xét hưởng chính sách kể từ thời điểm nộp hồ sơ cho đơn vị tiếp nhận hồ sơ theo quy định. b) Trong vòng 10 ngày làm việc kể từ khi kết thúc thời hạn nộp hồ sơ đề nghị hỗ trợ chi phí học tập, Hiệu trưởng nhà trường có trách nhiệm thẩm định hồ sơ và phê duyệt danh sách người học được hỗ trợ chi phí học tập.",
+          "procedure_flow": "1. a) Trong vòng 45 ngày làm việc kể từ ngày khai giảng năm học, cha mẹ (hoặc người giám hộ) trẻ em mầm non, học sinh phổ thông, học viên theo học chương trình giáo dục phổ thông tại cơ sở giáo dục thường xuyên thuộc đối tượng được hỗ trợ chi phí học tập nộp đơn theo mẫu tại Phụ lục II Nghị định số 238/2025/NĐ-CP kèm theo giấy tờ minh chứng đối tượng được hỗ trợ chi phí học tập gửi cơ sở giáo dục. Trường hợp người học nộp hồ sơ sau thời hạn quy định nêu trên thì được xem xét hưởng chính sách kể từ thời điểm nộp hồ sơ cho đơn vị tiếp nhận hồ sơ theo quy định. b) Trong vòng 10 ngày làm việc kể từ khi kết thúc thời hạn nộp hồ sơ đề nghị hỗ trợ chi phí học tập, Hiệu trưởng nhà trường có trách nhiệm thẩm định hồ sơ và phê duyệt danh sách người học được hỗ trợ chi phí học tập.",
+          "requirements": "a) Trẻ em mầm non, học sinh phổ thông, học viên học tại cơ sở giáo dục thường xuyên theo chương trình giáo dục phổ thông thuộc đối tượng được hỗ trợ chi phí học tập theo quy định tại Điều 17 Nghị định số 238/2025/NĐ-CP. b) Không áp dụng chế độ hỗ trợ chi phí học tập đối với trẻ em mầm non, học sinh phổ thông, học viên học tại cơ sở giáo dục thường xuyên theo chương trình giáo dục phổ thông trong thời gian người học bị kỷ luật ngừng học hoặc buộc thôi học, bảo lưu, học lưu ban, học lại, học bổ sung. Trường hợp người học phải dừng học; học lại, bảo lưu, lưu ban (không quá một lần) do ốm đau, tai nạn hoặc dừng học vì lý do bất khả kháng không do kỷ luật hoặc tự thôi học thì thủ trưởng cơ sở giáo dục xem xét cho tiếp tục học tập theo quy định và tiếp tục được hưởng chính sách hỗ trợ quy định tại Nghị định số 238/2025/NĐ-CP theo quy định tại khoản 8 Điều 19 Nghị định số 238/2025/NĐ-CP.",
+          "submission_methods": [
+            "Trực tuyến",
+            "Dịch vụ bưu chính",
+            "Trực tiếp"
+          ],
+          "processing_time_values": [
+            "10 ngày làm việc",
+            "10 ngày làm việc",
+            "10 ngày làm việc"
+          ],
+          "document_groups": [],
+          "result_items": [
+            "Quyết định phê duyệt danh sách được hưởng chế độ hỗ trợ chi phí học tập theo đúng đối tượng quy định (Mã: `KQ.G03.000428`)"
+          ]
+        },
+        {
+          "procedure_code": "1.014337",
+          "procedure_title": "Đề nghị hỗ trợ chi phí học tập trong cơ sở giáo dục mầm non dân lập, tư thục; trường tiểu học tư thục, trường trung học cơ sở tư thục, cơ sở giáo dục thường xuyên tư thục; cơ sở giáo dục mầm non, trường tiểu học, trung học cơ sở trong các trường đại học, cao đẳng, viện nghiên cứu",
+          "subdomain_key": "hoc_bong_va_ho_tro",
+          "subdomain_label": "Học bổng và chính sách hỗ trợ",
+          "event_id": 256,
+          "field": "Giáo dục và Đào tạo thuộc hệ thống giáo dục quốc dân",
+          "agency": "Cơ sở giáo dục; Ủy ban nhân dân cấp xã",
+          "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bf8-c7e7-71f7-81cf-28778a076923",
+          "raw_data_file": "C:\\Users\\ku060\\Downloads\\VAIC source\\data-pipeline\\raw_data\\1_014337\\1_014337_procedure_detail.md",
+          "raw_data_available": true,
+          "operation_group": "ho_tro_chi_phi_hoc_tap",
+          "operation_key": "de_nghi_ho_tro_chi_phi_hoc_tap_trong_co_so_giao_duc_mam_non_dan_lap_tu_thuc_truong_tieu_hoc_tu_thuc_truong_trung_hoc_co_so_tu_thuc_co_so_giao_duc_thuong_xuyen_tu_thuc_co_so_giao_duc_mam_non_truong_tieu_hoc_trung_hoc_co_so_trong_cac_truong_dai_hoc_cao_dang_vien_nghien_cuu",
+          "overview": "1. a) Trong vòng 45 ngày làm việc kể từ ngày khai giảng năm học, cha mẹ (hoặc người giám hộ) trẻ em mầm non, học sinh tiểu học, học sinh trung học cơ sở, học viên theo học chương trình giáo dục phổ thông cấp trung học cơ sở tại cơ sở giáo dục thường xuyên tư thục thuộc đối tượng được hỗ trợ chi phí học tập nộp đơn theo mẫu tại Phụ lục II Nghị định số 238/2025/NĐ-CP kèm theo giấy tờ minh chứng đối tượng được hỗ trợ chi phí học tập gửi cơ sở giáo dục. Trường hợp người học nộp hồ sơ sau thời hạn quy định nêu trên thì được xem xét hưởng chính sách kể từ thời điểm nộp hồ sơ cho đơn vị tiếp nhận hồ sơ theo quy định. b) Trách nhiệm xét duyệt và thẩm định hồ sơ: Trong vòng 10 ngày làm việc kể từ khi kết thúc thời hạn nộp hồ sơ đề nghị hỗ trợ chi phí học tập, Hiệu trưởng nhà trường có trách nhiệm lập danh sách người học được hỗ trợ chi phí học tập gửi Ủy ban nhân dân xã, phường, đặc khu trực thuộc tỉnh thẩm định, phê duyệt.",
+          "procedure_flow": "1. a) Trong vòng 45 ngày làm việc kể từ ngày khai giảng năm học, cha mẹ (hoặc người giám hộ) trẻ em mầm non, học sinh tiểu học, học sinh trung học cơ sở, học viên theo học chương trình giáo dục phổ thông cấp trung học cơ sở tại cơ sở giáo dục thường xuyên tư thục thuộc đối tượng được hỗ trợ chi phí học tập nộp đơn theo mẫu tại Phụ lục II Nghị định số 238/2025/NĐ-CP kèm theo giấy tờ minh chứng đối tượng được hỗ trợ chi phí học tập gửi cơ sở giáo dục. Trường hợp người học nộp hồ sơ sau thời hạn quy định nêu trên thì được xem xét hưởng chính sách kể từ thời điểm nộp hồ sơ cho đơn vị tiếp nhận hồ sơ theo quy định. b) Trách nhiệm xét duyệt và thẩm định hồ sơ: Trong vòng 10 ngày làm việc kể từ khi kết thúc thời hạn nộp hồ sơ đề nghị hỗ trợ chi phí học tập, Hiệu trưởng nhà trường có trách nhiệm lập danh sách người học được hỗ trợ chi phí học tập gửi Ủy ban nhân dân xã, phường, đặc khu trực thuộc tỉnh thẩm định, phê duyệt.",
+          "requirements": "a) Trẻ em mầm non, học sinh phổ thông, học viên học tại cơ sở giáo dục thường xuyên theo chương trình giáo dục phổ thông thuộc đối tượng được hỗ trợ chi phí học tập theo quy định tại Điều 17 Nghị định số 238/2025/NĐ-CP. b) Người học không thuộc trường hợp không áp dụng chế độ hỗ trợ chi phí học tập theo quy định tại khoản 8 Điều 19 Nghị định số 238/2025/NĐ-CP.",
+          "submission_methods": [
+            "Trực tuyến",
+            "Dịch vụ bưu chính",
+            "Trực tiếp"
+          ],
+          "processing_time_values": [
+            "10 ngày làm việc",
+            "10 ngày làm việc",
+            "10 ngày làm việc"
+          ],
+          "document_groups": [],
+          "result_items": [
+            "Quyết định phê duyệt danh sách được hưởng chế độ hỗ trợ chi phí học tập theo đúng đối tượng quy định (Mã: `KQ.G03.000428`)"
+          ]
+        },
+        {
+          "procedure_code": "1.014997",
+          "procedure_title": "Xét, cấp học bổng chính sách đối với học viên cơ sở giáo dục nghề nghiệp tư thục dành cho thương binh, người khuyết tật",
+          "subdomain_key": "hoc_bong_va_ho_tro",
+          "subdomain_label": "Học bổng và chính sách hỗ trợ",
+          "event_id": 256,
+          "field": "Giáo dục và Đào tạo thuộc hệ thống giáo dục quốc dân",
+          "agency": "Ủy ban nhân dân cấp xã",
+          "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019daf3d-8e57-720a-9328-1331718deef8",
+          "raw_data_file": "C:\\Users\\ku060\\Downloads\\VAIC source\\data-pipeline\\raw_data\\1_014997\\1_014997_procedure_detail.md",
+          "raw_data_available": true,
+          "operation_group": "hoc_bong",
+          "operation_key": "xet_cap_hoc_bong_chinh_sach_doi_voi_hoc_vien_co_so_giao_duc_nghe_nghiep_tu_thuc_danh_cho_thuong_binh_nguoi_khuyet_tat",
+          "overview": "1. a) Trong thời hạn 10 ngày làm việc kể từ ngày nhập học, cơ sở giáo dục nghề nghiệp thông báo cho học viên về chế độ học bổng chính sách, thời gian nộp hồ sơ và hướng dẫn học viên nộp 01 bộ hồ sơ theo quy định. Mỗi học viên chỉ phải nộp một bộ hồ sơ một lần để đề nghị cấp học bổng trong cả thời gian học tại cơ sở giáo dục nghề nghiệp. b) Học viên cơ sở giáo dục nghề nghiệp tư thục chuẩn bị hồ sơ theo quy định gửi cơ sở giáo dục nghề nghiệp nơi theo học để xác nhận vào đơn trong thời hạn 03 ngày làm việc kể từ ngày nhận được đơn và hướng dẫn học viên gửi hồ sơ về Ủy ban nhân dân cấp xã nơi học viên thường trú theo một trong các hình thức: trực tuyến trên Cổng Dịch vụ công quốc gia hoặc qua dịch vụ bưu chính hoặc nộp trực tiếp tại Trung tâm Phục vụ hành chính công cấp xã. c) Trong thời hạn 10 ngày làm việc kể từ ngày nhận đủ hồ sơ hợp lệ, Ủy ban nhân dân cấp xã tổ chức thẩm định, phê duyệt danh sách đối tượng được hưởng chính sách và xây dựng dự toán kinh phí thực hiện (Mẫu số 05 tại Phụ lục kèm theo Nghị định số 66/2026/NĐ-CP) gửi cơ quan tài chính có thẩm quyền, trình cấp có thẩm quyền phê duyệt (Mẫu số 06 tại Phụ lục kèm theo Nghị định số 66/2026/NĐ-CP). Trường hợp hồ sơ không bảo đảm đúng quy định, Ủy ban nhân dân cấp xã có trách nhiệm thông báo cho người học trong thời hạn 03 ngày làm việc kể từ ngày nhận được hồ sơ. Học viên nộp đủ hồ sơ theo quy định thì được chi trả học bổng chính sách tính từ ngày Ủy ban nhân dân cấp xã nhận đủ hồ sơ theo quy định.",
+          "procedure_flow": "1. a) Trong thời hạn 10 ngày làm việc kể từ ngày nhập học, cơ sở giáo dục nghề nghiệp thông báo cho học viên về chế độ học bổng chính sách, thời gian nộp hồ sơ và hướng dẫn học viên nộp 01 bộ hồ sơ theo quy định. Mỗi học viên chỉ phải nộp một bộ hồ sơ một lần để đề nghị cấp học bổng trong cả thời gian học tại cơ sở giáo dục nghề nghiệp. b) Học viên cơ sở giáo dục nghề nghiệp tư thục chuẩn bị hồ sơ theo quy định gửi cơ sở giáo dục nghề nghiệp nơi theo học để xác nhận vào đơn trong thời hạn 03 ngày làm việc kể từ ngày nhận được đơn và hướng dẫn học viên gửi hồ sơ về Ủy ban nhân dân cấp xã nơi học viên thường trú theo một trong các hình thức: trực tuyến trên Cổng Dịch vụ công quốc gia hoặc qua dịch vụ bưu chính hoặc nộp trực tiếp tại Trung tâm Phục vụ hành chính công cấp xã. c) Trong thời hạn 10 ngày làm việc kể từ ngày nhận đủ hồ sơ hợp lệ, Ủy ban nhân dân cấp xã tổ chức thẩm định, phê duyệt danh sách đối tượng được hưởng chính sách và xây dựng dự toán kinh phí thực hiện (Mẫu số 05 tại Phụ lục kèm theo Nghị định số 66/2026/NĐ-CP) gửi cơ quan tài chính có thẩm quyền, trình cấp có thẩm quyền phê duyệt (Mẫu số 06 tại Phụ lục kèm theo Nghị định số 66/2026/NĐ-CP). Trường hợp hồ sơ không bảo đảm đúng quy định, Ủy ban nhân dân cấp xã có trách nhiệm thông báo cho người học trong thời hạn 03 ngày làm việc kể từ ngày nhận được hồ sơ. Học viên nộp đủ hồ sơ theo quy định thì được chi trả học bổng chính sách tính từ ngày Ủy ban nhân dân cấp xã nhận đủ hồ sơ theo quy định.",
+          "requirements": "Không quy định.",
+          "submission_methods": [
+            "Trực tiếp",
+            "Trực tuyến",
+            "Dịch vụ bưu chính"
+          ],
+          "processing_time_values": [
+            "10 ngày làm việc",
+            "10 ngày làm việc",
+            "10 ngày làm việc"
+          ],
+          "document_groups": [],
+          "result_items": [
+            "Quyết định cấp học bổng chính sách (cấp xã) (Mã: `KQ.G03.000501`)"
+          ]
+        },
+        {
+          "procedure_code": "2.001959",
+          "procedure_title": "Cấp chính sách nội trú cho học sinh, sinh viên tham gia chương trình đào tạo trình độ cao đẳng, trung cấp tại các cơ sở giáo dục nghề nghiệp công lập trực thuộc tỉnh, thành phố trực thuộc Trung ương",
+          "subdomain_key": "hoc_bong_va_ho_tro",
+          "subdomain_label": "Học bổng và chính sách hỗ trợ",
+          "event_id": 256,
+          "field": "Giáo dục nghề nghiệp (G07-LĐ06)",
+          "agency": "Cơ sở giáo dục nghề nghiệp",
+          "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bf8-cfb7-767a-ba70-8c9527fccf46",
+          "raw_data_file": "C:\\Users\\ku060\\Downloads\\VAIC source\\data-pipeline\\raw_data\\2_001959\\2_001959_procedure_detail.md",
+          "raw_data_available": true,
+          "operation_group": "chinh_sach_ho_tro_khac",
+          "operation_key": "cap_chinh_sach_noi_tru_cho_hoc_sinh_sinh_vien_tham_gia_chuong_trinh_dao_tao_trinh_do_cao_dang_trung_cap_tai_cac_co_so_giao_duc_nghe_nghiep_cong_lap_truc_thuoc_tinh_thanh_pho_truc_thuoc_trung_uong",
+          "overview": "- Bước 1: Trong thời hạn 20 ngày làm việc kể từ ngày khai giảng, cơ sở giáo dục nghề nghiệp thông báo cho học sinh, sinh viên tham gia chương trình đào tạo trình độ trung cấp, cao đẳng tại cơ sở giáo dục nghề nghiệp về chính sách nội trú. - Bước 2: Học sinh, sinh viên thuộc đối tượng quy định tại Quyết định số 53/2015/QĐ-TTg nộp hồ sơ tới cơ sở giáo dục nghề nghiệp nơi học sinh, sinh viên đang theo học. - Bước 3: Thẩm định hồ sơ cấp chính sách nội trú Thủ trưởng cơ sở giáo dục nghề nghiệp tổ chức đối chiếu, thẩm định và chịu trách nhiệm về tính chính xác của hồ sơ; tổng hợp, lập danh sách đối tượng được hưởng chính sách. Trường hợp hồ sơ không hợp lệ, cơ sở giáo dục nghề nghiệp có trách nhiệm thông báo cho người học được biết trong thời hạn 03 ngày làm việc kể từ ngày nhận được hồ sơ. - Bước 4: Chi trả học bổng chính sách và các khoản hỗ trợ Cơ sở giáo dục nghề nghiệp nơi học sinh, sinh viên đang theo học chịu trách nhiệm quản lý, tổ chức thực hiện chi trả học bổng chính sách và các khoản hỗ trợ khác trực tiếp bằng tiền mặt cho học sinh, sinh viên đang học tại cơ sở giáo dục nghề nghiệp đó.",
+          "procedure_flow": "- Bước 1: Trong thời hạn 20 ngày làm việc kể từ ngày khai giảng, cơ sở giáo dục nghề nghiệp thông báo cho học sinh, sinh viên tham gia chương trình đào tạo trình độ trung cấp, cao đẳng tại cơ sở giáo dục nghề nghiệp về chính sách nội trú. - Bước 2: Học sinh, sinh viên thuộc đối tượng quy định tại Quyết định số 53/2015/QĐ-TTg nộp hồ sơ tới cơ sở giáo dục nghề nghiệp nơi học sinh, sinh viên đang theo học. - Bước 3: Thẩm định hồ sơ cấp chính sách nội trú Thủ trưởng cơ sở giáo dục nghề nghiệp tổ chức đối chiếu, thẩm định và chịu trách nhiệm về tính chính xác của hồ sơ; tổng hợp, lập danh sách đối tượng được hưởng chính sách. Trường hợp hồ sơ không hợp lệ, cơ sở giáo dục nghề nghiệp có trách nhiệm thông báo cho người học được biết trong thời hạn 03 ngày làm việc kể từ ngày nhận được hồ sơ. - Bước 4: Chi trả học bổng chính sách và các khoản hỗ trợ Cơ sở giáo dục nghề nghiệp nơi học sinh, sinh viên đang theo học chịu trách nhiệm quản lý, tổ chức thực hiện chi trả học bổng chính sách và các khoản hỗ trợ khác trực tiếp bằng tiền mặt cho học sinh, sinh viên đang học tại cơ sở giáo dục nghề nghiệp đó.",
+          "requirements": "Học sinh, sinh viên tham gia chương trình đào tạo trình độ cao đẳng, trình độ trung cấp hệ chính quy tại các cơ sở giáo dục nghề nghiệp công lập thuộc một trong những đối tượng sau: - Học sinh, sinh viên người dân tộc thiểu số thuộc hộ nghèo, hộ cận nghèo, người khuyết tật. - Học sinh, sinh viên tốt nghiệp trường phổ thông dân tộc nội trú. - Học sinh, sinh viên người dân tộc Kinh thuộc hộ nghèo, thuộc hộ cận nghèo hoặc là người khuyết tật có hộ khẩu thường trú tại vùng có điều kiện kinh tế - xã hội đặc biệt khó khăn, vùng dân tộc thiểu số, biên giới, hải đảo.",
+          "submission_methods": [],
+          "processing_time_values": [],
+          "document_groups": [],
+          "result_items": []
+        },
+        {
+          "procedure_code": "2.001960",
+          "procedure_title": "Cấp chính sách nội trú cho học sinh, sinh viên tham gia chương trình đào tạo trình độ cao đẳng, trung cấp tại các cơ sở giáo dục nghề nghiệp tư thục hoặc cơ sở giáo dục có vốn đầu tư nước ngoài",
+          "subdomain_key": "hoc_bong_va_ho_tro",
+          "subdomain_label": "Học bổng và chính sách hỗ trợ",
+          "event_id": 256,
+          "field": "Giáo dục nghề nghiệp (G07-LĐ06)",
+          "agency": "Ủy ban nhân dân cấp xã",
+          "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bf8-cfd2-77d8-a90b-01265fddb221",
+          "raw_data_file": "C:\\Users\\ku060\\Downloads\\VAIC source\\data-pipeline\\raw_data\\2_001960\\2_001960_procedure_detail.md",
+          "raw_data_available": true,
+          "operation_group": "chinh_sach_ho_tro_khac",
+          "operation_key": "cap_chinh_sach_noi_tru_cho_hoc_sinh_sinh_vien_tham_gia_chuong_trinh_dao_tao_trinh_do_cao_dang_trung_cap_tai_cac_co_so_giao_duc_nghe_nghiep_tu_thuc_hoac_co_so_giao_duc_co_von_dau_tu_nuoc_ngoai",
+          "overview": "- Bước 1: Trong thời hạn 20 ngày làm việc kể từ ngày khai giảng, cơ sở giáo dục nghề nghiệp thông báo cho học sinh, sinh viên tham gia chương trình đào tạo trình độ trung cấp, cao đẳng tại cơ sở giáo dục nghề nghiệp về chính sách nội trú. - Bước 2: Xác nhận đơn đề nghị cấp chính sách nội trú cho học sinh, sinh viên Trong thời hạn 10 ngày làm việc kể từ ngày nhận được đơn đề nghị, thủ trưởng cơ sở giáo dục nghề nghiệp có trách nhiệm xác nhận vào đơn đề nghị cấp chính sách nội trú cho học sinh, sinh viên. - Bước 3: Nộp hồ sơ Học sinh, sinh viên thuộc đối tượng quy định tại Quyết định số 53/2015/QĐ-TTg nộp hồ sơ tới Ủy ban nhân dân cấp xã nơi học sinh, sinh viên đó có hộ khẩu thường trú. - Bước 4: Thẩm định hồ sơ cấp chính sách nội trú Ủy ban nhân dân cấp xã tổ chức đối chiếu, thẩm định, phê duyệt danh sách đối tượng được hưởng chính sách. Trường hợp hồ sơ không hợp lệ, Ủy ban nhân dân cấp xã có trách nhiệm thông báo cho người học được biết trong thời hạn 03 ngày làm việc kể từ ngày nhận được hồ sơ. - Bước 5: Chi trả học bổng chính sách và các khoản hỗ trợ Ủy ban nhân dân cấp xã nơi học sinh, sinh viên có hộ khẩu thường trú chịu trách nhiệm quản lý, tổ chức thực hiện chi trả học bổng chính sách và các khoản hỗ trợ khác trực tiếp bằng tiền mặt cho học sinh, sinh viên đang học tại cơ sở giáo dục nghề nghiệp tư thục hoặc cơ sở giáo dục nghề nghiệp có vốn đầu tư nước ngoài.",
+          "procedure_flow": "- Bước 1: Trong thời hạn 20 ngày làm việc kể từ ngày khai giảng, cơ sở giáo dục nghề nghiệp thông báo cho học sinh, sinh viên tham gia chương trình đào tạo trình độ trung cấp, cao đẳng tại cơ sở giáo dục nghề nghiệp về chính sách nội trú. - Bước 2: Xác nhận đơn đề nghị cấp chính sách nội trú cho học sinh, sinh viên Trong thời hạn 10 ngày làm việc kể từ ngày nhận được đơn đề nghị, thủ trưởng cơ sở giáo dục nghề nghiệp có trách nhiệm xác nhận vào đơn đề nghị cấp chính sách nội trú cho học sinh, sinh viên. - Bước 3: Nộp hồ sơ Học sinh, sinh viên thuộc đối tượng quy định tại Quyết định số 53/2015/QĐ-TTg nộp hồ sơ tới Ủy ban nhân dân cấp xã nơi học sinh, sinh viên đó có hộ khẩu thường trú. - Bước 4: Thẩm định hồ sơ cấp chính sách nội trú Ủy ban nhân dân cấp xã tổ chức đối chiếu, thẩm định, phê duyệt danh sách đối tượng được hưởng chính sách. Trường hợp hồ sơ không hợp lệ, Ủy ban nhân dân cấp xã có trách nhiệm thông báo cho người học được biết trong thời hạn 03 ngày làm việc kể từ ngày nhận được hồ sơ. - Bước 5: Chi trả học bổng chính sách và các khoản hỗ trợ Ủy ban nhân dân cấp xã nơi học sinh, sinh viên có hộ khẩu thường trú chịu trách nhiệm quản lý, tổ chức thực hiện chi trả học bổng chính sách và các khoản hỗ trợ khác trực tiếp bằng tiền mặt cho học sinh, sinh viên đang học tại cơ sở giáo dục nghề nghiệp tư thục hoặc cơ sở giáo dục nghề nghiệp có vốn đầu tư nước ngoài.",
+          "requirements": "Học sinh, sinh viên tham gia chương trình đào tạo trình độ cao đẳng, trình độ trung cấp hệ chính quy tại cơ sở giáo dục nghề nghiệp tư thục và cơ sở giáo dục nghề nghiệp có vốn đầu tư nước ngoài thuộc một trong những đối tượng sau: - Học sinh, sinh viên người dân tộc thiểu số thuộc hộ nghèo, hộ cận nghèo, người khuyết tật. - Học sinh, sinh viên tốt nghiệp trường phổ thông dân tộc nội trú. - Học sinh, sinh viên người dân tộc Kinh thuộc hộ nghèo, thuộc hộ cận nghèo hoặc là người khuyết tật có hộ khẩu thường trú tại vùng có điều kiện kinh tế - xã hội đặc biệt khó khăn, vùng dân tộc thiểu số, biên giới, hải đảo.",
+          "submission_methods": [],
+          "processing_time_values": [],
+          "document_groups": [],
+          "result_items": []
+        },
+        {
+          "procedure_code": "2.002770",
+          "procedure_title": "Xét duyệt học sinh bán trú, học viên bán trú hỗ trợ kinh phí, hỗ trợ gạo",
+          "subdomain_key": "hoc_bong_va_ho_tro",
+          "subdomain_label": "Học bổng và chính sách hỗ trợ",
+          "event_id": 256,
+          "field": "Giáo dục và Đào tạo thuộc hệ thống giáo dục quốc dân",
+          "agency": "Cơ sở giáo dục",
+          "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bf8-d791-76cd-bc4a-853197f14424",
+          "raw_data_file": "C:\\Users\\ku060\\Downloads\\VAIC source\\data-pipeline\\raw_data\\2_002770\\2_002770_procedure_detail.md",
+          "raw_data_available": true,
+          "operation_group": "ho_tro_ban_tru",
+          "operation_key": "xet_duyet_hoc_sinh_ban_tru_hoc_vien_ban_tru_ho_tro_kinh_phi_ho_tro_gao",
+          "overview": "1. - Vào đầu năm học, các trường phổ thông dân tộc bán trú, trường phổ thông có học sinh bán trú và cơ sở giáo dục thường xuyên có học viên bán trú tổ chức phổ biến, thông báo rộng rãi, hướng dẫn cho bố, mẹ (hoặc người giám hộ) và học sinh, học viên thuộc đối tượng được hưởng chính sách chuẩn bị hồ sơ theo quy định tại khoản 1 Điều này; - Trong thời hạn 15 ngày kể từ ngày trường phổ thông dân tộc bán trú, trường phổ thông có học sinh bán trú và cơ sở giáo dục thường xuyên thông báo, mỗi đối tượng đề nghị được hưởng chính sách nộp 01 bộ hồ sơ theo quy định tại khoản 1 Điều này qua cổng dịch vụ công trực tuyến hoặc bưu chính hoặc trực tiếp cho cơ sở giáo dục (nộp 01 bộ hồ sơ cho 01 lần đầu đề nghị xét hưởng chính sách cho cả cấp học). Trường hợp thuộc hộ nghèo phải nộp bổ sung giấy tờ chứng minh hộ nghèo theo từng năm trong trường hợp cơ quan, tổ chức không thể khai thác được thông tin cư trú của công dân trong Cơ sở dữ liệu quốc gia về dân cư. - Cơ sở giáo dục tiếp nhận, kiểm tra thành phần hồ sơ, nếu thành phần hồ sơ nộp là bản chụp chưa có chứng thực của cấp có thẩm quyền, người nhận hồ sơ có trách nhiệm đối chiếu với bản chính, ký xác nhận vào bản chụp để đưa vào hồ sơ. Nếu hồ sơ chưa đầy đủ hoặc chưa đúng quy định thì yêu cầu bổ sung. Trường hợp hồ sơ không bảo đảm yêu cầu, trong thời hạn 05 ngày làm việc kể từ ngày nhận hồ sơ, cơ sở giáo dục gửi thông báo không tiếp nhận hồ sơ và nêu rõ lý do. - Sau ngày hết hạn nhận hồ sơ, trong thời hạn 07 ngày làm việc cơ sở giáo dục tổ chức xét duyệt các hồ sơ đủ điều kiện được hưởng chính sách học sinh bán trú, học viên bán trú theo quy định tại khoản 2, khoản 3 Điều 4 Nghị định này. Ngay sau khi có kết quả xét duyệt, cơ sở giáo dục lập và thông báo công khai danh sách học sinh bán trú, học viên bán trú theo Mẫu số 06 quy định tại Phụ lục kèm theo Nghị định này tại trụ sở làm việc trong thời hạn 03 ngày làm việc.",
+          "procedure_flow": "1. - Vào đầu năm học, các trường phổ thông dân tộc bán trú, trường phổ thông có học sinh bán trú và cơ sở giáo dục thường xuyên có học viên bán trú tổ chức phổ biến, thông báo rộng rãi, hướng dẫn cho bố, mẹ (hoặc người giám hộ) và học sinh, học viên thuộc đối tượng được hưởng chính sách chuẩn bị hồ sơ theo quy định tại khoản 1 Điều này; - Trong thời hạn 15 ngày kể từ ngày trường phổ thông dân tộc bán trú, trường phổ thông có học sinh bán trú và cơ sở giáo dục thường xuyên thông báo, mỗi đối tượng đề nghị được hưởng chính sách nộp 01 bộ hồ sơ theo quy định tại khoản 1 Điều này qua cổng dịch vụ công trực tuyến hoặc bưu chính hoặc trực tiếp cho cơ sở giáo dục (nộp 01 bộ hồ sơ cho 01 lần đầu đề nghị xét hưởng chính sách cho cả cấp học). Trường hợp thuộc hộ nghèo phải nộp bổ sung giấy tờ chứng minh hộ nghèo theo từng năm trong trường hợp cơ quan, tổ chức không thể khai thác được thông tin cư trú của công dân trong Cơ sở dữ liệu quốc gia về dân cư. - Cơ sở giáo dục tiếp nhận, kiểm tra thành phần hồ sơ, nếu thành phần hồ sơ nộp là bản chụp chưa có chứng thực của cấp có thẩm quyền, người nhận hồ sơ có trách nhiệm đối chiếu với bản chính, ký xác nhận vào bản chụp để đưa vào hồ sơ. Nếu hồ sơ chưa đầy đủ hoặc chưa đúng quy định thì yêu cầu bổ sung. Trường hợp hồ sơ không bảo đảm yêu cầu, trong thời hạn 05 ngày làm việc kể từ ngày nhận hồ sơ, cơ sở giáo dục gửi thông báo không tiếp nhận hồ sơ và nêu rõ lý do. - Sau ngày hết hạn nhận hồ sơ, trong thời hạn 07 ngày làm việc cơ sở giáo dục tổ chức xét duyệt các hồ sơ đủ điều kiện được hưởng chính sách học sinh bán trú, học viên bán trú theo quy định tại khoản 2, khoản 3 Điều 4 Nghị định này. Ngay sau khi có kết quả xét duyệt, cơ sở giáo dục lập và thông báo công khai danh sách học sinh bán trú, học viên bán trú theo Mẫu số 06 quy định tại Phụ lục kèm theo Nghị định này tại trụ sở làm việc trong thời hạn 03 ngày làm việc.",
+          "requirements": "1. Học sinh bán trú phải đảm bảo một trong các điều kiện sau: a) Học sinh tiểu học và học sinh trung học cơ sở đang học tại cơ sở giáo dục phổ thông (hoặc điểm trường) thuộc xã khu vực III, khu vực II, khu vực I, xã có thôn đặc biệt khó khăn vùng đồng bào dân tộc thiểu số và miền núi, các xã đặc biệt khó khăn vùng bãi ngang, ven biển và hải đảo, nhà ở xa trường từ 4 km trở lên đối với học sinh tiểu học và từ 7 km trở lên đối với học sinh trung học cơ sở, hoặc địa hình cách trở, giao thông đi lại khó khăn phải qua biển, hồ, sông, suối, qua đèo, núi cao, qua vùng sạt lở đất, đá, thuộc một trong các trường hợp sau: Bản thân và bố hoặc mẹ hoặc người giám hộ thường trú tại xã, thôn đặc biệt khó khăn; Người dân tộc thiểu số thuộc hộ nghèo theo chuẩn nghèo đa chiều theo quy định của Chính phủ mà bản thân và bố hoặc mẹ hoặc người giám hộ thường trú tại xã khu vực II, khu vực I vùng đồng bào dân tộc thiểu số và miền núi. b) Học sinh trung học phổ thông đang học tại cơ sở giáo dục phổ thông, nhà ở xa trường từ 10 km trở lên hoặc địa hình cách trở, giao thông đi lại khó khăn phải qua biển, hồ, sông, suối, qua đèo, núi cao, qua vùng sạt lở đất, đá, thuộc một trong các trường hợp sau: Người dân tộc thiểu số mà bản thân và bố hoặc mẹ hoặc người giám hộ thường trú tại xã, thôn đặc biệt khó khăn; Người dân tộc Kinh thuộc hộ nghèo theo chuẩn nghèo đa chiều theo quy định của Chính phủ mà bản thân và bố hoặc mẹ hoặc người giám hộ thường trú tại xã, thôn đặc biệt khó khăn; Người dân tộc thiểu số thuộc hộ nghèo theo chuẩn nghèo đa chiều theo quy định của Chính phủ mà bản thân và bố hoặc mẹ hoặc người giám hộ thường trú tại xã khu vực II, khu vực I vùng đồng bào dân tộc thiểu số và miền núi. 2. Học viên bán trú đang học tại cơ sở giáo dục thường xuyên mà bản thân và bố hoặc mẹ hoặc người giám hộ thường trú tại xã, thôn đặc biệt khó khăn, nhà ở xa nơi học tập từ 7 km trở lên đối với học viên học chương trình giáo dục thường xuyên cấp trung học cơ sở, 10 km trở lên đối với học viên học chương trình giáo dục thường xuyên cấp trung học phổ thông; hoặc địa hình cách trở, giao thông đi lại khó khăn phải qua biển, hồ, sông, suối, qua đèo, núi cao, qua vùng sạt lở đất, đá thuộc một trong các trường hợp sau: Là người dân tộc thiểu số; Là người dân tộc Kinh thuộc hộ nghèo theo chuẩn nghèo đa chiều theo quy định của Chính phủ.",
+          "submission_methods": [
+            "Trực tuyến",
+            "Dịch vụ bưu chính",
+            "Trực tiếp"
+          ],
+          "processing_time_values": [
+            "7 ngày làm việc",
+            "7 ngày làm việc",
+            "7 ngày làm việc"
+          ],
+          "document_groups": [],
+          "result_items": [
+            "Thông báo công khai danh sách học sinh bán trú, học viên bán trú (Mã: `KQ.G03.000349`)"
+          ]
+        },
+        {
+          "procedure_code": "2.002771",
+          "procedure_title": "Xét duyệt trẻ em nhà trẻ bán trú hỗ trợ kinh phí, hỗ trợ gạo",
+          "subdomain_key": "hoc_bong_va_ho_tro",
+          "subdomain_label": "Học bổng và chính sách hỗ trợ",
+          "event_id": 256,
+          "field": "Giáo dục và Đào tạo thuộc hệ thống giáo dục quốc dân",
+          "agency": "Cơ sở giáo dục",
+          "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bf8-d78b-73b9-b34f-a6626fc15f92",
+          "raw_data_file": "C:\\Users\\ku060\\Downloads\\VAIC source\\data-pipeline\\raw_data\\2_002771\\2_002771_procedure_detail.md",
+          "raw_data_available": true,
+          "operation_group": "ho_tro_ban_tru",
+          "operation_key": "xet_duyet_tre_em_nha_tre_ban_tru_ho_tro_kinh_phi_ho_tro_gao",
+          "overview": "1. - Tháng 8 hằng năm, cơ sở giáo dục mầm non tổ chức phổ biến, thông báo rộng rãi và hướng dẫn cho cha mẹ hoặc người chăm sóc, nuôi dưỡng trẻ em nhà trẻ nộp hồ sơ đề nghị hưởng chính sách trẻ em nhà trẻ bán trú; - Trong vòng 15 ngày kể từ ngày cơ sở giáo dục mầm non thông báo, cha mẹ hoặc người chăm sóc, nuôi dưỡng trẻ em nhà trẻ gửi 01 bộ hồ sơ theo quy định tại khoản 1 Điều này qua cổng dịch vụ công trực tuyến hoặc bưu chính hoặc trực tiếp đến cơ sở giáo dục mầm non. Mỗi đối tượng nộp 01 bộ hồ sơ cho 01 lần đầu đề nghị hỗ trợ trong cả thời gian học tại cơ sở giáo dục mầm non. Riêng đối tượng trẻ em nhà trẻ hộ nghèo nộp bổ sung Giấy chứng nhận hộ nghèo theo từng năm trong trường hợp cơ quan, tổ chức không thể khai thác được thông tin cư trú của công dân trong Cơ sở dữ liệu quốc gia về dân cư. - Cơ sở giáo dục mầm non tiếp nhận, kiểm tra thành phần hồ sơ, nếu thành phần hồ sơ nộp là bản chụp chưa có chứng thực của cấp có thẩm quyền, người nhận hồ sơ có trách nhiệm đối chiếu với bản chính, ký xác nhận vào bản chụp để đưa vào hồ sơ. Nếu hồ sơ chưa đầy đủ hoặc chưa đúng quy định thì yêu cầu bổ sung. Trường hợp hồ sơ không bảo đảm yêu cầu, trong thời hạn 05 ngày làm việc kể từ ngày nhận được hồ sơ đề nghị hưởng chính sách trẻ em nhà trẻ bán trú, cơ sở giáo dục mầm non gửi thông báo không tiếp nhận hồ sơ và lý do cho cha mẹ hoặc người chăm sóc, nuôi dưỡng trẻ em nhà trẻ.",
+          "procedure_flow": "1. - Tháng 8 hằng năm, cơ sở giáo dục mầm non tổ chức phổ biến, thông báo rộng rãi và hướng dẫn cho cha mẹ hoặc người chăm sóc, nuôi dưỡng trẻ em nhà trẻ nộp hồ sơ đề nghị hưởng chính sách trẻ em nhà trẻ bán trú; - Trong vòng 15 ngày kể từ ngày cơ sở giáo dục mầm non thông báo, cha mẹ hoặc người chăm sóc, nuôi dưỡng trẻ em nhà trẻ gửi 01 bộ hồ sơ theo quy định tại khoản 1 Điều này qua cổng dịch vụ công trực tuyến hoặc bưu chính hoặc trực tiếp đến cơ sở giáo dục mầm non. Mỗi đối tượng nộp 01 bộ hồ sơ cho 01 lần đầu đề nghị hỗ trợ trong cả thời gian học tại cơ sở giáo dục mầm non. Riêng đối tượng trẻ em nhà trẻ hộ nghèo nộp bổ sung Giấy chứng nhận hộ nghèo theo từng năm trong trường hợp cơ quan, tổ chức không thể khai thác được thông tin cư trú của công dân trong Cơ sở dữ liệu quốc gia về dân cư. - Cơ sở giáo dục mầm non tiếp nhận, kiểm tra thành phần hồ sơ, nếu thành phần hồ sơ nộp là bản chụp chưa có chứng thực của cấp có thẩm quyền, người nhận hồ sơ có trách nhiệm đối chiếu với bản chính, ký xác nhận vào bản chụp để đưa vào hồ sơ. Nếu hồ sơ chưa đầy đủ hoặc chưa đúng quy định thì yêu cầu bổ sung. Trường hợp hồ sơ không bảo đảm yêu cầu, trong thời hạn 05 ngày làm việc kể từ ngày nhận được hồ sơ đề nghị hưởng chính sách trẻ em nhà trẻ bán trú, cơ sở giáo dục mầm non gửi thông báo không tiếp nhận hồ sơ và lý do cho cha mẹ hoặc người chăm sóc, nuôi dưỡng trẻ em nhà trẻ.",
+          "requirements": "Trẻ em nhà trẻ bán trú phải đảm bảo một trong các điều kiện sau: a) Trẻ em nhà trẻ thường trú tại xã, thôn đặc biệt khó khăn đang học tại cơ sở giáo dục mầm non công lập thuộc xã khu vực III, khu vực II, khu vực I, xã có thôn đặc biệt khó khăn vùng đồng bào dân tộc thiểu số và miền núi, xã đặc biệt khó khăn vùng bãi ngang, ven biển và hải đảo; b) Trẻ em nhà trẻ người dân tộc thiểu số thường trú tại xã khu vực II, khu vực I vùng đồng bào dân tộc thiểu số và miền núi đang học tại cơ sở giáo dục mầm non công lập thuộc xã khu vực III, khu vực II, khu vực I, xã có thôn đặc biệt khó khăn vùng đồng bào dân tộc thiểu số và miền núi, xã đặc biệt khó khăn vùng bãi ngang, ven biển và hải đảo thuộc một trong các trường hợp sau: Trẻ em thuộc hộ nghèo theo chuẩn nghèo đa chiều theo quy định của Chính phủ; Trẻ em không có nguồn nuôi dưỡng được quy định tại khoản 1 Điều 5 Nghị định số 20/2021/NĐ-CP ngày 15 tháng 3 năm 2021 của Chính phủ quy định chính sách trợ giúp xã hội đối với đối tượng bảo trợ xã hội; Trẻ em là con liệt sĩ, con Anh hùng Lực lượng vũ trang nhân dân, con thương binh, con người hưởng chính sách như thương binh, con bệnh binh, con đối tượng chính sách khác theo quy định tại Pháp lệnh Ưu đãi người có công với cách mạng (nếu có); Trẻ em khuyết tật học hòa nhập.",
+          "submission_methods": [
+            "Trực tuyến",
+            "Dịch vụ bưu chính",
+            "Trực tiếp"
+          ],
+          "processing_time_values": [
+            "5 ngày làm việc",
+            "5 ngày làm việc",
+            "5 ngày làm việc"
+          ],
+          "document_groups": [],
+          "result_items": [
+            "Thông báo tiếp nhận hoặc không tiếp nhận hồ sơ, lý do cho cha mẹ hoặc người chăm sóc, nuôi dưỡng trẻ em nhà trẻ . (Mã: `KQ.G03.000350`)"
+          ]
+        },
+        {
+          "procedure_code": "2.002851",
+          "procedure_title": "Xét, cấp học bổng chính sách đối với sinh viên học theo chế độ cử tuyển",
+          "subdomain_key": "hoc_bong_va_ho_tro",
+          "subdomain_label": "Học bổng và chính sách hỗ trợ",
+          "event_id": 256,
+          "field": "Giáo dục và Đào tạo thuộc hệ thống giáo dục quốc dân",
+          "agency": "Sở Giáo dục và Đào tạo Thành phố Hà Nội",
+          "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019daf50-80ef-76e9-84bd-cf9ede2b63b1",
+          "raw_data_file": "C:\\Users\\ku060\\Downloads\\VAIC source\\data-pipeline\\raw_data\\2_002851\\2_002851_procedure_detail.md",
+          "raw_data_available": true,
+          "operation_group": "hoc_bong",
+          "operation_key": "xet_cap_hoc_bong_chinh_sach_doi_voi_sinh_vien_hoc_theo_che_do_cu_tuyen",
+          "overview": "1. a) Trong thời hạn 10 ngày làm việc kể từ ngày nhập học, sinh viên nộp 01 bộ hồ sơ về Sở Giáo dục và Đào tạo theo một trong các hình thức: trực tuyến trên Cổng Dịch vụ công quốc gia hoặc qua dịch vụ bưu chính hoặc nộp trực tiếp tại Trung tâm Phục vụ hành chính công cấp tỉnh nơi thường trú. Mỗi sinh viên chỉ nộp 01 bộ hồ sơ đề nghị cấp học bổng trong toàn bộ thời gian học tại cơ sở giáo dục. b) Trong thời hạn 10 ngày làm việc kể từ ngày kết thúc nhận hồ sơ, Sở Giáo dục và Đào tạo tiếp nhận hồ sơ, thẩm định, lập danh sách, dự toán nhu cầu kinh phí (Mẫu số 05 tại Phụ lục kèm theo Nghị định số 66/2026/NĐ-CP) và thực hiện việc chi trả học bổng chính sách cho sinh viên theo quy định (Mẫu số 06 tại Phụ lục kèm theo Nghị định số 66/2026/NĐ-CP). Trường hợp hồ sơ không bảo đảm đúng quy định, Sở Giáo dục và Đào tạo có trách nhiệm thông báo cho người học trong thời hạn 03 ngày làm việc kể từ ngày nhận được hồ sơ. Sinh viên nhận học bổng chính sách thông qua hình thức trả tiền trực tiếp tại Sở Giáo dục và Đào tạo hoặc chuyển khoản hoặc hình thức chuyển tiền hợp pháp khác (nếu có) theo định kỳ xét, cấp học bổng.",
+          "procedure_flow": "1. a) Trong thời hạn 10 ngày làm việc kể từ ngày nhập học, sinh viên nộp 01 bộ hồ sơ về Sở Giáo dục và Đào tạo theo một trong các hình thức: trực tuyến trên Cổng Dịch vụ công quốc gia hoặc qua dịch vụ bưu chính hoặc nộp trực tiếp tại Trung tâm Phục vụ hành chính công cấp tỉnh nơi thường trú. Mỗi sinh viên chỉ nộp 01 bộ hồ sơ đề nghị cấp học bổng trong toàn bộ thời gian học tại cơ sở giáo dục. b) Trong thời hạn 10 ngày làm việc kể từ ngày kết thúc nhận hồ sơ, Sở Giáo dục và Đào tạo tiếp nhận hồ sơ, thẩm định, lập danh sách, dự toán nhu cầu kinh phí (Mẫu số 05 tại Phụ lục kèm theo Nghị định số 66/2026/NĐ-CP) và thực hiện việc chi trả học bổng chính sách cho sinh viên theo quy định (Mẫu số 06 tại Phụ lục kèm theo Nghị định số 66/2026/NĐ-CP). Trường hợp hồ sơ không bảo đảm đúng quy định, Sở Giáo dục và Đào tạo có trách nhiệm thông báo cho người học trong thời hạn 03 ngày làm việc kể từ ngày nhận được hồ sơ. Sinh viên nhận học bổng chính sách thông qua hình thức trả tiền trực tiếp tại Sở Giáo dục và Đào tạo hoặc chuyển khoản hoặc hình thức chuyển tiền hợp pháp khác (nếu có) theo định kỳ xét, cấp học bổng.",
+          "requirements": "Không quy định.",
+          "submission_methods": [
+            "Trực tiếp",
+            "Trực tuyến",
+            "Dịch vụ bưu chính"
+          ],
+          "processing_time_values": [
+            "10 ngày làm việc",
+            "10 ngày làm việc",
+            "10 ngày làm việc"
+          ],
+          "document_groups": [],
+          "result_items": [
+            "Quyết định cấp học bổng chính sách (cấp xã) (Mã: `KQ.G03.000489`)"
+          ]
+        }
+      ]
+    }
+  ],
+  "subdomain_key": "hoc_bong_va_ho_tro",
+  "subdomain_label": "Học bổng và chính sách hỗ trợ"
+}

@@ -1,0 +1,525 @@
+{
+  "schema_version": "3.0",
+  "record_type": "public_service_procedure_payload",
+  "id": "procedure-1.001471",
+  "procedure_code": "1.001471",
+  "code": "1.001471",
+  "title": "Cấp hộ chiếu phổ thông ở trong nước (thực hiện tại cấp trung ương)",
+  "language": "vi",
+  "status": "generated_from_pipeline",
+  "field": "Quản lý xuất nhập cảnh",
+  "group_key": "cu_tru_giay_to",
+  "workflow_family": "residence_identity_documents_workflow",
+  "subflow": "ho_chieu",
+  "source": {
+    "source_url": "file:///C:/Users/ku060/Downloads/VAIC%20source/data-pipeline/raw_data/1_001471/1_001471_procedure_detail.md",
+    "source_markdown_path": "C:\\Users\\ku060\\Downloads\\VAIC source\\data-pipeline\\raw_data\\1_001471\\1_001471_procedure_detail.md",
+    "normalized_payload_path": "C:\\Users\\ku060\\Downloads\\VAIC source\\data-pipeline\\govease-unified\\data\\normalized_structured\\1_001471_normalized_structured.json",
+    "enriched_payload_path": "C:\\Users\\ku060\\Downloads\\VAIC source\\data-pipeline\\govease-unified\\data\\enriched_structured_priority\\1_001471_enriched_structured.json"
+  },
+  "scope": {
+    "included": "Thủ tục này thuộc nhóm cư trú và giấy tờ, thường cần kiểm tra thông tin định danh hoặc hồ sơ giấy tờ chuyên ngành. Kết quả thường nhận được là Hộ chiếu phổ thông không gắn chíp điện tử hoặc hộ chiếu phổ thông có gắn chíp điện tử. Thời gian xử lý tham khảo: 5 ngày làm việc.",
+    "not_included": []
+  },
+  "agency": {
+    "executing_agency": "Cục quản lý xuất nhập cảnh",
+    "submission_place": null,
+    "receiving_places": []
+  },
+  "target_users": [
+    "Công dân Việt Nam"
+  ],
+  "submission_methods": [
+    {
+      "code": "ONLINE",
+      "label": "Trực tuyến",
+      "processing_time": "5 ngày làm việc",
+      "fee": null,
+      "description": "nộp hồ sơ trực tuyến qua Cổng dịch vụ công quốc gia hoặc Cổng dịch vụ công Bộ Công an.<br>Không quá 05 ngày làm việc kể từ ngày nhận đầy đủ hồ sơ theo quy định."
+    },
+    {
+      "code": "POSTAL",
+      "label": "Dịch vụ bưu chính",
+      "processing_time": "5 ngày làm việc",
+      "fee": null,
+      "description": "nộp bổ sung hồ sơ qua dịch vụ bưu chính công ích theo thông báo của Cục Quản lý xuất nhập cảnh trên Cổng dịch vụ công quốc gia hoặc Cổng dịch vụ công Bộ Công an (nếu có).<br>Không quá 05 ngày làm việc kể từ ngày nhận đầy đủ hồ sơ theo quy định."
+    },
+    {
+      "code": "IN_PERSON",
+      "label": "Trực tiếp",
+      "processing_time": "5 ngày làm việc",
+      "fee": null,
+      "description": "nộp hồ sơ trực tiếp tại trụ sở Cục Quản lý xuất nhập cảnh (có thể khai tờ khai đề nghị cấp hộ chiếu phổ thông ở trong nước qua các cổng cung cấp dịch vụ công trực tuyến trước khi đến nộp hồ sơ trực tuyến).<br>Không quá 05 ngày làm việc kể từ ngày nhận đầy đủ hồ sơ theo quy định."
+    },
+    {
+      "code": "ONLINE",
+      "label": "Trực tuyến",
+      "processing_time": "3 ngày làm việc",
+      "fee": null,
+      "description": "nộp hồ sơ trực tuyến qua Cổng dịch vụ công quốc gia hoặc Cổng dịch vụ công Bộ Công an.<br>Không quá 03 ngày làm việc kể từ ngày nhận đầy đủ hồ sơ theo quy định đối với các trường hợp quy định tại khoản 4 Điều 15 Luật xuất cảnh, nhập cảnh của công dân Việt Nam."
+    },
+    {
+      "code": "IN_PERSON",
+      "label": "Trực tiếp",
+      "processing_time": "3 ngày làm việc",
+      "fee": null,
+      "description": "Không quá 03 ngày làm việc kể từ ngày nhận đầy đủ hồ sơ theo quy định đối với các trường hợp quy định tại khoản 4 Điều 15 Luật xuất cảnh, nhập cảnh của công dân Việt Nam."
+    },
+    {
+      "code": "POSTAL",
+      "label": "Dịch vụ bưu chính",
+      "processing_time": "3 ngày làm việc",
+      "fee": null,
+      "description": "nộp bổ sung hồ sơ qua dịch vụ bưu chính công ích theo thông báo của Cục Quản lý xuất nhập cảnh trên Cổng dịch vụ công quốc gia hoặc Cổng dịch vụ công Bộ Công an (nếu có).<br>Không quá 03 ngày làm việc kể từ ngày nhận đầy đủ hồ sơ theo quy định đối với các trường hợp quy định tại khoản 4 Điều 15 Luật xuất cảnh, nhập cảnh của công dân Việt Nam.<br>Có thể khai tờ khai đề nghị cấp hộ chiếu phổ thông ở trong nước qua các cổng cung cấp dịch vụ công trực tuyến, sau đó trực tiếp nộp hồ sơ và nhận kết quả hoặc đề nghị nhận kết quả qua dịch vụ bưu chính."
+    }
+  ],
+  "processing_note": "Thời gian xử lý tham chiếu: 5 ngày làm việc. Nên kiểm tra trước giấy tờ định danh, nơi nộp và mẫu biểu liên quan, rồi chọn kênh nộp phù hợp: Trực tiếp, Trực tuyến, Dịch vụ bưu chính. Hiện có khoảng 12 mục giấy tờ cần theo dõi trong checklist.",
+  "documents": {
+    "normally_required": [
+      {
+        "name": "Văn bản đề nghị của cơ quan trực tiếp quản lý đối với cán bộ, công chức, viên chức, sĩ quan, hạ sĩ quan, quân nhân chuyên nghiệp, công nhân, viên chức trong lực lượng vũ trang, người làm việc trong tổ chức cơ yếu;",
+        "quantity": "1 bản chính, 0 bản sao",
+        "notes": [],
+        "group": "* Các trường hợp quy định tại khoản 4 Điều 15 Luật Xuất cảnh, nhập cảnh của công dân Việt Nam đề nghị cấp hộ chiếu phổ thông ở trong nước lần đầu tại Cục Quản lý xuất nhập cảnh phải bổ sung một trong các loại hồ sơ, giấy tờ sau:",
+        "attachment_path": null
+      },
+      {
+        "name": "Giấy tờ xác định thân nhân ở nước ngoài bị tai nạn, bệnh tật, bị chết;",
+        "quantity": "1 bản chính, 0 bản sao",
+        "notes": [],
+        "group": "* Các trường hợp quy định tại khoản 4 Điều 15 Luật Xuất cảnh, nhập cảnh của công dân Việt Nam đề nghị cấp hộ chiếu phổ thông ở trong nước lần đầu tại Cục Quản lý xuất nhập cảnh phải bổ sung một trong các loại hồ sơ, giấy tờ sau:",
+        "attachment_path": null
+      },
+      {
+        "name": "Giấy giới thiệu hoặc đề nghị của bệnh viện về việc ra nước ngoài để khám, chữa bệnh;",
+        "quantity": "1 bản chính, 0 bản sao",
+        "notes": [],
+        "group": "* Các trường hợp quy định tại khoản 4 Điều 15 Luật Xuất cảnh, nhập cảnh của công dân Việt Nam đề nghị cấp hộ chiếu phổ thông ở trong nước lần đầu tại Cục Quản lý xuất nhập cảnh phải bổ sung một trong các loại hồ sơ, giấy tờ sau:",
+        "attachment_path": null
+      },
+      {
+        "name": "Bản sao giấy khai sinh hoặc trích lục khai sinh đối với người chưa đủ 14 tuổi;",
+        "quantity": "0 bản chính, 1 bản sao",
+        "notes": [],
+        "group": "* Các trường hợp quy định tại khoản 4 Điều 15 Luật Xuất cảnh, nhập cảnh của công dân Việt Nam đề nghị cấp hộ chiếu phổ thông ở trong nước lần đầu tại Cục Quản lý xuất nhập cảnh phải bổ sung một trong các loại hồ sơ, giấy tờ sau:",
+        "attachment_path": null
+      },
+      {
+        "name": "02 ảnh mới chụp không quá 06 tháng, cỡ 4cm x6cm, mặt nhìn thẳng, đầu để trần, rõ mặt, rõ hai tai, không đeo kính, trang phục lịch sự, phông nền trắng.",
+        "quantity": "2 bản chính, 0 bản sao",
+        "notes": [],
+        "group": "* Các trường hợp quy định tại khoản 4 Điều 15 Luật Xuất cảnh, nhập cảnh của công dân Việt Nam đề nghị cấp hộ chiếu phổ thông ở trong nước lần đầu tại Cục Quản lý xuất nhập cảnh phải bổ sung một trong các loại hồ sơ, giấy tờ sau:",
+        "attachment_path": null
+      },
+      {
+        "name": "Số lượng hồ sơ: 01 (một) bộ.",
+        "quantity": "1 bản chính, 1 bản sao",
+        "notes": [],
+        "group": "* Các trường hợp quy định tại khoản 4 Điều 15 Luật Xuất cảnh, nhập cảnh của công dân Việt Nam đề nghị cấp hộ chiếu phổ thông ở trong nước lần đầu tại Cục Quản lý xuất nhập cảnh phải bổ sung một trong các loại hồ sơ, giấy tờ sau:",
+        "attachment_path": null
+      },
+      {
+        "name": "01 tờ khai đề nghị cấp hộ chiếu phổ thông (mẫu TK01) ban hành kèm theo Thông tư số 73/2021/TT-BCA ngày 29/6/2021 của Bộ Công an. Đối với người mất năng lực hành vi dân sự, người có khó khăn trong nhận thức và làm chủ hành vi, người chưa đủ 14 tuổi, tờ khai do người đại diện hợp pháp khai, ký thay KHÔNG CẦN XÁC NHẬN CỦA CHÍNH QUYỀN ĐỊA PHƯƠNG (XÃ, PHƯỜNG, THỊ TRẤN NƠI CƯ TRÚ);",
+        "quantity": "1 bản chính, 0 bản sao",
+        "notes": [],
+        "group": "* Các trường hợp quy định tại khoản 4 Điều 15 Luật Xuất cảnh, nhập cảnh của công dân Việt Nam đề nghị cấp hộ chiếu phổ thông ở trong nước lần đầu tại Cục Quản lý xuất nhập cảnh phải bổ sung một trong các loại hồ sơ, giấy tờ sau:",
+        "attachment_path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/1_001471/Mau%20TK01.tt73.2021.doc"
+      }
+    ],
+    "conditional": [
+      {
+        "condition": "Tài liệu chứng minh đối với các trường hợp vì lý do nhân đạo, khẩn cấp khác.",
+        "document": "Tài liệu chứng minh đối với các trường hợp vì lý do nhân đạo, khẩn cấp khác.",
+        "quantity": "1 bản chính, 0 bản sao",
+        "notes": [],
+        "attachment_path": null
+      },
+      {
+        "condition": "Bản chụp có chứng thực giấy tờ do cơ quan có thẩm quyền của Việt Nam cấp chứng minh người đại diện hợp pháp đối với người mất năng lực hành vi dân sự, người có khó khăn trong nhận thức, làm chủ hành vi theo quy định của Bộ luật dân sự, người chưa đủ 14 tuổi; trường hợp bản chụp không có chứng thực thì xuất trình bản chính để kiểm tra đối chiếu.",
+        "document": "Bản chụp có chứng thực giấy tờ do cơ quan có thẩm quyền của Việt Nam cấp chứng minh người đại diện hợp pháp đối với người mất năng lực hành vi dân sự, người có khó khăn trong nhận thức, làm chủ hành vi theo quy định của Bộ luật dân sự, người chưa đủ 14 tuổi; trường hợp bản chụp không có chứng thực thì xuất trình bản chính để kiểm tra đối chiếu.",
+        "quantity": "0 bản chính, 1 bản sao",
+        "notes": [],
+        "attachment_path": null
+      },
+      {
+        "condition": "Bản chụp Chứng minh nhân dân hoặc Thẻ căn cước công dân đối với trường hợp có sự thay đổi thông tin về nhân thân so với thông tin trong hộ chiếu đã cấp lần gần nhất.",
+        "document": "Bản chụp Chứng minh nhân dân hoặc Thẻ căn cước công dân đối với trường hợp có sự thay đổi thông tin về nhân thân so với thông tin trong hộ chiếu đã cấp lần gần nhất.",
+        "quantity": "1 bản chính, 1 bản sao",
+        "notes": [],
+        "attachment_path": null
+      },
+      {
+        "condition": "Hộ chiếu phổ thông cấp lần gần nhất đối với người đã được cấp hộ chiếu; trường hợp bị mất hộ chiếu, phải có đơn trình báo mất hộ chiếu hoặc thông báo về việc đã tiếp nhận đơn của cơ quan có thẩm quyền quy định tại Điều 28 Luật Xuất cảnh, nhập cảnh của công dân Việt Nam;",
+        "document": "Hộ chiếu phổ thông cấp lần gần nhất đối với người đã được cấp hộ chiếu; trường hợp bị mất hộ chiếu, phải có đơn trình báo mất hộ chiếu hoặc thông báo về việc đã tiếp nhận đơn của cơ quan có thẩm quyền quy định tại Điều 28 Luật Xuất cảnh, nhập cảnh của công dân Việt Nam;",
+        "quantity": "1 bản chính, 0 bản sao",
+        "notes": [],
+        "attachment_path": null
+      },
+      {
+        "condition": "Trường hợp nộp hồ sơ trực tuyến thì thành phần hồ sơ phải được chứng thực điện tử theo quy định, trường hợp hồ sơ chưa được chứng thực điện tử thì gửi hồ sơ về cơ quan tiếp nhận thông qua dịch vụ bưu chính công ích.",
+        "document": "Trường hợp nộp hồ sơ trực tuyến thì thành phần hồ sơ phải được chứng thực điện tử theo quy định, trường hợp hồ sơ chưa được chứng thực điện tử thì gửi hồ sơ về cơ quan tiếp nhận thông qua dịch vụ bưu chính công ích.",
+        "quantity": "1 bản chính, 1 bản sao",
+        "notes": [],
+        "attachment_path": null
+      }
+    ],
+    "forms": [
+      {
+        "name": "01 tờ khai đề nghị cấp hộ chiếu phổ thông (mẫu TK01) ban hành kèm theo Thông tư số 73/2021/TT-BCA ngày 29/6/2021 của Bộ Công an. Đối với người mất năng lực hành vi dân sự, người có khó khăn trong nhận thức và làm chủ hành vi, người chưa đủ 14 tuổi, tờ khai do người đại diện hợp pháp khai, ký thay KHÔNG CẦN XÁC NHẬN CỦA CHÍNH QUYỀN ĐỊA PHƯƠNG (XÃ, PHƯỜNG, THỊ TRẤN NƠI CƯ TRÚ);",
+        "attachment_label": "Mau TK01.tt73.2021.doc",
+        "attachment_path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/1_001471/Mau%20TK01.tt73.2021.doc"
+      }
+    ],
+    "presented": [],
+    "notes": [],
+    "summary": [
+      {
+        "group": "* Các trường hợp quy định tại khoản 4 Điều 15 Luật Xuất cảnh, nhập cảnh của công dân Việt Nam đề nghị cấp hộ chiếu phổ thông ở trong nước lần đầu tại Cục Quản lý xuất nhập cảnh phải bổ sung một trong các loại hồ sơ, giấy tờ sau:",
+        "name": "Văn bản đề nghị của cơ quan trực tiếp quản lý đối với cán bộ, công chức, viên chức, sĩ quan, hạ sĩ quan, quân nhân chuyên nghiệp, công nhân, viên chức trong lực lượng vũ trang, người làm việc trong tổ chức cơ yếu;",
+        "quantity": "1 bản chính, 0 bản sao",
+        "notes": [],
+        "attachment_path": null
+      },
+      {
+        "group": "* Các trường hợp quy định tại khoản 4 Điều 15 Luật Xuất cảnh, nhập cảnh của công dân Việt Nam đề nghị cấp hộ chiếu phổ thông ở trong nước lần đầu tại Cục Quản lý xuất nhập cảnh phải bổ sung một trong các loại hồ sơ, giấy tờ sau:",
+        "name": "Giấy tờ xác định thân nhân ở nước ngoài bị tai nạn, bệnh tật, bị chết;",
+        "quantity": "1 bản chính, 0 bản sao",
+        "notes": [],
+        "attachment_path": null
+      },
+      {
+        "group": "* Các trường hợp quy định tại khoản 4 Điều 15 Luật Xuất cảnh, nhập cảnh của công dân Việt Nam đề nghị cấp hộ chiếu phổ thông ở trong nước lần đầu tại Cục Quản lý xuất nhập cảnh phải bổ sung một trong các loại hồ sơ, giấy tờ sau:",
+        "name": "Giấy giới thiệu hoặc đề nghị của bệnh viện về việc ra nước ngoài để khám, chữa bệnh;",
+        "quantity": "1 bản chính, 0 bản sao",
+        "notes": [],
+        "attachment_path": null
+      },
+      {
+        "group": "* Các trường hợp quy định tại khoản 4 Điều 15 Luật Xuất cảnh, nhập cảnh của công dân Việt Nam đề nghị cấp hộ chiếu phổ thông ở trong nước lần đầu tại Cục Quản lý xuất nhập cảnh phải bổ sung một trong các loại hồ sơ, giấy tờ sau:",
+        "name": "Bản sao giấy khai sinh hoặc trích lục khai sinh đối với người chưa đủ 14 tuổi;",
+        "quantity": "0 bản chính, 1 bản sao",
+        "notes": [],
+        "attachment_path": null
+      },
+      {
+        "group": "* Các trường hợp quy định tại khoản 4 Điều 15 Luật Xuất cảnh, nhập cảnh của công dân Việt Nam đề nghị cấp hộ chiếu phổ thông ở trong nước lần đầu tại Cục Quản lý xuất nhập cảnh phải bổ sung một trong các loại hồ sơ, giấy tờ sau:",
+        "name": "02 ảnh mới chụp không quá 06 tháng, cỡ 4cm x6cm, mặt nhìn thẳng, đầu để trần, rõ mặt, rõ hai tai, không đeo kính, trang phục lịch sự, phông nền trắng.",
+        "quantity": "2 bản chính, 0 bản sao",
+        "notes": [],
+        "attachment_path": null
+      },
+      {
+        "group": "* Các trường hợp quy định tại khoản 4 Điều 15 Luật Xuất cảnh, nhập cảnh của công dân Việt Nam đề nghị cấp hộ chiếu phổ thông ở trong nước lần đầu tại Cục Quản lý xuất nhập cảnh phải bổ sung một trong các loại hồ sơ, giấy tờ sau:",
+        "name": "Số lượng hồ sơ: 01 (một) bộ.",
+        "quantity": "1 bản chính, 1 bản sao",
+        "notes": [],
+        "attachment_path": null
+      },
+      {
+        "group": "* Các trường hợp quy định tại khoản 4 Điều 15 Luật Xuất cảnh, nhập cảnh của công dân Việt Nam đề nghị cấp hộ chiếu phổ thông ở trong nước lần đầu tại Cục Quản lý xuất nhập cảnh phải bổ sung một trong các loại hồ sơ, giấy tờ sau:",
+        "name": "01 tờ khai đề nghị cấp hộ chiếu phổ thông (mẫu TK01) ban hành kèm theo Thông tư số 73/2021/TT-BCA ngày 29/6/2021 của Bộ Công an. Đối với người mất năng lực hành vi dân sự, người có khó khăn trong nhận thức và làm chủ hành vi, người chưa đủ 14 tuổi, tờ khai do người đại diện hợp pháp khai, ký thay KHÔNG CẦN XÁC NHẬN CỦA CHÍNH QUYỀN ĐỊA PHƯƠNG (XÃ, PHƯỜNG, THỊ TRẤN NƠI CƯ TRÚ);",
+        "quantity": "1 bản chính, 0 bản sao",
+        "notes": [],
+        "attachment_path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/1_001471/Mau%20TK01.tt73.2021.doc"
+      },
+      {
+        "group": null,
+        "name": null,
+        "quantity": "1 bản chính, 0 bản sao",
+        "notes": [],
+        "attachment_path": null
+      },
+      {
+        "group": null,
+        "name": null,
+        "quantity": "0 bản chính, 1 bản sao",
+        "notes": [],
+        "attachment_path": null
+      },
+      {
+        "group": null,
+        "name": null,
+        "quantity": "1 bản chính, 1 bản sao",
+        "notes": [],
+        "attachment_path": null
+      },
+      {
+        "group": null,
+        "name": null,
+        "quantity": "1 bản chính, 0 bản sao",
+        "notes": [],
+        "attachment_path": null
+      },
+      {
+        "group": null,
+        "name": null,
+        "quantity": "1 bản chính, 1 bản sao",
+        "notes": [],
+        "attachment_path": null
+      },
+      {
+        "group": null,
+        "name": "01 tờ khai đề nghị cấp hộ chiếu phổ thông (mẫu TK01) ban hành kèm theo Thông tư số 73/2021/TT-BCA ngày 29/6/2021 của Bộ Công an. Đối với người mất năng lực hành vi dân sự, người có khó khăn trong nhận thức và làm chủ hành vi, người chưa đủ 14 tuổi, tờ khai do người đại diện hợp pháp khai, ký thay KHÔNG CẦN XÁC NHẬN CỦA CHÍNH QUYỀN ĐỊA PHƯƠNG (XÃ, PHƯỜNG, THỊ TRẤN NƠI CƯ TRÚ);",
+        "quantity": null,
+        "notes": null,
+        "attachment_path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/1_001471/Mau%20TK01.tt73.2021.doc"
+      }
+    ]
+  },
+  "steps": [
+    {
+      "order": 1,
+      "title": "Bước 1",
+      "description": "1.",
+      "example": null
+    },
+    {
+      "order": 2,
+      "title": "Bước 1:",
+      "description": "Bước 1: Chuẩn bị hồ sơ theo quy định của pháp luật.",
+      "example": null
+    },
+    {
+      "order": 3,
+      "title": "Bước 2:",
+      "description": "Bước 2: Nộp hồ sơ * Người đề nghị cấp hộ chiếu phổ thông không gắn chíp điện tử từ lần thứ hai hoặc lần đầu nếu thuộc một trong các trường hợp quy định tại khoản 4 Điều 15 Luật Xuất cảnh, nhập cảnh của công dân Việt Nam trực tiếp nộp hồ sơ vào giờ hành chính các ngày làm việc trong tuần tại một trong hai trụ sở làm việc của Cục Quản lý xuất nhập cảnh - Bộ Công an: + Số 44-46 đường Trần Phú, quận Ba Đình, thành phố Hà Nội. + Số 333-335-337 đường Nguyễn Trãi, Quận 1, Thành phố Hồ Chí Minh. Khi đến nộp hồ sơ phải xuất trình Chứng minh nhân dân, Thẻ căn cước công dân hoặc hộ chiếu còn giá trị sử dụng. Hoặc nộp hồ sơ trực tuyến qua Cổng dịch vụ công quốc gia hoặc Cổng dịch vụ công Bộ Công an và gửi bổ sung hồ sơ qua dịch vụ bưu chính công ích theo thông báo của Cục Quản lý xuất nhập cảnh trên Cổng dịch vụ công quốc gia hoặc Cổng dịch vụ công Bộ Công an (nếu có). * Cán bộ quản lý xuất nhập cảnh tiếp nhận hồ sơ kiểm tra tính pháp lý và nội dung hồ sơ: + Trường hợp hồ sơ đã đầy đủ, hợp lệ thì cấp giấy hẹn trả kết quả cho người đề nghị cấp hộ chiếu phổ thông; yêu cầu nộp lệ phí cho cán bộ thu lệ phí. Cán bộ thu lệ phí thu tiền, giao biên lai thu tiền cho người đề nghị cấp hộ chiếu phổ thông hoặc thông báo trên Cổng dịch vụ công quốc gia hoặc Cổng dịch vụ công Bộ Công an để người đề nghị cấp hộ chiếu phổ thông thanh toán trực tuyến và nhận biên lai điện tử. + Trường hợp hồ sơ thiếu hoặc không hợp lệ thì cán bộ tiếp nhận hồ sơ hướng dẫn hoặc thông báo trên Cổng dịch vụ công quốc gia hoặc Cổng dịch vụ công Bộ Công an để người đề nghị cấp hộ chiếu phổ thông hoàn chỉnh hồ sơ. + Trường hợp hồ sơ không đủ điều kiện thì không tiếp nhận hồ sơ, trả lời bằng văn bản hoặc thông báo trên Cổng dịch vụ công quốc gia hoặc Cổng dịch vụ công Bộ Công an và nêu rõ lý do. * Người đề nghị cấp hộ chiếu có thể đề nghị nhận kết quả qua dịch vụ bưu chính và phải trả phí dịch vụ chuyển phát. * Thời gian tiếp nhận hồ sơ: Từ thứ 2 đến sáng thứ 7 hàng tuần (trừ ngày Tết, ngày lễ).",
+      "example": "trực tuyến"
+    },
+    {
+      "order": 4,
+      "title": "Bước 3:",
+      "description": "Bước 3: Nhận kết quả + Người đề nghị cấp hộ chiếu phổ thông trực tiếp nhận kết quả tại Cục Quản lý xuất nhập cảnh, Bộ Công an. Khi đến nhận kết quả mang theo giấy hẹn trả kết quả, xuất trình Chứng minh nhân dân, Thẻ căn cước công dân. Trường hợp đề nghị nhận kết quả qua dịch vụ bưu chính thực hiện theo hướng dẫn của cơ quan cung cấp dịch vụ bưu chính. + Trường hợp chưa cấp hộ chiếu phổ thông thì trả lời bằng văn bản hoặc thông báo trên Cổng dịch vụ công trực tuyến và nêu rõ lý do. + Trường hợp hồ sơ không đủ điều kiện thì không tiếp nhận hồ sơ, trả lời bằng văn bản hoặc thông báo trên Cổng dịch vụ công quốc gia hoặc Cổng dịch vụ công Bộ Công an và nêu rõ lý do. + Thời gian trả kết quả: Từ thứ 2 đến thứ 6 hàng tuần (trừ ngày Tết, ngày lễ).",
+      "example": "trực tuyến"
+    }
+  ],
+  "input_fields": [
+    {
+      "field": "document_request_type",
+      "label": "Loại giấy tờ cần xử lý",
+      "type": "string",
+      "required": true
+    },
+    {
+      "field": "submission_channel_preference",
+      "label": "Kênh nộp dự kiến",
+      "type": "enum",
+      "required": false,
+      "options": [
+        "Trực tiếp",
+        "Trực tuyến",
+        "Dịch vụ bưu chính"
+      ]
+    },
+    {
+      "field": "identity_document_available",
+      "label": "Có giấy tờ định danh",
+      "type": "boolean",
+      "required": true
+    },
+    {
+      "field": "residency_or_status_known",
+      "label": "Biết rõ nơi cư trú hoặc tình trạng hiện tại",
+      "type": "boolean",
+      "required": false
+    },
+    {
+      "field": "passport_status",
+      "label": "Tình trạng hộ chiếu hiện tại",
+      "type": "enum",
+      "required": false
+    }
+  ],
+  "validation_rules": [
+    {
+      "id": "required-1",
+      "severity": "error",
+      "field": "document_request_type",
+      "rule": "Trường bắt buộc phải có dữ liệu hợp lệ trước khi nộp.",
+      "message": "Thiếu trường bắt buộc: Loại giấy tờ cần xử lý."
+    },
+    {
+      "id": "required-3",
+      "severity": "error",
+      "field": "identity_document_available",
+      "rule": "Trường bắt buộc phải có dữ liệu hợp lệ trước khi nộp.",
+      "message": "Thiếu trường bắt buộc: Có giấy tờ định danh."
+    },
+    {
+      "id": "hint-1",
+      "severity": "warning",
+      "field": "general",
+      "rule": "Nên xác định trước kênh nộp hồ sơ để biết có cần bản giấy, bản điện tử hay xuất trình trực tiếp.",
+      "message": "Nên xác định trước kênh nộp hồ sơ để biết có cần bản giấy, bản điện tử hay xuất trình trực tiếp."
+    },
+    {
+      "id": "hint-2",
+      "severity": "warning",
+      "field": "general",
+      "rule": "Có mẫu biểu đính kèm, nên kiểm tra đúng biểu mẫu trước khi nộp.",
+      "message": "Có mẫu biểu đính kèm, nên kiểm tra đúng biểu mẫu trước khi nộp."
+    },
+    {
+      "id": "hint-3",
+      "severity": "warning",
+      "field": "general",
+      "rule": "Nên đối chiếu trước dữ liệu định danh và nơi cư trú để tránh bị yêu cầu bổ sung.",
+      "message": "Nên đối chiếu trước dữ liệu định danh và nơi cư trú để tránh bị yêu cầu bổ sung."
+    }
+  ],
+  "common_errors": [
+    {
+      "field": "general",
+      "issue": "Thiếu giấy tờ hợp pháp hóa hoặc giấy tờ nhân thân của phía nước ngoài.",
+      "fix": "Nên xác định trước kênh nộp hồ sơ để biết có cần bản giấy, bản điện tử hay xuất trình trực tiếp."
+    },
+    {
+      "field": "general",
+      "issue": "Điền sai mẫu tờ khai hoặc chọn sai biểu mẫu đi kèm.",
+      "fix": "Nên xác định trước kênh nộp hồ sơ để biết có cần bản giấy, bản điện tử hay xuất trình trực tiếp."
+    }
+  ],
+  "clarifying_questions": [
+    {
+      "id": "clarify_1",
+      "question": "Bạn đang xử lý giấy tờ gì và muốn nộp trực tiếp hay trực tuyến?",
+      "purpose": "workflow_intake"
+    },
+    {
+      "id": "clarify_2",
+      "question": "Thông tin định danh và nơi cư trú hiện tại đã sẵn sàng để đối chiếu chưa?",
+      "purpose": "workflow_intake"
+    }
+  ],
+  "legal_basis": [
+    {
+      "title": "QUY ĐỊNH MỨC THU, CHẾ ĐỘ THU, NỘP, QUẢN LÝ VÀ SỬ DỤNG PHÍ, LỆ PHÍ TRONG LĨNH VỰC XUẤT CẢNH, NHẬP CẢNH, QUÁ CẢNH, CƯ TRÚ TẠI VIỆT NAM",
+      "code": "25/2021/TT-BTC"
+    },
+    {
+      "title": "Thông tư 110/2020/TT-BCA",
+      "code": "110/2020/TT-BCA"
+    },
+    {
+      "title": "Thông tư số 44/2023/TT-BTC ngày 29 tháng 6 năm 2023 của Bộ trưởng Bộ Tài chính quy định mức thu một số khoản phí, lệ phí nhằm hỗ trợ người dân và doanh nghiệp. Có hiệu lực từ ngày 01 tháng 7 năm 2023 đến hết ngày 31 tháng 12 năm 2023",
+      "code": "44/2023/TT-BTC"
+    },
+    {
+      "title": "Luật Xuất cảnh, nhập cảnh của công dân Việt Nam và Luật Nhập cảnh, xuất cảnh, quá cảnh, cư trú của người nước ngoài tại Việt Nam sửa đổi 2023",
+      "code": "23/2023/QH15"
+    },
+    {
+      "title": "Luật 49/2019/QH14",
+      "code": "49/2019/QH14"
+    }
+  ],
+  "legal_bases": [
+    {
+      "title": "QUY ĐỊNH MỨC THU, CHẾ ĐỘ THU, NỘP, QUẢN LÝ VÀ SỬ DỤNG PHÍ, LỆ PHÍ TRONG LĨNH VỰC XUẤT CẢNH, NHẬP CẢNH, QUÁ CẢNH, CƯ TRÚ TẠI VIỆT NAM",
+      "code": "25/2021/TT-BTC"
+    },
+    {
+      "title": "Thông tư 110/2020/TT-BCA",
+      "code": "110/2020/TT-BCA"
+    },
+    {
+      "title": "Thông tư số 44/2023/TT-BTC ngày 29 tháng 6 năm 2023 của Bộ trưởng Bộ Tài chính quy định mức thu một số khoản phí, lệ phí nhằm hỗ trợ người dân và doanh nghiệp. Có hiệu lực từ ngày 01 tháng 7 năm 2023 đến hết ngày 31 tháng 12 năm 2023",
+      "code": "44/2023/TT-BTC"
+    },
+    {
+      "title": "Luật Xuất cảnh, nhập cảnh của công dân Việt Nam và Luật Nhập cảnh, xuất cảnh, quá cảnh, cư trú của người nước ngoài tại Việt Nam sửa đổi 2023",
+      "code": "23/2023/QH15"
+    },
+    {
+      "title": "Luật 49/2019/QH14",
+      "code": "49/2019/QH14"
+    }
+  ],
+  "faq": [
+    {
+      "question": "Có thể nộp qua kênh nào?",
+      "answer": "Các kênh hiện có: Trực tiếp, Trực tuyến, Dịch vụ bưu chính."
+    },
+    {
+      "question": "Thời gian xử lý tham chiếu là bao lâu?",
+      "answer": "Thời gian xử lý tham chiếu hiện có là 5 ngày làm việc."
+    },
+    {
+      "question": "Kết quả chính của thủ tục là gì?",
+      "answer": "Kết quả chính được trích xuất là Hộ chiếu phổ thông không gắn chíp điện tử hoặc hộ chiếu phổ thông có gắn chíp điện tử."
+    }
+  ],
+  "guidance": {
+    "highlight_documents": [
+      {
+        "bucket": "required",
+        "name": "Văn bản đề nghị của cơ quan trực tiếp quản lý đối với cán bộ, công chức, viên chức, sĩ quan, hạ sĩ quan, quân nhân chuyên nghiệp, công nhân, viên chức trong lực lượng vũ trang, người làm việc trong tổ chức cơ yếu;",
+        "conditions": [],
+        "attachment_path": null
+      },
+      {
+        "bucket": "required",
+        "name": "Giấy tờ xác định thân nhân ở nước ngoài bị tai nạn, bệnh tật, bị chết;",
+        "conditions": [],
+        "attachment_path": null
+      },
+      {
+        "bucket": "required",
+        "name": "Giấy giới thiệu hoặc đề nghị của bệnh viện về việc ra nước ngoài để khám, chữa bệnh;",
+        "conditions": [],
+        "attachment_path": null
+      },
+      {
+        "bucket": "required",
+        "name": "Bản sao giấy khai sinh hoặc trích lục khai sinh đối với người chưa đủ 14 tuổi;",
+        "conditions": [],
+        "attachment_path": null
+      },
+      {
+        "bucket": "required",
+        "name": "02 ảnh mới chụp không quá 06 tháng, cỡ 4cm x6cm, mặt nhìn thẳng, đầu để trần, rõ mặt, rõ hai tai, không đeo kính, trang phục lịch sự, phông nền trắng.",
+        "conditions": [],
+        "attachment_path": null
+      },
+      {
+        "bucket": "required",
+        "name": "Số lượng hồ sơ: 01 (một) bộ.",
+        "conditions": [],
+        "attachment_path": null
+      }
+    ],
+    "special_cases": [
+      "Có yếu tố nước ngoài",
+      "Có trường hợp hồ sơ điện tử thay thế bản giấy",
+      "Có kiểm tra dữ liệu cư trú/định danh",
+      "Có thể cần hồ sơ tử tuất hoặc mai táng phí"
+    ],
+    "common_errors": [
+      "Thiếu giấy tờ hợp pháp hóa hoặc giấy tờ nhân thân của phía nước ngoài.",
+      "Điền sai mẫu tờ khai hoặc chọn sai biểu mẫu đi kèm."
+    ],
+    "validation_hints": [
+      "Nên xác định trước kênh nộp hồ sơ để biết có cần bản giấy, bản điện tử hay xuất trình trực tiếp.",
+      "Có mẫu biểu đính kèm, nên kiểm tra đúng biểu mẫu trước khi nộp.",
+      "Nên đối chiếu trước dữ liệu định danh và nơi cư trú để tránh bị yêu cầu bổ sung."
+    ]
+  },
+  "next_steps": {
+    "summary": "Nên kiểm tra trước giấy tờ định danh, nơi nộp và mẫu biểu liên quan, rồi chọn kênh nộp phù hợp: Trực tiếp, Trực tuyến, Dịch vụ bưu chính. Hiện có khoảng 12 mục giấy tờ cần theo dõi trong checklist.",
+    "time_badge": "5 ngày làm việc",
+    "result_label": "Hộ chiếu phổ thông không gắn chíp điện tử hoặc hộ chiếu phổ thông có gắn chíp điện tử",
+    "primary_channel": "online",
+    "channels": [
+      "in_person",
+      "online",
+      "postal"
+    ]
+  },
+  "notes": [],
+  "provenance": {
+    "pipeline": "raw->structured->normalized->enriched->ui_api_payload",
+    "normalizer_version": "0.2.0",
+    "enricher_version": "0.2.0",
+    "mapping_notes": "workflow_generated:cu_tru_giay_to/ho_chieu",
+    "supported_group": true
+  }
+}

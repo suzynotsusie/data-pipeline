@@ -1,0 +1,511 @@
+{
+  "schema_version": "1.0",
+  "domain": "suc_khoe_y_te",
+  "updated_at": "2026-07-18",
+  "source_files": [
+    "C:\\Users\\ku060\\Downloads\\VAIC source\\data-pipeline\\main\\full-data.csv",
+    "C:\\Users\\ku060\\Downloads\\VAIC source\\data-pipeline\\raw_data"
+  ],
+  "subdomains": [
+    {
+      "subdomain_key": "kham_chua_benh",
+      "subdomain_label": "Khám, chữa bệnh",
+      "event_id": 312,
+      "summary": "Nhóm thủ tục chi trả trực tiếp chi phí khám, chữa bệnh bảo hiểm y tế và xác nhận không cùng chi trả trong năm cho người dân đi khám chữa bệnh.",
+      "entry_prompts": [
+        "Bạn đang cần thanh toán trực tiếp chi phí khám chữa bệnh BHYT hay xin giấy chứng nhận không cùng chi trả trong năm?"
+      ],
+      "procedure_count": 1,
+      "procedures": [
+        {
+          "procedure_code": "1.001656",
+          "procedure_title": "Thanh toán trực tiếp chi phí khám, chữa bệnh BHYT/Cấp giấy chứng nhận không cùng chi trả trong năm",
+          "subdomain_key": "kham_chua_benh",
+          "subdomain_label": "Khám, chữa bệnh",
+          "event_id": 312,
+          "field": "Thực hiện chính sách BHYT",
+          "agency": "Bảo hiểm xã hội tỉnh",
+          "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bfb-d76f-738b-9ca4-34d78e084f23",
+          "raw_data_file": "C:\\Users\\ku060\\Downloads\\VAIC source\\data-pipeline\\raw_data\\1_001656\\1_001656_procedure_detail.md",
+          "raw_data_available": true,
+          "operation_group": "chi_tra_bhyt_kham_chua_benh",
+          "operation_key": "thanh_toan_truc_tiep_chi_phi_kham_chua_benh_bhyt_cap_giay_chung_nhan_khong_cung_chi_tra_trong_nam",
+          "overview": "1. **Bước 1. Lập và nộp hồ sơ**",
+          "procedure_flow": "1. **Bước 1. Lập và nộp hồ sơ** Người bệnh hoặc thân nhân hoặc người đại diện hợp pháp theo quy định của pháp luật của người bệnh lập hồ sơ đề nghị thanh toán theo quy định tại mục 3.3 (Thành phần hồ sơ); nộp hồ sơ cho cơ quan BHXH. 2. **Bước 2.** Cơ quan BHXH tiếp nhận và thụ lý hồ sơ 3. **Bước 3. Nhận kết quả giải quyết** - Đối với trường hợp đề nghị thanh toán: nhận tiền theo phương thức đã đăng ký khi nộp hồ sơ. Trường hợp không được thanh toán: Văn bản nêu lý do không thanh toán của cơ quan BHXH. - Đối với trường hợp đề nghị cấp Giấy chứng nhận không cùng chi trả trong năm: nhận Giấy chứng nhận. Trường hợp không được cấp giấy chứng nhận, cơ quan BHXH có văn bản trả lời nêu rõ lý do.",
+          "requirements": "Không có thông tin",
+          "submission_methods": [
+            "Trực tuyến",
+            "Dịch vụ bưu chính",
+            "Trực tiếp"
+          ],
+          "processing_time_values": [
+            "40 ngày",
+            "40 ngày",
+            "40 ngày"
+          ],
+          "document_groups": [
+            {
+              "group_name": "1. Đối với việc thanh toán trực tiếp chi phí KCB",
+              "documents": [
+                {
+                  "Tên giấy tờ": "a) Bản chụp các giấy tờ sau (kèm bản chính để đối chiếu trong trường hợp nộp trực tiếp): + Thẻ BHYT và một trong các giấy tờ chứng minh về nhân thân có ảnh hợp lệ trong trường hợp thẻ BHYT chưa có ảnh (thẻ căn cước công dân/thẻ căn cước hoặc Chứng minh nhân dân còn giá trị sử dụng, Hộ chiếu, Thẻ Đảng viên, Thẻ Công an nhân dân, Thẻ quân nhân, Thẻ đoàn viên công đoàn, Thẻ học sinh, Thẻ sinh viên, Thẻ cựu chiến binh, Giấy phép lái xe hoặc một loại giấy tờ có ảnh hợp lệ khác); Giấy khai sinh, Giấy chứng sinh trong trường hợp trẻ em dưới 6 tuổi chưa có thẻ BHYT; + Giấy ra viện, phiếu khám bệnh hoặc sổ khám bệnh của lần KCB đề nghị thanh toán.",
+                  "Bản chính": "1",
+                  "Bản sao": "1",
+                  "Tệp đính kèm": "Không có"
+                },
+                {
+                  "Tên giấy tờ": "b) Bản chính: các hóa đơn, biên lai thu viện phí và các chứng từ liên quan khác. - Trong trường hợp người tham gia BHYT có nhu cầu sử dụng Hóa đơn, Biên lai bản chính vào mục đích khác, bộ phận một cửa của cơ quan BHXH chụp Hóa đơn, Biên lai và ký xác nhận trên bản chụp, trả bản chính cho người tham gia BHYT;  - Trường hợp người tham gia BHYT làm thất lạc Hóa đơn, Biên lai bản chính thì nộp bản chụp Hóa đơn, Biên lai hoặc bản chụp Hóa đơn, Biên lai có xác nhận của cơ sở khám bệnh, chữa bệnh nơi người có thẻ BHYT khám bệnh, chữa bệnh hoặc Bảng kê chi phí khám bệnh, chữa bệnh (theo Mẫu số 01/KBCB ban hành kèm theo Quyết định số 6556/QĐ-BYT ngày 30/10/2018 của Bộ Y tế); - Trong trường hồ sơ nộp qua dịch vụ bưu chính công ích hoặc qua hình thức trực tuyến là bản sao thì khi nhận kết quả phải xuất trình bản chính hoặc bản chụp có xác nhận của cơ sở KCB để đối chiếu.",
+                  "Bản chính": "1",
+                  "Bản sao": "1",
+                  "Tệp đính kèm": "Không có"
+                }
+              ]
+            },
+            {
+              "group_name": "2. Trường hợp đề nghị cấp giấy chứng nhận không cùng chi trả trong năm (có hoặc không kèm theo việc thanh toán trực tiếp chi phí KCB BHYT)",
+              "documents": [
+                {
+                  "Tên giấy tờ": "Hồ sơ tương tự như khoản 1 của mục 3.3 (Thành phần hồ sơ).",
+                  "Bản chính": "1",
+                  "Bản sao": "1",
+                  "Tệp đính kèm": "Không có"
+                }
+              ]
+            }
+          ],
+          "result_items": [
+            "Nhận tiền thanh toán chi phí KCB theo phương thức đăng ký (chuyển khoản hoặc nhận tiền mặt tại Phòng/bộ phận Tài chính - Kế toán của cơ quan BHXH) (Mã: `KQ.G24.000048`)",
+            "Giấy chứng nhận không cùng chi trả trong năm (nếu có đủ điều kiện) (Mã: `KQ.G24.000049`)",
+            "Trường hợp không được thanh toán hoặc không được cấp giấy Chứng nhận không cùng chi trả trong năm: nhận văn bản trả lời của cơ quan BHXH có nêu rõ lý do (Mã: `KQ.G24.000050`)"
+          ]
+        }
+      ]
+    },
+    {
+      "subdomain_key": "chinh_sach_y_te",
+      "subdomain_label": "Chính sách y tế",
+      "event_id": 314,
+      "summary": "Nhóm thủ tục liên quan đến tham gia BHYT, điều chỉnh thông tin sổ BHXH/thẻ BHYT và hưởng các chế độ ốm đau, thai sản, tai nạn lao động, bệnh nghề nghiệp, dưỡng sức phục hồi sức khỏe.",
+      "entry_prompts": [
+        "Bạn muốn tham gia hoặc điều chỉnh thẻ BHYT/sổ BHXH, hay đang làm hồ sơ hưởng chế độ ốm đau, thai sản, tai nạn lao động, bệnh nghề nghiệp?"
+      ],
+      "procedure_count": 8,
+      "procedures": [
+        {
+          "procedure_code": "1.001521",
+          "procedure_title": "Giải quyết hưởng chế độ TNLĐ, BNN do thương tật, bệnh tật tái phát",
+          "subdomain_key": "chinh_sach_y_te",
+          "subdomain_label": "Chính sách y tế",
+          "event_id": 314,
+          "field": "Thực hiện chính sách BHXH",
+          "agency": "",
+          "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bfb-d762-729a-96f1-56282cca04fa",
+          "raw_data_file": "C:\\Users\\ku060\\Downloads\\VAIC source\\data-pipeline\\raw_data\\1_001521\\1_001521_procedure_detail.md",
+          "raw_data_available": true,
+          "operation_group": "huong_tnld_bnn_tai_phat",
+          "operation_key": "giai_quyet_huong_che_do_tnld_bnn_do_thuong_tat_benh_tat_tai_phat",
+          "overview": "1. **Bước 1. Lập, nộp hồ sơ**",
+          "procedure_flow": "1. **Bước 1. Lập, nộp hồ sơ** NLĐ lập hồ sơ theo quy định tại mục 5.3 (Thành phần hồ sơ); nộp hồ sơ cho cơ quan BHXH nơi đang chi trả trợ cấp (đối với trường hợp đang hưởng trợ cấp hàng tháng); trường hợp đã hưởng trợ cấp TNLĐ, BNN một lần thì nộp hồ sơ cho cơ quan BHXH. 2. **Bước 2.** Cơ quan BHXH tiếp nhận hồ sơ và giải quyết theo quy định. 3. **Bước 3. Nhận kết quả giải quyết** NLĐ nhận Quyết định về việc hưởng trợ cấp TNLĐ, BNN hàng tháng hoặc một lần do vết thương tái phát; Quyết định về việc cấp tiền mua PTTGSH (nếu có); Bản quá trình đóng BHXH; Thẻ BHYT đối với trường hợp nghỉ việc hưởng trợ cấp TNLĐ, BNN hàng tháng và tiền trợ cấp; Thông báo về việc chi trả lương hưu, trợ cấp BHXH đối với trường hợp di chuyển hưởng chế độ BHXH tại huyện/tỉnh khác.",
+          "requirements": "Không có thông tin",
+          "submission_methods": [
+            "Trực tuyến",
+            "Dịch vụ bưu chính",
+            "Trực tiếp"
+          ],
+          "processing_time_values": [
+            "6 ngày làm việc",
+            "6 ngày làm việc",
+            "6 ngày làm việc"
+          ],
+          "document_groups": [
+            {
+              "group_name": "Trường hợp không quy định là bản chính thì có thể nộp bản sao hợp lệ. Trường hợp nộp hồ sơ trực tuyến: thành phần hồ sơ quy định là bản sao nhưng NLĐ có thể nộp bản chính điện tử",
+              "documents": [
+                {
+                  "Tên giấy tờ": "8. Trường hợp đang hưởng trợ cấp TNLĐ, BNN trước ngày 1/1/2007 đã được trang cấp PTTGSH nay đề nghị trang cấp tiếp: Hóa đơn, chứng từ mua các phương tiện được trang cấp, vé tàu xe đi lại để làm hoặc nhận phương tiện trang cấp (nếu có).",
+                  "Bản chính": "1",
+                  "Bản sao": "0",
+                  "Tệp đính kèm": "Không có"
+                },
+                {
+                  "Tên giấy tờ": "4. Biên bản giám định mức suy giảm KNLĐ lần trước gần nhất của Hội đồng GĐYK đối với trường hợp đã được giám định nhưng không đủ điều kiện về mức suy giảm KNLĐ để hưởng trợ cấp.",
+                  "Bản chính": "1",
+                  "Bản sao": "0",
+                  "Tệp đính kèm": "Không có"
+                },
+                {
+                  "Tên giấy tờ": "3. Trường hợp đang hưởng trợ cấp TNLĐ, BNN trước ngày 1/1/2007 đã được trang cấp PTTGSH nay đề nghị trang cấp tiếp: Hóa đơn, chứng từ mua các phương tiện được trang cấp, vé tàu xe đi lại để làm hoặc nhận phương tiện trang cấp (nếu có).",
+                  "Bản chính": "1",
+                  "Bản sao": "0",
+                  "Tệp đính kèm": "Không có"
+                },
+                {
+                  "Tên giấy tờ": "6. Chỉ định của cơ sở KCB, cơ sở chỉnh hình, phục hồi chức năng thuộc ngành Lao động - Thương binh và Xã hội hoặc của bệnh viện cấp tỉnh và tương đương trở lên về việc trang cấp PTTGSH (nếu có).",
+                  "Bản chính": "1",
+                  "Bản sao": "0",
+                  "Tệp đính kèm": "Không có"
+                },
+                {
+                  "Tên giấy tờ": "1. Bản chính Sổ BHXH (trong trường hợp bảo lưu thời gian đóng BHXH mà chưa có dữ liệu trong hệ thống hoặc chưa được cấp mã BHXH đối với trường hợp bị TNLĐ, BNN đã được GĐYK nhưng không đủ điều kiện về mức suy giảm KNLĐ để hưởng trợ cấp)",
+                  "Bản chính": "1",
+                  "Bản sao": "0",
+                  "Tệp đính kèm": "Không có"
+                },
+                {
+                  "Tên giấy tờ": "5. Biên bản giám định lại mức suy giảm KNLĐ sau khi điều trị thương tật, bệnh tật tái phát của Hội đồng GĐYK.",
+                  "Bản chính": "1",
+                  "Bản sao": "0",
+                  "Tệp đính kèm": "Không có"
+                },
+                {
+                  "Tên giấy tờ": "2. Đối với trường hợp điều trị xong, ra viện trước ngày 01/7/2016 mà lần giám định trước không đủ điều kiện về mức suy giảm KNLĐ để hưởng trợ cấp TNLĐ, BNN: Biên bản điều tra TNLĐ hoặc kết quả đo đạc, quan trắc môi trường lao động; Trường hợp bị TNGT được xác định là TNLĐ thì có thêm bản sao một trong các giấy tờ sau: Biên bản khám nghiệm hiện trường, sơ đồ hiện trường hoặc Biên bản TNGT của cơ quan công an hoặc cơ quan điều tra hình sự quân đội.",
+                  "Bản chính": "1",
+                  "Bản sao": "0",
+                  "Tệp đính kèm": "Không có"
+                },
+                {
+                  "Tên giấy tờ": "7. Hóa đơn, chứng từ thu phí giám định kèm theo bảng kê các nội dung giám định của cơ sở thực hiện GĐYK (Trường hợp thanh toán phí GĐYK).",
+                  "Bản chính": "1",
+                  "Bản sao": "0",
+                  "Tệp đính kèm": "Không có"
+                }
+              ]
+            }
+          ],
+          "result_items": [
+            "Tiền trợ cấp (Mã: `KQ.G24.000053`)",
+            "Bản quá trình đóng BHXH (Mẫu 04-HSB) (Mã: `KQ.G24.000057`)",
+            "Thẻ BHYT đối với trường hợp nghỉ việc hưởng trợ cấp TNLĐ, BNN hàng tháng (Mã: `KQ.G24.000060`)",
+            "Thông báo về việc chi trả lương hưu, trợ cấp BHXH đối với trường hợp di chuyển hưởng chế độ BHXH tại huyện/tỉnh khác (Mẫu 23-HSB) (Mã: `KQ.G24.000061`)",
+            "Quyết định về việc hưởng trợ cấp TNLĐ, BNN hàng tháng hoặc một lần do vết thương tái phát (Các mẫu 03E-HSB, 03G-HSB, 03H-HSB, 03K-HSB) và Quyết định về việc cấp tiền mua PTTGSH (mẫu 03P-HSB) (nếu có) (Mã: `KQ.G24.000059`)"
+          ]
+        },
+        {
+          "procedure_code": "1.001598",
+          "procedure_title": "Giải quyết hưởng trợ cấp nghỉ DSPHSK sau ốm đau, thai sản, TNLĐ, BNN",
+          "subdomain_key": "chinh_sach_y_te",
+          "subdomain_label": "Chính sách y tế",
+          "event_id": 314,
+          "field": "Thực hiện chính sách BHXH",
+          "agency": "",
+          "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bfb-d775-76cf-83da-e130c0a7d45d",
+          "raw_data_file": "C:\\Users\\ku060\\Downloads\\VAIC source\\data-pipeline\\raw_data\\1_001598\\1_001598_procedure_detail.md",
+          "raw_data_available": true,
+          "operation_group": "huong_che_do_thai_san",
+          "operation_key": "giai_quyet_huong_tro_cap_nghi_dsphsk_sau_om_dau_thai_san_tnld_bnn",
+          "overview": "1. **Bước 1. Lập, nộp hồ sơ**",
+          "procedure_flow": "1. **Bước 1. Lập, nộp hồ sơ** a) Lập Danh sách đề nghị giải quyết hưởng chế độ ốm đau, thai sản, DSPHSK (mẫu 01B-HSB). b) Nộp hồ sơ cho cơ quan BHXH nơi đơn vị SDLĐ đóng BHXH. 2. **Bước 2.** Cơ quan BHXH tiếp nhận hồ sơ và giải quyết theo quy định. 3. **Bước 3. Nhận kết quả giải quyết** 1. Đơn vị SDLĐ: nhận Danh sách giải quyết hưởng chế độ ốm đau, thai sản, trợ cấp DSPHSK (mẫu C70a-HD) và tiền trợ cấp để chi trả cho NLĐ đăng ký nhận tiền mặt tại đơn vị SDLĐ. 2. NLĐ: nhận tiền trợ cấp.",
+          "requirements": "Không có thông tin",
+          "submission_methods": [
+            "Trực tuyến",
+            "Dịch vụ bưu chính",
+            "Trực tiếp"
+          ],
+          "processing_time_values": [
+            "6 ngày làm việc",
+            "6 ngày làm việc",
+            "6 ngày làm việc"
+          ],
+          "document_groups": [],
+          "result_items": [
+            "Tiền trợ cấp (Mã: `KQ.G24.000053`)",
+            "Thông báo Danh sách giải quyết hưởng chế độ ốm đau, thai sản, dưỡng sức phục hồi sức khỏe (Mã: `KQ.G24.000005`)",
+            "Giấy ủy quyền (Mẫu số 13-HSB) (Mã: `KQ.G24.000056`)"
+          ]
+        },
+        {
+          "procedure_code": "1.001632",
+          "procedure_title": "Giải quyết hưởng chế độ TNLĐ, BNN đối với trường hợp bị TNLĐ lần đầu",
+          "subdomain_key": "chinh_sach_y_te",
+          "subdomain_label": "Chính sách y tế",
+          "event_id": 314,
+          "field": "Thực hiện chính sách BHXH",
+          "agency": "",
+          "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bfb-d76e-761e-aa77-47b49482a007",
+          "raw_data_file": "C:\\Users\\ku060\\Downloads\\VAIC source\\data-pipeline\\raw_data\\1_001632\\1_001632_procedure_detail.md",
+          "raw_data_available": true,
+          "operation_group": "huong_tnld_bnn_lan_dau",
+          "operation_key": "giai_quyet_huong_che_do_tnld_bnn_doi_voi_truong_hop_bi_tnld_lan_dau",
+          "overview": "1. **Bước 1. Lập, nộp hồ sơ**",
+          "procedure_flow": "1. **Bước 1. Lập, nộp hồ sơ** 1. NLĐ lập hồ sơ theo quy định tại mục 4.3 (Thành phần hồ sơ); Nộp hồ sơ cho đơn vị SDLĐ. 2. NLĐ đã nghỉ hưu, thôi việc hoặc chuyển sang đơn vị SDLĐ khác bị mắc BNN trong thời gian bảo đảm lập hồ sơ theo quy định tại điểm 1, 3, 5, 6 mục 4.3 (Thành phần hồ sơ); Nộp hồ sơ cho cơ quan BHXH nơi đang chi trả lương hưu (đối với trường hợp đang hưởng lương hưu) hoặc cơ quan BHXH (trong trường hợp đã thôi việc) hoặc nộp cho đơn vị SDLĐ nơi NLĐ đang làm việc (đối với trường hợp chuyển sang đơn vị SDLĐ khác). 3. Đơn vị SDLĐ: Tiếp nhận hồ sơ từ NLĐ nêu tại điểm 1; điểm 2 (trường hợp NLĐ chuyển đến đơn vị làm việc bị mắc BNN); lập Văn bản đề nghị giải quyết chế độ TNLĐ hoặc BNN (mẫu số 05A-HSB); nộp cho cơ quan BHXH nơi đơn vị SDLĐ đóng BHXH. Đối với NLĐ sau khi đã nghỉ việc hoặc đã về hưu người SDLĐ mới lập hồ sơ giải quyết chế độ BHXH về TNLĐ trong thời gian NLĐ làm việc thì người SDLĐ chuyển hồ sơ đến cơ quan BHXH (trường hợp đã nghỉ việc) hoặc nơi chi trả lương hưu (trường hợp đang hưởng lương hưu). 2. **Bước 2.** Cơ quan BHXH tiếp nhận hồ sơ và giải quyết theo quy định. 3. **Bước 3. Nhận kết quả giải quyết** 1. Đơn vị SDLĐ: Quyết định về việc hưởng trợ cấp TNLĐ, BNN hàng tháng hoặc một lần; Quyết định cấp tiền mua PTTGSH (nếu có); Bản quá trình đóng BHXH; Thẻ BHYT đối với trường hợp nghỉ việc hưởng trợ cấp TNLĐ, BNN hàng tháng; Thông báo về việc chi trả lương hưu, trợ cấp BHXH đối với trường hợp di chuyển hưởng chế độ BHXH tại huyện/tỉnh khác để trả cho NLĐ. 2. NLĐ: - Nhận tiền trợ cấp; - Trường hợp NLĐ nghỉ hưu, thôi việc: Quyết định hưởng trợ cấp TNLĐ, BNN hàng tháng hoặc một lần; Quyết định cấp tiền mua PTTGSH (nếu có); Bản quá trình đóng BHXH; thẻ BHYT đối với trường hợp hưởng trợ cấp TNLĐ, BNN hàng tháng; Thông báo về việc chi trả lương hưu, trợ cấp BHXH đối với trường hợp di chuyển hưởng chế độ BHXH tại huyện/tỉnh khác.",
+          "requirements": "Không có thông tin",
+          "submission_methods": [
+            "Trực tuyến",
+            "Dịch vụ bưu chính",
+            "Trực tiếp"
+          ],
+          "processing_time_values": [
+            "6 ngày làm việc",
+            "6 ngày làm việc",
+            "6 ngày làm việc"
+          ],
+          "document_groups": [
+            {
+              "group_name": "Trường hợp không quy định là bản chính thì có thể nộp bản sao hợp lệ. Trường hợp nộp hồ sơ trực tuyến: thành phần hồ sơ quy định là bản sao nhưng NLĐ có thể nộp bản chính điện tử",
+              "documents": [
+                {
+                  "Tên giấy tờ": "6. Hóa đơn, chứng từ thu phí giám định; bảng kê các nội dung giám định của cơ sở thực hiện GĐYK (trường hợp thanh toán phí GĐYK).",
+                  "Bản chính": "1",
+                  "Bản sao": "0",
+                  "Tệp đính kèm": "Không có"
+                },
+                {
+                  "Tên giấy tờ": "4. Trường hợp bị BNN mà không điều trị nội trú thì có thêm Giấy khám BNN.",
+                  "Bản chính": "1",
+                  "Bản sao": "0",
+                  "Tệp đính kèm": "Không có"
+                },
+                {
+                  "Tên giấy tờ": "3. Biên bản giám định mức suy giảm KNLĐ của Hội đồng GĐYK hoặc bản sao Giấy chứng nhận bị nhiễm HIV/AIDS do tai nạn rủi ro nghề nghiệp trong trường hợp bị nhiễm HIV/AIDS do tai nạn rủi ro nghề nghiệp (tương đương mức suy giảm KNLĐ 61%), nếu GĐYK mà tỷ lệ suy giảm KNLĐ cao hơn 61% thì hồ sơ hưởng chế độ BNN trong trường hợp này phải có Biên bản GĐYK.",
+                  "Bản chính": "1",
+                  "Bản sao": "0",
+                  "Tệp đính kèm": "Không có"
+                },
+                {
+                  "Tên giấy tờ": "1. Bản chính Văn bản đề nghị giải quyết chế độ TNLĐ, BNN (mẫu 05A-HSB) của đơn vị SDLĐ; bản chính Đơn đề nghị về việc hưởng chế độ BNN (mẫu 01) ban hành kèm theo Nghị định số 88/2020/NĐ-CP",
+                  "Bản chính": "1",
+                  "Bản sao": "0",
+                  "Tệp đính kèm": "Không có"
+                },
+                {
+                  "Tên giấy tờ": "2. Bản sao Giấy ra viện hoặc trích sao hồ sơ bệnh án sau khi đã điều trị TNLĐ hoặc BNN (trường hợp điều trị nội trú)",
+                  "Bản chính": "0",
+                  "Bản sao": "1",
+                  "Tệp đính kèm": "Không có"
+                },
+                {
+                  "Tên giấy tờ": "5. Chỉ định của cơ sở KCB, cơ sở chỉnh hình, phục hồi chức năng theo quy định về trang cấp PTTGSH (nếu có)",
+                  "Bản chính": "1",
+                  "Bản sao": "0",
+                  "Tệp đính kèm": "Không có"
+                }
+              ]
+            }
+          ],
+          "result_items": [
+            "Bản quá trình đóng BHXH (Mẫu 04-HSB) (Mã: `KQ.G24.000057`)",
+            "Tiền trợ cấp (Mã: `KQ.G24.000053`)",
+            "Thẻ BHYT đối với trường hợp nghỉ việc hưởng trợ cấp TNLĐ, BNN hàng tháng (Mã: `KQ.G24.000060`)",
+            "Quyết định về việc hưởng trợ cấp TNLĐ, BNN hàng tháng hoặc một lần (Mã: `KQ.G12.001155`)",
+            "Thông báo về việc chi trả lương hưu, trợ cấp BHXH đối với trường hợp di chuyển hưởng chế độ BHXH tại huyện/tỉnh khác (Mẫu 23-HSB). (Mã: `KQ.G24.000058`)"
+          ]
+        },
+        {
+          "procedure_code": "1.001643",
+          "procedure_title": "Giải quyết hưởng chế độ TNLĐ, BNN đối với trường hợp đã bị TNLĐ, BNN nay tiếp tục bị TNLĐ hoặc BNN",
+          "subdomain_key": "chinh_sach_y_te",
+          "subdomain_label": "Chính sách y tế",
+          "event_id": 314,
+          "field": "Thực hiện chính sách BHXH",
+          "agency": "",
+          "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bfb-d771-75ed-afc0-f71a2d90fd9b",
+          "raw_data_file": "C:\\Users\\ku060\\Downloads\\VAIC source\\data-pipeline\\raw_data\\1_001643\\1_001643_procedure_detail.md",
+          "raw_data_available": true,
+          "operation_group": "huong_tnld_bnn_tiep_tuc",
+          "operation_key": "giai_quyet_huong_che_do_tnld_bnn_doi_voi_truong_hop_da_bi_tnld_bnn_nay_tiep_tuc_bi_tnld_hoac_bnn",
+          "overview": "1. **Bước 1. Lập, nộp hồ sơ**",
+          "procedure_flow": "1. **Bước 1. Lập, nộp hồ sơ** 1. NLĐ lập hồ sơ theo quy định tại mục 6.3 (Thành phần hồ sơ); nộp hồ sơ cho đơn vị SDLĐ. 2. Đơn vị SDLĐ tiếp nhận hồ sơ từ NLĐ, lập Văn bản đề nghị giải quyết chế độ TNLĐ hoặc BNN (mẫu số 05A-HSB) và hoàn thiện hồ sơ theo quy định; nộp hồ sơ cho cơ quan BHXH nơi đơn vị SDLĐ đóng BHXH trong thời hạn 30 ngày kể từ ngày nhận đủ hồ sơ từ NLĐ. 2. **Bước 2.** Cơ quan BHXH tiếp nhận hồ sơ và giải quyết theo quy định 3. **Bước 3. Nhận kết quả giải quyết** 1. NLĐ: Nhận tiền trợ cấp 2. Đơn vị SDLĐ: Nhận Quyết định về việc hưởng trợ cấp TNLĐ, BNN hàng tháng hoặc một lần do giám định tổng hợp mức suy giảm khả năng lao động và Quyết định cấp tiền mua PTTGSH (nếu có); Bản quá trình đóng BHXH; Thẻ BHYT đối với trường hợp nghỉ việc hưởng trợ cấp TNLĐ, BNN hàng tháng; Thông báo về việc chi trả lương hưu, trợ cấp BHXH đối với trường hợp di chuyển hưởng chế độ BHXH tại huyện/tỉnh khác để trả cho NLĐ.",
+          "requirements": "Không có thông tin",
+          "submission_methods": [
+            "Trực tuyến",
+            "Dịch vụ bưu chính",
+            "Trực tiếp"
+          ],
+          "processing_time_values": [
+            "6 ngày làm việc",
+            "6 ngày làm việc",
+            "6 ngày làm việc"
+          ],
+          "document_groups": [
+            {
+              "group_name": "Trường hợp không quy định là bản chính thì có thể nộp bản chính hoặc bản sao hợp lệ",
+              "documents": [
+                {
+                  "Tên giấy tờ": "4. Trường hợp đang hưởng trợ cấp TNLĐ, BNN trước ngày 1/1/2007 đã được trang cấp PTTGSH nay đề nghị trang cấp tiếp: Hóa đơn, chứng từ mua các phương tiện được trang cấp; vé tàu xe đi lại để làm hoặc nhận phương tiện trang cấp (nếu có).",
+                  "Bản chính": "1",
+                  "Bản sao": "0",
+                  "Tệp đính kèm": "Không có"
+                },
+                {
+                  "Tên giấy tờ": "7. Hóa đơn, chứng từ thu phí giám định kèm theo bảng kê các nội dung giám định của cơ sở thực hiện GĐYK (Trường hợp thanh toán phí GĐYK).",
+                  "Bản chính": "1",
+                  "Bản sao": "0",
+                  "Tệp đính kèm": "Không có"
+                },
+                {
+                  "Tên giấy tờ": "3. Trường hợp bị TNLĐ, BNN điều trị xong, ra viện trước ngày 01 tháng 7 năm 2016 mà chưa được giám định mức suy giảm KNLĐ: - Đối với TNLĐ: Biên bản điều tra TNLĐ; nếu bị TNGT được xác định là TNLĐ thì có thêm một trong các giấy tờ sau: Bản sao Biên bản khám nghiệm hiện trường, sơ đồ hiện trường vụ TNGT hoặc bản sao biên bản TNGT của cơ quan công an hoặc cơ quan điều tra hình sự quân đội. - Đối với BNN: Kết quả đo đạc, quan trắc môi trường lao động.",
+                  "Bản chính": "1",
+                  "Bản sao": "1",
+                  "Tệp đính kèm": "Không có"
+                },
+                {
+                  "Tên giấy tờ": "2. Bản sao Giấy ra viện hoặc trích sao hồ sơ bệnh án sau khi đã điều trị TNLĐ, BNN của lần điều trị nội trú sau cùng.",
+                  "Bản chính": "0",
+                  "Bản sao": "1",
+                  "Tệp đính kèm": "Không có"
+                },
+                {
+                  "Tên giấy tờ": "1. Bản chính Văn bản đề nghị giải quyết chế độ TNLĐ, BNN (mẫu số 05A-HSB) đối với lần bị TNLĐ, BNN sau cùng; trường hợp lần bị TNLĐ, BNN trước đó tại đơn vị SDLĐ khác nhưng chưa được giải quyết chế độ thì có thêm bản chính văn bản đề nghị giải quyết của đơn vị SDLĐ nơi xảy ra TNLĐ, BNN (mẫu số 05A-HSB).",
+                  "Bản chính": "1",
+                  "Bản sao": "0",
+                  "Tệp đính kèm": "Không có"
+                },
+                {
+                  "Tên giấy tờ": "6. Chỉ định của cơ sở KCB, cơ sở chỉnh hình, phục hồi chức năng theo quy định về việc trang cấp PTTGSH (nếu có).",
+                  "Bản chính": "1",
+                  "Bản sao": "0",
+                  "Tệp đính kèm": "Không có"
+                },
+                {
+                  "Tên giấy tờ": "5. Biên bản giám định tổng hợp mức suy giảm KNLĐ của Hội đồng GĐYK; trường hợp lần bị TNLĐ, BNN trước đã được giám định mức suy giảm KNLĐ nhưng không đủ điều kiện hưởng trợ cấp thì có thêm Biên bản giám định mức suy giảm KNLĐ của lần giám định đó.",
+                  "Bản chính": "1",
+                  "Bản sao": "0",
+                  "Tệp đính kèm": "Không có"
+                }
+              ]
+            }
+          ],
+          "result_items": [
+            "Thẻ BHYT đối với trường hợp nghỉ việc hưởng trợ cấp TNLĐ, BNN hàng tháng (Mã: `KQ.G24.000060`)",
+            "Tiền trợ cấp (Mã: `KQ.G24.000053`)",
+            "Quyết định về việc cấp tiền mua PTTGSH (Mã: `KQ.G12.001156`)",
+            "Quyết định về việc hưởng trợ cấp TNLĐ/BNN hàng tháng hoặc một lần do giám định tổng hợp mức suy giảm KNLĐ (Mã: `KQ.G12.001157`)",
+            "Quyết định về việc cấp tiền mua phương tiện trợ giúp sinh hoạt, dụng cụ chỉnh hình (Mã: `KQ.G24.000011`)",
+            "Quyết định về việc hưởng trợ cấp TNLĐ /bệnh nghề nghiệp hàng tháng do giám định tổng hợp mức suy giảm khả năng lao động (Mã: `KQ.G24.000018`)",
+            "Quyết định về việc hưởng trợ cấp TNLĐ/BNN một lần do giám định tổng hợp mức suy giảm khả năng lao động (Mã: `KQ.G24.000019`)"
+          ]
+        },
+        {
+          "procedure_code": "1.001667",
+          "procedure_title": "Giải quyết hưởng chế độ ốm đau",
+          "subdomain_key": "chinh_sach_y_te",
+          "subdomain_label": "Chính sách y tế",
+          "event_id": 314,
+          "field": "Thực hiện chính sách BHXH",
+          "agency": "",
+          "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bfb-d7a1-70cd-b177-166039682b48",
+          "raw_data_file": "C:\\Users\\ku060\\Downloads\\VAIC source\\data-pipeline\\raw_data\\1_001667\\1_001667_procedure_detail.md",
+          "raw_data_available": true,
+          "operation_group": "huong_che_do_om_dau",
+          "operation_key": "giai_quyet_huong_che_do_om_dau",
+          "overview": "1. **Bước 1. Lập, nộp hồ sơ**",
+          "procedure_flow": "1. **Bước 1. Lập, nộp hồ sơ** 1. NLĐ: lập hồ sơ theo quy định tại mục Thành phần hồ sơ và nộp cho đơn vị SDLĐ. 2. Đơn vị SDLĐ: tiếp nhận hồ sơ từ NLĐ; lập Danh sách đề nghị giải quyết hưởng chế độ ốm đau, thai sản, DSPHSK (mẫu số 01B-HSB) trong thời hạn 10 ngày kể từ ngày nhận đủ hồ sơ theo quy định; nộp cho cơ quan BHXH nơi đơn vị SDLĐ đóng BHXH. 2. **Bước 2.** Cơ quan BHXH tiếp nhận hồ sơ và giải quyết theo quy định 3. **Bước 3. Nhận kết quả giải quyết** 1. Đơn vị SDLĐ: nhận Danh sách giải quyết hưởng chế độ ốm đau, thai sản, DSPHSK và tiền trợ cấp. 2. NLĐ: nhận tiền trợ cấp.",
+          "requirements": "Không có thông tin",
+          "submission_methods": [
+            "Trực tuyến",
+            "Dịch vụ bưu chính",
+            "Trực tiếp"
+          ],
+          "processing_time_values": [
+            "6 ngày làm việc",
+            "6 ngày làm việc",
+            "6 ngày làm việc"
+          ],
+          "document_groups": [
+            {
+              "group_name": "1. Đối với NLĐ (Trường hợp không quy định là bản chính thì có thể nộp bản sao hợp lệ. Trường hợp nộp hồ sơ trực tuyến: thành phần hồ sơ quy định là bản sao nhưng NLĐ có thể nộp bản chính điện tử).",
+              "documents": [
+                {
+                  "Tên giấy tờ": "1.1. Trường hợp điều trị nội trú: 1.1.1. Bản sao Giấy ra viện của NLĐ hoặc của con NLĐ dưới 7 tuổi. Trường hợp người bệnh tử vong tại cơ sở khám bệnh, chữa bệnh thì thay bằng bản sao Giấy báo tử; trường hợp Giấy báo tử không thể hiện thời gian vào viện thì bổ sung giấy tờ khác của cơ sở khám, chữa bệnh có thể hiện thời gian vào viện; 1.1.2. Trường hợp chuyển tuyến khám bệnh, chữa bệnh trong quá trình điều trị nội trú thì có thêm Bản sao Giấy chuyển tuyến hoặc Giấy chuyển viện.",
+                  "Bản chính": "0",
+                  "Bản sao": "1",
+                  "Tệp đính kèm": "Không có"
+                },
+                {
+                  "Tên giấy tờ": "1.3. Trường hợp NLĐ hoặc con của NLĐ khám, chữa bệnh ở nước ngoài: Bản sao của bản dịch tiếng Việt giấy KCB do cơ sở KCB ở nước ngoài cấp.",
+                  "Bản chính": "0",
+                  "Bản sao": "1",
+                  "Tệp đính kèm": "Không có"
+                },
+                {
+                  "Tên giấy tờ": "1.2. Trường hợp điều trị ngoại trú:  Bản chính Giấy chứng nhận nghỉ việc hưởng BHXH. Trường hợp cả cha và mẹ đều nghỉ việc chăm con thì giấy chứng nhận nghỉ việc của một trong hai người là bản sao; hoặc giấy ra viện có chỉ định của y, bác sỹ điều trị cho nghỉ thêm sau thời gian điều trị nội trú.",
+                  "Bản chính": "1",
+                  "Bản sao": "0",
+                  "Tệp đính kèm": "Không có"
+                }
+              ]
+            },
+            {
+              "group_name": "2. Đối với đơn vị SDLĐ",
+              "documents": [
+                {
+                  "Tên giấy tờ": "Bản chính Danh sách đề nghị giải quyết hưởng chế độ ốm đau, thai sản, DSPHSK (mẫu 01B-HSB).",
+                  "Bản chính": "1",
+                  "Bản sao": "0",
+                  "Tệp đính kèm": "Không có"
+                }
+              ]
+            }
+          ],
+          "result_items": [
+            "Thông báo Danh sách giải quyết hưởng chế độ ốm đau, thai sản, dưỡng sức phục hồi sức khỏe (Mã: `KQ.G24.000005`)",
+            "Tiền trợ cấp (Mã: `KQ.G24.000053`)"
+          ]
+        },
+        {
+          "procedure_code": "1.001939",
+          "procedure_title": "Đăng ký đóng, cấp thẻ BHYT đối với người chỉ tham gia BHYT",
+          "subdomain_key": "chinh_sach_y_te",
+          "subdomain_label": "Chính sách y tế",
+          "event_id": 314,
+          "field": "Thu BHXH, BHYT, BHTN, BH tai nạn lao động, BNN",
+          "agency": "Bảo hiểm xã hội tỉnh",
+          "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bfb-d79c-73cd-8614-c7a7882c5e05",
+          "raw_data_file": "C:\\Users\\ku060\\Downloads\\VAIC source\\data-pipeline\\raw_data\\1_001939\\1_001939_procedure_detail.md",
+          "raw_data_available": true,
+          "operation_group": "dieu_chinh_so_bhxh_the_bhyt",
+          "operation_key": "dang_ky_dong_cap_the_bhyt_doi_voi_nguoi_chi_tham_gia_bhyt",
+          "overview": "Bước 1. Lập, nộp hồ sơ 1. Người tham gia lập hồ sơ theo quy định tại tiết 1 mục Thành phần hồ sơ a) Đối với người tham gia do tổ chức BHXH đóng BHYT: Nộp hồ sơ cho UBND xã hoặc cho cơ quan BHXH. Đối với người đang hưởng trợ cấp thất nghiệp: nộp hồ sơ cho cơ quan BHXH. b) Đối với người tham gia do ngân sách nhà nước đóng, (hỗ trợ 100% mức đóng BHYT): Nộp hồ sơ cho UBND xã. Trừ các trường hợp: - Người tham gia đã hiến bộ phận cơ thể người: nộp hồ sơ cho cơ quan BHXH; - Người tham gia do cơ quan, đơn vị quản lý: nộp hồ sơ cho đơn vị quản lý đối tượng. c) Đối với người được ngân sách nhà nước hỗ trợ một phần mức đóng BHYT: - Trường hợp nộp hồ sơ cho Tổ chức dịch vụ hoặc cơ quan BHXH: Lập hồ sơ theo quy định tại tiết 1.1 điểm 1 Mục Thành phần hồ sơ và nộp cho tổ chức dịch vụ hoặc cơ quan BHXH. - Trường hợp nộp qua Cổng Dịch vụ công: Lập hồ sơ theo quy định tại tiết 1.2 điểm 1 Mục Thành phần hồ sơ và nộp trực tuyến trên Cổng Dịch vụ công. - Học sinh, sinh viên: Nộp hồ sơ cho cơ sở giáo dục. d) Người tham gia BHYT theo hộ gia đình: - Trường hợp nộp hồ sơ cho Tổ chức dịch vụ hoặc cơ quan BHXH: Lập hồ sơ theo quy định tại tiết 1.1 điểm 1 Mục Thành phần hồ sơ và nộp cho tổ chức dịch vụ hoặc cơ quan BHXH trên toàn quốc. - Trường hợp nộp qua Cổng Dịch vụ công: Lập hồ sơ theo quy định tại tiết 1.2 điểm 1 Mục Thành phần hồ sơ và nộp trực tuyến trên Cổng Dịch vụ công. 2. Đối với UBND xã: Nhận hồ sơ của người tham gia, lập hồ sơ theo quy định tại tiết 2 mục Thành phần hồ sơ và nộp hồ sơ như sau: a) Đối với người tham gia do tổ chức BHXH đóng: Nộp cho cơ quan BHXH. b) Đối với người tham gia do Bộ Lao động - Thương binh và Xã hội quản lý: nộp cho cơ quan Lao động - Thương binh và xã hội và cơ quan BHXH cấp huyện. c) Các đối tượng còn lại nộp cho cơ quan BHXH. 3. Cơ quan Lao động - Thương binh và xã hội: Nhận hồ sơ do UBND xã gửi đến, phối hợp với cơ quan BHXH rà soát, kiểm tra, đối chiếu, xác nhận số người tham gia, số tiền phải đóng của từng nhóm đối tượng. 4. Cơ sở trợ giúp xã hội/Cơ sở nuôi dưỡng, điều dưỡng thương binh và người có công/Cơ sở giáo dục nghề nghiệp thuộc ngành Lao động - Thương binh và xã hội/cơ quan/đơn vị quản lý người chỉ tham gia BHYT: Nhận hồ sơ của người tham gia, lập hồ sơ theo quy định tại tiết 2 mục Thành phần hồ sơ và nộp cho cơ quan BHXH. 5. Tổ chức dịch vụ: Nhận hồ sơ của người tham gia, thu tiền đóng thuộc trách nhiệm đóng của người tham gia BHYT và lập hồ sơ theo quy định tiết 2 mục Thành phần hồ sơ, nộp cho cơ quan BHXH. 6. Cơ sở giáo dục: Nhận hồ sơ của học sinh, sinh viên, thu tiền đóng BHYT thuộc trách nhiệm đóng của học sinh, sinh viên; lập hồ sơ theo quy định tại tiết 2 mục Thành phần hồ sơ và nộp cho cơ quan BHXH. 7. Phòng/Tổ chế độ BHXH: Nhận hồ sơ của người tham gia BHYT do tổ chức BHXH đóng (kể cả đối tượng đang chờ ban hành quyết định hưởng hưu trí) từ Bộ phận một cửa; lập hồ sơ theo quy định tại tiết 3 mục Thành phần hồ sơ chuyển cho Phòng/Tổ Quản lý Thu - Sổ, Thẻ 8. Trường hợp hoàn trả: Người tham gia nộp hồ sơ theo quy định tại tiết 4 mục Thành phần hồ sơ cho Tổ chức dịch vụ (đối với người tham gia được ngân sách nhà nước hỗ trợ một phần mức đóng BHYT, người tham gia BHYT theo hộ gia đình); cơ sở giáo dục (đối với học sinh, sinh viên) hoặc cơ quan BHXH. Bước 2. Đóng tiền 1. Người tham gia: a) Người được ngân sách nhà nước hỗ trợ một phần mức đóng BHYT; người tham gia BHYT theo hộ gia đình: Đóng tiền cho tổ chức dịch vụ hoặc cho cơ quan BHXH; Trường hợp người tham gia nộp hồ sơ qua Cổng Dịch vụ công: Lập hồ sơ theo quy định tại tiết 1.2 điểm 1 Mục Thành phần hồ sơ và nộp trực tuyến trên Cổng Dịch vụ công. b) Học sinh, sinh viên: đóng tiền cho cơ sở giáo dục. 2. Tổ chức dịch vụ: Thu tiền đóng BHYT phần thuộc trách nhiệm đóng của người tham gia; cấp biên lai thu tiền cho người tham gia theo quy định. Nộp số tiền đã thu của người tham gia cho cơ quan BHXH hàng ngày thông qua tài khoản ngân hàng hoặc hệ thống tiện ích thông minh. 3. Cơ sở giáo dục: Nộp số tiền đã thu của Học sinh, sinh viên cho cơ quan BHXH hàng ngày thông qua tài khoản ngân hàng. 4. Cơ quan Lao động – Thương binh và xã hội: Chuyển tiền đóng BHYT theo phân cấp hoặc phối hợp với cơ quan BHXH đề nghị cơ quan tài chính chuyển tiền đóng BHYT cho cơ quan BHXH theo quy định 5. UBND xã/Cơ sở trợ giúp xã hội/Cơ sở nuôi dưỡng, điều dưỡng thương binh và người có công/Cơ sở giáo dục nghề nghiệp thuộc ngành Lao động - Thương binh và xã hội/cơ quan/đơn vị quản lý người chỉ tham gia BHYT: Chuyển tiền đóng BHYT theo phân cấp hoặc đề nghị cơ quan Lao động - Thương binh và xã hội hoặc cơ quan tài chính chuyển kinh phí đóng BHYT cho cơ quan BHXH. Bước 3. Cơ quan BHXH tiếp nhận hồ sơ và giải quyết theo quy định Bước 4. Nhận kết quả, gồm: Thẻ BHYT; Quyết định hoàn trả và tiền hoàn trả (nếu có) Thời hạn giải quyết Kể từ ngày cơ quan BHXH nhận đủ hồ sơ theo quy định: Không quá 05 ngày; riêng đối với người hưởng trợ cấp thất nghiệp không quá 02 ngày.",
+          "procedure_flow": "Bước 1. Lập, nộp hồ sơ 1. Người tham gia lập hồ sơ theo quy định tại tiết 1 mục Thành phần hồ sơ a) Đối với người tham gia do tổ chức BHXH đóng BHYT: Nộp hồ sơ cho UBND xã hoặc cho cơ quan BHXH. Đối với người đang hưởng trợ cấp thất nghiệp: nộp hồ sơ cho cơ quan BHXH. b) Đối với người tham gia do ngân sách nhà nước đóng, (hỗ trợ 100% mức đóng BHYT): Nộp hồ sơ cho UBND xã. Trừ các trường hợp: - Người tham gia đã hiến bộ phận cơ thể người: nộp hồ sơ cho cơ quan BHXH; - Người tham gia do cơ quan, đơn vị quản lý: nộp hồ sơ cho đơn vị quản lý đối tượng. c) Đối với người được ngân sách nhà nước hỗ trợ một phần mức đóng BHYT: - Trường hợp nộp hồ sơ cho Tổ chức dịch vụ hoặc cơ quan BHXH: Lập hồ sơ theo quy định tại tiết 1.1 điểm 1 Mục Thành phần hồ sơ và nộp cho tổ chức dịch vụ hoặc cơ quan BHXH. - Trường hợp nộp qua Cổng Dịch vụ công: Lập hồ sơ theo quy định tại tiết 1.2 điểm 1 Mục Thành phần hồ sơ và nộp trực tuyến trên Cổng Dịch vụ công. - Học sinh, sinh viên: Nộp hồ sơ cho cơ sở giáo dục. d) Người tham gia BHYT theo hộ gia đình: - Trường hợp nộp hồ sơ cho Tổ chức dịch vụ hoặc cơ quan BHXH: Lập hồ sơ theo quy định tại tiết 1.1 điểm 1 Mục Thành phần hồ sơ và nộp cho tổ chức dịch vụ hoặc cơ quan BHXH trên toàn quốc. - Trường hợp nộp qua Cổng Dịch vụ công: Lập hồ sơ theo quy định tại tiết 1.2 điểm 1 Mục Thành phần hồ sơ và nộp trực tuyến trên Cổng Dịch vụ công. 2. Đối với UBND xã: Nhận hồ sơ của người tham gia, lập hồ sơ theo quy định tại tiết 2 mục Thành phần hồ sơ và nộp hồ sơ như sau: a) Đối với người tham gia do tổ chức BHXH đóng: Nộp cho cơ quan BHXH. b) Đối với người tham gia do Bộ Lao động - Thương binh và Xã hội quản lý: nộp cho cơ quan Lao động - Thương binh và xã hội và cơ quan BHXH cấp huyện. c) Các đối tượng còn lại nộp cho cơ quan BHXH. 3. Cơ quan Lao động - Thương binh và xã hội: Nhận hồ sơ do UBND xã gửi đến, phối hợp với cơ quan BHXH rà soát, kiểm tra, đối chiếu, xác nhận số người tham gia, số tiền phải đóng của từng nhóm đối tượng. 4. Cơ sở trợ giúp xã hội/Cơ sở nuôi dưỡng, điều dưỡng thương binh và người có công/Cơ sở giáo dục nghề nghiệp thuộc ngành Lao động - Thương binh và xã hội/cơ quan/đơn vị quản lý người chỉ tham gia BHYT: Nhận hồ sơ của người tham gia, lập hồ sơ theo quy định tại tiết 2 mục Thành phần hồ sơ và nộp cho cơ quan BHXH. 5. Tổ chức dịch vụ: Nhận hồ sơ của người tham gia, thu tiền đóng thuộc trách nhiệm đóng của người tham gia BHYT và lập hồ sơ theo quy định tiết 2 mục Thành phần hồ sơ, nộp cho cơ quan BHXH. 6. Cơ sở giáo dục: Nhận hồ sơ của học sinh, sinh viên, thu tiền đóng BHYT thuộc trách nhiệm đóng của học sinh, sinh viên; lập hồ sơ theo quy định tại tiết 2 mục Thành phần hồ sơ và nộp cho cơ quan BHXH. 7. Phòng/Tổ chế độ BHXH: Nhận hồ sơ của người tham gia BHYT do tổ chức BHXH đóng (kể cả đối tượng đang chờ ban hành quyết định hưởng hưu trí) từ Bộ phận một cửa; lập hồ sơ theo quy định tại tiết 3 mục Thành phần hồ sơ chuyển cho Phòng/Tổ Quản lý Thu - Sổ, Thẻ 8. Trường hợp hoàn trả: Người tham gia nộp hồ sơ theo quy định tại tiết 4 mục Thành phần hồ sơ cho Tổ chức dịch vụ (đối với người tham gia được ngân sách nhà nước hỗ trợ một phần mức đóng BHYT, người tham gia BHYT theo hộ gia đình); cơ sở giáo dục (đối với học sinh, sinh viên) hoặc cơ quan BHXH. Bước 2. Đóng tiền 1. Người tham gia: a) Người được ngân sách nhà nước hỗ trợ một phần mức đóng BHYT; người tham gia BHYT theo hộ gia đình: Đóng tiền cho tổ chức dịch vụ hoặc cho cơ quan BHXH; Trường hợp người tham gia nộp hồ sơ qua Cổng Dịch vụ công: Lập hồ sơ theo quy định tại tiết 1.2 điểm 1 Mục Thành phần hồ sơ và nộp trực tuyến trên Cổng Dịch vụ công. b) Học sinh, sinh viên: đóng tiền cho cơ sở giáo dục. 2. Tổ chức dịch vụ: Thu tiền đóng BHYT phần thuộc trách nhiệm đóng của người tham gia; cấp biên lai thu tiền cho người tham gia theo quy định. Nộp số tiền đã thu của người tham gia cho cơ quan BHXH hàng ngày thông qua tài khoản ngân hàng hoặc hệ thống tiện ích thông minh. 3. Cơ sở giáo dục: Nộp số tiền đã thu của Học sinh, sinh viên cho cơ quan BHXH hàng ngày thông qua tài khoản ngân hàng. 4. Cơ quan Lao động – Thương binh và xã hội: Chuyển tiền đóng BHYT theo phân cấp hoặc phối hợp với cơ quan BHXH đề nghị cơ quan tài chính chuyển tiền đóng BHYT cho cơ quan BHXH theo quy định 5. UBND xã/Cơ sở trợ giúp xã hội/Cơ sở nuôi dưỡng, điều dưỡng thương binh và người có công/Cơ sở giáo dục nghề nghiệp thuộc ngành Lao động - Thương binh và xã hội/cơ quan/đơn vị quản lý người chỉ tham gia BHYT: Chuyển tiền đóng BHYT theo phân cấp hoặc đề nghị cơ quan Lao động - Thương binh và xã hội hoặc cơ quan tài chính chuyển kinh phí đóng BHYT cho cơ quan BHXH. Bước 3. Cơ quan BHXH tiếp nhận hồ sơ và giải quyết theo quy định Bước 4. Nhận kết quả, gồm: Thẻ BHYT; Quyết định hoàn trả và tiền hoàn trả (nếu có) Thời hạn giải quyết Kể từ ngày cơ quan BHXH nhận đủ hồ sơ theo quy định: Không quá 05 ngày; riêng đối với người hưởng trợ cấp thất nghiệp không quá 02 ngày.",
+          "requirements": "Không có yêu cầu điều kiện",
+          "submission_methods": [],
+          "processing_time_values": [],
+          "document_groups": [],
+          "result_items": []
+        },
+        {
+          "procedure_code": "1.002759",
+          "procedure_title": "Cấp lại, đổi, điều chỉnh thông tin trên sổ BHXH, thẻ BHYT",
+          "subdomain_key": "chinh_sach_y_te",
+          "subdomain_label": "Chính sách y tế",
+          "event_id": 314,
+          "field": "Cấp sổ BHXH, thẻ BHYT",
+          "agency": "Bảo hiểm xã hội tỉnh",
+          "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bfb-df35-76fe-b9f6-886f8a133b5c",
+          "raw_data_file": "C:\\Users\\ku060\\Downloads\\VAIC source\\data-pipeline\\raw_data\\1_002759\\1_002759_procedure_detail.md",
+          "raw_data_available": true,
+          "operation_group": "dieu_chinh_so_bhxh_the_bhyt",
+          "operation_key": "cap_lai_doi_dieu_chinh_thong_tin_tren_so_bhxh_the_bhyt",
+          "overview": "Bước 1. Lập hồ sơ theo quy định tại mục Thành phần hồ sơ Bước 2. Nộp hồ sơ 1. Người tham gia a) Người đang làm việc: Nộp hồ sơ cho đơn vị nơi đang làm việc hoặc nộp cho cơ quan BHXH trực tiếp thu. b) Người tham gia BHXH tự nguyện, người tham gia BHYT theo hộ gia đình, người được ngân sách nhà nước hỗ trợ một phần mức đóng BHYT: Nộp hồ sơ cho Tổ chức dịch vụ hoặc cơ quan BHXH trực tiếp thu. c) Người đang bảo lưu thời gian đóng BHXH hoặc đã được giải quyết hưởng lương hưu, trợ cấp BHXH đề nghị cấp lại, điều chỉnh nội dung trên sổ BHXH: Nộp cho cơ quan BHXH trên toàn quốc. d) Người tham gia do tổ chức BHXH đóng BHYT: Nộp hồ sơ cho UBND xã hoặc cho cơ quan BHXH. Đối với người đang hưởng trợ cấp thất nghiệp khi cấp lại, đổi thẻ BHYT: Nộp hồ sơ cho cơ quan BHXH tỉnh. đ) Người tham gia do ngân sách nhà nước đóng, hỗ trợ 100% mức đóng BHYT: Nộp hồ sơ cho UBND xã hoặc cho cơ quan BHXH trực tiếp thu. Người đã hiến bộ phận cơ thể: nộp Giấy ra viện cho cơ quan BHXH trực tiếp thu. e) Học sinh, sinh viên đóng BHYT: Nộp hồ sơ cho Cơ sở giáo dục. 2. Đơn vị a) Đơn vị SDLĐ: kê khai hồ sơ liên quan sau đó nộp hồ sơ cho cơ quan BHXH cấp tỉnh, cấp huyện b) UBND xã; Cơ sở trợ giúp xã hội, Cơ sở nuôi dưỡng, điều dưỡng thương binh và người có công; Cơ sở giáo dục nghề nghiệp thuộc ngành lao động, thương binh và xã hội; Tổ chức dịch vụ; Cơ sở giáo dục; Phòng/Tổ chế độ BHXH: kê khai hồ sơ liên quan sau đó nộp hồ sơ cho cơ quan BHXH. Bước 3. Cơ quan BHXH tiếp nhận hồ sơ và giải quyết theo quy định. Bước 4. Nhận kết quả giải quyết gồm sổ BHXH, thẻ BHYT theo hình thức đăng ký Thời hạn giải quyết 1. Cấp lại sổ BHXH do thay đổi họ, tên, chữ đệm; ngày, tháng, năm sinh; giới tính, dân tộc; quốc tịch; sổ BHXH mất, hỏng; cộng nối thời gian nhưng không phải đóng BHXH, điều chỉnh làm nghề hoặc công việc nặng nhọc, độc hại, nguy hiểm hoặc đặc biệt nặng nhọc độc hại, nguy hiểm hoặc gộp sổ BHXH: không quá 10 ngày kể từ ngày nhận đủ hồ sơ theo quy định. Trường hợp phải xác minh quá trình đóng BHXH ở tỉnh khác hoặc nhiều đơn vị nơi NLĐ có thời gian làm việc thì không quá 45 ngày nhưng phải có văn bản thông báo cho NLĐ biết. 2. Điều chỉnh nội dung đã ghi trên sổ BHXH: không quá 5 ngày kể từ ngày nhận đủ hồ sơ theo quy định. 3. Cấp lại, đổi thẻ BHYT: + Trường hợp thay đổi thông tin: Không quá 03 ngày kể từ ngày nhận đủ hồ sơ theo quy định. + Trường hợp không thay đổi thông tin hoặc người tham gia đang điều trị tại các cơ sở Khám chữa bệnh: trả trong ngày khi nhận đủ hồ sơ theo quy định.",
+          "procedure_flow": "Bước 1. Lập hồ sơ theo quy định tại mục Thành phần hồ sơ Bước 2. Nộp hồ sơ 1. Người tham gia a) Người đang làm việc: Nộp hồ sơ cho đơn vị nơi đang làm việc hoặc nộp cho cơ quan BHXH trực tiếp thu. b) Người tham gia BHXH tự nguyện, người tham gia BHYT theo hộ gia đình, người được ngân sách nhà nước hỗ trợ một phần mức đóng BHYT: Nộp hồ sơ cho Tổ chức dịch vụ hoặc cơ quan BHXH trực tiếp thu. c) Người đang bảo lưu thời gian đóng BHXH hoặc đã được giải quyết hưởng lương hưu, trợ cấp BHXH đề nghị cấp lại, điều chỉnh nội dung trên sổ BHXH: Nộp cho cơ quan BHXH trên toàn quốc. d) Người tham gia do tổ chức BHXH đóng BHYT: Nộp hồ sơ cho UBND xã hoặc cho cơ quan BHXH. Đối với người đang hưởng trợ cấp thất nghiệp khi cấp lại, đổi thẻ BHYT: Nộp hồ sơ cho cơ quan BHXH tỉnh. đ) Người tham gia do ngân sách nhà nước đóng, hỗ trợ 100% mức đóng BHYT: Nộp hồ sơ cho UBND xã hoặc cho cơ quan BHXH trực tiếp thu. Người đã hiến bộ phận cơ thể: nộp Giấy ra viện cho cơ quan BHXH trực tiếp thu. e) Học sinh, sinh viên đóng BHYT: Nộp hồ sơ cho Cơ sở giáo dục. 2. Đơn vị a) Đơn vị SDLĐ: kê khai hồ sơ liên quan sau đó nộp hồ sơ cho cơ quan BHXH cấp tỉnh, cấp huyện b) UBND xã; Cơ sở trợ giúp xã hội, Cơ sở nuôi dưỡng, điều dưỡng thương binh và người có công; Cơ sở giáo dục nghề nghiệp thuộc ngành lao động, thương binh và xã hội; Tổ chức dịch vụ; Cơ sở giáo dục; Phòng/Tổ chế độ BHXH: kê khai hồ sơ liên quan sau đó nộp hồ sơ cho cơ quan BHXH. Bước 3. Cơ quan BHXH tiếp nhận hồ sơ và giải quyết theo quy định. Bước 4. Nhận kết quả giải quyết gồm sổ BHXH, thẻ BHYT theo hình thức đăng ký Thời hạn giải quyết 1. Cấp lại sổ BHXH do thay đổi họ, tên, chữ đệm; ngày, tháng, năm sinh; giới tính, dân tộc; quốc tịch; sổ BHXH mất, hỏng; cộng nối thời gian nhưng không phải đóng BHXH, điều chỉnh làm nghề hoặc công việc nặng nhọc, độc hại, nguy hiểm hoặc đặc biệt nặng nhọc độc hại, nguy hiểm hoặc gộp sổ BHXH: không quá 10 ngày kể từ ngày nhận đủ hồ sơ theo quy định. Trường hợp phải xác minh quá trình đóng BHXH ở tỉnh khác hoặc nhiều đơn vị nơi NLĐ có thời gian làm việc thì không quá 45 ngày nhưng phải có văn bản thông báo cho NLĐ biết. 2. Điều chỉnh nội dung đã ghi trên sổ BHXH: không quá 5 ngày kể từ ngày nhận đủ hồ sơ theo quy định. 3. Cấp lại, đổi thẻ BHYT: + Trường hợp thay đổi thông tin: Không quá 03 ngày kể từ ngày nhận đủ hồ sơ theo quy định. + Trường hợp không thay đổi thông tin hoặc người tham gia đang điều trị tại các cơ sở Khám chữa bệnh: trả trong ngày khi nhận đủ hồ sơ theo quy định.",
+          "requirements": "Không có yêu cầu điều kiện",
+          "submission_methods": [],
+          "processing_time_values": [],
+          "document_groups": [],
+          "result_items": []
+        },
+        {
+          "procedure_code": "2.000693",
+          "procedure_title": "Giải quyết hưởng chế độ thai sản",
+          "subdomain_key": "chinh_sach_y_te",
+          "subdomain_label": "Chính sách y tế",
+          "event_id": 314,
+          "field": "Thực hiện chính sách BHXH",
+          "agency": "",
+          "source_url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bfc-d9ce-754f-b27a-e0edfaf3e2fc",
+          "raw_data_file": "C:\\Users\\ku060\\Downloads\\VAIC source\\data-pipeline\\raw_data\\2_000693\\2_000693_procedure_detail.md",
+          "raw_data_available": true,
+          "operation_group": "huong_che_do_thai_san",
+          "operation_key": "giai_quyet_huong_che_do_thai_san",
+          "overview": "Bước 1. Lập, nộp hồ sơ 1. Đối với NLĐ a) Trường hợp NLĐ đang đóng BHXH: Lập hồ sơ theo quy định tại mục 2.3 (Thành phần hồ sơ); nộp cho đơn vị SDLĐ trong thời hạn không quá 45 ngày kể từ ngày trở lại làm việc. b) Trường hợp người NLĐ sinh con, nhận con, nhận nuôi con nuôi trong thời gian bảo lưu thời gian đóng BHXH do đã thôi việc, phục viên, xuất ngũ trước thời điểm sinh con, nhận con, nhận nuôi con nuôi (áp dụng cho cả trường hợp sinh con, nhận con, nhận nuôi con nuôi trong thời gian đang đóng BHXH kể từ ngày 01/01/2018 trở đi nhưng đã thôi việc tại đơn vị mà có nguyện vọng nộp hồ sơ hưởng chế độ tại cơ quan BHXH); NLĐ sinh con, nhận con, nhận nuôi con nuôi trong thời gian làm việc tại các đơn vị hiện nay không còn người SDLĐ gồm: Đơn vị đang làm thủ tục phá sản, Đơn vị đã có Quyết định phá sản của Tòa án; Đơn vị không còn hoạt động kinh doanh tại địa chỉ đã đăng ký; Đơn vị không có người đại diện theo pháp luật: Lập hồ sơ theo quy định tại mục 2.3 (Thành phần hồ sơ); nộp hồ sơ và xuất trình sổ BHXH cho cơ quan BHXH. 2. Đối với đơn vị SDLĐ Tiếp nhận hồ sơ từ NLĐ; lập Danh sách đề nghị giải quyết hưởng chế độ ốm đau, thai sản, DSPHSK (mẫu 01B-HSB) trong thời hạn 10 ngày kể từ ngày nhận đủ hồ sơ theo quy định; nộp cho cơ quan BHXH nơi đơn vị SDLĐ đóng BHXH. Bước 2. Cơ quan BHXH tiếp nhận hồ sơ và giải quyết theo quy định. Bước 3. Nhận kết quả giải quyết 1. Đơn vị SDLĐ: Nhận Danh sách giải quyết hưởng chế độ ốm đau, thai sản, trợ cấp DSPHSK (mẫu C70a-HD) và tiền trợ cấp để chi trả cho NLĐ đăng ký nhận tiền mặt tại đơn vị SDLĐ. 2. NLĐ: Nhận tiền trợ cấp",
+          "procedure_flow": "Bước 1. Lập, nộp hồ sơ 1. Đối với NLĐ a) Trường hợp NLĐ đang đóng BHXH: Lập hồ sơ theo quy định tại mục 2.3 (Thành phần hồ sơ); nộp cho đơn vị SDLĐ trong thời hạn không quá 45 ngày kể từ ngày trở lại làm việc. b) Trường hợp người NLĐ sinh con, nhận con, nhận nuôi con nuôi trong thời gian bảo lưu thời gian đóng BHXH do đã thôi việc, phục viên, xuất ngũ trước thời điểm sinh con, nhận con, nhận nuôi con nuôi (áp dụng cho cả trường hợp sinh con, nhận con, nhận nuôi con nuôi trong thời gian đang đóng BHXH kể từ ngày 01/01/2018 trở đi nhưng đã thôi việc tại đơn vị mà có nguyện vọng nộp hồ sơ hưởng chế độ tại cơ quan BHXH); NLĐ sinh con, nhận con, nhận nuôi con nuôi trong thời gian làm việc tại các đơn vị hiện nay không còn người SDLĐ gồm: Đơn vị đang làm thủ tục phá sản, Đơn vị đã có Quyết định phá sản của Tòa án; Đơn vị không còn hoạt động kinh doanh tại địa chỉ đã đăng ký; Đơn vị không có người đại diện theo pháp luật: Lập hồ sơ theo quy định tại mục 2.3 (Thành phần hồ sơ); nộp hồ sơ và xuất trình sổ BHXH cho cơ quan BHXH. 2. Đối với đơn vị SDLĐ Tiếp nhận hồ sơ từ NLĐ; lập Danh sách đề nghị giải quyết hưởng chế độ ốm đau, thai sản, DSPHSK (mẫu 01B-HSB) trong thời hạn 10 ngày kể từ ngày nhận đủ hồ sơ theo quy định; nộp cho cơ quan BHXH nơi đơn vị SDLĐ đóng BHXH. Bước 2. Cơ quan BHXH tiếp nhận hồ sơ và giải quyết theo quy định. Bước 3. Nhận kết quả giải quyết 1. Đơn vị SDLĐ: Nhận Danh sách giải quyết hưởng chế độ ốm đau, thai sản, trợ cấp DSPHSK (mẫu C70a-HD) và tiền trợ cấp để chi trả cho NLĐ đăng ký nhận tiền mặt tại đơn vị SDLĐ. 2. NLĐ: Nhận tiền trợ cấp",
+          "requirements": "Điều 31 Luật BHXH.",
+          "submission_methods": [],
+          "processing_time_values": [],
+          "document_groups": [],
+          "result_items": []
+        }
+      ]
+    }
+  ]
+}

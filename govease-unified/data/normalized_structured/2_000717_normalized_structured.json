@@ -1,0 +1,129 @@
+{
+  "schema_version": "1.0",
+  "normalizer_version": "0.2.0",
+  "source": {
+    "procedure_code": "2.000717",
+    "title": "Truy lĩnh lương hưu, trợ cấp bảo hiểm xã hội của người hưởng đã chết nhưng còn chế độ chưa nhận",
+    "raw_structured_parser_version": "0.1.0",
+    "field": "Chi trả các chế độ BHXH"
+  },
+  "procedure": {
+    "level": null,
+    "procedure_type": null,
+    "target_users": [],
+    "authorities": [
+      "Bảo hiểm xã hội cấp huyện Bảo hiểm xã hội cấp Tỉnh"
+    ],
+    "receiving_places": []
+  },
+  "submission": {
+    "channels": [
+      "in_person"
+    ],
+    "methods": [
+      {
+        "method_id": "method_1",
+        "channel": "in_person",
+        "processing_time_text": "2 Ngày làm việc",
+        "fee_text": null,
+        "description": "Giải quyết chi trả ngay cho người hưởng, chậm nhất là ngày làm việc kế tiếp kể từ khi nhận được Giấy đề nghị. 1. Nộp hồ sơ trực tiếp cho cơ quan BHXH 2. Nhận kết quả: tiền mặt",
+        "is_online": false,
+        "is_postal": false,
+        "is_in_person": true
+      }
+    ],
+    "timing_summary": {
+      "unique_processing_times": [
+        "2 Ngày làm việc"
+      ],
+      "method_count": 1
+    }
+  },
+  "documents": {
+    "required": [
+      {
+        "document_id": "document",
+        "name": "",
+        "group_name": "default",
+        "group_type": "required",
+        "original_count": "1",
+        "copy_count": "0",
+        "conditions": [],
+        "attachment_label": "Giấy đề nghị nhận chế độ BHXH khi người hưởng từ trần (mẫu số 3-CBH) có xác nhận của chính quyền địa phương nơi người hưởng cư trú 03_CBH.docx",
+        "attachment_path": "Giấy đề nghị nhận chế độ BHXH khi người hưởng từ trần (mẫu số 3-CBH) có xác nhận của chính quyền địa phương nơi người hưởng cư trú 03_CBH.docx"
+      }
+    ],
+    "conditional": [],
+    "presented": [],
+    "notes": [],
+    "forms": [
+      {
+        "name": "",
+        "attachment_label": "Giấy đề nghị nhận chế độ BHXH khi người hưởng từ trần (mẫu số 3-CBH) có xác nhận của chính quyền địa phương nơi người hưởng cư trú 03_CBH.docx",
+        "attachment_path": "Giấy đề nghị nhận chế độ BHXH khi người hưởng từ trần (mẫu số 3-CBH) có xác nhận của chính quyền địa phương nơi người hưởng cư trú 03_CBH.docx"
+      }
+    ],
+    "empty_groups": [],
+    "document_count": 1
+  },
+  "process": {
+    "steps": [
+      {
+        "step_id": "step_1",
+        "title": "Bước 1.",
+        "content": "Bước 1. Lập, nộp hồ sơ Thân nhân của người hưởng chế độ BHXH hồ sơ theo quy định tại mục Thành phần hồ sơ",
+        "actor": "user",
+        "channel_hint": null,
+        "time_hint": null
+      },
+      {
+        "step_id": "step_2",
+        "title": "Bước 2.",
+        "content": "Bước 2. Cơ quan BHXH tiếp nhận hồ sơ và giải quyết theo quy định.",
+        "actor": "authority",
+        "channel_hint": null,
+        "time_hint": null
+      },
+      {
+        "step_id": "step_3",
+        "title": "Bước 3.",
+        "content": "Bước 3. Nhận kết quả giải quyết Thân nhân của người hưởng nhận tiền lương hưu, trợ cấp BHXH.",
+        "actor": "user",
+        "channel_hint": null,
+        "time_hint": null
+      }
+    ],
+    "step_count": 3,
+    "notes": []
+  },
+  "eligibility": {
+    "conditions": [
+      "Không có yêu cầu điều kiện"
+    ],
+    "has_conditions": true
+  },
+  "results": {
+    "items": [],
+    "primary_result": null
+  },
+  "legal_basis": {
+    "items": [],
+    "count": 0
+  },
+  "attachments": [
+    {
+      "label": "Giấy đề nghị nhận chế độ BHXH khi người hưởng từ trần (mẫu số 3-CBH) có xác nhận của chính quyền địa phương nơi người hưởng cư trú 03_CBH.docx",
+      "path": "Giấy đề nghị nhận chế độ BHXH khi người hưởng từ trần (mẫu số 3-CBH) có xác nhận của chính quyền địa phương nơi người hưởng cư trú 03_CBH.docx",
+      "source_section": "Thành phần hồ sơ",
+      "document_name": ""
+    }
+  ],
+  "signals": {
+    "raw_parse_warnings": [],
+    "missing_documents": false,
+    "documents_section_present": true,
+    "documents_declared_empty": false,
+    "documents_only_in_notes": false,
+    "missing_results": true
+  }
+}

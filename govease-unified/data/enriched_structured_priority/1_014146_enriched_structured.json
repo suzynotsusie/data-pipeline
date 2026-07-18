@@ -1,0 +1,112 @@
+{
+  "schema_version": "1.0",
+  "enricher_version": "0.2.0",
+  "source": {
+    "procedure_code": "1.014146",
+    "title": "Thẩm định điều kiện về cơ sở vật chất kỹ thuật, nhân sự và đánh giá đáp ứng thực hành tốt cho cơ sở hoạt động dược không vì mục đích thương mại; đánh giá duy trì; đánh giá kiểm soát thay đổi đối với cơ sở sản xuất thuốc, nguyên liệu làm thuốc",
+    "group_key": "suc_khoe_y_te",
+    "workflow_family": null,
+    "subflow": null
+  },
+  "experience": {
+    "entry_label": "Hỗ trợ y tế và bảo hiểm",
+    "overview_summary": "Thủ tục này thuộc nhóm y tế, thường cần đối chiếu thông tin người bệnh, đơn vị tiếp nhận hoặc quyền lợi chuyên ngành. Kết quả thường nhận được là Trường hợp 2: Đánh giá duy trì Nếu đáp ứng: Cập nhật thông tin về việc duy trì đáp ứng GMP trên cổng thông tin và cấp Giấy chứng nhận GMP (nếu đề nghị). Nếu không đáp ứng: Văn bản thông báo không đáp ứng GMP nêu rõ lý do và tùy theo mức độ, áp dụng các biện pháp: tạm ngừng hoạt động, xử phạt vi phạm hành chính, thu hồi Giấy chứng nhận. Thời gian xử lý tham khảo: 45 ngày.",
+    "next_step_summary": "Nên xác định rõ đối tượng tham gia, quyền lợi hoặc nhu cầu điều chỉnh hồ sơ y tế trước khi nộp. Có thể chọn kênh nộp phù hợp: Trực tiếp, Trực tuyến, Dịch vụ bưu chính. Hiện có khoảng 10 mục giấy tờ cần theo dõi trong checklist.",
+    "tone": "supportive_public_service"
+  },
+  "guidance": {
+    "highlight_documents": [
+      {
+        "bucket": "required",
+        "name": "b) Tài liệu kỹ thuật về cơ sở sản xuất theo quy định",
+        "conditions": [],
+        "attachment_path": null
+      },
+      {
+        "bucket": "required",
+        "name": "a) Văn bản đề nghị đánh giá đáp ứng GMP theo Mẫu số 1, Phụ lục X Thông tư số 28/2025/TT-BYT ngày 01/7/2025",
+        "conditions": [],
+        "attachment_path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/1_014146/Mu.docx"
+      },
+      {
+        "bucket": "required",
+        "name": "Đánh giá duy trì Báo cáo về hoạt động sản xuất thuốc, nguyên liệu làm thuốc và việc duy trì đáp ứng tiêu chuẩn GMP (Mẫu số 2 Phụ lục X Thông tư số 28/2025/TT-BYT ngày 01/7/2025).",
+        "conditions": [],
+        "attachment_path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/1_014146/Mu.docx"
+      },
+      {
+        "bucket": "required",
+        "name": "Đối với cơ sở sản xuất vắc xin (thay đổi theo điểm d, đ, e, g khoản 2 Điều 11 Thông tư số 28/2025/TT-BYT ngày 01/7/2025 hoặc sản xuất, sản xuất thử vắc xin hoặc sản phẩm thuốc khác trên dây chuyền sản xuất vắc xin đã được cấp chứng nhận): văn bản thông báo kèm theo đánh giá nguy cơ;",
+        "conditions": [],
+        "attachment_path": null
+      },
+      {
+        "bucket": "required",
+        "name": "Cơ sở được đánh giá đáp ứng EU-GMP hoặc tương đương EU-GMP bởi các nước SRA hoặc cơ quan QLD được Bộ Y tế công nhận trên cơ sở phân loại của WHO về đề nghị công bố: văn bản đề nghị công bố kèm theo Giấy chứng nhận GMP hoặc văn bản kết luận cơ sở đáp ứng EU-GMP hoặc tương đương EU-GMP và báo cáo kiểm tra GMP theo quy định.",
+        "conditions": [],
+        "attachment_path": null
+      },
+      {
+        "bucket": "required",
+        "name": "Cơ sở thay đổi về cấu trúc, thiết bị, hệ thống phụ trợ (thuộc khoản đ, e, g khoản 2 Điều 11) (không áp dụng cho thuốc vô trùng): Báo cáo thay đổi;",
+        "conditions": [],
+        "attachment_path": null
+      }
+    ],
+    "special_cases": [
+      "Có thể cần đối chiếu thông tin thửa đất hoặc giấy chứng nhận"
+    ],
+    "common_errors": [
+      "Điền sai mẫu tờ khai hoặc chọn sai biểu mẫu đi kèm.",
+      "Thông tin thửa đất, tài sản hoặc giấy chứng nhận chưa khớp với hồ sơ hiện có."
+    ],
+    "validation_hints": [
+      "Nên xác định trước kênh nộp hồ sơ để biết có cần bản giấy, bản điện tử hay xuất trình trực tiếp.",
+      "Có mẫu biểu đính kèm, nên kiểm tra đúng biểu mẫu trước khi nộp.",
+      "Nên xác định đúng nhóm đối tượng, mã số bảo hiểm và quyền lợi áp dụng trước khi nộp."
+    ]
+  },
+  "intake": {
+    "candidate_input_fields": [
+      {
+        "field_id": "request_subject",
+        "label": "Đối tượng làm thủ tục",
+        "field_type": "text",
+        "required": true
+      },
+      {
+        "field_id": "insurance_or_medical_need",
+        "label": "Nhu cầu bảo hiểm hoặc y tế",
+        "field_type": "text",
+        "required": true
+      },
+      {
+        "field_id": "submission_channel_preference",
+        "label": "Kênh nộp dự kiến",
+        "field_type": "enum",
+        "required": false
+      },
+      {
+        "field_id": "has_insurance_number",
+        "label": "Đã có mã BHXH/BHYT",
+        "field_type": "boolean",
+        "required": false
+      }
+    ],
+    "suggested_clarifying_questions": [
+      "Bạn đang muốn đăng ký, điều chỉnh hay xác nhận quyền lợi y tế hoặc bảo hiểm nào?",
+      "Bạn đã có mã BHXH/BHYT hoặc thông tin đơn vị tiếp nhận liên quan chưa?"
+    ]
+  },
+  "ui_hints": {
+    "primary_channel": "online",
+    "result_label": "Trường hợp 2: Đánh giá duy trì Nếu đáp ứng: Cập nhật thông tin về việc duy trì đáp ứng GMP trên cổng thông tin và cấp Giấy chứng nhận GMP (nếu đề nghị). Nếu không đáp ứng: Văn bản thông báo không đáp ứng GMP nêu rõ lý do và tùy theo mức độ, áp dụng các biện pháp: tạm ngừng hoạt động, xử phạt vi phạm hành chính, thu hồi Giấy chứng nhận",
+    "time_badge": "45 ngày",
+    "document_count_badge": 10
+  },
+  "provenance": {
+    "generator": "workflow_domain_enricher",
+    "derivation_mode": "rule_based_semantic_enrichment",
+    "supported_group": true
+  }
+}

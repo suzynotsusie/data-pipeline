@@ -1,0 +1,118 @@
+{
+  "schema_version": "1.0",
+  "enricher_version": "0.2.0",
+  "source": {
+    "procedure_code": "2.002546",
+    "title": "Thủ tục sửa đổi, bổ sung Giấy chứng nhận chuyển giao công nghệ khuyến khích chuyển giao (trừ trường hợp thuộc thẩm quyền giải quyết của Bộ Khoa học và Công nghệ)",
+    "group_key": "suc_khoe_y_te",
+    "workflow_family": null,
+    "subflow": null
+  },
+  "experience": {
+    "entry_label": "Hỗ trợ y tế và bảo hiểm",
+    "overview_summary": "Thủ tục này thuộc nhóm y tế, thường cần đối chiếu thông tin người bệnh, đơn vị tiếp nhận hoặc quyền lợi chuyên ngành. Kết quả thường nhận được là Giấy chứng nhận chuyển giao công nghệ khuyến khích chuyển giao sửa đổi, bổ sung (trừ trường hợp thuộc thẩm quyền giải quyết của Bộ Khoa học và Công nghệ). Thời gian xử lý tham khảo: 8 ngày làm việc.",
+    "next_step_summary": "Nên xác định rõ đối tượng tham gia, quyền lợi hoặc nhu cầu điều chỉnh hồ sơ y tế trước khi nộp. Có thể chọn kênh nộp phù hợp: Trực tiếp, Trực tuyến, Dịch vụ bưu chính. Hiện có khoảng 6 mục giấy tờ cần theo dõi trong checklist.",
+    "tone": "supportive_public_service"
+  },
+  "guidance": {
+    "highlight_documents": [
+      {
+        "bucket": "required",
+        "name": "Báo cáo triển khai hoạt động chuyển giao công nghệ khuyến khích chuyển giao theo nội dung trong văn bản thỏa thuận chuyển giao công nghệ sửa đổi, bổ sung theo Mẫu số 03 tại Phụ lục ban hành kèm theo Quyết định số 12/2023/QĐ-TTg",
+        "conditions": [],
+        "attachment_path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/2_002546/M%E1%BA%ABu%2003_B%C3%A1o%20c%C3%A1o%20tri%E1%BB%83n%20khai%20CGCN%20KKCG.docx"
+      },
+      {
+        "bucket": "required",
+        "name": "Văn bản đề nghị sửa đổi, bổ sung Giấy chứng nhận chuyển giao công nghệ khuyến khích chuyển giao theo Mẫu số 08 tại Phụ lục ban hành kèm theo Quyết định số 12/2023/QĐ-TTg",
+        "conditions": [],
+        "attachment_path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/2_002546/M%E1%BA%ABu%2008_VB%20s%E1%BB%ADa%20%C4%91%E1%BB%95i%2C%20b%E1%BB%95%20sung%20%C4%91%E1%BB%81%20ngh%E1%BB%8B%20c%E1%BA%A5p%20Gi%E1%BA%A5y%20CN%20CGCN%20KKCG.docx"
+      },
+      {
+        "bucket": "required",
+        "name": "Bản chính Giấy chứng nhận chuyển giao công nghệ khuyến khích chuyển giao",
+        "conditions": [],
+        "attachment_path": null
+      },
+      {
+        "bucket": "required",
+        "name": "Thuyết minh nội dung chuyển giao công nghệ khuyến khích chuyển giao trong văn bản thỏa thuận chuyển giao công nghệ sửa đổi, bổ sung theo Mẫu số 02 tại Phụ lục ban hành kèm theo Quyết định số 12/2023/QĐ-TTg",
+        "conditions": [],
+        "attachment_path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/2_002546/M%E1%BA%ABu%2002_Thuy%E1%BA%BFt%20minh%20n%E1%BB%99i%20dung%20CGCN%20KKCG.docx"
+      },
+      {
+        "bucket": "required",
+        "name": "Bản chính hoặc bản sao có chứng thực văn bản thỏa thuận chuyển giao công nghệ sửa đổi, bổ sung bằng tiếng Việt hoặc bản dịch sang tiếng Việt có công chứng hoặc chứng thực đối với văn bản thỏa thuận bằng tiếng nước ngoài",
+        "conditions": [],
+        "attachment_path": null
+      },
+      {
+        "bucket": "conditional",
+        "name": "Bản sao văn bằng bảo hộ hoặc đơn đăng ký đối tượng sở hữu công nghiệp (trong trường hợp chưa được cấp văn bằng bảo hộ), giấy chứng nhận chuyển giao quyền sở hữu hoặc quyền sử dụng đối tượng sở hữu công nghiệp (nếu có bổ sung)",
+        "conditions": [
+          "Bản sao văn bằng bảo hộ hoặc đơn đăng ký đối tượng sở hữu công nghiệp (trong trường hợp chưa được cấp văn bằng bảo hộ), giấy chứng nhận chuyển giao quyền sở hữu hoặc quyền sử dụng đối tượng sở hữu công nghiệp (nếu có bổ sung)"
+        ],
+        "attachment_path": null
+      }
+    ],
+    "special_cases": [
+      "Có yếu tố nước ngoài",
+      "Có thể cần đối chiếu thông tin thửa đất hoặc giấy chứng nhận",
+      "Có thể cần xác minh hồ sơ học tập hoặc văn bằng"
+    ],
+    "common_errors": [
+      "Thiếu giấy tờ hợp pháp hóa hoặc giấy tờ nhân thân của phía nước ngoài.",
+      "Điền sai mẫu tờ khai hoặc chọn sai biểu mẫu đi kèm.",
+      "Thông tin thửa đất, tài sản hoặc giấy chứng nhận chưa khớp với hồ sơ hiện có.",
+      "Thiếu minh chứng học tập, văn bằng hoặc xác nhận từ cơ sở đào tạo."
+    ],
+    "validation_hints": [
+      "Nên xác định trước kênh nộp hồ sơ để biết có cần bản giấy, bản điện tử hay xuất trình trực tiếp.",
+      "Có mẫu biểu đính kèm, nên kiểm tra đúng biểu mẫu trước khi nộp.",
+      "Nên xác định đúng nhóm đối tượng, mã số bảo hiểm và quyền lợi áp dụng trước khi nộp."
+    ]
+  },
+  "intake": {
+    "candidate_input_fields": [
+      {
+        "field_id": "request_subject",
+        "label": "Đối tượng làm thủ tục",
+        "field_type": "text",
+        "required": true
+      },
+      {
+        "field_id": "insurance_or_medical_need",
+        "label": "Nhu cầu bảo hiểm hoặc y tế",
+        "field_type": "text",
+        "required": true
+      },
+      {
+        "field_id": "submission_channel_preference",
+        "label": "Kênh nộp dự kiến",
+        "field_type": "enum",
+        "required": false
+      },
+      {
+        "field_id": "has_insurance_number",
+        "label": "Đã có mã BHXH/BHYT",
+        "field_type": "boolean",
+        "required": false
+      }
+    ],
+    "suggested_clarifying_questions": [
+      "Bạn đang muốn đăng ký, điều chỉnh hay xác nhận quyền lợi y tế hoặc bảo hiểm nào?",
+      "Bạn đã có mã BHXH/BHYT hoặc thông tin đơn vị tiếp nhận liên quan chưa?"
+    ]
+  },
+  "ui_hints": {
+    "primary_channel": "online",
+    "result_label": "Giấy chứng nhận chuyển giao công nghệ khuyến khích chuyển giao sửa đổi, bổ sung (trừ trường hợp thuộc thẩm quyền giải quyết của Bộ Khoa học và Công nghệ)",
+    "time_badge": "8 ngày làm việc",
+    "document_count_badge": 6
+  },
+  "provenance": {
+    "generator": "workflow_domain_enricher",
+    "derivation_mode": "rule_based_semantic_enrichment",
+    "supported_group": true
+  }
+}

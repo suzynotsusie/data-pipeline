@@ -1,8 +1,10 @@
 from __future__ import annotations
 
+import logging
+from time import perf_counter
 from uuid import uuid4
 
-from fastapi import APIRouter, Query
+from fastapi import APIRouter, Query, Response
 
 from govease_ai import ProcedureAssistant
 
@@ -36,6 +38,7 @@ from backend.app.services.workflow_intake import WorkflowIntakeService
 
 router = APIRouter()
 v1_router = APIRouter()
+logger = logging.getLogger(__name__)
 chat_service = ChatService(settings)
 assistant = ProcedureAssistant()
 workflow_intake = WorkflowIntakeService(assistant)
@@ -82,7 +85,8 @@ def legacy_intake(request: ChatRequest) -> dict:
 
 
 @v1_router.post("/intake", response_model=IntakeResponse, tags=["intake"])
-def intake(request: IntakeRequest) -> IntakeResponse:
+def intake(request: IntakeRequest, response: Response) -> IntakeResponse:
+    started_at = perf_counter()
     if request.procedure_code and not request.session_id:
         result = assistant.guided_intake(
             request.message,
@@ -90,7 +94,7 @@ def intake(request: IntakeRequest) -> IntakeResponse:
             answers=request.answers,
         )
         needs_clarification = bool(result.get("needs_clarification"))
-        return IntakeResponse(
+        payload = IntakeResponse(
             session_id=request.session_id or str(uuid4()),
             status="needs_clarification" if needs_clarification else "completed",
             needs_clarification=needs_clarification,
@@ -109,14 +113,24 @@ def intake(request: IntakeRequest) -> IntakeResponse:
             domain_label=None,
             workflow_state={},
         )
+        elapsed_ms = round((perf_counter() - started_at) * 1000, 2)
+        response.headers["X-GovEase-Route-MS"] = str(elapsed_ms)
+        logger.info(
+            "api_intake_timing mode=direct_procedure session=%s total_ms=%.2f procedure_code=%s",
+            payload.session_id,
+            elapsed_ms,
+            request.procedure_code,
+        )
+        return payload
 
-    preferred_domain = catalog_service.preferred_workflow_family(request.group_key)
+    preferred_domain = catalog_service.resolve_workflow_domain(request.group_key)
     result = workflow_intake.handle(
         request.message,
         session_id=request.session_id,
         preferred_domain_key=preferred_domain,
+        preferred_subdomain_key=request.subdomain_key,
     )
-    return IntakeResponse(
+    payload = IntakeResponse(
         session_id=result["session_id"],
         status=result["status"],
         needs_clarification=bool(result["needs_clarification"]),
@@ -135,6 +149,16 @@ def intake(request: IntakeRequest) -> IntakeResponse:
         domain_label=result.get("domain_label"),
         workflow_state=result.get("workflow_state") or {},
     )
+    elapsed_ms = round((perf_counter() - started_at) * 1000, 2)
+    response.headers["X-GovEase-Route-MS"] = str(elapsed_ms)
+    logger.info(
+        "api_intake_timing mode=workflow session=%s total_ms=%.2f domain=%s status=%s",
+        payload.session_id,
+        elapsed_ms,
+        payload.domain_key,
+        payload.status,
+    )
+    return payload
 
 
 @router.post("/check", tags=["validation"])

@@ -1,0 +1,104 @@
+{
+  "schema_version": "1.0",
+  "enricher_version": "0.2.0",
+  "source": {
+    "procedure_code": "2.002757",
+    "title": "Thủ tục giải quyết chế độ trợ cấp một lần đối với công nhân viên chức nhà nước, chuyên gia các ngành; cán bộ xã, phường, thị trấn; công an xã; thanh niên xung phong trực tiếp tham gia chiến tranh bảo vệ Tổ quốc và làm nhiệm vụ quốc tế sau ngày 30/4/1975 đã thôi việc, đã về gia đình (đối với đối tượng đã từ trần) thuộc thẩm quyền giải quyết của Chủ tịch UBND tỉnh",
+    "group_key": "suc_khoe_y_te",
+    "workflow_family": null,
+    "subflow": null
+  },
+  "experience": {
+    "entry_label": "Hỗ trợ y tế và bảo hiểm",
+    "overview_summary": "Thủ tục này thuộc nhóm y tế, thường cần đối chiếu thông tin người bệnh, đơn vị tiếp nhận hoặc quyền lợi chuyên ngành. Kết quả thường nhận được là Quyết định hưởng chế độ trợ cấp một lần. Thời gian xử lý tham khảo: 12 ngày làm việc.",
+    "next_step_summary": "Nên xác định rõ đối tượng tham gia, quyền lợi hoặc nhu cầu điều chỉnh hồ sơ y tế trước khi nộp. Có thể chọn kênh nộp phù hợp: Trực tiếp. Hiện có khoảng 3 mục giấy tờ cần theo dõi trong checklist.",
+    "tone": "supportive_public_service"
+  },
+  "guidance": {
+    "highlight_documents": [
+      {
+        "bucket": "required",
+        "name": "Thành phần hồ sơ 1: Bản khai của thân nhân đối tượng (bản chính, 01 bản).",
+        "conditions": [],
+        "attachment_path": null
+      },
+      {
+        "bucket": "conditional",
+        "name": "Thành phần hồ sơ 2 (nếu có): Một hoặc một số giấy tờ làm căn cứ xét duyệt, gồm: - Giấy tờ gốc hoặc được coi như giấy tờ gốc: + Giấy xác nhận quá trình công tác của đơn vị cũ trước khi thôi việc hoặc hết nhiệm vụ; + Quyết định tuyển dụng, thôi việc hoặc hết nhiệm vụ; + Lý lịch cán bộ công chức, viên chức; lý lịch đi lao động ở nước ngoài; lý lịch đảng viên; sổ bảo hiểm xã hội (nếu có). - Giấy tờ liên quan: + Quyết định điều động công tác, bổ nhiệm chức vụ, giao nhiệm vụ; + Giấy chứng nhận tham gia Thanh niên xung phong; phiếu chuyển thương, chuyển viện; + Huân, huy chương tham gia chiến tranh bảo vệ Tổ quốc và các hình thức khen thưởng khác.",
+        "conditions": [
+          "Thành phần hồ sơ 2 (nếu có): Một hoặc một số giấy tờ làm căn cứ xét duyệt, gồm: - Giấy tờ gốc hoặc được coi như giấy tờ gốc: + Giấy xác nhận quá trình công tác của đơn vị cũ trước khi thôi việc hoặc hết nhiệm vụ; + Quyết định tuyển dụng, thôi việc hoặc hết nhiệm vụ; + Lý lịch cán bộ công chức, viên chức; lý lịch đi lao động ở nước ngoài; lý lịch đảng viên; sổ bảo hiểm xã hội (nếu có). - Giấy tờ liên quan: + Quyết định điều động công tác, bổ nhiệm chức vụ, giao nhiệm vụ; + Giấy chứng nhận tham gia Thanh niên xung phong; phiếu chuyển thương, chuyển viện; + Huân, huy chương tham gia chiến tranh bảo vệ Tổ quốc và các hình thức khen thưởng khác."
+        ],
+        "attachment_path": null
+      },
+      {
+        "bucket": "conditional",
+        "name": "Thành phần hồ sơ 3: Giấy chứng tử hoặc giấy báo tử (bản sao). Trường hợp cơ quan tiếp nhận hồ sơ khai thác được giấy chứng tử từ Cơ sở dữ liệu quốc gia về dân cư và cơ sở dữ liệu, hệ thống thông tin có liên quan thì thân nhân đối tượng không phải nộp giấy tờ này.",
+        "conditions": [
+          "Thành phần hồ sơ 3: Giấy chứng tử hoặc giấy báo tử (bản sao). Trường hợp cơ quan tiếp nhận hồ sơ khai thác được giấy chứng tử từ Cơ sở dữ liệu quốc gia về dân cư và cơ sở dữ liệu, hệ thống thông tin có liên quan thì thân nhân đối tượng không phải nộp giấy tờ này."
+        ],
+        "attachment_path": null
+      }
+    ],
+    "special_cases": [
+      "Có yếu tố nước ngoài",
+      "Có kiểm tra dữ liệu cư trú/định danh",
+      "Có thể cần đối chiếu thông tin thửa đất hoặc giấy chứng nhận",
+      "Có thể cần đối chiếu quá trình đóng bảo hiểm để giải quyết chế độ",
+      "Có thể cần hồ sơ tử tuất hoặc mai táng phí",
+      "Có thể cần xác minh quan hệ lao động hoặc giấy phép làm việc"
+    ],
+    "common_errors": [
+      "Thiếu giấy tờ hợp pháp hóa hoặc giấy tờ nhân thân của phía nước ngoài.",
+      "Điền sai mẫu tờ khai hoặc chọn sai biểu mẫu đi kèm.",
+      "Thông tin thửa đất, tài sản hoặc giấy chứng nhận chưa khớp với hồ sơ hiện có.",
+      "Thiếu hồ sơ về vị trí việc làm, đơn vị sử dụng lao động hoặc điều kiện làm việc áp dụng."
+    ],
+    "validation_hints": [
+      "Nên xác định trước kênh nộp hồ sơ để biết có cần bản giấy, bản điện tử hay xuất trình trực tiếp.",
+      "Nên xác định đúng nhóm đối tượng, mã số bảo hiểm và quyền lợi áp dụng trước khi nộp."
+    ]
+  },
+  "intake": {
+    "candidate_input_fields": [
+      {
+        "field_id": "request_subject",
+        "label": "Đối tượng làm thủ tục",
+        "field_type": "text",
+        "required": true
+      },
+      {
+        "field_id": "insurance_or_medical_need",
+        "label": "Nhu cầu bảo hiểm hoặc y tế",
+        "field_type": "text",
+        "required": true
+      },
+      {
+        "field_id": "submission_channel_preference",
+        "label": "Kênh nộp dự kiến",
+        "field_type": "enum",
+        "required": false
+      },
+      {
+        "field_id": "has_insurance_number",
+        "label": "Đã có mã BHXH/BHYT",
+        "field_type": "boolean",
+        "required": false
+      }
+    ],
+    "suggested_clarifying_questions": [
+      "Bạn đang muốn đăng ký, điều chỉnh hay xác nhận quyền lợi y tế hoặc bảo hiểm nào?",
+      "Bạn đã có mã BHXH/BHYT hoặc thông tin đơn vị tiếp nhận liên quan chưa?"
+    ]
+  },
+  "ui_hints": {
+    "primary_channel": "in_person",
+    "result_label": "Quyết định hưởng chế độ trợ cấp một lần",
+    "time_badge": "12 ngày làm việc",
+    "document_count_badge": 3
+  },
+  "provenance": {
+    "generator": "workflow_domain_enricher",
+    "derivation_mode": "rule_based_semantic_enrichment",
+    "supported_group": true
+  }
+}

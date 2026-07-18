@@ -1,0 +1,433 @@
+{
+  "schema_version": "3.0",
+  "record_type": "public_service_procedure_payload",
+  "id": "procedure-1.010094",
+  "procedure_code": "1.010094",
+  "code": "1.010094",
+  "title": "Thủ tục cấp hộ chiếu phổ thông (không gắn chip điện tử) tại Cơ quan đại diện Việt Nam ở nước ngoài",
+  "language": "vi",
+  "status": "generated_from_pipeline",
+  "field": "Công tác lãnh sự",
+  "group_key": "cu_tru_giay_to",
+  "workflow_family": "residence_identity_documents_workflow",
+  "subflow": "ho_chieu",
+  "source": {
+    "source_url": "file:///C:/Users/ku060/Downloads/VAIC%20source/data-pipeline/raw_data/1_010094/1_010094_procedure_detail.md",
+    "source_markdown_path": "C:\\Users\\ku060\\Downloads\\VAIC source\\data-pipeline\\raw_data\\1_010094\\1_010094_procedure_detail.md",
+    "normalized_payload_path": "C:\\Users\\ku060\\Downloads\\VAIC source\\data-pipeline\\govease-unified\\data\\normalized_structured\\1_010094_normalized_structured.json",
+    "enriched_payload_path": "C:\\Users\\ku060\\Downloads\\VAIC source\\data-pipeline\\govease-unified\\data\\enriched_structured_priority\\1_010094_enriched_structured.json"
+  },
+  "scope": {
+    "included": "Thủ tục này thuộc nhóm cư trú và giấy tờ, thường cần kiểm tra thông tin định danh hoặc hồ sơ giấy tờ chuyên ngành. Kết quả thường nhận được là Hộ chiếu phổ thông. Thời gian xử lý tham khảo: 5 ngày làm việc.",
+    "not_included": []
+  },
+  "agency": {
+    "executing_agency": null,
+    "submission_place": null,
+    "receiving_places": []
+  },
+  "target_users": [
+    "Công dân Việt Nam"
+  ],
+  "submission_methods": [
+    {
+      "code": "IN_PERSON",
+      "label": "Trực tiếp",
+      "processing_time": "5 ngày làm việc",
+      "fee": null,
+      "description": "- Trong thời hạn quy định (05 ngày làm việc đối với hồ sơ đề nghị cấp hộ chiếu lần đầu) kể từ ngày tiếp nhận đầy đủ hồ sơ hợp lệ, nếu đủ căn cứ để cấp hộ chiếu, CQĐD cấp HCPT (không gắn chip điện tử), trả kết quả cho người đề nghị"
+    },
+    {
+      "code": "IN_PERSON",
+      "label": "Trực tiếp",
+      "processing_time": "3 ngày làm việc",
+      "fee": null,
+      "description": "- Trong thời hạn quy định (03 ngày làm việc đối với đề nghị cấp hộ chiếu lần thứ hai trở đi) kể từ ngày tiếp nhận đầy đủ hồ sơ hợp lệ, nếu đủ căn cứ để cấp hộ chiếu, CQĐD cấp HCPT (không gắn chip điện tử), trả kết quả cho người đề nghị"
+    },
+    {
+      "code": "IN_PERSON",
+      "label": "Trực tiếp",
+      "processing_time": "2 ngày làm việc",
+      "fee": null,
+      "description": "- Trường hợp hồ sơ phải xác minh với Cục Lãnh sự, Cục QLXNC: Trong thời hạn 02 ngày làm việc kể từ ngày nhận được trả lời của Cục Lãnh sự, Cục QLXNC, CQĐD cấp HCPT (không gắn chip điện tử) và trả kết quả cho người đề nghị."
+    }
+  ],
+  "processing_note": "Thời gian xử lý tham chiếu: 5 ngày làm việc. Nên kiểm tra trước giấy tờ định danh, nơi nộp và mẫu biểu liên quan, rồi chọn kênh nộp phù hợp: Trực tiếp. Hiện có khoảng 7 mục giấy tờ cần theo dõi trong checklist.",
+  "documents": {
+    "normally_required": [
+      {
+        "name": "Bản sao giấy khai sinh hoặc trích lục khai sinh đối với người chưa đủ 14 tuổi;",
+        "quantity": "0 bản chính, 1 bản sao",
+        "notes": [],
+        "group": "default",
+        "attachment_path": null
+      },
+      {
+        "name": "02 ảnh chân dung (ảnh mới chụp không quá 06 tháng, cỡ 4cm x 6cm, mặt nhìn thẳng, đầu để trần, rõ mặt, rõ hai tai, không đeo kính, trang phục lịch sự, phông ảnh nền trắng);",
+        "quantity": "2 bản chính, 0 bản sao",
+        "notes": [],
+        "group": "default",
+        "attachment_path": null
+      },
+      {
+        "name": "01 Tờ khai đề nghị cấp hộ chiếu phổ thông ở nước ngoài (mẫu TK02);",
+        "quantity": "1 bản chính, 0 bản sao",
+        "notes": [],
+        "group": "default",
+        "attachment_path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/1_010094/Ma%CC%82%CC%83u%20TK02.docx"
+      }
+    ],
+    "conditional": [
+      {
+        "condition": "Bản chụp Chứng minh nhân dân hoặc thẻ Căn cước công dân đối với trường hợp có sự thay đổi thông tin về nhân thân so với thông tin trong hộ chiếu đã cấp lần gần nhất;",
+        "document": "Bản chụp Chứng minh nhân dân hoặc thẻ Căn cước công dân đối với trường hợp có sự thay đổi thông tin về nhân thân so với thông tin trong hộ chiếu đã cấp lần gần nhất;",
+        "quantity": "0 bản chính, 1 bản sao",
+        "notes": [],
+        "attachment_path": null
+      },
+      {
+        "condition": "Bản chụp có chứng thực giấy tờ do cơ quan có thẩm quyền của Việt Nam cấp chứng minh người đại diện hợp pháp đối với người mất năng lực hành vi dân sự, người có khó khăn trong nhận thức, làm chủ hành vi theo quy định của Bộ luật Dân sự, người chưa đủ 14 tuổi. Trường hợp bản chụp không có chứng thực thì xuất trình bản chính để kiểm tra, đối chiếu.",
+        "document": "Bản chụp có chứng thực giấy tờ do cơ quan có thẩm quyền của Việt Nam cấp chứng minh người đại diện hợp pháp đối với người mất năng lực hành vi dân sự, người có khó khăn trong nhận thức, làm chủ hành vi theo quy định của Bộ luật Dân sự, người chưa đủ 14 tuổi. Trường hợp bản chụp không có chứng thực thì xuất trình bản chính để kiểm tra, đối chiếu.",
+        "quantity": "1 bản chính, 1 bản sao",
+        "notes": [],
+        "attachment_path": null
+      },
+      {
+        "condition": "HCPT cấp lần gần nhất đối với người đã được cấp hộ chiếu; trường hợp hộ chiếu bị mất phải kèm Đơn trình báo mất HCPT hoặc văn bản thông báo về việc đã tiếp nhận đơn báo mất HCPT của cơ quan có thẩm quyền;",
+        "document": "HCPT cấp lần gần nhất đối với người đã được cấp hộ chiếu; trường hợp hộ chiếu bị mất phải kèm Đơn trình báo mất HCPT hoặc văn bản thông báo về việc đã tiếp nhận đơn báo mất HCPT của cơ quan có thẩm quyền;",
+        "quantity": "1 bản chính, 1 bản sao",
+        "notes": [],
+        "attachment_path": null
+      },
+      {
+        "condition": "Xuất trình hộ chiếu Việt Nam hoặc giấy tờ tùy thân do cơ quan có thẩm quyền của Việt Nam cấp. Trường hợp không có hộ chiếu Việt Nam, giấy tờ tùy thân do cơ quan có thẩm quyền của Việt Nam cấp thì xuất trình giấy tờ tùy thân do cơ quan có thẩm quyền nước ngoài cấp và giấy tờ chứng minh quốc tịch Việt Nam hoặc giấy tờ làm căn cứ để xác định quốc tịch Việt Nam.",
+        "document": "Xuất trình hộ chiếu Việt Nam hoặc giấy tờ tùy thân do cơ quan có thẩm quyền của Việt Nam cấp. Trường hợp không có hộ chiếu Việt Nam, giấy tờ tùy thân do cơ quan có thẩm quyền của Việt Nam cấp thì xuất trình giấy tờ tùy thân do cơ quan có thẩm quyền nước ngoài cấp và giấy tờ chứng minh quốc tịch Việt Nam hoặc giấy tờ làm căn cứ để xác định quốc tịch Việt Nam.",
+        "quantity": "1 bản chính, 1 bản sao",
+        "notes": [],
+        "attachment_path": null
+      }
+    ],
+    "forms": [
+      {
+        "name": "01 Tờ khai đề nghị cấp hộ chiếu phổ thông ở nước ngoài (mẫu TK02);",
+        "attachment_label": "Mẫu TK02.docx",
+        "attachment_path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/1_010094/Ma%CC%82%CC%83u%20TK02.docx"
+      }
+    ],
+    "presented": [],
+    "notes": [],
+    "summary": [
+      {
+        "group": "default",
+        "name": "Bản sao giấy khai sinh hoặc trích lục khai sinh đối với người chưa đủ 14 tuổi;",
+        "quantity": "0 bản chính, 1 bản sao",
+        "notes": [],
+        "attachment_path": null
+      },
+      {
+        "group": "default",
+        "name": "02 ảnh chân dung (ảnh mới chụp không quá 06 tháng, cỡ 4cm x 6cm, mặt nhìn thẳng, đầu để trần, rõ mặt, rõ hai tai, không đeo kính, trang phục lịch sự, phông ảnh nền trắng);",
+        "quantity": "2 bản chính, 0 bản sao",
+        "notes": [],
+        "attachment_path": null
+      },
+      {
+        "group": "default",
+        "name": "01 Tờ khai đề nghị cấp hộ chiếu phổ thông ở nước ngoài (mẫu TK02);",
+        "quantity": "1 bản chính, 0 bản sao",
+        "notes": [],
+        "attachment_path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/1_010094/Ma%CC%82%CC%83u%20TK02.docx"
+      },
+      {
+        "group": null,
+        "name": null,
+        "quantity": "0 bản chính, 1 bản sao",
+        "notes": [],
+        "attachment_path": null
+      },
+      {
+        "group": null,
+        "name": null,
+        "quantity": "1 bản chính, 1 bản sao",
+        "notes": [],
+        "attachment_path": null
+      },
+      {
+        "group": null,
+        "name": null,
+        "quantity": "1 bản chính, 1 bản sao",
+        "notes": [],
+        "attachment_path": null
+      },
+      {
+        "group": null,
+        "name": null,
+        "quantity": "1 bản chính, 1 bản sao",
+        "notes": [],
+        "attachment_path": null
+      },
+      {
+        "group": null,
+        "name": "01 Tờ khai đề nghị cấp hộ chiếu phổ thông ở nước ngoài (mẫu TK02);",
+        "quantity": null,
+        "notes": null,
+        "attachment_path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/1_010094/Ma%CC%82%CC%83u%20TK02.docx"
+      }
+    ]
+  },
+  "steps": [
+    {
+      "order": 1,
+      "title": "Bước 1",
+      "description": "1. **Cấp hộ chiếu phổ thông (không gắn chip điện tử) tại Cơ quan đại diện Việt Nam ở nước ngoài**",
+      "example": null
+    },
+    {
+      "order": 2,
+      "title": "Bước 1:",
+      "description": "Bước 1: Người đề nghị cấp HCPT (không gắn chip điện tử) chuẩn bị hồ sơ theo quy định và nộp hồ sơ tại CQĐD.",
+      "example": null
+    },
+    {
+      "order": 3,
+      "title": "Bước 2:",
+      "description": "Bước 2: Cán bộ tiếp nhận (tại CQĐD) kiểm tra tính hợp lệ, đầy đủ của hồ sơ (Tờ khai, ảnh chân dung và các giấy tờ liên quan); kiểm tra, đối chiếu với thông tin trong Cơ sở dữ liệu quốc gia về xuất cảnh, nhập cảnh của công dân Việt Nam. - Trường hợp hồ sơ chưa hợp lệ, chưa đầy đủ, cán bộ tiếp nhận trả lại hồ sơ và hướng dẫn người đề nghị bổ sung, hoàn thiện hồ sơ theo quy định. - Trường hợp hồ sơ hợp lệ, đủ điều kiện giải quyết, cán bộ tiếp nhận cấp Giấy hẹn trả kết quả và chuyển hồ sơ cho bộ phận xử lý hồ sơ để giải quyết theo thẩm quyền.",
+      "example": null
+    },
+    {
+      "order": 4,
+      "title": "Bước 3:",
+      "description": "Bước 3: CQĐD giải quyết và trả kết quả theo quy định: - Trong thời hạn quy định (05 ngày làm việc đối với hồ sơ đề nghị cấp hộ chiếu lần đầu và 03 ngày làm việc đối với đề nghị cấp hộ chiếu lần thứ hai trở đi) kể từ ngày tiếp nhận đầy đủ hồ sơ hợp lệ, nếu đủ căn cứ để cấp hộ chiếu, CQĐD cấp HCPT (không gắn chip điện tử), trả kết quả cho người đề nghị và thông báo bằng văn bản cho Cục QLXNC và Cục Lãnh sự Bộ Ngoại giao trong trường hợp chưa kết nối với Cơ sở dữ liệu quốc gia về xuất cảnh, nhập cảnh của công dân Việt Nam. - Trường hợp nhận được Đơn báo mất HCPT: Trong thời hạn 01 ngày làm việc kể từ khi nhận được đơn, CQĐD có trách nhiệm thông báo theo mẫu cho Cục QLXNC (để hủy giá trị sử dụng hộ chiếu) và người gửi đơn. - Trường hợp chưa đủ căn cứ để cấp hộ chiếu hoặc cần kéo dài thời gian để xác định căn cứ cấp hộ chiếu, CQĐD trả lời bằng văn bản cho người đề nghị, nêu lý do. Trong thời hạn 03 ngày làm việc kể từ ngày tiếp nhận đề nghị, CQĐD gửi văn bản theo mẫu về Cục Lãnh sự, Cục QLXNC để xác minh theo thẩm quyền. Trong thời hạn 02 ngày làm việc kể từ ngày nhận được trả lời của Cục Lãnh sự, Cục QLXNC, CQĐD cấp hộ HCPT (không gắn chip điện tử) và trả kết quả cho người đề nghị. - Trường hợp chưa cấp hộ chiếu, CQĐD trả lời bằng văn bản cho người đề nghị, nêu lý do.",
+      "example": "05 ngày làm việc"
+    }
+  ],
+  "input_fields": [
+    {
+      "field": "document_request_type",
+      "label": "Loại giấy tờ cần xử lý",
+      "type": "string",
+      "required": true
+    },
+    {
+      "field": "submission_channel_preference",
+      "label": "Kênh nộp dự kiến",
+      "type": "enum",
+      "required": false,
+      "options": [
+        "Trực tiếp"
+      ]
+    },
+    {
+      "field": "identity_document_available",
+      "label": "Có giấy tờ định danh",
+      "type": "boolean",
+      "required": true
+    },
+    {
+      "field": "residency_or_status_known",
+      "label": "Biết rõ nơi cư trú hoặc tình trạng hiện tại",
+      "type": "boolean",
+      "required": false
+    },
+    {
+      "field": "passport_status",
+      "label": "Tình trạng hộ chiếu hiện tại",
+      "type": "enum",
+      "required": false
+    }
+  ],
+  "validation_rules": [
+    {
+      "id": "required-1",
+      "severity": "error",
+      "field": "document_request_type",
+      "rule": "Trường bắt buộc phải có dữ liệu hợp lệ trước khi nộp.",
+      "message": "Thiếu trường bắt buộc: Loại giấy tờ cần xử lý."
+    },
+    {
+      "id": "required-3",
+      "severity": "error",
+      "field": "identity_document_available",
+      "rule": "Trường bắt buộc phải có dữ liệu hợp lệ trước khi nộp.",
+      "message": "Thiếu trường bắt buộc: Có giấy tờ định danh."
+    },
+    {
+      "id": "hint-1",
+      "severity": "warning",
+      "field": "general",
+      "rule": "Nên xác định trước kênh nộp hồ sơ để biết có cần bản giấy, bản điện tử hay xuất trình trực tiếp.",
+      "message": "Nên xác định trước kênh nộp hồ sơ để biết có cần bản giấy, bản điện tử hay xuất trình trực tiếp."
+    },
+    {
+      "id": "hint-2",
+      "severity": "warning",
+      "field": "general",
+      "rule": "Có mẫu biểu đính kèm, nên kiểm tra đúng biểu mẫu trước khi nộp.",
+      "message": "Có mẫu biểu đính kèm, nên kiểm tra đúng biểu mẫu trước khi nộp."
+    },
+    {
+      "id": "hint-3",
+      "severity": "warning",
+      "field": "general",
+      "rule": "Nên đối chiếu trước dữ liệu định danh và nơi cư trú để tránh bị yêu cầu bổ sung.",
+      "message": "Nên đối chiếu trước dữ liệu định danh và nơi cư trú để tránh bị yêu cầu bổ sung."
+    }
+  ],
+  "common_errors": [
+    {
+      "field": "general",
+      "issue": "Thiếu giấy tờ hợp pháp hóa hoặc giấy tờ nhân thân của phía nước ngoài.",
+      "fix": "Nên xác định trước kênh nộp hồ sơ để biết có cần bản giấy, bản điện tử hay xuất trình trực tiếp."
+    },
+    {
+      "field": "general",
+      "issue": "Điền sai mẫu tờ khai hoặc chọn sai biểu mẫu đi kèm.",
+      "fix": "Nên xác định trước kênh nộp hồ sơ để biết có cần bản giấy, bản điện tử hay xuất trình trực tiếp."
+    }
+  ],
+  "clarifying_questions": [
+    {
+      "id": "clarify_1",
+      "question": "Bạn đang xử lý giấy tờ gì và muốn nộp trực tiếp hay trực tuyến?",
+      "purpose": "workflow_intake"
+    },
+    {
+      "id": "clarify_2",
+      "question": "Thông tin định danh và nơi cư trú hiện tại đã sẵn sàng để đối chiếu chưa?",
+      "purpose": "workflow_intake"
+    }
+  ],
+  "legal_basis": [
+    {
+      "title": "Quy định mức thu, chế độ thu, nộp, quản lý và sử dụng phí, lệ phí trong lĩnh vực ngoại giao áp dụng tại các Cơ quan đại diện Việt Nam ở nước ngoài",
+      "code": "264/2016/TT-BTC"
+    },
+    {
+      "title": "Luật 49/2019/QH14",
+      "code": "49/2019/QH14"
+    },
+    {
+      "title": "Luật 33/2009/QH12",
+      "code": "33/2009/QH12"
+    },
+    {
+      "title": "Thông tư 02/2020/TT-BNG",
+      "code": "02/2020/TT-BNG"
+    },
+    {
+      "title": "Luật sửa đổi, bổ sung một số điều của Luật Cơ quan đại diện nước Cộng hòa xã hội chủ nghĩa Việt Nam ở nước ngoài.",
+      "code": "19/2017/QH14"
+    }
+  ],
+  "legal_bases": [
+    {
+      "title": "Quy định mức thu, chế độ thu, nộp, quản lý và sử dụng phí, lệ phí trong lĩnh vực ngoại giao áp dụng tại các Cơ quan đại diện Việt Nam ở nước ngoài",
+      "code": "264/2016/TT-BTC"
+    },
+    {
+      "title": "Luật 49/2019/QH14",
+      "code": "49/2019/QH14"
+    },
+    {
+      "title": "Luật 33/2009/QH12",
+      "code": "33/2009/QH12"
+    },
+    {
+      "title": "Thông tư 02/2020/TT-BNG",
+      "code": "02/2020/TT-BNG"
+    },
+    {
+      "title": "Luật sửa đổi, bổ sung một số điều của Luật Cơ quan đại diện nước Cộng hòa xã hội chủ nghĩa Việt Nam ở nước ngoài.",
+      "code": "19/2017/QH14"
+    }
+  ],
+  "faq": [
+    {
+      "question": "Có thể nộp qua kênh nào?",
+      "answer": "Các kênh hiện có: Trực tiếp."
+    },
+    {
+      "question": "Thời gian xử lý tham chiếu là bao lâu?",
+      "answer": "Thời gian xử lý tham chiếu hiện có là 5 ngày làm việc."
+    },
+    {
+      "question": "Kết quả chính của thủ tục là gì?",
+      "answer": "Kết quả chính được trích xuất là Hộ chiếu phổ thông."
+    }
+  ],
+  "guidance": {
+    "highlight_documents": [
+      {
+        "bucket": "required",
+        "name": "Bản sao giấy khai sinh hoặc trích lục khai sinh đối với người chưa đủ 14 tuổi;",
+        "conditions": [],
+        "attachment_path": null
+      },
+      {
+        "bucket": "required",
+        "name": "02 ảnh chân dung (ảnh mới chụp không quá 06 tháng, cỡ 4cm x 6cm, mặt nhìn thẳng, đầu để trần, rõ mặt, rõ hai tai, không đeo kính, trang phục lịch sự, phông ảnh nền trắng);",
+        "conditions": [],
+        "attachment_path": null
+      },
+      {
+        "bucket": "required",
+        "name": "01 Tờ khai đề nghị cấp hộ chiếu phổ thông ở nước ngoài (mẫu TK02);",
+        "conditions": [],
+        "attachment_path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/1_010094/Ma%CC%82%CC%83u%20TK02.docx"
+      },
+      {
+        "bucket": "conditional",
+        "name": "Bản chụp Chứng minh nhân dân hoặc thẻ Căn cước công dân đối với trường hợp có sự thay đổi thông tin về nhân thân so với thông tin trong hộ chiếu đã cấp lần gần nhất;",
+        "conditions": [
+          "Bản chụp Chứng minh nhân dân hoặc thẻ Căn cước công dân đối với trường hợp có sự thay đổi thông tin về nhân thân so với thông tin trong hộ chiếu đã cấp lần gần nhất;"
+        ],
+        "attachment_path": null
+      },
+      {
+        "bucket": "conditional",
+        "name": "Bản chụp có chứng thực giấy tờ do cơ quan có thẩm quyền của Việt Nam cấp chứng minh người đại diện hợp pháp đối với người mất năng lực hành vi dân sự, người có khó khăn trong nhận thức, làm chủ hành vi theo quy định của Bộ luật Dân sự, người chưa đủ 14 tuổi. Trường hợp bản chụp không có chứng thực thì xuất trình bản chính để kiểm tra, đối chiếu.",
+        "conditions": [
+          "Bản chụp có chứng thực giấy tờ do cơ quan có thẩm quyền của Việt Nam cấp chứng minh người đại diện hợp pháp đối với người mất năng lực hành vi dân sự, người có khó khăn trong nhận thức, làm chủ hành vi theo quy định của Bộ luật Dân sự, người chưa đủ 14 tuổi. Trường hợp bản chụp không có chứng thực thì xuất trình bản chính để kiểm tra, đối chiếu."
+        ],
+        "attachment_path": null
+      },
+      {
+        "bucket": "conditional",
+        "name": "HCPT cấp lần gần nhất đối với người đã được cấp hộ chiếu; trường hợp hộ chiếu bị mất phải kèm Đơn trình báo mất HCPT hoặc văn bản thông báo về việc đã tiếp nhận đơn báo mất HCPT của cơ quan có thẩm quyền;",
+        "conditions": [
+          "HCPT cấp lần gần nhất đối với người đã được cấp hộ chiếu; trường hợp hộ chiếu bị mất phải kèm Đơn trình báo mất HCPT hoặc văn bản thông báo về việc đã tiếp nhận đơn báo mất HCPT của cơ quan có thẩm quyền;"
+        ],
+        "attachment_path": null
+      }
+    ],
+    "special_cases": [
+      "Có yếu tố nước ngoài"
+    ],
+    "common_errors": [
+      "Thiếu giấy tờ hợp pháp hóa hoặc giấy tờ nhân thân của phía nước ngoài.",
+      "Điền sai mẫu tờ khai hoặc chọn sai biểu mẫu đi kèm."
+    ],
+    "validation_hints": [
+      "Nên xác định trước kênh nộp hồ sơ để biết có cần bản giấy, bản điện tử hay xuất trình trực tiếp.",
+      "Có mẫu biểu đính kèm, nên kiểm tra đúng biểu mẫu trước khi nộp.",
+      "Nên đối chiếu trước dữ liệu định danh và nơi cư trú để tránh bị yêu cầu bổ sung."
+    ]
+  },
+  "next_steps": {
+    "summary": "Nên kiểm tra trước giấy tờ định danh, nơi nộp và mẫu biểu liên quan, rồi chọn kênh nộp phù hợp: Trực tiếp. Hiện có khoảng 7 mục giấy tờ cần theo dõi trong checklist.",
+    "time_badge": "5 ngày làm việc",
+    "result_label": "Hộ chiếu phổ thông",
+    "primary_channel": "in_person",
+    "channels": [
+      "in_person"
+    ]
+  },
+  "notes": [],
+  "provenance": {
+    "pipeline": "raw->structured->normalized->enriched->ui_api_payload",
+    "normalizer_version": "0.2.0",
+    "enricher_version": "0.2.0",
+    "mapping_notes": "workflow_generated:cu_tru_giay_to/ho_chieu",
+    "supported_group": true
+  }
+}

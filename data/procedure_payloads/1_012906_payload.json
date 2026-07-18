@@ -1,0 +1,413 @@
+{
+  "schema_version": "3.0",
+  "record_type": "public_service_procedure_payload",
+  "id": "procedure-1.012906",
+  "procedure_code": "1.012906",
+  "code": "1.012906",
+  "title": "Cấp mới chứng chỉ hành nghề môi giới bất động sản.",
+  "language": "vi",
+  "status": "generated_from_pipeline",
+  "field": "Kinh doanh bất động sản",
+  "group_key": "hoc_tap",
+  "workflow_family": null,
+  "subflow": null,
+  "source": {
+    "source_url": "file:///C:/Users/ku060/Downloads/VAIC%20source/data-pipeline/raw_data/1_012906/1_012906_procedure_detail.md",
+    "source_markdown_path": "C:\\Users\\ku060\\Downloads\\VAIC source\\data-pipeline\\raw_data\\1_012906\\1_012906_procedure_detail.md",
+    "normalized_payload_path": "C:\\Users\\ku060\\Downloads\\VAIC source\\data-pipeline\\govease-unified\\data\\normalized_structured\\1_012906_normalized_structured.json",
+    "enriched_payload_path": "C:\\Users\\ku060\\Downloads\\VAIC source\\data-pipeline\\govease-unified\\data\\enriched_structured_priority\\1_012906_enriched_structured.json"
+  },
+  "scope": {
+    "included": "Thủ tục này thuộc nhóm giáo dục và học tập, thường liên quan đến hồ sơ đào tạo, văn bằng hoặc điều kiện học tập của người học. Kết quả thường nhận được là Chứng chỉ hành nghề môi giới bất động sản. Thời gian xử lý tham khảo: 10 ngày làm việc.",
+    "not_included": []
+  },
+  "agency": {
+    "executing_agency": "Sở Xây dựng",
+    "submission_place": null,
+    "receiving_places": []
+  },
+  "target_users": [
+    "Công dân Việt Nam",
+    "Người nước ngoài",
+    "Người Việt Nam định cư ở nước ngoài"
+  ],
+  "submission_methods": [
+    {
+      "code": "ONLINE",
+      "label": "Trực tuyến",
+      "processing_time": "10 ngày làm việc",
+      "fee": null,
+      "description": null
+    },
+    {
+      "code": "POSTAL",
+      "label": "Dịch vụ bưu chính",
+      "processing_time": "10 ngày làm việc",
+      "fee": null,
+      "description": null
+    },
+    {
+      "code": "IN_PERSON",
+      "label": "Trực tiếp",
+      "processing_time": "10 ngày làm việc",
+      "fee": null,
+      "description": null
+    }
+  ],
+  "processing_note": "Thời gian xử lý tham chiếu: 10 ngày làm việc. Nên rà trước thông tin người học, cơ sở đào tạo và loại kết quả cần xin xác nhận hoặc cấp lại. Có thể chọn kênh nộp phù hợp: Trực tiếp, Trực tuyến, Dịch vụ bưu chính. Hiện có khoảng 6 mục giấy tờ cần theo dõi trong checklist.",
+  "documents": {
+    "normally_required": [
+      {
+        "name": "01 Đơn đăng ký dự thi có dán ảnh mầu cỡ 4x6cm chụp trong thời gian 06 tháng tính đến ngày đăng ký dự thi (theo mẫu tại Phụ lục XXI của Nghị định số 96/2024/NĐ-CP ngày 24/7/2024 của Chính phủ quy định chi tiết một số điều của Luật Kinh doanh bất động sản).",
+        "quantity": "1 bản chính, 1 bản sao",
+        "notes": [],
+        "group": "default",
+        "attachment_path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/1_012906/Ph%E1%BB%A5%20l%E1%BB%A5c%20XXI.docx"
+      },
+      {
+        "name": "Bản sao và bản dịch có chứng thực chứng chỉ do nước ngoài cấp (đối với người nước ngoài và người Việt Nam có chứng chỉ hành nghề môi giới bất động sản do nước ngoài cấp đang còn giá trị).",
+        "quantity": "1 bản chính, 1 bản sao",
+        "notes": [],
+        "group": "default",
+        "attachment_path": null
+      },
+      {
+        "name": "01 Bản sao chứng thực Giấy chứng nhận đã hoàn thành khóa học về đào tạo bồi dưỡng kiến thức hành nghề môi giới bất động sản.",
+        "quantity": "1 bản chính, 1 bản sao",
+        "notes": [],
+        "group": "default",
+        "attachment_path": null
+      },
+      {
+        "name": "02 ảnh màu cỡ 4x6cm chụp trong thời gian 06 tháng tính đến ngày đăng ký dự thi, 02 phong bì có dán tem ghi rõ họ tên, số điện thoại, địa chỉ người nhận.",
+        "quantity": "1 bản chính, 1 bản sao",
+        "notes": [],
+        "group": "default",
+        "attachment_path": null
+      },
+      {
+        "name": "Bản sao chứng thực bằng tốt nghiệp từ trung học phổ thông hoặc tương đương trở lên.",
+        "quantity": "1 bản chính, 1 bản sao",
+        "notes": [],
+        "group": "default",
+        "attachment_path": null
+      }
+    ],
+    "conditional": [
+      {
+        "condition": "01 Bản sao chứng thực Giấy chứng minh nhân dân hoặc Căn cước công dân hoặc Thẻ căn cước theo quy định của pháp luật về căn cước; giấy tờ chứng minh quốc tịch Việt Nam hoặc giấy xác nhận là người gốc Việt Nam theo quy định của pháp luật quốc tịch hoặc hộ chiếu (hoặc bản sao có bản chính để đối chiếu). Trường hợp căn cước công dân đã có trong Cơ sở dữ liệu quốc gia về dân cư thì các thông tin này được thay thế bằng dữ liệu khi Cơ sở dữ liệu quốc gia về dân cư được vận hành",
+        "document": "01 Bản sao chứng thực Giấy chứng minh nhân dân hoặc Căn cước công dân hoặc Thẻ căn cước theo quy định của pháp luật về căn cước; giấy tờ chứng minh quốc tịch Việt Nam hoặc giấy xác nhận là người gốc Việt Nam theo quy định của pháp luật quốc tịch hoặc hộ chiếu (hoặc bản sao có bản chính để đối chiếu). Trường hợp căn cước công dân đã có trong Cơ sở dữ liệu quốc gia về dân cư thì các thông tin này được thay thế bằng dữ liệu khi Cơ sở dữ liệu quốc gia về dân cư được vận hành",
+        "quantity": "1 bản chính, 1 bản sao",
+        "notes": [],
+        "attachment_path": null
+      }
+    ],
+    "forms": [
+      {
+        "name": "01 Đơn đăng ký dự thi có dán ảnh mầu cỡ 4x6cm chụp trong thời gian 06 tháng tính đến ngày đăng ký dự thi (theo mẫu tại Phụ lục XXI của Nghị định số 96/2024/NĐ-CP ngày 24/7/2024 của Chính phủ quy định chi tiết một số điều của Luật Kinh doanh bất động sản).",
+        "attachment_label": "Phụ lục XXI.docx",
+        "attachment_path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/1_012906/Ph%E1%BB%A5%20l%E1%BB%A5c%20XXI.docx"
+      }
+    ],
+    "presented": [],
+    "notes": [],
+    "summary": [
+      {
+        "group": "default",
+        "name": "01 Đơn đăng ký dự thi có dán ảnh mầu cỡ 4x6cm chụp trong thời gian 06 tháng tính đến ngày đăng ký dự thi (theo mẫu tại Phụ lục XXI của Nghị định số 96/2024/NĐ-CP ngày 24/7/2024 của Chính phủ quy định chi tiết một số điều của Luật Kinh doanh bất động sản).",
+        "quantity": "1 bản chính, 1 bản sao",
+        "notes": [],
+        "attachment_path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/1_012906/Ph%E1%BB%A5%20l%E1%BB%A5c%20XXI.docx"
+      },
+      {
+        "group": "default",
+        "name": "Bản sao và bản dịch có chứng thực chứng chỉ do nước ngoài cấp (đối với người nước ngoài và người Việt Nam có chứng chỉ hành nghề môi giới bất động sản do nước ngoài cấp đang còn giá trị).",
+        "quantity": "1 bản chính, 1 bản sao",
+        "notes": [],
+        "attachment_path": null
+      },
+      {
+        "group": "default",
+        "name": "01 Bản sao chứng thực Giấy chứng nhận đã hoàn thành khóa học về đào tạo bồi dưỡng kiến thức hành nghề môi giới bất động sản.",
+        "quantity": "1 bản chính, 1 bản sao",
+        "notes": [],
+        "attachment_path": null
+      },
+      {
+        "group": "default",
+        "name": "02 ảnh màu cỡ 4x6cm chụp trong thời gian 06 tháng tính đến ngày đăng ký dự thi, 02 phong bì có dán tem ghi rõ họ tên, số điện thoại, địa chỉ người nhận.",
+        "quantity": "1 bản chính, 1 bản sao",
+        "notes": [],
+        "attachment_path": null
+      },
+      {
+        "group": "default",
+        "name": "Bản sao chứng thực bằng tốt nghiệp từ trung học phổ thông hoặc tương đương trở lên.",
+        "quantity": "1 bản chính, 1 bản sao",
+        "notes": [],
+        "attachment_path": null
+      },
+      {
+        "group": null,
+        "name": null,
+        "quantity": "1 bản chính, 1 bản sao",
+        "notes": [],
+        "attachment_path": null
+      },
+      {
+        "group": null,
+        "name": "01 Đơn đăng ký dự thi có dán ảnh mầu cỡ 4x6cm chụp trong thời gian 06 tháng tính đến ngày đăng ký dự thi (theo mẫu tại Phụ lục XXI của Nghị định số 96/2024/NĐ-CP ngày 24/7/2024 của Chính phủ quy định chi tiết một số điều của Luật Kinh doanh bất động sản).",
+        "quantity": null,
+        "notes": null,
+        "attachment_path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/1_012906/Ph%E1%BB%A5%20l%E1%BB%A5c%20XXI.docx"
+      }
+    ]
+  },
+  "steps": [
+    {
+      "order": 1,
+      "title": "Bước 1",
+      "description": "1. **Cấp mới chứng chỉ hành nghề môi giới bất động sản.**",
+      "example": null
+    },
+    {
+      "order": 2,
+      "title": "Bước 2",
+      "description": "- Thí sinh nộp 01 bộ hồ sơ đăng ký dự thi và kinh phí dự thi theo thông báo của Sở Xây dựng.",
+      "example": null
+    },
+    {
+      "order": 3,
+      "title": "Bước 3",
+      "description": "- Chủ tịch Hội đồng thi (là lãnh đạo Sở Xây dựng) căn cứ kết quả chấm thi để phê duyệt kết quả thi, gửi Báo cáo quá trình tổ chức kỳ thi và quyết định phê duyệt kết quả thi về Giám đốc Sở Xây dựng.",
+      "example": null
+    },
+    {
+      "order": 4,
+      "title": "Bước 4",
+      "description": "- Căn cứ Báo cáo của Chủ tịch Hội đồng thi và kết quả thi do Chủ tịch Hội đồng thi phê duyệt, Giám đốc Sở Xây dựng phê duyệt danh sách các cá nhân được cấp chứng chỉ.",
+      "example": null
+    },
+    {
+      "order": 5,
+      "title": "Bước 5",
+      "description": "- Trong thời hạn 10 ngày làm việc, Sở Xây dựng tổ chức in và ký phát hành chứng chỉ.",
+      "example": "10 ngày làm việc"
+    }
+  ],
+  "input_fields": [
+    {
+      "field": "learner_full_name",
+      "label": "Tên người học",
+      "type": "string",
+      "required": true
+    },
+    {
+      "field": "education_record_type",
+      "label": "Loại hồ sơ học tập cần xử lý",
+      "type": "string",
+      "required": true
+    },
+    {
+      "field": "education_institution",
+      "label": "Cơ sở đào tạo liên quan",
+      "type": "string",
+      "required": false
+    },
+    {
+      "field": "submission_channel_preference",
+      "label": "Kênh nộp dự kiến",
+      "type": "enum",
+      "required": false,
+      "options": [
+        "Trực tiếp",
+        "Trực tuyến",
+        "Dịch vụ bưu chính"
+      ]
+    }
+  ],
+  "validation_rules": [
+    {
+      "id": "required-1",
+      "severity": "error",
+      "field": "learner_full_name",
+      "rule": "Trường bắt buộc phải có dữ liệu hợp lệ trước khi nộp.",
+      "message": "Thiếu trường bắt buộc: Tên người học."
+    },
+    {
+      "id": "required-2",
+      "severity": "error",
+      "field": "education_record_type",
+      "rule": "Trường bắt buộc phải có dữ liệu hợp lệ trước khi nộp.",
+      "message": "Thiếu trường bắt buộc: Loại hồ sơ học tập cần xử lý."
+    },
+    {
+      "id": "hint-1",
+      "severity": "warning",
+      "field": "general",
+      "rule": "Nên xác định trước kênh nộp hồ sơ để biết có cần bản giấy, bản điện tử hay xuất trình trực tiếp.",
+      "message": "Nên xác định trước kênh nộp hồ sơ để biết có cần bản giấy, bản điện tử hay xuất trình trực tiếp."
+    },
+    {
+      "id": "hint-2",
+      "severity": "warning",
+      "field": "general",
+      "rule": "Có mẫu biểu đính kèm, nên kiểm tra đúng biểu mẫu trước khi nộp.",
+      "message": "Có mẫu biểu đính kèm, nên kiểm tra đúng biểu mẫu trước khi nộp."
+    },
+    {
+      "id": "hint-3",
+      "severity": "warning",
+      "field": "general",
+      "rule": "Nên rà lại thông tin người học, cơ sở đào tạo và loại xác nhận hoặc văn bằng cần xin.",
+      "message": "Nên rà lại thông tin người học, cơ sở đào tạo và loại xác nhận hoặc văn bằng cần xin."
+    }
+  ],
+  "common_errors": [
+    {
+      "field": "general",
+      "issue": "Thiếu giấy tờ hợp pháp hóa hoặc giấy tờ nhân thân của phía nước ngoài.",
+      "fix": "Nên xác định trước kênh nộp hồ sơ để biết có cần bản giấy, bản điện tử hay xuất trình trực tiếp."
+    },
+    {
+      "field": "general",
+      "issue": "Điền sai mẫu tờ khai hoặc chọn sai biểu mẫu đi kèm.",
+      "fix": "Nên xác định trước kênh nộp hồ sơ để biết có cần bản giấy, bản điện tử hay xuất trình trực tiếp."
+    },
+    {
+      "field": "general",
+      "issue": "Thông tin thửa đất, tài sản hoặc giấy chứng nhận chưa khớp với hồ sơ hiện có.",
+      "fix": "Nên xác định trước kênh nộp hồ sơ để biết có cần bản giấy, bản điện tử hay xuất trình trực tiếp."
+    }
+  ],
+  "clarifying_questions": [
+    {
+      "id": "clarify_1",
+      "question": "Bạn đang cần xử lý hồ sơ học tập, văn bằng hay xác nhận nào?",
+      "purpose": "workflow_intake"
+    },
+    {
+      "id": "clarify_2",
+      "question": "Người học và cơ sở đào tạo liên quan đã xác định rõ chưa?",
+      "purpose": "workflow_intake"
+    }
+  ],
+  "legal_basis": [
+    {
+      "title": "Quy định chi tiết một số điều của Luật Kinh doanh bất động sản",
+      "code": "96/2024/NĐ-CP"
+    },
+    {
+      "title": "Về xây dựng và quản lý Hệ thống thông tin, cơ sở dữ liệu về nhà ở và thị trường bất động sản",
+      "code": "357/2025/NĐ-CP"
+    },
+    {
+      "title": "quy định về phân quyền, phân cấp trong lĩnh vực quản lý nhà nước của Bộ Xây dựng",
+      "code": "144/2025/NĐ-CP"
+    }
+  ],
+  "legal_bases": [
+    {
+      "title": "Quy định chi tiết một số điều của Luật Kinh doanh bất động sản",
+      "code": "96/2024/NĐ-CP"
+    },
+    {
+      "title": "Về xây dựng và quản lý Hệ thống thông tin, cơ sở dữ liệu về nhà ở và thị trường bất động sản",
+      "code": "357/2025/NĐ-CP"
+    },
+    {
+      "title": "quy định về phân quyền, phân cấp trong lĩnh vực quản lý nhà nước của Bộ Xây dựng",
+      "code": "144/2025/NĐ-CP"
+    }
+  ],
+  "faq": [
+    {
+      "question": "Có thể nộp qua kênh nào?",
+      "answer": "Các kênh hiện có: Trực tiếp, Trực tuyến, Dịch vụ bưu chính."
+    },
+    {
+      "question": "Thời gian xử lý tham chiếu là bao lâu?",
+      "answer": "Thời gian xử lý tham chiếu hiện có là 10 ngày làm việc."
+    },
+    {
+      "question": "Kết quả chính của thủ tục là gì?",
+      "answer": "Kết quả chính được trích xuất là Chứng chỉ hành nghề môi giới bất động sản."
+    }
+  ],
+  "guidance": {
+    "highlight_documents": [
+      {
+        "bucket": "required",
+        "name": "01 Đơn đăng ký dự thi có dán ảnh mầu cỡ 4x6cm chụp trong thời gian 06 tháng tính đến ngày đăng ký dự thi (theo mẫu tại Phụ lục XXI của Nghị định số 96/2024/NĐ-CP ngày 24/7/2024 của Chính phủ quy định chi tiết một số điều của Luật Kinh doanh bất động sản).",
+        "conditions": [],
+        "attachment_path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/1_012906/Ph%E1%BB%A5%20l%E1%BB%A5c%20XXI.docx"
+      },
+      {
+        "bucket": "required",
+        "name": "Bản sao và bản dịch có chứng thực chứng chỉ do nước ngoài cấp (đối với người nước ngoài và người Việt Nam có chứng chỉ hành nghề môi giới bất động sản do nước ngoài cấp đang còn giá trị).",
+        "conditions": [],
+        "attachment_path": null
+      },
+      {
+        "bucket": "required",
+        "name": "01 Bản sao chứng thực Giấy chứng nhận đã hoàn thành khóa học về đào tạo bồi dưỡng kiến thức hành nghề môi giới bất động sản.",
+        "conditions": [],
+        "attachment_path": null
+      },
+      {
+        "bucket": "required",
+        "name": "02 ảnh màu cỡ 4x6cm chụp trong thời gian 06 tháng tính đến ngày đăng ký dự thi, 02 phong bì có dán tem ghi rõ họ tên, số điện thoại, địa chỉ người nhận.",
+        "conditions": [],
+        "attachment_path": null
+      },
+      {
+        "bucket": "required",
+        "name": "Bản sao chứng thực bằng tốt nghiệp từ trung học phổ thông hoặc tương đương trở lên.",
+        "conditions": [],
+        "attachment_path": null
+      },
+      {
+        "bucket": "conditional",
+        "name": "01 Bản sao chứng thực Giấy chứng minh nhân dân hoặc Căn cước công dân hoặc Thẻ căn cước theo quy định của pháp luật về căn cước; giấy tờ chứng minh quốc tịch Việt Nam hoặc giấy xác nhận là người gốc Việt Nam theo quy định của pháp luật quốc tịch hoặc hộ chiếu (hoặc bản sao có bản chính để đối chiếu). Trường hợp căn cước công dân đã có trong Cơ sở dữ liệu quốc gia về dân cư thì các thông tin này được thay thế bằng dữ liệu khi Cơ sở dữ liệu quốc gia về dân cư được vận hành",
+        "conditions": [
+          "01 Bản sao chứng thực Giấy chứng minh nhân dân hoặc Căn cước công dân hoặc Thẻ căn cước theo quy định của pháp luật về căn cước; giấy tờ chứng minh quốc tịch Việt Nam hoặc giấy xác nhận là người gốc Việt Nam theo quy định của pháp luật quốc tịch hoặc hộ chiếu (hoặc bản sao có bản chính để đối chiếu). Trường hợp căn cước công dân đã có trong Cơ sở dữ liệu quốc gia về dân cư thì các thông tin này được thay thế bằng dữ liệu khi Cơ sở dữ liệu quốc gia về dân cư được vận hành"
+        ],
+        "attachment_path": null
+      }
+    ],
+    "special_cases": [
+      "Có yếu tố nước ngoài",
+      "Có kiểm tra dữ liệu cư trú/định danh",
+      "Có thể cần đối chiếu thông tin thửa đất hoặc giấy chứng nhận"
+    ],
+    "common_errors": [
+      "Thiếu giấy tờ hợp pháp hóa hoặc giấy tờ nhân thân của phía nước ngoài.",
+      "Điền sai mẫu tờ khai hoặc chọn sai biểu mẫu đi kèm.",
+      "Thông tin thửa đất, tài sản hoặc giấy chứng nhận chưa khớp với hồ sơ hiện có."
+    ],
+    "validation_hints": [
+      "Nên xác định trước kênh nộp hồ sơ để biết có cần bản giấy, bản điện tử hay xuất trình trực tiếp.",
+      "Có mẫu biểu đính kèm, nên kiểm tra đúng biểu mẫu trước khi nộp.",
+      "Nên rà lại thông tin người học, cơ sở đào tạo và loại xác nhận hoặc văn bằng cần xin."
+    ]
+  },
+  "next_steps": {
+    "summary": "Nên rà trước thông tin người học, cơ sở đào tạo và loại kết quả cần xin xác nhận hoặc cấp lại. Có thể chọn kênh nộp phù hợp: Trực tiếp, Trực tuyến, Dịch vụ bưu chính. Hiện có khoảng 6 mục giấy tờ cần theo dõi trong checklist.",
+    "time_badge": "10 ngày làm việc",
+    "result_label": "Chứng chỉ hành nghề môi giới bất động sản",
+    "primary_channel": "online",
+    "channels": [
+      "in_person",
+      "online",
+      "postal"
+    ]
+  },
+  "notes": [],
+  "provenance": {
+    "pipeline": "raw->structured->normalized->enriched->ui_api_payload",
+    "normalizer_version": "0.2.0",
+    "enricher_version": "0.2.0",
+    "mapping_notes": "excluded_from_clean_workflow_dataset",
+    "supported_group": true
+  }
+}

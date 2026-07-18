@@ -1,0 +1,312 @@
+{
+  "schema_version": "1.0",
+  "normalizer_version": "0.2.0",
+  "source": {
+    "procedure_code": "1.012275",
+    "title": "Đăng ký hành nghề",
+    "raw_structured_parser_version": "0.1.0",
+    "field": "Khám bệnh, chữa bệnh"
+  },
+  "procedure": {
+    "level": "Cấp tỉnh",
+    "procedure_type": "TTHC được luật giao quy định chi tiết",
+    "target_users": [
+      "Doanh nghiệp",
+      "Tổ chức nước ngoài",
+      "Hợp tác xã",
+      "Doanh nghiệp có vốn đầu tư nước ngoài",
+      "Doanh nghiệp Việt Nam",
+      "Tổ chức (không bao gồm doanh nghiệp",
+      "HTX)"
+    ],
+    "authorities": [],
+    "receiving_places": []
+  },
+  "submission": {
+    "channels": [
+      "in_person",
+      "online",
+      "postal"
+    ],
+    "methods": [
+      {
+        "method_id": "method_1",
+        "channel": "online",
+        "processing_time_text": "5 ngày làm việc",
+        "fee_text": null,
+        "description": "Cùng thời điểm cấp giấy phép hoạt động đối với trường hợp quy định tại điểm a, b khoản 1 Điều này;<br>Trong thời hạn 05 ngày làm việc kể từ thời điểm tiếp nhận văn bản đăng ký hành nghề đối với trường hợp quy định tại điểm c khoản 1 Điều này.",
+        "is_online": true,
+        "is_postal": false,
+        "is_in_person": false
+      },
+      {
+        "method_id": "method_2",
+        "channel": "postal",
+        "processing_time_text": "5 ngày làm việc",
+        "fee_text": null,
+        "description": "Cùng thời điểm cấp giấy phép hoạt động đối với trường hợp quy định tại điểm a, b khoản 1 Điều này;<br>Trong thời hạn 05 ngày làm việc kể từ thời điểm tiếp nhận văn bản đăng ký hành nghề đối với trường hợp quy định tại điểm c khoản 1 Điều này.",
+        "is_online": false,
+        "is_postal": true,
+        "is_in_person": false
+      },
+      {
+        "method_id": "method_3",
+        "channel": "in_person",
+        "processing_time_text": "5 ngày làm việc",
+        "fee_text": null,
+        "description": "Cùng thời điểm cấp giấy phép hoạt động đối với trường hợp quy định tại điểm a, b khoản 1 Điều này;<br>Trong thời hạn 05 ngày làm việc kể từ thời điểm tiếp nhận văn bản đăng ký hành nghề đối với trường hợp quy định tại điểm c khoản 1 Điều này.",
+        "is_online": false,
+        "is_postal": false,
+        "is_in_person": true
+      }
+    ],
+    "timing_summary": {
+      "unique_processing_times": [
+        "5 ngày làm việc"
+      ],
+      "method_count": 3
+    }
+  },
+  "documents": {
+    "required": [
+      {
+        "document_id": "danh_s_ch_ng_k_h_nh_ngh",
+        "name": "Danh sách đăng ký hành nghề",
+        "group_name": "Trường hợp 1: Cùng thời điểm với thời điểm đề nghị cấp mới giấy phép hoạt động đến cơ quan có thẩm quyền cấp giấy phép hoạt động",
+        "group_type": "conditional",
+        "original_count": "1",
+        "copy_count": "0",
+        "conditions": [],
+        "attachment_label": "Mẫu 01 DS đăng ký hành nghề.docx",
+        "attachment_path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/1_012275/M%E1%BA%ABu%2001%20DS%20%C4%91%C4%83ng%20k%C3%BD%20h%C3%A0nh%20ngh%E1%BB%81.docx"
+      },
+      {
+        "document_id": "danh_s_ch_ng_k_h_nh_ngh_thay_i_theo_m_u_01_ph_l_c_ii_ban_h_nh_k_m_theo_ngh_nh_s_96_2023_n_cp",
+        "name": "Danh sách đăng ký hành nghề đã thay đổi theo Mẫu 01 Phụ lục II ban hành kèm theo Nghị định số 96/2023/NĐ-CP",
+        "group_name": "Trường hợp 2: Có thay đổi về người hành nghề trong thời gian chờ cấp giấy phép hoạt động",
+        "group_type": "conditional",
+        "original_count": "1",
+        "copy_count": "0",
+        "conditions": [],
+        "attachment_label": "Mẫu 01 DS đăng ký hành nghề.docx",
+        "attachment_path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/1_012275/M%E1%BA%ABu%2001%20DS%20%C4%91%C4%83ng%20k%C3%BD%20h%C3%A0nh%20ngh%E1%BB%81.docx"
+      },
+      {
+        "document_id": "b_o_c_o",
+        "name": "Báo cáo",
+        "group_name": "Trường hợp 3: Có thay đổi về người hành nghề trong quá trình hoạt động, người hành nghề không còn làm việc tại cơ sở",
+        "group_type": "conditional",
+        "original_count": "1",
+        "copy_count": "0",
+        "conditions": [],
+        "attachment_label": "Mẫu 01 DS đăng ký hành nghề.docx",
+        "attachment_path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/1_012275/M%E1%BA%ABu%2001%20DS%20%C4%91%C4%83ng%20k%C3%BD%20h%C3%A0nh%20ngh%E1%BB%81.docx"
+      },
+      {
+        "document_id": "danh_s_ch_ng_k_h_nh_ngh_b_sung_theo_m_u_01_ph_l_c_ii_ban_h_nh_k_m_theo_ngh_nh_s_96_2023_n_cp",
+        "name": "Danh sách đăng ký hành nghề đã bổ sung theo Mẫu 01 Phụ lục II ban hành kèm theo Nghị định số 96/2023/NĐ-CP",
+        "group_name": "Trường hợp 4: Có thay đổi về người hành nghề trong quá trình hoạt động, bổ sung người hành nghề",
+        "group_type": "conditional",
+        "original_count": "1",
+        "copy_count": "0",
+        "conditions": [],
+        "attachment_label": "Mẫu 01 DS đăng ký hành nghề.docx",
+        "attachment_path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/1_012275/M%E1%BA%ABu%2001%20DS%20%C4%91%C4%83ng%20k%C3%BD%20h%C3%A0nh%20ngh%E1%BB%81.docx"
+      }
+    ],
+    "conditional": [],
+    "presented": [],
+    "notes": [],
+    "forms": [
+      {
+        "name": "Danh sách đăng ký hành nghề",
+        "attachment_label": "Mẫu 01 DS đăng ký hành nghề.docx",
+        "attachment_path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/1_012275/M%E1%BA%ABu%2001%20DS%20%C4%91%C4%83ng%20k%C3%BD%20h%C3%A0nh%20ngh%E1%BB%81.docx"
+      },
+      {
+        "name": "Danh sách đăng ký hành nghề đã thay đổi theo Mẫu 01 Phụ lục II ban hành kèm theo Nghị định số 96/2023/NĐ-CP",
+        "attachment_label": "Mẫu 01 DS đăng ký hành nghề.docx",
+        "attachment_path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/1_012275/M%E1%BA%ABu%2001%20DS%20%C4%91%C4%83ng%20k%C3%BD%20h%C3%A0nh%20ngh%E1%BB%81.docx"
+      },
+      {
+        "name": "Báo cáo",
+        "attachment_label": "Mẫu 01 DS đăng ký hành nghề.docx",
+        "attachment_path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/1_012275/M%E1%BA%ABu%2001%20DS%20%C4%91%C4%83ng%20k%C3%BD%20h%C3%A0nh%20ngh%E1%BB%81.docx"
+      },
+      {
+        "name": "Danh sách đăng ký hành nghề đã bổ sung theo Mẫu 01 Phụ lục II ban hành kèm theo Nghị định số 96/2023/NĐ-CP",
+        "attachment_label": "Mẫu 01 DS đăng ký hành nghề.docx",
+        "attachment_path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/1_012275/M%E1%BA%ABu%2001%20DS%20%C4%91%C4%83ng%20k%C3%BD%20h%C3%A0nh%20ngh%E1%BB%81.docx"
+      }
+    ],
+    "empty_groups": [],
+    "document_count": 4
+  },
+  "process": {
+    "steps": [
+      {
+        "step_id": "step_1",
+        "title": null,
+        "content": "1.",
+        "actor": "user",
+        "channel_hint": null,
+        "time_hint": null
+      },
+      {
+        "step_id": "step_2",
+        "title": "Bước 1:",
+        "content": "Bước 1: 1. Cơ sở khám bệnh, chữa bệnh thực hiện đăng ký hành nghề cho người hành nghề làm việc tại cơ sở của mình như sau:",
+        "actor": "user",
+        "channel_hint": null,
+        "time_hint": null
+      },
+      {
+        "step_id": "step_3",
+        "title": "a)",
+        "content": "a) Gửi danh sách đăng ký hành nghề cùng thời điểm với thời điểm đề nghị cấp mới giấy phép hoạt động (trực tiếp, qua bưu chính hoặc qua môi trường điện tử) về cơ quan tiếp nhận hồ sơ nơi cơ sở khám bệnh, chữa bệnh đặt trụ sở;",
+        "actor": "authority",
+        "channel_hint": "dịch vụ bưu chính",
+        "time_hint": null
+      },
+      {
+        "step_id": "step_4",
+        "title": "b)",
+        "content": "b) Trường hợp có thay đổi về người hành nghề trong thời gian chờ cấp giấy phép hoạt động thì phải gửi danh sách đăng ký hành nghề đã thay đổi theo Mẫu 01 Phụ lục II ban hành kèm theo Nghị định số 96/2023/NĐ-CP (trực tiếp, qua bưu chính hoặc qua môi trường điện tử) đến cơ quan tiếp nhận hồ sơ;",
+        "actor": "authority",
+        "channel_hint": "dịch vụ bưu chính",
+        "time_hint": null
+      },
+      {
+        "step_id": "step_5",
+        "title": "c)",
+        "content": "c) Trường hợp có thay đổi về người hành nghề trong quá trình hoạt động thì phải gửi văn bản đăng ký (trực tiếp, qua bưu chính hoặc qua môi trường điện tử) đến cơ quan tiếp nhận hồ sơ, cụ thể như sau: - Trường hợp người hành nghề không còn làm việc tại cơ sở: báo cáo với Cơ quan chuyên môn về y tế thuộc Ủy ban nhân dân cấp tỉnh nơi cơ sở khám bệnh, chữa bệnh đặt trụ sở trong thời gian 03 ngày làm việc kể từ thời điểm người hành nghề chấm dứt hành nghề tại cơ sở; - Trường hợp bổ sung người hành nghề: gửi danh sách đăng ký hành nghề đã bổ sung theo Mẫu 01 Phụ lục II ban hành kèm theo Nghị định số 96/2023/NĐ-CP về cơ quan tiếp nhận hồ sơ trong thời gian 10 ngày kể từ thời điểm bổ sung người hành nghề. Cơ quan tiếp nhận hồ sơ: Cơ quan chuyên môn về Y tế thuộc Ủy ban nhân dân cấp Tỉnh:",
+        "actor": "authority",
+        "channel_hint": "dịch vụ bưu chính",
+        "time_hint": "03 ngày làm việc"
+      },
+      {
+        "step_id": "step_6",
+        "title": "a)",
+        "content": "a) Các cơ sở khám bệnh, chữa bệnh trên địa bàn quản lý của Cơ quan chuyên môn về Y tế thuộc Ủy ban nhân dân cấp Tỉnh (bao gồm cả các cơ sở khám bệnh, chữa bệnh trực thuộc Bộ Y tế, thuộc Bộ, ngành), trừ cơ sở khám bệnh, chữa bệnh thuộc thẩm quyền quản lý của Bộ Quốc phòng, Bộ Công an;",
+        "actor": "authority",
+        "channel_hint": null,
+        "time_hint": null
+      },
+      {
+        "step_id": "step_7",
+        "title": "b)",
+        "content": "b) Cơ sở khám bệnh, chữa bệnh tư nhân trên địa bàn quản lý (bao gồm cả bệnh viện tư nhân).",
+        "actor": "user",
+        "channel_hint": null,
+        "time_hint": null
+      },
+      {
+        "step_id": "step_8",
+        "title": "Bước 2:",
+        "content": "Bước 2: Cơ quan tiếp nhận hồ sơ có trách nhiệm công bố công khai danh sách người hành nghề trên Cổng thông tin điện tử hoặc trang tin điện tử của cơ quan mình và trên Hệ thống thông tin về quản lý hoạt động khám bệnh, chữa bệnh như sau:",
+        "actor": "authority",
+        "channel_hint": null,
+        "time_hint": null
+      },
+      {
+        "step_id": "step_9",
+        "title": "a)",
+        "content": "a) Cùng thời điểm cấp giấy phép hoạt động đối với trường hợp quy định tại điểm a, b khoản 1 Điều này;",
+        "actor": "user",
+        "channel_hint": null,
+        "time_hint": null
+      },
+      {
+        "step_id": "step_10",
+        "title": "b)",
+        "content": "b) Trong thời hạn 05 ngày làm việc kể từ thời điểm tiếp nhận văn bản đăng ký hành nghề đối với trường hợp quy định tại điểm c khoản 1 Điều này;",
+        "actor": "user",
+        "channel_hint": null,
+        "time_hint": "05 ngày làm việc"
+      },
+      {
+        "step_id": "step_11",
+        "title": "c)",
+        "content": "c) Trường hợp không đồng ý phải có văn bản trả lời và nêu rõ lý do.",
+        "actor": "user",
+        "channel_hint": null,
+        "time_hint": null
+      }
+    ],
+    "step_count": 11,
+    "notes": []
+  },
+  "eligibility": {
+    "conditions": [],
+    "has_conditions": false
+  },
+  "results": {
+    "items": [
+      {
+        "name": "Danh sách người hành nghề",
+        "result_code": "KQ.G18.000139",
+        "raw_text": "Danh sách người hành nghề"
+      }
+    ],
+    "primary_result": {
+      "name": "Danh sách người hành nghề",
+      "result_code": "KQ.G18.000139",
+      "raw_text": "Danh sách người hành nghề"
+    }
+  },
+  "legal_basis": {
+    "items": [
+      {
+        "title": "Thông tư số 57/2024/TT-BYT ngày 31/12/2024 của Bộ Y tế quy định việc phân cấp, giải quyết thủ tục hành chính trong lĩnh vực khám bệnh, chữa bệnh thuộc thẩm quyền quản lý của Bộ Y tế",
+        "code": "57/2024/TT-BYT"
+      },
+      {
+        "title": "Luật Khám, chữa bệnh 15/2023/QH15 (09/1/2023)",
+        "code": "15/2023/QH15"
+      },
+      {
+        "title": "Nghị định số 96/2023/NĐ-CP ngày 30 tháng 12 năm 2023 của Chính phủ quy định chi tiết một số điều của Luật Khám bệnh, chữa bệnh.",
+        "code": "96/2023/NĐ-CP"
+      },
+      {
+        "title": "NGHỊ ĐỊNH QUY ĐỊNH VỀ PHÂN QUYỀN, PHÂN CẤP TRONG LĨNH VỰC Y TẾ",
+        "code": "148/2025/NĐ-CP"
+      }
+    ],
+    "count": 4
+  },
+  "attachments": [
+    {
+      "label": "Mẫu 01 DS đăng ký hành nghề.docx",
+      "path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/1_012275/M%E1%BA%ABu%2001%20DS%20%C4%91%C4%83ng%20k%C3%BD%20h%C3%A0nh%20ngh%E1%BB%81.docx",
+      "source_section": "Thành phần hồ sơ",
+      "document_name": "Danh sách đăng ký hành nghề"
+    },
+    {
+      "label": "Mẫu 01 DS đăng ký hành nghề.docx",
+      "path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/1_012275/M%E1%BA%ABu%2001%20DS%20%C4%91%C4%83ng%20k%C3%BD%20h%C3%A0nh%20ngh%E1%BB%81.docx",
+      "source_section": "Thành phần hồ sơ",
+      "document_name": "Danh sách đăng ký hành nghề đã thay đổi theo Mẫu 01 Phụ lục II ban hành kèm theo Nghị định số 96/2023/NĐ-CP"
+    },
+    {
+      "label": "Mẫu 01 DS đăng ký hành nghề.docx",
+      "path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/1_012275/M%E1%BA%ABu%2001%20DS%20%C4%91%C4%83ng%20k%C3%BD%20h%C3%A0nh%20ngh%E1%BB%81.docx",
+      "source_section": "Thành phần hồ sơ",
+      "document_name": "Báo cáo"
+    },
+    {
+      "label": "Mẫu 01 DS đăng ký hành nghề.docx",
+      "path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/1_012275/M%E1%BA%ABu%2001%20DS%20%C4%91%C4%83ng%20k%C3%BD%20h%C3%A0nh%20ngh%E1%BB%81.docx",
+      "source_section": "Thành phần hồ sơ",
+      "document_name": "Danh sách đăng ký hành nghề đã bổ sung theo Mẫu 01 Phụ lục II ban hành kèm theo Nghị định số 96/2023/NĐ-CP"
+    }
+  ],
+  "signals": {
+    "raw_parse_warnings": [],
+    "missing_documents": false,
+    "documents_section_present": true,
+    "documents_declared_empty": false,
+    "documents_only_in_notes": false,
+    "missing_results": false
+  }
+}

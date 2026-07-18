@@ -1,0 +1,342 @@
+{
+  "schema_version": "3.0",
+  "record_type": "public_service_procedure_payload",
+  "id": "procedure-2.002770",
+  "procedure_code": "2.002770",
+  "code": "2.002770",
+  "title": "Xét duyệt học sinh bán trú, học viên bán trú hỗ trợ kinh phí, hỗ trợ gạo",
+  "language": "vi",
+  "status": "generated_from_pipeline",
+  "field": "Giáo dục và Đào tạo thuộc hệ thống giáo dục quốc dân",
+  "group_key": "hoc_tap",
+  "workflow_family": "education_study_workflow",
+  "subflow": "hoc_bong_va_ho_tro",
+  "source": {
+    "source_url": "file:///C:/Users/ku060/Downloads/VAIC%20source/data-pipeline/raw_data/2_002770/2_002770_procedure_detail.md",
+    "source_markdown_path": "C:\\Users\\ku060\\Downloads\\VAIC source\\data-pipeline\\raw_data\\2_002770\\2_002770_procedure_detail.md",
+    "normalized_payload_path": "C:\\Users\\ku060\\Downloads\\VAIC source\\data-pipeline\\govease-unified\\data\\normalized_structured\\2_002770_normalized_structured.json",
+    "enriched_payload_path": "C:\\Users\\ku060\\Downloads\\VAIC source\\data-pipeline\\govease-unified\\data\\enriched_structured_priority\\2_002770_enriched_structured.json"
+  },
+  "scope": {
+    "included": "Thủ tục này thuộc nhóm giáo dục và học tập, thường liên quan đến hồ sơ đào tạo, văn bằng hoặc điều kiện học tập của người học. Kết quả thường nhận được là Thông báo công khai danh sách học sinh bán trú, học viên bán trú. Thời gian xử lý tham khảo: 7 ngày làm việc.",
+    "not_included": []
+  },
+  "agency": {
+    "executing_agency": "Cơ sở giáo dục",
+    "submission_place": null,
+    "receiving_places": []
+  },
+  "target_users": [
+    "Công dân Việt Nam"
+  ],
+  "submission_methods": [
+    {
+      "code": "ONLINE",
+      "label": "Trực tuyến",
+      "processing_time": "7 ngày làm việc",
+      "fee": null,
+      "description": null
+    },
+    {
+      "code": "POSTAL",
+      "label": "Dịch vụ bưu chính",
+      "processing_time": "7 ngày làm việc",
+      "fee": null,
+      "description": null
+    },
+    {
+      "code": "IN_PERSON",
+      "label": "Trực tiếp",
+      "processing_time": "7 ngày làm việc",
+      "fee": null,
+      "description": null
+    }
+  ],
+  "processing_note": "Thời gian xử lý tham chiếu: 7 ngày làm việc. Nên rà trước thông tin người học, cơ sở đào tạo và loại kết quả cần xin xác nhận hoặc cấp lại. Có thể chọn kênh nộp phù hợp: Trực tiếp, Trực tuyến, Dịch vụ bưu chính. Hiện có khoảng 3 mục giấy tờ cần theo dõi trong checklist.",
+  "documents": {
+    "normally_required": [
+      {
+        "name": "Học sinh, học viên thuộc đối tượng quy định tại khoản 2, khoản 3 Điều 4 Nghị định này nộp Đơn đề nghị hưởng chính sách học sinh bán trú (theo Mẫu số 04)",
+        "quantity": "1 bản chính, 0 bản sao",
+        "notes": [],
+        "group": "default",
+        "attachment_path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/2_002770/Mu04.docx"
+      },
+      {
+        "name": "Đơn đề nghị hưởng chính sách học viên bán trú (theo Mẫu số 05) quy định tại Phụ lục kèm theo Nghị định này",
+        "quantity": "1 bản chính, 0 bản sao",
+        "notes": [],
+        "group": "default",
+        "attachment_path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/2_002770/Mu05.docx"
+      }
+    ],
+    "conditional": [
+      {
+        "condition": "Trường hợp học sinh, học viên thuộc hộ nghèo phải nộp bản chụp kèm bản chính để đối chiếu hoặc bản sao có chứng thực Giấy chứng nhận hoặc Giấy xác nhận hộ nghèo do Ủy ban nhân dân cấp xã cấp trong trường hợp cơ quan, tổ chức không thể khai thác được thông tin cư trú của công dân trong Cơ sở dữ liệu quốc gia về dân cư.",
+        "document": "Trường hợp học sinh, học viên thuộc hộ nghèo phải nộp bản chụp kèm bản chính để đối chiếu hoặc bản sao có chứng thực Giấy chứng nhận hoặc Giấy xác nhận hộ nghèo do Ủy ban nhân dân cấp xã cấp trong trường hợp cơ quan, tổ chức không thể khai thác được thông tin cư trú của công dân trong Cơ sở dữ liệu quốc gia về dân cư.",
+        "quantity": "0 bản chính, 1 bản sao",
+        "notes": [],
+        "attachment_path": null
+      }
+    ],
+    "forms": [
+      {
+        "name": "Học sinh, học viên thuộc đối tượng quy định tại khoản 2, khoản 3 Điều 4 Nghị định này nộp Đơn đề nghị hưởng chính sách học sinh bán trú (theo Mẫu số 04)",
+        "attachment_label": "Mu04.docx",
+        "attachment_path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/2_002770/Mu04.docx"
+      },
+      {
+        "name": "Đơn đề nghị hưởng chính sách học viên bán trú (theo Mẫu số 05) quy định tại Phụ lục kèm theo Nghị định này",
+        "attachment_label": "Mu05.docx",
+        "attachment_path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/2_002770/Mu05.docx"
+      }
+    ],
+    "presented": [],
+    "notes": [],
+    "summary": [
+      {
+        "group": "default",
+        "name": "Học sinh, học viên thuộc đối tượng quy định tại khoản 2, khoản 3 Điều 4 Nghị định này nộp Đơn đề nghị hưởng chính sách học sinh bán trú (theo Mẫu số 04)",
+        "quantity": "1 bản chính, 0 bản sao",
+        "notes": [],
+        "attachment_path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/2_002770/Mu04.docx"
+      },
+      {
+        "group": "default",
+        "name": "Đơn đề nghị hưởng chính sách học viên bán trú (theo Mẫu số 05) quy định tại Phụ lục kèm theo Nghị định này",
+        "quantity": "1 bản chính, 0 bản sao",
+        "notes": [],
+        "attachment_path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/2_002770/Mu05.docx"
+      },
+      {
+        "group": null,
+        "name": null,
+        "quantity": "0 bản chính, 1 bản sao",
+        "notes": [],
+        "attachment_path": null
+      },
+      {
+        "group": null,
+        "name": "Học sinh, học viên thuộc đối tượng quy định tại khoản 2, khoản 3 Điều 4 Nghị định này nộp Đơn đề nghị hưởng chính sách học sinh bán trú (theo Mẫu số 04)",
+        "quantity": null,
+        "notes": null,
+        "attachment_path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/2_002770/Mu04.docx"
+      },
+      {
+        "group": null,
+        "name": "Đơn đề nghị hưởng chính sách học viên bán trú (theo Mẫu số 05) quy định tại Phụ lục kèm theo Nghị định này",
+        "quantity": null,
+        "notes": null,
+        "attachment_path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/2_002770/Mu05.docx"
+      }
+    ]
+  },
+  "steps": [
+    {
+      "order": 1,
+      "title": "Bước 1",
+      "description": "1. - Vào đầu năm học, các trường phổ thông dân tộc bán trú, trường phổ thông có học sinh bán trú và cơ sở giáo dục thường xuyên có học viên bán trú tổ chức phổ biến, thông báo rộng rãi, hướng dẫn cho bố, mẹ (hoặc người giám hộ) và học sinh, học viên thuộc đối tượng được hưởng chính sách chuẩn bị hồ sơ theo quy định tại khoản 1 Điều này;",
+      "example": null
+    },
+    {
+      "order": 2,
+      "title": "Bước 2",
+      "description": "- Trong thời hạn 15 ngày kể từ ngày trường phổ thông dân tộc bán trú, trường phổ thông có học sinh bán trú và cơ sở giáo dục thường xuyên thông báo, mỗi đối tượng đề nghị được hưởng chính sách nộp 01 bộ hồ sơ theo quy định tại khoản 1 Điều này qua cổng dịch vụ công trực tuyến hoặc bưu chính hoặc trực tiếp cho cơ sở giáo dục (nộp 01 bộ hồ sơ cho 01 lần đầu đề nghị xét hưởng chính sách cho cả cấp học). Trường hợp thuộc hộ nghèo phải nộp bổ sung giấy tờ chứng minh hộ nghèo theo từng năm trong trường hợp cơ quan, tổ chức không thể khai thác được thông tin cư trú của công dân trong Cơ sở dữ liệu quốc gia về dân cư.",
+      "example": "15 ngày"
+    },
+    {
+      "order": 3,
+      "title": "Bước 3",
+      "description": "- Cơ sở giáo dục tiếp nhận, kiểm tra thành phần hồ sơ, nếu thành phần hồ sơ nộp là bản chụp chưa có chứng thực của cấp có thẩm quyền, người nhận hồ sơ có trách nhiệm đối chiếu với bản chính, ký xác nhận vào bản chụp để đưa vào hồ sơ. Nếu hồ sơ chưa đầy đủ hoặc chưa đúng quy định thì yêu cầu bổ sung. Trường hợp hồ sơ không bảo đảm yêu cầu, trong thời hạn 05 ngày làm việc kể từ ngày nhận hồ sơ, cơ sở giáo dục gửi thông báo không tiếp nhận hồ sơ và nêu rõ lý do.",
+      "example": "05 ngày làm việc"
+    },
+    {
+      "order": 4,
+      "title": "Bước 4",
+      "description": "- Sau ngày hết hạn nhận hồ sơ, trong thời hạn 07 ngày làm việc cơ sở giáo dục tổ chức xét duyệt các hồ sơ đủ điều kiện được hưởng chính sách học sinh bán trú, học viên bán trú theo quy định tại khoản 2, khoản 3 Điều 4 Nghị định này. Ngay sau khi có kết quả xét duyệt, cơ sở giáo dục lập và thông báo công khai danh sách học sinh bán trú, học viên bán trú theo Mẫu số 06 quy định tại Phụ lục kèm theo Nghị định này tại trụ sở làm việc trong thời hạn 03 ngày làm việc.",
+      "example": "07 ngày làm việc"
+    }
+  ],
+  "input_fields": [
+    {
+      "field": "learner_full_name",
+      "label": "Tên người học",
+      "type": "string",
+      "required": true
+    },
+    {
+      "field": "education_record_type",
+      "label": "Loại hồ sơ học tập cần xử lý",
+      "type": "string",
+      "required": true
+    },
+    {
+      "field": "education_institution",
+      "label": "Cơ sở đào tạo liên quan",
+      "type": "string",
+      "required": false
+    },
+    {
+      "field": "submission_channel_preference",
+      "label": "Kênh nộp dự kiến",
+      "type": "enum",
+      "required": false,
+      "options": [
+        "Trực tiếp",
+        "Trực tuyến",
+        "Dịch vụ bưu chính"
+      ]
+    }
+  ],
+  "validation_rules": [
+    {
+      "id": "required-1",
+      "severity": "error",
+      "field": "learner_full_name",
+      "rule": "Trường bắt buộc phải có dữ liệu hợp lệ trước khi nộp.",
+      "message": "Thiếu trường bắt buộc: Tên người học."
+    },
+    {
+      "id": "required-2",
+      "severity": "error",
+      "field": "education_record_type",
+      "rule": "Trường bắt buộc phải có dữ liệu hợp lệ trước khi nộp.",
+      "message": "Thiếu trường bắt buộc: Loại hồ sơ học tập cần xử lý."
+    },
+    {
+      "id": "hint-1",
+      "severity": "warning",
+      "field": "general",
+      "rule": "Nên xác định trước kênh nộp hồ sơ để biết có cần bản giấy, bản điện tử hay xuất trình trực tiếp.",
+      "message": "Nên xác định trước kênh nộp hồ sơ để biết có cần bản giấy, bản điện tử hay xuất trình trực tiếp."
+    },
+    {
+      "id": "hint-2",
+      "severity": "warning",
+      "field": "general",
+      "rule": "Có mẫu biểu đính kèm, nên kiểm tra đúng biểu mẫu trước khi nộp.",
+      "message": "Có mẫu biểu đính kèm, nên kiểm tra đúng biểu mẫu trước khi nộp."
+    },
+    {
+      "id": "hint-3",
+      "severity": "warning",
+      "field": "general",
+      "rule": "Nên rà lại thông tin người học, cơ sở đào tạo và loại xác nhận hoặc văn bằng cần xin.",
+      "message": "Nên rà lại thông tin người học, cơ sở đào tạo và loại xác nhận hoặc văn bằng cần xin."
+    }
+  ],
+  "common_errors": [
+    {
+      "field": "general",
+      "issue": "Điền sai mẫu tờ khai hoặc chọn sai biểu mẫu đi kèm.",
+      "fix": "Nên xác định trước kênh nộp hồ sơ để biết có cần bản giấy, bản điện tử hay xuất trình trực tiếp."
+    },
+    {
+      "field": "general",
+      "issue": "Thông tin thửa đất, tài sản hoặc giấy chứng nhận chưa khớp với hồ sơ hiện có.",
+      "fix": "Nên xác định trước kênh nộp hồ sơ để biết có cần bản giấy, bản điện tử hay xuất trình trực tiếp."
+    }
+  ],
+  "clarifying_questions": [
+    {
+      "id": "clarify_1",
+      "question": "Bạn đang cần xử lý hồ sơ học tập, văn bằng hay xác nhận nào?",
+      "purpose": "workflow_intake"
+    },
+    {
+      "id": "clarify_2",
+      "question": "Người học và cơ sở đào tạo liên quan đã xác định rõ chưa?",
+      "purpose": "workflow_intake"
+    }
+  ],
+  "legal_basis": [
+    {
+      "title": "Nghị định số 142/2025/NĐ-CP của Chính phủ: Quy định về phân định thẩm quyền của chính quyền địa phương hai cấp trong lĩnh vực quản lý nhà nước của Bộ Giáo dục và Đào tạo",
+      "code": "Nghị định số 142/2025/NĐ-CP"
+    },
+    {
+      "title": "Nghị định số 66/2025/NĐ-CP ngày 12/3/2025 của Chính phủ",
+      "code": "66/2025/NĐ-CP"
+    }
+  ],
+  "legal_bases": [
+    {
+      "title": "Nghị định số 142/2025/NĐ-CP của Chính phủ: Quy định về phân định thẩm quyền của chính quyền địa phương hai cấp trong lĩnh vực quản lý nhà nước của Bộ Giáo dục và Đào tạo",
+      "code": "Nghị định số 142/2025/NĐ-CP"
+    },
+    {
+      "title": "Nghị định số 66/2025/NĐ-CP ngày 12/3/2025 của Chính phủ",
+      "code": "66/2025/NĐ-CP"
+    }
+  ],
+  "faq": [
+    {
+      "question": "Có thể nộp qua kênh nào?",
+      "answer": "Các kênh hiện có: Trực tiếp, Trực tuyến, Dịch vụ bưu chính."
+    },
+    {
+      "question": "Thời gian xử lý tham chiếu là bao lâu?",
+      "answer": "Thời gian xử lý tham chiếu hiện có là 7 ngày làm việc."
+    },
+    {
+      "question": "Kết quả chính của thủ tục là gì?",
+      "answer": "Kết quả chính được trích xuất là Thông báo công khai danh sách học sinh bán trú, học viên bán trú."
+    }
+  ],
+  "guidance": {
+    "highlight_documents": [
+      {
+        "bucket": "required",
+        "name": "Học sinh, học viên thuộc đối tượng quy định tại khoản 2, khoản 3 Điều 4 Nghị định này nộp Đơn đề nghị hưởng chính sách học sinh bán trú (theo Mẫu số 04)",
+        "conditions": [],
+        "attachment_path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/2_002770/Mu04.docx"
+      },
+      {
+        "bucket": "required",
+        "name": "Đơn đề nghị hưởng chính sách học viên bán trú (theo Mẫu số 05) quy định tại Phụ lục kèm theo Nghị định này",
+        "conditions": [],
+        "attachment_path": "file:///C:/Users/ku060/Downloads/VAIC source/data-pipeline/raw_data/2_002770/Mu05.docx"
+      },
+      {
+        "bucket": "conditional",
+        "name": "Trường hợp học sinh, học viên thuộc hộ nghèo phải nộp bản chụp kèm bản chính để đối chiếu hoặc bản sao có chứng thực Giấy chứng nhận hoặc Giấy xác nhận hộ nghèo do Ủy ban nhân dân cấp xã cấp trong trường hợp cơ quan, tổ chức không thể khai thác được thông tin cư trú của công dân trong Cơ sở dữ liệu quốc gia về dân cư.",
+        "conditions": [
+          "Trường hợp học sinh, học viên thuộc hộ nghèo phải nộp bản chụp kèm bản chính để đối chiếu hoặc bản sao có chứng thực Giấy chứng nhận hoặc Giấy xác nhận hộ nghèo do Ủy ban nhân dân cấp xã cấp trong trường hợp cơ quan, tổ chức không thể khai thác được thông tin cư trú của công dân trong Cơ sở dữ liệu quốc gia về dân cư."
+        ],
+        "attachment_path": null
+      }
+    ],
+    "special_cases": [
+      "Có kiểm tra dữ liệu cư trú/định danh",
+      "Có thể cần đối chiếu thông tin thửa đất hoặc giấy chứng nhận"
+    ],
+    "common_errors": [
+      "Điền sai mẫu tờ khai hoặc chọn sai biểu mẫu đi kèm.",
+      "Thông tin thửa đất, tài sản hoặc giấy chứng nhận chưa khớp với hồ sơ hiện có."
+    ],
+    "validation_hints": [
+      "Nên xác định trước kênh nộp hồ sơ để biết có cần bản giấy, bản điện tử hay xuất trình trực tiếp.",
+      "Có mẫu biểu đính kèm, nên kiểm tra đúng biểu mẫu trước khi nộp.",
+      "Nên rà lại thông tin người học, cơ sở đào tạo và loại xác nhận hoặc văn bằng cần xin."
+    ]
+  },
+  "next_steps": {
+    "summary": "Nên rà trước thông tin người học, cơ sở đào tạo và loại kết quả cần xin xác nhận hoặc cấp lại. Có thể chọn kênh nộp phù hợp: Trực tiếp, Trực tuyến, Dịch vụ bưu chính. Hiện có khoảng 3 mục giấy tờ cần theo dõi trong checklist.",
+    "time_badge": "7 ngày làm việc",
+    "result_label": "Thông báo công khai danh sách học sinh bán trú, học viên bán trú",
+    "primary_channel": "online",
+    "channels": [
+      "in_person",
+      "online",
+      "postal"
+    ]
+  },
+  "notes": [],
+  "provenance": {
+    "pipeline": "raw->structured->normalized->enriched->ui_api_payload",
+    "normalizer_version": "0.2.0",
+    "enricher_version": "0.2.0",
+    "mapping_notes": "workflow_generated:hoc_tap/hoc_bong_va_ho_tro",
+    "supported_group": true
+  }
+}
