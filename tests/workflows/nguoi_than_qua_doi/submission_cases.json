@@ -1,0 +1,82 @@
+[
+  {
+    "id": "submission-death-registration-missing-certificate",
+    "procedure_code": "1.000656",
+    "submission": {
+      "declarant": {
+        "full_name": "Nguyễn Văn A",
+        "identity_number": "12345X"
+      },
+      "deceased": {
+        "full_name": "Trần Thị B"
+      },
+      "death_notice_present": false
+    },
+    "expected_rule_ids": [
+      "identity-number-format",
+      "missing-death-notice"
+    ]
+  },
+  {
+    "id": "submission-death-reregistration-missing-record",
+    "procedure_code": "1.005461",
+    "submission": {
+      "requester": {
+        "full_name": "Phạm Văn C",
+        "identity_number": "012345678901"
+      },
+      "old_registration_information_present": false,
+      "reason_for_reregistration": ""
+    },
+    "expected_rule_ids": [
+      "missing-old-death-registration-information",
+      "missing-reregistration-reason"
+    ]
+  },
+  {
+    "id": "submission-death-foreign-note-missing-proof",
+    "procedure_code": "2.000547",
+    "submission": {
+      "requester": {
+        "full_name": "Lê Thị D",
+        "identity_number": "012345678901"
+      },
+      "foreign_death_record_present": false,
+      "translation_present": false
+    },
+    "expected_rule_ids": [
+      "missing-foreign-death-record",
+      "missing-certified-translation"
+    ]
+  },
+  {
+    "id": "submission-death-survivor-benefit-missing-relation",
+    "procedure_code": "2.000821",
+    "submission": {
+      "claimant": {
+        "full_name": "Hoàng Văn E",
+        "identity_number": "012345678901"
+      },
+      "deceased_insurance_record_present": true,
+      "relationship_proof_present": false
+    },
+    "expected_rule_ids": [
+      "missing-relationship-proof"
+    ]
+  },
+  {
+    "id": "submission-death-funeral-support-missing-payment-doc",
+    "procedure_code": "1.014177",
+    "submission": {
+      "claimant": {
+        "full_name": "Vũ Thị F",
+        "identity_number": "012345678901"
+      },
+      "death_certificate_present": true,
+      "funeral_expense_documents_present": false
+    },
+    "expected_rule_ids": [
+      "missing-funeral-expense-documents"
+    ]
+  }
+]

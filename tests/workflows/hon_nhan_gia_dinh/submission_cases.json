@@ -1,0 +1,95 @@
+[
+  {
+    "id": "submission-family-marriage-missing-status-proof",
+    "procedure_code": "2.000806",
+    "submission": {
+      "applicants": [
+        {
+          "full_name": "Nguyễn Văn A",
+          "identity_number": "012345678901"
+        },
+        {
+          "full_name": "Jane Doe",
+          "passport_number": ""
+        }
+      ],
+      "marital_status_certificate_present": false,
+      "translation_present": false
+    },
+    "expected_rule_ids": [
+      "missing-foreign-passport",
+      "missing-marital-status-certificate",
+      "missing-certified-translation"
+    ]
+  },
+  {
+    "id": "submission-family-guardianship-missing-basis",
+    "procedure_code": "1.004837",
+    "submission": {
+      "guardian": {
+        "full_name": "Trần Thị B",
+        "identity_number": "12345X"
+      },
+      "ward": {
+        "full_name": "Lê Văn C"
+      },
+      "guardianship_basis_present": false
+    },
+    "expected_rule_ids": [
+      "identity-number-format",
+      "missing-guardianship-basis"
+    ]
+  },
+  {
+    "id": "submission-family-parent-child-missing-evidence",
+    "procedure_code": "1.001022",
+    "submission": {
+      "claimant": {
+        "full_name": "Phạm Văn D",
+        "identity_number": "012345678901"
+      },
+      "child": {
+        "full_name": "Phạm Thị E"
+      },
+      "relationship_evidence_present": false
+    },
+    "expected_rule_ids": [
+      "missing-parent-child-relationship-evidence"
+    ]
+  },
+  {
+    "id": "submission-family-adoption-missing-consent",
+    "procedure_code": "2.001263",
+    "submission": {
+      "adopter": {
+        "full_name": "Hoàng Thị F",
+        "identity_number": "012345678901"
+      },
+      "child": {
+        "full_name": "Nguyễn Văn G"
+      },
+      "child_consent_present": false,
+      "guardian_consent_present": false
+    },
+    "expected_rule_ids": [
+      "missing-child-consent",
+      "missing-guardian-consent"
+    ]
+  },
+  {
+    "id": "submission-family-correction-missing-original-record",
+    "procedure_code": "1.004859",
+    "submission": {
+      "requester": {
+        "full_name": "Lý Thị H",
+        "identity_number": "012345678901"
+      },
+      "requested_change": "",
+      "original_civil_status_record_present": false
+    },
+    "expected_rule_ids": [
+      "missing-requested-correction-content",
+      "missing-original-civil-status-record"
+    ]
+  }
+]

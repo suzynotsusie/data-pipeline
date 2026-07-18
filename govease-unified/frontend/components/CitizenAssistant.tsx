@@ -1,6 +1,6 @@
 "use client";
 
-import { FormEvent, useRef, useState } from "react";
+import { FormEvent, useEffect, useRef, useState } from "react";
 import { submitIntake } from "../lib/api";
 import type { ChatMessage, IntakeResult, ValidationResult } from "../lib/types";
 import { DynamicForm } from "./DynamicForm";
@@ -21,7 +21,25 @@ export function CitizenAssistant({ compact = false }: { compact?: boolean }) {
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState("");
   const inputRef = useRef<HTMLTextAreaElement>(null);
+  const scrollRef = useRef<HTMLDivElement>(null);
   const quickReplies = result?.quick_replies || [];
+
+  function resizeComposer() {
+    const element = inputRef.current;
+    if (!element) return;
+    element.style.height = "0px";
+    element.style.height = `${Math.min(element.scrollHeight, 108)}px`;
+  }
+
+  useEffect(() => {
+    if (scrollRef.current) {
+      scrollRef.current.scrollTop = scrollRef.current.scrollHeight;
+    }
+  }, [history, loading, result]);
+
+  useEffect(() => {
+    resizeComposer();
+  }, [input]);
 
   async function send(event?: FormEvent, suggestion?: string) {
     event?.preventDefault();
@@ -41,7 +59,7 @@ export function CitizenAssistant({ compact = false }: { compact?: boolean }) {
     finally { setLoading(false); }
   }
 
-  function reset() { setPhase("need"); setResult(null); setValidation(null); setHistory([]); setSessionId(undefined); setAnswers({}); setInput(""); setError(""); setTimeout(() => inputRef.current?.focus(), 0); }
+  function reset() { setPhase("need"); setResult(null); setValidation(null); setHistory([]); setSessionId(undefined); setAnswers({}); setInput(""); setError(""); setTimeout(() => { inputRef.current?.focus(); resizeComposer(); }, 0); }
 
   if (phase === "guide" && result?.procedure) return <div className={`assistant-shell ${compact ? "compact" : ""}`}><AssistantBar phase={phase} onReset={reset}/><GuidanceView result={result} onContinue={() => setPhase("validate")}/></div>;
   if (phase === "validate" && result?.procedure) return <div className={`assistant-shell ${compact ? "compact" : ""}`}><AssistantBar phase={phase} onReset={reset}/><DynamicForm procedureCode={result.procedure.code} onBack={() => setPhase("guide")} onContinue={(checked) => { setValidation(checked); setPhase("next"); }}/></div>;
@@ -50,17 +68,21 @@ export function CitizenAssistant({ compact = false }: { compact?: boolean }) {
   return <div className={`assistant-shell ${compact ? "compact" : ""}`}>
     <AssistantBar phase={phase} onReset={reset}/>
     <div className="intake-panel">
-      <div className="assistant-intro"><span className="ai-orb"><Icon name="bot"/></span><div><small>TRỢ LÝ THỦ TỤC HÀNH CHÍNH</small><h1>Chào bạn, tôi có thể hỗ trợ thủ tục gì?</h1><p>Mô tả nhu cầu bằng ngôn ngữ tự nhiên. GovEase AI sẽ xác định thủ tục, hướng dẫn hồ sơ và giúp kiểm tra trước khi nộp.</p></div></div>
-      {!!history.length && <div className="conversation">{history.map((message, index) => <div className={`bubble ${message.role}`} key={index}><span>{message.role === "assistant" ? <Icon name="bot"/> : <Icon name="user"/>}</span><p>{message.content}</p></div>)}</div>}
-      {result?.needs_clarification && <div className="clarification-label"><span>{result.domain_label ? `Đang làm rõ nhóm ${result.domain_label.toLowerCase()}. ` : ""}AI cần thêm một thông tin để hướng dẫn chính xác</span></div>}
-      {!!quickReplies.length && <div className="quick-intake">{quickReplies.map((item) => <button type="button" key={`${item.value}-${item.label}`} className="quick-intake-button" onClick={() => send(undefined, item.value)} disabled={loading}><strong>{item.label}</strong>{item.description && <span>{item.description}</span>}</button>)}</div>}
-      <form className="need-composer" onSubmit={send}>
-        <textarea ref={inputRef} value={input} onChange={(event) => setInput(event.target.value)} placeholder={result?.needs_clarification ? "Nhập câu trả lời của bạn…" : "Ví dụ: Tôi mới sinh con và muốn làm giấy khai sinh…"} rows={compact ? 2 : 3} onKeyDown={(event) => { if (event.key === "Enter" && !event.shiftKey) { event.preventDefault(); void send(); } }}/>
-        <button type="submit" disabled={loading || !input.trim()}>{loading ? <span className="spinner"/> : <Icon name="send"/>}<span>{loading ? "Đang tra cứu" : "Gửi yêu cầu"}</span></button>
-      </form>
-      {error && <div className="inline-error"><Icon name="warning"/><div><strong>Không thể kết nối</strong><span>{error}</span></div><button onClick={() => inputRef.current?.focus()}>Thử lại</button></div>}
-      {!history.length && !quickReplies.length && <div className="examples"><span>Gợi ý nhu cầu phổ biến:</span>{examples.map((example) => <button onClick={() => send(undefined, example)} key={example}><Icon name="search"/>{example}</button>)}</div>}
-      <div className="trust-row"><span><Icon name="shield"/>Dữ liệu từ nguồn chính thống</span><span><Icon name="check"/>Có trích dẫn nguồn</span><span><Icon name="file"/>Kiểm tra trước khi nộp</span></div>
+      <div className="chat-scroll-area" ref={scrollRef}>
+        <div className="assistant-intro"><span className="ai-orb"><Icon name="bot"/></span><div><small>TRỢ LÝ THỦ TỤC HÀNH CHÍNH</small><h1>Chào bạn, tôi có thể hỗ trợ thủ tục gì?</h1><p>Mô tả nhu cầu bằng ngôn ngữ tự nhiên. GovEase AI sẽ xác định thủ tục, hướng dẫn hồ sơ và giúp kiểm tra trước khi nộp.</p></div></div>
+        {!history.length && !quickReplies.length && <div className="examples"><span>Gợi ý nhu cầu phổ biến:</span>{examples.map((example) => <button onClick={() => send(undefined, example)} key={example}><Icon name="search"/>{example}</button>)}</div>}
+        {!!history.length && <div className="conversation">{history.map((message, index) => <div className={`bubble ${message.role}`} key={index}><span>{message.role === "assistant" ? <Icon name="bot"/> : <Icon name="user"/>}</span><p>{message.content}</p></div>)}</div>}
+        {result?.needs_clarification && <div className="clarification-label"><span>{result.domain_label ? `Đang làm rõ nhóm ${result.domain_label.toLowerCase()}. ` : ""}AI cần thêm một thông tin để hướng dẫn chính xác</span></div>}
+        {!!quickReplies.length && <div className="quick-intake">{quickReplies.map((item) => <button type="button" key={`${item.value}-${item.label}`} className="quick-intake-button" onClick={() => send(undefined, item.value)} disabled={loading}><strong>{item.label}</strong>{item.description && <span>{item.description}</span>}</button>)}</div>}
+      </div>
+      <div className="chat-input-area">
+        <form className="need-composer" onSubmit={send}>
+          <textarea ref={inputRef} value={input} onChange={(event) => { setInput(event.target.value); resizeComposer(); }} placeholder={result?.needs_clarification ? "Nhập câu trả lời của bạn…" : "Ví dụ: Tôi mới sinh con và muốn làm giấy khai sinh…"} rows={1} onKeyDown={(event) => { if (event.key === "Enter" && !event.shiftKey) { event.preventDefault(); void send(); } }}/>
+          <button type="submit" disabled={loading || !input.trim()}>{loading ? <span className="spinner"/> : <Icon name="send"/>}<span>{loading ? "Đang tra cứu" : "Gửi yêu cầu"}</span></button>
+        </form>
+        {error && <div className="inline-error"><Icon name="warning"/><div><strong>Không thể kết nối</strong><span>{error}</span></div><button onClick={() => inputRef.current?.focus()}>Thử lại</button></div>}
+        <div className="trust-row"><span><Icon name="shield"/>Dữ liệu từ nguồn chính thống</span><span><Icon name="check"/>Có trích dẫn nguồn</span><span><Icon name="file"/>Kiểm tra trước khi nộp</span></div>
+      </div>
     </div>
   </div>;
 }

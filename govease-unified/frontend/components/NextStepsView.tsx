@@ -45,59 +45,73 @@ export function NextStepsView({
   onRestart: () => void;
 }) {
   const steps = buildTimeline(result, validation);
-  const procedureTitle = result.procedure?.title || "Thủ tục";
   const issueCount = validation?.issues.length || 0;
   const ready = validation?.ready_to_submit;
 
   return (
     <div className="next-steps-view">
-      <div className="next-steps-hero">
-        <span className="next-steps-avatar">
-          <Icon name={ready ? "check" : "bot"} />
-        </span>
-        <div>
-          <small>BƯỚC TIẾP THEO</small>
-          <h2>{procedureTitle}</h2>
-          <p>
-            {ready
-              ? "Hồ sơ đã qua kiểm tra sơ bộ. Dưới đây là lộ trình ngắn gọn để bạn hoàn tất việc nộp."
-              : `Hiện còn ${issueCount} nội dung nên xử lý hoặc rà soát thêm. Bạn vẫn có thể xem trước kế hoạch tiếp theo để chuẩn bị.`}
-          </p>
+      {/* Banner Thành công hoặc Cảnh báo */}
+      {ready ? (
+        <div className="status-banner success">
+          <div className="status-icon"><Icon name="check" /></div>
+          <div className="status-text">
+            <strong>Đã đạt kiểm tra sơ bộ</strong>
+            <p>Dữ liệu đúng cấu trúc và chưa phát hiện mâu thuẫn. Kết quả này không thay thế bước kiểm tra của cơ quan nhà nước.</p>
+          </div>
         </div>
-      </div>
-
-      <div className="next-steps-grid">
-        {steps.map((step, index) => (
-          <article className={`next-step-card tone-${step.tone}`} key={step.title}>
-            <span>{index + 1}</span>
-            <div>
-              <strong>{step.title}</strong>
-              <p>{step.body}</p>
-            </div>
-          </article>
-        ))}
-      </div>
-
-      {!!result.sources.length && (
-        <div className="source-panel">
-          <Icon name="shield" />
-          <div>
-            <strong>Nguồn tham chiếu</strong>
-            <p>Tra cứu lại thủ tục từ nguồn chính thống trước khi nộp hồ sơ chính thức.</p>
-            <a href={result.sources[0].source_url || "https://dichvucong.gov.vn"} target="_blank" rel="noreferrer">
-              {result.sources[0].source_url || "dichvucong.gov.vn"}
-              <Icon name="external" />
-            </a>
+      ) : (
+        <div className="status-banner warning">
+          <div className="status-icon"><Icon name="warning" /></div>
+          <div className="status-text">
+            <strong>Cần rà soát thêm hồ sơ</strong>
+            <p>Hiện còn {issueCount} nội dung nên xử lý hoặc rà soát thêm. Tuy nhiên, bạn vẫn có thể xem lộ trình bên dưới để chuẩn bị.</p>
           </div>
         </div>
       )}
 
+      {/* Lộ trình các bước - Timeline UI */}
+      <div className="modern-timeline">
+        {steps.map((step, index) => (
+          <div className={`timeline-step ${step.tone}`} key={step.title}>
+            <div className="timeline-marker">
+              <span>{index + 1}</span>
+            </div>
+            <div className="timeline-content">
+              <strong>{step.title}</strong>
+              <p>{step.body}</p>
+            </div>
+          </div>
+        ))}
+      </div>
+
+      {/* Nguồn tham chiếu - Reference Card */}
+      {!!result.sources.length && (
+        <a 
+          href={result.sources[0].source_url || "https://dichvucong.gov.vn"} 
+          target="_blank" 
+          rel="noreferrer" 
+          className="reference-card"
+        >
+          <div className="ref-icon">
+            <Icon name="shield" />
+          </div>
+          <div className="ref-content">
+            <strong>Nguồn tham chiếu chính thống</strong>
+            <p>Tra cứu lại biểu mẫu và quy định từ cổng Dịch vụ công.</p>
+          </div>
+          <div className="ref-external">
+            <Icon name="external" />
+          </div>
+        </a>
+      )}
+
       <div className="next-steps-actions">
         <button type="button" className="secondary-button" onClick={onBack}>
-          Quay lại kiểm tra
+          ← Xem lại kết quả
         </button>
         <button type="button" className="primary-button" onClick={onRestart}>
           Bắt đầu hồ sơ mới
+          <Icon name="home" />
         </button>
       </div>
     </div>

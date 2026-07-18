@@ -299,7 +299,7 @@ class ProcedureEntry:
     field: str
     raw_data_available: bool
     in_full_data: bool
-    workflow_data_available: bool
+    in_workflow_dataset: bool
     workflow_family: str | None
     support_level: str
     official_membership: bool
@@ -357,7 +357,7 @@ def main() -> None:
             raw_available = has_raw_data(code)
             in_full_data = row is not None
             workflow_family = workflow_codes.get(code)
-            workflow_data_available = workflow_family is not None
+            in_workflow_dataset = workflow_family is not None
             support_level = infer_support_level(raw_available, workflow_family)
 
             notes: list[str] = []
@@ -379,7 +379,7 @@ def main() -> None:
                     field=field,
                     raw_data_available=raw_available,
                     in_full_data=in_full_data,
-                    workflow_data_available=workflow_data_available,
+                    in_workflow_dataset=in_workflow_dataset,
                     workflow_family=workflow_family,
                     support_level=support_level,
                     official_membership=procedure["official_membership"],
@@ -395,7 +395,7 @@ def main() -> None:
                 missing_raw_codes.append(code)
                 missing_raw_for_group += 1
 
-            if workflow_data_available:
+            if in_workflow_dataset:
                 workflow_data_count += 1
             if support_level == "workflow_ready":
                 workflow_ready += 1
@@ -706,7 +706,7 @@ def write_mapping_csv(entries: list[ProcedureEntry]) -> None:
                 "support_level",
                 "raw_data_available",
                 "in_full_data",
-                "workflow_data_available",
+                "in_workflow_dataset",
                 "official_membership",
                 "expanded_membership",
                 "membership_source",
@@ -726,7 +726,7 @@ def write_mapping_csv(entries: list[ProcedureEntry]) -> None:
                     entry.support_level,
                     "true" if entry.raw_data_available else "false",
                     "true" if entry.in_full_data else "false",
-                    "true" if entry.workflow_data_available else "false",
+                    "true" if entry.in_workflow_dataset else "false",
                     "true" if entry.official_membership else "false",
                     "true" if entry.expanded_membership else "false",
                     entry.membership_source,
@@ -751,7 +751,7 @@ def write_mapping_json(entries: list[ProcedureEntry]) -> None:
             "support_level": entry.support_level,
             "raw_data_available": entry.raw_data_available,
             "in_full_data": entry.in_full_data,
-            "workflow_data_available": entry.workflow_data_available,
+            "in_workflow_dataset": entry.in_workflow_dataset,
             "official_membership": entry.official_membership,
             "expanded_membership": entry.expanded_membership,
             "membership_source": entry.membership_source,

@@ -1,0 +1,97 @@
+[
+  {
+    "id": "submission-vehicle-license-missing-health-check",
+    "procedure_code": "3.000346",
+    "submission": {
+      "applicant": {
+        "full_name": "Nguyễn Văn A",
+        "identity_number": "12345"
+      },
+      "training_certificate_present": false,
+      "health_certificate_present": false,
+      "signature_present": false
+    },
+    "expected_rule_ids": [
+      "identity-number-format",
+      "missing-training-certificate",
+      "missing-health-certificate",
+      "missing-signature"
+    ]
+  },
+  {
+    "id": "submission-vehicle-license-foreign-conversion-missing-foreign-license",
+    "procedure_code": "3.000351",
+    "submission": {
+      "applicant": {
+        "full_name": "John Doe",
+        "identity_number": "012345678901"
+      },
+      "foreign_license_present": false,
+      "passport_present": true,
+      "translation_present": false
+    },
+    "expected_rule_ids": [
+      "missing-foreign-license",
+      "missing-certified-translation"
+    ]
+  },
+  {
+    "id": "submission-vehicle-registration-first-time-missing-ownership-proof",
+    "procedure_code": "1.013067",
+    "submission": {
+      "owner": {
+        "full_name": "Lê Thị B",
+        "identity_number": "01234567890X"
+      },
+      "vehicle_origin_document_present": true,
+      "ownership_document_present": false,
+      "fee_paid": false
+    },
+    "expected_rule_ids": [
+      "identity-number-format",
+      "missing-ownership-document",
+      "registration-fee-unpaid"
+    ]
+  },
+  {
+    "id": "submission-vehicle-transfer-missing-revocation",
+    "procedure_code": "1.013076",
+    "submission": {
+      "owner": {
+        "full_name": "Phạm Văn C",
+        "identity_number": "012345678901"
+      },
+      "transfer_contract_present": true,
+      "previous_registration_revoked": false
+    },
+    "expected_rule_ids": [
+      "missing-registration-revocation-step"
+    ]
+  },
+  {
+    "id": "submission-vehicle-inspection-bad-dates",
+    "procedure_code": "1.005103",
+    "submission": {
+      "vehicle_plate": "30A-12345",
+      "inspection_booking_date": "2026-07-20",
+      "last_inspection_expiry": "2026-07-10",
+      "insurance_present": false
+    },
+    "expected_rule_ids": [
+      "inspection-booking-after-expiry",
+      "missing-mandatory-insurance"
+    ]
+  },
+  {
+    "id": "submission-vehicle-emissions-motorbike-missing-test-vehicle",
+    "procedure_code": "1.013101",
+    "submission": {
+      "vehicle_type": "xe mô tô",
+      "vehicle_present_for_test": false,
+      "owner_identity_present": true
+    },
+    "expected_rule_ids": [
+      "vehicle-not-present-for-emissions-test"
+    ]
+  }
+]

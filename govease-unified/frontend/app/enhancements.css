@@ -60,14 +60,14 @@
   flex-direction: column;
 }
 .assistant-popup-header strong {
-  font-size: 12px;
+  font-size: 14px;
 }
 .assistant-popup-header small {
   display: flex;
   align-items: center;
   gap: 4px;
   color: #6d8b78;
-  font-size: 8px;
+  font-size: 10px;
 }
 .assistant-popup-header small i {
   width: 6px;
@@ -98,7 +98,7 @@
 .assistant-popup-header nav .expand-chat {
   width: auto;
   height: 30px;
-  padding: 0 8px;
+  padding: 0 10px;
   display: flex;
   align-items: center;
   gap: 6px;
@@ -106,7 +106,7 @@
   border-radius: 6px;
   background: #f3efec;
   color: var(--red);
-  font-size: 8px;
+  font-size: 10px;
   font-weight: 700;
   cursor: pointer;
 }
@@ -116,12 +116,17 @@
 .assistant-popup-body {
   min-height: 0;
   flex: 1;
-  overflow: auto;
+  overflow: hidden;
   padding: 0;
   background: #fff;
+  display: flex;
+  flex-direction: column;
 }
 .assistant-popup-body .assistant-shell {
   min-height: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
   border: 0;
   border-radius: 0;
   box-shadow: none;
@@ -131,8 +136,17 @@
 }
 .assistant-popup-body .intake-panel {
   min-height: 100%;
-  padding: 16px 13px 12px;
+  height: 100%;
+  padding: 16px 13px 0;
   background: #fff;
+}
+.assistant-popup-body .chat-scroll-area {
+  padding-bottom: 8px;
+}
+.assistant-popup-body .chat-input-area {
+  margin-top: auto;
+  padding: 10px 13px 12px;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.18), #fff 28%);
 }
 .assistant-popup-body .assistant-intro {
   gap: 10px;
@@ -143,10 +157,12 @@
   border-radius: 50%;
 }
 .assistant-popup-body .assistant-intro h1 {
-  font-size: 16px;
+  font-size: 18px;
+  line-height: 1.28;
 }
 .assistant-popup-body .assistant-intro p {
-  font-size: 10px;
+  font-size: 12px;
+  line-height: 1.65;
 }
 .assistant-popup-body .conversation {
   max-height: 285px;
@@ -159,22 +175,34 @@
   display: none;
 }
 .assistant-popup-body .need-composer {
-  position: sticky;
-  bottom: 0;
+  position: static;
   z-index: 2;
-  margin-top: 12px;
+  margin-top: 0;
   background: #fff;
-  border-radius: 18px;
-  box-shadow: 0 -8px 18px rgba(255, 255, 255, 0.95);
+  border-radius: 16px;
+  padding: 4px 5px 4px 8px;
+  box-shadow: 0 8px 18px rgba(55, 30, 18, 0.08);
 }
 .assistant-popup-body .need-composer textarea {
-  min-height: 52px;
-  max-height: 90px;
-  padding: 8px 10px;
+  min-height: 34px;
+  max-height: 88px;
+  padding: 6px 6px 6px 10px;
+  font-size: 13px;
 }
 .assistant-popup-body .need-composer button {
-  height: 34px;
-  border-radius: 17px;
+  min-width: 44px;
+  width: 44px;
+  height: 36px;
+  padding: 0;
+  border-radius: 14px;
+  gap: 0;
+  box-shadow: none;
+}
+.assistant-popup-body .need-composer button span {
+  display: none;
+}
+.assistant-popup-body .need-composer button svg {
+  width: 14px;
 }
 .assistant-popup-body .examples,
 .assistant-popup-body .trust-row {
@@ -238,6 +266,23 @@
   }
   .assistant-popup-header nav .expand-chat span {
     display: none;
+  }
+  .assistant-popup-header > div > span {
+    width: 28px;
+    height: 28px;
+  }
+  .assistant-popup-logo-image {
+    width: 22px;
+    height: 22px;
+  }
+  .floating-logo-button {
+    min-width: 52px;
+    height: 52px;
+    padding: 0 10px 0 8px;
+  }
+  .floating-logo-mark {
+    width: 34px;
+    height: 34px;
   }
   .demo-notice-page section { padding: 28px 22px; }
 }

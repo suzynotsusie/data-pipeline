@@ -1,0 +1,86 @@
+[
+  {
+    "id": "submission-study-exam-registration-missing-identity",
+    "procedure_code": "1.005142",
+    "submission": {
+      "candidate": {
+        "full_name": "Nguyễn Văn A",
+        "identity_number": "1234A"
+      },
+      "graduation_year": "",
+      "exam_subjects": [],
+      "signature_present": false
+    },
+    "expected_rule_ids": [
+      "identity-number-format",
+      "missing-graduation-year",
+      "missing-exam-subject-selection",
+      "missing-signature"
+    ]
+  },
+  {
+    "id": "submission-study-transfer-missing-school-record",
+    "procedure_code": "2.002854",
+    "submission": {
+      "student": {
+        "full_name": "Trần Thị B",
+        "grade_level": "10"
+      },
+      "current_school_record_present": false,
+      "receiving_school_confirmation_present": false
+    },
+    "expected_rule_ids": [
+      "missing-school-record",
+      "missing-receiving-school-confirmation"
+    ]
+  },
+  {
+    "id": "submission-study-financial-support-missing-proof",
+    "procedure_code": "1.010497",
+    "submission": {
+      "learner": {
+        "full_name": "Lê Văn C",
+        "identity_number": "012345678901"
+      },
+      "school_level": "",
+      "support_category_proof_present": false
+    },
+    "expected_rule_ids": [
+      "missing-school-level",
+      "missing-support-category-proof"
+    ]
+  },
+  {
+    "id": "submission-study-diploma-copy-missing-registry-info",
+    "procedure_code": "3.000465",
+    "submission": {
+      "requester": {
+        "full_name": "Phạm Thị D",
+        "identity_number": "012345678901"
+      },
+      "registry_book_reference": "",
+      "graduation_information_match": false
+    },
+    "expected_rule_ids": [
+      "missing-registry-book-reference",
+      "graduation-information-mismatch"
+    ]
+  },
+  {
+    "id": "submission-study-abroad-extension-missing-approval",
+    "procedure_code": "1.002543",
+    "submission": {
+      "student": {
+        "full_name": "Hoàng Văn E",
+        "identity_number": "012345678901"
+      },
+      "current_study_plan_present": true,
+      "extension_reason": "",
+      "sponsoring_agency_approval_present": false
+    },
+    "expected_rule_ids": [
+      "missing-extension-reason",
+      "missing-sponsoring-agency-approval"
+    ]
+  }
+]

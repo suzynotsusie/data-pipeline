@@ -98,12 +98,13 @@ class CitizenCatalogService:
                     "code": code,
                     "title": self._pick_title(record, full_data),
                     "source_url": self._pick_source_url(record, full_data),
-                    "field": full_data.get("Lĩnh vực") or full_data.get("field"),
+                    "field": full_data.get("LÄ©nh vá»±c") or full_data.get("field"),
                     "raw_data_available": self._has_raw_data(code),
                     "normalized_available": _as_bool(row.get("normalized_available")),
                     "detail_level": record.detail_level if record else None,
                     "workflow_family": row.get("workflow_family") or None,
                     "support_level": row.get("support_level") or "catalog_ready",
+                    "in_workflow_dataset": _as_bool(row.get("in_workflow_dataset") or row.get("workflow_data_available")),
                     "notes": row.get("notes") or "",
                 }
             )
@@ -112,7 +113,7 @@ class CitizenCatalogService:
     def _pick_title(self, record: ProcedureRecord | None, full_data: dict[str, str]) -> str:
         if record and record.title:
             return record.title
-        return full_data.get("Tên", "")
+        return full_data.get("TÃªn", "")
 
     def _pick_source_url(self, record: ProcedureRecord | None, full_data: dict[str, str]) -> str:
         if record and record.source_url:
@@ -155,7 +156,7 @@ class CitizenCatalogService:
             rows = list(csv.DictReader(handle))
         result: dict[str, dict[str, str]] = {}
         for row in rows:
-            code = str(row.get("Mã số") or "").strip()
+            code = str(row.get("MÃ£ sá»‘") or "").strip()
             if code:
                 result[code] = row
         return result
